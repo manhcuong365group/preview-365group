@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module đánh giá người dùng - 3M Ceramic NR</title>
+  <style>
+    :root {
+      --auto365-red: #ed0000;
+      --auto365-red-dark: #bd2738;
+      --auto365-text: #1f2937;
+      --auto365-muted: #6b7280;
+      --auto365-border: #e5e7eb;
+      --auto365-soft: #f9fafb;
+      --auto365-star: #ffad00;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #f3f4f6;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--auto365-text);
+    }
+
+    .auto365-review-box {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #fff;
+      border: 1px solid #d9dee7;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, .08);
+      padding: 24px;
+    }
+
+    .auto365-review-box h2 {
+      margin: 0 0 22px;
+      font-size: 22px;
+      line-height: 1.35;
+      color: var(--auto365-red);
+    }
+
+    .auto365-review-summary {
+      display: grid;
+      grid-template-columns: 160px 1fr 260px;
+      gap: 28px;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--auto365-border);
+    }
+
+    .auto365-score {
+      text-align: center;
+      border-right: 1px solid var(--auto365-border);
+      padding-right: 20px;
+    }
+
+    .auto365-score-number {
+      font-size: 42px;
+      line-height: 1;
+      color: var(--auto365-red);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .auto365-stars {
+      color: var(--auto365-star);
+      letter-spacing: 1px;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+
+    .auto365-score-count {
+      font-size: 13px;
+      color: var(--auto365-muted);
+      margin-top: 6px;
+    }
+
+    .auto365-rating-bars {
+      max-width: 560px;
+    }
+
+    .auto365-rating-row {
+      display: grid;
+      grid-template-columns: 36px 1fr 46px;
+      gap: 10px;
+      align-items: center;
+      margin: 7px 0;
+      font-size: 13px;
+      color: #374151;
+    }
+
+    .auto365-rating-row .star-small {
+      color: var(--auto365-star);
+      font-weight: 700;
+    }
+
+    .auto365-bar {
+      height: 7px;
+      border-radius: 999px;
+      background: #eeeeee;
+      overflow: hidden;
+    }
+
+    .auto365-bar-fill {
+      height: 100%;
+      background: var(--auto365-star);
+      border-radius: 999px;
+    }
+
+    .auto365-percent {
+      color: var(--auto365-muted);
+      font-size: 12px;
+    }
+
+    .auto365-write-review {
+      border: 1px dashed #dbe2ea;
+      border-radius: 12px;
+      padding: 18px;
+      text-align: center;
+      background: #fff;
+    }
+
+    .auto365-write-review p {
+      margin: 0 0 12px;
+      color: #4b5563;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .auto365-review-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 24px;
+      background: var(--auto365-red);
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .auto365-filter-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 22px 0 16px;
+      border-bottom: 1px solid var(--auto365-border);
+    }
+
+    .auto365-filter-label {
+      margin-right: 4px;
+      color: var(--auto365-muted);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .auto365-filter-chip {
+      border: 1px solid #9ca3af;
+      background: #fff;
+      color: #4b5563;
+      border-radius: 999px;
+      padding: 8px 17px;
+      font-size: 13px;
+      line-height: 1;
+      font-weight: 600;
+    }
+
+    .auto365-filter-chip.active {
+      background: var(--auto365-red-dark);
+      border-color: var(--auto365-red-dark);
+      color: #fff;
+    }
+
+    .auto365-review-list {
+      margin-top: 4px;
+    }
+
+    .auto365-review-item {
+      display: grid;
+      grid-template-columns: 38px 1fr 96px;
+      gap: 12px 16px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--auto365-border);
+    }
+
+    .auto365-review-item:last-child {
+      border-bottom: none;
+    }
+
+    .auto365-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #d1d5db;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      text-transform: uppercase;
+      overflow: hidden;
+    }
+
+    .auto365-review-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 3px;
+    }
+
+    .auto365-review-name {
+      color: var(--auto365-red);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .auto365-review-date {
+      color: #9ca3af;
+      font-size: 12px;
+    }
+
+    .auto365-review-title {
+      margin: 6px 0 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #222;
+      text-transform: lowercase;
+    }
+
+    .auto365-review-text {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.65;
+      color: #4b5563;
+    }
+
+    .auto365-review-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .auto365-review-tag {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #f3f4f6;
+      color: #4b5563;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .auto365-review-photo {
+      width: 92px;
+      height: 92px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 1px solid var(--auto365-border);
+      background: #f3f4f6;
+    }
+
+    .auto365-photo-placeholder {
+      width: 92px;
+      height: 92px;
+      border-radius: 8px;
+      border: 1px dashed #d1d5db;
+      background: #f9fafb;
+      color: #9ca3af;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.35;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .auto365-review-note {
+      margin: 18px 0 0;
+      padding: 12px 14px;
+      border-left: 4px solid var(--auto365-red);
+      border-radius: 8px;
+      background: var(--auto365-soft);
+      color: #4b5563;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .auto365-admin-plan {
+      max-width: 1280px;
+      margin: 28px auto 0;
+      background: #fff;
+      border: 1px solid #d9dee7;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+    }
+
+    .auto365-admin-plan h2 {
+      margin: 0 0 14px;
+      color: #111827;
+      font-size: 22px;
+    }
+
+    .auto365-admin-plan h3 {
+      margin: 22px 0 10px;
+      color: #111827;
+      font-size: 18px;
+    }
+
+    .auto365-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--auto365-border);
+      border-radius: 12px;
+    }
+
+    .auto365-plan-table {
+      width: 100%;
+      min-width: 980px;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .auto365-plan-table th,
+    .auto365-plan-table td {
+      padding: 12px;
+      border-bottom: 1px solid var(--auto365-border);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .auto365-plan-table th {
+      background: #f8fafc;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .auto365-plan-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        padding: 12px;
+      }
+
+      .auto365-review-box,
+      .auto365-admin-plan {
+        padding: 16px;
+        border-radius: 14px;
+      }
+
+      .auto365-review-summary {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .auto365-score {
+        border-right: none;
+        border-bottom: 1px solid var(--auto365-border);
+        padding: 0 0 16px;
+      }
+
+      .auto365-rating-bars {
+        max-width: none;
+      }
+
+      .auto365-review-item {
+        grid-template-columns: 38px 1fr;
+      }
+
+      .auto365-review-media {
+        grid-column: 2 / 3;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MODULE HIỂN THỊ ĐÁNH GIÁ TRÊN TRANG -->
+  <section class="auto365-review-box" id="danh-gia-3m-ceramic-nr">
+    <h2>Đánh giá từ người dùng về Phim cách nhiệt 3M Ceramic NR (Ceramic Hybrid)</h2>
+
+    <div class="auto365-review-summary">
+      <div class="auto365-score">
+        <div class="auto365-score-number">5.0</div>
+        <div class="auto365-stars" aria-label="5 sao">★★★★★</div>
+        <div class="auto365-score-count">12 nhận xét</div>
+      </div>
+
+      <div class="auto365-rating-bars" aria-label="Phân bố đánh giá">
+        <div class="auto365-rating-row"><span>5 <span class="star-small">★</span></span><div class="auto365-bar"><div class="auto365-bar-fill" style="width:100%"></div></div><span class="auto365-percent">100%</span></div>
+        <div class="auto365-rating-row"><span>4 <span class="star-small">★</span></span><div class="auto365-bar"><div class="auto365-bar-fill" style="width:0%"></div></div><span class="auto365-percent">0%</span></div>
+        <div class="auto365-rating-row"><span>3 <span class="star-small">★</span></span><div class="auto365-bar"><div class="auto365-bar-fill" style="width:0%"></div></div><span class="auto365-percent">0%</span></div>
+        <div class="auto365-rating-row"><span>2 <span class="star-small">★</span></span><div class="auto365-bar"><div class="auto365-bar-fill" style="width:0%"></div></div><span class="auto365-percent">0%</span></div>
+        <div class="auto365-rating-row"><span>1 <span class="star-small">★</span></span><div class="auto365-bar"><div class="auto365-bar-fill" style="width:0%"></div></div><span class="auto365-percent">0%</span></div>
+      </div>
+
+      <div class="auto365-write-review">
+        <p>Bạn đã sử dụng dịch vụ này?</p>
+        <a class="auto365-review-button" href="#viet-danh-gia">✎ Viết đánh giá của bạn</a>
+      </div>
+    </div>
+
+    <div class="auto365-filter-row">
+      <span class="auto365-filter-label">Lọc đánh giá theo:</span>
+      <button class="auto365-filter-chip active" type="button">Tất cả</button>
+      <button class="auto365-filter-chip" type="button">5 sao</button>
+      <button class="auto365-filter-chip" type="button">4 sao</button>
+      <button class="auto365-filter-chip" type="button">3 sao</button>
+      <button class="auto365-filter-chip" type="button">2 sao</button>
+      <button class="auto365-filter-chip" type="button">1 sao</button>
+    </div>
+
+    <div class="auto365-review-list">
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">H</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Hiếu</span><span class="auto365-review-date">16/06/2026 14:37</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">dán kính lái nr35</h3>
+          <p class="auto365-review-text">Đi dán lại kính lái do phim cũ nóng quá. Sau khi được test phim 3M Ceramic NR35 thấy kính vẫn sáng, xe đỡ nóng hơn và chạy ban đêm dễ nhìn. Thi công nhanh, lấy xe trong buổi sáng.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">NR35</span><span class="auto365-review-tag">Kính lái</span><span class="auto365-review-tag">Thay phim cũ</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh kính lái / khoang lái</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">T</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Minh Tâm</span><span class="auto365-review-date">16/06/2026 14:31</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">phim 3m nr</h3>
+          <p class="auto365-review-text">Tôi được test phim trước khi dán, cảm giác phim mát, giá ổn và thi công kỹ. Xe sau khi dán nhìn đẹp hơn, đi nắng thấy dễ chịu hơn. Lần sau sẽ ủng hộ tiếp.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">3M NR</span><span class="auto365-review-tag">Test phim</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Không bắt buộc ảnh</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">K</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Anh Khoa</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">dán trọn xe 3m ceramic nr</h3>
+          <p class="auto365-review-text">Tôi chọn gói dán trọn xe 3M Ceramic NR cho sedan. Kính lái dùng mã sáng, kính sườn và kính lưng tối hơn nên xe vừa mát vừa riêng tư. Nhân viên tư vấn rõ từng vị trí kính.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">Trọn xe</span><span class="auto365-review-tag">Sedan</span><span class="auto365-review-tag">Ceramic NR</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh toàn xe sau dán</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">M</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Quang Minh</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">nr35 kính lái dễ nhìn ban đêm</h3>
+          <p class="auto365-review-text">Ban đầu tôi sợ dán kính lái sẽ tối khi chạy buổi tối. Sau khi được tư vấn dùng NR35 thì thấy ổn, ban ngày giảm chói tốt hơn, ban đêm vẫn dễ quan sát.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">NR35</span><span class="auto365-review-tag">Ban đêm</span><span class="auto365-review-tag">Giảm chói</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Không bắt buộc ảnh</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">H</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Chị Hạnh</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">dán nr15 kính sườn xe gia đình</h3>
+          <p class="auto365-review-text">Xe gia đình nên tôi muốn kính sườn riêng tư hơn. Sau khi dán NR15, hàng ghế sau đỡ nắng và xe nhìn đẹp hơn. Từ trong xe nhìn ra vẫn ổn, không bị quá tối.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">NR15</span><span class="auto365-review-tag">Kính sườn</span><span class="auto365-review-tag">Xe gia đình</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh hông xe / kính sườn</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">P</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Anh Phúc</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">thay phim cũ sang 3m ceramic nr</h3>
+          <p class="auto365-review-text">Phim cũ trên xe bị nóng và xuống màu nên tôi thay sang 3M Ceramic NR. Auto365 tháo phim cũ, vệ sinh kính kỹ, dán xong kính nhìn trong và màu phim đều hơn.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">Thay phim cũ</span><span class="auto365-review-tag">Vệ sinh kính</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh trước / sau</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">N</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Hoàng Nam</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">dán nr5 kính lưng giảm nắng tốt</h3>
+          <p class="auto365-review-text">Kính lưng xe tôi bị nắng chiếu nhiều nên được tư vấn dùng NR5. Sau khi dán, hàng ghế sau mát hơn và nhìn từ ngoài vào riêng tư hơn rõ.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">NR5</span><span class="auto365-review-tag">Kính lưng</span><span class="auto365-review-tag">Riêng tư</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh kính lưng</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">D</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Anh Dũng</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">suv dán 3m ceramic hybrid</h3>
+          <p class="auto365-review-text">Xe SUV nhiều kính nên đi nắng khá nóng. Sau khi dán gói 3M Ceramic Hybrid, xe dịu hơn, kính sườn tối vừa đẹp và gia đình ngồi sau thoải mái hơn khi đi xa.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">SUV</span><span class="auto365-review-tag">Ceramic Hybrid</span><span class="auto365-review-tag">Đi xa</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh SUV toàn xe</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">B</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Thanh Bình</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">có bảo hành điện tử 3m rõ ràng</h3>
+          <p class="auto365-review-text">Tôi chọn dán phim 3M vì muốn có bảo hành chính hãng. Sau khi dán, nhân viên hướng dẫn kiểm tra bảo hành điện tử, phim lên kính đẹp và không bị bọt.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">Bảo hành điện tử</span><span class="auto365-review-tag">Chính hãng</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh bàn giao xe</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">G</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Gia Huy</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">dán cửa sổ trời đỡ nóng trần xe</h3>
+          <p class="auto365-review-text">Xe có cửa sổ trời nên phần trần khá nóng khi đi nắng. Sau khi dán thêm phim cách nhiệt, cảm giác nóng phía trên đầu giảm rõ hơn. Giá được báo rõ trước khi làm.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">Cửa sổ trời</span><span class="auto365-review-tag">Giảm nóng trần</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh cửa sổ trời</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">T</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Anh Tuấn</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">nr25 màu phim đẹp giảm chói tốt</h3>
+          <p class="auto365-review-text">Tôi chọn NR25 vì muốn kính đậm hơn một chút nhưng vẫn dễ nhìn. Sau khi dán, xe giảm chói tốt hơn khi chạy nắng và màu phim nhìn khá đẹp.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">NR25</span><span class="auto365-review-tag">Màu phim đẹp</span><span class="auto365-review-tag">Giảm chói</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Không bắt buộc ảnh</div></div>
+      </article>
+
+      <article class="auto365-review-item">
+        <div class="auto365-avatar">V</div>
+        <div class="auto365-review-content">
+          <div class="auto365-review-meta"><span class="auto365-review-name">Khánh Vy</span><span class="auto365-review-date">Đề xuất nhập sau khi có review thật</span></div>
+          <div class="auto365-stars">★★★★★</div>
+          <h3 class="auto365-review-title">dán 3m ceramic nr cho xe nhỏ</h3>
+          <p class="auto365-review-text">Tôi dán gói 3M Ceramic NR cho xe nhỏ vì giá hợp lý. Xe sau khi dán đỡ nóng hơn, kính lái vẫn sáng và kính sườn riêng tư hơn trước.</p>
+          <div class="auto365-review-tags"><span class="auto365-review-tag">Minicar</span><span class="auto365-review-tag">Giá hợp lý</span><span class="auto365-review-tag">Ceramic NR</span></div>
+        </div>
+        <div class="auto365-review-media"><div class="auto365-photo-placeholder">Ảnh xe nhỏ sau dán</div></div>
+      </article>
+    </div>
+
+    <p class="auto365-review-note">
+      <strong>Ghi chú triển khai:</strong> Các review có nhãn “Đề xuất nhập sau khi có review thật” chỉ là mẫu biên tập. Khi đăng thật cần thay bằng tên khách, ngày đánh giá, dòng xe, chi nhánh, mã phim đã dán và ảnh xe thực tế nếu có. Không nên dùng review giả hoặc schema review không khớp với nội dung hiển thị.
+    </p>
+  </section>
+
+  <!-- BẢNG KẾ HOẠCH NHẬP DỮ LIỆU REVIEW CHO MODULE -->
+  <section class="auto365-admin-plan">
+    <h2>Kế hoạch nhập đánh giá cho module bên dưới trang</h2>
+    <p class="auto365-review-text">Bảng này dùng cho đội CSKH/Content khi thu thập review thật rồi nhập vào module đánh giá. Không bắt buộc review nào cũng có hình; ưu tiên 4–6 review có ảnh thật để tăng độ tin cậy.</p>
+
+    <h3>Danh sách review nên có</h3>
+    <div class="auto365-table-wrap">
+      <table class="auto365-plan-table">
+        <thead>
+          <tr>
+            <th>Ưu tiên</th>
+            <th>Nhóm review</th>
+            <th>Tiêu đề nhập vào module</th>
+            <th>Nội dung cần có</th>
+            <th>Ảnh đề xuất</th>
+            <th>Bắt buộc ảnh?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>NR35 kính lái</td><td>dán kính lái nr35</td><td>Phim cũ nóng, test NR35, kính vẫn sáng, xe đỡ nóng, chạy đêm dễ nhìn.</td><td>Kính lái / khoang lái</td><td>Nên có</td></tr>
+          <tr><td>2</td><td>Review chung 3M NR</td><td>phim 3m nr</td><td>Được test phim, cảm giác mát, giá ổn, thi công kỹ, đi nắng dễ chịu hơn.</td><td>Ảnh xe bàn giao nếu có</td><td>Không</td></tr>
+          <tr><td>3</td><td>Gói trọn xe</td><td>dán trọn xe 3m ceramic nr</td><td>Kính lái dùng mã sáng, kính sườn/lưng tối hơn, xe mát và riêng tư.</td><td>Ảnh toàn xe sau dán</td><td>Nên có</td></tr>
+          <tr><td>4</td><td>Tầm nhìn ban đêm</td><td>nr35 kính lái dễ nhìn ban đêm</td><td>Lo kính lái tối, sau khi dán NR35 ban đêm vẫn quan sát ổn, ban ngày giảm chói.</td><td>Ảnh kính lái</td><td>Không</td></tr>
+          <tr><td>5</td><td>NR15 kính sườn</td><td>dán nr15 kính sườn xe gia đình</td><td>Hàng ghế sau đỡ nắng, xe riêng tư hơn, từ trong nhìn ra vẫn ổn.</td><td>Ảnh hông xe / kính sườn</td><td>Nên có</td></tr>
+          <tr><td>6</td><td>Thay phim cũ</td><td>thay phim cũ sang 3m ceramic nr</td><td>Phim cũ nóng/xuống màu, tháo phim cũ, vệ sinh kính, màu phim mới đều hơn.</td><td>Ảnh trước/sau thay phim</td><td>Nên có</td></tr>
+          <tr><td>7</td><td>NR5 kính lưng</td><td>dán nr5 kính lưng giảm nắng tốt</td><td>Kính lưng bị nắng chiếu, dùng NR5 giúp hàng ghế sau mát và riêng tư hơn.</td><td>Ảnh kính lưng</td><td>Nên có</td></tr>
+          <tr><td>8</td><td>SUV</td><td>suv dán 3m ceramic hybrid</td><td>SUV nhiều kính, đi nắng nóng, sau khi dán xe dịu hơn và gia đình ngồi sau thoải mái.</td><td>Ảnh SUV toàn xe</td><td>Nên có</td></tr>
+          <tr><td>9</td><td>Bảo hành 3M</td><td>có bảo hành điện tử 3m rõ ràng</td><td>Khách chọn 3M vì chính hãng, được hướng dẫn bảo hành điện tử, phim đẹp không bọt.</td><td>Ảnh bàn giao xe</td><td>Không</td></tr>
+          <tr><td>10</td><td>Cửa sổ trời</td><td>dán cửa sổ trời đỡ nóng trần xe</td><td>Dán thêm cửa sổ trời giúp giảm nóng phần trần, giá được báo rõ trước khi làm.</td><td>Ảnh cửa sổ trời</td><td>Nên có</td></tr>
+          <tr><td>11</td><td>NR25</td><td>nr25 màu phim đẹp giảm chói tốt</td><td>NR25 đậm hơn NR35, vẫn dễ nhìn, giảm chói khi chạy nắng, màu phim đẹp.</td><td>Ảnh kính lái/sườn</td><td>Không</td></tr>
+          <tr><td>12</td><td>Minicar</td><td>dán 3m ceramic nr cho xe nhỏ</td><td>Xe nhỏ chọn gói Ceramic NR vì giá hợp lý, đỡ nóng, kính lái sáng, kính sườn riêng tư.</td><td>Ảnh xe nhỏ sau dán</td><td>Nên có</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Checklist trước khi đăng review</h3>
+    <div class="auto365-table-wrap">
+      <table class="auto365-plan-table">
+        <thead>
+          <tr>
+            <th>Hạng mục</th>
+            <th>Yêu cầu</th>
+            <th>Ghi chú</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Tên khách</td><td>Có thể dùng tên thật, tên viết tắt hoặc tên thân mật.</td><td>Không đăng số điện thoại hoặc thông tin cá nhân nhạy cảm.</td></tr>
+          <tr><td>Ngày đánh giá</td><td>Nên có ngày thật hoặc ngày gần thời điểm khách phản hồi.</td><td>Không nên dồn 12 review cùng một thời điểm nếu không đúng thực tế.</td></tr>
+          <tr><td>Số sao</td><td>Chỉ nhập theo phản hồi thật của khách.</td><td>Nếu tất cả đều 5 sao vẫn được, nhưng nội dung phải tự nhiên.</td></tr>
+          <tr><td>Tiêu đề</td><td>Ngắn, giống người dùng thật viết, có thể viết thường.</td><td>Ví dụ: “dán kính lái nr35”, “phim 3m nr”, “nr15 kính sườn”.</td></tr>
+          <tr><td>Nội dung</td><td>Nên 1–3 câu, có mã phim, vị trí kính và cảm nhận sau dán.</td><td>Tránh viết quá SEO hoặc quá dài như bài quảng cáo.</td></tr>
+          <tr><td>Ảnh</td><td>Không bắt buộc toàn bộ review có ảnh.</td><td>Nên có tối thiểu 4–6 review có ảnh xe thật.</td></tr>
+          <tr><td>Schema</td><td>AggregateRating và Review phải khớp với review đang hiển thị.</td><td>Không khai báo ảo số lượng review trong JSON-LD.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</body>
+</html>
