@@ -642,6 +642,80 @@
       flex-shrink: 0;
     }
 
+    /* Mechanism section styles */
+    .crblk-mech-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+    
+    .crblk-mech-card {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(226, 232, 240, 0.8);
+      border-radius: 16px;
+      padding: 18px;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .crblk-mech-card:hover {
+      background: #ffffff;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+      border-color: #cbd5e1;
+      transform: translateY(-2px);
+    }
+
+    .crblk-mech-card.highlighted {
+      background: rgba(139, 92, 246, 0.03);
+      border-color: rgba(139, 92, 246, 0.2);
+    }
+    
+    .crblk-mech-card.highlighted:hover {
+      background: #ffffff;
+      border-color: #8b5cf6;
+      box-shadow: 0 12px 28px rgba(139, 92, 246, 0.08);
+    }
+    
+    .crblk-mech-header {
+      margin-bottom: 12px;
+    }
+    
+    .crblk-mech-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    
+    .badge-reflect { background: #e0f2fe; color: #0369a1; }
+    .badge-absorb { background: #fef3c7; color: #b45309; }
+    .badge-filter { background: #f3e8ff; color: #6b21a8; }
+    
+    .crblk-mech-card h4 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      color: #0f172a;
+      font-weight: 700;
+    }
+    
+    .crblk-mech-card p {
+      margin: 0 !important;
+      font-size: 13.5px !important;
+      line-height: 1.55 !important;
+      color: #475569 !important;
+    }
+
+    @media (max-width: 900px) {
+      .crblk-mech-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
     .crblk-feature-card h3 {
       margin: 0 0 10px;
       font-size: 17.5px;
@@ -1671,30 +1745,58 @@
 <li>Nên hỏi rõ mã phim, thông số, chính sách bảo hành và quy trình thi công.</li>
 </ul>
 </div>
-</div>
-<div class="crblk-two-col" style="margin-top: 20px;">
-  <div class="crblk-feature-card intro-card card-tech">
+  <div class="crblk-feature-card intro-card card-tech" style="grid-column: 1 / -1; margin-top: 10px;">
     <h3>
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#8b5cf6" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
       1.3. Cơ chế hoạt động của phim cách nhiệt
     </h3>
-    <p>Phim cách nhiệt ô tô loại bỏ và kiểm soát nhiệt lượng mặt trời thông qua ba cơ chế hoạt động cốt lõi:</p>
-    <ul>
-      <li><strong>Cơ chế phản xạ nhiệt:</strong> Phản xạ trực tiếp nhiệt lượng mặt trời (đặc biệt là tia hồng ngoại) ngược lại môi trường ngoài. Cơ chế này giúp bề mặt kính ít bị nóng lên, thường xuất hiện ở các dòng phim kim loại hoặc quang học cao cấp.</li>
-      <li><strong>Cơ chế hấp thụ nhiệt:</strong> Phim giữ lại một phần nhiệt lượng trên bề mặt kính, sau đó tỏa nhiệt dần ra bên ngoài nhờ luồng gió khi xe di chuyển. Khi sờ tay vào kính sau một thời gian đậu nắng, kính ấm lên là hiện tượng kỹ thuật bình thường.</li>
-      <li><strong>Cơ chế lọc quang học chọn lọc:</strong> Đây là công nghệ tiên tiến nhất (như trên dòng 3M Crystalline). Phim sử dụng cấu trúc đa lớp siêu mỏng để lọc phổ ánh sáng: cản tối đa tia hồng ngoại (IR) gây nóng và tia cực tím (UV) gây hại, nhưng cho phép ánh sáng khả kiến truyền qua để đảm bảo tầm nhìn rõ nét và hoàn toàn không cản sóng tín hiệu (GPS, VETC).</li>
-    </ul>
+    <p style="margin-bottom: 14px;">Phim cách nhiệt ô tô ngăn chặn và kiểm soát nhiệt lượng từ ánh nắng mặt trời thông qua ba cơ chế vật lý song song:</p>
+    
+    <div class="crblk-mech-grid">
+      <div class="crblk-mech-card">
+        <div class="crblk-mech-header">
+          <span class="crblk-mech-badge badge-reflect">Phản xạ nhiệt</span>
+          <h4>Dội ngược nhiệt lượng</h4>
+        </div>
+        <p>Nhiệt lượng mặt trời (tia hồng ngoại) chiếu vào bề mặt kính sẽ bị phản xạ trực tiếp ngược lại môi trường ngoài. Giúp bề mặt kính ít bị nóng lên.</p>
+      </div>
+      
+      <div class="crblk-mech-card">
+        <div class="crblk-mech-header">
+          <span class="crblk-mech-badge badge-absorb">Hấp thụ nhiệt</span>
+          <h4>Giữ & tỏa nhiệt đối lưu</h4>
+        </div>
+        <p>Giữ một phần nhiệt năng trên kính và tỏa dần ra ngoài nhờ luồng gió khi xe di chuyển. Mặt kính ấm lên là hiện tượng hấp thụ tự nhiên.</p>
+      </div>
+      
+      <div class="crblk-mech-card highlighted">
+        <div class="crblk-mech-header">
+          <span class="crblk-mech-badge badge-filter">Lọc quang học chọn lọc</span>
+          <h4>Lọc phổ quang học thông minh</h4>
+        </div>
+        <p>Công nghệ quang học đa lớp lọc phổ ánh sáng: cản tối đa tia hồng ngoại (IR) và UV gây hại, cho ánh sáng truyền qua và 100% không cản sóng GPS/VETC.</p>
+      </div>
+    </div>
   </div>
-  <div class="crblk-feature-card intro-card card-safety">
+
+  <div class="crblk-feature-card intro-card card-safety" style="grid-column: 1 / -1; margin-top: 10px;">
     <h3>
       <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#3b82f6" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
       1.4. Tầm nhìn an toàn và đăng kiểm khi dán phim
     </h3>
-    <p>Khi dán phim cách nhiệt, việc lựa chọn thông số phù hợp cho từng vị trí kính sẽ giúp xe vận hành an toàn và thuận tiện khi đăng kiểm:</p>
-    <ul>
-      <li><strong>Giữ kính lái luôn thông thoáng:</strong> Kính chắn gió (kính lái) là khu vực quan trọng nhất. Chủ xe nên lựa chọn các mã phim chuyên dụng được thiết kế riêng cho kính lái để đảm bảo khả năng truyền sáng tự nhiên tốt nhất, giúp duy trì tầm nhìn rõ nét khi đi đêm, trời mưa lớn hoặc ra vào hầm tối.</li>
-      <li><strong>Đúng quy chuẩn kỹ thuật đăng kiểm:</strong> Lựa chọn phim chính hãng có thông số kỹ thuật chuẩn hóa cho kính lái giúp xe đáp ứng tốt các yêu cầu kiểm định kỹ thuật (đăng kiểm) định kỳ, giúp chủ xe hoàn toàn yên tâm khi lưu thông.</li>
-    </ul>
+    <p style="margin-bottom: 14px;">Để xe lưu thông thuận lợi và an tâm khi kiểm định chất lượng phương tiện, việc chọn mã phim cần cân đối giữa tầm quan sát và độ riêng tư:</p>
+    
+    <div class="crblk-mech-grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+      <div class="crblk-mech-card">
+        <h4 style="margin: 0 0 8px; font-size: 16px; color: #0f172a; font-weight: 700;">Giữ kính lái luôn thông thoáng</h4>
+        <p>Kính chắn gió (kính lái) quyết định độ an toàn khi lái xe. Khách hàng nên chọn các mã phim chuyên dụng có độ truyền sáng tự nhiên tốt nhất để duy trì tầm nhìn rõ nét khi đi đêm, trời mưa lớn hoặc ra vào hầm tối.</p>
+      </div>
+      
+      <div class="crblk-mech-card">
+        <h4 style="margin: 0 0 8px; font-size: 16px; color: #0f172a; font-weight: 700;">Đúng quy chuẩn đăng kiểm kỹ thuật</h4>
+        <p>Lựa chọn dòng phim cách nhiệt chính hãng có các thông số kỹ thuật rõ ràng, chuẩn hóa tại kính lái giúp xe dễ dàng vượt qua các kỳ đăng kiểm kỹ thuật định kỳ tại Việt Nam.</p>
+      </div>
+    </div>
   </div>
 </div>
 
