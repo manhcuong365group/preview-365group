@@ -1,0 +1,206 @@
+window.addEventListener("scroll", function () {
+  var header = document.getElementById("header-neo-scroll");
+  var menu = document.getElementById("menu-scroll");
+  var logo = document.getElementById("logo-scroll");
+
+  if (window.scrollY > 50) {
+    if (header) {
+      header.classList.add("fixed");
+    }
+
+    if (menu) {
+      menu.classList.add("d-block");
+      menu.classList.remove("d-none");
+    }
+
+    if (logo) {
+      logo.classList.add("d-none");
+      logo.classList.remove("d-block");
+    }
+  } else {
+    if (header) {
+      header.classList.remove("fixed");
+    }
+
+    if (menu) {
+      menu.classList.add("d-none");
+      menu.classList.remove("d-block");
+    }
+
+    if (logo) {
+      logo.classList.add("d-block");
+      logo.classList.remove("d-none");
+    }
+  }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  if(document.getElementById("view-dropdown-store-contact")){
+  const trigger = document.getElementById("view-dropdown-store-contact");
+  const footerContact = document.getElementById("box-footer-contact");
+  const modalContact = document.getElementById("modal-box-footer-contact");
+  let isCloned = false; // Biến kiểm tra đã clone chưa
+  // Khi hover vào trigger, mở modal
+  trigger.addEventListener("mouseenter", () => {
+    if (!isCloned) {
+      modalContact.appendChild(footerContact.cloneNode(true)); // Chỉ clone 1 lần
+      isCloned = true;
+    }
+  });
+}
+
+  const dropdowns = document.querySelectorAll(".dropdown");
+  const searchInput = document.getElementById("text-search");
+  const searchResult = document.getElementById("home-seach-result");
+  let searchTimeout = null; // Giúp giảm số lần gọi AJAX
+
+  dropdowns.forEach((dropdown) => {
+    const dropdownToggle = dropdown.querySelector(".dropdown-toggle");
+    const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+    dropdown.addEventListener("mouseenter", function () {
+      dropdownToggle.classList.add("show");
+      dropdownMenu.classList.add("show");
+    });
+
+    dropdown.addEventListener("mouseleave", function () {
+      dropdownToggle.classList.remove("show");
+      dropdownMenu.classList.remove("show");
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener("input", function () {
+      const keyword = this.value.trim();
+      if (searchTimeout) clearTimeout(searchTimeout);
+
+      if (keyword.length > 1) {
+        // Chỉ tìm kiếm khi nhập từ 2 ký tự trở lên
+        searchTimeout = setTimeout(() => {
+          fetch(PATH_SEARCH + `&keyword=${encodeURIComponent(keyword)}`)
+            .then((response) => response.text())
+            .then((data) => {
+              renderSearchResults(data);
+            })
+            .catch((error) => console.error("Lỗi tìm kiếm:", error));
+        }, 300); // Chờ 300ms sau khi gõ để tránh gọi API liên tục
+      } else {
+        searchResult.style.display = "none";
+      }
+    });
+  }
+
+  // Ngăn submit form khi chưa nhập đủ 3 ký tự
+  if (searchInput && searchInput.form) {
+    searchInput.form.addEventListener("submit", function (e) {
+      const keyword = searchInput.value.trim();
+      if (keyword.length < 3) {
+        e.preventDefault();
+        searchResult.style.display = "none";
+      }
+    });
+  }
+
+  function renderSearchResults(productsResult) {
+    searchResult.innerHTML = productsResult;
+    searchResult.style.display = "block";
+  }
+
+  // Ẩn kết quả khi click ra ngoài
+  document.addEventListener("click", function (e) {
+    if (!searchInput.contains(e.target) && !searchResult.contains(e.target)) {
+      searchResult.style.display = "none";
+    }
+  });
+});
+
+$(document).ready(function () {
+  // Bắt sự kiện hover cho tất cả menu cha
+  document.querySelectorAll(".li-parent-menu").forEach((item) => {
+    item.addEventListener("mouseenter", async function () {
+      let id = this.getAttribute("data-id");
+      await renderSubmenu(id, this); // Gọi submenu theo vị trí hiện tại
+    });
+
+    item.addEventListener("mouseleave", function () {
+      let submenuContainer = this.querySelector(".submenu-container");
+      if (submenuContainer) submenuContainer.style.display = "none";
+    });
+  });
+});
+
+// Tìm submenu theo parentId
+async function getSubmenu(parentId) {
+  let categories = await loadMenu();
+
+  function findSubCategories(categories, parentId) {
+    for (let category of categories) {
+      if (category.id == parentId) {
+        return category.items || [];
+      }
+      if (category.items) {
+        let found = findSubCategories(category.items, parentId);
+        if (found.length) return found;
+      }
+    }
+    return [];
+  }
+
+  return findSubCategories(categories, parentId);
+}
+
+// Hiển thị submenu khi hover vào menu cha
+async function renderSubmenu(parentId, parentElement) {
+  let submenus = await getSubmenu(parentId);
+  if (!submenus || submenus.length === 0) return;
+  let submenuContainer = parentElement.querySelector(".submenu-container"); // Tìm submenu trong menu cha đang hover
+  if (!submenuContainer) {
+    console.warn(`❌ Không tìm thấy submenuContainer cho ID: ${parentId}`);
+    return;
+  }
+
+  // Tạo submenu HTML
+  let submenuHtml = `<div class="sub-menu">
+                        <div class="wrap-col">
+                            <div class="box-cate">
+                                ${submenus
+                                  .map((sub) => {
+                                    let hasChildren =
+                                      sub.items && sub.items.length > 0;
+                                    return `
+                                          <div class="item-sub">
+                                            <div class="position-relative">
+                                              <a href="${sub.link}" class="${
+                                      hasChildren ? "right-arrow-link" : "cat2"
+                                    }">
+                                                ${sub.image ? `<img src="${URL_IMAGE}${sub.image}" alt="${sub.title}" class="submenu-image" >` : ''}
+                                                <span class="submenu-title">${sub.title}</span>
+                                              </a>
+                                              ${
+                                                hasChildren
+                                                  ? `
+                                                <div class="list-sub-hover">
+                                                  ${sub.items
+                                                    .map(
+                                                      (child) =>
+                                                        `<a href="${child.link}">${child.title}</a>`
+                                                    )
+                                                    .join("")}
+                                                </div>
+                                              `
+                                                  : ""
+                                              }
+                                            </div>
+                                          </div>`;
+                                  })
+                                  .join("")}
+                            </div>
+                        </div>
+                    </div>`;
+
+  // Chỉ cập nhật nếu submenu chưa được tạo
+  if (submenuContainer.innerHTML.trim() === "") {
+    submenuContainer.innerHTML = submenuHtml;
+  }
+  submenuContainer.style.display = "block";
+}

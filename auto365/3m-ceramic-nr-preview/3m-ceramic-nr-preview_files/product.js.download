@@ -1,0 +1,807 @@
+
+// 🏷 **Cập nhật khoảng giá**
+function updatePriceRange() {
+	let minInput = document.getElementById("priceRangeMin");
+	let maxInput = document.getElementById("priceRangeMax");
+	let minValue = parseInt(minInput.value);
+	let maxValue = parseInt(maxInput.value);
+
+	// Đảm bảo giá trị min không lớn hơn max
+	if (minValue > maxValue) {
+		[minInput.value, maxInput.value] = [maxValue, minValue]; 
+	}
+
+    // Hiển thị giá theo format tiền Việt
+    $("#priceValueMin").text(new Intl.NumberFormat('vi-VN').format(minValue));
+    $("#priceValueMax").text(new Intl.NumberFormat('vi-VN').format(maxValue));
+}
+
+// 🏷 **Lọc sản phẩm**
+function filterProducts(is_modal = false) {
+    let filters = is_modal ? getFilterParamModal() : getFilterParams();
+    // Lấy khoảng giá từ A đến B
+    let minPrice = filters.min_price;
+    let maxPrice = filters.max_price;
+    // Đảm bảo minPrice không lớn hơn maxPrice
+    if (minPrice > maxPrice) {
+        let temp = minPrice;
+        minPrice = maxPrice;
+        maxPrice = temp;
+    }
+    // Bắt đầu từ URL hiện tại để không vô tình "thêm" min/max mặc định chỉ vì sort/filter khác
+    let params = new URLSearchParams(window.location.search);
+    if (filters.categories.length) params.set("categories", filters.categories.join(","));
+    else params.delete("categories");
+    if (filters.brands.length) params.set("brands", filters.brands.join(","));
+    else params.delete("brands");
+    if (filters.attributes.length) params.set("attributes", filters.attributes.join(","));
+    else params.delete("attributes");
+    if (filters.product_tags && filters.product_tags.length) params.set("product_tags", filters.product_tags.join(","));
+    else params.delete("product_tags");
+
+    // keyword
+    params.set("keyword", filters.keyword ?? "");
+
+    // sort
+    if (filters.sort) params.set("sort", filters.sort);
+    else params.delete("sort");
+
+    // price_list: nếu có thì bỏ min/max khỏi URL
+    const hasPriceList = !!(filters.price_list && filters.price_list.length);
+    if (hasPriceList) {
+        params.delete("min_price");
+        params.delete("max_price");
+    } else {
+        // Chỉ set min/max khi người dùng thật sự chọn (khác default), hoặc URL vốn đã có param này.
+        const urlHadMin = params.has("min_price");
+        const urlHadMax = params.has("max_price");
+
+        const minEl = document.getElementById(is_modal ? "modal_priceRangeMin" : "priceRangeMin");
+        const maxEl = document.getElementById(is_modal ? "modal_priceRangeMax" : "priceRangeMax");
+
+        const parseDefault = (el, fallback) => {
+            if (!el) return fallback;
+            const fromData = el.getAttribute("data-default");
+            if (fromData !== null && fromData !== "") return parseInt(fromData, 10) || fallback;
+            const fromMin = el.getAttribute("min");
+            const fromMax = el.getAttribute("max");
+            // min input: ưu tiên min attr, max input: ưu tiên max attr
+            if (fallback === 0 && fromMin !== null && fromMin !== "") return parseInt(fromMin, 10) || fallback;
+            if (fallback !== 0 && fromMax !== null && fromMax !== "") return parseInt(fromMax, 10) || fallback;
+            return fallback;
+        };
+
+        const defaultMin = parseDefault(minEl, 0);
+        const defaultMax = parseDefault(maxEl, 99999999);
+
+        const userSelectedPrice = (typeof minPrice === "number" && typeof maxPrice === "number") &&
+            (minPrice !== defaultMin || maxPrice !== defaultMax);
+
+        if (userSelectedPrice || urlHadMin || urlHadMax) {
+            params.set("min_price", minPrice ?? 0);
+            params.set("max_price", maxPrice ?? 0);
+        } else {
+            params.delete("min_price");
+            params.delete("max_price");
+        }
+    }
+
+    // Không lưu filter state vào URL để F5 không khôi phục lại trạng thái cũ.
+    window.history.replaceState({}, "", window.location.pathname);
+   
+
+    // 📌 **Gửi AJAX request để lọc sản phẩm**
+    // Abort request cũ nếu người dùng tick filter liên tục
+    if (window.__productsXhr && typeof window.__productsXhr.abort === 'function') {
+        try { window.__productsXhr.abort(); } catch (e) {}
+    }
+    window.__productsXhr = $.ajax({
+        url: PATH_AJAX_PRODUCT,
+        type: "POST",
+        headers: { "Content-Type": "application/json" },
+        data: JSON.stringify(filters),
+        beforeSend: function () {
+            showProductListLoading();
+        },
+        success: function (response) {
+            $("#productList").html(response);
+            // Cập nhật lại số lượng còn lại cho nút "Xem thêm" sau khi lọc
+            if (!is_modal) {
+                updateLoadMoreButtonAfterFilter(filters);
+            }
+        },
+        error: function () {
+            // giữ UI ổn định, chỉ tắt loading
+        },
+        complete: function () {
+            hideProductListLoading();
+        }
+    });
+}
+
+let __productListLoadingCount = 0;
+function showProductListLoading() {
+    __productListLoadingCount++;
+    const list = document.getElementById('productList');
+    if (!list) return;
+    list.classList.add('is-loading');
+
+    // Reserve tối thiểu chiều cao 2 hàng để skeleton không "đẩy/đè" layout xuống dưới
+    try {
+        if (!list.hasAttribute('data-prev-min-height')) {
+            list.setAttribute('data-prev-min-height', list.style.minHeight || '');
+        }
+        const computed = window.getComputedStyle(list);
+        const cols = (computed.gridTemplateColumns || '').split(' ').filter(Boolean).length || 5;
+        const gap = parseInt(computed.gap || computed.gridRowGap || '0', 10) || 12;
+        const firstItem = list.querySelector('.product-list-item');
+        const itemHeight = firstItem ? Math.ceil(firstItem.getBoundingClientRect().height) : 360;
+        const twoRowsMinHeight = itemHeight * 2 + gap;
+        const currentHeight = Math.ceil(list.getBoundingClientRect().height);
+        list.style.minHeight = Math.max(currentHeight, twoRowsMinHeight) + 'px';
+    } catch (e) {
+        // ignore
+    }
+
+    // tạo overlay nếu chưa có
+    if (list.querySelector('.product-list-loading-overlay')) return;
+
+    const overlay = document.createElement('div');
+    overlay.className = 'product-list-loading-overlay';
+    overlay.innerHTML = `
+      <div class="skeleton-grid" aria-hidden="true">
+        ${Array.from({ length: 10 }).map(() => `
+          <div class="skeleton-card product-list-item">
+            <div class="p-component product-item h-100">
+              <div class="p-img product-image">
+                <div class="a">
+                  <div class="skeleton-thumb skeleton-shimmer"></div>
+                </div>
+              </div>
+              <div class="p-information">
+                <div class="p-info mb-2 skeleton-body">
+                  <div class="skeleton-line w-80 skeleton-shimmer"></div>
+                  <div class="skeleton-line w-60 skeleton-shimmer"></div>
+                  <div class="skeleton-line w-40 skeleton-shimmer"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+    list.appendChild(overlay);
+}
+
+function hideProductListLoading() {
+    __productListLoadingCount = Math.max(__productListLoadingCount - 1, 0);
+    if (__productListLoadingCount > 0) return;
+    const list = document.getElementById('productList');
+    if (!list) return;
+    list.classList.remove('is-loading');
+    const overlay = list.querySelector('.product-list-loading-overlay');
+    if (overlay) overlay.remove();
+
+    // Restore min-height
+    if (list.hasAttribute('data-prev-min-height')) {
+        const prev = list.getAttribute('data-prev-min-height');
+        list.style.minHeight = prev || '';
+        list.removeAttribute('data-prev-min-height');
+    }
+}
+
+function updateLoadMoreButtonAfterFilter(filters) {
+    const btn = document.querySelector('.load-more-btn');
+    if (!btn) return;
+
+    const container = btn.closest('.row') || btn.parentElement;
+    const setVisible = (visible) => {
+        if (container) container.style.display = visible ? '' : 'none';
+        else btn.style.display = visible ? '' : 'none';
+    };
+
+    const currentItems = document.querySelectorAll('#productList .product-list-item').length;
+
+    // Nếu không có sản phẩm, ẩn luôn nút
+    if (currentItems <= 0) {
+        setVisible(false);
+        if (window.ajaxPagination) {
+            window.ajaxPagination.hasMore = false;
+        }
+        return;
+    }
+
+    // Nếu không có PATH_AJAX thì không thể count → fallback: giữ nguyên nút
+    if (typeof PATH_AJAX === 'undefined' || !PATH_AJAX) {
+        return;
+    }
+
+    const applyTotal = (total) => {
+        const remaining = Math.max((parseInt(total, 10) || 0) - currentItems, 0);
+        if (remaining <= 0) {
+            setVisible(false);
+            if (window.ajaxPagination) {
+                window.ajaxPagination.hasMore = false;
+                window.ajaxPagination.remainingCount = 0;
+            }
+            return;
+        }
+
+        // Update button UI
+        setVisible(true);
+        btn.dataset.totalItems = total;
+        btn.dataset.currentItems = currentItems;
+
+        const remainingEl = btn.querySelector('.remaining-count');
+        if (remainingEl) remainingEl.textContent = remaining;
+
+        // Reset & sync AjaxPagination instance (nếu có)
+        if (window.ajaxPagination) {
+            window.ajaxPagination.loadMoreBtn = btn;
+            window.ajaxPagination.productList = document.querySelector('#productList');
+            window.ajaxPagination.totalItems = parseInt(total, 10) || 0;
+            window.ajaxPagination.currentItems = currentItems;
+            window.ajaxPagination.remainingCount = remaining;
+            window.ajaxPagination.currentPage = 1;
+            window.ajaxPagination.nextPage = 2;
+            btn.dataset.nextPage = '2';
+            window.ajaxPagination.hasMore = true;
+            if (typeof window.ajaxPagination.forceUpdateButtonText === 'function') {
+                window.ajaxPagination.forceUpdateButtonText();
+            }
+            if (typeof window.ajaxPagination.bindEvents === 'function') {
+                window.ajaxPagination.bindEvents();
+            }
+        }
+    };
+
+    // Reuse cached/inflight count_products nếu có (defined in filters.js)
+    if (typeof window.requestCountProducts === 'function') {
+        window.requestCountProducts(filters)
+            .then((total) => {
+                if (total === null) return;
+                applyTotal(total);
+            })
+            .catch(() => {
+                setVisible(true);
+            });
+        return;
+    }
+
+    // Fallback: gọi trực tiếp nếu không có shared cache
+    $.ajax({
+        url: PATH_AJAX + "&action=count_products",
+        type: "POST",
+        headers: { "Content-Type": "application/json" },
+        data: JSON.stringify(filters),
+        success: function (resp) {
+            let total = 0;
+            if (resp && typeof resp === "object" && typeof resp.data !== "undefined") {
+                total = parseInt(resp.data, 10) || 0;
+            } else {
+                total = parseInt(resp, 10) || 0;
+            }
+            applyTotal(total);
+        },
+        error: function () {
+            // nếu count fail thì không tự ẩn để tránh UX xấu
+            setVisible(true);
+        }
+    });
+}
+
+function countProducts() {
+    let filters = getFilterParamModal();
+    const renderCount = (total) => {
+        total = parseInt(total, 10) || 0;
+        if (total === 0) {
+            $("#countProductsBtn").prop("disabled", true);
+            $("#countProductsBtn").html('<i class="ri-eye-line me-1"></i> Không có sản phẩm');
+        } else {
+            $("#countProductsBtn").prop("disabled", false);
+            $("#countProductsBtn").html('<i class="ri-eye-line me-1"></i> Xem  ' + total + ' sản phẩm');
+        }
+    };
+
+    // Reuse cached/inflight count_products nếu có (defined in filters.js)
+    if (typeof window.requestCountProducts === 'function') {
+        window.requestCountProducts(filters)
+            .then((total) => {
+                if (total === null) return;
+                renderCount(total);
+            })
+            .catch(() => {
+                // ignore
+            });
+        return;
+    }
+
+    $.ajax({
+        url: PATH_AJAX+"&action=count_products",
+        type: "POST",
+        headers: { "Content-Type": "application/json" },
+        data: JSON.stringify(filters),
+        success: function (response) {
+            let total = 0;
+            if (response && typeof response === "object") {
+                if (typeof response.data !== "undefined") {
+                    total = response.data;
+                }
+            }
+            renderCount(total);
+        }
+    });
+}   
+
+function getFilterParamModal() {
+    let selectedCategories = [];
+    document.querySelectorAll("input[type=radio][name='categories']:checked").forEach(el => {
+        selectedCategories.push(el.value);
+    });
+    let selectedBrands = [];
+    document.querySelectorAll("input[type=radio][name='brands']:checked").forEach(el => {
+        selectedBrands.push(el.value);
+    });
+
+    let selectedAttributes = [];
+    // Hỗ trợ cả checkbox cũ và mới
+    //[input#attribute_85_option_300.form-check-input.d-none]
+    document.querySelectorAll("input[type=checkbox][id^=modal_attribute_]:checked, input[type=checkbox][id^=attribute_]:checked").forEach(el => {
+        selectedAttributes.push(el.value);
+    });
+
+    let selectedProductTags = [];
+    // Lấy product_tag từ checkbox
+    document.querySelectorAll("input[type=checkbox][name='product_tag[]']:checked").forEach(el => {
+        selectedProductTags.push(el.value);
+    });
+
+    let selectedPriceList = [];
+    // Lấy price_list từ JSON data trước, fallback về DOM
+    if (typeof filterData !== 'undefined' && filterData && filterData.price_list) {
+        filterData.price_list.forEach(priceItem => {
+            if (priceItem.checked) {
+                selectedPriceList.push(priceItem.id);
+            }
+        });
+    } else {
+        // Fallback: lấy từ DOM checkbox
+        document.querySelectorAll("input[type=checkbox][name='price_list[]']:checked").forEach(el => {
+            selectedPriceList.push(el.value);
+        });
+    }
+
+    // Lấy giá trị từ modal_price_min và modal_price_max (có thể đã format)
+    let minPriceElem = document.getElementById("modal_price_min");
+    let maxPriceElem = document.getElementById("modal_price_max");
+    
+    // Parse giá trị từ input (có thể đã format với dấu chấm và "đ")
+    let parsePriceValue = function(value) {
+        if (!value) return 0;
+        // Bỏ tất cả ký tự không phải số
+        const numStr = value.toString().replace(/[^\d]/g, '');
+        return parseInt(numStr) || 0;
+    };
+    
+    let minPrice = minPriceElem ? parsePriceValue(minPriceElem.value) : 0;
+    let maxPrice = maxPriceElem ? parsePriceValue(maxPriceElem.value) : 99999999;
+    
+    // Fallback: nếu không tìm thấy, thử lấy từ modal_priceRangeMin/max (cho tương thích)
+    if (!minPriceElem) {
+        let fallbackMin = document.getElementById("modal_priceRangeMin");
+        if (fallbackMin) minPrice = parseInt(fallbackMin.value) || 0;
+    }
+    if (!maxPriceElem) {
+        let fallbackMax = document.getElementById("modal_priceRangeMax");
+        if (fallbackMax) maxPrice = parseInt(fallbackMax.value) || 99999999;
+    }
+    let keyword = (document.getElementById("text-search") ? document.getElementById("text-search").value : '') || '';
+    let sort = new URLSearchParams(window.location.search).get('sort') || '';
+    let code = window.location.pathname || '';
+    if (minPrice > maxPrice) [minPrice, maxPrice] = [maxPrice, minPrice];
+    
+    // Nếu có price_list được chọn, không gửi min_price/max_price
+    if (selectedPriceList.length > 0) {
+        return {
+            code: code,
+            categories: selectedCategories,
+            brands: selectedBrands,
+            attributes: selectedAttributes,
+            product_tags: selectedProductTags,
+            price_list: selectedPriceList,
+            keyword: keyword,
+            sort: sort
+        };
+    } else {
+        // Nếu không có price_list, gửi min_price/max_price
+        return {
+            code: code,
+            categories: selectedCategories,
+            brands: selectedBrands,
+            attributes: selectedAttributes,
+            product_tags: selectedProductTags,
+            min_price: minPrice,
+            max_price: maxPrice,
+            keyword: keyword,
+            sort: sort
+        };
+    }
+}
+
+function getFilterParams() {
+    // Sync giá trị từ popover price slider vào hidden inputs TRƯỚC KHI syncFilterStates
+    // Điều này đảm bảo giá trị từ slider được sync trước và không bị ghi đè
+    const popoverMinInput = document.getElementById('popover_price_min');
+    const popoverMaxInput = document.getElementById('popover_price_max');
+    const hiddenMinInput = document.getElementById('priceRangeMin');
+    const hiddenMaxInput = document.getElementById('priceRangeMax');
+    
+    if (popoverMinInput && popoverMaxInput && hiddenMinInput && hiddenMaxInput) {
+      // Parse giá trị từ popover inputs (có thể có format)
+      const parsePriceValue = (value) => {
+        if (!value) return 0;
+        const numStr = value.toString().replace(/[^\d]/g, '');
+        return parseInt(numStr) || 0;
+      };
+      
+      const popoverMin = parsePriceValue(popoverMinInput.value);
+      const popoverMax = parsePriceValue(popoverMaxInput.value);
+      
+      // Luôn sync giá trị từ popover vào hidden inputs nếu popover inputs tồn tại
+      // (giá trị đã được sync trong event 'update' của slider, nhưng sync lại để đảm bảo)
+      hiddenMinInput.value = popoverMin;
+      hiddenMaxInput.value = popoverMax;
+      
+      // Đánh dấu rằng giá trị này đến từ slider
+      hiddenMinInput.setAttribute('data-from-slider', 'true');
+      hiddenMaxInput.setAttribute('data-from-slider', 'true');
+   
+    }
+    
+    // Đồng bộ trạng thái sau khi đã sync giá trị từ slider
+    // syncFilterStates() sẽ kiểm tra và giữ nguyên giá trị từ slider
+    if (typeof syncFilterStates === 'function') {
+        syncFilterStates();
+    }
+    
+    let selectedCategories = [];
+    document.querySelectorAll("input[type=radio][name='categories']:checked").forEach(el => {
+        selectedCategories.push(el.value);
+    });
+
+    let selectedBrands = [];
+    document.querySelectorAll("input[type=radio][name='brands']:checked").forEach(el => {
+        selectedBrands.push(el.value);
+    });
+
+    let selectedAttributes = [];
+    // Lấy từ cả modal và bên ngoài - hỗ trợ cả attribute[] và attribute_123[]
+    document.querySelectorAll("input[type=checkbox][name^='attribute']:checked").forEach(el => {
+        selectedAttributes.push(el.value);
+    });
+
+    let selectedProductTags = [];
+    // Lấy product_tag từ checkbox
+    document.querySelectorAll("input[type=checkbox][name='product_tag[]']:checked").forEach(el => {
+        selectedProductTags.push(el.value);
+    });
+
+    let selectedPriceList = [];
+    // Lấy price_list từ JSON data trước, fallback về DOM
+    if (typeof filterData !== 'undefined' && filterData && filterData.price_list) {
+        filterData.price_list.forEach(priceItem => {
+            if (priceItem.checked) {
+                selectedPriceList.push(priceItem.id);
+            }
+        });
+    } else {
+        // Fallback: lấy từ DOM checkbox
+        document.querySelectorAll("input[type=checkbox][name='price_list[]']:checked").forEach(el => {
+            selectedPriceList.push(el.value);
+        });
+    }
+
+    let minPriceElem = document.getElementById("priceRangeMin");
+    let maxPriceElem = document.getElementById("priceRangeMax");
+    
+    // Hàm helper để parse giá trị price (xử lý cả giá trị có format và số thuần)
+    const parsePriceValue = (value) => {
+      if (!value) return 0;
+      // Bỏ tất cả ký tự không phải số
+      const numStr = value.toString().replace(/[^\d]/g, '');
+      return parseInt(numStr) || 0;
+    };
+    
+    // Lấy giá trị từ hidden inputs
+    let minPrice = minPriceElem ? parsePriceValue(minPriceElem.value) : 0;
+    let maxPrice = maxPriceElem ? parsePriceValue(maxPriceElem.value) : 99999999;
+  
+    let keyword = (document.getElementById("text-search") ? document.getElementById("text-search").value : '') || '';
+    let sort = new URLSearchParams(window.location.search).get('sort') || '';
+    let code = window.location.pathname || '';
+    if (minPrice > maxPrice) [minPrice, maxPrice] = [maxPrice, minPrice];
+    
+    // Nếu có price_list được chọn, không gửi min_price/max_price
+    if (selectedPriceList.length > 0) {
+        return {
+            code: code,
+            categories: selectedCategories,
+            brands: selectedBrands,
+            attributes: selectedAttributes,
+            product_tags: selectedProductTags,
+            price_list: selectedPriceList,
+            keyword: keyword,
+            sort: sort
+        };
+    } else {
+        // Nếu không có price_list, gửi min_price/max_price
+        return {
+            code: code,
+            categories: selectedCategories,
+            brands: selectedBrands,
+            attributes: selectedAttributes,
+            product_tags: selectedProductTags,
+            min_price: minPrice,
+            max_price: maxPrice,
+            keyword: keyword,
+            sort: sort
+        };
+    }
+}
+
+function updateSort(sortType) {
+	let params = new URLSearchParams(window.location.search);
+	params.set("sort", sortType);
+	let newUrl = "?" + params.toString();
+	if (window.location.search !== newUrl) {
+		window.history.pushState({}, "", newUrl);
+	}
+	filterProducts();
+}
+
+// 🏷 **Cập nhật product_tag filter**
+function updateTagFilter(checkbox) {
+	filterProducts();
+}
+
+
+// 🏷 **Khôi phục bộ lọc từ URL**
+function restoreFilters() {
+    let params = new URLSearchParams(window.location.search);
+
+    // 📌 **Khôi phục danh mục đã chọn**
+    if (params.has("categories")) {
+        let selectedCategories = params.get("categories").split(",");
+        selectedCategories.forEach((cat) => {
+            let checkbox = $("#filter_category_" + cat);
+            if (checkbox.length) checkbox.prop("checked", true);
+        });
+    }
+
+    // 📌 **Khôi phục thương hiệu đã chọn**
+    if (params.has("brands")) {
+        let selectedBrands = params.get("brands").split(",");
+        selectedBrands.forEach((brand) => {
+            // Thử cả checkbox cũ và mới
+            let checkbox = $("#filter_brand_" + brand);
+            if (!checkbox.length) {
+                checkbox = $(`input[type="checkbox"][value="${brand}"][id^="brand_"]`);
+            }
+            if (checkbox.length) checkbox.prop("checked", true);
+        });
+    }
+
+    // 📌 **Khôi phục thuộc tính đã chọn**
+    if (params.has("attributes")) {
+        let selectedAttributes = params.get("attributes").split(",");
+        selectedAttributes.forEach((attribute) => {
+            // Thử cả checkbox cũ và mới
+            let checkbox = $("#filter_attribute_" + attribute);
+            if (!checkbox.length) {
+                checkbox = $(`input[type="checkbox"][value="${attribute}"][id^="attribute_"]`);
+            }
+            if (checkbox.length) checkbox.prop("checked", true);
+        });
+    }
+
+    // 📌 **Khôi phục product_tag đã chọn**
+    if (params.has("product_tags")) {
+        let selectedProductTags = params.get("product_tags").split(",");
+        selectedProductTags.forEach((tagId) => {
+            let checkbox = $(`input[type="checkbox"][name="product_tag[]"][value="${tagId}"]`);
+            if (checkbox.length) checkbox.prop("checked", true);
+        });
+    }
+
+    // 📌 **Khôi phục khoảng giá**
+    if (params.has("min_price") && params.has("max_price")) {
+        let minPrice = params.get("min_price");
+        let maxPrice = params.get("max_price");
+
+        $("#priceRangeMin").val(minPrice);
+        $("#priceRangeMax").val(maxPrice);
+
+        updatePriceRange(); // Gọi lại để hiển thị đúng format
+    }
+
+	// 📌 **Khôi phục loại sắp xếp**
+	if (params.has("sort")) {
+		let sortType = params.get("sort");
+		$(`.nav-link`).removeClass("active");
+		$(`.nav-link[href='#'][onclick*="${sortType}"]`).addClass("active");
+	}
+	
+	// 📌 **Cập nhật trạng thái active sau khi khôi phục**
+	if (typeof updateActiveStates === 'function') {
+		updateActiveStates();
+	}
+}
+
+// 📌 **Chỉ gọi `restoreFilters()` nếu có tham số trên URL**
+$(document).ready(function () {
+    if (window.location.search) {
+        restoreFilters();
+    }
+
+	 // Thêm sự kiện click để thêm lớp active vào nav-item
+	 $("#filter_sort .nav-link").on("click", function () {
+		$("#filter_sort .nav-link").removeClass("active");
+		$(this).addClass("active");
+	});
+});
+
+
+
+function loadImageTypeDetail(type_parent_id) {
+
+    $(".thong-tin-san-pham .lightSlider li").removeClass("active");
+    $("#slide_active_" + type_parent_id).addClass("active");
+}
+
+function changeValueTypeParent(_id, id_type, quantity) {
+
+    // $(".checkParent .product-variation").removeClass("checked");
+    $(".product-variation").removeClass("checked");
+    $(".checkParent .check_" + _id).addClass("checked");
+    $("#countpro_whouse").html(quantity + " sản phẩm tại kho");
+    $("#countQuantity").val(quantity);
+    $(".spLock").removeClass("bg_opacity_50");
+    // getTypeS(id_type);
+    ChangeConvert(_id);
+}
+
+function ChangeConvert(id_type) {
+    $(".c_all_sublist").css("display", "none");
+    $(".listSub_" + id_type).css("display", "block");
+}
+
+
+function changeValueType(_id, id_type, quantity, price, sku) {
+    var data = new Object();
+    data.quantity = $("#formProductItem input[name='quantity']").val();
+    $(".checkSubType .product-variation").removeClass("checked");
+    $(".checkSubType .check_sub" + _id).addClass("checked");
+    document.getElementById("typesSub_" + _id).checked = true;
+    $("#countpro_whouse").html(quantity + " sản phẩm tại kho");
+    $("#countQuantity").val(quantity);
+    $("#pricePro").html(numberFormat(price) + " đ");
+    $("#sku_sp").html(sku);
+}
+
+function getTypeS(id_type) {
+    var data = new Object();
+    data.id = $("#product_id").val();
+    data.type_c_id = id_type;
+    var url = site_folder + "/index_ajax.php?module_name=product&action=getTypeS";
+    $.ajax({
+        url: url,
+        data: data,
+        type: "POST",
+        success: function (result) {
+            $("#SSubType").html(result);
+            return false;
+        }
+    });
+}
+
+// Hàm chuyển đổi dữ liệu JSON thành HTML
+function loadHtmlFromJsonDefault(products) {
+    if (!products || !Array.isArray(products)) {
+      console.warn(`Không có dữ liệu sản phẩm`);
+      return ``;
+    }
+  
+    let htmlList = "";
+    if (products.length > 0) {
+      htmlList = products
+        .map(
+          (product) => `
+              <div class="swiper-slide ">
+                  <div class="p-component product-item card h-100 shadow-sm" data-id="${
+            product.id
+          }" data-rating="${product.rate || 0}" data-warranty="${
+            product.warranty || ""
+          }" data-digital="${product.digital_info || ""}">
+                      <div class="p-img product-image">
+            ${
+              product.tags_json
+                ? (() => {
+                    let tagsHtml = '';
+                    try {
+                      const tags = typeof product.tags_json === 'string'
+                        ? JSON.parse(product.tags_json)
+                        : product.tags_json;
+                      if (tags && typeof tags === 'object') {
+                        tagsHtml = `<div class="tags-list mb-2">` +
+                          Object.values(tags)
+                            .map(tag => `<span class="tag">${tag}</span>`)
+                            .join('') +
+                          `</div>`;
+                      }
+                    } catch (e) {
+                    }
+                    return tagsHtml;
+                  })()
+                : ""
+            }
+                          <div class="a pt-4">
+                              <a href="/${product.slug}">
+                                  <img src="${product.image}" alt="${
+            product.name
+          }" class="lazyload img-fluid effect">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="p-information">
+                          <div class="p-info">
+                              <p class="p-name">
+                                  <a href="/${product.slug}">${product.name}</a>
+                              </p>
+                          </div>
+                          <div class="list-action d-flex">
+                              <span class="me-auto">
+                                  <span class="p-price text-danger">${
+                    product.data_price.price
+                  }</span>
+                  ${
+                    product.data_price.oldprice
+                      ? product.data_price.oldprice
+                      : ""
+                  }
+                              </span>
+                          </div>
+                      </div>
+                      <div class="align-items-center d-flex flex-wrap my-2">
+                          <span class="me-auto">
+                              ${
+                  product.rate && product.rate != 0
+                    ? `
+                                  <i class="ri-star-fill text-warning me-1"></i>
+                                  <strong>${product.rate}</strong>
+                              `
+                    : ""
+                }
+                          </span>
+                          <span class="ms-auto">
+                              <a href="javascript:;" onclick="compareProduct(${
+                  product.id
+                })" data-product-id="${
+            product.id
+          }" class="link-compare text-primary">
+                                  <i class="ri-add-circle-line text-primary"></i>
+                                  <span class="text-danger">So sánh</span>
+                              </a>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          `
+        )
+        .join("");
+    } else {
+      htmlList = `<div class="alert alert-info">Không có sản phẩm nào</div>`;
+    }
+  
+    return htmlList;
+  }
+  

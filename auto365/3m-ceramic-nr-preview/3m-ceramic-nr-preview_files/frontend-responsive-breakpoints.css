@@ -1,0 +1,288 @@
+/**
+ * Mobile / tablet — chỉnh trên nền template PC (Bootstrap 5 breakpoints).
+ * Ưu tiên: gỡ min-width cột desktop, lưới sản phẩm, header & menu, footer, filter.
+ */
+
+/* -------------------------------------------------------------------------- */
+/* Large tablets / small desktops (≤1199px)                                     */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+	#page .container {
+		max-width: 100%;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+
+	.product-list {
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.compare-popup__dialog {
+		width: min(94vw, 840px);
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* Tablets (≤991px)                                                           */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+	body {
+		min-width: 0;
+		font-size: 13px;
+	}
+
+	#page .container {
+		padding-left: 0.75rem;
+		padding-right: 0.75rem;
+	}
+
+	/* Header: logo + search + actions không bị chật */
+	.header-stg .container > .row:first-child {
+		row-gap: 0.75rem;
+	}
+
+	.header-stg .logo img {
+		max-height: 48px;
+		width: auto;
+	}
+
+	.main-search .form-search-main {
+		min-height: 42px;
+	}
+
+	.support-links {
+		flex-wrap: wrap;
+		justify-content: flex-end !important;
+		row-gap: 0.35rem;
+	}
+
+	.support-links .box-menu-dropdown .dropdown-toggle {
+		padding: 0.35rem 0.6rem !important;
+		font-size: 0.8rem;
+	}
+
+	.list-account .btn-sm,
+	.box-user-dropdown .btn-sm {
+		padding: 0.25rem 0.5rem;
+		font-size: 0.75rem;
+	}
+
+	/* Menu danh mục: cuộn ngang thay vì tràn trang */
+	.header-menu-wrapper {
+		overflow: hidden;
+	}
+
+	.header-menu-wrapper .d-flex.align-items-center {
+		align-items: stretch !important;
+	}
+
+	.menu-categories {
+		flex-wrap: nowrap !important;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		gap: 0.15rem;
+		padding-bottom: 0.35rem;
+		margin-bottom: 0;
+		scrollbar-width: thin;
+	}
+
+	.menu-categories::-webkit-scrollbar {
+		height: 4px;
+	}
+
+	.menu-categories > .dropdown {
+		flex-shrink: 0;
+	}
+
+	.header-menu-wrapper .dropdown-toggle,
+	.header-menu-wrapper .btn-link {
+		font-size: 0.82rem;
+		padding: 0.35rem 0.55rem !important;
+	}
+
+	/* Dropdown mega-menu: giới hạn chiều cao khi mở trên tablet */
+	.header-menu-wrapper .dropdown-menu {
+		max-height: min(70vh, 520px);
+		overflow-y: auto;
+	}
+
+	/* Danh mục sản phẩm */
+	.product-list {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 0.35rem;
+	}
+
+	.product-list .product-list-item {
+		margin: 4px 4px 4px 0;
+	}
+
+	.category-page .my-container,
+	.sanpham-home .my-container {
+		padding: 0.75rem !important;
+	}
+
+	.bg-filter {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.stg-footer-links {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.links-group-container {
+		width: 48% !important;
+		margin-bottom: 24px !important;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* Phones landscape / large phones (≤767px)                                   */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+	body {
+		font-size: 13px;
+	}
+
+	#page .container {
+		padding-left: 0.65rem;
+		padding-right: 0.65rem;
+	}
+
+	.header-stg .support-links .dropdown-toggle span,
+	.header-stg .support-links .dropdown-toggle {
+		white-space: normal;
+		text-align: center;
+	}
+
+	.product-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.25rem;
+	}
+
+	.product-list .product-list-item {
+		margin: 3px 3px 3px 0;
+	}
+
+	.product-list-item .p-name {
+		font-size: 0.85rem;
+		line-height: 1.35;
+	}
+
+	.product-list-item .p-price {
+		font-size: 0.9rem;
+	}
+
+	/* Filter / sort bar */
+	.bg-filter .btn,
+	.bg-filter select,
+	.bg-filter .form-select {
+		font-size: 0.85rem;
+	}
+
+	/* Footer brand grid → 4 cột */
+	.ft-content-stg .row-cols-4 > * {
+		flex: 0 0 auto;
+		width: 25% !important;
+	}
+
+	.ft-content-stg .links-group-title {
+		font-size: 1rem;
+	}
+
+	/* Bảng / nội dung rộng */
+	.table-responsive,
+	.box-page-category {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	/* Bootstrap modal full-width nhỏ */
+	.modal-dialog.modal-lg {
+		margin: 0.5rem;
+		max-width: calc(100% - 1rem);
+	}
+
+	.links-group-container {
+		width: 100% !important;
+		margin-bottom: 20px !important;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* Phones portrait (≤575px)                                                   */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+	#page .container {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+
+	.header-stg .col-md-3,
+	.header-stg .col-md-5,
+	.header-stg .col-md-4 {
+		padding-left: calc(var(--bs-gutter-x) * 0.35);
+		padding-right: calc(var(--bs-gutter-x) * 0.35);
+	}
+
+	.list-account {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.35rem;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
+	.list-account .btn-sm {
+		flex: 1 1 auto;
+		min-width: 0;
+		text-align: center;
+	}
+
+	.product-list {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.2rem;
+	}
+
+	.category-page .my-container,
+	.sanpham-home .my-container {
+		padding: 0.5rem !important;
+		border-radius: 0.5rem !important;
+	}
+
+	/* Popup so sánh (layout index.twig) */
+	.compare-popup {
+		padding: 0.75rem;
+	}
+
+	.compare-popup__header,
+	.compare-popup__footer {
+		padding: 0.85rem 1rem;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.compare-popup__title {
+		font-size: 1rem;
+	}
+
+	/* Ẩn viền thừa giữa ô sản phẩm trên màn rất nhỏ */
+	.product-list .product-list-item {
+		margin: 2px;
+	}
+}
+
+/* -------------------------------------------------------------------------- */
+/* Rất nhỏ (≤400px) — tùy chọn 1 cột sản phẩm                                 */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 399.98px) {
+	.product-list {
+		grid-template-columns: 1fr;
+	}
+
+	.product-list .product-list-item {
+		margin: 0 0 0.5rem 0;
+	}
+}

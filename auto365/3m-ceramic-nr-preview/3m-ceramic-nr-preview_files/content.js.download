@@ -1,0 +1,205 @@
+$(document).ready(function () {
+  var contentPrepared = false;
+  var tocPrepared = false;
+
+  function prepareContentMedia() {
+    if (contentPrepared || $("#contents").length <= 0) {
+      return;
+    }
+
+    contentPrepared = true;
+
+    $("#contents img").each(function () {
+      $(this).removeAttr("width").removeAttr("height");
+      var style = $(this).attr("style");
+      if (style) {
+        style = style.replace(/(?:\s*width\s*:\s*[^;]+;?)/gi, "");
+        style = style.replace(/(?:\s*height\s*:\s*[^;]+;?)/gi, "");
+        $(this).attr("style", style.trim());
+        if ($(this).attr("style").replace(/\s/g, "") === "") {
+          $(this).removeAttr("style");
+        }
+      }
+      if (!$(this).hasClass("img-fluid")) {
+        $(this).addClass("img-fluid").css({
+          "max-width": "100%",
+          height: "auto",
+          display: "block",
+        });
+      }
+    });
+
+    $("#contents, #contents *").each(function () {
+      var $el = $(this);
+      var style = $el.attr("style");
+      if (style) {
+        style = style.replace(/font-family\s*:\s*[^;]+;?/gi, "");
+        style = 'font-family: "Roboto", Arial, sans-serif;' + style;
+        $el.attr("style", style.trim());
+      } else {
+        $el.css("font-family", '"Roboto", Arial, sans-serif');
+      }
+
+      if ($el.is("iframe")) {
+        $el.css({
+          width: "100%",
+          "max-width": "100%",
+          height: window.innerWidth <= 768 ? "250px" : "400px",
+          border: "none",
+          "border-radius": "8px",
+        });
+        $el.removeAttr("width").removeAttr("height");
+      }
+    });
+  }
+
+  function autoNumberToc() {
+    const $toc = $("#table-of-contents");
+    if ($toc.length <= 0) return;
+
+    // Pattern to detect numbers like "1.", "1.1.", "1.1.1" at the start
+    const numberPattern = /^\s*\d+(\.\d+)*[\s\.\-\:]/;
+    const $links = $toc.find("a");
+    if ($links.length === 0) return;
+
+    let numberedCount = 0;
+    $links.each(function() {
+      const text = $(this).text().trim();
+      if (numberPattern.test(text)) {
+        numberedCount++;
+      }
+    });
+
+    // If more than 30% of headings already have numbers, keep them as is (avoid duplicate numbers)
+    if (numberedCount / $links.length > 0.3) {
+      return;
+    }
+
+    // Auto-number hierarchically
+    function numberList($ol, prefix = "") {
+      $ol.children("li").each(function(index) {
+        const currentNumber = prefix ? `${prefix}.${index + 1}` : `${index + 1}`;
+        const $a = $(this).children("a");
+        if ($a.length > 0) {
+          const originalText = $a.text().trim();
+          $a.text(`${currentNumber}. ${originalText}`);
+        }
+        
+        const $subOl = $(this).children("ol, ul");
+        if ($subOl.length > 0) {
+          numberList($subOl, currentNumber);
+        }
+      });
+    }
+
+    numberList($toc);
+  }
+
+  function initToc() {
+    if (tocPrepared) {
+      return;
+    }
+
+    if ($("#table-of-contents").length <= 0) {
+      $(".TabsOfContents").css("display", "none");
+      tocPrepared = true;
+      return;
+    }
+
+    $("#table-of-contents").toc({
+      content: "#contents",
+      headings: "h2,h3,h4,h5,h6,h7",
+    });
+
+    // Apply smart auto-numbering
+    autoNumberToc();
+
+    if ($("#table-of-contents li").length <= 0) {
+      $(".TabsOfContents").css("display", "none");
+    }
+
+    tocPrepared = true;
+  }
+
+  function handleIframeResponsive() {
+    if ($("#contents").length <= 0) {
+      return;
+    }
+
+    $("#contents iframe").each(function () {
+      $(this).css("height", window.innerWidth <= 768 ? "250px" : "400px");
+    });
+  }
+
+  function prepareExpandedContent() {
+    prepareContentMedia();
+    initToc();
+    handleIframeResponsive();
+
+    if (window.lazySizes && window.lazySizes.loader && typeof window.lazySizes.loader.checkElems === "function") {
+      window.requestAnimationFrame(function () {
+        window.lazySizes.loader.checkElems();
+      });
+    }
+  }
+
+  const toggleBtn = document.getElementById("toggle-content");
+  const content = document.getElementById("contents");
+  const tocToggleBtn = document.getElementById("toggle-toc");
+  const tocList = document.getElementById("table-of-contents");
+
+  if (content && toggleBtn) {
+    const toggleIcon = toggleBtn.querySelector(".toggle-icon");
+    const toggleText = toggleBtn.querySelector(".toggle-text");
+    
+    // Check height dynamically
+    const limitHeight = window.innerWidth <= 768 ? 500 : 800;
+    
+    // Temporarily remove collapsed class to measure actual height
+    content.classList.remove("content-collapsed");
+    const actualHeight = content.scrollHeight;
+    
+    if (actualHeight <= limitHeight) {
+      content.classList.add("content-expanded");
+      const parentContainer = toggleBtn.closest(".text-center") || toggleBtn;
+      parentContainer.style.setProperty("display", "none", "important");
+    } else {
+      content.classList.add("content-collapsed");
+      
+      toggleBtn.addEventListener("click", function () {
+        if (content.classList.contains("content-collapsed")) {
+          content.classList.remove("content-collapsed");
+          content.classList.add("content-expanded");
+          toggleIcon.classList.add("rotated");
+          if (toggleText) toggleText.textContent = "Thu gọn";
+        } else {
+          content.classList.remove("content-expanded");
+          content.classList.add("content-collapsed");
+          toggleIcon.classList.remove("rotated");
+          if (toggleText) toggleText.textContent = "Xem thêm";
+        }
+      });
+    }
+    prepareExpandedContent();
+  } else if (content) {
+    prepareExpandedContent();
+  }
+
+  if (tocToggleBtn && tocList) {
+    const tocToggleIcon = tocToggleBtn.querySelector(".toc-toggle-icon");
+
+    tocToggleBtn.addEventListener("click", function () {
+      const isHidden = tocList.classList.toggle("toc-hidden");
+
+      if (isHidden) {
+        tocToggleIcon.classList.remove("rotated");
+      } else {
+        tocToggleIcon.classList.add("rotated");
+      }
+    });
+  }
+
+  $(window).on("resize", function () {
+    handleIframeResponsive();
+  });
+});

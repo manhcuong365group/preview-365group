@@ -1,0 +1,268 @@
+let DataBlocks = [];
+let homeListSwipers = {};
+let loadedBlocks = new Set();
+
+document.addEventListener("DOMContentLoaded", function () {
+  const blocks = document.querySelectorAll("[id^='list-block-']");
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+  function loadContent(block) {
+    if (loadedBlocks.has(block.id)) return;
+    loadedBlocks.add(block.id);
+
+    const blockId = block.id.split("-").pop();
+    // Kiểm tra xem có dữ liệu cho block này không
+    if (!DataBlocks[blockId]) {
+      console.warn(`Không có dữ liệu cho block ${blockId}`);
+      return;
+    }
+
+    const targetContainer = block.querySelector(`.product-block-${blockId}`);
+    if (targetContainer) {
+      targetContainer.innerHTML = loadHtmlFromJson(blockId);
+
+      // Đợi HTML được render xong rồi mới khởi tạo Swiper
+      setTimeout(() => {
+        reloadSwiper(block, blockId);
+      }, 200);
+    } else {
+      console.warn(`Không tìm thấy container .product-block-${blockId}`);
+    }
+  }
+
+  function reloadSwiper(block, blockId) {
+    let swiperContainer = block.querySelector(".swiper-list-block-" + blockId);
+    if (!swiperContainer) {
+      console.warn(`Không tìm thấy swiper container cho block ${blockId}`);
+      return;
+    }
+
+    let rowCount = parseInt(swiperContainer?.getAttribute("data-row")) || 2;
+    let perview = parseInt(swiperContainer?.getAttribute("data-perview")) || 5;
+    let spaceBetween = parseInt(swiperContainer?.getAttribute("data-space-between")) || 10;
+
+
+    // Nếu Swiper của block này đã tồn tại, chỉ update thay vì destroy
+    if (homeListSwipers[blockId]) {
+      homeListSwipers[blockId].update();
+      return;
+    }
+
+    // Nếu chưa có Swiper, khởi tạo mới
+    homeListSwipers[blockId] = new Swiper(swiperContainer, {
+      slidesPerView: perview,
+      spaceBetween: spaceBetween, // Sử dụng 0 thay vì -1 để tránh lỗi grid
+      grid: {
+        rows: rowCount,
+        fill: "row",
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: spaceBetween,
+          grid: {
+            rows: rowCount,
+            fill: "row",
+          }
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: spaceBetween,
+          grid: {
+            rows: rowCount,
+            fill: "row",
+          }
+        },
+        1024: {
+          slidesPerView: perview,
+          spaceBetween: spaceBetween,
+          grid: {
+            rows: rowCount,
+            fill: "row",
+          }
+        }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      // autoplay: {
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // },
+      autoplay: false,
+      loop: false,
+    });
+  }
+
+  function loadAjaxData() {
+    // Nếu không có class 'box-product-standing' thì không gọi ajax, trả về resolved Promise luôn
+    if (!document.querySelector('.box-product-standing')) {
+      return Promise.resolve();
+    }
+    if (Object.keys(DataBlocks).length > 0) {
+      return Promise.resolve();
+    }
+
+    return fetch(
+      PATH_AJAX_MODULE + `ajax&action=getProductTabJson&_=${Date.now()}`
+    )
+      .then((response) => response.text())
+      .then((data) => {
+        let jsonData = {};
+        try {
+          jsonData = JSON.parse(data);
+        } catch (e) {
+          console.error("Lỗi parse JSON:", e);
+          jsonData = {};
+        }
+
+        if (jsonData.data && jsonData.data.list) {
+          // Lưu trực tiếp object list với key là categoryId
+          DataBlocks = jsonData.data.list;
+          return true; // Trả về true để biết đã load xong
+        } else {
+          console.error("Không có dữ liệu trong response");
+          DataBlocks = {};
+          return false;
+        }
+      })
+      .catch((error) => {
+        console.error("Lỗi tải dữ liệu:", error);
+        return false;
+      });
+  }
+
+  function onScroll() {
+    // Chỉ xử lý scroll khi đã có dữ liệu
+    if (Object.keys(DataBlocks).length === 0) {
+      return;
+    }
+
+    blocks.forEach((block) => {
+      if (isElementInViewport(block)) {
+        loadContent(block);
+      }
+    });
+  }
+
+  // Load AJAX ngay từ đầu và đợi load xong
+  loadAjaxData().then((success) => {
+    if (success) {
+      // Kiểm tra các block đang trong viewport ngay sau khi load xong
+      onScroll();
+    }
+  });
+
+  window.addEventListener("scroll", onScroll);
+});
+
+// Hàm chuyển đổi dữ liệu JSON thành HTML
+function loadHtmlFromJson(blockId) {
+  const products = DataBlocks[blockId];
+
+  if (!products || !Array.isArray(products)) {
+    return `<div class="alert alert-warning">Không có sản phẩm nào cho block ${blockId}</div>`;
+  }
+
+  let htmlList = "";
+  if (products.length > 0) {
+    htmlList = products
+      .map(
+        (product) => `
+			<div class="swiper-slide ">
+				<div class="p-component product-item h-100 " data-id="${
+          product.id
+        }" data-rating="${product.rate || 0}" data-warranty="${
+          product.warranty || ""
+        }" data-digital="${product.digital_info || ""}">
+          ${
+            product.tags_json
+              ? (() => {
+                  let tagsHtml = '';
+                  try {
+                    const tags = typeof product.tags_json === 'string'
+                      ? JSON.parse(product.tags_json)
+                      : product.tags_json;
+                    if (tags && typeof tags === 'object') {
+                      tagsHtml = `<div class="product-tags">` +
+                        Object.values(tags)
+                          .map(tag => `<span class="tag">${tag}</span>`)
+                          .join('') +
+                        `</div>`;
+                    }
+                  } catch (e) {
+                  }
+                  return tagsHtml;
+                })()
+              : ""
+          }
+					<div class="p-img product-image">
+            ${product.data_price && product.data_price.promotion_percent ? `
+                        <span class="promotion-percent ms-1">${product.data_price.promotion_percent}</span>
+                    ` : ''}
+						<div class="a">
+							<a href="/${product.slug}">
+								<img src="${product.image}" alt="${
+          product.name
+        }" class="lazyload img-fluid effect lazyload" loading="lazy">
+							</a>
+						</div>
+					</div>
+					<div class="p-information">
+						<div class="p-info">
+							<p class="p-name">
+								<a href="/${product.slug}">${product.name}</a>
+							</p>
+						</div>
+						<div class="list-action d-flex">
+							<span class="me-auto">
+								<span class="p-price text-danger">${
+                  product.data_price.price
+                }</span>
+                ${
+                  product.data_price.oldprice
+                    ? product.data_price.oldprice
+                    : ""
+                }
+							</span>
+						</div>
+					</div>
+					<div class="align-items-center d-flex flex-wrap my-2">
+						<span class="me-auto">
+							${
+                product.rate && product.rate != 0
+                  ? `
+								<i class="ri-star-fill text-warning me-1"></i>
+								<strong>${product.rate}</strong>
+							`
+                  : ""
+              }
+						</span>
+						<span class="ms-auto">
+							<a href="javascript:;" onclick="compareProductList(${
+                product.id
+              },'${product.name}','${product.image}','${product.slug}',${
+                product.category_id
+              })" data-product-id="${
+                product.id
+              }" class="link-compare text-primary">
+								<i class="ri-add-circle-line text-primary"></i>
+								<span class="text-danger">So sánh</span>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		`
+      )
+      .join("");
+  } else {
+    htmlList = `<div class="alert alert-info">Không có sản phẩm nào</div>`;
+  }
+
+  return htmlList;
+}

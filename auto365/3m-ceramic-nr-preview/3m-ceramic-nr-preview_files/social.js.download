@@ -1,0 +1,195 @@
+let noLoginFbGoogle = true;
+//FACEBOOK
+function statusChangeCallback(response) {
+  let btnLogout = document.getElementById("fb-logout-btn");
+  if (response.status === "connected") {
+    // Kiểm tra nếu đã login trước đó thì không gọi checkLoginAPI nữa
+    if (!localStorage.getItem("fb_logged_in")) {
+      checkLoginAPI(response.authResponse.accessToken);
+    }
+    if (btnLogout) {
+      btnLogout.style.display = "block";
+    }
+    noLoginFbGoogle = false;
+  } else {
+    if (btnLogout) {
+      btnLogout.style.display = "none";
+    }
+  }
+}
+
+const FACEBOOK_APP_ID = document.querySelector('meta[property="fb:app_id"]');
+window.fbAsyncInit = function () {
+  FB.init({
+    appId: FACEBOOK_APP_ID,
+    cookie: true,
+    xfbml: true,
+    version: "v22.0",
+  });
+  // Called when a person is finished with the Login Button.
+  FB.getLoginStatus(function (response) {
+    // See the onlogin handler
+    statusChangeCallback(response);
+  });
+};
+function checkLoginAPI(accessToken) {
+  console.log("Welcome! Fetching your information.... ");
+  FB.api("/me", function (response) {
+    console.log("Successful login for:", response);
+    if (response && response.id) {
+      const fbCallbackUrlMeta = document.querySelector(
+        'meta[name="facebook-signin-callback"]'
+      );
+      const fbCallbackUrl = fbCallbackUrlMeta
+        ? fbCallbackUrlMeta.getAttribute("content")
+        : null;
+
+      if (fbCallbackUrl) {
+        fetch(fbCallbackUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(response),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.success) {
+              console.log("Login successful!", data);
+              showToast(
+                "Login thành công qua Facebook! Chuyển hướng về trang chính",
+                "success"
+              );
+
+              // Lưu trạng thái đăng nhập để tránh reload liên tục
+              localStorage.setItem("fb_logged_in", "true");
+
+              setTimeout(() => {
+                window.location.href = "/";
+              }, 1500);
+            } else {
+              showToast(data.message, "error");
+            }
+          })
+          .catch((err) => {
+            console.error("Lỗi xác thực", err);
+            showToast("Đã xảy ra lỗi trong quá trình xác thực.", "error");
+          });
+      } else {
+        console.error("Facebook callback URL is missing.");
+      }
+    }
+  });
+}
+
+function fbLogout() {
+  FB.logout(function (response) {
+    localStorage.removeItem("fb_logged_in"); // Xóa trạng thái đăng nhập
+    window.location.href = "/account/logout";
+  });
+}
+
+///GOOGLE
+function handleCredentialResponse(response) {
+  const googleCallbackUrl = document
+    .querySelector('meta[name="google-signin-callback"]')
+    .getAttribute("content");
+
+  const tokenData = {
+    id_token: response.credential, // Lấy token từ Google
+  };
+
+  fetch(googleCallbackUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(tokenData),
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.success) {
+        showToast(
+          "Login thành công qua Google! Chuyển hướng về trang chính",
+          "success"
+        );
+        // Hiển thị nút logout Google
+        document.getElementById("google-logout-btn").style.display = "block";
+
+        // ✅ Lưu trạng thái đăng nhập để tránh reload vô hạn
+        localStorage.setItem("google_logged_in", "true");
+
+        setTimeout(() => {
+          window.location.href = "/";
+        }, 1500);
+      } else {
+        showToast(data.message, "error");
+      }
+    })
+    .catch((err) => {
+      console.error("Lỗi xác thực", err);
+      showToast("Đã xảy ra lỗi trong quá trình xác thực.", "error");
+    });
+}
+
+// Lấy giá trị từ meta tag google-signin-client_id
+const googleClientId = document
+  .querySelector('meta[name="google-signin-client_id"]')
+  .getAttribute("content");
+
+if (typeof google !== "undefined" && google.accounts && google.accounts.id) {
+  google.accounts.id.initialize({
+    client_id: googleClientId,
+    callback: handleCredentialResponse,
+  });
+
+  google.accounts.id.renderButton(
+    document.getElementById("google-signin"),
+    { theme: "outline", size: "large" } // Các tùy chọn hiển thị
+  );
+}
+
+function checkGoogleLoginStatus() {
+  const isLoggedIn = localStorage.getItem("google_logged_in") === "true";
+  const googleLogoutBtn = document.getElementById("google-logout-btn");
+
+  // Chỉ thực thi nếu tồn tại nút google-logout-btn
+  if (googleLogoutBtn) {
+    // Hiển thị nút logout Google nếu người dùng đã đăng nhập
+    if (isLoggedIn) {
+      googleLogoutBtn.style.display = "block";
+      noLoginFbGoogle = false;
+    } else {
+      googleLogoutBtn.style.display = "none";
+    }
+  }
+}
+
+function googleLogout() {
+  google.accounts.id.revoke(
+    localStorage.getItem("google_user_email"),
+    (done) => {
+      console.log("Google account disconnected", done);
+
+      // ✅ Xóa trạng thái đăng nhập
+      localStorage.removeItem("google_logged_in");
+      localStorage.removeItem("google_user_email"); // Xóa email đã lưu
+
+      showToast("Đã đăng xuất thành công!", "info");
+
+      // ✅ Ẩn nút logout
+      if (document.getElementById("google-logout-btn")) {
+        document.getElementById("google-logout-btn").style.display = "none";
+      }
+
+      // ✅ Chuyển hướng về trang logout
+      window.location.href = "/account/logout";
+    }
+  );
+}
+
+window.onload = function () {
+  checkGoogleLoginStatus();
+  if (noLoginFbGoogle) {
+    var logoutBtn = document.getElementById("account-logout-btn");
+    if (logoutBtn) {
+      logoutBtn.style.display = "block";
+    }
+  }
+};

@@ -1,0 +1,577 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const root = document.getElementById('pcn-main');
+
+    // Auto-fix accessibility for select#form-priority if exists (database-injected)
+    const formPriority = document.getElementById('form-priority') || document.querySelector('select[name="priority"]');
+    if (formPriority && !formPriority.hasAttribute('aria-label')) {
+        formPriority.setAttribute('aria-label', 'Chọn thứ tự ưu tiên nhu cầu');
+    }
+
+    if (root) {
+        const shadow = {
+            querySelectorAll: (selector) => root.querySelectorAll(selector),
+            querySelector: (selector) => root.querySelector(selector),
+            getElementById: (id) => document.getElementById(id)
+        };
+
+        // 3. Process Lazyload images & iframes (piercing lazyload restriction)
+        const lazyElements = shadow.querySelectorAll('img.lazyload, .lazyload, img[data-src], iframe[data-src]');
+        lazyElements.forEach(el => {
+            const dataSrc = el.getAttribute('data-src');
+            if (dataSrc) {
+                const tagName = el.tagName.toLowerCase();
+                if (tagName === 'img' || tagName === 'iframe') {
+                    el.setAttribute('src', dataSrc);
+                } else {
+                    el.style.backgroundImage = 'url(' + dataSrc + ')';
+                }
+                el.classList.remove('lazyload');
+            }
+        });
+
+
+
+        // 3.2 Initialize Shade Simulator
+        const simButtons = shadow.querySelectorAll('.sim-btn');
+        const advices = {
+            windshield: {
+                70: "Khuyên dùng: 70% VLT để bảo đảm an toàn khi lái xe vào ban đêm và trời mưa.",
+                60: "60% VLT: Giảm chói nắng tốt hơn, tầm nhìn lái xe ban đêm vẫn ổn định.",
+                50: "50% VLT: Khá tối, hạn chế dán kính lái nếu thường đi đêm hoặc khu vực ít đèn đường."
+            },
+            front: {
+                35: "Chọn 35% VLT để cân bằng khả năng cản nhiệt và tầm nhìn qua gương chiếu hậu.",
+                20: "20% VLT: Tăng tính riêng tư, vẫn nhìn rõ gương nếu đi ban ngày, ban đêm cần quan sát kỹ.",
+                15: "15% VLT: Rất tối và kín đáo, tăng tối đa hiệu quả chống nóng sườn trước."
+            },
+            rear: {
+                20: "20% VLT: Đủ mát và dễ chịu cho hàng ghế hành khách phía sau.",
+                10: "10% VLT: Độ riêng tư rất cao, hành khách phía sau thoải mái nghỉ ngơi tránh nắng chói.",
+                5: "Khuyên dùng: 5% VLT để bảo đảm sự kín đáo và giảm nắng chói tốt nhất cho hàng ghế sau."
+            }
+        };
+
+        simButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const glass = btn.getAttribute('data-glass');
+                const vlt = btn.getAttribute('data-vlt');
+                const opacity = btn.getAttribute('data-opacity');
+
+                // Toggle active class inside button group
+                shadow.querySelectorAll(`.sim-btn[data-glass="${glass}"]`).forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // Update SVG window shading opacity
+                const targetGlassSvg = shadow.getElementById(`sim-glass-${glass}`);
+                if (targetGlassSvg) {
+                    targetGlassSvg.setAttribute('fill-opacity', opacity);
+                }
+
+                // Update HUD Text overlay
+                const hudText = shadow.getElementById(`hud-vlt-${glass}`);
+                if (hudText) {
+                    let label = "";
+                    if (glass === 'windshield') label = "Kính lái";
+                    else if (glass === 'front') label = "Sườn trước";
+                    else if (glass === 'rear') label = "Sườn sau & hậu";
+                    hudText.innerHTML = `<i class="ri-information-line text-brand"></i> ${label}: ${vlt}% VLT`;
+                }
+
+                // Update advice text
+                const adviceText = shadow.getElementById(`advice-${glass}`);
+                if (adviceText && advices[glass] && advices[glass][vlt]) {
+                    adviceText.innerHTML = `<i class="ri-information-line text-brand"></i> ${advices[glass][vlt]}`;
+                }
+            });
+        });
+
+
+        // 4. Initialize Swipers inside Shadow Root
+        // Note: Swiper works perfectly in Shadow DOM if you pass the HTMLElement directly
+        if (typeof Swiper !== 'undefined') {
+            // Hero Swiper
+            const heroSwiperEl = shadow.querySelector('[data-pcn-hero-swiper]');
+            if (heroSwiperEl) {
+                new Swiper(heroSwiperEl, {
+                    slidesPerView: 1,
+                    spaceBetween: 12,
+                    loop: false,
+                    autoplay: {
+                        delay: 4000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: shadow.querySelector('.hero-next'),
+                        prevEl: shadow.querySelector('.hero-prev'),
+                    },
+                    pagination: {
+                        el: shadow.querySelector('.swiper-pagination'),
+                        clickable: true
+                    },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 24
+                        }
+                    }
+                });
+            }
+
+            // Badges Swiper
+            const badgesSwiperEl = shadow.querySelector('[data-pcn-intro-badges-swiper]');
+            if (badgesSwiperEl) {
+                new Swiper(badgesSwiperEl, {
+                    slidesPerView: 'auto',
+                    spaceBetween: 10,
+                    freeMode: true,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 12,
+                            allowTouchMove: false
+                        }
+                    }
+                });
+            }
+
+            // News Swiper
+            const newsSwiperEl = shadow.querySelector('[data-pcn-news-swiper]');
+            if (newsSwiperEl) {
+                new Swiper(newsSwiperEl, {
+                    slidesPerView: 1.2,
+                    spaceBetween: 10,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: shadow.querySelector('.news-next'),
+                        prevEl: shadow.querySelector('.news-prev'),
+                    },
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 24
+                        }
+                    }
+                });
+            }
+
+            // Product Swipers
+            const swiperInstances = {};
+            const packageSwipers = shadow.querySelectorAll('[class*="product-swiper-"]');
+            packageSwipers.forEach((swiperEl, index) => {
+                const swiperId = `product-swiper-${index + 1}`;
+                swiperInstances[swiperId] = new Swiper(swiperEl, {
+                    slidesPerView: 2.5,
+                    spaceBetween: 8,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: swiperEl.querySelector('.swiper-button-next'),
+                        prevEl: swiperEl.querySelector('.swiper-button-prev'),
+                    },
+                    breakpoints: {
+                        480: { slidesPerView: 2.6, spaceBetween: 8 },
+                        768: { slidesPerView: 2, spaceBetween: 12 },
+                        1024: { slidesPerView: 3, spaceBetween: 12 },
+                        1280: { slidesPerView: 3, spaceBetween: 12 }
+                    }
+                });
+            });
+
+            // 5. Initialize Product Tabs & Filtering
+            const tabButtons = shadow.querySelectorAll('.pcn-tab-btn');
+            tabButtons.forEach((btn) => {
+                const parent = btn.closest('.pcn-tab-buttons');
+                const swiperId = parent.getAttribute('data-swiper-target');
+                const filter = btn.getAttribute('data-filter');
+                const swiper = swiperInstances[swiperId];
+
+                if (!swiper) return;
+
+                // Check if this filter has any items and hide tab if empty
+                if (filter !== 'all') {
+                    let hasItems = false;
+                    const slides = swiper.el.querySelectorAll('.swiper-slide');
+                    slides.forEach((slide) => {
+                        const tags = slide.getAttribute('data-tags') || '';
+                        const tagsList = tags.split(' ');
+                        if (tagsList.includes(filter)) {
+                            hasItems = true;
+                        }
+                    });
+                    if (!hasItems) {
+                        btn.style.display = 'none';
+                    }
+                }
+
+                btn.addEventListener('click', () => {
+                    // Update active tab button styles
+                    parent.querySelectorAll('.pcn-tab-btn').forEach((b) => {
+                        b.classList.remove('active');
+                    });
+                    btn.classList.add('active');
+
+                    // Filter slides
+                    const slides = swiper.el.querySelectorAll('.swiper-slide');
+                    slides.forEach((slide) => {
+                        const tags = slide.getAttribute('data-tags') || '';
+                        const tagsList = tags.split(' ');
+                        const isMatch = (filter === 'all') || tagsList.includes(filter);
+
+                        if (isMatch) {
+                            slide.classList.remove('d-none');
+                            slide.style.display = '';
+
+                            // Cập nhật giá động theo tab vị trí được chọn
+                            const card = slide.querySelector('.pcn-product-card');
+                            if (card) {
+                                const priceEl = card.querySelector('.pcn-product-price');
+                                const nameEl = card.querySelector('.pcn-product-name');
+
+                                // Khôi phục tên gốc trước
+                                if (nameEl) {
+                                    const origName = nameEl.getAttribute('data-original-name') || nameEl.textContent;
+                                    nameEl.textContent = origName;
+                                }
+
+                                if (priceEl) {
+                                    const pricesAttr = card.getAttribute('data-prices');
+                                    let prices = {};
+                                    try {
+                                        prices = JSON.parse(pricesAttr || '{}');
+                                    } catch (e) {
+                                        prices = {};
+                                    }
+
+                                    if (filter === 'all') {
+                                        // Khôi phục giá gốc
+                                        const origPrice = parseFloat(priceEl.getAttribute('data-original-price') || '0');
+                                        if (origPrice > 0) {
+                                            priceEl.textContent = 'Giá từ: ' + new Intl.NumberFormat('vi-VN').format(origPrice) + ' đ';
+                                        } else {
+                                            priceEl.textContent = 'Giá: Liên hệ';
+                                        }
+                                    } else {
+                                        // Lấy giá trị của vị trí được chọn từ JSON đã cấu hình trong Admin
+                                        const positionPrice = prices[filter] ? parseFloat(prices[filter]) : 0;
+                                        if (positionPrice > 0) {
+                                            priceEl.textContent = 'Giá: ' + new Intl.NumberFormat('vi-VN').format(positionPrice) + ' đ';
+                                        } else {
+                                            priceEl.textContent = 'Giá: Liên hệ';
+                                        }
+                                    }
+                                }
+                            }
+                        } else {
+                            slide.classList.add('d-none');
+                            slide.style.display = 'none';
+                        }
+                    });
+
+                    // Update swiper
+                    swiper.update();
+                    swiper.slideTo(0);
+                });
+            });
+
+            // 6. Initialize Vehicle Type Toggles (Sedan/SUV) on Left Banners
+            const vehicleToggleBtns = shadow.querySelectorAll('.vehicle-toggle-btn');
+            vehicleToggleBtns.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    const packageId = btn.getAttribute('data-package-id');
+                    const price = btn.getAttribute('data-price') || 'Liên hệ';
+
+                    const banner = shadow.getElementById(`left-banner-${packageId}`);
+                    if (banner) {
+                        // Toggle active button style
+                        banner.querySelectorAll('.vehicle-toggle-btn').forEach((b) => {
+                            b.classList.remove('active');
+                        });
+                        btn.classList.add('active');
+
+                        // Update price text
+                        const priceEl = banner.querySelector('.left-banner-price');
+                        if (priceEl) {
+                            priceEl.textContent = price;
+                        }
+                    }
+                });
+            });
+            // 7. Scroll to products button
+            const scrollToBtn = shadow.getElementById('pcn-scroll-to-products');
+            if (scrollToBtn) {
+                scrollToBtn.addEventListener('click', () => {
+                    const packagesEl = shadow.getElementById('pcn-packages');
+                    if (packagesEl) {
+                        packagesEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            }
+
+            // 8. Reviews Star Rating Picker
+            const starPickers = document.querySelectorAll('.star-picker');
+            const ratingInput = document.getElementById('pcn_review_rating');
+            const helperText = document.getElementById('rating-helper-text');
+            const ratingTexts = {
+                1: "Rất kém (1 sao)",
+                2: "Kém (2 sao)",
+                3: "Trung bình (3 sao)",
+                4: "Hài lòng (4 sao)",
+                5: "Rất hài lòng (5 sao)"
+            };
+
+            function updateStarPicker(rating) {
+                starPickers.forEach(star => {
+                    const r = parseInt(star.getAttribute('data-rating'));
+                    if (r <= rating) {
+                        star.className = 'ri-star-fill star-picker text-warning cursor-pointer';
+                    } else {
+                        star.className = 'ri-star-line star-picker text-muted cursor-pointer';
+                    }
+                });
+                if (ratingInput) ratingInput.value = rating;
+                if (helperText) helperText.textContent = ratingTexts[rating];
+            }
+
+            starPickers.forEach(star => {
+                star.addEventListener('click', () => {
+                    const rating = parseInt(star.getAttribute('data-rating'));
+                    updateStarPicker(rating);
+                });
+                star.addEventListener('mouseover', () => {
+                    const rating = parseInt(star.getAttribute('data-rating'));
+                    starPickers.forEach(s => {
+                        const r = parseInt(s.getAttribute('data-rating'));
+                        if (r <= rating) {
+                            s.className = 'ri-star-fill star-picker text-warning cursor-pointer';
+                        } else {
+                            s.className = 'ri-star-line star-picker text-muted cursor-pointer';
+                        }
+                    });
+                });
+                star.addEventListener('mouseout', () => {
+                    const currentRating = parseInt(ratingInput ? ratingInput.value : 5);
+                    updateStarPicker(currentRating);
+                });
+            });
+
+            // Initialize default stars
+            updateStarPicker(5);
+
+            // 9. Review Image Upload Preview
+            const imgInput = document.getElementById('review_images');
+            const previewContainer = document.getElementById('image-upload-preview');
+            let selectedFiles = [];
+
+            if (imgInput && previewContainer) {
+                imgInput.addEventListener('change', (e) => {
+                    const files = Array.from(e.target.files);
+                    if (selectedFiles.length + files.length > 3) {
+                        alert("Bạn chỉ được đính kèm tối đa 3 ảnh!");
+                        return;
+                    }
+
+                    files.forEach(file => {
+                        if (file.size > 2 * 1024 * 1024) {
+                            alert(`File ${file.name} quá lớn. Vui lòng chọn ảnh dưới 2MB.`);
+                            return;
+                        }
+                        selectedFiles.push(file);
+
+                        const reader = new FileReader();
+                        reader.onload = (event) => {
+                            const index = selectedFiles.length - 1;
+                            const wrapper = document.createElement('div');
+                            wrapper.className = 'position-relative rounded border overflow-hidden';
+                            wrapper.style.width = '70px';
+                            wrapper.style.height = '70px';
+                            wrapper.innerHTML = `
+                                <img src="${event.target.result}" class="w-100 h-100 object-fit-cover" alt="Preview">
+                                <button type="button" class="btn btn-dark btn-sm p-0 position-absolute top-0 end-0 rounded-circle d-flex align-items-center justify-content-center" 
+                                        style="width: 20px; height: 20px; font-size: 10px; opacity: 0.8;" data-file-index="${index}">
+                                    <i class="ri-close-fill text-white"></i>
+                                </button>
+                            `;
+
+                            wrapper.querySelector('button').addEventListener('click', (e) => {
+                                const idx = parseInt(e.currentTarget.getAttribute('data-file-index'));
+                                selectedFiles.splice(idx, 1);
+                                wrapper.remove();
+                                // Re-index remaining preview buttons
+                                previewContainer.querySelectorAll('[data-file-index]').forEach((btn, newIdx) => {
+                                    btn.setAttribute('data-file-index', newIdx);
+                                });
+                            });
+
+                            previewContainer.appendChild(wrapper);
+                        };
+                        reader.readAsDataURL(file);
+                    });
+                });
+            }
+
+            // 10. AJAX Form Submission
+            const reviewForm = document.getElementById('pcnReviewForm');
+            const formAlert = document.getElementById('pcnFormAlert');
+
+            if (reviewForm) {
+                reviewForm.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    if (formAlert) formAlert.innerHTML = '';
+
+                    const submitBtn = reviewForm.querySelector('button[type="submit"]');
+                    const originalBtnHtml = submitBtn.innerHTML;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Đang gửi...';
+
+                    const formData = new FormData(reviewForm);
+
+                    // Remove default files and append selectedFiles
+                    formData.delete('review_images[]');
+                    selectedFiles.forEach(file => {
+                        formData.append('review_images[]', file);
+                    });
+
+                    // AJAX POST
+                    fetch('index_ajax.php?module_name=comment_review&action=add', {
+                        method: 'POST',
+                        body: formData
+                    })
+                        .then(res => res.json())
+                        .then(res => {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnHtml;
+
+                            if (res.success) {
+                                if (formAlert) {
+                                    formAlert.innerHTML = `
+                                    <div class="alert alert-success d-flex align-items-center gap-2 rounded-3" role="alert">
+                                        <i class="ri-checkbox-circle-fill fs-5"></i>
+                                        <div>${res.message}</div>
+                                    </div>
+                                `;
+                                }
+                                reviewForm.reset();
+                                selectedFiles = [];
+                                if (previewContainer) previewContainer.innerHTML = '';
+                                updateStarPicker(5);
+
+                                // Reload page after 2 seconds to see comments if any or reflect status
+                                setTimeout(() => {
+                                    location.reload();
+                                }, 2000);
+                            } else {
+                                if (formAlert) {
+                                    formAlert.innerHTML = `
+                                    <div class="alert alert-danger d-flex align-items-center gap-2 rounded-3" role="alert">
+                                        <i class="ri-error-warning-fill fs-5"></i>
+                                        <div>${res.message}</div>
+                                    </div>
+                                `;
+                                }
+                            }
+                        })
+                        .catch(err => {
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalBtnHtml;
+                            if (formAlert) {
+                                formAlert.innerHTML = `
+                                <div class="alert alert-danger d-flex align-items-center gap-2 rounded-3" role="alert">
+                                    <i class="ri-error-warning-fill fs-5"></i>
+                                    <div>Có lỗi xảy ra, vui lòng thử lại sau.</div>
+                                </div>
+                            `;
+                            }
+                        });
+                });
+            }
+            // Filter reviews by rating
+            const filterBtns = shadow.querySelectorAll('.pcn-filter-btn');
+            const reviewItems = shadow.querySelectorAll('.pcn-review-item');
+            if (filterBtns.length > 0 && reviewItems.length > 0) {
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', function () {
+                        // Reset active classes
+                        filterBtns.forEach(b => {
+                            b.classList.remove('active', 'btn-danger');
+                            b.classList.add('btn-outline-secondary');
+                        });
+                        // Set current active
+                        btn.classList.remove('btn-outline-secondary');
+                        btn.classList.add('active', 'btn-danger');
+
+                        const rating = btn.getAttribute('data-rating');
+                        const loadMoreWrapper = shadow.getElementById('pcn-btn-load-more-reviews')?.parentElement;
+
+                        reviewItems.forEach((item, index) => {
+                            const itemRating = item.getAttribute('data-rating');
+                            if (rating === 'all') {
+                                // Default "all" logic: hide past index 5 unless they were loaded
+                                if (index < 5) {
+                                    item.classList.remove('d-none');
+                                } else {
+                                    // if already loaded all, don't hide
+                                    if (loadMoreWrapper) {
+                                        item.classList.add('d-none');
+                                    } else {
+                                        item.classList.remove('d-none');
+                                    }
+                                }
+                            } else {
+                                if (itemRating === rating) {
+                                    item.classList.remove('d-none');
+                                } else {
+                                    item.classList.add('d-none');
+                                }
+                            }
+                        });
+
+                        // Hide the "Load more" button wrapper if filtering by stars
+                        if (loadMoreWrapper) {
+                            if (rating !== 'all') {
+                                loadMoreWrapper.classList.add('d-none');
+                            } else {
+                                loadMoreWrapper.classList.remove('d-none');
+                            }
+                        }
+                    });
+                });
+            }
+
+            // Toggle load more reviews
+            const btnLoadMore = shadow.getElementById('pcn-btn-load-more-reviews');
+            if (btnLoadMore) {
+                btnLoadMore.addEventListener('click', function () {
+                    const hiddenReviews = shadow.querySelectorAll('.pcn-review-item-hidden');
+                    hiddenReviews.forEach(el => {
+                        el.classList.remove('d-none');
+                        // remove hidden marker so filter knows it is expanded
+                        el.classList.remove('pcn-review-item-hidden');
+                    });
+                    btnLoadMore.parentElement.remove(); // Remove the button wrapper
+                });
+            }
+        } else {
+            console.error("Swiper is not loaded!");
+        }
+    }
+});
+
+// 11. Modal Viewer for Review Images (Global scope helper)
+function openReviewImageModal(src) {
+    const modalEl = document.getElementById('reviewImageModal');
+    const imgEl = document.getElementById('reviewFullImage');
+    if (modalEl && imgEl) {
+        imgEl.src = src;
+        const bsModal = new bootstrap.Modal(modalEl);
+        bsModal.show();
+    }
+}

@@ -1,0 +1,196 @@
+const PATH_CATE_JSON = "assets/data/category.json";
+const PATH_MENU_JSON = "assets/data/menu.json";
+const PATH_SEARCH_PRODUCT = "/index_ajax.php?module_name=ajax&action=getSearchProduct";
+const PATH_SEARCH = "/index_ajax.php?module_name=search&action=search_all";
+const PATH_AJAX_PRODUCT = "/index_ajax.php?module_name=ajax&action=products"; 
+const PATH_AJAX_PRODUCT_TAB="/index_ajax.php?module_name=ajax&action=getProductTab&id=";
+const PATH_AJAX_CART="/index_ajax.php?module_name=cart";
+const PATH_AJAX_LOGIN="/index_ajax.php?module_name=account";
+const PATH_AJAX_USER="/index_ajax.php?module_name=profile";
+const PATH_AJAX_MODULE="/index_ajax.php?module_name=";
+const PATH_AJAX="/index_ajax.php?module_name=ajax";
+const CACHE_KEY = "submenu_cache";
+const CACHE_KEY_MENU = "menu_cache";
+const CACHE_EXPIRY = 10 * 60 * 1000; // 10 phút
+const searchInput = document.getElementById("text-search");
+const searchResult = document.getElementById("home-seach-result");
+
+
+async function loadCategories() {
+	let cachedData = localStorage.getItem(CACHE_KEY_MENU);
+	let cachedTime = localStorage.getItem(CACHE_KEY_MENU + "_time");
+	if (cachedData && cachedTime && Date.now() - cachedTime < CACHE_EXPIRY) {
+		return JSON.parse(cachedData);
+	}
+	try {
+		let response = await fetch(PATH_CATE_JSON);
+		let data = await response.json();
+		localStorage.setItem(CACHE_KEY_MENU, JSON.stringify(data));
+		localStorage.setItem(CACHE_KEY_MENU + "_time", Date.now());
+		return data;
+	} catch (error) {
+		console.error("Lỗi tải danh mục:", error);
+		return [];
+	}
+}
+
+async function loadMenu() {
+	let cachedData = localStorage.getItem(CACHE_KEY_MENU);
+	let cachedTime = localStorage.getItem(CACHE_KEY_MENU + "_time");
+	if (cachedData && cachedTime && Date.now() - cachedTime < CACHE_EXPIRY) {
+		return JSON.parse(cachedData);
+	}
+	try {
+		let response = await fetch(PATH_MENU_JSON);
+		let data = await response.json();
+		localStorage.setItem(CACHE_KEY_MENU, JSON.stringify(data));
+		localStorage.setItem(CACHE_KEY_MENU + "_time", Date.now());
+		return data;
+	} catch (error) {
+		console.error("Lỗi tải menu:", error);
+		return [];
+	}
+}
+
+function showToast(message, type = "success") {
+    Toastify({
+        text: message,
+        duration: 3000, // 3 giây
+        close: true,
+        gravity: "bottom", // Vị trí: bottom hoặc top
+        position: "right", // Vị trí: left, center, right
+        backgroundColor: type === "success" ? "#28a745" : "#dc3545", // Xanh lá: thành công, Đỏ: lỗi
+        stopOnFocus: true, // Dừng khi hover vào
+    }).showToast();
+}
+
+function showToastMobile(message, type = "success") {
+    Toastify({
+        text: message,
+        duration: 3000, // 3 giây
+        close: true,
+        gravity: "top", // "top" hoặc "bottom"
+        position: "center", // "left", "center", "right"
+        backgroundColor: type === "success" ? "#28a745" : "#dc3545", 
+        stopOnFocus: true, 
+        className: "custom-toast",
+        offset: {
+            x: 10,
+            y: 50 
+        },
+        style: {
+            fontSize: "16px",
+            borderRadius: "8px", 
+            padding: "12px 16px",
+            width: "90%",
+            maxWidth: "350px",
+        }
+    }).showToast();
+}
+
+document.addEventListener("DOMContentLoaded", function () { 
+    const popupElement = document.getElementById("popupOverlay");
+
+    if (!popupElement) return; // Nếu không có modal thì thoát để tránh lỗi
+
+    const modal = new bootstrap.Modal(popupElement); 
+    const popupKey = "popupSeen";
+    const popupExpireKey = "popupExpireTime";
+
+    // Lấy giá trị data-time từ modal (mặc định 5 phút nếu không có)
+    let dataTime = popupElement.getAttribute("data-time");
+    let expireTime = dataTime ? parseInt(dataTime) * 60000 : 5 * 60000; // Chuyển phút -> ms
+shouldShowModal();
+    function showModal() {
+        modal.show();
+        localStorage.setItem(popupKey, "true");
+        localStorage.setItem(popupExpireKey, Date.now() + expireTime);
+    }
+
+    function shouldShowModal() {
+        let popupExpireTime = localStorage.getItem(popupExpireKey);
+        let timeCheck = Date.now() > parseInt(popupExpireTime);
+        console.log(Date.now());
+        console.log(popupExpireTime);
+        if (!popupExpireTime || Date.now() > parseInt(popupExpireTime)) {
+            return true; // Chưa hiển thị hoặc hết hạn -> Cho phép hiển thị lại
+        }
+        return false;
+    }
+
+    if (shouldShowModal()) {
+        setTimeout(showModal, 300); // Hiển thị sau 300ms để tránh bị nhấp nháy khi tải trang
+    }
+});
+
+
+    document.addEventListener("DOMContentLoaded", function () {    
+    // Tự động tìm tất cả phần tử có class rating và load rating
+    let ratingElements = document.querySelectorAll(".rating[data-rating]");
+    reloadRatingDefault(ratingElements);
+});
+
+
+function reloadRatingDefault(elements) {
+    elements.forEach(product => {
+        if (product.getAttribute("data-rated")) return; // Tránh xử lý trùng
+        product.setAttribute("data-rated", "true");
+
+        let rating = parseFloat(product.getAttribute("data-rating"));
+        if (isNaN(rating)) return; // Nếu không có rating hợp lệ thì bỏ qua
+
+        let ratingContainer = product;
+        ratingContainer.innerHTML = ""; // Xóa nội dung cũ nếu có
+        
+        for (let i = 1; i <= 5; i++) {
+            let star = document.createElement("span");
+            star.classList.add("star");
+
+            if (i <= Math.floor(rating)) {
+                star.innerHTML = "&#9733;"; // Sao đầy
+            } else if (i - 0.5 === rating) {
+                star.innerHTML = "&#189;"; // Nửa sao
+            } else {
+                star.innerHTML = "&#9734;"; // Sao trống
+            }
+            ratingContainer.appendChild(star);
+        }
+    });
+}
+/**
+ * Định dạng số với dấu phân cách hàng nghìn, có thể tùy chọn số thập phân.
+ * @param {number|string} number - Số cần định dạng.
+ * @param {number} [decimals=0] - Số chữ số thập phân.
+ * @param {string} [dec_point='.'] - Ký tự phân cách thập phân.
+ * @param {string} [thousands_sep=','] - Ký tự phân cách hàng nghìn.
+ * @returns {string} - Chuỗi số đã được định dạng.
+ */
+function formatNumber(number, decimals = 0, dec_point = '.', thousands_sep = ',') {
+    number = (number + '').replace(/[^0-9+\-Ee.]/g, '');
+    let n = !isFinite(+number) ? 0 : +number,
+        prec = !isFinite(+decimals) ? 0 : Math.abs(decimals),
+        sep = thousands_sep,
+        dec = dec_point,
+        s = '';
+
+    function toFixedFix(n, prec) {
+        // Fix cho các trình duyệt cũ
+        let k = Math.pow(10, prec);
+        return '' + Math.round(n * k) / k;
+    }
+
+    s = (prec ? toFixedFix(n, prec) : '' + Math.round(n)).split('.');
+
+    let re = /(-?\d+)(\d{3})/;
+    while (re.test(s[0])) {
+        s[0] = s[0].replace(re, "$1" + sep + "$2");
+    }
+
+    if ((s[1] || '').length < prec) {
+        s[1] = s[1] || '';
+        s[1] += new Array(prec - s[1].length + 1).join('0');
+    }
+
+    return s.join(dec);
+}
+

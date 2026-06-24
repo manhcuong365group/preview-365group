@@ -1,0 +1,10 @@
+// Custom JavaScript Template
+$(document).ready(function() {
+    // Add your JavaScript code here
+    console.log("Custom JS loaded");
+    
+    // Example function
+    function customFunction() {
+        // Your code here
+    }
+});

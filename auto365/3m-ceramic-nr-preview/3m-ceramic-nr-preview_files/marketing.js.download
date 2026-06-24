@@ -1,0 +1,57 @@
+function subscribe_newsletter() {
+    var error = "";
+    var inputElement = document.getElementById('email_newsletter');
+    var inputValue = inputElement.value.trim();
+
+    // Regex kiểm tra email hợp lệ
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Regex kiểm tra số điện thoại (10-11 số, bắt đầu bằng 0 hoặc +84)
+    var phoneRegex = /^(0|\+84)[1-9][0-9]{8,9}$/;
+
+    if (inputValue.length < 4) {
+        error += "- Bạn chưa nhập email hoặc số điện thoại.\n";
+    } else if (!emailRegex.test(inputValue) && !phoneRegex.test(inputValue)) {
+        error += "- Email hoặc số điện thoại không hợp lệ.\n";
+    }
+
+    if (error === "") {
+        // Vô hiệu hóa nút gửi để tránh spam
+        $("#email_newsletter").prop("disabled", true);
+
+        $.post(
+            `${PATH_AJAX_MODULE}ajax&action=addnewsletter`, 
+            {
+                contact: encodeURIComponent(inputValue)
+            },
+            function(data) {
+				try {
+					// Nếu data là string JSON, cần parse
+					if (typeof data === "string") {
+						data = JSON.parse(data);
+					}
+		
+					if (data.status === 'success') {
+						showToast(data.message || "Quý khách đã đăng ký thành công");
+						inputElement.value = "";
+					} else if (data.status === 'exist') {
+						showToast(data.message || "Thông tin đã tồn tại", "error");
+					} else {
+						showToast(data.message || "Lỗi xảy ra, vui lòng thử lại", "error");
+					}
+				} catch (e) {
+					console.error("JSON Parse Error:", e);
+					showToast("Lỗi phản hồi từ máy chủ", "error");
+				}
+
+                // Bật lại nút sau khi xử lý xong
+                $("#email_newsletter").prop("disabled", false);
+            },"json"
+        ).fail(function() {
+            showToast('Lỗi kết nối, vui lòng thử lại', "error");
+            $("#email_newsletter").prop("disabled", false);
+        });
+    } else {
+        showToast(error, "error");
+        return false;
+    }
+}

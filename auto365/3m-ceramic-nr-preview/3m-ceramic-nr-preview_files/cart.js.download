@@ -1,0 +1,725 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const quantityInput = document.getElementById("quantity_item");
+  const addButton = document.getElementById("add");
+  const subButton = document.getElementById("sub");
+  if (!quantityInput) return;
+
+  // Lấy giá trị max từ thuộc tính max của input
+  const maxQuantity = parseInt(quantityInput.getAttribute("max")) || 9999;
+  const minQuantity = parseInt(quantityInput.getAttribute("min")) || 1;
+
+  addButton.addEventListener("click", function () {
+    let currentValue = parseInt(quantityInput.value) || 1;
+    if (currentValue < maxQuantity) {
+      quantityInput.value = currentValue + 1;
+    }
+  });
+
+  subButton.addEventListener("click", function () {
+    let currentValue = parseInt(quantityInput.value) || 1;
+    if (currentValue > minQuantity) {
+      quantityInput.value = currentValue - 1;
+    }
+  });
+
+  // Ngăn nhập giá trị không hợp lệ
+  quantityInput.addEventListener("input", function () {
+    let currentValue = parseInt(this.value) || minQuantity;
+    if (currentValue < minQuantity) {
+      this.value = minQuantity;
+    } else if (currentValue > maxQuantity) {
+      this.value = maxQuantity;
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Hàm giảm số lượng
+  window.subQty = function (id) {
+    let input = document.getElementById(`qty-${id}`);
+    let min = parseInt(input.getAttribute("min")) || 1;
+    let value = parseInt(input.value) || min;
+
+    if (value > min) {
+      input.value = value - 1;
+      updateCartItem(id);
+    }
+  };
+
+  // Hàm tăng số lượng
+  window.addQty = function (id) {
+    let input = document.getElementById(`qty-${id}`);
+    let max = parseInt(input.getAttribute("max")) || 100;
+    let value = parseInt(input.value) || 1;
+
+    if (value < max) {
+      input.value = value + 1;
+      updateCartItem(id);
+    }
+  };
+
+  // Sự kiện nhập số lượng thủ công
+  document.querySelectorAll("input[id^='qty-']").forEach((input) => {
+    input.addEventListener("input", function () {
+      let min = parseInt(this.getAttribute("min")) || 1;
+      let max = parseInt(this.getAttribute("max")) || 100;
+      let value = parseInt(this.value) || min;
+
+      // Giới hạn số lượng trong khoảng min - max
+      if (value < min) this.value = min;
+      if (value > max) this.value = max;
+    });
+
+    input.addEventListener("blur", function () {
+      let id = this.id.replace("qty-", "");
+      updateCartItem(id);
+    });
+  });
+
+  $("#frmDatHang").on("submit", function (e) {
+    e.preventDefault(); // Chặn reload trang
+
+    if ($("#address_required").length > 0) {
+      showToast("Bạn vui lòng thêm địa chỉ nhận hàng!", "error");
+      return;
+    }
+    let formData = new FormData(this); // Lấy toàn bộ dữ liệu form
+    formData.append("note", $("#note").val());
+    formData.append("ship_note", $("#ship_note").val());
+
+    $(".btnDh").text("Đang xử lý...").prop("disabled", true); // Vô hiệu hóa nút
+
+    $.ajax({
+      url: PATH_AJAX_MODULE + "check_out&action=xac-nhan",
+      data: formData,
+      type: "POST",
+      processData: false,
+      contentType: false,
+      success: function (response) {
+        if (response.status === "error") {
+          showToast(response.message, "error");
+        } else {
+          // Kiểm tra nếu là thanh toán Momo thì redirect đến trang thanh toán
+          if (response.data && response.data.payment_type === 'momo' && response.data.redirect_url) {
+            showToast(response.message, "success");
+            setTimeout(function() {
+              window.location.href = response.data.redirect_url;
+            }, 1500);
+          } else {
+            // Thanh toán thường, redirect đến trang chi tiết đơn hàng
+            window.location.href = response.data.redirect_url;
+          }
+        }
+      },
+      error: function () {
+        showToast("Đã xảy ra lỗi, vui lòng thử lại.", "error");
+      },
+      complete: function () {
+        $(".btnDh").text("Đặt hàng").prop("disabled", false); // Bật lại nút sau khi xử lý xong
+      },
+    });
+  });
+});
+
+// Thêm sản phẩm vào danh sách yêu thích
+function addWishlist(id) {
+  $.post(PATH_AJAX_MODULE + "wishlist&action=add&id=" + id)
+    .done(function (res) {
+      if (parseInt(res) === 1) {
+        $("#addWishlist")
+          .removeClass("button_dark_grey")
+          .addClass("button_red")
+          .html('<i class="ri-heart-add-2-fill text-danger"></i>');
+        showToast("Thêm thành công sản phẩm yêu thích!");
+      } else if (parseInt(res) === 0) {
+        $("#addWishlist")
+          .removeClass("button_red")
+          .addClass("button_dark_grey")
+          .html('<i class="ri-heart-add-2-fill text-white"></i>');
+        showToast("Đã bỏ yêu thích sản phẩm!");
+      } else {
+        showToast("Yêu cầu đăng nhập để thêm sản phẩm yêu thích!", "error");
+        window.location.href = "/account/login";
+      }
+    })
+    .fail(() => showToast("Lỗi kết nối, vui lòng thử lại!", "error"));
+}
+// Hàm kiểm tra và lấy dữ liệu sản phẩm
+function getProductData() {
+  let form = $("#formProductItem");
+  let product_id = $("#product_id").val();
+  let quantity = form.find("input[name='quantity']").val() || 1;
+  let product_type_input = form.find("input[name='product_type']");
+  let product_type =
+    product_type_input.length > 0 ? product_type_input.val() : "";
+
+  if (product_type_input.length > 0 && !product_type) {
+    showToast("Vui lòng chọn loại sản phẩm", "error");
+    return null;
+  }
+
+  let formData = new FormData();
+  formData.append("id", product_id); // Giả sử ID lưu trong data attribute
+  formData.append("quantity", quantity);
+  if (product_type) {
+    formData.append("product_detail_id", product_type);
+  }
+
+  return formData;
+}
+
+// Hàm thêm vào giỏ hàng
+function addToCart(_id) {
+  let data = getProductData();
+  if (!data) return;
+  if(_id){
+    data.append("id", _id);
+  }
+  $.ajax({
+    url: PATH_AJAX_CART + "&action=add_ajax",
+    type: "POST",
+    data: data,
+    processData: false,
+    contentType: false,
+    dataType: "json",
+    success: function (res) {
+      if (res.status === "success") {
+        $("#addCart").addClass("active");
+        let numCart = parseInt($("#cardNum").attr("mydata-quantity")) || 0;
+        $("#cardNum").attr("mydata-quantity", numCart + 1);
+        showToast(res.message);
+      } else {
+        showToast(res.message, "error");
+      }
+    },
+    error: function () {
+      showToast("Lỗi kết nối, vui lòng thử lại!", "error");
+    },
+  });
+}
+
+function buyNowInList(_id) {
+  let data = new FormData();
+  if(_id){
+    data.append("id", _id);
+  }
+  data.append("quantity", 1);
+  $.ajax({
+    url: PATH_AJAX_CART + "&action=add_ajax",
+    type: "POST",
+    data: data,
+    processData: false,
+    contentType: false,
+    dataType: "json",
+    success: function (res) {
+      if (res.status === "success") {
+        if (res.url_redirect) {
+          window.location.href = res.url_redirect;
+        } else {
+          window.location.href = site_folder + "/cart";
+        }
+      } else {
+        showToast(res.message, "error");
+      }
+    },
+    error: function () {
+      showToast("Lỗi mua hàng, vui lòng thử lại!", "error");
+    },
+  });
+}
+// Hàm mua ngay
+function buyNow() {
+  let data = getProductData();
+  if (!data) return;
+
+  $.ajax({
+    url: PATH_AJAX_CART + "&action=add_ajax",
+    type: "POST",
+    data: data,
+    processData: false,
+    contentType: false,
+    dataType: "json",
+    success: function (res) {
+      if (res.status === "success") {
+        if (res.url_redirect) {
+          window.location.href = res.url_redirect;
+        } else {
+          window.location.href = site_folder + "/cart";
+        }
+      } else {
+        showToast(res.message, "error");
+      }
+    },
+    error: function () {
+      showToast("Lỗi mua hàng, vui lòng thử lại!", "error");
+    },
+  });
+}
+
+function updateCartItem(id) {
+  let input = $("#qty-" + id);
+  let qty = parseInt(input.val()) || 1;
+
+  $.ajax({
+    url: PATH_AJAX_CART + "&action=updateCartItem",
+    type: "POST",
+    data: { id: id, quantity: qty },
+    dataType: "json",
+    success: function (res) {
+      if (!res.success) {
+        showToast(res.message, "error");
+        if (res.stock) {
+          input.val(res.stock); // Set lại số lượng tối đa nếu hết hàng
+        }
+        return;
+      }
+
+      // Cập nhật tổng tiền từng sản phẩm
+      $("#subtotal-" + id).text(res.subtotal);
+
+      // Cập nhật tổng tiền giỏ hàng
+      $("#totalCart").text(res.totalCart);
+
+      showToast(res.message, "success");
+    },
+    error: function () {
+      showToast("Lỗi kết nối, vui lòng thử lại!", "error");
+    },
+  });
+}
+
+// Cập nhật ghi chú giỏ hàng
+function updateNoteCart(id) {
+  let note = $(`textarea[name='notes[${id}]']`).val();
+  if (!note) return;
+
+  $.post(PATH_AJAX_CART + "&action=updateNoteCart", { note, id })
+    .done(() => showToast("Cập nhật ghi chú thành công!"))
+    .fail(() => showToast("Lỗi cập nhật ghi chú", "error"));
+}
+
+// Xóa hình ảnh trong giỏ hàng
+function removeImage(id, value) {
+  $("#parents_image_" + id).remove();
+
+  $.post(PATH_AJAX_CART + "&action=removeImage", { value, id })
+    .done(() => {
+      showToast("Xóa hình ảnh thành công!");
+      if (!$(".removeImage").length) {
+        $("#required_upload").val("");
+        $("#images_item_" + id).remove();
+      }
+    })
+    .fail(() => showToast("Lỗi xóa hình ảnh", "error"));
+}
+
+function thanhToanCart() {
+  let btn = $("#btn_pendding");
+  btn.text("Đang xử lý...").prop("disabled", true);
+
+  let data_check_item = $("#CartForm").serialize();
+  let url = PATH_AJAX_CART + "&action=validateCheckCart";
+
+  $.ajax({
+    url: url,
+    type: "POST",
+    data: data_check_item,
+    dataType: "json",
+    success: function (res) {
+      btn.text("Thanh toán").prop("disabled", false);
+
+      if (!res.success) {
+        showToast(res.message, "error");
+        return;
+      }
+
+      // Nếu thành công, chuyển hướng sang trang đặt hàng
+      showToast(res.message, "success");
+      setTimeout(() => {
+        window.location.href = res.redirect;
+      }, 1500);
+    },
+    error: function () {
+      btn.text("Thanh toán").prop("disabled", false);
+      showToast("Lỗi kết nối, vui lòng thử lại!", "error");
+    },
+  });
+}
+
+function getDistrict(sel) {
+  $("#input_ship_province").val(sel.options[sel.selectedIndex].text);
+  var url =
+    PATH_AJAX_MODULE +
+    "profile&action=getDistrict&province_id=" +
+    $("#province_id").val();
+  $.ajax({
+    url: url,
+    success: function (result) {
+      $("#district_id").html(result);
+    },
+  });
+}
+
+function getWard(sel) {
+  $("#input_ship_district").val(sel.options[sel.selectedIndex].text);
+  var url =
+    PATH_AJAX_MODULE +
+    "profile&action=getWard&district_id=" +
+    $("#district_id").val();
+  $.ajax({
+    url: url,
+    success: function (result) {
+      $("#ward_id").html(result);
+    },
+  });
+}
+
+function ChangeWard(sel) {
+  $("#input_ship_ward").val(sel.options[sel.selectedIndex].text);
+  loadAddressLevel4();
+}
+
+function loadAddressLevel4() {
+  $("#hamlet").html('<option value="Khác">Đang tải...</option>');
+  var province = $("#province_id option:selected").text();
+  var district = $("#district_id option:selected").text();
+  var ward = $("#ward_id option:selected").text();
+  var ward_id = $("#ward_id").val();
+  $.get(
+    PATH_AJAX_MODULE +
+      "ajax&action=getshipLevel4&province=" +
+      province +
+      "&district=" +
+      district +
+      "&ward=" +
+      ward +
+      "&ward_id=" +
+      ward_id,
+    function (data) {
+      $("#hamlet").html(data);
+    }
+  );
+}
+
+function ChangeHamlet(sel) {
+  $("#input_ship_hamlet").val(sel.options[sel.selectedIndex].text);
+}
+async function saveAddressShip() {
+  let form = document.getElementById("addressForm");
+  let formData = new FormData(form);
+
+  // Kiểm tra trường bắt buộc
+  let errorMessage = validateAddressForm(formData);
+  if (errorMessage) {
+    showToast(errorMessage, "error");
+    return;
+  }
+
+  try {
+    let response = await fetch(
+      PATH_AJAX_MODULE + "check_out&action=saveAddressShip",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    let result = await response.json(); // Đọc dữ liệu JSON từ server
+
+    if (result.success) {
+      showToast(result.message, "success");
+      setTimeout(() => location.reload(), 1000);
+    } else {
+      showToast(result.message, "error");
+    }
+  } catch (error) {
+    console.error("Lỗi:", error);
+    showToast("Lỗi kết nối, vui lòng thử lại!", "error");
+  }
+}
+
+/**
+ * Hàm kiểm tra dữ liệu đầu vào
+ * @param {FormData} formData
+ * @returns {string|null} - Trả về thông báo lỗi nếu có, null nếu hợp lệ
+ */
+function validateAddressForm(formData) {
+  const requiredFields = {
+    ship_name: "Họ tên người nhận",
+    ship_phone: "Số điện thoại",
+    ship_address: "Địa chỉ nhận hàng",
+    ship_province: "Tỉnh/Thành phố",
+    ship_district: "Quận/Huyện",
+    ship_ward: "Phường/Xã",
+    hamlet: "Thôn/Ấp/Đường/Xóm",
+  };
+
+  for (let field in requiredFields) {
+    if (!formData.get(field)) {
+      return `Vui lòng nhập ${requiredFields[field]}!`;
+    }
+  }
+
+  return null; // Dữ liệu hợp lệ
+}
+
+function saveAddressShipOrder() {
+  var data = new Object();
+  data.ship_name = $("#addressForm input[name='ship_name']").val();
+  data.ship_phone = $("#addressForm input[name='ship_phone']").val();
+  data.ship_email = $("#addressForm input[name='ship_email']").val();
+  data.ship_address = $("#addressForm input[name='ship_address']").val();
+
+  data.province_id = $("#addressForm select[name='ship_province']").val();
+  data.district_id = $("#addressForm select[name='ship_district']").val();
+  data.ward_id = $("#addressForm select[name='ship_ward']").val();
+
+  data.ship_province = $("#addressForm #input_ship_province").val();
+  data.ship_district = $("#addressForm #input_ship_district").val();
+  data.ship_ward = $("#addressForm #input_ship_ward").val();
+  data.hamlet = $("#addressForm #input_ship_hamlet").val();
+  data.note = $("#addressForm textarea[name='note']").val();
+  data.order_id = $("#order_id").val();
+
+  if (data.hamlet === "") {
+    showToast("Vui lòng chọn thôn hoặc xóm/đường/ấp", "error");
+    return;
+  }
+
+  if (
+    data.ship_name != "" &&
+    data.ship_phone != "" &&
+    data.ship_address != "" &&
+    data.province_id != "" &&
+    data.district_id != "" &&
+    data.ward_id != "" &&
+    data.hamlet != ""
+  ) {
+    var url = PATH_AJAX_MODULE + "order&action=saveAddressShip";
+    $.ajax({
+      url: url,
+      data: data,
+      type: "POST",
+      success: function (result) {
+        if (result.length == 1) {
+          location.reload();
+        } else {
+          alert(result);
+        }
+        return false;
+      },
+    });
+  } else {
+    showToast("Vui lòng nhập các trường bắt buộc!", "error");
+  }
+}
+
+function changeAddressShipOrder(_id) {
+  changeAddressShip(_id);
+}
+
+function changeAddress(_id) {
+  $("#address_id_change").val(_id);
+}
+
+function changeAddressShip(_id) {
+  event.preventDefault();
+
+  $(".divinputcheck").removeClass("checked");
+  $(".divinputcheck_" + _id).addClass("checked");
+  var data = new Object();
+  data.ship_member_id = _id;
+  var url = PATH_AJAX_MODULE + "check_out&action=changeAddressShip";
+  $.ajax({
+    url: url,
+    data: data,
+    type: "POST",
+    success: function (result) {
+      let data_array = JSON.parse(result);
+      if (data_array.status === "error") {
+        showToast(data_array.message, "error");
+        return;
+      }
+      location.reload();
+    },
+  });
+}
+async function savePayment(value, payment_method) {
+  const radioButton = document.getElementById("radio_button_" + value);
+
+  if (radioButton && radioButton.disabled) {
+    const message =
+      value === 3
+        ? "Số tiền trong tài khoản ví không đủ đặt hàng!"
+        : "Tài khoản ví đang nợ shop, Vui lòng liên hệ quản trị để được hỗ trợ!";
+    showToast(message, "error");
+    return;
+  }
+
+  // Bỏ chọn tất cả checkbox và active trạng thái mới
+  document
+    .querySelectorAll(".my-checkbox, .btn_check_payment_default")
+    .forEach((el) => el.classList.remove("checked"));
+  document.getElementById("my_checkbox_" + value)?.classList.add("checked");
+
+  document.getElementById("optioncod_1")?.classList.remove("active");
+  if (value === 1) {
+    document.getElementById("optioncod")?.classList.add("active");
+    document.getElementById("shipCarBus")?.classList.remove("active");
+  } else {
+    document.getElementById("optioncod")?.classList.remove("active");
+    document.getElementById("shipCarBus")?.classList.add("active");
+  }
+
+  // Tạo FormData để gửi dữ liệu như form
+  const formData = new FormData();
+  formData.append("payment_id", value);
+  formData.append("payment_method", payment_method);
+
+  try {
+    const response = await fetch(
+      PATH_AJAX_MODULE + "check_out&action=savePayment",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
+
+    const result = await response.json(); // Đọc JSON từ server
+
+    if (result.status === "error") {
+      if (result.code === 3) {
+        document.getElementById("radio_button_3").checked = false;
+        document.getElementById("my_checkbox_3")?.classList.remove("checked");
+        showToast("Số tiền trong tài khoản ví không đủ đặt hàng!", "error");
+      } else if (result.code === 4) {
+        document.getElementById("radio_button_3").checked = false;
+        showToast(
+          "Tài khoản ví đang nợ SHOP, Vui lòng liên hệ quản trị để được hỗ trợ!",
+          "error"
+        );
+      }
+    } else if (result.status === "success" && value >= 1) {
+      window.location.href = site_folder + "/dat-hang";
+    }
+  } catch (error) {
+    console.error("Lỗi khi gửi yêu cầu thanh toán:", error);
+    showToast("Có lỗi xảy ra, vui lòng thử lại.", "error");
+  }
+}
+
+function savePaymentCod(value) {
+  $("form#changePaymentForm #optioncod .my-checkbox").removeClass("checked");
+  $(".check_thu_ho_css").removeClass("checked");
+  $("#optioncod #my_checkbox_c_" + value).addClass("checked");
+  if (value == 1) {
+    $("#optioncod_1").addClass("active");
+  } else {
+    $("#optioncod_1").removeClass("active");
+  }
+  var data = new Object();
+  data.thu_ho = value;
+  var url = PATH_AJAX_MODULE + "check_out&action=savePaymentCOD";
+  $.ajax({
+    url: url,
+    data: data,
+    type: "POST",
+    success: function (result) {
+      // location.reload();
+      window.location.href = site_folder + "/dat-hang";
+      return false;
+    },
+  });
+}
+
+function saveInfoSend() {
+  var data = new Object();
+  data.send_info = $("#infoSend").val();
+  data.codamount = $("#codamount").val();
+  data.send_name = $("#send_name").val();
+  if (data.codamount == "" || data.codamount == "undefined") {
+    notificationWarning("Vui lòng nhập số tiền muốn thu thêm.");
+    return;
+  }
+  if (data.send_name == "" || data.send_name == "undefined") {
+    notificationWarning("Vui lòng nhập tên người gửi hàng.");
+    return;
+  }
+  if (data.send_info == "" || data.send_info == "undefined") {
+    notificationWarning("Vui lòng nhập thông tin người gửi hàng.");
+    return;
+  }
+
+  var url = PATH_AJAX_MODULE + "check_out&action=savePaymentCOD";
+  $.ajax({
+    url: url,
+    data: data,
+    type: "POST",
+    success: function (result) {
+      console.log(result);
+      if (result === "8") {
+        notificationWarning(
+          "Thông tin người gửi và người nhận hàng không được trùng."
+        );
+        return;
+      } else {
+        // location.reload();
+        window.location.href = site_folder + "/dat-hang";
+      }
+      // notificationSuccess("Lưu địa thành công!");
+
+      return false;
+    },
+  });
+}
+
+function saveDelivery(value, _index) {
+  $(".label_shipchagne_modal").removeClass("checked");
+  var data = new Object();
+  data.ship_id = value;
+  data.ship_index = _index;
+  var url = PATH_AJAX_MODULE + "check_out&action=saveDelivery";
+  $.ajax({
+    url: url,
+    data: data,
+    type: "POST",
+    success: function (result) {
+      $(".shipchagne_" + _index).addClass("checked");
+      // location.reload();
+      window.location.href = site_folder + "/dat-hang";
+      return;
+    },
+  });
+
+  return;
+}
+
+function removeCartItem(id) {
+  var url = PATH_AJAX_MODULE + "cart&action=remove_cart";
+  $.ajax({
+    url: url,
+    data: { id: id },
+    type: "POST",
+    success: function (result) {
+      if (result.status === "success") {
+        location.reload();
+      } else {
+        showToast(result.message, "error");
+      }
+    },
+  });
+}
+function deleteAllCart() {
+  var url = PATH_AJAX_MODULE + "cart&action=remove_all_cart";
+  $.ajax({
+    url: url,
+    type: "POST",
+    success: function (result) {
+      if (result.status === "success") {
+        location.reload();
+      } else {
+        showToast(result.message, "error");
+      }
+    },
+  });
+}

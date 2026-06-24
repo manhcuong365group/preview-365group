@@ -1,0 +1,504 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize home slider
+  const homeSliders = document.querySelectorAll(".swiper-home");
+  homeSliders.forEach(function (slider) {
+    new Swiper(slider, {
+      loop: false, // disabled to avoid conflict with grid.fill = "row"
+      autoplay: { delay: 3000 },
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+    });
+  });
+
+  // Initialize two-column sliders
+  const twoColumnSliders = document.querySelectorAll(".swiper-two-column");
+  twoColumnSliders.forEach(function (slider) {
+    const cols = slider.dataset.col || 2;
+    const rows = slider.dataset.row || 1;
+    const spaceBetween = slider.dataset.spaceBetween || 2;
+
+    new Swiper(slider, {
+      loop: false, // disabled to avoid conflict with grid.fill = "row"
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      autoplay: { delay: 3000 },
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: parseInt(spaceBetween),
+        }
+      }
+    });
+  });
+
+  // Initialize three-column sliders
+  const threeColumnSliders = document.querySelectorAll(".swiper-three-column");
+  threeColumnSliders.forEach(function (slider) {
+    new Swiper(slider, {
+      loop: false, // disabled to avoid conflict with grid.fill = "row"
+      autoplay: { delay: 3000 },
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        }
+      }
+    });
+  });
+
+  // Initialize four-column sliders
+  const fourColumnSliders = document.querySelectorAll(".swiper-four-column");
+  fourColumnSliders.forEach(function (slider) {
+    new Swiper(slider, {
+      loop: false, // disabled to avoid conflict with grid.fill = "row"
+      autoplay: { delay: 3000 },
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.5,
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        }
+      }
+    });
+  });
+
+  // Initialize icons sliders
+  const iconsSliders = document.querySelectorAll(".swiper-icons");
+  iconsSliders.forEach(function (slider) {
+    const cols = slider.dataset.col || 8;
+    const rows = slider.dataset.row || 2;
+    const spaceBetween = slider.dataset.spaceBetween || 0;
+    new Swiper(slider, {
+      slidesPerView: parseInt(cols),
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      spaceBetween: parseInt(spaceBetween),
+      loop: false, // Tắt loop để tránh lỗi
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 4,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 5,
+        },
+        768: {
+          slidesPerView: 6,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: parseInt(spaceBetween),
+        }
+      }
+    });
+  });
+
+  // Initialize blog home sliders
+  const blogHomeSliders = document.querySelectorAll(".swiper-blog-home");
+  blogHomeSliders.forEach(function (slider) {
+    const cols = slider.dataset.col || 4;
+    const rows = slider.dataset.row || 1;
+
+    new Swiper(slider, {
+      slidesPerView: parseInt(cols),
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      spaceBetween: 10,
+      loop: false, // Tắt loop để tránh lỗi
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.5,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2.5,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        }
+      }
+    });
+  });
+
+  // Initialize banner pc sliders
+  const bannerPcSliders = document.querySelectorAll(".swiper-default");
+  bannerPcSliders.forEach(function (slider) {
+    const cols = slider.dataset.col || 1;
+    const rows = slider.dataset.row || 1;
+    const spaceBetween = slider.dataset.spaceBetween || 10;
+
+    new Swiper(slider, {
+      loop: false, // disabled to avoid conflict with grid.fill = "row"
+      autoplay: { delay: 3000 },
+      slidesPerView: parseInt(cols),
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      spaceBetween: parseInt(spaceBetween),
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: Math.min(2, parseInt(cols)),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: Math.min(3, parseInt(cols)),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: parseInt(spaceBetween),
+        }
+      }
+    });
+  });
+
+  // Initialize product box sliders with unique IDs
+  const productBoxSliders = document.querySelectorAll(
+    '[class*="swiper-product-box-"]'
+  );
+  productBoxSliders.forEach(function (slider) {
+    // Lấy row và perview từ data attribute đúng như trong HTML template
+    console.log(slider);
+    console.log(slider.dataset);
+    const rows = slider.dataset.row || 2;
+    const cols = slider.dataset.perview || 3;
+    const spaceBetween = slider.dataset.spaceBetween || 10;
+
+    // Extract unique ID from class name
+    const classList = Array.from(slider.classList);
+    const uniqueClass = classList.find((cls) =>
+      cls.startsWith("swiper-product-box-")
+    );
+    const uniqueId = uniqueClass
+      ? uniqueClass.replace("swiper-product-box-", "")
+      : "default";
+
+    new Swiper(slider, {
+      loop: false,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: parseInt(cols),
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      spaceBetween: parseInt(spaceBetween),
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: parseInt(spaceBetween),
+        },
+      },
+      on: {
+        init: function () {
+          console.log("Product box slider initialized:", uniqueId);
+        },
+      },
+    });
+  });
+
+
+  // Initialize list block sliders with unique IDs
+  const listBlockSliders = document.querySelectorAll(
+    '[class*="swiper-list-block-"]'
+  );
+  listBlockSliders.forEach(function (slider) {
+    const cols = slider.dataset.perview || 5;
+    const rows = slider.dataset.row || 1;
+    const spaceBetween = slider.dataset.spaceBetween || 10;
+
+    // Extract unique ID from class name
+    const classList = Array.from(slider.classList);
+    const uniqueClass = classList.find((cls) =>
+      cls.startsWith("swiper-list-block-")
+    );
+    const uniqueId = uniqueClass
+      ? uniqueClass.replace("swiper-list-block-", "")
+      : "default";
+
+    new Swiper(slider, {
+      loop: false,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: parseInt(cols),
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      spaceBetween: parseInt(spaceBetween),
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      pagination: {
+        el: slider.querySelector(".swiper-pagination"),
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: parseInt(spaceBetween),
+        },
+      },
+      on: {
+        init: function () {
+          console.log("List block slider initialized:", uniqueId);
+        },
+      },
+    });
+  });
+
+
+
+
+  // Initialize product box and banner sliders
+  const productBoxSlidersAndBanner = document.querySelectorAll('[class*="swiper-product-box-and-banner-"]');
+  productBoxSlidersAndBanner.forEach(function (slider) {
+    const cols = slider.dataset.perview || 3;
+    const rows = slider.dataset.row || 2;
+    const spaceBetween = slider.dataset.spaceBetween || 10;
+
+    // Extract unique ID from class name
+    const classList = Array.from(slider.classList);
+    const uniqueClass = classList.find((cls) =>
+      cls.startsWith("swiper-product-box-and-banner-")
+    );
+    const uniqueId = uniqueClass
+      ? uniqueClass.replace("swiper-product-box-and-banner-", "")
+      : "default";
+
+    new Swiper(slider, {
+      loop: false, // disabled to avoid conflict with grid.fill = "row"
+      autoplay: { 
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: parseInt(cols),
+      grid: {
+        rows: parseInt(rows),
+        fill: "row",
+      },
+      spaceBetween: parseInt(spaceBetween),
+      navigation: {
+        nextEl: slider.querySelector(".swiper-button-next"),
+        prevEl: slider.querySelector(".swiper-button-prev"),
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        640: {
+          slidesPerView: 2,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: 15,
+        },
+        1024: {
+          slidesPerView: parseInt(cols),
+          grid: {
+            rows: parseInt(rows),
+            fill: "row",
+          },
+          spaceBetween: parseInt(spaceBetween),
+        },
+      },
+      on: {
+        init: function () {
+          console.log("Product box and banner slider initialized:", uniqueId);
+        },
+      },
+    });
+  });
+  
+});

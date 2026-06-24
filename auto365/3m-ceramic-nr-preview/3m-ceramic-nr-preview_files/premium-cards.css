@@ -1,0 +1,684 @@
+/* Custom design overrides to style all home blocks as premium card containers */
+.box-product-standing,
+.box-promotion-home,
+.section-blog-home,
+[id^="list-block-"]>.bg-white {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+    border: 1px solid #f2f4f7 !important;
+    padding: 12px 16px !important;
+    margin-bottom: 16px !important;
+    overflow: hidden !important;
+}
+
+.box-product-standing .box-module-title,
+.box-promotion-home .box-module-title,
+.section-blog-home .box-module-title,
+[id^="list-block-"] .mb-3.pt-0 {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+}
+
+.box-product-standing .module-title,
+.box-promotion-home .module-title,
+.section-blog-home .module-title,
+[id^="list-block-"] .block-box-title-main {
+    color: #ef0000 !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Style Xem tất cả button as premium outline button */
+[id^="list-block-"] .block-box-title-link,
+.section-blog-home .block-box-title-link {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #475467 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #d0d5dd !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    display: inline-block !important;
+}
+
+[id^="list-block-"] .block-box-title-link:hover,
+.section-blog-home .block-box-title-link:hover {
+    background-color: #ef0000 !important;
+    color: #ffffff !important;
+    border-color: #ef0000 !important;
+    box-shadow: 0 4px 10px rgba(239, 0, 0, 0.15) !important;
+}
+
+/* Category sub navigation tags */
+.category-sub-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 16px;
+    flex-wrap: wrap;
+}
+
+.category-sub-tag {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #475467 !important;
+    background-color: #ffffff !important;
+    border: 1px solid #d0d5dd !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+    display: inline-block;
+}
+
+.category-sub-tag:hover {
+    background-color: #ef0000 !important;
+    color: #ffffff !important;
+    border-color: #ef0000 !important;
+    box-shadow: 0 4px 10px rgba(239, 0, 0, 0.15) !important;
+}
+
+/* Special gradient background for Gợi ý cho bạn section (box-product-standing-0) */
+.box-product-standing-0 {
+    background: linear-gradient(135deg, #e30613 0%, #900004 100%) !important;
+    background-color: #e30613 !important;
+    border: none !important;
+    box-shadow: 0 15px 35px rgba(144, 0, 4, 0.2) !important;
+}
+
+.box-product-standing-0 .box-module-title {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    display: block !important;
+    box-shadow: none !important;
+}
+
+.box-product-standing-0 .module-title {
+    color: #ffffff !important;
+    font-size: 22px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Clean borderless cards on red gradient background */
+.box-product-standing-0 .product-item {
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+.box-product-standing-0 .product-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+    transform: none !important;
+}
+
+/* Remove card-in-card wrapper styles on news block and add border-radius to images */
+.section-blog-home div.bg-white.rounded-3.p-3 {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.section-blog-home .box-module-title {
+    margin-bottom: 0 !important;
+}
+
+.section-blog-home .card,
+.section-blog-home .card img.card-img-top {
+    border-radius: 8px !important;
+}
+
+/* People also search block (Footer keywords) */
+.footer-keywords-card {
+    background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%) !important;
+    border-radius: 18px !important;
+    box-shadow: 0 12px 30px rgba(16, 24, 40, 0.06), 0 1px 2px rgba(16, 24, 40, 0.04) !important;
+    border: 1px solid #eaecf0 !important;
+    padding: 18px 20px !important;
+    margin-bottom: 16px !important;
+    overflow: hidden !important;
+}
+
+.footer-keywords-card .block-box-title {
+    margin-bottom: 12px !important;
+}
+
+.footer-keywords-card .block-box-title-main {
+    font-size: 18px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.2px !important;
+    margin-bottom: 0 !important;
+}
+
+.footer-keywords-card .d-flex.flex-wrap {
+    gap: 10px 12px !important;
+}
+
+.footer-keyword-pill {
+    font-size: 13px !important;
+    font-weight: 400 !important;
+    color: #344054 !important;
+    background-color: #f8fafc !important;
+    padding: 7px 16px !important;
+    border-radius: 999px !important;
+    text-decoration: none !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+    border: 1px solid #e4e7ec !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 36px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04) !important;
+}
+
+.footer-keyword-pill:hover {
+    background-color: #ef0000 !important;
+    color: #ffffff !important;
+    border-color: #ef0000 !important;
+    box-shadow: 0 8px 18px rgba(239, 0, 0, 0.18) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Premium Footer Links Hover Button Styling */
+.footer-nav-link {
+    color: #475467 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    transition: all 0.25s ease-in-out !important;
+    display: inline-flex !important;
+    align-items: center;
+    text-decoration: none !important;
+    padding: 2px 8px !important;
+    margin-left: -8px !important;
+    border-radius: 6px !important;
+}
+
+.links-group-container p {
+    margin-bottom: 2px !important;
+}
+
+.footer-nav-link i {
+    transition: transform 0.25s ease-in-out !important;
+}
+
+.footer-nav-link:hover {
+    color: #ed1b24 !important;
+    background-color: #fff1f1 !important;
+}
+
+.footer-nav-link:hover i {
+    transform: translateX(4px) !important;
+}
+
+/* Brand logos hover and styling (no grayscale) */
+.social-box-footer img {
+    transition: all 0.3s ease !important;
+    border: 1px solid #eaecf0 !important;
+    padding: 6px !important;
+    border-radius: 6px !important;
+    background-color: #ffffff !important;
+}
+
+.social-box-footer img:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    transform: translateY(-2px) !important;
+    border-color: #d0d5dd !important;
+}
+
+/* Remove old red borders separating cards inside product boxes */
+.box-product-standing .product-grid-block,
+.box-product-standing .list-product,
+.box-product-standing .swiper-wrapper {
+    border: none !important;
+    background: transparent !important;
+}
+
+/* Style individual product cards globally */
+.product-item {
+    border: 1px solid #f2f4f7 !important;
+    border-radius: 8px !important;
+    background-color: #ffffff !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+    transform: none !important;
+}
+
+.product-item:hover {
+    transform: none !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05) !important;
+    border-color: #ef0000 !important;
+}
+
+/* Keep product tags in normal flow so they do not overlay the image */
+.product-item .product-tags {
+    position: absolute;
+    top: 4px !important;
+    left: 4px !important;
+    right: auto;
+    bottom: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4px;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    pointer-events: none;
+    user-select: none;
+    z-index: 10;
+}
+
+.product-item .product-tags .tag {
+    background: #ffd6d6;
+    color: #e53935;
+    border: 1px solid #ffd6d6;
+    font-weight: 400;
+    transition: none;
+    vertical-align: top;
+    z-index: 2;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.3;
+    display: inline-block;
+    padding: 1px 8px;
+}
+
+/* Disable image translation/zoom inside product cards on hover globally */
+.product-item:hover img,
+.product-item:hover .p-img img,
+.product-item:hover .product-img-link img,
+.product-item:hover img.card-img-top,
+.product-item:hover .combo-image img {
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Product image wrapper border-radius adjustments */
+.product-item .product-img-link img,
+.product-item .p-img img {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+
+/* Swiper Responsive Adjustments */
+.swiper-container,
+.swiper {
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+.swiper-slide {
+    box-sizing: border-box !important;
+}
+
+/* Ensure no horizontal scrollbar due to margins/paddings on mobile */
+@media (max-width: 768px) {
+    .container-fluid {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+}
+
+/* Tablet & Mobile responsive overrides */
+@media (max-width: 991.98px) {
+
+    /* Reset hardcoded product image min-height to prevent vertical layout stretching */
+    .product-item .product-img-link,
+    .product-item .p-img {
+        min-height: auto !important;
+    }
+
+    /* Display the main category gallery as a horizontal scrolling container */
+    .square-gallery {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        align-items: flex-start !important;
+        /* Prevent vertical stretching */
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        position: relative !important;
+        height: auto !important;
+        min-height: auto !important;
+        /* Override compiled min-height to prevent layout stretching */
+        width: 100% !important;
+        gap: 12px !important;
+        padding: 5px 0 !important;
+        margin-top: 15px !important;
+        scrollbar-width: none !important;
+        /* Hide scrollbar Firefox */
+    }
+
+    .square-gallery::-webkit-scrollbar {
+        display: none !important;
+        /* Hide scrollbar Chrome/Safari */
+    }
+
+    .square-item {
+        position: relative !important;
+        width: calc(45% - 6px) !important;
+        min-width: 150px !important;
+        flex: 0 0 auto !important;
+        aspect-ratio: 1.5 / 1 !important;
+        height: auto !important;
+        left: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        right: auto !important;
+    }
+
+    /* Make the footer keywords block more compact on mobile/tablet */
+    .footer-keywords-card {
+        padding: 10px 12px !important;
+        margin-bottom: 12px !important;
+        border-radius: 8px !important;
+    }
+
+    /* Make the home page blocks and product/promotion cards more compact on mobile/tablet */
+    .box-product-standing,
+    .box-promotion-home,
+    .section-blog-home,
+    [id^="list-block-"]>.bg-white {
+        padding: 10px 12px !important;
+        margin-bottom: 12px !important;
+        border-radius: 8px !important;
+    }
+
+    /* Mobile-only category sub navigation pills */
+    .category-sub-links-mobile {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        overflow-x: auto !important;
+        white-space: nowrap !important;
+        padding-bottom: 6px !important;
+        margin-top: 10px !important;
+        margin-bottom: 4px !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+    }
+
+    .category-sub-links-mobile::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .category-sub-tag-mobile {
+        font-size: 11px !important;
+        font-weight: 400 !important;
+        color: #475467 !important;
+        background-color: #f2f4f7 !important;
+        padding: 5px 12px !important;
+        border-radius: 20px !important;
+        text-decoration: none !important;
+        transition: all 0.2s ease !important;
+        display: inline-block !important;
+        border: 1px solid transparent !important;
+    }
+
+    .category-sub-tag-mobile:hover,
+    .category-sub-tag-mobile:active {
+        background-color: #ef0000 !important;
+        color: #ffffff !important;
+    }
+
+    /* Mobile-specific refinements for the red spotlight card */
+    .box-product-standing-0 {
+        box-shadow: 0 10px 25px rgba(144, 0, 4, 0.2) !important;
+    }
+
+    .box-product-standing-0 .box-module-title {
+        margin-bottom: 12px !important;
+    }
+
+    .box-product-standing-0 .module-title {
+        font-size: 18px !important;
+    }
+
+    .box-product-standing-0 .product-item {
+        border: none !important;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .box-product-standing-0 .product-item:hover {
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+        transform: none !important;
+    }
+
+    /* Flatten the news card wrapper on mobile */
+    .section-blog-home div.bg-white.rounded-3.p-3 {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .section-blog-home .box-module-title {
+        margin-bottom: 0 !important;
+    }
+
+    .section-blog-home .card,
+    .section-blog-home .card img.card-img-top {
+        border-radius: 8px !important;
+    }
+
+    /* Compact footer keywords block on mobile */
+    .footer-keywords-card {
+        background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%) !important;
+        border-radius: 14px !important;
+        box-shadow: 0 12px 24px rgba(16, 24, 40, 0.05), 0 1px 2px rgba(16, 24, 40, 0.04) !important;
+        border: 1px solid #eaecf0 !important;
+        padding: 14px 12px !important;
+        margin-bottom: 16px !important;
+        overflow: hidden !important;
+    }
+
+    .footer-keywords-card .block-box-title {
+        margin-bottom: 10px !important;
+    }
+
+    .footer-keywords-card .block-box-title-main {
+        font-size: 16px !important;
+        line-height: 1.25 !important;
+        letter-spacing: 0.2px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .footer-keywords-card .d-flex.flex-wrap {
+        gap: 8px 10px !important;
+    }
+
+    .footer-keyword-pill {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+        color: #344054 !important;
+        background-color: #f8fafc !important;
+        padding: 6px 12px !important;
+        border-radius: 999px !important;
+        text-decoration: none !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+        border: 1px solid #e4e7ec !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 32px !important;
+        line-height: 1 !important;
+        white-space: nowrap !important;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04) !important;
+    }
+
+    .footer-keyword-pill:hover,
+    .footer-keyword-pill:active {
+        background-color: #ef0000 !important;
+        color: #ffffff !important;
+        border-color: #ef0000 !important;
+        box-shadow: 0 8px 16px rgba(239, 0, 0, 0.16) !important;
+    }
+
+    /* Keep footer links and brand logos tappable on small screens */
+    .footer-nav-link:hover,
+    .footer-nav-link:active {
+        color: #ed1b24 !important;
+        background-color: #fff1f1 !important;
+    }
+
+    .footer-nav-link:hover i,
+    .footer-nav-link:active i {
+        transform: translateX(4px) !important;
+    }
+
+    .social-box-footer img:hover,
+    .social-box-footer img:active {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+        transform: translateY(-2px) !important;
+    }
+
+}
+
+/* Premium Footer Social & Trust Styling */
+.footer-social-group {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 16px !important;
+    margin-top: 20px !important;
+}
+
+.footer-social-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 6px 14px !important;
+    border-radius: 99px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    color: #475569 !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease !important;
+}
+
+.footer-social-pill:hover {
+    background: #f1f5f9 !important;
+    border-color: #cbd5e1 !important;
+    transform: translateY(-1px) !important;
+    color: #0f172a !important;
+}
+
+.footer-social-pill i {
+    font-size: 18px !important;
+}
+
+.footer-trust-badges {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    margin-top: 12px !important;
+    padding-top: 12px !important;
+    border-top: 1px solid #e2e8f0 !important;
+}
+
+.footer-trust-badges a {
+    display: inline-block !important;
+}
+
+.footer-trust-badges a img {
+    height: 28px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    transition: opacity 0.2s ease, transform 0.2s ease !important;
+}
+
+.footer-trust-badges a img:hover {
+    opacity: 0.8 !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Fix product name text truncation/clipping on homepage cards */
+.product-item .p-name a {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: normal !important;
+    height: 2.8em !important;
+    line-height: 1.4 !important;
+    color: #333333 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+/* Fix product image sizing to prevent clipping text contents in restricted heights */
+.product-item .product-img-link,
+.product-item .p-img {
+    width: 100% !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #ffffff !important;
+}
+
+.product-item .product-img-link img,
+.product-item .p-img img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+.product-item .card-body {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+/* Balance footer contact column layout and styling with other columns */
+.links-group-container .hotline-footer p {
+    font-size: 14px !important;
+    color: #475467 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 10px !important;
+}
+
+.links-group-container .hotline-footer p a {
+    color: #475467 !important;
+    transition: color 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+.links-group-container .hotline-footer p a:hover {
+    color: #ed1b24 !important;
+}
