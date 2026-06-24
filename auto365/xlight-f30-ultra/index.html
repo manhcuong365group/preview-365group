@@ -1,0 +1,1402 @@
+<style>
+  /* =========================================================
+     X-Light F30 Ultra - CKEditor safe CSS
+     Tất cả selector đều được bọc dưới .f30-page để hạn chế ảnh hưởng CSS toàn site.
+     Font dùng system font kiểu Apple, độ đậm vừa phải.
+     ========================================================= */
+
+  .f30-page,
+  .f30-page *{
+    box-sizing:border-box;
+  }
+
+  .f30-page{
+    --f30-bg:#f5f7fb;
+    --f30-surface:#ffffff;
+    --f30-text:#172033;
+    --f30-muted:#5f6b7a;
+    --f30-soft:#eef2f7;
+    --f30-line:#dfe5ee;
+    --f30-dark:#152033;
+    --f30-dark-2:#1d2a3d;
+    --f30-gold:#008fd5;
+    --f30-gold-2:#5cc8ff;
+    --f30-green:#16a34a;
+    --f30-blue:#008fd5;
+    --f30-radius:24px;
+    --f30-radius-sm:16px;
+    --f30-shadow:0 18px 48px rgba(15,23,42,.10);
+    --f30-max:1120px;
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    color:var(--f30-text);
+    font-size:16px;
+    line-height:1.72;
+    font-weight:400;
+    letter-spacing:-.01em;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  .f30-page strong,
+  .f30-page b{
+    color:inherit;
+    font-weight:650;
+  }
+
+  .f30-page .f30-wrap{
+    max-width:var(--f30-max);
+    margin:0 auto;
+    padding:0 16px;
+  }
+
+  .f30-page .f30-section{
+    margin:28px 0;
+  }
+
+  .f30-page .f30-card{
+    background:var(--f30-surface);
+    border:1px solid var(--f30-line);
+    border-radius:var(--f30-radius);
+    box-shadow:0 12px 34px rgba(15,23,42,.06);
+    overflow:hidden;
+  }
+
+  .f30-page .f30-inner{
+    padding:28px;
+  }
+
+  .f30-page .f30-kicker{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    width:max-content;
+    max-width:100%;
+    padding:7px 13px;
+    border-radius:999px;
+    background:rgba(0,143,213,.10);
+    border:1px solid rgba(0,143,213,.28);
+    color:#006796;
+    font-size:13px;
+    line-height:1.35;
+    font-weight:650;
+  }
+
+  .f30-page .f30-title{
+    margin:16px 0 12px;
+    font-size:clamp(32px,4.2vw,52px);
+    line-height:1.05;
+    letter-spacing:-.045em;
+    font-weight:650;
+    color:#fff;
+  }
+
+  .f30-page .f30-section-title{
+    margin:0 0 14px;
+    font-size:clamp(24px,3vw,34px);
+    line-height:1.18;
+    letter-spacing:-.035em;
+    font-weight:650;
+    color:var(--f30-text);
+  }
+
+  .f30-page .f30-section-subtitle{
+    margin:0 0 20px;
+    max-width:880px;
+    color:var(--f30-muted);
+    font-size:16px;
+    line-height:1.75;
+    font-weight:400;
+  }
+
+  .f30-page .f30-text{
+    margin:0 0 14px;
+    color:var(--f30-text);
+    font-size:16px;
+    line-height:1.78;
+    font-weight:400;
+  }
+
+  .f30-page .f30-muted{
+    color:var(--f30-muted);
+  }
+
+  .f30-page .f30-note{
+    margin:16px 0 0;
+    padding:14px 16px;
+    border-radius:16px;
+    background:#eef9ff;
+    border:1px solid rgba(0,143,213,.24);
+    color:#075985;
+    font-size:14px;
+    line-height:1.65;
+  }
+
+  .f30-page .f30-list{
+    margin:14px 0 0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:10px;
+  }
+
+  .f30-page .f30-list-item{
+    position:relative;
+    padding-left:26px;
+    color:var(--f30-text);
+    font-size:15.5px;
+    line-height:1.65;
+  }
+
+  .f30-page .f30-list-item::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:.68em;
+    width:8px;
+    height:8px;
+    border-radius:999px;
+    background:var(--f30-gold);
+    box-shadow:0 0 0 4px rgba(0,143,213,.12);
+  }
+
+  /* Hero */
+  .f30-page .f30-hero{
+    position:relative;
+    overflow:hidden;
+    border-radius:30px;
+    background:
+      radial-gradient(circle at 16% 0%, rgba(255,255,255,.10), transparent 28%),
+      linear-gradient(135deg,#111b2c 0%,#172236 46%,#202b3c 100%);
+    box-shadow:var(--f30-shadow);
+    color:#fff;
+  }
+
+  .f30-page .f30-hero-inner{
+    position:relative;
+    z-index:1;
+    padding:42px 34px 34px;
+  }
+
+  .f30-page .f30-hero-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.6fr) minmax(300px,.72fr);
+    gap:28px;
+    align-items:center;
+  }
+
+  .f30-page .f30-hero-lead{
+    margin:0 0 14px;
+    max-width:760px;
+    color:rgba(255,255,255,.92);
+    font-size:17px;
+    line-height:1.78;
+    font-weight:400;
+  }
+
+  .f30-page .f30-hero-lead strong,
+  .f30-page .f30-hero-lead b{
+    color:#fff;
+    font-weight:650;
+  }
+
+  .f30-page .f30-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
+  }
+
+  .f30-page .f30-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:46px;
+    padding:12px 20px;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:15px;
+    line-height:1.2;
+    font-weight:650;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+
+  .f30-page .f30-btn:hover{
+    transform:translateY(-1px);
+  }
+
+  .f30-page .f30-btn-primary{
+    background:var(--f30-gold);
+    color:#fff;
+    box-shadow:0 12px 26px rgba(0,143,213,.24);
+  }
+
+  .f30-page .f30-btn-light{
+    background:#fff;
+    color:#111827;
+    box-shadow:0 12px 26px rgba(0,0,0,.10);
+  }
+
+  .f30-page .f30-price-box{
+    padding:22px;
+    border-radius:22px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.20);
+    backdrop-filter:blur(10px);
+  }
+
+  .f30-page .f30-price-label{
+    display:block;
+    margin:0 0 8px;
+    color:rgba(255,255,255,.75);
+    font-size:14px;
+    font-weight:600;
+  }
+
+  .f30-page .f30-price{
+    display:block;
+    color:#fff;
+    font-size:clamp(30px,3.2vw,42px);
+    line-height:1.08;
+    letter-spacing:-.04em;
+    font-weight:750;
+    white-space:normal;
+    overflow-wrap:anywhere;
+  }
+
+  .f30-page .f30-price-note{
+    margin:10px 0 0;
+    color:rgba(255,255,255,.78);
+    font-size:14px;
+    line-height:1.58;
+  }
+
+  .f30-page .f30-hero-stats{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:12px;
+    margin-top:28px;
+  }
+
+  .f30-page .f30-stat{
+    padding:16px;
+    border-radius:16px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+  }
+
+  .f30-page .f30-stat-value{
+    display:block;
+    color:#fff;
+    font-size:21px;
+    line-height:1.15;
+    font-weight:700;
+    letter-spacing:-.025em;
+  }
+
+  .f30-page .f30-stat-label{
+    display:block;
+    margin-top:6px;
+    color:rgba(255,255,255,.74);
+    font-size:13px;
+    line-height:1.45;
+  }
+
+  /* Quick answer */
+  .f30-page .f30-answer{
+    background:linear-gradient(180deg,#fff 0%,#f7f9fc 100%);
+  }
+
+  .f30-page .f30-answer-grid{
+    display:grid;
+    grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+    gap:18px;
+  }
+
+  .f30-page .f30-answer-box{
+    padding:18px;
+    border-radius:18px;
+    background:#fff;
+    border:1px solid var(--f30-line);
+  }
+
+  .f30-page .f30-answer-title{
+    margin:0 0 8px;
+    color:var(--f30-text);
+    font-size:18px;
+    line-height:1.35;
+    font-weight:650;
+  }
+
+  .f30-page .f30-answer-text{
+    margin:0;
+    color:var(--f30-muted);
+    font-size:15px;
+    line-height:1.7;
+  }
+
+  /* Grids */
+  .f30-page .f30-grid-2{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:16px;
+  }
+
+  .f30-page .f30-grid-3{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+  }
+
+  .f30-page .f30-grid-4{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:14px;
+  }
+
+  .f30-page .f30-feature{
+    padding:20px;
+    border-radius:18px;
+    background:#fff;
+    border:1px solid var(--f30-line);
+  }
+
+  .f30-page .f30-feature-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    margin-bottom:12px;
+    border-radius:14px;
+    background:rgba(0,143,213,.12);
+    color:#006796;
+    font-size:20px;
+    font-weight:650;
+  }
+
+  .f30-page .f30-feature-title{
+    margin:0 0 8px;
+    color:var(--f30-text);
+    font-size:18px;
+    line-height:1.35;
+    font-weight:650;
+    letter-spacing:-.02em;
+  }
+
+  .f30-page .f30-feature-text{
+    margin:0;
+    color:var(--f30-muted);
+    font-size:15px;
+    line-height:1.68;
+  }
+
+  /* Tables */
+  .f30-page .f30-table-wrap{
+    width:100%;
+    overflow-x:auto;
+    border-radius:18px;
+    border:1px solid var(--f30-line);
+    background:#fff;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .f30-page .f30-table{
+    width:100%;
+    min-width:720px;
+    border-collapse:separate;
+    border-spacing:0;
+    background:#fff;
+  }
+
+  .f30-page .f30-table-cell{
+    padding:15px 16px;
+    border-bottom:1px solid var(--f30-line);
+    border-right:1px solid var(--f30-line);
+    color:var(--f30-text);
+    font-size:15px;
+    line-height:1.55;
+    vertical-align:top;
+  }
+
+  .f30-page .f30-table-head .f30-table-cell{
+    background:linear-gradient(135deg,#007fbd,#008fd5);
+    color:#fff;
+    font-weight:650;
+  }
+
+  .f30-page .f30-table-row:last-child .f30-table-cell{
+    border-bottom:0;
+  }
+
+  .f30-page .f30-table-cell:last-child{
+    border-right:0;
+  }
+
+  .f30-page .f30-mt-16{margin-top:16px}
+
+  .f30-page .f30-table-note{
+    margin:10px 0 0;
+    color:var(--f30-muted);
+    font-size:13px;
+    line-height:1.6;
+  }
+
+  /* Version cards */
+  .f30-page .f30-version-list{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:14px;
+    align-items:stretch;
+  }
+
+  .f30-page .f30-version{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-height:auto;
+    height:auto;
+    padding:20px;
+    border-radius:22px;
+    border:1px solid var(--f30-line);
+    background:#fff;
+    overflow:hidden;
+  }
+
+  .f30-page .f30-version::before{
+    content:"";
+    position:absolute;
+    inset:0 0 auto 0;
+    height:5px;
+    background:linear-gradient(90deg,var(--f30-gold),var(--f30-gold-2));
+  }
+
+  .f30-page .f30-version-temp{
+    margin:0 0 10px;
+    color:var(--f30-text);
+    font-size:28px;
+    line-height:1.1;
+    letter-spacing:-.035em;
+    font-weight:700;
+  }
+
+  .f30-page .f30-version-name{
+    margin:0 0 10px;
+    color:var(--f30-text);
+    font-size:17px;
+    line-height:1.35;
+    font-weight:650;
+  }
+
+  .f30-page .f30-version-text{
+    margin:0;
+    color:var(--f30-muted);
+    font-size:15px;
+    line-height:1.68;
+  }
+
+  /* Highlight block */
+  .f30-page .f30-highlight{
+    background:
+      linear-gradient(135deg,rgba(0,143,213,.10),rgba(92,200,255,.10)),
+      #fff;
+  }
+
+  .f30-page .f30-highlight-grid{
+    display:grid;
+    grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+    gap:18px;
+    align-items:start;
+  }
+
+  .f30-page .f30-dark-panel{
+    padding:24px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#131f32,#223047);
+    color:#fff;
+  }
+
+  .f30-page .f30-dark-title{
+    margin:0 0 12px;
+    color:#fff;
+    font-size:24px;
+    line-height:1.25;
+    letter-spacing:-.03em;
+    font-weight:650;
+  }
+
+  .f30-page .f30-dark-text{
+    margin:0;
+    color:rgba(255,255,255,.78);
+    font-size:15.5px;
+    line-height:1.72;
+  }
+
+  .f30-page .f30-dark-list{
+    margin:16px 0 0;
+    padding:0;
+    list-style:none;
+    display:grid;
+    gap:10px;
+  }
+
+  .f30-page .f30-dark-item{
+    position:relative;
+    padding-left:26px;
+    color:rgba(255,255,255,.88);
+    font-size:15px;
+    line-height:1.62;
+  }
+
+  .f30-page .f30-dark-item::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:.65em;
+    width:8px;
+    height:8px;
+    border-radius:999px;
+    background:var(--f30-gold);
+  }
+
+  /* SEO trust */
+  .f30-page .f30-trust{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:14px;
+  }
+
+  .f30-page .f30-trust-item{
+    padding:18px;
+    border-radius:18px;
+    background:#fff;
+    border:1px solid var(--f30-line);
+  }
+
+  .f30-page .f30-trust-label{
+    display:block;
+    margin:0 0 7px;
+    color:#111827;
+    font-size:16px;
+    line-height:1.35;
+    font-weight:650;
+  }
+
+  .f30-page .f30-trust-text{
+    margin:0;
+    color:var(--f30-muted);
+    font-size:14.5px;
+    line-height:1.62;
+  }
+
+  /* FAQ */
+  .f30-page .f30-faq{
+    display:grid;
+    gap:10px;
+  }
+
+  .f30-page .f30-faq-item{
+    border:1px solid var(--f30-line);
+    border-radius:18px;
+    background:#fff;
+    overflow:hidden;
+  }
+
+  .f30-page .f30-faq-question{
+    display:block;
+    cursor:pointer;
+    padding:17px 18px;
+    color:var(--f30-text);
+    font-size:16px;
+    line-height:1.45;
+    font-weight:650;
+  }
+
+  .f30-page .f30-faq-answer{
+    padding:0 18px 18px;
+    color:var(--f30-muted);
+    font-size:15px;
+    line-height:1.72;
+  }
+
+  .f30-page .f30-faq-answer .f30-faq-p{
+    margin:0 0 10px;
+  }
+
+  .f30-page .f30-faq-answer .f30-faq-p:last-child{
+    margin-bottom:0;
+  }
+
+  /* CTA */
+  .f30-page .f30-cta{
+    overflow:hidden;
+    border-radius:28px;
+    background:
+      radial-gradient(circle at 100% 0%,rgba(0,143,213,.28),transparent 34%),
+      linear-gradient(135deg,#111827,#1f2937);
+    color:#fff;
+  }
+
+  .f30-page .f30-cta-inner{
+    display:grid;
+    grid-template-columns:minmax(0,1.1fr) minmax(260px,.55fr);
+    gap:20px;
+    align-items:center;
+    padding:30px;
+  }
+
+  .f30-page .f30-cta-title{
+    margin:0 0 10px;
+    color:#fff;
+    font-size:clamp(24px,3vw,36px);
+    line-height:1.18;
+    letter-spacing:-.035em;
+    font-weight:650;
+  }
+
+  .f30-page .f30-cta-text{
+    margin:0;
+    color:rgba(255,255,255,.78);
+    font-size:15.5px;
+    line-height:1.72;
+  }
+
+  .f30-page .f30-cta-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:flex-end;
+  }
+
+  /* Responsive */
+  @media (max-width: 920px){
+    .f30-page .f30-hero-grid,
+    .f30-page .f30-answer-grid,
+    .f30-page .f30-highlight-grid,
+    .f30-page .f30-cta-inner{
+      grid-template-columns:1fr;
+    }
+
+    .f30-page .f30-hero-stats,
+    .f30-page .f30-grid-4,
+    .f30-page .f30-trust{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+    }
+
+    .f30-page .f30-grid-3,
+    .f30-page .f30-version-list{
+      grid-template-columns:1fr;
+    }
+
+    .f30-page .f30-cta-actions{
+      justify-content:flex-start;
+    }
+  }
+
+  @media (max-width: 640px){
+    .f30-page{
+      font-size:15px;
+      line-height:1.68;
+    }
+
+    .f30-page .f30-wrap{
+      padding:0 12px;
+    }
+
+    .f30-page .f30-section{
+      margin:20px 0;
+    }
+
+    .f30-page .f30-hero{
+      border-radius:22px;
+    }
+
+    .f30-page .f30-hero-inner,
+    .f30-page .f30-inner,
+    .f30-page .f30-cta-inner{
+      padding:22px 18px;
+    }
+
+    .f30-page .f30-title{
+      font-size:34px;
+      letter-spacing:-.04em;
+    }
+
+    .f30-page .f30-section-title{
+      font-size:25px;
+    }
+
+    .f30-page .f30-hero-lead,
+    .f30-page .f30-text,
+    .f30-page .f30-section-subtitle{
+      font-size:15px;
+      line-height:1.72;
+    }
+
+    .f30-page .f30-actions,
+    .f30-page .f30-cta-actions{
+      flex-direction:column;
+    }
+
+    .f30-page .f30-btn{
+      width:100%;
+    }
+
+    .f30-page .f30-hero-stats,
+    .f30-page .f30-grid-2,
+    .f30-page .f30-grid-4,
+    .f30-page .f30-trust{
+      grid-template-columns:1fr;
+    }
+
+    .f30-page .f30-price-box{
+      padding:18px;
+    }
+
+    .f30-page .f30-price{
+      font-size:31px;
+    }
+
+    .f30-page .f30-table{
+      min-width:680px;
+    }
+
+    .f30-page .f30-table-cell{
+      padding:13px 14px;
+      font-size:14px;
+    }
+  }
+
+  @media (max-width: 380px){
+    .f30-page .f30-title{
+      font-size:30px;
+    }
+
+    .f30-page .f30-price{
+      font-size:27px;
+    }
+
+    .f30-page .f30-kicker{
+      font-size:12px;
+      padding:6px 10px;
+    }
+
+    .f30-page .f30-hero-inner,
+    .f30-page .f30-inner,
+    .f30-page .f30-cta-inner{
+      padding:18px 14px;
+    }
+  }
+
+
+  /* Meta / updated notes */
+  .f30-page .f30-meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin:14px 0 0;
+  }
+
+  .f30-page .f30-meta-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    padding:7px 11px;
+    border-radius:999px;
+    background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.16);
+    color:rgba(255,255,255,.86);
+    font-size:13px;
+    line-height:1.35;
+    font-weight:500;
+  }
+
+  .f30-page .f30-source-note{
+    margin:12px 0 0;
+    color:var(--f30-muted);
+    font-size:13px;
+    line-height:1.62;
+  }
+
+  .f30-page .f30-table-caption{
+    caption-side:top;
+    padding:13px 16px;
+    background:#f8fafc;
+    color:#334155;
+    border-bottom:1px solid var(--f30-line);
+    text-align:left;
+    font-size:14px;
+    line-height:1.5;
+    font-weight:600;
+  }
+
+  .f30-page .f30-table-caption small{
+    display:block;
+    margin-top:3px;
+    color:var(--f30-muted);
+    font-size:12px;
+    line-height:1.5;
+    font-weight:400;
+  }
+
+  /* Image / video suggestion block */
+  .f30-page .f30-media-grid{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:16px;
+    margin-top:18px;
+  }
+
+  .f30-page .f30-media-figure{
+    margin:0;
+    overflow:hidden;
+    border:1px solid var(--f30-line);
+    border-radius:20px;
+    background:#fff;
+  }
+
+  .f30-page .f30-media-placeholder{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:178px;
+    padding:18px;
+    background:linear-gradient(135deg,#eef2f7,#ffffff);
+    color:#475569;
+    text-align:center;
+    font-size:14px;
+    line-height:1.5;
+    font-weight:600;
+  }
+
+  .f30-page .f30-media-figure img{
+    display:block;
+    width:100%;
+    height:auto;
+  }
+
+  .f30-page .f30-media-caption{
+    padding:13px 14px 15px;
+    color:var(--f30-muted);
+    font-size:13px;
+    line-height:1.55;
+  }
+
+  .f30-page .f30-video-box{
+    margin-top:16px;
+    overflow:hidden;
+    border:1px solid var(--f30-line);
+    border-radius:22px;
+    background:#0f172a;
+  }
+
+  .f30-page .f30-video-ratio{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    background:linear-gradient(135deg,#111827,#1f2937);
+  }
+
+  .f30-page .f30-video-ratio iframe,
+  .f30-page .f30-video-ratio video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+  }
+
+  .f30-page .f30-video-placeholder{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:22px;
+    color:#fff;
+    text-align:center;
+    font-size:15px;
+    line-height:1.6;
+    font-weight:600;
+  }
+
+  .f30-page .f30-video-caption{
+    margin:0;
+    padding:13px 16px 15px;
+    color:rgba(255,255,255,.78);
+    font-size:13px;
+    line-height:1.55;
+  }
+
+
+  .f30-page .f30-media-figure img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:18px;
+  }
+
+  .f30-page .f30-video-ratio iframe,
+  .f30-page .f30-video-ratio video{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    border-radius:20px;
+  }
+
+  @media (max-width: 768px){
+    .f30-page .f30-media-grid{
+      grid-template-columns:1fr;
+      gap:12px;
+    }
+
+    .f30-page .f30-media-placeholder{
+      min-height:150px;
+    }
+  }
+
+  @media (max-width: 480px){
+    .f30-page .f30-meta-row{
+      gap:6px;
+    }
+
+    .f30-page .f30-meta-pill{
+      width:100%;
+      justify-content:flex-start;
+      font-size:12px;
+    }
+
+    .f30-page .f30-table-caption{
+      padding:11px 12px;
+      font-size:13px;
+    }
+  }
+
+</style>
+<div class="f30-page">
+<div class="f30-wrap">
+<section class="f30-section">
+<div class="f30-hero">
+<div class="f30-hero-inner">
+<div class="f30-hero-grid">
+<div>
+<span class="f30-kicker">Đèn gầm lắp rời giữ zin</span>
+<h1 class="f30-title">Đèn gầm lắp rời X-Light F30 Ultra</h1><div class="f30-meta-row">
+<span class="f30-meta-pill">Cập nhật: 23/06/2026</span>
+<span class="f30-meta-pill">Nguồn thông số: nội dung sản phẩm X-Light F30 Ultra</span>
+<span class="f30-meta-pill">Giá tham khảo: 4.800.000 VNĐ/bộ</span>
+</div>
+<p class="f30-hero-lead">
+                F30 Ultra là mẫu đèn gầm lắp rời thế hệ mới của X-Light, phù hợp cho chủ xe muốn nâng cấp ánh sáng nhưng vẫn hạn chế can thiệp vào cụm đèn chính nguyên bản.
+              </p>
+<p class="f30-hero-lead">
+                Sản phẩm sử dụng cấu hình <strong>2 Cos kết hợp công nghệ Bù Cos</strong>, tạo vùng sáng rộng, tâm sáng đậm và hỗ trợ quan sát tốt hơn khi đi đêm, đường mưa, sương mù hoặc các cung đường thiếu sáng.
+              </p>
+<div class="f30-actions">
+<a class="f30-btn f30-btn-primary" href="tel:19009365">Gọi 1900 9365</a>
+<a class="f30-btn f30-btn-light" href="#f30-tu-van">Đặt lịch tư vấn</a>
+</div>
+</div>
+<div class="f30-price-box">
+<span class="f30-price-label">Giá niêm yết tham khảo</span>
+<span class="f30-price">4.800.000 VNĐ/bộ</span>
+<p class="f30-price-note">Áp dụng cho 3 phiên bản nhiệt màu. Nội dung nguồn ghi giá chưa bao gồm VAT.</p>
+</div>
+</div>
+<div class="f30-hero-stats">
+<div class="f30-stat">
+<span class="f30-stat-value">~75W</span>
+<span class="f30-stat-label">Công suất Cos</span>
+</div>
+<div class="f30-stat">
+<span class="f30-stat-value">~95W</span>
+<span class="f30-stat-label">Công suất Pha</span>
+</div>
+<div class="f30-stat">
+<span class="f30-stat-value">IP68</span>
+<span class="f30-stat-label">Chống nước, chống bụi</span>
+</div>
+<div class="f30-stat">
+<span class="f30-stat-value">2 năm</span>
+<span class="f30-stat-label">Bảo hành chính hãng</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card f30-answer">
+<div class="f30-inner">
+<span class="f30-kicker">Tóm tắt nhanh</span>
+<div class="f30-answer-grid">
+<div class="f30-answer-box">
+<h3 class="f30-answer-title">Thông tin sản phẩm</h3>
+<p class="f30-answer-text">
+                X-Light F30 Ultra là đèn gầm lắp rời ô tô có công suất Cos khoảng 75W, Pha khoảng 95W, đạt chuẩn chống nước IP68, sử dụng tản nhiệt 2 quạt và có tuổi thọ công bố 30.000 giờ.
+              </p>
+</div>
+<div class="f30-answer-box">
+<h3 class="f30-answer-title">Phù hợp với nhu cầu nào?</h3>
+<p class="f30-answer-text">
+                Sản phẩm phù hợp cho xe cần bổ sung ánh sáng khi đi đêm, đi mưa, đi đường trường, đèo núi hoặc muốn lắp đèn gầm giữ zin mà không thay đổi cụm đèn chính.
+              </p>
+</div>
+</div>
+<p class="f30-note">
+            Thông số trong bài dùng để tham khảo khi chọn đèn gầm lắp rời. Hiệu quả thực tế còn phụ thuộc vị trí lắp, cách căn chỉnh góc chiếu và điều kiện vận hành của từng xe.
+          </p>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">1. Đèn gầm lắp rời X-Light F30 Ultra là gì?</h2>
+<p class="f30-text">
+            Đèn gầm lắp rời X-Light F30 Ultra là dòng đèn gầm hướng đến hiệu năng chiếu sáng cao, được thiết kế để lắp bổ sung tại các vị trí thấp ở cản trước xe như hốc gió, hốc biển số hoặc khu vực gầm trước tùy cấu trúc từng dòng xe.
+          </p>
+<p class="f30-text">
+            Điểm đáng chú ý của F30 Ultra là cách bố trí ánh sáng <strong>2 Cos + 1 Bù Cos</strong>. Hai nguồn Cos chính tạo vùng sáng rộng hai bên, trong khi nguồn Bù Cos ở giữa bổ sung vùng tâm sáng hình chữ nhật, giúp mặt đường phía trước rõ hơn và có chiều sâu hơn.
+          </p>
+<div class="f30-grid-4">
+<div class="f30-feature">
+<div class="f30-feature-icon">01</div>
+<h3 class="f30-feature-title">Lắp rời giữ zin</h3>
+<p class="f30-feature-text">Hạn chế can thiệp cụm đèn chính, phù hợp xe muốn bổ sung sáng nhưng vẫn giữ hệ thống nguyên bản.</p>
+</div>
+<div class="f30-feature">
+<div class="f30-feature-icon">02</div>
+<h3 class="f30-feature-title">Vùng sáng rộng</h3>
+<p class="f30-feature-text">Công nghệ Bù Cos cho vùng sáng đậm và rộng, hỗ trợ quan sát 3 đến 4 làn đường trong điều kiện phù hợp.</p>
+</div>
+<div class="f30-feature">
+<div class="f30-feature-icon">03</div>
+<h3 class="f30-feature-title">3 nhiệt màu</h3>
+<p class="f30-feature-text">Có các cấu hình 6500/6500K, 5500/3000K và 3000/3000K để chọn theo nhu cầu sử dụng.</p>
+</div>
+<div class="f30-feature">
+<div class="f30-feature-icon">04</div>
+<h3 class="f30-feature-title">IP68</h3>
+<p class="f30-feature-text">Thiết kế chống nước, chống bụi phù hợp vị trí lắp thấp, thường xuyên gặp nước mưa và bụi đường.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">2. F30 Ultra phù hợp cho những ai?</h2>
+<p class="f30-section-subtitle">
+            Không phải xe nào cũng cần thay cụm đèn chính. Với nhiều chủ xe, lắp thêm đèn gầm rời là cách bổ sung ánh sáng thực tế hơn, đặc biệt khi thường xuyên đi đường tối, đường mưa hoặc cần giữ nguyên kết cấu đèn zin.
+          </p>
+<div class="f30-table-wrap">
+<table class="f30-table"><caption class="f30-table-caption">Bảng 1. Nhu cầu sử dụng và cách F30 Ultra đáp ứng<small>Cập nhật 23/06/2026. Nội dung dùng để khách hàng đối chiếu nhanh trước khi chọn phương án lắp đèn gầm.</small></caption>
+<thead class="f30-table-head">
+<tr class="f30-table-row">
+<th class="f30-table-cell">Nhu cầu thực tế</th>
+<th class="f30-table-cell">F30 Ultra đáp ứng như thế nào?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="f30-table-row">
+<td class="f30-table-cell">Muốn nâng cấp sáng nhưng không đụng sâu vào đèn zin</td>
+<td class="f30-table-cell">Lắp rời tại vị trí gầm hoặc cản trước, hạn chế can thiệp cụm đèn chính.</td>
+</tr>
+<tr class="f30-table-row">
+<td class="f30-table-cell">Cần vùng sáng rộng khi đi trời tối, mưa hoặc sương mù</td>
+<td class="f30-table-cell">Có 3 phiên bản nhiệt màu để chọn: 6500/6500K, 5500/3000K và 3000/3000K.</td>
+</tr>
+<tr class="f30-table-row">
+<td class="f30-table-cell">Chạy đêm nhiều, cần tâm sáng đậm hơn</td>
+<td class="f30-table-cell">Cos khoảng 75W, kết hợp 2 nguồn Cos chính và 1 nguồn Bù Cos ở giữa.</td>
+</tr>
+<tr class="f30-table-row">
+<td class="f30-table-cell">Muốn xe có diện mạo hiện đại hơn</td>
+<td class="f30-table-cell">Đèn lắp rời giúp phần đầu xe nổi bật hơn khi hoàn thiện đúng vị trí và đúng kỹ thuật.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="f30-table-note">Trên từng mẫu xe, vị trí lắp và path lắp đặt cần được kiểm tra trực tiếp để đảm bảo độ chắc chắn và góc chiếu phù hợp.</p>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card f30-highlight">
+<div class="f30-inner">
+<h2 class="f30-section-title">3. Cấu hình ánh sáng của X-Light F30 Ultra</h2>
+<div class="f30-highlight-grid">
+<div class="f30-dark-panel">
+<h3 class="f30-dark-title">Cos khoảng 75W</h3>
+<p class="f30-dark-text">
+                Chế độ chiếu gần của đèn F30 Ultra được tạo thành từ 2 nguồn Cos chính (6+6 chip LED) kết hợp cùng 1 nguồn bù Cos (3 chip LED). Thiết kế này của đèn không chỉ giúp vùng phủ sáng phía trước đầu xe được tỏa rộng, mà vùng tâm sáng còn được bổ sung một vùng sáng đậm và rộng hình chữ nhật, trải rộng lên đến 3 - 4 làn đường, tạo tầm quan sát lớn và thoải mái hơn cho người lái.
+              </p>
+<ul class="f30-dark-list">
+<li class="f30-dark-item">Công suất Cos: khoảng 75W.</li>
+<li class="f30-dark-item">Cấu hình Cos: 6+6+3 chip LED.</li>
+<li class="f30-dark-item">Góc chiếu Bù Cos: khoảng 21°/đèn.</li>
+<li class="f30-dark-item">Vùng sáng hỗ trợ quan sát 3 đến 4 làn đường.</li>
+</ul>
+</div>
+<div class="f30-dark-panel">
+<h3 class="f30-dark-title">Pha khoảng 95W</h3>
+<p class="f30-dark-text">
+                Tại thấu kính trung tâm, F30 Ultra trang bị 3 chip LED cho chế độ Pha. Luồng sáng Pha có độ đậm và độ phủ tốt, hỗ trợ quan sát biển báo, phương tiện và tình huống phía trước khi đi quốc lộ, cao tốc hoặc đường thiếu sáng.
+              </p>
+<ul class="f30-dark-list">
+<li class="f30-dark-item">Công suất Pha: khoảng 95W.</li>
+<li class="f30-dark-item">Cấu hình Pha: 3 chip LED.</li>
+<li class="f30-dark-item">Góc chiếu Pha: khoảng 21°/đèn.</li>
+<li class="f30-dark-item">Vùng sáng hình chữ nhật, rộng và đậm tâm.</li>
+</ul>
+</div>
+</div>
+<p class="f30-note">
+            Khi lắp một cặp đèn trên xe, góc chiếu tổng thể có thể đạt khoảng 42° nếu căn chỉnh đúng. Chủ xe không nên chỉnh đèn quá cao để tránh gây chói phương tiện đi ngược chiều.
+          </p>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">4. 3 phiên bản nhiệt màu cho từng điều kiện di chuyển</h2>
+<p class="f30-section-subtitle">
+            Môi trường di chuyển, thời tiết và thói quen sử dụng xe đều có thể ảnh hưởng đến hiệu quả quan sát của người lái. Hiểu được điều đó, X-Light F30 Ultra được phát triển với 3 phiên bản nhiệt màu khác nhau, giúp người dùng dễ dàng lựa chọn cấu hình ánh sáng phù hợp với nhu cầu sử dụng thực tế.
+          </p>
+<div class="f30-table-wrap">
+<table class="f30-table"><caption class="f30-table-caption">Bảng 2. So sánh 3 phiên bản nhiệt màu của X-Light F30 Ultra<small>Cập nhật 23/06/2026. Nên chọn phiên bản theo điều kiện đường thường đi, không chỉ theo màu ánh sáng đẹp.</small></caption>
+<thead class="f30-table-head">
+<tr class="f30-table-row">
+<th class="f30-table-cell">Phiên bản Cos/Pha</th>
+<th class="f30-table-cell">Đặc điểm ánh sáng</th>
+<th class="f30-table-cell">Phù hợp với nhu cầu</th>
+</tr>
+</thead>
+<tbody>
+<tr class="f30-table-row">
+<td class="f30-table-cell"><strong>6500K/6500K</strong></td>
+<td class="f30-table-cell">Ánh sáng trắng, sắc nét, ngoại hình hiện đại.</td>
+<td class="f30-table-cell">Đường khô, đô thị, cao tốc, chủ xe thích ánh sáng trắng đẹp mắt.</td>
+</tr>
+<tr class="f30-table-row">
+<td class="f30-table-cell"><strong>5500K/3000K</strong></td>
+<td class="f30-table-cell">Cos trắng hơi ngả vàng, Pha vàng.</td>
+<td class="f30-table-cell">Sử dụng đa dụng, đường hỗn hợp, khu vực hay mưa nhẹ hoặc thời tiết thay đổi.</td>
+</tr>
+<tr class="f30-table-row">
+<td class="f30-table-cell"><strong>3000K/3000K</strong></td>
+<td class="f30-table-cell">Ánh sáng vàng ấm.</td>
+<td class="f30-table-cell">Mưa lớn, sương mù, đèo núi, xe dịch vụ hoặc xe đi đường dài.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">5. Tản nhiệt 2 quạt và khả năng chống nước IP68</h2>
+<div class="f30-grid-2">
+<div class="f30-feature">
+<div class="f30-feature-icon">❄</div>
+<h3 class="f30-feature-title">Tản nhiệt chủ động 2 quạt</h3>
+<p class="f30-feature-text">
+                F30 Ultra dùng 2 quạt làm mát chủ động kết hợp các rãnh tản nhiệt ở hai bên hông và dưới thân đèn. Cách thiết kế này hỗ trợ làm mát khu vực chip LED khi đèn hoạt động liên tục.
+              </p>
+</div>
+<div class="f30-feature">
+<div class="f30-feature-icon">💧</div>
+<h3 class="f30-feature-title">Chống nước, chống bụi IP68</h3>
+<p class="f30-feature-text">
+                Với vị trí lắp thấp, đèn thường gặp nước mưa, bùn đất và bụi đường. Chuẩn IP68 giúp bảo vệ linh kiện bên trong, hạn chế nguy cơ hơi nước hoặc bụi xâm nhập trong quá trình sử dụng.
+              </p>
+</div>
+</div>
+<p class="f30-mt-16">
+            Khi xe di chuyển, luồng gió tự nhiên ở khu vực cản trước cũng hỗ trợ làm mát thân đèn. Đây là yếu tố quan trọng với các mẫu đèn công suất cao, đặc biệt trong điều kiện khí hậu nóng hoặc khi xe thường xuyên chạy ban đêm.
+          </p>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">6. Thông số kỹ thuật X-Light F30 Ultra</h2>
+<div class="f30-table-wrap">
+<table class="f30-table"><caption class="f30-table-caption">Bảng 3. Thông số kỹ thuật X-Light F30 Ultra<small>Cập nhật 23/06/2026. Thông số trình bày theo nội dung sản phẩm; hiệu quả thực tế phụ thuộc xe và cách căn chỉnh.</small></caption>
+<thead class="f30-table-head">
+<tr class="f30-table-row">
+<th class="f30-table-cell">Thông số</th>
+<th class="f30-table-cell">Chi tiết</th>
+</tr>
+</thead>
+<tbody>
+<tr class="f30-table-row"><td class="f30-table-cell">Cấu hình Cos</td><td class="f30-table-cell">6+6+3 chip LED</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Cấu hình Pha</td><td class="f30-table-cell">3 chip LED</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Công suất Cos</td><td class="f30-table-cell">Khoảng 75W</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Công suất Pha</td><td class="f30-table-cell">Khoảng 95W</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Góc sáng Bù Cos/đèn</td><td class="f30-table-cell">Khoảng 21°</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Vùng phủ sáng Bù Cos</td><td class="f30-table-cell">Hỗ trợ quan sát 3 - 4 làn đường</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Tản nhiệt</td><td class="f30-table-cell">2 quạt + rãnh tản nhiệt hai bên hông và dưới thân</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Chống nước, chống bụi</td><td class="f30-table-cell">IP68</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Nhiệt màu</td><td class="f30-table-cell">6500/6500K, 5500/3000K, 3000/3000K</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Tuổi thọ công bố</td><td class="f30-table-cell">30.000 giờ</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Bảo hành</td><td class="f30-table-cell">2 năm</td></tr>
+<tr class="f30-table-row"><td class="f30-table-cell">Giá niêm yết</td><td class="f30-table-cell">4.800.000 VNĐ/bộ, chưa bao gồm VAT theo nội dung nguồn</td></tr>
+</tbody>
+</table>
+</div>
+<p class="f30-table-note">Nên kiểm tra lại chính sách giá, công lắp và VAT tại thời điểm đặt lịch vì có thể thay đổi theo chương trình bán hàng.</p>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">7. Lưu ý khi lắp đèn gầm rời F30 Ultra</h2>
+<p class="f30-section-subtitle">
+            Đèn gầm lắp rời cần được thi công đúng kỹ thuật để đạt hiệu quả chiếu sáng và hạn chế ảnh hưởng đến các phương tiện khác trên đường.
+          </p>
+<div class="f30-grid-3">
+<div class="f30-feature">
+<div class="f30-feature-icon">✓</div>
+<h3 class="f30-feature-title">Cố định path chắc chắn</h3>
+<p class="f30-feature-text">Path lắp cần phù hợp vị trí xe, chịu rung tốt và không bị xê dịch khi đi đường xấu.</p>
+</div>
+<div class="f30-feature">
+<div class="f30-feature-icon">✓</div>
+<h3 class="f30-feature-title">Đấu nối điện an toàn</h3>
+<p class="f30-feature-text">Hệ thống dây cần được đi gọn, chống nước và kiểm tra kỹ để đảm bảo độ ổn định khi sử dụng lâu dài.</p>
+</div>
+<div class="f30-feature">
+<div class="f30-feature-icon">✓</div>
+<h3 class="f30-feature-title">Căn chỉnh góc chiếu</h3>
+<p class="f30-feature-text">Không nên chỉnh đèn quá cao hoặc dùng chế độ Pha sai tình huống vì có thể gây chói xe đối diện.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">8. Địa chỉ thi công đèn gầm lắp rời F30 Ultra uy tín</h2>
+<p class="f30-text">
+            Tại hệ thống Auto365, khách hàng sẽ được đội ngũ kỹ thuật viên giàu kinh nghiệm tư vấn nhiệt màu phù hợp nhu cầu, lắp đặt bằng path chuyên dụng, đi dây gọn gàng và căn chỉnh góc chiếu chuẩn kỹ thuật. Điều này giúp đèn X-Light F30 Ultra phát huy hiệu quả chiếu sáng và hạn chế gây chói cho xe đối diện.
+          </p>
+<div class="f30-trust">
+<div class="f30-trust-item">
+<span class="f30-trust-label">Tư vấn đúng nhu cầu</span>
+<p class="f30-trust-text">Chọn nhiệt màu theo điều kiện thường đi: phố, cao tốc, mưa, sương hoặc đèo núi.</p>
+</div>
+<div class="f30-trust-item">
+<span class="f30-trust-label">Thi công đúng kỹ thuật</span>
+<p class="f30-trust-text">Lắp path, đi dây, cố định đèn và kiểm tra hoạt động trước khi bàn giao xe.</p>
+</div>
+<div class="f30-trust-item">
+<span class="f30-trust-label">Hệ thống toàn quốc</span>
+<p class="f30-trust-text">Auto365 có hơn 100 trung tâm tại Hồ Chí Minh, Hà Nội, Đà Nẵng và nhiều tỉnh thành.</p>
+</div>
+<div class="f30-trust-item">
+<span class="f30-trust-label">Bảo hành chính hãng</span>
+<p class="f30-trust-text">Sản phẩm được bảo hành 2 năm; khách hàng nên kiểm tra thông tin kích hoạt sau lắp đặt.</p>
+</div>
+</div>
+<p class="f30-note">
+            Với xe đã độ cản, thay mặt ca lăng hoặc có vị trí gầm đặc biệt, nên kiểm tra thực tế trước khi báo phương án lắp đặt.
+          </p>
+</div>
+</div>
+</section>
+<section class="f30-section" id="f30-tu-van">
+<div class="f30-card">
+<div class="f30-inner">
+<h2 class="f30-section-title">9. Câu hỏi thường gặp về X-Light F30 Ultra</h2>
+<div class="f30-faq">
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Đèn gầm lắp rời F30 Ultra giá bao nhiêu?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">X-Light F30 Ultra có giá niêm yết 4.800.000 VNĐ/bộ, chưa bao gồm VAT theo nội dung nguồn. Giá áp dụng cho cả 3 phiên bản nhiệt màu.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">F30 Ultra bảo hành mấy năm?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">Sản phẩm được bảo hành chính hãng 2 năm. Sau khi lắp đặt, khách hàng nên kiểm tra thông tin kích hoạt bảo hành bằng số seri để đảm bảo quyền lợi.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Lắp đèn gầm rời có ảnh hưởng đèn zin không?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">F30 Ultra được phát triển theo xu hướng lắp đèn gầm giữ zin. Khi thi công đúng kỹ thuật, đèn được bổ sung tại vị trí thấp ở đầu xe và không cần thay thế cụm đèn chính nguyên bản.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Nên chọn nhiệt màu nào khi lắp F30 Ultra?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">Nếu thường đi phố hoặc cao tốc khô ráo, có thể chọn 6500K/6500K. Nếu cần dùng đa dụng, nên cân nhắc 5500K/3000K. Nếu thường đi mưa lớn, sương mù hoặc đèo núi, bản 3000K/3000K sẽ phù hợp hơn.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Công nghệ Bù Cos của F30 Ultra là gì?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">Công nghệ Bù Cos là thiết kế bổ sung một nguồn sáng ở lens trung tâm, dùng 3 chip LED hoạt động cùng hai nguồn Cos chính. Cụm này tạo thêm vùng sáng hình chữ nhật ở tâm Cos, giúp mở rộng tầm nhìn gần của người lái.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Đèn F30 Ultra lắp ở vị trí nào trên xe?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">X-Light F30 Ultra được thiết kế để lắp đặt tại một số vị trí thấp ở phía trước đầu xe như hốc gió, hốc biển số... của ô tô. Vị trí cụ thể phụ thuộc thiết kế từng dòng xe.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Đèn công suất cao có nhanh nóng không?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">F30 Ultra có hệ thống tản nhiệt 2 quạt kết hợp rãnh tản nhiệt trên thân đèn. Khi xe di chuyển, luồng gió tự nhiên tại khu vực gầm cũng hỗ trợ làm mát, giúp đèn hoạt động ổn định hơn.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">F30 Ultra có chống nước, chống bụi tốt không?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">Có. Đèn được thiết kế với chuẩn IP68, thân vỏ khép kín và gioăng cao su chuyên dụng để hạn chế bụi, nước xâm nhập trong quá trình sử dụng.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Có nên tự mua F30 Ultra về lắp tại nhà không?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">Không nên. Việc lắp đèn gầm rời cần hiểu về điện ô tô, path cố định, chống nước dây điện và căn chỉnh góc chiếu. Chủ xe nên thi công tại đơn vị chuyên về nâng cấp ánh sáng ô tô để đảm bảo an toàn.</p>
+</div>
+</details>
+<details class="f30-faq-item">
+<summary class="f30-faq-question">Lắp F30 Ultra có gây chói xe đối diện không?</summary>
+<div class="f30-faq-answer">
+<p class="f30-faq-p">Nếu đèn được lắp đúng vị trí và căn chỉnh góc chiếu phù hợp, khả năng gây chói sẽ được hạn chế. Chủ xe không nên tự ý nâng góc chiếu quá cao hoặc bật Pha trong khu vực đông phương tiện.</p>
+</div>
+</details>
+</div>
+</div>
+</div>
+</section>
+<section class="f30-section">
+<div class="f30-cta">
+<div class="f30-cta-inner">
+<div>
+<h2 class="f30-cta-title">Cần tư vấn nhiệt màu F30 Ultra phù hợp với xe của bạn?</h2>
+<p class="f30-cta-text">
+              Gửi thông tin dòng xe và điều kiện thường di chuyển, Auto365 sẽ tư vấn phiên bản nhiệt màu, vị trí lắp và phương án thi công phù hợp.
+            </p>
+</div>
+<div class="f30-cta-actions">
+<a class="f30-btn f30-btn-primary" href="tel:19009365">Gọi 1900 9365</a>
+<a class="f30-btn f30-btn-light" href="https://auto365.vn/lien-he">Liên hệ Auto365</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
