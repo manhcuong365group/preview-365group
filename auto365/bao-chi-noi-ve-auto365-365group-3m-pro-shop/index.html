@@ -261,6 +261,18 @@
             --mth-soft: #f8fafc;
             --mth-radius: clamp(12px, 1.4vw, 18px);
             --mth-shadow: 0 10px 30px rgba(16, 24, 40, 0.06);
+            
+            /* Mini-Bootstrap Design Tokens */
+            --mth-spacer: 1rem; /* 16px */
+            --mth-gap-sm: calc(var(--mth-spacer) * 0.5); /* 8px */
+            --mth-gap-md: var(--mth-spacer); /* 16px */
+            --mth-gap-lg: calc(var(--mth-spacer) * 1.5); /* 24px */
+            --mth-gap-xl: calc(var(--mth-spacer) * 2); /* 32px */
+            
+            --mth-margin-sm: var(--mth-gap-sm);
+            --mth-margin-md: var(--mth-gap-md);
+            --mth-margin-lg: var(--mth-gap-lg);
+            --mth-margin-xl: var(--mth-gap-xl);
 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: var(--mth-ink);
@@ -579,7 +591,7 @@
 
         /* Layout Section Spacers */
         .media-trust-hub .video-section-container {
-            margin-bottom: 30px;
+            margin-bottom: var(--mth-margin-xl);
         }
 
         .media-trust-hub .cta-brand-link {
@@ -590,7 +602,7 @@
 
         .media-trust-hub .cta-explain-highlight {
             display: block;
-            margin-top: 12px;
+            margin-top: var(--mth-gap-sm);
             color: #0369a1;
             font-weight: 600;
         }
@@ -599,13 +611,13 @@
         .media-trust-hub .media-video-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: clamp(16px, 2vw, 28px);
-            margin-bottom: 35px;
+            gap: var(--mth-gap-lg);
+            margin-bottom: var(--mth-margin-xl);
         }
 
         @media (max-width: 900px) {
             .media-trust-hub .video-section-container {
-                margin-bottom: 20px;
+                margin-bottom: var(--mth-margin-md);
             }
 
             .media-trust-hub .media-video-grid {
