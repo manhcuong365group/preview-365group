@@ -736,6 +736,7 @@
   padding-top: 56.25%;
   overflow: hidden;
   background: #000;
+  cursor: pointer;
 }
 
 .a365-video-ratio iframe,
@@ -750,6 +751,41 @@
 
 .a365-video-ratio img {
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.a365-video-card:hover .a365-video-ratio img {
+  transform: scale(1.05);
+}
+
+/* Nút Play đè lên ảnh */
+.a365-video-ratio .play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(211, 47, 47, 0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.a365-video-ratio .play-overlay svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-left: 2px;
+}
+
+.a365-video-card:hover .play-overlay {
+  background: #b71c1c;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .a365-video-info {
