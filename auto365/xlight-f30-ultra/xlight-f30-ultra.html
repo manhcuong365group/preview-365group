@@ -30,7 +30,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     color: var(--f30-text);
     font-size: 16px;
-    line-height: 1.72;
+    line-height: 1.55;
     font-weight: 400;
     letter-spacing: -.01em;
     -webkit-font-smoothing: antialiased;
@@ -50,7 +50,7 @@
   }
 
   .f30-page .f30-section {
-    margin: 28px 0;
+    margin: 18px 0;
   }
 
   .f30-page .f30-card {
@@ -62,7 +62,7 @@
   }
 
   .f30-page .f30-inner {
-    padding: 28px;
+    padding: 20px;
   }
 
   .f30-page .f30-kicker {
@@ -104,7 +104,7 @@
     max-width: 880px;
     color: var(--f30-muted);
     font-size: 16px;
-    line-height: 1.75;
+    line-height: 1.55;
     font-weight: 400;
   }
 
@@ -112,7 +112,7 @@
     margin: 0 0 14px;
     color: var(--f30-text);
     font-size: 16px;
-    line-height: 1.78;
+    line-height: 1.58;
     font-weight: 400;
   }
 
@@ -515,7 +515,7 @@
     width: 100% !important;
     overflow-x: auto !important;
     border-radius: 18px !important;
-    border: 1px solid var(--f30-line) !important;
+    border: 1px solid #cbd5e1 !important;
     background: #ffffff !important;
     box-shadow: 0 4px 20px rgba(15, 23, 42, .02) !important;
     -webkit-overflow-scrolling: touch !important;
@@ -536,16 +536,21 @@
   .f30-page .f30-table-cell,
   .f30-page table.f30-table th,
   .f30-page table.f30-table td {
-    padding: 16px 20px !important;
-    border-bottom: 1px solid #f1f5f9 !important;
+    padding: 10px 14px !important;
+    border-bottom: 1px solid #cbd5e1 !important;
     border-top: 0 !important;
     border-left: 0 !important;
-    border-right: 0 !important;
+    border-right: 1px solid #cbd5e1 !important;
     font-size: 15px !important;
     line-height: 1.6 !important;
     vertical-align: middle !important;
     text-align: left !important;
     transition: background-color .2s ease !important;
+  }
+
+  .f30-page table.f30-table th:last-child,
+  .f30-page table.f30-table td:last-child {
+    border-right: 0 !important;
   }
 
   /* Định dạng dòng đầu tiêu đề (Thanh Navy) */
@@ -562,7 +567,7 @@
     font-size: 13.5px !important;
     text-transform: uppercase !important;
     letter-spacing: 0.04em !important;
-    padding: 18px 20px !important;
+    padding: 12px 14px !important;
     text-align: left !important;
     border: 0 !important;
   }
@@ -625,27 +630,47 @@
     color: #172033 !important;
   }
 
-  /* Đặc tả cột cho Bảng 2 (Nhiệt màu - f30-table-temp) */
-  .f30-page .f30-table-temp th:first-child,
-  .f30-page .f30-table-temp td:first-child {
-    width: 30% !important;
-    /* Cân đối cột 1 */
+  /* Đặc tả cột cho Bảng Nhiệt màu - f30-table-temp */
+  .f30-page table.f30-table-temp thead th.f30-table-cell, .f30-table-temp th,
+  .f30-page .f30-table-temp td {
+    width: 33.33% !important;
     text-align: center !important;
-  }
-
-  .f30-page .f30-table-temp th:nth-child(2),
-  .f30-page .f30-table-temp td:nth-child(2) {
-    width: 35% !important;
-    /* Cân đối cột 2 */
-    text-align: left !important;
+    vertical-align: top !important;
+    border-right: 1px solid #cbd5e1 !important;
   }
 
   .f30-page .f30-table-temp th:last-child,
   .f30-page .f30-table-temp td:last-child {
-    width: 35% !important;
-    /* Cân đối cột 3 */
-    text-align: left !important;
-    color: #172033 !important;
+    border-right: none !important;
+  }
+
+  /* Màu nền dịu nhẹ theo tông màu của từng cột */
+  .f30-page .f30-table-temp td:nth-child(1) {
+    background-color: #f0f9ff !important;
+    /* Cool blue */
+  }
+
+  .f30-page .f30-table-temp td:nth-child(2) {
+    background-color: #fdfbf7 !important;
+    /* Neutral warm */
+  }
+
+  .f30-page .f30-table-temp td:nth-child(3) {
+    background-color: #fffaf5 !important;
+    /* Warm orange */
+  }
+
+  /* Hover tăng đậm màu nền theo từng cột */
+  .f30-page .f30-table-temp tr:hover td:nth-child(1) {
+    background-color: #e0f2fe !important;
+  }
+
+  .f30-page .f30-table-temp tr:hover td:nth-child(2) {
+    background-color: #fef3c7 !important;
+  }
+
+  .f30-page .f30-table-temp tr:hover td:nth-child(3) {
+    background-color: #ffedd5 !important;
   }
 
   /* Đặc tả cột cho Bảng 3 (Thông số - f30-table-spec) */
@@ -958,12 +983,21 @@
     .f30-page .f30-cta-actions {
       justify-content: flex-start;
     }
+
+    .f30-page .f30-feature {
+      padding: 16px 20px;
+    }
+
+    .f30-page .f30-grid-2,
+    .f30-page .f30-grid-3 {
+      gap: 12px;
+    }
   }
 
   @media (max-width: 640px) {
     .f30-page {
       font-size: 15px;
-      line-height: 1.68;
+      line-height: 1.5;
     }
 
     .f30-page .f30-wrap {
@@ -971,7 +1005,7 @@
     }
 
     .f30-page .f30-section {
-      margin: 20px 0;
+      margin: 12px 0;
     }
 
     .f30-page .f30-hero {
@@ -981,7 +1015,7 @@
     .f30-page .f30-hero-inner,
     .f30-page .f30-inner,
     .f30-page .f30-cta-inner {
-      padding: 22px 18px;
+      padding: 16px 12px;
     }
 
     .f30-page .f30-title {
@@ -997,7 +1031,7 @@
     .f30-page .f30-text,
     .f30-page .f30-section-subtitle {
       font-size: 15px;
-      line-height: 1.72;
+      line-height: 1.52;
     }
 
     .f30-page .f30-actions,
@@ -1091,7 +1125,7 @@
     background: #f8fafc !important;
     color: #334155 !important;
     border-bottom: 1px solid var(--f30-line) !important;
-    text-align: left !important;
+    text-align: center !important;
     font-size: 14px !important;
     line-height: 1.5 !important;
     font-weight: 600 !important;
@@ -1255,7 +1289,8 @@
                 <span class="f30-meta-pill">Giá tham khảo: 4.800.000 VNĐ/bộ</span>
               </div>
               <p class="f30-hero-lead">
-                F30 Ultra là mẫu đèn gầm lắp rời thế hệ mới của X-Light, phù hợp cho chủ xe muốn nâng cấp ánh sáng nhưng
+                F30 Ultra là mẫu đèn gầm dạng rời thế hệ mới của X-Light, phù hợp cho chủ xe muốn nâng cấp ánh sáng
+                nhưng
                 vẫn hạn chế can thiệp vào cụm đèn chính nguyên bản.
               </p>
               <p class="f30-hero-lead">
@@ -1302,8 +1337,8 @@
             <div class="f30-answer-box">
               <h3 class="f30-answer-title">Thông tin sản phẩm</h3>
               <p class="f30-answer-text">
-                X-Light F30 Ultra là đèn gầm lắp rời ô tô có công suất Cos khoảng 75W, Pha khoảng 95W, đạt chuẩn chống
-                nước IP68, sử dụng tản nhiệt 2 quạt và có tuổi thọ công bố 30.000 giờ.
+                X-Light F30 Ultra là đèn gầm dạng rời ô tô có công suất Cos khoảng 75W, Pha khoảng 95W, đạt chuẩn chống
+                nước IP68, sử dụng tản nhiệt 2 quạt và có tuổi thọ công bố 30.000 giờ (theo công bố nhà sản xuất).
               </p>
             </div>
             <div class="f30-answer-box">
@@ -1315,7 +1350,7 @@
             </div>
           </div>
           <p class="f30-note">
-            Thông số trong bài dùng để tham khảo khi chọn đèn gầm lắp rời. Hiệu quả thực tế còn phụ thuộc vị trí lắp,
+            Thông số trong bài dùng để tham khảo khi chọn đèn gầm dạng rời. Hiệu quả thực tế còn phụ thuộc vị trí lắp,
             cách căn chỉnh góc chiếu và điều kiện vận hành của từng xe.
           </p>
         </div>
@@ -1324,9 +1359,9 @@
     <section class="f30-section">
       <div class="f30-card">
         <div class="f30-inner">
-          <h2 class="f30-section-title">1. Đèn gầm lắp rời X-Light F30 Ultra là gì?</h2>
+          <h2 class="f30-section-title">1. Đèn gầm dạng rời X-Light F30 Ultra là gì?</h2>
           <p class="f30-text">
-            Đèn gầm lắp rời X-Light F30 Ultra là dòng đèn gầm hướng đến hiệu năng chiếu sáng cao, được thiết kế để lắp
+            Đèn gầm dạng rời X-Light F30 Ultra là dòng đèn gầm hướng đến hiệu năng chiếu sáng cao, được thiết kế để lắp
             bổ sung tại các vị trí thấp ở cản trước xe như hốc gió, hốc biển số hoặc khu vực gầm trước tùy cấu trúc từng
             dòng xe.
           </p>
@@ -1398,10 +1433,7 @@
             </div>
           </div>
           <figure class="f30-media-figure f30-mt-16" style="max-width: 680px; margin-left: auto; margin-right: auto;">
-            <!-- <img src="[URL]" alt="anh-tron-bo-san-pham-x-light-f30-ultra-va-hop-phu-kien"> -->
-            <div class="f30-media-placeholder">
-              [Chờ cập nhật ảnh trọn bộ sản phẩm và hộp phụ kiện]
-            </div>
+            <img src="hinh/x-light-f30-ultra-1.png" alt="Ảnh trọn bộ sản phẩm X-Light F30 Ultra và phụ kiện đi kèm">
             <figcaption class="f30-media-caption" style="text-align: center;">Ảnh trọn bộ sản phẩm X-Light F30 Ultra và
               phụ kiện đi kèm</figcaption>
           </figure>
@@ -1413,12 +1445,13 @@
         <div class="f30-inner">
           <h2 class="f30-section-title">2. F30 Ultra phù hợp cho những ai?</h2>
           <p class="f30-section-subtitle">
-            Không phải xe nào cũng cần thay cụm đèn chính. Với nhiều chủ xe, lắp thêm đèn gầm rời là cách bổ sung ánh
+            Không phải xe nào cũng cần thay cụm đèn chính. Với nhiều chủ xe, lắp thêm đèn gầm dạng rời là cách bổ sung
+            ánh
             sáng thực tế hơn, đặc biệt khi thường xuyên đi đường tối, đường mưa hoặc cần giữ nguyên kết cấu đèn zin.
           </p>
           <div class="f30-table-wrap">
             <table class="f30-table f30-table-demand">
-              <caption class="f30-table-caption">Bảng 1. Nhu cầu sử dụng và cách F30 Ultra đáp ứng<small>Nội dung dùng
+              <caption class="f30-table-caption">Bảng Nhu cầu sử dụng và cách F30 Ultra đáp ứng<small>Nội dung dùng
                   để khách hàng đối chiếu nhanh trước khi chọn phương án lắp đèn gầm.</small></caption>
               <thead class="f30-table-head">
                 <tr class="f30-table-row">
@@ -1449,14 +1482,18 @@
               </tbody>
             </table>
           </div>
-          <p class="f30-table-note">Trên từng mẫu xe, vị trí lắp và path (còn gọi là pát) lắp đặt cần được kiểm tra trực
+          <p class="f30-table-note">Trên từng mẫu xe, vị trí lắp và pát lắp đặt cần được kiểm tra trực
             tiếp để đảm bảo độ chắc chắn và góc chiếu phù hợp.</p>
-          <div class="f30-mt-16" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 24px; border-radius: 18px; background: linear-gradient(135deg, rgba(0, 136, 207, 0.06), rgba(72, 179, 255, 0.06)); border: 1px dashed rgba(0, 136, 207, 0.35);">
+          <div class="f30-mt-16"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 24px; border-radius: 18px; background: linear-gradient(135deg, rgba(0, 136, 207, 0.06), rgba(72, 179, 255, 0.06)); border: 1px dashed rgba(0, 136, 207, 0.35);">
             <div style="flex: 1; min-width: 280px;">
-              <h4 style="margin: 0 0 4px; font-size: 16px; font-weight: 650; color: var(--f30-text);">Bạn muốn xem thử ánh sáng thực tế trên dòng xe của mình?</h4>
-              <p style="margin: 0; font-size: 13.5px; color: var(--f30-muted);">Liên hệ hotline hoặc đăng ký để nhận tư vấn lắp đặt từ Auto365.</p>
+              <h4 style="margin: 0 0 4px; font-size: 16px; font-weight: 650; color: var(--f30-text);">Bạn muốn xem thử
+                ánh sáng thực tế trên dòng xe của mình?</h4>
+              <p style="margin: 0; font-size: 13.5px; color: var(--f30-muted);">Liên hệ hotline hoặc đăng ký để nhận tư
+                vấn lắp đặt từ Auto365.</p>
             </div>
-            <a class="f30-btn f30-btn-primary" href="tel:19009365" style="min-height: 40px; padding: 8px 18px; font-size: 14px;">Đặt lịch ngay</a>
+            <a class="f30-btn f30-btn-primary" href="tel:19009365"
+              style="min-height: 40px; padding: 8px 18px; font-size: 14px;">Đặt lịch ngay</a>
           </div>
         </div>
       </div>
@@ -1471,21 +1508,19 @@
               <p class="f30-dark-text">
                 Chế độ chiếu gần của đèn F30 Ultra được tạo thành từ 2 nguồn Cos chính (6+6 chip LED) kết hợp cùng 1
                 nguồn bù Cos (3 chip LED). Thiết kế này của đèn không chỉ giúp vùng phủ sáng phía trước đầu xe được tỏa
-                rộng, mà vùng tâm sáng còn được bổ sung một vùng sáng đậm và rộng hình chữ nhật, trải rộng lên đến 3 - 4
-                làn đường, tạo tầm quan sát lớn và thoải mái hơn cho người lái.
+                rộng, mà vùng tâm sáng còn được bổ sung một vùng sáng đậm và rộng hình chữ nhật, hỗ trợ mở rộng vùng
+                quan sát phía trước và hai bên đầu xe khi căn chỉnh đúng, tạo tầm quan sát lớn và thoải mái hơn cho
+                người lái.
               </p>
               <ul class="f30-dark-list">
                 <li class="f30-dark-item">Công suất Cos: khoảng 75W.</li>
                 <li class="f30-dark-item">Cấu hình Cos: 6+6+3 chip LED.</li>
-                <li class="f30-dark-item">Góc chiếu Bù Cos: khoảng 21°/đèn.</li>
-                <li class="f30-dark-item">Vùng sáng hỗ trợ quan sát 3 đến 4 làn đường.</li>
+                <li class="f30-dark-item">Góc chiếu Bù Cos: khoảng 21°/đèn (theo công bố nhà sản xuất).</li>
+                <li class="f30-dark-item">Vùng sáng hỗ trợ mở rộng vùng quan sát phía trước và hai bên đầu xe khi căn
+                  chỉnh đúng.</li>
               </ul>
-              <figure class="f30-media-figure f30-mt-16" style="border-color: rgba(255,255,255,0.15);">
-                <!-- <img src="[URL]" alt="anh-cos-thuc-te-den-gam-dang-roi-x-light-f30-ultra-ban-dem"> -->
-                <div class="f30-media-placeholder"
-                  style="background: linear-gradient(135deg, #1d2a3d, #152033); color: rgba(255,255,255,0.8); min-height: 150px;">
-                  [Chờ cập nhật ảnh mặt cắt Cos thực tế ban đêm]
-                </div>
+              <figure class="f30-media-figure f30-mt-16" style="border-color: rgba(255,255,255,0.15); background: transparent;">
+                <img src="hinh/x-light-f30-ultra-2.jpg" alt="Ảnh Cos thực tế đèn gầm dạng rời X-Light F30 Ultra ban đêm">
                 <figcaption class="f30-media-caption" style="color: rgba(255,255,255,0.7); text-align: center;">Ảnh Cos
                   thực tế đèn gầm dạng rời X-Light F30 Ultra ban đêm</figcaption>
               </figure>
@@ -1493,23 +1528,22 @@
             <div class="f30-dark-panel">
               <h3 class="f30-dark-title">Pha khoảng 95W</h3>
               <p class="f30-dark-text">
-                Tại thấu kính trung tâm, F30 Ultra trang bị 3 chip LED cho chế độ Pha, tạo ra luồng sáng mạnh, đậm tâm
-                và có độ phủ rộng. Nhờ góc chiếu khoảng 21° mỗi đèn, ánh sáng được tập trung hiệu quả, hỗ trợ quan sát
+                Tại thấu kính trung tâm, đèn gầm dạng rời X-Light F30 Ultra trang bị 3 chip LED cho chế độ Pha, tạo ra
+                luồng sáng mạnh, đậm tâm
+                và có độ phủ rộng. Nhờ góc chiếu khoảng 21° mỗi đèn (theo công bố nhà sản xuất), ánh sáng chiếu xa được
+                tập trung
+                hiệu quả, hỗ trợ quan sát
                 biển báo, phương tiện và các tình huống phía trước từ khoảng cách xa khi di chuyển trên cao tốc, quốc lộ
                 hoặc các cung đường thiếu sáng.
               </p>
               <ul class="f30-dark-list">
                 <li class="f30-dark-item">Công suất Pha: khoảng 95W.</li>
                 <li class="f30-dark-item">Cấu hình Pha: 3 chip LED.</li>
-                <li class="f30-dark-item">Góc chiếu Pha: khoảng 21°/đèn.</li>
-                <li class="f30-dark-item">Vùng sáng rộng, đậm tâm và chiếu xa hiệu quả.</li>
+                <li class="f30-dark-item">Góc chiếu Pha: khoảng 21°/đèn (theo công bố nhà sản xuất).</li>
+                <li class="f30-dark-item">Vùng sáng pha hình chữ nhật, toả rộng, đậm tâm và chiếu xa hiệu quả.</li>
               </ul>
-              <figure class="f30-media-figure f30-mt-16" style="border-color: rgba(255,255,255,0.15);">
-                <!-- <img src="[URL]" alt="anh-pha-thuc-te-den-gam-dang-roi-x-light-f30-ultra-ban-dem"> -->
-                <div class="f30-media-placeholder"
-                  style="background: linear-gradient(135deg, #1d2a3d, #152033); color: rgba(255,255,255,0.8); min-height: 150px;">
-                  [Chờ cập nhật ảnh mặt cắt Pha thực tế ban đêm]
-                </div>
+              <figure class="f30-media-figure f30-mt-16" style="border-color: rgba(255,255,255,0.15); background: transparent;">
+                <img src="hinh/x-light-f30-ultra-3.jpg" alt="Ảnh Pha thực tế đèn gầm dạng rời X-Light F30 Ultra ban đêm">
                 <figcaption class="f30-media-caption" style="color: rgba(255,255,255,0.7); text-align: center;">Ảnh Pha
                   thực tế đèn gầm dạng rời X-Light F30 Ultra ban đêm</figcaption>
               </figure>
@@ -1533,43 +1567,41 @@
           </p>
           <div class="f30-table-wrap">
             <table class="f30-table f30-table-temp">
-              <caption class="f30-table-caption">Bảng 2. So sánh 3 phiên bản nhiệt màu của X-Light F30 Ultra<small>Nên
+              <caption class="f30-table-caption">Bảng So sánh 3 phiên bản nhiệt màu của X-Light F30 Ultra<small>Nên
                   chọn phiên bản theo điều kiện đường thường đi, không chỉ theo màu ánh sáng đẹp.</small></caption>
               <thead class="f30-table-head">
                 <tr class="f30-table-row">
-                  <th class="f30-table-cell">Phiên bản Cos/Pha</th>
-                  <th class="f30-table-cell">Đặc điểm ánh sáng</th>
-                  <th class="f30-table-cell">Phù hợp với nhu cầu</th>
+                  <th class="f30-table-cell"><span class="f30-temp-badge f30-temp-6500">6500K/6500K</span></th>
+                  <th class="f30-table-cell"><span class="f30-temp-badge f30-temp-5500-3000">5500K/3000K</span></th>
+                  <th class="f30-table-cell"><span class="f30-temp-badge f30-temp-3000">3000K/3000K</span></th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="f30-table-row">
-                  <td class="f30-table-cell"><span class="f30-temp-badge f30-temp-6500">6500K/6500K</span></td>
-                  <td class="f30-table-cell">Ánh sáng trắng, sắc nét, ngoại hình hiện đại.</td>
-                  <td class="f30-table-cell">Đường khô, đô thị, cao tốc, chủ xe thích ánh sáng trắng đẹp mắt.</td>
+                  <td class="f30-table-cell">
+                    Ánh sáng trắng sắc nét, hiện đại; tối ưu cho đường khô ráo, đô thị, cao tốc.
+                  </td>
+                  <td class="f30-table-cell">
+                    Cos trắng ngả vàng, Pha vàng đa dụng; thích hợp cho đường hỗn hợp, mưa nhẹ.
+                  </td>
+                  <td class="f30-table-cell">
+                    Ánh sáng vàng ấm bám đường tốt; chuyên dụng khi đi mưa lớn, sương mù, đèo núi.
+                  </td>
                 </tr>
                 <tr class="f30-table-row">
-                  <td class="f30-table-cell"><span class="f30-temp-badge f30-temp-5500-3000">5500K/3000K</span></td>
-                  <td class="f30-table-cell">Cos trắng hơi ngả vàng, Pha vàng.</td>
-                  <td class="f30-table-cell">Sử dụng đa dụng, đường hỗn hợp, khu vực hay mưa nhẹ hoặc thời tiết thay
-                    đổi.</td>
-                </tr>
-                <tr class="f30-table-row">
-                  <td class="f30-table-cell"><span class="f30-temp-badge f30-temp-3000">3000K/3000K</span></td>
-                  <td class="f30-table-cell">Ánh sáng vàng ấm.</td>
-                  <td class="f30-table-cell">Mưa lớn, sương mù, đèo núi, xe dịch vụ hoặc xe đi đường dài.</td>
+                  <td class="f30-table-cell" style="padding: 8px !important;">
+                    <img src="hinh/x-light-f30-ultra-4.jpg" alt="Ánh sáng phiên bản 6500K" style="width: 100%; max-width: 100%; display: block; border-radius: 12px; margin: 0 auto;">
+                  </td>
+                  <td class="f30-table-cell" style="padding: 8px !important;">
+                    <img src="hinh/x-light-f30-ultra-5.jpg" alt="Ánh sáng phiên bản 5500K/3000K" style="width: 100%; max-width: 100%; display: block; border-radius: 12px; margin: 0 auto;">
+                  </td>
+                  <td class="f30-table-cell" style="padding: 8px !important;">
+                    <img src="hinh/x-light-f30-ultra-6.jpg" alt="Ánh sáng phiên bản 3000K" style="width: 100%; max-width: 100%; display: block; border-radius: 12px; margin: 0 auto;">
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <figure class="f30-media-figure f30-mt-16" style="max-width: 680px; margin-left: auto; margin-right: auto;">
-            <!-- <img src="[URL]" alt="anh-anh-sang-thuc-te-khi-di-duong-mua-suong-mu"> -->
-            <div class="f30-media-placeholder">
-              [Chờ cập nhật ảnh ánh sáng thực tế đi đường mưa, sương mù]
-            </div>
-            <figcaption class="f30-media-caption" style="text-align: center;">Ảnh ánh sáng thực tế khi di chuyển trong
-              điều kiện mưa sương</figcaption>
-          </figure>
         </div>
       </div>
     </section>
@@ -1612,10 +1644,7 @@
             </div>
           </div>
           <figure class="f30-media-figure f30-mt-16" style="max-width: 680px; margin-left: auto; margin-right: auto;">
-            <!-- <img src="[URL]" alt="anh-can-canh-he-thong-tan-nhiet-2-quat-lam-mat"> -->
-            <div class="f30-media-placeholder">
-              [Chờ cập nhật ảnh chi tiết thiết kế tản nhiệt quạt làm mát]
-            </div>
+            <img src="hinh/x-light-f30-ultra-7.jpg" alt="Ảnh cận cảnh hệ thống tản nhiệt 2 quạt và cấu trúc hợp kim nhôm">
             <figcaption class="f30-media-caption" style="text-align: center;">Ảnh cận cảnh hệ thống tản nhiệt 2 quạt và
               cấu trúc hợp kim nhôm</figcaption>
           </figure>
@@ -1633,7 +1662,7 @@
           <h2 class="f30-section-title">6. Thông số kỹ thuật X-Light F30 Ultra</h2>
           <div class="f30-table-wrap">
             <table class="f30-table f30-table-spec">
-              <caption class="f30-table-caption">Bảng 3. Thông số kỹ thuật X-Light F30 Ultra<small>Tháng 06/2026. Thông
+              <caption class="f30-table-caption">Bảng Thông số kỹ thuật X-Light F30 Ultra<small>Tháng 06/2026. Thông
                   số trình bày theo nội dung sản phẩm; hiệu quả thực tế phụ thuộc xe và cách căn chỉnh.</small>
               </caption>
               <thead class="f30-table-head">
@@ -1661,11 +1690,12 @@
                 </tr>
                 <tr class="f30-table-row">
                   <td class="f30-table-cell">Góc sáng Bù Cos/đèn</td>
-                  <td class="f30-table-cell">Khoảng 21°</td>
+                  <td class="f30-table-cell">Khoảng 21° (theo công bố nhà sản xuất)</td>
                 </tr>
                 <tr class="f30-table-row">
                   <td class="f30-table-cell">Vùng phủ sáng Bù Cos</td>
-                  <td class="f30-table-cell">Hỗ trợ quan sát 3 - 4 làn đường</td>
+                  <td class="f30-table-cell">Hỗ trợ mở rộng vùng quan sát phía trước và hai bên đầu xe khi căn chỉnh
+                    đúng</td>
                 </tr>
                 <tr class="f30-table-row">
                   <td class="f30-table-cell">Tản nhiệt</td>
@@ -1681,7 +1711,7 @@
                 </tr>
                 <tr class="f30-table-row">
                   <td class="f30-table-cell">Tuổi thọ công bố</td>
-                  <td class="f30-table-cell">30.000 giờ</td>
+                  <td class="f30-table-cell">30.000 giờ (theo công bố nhà sản xuất)</td>
                 </tr>
                 <tr class="f30-table-row">
                   <td class="f30-table-cell">Bảo hành</td>
@@ -1696,12 +1726,16 @@
           </div>
           <p class="f30-table-note">Nên kiểm tra lại chính sách giá, công lắp và VAT tại thời điểm đặt lịch vì có thể
             thay đổi theo chương trình bán hàng.</p>
-          <div class="f30-mt-16" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 24px; border-radius: 18px; background: linear-gradient(135deg, rgba(0, 136, 207, 0.06), rgba(72, 179, 255, 0.06)); border: 1px dashed rgba(0, 136, 207, 0.35);">
+          <div class="f30-mt-16"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 24px; border-radius: 18px; background: linear-gradient(135deg, rgba(0, 136, 207, 0.06), rgba(72, 179, 255, 0.06)); border: 1px dashed rgba(0, 136, 207, 0.35);">
             <div style="flex: 1; min-width: 280px;">
-              <h4 style="margin: 0 0 4px; font-size: 16px; font-weight: 650; color: var(--f30-text);">Nhận báo giá trọn gói lắp đặt cho xe của bạn?</h4>
-              <p style="margin: 0; font-size: 13.5px; color: var(--f30-muted);">Giá trên là giá niêm yết tham khảo chưa bao gồm các phụ kiện gá độ tùy xe.</p>
+              <h4 style="margin: 0 0 4px; font-size: 16px; font-weight: 650; color: var(--f30-text);">Nhận báo giá trọn
+                gói lắp đặt cho xe của bạn?</h4>
+              <p style="margin: 0; font-size: 13.5px; color: var(--f30-muted);">Giá trên là giá niêm yết tham khảo chưa
+                bao gồm các phụ kiện gá độ tùy xe.</p>
             </div>
-            <a class="f30-btn f30-btn-primary" href="tel:19009365" style="min-height: 40px; padding: 8px 18px; font-size: 14px;">Nhận báo giá ngay</a>
+            <a class="f30-btn f30-btn-primary" href="tel:19009365"
+              style="min-height: 40px; padding: 8px 18px; font-size: 14px;">Nhận báo giá ngay</a>
           </div>
         </div>
       </div>
@@ -1709,7 +1743,7 @@
     <section class="f30-section">
       <div class="f30-card">
         <div class="f30-inner">
-          <h2 class="f30-section-title">7. Lưu ý khi lắp đèn gầm rời F30 Ultra</h2>
+          <h2 class="f30-section-title">7. Lưu ý khi lắp đèn gầm dạng rời F30 Ultra</h2>
           <p class="f30-section-subtitle">
             Đèn gầm lắp rời cần được thi công đúng kỹ thuật để đạt hiệu quả chiếu sáng và hạn chế ảnh hưởng đến các
             phương tiện khác trên đường.
@@ -1724,9 +1758,9 @@
                       d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                   </svg>
                 </div>
-                <h3 class="f30-feature-title">Cố định chân gá chắc chắn</h3>
+                <h3 class="f30-feature-title">Cố định pát chắc chắn</h3>
               </div>
-              <p class="f30-feature-text">Chân gá/pát lắp cần phù hợp vị trí xe, chịu rung tốt và không bị xê dịch khi
+              <p class="f30-feature-text">Pát lắp cần phù hợp vị trí xe, chịu rung tốt và không bị xê dịch khi
                 đi đường xấu.</p>
             </div>
             <div class="f30-feature">
@@ -1765,11 +1799,8 @@
             </div>
           </div>
           <figure class="f30-media-figure f30-mt-16" style="max-width: 680px; margin-left: auto; margin-right: auto;">
-            <!-- <img src="[URL]" alt="anh-lap-dat-thuc-te-den-gam-dang-roi-x-light-f30-ultra"> -->
-            <div class="f30-media-placeholder">
-              [Chờ cập nhật ảnh lắp đặt thực tế trên xe]
-            </div>
-            <figcaption class="f30-media-caption" style="text-align: center;">Ảnh lắp đặt thực tế của đèn gầm rời
+            <img src="hinh/x-light-f30-ultra-8.jpg" alt="Ảnh lắp đặt thực tế của đèn gầm dạng rời X-Light F30 Ultra">
+            <figcaption class="f30-media-caption" style="text-align: center;">Ảnh lắp đặt thực tế của đèn gầm dạng rời
               X-Light F30 Ultra</figcaption>
           </figure>
         </div>
@@ -1778,10 +1809,10 @@
     <section class="f30-section">
       <div class="f30-card">
         <div class="f30-inner">
-          <h2 class="f30-section-title">8. Địa chỉ thi công đèn gầm lắp rời F30 Ultra uy tín</h2>
+          <h2 class="f30-section-title">8. Địa chỉ thi công đèn gầm dạng rời F30 Ultra uy tín</h2>
           <p class="f30-text">
             Tại hệ thống Auto365, khách hàng sẽ được đội ngũ kỹ thuật viên giàu kinh nghiệm tư vấn nhiệt màu phù hợp nhu
-            cầu, lắp đặt bằng path (còn gọi là pát) chuyên dụng, đi dây gọn gàng và căn chỉnh góc chiếu chuẩn kỹ thuật.
+            cầu, lắp đặt bằng pát chuyên dụng, đi dây gọn gàng và căn chỉnh góc chiếu chuẩn kỹ thuật.
             Điều này giúp đèn X-Light F30 Ultra phát huy hiệu quả chiếu sáng và hạn chế gây chói cho xe đối diện.
           </p>
           <div class="f30-trust">
@@ -1810,12 +1841,16 @@
             Với xe đã độ cản, thay mặt ca lăng hoặc có vị trí gầm đặc biệt, nên kiểm tra thực tế trước khi báo phương án
             lắp đặt.
           </p>
-          <div class="f30-mt-16" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 24px; border-radius: 18px; background: linear-gradient(135deg, rgba(0, 136, 207, 0.06), rgba(72, 179, 255, 0.06)); border: 1px dashed rgba(0, 136, 207, 0.35);">
+          <div class="f30-mt-16"
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; padding: 20px 24px; border-radius: 18px; background: linear-gradient(135deg, rgba(0, 136, 207, 0.06), rgba(72, 179, 255, 0.06)); border: 1px dashed rgba(0, 136, 207, 0.35);">
             <div style="flex: 1; min-width: 280px;">
-              <h4 style="margin: 0 0 4px; font-size: 16px; font-weight: 650; color: var(--f30-text);">Tìm kiếm trung tâm Auto365 gần nhất?</h4>
-              <p style="margin: 0; font-size: 13.5px; color: var(--f30-muted);">Với gần 90 chi nhánh trên toàn quốc, luôn sẵn sàng phục vụ và bảo hành cho bạn.</p>
+              <h4 style="margin: 0 0 4px; font-size: 16px; font-weight: 650; color: var(--f30-text);">Tìm kiếm trung tâm
+                Auto365 gần nhất?</h4>
+              <p style="margin: 0; font-size: 13.5px; color: var(--f30-muted);">Với gần 90 chi nhánh trên toàn quốc,
+                luôn sẵn sàng phục vụ và bảo hành cho bạn.</p>
             </div>
-            <a class="f30-btn f30-btn-primary" href="https://auto365.vn/he-thong-auto365" style="min-height: 40px; padding: 8px 18px; font-size: 14px;">Tìm chi nhánh</a>
+            <a class="f30-btn f30-btn-primary" href="https://auto365.vn/chi-nhanh"
+              style="min-height: 40px; padding: 8px 18px; font-size: 14px;">Tìm chi nhánh</a>
           </div>
         </div>
       </div>
@@ -1859,9 +1894,10 @@
             <details class="f30-faq-item" id="faq-f30-cong-nghe-bu-cos">
               <summary class="f30-faq-question">Công nghệ Bù Cos của F30 Ultra là gì?</summary>
               <div class="f30-faq-answer">
-                <p class="f30-faq-p">Bù Cos là công nghệ bổ sung thêm một nguồn sáng ở lens trung tâm sử dụng 3 chip
-                  LED, hoạt động cùng hai nguồn Cos chính. Thiết kế này tạo thêm vùng sáng ở khu vực gần phía trước đầu
-                  xe, hỗ trợ cải thiện tầm nhìn khi di chuyển trong điều kiện thiếu sáng.</p>
+                <p class="f30-faq-p">Bù Cos là công nghệ trên đèn gầm dạng rời X-Light F30 Ultra: bổ sung một nguồn sáng
+                  ở lens trung tâm dùng 3 chip LED, hoạt động cùng hai nguồn Cos chính. Vùng sáng bù Cos ở tâm được duy
+                  trì cả khi chuyển sang chế độ Pha, giúp giữ tầm nhìn gần phía trước đầu xe khi di chuyển trong điều
+                  kiện thiếu sáng.</p>
               </div>
             </details>
             <details class="f30-faq-item" id="faq-f30-nhiet-mau">
@@ -1916,8 +1952,8 @@
             <details class="f30-faq-item" id="faq-f30-khac-bi-gam-thay-zin">
               <summary class="f30-faq-question">F30 Ultra khác Bi Gầm thay zin như thế nào?</summary>
               <div class="f30-faq-answer">
-                <p class="f30-faq-p">F30 Ultra là dòng đèn gầm dạng rời lắp bổ sung bên ngoài cụm đèn chính bằng pát sắt
-                  hoặc chân gá chuyên dụng. Trong khi đó, Bi Gầm thay zin thường thay thế trực tiếp vào vị trí cụm đèn
+                <p class="f30-faq-p">F30 Ultra là dòng đèn gầm dạng rời lắp bổ sung bên ngoài cụm đèn chính bằng pát
+                  chuyên dụng. Trong khi đó, Bi Gầm thay zin thường thay thế trực tiếp vào vị trí cụm đèn
                   gầm có sẵn của xe. Hai giải pháp này phục vụ các nhu cầu nâng cấp và kết cấu xe khác nhau.</p>
               </div>
             </details>
@@ -2020,14 +2056,14 @@
     { "@type": "Question", "name": "Đèn gầm dạng rời F30 Ultra giá bao nhiêu?", "acceptedAnswer": { "@type": "Answer", "text": "Đèn gầm dạng rời X-Light F30 Ultra có giá niêm yết 4.800.000 VNĐ/bộ, chưa bao gồm VAT. Mức giá áp dụng cho các phiên bản nhiệt màu, theo thông tin công bố tại thời điểm cập nhật nội dung." } },
     { "@type": "Question", "name": "F30 Ultra bảo hành mấy năm?", "acceptedAnswer": { "@type": "Answer", "text": "X-Light F30 Ultra được bảo hành chính hãng 2 năm. Sau khi lắp đặt, khách hàng nên yêu cầu kích hoạt và kiểm tra thông tin bảo hành điện tử bằng số seri để đảm bảo quyền lợi trong quá trình sử dụng." } },
     { "@type": "Question", "name": "Công suất của F30 Ultra là bao nhiêu?", "acceptedAnswer": { "@type": "Answer", "text": "Theo thông số công bố từ nhà sản xuất, X-Light F30 Ultra có công suất Cos 75W và công suất Pha 95W." } },
-    { "@type": "Question", "name": "Công nghệ Bù Cos của F30 Ultra là gì?", "acceptedAnswer": { "@type": "Answer", "text": "Bù Cos là công nghệ bổ sung thêm một nguồn sáng ở lens trung tâm sử dụng 3 chip LED, hoạt động cùng hai nguồn Cos chính. Thiết kế này tạo thêm vùng sáng ở khu vực gần phía trước đầu xe, hỗ trợ cải thiện tầm nhìn khi di chuyển trong điều kiện thiếu sáng." } },
+    { "@type": "Question", "name": "Công nghệ Bù Cos của F30 Ultra là gì?", "acceptedAnswer": { "@type": "Answer", "text": "Bù Cos là công nghệ trên đèn gầm dạng rời X-Light F30 Ultra: bổ sung một nguồn sáng ở lens trung tâm dùng 3 chip LED, hoạt động cùng hai nguồn Cos chính. Vùng sáng bù Cos ở tâm được duy trì cả khi chuyển sang chế độ Pha, giúp giữ tầm nhìn gần phía trước đầu xe khi di chuyển trong điều kiện thiếu sáng." } },
     { "@type": "Question", "name": "Nên chọn nhiệt màu nào khi lắp F30 Ultra?", "acceptedAnswer": { "@type": "Answer", "text": "X-Light F30 Ultra có 3 phiên bản nhiệt màu. Bản 6500K phù hợp điều kiện đường khô ráo và di chuyển đô thị; bản 5500K/3000K phù hợp nhu cầu sử dụng đa dạng; bản 3000K thường được lựa chọn khi xe hay di chuyển trong điều kiện mưa hoặc sương mù." } },
     { "@type": "Question", "name": "Đèn F30 Ultra lắp ở vị trí nào trên xe?", "acceptedAnswer": { "@type": "Answer", "text": "X-Light F30 Ultra là dòng đèn gầm dạng rời, thường được lắp cố định tại các vị trí thấp phía trước đầu xe như cản trước, hốc gió hoặc khu vực hốc biển số. Vị trí cụ thể phụ thuộc vào kết cấu kỹ thuật và thiết kế của từng dòng xe." } },
     { "@type": "Question", "name": "Lắp F30 Ultra có ảnh hưởng đèn zin không?", "acceptedAnswer": { "@type": "Answer", "text": "X-Light F30 Ultra được thiết kế như một hệ thống chiếu sáng bổ sung độc lập. Khi thi công đúng quy trình kỹ thuật, sản phẩm không yêu cầu thay thế cụm đèn chính và giúp hạn chế việc can thiệp vào hệ thống đèn nguyên bản của xe." } },
     { "@type": "Question", "name": "F30 Ultra có chống nước và chống bụi không?", "acceptedAnswer": { "@type": "Answer", "text": "Có. Đèn gầm dạng rời X-Light F30 Ultra đạt tiêu chuẩn chống nước và chống bụi IP68. Thân đèn có cấu trúc khép kín bằng hợp kim nhôm kết hợp gioăng cao su chuyên dụng, giúp hạn chế bụi bẩn và nước xâm nhập trong quá trình vận hành." } },
     { "@type": "Question", "name": "Đèn công suất 75W/95W có nhanh nóng không?", "acceptedAnswer": { "@type": "Answer", "text": "X-Light F30 Ultra được trang bị hệ thống tản nhiệt gồm hai quạt làm mát kết hợp các rãnh tản nhiệt trên thân hợp kim nhôm. Thiết kế này hỗ trợ thoát nhiệt trong quá trình đèn hoạt động, đặc biệt khi xe di chuyển và có luồng gió tự nhiên đi qua khu vực đầu xe. Nhiệt độ thực tế còn phụ thuộc điều kiện môi trường và thời gian sử dụng." } },
     { "@type": "Question", "name": "Lắp F30 Ultra có gây chói xe đối diện không?", "acceptedAnswer": { "@type": "Answer", "text": "Nếu được lắp đúng vị trí và căn chỉnh góc chiếu phù hợp, khả năng gây chói cho phương tiện đối diện sẽ được hạn chế. Chủ xe không nên tự ý nâng cao góc chiếu hoặc sử dụng chế độ Pha sai quy định khi tham gia giao thông đô thị." } },
-    { "@type": "Question", "name": "F30 Ultra khác Bi Gầm thay zin như thế nào?", "acceptedAnswer": { "@type": "Answer", "text": "F30 Ultra là dòng đèn gầm dạng rời lắp bổ sung bên ngoài cụm đèn chính bằng pát sắt hoặc chân gá chuyên dụng. Trong khi đó, Bi Gầm thay zin thường thay thế trực tiếp vào vị trí cụm đèn gầm có sẵn của xe. Hai giải pháp này phục vụ các nhu cầu nâng cấp và kết cấu xe khác nhau." } },
+    { "@type": "Question", "name": "F30 Ultra khác Bi Gầm thay zin như thế nào?", "acceptedAnswer": { "@type": "Answer", "text": "F30 Ultra là dòng đèn gầm dạng rời lắp bổ sung bên ngoài cụm đèn chính bằng pát chuyên dụng. Trong khi đó, Bi Gầm thay zin thường thay thế trực tiếp vào vị trí cụm đèn gầm có sẵn của xe. Hai giải pháp này phục vụ các nhu cầu nâng cấp và kết cấu xe khác nhau." } },
     { "@type": "Question", "name": "F30 Ultra có phù hợp xe điện không?", "acceptedAnswer": { "@type": "Answer", "text": "Khả năng tương thích phụ thuộc vào từng dòng xe điện và cấu hình nguồn điện cụ thể của xe. Chủ xe nên để kỹ thuật viên kiểm tra hệ thống điện, vị trí lắp và phương án đi dây trước khi thi công để hạn chế rủi ro kỹ thuật." } },
     { "@type": "Question", "name": "F30 Ultra có ảnh hưởng đến ắc quy không?", "acceptedAnswer": { "@type": "Answer", "text": "Khi được lắp đặt đúng kỹ thuật với dây dẫn, rơ-le và cầu chì phù hợp, X-Light F30 Ultra sẽ hoạt động theo phương án đấu nối được kiểm tra trên từng xe. Chủ xe nên thi công tại đơn vị chuyên về nâng cấp ánh sáng ô tô để hạn chế nguy cơ quá tải hoặc ảnh hưởng đến hệ thống điện." } },
     { "@type": "Question", "name": "Lắp đèn gầm dạng rời X-Light F30 Ultra có đăng kiểm được không?", "acceptedAnswer": { "@type": "Answer", "text": "Quy định đăng kiểm đối với các hạng mục nâng cấp, bổ sung hệ thống ánh sáng có thể thay đổi theo từng thời điểm. Chủ xe nên tham khảo thông tin từ cơ quan đăng kiểm hoặc đơn vị có thẩm quyền trước khi thực hiện để đảm bảo tuân thủ đúng quy định hiện hành." } }
