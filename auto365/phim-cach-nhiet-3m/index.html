@@ -1,282 +1,892 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="vi">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bảng giá phim cách nhiệt 3M</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 24px;
-      background: #f3f4f6;
-      font-family: Arial, sans-serif;
-      color: #111827;
-    }
-
-    .auto365-3m-price-section {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 24px;
-      background: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
-    }
-
-    .auto365-3m-price-section h2 {
-      font-size: 24px;
-      line-height: 1.35;
-      margin: 0 0 12px;
-      color: #111827;
-    }
-
-    .auto365-3m-price-desc {
-      font-size: 15px;
-      line-height: 1.6;
-      color: #4b5563;
-      margin: 0 0 16px;
-    }
-
-    .auto365-3m-table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      background: #fff;
-    }
-
-    .auto365-3m-price-table {
-      width: 100%;
-      min-width: 980px;
-      border-collapse: collapse;
-      font-size: 15px;
-      line-height: 1.55;
-    }
-
-    .auto365-3m-price-table th,
-    .auto365-3m-price-table td {
-      padding: 14px 12px;
-      border-bottom: 1px solid #e5e7eb;
-      vertical-align: top;
-      text-align: left;
-    }
-
-    .auto365-3m-price-table th {
-      background: #f8fafc;
-      font-weight: 700;
-      color: #111827;
-      white-space: nowrap;
-    }
-
-    .auto365-3m-price-table tbody tr:last-child td {
-      border-bottom: none;
-    }
-
-    .auto365-3m-price-table tbody tr:hover {
-      background: #fff7f7;
-    }
-
-    .auto365-3m-package {
-      font-weight: 700;
-      color: #111827;
-    }
-
-    .auto365-3m-price {
-      font-weight: 700;
-      color: #d71920;
-      white-space: nowrap;
-    }
-
-    .auto365-3m-muted {
-      color: #6b7280;
-      font-size: 14px;
-    }
-
-    .auto365-3m-note {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #4b5563;
-      background: #f9fafb;
-      border-left: 4px solid #d71920;
-      padding: 12px 14px;
-      margin: 14px 0 0;
-      border-radius: 8px;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 12px;
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Phim cách nhiệt ô tô: bảng giá, thông số, thương hiệu và cách chọn phim | Auto365</title>
+<meta content="Hub phim cách nhiệt ô tô Auto365: lợi ích, công nghệ, thông số TSER/VLT/UVR/IRR/IRER, bảng giá 3M theo catalog, thương hiệu phim phổ biến, cách chọn theo từng nhóm xe và bảo hành." name="description"/>
+<meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
+<link href="https://auto365.vn/phim-cach-nhiet" rel="canonical"/>
+<meta content="vi_VN" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="Phim cách nhiệt ô tô chính hãng: bảng giá, cách chọn và địa chỉ dán uy tín" property="og:title"/>
+<meta content="Cách chọn phim cách nhiệt ô tô, bảng giá tham khảo và các gói phim 3M tại Auto365." property="og:description"/>
+<meta content="https://auto365.vn/phim-cach-nhiet" property="og:url"/>
+<meta content="Auto365" property="og:site_name"/>
+<meta content="https://auto365.vn/uploads/images/category/phim-cach-nhiet-auto365-og.jpg" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://auto365.vn/#website",
+      "name": "AUTO365 CENTER",
+      "url": "https://auto365.vn/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://auto365.vn/tim-kiem?search={search_term_string}",
+        "query-input": "required name=search_term_string"
       }
-
-      .auto365-3m-price-section {
-        padding: 16px;
-        border-radius: 12px;
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auto365.vn/#365group",
+      "name": "365Group",
+      "url": "https://auto365.vn/"
+    },
+    {
+      "@type": "AutomotiveBusiness",
+      "@id": "https://auto365.vn/#auto365-tru-so-chinh",
+      "name": "Auto365.vn - Trụ Sở Chính",
+      "url": "https://auto365.vn/",
+      "telephone": "19009365",
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#365group"
+      },
+      "logo": "https://auto365.vn/uploads/images/pages/logo.png"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auto365.vn/#3m-pro-shop-training-center",
+      "name": "3M Pro Shop & 3M Training Center",
+      "url": "https://auto365.vn/",
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#auto365-tru-so-chinh"
       }
-
-      .auto365-3m-price-section h2 {
-        font-size: 22px;
+    },
+    {
+      "@type": "Brand",
+      "@id": "https://auto365.vn/phim-cach-nhiet#brand-3m",
+      "name": "3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://auto365.vn/phim-cach-nhiet#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://auto365.vn/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Phim cách nhiệt",
+          "item": "https://auto365.vn/phim-cach-nhiet"
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://auto365.vn/phim-cach-nhiet#webpage",
+      "url": "https://auto365.vn/phim-cach-nhiet",
+      "name": "Phim cách nhiệt ô tô chính hãng: bảng giá, cách chọn và địa chỉ dán uy tín",
+      "description": "Trang tổng hợp phim cách nhiệt ô tô tại Auto365: công nghệ phim, thông số TSER, VLT, UVR, IRR, IRER, VLR, cách chọn theo từng vị trí kính, bảng giá và các gói phim 3M.",
+      "inLanguage": "vi-VN",
+      "isPartOf": {
+        "@id": "https://auto365.vn/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://auto365.vn/phim-cach-nhiet#breadcrumb"
+      },
+      "about": {
+        "@id": "https://auto365.vn/phim-cach-nhiet#service"
       }
-
-      .auto365-3m-price-table {
-        min-width: 920px;
-        font-size: 14px;
-      }
-
-      .auto365-3m-price-table th,
-      .auto365-3m-price-table td {
-        padding: 12px 10px;
-      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://auto365.vn/phim-cach-nhiet#service",
+      "name": "Dán phim cách nhiệt ô tô tại Auto365",
+      "provider": {
+        "@id": "https://auto365.vn/#auto365-tru-so-chinh"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Việt Nam"
+      },
+      "serviceType": "Dán phim cách nhiệt ô tô"
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://auto365.vn/phim-cach-nhiet#packages",
+      "name": "Các gói phim cách nhiệt 3M tại Auto365",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "3M Ceramic Hybrid / Ceramic NR",
+          "url": "https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "3M Crystalline CR BLK",
+          "url": "https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "3M Crystalline Hybrid"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "3M Ceramic IR"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://auto365.vn/phim-cach-nhiet#brand-landscape",
+      "name": "Các thương hiệu phim cách nhiệt phổ biến tại Việt Nam",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Phim cách nhiệt 3M"},
+        {"@type":"ListItem","position":2,"name":"Phim cách nhiệt V-KOOL"},
+        {"@type":"ListItem","position":3,"name":"Phim cách nhiệt LLumar"},
+        {"@type":"ListItem","position":4,"name":"Phim cách nhiệt SunTek"},
+        {"@type":"ListItem","position":5,"name":"Phim cách nhiệt XPEL"},
+        {"@type":"ListItem","position":6,"name":"Phim cách nhiệt Solar Gard"},
+        {"@type":"ListItem","position":7,"name":"Phim cách nhiệt Huper Optik"},
+        {"@type":"ListItem","position":8,"name":"Phim cách nhiệt Johnson"},
+        {"@type":"ListItem","position":9,"name":"Phim cách nhiệt Rayno"},
+        {"@type":"ListItem","position":10,"name":"Phim cách nhiệt NanoX"},
+        {"@type":"ListItem","position":11,"name":"Phim cách nhiệt Classis"},
+        {"@type":"ListItem","position":12,"name":"Phim cách nhiệt Ntech"},
+        {"@type":"ListItem","position":13,"name":"Phim cách nhiệt Ceramax"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://auto365.vn/phim-cach-nhiet#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Phim cách nhiệt ô tô là gì?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Phim cách nhiệt ô tô là lớp phim chuyên dụng dán bên trong kính xe để hỗ trợ giảm nhiệt, giảm chói, hạn chế tia UV và tăng sự riêng tư cho khoang xe. Một bộ phim tốt cần được chọn theo từng vị trí kính, vì kính lái cần ưu tiên tầm nhìn, kính sườn cần cân bằng riêng tư và kính trần/cửa sổ trời thường chịu nắng trực diện từ phía trên."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Có nên dán phim cho xe mới không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có thể dán sớm nếu xe thường xuyên đi nắng, đỗ ngoài trời, chở gia đình hoặc có nhiều diện tích kính. Với xe mới, việc dán sớm giúp đồng bộ thẩm mỹ, bảo vệ nội thất từ đầu và dễ quản lý bảo hành hơn vì chưa có phim cũ cần bóc. Chủ xe vẫn nên kiểm tra kỹ mã phim kính lái để không ảnh hưởng tầm nhìn khi đi đêm hoặc trời mưa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Phim cách nhiệt có thật sự chống nóng không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Phim cách nhiệt có thể hỗ trợ giảm nhiệt truyền qua kính, nhưng hiệu quả thực tế phụ thuộc vào TSER, VLT, công nghệ phim, kính nguyên bản của xe, diện tích kính và điều kiện sử dụng. Không nên đánh giá phim chỉ bằng cảm giác màu tối; một phim sáng nhưng có TSER tốt vẫn có thể cho trải nghiệm dễ chịu hơn phim tối nhưng thông số thấp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "VLT là gì và vì sao quan trọng với kính lái?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "VLT là tỷ lệ ánh sáng nhìn thấy đi qua kính sau khi dán phim. VLT càng cao thì kính càng sáng và dễ quan sát hơn; VLT càng thấp thì kính càng tối và riêng tư hơn. Với kính lái, VLT rất quan trọng vì ảnh hưởng trực tiếp đến khả năng nhìn đường khi đi đêm, trời mưa hoặc ra vào hầm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TSER là gì?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TSER là tỷ lệ loại bỏ tổng năng lượng mặt trời, thường dùng để đánh giá khả năng hỗ trợ giảm nóng tổng thể của phim. Khi so sánh phim, TSER nên được xem cùng VLT, UVR, IRR/IRER và điều kiện công bố dữ liệu. Chỉ nhìn một chỉ số riêng lẻ dễ dẫn đến chọn sai phim cho nhu cầu thực tế."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "IRR và IRER khác nhau thế nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IRR thường thể hiện khả năng loại bỏ tia hồng ngoại trong một dải bước sóng nhất định, còn IRER đánh giá hiệu quả loại bỏ năng lượng hồng ngoại trên phạm vi rộng hơn và có xét đến yếu tố hấp thụ/phát lại năng lượng. Khi tài liệu kỹ thuật có cả hai chỉ số, người dùng nên xem kèm điều kiện đo thay vì chỉ chọn phim có IRR cao nhất."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "UVR có tác dụng gì?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UVR là khả năng hạn chế tia cực tím, liên quan đến bảo vệ da, mắt và nội thất xe. UVR khác với IRR/IRER vì IRR/IRER nói về hồng ngoại, còn UVR nói về tia UV. Khi tư vấn, cần phân biệt rõ hai nhóm chỉ số này để khách hàng không hiểu nhầm giữa chống UV và xử lý nhiệt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kính lái có nên dán phim tối không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kính lái không nên chọn quá tối chỉ vì muốn xe riêng tư hơn. Vị trí này cần ưu tiên tầm nhìn, độ truyền sáng và khả năng giảm chói phù hợp. Chủ xe thường xuyên đi đêm, đi mưa hoặc ra vào hầm nên xem mẫu thực tế và hỏi rõ VLT trước khi quyết định."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Phim cách nhiệt có ảnh hưởng GPS, VETC, Bluetooth không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ảnh hưởng tín hiệu phụ thuộc vào công nghệ phim, cấu tạo kính, thiết bị đang dùng và vị trí lắp đặt thiết bị. Khi chủ xe quan tâm đến GPS, VETC, Bluetooth hoặc camera hành trình, nên thông báo trước cho kỹ thuật viên để được tư vấn theo mã phim, vị trí kính và thiết bị sử dụng. Không nên dùng các cam kết tuyệt đối về tín hiệu nếu chưa có dữ liệu đo phù hợp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Xe điện có cần dán phim cách nhiệt không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Xe điện thường có diện tích kính lớn, một số mẫu có kính trần toàn cảnh và nhiều thiết bị điện tử. Khi chọn phim cho xe điện, nên đánh giá đồng thời TSER, VLT thực tế sau dán, UVR, VLR, vị trí kính và mức độ ưu tiên tín hiệu. 3M Ceramic NR cần được mô tả đúng là dòng Ceramic Hybrid; việc tư vấn nên dựa trên mã phim, vị trí kính, cấu tạo kính xe và thiết bị sử dụng."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Xe có kính trần toàn cảnh nên chọn phim thế nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kính trần toàn cảnh nhận nắng trực diện từ phía trên nên có thể làm cabin nóng nhanh hơn, đặc biệt khi xe đỗ ngoài trời. Khi chọn phim cho vị trí này, không nên chỉ nhìn màu tối mà cần xem khả năng hỗ trợ giảm nhiệt, độ thoáng sáng mong muốn, rèm che và diện tích kính. Xe có panorama lớn nên được báo giá và tư vấn riêng."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Dán phim mất bao lâu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thời gian thi công phụ thuộc vào dòng xe, số lượng kính, tình trạng phim cũ và có cửa sổ trời hay không. Dán trọn xe thường mất nhiều thời gian hơn dán lẻ kính lái hoặc kính sườn. Nếu xe đã có phim cũ cần bóc, trung tâm cần thêm thời gian xử lý keo và vệ sinh kính trước khi dán mới."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sau khi dán cần kiêng gì?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trong 48–72 giờ đầu, nên hạn chế lên/xuống kính để keo ổn định. Không nên lau mặt trong kính bằng khăn cứng hoặc hóa chất mạnh trong giai đoạn đầu. Một số vệt sương hoặc bọt nước nhỏ có thể giảm dần theo thời gian; nếu có bọt lớn, bong mép hoặc bụi rõ, khách hàng nên quay lại trung tâm kiểm tra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cách kiểm tra phim 3M chính hãng và bảo hành điện tử?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Khách hàng nên kiểm tra mã phim được dán cho từng vị trí, hóa đơn hoặc phiếu thông tin gói phim, điều kiện bảo hành và cách kích hoạt bảo hành điện tử nếu dòng phim áp dụng. Sau khi dán, có thể yêu cầu kiểm tra thông số cơ bản nếu trung tâm có thiết bị, đồng thời quan sát mép phim, bụi, bọt khí và vết xước trước khi nhận xe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3M, V-KOOL, LLumar và SunTek khác nhau thế nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mỗi thương hiệu có nhiều dòng phim, nhiều phân khúc và cách định vị khác nhau. 3M thường được quan tâm nhờ hệ sản phẩm đa dạng từ Ceramic NR đến CR BLK; V-KOOL thường được nhắc tới ở nhóm kiểm soát nhiệt; LLumar và SunTek là các thương hiệu lâu năm với nhiều lựa chọn. Khi so sánh, nên xem mã phim cụ thể, thông số, bảo hành và nơi thi công."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ngoài 3M còn thương hiệu phim nào phổ biến tại Việt Nam?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ngoài 3M, thị trường còn có các thương hiệu như V-KOOL, LLumar, SunTek, XPEL, Solar Gard và một số thương hiệu khác ở nhiều phân khúc. Trang tổng nên nhìn rộng về thị trường để người dùng có cơ sở so sánh, nhưng khi chốt lựa chọn cần quay lại mã phim cụ thể, thông số công bố, bảo hành và kinh nghiệm thi công."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Nên chọn phim theo thương hiệu hay theo thông số?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Thương hiệu giúp người dùng có điểm tựa ban đầu, nhưng quyết định cuối nên dựa trên mã phim cụ thể, thông số, vị trí kính và nhu cầu sử dụng. Cùng một thương hiệu vẫn có nhiều dòng phim khác nhau, giá và hiệu năng khác nhau. Vì vậy, khách hàng nên hỏi rõ kính lái dùng mã nào, kính sườn dùng mã nào, bảo hành ra sao và có phù hợp thói quen lái xe không."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vì sao cùng thương hiệu nhưng giá và hiệu năng khác nhau?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cùng một thương hiệu có thể có nhiều dòng phim: ceramic, quang học đa lớp, gói phối kính lái cao cấp hoặc cấu hình tiết kiệm hơn. Giá còn phụ thuộc phân khúc xe, diện tích kính, cửa sổ trời, tình trạng phim cũ và chính sách bảo hành. Do đó, chỉ so sánh giá khi đã biết rõ mã phim cho từng vị trí kính."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Auto365 có liên quan gì đến 365Group và phim 3M?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Auto365.vn là hệ thống nâng cấp xe thuộc hệ sinh thái 365Group. Với nhóm phim 3M, nội dung trên trang cần phân biệt rõ vai trò thương hiệu, hệ thống phân phối/thi công và các điểm tư vấn chuyên sâu như 3M Pro Shop &amp; 3M Training Center. Khi công bố thông tin kỹ thuật, giá, bảo hành hoặc dữ liệu đo, Auto365 cần đối chiếu theo dữ liệu nội bộ đã duyệt và chính sách hiện hành."
+          }
+        }
+      ]
     }
-  </style>
+  ]
+}
+</script>
+<style>
+/* Auto365 Film Hub V12 — Apple clean + Auto365 premium */
+.pcn-page{
+  --pcn-red:#e60012;
+  --pcn-red-soft:rgba(230,0,18,.075);
+  --pcn-red-line:rgba(230,0,18,.18);
+  --pcn-ink:#1d1d1f;
+  --pcn-ink-soft:#2f3033;
+  --pcn-muted:#515154;
+  --pcn-tertiary:#86868b;
+  --pcn-link:#0066cc;
+  --pcn-bg:#f5f5f7;
+  --pcn-surface:#ffffff;
+  --pcn-surface-soft:#fbfbfd;
+  --pcn-line:rgba(0,0,0,.08);
+  --pcn-line-soft:rgba(0,0,0,.055);
+  --pcn-radius-sm:16px;
+  --pcn-radius:24px;
+  --pcn-radius-lg:32px;
+  --pcn-shadow-sm:0 1px 2px rgba(0,0,0,.035);
+  --pcn-shadow-md:0 14px 38px rgba(0,0,0,.055);
+  --pcn-shadow-lg:0 22px 70px rgba(0,0,0,.075);
+  --pcn-space-1:8px;
+  --pcn-space-2:12px;
+  --pcn-space-3:18px;
+  --pcn-space-4:28px;
+  --pcn-space-5:44px;
+  --pcn-space-6:72px;
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Inter","Segoe UI",Roboto,Arial,sans-serif;
+  color:var(--pcn-ink);
+  background:var(--pcn-bg);
+  line-height:1.72;
+  letter-spacing:-.012em;
+  padding:28px 16px 64px;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.pcn-page *{box-sizing:border-box}
+.pcn-page a{color:var(--pcn-link);font-weight:500;text-decoration:none;text-underline-offset:3px}
+.pcn-page a:hover{text-decoration:underline}
+.pcn-shell{max-width:1160px;margin:0 auto;background:var(--pcn-surface);border-radius:34px;overflow:hidden;box-shadow:var(--pcn-shadow-lg);border:1px solid rgba(0,0,0,.045)}
+
+/* HERO */
+.pcn-hero{background:linear-gradient(180deg,#fff 0%,#f5f5f7 100%);color:var(--pcn-ink);padding:clamp(46px,7vw,92px) clamp(22px,4vw,48px) 42px;text-align:center;border-bottom:1px solid var(--pcn-line-soft)}
+.pcn-hero-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center;max-width:1040px;margin:0 auto}.pcn-kicker{display:inline-flex;align-items:center;gap:8px;margin:0 auto;padding:7px 13px;border-radius:999px;background:var(--pcn-red-soft);border:1px solid var(--pcn-red-line);color:var(--pcn-red);font-size:13px;font-weight:600;letter-spacing:.01em}.pcn-hero h1{max-width:980px;margin:18px auto 18px;color:var(--pcn-ink);font-size:clamp(38px,5.8vw,72px);line-height:.99;font-weight:700;letter-spacing:-.058em}.pcn-hero p{max-width:780px;margin:0 auto 12px;color:var(--pcn-muted);font-size:clamp(17px,1.8vw,21px);line-height:1.5;font-weight:400;text-align:center}.pcn-hero-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:11px;margin-top:24px}.pcn-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 18px;border-radius:999px;font-weight:600;font-size:14.5px;text-decoration:none!important;transition:transform .22s ease,box-shadow .22s ease,background .22s ease}.pcn-btn:hover{transform:translateY(-1px);text-decoration:none!important}.pcn-btn-primary{background:var(--pcn-red);color:#fff!important;box-shadow:0 10px 26px rgba(230,0,18,.2)}.pcn-btn-ghost{background:rgba(0,0,0,.045);border:1px solid rgba(0,0,0,.065);color:var(--pcn-ink)!important}.pcn-hero-card{max-width:760px;margin:12px auto 0;background:rgba(255,255,255,.72);border:1px solid rgba(0,0,0,.06);border-radius:28px;padding:24px;text-align:left;box-shadow:var(--pcn-shadow-sm);backdrop-filter:blur(18px)}.pcn-hero-card h2{margin:0 0 10px;color:var(--pcn-ink);font-size:20px;line-height:1.32;font-weight:650;letter-spacing:-.025em}.pcn-hero-card ul{margin:0;padding-left:18px;color:var(--pcn-muted);font-size:15px;line-height:1.62}.pcn-hero-card li{margin:0 0 8px}.pcn-quick-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;max-width:920px;margin:32px auto 0}.pcn-stat{padding:18px;border-radius:22px;background:#fff;border:1px solid rgba(0,0,0,.06);box-shadow:var(--pcn-shadow-sm);text-align:left}.pcn-stat strong{display:block;color:var(--pcn-ink);font-size:24px;line-height:1.05;font-weight:650;letter-spacing:-.035em}.pcn-stat span{display:block;margin-top:6px;color:var(--pcn-tertiary);font-size:13.5px;line-height:1.35}
+
+/* TOC */
+.pcn-toc{position:sticky;top:0;z-index:5;background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--pcn-line-soft);padding:12px 26px}.pcn-toc-inner{display:flex;gap:9px;overflow-x:auto;scrollbar-width:thin}.pcn-toc a{white-space:nowrap;display:inline-flex;align-items:center;min-height:36px;padding:8px 13px;border-radius:999px;background:rgba(0,0,0,.04);border:1px solid rgba(0,0,0,.045);color:var(--pcn-ink);font-size:13.5px;font-weight:500;text-decoration:none!important}.pcn-toc a:hover{background:var(--pcn-red-soft);border-color:var(--pcn-red-line);color:var(--pcn-red);text-decoration:none!important}
+
+/* BODY + TYPOGRAPHY */
+.pcn-body{padding:clamp(24px,4vw,46px)}.pcn-section{padding:clamp(48px,6vw,76px) 0;border-bottom:1px solid var(--pcn-line-soft);scroll-margin-top:82px}.pcn-section:first-child{padding-top:22px}.pcn-section:last-child{border-bottom:0}.pcn-section-head{max-width:900px;margin-bottom:24px}.pcn-eyebrow{display:inline-block;margin-bottom:10px;color:var(--pcn-red);font-size:12.5px;font-weight:650;text-transform:uppercase;letter-spacing:.09em}.pcn-section h2{margin:0 0 12px;color:var(--pcn-ink);font-size:clamp(28px,3.8vw,46px);line-height:1.08;font-weight:650;letter-spacing:-.045em}.pcn-section h3{margin:28px 0 10px;color:var(--pcn-ink);font-size:clamp(20px,2vw,24px);line-height:1.25;font-weight:620;letter-spacing:-.03em}.pcn-section h4{color:var(--pcn-ink);font-weight:620;letter-spacing:-.02em}.pcn-section p{max-width:880px;margin:0 0 14px;color:var(--pcn-muted);font-size:16.8px;line-height:1.72;font-weight:400;text-align:left}.pcn-lead{max-width:900px!important;font-size:18px!important;line-height:1.64!important;color:var(--pcn-muted)!important}.pcn-small{font-size:13.5px!important;color:var(--pcn-tertiary)!important;text-align:left!important}.pcn-note{margin:18px 0 0;padding:18px 20px;border-radius:20px;background:var(--pcn-red-soft);border:1px solid var(--pcn-red-line);border-left:0;color:var(--pcn-muted)!important}.pcn-note strong{color:var(--pcn-ink)}
+
+/* GRIDS + CARDS */
+.pcn-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.pcn-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.pcn-grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.pcn-card{padding:24px;border-radius:26px;background:var(--pcn-surface-soft);border:1px solid rgba(0,0,0,.06);box-shadow:var(--pcn-shadow-sm);transition:transform .22s ease,box-shadow .22s ease,background .22s ease,border-color .22s ease}.pcn-card:hover{transform:translateY(-2px);box-shadow:var(--pcn-shadow-md);background:#fff;border-color:rgba(0,0,0,.08)}.pcn-card h3,.pcn-card h4{margin:0 0 9px;color:var(--pcn-ink);font-size:18px;line-height:1.32;font-weight:620;letter-spacing:-.025em}.pcn-card p{margin:0;color:var(--pcn-muted);font-size:15px;line-height:1.64;text-align:left}.pcn-card-accent{background:#fff;border:1px solid rgba(230,0,18,.16);box-shadow:0 1px 2px rgba(230,0,18,.035)}.pcn-card-dark{background:#1d1d1f;border-color:#2f3033;color:#fff}.pcn-card-dark h3,.pcn-card-dark h4{color:#fff}.pcn-card-dark p{color:rgba(255,255,255,.72)}.pcn-icon-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}.pcn-icon-list li{position:relative;padding-left:20px;color:var(--pcn-muted);font-size:15px;line-height:1.58}.pcn-icon-list li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--pcn-red)}
+
+/* TABLES */
+.pcn-table-wrap{overflow-x:auto;margin:20px 0 22px;border-radius:24px;border:1px solid rgba(0,0,0,.065);background:#fff;box-shadow:var(--pcn-shadow-sm)}.pcn-table{width:100%;min-width:760px;border-collapse:collapse}.pcn-table caption{caption-side:top;padding:14px 16px;color:var(--pcn-tertiary);font-size:13.5px;font-weight:500;background:#fff;text-align:center}.pcn-table th{padding:14px 16px;background:#f5f5f7;color:var(--pcn-ink);text-align:left;font-size:14px;font-weight:620;white-space:nowrap;border-top:1px solid rgba(0,0,0,.035)}.pcn-table td{padding:15px 16px;border-top:1px solid rgba(0,0,0,.055);color:var(--pcn-muted);font-size:14.5px;line-height:1.62;vertical-align:top;background:#fff}.pcn-table tr:nth-child(even) td{background:#fbfbfd}.pcn-table td:first-child{font-weight:620;color:var(--pcn-ink)}.pcn-table strong,.pcn-price{color:var(--pcn-red);font-weight:650}
+
+/* PACKAGES */
+.pcn-package-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:22px 0}.pcn-package{position:relative;min-height:270px;padding:24px;border-radius:30px;border:1px solid rgba(0,0,0,.065);background:linear-gradient(180deg,#fff 0%,#fbfbfd 100%);box-shadow:var(--pcn-shadow-sm);transition:transform .24s ease,box-shadow .24s ease}.pcn-package:hover{transform:translateY(-3px);box-shadow:var(--pcn-shadow-md)}.pcn-package.is-featured{background:linear-gradient(180deg,#1d1d1f 0%,#111113 100%);color:#fff;border-color:rgba(255,255,255,.12);box-shadow:0 22px 56px rgba(0,0,0,.16)}.pcn-package-badge{display:inline-flex;margin-bottom:13px;padding:6px 10px;border-radius:999px;background:var(--pcn-red-soft);color:var(--pcn-red);font-size:12px;font-weight:650;letter-spacing:.02em}.pcn-package.is-featured .pcn-package-badge{background:rgba(255,255,255,.12);color:#fff}.pcn-package h3{margin:0 0 10px;font-size:20px;line-height:1.22;font-weight:650;color:var(--pcn-ink);letter-spacing:-.035em}.pcn-package.is-featured h3{color:#fff}.pcn-package p{font-size:14.8px;line-height:1.62;text-align:left;color:var(--pcn-muted)}.pcn-package.is-featured p{color:rgba(255,255,255,.72)}.pcn-price{display:block;margin:14px 0 10px;font-size:20px;line-height:1.1}.pcn-package.is-featured .pcn-price{color:#fff}.pcn-package.is-featured a{color:#7dc1ff}
+
+/* MEDIA */
+.pcn-media-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:18px;align-items:stretch}.pcn-media{overflow:hidden;border-radius:30px;background:#1d1d1f;border:1px solid rgba(0,0,0,.06);box-shadow:var(--pcn-shadow-sm);margin:0}.pcn-media img{width:100%;height:auto;display:block}.pcn-media-box{min-height:300px;display:flex;align-items:center;justify-content:center;padding:32px;color:#fff;background:linear-gradient(145deg,#1d1d1f,#3a3a3c);text-align:center}.pcn-media-box strong{font-weight:650;font-size:20px;letter-spacing:-.03em}.pcn-media-box span{color:rgba(255,255,255,.72);font-size:14.5px;line-height:1.55}.pcn-media figcaption{padding:13px 16px;background:#fff;color:var(--pcn-tertiary);font-size:13.5px;line-height:1.55;text-align:center}.pcn-video{position:relative;aspect-ratio:16/9;border-radius:30px;overflow:hidden;background:#1d1d1f;box-shadow:var(--pcn-shadow-sm)}.pcn-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+
+/* PROCESS + TRUST */
+.pcn-process{counter-reset:step;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.pcn-step{position:relative;padding:22px;border-radius:24px;background:#fff;border:1px solid rgba(0,0,0,.065);box-shadow:var(--pcn-shadow-sm)}.pcn-step:before{counter-increment:step;content:counter(step);display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--pcn-red-soft);color:var(--pcn-red);font-weight:650;margin-bottom:12px}.pcn-step strong{display:block;color:var(--pcn-ink);font-weight:620;margin-bottom:7px}.pcn-step span{display:block;color:var(--pcn-muted);font-size:14px;line-height:1.56}.pcn-trust-band{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}.pcn-trust-item{padding:20px;border-radius:24px;background:#1d1d1f;color:#fff;box-shadow:var(--pcn-shadow-sm)}.pcn-trust-item strong{display:block;font-size:24px;color:#fff;font-weight:650;letter-spacing:-.035em}.pcn-trust-item span{color:rgba(255,255,255,.7);font-size:13.5px;line-height:1.4}
+
+
+
+/* INLINE CTA BLOCKS */
+.pcn-inline-cta{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:center;margin:32px 0 6px;padding:26px;border-radius:30px;background:linear-gradient(180deg,#fff 0%,#fbfbfd 100%);border:1px solid rgba(0,0,0,.065);box-shadow:var(--pcn-shadow-sm)}
+.pcn-inline-cta h3{margin:6px 0 8px;color:var(--pcn-ink);font-size:clamp(22px,2.3vw,30px);line-height:1.16;font-weight:650;letter-spacing:-.04em}.pcn-inline-cta p{max-width:760px;margin:0;color:var(--pcn-muted);font-size:15.8px;line-height:1.66;text-align:left}.pcn-inline-cta-label{display:inline-flex;width:max-content;padding:6px 10px;border-radius:999px;background:var(--pcn-red-soft);border:1px solid var(--pcn-red-line);color:var(--pcn-red);font-size:12px;font-weight:650;letter-spacing:.04em;text-transform:uppercase}.pcn-inline-cta-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px;min-width:260px}.pcn-inline-cta-soft{background:linear-gradient(180deg,#fff 0%,#f5f5f7 100%)}.pcn-inline-cta-dark{background:linear-gradient(135deg,#1d1d1f 0%,#111113 100%);border-color:rgba(255,255,255,.11);box-shadow:0 22px 56px rgba(0,0,0,.14)}.pcn-inline-cta-dark h3{color:#fff}.pcn-inline-cta-dark p{color:rgba(255,255,255,.72)}.pcn-inline-cta-dark .pcn-inline-cta-label{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.16);color:#fff}.pcn-inline-cta-dark .pcn-btn-ghost{background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.2);color:#fff!important}.pcn-inline-cta-note{display:block;margin-top:8px;color:var(--pcn-tertiary);font-size:13.5px;line-height:1.45}.pcn-inline-cta-dark .pcn-inline-cta-note{color:rgba(255,255,255,.52)}
+@media(max-width:720px){.pcn-inline-cta{grid-template-columns:1fr;padding:22px;border-radius:24px;gap:16px}.pcn-inline-cta-actions{min-width:0;justify-content:stretch}.pcn-inline-cta-actions .pcn-btn{width:100%}}
+
+/* FAQ + FORM */
+.pcn-faq details{margin:12px 0;border:1px solid rgba(0,0,0,.065);border-radius:22px;background:#fff;overflow:hidden;box-shadow:var(--pcn-shadow-sm)}.pcn-faq summary{cursor:pointer;padding:18px 20px;font-weight:620;color:var(--pcn-ink);letter-spacing:-.02em}.pcn-faq details p{max-width:none;padding:0 20px 20px;margin:0;text-align:left;color:var(--pcn-muted);font-size:15.5px}.pcn-cta-form{display:grid;grid-template-columns:1fr 420px;gap:0;overflow:hidden;border-radius:30px;background:#1d1d1f;margin-top:24px;box-shadow:var(--pcn-shadow-md)}.pcn-cta-left{padding:34px;color:#fff}.pcn-cta-left h2{color:#fff!important}.pcn-cta-left p{color:rgba(255,255,255,.72);text-align:left}.pcn-form{padding:30px;background:#fbfbfd}.pcn-form h3{margin-top:0}.pcn-form label{display:block;margin:10px 0 5px;color:var(--pcn-ink);font-weight:600;font-size:13px}.pcn-form input,.pcn-form select,.pcn-form textarea{width:100%;border:1px solid rgba(0,0,0,.1);border-radius:14px;padding:12px 13px;font-family:inherit;font-size:14px;color:var(--pcn-ink);background:#fff;outline:none;transition:border-color .2s ease,box-shadow .2s ease}.pcn-form input:focus,.pcn-form select:focus,.pcn-form textarea:focus{border-color:rgba(0,102,204,.5);box-shadow:0 0 0 4px rgba(0,102,204,.12)}.pcn-form textarea{min-height:88px;resize:vertical}.pcn-form button{width:100%;margin-top:14px;border:0;border-radius:14px;padding:13px 16px;background:var(--pcn-red);color:#fff;font-weight:650;font-size:15px;cursor:pointer}.pcn-divider-title{display:flex;align-items:center;gap:12px;margin:24px 0 12px}.pcn-divider-title:after{content:"";height:1px;background:var(--pcn-line);flex:1}.pcn-divider-title strong{color:var(--pcn-ink);font-size:17px;font-weight:620}.pcn-review{padding:22px;border-radius:24px;background:#fff;border:1px solid rgba(0,0,0,.065);box-shadow:var(--pcn-shadow-sm)}.pcn-review blockquote{margin:0;color:var(--pcn-muted);font-size:15px;line-height:1.72}.pcn-review strong{display:block;margin-top:12px;color:var(--pcn-ink);font-weight:620}.pcn-review span{display:block;color:var(--pcn-tertiary);font-size:13.5px}
+
+@media(max-width:1024px){.pcn-grid-4,.pcn-package-grid,.pcn-process,.pcn-trust-band{grid-template-columns:repeat(2,minmax(0,1fr))}.pcn-media-grid{grid-template-columns:1fr}.pcn-cta-form{grid-template-columns:1fr}.pcn-quick-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){.pcn-page{padding:12px 8px 42px}.pcn-shell{border-radius:26px}.pcn-hero{padding:38px 18px 30px}.pcn-hero h1{font-size:38px;line-height:1.02}.pcn-hero p{font-size:16px;line-height:1.55}.pcn-hero-card{padding:20px;border-radius:24px}.pcn-quick-stats,.pcn-grid-2,.pcn-grid-3,.pcn-grid-4,.pcn-package-grid,.pcn-process,.pcn-trust-band{grid-template-columns:1fr}.pcn-toc{padding:10px 14px}.pcn-body{padding:20px 14px}.pcn-section{padding:46px 0}.pcn-section h2{font-size:30px;line-height:1.12}.pcn-section h3{font-size:20px}.pcn-section p,.pcn-lead{font-size:15.5px!important;line-height:1.68!important}.pcn-card,.pcn-package,.pcn-step,.pcn-review{border-radius:22px;padding:20px}.pcn-table th,.pcn-table td{padding:12px;font-size:13.8px}.pcn-media,.pcn-video,.pcn-cta-form{border-radius:24px}.pcn-cta-left,.pcn-form{padding:22px}.pcn-btn{width:100%}}
+
+
+/* V13.6 catalog + warranty additions */
+.pcn-subtle-bar{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 24px}.pcn-chip{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:#f5f5f7;border:1px solid rgba(0,0,0,.06);color:var(--pcn-muted);font-size:13px;font-weight:500}.pcn-chip strong{color:var(--pcn-ink);font-weight:620}.pcn-package-detail{display:grid;grid-template-columns:1.05fr 1.2fr;gap:18px;margin:20px 0}.pcn-catalog-card{padding:24px;border-radius:28px;background:#fff;border:1px solid rgba(0,0,0,.065);box-shadow:var(--pcn-shadow-sm)}.pcn-catalog-card h3{margin-top:0}.pcn-catalog-card .pcn-price-line{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-top:1px solid rgba(0,0,0,.055);font-size:14.5px;color:var(--pcn-muted)}.pcn-catalog-card .pcn-price-line strong{color:var(--pcn-red);font-weight:650;white-space:nowrap}.pcn-warranty-box{margin:22px 0;padding:24px;border-radius:28px;background:linear-gradient(180deg,#fff 0%,#fbfbfd 100%);border:1px solid rgba(230,0,18,.14);box-shadow:var(--pcn-shadow-sm)}.pcn-warranty-box h3{margin-top:0}.pcn-case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:20px 0}.pcn-case{padding:22px;border-radius:24px;background:#fbfbfd;border:1px solid rgba(0,0,0,.06)}.pcn-case h3{margin:0 0 8px;font-size:17px}.pcn-case p{font-size:14.6px}.pcn-brand-table td:first-child{white-space:nowrap}.pcn-source-note{font-size:13.5px!important;color:var(--pcn-tertiary)!important}.pcn-media-brief{margin-top:26px;padding:24px;border-radius:28px;background:#fbfbfd;border:1px solid rgba(0,0,0,.06)}.pcn-media-brief ol{margin:0;padding-left:20px;color:var(--pcn-muted);font-size:15px;line-height:1.65}.pcn-media-brief li{margin-bottom:10px}.pcn-media-brief strong{color:var(--pcn-ink)}
+@media(max-width:900px){.pcn-package-detail,.pcn-case-grid{grid-template-columns:1fr}.pcn-brand-table td:first-child{white-space:normal}}
+
+
+
+/* Brand landscape with logo cards */
+.pcn-brand-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:16px;
+  margin:26px 0 18px;
+}
+.pcn-brand-card{
+  min-height:100%;
+  padding:20px;
+  border-radius:24px;
+  background:linear-gradient(180deg,#fff 0%,#fbfbfd 100%);
+  border:1px solid var(--pcn-line-soft);
+  box-shadow:0 1px 2px rgba(0,0,0,.025);
+}
+.pcn-brand-top{
+  display:flex;
+  align-items:center;
+  gap:13px;
+  margin-bottom:12px;
+}
+.pcn-brand-logo{
+  width:68px;
+  height:68px;
+  border-radius:18px;
+  background:#f5f5f7;
+  border:1px solid rgba(0,0,0,.06);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  overflow:hidden;
+}
+.pcn-brand-logo img{
+  display:block;
+  max-width:82%;
+  max-height:82%;
+  object-fit:contain;
+}
+.pcn-brand-fallback{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+  color:#1d1d1f;
+  font-size:12px;
+  line-height:1.05;
+  font-weight:650;
+  text-align:center;
+  letter-spacing:-.02em;
+  padding:6px;
+}
+.pcn-brand-card h3{
+  margin:0;
+  color:var(--pcn-ink);
+  font-size:19px;
+  line-height:1.16;
+  letter-spacing:-.025em;
+  font-weight:650;
+}
+.pcn-brand-card p{
+  margin:0;
+  color:var(--pcn-muted);
+  font-size:14.5px;
+  line-height:1.62;
+}
+@media(max-width:1024px){
+  .pcn-brand-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+}
+@media(max-width:760px){
+  .pcn-brand-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+  .pcn-brand-card{padding:16px;border-radius:20px;}
+  .pcn-brand-logo{width:58px;height:58px;border-radius:18px;}
+}
+@media(max-width:520px){
+  .pcn-brand-grid{grid-template-columns:1fr;}
+}
+
+</style>
 </head>
-
 <body>
-  <section class="auto365-3m-price-section">
-    <h2>Tóm tắt nhanh các gói phim cách nhiệt 3M</h2>
-
-    <p class="auto365-3m-price-desc">
-      Bảng dưới đây tổng hợp nhanh giá trọn xe, mã phim theo từng vị trí kính, giá dán lẻ kính lái, kính sườn, kính lưng
-      và cách tính giá cửa sổ trời cho các gói phim cách nhiệt 3M.
-    </p>
-
-    <div class="auto365-3m-table-wrap">
-      <table class="auto365-3m-price-table">
-        <thead>
-          <tr>
-            <th>Gói phim</th>
-            <th>URL</th>
-            <th>Giá trọn xe</th>
-            <th>Kính lái</th>
-            <th>Kính sườn</th>
-            <th>Kính lưng</th>
-            <th>Cửa sổ trời</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>
-              <div class="auto365-3m-package">Crystalline CR BLK PRO</div>
-            </td>
-            <td>phim-cach-nhiet-3m-crystalline-cr-blk-pro</td>
-            <td>
-              Minicar: <span class="auto365-3m-price">12.900.000 VND</span><br>
-              Sedan: <span class="auto365-3m-price">15.500.000 VND</span><br>
-              SUV: <span class="auto365-3m-price">18.300.000 VND</span>
-            </td>
-            <td>CR BLK 40<br><span class="auto365-3m-price">6.500.000 VND</span></td>
-            <td>CR BLK 15/35<br><span class="auto365-3m-price">2.600.000 VND</span></td>
-            <td>CR BLK 15/35<br><span class="auto365-3m-price">4.100.000 VND</span></td>
-            <td>
-              Nhỏ: <span class="auto365-3m-price">1.300.000 VND</span><br>
-              Panorama: <span class="auto365-3m-price">6.500.000 VND</span>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="auto365-3m-package">Crystalline CR BLK</div>
-            </td>
-            <td>phim-cach-nhiet-3m-crystalline-cr-blk</td>
-            <td>
-              Minicar: <span class="auto365-3m-price">12.200.000 VND</span><br>
-              Sedan: <span class="auto365-3m-price">14.800.000 VND</span><br>
-              SUV: <span class="auto365-3m-price">17.600.000 VND</span>
-            </td>
-            <td>CR BLK 50/60<br><span class="auto365-3m-price">5.700.000 VND</span></td>
-            <td>CR BLK 15/35<br><span class="auto365-3m-price">2.600.000 VND</span></td>
-            <td>CR BLK 15/35<br><span class="auto365-3m-price">4.100.000 VND</span></td>
-            <td>
-              Nhỏ: <span class="auto365-3m-price">1.300.000 VND</span><br>
-              Panorama: <span class="auto365-3m-price">5.700.000 VND</span>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="auto365-3m-package">Crystalline Hybrid PRO</div>
-            </td>
-            <td>phim-cach-nhiet-3m-crystalline-hybrid-pro</td>
-            <td>
-              Minicar: <span class="auto365-3m-price">9.800.000 VND</span><br>
-              Sedan: <span class="auto365-3m-price">11.600.000 VND</span><br>
-              SUV: <span class="auto365-3m-price">13.300.000 VND</span>
-            </td>
-            <td>CR BLK 40<br><span class="auto365-3m-price">6.500.000 VND</span></td>
-            <td>NR 25/15/5<br><span class="auto365-3m-price">1.700.000 VND</span></td>
-            <td>NR 25/15/5<br><span class="auto365-3m-price">1.900.000 VND</span></td>
-            <td>
-              Nhỏ: <span class="auto365-3m-price">850.000 VND</span><br>
-              Panorama: <span class="auto365-3m-price">6.500.000 VND</span>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="auto365-3m-package">Crystalline Hybrid</div>
-            </td>
-            <td>phim-cach-nhiet-3m-crystalline-hybrid</td>
-            <td>
-              Minicar: <span class="auto365-3m-price">9.000.000 VND</span><br>
-              Sedan: <span class="auto365-3m-price">10.800.000 VND</span><br>
-              SUV: <span class="auto365-3m-price">12.500.000 VND</span>
-            </td>
-            <td>CR BLK 50/60<br><span class="auto365-3m-price">5.700.000 VND</span></td>
-            <td>NR 25/15/5<br><span class="auto365-3m-price">1.700.000 VND</span></td>
-            <td>NR 25/15/5<br><span class="auto365-3m-price">1.900.000 VND</span></td>
-            <td>
-              Nhỏ: <span class="auto365-3m-price">850.000 VND</span><br>
-              Panorama: <span class="auto365-3m-price">5.700.000 VND</span>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="auto365-3m-package">3M Ceramic Hybrid / Ceramic NR</div>
-            </td>
-            <td>phim-cach-nhiet-o-to-3m-ceramic-hybrid</td>
-            <td>
-              Minicar: <span class="auto365-3m-price">5.900.000 VND</span><br>
-              Sedan: <span class="auto365-3m-price">7.900.000 VND</span><br>
-              SUV: <span class="auto365-3m-price">9.500.000 VND</span>
-            </td>
-            <td>NR 35/25<br><span class="auto365-3m-price">2.600.000 VND</span></td>
-            <td>NR 25/15/5<br><span class="auto365-3m-price">1.700.000 VND</span></td>
-            <td>NR 25/15/5<br><span class="auto365-3m-price">1.900.000 VND</span></td>
-            <td>
-              Nhỏ: <span class="auto365-3m-price">850.000 VND</span><br>
-              Panorama: <span class="auto365-3m-price">2.600.000 VND</span>
-            </td>
-          </tr>
-
-          <tr>
-            <td>
-              <div class="auto365-3m-package">Ceramic IR</div>
-            </td>
-            <td>phim-cach-nhiet-3m-ceramic-ir</td>
-            <td>
-              Minicar: <span class="auto365-3m-muted">Chưa có trong catalog</span><br>
-              Sedan: <span class="auto365-3m-price">9.000.000 VND</span><br>
-              SUV: <span class="auto365-3m-price">10.500.000 VND</span>
-            </td>
-            <td>IR 50<br><span class="auto365-3m-price">3.300.000 VND</span></td>
-            <td>IR 25/15<br><span class="auto365-3m-price">1.800.000 VND</span></td>
-            <td>IR 25/15<br><span class="auto365-3m-price">2.300.000 VND</span></td>
-            <td>
-              Nhỏ: <span class="auto365-3m-price">900.000 VND</span><br>
-              Panorama: <span class="auto365-3m-price">3.300.000 VND</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <p class="auto365-3m-note">
-      <strong>Ghi chú:</strong> Giá tham khảo theo catalog 3M 2026. Phim cách nhiệt 3M được bảo hành chính hãng 10 năm
-      khi đã dán trên xe và kích hoạt bảo hành điện tử. Cửa sổ trời nhỏ tính bằng 1/2 giá kính sườn, cửa sổ trời
-      panorama tính bằng một kính lái.
-    </p>
-  </section>
+<main class="pcn-page">
+<article class="pcn-shell" itemscope="" itemtype="https://schema.org/CollectionPage">
+<header class="pcn-hero" id="top">
+<div class="pcn-hero-grid">
+<div>
+<span class="pcn-kicker">Auto365 Film Hub</span>
+<h1>Phim cách nhiệt ô tô chính hãng: bảng giá, cách chọn và địa chỉ dán uy tín</h1>
+<p><strong>Phim cách nhiệt ô tô</strong> giúp giảm nóng khoang xe, giảm chói, hỗ trợ cản tia UV, tăng sự riêng tư và bảo vệ nội thất khi xe thường xuyên vận hành dưới nắng. Điều quan trọng không chỉ là chọn thương hiệu, mà là chọn đúng mã phim cho từng vị trí kính và đúng nhu cầu sử dụng thực tế.</p>
+<p>Trang này tổng hợp cách đọc thông số, cách chọn phim cho kính lái, kính sườn, kính hậu, cửa sổ trời, bảng giá tham khảo và các gói phim 3M đang được Auto365 tư vấn, phân phối và thi công.</p>
+<div class="pcn-hero-actions">
+<a class="pcn-btn pcn-btn-primary" href="#bang-gia-goi-3m">Xem bảng giá</a>
+<a class="pcn-btn pcn-btn-ghost" href="#cach-chon-phim">Chọn phim theo xe</a>
+<a class="pcn-btn pcn-btn-ghost" href="#quy-trinh-dia-chi">Tìm điểm dán phim</a>
+</div>
+</div>
+<aside aria-label="Chọn nhanh phim cách nhiệt" class="pcn-hero-card">
+<h2>Chọn nhanh trong 30 giây</h2>
+<ul>
+<li><strong>Muốn mát rõ, chi phí hợp lý:</strong> ưu tiên gói ceramic, thông số rõ và bảo hành minh bạch.</li>
+<li><strong>Muốn kính lái sáng, cao cấp:</strong> chọn nhóm phim có VLT phù hợp, giảm chói tốt và tầm nhìn dễ chịu.</li>
+<li><strong>Xe gia đình, xe điện, xe nhiều kính:</strong> cần phối phim riêng cho kính lái, kính sườn, kính hậu và cửa sổ trời.</li>
+<li><strong>Đã có phim cũ:</strong> nên đo lại VLT/UV/IR, kiểm tra bong mép, bọt khí, phai màu trước khi quyết định thay.</li>
+</ul>
+</aside>
+</div>
+<div aria-label="Thông tin nhanh về dịch vụ phim cách nhiệt Auto365" class="pcn-quick-stats">
+<div class="pcn-stat"><strong>90+</strong><span>đại lý Auto365 toàn quốc</span></div>
+<div class="pcn-stat"><strong>3M</strong><span>gói phim chính hãng được tư vấn theo xe</span></div>
+<div class="pcn-stat"><strong>10 năm</strong><span>bảo hành điện tử với một số dòng 3M</span></div>
+<div class="pcn-stat"><strong>5 vị trí</strong><span>kính lái, sườn, hậu, cửa sổ trời, panorama</span></div>
+</div>
+</header>
+<nav aria-label="Mục lục phim cách nhiệt ô tô" class="pcn-toc">
+<div class="pcn-toc-inner">
+<a href="#phim-cach-nhiet-la-gi">1. Khái niệm</a>
+<a href="#cong-nghe-thong-so">2. Công nghệ &amp; thông số</a>
+<a href="#cach-chon-phim">3. Cách chọn phim</a>
+<a href="#bang-gia-goi-3m">4. Bảng giá &amp; gói 3M</a>
+<a href="#so-sanh-thuong-hieu">5. Thương hiệu phim</a>
+<a href="#kiem-tra-tu-van">6. Kiểm tra &amp; tư vấn kỹ</a>
+<a href="#quy-trinh-dia-chi">7. Quy trình &amp; địa chỉ</a>
+<a href="#faq-phim-cach-nhiet">8. FAQ</a>
+</div>
+</nav>
+<div class="pcn-body">
+<section class="pcn-section" id="phim-cach-nhiet-la-gi">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Tổng quan</span>
+<h2>1. Phim cách nhiệt ô tô là gì?</h2>
+<p class="pcn-lead"><strong>Phim cách nhiệt ô tô</strong> là lớp màng chuyên dụng được dán ở mặt trong kính xe để kiểm soát năng lượng mặt trời đi vào cabin. Một bộ phim phù hợp không chỉ làm kính tối hơn, mà cần cân bằng khả năng hỗ trợ giảm nhiệt, độ truyền sáng, mức giảm chói, độ riêng tư, độ bền, bảo hành và cảm giác quan sát thực tế.</p>
+</div>
+<p>Với ô tô, mỗi vùng kính có vai trò khác nhau. Kính lái cần ưu tiên tầm nhìn khi đi đêm, trời mưa hoặc ra vào hầm. Kính sườn trước cần dễ quan sát gương. Kính sườn sau và kính hậu có thể ưu tiên riêng tư hơn. Cửa sổ trời hoặc kính trần toàn cảnh nhận nắng trực diện từ phía trên, nên cần tư vấn riêng theo diện tích kính và thói quen sử dụng.</p>
+<div class="pcn-card pcn-card-accent">
+<h3>8 lợi ích chính khi dán phim cách nhiệt</h3>
+<div class="pcn-grid-4">
+<div><strong>Giảm nóng cabin</strong><p>Hỗ trợ giảm lượng năng lượng mặt trời truyền qua kính, giúp khoang xe dịu hơn khi đi nắng.</p></div>
+<div><strong>Hỗ trợ cản tia UV</strong><p>Góp phần bảo vệ da, mắt và hạn chế nội thất bạc màu theo thời gian.</p></div>
+<div><strong>Giảm chói</strong><p>Giúp ánh nắng gắt và đèn pha đối diện bớt gây khó chịu cho người lái.</p></div>
+<div><strong>Tăng riêng tư</strong><p>Phù hợp cho khoang sau, xe gia đình, xe dịch vụ hoặc xe cần không gian kín đáo hơn.</p></div>
+<div><strong>Bảo vệ nội thất</strong><p>Hạn chế tác động của nắng, nhiệt và tia UV lên taplo, ghế da, tapi cửa.</p></div>
+<div><strong>Giảm tải điều hòa</strong><p>Khi nhiệt qua kính được kiểm soát tốt hơn, cabin dễ đạt cảm giác mát hơn.</p></div>
+<div><strong>Tăng thẩm mỹ</strong><p>Tông phim phù hợp giúp kính xe liền mạch, sang hơn nhưng vẫn cần đảm bảo tầm nhìn.</p></div>
+<div><strong>Phù hợp nhiều nhóm xe</strong><p>Có thể phối cho minicar, sedan, SUV, MPV, bán tải, xe tải, xe khách, limousine và xe điện.</p></div>
+</div>
+</div>
+<div class="pcn-grid-2">
+<div class="pcn-card"><h3>Điều cần hiểu đúng trước khi dán phim</h3><p>Dán phim không nên hiểu là “làm tối kính”. Một cấu hình tốt là cấu hình được phối theo từng vùng kính. Kính lái thường ưu tiên độ truyền sáng phù hợp; kính sườn sau và kính hậu có thể chọn mã tối hơn; xe có kính trần hoặc panorama cần tư vấn riêng vì diện tích kính lớn và nhận nắng trực tiếp.</p></div>
+<div class="pcn-card"><h3>Kinh nghiệm trước khi chốt gói</h3><p>Khách hàng nên hỏi rõ mã phim cho kính lái, kính sườn, kính hậu, cửa sổ trời nếu có, điều kiện bảo hành và cách kiểm tra sau thi công. Cùng một tên gói nhưng nếu mã kính lái khác nhau thì trải nghiệm, mức giá và cảm giác quan sát cũng có thể khác.</p></div>
+</div>
+</section>
+<section class="pcn-section" id="cong-nghe-thong-so">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Nền tảng kỹ thuật</span>
+<h2>2. Công nghệ phim, thông số cần biết và bảng thông số catalog</h2>
+<p class="pcn-lead">Để chọn phim đúng, khách hàng nên hiểu hai lớp thông tin: công nghệ phim và bộ thông số kỹ thuật. Những chỉ số như TSER, VLT, UVR, IRR, IRER, VLR và Glare Reduction giúp so sánh có cơ sở hơn thay vì chỉ chọn theo màu kính hoặc tên thương hiệu.</p>
+</div>
+<div class="pcn-table-wrap">
+<table class="pcn-table">
+<caption>Các công nghệ phim cách nhiệt ô tô phổ biến</caption>
+<thead><tr><th>Công nghệ</th><th>Đặc điểm</th><th>Phù hợp với ai?</th><th>Lưu ý khi chọn</th></tr></thead>
+<tbody>
+<tr><td>Dyed Film</td><td>Chủ yếu dùng lớp nhuộm để tạo màu tối.</td><td>Khách cần chi phí thấp, tăng riêng tư cơ bản.</td><td>Hiệu quả nhiệt và độ bền màu thường cần kiểm tra kỹ.</td></tr>
+<tr><td>Metalized</td><td>Có lớp kim loại hỗ trợ phản xạ năng lượng.</td><td>Người ưu tiên kiểm soát nhiệt và chấp nhận độ phản xạ tùy dòng.</td><td>Cần kiểm tra khả năng tương thích với thiết bị thu phát trên xe.</td></tr>
+<tr><td>Sputter</td><td>Lớp phủ mỏng được xử lý chính xác hơn.</td><td>Khách muốn hiệu năng ổn định, thẩm mỹ tốt.</td><td>Nên so sánh theo mã phim cụ thể, không chỉ theo tên công nghệ.</td></tr>
+<tr><td>Nano Ceramic</td><td>Sử dụng vật liệu gốm nano để xử lý nhiệt và ánh sáng.</td><td>Xe gia đình, xe đi phố, khách muốn ít phản gương và dễ sử dụng.</td><td>Cần xem TSER/VLT thực tế, không chỉ nhìn chỉ số IRR.</td></tr>
+<tr><td>Quang học đa lớp</td><td>Nhiều lớp quang học kiểm soát phổ ánh sáng.</td><td>Khách ưu tiên kính lái sáng, thẩm mỹ và trải nghiệm cao cấp.</td><td>Giá thường cao hơn, cần phối đúng mã theo từng vị trí kính.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pcn-grid-3">
+<div class="pcn-card"><h3>TSER là gì?</h3><p>TSER là tỷ lệ loại bỏ tổng năng lượng mặt trời. Đây là chỉ số quan trọng khi đánh giá khả năng hỗ trợ giảm nóng tổng thể, vì nó phản ánh nhiều dạng năng lượng tác động lên kính.</p></div>
+<div class="pcn-card"><h3>VLT là gì?</h3><p>VLT là độ truyền sáng. VLT càng cao thì kính càng sáng, càng dễ quan sát; VLT càng thấp thì kính càng tối và riêng tư hơn. Kính lái cần cân nhắc VLT kỹ nhất.</p></div>
+<div class="pcn-card"><h3>UVR là gì?</h3><p>UVR là khả năng cản tia cực tím. Chỉ số này liên quan đến bảo vệ da, mắt và nội thất, khác với IRR/IRER là nhóm chỉ số về hồng ngoại.</p></div>
+<div class="pcn-card"><h3>IRR là gì?</h3><p>IRR thường thể hiện khả năng loại bỏ tia hồng ngoại trong một dải bước sóng nhất định. Không nên chỉ nhìn IRR để kết luận phim mát, vì trải nghiệm còn phụ thuộc TSER, VLT và kính nguyên bản.</p></div>
+<div class="pcn-card"><h3>IRER là gì?</h3><p>IRER đánh giá năng lượng hồng ngoại trên dải rộng hơn và tính đến phần năng lượng hấp thụ có thể tái phát vào trong xe. Đây là chỉ số hữu ích khi so sánh sâu hơn giữa các mã phim.</p></div>
+<div class="pcn-card"><h3>VLR và Glare Reduction</h3><p>VLR liên quan đến tỷ lệ phản xạ ánh sáng nhìn thấy; Glare Reduction là tỷ lệ giảm chói. Hai chỉ số này ảnh hưởng nhiều đến cảm giác nhìn, độ phản gương và độ dễ chịu khi lái xe.</p></div>
+</div>
+<p class="pcn-note"><strong>Lưu ý về dữ liệu:</strong> các bảng dưới đây là thông số catalog của tấm phim theo tài liệu 3M/365Group. Số đo thực tế sau khi dán trên xe có thể khác vì phụ thuộc kính nguyên bản, vị trí kính, thiết bị đo và điều kiện đo tại thời điểm nghiệm thu.</p>
+<div class="pcn-table-wrap">
+<table class="pcn-table">
+<caption>Bảng thông số catalog 3M Crystalline CR BLK</caption>
+<thead><tr><th>Mã phim</th><th>TSER</th><th>IRER</th><th>VLT</th><th>UVR</th><th>Giảm chói</th><th>IRR</th></tr></thead>
+<tbody>
+<tr><td>CR BLK 60</td><td>54%</td><td>67%</td><td>57%</td><td>99.9%</td><td>22%</td><td>97%</td></tr>
+<tr><td>CR BLK 50</td><td>56%</td><td>68%</td><td>48%</td><td>99.9%</td><td>34%</td><td>98%</td></tr>
+<tr><td>CR BLK 40</td><td>58%</td><td>67%</td><td>48%*</td><td>99.9%</td><td>44%</td><td>98%</td></tr>
+<tr><td>CR BLK 35</td><td>60%</td><td>67%</td><td>33%</td><td>99.9%</td><td>55%</td><td>98%</td></tr>
+<tr><td>CR BLK 15</td><td>64%</td><td>66%</td><td>14%</td><td>99.9%</td><td>81%</td><td>98%</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pcn-table-wrap">
+<table class="pcn-table">
+<caption>Bảng thông số catalog 3M Ceramic Hybrid / Ceramic NR</caption>
+<thead><tr><th>Mã phim</th><th>TSER</th><th>IRER</th><th>VLT</th><th>UVR</th><th>Giảm chói</th><th>IRR</th></tr></thead>
+<tbody>
+<tr><td>NR35</td><td>51%</td><td>58%</td><td>43%</td><td>99%</td><td>52%</td><td>79%</td></tr>
+<tr><td>NR25</td><td>59%</td><td>63%</td><td>29%</td><td>99%</td><td>68%</td><td>86%</td></tr>
+<tr><td>NR15</td><td>65%</td><td>66%</td><td>14%</td><td>99%</td><td>84%</td><td>86%</td></tr>
+<tr><td>NR5</td><td>69%</td><td>68%</td><td>7%</td><td>99%</td><td>93%</td><td>91%</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pcn-table-wrap">
+<table class="pcn-table">
+<caption>Bảng thông số catalog 3M Ceramic IR</caption>
+<thead><tr><th>Mã phim</th><th>TSER</th><th>IRER</th><th>VLT</th><th>UVR</th><th>Giảm chói</th><th>IRR</th></tr></thead>
+<tbody>
+<tr><td>IR50</td><td>47%</td><td>66%</td><td>58%</td><td>99%</td><td>32%</td><td>83%</td></tr>
+<tr><td>IR25</td><td>57%</td><td>67%</td><td>30%</td><td>99%</td><td>65%</td><td>90%</td></tr>
+<tr><td>IR15</td><td>59%</td><td>67%</td><td>18%</td><td>99%</td><td>78%</td><td>90%</td></tr>
+</tbody>
+</table>
+</div>
+<p class="pcn-note">* CR BLK 40 có VLT 48% theo ghi chú đo thực tế trên phim tại thị trường Việt Nam trong catalog. Quy định về dán phim có thể thay đổi theo khu vực; khách hàng nên hỏi tư vấn viên để chọn loại phim phù hợp với điều kiện sử dụng xe.</p>
+</section>
+<section class="pcn-section" id="cach-chon-phim">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Decision map</span>
+<h2>3. Cách chọn phim cách nhiệt phù hợp cho từng xe</h2>
+<p class="pcn-lead">Một cấu hình phim tốt nên bắt đầu từ vị trí kính, nhóm xe và thói quen sử dụng. Kính lái, kính sườn, kính hậu và cửa sổ trời không nên chọn cùng một tiêu chí, vì mỗi vị trí ảnh hưởng khác nhau đến tầm nhìn, nhiệt cabin, độ riêng tư và trải nghiệm hành khách.</p>
+</div>
+<div class="pcn-table-wrap"><table class="pcn-table"><caption>Gợi ý mã phim 3M theo từng vị trí dán</caption><thead><tr><th>Vị trí kính</th><th>Ưu tiên khi chọn</th><th>Gợi ý mã phim tham khảo</th><th>Lưu ý khi chốt cấu hình</th></tr></thead><tbody>
+<tr><td>Kính lái</td><td>Độ truyền sáng phù hợp, dễ quan sát ban đêm, giảm chói vừa phải, TSER tốt.</td><td>CR BLK 60 / CR BLK 50 / CR BLK 40; NR35 / NR25; IR50.</td><td>Nên xem mẫu thật trên xe hoặc kính mẫu, cân nhắc kính nguyên bản, thói quen đi đêm và điều kiện sử dụng.</td></tr>
+<tr><td>Kính sườn trước</td><td>Quan sát gương, giảm nắng ngang, vẫn đủ sáng khi đi đường thiếu sáng.</td><td>CR BLK 50 / CR BLK 40 / CR BLK 35; NR25 / NR15; IR25.</td><td>Nên tránh chọn quá tối nếu xe thường đi đêm, đi đường tỉnh hoặc cần quan sát gương liên tục.</td></tr>
+<tr><td>Kính sườn sau</td><td>Riêng tư, giảm chói khoang sau, hỗ trợ bảo vệ hành khách.</td><td>CR BLK 35 / CR BLK 15; NR15 / NR5; IR25 / IR15.</td><td>Có thể chọn mã tối hơn kính lái, nhưng vẫn nên kiểm tra cảm giác nhìn từ bên trong ra ngoài.</td></tr>
+<tr><td>Kính lưng</td><td>Giảm nắng phía sau, riêng tư, không ảnh hưởng quá nhiều đến camera/gương hậu.</td><td>CR BLK 35 / CR BLK 15; NR15 / NR5; IR25 / IR15.</td><td>Cần cân nhắc camera lùi, gương chiếu hậu điện tử, phim cũ còn lại và thói quen di chuyển ban đêm.</td></tr>
+<tr><td>Cửa sổ trời nhỏ</td><td>Giảm nóng đỉnh đầu, vẫn giữ cảm giác thoáng nếu chủ xe cần ánh sáng tự nhiên.</td><td>CR BLK 35 / CR BLK 15; NR15 / NR5.</td><td>Giá thường tham chiếu như một ô kính sườn theo catalog, nhưng vẫn cần kiểm tra kích thước thực tế.</td></tr>
+<tr><td>Kính trần panorama</td><td>Kiểm soát nhiệt từ phía trên, diện tích kính lớn, phối với rèm che và điều hòa.</td><td>CR BLK 35 / CR BLK 15; NR15 / NR5 tùy nhu cầu riêng tư và mức nóng thực tế.</td><td>Không nên áp máy móc như kính sườn nhỏ; panorama lớn thường cần tư vấn riêng theo diện tích và dòng xe.</td></tr>
+</tbody></table></div>
+<p class="pcn-note"><strong>Lưu ý:</strong> bảng trên là gợi ý tham khảo theo catalog 3M/365Group và kinh nghiệm tư vấn vị trí kính. Cấu hình cuối cùng nên được xác nhận theo dòng xe, kính nguyên bản, nhu cầu đi đêm, thiết bị gắn trên kính và chính sách tại thời điểm thi công.</p>
+<div class="pcn-card pcn-card-accent">
+<h3>Ý kiến chuyên môn từ Auto365</h3>
+<p>Với kính lái, yếu tố quan trọng nhất không phải là chọn mã phim tối nhất mà là giữ tầm nhìn ổn định trong nhiều điều kiện: nắng gắt, trời mưa, đi đêm và ra vào hầm. Với kính sườn sau, kính lưng và cửa sổ trời, chủ xe có thể ưu tiên riêng tư và giảm chói nhiều hơn, nhưng vẫn cần kiểm tra cảm giác quan sát thực tế sau khi phối phim.</p>
+<p>Đội ngũ Auto365 thường tư vấn theo nguyên tắc: kính lái sáng và dễ nhìn, khoang sau dịu nắng hơn, cửa sổ trời tư vấn riêng, còn xe điện hoặc xe nhiều thiết bị cần xem thêm vị trí gắn VETC, camera hành trình, GPS và cấu tạo kính.</p>
+</div>
+<h3>Chọn theo nhu cầu sử dụng thực tế</h3>
+<div class="pcn-grid-3">
+<div class="pcn-card"><h3>Xe gia đình</h3><p>Ưu tiên kính lái dễ quan sát, khoang sau dịu nắng, khả năng hạn chế UV và bảo hành rõ ràng. Nếu có trẻ nhỏ hoặc người lớn tuổi, nên xem kỹ cảm giác hàng ghế sau sau khi phối phim.</p></div>
+<div class="pcn-card"><h3>Xe dịch vụ</h3><p>Cần cấu hình ổn định, chi phí hợp lý, dễ bảo hành và không làm nhiều nhóm khách khó chịu. Kính lái và kính sườn trước không nên quá tối để tài xế quan sát tốt.</p></div>
+<div class="pcn-card"><h3>Xe điện, xe nhiều kính</h3><p>Xe điện thường có diện tích kính lớn, có thể có kính trần toàn cảnh và nhiều thiết bị điện tử. 3M Ceramic NR cần được mô tả đúng là dòng Ceramic Hybrid; việc tư vấn nên dựa trên mã phim, vị trí kính, cấu tạo kính và thiết bị sử dụng.</p></div>
+<div class="pcn-card"><h3>Xe bán tải</h3><p>Bán tải thường cần cân bằng giữa kính lái sáng, kính sườn chống nắng ngang và khoang sau đủ riêng tư. Với xe hay đi công trình hoặc đi tỉnh, nên ưu tiên độ bền, dễ chăm sóc và tầm nhìn khi đi đêm.</p></div>
+<div class="pcn-card"><h3>Xe tải, xe van, xe giao hàng</h3><p>Nhóm xe này thường chạy nhiều giờ, đỗ nắng và cần quan sát gương liên tục. Kính lái và kính sườn trước nên được tư vấn kỹ theo tầm nhìn, nhiệt cabin và đặc thù vận hành.</p></div>
+<div class="pcn-card"><h3>Xe khách, limousine, minibus</h3><p>Diện tích kính lớn khiến trải nghiệm hành khách bị ảnh hưởng nhiều bởi nắng ngang và nhiệt cabin. Nên tư vấn theo từng khoang kính, mức riêng tư, điều hòa và thời gian xe vận hành trong ngày.</p></div>
+</div>
+<h3>Những sai lầm thường gặp khi chọn phim</h3>
+<ul class="pcn-icon-list"><li>Chỉ chọn theo màu tối mà không đọc VLT, TSER, UVR, IRR/IRER.</li><li>Chọn kính lái quá tối khiến khó đi đêm, trời mưa hoặc ra vào hầm.</li><li>So sánh giá khi chưa biết mã phim từng vị trí kính.</li><li>Không hỏi rõ bảo hành, điều kiện áp dụng và cách kích hoạt sau thi công.</li><li>Không thông báo trước xe có phim cũ, camera hành trình, VETC, kính trần hoặc nhu cầu chạy đêm.</li></ul>
+<div class="pcn-cta pcn-cta-soft"><div><span>Tư vấn theo xe thật</span><h3>Không chắc xe của anh nên chọn cấu hình nào?</h3><p>Gửi dòng xe, thói quen sử dụng và ngân sách dự kiến, Auto365 sẽ tư vấn theo kính lái, kính sườn, kính hậu và cửa sổ trời thay vì chọn một mã phim cho toàn bộ xe.</p></div><a class="pcn-btn pcn-btn-primary" href="#form-tu-van">Nhận tư vấn cấu hình</a></div>
+</section>
+<section class="pcn-section" id="bang-gia-goi-3m">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Giá &amp; catalog</span>
+<h2>4. Bảng giá phim cách nhiệt và các gói 3M tại Auto365</h2>
+<p class="pcn-lead">Giá phim cách nhiệt phụ thuộc vào dòng phim, phân khúc xe, diện tích kính, cửa sổ trời, tình trạng phim cũ và cấu hình từng vị trí kính. Bảng dưới đây trình bày theo catalog 3M/365Group để khách hàng có điểm tham khảo trước khi tư vấn chi tiết.</p>
+</div>
+<div class="pcn-warranty-box">
+<h3>Bảo hành phim cách nhiệt 3M</h3>
+<p>Catalog 3M/365Group ghi rõ phim cách nhiệt 3M được bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử. Khách hàng nên lưu lại thông tin gói phim, mã phim từng vị trí kính và tra cứu bảo hành theo hướng dẫn sau thi công.</p>
+<div class="pcn-subtle-bar"><span class="pcn-chip"><strong>10 năm</strong> theo chính sách 3M áp dụng</span><span class="pcn-chip">Kích hoạt bảo hành điện tử</span><span class="pcn-chip">Cửa sổ trời nhỏ: bằng một ô kính sườn</span><span class="pcn-chip">Panorama: thường tính như kính lái</span></div>
+</div>
+<div class="pcn-table-wrap">
+<table class="pcn-table">
+<caption>Bảng giá gói phim cách nhiệt 3M theo catalog</caption>
+<thead><tr><th>Gói phim 3M</th><th>Minicar</th><th>Sedan</th><th>SUV</th><th>Cấu hình chính theo catalog</th></tr></thead>
+<tbody>
+<tr><td>3M Ceramic Hybrid / Ceramic NR</td><td><strong>5.900.000đ</strong></td><td><strong>7.900.000đ</strong></td><td><strong>9.500.000đ</strong></td><td>Kính lái NR35/NR25; kính sườn và kính lưng NR25/NR15/NR5.</td></tr>
+<tr><td>3M Ceramic IR</td><td>Liên hệ</td><td><strong>9.000.000đ</strong></td><td><strong>10.500.000đ</strong></td><td>Kính lái IR50; kính sườn IR25/IR15; kính lưng IR25/IR15.</td></tr>
+<tr><td>3M Crystalline Hybrid</td><td><strong>9.000.000đ</strong></td><td><strong>10.800.000đ</strong></td><td><strong>12.500.000đ</strong></td><td>Kính lái CR BLK 50/60; kính sườn và kính lưng NR25/NR15/NR5.</td></tr>
+<tr><td>3M Crystalline Hybrid PRO</td><td><strong>9.800.000đ</strong></td><td><strong>11.600.000đ</strong></td><td><strong>13.300.000đ</strong></td><td>Kính lái CR BLK 40; kính sườn và kính lưng NR25/NR15/NR5.</td></tr>
+<tr><td>3M Crystalline CR BLK</td><td><strong>12.200.000đ</strong></td><td><strong>14.800.000đ</strong></td><td><strong>17.600.000đ</strong></td><td>Kính lái CR BLK 50/60; kính sườn và kính lưng CR BLK 15/35.</td></tr>
+<tr><td>3M Crystalline CR BLK PRO</td><td><strong>12.900.000đ</strong></td><td><strong>15.500.000đ</strong></td><td><strong>18.300.000đ</strong></td><td>Kính lái CR BLK 40; kính sườn và kính lưng CR BLK 15/35.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pcn-table-wrap">
+<table class="pcn-table">
+<caption>Bảng giá dán lẻ theo vị trí kính</caption>
+<thead><tr><th>Vị trí kính</th><th>Mức giá tham khảo</th><th>Cách hiểu khi tư vấn</th></tr></thead>
+<tbody>
+<tr><td>Kính lái</td><td><strong>từ 2.600.000đ đến 6.500.000đ</strong></td><td>Giá thay đổi theo dòng phim được chọn cho kính lái. Kính lái cần ưu tiên độ truyền sáng, giảm chói hợp lý và tầm nhìn an toàn.</td></tr>
+<tr><td>Kính sườn</td><td><strong>từ 1.700.000đ đến 2.600.000đ</strong></td><td>Phù hợp khi chỉ cần xử lý nắng ngang, tăng riêng tư hoặc thay phim cũ ở một số cửa kính.</td></tr>
+<tr><td>Kính lưng</td><td><strong>từ 1.900.000đ đến 4.100.000đ</strong></td><td>Giá thay đổi theo dòng phim và diện tích kính lưng. Cần cân nhắc camera lùi, gương chiếu hậu và thói quen đi đêm.</td></tr>
+<tr><td>Cửa sổ trời nhỏ</td><td><strong>tính tương đương một ô kính sườn</strong></td><td>Phù hợp với xe có cửa sổ trời nhỏ, cần giảm nóng đỉnh đầu nhưng vẫn giữ cảm giác thoáng.</td></tr>
+<tr><td>Cửa sổ trời panorama</td><td><strong>thường tính tương đương kính lái</strong></td><td>Panorama có diện tích lớn, nhận nắng trực diện và cần tư vấn riêng theo kích thước kính, rèm che và nhu cầu sử dụng.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="pcn-grid-3">
+<div class="pcn-card"><h3>3M Ceramic Hybrid / Ceramic NR</h3><p>Gói dễ tiếp cận, phù hợp khách cần cấu hình thực dụng, nhiều mã NR để phối theo kính. 3M Ceramic NR là dòng Ceramic Hybrid, không nên gọi là phim phi kim tuyệt đối.</p></div>
+<div class="pcn-card"><h3>3M Ceramic IR</h3><p>Nhóm ceramic dễ dùng, phù hợp khách muốn cấu hình gọn, tông kính trung tính và giá nằm giữa Ceramic NR và nhóm Crystalline.</p></div>
+<div class="pcn-card"><h3>3M Crystalline Hybrid</h3><p>Gói phối kính lái CR BLK với kính sườn/kính lưng NR, phù hợp khách muốn nâng cấp kính lái nhưng vẫn giữ ngân sách hợp lý.</p></div>
+<div class="pcn-card"><h3>3M Crystalline Hybrid PRO</h3><p>Cấu hình dùng CR BLK 40 ở kính lái, hướng tới khách cần kính lái cao cấp hơn và khoang sau dùng NR theo vị trí kính.</p></div>
+<div class="pcn-card"><h3>3M Crystalline CR BLK</h3><p>Gói dùng CR BLK cho nhiều vị trí kính, phù hợp khách ưu tiên thẩm mỹ đen xám, tầm nhìn cao cấp và trải nghiệm đồng bộ hơn.</p></div>
+<div class="pcn-card"><h3>3M Crystalline CR BLK PRO</h3><p>Gói cao hơn trong nhóm CR BLK, dùng CR BLK 40 cho kính lái và CR BLK 15/35 cho kính sườn, kính lưng theo catalog.</p></div>
+</div>
+<p class="pcn-note"><strong>Lưu ý:</strong> giá thực tế cần được xác nhận theo dòng xe, kích thước kính, tình trạng phim cũ, cửa sổ trời và chính sách áp dụng tại thời điểm tư vấn. Bảng giá dán lẻ phía trên chỉ chia theo vị trí kính để khách hàng dễ hiểu, không chia theo từng gói nhằm tránh làm mục giá quá rối.</p>
+</section>
+<section class="pcn-section" id="so-sanh-thuong-hieu">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Brand landscape</span>
+<h2>5. Các thương hiệu phim cách nhiệt phổ biến tại Việt Nam</h2>
+<p class="pcn-lead">Thị trường phim cách nhiệt tại Việt Nam có nhiều thương hiệu ở nhiều phân khúc. Phần dưới đây giới thiệu ngắn gọn các thương hiệu phổ biến, đồng thời lồng ghép các cụm tìm kiếm như phim cách nhiệt 3M, phim cách nhiệt V-KOOL, phim cách nhiệt LLumar, phim cách nhiệt SunTek, phim cách nhiệt XPEL theo cách tự nhiên để người đọc có thêm điểm tham khảo trước khi xem mã phim, thông số và chính sách bảo hành.</p>
+</div>
+<div class="pcn-brand-grid" aria-label="Các thương hiệu phim cách nhiệt phổ biến tại Việt Nam">
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/3m-logo.png" alt="Logo 3M" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">3M</span></div><div><h3>3M</h3></div></div>
+  <p>Phim cách nhiệt 3M được nhiều chủ xe quan tâm nhờ hệ sản phẩm khá rộng như Ceramic NR, Ceramic IR và Crystalline CR BLK. Điểm dễ nhận thấy là có thể phối cấu hình cho kính lái, kính sườn, kính lưng và cửa sổ trời theo từng nhu cầu sử dụng, kèm chính sách bảo hành điện tử theo phạm vi áp dụng.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/v-kool-logo.png" alt="Logo V-KOOL" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">V-KOOL</span></div><div><h3>V-KOOL</h3></div></div>
+  <p>Phim cách nhiệt V-KOOL thường được nhắc đến trong nhóm sản phẩm kiểm soát nhiệt. Nhiều khách hàng tìm hiểu thương hiệu này khi quan tâm đến khả năng chống nóng và phong cách kính có độ phản xạ tùy theo từng dòng phim.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/llumar-logo.png" alt="Logo LLumar" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">LLumar</span></div><div><h3>LLumar</h3></div></div>
+  <p>Phim cách nhiệt LLumar là thương hiệu lâu năm với nhiều lựa chọn cho ô tô và công trình. Người dùng thường quan tâm LLumar ở dải sản phẩm rộng và độ nhận diện khá phổ biến trên thị trường.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/suntek-logo.png" alt="Logo SunTek" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">SunTek</span></div><div><h3>SunTek</h3></div></div>
+  <p>Phim cách nhiệt SunTek có nhiều dòng phim ô tô ở các phân khúc khác nhau. Đây là cái tên thường được tham khảo khi khách hàng muốn mở rộng lựa chọn ngoài các thương hiệu quen thuộc.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/xpel-logo.png" alt="Logo XPEL" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">XPEL</span></div><div><h3>XPEL</h3></div></div>
+  <p>Phim cách nhiệt XPEL thường được biết đến cùng hệ sinh thái chăm sóc xe và PPF. Nhiều khách hàng tìm hiểu XPEL khi ưu tiên trải nghiệm hoàn thiện, thẩm mỹ và chất lượng thi công đồng bộ.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/solar-gard-logo.png" alt="Logo Solar Gard" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Solar Gard</span></div><div><h3>Solar Gard</h3></div></div>
+  <p>Phim cách nhiệt Solar Gard có mặt trong nhiều nhóm giải pháp cho ô tô và công trình. Thương hiệu này thường được quan tâm ở khía cạnh kiểm soát năng lượng mặt trời và giảm chói.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/huper-optik-logo.png" alt="Logo Huper Optik" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Huper Optik</span></div><div><h3>Huper Optik</h3></div></div>
+  <p>Phim cách nhiệt Huper Optik thường được người dùng chú ý ở nhóm phim ceramic, vật liệu phủ và độ ổn định màu sắc trong quá trình sử dụng.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/johnson-window-films-logo.png" alt="Logo Johnson Window Films" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Johnson</span></div><div><h3>Johnson Window Films</h3></div></div>
+  <p>Phim cách nhiệt Johnson là thương hiệu lâu năm với nhiều nhóm sản phẩm ở nhiều phân khúc. Khách hàng thường tham khảo Johnson khi muốn cân đối ngân sách và nhu cầu sử dụng.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/rayno-logo.png" alt="Logo Rayno" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Rayno</span></div><div><h3>Rayno</h3></div></div>
+  <p>Phim cách nhiệt Rayno thường được nhắc tới ở nhóm phim nano carbon hoặc ceramic tại một số thị trường, với nhiều lựa chọn về tông màu, mức truyền sáng và hiệu năng.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/nanox-logo.png" alt="Logo NanoX" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">NanoX</span></div><div><h3>NanoX</h3></div></div>
+  <p>Phim cách nhiệt NanoX xuất hiện trong nhiều bảng tham khảo tại Việt Nam và thường được người dùng quan tâm ở nhóm giá dễ tiếp cận, cấu hình phổ thông.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/classis-logo.png" alt="Logo Classis" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Classis</span></div><div><h3>Classis</h3></div></div>
+  <p>Phim cách nhiệt Classis thường xuất hiện trong các gói dịch vụ ở thị trường chăm sóc xe, phù hợp người dùng muốn mở rộng lựa chọn theo ngân sách và nhu cầu cơ bản.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/ntech-logo.png" alt="Logo Ntech" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Ntech</span></div><div><h3>Ntech</h3></div></div>
+  <p>Phim cách nhiệt Ntech là một trong các thương hiệu được nhắc tới ở nhóm có nhiều gói dịch vụ. Khi tìm hiểu, khách hàng thường so sánh thêm về chi phí, mã phim và điều kiện bảo hành.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/ceramax-logo.png" alt="Logo Ceramax" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Ceramax</span></div><div><h3>Ceramax</h3></div></div>
+  <p>Phim cách nhiệt Ceramax thường được nhắc đến trong nhóm ceramic hoặc giải pháp chống nóng, phù hợp người dùng muốn tham khảo thêm lựa chọn ở phân khúc cạnh tranh.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/inmax-logo.png" alt="Logo Inmax" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Inmax</span></div><div><h3>Inmax</h3></div></div>
+  <p>Phim cách nhiệt Inmax là nhóm thương hiệu được một số đơn vị chăm sóc xe giới thiệu ở phân khúc phổ thông hoặc tầm trung. Khi chọn, nên kiểm tra kỹ mã phim, thông số và bảo hành.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/cool-n-lite-logo.png" alt="Logo Cool N Lite" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Cool N Lite</span></div><div><h3>Cool N Lite</h3></div></div>
+  <p>Phim cách nhiệt Cool N Lite thường được người dùng tham khảo ở nhóm sản phẩm phổ biến trên thị trường. Khi lựa chọn, nên đối chiếu thêm thông số công bố, nguồn gốc phân phối và điều kiện bảo hành.</p>
+</div>
+<div class="pcn-brand-card">
+  <div class="pcn-brand-top"><div class="pcn-brand-logo"><img src="/uploads/images/brands/phim-cach-nhiet/film-brands-logo.png" alt="Logo nhóm thương hiệu phim cách nhiệt khác" loading="lazy" decoding="async" onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex';"><span class="pcn-brand-fallback">Brand khác</span></div><div><h3>Các thương hiệu khác</h3></div></div>
+  <p>Ngoài các thương hiệu trên, thị trường còn có nhiều dòng phim được phân phối theo từng hệ thống. Khi tìm hiểu phim cách nhiệt chính hãng, khách hàng nên ưu tiên mã phim rõ ràng, thông số minh bạch, phiếu bảo hành và tay nghề thi công.</p>
+</div>
+</div>
+<p class="pcn-note"><strong>Cách chọn phù hợp:</strong> không nên quyết định chỉ theo logo hoặc tên thương hiệu. Nên hỏi rõ dòng phim, mã phim, thông số TSER/VLT/UVR/IRR/IRER/VLR, chính sách bảo hành, nguồn gốc phân phối và trải nghiệm nhìn thực tế trên kính lái.</p>
+</section>
+<section class="pcn-section" id="kiem-tra-tu-van">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Kiểm tra &amp; tư vấn</span>
+<h2>6. Kiểm tra phim chính hãng và các tình huống cần tư vấn kỹ</h2>
+<p class="pcn-lead">Trước khi dán hoặc thay phim, khách hàng nên kiểm tra thông tin gói phim, mã phim từng vị trí và các yếu tố đặc thù của xe. Điều này giúp tránh chọn nhầm cấu hình, đặc biệt với kính lái, xe điện, xe có kính trần, xe dịch vụ hoặc xe đã dán phim cũ.</p>
+</div>
+<div class="pcn-grid-2">
+<div class="pcn-card"><h3>Cách kiểm tra sau khi dán</h3><ul class="pcn-icon-list"><li>Kiểm tra mã phim cho từng vị trí kính.</li><li>Kiểm tra hóa đơn, phiếu thông tin gói phim và điều kiện bảo hành.</li><li>Kiểm tra bảo hành điện tử nếu dùng phim 3M áp dụng chính sách này.</li><li>Quan sát mép phim, bụi, bọt khí lớn, vết xước hoặc điểm hở.</li><li>Yêu cầu giải thích thời gian ổn định keo và cách chăm sóc sau dán.</li></ul></div>
+<div class="pcn-card"><h3>Thông số catalog và số đo thực tế</h3><p>Thông số catalog phản ánh hiệu suất của tấm phim theo điều kiện công bố. Số đo thực tế sau dán là kết quả của tổ hợp kính xe, phim, thiết bị đo và điều kiện đo tại thời điểm nghiệm thu. Hai nhóm dữ liệu này cần được ghi nhãn rõ, không nên trộn lẫn.</p></div>
+</div>
+<h3>Những tình huống nên tư vấn kỹ trước khi dán phim</h3>
+<div class="pcn-grid-4">
+<div class="pcn-card"><strong>Xe đã có phim cũ</strong><p>Phim ngả màu, bong mép, nổi bọt khí, kính bị lóa hoặc không rõ mã phim cần kiểm tra trước khi dán lại.</p></div>
+<div class="pcn-card"><strong>Xe mới nhận</strong><p>Nên chọn cấu hình ngay từ đầu để đồng bộ thẩm mỹ, bảo hành và trải nghiệm cabin.</p></div>
+<div class="pcn-card"><strong>Xe có kính trần / panorama</strong><p>Diện tích kính lớn, nhận nắng từ trên xuống và thường cần mã phim riêng theo kích thước kính.</p></div>
+<div class="pcn-card"><strong>Xe điện, xe nhiều thiết bị</strong><p>Cần cân nhắc vị trí kính, thiết bị VETC, camera hành trình, GPS, Bluetooth và cấu tạo kính.</p></div>
+<div class="pcn-card"><strong>Xe bán tải</strong><p>Thường đi tỉnh, đi công trình hoặc đỗ nắng lâu; cần cân bằng độ bền, tầm nhìn và riêng tư.</p></div>
+<div class="pcn-card"><strong>Xe tải, xe van, xe giao hàng</strong><p>Tài xế ngồi lâu, cần giảm nắng ngang nhưng vẫn phải quan sát gương và điểm mù tốt.</p></div>
+<div class="pcn-card"><strong>Xe khách, limousine, minibus</strong><p>Kính lớn, nhiều hành khách, cần giảm chói khoang sau và giữ cảm giác dễ chịu trên hành trình dài.</p></div>
+<div class="pcn-card"><strong>Xe du lịch 16–29 chỗ</strong><p>Nên tư vấn theo từng khoang kính, điều hòa, lịch vận hành và mức riêng tư cần thiết.</p></div>
+<div class="pcn-card"><strong>Xe bus, xe đưa đón</strong><p>Diện tích kính lớn, vận hành nhiều giờ; cần chú ý độ bền, vệ sinh và khả năng bảo trì sau dán.</p></div>
+<div class="pcn-card"><strong>Xe hay đi đêm hoặc trời mưa</strong><p>Kính lái và kính sườn trước cần giữ độ sáng phù hợp để quan sát an toàn hơn.</p></div>
+<div class="pcn-card"><strong>Xe gia đình có trẻ nhỏ</strong><p>Nên ưu tiên giảm chói, hạn chế UV, khoang sau dịu nắng và chính sách bảo hành rõ ràng.</p></div>
+<div class="pcn-card"><strong>Chủ xe muốn dán lẻ</strong><p>Cần kiểm tra độ đồng màu giữa phim mới và phim cũ, đặc biệt khi chỉ thay kính lái hoặc cửa sổ trời.</p></div>
+</div>
+<div class="pcn-cta pcn-cta-soft"><div><span>Kiểm tra trước khi thay phim</span><h3>Xe đang nóng hơn, lóa hơn hoặc phim đã ngả màu?</h3><p>Auto365 có thể kiểm tra tình trạng phim cũ, tư vấn nên thay từng vị trí hay dán lại toàn bộ xe, đồng thời giải thích rõ mã phim và điều kiện bảo hành.</p></div><a class="pcn-btn pcn-btn-primary" href="#form-tu-van">Đặt lịch kiểm tra phim</a></div>
+</section>
+<section class="pcn-section" id="quy-trinh-dia-chi">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Thi công &amp; bảo hành</span>
+<h2>7. Quy trình, bảo hành, kinh nghiệm sau khi dán và địa chỉ Auto365</h2>
+<p class="pcn-lead">Một bộ phim cách nhiệt tốt cần đi cùng quy trình tư vấn, thi công, nghiệm thu và bảo hành rõ ràng. Đây là phần giúp khách hàng biết trước mình sẽ được kiểm tra gì, nhận thông tin gì và cần chăm sóc phim ra sao sau khi dán.</p>
+</div>
+<div class="pcn-grid-4">
+<div class="pcn-card"><h3>1. Tiếp nhận xe</h3><p>Ghi nhận dòng xe, nhu cầu sử dụng, tình trạng phim cũ, cửa sổ trời, thiết bị gắn kính và ngân sách dự kiến.</p></div>
+<div class="pcn-card"><h3>2. Tư vấn cấu hình</h3><p>Gợi ý phim theo kính lái, kính sườn, kính hậu và kính trần thay vì chọn một mã giống nhau cho toàn bộ xe.</p></div>
+<div class="pcn-card"><h3>3. Thi công</h3><p>Vệ sinh kính, che chắn nội thất, xử lý phim cũ nếu có, cắt phim, sấy form và dán theo quy trình kỹ thuật.</p></div>
+<div class="pcn-card"><h3>4. Nghiệm thu</h3><p>Kiểm tra mép phim, độ hoàn thiện, hướng dẫn chăm sóc sau dán và hỗ trợ thông tin bảo hành nếu dòng phim áp dụng.</p></div>
+</div>
+<div class="pcn-warranty-box">
+<h3>Chính sách bảo hành cần được kiểm tra sau khi dán</h3>
+<p>Với phim cách nhiệt 3M trong catalog, bảo hành chính hãng 10 năm áp dụng khi phim đã dán trên xe và được kích hoạt bảo hành điện tử. Khi nhận xe, khách hàng nên yêu cầu thông tin mã phim từng vị trí kính, điều kiện bảo hành, hướng dẫn tra cứu và số liên hệ hỗ trợ nếu phát sinh lỗi liên quan đến thi công hoặc vật liệu trong phạm vi chính sách.</p>
+<ul class="pcn-icon-list"><li>Giữ hóa đơn hoặc phiếu thông tin gói phim.</li><li>Kiểm tra mã phim kính lái, kính sườn, kính lưng và cửa sổ trời nếu có.</li><li>Tra cứu/kích hoạt bảo hành điện tử theo hướng dẫn của Auto365.</li><li>Không tự bóc, cạy mép phim hoặc dùng hóa chất mạnh khi phim chưa ổn định.</li></ul>
+</div>
+<h3>Kinh nghiệm sau khi dán phim</h3>
+<div class="pcn-grid-3">
+<div class="pcn-card"><h3>Không hạ kính ngay</h3><p>Trong 48-72 giờ đầu, nên hạn chế lên/xuống kính để lớp keo ổn định. Thời gian này có thể thay đổi theo điều kiện thời tiết và từng dòng phim.</p></div>
+<div class="pcn-card"><h3>Không lau bằng hóa chất mạnh</h3><p>Không dùng khăn cứng, vật sắc hoặc hóa chất mạnh lên mặt trong kính. Khi cần vệ sinh, nên dùng khăn mềm và dung dịch phù hợp.</p></div>
+<div class="pcn-card"><h3>Theo dõi bọt nước nhẹ</h3><p>Một số vệt sương hoặc bọt nước nhỏ có thể giảm dần khi keo ổn định. Nếu có bọt lớn, bong mép hoặc bụi rõ, nên quay lại trung tâm kiểm tra.</p></div>
+</div>
+<h3>Địa chỉ dán phim cách nhiệt Auto365</h3>
+<p>Khách hàng có thể đặt lịch tại Auto365.vn - Trụ Sở Chính hoặc các chi nhánh trong hệ thống Auto365. Khi đặt lịch, nên cung cấp dòng xe, nhu cầu sử dụng, tình trạng phim cũ và có cửa sổ trời hay không để được chuẩn bị cấu hình tư vấn phù hợp.</p>
+<div class="pcn-grid-2">
+<div class="pcn-card pcn-card-accent"><h3>Auto365.vn - Trụ Sở Chính</h3><p>Đường số 3, Khu phố 31, Phường Hiệp Bình, TP. HCM. Hotline: <a href="tel:19009365">1900 9365</a>.</p></div>
+<div class="pcn-card"><h3>3M Pro Shop &amp; 3M Training Center</h3><p>Điểm tư vấn, thi công và đào tạo chuyên sâu trong hệ sinh thái Auto365/365Group, dùng đúng tên entity khi hiển thị trên trang.</p></div>
+</div>
+<div class="pcn-cta"><div><span>Đặt lịch trước khi đến</span><h3>Giúp Auto365 chuẩn bị mẫu phim, thời gian thi công và tư vấn viên phù hợp.</h3><p>Đặc biệt nên đặt lịch trước nếu xe có phim cũ, cửa sổ trời, panorama, xe điện, xe khách hoặc cần dán theo đoàn/đội xe.</p></div><a class="pcn-btn pcn-btn-primary" href="#form-tu-van">Đặt lịch tư vấn</a></div>
+</section>
+<section class="pcn-section" id="faq-phim-cach-nhiet">
+<div class="pcn-section-head">
+<span class="pcn-eyebrow">Câu hỏi thường gặp</span>
+<h2>8. FAQ về phim cách nhiệt ô tô</h2>
+<p class="pcn-lead">Các câu hỏi dưới đây giúp khách hàng hiểu rõ hơn trước khi chọn gói phim, đặc biệt là các vấn đề về giá, kính lái, đăng kiểm, thiết bị trên xe và chăm sóc sau khi dán.</p>
+</div>
+<div class="pcn-faq">
+<details open=""><summary>Phim cách nhiệt ô tô loại nào tốt?</summary><p>Phim tốt là phim phù hợp với xe và nhu cầu sử dụng, không chỉ là phim có giá cao hoặc màu kính tối. Khi chọn, nên xem đồng thời TSER để đánh giá khả năng giảm nóng, VLT để biết kính sáng hay tối, UVR để hiểu khả năng cản tia cực tím, cùng chính sách bảo hành và chất lượng thi công. Với xe gia đình, kính lái sáng và khoang sau dịu nắng thường quan trọng hơn việc chọn toàn xe một mã phim thật tối.</p></details>
+<details><summary>Dán phim cách nhiệt ô tô giá bao nhiêu?</summary><p>Giá dán phim phụ thuộc vào thương hiệu, dòng phim, phân khúc xe, diện tích kính và cấu hình từng vị trí. Tại Auto365, gói 3M Ceramic Hybrid / Ceramic NR có mức tham khảo từ 5.900.000đ cho Minicar, 7.900.000đ cho Sedan và 9.500.000đ cho SUV/CUV/MPV. Các gói cao cấp hơn như Crystalline Hybrid hoặc Crystalline CR BLK sẽ có giá cao hơn do cấu hình kính lái và vật liệu phim khác nhau.</p></details>
+<details><summary>Có nên dán phim cách nhiệt kính lái không?</summary><p>Có, nhưng kính lái là vị trí cần chọn kỹ nhất. Kính lái nên ưu tiên tầm nhìn, độ truyền sáng và khả năng giảm chói vừa phải. Nếu chọn phim quá tối, tài xế có thể khó quan sát khi đi đêm, trời mưa hoặc khi ra vào hầm. Vì vậy, nên xem mẫu thực tế và hỏi rõ VLT của mã phim kính lái trước khi quyết định.</p></details>
+<details><summary>Phim càng tối có càng mát không?</summary><p>Không nhất thiết. Màu phim chỉ cho biết cảm giác sáng/tối và mức riêng tư tương đối, không phản ánh đầy đủ khả năng giảm nhiệt. Một phim tối nhưng TSER thấp vẫn có thể không mát bằng phim sáng hơn nhưng có công nghệ và thông số tốt hơn. Khi so sánh, nên xem TSER, VLT, UVR, IRR/IRER và điều kiện đo.</p></details>
+<details><summary>Dán phim cách nhiệt có ảnh hưởng GPS, VETC hoặc camera hành trình không?</summary><p>Ảnh hưởng phụ thuộc vào công nghệ phim, thiết bị trên xe và vị trí lắp đặt thiết bị. Một số dòng phim phi kim loại hoặc ceramic thường được tư vấn để hạn chế ảnh hưởng hơn so với một số cấu trúc có kim loại. Tuy nhiên, cách an toàn nhất là thông báo trước cho kỹ thuật viên vị trí VETC, camera, GPS và kiểm tra lại sau khi dán.</p></details>
+<details><summary>Xe mới lấy có nên dán phim ngay không?</summary><p>Nên dán sớm nếu xe thường xuyên đi nắng, đỗ ngoài trời hoặc có trẻ nhỏ/người lớn tuổi ngồi trong xe. Dán sớm giúp bảo vệ nội thất từ đầu, hạn chế nóng cabin và tăng sự riêng tư. Với xe mới, chủ xe cũng dễ đồng bộ thẩm mỹ và bảo hành vì chưa có phim cũ cần bóc.</p></details>
+<details><summary>Xe đã có phim cũ có cần bóc ra không?</summary><p>Nếu phim cũ còn rõ, không bong, không phai màu và thông số vẫn tốt thì có thể chỉ thay một số vị trí cần nâng cấp. Nhưng nếu phim đã ngả tím, nổi bọt khí, bong mép, lóa mắt hoặc không rõ nguồn gốc, nên kiểm tra lại và cân nhắc bóc thay. Khi bóc phim cũ, kỹ thuật viên cần xử lý cẩn thận để hạn chế ảnh hưởng sấy kính, chỉ điện kính hậu hoặc nội thất.</p></details>
+<details><summary>Cửa sổ trời có nên dán phim cách nhiệt không?</summary><p>Có, đặc biệt với xe có cửa sổ trời lớn hoặc panorama. Kính nóc nhận nắng trực tiếp từ phía trên nên tạo cảm giác nóng khác với kính sườn. Khi dán cửa sổ trời, nên chọn mã phù hợp với diện tích kính, rèm che, mức độ thoáng sáng mong muốn và khả năng giảm nóng thực tế.</p></details>
+<details><summary>Dán phim cách nhiệt mất bao lâu?</summary><p>Thời gian thi công phụ thuộc vào số lượng kính, dòng xe, tình trạng phim cũ và có cửa sổ trời hay không. Một xe dán trọn bộ thường cần nhiều thời gian hơn so với dán lẻ kính lái hoặc kính sườn. Nếu xe đã có phim cũ cần bóc, thời gian sẽ lâu hơn vì cần xử lý lớp keo và làm sạch kính trước khi dán mới.</p></details>
+<details><summary>Sau khi dán phim có được hạ kính không?</summary><p>Trong 48–72 giờ đầu, nên hạn chế hạ kính để keo có thời gian ổn định. Việc hạ kính quá sớm có thể làm mép phim bị xô lệch hoặc bong nhẹ ở vị trí cửa. Trung tâm thi công sẽ hướng dẫn cụ thể tùy dòng xe, thời tiết và loại phim.</p></details>
+<details><summary>Tại sao sau khi dán có vệt sương hoặc bọt nước nhỏ?</summary><p>Sau khi dán, một lượng nước nhỏ có thể còn lại giữa phim và kính trong quá trình keo ổn định. Hiện tượng này thường giảm dần sau vài ngày tùy thời tiết và điều kiện sử dụng. Nếu xuất hiện bọt khí lớn, bụi rõ, bong mép hoặc vết xước, khách hàng nên quay lại trung tâm để được kiểm tra.</p></details>
+<details><summary>3M Ceramic NR khác 3M Crystalline CR BLK như thế nào?</summary><p>3M Ceramic NR / Ceramic Hybrid phù hợp với khách cần cấu hình thực dụng, chi phí dễ tiếp cận và có các mã NR để phối theo kính. 3M Crystalline CR BLK thuộc nhóm cao cấp hơn, thường được chọn khi khách muốn kính lái sáng, ngoại hình đen xám và trải nghiệm thẩm mỹ cao hơn. Trang tổng chỉ nên xem như định hướng; khi chốt gói cần đối chiếu bảng thông số và mã phim từng vị trí.</p></details>
+<details><summary>Nên dán trọn xe hay chỉ dán kính lái?</summary><p>Dán kính lái phù hợp khi vị trí này đang nóng, chói hoặc phim cũ đã xuống cấp nhưng các kính khác vẫn ổn. Dán trọn xe phù hợp với xe mới hoặc khi chủ xe muốn đồng bộ thẩm mỹ, hiệu quả giảm nóng và chính sách bảo hành. Nếu xe có nhiều kính hoặc chở gia đình, dán trọn bộ thường cho trải nghiệm cân bằng hơn.</p></details>
+<details><summary>Làm sao biết phim 3M chính hãng?</summary><p>Nên kiểm tra mã phim được dán cho từng vị trí, hóa đơn hoặc phiếu thông tin gói phim, chính sách bảo hành và khả năng kích hoạt bảo hành điện tử nếu dòng phim áp dụng. Ngoài ra, có thể yêu cầu trung tâm đo thử thông số sau khi dán và kiểm tra hoàn thiện mép phim, bụi, bọt khí, vết xước trước khi nhận xe.</p></details>
+<details><summary>Dán phim cách nhiệt có ảnh hưởng đăng kiểm không?</summary><p>Quy định và cách kiểm tra có thể thay đổi theo từng thời điểm và khu vực. Về thực tế sử dụng, kính lái nên giữ độ sáng phù hợp để đảm bảo tầm nhìn. Khi tư vấn, khách hàng nên hỏi rõ VLT của mã phim kính lái và tránh chọn kính lái quá tối, đặc biệt nếu thường xuyên đi đêm hoặc đi mưa.</p></details>
+<details><summary>Nên chuẩn bị gì trước khi mang xe đi dán phim?</summary><p>Nên chụp hoặc ghi lại tình trạng phim cũ nếu xe đã dán trước đó, thông báo vị trí VETC/camera hành trình/GPS, cho biết thói quen sử dụng xe và ngân sách dự kiến. Càng cung cấp rõ nhu cầu, kỹ thuật viên càng dễ phối cấu hình phù hợp thay vì tư vấn một gói chung cho mọi xe.</p></details>
+</div>
+</section>
+<section class="pcn-section" id="form-tu-van">
+<div class="pcn-cta-form">
+<div class="pcn-cta-left">
+<h2>Chưa biết xe của mình nên dán phim nào?</h2>
+<p>Gửi thông tin xe và nhu cầu sử dụng, Auto365 sẽ tư vấn cấu hình phim phù hợp cho kính lái, kính sườn, kính hậu và cửa sổ trời.</p>
+<ul class="pcn-icon-list"><li>Tư vấn theo dòng xe và ngân sách.</li><li>Gợi ý mã phim theo từng vị trí kính.</li><li>Hỗ trợ đặt lịch tại chi nhánh gần bạn.</li></ul>
+</div>
+<form action="/api/leads" class="pcn-form" method="post">
+<h3>Nhận tư vấn phim cách nhiệt</h3>
+<label for="fullname">Họ và tên</label><input id="fullname" name="fullname" placeholder="Nhập họ tên" required="" type="text"/>
+<label for="phone">Số điện thoại</label><input id="phone" name="phone" placeholder="Nhập số điện thoại" required="" type="tel"/>
+<label for="car">Dòng xe</label><input id="car" name="car" placeholder="Ví dụ: VF8, Camry, Tucson, Xpander..." type="text"/>
+<label for="need">Nhu cầu chính</label><select id="need" name="need"><option value="">Chọn nhu cầu</option><option>Muốn mát rõ, chi phí hợp lý</option><option>Kính lái sáng, cao cấp</option><option>Xe gia đình / xe điện / nhiều kính</option><option>Thay phim cũ</option><option>Cần tư vấn cửa sổ trời / panorama</option></select>
+<label for="note">Ghi chú thêm</label><textarea id="note" name="note" placeholder="Ví dụ: xe hay đi đêm, có phim cũ, có cửa sổ trời..."></textarea>
+<button type="submit">Gửi thông tin tư vấn</button>
+<p class="pcn-small">Auto365 sẽ liên hệ lại để tư vấn cấu hình phù hợp trước khi đặt lịch thi công.</p>
+</form>
+</div>
+</section>
+</div>
+</article>
+</main>
 </body>
-
 </html>
