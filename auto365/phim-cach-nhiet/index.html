@@ -73,6 +73,11 @@
 .pcn-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.pcn-grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.pcn-grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.pcn-card{padding:24px;border-radius:26px;background:var(--pcn-surface-soft);border:1px solid rgba(0,0,0,.06);box-shadow:var(--pcn-shadow-sm);transition:transform .22s ease,box-shadow .22s ease,background .22s ease,border-color .22s ease}.pcn-card:hover{transform:translateY(-2px);box-shadow:var(--pcn-shadow-md);background:#fff;border-color:rgba(0,0,0,.08)}.pcn-card h3,.pcn-card h4{margin:0 0 9px;color:var(--pcn-ink);font-size:18px;line-height:1.32;font-weight:620;letter-spacing:-.025em}.pcn-card p{margin:0;color:var(--pcn-muted);font-size:15px;line-height:1.64;text-align:left}.pcn-card-accent{background:#fff;border:1px solid rgba(230,0,18,.16);box-shadow:0 1px 2px rgba(230,0,18,.035)}.pcn-card-dark{background:#1d1d1f;border-color:#2f3033;color:#fff}.pcn-card-dark h3,.pcn-card-dark h4{color:#fff}.pcn-card-dark p{color:rgba(255,255,255,.72)}.pcn-icon-list{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}.pcn-icon-list li{position:relative;padding-left:20px;color:var(--pcn-muted);font-size:15px;line-height:1.58}.pcn-icon-list li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--pcn-red)}
 
 /* TABLES */
+.pcn-spec-table { min-width: 560px; }
+.pcn-spec-table th,
+.pcn-spec-table td { text-align: center; white-space: nowrap; }
+.pcn-spec-table th:first-child,
+.pcn-spec-table td:first-child { text-align: left; font-weight: 700; }
 .pcn-table-wrap{overflow-x:auto;margin:20px 0 22px;border-radius:24px;border:1px solid rgba(0,0,0,.065);background:#fff;box-shadow:var(--pcn-shadow-sm)}.pcn-table{width:100%;min-width:760px;border-collapse:collapse}.pcn-table caption{caption-side:top;padding:14px 16px;color:var(--pcn-tertiary);font-size:13.5px;font-weight:500;background:#fff;text-align:center}.pcn-table th{padding:14px 16px;background:#f5f5f7;color:var(--pcn-ink);text-align:left;font-size:14px;font-weight:620;white-space:nowrap;border-top:1px solid rgba(0,0,0,.035)}.pcn-table td{padding:15px 16px;border-top:1px solid rgba(0,0,0,.055);color:var(--pcn-muted);font-size:14.5px;line-height:1.62;vertical-align:top;background:#fff}.pcn-table tr:nth-child(even) td{background:#fbfbfd}.pcn-table td:first-child{font-weight:620;color:var(--pcn-ink)}.pcn-table strong,.pcn-price{color:var(--pcn-red);font-weight:650}
 
 /* PACKAGES */
@@ -380,14 +385,7 @@
             "text": "TSER (Total Solar Energy Rejected) là tổng năng lượng mặt trời bị loại bỏ. Đây là chỉ số toàn diện nhất để đánh giá khả năng cách nhiệt của một tấm phim, bao gồm việc cản tia UV, tia IR và ánh sáng nhìn thấy."
           }
         },
-        {
-          "@type": "Question",
-          "name": "IRR và IRER khác nhau thế nào?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "IRR (Infrared Rejection) là tỷ lệ cản tia hồng ngoại ở dải bước sóng nhất định. IRER (Infrared Energy Rejection) là tổng năng lượng hồng ngoại bị loại bỏ sau khi tính cả nhiệt lượng bị hấp thụ và bức xạ ngược lại vào trong, phản ánh chính xác hơn hiệu suất cản nhiệt hồng ngoại thực tế."
-          }
-        },
+
         {
           "@type": "Question",
           "name": "UVR có tác dụng gì?",
@@ -401,7 +399,7 @@
           "name": "Kính lái có nên dán phim tối không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Không nên dán phim quá tối cho kính lái vì sẽ làm giảm tầm nhìn, đặc biệt nguy hiểm khi di chuyển vào ban đêm, trời mưa hoặc những khu vực thiếu sáng. Ưu tiên các mã phim có VLT cao cho kính lái."
+            "text": "Với kính lái, Auto365 ưu tiên mã phim có độ truyền sáng cao, tầm nhìn rõ trong điều kiện đi đêm, trời mưa, ra vào hầm và phù hợp quy định hiện hành. Cấu hình cuối cùng cần được tư vấn theo dòng xe, kính nguyên bản, mã phim, nhu cầu sử dụng và điều kiện tại thời điểm thi công."
           }
         },
         {
@@ -409,7 +407,7 @@
           "name": "Phim cách nhiệt có ảnh hưởng GPS, VETC, Bluetooth không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Các dòng phim sử dụng công nghệ kim loại có thể ảnh hưởng đến sóng điện từ. Tuy nhiên, các dòng phim sử dụng công nghệ Ceramic (như 3M Ceramic NR, Ceramic IR) hoặc quang học đa lớp (3M Crystalline) hầu như không ảnh hưởng hoặc ít cản sóng các thiết bị này."
+            "text": "Một số dòng phim có thành phần kim loại có thể ảnh hưởng đến GPS, VETC, Bluetooth hoặc sóng điện thoại trong một số điều kiện sử dụng. Khi tư vấn, Auto365 sẽ lựa chọn mã phim theo dòng xe, vị trí kính và nhu cầu sử dụng nhằm hạn chế tối đa ảnh hưởng đến sóng."
           }
         },
         {
@@ -425,7 +423,7 @@
           "name": "Xe có kính trần toàn cảnh nên chọn phim thế nào?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Kính trần toàn cảnh (panorama) hấp thụ lượng nhiệt lớn do nằm ngang. Nên ưu tiên chọn các dòng phim có chỉ số TSER, IRER cao và độ xuyên sáng thấp (như mã 15, 05) để hỗ trợ giảm chói và cản nhiệt tối đa."
+            "text": "Kính trần toàn cảnh (panorama) hấp thụ lượng nhiệt lớn do nằm ngang. Nên ưu tiên chọn các dòng phim có chỉ số TSER, IRR cao và độ xuyên sáng thấp (như NR5 / NR15) để hỗ trợ giảm chói và cản nhiệt tối đa."
           }
         },
         {
@@ -505,11 +503,14 @@
 <span class="pcn-kicker">Auto365 Film Hub</span>
 <h1>Phim cách nhiệt ô tô chính hãng: bảng giá, cách chọn và địa chỉ dán uy tín</h1>
 <p><strong>Phim cách nhiệt ô tô</strong> giúp giảm nóng khoang xe, giảm chói, hỗ trợ cản tia UV, tăng sự riêng tư và bảo vệ nội thất khi xe thường xuyên vận hành dưới nắng. Điều quan trọng không chỉ là chọn thương hiệu, mà là chọn đúng mã phim cho từng vị trí kính và đúng nhu cầu sử dụng thực tế.</p>
-<p>Trang này tổng hợp cách đọc thông số, cách chọn phim cho kính lái, kính sườn, kính hậu, cửa sổ trời, bảng giá tham khảo và các gói phim 3M đang được Auto365 tư vấn, phân phối và thi công.</p>
+<p>Trang này tổng hợp cách đọc thông số, cách chọn phim cho kính lái, kính sườn, kính hậu, cửa sổ trời, bảng giá tham khảo và các gói phim 3M đang được Auto365 tư vấn và thi công.</p>
 <div class="pcn-hero-actions">
 <a class="pcn-btn pcn-btn-primary" href="#bang-gia-goi-3m">Xem bảng giá</a>
 <a class="pcn-btn pcn-btn-ghost" href="#cach-chon-phim">Chọn phim theo xe</a>
 <a class="pcn-btn pcn-btn-ghost" href="#quy-trinh-dia-chi">Tìm điểm dán phim</a>
+</div>
+<div class="pcn-trust-box" style="background:#f9fafb; border-left:4px solid #0056b3; padding:16px 20px; margin-bottom:24px; border-radius:4px; font-size:15px; color:var(--pcn-ink-soft);">
+    Auto365 (thuộc 365Group) là điểm 3M Pro Shop & 3M Training Center: tư vấn, thi công và đào tạo kỹ thuật phim cách nhiệt 3M trong hệ sinh thái Auto365.
 </div>
 </div>
 <aside aria-label="Chọn nhanh phim cách nhiệt" class="pcn-hero-card">
@@ -628,58 +629,44 @@
 
 
 <div class="pcn-table-wrap">
-<div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table">
-<caption>Bảng thông số catalog 3M Crystalline CR BLK</caption>
-<thead><tr><th>Mã phim</th><th>TSER</th><th>IRER</th><th>VLT</th><th>UVR</th><th>Giảm chói</th><th>IRR</th></tr></thead>
-<tbody>
-<tr><td>CR BLK 60</td><td>54%</td><td>67%</td><td>57%</td><td>99.9%</td><td>22%</td><td>97%</td></tr>
-<tr><td>CR BLK 50</td><td>56%</td><td>68%</td><td>48%</td><td>99.9%</td><td>34%</td><td>98%</td></tr>
-<tr><td>CR BLK 40</td><td>58%</td><td>67%</td><td>48%*</td><td>99.9%</td><td>44%</td><td>98%</td></tr>
-<tr><td>CR BLK 35</td><td>60%</td><td>67%</td><td>33%</td><td>99.9%</td><td>55%</td><td>98%</td></tr>
-<tr><td>CR BLK 15</td><td>64%</td><td>66%</td><td>14%</td><td>99.9%</td><td>81%</td><td>98%</td></tr>
-</tbody>
-</table></div><p style="margin-top:12px; font-style:italic; font-size:14px; color:#666;">Thông số catalog được công bố trên kính xanh 6mm, VLT 73%, chỉ mang tính tham khảo.</p>
-</div>
-<div class="pcn-table-wrap">
-<div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table">
-<caption>Bảng thông số catalog 3M Ceramic Hybrid / Ceramic NR</caption>
-<thead><tr><th>Mã phim</th><th>TSER</th><th>IRER</th><th>VLT</th><th>UVR</th><th>Giảm chói</th><th>IRR</th></tr></thead>
-<tbody>
-<tr><td>NR35</td><td>51%</td><td>58%</td><td>43%</td><td>99%</td><td>52%</td><td>79%</td></tr>
-<tr><td>NR25</td><td>59%</td><td>63%</td><td>29%</td><td>99%</td><td>68%</td><td>86%</td></tr>
-<tr><td>NR15</td><td>65%</td><td>66%</td><td>14%</td><td>99%</td><td>84%</td><td>86%</td></tr>
-<tr><td>NR5</td><td>69%</td><td>68%</td><td>7%</td><td>99%</td><td>93%</td><td>91%</td></tr>
-</tbody>
-</table></div><p style="margin-top:12px; font-style:italic; font-size:14px; color:#666;">Thông số catalog được công bố trên kính xanh 6mm, VLT 73%, chỉ mang tính tham khảo.</p>
-</div>
-<div class="pcn-table-wrap">
-<div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table">
-<caption>Bảng thông số catalog 3M Ceramic IR</caption>
-<thead><tr><th>Mã phim</th><th>TSER</th><th>IRER</th><th>VLT</th><th>UVR</th><th>Giảm chói</th><th>IRR</th></tr></thead>
-<tbody>
-<tr><td>IR50</td><td>47%</td><td>66%</td><td>58%</td><td>99%</td><td>32%</td><td>83%</td></tr>
-<tr><td>IR25</td><td>57%</td><td>67%</td><td>30%</td><td>99%</td><td>65%</td><td>90%</td></tr>
-<tr><td>IR15</td><td>59%</td><td>67%</td><td>18%</td><td>99%</td><td>78%</td><td>90%</td></tr>
-</tbody>
-</table></div><p style="margin-top:12px; font-style:italic; font-size:14px; color:#666;">Thông số catalog được công bố trên kính xanh 6mm, VLT 73%, chỉ mang tính tham khảo.</p>
+  <div class="table-responsive" style="overflow-x:auto;">
+    <table class="pcn-table pcn-spec-table">
+      <caption>Tổng hợp thông số kỹ thuật phim cách nhiệt 3M theo catalog</caption>
+      <thead>
+        <tr>
+          <th>Mã phim</th>
+          <th>TSER</th>
+          <th>VLT</th>
+          <th>UVR</th>
+          <th>Giảm lóa</th>
+          <th>IRR</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>CR BLK 15</td><td>64%</td><td>14%</td><td>99.9%</td><td>81%</td><td>98%</td></tr>
+        <tr><td>CR BLK 35</td><td>60%</td><td>33%</td><td>99.9%</td><td>55%</td><td>98%</td></tr>
+        <tr><td>CR BLK 40</td><td>58%</td><td>48%*</td><td>99.9%</td><td>44%</td><td>98%</td></tr>
+        <tr><td>CR BLK 50</td><td>56%</td><td>48%</td><td>99.9%</td><td>34%</td><td>98%</td></tr>
+        <tr><td>CR BLK 60</td><td>54%</td><td>57%</td><td>99.9%</td><td>22%</td><td>97%</td></tr>
+        <tr><td>NR5</td><td>69%</td><td>7%</td><td>99%</td><td>93%</td><td>91%</td></tr>
+        <tr><td>NR15</td><td>65%</td><td>14%</td><td>99%</td><td>84%</td><td>86%</td></tr>
+        <tr><td>NR25</td><td>59%</td><td>29%</td><td>99%</td><td>68%</td><td>86%</td></tr>
+        <tr><td>NR35</td><td>51%</td><td>43%</td><td>99%</td><td>52%</td><td>79%</td></tr>
+        <tr><td>IR15</td><td>59%</td><td>18%</td><td>99%</td><td>78%</td><td>90%</td></tr>
+        <tr><td>IR25</td><td>57%</td><td>30%</td><td>99%</td><td>65%</td><td>90%</td></tr>
+        <tr><td>IR50</td><td>47%</td><td>58%</td><td>99%</td><td>32%</td><td>83%</td></tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
-
-
-
-<div class="pcn-catalog-note" style="background:#f9fafb; border:none; border-radius:12px; padding:24px;">
-  <h3 style="color:var(--pcn-red); font-size:18px; font-weight:700; margin-bottom:16px;">Lưu ý kỹ thuật &amp; Xác thực dữ liệu (Data Provenance)</h3>
-  <ul style="list-style-type: disc; padding-left:20px; color:var(--pcn-ink-soft); font-size:15px; line-height:1.6;">
-    <li style="margin-bottom:10px;"><strong>Nguồn gốc dữ liệu:</strong> Thông số trong bài được tổng hợp và đối chiếu theo tài liệu kỹ thuật/sản phẩm hiện có.</li>
-    <li style="margin-bottom:10px;"><strong>Điều kiện đo tiêu chuẩn:</strong> Dữ liệu thông số có thể được tham khảo theo điều kiện đo tiêu chuẩn của sản phẩm, bao gồm loại kính, độ dày kính và phương pháp đo. Kết quả thực tế có thể thay đổi tùy kính nguyên bản, môi trường sử dụng và thiết bị đo.</li>
-    <li style="margin-bottom:10px;"><strong>Phân biệt chỉ số cản hồng ngoại:</strong>
-      <ul style="list-style-type: circle; padding-left:20px; margin-top:8px;">
-        <li style="margin-bottom:8px;"><strong>IRER (Cản năng lượng hồng ngoại):</strong> Đo trên dải bước sóng rộng 780–2.500 nm (gồm cả lượng nhiệt hấp thụ bức xạ ngược vào xe), phản ánh chính xác nhất hiệu suất cản nhiệt thực tế.</li>
-        <li style="margin-bottom:8px;"><strong>IRR (Cản tia hồng ngoại):</strong> Đo trong dải hẹp 900–1.000 nm trên màng phim độc lập, không phản ánh toàn diện khả năng chống nóng của hệ kính.</li>
-      </ul>
-    </li>
-    <li style="margin-bottom:10px;"><strong>Các thông số cơ bản khác:</strong> <strong>TSER</strong> (tỷ lệ loại bỏ tổng năng lượng mặt trời), <strong>VLT</strong> (độ truyền sáng), <strong>UVR</strong> (tỷ lệ cản tia cực tím), và <strong>Giảm chói</strong> giúp đánh giá toàn diện hiệu năng của phim. Lưu ý mã CR BLK 40 có VLT 48% theo ghi chú đo thực tế tại Việt Nam.</li>
-    <li style="margin-bottom:10px;"><strong>Khuyến cáo pháp lý:</strong> Quy định về độ truyền sáng (VLT) tối thiểu được phép dán trên các vị trí kính xe có thể khác nhau tùy theo luật giao thông mỗi quốc gia. Vui lòng tham khảo quy định địa phương khi lựa chọn mã phim.</li>
+<div class="pcn-catalog-note">
+  <h3>Ghi chú kỹ thuật khi đọc bảng thông số phim cách nhiệt</h3>
+  <ul>
+    <li><strong>Điều kiện dữ liệu:</strong> Thông số catalog được công bố trên kính xanh 6mm, VLT 73%, chỉ mang tính tham khảo. Số đo thực tế sau khi dán trên xe có thể khác do kính nguyên bản, vị trí kính, thiết bị đo và điều kiện nghiệm thu.</li>
+    <li><strong>CR BLK 40:</strong> VLT 48% là thông số dựa trên kết quả đo thực tế trên phim tại thị trường Việt Nam theo tư liệu hãng.</li>
+    <li><strong>IRR:</strong> IRR là chỉ số cản hồng ngoại được công bố trong bảng catalog. Không hiển thị số IRER nếu tư liệu hãng không cung cấp.</li>
+    <li><strong>Quy định sử dụng:</strong> Quy định về độ truyền sáng và dán phim có thể thay đổi theo khu vực. Khách hàng nên kiểm tra quy định hiện hành và tư vấn theo từng vị trí kính trước khi chốt mã phim.</li>
   </ul>
 </div>
 
@@ -754,8 +741,7 @@
 </div>
 <div class="pcn-warranty-box">
 <h3>Bảo hành phim cách nhiệt 3M</h3>
-<p>Catalog 3M/365Group ghi rõ Một số dòng phim cách nhiệt 3M có chính sách bảo hành điện tử 10 năm, tùy dòng phim, điều kiện thi công và chính sách áp dụng tại thời điểm khi đã dán trên xe và được kích hoạt bảo hành điện tử. Khách hàng nên lưu lại thông tin gói phim, mã phim từng vị trí kính và tra cứu bảo hành theo hướng dẫn sau thi công.</p>
-<div class="pcn-subtle-bar"><span class="pcn-chip"><strong>10 năm</strong> theo chính sách 3M áp dụng</span><span class="pcn-chip">Kích hoạt bảo hành điện tử</span><span class="pcn-chip">Cửa sổ trời nhỏ: bằng một ô kính sườn</span><span class="pcn-chip">Panorama: thường tính như kính lái</span></div>
+<p>Phim cách nhiệt 3M được bảo hành chính hãng 10 năm theo điều kiện áp dụng khi đã dán trên xe và được kích hoạt bảo hành điện tử 3M. Khách hàng kiểm tra mã phim, vị trí dán, thông tin gói và tra cứu bảo hành điện tử tại thời điểm bàn giao xe.</p>
 </div>
 <div class="pcn-table-wrap">
 <div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table">
@@ -763,13 +749,14 @@
 <thead><tr><th>Gói phim 3M</th><th>Minicar</th><th>Sedan</th><th>SUV</th><th>Cấu hình chính theo catalog</th></tr></thead>
 <tbody>
 <tr><td>3M Ceramic Hybrid / Ceramic NR</td><td><strong>5.900.000đ</strong></td><td><strong>7.900.000đ</strong></td><td><strong>9.500.000đ</strong></td><td>Kính lái NR35/NR25; kính sườn và kính lưng NR25/NR15/NR5.</td></tr>
-<tr><td>3M Ceramic IR</td><td>Liên hệ</td><td><strong>9.000.000đ</strong></td><td><strong>10.500.000đ</strong></td><td>Kính lái IR50; kính sườn IR25/IR15; kính lưng IR25/IR15.</td></tr>
+<tr><td>3M Ceramic IR</td><td><strong>7.200.000đ</strong></td><td><strong>9.000.000đ</strong></td><td><strong>10.500.000đ</strong></td><td>Kính lái IR50; kính sườn IR25/IR15; kính lưng IR25/IR15.</td></tr>
 <tr><td>3M Crystalline Hybrid</td><td><strong>9.000.000đ</strong></td><td><strong>10.800.000đ</strong></td><td><strong>12.500.000đ</strong></td><td>Kính lái CR BLK 50/60; kính sườn và kính lưng NR25/NR15/NR5.</td></tr>
 <tr><td>3M Crystalline Hybrid PRO</td><td><strong>9.800.000đ</strong></td><td><strong>11.600.000đ</strong></td><td><strong>13.300.000đ</strong></td><td>Kính lái CR BLK 40; kính sườn và kính lưng NR25/NR15/NR5.</td></tr>
 <tr><td>3M Crystalline CR BLK</td><td><strong>12.200.000đ</strong></td><td><strong>14.800.000đ</strong></td><td><strong>17.600.000đ</strong></td><td>Kính lái CR BLK 50/60; kính sườn và kính lưng CR BLK 15/35.</td></tr>
 <tr><td>3M Crystalline CR BLK PRO</td><td><strong>12.900.000đ</strong></td><td><strong>15.500.000đ</strong></td><td><strong>18.300.000đ</strong></td><td>Kính lái CR BLK 40; kính sườn và kính lưng CR BLK 15/35.</td></tr>
 </tbody>
 </table></div>
+<p style="margin-top:12px; font-style:italic; font-size:14px; color:#666;">Áp dụng từ 06/2026 đến khi có thông báo mới.<br>Xe 4 chỗ ≈ Minicar/Sedan nhỏ · Xe 5 chỗ ≈ Sedan/CUV · Xe 7 chỗ ≈ SUV/MPV.</p>
 </div>
 <div class="pcn-table-wrap">
 <div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table">
@@ -1104,7 +1091,7 @@
   </div>
   
   <div class="pcn-note">
-    <strong>Lưu ý:</strong> Không nên quyết định chỉ theo logo hoặc tên thương hiệu. Khi chọn phim cách nhiệt, khách hàng nên hỏi rõ dòng phim, mã phim, thông số TSER/VLT/UVR/IRR/IRER/VLR, chính sách bảo hành, nguồn gốc phân phối và trải nghiệm nhìn thực tế trên kính lái.
+    <strong>Lưu ý:</strong> Không nên quyết định chỉ theo logo hoặc tên thương hiệu. Khi chọn phim cách nhiệt, khách hàng nên hỏi rõ dòng phim, mã phim, thông số TSER/VLT/UVR/IRR/VLR, chính sách bảo hành, nguồn gốc phân phối và trải nghiệm nhìn thực tế trên kính lái.
   </div>
 </section>
 
@@ -1286,16 +1273,8 @@
 <div class="pcn-cta"><div><span>Đặt lịch trước khi đến</span><h3>Giúp Auto365 chuẩn bị mẫu phim, thời gian thi công và tư vấn viên phù hợp.</h3><p>Đặc biệt nên đặt lịch trước nếu xe có phim cũ, cửa sổ trời, panorama, xe điện, xe khách hoặc cần dán theo đoàn/đội xe.</p></div><a class="pcn-btn pcn-btn-primary" href="#form-tu-van">Đặt lịch tư vấn</a></div>
 </section>
 
-<div class="pcn-reviewer-box" style="display:flex; align-items:center; gap:16px; background:#f0fdf4; padding:16px; margin:24px 0; border:1px solid #bbf7d0; border-radius:8px;">
-    <div style="flex:1;">
-        <h4 style="margin:0 0 8px 0; color:#166534;">Thông tin rà soát chuyên môn</h4>
-        <p style="margin:0; font-size:14px; color:#15803d;">
-            <strong>Người rà soát:</strong> Đặng Minh Hoàng<br>
-            <strong>Vai trò:</strong> Technical Reviewer / cố vấn kỹ thuật phim cách nhiệt tại Auto365<br>
-            <strong>Liên quan:</strong> 3M Pro Shop &amp; 3M Training Center<br>
-            <strong>Phạm vi rà soát:</strong> thông số kỹ thuật, gợi ý vị trí kính, quy trình thi công, bảo hành, câu chữ kỹ thuật.
-        </p>
-    </div>
+<div class="pcn-review">
+    <blockquote>Nội dung được kiểm duyệt chuyên môn bởi đội ngũ kỹ thuật tại Auto365.vn - Trụ Sở Chính và 3M Pro Shop & 3M Training Center, phụ trách tiêu chuẩn tư vấn, đào tạo kỹ thuật, kiểm soát chất lượng thi công và nghiệm thu phim cách nhiệt tại hệ thống Auto365.</blockquote>
 </div>
 <section class="pcn-section" id="faq-phim-cach-nhiet"><h2>8. FAQ về phim cách nhiệt ô tô</h2><div class="pcn-faq-list">
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
@@ -1318,21 +1297,18 @@
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">TSER là gì?</summary>
         <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">TSER (Total Solar Energy Rejected) là tổng năng lượng mặt trời bị loại bỏ. Đây là chỉ số toàn diện nhất để đánh giá khả năng cách nhiệt của một tấm phim, bao gồm việc cản tia UV, tia IR và ánh sáng nhìn thấy.</p>
     </details>
-    <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
-        <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">IRR và IRER khác nhau thế nào?</summary>
-        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">IRR (Infrared Rejection) là tỷ lệ cản tia hồng ngoại ở dải bước sóng nhất định. IRER (Infrared Energy Rejection) là tổng năng lượng hồng ngoại bị loại bỏ sau khi tính cả nhiệt lượng bị hấp thụ và bức xạ ngược lại vào trong, phản ánh chính xác hơn hiệu suất cản nhiệt hồng ngoại thực tế.</p>
-    </details>
+
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">UVR có tác dụng gì?</summary>
         <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">UVR (Ultraviolet Rejection) là tỷ lệ cản tia cực tím. Phim cách nhiệt có UVR cao giúp cản gần như hoàn toàn tia UV, góp phần bảo vệ da người ngồi trong xe và hạn chế sự bạc màu, xuống cấp của nội thất.</p>
     </details>
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">Kính lái có nên dán phim tối không?</summary>
-        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Không nên dán phim quá tối cho kính lái vì sẽ làm giảm tầm nhìn, đặc biệt nguy hiểm khi di chuyển vào ban đêm, trời mưa hoặc những khu vực thiếu sáng. Ưu tiên các mã phim có VLT cao cho kính lái.</p>
+        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Với kính lái, Auto365 ưu tiên mã phim có độ truyền sáng cao, tầm nhìn rõ trong điều kiện đi đêm, trời mưa, ra vào hầm và phù hợp quy định hiện hành. Cấu hình cuối cùng cần được tư vấn theo dòng xe, kính nguyên bản, mã phim, nhu cầu sử dụng và điều kiện tại thời điểm thi công.</p>
     </details>
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">Phim cách nhiệt có ảnh hưởng GPS, VETC, Bluetooth không?</summary>
-        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Các dòng phim sử dụng công nghệ kim loại có thể ảnh hưởng đến sóng điện từ. Tuy nhiên, các dòng phim sử dụng công nghệ Ceramic (như 3M Ceramic NR, Ceramic IR) hoặc quang học đa lớp (3M Crystalline) hầu như không ảnh hưởng hoặc ít cản sóng các thiết bị này.</p>
+        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Một số dòng phim có thành phần kim loại có thể ảnh hưởng đến GPS, VETC, Bluetooth hoặc sóng điện thoại trong một số điều kiện sử dụng. Khi tư vấn, Auto365 sẽ lựa chọn mã phim theo dòng xe, vị trí kính và nhu cầu sử dụng nhằm hạn chế tối đa ảnh hưởng đến sóng.</p>
     </details>
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">Xe điện có cần dán phim cách nhiệt không?</summary>
@@ -1340,7 +1316,7 @@
     </details>
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">Xe có kính trần toàn cảnh nên chọn phim thế nào?</summary>
-        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Kính trần toàn cảnh (panorama) hấp thụ lượng nhiệt lớn do nằm ngang. Nên ưu tiên chọn các dòng phim có chỉ số TSER, IRER cao và độ xuyên sáng thấp (như mã 15, 05) để hỗ trợ giảm chói và cản nhiệt tối đa.</p>
+        <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Kính trần toàn cảnh (panorama) hấp thụ lượng nhiệt lớn do nằm ngang. Nên ưu tiên chọn các dòng phim có chỉ số TSER, IRR cao và độ xuyên sáng thấp (như NR5 / NR15) để hỗ trợ giảm chói và cản nhiệt tối đa.</p>
     </details>
     <details class="pcn-faq-item" style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
         <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">Dán phim mất bao lâu?</summary>
