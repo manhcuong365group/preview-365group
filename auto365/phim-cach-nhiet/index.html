@@ -286,6 +286,18 @@
     .pcn-cert-gallery { grid-template-columns: repeat(2, 1fr); gap: 12px; }
 }
 
+.pcn-tech-table th:first-child,
+.pcn-tech-table td:first-child {
+  width: 150px;
+  min-width: 150px;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.pcn-tech-table td:first-child strong {
+  display: inline;
+  white-space: nowrap;
+}
 </style>
 <script type="application/ld+json">\n{
   "@context": "https://schema.org",
@@ -614,7 +626,7 @@
 <p class="pcn-lead">Để chọn phim đúng, khách hàng nên hiểu hai lớp thông tin: công nghệ phim và bộ thông số kỹ thuật. Những chỉ số như TSER, VLT, UVR, IRR, IRER, VLR và Glare Reduction giúp so sánh có cơ sở hơn thay vì chỉ chọn theo màu kính hoặc tên thương hiệu.</p>
 </div>
 <div class="pcn-table-wrap">
-<div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table">
+<div class="table-responsive" style="overflow-x:auto;"><table class="pcn-table pcn-tech-table">
   <caption>Các công nghệ phim cách nhiệt ô tô phổ biến</caption>
   <thead>
     <tr>
@@ -645,7 +657,7 @@
       <td>Xe gia đình, xe đi phố, khách muốn ít phản gương và dễ sử dụng.</td>
     </tr>
     <tr>
-      <td><strong style="color: var(--pcn-red);">Ceramic<br>Hybrid</strong><br><span>Nano Ceramic + Nano Reflective</span></td>
+      <td><strong>Ceramic Hybrid</strong></td>
       <td>Kết hợp công nghệ Nano Ceramic và Nano Reflective, hỗ trợ phản xạ nhiệt trực tiếp, phân tán nhiệt có kiểm soát và giảm hiện tượng kính hấp thụ nhiệt quá nhiều như một số dòng phim truyền thống.</td>
       <td>Khách muốn cân bằng giữa chống nóng, giảm chói, độ riêng tư và trải nghiệm sử dụng ổn định.</td>
     </tr>
