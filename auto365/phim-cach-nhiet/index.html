@@ -952,7 +952,7 @@
 
     .pcn-cta-form {
       display: grid;
-      grid-template-columns: 1fr 420px;
+      grid-template-columns: 1fr 440px;
       gap: 0;
       overflow: hidden;
       border-radius: 30px;
@@ -962,7 +962,10 @@
     }
 
     .pcn-cta-left {
-      padding: 34px;
+      padding: 28px 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       color: #fff
     }
 
@@ -976,7 +979,7 @@
     }
 
     .pcn-form {
-      padding: 30px;
+      padding: 24px;
       background: #fbfbfd
     }
 
@@ -986,7 +989,7 @@
 
     .pcn-form label {
       display: block;
-      margin: 10px 0 5px;
+      margin: 8px 0 4px;
       color: var(--pcn-ink);
       font-weight: 600;
       font-size: 13px
@@ -998,9 +1001,9 @@
       width: 100%;
       border: 1px solid rgba(0, 0, 0, .1);
       border-radius: 14px;
-      padding: 12px 13px;
+      padding: 10px 12px;
       font-family: inherit;
-      font-size: 14px;
+      font-size: 13.5px;
       color: var(--pcn-ink);
       background: #fff;
       outline: none;
@@ -1015,16 +1018,16 @@
     }
 
     .pcn-form textarea {
-      min-height: 88px;
+      min-height: 64px;
       resize: vertical
     }
 
     .pcn-form button {
       width: 100%;
-      margin-top: 14px;
+      margin-top: 10px;
       border: 0;
-      border-radius: 14px;
-      padding: 13px 16px;
+      border-radius: 12px;
+      padding: 11px 16px;
       background: var(--pcn-red);
       color: #fff;
       font-weight: 650;
@@ -1670,7 +1673,7 @@
           "name": "Phim cách nhiệt ô tô là gì?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Phim cách nhiệt ô tô là một lớp màng polyeste mỏng, tích hợp nhiều lớp vật liệu và công nghệ (như men gốm, kim loại, carbon, quang học) được dán lên bề mặt kính xe nhằm mục đích hỗ trợ cản nhiệt, giảm tia UV/IR và bảo vệ nội thất."
+            "text": "Phim cách nhiệt ô tô là một lớp màng polyester mỏng, tích hợp nhiều lớp vật liệu và công nghệ (như men gốm, kim loại, carbon, quang học) được dán lên bề mặt kính xe nhằm mục đích hỗ trợ cản nhiệt, giảm tia UV/IR và bảo vệ nội thất."
           }
         },
         {
@@ -1727,7 +1730,7 @@
           "name": "Phim cách nhiệt có ảnh hưởng GPS, VETC, Bluetooth không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Một số dòng phim có thành phần kim loại có thể ảnh hưởng đến GPS, VETC, Bluetooth hoặc sóng điện thoại trong một số điều kiện sử dụng. Khi tư vấn, Auto365 sẽ lựa chọn mã phim theo dòng xe, vị trí kính và nhu cầu sử dụng nhằm hạn chế ảnh hưởng đến tín hiệu trong điều kiện sử dụng phù hợp."
+            "text": "Một số dòng phim có thành phần kim loại có thể ảnh hưởng đến GPS, VETC, Bluetooth hoặc sóng điện thoại trong một số điều kiện sử dụng. Khi tư vấn, Auto365 sẽ lựa chọn mã phim theo dòng xe, vị trí kính và nhu cầu sử dụng nhằm hạn chế tối đa ảnh hưởng đến sóng."
           }
         },
         {
@@ -1767,7 +1770,7 @@
           "name": "Cách kiểm tra phim 3M chính hãng và bảo hành điện tử?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Phim 3M chính hãng được kích hoạt bảo hành điện tử trên hệ thống eWarranty của 3M Việt Nam. Khách hàng có thể tra cứu mã bảo hành qua website chính thức của 3M hoặc yêu cầu đại lý kiểm tra bằng máy test chuyên dụng."
+            "text": "Phim 3M chính hãng được kích hoạt bảo hành điện tử trên hệ thống eWarranty của 3M Việt Nam. Khách hàng có thể tra cứu mã bảo hành qua website chính thức của 3M "
           }
         },
         {
@@ -1914,10 +1917,7 @@
 
         <div class="pcn-trust-box"
           style="background:#f9fafb; border-left:4px solid #0056b3; padding:16px 20px; margin-bottom:24px; border-radius:4px; font-size:15px; color:var(--pcn-ink-soft);">
-          <strong>Auto365</strong> là hệ thống nâng cấp xe trực thuộc <strong>365Group</strong>. Trong hệ sinh thái này,
-          <strong>Auto365.vn - Trụ Sở Chính</strong> và <strong>3M Pro Shop &amp; 3M Training Center</strong> phục vụ tư
-          vấn, thi công và đào tạo kỹ thuật phim cách nhiệt 3M. Với nhóm phim cách nhiệt 3M, Auto365 tư vấn theo thông
-          tin gói phim, mã phim, vị trí kính và điều kiện bảo hành áp dụng tại thời điểm thi công.
+          Auto365 thuộc 365Group, là điểm 3M Pro Shop & 3M Training Center: tư vấn, thi công và đào tạo phim cách nhiệt 3M.
         </div>
 
         <p class="pcn-small" style="margin: -8px 0 24px;">
@@ -1946,14 +1946,17 @@
               sách bảo hành.</p>
           </div>
 
+          <section class="pcn-ai-summary" aria-label="Tóm tắt nhanh về phim cách nhiệt ô tô">
+            <h2>Tóm tắt nhanh</h2>
+            <p>Phim cách nhiệt ô tô là lớp phim dán lên kính xe để hỗ trợ giảm nhiệt, giảm chói, hạn chế tia UV và cải thiện sự riêng tư trong khoang xe. Khi chọn phim, người dùng nên xem đồng thời TSER, VLT, IRR, UVR, độ giảm chói, vị trí kính và nhu cầu sử dụng thực tế. Auto365.vn - Trụ Sở Chính tư vấn phim cách nhiệt theo dòng xe, kính nguyên bản, mã phim, ngân sách và điều kiện vận hành.</p>
+          </section>
+
           <div class="pcn-card pcn-card-accent" style="margin-bottom: 18px;">
             <h3 style="margin-bottom: 20px;">8 lợi ích chính khi dán phim cách nhiệt</h3>
             <div class="pcn-grid-4">
               <div>
                 <h4 style="margin:0 0 6px; font-size:16px;">🌡️ Giảm nóng cabin</h4>
-                <p style="margin:0; font-size:14.5px; color:var(--pcn-muted); line-height:1.5;">Hỗ trợ giảm đáng kể
-                  nhiệt lượng từ tia hồng ngoại (IR) và năng lượng mặt trời truyền qua mặt kính, giúp không khí trong xe
-                  dịu bớt đi khi di chuyển dưới thời tiết nắng nóng.</p>
+                <p style="margin:0; font-size:14.5px; color:var(--pcn-muted); line-height:1.5;">Hỗ trợ giảm một phần nhiệt lượng truyền qua kính, giúp khoang xe dịu hơn trong một số điều kiện sử dụng.</p>
               </div>
               <div>
                 <h4 style="margin:0 0 6px; font-size:16px;">☀️ Hỗ trợ cản tia UV</h4>
@@ -1984,7 +1987,7 @@
               <div>
                 <h4 style="margin:0 0 6px; font-size:16px;">❄️ Giảm tải điều hòa</h4>
                 <p style="margin:0; font-size:14.5px; color:var(--pcn-muted); line-height:1.5;">Nhờ khoang lái không bị
-                  hấp nhiệt quá mức, hệ thống điều hòa hoạt động hiệu quả hơn, có thể hỗ trợ tối ưu tiêu hao năng lượng.
+                  hấp nhiệt quá mức, hệ thống điều hòa hoạt động hiệu quả hơn, có thể góp phần giảm tải cho hệ thống điều hòa trong một số điều kiện sử dụng.
                 </p>
               </div>
               <div>
@@ -2086,6 +2089,7 @@
                   </tr>
                 </tbody>
               </table>
+              <p class="pcn-source-note">Nguồn: Catalog 3M | 365Group, áp dụng từ 06/2026 — điều kiện đo kính xanh 6mm, VLT 73%.</p>
             </div>
             <p class="pcn-table-note" style="margin-top:12px; font-style:italic; font-size:14px; color:#666;">
               Khi chọn phim cách nhiệt, không nên chỉ dựa vào tên công nghệ. Khách hàng cần đối chiếu mã phim cụ thể, vị
@@ -2592,15 +2596,54 @@
             </div>
           </div>
         </section>
-        <h3>Phim cách nhiệt giá rẻ có nên dán không?</h3>
-        <p>Phim cách nhiệt giá rẻ có thể phù hợp với nhu cầu cơ bản như tăng riêng tư hoặc giảm chói nhẹ. Tuy nhiên,
-          khách hàng cần kiểm tra kỹ mã phim, thông số, độ bền màu, khả năng bong rộp, độ trong khi quan sát và chính
-          sách bảo hành.</p>
-        <p>Với kính lái, không nên chọn phim chỉ vì giá thấp nếu phim làm kính quá tối, khó quan sát khi đi đêm hoặc
-          không rõ nguồn gốc. Một cấu hình phù hợp cần cân bằng giữa ngân sách, tầm nhìn, khả năng giảm nóng và độ bền
-          sau thi công.</p>
+        
 
-        <section class="pcn-section" id="bang-gia-goi-3m">
+        <section class="pcn-section" id="chon-phim-theo-vi-tri-kinh">
+            <h2>Chọn phim cách nhiệt theo vị trí kính</h2>
+            <p>Mỗi vị trí kính trên ô tô có yêu cầu khác nhau về tầm nhìn, độ riêng tư, giảm chói và khả năng kiểm soát nhiệt. Vì vậy, không nên chọn cùng một mã phim cho toàn bộ xe nếu chưa được tư vấn theo nhu cầu sử dụng thực tế.</p>
+            <div class="pcn-table-wrap">
+              <div class="table-responsive" style="overflow-x:auto;">
+                <table class="pcn-table">
+                  <thead>
+                    <tr>
+                      <th>Vị trí kính</th>
+                    <th>Ưu tiên khi chọn phim</th>
+                    <th>Lưu ý</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kính lái</td>
+                    <td>VLT cao, tầm nhìn rõ, giảm chói vừa phải</td>
+                    <td>Không chọn quá tối; tư vấn theo kính nguyên bản và điều kiện lái đêm</td>
+                  </tr>
+                  <tr>
+                    <td>Kính sườn trước</td>
+                    <td>Cân bằng riêng tư, tầm nhìn gương, giảm nóng</td>
+                    <td>Tránh mã quá tối nếu thường đi đêm hoặc trời mưa</td>
+                  </tr>
+                  <tr>
+                    <td>Kính sườn sau</td>
+                    <td>Ưu tiên riêng tư và giảm nóng</td>
+                    <td>Có thể chọn mã tối hơn kính trước</td>
+                  </tr>
+                  <tr>
+                    <td>Kính lưng</td>
+                    <td>Giảm nóng, giảm chói từ sau xe</td>
+                    <td>Cần kiểm tra camera hoặc gương chiếu hậu</td>
+                  </tr>
+                  <tr>
+                    <td>Cửa sổ trời</td>
+                    <td>Ưu tiên kiểm soát nhiệt</td>
+                    <td>Giá theo diện tích thực tế</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </section>
+
+          <section class="pcn-section" id="bang-gia-goi-3m">
           <div class="pcn-section-head">
             <span class="pcn-eyebrow">Giá &amp; catalog</span>
             <h2>4. Bảng giá phim cách nhiệt và các gói 3M tại Auto365</h2>
@@ -2612,10 +2655,9 @@
           </div>
           <div class="pcn-warranty-box">
             <h3>Bảo hành phim cách nhiệt 3M</h3>
-            <p>Theo catalog 3M | 365Group áp dụng từ 06/2026, phim cách nhiệt 3M được bảo hành chính hãng 10 năm theo
-              điều kiện áp dụng khi đã dán trên xe và được kích hoạt bảo hành điện tử 3M. Khách hàng kiểm tra mã phim,
-              vị trí dán, thông tin gói và tra cứu bảo hành điện tử tại thời điểm bàn giao xe.</p>
+            <p>Theo catalog 3M | 365Group áp dụng từ 06/2026, phim cách nhiệt 3M được bảo hành chính hãng 10 năm theo điều kiện áp dụng khi đã dán trên xe và được kích hoạt bảo hành điện tử 3M. Khách hàng kiểm tra mã phim, vị trí dán, thông tin gói và tra cứu bảo hành điện tử tại thời điểm bàn giao xe.</p>
           </div>
+          <p class="pcn-source-note"><strong>Lưu ý giá:</strong> Bảng giá dưới đây là giá tham khảo tại Auto365 theo catalog 3M | 365Group áp dụng từ 06/2026, không đại diện cho toàn bộ thị trường phim cách nhiệt. Giá thực tế cần được xác nhận theo dòng xe, diện tích kính, tình trạng phim cũ, cửa sổ trời và chính sách áp dụng tại thời điểm tư vấn.</p>
           <div class="pcn-table-wrap">
             <div class="table-responsive" style="overflow-x:auto;">
               <table class="pcn-table">
@@ -2677,10 +2719,10 @@
                 </tbody>
               </table>
             </div>
-            <p style="margin-top:12px; font-style:italic; font-size:14px; color:#666;">Áp dụng từ 06/2026 đến khi có
+            <p style="margin-top:12px; font-style:italic; font-size:14px; color:#666; padding: 0 20px;">Áp dụng từ 06/2026 đến khi có
               thông báo mới.<br>Nhóm minicar tham khảo theo catalog gồm VinFast VF 3, Wuling Hongguang Mini EV, Bestune
-              Xiaoma, Minio Green và xe cùng kích thước.</p>
-            <p class="pcn-small">Khách hàng muốn thi công nhóm Ceramic Hybrid/Ceramic NR có thể tham khảo thêm <a
+              Xiaoma, VinFast Minio Green và xe cùng kích thước.</p>
+            <p class="pcn-small" style="padding: 0 20px 16px;">Khách hàng muốn thi công nhóm Ceramic Hybrid/Ceramic NR có thể tham khảo thêm <a
                 href="https://auto365.vn/dia-chi-dan-phim-3m-ceramic-hybrid-chinh-hang">địa chỉ dán phim 3M Ceramic
                 Hybrid chính hãng</a> trước khi đặt lịch.</p>
           </div>
@@ -2716,8 +2758,7 @@
                   <tr>
                     <td>Cửa sổ trời nhỏ</td>
                     <td><strong>từ 850.000đ</strong></td>
-                    <td>Cửa sổ trời nhỏ: từ 850.000đ — giá tham khảo theo diện tích thực tế, tính theo quy tắc 1/2 hàng
-                      kính sườn trong bảng dán lẻ.</td>
+                    <td>từ 850.000đ — giá tham khảo theo diện tích thực tế, tính theo quy tắc 1/2 hàng kính sườn trong bảng dán lẻ.</td>
                   </tr>
                   <tr>
                     <td>Cửa sổ trời panorama</td>
@@ -2731,7 +2772,7 @@
           </div>
           <div class="pcn-grid-3">
             <div class="pcn-card">
-              <h3><a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">3M Ceramic Hybrid / Ceramic NR</a>
+              <h3><a href="#3m-ceramic-hybrid">3M Ceramic Hybrid / Ceramic NR</a>
               </h3>
               <p>Gói dễ tiếp cận, tham khảo <a
                   href="https://auto365.vn/phim-cach-nhiet-3m-ceramic-nr-chinh-hang-gia-bao-nhieu-cho-sedan-4-cho"
@@ -2768,7 +2809,7 @@
                 theo catalog.</p>
             </div>
           </div>
-          <p class="pcn-note"><strong>Lưu ý:</strong> giá thực tế cần được xác nhận theo dòng xe, kích thước kính, tình
+          <p class="pcn-note" style="margin-top: 32px;"><strong>Lưu ý:</strong> giá thực tế cần được xác nhận theo dòng xe, kích thước kính, tình
             trạng phim cũ, cửa sổ trời và chính sách áp dụng tại thời điểm tư vấn. Bảng giá dán lẻ phía trên chỉ chia
             theo vị trí kính để khách hàng dễ hiểu, không chia theo từng gói nhằm tránh làm mục giá quá rối.</p>
         </section>
@@ -3110,8 +3151,7 @@
                 </div>
                 <h3 class="pcn-brand-name">Cool N Lite</h3>
               </div>
-              <p class="pcn-brand-desc">Thường xuất hiện trong phân khúc xe cao cấp, phim cách nhiệt Cool N Lite cung
-                cấp đa dạng cấu hình màng phim.</p>
+              <p class="pcn-brand-desc">Cool N Lite là một trong các thương hiệu phim cách nhiệt được người dùng tại Việt Nam tham khảo. Khi so sánh, nên xem mã phim cụ thể, thông số công bố và chính sách bảo hành.</p>
             </div>
 
             <div class="pcn-brand-card">
@@ -3135,7 +3175,7 @@
             sản phẩm và trải nghiệm nhìn thực tế trên kính lái.
           </div>
 
-          <h3>Không nên chọn phim cách nhiệt chỉ theo tên thương hiệu</h3>
+          <h3>Không nên chọn phim cách nhiệt chỉ theo thương hiệu</h3>
           <p>Trên thị trường có nhiều thương hiệu phim cách nhiệt ô tô như 3M, V-Kool, XPEL, Llumar, Ntech, Inmax,
             Rayno, NanoX hoặc một số dòng phim theo từng phân khúc riêng. Mỗi thương hiệu thường có nhiều dòng
             sản phẩm, nhiều mã phim và nhiều mức giá khác nhau.</p>
@@ -3165,14 +3205,13 @@
                   </tr>
                   <tr>
                     <td>V-Kool</td>
-                    <td>Thường được nhắc đến ở nhóm phim cao cấp, có các dòng sử dụng công nghệ phản xạ/phún xạ kim
-                      loại.</td>
+                    <td>V-Kool là một trong các thương hiệu phim cách nhiệt được người dùng tại Việt Nam tham khảo. Khi so sánh, nên xem mã phim cụ thể, thông số công bố, trải nghiệm quan sát và chính sách bảo hành.</td>
                     <td>Nên kiểm tra độ phản gương, tầm nhìn và khả năng tương thích với thiết bị thu phát trên xe.</td>
                   </tr>
                   <tr>
                     <td>XPEL</td>
                     <td>Được biết đến nhiều trong nhóm chăm sóc xe, PPF và phim cách nhiệt cao cấp.</td>
-                    <td>Cần đối chiếu mã phim cụ thể, thông số và chính sách bảo hành tại đại lý thi công.</td>
+                    <td>Cần đối chiếu mã phim cụ thể, thông số và chính sách bảo hành tại điểm thi công.</td>
                   </tr>
                   <tr>
                     <td>Llumar</td>
@@ -3403,6 +3442,7 @@
 
           <div class="pcn-section-header">
             <h2>7. Quy trình dán phim cách nhiệt, bảo hành và địa chỉ thi công tại Auto365</h2>
+            <p>Auto365.vn - Trụ Sở Chính là điểm tư vấn, thi công, nghiệm thu và hỗ trợ khách hàng thuộc hệ thống Auto365 trong hệ sinh thái 365Group.</p>
 
             <h3>Bảo hành điện tử và quy trình nghiệm thu</h3>
 
@@ -3506,7 +3546,50 @@
                 tra thông tin bảo hành điện tử.</figcaption>
             </figure>
 
-            <h3>Hệ thống địa chỉ thi công tại Auto365</h3>
+            <section class="pcn-section" id="checklist-nghiem-thu-sau-dan">
+            <h2>Checklist nghiệm thu sau khi dán phim cách nhiệt</h2>
+            <p>Sau khi thi công, khách hàng nên kiểm tra lại từng vị trí kính, mã phim và thông tin bảo hành để đảm bảo cấu hình đúng với tư vấn ban đầu.</p>
+            <div class="pcn-table-wrap">
+              <div class="table-responsive" style="overflow-x:auto;">
+                <table class="pcn-table">
+                  <thead>
+                    <tr>
+                      <th>Hạng mục nghiệm thu</th>
+                    <th>Cần kiểm</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mã phim</td>
+                    <td>Đúng mã đã tư vấn theo từng vị trí kính</td>
+                  </tr>
+                  <tr>
+                    <td>Bề mặt kính</td>
+                    <td>Không bụi lớn, không xước, không bong mép</td>
+                  </tr>
+                  <tr>
+                    <td>Mép phim</td>
+                    <td>Cắt gọn, không hở bất thường</td>
+                  </tr>
+                  <tr>
+                    <td>Tầm nhìn</td>
+                    <td>Kính lái và kính sườn trước rõ trong điều kiện thực tế</td>
+                  </tr>
+                  <tr>
+                    <td>Bảo hành</td>
+                    <td>Có thông tin kích hoạt hoặc tra cứu bảo hành điện tử nếu áp dụng</td>
+                  </tr>
+                  <tr>
+                    <td>Hướng dẫn sau dán</td>
+                    <td>Nắm rõ thời gian hạn chế lên/xuống kính, vệ sinh và chăm sóc sau khi dán</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          </section>
+
+          <h3>Hệ thống địa chỉ thi công tại Auto365</h3>
             <ul>
               <li><strong>Auto365.vn - Trụ Sở Chính:</strong> Số 4/4/17 Đường Số 3, Phường Hiệp Bình, Thành phố Hồ Chí
                 Minh. Hotline: <strong><a href="tel:0365365911">0365 365 911</a></strong>.</li>
@@ -3613,7 +3696,7 @@
 
 
             <div class="pcn-cta">
-              <div><span>Đặt lịch dán phim cách nhiệt</span>
+              <div>
                 <h3>Đặt lịch tại Auto365 hoặc 3M Pro Shop để được tư vấn mã phim phù hợp trước khi thi công.</h3>
                 <p>Đặc biệt nên đặt lịch trước nếu xe có phim cũ, cửa sổ trời, panorama, xe điện, xe khách hoặc cần dán
                   theo đoàn/đội xe. Auto365 sẽ chuẩn bị mẫu phim, thời gian thi công và tư vấn viên phù hợp.</p>
@@ -3621,17 +3704,17 @@
             </div>
         </section>
 
-        <div class="pcn-review">
+        <div class="pcn-review" style="margin-top: 24px;">
           <blockquote>Nội dung được kiểm duyệt chuyên môn bởi đội ngũ kỹ thuật tại Auto365.vn - Trụ Sở Chính và 3M Pro
             Shop & 3M Training Center, phụ trách tiêu chuẩn tư vấn, đào tạo kỹ thuật, kiểm soát chất lượng thi công và
             nghiệm thu phim cách nhiệt tại hệ thống Auto365.</blockquote>
         </div>
-        <div class="pcn-card pcn-card-accent" id="nguon-xac-thuc-auto365">
+        <div class="pcn-card pcn-card-accent" id="nguon-xac-thuc-auto365" style="margin-top: 24px;">
           <h3>Nguồn xác thực về Auto365, 365Group và 3M Pro Shop</h3>
-          <p>Để kiểm tra thêm về hệ sinh thái Auto365, 365Group và hoạt động 3M Pro Shop, khách hàng có thể tham khảo
+          <p>Để kiểm tra thêm về hệ thống Auto365, 365Group và hoạt động 3M Pro Shop, khách hàng có thể tham khảo
             các nội dung đã công bố về báo chí và hoạt động chứng nhận kỹ thuật.</p>
           <ul class="pcn-icon-list">
-            <li><a href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop">Báo chí nói về Auto365,
+            <li><a href="#365group">Báo chí nói về Auto365,
                 365Group và mô hình 3M Pro Shop</a></li>
             <li><a
                 href="https://auto365.vn/3m-global-trao-chung-nhan-3m-preferred-installer-cho-doi-ngu-ky-thuat-vien-3m-pro-shop">3M
@@ -3639,11 +3722,11 @@
           </ul>
         </div>
 
-        <div class="pcn-card">
+        <div class="pcn-card" style="margin-top: 24px;">
           <h3>Thông tin chuyên môn</h3>
           <p>Nội dung bài viết được Auto365 biên soạn nhằm giúp khách hàng hiểu cách đọc thông số, chọn mã phim theo vị
             trí kính và kiểm tra phim trước khi dán. Các khuyến nghị kỹ thuật có tham khảo kinh nghiệm tư vấn, thi công
-            và đào tạo của anh <a href="https://auto365.vn/tac-gia/dang-minh-hoang" rel="author">Đặng Minh Hoàng</a> –
+            và đào tạo của anh <a href="https://auto365.vn/dang-minh-hoang" rel="author">Đặng Minh Hoàng</a> –
             Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center.</p>
         </div>
 
@@ -3683,7 +3766,7 @@
               <summary style="font-weight:600; cursor:pointer; font-size:16px; outline:none;">Phim cách nhiệt ô tô là
                 gì?</summary>
               <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Phim cách nhiệt ô tô là một lớp
-                màng polyeste mỏng, tích hợp nhiều lớp vật liệu và công nghệ (như men gốm, kim loại, carbon, quang học)
+                màng polyester mỏng, tích hợp nhiều lớp vật liệu và công nghệ (như men gốm, kim loại, carbon, quang học)
                 được dán lên bề mặt kính xe nhằm mục đích hỗ trợ cản nhiệt, giảm tia UV/IR và bảo vệ nội thất.</p>
             </details>
             <details class="pcn-faq-item"
@@ -3788,7 +3871,7 @@
                 chính hãng và bảo hành điện tử?</summary>
               <p style="margin-top:8px; font-size:15px; color:#4b5563; line-height:1.6;">Phim 3M chính hãng được kích
                 hoạt bảo hành điện tử trên hệ thống eWarranty của 3M Việt Nam. Khách hàng có thể tra cứu mã bảo hành qua
-                website chính thức của 3M hoặc yêu cầu đại lý kiểm tra bằng máy test chuyên dụng.</p>
+                website chính thức của 3M </p>
             </details>
             <details class="pcn-faq-item"
               style="margin-bottom:12px; border-bottom:1px solid #eaeaea; padding-bottom:12px;">
@@ -3871,20 +3954,29 @@
             </div>
             <form action="/api/leads" class="pcn-form" method="post">
               <h3>Nhận tư vấn phim cách nhiệt</h3>
-              <label for="fullname">Họ và tên</label><input id="fullname" name="fullname" placeholder="Nhập họ tên"
-                required="" type="text">
-              <label for="phone">Số điện thoại</label><input id="phone" name="phone" placeholder="Nhập số điện thoại"
-                required="" type="tel">
-              <label for="car">Dòng xe</label><input id="car" name="car"
-                placeholder="Ví dụ: VF8, Camry, Tucson, Xpander..." type="text">
-              <label for="need">Nhu cầu chính</label><select id="need" name="need">
-                <option value="">Chọn nhu cầu</option>
-                <option>Muốn mát rõ, chi phí hợp lý</option>
-                <option>Kính lái sáng, cao cấp</option>
-                <option>Xe gia đình / xe điện / nhiều kính</option>
-                <option>Thay phim cũ</option>
-                <option>Cần tư vấn cửa sổ trời / panorama</option>
-              </select>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div>
+                  <label for="fullname">Họ và tên</label><input id="fullname" name="fullname" placeholder="Nhập họ tên" required="" type="text">
+                </div>
+                <div>
+                  <label for="phone">Số điện thoại</label><input id="phone" name="phone" placeholder="Nhập số điện thoại" required="" type="tel">
+                </div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+                <div>
+                  <label for="car">Dòng xe</label><input id="car" name="car" placeholder="Ví dụ: VF8, Camry, Tucson..." type="text">
+                </div>
+                <div>
+                  <label for="need">Nhu cầu chính</label><select id="need" name="need">
+                    <option value="">Chọn nhu cầu</option>
+                    <option>Muốn mát rõ, hợp lý</option>
+                    <option>Kính lái sáng, cao cấp</option>
+                    <option>Xe gia đình / xe điện</option>
+                    <option>Thay phim cũ</option>
+                    <option>Tư vấn cửa sổ trời</option>
+                  </select>
+                </div>
+              </div>
               <label for="note">Ghi chú thêm</label><textarea id="note" name="note"
                 placeholder="Ví dụ: xe hay đi đêm, có phim cũ, có cửa sổ trời..."></textarea>
               <button type="submit">Gửi thông tin tư vấn</button>
