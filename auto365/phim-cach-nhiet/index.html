@@ -572,6 +572,16 @@
       color: var(--pcn-red);
       font-weight: 650
     }
+    
+    .pcn-table-pricing td:first-child {
+      min-width: 210px;
+    }
+    .pcn-table-pricing td:nth-child(2),
+    .pcn-table-pricing td:nth-child(3),
+    .pcn-table-pricing td:nth-child(4) {
+      white-space: nowrap;
+      width: 1%;
+    }
 
     /* PACKAGES */
     .pcn-package-grid {
@@ -2660,7 +2670,7 @@
           <p class="pcn-source-note"><strong>Lưu ý giá:</strong> Bảng giá dưới đây là giá tham khảo tại Auto365 theo catalog 3M | 365Group áp dụng từ 06/2026, không đại diện cho toàn bộ thị trường phim cách nhiệt. Giá thực tế cần được xác nhận theo dòng xe, diện tích kính, tình trạng phim cũ, cửa sổ trời và chính sách áp dụng tại thời điểm tư vấn.</p>
           <div class="pcn-table-wrap">
             <div class="table-responsive" style="overflow-x:auto;">
-              <table class="pcn-table">
+              <table class="pcn-table pcn-table-pricing">
                 <caption>Bảng giá gói phim cách nhiệt 3M theo catalog</caption>
                 <thead>
                   <tr>
