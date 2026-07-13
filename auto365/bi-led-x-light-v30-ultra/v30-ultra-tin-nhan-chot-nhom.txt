@@ -1,0 +1,29 @@
+TIN NHẮN CHỐT GỬI NHÓM — TRANG V30 ULTRA
+
+Team triển khai theo đúng file master:
+v30-master-final-locked.html
+
+Không dựng lại, không tự đổi nội dung, thông số, FAQ hoặc schema.
+
+Phân công:
+- Trân/Content: khóa Fact Sheet, giá/VAT/bảo hành/hotline/90 điểm; click-check URL; chuẩn bị media; xác nhận FAQ 15/15; vệ sinh bài 2022/2023 và link phân định V30L/M30/V20.
+- Xưởng/Media: ảnh sản phẩm, ảnh thi công, beam Cos/Pha, seri, bảo hành điện tử và hồ sơ đo Lux thật. Không điền số Lux bằng tay.
+- Cường/Dev: tích hợp đúng master; giữ toàn bộ module, schema, accessibility, tracking; tối ưu mobile/CWV; không bật form khi CRM chưa sẵn sàng.
+- SEO/QA: kiểm tra canonical, metadata, JSON-LD, FAQ 15/15, URL, local registry, Rich Results và Core Web Vitals.
+
+Chưa được go-live nếu thiếu một trong các mục:
+1. Fact Sheet chưa khóa.
+2. URL chưa click-check.
+3. Chưa có ảnh OG thật.
+4. Registry hơn 90 điểm chưa xác nhận.
+5. FAQ body/schema chưa 15/15.
+6. Có link 404.
+7. Có review/rating giả.
+8. Form CRM đang hiển thị nhưng chưa có endpoint/người trực.
+9. Lux section được mở khi chưa có phép đo thật.
+10. Chưa test mobile, schema và CWV.
+
+Sau go-live tối ưu 15 ngày/lần, không thay đổi hàng loạt cùng lúc.
+
+Mục tiêu cuối:
+Khách hiểu đúng sản phẩm, biết xe mình cần kiểm tra gì, thấy bằng chứng thật, tin hệ thống Auto365 và thực hiện hành động gọi hoặc tìm điểm gần nhất.

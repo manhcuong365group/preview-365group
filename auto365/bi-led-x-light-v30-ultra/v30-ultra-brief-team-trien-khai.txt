@@ -1,0 +1,427 @@
+TRIỂN KHAI TRANG TRỤ CỘT BI LED X-LIGHT V30 ULTRA
+MASTER DÙNG CHUNG: v30-master-final-locked.html
+
+MỤC TIÊU
+Hoàn thiện và đưa trang /bi-led-x-light-v30-ultra lên staging, sau đó go-live khi đủ điều kiện.
+Trang phải đạt đồng thời 4 mục tiêu:
+1. Giúp chủ xe hiểu đúng V30 Ultra 2026.
+2. Thúc đẩy hành động gọi tư vấn hoặc tìm điểm Auto365 gần nhất.
+3. Giữ đầy đủ cấu trúc SEO, AI Search, local và schema.
+4. Chỉ công bố dữ liệu, case, hình ảnh và số đo đã được xác minh.
+
+NGUYÊN TẮC CHUNG
+- Chỉ dùng file v30-master-final-locked.html làm nguồn duy nhất.
+- Không dựng lại từ đầu.
+- Không tự đổi H1, title, meta, canonical, giá, thông số, FAQ hoặc schema.
+- Mọi thay đổi nội dung phải được ghi lại và duyệt trước khi merge.
+- Không dùng case 2022/2023 để cam kết kết quả V30 Ultra 2026.
+- Không dùng Review hoặc AggregateRating nếu chưa có đánh giá thật hiển thị công khai.
+- Không hiển thị form lead, bảng Lux, ảnh placeholder hoặc link chưa sẵn sàng.
+- Không thêm GTR vào schema. Vàng đồng–đen–trắng chỉ là ngôn ngữ thiết kế.
+- Entity chính của trang là: Bi LED X-Light V30 Ultra, X-Light, Auto365.vn, 365Group và hệ thống Auto365 toàn quốc.
+
+==================================================
+I. PHÂN CÔNG NỘI DUNG VÀ DỮ LIỆU — TRÂN/CONTENT
+==================================================
+
+1. KHÓA FACT SHEET V30 ULTRA 2026
+Xác nhận bằng tài liệu nội bộ/chính thức:
+- Tên đầy đủ sản phẩm.
+- Phiên bản/năm 2026.
+- Chip LED.
+- Công suất Cos.
+- Công suất Pha.
+- Nhiệt màu.
+- Turbo Boost.
+- Lens.
+- Điện áp hỗ trợ.
+- Tản nhiệt.
+- Tuổi thọ công bố.
+- Giá niêm yết.
+- VAT đã/chưa bao gồm.
+- Bảo hành.
+- Bảo hành điện tử.
+- Thời gian thi công tham khảo.
+- Hotline.
+- Số lượng điểm Auto365 toàn quốc.
+
+Quy tắc:
+- Không có nguồn thì không tự điền.
+- Nguồn cũ lệch nhau phải ghi rõ để đối chiếu.
+- Thông số bản 2026 phải được khóa trước khi go-live.
+
+2. CLICK-CHECK TOÀN BỘ URL
+Kiểm tra tất cả link:
+- V30 đời đầu.
+- V30 Ultra 2022.
+- V30 Ultra 2023.
+- Toyota Vios.
+- Mazda CX-5.
+- Hyundai Tucson.
+- VinFast VF6.
+- VinFast VF8.
+- Chevrolet Colorado.
+- Evidence hub hình ảnh.
+- Beam/phản hồi V30 Ultra 2022.
+- V30 Ultra hay F10 Turbo.
+- Combo V30 Ultra + F10.
+- Trụ cột bi gầm.
+- /chi-nhanh.
+- /thu-duc.
+
+Bàn giao bảng:
+- URL đúng.
+- URL lỗi/404.
+- URL cần redirect.
+- URL cần gỡ link.
+- Anchor text đề xuất.
+
+3. KIỂM TRA NỘI DUNG LIVE
+Giữ nguyên tinh thần:
+- Không ép mua.
+- Không cam kết lắp được cho mọi xe.
+- Không dùng “sáng nhất”, “tốt nhất”, “không chói 100%”, “đăng kiểm chắc chắn”.
+- Không dùng nhiệt màu 5000K như bằng chứng duy nhất cho hiệu quả mưa/sương.
+- Không dùng dải điện áp để kết luận xe điện tương thích tuyệt đối.
+
+Kiểm tra các phần:
+- Hero và giá.
+- Trả lời nhanh.
+- 6 điểm nổi bật.
+- Light Coverage Explorer.
+- Vehicle Fitment Passport.
+- Proof Cards.
+- Hệ thống Auto365.
+- Bảo hành điện tử.
+- Bảng thông số.
+- Bảng phiên bản.
+- Ai nên/chưa nên lắp.
+- 15 FAQ.
+- Entity Lock.
+- Phân định V30 Ultra, V30L Ultra, M30 Ultra và V20.
+- Nguồn dữ liệu và ngày cập nhật.
+
+4. FAQ VÀ SCHEMA
+- FAQ hiển thị phải đủ 15 câu.
+- FAQ body và FAQPage JSON-LD phải khớp từng câu.
+- Mỗi FAQ giữ nguyên ID và aria-labelledby.
+- Sửa một câu FAQ phải sửa đồng thời HTML và schema.
+- Không tự thêm FAQ nếu chưa cập nhật cả hai nơi.
+
+5. VỆ SINH BÀI CŨ
+Với bài 2022/2023:
+- Ghi rõ phiên bản áp dụng.
+- Gỡ claim tuyệt đối.
+- Link về pillar V30 Ultra.
+- Ghi rõ bản mới nhất nằm tại pillar.
+- Bài V30L Ultra, M30 Ultra và V20 phải link chéo bằng anchor phân định rõ dòng.
+- Giữ canonical self nếu bài có intent, nội dung và hình ảnh riêng.
+
+==================================================
+II. MEDIA VÀ XƯỞNG KỸ THUẬT
+==================================================
+
+1. MEDIA TỐI THIỂU TRƯỚC GO-LIVE
+- Ảnh hero/OG đúng V30 Ultra 2026, kích thước 1200×630.
+- Ảnh sản phẩm thật.
+- Ảnh lens/chip/tản nhiệt nếu có.
+- Ảnh thi công thật.
+- Beam Cos thật.
+- Beam Pha thật.
+- Ảnh số seri/tem.
+- Ảnh kích hoạt bảo hành điện tử.
+- Ảnh bàn giao xe.
+
+Mỗi file cần:
+- Tên file.
+- Dòng xe/đời xe.
+- Phiên bản sản phẩm.
+- Alt text.
+- Caption.
+- Nguồn ảnh.
+- Quyền public.
+
+2. QUY TẮC ẢNH
+- Không dùng ảnh 2022/2023 làm ảnh đại diện V30 Ultra 2026.
+- Không dùng ảnh một xe cho card xe khác.
+- Ảnh WebP/AVIF ưu tiên dưới hoặc bằng 200KB.
+- Có width và height.
+- Lazy-load ảnh ngoài màn hình đầu.
+- Ảnh hero phải được tối ưu riêng để giữ LCP mobile.
+
+3. SỐ ĐO LUX
+Section #so-do-lux đang hidden.
+Chỉ mở khi có phép đo thật theo đúng giao thức:
+- Ghi tên xe và đời xe.
+- Ghi tình trạng chóa.
+- Ghi thiết bị đo và model.
+- Ghi người đo và ngày đo.
+- Dùng cùng điểm, cùng khoảng cách trước/sau.
+- Ghi điều kiện ánh sáng, thời tiết và điện áp.
+- Có ảnh beam và bản ghi đo đi kèm.
+- Chỉ công bố số của xe được đo.
+- Không suy rộng “mọi xe tăng X lần”.
+- Không điền số bằng tay để hoàn thiện giao diện.
+
+4. CASE V30 ULTRA 2026
+Khi có case đúng bản 2026:
+- Xác minh sản phẩm.
+- Xác minh xe và đời xe.
+- Có ảnh sản phẩm, thi công, Cos, Pha.
+- Có pát/giắc/vật tư thực tế.
+- Có thời gian thi công.
+- Có seri và bảo hành.
+- Chỉ khi đủ dữ liệu mới thêm badge “Đã xác minh bản 2026”.
+
+==================================================
+III. TÍCH HỢP DEV — CƯỜNG/DEV
+==================================================
+
+1. NGUYÊN TẮC
+- Không dựng lại từ đầu.
+- Không rút bớt module.
+- Không thay đổi nội dung đã freeze.
+- Không bật form CRM khi chưa đủ điều kiện.
+- Không bỏ schema khi đưa vào CMS.
+- Không để comment nội bộ xuất hiện trước khách.
+
+2. MODULE PHẢI GIỮ
+- Topbar.
+- Navigation.
+- Hero.
+- Trust strip.
+- Quick Answer.
+- 6 điểm nổi bật.
+- Light Coverage Explorer.
+- Section Lux hidden.
+- Vehicle Fitment Passport.
+- Proof Cards và bộ lọc hãng.
+- Hệ thống Auto365 toàn quốc.
+- Bàn giao số và bảo hành điện tử.
+- Accordion thông số/giá/phiên bản/quy trình.
+- Ai nên/chưa nên lắp.
+- FAQ 15 câu.
+- SEO & AI Search Knowledge Layer.
+- Lead form template inert.
+- CTA cuối.
+- Mobile sticky CTA.
+
+3. ACCESSIBILITY
+Giữ:
+- Skip-link.
+- prefers-reduced-motion.
+- Keyboard navigation cho Light Coverage tabs.
+- aria-selected, tabindex và tabpanel.
+- aria-pressed cho bộ lọc case.
+- aria-live cho kết quả Passport.
+- Không tạo anchor gãy.
+- Không tạo ID trùng.
+
+4. LEAD FORM
+Template:
+#lead-form-template
+
+Chỉ kích hoạt khi:
+- CRM endpoint thật.
+- Người trực rõ ràng.
+- SLA phản hồi.
+- Chống spam.
+- Thông báo quyền riêng tư.
+- Tracking nguồn pillar-v30-ultra.
+
+Khi chưa đủ:
+- Giữ trong template.
+- data-activation-state=disabled.
+- data-endpoint-required=true.
+- Không clone vào DOM.
+- Không hiển thị form “chết”.
+
+5. TRACKING
+Giữ các event:
+- click_hotline
+- click_branch_hub
+- coverage_mode_selected
+- fitment_passport_created
+- click_hotline_passport
+- click_passport_reference
+- click_case
+- click_knowledge
+- case_brand_filter
+- form_submit khi CRM đã bật
+
+Không gửi số điện thoại hoặc dữ liệu cá nhân vào dataLayer/Analytics.
+
+6. HIỆU NĂNG
+Mục tiêu:
+- LCP mobile dưới 2.5 giây.
+- Không thêm font ngoài nếu chưa duyệt.
+- Không thêm script chặn render.
+- Ảnh có kích thước cố định.
+- Không layout shift.
+- Không lỗi console.
+- Không lỗi JavaScript.
+- Không tràn ngang trên mobile.
+
+==================================================
+IV. SEO, SCHEMA VÀ LOCAL — SEO/QA
+==================================================
+
+1. SEO ON-PAGE
+Xác nhận:
+- Một H1.
+- Title đúng.
+- Meta description đúng.
+- Canonical đúng.
+- Robots đúng.
+- Open Graph đúng.
+- Twitter metadata đúng.
+- Chỉ thêm og:image/twitter:image khi ảnh thật trả HTTP 200.
+
+2. SCHEMA
+Giữ:
+- WebSite.
+- Organization.
+- LocalBusiness Trụ Sở Chính.
+- BreadcrumbList.
+- Product.
+- Offer.
+- Service.
+- Article.
+- ItemList case.
+- ItemList knowledge.
+- FAQPage.
+- WebPage.
+
+Không thêm:
+- Review giả.
+- AggregateRating giả.
+- 90 LocalBusiness trong trang sản phẩm.
+- GTR vào schema nếu chưa có quan hệ entity công khai.
+
+3. LOCAL
+- /chi-nhanh là hub trung tâm.
+- /thu-duc là trang Trụ Sở Chính.
+- Chỉ giữ “hơn 90 điểm” khi registry được xác nhận.
+- Hotline từng điểm phải theo registry, không dùng một NAP cho mọi chi nhánh.
+
+4. FAQ
+Tiêu chí bắt buộc:
+- Body: 15.
+- Schema: 15.
+- Khớp từng câu.
+- 15 anchor hợp lệ.
+- Không ID trùng.
+- Không anchor nội bộ gãy.
+
+5. URL VÀ REDIRECT
+- Click-check trước publish.
+- URL 404: gỡ link, giữ text nếu cần.
+- Không tạo link tới bài dự kiến.
+- Các URL 2022/2023 giữ vai trò archive/cluster nếu còn intent riêng.
+- Redirect/canonical thực hiện theo map đã được duyệt.
+
+==================================================
+V. ĐIỀU KIỆN GO-LIVE — THIẾU 1 MỤC THÌ CHƯA PUBLISH
+==================================================
+
+[ ] Fact Sheet V30 Ultra 2026 đã khóa.
+[ ] Giá, VAT, bảo hành, hotline đã xác nhận.
+[ ] Registry “hơn 90 điểm” đã xác nhận.
+[ ] Toàn bộ URL đã click-check.
+[ ] Không link 404.
+[ ] Có ảnh OG thật.
+[ ] Có ảnh sản phẩm thật.
+[ ] Case lịch sử ghi đúng phiên bản.
+[ ] FAQ body/schema khớp 15/15.
+[ ] JSON-LD hợp lệ.
+[ ] Không Review/AggregateRating giả.
+[ ] Form lead vẫn inert nếu CRM chưa sẵn sàng.
+[ ] Section Lux vẫn hidden nếu chưa đo thật.
+[ ] Không text/comment nội bộ hiển thị.
+[ ] Hotline gọi đúng 0365 365 911.
+[ ] CTA /chi-nhanh đúng.
+[ ] Mobile không tràn ngang.
+[ ] Không lỗi console/JavaScript.
+[ ] Rich Results Test đạt.
+[ ] Core Web Vitals đã kiểm tra.
+[ ] Nội dung đăng kiểm chưa được tự diễn giải nếu chưa có nguồn chính thức.
+
+==================================================
+VI. ĐẦU RA BÀN GIAO
+==================================================
+
+TRÂN/CONTENT bàn giao:
+- Fact Sheet đã khóa.
+- Danh sách URL đã kiểm tra.
+- Media + alt + caption.
+- Nội dung freeze.
+- Danh sách bài cũ đã vệ sinh.
+- Xác nhận FAQ 15/15.
+
+XƯỞNG/MEDIA bàn giao:
+- Hồ sơ case.
+- Ảnh beam.
+- Seri/bảo hành.
+- Biên bản đo Lux nếu có.
+- Xác nhận quyền public.
+
+CƯỜNG/DEV bàn giao:
+- URL staging.
+- Screenshot desktop/tablet/mobile.
+- Báo cáo lỗi console.
+- Báo cáo event tracking.
+- Danh sách URL đã kiểm tra.
+- Báo cáo Rich Results.
+- Báo cáo CWV.
+- Backup trước go-live.
+
+SEO/QA bàn giao:
+- Checklist go-live đã ký.
+- Schema report.
+- Redirect/canonical report.
+- Indexing plan.
+- Kế hoạch theo dõi Search Console.
+
+==================================================
+VII. SAU GO-LIVE — TỐI ƯU 15 NGÀY/LẦN
+==================================================
+
+Ngày 15:
+- Index.
+- Canonical.
+- CTR.
+- Crawl.
+- Cannibalization.
+- Lỗi schema.
+
+Ngày 30:
+- Thêm case/beam V30 Ultra 2026 đầu tiên.
+- Đo tương tác hotline, chi nhánh, case xe.
+
+Ngày 45:
+- Mở rộng cluster:
+  + 2026 vs 2023.
+  + V30 Ultra hay bi gầm.
+  + V30 Ultra cho xe điện.
+  + Có gây chói không.
+  + Beam pattern 2026.
+
+Ngày 60:
+- Tối ưu local.
+- Link từ branch pages.
+- Đồng bộ registry.
+
+Ngày 75:
+- Tối ưu chuyển đổi theo dữ liệu thật.
+- Chỉ bật form CRM khi vận hành đã sẵn sàng.
+
+KẾT LUẬN
+File HTML đã khóa về cấu trúc.
+Từ thời điểm này, giá trị tăng thêm chủ yếu đến từ:
+1. Fact Sheet đã xác minh.
+2. Ảnh và case thật.
+3. Số đo Lux thật.
+4. CRM và vận hành lead.
+5. Local registry chính xác.
+
+Không tiếp tục sửa giao diện theo cảm tính nếu chưa có dữ liệu người dùng hoặc lỗi QA cụ thể.

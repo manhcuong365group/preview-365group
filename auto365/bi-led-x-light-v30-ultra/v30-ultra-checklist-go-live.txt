@@ -1,0 +1,85 @@
+CHECKLIST NGHIỆM THU GO-LIVE — V30 ULTRA
+
+DỮ LIỆU
+[ ] Fact Sheet bản 2026 đã khóa.
+[ ] Giá 11.000.000 VNĐ/cặp đã xác nhận.
+[ ] Trạng thái VAT đã xác nhận.
+[ ] Bảo hành 3 năm đã xác nhận.
+[ ] Bảo hành điện tử đã xác nhận quy trình.
+[ ] Hotline 0365 365 911 đã xác nhận.
+[ ] Registry hơn 90 điểm đã xác nhận.
+
+NỘI DUNG
+[ ] Không claim tuyệt đối.
+[ ] Case 2022/2023 ghi đúng phiên bản.
+[ ] Không dùng case cũ làm bằng chứng bản 2026.
+[ ] Phân định V30 Ultra/V30L Ultra/M30 Ultra/V20 đúng.
+[ ] FAQ hiển thị 15 câu.
+[ ] FAQ schema 15 câu.
+[ ] Body/schema khớp từng câu.
+[ ] Nguồn và ngày cập nhật đúng.
+[ ] Điều kiện Fact Sheet nằm trong block nguồn.
+
+URL
+[ ] Tất cả URL đã click-check.
+[ ] Không 404.
+[ ] Redirect/canonical đúng.
+[ ] /chi-nhanh hoạt động.
+[ ] /thu-duc hoạt động.
+
+MEDIA
+[ ] OG image 1200×630 thật.
+[ ] Ảnh sản phẩm 2026 thật.
+[ ] Ảnh thi công thật.
+[ ] Beam Cos thật.
+[ ] Beam Pha thật.
+[ ] Seri/tem thật.
+[ ] Bảo hành điện tử thật.
+[ ] Ảnh có width/height.
+[ ] Ảnh WebP/AVIF tối ưu.
+[ ] Lazy-load ảnh dưới màn hình đầu.
+
+DEV
+[ ] Một H1.
+[ ] Không duplicate ID.
+[ ] Không anchor gãy.
+[ ] Không invalid meta closing.
+[ ] Không text sau </html>.
+[ ] Không lỗi console.
+[ ] Không lỗi JavaScript.
+[ ] Passport hoạt động.
+[ ] Coverage tabs hoạt động bằng chuột/chạm/bàn phím.
+[ ] Bộ lọc hãng hoạt động.
+[ ] Tracking hoạt động.
+[ ] Mobile không tràn ngang.
+[ ] Skip-link hoạt động.
+[ ] Reduced motion hoạt động.
+
+SCHEMA/SEO
+[ ] Canonical đúng.
+[ ] Meta description đúng.
+[ ] OG/Twitter metadata đúng.
+[ ] JSON-LD hợp lệ.
+[ ] Product/Offer đúng giá và VAT.
+[ ] FAQPage hợp lệ.
+[ ] Không Review/AggregateRating giả.
+[ ] Rich Results Test đạt.
+[ ] Search Console submit plan sẵn sàng.
+
+GATE ẨN
+[ ] Lead form vẫn inert nếu CRM chưa sẵn sàng.
+[ ] Lux section vẫn hidden nếu chưa có phép đo thật.
+[ ] Không comment nội bộ hiển thị trước khách.
+
+HIỆU NĂNG
+[ ] LCP mobile mục tiêu dưới 2.5 giây.
+[ ] Không font/script chặn render ngoài danh sách duyệt.
+[ ] Không layout shift do ảnh.
+[ ] CWV đã kiểm tra.
+
+PHÊ DUYỆT
+[ ] Content ký.
+[ ] Dev ký.
+[ ] Media/xưởng ký.
+[ ] SEO/QA ký.
+[ ] Chủ dự án ký.
