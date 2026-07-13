@@ -151,6 +151,9 @@
         .card:hover .card-footer svg {
             transform: translateX(5px);
         }
+        .card-featured { border: 1px solid rgba(211, 47, 47, .32); box-shadow: 0 8px 22px rgba(211, 47, 47, .12); }
+        .card-featured::before { transform: scaleY(1); }
+        .card-badge { display: inline-flex; margin-bottom: 12px; padding: 5px 9px; border-radius: 999px; background: rgba(211, 47, 47, .1); color: var(--primary-color); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
     </style>
 </head>
 
@@ -162,6 +165,15 @@
     </div>
 
     <div class="grid-container">
+        <a href="./3m-crystalline-hybrid/index.html" class="card card-featured" target="_blank">
+            <div>
+                <span class="card-badge">Mới cập nhật</span>
+                <h2 class="card-title">3M Crystalline Hybrid</h2>
+                <p class="card-desc">Money page 3M Crystalline Hybrid — bảng giá, cấu hình CR BLK + NR, tư vấn chọn mã và bảo hành 10 năm</p>
+            </div>
+            <div class="card-footer">Xem chi tiết <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></div>
+        </a>
+
         <a href="./ceramic-ir/index.html" class="card" target="_blank">
             <div>
                 <h2 class="card-title">🆕 3M Ceramic IR</h2>
@@ -270,19 +282,6 @@
             <div>
                 <h2 class="card-title">3M Ceramic Hybrid</h2>
                 <p class="card-desc">Thông tin chi tiết phim cách nhiệt 3M Ceramic NR (Ceramic Hybrid)</p>
-            </div>
-            <div class="card-footer">
-                Xem chi tiết <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3">
-                    </path>
-                </svg>
-            </div>
-        </a>
-
-        <a href="./phim-cach-nhiet-o-to-3m-ceramic-hybrid/index.html" class="card" target="_blank">
-            <div>
-                <h2 class="card-title">Phim Cach Nhiet O To 3m Ceramic Hybrid</h2>
-                <p class="card-desc">Trang dự án Phim Cach Nhiet O To 3m Ceramic Hybrid</p>
             </div>
             <div class="card-footer">
                 Xem chi tiết <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
