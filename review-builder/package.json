@@ -1,0 +1,24 @@
+{
+  "name": "review-builder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "URL-mode bundler for Auto365 preview pages — inline assets, minify, produce standalone review.html + review.pdf",
+  "type": "module",
+  "bin": {
+    "review-build": "./build.js"
+  },
+  "scripts": {
+    "build": "node build.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "commander": "^12.1.0",
+    "css-tree": "^3.1.0",
+    "html-minifier-terser": "^7.2.0",
+    "mime-types": "^2.1.35",
+    "puppeteer": "^25.3.0"
+  }
+}

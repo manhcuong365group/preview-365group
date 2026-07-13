@@ -29,4 +29,9 @@ Thumbs.db
 .wrangler/
 .agents/
 
+# review-builder tool
+review-builder/node_modules/
+review-builder/dist/
+review-builder/.cache/
+
 
