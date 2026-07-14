@@ -85,9 +85,11 @@ $head.children().each((_, el) => {
 const headSharedRaw = $headClone('head').html().trim();
 fs.writeFileSync(path.join(OUT_DIR, 'head-shared.html'), rewriteUrlsIn(headSharedRaw));
 
-// ─── 2. header: .custom-header-pc + .custom-header-mobile + header.js ───
-// Concat outerHTML strings directly (cheerio.append across contexts duplicates weirdly)
+// ─── 2. header: header.css (inline in body prod) + .custom-header-pc + .custom-header-mobile + header.js ───
+// Production puts <link rel="stylesheet" href="/assets/frontend/css/header.css"> RIGHT before the PC header
+// inside <body>. Grab it so mobile-menu media queries load; without it PC+Mobile headers overlap.
 const headerParts = [];
+$('body link[href*="/frontend/css/header.css"]').first().each((_, el) => headerParts.push($.html(el)));
 $('.custom-header-pc').first().each((_, el) => headerParts.push($.html(el)));
 $('.custom-header-mobile').first().each((_, el) => headerParts.push($.html(el)));
 $('script[src*="header.js"]').first().each((_, el) => headerParts.push($.html(el)));
@@ -107,9 +109,11 @@ $('script[src*="/module/marketing.js"]').first().each((_, el) => floatingParts.p
 $('script[src*="/frontend/js/footer.js"]').first().each((_, el) => floatingParts.push($.html(el)));
 fs.writeFileSync(path.join(OUT_DIR, 'floating.html'), rewriteUrlsIn(floatingParts.join('\n')));
 
-// ─── 5. scripts: all tail scripts (Bootstrap, main bundle, FB SDK) + shared modals ───
+// ─── 5. scripts: all tail scripts (Bootstrap, main bundle, FB SDK) ───
+// Skip #addProductModal (compare-popup) — its display:none CSS lives in a stylesheet we
+// don't load, so it renders inline. Preview pages have no product cards → not needed.
+// Skip #loading-overlay too (would only show if JS triggers it, which it won't here).
 const scriptParts = [];
-$('#addProductModal, #loading-overlay').each((_, el) => scriptParts.push($.html(el)));
 $('body > script, body > div#fb-root').each((_, el) => {
   const $el = $(el);
   const src = $el.attr('src') || '';
