@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-16T08:13:46.711Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-16T08:16:10.106Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -193,6 +193,11 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(11,13,16,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(11,13,16,.03) 1px,transparent 1px);background-size:62px 62px;mask-image:linear-gradient(to bottom,#000,transparent 92%);pointer-events:none}
     .hero .wrap{position:relative;z-index:2}
     .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:56px;align-items:center}
+    .hero-breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin:0 0 14px;font-size:12.5px;color:var(--muted)}
+    .hero-breadcrumb a{color:var(--muted);text-decoration:none;border-bottom:1px dashed transparent;transition:color .15s,border-color .15s}
+    .hero-breadcrumb a:hover{color:var(--red);border-bottom-color:var(--red)}
+    .hero-breadcrumb span[aria-current]{color:var(--ink);font-weight:700}
+    .hero-breadcrumb span[aria-hidden]{color:#c9cbc5}
     /* Typography scale — h1 hero lớn, h2 dùng chung 1 cỡ, đồng bộ letter-spacing/line-height */
     .hero h1{font-size:clamp(32px,3.4vw,40px);line-height:1.08;letter-spacing:-.04em;margin:0}
     h2{font-size:clamp(24px,2.8vw,32px);line-height:1.1;letter-spacing:-.03em;margin:0;color:var(--ink)}
@@ -322,6 +327,8 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .context-chip{display:inline-flex;align-items:center;gap:6px;background:var(--red-soft);color:var(--red);border-radius:999px;padding:5px 6px 5px 10px;font-weight:700;font-size:12px}
     .context-chip button{display:grid;place-items:center;width:18px;height:18px;border:0;border-radius:50%;background:rgba(227,27,35,.12);cursor:pointer;color:inherit;padding:0}
     .context-chip .icon{width:.85em;height:.85em}
+    .context-clear{background:none;border:1px dashed rgba(11,13,16,.25);color:var(--muted);border-radius:999px;padding:4px 10px;font-family:var(--font);font-size:11.5px;font-weight:700;cursor:pointer;transition:border-color .15s,color .15s}
+    .context-clear:hover{border-color:var(--red);color:var(--red);border-style:solid}
     .view-toggle{display:none;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:4px}
     .view-toggle button{border:0;background:transparent;border-radius:9px;padding:8px 14px;font-size:12.5px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:7px}
     .view-toggle button[aria-pressed="true"]{background:var(--ink);color:#fff}
@@ -579,8 +586,9 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .pillar-partners{margin:10px auto 0;max-width:60ch;font-size:13px;color:var(--muted);line-height:1.55}
     .pillar-partners b{color:var(--ink)}
     .pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}
-    .pillar-card{display:flex;flex-direction:column;gap:10px;padding:20px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;text-decoration:none;color:var(--ink);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
+    .pillar-card{position:relative;display:flex;flex-direction:column;gap:10px;padding:20px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;text-decoration:none;color:var(--ink);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
     .pillar-card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.08);border-color:var(--red)}
+    .pillar-card__badge{position:absolute;top:12px;right:12px;background:var(--red);color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;box-shadow:0 4px 12px rgba(227,27,35,.28)}
     .pillar-card__icon{width:38px;height:38px;display:grid;place-items:center;background:rgba(220,38,38,.08);color:var(--red);border-radius:10px}
     .pillar-card__icon .icon{width:20px;height:20px}
     .pillar-card h3{margin:2px 0 0;font-size:15px;line-height:1.35;letter-spacing:-.01em}
@@ -652,8 +660,8 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .compare-table th,.compare-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
     .compare-table thead th{background:var(--paper);font-size:12px}
     .compare-table td:first-child,.compare-table th:first-child{font-weight:700;background:var(--paper);width:130px}
-    .mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:100;background:rgba(11,13,16,.95);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.12);padding:10px 14px calc(10px + env(safe-area-inset-bottom));grid-template-columns:1fr 1fr;gap:9px}
-    .mobile-bar .button{min-height:44px}
+    .mobile-bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:100;background:rgba(11,13,16,.95);backdrop-filter:blur(12px);border-top:1px solid rgba(255,255,255,.12);padding:10px 14px calc(10px + env(safe-area-inset-bottom));grid-template-columns:1fr 1fr 1fr;gap:8px}
+    .mobile-bar .button{min-height:44px;padding-inline:8px;font-size:12.5px}
     .toast{position:fixed;z-index:130;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:#fff;border-radius:12px;padding:11px 16px;font-size:12.5px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;box-shadow:var(--shadow);max-width:calc(100vw - 40px);text-align:center}
     .toast.is-visible{opacity:1;transform:translate(-50%,0)}
 
@@ -1831,6 +1839,11 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     <section class="hero" aria-labelledby="pageTitle">
       <div class="wrap hero-grid">
         <div>
+          <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Trang chủ</a>
+            <span aria-hidden="true">›</span>
+            <span aria-current="page">Hệ thống 90 điểm</span>
+          </nav>
           <p class="eyebrow">Hệ thống Auto365 · Toàn quốc</p>
           <h1 id="pageTitle">Hệ thống Auto365 — 90 điểm nâng cấp xe toàn quốc Việt Nam</h1>
           <p class="hero-lede">Một chuẩn trải nghiệm cho cả mạng lưới. Điểm gần bạn nhất ở đâu, đi bao xa, gọi số nào — trả lời ngay bên dưới, hiểu cả tỉnh/thành mới lẫn tên quen gọi trước sáp nhập.</p>
@@ -2137,12 +2150,14 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
             <span class="pillar-card__cta">Xem hub phim cách nhiệt →</span>
           </a>
           <a class="pillar-card" href="https://preview-365group.pages.dev/bi-led-x-light-v30-ultra/" data-track="pillar_den">
+            <span class="pillar-card__badge">Đọc nhiều</span>
             <div class="pillar-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg></div>
             <h3>Đèn Bi Led · Xlight V30 Ultra</h3>
             <p>Nâng cấp đèn pha OEM sang Bi Led — sáng gấp 3, đăng kiểm chuẩn.</p>
             <span class="pillar-card__cta">Xem chi tiết V30 Ultra →</span>
           </a>
           <a class="pillar-card" href="https://preview-365group.pages.dev/ceramic-ir/" data-track="pillar_ceramic">
+            <span class="pillar-card__badge">Đọc nhiều</span>
             <div class="pillar-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-heart"></use></svg></div>
             <h3>3M Ceramic IR</h3>
             <p>Dòng phim tầm trung — cân bằng nhiệt và giá cho xe phổ thông.</p>
@@ -2247,7 +2262,8 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
 
   <div class="mobile-bar" aria-label="Hành động nhanh">
     <button class="button button--outline" id="mobileFind" type="button" style="background:#fff"><svg class="icon" aria-hidden="true"><use href="#i-search"></use></svg>Tìm điểm</button>
-    <a class="button button--red" href="tel:0365365365"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Gọi tư vấn</a>
+    <a class="button button--outline" href="https://zalo.me/0365365365" target="_blank" rel="noopener" style="background:#fff" data-track="mobile_zalo"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg>Zalo</a>
+    <a class="button button--red" href="tel:0365365365" data-track="mobile_call"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Gọi</a>
   </div>
 
   <dialog id="branchDialog" aria-labelledby="branchDialogTitle">
@@ -2512,7 +2528,9 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
       if(state.need) chips.push({k:'need',label:`Nhu cầu: ${state.need}`});
       if(state.vehicle) chips.push({k:'vehicle',label:`Xe: ${state.vehicle}`});
       if(state.status) chips.push({k:'status',label:statusInfo({status:state.status})[1]});
-      $('contextChips').innerHTML = chips.map(c=>`<span class="context-chip">${esc(c.label)}<button type="button" data-remove-context="${c.k}" aria-label="Bỏ ${esc(c.label)}">${icon('close')}</button></span>`).join('');
+      const chipHtml = chips.map(c=>`<span class="context-chip">${esc(c.label)}<button type="button" data-remove-context="${c.k}" aria-label="Bỏ ${esc(c.label)}">${icon('close')}</button></span>`).join('');
+      const clearAll = chips.length >= 2 ? `<button type="button" class="context-clear" data-clear-context aria-label="Xoá hết bộ lọc ngữ cảnh">Xoá hết</button>` : '';
+      $('contextChips').innerHTML = chipHtml + clearAll;
     };
 
     /* ================= render ================= */
@@ -2864,6 +2882,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
       if(e.target.closest('[data-close-note]')){ showMergeNote(null); return; }
       const rmc=e.target.closest('[data-remove-context]');
       if(rmc){ state[rmc.dataset.removeContext]=''; render(true); return; }
+      if(e.target.closest('[data-clear-context]')){ state.need=''; state.vehicle=''; state.status=''; render(true); return; }
       const cpy=e.target.closest('[data-copy-request]');
       if(cpy){ (navigator.clipboard?navigator.clipboard.writeText(cpy.dataset.copyRequest):Promise.reject()).then(()=>toast('Đã sao chép — dán vào Zalo/Messenger để gửi.')).catch(()=>toast('Không thể sao chép tự động.')); return; }
       const cls=e.target.closest('[data-close-dialog]');
@@ -2922,9 +2941,34 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     }));
 
     /* ================= static builds ================= */
-    $('proofProvinces').textContent=provinces.length;
+    // Counter animation 0 → target khi phần tử vào viewport lần đầu.
+    // Reduced-motion / không hỗ trợ IO → set thẳng giá trị.
+    const animateCount = (el, target, ms=1100) => {
+      if(!el) return;
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if(reduce || !('IntersectionObserver' in window)){ el.textContent = target; return; }
+      let started = false;
+      const io = new IntersectionObserver(entries=>{
+        entries.forEach(e=>{
+          if(!e.isIntersecting || started) return;
+          started = true; io.disconnect();
+          const t0 = performance.now();
+          const tick = now => {
+            const p = Math.min(1, (now - t0) / ms);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(target * eased);
+            if(p < 1) requestAnimationFrame(tick);
+            else el.textContent = target;
+          };
+          requestAnimationFrame(tick);
+        });
+      }, {threshold: .4});
+      el.textContent = '0';
+      io.observe(el);
+    };
+    animateCount($('proofTotal'), DATA.length);
+    animateCount($('proofProvinces'), provinces.length);
     if($('proofLegacy')) $('proofLegacy').textContent=legacies.length;
-    $('proofTotal').textContent=DATA.length;
     if($('activeBadge')) $('activeBadge').textContent=DATA.filter(b=>b.status==='active').length;
     if($('footerStats')) $('footerStats').textContent=`${DATA.length} điểm · ${provinces.length} tỉnh/thành · ${legacies.length} địa danh quen thuộc`;
 
