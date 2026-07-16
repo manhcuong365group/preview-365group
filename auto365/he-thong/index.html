@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-15T11:19:36.423Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-16T08:07:54.092Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -1939,9 +1939,9 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     <section class="section section--muted testimonials" aria-labelledby="testimonialsTitle">
       <div class="wrap">
         <header class="section-head-center">
-          <p class="eyebrow">Khách hàng nói gì</p>
-          <h2 id="testimonialsTitle">Review công khai từ Google Business Profile</h2>
-          <p class="section-lede">Đọc thêm review thực tế của khách đã đến từng điểm Auto365.</p>
+          <p class="eyebrow">Review Trụ Sở HCM</p>
+          <h2 id="testimonialsTitle">Google Review công khai — Auto365.vn Trụ Sở Chính</h2>
+          <p class="section-lede">Đây là review từ Google Business Profile của Trụ Sở HCM (5/5,0★). Review 89 điểm còn lại đang được thu thập dần theo từng GBP.</p>
         </header>
         <div class="testi-summary" role="group" aria-label="Đánh giá tổng hợp">
           <div class="testi-summary__rating"><strong>5,0</strong><span aria-hidden="true">★★★★★</span><small>Auto365.vn Trụ Sở Chính · 5 bài đánh giá trên Google (07/2026)</small></div>
@@ -2015,7 +2015,8 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     </section>
 
     <!-- ============ VIDEO ============ -->
-    <section class="section video-hub" aria-labelledby="videoTitle">
+    <!-- Hidden cho tới khi có video thật. Bật lại bằng cách xoá attribute `hidden`. -->
+    <section class="section video-hub" aria-labelledby="videoTitle" hidden>
       <div class="wrap video-inner">
         <div class="video-copy">
           <p class="eyebrow">Xem trước hệ thống</p>
@@ -2556,6 +2557,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
       $('resultDetail').textContent = parts.join(' ');
       $('savedCount').textContent = saved.size;
       $('savedOnly').setAttribute('aria-pressed',String(state.savedOnly));
+      $('savedOnly').hidden = saved.size === 0 && !state.savedOnly;
       if($('searchList')){ $('searchList').value = state.q; $('clearSearch').hidden = !state.q; }
       if($('searchMain')!==document.activeElement) $('searchMain').value = state.q;
       $('province').value = state.province;
