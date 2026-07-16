@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-16T08:07:54.092Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-16T08:09:27.396Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -481,7 +481,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .partners{}
     /* Facts — dense NAP dl, 3-col responsive */
     /* Warranty — 4-card guarantee block */
-    .warranty-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:24px 0 0}
+    .warranty-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0 0}
     .warranty-card{display:flex;flex-direction:column;gap:8px;padding:20px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px}
     .warranty-card__icon{width:38px;height:38px;display:grid;place-items:center;background:rgba(220,38,38,.08);color:var(--red);border-radius:10px;margin-bottom:4px}
     .warranty-card__icon .icon{width:20px;height:20px}
@@ -498,7 +498,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     @media (max-width:820px){.warranty-portals__list{grid-template-columns:1fr 1fr}}
     @media (max-width:520px){.warranty-portals__list{grid-template-columns:1fr}}
     .warranty-cta{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:20px}
-    @media (max-width:960px){.warranty-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width:820px){.warranty-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media (max-width:520px){.warranty-grid{grid-template-columns:1fr}}
     .facts-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0 0;padding:0}
     .facts-item{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;padding:16px 18px}
@@ -552,6 +552,8 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .video-embed__caption em{color:var(--red);font-style:normal}
     @media (max-width:820px){.video-inner{grid-template-columns:1fr}}
     .pillars{}
+    .pillar-partners{margin:10px auto 0;max-width:60ch;font-size:13px;color:var(--muted);line-height:1.55}
+    .pillar-partners b{color:var(--ink)}
     .pillar-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:26px}
     .pillar-card{display:flex;flex-direction:column;gap:10px;padding:20px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;text-decoration:none;color:var(--ink);transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease}
     .pillar-card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.08);border-color:var(--red)}
@@ -1916,25 +1918,6 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
       </div>
     </section>
 
-    <!-- ============ BRAND PARTNERS ============ -->
-    <section class="section partners" aria-labelledby="partnersTitle">
-      <div class="wrap">
-        <header class="section-head-center">
-          <p class="eyebrow">Đối tác thương hiệu</p>
-          <h2 id="partnersTitle">Các hãng đang phân phối chính hãng tại 90 điểm</h2>
-          <p class="section-lede">Danh sách hãng phụ thuộc từng điểm — kiểm tra tại trang chi tiết chi nhánh.</p>
-        </header>
-        <ul class="partner-list" role="list">
-          <li class="partner-badge"><b>3M</b><span>Phim cách nhiệt · Crystalline · Ceramic IR · PPF</span></li>
-          <li class="partner-badge"><b>X-Light</b><span>Đèn Bi Led · V30 Ultra · F30 Ultra · Quantum X</span></li>
-          <li class="partner-badge"><b>Titan</b><span>Đèn Titan Moto · Phim cách nhiệt</span></li>
-          <li class="partner-badge"><b>GTR</b><span>Đèn Bi Xenon · G1 Turbo V2</span></li>
-          <li class="partner-badge"><b>Teyes</b><span>Màn hình Android · CC4 Pro</span></li>
-          <li class="partner-badge"><b>VietMap · 70MAI</b><span>Camera hành trình</span></li>
-        </ul>
-      </div>
-    </section>
-
     <!-- ============ TESTIMONIALS / SOCIAL PROOF ============ -->
     <section class="section section--muted testimonials" aria-labelledby="testimonialsTitle">
       <div class="wrap">
@@ -1981,11 +1964,6 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
             <div class="warranty-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></div>
             <h3>Thời hạn theo hãng</h3>
             <p>Phim cách nhiệt <b>5–7 năm</b> · Đèn Bi Led <b>2–3 năm</b> · PPF <b>5–10 năm</b> · Camera hành trình <b>1–2 năm</b>. Theo chính sách hãng gốc, không rút gọn.</p>
-          </article>
-          <article class="warranty-card">
-            <div class="warranty-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg></div>
-            <h3>Ghé bất kỳ điểm nào</h3>
-            <p>Cần bảo hành khi đi xa? Ghé điểm Auto365 gần nhất — mọi kỹ thuật viên đều tra được lịch sử lắp qua mã bảo hành, không cần quay về nơi lắp gốc.</p>
           </article>
           <article class="warranty-card">
             <div class="warranty-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg></div>
@@ -2063,40 +2041,10 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
           <div class="facts-item"><dt>Hotline hệ thống</dt><dd><a href="tel:0365365365"><b>0365 365 365</b></a> (phim &amp; PPF) · <a href="tel:0365365911"><b>0365 365 911</b></a> (đèn &amp; phụ kiện)</dd></div>
           <div class="facts-item"><dt>Giờ mở cửa chuẩn</dt><dd>8:00 – 18:30 · Cả tuần (một số điểm nghỉ Chủ nhật — kiểm tra tại card từng chi nhánh)</dd></div>
           <div class="facts-item"><dt>Trụ sở chính</dt><dd>Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP.HCM · Rating Google <b>5,0★</b></dd></div>
-          <div class="facts-item"><dt>Bảo hành hệ thống</dt><dd>Lắp 1 nơi — hỗ trợ toàn mạng lưới 90 điểm, không bắt buộc quay lại nơi lắp</dd></div>
           <div class="facts-item"><dt>Đối tác chính hãng</dt><dd>3M · X-Light · Titan · GTR · Teyes · VietMap · 70MAI</dd></div>
         </dl>
       </div>
     </section>
-
-    <!-- ============ ANSWERGRID — AEO / AI Search extraction ============ -->
-    <section class="section section--muted answergrid" aria-labelledby="answersTitle">
-      <div class="wrap">
-        <header class="section-head-center">
-          <p class="eyebrow">Trả lời nhanh</p>
-          <h2 id="answersTitle">4 câu người ta hỏi Google nhiều nhất</h2>
-          <p class="section-lede">Ngắn, đủ ý — dành cho tra cứu nhanh và cho trợ lý AI trích dẫn.</p>
-        </header>
-        <div class="answer-grid">
-          <article class="answer-card">
-            <h3>Auto365 có bao nhiêu điểm?</h3>
-            <p><b>90 điểm</b> trên <b>33/34 tỉnh thành</b> Việt Nam (chỉ chưa có mặt tại Lai Châu). Tất cả cùng chung 1 chuẩn dịch vụ và bảo hành hệ thống.</p>
-          </article>
-          <article class="answer-card">
-            <h3>Có tìm bằng tên tỉnh cũ trước sáp nhập không?</h3>
-            <p>Có. Gõ "Bắc Giang", "Thái Bình", "Bình Thuận"… trang tự hiểu và lọc đúng điểm nay thuộc tỉnh mới (Bắc Ninh, Hưng Yên, Lâm Đồng…).</p>
-          </article>
-          <article class="answer-card">
-            <h3>Mọi điểm có đủ mọi dịch vụ không?</h3>
-            <p>Không. Đèn Bi Led, phim cách nhiệt, PPF, camera hành trình, âm thanh… tuỳ điểm chuyên. Trước khi đến, gọi <b>0365 365 365</b> để được định tuyến đúng điểm chuyên hạng mục cần.</p>
-          </article>
-          <article class="answer-card">
-            <h3>Nên chuẩn bị gì trước khi đến điểm?</h3>
-            <p>3 thứ: <b>dòng xe + năm sản xuất</b>, <b>hạng mục cần</b> (VD lắp phim, đổi đèn), và <b>tỉnh/khu vực</b>. Gọi trước 30–60 phút để đặt lịch, đảm bảo có kỹ thuật viên đúng chuyên môn.</p>
-          </article>
-        </div>
-      </div>
-    </section>    
 
     <!-- ============ COMPOSER — tạo tin nhắn tư vấn 20s ============ -->
     <section class="section composer" id="composer" aria-labelledby="composerTitle">
@@ -2149,6 +2097,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
           <p class="eyebrow">Đến điểm để làm gì</p>
           <h2 id="pillarsTitle">4 hạng mục Auto365 khách hỏi nhiều nhất</h2>
           <p class="section-lede">Trước khi đến, đọc trước để chốt phương án — tiết kiệm 10–15 phút tư vấn tại showroom.</p>
+          <p class="pillar-partners"><b>Đối tác chính hãng đang phân phối:</b> 3M · X-Light · Titan · GTR · Teyes · VietMap · 70MAI</p>
         </header>
         <div class="pillar-grid">
           <a class="pillar-card" href="https://preview-365group.pages.dev/phim-cach-nhiet/" data-track="pillar_phim">
