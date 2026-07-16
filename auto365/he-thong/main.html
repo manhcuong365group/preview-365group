@@ -310,15 +310,30 @@
     .section--muted{background:#f7f7f9}
     .section--dark{background:var(--ink);color:#fff;border-top-color:rgba(255,255,255,.08)}
     .trust{}
-    .trust-inner{display:grid;grid-template-columns:1.15fr repeat(4,1fr);background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-sm);overflow:hidden}
-    .trust-intro{padding:23px 25px;background:var(--red);color:#fff}
-    .trust-intro strong{display:block;font-size:17px;line-height:1.3}
-    .trust-intro span{font-size:12px;opacity:.85}
+    .trust-inner{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-sm);overflow:hidden}
+    .trust-intro{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding:20px 25px;background:var(--red);color:#fff}
+    .trust-intro span{font-size:11.5px;opacity:.88;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
+    .trust-intro strong{flex:1;min-width:220px;font-size:18px;line-height:1.35;letter-spacing:-.01em}
+    .trust-items{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line)}
     .trust-item{display:flex;gap:11px;align-items:flex-start;padding:22px 17px;border-right:1px solid var(--line)}
-    .trust-item:last-child{border:0}
+    .trust-item:last-child{border-right:0}
+    .trust-item[data-tone="shield"] .icon{color:var(--red)}
+    .trust-item[data-tone="doc"] .icon{color:var(--blue)}
+    .trust-item[data-tone="check"] .icon{color:var(--green)}
+    .trust-item[data-tone="route"] .icon{color:#7c3aed}
     .trust-item .icon{color:var(--red);margin-top:2px}
     .trust-item b{display:block;font-size:12.5px;margin-bottom:3px}
     .trust-item span{display:block;font-size:12px;color:var(--muted);line-height:1.45}
+    @media (max-width:820px){
+      .trust-items{grid-template-columns:repeat(2,1fr)}
+      .trust-item:nth-child(2){border-right:0}
+      .trust-item:nth-child(1),.trust-item:nth-child(2){border-bottom:1px solid var(--line)}
+    }
+    @media (max-width:520px){
+      .trust-items{grid-template-columns:1fr}
+      .trust-item{border-right:0;border-bottom:1px solid var(--line)}
+      .trust-item:last-child{border-bottom:0}
+    }
 
     /* ---------- readiness ---------- */
     .readiness{background:#f7f7f9;color:var(--ink);padding:48px 0;border-top:1px solid rgba(0,0,0,.06);border-bottom:1px solid rgba(0,0,0,.06)}
@@ -345,9 +360,15 @@
 
     /* ---------- directory / faq / cta / footer ---------- */
     .directory{}
+    .dir-jump{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px;padding:0}
+    .dir-jump a{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:12.5px;font-weight:700;color:var(--ink);text-decoration:none;transition:border-color .15s,color .15s}
+    .dir-jump a:hover{border-color:var(--red);color:var(--red)}
+    .dir-jump a b{background:rgba(11,13,16,.06);border-radius:999px;padding:1px 8px;font-size:11.5px;font-weight:700;color:var(--muted)}
+    .dir-jump a:hover b{background:var(--red-soft);color:var(--red)}
     .directory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .directory-col{border:1px solid var(--line);background:#fff;border-radius:18px;padding:20px}
-    .directory-col h3{margin:0 0 4px;font-size:16px;letter-spacing:-.01em}
+    .directory-col{border:1px solid var(--line);background:#fff;border-radius:18px;padding:20px;scroll-margin-top:80px}
+    .directory-col h3{display:flex;align-items:center;gap:9px;margin:0 0 4px;font-size:16px;letter-spacing:-.01em}
+    .dir-count{background:var(--red-soft);color:var(--red);border-radius:999px;padding:2px 10px;font-size:12.5px;font-weight:800}
     .directory-col > small{display:block;color:var(--muted);font-size:12px;margin-bottom:13px}
     .directory-toggle{display:inline-flex;align-items:center;gap:7px;margin-top:12px;padding:8px 14px;background:none;border:1px solid var(--line);border-radius:999px;font-family:var(--font);font-size:12.5px;font-weight:700;color:var(--ink);cursor:pointer;transition:border-color .15s,color .15s}
     .directory-toggle:hover{border-color:var(--red);color:var(--red)}
@@ -360,6 +381,9 @@
     .directory-links a{font-size:12px;color:var(--muted);text-decoration:none;border-bottom:1px dotted #c9cbc5}
     .directory-links a:hover{color:var(--red);border-color:var(--red)}
     .faq{}
+    .faq-topic{display:flex;align-items:center;gap:11px;margin:32px 0 2px;padding:0;font-size:14px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;color:var(--ink)}
+    .faq-topic:first-child{margin-top:6px}
+    .faq-topic span{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;font-size:12.5px;font-weight:800}
     .section-head-center{margin:0 auto 1rem;text-align:center}
     .section-head-center .eyebrow{margin:0}
     .section-head-center h2{margin:8px 0 10px}
@@ -480,7 +504,10 @@
     .final-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
     .final-inner h2{margin:0 0 8px;color:#fff}
     .final-inner p{margin:0;color:#b9bec8;font-size:14px;max-width:52ch}
+    .final-actions-wrap{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+    .final-hint{font-size:11.5px;color:#8f96a2;letter-spacing:.08em;text-transform:uppercase;font-weight:800}
     .final-actions{display:flex;gap:10px;flex-wrap:wrap}
+    @media (max-width:820px){.final-actions-wrap{align-items:flex-start;width:100%}}
     .site-footer{background:var(--ink);color:#8f96a2;border-top:1px solid rgba(255,255,255,.09);padding:40px 0 26px}
     .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.08);color:#aeb4bf;font-size:12.5px;line-height:1.6}
     .footer-grid h3{margin:0 0 10px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8f96a2}
@@ -713,10 +740,12 @@
     <section class="section section--muted trust" aria-label="Chuẩn trải nghiệm Auto365">
       <div class="wrap trust-inner">
         <div class="trust-intro"><span>Cam kết Auto365</span><strong>4 chuẩn vận hành xuyên suốt 90 điểm.</strong></div>
-        <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><div><b>Bảo hành hệ thống</b><span>Hỗ trợ theo chính sách áp dụng cho từng nhóm sản phẩm — lắp 1 điểm, được toàn mạng lưới bảo hành.</span></div></div>
-        <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><div><b>Báo giá bằng văn bản</b><span>Xác nhận hạng mục, cấu hình sản phẩm và giá cuối cùng bằng văn bản trước khi thi công.</span></div></div>
-        <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><div><b>Cùng mã, cùng chuẩn</b><span>Mã sản phẩm chính hãng, phiếu thi công và điều kiện bảo hành ghi rõ trên hoá đơn — kiểm tra được về sau.</span></div></div>
-        <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg><div><b>Điều phối đúng điểm</b><span>Gọi hotline mô tả xe, dịch vụ và khu vực — hệ thống định tuyến đến điểm chuyên hạng mục phù hợp nhất.</span></div></div>
+        <div class="trust-items">
+          <div class="trust-item" data-tone="shield"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><div><b>Bảo hành hệ thống</b><span>Hỗ trợ theo chính sách áp dụng cho từng nhóm sản phẩm — lắp 1 điểm, được toàn mạng lưới bảo hành.</span></div></div>
+          <div class="trust-item" data-tone="doc"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><div><b>Báo giá bằng văn bản</b><span>Xác nhận hạng mục, cấu hình sản phẩm và giá cuối cùng bằng văn bản trước khi thi công.</span></div></div>
+          <div class="trust-item" data-tone="check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><div><b>Cùng mã, cùng chuẩn</b><span>Mã sản phẩm chính hãng, phiếu thi công và điều kiện bảo hành ghi rõ trên hoá đơn — kiểm tra được về sau.</span></div></div>
+          <div class="trust-item" data-tone="route"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg><div><b>Điều phối đúng điểm</b><span>Gọi hotline mô tả xe, dịch vụ và khu vực — hệ thống định tuyến đến điểm chuyên hạng mục phù hợp nhất.</span></div></div>
+        </div>
       </div>
     </section>
 
@@ -825,6 +854,7 @@
           <div><p class="eyebrow">Danh bạ hệ thống</p><h2>90 điểm, xếp theo vùng và tỉnh/thành.</h2></div>
           <p>Danh bạ tĩnh cho người quen duyệt theo khu vực — và để công cụ tìm kiếm đọc được toàn bộ mạng lưới. Tỉnh hiển thị theo đơn vị hành chính mới, kèm tên quen gọi.</p>
         </div>
+        <nav class="dir-jump" id="dirJump" aria-label="Nhảy đến vùng"></nav>
         <div class="directory-grid" id="directoryGrid"></div>
       </div>
     </section>
@@ -882,8 +912,8 @@
             <label for="cPreview">Nội dung tin nhắn (tự động cập nhật)</label>
             <textarea id="cPreview" readonly rows="6"></textarea>
             <div class="composer-actions">
-              <button class="button button--red" id="cCopy" type="button"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>Sao chép nội dung</button>
-              <a class="button button--outline" href="https://zalo.me/0365365365" id="cZalo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg>Copy &amp; mở Zalo hệ thống</a>
+              <a class="button button--red" href="https://zalo.me/0365365365" id="cZalo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg>Copy &amp; mở Zalo hệ thống</a>
+              <button class="button button--outline" id="cCopy" type="button"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg>Sao chép nội dung</button>
             </div>
             <p class="composer-hint"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>Nội dung được sao chép sang clipboard. Zalo mở tab mới đến số hệ thống 0365 365 365 — bạn dán và gửi.</p>
           </div>
@@ -935,9 +965,11 @@
         <header class="section-head-center">
           <p class="eyebrow">Hỏi đáp nhanh</p>
           <h2 id="faqTitle">Trước khi bạn di chuyển</h2>
-          <p class="section-lede">10 câu hỏi khách hỏi nhiều nhất về cách tìm điểm, giá, giờ mở cửa và bảo hành hệ thống.</p>
+          <p class="section-lede">12 câu hỏi khách hỏi nhiều nhất — chia theo <b>Tìm điểm · Bảo hành · Giá & lịch · Dữ liệu</b> để bạn nhảy đến đúng chỗ.</p>
         </header>
         <div class="faq-columns">
+
+          <h3 class="faq-topic"><span>1</span> Tìm điểm &amp; tên tỉnh</h3>
           <details>
             <summary>Tôi quen gọi tên tỉnh cũ (Thái Bình, Bắc Giang, Bình Dương…) — tìm được không?</summary>
             <p>Được. Ô tìm kiếm hiểu cả tên mới sau sáp nhập lẫn tên quen gọi, có dấu hay không dấu. Gõ "Thái Bình", hệ thống tự hiểu khu vực đó nay thuộc Hưng Yên và lọc đúng các điểm ở đó.</p>
@@ -951,13 +983,21 @@
             <p>Không. Toàn bộ 90 điểm giữ số cũ. Chỉ tên tỉnh trên địa chỉ được cập nhật theo Nghị quyết sáp nhập — số máy trực và số hệ thống <b>0365 365 365</b> không đổi. Nếu bạn quen tên tỉnh cũ (VD "Bình Thuận" giờ thuộc "Lâm Đồng"), gõ tên cũ vẫn tìm ra đúng điểm.</p>
           </details>
           <details>
+            <summary>Nút "Chỉ đường" dẫn đi đâu? Có chính xác không?</summary>
+            <p>Mở Google Maps với địa chỉ + tên điểm — Google tự tra vị trí chính xác từ Google Business Profile của điểm (đã xác minh với chủ dữ liệu). Trên trang này, pin bản đồ Goong hiển thị vị trí street-level đã geocode; nếu 1 điểm chưa có tọa độ verified, sẽ hiển thị "≈" và pin về khu vực gần đúng — bạn cứ mở "Chỉ đường" để Google dẫn đường chuẩn.</p>
+          </details>
+
+          <h3 class="faq-topic"><span>2</span> Bảo hành &amp; khiếu nại</h3>
+          <details>
             <summary>Lắp ở một điểm, đi tỉnh khác có được hỗ trợ bảo hành không?</summary>
             <p>Có. Sản phẩm lắp trong hệ thống Auto365 được hỗ trợ theo chuẩn chung toàn mạng lưới — bạn ghé điểm thuận tiện nhất, không bắt buộc quay lại nơi lắp ban đầu.</p>
           </details>
           <details>
-            <summary>Điểm tạm ngưng có bị ẩn không?</summary>
-            <p>Không. Điểm tạm ngưng hiển thị minh bạch, xếp sau các điểm đang hoạt động, kèm số hệ thống để định tuyến bạn sang điểm gần nhất.</p>
+            <summary>Tôi phàn nàn về dịch vụ ở một điểm — báo ở đâu?</summary>
+            <p>Gọi số hệ thống <b>0365 365 365</b> và nói rõ tên điểm + ngày giờ. Auto365 vận hành theo cơ chế "một điểm sai — cả hệ thống chịu trách nhiệm": phản hồi được ghi nhận trong 24h, kiểm tra tại điểm, và giải quyết theo chuẩn hệ thống chứ không phụ thuộc cá nhân tại điểm.</p>
           </details>
+
+          <h3 class="faq-topic"><span>3</span> Giá, đặt lịch &amp; năng lực</h3>
           <details>
             <summary>Điểm nào phục vụ xe điện, VinFast, xe Tàu?</summary>
             <p>Đa số điểm đều nhận cả xe điện và xe xăng — riêng một số hạng mục (đèn pha adaptive, PPF trên film wrap gốc VinFast) chỉ có ở điểm chuyên. Khi đến, cung cấp <b>dòng xe + năm sản xuất + hạng mục</b>, hệ thống sẽ định tuyến đúng điểm có năng lực phù hợp. Preview này chưa gắn nhãn "hỗ trợ dòng xe" cho từng điểm — đang chờ chủ dữ liệu duyệt matrix capability.</p>
@@ -970,17 +1010,15 @@
             <summary>Giá tại các điểm có giống nhau không?</summary>
             <p>Giá dịch vụ hệ thống (phim 3M, PPF SunTek, đèn Xlight, camera hành trình) <b>thống nhất toàn quốc</b> — cùng một mã sản phẩm, cùng bảo hành, cùng giá niêm yết. Chênh lệch chỉ xảy ra khi bạn chọn gói kèm (VD lắp phim + wax + kính trước), tùy chương trình khuyến mãi tại từng điểm. Báo giá luôn có văn bản trước khi tiến hành.</p>
           </details>
+
+          <h3 class="faq-topic"><span>4</span> Dữ liệu &amp; vận hành</h3>
+          <details>
+            <summary>Điểm tạm ngưng có bị ẩn không?</summary>
+            <p>Không. Điểm tạm ngưng hiển thị minh bạch, xếp sau các điểm đang hoạt động, kèm số hệ thống để định tuyến bạn sang điểm gần nhất.</p>
+          </details>
           <details>
             <summary>Vì sao chọn nhu cầu mà chưa lọc thẳng danh sách?</summary>
             <p>Vì năng lực từng điểm chưa được xác minh xong. Nhu cầu và dòng xe của bạn được giữ để tạo nội dung tư vấn khi gọi hoặc gửi Zalo — hệ thống không gắn nhãn "có phục vụ" khi chưa có dữ liệu thật.</p>
-          </details>
-          <details>
-            <summary>Tôi phàn nàn về dịch vụ ở một điểm — báo ở đâu?</summary>
-            <p>Gọi số hệ thống <b>0365 365 365</b> và nói rõ tên điểm + ngày giờ. Auto365 vận hành theo cơ chế "một điểm sai — cả hệ thống chịu trách nhiệm": phản hồi được ghi nhận trong 24h, kiểm tra tại điểm, và giải quyết theo chuẩn hệ thống chứ không phụ thuộc cá nhân tại điểm.</p>
-          </details>
-          <details>
-            <summary>Nút "Chỉ đường" dẫn đi đâu? Có chính xác không?</summary>
-            <p>Mở Google Maps với địa chỉ + tên điểm — Google tự tra vị trí chính xác từ Google Business Profile của điểm (đã xác minh với chủ dữ liệu). Trên trang này, pin bản đồ Goong hiển thị vị trí street-level đã geocode; nếu 1 điểm chưa có tọa độ verified, sẽ hiển thị "≈" và pin về khu vực gần đúng — bạn cứ mở "Chỉ đường" để Google dẫn đường chuẩn.</p>
           </details>
           <details>
             <summary>Điểm đang cập nhật dữ liệu có bị ẩn không?</summary>
@@ -998,9 +1036,12 @@
           <h2>Chưa muốn nhắn tin? Gọi luôn đường dây hệ thống.</h2>
           <p>Định tuyến 24/7 sang điểm gần nhất có năng lực phù hợp — trung bình 3 phút đầu tuyến.</p>
         </div>
-        <div class="final-actions">
-          <a class="button button--red" href="tel:0365365911" data-track="cta_hotline_light"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Đèn &amp; phụ kiện: 0365 365 911</a>
-          <a class="button button--ghost-light" href="tel:0365365365" data-track="cta_hotline_main"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Phim &amp; PPF: 0365 365 365</a>
+        <div class="final-actions-wrap">
+          <span class="final-hint">Chọn đúng nhánh — tư vấn nhanh hơn</span>
+          <div class="final-actions">
+            <a class="button button--red" href="tel:0365365911" data-track="cta_hotline_light"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Đèn &amp; phụ kiện: 0365 365 911</a>
+            <a class="button button--ghost-light" href="tel:0365365365" data-track="cta_hotline_main"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Phim &amp; PPF: 0365 365 365</a>
+          </div>
         </div>
       </div>
     </section>
@@ -1692,8 +1733,16 @@
     // Readiness section đã bỏ — bảng "Launch gate" không còn render.
 
     const dirGrid=$('directoryGrid');
+    const dirJump=$('dirJump');
     const DIR_ORDER=['Miền Nam','Miền Trung & Tây Nguyên','Miền Bắc'];
     const DIR_VISIBLE=3;
+    const dirIdOf=rg=>'dir-'+rg.toLowerCase().replace(/\s+&\s+/g,'-').replace(/\s+/g,'-').replace(/[^\w-]/g,'');
+    if(dirJump){
+      dirJump.innerHTML=DIR_ORDER.map(rg=>{
+        const n=DATA.filter(b=>b.region===rg).length;
+        return `<a href="#${dirIdOf(rg)}">${esc(rg)} <b>${n}</b></a>`;
+      }).join('');
+    }
     DIR_ORDER.forEach(rg=>{
       const items=DATA.filter(b=>b.region===rg);
       const allProvs=[...new Set(items.map(b=>b.province))];
@@ -1714,8 +1763,8 @@
         return `<div class="directory-province"><b>${esc(p)} <span>(${bs.length})</span>${legacySet.length?` <span>· gồm khu vực ${esc(legacySet.join(', '))}</span>`:''}</b>
           <div class="directory-links">${bs.map(b=>b.slug?`<a href="https://auto365.vn${esc(b.slug)}" target="_blank" rel="noopener">${esc(b.name.replace(/^Auto365(\.vn)?\s*-?\s*/i,''))}</a>`:`<span style="font-size:12px;color:#9aa0a9">${esc(b.name.replace(/^AUTO365\s*/i,''))}</span>`).join('')}</div></div>`;
       };
-      const col=document.createElement('div'); col.className='directory-col';
-      col.innerHTML=`<h3>${esc(rg)}</h3><small>${items.length} điểm · ${provs.length} tỉnh/thành</small>`
+      const col=document.createElement('div'); col.className='directory-col'; col.id=dirIdOf(rg);
+      col.innerHTML=`<h3>${esc(rg)} <span class="dir-count">${items.length}</span></h3><small>${items.length} điểm · ${provs.length} tỉnh/thành</small>`
         + head.map(provHtml).join('')
         + (rest.length?`<div class="directory-more" hidden>${rest.map(provHtml).join('')}</div>
            <button type="button" class="directory-toggle" data-more="${rest.length}">Xem thêm ${rest.length} tỉnh/thành <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg></button>`:'');
