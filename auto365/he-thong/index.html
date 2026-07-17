@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-17T04:56:20.021Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-17T06:16:05.527Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -343,6 +343,8 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .list-col::-webkit-scrollbar-thumb:hover{background:rgba(11,13,16,.32)}
     .map-col{position:sticky;top:76px;padding:14px 18px 22px 0;height:540px;display:flex;flex-direction:column;gap:9px}
     #map{flex:1;border-radius:18px;border:1px solid var(--line);min-height:440px;background:#e9ecef}
+    /* Map tint — desaturate tiles (giữ pin đỏ chói nguyên gốc). Áp lên tile pane, không đụng marker layer. */
+    #map .maplibregl-canvas,#map .leaflet-tile-pane{filter:saturate(.72) brightness(1.03) contrast(1.02) hue-rotate(-6deg)}
     .map-note{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--muted);line-height:1.45}
     .map-note .icon{color:var(--amber);flex:0 0 auto}
     .load-wrap{display:flex;justify-content:center;padding:20px 0 4px}
