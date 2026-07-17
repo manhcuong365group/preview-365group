@@ -23,12 +23,37 @@ const e164 = (raw) => {
   return '+84' + digits;
 };
 
+// Encode image URL — path có space + dấu tiếng Việt phải percent-encode để Googlebot chấp nhận
+const encImg = (raw) => {
+  if (!raw) return null;
+  // Nếu đã absolute URL thì encode phần path/filename; nếu relative thì encode nguyên
+  try {
+    if (/^https?:\/\//i.test(raw)) {
+      const u = new URL(raw);
+      u.pathname = u.pathname.split('/').map(seg => encodeURIComponent(decodeURIComponent(seg))).join('/');
+      return u.toString();
+    }
+    return raw.split('/').map(seg => encodeURIComponent(decodeURIComponent(seg))).join('/');
+  } catch { return raw; }
+};
+
+// Parse locality vs region từ b.province + b.addr
+// - Nếu province là TP trực thuộc TW (TP.HCM, Hà Nội, Đà Nẵng, Hải Phòng, Cần Thơ, Huế) → dùng làm addressLocality luôn
+// - Nếu là "Tỉnh X" → addressRegion = "X" (bỏ prefix "Tỉnh"), addressLocality = null (Googlebot sẽ suy từ streetAddress)
+const CENTRAL_CITIES = new Set(['TP.HCM','Hà Nội','Đà Nẵng','Hải Phòng','Cần Thơ','Huế']);
+const splitLocality = (p) => {
+  if (!p) return { locality: null, region: null };
+  if (CENTRAL_CITIES.has(p)) return { locality: p, region: p };
+  return { locality: null, region: p };
+};
+
 const nodes = branches
   .filter(b => b.addr && b.lat != null && b.lng != null)
   .map(b => {
     const slug = (b.slug||'').replace(/^\//,'') || b.id;
     const phones = (b.phones||[]).map(e164).filter(Boolean);
     const url = b.slug ? `https://auto365.vn${b.slug}` : `https://auto365.vn/${slug}`;
+    const { locality, region } = splitLocality(b.province);
     const node = {
       "@type": ["LocalBusiness", "AutoRepair"],
       "@id": `${url}#localbusiness`,
@@ -37,7 +62,8 @@ const nodes = branches
       "address": {
         "@type": "PostalAddress",
         "streetAddress": b.addr,
-        "addressLocality": b.province || null,
+        "addressLocality": locality,
+        "addressRegion": region,
         "addressCountry": "VN"
       },
       "geo": {
@@ -45,13 +71,21 @@ const nodes = branches
         "latitude": b.lat,
         "longitude": b.lng
       },
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "08:00",
+        "closes": "18:30"
+      }],
+      "priceRange": "$$",
       "parentOrganization": { "@id": "https://auto365.vn/#organization" },
       "areaServed": b.province || null
     };
     if (phones.length) node.telephone = phones[0];
-    if (b.img) node.image = b.img;
+    if (b.img) node.image = encImg(b.img);
     // Clean nulls
     if (!node.address.addressLocality) delete node.address.addressLocality;
+    if (!node.address.addressRegion) delete node.address.addressRegion;
     if (!node.areaServed) delete node.areaServed;
     return node;
   });
