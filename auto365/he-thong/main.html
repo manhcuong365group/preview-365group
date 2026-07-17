@@ -363,15 +363,17 @@
     .brand-kpi__item > span{display:block;font-size:12.5px;color:var(--muted);line-height:1.4}
     .brand-kpi__item--star b{color:#f5a623;display:inline-flex;align-items:baseline;gap:1px}
     .brand-kpi__item--star b em{font-style:normal;font-size:26px;margin-left:2px}
-    .brand-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin:0 0 22px}
-    .brand-tile{position:relative;display:flex;align-items:center;justify-content:center;min-height:96px;padding:22px 18px;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:14px;text-decoration:none;color:var(--ink);text-align:center;overflow:hidden;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
-    .brand-tile::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(227,27,35,.03) 0%,transparent 50%);opacity:0;transition:opacity .18s ease;pointer-events:none}
-    .brand-tile:hover{transform:translateY(-3px);border-color:rgba(220,38,38,.32);box-shadow:0 14px 28px rgba(11,13,16,.08)}
-    .brand-tile:hover::before{opacity:1}
-    .brand-tile::after{content:"Trang hãng →";position:absolute;bottom:8px;right:12px;font-size:10px;font-weight:800;letter-spacing:.02em;color:var(--red);opacity:0;transform:translateX(6px);transition:opacity .18s ease,transform .18s ease;pointer-events:none}
-    .brand-tile:hover::after{opacity:1;transform:translateX(0)}
-    .brand-tile img{height:44px;width:auto;max-width:130px;object-fit:contain;filter:grayscale(.15);transition:filter .18s ease;position:relative;z-index:1}
-    .brand-tile:hover img{filter:none}
+    .brand-grid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px;margin:0 0 22px}
+    .brand-tile{position:relative;display:flex;align-items:center;justify-content:center;min-height:64px;padding:12px 14px;background:transparent;border:0;border-radius:0;text-decoration:none;color:var(--ink);text-align:center;overflow:hidden;transition:transform .18s ease}
+    .brand-tile:hover{transform:translateY(-2px)}
+    .brand-tile img{max-height:24px;width:auto;max-width:72px;object-fit:contain;position:relative;z-index:1}
+    /* Logo có khung/box tự thân (chiếm nhiều diện tích trong ảnh gốc) → shrink thêm để cân với logo text-only */
+    .brand-tile[aria-label="3M AutoFilm"] img,
+    .brand-tile[aria-label="X-Light"] img,
+    .brand-tile[aria-label="Titan Moto"] img,
+    .brand-tile[aria-label="AX Film"] img,
+    .brand-tile[aria-label="AES Car"] img,
+    .brand-tile[aria-label="Cleanbro"] img{max-height:34px;max-width:80px}
     .brand-tile__name{font-size:16px;font-weight:900;letter-spacing:-.02em;color:var(--ink);line-height:1.15;position:relative;z-index:1}
     .brand-tile:hover .brand-tile__name{color:var(--red)}
     .brand-creds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
@@ -856,7 +858,7 @@
           <a class="brand-tile" href="https://3m.365group.com.vn/" target="_blank" rel="noopener" aria-label="3M AutoFilm"><img src="brand-logos/3m.png" alt="3M AutoFilm" loading="lazy"></a>
           <a class="brand-tile" href="https://x-light.vn/" target="_blank" rel="noopener" aria-label="X-Light"><img src="brand-logos/x-light.png" alt="X-Light" loading="lazy"></a>
           <a class="brand-tile" href="https://titanmoto.vn/" target="_blank" rel="noopener" aria-label="Titan Moto"><img src="brand-logos/titan-moto.png" alt="Titan Moto" loading="lazy"></a>
-          <a class="brand-tile" href="https://www.suntekfilms.com/" target="_blank" rel="noopener" aria-label="SunTek"><img src="brand-logos/suntek.svg" alt="SunTek" loading="lazy"></a>
+          <a class="brand-tile" href="https://auto365.vn/hud-man-hinh-thong-tin-kinh-lai-xe-hoi" target="_blank" rel="noopener" aria-label="VietMap"><img src="brand-logos/vietmap.png" alt="VietMap" loading="lazy"></a>
           <a class="brand-tile" href="https://gtrvietnam.com/" target="_blank" rel="noopener" aria-label="GTR"><img src="brand-logos/gtr.png" alt="GTR" loading="lazy"></a>
           <a class="brand-tile" href="https://teyes.vn/" target="_blank" rel="noopener" aria-label="Teyes"><img src="brand-logos/teyes.png" alt="Teyes" loading="lazy"></a>
           <a class="brand-tile" href="https://axfilmvn.com/" target="_blank" rel="noopener" aria-label="AX Film"><img src="brand-logos/ax-film.png" alt="AX Film" loading="lazy"></a>
