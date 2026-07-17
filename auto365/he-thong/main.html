@@ -2087,7 +2087,17 @@
     render(true);
     if(map) setTimeout(()=>map.invalidateSize(),120);
     const initialBranch=new URLSearchParams(location.search).get('branch');
-    if(initialBranch && byId(initialBranch)) setTimeout(()=>openBranch(initialBranch),60);
+    if(initialBranch && byId(initialBranch)){
+      setTimeout(()=>openBranch(initialBranch),60);
+    } else {
+      // Default: focus Trụ Sở Chính (isHQ) — map zoom + popup + card highlight.
+      // Cho user thấy 1 điểm cụ thể + CTA ngay, thay vì overview 90 pin trừu tượng.
+      const hq = DATA.find(b => b.isHQ && b.lat != null);
+      if(hq && map){
+        setTimeout(()=>focusCard(hq.id, {scroll: false, fly: true}), 220);
+        track('init_focus_hq', { branch: hq.name });
+      }
+    }
     window.addEventListener('popstate',()=>{ parseUrl(); render(true); });
   })();
   </script>
