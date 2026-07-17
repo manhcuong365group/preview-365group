@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-17T04:02:15.918Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-17T04:04:53.605Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -1828,7 +1828,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
         <aside class="hero-finder" aria-label="Tìm điểm phù hợp nhanh">
           <div class="hero-finder__stats">
             <span><b id="proofTotal">90</b> điểm</span>
-            <span><b id="proofProvinces">—</b> tỉnh · trừ Lai Châu</span>
+            <span><b id="proofProvinces">—</b> sản phẩm chủ lực</span>
             <span><b>5,0★</b> Trụ sở HCM</span>
           </div>
           <div class="hero-finder__head">
@@ -3161,7 +3161,7 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
       io.observe(el);
     };
     animateCount($('proofTotal'), DATA.length);
-    animateCount($('proofProvinces'), provinces.length);
+    animateCount($('proofProvinces'), 9); // Ổ này giờ đếm 9 sản phẩm chủ lực (khớp product-showcase ở #thuong-hieu). Tỉnh vẫn hiển thị ở hero-facts + ticker + brand KPI.
     if($('proofLegacy')) $('proofLegacy').textContent=legacies.length;
 
     // Hero finder — chọn nhu cầu + vùng → apply filter + scroll xuống workspace
