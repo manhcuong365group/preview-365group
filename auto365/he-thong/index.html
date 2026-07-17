@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-17T06:16:05.527Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-17T06:19:53.803Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -285,9 +285,13 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .suggest-item small{display:block;color:var(--muted);font-size:12px}
     .quickrow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:12px 2px 0;font-size:12.5px}
     .quickrow__label{color:var(--muted);font-weight:600}
-    .quickchip{background:#fff;border:1px solid rgba(11,13,16,.14);color:var(--ink);border-radius:999px;padding:5px 12px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:var(--font);transition:border-color .14s,color .14s,background .14s}
+    .quickchip{display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid rgba(11,13,16,.14);color:var(--ink);border-radius:999px;padding:5px 6px 5px 12px;font-size:12.5px;font-weight:600;cursor:pointer;font-family:var(--font);transition:border-color .14s,color .14s,background .14s}
     .quickchip:hover{border-color:var(--red);color:var(--red)}
     .quickchip.is-active{background:var(--red);border-color:var(--red);color:#fff}
+    .quickchip__count{background:rgba(11,13,16,.08);color:var(--muted);border-radius:999px;padding:1px 7px;font-size:11px;font-weight:700;min-width:20px;text-align:center}
+    .quickchip.is-active .quickchip__count{background:rgba(255,255,255,.24);color:#fff}
+    .quickchip:hover .quickchip__count{background:var(--red-soft);color:var(--red)}
+    .quickchip.is-active:hover .quickchip__count{background:rgba(255,255,255,.24);color:#fff}
     .merge-note{display:none;align-items:center;gap:9px;margin:12px 2px 0;background:rgba(11,13,16,.05);border:1px solid rgba(11,13,16,.10);border-radius:12px;padding:9px 12px;font-size:12.5px;color:var(--ink)}
     .merge-note.is-visible{display:inline-flex}
     .merge-note .icon{color:var(--red)}
@@ -1903,11 +1907,11 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
               <div class="suggest" id="suggest" role="listbox" aria-label="Gợi ý tìm kiếm"></div>
               <div class="quickrow" role="group" aria-label="Tìm nhanh theo khu vực">
                 <span class="quickrow__label">Tìm nhanh:</span>
-                <button class="quickchip" type="button" data-quickprov="TP.HCM">TP.HCM</button>
-                <button class="quickchip" type="button" data-quickprov="Hà Nội">Hà Nội</button>
-                <button class="quickchip" type="button" data-quickprov="Đà Nẵng">Đà Nẵng</button>
-                <button class="quickchip" type="button" data-quickprov="Hải Phòng">Hải Phòng</button>
-                <button class="quickchip" type="button" data-quickprov="Khánh Hòa">Khánh Hòa</button>
+                <button class="quickchip" type="button" data-quickprov="TP.HCM">TP.HCM <span class="quickchip__count" data-qcount="TP.HCM"></span></button>
+                <button class="quickchip" type="button" data-quickprov="Hà Nội">Hà Nội <span class="quickchip__count" data-qcount="Hà Nội"></span></button>
+                <button class="quickchip" type="button" data-quickprov="Đà Nẵng">Đà Nẵng <span class="quickchip__count" data-qcount="Đà Nẵng"></span></button>
+                <button class="quickchip" type="button" data-quickprov="Hải Phòng">Hải Phòng <span class="quickchip__count" data-qcount="Hải Phòng"></span></button>
+                <button class="quickchip" type="button" data-quickprov="Khánh Hòa">Khánh Hòa <span class="quickchip__count" data-qcount="Khánh Hòa"></span></button>
               </div>
               <div class="merge-note" id="mergeNote" role="status"></div>
               <div class="geo-sim" id="geoSim">
@@ -3232,6 +3236,11 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     })();
     if($('activeBadge')) $('activeBadge').textContent=DATA.filter(b=>b.status==='active').length;
     if($('footerStats')) $('footerStats').textContent=`${DATA.length} điểm · ${provinces.length} tỉnh/thành · ${legacies.length} địa danh quen thuộc`;
+    // Populate quickchip counts (đồng bộ format với region-chip count badge)
+    document.querySelectorAll('[data-qcount]').forEach(el => {
+      const prov = el.dataset.qcount;
+      el.textContent = DATA.filter(b => b.province === prov).length;
+    });
 
     // Readiness section đã bỏ — bảng "Launch gate" không còn render.
 
