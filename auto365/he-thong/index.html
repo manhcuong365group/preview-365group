@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- BUILT from main.html + _shell/ on 2026-07-18T03:39:51.328Z — DO NOT EDIT DIRECTLY -->
+<!-- BUILT from main.html + _shell/ on 2026-07-18T04:44:51.548Z — DO NOT EDIT DIRECTLY -->
 
 <html lang="vi" data-build="network-v7-unified" data-release="preview">
 <head>
@@ -673,6 +673,14 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     .final-nap b{color:#d5dae2;font-weight:800;letter-spacing:-.005em}
     @media (max-width:720px){.final-nap{flex-direction:column;gap:10px}}
     .final-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .final-utility{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08)}
+    .final-utility__link{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:12px;text-decoration:none;color:#fff;transition:background .15s,border-color .15s}
+    .final-utility__link:hover{background:rgba(255,255,255,.07);border-color:rgba(227,27,35,.4)}
+    .final-utility__link .icon{width:20px;height:20px;padding:8px;border-radius:10px;box-sizing:content-box;flex-shrink:0;color:#ff5560;background:rgba(227,27,35,.14)}
+    .final-utility__link span{display:flex;flex-direction:column;gap:2px;line-height:1.35}
+    .final-utility__link b{font-size:13.5px;font-weight:800;letter-spacing:-.005em;color:#fff}
+    .final-utility__link em{font-style:normal;font-size:11.5px;color:#8f96a2;letter-spacing:.005em}
+    @media (max-width:820px){.final-utility{grid-template-columns:1fr}}
     .site-footer{background:var(--ink);color:#8f96a2;border-top:1px solid rgba(255,255,255,.09);padding:40px 0 26px}
     .footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:30px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.08);color:#aeb4bf;font-size:12.5px;line-height:1.6}
     .footer-grid h3{margin:0 0 10px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8f96a2}
@@ -2118,108 +2126,9 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     </section>
 
 
-    <!-- ============ CHÍNH SÁCH BẢO HÀNH ============ -->
-    <section class="section warranty" id="bao-hanh" aria-labelledby="warrantyTitle">
-      <div class="wrap">
-        <header class="section-head-center">
-          <p class="eyebrow">Chính sách bảo hành</p>
-          <h2 id="warrantyTitle">Bảo hành minh bạch — theo chính sách hãng, tra cứu được</h2>
-          <p class="section-lede">Thời hạn giữ nguyên theo hãng gốc · Kích hoạt điện tử ngay sau lắp · Khiếu nại 24/7 qua đường dây hệ thống · Tra cứu bằng biển số hoặc mã hoá đơn.</p>
-        </header>
-        <div class="warranty-grid">
-          <article class="warranty-card" data-tone="shield">
-            <div class="warranty-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></div>
-            <h3>Thời hạn theo hãng</h3>
-            <p>Phim 3M bảo hành điện tử <b>10 năm</b> · PPF <b>5–10 năm</b> · Đèn Bi Led <b>2–3 năm</b> · Camera <b>1–2 năm</b>. Theo chính sách hãng gốc, không rút gọn.</p>
-          </article>
-          <article class="warranty-card" data-tone="spark">
-            <div class="warranty-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-spark"></use></svg></div>
-            <h3>Kích hoạt điện tử ngay</h3>
-            <p>Sau khi lắp, hệ thống gửi tin nhắn kích hoạt bảo hành điện tử về số điện thoại đăng ký. Không cần giữ giấy — tra bằng biển số xe hoặc mã hoá đơn.</p>
-          </article>
-          <article class="warranty-card" data-tone="phone">
-            <div class="warranty-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg></div>
-            <h3>Đường dây khiếu nại 24/7</h3>
-            <p>Có vấn đề? Gọi <a href="tel:19009365"><b>1900 9365</b></a> — ghi nhận trong 24h, kiểm tra tại điểm, giải quyết theo chuẩn hệ thống. Cơ chế "một điểm sai — cả hệ thống chịu trách nhiệm".</p>
-          </article>
-        </div>
-        <div class="warranty-portals">
-          <span class="warranty-portals__label">Cổng bảo hành chính hãng:</span>
-          <ul class="warranty-portals__list">
-            <li><a href="https://baohanh.365group.com.vn" target="_blank" rel="noopener">365Group Bảo hành</a></li>
-            <li><a href="https://www.3m.com.vn/3M/vi_VN/car-care-vn/" target="_blank" rel="noopener">3M Pro Shop</a></li>
-            <li><a href="https://axfilmvn.com/kiem-tra-bao-hanh" target="_blank" rel="noopener">AXFilm</a></li>
-            <li><a href="https://titan.com.vn/bao-hanh" target="_blank" rel="noopener">Titan Moto</a></li>
-          </ul>
-        </div>
-        <div class="warranty-cta">
-          <a class="button button--red" href="https://auto365.vn/bao-hanh" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>Tra cứu bảo hành theo biển số / mã hoá đơn</a>
-          <a class="button button--outline" href="https://auto365.vn/chinh-sach-bao-hanh" target="_blank" rel="noopener">Xem chính sách chi tiết</a>
-        </div>
-      </div>
-    </section>
 
     <!-- ============ FAQ ============ -->
     <!-- ============ FACTS — dense NAP + AEO signal ============ -->
-
-    <!-- ============ LEAD FORM — /api/leads ============ -->
-    <section class="section composer" id="composer" aria-labelledby="composerTitle">
-      <div class="wrap">
-        <div class="composer-cta">
-          <div class="composer-cta__left">
-            <p class="eyebrow">Nhận tư vấn hệ thống</p>
-            <h2 id="composerTitle">Chưa biết điểm nào phù hợp với xe của bạn?</h2>
-            <p>Gửi thông tin xe và nhu cầu — Auto365 định tuyến đến điểm chuyên hạng mục cần và gọi lại trong 3–5 phút để tư vấn cấu hình phù hợp.</p>
-            <ul class="composer-bullets">
-              <li>Tư vấn theo dòng xe và khu vực bạn ở.</li>
-              <li>Đề xuất điểm chuyên hạng mục cần trong 90 điểm.</li>
-              <li>Xác nhận báo giá bằng văn bản trước khi thi công.</li>
-            </ul>
-            <p class="composer-alt">Cần liên hệ ngay? <a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener">Chat Zalo hệ thống</a> hoặc gọi <a href="tel:19009365"><b>1900 9365</b></a>.</p>
-          </div>
-          <form action="/api/leads" class="composer-form" method="post" id="leadForm" novalidate>
-            <input type="hidden" name="source" value="he-thong">
-            <input type="hidden" name="page" value="/chi-nhanh">
-            <h3>Nhận tư vấn hệ thống Auto365</h3>
-            <div class="composer-row">
-              <div>
-                <label for="fullname">Họ và tên <span aria-hidden="true">*</span></label>
-                <input id="fullname" name="fullname" placeholder="Nhập họ tên" required type="text" autocomplete="name">
-              </div>
-              <div>
-                <label for="phone">Số điện thoại <span aria-hidden="true">*</span></label>
-                <input id="phone" name="phone" placeholder="VD: 0912 345 678" required type="tel" autocomplete="tel" pattern="[0-9\s.+()-]{9,15}">
-              </div>
-            </div>
-            <div class="composer-row">
-              <div>
-                <label for="car">Dòng xe</label>
-                <input id="car" name="car" placeholder="VD: VinFast VF 3, Camry, Tucson…" type="text" list="vehicleList">
-              </div>
-              <div>
-                <label for="need">Nhu cầu chính</label>
-                <select id="need" name="need">
-                  <option value="">Chọn nhu cầu</option>
-                  <option>Phim cách nhiệt</option>
-                  <option>Đèn Bi Led</option>
-                  <option>PPF / Wrap</option>
-                  <option>Camera hành trình</option>
-                  <option>Màn hình / Android</option>
-                  <option>Âm thanh</option>
-                  <option>Chưa chắc — cần tư vấn</option>
-                </select>
-              </div>
-            </div>
-            <label for="area">Khu vực của bạn</label>
-            <input id="area" name="area" placeholder="VD: TP.HCM, Hà Nội, Đà Nẵng, Bắc Ninh…" type="text" autocomplete="address-level1">
-            <label for="note">Ghi chú thêm</label>
-            <textarea id="note" name="note" placeholder="VD: xe hay đi đêm, muốn kính lái sáng, có sẵn cửa sổ trời…"></textarea>
-            <button type="submit" class="composer-submit">Gửi thông tin tư vấn</button>
-            <p class="composer-small">Auto365 sẽ liên hệ lại trong 3–5 phút để tư vấn và đề xuất điểm phù hợp. Thông tin của bạn chỉ dùng cho tư vấn — xem <a href="https://auto365.vn/chinh-sach-bao-mat" target="_blank" rel="noopener">Chính sách bảo mật</a> · <a href="https://auto365.vn/dieu-khoan-su-dung" target="_blank" rel="noopener">Điều khoản sử dụng</a>.</p>
-          </form>
-        </div>
-      </div>
-    </section>
 
 
 
@@ -2266,6 +2175,39 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
     </section>
 
 
+    <!-- ============ TESTIMONIALS / SOCIAL PROOF ============ -->
+    <section class="section section--muted testimonials" aria-labelledby="testimonialsTitle">
+      <div class="wrap">
+        <header class="section-head-center">
+          <p class="eyebrow">Review Trụ Sở HCM</p>
+          <h2 id="testimonialsTitle">Google Review công khai — Auto365.vn Trụ Sở Chính</h2>
+          <p class="section-lede">Đây là review từ Google Business Profile của Trụ Sở HCM (5/5,0★). Review 89 điểm còn lại đang được thu thập dần theo từng GBP.</p>
+        </header>
+        <div class="testi-summary" role="group" aria-label="Đánh giá tổng hợp">
+          <div class="testi-summary__rating"><strong>5,0</strong><span aria-hidden="true">★★★★★</span><small>Auto365.vn Trụ Sở Chính · 5 bài đánh giá trên Google (07/2026)</small></div>
+          <a class="button button--outline button--compact" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg>Xem review trên Google Maps</a>
+        </div>
+        <div class="testi-grid">
+          <article class="testi-card">
+            <div class="testi-card__stars" aria-label="5 sao">★★★★★</div>
+            <blockquote>"Gara này chuyên nâng cấp đèn xe nên làm rất nhanh, ở lại quan sát thợ làm chuẩn chỉnh rất hài lòng. Nên đặt lịch trước khỏi chờ đợi nhé ae."</blockquote>
+            <footer><cite>Xuân Quang Bùi</cite> · <span>Trụ Sở Chính · Google Review · 06/2026</span></footer>
+          </article>
+          <article class="testi-card">
+            <div class="testi-card__stars" aria-label="5 sao">★★★★★</div>
+            <blockquote>"Mới lắp trợ sáng M30 Ultra V2 tại Auto365 Trụ Sở Chính rất tốt, đèn sáng mạnh, nhân viên thi công và tư vấn rất nhiệt tình. Có kích hoạt cả bảo hành điện tử nên rất yên tâm."</blockquote>
+            <footer><cite>Thu Hiền</cite> · <span>Trụ Sở Chính · Google Review · 07/2026</span></footer>
+          </article>
+          <article class="testi-card">
+            <div class="testi-card__stars" aria-label="5 sao">★★★★★</div>
+            <blockquote>"Đầy đủ đồ chơi, chuyên nghiệp, lịch sự."</blockquote>
+            <footer><cite>Hân Gia</cite> · <span>Local Guide · Trụ Sở Chính · Google Review · 07/2026</span></footer>
+          </article>
+        </div>
+        <p class="testi-note"><svg class="icon" aria-hidden="true"><use href="#i-alert"></use></svg><b>Nguồn:</b> review công khai từ Google Business Profile của Auto365.vn Trụ Sở Chính (thu thập 15/07/2026). Rating tổng hợp 89 điểm còn lại đang được cập nhật dần theo từng Business Profile.</p>
+      </div>
+    </section>
+
     <!-- ============ FINAL CTA ============ -->
     <section class="section section--dark final-cta">
       <div class="wrap final-inner">
@@ -2280,6 +2222,11 @@ const NO_IMAGE = '/assets/admin/plugins/ckeditor4/plugins/image/images/noimage.p
             <a class="button button--ghost-light" href="tel:0365365365" data-track="cta_hotline_main"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Phim &amp; PPF: 0365 365 365</a>
           </div>
         </div>
+      </div>
+      <div class="wrap final-utility" aria-label="Utility bổ sung">
+        <a class="final-utility__link" href="https://auto365.vn/he-thong-bao-hanh" target="_blank" rel="noopener" data-track="cta_warranty_lookup"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><span><b>Tra cứu bảo hành</b><em>Nhập biển số / mã hoá đơn</em></span></a>
+        <a class="final-utility__link" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener" data-track="cta_zalo_callback"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg><span><b>Chat Zalo hệ thống</b><em>Gửi biển số + nhu cầu, sales callback</em></span></a>
+        <a class="final-utility__link" href="tel:19009365" data-track="cta_cskh"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg><span><b>CSKH 1900 9365</b><em>Khiếu nại · bảo hành · 24/7</em></span></a>
       </div>
       <div class="wrap final-nap">
         <span><b>Trụ Sở HCM</b> · Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình · <b>5,0★</b> Google</span>
