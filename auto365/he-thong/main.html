@@ -377,6 +377,19 @@
     .brand-tile__name{font-size:16px;font-weight:900;letter-spacing:-.02em;color:var(--ink);line-height:1.15;position:relative;z-index:1}
     .brand-tile:hover .brand-tile__name{color:var(--red)}
     .brand-creds{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    /* Brand commit strip — merged from Trust section, compact 4-col */
+    .brand-commits{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 0}
+    .brand-commit{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;background:#fafbfc;border:1px solid rgba(11,13,16,.08);border-radius:12px}
+    .brand-commit .icon{width:20px;height:20px;padding:9px;border-radius:10px;box-sizing:content-box;flex-shrink:0;color:var(--red);background:rgba(227,27,35,.10)}
+    .brand-commit[data-tone="shield"] .icon{color:var(--red);background:rgba(227,27,35,.10)}
+    .brand-commit[data-tone="doc"] .icon{color:#0b68d8;background:rgba(11,104,216,.10)}
+    .brand-commit[data-tone="check"] .icon{color:#19764a;background:rgba(25,118,74,.10)}
+    .brand-commit[data-tone="route"] .icon{color:#7c3aed;background:rgba(124,58,237,.10)}
+    .brand-commit b{display:block;font-size:13px;color:var(--ink);letter-spacing:-.005em;line-height:1.25;font-weight:800;margin-bottom:3px}
+    .brand-commit span{display:block;font-size:12px;color:var(--muted);line-height:1.5;letter-spacing:.005em}
+    .brand-commit span b{display:inline;font-size:12px;color:var(--ink);margin:0}
+    @media (max-width:900px){.brand-commits{grid-template-columns:repeat(2,1fr);gap:10px}}
+    @media (max-width:520px){.brand-commits{grid-template-columns:1fr}}
     .brand-press{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:22px 0 0;padding:14px 20px;background:linear-gradient(90deg,rgba(11,13,16,.03),rgba(11,13,16,.06));border:1px solid rgba(11,13,16,.10);border-radius:14px;font-size:13px;line-height:1.5;color:#4a5058}
     .brand-press__tag{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;background:var(--ink);color:#fff;border-radius:999px;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;flex-shrink:0}
     .brand-press__tag::before{content:"◆";color:#ffcc33;font-size:10px}
@@ -827,20 +840,19 @@
       </div>
     </section>
 
-    <!-- ============ TRUST ============ -->
-    <section class="section section--muted trust" aria-label="Chuẩn trải nghiệm Auto365">
-      <div class="wrap trust-inner">
-        <div class="trust-intro"><span>Cam kết Auto365</span><strong>4 chuẩn vận hành xuyên suốt 90 điểm.</strong></div>
-        <div class="trust-items">
-          <div class="trust-item" data-tone="shield"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><div><b>Sản phẩm chính hãng</b><span>3M · X-Light · Titan · GTR · SunTek · Teyes · 70mai — nhập trực tiếp, có mã sản phẩm và hoá đơn.</span></div></div>
-          <div class="trust-item" data-tone="doc"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><div><b>Bảo hành theo hãng</b><span>Phim 3M bảo hành điện tử <b>10 năm</b> · PPF <b>5–10 năm</b> · Đèn Bi Led <b>2–3 năm</b> · Camera <b>1–2 năm</b> — theo chính sách hãng, không rút gọn.</span></div></div>
-          <div class="trust-item" data-tone="check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><div><b>Kỹ thuật viên chuẩn 3M</b><span>Đội thi công qua khoá đào tạo 3M Training Center · Auto365 Trụ Sở HCM là 3M™ Pro Shop chứng nhận.</span></div></div>
-          <div class="trust-item" data-tone="route"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg><div><b>Bảo hành 90 điểm</b><span>Sản phẩm lắp tại Auto365 được bảo hành tại tất cả 90 điểm — không cần quay về nơi lắp gốc.</span></div></div>
+    <!-- ============ DIRECTORY (moved up sau Workspace) ============ -->
+    <section class="section section--muted directory" id="danh-ba">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Danh bạ hệ thống</p><h2>90 điểm, xếp theo vùng và tỉnh/thành.</h2></div>
+          <p>Danh bạ tĩnh cho người quen duyệt theo khu vực — và để công cụ tìm kiếm đọc được toàn bộ mạng lưới. Tỉnh hiển thị theo đơn vị hành chính mới, kèm tên quen gọi.</p>
         </div>
+        <nav class="dir-jump" id="dirJump" aria-label="Nhảy đến vùng"></nav>
+        <div class="directory-grid" id="directoryGrid"></div>
       </div>
     </section>
 
-    <!-- ============ BRAND CREDENTIALS ============ -->
+    <!-- ============ BRAND + COMMITMENTS (merged Trust) ============ -->
     <section class="section brand" id="thuong-hieu" aria-labelledby="brandTitle">
       <div class="wrap">
         <header class="section-head-center">
@@ -896,97 +908,17 @@
             </div>
           </div>
         </div>
+        <!-- Trust strip compact — 4 chuẩn vận hành, gộp từ Trust block cũ -->
+        <div class="brand-commits" aria-label="4 chuẩn vận hành Auto365">
+          <div class="brand-commit" data-tone="shield"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg><div><b>Sản phẩm chính hãng</b><span>Nhập trực tiếp, có mã sản phẩm + hoá đơn.</span></div></div>
+          <div class="brand-commit" data-tone="doc"><svg class="icon" aria-hidden="true"><use href="#i-copy"></use></svg><div><b>Bảo hành theo hãng</b><span>Phim 3M <b>10 năm</b> · PPF <b>5–10 năm</b> · Đèn <b>2–3 năm</b>.</span></div></div>
+          <div class="brand-commit" data-tone="check"><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg><div><b>Kỹ thuật viên chuẩn 3M</b><span>Đào tạo qua 3M Training Center tại Trụ Sở HCM.</span></div></div>
+          <div class="brand-commit" data-tone="route"><svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg><div><b>Bảo hành 90 điểm</b><span>Lắp 1 nơi — hỗ trợ tại tất cả 90 điểm hệ thống.</span></div></div>
+        </div>
         <p class="brand-press"><span class="brand-press__tag">Truyền thông</span><span><b>Auto365, 365Group và 3M Pro Shop</b> được nhắc đến trên hệ thống báo điện tử Việt Nam.</span><a href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Xem tổng hợp →</a></p>
       </div>
     </section>
 
-    <!-- ============ COMPARISON — Auto365 vs xưởng ngoài vs hãng ============ -->
-    <section class="section section--muted compare-block" id="so-sanh" aria-labelledby="compareTitle">
-      <div class="wrap">
-        <header class="section-head-center">
-          <p class="eyebrow">Chọn ở đâu cho phù hợp</p>
-          <h2 id="compareTitle">Auto365 và xưởng độ ngoài — đối chiếu để chọn phù hợp</h2>
-          <p class="section-lede">Bảng dưới đối chiếu 6 tiêu chí khách hay hỏi giữa hệ thống Auto365 và các xưởng độ ngoài phổ biến. Mỗi kênh có ưu điểm riêng — bạn chọn theo nhu cầu và ngân sách của mình.</p>
-        </header>
-        <div class="compare-wrap">
-          <table class="compare-tbl">
-            <thead>
-              <tr>
-                <th scope="col">Tiêu chí</th>
-                <th scope="col"><span class="compare-tbl__best">Auto365</span></th>
-                <th scope="col">Xưởng độ ngoài</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Quy mô mạng lưới</th>
-                <td>90 điểm · 33/34 tỉnh (trừ Lai Châu)</td>
-                <td>Thường 1–3 điểm trong khu vực</td>
-              </tr>
-              <tr>
-                <th scope="row">Nguồn gốc sản phẩm</th>
-                <td>Chính hãng 3M · X-Light · Titan · GTR · Teyes · 70mai — có hoá đơn + phiếu bảo hành</td>
-                <td>Tuỳ xưởng — nên chủ động hỏi xuất xứ và phiếu bảo hành</td>
-              </tr>
-              <tr>
-                <th scope="row">Bảo hành</th>
-                <td>Toàn mạng lưới 90 điểm · lắp 1 nơi hỗ trợ mọi nơi · kích hoạt điện tử</td>
-                <td>Thường tại điểm lắp gốc theo cam kết của xưởng</td>
-              </tr>
-              <tr>
-                <th scope="row">Báo giá</th>
-                <td>Có văn bản trước thi công · giá thống nhất toàn quốc</td>
-                <td>Thoả thuận theo điểm · giá có thể chênh lệch</td>
-              </tr>
-              <tr>
-                <th scope="row">Đa dạng nâng cấp</th>
-                <td>Phim · đèn · PPF · camera · màn hình · âm thanh · phụ kiện</td>
-                <td>Tuỳ chuyên môn của xưởng — thường tập trung 1–2 hạng mục</td>
-              </tr>
-              <tr>
-                <th scope="row">Khiếu nại &amp; hỗ trợ</th>
-                <td>Đường dây hệ thống <a href="tel:19009365"><b>1900 9365</b></a> · phản hồi trong 24h</td>
-                <td>Trực tiếp với chủ xưởng theo cách vận hành riêng</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="compare-note"><b>Auto365 phù hợp khi:</b> bạn muốn hàng chính hãng · bảo hành liên hoàn 90 điểm · đa dạng hạng mục · minh bạch giá cả. <b>Xưởng ngoài phù hợp khi:</b> bạn có mối quen tin cậy trong khu vực và cần dịch vụ chuyên sâu 1 hạng mục riêng.</p>
-      </div>
-    </section>
-
-    <!-- ============ TESTIMONIALS / SOCIAL PROOF ============ -->
-    <section class="section section--muted testimonials" aria-labelledby="testimonialsTitle">
-      <div class="wrap">
-        <header class="section-head-center">
-          <p class="eyebrow">Review Trụ Sở HCM</p>
-          <h2 id="testimonialsTitle">Google Review công khai — Auto365.vn Trụ Sở Chính</h2>
-          <p class="section-lede">Đây là review từ Google Business Profile của Trụ Sở HCM (5/5,0★). Review 89 điểm còn lại đang được thu thập dần theo từng GBP.</p>
-        </header>
-        <div class="testi-summary" role="group" aria-label="Đánh giá tổng hợp">
-          <div class="testi-summary__rating"><strong>5,0</strong><span aria-hidden="true">★★★★★</span><small>Auto365.vn Trụ Sở Chính · 5 bài đánh giá trên Google (07/2026)</small></div>
-          <a class="button button--outline button--compact" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-share"></use></svg>Xem review trên Google Maps</a>
-        </div>
-        <div class="testi-grid">
-          <article class="testi-card">
-            <div class="testi-card__stars" aria-label="5 sao">★★★★★</div>
-            <blockquote>"Gara này chuyên nâng cấp đèn xe nên làm rất nhanh, ở lại quan sát thợ làm chuẩn chỉnh rất hài lòng. Nên đặt lịch trước khỏi chờ đợi nhé ae."</blockquote>
-            <footer><cite>Xuân Quang Bùi</cite> · <span>Trụ Sở Chính · Google Review · 06/2026</span></footer>
-          </article>
-          <article class="testi-card">
-            <div class="testi-card__stars" aria-label="5 sao">★★★★★</div>
-            <blockquote>"Mới lắp trợ sáng M30 Ultra V2 tại Auto365 Trụ Sở Chính rất tốt, đèn sáng mạnh, nhân viên thi công và tư vấn rất nhiệt tình. Có kích hoạt cả bảo hành điện tử nên rất yên tâm."</blockquote>
-            <footer><cite>Thu Hiền</cite> · <span>Trụ Sở Chính · Google Review · 07/2026</span></footer>
-          </article>
-          <article class="testi-card">
-            <div class="testi-card__stars" aria-label="5 sao">★★★★★</div>
-            <blockquote>"Đầy đủ đồ chơi, chuyên nghiệp, lịch sự."</blockquote>
-            <footer><cite>Hân Gia</cite> · <span>Local Guide · Trụ Sở Chính · Google Review · 07/2026</span></footer>
-          </article>
-        </div>
-        <p class="testi-note"><svg class="icon" aria-hidden="true"><use href="#i-alert"></use></svg><b>Nguồn:</b> review công khai từ Google Business Profile của Auto365.vn Trụ Sở Chính (thu thập 15/07/2026). Rating tổng hợp 89 điểm còn lại đang được cập nhật dần theo từng Business Profile.</p>
-      </div>
-    </section>
 
     <!-- ============ CHÍNH SÁCH BẢO HÀNH ============ -->
     <section class="section warranty" id="bao-hanh" aria-labelledby="warrantyTitle">
@@ -1026,18 +958,6 @@
           <a class="button button--red" href="https://auto365.vn/bao-hanh" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>Tra cứu bảo hành theo biển số / mã hoá đơn</a>
           <a class="button button--outline" href="https://auto365.vn/chinh-sach-bao-hanh" target="_blank" rel="noopener">Xem chính sách chi tiết</a>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ DIRECTORY ============ -->
-    <section class="section section--muted directory" id="danh-ba">
-      <div class="wrap">
-        <div class="section-head">
-          <div><p class="eyebrow">Danh bạ hệ thống</p><h2>90 điểm, xếp theo vùng và tỉnh/thành.</h2></div>
-          <p>Danh bạ tĩnh cho người quen duyệt theo khu vực — và để công cụ tìm kiếm đọc được toàn bộ mạng lưới. Tỉnh hiển thị theo đơn vị hành chính mới, kèm tên quen gọi.</p>
-        </div>
-        <nav class="dir-jump" id="dirJump" aria-label="Nhảy đến vùng"></nav>
-        <div class="directory-grid" id="directoryGrid"></div>
       </div>
     </section>
 
@@ -1141,36 +1061,6 @@
             <details>
               <summary>Tôi phàn nàn về dịch vụ ở một điểm — báo ở đâu?</summary>
               <p>Gọi hotline CSKH <b>1900 9365</b> và nói rõ tên điểm + ngày giờ. Auto365 vận hành theo cơ chế "một điểm sai — cả hệ thống chịu trách nhiệm": phản hồi được ghi nhận trong 24h, kiểm tra tại điểm, và giải quyết theo chuẩn hệ thống chứ không phụ thuộc cá nhân tại điểm.</p>
-            </details>
-          </div>
-          <div class="faq-group">
-            <h3 class="faq-topic"><span>3</span> Giá, đặt lịch &amp; năng lực</h3>
-            <details>
-              <summary>Điểm nào phục vụ xe điện, VinFast, xe Tàu?</summary>
-              <p>Đa số điểm đều nhận cả xe điện và xe xăng — riêng một số hạng mục (đèn pha adaptive, PPF trên film wrap gốc VinFast) chỉ có ở điểm chuyên. Khi đến, cung cấp <b>dòng xe + năm sản xuất + hạng mục</b>, hệ thống sẽ định tuyến đúng điểm có năng lực phù hợp. Preview này chưa gắn nhãn "hỗ trợ dòng xe" cho từng điểm — đang chờ chủ dữ liệu duyệt matrix capability.</p>
-            </details>
-            <details>
-              <summary>Có đặt lịch trước được không? Đến ngay có được không?</summary>
-              <p>Cả hai đều được. <b>Đặt lịch trước</b> qua số hệ thống 0365 365 365 hoặc số trực tại điểm — bạn sẽ được xếp lịch có kỹ thuật viên chuyên hạng mục đang cần. <b>Đến ngay</b> vẫn được nhận, nhưng có thể cần đợi hoặc chuyển sang điểm khác gần đó nếu điểm đang đông. Gọi trước 30-60 phút là an toàn nhất.</p>
-            </details>
-            <details>
-              <summary>Giá tại các điểm có giống nhau không?</summary>
-              <p>Giá dịch vụ hệ thống (phim 3M, PPF SunTek, đèn Xlight, camera hành trình) <b>thống nhất toàn quốc</b> — cùng một mã sản phẩm, cùng bảo hành, cùng giá niêm yết. Chênh lệch chỉ xảy ra khi bạn chọn gói kèm (VD lắp phim + wax + kính trước), tùy chương trình khuyến mãi tại từng điểm. Báo giá luôn có văn bản trước khi tiến hành.</p>
-            </details>
-          </div>
-          <div class="faq-group">
-            <h3 class="faq-topic"><span>4</span> Dữ liệu &amp; vận hành</h3>
-            <details>
-              <summary>Điểm tạm ngưng có bị ẩn không?</summary>
-              <p>Không. Điểm tạm ngưng hiển thị minh bạch, xếp sau các điểm đang hoạt động, kèm số hệ thống để định tuyến bạn sang điểm gần nhất.</p>
-            </details>
-            <details>
-              <summary>Vì sao chọn nhu cầu mà chưa lọc thẳng danh sách?</summary>
-              <p>Vì năng lực từng điểm chưa được xác minh xong. Nhu cầu và dòng xe của bạn được giữ để tạo nội dung tư vấn khi gọi hoặc gửi Zalo — hệ thống không gắn nhãn "có phục vụ" khi chưa có dữ liệu thật.</p>
-            </details>
-            <details>
-              <summary>Điểm đang cập nhật dữ liệu có bị ẩn không?</summary>
-              <p>Không. Điểm chưa đủ 4 lớp dữ liệu cốt lõi (địa chỉ · số máy · tọa độ · giờ mở cửa) vẫn hiển thị trong danh sách, kèm nhãn <b>"Đang cập nhật"</b>. Bạn thấy được hotline CSKH hệ thống <b>1900 9365</b> để được định tuyến sang điểm gần nhất đủ năng lực. Auto365 chọn công khai hơn là ẩn — khách tự chọn dựa trên dữ liệu thật.</p>
             </details>
           </div>
         </div>
