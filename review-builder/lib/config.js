@@ -26,8 +26,9 @@ export const AI_REVIEW_PRESET = {
     '.topbar',
     '.mobilebar',
     'template',
-    // Strip tracking/analytics scripts but PRESERVE JSON-LD schema:
-    'script:not([type="application/ld+json"])',
+    // Remove external tracking scripts, but keep inline page behaviour such as
+    // filters, tabs and fitment form in the standalone review file.
+    'script[src]:not([type="application/ld+json"])',
     // Common noise if crawling arbitrary URLs (no-op on Auto365 pages):
     '[class*="cookie" i]',
     '[class*="popup" i]',
@@ -38,7 +39,9 @@ export const AI_REVIEW_PRESET = {
     'iframe[src*="facebook.com"]',
     'iframe[src*="youtube.com"]:not([data-keep])',
   ],
-  inlineImageMaxKB: 150,
+  // Keep review files self-contained even with the large technical diagrams
+  // used on this pillar page; otherwise file:// previews lose those images.
+  inlineImageMaxKB: 6000,
 };
 
 // Elements/attributes we NEVER touch (asset URLs to leave alone):
