@@ -147,6 +147,9 @@
     .read-more-links li{font-size:12.5px;line-height:1.4}
     .read-more-links a{color:var(--a365-red);text-decoration:none}
     .read-more-links a:hover{text-decoration:underline}
+    /* FilmMatch pulse feedback khi compute */
+    @keyframes fm-pulse{0%{box-shadow:0 0 0 0 rgba(215,25,32,.4);transform:scale(1)}50%{box-shadow:0 0 0 14px rgba(215,25,32,0);transform:scale(1.005)}100%{box-shadow:0 0 0 0 rgba(215,25,32,0);transform:scale(1)}}
+    .fm-pulse{animation:fm-pulse .7s ease-out}
 </style>
   <link rel="canonical" href="https://auto365.vn/phim-cach-nhiet-3m" />
   <meta name="robots" content="index,follow" />
@@ -1174,6 +1177,11 @@
       if (lead) lead.value = item.name + ' | Kính lái: ' + item.front + ' | Sườn/lưng: ' + item.side + ' | Giá: ' + item.price[vehicle];
       const fb = root.querySelector('#fallback-config');
       if (fb) fb.textContent = lead ? lead.value : '';
+      // Pulse animation — visual feedback ngay cả khi content không đổi
+      const resultEl = root.querySelector('#result');
+      resultEl.classList.remove('fm-pulse');
+      void resultEl.offsetWidth;
+      resultEl.classList.add('fm-pulse');
     }
 
     function computeAndRender(scroll) {
@@ -1220,7 +1228,12 @@
           if (back) back.addEventListener('click', () => computeAndRender(false));
         });
       }
-      if (scroll) root.querySelector('#result').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      if (scroll) {
+        // Ép scroll đến result với offset bù sticky nav (~76px), luôn di chuyển dù element đã trong view
+        const target = root.querySelector('#result');
+        const y = target.getBoundingClientRect().top + window.scrollY - 88;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
     }
 
     root.querySelector('#recommend').addEventListener('click', () => computeAndRender(true));
