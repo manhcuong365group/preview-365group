@@ -86,7 +86,6 @@
     nav[aria-label="Điều hướng nhanh"]{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(10px)}
     nav[aria-label="Điều hướng nhanh"] a.active{background:#171717;color:#fff;border-color:#171717}
     .js #quote-panel{display:none} .js #quote-panel.open{display:block}
-    .js #fallback-default-note{display:none}
     html{scroll-padding-top:76px}
     /* utilities còn thiếu sau khi purge Tailwind v2.5 */
     .mt-auto{margin-top:auto}
@@ -366,13 +365,7 @@
       <div id="quote-panel" class="rounded-2xl border bg-white p-5">
         <h3 class="text-xl font-medium">Nhận báo giá theo đúng model xe</h3>
         <p class="mt-2 text-sm text-[var(--muted)]">Cấu hình vừa chọn hiển thị bên dưới. Cố vấn xác nhận từng mã phim theo kính nguyên bản trước khi báo giá chính thức.</p>
-        <div id="lead-fallback" class="mt-4 rounded-xl border p-4">
-          <div class="text-sm text-[var(--muted)]">Cấu hình đang chọn</div>
-          <div id="fallback-config" class="mt-1 text-sm font-medium">3M Ceramic Hybrid (gói dòng Ceramic NR) | Kính lái: NR 35 / NR 25 | Sườn/lưng: NR 25 / NR 15 / NR 5 | Giá: 5.900.000 VNĐ</div>
-          <p id="fallback-default-note" class="mt-2 text-sm text-[var(--muted)]">Ví dụ cấu hình mặc định — chọn nhu cầu hoặc gọi cố vấn để xác nhận.</p>
-          <a href="tel:0365365365" class="a365-bg mt-3 inline-block rounded-xl px-5 py-3 font-medium">Gọi 0365 365 365 để nhận báo giá</a>
-          <p class="mt-2 text-sm text-[var(--muted)]">Đọc cấu hình ở trên khi gọi — cố vấn xác nhận mã phim theo kính nguyên bản và báo giá chính thức.</p>
-        </div>
+        <div id="fallback-config" class="hidden"></div>
         <form id="lead-form">
           <div class="mt-4 grid gap-4 md:grid-cols-2">
             <label>Hãng xe<input name="brand" id="lead-brand" class="mt-1 w-full rounded-xl border px-3 py-3" placeholder="VinFast" /></label>
@@ -384,9 +377,11 @@
             <label class="md:col-span-2">Cấu hình gợi ý<input name="config" id="lead-config" readonly class="mt-1 w-full rounded-xl border px-3 py-3" /></label>
           </div>
           <p id="lead-status" class="mt-3 hidden text-sm font-medium"></p>
-          <div class="mt-4 flex flex-wrap gap-3"><button type="submit" class="a365-bg rounded-xl px-5 py-3 font-medium">Gửi yêu cầu tư vấn</button></div>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <button type="submit" class="a365-bg rounded-xl px-5 py-3 font-medium">Gửi yêu cầu tư vấn</button>
+            <button type="button" id="close-quote" class="rounded-xl border px-5 py-3 font-medium">Đóng</button>
+          </div>
         </form>
-        <div class="mt-3"><button type="button" id="close-quote" class="rounded-xl border px-5 py-3 font-medium">Đóng</button></div>
       </div>
     </section>
 
