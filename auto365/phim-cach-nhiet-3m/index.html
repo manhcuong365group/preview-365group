@@ -1266,27 +1266,55 @@
         price: { minicar: '7.200.000 VNĐ', sedan: '9.000.000 VNĐ', suv: '10.500.000 VNĐ' }
       },
       '11to15': {
-        name: '3M Crystalline Hybrid',
-        reason: 'Nâng cấp kính lái bằng CR BLK và tối ưu chi phí với Ceramic NR cho các kính còn lại.',
-        front: 'CR BLK 60 / 50',
-        side: 'NR 25 / NR 15 / NR 5',
-        price: { minicar: '9.000.000 VNĐ', sedan: '10.800.000 VNĐ', suv: '12.500.000 VNĐ' }
+        base: {
+          name: '3M Crystalline Hybrid',
+          reason: 'Nâng cấp kính lái bằng CR BLK 60/50 sáng, tối ưu chi phí với Ceramic NR cho các kính còn lại.',
+          front: 'CR BLK 60 / 50',
+          side: 'NR 25 / NR 15 / NR 5',
+          price: { minicar: '9.000.000 VNĐ', sedan: '10.800.000 VNĐ', suv: '12.500.000 VNĐ' }
+        },
+        pro: {
+          name: '3M Crystalline Hybrid PRO',
+          reason: 'Kính lái CR BLK 40 đậm hơn, giảm lóa mạnh hơn — sườn/lưng vẫn dùng Ceramic NR để tối ưu chi phí.',
+          front: 'CR BLK 40',
+          side: 'NR 25 / NR 15 / NR 5',
+          price: { minicar: '9.800.000 VNĐ', sedan: '11.600.000 VNĐ', suv: '13.300.000 VNĐ' }
+        }
       },
       over15: {
-        name: '3M Crystalline CR BLK',
-        reason: 'Cấu hình cao cấp, ưu tiên độ trong và trải nghiệm đồng bộ trên toàn xe.',
-        front: 'CR BLK 60 / 50',
-        side: 'CR BLK 35 / 15',
-        price: { minicar: '12.200.000 VNĐ', sedan: '14.800.000 VNĐ', suv: '17.600.000 VNĐ' }
+        base: {
+          name: '3M Crystalline CR BLK',
+          reason: 'Cấu hình cao cấp, kính lái CR BLK 60/50 sáng, đồng bộ Crystalline trên toàn xe.',
+          front: 'CR BLK 60 / 50',
+          side: 'CR BLK 35 / 15',
+          price: { minicar: '12.200.000 VNĐ', sedan: '14.800.000 VNĐ', suv: '17.600.000 VNĐ' }
+        },
+        pro: {
+          name: '3M Crystalline CR BLK PRO',
+          reason: 'Cấu hình cao nhất — kính lái CR BLK 40 đậm hơn, giảm lóa mạnh, Crystalline đồng bộ toàn xe.',
+          front: 'CR BLK 40',
+          side: 'CR BLK 35 / 15',
+          price: { minicar: '12.900.000 VNĐ', sedan: '15.500.000 VNĐ', suv: '18.300.000 VNĐ' }
+        }
       }
     };
+
+    // Với 2 tier có bản PRO: "night"/"family" cần kính lái sáng → base; "heat"/"premium" ưu tiên
+    // giảm lóa/phong cách đậm → PRO. Trả về object gói cụ thể (không phải tier thô).
+    function resolveItem(budgetKey, need) {
+      const entry = recommendations[budgetKey];
+      if (entry.base && entry.pro) {
+        return (need === 'heat' || need === 'premium') ? entry.pro : entry.base;
+      }
+      return entry;
+    }
 
     const budgetCaps = { under8: 8000000, '8to11': 11000000, '11to15': 15000000, over15: Infinity };
     const needNotes = {
       heat: ' Với ưu tiên giảm nhiệt toàn cabin, cấu hình tập trung hiệu quả cản nhiệt cho sườn và kính lưng.',
       night: ' Vì anh/chị thường đi đêm, hệ thống ưu tiên kính lái sáng.',
       family: ' Với xe chở gia đình, cấu hình cân bằng độ sáng kính lái và sự riêng tư hàng ghế sau.',
-      premium: ' Với ưu tiên trải nghiệm cao cấp, hệ thống ưu tiên kính lái Crystalline.'
+      premium: ' Với ưu tiên trải nghiệm cao cấp, hệ thống ưu tiên kính lái Crystalline đậm và đồng bộ.'
     };
     const priceNum = (s) => parseInt(s.replace(/\D/g, ''), 10);
     const trText = (n) => (Math.round(n / 100000) / 10).toLocaleString('vi-VN') + ' triệu đồng';
@@ -1320,9 +1348,9 @@
       if (state.need === 'premium' && (upgradeBudget === 'under8' || upgradeBudget === '8to11')) upgradeBudget = '11to15';
 
       // PRIMARY: luôn là gói trong ngân sách khách chọn (tôn trọng lựa chọn của khách)
-      const primary = recommendations[chosenBudget];
+      const primary = resolveItem(chosenBudget, state.need);
       const hasUpgrade = upgradeBudget !== chosenBudget;
-      const upgradeItem = hasUpgrade ? recommendations[upgradeBudget] : null;
+      const upgradeItem = hasUpgrade ? resolveItem(upgradeBudget, state.need) : null;
 
       let note = needNotes[state.need] || '';
       let altHtml = '';
