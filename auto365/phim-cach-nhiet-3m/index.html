@@ -86,7 +86,6 @@
     nav[aria-label="Điều hướng nhanh"]{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(10px)}
     nav[aria-label="Điều hướng nhanh"] a.active{background:#171717;color:#fff;border-color:#171717}
     .js #quote-panel{display:none} .js #quote-panel.open{display:block}
-    #lead-form{display:none}
     .js #fallback-default-note{display:none}
     html{scroll-padding-top:76px}
     /* utilities còn thiếu sau khi purge Tailwind v2.5 */
@@ -1453,21 +1452,22 @@
     }));
     const closeQuote = root.querySelector('#close-quote');
     if (closeQuote) closeQuote.addEventListener('click', () => quotePanel.classList.remove('open'));
-    const LEAD_ENDPOINT = ''; // Dev: điền URL webhook/CRM để bật form trực tuyến thay cho fallback gọi điện (L4-01)
+    const LEAD_ENDPOINT = ''; // Dev: điền URL webhook/CRM để gửi trực tuyến, hiện dùng fallback thông báo (L4-01)
     const leadForm = root.querySelector('#lead-form');
-    const leadFallback = root.querySelector('#lead-fallback');
-    if (LEAD_ENDPOINT && leadForm) {
-      leadForm.style.display = 'block';
-      if (leadFallback) leadFallback.style.display = 'none';
+    if (leadForm) {
       leadForm.addEventListener('submit', async (e) => {
         e.preventDefault();
         const s = root.querySelector('#lead-status');
-        try {
-          const res = await fetch(LEAD_ENDPOINT, { method: 'POST', body: new FormData(leadForm) });
-          if (!res.ok) throw new Error(String(res.status));
-          s.textContent = 'Đã gửi yêu cầu. Cố vấn sẽ liên hệ trong giờ làm việc để xác nhận cấu hình và báo giá chính thức.';
-        } catch (err) {
-          s.textContent = 'Chưa gửi được yêu cầu. Anh/chị vui lòng gọi 0365 365 365 — đọc cấu hình đang chọn là cố vấn báo giá được ngay.';
+        if (LEAD_ENDPOINT) {
+          try {
+            const res = await fetch(LEAD_ENDPOINT, { method: 'POST', body: new FormData(leadForm) });
+            if (!res.ok) throw new Error(String(res.status));
+            s.textContent = 'Đã gửi yêu cầu. Cố vấn sẽ liên hệ trong giờ làm việc để xác nhận cấu hình và báo giá chính thức.';
+          } catch (err) {
+            s.textContent = 'Chưa gửi được yêu cầu. Anh/chị vui lòng gọi 0365 365 365 — đọc cấu hình đang chọn là cố vấn báo giá được ngay.';
+          }
+        } else {
+          s.textContent = 'Cảm ơn anh/chị. Thông tin đã ghi nhận — vui lòng gọi 0365 365 365 hoặc chat Zalo để được báo giá ngay trong giờ làm việc.';
         }
         s.classList.remove('hidden');
       });
