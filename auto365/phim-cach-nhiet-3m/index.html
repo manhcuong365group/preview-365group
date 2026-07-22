@@ -149,21 +149,6 @@
     /* FilmMatch pulse feedback khi compute */
     @keyframes fm-pulse{0%{box-shadow:0 0 0 0 rgba(215,25,32,.4);transform:scale(1)}50%{box-shadow:0 0 0 14px rgba(215,25,32,0);transform:scale(1.005)}100%{box-shadow:0 0 0 0 rgba(215,25,32,0);transform:scale(1)}}
     .fm-pulse{animation:fm-pulse .7s ease-out}
-    /* Hero lead modal */
-    .hero-lead-overlay{display:none;position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.5);align-items:center;justify-content:center;padding:20px}
-    .hero-lead-overlay.open{display:flex}
-    .hero-lead-modal{position:relative;width:100%;max-width:380px;background:#fff;border-radius:20px;padding:28px 24px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
-    .hero-lead-close{position:absolute;top:14px;right:16px;width:28px;height:28px;border:none;background:transparent;font-size:16px;color:var(--muted);cursor:pointer;line-height:1}
-    .hero-lead-close:hover{color:var(--text)}
-    .hero-lead-title{color:var(--a365-red);font-size:20px;font-weight:700;text-align:center;margin:0 0 20px}
-    .hero-lead-field{display:block;margin-bottom:14px}
-    .hero-lead-field span{display:block;font-size:13px;font-weight:600;margin-bottom:6px;color:var(--text)}
-    .hero-lead-field input,.hero-lead-field select{width:100%;padding:11px 14px;border:1px solid var(--border);border-radius:10px;font-size:14px;background:#fff;color:var(--text)}
-    .hero-lead-field input:focus,.hero-lead-field select:focus{outline:none;border-color:var(--a365-red)}
-    .hero-lead-field input::placeholder{color:#aaa}
-    .hero-lead-submit{width:100%;margin-top:6px;padding:13px;border:none;border-radius:10px;background:var(--a365-red);color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:background .15s ease}
-    .hero-lead-submit:hover{background:var(--a365-red-hover,#b8151b)}
-    .hero-lead-status{font-size:13px;margin-bottom:10px}
     /* Hero stat cards → clickable links */
     .hero-stat-link{display:block;text-decoration:none;transition:background .15s ease, border-color .15s ease, transform .15s ease}
     .hero-stat-link:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3);transform:translateY(-2px)}
@@ -255,7 +240,7 @@
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="tel:0365365365" class="a365-bg rounded-xl px-5 py-3 font-medium">📞 Gọi 0365 365 365</a>
             <a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener" class="rounded-xl border border-white/40 px-5 py-3 font-medium text-white">💬 Chat Zalo</a>
-            <button type="button" id="open-hero-lead" class="rounded-xl border border-white/40 px-5 py-3 font-medium text-white">📝 Để lại thông tin tư vấn</button>
+            <button type="button" class="open-quote rounded-xl border border-white/40 px-5 py-3 font-medium text-white">📝 Để lại thông tin tư vấn</button>
           </div>
         </div>
 
@@ -268,39 +253,6 @@
       </div>
 
     </section>
-
-    <div id="hero-lead-overlay" class="hero-lead-overlay">
-      <div class="hero-lead-modal">
-        <button type="button" id="close-hero-lead" class="hero-lead-close" aria-label="Đóng">✕</button>
-        <h3 class="hero-lead-title">Nhận tư vấn miễn phí</h3>
-        <form id="hero-lead-form">
-          <label class="hero-lead-field">
-            <span>Họ và tên</span>
-            <input type="text" name="name" placeholder="Nhập họ tên" required>
-          </label>
-          <label class="hero-lead-field">
-            <span>Số điện thoại</span>
-            <input type="tel" name="phone" placeholder="Nhập số điện thoại" required>
-          </label>
-          <label class="hero-lead-field">
-            <span>Dòng xe</span>
-            <input type="text" name="car" placeholder="VD: Ford Ranger, VF5, CX-5">
-          </label>
-          <label class="hero-lead-field">
-            <span>Nhu cầu ưu tiên</span>
-            <select name="need">
-              <option value="an-toan">Ưu tiên tầm nhìn an toàn</option>
-              <option value="giam-nhiet">Ưu tiên giảm nhiệt cabin</option>
-              <option value="rieng-tu">Ưu tiên riêng tư</option>
-              <option value="cao-cap">Ưu tiên trải nghiệm cao cấp</option>
-              <option value="ngan-sach">Ưu tiên ngân sách tiết kiệm</option>
-            </select>
-          </label>
-          <p id="hero-lead-status" class="hero-lead-status hidden"></p>
-          <button type="submit" class="hero-lead-submit">Gửi thông tin tư vấn</button>
-        </form>
-      </div>
-    </div>
 
     <nav class="flex gap-2 overflow-x-auto rounded-2xl border bg-white px-4 py-3" aria-label="Điều hướng nhanh">
         <a href="#proof" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Uỷ quyền 3M</a>
@@ -1414,35 +1366,6 @@
     root.querySelector('#recommend').addEventListener('click', () => computeAndRender(true));
     ['#vehicle', '#budget'].forEach((sel) => root.querySelector(sel).addEventListener('change', () => computeAndRender(false)));
     computeAndRender(false);
-
-    // Hero lead modal — 3 nhóm CTA (gọi điện / Zalo / để lại thông tin)
-    const heroOverlay = root.querySelector('#hero-lead-overlay');
-    const openHeroLead = root.querySelector('#open-hero-lead');
-    const closeHeroLead = root.querySelector('#close-hero-lead');
-    if (heroOverlay && openHeroLead) {
-      openHeroLead.addEventListener('click', () => heroOverlay.classList.add('open'));
-      closeHeroLead.addEventListener('click', () => heroOverlay.classList.remove('open'));
-      heroOverlay.addEventListener('click', (e) => { if (e.target === heroOverlay) heroOverlay.classList.remove('open'); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') heroOverlay.classList.remove('open'); });
-      const heroLeadForm = root.querySelector('#hero-lead-form');
-      const heroLeadStatus = root.querySelector('#hero-lead-status');
-      const HERO_LEAD_ENDPOINT = ''; // Dev: điền URL webhook/CRM để bật gửi trực tuyến
-      heroLeadForm.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        heroLeadStatus.classList.remove('hidden');
-        if (HERO_LEAD_ENDPOINT) {
-          try {
-            const res = await fetch(HERO_LEAD_ENDPOINT, { method: 'POST', body: new FormData(heroLeadForm) });
-            if (!res.ok) throw new Error(String(res.status));
-            heroLeadStatus.textContent = 'Đã gửi yêu cầu. Cố vấn sẽ liên hệ trong giờ làm việc.';
-          } catch (err) {
-            heroLeadStatus.textContent = 'Chưa gửi được. Vui lòng gọi 0365 365 365 để được tư vấn ngay.';
-          }
-        } else {
-          heroLeadStatus.textContent = 'Cảm ơn anh/chị. Vui lòng gọi 0365 365 365 hoặc chat Zalo để được tư vấn ngay — thông tin đã ghi nhận.';
-        }
-      });
-    }
 
     const quotePanel = root.querySelector('#quote-panel');
     [...root.querySelectorAll('#open-quote, .open-quote')].forEach((el) => el.addEventListener('click', (e) => {
