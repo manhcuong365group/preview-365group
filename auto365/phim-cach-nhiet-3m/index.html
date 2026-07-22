@@ -150,6 +150,9 @@
     /* FilmMatch pulse feedback khi compute */
     @keyframes fm-pulse{0%{box-shadow:0 0 0 0 rgba(215,25,32,.4);transform:scale(1)}50%{box-shadow:0 0 0 14px rgba(215,25,32,0);transform:scale(1.005)}100%{box-shadow:0 0 0 0 rgba(215,25,32,0);transform:scale(1)}}
     .fm-pulse{animation:fm-pulse .7s ease-out}
+    /* Hero stat cards → clickable links */
+    .hero-stat-link{display:block;text-decoration:none;transition:background .15s ease, border-color .15s ease, transform .15s ease}
+    .hero-stat-link:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3);transform:translateY(-2px)}
     /* Proof strip images */
     .proof-img{margin:-18px -18px 12px;border-radius:18px 18px 0 0;overflow:hidden;aspect-ratio:4/3;background:#f5f5f5}
     .proof-img img{width:100%;height:100%;object-fit:cover;display:block}
@@ -242,10 +245,10 @@
         </div>
 
         <div class="grid grid-cols-2 gap-3 self-end">
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Gói giải pháp</div><div class="mt-1 text-2xl font-medium">6</div></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Mã phim tham chiếu</div><div class="mt-1 text-2xl font-medium">12</div></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Bảo hành điện tử</div><div class="mt-1 text-2xl font-medium">10 năm</div></div>
-          <div class="rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Hệ thống Auto365</div><div class="mt-1 text-2xl font-medium">90+ điểm</div></div>
+          <a href="#pricing" class="hero-stat-link rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Gói giải pháp</div><div class="mt-1 text-2xl font-medium">6</div></a>
+          <a href="#specs" class="hero-stat-link rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Mã phim tham chiếu</div><div class="mt-1 text-2xl font-medium">12</div></a>
+          <a href="#process" class="hero-stat-link rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Bảo hành điện tử</div><div class="mt-1 text-2xl font-medium">10 năm</div></a>
+          <a href="#local-hub" class="hero-stat-link rounded-2xl border border-white/15 bg-white/5 p-4"><div class="text-sm text-white/60">Hệ thống Auto365</div><div class="mt-1 text-2xl font-medium">90+ điểm</div></a>
         </div>
       </div>
 
