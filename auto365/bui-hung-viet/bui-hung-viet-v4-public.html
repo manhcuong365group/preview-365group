@@ -183,9 +183,11 @@ td .src{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
 .gov td .src{color:var(--hero-ink-2)}
 
 /* faq */
-.faq-item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:10px}
-.faq-item h3{font-size:15.5px;margin-bottom:6px}
-.faq-item p{font-size:14.5px;color:var(--ink-2)}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq-item summary{position:relative;cursor:pointer;list-style:none;padding:16px 52px 16px 20px;font-size:15.5px;font-weight:700;color:var(--ink)}
+.faq-item summary::-webkit-details-marker{display:none}.faq-item summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--amber-deep);font-size:24px;font-weight:400;line-height:1}
+.faq-item[open] summary{border-bottom:1px solid var(--line);background:var(--paper)}.faq-item[open] summary::after{content:"–"}
+.faq-answer{padding:14px 20px 18px}.faq-answer p{font-size:14.5px;color:var(--ink-2);margin:0}
 
 /* ===== detailed profile content imported from the original source ===== */
 .source-detail{margin-top:22px;padding:30px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
@@ -557,40 +559,19 @@ footer a{color:var(--hero-ink)}
 
   <h2>Câu hỏi thường gặp</h2>
 
-  <div class="faq-item">
-    <h3>Anh Bùi Hùng Việt là ai trong ngành nâng cấp ánh sáng ô tô Việt Nam?</h3>
-    <p>Anh Bùi Hùng Việt là Founder & CEO 365 Group — người sáng lập chuỗi Auto365, GTR Việt Nam, X-Light và Titan Moto. Khởi nghiệp từ tháng 3/2016 với chỉ 2 nhân sự tại một garage nhỏ ở Thủ Đức, đến nay anh đã xây dựng hệ sinh thái nâng cấp ánh sáng ô tô lớn nhất Việt Nam với hơn <strong>90 chi nhánh Auto365</strong>, <strong>500+ điểm bán ủy quyền</strong> trên khắp 63 tỉnh thành và mở rộng sang Cambodia, Laos. Anh là chuyên gia trực tiếp đánh giá kỹ thuật – phân phối – bảo hành các dòng bi LED, bi Laser, bi gầm cao cấp trên thị trường.</p>
-  </div>
+  <details class="faq-item"><summary>Anh Bùi Hùng Việt là ai trong ngành nâng cấp ánh sáng ô tô Việt Nam?</summary><div class="faq-answer"><p>Anh Bùi Hùng Việt là Founder & CEO 365 Group — người sáng lập chuỗi Auto365, GTR Việt Nam, X-Light và Titan Moto. Khởi nghiệp từ tháng 3/2016 với chỉ 2 nhân sự tại một garage nhỏ ở Thủ Đức, đến nay anh đã xây dựng hệ sinh thái nâng cấp ánh sáng ô tô lớn nhất Việt Nam với hơn <strong>90 chi nhánh Auto365</strong>, <strong>500+ điểm bán ủy quyền</strong> trên khắp 63 tỉnh thành và mở rộng sang Cambodia, Laos. Anh là chuyên gia trực tiếp đánh giá kỹ thuật – phân phối – bảo hành các dòng bi LED, bi Laser, bi gầm cao cấp trên thị trường.</p></div></details>
 
-  <div class="faq-item">
-    <h3>Vì sao anh Bùi Hùng Việt được gọi là "Thần đèn"?</h3>
-    <p>Danh xưng <em>"thần đèn"</em> được báo <a href="https://autopro.com.vn/than-den-khai-truong-chi-nhanh-do-xe-auto365-thu-15-tai-lam-dong-20190402212828617.chn" target="_blank" rel="noopener" style="color:#e11d48;">AutoPro chính thức đặt trong tiêu đề bài viết ngày 02/04/2019</a>, khi anh khai trương chi nhánh Auto365 thứ 15 tại Lâm Đồng — cột mốc 365 Group hoàn thiện chuỗi cung ứng miền Trung – Tây Nguyên. Chính hệ thống <a href="https://auto365.vn/dich-vu" target="_blank" rel="noopener" style="color:#e11d48;">Auto365 cũng công khai dùng danh xưng "Thần đèn Hùng Việt"</a> trên chuyên mục Dịch vụ chính thức. Đây là sự công nhận của cả cộng đồng chơi xe và báo chí đối với vai trò tiên phong của anh trong việc đưa các dòng bi LED, bi Laser cao cấp về Việt Nam.</p>
-  </div>
+  <details class="faq-item"><summary>Vì sao anh Bùi Hùng Việt được gọi là "Thần đèn"?</summary><div class="faq-answer"><p>Danh xưng <em>"thần đèn"</em> được báo <a href="https://autopro.com.vn/than-den-khai-truong-chi-nhanh-do-xe-auto365-thu-15-tai-lam-dong-20190402212828617.chn" target="_blank" rel="noopener" style="color:#e11d48;">AutoPro chính thức đặt trong tiêu đề bài viết ngày 02/04/2019</a>, khi anh khai trương chi nhánh Auto365 thứ 15 tại Lâm Đồng — cột mốc 365 Group hoàn thiện chuỗi cung ứng miền Trung – Tây Nguyên. Chính hệ thống <a href="https://auto365.vn/dich-vu" target="_blank" rel="noopener" style="color:#e11d48;">Auto365 cũng công khai dùng danh xưng "Thần đèn Hùng Việt"</a> trên chuyên mục Dịch vụ chính thức. Đây là sự công nhận của cả cộng đồng chơi xe và báo chí đối với vai trò tiên phong của anh trong việc đưa các dòng bi LED, bi Laser cao cấp về Việt Nam.</p></div></details>
 
-  <div class="faq-item">
-    <h3>Anh Bùi Hùng Việt đã đưa những thương hiệu đèn ô tô nào về Việt Nam?</h3>
-    <p>Trong gần 10 năm qua, anh đã đàm phán và đưa <strong>9 thương hiệu đèn nâng cấp cao cấp</strong> về thị trường Việt Nam: <strong>GTR, X-Light, Titan, Henvvei, Tirtim, Fogway, Matrix Light, Red Lighting và NaoEvo</strong>. Trong đó Matrix Light được ký phân phối độc quyền từ tháng 10/2021. Mỗi thương hiệu đều được anh trực tiếp đánh giá công nghệ quang học, hệ tản nhiệt, path lắp đặt chuyên dụng và chính sách bảo hành trước khi chính thức phân phối trong hệ sinh thái 365 Group.</p>
-  </div>
+  <details class="faq-item"><summary>Anh Bùi Hùng Việt đã đưa những thương hiệu đèn ô tô nào về Việt Nam?</summary><div class="faq-answer"><p>Trong gần 10 năm qua, anh đã đàm phán và đưa <strong>9 thương hiệu đèn nâng cấp cao cấp</strong> về thị trường Việt Nam: <strong>GTR, X-Light, Titan, Henvvei, Tirtim, Fogway, Matrix Light, Red Lighting và NaoEvo</strong>. Trong đó Matrix Light được ký phân phối độc quyền từ tháng 10/2021. Mỗi thương hiệu đều được anh trực tiếp đánh giá công nghệ quang học, hệ tản nhiệt, path lắp đặt chuyên dụng và chính sách bảo hành trước khi chính thức phân phối trong hệ sinh thái 365 Group.</p></div></details>
 
-  <div class="faq-item">
-    <h3>Anh Bùi Hùng Việt kiểm soát chất lượng sản phẩm đèn như thế nào?</h3>
-    <p>Với vai trò cố vấn kỹ thuật cấp cao, anh trực tiếp tham gia các khâu quyết định: (1) đánh giá <strong>công nghệ quang học</strong> – cường độ sáng, khoảng chiếu, nhiệt độ màu; (2) kiểm định <strong>hệ tản nhiệt</strong> và tuổi thọ chip LED; (3) chuẩn hóa <strong>quy trình lắp đặt "không độ chế"</strong> bằng path chuyên dụng cho từng dòng xe; (4) xây dựng <strong>chính sách bảo hành 5 năm</strong> áp dụng cho các dòng bi LED cao cấp như GTR G-Led X; (5) trực tiếp có mặt tại các sự kiện ra mắt sản phẩm mới hàng năm để chia sẻ thông số kỹ thuật với đại lý và người dùng cuối.</p>
-  </div>
+  <details class="faq-item"><summary>Anh Bùi Hùng Việt kiểm soát chất lượng sản phẩm đèn như thế nào?</summary><div class="faq-answer"><p>Với vai trò cố vấn kỹ thuật cấp cao, anh trực tiếp tham gia các khâu quyết định: (1) đánh giá <strong>công nghệ quang học</strong> – cường độ sáng, khoảng chiếu, nhiệt độ màu; (2) kiểm định <strong>hệ tản nhiệt</strong> và tuổi thọ chip LED; (3) chuẩn hóa <strong>quy trình lắp đặt "không độ chế"</strong> bằng path chuyên dụng cho từng dòng xe; (4) xây dựng <strong>chính sách bảo hành 5 năm</strong> áp dụng cho các dòng bi LED cao cấp như GTR G-Led X; (5) trực tiếp có mặt tại các sự kiện ra mắt sản phẩm mới hàng năm để chia sẻ thông số kỹ thuật với đại lý và người dùng cuối.</p></div></details>
 
-  <div class="faq-item">
-    <h3>Anh Bùi Hùng Việt có trực tiếp đào tạo kỹ thuật viên độ đèn không?</h3>
-    <p>Có. Trụ sở chính Auto365 tại Thủ Đức đảm nhiệm vai trò trung tâm đào tạo kỹ thuật viên cho toàn hệ thống, và anh Bùi Hùng Việt là người trực tiếp chỉ đạo nội dung, chuẩn hóa quy trình lắp đặt và kiểm định thiết bị. Ngoài ra, anh còn tổ chức các buổi đào tạo dành cho đại lý ủy quyền của GTR, X-Light, Titan — đảm bảo mọi điểm bán trong hệ sinh thái đều đạt cùng chuẩn kỹ thuật và bảo hành.</p>
-  </div>
+  <details class="faq-item"><summary>Anh Bùi Hùng Việt có trực tiếp đào tạo kỹ thuật viên độ đèn không?</summary><div class="faq-answer"><p>Có. Trụ sở chính Auto365 tại Thủ Đức đảm nhiệm vai trò trung tâm đào tạo kỹ thuật viên cho toàn hệ thống, và anh Bùi Hùng Việt là người trực tiếp chỉ đạo nội dung, chuẩn hóa quy trình lắp đặt và kiểm định thiết bị. Ngoài ra, anh còn tổ chức các buổi đào tạo dành cho đại lý ủy quyền của GTR, X-Light, Titan — đảm bảo mọi điểm bán trong hệ sinh thái đều đạt cùng chuẩn kỹ thuật và bảo hành.</p></div></details>
 
-  <div class="faq-item">
-    <h3>Chuyên môn của anh Bùi Hùng Việt được công nhận trong môi trường học thuật không?</h3>
-    <p>Có. Tháng 08/2023, anh Bùi Hùng Việt được <a href="https://www.hutech.edu.vn/homepage/tin-tuc/tin-hutech/14612343-soi-noi-hutech-techshow-2023-hon-300-do-an-3-500-dau-viec-va-nhieu-suat-hoc-bong-gia-tri" target="_blank" rel="noopener" style="color:#e11d48;">Trường Đại học Công nghệ TP.HCM (HUTECH) mời tham gia HUTECH TECHSHOW 2023</a> với tư cách CEO & Founder 365 Group — vừa là <strong>1 trong 5 nhà tài trợ chính</strong>, vừa là chuyên gia đánh giá đồ án tốt nghiệp sinh viên khối Kỹ thuật – Công nghệ, bao gồm ngành Công nghệ kỹ thuật ô tô. Sự kiện quy tụ hơn 300 đồ án, 900 sinh viên và 40+ doanh nghiệp lớn.</p>
-  </div>
+  <details class="faq-item"><summary>Chuyên môn của anh Bùi Hùng Việt được công nhận trong môi trường học thuật không?</summary><div class="faq-answer"><p>Có. Tháng 08/2023, anh Bùi Hùng Việt được <a href="https://www.hutech.edu.vn/homepage/tin-tuc/tin-hutech/14612343-soi-noi-hutech-techshow-2023-hon-300-do-an-3-500-dau-viec-va-nhieu-suat-hoc-bong-gia-tri" target="_blank" rel="noopener" style="color:#e11d48;">Trường Đại học Công nghệ TP.HCM (HUTECH) mời tham gia HUTECH TECHSHOW 2023</a> với tư cách CEO & Founder 365 Group — vừa là <strong>1 trong 5 nhà tài trợ chính</strong>, vừa là chuyên gia đánh giá đồ án tốt nghiệp sinh viên khối Kỹ thuật – Công nghệ, bao gồm ngành Công nghệ kỹ thuật ô tô. Sự kiện quy tụ hơn 300 đồ án, 900 sinh viên và 40+ doanh nghiệp lớn.</p></div></details>
 
-  <div class="faq-item">
-    <h3>Làm thế nào để trở thành đại lý ủy quyền của 365 Group?</h3>
-    <p>Hệ sinh thái 365 Group hiện có <strong>hơn 500 điểm bán ủy quyền</strong> trên 63/63 tỉnh thành, phân phối cùng lúc nhiều thương hiệu con (GTR, X-Light, Titan Moto). Quy trình xét duyệt đại lý mới do đội ngũ vận hành của anh Bùi Hùng Việt thiết kế, tập trung vào: cơ sở vật chất đạt chuẩn, tay nghề kỹ thuật viên, cam kết bảo hành và giao thức phối hợp bảo hành liên vùng. Đại lý ứng viên có thể tham khảo <a href="https://gtrvietnam.com/chinh-sach-dai-ly" target="_blank" rel="noopener" style="color:#e11d48;">chính sách đại lý GTR Việt Nam</a> để biết thêm chi tiết.</p>
-  </div>
+  <details class="faq-item"><summary>Làm thế nào để trở thành đại lý ủy quyền của 365 Group?</summary><div class="faq-answer"><p>Hệ sinh thái 365 Group hiện có <strong>hơn 500 điểm bán ủy quyền</strong> trên 63/63 tỉnh thành, phân phối cùng lúc nhiều thương hiệu con (GTR, X-Light, Titan Moto). Quy trình xét duyệt đại lý mới do đội ngũ vận hành của anh Bùi Hùng Việt thiết kế, tập trung vào: cơ sở vật chất đạt chuẩn, tay nghề kỹ thuật viên, cam kết bảo hành và giao thức phối hợp bảo hành liên vùng. Đại lý ứng viên có thể tham khảo <a href="https://gtrvietnam.com/chinh-sach-dai-ly" target="_blank" rel="noopener" style="color:#e11d48;">chính sách đại lý GTR Việt Nam</a> để biết thêm chi tiết.</p></div></details>
 
   <h2>Nguồn tham khảo</h2>
   <ol id="references" style="padding-left:20px;font-size:14px;color:#555;line-height:1.8;">
@@ -619,16 +600,16 @@ footer a{color:var(--hero-ink)}
   <section id="faq" aria-labelledby="h-faq">
     <p class="block-label">Câu hỏi thường gặp</p>
     <h2 id="h-faq">Thông tin nhanh</h2>
-    <div class="faq-item"><h3>Bùi Hùng Việt giữ vai trò gì?</h3><p>Các bài viết của AutoPro và Dân trí năm 2019 giới thiệu ông với vai trò CEO hệ thống Auto365.</p></div>
-    <div class="faq-item"><h3>Vì sao ông Việt được gọi là “thần đèn”?</h3><p>Danh xưng xuất hiện trong bài viết AutoPro tháng 04/2019 về lễ khai trương chi nhánh Auto365 thứ 15 tại Lâm Đồng.</p></div>
-    <div class="faq-item"><h3>Auto365 được thành lập khi nào?</h3><p>Theo trang 365 Group, Auto365 được thành lập ngày 26/03/2016 tại Thủ Đức, TP.HCM.</p></div>
-    <div class="faq-item"><h3>Auto365 và 365 Group có mối liên hệ thế nào?</h3><p>Trang 365 Group giới thiệu Auto365 là tiền thân của 365 Group, hoạt động trong hệ sinh thái nâng cấp và phụ kiện ô tô.</p></div>
-    <div class="faq-item"><h3>Hệ thống phân phối những thương hiệu đèn nào?</h3><p>Theo trang 365 Group: X-Light, GTR, Titan, Henvvei, Tirtim, Fogway, Red Lighting và Matrix Light.</p></div>
-    <div class="faq-item"><h3>Vì sao các số liệu được gắn kèm năm?</h3><p>Quy mô hệ thống có thể thay đổi theo thời gian. Vì vậy, mỗi số liệu trên trang đều được giữ kèm mốc công bố để tránh hiểu nhầm là số hiện tại.</p></div>
-    <div class="faq-item"><h3>GTR G-Led X có thông tin bảo hành nào?</h3><p>Dân trí đề cập thời hạn bảo hành 5 năm khi đưa tin về sự kiện ra mắt sản phẩm cùng lễ khai trương chi nhánh Auto365 thứ 20 cuối năm 2019.</p></div>
-    <div class="faq-item"><h3>Trang này dùng nguồn nào?</h3><p>Nguồn chính gồm bài viết AutoPro ngày 02/04/2019, hai bài Dân trí năm 2019 và thông tin hệ thống do 365 Group công bố.</p></div>
-    <div class="faq-item"><h3>Có phải mọi số liệu là số hiện tại?</h3><p>Không. Các số 15, 17, 20, 88+, 100+ và 300+ phản ánh từng mốc công bố; trang không dùng chúng để khẳng định quy mô hiện tại.</p></div>
-    <div class="faq-item"><h3>Thông tin trên trang được đối chiếu thế nào?</h3><p>Nội dung ưu tiên các thông tin có nguồn công khai từ AutoPro, Dân trí và trang giới thiệu 365 Group; số liệu luôn được gắn với thời điểm công bố.</p></div>
+    <details class="faq-item"><summary>Bùi Hùng Việt giữ vai trò gì?</summary><div class="faq-answer"><p>Các bài viết của AutoPro và Dân trí năm 2019 giới thiệu ông với vai trò CEO hệ thống Auto365.</p></div></details>
+    <details class="faq-item"><summary>Vì sao ông Việt được gọi là “thần đèn”?</summary><div class="faq-answer"><p>Danh xưng xuất hiện trong bài viết AutoPro tháng 04/2019 về lễ khai trương chi nhánh Auto365 thứ 15 tại Lâm Đồng.</p></div></details>
+    <details class="faq-item"><summary>Auto365 được thành lập khi nào?</summary><div class="faq-answer"><p>Theo trang 365 Group, Auto365 được thành lập ngày 26/03/2016 tại Thủ Đức, TP.HCM.</p></div></details>
+    <details class="faq-item"><summary>Auto365 và 365 Group có mối liên hệ thế nào?</summary><div class="faq-answer"><p>Trang 365 Group giới thiệu Auto365 là tiền thân của 365 Group, hoạt động trong hệ sinh thái nâng cấp và phụ kiện ô tô.</p></div></details>
+    <details class="faq-item"><summary>Hệ thống phân phối những thương hiệu đèn nào?</summary><div class="faq-answer"><p>Theo trang 365 Group: X-Light, GTR, Titan, Henvvei, Tirtim, Fogway, Red Lighting và Matrix Light.</p></div></details>
+    <details class="faq-item"><summary>Vì sao các số liệu được gắn kèm năm?</summary><div class="faq-answer"><p>Quy mô hệ thống có thể thay đổi theo thời gian. Vì vậy, mỗi số liệu trên trang đều được giữ kèm mốc công bố để tránh hiểu nhầm là số hiện tại.</p></div></details>
+    <details class="faq-item"><summary>GTR G-Led X có thông tin bảo hành nào?</summary><div class="faq-answer"><p>Dân trí đề cập thời hạn bảo hành 5 năm khi đưa tin về sự kiện ra mắt sản phẩm cùng lễ khai trương chi nhánh Auto365 thứ 20 cuối năm 2019.</p></div></details>
+    <details class="faq-item"><summary>Trang này dùng nguồn nào?</summary><div class="faq-answer"><p>Nguồn chính gồm bài viết AutoPro ngày 02/04/2019, hai bài Dân trí năm 2019 và thông tin hệ thống do 365 Group công bố.</p></div></details>
+    <details class="faq-item"><summary>Có phải mọi số liệu là số hiện tại?</summary><div class="faq-answer"><p>Không. Các số 15, 17, 20, 88+, 100+ và 300+ phản ánh từng mốc công bố; trang không dùng chúng để khẳng định quy mô hiện tại.</p></div></details>
+    <details class="faq-item"><summary>Thông tin trên trang được đối chiếu thế nào?</summary><div class="faq-answer"><p>Nội dung ưu tiên các thông tin có nguồn công khai từ AutoPro, Dân trí và trang giới thiệu 365 Group; số liệu luôn được gắn với thời điểm công bố.</p></div></details>
   </section>
 </main>
 
