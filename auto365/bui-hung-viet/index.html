@@ -78,7 +78,7 @@ h1{font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.08;letter-spacing:-.015em;
   color:var(--hero-ink-2);font-family:var(--mono);font-size:11px;text-align:center;padding:20px;line-height:1.8}
 .portrait figcaption{padding:10px 14px;font-size:12px;color:var(--hero-ink-2);border-top:1px solid rgba(255,255,255,.12)}
 .portrait figcaption .eid{font-family:var(--mono);font-size:10px;color:#D8A93E;display:block;margin-bottom:3px}
-.hero-stats{display:grid;grid-template-columns:repeat(6,1fr);border:1px solid rgba(255,255,255,.16);border-radius:8px;margin-top:34px;overflow:hidden}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.16);border-radius:8px;margin-top:34px;overflow:hidden}
 .hero-stats div{padding:14px 12px;border-right:1px solid rgba(255,255,255,.16)}
 .hero-stats div:last-child{border-right:0}
 .hero-stats .v{display:block;font-family:var(--mono);font-size:1.35rem;font-weight:700;color:var(--hero-ink)}
@@ -210,9 +210,9 @@ footer a{color:var(--hero-ink)}
 
 @media(max-width:860px){
   .hero-grid{grid-template-columns:1fr}
-  .hero-stats{grid-template-columns:repeat(3,1fr)}
-  .hero-stats div:nth-child(3n){border-right:0}
-  .hero-stats div:nth-child(n+4){border-top:1px solid rgba(255,255,255,.16)}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .hero-stats div:nth-child(2n){border-right:0}
+  .hero-stats div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.16)}
   .grid3,.grid4,.metrics{grid-template-columns:1fr 1fr}
   .source-detail .three-col{grid-template-columns:1fr}
   .quotes,.ev-grid,.grid2{grid-template-columns:1fr}
@@ -235,7 +235,6 @@ footer a{color:var(--hero-ink)}
     <a href="#dau-an">Dấu ấn</a>
     <a href="#hanh-trinh">Hành trình</a>
     <a href="#chuyen-mon">Chuyên môn</a>
-    <a href="#quy-mo">Quy mô</a>
     <a href="#chi-tiet">Chi tiết</a>
     <a href="#bao-chi">Báo chí</a>
     <a href="#faq">FAQ</a>
@@ -260,12 +259,10 @@ footer a{color:var(--hero-ink)}
       </figure>
     </div>
     <div class="hero-stats" aria-label="Các mốc công khai">
-      <div><span class="v">2016</span><span class="l">Auto365 thành lập tại<br>Thủ Đức, TP.HCM</span></div>
-      <div><span class="v">15</span><span class="l">chi nhánh Auto365<br>tháng 04/2019</span></div>
-      <div><span class="v">20</span><span class="l">chi nhánh Auto365<br>cuối năm 2019</span></div>
-      <div><span class="v">88+</span><span class="l">hệ thống Auto365<br>theo công bố 2022</span></div>
-      <div><span class="v">100+</span><span class="l">hệ thống GTR<br>theo công bố 2022</span></div>
-      <div><span class="v">5 năm</span><span class="l">bảo hành GTR G-Led X<br>theo Dân trí 2019</span></div>
+      <div><span class="v">10 năm</span><span class="l">xây dựng hệ sinh thái<br>nâng cấp xe</span></div>
+      <div><span class="v">90+</span><span class="l">chi nhánh Auto365<br>trên toàn quốc</span></div>
+      <div><span class="v">500+</span><span class="l">điểm bán ủy quyền<br>trên 63 tỉnh thành</span></div>
+      <div><span class="v">9</span><span class="l">thương hiệu đèn<br>trong hệ sinh thái</span></div>
     </div>
   </div>
 </header>
@@ -341,20 +338,6 @@ footer a{color:var(--hero-ink)}
       <div class="card"><h3>Nâng cấp ánh sáng ô tô</h3><p>Đèn LED, đèn Laser và giải pháp ánh sáng là một trong các mảng mà Auto365 công bố triển khai trong hệ sinh thái nâng cấp xe.</p></div>
       <div class="card"><h3>Quy trình tư vấn – lắp đặt – bảo hành</h3><p>Dân trí dẫn phát biểu tại sự kiện năm 2019 về một quy trình chuyên nghiệp từ tư vấn, lắp đặt đến bảo hành.</p></div>
       <div class="card"><h3>Hệ thống phân phối</h3><p>365 Group công bố các thương hiệu đèn gồm X-Light, GTR, Titan, Henvvei, Tirtim, Fogway, Red Lighting và Matrix Light.</p></div>
-    </div>
-  </section>
-
-  <section id="quy-mo" aria-labelledby="h-quy-mo">
-    <p class="block-label">Quy mô theo thời điểm công bố</p>
-    <h2 id="h-quy-mo">Các số liệu cần đọc đúng bối cảnh</h2>
-    <p class="sub">Đây là các mốc lịch sử từ nguồn công khai, không đại diện cho số liệu vận hành hiện tại.</p>
-    <div class="metrics">
-      <div class="metric"><span class="v">15</span><p class="l">chi nhánh Auto365<br>04/2019 · AutoPro</p></div>
-      <div class="metric"><span class="v">17</span><p class="l">chi nhánh Auto365<br>07/2019 · Dân trí</p></div>
-      <div class="metric"><span class="v">20</span><p class="l">chi nhánh Auto365<br>12/2019 · Dân trí</p></div>
-      <div class="metric"><span class="v">88+</span><p class="l">hệ thống Auto365<br>công bố năm 2022</p></div>
-      <div class="metric"><span class="v">100+</span><p class="l">hệ thống GTR<br>công bố năm 2022</p></div>
-      <div class="metric"><span class="v">300+</span><p class="l">điểm gara liên kết<br>công bố năm 2022</p></div>
     </div>
   </section>
 
