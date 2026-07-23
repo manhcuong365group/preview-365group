@@ -1,0 +1,5 @@
+# Cloudflare Pages headers
+# preview-365group.pages.dev là môi trường PREVIEW — chặn index toàn site.
+# KHÔNG copy file này sang production auto365.vn.
+/*
+  X-Robots-Tag: noindex, nofollow
