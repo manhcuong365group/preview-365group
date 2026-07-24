@@ -115,6 +115,13 @@
     .pkg-price-row span:last-child{font-weight:600}
     .pkg-card .pkg-cta{margin-top:auto;padding-top:12px}
     .pkg-card .pkg-cta button{width:100%;padding:8px 14px;font-size:13px;font-weight:500}
+    /* 5 mã kính lái — dải thẻ đều nhau 1 hàng, cuộn ngang trên mobile */
+    .wsfilm-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
+    .wsfilm-strip > *{height:100%}
+    @media(max-width:900px){
+      .wsfilm-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+      .wsfilm-strip > *{flex:0 0 76%;scroll-snap-align:start}
+    }
     /* Model filter section (theo hãng và model) */
     .filter-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
     .filter-tab{padding:6px 14px;border:1px solid var(--border);border-radius:999px;font-size:12.5px;font-weight:500;cursor:pointer;background:white;color:var(--text);transition:all .15s}
@@ -729,31 +736,31 @@
         <h3 class="text-lg font-medium">5 mã phổ biến cho kính lái</h3>
         <p class="mt-1 text-sm text-[var(--muted)]">Kính lái không nên chọn chỉ vì độ tối — sáng hơn thôi chưa đủ, góc nhìn và độ trong phải giữ được. Lựa chọn cân bằng giữa VLT, độ trong quang học, kính nguyên bản và tần suất đi đêm.</p>
       </div>
-      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        <div class="rounded-2xl border bg-white p-4">
-          <div class="text-lg font-medium">NR 35</div>
-          <div class="mt-1 text-sm font-medium a365-text">VLT 43% · TSER 51%</div>
-          <p class="mt-2 text-sm text-[var(--muted)]">Ceramic không kim loại, entry-level dòng NR. Kính lái vẫn đủ sáng ban ngày, TSER 51% giảm nhiệt tốt. Mã kính lái mặc định gói Ceramic Hybrid — chi phí dễ tiếp cận nhất.</p>
-        </div>
-        <div class="rounded-2xl border bg-white p-4">
+      <div class="wsfilm-strip">
+        <div class="flex flex-col rounded-2xl border bg-white p-4">
           <div class="text-lg font-medium">IR 50</div>
           <div class="mt-1 text-sm font-medium a365-text">VLT 58% · TSER 47%</div>
           <p class="mt-2 text-sm text-[var(--muted)]">Ceramic tăng cường IR. Kính lái sáng nhất trong 5 lựa chọn (VLT 58%), không bị mờ khi đi hầm hoặc trời tối. Lựa chọn cân bằng cho xe đi hằng ngày.</p>
         </div>
-        <div class="rounded-2xl border bg-white p-4">
+        <div class="flex flex-col rounded-2xl border bg-white p-4">
           <div class="text-lg font-medium">CR BLK 60</div>
           <div class="mt-1 text-sm font-medium a365-text">VLT 57% · TSER 54%</div>
           <p class="mt-2 text-sm text-[var(--muted)]">Mã Crystalline sáng nhất. Kính lái trong trẻo gần như phim IR nhưng có công nghệ đa lớp Crystalline, TSER 54% cao. Hợp người muốn sáng tối đa mà vẫn dùng dòng Crystalline.</p>
         </div>
-        <div class="rounded-2xl border bg-white p-4">
+        <div class="flex flex-col rounded-2xl border bg-white p-4">
           <div class="text-lg font-medium">CR BLK 50</div>
           <div class="mt-1 text-sm font-medium a365-text">VLT 48% · TSER 56%</div>
           <p class="mt-2 text-sm text-[var(--muted)]">Cân bằng giữa sáng và giảm lóa. Giảm lóa 34% giúp đỡ mỏi mắt khi đi trưa nắng gắt. Phù hợp cấu hình Crystalline Hybrid.</p>
         </div>
-        <div class="rounded-2xl border bg-white p-4">
+        <div class="flex flex-col rounded-2xl border bg-white p-4">
           <div class="text-lg font-medium">CR BLK 40</div>
           <div class="mt-1 text-sm font-medium a365-text">VLT 48% · Giảm lóa 44%</div>
           <p class="mt-2 text-sm text-[var(--muted)]">Bản PRO của dòng Crystalline. Đậm hơn thị giác từ ngoài nhìn vào, giảm lóa 44% — mức cao nhất trong nhóm Crystalline. Cần xem mẫu thật trước khi chốt.</p>
+        </div>
+        <div class="flex flex-col rounded-2xl border bg-white p-4">
+          <div class="text-lg font-medium">NR 35</div>
+          <div class="mt-1 text-sm font-medium a365-text">VLT 43% · TSER 51%</div>
+          <p class="mt-2 text-sm text-[var(--muted)]">Ceramic không kim loại, entry-level dòng NR. Kính lái vẫn đủ sáng ban ngày, TSER 51% giảm nhiệt tốt. Mã kính lái mặc định gói Ceramic Hybrid — chi phí dễ tiếp cận nhất.</p>
         </div>
       </div>
       <div class="rounded-2xl border bg-white p-5">
