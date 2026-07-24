@@ -76,6 +76,7 @@ h1{font-size:clamp(2.1rem,4.6vw,3.2rem);line-height:1.08;letter-spacing:-.015em;
 .portrait .ph{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:
   repeating-linear-gradient(45deg,rgba(255,255,255,.028) 0 12px,transparent 12px 24px),#0F1826;
   color:var(--hero-ink-2);font-family:var(--mono);font-size:11px;text-align:center;padding:20px;line-height:1.8}
+.portrait img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center}
 .portrait figcaption{padding:10px 14px;font-size:12px;color:var(--hero-ink-2);border-top:1px solid rgba(255,255,255,.12)}
 .portrait figcaption .eid{font-family:var(--mono);font-size:10px;color:#D8A93E;display:block;margin-bottom:3px}
 .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,.16);border-radius:8px;margin-top:34px;overflow:hidden}
@@ -148,6 +149,8 @@ td .src{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
 .ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .ev{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .ev .ph{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;text-align:center;background:repeating-linear-gradient(45deg,#EFECE4 0 14px,#F5F2EA 14px 28px);color:var(--ink-3);font-family:var(--mono);font-size:11px;padding:16px;line-height:1.7}
+.ev img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+.ev.tall img{aspect-ratio:4/5}
 .ev .meta{padding:13px 16px}
 .ev .meta h3{font-size:14.5px;margin-bottom:8px}
 .ev dl{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font-size:12px}
@@ -262,8 +265,8 @@ footer a{color:var(--hero-ink)}
         <p class="position-line">Gắn với hành trình phát triển Auto365 từ những ngày đầu, ông Việt theo đuổi một tiêu chuẩn nhất quán: sản phẩm phù hợp, lắp đặt đúng quy trình và bảo hành thực thi được.</p>
       </div>
       <figure class="portrait">
-        <div class="ph" role="img" aria-label="Hồ sơ Bùi Hùng Việt">HỒ SƠ LÃNH ĐẠO<br>365 GROUP · AUTO365</div>
-        <figcaption>Thông tin được tổng hợp từ các nguồn công khai của Auto365, AutoPro và Dân trí.</figcaption>
+        <img src="assets/3m-pro-shop-bui-hung-viet-phat-bieu.png" alt="Bùi Hùng Việt phát biểu tại sự kiện 3M Pro Shop của 365 Group">
+        <figcaption>Bùi Hùng Việt phát biểu tại sự kiện 3M Pro Shop của 365 Group.</figcaption>
       </figure>
     </div>
     <div class="hero-stats" aria-label="Các mốc công khai">
@@ -305,6 +308,18 @@ footer a{color:var(--hero-ink)}
       <article class="card"><h3>Chuẩn trải nghiệm khách hàng</h3><p>Trong bài viết của Dân trí năm 2019, hệ thống nhấn mạnh quy trình tư vấn – lắp đặt – bảo hành như một phần của trải nghiệm nâng cấp xe.</p></article>
       <article class="card"><h3>Bảo hành toàn quốc</h3><p>Dân trí ghi nhận mô hình vận hành với chính sách bảo hành toàn quốc. Riêng GTR G-Led X được giới thiệu với thời hạn bảo hành 5 năm tại sự kiện cuối năm 2019.</p></article>
       <article class="card"><h3>Danh mục thương hiệu</h3><p>Trang 365 Group công bố các thương hiệu đèn X-Light, GTR, Titan, Henvvei, Tirtim, Fogway, Red Lighting và Matrix Light.</p></article>
+    </div>
+  </section>
+
+  <section id="hinh-anh" aria-labelledby="h-hinh-anh">
+    <p class="block-label">Dấu ấn qua hình ảnh</p>
+    <h2 id="h-hinh-anh">Từ sân khấu doanh nghiệp đến hoạt động học thuật</h2>
+    <p class="sub">Một số hình ảnh tư liệu về hoạt động của Bùi Hùng Việt cùng 365 Group và Auto365.</p>
+    <div class="ev-grid">
+      <figure class="ev tall"><img src="assets/3m-pro-shop-365group-san-khau.png" alt="Sân khấu sự kiện 3M Pro Shop và 365 Group"><figcaption class="meta"><h3>Sự kiện 3M Pro Shop</h3><p>Hoạt động giới thiệu mô hình 3M Pro Shop &amp; Training Center.</p></figcaption></figure>
+      <figure class="ev"><img src="assets/hutech-techshow-2023-bui-hung-viet.png" alt="Bùi Hùng Việt tại HUTECH TECHSHOW 2023"><figcaption class="meta"><h3>HUTECH TECHSHOW 2023</h3><p>Bùi Hùng Việt tại Ngày hội triển lãm công nghệ của HUTECH, 26/08/2023.</p></figcaption></figure>
+      <figure class="ev"><img src="assets/hutech-techshow-2023-vinh-danh.png" alt="Khoảnh khắc vinh danh tại HUTECH TECHSHOW 2023"><figcaption class="meta"><h3>Ghi nhận tại HUTECH</h3><p>Khoảnh khắc vinh danh các đơn vị đồng hành tại HUTECH TECHSHOW 2023.</p></figcaption></figure>
+      <figure class="ev"><img src="assets/hutech-techshow-2023-toan-canh.png" alt="Toàn cảnh HUTECH TECHSHOW 2023"><figcaption class="meta"><h3>Toàn cảnh sự kiện</h3><p>Không gian HUTECH TECHSHOW 2023 với sự tham gia của sinh viên và doanh nghiệp.</p></figcaption></figure>
     </div>
   </section>
 
