@@ -133,14 +133,14 @@ td .src{display:block;font-size:12px;color:var(--ink-3);margin-top:2px}
 .quote.wide p{font-size:1.14rem}
 
 /* timeline */
-.timeline{position:relative;margin-left:6px;padding-left:26px;border-left:2px solid var(--line-2)}
-.tl-item{position:relative;padding-bottom:30px}
-.tl-item:last-child{padding-bottom:6px}
-.tl-item::before{content:"";position:absolute;left:-33px;top:6px;width:12px;height:12px;background:var(--amber);border:2px solid var(--paper);border-radius:3px}
-.tl-date{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--amber-deep)}
-.tl-item h3{font-size:1.05rem;margin:4px 0 6px}
-.tl-item .why{font-size:14.5px;color:var(--ink-2);max-width:44em}
-.tl-item .why b{color:var(--ink);font-weight:650}
+.timeline{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
+.timeline > .timeline-item{position:relative;min-height:172px;padding:21px 22px 20px;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 5px 14px rgba(29,31,35,.035);overflow:hidden}
+.timeline > .timeline-item::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--amber)}
+.timeline > .timeline-item:last-child{background:linear-gradient(145deg,#fffdf8,#f6eee0);border-color:#e7d1ae}
+.timeline > .timeline-item:last-child::before{background:var(--hero-ink)}
+.tl-date{display:inline-flex;align-items:center;min-height:25px;padding:0 9px;background:var(--paper-2);border:1px solid var(--line);border-radius:999px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--amber-deep)}
+.timeline > .timeline-item h3{font-size:1.08rem;line-height:1.35;margin:12px 0 7px}
+.timeline > .timeline-item p:last-child{font-size:14.5px;line-height:1.62;color:var(--ink-2);margin:0}
 
 /* evidence gallery */
 .ev-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -220,6 +220,7 @@ footer a{color:var(--hero-ink)}
   .facts dt{border-right:0;padding-bottom:2px}
   .facts dd{padding-top:2px}
   .media-item{grid-template-columns:1fr}
+  .timeline{grid-template-columns:1fr}
 }
 @media(max-width:560px){.grid3,.grid4,.metrics{grid-template-columns:1fr}.source-detail{padding:20px 16px}.source-detail table.scope{font-size:13px}.source-detail table.scope th,.source-detail table.scope td{padding:9px}}
 @media print{.topnav{display:none}body{background:#fff}}
@@ -328,6 +329,7 @@ footer a{color:var(--hero-ink)}
       <article class="timeline-item"><p class="tl-date">07–12/2019</p><h3>Mô hình nhượng quyền và chi nhánh thứ 20</h3><p>Dân trí ghi nhận mô hình nhượng quyền, chính sách bảo hành toàn quốc và sự kiện khai trương chi nhánh thứ 20 tại Gia Lai.</p></article>
       <article class="timeline-item"><p class="tl-date">12/2019</p><h3>GTR G-Led X được giới thiệu tại Gia Lai</h3><p>Bài viết Dân trí về sự kiện chi nhánh thứ 20 đề cập dòng GTR G-Led X, công suất 60W, khả năng chiếu xa 300m và bảo hành 5 năm.</p></article>
       <article class="timeline-item"><p class="tl-date">2022</p><h3>Mở rộng hệ thống</h3><p>Trang 365 Group công bố 88+ hệ thống Auto365, 100+ hệ thống GTR và hơn 300 điểm gara liên kết trên toàn quốc.</p></article>
+      <article class="timeline-item"><p class="tl-date">06/2026</p><h3>Vận hành 3M Pro Shop &amp; Training Center tại TP.HCM</h3><p>365Group đưa mô hình 3M Pro Shop &amp; Training Center đầu tiên tại Việt Nam vào vận hành; các bài báo ghi nhận hệ thống Auto365 có hơn 90 điểm tại 34 tỉnh, thành theo địa giới hành chính mới.</p></article>
     </div>
   </section>
 
@@ -547,6 +549,8 @@ footer a{color:var(--hero-ink)}
     <li id="nguon-5"><strong>Sự kiện AX Film 2023:</strong> Kenh14 (26/08/2023). <a href="https://kenh14.vn/thuong-hieu-ax-film-khang-dinh-vi-the-trong-linh-vuc-mang-phim-bao-ve-o-to-hieu-suat-cao-cap-ppf-20230826125411674.chn" target="_blank" rel="noopener" style="color:#e11d48;">Kenh14</a></li>
     <li id="nguon-6"><strong>Hợp tác chiến lược GOTECH:</strong> gotech.vn (12/2021). <a href="https://gotech.vn/gotech-va-365-group-bat-tay-hop-tac-chien-luoc/" target="_blank" rel="noopener" style="color:#e11d48;">GOTECH</a></li>
     <li id="nguon-7"><strong>HUTECH TECHSHOW 2023:</strong> HUTECH (27/08/2023). <a href="https://www.hutech.edu.vn/homepage/tin-tuc/tin-hutech/14612343-soi-noi-hutech-techshow-2023-hon-300-do-an-3-500-dau-viec-va-nhieu-suat-hoc-bong-gia-tri" target="_blank" rel="noopener" style="color:#e11d48;">HUTECH</a></li>
+    <li id="nguon-8"><strong>3M Pro Shop &amp; Training Center:</strong> Thể thao &amp; Văn hóa (22/06/2026). <a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener" style="color:#e11d48;">Thể thao &amp; Văn hóa</a></li>
+    <li id="nguon-9"><strong>Vận hành hệ thống Auto365 &amp; 3M Pro Shop:</strong> VietnamBiz (22/06/2026). <a href="https://vietnambiz.vn/365group-dua-3m-pro-shop-vao-bai-toan-van-hanh-he-thong-auto365-hon-90-diem-2026622174037156.htm" target="_blank" rel="noopener" style="color:#e11d48;">VietnamBiz</a></li>
   </ol>
     </div>
   </section>
@@ -559,6 +563,8 @@ footer a{color:var(--hero-ink)}
       <div class="media-item"><span class="pub"><b>Dân trí</b>08/07/2019</span><span class="ttl"><a href="https://dantri.com.vn/o-to-xe-may/huong-di-moi-cho-mo-hinh-nhuong-quyen-garage-auto-365-chuyen-nghiep-20190708143036565.htm" target="_blank" rel="noopener">Hướng đi mới cho mô hình nhượng quyền garage Auto365 chuyên nghiệp</a></span></div>
       <div class="media-item"><span class="pub"><b>Dân trí</b>18/12/2019</span><span class="ttl"><a href="https://dantri.com.vn/o-to-xe-may/he-thong-do-xe-auto-365-khai-truong-chi-nhanh-thu-20-tai-viet-nam-20191218143153318.htm" target="_blank" rel="noopener">Hệ thống độ xe Auto365 khai trương chi nhánh thứ 20 tại Việt Nam</a></span></div>
       <div class="media-item"><span class="pub"><b>HUTECH</b>27/08/2023</span><span class="ttl"><a href="https://www.hutech.edu.vn/homepage/tin-tuc/tin-hutech/14612343-soi-noi-hutech-techshow-2023-hon-300-do-an-3-500-dau-viec-va-nhieu-suat-hoc-bong-gia-tri" target="_blank" rel="noopener">HUTECH TECHSHOW 2023: hơn 300 đồ án, 3.500 đầu việc và nhiều suất học bổng giá trị</a></span></div>
+      <div class="media-item"><span class="pub"><b>Thể thao &amp; Văn hóa</b>22/06/2026</span><span class="ttl"><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener">3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM</a></span></div>
+      <div class="media-item"><span class="pub"><b>VietnamBiz</b>22/06/2026</span><span class="ttl"><a href="https://vietnambiz.vn/365group-dua-3m-pro-shop-vao-bai-toan-van-hanh-he-thong-auto365-hon-90-diem-2026622174037156.htm" target="_blank" rel="noopener">365Group đưa 3M Pro Shop vào vận hành hệ thống Auto365 hơn 90 điểm</a></span></div>
       <div class="media-item"><span class="pub"><b>365 Group</b>Thông tin hệ thống</span><span class="ttl"><a href="https://auto365.vn/365-group" target="_blank" rel="noopener">Giới thiệu về hệ sinh thái 365 Group</a></span></div>
     </div>
   </section>
