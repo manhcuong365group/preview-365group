@@ -200,6 +200,11 @@
     .gallery-caption{padding:12px 14px}
     .gallery-caption h4{font-size:14px;font-weight:600;margin:0}
     .gallery-caption p{font-size:12px;color:var(--muted);margin:4px 0 0}
+    /* Mobile sticky CTA — chỉ mobile, hiện sau khi rời hero */
+    .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--border);transform:translateY(120%);transition:transform .25s ease;box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+    .mobile-cta.show{transform:translateY(0)}
+    .mobile-cta a{flex:1;text-align:center;border-radius:12px;padding:11px 8px;font-size:13px;font-weight:600;text-decoration:none}
+    @media(max-width:768px){.mobile-cta{display:flex}}
 </style>
   <!-- PREVIEW: noindex tới khi production /phim-cach-nhiet-3m trả HTTP 200.
        Khi go-live production: (1) bỏ 2 meta noindex dưới đây, (2) mở lại canonical self-reference,
@@ -263,17 +268,12 @@
     </section>
 
     <nav class="flex gap-2 overflow-x-auto rounded-2xl border bg-white px-4 py-3" aria-label="Điều hướng nhanh">
-        <a href="#proof" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Uỷ quyền 3M</a>
-        <a href="#film-match" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm active">Chọn theo nhu cầu</a>
+        <a href="#film-match" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm active">Chọn theo xe</a>
+        <a href="#pricing" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Bảng giá</a>
         <a href="#models" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Xe đã dán</a>
-        <a href="#process" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Quy trình & bảo hành</a>
-        <a href="#benefits" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Lợi ích</a>
-        <a href="#brand-compare" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">So sánh hãng</a>
-        <a href="#windshield" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Vị trí kính</a>
-        <a href="#pricing" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Bảng giá gói</a>
-        <a href="#pricing-piece" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Giá lẻ</a>
-        <a href="#specs" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Thông số kỹ thuật</a>
-        <a href="#aftercare" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Chăm sóc sau dán</a>
+        <a href="#process" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Bảo hành</a>
+        <a href="#local-hub" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Địa chỉ</a>
+        <a href="#specs" class="whitespace-nowrap rounded-full border px-4 py-2 text-sm">Kiến thức</a>
     </nav>
 
     <section id="tra-loi-nhanh" class="rounded-2xl border bg-white p-5 md:p-6">
@@ -1280,6 +1280,12 @@
         </div>
       </div>
     </section>
+
+    <div class="mobile-cta" id="mobile-cta" aria-label="Liên hệ nhanh">
+      <a href="tel:0365365365" class="a365-bg">📞 Gọi</a>
+      <a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener" class="border border-current">💬 Zalo</a>
+      <a href="#film-match" class="border border-current">📝 Nhận cấu hình</a>
+    </div>
   </main>
 
   <script>
@@ -1524,6 +1530,20 @@
         });
       }
     }
+  </script>
+  <script>
+    (function(){
+      var bar = document.getElementById('mobile-cta');
+      if(!bar) return;
+      var hero = document.querySelector('#film3m-pillar > section');
+      function onScroll(){
+        var trigger = hero ? hero.offsetHeight - 80 : 500;
+        if(window.scrollY > trigger) bar.classList.add('show');
+        else bar.classList.remove('show');
+      }
+      window.addEventListener('scroll', onScroll, {passive:true});
+      onScroll();
+    })();
   </script>
 </body>
 </html>
