@@ -372,7 +372,8 @@
               <div><div class="text-sm opacity-70">Sườn và lưng</div><div id="result-side" class="font-medium">NR 25 / NR 15 / NR 5</div></div>
               <div><div class="text-sm opacity-70">Giá tham khảo</div><div id="result-price" class="font-medium">5.900.000 VNĐ</div></div>
             </div>
-            <div id="result-alt" class="mt-4 hidden rounded-xl border bg-white p-3 text-sm"></div>
+            <div id="result-alt" class="mt-4 rounded-xl border bg-white p-3 text-sm"></div>
+            <div id="result-config" class="mt-3 text-xs text-[var(--muted)]"></div>
           </div>
           <div class="flex flex-col gap-2">
             <a href="tel:0365365365" class="a365-bg rounded-xl px-4 py-3 text-center font-medium">📞 Gọi 0365 365 365</a>
@@ -1363,7 +1364,10 @@
     const priceNum = (s) => parseInt(s.replace(/\D/g, ''), 10);
     const trText = (n) => (Math.round(n / 100000) / 10).toLocaleString('vi-VN') + ' triệu đồng';
 
-    function renderResult(item, vehicle, note, altHtml) {
+    function makeConfigId(budgetKey) {
+      return ('FM-' + (state.need || '') + '-' + (root.querySelector('#vehicle').value || '') + '-' + (budgetKey || '')).toUpperCase();
+    }
+    function renderResult(item, vehicle, note, altHtml, budgetKey) {
       root.querySelector('#result-name').textContent = item.name;
       root.querySelector('#result-reason').textContent = item.reason + note;
       root.querySelector('#result-front').textContent = item.front;
@@ -1372,8 +1376,11 @@
       const alt = root.querySelector('#result-alt');
       if (altHtml) { alt.innerHTML = altHtml; alt.classList.remove('hidden'); }
       else { alt.innerHTML = ''; alt.classList.add('hidden'); }
+      const cid = makeConfigId(budgetKey);
+      const cfgEl = root.querySelector('#result-config');
+      if (cfgEl) cfgEl.textContent = 'Mã cấu hình: ' + cid + ' — đọc mã này cho cố vấn để báo giá nhanh.';
       const lead = root.querySelector('#lead-config');
-      if (lead) lead.value = item.name + ' | Kính lái: ' + item.front + ' | Sườn/lưng: ' + item.side + ' | Giá: ' + item.price[vehicle];
+      if (lead) lead.value = cid + ' | ' + item.name + ' | Kính lái: ' + item.front + ' | Sườn/lưng: ' + item.side + ' | Giá: ' + item.price[vehicle];
       const fb = root.querySelector('#fallback-config');
       if (fb) fb.textContent = lead ? lead.value : '';
       // Pulse animation — visual feedback ngay cả khi content không đổi
@@ -1383,52 +1390,51 @@
       resultEl.classList.add('fm-pulse');
     }
 
+    const tierOrder = ['under8', '8to11', '11to15', 'over15'];
     function computeAndRender(scroll) {
       const vehicle = root.querySelector('#vehicle').value;
       const chosenBudget = root.querySelector('#budget').value;
-      let upgradeBudget = chosenBudget;
-      if (state.need === 'night' && upgradeBudget === 'under8') upgradeBudget = '8to11';
-      if (state.need === 'family' && upgradeBudget === 'under8') upgradeBudget = '8to11';
-      if (state.need === 'premium' && (upgradeBudget === 'under8' || upgradeBudget === '8to11')) upgradeBudget = '11to15';
 
-      // PRIMARY: luôn là gói trong ngân sách khách chọn (tôn trọng lựa chọn của khách)
+      // PHƯƠNG ÁN KHUYẾN NGHỊ: gói trong ngân sách khách chọn
       const primary = resolveItem(chosenBudget, state.need);
-      const hasUpgrade = upgradeBudget !== chosenBudget;
-      const upgradeItem = hasUpgrade ? resolveItem(upgradeBudget, state.need) : null;
 
-      let note = needNotes[state.need] || '';
+      // PHƯƠNG ÁN ĐỐI CHIẾU: ưu tiên nâng cấp (tier trên); nếu đã cao nhất thì đối chiếu tiết kiệm (tier dưới)
+      const i = tierOrder.indexOf(chosenBudget);
+      let compBudget = null, compDir = '';
+      if (i > -1 && i < tierOrder.length - 1) { compBudget = tierOrder[i + 1]; compDir = 'up'; }
+      else if (i > 0) { compBudget = tierOrder[i - 1]; compDir = 'down'; }
+      const compItem = compBudget ? resolveItem(compBudget, state.need) : null;
+
+      let note = (needNotes[state.need] || '') + ' Đây là gói phù hợp nhất trong ngân sách anh/chị chọn.';
       let altHtml = '';
-
-      if (hasUpgrade) {
-        const priceDiff = priceNum(upgradeItem.price[vehicle]) - priceNum(primary.price[vehicle]);
-        const upgradeReason = state.need === 'night'
-          ? 'kính lái sáng hơn cho lái đêm'
-          : state.need === 'premium'
-            ? 'trải nghiệm Crystalline cao cấp'
-            : 'cân bằng sáng và riêng tư tốt hơn cho gia đình';
-        note += ' Đây là gói phù hợp nhất trong ngân sách anh/chị chọn.';
-        altHtml = '<div class="font-medium">Muốn ' + upgradeReason + '? Cân nhắc nâng cấp lên ' + upgradeItem.name + ' — ' + upgradeItem.price[vehicle] + '</div>'
-          + '<div class="mt-1 text-[var(--muted)]">Chênh lệch khoảng ' + trText(priceDiff) + ' so với gói hiện tại.</div>'
-          + '<button type="button" id="upgrade-choice" class="mt-2 rounded-lg border px-3 py-2 font-medium">Chọn phương án nâng cấp</button>';
-      } else {
-        note += ' Gói này nằm đúng trong ngân sách và đáp ứng nhu cầu anh/chị đã chọn.';
+      if (compItem) {
+        const diff = priceNum(compItem.price[vehicle]) - priceNum(primary.price[vehicle]);
+        if (compDir === 'up') {
+          altHtml = '<div class="text-xs font-medium uppercase tracking-wider opacity-70">Phương án đối chiếu · nâng cấp</div>'
+            + '<div class="mt-1 font-medium">' + compItem.name + ' — ' + compItem.price[vehicle] + '</div>'
+            + '<div class="mt-1 text-[var(--muted)]"><strong>Được thêm:</strong> kính lái sáng/đậm hơn, cản nhiệt và trải nghiệm cao hơn. <strong>Đánh đổi:</strong> đắt hơn khoảng ' + trText(diff) + '. Nếu nhu cầu hiện tại đã đủ thì chưa cần lên gói này.</div>'
+            + '<button type="button" id="alt-choice" class="mt-2 rounded-lg border px-3 py-2 font-medium">Xem phương án này</button>';
+        } else {
+          altHtml = '<div class="text-xs font-medium uppercase tracking-wider opacity-70">Phương án đối chiếu · tiết kiệm</div>'
+            + '<div class="mt-1 font-medium">' + compItem.name + ' — ' + compItem.price[vehicle] + '</div>'
+            + '<div class="mt-1 text-[var(--muted)]"><strong>Rẻ hơn</strong> khoảng ' + trText(-diff) + '. <strong>Đánh đổi:</strong> kính lái/cấu hình bớt cao cấp và bớt đồng bộ hơn so với gói khuyến nghị.</div>'
+            + '<button type="button" id="alt-choice" class="mt-2 rounded-lg border px-3 py-2 font-medium">Xem phương án này</button>';
+        }
       }
 
-      renderResult(primary, vehicle, note, altHtml);
+      renderResult(primary, vehicle, note, altHtml, chosenBudget);
 
-      if (altHtml) {
-        root.querySelector('#upgrade-choice').addEventListener('click', () => {
-          const backHtml = '<div class="font-medium">Phương án giữ ngân sách: ' + primary.name + ' — ' + primary.price[vehicle] + '</div>'
-            + '<button type="button" id="back-to-budget" class="mt-2 rounded-lg border px-3 py-2 font-medium">Quay lại gói trong ngân sách</button>';
-          renderResult(upgradeItem, vehicle,
-            (needNotes[state.need] || '') + ' Anh/chị đã chọn nâng cấp lên ' + upgradeItem.name + ' — cao hơn ngân sách ban đầu để đáp ứng đầy đủ nhu cầu.',
-            backHtml);
-          const back = root.querySelector('#back-to-budget');
+      if (compItem) {
+        root.querySelector('#alt-choice').addEventListener('click', () => {
+          const backHtml = '<div class="text-xs font-medium uppercase tracking-wider opacity-70">Phương án khuyến nghị (trong ngân sách)</div>'
+            + '<div class="mt-1 font-medium">' + primary.name + ' — ' + primary.price[vehicle] + '</div>'
+            + '<button type="button" id="back-choice" class="mt-2 rounded-lg border px-3 py-2 font-medium">Quay lại gói khuyến nghị</button>';
+          renderResult(compItem, vehicle, (needNotes[state.need] || '') + ' Anh/chị đang xem phương án đối chiếu để so với gói khuyến nghị.', backHtml, compBudget);
+          const back = root.querySelector('#back-choice');
           if (back) back.addEventListener('click', () => computeAndRender(false));
         });
       }
       if (scroll) {
-        // Ép scroll đến result với offset bù sticky nav (~76px), luôn di chuyển dù element đã trong view
         const target = root.querySelector('#result');
         const y = target.getBoundingClientRect().top + window.scrollY - 88;
         window.scrollTo({ top: y, behavior: 'smooth' });
