@@ -393,13 +393,13 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <button class="rounded-xl border px-5 py-3 font-medium" id="copy-lead-config" type="button">Sao chép cấu hình</button>
 </div>
 </div><form hidden="" id="lead-form">
-<div class="mt-4 grid gap-4 md:grid-cols-2"><label>Hãng xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-brand" name="brand" placeholder="VinFast" required=""/></label>
-<label>Model xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-model" name="model" placeholder="VF8" required=""/></label>
-<label>Số điện thoại <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-phone" name="phone" placeholder="0xxx xxx xxx" required="" type="tel"/></label>
-<label>Họ và tên<input autocomplete="name" class="mt-1 w-full rounded-xl border px-3 py-3" name="customer_name" placeholder="Nguyễn Văn A (không bắt buộc)"/></label>
-<label>Tỉnh/thành<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-province" name="province" placeholder="TP. Hồ Chí Minh (không bắt buộc)"/></label>
-<label class="md:col-span-2">Cấu hình gợi ý<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-config" name="config" readonly=""/></label>
-</div>
+<div class="mt-4 grid gap-4 md:grid-cols-2"><label>Họ và tên<input autocomplete="name" class="mt-1 w-full rounded-xl border px-3 py-3" name="customer_name" placeholder="Nguyễn Văn A (không bắt buộc)"/></label>
+<label>Số điện thoại <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-phone" name="phone" placeholder="0xxx xxx xxx" required="" type="tel"/></label></div>
+<div class="mt-4 grid gap-4 md:grid-cols-3"><label>Hãng xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-brand" name="brand" placeholder="VinFast" list="brand-list" required=""/></label>
+<label>Model xe<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-model" name="model" placeholder="VF8"/></label>
+<label>Tỉnh/thành<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-province" name="province" placeholder="TP. Hồ Chí Minh (không bắt buộc)"/></label></div>
+<datalist id="brand-list"><option value="VinFast"></option><option value="Toyota"></option><option value="Honda"></option><option value="Mazda"></option><option value="Hyundai"></option><option value="Kia"></option><option value="Ford"></option><option value="Mitsubishi"></option><option value="Nissan"></option><option value="Suzuki"></option><option value="Mercedes-Benz"></option><option value="BMW"></option><option value="Audi"></option><option value="Lexus"></option><option value="Volvo"></option><option value="Peugeot"></option><option value="MG"></option><option value="Isuzu"></option><option value="Subaru"></option><option value="Porsche"></option><option value="Land Rover"></option><option value="Chevrolet"></option><option value="Volkswagen"></option></datalist>
+<div class="mt-4"><label class="block">Cấu hình gợi ý<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-config" name="config" readonly=""/></label></div>
 <p class="mt-3 hidden text-sm font-medium" id="lead-status"></p>
 <label class="lead-consent"><input id="lead-consent" name="consent" required="" type="checkbox"/> <span>Tôi đồng ý để Auto365 liên hệ tư vấn theo thông tin đã cung cấp.</span></label><div class="mt-4 flex flex-wrap gap-3">
 <button class="a365-bg rounded-xl px-5 py-3 font-medium" type="submit">Gửi yêu cầu tư vấn</button>
