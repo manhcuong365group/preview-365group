@@ -289,7 +289,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <a class="whitespace-nowrap rounded-full border px-4 py-2 text-sm" href="#knowledge-hub">Kiến thức</a>
 </nav><section class="rounded-2xl border bg-white p-5 md:p-6" id="tra-loi-nhanh">
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Trả lời nhanh</p>
-<p class="mt-2 text-[var(--muted)]" data-answer="">Phim cách nhiệt 3M cho ô tô có ba dòng chính: <strong class="text-[var(--text)]">Ceramic NR</strong> (thực dụng), <strong class="text-[var(--text)]">Ceramic IR</strong> (cân bằng, kính lái sáng) và <strong class="text-[var(--text)]">Crystalline CR BLK</strong> (cao cấp). Sáu cấu hình trọn xe tại Auto365 có giá tham khảo từ 5,9 đến 18,3 triệu đồng. 365Group là nhà phân phối uỷ quyền; Auto365.vn - Trụ Sở Chính là đơn vị tư vấn và triển khai; 3M Pro Shop &amp; 3M Training Center là mô hình trải nghiệm, đào tạo và chuẩn hoá quy trình trong hệ sinh thái.</p>
+<p class="mt-2 text-[var(--muted)]" data-answer="">Phim cách nhiệt 3M cho ô tô có ba dòng chính: <strong class="text-[var(--text)]">Ceramic NR</strong> — ceramic tiêu chuẩn, chống nóng tốt, giá dễ tiếp cận; <strong class="text-[var(--text)]">Ceramic IR</strong> — tăng cường chặn tia hồng ngoại (IR), kính lái sáng rõ; <strong class="text-[var(--text)]">Crystalline CR BLK</strong> — dòng cao cấp, phim đa lớp, chống nóng cao. Sáu cấu hình trọn xe tại Auto365 có giá tham khảo từ 5,9 đến 18,3 triệu đồng. 365Group là nhà phân phối uỷ quyền; Auto365.vn - Trụ Sở Chính là đơn vị tư vấn và triển khai; 3M Pro Shop &amp; 3M Training Center là mô hình trải nghiệm, đào tạo và chuẩn hoá quy trình trong hệ sinh thái.</p>
 <dl class="mt-4 grid gap-3 sm:grid-cols-2">
 <div><dt class="text-sm font-medium">Giá dán trọn xe</dt><dd class="mt-1 text-sm text-[var(--muted)]">5,9–18,3 triệu tuỳ dòng phim và nhóm xe (minicar / sedan / SUV).</dd></div>
 <div><dt class="text-sm font-medium">Chọn mã kính lái</dt><dd class="mt-1 text-sm text-[var(--muted)]">Ưu tiên độ sáng và độ trong — mã phổ biến: IR 50, CR BLK 60 / 50 / 40.</dd></div>
@@ -355,11 +355,6 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="text-sm font-medium uppercase tracking-wider">Phương án khuyến nghị</div>
 <h3 class="mt-1 text-2xl font-medium" id="result-name">3M Ceramic Hybrid (gói dòng Ceramic NR)</h3>
 <p class="mt-2" id="result-reason">Phù hợp nhu cầu thực dụng và mức đầu tư dễ tiếp cận.</p>
-<div class="result-grid-v40">
-<div><div class="text-sm opacity-70">Kính lái</div><div class="font-medium" id="result-front">NR 35 / NR 25</div></div>
-<div><div class="text-sm opacity-70">Sườn và lưng</div><div class="font-medium" id="result-side">NR 25 / NR 15 / NR 5</div></div>
-<div><div class="text-sm opacity-70">Giá tham khảo</div><div class="font-medium" id="result-price">5.900.000 VNĐ</div></div>
-<div><span>Cửa sổ trời</span><strong id="result-sunroof">Không trong gói</strong></div></div>
 </div>
 <div class="flex flex-col gap-2">
 <a class="a365-bg rounded-xl px-4 py-3 text-center font-medium" data-track="phone_click" href="tel:0365365365">📞 Gọi 0365 365 365</a>
@@ -367,6 +362,11 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <button aria-controls="quote-panel" aria-expanded="false" class="rounded-xl border border-current px-4 py-3 font-medium" id="open-quote" type="button">📝 Để lại thông tin tư vấn</button>
 </div>
 </div>
+<div class="result-grid-v40 mt-4">
+<div><div class="text-sm opacity-70">Kính lái</div><div class="font-medium" id="result-front">NR 35 / NR 25</div></div>
+<div><div class="text-sm opacity-70">Sườn và lưng</div><div class="font-medium" id="result-side">NR 25 / NR 15 / NR 5</div></div>
+<div><div class="text-sm opacity-70">Giá tham khảo</div><div class="font-medium" id="result-price">5.900.000 VNĐ</div></div>
+<div><span>Cửa sổ trời</span><strong id="result-sunroof">Không trong gói</strong></div></div>
 <div class="mt-4 rounded-xl border bg-white p-3 text-sm" id="result-alt"></div>
 </div>
 <div aria-label="Nhận báo giá theo model xe" class="rounded-2xl border bg-white p-5" id="quote-panel" role="region">
@@ -1287,7 +1287,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   function sunroofText(v){return v==='none'?'Không trong gói':v==='small'?'Khảo sát ô nhỏ, báo riêng':'Panorama — khảo sát và báo riêng';}
   function configId(vehicle,budget,codes,a){return ['FM4',state.need,vehicle,budget,slug(codes.front),a.privacy,a.sunroof].join('-').toUpperCase();}
   function comparePackage(budget,a){const i=tierOrder.indexOf(budget);const compareBudget=i<tierOrder.length-1?tierOrder[i+1]:tierOrder[i-1];return {budget:compareBudget,key:selectPackage(compareBudget,a),direction:i<tierOrder.length-1?'up':'down'};}
-  function render(pkgKey,vehicle,budget,a,alt=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[cid,pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
+  function render(pkgKey,vehicle,budget,a,alt=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
     q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-alt');altBox.innerHTML='';
     if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-medium uppercase tracking-wider opacity-70">Phương án đối chiếu · '+(comp.direction==='up'?'nâng cấp':'tiết kiệm')+'</div><div class="mt-1 font-medium">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1 text-[var(--muted)]">'+(diff>=0?'<strong>Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong>Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="rounded-lg border px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
