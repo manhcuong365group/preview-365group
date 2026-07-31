@@ -141,6 +141,10 @@
     .filter-tab:hover{border-color:var(--a365-red)}
     .filter-tab.active{background:var(--a365-black);color:white;border-color:var(--a365-black)}
     .model-grid{display:grid;gap:12px;grid-template-columns:repeat(1,minmax(0,1fr))}
+    @media(max-width:639px){
+      .model-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:76%;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;padding-bottom:6px}
+      .model-grid > *{scroll-snap-align:start}
+    }
     @media(min-width:640px){.model-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(min-width:1024px){.model-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     .model-card{display:flex;flex-direction:column;padding:14px 16px;border:1px solid var(--border);border-radius:14px;background:white;transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease}
