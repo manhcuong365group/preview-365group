@@ -294,7 +294,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div><dt class="text-sm font-medium">Giá dán trọn xe</dt><dd class="mt-1 text-sm text-[var(--muted)]">5,9–18,3 triệu tuỳ dòng phim và nhóm xe (minicar / sedan / SUV).</dd></div>
 <div><dt class="text-sm font-medium">Chọn mã kính lái</dt><dd class="mt-1 text-sm text-[var(--muted)]">Ưu tiên độ sáng và độ trong — mã phổ biến: IR 50, CR BLK 60 / 50 / 40.</dd></div>
 <div><dt class="text-sm font-medium">Thời gian thi công</dt><dd class="mt-1 text-sm text-[var(--muted)]">Khoảng 2–4 giờ; xe có phim cũ hoặc cửa sổ trời panorama có thể lâu hơn.</dd></div>
-<div><dt class="text-sm font-medium">Dán ở đâu</dt><dd class="mt-1 text-sm text-[var(--muted)]">3M Pro Shop Auto365 và hệ thống 90+ điểm toàn quốc — hotline 0365 365 365.</dd></div>
+<div><dt class="text-sm font-medium">Dán ở đâu</dt><dd class="mt-1 text-sm text-[var(--muted)]">3M Pro Shop Auto365; Auto365 hỗ trợ kết nối tới điểm 3M đủ điều kiện qua mạng lưới 90+ điểm — hotline 0365 365 365.</dd></div>
 </dl>
 </section><section class="space-y-5" id="film-match">
 <div>
@@ -355,6 +355,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="text-sm font-medium uppercase tracking-wider">Phương án khuyến nghị</div>
 <h3 class="mt-1 text-2xl font-medium" id="result-name">3M Ceramic Hybrid (gói dòng Ceramic NR)</h3>
 <p class="mt-2" id="result-reason">Phù hợp nhu cầu thực dụng và mức đầu tư dễ tiếp cận.</p>
+<p class="mt-1 text-xs text-[var(--muted)]" id="result-default-note">Ví dụ cấu hình mặc định — chưa phải đề xuất cho xe của bạn. Chọn nhu cầu, nhóm xe và ngân sách để nhận gợi ý phù hợp.</p>
 </div>
 <div class="flex flex-col gap-2">
 <a class="a365-bg rounded-xl px-4 py-2 text-center text-sm font-medium" data-track="phone_click" href="tel:0365365365">📞 Gọi 0365 365 365</a>
@@ -864,7 +865,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="a365-text text-sm font-medium">Hệ thống</div>
 <h3 class="mt-2 font-medium">365Group — Nhà phân phối ủy quyền</h3>
 <div class="text-xs a365-text font-medium">3M Authorized Distributor in Vietnam</div>
-<p class="mt-2 text-sm text-[var(--muted)]">Distributor Certificate xác nhận 365Group là nhà phân phối ủy quyền phim cách nhiệt &amp; PPF 3M tại Việt Nam. <a href="https://3m.365group.com.vn/" target="_blank" rel="noopener" class="a365-text font-medium whitespace-nowrap">Xem website 3M →</a></p>
+<p class="mt-2 text-sm text-[var(--muted)]">Distributor Certificate xác nhận 365Group là nhà phân phối ủy quyền phim cách nhiệt &amp; PPF 3M tại Việt Nam. <a href="https://3m.365group.com.vn/" target="_blank" rel="noopener" class="a365-text font-medium whitespace-nowrap">Xem hồ sơ phân phối 3M trên website 365Group →</a></p>
 </div>
 </div>
 </section><section class="space-y-5 defer-render" id="xuong-doi-ngu">
@@ -1303,7 +1304,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   function configId(vehicle,budget,codes,a){return ['FM4',state.need,vehicle,budget,slug(codes.front),a.privacy,a.sunroof].join('-').toUpperCase();}
   function comparePackage(budget,a){const i=tierOrder.indexOf(budget);const compareBudget=i<tierOrder.length-1?tierOrder[i+1]:tierOrder[i-1];return {budget:compareBudget,key:selectPackage(compareBudget,a),direction:i<tierOrder.length-1?'up':'down'};}
   function render(pkgKey,vehicle,budget,a,alt=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
-    q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
+    q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);if(q('#result-default-note'))q('#result-default-note').remove();q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-alt');altBox.innerHTML='';
     if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-medium uppercase tracking-wider opacity-70">Phương án đối chiếu · '+(comp.direction==='up'?'nâng cấp':'tiết kiệm')+'</div><div class="mt-1 font-medium">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1 text-[var(--muted)]">'+(diff>=0?'<strong>Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong>Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="rounded-lg border px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
     const result=q('#result');result.classList.remove('fm-pulse');void result.offsetWidth;result.classList.add('fm-pulse');
