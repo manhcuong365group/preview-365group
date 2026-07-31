@@ -378,7 +378,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div><div class="text-sm opacity-70">Sườn và lưng</div><div class="font-medium" id="result-side">NR 25 / NR 15 / NR 5</div></div>
 <div><div class="text-sm opacity-70">Giá tham khảo</div><div class="font-medium" id="result-price">5.900.000 VNĐ</div></div>
 <div><span>Cửa sổ trời</span><strong id="result-sunroof">Không trong gói</strong></div></div>
-<div class="mt-4 rounded-xl border bg-white p-3 text-sm" id="result-alt"</div>
+<div class="mt-4 rounded-xl p-4 text-sm" id="result-alt" style="background:var(--a365-black);color:#fff"</div>
 </div>
 <div aria-label="Nhận báo giá theo model xe" class="rounded-2xl border bg-white p-5" id="quote-panel" role="region">
 <h3 class="text-xl font-medium">Nhận báo giá theo đúng model xe</h3>
@@ -407,7 +407,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </div>
 <input id="lead-configuration-id" name="configuration_id" type="hidden"/><input id="lead-source-url" name="source_url" type="hidden"/><input id="lead-utm-source" name="utm_source" type="hidden"/><input id="lead-utm-medium" name="utm_medium" type="hidden"/><input id="lead-utm-campaign" name="utm_campaign" type="hidden"/></form>
 </div>
-<div class="rounded-2xl border bg-white p-5">
+<div class="rounded-2xl border bg-white p-5" style="margin-top:32px">
 <div class="flex flex-wrap items-baseline justify-between gap-2">
 <h3 class="font-medium">Xem nhanh giá 6 gói</h3>
 <a class="a365-text text-sm font-medium" href="#pricing">Bảng giá chi tiết theo nhóm xe →</a>
@@ -1350,7 +1350,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   function render(pkgKey,vehicle,budget,a,alt=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
     q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);if(q('#result-default-note'))q('#result-default-note').remove();q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-alt');altBox.innerHTML='';
-    if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-bold uppercase tracking-wider" style="color:var(--a365-red)">'+(comp.direction==='up'?'▲ Nâng cấp đề xuất':'▼ Phương án tiết kiệm')+'</div><div class="mt-1 text-base font-semibold">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1 text-[var(--muted)]">'+(diff>=0?'<strong>Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong>Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="a365-bg rounded-lg px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
+    if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-bold uppercase tracking-wider" style="color:var(--a365-red)">'+(comp.direction==='up'?'▲ Nâng cấp đề xuất':'▼ Phương án tiết kiệm')+'</div><div class="mt-1 text-base font-semibold">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1" style="color:rgba(255,255,255,.72)">'+(diff>=0?'<strong style="color:#fff">Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong style="color:#fff">Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="a365-bg rounded-lg px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
     const result=q('#result');result.classList.remove('fm-pulse');void result.offsetWidth;result.classList.add('fm-pulse');
   }
   function compute(scroll=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,a);render(key,vehicle,budget,a,true);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
