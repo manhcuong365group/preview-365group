@@ -1699,5 +1699,63 @@ h2::before {
 <a href="#gia" data-track="sticky_price">Xem giá</a>
 <a href="#thong-so" data-track="sticky_specifications">Xem thông số</a>
 </div>
+
+<!-- preview-copy-link:start -->
+<script>
+(function () {
+  'use strict';
+
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('admin') !== '1') return;
+
+  function addPreviewCopyButton() {
+    if (document.getElementById('preview-copy-link-button')) return;
+
+    var button = document.createElement('button');
+    button.id = 'preview-copy-link-button';
+    button.type = 'button';
+    button.textContent = 'Copy link gửi duyệt';
+    button.setAttribute('aria-label', 'Sao chép link mới không dùng cache');
+    button.style.cssText = [
+      'position:fixed', 'right:16px', 'bottom:16px', 'z-index:2147483647',
+      'border:0', 'border-radius:999px', 'padding:12px 18px',
+      'background:#1667d9', 'color:#fff', 'font:600 14px/1.2 Arial,sans-serif',
+      'box-shadow:0 4px 16px rgba(0,0,0,.25)', 'cursor:pointer'
+    ].join(';');
+
+    button.addEventListener('click', async function () {
+      var shareUrl = new URL(window.location.href);
+      shareUrl.searchParams.delete('admin');
+      shareUrl.searchParams.set('v', Date.now().toString());
+
+      try {
+        await navigator.clipboard.writeText(shareUrl.toString());
+      } catch (error) {
+        var input = document.createElement('textarea');
+        input.value = shareUrl.toString();
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        input.remove();
+      }
+
+      var originalText = button.textContent;
+      button.textContent = 'Đã copy link mới!';
+      setTimeout(function () { button.textContent = originalText; }, 1800);
+    });
+
+    document.body.appendChild(button);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addPreviewCopyButton);
+  } else {
+    addPreviewCopyButton();
+  }
+})();
+</script>
+<!-- preview-copy-link:end -->
 </body>
 </html>

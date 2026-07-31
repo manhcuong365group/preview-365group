@@ -1375,5 +1375,63 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   // SSOT runtime validation: never alters user UI; reports mismatches to dataLayer/console.
   const fmtVND=v=>String(v).replace(/\B(?=(\d{3})+(?!\d))/g,'.');const issues=[];Object.entries(packages).forEach(([key,p])=>{const link=root.querySelector('.pkg-card a[href="'+p.url+'"]');const card=link?link.closest('.pkg-card'):null;Object.entries(p.prices).forEach(([veh,val])=>{const s=fmtVND(val);if(card){if(!card.textContent.includes(s))issues.push(key+'.'+veh+':dom');}else if(!root.textContent.includes(s))issues.push(key+'.'+veh+':page');});});const expectedSchema={};Object.entries(packages).forEach(([k2,p])=>{const v=Object.values(p.prices);expectedSchema[p.url]={key:k2,pair:Math.min.apply(null,v)+'-'+Math.max.apply(null,v)};});let offerSeen=0;document.querySelectorAll('script[type="application/ld+json"]').forEach(sc=>{try{const walk=o=>{if(o&&typeof o==='object'){if(o['@type']==='AggregateOffer'&&o.url){offerSeen++;const exp=expectedSchema[o.url];if(!exp)issues.push('schema:url-la');else if(Number(o.lowPrice)+'-'+Number(o.highPrice)!==exp.pair)issues.push(exp.key+':schema.pair');}Object.values(o).forEach(walk);}};walk(JSON.parse(sc.textContent));}catch(e){}});if(offerSeen<Object.keys(expectedSchema).length)issues.push('schema:thieu-offer('+offerSeen+'/'+Object.keys(expectedSchema).length+')');if(issues.length){console.error('SSOT mapping mismatch',issues);track('ssot_validation_error',{issues:issues.join(',')});}else track('ssot_validation_pass',{version:ssot.version,mode:'mapping'});
 })();
-</script></body>
+</script>
+<!-- preview-copy-link:start -->
+<script>
+(function () {
+  'use strict';
+
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('admin') !== '1') return;
+
+  function addPreviewCopyButton() {
+    if (document.getElementById('preview-copy-link-button')) return;
+
+    var button = document.createElement('button');
+    button.id = 'preview-copy-link-button';
+    button.type = 'button';
+    button.textContent = 'Copy link gửi duyệt';
+    button.setAttribute('aria-label', 'Sao chép link mới không dùng cache');
+    button.style.cssText = [
+      'position:fixed', 'right:16px', 'bottom:16px', 'z-index:2147483647',
+      'border:0', 'border-radius:999px', 'padding:12px 18px',
+      'background:#1667d9', 'color:#fff', 'font:600 14px/1.2 Arial,sans-serif',
+      'box-shadow:0 4px 16px rgba(0,0,0,.25)', 'cursor:pointer'
+    ].join(';');
+
+    button.addEventListener('click', async function () {
+      var shareUrl = new URL(window.location.href);
+      shareUrl.searchParams.delete('admin');
+      shareUrl.searchParams.set('v', Date.now().toString());
+
+      try {
+        await navigator.clipboard.writeText(shareUrl.toString());
+      } catch (error) {
+        var input = document.createElement('textarea');
+        input.value = shareUrl.toString();
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        input.remove();
+      }
+
+      var originalText = button.textContent;
+      button.textContent = 'Đã copy link mới!';
+      setTimeout(function () { button.textContent = originalText; }, 1800);
+    });
+
+    document.body.appendChild(button);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addPreviewCopyButton);
+  } else {
+    addPreviewCopyButton();
+  }
+})();
+</script>
+<!-- preview-copy-link:end -->
+</body>
 </html>
