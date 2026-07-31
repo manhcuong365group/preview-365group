@@ -10,7 +10,9 @@
   <meta name="description" content="Hồ sơ Nguyễn Quang Đạo, Giám đốc điều hành Auto365.vn - Trụ Sở Chính, phụ trách rà soát kỹ thuật nội dung phụ kiện điện tử ô tô trong phạm vi được phân công.">
   <link rel="canonical" href="https://auto365.vn/tac-gia/nguyen-quang-dao">
   <meta name="robots" content="noindex,nofollow,noarchive,max-image-preview:large">
-  <meta name="auto365-build-id" content="NQD-V3-20260730">
+  <meta name="auto365-build-id" content="NQD-PROFILE-V3.1">
+  <meta name="auto365-build-sha" content="dcfc7cc01956ce03284d319f954adad0fd178927c14d3f3dc766225ec1271745">
+  <meta name="auto365-release-status" content="hold-noindex">
 
   <meta property="og:locale" content="vi_VN">
   <meta property="og:type" content="profile">
@@ -18,7 +20,11 @@
   <meta property="og:title" content="Nguyễn Quang Đạo | Phụ trách kỹ thuật phụ kiện ô tô Auto365">
   <meta property="og:description" content="Vai trò và phạm vi rà soát kỹ thuật nội dung phụ kiện điện tử ô tô của Nguyễn Quang Đạo tại Auto365.vn - Trụ Sở Chính.">
   <meta property="og:url" content="https://auto365.vn/tac-gia/nguyen-quang-dao">
+  <!-- TODO khi deploy: doi 2 URL anh duoi day sang duong dan that tren CDN/CMS cua auto365.vn -->
+  <meta property="og:image" content="https://auto365.vn/tac-gia/nguyen-quang-dao/assets/nguyen-quang-dao-portrait.jpg">
+  <meta property="og:image:alt" content="Chân dung Nguyễn Quang Đạo, Giám đốc điều hành Auto365.vn - Trụ Sở Chính">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://auto365.vn/tac-gia/nguyen-quang-dao/assets/nguyen-quang-dao-portrait.jpg">
 
   <script type="application/ld+json">
   {
@@ -52,6 +58,13 @@
         "url": "https://auto365.vn/tac-gia/nguyen-quang-dao",
         "jobTitle": "Giám đốc điều hành",
         "description": "Giám đốc điều hành Auto365.vn - Trụ Sở Chính, phụ trách rà soát kỹ thuật các nội dung phụ kiện điện tử ô tô thuộc phạm vi được phân công.",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://auto365.vn/tac-gia/nguyen-quang-dao#primaryimage",
+          "url": "https://auto365.vn/tac-gia/nguyen-quang-dao/assets/nguyen-quang-dao-portrait.jpg",
+          "contentUrl": "https://auto365.vn/tac-gia/nguyen-quang-dao/assets/nguyen-quang-dao-portrait.jpg",
+          "caption": "Chân dung Nguyễn Quang Đạo, Giám đốc điều hành Auto365.vn - Trụ Sở Chính"
+        },
         "worksFor": {"@id": "https://auto365.vn/#organization"}
       },
       {
@@ -87,8 +100,7 @@
         "@id": "https://auto365.vn/tac-gia/nguyen-quang-dao#breadcrumb",
         "itemListElement": [
           {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://auto365.vn/"},
-          {"@type": "ListItem", "position": 2, "name": "Tác giả & chuyên gia", "item": "https://auto365.vn/tac-gia"},
-          {"@type": "ListItem", "position": 3, "name": "Nguyễn Quang Đạo", "item": "https://auto365.vn/tac-gia/nguyen-quang-dao"}
+          {"@type": "ListItem", "position": 2, "name": "Nguyễn Quang Đạo", "item": "https://auto365.vn/tac-gia/nguyen-quang-dao"}
         ]
       }
     ]
@@ -250,6 +262,7 @@
     .portrait-shell::after { content: ""; position: absolute; inset: auto -12% -17% auto; width: 90%; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.14); border-radius: 50%; }
     .portrait-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; z-index: 2; }
     .portrait-img[hidden] { display: none; }
+    .monogram[hidden] { display: none; }
     .monogram { position: absolute; inset: 0; z-index: 1; display: grid; place-items: center; color: rgba(255,255,255,.96); font-size: clamp(112px, 15vw, 178px); font-weight: 950; letter-spacing: -.095em; }
     .monogram span { position: relative; z-index: 2; text-shadow: 0 22px 55px rgba(0,0,0,.35); }
     .monogram::after { content: ""; position: absolute; width: 54%; aspect-ratio: .72; border-radius: 48% 48% 32% 32%; background: linear-gradient(180deg, rgba(255,255,255,.15), rgba(255,255,255,.03)); filter: blur(.2px); }
@@ -353,10 +366,10 @@
     .timeline-card p { color: var(--muted); }
     .source-type { display: inline-flex; align-items: center; gap: 6px; margin-top: 8px; color: var(--muted); font-size: 12px; font-weight: 800; }
 
-    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
     .gallery-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
-    .gallery-card img { width: 100%; height: auto; }
-    .gallery-card figcaption { min-height: 56px; display: flex; align-items: center; padding: 14px 18px; color: var(--ink); font-size: 14px; font-weight: 600; line-height: 1.45; }
+    .gallery-card img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; }
+    .gallery-card figcaption { min-height: 68px; display: flex; align-items: center; padding: 14px 18px; color: var(--ink); font-size: 14px; font-weight: 600; line-height: 1.45; }
 
     .case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .case-card { margin: 0; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); }
@@ -463,8 +476,12 @@
       .source-card { left: -20px; }
       .scope-grid { grid-template-columns: 1fr 1fr; }
       .scope-card:last-child { grid-column: 1 / -1; }
-      .article-grid, .gallery-grid, .case-grid, .insight-grid { grid-template-columns: 1fr 1fr; }
+      .article-grid, .case-grid, .insight-grid { grid-template-columns: 1fr 1fr; }
+      .gallery-grid { gap: 14px; }
       .article-card:first-child { grid-column: span 2; }
+    }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
     }
     @media (max-width: 820px) {
       :root { --header-height: 64px; }
@@ -563,7 +580,6 @@
     <div class="container breadcrumbs" aria-label="Breadcrumb">
       <ol>
         <li><a href="https://auto365.vn/">Trang chủ</a></li>
-        <li><a href="https://auto365.vn/tac-gia">Tác giả & chuyên gia</a></li>
         <li aria-current="page">Nguyễn Quang Đạo</li>
       </ol>
     </div>
@@ -597,7 +613,8 @@
 
         <figure class="profile-figure">
           <div class="portrait-shell">
-            <img class="portrait-img" src="assets/nguyen-quang-dao-portrait.jpg" width="1600" height="2000" alt="Chân dung Nguyễn Quang Đạo tại Auto365.vn - Trụ Sở Chính" fetchpriority="high">
+            <img class="portrait-img" id="portraitImage" src="assets/nguyen-quang-dao-portrait.jpg" width="1600" height="1066" alt="Chân dung Nguyễn Quang Đạo tại Auto365.vn - Trụ Sở Chính" fetchpriority="high">
+            <div class="monogram" id="portraitFallback" aria-hidden="true" hidden><span>NQĐ</span></div>
             <div class="portrait-topline">
             <span class="portrait-index">Hồ sơ chuyên môn</span>
             <span class="verified-chip">
@@ -665,7 +682,7 @@
               <footer>Ưu tiên sự tương thích, tính ổn định và khả năng nghiệm thu trước khi bàn giao.</footer>
             </aside>
             <figure class="overview-photo">
-              <img src="assets/nguyen-quang-dao-auto365-store.jpg" width="1600" height="1200" loading="lazy" alt="Auto365.vn - Trụ Sở Chính">
+              <img src="assets/nguyen-quang-dao-auto365-tru-so-chinh.jpg" width="1600" height="1067" loading="lazy" alt="Auto365.vn - Trụ Sở Chính, không gian 3M Pro Shop">
               <figcaption>Auto365.vn - Trụ Sở Chính.</figcaption>
             </figure>
           </div>
@@ -724,7 +741,7 @@
 
     <section class="section" id="chung-nhan" data-section>
       <div class="container credential-layout">
-        <img class="credential-image" src="assets/nguyen-quang-dao-3m-preferred-installer.jpg" width="3508" height="2480" loading="lazy" alt="Chứng nhận 3M Preferred Installer dành cho Nguyễn Quang Đạo">
+        <img class="credential-image" src="assets/nguyen-quang-dao-3m-preferred-installer.jpg" width="1600" height="1131" loading="lazy" alt="Chứng nhận 3M Preferred Installer dành cho Nguyễn Quang Đạo">
         <div class="credential-copy">
           <p class="eyebrow">Chứng nhận chuyên môn</p>
           <h2>3M Preferred Installer</h2>
@@ -816,28 +833,36 @@
 
         <div class="gallery-grid">
           <figure class="gallery-card">
-            <img src="assets/nguyen-quang-dao-xlight-2024.jpg" width="1600" height="1200" loading="lazy" alt="Nguyễn Quang Đạo tại hoạt động của thương hiệu X-Light">
-            <figcaption>Hoạt động tại X-Light.</figcaption>
+            <img src="assets/nguyen-quang-dao-xlight-2024.jpg" width="1600" height="1066" loading="lazy" alt="Nguyễn Quang Đạo tại khu trưng bày thương hiệu X-Light">
+            <figcaption>Nguyễn Quang Đạo tại khu trưng bày X-Light.</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/nguyen-quang-dao-khach-hang.jpg" width="1600" height="1200" loading="lazy" alt="Nguyễn Quang Đạo cùng khách hàng tại Auto365.vn">
-            <figcaption>Hoạt động tại Auto365.vn.</figcaption>
+            <img src="assets/nguyen-quang-dao-khach-hang.jpg" width="1600" height="1066" loading="lazy" alt="Trao đổi cùng khách hàng tại Auto365.vn - Trụ Sở Chính">
+            <figcaption>Trao đổi cùng khách hàng tại Auto365.vn.</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/nguyen-quang-dao-3m-event.jpg" width="1600" height="1200" loading="lazy" alt="Nguyễn Quang Đạo tại sự kiện của Auto365 và 3M">
-            <figcaption>Sự kiện 3M tại Auto365.vn.</figcaption>
+            <img src="assets/nguyen-quang-dao-3m-event.jpg" width="1600" height="1066" loading="lazy" alt="Lễ trao chứng nhận 3M Pro Shop và 3M Training Center tại Auto365">
+            <figcaption>Lễ trao chứng nhận 3M Pro Shop &amp; 3M Training Center.</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/nguyen-quang-dao-xlight-team.jpg" width="1600" height="1200" loading="lazy" alt="Nguyễn Quang Đạo cùng đội ngũ tại hoạt động của X-Light">
-            <figcaption>Hoạt động cùng đội ngũ X-Light.</figcaption>
+            <img src="assets/nguyen-quang-dao-xlight-team.jpg" width="1600" height="1066" loading="lazy" alt="Đội ngũ Auto365 cùng hoạt động của thương hiệu X-Light">
+            <figcaption>Đội ngũ Auto365 trong hoạt động cùng X-Light.</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/nguyen-quang-dao-auto365-store.jpg" width="1600" height="1200" loading="lazy" alt="Không gian Auto365.vn - Trụ Sở Chính">
-            <figcaption>Auto365.vn - Trụ Sở Chính.</figcaption>
+            <img src="assets/nguyen-quang-dao-3m-proshop-qua-tet.jpg" width="1600" height="1139" loading="lazy" alt="Nguyễn Quang Đạo cùng đối tác tại không gian 3M Pro Shop, Auto365.vn - Trụ Sở Chính">
+            <figcaption>Anh Quang Đạo cùng đối tác tại không gian 3M Pro Shop.</figcaption>
           </figure>
           <figure class="gallery-card">
             <img src="assets/nguyen-quang-dao-3m-preferred-installer-award.jpg" width="1600" height="1066" loading="lazy" alt="Nguyễn Quang Đạo nhận ghi nhận 3M Preferred Installer tại Auto365.vn">
-            <figcaption>Trao ghi nhận 3M Preferred Installer.</figcaption>
+            <figcaption>Nhận chứng nhận 3M Preferred Installer.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/nguyen-quang-dao-tri-an-he-thong-2022.jpg" width="1600" height="1067" loading="lazy" alt="Sự kiện Tri ân hệ thống Auto365.vn, vinh danh đại lý xuất sắc 2022">
+            <figcaption>Sự kiện tri ân hệ thống Auto365.vn.</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/nguyen-quang-dao-vinh-danh-quan-ly-2024.jpg" width="1600" height="1067" loading="lazy" alt="Chương trình Vinh danh và thưởng Tết quản lý ưu tú - đóng góp của năm 2024 tại Auto365.vn">
+            <figcaption>Chương trình vinh danh quản lý năm 2024.</figcaption>
           </figure>
         </div>
       </div>
@@ -917,34 +942,34 @@
             <button class="filter-btn" type="button" data-filter="sensor">Cảm biến</button>
             <button class="filter-btn" type="button" data-filter="electric">Phụ kiện điện</button>
           </div>
-          <span class="content-count" id="contentCount">4 bài có thông tin rà soát · 1 chủ đề liên quan</span>
+        <span class="content-count" id="contentCount">5 bài có thông tin rà soát</span>
         </div>
 
         <div class="article-grid" id="articleGrid">
           <article class="article-card" data-category="camera360 android">
             <div class="article-top"><span class="article-category">Camera 360</span><span class="status-scope reviewed">Đã có thông tin rà soát</span></div>
-            <h3>Camera 360 tích hợp màn hình Android khi lái xe vào khu du lịch</h3>
+          <h3>Camera 360 tích hợp màn hình Android: Hỗ trợ quan sát khi đi du lịch</h3>
             <p>Góc nhìn đáng lưu ý: khả năng tương thích, góc quan sát, hiệu chuẩn và kết nối màn hình.</p>
             <a class="article-link" href="https://auto365.vn/camera-360-tich-hop-man-hinh-android-tro-thu-dac-luc-khi-lai-xe-vao-khu-du-lich">Đọc nội dung ↗</a>
           </article>
 
           <article class="article-card" data-category="camera360 android">
             <div class="article-top"><span class="article-category">Android + Camera 360</span><span class="status-scope reviewed">Đã có thông tin rà soát</span></div>
-            <h3>Lợi ích khi lắp màn hình Android liền Camera 360 cho tài xế mới</h3>
+          <h3>Màn hình Android liền camera 360 cho tài xế mới: Lợi ích và lưu ý</h3>
             <p>Góc nhìn đáng lưu ý: hỗ trợ lái, độ trễ hình ảnh và thao tác sử dụng hằng ngày.</p>
             <a class="article-link" href="https://auto365.vn/loi-ich-khi-lap-man-hinh-android-lien-camera-360-cho-tai-xe-moi">Đọc nội dung ↗</a>
           </article>
 
           <article class="article-card" data-category="camera360">
             <div class="article-top"><span class="article-category">Camera 360</span><span class="status-scope reviewed">Đã có thông tin rà soát</span></div>
-            <h3>Tích hợp camera 360 độ vào màn hình zin</h3>
+          <h3>Tích hợp camera 360 độ vào màn hình zin: Quan sát toàn cảnh an toàn</h3>
             <p>Góc nhìn đáng lưu ý: giao tiếp với màn hình nguyên bản, bộ giải mã, camera zin và khả năng hoàn nguyên.</p>
             <a class="article-link" href="https://auto365.vn/tich-hop-camera-360-do-vao-man-hinh-zin-quan-sat-toan-canh-an-toan">Đọc nội dung ↗</a>
           </article>
 
-          <article class="article-card" data-category="sensor electric">
-            <div class="article-top"><span class="article-category">Cảm biến</span><span class="status-scope">Chủ đề liên quan</span></div>
-            <h3>Cảm biến áp suất lốp và vai trò trên xe</h3>
+        <article class="article-card" data-category="sensor electric">
+          <div class="article-top"><span class="article-category">Cảm biến</span><span class="status-scope reviewed">Đã có thông tin rà soát</span></div>
+          <h3>Cảm biến áp suất lốp: Công dụng, các loại TPMS và cách chọn phù hợp</h3>
             <p>Góc nhìn đáng lưu ý: loại cảm biến, tương thích van, ngưỡng cảnh báo, pin và cách sử dụng.</p>
             <a class="article-link" href="https://auto365.vn/cam-bien-ap-suat-lop-phu-kien-nho-nhung-vai-tro-cuc-ky-quan-trong-cho-moi-dong-xe">Đọc nội dung ↗</a>
           </article>
@@ -1027,7 +1052,7 @@
     </div>
   </footer>
 
-  <noscript><div class="noscript">Trang vẫn hiển thị đầy đủ khi tắt JavaScript. Bộ lọc nội dung và biểu mẫu dạng hộp thoại sẽ không hoạt động.</div></noscript>
+  <noscript><div class="noscript">Trang vẫn hiển thị đầy đủ khi tắt JavaScript. Riêng bộ lọc chủ đề ở mục Nội dung chuyên môn sẽ không hoạt động.</div></noscript>
 
   <script>
     (() => {
@@ -1101,7 +1126,7 @@
             card.hidden = !show;
             if (show) visible += 1;
           });
-          count.textContent = `${visible} nội dung`;
+          count.textContent = `${visible} bài có thông tin rà soát`;
         });
       });
 

@@ -35,3 +35,13 @@ review-builder/dist/
 review-builder/.cache/
 
 
+
+# Anh goc/khong dung - giu local, khong publish len preview public
+**/assets/_unused/
+
+# Tai lieu noi bo - khong publish len preview public
+**/CMS_PATCH_*.md
+**/Lenh_Fix_*
+**/README_*_Runbook.txt
+**/*_HOLD.html
+*.local.json
