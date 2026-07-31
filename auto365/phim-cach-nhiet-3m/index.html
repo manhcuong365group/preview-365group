@@ -204,8 +204,9 @@
     /* Verify callout — dưới process strip */
     .warranty-block{display:grid;gap:16px;padding:20px;border:1px solid var(--border);border-radius:16px;background:var(--chip-card)}
     @media(min-width:768px){.warranty-block{grid-template-columns:1fr 1.4fr;gap:24px;align-items:center}}
-    .warranty-img{border-radius:12px;overflow:hidden;aspect-ratio:16/9;background:#f5f5f5}
+    .warranty-img{border-radius:12px;overflow:hidden;aspect-ratio:1400/1025;background:#f5f5f5}
     .warranty-img img{width:100%;height:100%;object-fit:cover;display:block}
+    .warranty-cap{font-size:11px;color:var(--muted);line-height:1.5;margin:8px 0 0}
     .warranty-content h3{font-size:16px;font-weight:600;margin:0}
     .warranty-content p{font-size:13px;color:var(--muted);margin:8px 0 0}
     .warranty-content ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
@@ -392,7 +393,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="mt-4 rounded-xl p-4 text-sm" id="result-alt" style="background:var(--a365-black);color:#fff"</div>
 </div>
 <div aria-label="Nhận báo giá theo model xe" class="rounded-2xl border bg-white p-5" id="quote-panel" role="region">
-<h3 class="text-xl font-medium">Nhận báo giá theo đúng model xe</h3>
+<h3 class="text-xl font-medium">Nhận báo giá theo model xe của bạn</h3>
 <p class="mt-2 text-sm text-[var(--muted)]">Cấu hình vừa chọn hiển thị bên dưới. Cố vấn xác nhận từng mã phim theo kính nguyên bản trước khi báo giá chính thức.</p>
 <div class="lead-fallback mt-4" id="lead-fallback">
 <div class="text-sm text-[var(--muted)]">Cấu hình đang chọn</div>
@@ -603,7 +604,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="show-more-wrap">
 <button class="show-more-btn" data-show-more="" type="button">Xem thêm 12 xe khác</button>
 </div>
-<p class="text-sm text-[var(--muted)]">Ngoài 18 model hiển thị, Auto365 cũng tư vấn cấu hình 3M cho Toyota Vios, Ford Ranger, Suzuki, Peugeot, Mercedes-Benz và Audi. Gọi <a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">0365 365 365</a> để nhận cấu hình theo đúng model xe.</p>
+<p class="text-sm text-[var(--muted)]">Ngoài 18 model hiển thị, Auto365 cũng tư vấn cấu hình 3M cho Toyota Vios, Ford Ranger, Suzuki, Peugeot, Mercedes-Benz và Audi. Gọi <a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">0365 365 365</a> để nhận cấu hình theo model xe của bạn.</p>
 <div class="read-more-links">
 <h4>Đọc thêm — bài chuyên đề &amp; case bổ sung</h4>
 <ul>
@@ -663,8 +664,11 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </ol>
 <p class="text-sm text-[var(--muted)]" data-answer="">Thời gian dán phim cách nhiệt trọn xe thường <strong class="text-[var(--text)]">khoảng 2–4 giờ</strong>. Xe có phim cũ, nhiều keo, cửa sổ trời panorama, diện tích kính lớn hoặc yêu cầu xử lý đặc biệt có thể cần thêm thời gian sau khi kiểm tra thực tế.</p>
 <div class="warranty-block">
+<div class="warranty-img-wrap">
 <div class="warranty-img">
-<img alt="Đo kiểm bằng transmission meter 3M — so sánh VLT/IRR/UVR trên kính TRƯỚC DÁN và SAU DÁN phim cách nhiệt 3M tại Auto365" decoding="async" fetchpriority="low" height="540" loading="lazy" src="hinh/verify-transmission-meter.jpg" width="960"/>
+<img alt="Đo kiểm bằng transmission meter 3M tại Auto365 — kính lái trước khi dán đo VLT 76%, IRR 64%, UVR 99%; sau khi dán phim 3M Crystalline CR BLK 50 đo VLT 54%, IRR 98%, UVR 100%" decoding="async" fetchpriority="low" height="1025" loading="lazy" src="hinh/do-thong-so-truoc-sau-cr-blk-50.jpg" width="1400"/>
+</div>
+<p class="warranty-cap">Số đo thực tế trên một xe cụ thể bằng transmission meter tại Auto365 — không thay thế thông số TDS của 3M. Kết quả thay đổi theo kính nguyên bản, vị trí kính, thiết bị đo và điều kiện nghiệm thu.</p>
 </div>
 <div class="warranty-content">
 <h3>Đảm bảo dán đúng phim 3M chính hãng</h3>
@@ -831,7 +835,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="pkg-price-row"><span>SUV / MPV</span><span>18.300.000đ</span></div>
 </div>
 <div class="pkg-cta">
-<a class="a365-text mb-2 block text-center text-sm font-medium" href="https://auto365.vn/phim-cach-nhiet-3m-crystalline-cr-blk">Xem cấu hình và giá CR BLK PRO →</a>
+<a class="a365-text mb-2 block text-center text-sm font-medium" href="https://auto365.vn/phim-cach-nhiet-3m-crystalline-cr-blk">Xem dòng Crystalline CR BLK →</a>
 <button aria-controls="quote-panel" aria-expanded="false" class="open-quote a365-bg rounded-lg" data-package-budget="over15" data-package-key="crystalline-cr-blk-pro" data-package-name="3M Crystalline CR BLK PRO" data-package-need="premium" data-track="package_quote_click" type="button">Nhận báo giá gói này</button>
 </div>
 </article>
@@ -977,7 +981,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
 <div>
 <p class="text-sm font-medium uppercase tracking-wider text-white/60">Nhận tư vấn theo xe</p>
-<h2 class="mt-2 text-2xl font-medium">Nhận cấu hình theo đúng model xe.</h2>
+<h2 class="mt-2 text-2xl font-medium">Nhận cấu hình theo model xe của bạn.</h2>
 <p class="mt-3 max-w-2xl text-white/70">Gửi model, nhu cầu đi đêm, cửa sổ trời, phim cũ và ngân sách. Cố vấn xác nhận từng mã phim trước khi đặt lịch.</p>
 </div>
 <div class="flex flex-col gap-3 sm:flex-row md:flex-col">
@@ -1033,7 +1037,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <tr><th class="px-3 py-2 font-medium">Tiêu chí</th><th class="px-3 py-2 font-medium">3M (dán tại Auto365)</th><th class="px-3 py-2 font-medium">V-Kool</th><th class="px-3 py-2 font-medium">LLumar</th></tr>
 </thead>
 <tbody class="divide-y">
-<tr><td class="px-3 py-2 font-medium">Công nghệ tiêu biểu</td><td class="px-3 py-2 text-[var(--muted)]">Dòng Crystalline: đa lớp nano quang học hơn 200 lớp, chặn đến 99,9% UV, loại bỏ đến 68% hồng ngoại qua kính*. Dòng Ceramic NR/IR: công nghệ ceramic, 3M công bố thiết kế không kim loại*.</td><td class="px-3 py-2 text-[var(--muted)]">Thương hiệu lâu năm tại thị trường Việt Nam</td><td class="px-3 py-2 text-[var(--muted)]">Thuộc hệ thống thương hiệu quốc tế, nhiều dòng theo phân khúc</td></tr>
+<tr><td class="px-3 py-2 font-medium">Công nghệ tiêu biểu</td><td class="px-3 py-2 text-[var(--muted)]">Dòng Crystalline CR BLK: chặn đến 99,9% tia UV, loại bỏ đến 98% tia hồng ngoại (IRR)*. Dòng Ceramic IR: 3M công bố thiết kế không kim loại, chặn đến 99,9% UV*. Dòng Ceramic NR: chặn đến 99% UV, cản đến 68% tổng năng lượng mặt trời (TSER)*.</td><td class="px-3 py-2 text-[var(--muted)]">Thương hiệu lâu năm tại thị trường Việt Nam</td><td class="px-3 py-2 text-[var(--muted)]">Thuộc hệ thống thương hiệu quốc tế, nhiều dòng theo phân khúc</td></tr>
 <tr><td class="px-3 py-2 font-medium">Kính lái &amp; đi đêm</td><td class="px-3 py-2 text-[var(--muted)]">Mỗi mã có VLT/TSER/IRR đo trên Auto 75 Glass — tra đúng số trước khi chọn</td><td class="px-3 py-2 text-[var(--muted)]">Có dòng riêng cho kính lái theo công bố của hãng</td><td class="px-3 py-2 text-[var(--muted)]">Có dòng riêng theo mức truyền sáng theo công bố của hãng</td></tr>
 <tr><td class="px-3 py-2 font-medium">Dải giá tại Auto365</td><td class="px-3 py-2 text-[var(--muted)]">5,9–18,3 triệu trọn xe, đã gồm công thi công</td><td class="px-3 py-2 text-[var(--muted)]">Theo bảng giá của đại lý phân phối</td><td class="px-3 py-2 text-[var(--muted)]">Theo bảng giá của đại lý phân phối</td></tr>
 <tr><td class="px-3 py-2 font-medium">Bảo hành &amp; tra cứu</td><td class="px-3 py-2 text-[var(--muted)]">Điện tử lên đến 10 năm; tự tra cứu online bằng mã serial tại cổng chính thức 3M</td><td class="px-3 py-2 text-[var(--muted)]">Theo chính sách hãng tại đại lý ủy quyền</td><td class="px-3 py-2 text-[var(--muted)]">Theo chính sách hãng tại đại lý ủy quyền</td></tr>
@@ -1041,7 +1045,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </tbody>
 </table>
 </div>
-<p class="mt-2 text-xs text-[var(--muted)]">* Thông số 3M theo 3M™ Automotive Window Film Crystalline™ Series — TDS Revision E, May 2024. Thông tin về V-Kool và LLumar theo công bố công khai của từng hãng, chưa đối chiếu tài liệu kỹ thuật gốc.</p>
+<p class="mt-2 text-xs text-[var(--muted)]">* Thông số 3M theo TDS từng dòng: Crystalline™ Series — Revision E, May 2024; Ceramic IR Series — Revision B, July 2021; Ceramic Nano Reflective Series — Revision A, January 2026; đo trên Auto 75 Glass. Thông tin về V-Kool và LLumar theo công bố công khai của từng hãng, chưa đối chiếu tài liệu kỹ thuật gốc.</p>
 <p class="mt-3 text-sm text-[var(--muted)]">Mỗi hãng có định vị riêng; so sánh chính xác cần cùng điều kiện đo và cùng phân khúc giá. Xem phân tích chi tiết hơn trong Hub Phim cách nhiệt.</p>
 <a class="a365-text mt-2 inline-block text-sm font-medium" href="https://auto365.vn/phim-cach-nhiet">Xem so sánh các hãng phim cách nhiệt →</a>
 </div>
