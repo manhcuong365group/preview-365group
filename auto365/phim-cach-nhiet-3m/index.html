@@ -119,6 +119,9 @@
     .pkg-card .pkg-cta{margin-top:auto;padding-top:12px}
     .pkg-card .pkg-cta button{width:100%;padding:8px 14px;font-size:13px;font-weight:500}
     /* 5 mã kính lái — dải thẻ đều nhau 1 hàng, cuộn ngang trên mobile */
+    .pricestrip-grid{grid-template-columns:repeat(1,minmax(0,1fr))}
+    @media(min-width:640px){.pricestrip-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:1024px){.pricestrip-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     .wsfilm-strip{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
     .wsfilm-strip > *{height:100%}
     @media(max-width:900px){
@@ -127,6 +130,10 @@
     }
     /* Model filter section (theo hãng và model) */
     .filter-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+    @media(max-width:639px){
+      .filter-tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;padding-bottom:4px}
+      .filter-tabs .filter-tab{flex:0 0 auto;scroll-snap-align:start}
+    }
     .filter-tab{padding:6px 14px;border:1px solid var(--border);border-radius:999px;font-size:12.5px;font-weight:500;cursor:pointer;background:white;color:var(--text);transition:all .15s}
     .filter-tab:hover{border-color:var(--a365-red)}
     .filter-tab.active{background:var(--a365-black);color:white;border-color:var(--a365-black)}
@@ -404,7 +411,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h3 class="font-medium">Xem nhanh giá 6 gói</h3>
 <a class="a365-text text-sm font-medium" href="#pricing">Bảng giá chi tiết theo nhóm xe →</a>
 </div>
-<div class="mt-3 grid grid-cols-2 gap-3 lg:grid-cols-3">
+<div class="pricestrip-grid mt-3 grid gap-3">
 <a class="flex items-center justify-between gap-3 rounded-xl border p-3" href="#pricing"><div class="min-w-0"><div class="text-sm font-medium">3M Ceramic Hybrid</div><div class="mt-1 text-sm text-[var(--muted)]">Kính lái NR 35 · VLT 35%</div></div><div class="shrink-0 whitespace-nowrap text-right font-medium a365-text">từ 5,9 triệu</div></a>
 <a class="flex items-center justify-between gap-3 rounded-xl border p-3" href="#pricing"><div class="min-w-0"><div class="text-sm font-medium">3M Ceramic IR</div><div class="mt-1 text-sm text-[var(--muted)]">Kính lái IR 50 · VLT 50%</div></div><div class="shrink-0 whitespace-nowrap text-right font-medium a365-text">từ 7,2 triệu</div></a>
 <a class="flex items-center justify-between gap-3 rounded-xl border p-3" href="#pricing"><div class="min-w-0"><div class="text-sm font-medium">3M Crystalline Hybrid</div><div class="mt-1 text-sm text-[var(--muted)]">Kính lái CR BLK 60/50 · VLT 48–57%</div></div><div class="shrink-0 whitespace-nowrap text-right font-medium a365-text">từ 9 triệu</div></a>
