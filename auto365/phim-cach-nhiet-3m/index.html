@@ -378,7 +378,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div><div class="text-sm opacity-70">Sườn và lưng</div><div class="font-medium" id="result-side">NR 25 / NR 15 / NR 5</div></div>
 <div><div class="text-sm opacity-70">Giá tham khảo</div><div class="font-medium" id="result-price">5.900.000 VNĐ</div></div>
 <div><span>Cửa sổ trời</span><strong id="result-sunroof">Không trong gói</strong></div></div>
-<div class="mt-4 rounded-xl border bg-white p-3 text-sm" id="result-alt"></div>
+<div class="mt-4 rounded-xl border p-3 text-sm" id="result-alt" style="background:linear-gradient(135deg,var(--a365-soft),#fff);border-color:rgba(215,25,32,.3)"</div>
 </div>
 <div aria-label="Nhận báo giá theo model xe" class="rounded-2xl border bg-white p-5" id="quote-panel" role="region">
 <h3 class="text-xl font-medium">Nhận báo giá theo đúng model xe</h3>
@@ -703,7 +703,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
 <span class="viz-badge">TỐI ƯU CHI PHÍ</span>
 <h3>3M Ceramic Hybrid</h3>
-<p class="pkg-sub">Gói phối Auto365 · 365Group · dòng Ceramic NR</p>
+<p class="pkg-sub">Gói phối Auto365 · 365Group</p>
 <dl class="pkg-config">
 <div><dt>Kính lái</dt><dd>NR 35</dd></div>
 <div><dt>Sườn / lưng</dt><dd>NR 25 / NR 15 / NR 5</dd></div>
@@ -745,7 +745,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
 <span class="viz-badge">NÂNG CẤP KÍNH LÁI</span>
 <h3>3M Crystalline Hybrid</h3>
-<p class="pkg-sub">Gói phối Auto365 · 365Group · Crystalline + Ceramic NR</p>
+<p class="pkg-sub">Gói phối Auto365 · 365Group</p>
 <dl class="pkg-config">
 <div><dt>Kính lái</dt><dd>CR BLK 60 / CR BLK 50</dd></div>
 <div><dt>Sườn / lưng</dt><dd>NR 25 / NR 15 / NR 5</dd></div>
@@ -791,7 +791,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
 <span class="viz-badge">KÍNH LÁI ĐẬM HƠN</span>
 <h3>3M Crystalline Hybrid PRO</h3>
-<p class="pkg-sub">Gói phối Auto365 · 365Group · bản PRO của Crystalline Hybrid</p>
+<p class="pkg-sub">Gói phối Auto365 · 365Group</p>
 <dl class="pkg-config">
 <div><dt>Kính lái</dt><dd>CR BLK 40</dd></div>
 <div><dt>Sườn / lưng</dt><dd>NR 25 / NR 15 / NR 5</dd></div>
@@ -812,7 +812,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
 <span class="viz-badge">CẤU HÌNH CAO NHẤT</span>
 <h3>3M Crystalline CR BLK PRO</h3>
-<p class="pkg-sub">Gói phối Auto365 · 365Group · bản PRO của CR BLK</p>
+<p class="pkg-sub">Gói phối Auto365 · 365Group</p>
 <dl class="pkg-config">
 <div><dt>Kính lái</dt><dd>CR BLK 40</dd></div>
 <div><dt>Sườn / lưng</dt><dd>CR BLK 35 / CR BLK 15</dd></div>
@@ -1350,7 +1350,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   function render(pkgKey,vehicle,budget,a,alt=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
     q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);if(q('#result-default-note'))q('#result-default-note').remove();q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-alt');altBox.innerHTML='';
-    if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-medium uppercase tracking-wider opacity-70">Phương án đối chiếu · '+(comp.direction==='up'?'nâng cấp':'tiết kiệm')+'</div><div class="mt-1 font-medium">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1 text-[var(--muted)]">'+(diff>=0?'<strong>Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong>Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="rounded-lg border px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
+    if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-bold uppercase tracking-wider" style="color:var(--a365-red)">'+(comp.direction==='up'?'▲ Nâng cấp đề xuất':'▼ Phương án tiết kiệm')+'</div><div class="mt-1 text-base font-semibold">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1 text-[var(--muted)]">'+(diff>=0?'<strong>Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong>Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="a365-bg rounded-lg px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
     const result=q('#result');result.classList.remove('fm-pulse');void result.offsetWidth;result.classList.add('fm-pulse');
   }
   function compute(scroll=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,a);render(key,vehicle,budget,a,true);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
