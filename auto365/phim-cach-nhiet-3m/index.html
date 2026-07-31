@@ -123,10 +123,6 @@
       .wsfilm-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:6px}
       .wsfilm-strip > *{flex:0 0 76%;scroll-snap-align:start}
     }
-    @media(max-width:639px){
-      .need-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding-bottom:6px}
-      .need-strip > *{flex:0 0 78%;scroll-snap-align:start}
-    }
     /* Model filter section (theo hãng và model) */
     .filter-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
     .filter-tab{padding:6px 14px;border:1px solid var(--border);border-radius:999px;font-size:12.5px;font-weight:500;cursor:pointer;background:white;color:var(--text);transition:all .15s}
@@ -309,7 +305,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="card space-y-6 p-5 md:p-6">
 <div>
 <div class="mb-3 font-medium">1. Nhu cầu chính</div>
-<div class="need-strip grid gap-3 sm:grid-cols-2 lg:grid-cols-4" data-need-group="">
+<div class="grid grid-cols-2 gap-3 lg:grid-cols-4" data-need-group="">
 <button class="active-choice rounded-2xl border p-4 text-left" data-need="heat" type="button"><div class="font-medium">Xe nóng, lâu mát</div><div class="mt-1 text-sm text-[var(--muted)]">Ưu tiên hiệu quả toàn cabin.</div></button>
 <button class="rounded-2xl border p-4 text-left" data-need="night" type="button"><div class="font-medium">Thường đi đêm</div><div class="mt-1 text-sm text-[var(--muted)]">Ưu tiên kính lái sáng.</div></button>
 <button class="rounded-2xl border p-4 text-left" data-need="family" type="button"><div class="font-medium">Chở gia đình</div><div class="mt-1 text-sm text-[var(--muted)]">Cân bằng sáng và riêng tư.</div></button>
