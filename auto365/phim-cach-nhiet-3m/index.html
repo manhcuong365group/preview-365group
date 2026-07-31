@@ -157,11 +157,12 @@
     .show-more-btn:hover{border-color:var(--a365-red);color:var(--a365-red)}
     .read-more-links{margin-top:20px;padding:16px 20px;background:var(--chip-card);border-radius:14px}
     .read-more-links h4{font-size:13px;font-weight:600;margin-bottom:10px;letter-spacing:.02em}
-    .read-more-links ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}
-    @media(min-width:640px){.read-more-links ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .read-more-links ul{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+    @media(min-width:640px){.read-more-links ul{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 28px}}
     .read-more-links li{font-size:12.5px;line-height:1.4}
-    .read-more-links a{color:var(--a365-red);text-decoration:none}
+    .read-more-links a{display:block;color:var(--a365-red);text-decoration:none;font-weight:500}
     .read-more-links a:hover{text-decoration:underline}
+    .read-more-links span{display:block;margin-top:3px;color:var(--muted);font-size:11.5px;font-weight:400}
     /* FilmMatch pulse feedback khi compute */
     @keyframes fm-pulse{0%{box-shadow:0 0 0 0 rgba(215,25,32,.4);transform:scale(1)}50%{box-shadow:0 0 0 14px rgba(215,25,32,0);transform:scale(1.005)}100%{box-shadow:0 0 0 0 rgba(215,25,32,0);transform:scale(1)}}
     .fm-pulse{animation:fm-pulse .7s ease-out}
@@ -595,10 +596,10 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="read-more-links">
 <h4>Đọc thêm — bài chuyên đề &amp; case bổ sung</h4>
 <ul>
-<li><a href="https://auto365.vn/vinfast-vf3-dan-phim-cach-nhiet-3m-2026">VinFast VF3 dán phim cách nhiệt 3M — tổng quan 2026 →</a></li>
-<li><a href="https://auto365.vn/phim-3m-ceramic-nr-cua-so-troi-vf8-vf9">Phim Ceramic NR cho cửa sổ trời VinFast VF8 / VF9 →</a></li>
-<li><a href="https://auto365.vn/phim-cach-nhiet-cu-xuong-cap">Khi nào cần thay phim cách nhiệt cũ xuống cấp →</a></li>
-<li><a href="https://auto365.vn/phim-cach-nhiet">Hub Phim cách nhiệt ô tô — kiến thức, công nghệ &amp; so sánh các hãng →</a></li>
+<li><a href="https://auto365.vn/vinfast-vf3-dan-phim-cach-nhiet-3m-2026">VinFast VF3 dán phim cách nhiệt 3M — tổng quan 2026 →</a><span>Cấu hình, giá tham khảo và case thực tế cho VF3.</span></li>
+<li><a href="https://auto365.vn/phim-3m-ceramic-nr-cua-so-troi-vf8-vf9">Phim Ceramic NR cho cửa sổ trời VinFast VF8 / VF9 →</a><span>Chọn đúng mã phim cho cửa sổ trời panorama.</span></li>
+<li><a href="https://auto365.vn/phim-cach-nhiet-cu-xuong-cap">Khi nào cần thay phim cách nhiệt cũ xuống cấp →</a><span>Dấu hiệu nhận biết phim cũ bong tróc, xuống màu.</span></li>
+<li><a href="https://auto365.vn/phim-cach-nhiet">Hub Phim cách nhiệt ô tô — kiến thức, công nghệ &amp; so sánh các hãng →</a><span>Thông số kỹ thuật nền tảng và so sánh giữa các hãng.</span></li>
 </ul>
 </div>
 </section><section class="space-y-5 defer-render" id="process">
