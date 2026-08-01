@@ -211,6 +211,22 @@
     .warranty-img{border-radius:12px;overflow:hidden;aspect-ratio:1200/779;background:#f5f5f5}
     .warranty-img img{width:100%;height:100%;object-fit:cover;display:block}
     .warranty-cap{font-size:11px;color:var(--muted);line-height:1.5;margin:8px 0 0}
+    .callmap{border:1px solid var(--border);border-radius:16px;background:var(--chip-card);padding:16px 18px}
+    .callmap-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--a365-red);margin:0}
+    .callmap-grid{display:grid;gap:12px;margin-top:12px}
+    @media(min-width:640px){.callmap-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+    .callmap-item{display:flex;flex-direction:column;gap:3px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:#fff}
+    .callmap-label{font-size:12px;color:var(--muted);line-height:1.4}
+    .callmap-num{font-size:19px;font-weight:600;color:var(--a365-red);text-decoration:none;letter-spacing:.01em}
+    .callmap-note{font-size:11px;color:var(--muted);line-height:1.45}
+    .callmap-foot{font-size:11.5px;color:var(--muted);line-height:1.55;margin:12px 0 0}
+    .callmap-foot strong{color:var(--text)}
+    .metric-legend{display:grid;gap:6px 18px;margin:14px 0 0;padding:0}
+    @media(min-width:640px){.metric-legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(min-width:1024px){.metric-legend{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .metric-legend>div{display:flex;gap:7px;align-items:baseline}
+    .metric-legend dt{flex:0 0 auto;font-size:11px;font-weight:700;color:var(--a365-red);letter-spacing:.02em}
+    .metric-legend dd{margin:0;font-size:11.5px;color:var(--muted);line-height:1.45}
     .warranty-content h3{font-size:16px;font-weight:600;margin:0}
     .warranty-content p{font-size:13px;color:var(--muted);margin:8px 0 0}
     .warranty-content ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
@@ -230,8 +246,13 @@
     /* Mobile sticky CTA — chỉ mobile, hiện sau khi rời hero */
     .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;display:none;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--border);transform:translateY(120%);transition:transform .25s ease;box-shadow:0 -4px 16px rgba(0,0,0,.08)}
     .mobile-cta.show{transform:translateY(0)}
-    .mobile-cta a{flex:1;text-align:center;border-radius:12px;padding:11px 8px;font-size:13px;font-weight:600;text-decoration:none}
-    @media(max-width:768px){.mobile-cta{display:flex}}
+    .mobile-cta .mcta-btns a{flex:1;text-align:center;border-radius:12px;padding:11px 8px;font-size:13px;font-weight:600;text-decoration:none}
+    .mcta-btns{display:flex;gap:8px}
+    .mcta-sum{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px;font-size:12px;line-height:1.35;color:var(--muted);text-decoration:none;padding:2px 2px 0}
+    .mcta-sum[hidden]{display:none}
+    .mcta-sum b{color:var(--text);font-weight:600}
+    .mcta-sum .mcta-price{margin-left:auto;color:var(--a365-red);font-weight:700;white-space:nowrap}
+    @media(max-width:768px){.mobile-cta{display:flex;flex-direction:column}}
 </style>
 
 <!-- <link href="https://auto365.vn/phim-cach-nhiet-3m" rel="canonical"/> --><meta content="noindex,nofollow" name="robots"/><meta content="noindex,nofollow" name="googlebot"/><meta content="website" property="og:type"/>
@@ -946,6 +967,22 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Dán phim cách nhiệt 3M ở đâu?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Nên chọn điểm thi công có nguồn vật liệu, tư cách cung cấp dịch vụ và quy trình bảo hành được xác minh. <strong class="text-[var(--text)]">Auto365.vn - Trụ Sở Chính</strong> là điểm tư vấn và triển khai dịch vụ; <strong class="text-[var(--text)]">3M Pro Shop &amp; 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính</strong> để phục vụ trải nghiệm, đào tạo, thi công và chuẩn hóa quy trình. Hệ thống Auto365 có hơn 90 điểm; khách được hỗ trợ kết nối điểm phù hợp theo phạm vi dịch vụ từng khu vực.</p>
 </div>
+<div class="callmap">
+<p class="callmap-title">Nên gọi số nào?</p>
+<div class="callmap-grid">
+<div class="callmap-item">
+<span class="callmap-label">Đặt lịch dán phim, hỏi giá, tư vấn cấu hình</span>
+<a class="callmap-num" data-track="phone_click" href="tel:0365365365">0365 365 365</a>
+<span class="callmap-note">3M Pro Shop &amp; 3M Training Center · 4/4/3/3 Đường Số 3, Hiệp Bình</span>
+</div>
+<div class="callmap-item">
+<span class="callmap-label">Dịch vụ khác của Auto365, hỗ trợ chung</span>
+<a class="callmap-num" data-track="phone_click" href="tel:0365365911">0365 365 911</a>
+<span class="callmap-note">Auto365.vn - Trụ Sở Chính · 4/4/1/7 Đường Số 3, Hiệp Bình</span>
+</div>
+</div>
+<p class="callmap-foot">Hai điểm nằm cùng khu vực Hiệp Bình, TP. Hồ Chí Minh và thuộc cùng hệ sinh thái Auto365 — không phải hai trung tâm độc lập. Riêng phim cách nhiệt 3M, gọi <strong>0365 365 365</strong> để được xếp lịch trực tiếp.</p>
+</div>
 <div class="grid gap-4 md:grid-cols-3">
 <article class="rounded-2xl border bg-white p-5">
 <span class="viz-badge">Điểm chính</span>
@@ -1137,6 +1174,13 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Thông số theo mã phim</p>
 <h2 class="mt-1 text-2xl font-medium">Thông số 12 mã phim cách nhiệt 3M</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Bảng master ưu tiên dữ liệu hãng theo đúng điều kiện kính tham chiếu; dữ liệu thương mại và phép đo thực tế được quản lý ở mục riêng. Không dùng số đo trên phim hoặc số đo sau khi dán lên một loại kính khác để thay thế thông số TDS của hệ kính–phim.</p>
+<dl class="metric-legend">
+<div><dt>TSER</dt><dd>Hiệu quả giảm tổng năng lượng mặt trời — càng cao càng mát</dd></div>
+<div><dt>VLT</dt><dd>Độ sáng khi nhìn qua kính — càng cao kính càng sáng</dd></div>
+<div><dt>UVR</dt><dd>Mức chặn tia UV</dd></div>
+<div><dt>Giảm lóa</dt><dd>Mức hỗ trợ giảm chói theo điều kiện đo</dd></div>
+<div><dt>IRR</dt><dd>Chỉ số vùng năng lượng hồng ngoại theo dải đo của hãng</dd></div>
+</dl>
 </div>
 <div class="overflow-x-auto rounded-2xl border" style="background:#1c1917;color:#fff">
 <table class="w-full text-left text-sm">
@@ -1320,9 +1364,12 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </div>
 </div>
 </section><div aria-label="Liên hệ nhanh" class="mobile-cta" id="mobile-cta">
+<a class="mcta-sum" href="#result" hidden="" id="mcta-sum"></a>
+<div class="mcta-btns">
 <a class="a365-bg" data-track="phone_click" href="tel:0365365365">📞 Gọi</a>
 <a class="border border-current" data-track="zalo_click" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">💬 Zalo</a>
 <a class="border border-current" href="#film-match">📝 Nhận cấu hình</a>
+</div>
 </div>
 </main>
 
@@ -1362,14 +1409,16 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   function sunroofText(v){return v==='none'?'Không trong gói':v==='small'?'Khảo sát ô nhỏ, báo riêng':'Panorama — khảo sát và báo riêng';}
   function configId(vehicle,budget,codes,a){return ['FM4',state.need,vehicle,budget,slug(codes.front),a.privacy,a.sunroof].join('-').toUpperCase();}
   function comparePackage(budget,a){const i=tierOrder.indexOf(budget);const compareBudget=i<tierOrder.length-1?tierOrder[i+1]:tierOrder[i-1];return {budget:compareBudget,key:selectPackage(compareBudget,a),direction:i<tierOrder.length-1?'up':'down'};}
-  function render(pkgKey,vehicle,budget,a,alt=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
-    q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);if(q('#result-default-note'))q('#result-default-note').remove();q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
+  function render(pkgKey,vehicle,budget,a,alt=true,byUser=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a);state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].join(' | ');
+    q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);if(byUser&&q('#result-default-note'))q('#result-default-note').remove();q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);
+    (()=>{const sum=document.getElementById('mcta-sum');if(!sum||!byUser)return;const vLabel={minicar:'Minicar',sedan:'Sedan',suv:'SUV / MPV'}[vehicle]||vehicle;sum.innerHTML='<span><b>'+(pkg.shortName||pkg.name)+'</b> · '+vLabel+'</span><span class="mcta-price">'+money(price)+'</span>';sum.hidden=false;})();
+    if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-alt');altBox.innerHTML='';
     if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-bold uppercase tracking-wider" style="color:var(--a365-red)">'+(comp.direction==='up'?'▲ Nâng cấp đề xuất':'▼ Phương án tiết kiệm')+'</div><div class="mt-1 text-base font-semibold">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1" style="color:rgba(255,255,255,.72)">'+(diff>=0?'<strong style="color:#fff">Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong style="color:#fff">Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="a365-bg rounded-lg px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
     const result=q('#result');result.classList.remove('fm-pulse');void result.offsetWidth;result.classList.add('fm-pulse');
   }
-  function compute(scroll=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,a);render(key,vehicle,budget,a,true);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
-  q('#recommend')?.addEventListener('click',()=>compute(true));['#vehicle','#budget','#night-frequency','#windshield-pref','#privacy-pref','#sunroof-pref'].forEach(sel=>q(sel)?.addEventListener('change',()=>compute(false)));compute(false);
+  function compute(scroll=true,byUser=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,a);render(key,vehicle,budget,a,true,byUser);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}if(byUser)track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
+  q('#recommend')?.addEventListener('click',()=>compute(true));['#vehicle','#budget','#night-frequency','#windshield-pref','#privacy-pref','#sunroof-pref'].forEach(sel=>q(sel)?.addEventListener('change',()=>compute(false)));compute(false,false);
 
   root.querySelectorAll('.open-quote[data-package-key]').forEach(btn=>btn.addEventListener('click',()=>{const key=btn.dataset.packageKey,pkg=packages[key];if(pkg){q('#budget').value=pkg.budget;state.need=pkg.defaultNeed;root.querySelectorAll('[data-need]').forEach(x=>x.classList.toggle('active-choice',x.dataset.need===state.need));q('#night-frequency').value='auto';q('#privacy-pref').value='auto';q('#sunroof-pref').value='none';q('#windshield-pref').value=pkg.level==='pro'?'darker':(pkg.family==='ir'?'bright':'auto');render(key,q('#vehicle').value,pkg.budget,advanced(),true);}track('package_preset_select',{package_key:key,package_name:pkg?.shortName||btn.dataset.packageName});}));
 
