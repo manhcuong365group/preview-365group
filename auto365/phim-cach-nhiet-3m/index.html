@@ -231,6 +231,18 @@
     .cert-meta>div{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:baseline}
     .cert-meta dt{font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);font-weight:600}
     .cert-meta dd{margin:0;font-size:11.5px;color:var(--text);line-height:1.45}
+    .model-unknown{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:12px;color:var(--muted);cursor:pointer}
+    .model-unknown input{width:15px;height:15px;accent-color:var(--a365-red);margin:0;flex:0 0 auto}
+    .hero-support{margin:12px 0 0;font-size:13px;color:rgba(255,255,255,.6)}
+    .hero-support a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+    .tier-pick{display:grid;gap:10px;margin:0 0 4px}
+    @media(min-width:640px){.tier-pick{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .tier-pick button{display:flex;flex-direction:column;gap:3px;text-align:left;padding:13px 15px;border:1px solid var(--border);border-radius:14px;background:#fff;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
+    .tier-pick button:hover{border-color:var(--a365-red);box-shadow:0 4px 14px rgba(0,0,0,.05);transform:translateY(-1px)}
+    .tier-pick .tier-name{font-size:14px;font-weight:600;color:var(--text)}
+    .tier-pick .tier-price{font-size:13px;font-weight:700;color:var(--a365-red)}
+    .tier-pick .tier-desc{font-size:11.5px;color:var(--muted);line-height:1.45}
+    .pkg-card.tier-hl{border-color:var(--a365-red);box-shadow:0 0 0 3px rgba(215,25,32,.14)}
     .warranty-content h3{font-size:16px;font-weight:600;margin:0}
     .warranty-content p{font-size:13px;color:var(--muted);margin:8px 0 0}
     .warranty-content ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
@@ -321,7 +333,8 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="mb-2 text-sm font-medium uppercase tracking-wider text-white/65">Phim cách nhiệt ô tô 3M</p>
 <h1 class="max-w-3xl text-3xl font-medium tracking-tight md:text-5xl">Phim cách nhiệt 3M chính hãng: chọn dòng phim, cấu hình và giá theo xe</h1>
 <p class="mt-4 max-w-2xl text-white/75" data-answer="">Ba dòng phim chính — Ceramic NR, Ceramic IR và Crystalline CR BLK — phục vụ các mức nhu cầu khác nhau. FilmMatch giúp so sánh cấu hình theo xe, ngân sách, thói quen đi đêm và mức riêng tư; báo giá cuối được chốt theo kính nguyên bản và từng vị trí kính.</p>
-<div class="mt-6 flex flex-wrap gap-3"><a class="a365-bg rounded-xl px-5 py-3 font-medium" data-track="hero_filmmatch_click" href="#film-match">Chọn cấu hình trong 60 giây</a><a class="rounded-xl border border-white/40 px-5 py-3 font-medium text-white" data-track="phone_click" href="tel:0365365365">Gọi 0365 365 365</a><a class="rounded-xl border border-white/40 px-5 py-3 font-medium text-white" data-track="zalo_click" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Chat Zalo</a></div>
+<div class="mt-6 flex flex-wrap gap-3"><a class="a365-bg rounded-xl px-5 py-3 font-medium" data-track="hero_filmmatch_click" href="#film-match">Đề xuất cấu hình theo xe</a><a class="rounded-xl border border-white/40 px-5 py-3 font-medium text-white" data-track="hero_pricing_click" href="#pricing">Xem bảng giá</a></div>
+<p class="hero-support">Hoặc liên hệ trực tiếp: <a data-track="phone_click" href="tel:0365365365">Gọi 0365 365 365</a> <span aria-hidden="true">·</span> <a data-track="zalo_click" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Chat Zalo</a></p>
 </div>
 <figure style="margin:0;display:flex;flex-direction:column;align-self:stretch">
 <div style="flex:1;min-height:260px;overflow:hidden;border-radius:16px;border:1px solid rgba(255,255,255,.15);box-shadow:0 12px 34px rgba(0,0,0,.4)">
@@ -438,7 +451,8 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="mt-4 grid gap-4 md:grid-cols-2"><label>Họ và tên<input autocomplete="name" class="mt-1 w-full rounded-xl border px-3 py-3" name="customer_name" placeholder="Nguyễn Văn A (không bắt buộc)"/></label>
 <label>Số điện thoại <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-phone" name="phone" placeholder="0xxx xxx xxx" required="" type="tel"/></label></div>
 <div class="mt-4 grid gap-4 md:grid-cols-3"><label>Hãng xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-brand" name="brand" placeholder="VinFast" list="brand-list" required=""/></label>
-<label>Model xe<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-model" name="model" placeholder="VF8"/></label>
+<div><label>Model xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-model" name="model" placeholder="VF8" required=""/></label>
+<label class="model-unknown"><input id="lead-model-unknown" type="checkbox"/><span>Chưa xác định model</span></label></div>
 <label>Tỉnh/thành<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-province" name="province" placeholder="TP. Hồ Chí Minh (không bắt buộc)"/></label></div>
 <datalist id="brand-list"><option value="VinFast"></option><option value="Toyota"></option><option value="Honda"></option><option value="Mazda"></option><option value="Hyundai"></option><option value="Kia"></option><option value="Ford"></option><option value="Mitsubishi"></option><option value="Nissan"></option><option value="Suzuki"></option><option value="Mercedes-Benz"></option><option value="BMW"></option><option value="Audi"></option><option value="Lexus"></option><option value="Volvo"></option><option value="Peugeot"></option><option value="MG"></option><option value="Isuzu"></option><option value="Subaru"></option><option value="Porsche"></option><option value="Land Rover"></option><option value="Chevrolet"></option><option value="Volkswagen"></option></datalist>
 <div class="mt-4"><label class="block">Cấu hình gợi ý<input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-config" name="config" readonly=""/></label></div>
@@ -743,6 +757,11 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Giá theo nhóm xe</p>
 <h2 class="mt-1 text-2xl font-medium">Dán phim cách nhiệt 3M giá bao nhiêu?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Dán phim 3M trọn xe có giá tham khảo từ 5,9 triệu (Ceramic Hybrid cho minicar) đến 18,3 triệu (Crystalline CR BLK PRO cho SUV). Giá cuối phụ thuộc dòng phim, model xe, số ô kính, cửa sổ trời và có phải bóc phim cũ hay không. Gọi 0365 365 365 để nhận con số chính xác cho xe bạn.</p>
+</div>
+<div class="tier-pick" role="group" aria-label="Chọn nhanh theo mức đầu tư">
+<button type="button" data-tier="ceramic-hybrid"><span class="tier-name">Tiết kiệm, thực dụng</span><span class="tier-price">từ 5,9 triệu</span><span class="tier-desc">Ceramic NR toàn xe — chi phí dễ tiếp cận</span></button>
+<button type="button" data-tier="ceramic-ir"><span class="tier-name">Cân bằng</span><span class="tier-price">từ 7,2 triệu</span><span class="tier-desc">Ceramic IR hoặc Crystalline Hybrid — kính lái sáng hơn</span></button>
+<button type="button" data-tier="crystalline-cr-blk"><span class="tier-name">Cao cấp</span><span class="tier-price">từ 12,2 triệu</span><span class="tier-desc">Crystalline CR BLK — quang học đa lớp, đồng bộ toàn xe</span></button>
 </div>
 <div class="pkg-grid grid gap-4 md:grid-cols-2 lg:grid-cols-4">
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
@@ -1452,6 +1471,8 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   const quote=q('#quote-panel');root.querySelectorAll('#open-quote,.open-quote').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();quote.classList.add('open');el.setAttribute('aria-expanded','true');quote.scrollIntoView({behavior:'smooth',block:'center'});}));q('#close-quote')?.addEventListener('click',()=>{quote.classList.remove('open');root.querySelectorAll('[aria-expanded="true"]').forEach(x=>x.setAttribute('aria-expanded','false'));});
   const copy=async(text,button)=>{try{await navigator.clipboard.writeText(text);if(button){const old=button.textContent;button.textContent='Đã sao chép';setTimeout(()=>button.textContent=old,1500);}}catch(_){prompt('Sao chép cấu hình:',text);}};
   q('#copy-result-config')?.addEventListener('click',e=>copy(state.configText,e.currentTarget));q('#copy-lead-config')?.addEventListener('click',e=>copy(state.configText,e.currentTarget));
+  (()=>{const tiers=root.querySelectorAll('.tier-pick button');if(!tiers.length)return;tiers.forEach(b=>b.addEventListener('click',()=>{const key=b.dataset.tier,card=root.querySelector('[data-package-key="'+key+'"]')?.closest('.pkg-card');if(!card)return;root.querySelectorAll('.pkg-card.tier-hl').forEach(c=>c.classList.remove('tier-hl'));card.classList.add('tier-hl');card.scrollIntoView({block:'center',behavior:'smooth'});track('tier_pick',{tier:key});}));})();
+  (()=>{const cb=q('#lead-model-unknown'),mi=q('#lead-model');if(!cb||!mi)return;cb.addEventListener('change',()=>{if(cb.checked){mi.dataset.prev=mi.value;mi.value='Chưa xác định';mi.readOnly=true;mi.style.opacity='.6';}else{mi.value=mi.dataset.prev||'';mi.readOnly=false;mi.style.opacity='';mi.focus();}});})();
   q('#download-result-config')?.addEventListener('click',()=>{const blob=new Blob([state.configText+'\n'],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=state.configId+'.txt';a.click();URL.revokeObjectURL(url);track('configuration_download',{configuration_id:state.configId});});
 
   const endpoint=(window.AUTO365_CONFIG&&window.AUTO365_CONFIG.leadEndpoint)||'';const form=q('#lead-form'),fallback=q('#lead-fallback');if(form){form.hidden=false;if(fallback)fallback.hidden=true;form.addEventListener('submit',async e=>{e.preventDefault();const status=q('#lead-status');const _qs=new URLSearchParams(location.search);q('#lead-configuration-id').value=state.configId;q('#lead-source-url').value=location.href;q('#lead-utm-source').value=_qs.get('utm_source')||'';q('#lead-utm-medium').value=_qs.get('utm_medium')||'';q('#lead-utm-campaign').value=_qs.get('utm_campaign')||'';if(endpoint){const fd=new FormData(form);fd.append('configuration_text',state.configText);try{const r=await fetch(endpoint,{method:'POST',body:fd});if(!r.ok)throw new Error(String(r.status));status.textContent='Đã gửi yêu cầu. Cố vấn sẽ liên hệ trong giờ làm việc để xác nhận cấu hình và báo giá.';track('lead_submit_success',{configuration_id:state.configId});}catch(err){status.textContent='Chưa gửi trực tuyến được. Vui lòng gọi 0365 365 365 hoặc chat Zalo.';track('lead_submit_error',{message:String(err)});}}else{status.textContent='Đã ghi nhận thông tin. Cố vấn sẽ liên hệ trong giờ làm việc để xác nhận cấu hình; hoặc gọi 0365 365 365 / chat Zalo để được báo giá ngay.';track('lead_submit_offline',{configuration_id:state.configId});}status.classList.remove('hidden');});}
