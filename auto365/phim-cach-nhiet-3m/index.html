@@ -247,6 +247,15 @@
     .tier-pick button.is-active .tier-price{color:#ff6b73}
     .tier-pick button.is-active .tier-desc{color:rgba(255,255,255,.72)}
     .pkg-card.tier-hl{border-color:var(--a365-red);box-shadow:0 0 0 3px rgba(215,25,32,.14)}
+    /* Khối "Phương án đối chiếu" — nền đen nổi trên nền hồng của viz-callout */
+    #result-alt{position:relative;overflow:hidden;border-left:3px solid var(--a365-red);box-shadow:0 10px 28px rgba(0,0,0,.22)}
+    #result-alt::after{content:"";position:absolute;top:-60%;right:-10%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,32,.22),transparent 70%);pointer-events:none}
+    @keyframes altIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    #result-alt.alt-in{animation:altIn .38s cubic-bezier(.2,.7,.3,1)}
+    #result-alt .alt-tag{display:inline-flex;align-items:center;gap:5px;padding:3px 9px;border-radius:999px;background:rgba(215,25,32,.18);border:1px solid rgba(215,25,32,.45)}
+    #alt-choice{transition:transform .18s ease,box-shadow .18s ease}
+    #alt-choice:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(215,25,32,.45)}
+    #alt-choice:active{transform:translateY(0)}
     .warranty-content h3{font-size:16px;font-weight:600;margin:0}
     .warranty-content p{font-size:13px;color:var(--muted);margin:8px 0 0}
     .warranty-content ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:6px}
@@ -1465,8 +1474,8 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
     q('#result-name').textContent=pkg.name;q('#result-reason').textContent=reason(pkg,a,codes);if(byUser&&q('#result-default-note'))q('#result-default-note').remove();q('#result-front').textContent=codes.front;q('#result-side').textContent=codes.side;q('#result-price').textContent=money(price);q('#result-sunroof').textContent=sunroofText(a.sunroof);
     (()=>{const sum=document.getElementById('mcta-sum');if(!sum||!byUser)return;const vLabel={minicar:'Minicar',sedan:'Sedan',suv:'SUV / MPV'}[vehicle]||vehicle;sum.innerHTML='<span><b>'+(pkg.shortName||pkg.name)+'</b> · '+vLabel+'</span><span class="mcta-price">'+money(price)+'</span>';sum.hidden=false;})();
     if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
-    const altBox=q('#result-alt');altBox.innerHTML='';
-    if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="text-xs font-bold uppercase tracking-wider" style="color:var(--a365-red)">'+(comp.direction==='up'?'▲ Nâng cấp đề xuất':'▼ Phương án tiết kiệm')+'</div><div class="mt-1 text-base font-semibold">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1" style="color:rgba(255,255,255,.72)">'+(diff>=0?'<strong style="color:#fff">Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong style="color:#fff">Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="a365-bg rounded-lg px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
+    const altBox=q('#result-alt');altBox.innerHTML='';altBox.classList.remove('alt-in');void altBox.offsetWidth;altBox.classList.add('alt-in');
+    if(alt){const comp=comparePackage(budget,a),cp=packages[comp.key],cc=specificCodes(cp,a),diff=cp.prices[vehicle]-price;altBox.classList.remove('hidden');altBox.innerHTML='<div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap"><div><div class="alt-tag text-xs font-bold uppercase tracking-wider" style="color:#ff6b73">'+(comp.direction==='up'?'▲ Nâng cấp đề xuất':'▼ Phương án tiết kiệm')+'</div><div class="mt-1 text-base font-semibold">'+cp.name+' — '+money(cp.prices[vehicle])+'</div><div class="mt-1" style="color:rgba(255,255,255,.72)">'+(diff>=0?'<strong style="color:#fff">Chênh lệch:</strong> khoảng '+tr(diff)+'. Được nâng cấp vật liệu ở vị trí quan trọng.':'<strong style="color:#fff">Rẻ hơn:</strong> khoảng '+tr(-diff)+'. Đánh đổi một phần trải nghiệm hoặc độ đồng bộ.')+'</div></div><button type="button" id="alt-choice" style="flex-shrink:0" class="a365-bg rounded-lg px-4 py-2 font-medium">Xem phương án này</button></div>';q('#alt-choice').addEventListener('click',()=>render(comp.key,vehicle,comp.budget,a,false));}else altBox.classList.add('hidden');
     const result=q('#result');result.classList.remove('fm-pulse');void result.offsetWidth;result.classList.add('fm-pulse');
   }
   function compute(scroll=true,byUser=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,a);render(key,vehicle,budget,a,true,byUser);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}if(byUser)track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
