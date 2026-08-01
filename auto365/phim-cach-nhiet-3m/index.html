@@ -235,18 +235,6 @@
     .model-unknown input{width:15px;height:15px;accent-color:var(--a365-red);margin:0;flex:0 0 auto}
     .hero-support{margin:12px 0 0;font-size:13px;color:rgba(255,255,255,.6)}
     .hero-support a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-    .tier-pick{display:grid;gap:10px;margin:0 0 4px}
-    @media(min-width:640px){.tier-pick{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    .tier-pick button{display:flex;flex-direction:column;gap:3px;text-align:left;padding:13px 15px;border:1px solid var(--border);border-radius:14px;background:#fff;cursor:pointer;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
-    .tier-pick button:hover{border-color:var(--a365-black);box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-1px)}
-    .tier-pick .tier-name{font-size:14px;font-weight:600;color:var(--text)}
-    .tier-pick .tier-price{font-size:13px;font-weight:700;color:var(--a365-red)}
-    .tier-pick .tier-desc{font-size:11.5px;color:var(--muted);line-height:1.45}
-    .tier-pick button.is-active{background:var(--a365-black);border-color:var(--a365-black);box-shadow:0 6px 20px rgba(0,0,0,.18)}
-    .tier-pick button.is-active .tier-name{color:#fff}
-    .tier-pick button.is-active .tier-price{color:#ff6b73}
-    .tier-pick button.is-active .tier-desc{color:rgba(255,255,255,.72)}
-    .pkg-card.tier-hl{border-color:var(--a365-red);box-shadow:0 0 0 3px rgba(215,25,32,.14)}
     /* Khối "Phương án đối chiếu" — nền đen nổi trên nền hồng của viz-callout */
     #result-alt{position:relative;overflow:hidden;border-left:3px solid var(--a365-red);box-shadow:0 10px 28px rgba(0,0,0,.22)}
     #result-alt::after{content:"";position:absolute;top:-60%;right:-10%;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(215,25,32,.22),transparent 70%);pointer-events:none}
@@ -770,11 +758,6 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Giá theo nhóm xe</p>
 <h2 class="mt-1 text-2xl font-medium">Dán phim cách nhiệt 3M giá bao nhiêu?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Dán phim 3M trọn xe có giá tham khảo từ 5,9 triệu (Ceramic Hybrid cho minicar) đến 18,3 triệu (Crystalline CR BLK PRO cho SUV). Giá cuối phụ thuộc dòng phim, model xe, số ô kính, cửa sổ trời và có phải bóc phim cũ hay không. Gọi 0365 365 365 để nhận con số chính xác cho xe bạn.</p>
-</div>
-<div class="tier-pick" role="group" aria-label="Chọn nhanh theo mức đầu tư">
-<button type="button" data-tier="ceramic-hybrid"><span class="tier-name">Tiết kiệm, thực dụng</span><span class="tier-price">từ 5,9 triệu</span><span class="tier-desc">Ceramic NR toàn xe — chi phí dễ tiếp cận</span></button>
-<button type="button" data-tier="ceramic-ir"><span class="tier-name">Cân bằng</span><span class="tier-price">từ 7,2 triệu</span><span class="tier-desc">Ceramic IR hoặc Crystalline Hybrid — kính lái sáng hơn</span></button>
-<button type="button" data-tier="crystalline-cr-blk"><span class="tier-name">Cao cấp</span><span class="tier-price">từ 12,2 triệu</span><span class="tier-desc">Crystalline CR BLK — quang học đa lớp, đồng bộ toàn xe</span></button>
 </div>
 <div class="pkg-grid grid gap-4 md:grid-cols-2 lg:grid-cols-4">
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
@@ -1486,7 +1469,6 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   const quote=q('#quote-panel');root.querySelectorAll('#open-quote,.open-quote').forEach(el=>el.addEventListener('click',e=>{e.preventDefault();quote.classList.add('open');el.setAttribute('aria-expanded','true');quote.scrollIntoView({behavior:'smooth',block:'center'});}));q('#close-quote')?.addEventListener('click',()=>{quote.classList.remove('open');root.querySelectorAll('[aria-expanded="true"]').forEach(x=>x.setAttribute('aria-expanded','false'));});
   const copy=async(text,button)=>{track('copy_config',{configuration_id:state.configId||'',package_key:state.currentPackage||''});try{await navigator.clipboard.writeText(text);if(button){const old=button.textContent;button.textContent='Đã sao chép';setTimeout(()=>button.textContent=old,1500);}}catch(_){prompt('Sao chép cấu hình:',text);}};
   q('#copy-lead-config')?.addEventListener('click',e=>copy(state.configText,e.currentTarget));
-  (()=>{const tiers=root.querySelectorAll('.tier-pick button');if(!tiers.length)return;tiers.forEach(b=>b.addEventListener('click',()=>{const key=b.dataset.tier,card=root.querySelector('[data-package-key="'+key+'"]')?.closest('.pkg-card');if(!card)return;tiers.forEach(x=>{x.classList.toggle('is-active',x===b);x.setAttribute('aria-pressed',x===b?'true':'false');});root.querySelectorAll('.pkg-card.tier-hl').forEach(c=>c.classList.remove('tier-hl'));card.classList.add('tier-hl');card.scrollIntoView({block:'center',behavior:'smooth'});track('tier_pick',{tier:key});}));})();
   (()=>{const cb=q('#lead-model-unknown'),mi=q('#lead-model');if(!cb||!mi)return;cb.addEventListener('change',()=>{if(cb.checked){mi.dataset.prev=mi.value;mi.value='Chưa xác định';mi.readOnly=true;mi.style.opacity='.6';}else{mi.value=mi.dataset.prev||'';mi.readOnly=false;mi.style.opacity='';mi.focus();}});})();
 
   const endpoint=(window.AUTO365_CONFIG&&window.AUTO365_CONFIG.leadEndpoint)||'';const form=q('#lead-form'),fallback=q('#lead-fallback');if(form){form.hidden=false;if(fallback)fallback.hidden=true;form.addEventListener('submit',async e=>{e.preventDefault();const status=q('#lead-status');const _qs=new URLSearchParams(location.search);q('#lead-configuration-id').value=state.configId;q('#lead-source-url').value=location.href;q('#lead-utm-source').value=_qs.get('utm_source')||'';q('#lead-utm-medium').value=_qs.get('utm_medium')||'';q('#lead-utm-campaign').value=_qs.get('utm_campaign')||'';if(endpoint){const fd=new FormData(form);fd.append('configuration_text',state.configText);try{const r=await fetch(endpoint,{method:'POST',body:fd});if(!r.ok)throw new Error(String(r.status));status.textContent='Đã gửi yêu cầu. Cố vấn sẽ liên hệ trong giờ làm việc để xác nhận cấu hình và báo giá.';track('lead_submit_success',{configuration_id:state.configId});}catch(err){status.textContent='Chưa gửi trực tuyến được. Vui lòng gọi 0365 365 365 hoặc chat Zalo.';track('lead_submit_error',{message:String(err)});}}else{status.textContent='Đã ghi nhận thông tin. Cố vấn sẽ liên hệ trong giờ làm việc để xác nhận cấu hình; hoặc gọi 0365 365 365 / chat Zalo để được báo giá ngay.';track('lead_submit_offline',{configuration_id:state.configId});}status.classList.remove('hidden');});}
