@@ -230,6 +230,10 @@
     /* Dải quyền lợi đi kèm — dưới bảng giá */
     .hub-card{display:flex;flex-direction:column}
     .hub-foot{margin-top:auto;padding-top:14px}
+    @media(max-width:639px){
+      .hscroll{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;padding-bottom:6px}
+      .hscroll>*{scroll-snap-align:start;min-width:0}
+    }
     #pricing-piece table,#windshield table{min-width:640px}
     #brand-compare table{min-width:760px}
     .perks{border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,var(--a365-soft),#fff 62%);padding:16px 18px 18px}
@@ -365,7 +369,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </nav><section class="rounded-2xl border bg-white p-5 md:p-6" id="tra-loi-nhanh">
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Trả lời nhanh</p>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Auto365 hiện tư vấn 3 dòng phim 3M: <strong class="text-[var(--text)]">Ceramic NR</strong>, <strong class="text-[var(--text)]">Ceramic IR</strong> và <strong class="text-[var(--text)]">Crystalline CR BLK</strong>. Trọn xe có 6 cấu hình, giá tham khảo 5,9–18,3 triệu đồng. Thi công trực tiếp tại Auto365.vn - Trụ Sở Chính; khách ở tỉnh được hỗ trợ kết nối tới điểm 3M đủ điều kiện gần nhất. Bảo hành điện tử lên đến 10 năm.</p>
-<div class="mt-4 grid gap-3 sm:grid-cols-2">
+<div class="hscroll mt-4 grid gap-3 sm:grid-cols-2">
 <a class="rounded-xl border p-3" href="#pricing"><div class="text-sm font-medium">Giá dán trọn xe <span class="a365-text">→</span></div><div class="mt-1 text-sm text-[var(--muted)]">5,9–18,3 triệu tuỳ dòng phim và nhóm xe (minicar / sedan / SUV).</div></a>
 <a class="rounded-xl border p-3" href="#windshield"><div class="text-sm font-medium">Chọn mã kính lái <span class="a365-text">→</span></div><div class="mt-1 text-sm text-[var(--muted)]">Ưu tiên độ sáng và độ trong — mã phổ biến: IR 50, CR BLK 60 / 50 / 40.</div></a>
 <a class="rounded-xl border p-3" href="#process"><div class="text-sm font-medium">Thời gian thi công <span class="a365-text">→</span></div><div class="mt-1 text-sm text-[var(--muted)]">Khoảng 2–4 giờ; xe có phim cũ hoặc cửa sổ trời panorama có thể lâu hơn.</div></a>
@@ -944,7 +948,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Vì sao khách chọn dán phim 3M tại Auto365?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer=""><strong class="text-[var(--text)]">365Group</strong> là nhà phân phối ủy quyền phim cách nhiệt và PPF 3M tại Việt Nam; <strong class="text-[var(--text)]">Auto365.vn - Trụ Sở Chính</strong> là điểm tư vấn và thi công dịch vụ trong hệ thống 365Group. Các chứng nhận Pro Shop, Preferred Installer, Training Center và giấy phân phối 3M đều công khai bên dưới để anh/chị tự đối chiếu nguồn phim, tay nghề và hồ sơ bảo hành.</p>
 </div>
-<div class="grid gap-2 md:grid-cols-2 lg:grid-cols-4">
+<div class="hscroll grid gap-2 md:grid-cols-2 lg:grid-cols-4">
 <div class="viz-node">
 <div class="proof-img"><img alt="3M Pro Shop Certificate — chứng nhận Pro Shop chính hãng của 3M Việt Nam cấp cho Auto365" decoding="async" fetchpriority="low" height="600" loading="lazy" src="hinh/cert-3m-pro-shop.jpg" width="800"/></div>
 <div class="a365-text text-sm font-medium">Chứng nhận 01</div>
@@ -1018,7 +1022,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Dán phim cách nhiệt 3M ở đâu?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Nên chọn điểm thi công có nguồn vật liệu, tư cách cung cấp dịch vụ và quy trình bảo hành được xác minh. <strong class="text-[var(--text)]">Auto365.vn - Trụ Sở Chính</strong> là điểm tư vấn và triển khai dịch vụ; <strong class="text-[var(--text)]">3M Pro Shop &amp; 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính</strong> để phục vụ trải nghiệm, đào tạo, thi công và chuẩn hóa quy trình. Hai điểm nằm cùng khu vực Hiệp Bình và thuộc cùng hệ sinh thái Auto365, không phải hai trung tâm độc lập. Riêng phim cách nhiệt 3M, gọi <a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">0365 365 365</a> để được xếp lịch trực tiếp. Hệ thống Auto365 có hơn 90 điểm; khách được hỗ trợ kết nối điểm phù hợp theo phạm vi dịch vụ từng khu vực.</p>
 </div>
-<div class="grid gap-4 md:grid-cols-3">
+<div class="hscroll grid gap-4 md:grid-cols-3">
 <article class="hub-card rounded-2xl border bg-white p-5">
 <span class="viz-badge">Điểm chính</span>
 <h3 class="mt-4 font-medium">Auto365.vn - Trụ Sở Chính</h3>
@@ -1078,7 +1082,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Phim cách nhiệt 3M là gì và mang lại gì cho xe?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Phim cách nhiệt 3M là dòng phim dán kính ô tô của hãng 3M, với nhiều dòng phục vụ các thị trường khác nhau. Tại Việt Nam, Auto365 tập trung tư vấn ba dòng được ưa chuộng — Ceramic NR, Ceramic IR và Crystalline CR BLK — mỗi dòng có nhiều mã cho từng vị trí kính. Dưới đây là 8 điều một lớp phim tốt mang lại cho chiếc xe hằng ngày của bạn.</p>
 </div>
-<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+<div class="hscroll grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
 <div class="viz-node"><h3 class="font-medium">Giảm nhiệt cabin</h3><p class="mt-2 text-sm text-[var(--muted)]">TSER cao giúp xe bớt hầm sau khi đậu ngoài nắng, cabin mát nhanh hơn khi bật điều hoà.</p></div>
 <div class="viz-node"><h3 class="font-medium">Hỗ trợ giảm phơi nhiễm tia UV qua kính</h3><p class="mt-2 text-sm text-[var(--muted)]">Phim 3M cản lên tới 99% tia UV theo dữ liệu công bố của hãng — hữu ích với người thường xuyên đi ban ngày, đặc biệt trẻ nhỏ.</p></div>
 <div class="viz-node"><h3 class="font-medium">Giảm chói khi lái</h3><p class="mt-2 text-sm text-[var(--muted)]">Có thể hỗ trợ giảm cảm giác chói từ nắng, mặt đường và nguồn sáng mạnh — tuỳ mã phim, kính nguyên bản và điều kiện quan sát.</p></div>
@@ -1095,7 +1099,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="mt-2 text-[var(--muted)]" data-answer="">3M không phải hãng phim tốt duy nhất trên thị trường. Nhưng tại Auto365, đây là dòng phim bạn có thể tự tay kiểm chứng nguồn gốc vật liệu, tiêu chuẩn thi công và bảo hành, thay vì chỉ nghe cố vấn nói.</p>
 </div>
 <div class="rounded-2xl border bg-white p-5 md:p-6">
-<div class="grid gap-4 md:grid-cols-3">
+<div class="hscroll grid gap-4 md:grid-cols-3">
 <div class="rounded-xl border p-4">
 <div class="a365-text text-xs font-semibold uppercase tracking-wider">01 · Nguồn gốc</div>
 <h3 class="mt-2 font-medium">Nguồn uỷ quyền, đối chiếu được</h3>
@@ -1272,7 +1276,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Cách đọc thông số phim cách nhiệt</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Năm chỉ số chính của phim cách nhiệt là VLT, TSER, IRR, UVR và Glare Reduction — mỗi chỉ số trả lời một câu hỏi khác nhau, và không chỉ số nào đứng một mình nói lên chất lượng phim. Mọi con số chỉ có ý nghĩa khi đi kèm điều kiện đo.</p>
 </div>
-<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+<div class="hscroll grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 <div class="rounded-2xl border bg-white p-5"><div class="font-medium">VLT là gì?</div><p class="mt-2 text-sm text-[var(--muted)]">Tỷ lệ ánh sáng nhìn thấy truyền qua hệ kính và phim. VLT thấp hơn thường tối hơn nhưng không đồng nghĩa luôn tốt hơn cho kính lái.</p></div>
 <div class="rounded-2xl border bg-white p-5"><div class="font-medium">TSER là gì?</div><p class="mt-2 text-sm text-[var(--muted)]">Tổng năng lượng mặt trời bị loại bỏ. Đây là chỉ số tổng hợp quan trọng khi so sánh khả năng giảm nhiệt.</p></div>
 <div class="rounded-2xl border bg-white p-5"><div class="font-medium">IRR là gì?</div><p class="mt-2 text-sm text-[var(--muted)]">Tỷ lệ loại bỏ tia hồng ngoại theo dải đo được công bố. Không nên dùng IRR đơn lẻ để kết luận mức độ mát toàn diện.</p></div>
@@ -1286,7 +1290,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Sau khi dán phim 3M, cần lưu ý gì trong 14 ngày đầu?</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Sau khi dán phim 3M, có ba cột mốc cần lưu ý: 48-72 giờ đầu (không hạ kính, tránh áp lực nước), 3-7 ngày kế (không rửa xe áp lực cao, không dùng hoá chất mạnh), và 7-14 ngày (bọt khí nhỏ tự bay hết). Sau khi phim khô ổn định — thường khoảng 14 ngày tuỳ thời tiết, độ ẩm và loại kính — có thể sử dụng và vệ sinh xe bình thường; ưu tiên theo hướng dẫn trên phiếu bàn giao.</p>
 </div>
-<div class="grid gap-4 md:grid-cols-3">
+<div class="hscroll grid gap-4 md:grid-cols-3">
 <div class="rounded-2xl border bg-white p-5">
 <div class="a365-text text-sm font-medium">48–72 giờ đầu</div>
 <h3 class="mt-2 font-medium">Không hạ kính</h3>
@@ -1379,7 +1383,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </div>
 <div class="mt-6 border-t pt-5">
 <div class="text-sm font-medium">Lịch sử cập nhật</div>
-<div class="mt-3 grid gap-3 text-sm sm:grid-cols-3">
+<div class="hscroll mt-3 grid gap-3 text-sm sm:grid-cols-3">
 <div><strong>06/2026</strong><br/><span class="text-[var(--muted)]">Dữ liệu NR và IR</span></div>
 <div><strong>07/2026</strong><br/><span class="text-[var(--muted)]">Giá, cấu hình và liên kết</span></div>
 <div><strong>Cập nhật định kỳ</strong><br/><span class="text-[var(--muted)]">Case xe và điểm thi công</span></div>
@@ -1391,7 +1395,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h2 class="mt-1 text-2xl font-medium">Tìm hiểu thêm về phim cách nhiệt</h2>
 <p class="mt-2 text-[var(--muted)]" data-answer="">Trang này tập trung vào phim cách nhiệt 3M. Những chủ đề chung về phim cách nhiệt ô tô — nguyên lý, công nghệ, so sánh các hãng, cách chăm sóc chung — được tổng hợp trong Hub Phim cách nhiệt và các trang chi tiết bên dưới.</p>
 </div>
-<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3"><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/phim-cach-nhiet"><div class="font-medium">Hub phim cách nhiệt ô tô</div><div class="mt-2 text-sm text-[var(--muted)]">Tổng quan công nghệ, hãng và logic lựa chọn.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/phim-cach-nhiet-3m-chinh-hang-cach-phan-biet-that-gia-va-gia-ban-2026"><div class="font-medium">Phim 3M chính hãng và cách kiểm tra</div><div class="mt-2 text-sm text-[var(--muted)]">Nguồn vật liệu, cấu hình, eWarranty và lỗi thường gặp.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/bang-gia-dan-phim-cach-nhiet-o-to-chinh-hang-moi-nhat-tai-auto365"><div class="font-medium">Bảng giá phim cách nhiệt ô tô</div><div class="mt-2 text-sm text-[var(--muted)]">Đối chiếu giá theo hãng, dòng phim và nhóm xe.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/kinh-nghiem-dan-phim-cach-nhiet-kinh-lai-o-to-chong-loa-hieu-qua"><div class="font-medium">Chọn phim cách nhiệt cho kính lái</div><div class="mt-2 text-sm text-[var(--muted)]">Tầm nhìn, giảm chói, đi đêm và các mã phù hợp.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/phim-cach-nhiet-cu-xuong-cap"><div class="font-medium">Khi nào phim cũ cần thay?</div><div class="mt-2 text-sm text-[var(--muted)]">Dấu hiệu xuống cấp và cách kiểm tra trước khi bóc.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/xe-dien-co-nen-dan-3m-ceramic-nr-khong"><div class="font-medium">Xe điện có nên dán Ceramic NR?</div><div class="mt-2 text-sm text-[var(--muted)]">Kính lớn, panorama, tải điều hòa và lựa chọn cấu hình.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a></div>
+<div class="hscroll grid gap-4 md:grid-cols-2 lg:grid-cols-3"><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/phim-cach-nhiet"><div class="font-medium">Hub phim cách nhiệt ô tô</div><div class="mt-2 text-sm text-[var(--muted)]">Tổng quan công nghệ, hãng và logic lựa chọn.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/phim-cach-nhiet-3m-chinh-hang-cach-phan-biet-that-gia-va-gia-ban-2026"><div class="font-medium">Phim 3M chính hãng và cách kiểm tra</div><div class="mt-2 text-sm text-[var(--muted)]">Nguồn vật liệu, cấu hình, eWarranty và lỗi thường gặp.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/bang-gia-dan-phim-cach-nhiet-o-to-chinh-hang-moi-nhat-tai-auto365"><div class="font-medium">Bảng giá phim cách nhiệt ô tô</div><div class="mt-2 text-sm text-[var(--muted)]">Đối chiếu giá theo hãng, dòng phim và nhóm xe.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/kinh-nghiem-dan-phim-cach-nhiet-kinh-lai-o-to-chong-loa-hieu-qua"><div class="font-medium">Chọn phim cách nhiệt cho kính lái</div><div class="mt-2 text-sm text-[var(--muted)]">Tầm nhìn, giảm chói, đi đêm và các mã phù hợp.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/phim-cach-nhiet-cu-xuong-cap"><div class="font-medium">Khi nào phim cũ cần thay?</div><div class="mt-2 text-sm text-[var(--muted)]">Dấu hiệu xuống cấp và cách kiểm tra trước khi bóc.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a><a class="rounded-2xl border bg-white p-5 text-left" href="https://auto365.vn/xe-dien-co-nen-dan-3m-ceramic-nr-khong"><div class="font-medium">Xe điện có nên dán Ceramic NR?</div><div class="mt-2 text-sm text-[var(--muted)]">Kính lớn, panorama, tải điều hòa và lựa chọn cấu hình.</div><div class="a365-text mt-3 text-sm font-medium">Xem nội dung →</div></a></div>
 </section></div></details></section><section class="dark rounded-3xl p-6 md:p-8" id="final-cta">
 <div class="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
 <div>
