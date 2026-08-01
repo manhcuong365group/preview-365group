@@ -211,26 +211,22 @@
     .warranty-img{border-radius:12px;overflow:hidden;aspect-ratio:1200/779;background:#f5f5f5}
     .warranty-img img{width:100%;height:100%;object-fit:cover;display:block}
     .warranty-cap{font-size:11px;color:var(--muted);line-height:1.5;margin:8px 0 0}
-    .callmap{border:1px solid var(--border);border-radius:16px;background:var(--chip-card);padding:16px 18px}
-    .callmap-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--a365-red);margin:0}
-    .callmap-grid{display:grid;gap:12px;margin-top:12px}
-    @media(min-width:640px){.callmap-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
-    .callmap-item{display:flex;flex-direction:column;gap:3px;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:#fff}
-    .callmap-label{font-size:12px;color:var(--muted);line-height:1.4}
-    .callmap-num{font-size:19px;font-weight:600;color:var(--a365-red);text-decoration:none;letter-spacing:.01em}
-    .callmap-note{font-size:11px;color:var(--muted);line-height:1.45}
-    .callmap-foot{font-size:11.5px;color:var(--muted);line-height:1.55;margin:12px 0 0}
-    .callmap-foot strong{color:var(--text)}
     .metric-legend{display:grid;gap:6px 18px;margin:14px 0 0;padding:0}
     @media(min-width:640px){.metric-legend{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(min-width:1024px){.metric-legend{grid-template-columns:repeat(3,minmax(0,1fr))}}
     .metric-legend>div{display:flex;gap:7px;align-items:baseline}
     .metric-legend dt{flex:0 0 auto;font-size:11px;font-weight:700;color:var(--a365-red);letter-spacing:.02em}
     .metric-legend dd{margin:0;font-size:11.5px;color:var(--muted);line-height:1.45}
-    .cert-meta{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--border);display:grid;gap:5px}
-    .cert-meta>div{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:baseline}
-    .cert-meta dt{font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);font-weight:600}
-    .cert-meta dd{margin:0;font-size:11.5px;color:var(--text);line-height:1.45}
+    .cert-more{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--border)}
+    .cert-more>summary{cursor:pointer;list-style:none;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);display:flex;align-items:center;gap:5px}
+    .cert-more>summary::-webkit-details-marker{display:none}
+    .cert-more>summary::before{content:"+";font-size:13px;line-height:1;color:var(--a365-red);font-weight:700}
+    .cert-more[open]>summary::before{content:"−"}
+    .cert-more>summary:hover{color:var(--a365-red)}
+    .cert-meta-in{margin:9px 0 0;padding:0;display:grid;gap:5px}
+    .cert-meta-in>div{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:baseline}
+    .cert-meta-in dt{font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);font-weight:600}
+    .cert-meta-in dd{margin:0;font-size:11.5px;color:var(--text);line-height:1.45}
     /* Dải quyền lợi đi kèm — dưới bảng giá */
     .perks{border:1px solid var(--border);border-radius:16px;background:linear-gradient(180deg,var(--a365-soft),#fff 62%);padding:16px 18px 18px}
     .perks-title{margin:0 0 12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--a365-red)}
@@ -952,34 +948,34 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="a365-text text-sm font-medium">Chứng nhận 01</div>
 <h3 class="mt-2 font-medium">3M™ Pro Shop Certificate</h3>
 <p class="mt-2 text-sm text-[var(--muted)]">Chứng nhận mô hình 3M Pro Shop theo phạm vi thể hiện trên chứng nhận; dùng để đối chiếu tiêu chuẩn điểm dịch vụ và nguồn vật liệu.</p>
-<dl class="cert-meta">
+<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
 <div><dt>Đơn vị cấp</dt><dd>3M Vietnam Limited</dd></div>
 <div><dt>Đơn vị được cấp</dt><dd>Auto365 Center</dd></div>
 <div><dt>Phạm vi</dt><dd>3M Pro Shop cho nhóm 3M Premium Auto Film Products</dd></div>
 <div><dt>Hiệu lực</dt><dd>06/2026 – 06/2029</dd></div>
-</dl>
+</dl></details>
 </div>
 <div class="viz-node">
 <div class="proof-img"><img alt="Chứng nhận 3M Premium Auto Products Preferred Installer cấp cho Auto365.vn Trụ Sở Chính" decoding="async" fetchpriority="low" height="600" loading="lazy" src="hinh/cert-preferred-installer.jpg" width="800"/></div>
 <div class="a365-text text-sm font-medium">Chứng nhận 02</div>
 <h3 class="mt-2 font-medium">Preferred Installer</h3>
 <p class="mt-2 text-sm text-[var(--muted)]">3M™ Premium Auto Products Preferred Installer cấp cho Auto365.vn - Trụ Sở Chính theo phạm vi thể hiện trên chứng nhận.</p>
-<dl class="cert-meta">
+<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
 <div><dt>Đơn vị cấp</dt><dd>3M — Commercial Branding and Transportation</dd></div>
 <div><dt>Đơn vị được cấp</dt><dd>3M Pro Shop Auto365.vn - Trụ Sở Chính</dd></div>
 <div><dt>Phạm vi</dt><dd>3M™ Premium Auto Products Preferred Installer</dd></div>
 <div><dt>Ngày cấp</dt><dd>20/06/2026</dd></div>
-</dl>
+</dl></details>
 </div>
 <div class="viz-node">
 <div class="proof-img"><img alt="Lễ trao chứng nhận 3M Pro Shop &amp; 3M Training Center cho Auto365 tại sự kiện 365Group" decoding="async" fetchpriority="low" height="600" loading="lazy" src="hinh/cert-training-center-event.jpg" width="800"/></div>
 <div class="a365-text text-sm font-medium">Chứng nhận 03</div>
 <h3 class="mt-2 font-medium">3M™ Training Center</h3>
 <p class="mt-2 text-sm text-[var(--muted)]">Ảnh chụp lễ trao chứng nhận mô hình đào tạo và chuẩn hoá kỹ thuật; kỹ thuật viên được đào tạo, đánh giá theo chương trình của 3M Training Center.</p>
-<dl class="cert-meta">
+<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
 <div><dt>Loại tư liệu</dt><dd>Ảnh lễ trao chứng nhận — chưa phải bản chứng nhận đọc được</dd></div>
 <div><dt>Bản đối chiếu</dt><dd>Đang bổ sung ảnh chụp thẳng để đọc rõ đơn vị cấp, phạm vi và hiệu lực</dd></div>
-</dl>
+</dl></details>
 </div>
 <div class="viz-node">
 <div class="proof-img"><img alt="Distributor Certificate — 365 Group Import Export là nhà phân phối uỷ quyền 3M Việt Nam" decoding="async" fetchpriority="low" height="600" loading="lazy" src="hinh/cert-distributor-365group.jpg" width="800"/></div>
@@ -987,13 +983,13 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h3 class="mt-2 font-medium">365Group — Nhà phân phối ủy quyền</h3>
 <div class="text-xs a365-text font-medium">3M Authorized Distributor in Vietnam</div>
 <p class="mt-2 text-sm text-[var(--muted)]">Distributor Certificate xác nhận 365Group là nhà phân phối ủy quyền phim cách nhiệt &amp; PPF 3M tại Việt Nam. <a href="https://3m.365group.com.vn/" target="_blank" rel="noopener" class="a365-text font-medium">Xem hồ sơ phân phối 3M trên website 365Group →</a></p>
-<dl class="cert-meta">
+<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
 <div><dt>Đơn vị cấp</dt><dd>3M Vietnam Limited</dd></div>
 <div><dt>Đơn vị được cấp</dt><dd>365 Group Import Export Co Ltd</dd></div>
 <div><dt>Phạm vi</dt><dd>Automotive Window Film, Car Wrap Film, Paint Protection Film — Commercial Branding &amp; Transportation Division</dd></div>
 <div><dt>Thị trường</dt><dd>Việt Nam</dd></div>
 <div><dt>Hiệu lực</dt><dd>01/03/2023 – 31/12/2026</dd></div>
-</dl>
+</dl></details>
 </div>
 </div>
 </section><section class="space-y-5 defer-render" id="xuong-doi-ngu">
@@ -1029,23 +1025,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div>
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Điểm tư vấn &amp; thi công</p>
 <h2 class="mt-1 text-2xl font-medium">Dán phim cách nhiệt 3M ở đâu?</h2>
-<p class="mt-2 text-[var(--muted)]" data-answer="">Nên chọn điểm thi công có nguồn vật liệu, tư cách cung cấp dịch vụ và quy trình bảo hành được xác minh. <strong class="text-[var(--text)]">Auto365.vn - Trụ Sở Chính</strong> là điểm tư vấn và triển khai dịch vụ; <strong class="text-[var(--text)]">3M Pro Shop &amp; 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính</strong> để phục vụ trải nghiệm, đào tạo, thi công và chuẩn hóa quy trình. Hệ thống Auto365 có hơn 90 điểm; khách được hỗ trợ kết nối điểm phù hợp theo phạm vi dịch vụ từng khu vực.</p>
-</div>
-<div class="callmap">
-<p class="callmap-title">Nên gọi số nào?</p>
-<div class="callmap-grid">
-<div class="callmap-item">
-<span class="callmap-label">Đặt lịch dán phim, hỏi giá, tư vấn cấu hình</span>
-<a class="callmap-num" data-track="phone_click" href="tel:0365365365">0365 365 365</a>
-<span class="callmap-note">3M Pro Shop &amp; 3M Training Center · 4/4/3/3 Đường Số 3, Hiệp Bình</span>
-</div>
-<div class="callmap-item">
-<span class="callmap-label">Dịch vụ khác của Auto365, hỗ trợ chung</span>
-<a class="callmap-num" data-track="phone_click" href="tel:0365365911">0365 365 911</a>
-<span class="callmap-note">Auto365.vn - Trụ Sở Chính · 4/4/1/7 Đường Số 3, Hiệp Bình</span>
-</div>
-</div>
-<p class="callmap-foot">Hai điểm nằm cùng khu vực Hiệp Bình, TP. Hồ Chí Minh và thuộc cùng hệ sinh thái Auto365 — không phải hai trung tâm độc lập. Riêng phim cách nhiệt 3M, gọi <strong>0365 365 365</strong> để được xếp lịch trực tiếp.</p>
+<p class="mt-2 text-[var(--muted)]" data-answer="">Nên chọn điểm thi công có nguồn vật liệu, tư cách cung cấp dịch vụ và quy trình bảo hành được xác minh. <strong class="text-[var(--text)]">Auto365.vn - Trụ Sở Chính</strong> là điểm tư vấn và triển khai dịch vụ; <strong class="text-[var(--text)]">3M Pro Shop &amp; 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính</strong> để phục vụ trải nghiệm, đào tạo, thi công và chuẩn hóa quy trình. Hai điểm nằm cùng khu vực Hiệp Bình và thuộc cùng hệ sinh thái Auto365, không phải hai trung tâm độc lập. Riêng phim cách nhiệt 3M, gọi <a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">0365 365 365</a> để được xếp lịch trực tiếp. Hệ thống Auto365 có hơn 90 điểm; khách được hỗ trợ kết nối điểm phù hợp theo phạm vi dịch vụ từng khu vực.</p>
 </div>
 <div class="grid gap-4 md:grid-cols-3">
 <article class="rounded-2xl border bg-white p-5">
