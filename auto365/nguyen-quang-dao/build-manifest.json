@@ -1,8 +1,8 @@
 {
   "buildId": "NQD-PROFILE-V3.1",
   "artifact": "Nguyen_Quang_Dao_Public_Profile_V3_Preview.html",
-  "buildSha": "5736936f95d3fe2404287780904e54134fca2339543e3cf62e4ee186fe995916",
-  "fileSha": "610acee9f87f9b0d3ca36538a23209fca1619737a244e2f5bbd4b117c09a56da",
+  "buildSha": "076c90c9079906b1d6901aa567d8dc277b7c403a948a82d72e4dc612859c05b0",
+  "fileSha": "cd0ce3cefaf5f53ba8494a885d82e76e8488be33a11387be2301477d2026cc41",
   "shaConvention": "buildSha = sha256 cua file khi meta auto365-build-sha giu gia tri placeholder __BUILD_SHA__. De verify: thay gia tri sha trong meta bang __BUILD_SHA__ roi hash lai, phai khop buildSha. fileSha = sha256 cua file sau khi da dong dau sha.",
   "canonical": "https://auto365.vn/tac-gia/nguyen-quang-dao",
   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -11,7 +11,7 @@
   "generatedAt": "2026-08-03",
   "requiredResponseHeaders": {
     "X-Auto365-Build-ID": "NQD-PROFILE-V3.1",
-    "X-Auto365-Build-SHA": "5736936f95d3fe2404287780904e54134fca2339543e3cf62e4ee186fe995916",
+    "X-Auto365-Build-SHA": "076c90c9079906b1d6901aa567d8dc277b7c403a948a82d72e4dc612859c05b0",
     "X-Robots-Tag": "index, follow"
   },
   "assetsTotalMB": 6.5,
