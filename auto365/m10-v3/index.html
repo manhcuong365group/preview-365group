@@ -235,4 +235,7 @@
   document.querySelectorAll('.m10-page #ky-thuat summary, .m10-page h2').forEach(function (element) {
     element.textContent = element.textContent.replace(/^\s*\d+(?:\.\d+)?\.?\s+/, '');
   });
+  document.querySelectorAll('.m10-page .cta').forEach(function (element) {
+    if (element.textContent.includes('Chưa chắc xe của bạn có phù hợp')) element.remove();
+  });
 </script>
