@@ -286,4 +286,16 @@
     if (introBlocks[1]) introBlocks[1].textContent = 'Khả năng lắp và hiệu quả thực tế cần kiểm tra theo từng xe, gồm vị trí gắn, nguồn điện, pát/giắc và bước căn chỉnh ánh sáng.';
     introBlocks.slice(2).forEach(function (element) { element.remove(); });
   }
+  var featureImageSources = [
+    ['Cấu hình ánh sáng', 'images/image1.jpg'],
+    ['Hệ thống tản nhiệt', 'images/image2.jpg'],
+    ['Chỉ số chống nước', 'images/image3.jpg'],
+    ['Lens xanh AR', 'images/image4.jpg'],
+    ['Công nghệ Direct Beam', 'images/image5.jpg']
+  ];
+  document.querySelectorAll('.m10-page img').forEach(function (image) {
+    featureImageSources.forEach(function (feature) {
+      if (image.alt.includes(feature[0])) image.src = feature[1];
+    });
+  });
 </script>
