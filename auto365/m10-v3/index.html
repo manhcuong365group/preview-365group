@@ -254,4 +254,18 @@
     applicationVisual.innerHTML = '<img src="images/image6.jpg" alt="Titan Moto M10 Ultra V3 lắp cho xe máy và một số vị trí ô tô"><figcaption>Đèn gầm dạng rời Titan Moto M10 Ultra V3 cho xe máy và một số vị trí ô tô.</figcaption>';
     applicationSection.insertAdjacentElement('afterend', applicationVisual);
   }
+  var introHeading = Array.from(document.querySelectorAll('.m10-page h2')).find(function (element) {
+    return element.textContent.includes('Đèn gầm dạng rời Titan Moto M10 Ultra V3 là gì');
+  });
+  if (introHeading) {
+    var introBlocks = [];
+    var nextBlock = introHeading.nextElementSibling;
+    while (nextBlock && nextBlock.tagName === 'P') {
+      introBlocks.push(nextBlock);
+      nextBlock = nextBlock.nextElementSibling;
+    }
+    if (introBlocks[0]) introBlocks[0].textContent = 'Titan Moto M10 Ultra V3 là đèn gầm bổ sung cho xe máy và ô tô, hỗ trợ quan sát khi di chuyển trong điều kiện thiếu sáng. Sản phẩm có Cos khoảng 28W, Pha khoảng 40W, hai tùy chọn nhiệt màu và hệ thống tản nhiệt.';
+    if (introBlocks[1]) introBlocks[1].textContent = 'Khả năng lắp và hiệu quả thực tế cần kiểm tra theo từng xe, gồm vị trí gắn, nguồn điện, pát/giắc và bước căn chỉnh ánh sáng.';
+    introBlocks.slice(2).forEach(function (element) { element.remove(); });
+  }
 </script>
