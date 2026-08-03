@@ -255,6 +255,31 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://auto365.vn/"},
+        {"@type":"ListItem","position":2,"name":"Ánh sáng","item":"https://auto365.vn/anh-sang"},
+        {"@type":"ListItem","position":3,"name":"Đèn gầm dạng rời","item":"https://auto365.vn/den-gam-dang-roi"},
+        {"@type":"ListItem","position":4,"name":"Titan Moto M10 Ultra V3","item":"https://auto365.vn/den-gam-dang-roi-titan-moto-m10-ultra-v3"}
+      ]
+    },
+    {
+      "@type":"AutomotiveBusiness",
+      "name":"Auto365.vn – Trụ Sở Chính",
+      "url":"https://auto365.vn/",
+      "telephone":"+84365365911",
+      "email":"marketing@365group.com.vn",
+      "address":{"@type":"PostalAddress","streetAddress":"4/4/1/7 Đường số 3","addressLocality":"TP. Hồ Chí Minh","addressCountry":"VN"},
+      "areaServed":{"@type":"Country","name":"Việt Nam"}
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
   "@type":"Product",
   "name":"Đèn gầm dạng rời Titan Moto M10 Ultra V3",
   "description":"Đèn gầm dạng rời Titan Moto M10 Ultra V3 có Cos khoảng 28W, Pha khoảng 40W, hai tùy chọn nhiệt màu 5500K/5500K và 5500K/3000K, bảo hành 1 năm.",
@@ -273,6 +298,31 @@
 }
 </script>
 <script>
+  var productionUrl = 'https://auto365.vn/den-gam-dang-roi-titan-moto-m10-ultra-v3';
+  var pageTitle = 'Đèn gầm Titan Moto M10 Ultra V3: Giá, thông số và tư vấn lắp đặt';
+  var pageDescription = 'Titan Moto M10 Ultra V3: Cos khoảng 28W, Pha khoảng 40W, hai lựa chọn nhiệt màu, IP68 theo công bố và bảo hành 1 năm. Tư vấn lắp theo từng xe tại Auto365.';
+  document.title = pageTitle;
+  function upsertPageMeta(attribute, key, value) {
+    var selector = 'meta[' + attribute + '="' + key + '"]';
+    var meta = document.head.querySelector(selector);
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.setAttribute(attribute, key);
+      document.head.appendChild(meta);
+    }
+    meta.content = value;
+  }
+  upsertPageMeta('name', 'description', pageDescription);
+  upsertPageMeta('property', 'og:title', pageTitle);
+  upsertPageMeta('property', 'og:description', pageDescription);
+  upsertPageMeta('property', 'og:type', 'product');
+  var canonical = document.head.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement('link');
+    canonical.rel = 'canonical';
+    document.head.appendChild(canonical);
+  }
+  canonical.href = productionUrl;
   document.querySelectorAll('.m10-page #ky-thuat summary, .m10-page h2').forEach(function (element) {
     element.textContent = element.textContent.replace(/^\s*\d+(?:\.\d+)?\.?\s+/, '');
   });
