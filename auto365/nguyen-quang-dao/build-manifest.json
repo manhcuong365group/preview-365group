@@ -1,8 +1,8 @@
 {
   "buildId": "NQD-PROFILE-V3.1",
   "artifact": "Nguyen_Quang_Dao_Public_Profile_V3_Preview.html",
-  "buildSha": "dfca80a6ed92fd94cd660ca5db0781e953a4caf54ab6fe73b810139dd1b23364",
-  "fileSha": "70ddbce5a6253189a3a54144cdb328053ee0ab91bf37804e4b4d384a49ea44bc",
+  "buildSha": "7ba1dc724ed8dd542f9322b8e3e35aec409bcd38bfe08edb1fdd08252a958870",
+  "fileSha": "c669aa6348f4a9c9f94784b82888abe8216473ba28f9590fbf79f75e664bee14",
   "shaConvention": "buildSha = sha256 cua file khi meta auto365-build-sha giu gia tri placeholder __BUILD_SHA__. De verify: thay gia tri sha trong meta bang __BUILD_SHA__ roi hash lai, phai khop buildSha. fileSha = sha256 cua file sau khi da dong dau sha.",
   "canonical": "https://auto365.vn/tac-gia/nguyen-quang-dao",
   "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
@@ -11,11 +11,12 @@
   "generatedAt": "2026-07-31",
   "requiredResponseHeaders": {
     "X-Auto365-Build-ID": "NQD-PROFILE-V3.1",
-    "X-Auto365-Build-SHA": "dfca80a6ed92fd94cd660ca5db0781e953a4caf54ab6fe73b810139dd1b23364",
+    "X-Auto365-Build-SHA": "7ba1dc724ed8dd542f9322b8e3e35aec409bcd38bfe08edb1fdd08252a958870",
     "X-Robots-Tag": "index, follow"
   },
   "assetsTotalMB": 6.5,
   "liveUrl": "https://auto365.vn/tac-gia/nguyen-quang-dao",
   "deployedAt": "2026-08-01",
-  "note": "Sep da duyet va cho mo index ngay 01/08/2026. Ban tren CMS dung file NQD-ho-so-DAN-VAO-CMS.html (class tien to nqd-, khong header/footer/breadcrumb)."
+  "note": "Sep da duyet va cho mo index ngay 01/08/2026. Ban tren CMS dung file NQD-ho-so-DAN-VAO-CMS.html (class tien to nqd-, khong header/footer/breadcrumb).",
+  "scopeNote": "Tu 03/08/2026: NQD phu trach chuyen mon mang DEN (thay anh Bui Hung Viet) + toan bo hang muc con lai. Dang Minh Hoang phu trach phim cach nhiet/PPF/Wrap. Ho so anh Viet chua len live (404) nen khong co bai nao can go ten. Cap nhat 03/08: bo khoi scope-card thu 3 (Khong thuoc pham vi mac dinh), grid con 2 cot. Bai den doi tu \"Kinh nghiem nang cap anh sang mua mua\" sang \"BMW X6 F16 lap Bi Laser Titan Platinum Plus\"."
 }
