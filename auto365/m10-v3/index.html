@@ -231,3 +231,8 @@
     Nguồn dữ liệu: Catalogue/thông tin sản phẩm Titan Moto M10 Ultra V3, cập nhật 08/2026. Thông số, phụ kiện và giá có thể thay đổi theo lô hàng hoặc chính sách tại thời điểm tư vấn.
   </footer>
 </article>
+<script>
+  document.querySelectorAll('.m10-page #ky-thuat summary, .m10-page h2').forEach(function (element) {
+    element.textContent = element.textContent.replace(/^\s*\d+(?:\.\d+)?\.?\s+/, '');
+  });
+</script>
