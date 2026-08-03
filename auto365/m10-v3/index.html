@@ -230,6 +230,20 @@
     .m10-page .steps .step span{margin-top:5px!important}
   }
 </style>
+<style>
+  .m10-page .vehicle-tabs{display:none}
+  @media(max-width:680px){
+    .m10-page #ung-dung .table-wrap,.m10-page #ung-dung .application-legal-note{display:none}
+    .m10-page .vehicle-tabs{display:block;margin:14px 0 4px}
+    .m10-page .vehicle-tab-list{display:flex;gap:8px;margin-bottom:10px}
+    .m10-page .vehicle-tab{flex:1;padding:10px;border:1px solid var(--m10-line);border-radius:9px;background:#fff;color:#3d3143;font:inherit;font-weight:700}
+    .m10-page .vehicle-tab[aria-selected="true"]{border-color:#591772;background:#591772;color:#fff}
+    .m10-page .vehicle-panel{display:none;padding:15px;border:1px solid var(--m10-line);border-radius:12px;background:#fff}
+    .m10-page .vehicle-panel.is-active{display:block}
+    .m10-page .vehicle-panel p{margin:0 0 8px}
+    .m10-page .vehicle-panel p:last-child{margin-bottom:0}
+  }
+</style>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -258,7 +272,7 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"Product",
+  "@type":"ProductGroup",
   "name":"Đèn gầm dạng rời Titan Moto M10 Ultra V3",
   "description":"Đèn gầm dạng rời Titan Moto M10 Ultra V3 có Cos khoảng 28W, Pha khoảng 40W, hai tùy chọn nhiệt màu 5500K/5500K và 5500K/3000K, bảo hành 1 năm.",
   "url":"https://auto365.vn/den-gam-dang-roi-titan-moto-m10-ultra-v3",
@@ -271,6 +285,10 @@
     {"@type":"PropertyValue","name":"Nhiệt màu","value":"5500K/5500K hoặc 5500K/3000K"},
     {"@type":"PropertyValue","name":"Điện áp hỗ trợ","value":"12V–16V"},
     {"@type":"PropertyValue","name":"Bảo hành","value":"1 năm"}
+  ],
+  "hasVariant":[
+    {"@type":"Product","name":"Titan Moto M10 Ultra V3 5500K/5500K","additionalProperty":[{"@type":"PropertyValue","name":"Nhiệt màu","value":"5500K/5500K"}],"offers":{"@type":"Offer","priceCurrency":"VND","price":"2000000","availability":"https://schema.org/InStock","url":"https://auto365.vn/den-gam-dang-roi-titan-moto-m10-ultra-v3"}},
+    {"@type":"Product","name":"Titan Moto M10 Ultra V3 5500K/3000K","additionalProperty":[{"@type":"PropertyValue","name":"Nhiệt màu","value":"5500K/3000K"}],"offers":{"@type":"Offer","priceCurrency":"VND","price":"2000000","availability":"https://schema.org/InStock","url":"https://auto365.vn/den-gam-dang-roi-titan-moto-m10-ultra-v3"}}
   ],
   "offers":{"@type":"Offer","priceCurrency":"VND","price":"2000000","availability":"https://schema.org/InStock","url":"https://auto365.vn/den-gam-dang-roi-titan-moto-m10-ultra-v3"}
 }
@@ -327,6 +345,19 @@
     legalNote.className = 'note application-legal-note';
     legalNote.textContent = 'Lưu ý: việc sử dụng và kiểm định phụ thuộc vào từng xe, vị trí lắp, góc chiếu và quy định hiện hành.';
     applicationTable.closest('.table-wrap').insertAdjacentElement('afterend', legalNote);
+  }
+  if (applicationSection && !applicationSection.querySelector('.vehicle-tabs')) {
+    var vehicleTabs = document.createElement('div');
+    vehicleTabs.className = 'vehicle-tabs';
+    vehicleTabs.innerHTML = '<div class="vehicle-tab-list" role="tablist" aria-label="Chọn nhóm phương tiện"><button class="vehicle-tab" type="button" role="tab" aria-selected="true" aria-controls="vehicle-panel-moto">Xe máy</button><button class="vehicle-tab" type="button" role="tab" aria-selected="false" aria-controls="vehicle-panel-auto">Ô tô</button></div><div id="vehicle-panel-moto" class="vehicle-panel is-active" role="tabpanel"><p><strong>Vị trí lắp:</strong> Chân gương, chân phuộc hoặc vị trí phù hợp.</p><p><strong>Thời gian tham khảo:</strong> Khoảng 1–2 giờ.</p><p><strong>Cần kiểm tra:</strong> Vị trí gắn, nguồn điện, pát và phụ kiện.</p></div><div id="vehicle-panel-auto" class="vehicle-panel" role="tabpanel"><p><strong>Vị trí lắp:</strong> Cản trước, hốc gió hoặc hốc biển số, tùy xe.</p><p><strong>Thời gian tham khảo:</strong> Khoảng 2–3 giờ.</p><p><strong>Cần kiểm tra:</strong> Cản trước, pát, giắc và phương án đi dây.</p></div>';
+    vehicleTabs.querySelectorAll('.vehicle-tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var panelId = tab.getAttribute('aria-controls');
+        vehicleTabs.querySelectorAll('.vehicle-tab').forEach(function (item) { item.setAttribute('aria-selected', String(item === tab)); });
+        vehicleTabs.querySelectorAll('.vehicle-panel').forEach(function (panel) { panel.classList.toggle('is-active', panel.id === panelId); });
+      });
+    });
+    applicationTable.closest('.table-wrap').insertAdjacentElement('beforebegin', vehicleTabs);
   }
   if (applicationSection && !document.querySelector('.m10-page .application-visual')) {
     var applicationVisual = document.createElement('figure');
