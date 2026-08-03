@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://auto365.vn/tac-gia/nguyen-quang-dao">
   <meta name="robots" content="noindex,nofollow,noarchive,max-image-preview:large">
   <meta name="auto365-build-id" content="NQD-PROFILE-V3.1">
-  <meta name="auto365-build-sha" content="7ba1dc724ed8dd542f9322b8e3e35aec409bcd38bfe08edb1fdd08252a958870">
+  <meta name="auto365-build-sha" content="3724e8a1da837f874932c27290b68b08aedb381a7b69585eb6ffa7f58a5b99ae">
   <meta name="auto365-release-status" content="hold-noindex">
 
   <meta property="og:locale" content="vi_VN">
@@ -400,20 +400,14 @@
     .filter-btn { min-height: 38px; padding: 8px 13px; border: 1px solid var(--line); border-radius: 999px; background: var(--white); color: var(--muted); font-size: 13px; font-weight: 800; }
     .filter-btn:hover, .filter-btn.is-active { border-color: var(--black); background: var(--black); color: var(--white); }
     .content-count { color: var(--muted); font-size: 13px; font-weight: 800; }
-    .article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .article-card { display: flex; flex-direction: column; min-height: 268px; padding: 23px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .article-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .article-card { display: flex; flex-direction: column; min-height: 250px; padding: 22px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--white); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
     .article-card:hover { transform: translateY(-3px); border-color: #c9ccd1; box-shadow: var(--shadow-sm); }
     .article-card[hidden] { display: none; }
-    .article-card:first-child { grid-column: span 2; min-height: 236px; color: var(--white); border-color: var(--black); background: linear-gradient(125deg, #111419, #252a31); }
-    .article-card:first-child h3 { max-width: 620px; color: var(--white); font-size: clamp(22px, 2vw, 28px); }
-    .article-card:first-child p { max-width: 620px; color: rgba(255,255,255,.72); }
-    .article-card:first-child .article-link { color: var(--white); }
-    .article-card:first-child .status-scope { background: rgba(255,255,255,.12); color: rgba(255,255,255,.82); }
     .article-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
     .article-category { color: var(--red); font-size: 11px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
     .status-scope { display: inline-flex; align-items: center; gap: 6px; padding: 5px 8px; border-radius: 999px; background: var(--soft); color: var(--muted); font-size: 10px; font-weight: 850; white-space: nowrap; }
     .status-scope.reviewed { background: var(--green-soft); color: var(--green); }
-    .article-card:first-child .status-scope.reviewed { background: rgba(234,247,240,.16); color: #b8efd2; }
     .article-card h3 { margin: 20px 0 12px; font-size: 20px; line-height: 1.35; }
     .article-card p { color: var(--muted); font-size: 14px; }
     .article-link { margin-top: auto; color: var(--black); font-weight: 600; text-decoration: none; }
@@ -475,7 +469,6 @@
       .source-card { left: -20px; }
       .article-grid, .case-grid, .insight-grid { grid-template-columns: 1fr 1fr; }
       .gallery-grid { gap: 14px; }
-      .article-card:first-child { grid-column: span 2; }
     }
     @media (max-width: 900px) {
       .gallery-grid { grid-template-columns: 1fr 1fr; }
@@ -506,7 +499,6 @@
       .timeline-card::before { left: -35px; }
       .review-module, .faq-intro { position: static; }
       .article-grid, .gallery-grid, .case-grid, .insight-grid { grid-template-columns: 1fr; }
-      .article-card:first-child { grid-column: auto; }
       .content-toolbar { align-items: flex-start; flex-direction: column; }
       .faq-grid { gap: 26px; }
       .footer-grid { grid-template-columns: 1fr; }
