@@ -247,6 +247,24 @@
   var comparisonSection = document.querySelector('.m10-page #so-sanh');
   if (comparisonSection) comparisonSection.style.display = 'block';
   var applicationSection = document.querySelector('.m10-page #ung-dung');
+  var applicationTable = applicationSection && applicationSection.querySelector('table');
+  if (applicationTable) {
+    var applicationRows = applicationTable.rows;
+    if (applicationRows[1]) {
+      applicationRows[1].cells[1].textContent = 'Chân gương, chân phuộc hoặc vị trí phù hợp.';
+      applicationRows[1].cells[2].textContent = 'Cản trước, hốc gió hoặc hốc biển số, tùy xe.';
+    }
+    if (applicationRows[3]) {
+      applicationRows[3].cells[0].textContent = 'Kiểm tra trước lắp';
+      applicationRows[3].cells[1].textContent = 'Kiểm tra vị trí gắn, điện, pát và phụ kiện.';
+      applicationRows[3].cells[2].textContent = 'Kiểm tra cản trước, pát, giắc và phương án đi dây.';
+    }
+    if (applicationRows[4]) applicationRows[4].remove();
+    var legalNote = document.createElement('p');
+    legalNote.className = 'note application-legal-note';
+    legalNote.textContent = 'Lưu ý: việc sử dụng và kiểm định phụ thuộc vào từng xe, vị trí lắp, góc chiếu và quy định hiện hành.';
+    applicationTable.closest('.table-wrap').insertAdjacentElement('afterend', legalNote);
+  }
   if (applicationSection && !document.querySelector('.m10-page .application-visual')) {
     var applicationVisual = document.createElement('figure');
     applicationVisual.className = 'application-visual';
