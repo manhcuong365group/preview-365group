@@ -246,4 +246,12 @@
   });
   var comparisonSection = document.querySelector('.m10-page #so-sanh');
   if (comparisonSection) comparisonSection.style.display = 'block';
+  var applicationSection = document.querySelector('.m10-page #ung-dung');
+  if (applicationSection && !document.querySelector('.m10-page .application-visual')) {
+    var applicationVisual = document.createElement('figure');
+    applicationVisual.className = 'application-visual';
+    applicationVisual.style.maxWidth = '1180px';
+    applicationVisual.innerHTML = '<img src="images/image6.jpg" alt="Titan Moto M10 Ultra V3 lắp cho xe máy và một số vị trí ô tô"><figcaption>Đèn gầm dạng rời Titan Moto M10 Ultra V3 cho xe máy và một số vị trí ô tô.</figcaption>';
+    applicationSection.insertAdjacentElement('afterend', applicationVisual);
+  }
 </script>
