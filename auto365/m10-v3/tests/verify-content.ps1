@@ -30,7 +30,6 @@ Assert-Condition ($product.offers.availability -eq 'https://schema.org/InStock')
 $requiredLinks = @(
   'https://auto365.vn/den-tro-sang-titan-moto-m10-ultra',
   'https://auto365.vn/den-tro-sang-m10-ultra-v2',
-  'https://auto365.vn/tac-gia/nguyen-quang-dao',
   'https://auto365.vn/den-gam-dang-roi',
   'https://auto365.vn/den-gam-dang-roi-o-to-gia-bao-nhieu'
 )
@@ -38,6 +37,7 @@ foreach ($url in $requiredLinks) {
   Assert-Condition ($page.Contains($url)) "Missing required internal link: $url"
 }
 Assert-Condition (-not $page.Contains('class="related-links"')) 'Internal links must run naturally in article copy, not in a separate related-links block.'
+Assert-Condition (-not $page.Contains('https://auto365.vn/tac-gia/nguyen-quang-dao')) 'Unrelated author profile link must not appear on this page.'
 $comparisonSection = [regex]::Match($page, '<section id="so-sanh">([\s\S]*?)</section>')
 Assert-Condition ($comparisonSection.Success) 'Comparison section is missing.'
 Assert-Condition ($comparisonSection.Groups[1].Value.Contains('https://auto365.vn/den-tro-sang-titan-moto-m10-ultra')) 'M10 Ultra family link must be in the comparison section.'
