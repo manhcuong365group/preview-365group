@@ -37,6 +37,7 @@ $requiredLinks = @(
 foreach ($url in $requiredLinks) {
   Assert-Condition ($page.Contains($url)) "Missing required internal link: $url"
 }
+Assert-Condition (-not $page.Contains('class="related-links"')) 'Internal links must run naturally in article copy, not in a separate related-links block.'
 
 $faqCount = ([regex]::Matches($page, '<details><summary>C')).Count
 Assert-Condition ($faqCount -eq 10) "FAQ count must remain 10; found $faqCount."
