@@ -50,6 +50,7 @@ Assert-Condition (-not $page.Contains('.m10-page #so-sanh{display:none')) 'Compa
 Assert-Condition ($page -match '<nav class="section-menu"[\s\S]*?href="#so-sanh"') 'Section menu must link to the comparison section.'
 Assert-Condition ($page.Contains('260804_')) 'Page must include the Kia Sorento installation photo.'
 Assert-Condition ($page.Contains('viewport-fit=cover')) 'Page must configure a mobile viewport.'
+Assert-Condition ($page.Contains('.m10-page{box-sizing:border-box;width:100%')) 'Mobile page container must include padding within its width.'
 
 $faqCount = ([regex]::Matches($page, '<details><summary>C')).Count
 Assert-Condition ($faqCount -eq 10) "FAQ count must remain 10; found $faqCount."

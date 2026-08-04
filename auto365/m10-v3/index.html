@@ -12,7 +12,7 @@
 <style>.m10-page .quick a,.m10-page .cta h2 a{color:#fff;text-decoration:underline;text-underline-offset:3px}.m10-page .source a{color:var(--m10-blue);font-weight:600}</style>
 <style>
   @media (max-width:700px){
-    .m10-page{width:100%;max-width:none;margin:0;padding:0 14px;font-size:16px;line-height:1.6}
+    .m10-page{box-sizing:border-box;width:100%;max-width:none;margin:0;padding:0 14px;font-size:16px;line-height:1.6}
     .m10-page .breadcrumb{padding:10px 0;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .m10-page .product-head{gap:18px;padding:0 0 24px}
     .m10-page .product-gallery{margin:0 -14px}
@@ -27,8 +27,9 @@
     .m10-page .quick,.m10-page .callout,.m10-page .cta,.m10-page #ky-thuat,.m10-page .process{padding:16px}
     .m10-page #thong-so .table-wrap{margin-left:-14px;margin-right:-14px;padding:0 14px}
     .m10-page #thong-so table{min-width:620px}
-    .m10-page .application-visual{margin:18px 0!important}
-    .m10-page .application-visual figcaption{font-size:12px;text-align:left}
+    .m10-page .application-visual{width:100%;max-width:none;margin:18px 0!important;overflow:hidden}
+    .m10-page .application-visual img{width:100%;border-radius:12px}
+    .m10-page .application-visual figcaption{padding:0;font-size:12px;text-align:left}
   }
 </style>
 
