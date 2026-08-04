@@ -10,6 +10,27 @@
   .m10-page .section-menu{position:sticky;top:0;z-index:10;display:flex;gap:8px;overflow-x:auto;margin:0 0 18px;padding:10px 0;background:rgba(255,255,255,.96);border-bottom:1px solid var(--m10-line);scrollbar-width:none}.m10-page .section-menu::-webkit-scrollbar{display:none}.m10-page .section-menu a{flex:0 0 auto;padding:7px 12px;border:1px solid var(--m10-line);border-radius:999px;color:#3d3143;background:#fff;font-size:13px;font-weight:600;line-height:1.2;text-decoration:none;transition:.2s}.m10-page .section-menu a:hover{color:#fff;background:var(--m10-blue);border-color:var(--m10-blue)}.m10-page .toc,.m10-page #ai-nen-chon{display:none}@media(max-width:700px){.m10-page .section-menu{margin-bottom:14px}.m10-page .section-menu a{padding:7px 10px;font-size:12px}}
 </style>
 <style>.m10-page .quick a,.m10-page .cta h2 a{color:#fff;text-decoration:underline;text-underline-offset:3px}.m10-page .source a{color:var(--m10-blue);font-weight:600}</style>
+<style>
+  @media (max-width:700px){
+    .m10-page{width:100%;max-width:none;margin:0;padding:0 14px;font-size:16px;line-height:1.6}
+    .m10-page .breadcrumb{padding:10px 0;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .m10-page .product-head{gap:18px;padding:0 0 24px}
+    .m10-page .product-gallery{margin:0 -14px}
+    .m10-page .media-slot{border-radius:0;box-shadow:none}
+    .m10-page .media-slot img{aspect-ratio:4/3}
+    .m10-page .thumb-strip{padding:0 14px}
+    .m10-page .product-head .lead{display:block;font-size:15px;overflow:visible}
+    .m10-page .price{font-size:28px}
+    .m10-page .fact-row{grid-template-columns:106px 1fr;gap:10px;padding:9px 0;font-size:13px}
+    .m10-page h2{font-size:23px;margin:24px 0 10px}
+    .m10-page section{margin-top:20px;margin-bottom:20px}
+    .m10-page .quick,.m10-page .callout,.m10-page .cta,.m10-page #ky-thuat,.m10-page .process{padding:16px}
+    .m10-page #thong-so .table-wrap{margin-left:-14px;margin-right:-14px;padding:0 14px}
+    .m10-page #thong-so table{min-width:620px}
+    .m10-page .application-visual{margin:18px 0!important}
+    .m10-page .application-visual figcaption{font-size:12px;text-align:left}
+  }
+</style>
 
 <article class="m10-page">
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Trang chủ</a> › <a href="/anh-sang">Ánh sáng</a> › <a href="/den-gam-dang-roi">Đèn gầm dạng rời</a> › Titan Moto M10 Ultra V3</nav>
@@ -302,6 +323,13 @@
   var pageTitle = 'Đèn gầm dạng rời Titan Moto M10 Ultra V3: Giá, thông số và tư vấn lắp đặt';
   var pageDescription = 'Titan Moto M10 Ultra V3: Cos khoảng 28W, Pha khoảng 40W, hai lựa chọn nhiệt màu, IP68 theo công bố và bảo hành 1 năm. Tư vấn lắp theo từng xe tại Auto365.';
   document.title = pageTitle;
+  var viewport = document.head.querySelector('meta[name="viewport"]');
+  if (!viewport) {
+    viewport = document.createElement('meta');
+    viewport.name = 'viewport';
+    document.head.appendChild(viewport);
+  }
+  viewport.content = 'width=device-width, initial-scale=1, viewport-fit=cover';
   function upsertPageMeta(attribute, key, value) {
     var selector = 'meta[' + attribute + '="' + key + '"]';
     var meta = document.head.querySelector(selector);

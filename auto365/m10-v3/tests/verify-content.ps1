@@ -49,6 +49,7 @@ Assert-Condition ($comparisonSection.Groups[1].Value.Contains('https://auto365.v
 Assert-Condition (-not $page.Contains('.m10-page #so-sanh{display:none')) 'Comparison section must remain visible.'
 Assert-Condition ($page -match '<nav class="section-menu"[\s\S]*?href="#so-sanh"') 'Section menu must link to the comparison section.'
 Assert-Condition ($page.Contains('260804_')) 'Page must include the Kia Sorento installation photo.'
+Assert-Condition ($page.Contains('viewport-fit=cover')) 'Page must configure a mobile viewport.'
 
 $faqCount = ([regex]::Matches($page, '<details><summary>C')).Count
 Assert-Condition ($faqCount -eq 10) "FAQ count must remain 10; found $faqCount."
