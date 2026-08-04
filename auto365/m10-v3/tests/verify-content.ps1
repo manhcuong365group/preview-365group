@@ -26,6 +26,9 @@ Assert-Condition ($null -ne $product) 'Expected Product JSON-LD.'
 Assert-Condition ($product.'@type' -eq 'Product') 'Product schema must use one Product entity.'
 Assert-Condition ($null -eq $product.hasVariant) 'Product schema must not contain hasVariant without individual SKUs.'
 Assert-Condition ($product.offers.availability -eq 'https://schema.org/InStock') 'Product availability must remain InStock.'
+Assert-Condition ($product.offers.itemCondition -eq 'https://schema.org/NewCondition') 'Product offer must identify the item as new.'
+Assert-Condition ($product.offers.seller.name -eq 'Auto365.vn') 'Product offer must identify Auto365.vn as seller.'
+Assert-Condition ($page.Contains('driver')) 'Product bundle must name the driver.'
 
 $requiredLinks = @(
   'https://auto365.vn/den-tro-sang-titan-moto-m10-ultra',
@@ -43,6 +46,9 @@ $comparisonSection = [regex]::Match($page, '<section id="so-sanh">([\s\S]*?)</se
 Assert-Condition ($comparisonSection.Success) 'Comparison section is missing.'
 Assert-Condition ($comparisonSection.Groups[1].Value.Contains('https://auto365.vn/den-tro-sang-titan-moto-m10-ultra')) 'M10 Ultra family link must be in the comparison section.'
 Assert-Condition ($comparisonSection.Groups[1].Value.Contains('https://auto365.vn/den-tro-sang-m10-ultra-v2')) 'M10 Ultra V2 link must be in the comparison section.'
+Assert-Condition (-not $page.Contains('.m10-page #so-sanh{display:none')) 'Comparison section must remain visible.'
+Assert-Condition ($page -match '<nav class="section-menu"[\s\S]*?href="#so-sanh"') 'Section menu must link to the comparison section.'
+Assert-Condition ($page.Contains('260804_')) 'Page must include the Kia Sorento installation photo.'
 
 $faqCount = ([regex]::Matches($page, '<details><summary>C')).Count
 Assert-Condition ($faqCount -eq 10) "FAQ count must remain 10; found $faqCount."
