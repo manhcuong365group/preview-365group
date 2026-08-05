@@ -105,7 +105,9 @@
     .pkg-card{transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease}
     .pkg-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06);border-color:var(--a365-red)}
     .pkg-card .viz-badge{align-self:flex-start;font-size:10.5px;font-weight:700;padding:4px 10px;letter-spacing:.03em}
-    @media(max-width:639px){#film-match .fm-grid>label>span{font-size:13px}#film-match .fm-grid select{font-size:13px;padding-left:8px;padding-right:22px;background-position:right 6px center}}
+    @media(min-width:370px) and (max-width:1023px){.fm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:1023px){#film-match .fm-grid>label>span{display:block;font-size:13px;min-height:2.4em}}
+    @media(max-width:639px){#film-match .fm-grid select{font-size:13px;padding-left:8px;padding-right:22px;background-position:right 6px center}}
     a.pkg-cta{font-size:11px;line-height:1.4}
     @media(min-width:1100px){a.pkg-cta{font-size:11.5px}}
     .pkg-card h3{font-size:16px;font-weight:600;margin-top:12px}
@@ -389,7 +391,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="mt-2 text-[var(--muted)]" data-answer="">Cấu hình phù hợp tùy theo nhu cầu, nhóm xe và ngân sách. Chọn 3 mục dưới đây để xem gợi ý ban đầu; mã phim cuối cùng sẽ được chốt theo kính nguyên bản và thói quen sử dụng thực tế của xe bạn.</p>
 </div>
 <div class="card space-y-6 p-5 md:p-6">
-<div class="fm-grid grid grid-cols-2 gap-3 md:gap-5 lg:grid-cols-4">
+<div class="fm-grid grid grid-cols-1 gap-3 md:gap-5 lg:grid-cols-4">
 <label class="block"><span class="mb-2 block font-medium">1. Nhu cầu chính</span><select class="w-full rounded-xl border bg-white px-3 py-3 text-base" id="need-select"><option value="heat">Giảm nhiệt</option><option value="night">Đi đêm</option><option value="family">Chở gia đình</option><option value="premium">Cao cấp</option></select></label>
 
 <label class="block"><span class="mb-2 block font-medium">2. Hãng xe</span><select class="w-full rounded-xl border bg-white px-3 py-3 text-base" id="vehicle-brand"><option value="">Chọn hãng xe</option><option value="vinfast">VinFast</option><option value="toyota">Toyota</option><option value="mazda">Mazda</option><option value="honda">Honda</option><option value="ford">Ford</option><option value="hyundai">Hyundai</option><option value="kia">Kia</option><option value="mitsubishi">Mitsubishi</option><option value="nissan">Nissan</option><option value="mercedes">Mercedes-Benz</option><option value="bmw">BMW</option><option value="audi">Audi</option><option value="lexus">Lexus</option><option value="volvo">Volvo</option><option value="volkswagen">Volkswagen</option><option value="peugeot">Peugeot</option><option value="suzuki">Suzuki</option><option value="subaru">Subaru</option><option value="mg">MG</option><option value="porsche">Porsche</option><option value="landrover">Land Rover</option></select></label>
