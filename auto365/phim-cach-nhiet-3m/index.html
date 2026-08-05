@@ -459,7 +459,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <button class="rounded-xl border px-5 py-3 font-medium" id="copy-lead-config" type="button">Sao chép cấu hình</button>
 </div>
 </div><form action="/api/leads" hidden="" id="lead-form" method="post">
-<div class="mt-4 grid gap-4 md:grid-cols-2"><label>Họ và tên<input autocomplete="name" class="mt-1 w-full rounded-xl border px-3 py-3" name="customer_name" placeholder="Nguyễn Văn A (không bắt buộc)"/></label>
+<div class="mt-4 grid gap-4 md:grid-cols-2"><label>Họ và tên <span class="a365-text">*</span><input autocomplete="name" class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-name" name="customer_name" placeholder="Nguyễn Văn A" required=""/></label>
 <label>Số điện thoại <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-phone" name="phone" placeholder="0xxx xxx xxx" required="" type="tel"/></label></div>
 <div class="mt-4 grid gap-4 md:grid-cols-3"><label>Hãng xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-brand" name="brand" placeholder="VinFast" list="brand-list" required=""/></label>
 <div><label>Model xe <span class="a365-text">*</span><input class="mt-1 w-full rounded-xl border px-3 py-3" id="lead-model" name="model" placeholder="VF8" required=""/></label>
