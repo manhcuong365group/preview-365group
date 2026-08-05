@@ -219,16 +219,6 @@
     .metric-legend>div{display:flex;gap:7px;align-items:baseline}
     .metric-legend dt{flex:0 0 auto;font-size:11px;font-weight:700;color:var(--a365-red);letter-spacing:.02em}
     .metric-legend dd{margin:0;font-size:11.5px;color:var(--muted);line-height:1.45}
-    .cert-more{margin:10px 0 0;padding:10px 0 0;border-top:1px solid var(--border)}
-    .cert-more>summary{cursor:pointer;list-style:none;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);display:flex;align-items:center;gap:5px}
-    .cert-more>summary::-webkit-details-marker{display:none}
-    .cert-more>summary::before{content:"+";font-size:13px;line-height:1;color:var(--a365-red);font-weight:700}
-    .cert-more[open]>summary::before{content:"−"}
-    .cert-more>summary:hover{color:var(--a365-red)}
-    .cert-meta-in{margin:9px 0 0;padding:0;display:grid;gap:5px}
-    .cert-meta-in>div{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:baseline}
-    .cert-meta-in dt{font-size:10.5px;text-transform:uppercase;letter-spacing:.03em;color:var(--muted);font-weight:600}
-    .cert-meta-in dd{margin:0;font-size:11.5px;color:var(--text);line-height:1.45}
     /* Dải quyền lợi đi kèm — dưới bảng giá */
     .hub-card{display:flex;flex-direction:column}
     .hub-foot{margin-top:auto;padding-top:14px}
@@ -259,6 +249,7 @@
     .fm-tier:hover{border-color:#c9c9c9}
     .fm-tier[aria-current="true"]{border-color:var(--a365-red);background:#fffafa}
     .fm-tier[aria-current="true"]:hover{transform:none;border-color:var(--a365-red)}
+    .fm-tier-picked{margin-top:8px;font-size:11px;font-weight:700;color:var(--a365-red)}
     .fm-tier-tag{display:inline-flex;align-self:flex-start;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(215,25,32,.10);color:var(--a365-red)}
     .fm-tier[aria-current="true"] .fm-tier-tag{background:var(--a365-red);color:#fff}
     .fm-tier-name{font-size:15px;font-weight:650;line-height:1.3;min-height:2.6em}
@@ -955,20 +946,12 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="a365-text text-sm font-medium">Chứng nhận 01</div>
 <h3 class="mt-2 font-medium">3M™ Pro Shop Certificate</h3>
 <p class="mt-2 text-sm text-[var(--muted)]">Chứng nhận mô hình 3M Pro Shop theo phạm vi thể hiện trên chứng nhận; dùng để đối chiếu tiêu chuẩn điểm dịch vụ và nguồn vật liệu.</p>
-<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
-<div><dt>Đơn vị cấp</dt><dd>3M Vietnam Limited</dd></div>
-<div><dt>Hiệu lực</dt><dd>06/2026 – 06/2029</dd></div>
-</dl></details>
 </div>
 <div class="viz-node">
 <div class="proof-img"><img alt="Chứng nhận 3M Premium Auto Products Preferred Installer cấp cho Auto365.vn Trụ Sở Chính" decoding="async" fetchpriority="low" height="600" loading="lazy" src="hinh/cert-preferred-installer.jpg" width="800"/></div>
 <div class="a365-text text-sm font-medium">Chứng nhận 02</div>
 <h3 class="mt-2 font-medium">Preferred Installer</h3>
 <p class="mt-2 text-sm text-[var(--muted)]">3M™ Premium Auto Products Preferred Installer cấp cho Auto365.vn - Trụ Sở Chính theo phạm vi thể hiện trên chứng nhận.</p>
-<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
-<div><dt>Đơn vị cấp</dt><dd>3M — Commercial Branding and Transportation</dd></div>
-<div><dt>Ngày cấp</dt><dd>20/06/2026</dd></div>
-</dl></details>
 </div>
 <div class="viz-node">
 <div class="proof-img"><img alt="Lễ trao chứng nhận 3M Pro Shop &amp; 3M Training Center cho Auto365 tại sự kiện 365Group" decoding="async" fetchpriority="low" height="600" loading="lazy" src="hinh/cert-training-center-event.jpg" width="800"/></div>
@@ -982,10 +965,6 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <h3 class="mt-2 font-medium">365Group — Nhà phân phối ủy quyền</h3>
 <div class="text-xs a365-text font-medium">3M Authorized Distributor in Vietnam</div>
 <p class="mt-2 text-sm text-[var(--muted)]">Distributor Certificate xác nhận 365Group là nhà phân phối ủy quyền phim cách nhiệt &amp; PPF 3M tại Việt Nam. <a href="https://3m.365group.com.vn/" target="_blank" rel="noopener" class="a365-text font-medium">Xem hồ sơ phân phối 3M trên website 365Group →</a></p>
-<details class="cert-more"><summary>Thông tin trên chứng nhận</summary><dl class="cert-meta-in">
-<div><dt>Đơn vị cấp</dt><dd>3M Vietnam Limited</dd></div>
-<div><dt>Hiệu lực</dt><dd>01/03/2023 – 31/12/2026</dd></div>
-</dl></details>
 </div>
 </div>
 </section><section class="space-y-5 defer-render" id="xuong-doi-ngu">
@@ -1434,7 +1413,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   const tierOrder=['under8','8to11','11to15','over15'];
   const budgetPackage={under8:'ceramic-hybrid','8to11':'ceramic-ir','11to15':'crystalline-hybrid',over15:'crystalline-cr-blk'};
   const budgetCap={under8:8000000,'8to11':11000000,'11to15':15000000,over15:Infinity};
-  const state={need:'heat',currentPackage:'ceramic-hybrid',configId:'',configText:'',comparisonPackage:'',comparisonPrice:'',brand:'',model:''};
+  const state={need:'heat',lockTiers:null,currentPackage:'ceramic-hybrid',configId:'',configText:'',comparisonPackage:'',comparisonPrice:'',brand:'',model:''};
   window.dataLayer=window.dataLayer||[];
   const track=(event,payload={})=>window.dataLayer.push({event,...payload});
   const money=n=>new Intl.NumberFormat('vi-VN').format(n)+'đ';
@@ -1474,11 +1453,12 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
     (()=>{const sum=document.getElementById('mcta-sum');if(!sum||!byUser)return;const vLabel={minicar:'Minicar',sedan:'Sedan',suv:'SUV / MPV'}[vehicle]||vehicle;sum.innerHTML='<span><b>'+(pkg.shortName||pkg.name)+'</b> · '+vLabel+'</span><span class="mcta-price">'+money(price)+'</span>';sum.hidden=false;})();
     if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-tiers');altBox.innerHTML='';
-    if(alt&&state.fmStarted){const tiers=tierList(vehicle);let idx=tiers.findIndex(t=>t.key===pkgKey);if(idx<0)idx=0;let start=Math.max(0,Math.min(idx-1,tiers.length-3));const win=tiers.slice(start,start+3);const up=win.find(t=>packages[t.key].prices[vehicle]>price),down=[...win].reverse().find(t=>packages[t.key].prices[vehicle]<price),comp=up||down;if(comp){state.comparisonPackage=packages[comp.key].name;state.comparisonPrice=packages[comp.key].prices[vehicle];}else{state.comparisonPackage='';state.comparisonPrice='';}
-      altBox.classList.remove('hidden');altBox.innerHTML=win.map(t=>{const tp=packages[t.key],tprice=tp.prices[vehicle],tc=packageCodes(tp),cur=t.key===pkgKey,diff=tprice-price;const tag=cur?'Đang đề xuất':diff>0?'▲ Nâng cấp':'▼ Tiết kiệm hơn';const note=cur?'Phù hợp nhu cầu và ngân sách anh/chị vừa chọn.':diff>0?'Thêm khoảng '+tr(diff)+' so với gói đang đề xuất.':'Giảm khoảng '+tr(-diff)+' so với gói đang đề xuất.';return '<button type="button" class="fm-tier" aria-current="'+(cur?'true':'false')+'" data-tier-key="'+t.key+'" data-tier-budget="'+t.budget+'"><span class="fm-tier-tag">'+tag+'</span><span class="fm-tier-name">'+tp.name+'</span><span class="fm-tier-price">'+money(tprice)+'</span><span class="fm-tier-note">'+note+'</span><span class="fm-tier-codes">Kính lái '+tc.front+' · sườn và lưng '+tc.side+'</span></button>';}).join('');
-      altBox.querySelectorAll('.fm-tier').forEach(b=>b.addEventListener('click',()=>{if(b.getAttribute('aria-current')==='true')return;const bd=b.dataset.tierBudget;q('#budget').value=bd;render(b.dataset.tierKey,vehicle,bd,a,true);}));}else{state.comparisonPackage='';state.comparisonPrice='';altBox.classList.add('hidden');}
+    if(alt&&state.fmStarted){let lock=state.lockTiers;if(!lock||!lock.win.some(t=>t.key===pkgKey)){const tiers=tierList(vehicle);let idx=tiers.findIndex(t=>t.key===pkgKey);if(idx<0)idx=0;const start=Math.max(0,Math.min(idx-1,tiers.length-3));lock={win:tiers.slice(start,start+3),recKey:pkgKey,recPrice:price};state.lockTiers=lock;}
+      const win=lock.win,base=lock.recPrice;const up=win.find(t=>packages[t.key].prices[vehicle]>price),down=[...win].reverse().find(t=>packages[t.key].prices[vehicle]<price),comp=up||down;if(comp){state.comparisonPackage=packages[comp.key].name;state.comparisonPrice=packages[comp.key].prices[vehicle];}else{state.comparisonPackage='';state.comparisonPrice='';}
+      altBox.classList.remove('hidden');altBox.innerHTML=win.map(t=>{const tp=packages[t.key],tprice=tp.prices[vehicle],tc=packageCodes(tp),cur=t.key===pkgKey,rec=t.key===lock.recKey,diff=tprice-base;const tag=rec?'Đề xuất cho xe của bạn':diff>0?'▲ Nâng cấp':'▼ Tiết kiệm hơn';const note=rec?'Phù hợp nhu cầu và ngân sách anh/chị vừa chọn.':diff>0?'Thêm khoảng '+tr(diff)+' so với gói đề xuất.':'Giảm khoảng '+tr(-diff)+' so với gói đề xuất.';return '<button type="button" class="fm-tier" aria-current="'+(cur?'true':'false')+'" data-tier-key="'+t.key+'" data-tier-budget="'+t.budget+'"><span class="fm-tier-tag">'+tag+'</span><span class="fm-tier-name">'+tp.name+'</span><span class="fm-tier-price">'+money(tprice)+'</span><span class="fm-tier-note">'+note+'</span><span class="fm-tier-codes">Kính lái '+tc.front+' · sườn và lưng '+tc.side+'</span>'+(cur?'<span class="fm-tier-picked">✓ Đang chọn</span>':'')+'</button>';}).join('');
+      altBox.querySelectorAll('.fm-tier').forEach(b=>b.addEventListener('click',()=>{if(b.getAttribute('aria-current')==='true')return;const bd=b.dataset.tierBudget;q('#budget').value=bd;render(b.dataset.tierKey,vehicle,bd,a,true);}));}else{state.lockTiers=null;state.comparisonPackage='';state.comparisonPrice='';altBox.classList.add('hidden');}
   }
-  function compute(scroll=true,byUser=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,vehicle,a);render(key,vehicle,budget,a,true,byUser);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}if(byUser)track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
+  function compute(scroll=true,byUser=true){state.lockTiers=null;const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,vehicle,a);render(key,vehicle,budget,a,true,byUser);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}if(byUser)track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
   q('#recommend')?.addEventListener('click',()=>compute(true));['#vehicle','#budget','#night-frequency','#windshield-pref','#privacy-pref','#sunroof-pref'].forEach(sel=>q(sel)?.addEventListener('change',()=>compute(false)));compute(false,false);
 
   root.querySelectorAll('.open-quote[data-package-key]').forEach(btn=>btn.addEventListener('click',()=>{const key=btn.dataset.packageKey,pkg=packages[key];if(pkg){q('#budget').value=pkg.budget;state.need=pkg.defaultNeed;if(q('#need-select'))q('#need-select').value=state.need;q('#night-frequency').value='auto';q('#privacy-pref').value='auto';q('#sunroof-pref').value='none';q('#windshield-pref').value=pkg.level==='pro'?'darker':(pkg.family==='ir'?'bright':'auto');render(key,q('#vehicle').value,pkg.budget,advanced(),true);}track('package_preset_select',{package_key:key,package_name:pkg?.shortName||btn.dataset.packageName});}));
