@@ -254,6 +254,7 @@
     #result-tiers.alt-in{animation:altIn .38s cubic-bezier(.2,.7,.3,1)}
     #result-tiers{display:grid;gap:12px;grid-template-columns:1fr}
     @media(min-width:768px){#result-tiers{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    #film-match select{padding-right:38px;text-overflow:ellipsis}
     .fm-tier{display:flex;flex-direction:column;gap:6px;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--border);background:#fff;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
     .fm-tier:hover{transform:translateY(-1px);border-color:var(--a365-red);box-shadow:0 6px 18px rgba(0,0,0,.10)}
     .fm-tier[aria-current="true"]{background:var(--a365-black);color:#fff;border-color:var(--a365-black);box-shadow:0 10px 28px rgba(0,0,0,.22)}
@@ -394,7 +395,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </div>
 <div class="card space-y-6 p-5 md:p-6">
 <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-<label class="block"><span class="mb-2 block font-medium">1. Nhu cầu chính</span><select class="w-full rounded-xl border bg-white px-3 py-3 text-base" id="need-select"><option value="heat">Đi nắng nhiều — ưu tiên giảm nhiệt</option><option value="night">Hay đi đêm — ưu tiên kính lái sáng</option><option value="family">Chở gia đình — cân bằng sáng và riêng tư</option><option value="premium">Ưu tiên trải nghiệm cao cấp</option></select></label>
+<label class="block"><span class="mb-2 block font-medium">1. Nhu cầu chính</span><select class="w-full rounded-xl border bg-white px-3 py-3 text-base" id="need-select"><option value="heat">Ưu tiên giảm nhiệt</option><option value="night">Hay đi đêm</option><option value="family">Chở gia đình</option><option value="premium">Trải nghiệm cao cấp</option></select></label>
 
 <label class="block"><span class="mb-2 block font-medium">2. Hãng xe</span><select class="w-full rounded-xl border bg-white px-3 py-3 text-base" id="vehicle-brand"><option value="">Chọn hãng xe</option><option value="vinfast">VinFast</option><option value="toyota">Toyota</option><option value="mazda">Mazda</option><option value="honda">Honda</option><option value="ford">Ford</option><option value="hyundai">Hyundai</option><option value="kia">Kia</option><option value="mitsubishi">Mitsubishi</option><option value="nissan">Nissan</option><option value="mercedes">Mercedes-Benz</option><option value="bmw">BMW</option><option value="audi">Audi</option><option value="lexus">Lexus</option><option value="volvo">Volvo</option><option value="volkswagen">Volkswagen</option><option value="peugeot">Peugeot</option><option value="suzuki">Suzuki</option><option value="subaru">Subaru</option><option value="mg">MG</option><option value="porsche">Porsche</option><option value="landrover">Land Rover</option></select></label>
 <label class="block"><span class="mb-2 block font-medium" id="vehicle-model-label">3. Loại xe</span><select class="w-full rounded-xl border bg-white px-3 py-3 text-base" id="vehicle-model"><option value="">Chọn loại xe</option><option value="Xe cỡ nhỏ / hatchback" data-group="minicar">Xe cỡ nhỏ / hatchback</option><option value="Sedan" data-group="sedan">Sedan</option><option value="SUV / CUV / MPV / bán tải" data-group="suv">SUV / CUV / MPV / bán tải</option></select></label>
