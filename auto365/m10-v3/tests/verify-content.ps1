@@ -51,6 +51,17 @@ Assert-Condition ($page -match '<nav class="section-menu"[\s\S]*?href="#so-sanh"
 Assert-Condition ($page.Contains('260804_')) 'Page must include the Kia Sorento installation photo.'
 Assert-Condition ($page.Contains('viewport-fit=cover')) 'Page must configure a mobile viewport.'
 Assert-Condition ($page.Contains('.m10-page{box-sizing:border-box;width:100%')) 'Mobile page container must include padding within its width.'
+Assert-Condition ($page.Contains('class="survey-cta"')) 'Quick-answer area must offer a fitment survey CTA.'
+Assert-Condition ($page -match 'class="survey-cta"[\s\S]*?https://zalo.me/3622666363345050913') 'Fitment survey CTA must link to the Auto365 Zalo OA.'
+Assert-Condition ($page -match '<aside class="survey-cta"') 'Fitment survey CTA must be presented as a focused callout.'
+Assert-Condition ($page.Contains('class="survey-cta-actions"')) 'Fitment survey CTA must provide an action group.'
+Assert-Condition ($page -match 'class="survey-cta-actions">[\s\S]*?zalo\.me/3622666363345050913[\s\S]*?zalo\.me/3622666363345050913') 'Fitment survey CTA must provide two Zalo OA actions.'
+$quickPosition = $page.IndexOf('class="quick"')
+$surveyCtaPosition = $page.IndexOf('class="survey-cta"')
+Assert-Condition (($quickPosition -ge 0) -and ($surveyCtaPosition -gt $quickPosition)) 'Fitment survey CTA must appear after the quick-answer block.'
+Assert-Condition ($page.Contains('class="feature-source"')) 'Feature imagery must identify its source.'
+Assert-Condition ($page.Contains('"@type":"FAQPage"')) 'Visible FAQ must have matching FAQPage structured data.'
+Assert-Condition ($page.Contains('class="mobile-quick-cta"')) 'Mobile users must have a quick fitment CTA.'
 
 $faqCount = ([regex]::Matches($page, '<details><summary>C')).Count
 Assert-Condition ($faqCount -eq 10) "FAQ count must remain 10; found $faqCount."
