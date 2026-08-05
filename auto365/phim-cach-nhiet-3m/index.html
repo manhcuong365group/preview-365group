@@ -108,6 +108,7 @@
     @media(min-width:370px) and (max-width:1023px){.fm-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
     @media(max-width:1023px){#film-match .fm-grid>label>span{display:block;font-size:13px;min-height:2.4em}}
     @media(max-width:639px){#film-match .fm-grid select{font-size:13px;padding-left:8px;padding-right:22px;background-position:right 6px center}}
+    @media(max-width:767px){#result{display:flex;flex-direction:column;gap:0}#result>.grid{display:contents}#result>.grid>div:first-child{order:1}#result-sunroof-line{order:2}#result-tiers{order:3}#result .fm-cta{order:4;margin-top:16px}#result>p:last-child{order:5}}
     a.pkg-cta{font-size:11px;line-height:1.4}
     @media(min-width:1100px){a.pkg-cta{font-size:11.5px}}
     .pkg-card h3{font-size:16px;font-weight:600;margin-top:12px}
@@ -248,19 +249,20 @@
     #result-tiers{display:grid;gap:12px;grid-template-columns:1fr}
     @media(min-width:768px){#result-tiers{grid-template-columns:repeat(3,minmax(0,1fr))}}
     #film-match select{padding-right:38px;text-overflow:ellipsis}
-    .fm-tier{display:flex;flex-direction:column;gap:6px;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--border);background:#fff;transition:border-color .2s ease,background-color .2s ease}
+    .fm-tier{display:flex;flex-direction:column;text-align:left;padding:20px;border-radius:20px;border:1px solid var(--border);background:#fff;transition:border-color .2s ease,background-color .2s ease}
     .fm-tier:hover{border-color:#c9c9c9}
     .fm-tier[aria-current="true"]{border-color:var(--a365-red);background:#fffafa}
     .fm-tier[aria-current="true"]:hover{transform:none;border-color:var(--a365-red)}
-    .fm-tier-picked{margin-top:8px;font-size:11px;font-weight:700;color:var(--a365-red)}
-    .fm-tier-tag{display:inline-flex;align-self:flex-start;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(215,25,32,.10);color:var(--a365-red)}
-    .fm-tier[aria-current="true"] .fm-tier-tag{background:var(--a365-red);color:#fff}
-    .fm-tier-name{font-size:15px;font-weight:650;line-height:1.3;min-height:2.6em}
-    .fm-tier-note{min-height:2.8em}
-    .fm-tier-codes{margin-top:auto;padding-top:8px;border-top:1px solid var(--border)}
-    
-    .fm-tier-price{font-size:18px;font-weight:700}
-    .fm-tier-note,.fm-tier-codes{font-size:12px;line-height:1.4;color:var(--muted)}
+    .fm-tier-picked{display:none}
+    .fm-tier-tag{align-self:flex-start;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--a365-red)}
+    .fm-tier-name{margin-top:8px;font-size:16px;font-weight:600;line-height:1.3;min-height:0}
+    .fm-tier-price{margin-top:10px;font-size:20px;font-weight:700;line-height:1.15}
+    .fm-tier-spec{display:grid;gap:7px;margin-top:16px;font-size:12px;line-height:1.35;color:var(--muted)}
+    .fm-tier-spec-row{display:flex;justify-content:space-between;gap:12px}
+    .fm-tier-spec strong{font-weight:600;color:var(--text);text-align:right}
+    .fm-tier-codes{display:none}
+    .fm-tier-action{display:flex;align-items:center;justify-content:center;min-height:42px;margin-top:16px;border:1px solid var(--a365-red);border-radius:10px;background:#fff;color:var(--a365-red);font-size:13px;font-weight:650}
+    .fm-tier[aria-current="true"] .fm-tier-action{background:var(--a365-red);color:#fff}
     
     .warranty-content h3{font-size:16px;font-weight:600;margin:0}
     .warranty-content p{font-size:13px;color:var(--muted);margin:8px 0 0}
@@ -432,7 +434,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p class="mt-2" id="result-reason">Phù hợp nhu cầu thực dụng và mức đầu tư dễ tiếp cận.</p>
 <p class="mt-1 text-xs text-[var(--muted)]" id="result-default-note">Ví dụ cấu hình mặc định — chưa phải đề xuất cho xe của bạn. Chọn nhu cầu, nhóm xe và ngân sách để nhận gợi ý phù hợp.</p>
 </div>
-<div class="flex flex-col gap-2">
+<div class="fm-cta flex flex-col gap-2">
 <a class="a365-bg rounded-xl px-4 py-2 text-center text-sm font-medium" data-track="phone_click" href="tel:0365365365">📞 Gọi 0365 365 365</a>
 <a class="rounded-xl border border-current px-4 py-2 text-center text-sm font-medium" data-track="zalo_click" href="https://zalo.me/3820993010764366025" rel="noopener" target="_blank">💬 Chat Zalo</a>
 <button aria-controls="quote-panel" aria-expanded="false" class="rounded-xl border border-current px-4 py-2 text-sm font-medium" id="open-quote" type="button">📝 Để lại thông tin tư vấn</button>
@@ -485,6 +487,15 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </div>
 <p class="mt-3 text-sm text-[var(--muted)]">Giá trọn xe tham khảo cho minicar, đã gồm công thi công; xem đủ 3 mức theo nhóm xe (minicar/sedan/SUV) trong bảng giá chi tiết.</p>
 </div>
+<details class="rounded-2xl border bg-white p-5" id="configuration-scenarios">
+<summary class="flex cursor-pointer list-none items-center justify-between gap-3 font-medium"><span>Chọn cấu hình 3M theo từng tình huống xe</span><span class="a365-text text-sm">Mở xem →</span></summary>
+<div class="mt-4">
+<p class="a365-text text-sm font-medium uppercase tracking-wider">Tư vấn theo tình huống</p>
+<h3 class="mt-1 text-xl font-medium">Chọn cấu hình 3M theo từng tình huống xe</h3>
+<p class="mt-2 text-sm text-[var(--muted)]">Bảng dưới đây giúp bạn so sánh ba hướng cấu hình theo từng tình huống xe. Cố vấn xác nhận mã phim theo kính nguyên bản trước khi thi công.</p>
+<div class="mt-4 overflow-x-auto"><table class="min-w-[880px] w-full text-left text-sm"><thead><tr class="border-b bg-black/[.025]"><th class="p-3 font-medium">Tình huống</th><th class="p-3 font-medium">Tiết kiệm</th><th class="p-3 font-medium">Đề xuất</th><th class="p-3 font-medium">Nâng cấp</th><th class="p-3 font-medium">Lưu ý khi chọn</th></tr></thead><tbody><tr class="border-b"><th class="p-3 font-medium">Minicar đi phố</th><td class="p-3">Ceramic Hybrid</td><td class="p-3">Ceramic IR</td><td class="p-3">Crystalline Hybrid</td><td class="p-3 text-[var(--muted)]">Kính lái ưu tiên độ sáng và tầm nhìn thực tế.</td></tr><tr class="border-b"><th class="p-3 font-medium">Sedan đi đêm</th><td class="p-3">Ceramic IR</td><td class="p-3">Crystalline Hybrid</td><td class="p-3">3M Crystalline CR BLK</td><td class="p-3 text-[var(--muted)]">Không tự chọn kính lái quá tối; nên xem mẫu trước.</td></tr><tr class="border-b"><th class="p-3 font-medium">SUV panorama</th><td class="p-3">Ceramic IR + mái kính</td><td class="p-3">Crystalline Hybrid + mái kính</td><td class="p-3">CR BLK + mái kính</td><td class="p-3 text-[var(--muted)]">Mái kính là hạng mục riêng và tính giá tách.</td></tr><tr><th class="p-3 font-medium">Xe gia đình</th><td class="p-3">Ceramic Hybrid</td><td class="p-3">Ceramic IR</td><td class="p-3">Crystalline Hybrid</td><td class="p-3 text-[var(--muted)]">Cân bằng tầm nhìn, giảm nhiệt và riêng tư khoang sau.</td></tr></tbody></table></div>
+</div>
+</details>
 </section><section class="space-y-5 defer-render" data-model-section="" id="models">
 <div>
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Xe đã dán tại Auto365</p>
@@ -736,19 +747,19 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <p>Sau khi bàn giao, mỗi xe được cấp một chứng chỉ bảo hành điện tử 3M ghi rõ:</p>
 <div class="warranty-evidence-grid md:grid-cols-2" style="margin:14px 0">
 <figure class="warranty-evidence-card">
+<a aria-label="Mở chứng chỉ eWarranty kích thước lớn" data-track="warranty_certificate_open" href="hinh/ewarranty-3m-crystalline-hybrid.jpg" rel="noopener" style="display:block" target="_blank">
 <div style="position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:10px;border:1px solid var(--border);box-shadow:0 6px 18px rgba(0,0,0,.08)">
 <img alt="Mẫu chứng chỉ bảo hành điện tử eWarranty 3M cho phim cách nhiệt ô tô — gói Crystalline Hybrid, mã phim từng vị trí kính, thời hạn lên đến 10 năm, đã che thông tin khách hàng" decoding="async" fetchpriority="low" height="1800" loading="lazy" src="hinh/ewarranty-3m-crystalline-hybrid.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center;display:block" width="3200"/>
 <span style="position:absolute;top:10px;right:10px;background:var(--a365-red);color:#fff;font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px;box-shadow:0 2px 6px rgba(0,0,0,.18)">Bảo hành lên đến 10 năm</span>
 </div>
+</a>
 <figcaption style="font-size:11px;color:var(--muted);margin-top:6px">Mẫu chứng chỉ eWarranty (đã che thông tin cá nhân của khách hàng).</figcaption>
-<a class="warranty-evidence-action" data-track="warranty_certificate_open" href="hinh/ewarranty-3m-crystalline-hybrid.jpg" rel="noopener" target="_blank">Xem chứng chỉ kích thước lớn</a>
 </figure>
 <figure class="warranty-evidence-card">
 <div style="aspect-ratio:4/3;overflow:hidden;border-radius:10px;border:1px solid var(--border);box-shadow:0 6px 18px rgba(0,0,0,.08)">
 <img alt="Cổng tra cứu bảo hành điện tử 3M EWS 2.0 — nhập biển số, số series, số phiếu để tải phiếu bảo hành PDF" decoding="async" loading="lazy" height="756" src="hinh/ews-tra-cuu-3m.webp" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block" width="800"/>
 </div>
 <figcaption style="font-size:11px;color:var(--muted);margin-top:6px">Cổng tra cứu chính thức 3M EWS 2.0 (biển số · số series · số phiếu).</figcaption>
-<a class="warranty-evidence-action" data-track="warranty_lookup_open" href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty" rel="noopener" target="_blank">Tra cứu bảo hành 3M</a>
 </figure>
 </div>
 <ul>
@@ -914,7 +925,7 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <li>Kính sườn dán lẻ tính theo cặp; xem mức giá từng vị trí ở bảng "Giá lẻ theo vị trí kính" bên dưới.</li>
 <li>Cửa sổ trời không nằm trong gói trọn xe: loại nhỏ từ 850.000đ, panorama từ 2.600.000đ (tương đương một kính lái).</li>
 <li>Xe đang có phim cũ: công tháo và vệ sinh cơ bản miễn phí; trường hợp keo bám nhiều/phim bong phức tạp được báo trước nếu phát sinh thêm.</li>
-<li>Giá là mức tham khảo cập nhật 07/2026 và <strong class="text-[var(--text)]">có hiệu lực đến khi có thông báo mới</strong>; con số cuối được chốt theo model xe, kính nguyên bản và chương trình áp dụng tại thời điểm thi công.</li>
+<li>Giá là mức tham khảo cập nhật 07/2026 và <strong class="text-[var(--text)]">có hiệu lực đến khi có thông báo mới</strong>; cấu hình và giá cuối được xác nhận theo kính nguyên bản, nhu cầu sử dụng và xe thực tế.</li>
 </ul>
 </div></section><section class="space-y-5" id="pricing-piece">
 <div>
@@ -1003,52 +1014,12 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div>
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Điểm tư vấn &amp; thi công</p>
 <h2 class="mt-1 text-2xl font-medium">Dán phim cách nhiệt 3M ở đâu?</h2>
-<p class="mt-2 text-sm text-[var(--muted)]" data-answer="">Tại TP. Hồ Chí Minh, Auto365.vn - Trụ Sở Chính tiếp nhận tư vấn và thi công tại 4/4/1/7 Đường Số 3, Phường Hiệp Bình; khách ở tỉnh được hỗ trợ kết nối điểm phù hợp theo phạm vi dịch vụ.</p>
-<aside aria-label="Tóm tắt điểm dán 3M tại Auto365" class="mt-3 rounded-xl border p-4 text-sm" style="background:#fff8f8;border-color:rgba(215,25,32,.18)"><strong class="text-[var(--text)]">Cần dán phim cách nhiệt 3M tại TP. Hồ Chí Minh?</strong><span class="mt-1 block text-[var(--muted)]">Gọi 0365 365 365 để được xác nhận cấu hình theo xe, lịch thi công và điểm phục vụ phù hợp. Bạn cũng có thể xem toàn bộ hệ thống Auto365 trước khi đặt lịch.</span><a class="a365-text mt-2 inline-block font-medium" data-track="local_answer_branch_click" href="https://auto365.vn/chi-nhanh">Xem hệ thống chi nhánh Auto365 →</a></aside>
-<p class="mt-2 text-[var(--muted)]" data-answer="">Nên chọn điểm thi công có nguồn vật liệu, tư cách cung cấp dịch vụ và quy trình bảo hành được xác minh. <strong class="text-[var(--text)]">Auto365.vn - Trụ Sở Chính</strong> là điểm tư vấn và triển khai dịch vụ; <strong class="text-[var(--text)]">3M Pro Shop &amp; 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính</strong> để phục vụ trải nghiệm, đào tạo, thi công và chuẩn hóa quy trình. Hai điểm nằm cùng khu vực Hiệp Bình và thuộc cùng hệ sinh thái Auto365, không phải hai trung tâm độc lập. Riêng phim cách nhiệt 3M, gọi <a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">0365 365 365</a> để được xếp lịch trực tiếp. Hệ thống Auto365 có hơn 90 điểm; khách được hỗ trợ kết nối điểm phù hợp theo phạm vi dịch vụ từng khu vực.</p>
-<div class="mt-4 flex flex-col gap-2 sm:flex-row"><a class="open-quote a365-bg rounded-xl px-4 py-3 text-center text-sm font-medium" data-track="local_quote_click" href="#quote-panel">Nhận tư vấn điểm dán phù hợp</a><a class="rounded-xl border px-4 py-3 text-center text-sm font-medium" data-track="branch_locator_click" href="https://auto365.vn/chi-nhanh">Xem hệ thống chi nhánh Auto365</a></div>
-</div>
+<p class="mt-2 text-[var(--muted)]" data-answer="">Auto365 có 91 điểm được công bố tại 33 tỉnh/thành. Phim cách nhiệt 3M được điều phối đến điểm có vật liệu, kỹ thuật viên và khả năng kích hoạt eWarranty phù hợp; không phải toàn bộ 91 điểm đều trực tiếp thi công mọi gói 3M.</p>
 <div class="hscroll grid gap-4 md:grid-cols-3">
-<article class="hub-card rounded-2xl border bg-white p-5">
-<span class="viz-badge">Điểm chính</span>
-<h3 class="mt-4 font-medium">Auto365.vn - Trụ Sở Chính</h3>
-<p class="mt-1 text-sm text-[var(--muted)]">Trụ sở chính của Auto365 trong hệ thống 365Group — nơi tiếp nhận xe, tư vấn cấu hình phim theo từng vị trí kính và trực tiếp thi công, bàn giao cho khách hàng.</p>
-<address class="mt-2 not-italic text-sm text-[var(--muted)]">
-<div>4/4/1/7 Đường Số 3, Phường Hiệp Bình</div>
-<div>TP. Hồ Chí Minh</div>
-</address>
-<div class="hub-foot">
-<div class="text-sm text-[var(--muted)]"><span class="font-medium text-[var(--text)]">Giờ mở cửa:</span> 8:30 – 17:30 (T2–CN)</div>
-<div class="mt-2 space-y-1 text-sm">
-<div><a class="a365-text font-medium" data-track="phone_click" href="tel:0365365911">Gọi 0365 365 911</a></div>
-<div><a class="a365-text font-medium" data-track="branch_lookup" href="https://www.google.com/maps/search/?api=1&amp;query=Auto365.vn+Tru+So+Chinh+4/4/1/7+Duong+So+3+Hiep+Binh+Thu+Duc" rel="noopener" target="_blank">📍 Xem bản đồ</a></div>
+<article class="hub-card rounded-2xl border bg-white p-5"><span class="viz-badge">Điểm chính</span><h3 class="mt-4 font-medium">Auto365.vn - Trụ Sở Chính</h3><p class="mt-1 text-sm text-[var(--muted)]">Trụ sở chính của Auto365 — nơi tiếp nhận xe, tư vấn cấu hình phim theo từng vị trí kính và trực tiếp thi công, bàn giao cho khách hàng.</p><address class="mt-2 not-italic text-sm text-[var(--muted)]"><div>4/4/1/7 Đường Số 3, Phường Hiệp Bình</div><div>TP. Hồ Chí Minh</div></address><div class="hub-foot"><div class="text-sm text-[var(--muted)]"><span class="font-medium text-[var(--text)]">Giờ mở cửa:</span> 8:30 – 17:30 (T2–CN)</div><div class="mt-2 space-y-1 text-sm"><div><a class="a365-text font-medium" data-track="phone_click" href="tel:0365365911">Gọi 0365 365 911</a></div><div><a class="a365-text font-medium" data-track="branch_lookup" href="https://www.google.com/maps/search/?api=1&amp;query=Auto365.vn+Tru+So+Chinh+4/4/1/7+Duong+So+3+Hiep+Binh+Thu+Duc" rel="noopener" target="_blank">📍 Xem bản đồ</a></div></div></div></article>
+<article class="hub-card rounded-2xl border bg-white p-5"><span class="viz-badge">Đào tạo &amp; tiêu chuẩn</span><h3 class="mt-4 font-medium">3M Pro Shop &amp; 3M Training Center</h3><p class="mt-1 text-sm text-[var(--muted)]">Phục vụ trải nghiệm vật liệu, đào tạo, thi công và chuẩn hóa quy trình phim 3M.</p><address class="mt-2 not-italic text-sm text-[var(--muted)]"><div>4/4/3/3 Đường Số 3, Khu phố 31</div><div>Phường Hiệp Bình, TP. Hồ Chí Minh</div></address><div class="hub-foot"><div class="text-sm text-[var(--muted)]"><span class="font-medium text-[var(--text)]">Giờ mở cửa:</span> 8:30 – 17:30 (T2–CN)</div><div class="mt-2 space-y-1 text-sm"><div><a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">Gọi 0365 365 365</a></div><div><a class="a365-text font-medium" data-track="branch_lookup" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+Auto365+4/4/3/3+Duong+So+3+Hiep+Binh+Thu+Duc" rel="noopener" target="_blank">📍 Xem bản đồ</a></div></div></div></article>
+<article class="hub-card rounded-2xl border bg-white p-5"><span class="viz-badge">Toàn quốc</span><h3 class="mt-4 font-medium">Hệ thống Auto365 — 91 điểm tại 33 tỉnh/thành</h3><p class="mt-2 text-sm text-[var(--muted)]">Phim 3M được điều phối đến điểm có năng lực phù hợp; không phải cả 91 điểm đều trực tiếp thi công. Tra cứu để được tư vấn và kết nối tới điểm phù hợp gần bạn.</p><div class="hub-foot"><a class="a365-text inline-block text-sm font-medium" data-track="branch_lookup" href="https://auto365.vn/chi-nhanh">Tra cứu điểm gần nhất →</a></div></article>
 </div>
-</div>
-</article>
-<article class="hub-card rounded-2xl border bg-white p-5">
-<span class="viz-badge">Đào tạo &amp; tiêu chuẩn</span>
-<h3 class="mt-4 font-medium">3M Pro Shop &amp; 3M Training Center</h3>
-<p class="mt-1 text-sm text-[var(--muted)]">Được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính để phục vụ trải nghiệm, đào tạo, thi công và chuẩn hóa quy trình phim 3M.</p>
-<address class="mt-2 not-italic text-sm text-[var(--muted)]">
-<div>4/4/3/3 Đường Số 3, Khu phố 31</div>
-<div>Phường Hiệp Bình, TP. Hồ Chí Minh</div>
-</address>
-<div class="hub-foot">
-<div class="text-sm text-[var(--muted)]"><span class="font-medium text-[var(--text)]">Giờ mở cửa:</span> 8:30 – 17:30 (T2–CN)</div>
-<div class="mt-2 space-y-1 text-sm">
-<div><a class="a365-text font-medium" data-track="phone_click" href="tel:0365365365">Gọi 0365 365 365</a></div>
-<div><a class="a365-text font-medium" data-track="branch_lookup" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+Auto365+4/4/3/3+Duong+So+3+Hiep+Binh+Thu+Duc" rel="noopener" target="_blank">📍 Xem bản đồ</a></div>
-</div>
-</div>
-</article>
-<article class="hub-card rounded-2xl border bg-white p-5">
-<span class="viz-badge">Toàn quốc</span>
-<h3 class="mt-4 font-medium">Hệ thống Auto365 — 90+ điểm toàn quốc</h3>
-<p class="mt-2 text-sm text-[var(--muted)]">Auto365 có mạng lưới 90+ điểm dịch vụ trên toàn quốc. Không phải điểm nào cũng trực tiếp thi công phim 3M — tra cứu để được tư vấn và kết nối tới điểm thi công 3M phù hợp gần bạn.</p>
-<div class="hub-foot">
-<a class="a365-text inline-block text-sm font-medium" data-track="branch_lookup" href="https://auto365.vn/chi-nhanh">Tra cứu điểm gần nhất →</a>
-</div>
-</article>
 </div>
 </section><section class="dark rounded-3xl p-6 md:p-8" id="commerce-cta">
 <div class="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
@@ -1341,12 +1312,13 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div>
 <p class="a365-text text-sm font-medium uppercase tracking-wider">Nguồn dữ liệu</p>
 <h2 class="mt-1 text-xl font-medium">Nguồn và phạm vi dữ liệu</h2>
-<p class="mt-2 text-sm text-[var(--muted)]" data-answer="">Mọi thông số trên trang này đều truy ngược được về tài liệu kỹ thuật của 3M Việt Nam theo từng dòng phim, kèm ngày cập nhật. Số nào chưa có nguồn phê duyệt thì để trạng thái chờ, không ước lượng.</p>
+<p class="mt-2 text-sm text-[var(--muted)]" data-answer="">Thông số v7.1 được truy ngược tới tài liệu kỹ thuật có revision và điều kiện kính. Dữ liệu chưa có nguồn hoặc chưa khóa NAP/GBP được giữ trạng thái chờ, không tự điền.</p>
 <ul class="mt-4 space-y-3 text-sm text-[var(--muted)]">
-<li><strong class="text-[var(--text)]">Ceramic NR:</strong> Tài liệu kỹ thuật 3M™ Ceramic NR, 3M Việt Nam, cập nhật 06/2026 — NR35/25/15/5 dùng chung bộ thông số với công cụ FilmMatch và bảng giá.</li>
-<li><strong class="text-[var(--text)]">Ceramic IR:</strong> catalog 3M — công bố đầy đủ IR 15/25/50.</li>
-<li><strong class="text-[var(--text)]">Crystalline CR BLK:</strong> Product Bulletin Revision F, August 2025 — Table B, Auto 75 Glass. CR BLK 40 dùng VLT 41% theo Table B; dữ liệu đo thực địa không thay thế TDS. <a class="a365-text" href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" rel="noopener" target="_blank">Xem tài liệu Crystalline chính thức trên multimedia.3m.com</a>. CR BLK 15 dùng catalog CR BLK dành cho thị trường Việt Nam năm 2026, với nguồn riêng.</li><li><strong class="text-[var(--text)]">Nguồn chính thức 3M:</strong> <a class="a365-text" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/" rel="noopener" target="_blank">trang phim dán cách nhiệt ô tô 3M Việt Nam</a> và <a class="a365-text" href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty" rel="noopener" target="_blank">cổng tra cứu bảo hành điện tử</a> — dùng đối chiếu dòng phim, chính sách và tình trạng bảo hành.</li>
+<li><strong class="text-[var(--text)]">Ceramic Nano Reflective / Ceramic NR:</strong> 3M Automotive Window Film Ceramic Nano Reflective Series, Technical Data Sheet, Revision A, January 2026. Auto 75 Glass 6 mm, VLT nền khoảng 73%, ANSI/NFRC 200; Auto365 xác minh lại nguồn trong tháng 08/2026.</li>
+<li><strong class="text-[var(--text)]">Ceramic IR:</strong> 3M Automotive Window Film Ceramic IR Series, Technical Data Sheet, Revision B, July 2021. Dữ liệu trên kính ô tô xanh dày 6 mm, VLT nền 73%, ANSI/NFRC 200; Auto365 xác minh lại nguồn trong tháng 08/2026.</li>
+<li><strong class="text-[var(--text)]">Crystalline CR BLK:</strong> TDS Revision F, August 2025 và tài liệu 3M được quản lý theo từng loại kính nền; CR BLK 40 dùng VLT 41% ở Table B/Auto 75 Glass. Dữ liệu đo thực địa không thay thế TDS. <a class="a365-text" href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" rel="noopener" target="_blank">Xem tài liệu Crystalline chính thức trên multimedia.3m.com</a>.</li><li><strong class="text-[var(--text)]">Nguồn chính thức 3M:</strong> <a class="a365-text" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/" rel="noopener" target="_blank">trang phim dán cách nhiệt ô tô 3M Việt Nam</a> và <a class="a365-text" href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty" rel="noopener" target="_blank">cổng tra cứu bảo hành điện tử</a> — dùng đối chiếu dòng phim, chính sách và tình trạng bảo hành.</li>
 <li>Số liệu TDS đọc theo từng kính tham chiếu của từng bảng — Auto 75 Glass (VLT nền khoảng 73%) hoặc kính trong 6 mm (VLT nền khoảng 89%); số đo sau khi dán lên kính xe có thể khác tuỳ kính nguyên bản, thiết bị đo và điều kiện nghiệm thu.</li>
+<li><strong class="text-[var(--text)]">CR BLK 15:</strong> dùng brochure thương mại Việt Nam trên multimedia.3m.com và nguồn riêng, không thay thế TDS Revision F của các mã 35/40/50/60.</li>
 </ul>
 </div>
 <div>
@@ -1370,9 +1342,9 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 <div class="mt-6 border-t pt-5">
 <div class="text-sm font-medium">Lịch sử cập nhật</div>
 <div class="hscroll mt-3 grid gap-3 text-sm sm:grid-cols-3">
-<div><strong>06/2026</strong><br/><span class="text-[var(--muted)]">Dữ liệu NR và IR</span></div>
-<div><strong>07/2026</strong><br/><span class="text-[var(--muted)]">Giá, cấu hình và liên kết</span></div>
-<div><strong>Cập nhật định kỳ</strong><br/><span class="text-[var(--muted)]">Case xe và điểm thi công</span></div>
+<div><strong>01/2026</strong><br/><span class="text-[var(--muted)]">Ceramic NR: TDS Revision A</span></div>
+<div><strong>08/2025</strong><br/><span class="text-[var(--muted)]">Crystalline: TDS Revision F</span></div>
+<div><strong>08/2026</strong><br/><span class="text-[var(--muted)]">Auto365 rà soát nguồn, giá và cấu hình</span></div>
 </div>
 </div>
 </section><section class="space-y-5" id="related-knowledge">
@@ -1385,13 +1357,14 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
 </section></div></details></section><section class="dark rounded-3xl p-6 md:p-8" id="final-cta">
 <div class="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
 <div>
-<p class="text-sm font-medium uppercase tracking-wider text-white/60">Sẵn sàng thi công</p>
-<h2 class="mt-2 text-2xl font-medium">Đặt lịch dán phim 3M tại 3M Pro Shop Auto365</h2>
-<p class="mt-3 max-w-2xl text-white/70">Thời gian thi công thường 2–4 giờ · nghiệm thu trực tiếp tại xưởng · kích hoạt bảo hành điện tử eWarranty lên đến 10 năm ngay sau bàn giao. Đặt lịch trước để cố vấn chuẩn bị vật liệu và cấu hình đúng model.</p>
+<p class="text-sm font-medium uppercase tracking-wider text-white/60">Đặt lịch tại Trụ Sở Chính</p>
+<h2 class="mt-2 text-2xl font-medium">Đặt lịch dán phim 3M tại Auto365.vn - Trụ Sở Chính</h2>
+<p class="mt-3 max-w-2xl text-white/70">Cố vấn xác nhận cấu hình, khu vực và điểm thi công phù hợp trước khi chốt lịch. Thời gian thi công thường 2–4 giờ; sau bàn giao, hồ sơ eWarranty được kích hoạt theo điều kiện bảo hành áp dụng.</p>
 </div>
 <div class="flex flex-col gap-3">
 <a class="a365-bg rounded-xl px-5 py-3 text-center font-medium" data-track="phone_click" href="tel:0365365365">Gọi đặt lịch: 0365 365 365</a>
-<a class="rounded-xl border border-white/35 px-5 py-3 text-center font-medium text-white" href="#local-hub">Xem địa chỉ xưởng</a>
+<a class="rounded-xl border border-white/35 px-5 py-3 text-center font-medium text-white" data-track="zalo_click" href="https://zalo.me/3820993010764366025" rel="noopener" target="_blank">Chat Zalo</a>
+<a class="rounded-xl border border-white/35 px-5 py-3 text-center font-medium text-white" data-track="hq_map_click" href="https://www.google.com/maps/search/?api=1&amp;query=Auto365.vn+Tru+So+Chinh+4/4/1/7+Duong+So+3+Hiep+Binh+Thu+Duc" rel="noopener" target="_blank">Xem bản đồ Trụ Sở Chính</a>
 </div>
 </div>
 </section><div aria-label="Liên hệ nhanh" class="mobile-cta" id="mobile-cta">
@@ -1456,9 +1429,9 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
     (()=>{const sum=document.getElementById('mcta-sum');if(!sum||!byUser)return;const vLabel={minicar:'Minicar',sedan:'Sedan',suv:'SUV / MPV'}[vehicle]||vehicle;sum.innerHTML='<span><b>'+(pkg.shortName||pkg.name)+'</b> · '+vLabel+'</span><span class="mcta-price">'+money(price)+'</span>';sum.hidden=false;})();
     if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-tiers');altBox.innerHTML='';
-    if(alt&&state.fmStarted){let lock=state.lockTiers;if(!lock||!lock.win.some(t=>t.key===pkgKey)){const tiers=tierList(vehicle);let idx=tiers.findIndex(t=>t.key===pkgKey);if(idx<0)idx=0;const start=Math.max(0,Math.min(idx-1,tiers.length-3));lock={win:tiers.slice(start,start+3),recKey:pkgKey,recPrice:price};state.lockTiers=lock;}
+    if(alt){let lock=state.lockTiers;if(!lock||!lock.win.some(t=>t.key===pkgKey)){const tiers=tierList(vehicle);let idx=tiers.findIndex(t=>t.key===pkgKey);if(idx<0)idx=0;const start=Math.max(0,Math.min(idx-1,tiers.length-3));lock={win:tiers.slice(start,start+3),recKey:pkgKey,recPrice:price};state.lockTiers=lock;}
       const win=lock.win,base=lock.recPrice;const up=win.find(t=>packages[t.key].prices[vehicle]>price),down=[...win].reverse().find(t=>packages[t.key].prices[vehicle]<price),comp=up||down;if(comp){state.comparisonPackage=packages[comp.key].name;state.comparisonPrice=packages[comp.key].prices[vehicle];}else{state.comparisonPackage='';state.comparisonPrice='';}
-      altBox.classList.remove('hidden');altBox.innerHTML=win.map(t=>{const tp=packages[t.key],tprice=tp.prices[vehicle],tc=packageCodes(tp),cur=t.key===pkgKey,rec=t.key===lock.recKey,diff=tprice-base;const tag=rec?'Đề xuất cho xe của bạn':diff>0?'▲ Nâng cấp':'▼ Tiết kiệm hơn';const note=rec?'Phù hợp nhu cầu và ngân sách anh/chị vừa chọn.':diff>0?'Thêm khoảng '+tr(diff)+' so với gói đề xuất.':'Giảm khoảng '+tr(-diff)+' so với gói đề xuất.';return '<button type="button" class="fm-tier" aria-current="'+(cur?'true':'false')+'" data-tier-key="'+t.key+'" data-tier-budget="'+t.budget+'"><span class="fm-tier-tag">'+tag+'</span><span class="fm-tier-name">'+tp.name+'</span><span class="fm-tier-price">'+money(tprice)+'</span><span class="fm-tier-note">'+note+'</span><span class="fm-tier-codes">Kính lái '+tc.front+' · sườn và lưng '+tc.side+'</span>'+(cur?'<span class="fm-tier-picked">✓ Đang chọn</span>':'')+'</button>';}).join('');
+      altBox.classList.remove('hidden');altBox.innerHTML=win.map(t=>{const tp=packages[t.key],tprice=tp.prices[vehicle],tc=packageCodes(tp),cur=t.key===pkgKey,rec=t.key===lock.recKey,diff=tprice-base;const tag=rec?'Đề xuất':diff>0?'Nâng cấp':'Tiết kiệm';return '<button type="button" class="fm-tier" aria-current="'+(cur?'true':'false')+'" data-tier-key="'+t.key+'" data-tier-budget="'+t.budget+'"><span class="fm-tier-tag">'+tag+'</span><span class="fm-tier-name">'+tp.name+'</span><span class="fm-tier-price">'+money(tprice)+'</span><span class="fm-tier-spec"><span class="fm-tier-spec-row"><span>Kính lái</span><strong>'+tc.front.replace(' / ','/')+'</strong></span><span class="fm-tier-spec-row"><span>Sườn/lưng</span><strong>'+tc.side.replaceAll(' / ','/')+'</strong></span></span><span class="fm-tier-action">'+(cur?'Đã chọn':'Chọn gói này')+'</span></button>';}).join('');
       altBox.querySelectorAll('.fm-tier').forEach(b=>b.addEventListener('click',()=>{if(b.getAttribute('aria-current')==='true')return;const bd=b.dataset.tierBudget;q('#budget').value=bd;render(b.dataset.tierKey,vehicle,bd,a,true);}));}else{state.lockTiers=null;state.comparisonPackage='';state.comparisonPrice='';altBox.classList.add('hidden');}
   }
   function compute(scroll=true,byUser=true){state.lockTiers=null;const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,vehicle,a);render(key,vehicle,budget,a,true,byUser);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}if(byUser)track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
