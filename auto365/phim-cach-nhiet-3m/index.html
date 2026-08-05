@@ -255,25 +255,18 @@
     #result-tiers{display:grid;gap:12px;grid-template-columns:1fr}
     @media(min-width:768px){#result-tiers{grid-template-columns:repeat(3,minmax(0,1fr))}}
     #film-match select{padding-right:38px;text-overflow:ellipsis}
-    .fm-tier{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:14px;border:1px solid var(--border);background:#fff;transition:border-color .18s ease,box-shadow .18s ease}
-    .fm-tier:hover{border-color:#cfcfcf}
-    .fm-tier[aria-current="true"]{border:2px solid var(--a365-red);padding:15px;box-shadow:0 6px 20px rgba(215,25,32,.12)}
-    .fm-tier-tag{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-    .fm-tier[aria-current="true"] .fm-tier-tag{color:var(--a365-red)}
-    .fm-tier-name{font-size:16px;line-height:1.3;min-height:2.6em}
-    .fm-tier-price{font-size:24px;font-weight:700;line-height:1.2}
-    .fm-tier-delta{font-size:12px;color:var(--muted);min-height:1.4em}
-    .fm-tier-rows{margin-top:4px;display:flex;flex-direction:column;gap:6px;font-size:12px}
-    .fm-tier-rows>div{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-    .fm-tier-rows dt{color:var(--muted)}
-    .fm-tier-rows dd{margin:0;font-weight:650;text-align:right}
-    .fm-tier-note{margin-top:auto;padding:10px;border-radius:10px;background:#f5f5f5;font-size:12px;line-height:1.45;color:var(--muted)}
-    .fm-tier-note strong{color:var(--fg,#171717)}
-    .fm-tier-btn{margin-top:10px;width:100%;min-height:44px;border-radius:12px;border:1px solid var(--border);background:#fff;font-size:14px;font-weight:650;transition:border-color .18s ease,transform .18s ease}
-    .fm-tier-btn:hover{border-color:var(--a365-red);color:var(--a365-red);transform:translateY(-1px)}
-    .fm-tier-btn[disabled]{background:var(--a365-red);border-color:var(--a365-red);color:#fff;cursor:default;transform:none}
-    .fm-tier-price{font-size:18px;font-weight:700}
+    .fm-tier{display:flex;flex-direction:column;gap:6px;text-align:left;padding:14px;border-radius:14px;border:1px solid var(--border);background:#fff;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+    .fm-tier:hover{transform:translateY(-1px);border-color:var(--a365-red);box-shadow:0 6px 18px rgba(0,0,0,.10)}
+    .fm-tier[aria-current="true"]{border:2px solid var(--a365-red);padding:13px;box-shadow:0 6px 20px rgba(215,25,32,.12)}
+    .fm-tier[aria-current="true"]:hover{transform:none;border-color:var(--a365-red)}
+    .fm-tier-tag{display:inline-flex;align-self:flex-start;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:rgba(215,25,32,.10);color:var(--a365-red)}
+    .fm-tier[aria-current="true"] .fm-tier-tag{background:var(--a365-red);color:#fff}
+    .fm-tier-name{font-size:15px;font-weight:650;line-height:1.3;min-height:2.6em}
+    .fm-tier-note{min-height:2.8em}
+    .fm-tier-codes{margin-top:auto;padding-top:8px;border-top:1px solid var(--border)}
     
+    .fm-tier-price{font-size:18px;font-weight:700}
+    .fm-tier-note,.fm-tier-codes{font-size:12px;line-height:1.4;color:var(--muted)}
     
     .warranty-content h3{font-size:16px;font-weight:600;margin:0}
     .warranty-content p{font-size:13px;color:var(--muted);margin:8px 0 0}
@@ -1473,8 +1466,6 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
   function whyNot(pkg,a){const night=effectiveNight(a);if(pkg.level==='pro'&&night==='often')return 'Lưu ý: CR BLK 40 thiên về giảm chói; người đi đêm thường xuyên phải xem mẫu thật và có thể chuyển sang CR BLK 50/60 hoặc IR 50.';if(pkg.family==='nr')return 'Chưa nâng lên Ceramic IR/Crystalline vì ngân sách hiện tại ưu tiên giải pháp thực dụng.';if(pkg.family==='ir')return 'Chưa chọn Crystalline vì Ceramic IR đã đáp ứng ưu tiên kính lái sáng ở mức đầu tư thấp hơn.';if(pkg.family==='hybrid')return 'Chưa chọn toàn CR BLK vì Hybrid giữ kính lái cao cấp nhưng tối ưu chi phí ở thân xe.';return 'Không chọn gói thấp hơn vì hướng đầu tư hiện tại ưu tiên đồng bộ dòng Crystalline.';}
   function sunroofText(v){return v==='none'?'Không trong gói':v==='small'?'Khảo sát ô nhỏ, báo riêng':'Panorama — khảo sát và báo riêng';}
   function configId(vehicle,budget,codes,a){return ['FM4',state.need,vehicle,budget,slug(codes.front),a.privacy,a.sunroof].join('-').toUpperCase();}
-  const tierRole={'ceramic-hybrid':'Thực dụng','ceramic-ir':'Cân bằng','crystalline-hybrid':'Nâng kính lái','crystalline-hybrid-pro':'Kính lái đậm hơn','crystalline-cr-blk':'Đồng bộ Crystalline','crystalline-cr-blk-pro':'Cao cấp nhất'};
-  const tierTradeoff={'ceramic-hybrid':'Trải nghiệm kính lái thấp hơn dòng IR/Crystalline.','ceramic-ir':'Không có kính lái Crystalline.','crystalline-hybrid':'Không đồng bộ CR BLK toàn xe.','crystalline-hybrid-pro':'Kính lái CR BLK 40 đậm hơn — nên xem mẫu thật nếu hay đi đêm.','crystalline-cr-blk':'Chi phí cao hơn đáng kể so với nhóm Ceramic.','crystalline-cr-blk-pro':'Kính lái đậm nhất trong 6 gói — nên xem mẫu thật trước khi chốt.'};
   function tierList(vehicle){return Object.keys(packages).map(k=>({key:k,budget:packages[k].budget})).sort((x,y)=>packages[x.key].prices[vehicle]-packages[y.key].prices[vehicle]);}
   function comparePackage(pkgKey,budget,vehicle,a){if(pkgKey==='crystalline-hybrid')return {budget:'8to11',key:'ceramic-ir',direction:'down'};const i=tierOrder.indexOf(budget);const compareBudget=i<tierOrder.length-1?tierOrder[i+1]:tierOrder[i-1];return {budget:compareBudget,key:selectPackage(compareBudget,vehicle,a),direction:i<tierOrder.length-1?'up':'down'};}
   function render(pkgKey,vehicle,budget,a,alt=true,byUser=true){const pkg=packages[pkgKey],codes=specificCodes(pkg,a),price=pkg.prices[vehicle],cid=configId(vehicle,budget,codes,a),vehicleProfile=state.model?(state.brand+' '+state.model):'';state.currentPackage=pkgKey;state.configId=cid;state.configText=[pkg.name,vehicleProfile&&'Xe: '+vehicleProfile,'Kính lái: '+codes.front,'Sườn trước: '+codes.sideFront,'Sườn sau/lưng: '+codes.rear,'Cửa sổ trời: '+sunroofText(a.sunroof),'Giá tham khảo: '+money(price)].filter(Boolean).join(' | ');
@@ -1483,8 +1474,8 @@ button,a,select,input{touch-action:manipulation}.mobile-cta a,.mobile-cta button
     if(q('#lead-config'))q('#lead-config').value=state.configText;if(q('#fallback-config'))q('#fallback-config').textContent=state.configText;
     const altBox=q('#result-tiers');altBox.innerHTML='';altBox.classList.remove('alt-in');void altBox.offsetWidth;altBox.classList.add('alt-in');
     if(alt&&state.fmStarted){const tiers=tierList(vehicle);let idx=tiers.findIndex(t=>t.key===pkgKey);if(idx<0)idx=0;let start=Math.max(0,Math.min(idx-1,tiers.length-3));const win=tiers.slice(start,start+3);const up=win.find(t=>packages[t.key].prices[vehicle]>price),down=[...win].reverse().find(t=>packages[t.key].prices[vehicle]<price),comp=up||down;if(comp){state.comparisonPackage=packages[comp.key].name;state.comparisonPrice=packages[comp.key].prices[vehicle];}else{state.comparisonPackage='';state.comparisonPrice='';}
-      altBox.classList.remove('hidden');altBox.innerHTML=win.map(t=>{const tp=packages[t.key],tprice=tp.prices[vehicle],tc=specificCodes(tp,a),cur=t.key===pkgKey,diff=tprice-price;const tag=cur?'Đề xuất':diff>0?'Nâng cấp':'Tiết kiệm';const delta=cur?'Phù hợp nhu cầu và ngân sách đã chọn':(diff>0?'+':'−')+tr(Math.abs(diff))+' so với gói đề xuất';return '<div class="fm-tier" aria-current="'+(cur?'true':'false')+'"><div class="fm-tier-tag">'+tag+'</div><div class="fm-tier-name">'+(tp.shortName||tp.name)+'</div><div class="fm-tier-price">'+money(tprice)+'</div><div class="fm-tier-delta">'+delta+'</div><dl class="fm-tier-rows"><div><dt>Kính lái</dt><dd>'+tc.front+'</dd></div><div><dt>Sườn/lưng</dt><dd>'+tc.side+'</dd></div><div><dt>Vai trò</dt><dd>'+(tierRole[t.key]||'')+'</dd></div></dl><p class="fm-tier-note"><strong>Điểm cần cân nhắc:</strong> '+(tierTradeoff[t.key]||'')+'</p><button type="button" class="fm-tier-btn" data-tier-key="'+t.key+'" data-tier-budget="'+t.budget+'"'+(cur?' disabled':'')+'>'+(cur?'Đã chọn':'Chọn phương án')+'</button></div>';}).join('');
-      altBox.querySelectorAll('.fm-tier-btn').forEach(b=>b.addEventListener('click',()=>{const bd=b.dataset.tierBudget;q('#budget').value=bd;render(b.dataset.tierKey,vehicle,bd,a,true);}));}else{state.comparisonPackage='';state.comparisonPrice='';altBox.classList.add('hidden');}
+      altBox.classList.remove('hidden');altBox.innerHTML=win.map(t=>{const tp=packages[t.key],tprice=tp.prices[vehicle],tc=specificCodes(tp,a),cur=t.key===pkgKey,diff=tprice-price;const tag=cur?'Đang đề xuất':diff>0?'▲ Nâng cấp':'▼ Tiết kiệm hơn';const note=cur?'Phù hợp nhu cầu và ngân sách anh/chị vừa chọn.':diff>0?'Thêm khoảng '+tr(diff)+' so với gói đang đề xuất.':'Giảm khoảng '+tr(-diff)+' so với gói đang đề xuất.';return '<button type="button" class="fm-tier" aria-current="'+(cur?'true':'false')+'" data-tier-key="'+t.key+'" data-tier-budget="'+t.budget+'"><span class="fm-tier-tag">'+tag+'</span><span class="fm-tier-name">'+tp.name+'</span><span class="fm-tier-price">'+money(tprice)+'</span><span class="fm-tier-note">'+note+'</span><span class="fm-tier-codes">Kính lái '+tc.front+' · sườn và lưng '+tc.side+'</span></button>';}).join('');
+      altBox.querySelectorAll('.fm-tier').forEach(b=>b.addEventListener('click',()=>{if(b.getAttribute('aria-current')==='true')return;const bd=b.dataset.tierBudget;q('#budget').value=bd;render(b.dataset.tierKey,vehicle,bd,a,true);}));}else{state.comparisonPackage='';state.comparisonPrice='';altBox.classList.add('hidden');}
     const result=q('#result');result.classList.remove('fm-pulse');void result.offsetWidth;result.classList.add('fm-pulse');
   }
   function compute(scroll=true,byUser=true){const vehicle=q('#vehicle').value,budget=q('#budget').value,a=advanced(),key=selectPackage(budget,vehicle,a);render(key,vehicle,budget,a,true,byUser);if(scroll){const target=q('#result');window.scrollTo({top:target.getBoundingClientRect().top+scrollY-88,behavior:'smooth'});}if(byUser)track('filmmatch_complete',{need:state.need,vehicle,budget,package_key:key,configuration_id:state.configId});}
