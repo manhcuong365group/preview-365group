@@ -234,11 +234,6 @@
 
     .progress { position: fixed; top: 0; left: 0; z-index: 1100; height: 3px; width: 0; background: var(--red); }
 
-    .breadcrumbs { padding: 20px 0 0; font-size: 13px; color: var(--muted); }
-    .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
-    .breadcrumbs li:not(:last-child)::after { content: "/"; margin-left: 8px; color: #a4a8ae; }
-    .breadcrumbs a { text-decoration: none; }
-
     .hero { position: relative; overflow: hidden; padding: 44px 0 76px; }
     .hero::before {
       content: ""; position: absolute; right: -160px; top: -180px; width: 570px; height: 570px; border-radius: 50%;
@@ -581,13 +576,6 @@
   </nav>
 
   <main id="main-content">
-    <div class="container breadcrumbs" aria-label="Breadcrumb">
-      <ol>
-        <li><a href="https://auto365.vn/">Trang chủ</a></li>
-        <li aria-current="page">Nguyễn Quang Đạo</li>
-      </ol>
-    </div>
-
     <section class="hero" aria-labelledby="profile-name">
       <div class="container hero-grid">
         <div>
