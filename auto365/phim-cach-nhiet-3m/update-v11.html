@@ -884,21 +884,22 @@
   }
 
   function recommendBlock() {
-    const lane = latestResult.lanes.find((item) => item.key === "recommended" && item.pkg);
+    const chosen = selectedLane && selectedLane.pkg ? selectedLane : null;
+    const lane = chosen || latestResult.lanes.find((item) => item.key === "recommended" && item.pkg);
     if (!lane) return "";
     const pkg = lane.pkg;
     const preview = vehicleChosen ? "" : `<p class="recommend-block__note">Ví dụ cấu hình mặc định cho nhóm ${escapeHtml(labels.group[DEFAULT_GROUP])} — chưa phải đề xuất cho xe của anh/chị. Chọn hãng và dòng xe, hoặc loại xe, để nhận gợi ý đúng.</p>`;
     return `<div class="recommend-block">
       <div>
-        <p class="eyebrow">PHƯƠNG ÁN KHUYẾN NGHỊ</p>
+        <p class="eyebrow">${chosen ? "PHƯƠNG ÁN ĐÃ CHỌN" : "PHƯƠNG ÁN KHUYẾN NGHỊ"}</p>
         <h4>3M ${escapeHtml(pkg.shortName)} — ${formatPrice(pkg.prices[state.group])}</h4>
         <p>Kính lái ${escapeHtml(windshieldCode(pkg))} · Sườn và lưng ${escapeHtml(bodyCodes(pkg))} — không vượt trần ngân sách ${escapeHtml(labels.budget[state.budget].toLowerCase())}.</p>
         ${preview}
       </div>
       <div class="recommend-block__actions">
         <a class="button button--primary" href="tel:${PHONE}">Gọi 0365 365 365</a>
-        <button class="button button--outline" type="button" data-zalo-lane="recommended">Chat Zalo</button>
-        <button class="button button--outline" type="button" data-choose="recommended">Để lại thông tin tư vấn</button>
+        <button class="button button--outline" type="button" data-zalo-lane="${lane.key}">Chat Zalo</button>
+        <button class="button button--outline" type="button" data-choose="${lane.key}">Để lại thông tin tư vấn</button>
       </div>
     </div>`;
   }
