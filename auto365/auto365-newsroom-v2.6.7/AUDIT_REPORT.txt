@@ -1,0 +1,27 @@
+AUTO365 NEWSROOM V2.6.7 - PRESS ALIGNMENT COMPACT
+
+Scope
+- Fix only the Press/Media Coverage block from V2.6.6.
+- Keep Global Finder, Vehicle Finder, Content Type, Swiper logic and other page sections unchanged.
+
+Root causes fixed
+1. Column heading misalignment: "Nguon khac" lived in a separate grid row with an empty left cell, so the right heading had no matching left baseline.
+2. Excess white space: .press-small-body used flex:1 inside a fixed-height Swiper slide, stretching the text body beyond its content.
+
+Changes
+- Each press column owns its heading: "Bai noi bat" and "Nguon khac".
+- Both headings share .press-column-heading typography and min-height.
+- Desktop press stage reduced from 452px to 396px.
+- Secondary cards use grid rows: media fills remaining space; body is content-sized.
+- Press body no longer stretches with flex:1.
+- 40/60 lead/secondary desktop ratio preserved.
+- Mobile/tablet stacking preserved with dedicated heights.
+
+Verification
+- pytest full suite: 51 passed
+- filters.js: node --check PASS
+- mockup.js: node --check PASS
+- duplicate IDs: 0
+- images missing alt: 0
+- buttons missing type: 0
+- href="#": 0
