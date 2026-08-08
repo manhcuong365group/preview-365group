@@ -1,0 +1,19 @@
+AUTO365 NEWSROOM V2.6.4 - AUDIT REPORT
+
+Scope changed from V2.6.3:
+- Video: 1 slide per view, media-only 16:9, title/tag overlay, no text panel below.
+- Press: compact lead + 8 real media-source cards, desktop right rail 2 columns x 2 rows.
+- Branch: removed fake map art; replaced with 3 region cards: North 41 / Central 26 / South 24.
+- Preserved: Global Finder state, Vehicle Finder state, taxonomy, vehicle/article 3x2 Swipers, FAQ, Trust, final CTA.
+
+Verification gates:
+- pytest full suite
+- node --check filters.js
+- node --check mockup.js
+- duplicate ID scan
+- missing image alt scan
+- missing button type scan
+- href="#" scan
+- no demo/Production filler in press rail
+- no branch map SVG/map card in HTML
+- standalone self-contained local CSS/JS/assets
