@@ -3,3 +3,7 @@
 # KHÔNG copy file này sang production auto365.vn.
 /*
   X-Robots-Tag: noindex, nofollow
+
+# HTML luôn revalidate — tránh webview/zone cache giữ bản cũ
+/phim-cach-nhiet-3m/*
+  Cache-Control: no-cache, must-revalidate
