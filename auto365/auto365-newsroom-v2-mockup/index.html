@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,max-image-preview:large">
+  <title>Auto365 Newsroom V2 — Visual Mockup</title>
+  <meta name="description" content="Mockup visual trang Tin tức Auto365 để so sánh bố cục trước khi triển khai production.">
+  <link rel="stylesheet" href="mockup.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Auto365 Newsroom">
+        <span class="brand-mark">365</span>
+        <span><strong>AUTO<span>365</span></strong><small>NEWSROOM MOCKUP</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Điều hướng demo">
+        <a class="is-active" href="#top">Tin tức</a>
+        <a href="#service-guides">Cẩm nang</a>
+        <a href="#vehicle-cases">Xe thực tế</a>
+        <a href="#content-feed">Kiến thức</a>
+      </nav>
+      <button class="icon-btn" type="button" data-scroll="#global-finder" aria-label="Mở tìm kiếm">⌕</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">AUTO365 NEWSROOM</p>
+          <h1>Tin tức Auto365</h1>
+          <p class="hero-lead">Cẩm nang nâng cấp ô tô, hồ sơ thi công thực tế và kiến thức chuyên sâu giúp bạn tìm đúng nội dung theo nhu cầu.</p>
+        </div>
+        <a class="hero-visual" href="#vehicle-cases" aria-label="Xem hồ sơ xe thực tế">
+          <img src="assets/img-00.webp" alt="VinFast VF8 tại Auto365">
+          <div class="hero-overlay">
+            <span class="label">XE THỰC TẾ</span>
+            <strong>Khám phá hồ sơ nâng cấp theo từng dòng xe</strong>
+            <span>Xem hồ sơ →</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="global-finder-wrap" id="global-finder">
+      <div class="shell">
+        <div class="global-finder card-surface">
+          <div class="finder-topline">
+            <div>
+              <p class="eyebrow">TÌM NỘI DUNG</p>
+              <h2>Tìm trong hơn 4.000 bài viết Auto365</h2>
+            </div>
+            <button class="text-button" id="clear-global" type="button">Đặt lại</button>
+          </div>
+          <form id="global-filter-form" class="global-filter-grid">
+            <label class="search-field">
+              <span class="sr-only">Từ khóa</span>
+              <span class="search-icon">⌕</span>
+              <input id="global-query" type="search" placeholder="Tìm bài viết, sản phẩm, dòng xe, vấn đề..." autocomplete="off">
+            </label>
+            <label>
+              <span>Loại bài</span>
+              <select id="filter-type">
+                <option value="">Tất cả loại bài</option>
+                <option>Kiến thức</option><option>Tư vấn</option><option>So sánh</option>
+                <option>Xe thực tế</option><option>Tin Auto365</option><option>Ưu đãi</option>
+              </select>
+            </label>
+            <label>
+              <span>Chủ đề</span>
+              <select id="filter-topic">
+                <option value="">Tất cả chủ đề</option>
+                <option>Phim cách nhiệt</option><option>Ánh sáng ô tô</option><option>Camera ô tô</option>
+                <option>PPF & Wrap</option><option>Đồ chơi xe</option>
+              </select>
+            </label>
+            <label>
+              <span>Nhu cầu</span>
+              <select id="filter-need">
+                <option value="">Tất cả nhu cầu</option>
+                <option>Chống nóng</option><option>Cải thiện ánh sáng</option><option>Ghi hình</option>
+                <option>Bảo vệ sơn</option><option>Tiện nghi</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" type="submit">Lọc kết quả</button>
+          </form>
+          <p class="finder-status" id="global-status" aria-live="polite">Nhập từ khóa hoặc chọn bộ lọc để thu hẹp nội dung.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="service-guides">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="eyebrow">KHÁM PHÁ NHANH</p><h2>Cẩm nang theo dịch vụ</h2></div>
+          <a href="#content-feed">Xem tất cả →</a>
+        </div>
+        <div class="guide-grid horizontal-scroll">
+          <a class="guide-card" href="#content-feed" data-topic="Phim cách nhiệt">
+            <img src="assets/img-01.webp" alt="Minh họa công nghệ phim cách nhiệt">
+            <div><span class="guide-icon">◫</span><h3>Phim cách nhiệt</h3><p>So sánh phim, thông số và vị trí kính theo từng xe →</p></div>
+          </a>
+          <a class="guide-card" href="#content-feed" data-topic="Ánh sáng ô tô">
+            <img src="assets/img-02.webp" alt="Khu trưng bày sản phẩm ánh sáng X-Light">
+            <div><span class="guide-icon">◉</span><h3>Ánh sáng ô tô</h3><p>Bi LED, bi gầm, cấu hình ánh sáng và lưu ý lắp đặt →</p></div>
+          </a>
+          <a class="guide-card" href="#content-feed" data-topic="Camera ô tô">
+            <img src="assets/img-03.webp" alt="Kiểm tra kính xe tại Auto365">
+            <div><span class="guide-icon">▣</span><h3>Camera ô tô</h3><p>Camera hành trình, camera 360 và nhu cầu sử dụng thực tế →</p></div>
+          </a>
+          <a class="guide-card" href="#content-feed" data-topic="PPF & Wrap">
+            <img src="assets/img-04.webp" alt="Kỹ thuật viên thi công tại Auto365">
+            <div><span class="guide-icon">◇</span><h3>PPF & Wrap</h3><p>Bảo vệ sơn, đổi màu và các lưu ý khi thi công →</p></div>
+          </a>
+          <a class="guide-card" href="#content-feed" data-topic="Đồ chơi xe">
+            <img src="assets/img-05.webp" alt="Ford Everest tại xưởng Auto365">
+            <div><span class="guide-icon">⌁</span><h3>Đồ chơi xe</h3><p>Tiện nghi, phụ kiện và các giải pháp nâng cấp theo nhu cầu →</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vehicle-section" id="vehicle-cases">
+      <div class="shell">
+        <div class="section-head vehicle-title">
+          <div><p class="eyebrow">HỒ SƠ THỰC TẾ</p><h2>Xe thực tế mới nhất</h2><p>Cấu hình nâng cấp thực tế, lọc nhanh theo hãng xe, dòng xe và dịch vụ.</p></div>
+          <a href="#">Xem tất cả →</a>
+        </div>
+
+        <div class="case-filter card-surface">
+          <label><span>Hãng xe</span><select id="case-brand"><option value="">Tất cả hãng</option><option>VinFast</option><option>Toyota</option><option>Mazda</option><option>Ford</option><option>Mitsubishi</option><option>Peugeot</option></select></label>
+          <label><span>Dòng xe</span><select id="case-model"><option value="">Tất cả dòng xe</option><option>VF8</option><option>Fortuner</option><option>CX-5</option><option>Everest</option><option>Triton</option><option>408</option></select></label>
+          <label><span>Dịch vụ</span><select id="case-service"><option value="">Tất cả dịch vụ</option><option>Phim cách nhiệt</option><option>Ánh sáng ô tô</option><option>Camera ô tô</option><option>PPF & Wrap</option><option>Đồ chơi xe</option></select></label>
+          <button class="btn btn-primary" id="case-apply" type="button">Áp dụng</button>
+        </div>
+        <p class="case-status" id="case-status" aria-live="polite"></p>
+
+        <div class="case-grid" id="case-grid">
+          <article class="case-card" data-case-brand="VinFast" data-case-model="VF8" data-case-service="Phim cách nhiệt">
+            <img src="assets/img-06.webp" alt="VinFast VF8 sau khi dán phim tại Auto365">
+            <div class="case-body"><span class="tag">PHIM CÁCH NHIỆT</span><h3>VinFast VF8 · hồ sơ dán phim cách nhiệt</h3><p>Đối chiếu vị trí kính, cấu hình phim và quy trình kiểm tra trước bàn giao.</p><div class="meta"><span>VinFast VF8</span><span>Xe thực tế</span></div></div>
+          </article>
+          <article class="case-card" data-case-brand="Peugeot" data-case-model="408" data-case-service="Phim cách nhiệt">
+            <img src="assets/img-07.webp" alt="Peugeot 408 thi công phim cách nhiệt tại Auto365">
+            <div class="case-body"><span class="tag">PHIM CÁCH NHIỆT</span><h3>Peugeot 408 · thi công phim cách nhiệt</h3><p>Case thực tế để tham khảo phương án kính lái, kính sườn và kính hậu.</p><div class="meta"><span>Peugeot 408</span><span>Xe thực tế</span></div></div>
+          </article>
+          <article class="case-card" data-case-brand="Mitsubishi" data-case-model="Triton" data-case-service="Ánh sáng ô tô">
+            <img src="assets/img-08.webp" alt="Mitsubishi Triton sau khi nâng cấp bi gầm tại Auto365">
+            <div class="case-body"><span class="tag">ÁNH SÁNG Ô TÔ</span><h3>Mitsubishi Triton · nâng cấp bi gầm</h3><p>Tham khảo hốc lắp, phương án cố định và cấu hình ánh sáng thực tế.</p><div class="meta"><span>Mitsubishi Triton</span><span>Xe thực tế</span></div></div>
+          </article>
+          <article class="case-card" data-case-brand="Ford" data-case-model="Everest" data-case-service="Camera ô tô">
+            <img src="assets/img-05.webp" alt="Ford Everest tại xưởng Auto365">
+            <div class="case-body"><span class="tag">CAMERA Ô TÔ</span><h3>Ford Everest · cấu hình camera theo xe</h3><p>Gợi ý cách đọc case thi công và những điểm nên kiểm tra trước khi lựa chọn.</p><div class="meta"><span>Ford Everest</span><span>Xe thực tế</span></div></div>
+          </article>
+          <article class="case-card" data-case-brand="Mazda" data-case-model="CX-5" data-case-service="PPF & Wrap">
+            <img src="assets/img-04.webp" alt="Thi công tại Auto365">
+            <div class="case-body"><span class="tag">PPF & WRAP</span><h3>Mazda CX-5 · hồ sơ bảo vệ bề mặt</h3><p>Case tham khảo vị trí thi công, bề mặt và cách nghiệm thu sau hoàn thiện.</p><div class="meta"><span>Mazda CX-5</span><span>Xe thực tế</span></div></div>
+          </article>
+          <article class="case-card" data-case-brand="Toyota" data-case-model="Fortuner" data-case-service="Đồ chơi xe">
+            <img src="assets/img-05.webp" alt="Xe tại xưởng Auto365">
+            <div class="case-body"><span class="tag">ĐỒ CHƠI XE</span><h3>Toyota Fortuner · nâng cấp tiện nghi</h3><p>Tham khảo nhóm phụ kiện và cách lựa chọn theo nhu cầu sử dụng thực tế.</p><div class="meta"><span>Toyota Fortuner</span><span>Xe thực tế</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content-section" id="content-feed">
+      <div class="shell">
+        <div class="section-head content-title"><div><p class="eyebrow">THƯ VIỆN NỘI DUNG</p><h2>Đọc theo loại bài</h2></div><a href="#global-finder">Tìm nội dung →</a></div>
+        <div class="tabs" role="tablist" aria-label="Loại bài">
+          <button class="tab is-active" type="button" data-feed-type="">Tất cả</button>
+          <button class="tab" type="button" data-feed-type="Kiến thức">Kiến thức</button>
+          <button class="tab" type="button" data-feed-type="Tư vấn">Tư vấn</button>
+          <button class="tab" type="button" data-feed-type="So sánh">So sánh</button>
+          <button class="tab" type="button" data-feed-type="Tin Auto365">Tin Auto365</button>
+          <button class="tab" type="button" data-feed-type="Ưu đãi">Ưu đãi</button>
+        </div>
+        <div class="article-grid" id="article-grid">
+          <article class="article-card" data-type="Kiến thức" data-topic="Phim cách nhiệt" data-need="Chống nóng"><img src="assets/img-01.webp" alt="Công nghệ phim cách nhiệt"><div><span class="tag">KIẾN THỨC</span><h3>Phim cách nhiệt ô tô: nên đọc thông số nào trước khi chọn?</h3><p>Nhóm thông tin nền giúp người đọc hiểu cách so sánh sản phẩm và nhu cầu sử dụng.</p></div></article>
+          <article class="article-card" data-type="So sánh" data-topic="Ánh sáng ô tô" data-need="Cải thiện ánh sáng"><img src="assets/img-02.webp" alt="Sản phẩm ánh sáng ô tô"><div><span class="tag">SO SÁNH</span><h3>Bi LED, bi Laser và bi gầm khác nhau ở điểm nào?</h3><p>So sánh theo mục đích sử dụng, vị trí lắp và các yếu tố cần kiểm tra trước thi công.</p></div></article>
+          <article class="article-card" data-type="Tư vấn" data-topic="Camera ô tô" data-need="Ghi hình"><img src="assets/img-03.webp" alt="Thiết bị kiểm tra trên xe"><div><span class="tag">TƯ VẤN</span><h3>Chọn camera hành trình theo nhu cầu sử dụng thực tế</h3><p>Gợi ý nhóm tiêu chí để thu hẹp lựa chọn trước khi xem từng sản phẩm cụ thể.</p></div></article>
+          <article class="article-card" data-type="Kiến thức" data-topic="PPF & Wrap" data-need="Bảo vệ sơn"><img src="assets/img-04.webp" alt="Kỹ thuật viên thi công"><div><span class="tag">KIẾN THỨC</span><h3>PPF là gì và những vị trí nào thường được cân nhắc bảo vệ?</h3><p>Nội dung nền về bề mặt, vị trí thi công và cách kiểm tra sau khi hoàn thiện.</p></div></article>
+          <article class="article-card" data-type="Tin Auto365" data-topic="Đồ chơi xe" data-need="Tiện nghi"><img src="assets/img-05.webp" alt="Xe tại Auto365"><div><span class="tag">TIN AUTO365</span><h3>Cập nhật hoạt động và hồ sơ xe mới tại hệ thống Auto365</h3><p>Điểm vào nhanh cho tin hệ thống, case mới và các cập nhật liên quan.</p></div></article>
+          <article class="article-card" data-type="Ưu đãi" data-topic="Phim cách nhiệt" data-need="Chống nóng"><img src="assets/img-06.webp" alt="VinFast VF8 tại Auto365"><div><span class="tag">ƯU ĐÃI</span><h3>Thông tin chương trình theo từng thời điểm</h3><p>Ưu đãi chỉ hiển thị khi có dữ liệu chương trình còn hiệu lực và điều kiện rõ ràng.</p></div></article>
+        </div>
+        <p class="article-empty" id="article-empty" hidden>Không có card demo phù hợp với bộ lọc hiện tại.</p>
+      </div>
+    </section>
+
+    <section class="section trust-section" id="trust">
+      <div class="shell trust-grid">
+        <div class="trust-item"><span>▤</span><strong>Dữ liệu thực tế</strong><p>Ưu tiên hồ sơ xe và nội dung có nguồn nội bộ xác minh.</p></div>
+        <div class="trust-item"><span>◇</span><strong>Kiểm duyệt kỹ thuật</strong><p>Claim kỹ thuật cần được rà soát trước khi public.</p></div>
+        <div class="trust-item"><span>◷</span><strong>Cập nhật có kiểm soát</strong><p>Ngày sửa đổi chỉ thay đổi khi nội dung thực sự được cập nhật.</p></div>
+        <div class="trust-item"><span>⌂</span><strong>Hệ thống Auto365</strong><p>Liên kết tới điểm dịch vụ và nội dung liên quan khi có dữ liệu phù hợp.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell footer-grid">
+      <div><div class="brand footer-brand"><span class="brand-mark">365</span><span><strong>AUTO<span>365</span></strong><small>NEWSROOM</small></span></div><p>Prototype visual để duyệt cấu trúc trang Tin tức trước khi port sang production.</p></div>
+      <div><strong>Khám phá</strong><a href="#service-guides">Cẩm nang</a><a href="#vehicle-cases">Xe thực tế</a><a href="#content-feed">Kiến thức</a></div>
+      <div><strong>Điều hướng</strong><a href="#global-finder">Tìm nội dung</a><a href="#top">Lên đầu trang</a></div>
+    </div>
+  </footer>
+
+  <script src="mockup.js"></script>
+</body>
+</html>
