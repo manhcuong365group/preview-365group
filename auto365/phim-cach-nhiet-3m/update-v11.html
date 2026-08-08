@@ -190,7 +190,7 @@
 </div>
 <div class="pkg-cta">
 <a class="a365-text pkg-cta mb-2 block text-center font-medium" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">Xem cấu hình và giá Ceramic Hybrid →</a>
-<a class="a365-bg rounded-lg" href="#filmmatch" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
+<a class="a365-bg rounded-lg" href="#lead-form" data-quote-pkg="ceramic-nr" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
 </div>
 </article>
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
@@ -210,7 +210,7 @@
 </div>
 <div class="pkg-cta">
 <a class="a365-text pkg-cta mb-2 block text-center font-medium" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-ir">Xem cấu hình và giá Ceramic IR →</a>
-<a class="a365-bg rounded-lg" href="#filmmatch" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
+<a class="a365-bg rounded-lg" href="#lead-form" data-quote-pkg="ceramic-ir" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
 </div>
 </article>
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
@@ -230,7 +230,7 @@
 </div>
 <div class="pkg-cta">
 <a class="a365-text pkg-cta mb-2 block text-center font-medium" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid">Xem cấu hình và giá Crystalline Hybrid →</a>
-<a class="a365-bg rounded-lg" href="#filmmatch" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
+<a class="a365-bg rounded-lg" href="#lead-form" data-quote-pkg="crystalline-hybrid" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
 </div>
 </article>
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
@@ -250,7 +250,7 @@
 </div>
 <div class="pkg-cta">
 <a class="a365-text pkg-cta mb-2 block text-center font-medium" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">Xem cấu hình và giá Crystalline CR BLK →</a>
-<a class="a365-bg rounded-lg" href="#filmmatch" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
+<a class="a365-bg rounded-lg" href="#lead-form" data-quote-pkg="crystalline-cr-blk" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
 </div>
 </article>
 </div>
@@ -274,7 +274,7 @@
 </div>
 <div class="pkg-cta">
 <a class="a365-text pkg-cta mb-2 block text-center font-medium" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid-pro">Xem cấu hình và giá Crystalline Hybrid PRO →</a>
-<a class="a365-bg rounded-lg" href="#filmmatch" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
+<a class="a365-bg rounded-lg" href="#lead-form" data-quote-pkg="crystalline-hybrid-pro" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
 </div>
 </article>
 <article class="pkg-card flex flex-col rounded-2xl border bg-white p-5">
@@ -294,7 +294,7 @@
 </div>
 <div class="pkg-cta">
 <a class="a365-text pkg-cta mb-2 block text-center font-medium" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">Xem dòng Crystalline CR BLK →</a>
-<a class="a365-bg rounded-lg" href="#filmmatch" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
+<a class="a365-bg rounded-lg" href="#lead-form" data-quote-pkg="crystalline-cr-blk-pro" style="display:block;text-align:center;padding:8px 14px;font-size:13px;font-weight:500">Nhận báo giá gói này</a>
 </div>
 </article>
 </div>
@@ -665,6 +665,7 @@
   let latestResult = null;
   let vehicleChosen = false;
   let leadClosed = true;
+  let leadOverridePkg = null;
   const leadDraft = { name: "", phone: "", brand: "", model: "", province: "", modelUnknown: false };
 
   const state = {
@@ -902,6 +903,10 @@
   }
 
   function leadConfigText() {
+    if (leadOverridePkg && !selectedLane) {
+      const pkg = leadOverridePkg;
+      return `${pkg.fullName} | Kính lái: ${pkg.windshield} | Sườn & lưng: ${pkg.body} | Giá tham khảo (${labels.group[state.group]}): ${formatDong(pkg.prices[state.group])}`;
+    }
     const lane = selectedLane?.pkg ? selectedLane : null;
     if (!lane) return "Chưa chọn phương án — bấm vào một thẻ phía trên để lấy cấu hình.";
     return `${lane.pkg.fullName} | Kính lái: ${windshieldCode(lane.pkg)} | Sườn & lưng: ${bodyCodes(lane.pkg)} | Cửa sổ trời: ${sunroofText()} | Mã: ${lane.configId}`;
@@ -993,6 +998,7 @@
       if (!lane?.pkg) return;
       selectedConfigId = lane.configId;
       selectedLane = lane;
+      leadOverridePkg = null;
       leadClosed = false;
       track("select_package", { package_id: lane.pkg.id, configuration_id: lane.configId, price: lane.pkg.prices[state.group], lane: lane.key });
       renderResult();
@@ -1126,12 +1132,14 @@
     const modelUnknown = form.elements.modelUnknown.checked;
     const model = modelUnknown ? "Chưa xác định model" : form.elements.model.value.trim();
     const province = form.elements.province.value.trim();
-    if (!selectedLane) { message.innerHTML = "<strong>Chưa có cấu hình</strong><p>Hãy bấm chọn một phương án phía trên trước khi gửi.</p>"; return; }
+    if (!selectedLane && !leadOverridePkg) { message.innerHTML = "<strong>Chưa có cấu hình</strong><p>Hãy bấm chọn một phương án phía trên trước khi gửi.</p>"; return; }
     if (!name) { message.innerHTML = "<strong>Thiếu họ tên</strong><p>Vui lòng nhập họ tên.</p>"; form.elements.name.focus(); return; }
     if (!/^0(3|5|7|8|9)\d{8}$/.test(phone)) { message.innerHTML = "<strong>Số điện thoại chưa đúng</strong><p>Ví dụ: 0365 365 365.</p>"; form.elements.phone.focus(); return; }
     if (!brand) { message.innerHTML = "<strong>Thiếu hãng xe</strong><p>Vui lòng nhập hãng xe.</p>"; form.elements.brand.focus(); return; }
     if (!modelUnknown && !model) { message.innerHTML = "<strong>Thiếu model xe</strong><p>Nhập model, hoặc tích “Chưa xác định model”.</p>"; form.elements.model.focus(); return; }
-    const text = summaryText(selectedLane, "general", { name, phone, vehicle: `${brand} ${model}`.trim(), province });
+    const text = (!selectedLane && leadOverridePkg)
+      ? [`Họ tên: ${name}.`, `Điện thoại: ${phone}.`, `Xe: ${brand} ${model}`.trim() + ".", province ? `Khu vực: ${province}.` : "", `Tôi muốn nhận báo giá gói ${leadOverridePkg.fullName}.`, `Cấu hình: ${leadConfigText()}.`, `Mã phiên tư vấn: ${consultation}.`].filter(Boolean).join("\n")
+      : summaryText(selectedLane, "general", { name, phone, vehicle: `${brand} ${model}`.trim(), province });
     const copyAttempt = copyText(text);
     const zaloWindow = window.open(ZALO_URL, "_blank", "noopener,noreferrer");
     const copied = await copyAttempt;
@@ -1201,6 +1209,19 @@
   }
   mobileBar?.querySelector("a[href^='tel:']")?.addEventListener("click", () => track("click_call"));
   mobileBar?.querySelector("button")?.addEventListener("click", () => openZalo());
+
+  document.querySelectorAll("[data-quote-pkg]").forEach((quoteBtn) => quoteBtn.addEventListener("click", (event) => {
+    const pkg = packages.find((item) => item.id === quoteBtn.dataset.quotePkg);
+    if (!pkg) return;
+    event.preventDefault();
+    leadOverridePkg = pkg;
+    selectedConfigId = null;
+    selectedLane = null;
+    leadClosed = false;
+    renderResult();
+    setTimeout(() => document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth", block: "center" }), 40);
+    track("quote_package", { package_id: pkg.id });
+  }));
 
   renderVehicleSelector(typeFallback.checked);
   renderCurrentSummary();
