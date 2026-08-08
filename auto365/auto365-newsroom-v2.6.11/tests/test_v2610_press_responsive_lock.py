@@ -57,5 +57,7 @@ def test_press_uses_one_stage_height_variable_per_breakpoint():
     assert '.press-swiper .swiper-slide { height: 195px !important; }' not in CSS
 
 
-def test_press_build_marker_advances_to_2610():
-    assert 'AUTO365-NEWSROOM-V2.6.10' in HTML
+def test_press_build_marker_is_not_older_than_2610():
+    match = re.search(r'AUTO365-NEWSROOM-V2\.6\.(\d+)', HTML)
+    assert match, 'build marker missing'
+    assert int(match.group(1)) >= 10

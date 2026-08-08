@@ -1,0 +1,30 @@
+AUTO365 NEWSROOM V2.6.11 — SWIPER MOBILE CONTAINMENT FIX
+
+VERDICT: STATIC / CONTRACT PASS
+BROWSER VISUAL QA: BLOCKED IN CONTAINER (Chromium DBus/zygote timeout)
+
+ROOT CAUSE
+1. A legacy mobile rule set `.swiper-peek { overflow: visible; }` at <=760px.
+2. Video and Press both carry `swiper-peek`, so initialized slides were painted outside the intended Swiper viewport.
+3. Topic used the same class and had the same latent risk. Vehicle/Article were partly masked by parent stage `overflow:hidden`.
+
+FIX
+- Mobile `.swiper-peek` changed to `overflow:hidden`.
+- Added shared containment: `.topic-swiper, .video-swiper, .press-swiper { max-width:100%; min-width:0; overflow:hidden; }`.
+- Video JS remains `slidesPerView:1`.
+- Press JS remains `slidesPerView:1.08` mobile and `2` at 768/1200 with 2 rows.
+- Build marker advanced to V2.6.11.
+- No filter/data behavior changes.
+
+VERIFICATION
+- pytest: 73 passed.
+- node --check filters.js: PASS.
+- node --check mockup.js: PASS.
+- CSS parse errors: 0.
+- Duplicate IDs: 0.
+- Images missing alt: 0.
+- Buttons missing type: 0.
+- href="#": 0.
+- Mobile `overflow:visible` regression: absent.
+- Local HTTP GET: PASS.
+- Chromium screenshot smoke test: BLOCKED by container DBus/zygote timeout; no visual-browser PASS claimed.

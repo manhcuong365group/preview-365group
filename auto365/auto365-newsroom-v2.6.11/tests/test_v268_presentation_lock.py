@@ -16,7 +16,8 @@ def test_presentation_metadata_has_no_mockup_or_stale_version_copy():
     assert title == 'Tin tức Auto365 | Cẩm nang & hồ sơ xe thực tế'
     assert 'Mockup' not in description
     assert 'V2.6.' not in description
-    assert SOUP.html.get('data-build') == 'AUTO365-NEWSROOM-V2.6.10'
+    build = SOUP.html.get('data-build', '')
+    assert re.fullmatch(r'AUTO365-NEWSROOM-V2\.6\.\d+', build)
 
 
 def test_visible_ui_has_no_internal_demo_or_prototype_jargon():
