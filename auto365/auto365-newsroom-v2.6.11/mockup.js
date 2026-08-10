@@ -95,8 +95,8 @@
       observeParents: true,
       navigation: { nextEl: '.press-next', prevEl: '.press-prev' },
       breakpoints: {
-        640: { slidesPerView: 1.35, spaceBetween: 12, grid: { rows: 2, fill: 'row' } },
-        1024: { slidesPerView: 2, spaceBetween: 12, grid: { rows: 2, fill: 'row' } },
+        768: { slidesPerView: 2, spaceBetween: 12, grid: { rows: 2, fill: 'row' } },
+        1200: { slidesPerView: 2, spaceBetween: 12, grid: { rows: 2, fill: 'row' } },
       },
     });
   }

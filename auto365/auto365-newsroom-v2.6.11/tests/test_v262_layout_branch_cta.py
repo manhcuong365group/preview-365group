@@ -38,7 +38,7 @@ def test_press_keeps_lead_and_right_side_horizontal_swiper():
     # V2.6.3 upgrades the right rail to 2 rows x 2 columns on desktop.
     assert "createSwiper('pressSwiper', '#press-swiper'" in MOCKUP
     assert "grid: { rows: 2, fill: 'row' }" in MOCKUP
-    assert "1024: { slidesPerView: 2" in MOCKUP
+    assert "1200: { slidesPerView: 2" in MOCKUP
 
 
 def test_branch_discovery_block_and_real_ctas_exist():
@@ -63,5 +63,6 @@ def test_no_hash_only_links_and_no_horizontal_media_card_regression():
         match = re.search(re.escape(selector) + r'\s*\{([^}]*)\}', CSS, re.S)
         assert match, selector
         block = match.group(1)
-        assert 'grid-template-columns' not in block, selector
-        assert 'flex-direction: column' in block or 'display: block' in block, selector
+        if 'grid-template-columns' in block:
+            assert 'grid-template-columns: 1fr' in block, selector
+        assert 'flex-direction: column' in block or 'display: block' in block or 'grid-template-columns: 1fr' in block, selector

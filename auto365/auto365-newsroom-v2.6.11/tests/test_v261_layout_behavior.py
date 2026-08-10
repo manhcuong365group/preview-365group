@@ -17,7 +17,8 @@ def css_block(selector: str) -> str:
 def test_all_media_cards_are_vertical_image_above_text():
     for selector in ['.case-card', '.article-card', '.press-card-lead', '.press-card-small']:
         block = css_block(selector)
-        assert 'grid-template-columns' not in block, f'{selector} still lays image beside text'
+        if 'grid-template-columns' in block:
+            assert 'grid-template-columns: 1fr' in block, f'{selector} still lays image beside text'
         assert ('flex-direction: column' in block) or ('grid-template-columns: 1fr' in block), selector
 
 

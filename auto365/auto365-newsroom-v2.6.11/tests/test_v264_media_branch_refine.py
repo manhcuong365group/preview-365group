@@ -31,7 +31,7 @@ def test_press_uses_real_secondary_cards_in_2x2_swiper_without_demo_fillers():
     assert not press.select('[data-demo-press]')
     assert 'Dữ liệu demo' not in press.get_text(' ', strip=True)
     assert 'Production' not in press.get_text(' ', strip=True)
-    assert re.search(r"createSwiper\('pressSwiper'.*?1024:\s*\{\s*slidesPerView:\s*2[^}]*grid:\s*\{\s*rows:\s*2", JS, re.S)
+    assert re.search(r"createSwiper\('pressSwiper'.*?1200:\s*\{\s*slidesPerView:\s*2[^}]*grid:\s*\{\s*rows:\s*2", JS, re.S)
     for card in cards:
         assert card.select_one('img[alt]') is not None
         assert card.select_one('.press-source') is not None

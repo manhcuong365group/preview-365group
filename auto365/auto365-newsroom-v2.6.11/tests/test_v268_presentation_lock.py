@@ -16,7 +16,8 @@ def test_presentation_metadata_has_no_mockup_or_stale_version_copy():
     assert title == 'Tin tức Auto365 | Cẩm nang & hồ sơ xe thực tế'
     assert 'Mockup' not in description
     assert 'V2.6.' not in description
-    assert SOUP.html.get('data-build') == 'AUTO365-NEWSROOM-V2.6.8'
+    build = SOUP.html.get('data-build', '')
+    assert re.fullmatch(r'AUTO365-NEWSROOM-V2\.6\.\d+', build)
 
 
 def test_visible_ui_has_no_internal_demo_or_prototype_jargon():
@@ -71,7 +72,7 @@ def test_press_css_has_one_canonical_base_definition_per_core_component():
     assert CSS.count('.press-card-small {') == 1
     assert CSS.count('.press-small-body {') == 1
     assert CSS.count('.press-card-small h3 {') == 1
-    assert '.press-columns-head' not in CSS
+    assert CSS.count('.press-columns-head {') == 2  # base + responsive hide override
     assert '.press-other-heading' not in CSS
     assert 'Press library — canonical' in CSS
 

@@ -65,7 +65,7 @@ def test_press_secondary_is_2x2_swiper_at_desktop():
     assert stage is not None
     assert stage.select_one('.swiper-edge-nav') is not None
     assert "createSwiper('pressSwiper'" in JS
-    assert re.search(r"1024:\s*\{\s*slidesPerView:\s*2[^}]*grid:\s*\{\s*rows:\s*2", JS, re.S)
+    assert re.search(r"1200:\s*\{\s*slidesPerView:\s*2[^}]*grid:\s*\{\s*rows:\s*2", JS, re.S)
     assert len(press.select('#press-swiper .swiper-slide')) >= 5
 
 
