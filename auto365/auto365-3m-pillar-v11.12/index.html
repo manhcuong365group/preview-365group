@@ -133,6 +133,24 @@ h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-family:inherit}
 .specs-condition a{color:var(--red);font-weight:600;text-decoration:none}
 .specs-condition a:hover{text-decoration:underline}
 .sources .source-doc{color:inherit}
+/* Bang 12 ma trong #cong-nghe nam ngoai .goc nen Tailwind px-4/py-3 khong an — tu style */
+#cong-nghe table{border-collapse:collapse;min-width:520px;width:100%;font-size:13px;text-align:left}
+#cong-nghe table th,#cong-nghe table td{padding:9px 12px;white-space:nowrap}
+#cong-nghe table th:not(:first-child),#cong-nghe table td:not(:first-child){text-align:right}
+@media (max-width:640px){
+  /* Bang thong so: thu nho chu + cuon ngang gon */
+  #cong-nghe table{font-size:11px;min-width:430px}
+  #cong-nghe table th,#cong-nghe table td{padding:6px 7px}
+  /* Cac ma theo vi tri kinh: 2 hang x 2 cot */
+  .glass-zones{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .glass-zones article{grid-template-columns:1fr;align-items:start;gap:6px;padding:12px 12px}
+  .glass-zones article+article{border-top:0}
+  .glass-zones article:nth-child(n+3){border-top:1px solid var(--line)}
+  .glass-zones article:nth-child(2n){border-left:1px solid var(--line)}
+  .glass-zones h3{font-size:13.5px}
+  .glass-zones p{font-size:11.5px;line-height:1.5}
+  .glass-zones b{font-size:11.5px;text-align:left}
+}
 /* Accordion dieu kien gia duoi bang gia le */
 .price-terms>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 20px;font-size:15px;font-weight:600}
 .price-terms>summary::-webkit-details-marker{display:none}
