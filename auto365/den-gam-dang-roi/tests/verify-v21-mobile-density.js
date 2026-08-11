@@ -51,5 +51,8 @@ assert.match(page, /class="qs-contact"/, 'quick selector must retain contact CTA
 assert.match(page, /class="context-cta"/, 'editorial sections must include contextual conversion CTAs');
 assert.match(page, /id="solutions"/, 'the hub must explain how standalone fog lights differ from adjacent lighting upgrades');
 assert.match(page, /Đèn gầm dạng rời khác gì với các hướng nâng cấp ánh sáng khác\?/, 'the solution section must use a neutral comparison framing');
+assert.match(page, /class="beam-library"/, 'Beam Lab must expose a visual evidence library');
+assert.match(page, /Ảnh tham khảo từ bài case đã công bố/, 'Beam Lab must label images as reference-only');
+assert.match(page, /den-tro-sang-titan-m30-ultra-v2-cho-vinfast-vf8-gia-thong-so/, 'Beam Lab must link to its published source case');
 
 console.log('V2.1 mobile density and conversion-flow checks passed.');
