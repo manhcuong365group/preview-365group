@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="vi" data-build="Auto365-Film-Metrics-Spoke-v1.0"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Thông số phim cách nhiệt: đọc VLT, TSER, IRR, UVR đúng cách | Auto365</title>
+<meta name="description" content="VLT, VLR, TSER, IRR, IRER, UVR nghĩa là gì, vì sao film-only khác glass + film, và giới hạn của máy đo cầm tay tại điểm bán — kèm nguồn cho từng con số.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<link rel="canonical" href="https://auto365.vn/thong-so-phim-cach-nhiet-o-to">
+<meta name="theme-color" content="#121416">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Auto365">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:title" content="Thông số phim cách nhiệt: đọc VLT, TSER, IRR, UVR đúng cách">
+<meta property="og:description" content="Một thông số chỉ có nghĩa khi kèm mã phim, kính tham chiếu, phương pháp và dải đo. Trang này giải thích từng chỉ số và bẫy thường gặp khi so sánh.">
+<meta property="og:url" content="https://auto365.vn/thong-so-phim-cach-nhiet-o-to">
+<meta property="og:image" content="https://auto365.vn/uploads/images/category/auto365vn-bannerphimcachnhietpng-img_6a38d79eae46b1.52807731_.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--bg:#f4f5f7;--paper:#fff;--ink:#14171a;--muted:#60676f;--line:#dfe3e7;--soft:#f7f8fa;--red:#d9151d;--red-dark:#ab0f15;--red-soft:#fff0f1;--green:#087a4c;--green-soft:#eaf8f1;--amber-soft:#fff7e3;--blue:#2457a6;--dark:#111315;--radius:22px;--max:940px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.shell{width:min(calc(100% - 32px),var(--max));margin-inline:auto}
+a{color:inherit}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.98);border-bottom:1px solid var(--line)}
+.topbar-inner{display:flex;align-items:center;justify-content:space-between;min-height:60px;gap:12px}
+.brand{font-weight:950;font-size:21px;letter-spacing:-.02em;text-decoration:none}.brand b{color:var(--red)}
+.top-link{min-height:44px;display:inline-flex;align-items:center;padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:12px;font-weight:850;text-decoration:none}
+.breadcrumb{font-size:11.5px;color:var(--muted);padding:14px 0 0}
+.breadcrumb a{color:var(--blue);text-decoration:none}.breadcrumb a:hover{text-decoration:underline}
+main{padding-bottom:56px}
+.hero{margin-top:14px;background:var(--dark);color:#fff;border-radius:26px;padding:34px 30px}
+.kicker{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.11em;color:#ff8b90}
+h1{font-size:clamp(28px,5vw,40px);line-height:1.1;letter-spacing:-.01em;margin:12px 0 14px}
+.hero p{color:#cfd3d6;max-width:760px;font-size:15px}
+section{margin-top:44px;scroll-margin-top:76px}
+.section-head{margin-bottom:16px}
+.section-head .kicker{color:var(--red)}
+h2{font-size:clamp(23px,3.6vw,29px);line-height:1.16;letter-spacing:-.01em;margin:8px 0 8px}
+.section-head p{color:var(--muted);font-size:14px;max-width:760px}
+.section-meta{display:inline-block;margin-top:8px;font-size:11px;font-weight:850;color:var(--muted)}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 5px 20px rgba(17,19,21,.035)}
+.answer{padding:22px 24px;border-left:5px solid var(--red);margin-top:16px}
+.answer h3{font-size:19px;margin:8px 0 8px}
+.answer p{font-size:14px;color:#3c4248}
+.tag{display:inline-flex;align-items:center;min-height:26px;border-radius:999px;padding:5px 10px;background:var(--soft);border:1px solid var(--line);font-size:10px;font-weight:850;letter-spacing:.02em}
+.tag.red{color:var(--red-dark);background:var(--red-soft);border-color:#efc9cb}
+.tag.green{color:var(--green);background:var(--green-soft);border-color:#c0e5d2}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.k-card{padding:21px;display:flex;flex-direction:column;gap:8px}
+.k-card h3{font-size:17px;line-height:1.3}
+.k-card p{font-size:13px;color:var(--muted)}
+.quote{margin:8px 0 0;padding:12px 14px;border-left:3px solid var(--line);background:var(--soft);border-radius:0 12px 12px 0;font-size:12.5px;color:#3c4248;font-style:italic}
+.spectrum{display:grid;grid-template-columns:5fr 43fr 52fr;gap:4px;margin-top:14px}
+.spectrum>div{padding:12px 10px;border-radius:12px;color:#fff;min-width:0}
+.spectrum b,.spectrum span,.spectrum small{display:block}
+.spectrum b{font-size:11px}
+.spectrum span{font-size:10px;opacity:.85;margin-top:3px}
+.spectrum .uv{background:#5b21b6}.spectrum .vis{background:#0369a1}.spectrum .ir{background:#b91c1c}
+.spectrum-note{font-size:11px;color:var(--muted);margin-top:8px}
+.metric-table{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:#fff;margin-top:14px}
+table{width:100%;border-collapse:collapse;min-width:680px}
+caption{text-align:left;padding:16px 18px 8px;font-weight:900;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:12px 16px;border-top:1px solid var(--line);font-size:12.5px}
+th{background:#f7f8fa;font-size:10px;text-transform:uppercase;letter-spacing:.05em;color:#59616a}
+td b{font-size:12.5px}
+.method-note{padding:22px;margin-top:14px;border-left:5px solid var(--red)}
+.method-note h3{margin:8px 0 8px;font-size:18px}
+.method-note p{font-size:13px;color:var(--muted)}
+.limits{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:14px}
+.limit-card{padding:21px}
+.limit-card h3{font-size:16px;margin:8px 0 8px}
+.limit-card ul{padding-left:18px}
+.limit-card li{font-size:13px;color:var(--muted);margin:7px 0}
+.limit-card.good{border-color:#bfe2cf;background:#fbfffd}
+.disclosure{margin-top:14px;padding:15px 17px;border:1px solid #edd49d;background:var(--amber-soft);border-radius:14px;font-size:12px;color:#69470a}
+.faq{display:grid;gap:9px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:15px;padding:15px 17px}
+.faq summary{cursor:pointer;font-weight:850;font-size:14px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--red);font-size:19px;flex:none}
+.faq details[open] summary:after{content:"−"}
+.faq p{margin-top:8px;font-size:13.5px;color:#3c4248}
+.source-ledger a{color:var(--blue);font-weight:800;text-decoration:underline;text-underline-offset:2px;display:inline-block;padding:5px 0}
+.source-ledger code{font-size:10px;color:var(--red-dark)}
+.editorial{padding:22px;display:grid;gap:8px;margin-top:14px}
+.editorial h3{font-size:17px}
+.editorial p{font-size:13px;color:var(--muted)}
+.byline{font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+.byline a{color:var(--blue)}
+.next{margin-top:44px;background:var(--dark);color:#fff;border-radius:24px;padding:28px;display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between}
+.next>div:first-child{flex:1 1 300px;min-width:0}
+.next h2{font-size:23px}
+.next p{color:#cbd0d3;font-size:13px;margin-top:6px}
+.next-actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:14px;font-size:13px;font-weight:850;text-decoration:none;border:1px solid transparent}
+.btn-red{background:var(--red);color:#fff}
+.btn-light{background:#fff;color:var(--ink)}
+footer{padding:26px 0 40px;font-size:11.5px;color:var(--muted)}
+footer a{color:var(--blue)}
+@media(max-width:720px){
+  .hero{padding:26px 20px}
+  .grid2,.grid3,.limits{grid-template-columns:1fr}
+  .k-card,.limit-card,.method-note{padding:17px}
+  .spectrum{grid-template-columns:1fr 1fr 1fr}
+  .next{padding:22px 18px}
+  .next-actions{width:100%;display:grid}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://auto365.vn/#organization","name":"Auto365","url":"https://auto365.vn/"},{"@type":"WebSite","@id":"https://auto365.vn/#website","url":"https://auto365.vn/","name":"Auto365","inLanguage":"vi-VN","publisher":{"@id":"https://auto365.vn/#organization"}},{"@type":"Person","@id":"https://auto365.vn/tac-gia/dang-minh-hoang#person","name":"Đặng Minh Hoàng","jobTitle":"Giám đốc điều hành 3M Pro Shop & 3M Training Center","url":"https://auto365.vn/tac-gia/dang-minh-hoang"},{"@type":"WebPage","@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#webpage","url":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to","name":"Thông số phim cách nhiệt: đọc VLT, TSER, IRR, UVR đúng cách","description":"VLT, VLR, TSER, IRR, IRER, UVR nghĩa là gì, vì sao film-only khác glass + film, và giới hạn của máy đo cầm tay tại điểm bán.","inLanguage":"vi-VN","datePublished":"2026-08-11","dateModified":"2026-08-11","isPartOf":{"@id":"https://auto365.vn/#website"},"author":{"@type":"Person","name":"Ngọc Trân"},"reviewedBy":{"@id":"https://auto365.vn/tac-gia/dang-minh-hoang#person"},"publisher":{"@id":"https://auto365.vn/#organization"},"breadcrumb":{"@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#breadcrumb"},"mainEntity":{"@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#article"}},{"@type":"BreadcrumbList","@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://auto365.vn/"},{"@type":"ListItem","position":2,"name":"Phim cách nhiệt","item":"https://auto365.vn/phim-cach-nhiet"},{"@type":"ListItem","position":3,"name":"Trung tâm thông số","item":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to"}]},{"@type":"Article","@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#article","headline":"Thông số phim cách nhiệt: đọc VLT, TSER, IRR, UVR đúng cách","description":"Giải thích từng chỉ số quang – nhiệt của phim cách nhiệt, điều kiện đo bắt buộc phải kèm theo và giới hạn của phép đo hiện trường.","inLanguage":"vi-VN","datePublished":"2026-08-11","dateModified":"2026-08-11","mainEntityOfPage":{"@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#webpage"},"author":{"@type":"Person","name":"Ngọc Trân"},"reviewedBy":{"@id":"https://auto365.vn/tac-gia/dang-minh-hoang#person"},"publisher":{"@id":"https://auto365.vn/#organization"},"citation":["https://ewfa.org/wp-content/uploads/2021/09/20200206_EWFA_Technical_Paper_VLTforAuto.pdf","https://multimedia.3m.com/mws/media/1704950O/thinsulate-series.pdf","https://www.iso.org/standard/76159.html","https://static3.luatvietnam.vn/uploaded/vietlawfile/2025/1/qcvn_32_2024_bgtvt_130125153202.pdf"]},{"@type":"FAQPage","@id":"https://auto365.vn/thong-so-phim-cach-nhiet-o-to#faq","mainEntity":[{"@type":"Question","name":"VLT và TSER khác nhau thế nào?","acceptedAnswer":{"@type":"Answer","text":"VLT (Visible Light Transmission) mô tả lượng ánh sáng nhìn thấy — dải 380 đến 780 nm — truyền qua hệ kính–phim; nó quyết định trải nghiệm quan sát nhưng chỉ đại diện một phần phổ mặt trời. TSER (Total Solar Energy Rejected) phản ánh tổng năng lượng mặt trời bị loại bỏ trên toàn dải trong điều kiện thử được công bố. Hai chỉ số trả lời hai câu hỏi khác nhau: một về độ sáng, một về nhiệt tổng thể — và không thay thế được cho nhau."}},{"@type":"Question","name":"IRR 99% có nghĩa là phim chặn gần hết nhiệt không?","acceptedAnswer":{"@type":"Answer","text":"Chưa chắc. IRR có thể được công bố trên một dải bước sóng rất hẹp — có tài liệu kỹ thuật ghi rõ IRR đo trong dải 900 đến 1.000 nm, tức chỉ một lát mỏng của dải hồng ngoại 780 đến 2.500 nm. Một con số IRR cao trên dải hẹp không đại diện cho toàn bộ dải hồng ngoại và không quy đổi được sang hiệu năng nhiệt tổng thể. Muốn nói về nhiệt tổng thể phải dùng TSER kèm điều kiện thử."}},{"@type":"Question","name":"Vì sao số đo trên xe khác con số trong tài liệu kỹ thuật?","acceptedAnswer":{"@type":"Answer","text":"Vì hai phép đo thuộc hai hệ khác nhau. Tài liệu kỹ thuật đo riêng tấm phim hoặc phim dán trên kính tham chiếu xác định — thường là kính trắng 6 mm — bằng spectrophotometer trong phòng thử nghiệm. Máy đo trên xe ghi nhận hệ kính nguyên bản cộng phim: kính xe có màu, độ dày và độ cong riêng nên kết quả luôn khác. Ngoài ra máy cầm tay thường chỉ đo tại bước sóng 550 nm, còn thiết bị phòng thử nghiệm phân tích toàn dải 280 đến 2.500 nm."}},{"@type":"Question","name":"Máy đo cầm tay tại điểm bán có đáng tin không?","acceptedAnswer":{"@type":"Answer","text":"Máy đo cầm tay hữu ích để đối chiếu trước và sau khi dán trên cùng một xe, cùng một máy, cùng một buổi — nhưng có giới hạn: độ chính xác thiết bị công bố khoảng ±2 điểm phần trăm, và hiệp hội ngành phim châu Âu khuyến nghị đọc kết quả hiện trường với dung sai ±7 điểm phần trăm vì tình trạng xe, hiệu chuẩn, pin, kính bẩn và độ cong kính đều làm lệch số. Kính cong nhiều còn làm ánh sáng lọt vào khe đo và cho kết quả cao hơn thực tế."}},{"@type":"Question","name":"Có thể so sánh thông số giữa hai hãng phim không?","acceptedAnswer":{"@type":"Answer","text":"Chỉ khi trùng toàn bộ điều kiện: cùng định nghĩa chỉ số, cùng dải bước sóng, cùng phương pháp và tiêu chuẩn đo, cùng kính tham chiếu, cùng hệ film-only hoặc glass cộng film, và cùng dải VLT. Khác một điều kiện thì kết luận phải ghi là không so sánh trực tiếp, thay vì quy đổi hay ước lượng. Đây cũng là lý do không nên xếp hạng phim bằng một con số duy nhất."}},{"@type":"Question","name":"Trong tài liệu kỹ thuật cần tìm những trường nào?","acceptedAnswer":{"@type":"Answer","text":"Bảy trường tối thiểu: tên thương hiệu, dòng và mã phim chính xác; VLT; TSER; IRR kèm dải bước sóng đo; UVR; loại kính tham chiếu (ví dụ kính trắng 6 mm); và phương pháp đo cùng phiên bản tài liệu (revision, ngày phát hành). Thiếu kính tham chiếu hoặc dải đo thì con số không dùng để so sánh được — chỉ có giá trị tham khảo trong nội bộ tài liệu đó."}}]}]}
+</script>
+</head>
+<body>
+<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="https://auto365.vn/">AUTO<b>365</b></a><a class="top-link" href="https://auto365.vn/phim-cach-nhiet">← Hub phim cách nhiệt</a></div></header>
+<main class="shell">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> / <a href="https://auto365.vn/phim-cach-nhiet">Phim cách nhiệt</a> / Trung tâm thông số</nav>
+
+<section class="hero" aria-labelledby="page-title">
+  <span class="kicker">Cornerstone · Trung tâm thông số</span>
+  <h1 id="page-title">Thông số phim cách nhiệt: đọc VLT, TSER, IRR, UVR đúng cách</h1>
+  <p>Một con số in trên tờ rơi không nói lên điều gì nếu thiếu bốn thứ đi kèm: mã phim, kính tham chiếu, phương pháp đo và dải bước sóng. Trang này giải thích từng chỉ số, chỉ ra bẫy thường gặp khi so sánh, và giới hạn thật của phép đo tại điểm bán.</p>
+</section>
+
+<section aria-labelledby="answer-title">
+  <div class="card answer"><span class="tag red">Trả lời nhanh</span>
+    <h3 id="answer-title">Thông số chỉ có nghĩa khi đọc kèm điều kiện đo</h3>
+    <p>VLT nói về độ sáng, TSER nói về nhiệt tổng thể, IRR chỉ nói về dải hồng ngoại được đo — ba chỉ số trả lời ba câu hỏi khác nhau và không thay thế nhau. Mọi con số đều được tạo ra trong một điều kiện cụ thể: <b>đo riêng tấm phim hay đo trên kính tham chiếu, kính loại nào, phương pháp nào, dải bước sóng nào</b>. Đổi một điều kiện là đổi kết quả, nên hai con số khác điều kiện không được đặt cạnh nhau để hơn thua.</p>
+  </div>
+</section>
+
+<section aria-labelledby="spectrum-title">
+  <div class="section-head"><span class="kicker">Nền tảng</span><h2 id="spectrum-title">Phổ mặt trời: mỗi chỉ số chỉ đo một phần của nó</h2><p>Theo tài liệu kỹ thuật EWFA, năng lượng mặt trời tới bề mặt trái đất phân bố xấp xỉ như sau — và đây là lý do độ tối của phim không nói được gì về nhiệt.</p></div>
+  <div class="spectrum" role="img" aria-label="Phân bố năng lượng phổ mặt trời: cực tím khoảng 5%, ánh sáng nhìn thấy khoảng 43%, hồng ngoại khoảng 52%">
+    <div class="uv"><b>UV · ~5%</b><span>280–380 nm</span></div>
+    <div class="vis"><b>Nhìn thấy · ~43%</b><span>380–780 nm — vùng VLT đo</span></div>
+    <div class="ir"><b>Hồng ngoại · ~52%</b><span>780–2.500 nm — vùng IRR/IRER đo</span></div>
+  </div>
+  <p class="spectrum-note">Tỷ lệ theo tổng năng lượng, trích tài liệu EWFA (xem sổ nguồn). Vì hơn một nửa năng lượng nằm ngoài vùng nhìn thấy, một tấm phim sáng vẫn có thể loại bỏ nhiều nhiệt — và một tấm phim tối chưa chắc mát.</p>
+</section>
+
+<section aria-labelledby="metrics-title">
+  <div class="section-head"><span class="kicker">Từng chỉ số</span><h2 id="metrics-title">Sáu chỉ số gặp nhiều nhất — và bẫy của từng chỉ số</h2></div>
+  <div class="grid2">
+    <article class="card k-card"><span class="tag red">VLT</span><h3>Ánh sáng nhìn thấy truyền qua</h3><p>Tỷ lệ ánh sáng trong dải 380–780 nm đi qua hệ được đo. Với kính lái, VLT liên quan trực tiếp đến khả năng quan sát ngày, đêm, mưa và trong hầm. <b>Bẫy:</b> VLT chỉ mô tả vùng nhìn thấy — không đại diện cho toàn bộ năng lượng mặt trời, nên không dùng VLT để suy ra độ mát.</p></article>
+    <article class="card k-card"><span class="tag">VLR</span><h3>Ánh sáng nhìn thấy phản xạ</h3><p>Tỷ lệ ánh sáng nhìn thấy bị phản xạ lại. Liên quan đến độ phản gương, màu phản chiếu và thẩm mỹ; cần xem ở cả mặt trong lẫn mặt ngoài. <b>Bẫy:</b> mức phản xạ cao có thể ảnh hưởng quan sát ban đêm từ trong ra — phải thử trên kính thật thay vì chỉ đọc số.</p></article>
+    <article class="card k-card"><span class="tag red">TSER</span><h3>Tổng năng lượng mặt trời bị loại bỏ</h3><p>Chỉ số phản ánh hiệu năng nhiệt tổng thể trên toàn dải phổ, trong điều kiện thử công bố. Đây là chỉ số đúng để nói về “khả năng cách nhiệt”. <b>Bẫy:</b> TSER luôn gắn với kính tham chiếu và phương pháp — hai TSER khác điều kiện thử không so sánh trực tiếp được.</p></article>
+    <article class="card k-card"><span class="tag">IRR</span><h3>Tỷ lệ chặn hồng ngoại — hỏi ngay dải đo</h3><p>Tỷ lệ bức xạ hồng ngoại bị loại bỏ, <b>trong dải bước sóng được đo</b>. Có tài liệu kỹ thuật ghi rõ IRR đo trong dải 900–1.000 nm — một lát mỏng của dải hồng ngoại 780–2.500 nm. <b>Bẫy:</b> IRR cao trên dải hẹp không quy đổi được sang nhiệt tổng thể; câu hỏi bắt buộc là “IRR này đo từ bao nhiêu đến bao nhiêu nm?”.</p></article>
+    <article class="card k-card"><span class="tag">IRER</span><h3>Năng lượng hồng ngoại bị loại bỏ</h3><p>Chỉ số tính đến cả phần hồng ngoại truyền qua lẫn phần bị hấp thụ rồi phát lại vào trong cabin — sát thực tế hơn một tỷ lệ chặn tức thời. <b>Bẫy:</b> định nghĩa và điều kiện thử có thể khác giữa các nhà sản xuất; chỉ so sánh khi hai bên công bố cùng cách tính.</p></article>
+    <article class="card k-card"><span class="tag">UVR</span><h3>Tỷ lệ tia cực tím bị loại bỏ</h3><p>Tỷ lệ tia UV (280–380 nm) bị chặn theo điều kiện công bố của từng mã. Liên quan đến bảo vệ da và hạn chế phai màu nội thất. <b>Bẫy:</b> các mã phổ biến thường có UVR rất cao và khá gần nhau — chỉ số này ít khi là căn cứ phân biệt chất lượng giữa các phim.</p></article>
+  </div>
+  <div class="metric-table"><table><caption>Tra nhanh: mỗi chỉ số trả lời gì và phải kèm điều kiện nào</caption><thead><tr><th scope="col">Chỉ số</th><th scope="col">Trả lời câu hỏi</th><th scope="col">Bắt buộc kèm</th><th scope="col">Không dùng để</th></tr></thead><tbody>
+    <tr><td><b>VLT</b></td><td>Kính sáng hay tối, nhìn có rõ không</td><td>Hệ đo: film-only hay glass + film</td><td>Suy ra khả năng cách nhiệt</td></tr>
+    <tr><td><b>VLR</b></td><td>Độ phản gương, màu phản chiếu</td><td>Mặt đo trong/ngoài</td><td>Đánh giá một mình mà bỏ qua quan sát thực tế</td></tr>
+    <tr><td><b>TSER</b></td><td>Hiệu năng nhiệt tổng thể</td><td>Kính tham chiếu + phương pháp thử</td><td>So sánh giữa hai điều kiện thử khác nhau</td></tr>
+    <tr><td><b>IRR</b></td><td>Chặn hồng ngoại trong dải được đo</td><td>Dải bước sóng (ví dụ 900–1.000 nm)</td><td>Quy đổi sang nhiệt tổng thể</td></tr>
+    <tr><td><b>IRER</b></td><td>Hồng ngoại kể cả phần hấp thụ – phát lại</td><td>Định nghĩa và điều kiện thử của hãng</td><td>So sánh khi hai hãng định nghĩa khác nhau</td></tr>
+    <tr><td><b>UVR</b></td><td>Tỷ lệ UV bị chặn</td><td>Điều kiện công bố của từng mã</td><td>Phân hạng chất lượng giữa các phim</td></tr>
+  </tbody></table></div>
+</section>
+
+<section aria-labelledby="filmonly-title">
+  <div class="card method-note"><span class="tag red">Quy tắc nền tảng</span>
+    <h3 id="filmonly-title">Film-only không đồng nghĩa glass + film — và kính tham chiếu quyết định con số</h3>
+    <p>Số liệu trong tài liệu kỹ thuật được tạo trong phòng thử nghiệm: mẫu đo bằng integrating sphere spectrophotometer, tính theo các chuẩn như NFRC 100/200/304 (tiền thân là ASTM E-903) và ASTM E-308 với nguồn sáng chuẩn, hoặc EN 410/EN 673 ở châu Âu; ISO 13837:2021 là phương pháp tương ứng cho kính xe đường bộ. Kết quả luôn gắn với một kính tham chiếu — ví dụ có tài liệu ghi rõ “khi dán trên kính trắng 6 mm (1/4 inch)”. Kính trên xe thật có màu, độ dày, độ cong và diện tích khác kính mẫu, nên trải nghiệm thực tế có thể khác con số công bố. Vì vậy kết quả đo riêng tấm phim không được trình bày như kết quả sau khi dán lên mọi xe.</p>
+  </div>
+</section>
+
+<section aria-labelledby="field-title">
+  <div class="section-head"><span class="kicker">Đo tại điểm bán</span><h2 id="field-title">Máy đo cầm tay trả lời được gì — và sai số bao nhiêu?</h2><p>Theo tài liệu kỹ thuật của Hiệp hội Phim cửa kính châu Âu (EWFA), phép đo hiện trường có các giới hạn sau.</p></div>
+  <div class="grid3">
+    <article class="card k-card"><span class="tag red">Hệ đo</span><h3>Đo kính cộng phim, không đo riêng phim</h3><p>Dùng ngoài phòng thử nghiệm, máy đo truyền sáng ghi nhận ánh sáng đi qua toàn bộ hệ kính — dù là kính trần hay kính đã dán phim. Số đo trên xe vì vậy không so trực tiếp được với con số film-only trong tài liệu.</p></article>
+    <article class="card k-card"><span class="tag">Dải đo</span><h3>Một bước sóng so với toàn dải</h3><p>Máy cầm tay dạng đơn giản chiếu một chùm sáng tại 550 nm — giữa dải nhìn thấy. Thiết bị phòng thử nghiệm là UV-Vis-NIR spectrophotometer phân tích toàn dải 280–2.500 nm và không được thiết kế để dùng ngoài phòng thử nghiệm.</p></article>
+    <article class="card k-card"><span class="tag green">Dung sai đọc</span><h3>±7 điểm phần trăm cho phép đo hiện trường</h3><p>Độ chính xác thiết bị công bố khoảng ±2 điểm phần trăm, nhưng tình trạng xe và môi trường chưa được tính. EWFA vì vậy khuyến nghị áp dung sai đọc ±7 điểm phần trăm khi diễn giải kết quả hiện trường.</p></article>
+  </div>
+  <div class="grid2" style="margin-top:13px">
+    <article class="card k-card"><span class="tag">Nguồn sai số</span><h3>Hiệu chuẩn, pin, kính bẩn, kính cong</h3><p>Chất lượng thiết bị, tình trạng hiệu chuẩn, pin yếu, cảm biến và kính bẩn đều làm lệch kết quả. Kính cong nhiều làm ánh sáng lọt vào từ hai bên khe chữ U của máy dạng horseshoe và thường cho kết quả <b>cao hơn</b> thực tế. Máy dạng hai mảnh gắn nam châm đo được mọi độ dày kính, gồm kính chắn gió và kính lưng.</p></article>
+    <article class="card k-card"><span class="tag">Trường hợp cần nhớ</span><h3>Kính nguyên bản cũng có thể đo ra số bất thường</h3><p>EWFA ghi nhận trường hợp kính nguyên bản đạt chuẩn, chưa dán phim, vẫn đo ra giá trị nằm dưới ngưỡng luật định của thị trường đó. Một số đo đơn lẻ không đủ để kết luận về sản phẩm hay về chiếc xe — phép đo có giá trị nhất là <b>trước và sau khi dán, cùng xe, cùng máy, cùng vị trí kính, cùng buổi</b>.</p></article>
+  </div>
+  <div class="disclosure"><b>Thử đèn nhiệt tại điểm bán không phải phép đo.</b> Nguồn sợi đốt có phân bố phổ khác căn bản bức xạ mặt trời; khoảng cách, công suất, thời gian chiếu và vật liệu nền đều thay đổi cảm nhận. Kết quả chỉ là minh họa tương phản giữa hai mẫu trong cùng một bố trí — không quy đổi ra TSER hay IRR và không so sánh được giữa hai điểm bán dùng đèn khác nhau.</div>
+</section>
+
+<section aria-labelledby="tds-title">
+  <div class="section-head"><span class="kicker">Áp dụng</span><h2 id="tds-title">Cách đọc một tài liệu kỹ thuật (TDS) trong 2 phút</h2><p>Cầm bất kỳ TDS nào, tìm đủ bảy trường sau. Thiếu trường nào thì con số mất giá trị so sánh tương ứng.</p></div>
+  <div class="metric-table"><table><caption>Bảy trường bắt buộc khi đọc TDS phim cách nhiệt</caption><thead><tr><th scope="col">#</th><th scope="col">Trường</th><th scope="col">Vì sao bắt buộc</th></tr></thead><tbody>
+    <tr><td><b>1</b></td><td>Thương hiệu · dòng · mã phim chính xác</td><td>Không gộp một mã thành đại diện toàn hãng; mỗi mã một bộ số riêng</td></tr>
+    <tr><td><b>2</b></td><td>VLT</td><td>Ghi rõ film-only hay glass + film</td></tr>
+    <tr><td><b>3</b></td><td>TSER</td><td>Chỉ số đúng cho câu hỏi về nhiệt tổng thể</td></tr>
+    <tr><td><b>4</b></td><td>IRR kèm dải bước sóng</td><td>IRR không kèm dải đo là con số không kiểm chứng được</td></tr>
+    <tr><td><b>5</b></td><td>UVR</td><td>Đọc theo điều kiện công bố của mã</td></tr>
+    <tr><td><b>6</b></td><td>Kính tham chiếu</td><td>Ví dụ kính trắng 6 mm — đổi kính nền là đổi kết quả</td></tr>
+    <tr><td><b>7</b></td><td>Phương pháp đo · revision · ngày phát hành</td><td>Hai tài liệu khác revision có thể khác số; cần biết đang đọc bản nào</td></tr>
+  </tbody></table></div>
+  <div class="limits">
+    <article class="card limit-card good"><span class="tag green">So sánh hợp lệ khi</span><h3>Trùng toàn bộ hệ quy chiếu</h3><ul>
+      <li>Cùng định nghĩa chỉ số và cùng dải bước sóng.</li>
+      <li>Cùng phương pháp, tiêu chuẩn đo và kính tham chiếu.</li>
+      <li>Cùng hệ film-only hoặc glass + film.</li>
+      <li>Cùng dải VLT — so phim sáng với phim sáng, phim tối với phim tối.</li>
+    </ul></article>
+    <article class="card limit-card"><span class="tag">Phải ghi “không so sánh trực tiếp” khi</span><h3>Khác dù chỉ một điều kiện</h3><ul>
+      <li>Hai hãng công bố IRR trên hai dải bước sóng khác nhau.</li>
+      <li>Một bên đo film-only, một bên đo trên kính tham chiếu.</li>
+      <li>Không xác định được revision hoặc kính tham chiếu của một trong hai tài liệu.</li>
+      <li>Chỉ có “mức cao nhất của cả hãng” thay vì số của đúng mã đang xét.</li>
+    </ul></article>
+  </div>
+</section>
+
+<section aria-labelledby="faq-title">
+  <div class="section-head"><span class="kicker">Câu hỏi thường gặp</span><h2 id="faq-title">Sáu câu hỏi về thông số</h2><p>Câu trả lời hiển thị trực tiếp và khớp với dữ liệu có cấu trúc của trang.</p></div>
+  <div class="faq">
+    <details><summary>VLT và TSER khác nhau thế nào?</summary><p>VLT (Visible Light Transmission) mô tả lượng ánh sáng nhìn thấy — dải 380 đến 780 nm — truyền qua hệ kính–phim; nó quyết định trải nghiệm quan sát nhưng chỉ đại diện một phần phổ mặt trời. TSER (Total Solar Energy Rejected) phản ánh tổng năng lượng mặt trời bị loại bỏ trên toàn dải trong điều kiện thử được công bố. Hai chỉ số trả lời hai câu hỏi khác nhau: một về độ sáng, một về nhiệt tổng thể — và không thay thế được cho nhau.</p></details>
+    <details><summary>IRR 99% có nghĩa là phim chặn gần hết nhiệt không?</summary><p>Chưa chắc. IRR có thể được công bố trên một dải bước sóng rất hẹp — có tài liệu kỹ thuật ghi rõ IRR đo trong dải 900 đến 1.000 nm, tức chỉ một lát mỏng của dải hồng ngoại 780 đến 2.500 nm. Một con số IRR cao trên dải hẹp không đại diện cho toàn bộ dải hồng ngoại và không quy đổi được sang hiệu năng nhiệt tổng thể. Muốn nói về nhiệt tổng thể phải dùng TSER kèm điều kiện thử.</p></details>
+    <details><summary>Vì sao số đo trên xe khác con số trong tài liệu kỹ thuật?</summary><p>Vì hai phép đo thuộc hai hệ khác nhau. Tài liệu kỹ thuật đo riêng tấm phim hoặc phim dán trên kính tham chiếu xác định — thường là kính trắng 6 mm — bằng spectrophotometer trong phòng thử nghiệm. Máy đo trên xe ghi nhận hệ kính nguyên bản cộng phim: kính xe có màu, độ dày và độ cong riêng nên kết quả luôn khác. Ngoài ra máy cầm tay thường chỉ đo tại bước sóng 550 nm, còn thiết bị phòng thử nghiệm phân tích toàn dải 280 đến 2.500 nm.</p></details>
+    <details><summary>Máy đo cầm tay tại điểm bán có đáng tin không?</summary><p>Máy đo cầm tay hữu ích để đối chiếu trước và sau khi dán trên cùng một xe, cùng một máy, cùng một buổi — nhưng có giới hạn: độ chính xác thiết bị công bố khoảng ±2 điểm phần trăm, và hiệp hội ngành phim châu Âu khuyến nghị đọc kết quả hiện trường với dung sai ±7 điểm phần trăm vì tình trạng xe, hiệu chuẩn, pin, kính bẩn và độ cong kính đều làm lệch số. Kính cong nhiều còn làm ánh sáng lọt vào khe đo và cho kết quả cao hơn thực tế.</p></details>
+    <details><summary>Có thể so sánh thông số giữa hai hãng phim không?</summary><p>Chỉ khi trùng toàn bộ điều kiện: cùng định nghĩa chỉ số, cùng dải bước sóng, cùng phương pháp và tiêu chuẩn đo, cùng kính tham chiếu, cùng hệ film-only hoặc glass cộng film, và cùng dải VLT. Khác một điều kiện thì kết luận phải ghi là không so sánh trực tiếp, thay vì quy đổi hay ước lượng. Đây cũng là lý do không nên xếp hạng phim bằng một con số duy nhất.</p></details>
+    <details><summary>Trong tài liệu kỹ thuật cần tìm những trường nào?</summary><p>Bảy trường tối thiểu: tên thương hiệu, dòng và mã phim chính xác; VLT; TSER; IRR kèm dải bước sóng đo; UVR; loại kính tham chiếu (ví dụ kính trắng 6 mm); và phương pháp đo cùng phiên bản tài liệu (revision, ngày phát hành). Thiếu kính tham chiếu hoặc dải đo thì con số không dùng để so sánh được — chỉ có giá trị tham khảo trong nội bộ tài liệu đó.</p></details>
+  </div>
+</section>
+
+<section aria-labelledby="sources-title">
+  <div class="section-head"><span class="kicker">Sổ nguồn</span><h2 id="sources-title">Mọi con số trên trang đều truy ngược được</h2><span class="section-meta">Last reviewed: 11/08/2026</span></div>
+  <div class="metric-table source-ledger"><table><caption>Nguồn của trung tâm thông số</caption><thead><tr><th scope="col">Source ID</th><th scope="col">Tài liệu</th><th scope="col">Đơn vị phát hành</th><th scope="col">Phạm vi dùng</th><th scope="col">Kiểm tra</th></tr></thead><tbody>
+    <tr><td><code>SRC-EWFA-VLT-001</code></td><td><a href="https://ewfa.org/wp-content/uploads/2021/09/20200206_EWFA_Technical_Paper_VLTforAuto.pdf" target="_blank" rel="nofollow noopener noreferrer">EWFA Technical Paper — VLT for Automotive</a></td><td>European Window Film Association</td><td>Phân bố phổ mặt trời; giới hạn máy đo cầm tay (550 nm, ±2, khuyến nghị ±7); các dạng thiết bị và nguồn sai số. Thực hành của hiệp hội ngành nước ngoài, không phải quy định Việt Nam.</td><td>11/08/2026</td></tr>
+    <tr><td><code>SRC-3M-TDS-CC-001</code></td><td><a href="https://multimedia.3m.com/mws/media/1704950O/thinsulate-series.pdf" target="_blank" rel="nofollow noopener noreferrer">TDS 3M™ Thinsulate™ Climate Control, Rev. A 04/2019</a></td><td>3M</td><td>Chỉ dùng làm ví dụ về IRR đo trong dải 900–1.000 nm và về kính tham chiếu 6 mm. Không dùng để so sánh giữa các hãng.</td><td>11/08/2026</td></tr>
+    <tr><td><code>SRC-ISO-13837-001</code></td><td><a href="https://www.iso.org/standard/76159.html" target="_blank" rel="noopener noreferrer">ISO 13837:2021</a></td><td>ISO</td><td>Phương pháp xác định độ truyền năng lượng mặt trời cho kính xe đường bộ; không phải ngưỡng tính năng hay chứng nhận.</td><td>09/08/2026</td></tr>
+    <tr><td><code>SRC-VN-QCVN32-001</code></td><td><a href="https://static3.luatvietnam.vn/uploaded/vietlawfile/2025/1/qcvn_32_2024_bgtvt_130125153202.pdf" target="_blank" rel="noopener noreferrer">QCVN 32:2024/BGTVT — toàn văn PDF</a></td><td>Bộ Giao thông vận tải</td><td>Đối chiếu mức kiểm soát của một phép đo phòng thử nghiệm (mục 9.1.1 Phụ lục A); không dùng để suy ngưỡng cho phim dán.</td><td>11/08/2026</td></tr>
+  </tbody></table></div>
+</section>
+
+<section aria-labelledby="editorial-title">
+  <div class="card editorial">
+    <span class="tag green">Trách nhiệm biên tập</span>
+    <h3 id="editorial-title">Ai biên soạn, ai kiểm duyệt và nguyên tắc cập nhật</h3>
+    <p>Trang không công bố số liệu của bất kỳ mã phim nào khi chưa khóa được tài liệu, revision và điều kiện đo; các con số xuất hiện ở đây chỉ dùng để minh họa cách đọc điều kiện đo và đều dẫn nguồn. Nội dung kỹ thuật được rà soát theo chu kỳ 180 ngày.</p>
+    <p><b>Lịch sử phiên bản:</b> V1.0 · 11/08/2026 — xuất bản lần đầu, tách từ mục thông số của hub phim cách nhiệt.</p>
+    <p class="byline">Biên soạn: Ngọc Trân · Kiểm duyệt kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Cập nhật: 11/08/2026</p>
+  </div>
+</section>
+
+<section class="next" aria-labelledby="next-title">
+  <div><span class="kicker">Đọc tiếp trong cụm chủ đề</span><h2 id="next-title">Số liệu là một chuyện — pháp lý là chuyện khác</h2><p>Ngưỡng 70% hay được trích trên mạng không phải là ngưỡng cho phim dán. Trang quy định pháp lý đọc đúng từng văn bản và chỉ rõ ranh giới của chúng.</p></div>
+  <div class="next-actions">
+    <a class="btn btn-red" href="https://auto365.vn/quy-dinh-dan-phim-cach-nhiet-o-to">Quy định pháp lý →</a>
+    <a class="btn btn-light" href="https://auto365.vn/phim-cach-nhiet">Về hub phim cách nhiệt</a>
+  </div>
+</section>
+</main>
+<footer><div class="shell">© Auto365 · <a href="https://auto365.vn/phim-cach-nhiet">Hub phim cách nhiệt</a> · <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365">Chính sách bảo mật</a></div></footer>
+</body></html>
