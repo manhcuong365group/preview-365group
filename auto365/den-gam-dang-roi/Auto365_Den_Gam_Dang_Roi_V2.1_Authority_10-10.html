@@ -114,7 +114,7 @@
         "hasPart": {"@id": "https://auto365.vn/den-gam-dang-roi#case-list"},
         "about": {"@id": "https://auto365.vn/den-gam-dang-roi#installation-service"},
         "datePublished": "2026-07-30",
-        "dateModified": "2026-08-09"
+        "dateModified": "2026-08-12"
       },
       {
         "@type": "Person",
@@ -445,6 +445,7 @@
     .price-explain h3{color:#fff;font-size:23px}
     .price-explain p{margin-top:10px;font-size:13px}
     .price-explain ul{display:grid;gap:8px;margin:18px 0 20px;padding-left:20px;font-size:13px}
+    .quote-checklist{margin-top:16px;border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px}.quote-checklist h3{font-size:17px}.quote-checklist p{margin-top:5px;color:var(--muted);font-size:12px}.quote-checklist ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:14px;list-style:none;counter-reset:quote}.quote-checklist li{counter-increment:quote;border:1px solid var(--line);border-radius:10px;padding:10px;font-size:11px;font-weight:700;line-height:1.45}.quote-checklist li:before{content:"0" counter(quote);display:block;margin-bottom:4px;color:var(--red);font-size:10px;font-weight:800}
     .case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
     .case-card{overflow:hidden;border:1px solid var(--line);border-radius:19px;background:#fff}
     .case-images{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#dfe3e8}
@@ -481,8 +482,11 @@
     .segment-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
     .benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
     #benefits .section-head .h2,#benefits .section-head .lede{max-width:none}
-    .solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .solution-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
     .solution-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:20px}.solution-card h3{font-size:17px}.solution-card p{margin-top:8px;color:var(--ink-2);font-size:12px;line-height:1.6}.solution-card ul{display:grid;gap:6px;margin-top:13px;padding-left:17px;color:var(--ink-2);font-size:11px}.solution-card li::marker{color:var(--red)}
+    .hub-answers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff}.hub-answer{padding:19px;border-right:1px solid var(--line)}.hub-answer:last-child{border:0}.hub-answer h3{font-size:14px;line-height:1.35}.hub-answer p{margin-top:8px;color:var(--ink-2);font-size:12px;line-height:1.6}
+    .fitment-library{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:#fff}.fitment-library-head{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:21px 22px;border-bottom:1px solid var(--line)}.fitment-library-head h3{font-size:20px}.fitment-library-head p{margin-top:4px;color:var(--muted);font-size:12px}.fitment-library-head input{min-width:260px;min-height:42px;border:1px solid #ccd2d9;border-radius:10px;padding:9px 12px}.fitment-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}.fitment-item{display:flex;justify-content:space-between;gap:14px;padding:14px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px}.fitment-item:nth-child(2n){border-right:0}.fitment-item:nth-last-child(-n+2){border-bottom:0}.fitment-item strong{display:block;font-size:13px}.fitment-item small{display:block;margin-top:3px;color:var(--muted)}.fitment-item a{color:var(--red-deep);font-weight:800;white-space:nowrap}
+    .case-video{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:stretch;border-radius:18px;overflow:hidden;background:var(--dark);color:#fff}.case-video-preview{display:grid;place-items:center;min-height:220px;background:linear-gradient(135deg,#25120e,#07090c);position:relative}.case-video-play{display:grid;place-items:center;width:58px;height:58px;border:1px solid rgba(255,255,255,.35);border-radius:50%;background:var(--red);font-size:20px}.case-video-body{padding:28px}.case-video-body h3{font-size:23px;line-height:1.25}.case-video-body p{margin-top:10px;color:#c7cdd5;font-size:13px;line-height:1.65}.case-video-body small{display:block;margin-top:15px;color:#9da6b2;font-size:11px}.hub-deep-dive{margin-top:22px;border:1px solid var(--line);border-radius:16px;background:#fff}.hub-deep-dive summary{padding:16px 18px;font-size:14px;font-weight:800;cursor:pointer;list-style:none}.hub-deep-dive summary::-webkit-details-marker{display:none}.hub-deep-dive summary:after{content:"+";float:right;color:var(--red);font-size:19px}.hub-deep-dive[open] summary{border-bottom:1px solid var(--line)}.hub-deep-dive[open] summary:after{content:"−"}.hub-deep-dive-body{padding:4px 18px 20px}
     .segment-head{margin-bottom:2px}
     .segment-head h3{font-size:19px}
     .guide-card{border:1px solid var(--line);border-radius:17px;padding:22px;background:#fff}
@@ -551,11 +555,13 @@
     .source-table small{display:block;color:var(--muted);font-size:9px}
     .status-dot{display:inline-flex;align-items:center;gap:6px;font-weight:800}
     .status-dot:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--green)}
+    .evidence-ladder{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:20px 0}.evidence-rung{border:1px solid var(--line);border-radius:12px;background:#fff;padding:13px}.evidence-rung b{display:block;color:var(--red-deep);font-size:12px}.evidence-rung strong{display:block;margin-top:5px;font-size:12px;line-height:1.35}.evidence-rung small{display:block;margin-top:5px;color:var(--muted);font-size:10px;line-height:1.45}
     .status-dot.pending:before{background:#c58818}
     .editorial-card{margin-top:18px;border:1px solid var(--line);border-radius:15px;background:#fff;padding:18px}
     .editorial-card h3{font-size:15px}
     .editorial-card p{margin-top:7px;color:var(--ink-2);font-size:11px}
     .editorial-card p a{color:var(--red-deep);text-decoration:underline}
+    .reviewer-link{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:var(--red-deep);font-size:12px;font-weight:800;text-decoration:none}.reviewer-link:after{content:"↗"}.reviewer-link:hover{text-decoration:underline}
     .update-log{display:flex;flex-wrap:wrap;gap:8px;margin-top:11px}
     .update-log span{border-radius:999px;background:var(--soft);padding:6px 9px;color:var(--muted);font-size:9px;font-weight:800}
     #faq .h2{font-size:clamp(30px,3.3vw,40px)}
@@ -641,7 +647,7 @@
       .subnav{display:none}.mobile-toc{position:sticky;top:54px;z-index:85;display:block;background:rgba(255,255,255,.98);backdrop-filter:blur(12px)}.crumbs{padding-block:8px;white-space:normal;font-size:11px}
       .hero{padding:36px 0 40px}.hero-grid{grid-template-columns:1fr;gap:24px}.hero h1{font-size:clamp(36px,11vw,50px)}.hero-sub{margin-top:14px;font-size:15px}.hero-actions{flex-direction:column;margin-top:20px}.hero-actions .btn{min-height:44px;width:100%}.hero-note{margin-top:14px}
       .beam-stage{border-radius:18px}.beam-meta div{padding:9px}.beam-controls button{min-width:84px}
-      .answer-grid,.answer-bank,.mount-grid,.price-grid,.case-grid,.pillar-grid,.segment-grid,.solution-grid,.legal-factor-list,.learn-grid,.method-grid,.footer-grid{grid-template-columns:1fr}
+      .answer-grid,.answer-bank,.mount-grid,.price-grid,.case-grid,.pillar-grid,.segment-grid,.solution-grid,.hub-answers,.legal-factor-list,.learn-grid,.method-grid,.footer-grid{grid-template-columns:1fr}
       .answer-card{padding:18px}.quickfacts div{padding:13px}.decision-strip{grid-template-columns:1fr 1fr}
       .wizard-head{padding:13px 16px}.wizard-body{padding:4px 16px 18px}.wizard-q{font-size:17px}.option-grid{grid-template-columns:1fr}.option{min-height:74px}.vehicle-grid{grid-template-columns:1fr}.bm-side .result-body{grid-template-columns:1fr}.bm-side .alt-grid{grid-template-columns:1fr}.qs-bar{padding:18px}.qs-row{grid-template-columns:1fr}.qs-foot{flex-direction:column;align-items:stretch}.qs-contact{justify-content:flex-start}.qs-foot .btn{width:100%}
       .result-head{flex-direction:column;padding:18px}.review-state{max-width:none}.result-body{grid-template-columns:1fr;padding:16px}.result-img{max-width:180px}.result-specs{grid-template-columns:1fr}.result-actions{flex-direction:column;padding:0 16px 16px}.result-actions .btn{width:100%}
@@ -651,7 +657,9 @@
       .mount-facts div{grid-template-columns:1fr;gap:3px}.price-head{align-items:stretch;flex-direction:column}.price-row{align-items:flex-start}.price-total{flex-direction:column}.case-facts{grid-template-columns:1fr}
       .case-preview-grid{grid-template-columns:1fr;gap:10px;margin:18px 0}.case-preview-grid a{padding:15px}
       .context-cta{align-items:flex-start;flex-direction:column;padding:16px}.context-cta-actions{width:100%}.context-cta-actions .btn{flex:1}
-      .process{grid-template-columns:1fr 1fr;gap:14px}.process:before{display:none}.process article,.process article:nth-child(5){grid-column:auto;text-align:left;padding:0}.process article:before{margin:0}.tech-grid{grid-template-columns:1fr}.legal-box{grid-template-columns:1fr}.evidence-summary{grid-template-columns:1fr 1fr}.beam-library{grid-template-columns:1fr}.related{grid-template-columns:1fr}.faq-list{grid-template-columns:1fr}
+      .process{grid-template-columns:1fr 1fr;gap:14px}.process:before{display:none}.process article,.process article:nth-child(5){grid-column:auto;text-align:left;padding:0}.process article:before{margin:0}.tech-grid{grid-template-columns:1fr}.legal-box{grid-template-columns:1fr}.evidence-summary{grid-template-columns:1fr 1fr}.beam-library{grid-template-columns:1fr}.fitment-library-head{display:block}.fitment-library-head input{width:100%;min-width:0;margin-top:12px}.fitment-list{grid-template-columns:1fr}.fitment-item,.fitment-item:nth-child(2n),.fitment-item:nth-last-child(-n+2){border-right:0;border-bottom:1px solid var(--line)}.fitment-item:last-child{border-bottom:0}.related{grid-template-columns:1fr}.faq-list{grid-template-columns:1fr}
+      .case-video{grid-template-columns:1fr}.case-video-preview{min-height:150px}.case-video-body{padding:19px}.case-video-body h3{font-size:19px}.hub-deep-dive summary{font-size:13px}.hub-deep-dive-body{padding-inline:14px}
+      .quote-checklist ol{grid-template-columns:1fr 1fr}.evidence-ladder{grid-template-columns:1fr 1fr}.evidence-rung:last-child{grid-column:span 2}
       .form-grid,.appointment-fields{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.mode{grid-template-columns:1fr}.upload-grid{grid-template-columns:1fr}.upload-tile{min-height:88px}.contact-actions{grid-template-columns:1fr}
       .footer-links{justify-content:flex-start}.footer{padding-bottom:110px}
       .mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:100;display:grid;grid-template-columns:58px 58px 1fr;gap:7px;min-height:54px;border-top:1px solid #dfe3e8;background:rgba(255,255,255,.96);padding:6px 8px calc(6px + env(safe-area-inset-bottom));backdrop-filter:blur(12px)}
@@ -792,6 +800,17 @@
       </div>
     </section>
 
+    <section class="section" id="hub-answers">
+      <div class="wrap">
+        <div class="hub-answers" aria-label="Trả lời nhanh trước khi chọn cấu hình">
+          <article class="hub-answer"><h3>Đèn gầm dạng rời là gì?</h3><p>Cụm đèn độc lập dùng pát riêng, lắp bổ sung ở cản trước, hốc gió, hốc biển số hoặc sau ca-lăng.</p></article>
+          <article class="hub-answer"><h3>Giá sản phẩm bao nhiêu?</h3><p>Danh mục đang hiển thị từ 4,5 đến 6,5 triệu đồng; tổng chi phí còn phụ thuộc pát, dây, công lắp, căn chỉnh và VAT.</p></article>
+          <article class="hub-answer"><h3>Phù hợp khi nào?</h3><p>Khi xe thiếu vùng sáng hỗ trợ nhưng chủ xe muốn giữ cụm đèn chính hoặc hốc đèn gầm nguyên bản.</p></article>
+          <article class="hub-answer"><h3>Có tự kết luận vừa xe?</h3><p>Không. Case cùng dòng chỉ để tham chiếu; đời xe, cản, pát và hệ điện vẫn phải được đối chiếu.</p></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="quickselect">
       <div class="wrap">
         <div class="section-head"><span class="eyebrow">Chọn nhanh</span><h2 class="h2">Chọn cấu hình ánh sáng nhanh</h2><p class="lede">Chọn các thông tin dưới đây để nhận ngay hướng cấu hình đèn gầm dạng rời phù hợp nhất. Hệ điện là điều kiện loại trừ trước tiên; kết quả vẫn cần kỹ thuật xác nhận trên xe.</p></div>
@@ -867,6 +886,7 @@
           <article class="solution-card"><h3>Đèn gầm dạng rời</h3><p>Cụm đèn độc lập, dùng pát riêng và có thể bố trí ở nhiều vị trí phía trước xe.</p><ul><li>Phù hợp khi cần bổ sung vùng sáng theo vị trí lắp.</li><li>Cần kiểm tra pát, đường dây, khoảng hở và góc chiếu.</li></ul></article>
           <article class="solution-card"><h3>Bi gầm LED</h3><p>Giải pháp quang học tích hợp tại hốc gầm hoặc vị trí tương thích theo thiết kế từng xe.</p><ul><li>Phù hợp khi xe có hốc gầm và phương án lắp tương thích.</li><li>Cần đối chiếu kích thước, mặt dưỡng và khả năng căn chỉnh.</li></ul></article>
           <article class="solution-card"><h3>Nâng cấp đèn chính</h3><p>Tác động trực tiếp đến cụm đèn chiếu sáng chính để cải thiện hệ quang học tổng thể.</p><ul><li>Phù hợp khi đèn chính xuống cấp hoặc vùng sáng nền chưa đáp ứng.</li><li>Cần thi công, hoàn thiện và căn chỉnh kỹ hơn trên cụm đèn chính.</li></ul></article>
+          <article class="solution-card"><h3>Đèn sương mù zin</h3><p>Cụm theo thiết kế nguyên bản của xe; không nên đồng nhất với đèn dạng rời hoặc bi gầm.</p><ul><li>Phù hợp khi ưu tiên phục hồi hoặc giữ cấu hình đèn gầm nguyên bản.</li><li>Cần kiểm tra chức năng, điểm lắp và yêu cầu vận hành riêng của xe.</li></ul></article>
         </div>
         <div class="context-cta"><div><h3>Chưa rõ xe cần nâng cấp phần nào trước?</h3><p>Bộ chọn nhanh giúp xác định hướng cấu hình tham khảo theo nhu cầu và dòng xe.</p></div><div class="context-cta-actions"><a class="btn primary small" href="#quickselect">Chọn cấu hình theo xe</a><a class="btn outline small" href="#booking">Nhờ kỹ thuật tư vấn</a></div></div>
       </div>
@@ -874,7 +894,7 @@
 
     <section class="section" id="benefits">
       <div class="wrap">
-        <div class="section-head"><span class="eyebrow">Lợi ích</span><h2 class="h2">Vì sao chủ xe cân nhắc lắp thêm đèn gầm dạng rời?</h2><p class="lede">Đây là lợi ích chung của nhóm đèn gầm dạng rời, không gắn riêng vào một mẫu nào. Lợi ích thực tế còn phụ thuộc việc lắp đúng vị trí, đúng hệ điện và căn chỉnh sau lắp.</p></div>
+        <div class="section-head"><span class="eyebrow">Lợi ích &amp; tiêu chí kiểm tra</span><h2 class="h2">Đèn gầm dạng rời mang lại gì và cần kiểm tra gì trước khi lắp?</h2><p class="lede">Lợi ích thực tế phụ thuộc vị trí lắp, hệ điện và căn chỉnh; các tiêu chí bên dưới giúp tránh chọn chỉ theo thương hiệu hoặc số watt.</p></div>
         <div class="segment-grid benefit-grid">
           <article class="segment-card"><h4>Bổ sung vùng sáng thấp, không thay đèn chính</h4><p>Đèn chính giữ nguyên bản, dễ tháo và hoàn trả khi cần — phù hợp chủ xe muốn tăng tầm quan sát mà không can thiệp cụm đèn zin.</p></article>
           <article class="segment-card"><h4>Linh hoạt vị trí lắp theo kết cấu xe</h4><p>Dùng pát riêng nên không bị giới hạn vào đúng một hốc đèn nguyên bản như bi gầm — có thể cân nhắc hốc biển số, hốc gió, cản trước hoặc sau ca-lăng tùy xe.</p></article>
@@ -883,7 +903,7 @@
         </div>
         <div class="benefit-caveat"><strong>Không phải giải pháp cho mọi vấn đề ánh sáng:</strong> đèn gầm dạng rời không thay thế việc căn chỉnh đúng kỹ thuật cho đèn chính, và không sửa được lỗi quang học nếu đèn chính đã bị mờ, ố hoặc lệch góc chiếu — những trường hợp này nên xử lý ở đèn chính trước.</div>
 
-        <div class="section-head feature-head"><span class="eyebrow">Tính năng nên có</span><h2 class="h2">Một cụm đèn gầm dạng rời đạt chuẩn cần có gì?</h2><p class="lede">Đây là các tiêu chí kỹ thuật chung để đánh giá bất kỳ mẫu đèn gầm dạng rời nào, không riêng bốn mẫu đang phân phối tại Auto365.</p></div>
+        <details class="hub-deep-dive"><summary>Tiêu chí kỹ thuật cần kiểm tra trước khi chốt</summary><div class="hub-deep-dive-body">
         <ul class="feature-list">
           <li><b>Quang học tách lớp Cos/Pha</b> — kiểm soát vùng sáng gần và chiều sâu riêng biệt, không trộn lẫn thành một chùm sáng không kiểm soát được.</li>
           <li><b>Tản nhiệt chủ động</b> — quạt hoặc khối tản nhiệt kim loại giữ công suất ổn định khi bật liên tục, hạn chế suy giảm ánh sáng theo thời gian.</li>
@@ -891,6 +911,7 @@
           <li><b>Đường dây, giắc, cầu chì riêng</b> — không đấu tắt vào hệ thống điện chính, hạn chế rủi ro quá tải hoặc chập cháy.</li>
           <li><b>Có thể căn chỉnh góc chiếu sau lắp</b> — kiểm soát đường cắt sáng để hạn chế chói xe đối diện, không chỉ lắp cố định một góc.</li>
         </ul>
+        </div></details>
       </div>
     </section>
 
@@ -958,6 +979,7 @@
           </div>
           <div class="price-explain"><h3>Kiểm tra xe để chốt phương án</h3><p>Kỹ thuật sẽ xác nhận vị trí lắp, điểm bắt pát và mức tháo lắp trước khi chốt giá. Nếu thuận tiện, ảnh đầu xe giúp quá trình tư vấn từ xa nhanh hơn.</p><a class="btn primary" href="#booking" data-booking-mode="remote_quote">Nhận tư vấn cấu hình &amp; giá</a></div>
         </div>
+        <div class="quote-checklist"><h3>Một báo giá đủ chuẩn cần trả lời 6 câu</h3><p>Không chỉ nêu giá đèn: báo giá phải cho biết chính xác hạng mục, giới hạn và điều kiện xác nhận.</p><ol><li>Sản phẩm nào, số lượng bộ hay cặp?</li><li>Giá sản phẩm đã gồm VAT chưa?</li><li>Pát, dây, relay và cầu chì gồm gì?</li><li>Có tháo cản, khoan hay gia công không?</li><li>Chi phí căn chỉnh và kiểm tra sau lắp?</li><li>Bảo hành áp dụng cho sản phẩm và hạng mục nào?</li></ol></div>
       </div>
     </section>
 
@@ -981,6 +1003,28 @@
       </div>
     </section>
 
+    <section class="section soft" id="case-video">
+      <div class="wrap">
+        <div class="case-video">
+          <div class="case-video-preview" aria-hidden="true"><span class="case-video-play">▶</span></div>
+          <div class="case-video-body"><span class="eyebrow">Video thực tế</span><h3>Xem quy trình và vùng sáng trên đúng xe trước khi quyết định</h3><p>Video sẽ được bổ sung từ ca thi công thực tế. Khi có tư liệu, mỗi video cần ghi rõ xe, phiên bản, sản phẩm, vị trí lắp, điều kiện quay và người thực hiện.</p><a class="btn outline small" href="#booking">Gửi xe để nhận case phù hợp</a><small>Không dùng video minh họa để kết luận xe khác có thể lắp giống hệt.</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="fitment-library">
+      <div class="wrap">
+        <div class="section-head"><span class="eyebrow">Fitment tham chiếu</span><h2 class="h2">Tra cứu hồ sơ xe thật trước khi chọn pát và đi dây</h2><p class="lede">Mỗi hồ sơ chỉ xác nhận một ca thi công đã công bố. Đúng đời xe, phiên bản cản, vị trí, pát và hệ điện vẫn phải được kỹ thuật kiểm tra trước khi chốt.</p></div>
+        <div class="fitment-library"><div class="fitment-library-head"><div><h3>10 hồ sơ xe công khai</h3><p>Tìm theo tên xe hoặc cấu hình để mở đúng bài case nguồn.</p></div><input id="fitmentSearch" type="search" placeholder="VD: VF8, M40, Destinator..."></div><div class="fitment-list" id="fitmentList">
+          <article class="fitment-item"><div><strong>BYD M6 2024 Dynamic</strong><small>Titan M40 Ultra V2 · case tham chiếu</small></div><a href="https://auto365.vn/byd-m6-lap-den-gam-dang-roi-titan-m40-ultra-v2">Mở hồ sơ ↗</a></article><article class="fitment-item"><div><strong>Ford EcoSport</strong><small>Titan M40 Ultra V2 · hốc biển số</small></div><a href="https://auto365.vn/den-gam-dang-roi-titan-m40-ultra-v2-cho-ford-ecosport-gia-thong-so-va-luu-y-khi-lap">Mở hồ sơ ↗</a></article>
+          <article class="fitment-item"><div><strong>Kia Sorento</strong><small>Titan M40 Ultra V2 · cản trước</small></div><a href="https://auto365.vn/den-gam-dang-roi-titan-m40-ultra-v2-cho-kia-sorento-gia-thong-so-bao-hanh-va-luu-y-lap-dat">Mở hồ sơ ↗</a></article><article class="fitment-item"><div><strong>Hyundai Tucson</strong><small>Titan M40 Ultra V2 · hốc biển số</small></div><a href="https://auto365.vn/den-tro-sang-titan-m40-ultra-v2-cho-hyundai-tucson-gia-thong-so-va-luu-y-khi-lap">Mở hồ sơ ↗</a></article>
+          <article class="fitment-item"><div><strong>Kia Carens</strong><small>Titan Moto M30 Ultra V2 · case tham chiếu</small></div><a href="https://auto365.vn/den-tro-sang-titan-m30-ultra-v2-cho-kia-carens-gia-thong-so-va-luu-y-lap">Mở hồ sơ ↗</a></article><article class="fitment-item"><div><strong>VinFast VF8</strong><small>Titan Moto M30 Ultra V2 · cản trước</small></div><a href="https://auto365.vn/den-tro-sang-titan-m30-ultra-v2-cho-vinfast-vf8-gia-thong-so">Mở hồ sơ ↗</a></article>
+          <article class="fitment-item"><div><strong>Volkswagen Viloran 2024</strong><small>Titan M40 Ultra V2 · case tham chiếu</small></div><a href="https://auto365.vn/volkswagen-viloran-2024-lap-den-gam-dang-roi-titan-m40-ultra-v2">Mở hồ sơ ↗</a></article><article class="fitment-item"><div><strong>Hyundai Elantra 2023</strong><small>Titan Moto M30 Ultra V2 · case tham chiếu</small></div><a href="https://auto365.vn/hyundai-elantra-2023-lap-den-gam-dang-roi-titan-m30-ultra-v2-gia-va-luu-y-ky-thuat">Mở hồ sơ ↗</a></article>
+          <article class="fitment-item"><div><strong>Hyundai Stargazer</strong><small>Titan Moto M30 Ultra V2 · case tham chiếu</small></div><a href="https://auto365.vn/titan-m30-ultra-v2-cho-hyundai-stargazer-gia-thong-so-va-luu-y-lap-dat">Mở hồ sơ ↗</a></article><article class="fitment-item"><div><strong>Mitsubishi Destinator</strong><small>X-Light F30 Ultra · case tham chiếu</small></div><a href="https://auto365.vn/destinator-nang-cap-den-gam-x-light-f30-ultra">Mở hồ sơ ↗</a></article>
+        </div></div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="wrap"><div class="context-cta"><div><h3>Chưa có case đúng đời xe của bạn?</h3><p>Nhận tư vấn cấu hình và kiểm tra vị trí lắp trước khi chốt phương án.</p></div><div class="context-cta-actions"><a class="btn primary small" href="#booking">Nhận tư vấn theo xe</a><a class="btn outline small" href="https://zalo.me/0365365911" target="_blank" rel="noopener" data-track="zalo">Nhắn Zalo</a></div></div></div>
     </section>
@@ -1001,6 +1045,7 @@
           <article class="guide-card"><h3>Chọn theo vị trí lắp</h3><p>Vị trí kín chưa chắc là vị trí tốt nếu mép hốc che chùm sáng hoặc luồng gió tản nhiệt kém. Phải đánh giá đồng thời thẩm mỹ, độ chắc, khả năng căn góc và bảo trì.</p></article>
           <article class="guide-card"><h3>Chọn theo tổng chi phí</h3><p>So sánh cùng một đơn vị “bộ/cặp”, tình trạng VAT, thời hạn bảo hành và phụ kiện đi kèm. Một giá sản phẩm thấp không đảm bảo tổng lắp thấp nếu phải gia công pát hoặc tháo cản phức tạp.</p></article>
         </div>
+        <details class="hub-deep-dive"><summary>Đọc sâu: chọn theo nhu cầu, lỗi thường gặp và lưu ý pháp lý</summary><div class="hub-deep-dive-body">
         <div class="segment-head"><h3>Chọn theo nhu cầu sử dụng thực tế</h3><p class="lede">Cùng một mẫu đèn nhưng thói quen sử dụng khác nhau thì mức ưu tiên khác nhau. Đây là góc nhìn theo nhóm khách hàng, không thay thế cho việc đo hệ điện và kiểm tra xe.</p></div>
         <div class="segment-grid">
           <article class="segment-card"><h4>Xe gia đình, đi phố cuối tuần</h4><p>Nhu cầu chính là bổ sung vùng sáng gần, nhìn rõ mép đường và lề khi đi trong khu dân cư hoặc ra ngoại ô buổi tối. Ưu tiên cấu hình Cos rộng, hạn chế khoan/cắt cản để giữ nguyên bản. Chiều sâu Pha không phải yếu tố bắt buộc nếu ít đi cao tốc ban đêm.</p></article>
@@ -1035,17 +1080,19 @@
           </ul>
         </div>
         <div class="legal-box"><div><h3>Dùng đúng quan trọng như lắp đúng</h3><p>Cos cần được căn để kiểm soát vùng sáng; Pha chỉ dùng trong điều kiện phù hợp. Không có câu trả lời pháp lý chung cho mọi loại đèn dạng rời: kết luận còn phụ thuộc chức năng, vị trí, phương pháp cố định, đấu điện, mức can thiệp xe và cách sử dụng tại thời điểm kiểm tra.</p></div><a class="btn outline" href="https://auto365.vn/lap-den-gam-dang-roi-cho-o-to-co-bi-phat-khong">Đọc hướng dẫn pháp lý</a></div>
+        </div></details>
         <nav class="related" aria-label="Cụm nội dung đèn gầm dạng rời đã xuất bản"><a href="https://auto365.vn/nang-cap-anh-sang"><small>Hub ngành</small><b>Nâng cấp ánh sáng ô tô: các giải pháp và cách chọn</b></a><a href="https://auto365.vn/den-gam-dang-roi-la-gi-nang-cap-anh-sang-giu-zin-cho-o-to-tai-auto365"><small>Định nghĩa</small><b>Đèn gầm dạng rời là gì? Khác bi gầm thế nào?</b></a><a href="https://auto365.vn/den-gam-dang-roi-o-to-gia-bao-nhieu"><small>Chi phí</small><b>Đèn gầm dạng rời ô tô giá bao nhiêu năm 2026?</b></a><a href="https://auto365.vn/lap-den-gam-dang-roi-cho-o-to-co-bi-phat-khong"><small>Pháp lý</small><b>Lắp đèn dạng rời có bị phạt hoặc ảnh hưởng kiểm định?</b></a><a href="https://auto365.vn/den-tro-sang-titan-m40-ultra-v2"><small>Sản phẩm</small><b>Titan M40 Ultra V2: thông số và dữ liệu công bố</b></a><a href="https://auto365.vn/den-tro-sang-titan-moto-m30-ultra-v2"><small>Sản phẩm</small><b>Titan M30 Ultra V2: thông số và dữ liệu công bố</b></a></nav>
-        <div class="editorial"><span>Biên tập cấp trang: Auto365</span><span>Cập nhật dữ liệu: 09/08/2026</span><span>Giá và quy định cần xác nhận tại thời điểm tư vấn</span></div>
+        <div class="editorial"><span>Biên tập cấp trang: Auto365</span><span>Cập nhật trang: 12/08/2026</span><span>Giá và quy định cần xác nhận tại thời điểm tư vấn</span></div>
       </div>
     </section>
 
     <section class="section soft" id="evidence">
       <div class="wrap">
         <div class="section-head"><span class="eyebrow">Nguồn dữ liệu &amp; Beam Lab</span><h2 class="h2" id="evidenceTitle">Biết dữ liệu nào đã có, dữ liệu nào chưa đủ để kết luận</h2><p class="lede">V2.1 tách rõ công bố sản phẩm, ảnh ca thi công, quy định pháp lý và dữ liệu đo. Nhờ vậy người đọc — và hệ thống AI Search — có thể truy về nguồn thay vì coi mọi con số là kết quả thử nghiệm độc lập.</p></div>
+        <div class="evidence-ladder" aria-label="Các cấp độ bằng chứng"><article class="evidence-rung"><b>Cấp 1</b><strong>Đo kiểm chuẩn hóa</strong><small>Chưa có đủ dữ liệu công bố.</small></article><article class="evidence-rung"><b>Cấp 2</b><strong>Fitment đã xác minh</strong><small>Không suy rộng nếu thiếu dữ liệu xe.</small></article><article class="evidence-rung"><b>Cấp 3</b><strong>Ca thi công có hồ sơ</strong><small>Xe, sản phẩm và ảnh công khai.</small></article><article class="evidence-rung"><b>Cấp 4</b><strong>Thông số hãng</strong><small>Dùng theo ngày đối chiếu nguồn.</small></article><article class="evidence-rung"><b>Cấp 5</b><strong>Hướng dẫn biên tập</strong><small>Không thay thế phép đo hay kiểm tra xe.</small></article></div>
         <div class="method-grid">
           <article class="method-card"><h3>Giao thức Beam Lab đề xuất</h3><p>Khi Auto365 công bố so sánh định lượng, mỗi mẫu cần được đo cùng điều kiện và lưu đủ metadata để có thể lặp lại.</p><ol class="protocol"><li><span>Khóa xe, điện áp, tải, vị trí và chiều cao tâm đèn.</span></li><li><span>Giữ cùng khoảng cách, mặt nền, môi trường tối và điểm đặt thiết bị.</span></li><li><span>Làm nóng đèn theo cùng thời gian; ghi điện áp, nhiệt độ và thời điểm.</span></li><li><span>Chụp Cos/Pha cùng phơi sáng; đo lux tại các điểm định trước.</span></li><li><span>Công bố ảnh gốc, sơ đồ điểm đo, thiết bị, sai số và người thực hiện.</span></li></ol></article>
-          <article class="method-card"><h3>Trạng thái bằng chứng hiện tại</h3><p>Trang có ảnh xe và ảnh beam từ bài case, nhưng chưa có bộ dữ liệu lux chuẩn hóa cùng điều kiện cho cả bốn sản phẩm. Vì vậy V2.1 không dựng biểu đồ lux, không tuyên bố mẫu nào “sáng nhất” và không dùng ảnh đơn lẻ để suy ra khoảng chiếu.</p><div class="evidence-summary"><div><b>4</b><span>hồ sơ sản phẩm</span></div><div><b>6</b><span>bài case liên kết</span></div><div><b>0</b><span>bộ đo lux chuẩn hóa đã công bố</span></div></div><div class="editorial-card"><h3>Biên tập và rà soát chuyên môn</h3><p>Trang này do Auto365 biên tập, dưới sự phụ trách nội dung của <a href="https://auto365.vn/tac-gia/nguyen-quang-dao"><strong>Nguyễn Quang Đạo</strong></a> — Giám đốc điều hành Auto365 trụ sở chính. Case BYD M6 công bố người rà soát kỹ thuật riêng là <strong>Bùi Hùng Việt</strong>, phụ trách chuyên môn đèn ô tô tại Auto365.vn – Trụ Sở Chính.</p><div class="update-log"><span>09/08/2026 · thêm 6 case</span><span>09/08/2026 · khóa rule điện áp</span><span>09/08/2026 · thêm nguồn &amp; phương pháp đo</span></div></div></article>
+          <article class="method-card"><h3>Trạng thái bằng chứng hiện tại</h3><p>Trang có ảnh xe và ảnh beam từ bài case, nhưng chưa có bộ dữ liệu lux chuẩn hóa cùng điều kiện cho cả bốn sản phẩm. Vì vậy V2.1 không dựng biểu đồ lux, không tuyên bố mẫu nào “sáng nhất” và không dùng ảnh đơn lẻ để suy ra khoảng chiếu.</p><div class="evidence-summary"><div><b>4</b><span>hồ sơ sản phẩm</span></div><div><b>6</b><span>bài case liên kết</span></div><div><b>0</b><span>bộ đo lux chuẩn hóa đã công bố</span></div></div><div class="editorial-card"><h3>Biên tập và rà soát chuyên môn</h3><p>Trang này do Auto365 biên tập, dưới sự phụ trách nội dung của <a href="https://auto365.vn/tac-gia/nguyen-quang-dao"><strong>Nguyễn Quang Đạo</strong></a> — Giám đốc điều hành Auto365 trụ sở chính. Case BYD M6 công bố người rà soát kỹ thuật riêng là <strong>Bùi Hùng Việt</strong>, phụ trách chuyên môn đèn ô tô tại Auto365.vn – Trụ Sở Chính.</p><a class="reviewer-link" href="https://auto365.vn/tac-gia/nguyen-quang-dao">Xem hồ sơ người kiểm duyệt: Nguyễn Quang Đạo</a><div class="update-log"><span>09/08/2026 · thêm 6 case</span><span>09/08/2026 · khóa rule điện áp</span><span>09/08/2026 · thêm nguồn &amp; phương pháp đo</span></div></div></article>
         </div>
         <div class="beam-library" aria-label="Thư viện ảnh Beam Lab tham khảo">
           <article class="beam-library-card"><figure><img data-fallback="Vùng Cos VinFast VF8" src="https://auto365.vn/uploads/images/pages/auto365vn-den-tro-sang-titan-m30-ultra-v2-cho-vinfast-vf8-3-img_6a5988b1ae2de1.18486383.jpg" alt="Ảnh vùng sáng Cos trong bài case VinFast VF8 lắp Titan Moto M30 Ultra V2" loading="lazy" decoding="async" width="800" height="500"><figcaption>Ảnh Cos trong bài case</figcaption></figure><div class="beam-library-body"><h3>Vùng Cos · VinFast VF8 × M30 Ultra V2</h3><p>Ảnh tham khảo từ bài case đã công bố. Ảnh cho thấy cấu hình đã lắp trên một xe VF8; không có metadata đo lux, khoảng cách chụp hay điều kiện phơi sáng chuẩn hóa để dùng làm kết luận định lượng.</p><div class="beam-library-meta"><span>Case thực tế</span><span>Không xếp hạng độ sáng</span></div><a href="https://auto365.vn/den-tro-sang-titan-m30-ultra-v2-cho-vinfast-vf8-gia-thong-so">Xem nguồn case VinFast VF8 ↗</a></div></article>
@@ -1162,6 +1209,15 @@
 
     var catalogFilter={tag:"all",brand:"all"};
     var refreshProductAutoplay=function(){};
+    function filterFitmentLibrary(query){
+      var normalized=(query||"").trim().toLowerCase();
+      $$("#fitmentList .fitment-item").forEach(function(item){
+        item.hidden=Boolean(normalized)&&item.textContent.toLowerCase().indexOf(normalized)===-1;
+      });
+    }
+    var fitmentSearch=$("#fitmentSearch");
+    if(fitmentSearch)fitmentSearch.addEventListener("input",function(){filterFitmentLibrary(this.value)});
+
     function initProductAutoplay(){
       var rail=$(".product-grid"),timer=null,starter=null,paused=false,reduce=window.matchMedia("(prefers-reduced-motion: reduce)");
       if(!rail)return;

@@ -51,6 +51,15 @@ assert.match(page, /class="qs-contact"/, 'quick selector must retain contact CTA
 assert.match(page, /class="context-cta"/, 'editorial sections must include contextual conversion CTAs');
 assert.match(page, /id="solutions"/, 'the hub must explain how standalone fog lights differ from adjacent lighting upgrades');
 assert.match(page, /Đèn gầm dạng rời khác gì với các hướng nâng cấp ánh sáng khác\?/, 'the solution section must use a neutral comparison framing');
+assert.match(page, /id="hub-answers"/, 'the unified hub must answer high-intent questions immediately after the catalog');
+assert.match(page, /id="fitment-library"/, 'the unified hub must provide a searchable vehicle reference library');
+assert.match(page, /function filterFitmentLibrary\(/, 'fitment library must filter records locally');
+assert.match(page, /Một báo giá đủ chuẩn cần trả lời 6 câu/, 'the pricing section must explain what a complete installation quote includes');
+assert.match(page, /class="evidence-ladder"/, 'the evidence section must distinguish levels of proof');
+assert.match(page, /"dateModified": "2026-08-12"/, 'structured data must reflect the current page revision');
+assert.match(page, /id="case-video"/, 'the hub must reserve a source-ready real-case video block');
+assert.match(page, /<details class="hub-deep-dive"/, 'deep educational material must be collapsible');
+assert.match(page, /Video sẽ được bổ sung từ ca thi công thực tế/, 'the video block must not imply evidence that is unavailable');
 assert.match(page, /class="beam-library"/, 'Beam Lab must expose a visual evidence library');
 assert.match(page, /Ảnh tham khảo từ bài case đã công bố/, 'Beam Lab must label images as reference-only');
 assert.match(page, /den-tro-sang-titan-m30-ultra-v2-cho-vinfast-vf8-gia-thong-so/, 'Beam Lab must link to its published source case');
