@@ -156,6 +156,7 @@ h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-family:inherit}
   .glass-zones p{font-size:11.5px;line-height:1.5}
   .glass-zones b{font-size:11.5px;text-align:left}
 }
+.fm-card-badges{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
 /* Accordion dieu kien gia duoi bang gia le */
 .price-terms>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 20px;font-size:15px;font-weight:600}
 .price-terms>summary::-webkit-details-marker{display:none}
@@ -839,8 +840,11 @@ document.documentElement.classList.add("js");
       return scoreB - scoreA || b.level - a.level;
     });
     const recommended = direct || ranked[0];
+    const brightSensitive = state.need === "night" || state.windshield === "bright" || effectiveNight() === "often";
     const cautionFor = (pkg) => {
       if (compatible.some((item) => item.id === pkg.id)) return "";
+      if (state.need === "premium" && !pkg.fit.includes("premium")) return "Không nằm trong nhóm cấu hình cao cấp anh/chị đang ưu tiên — hiển thị để so sánh mức giá.";
+      if (brightSensitive) return `Không ưu tiên khi thường xuyên đi đêm — kính lái ${windshieldCode(pkg)} nên xem mẫu và đo kiểm thực tế trước khi thi công.`;
       return "Nên xem mẫu và đo kiểm thực tế trên kính xe trước khi thi công.";
     };
     const makeLane = (key, pkg, isPick) => {
@@ -855,14 +859,49 @@ document.documentElement.classList.add("js");
       const tagKey = pkg.level < recommended.level ? "saving" : pkg.level > recommended.level ? "upgrade" : "recommended";
       return { key, tagKey, title: labels.lane[key], pkg, overBudget, caution, isPick: Boolean(isPick), overBudgetAmount: overBudget ? price - max : 0, configId: `FM11-${groupCode}-${pkg.configCode}-${ws}-${privacy}-${roof}-${key[0].toUpperCase()}-R${revision}-${consultation.slice(-5)}` };
     };
-    // Luôn dựng đủ ba phương án có giá: cửa sổ ba gói liền kề theo bậc, luôn chứa gói khuyến nghị.
-    const byLevel = [...packages].sort((a, b) => a.level - b.level);
-    const pickIndex = byLevel.findIndex((pkg) => pkg.id === recommended.id);
-    // Chua chon xe: vi du mac dinh bat dau tu goi re nhat (5,9tr) cho de tiep can.
-    const start = (!vehicleChosen && !forceId) ? 0 : Math.max(0, Math.min(pickIndex - 1, byLevel.length - 3));
     const laneKeys = ["saving", "recommended", "upgrade"];
-    const lanes = byLevel.slice(start, start + 3).map((pkg, i) => makeLane(laneKeys[i], pkg, pkg.id === recommended.id));
-    return { lanes, nearest };
+    let windowPkgs;
+    if (!vehicleChosen && !forceId) {
+      // Chua chon xe: vi du mac dinh bat dau tu goi re nhat (5,9tr) cho de tiep can.
+      const byLevel = [...packages].sort((a, b) => a.level - b.level);
+      windowPkgs = byLevel.slice(0, 3);
+    } else {
+      // Uu tien goi trong ngan sach va gan ngan sach nhat; khong tu y bo goi re nhat khoi so sanh.
+      const pool = compatible.length ? compatible : packages;
+      const pickNear = (levelCmp, preferHighPrice) => {
+        const side = pool.filter((p) => p.id !== recommended.id && levelCmp(p.level, recommended.level));
+        if (!side.length) return null;
+        const inBudget = side.filter((p) => p.prices[state.group] <= max);
+        if (inBudget.length) {
+          return [...inBudget].sort((a, b) => preferHighPrice
+            ? b.prices[state.group] - a.prices[state.group]
+            : a.prices[state.group] - b.prices[state.group])[0];
+        }
+        // Khong co gia nao o phia nay nam trong ngan sach -> luon lay gia gan tran nhat (re nhat trong nhom vuot).
+        return [...side].sort((a, b) => a.prices[state.group] - b.prices[state.group])[0];
+      };
+      let saving = pickNear((l, r) => l < r, true);
+      let upgrade = pickNear((l, r) => l > r, false);
+      if (!saving && packages.length > pool.length) {
+        const below = packages.filter((p) => p.id !== recommended.id && p.level < recommended.level);
+        saving = below.length ? [...below].sort((a, b) => a.prices[state.group] - b.prices[state.group])[0] : null;
+      }
+      if (!upgrade && packages.length > pool.length) {
+        const above = packages.filter((p) => p.id !== recommended.id && p.level > recommended.level);
+        upgrade = above.length ? [...above].sort((a, b) => a.prices[state.group] - b.prices[state.group])[0] : null;
+      }
+      windowPkgs = [saving, recommended, upgrade].filter(Boolean);
+      if (windowPkgs.length < 3) {
+        // Truong hop hiem (vd chi con 1-2 muc gia phu hop): lap day bang cac goi con lai theo bac.
+        const used = new Set(windowPkgs.map((p) => p.id));
+        const filler = [...packages].sort((a, b) => a.level - b.level).filter((p) => !used.has(p.id));
+        while (windowPkgs.length < 3 && filler.length) windowPkgs.push(filler.shift());
+        windowPkgs.sort((a, b) => a.level - b.level);
+      }
+    }
+    const lanes = windowPkgs.map((pkg, i) => makeLane(laneKeys[i], pkg, pkg.id === recommended.id));
+    const noBudgetFit = Number.isFinite(max) && available.length === 0;
+    return { lanes, nearest, noBudgetFit };
   }
 
   function showAdvisorError(message) {
@@ -883,7 +922,7 @@ document.documentElement.classList.add("js");
     const cautionFlag = lane.caution ? `<p class="fm-quote-flag">${escapeHtml(lane.caution)}</p>` : "";
     const overBudgetLabel = lane.overBudget ? `<span class="fm-badge fm-badge--over" title="Cao hơn ngân sách đã chọn ${formatPrice(lane.overBudgetAmount)}">+${formatPrice(lane.overBudgetAmount)}</span>` : "";
     return `<article class="fm-card ${laneTagClass[lane.tagKey || lane.key]} ${selected ? "fm-card--selected" : ""}" data-card-lane="${lane.key}">
-      <div class="fm-card-top"><span class="fm-tag">${escapeHtml(laneTagText[lane.tagKey || lane.key])}</span>${lane.isPick ? '<span class="fm-badge">Theo lựa chọn hiện tại</span>' : overBudgetLabel}</div>
+      <div class="fm-card-top"><span class="fm-tag">${escapeHtml(laneTagText[lane.tagKey || lane.key])}</span><span class="fm-card-badges">${lane.isPick ? '<span class="fm-badge">Theo lựa chọn hiện tại</span>' : ""}${overBudgetLabel}</span></div>
       <h4>${escapeHtml(lane.pkg.fullName)}</h4>
       <p class="fm-price">${hasSunroofSurcharge ? '<span class="fm-price-pre">Giá cơ bản · chưa gồm cửa sổ trời</span>' : ""}${formatDong(price)}</p>
       <div class="fm-info"><p><b>Kính lái:</b> ${escapeHtml(windshieldCode(lane.pkg))}</p><p><b>Sườn/lưng:</b> ${escapeHtml(bodyCodes(lane.pkg))}</p></div>
@@ -945,13 +984,15 @@ document.documentElement.classList.add("js");
     area.className = "result-area";
     area.id = "ket-qua";
     const resultCount = latestResult.lanes.filter((lane) => lane.pkg).length;
+    const cardsHtml = `<div class="fm-cards">${latestResult.lanes.map(resultCard).join("")}</div>`;
     let body;
-    if (!resultCount && latestResult.nearest) {
-      const nearestPrice = latestResult.nearest.prices[state.group];
-      const delta = nearestPrice - budgetMaximum[state.budget];
-      body = `<div class="no-fit" role="status"><div class="no-fit__icon">!</div><div><h4>Hệ thống không gắn nhãn “phù hợp” cho gói vượt ngân sách.</h4><p>Gói trọn xe gần nhất là <strong>${escapeHtml(latestResult.nearest.fullName)}</strong> — ${formatDong(nearestPrice)}${Number.isFinite(delta) ? `, cao hơn trần hiện tại ${formatPrice(delta)}` : ""}.</p><div class="inline-actions"><button class="button button--dark" type="button" data-open-budget>Mở ngân sách để so sánh</button><button class="button button--outline" type="button" data-partial-zalo>Hỏi giá riêng kính lái</button></div></div></div>`;
+    if (latestResult.noBudgetFit) {
+      const nearestPrice = latestResult.nearest ? latestResult.nearest.prices[state.group] : null;
+      const delta = Number.isFinite(nearestPrice) ? nearestPrice - budgetMaximum[state.budget] : null;
+      const banner = `<div class="no-fit" role="status"><div class="no-fit__icon">!</div><div><h4>Chưa có gói trọn xe nằm trong ngân sách này.</h4><p>Gói gần ngân sách nhất là <strong>${escapeHtml(latestResult.nearest?.fullName || "")}</strong>${Number.isFinite(nearestPrice) ? ` — ${formatDong(nearestPrice)}` : ""}${Number.isFinite(delta) ? `, cao hơn trần hiện tại ${formatPrice(delta)}` : ""}. Ba phương án bên dưới vẫn hiển thị để so sánh, kèm mức chênh so với ngân sách.</p><div class="inline-actions"><button class="button button--dark" type="button" data-open-budget>Mở ngân sách để so sánh</button><button class="button button--outline" type="button" data-partial-zalo>Hỏi giá riêng kính lái</button></div></div></div>`;
+      body = banner + cardsHtml;
     } else {
-      body = `<div class="fm-cards">${latestResult.lanes.map(resultCard).join("")}</div>`;
+      body = cardsHtml;
     }
     const chosenLane = selectedLane?.pkg ? selectedLane : null;
     const activeLane = chosenLane ? chosenLane.key : (latestResult.lanes.find((lane) => lane.isPick)?.key || "recommended");
@@ -960,7 +1001,7 @@ document.documentElement.classList.add("js");
       <div class="fm-head">
         <div class="fm-head-copy">
           <p class="fm-eyebrow">${chosenLane ? `PHƯƠNG ÁN ĐÃ CHỌN${vehicleChosen ? ` CHO ${escapeHtml(vehicleLabel().toUpperCase())}` : ""}` : vehicleChosen ? `PHƯƠNG ÁN PHÙ HỢP VỚI ${escapeHtml(vehicleLabel().toUpperCase())}` : "VÍ DỤ CẤU HÌNH MẶC ĐỊNH"}</p>
-          <h3 class="fm-heading">${chosenLane ? `${escapeHtml(chosenLane.pkg.fullName)} — ${formatDong(chosenLane.pkg.prices[state.group])}` : resultCount ? "Cấu hình phim để tham khảo" : "Chưa có gói trọn xe phù hợp ngân sách này"}</h3>
+          <h3 class="fm-heading">${chosenLane ? `${escapeHtml(chosenLane.pkg.fullName)} — ${formatDong(chosenLane.pkg.prices[state.group])}` : latestResult.noBudgetFit ? "Chưa có gói trong ngân sách — so sánh phương án gần nhất" : "Cấu hình phim để tham khảo"}</h3>
           <p class="fm-meta">${escapeHtml(vehicleLabel())} • ${escapeHtml(labels.need[state.need])} • ${escapeHtml(labels.budget[state.budget])}</p>
           ${chosenLane ? `<p class="fm-desc">${escapeHtml(chosenLane.pkg.positioning)}: kính lái ${escapeHtml(windshieldCode(chosenLane.pkg))}, sườn và lưng ${escapeHtml(bodyCodes(chosenLane.pkg))}. ${escapeHtml(reasonFor(chosenLane.pkg))}</p>` : ""}
           ${previewNote}
@@ -1234,7 +1275,8 @@ document.documentElement.classList.add("js");
     const response = await fetch(endpoint, { method: "POST", body: leadFormData(payload), keepalive: true });
     if (!response.ok) throw new Error(`Lead submission returned ${response.status}`);
     const result = await response.json().catch(() => null);
-    if (result && result.success === false) throw new Error(result.message || "Lead rejected");
+    if (!result || typeof result !== "object") throw new Error("Lead submission did not return a confirmable JSON response");
+    if (result.success !== true) throw new Error(result.message || "Lead submission did not confirm success");
     return { ok: true, channel: "endpoint", result };
   }
 
@@ -1319,7 +1361,7 @@ document.documentElement.classList.add("js");
       message.innerHTML = `<strong>Đã gửi thông tin tư vấn</strong><p>Auto365 đã tiếp nhận thông tin và sẽ liên hệ với anh/chị sớm nhất${configurationId ? ` — mã cấu hình <strong>${escapeHtml(configurationId)}</strong>` : ""}.</p>`;
       submitButton.textContent = "Đã gửi";
       window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "lead_form_submit", form_source: "pillar-3m-v11-12", service: "Phim cách nhiệt 3M", lead_phone: phone });
+      window.dataLayer.push({ event: "lead_form_submit", form_source: "pillar-3m-v11-12", service: "Phim cách nhiệt 3M", lead_id: payload.lead_id, package_id: packageId, configuration_id: configurationId });
       track("lead_submit_success", { configuration_id: configurationId, package_id: packageId, channel: result.channel });
     } catch (error) {
       const copied = await copyText(text);
