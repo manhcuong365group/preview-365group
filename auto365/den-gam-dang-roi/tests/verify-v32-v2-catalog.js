@@ -50,7 +50,9 @@ assert.match(html, /\.result-panel:has\(\.result-live\[hidden\]\)\{display:none\
 assert.match(html, /id="needRoute"/, 'quick selector must offer a compact route dropdown');
 assert.match(html, /id="needZone"/, 'quick selector must offer a compact lighting-zone dropdown');
 assert.match(html, /#needRoute,#needZone\{display:block\}/, 'compact route and zone dropdowns must be visible on desktop');
-assert.match(html, /\.selector-form \.selector-step\[data-step="3"\]\{grid-column:1\/-1;display:grid;grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\) 142px 94px 90px/, 'budget, voltage, shortlist CTA, hotline, and Zalo must stay in one usable row');
+assert.match(html, /\.selector-form\{display:grid;grid-template-columns:repeat\(6,minmax\(0,1fr\)\);gap:14px/, 'selector must use a balanced two-by-two layout');
+assert.match(html, /\.selector-form \.selector-step\[data-step="3"\] \.selector-inline \.dark-field:first-child\{grid-column:1 \/ span 3;grid-row:2\}/, 'budget and voltage must be grouped below the two primary choices');
+assert.match(html, /\.selector-form \.selector-contact a:first-child\{grid-column:1 \/ span 2;grid-row:3\}/, 'hotline, Zalo, and shortlist action must share one balanced row');
 assert.match(html, /class="selector-contact" aria-label="Liên hệ tư vấn nhanh"/, 'selector must offer compact hotline and Zalo actions');
 assert.match(html, /id="benefits"/, 'hub must include a dedicated benefits section');
 assert.ok(html.indexOf('id="benefits"') < html.indexOf('id="light-color"'), 'benefits must lead into the industry knowledge section');
