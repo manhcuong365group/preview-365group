@@ -50,7 +50,8 @@ assert.match(html, /\.result-panel:has\(\.result-live\[hidden\]\)\{display:none\
 assert.match(html, /id="needRoute"/, 'quick selector must offer a compact route dropdown');
 assert.match(html, /id="needZone"/, 'quick selector must offer a compact lighting-zone dropdown');
 assert.match(html, /#needRoute,#needZone\{display:block\}/, 'compact route and zone dropdowns must be visible on desktop');
-assert.match(html, /\.selector-form \.selector-step\[data-step="3"\]\{grid-column:1\/-1;display:grid;grid-template-columns:1fr 1fr auto/, 'budget, voltage, and shortlist CTA must stay in one usable row');
+assert.match(html, /\.selector-form \.selector-step\[data-step="3"\]\{grid-column:1\/-1;display:grid;grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\) 142px 94px 90px/, 'budget, voltage, shortlist CTA, hotline, and Zalo must stay in one usable row');
+assert.match(html, /class="selector-contact" aria-label="Liên hệ tư vấn nhanh"/, 'selector must offer compact hotline and Zalo actions');
 assert.match(html, /id="benefits"/, 'hub must include a dedicated benefits section');
 assert.ok(html.indexOf('id="benefits"') < html.indexOf('id="light-color"'), 'benefits must lead into the industry knowledge section');
 
