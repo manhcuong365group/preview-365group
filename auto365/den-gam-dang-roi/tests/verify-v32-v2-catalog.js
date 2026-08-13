@@ -44,7 +44,8 @@ assert.doesNotMatch(html, /id="pricing"/, 'duplicative pricing estimator must no
 assert.doesNotMatch(html, /class="fitment-table"/, 'fitment references must not be presented as a dry internal-looking table');
 assert.match(html, /class="fitment-story-grid"/, 'fitment references must be shown as editorial case cards');
 assert.match(html, /Đọc hồ sơ xe →/, 'case cards must link readers to the detailed published story');
-assert.match(html, /\.selector-shell:has\(\.result-live:not\(\[hidden\]\)\)\{grid-template-columns:minmax\(0,1\.25fr\) minmax\(320px,\.75fr\);display:grid\}/, 'result panel must only expand after a shortlist exists');
+assert.match(html, /\.selector-shell:has\(\.result-live:not\(\[hidden\]\)\)\{display:block\}/, 'shortlist must open below the selector instead of as a narrow side panel');
+assert.match(html, /\.shortlist-grid\{grid-column:1\/-1;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/, 'shortlist cards must use the available horizontal space on desktop');
 assert.match(html, /\.result-panel:has\(\.result-live\[hidden\]\)\{display:none\}/, 'empty recommendation panel must not consume half the selector');
 assert.match(html, /id="needRoute"/, 'quick selector must offer a compact route dropdown');
 assert.match(html, /id="needZone"/, 'quick selector must offer a compact lighting-zone dropdown');
