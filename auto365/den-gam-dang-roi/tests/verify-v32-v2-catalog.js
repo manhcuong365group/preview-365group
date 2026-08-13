@@ -41,6 +41,9 @@ assert.match(html, /\.catalog-sidebar\{[^}]*height:100%/, 'catalog filter panel 
 assert.match(html, /\.catalog-scroll-hint,\.catalog-note\{display:none\}/, 'desktop catalog must not use helper lines that offset the card rail');
 assert.doesNotMatch(html, /aria-label="Chọn nhanh theo tình huống"/, 'duplicate quick-situation cards must not appear below the product catalog');
 assert.doesNotMatch(html, /id="pricing"/, 'duplicative pricing estimator must not interrupt the hub journey');
+assert.doesNotMatch(html, /class="fitment-table"/, 'fitment references must not be presented as a dry internal-looking table');
+assert.match(html, /class="fitment-story-grid"/, 'fitment references must be shown as editorial case cards');
+assert.match(html, /Đọc hồ sơ xe →/, 'case cards must link readers to the detailed published story');
 assert.match(html, /\.selector-shell:has\(\.result-live:not\(\[hidden\]\)\)\{grid-template-columns:minmax\(0,1\.25fr\) minmax\(320px,\.75fr\);display:grid\}/, 'result panel must only expand after a shortlist exists');
 assert.match(html, /\.result-panel:has\(\.result-live\[hidden\]\)\{display:none\}/, 'empty recommendation panel must not consume half the selector');
 assert.match(html, /id="needRoute"/, 'quick selector must offer a compact route dropdown');
