@@ -854,8 +854,8 @@ document.documentElement.classList.add("js");
     const cautionFor = (pkg) => {
       if (compatible.some((item) => item.id === pkg.id)) return "";
       if (state.need === "premium" && !pkg.fit.includes("premium")) return "Không nằm trong nhóm cấu hình cao cấp anh/chị đang ưu tiên — hiển thị để so sánh mức giá.";
-      if (brightSensitive) return `Không ưu tiên khi thường xuyên đi đêm — kính lái ${windshieldCode(pkg)} nên xem mẫu và đo kiểm thực tế trước khi thi công.`;
-      return "Nên xem mẫu và đo kiểm thực tế trên kính xe trước khi thi công.";
+      if (brightSensitive) return `Kính lái ${windshieldCode(pkg)} tối hơn mức ưu tiên khi hay đi đêm — cần xem mẫu phim thực tế trên kính xe trước khi dán.`;
+      return "Cần xem mẫu phim thực tế trên kính xe trước khi dán.";
     };
     const isCompatible = (pkg) => compatible.some((item) => item.id === pkg.id);
     const makeLane = (key, pkg, isPick) => {
@@ -934,26 +934,17 @@ document.documentElement.classList.add("js");
   function resultCard(lane) {
     if (!lane.pkg) return `<article class="fm-card fm-card--empty"><span class="fm-tag">${escapeHtml(laneTagText[lane.key] || "")}</span><h4>Chưa có thêm phương án</h4><p class="fm-empty-note">Không có thêm gói phù hợp với các lựa chọn hiện tại ở cột này.</p></article>`;
     const price = lane.pkg.prices[state.group];
-    if (lane.locked) {
-      return `<article class="fm-card fm-card--locked" data-card-lane="${lane.key}">
-      <div class="fm-card-top"><span class="fm-tag fm-tag--locked">KHÔNG PHÙ HỢP</span></div>
-      <h4>${escapeHtml(lane.pkg.fullName)}</h4>
-      <p class="fm-price fm-price--locked">${formatDong(price)}</p>
-      <div class="fm-info"><p><b>Kính lái:</b> ${escapeHtml(windshieldCode(lane.pkg))}</p><p><b>Sườn/lưng:</b> ${escapeHtml(bodyCodes(lane.pkg))}</p></div>
-      <p class="fm-quote-flag">Không phù hợp với lựa chọn hiện tại${lane.caution ? ` — ${escapeHtml(lane.caution)}` : ""}</p>
-      <p class="fm-locked-note">Đổi nhu cầu ở bước 1 nếu muốn xem gói này, hoặc gọi 0365 365 365 để được tư vấn riêng.</p>
-    </article>`;
-    }
     const selected = selectedConfigId === lane.configId;
     const hasSunroofSurcharge = state.sunroof !== "none";
     const sunroofFlag = state.sunroof === "quote" ? '<p class="fm-quote-flag">Cần xác nhận phụ phí cửa sổ trời.</p>' : "";
     const overBudgetLabel = lane.overBudget ? `<span class="fm-badge fm-badge--over" title="Cao hơn ngân sách đã chọn ${formatPrice(lane.overBudgetAmount)}">+${formatPrice(lane.overBudgetAmount)}</span>` : "";
+    const cautionFlag = lane.caution ? `<p class="fm-quote-flag">${escapeHtml(lane.caution)}</p>` : "";
     return `<article class="fm-card ${laneTagClass[lane.tagKey || lane.key]} ${selected ? "fm-card--selected" : ""}" data-card-lane="${lane.key}">
       <div class="fm-card-top"><span class="fm-tag">${escapeHtml(laneTagText[lane.tagKey || lane.key])}</span><span class="fm-card-badges">${lane.isPick ? `<span class="fm-badge">${latestResult?.noBudgetFit ? "Gần ngân sách nhất" : "Theo lựa chọn hiện tại"}</span>` : ""}${overBudgetLabel}</span></div>
       <h4>${escapeHtml(lane.pkg.fullName)}</h4>
       <p class="fm-price">${hasSunroofSurcharge ? '<span class="fm-price-pre">Giá cơ bản · chưa gồm cửa sổ trời</span>' : ""}${formatDong(price)}</p>
       <div class="fm-info"><p><b>Kính lái:</b> ${escapeHtml(windshieldCode(lane.pkg))}</p><p><b>Sườn/lưng:</b> ${escapeHtml(bodyCodes(lane.pkg))}</p></div>
-      ${sunroofFlag}
+      ${sunroofFlag}${cautionFlag}
       <div class="fm-note"><b>Điểm cân nhắc</b><p>${escapeHtml(lane.pkg.tradeoff)}</p></div>
       <button class="fm-choose ${selected ? "fm-choose--on" : ""}" type="button" data-choose="${lane.key}">${selected ? "Đã chọn cấu hình" : `Chọn ${escapeHtml(lane.pkg.fullName)}`}</button>
     </article>`;
