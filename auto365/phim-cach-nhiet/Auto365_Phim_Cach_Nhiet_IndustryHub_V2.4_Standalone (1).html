@@ -95,9 +95,9 @@
     .selector-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
     .selector-controls .right{display:flex;gap:8px;margin-left:auto}.selector-controls .hint{font-size:11px;color:var(--muted);max-width:520px}
     .result{margin-top:18px;padding:25px;border:2px solid #b9e4cd;background:linear-gradient(145deg,#f7fffa,#fff)}
-    .result-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.result-top h3{font-size:28px;margin:5px 0 7px}.profile-id{font-size:10px;color:var(--muted);background:#fff;border:1px solid var(--line);padding:7px 9px;border-radius:9px;white-space:nowrap;max-width:100%;overflow-wrap:anywhere}.result-context{margin:10px 0 0;color:#28573f;font-size:12px;font-weight:800}
-    .result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:17px 0}.result-item{padding:14px;border:1px solid #d8e9df;border-radius:14px;background:#fff}.result-item b{display:block;font-size:12px;color:var(--green)}.result-item span{display:block;font-size:12px;margin-top:3px;color:#42484e}
-    .warnings{display:grid;gap:7px;margin:10px 0}.warning{padding:10px 12px;border-radius:12px;background:var(--amber-soft);color:#6e4a03;font-size:11.5px;border:1px solid #efdcac}
+    .result-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.result-top h3{font-size:28px;margin:5px 0 7px}
+    .result-item b{display:block;font-size:12px;color:var(--green)}.result-item span{display:block;font-size:12px;margin-top:3px;color:#42484e}
+    
     .brand-bridge{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:17px;border-radius:16px;background:#17191c;color:#fff;margin-top:14px}.brand-bridge>div:first-child{flex:1 1 300px;min-width:0}.brand-bridge p{font-size:12px;color:#d1d5d8;margin:4px 0 0}.brand-bridge-actions{flex:0 1 auto;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
     .privacy-note{display:block;margin-top:9px;color:var(--muted);font-size:10.5px}
     .price-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px}.price-answer{padding:25px}.price-answer h3{font-size:28px}.price-answer p{color:var(--muted)}.factor-list{display:grid;gap:8px;margin-top:15px}.factor{display:flex;gap:11px;align-items:flex-start;padding-top:10px;border-top:1px solid var(--line)}.factor i{width:30px;height:30px;border-radius:9px;background:var(--red-soft);color:var(--red);display:grid;place-items:center;font-style:normal;font-weight:950;flex:0 0 auto}.factor b{display:block;font-size:12px}.factor span{display:block;font-size:10.5px;color:var(--muted)}
@@ -116,7 +116,7 @@
     .mobile-cta{display:none;position:fixed;z-index:60;left:0;right:0;bottom:0;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);box-shadow:0 -10px 30px rgba(17,19,21,.08);gap:7px}.mobile-cta .btn{min-height:48px;padding:10px 12px;font-size:12px}.mobile-cta .primary{flex:1.35}.mobile-cta .secondary{flex:.8}
     .toast{position:fixed;z-index:80;left:50%;bottom:90px;transform:translate(-50%,20px);padding:11px 15px;border-radius:12px;background:#17191c;color:#fff;font-size:12px;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:.2s}.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
     @media(max-width:1000px){.head-nav a:not(.btn){display:none}.hero-grid{grid-template-columns:1fr}.hero-content{padding:48px 38px}.hero-media{min-height:390px;aspect-ratio:16/9}.trust-row{grid-template-columns:1fr 1fr}.price-layout,.brand-layout,.source-grid{grid-template-columns:1fr}.case-grid{grid-template-columns:repeat(2,1fr)}.knowledge-grid{grid-template-columns:repeat(2,1fr)}.process-grid{grid-template-columns:repeat(2,1fr)}.final{align-items:flex-start;flex-direction:column}.final-actions{justify-content:flex-start}}
-    @media(max-width:720px){:root{--header:60px}.shell{width:min(calc(100% - 20px),var(--max))}.topbar{position:relative;height:var(--header)}.brand-logo{font-size:23px}.brand-copy{display:none}.head-nav .btn{min-height:44px;padding:9px 11px;font-size:11px}.hero{margin-top:10px;border-radius:22px}.hero-content{padding:28px 21px 23px}.eyebrow{font-size:10px}h1{font-size:clamp(32px,9vw,35px);line-height:1.05;margin:13px 0 16px}.hero-copy{font-size:15px}.hero-actions{display:grid;grid-template-columns:1fr 1fr;margin-top:18px}.hero-actions .btn:first-child{grid-column:1/-1}.hero-note{display:none}.hero-media{min-height:220px;aspect-ratio:16/10}.photo-labels{left:12px;right:12px;bottom:12px;grid-template-columns:1fr}.photo-label:last-child{display:none}.photo-disclosure{top:10px;right:10px;left:10px;max-width:none;font-size:10px}.trust-row{display:flex;overflow:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.trust-row::-webkit-scrollbar{display:none}.trust-card{min-width:78%;scroll-snap-align:start}.trust-card span span,.choice small,.check-card span span,.factor span,.case-fact,.criterion span,.brand-proof span,.process-step p{font-size:12px}.case-body p,.knowledge-card p,.price-card p,.location p,.reviewer-body p{font-size:13px}.tag{font-size:11px}.quicknav{top:0;margin-top:10px;border-radius:13px}.quicknav a{min-height:44px;padding:9px 11px}section{margin-top:46px;scroll-margin-top:62px}.section-head{display:block;margin-bottom:17px}.section-head h2{font-size:29px}.section-head p{font-size:14px}.section-meta{display:block;margin-top:8px}.answer{grid-template-columns:1fr;padding:20px;border-left-width:4px}.answer h2{font-size:27px}.answer-path{grid-template-columns:1fr}.selector-head{padding:20px;display:block}.selector-head h2{font-size:27px}.progress{margin-top:14px}.selector-body{padding:16px}.form-grid,.check-grid{grid-template-columns:1fr}.choice-grid{grid-template-columns:1fr 1fr}.field input,.field select{font-size:16px}.choice label{min-height:62px;padding:11px}.selector-controls{align-items:stretch;flex-direction:column}.selector-controls .right{display:grid;grid-template-columns:1fr 1fr;width:100%;margin-left:0}.selector-controls .right.result{padding:17px}.result-top{display:block}.profile-id{display:inline-block;margin-top:7px;white-space:normal;overflow-wrap:anywhere}.result-top h3{font-size:25px}.result-grid{grid-template-columns:1fr}.brand-bridge{grid-template-columns:1fr}.brand-bridge-actions{justify-content:flex-start;display:grid}.price-answer{padding:20px}.price-steps{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr}.brand-card,.criteria{padding:20px}.criteria-list,.brand-proof{grid-template-columns:1fr}.knowledge-grid{grid-template-columns:1fr}.limits,.location-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.source-row{grid-template-columns:1fr;gap:3px}.reviewer-image{aspect-ratio:16/9}.faq details{padding:14px}.final{padding:24px 20px}.final h2{font-size:29px}.final-actions{display:grid;width:100%}.footer-row{display:block}.footer-links{margin-top:12px}.mobile-cta{display:flex}body{padding-bottom:76px}.toast{width:calc(100% - 28px);text-align:center;bottom:86px}}
+    @media(max-width:720px){:root{--header:60px}.shell{width:min(calc(100% - 20px),var(--max))}.topbar{position:relative;height:var(--header)}.brand-logo{font-size:23px}.brand-copy{display:none}.head-nav .btn{min-height:44px;padding:9px 11px;font-size:11px}.hero{margin-top:10px;border-radius:22px}.hero-content{padding:28px 21px 23px}.eyebrow{font-size:10px}h1{font-size:clamp(32px,9vw,35px);line-height:1.05;margin:13px 0 16px}.hero-copy{font-size:15px}.hero-actions{display:grid;grid-template-columns:1fr 1fr;margin-top:18px}.hero-actions .btn:first-child{grid-column:1/-1}.hero-note{display:none}.hero-media{min-height:220px;aspect-ratio:16/10}.photo-labels{left:12px;right:12px;bottom:12px;grid-template-columns:1fr}.photo-label:last-child{display:none}.photo-disclosure{top:10px;right:10px;left:10px;max-width:none;font-size:10px}.trust-row{display:flex;overflow:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.trust-row::-webkit-scrollbar{display:none}.trust-card{min-width:78%;scroll-snap-align:start}.trust-card span span,.choice small,.check-card span span,.factor span,.case-fact,.criterion span,.brand-proof span,.process-step p{font-size:12px}.case-body p,.knowledge-card p,.price-card p,.location p,.reviewer-body p{font-size:13px}.tag{font-size:11px}.quicknav{top:0;margin-top:10px;border-radius:13px}.quicknav a{min-height:44px;padding:9px 11px}section{margin-top:46px;scroll-margin-top:62px}.section-head{display:block;margin-bottom:17px}.section-head h2{font-size:29px}.section-head p{font-size:14px}.section-meta{display:block;margin-top:8px}.answer{grid-template-columns:1fr;padding:20px;border-left-width:4px}.answer h2{font-size:27px}.answer-path{grid-template-columns:1fr}.selector-head{padding:20px;display:block}.selector-head h2{font-size:27px}.progress{margin-top:14px}.selector-body{padding:16px}.form-grid,.check-grid{grid-template-columns:1fr}.choice-grid{grid-template-columns:1fr 1fr}.field input,.field select{font-size:16px}.choice label{min-height:62px;padding:11px}.selector-controls{align-items:stretch;flex-direction:column}.selector-controls .right{display:grid;grid-template-columns:1fr 1fr;width:100%;margin-left:0}.selector-controls .right.result{padding:17px}.result-top{display:block}.result-top h3{font-size:25px}.brand-bridge{grid-template-columns:1fr}.brand-bridge-actions{justify-content:flex-start;display:grid}.price-answer{padding:20px}.price-steps{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr}.brand-card,.criteria{padding:20px}.criteria-list,.brand-proof{grid-template-columns:1fr}.knowledge-grid{grid-template-columns:1fr}.limits,.location-grid{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}.source-row{grid-template-columns:1fr;gap:3px}.reviewer-image{aspect-ratio:16/9}.faq details{padding:14px}.final{padding:24px 20px}.final h2{font-size:29px}.final-actions{display:grid;width:100%}.footer-row{display:block}.footer-links{margin-top:12px}.mobile-cta{display:flex}body{padding-bottom:76px}.toast{width:calc(100% - 28px);text-align:center;bottom:86px}}
     @media(max-width:410px){.hero-actions{grid-template-columns:1fr}.hero-actions .btn:first-child{grid-column:auto}.process-grid{grid-template-columns:1fr}.selector-controls .right{grid-template-columns:1fr}.photo-labels{display:none}.hero-media{min-height:190px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
   
@@ -208,6 +208,13 @@
   .lead-status.ok{color:var(--green)}
   .lead-status.err{color:var(--red-dark)}
   @media(max-width:720px){.lead-form-row{flex-direction:column}.lead-form-row button{width:100%}}
+
+  .result-summary{margin:14px 0 0;display:grid;gap:8px}
+  .result-summary>div{display:flex;gap:10px;align-items:baseline;padding:11px 13px;border-radius:12px;background:var(--soft);font-size:12.5px}
+  .result-summary>div b{flex:0 0 108px;color:var(--muted);font-weight:850}
+  .result-summary>div span{flex:1;color:var(--ink);font-weight:600}
+  .result-followup{margin-top:12px;font-size:12px;color:var(--muted)}
+  @media(max-width:720px){.result-summary>div{flex-direction:column;gap:2px}.result-summary>div b{flex:none}}
 
 </style>
   <script type="application/ld+json">
@@ -312,52 +319,75 @@
 <section id="selector" aria-labelledby="selector-title">
       <div class="card selector">
         <div class="selector-head">
-          <div><span class="eyebrow">Gợi ý cấu hình theo xe</span><h2 id="selector-title">Xe của anh/chị cần cấu hình phim như thế nào?</h2><p>Nhận kết quả trước, không cần để lại số điện thoại.</p></div>
+          <div><span class="eyebrow">FilmMatch · Khảo sát nhu cầu trước khi tư vấn</span><h2 id="selector-title">Cho Auto365 biết nhu cầu của bạn</h2><p>Chọn xe, nhu cầu sử dụng và mức đầu tư dự kiến. Auto365 sẽ dựa trên thông tin này để tư vấn cấu hình phù hợp cho từng vị trí kính.</p></div>
           </div>
         <div class="selector-body">
           <form id="film-selector-form">
             <div class="selector-step" data-step="1">
-              <div class="step-title"><span class="step-num">1</span><div><h3>Xe &amp; nhu cầu chính</h3><p>Bắt buộc — quyết định phần lớn cấu hình đề xuất.</p></div></div>
-              <div class="form-grid">
-              <label class="field"><span>Kiểu thân xe</span><select id="vehicle" name="vehicle"><option value="mini">Minicar / hatchback nhỏ</option><option value="sedan">Sedan</option><option value="suv" selected="">SUV / CUV</option><option value="mpv">MPV / van</option><option value="pickup">Bán tải</option></select></label>
-              <label class="field"><span>Model xe (không bắt buộc)</span><input id="model" name="model" autocomplete="off" placeholder="Ví dụ: VF 3, CX-5, Fortuner"></label>
+              <div class="step-title"><span class="step-num">1</span><div><h3>Xe đang sử dụng</h3><p>Nhập tay nếu không thấy đúng hãng hoặc dòng xe.</p></div></div>
+              <div class="form-grid form-grid-3">
+              <label class="field"><span>Hãng xe</span><input id="car-brand" name="car_brand" autocomplete="off" placeholder="Ví dụ: Mazda, Toyota, VinFast"></label>
+              <label class="field"><span>Dòng xe</span><input id="car-model" name="car_model" autocomplete="off" placeholder="Ví dụ: CX-5, Fortuner, VF3"></label>
+              <label class="field"><span>Năm sản xuất (không bắt buộc)</span><input id="car-year" name="car_year" autocomplete="off" placeholder="Ví dụ: 2022" inputmode="numeric"></label>
               </div>
-              <label class="field"><span>Nhu cầu chính</span><select id="usecase" name="usecase"><option value="night" selected="">Thường đi đêm</option><option value="family">Xe gia đình</option><option value="ev">Xe điện / nhiều kính</option><option value="service">Xe chạy dịch vụ</option><option value="premium">Trải nghiệm cao cấp</option><option value="practical">Ngân sách thực dụng</option></select></label>
+              <label class="field"><span>Kiểu thân xe</span><select id="vehicle" name="vehicle"><option value="mini">Minicar / hatchback nhỏ</option><option value="sedan">Sedan</option><option value="suv" selected="">SUV / CUV</option><option value="mpv">MPV / van</option><option value="pickup">Bán tải</option></select></label>
             </div>
 
             <div class="selector-step" data-step="2">
-              <div class="step-title"><span class="step-num">2</span><div><h3>Tùy chỉnh thêm</h3><p>Không bắt buộc — giữ mặc định nếu chưa rõ ưu tiên riêng.</p></div></div>
+              <div class="step-title"><span class="step-num">2</span><div><h3>Nhu cầu sử dụng</h3><p>Chọn một hoặc nhiều nhu cầu gần với thực tế của anh/chị.</p></div></div>
               <div class="check-grid">
-              <label class="check-card"><input id="electric" name="electric" type="checkbox"><span><b>Xe điện</b><span>Kiểm tra kính lớn và thiết bị điện tử.</span></span></label>
-              <label class="check-card"><input id="panorama" name="panorama" type="checkbox"><span><b>Có cửa sổ trời hoặc panorama</b><span>Tách thành hạng mục khảo sát riêng.</span></span></label>
-              <label class="check-card"><input id="old-film" name="old-film" type="checkbox"><span><b>Xe đang có phim cũ</b><span>Kiểm tra keo, bề mặt kính và công bóc.</span></span></label>
-              </div>
-              <div class="form-grid form-grid-3">
-              <label class="field"><span>Kính lái ưu tiên</span><select id="wind" name="wind"><option value="vision" selected="">Tầm nhìn (sáng, dễ quan sát)</option><option value="balance">Cân bằng nhiệt</option><option value="glare">Giảm chói</option></select></label>
-              <label class="field"><span>Khoang sau ưu tiên</span><select id="privacy" name="privacy"><option value="light">Sáng vừa</option><option value="balance" selected="">Cân bằng</option><option value="high">Riêng tư cao</option></select></label>
-              <label class="field"><span>Mức đầu tư</span><select id="budget" name="budget"><option value="practical">Thực dụng</option><option value="balanced" selected="">Cân bằng</option><option value="premium">Cao cấp</option></select></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="outdoor"><span><b>Xe thường xuyên đi ngoài trời</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="cooler"><span><b>Muốn cabin đỡ nóng hơn</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="windshield-view"><span><b>Ưu tiên tầm nhìn kính lái</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="family"><span><b>Thường chở trẻ nhỏ / gia đình</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="privacy"><span><b>Muốn tăng sự riêng tư</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="clarity"><span><b>Quan tâm đến độ trong của kính</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="parked-outdoor"><span><b>Xe thường xuyên đậu ngoài trời</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="replace-old"><span><b>Muốn thay phim cũ</b></span></label>
+              <label class="check-card"><input type="checkbox" name="needs" value="unsure"><span><b>Chưa biết nên chọn loại nào</b></span></label>
               </div>
             </div>
 
+            <div class="selector-step" data-step="3">
+              <div class="step-title"><span class="step-num">3</span><div><h3>Đặc điểm xe</h3><p>Không chắc thì chọn "Không rõ" — Auto365 sẽ kiểm tra khi gặp xe.</p></div></div>
+              <div class="form-grid form-grid-3">
+              <label class="field"><span>Cửa sổ trời / panorama</span><select id="panorama-status" name="has_panorama"><option value="unknown" selected="">Không rõ</option><option value="yes">Có</option><option value="no">Không</option></select></label>
+              <label class="field"><span>HUD (hiển thị lên kính lái)</span><select id="hud-status" name="has_hud"><option value="unknown" selected="">Không rõ</option><option value="yes">Có</option><option value="no">Không</option></select></label>
+              <label class="field"><span>Phim cách nhiệt hiện tại</span><select id="film-status" name="current_film_status"><option value="none">Chưa dán</option><option value="old" selected="">Đang dùng phim cũ</option><option value="unknown">Không rõ</option></select></label>
+              </div>
+              <label class="field"><span>Nếu đang dùng phim cũ — đã dùng khoảng bao lâu (không bắt buộc)</span><select id="film-age" name="current_film_age"><option value="" selected="">Không rõ</option><option value="under-1y">Dưới 1 năm</option><option value="1-3y">1–3 năm</option><option value="over-3y">Trên 3 năm</option></select></label>
+            </div>
+
+            <div class="selector-step" data-step="4">
+              <div class="step-title"><span class="step-num">4</span><div><h3>Mức đầu tư dự kiến</h3><p>Chọn khoảng gần nhất; Auto365 sẽ tư vấn cấu hình phù hợp ngân sách.</p></div></div>
+              <label class="field"><span>Ngân sách dự kiến</span><select id="budget-range" name="budget_range"><option value="undecided" selected="">Chưa xác định</option><option value="under-8">Ưu tiên tiết kiệm (dưới 8 triệu)</option><option value="8-14">Khoảng 8–14 triệu</option><option value="14-18">Khoảng 14–18 triệu</option><option value="advise-first">Muốn được tư vấn theo nhu cầu trước</option></select></label>
+            </div>
+
             <div class="selector-controls">
-              <span class="hint">Kết quả chỉ xác định tiêu chí. Mã phim cuối cần kiểm tra kính nguyên bản và thiết bị trên xe.</span>
-              <div class="right"><button class="btn btn-red" id="generate-profile" type="submit">Tạo kết quả</button></div>
+              <span class="hint">Đây là bước khảo sát nhu cầu, chưa phải cấu hình phim cuối cùng. Auto365 tư vấn mã phim theo từng vị trí kính sau khi kiểm tra xe.</span>
+              <div class="right"><button class="btn btn-red" id="generate-profile" type="submit">Gửi nhu cầu cho Auto365</button></div>
             </div>
           </form>
 
           <p class="sr-only" id="selector-live" role="status" aria-live="polite"></p>
           <div id="profile-result" class="card result" role="region" aria-labelledby="profile-name" tabindex="-1" hidden="">
-            <div class="result-top"><div><span class="kicker">Tiêu chí phù hợp với xe của anh/chị</span><h3 id="profile-name">Tầm nhìn ưu tiên · Riêng tư cân bằng</h3><p id="profile-reason">Kết quả được tạo từ nhóm xe, thói quen sử dụng và mức ưu tiên đã chọn.</p><p class="result-context" id="result-context">Dành cho: SUV / CUV / MPV</p></div><span class="profile-id" id="profile-id">PROFILE</span></div>
-            <div class="result-grid"><div class="result-item"><b>Kính lái</b><span id="result-wind">Ưu tiên độ sáng, độ trong và TSER có nguồn.</span></div><div class="result-item"><b>Sườn và kính lưng</b><span id="result-body">Cân bằng riêng tư với khả năng quan sát.</span></div><div class="result-item"><b>Nhóm lựa chọn</b><span id="result-tech">Cấu hình cân bằng, xác nhận giá theo xe.</span></div></div>
-            <div class="warnings" id="warnings"></div>
+            <div class="result-top"><div><span class="kicker">Auto365 đã nhận nhu cầu của bạn</span><h3 id="profile-name">Thông tin của anh/chị đã được ghi nhận</h3><p id="profile-reason">Đội ngũ Auto365 sẽ dựa trên các lựa chọn này để tư vấn cấu hình phù hợp theo từng vị trí kính.</p></div></div>
+            <div class="result-summary" id="result-summary" role="list">
+              <div role="listitem"><b>Xe</b><span id="rs-vehicle"></span></div>
+              <div role="listitem"><b>Nhu cầu</b><span id="rs-needs"></span></div>
+              <div role="listitem"><b>Panorama / HUD</b><span id="rs-panorama"></span></div>
+              <div role="listitem"><b>Phim hiện tại</b><span id="rs-film"></span></div>
+              <div role="listitem"><b>Ngân sách</b><span id="rs-budget"></span></div>
+            </div>
+            <p class="result-followup">Auto365 sẽ kiểm tra thêm tình trạng kính và nhu cầu thực tế trước khi đề xuất cấu hình.</p>
 <form id="lead-form" class="lead-form" aria-labelledby="lead-form-title">
-              <div class="lead-form-head"><b id="lead-form-title">Nhận cấu hình chi tiết &amp; báo giá theo xe</b><p>Auto365 liên hệ lại theo tiêu chí vừa chọn để xác nhận mã phim và giá đúng xe.</p></div>
-              <div class="lead-form-row"><input type="tel" id="lead-phone" name="phone" required="" placeholder="Số điện thoại" autocomplete="tel" inputmode="tel"><button class="btn btn-red" type="submit">Nhận cấu hình &amp; báo giá</button></div>
+              <div class="lead-form-head"><b id="lead-form-title">Nhận tư vấn cấu hình theo nhu cầu vừa chọn</b><p>Auto365 liên hệ lại theo thông tin phía trên để tư vấn cấu hình phù hợp.</p></div>
+              <div class="lead-form-row"><input type="tel" id="lead-phone" name="phone" required="" placeholder="Số điện thoại" autocomplete="tel" inputmode="tel"><input type="text" id="lead-name" name="fullname" autocomplete="name" placeholder="Tên của bạn (không bắt buộc)"><button class="btn btn-red" type="submit">Gửi nhu cầu cho Auto365</button></div>
               <label class="lead-consent"><input type="checkbox" id="lead-consent" required=""><span>Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener noreferrer">Chính sách bảo mật</a>.</span></label>
               <p class="lead-status" id="lead-status" role="status" aria-live="polite" hidden=""></p>
             </form>
-            <div class="brand-bridge"><div><b>Đối chiếu hồ sơ bằng cùng tiêu chí vừa chọn</b><p>FilmMatch không tự chọn hãng. Brand Atlas cho biết hồ sơ nào đủ nguồn để đối chiếu và trường nào còn thiếu; điều này không đồng nghĩa thương hiệu đó tốt nhất cho mọi xe.</p></div><div class="brand-bridge-actions"><a class="btn btn-light" id="brand-compare-handoff" href="#brands">So sánh hồ sơ thương hiệu</a><a class="btn btn-red" id="brand-handoff" href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Xem cấu hình 3M Auto365 đang triển khai</a><a class="btn btn-ghost zalo-action" id="zalo-result" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener noreferrer" data-zalo-source="profile_result">Sao chép tiêu chí &amp; mở Zalo</a></div></div>
-            <small class="privacy-note">Công cụ không tự gửi hoặc lưu model xe. Khi bấm Zalo, kết quả được sao chép để anh/chị tự dán và bấm Gửi trong Zalo.</small>
+            <div class="brand-bridge"><div><b>Muốn tự tìm hiểu thêm trước khi Auto365 liên hệ?</b><p>Trang có Brand Atlas đối chiếu hồ sơ thương hiệu và trang cấu hình 3M Auto365 đang triển khai — không phải gợi ý bắt buộc, chỉ để tham khảo thêm.</p></div><div class="brand-bridge-actions"><a class="btn btn-light" id="brand-compare-handoff" href="#brands">So sánh hồ sơ thương hiệu</a><a class="btn btn-red" id="brand-handoff" href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Xem cấu hình 3M Auto365 đang triển khai</a><a class="btn btn-ghost zalo-action" id="zalo-result" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener noreferrer" data-zalo-source="profile_result">Sao chép nhu cầu &amp; mở Zalo</a></div></div>
+            <small class="privacy-note">Công cụ không tự gửi hoặc lưu thông tin khi anh/chị chỉ xem, chưa bấm gửi. Khi bấm Zalo, nội dung được sao chép để anh/chị tự dán và bấm Gửi trong Zalo.</small>
           </div>
         </div>
       </div>
@@ -784,7 +814,7 @@
 
   <footer><div class="shell footer-row"><span>Auto365 · Trung tâm tri thức và lựa chọn nâng cấp ô tô</span><div class="footer-links"><a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365">Chính sách bảo mật</a><a href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Phim cách nhiệt 3M</a><a href="tel:0365365911">0365 365 911</a></div></div></footer>
 
-  <nav class="mobile-cta" aria-label="Hành động nhanh"><a class="btn btn-red primary" id="mobile-primary" href="#selector">Chọn phim theo xe</a><a class="btn btn-line secondary" href="tel:0365365911" data-phone-source="mobile_sticky">Gọi</a><a class="btn btn-line secondary zalo-action" id="zalo-mobile" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener noreferrer" data-zalo-source="mobile_sticky">Zalo</a></nav>
+  <nav class="mobile-cta" aria-label="Hành động nhanh"><a class="btn btn-red primary" id="mobile-primary" href="#selector">Khảo sát nhu cầu</a><a class="btn btn-line secondary" href="tel:0365365911" data-phone-source="mobile_sticky">Gọi</a><a class="btn btn-line secondary zalo-action" id="zalo-mobile" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener noreferrer" data-zalo-source="mobile_sticky">Zalo</a></nav>
   <div class="toast" id="toast" role="status" aria-live="polite">Đã sao chép kết quả.</div>
 
   <script>
@@ -797,57 +827,44 @@
     var reducedMotion=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.dataLayer=window.dataLayer||[];
     function track(event,data){window.dataLayer.push(Object.assign({event:event},data||{}))}
-    var profiles={
-      night:{name:'Tầm nhìn ưu tiên · Riêng tư cân bằng',reason:'Phù hợp người thường đi đêm, cần độ trong và quan sát ổn định.'},
-      family:{name:'Gia đình · Khoang sau dịu nắng',reason:'Cân bằng tầm nhìn, trải nghiệm hành khách và mức riêng tư.'},
-      ev:{name:'Xe điện nhiều kính · Tách panorama',reason:'Ưu tiên kính lái, tải nhiệt khu vực kính trần và thiết bị điện tử.'},
-      service:{name:'Khai thác thường xuyên · Dễ sử dụng',reason:'Ưu tiên quan sát, độ ổn định, chi phí rõ và khả năng tiếp nhận bảo hành.'},
-      premium:{name:'Độ trong quang học · Màu trung tính',reason:'Ưu tiên trải nghiệm quan sát, thẩm mỹ và hồ sơ bằng chứng theo xe.'},
-      practical:{name:'Thực dụng · Nguồn và giá minh bạch',reason:'Ưu tiên mã phim rõ, phạm vi thi công và bảo hành dễ kiểm tra.'}
-    };
-    function checked(name){var el=qs('input[name="'+name+'"]:checked');return el?el.value:''}
     function generate(){
-      var vehicle=qs('#vehicle').value;
-      var model=qs('#model').value.trim();
-      var usecase=qs('#usecase').value;
-      var wind=qs('#wind').value;
-      var privacy=qs('#privacy').value;
-      var budget=qs('#budget').value;
-      var electric=qs('#electric').checked;
-      var panorama=qs('#panorama').checked;
-      var oldFilm=qs('#old-film').checked;
-      var p=profiles[usecase]||profiles.night;
-      var windText=wind==='vision'?'Ưu tiên độ sáng, độ trong và TSER có nguồn.':wind==='balance'?'Cân bằng VLT với TSER; xem mẫu trên kính thật.':'Giảm chói vừa phải; bắt buộc kiểm tra khả năng nhìn đêm.';
-      var bodyText=privacy==='light'?'Khoang sau sáng vừa, dễ quan sát từ trong ra.':privacy==='high'?'Riêng tư cao; nghiệm thu camera và quan sát ban đêm.':'Cân bằng riêng tư với khả năng quan sát.';
-      var techText=budget==='premium'?'Ưu tiên độ trong, màu phim và bằng chứng theo xe.':budget==='practical'?'Ưu tiên nguồn gốc, mã từng kính và tổng chi phí rõ.':'Cấu hình cân bằng, xác nhận giá theo xe.';
-      var id=['A365',vehicle,electric?'EV':'ICE',usecase,wind,privacy,budget,panorama?'ROOF':'NO-ROOF',oldFilm?'OLD':'CLEAN'].join('-').toUpperCase();
-      qs('#profile-name').textContent=p.name;
-      qs('#profile-reason').textContent=p.reason;
+      var brand=qs('#car-brand').value.trim();
+      var model=qs('#car-model').value.trim();
+      var year=qs('#car-year').value.trim();
       var vehicleSelect=qs('#vehicle');
-      var vehicleLabel=vehicleSelect.options[vehicleSelect.selectedIndex].textContent;
-      qs('#result-context').textContent='Dành cho: '+vehicleLabel+(electric?' · Xe điện':'')+(model?' · '+model:'');
-      qs('#result-wind').textContent=windText;
-      qs('#result-body').textContent=bodyText;
-      if(electric){techText+=' Kiểm tra kính lớn, panorama và thiết bị điện tử trên xe.'}qs('#result-tech').textContent=techText;
-      qs('#profile-id').textContent=id;
-      var warnings=qs('#warnings');warnings.textContent='';
-      if(panorama){var w1=document.createElement('div');w1.className='warning';w1.textContent='Cửa sổ trời/panorama chưa được coi là đã gồm trong giá; cần khảo sát kích thước và cấu tạo kính.';warnings.appendChild(w1)}
-      if(oldFilm){var w2=document.createElement('div');w2.className='warning';w2.textContent='Xe có phim cũ: cần kiểm tra keo, bề mặt kính, thời gian và chi phí bóc trước khi chốt.';warnings.appendChild(w2)}
-      latestSummary='Auto365 - Kết quả chọn phim cách nhiệt\nXe: '+(model||vehicle)+'\nTiêu chí: '+p.name+'\nKính lái: '+windText+'\nKhoang sau: '+bodyText+'\nMức lựa chọn: '+techText+'\nMã tham chiếu: '+id;
-      var handoffParams=new URLSearchParams({vehicle_group:vehicle,electric:electric?'1':'0',usecase:usecase,wind:wind,privacy:privacy,budget:budget,roof:panorama?'1':'0',old_film:oldFilm?'1':'0'});
-      var handoffUrl='https://auto365.vn/phim-cach-nhiet-o-to-3m?'+handoffParams.toString()+'#film-match';
-      var handoff=qs('#brand-handoff');if(handoff){handoff.href=handoffUrl}
-      var result=qs('#profile-result');result.hidden=false;qs('#selector-live').textContent='Đã tạo kết quả FilmMatch.';result.focus();result.scrollIntoView({behavior:reducedMotion?'auto':'smooth',block:'center'});
-      var mobile=qs('#mobile-primary');mobile.textContent='So sánh thương hiệu';mobile.href='#brands';
-      track('film_profile_generated',{profile_id:id,vehicle_group:vehicle,electric:electric,usecase:usecase,budget:budget,panorama:panorama,old_film:oldFilm});
+      var vehicleTypeLabel=vehicleSelect.options[vehicleSelect.selectedIndex].textContent;
+      var needChecks=qsa('input[name="needs"]:checked');
+      var needsLabels=needChecks.map(function(el){return el.closest('.check-card').querySelector('b').textContent});
+      var panoramaSelect=qs('#panorama-status');
+      var hudSelect=qs('#hud-status');
+      var filmSelect=qs('#film-status');
+      var filmAgeSelect=qs('#film-age');
+      var budgetSelect=qs('#budget-range');
+      var panoramaLabel=panoramaSelect.options[panoramaSelect.selectedIndex].textContent;
+      var hudLabel=hudSelect.options[hudSelect.selectedIndex].textContent;
+      var filmLabel=filmSelect.options[filmSelect.selectedIndex].textContent;
+      var filmAgeLabel=filmAgeSelect.value?filmAgeSelect.options[filmAgeSelect.selectedIndex].textContent:'';
+      var budgetLabel=budgetSelect.options[budgetSelect.selectedIndex].textContent;
+      var vehicleText=[brand,model].filter(Boolean).join(' ')||vehicleTypeLabel;
+      var needsText=needsLabels.length?needsLabels.join(' · '):'Chưa chọn nhu cầu cụ thể';
+      var filmText=filmLabel+(filmSelect.value==='old'&&filmAgeLabel?(' · '+filmAgeLabel):'');
+      qs('#rs-vehicle').textContent=vehicleText+(year?(' · Năm '+year):'')+' · '+vehicleTypeLabel;
+      qs('#rs-needs').textContent=needsText;
+      qs('#rs-panorama').textContent=panoramaLabel+(hudSelect.value!=='unknown'?(' · HUD: '+hudLabel):'');
+      qs('#rs-film').textContent=filmText;
+      qs('#rs-budget').textContent=budgetLabel;
+      latestSummary='Auto365 - Nhu cầu khách hàng qua FilmMatch\nXe: '+vehicleText+(year?' (năm '+year+')':'')+' — '+vehicleTypeLabel+'\nNhu cầu: '+needsText+'\nPanorama: '+panoramaLabel+'\nHUD: '+hudLabel+'\nPhim hiện tại: '+filmText+'\nNgân sách dự kiến: '+budgetLabel;
+      var result=qs('#profile-result');result.hidden=false;qs('#selector-live').textContent='Đã ghi nhận nhu cầu.';result.focus();result.scrollIntoView({behavior:reducedMotion?'auto':'smooth',block:'center'});
+      var mobile=qs('#mobile-primary');mobile.textContent='Nhận tư vấn';mobile.href='#lead-phone';
+      track('filmmatch_needs_submitted',{vehicle_type:vehicleSelect.value,needs_count:needChecks.length,panorama:panoramaSelect.value,hud:hudSelect.value,film_status:filmSelect.value,budget_range:budgetSelect.value});
     }
     function invalidateResult(){
       var result=qs('#profile-result');
       if(result.hidden)return;
       result.hidden=true;
       latestSummary='';
-      var mobile=qs('#mobile-primary');mobile.textContent='Chọn phim theo xe';mobile.href='#selector';
-      track('film_profile_invalidated');
+      var mobile=qs('#mobile-primary');mobile.textContent='Khảo sát nhu cầu';mobile.href='#selector';
+      track('filmmatch_needs_invalidated');
     }
     form.addEventListener('input',invalidateResult);
     form.addEventListener('change',invalidateResult);
@@ -901,27 +918,39 @@
         if(!phone) return;
         submitBtn.disabled=true;submitBtn.textContent='Đang gửi...';
         statusEl.hidden=true;statusEl.className='lead-status';
+        var brand=qs('#car-brand').value.trim();
+        var model=qs('#car-model').value.trim();
+        var year=qs('#car-year').value.trim();
         var vehicleSel=qs('#vehicle');
-        var modelVal=qs('#model').value.trim();
-        var carModel=modelVal||vehicleSel.options[vehicleSel.selectedIndex].textContent;
+        var carModelText=[brand,model].filter(Boolean).join(' ')||vehicleSel.options[vehicleSel.selectedIndex].textContent;
+        var needChecks=qsa('input[name="needs"]:checked');
+        var needsValues=needChecks.map(function(el){return el.value});
+        var needsLabels=needChecks.map(function(el){return el.closest('.check-card').querySelector('b').textContent});
+        var leadId='HUB-'+Date.now();
         var data=new FormData();
         data.append('form-honey','');
-        data.append('fullname','');
+        data.append('fullname',qs('#lead-name').value.trim());
         data.append('phone',phone);
-        data.append('car_model',carModel);
-        data.append('priority',qs('#profile-name').textContent);
-        data.append('service','Phim cách nhiệt — Hub tư vấn');
+        data.append('car_model',carModelText);
+        data.append('priority',needsLabels.join(', ')||'Chưa chọn nhu cầu cụ thể');
+        data.append('service','Phim cách nhiệt — Khảo sát nhu cầu (Hub)');
         data.append('source_page','Industry Hub V2.5');
         data.append('source_url',location.href);
         data.append('referrer',document.referrer||'');
         var qp=new URLSearchParams(location.search);
         ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){data.append(k,qp.get(k)||'')});
-        data.append('lead_id','HUB-'+Date.now());
-        data.append('configuration_id',qs('#profile-id').textContent);
-        data.append('package_name',qs('#profile-name').textContent);
-        data.append('package_price','');
+        data.append('lead_id',leadId);
+        data.append('lead_source','FilmMatch');
+        data.append('created_at',new Date().toISOString());
+        data.append('car_brand',brand);
+        data.append('car_year',year);
         data.append('vehicle_group',vehicleSel.value);
-        data.append('price_status','Hub chỉ đề xuất tiêu chí, chưa map giá theo mã — cần xác nhận giá tại tư vấn');
+        data.append('main_needs',needsValues.join(','));
+        data.append('has_panorama',qs('#panorama-status').value);
+        data.append('has_hud',qs('#hud-status').value);
+        data.append('current_film_status',qs('#film-status').value);
+        data.append('current_film_age',qs('#film-age').value);
+        data.append('budget_range',qs('#budget-range').value);
         data.append('province','');
         data.append('note',latestSummary);
         fetch('/api/leads',{method:'POST',body:data,keepalive:true}).then(function(res){
@@ -930,12 +959,12 @@
         }).then(function(){
           statusEl.textContent='Đã gửi. Auto365 sẽ liên hệ theo số vừa nhập.';
           statusEl.className='lead-status ok';statusEl.hidden=false;
-          track('hub_lead_submitted',{configuration_id:qs('#profile-id').textContent});
+          track('hub_lead_submitted',{lead_id:leadId});
         }).catch(function(){
           statusEl.textContent='Chưa gửi được lúc này. Anh/chị có thể dùng nút Zalo bên dưới.';
           statusEl.className='lead-status err';statusEl.hidden=false;
         }).finally(function(){
-          submitBtn.disabled=false;submitBtn.textContent='Nhận cấu hình & báo giá';
+          submitBtn.disabled=false;submitBtn.textContent='Gửi nhu cầu cho Auto365';
         });
       });
     }
