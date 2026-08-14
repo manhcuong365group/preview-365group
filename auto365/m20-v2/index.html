@@ -617,6 +617,42 @@ tr:last-child td{border-bottom:0}
   color:#5f5b64;
 }
 
+.feature-scroll{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:16px;
+}
+.feature-scroll-card{
+  border:1px solid var(--lav-3);
+  border-radius:17px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:var(--shadow);
+}
+.feature-scroll-card img{
+  display:block;
+  width:100%;
+  aspect-ratio:3/4;
+  object-fit:cover;
+  background:#140e1d;
+}
+.feature-scroll-body{padding:14px}
+.feature-scroll-body strong{
+  display:block;
+  font-size:15px;
+  color:#2a1f35;
+  margin-bottom:5px;
+}
+.feature-scroll-body p{
+  margin:0;
+  font-size:13px;
+  color:#625f68;
+}
+@media(max-width:850px){
+  .feature-scroll{grid-template-columns:repeat(2,1fr)}
+}
+
 /* Feature image rows */
 .feature-row{
   display:grid;
@@ -1005,6 +1041,11 @@ tr:last-child td{border-bottom:0}
   .toc-grid{grid-template-columns:1fr}
   .dark-data{grid-template-columns:1fr 1fr}
   .cards-3.hscroll-row .mini-card,.checks.hscroll-row .check{flex:0 0 72%}
+  .feature-scroll.hscroll-row .feature-scroll-card{flex:0 0 62%}
+  .feature-scroll-card img{aspect-ratio:1/1}
+  .feature-scroll-body{padding:11px}
+  .feature-scroll-body strong{font-size:13px}
+  .feature-scroll-body p{font-size:11.5px}
   .mini-card strong{font-size:15px}
   .mini-card p{font-size:13px}
   #ai-nen-can-nhac .cards-2{gap:8px}
@@ -1758,22 +1799,40 @@ tr:last-child td{border-bottom:0}
 
 <section class="panel" id="diem-noi-bat">
   <div class="pill">Điểm nổi bật</div>
-  <h2>X2 nguồn sáng Cos / Pha</h2>
-  <div class="embedded-poster">
-    <img src="hinh/m20-v2-01-m20-ultra-v2-x2-nguon-sang-cos-pha.webp" alt="M20 Ultra V2 - X2 nguồn sáng Cos/Pha" loading="lazy">
+  <h2>6 điểm nổi bật của Titan Moto M20 Ultra V2</h2>
+  <p>Là dòng <a href="https://auto365.vn/den-gam-dang-roi">đèn gầm dạng rời</a>, M20 Ultra V2 cho phép linh hoạt hơn về vị trí lắp so với cụm đèn tích hợp cố định. Dưới đây là các điểm nổi bật chính; xem thông số đầy đủ ở bảng bên dưới.</p>
+  <div class="feature-scroll hscroll-row">
+    <div class="feature-scroll-card">
+      <img src="hinh/m20-v2-01-m20-ultra-v2-x2-nguon-sang-cos-pha.webp" alt="M20 Ultra V2 - X2 nguồn sáng Cos/Pha" loading="lazy">
+      <div class="feature-scroll-body"><strong>X2 nguồn sáng Cos/Pha</strong><p>LED Cos 3+3, Pha 3+3. Cos khoảng 50W/đèn, Pha khoảng 70W/đèn theo thông tin sản phẩm.</p></div>
+    </div>
+    <div class="feature-scroll-card">
+      <img src="hinh/m20-v2-02-m20-ultra-v2-thau-kinh-nguyen-khoi-phu-ar.webp" alt="M20 Ultra V2 - Thấu kính nguyên khối phủ AR" loading="lazy">
+      <div class="feature-scroll-body"><strong>Lens AR nguyên khối, 2 chóa chiếu thẳng</strong><p>Thấu kính liền khối, lens xanh AR tràn viền, kết hợp 2 chóa phản xạ chiếu thẳng.</p></div>
+    </div>
+    <div class="feature-scroll-card">
+      <img src="hinh/m20-v2-03-m20-ultra-v2-3-phien-ban-nhiet-mau.webp" alt="M20 Ultra V2 - 3 phiên bản nhiệt màu" loading="lazy">
+      <div class="feature-scroll-body"><strong>3 tùy chọn nhiệt màu</strong><p>Cos 4800K/Pha 3000K, Cos 5500K/Pha 3000K, hoặc Cos 5500K/Pha 5500K — chọn theo điều kiện sử dụng.</p></div>
+    </div>
+    <div class="feature-scroll-card">
+      <img src="hinh/m20-v2-04-m20-ultra-v2-he-thong-tan-nhiet-toi-uu.webp" alt="M20 Ultra V2 - Hệ thống tản nhiệt tối ưu" loading="lazy">
+      <div class="feature-scroll-body"><strong>Tản nhiệt 2 quạt + body Aluminum</strong><p>Hai quạt kết hợp thân nhôm hỗ trợ thoát nhiệt; hiệu quả thực tế phụ thuộc vị trí lắp và độ thoáng.</p></div>
+    </div>
+    <div class="feature-scroll-card">
+      <img src="hinh/m20-v2-05-m20-ultra-v2-chuan-chong-nuoc-ip68.webp" alt="M20 Ultra V2 - Chuẩn chống nước IP68" loading="lazy">
+      <div class="feature-scroll-body"><strong>IP68 theo công bố</strong><p>Khả năng bảo vệ thực tế sau thi công còn phụ thuộc giắc kết nối và vị trí lắp đặt.</p></div>
+    </div>
+    <div class="feature-scroll-card">
+      <img src="hinh/m20-v2-06-m20-ultra-v2-kich-thuoc-ky-thuat.webp" alt="M20 Ultra V2 - Kích thước kỹ thuật" loading="lazy">
+      <div class="feature-scroll-body"><strong>Kích thước kỹ thuật</strong><p>Xem chi tiết các số đo tham khảo trên hình.</p></div>
+    </div>
   </div>
-  <details class="accordion">
-    <summary>Chi tiết X2 nguồn sáng Cos/Pha</summary>
-    <p>Titan Moto M20 Ultra V2 sử dụng cấu hình <strong>X2 nguồn sáng Cos/Pha</strong> với LED Cos 3+3 và Pha 3+3 theo thông tin sản phẩm.</p>
-    <p>Theo tài liệu kỹ thuật, công suất tham khảo là <strong>Cos khoảng 50W/đèn</strong> và <strong>Pha khoảng 70W/đèn</strong>. Bộ sản phẩm gồm hai đèn.</p>
-  </details>
 </section>
-
 
 <section class="panel soft" id="video-m20">
   <div class="pill">Video thực tế</div>
   <h2>Video Titan Moto M20 Ultra V2</h2>
-  <p>Xem trực tiếp sản phẩm và các đặc điểm nổi bật trước khi đi vào các phần kỹ thuật chi tiết bên dưới.</p>
+  <p>Xem trực tiếp sản phẩm và các đặc điểm nổi bật trước khi xem thông số chi tiết bên dưới.</p>
 
   <div class="video-wrap">
     <div class="video-ratio">
@@ -1788,94 +1847,6 @@ tr:last-child td{border-bottom:0}
     <div class="video-caption">Video tham khảo về Titan Moto M20 Ultra V2.</div>
   </div>
 </section>
-
-<section class="panel soft" id="lens-ar">
-  <h2>Thấu kính liền khối công nghệ AR</h2>
-  <div class="embedded-poster">
-    <img src="hinh/m20-v2-02-m20-ultra-v2-thau-kinh-nguyen-khoi-phu-ar.webp" alt="M20 Ultra V2 - Thấu kính nguyên khối phủ AR" loading="lazy">
-  </div>
-  <div class="cards-2">
-    <div class="mini-card">
-      <span class="mini-tag">LENS</span>
-      <strong>Lens xanh AR nguyên khối tràn viền</strong>
-      <p>M20 Ultra V2 được giới thiệu với điểm nhấn là thấu kính liền khối và lens xanh AR nguyên khối tràn viền.</p>
-    </div>
-    <div class="mini-card">
-      <span class="mini-tag">QUANG HỌC</span>
-      <strong>2 chóa phản xạ chiếu thẳng</strong>
-      <p>Sản phẩm sử dụng 2 chóa phản xạ chiếu thẳng, hỗ trợ hoàn thiện cụm đèn theo định hướng của Titan Moto.</p>
-    </div>
-  </div>
-</section>
-
-<section class="panel soft" id="nhiet-mau">
-  <h2>3 tùy chọn nhiệt màu</h2>
-  <div class="embedded-poster">
-    <img src="hinh/m20-v2-03-m20-ultra-v2-3-phien-ban-nhiet-mau.webp" alt="M20 Ultra V2 - 3 phiên bản nhiệt màu" loading="lazy">
-  </div>
-  <details class="accordion">
-    <summary>Chi tiết 3 tùy chọn nhiệt màu</summary>
-    <p>Titan Moto M20 Ultra V2 có 3 tùy chọn nhiệt màu gồm <strong>Cos 4800K / Pha 3000K</strong>, <strong>Cos 5500K / Pha 3000K</strong> và <strong>Cos 5500K / Pha 5500K</strong>.</p>
-    <p>Người dùng có thể cân nhắc cấu hình phù hợp theo nhu cầu quan sát, môi trường sử dụng và điều kiện thời tiết thường gặp.</p>
-  </details>
-</section>
-
-
-
-<section class="panel" id="tan-nhiet">
-  <h2>Hệ thống tản nhiệt 2 quạt</h2>
-  <div class="embedded-poster">
-    <img src="hinh/m20-v2-04-m20-ultra-v2-he-thong-tan-nhiet-toi-uu.webp" alt="M20 Ultra V2 - Hệ thống tản nhiệt tối ưu" loading="lazy">
-  </div>
-  <details class="accordion">
-    <summary>Chi tiết hệ thống tản nhiệt 2 quạt và body Aluminum</summary>
-    <p>M20 Ultra V2 sử dụng hệ thống tản nhiệt gồm <strong>2 quạt và body Aluminum</strong>. Hai quạt kết hợp thân nhôm hỗ trợ thoát nhiệt trong quá trình hoạt động của cụm đèn.</p>
-    <p>Hiệu quả tản nhiệt thực tế còn phụ thuộc vào không gian lắp đặt, độ thoáng phía sau đèn, vị trí gắn và điều kiện vận hành.</p>
-  </details>
-</section>
-
-<section class="panel soft" id="ip68">
-  <h2>IP68 theo công bố</h2>
-  <div class="embedded-poster">
-    <img src="hinh/m20-v2-05-m20-ultra-v2-chuan-chong-nuoc-ip68.webp" alt="M20 Ultra V2 - Chuẩn chống nước IP68" loading="lazy">
-  </div>
-  <details class="accordion">
-    <summary>Chi tiết chống nước IP68 theo công bố</summary>
-    <p>Theo công bố sản phẩm Titan Moto M20 Ultra V2, sản phẩm có thông tin chống nước <strong>IP68</strong>.</p>
-    <p>Đây là thông số được công bố cho cụm sản phẩm; khả năng bảo vệ thực tế sau thi công còn phụ thuộc vào giắc kết nối, phương án đi dây và vị trí lắp đặt.</p>
-  </details>
-</section>
-<section class="panel" id="dang-roi">
-  <h2>Thiết kế đèn gầm dạng rời linh hoạt vị trí lắp</h2>
-  <p>Titan Moto M20 Ultra V2 được định hướng là dòng <a href="https://auto365.vn/den-gam-dang-roi">đèn gầm dạng rời</a>, cho phép có thêm phương án bố trí tùy theo thiết kế từng phương tiện. So với các cụm đèn tích hợp cố định, dạng đèn rời giúp việc lựa chọn vị trí lắp đặt có thể linh hoạt hơn.</p>
-</section>
-
-
-<section class="panel soft" id="kich-thuoc">
-  <h2>Kích thước kỹ thuật</h2>
-  <div class="embedded-poster">
-    <img src="hinh/m20-v2-06-m20-ultra-v2-kich-thuoc-ky-thuat.webp" alt="M20 Ultra V2 - Kích thước kỹ thuật" loading="lazy">
-  </div>
-  <p class="poster-note">Hình trên thể hiện các kích thước tham khảo được trình bày trực quan cho cụm đèn M20 Ultra V2.</p>
-</section>
-
-
-
-
-<section class="panel cta-simple" id="cta-tu-van">
-  <div class="cta-simple-bar">
-    <div class="cta-simple-copy">
-      <h3>Cần kiểm tra xe trước khi chốt?</h3>
-      <p>Auto365 sẽ đối chiếu cụm đèn, hệ thống điện, phương án lắp và chi phí trước khi thi công.</p>
-    </div>
-    <div class="cta-simple-actions">
-      <a class="cta-simple-btn primary" href="https://zalo.me/3622666363345050913"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H8l-4 4V4Z"/></svg><span class="cta-text">Nhắn Zalo để tư vấn</span><span class="cta-short">Zalo</span></a>
-      <a class="cta-simple-btn secondary" href="tel:0365365911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg><span class="cta-text">Gọi 0365 365 911</span><span class="cta-short">Gọi</span></a>
-      <a class="cta-simple-btn branch" href="https://auto365.vn/chi-nhanh"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-7.2 7-12a7 7 0 1 0-14 0c0 4.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg><span class="cta-text">Xem chi nhánh</span><span class="cta-short">Chi nhánh</span></a>
-    </div>
-  </div>
-</section>
-
 
 <section class="panel" id="thong-so">
   <div class="pill">Dữ liệu sản phẩm</div>
@@ -1964,9 +1935,9 @@ tr:last-child td{border-bottom:0}
 <section class="panel soft">
   <h2>Lưu ý trước khi lắp M20 Ultra V2</h2>
   <div class="checks hscroll-row">
-    <div class="check"><div class="check-num">1</div><strong>Hệ thống điện</strong><p>Dải điện áp công bố 12–16V không thay thế bước kiểm tra nguồn, dây, giắc và cảnh báo lỗi trên xe.</p></div>
-    <div class="check"><div class="check-num">2</div><strong>Vị trí lắp & pát</strong><p>Cần kiểm tra khoảng hở, độ chắc, pát chuyển đổi và không gian cho hệ thống tản nhiệt.</p></div>
-    <div class="check"><div class="check-num">3</div><strong>Góc chiếu sau lắp</strong><p>Kiểm tra Cos/Pha, độ cao và mặt cắt sáng để hạn chế chói và đưa vùng sáng về vị trí phù hợp.</p></div>
+    <div class="check"><strong>Hệ thống điện</strong><p>Dải điện áp công bố 12–16V không thay thế bước kiểm tra nguồn, dây, giắc và cảnh báo lỗi trên xe.</p></div>
+    <div class="check"><strong>Vị trí lắp & pát</strong><p>Cần kiểm tra khoảng hở, độ chắc, pát chuyển đổi và không gian cho hệ thống tản nhiệt.</p></div>
+    <div class="check"><strong>Góc chiếu sau lắp</strong><p>Kiểm tra Cos/Pha, độ cao và mặt cắt sáng để hạn chế chói và đưa vùng sáng về vị trí phù hợp.</p></div>
   </div>
 </section>
 
