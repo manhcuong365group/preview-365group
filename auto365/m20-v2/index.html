@@ -2250,5 +2250,40 @@ tr:last-child td{border-bottom:0}
   "publisher":{"@id":"https://auto365.vn/#organization"}
 }
 </script>
+<script>
+(function(){
+  function initAutoScroll(el){
+    if (el.dataset.autoscrollInit) return;
+    if (el.scrollWidth <= el.clientWidth + 4) return;
+    el.dataset.autoscrollInit = "1";
+    var timer = null;
+    function tick(){
+      var maxScroll = el.scrollWidth - el.clientWidth;
+      var next = el.scrollLeft + el.clientWidth * 0.66;
+      if (next >= maxScroll - 4) {
+        el.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        el.scrollTo({ left: next, behavior: "smooth" });
+      }
+    }
+    function stop(){
+      if (timer) { clearInterval(timer); timer = null; }
+    }
+    el.addEventListener("pointerdown", stop, { passive: true });
+    el.addEventListener("touchstart", stop, { passive: true });
+    el.addEventListener("wheel", stop, { passive: true });
+    timer = setInterval(tick, 3200);
+  }
+  function start(){
+    document.querySelectorAll(".hscroll-row").forEach(initAutoScroll);
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+  window.addEventListener("resize", start);
+})();
+</script>
 </body>
 </html>
