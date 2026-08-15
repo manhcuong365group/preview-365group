@@ -178,14 +178,13 @@
 
   /* Cụm chuyển đổi 4 trang trong cluster phim cách nhiệt */
   .cluster-switch{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
-  .cluster-switch a,.cluster-switch .current,.cluster-switch .planned{padding:14px 15px;border-radius:16px;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:inherit;transition:border-color .18s ease;min-width:0}
+  .cluster-switch a,.cluster-switch .current{padding:14px 15px;border-radius:16px;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:inherit;transition:border-color .18s ease;min-width:0}
   .cluster-switch a:hover{border-color:#bdc3c9}
   .cluster-switch .kicker-sm{font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
   .cluster-switch b{font-size:13px;margin-top:2px;line-height:1.25}
   .cluster-switch small{font-size:10.5px;color:var(--muted);margin-top:2px;line-height:1.35}
   .cluster-switch .current{border-color:#efc9cb;background:var(--red-soft);box-shadow:inset 4px 0 0 var(--red)}
   .cluster-switch .current .kicker-sm{color:var(--red-dark)}
-  .cluster-switch .planned{opacity:.6;cursor:default}
   @media(max-width:720px){
     .cluster-switch{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:8px;padding-bottom:4px}
     .cluster-switch::-webkit-scrollbar{display:none}
@@ -317,7 +316,7 @@
 <nav class="cluster-switch" aria-label="Các trang trong cụm phim cách nhiệt">
   <span class="current"><span class="kicker-sm">Đang xem</span><b>Chọn theo xe & thông số</b><small>Chọn phim, công nghệ, thông số, thương hiệu và bằng chứng</small></span>
   <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m"><span class="kicker-sm">Dòng phim đang triển khai</span><b>Cấu hình & giá</b><small>Mã phim, gói và bảo hành theo dòng Auto365 đang thi công</small></a>
-  <span class="planned" aria-disabled="true"><span class="kicker-sm">Sắp có</span><b>Quy định pháp lý</b><small>Đọc đúng Thông tư 48/2024, QCVN 32:2024 và ranh giới của chúng</small></span>
+  <a href="https://auto365.vn/quy-dinh-dan-phim-cach-nhiet-o-to"><span class="kicker-sm">Bài chuyên sâu</span><b>Quy định pháp lý</b><small>Đọc đúng Thông tư 48/2024, QCVN 32:2024 và ranh giới của chúng</small></a>
   <a href="https://auto365.vn/tser-irer-irr-nghia-la-gi-va-chi-so-nao-quyet-dinh-chong-nong-tot-nhat"><span class="kicker-sm">Bài chuyên sâu</span><b>TSER, IRER, IRR nghĩa là gì?</b><small>Ý nghĩa từng chỉ số và chỉ số nào quyết định chống nóng</small></a>
 </nav>
 <div class="trust-row" role="list" aria-label="Bốn nguyên tắc dữ liệu">
@@ -508,7 +507,7 @@
     <section id="evidence" aria-labelledby="evidence-title">
       <div class="section-head"><div><span class="kicker">Nguồn và trách nhiệm nội dung</span><h2 id="evidence-title">Vì sao tin được nội dung trên trang này?</h2><p>Mỗi thông tin quan trọng đều có nguồn truy ngược được, có người chịu trách nhiệm và có phạm vi kết luận rõ. Ba lớp dữ liệu — tài liệu nhà sản xuất, giá/bảo hành thương mại và số đo trên xe thực tế — được tách riêng, không trộn lẫn.</p></div><span class="section-meta">Kiểm tra nguồn gần nhất: 13/08/2026</span></div>
       <div class="knowledge-grid">
-        <article class="card knowledge-card" data-claim-id="CLM-LEGAL-001" data-source-id="SRC-VN-QCVN32-001"><span class="tag red">Pháp lý</span><h3>Quy chuẩn hiện hành nói về kính, không nói về phim dán</h3><p>Thông tư 48/2024/TT-BGTVT ban hành QCVN 32:2024/BGTVT về kính an toàn, áp dụng cho sản xuất lắp ráp và nhập khẩu xe mới — không có điều khoản nào về phim dán hậu mãi. Trang này chỉ dẫn nguồn đúng phạm vi, không tự suy ngưỡng và không kết luận thay cơ quan quản lý.</p></article>
+        <article class="card knowledge-card" data-claim-id="CLM-LEGAL-001" data-source-id="SRC-VN-QCVN32-001"><span class="tag red">Pháp lý</span><h3>Quy chuẩn hiện hành nói về kính, không nói về phim dán</h3><p>Thông tư 48/2024/TT-BGTVT ban hành QCVN 32:2024/BGTVT về kính an toàn, áp dụng cho sản xuất lắp ráp và nhập khẩu xe mới — không có điều khoản nào về phim dán hậu mãi. Trang này chỉ dẫn nguồn đúng phạm vi, không tự suy ngưỡng và không kết luận thay cơ quan quản lý. Đọc sâu hơn: <a href="https://auto365.vn/quy-dinh-dan-phim-cach-nhiet-o-to">Quy định dán phim cách nhiệt ô tô — đọc đúng nguồn, đúng phạm vi</a>.</p></article>
         <article class="card knowledge-card" data-claim-id="CLM-WAR-001" data-source-id="SRC-3M-WARRANTY-CARD-001"><span class="tag">Bảo hành</span><h3>Một phiếu bảo hành chỉ có giá trị khi tra cứu được</h3><p>Phiếu cần đủ: mã phim từng vị trí kính, số lô/seri, ngày và đơn vị thi công, hóa đơn và kênh xác thực. Điều khoản bảo hành mô tả hành vi vật liệu (không nứt, không bong, giữ màu), không cam kết duy trì một con số VLT hay TSER. Thời hạn cụ thể do từng hãng công bố.</p></article>
         <article class="card knowledge-card" data-claim-id="CLM-TEST-001" data-source-id="SRC-EWFA-VLT-001"><span class="tag green">Đo kiểm</span><h3>Máy đo tại điểm thi công đo hệ kính + phim, không đo riêng phim</h3><p>Số đo hiện trường không so trực tiếp được với thông số film-only trong tài liệu hãng, và cần đọc với dung sai (EWFA khuyến nghị ±7 điểm phần trăm). Bằng chứng về mã phim nằm ở chuỗi hồ sơ: TDS đúng mã, số seri và phiếu bảo hành tra cứu được — không phải một con số đo đơn lẻ.</p></article>
       </div>
