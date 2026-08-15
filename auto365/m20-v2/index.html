@@ -116,6 +116,50 @@ a{text-decoration:none;color:inherit}
 .breadcrumb a{color:#6d4b97;text-decoration:none}
 .breadcrumb a:hover{text-decoration:underline}
 
+.hero-product{
+  display:grid;
+  grid-template-columns:220px 1fr;
+  gap:22px;
+  align-items:center;
+  margin:4px 2px 18px;
+  padding:18px;
+  border:1px solid var(--lav-4);
+  border-radius:20px;
+  background:linear-gradient(145deg,#fff,#fbf7fe);
+  box-shadow:var(--shadow);
+}
+.hero-media{
+  border-radius:14px;
+  overflow:hidden;
+  background:#140e1d;
+}
+.hero-media img{display:block;width:100%;aspect-ratio:3/2;object-fit:contain}
+.hero-price{
+  font-size:26px;
+  font-weight:800;
+  color:var(--purple-2);
+  margin:0;
+  line-height:1.25;
+}
+.hero-price span{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-top:2px}
+.hero-configs{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 16px}
+.hero-chip{
+  display:inline-flex;
+  border:1px solid var(--lav-4);
+  border-radius:999px;
+  padding:5px 11px;
+  font-size:12px;
+  font-weight:700;
+  color:var(--purple);
+  background:#fff;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:8px}
+@media(max-width:680px){
+  .hero-product{grid-template-columns:1fr;padding:14px;gap:14px}
+  .hero-price{font-size:21px}
+  .hero-chip{font-size:11px}
+}
+
 /* Quick answer */
 .quick{
   background:
@@ -1672,6 +1716,24 @@ tr:last-child td{border-bottom:0}
   <p>Nội dung tổng hợp từ tài liệu sản phẩm Titan Moto M20 Ultra V2, đối chiếu bởi cố vấn kỹ thuật Auto365.vn – Trụ Sở Chính.</p>
 </header>
 
+<section class="hero-product" aria-label="Tóm tắt sản phẩm">
+  <div class="hero-media">
+    <img src="hinh/m20-v2-01-m20-ultra-v2-x2-nguon-sang-cos-pha.webp" alt="Titan Moto M20 Ultra V2" loading="eager">
+  </div>
+  <div class="hero-body">
+    <p class="hero-price">4.500.000 VNĐ<span>/bộ 2 đèn, chưa VAT · Bảo hành 18 tháng</span></p>
+    <div class="hero-configs">
+      <span class="hero-chip">Cos 5500K / Pha 5500K</span>
+      <span class="hero-chip">Cos 4800K / Pha 3000K</span>
+      <span class="hero-chip">Cos 5500K / Pha 3000K</span>
+    </div>
+    <div class="hero-cta">
+      <a class="cta-simple-btn primary" href="https://zalo.me/3622666363345050913"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v12H8l-4 4V4Z"/></svg><span class="cta-text">Nhắn Zalo để tư vấn</span><span class="cta-short">Zalo</span></a>
+      <a class="cta-simple-btn secondary" href="tel:0365365911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6.6 10.8a15.9 15.9 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8Z"/></svg><span class="cta-text">Gọi 0365 365 911</span><span class="cta-short">Gọi</span></a>
+    </div>
+  </div>
+</section>
+
 <section class="panel quick quick-answer">
   <div class="quick-answer-box">
   <div class="pill">
@@ -1980,9 +2042,10 @@ tr:last-child td{border-bottom:0}
   <details><summary>4. M20 Ultra V2 có mấy tùy chọn nhiệt màu?</summary><p>Sản phẩm có 3 tùy chọn nhiệt màu gồm 5500K/5500K, 4800K/3000K và 5500K/3000K. Nhiệt màu được hiểu theo thứ tự Cos/Pha.</p></details>
   <details><summary>5. Titan Moto M20 Ultra V2 có chống nước không?</summary><p>Theo công bố sản phẩm, Titan Moto M20 Ultra V2 có thông tin chống nước IP68. Tuy nhiên, khả năng bảo vệ của toàn bộ hệ thống sau thi công còn phụ thuộc giắc kết nối, dây, relay, điểm nối, vị trí lắp và chất lượng thi công.</p></details>
   <details><summary>6. Titan Moto M20 Ultra V2 được bảo hành bao lâu?</summary><p>M20 Ultra V2 áp dụng thời hạn bảo hành 18 tháng theo chính sách sản phẩm tại thời điểm mua và các điều kiện bảo hành đi kèm.</p></details>
-  <details><summary>7. Lắp M20 Ultra V2 có đăng kiểm được không?</summary><p>Việc lắp và sử dụng đèn bổ sung cần được đối chiếu theo loại phương tiện, vị trí lắp, đặc tính ánh sáng, hiện trạng xe và quy định đang áp dụng tại thời điểm kiểm định, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026). Nội dung tư vấn không thay thế kết luận của cơ quan có thẩm quyền.</p></details>
-  <details><summary>8. Lắp Titan Moto M20 Ultra V2 có cần kiểm tra xe trước không?</summary><p>Có. Trước khi lắp, kỹ thuật viên nên kiểm tra vị trí gắn, khoảng hở, pát, giắc, hệ thống điện, công tắc và góc chiếu. Đây là cơ sở để xác định phương án lắp phù hợp và báo chi phí hoàn thiện rõ ràng hơn.</p></details>
-  <details><summary>9. Lắp đèn gầm dạng rời có cần căn chỉnh góc chiếu không?</summary><p>Có. Sau khi lắp cần căn chỉnh Cos/Pha, kiểm tra độ cao vùng sáng, mặt cắt sáng và hướng chiếu. Góc chiếu quá cao có thể gây chói cho phương tiện đối diện, trong khi góc quá thấp có thể làm giảm vùng quan sát.</p></details>
+  <details><summary>7. Lắp M20 Ultra V2 trên ô tô có đăng kiểm được không?</summary><p>Với ô tô, việc kiểm định phụ thuộc vị trí lắp, góc chiếu, phương án thi công, hiện trạng xe và quy định áp dụng tại thời điểm kiểm định, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026). Không thể khẳng định chung cho mọi xe; nội dung tư vấn không thay thế kết luận của cơ quan có thẩm quyền.</p></details>
+  <details><summary>8. Lắp M20 Ultra V2 trên xe máy có vi phạm quy định khi lưu thông không?</summary><p>Với xe máy, chủ xe cần sử dụng đèn đúng mục đích, không chiếu gây chói, không lắp ở vị trí gây nguy hiểm hoặc ảnh hưởng phương tiện khác. Việc xử lý khi lưu thông phụ thuộc hiện trạng lắp đặt, cách sử dụng và quy định áp dụng tại thời điểm kiểm tra, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026).</p></details>
+  <details><summary>9. Lắp Titan Moto M20 Ultra V2 có cần kiểm tra xe trước không?</summary><p>Có. Trước khi lắp, kỹ thuật viên nên kiểm tra vị trí gắn, khoảng hở, pát, giắc, hệ thống điện, công tắc và góc chiếu. Đây là cơ sở để xác định phương án lắp phù hợp và báo chi phí hoàn thiện rõ ràng hơn.</p></details>
+  <details><summary>10. Lắp đèn gầm dạng rời có cần căn chỉnh góc chiếu không?</summary><p>Có. Sau khi lắp cần căn chỉnh Cos/Pha, kiểm tra độ cao vùng sáng, mặt cắt sáng và hướng chiếu. Góc chiếu quá cao có thể gây chói cho phương tiện đối diện, trong khi góc quá thấp có thể làm giảm vùng quan sát.</p></details>
 </section>
 
 
@@ -2090,7 +2153,8 @@ tr:last-child td{border-bottom:0}
     {"@type":"Question","name":"M20 Ultra V2 có mấy tùy chọn nhiệt màu?","acceptedAnswer":{"@type":"Answer","text":"Sản phẩm có 3 tùy chọn nhiệt màu gồm 5500K/5500K, 4800K/3000K và 5500K/3000K, theo thứ tự Cos/Pha."}},
     {"@type":"Question","name":"Titan Moto M20 Ultra V2 có chống nước không?","acceptedAnswer":{"@type":"Answer","text":"Theo công bố sản phẩm, M20 Ultra V2 có thông tin chống nước IP68. Khả năng bảo vệ thực tế sau thi công còn phụ thuộc giắc kết nối, dây, relay và chất lượng thi công."}},
     {"@type":"Question","name":"Titan Moto M20 Ultra V2 được bảo hành bao lâu?","acceptedAnswer":{"@type":"Answer","text":"M20 Ultra V2 áp dụng thời hạn bảo hành 18 tháng theo chính sách sản phẩm tại thời điểm mua."}},
-    {"@type":"Question","name":"Lắp M20 Ultra V2 có đăng kiểm được không?","acceptedAnswer":{"@type":"Answer","text":"Việc lắp và sử dụng đèn bổ sung cần đối chiếu theo loại phương tiện, vị trí lắp, đặc tính ánh sáng, hiện trạng xe và quy định áp dụng tại thời điểm kiểm định, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026)."}},
+    {"@type":"Question","name":"Lắp M20 Ultra V2 trên ô tô có đăng kiểm được không?","acceptedAnswer":{"@type":"Answer","text":"Với ô tô, việc kiểm định phụ thuộc vị trí lắp, góc chiếu, phương án thi công, hiện trạng xe và quy định áp dụng tại thời điểm kiểm định, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026). Không thể khẳng định chung cho mọi xe."}},
+    {"@type":"Question","name":"Lắp M20 Ultra V2 trên xe máy có vi phạm quy định khi lưu thông không?","acceptedAnswer":{"@type":"Answer","text":"Với xe máy, chủ xe cần sử dụng đèn đúng mục đích, không chiếu gây chói, không lắp ở vị trí gây nguy hiểm hoặc ảnh hưởng phương tiện khác. Việc xử lý khi lưu thông phụ thuộc hiện trạng lắp đặt, cách sử dụng và quy định áp dụng tại thời điểm kiểm tra, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026)."}},
     {"@type":"Question","name":"Lắp Titan Moto M20 Ultra V2 có cần kiểm tra xe trước không?","acceptedAnswer":{"@type":"Answer","text":"Có. Trước khi lắp cần kiểm tra vị trí gắn, khoảng hở, pát, giắc, hệ thống điện, công tắc và góc chiếu để xác định phương án lắp phù hợp."}},
     {"@type":"Question","name":"Lắp đèn gầm dạng rời có cần căn chỉnh góc chiếu không?","acceptedAnswer":{"@type":"Answer","text":"Có. Sau khi lắp cần căn chỉnh Cos/Pha, kiểm tra độ cao vùng sáng, mặt cắt sáng và hướng chiếu để hạn chế chói."}}
   ]
