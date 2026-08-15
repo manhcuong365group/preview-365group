@@ -15,6 +15,8 @@
 <meta property="og:image" content="https://preview-365group.pages.dev/m20-v2/hinh/m20-v2-01-m20-ultra-v2-x2-nguon-sang-cos-pha.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://preview-365group.pages.dev/m20-v2/hinh/m20-v2-01-m20-ultra-v2-x2-nguon-sang-cos-pha.webp">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Auto365.vn">
 <style>
 :root{
   --page:#f4f5f8;
@@ -111,6 +113,8 @@ a{text-decoration:none;color:inherit}
 .page-header{padding:20px 2px 4px}
 .page-header h1{margin:0 0 6px;color:var(--ink);font-size:30px;line-height:1.32;font-weight:700;letter-spacing:-.01em}
 .page-header p{margin:0;color:var(--muted);font-size:14px}
+.byline{margin-top:8px!important;font-size:12.5px!important;color:#8a8590!important}
+.byline strong{color:#6d4b97}
 @media(max-width:680px){.page-header h1{font-size:24px}}
 .breadcrumb{font-size:12.5px;color:var(--muted);margin:16px 2px 0}
 .breadcrumb a{color:#6d4b97;text-decoration:none}
@@ -1087,11 +1091,22 @@ tr:last-child td{border-bottom:0}
   .toc-grid{grid-template-columns:1fr}
   .dark-data{grid-template-columns:1fr 1fr}
   .cards-3.hscroll-row .mini-card,.checks.hscroll-row .check{flex:0 0 72%}
-  .feature-scroll.hscroll-row .feature-scroll-card{flex:0 0 62%}
-  .feature-scroll-card img{aspect-ratio:3/2}
-  .feature-scroll-body{padding:11px}
-  .feature-scroll-body strong{font-size:13px}
-  .feature-scroll-body p{font-size:11.5px}
+  .feature-scroll.hscroll-row{
+    display:grid;
+    grid-template-columns:none;
+    grid-auto-flow:column;
+    grid-template-rows:repeat(2,1fr);
+    grid-auto-columns:64%;
+    scroll-snap-type:x mandatory;
+  }
+  .feature-scroll.hscroll-row .feature-scroll-card{
+    scroll-snap-align:start;
+    min-width:0;
+  }
+  .feature-scroll-card img{aspect-ratio:16/9}
+  .feature-scroll-body{padding:10px 11px}
+  .feature-scroll-body strong{font-size:12.5px}
+  .feature-scroll-body p{font-size:11px}
   .mini-card strong{font-size:15px}
   .mini-card p{font-size:13px}
   #ai-nen-can-nhac .cards-2{gap:8px}
@@ -1714,6 +1729,7 @@ tr:last-child td{border-bottom:0}
 <header class="page-header">
   <h1>Đèn gầm Titan Moto M20 Ultra V2: Giá, thông số và lưu ý khi lắp</h1>
   <p>Nội dung tổng hợp từ tài liệu sản phẩm Titan Moto M20 Ultra V2, đối chiếu bởi cố vấn kỹ thuật Auto365.vn – Trụ Sở Chính.</p>
+  <p class="byline">Biên soạn: <strong>Auto365.vn – Trụ Sở Chính</strong> · Kiểm duyệt kỹ thuật: <strong>Nguyễn Quang Đạo</strong> · Cập nhật: <time datetime="2026-08-15">15/08/2026</time></p>
 </header>
 
 <section class="hero-product" aria-label="Tóm tắt sản phẩm">
@@ -1868,27 +1884,27 @@ tr:last-child td{border-bottom:0}
   <div class="feature-scroll hscroll-row">
     <div class="feature-scroll-card">
       <img src="hinh/m20-v2-01-m20-ultra-v2-x2-nguon-sang-cos-pha.webp" alt="M20 Ultra V2 - X2 nguồn sáng Cos/Pha" loading="lazy">
-      <div class="feature-scroll-body"><strong>X2 nguồn sáng Cos/Pha</strong><p>LED Cos 3+3, Pha 3+3. Tổng công suất một đèn: Cos khoảng 50W, Pha khoảng 70W theo thông tin sản phẩm.</p></div>
+      <div class="feature-scroll-body"><strong>X2 nguồn sáng Cos/Pha</strong><p>Cấu hình LED Cos 3+3 và Pha 3+3 trong cùng một module. Tổng công suất một đèn: Cos khoảng 50W, Pha khoảng 70W theo thông tin sản phẩm; bộ sản phẩm gồm hai đèn.</p></div>
     </div>
     <div class="feature-scroll-card">
       <img src="hinh/m20-v2-02-m20-ultra-v2-thau-kinh-nguyen-khoi-phu-ar.webp" alt="M20 Ultra V2 - Thấu kính nguyên khối phủ AR" loading="lazy">
-      <div class="feature-scroll-body"><strong>Lens AR nguyên khối, 2 chóa chiếu thẳng</strong><p>Thấu kính liền khối, lens xanh AR tràn viền, kết hợp 2 chóa phản xạ chiếu thẳng.</p></div>
+      <div class="feature-scroll-body"><strong>Lens AR nguyên khối, 2 chóa chiếu thẳng</strong><p>Điểm nhấn thiết kế là thấu kính liền khối và lens xanh AR nguyên khối tràn viền, kết hợp 2 chóa phản xạ chiếu thẳng hỗ trợ hoàn thiện cụm đèn theo định hướng của Titan Moto.</p></div>
     </div>
     <div class="feature-scroll-card">
       <img src="hinh/m20-v2-03-m20-ultra-v2-3-phien-ban-nhiet-mau.webp" alt="M20 Ultra V2 - 3 phiên bản nhiệt màu" loading="lazy">
-      <div class="feature-scroll-body"><strong>3 tùy chọn nhiệt màu</strong><p>Cos 4800K/Pha 3000K, Cos 5500K/Pha 3000K, hoặc Cos 5500K/Pha 5500K — chọn theo điều kiện sử dụng.</p></div>
+      <div class="feature-scroll-body"><strong>3 tùy chọn nhiệt màu</strong><p>Cos 4800K/Pha 3000K, Cos 5500K/Pha 3000K hoặc Cos 5500K/Pha 5500K — 3 phiên bản riêng biệt để chọn khi mua, phù hợp theo nhu cầu quan sát, môi trường và điều kiện thời tiết thường gặp.</p></div>
     </div>
     <div class="feature-scroll-card">
       <img src="hinh/m20-v2-04-m20-ultra-v2-he-thong-tan-nhiet-toi-uu.webp" alt="M20 Ultra V2 - Hệ thống tản nhiệt tối ưu" loading="lazy">
-      <div class="feature-scroll-body"><strong>Tản nhiệt 2 quạt + body Aluminum</strong><p>Hai quạt kết hợp thân nhôm hỗ trợ thoát nhiệt; hiệu quả thực tế phụ thuộc vị trí lắp và độ thoáng.</p></div>
+      <div class="feature-scroll-body"><strong>Tản nhiệt 2 quạt + body Aluminum</strong><p>Hai quạt kết hợp thân nhôm hỗ trợ thoát nhiệt trong quá trình đèn hoạt động. Hiệu quả thực tế còn phụ thuộc không gian lắp đặt, độ thoáng phía sau đèn, vị trí gắn và điều kiện vận hành.</p></div>
     </div>
     <div class="feature-scroll-card">
       <img src="hinh/m20-v2-05-m20-ultra-v2-chuan-chong-nuoc-ip68.webp" alt="M20 Ultra V2 - Chuẩn chống nước IP68" loading="lazy">
-      <div class="feature-scroll-body"><strong>IP68 theo công bố</strong><p>Khả năng bảo vệ thực tế sau thi công còn phụ thuộc giắc kết nối và vị trí lắp đặt.</p></div>
+      <div class="feature-scroll-body"><strong>IP68 theo công bố</strong><p>Đây là thông số được Titan Moto công bố cho cụm sản phẩm; khả năng bảo vệ thực tế của toàn hệ thống sau thi công còn phụ thuộc giắc kết nối, phương án đi dây và vị trí lắp đặt.</p></div>
     </div>
     <div class="feature-scroll-card">
       <img src="hinh/m20-v2-06-m20-ultra-v2-kich-thuoc-ky-thuat.webp" alt="M20 Ultra V2 - Kích thước kỹ thuật" loading="lazy">
-      <div class="feature-scroll-body"><strong>Kích thước kỹ thuật</strong><p>Xem chi tiết các số đo tham khảo trên hình.</p></div>
+      <div class="feature-scroll-body"><strong>Kích thước kỹ thuật</strong><p>Thiết kế dạng rời, kích thước gọn giúp linh hoạt hơn khi bố trí vị trí lắp so với cụm đèn tích hợp cố định. Xem số đo tham khảo trực quan trên hình.</p></div>
     </div>
   </div>
 </section>
@@ -2039,7 +2055,7 @@ tr:last-child td{border-bottom:0}
   <details><summary>1. Titan Moto M20 Ultra V2 là đèn gì?</summary><p>Titan Moto M20 Ultra V2 là đèn gầm dạng rời dùng để bổ sung ánh sáng cho ô tô và xe máy trong điều kiện thiếu sáng. Sản phẩm hướng đến người thường xuyên đi đêm, đi tour hoặc cần thêm nguồn sáng ở những khu vực có hệ thống chiếu sáng hạn chế.</p></details>
   <details><summary>2. Giá hoàn thiện Titan Moto M20 Ultra V2 gồm những gì?</summary><p>Giá niêm yết M20 Ultra V2 là 4.500.000 VNĐ/bộ 2 đèn, chưa VAT. Chi phí hoàn thiện có thể thay đổi theo vị trí lắp, pát chuyển đổi, giắc kết nối, dây, công tắc và công lắp trên từng xe.</p></details>
   <details><summary>3. M20 Ultra V2 có công suất bao nhiêu?</summary><p>Theo thông tin sản phẩm, M20 Ultra V2 có công suất Cos khoảng 50W/đèn và Pha khoảng 70W/đèn — đây là tổng công suất tiêu thụ của một đèn khi bật chế độ Pha, không phải công suất riêng của từng chip LED. Bộ sản phẩm gồm hai đèn. Hiệu quả thực tế sau lắp còn phụ thuộc vị trí gắn, hệ thống điện và quá trình căn chỉnh.</p></details>
-  <details><summary>4. M20 Ultra V2 có mấy tùy chọn nhiệt màu?</summary><p>Sản phẩm có 3 tùy chọn nhiệt màu gồm 5500K/5500K, 4800K/3000K và 5500K/3000K. Nhiệt màu được hiểu theo thứ tự Cos/Pha.</p></details>
+  <details><summary>4. M20 Ultra V2 có mấy tùy chọn nhiệt màu?</summary><p>Sản phẩm có 3 tùy chọn nhiệt màu gồm 5500K/5500K, 4800K/3000K và 5500K/3000K — đây là 3 phiên bản riêng biệt để chọn khi mua, không phải một đèn tự chuyển đổi 3 màu. Nhiệt màu được hiểu theo thứ tự Cos/Pha.</p></details>
   <details><summary>5. Titan Moto M20 Ultra V2 có chống nước không?</summary><p>Theo công bố sản phẩm, Titan Moto M20 Ultra V2 có thông tin chống nước IP68. Tuy nhiên, khả năng bảo vệ của toàn bộ hệ thống sau thi công còn phụ thuộc giắc kết nối, dây, relay, điểm nối, vị trí lắp và chất lượng thi công.</p></details>
   <details><summary>6. Titan Moto M20 Ultra V2 được bảo hành bao lâu?</summary><p>M20 Ultra V2 áp dụng thời hạn bảo hành 18 tháng theo chính sách sản phẩm tại thời điểm mua và các điều kiện bảo hành đi kèm.</p></details>
   <details><summary>7. Lắp M20 Ultra V2 trên ô tô có đăng kiểm được không?</summary><p>Với ô tô, việc kiểm định phụ thuộc vị trí lắp, góc chiếu, phương án thi công, hiện trạng xe và quy định áp dụng tại thời điểm kiểm định, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026). Không thể khẳng định chung cho mọi xe; nội dung tư vấn không thay thế kết luận của cơ quan có thẩm quyền.</p></details>
@@ -2150,7 +2166,7 @@ tr:last-child td{border-bottom:0}
     {"@type":"Question","name":"Titan Moto M20 Ultra V2 là đèn gì?","acceptedAnswer":{"@type":"Answer","text":"Titan Moto M20 Ultra V2 là đèn gầm dạng rời dùng để bổ sung ánh sáng cho ô tô và xe máy trong điều kiện thiếu sáng, hướng đến người thường xuyên đi đêm, đi tour hoặc cần thêm nguồn sáng."}},
     {"@type":"Question","name":"Giá hoàn thiện Titan Moto M20 Ultra V2 gồm những gì?","acceptedAnswer":{"@type":"Answer","text":"Giá niêm yết là 4.500.000 VNĐ/bộ 2 đèn, chưa VAT. Chi phí hoàn thiện có thể thay đổi theo vị trí lắp, pát chuyển đổi, giắc kết nối, dây, công tắc và công lắp trên từng xe."}},
     {"@type":"Question","name":"M20 Ultra V2 có công suất bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Theo thông tin sản phẩm, Cos khoảng 50W/đèn và Pha khoảng 70W/đèn — đây là tổng công suất tiêu thụ của một đèn khi bật chế độ Pha. Bộ sản phẩm gồm hai đèn."}},
-    {"@type":"Question","name":"M20 Ultra V2 có mấy tùy chọn nhiệt màu?","acceptedAnswer":{"@type":"Answer","text":"Sản phẩm có 3 tùy chọn nhiệt màu gồm 5500K/5500K, 4800K/3000K và 5500K/3000K, theo thứ tự Cos/Pha."}},
+    {"@type":"Question","name":"M20 Ultra V2 có mấy tùy chọn nhiệt màu?","acceptedAnswer":{"@type":"Answer","text":"Sản phẩm có 3 tùy chọn nhiệt màu gồm 5500K/5500K, 4800K/3000K và 5500K/3000K — đây là 3 phiên bản riêng biệt để chọn khi mua, theo thứ tự Cos/Pha."}},
     {"@type":"Question","name":"Titan Moto M20 Ultra V2 có chống nước không?","acceptedAnswer":{"@type":"Answer","text":"Theo công bố sản phẩm, M20 Ultra V2 có thông tin chống nước IP68. Khả năng bảo vệ thực tế sau thi công còn phụ thuộc giắc kết nối, dây, relay và chất lượng thi công."}},
     {"@type":"Question","name":"Titan Moto M20 Ultra V2 được bảo hành bao lâu?","acceptedAnswer":{"@type":"Answer","text":"M20 Ultra V2 áp dụng thời hạn bảo hành 18 tháng theo chính sách sản phẩm tại thời điểm mua."}},
     {"@type":"Question","name":"Lắp M20 Ultra V2 trên ô tô có đăng kiểm được không?","acceptedAnswer":{"@type":"Answer","text":"Với ô tô, việc kiểm định phụ thuộc vị trí lắp, góc chiếu, phương án thi công, hiện trạng xe và quy định áp dụng tại thời điểm kiểm định, trong đó có Thông tư 30/2026/TT-BXD (hiệu lực từ 01/07/2026). Không thể khẳng định chung cho mọi xe."}},
