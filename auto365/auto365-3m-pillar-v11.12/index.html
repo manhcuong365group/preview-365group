@@ -739,6 +739,23 @@ document.documentElement.classList.add("js");
     return "rare";
   }
 
+  // Dung chung cho FilmMatch va nut "Nhan bao gia" tren tung the goi (data-quote-pkg),
+  // de CTA truc tiep khong bo qua canh bao tuong thich nhu FilmMatch.
+  function packageIsCompatible(pkg) {
+    const brightSensitive = state.need === "night" || state.windshield === "bright" || effectiveNight() === "often";
+    const windshieldFits = !brightSensitive || (!pkg.windshield.includes("40") && pkg.id !== "ceramic-nr");
+    const needFits = state.need !== "premium" || pkg.fit.includes("premium");
+    return windshieldFits && needFits;
+  }
+
+  function packageCaution(pkg) {
+    if (packageIsCompatible(pkg)) return "";
+    const brightSensitive = state.need === "night" || state.windshield === "bright" || effectiveNight() === "often";
+    if (state.need === "premium" && !pkg.fit.includes("premium")) return "Không nằm trong nhóm cấu hình cao cấp anh/chị đang ưu tiên — hiển thị để so sánh mức giá.";
+    if (brightSensitive) return `Kính lái ${windshieldCode(pkg)} tối hơn mức ưu tiên khi hay đi đêm — cần xem mẫu phim thực tế trên kính xe trước khi dán.`;
+    return "Cần xem mẫu phim thực tế trên kính xe trước khi dán.";
+  }
+
   function windshieldCode(pkg) {
     const preferBright = state.windshield === "bright" || effectiveNight() === "often";
     if (pkg.windshield.includes("60 / CR BLK 50")) return preferBright ? "CR BLK 60" : "CR BLK 50";
@@ -969,8 +986,10 @@ document.documentElement.classList.add("js");
   function leadConfigText() {
     if (leadOverridePkg && !selectedLane) {
       const pkg = leadOverridePkg;
-      if (!vehicleChosen) return `${pkg.fullName} | Kính lái: ${pkg.windshield} | Sườn & lưng: ${pkg.body} | Giá theo model xe sẽ được xác nhận sau khi anh/chị điền thông tin xe.`;
-      return `${pkg.fullName} | Kính lái: ${pkg.windshield} | Sườn & lưng: ${pkg.body} | Giá tham khảo (${labels.group[state.group]}): ${formatDong(pkg.prices[state.group])}`;
+      const caution = packageCaution(pkg);
+      const cautionSuffix = caution ? ` | Lưu ý: ${caution}` : "";
+      if (!vehicleChosen) return `${pkg.fullName} | Kính lái: ${pkg.windshield} | Sườn & lưng: ${pkg.body} | Giá theo model xe sẽ được xác nhận sau khi anh/chị điền thông tin xe.${cautionSuffix}`;
+      return `${pkg.fullName} | Kính lái: ${pkg.windshield} | Sườn & lưng: ${pkg.body} | Giá tham khảo (${labels.group[state.group]}): ${formatDong(pkg.prices[state.group])}${cautionSuffix}`;
     }
     const lane = selectedLane?.pkg ? selectedLane : null;
     if (!lane) return "Chưa chọn phương án — bấm vào một thẻ phía trên để lấy cấu hình.";
