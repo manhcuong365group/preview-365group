@@ -542,7 +542,7 @@ h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-family:inherit}
 <div><dt>VLT</dt><dd>Độ sáng khi nhìn qua kính — càng cao kính càng sáng</dd></div>
 <div><dt>UVR</dt><dd>Mức chặn tia UV</dd></div>
 <div><dt>Giảm lóa</dt><dd>Mức hỗ trợ giảm chói theo điều kiện đo</dd></div>
-<div><dt>IRR</dt><dd>Chỉ số vùng năng lượng hồng ngoại theo dải đo của hãng — riêng chỉ số này đo trên phim và lớp lót, không có kính, khác điều kiện với 4 chỉ số còn lại (đo trên kính Auto 75)</dd></div>
+<div><dt>IRR</dt><dd>Tỷ lệ năng lượng hồng ngoại bị loại bỏ trong dải bước sóng 900–1.000 nm — đo trên phim và lớp lót, không có kính, khác điều kiện với 4 chỉ số còn lại (đo trên kính Auto 75)</dd></div>
 </dl>
 </div>
 <div class="rounded-2xl border bg-white p-5 md:p-6">
@@ -773,6 +773,16 @@ document.documentElement.classList.add("js");
   function track(event, payload = {}) {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event, price_version: PRICE_VERSION, standalone_html: true, ...payload });
+  }
+
+  // Phan loai loi thanh nhan an toan, khong day noi dung error.message tho (co the chua PII/stack trace) vao GTM.
+  function classifyErrorReason(error) {
+    if (error && error.name === "AbortError") return "timeout";
+    if (error instanceof TypeError) return "network_error";
+    const msg = String(error && error.message || "");
+    if (/^Lead submission returned \d+/.test(msg)) return "http_error";
+    if (/khong xac nhan|did not confirm/i.test(msg)) return "unconfirmed_response";
+    return "unknown_error";
   }
 
   function refreshResult() {
@@ -1411,7 +1421,7 @@ document.documentElement.classList.add("js");
       message.innerHTML = `<strong>Chưa gửi được lúc này</strong><p>${copied ? "Cấu hình đã được sao chép." : "Cấu hình được giữ ở ô bên dưới."} Anh/chị có thể gửi qua Zalo để Auto365 tiếp nhận yêu cầu tư vấn.</p><p><a href="${ZALO_URL}" target="_blank" rel="noopener noreferrer">Mở Zalo</a></p>`;
       submitButton.disabled = false;
       submitButton.textContent = originalLabel;
-      track("lead_submit_error", { configuration_id: configurationId, package_id: packageId, reason: "transport_error", message: String(error && error.message || error).slice(0, 140) });
+      track("lead_submit_error", { configuration_id: configurationId, package_id: packageId, reason: classifyErrorReason(error) });
     }
   }
 
