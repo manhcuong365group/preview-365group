@@ -541,20 +541,6 @@
       </div>
     </section>
 
-    <section class="section soft" id="scenario-map">
-      <div class="wrap">
-        <div class="section-head single">
-          <div><span class="eyebrow">Chọn nhanh</span><h2 class="h2">Bốn tình huống phổ biến và cấu hình đang ưu tiên</h2></div>
-        </div>
-        <div class="knowledge-grid">
-          <article class="knowledge-card"><span>Phố & ngoại ô · dưới 5 triệu</span><h3>X-Light F30 Ultra</h3><p>4.800.000 ₫/bộ · chưa VAT. Phủ gần rộng, bù Cos, phù hợp ngân sách hạn chế trong phố và ngoại ô.</p><a href="#selector">Kiểm tra lại với xe của bạn →</a></article>
-          <article class="knowledge-card"><span>Đường tỉnh hỗn hợp · 5–6 triệu</span><h3>Titan Moto M30 Ultra V2</h3><p>5.500.000 ₫/bộ · chưa VAT. Cân bằng vùng gần–xa, có 5 hồ sơ ô tô đã công bố.</p><a href="#selector">Kiểm tra lại với xe của bạn →</a></article>
-          <article class="knowledge-card"><span>Đường dài, đèo tối</span><h3>Titan Moto M40 Ultra V2</h3><p>6.500.000 ₫/bộ · chưa VAT. Ưu tiên chiều sâu, hỗ trợ cả hệ điện 12/24V, nhiều hồ sơ ô tô nhất trong nhóm.</p><a href="#selector">Kiểm tra lại với xe của bạn →</a></article>
-          <article class="knowledge-card"><span>Mưa, sương thường xuyên</span><h3>Titan Moto M30 Ultra V2</h3><p>5.500.000 ₫/bộ · chưa VAT. Phù hợp vùng gần trong điều kiện ẩm ướt, cùng lựa chọn với đường tỉnh hỗn hợp nhờ độ phủ rộng.</p><a href="#selector">Kiểm tra lại với xe của bạn →</a></article>
-        </div>
-      </div>
-    </section>
-
     <section class="section" id="benefits">
       <div class="wrap">
         <div class="section-head single">
@@ -583,7 +569,6 @@
           <article class="kelvin-card"><div class="kelvin-band"></div><div><b>5500K</b><span>Trắng sáng</span><p>Thường được cân nhắc trên đường khô, đô thị hoặc hành trình dài có điều kiện ổn định.</p></div></article>
           <article class="kelvin-card"><div class="kelvin-band"></div><div><b>6500K</b><span>Trắng lạnh</span><p>Thiên về tông sáng trắng và thẩm mỹ trên đường khô; không phải lựa chọn đầu tiên khi mưa, sương là điều kiện chính.</p></div></article>
         </div>
-        <p class="kelvin-note"><b>Nguyên tắc hub:</b> màu ấm không tự bù được beam sai, và màu trắng không tự đồng nghĩa sáng hơn. Kỹ thuật cần kiểm tra mặt cắt Cos, góc Pha, mặt đường và độ nhạy chói trước khi chốt.</p>
       </div>
     </section>
 
@@ -622,7 +607,7 @@
         </div>
         <div class="fitment-layout">
           <form class="fitment-form" id="fitmentForm">
-            <span class="eyebrow">Thông tin xe</span><h3>Nhập thông tin để kỹ thuật đối chiếu</h3><p class="fitment-form-copy">Chỉ cần dòng xe, hiện trạng cản, hệ điện và mẫu đang cân nhắc.</p>
+            <span class="eyebrow">Thông tin xe</span><h3>Nhập thông tin để kỹ thuật đối chiếu</h3>
             <div class="field-grid">
               <label class="field full"><span>Dòng xe / hồ sơ muốn đối chiếu</span><select id="fitmentVehicle"><option value="">Chọn xe</option><option value="byd-m6">BYD M6</option><option value="ford-ecosport">Ford EcoSport</option><option value="kia-sorento">Kia Sorento</option><option value="hyundai-tucson">Hyundai Tucson</option><option value="volkswagen-viloran">Volkswagen Viloran</option><option value="kia-carens">Kia Carens</option><option value="vinfast-vf8">VinFast VF8</option><option value="hyundai-elantra">Hyundai Elantra</option><option value="hyundai-stargazer">Hyundai Stargazer</option><option value="mitsubishi-destinator">Mitsubishi Destinator</option><option value="other">Xe khác</option></select></label>
               <label class="field full" id="fitmentOtherField" hidden><span>Hãng, dòng xe và phiên bản</span><input id="fitmentOtherVehicle" type="text" maxlength="100" placeholder="VD: Mazda CX-5 2.0 Premium"></label>
@@ -636,7 +621,7 @@
           <aside class="fitment-result" id="fitmentResult" aria-live="polite">
             <span class="eyebrow">Trạng thái kiểm tra xe</span>
             <h3 id="fitmentTitle" tabindex="-1">Cần dữ liệu xe để đối chiếu</h3>
-            <p id="fitmentCopy">Chọn dòng xe và hiện trạng cản. Nếu Auto365 có hồ sơ công khai, anh/chị sẽ xem được case tham khảo; nếu chưa có, có thể gửi ảnh đầu xe để kỹ thuật xem sơ bộ.</p>
+            <p id="fitmentCopy"></p>
             <div class="fitment-status"><strong id="fitmentBadge">Chưa bắt đầu</strong><p id="fitmentDetail">Kỹ thuật sẽ kiểm tra trước khi xác nhận khả năng lắp.</p></div>
             <div class="fitment-checks"><span>Đời & phiên bản cản</span><span>Điểm bắt pát</span><span>Điện áp & bảo vệ mạch</span><span>Khoan/cắt & hoàn nguyên</span></div>
             <div class="fitment-actions"><a class="btn light" id="fitmentPrimary" href="#booking">Gửi ảnh đầu xe để xác nhận</a><a class="btn secondary" id="fitmentCaseLink" target="_blank" rel="noopener" hidden>Xem hồ sơ nguồn ↗</a></div>
