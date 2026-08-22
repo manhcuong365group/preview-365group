@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bi Gầm | Auto365</title>
+  <meta name="description" content="Bi gầm ô tô chính hãng tại Auto365: chọn theo xe, kích thước hốc đèn, nhiệt màu, nhu cầu sử dụng và ngân sách.">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="canonical" href="https://auto365.vn/nang-cap-anh-sang-bi-gam">
+  <meta name="theme-color" content="#0d0f12">
+  <style>
+    :root{
+      --brand:#e31b2d;
+      --brand-dark:#b70f20;
+      --ink:#111318;
+      --muted:#646b76;
+      --line:#e5e7eb;
+      --soft:#f5f6f8;
+      --paper:#fff;
+      --dark:#0d0f12;
+      --dark-2:#171a20;
+      --amber:#f7b733;
+      --green:#14845c;
+      --shadow:0 18px 60px rgba(16,24,40,.10);
+      --shadow-sm:0 8px 24px rgba(16,24,40,.08);
+      --radius:22px;
+      --radius-sm:14px;
+      --max:1240px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:hidden}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--paper);
+      font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      line-height:1.55;
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
+    }
+    body.modal-open{overflow:hidden}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button,input,select{font:inherit}
+    button{cursor:pointer}
+    :focus-visible{outline:3px solid rgba(227,27,45,.32);outline-offset:3px}
+    .container{width:min(var(--max),calc(100% - 32px));margin-inline:auto}
+    .skip-link{position:fixed;left:12px;top:-80px;z-index:2000;background:#fff;padding:12px 16px;border-radius:10px;box-shadow:var(--shadow)}
+    .skip-link:focus{top:12px}
+    .demo-note{background:#fff3f4;color:#8f1422;border-bottom:1px solid #ffd5da;font-size:13px;text-align:center;padding:7px 12px}
+    .demo-note strong{font-weight:800}
+
+    /* Header */
+    .topline{background:var(--dark);color:#d7dae0;font-size:13px}
+    .topline .container{display:flex;align-items:center;justify-content:space-between;min-height:36px;gap:16px}
+    .topline-list{display:flex;gap:22px;align-items:center}
+    .topline a:hover{color:#fff}
+    .site-header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);border-bottom:1px solid rgba(229,231,235,.85)}
+    .header-row{height:72px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:28px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:950;letter-spacing:-1.2px;font-size:24px}
+    .brand-mark{width:38px;height:38px;border-radius:12px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:950;transform:skew(-8deg);box-shadow:0 8px 22px rgba(227,27,45,.25)}
+    .brand small{font-size:11px;letter-spacing:.1em;color:var(--muted);display:block;font-weight:800;margin-top:-4px}
+    .main-nav{display:flex;align-items:center;justify-content:center;gap:24px;font-size:14px;font-weight:750}
+    .main-nav a{padding:9px 0;position:relative;white-space:nowrap}
+    .main-nav a:after{content:"";position:absolute;left:0;right:100%;bottom:2px;height:2px;background:var(--brand);transition:.2s}
+    .main-nav a:hover:after,.main-nav a.active:after{right:0}
+    .header-actions{display:flex;align-items:center;gap:10px}
+    .icon-btn{width:42px;height:42px;border:1px solid var(--line);background:#fff;border-radius:13px;display:grid;place-items:center;color:var(--ink)}
+    .hotline-btn{display:flex;align-items:center;gap:9px;background:var(--brand);color:#fff;padding:11px 16px;border-radius:13px;font-weight:850;box-shadow:0 8px 22px rgba(227,27,45,.22)}
+    .hamburger{display:none}
+
+    /* Generic */
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;text-transform:uppercase;font-size:12px;letter-spacing:.12em;font-weight:900;color:var(--brand)}
+    .eyebrow:before{content:"";width:24px;height:2px;background:var(--brand)}
+    h1,h2,h3{line-height:1.13;letter-spacing:-.035em;margin:0}
+    h1{font-size:clamp(42px,6vw,76px);font-weight:950}
+    h2{font-size:clamp(30px,4vw,48px);font-weight:920}
+    h3{font-size:21px;font-weight:900}
+    p{margin:0}
+    .section{padding:84px 0}
+    .section-soft{background:var(--soft)}
+    .section-dark{background:var(--dark);color:#fff}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+    .section-copy{max-width:710px;color:var(--muted);font-size:17px;margin-top:14px}
+    .section-dark .section-copy{color:#b9bec8}
+    .btn{border:0;border-radius:14px;min-height:48px;padding:0 20px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:850;transition:.2s;white-space:nowrap}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--brand);color:#fff;box-shadow:0 10px 25px rgba(227,27,45,.25)}
+    .btn-primary:hover{background:var(--brand-dark)}
+    .btn-dark{background:var(--dark);color:#fff}
+    .btn-white{background:#fff;color:var(--ink)}
+    .btn-outline{background:#fff;border:1px solid var(--line);color:var(--ink)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.22);color:#fff}
+    .pill{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:850;background:#f1f3f5;color:#3d4450}
+    .pill-red{background:#fff0f2;color:#b70f20}
+    .pill-green{background:#e9f8f2;color:#0b7250}
+    .muted{color:var(--muted)}
+
+    /* Hero */
+    .breadcrumb{font-size:13px;color:#7a808b;padding:18px 0 8px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .breadcrumb a:hover{color:var(--brand)}
+    .hero{overflow:hidden;position:relative;background:linear-gradient(135deg,#fafafa 0%,#f4f5f7 55%,#eceef1 100%);border-bottom:1px solid var(--line)}
+    .hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-160px;top:-260px;background:radial-gradient(circle,rgba(227,27,45,.15),rgba(227,27,45,0) 68%)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:54px 0 66px;min-height:600px}
+    .hero-title:after{content:".";color:var(--brand)}
+    .hero-subtitle{font-size:clamp(20px,2.2vw,27px);font-weight:790;max-width:720px;margin-top:16px;letter-spacing:-.02em}
+    .hero-answer{max-width:710px;color:#505762;font-size:16px;margin-top:15px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .hero-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px;max-width:720px}
+    .hero-meta-item{display:flex;gap:10px;align-items:center;padding:13px 14px;background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.9);border-radius:14px;box-shadow:0 8px 24px rgba(16,24,40,.04);font-size:13px;font-weight:780}
+    .hero-meta-item b{display:block;font-size:14px}
+    .hero-icon{width:34px;height:34px;border-radius:11px;background:#fff0f2;color:var(--brand);display:grid;place-items:center;flex:none}
+    .hero-visual{position:relative;min-height:470px;display:grid;place-items:center}
+    .visual-card{position:relative;width:min(100%,520px);aspect-ratio:1/.89;border-radius:34px;background:linear-gradient(160deg,#14171c,#050607);box-shadow:0 30px 80px rgba(10,12,16,.28);overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+    .visual-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 20%,rgba(227,27,45,.24),transparent 32%),linear-gradient(145deg,transparent 35%,rgba(255,255,255,.04))}
+    .road{position:absolute;left:2%;right:2%;bottom:-11%;height:55%;background:linear-gradient(180deg,#2d3036,#111318);clip-path:polygon(35% 0,65% 0,100% 100%,0 100%)}
+    .road:before{content:"";position:absolute;left:49%;top:4%;bottom:0;width:2%;background:repeating-linear-gradient(to bottom,#ddd 0 18px,transparent 18px 38px);opacity:.55}
+    .beam{position:absolute;left:13%;right:13%;bottom:17%;height:44%;background:linear-gradient(180deg,rgba(255,242,183,.02),rgba(255,227,126,.48));clip-path:polygon(45% 0,55% 0,100% 100%,0 100%);filter:blur(2px)}
+    .car{position:absolute;left:50%;bottom:7%;transform:translateX(-50%);width:56%;height:30%;background:linear-gradient(160deg,#333840,#0e1014);border-radius:52% 52% 18% 18%/40% 40% 15% 15%;box-shadow:0 15px 30px rgba(0,0,0,.55)}
+    .car:before{content:"";position:absolute;left:14%;right:14%;top:15%;height:30%;background:#090b0e;border-radius:50% 50% 25% 25%;border:1px solid rgba(255,255,255,.08)}
+    .car:after{content:"";position:absolute;left:8%;right:8%;bottom:10%;height:22%;background:linear-gradient(90deg,#171a20,#2c3038 50%,#171a20);border-radius:10px}
+    .fog{position:absolute;bottom:11%;width:8%;aspect-ratio:1;border-radius:50%;background:#fff9d6;box-shadow:0 0 18px #fff4a8,0 0 48px rgba(255,235,130,.85)}
+    .fog.left{left:25%}.fog.right{right:25%}
+    .projector{position:absolute;right:7%;top:9%;width:42%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 44% 42%,#fdfdfd 0 4%,#9ee5ff 5% 11%,#0d2332 12% 30%,#25313a 31% 42%,#0c0e11 43% 58%,#5f6871 59% 62%,#171a1f 63% 100%);box-shadow:0 0 0 14px #23272e,0 0 0 19px #0a0c0f,0 35px 70px rgba(0,0,0,.65)}
+    .projector:before{content:"";position:absolute;left:4%;top:25%;width:90%;height:50%;border-radius:50%;background:linear-gradient(115deg,transparent 20%,rgba(255,255,255,.32) 38%,transparent 51%);transform:rotate(-24deg)}
+    .visual-badge{position:absolute;left:20px;top:20px;background:rgba(255,255,255,.09);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.12);color:#fff;padding:10px 13px;border-radius:13px;font-size:12px;font-weight:800}
+    .visual-stats{position:absolute;left:20px;right:20px;bottom:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .visual-stat{background:rgba(255,255,255,.08);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:10px;color:#fff;font-size:11px}
+    .visual-stat b{display:block;font-size:15px}
+    .floating-card{position:absolute;background:#fff;border-radius:16px;box-shadow:var(--shadow);padding:13px 15px;font-size:12px;font-weight:760;display:flex;align-items:center;gap:10px}
+    .floating-card.one{left:-28px;top:90px}.floating-card.two{right:-14px;bottom:82px}
+    .status-dot{width:10px;height:10px;background:#20b77a;border-radius:50%;box-shadow:0 0 0 5px rgba(32,183,122,.13)}
+
+    /* In-page nav */
+    .jump-nav-wrap{position:sticky;top:72px;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .jump-nav{display:flex;gap:6px;overflow:auto;padding:9px 0;scrollbar-width:none}
+    .jump-nav::-webkit-scrollbar{display:none}
+    .jump-nav a{padding:9px 13px;border-radius:10px;font-size:13px;font-weight:780;white-space:nowrap;color:#5c6370}
+    .jump-nav a:hover{background:#f1f3f5;color:var(--ink)}
+
+    /* Fitment */
+    .fitment-wrap{padding:42px 0 28px;background:#fff}
+    .fitment-card{display:grid;grid-template-columns:.85fr 1.15fr;border-radius:28px;overflow:hidden;background:var(--dark);color:#fff;box-shadow:var(--shadow)}
+    .fitment-intro{padding:40px;background:linear-gradient(145deg,#171a20,#0b0d10);position:relative;overflow:hidden}
+    .fitment-intro:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(227,27,45,.35),transparent 68%);right:-100px;bottom:-140px}
+    .fitment-intro p{color:#b9bec8;margin-top:12px;max-width:430px}
+    .fitment-steps{display:grid;gap:10px;margin-top:26px;position:relative;z-index:1}
+    .fitment-step{display:flex;gap:12px;align-items:center;color:#dfe2e7;font-size:14px}
+    .step-num{width:28px;height:28px;border-radius:9px;background:rgba(255,255,255,.09);display:grid;place-items:center;color:#fff;font-weight:900}
+    .fitment-form{background:#fff;color:var(--ink);padding:34px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .field{display:grid;gap:7px}
+    .field label{font-size:13px;font-weight:820;color:#424955}
+    .field select,.field input{width:100%;height:50px;border:1px solid var(--line);border-radius:13px;background:#fff;padding:0 14px;color:var(--ink)}
+    .field select:focus,.field input:focus{border-color:var(--brand);box-shadow:0 0 0 4px rgba(227,27,45,.09);outline:0}
+    .field.full{grid-column:1/-1}
+    .need-options{display:flex;flex-wrap:wrap;gap:8px}
+    .need-option{position:relative}
+    .need-option input{position:absolute;opacity:0;pointer-events:none}
+    .need-option span{display:inline-flex;padding:9px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;font-weight:760;transition:.18s}
+    .need-option input:checked+span{background:#fff0f2;border-color:#f5aeb7;color:#a91423}
+    .fitment-actions{display:flex;align-items:center;gap:12px;margin-top:20px;flex-wrap:wrap}
+    .form-privacy{font-size:12px;color:#7b818b}
+    .fitment-result{display:none;margin-top:18px;border:1px solid #cfe8df;background:#f0fbf7;border-radius:16px;padding:16px}
+    .fitment-result.show{display:block}
+    .result-list{display:grid;gap:8px;margin-top:10px}
+    .result-item{display:flex;justify-content:space-between;gap:16px;background:#fff;border-radius:11px;padding:10px 12px;font-size:13px}
+    .result-item b{font-weight:850}
+    .quick-picks{display:flex;gap:10px;overflow:auto;padding:20px 0 10px;scrollbar-width:none}
+    .quick-picks::-webkit-scrollbar{display:none}
+    .quick-pick{flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 14px;font-size:13px;font-weight:800;transition:.18s}
+    .quick-pick:hover,.quick-pick.active{border-color:#f3a4ae;background:#fff3f4;color:#aa1524}
+
+    /* Trust */
+    .trust-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .trust-item{padding:24px 18px;display:flex;gap:12px;align-items:center;border-right:1px solid var(--line)}
+    .trust-item:last-child{border-right:0}
+    .trust-symbol{width:42px;height:42px;border-radius:14px;background:#fff1f2;color:var(--brand);display:grid;place-items:center;flex:none}
+    .trust-item b{display:block;font-size:14px}.trust-item span{font-size:12px;color:var(--muted)}
+
+    /* Shop */
+    .shop-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+    .result-count{font-size:14px;color:var(--muted)}
+    .result-count b{color:var(--ink)}
+    .toolbar-actions{display:flex;gap:10px;align-items:center}
+    .select-small{height:44px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 38px 0 13px;font-size:13px;font-weight:700}
+    .filter-mobile-btn{display:none}
+    .shop-layout{display:grid;grid-template-columns:240px 1fr;gap:24px;align-items:start}
+    .filters{position:sticky;top:132px;border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+    .filter-head{padding:17px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+    .filter-head b{font-size:15px}.filter-clear{border:0;background:none;color:var(--brand);font-size:12px;font-weight:850}
+    .filter-group{padding:16px 18px;border-bottom:1px solid var(--line)}
+    .filter-group:last-child{border-bottom:0}
+    .filter-title{font-size:13px;font-weight:880;margin-bottom:10px;display:flex;justify-content:space-between}
+    .filter-options{display:grid;gap:8px}
+    .check{display:flex;align-items:center;gap:9px;font-size:13px;color:#4f5662}
+    .check input{width:17px;height:17px;accent-color:var(--brand)}
+    .price-range{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .price-range input{min-width:0;height:38px;border:1px solid var(--line);border-radius:10px;padding:0 9px;font-size:12px}
+    .active-filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;min-height:1px}
+    .filter-chip{display:inline-flex;align-items:center;gap:6px;background:#fff0f2;color:#a91423;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:800}
+    .filter-chip button{border:0;background:none;color:inherit;padding:0;font-weight:900}
+    .product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+    .product-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.22s;position:relative}
+    .product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-sm);border-color:#d9dce1}
+    .product-media{aspect-ratio:1.12/1;background:linear-gradient(145deg,#f7f8f9,#e9ebee);position:relative;overflow:hidden;display:grid;place-items:center}
+    .product-media:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(227,27,45,.13),transparent 70%);right:-80px;top:-90px}
+    .product-media:after{content:"";position:absolute;left:12%;right:12%;bottom:15%;height:10px;border-radius:50%;background:rgba(17,19,24,.14);filter:blur(9px)}
+    .lamp-art{position:relative;width:58%;aspect-ratio:1.05/1;z-index:1;transform:rotate(-8deg);filter:drop-shadow(0 18px 14px rgba(17,19,24,.24))}
+    .lamp-body{position:absolute;inset:17% 10% 12% 25%;background:linear-gradient(135deg,#626b75 0%,#252a31 45%,#0d0f12 100%);border-radius:28% 20% 26% 24%;border:3px solid #111419}
+    .lamp-body:before{content:"";position:absolute;right:-20%;top:18%;width:38%;height:58%;background:repeating-linear-gradient(90deg,#181c21 0 7px,#3c444d 7px 11px);border-radius:0 35% 35% 0}
+    .lamp-body:after{content:"";position:absolute;left:34%;right:8%;top:12%;height:9%;background:rgba(255,255,255,.14);border-radius:999px}
+    .lamp-lens{position:absolute;left:3%;top:18%;width:55%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 42% 38%,#f9ffff 0 4%,#9eeeff 5% 12%,#143345 13% 30%,#11151a 31% 45%,#707982 46% 50%,#13161b 51% 68%,#363d45 69% 74%,#0b0d10 75% 100%);box-shadow:0 0 0 6px #20252b,0 0 0 9px #0d0f12}
+    .lamp-lens:after{content:"";position:absolute;left:10%;top:16%;width:65%;height:35%;border-radius:50%;background:linear-gradient(120deg,rgba(255,255,255,.65),transparent 70%);transform:rotate(-18deg)}
+    .lamp-eye{position:absolute;width:12%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#fff 0 12%,#bfeeff 14% 33%,#132331 35% 100%);box-shadow:0 0 9px rgba(170,231,255,.7);z-index:2}
+    .lamp-eye.one{left:5%;bottom:15%}.lamp-eye.two{left:20%;bottom:4%}
+    .brand-tag{position:absolute;left:12px;top:12px;background:#fff;border:1px solid rgba(229,231,235,.9);border-radius:999px;padding:6px 9px;font-size:10px;font-weight:900;letter-spacing:.05em;z-index:3}
+    .product-badges{position:absolute;right:12px;top:12px;display:grid;justify-items:end;gap:6px;z-index:3}
+    .product-badge{padding:6px 8px;border-radius:999px;font-size:10px;font-weight:900;color:#fff;background:var(--brand)}
+    .product-badge.dark{background:var(--dark)}
+    .product-body{padding:17px;display:flex;flex-direction:column;flex:1}
+    .product-name{font-size:15px;font-weight:900;line-height:1.35;letter-spacing:-.015em;min-height:42px}
+    .product-name a:hover{color:var(--brand)}
+    .product-price{font-size:21px;font-weight:950;color:var(--brand);letter-spacing:-.02em;margin-top:8px}
+    .price-note{font-size:11px;color:var(--muted);margin-top:1px}
+    .spec-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:13px}
+    .spec{background:#f6f7f8;border-radius:10px;padding:8px;min-width:0}
+    .spec span{display:block;font-size:10px;color:#777e89}.spec b{display:block;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+    .product-fit{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+    .product-fit span{font-size:10px;font-weight:780;border:1px solid var(--line);border-radius:999px;padding:5px 7px;color:#5c6370}
+    .product-actions{display:grid;grid-template-columns:1fr auto;gap:8px;margin-top:auto;padding-top:16px}
+    .product-actions .btn{min-height:42px;padding:0 12px;font-size:12px;border-radius:11px}
+    .compare-control{width:42px;height:42px;border:1px solid var(--line);border-radius:11px;display:grid;place-items:center;background:#fff;position:relative}
+    .compare-control input{position:absolute;opacity:0}
+    .compare-control span{font-size:20px;color:#6b7280}
+    .compare-control:has(input:checked){border-color:#f1a4ae;background:#fff0f2}.compare-control:has(input:checked) span{color:var(--brand)}
+    .product-card[hidden]{display:none}
+    .pagination-row{display:flex;justify-content:center;align-items:center;gap:8px;margin-top:30px}
+    .page-link{width:42px;height:42px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;font-weight:850;background:#fff}
+    .page-link.active{background:var(--dark);color:#fff;border-color:var(--dark)}
+    .show-more{width:auto;padding:0 18px}
+
+    /* Conversion band */
+    .conversion-band{margin-top:46px;background:linear-gradient(135deg,#1a1d23,#0b0d10);border-radius:24px;color:#fff;padding:30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;position:relative;overflow:hidden}
+    .conversion-band:after{content:"";position:absolute;width:250px;height:250px;border-radius:50%;right:-90px;top:-130px;background:radial-gradient(circle,rgba(227,27,45,.45),transparent 68%)}
+    .conversion-band p{color:#bec3cb;margin-top:7px}.conversion-actions{display:flex;gap:10px;position:relative;z-index:1}
+
+    /* Tables / decisions */
+    .table-shell{border:1px solid var(--line);border-radius:18px;overflow:auto;background:#fff;box-shadow:0 8px 30px rgba(16,24,40,.04)}
+    table{width:100%;border-collapse:collapse;min-width:850px}
+    th,td{text-align:left;padding:15px 16px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}
+    th{background:#f5f6f8;font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:#656c77;position:sticky;top:0}
+    tr:last-child td{border-bottom:0}
+    td b{font-weight:860}
+    .table-price{font-weight:900;color:var(--brand);white-space:nowrap}
+    .table-note{font-size:12px;color:var(--muted);margin-top:12px}
+    .decision-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .decision-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;position:relative;overflow:hidden;transition:.2s}
+    .decision-card:hover{box-shadow:var(--shadow-sm);transform:translateY(-3px)}
+    .decision-card .num{position:absolute;right:18px;top:13px;font-size:52px;font-weight:950;color:#eff0f2;letter-spacing:-.06em}
+    .decision-icon{width:48px;height:48px;border-radius:15px;background:#fff0f2;color:var(--brand);display:grid;place-items:center;margin-bottom:18px}
+    .decision-card p{color:var(--muted);font-size:14px;margin-top:9px}
+    .decision-card ul{margin:15px 0 0;padding:0;list-style:none;display:grid;gap:8px}
+    .decision-card li{font-size:13px;display:flex;gap:8px}.decision-card li:before{content:"✓";color:var(--green);font-weight:950}
+    .decision-link{display:inline-flex;margin-top:17px;color:var(--brand);font-size:13px;font-weight:850}
+
+    /* Fitment database */
+    .fitment-db{display:grid;grid-template-columns:.85fr 1.15fr;gap:22px;align-items:stretch}
+    .db-intro{background:var(--dark);color:#fff;border-radius:22px;padding:30px;position:relative;overflow:hidden}
+    .db-intro:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-100px;bottom:-120px;background:radial-gradient(circle,rgba(227,27,45,.4),transparent 70%)}
+    .db-intro p{color:#b9bec8;margin-top:12px}.db-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px;position:relative;z-index:1}
+    .db-stat{padding:14px;border:1px solid rgba(255,255,255,.13);border-radius:14px;background:rgba(255,255,255,.06)}
+    .db-stat b{display:block;font-size:24px}.db-stat span{font-size:11px;color:#bdc2ca}
+    .db-preview{border:1px solid var(--line);border-radius:22px;padding:20px;background:#fff}
+    .db-search{display:flex;gap:10px;margin-bottom:14px}
+    .db-search input{flex:1;height:44px;border:1px solid var(--line);border-radius:12px;padding:0 13px}
+    .db-list{display:grid;gap:8px}
+    .db-row{display:grid;grid-template-columns:1.2fr .8fr .75fr .9fr;gap:10px;align-items:center;background:#f6f7f8;border-radius:12px;padding:11px 12px;font-size:12px}
+    .db-row b{font-size:13px}.db-row .verified{color:var(--green);font-weight:850}
+
+    /* Evidence */
+    .evidence-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px}
+    .beam-lab{background:linear-gradient(150deg,#15181d,#070809);border-radius:24px;min-height:470px;color:#fff;padding:28px;position:relative;overflow:hidden}
+    .lab-visual{position:absolute;left:0;right:0;bottom:0;height:68%;background:linear-gradient(180deg,transparent,#101318)}
+    .lab-road{position:absolute;left:10%;right:10%;bottom:-5%;height:90%;clip-path:polygon(38% 0,62% 0,100% 100%,0 100%);background:linear-gradient(180deg,#292d33,#0e1013)}
+    .lab-beam{position:absolute;left:9%;right:9%;top:10%;height:75%;clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);background:linear-gradient(180deg,rgba(255,245,195,.05),rgba(255,221,100,.56));filter:blur(1px)}
+    .lux-points{position:absolute;inset:0}
+    .lux{position:absolute;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);font-size:10px;font-weight:900;backdrop-filter:blur(7px)}
+    .lux.a{left:47%;top:20%}.lux.b{left:35%;top:43%}.lux.c{right:32%;top:48%}.lux.d{left:18%;bottom:18%}.lux.e{right:18%;bottom:18%}
+    .lab-header{position:relative;z-index:3;display:flex;justify-content:space-between;gap:15px}
+    .lab-header p{color:#b9bec8;font-size:13px;margin-top:7px;max-width:440px}
+    .lab-metrics{position:absolute;left:24px;right:24px;bottom:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;z-index:3}
+    .lab-metric{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:11px;backdrop-filter:blur(9px)}
+    .lab-metric span{display:block;color:#aeb4bd;font-size:10px}.lab-metric b{font-size:14px}
+    .case-stack{display:grid;gap:14px}
+    .case-card{border:1px solid var(--line);border-radius:20px;padding:20px;background:#fff;display:grid;grid-template-columns:118px 1fr;gap:17px;align-items:center}
+    .case-thumb{height:100%;min-height:118px;border-radius:15px;background:linear-gradient(145deg,#30343b,#0f1115);position:relative;overflow:hidden}
+    .case-thumb:before{content:"";position:absolute;left:15%;right:15%;bottom:18%;height:31%;background:#22272e;border-radius:50% 50% 20% 20%}
+    .case-thumb:after{content:"";position:absolute;left:20%;right:20%;bottom:24%;height:2px;background:#ffd45c;box-shadow:0 0 16px #ffd45c,0 0 32px rgba(255,212,92,.65)}
+    .case-card p{font-size:13px;color:var(--muted);margin-top:7px}.case-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.case-meta span{font-size:10px;background:#f3f4f5;border-radius:999px;padding:5px 7px;font-weight:780}
+
+    /* Process */
+    .process-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:step}
+    .process-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 16px;counter-increment:step;position:relative;min-height:185px}
+    .process-card:before{content:"0" counter(step);display:block;color:var(--brand);font-weight:950;font-size:26px;letter-spacing:-.04em;margin-bottom:22px}
+    .process-card h3{font-size:15px}.process-card p{font-size:12px;color:var(--muted);margin-top:8px}
+
+    /* Expert */
+    .expert-card{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;border:1px solid var(--line);border-radius:24px;padding:28px;background:#fff;box-shadow:0 12px 45px rgba(16,24,40,.05)}
+    .expert-avatar{width:92px;height:92px;border-radius:24px;background:linear-gradient(145deg,#262a31,#0d0f12);display:grid;place-items:center;color:#fff;font-size:28px;font-weight:950;position:relative;overflow:hidden}
+    .expert-avatar:after{content:"";position:absolute;width:52px;height:52px;border-radius:50%;right:-18px;bottom:-18px;background:var(--brand)}
+    .expert-copy p{color:var(--muted);margin-top:8px}.expert-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .review-status{min-width:190px;background:#f2fbf7;border:1px solid #d1eee2;border-radius:16px;padding:14px;color:#0c704f}
+    .review-status b{display:block;font-size:13px}.review-status span{font-size:11px}
+
+    /* FAQ */
+    .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:50px;align-items:start}
+    .faq-list{border-top:1px solid var(--line)}
+    details{border-bottom:1px solid var(--line)}
+    summary{list-style:none;padding:20px 44px 20px 0;font-weight:850;cursor:pointer;position:relative}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";position:absolute;right:5px;top:16px;font-size:25px;color:var(--brand);transition:.2s}
+    details[open] summary:after{transform:rotate(45deg)}
+    details p{color:var(--muted);font-size:14px;padding:0 34px 20px 0}
+
+    /* Branch CTA */
+    .branch-cta{background:linear-gradient(135deg,#e31b2d,#a70e1c);color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;box-shadow:0 25px 65px rgba(227,27,45,.25);position:relative;overflow:hidden}
+    .branch-cta:after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-140px;top:-180px;background:rgba(255,255,255,.12)}
+    .branch-cta p{color:#ffe1e4;margin-top:9px;max-width:690px}.branch-actions{display:flex;gap:10px;position:relative;z-index:2}
+
+    /* Footer */
+    footer{background:#0c0e11;color:#d9dce2;padding:54px 0 94px}
+    .footer-grid{display:grid;grid-template-columns:1.35fr repeat(3,1fr);gap:45px}
+    .footer-brand p{color:#989faa;font-size:13px;margin-top:14px;max-width:370px}
+    .footer-col h3{font-size:14px;margin-bottom:14px;color:#fff}.footer-col a{display:block;font-size:13px;color:#a7adb7;padding:5px 0}.footer-col a:hover{color:#fff}
+    .footer-bottom{border-top:1px solid #262a31;margin-top:38px;padding-top:20px;color:#7f8691;font-size:12px;display:flex;justify-content:space-between;gap:20px}
+
+    /* Compare bar and modal */
+    .compare-bar{position:fixed;left:50%;bottom:20px;transform:translate(-50%,150%);opacity:0;visibility:hidden;pointer-events:none;z-index:1100;width:min(720px,calc(100% - 28px));background:var(--dark);color:#fff;border-radius:18px;padding:12px 14px 12px 18px;box-shadow:0 22px 70px rgba(0,0,0,.34);display:flex;align-items:center;justify-content:space-between;gap:16px;transition:.28s}
+    .compare-bar.show{transform:translate(-50%,0);opacity:1;visibility:visible;pointer-events:auto}
+    .compare-summary{font-size:13px}.compare-summary b{font-size:15px;display:block}
+    .compare-items{display:flex;gap:6px;flex:1;overflow:hidden}
+    .compare-mini{padding:7px 9px;background:rgba(255,255,255,.09);border-radius:9px;font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}
+    .modal{position:fixed;inset:0;z-index:1500;background:rgba(6,8,10,.72);display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(8px)}
+    .modal.show{display:flex}
+    .modal-dialog{width:min(960px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:24px;box-shadow:0 30px 100px rgba(0,0,0,.35)}
+    .modal-head{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:18px 22px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+    .modal-close{width:40px;height:40px;border:1px solid var(--line);background:#fff;border-radius:12px;font-size:22px}
+    .compare-table{padding:20px;display:grid;gap:12px}
+    .compare-row{display:grid;grid-template-columns:170px repeat(var(--compare-count,2),1fr);gap:8px;align-items:stretch}
+    .compare-row>div{padding:13px;background:#f6f7f8;border-radius:11px;font-size:12px}.compare-row>div:first-child{font-weight:850;background:#fff}
+
+    /* Mobile drawer / sticky CTA */
+    .filter-drawer{position:fixed;inset:0;z-index:1400;background:rgba(6,8,10,.56);display:none}
+    .filter-drawer.show{display:block}
+    .filter-sheet{position:absolute;left:0;right:0;bottom:0;max-height:88vh;background:#fff;border-radius:24px 24px 0 0;overflow:auto;padding-bottom:calc(20px + env(safe-area-inset-bottom))}
+    .filter-sheet-head{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);padding:16px 18px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+    .mobile-sticky{display:none}
+
+    /* Responsive */
+    @media(max-width:1100px){
+      .main-nav{gap:15px}.main-nav a:nth-child(5),.main-nav a:nth-child(6){display:none}
+      .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .process-grid{grid-template-columns:repeat(3,1fr)}
+      .decision-grid{grid-template-columns:repeat(2,1fr)}
+      .footer-grid{grid-template-columns:1.25fr repeat(2,1fr)}.footer-col:last-child{display:none}
+    }
+    @media(max-width:900px){
+      .header-row{height:64px;grid-template-columns:auto 1fr auto}.main-nav{display:none}.hamburger{display:grid}.hotline-btn span{display:none}.hotline-btn{width:42px;height:42px;padding:0;justify-content:center}
+      .jump-nav-wrap{top:64px}
+      .hero-grid{grid-template-columns:1fr;padding:42px 0 54px;gap:32px}.hero-visual{min-height:420px}.visual-card{max-width:560px}
+      .floating-card.one{left:0}.floating-card.two{right:0}
+      .fitment-card{grid-template-columns:1fr}.fitment-intro{padding:30px}.fitment-form{padding:26px}
+      .trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
+      .shop-layout{grid-template-columns:1fr}.filters{display:none}.filter-mobile-btn{display:inline-flex}
+      .fitment-db,.evidence-grid,.faq-grid{grid-template-columns:1fr}
+      .expert-card{grid-template-columns:auto 1fr}.review-status{grid-column:1/-1}
+      .branch-cta{grid-template-columns:1fr}.branch-actions{justify-content:start}
+    }
+    @media(max-width:640px){
+      .container{width:min(100% - 22px,var(--max))}
+      .demo-note{font-size:11px}
+      .topline{display:none}
+      .header-row{gap:10px}.brand{font-size:20px}.brand-mark{width:34px;height:34px}.brand small{display:none}.header-actions{gap:7px}.icon-btn{display:none}
+      .breadcrumb{padding-top:13px}
+      .hero-grid{padding:25px 0 38px}.hero-title{font-size:44px}.hero-subtitle{font-size:21px}.hero-answer{font-size:14px}.hero-actions{display:grid;grid-template-columns:1fr 1fr}.hero-actions .btn:first-child{grid-column:1/-1}
+      .hero-meta{grid-template-columns:1fr;gap:8px}.hero-meta-item{padding:10px 12px}.hero-icon{width:30px;height:30px}
+      .hero-visual{min-height:340px}.visual-card{border-radius:24px}.floating-card{display:none}.visual-stats{grid-template-columns:1fr 1fr}.visual-stat:last-child{display:none}
+      .jump-nav-wrap{top:64px}.jump-nav{padding:7px 0}.jump-nav a{padding:8px 10px;font-size:12px}
+      .fitment-wrap{padding:24px 0 16px}.fitment-card{border-radius:22px}.fitment-intro{padding:24px}.fitment-intro h2{font-size:28px}.fitment-form{padding:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.fitment-actions{display:grid}.fitment-actions .btn{width:100%}
+      .trust-grid{grid-template-columns:1fr 1fr}.trust-item{padding:16px 10px;align-items:flex-start}.trust-symbol{width:34px;height:34px}.trust-item b{font-size:12px}.trust-item span{font-size:10px}
+      .section{padding:58px 0}.section-head{align-items:start;display:block;margin-bottom:25px}.section-copy{font-size:15px}.section-head>.btn{margin-top:18px}
+      .shop-toolbar{align-items:flex-start}.toolbar-actions{width:100%;justify-content:space-between;margin-top:12px}.select-small{flex:1}.shop-toolbar{display:block}
+      .product-grid{grid-template-columns:1fr 1fr;gap:10px}.product-card{border-radius:15px}.product-media{aspect-ratio:1/1}.brand-tag{left:8px;top:8px;padding:5px 7px;font-size:9px}.product-badges{right:8px;top:8px}.product-badge{font-size:8px;padding:5px 6px}.product-body{padding:12px}.product-name{font-size:13px;min-height:52px}.product-price{font-size:17px}.price-note{font-size:9px}.spec-grid{grid-template-columns:1fr;gap:5px}.spec:nth-child(n+3){display:none}.spec{padding:6px}.spec span{font-size:9px}.spec b{font-size:10px}.product-fit{display:none}.product-actions{grid-template-columns:1fr auto;gap:5px}.product-actions .btn{font-size:10px;min-height:38px;padding:0 8px}.compare-control{width:38px;height:38px}
+      .conversion-band{grid-template-columns:1fr;padding:22px;border-radius:20px}.conversion-actions{display:grid;grid-template-columns:1fr 1fr}
+      .decision-grid{grid-template-columns:1fr}.decision-card{padding:20px}
+      .db-stat-grid{grid-template-columns:1fr 1fr}.db-row{grid-template-columns:1.2fr .8fr .75fr}.db-row>*:nth-child(4){display:none}
+      .beam-lab{min-height:430px;padding:22px}.lab-header{display:block}.lab-metrics{grid-template-columns:1fr 1fr}.case-card{grid-template-columns:90px 1fr;padding:14px}.case-thumb{min-height:105px}
+      .process-grid{grid-template-columns:1fr 1fr}.process-card{min-height:170px;padding:16px 14px}
+      .expert-card{grid-template-columns:1fr;text-align:left;padding:22px}.expert-avatar{width:76px;height:76px}.review-status{grid-column:auto;min-width:0}
+      .branch-cta{padding:28px 22px}.branch-actions{display:grid;grid-template-columns:1fr 1fr}.branch-actions .btn{padding:0 12px}
+      .footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:8px}
+      .compare-bar{bottom:78px}.compare-items{display:none}
+      .mobile-sticky{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:1050;grid-template-columns:repeat(3,1fr);background:#fff;border-top:1px solid var(--line);padding:8px 9px calc(8px + env(safe-area-inset-bottom));box-shadow:0 -8px 25px rgba(16,24,40,.1)}
+      .mobile-sticky a,.mobile-sticky button{border:0;background:#fff;display:grid;place-items:center;gap:2px;font-size:10px;font-weight:850;color:#414854;min-height:48px}.mobile-sticky .primary{background:var(--brand);color:#fff;border-radius:12px}
+      footer{padding-bottom:130px}
+    }
+    @media(max-width:340px){.product-grid{grid-template-columns:1fr}.product-name{min-height:auto}.product-media{aspect-ratio:1.25/1}.spec-grid{grid-template-columns:1fr 1fr}.spec:nth-child(n+3){display:block}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"CollectionPage",
+        "@id":"https://auto365.vn/nang-cap-anh-sang-bi-gam#webpage",
+        "url":"https://auto365.vn/nang-cap-anh-sang-bi-gam",
+        "name":"Bi Gầm",
+        "description":"Danh mục bi gầm ô tô, bảng giá, so sánh và tư vấn lựa chọn theo xe tại Auto365.",
+        "breadcrumb":{"@id":"https://auto365.vn/nang-cap-anh-sang-bi-gam#breadcrumb"},
+        "mainEntity":{"@id":"https://auto365.vn/nang-cap-anh-sang-bi-gam#products"}
+      },
+      {
+        "@type":"BreadcrumbList",
+        "@id":"https://auto365.vn/nang-cap-anh-sang-bi-gam#breadcrumb",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://auto365.vn/"},
+          {"@type":"ListItem","position":2,"name":"Ánh sáng ô tô","item":"https://auto365.vn/nang-cap-anh-sang"},
+          {"@type":"ListItem","position":3,"name":"Bi Gầm","item":"https://auto365.vn/nang-cap-anh-sang-bi-gam"}
+        ]
+      },
+      {
+        "@type":"ItemList",
+        "@id":"https://auto365.vn/nang-cap-anh-sang-bi-gam#products",
+        "name":"Sản phẩm bi gầm",
+        "numberOfItems":12,
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Đèn bi gầm X-Light F10 Turbo V2","url":"https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2"},
+          {"@type":"ListItem","position":2,"name":"Bi gầm GTR G1 Turbo V2","url":"https://auto365.vn/bi-gam-gtr-g1-turbo-v2"},
+          {"@type":"ListItem","position":3,"name":"Bi gầm AES SV 2.0 Max","url":"https://auto365.vn/bi-gam-aes-sv-20-max"},
+          {"@type":"ListItem","position":4,"name":"Bi gầm AES SV 3.0 Pro","url":"https://auto365.vn/bi-gam-aes-sv-30-pro"},
+          {"@type":"ListItem","position":5,"name":"Đèn bi gầm X-Light F10 Turbo 24V V2","url":"https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2"},
+          {"@type":"ListItem","position":6,"name":"Đèn bi gầm X-Light 301 V2","url":"https://auto365.vn/den-bi-gam-x-light-301-v2"},
+          {"@type":"ListItem","position":7,"name":"Đèn bi gầm X-Light F10 Pro V2","url":"https://auto365.vn/den-bi-gam-x-light-f10-pro-v2"},
+          {"@type":"ListItem","position":8,"name":"Bi gầm X-Light F10 2.0 New","url":"https://auto365.vn/bi-gam-x-light-f10-20-new"},
+          {"@type":"ListItem","position":9,"name":"Bi gầm X-Light X3 Ultra","url":"https://auto365.vn/bi-gam-x-light-x3-ultra"},
+          {"@type":"ListItem","position":10,"name":"Đèn bi gầm X-Light F10 New","url":"https://auto365.vn/den-bi-gam-x-light-f10-new"},
+          {"@type":"ListItem","position":11,"name":"Bi gầm X-Light F10 Hyper 2.0","url":"https://auto365.vn/bi-gam-x-light-f10-hyper-20"},
+          {"@type":"ListItem","position":12,"name":"Bi gầm Henvvei GT-1","url":"https://auto365.vn/bi-gam-henvvei-gt-1"}
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <div class="demo-note"><strong>BẢN DEMO UX — NOINDEX:</strong> dữ liệu sản phẩm minh họa từ trang live; giá, đơn vị tính, VAT, công lắp và tương thích phải đồng bộ từ SSOT trước khi chạy chính thức.</div>
+
+  <div class="topline">
+    <div class="container">
+      <div class="topline-list"><span>Hệ thống nâng cấp ô tô toàn quốc</span><a href="#branch">Tìm điểm lắp gần bạn</a><a href="#warranty">Tra cứu bảo hành</a></div>
+      <div class="topline-list"><span>Giờ làm việc: 08:30–17:30</span><a href="tel:0365365911">Hotline 0365 365 911</a></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="https://auto365.vn/" aria-label="Auto365 - Trang chủ">
+        <span class="brand-mark">A</span>
+        <span>AUTO365<small>XE THẬT · TAY NGHỀ THẬT</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a class="active" href="#products">Bi gầm</a>
+        <a href="#finder">Chọn theo xe</a>
+        <a href="#price">Bảng giá</a>
+        <a href="#compare-guide">So sánh</a>
+        <a href="#evidence">Xe thực tế</a>
+        <a href="#knowledge">Cẩm nang</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Tìm kiếm">⌕</button>
+        <a class="hotline-btn" href="tel:0365365911" aria-label="Gọi Auto365"><span>Gọi tư vấn</span> ☎</a>
+        <button class="icon-btn hamburger" type="button" aria-label="Mở menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="https://auto365.vn/">Trang chủ</a><span>›</span>
+          <a href="https://auto365.vn/nang-cap-anh-sang">Ánh sáng ô tô</a><span>›</span>
+          <span aria-current="page">Bi Gầm</span>
+        </nav>
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Giải pháp ánh sáng theo xe</div>
+            <h1 class="hero-title">Bi Gầm</h1>
+            <p class="hero-subtitle">Đèn bi gầm ô tô — chọn đúng theo hốc đèn, điều kiện sử dụng và ngân sách.</p>
+            <p class="hero-answer"><strong>Bi gầm</strong> là cụm đèn projector có thấu kính, thường được lắp tại vị trí đèn gầm hoặc hốc đèn sương mù phía trước ô tô. Cấu hình phù hợp cần xét kích thước lens, điện áp, phương án pát lắp, nhu cầu giữ zin và môi trường di chuyển.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#finder">Chọn bi gầm theo xe <span aria-hidden="true">→</span></a>
+              <a class="btn btn-dark" href="#products">Xem 31 sản phẩm</a>
+              <a class="btn btn-outline" href="#evidence">Xem xe đã lắp</a>
+            </div>
+            <div class="hero-meta" aria-label="Cam kết dịch vụ">
+              <div class="hero-meta-item"><span class="hero-icon">✓</span><span><b>Tư vấn theo xe</b>Không chọn theo quảng cáo chung</span></div>
+              <div class="hero-meta-item"><span class="hero-icon">⌁</span><span><b>Giá minh bạch</b>Làm rõ sản phẩm, phụ kiện, công lắp</span></div>
+              <div class="hero-meta-item"><span class="hero-icon">◎</span><span><b>Cân chỉnh sau lắp</b>Kiểm tra vùng sáng trước bàn giao</span></div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="visual-card">
+              <div class="visual-badge">AUTO365 LIGHTING LAB · DEMO</div>
+              <div class="road"></div><div class="beam"></div>
+              <div class="car"><span class="fog left"></span><span class="fog right"></span></div>
+              <div class="projector"></div>
+              <div class="visual-stats">
+                <div class="visual-stat"><b>2.0 / 3.0”</b>Chọn theo hốc đèn</div>
+                <div class="visual-stat"><b>12V / 24V</b>Kiểm tra hệ điện</div>
+                <div class="visual-stat"><b>3 nhiệt màu</b>Chọn theo điều kiện</div>
+              </div>
+            </div>
+            <div class="floating-card one"><span class="status-dot"></span><span><b>Dữ liệu tương thích</b><br>theo xe & đời xe</span></div>
+            <div class="floating-card two"><span class="hero-icon">⌁</span><span><b>Ảnh beam cùng điều kiện</b><br>trước và sau thi công</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="jump-nav-wrap">
+      <nav class="container jump-nav" aria-label="Điều hướng trong trang">
+        <a href="#finder">Chọn theo xe</a><a href="#products">Sản phẩm</a><a href="#price">Bảng giá</a><a href="#compare-guide">Cách chọn</a><a href="#compatibility">Tương thích xe</a><a href="#evidence">Test & case thật</a><a href="#process">Quy trình</a><a href="#faq">Hỏi đáp</a>
+      </nav>
+    </div>
+
+    <section id="finder" class="fitment-wrap">
+      <div class="container">
+        <div class="fitment-card">
+          <div class="fitment-intro">
+            <div class="eyebrow" style="color:#ff6573">Fitment Finder</div>
+            <h2>Chọn cấu hình theo chiếc xe của bạn</h2>
+            <p>Không ép khách chọn model trước. Hệ thống đi từ xe, hốc đèn và nhu cầu thực tế để thu hẹp cấu hình phù hợp.</p>
+            <div class="fitment-steps">
+              <div class="fitment-step"><span class="step-num">1</span> Xác định xe, đời xe và điện áp</div>
+              <div class="fitment-step"><span class="step-num">2</span> Chọn điều kiện sử dụng và ngân sách</div>
+              <div class="fitment-step"><span class="step-num">3</span> Trả về model, pát lắp và điểm thi công</div>
+            </div>
+          </div>
+          <form class="fitment-form" id="fitmentForm">
+            <div class="form-grid">
+              <div class="field"><label for="make">Hãng xe</label><select id="make" required><option value="">Chọn hãng xe</option><option>VinFast</option><option>Toyota</option><option>Ford</option><option>Mitsubishi</option><option>Mazda</option><option>Honda</option><option>Kia</option><option>Hyundai</option></select></div>
+              <div class="field"><label for="model">Dòng xe</label><select id="model" required><option value="">Chọn dòng xe</option><option>VF 3</option><option>Fortuner</option><option>Ranger</option><option>Xpander</option><option>Mazda 6</option><option>CR-V</option><option>Carnival</option></select></div>
+              <div class="field"><label for="year">Năm sản xuất</label><select id="year" required><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option><option>2019 trở về trước</option></select></div>
+              <div class="field"><label for="budget">Ngân sách dự kiến</label><select id="budget"><option>Chưa xác định</option><option>Dưới 4 triệu</option><option>4–5 triệu</option><option>5–6 triệu</option><option>Trên 6 triệu</option></select></div>
+              <div class="field full"><label>Nhu cầu chính</label><div class="need-options">
+                <label class="need-option"><input type="radio" name="need" value="city" checked><span>Đi phố hằng ngày</span></label>
+                <label class="need-option"><input type="radio" name="need" value="rain"><span>Mưa / sương mù</span></label>
+                <label class="need-option"><input type="radio" name="need" value="highway"><span>Đi tỉnh / cao tốc</span></label>
+                <label class="need-option"><input type="radio" name="need" value="mountain"><span>Đường đèo thiếu sáng</span></label>
+                <label class="need-option"><input type="radio" name="need" value="24v"><span>Xe tải 24V</span></label>
+              </div></div>
+            </div>
+            <div class="fitment-actions"><button class="btn btn-primary" type="submit">Xem cấu hình gợi ý</button><span class="form-privacy">Không yêu cầu số điện thoại để xem kết quả bước đầu.</span></div>
+            <div class="fitment-result" id="fitmentResult" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+        <div class="quick-picks" aria-label="Chọn nhanh">
+          <button class="quick-pick" type="button" data-filter-size="2.0">Bi gầm 2.0 inch</button>
+          <button class="quick-pick" type="button" data-filter-size="3.0">Bi gầm 3.0 inch</button>
+          <button class="quick-pick" type="button" data-filter-temp="3-mau">3 nhiệt màu</button>
+          <button class="quick-pick" type="button" data-filter-use="24v">Xe tải 24V</button>
+          <button class="quick-pick" type="button" data-filter-use="highway">Đi tỉnh / đường xa</button>
+          <button class="quick-pick" type="button" data-filter-use="keep-original">Ưu tiên giữ zin</button>
+          <button class="quick-pick" type="button" data-filter-brand="X-Light">X-Light</button>
+          <button class="quick-pick" type="button" data-filter-brand="GTR">GTR</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-strip" id="warranty">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-symbol">◈</span><span><b>Sản phẩm có nguồn gốc</b><span>Hiển thị thương hiệu, model và bảo hành</span></span></div>
+        <div class="trust-item"><span class="trust-symbol">₫</span><span><b>Giá có điều kiện rõ</b><span>Đơn vị, VAT, công lắp và phụ kiện</span></span></div>
+        <div class="trust-item"><span class="trust-symbol">⌁</span><span><b>Thi công theo xe</b><span>Kiểm tra hốc đèn và phương án pát lắp</span></span></div>
+        <div class="trust-item"><span class="trust-symbol">✓</span><span><b>Nghiệm thu ánh sáng</b><span>Cân chỉnh vùng sáng trước bàn giao</span></span></div>
+      </div>
+    </div>
+
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <div><div class="eyebrow">Danh mục thương mại</div><h2>Sản phẩm bi gầm nổi bật</h2><p class="section-copy">Giữ sản phẩm xuất hiện sớm để đáp ứng nhu cầu mua hàng. Nội dung kiến thức sâu được đặt sau product grid, không đẩy người mua xuống cuối trang.</p></div>
+          <a class="btn btn-outline" href="#price">Xem bảng giá tổng hợp</a>
+        </div>
+        <div class="shop-toolbar">
+          <div class="result-count"><b id="visibleCount">12</b> sản phẩm demo · triển khai thực tế giữ đủ 31 sản phẩm hiện hành</div>
+          <div class="toolbar-actions">
+            <button class="btn btn-outline filter-mobile-btn" id="openFilter" type="button">☷ Bộ lọc</button>
+            <select class="select-small" id="sortProducts" aria-label="Sắp xếp sản phẩm"><option value="featured">Nổi bật</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select>
+          </div>
+        </div>
+        <div class="active-filters" id="activeFilters" aria-live="polite"></div>
+        <div class="shop-layout">
+          <aside class="filters" aria-label="Bộ lọc sản phẩm">
+            <div class="filter-head"><b>Lọc bi gầm</b><button class="filter-clear" type="button" data-clear-filters>Xóa tất cả</button></div>
+            <div class="filter-group"><div class="filter-title">Thương hiệu</div><div class="filter-options">
+              <label class="check"><input type="checkbox" name="brand" value="X-Light"> X-Light</label>
+              <label class="check"><input type="checkbox" name="brand" value="GTR"> GTR</label>
+              <label class="check"><input type="checkbox" name="brand" value="AES"> AES</label>
+              <label class="check"><input type="checkbox" name="brand" value="Henvvei"> Henvvei</label>
+            </div></div>
+            <div class="filter-group"><div class="filter-title">Kích thước lens</div><div class="filter-options">
+              <label class="check"><input type="checkbox" name="size" value="2.0"> 2.0 inch</label>
+              <label class="check"><input type="checkbox" name="size" value="3.0"> 3.0 inch</label>
+              <label class="check"><input type="checkbox" name="size" value="check"> Cần kiểm tra theo xe</label>
+            </div></div>
+            <div class="filter-group"><div class="filter-title">Nhiệt màu</div><div class="filter-options">
+              <label class="check"><input type="checkbox" name="temp" value="3000"> 3000K</label>
+              <label class="check"><input type="checkbox" name="temp" value="4300"> 4300K</label>
+              <label class="check"><input type="checkbox" name="temp" value="5500"> 5500K</label>
+              <label class="check"><input type="checkbox" name="temp" value="3-mau"> 3 nhiệt màu</label>
+            </div></div>
+            <div class="filter-group"><div class="filter-title">Nhu cầu</div><div class="filter-options">
+              <label class="check"><input type="checkbox" name="use" value="city"> Đi phố</label>
+              <label class="check"><input type="checkbox" name="use" value="rain"> Mưa / sương mù</label>
+              <label class="check"><input type="checkbox" name="use" value="highway"> Đi tỉnh / đường xa</label>
+              <label class="check"><input type="checkbox" name="use" value="24v"> Xe tải 24V</label>
+            </div></div>
+            <div class="filter-group"><div class="filter-title">Khoảng giá demo</div><div class="price-range"><input type="number" id="minPrice" placeholder="Từ triệu" min="0"><input type="number" id="maxPrice" placeholder="Đến triệu" min="0"></div></div>
+          </aside>
+
+          <div>
+            <div class="product-grid" id="productGrid">
+              <!-- Product 1 -->
+              <article class="product-card" data-id="f10-turbo-v2" data-brand="X-Light" data-size="3.0" data-temp="3000 4300 5500 3-mau" data-use="city rain highway mountain" data-price="6" data-name="Đèn bi gầm X-Light F10 Turbo V2">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge">MỚI</span><span class="product-badge dark">3 NHIỆT MÀU</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span><span class="lamp-eye two"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2">Đèn bi gầm X-Light F10 Turbo V2</a></h3><div class="product-price">6.000.000 đ</div><div class="price-note">6.000.000 đ/cặp, chưa VAT theo trang sản phẩm hiện hành</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>3.0 inch</b></div><div class="spec"><span>Cos / Pha</span><b>~45W / ~75W</b></div><div class="spec"><span>Nhiệt màu</span><b>3000/4300/5500K</b></div><div class="spec"><span>Bảo hành</span><b>24 tháng</b></div></div><div class="product-fit"><span>Đi phố</span><span>Đi tỉnh</span><span>Mưa nhẹ</span></div><div class="product-actions"><a class="btn btn-dark" href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2">Xem chi tiết</a><label class="compare-control" title="Thêm vào so sánh"><input class="compare-check" type="checkbox" aria-label="So sánh X-Light F10 Turbo V2"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 2 -->
+              <article class="product-card" data-id="gtr-g1-turbo-v2" data-brand="GTR" data-size="check" data-temp="4300" data-use="highway mountain" data-price="6" data-name="Bi gầm GTR G1 Turbo V2">
+                <div class="product-media"><span class="brand-tag">GTR</span><span class="product-badges"><span class="product-badge">MỚI</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span><span class="lamp-eye two"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2">Bi gầm GTR G1 Turbo V2</a></h3><div class="product-price">6.000.000 đ</div><div class="price-note">Giá niêm yết trên danh mục · xác nhận đơn vị và công lắp</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>Kiểm tra theo xe</b></div><div class="spec"><span>Cos / Pha</span><b>~45W / ~75W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big + 1 + 1</b></div><div class="spec"><span>Kiểu lắp</span><b>Theo hốc đèn</b></div></div><div class="product-fit"><span>Đi tỉnh</span><span>Đường đèo</span></div><div class="product-actions"><a class="btn btn-dark" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh GTR G1 Turbo V2"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 3 -->
+              <article class="product-card" data-id="aes-20-max" data-brand="AES" data-size="2.0" data-temp="4300" data-use="city keep-original" data-price="5" data-name="Bi gầm AES SV 2.0 Max">
+                <div class="product-media"><span class="brand-tag">AES</span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Bi gầm AES SV 2.0 Max</a></h3><div class="product-price">5.000.000 đ</div><div class="price-note">Giá niêm yết trên danh mục · xác nhận công lắp theo xe</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>2.0 inch</b></div><div class="spec"><span>Cos / Pha</span><b>~50W / ~60W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big + 1</b></div><div class="spec"><span>Ưu tiên</span><b>Hốc đèn nhỏ</b></div></div><div class="product-fit"><span>Đi phố</span><span>Gọn hốc đèn</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh AES SV 2.0 Max"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 4 -->
+              <article class="product-card" data-id="aes-30-pro" data-brand="AES" data-size="3.0" data-temp="4300" data-use="city highway" data-price="5.5" data-name="Bi gầm AES SV 3.0 Pro">
+                <div class="product-media"><span class="brand-tag">AES</span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Bi gầm AES SV 3.0 Pro</a></h3><div class="product-price">5.500.000 đ</div><div class="price-note">Giá niêm yết trên danh mục · cần khóa điều kiện giá</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>3.0 inch</b></div><div class="spec"><span>Cos / Pha</span><b>~45W / ~65W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big + 1</b></div><div class="spec"><span>Ưu tiên</span><b>Vùng sáng rộng</b></div></div><div class="product-fit"><span>Đi phố</span><span>Đi tỉnh</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh AES SV 3.0 Pro"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 5 -->
+              <article class="product-card" data-id="f10-24v-v2" data-brand="X-Light" data-size="3.0" data-temp="3000 4300 5500 3-mau" data-use="24v highway" data-price="6.2" data-name="Đèn bi gầm X-Light F10 Turbo 24V V2">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge dark">24V</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span><span class="lamp-eye two"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Đèn bi gầm X-Light F10 Turbo 24V V2</a></h3><div class="product-price">6.200.000 đ</div><div class="price-note">Giá niêm yết · cấu hình dành cho hệ điện 24V</div><div class="spec-grid"><div class="spec"><span>Điện áp</span><b>24V</b></div><div class="spec"><span>Cos / Pha</span><b>~45W / ~75W</b></div><div class="spec"><span>Nhiệt màu</span><b>3000/4300/5500K</b></div><div class="spec"><span>Ứng dụng</span><b>Xe tải</b></div></div><div class="product-fit"><span>Xe tải 24V</span><span>Đi đường dài</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh F10 Turbo 24V V2"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 6 -->
+              <article class="product-card" data-id="301-v2" data-brand="X-Light" data-size="check" data-temp="3000 4300 5500 3-mau" data-use="city rain" data-price="4.5" data-name="Đèn bi gầm X-Light 301 V2">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge dark">3 NHIỆT MÀU</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Đèn bi gầm X-Light 301 V2</a></h3><div class="product-price">4.500.000 đ</div><div class="price-note">Giá niêm yết · xác nhận hốc đèn và phụ kiện</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>Kiểm tra theo xe</b></div><div class="spec"><span>Cos / Pha</span><b>~45W / ~55W</b></div><div class="spec"><span>Nhiệt màu</span><b>3000/4300/5500K</b></div><div class="spec"><span>Phân khúc</span><b>4–5 triệu</b></div></div><div class="product-fit"><span>Đi phố</span><span>Mưa / sương</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh X-Light 301 V2"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 7 -->
+              <article class="product-card" data-id="f10-pro-v2" data-brand="X-Light" data-size="3.0" data-temp="3000 4300 5500 3-mau" data-use="city rain highway" data-price="5.5" data-name="Đèn bi gầm X-Light F10 Pro V2">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Đèn bi gầm X-Light F10 Pro V2</a></h3><div class="product-price">5.500.000 đ</div><div class="price-note">Giá niêm yết trên danh mục hiện hành</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>3.0 inch</b></div><div class="spec"><span>Nhiệt màu</span><b>3000/4300/5500K</b></div><div class="spec"><span>Tuổi thọ</span><b>30.000 giờ</b></div><div class="spec"><span>Phân khúc</span><b>5–6 triệu</b></div></div><div class="product-fit"><span>Đa dụng</span><span>3 nhiệt màu</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh X-Light F10 Pro V2"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 8 -->
+              <article class="product-card" data-id="f10-20-new" data-brand="X-Light" data-size="2.0" data-temp="4300" data-use="city keep-original" data-price="4.5" data-name="Bi gầm X-Light F10 2.0 New">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge">MỞ BÁN</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Bi gầm X-Light F10 2.0 New</a></h3><div class="product-price">4.500.000 đ</div><div class="price-note">Giá niêm yết · phù hợp hốc đèn nhỏ sau xác minh</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>2.0 inch</b></div><div class="spec"><span>Cos / Pha</span><b>~40W / ~60W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big</b></div><div class="spec"><span>Ưu tiên</span><b>Thi công gọn</b></div></div><div class="product-fit"><span>Hốc nhỏ</span><span>Đi phố</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh F10 2.0 New"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 9 -->
+              <article class="product-card" data-id="x3-ultra" data-brand="X-Light" data-size="check" data-temp="4300" data-use="city highway" data-price="5.5" data-name="Bi gầm X-Light X3 Ultra">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge">MỚI</span><span class="product-badge dark">ĐỘC QUYỀN</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="https://auto365.vn/bi-gam-x-light-x3-ultra">Bi gầm X-Light X3 Ultra</a></h3><div class="product-price">5.500.000 đ</div><div class="price-note">Giá niêm yết · cần kiểm tra đúng vị trí lắp trong master data</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>Kiểm tra theo xe</b></div><div class="spec"><span>Cos / Pha</span><b>45W / 70W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big</b></div><div class="spec"><span>Trạng thái</span><b>Mới</b></div></div><div class="product-fit"><span>Đi phố</span><span>Đi tỉnh</span></div><div class="product-actions"><a class="btn btn-dark" href="https://auto365.vn/bi-gam-x-light-x3-ultra">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh X3 Ultra"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 10 -->
+              <article class="product-card" data-id="f10-new" data-brand="X-Light" data-size="check" data-temp="4300" data-use="city" data-price="4.3" data-name="Đèn bi gầm X-Light F10 New">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge">MỚI</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Đèn bi gầm X-Light F10 New</a></h3><div class="product-price">4.300.000 đ</div><div class="price-note">Giá niêm yết · xác nhận công lắp theo từng xe</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>Kiểm tra theo xe</b></div><div class="spec"><span>Cos / Pha</span><b>~45W / ~55W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big</b></div><div class="spec"><span>Phân khúc</span><b>4–5 triệu</b></div></div><div class="product-fit"><span>Đi phố</span><span>Ngân sách vừa</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh F10 New"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 11 -->
+              <article class="product-card" data-id="f10-hyper-20" data-brand="X-Light" data-size="2.0" data-temp="4300" data-use="city highway keep-original" data-price="5.5" data-name="Bi gầm X-Light F10 Hyper 2.0">
+                <div class="product-media"><span class="brand-tag">X-LIGHT</span><span class="product-badges"><span class="product-badge">MỞ BÁN</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div><span class="lamp-eye one"></span></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Bi gầm X-Light F10 Hyper 2.0</a></h3><div class="product-price">5.500.000 đ</div><div class="price-note">Giá niêm yết · model 2.0 inch hiệu suất cao</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>2.0 inch</b></div><div class="spec"><span>Cos / Pha</span><b>~50W / ~55W</b></div><div class="spec"><span>Nhân LED</span><b>6 Big + 1 Osram</b></div><div class="spec"><span>Ưu tiên</span><b>Gọn & mạnh</b></div></div><div class="product-fit"><span>Hốc nhỏ</span><span>Đi tỉnh</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh F10 Hyper 2.0"><span>⇄</span></label></div></div>
+              </article>
+              <!-- Product 12 -->
+              <article class="product-card" data-id="henvvei-gt1" data-brand="Henvvei" data-size="check" data-temp="4300" data-use="city" data-price="5.8" data-name="Bi gầm Henvvei GT-1">
+                <div class="product-media"><span class="brand-tag">HENVVEI</span><span class="product-badges"><span class="product-badge dark">ĐỘC QUYỀN</span></span><div class="lamp-art"><div class="lamp-body"></div><div class="lamp-lens"></div></div></div>
+                <div class="product-body"><h3 class="product-name"><a href="#">Bi gầm Henvvei GT-1</a></h3><div class="product-price">5.800.000 đ</div><div class="price-note">Giá niêm yết · cần bổ sung dữ liệu fitment</div><div class="spec-grid"><div class="spec"><span>Lens</span><b>Kiểm tra theo xe</b></div><div class="spec"><span>Cos / Pha</span><b>35W / 55W</b></div><div class="spec"><span>Nhân LED</span><b>6</b></div><div class="spec"><span>Trạng thái</span><b>Độc quyền</b></div></div><div class="product-fit"><span>Đi phố</span><span>Kiểm tra theo xe</span></div><div class="product-actions"><a class="btn btn-dark" href="#">Xem chi tiết</a><label class="compare-control"><input class="compare-check" type="checkbox" aria-label="So sánh Henvvei GT-1"><span>⇄</span></label></div></div>
+              </article>
+            </div>
+            <div id="emptyProducts" hidden style="border:1px dashed var(--line);border-radius:18px;padding:34px;text-align:center;color:var(--muted)">Chưa có sản phẩm demo khớp bộ lọc. Hãy bỏ bớt điều kiện hoặc gửi thông tin xe để được kiểm tra trực tiếp.</div>
+            <nav class="pagination-row" aria-label="Phân trang sản phẩm"><a class="page-link active" href="https://auto365.vn/nang-cap-anh-sang-bi-gam" aria-current="page">1</a><a class="page-link" href="https://auto365.vn/nang-cap-anh-sang-bi-gam?page=2">2</a><a class="page-link show-more" href="https://auto365.vn/nang-cap-anh-sang-bi-gam?page=2">Xem thêm sản phẩm →</a></nav>
+          </div>
+        </div>
+        <div class="conversion-band">
+          <div><h3>Chưa biết xe dùng 2.0 hay 3.0 inch?</h3><p>Gửi dòng xe và đời xe. Auto365 kiểm tra hốc đèn, điện áp và phương án giữ zin trước khi chốt sản phẩm.</p></div>
+          <div class="conversion-actions"><a class="btn btn-primary" href="#finder">Kiểm tra theo xe</a><a class="btn btn-ghost" href="tel:0365365911">Gọi kỹ thuật</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="section section-soft">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Bảng giá master</div><h2>Giá bi gầm đang được quan tâm</h2><p class="section-copy">Một bảng giá evergreen duy nhất giúp người mua so sánh nhanh và giúp Google/AI nhận một nguồn dữ liệu nhất quán. Bản production phải lấy giá trực tiếp từ Product Master Data.</p></div><button class="btn btn-outline" type="button">Tải cấu hình gửi Zalo</button></div>
+        <div class="table-shell">
+          <table><thead><tr><th>Model</th><th>Lens</th><th>Nhiệt màu</th><th>Cos / Pha</th><th>Giá hiện hành</th><th>Bảo hành</th><th>Phù hợp sơ bộ</th></tr></thead><tbody>
+            <tr><td><b>X-Light F10 Turbo V2</b></td><td>3.0 inch</td><td>3000 / 4300 / 5500K</td><td>~45W / ~75W</td><td class="table-price">6.000.000 đ/cặp</td><td>24 tháng</td><td>Đi phố, đi tỉnh, nhiều điều kiện</td></tr>
+            <tr><td><b>GTR G1 Turbo V2</b></td><td>Kiểm tra theo xe</td><td>Cần đồng bộ SSOT</td><td>~45W / ~75W</td><td class="table-price">6.000.000 đ</td><td>Cần đồng bộ</td><td>Đi tỉnh, đường thiếu sáng</td></tr>
+            <tr><td><b>AES SV 2.0 Max</b></td><td>2.0 inch</td><td>Cần đồng bộ SSOT</td><td>~50W / ~60W</td><td class="table-price">5.000.000 đ</td><td>Cần đồng bộ</td><td>Hốc đèn nhỏ, ưu tiên gọn</td></tr>
+            <tr><td><b>AES SV 3.0 Pro</b></td><td>3.0 inch</td><td>Cần đồng bộ SSOT</td><td>~45W / ~65W</td><td class="table-price">5.500.000 đ</td><td>Cần đồng bộ</td><td>Vùng sáng rộng, xe đủ không gian</td></tr>
+            <tr><td><b>X-Light F10 Turbo 24V V2</b></td><td>Cần đồng bộ</td><td>3000 / 4300 / 5500K</td><td>~45W / ~75W</td><td class="table-price">6.200.000 đ</td><td>Cần đồng bộ</td><td>Xe tải dùng hệ điện 24V</td></tr>
+            <tr><td><b>X-Light 301 V2</b></td><td>Kiểm tra theo xe</td><td>3000 / 4300 / 5500K</td><td>~45W / ~55W</td><td class="table-price">4.500.000 đ</td><td>Cần đồng bộ</td><td>Ngân sách 4–5 triệu, nhu cầu đa dụng</td></tr>
+          </tbody></table>
+        </div>
+        <p class="table-note"><strong>Lưu ý triển khai:</strong> chỉ F10 Turbo V2 hiện có nội dung công khai xác định 6.000.000 đ/cặp, chưa VAT và bảo hành 24 tháng. Các dòng khác trong demo đang dùng giá hiển thị ở danh mục; team phải khóa đơn vị, VAT, công lắp, phụ kiện và ngày hiệu lực trước khi đưa vào schema hoặc claim bán hàng.</p>
+      </div>
+    </section>
+
+    <section id="compare-guide" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Hỗ trợ quyết định</div><h2>Chọn bi gầm theo điều kiện, không theo “mẫu mạnh nhất”</h2><p class="section-copy">Mỗi khối trả lời một quyết định mua hàng riêng. Đây là lớp nội dung vừa tăng chuyển đổi, vừa giúp công cụ tìm kiếm hiểu sâu chủ đề.</p></div></div>
+        <div class="decision-grid">
+          <article class="decision-card"><span class="num">01</span><span class="decision-icon">↔</span><h3>2.0 inch hay 3.0 inch?</h3><p>Khác nhau trước hết ở khả năng tương thích với hốc đèn, không chỉ ở cường độ sáng.</p><ul><li>2.0 inch: ưu tiên không gian gọn</li><li>3.0 inch: cần hốc đèn đủ kích thước</li><li>Không kết luận khi chưa kiểm tra xe</li></ul><a class="decision-link" href="#compatibility">Xem dữ liệu tương thích →</a></article>
+          <article class="decision-card"><span class="num">02</span><span class="decision-icon">☀</span><h3>3000K, 4300K hay 5500K?</h3><p>Chọn theo thời tiết, mặt đường và tần suất sử dụng; không có một nhiệt màu tốt nhất cho mọi tình huống.</p><ul><li>3000K: sắc vàng đậm</li><li>4300K: cân bằng, đa dụng</li><li>5500K: ánh sáng trắng</li></ul><a class="decision-link" href="#knowledge">Xem hướng dẫn nhiệt màu →</a></article>
+          <article class="decision-card"><span class="num">03</span><span class="decision-icon">⌁</span><h3>Giữ zin hay dùng pát chuyển?</h3><p>Phương án thi công phụ thuộc cấu trúc hốc đèn, mặt dưỡng và khả năng hoàn nguyên của từng xe.</p><ul><li>Ghi rõ có cắt/chế hay không</li><li>Ảnh hốc đèn trước khi lắp</li><li>Biên bản cấu hình khi bàn giao</li></ul><a class="decision-link" href="#process">Xem quy trình thi công →</a></article>
+          <article class="decision-card"><span class="num">04</span><span class="decision-icon">⇧</span><h3>Đi phố hay thường xuyên đi tỉnh?</h3><p>Nhu cầu vùng sáng gần, mép đường và pha hỗ trợ khác nhau theo cung đường thực tế.</p><ul><li>Đi phố: ưu tiên kiểm soát vùng sáng</li><li>Đi tỉnh: cần đánh giá vùng xa</li><li>Đường đèo: chú ý hai mép đường</li></ul><a class="decision-link" href="#evidence">Xem Beam Lab →</a></article>
+          <article class="decision-card"><span class="num">05</span><span class="decision-icon">⚡</span><h3>Xe con 12V hay xe tải 24V?</h3><p>Điện áp phải đúng cấu hình sản phẩm; không gom mọi dòng xe vào cùng một lựa chọn.</p><ul><li>Xác minh hệ điện trước lắp</li><li>Kiểm tra dây, relay và sụt áp</li><li>Ghi cấu hình trên phiếu bàn giao</li></ul><a class="decision-link" href="#finder">Chọn cấu hình 24V →</a></article>
+          <article class="decision-card"><span class="num">06</span><span class="decision-icon">₫</span><h3>Giá đã gồm những gì?</h3><p>Giá sản phẩm phải tách rõ đơn vị tính, VAT, công lắp và phụ kiện phát sinh theo xe.</p><ul><li>Giá một đèn hay một cặp</li><li>Công lắp và pát chuyển</li><li>Ngày hiệu lực và bảo hành</li></ul><a class="decision-link" href="#price">Xem bảng giá master →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="compatibility" class="section section-dark">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow" style="color:#ff6573">Auto365 Fitment Index</div><h2>Dữ liệu tương thích theo xe</h2><p class="section-copy">Tài sản độc quyền cần được xây từ xe đã kiểm tra thật: đời xe, hốc đèn, lens, điện áp, pát lắp, khả năng giữ zin và case thi công.</p></div><button class="btn btn-ghost" type="button">Đề xuất xe cần kiểm tra</button></div>
+        <div class="fitment-db">
+          <div class="db-intro"><h3>Không tạo hàng trăm dòng bằng suy đoán.</h3><p>Mỗi dòng phải có người xác minh kỹ thuật, ảnh hốc đèn, ngày kiểm tra và liên kết tới case nếu đã thi công.</p><div class="db-stat-grid"><div class="db-stat"><b>30+</b><span>Dòng xe ưu tiên giai đoạn 1</span></div><div class="db-stat"><b>8 trường</b><span>Dữ liệu fitment bắt buộc</span></div><div class="db-stat"><b>1 owner</b><span>Chịu trách nhiệm master data</span></div><div class="db-stat"><b>2 chiều</b><span>Link pillar ↔ case xe</span></div></div></div>
+          <div class="db-preview"><div class="db-search"><input id="dbSearch" type="search" placeholder="Tìm Toyota Fortuner, VinFast VF3..." aria-label="Tìm trong dữ liệu tương thích"><button class="btn btn-primary" type="button">Tìm xe</button></div><div class="db-list" id="dbList">
+            <div class="db-row" data-search="toyota fortuner 2020 2024"><div><b>Toyota Fortuner</b><br>2020–2024</div><div>Kiểm tra hốc</div><div>2.0 / 3.0</div><div class="verified">● Cần case xác minh</div></div>
+            <div class="db-row" data-search="vinfast vf3 2024 2026"><div><b>VinFast VF 3</b><br>2024–2026</div><div>Kiểm tra hốc</div><div>Theo cấu hình</div><div class="verified">● Ưu tiên thu thập</div></div>
+            <div class="db-row" data-search="ford ranger 2022 2026"><div><b>Ford Ranger</b><br>2022–2026</div><div>12V</div><div>Theo hốc</div><div class="verified">● Cần case xác minh</div></div>
+            <div class="db-row" data-search="mitsubishi xpander 2022 2026"><div><b>Mitsubishi Xpander</b><br>2022–2026</div><div>Kiểm tra hốc</div><div>2.0 / 3.0</div><div class="verified">● Cần case xác minh</div></div>
+            <div class="db-row" data-search="mazda 6 2020 2024"><div><b>Mazda 6</b><br>2020–2024</div><div>Case đã có</div><div>3.0</div><div class="verified">● Có thể hoàn thiện</div></div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" class="section section-soft">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Bằng chứng nguyên bản</div><h2>Beam Lab và xe thực tế</h2><p class="section-copy">Đây là lớp tạo khác biệt cho SEO, AI Search và bán hàng: thông số đo, ảnh cùng điều kiện, hiện trạng xe, lý do chọn cấu hình và người phụ trách kỹ thuật.</p></div><button class="btn btn-outline" type="button">Xem toàn bộ thư viện xe</button></div>
+        <div class="evidence-grid">
+          <article class="beam-lab"><div class="lab-header"><div><span class="pill" style="background:rgba(255,255,255,.1);color:#fff">AUTO365 BEAM LAB</span><h3 style="margin-top:12px;font-size:26px">Bản đồ vùng sáng có điều kiện đo</h3><p>Minh họa giao diện. Số liệu production chỉ được hiển thị khi đã khóa xe thử, điện áp, khoảng cách, camera và người kiểm duyệt.</p></div><span class="pill pill-red">Dữ liệu demo</span></div><div class="lab-visual"><div class="lab-road"><div class="lab-beam"></div><div class="lux-points"><span class="lux a">20m</span><span class="lux b">35m</span><span class="lux c">35m</span><span class="lux d">Lề trái</span><span class="lux e">Lề phải</span></div></div></div><div class="lab-metrics"><div class="lab-metric"><span>Xe thử</span><b>Ghi rõ phiên bản</b></div><div class="lab-metric"><span>Điện áp</span><b>Đo tại xe</b></div><div class="lab-metric"><span>Camera</span><b>Khóa ISO/WB</b></div><div class="lab-metric"><span>Người duyệt</span><b>Kỹ thuật Auto365</b></div></div></article>
+          <div class="case-stack">
+            <article class="case-card"><div class="case-thumb"></div><div><span class="pill pill-green">CASE CÓ THỂ HOÀN THIỆN</span><h3 style="font-size:18px;margin-top:9px">Mazda 6 · X-Light F10 Turbo V2 4300K</h3><p>Bổ sung hiện trạng trước lắp, hình beam cùng setting, vị trí lắp, khó khăn kỹ thuật và phản hồi người dùng.</p><div class="case-meta"><span>Xe thật</span><span>Cấu hình thật</span><span>Giá tại thời điểm lắp</span></div></div></article>
+            <article class="case-card"><div class="case-thumb"></div><div><span class="pill">CASE ƯU TIÊN</span><h3 style="font-size:18px;margin-top:9px">VinFast VF 3 · cấu hình theo hốc đèn</h3><p>Không chọn model trước khi kiểm tra xe. Ghi rõ lens, pát, điện áp, mức độ giữ zin và kết quả nghiệm thu.</p><div class="case-meta"><span>VinFast</span><span>Fitment</span><span>Hệ điện</span></div></div></article>
+            <article class="case-card"><div class="case-thumb"></div><div><span class="pill">CASE ƯU TIÊN</span><h3 style="font-size:18px;margin-top:9px">Toyota Fortuner · so sánh 2.0 và 3.0 inch</h3><p>Tập trung vào quyết định kỹ thuật theo đời xe, không biến thành bài quảng cáo chỉ thay tên xe.</p><div class="case-meta"><span>Hốc đèn</span><span>Giữ zin</span><span>So sánh</span></div></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <div class="section-head"><div><div class="eyebrow">Quy trình dịch vụ</div><h2>Từ kiểm tra xe đến nghiệm thu ánh sáng</h2><p class="section-copy">Quy trình được viết cho người mua, đồng thời tạo bằng chứng năng lực thi công thay vì chỉ mô tả sản phẩm.</p></div></div>
+        <div class="process-grid">
+          <article class="process-card"><h3>Ghi nhận nhu cầu</h3><p>Cung đường, thời tiết, tần suất lái đêm và ngân sách.</p></article>
+          <article class="process-card"><h3>Kiểm tra xe</h3><p>Hốc đèn, điện áp, mặt dưỡng, dây điện và khả năng hoàn nguyên.</p></article>
+          <article class="process-card"><h3>Chốt cấu hình</h3><p>Model, lens, nhiệt màu, pát, phụ kiện, giá và bảo hành.</p></article>
+          <article class="process-card"><h3>Thi công</h3><p>Ghi nhận kỹ thuật viên, vị trí lắp và vấn đề phát sinh.</p></article>
+          <article class="process-card"><h3>Cân chỉnh</h3><p>Kiểm tra vùng sáng, đường cắt và độ ổn định hệ điện.</p></article>
+          <article class="process-card"><h3>Bàn giao</h3><p>Phiếu cấu hình, bảo hành, ảnh nghiệm thu và hướng dẫn sử dụng.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="knowledge" class="section section-soft">
+      <div class="container">
+        <div class="expert-card">
+          <div class="expert-avatar">KT</div>
+          <div class="expert-copy"><div class="eyebrow">Kiểm duyệt chuyên môn</div><h3 style="font-size:25px;margin-top:7px">Nội dung bán hàng phải đi cùng người chịu trách nhiệm kỹ thuật</h3><p>Bản production cần hiển thị người biên soạn, người kiểm duyệt kỹ thuật, ngày cập nhật, phiên bản dữ liệu và nguồn thông số. Không để writer tự lấy dữ liệu từ bài cũ rồi suy diễn.</p><div class="expert-tags"><span class="pill">Content owner: Trân</span><span class="pill">Technical review: Cường</span><span class="pill">Media evidence: Tâm</span></div></div>
+          <div class="review-status"><b>Trạng thái dữ liệu</b><span>Chỉ công bố claim đã có nguồn, điều kiện đo và ngày xác minh.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container faq-grid">
+        <div><div class="eyebrow">Câu hỏi thực tế</div><h2>Những điều cần biết trước khi lắp bi gầm</h2><p class="section-copy">FAQ hiển thị đầy đủ trong HTML, trả lời đúng câu hỏi mua hàng và không dùng để nhồi biến thể từ khóa.</p></div>
+        <div class="faq-list">
+          <details open><summary>Bi gầm ô tô khác đèn sương mù nguyên bản thế nào?</summary><p>Đèn sương mù là cách gọi theo vị trí hoặc chức năng. Bi gầm là giải pháp projector có thấu kính, thường được lắp tại vị trí đèn gầm hoặc hốc đèn sương mù. Không phải mọi đèn sương mù đều là bi gầm.</p></details>
+          <details><summary>Nên chọn bi gầm 2.0 inch hay 3.0 inch?</summary><p>Cần dựa vào kích thước hốc đèn, mặt dưỡng, phương án pát lắp và yêu cầu giữ zin. Không nên chọn chỉ dựa trên quan niệm kích thước lớn hơn luôn tốt hơn.</p></details>
+          <details><summary>Giá trên trang đã gồm công lắp và phụ kiện chưa?</summary><p>Mỗi model phải ghi rõ giá theo một đèn hay một cặp, VAT, công lắp, pát chuyển và phụ kiện. Nếu chưa kiểm tra xe, chi phí phát sinh theo cấu trúc hốc đèn cần được báo riêng trước thi công.</p></details>
+          <details><summary>3000K, 4300K và 5500K phù hợp điều kiện nào?</summary><p>3000K cho sắc vàng đậm, 4300K thiên về cân bằng và 5500K cho ánh sáng trắng. Lựa chọn thực tế cần xét thời tiết, mặt đường và tần suất đi tỉnh hoặc lái trong khu vực có mưa/sương.</p></details>
+          <details><summary>Lắp bi gầm có chắc chắn không ảnh hưởng kiểm định không?</summary><p>Không nên cam kết tuyệt đối cho mọi xe và mọi phương án lắp. Cần phân biệt thay thế, lắp bổ sung và cải tạo; đồng thời rà soát quy định hiện hành tại thời điểm kiểm định và cấu hình thực tế của xe.</p></details>
+          <details><summary>Auto365 nghiệm thu ánh sáng sau lắp như thế nào?</summary><p>Bản chuẩn cần ghi rõ bước kiểm tra hệ điện, cân chỉnh vùng sáng, ảnh nghiệm thu cùng điều kiện, phiếu cấu hình đã lắp và thông tin bảo hành. Quy trình thực tế phải được đội kỹ thuật phê duyệt trước khi công bố.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="branch" class="section" style="padding-top:0">
+      <div class="container">
+        <div class="branch-cta"><div><h2>Tìm điểm Auto365 phù hợp để kiểm tra xe</h2><p>Trang trụ cột quốc gia dẫn người dùng sang trang hệ thống hoặc trang chi nhánh theo tỉnh. Website chi nhánh chỉ sở hữu intent địa phương, không cạnh tranh truy vấn quốc gia với trang này.</p></div><div class="branch-actions"><a class="btn btn-white" href="https://auto365.vn/chi-nhanh">Tìm điểm gần nhất</a><a class="btn btn-ghost" href="tel:0365365911">Gọi 0365 365 911</a></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="https://auto365.vn/"><span class="brand-mark">A</span><span style="color:#fff">AUTO365</span></a><p>Demo commerce pillar cho danh mục Bi Gầm: ưu tiên trải nghiệm chọn mua, dữ liệu theo xe, bằng chứng thi công và cấu trúc semantic rõ cho SEO/AI Search.</p></div>
+        <div class="footer-col"><h3>Bi gầm ô tô</h3><a href="#finder">Chọn theo xe</a><a href="#products">Sản phẩm</a><a href="#price">Bảng giá</a><a href="#compare-guide">So sánh</a></div>
+        <div class="footer-col"><h3>Năng lực Auto365</h3><a href="#compatibility">Fitment Index</a><a href="#evidence">Beam Lab</a><a href="#process">Quy trình lắp</a><a href="#branch">Hệ thống điểm lắp</a></div>
+        <div class="footer-col"><h3>Hỗ trợ</h3><a href="#faq">Hỏi đáp</a><a href="#warranty">Bảo hành</a><a href="tel:0365365911">Hotline</a><a href="#">Zalo tư vấn</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Auto365. Bản demo giao diện — không phải trang bán hàng chính thức.</span><span>Meta robots: noindex, nofollow · Canonical minh họa URL production.</span></div>
+    </div>
+  </footer>
+
+  <div class="compare-bar" id="compareBar" aria-live="polite"><div class="compare-summary"><b><span id="compareCount">0</span> sản phẩm đã chọn</b>Tối đa 3 sản phẩm</div><div class="compare-items" id="compareItems"></div><button class="btn btn-primary" id="openCompare" type="button">So sánh ngay</button></div>
+
+  <div class="modal" id="compareModal" role="dialog" aria-modal="true" aria-labelledby="compareTitle">
+    <div class="modal-dialog"><div class="modal-head"><h3 id="compareTitle">So sánh sản phẩm đã chọn</h3><button class="modal-close" id="closeCompare" type="button" aria-label="Đóng">×</button></div><div class="compare-table" id="compareTable"></div></div>
+  </div>
+
+  <div class="filter-drawer" id="filterDrawer" aria-hidden="true"><div class="filter-sheet"><div class="filter-sheet-head"><b>Bộ lọc bi gầm</b><button class="modal-close" id="closeFilter" type="button" aria-label="Đóng bộ lọc">×</button></div><div id="mobileFilters"></div><div style="padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:10px"><button class="btn btn-outline" type="button" data-clear-filters>Xóa lọc</button><button class="btn btn-primary" type="button" id="applyMobileFilter">Xem sản phẩm</button></div></div></div>
+
+  <div class="mobile-sticky" aria-label="Liên hệ nhanh"><a href="tel:0365365911"><span>☎</span>Gọi tư vấn</a><a href="#"><span>◉</span>Zalo</a><button class="primary" type="button" onclick="document.querySelector('#finder').scrollIntoView()"><span>⌁</span>Chọn theo xe</button></div>
+
+  <script>
+    (function(){
+      const grid = document.getElementById('productGrid');
+      const cards = [...grid.querySelectorAll('.product-card')];
+      const visibleCount = document.getElementById('visibleCount');
+      const activeFilters = document.getElementById('activeFilters');
+      const emptyProducts = document.getElementById('emptyProducts');
+      const sortSelect = document.getElementById('sortProducts');
+      const filtersDesktop = document.querySelector('.filters');
+      const mobileFilters = document.getElementById('mobileFilters');
+      const filterDrawer = document.getElementById('filterDrawer');
+      const filterNames = {brand:'Thương hiệu',size:'Lens',temp:'Nhiệt màu',use:'Nhu cầu'};
+
+      // Clone desktop filter groups into the mobile sheet while keeping unique controls.
+      [...filtersDesktop.querySelectorAll('.filter-group')].forEach(group => {
+        const clone = group.cloneNode(true);
+        clone.querySelectorAll('input').forEach((input,i)=>{
+          const originalId=input.id;
+          if(originalId==='minPrice'||originalId==='maxPrice') input.dataset.priceRole=originalId;
+          input.id='m-'+(input.name||originalId||'price')+'-'+i+'-'+Math.random().toString(16).slice(2);
+        });
+        mobileFilters.appendChild(clone);
+      });
+
+      function controls(){ return [...document.querySelectorAll('.filters input[type=checkbox], #mobileFilters input[type=checkbox]')]; }
+      function selectedValues(name){ return [...new Set(controls().filter(i=>i.name===name && i.checked).map(i=>i.value))]; }
+      function syncTwin(source){
+        controls().filter(i=>i!==source && i.name===source.name && i.value===source.value).forEach(i=>i.checked=source.checked);
+      }
+      function filterProducts(){
+        const selected={brand:selectedValues('brand'),size:selectedValues('size'),temp:selectedValues('temp'),use:selectedValues('use')};
+        const min=Number(document.getElementById('minPrice')?.value||0);
+        const max=Number(document.getElementById('maxPrice')?.value||Infinity);
+        let count=0;
+        cards.forEach(card=>{
+          const ok=Object.entries(selected).every(([key,vals])=>!vals.length || vals.some(v=>card.dataset[key].split(' ').includes(v))) && Number(card.dataset.price)>=min && Number(card.dataset.price)<=max;
+          card.hidden=!ok;if(ok)count++;
+        });
+        visibleCount.textContent=count;emptyProducts.hidden=count!==0;renderChips(selected,min,max);sortProducts();
+      }
+      function renderChips(selected,min,max){
+        activeFilters.innerHTML='';
+        Object.entries(selected).forEach(([name,vals])=>vals.forEach(value=>{
+          const chip=document.createElement('span');chip.className='filter-chip';chip.innerHTML=`${filterNames[name]}: ${value}<button type="button" aria-label="Bỏ lọc ${value}">×</button>`;
+          chip.querySelector('button').onclick=()=>{controls().filter(i=>i.name===name&&i.value===value).forEach(i=>i.checked=false);filterProducts();};activeFilters.appendChild(chip);
+        }));
+        if(min||Number.isFinite(max)){const chip=document.createElement('span');chip.className='filter-chip';chip.innerHTML=`Giá: ${min||0}–${Number.isFinite(max)?max:'∞'} triệu <button type="button">×</button>`;chip.querySelector('button').onclick=()=>{document.getElementById('minPrice').value='';document.getElementById('maxPrice').value='';filterProducts();};activeFilters.appendChild(chip);}
+      }
+      function clearFilters(){ controls().forEach(i=>i.checked=false);document.getElementById('minPrice').value='';document.getElementById('maxPrice').value='';document.querySelectorAll('[data-price-role]').forEach(i=>i.value='');document.querySelectorAll('.quick-pick').forEach(b=>b.classList.remove('active'));filterProducts(); }
+      function sortProducts(){
+        const type=sortSelect.value;const sorted=[...cards].sort((a,b)=>{
+          if(type==='price-asc')return Number(a.dataset.price)-Number(b.dataset.price);
+          if(type==='price-desc')return Number(b.dataset.price)-Number(a.dataset.price);
+          if(type==='name')return a.dataset.name.localeCompare(b.dataset.name,'vi');
+          return cards.indexOf(a)-cards.indexOf(b);
+        });sorted.forEach(c=>grid.appendChild(c));
+      }
+      controls().forEach(input=>input.addEventListener('change',()=>{syncTwin(input);filterProducts();}));
+      ['minPrice','maxPrice'].forEach(id=>document.getElementById(id)?.addEventListener('input',filterProducts));
+      document.querySelectorAll('[data-price-role]').forEach(input=>input.addEventListener('input',()=>{document.getElementById(input.dataset.priceRole).value=input.value;filterProducts();}));
+      sortSelect.addEventListener('change',sortProducts);
+      document.querySelectorAll('[data-clear-filters]').forEach(b=>b.addEventListener('click',clearFilters));
+      document.querySelectorAll('.quick-pick').forEach(btn=>btn.addEventListener('click',()=>{
+        const key=['brand','size','temp','use'].find(k=>btn.dataset['filter'+k[0].toUpperCase()+k.slice(1)]);
+        const value=btn.dataset['filter'+key[0].toUpperCase()+key.slice(1)];
+        const target=controls().find(i=>i.name===key&&i.value===value);if(target){const next=!target.checked;controls().filter(i=>i.name===key&&i.value===value).forEach(i=>i.checked=next);btn.classList.toggle('active',next);filterProducts();document.querySelector('#products').scrollIntoView({behavior:'smooth'});}
+      }));
+      document.getElementById('openFilter').onclick=()=>{filterDrawer.classList.add('show');filterDrawer.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');};
+      document.getElementById('closeFilter').onclick=closeFilter;
+      document.getElementById('applyMobileFilter').onclick=closeFilter;
+      function closeFilter(){filterDrawer.classList.remove('show');filterDrawer.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');}
+      filterDrawer.addEventListener('click',e=>{if(e.target===filterDrawer)closeFilter();});
+
+      // Fitment demo
+      const fitmentForm=document.getElementById('fitmentForm');const fitmentResult=document.getElementById('fitmentResult');
+      const suggestions={
+        city:[['X-Light F10 New','Phân khúc 4–5 triệu'],['AES SV 2.0 Max','Ưu tiên hốc đèn nhỏ'],['X-Light F10 Pro V2','Cấu hình đa dụng']],
+        rain:[['X-Light 301 V2','3 nhiệt màu'],['X-Light F10 Turbo V2 4300K','Cân bằng trong nhiều điều kiện'],['X-Light F10 Pro V2','Cần kiểm tra hốc đèn']],
+        highway:[['X-Light F10 Turbo V2','Cos ~45W / Pha ~75W'],['GTR G1 Turbo V2','Cấu hình đi tỉnh'],['X-Light F10 Hyper 2.0','Gọn hốc đèn, hiệu suất cao']],
+        mountain:[['GTR G1 Turbo V2','Ưu tiên đánh giá vùng pha'],['X-Light F10 Turbo V2','Cần cân chỉnh trên xe'],['AES SV 3.0 Pro','Kiểm tra không gian hốc đèn']],
+        '24v':[['X-Light F10 Turbo 24V V2','Thiết kế cho hệ điện 24V'],['Kiểm tra hệ điện xe','Không thay thế bằng model 12V'],['Kỹ thuật xác nhận pát lắp','Trước khi báo giá cuối']]
+      };
+      fitmentForm.addEventListener('submit',e=>{
+        e.preventDefault();const make=document.getElementById('make').value;const model=document.getElementById('model').value;const year=document.getElementById('year').value;
+        if(!make||!model||!year){fitmentResult.classList.add('show');fitmentResult.innerHTML='<b>Vui lòng chọn đủ hãng xe, dòng xe và năm sản xuất.</b>';return;}
+        const need=fitmentForm.querySelector('input[name=need]:checked').value;const items=suggestions[need];
+        fitmentResult.classList.add('show');fitmentResult.innerHTML=`<b>Gợi ý bước đầu cho ${make} ${model} · ${year}</b><div class="result-list">${items.map(i=>`<div class="result-item"><b>${i[0]}</b><span>${i[1]}</span></div>`).join('')}</div><p style="font-size:11px;color:#5b6a65;margin-top:10px">Kết quả demo chưa thay cho Fitment Index đã xác minh. Cần kiểm tra hốc đèn, điện áp và phương án giữ zin trước khi chốt.</p>`;
+      });
+
+      // Compare
+      const compareBar=document.getElementById('compareBar'), compareCount=document.getElementById('compareCount'), compareItems=document.getElementById('compareItems');
+      const compareModal=document.getElementById('compareModal'), compareTable=document.getElementById('compareTable');
+      function selectedCards(){return cards.filter(c=>c.querySelector('.compare-check').checked);}
+      function updateCompare(changed){
+        let selected=selectedCards();if(selected.length>3 && changed){changed.checked=false;selected=selectedCards();alert('Demo cho phép so sánh tối đa 3 sản phẩm.');}
+        compareCount.textContent=selected.length;compareItems.innerHTML=selected.map(c=>`<span class="compare-mini">${c.dataset.name}</span>`).join('');compareBar.classList.toggle('show',selected.length>0);
+      }
+      document.querySelectorAll('.compare-check').forEach(ch=>ch.addEventListener('change',()=>updateCompare(ch)));
+      document.getElementById('openCompare').onclick=()=>{
+        const selected=selectedCards();if(!selected.length)return;compareTable.style.setProperty('--compare-count',selected.length);
+        const rows=[['Sản phẩm',...selected.map(c=>`<b>${c.dataset.name}</b>`)],['Giá demo',...selected.map(c=>c.querySelector('.product-price').textContent)],['Thương hiệu',...selected.map(c=>c.dataset.brand)],['Lens',...selected.map(c=>c.querySelector('.spec b').textContent)],['Nhiệt màu / dữ liệu',...selected.map(c=>c.querySelectorAll('.spec b')[2]?.textContent||'Cần đồng bộ')],['Nhu cầu',...selected.map(c=>[...c.querySelectorAll('.product-fit span')].map(s=>s.textContent).join(', ')||'Kiểm tra theo xe')]];
+        compareTable.innerHTML=rows.map(r=>`<div class="compare-row">${r.map(x=>`<div>${x}</div>`).join('')}</div>`).join('');compareModal.classList.add('show');document.body.classList.add('modal-open');
+      };
+      function closeCompare(){compareModal.classList.remove('show');document.body.classList.remove('modal-open');}
+      document.getElementById('closeCompare').onclick=closeCompare;compareModal.addEventListener('click',e=>{if(e.target===compareModal)closeCompare();});
+
+      // DB search
+      document.getElementById('dbSearch').addEventListener('input',e=>{const q=e.target.value.toLowerCase().trim();document.querySelectorAll('#dbList .db-row').forEach(r=>r.style.display=!q||r.dataset.search.includes(q)?'grid':'none');});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCompare();closeFilter();}});
+      filterProducts();
+    })();
+  </script>
+</body>
+</html>

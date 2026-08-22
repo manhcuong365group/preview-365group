@@ -1,0 +1,318 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://auto365.vn/#website",
+      "url": "https://auto365.vn/",
+      "name": "Auto365"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auto365.vn/#organization",
+      "name": "Auto365",
+      "url": "https://auto365.vn/"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://auto365.vn/nang-cap-anh-sang-bi-gam#reviewer-nguyen-quang-dao",
+      "name": "Nguyễn Quang Đạo",
+      "jobTitle": "Rà soát kỹ thuật phụ kiện điện tử ô tô",
+      "worksFor": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://auto365.vn/nang-cap-anh-sang-bi-gam#webpage",
+      "url": "https://auto365.vn/nang-cap-anh-sang-bi-gam",
+      "name": "Bi gầm ô tô: sản phẩm, giá, cách chọn theo xe và case thực tế",
+      "description": "Danh mục bi gầm Auto365 với bộ lọc, so sánh sản phẩm, hướng dẫn chọn theo xe, case lắp đặt thực tế và nội dung kỹ thuật.",
+      "isPartOf": {
+        "@id": "https://auto365.vn/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Bi gầm ô tô"
+        },
+        {
+          "@type": "Thing",
+          "name": "Đèn gầm ô tô"
+        }
+      ],
+      "dateModified": "2026-08-22",
+      "citation": [
+        "https://auto365.vn/ford-everest-sport-2022-lap-bi-gam-aes-sv-30-max",
+        "https://auto365.vn/hyundai-creta-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k",
+        "https://auto365.vn/mazda-cx-5-2016-lap-bi-gam-x-light-f10-turbo-v2-4300k",
+        "https://auto365.vn/mitsubishi-outlander-nang-cap-bi-gam-x-light-301-v2"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://auto365.vn/nang-cap-anh-sang-bi-gam#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://auto365.vn/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Nâng cấp ánh sáng",
+          "item": "https://auto365.vn/nang-cap-anh-sang"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Bi gầm",
+          "item": "https://auto365.vn/nang-cap-anh-sang-bi-gam"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://auto365.vn/nang-cap-anh-sang-bi-gam#products",
+      "name": "Danh sách sản phẩm bi gầm",
+      "numberOfItems": 31,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Bi gầm GTR G1 Turbo V2"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "BI GẦM AES SV 2.0 MAX"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "BI GẦM AES SV 3.0 PRO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "BI GẦM AES SV 3.0 MAX"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "ĐÈN BI GẦM X-LIGHT F10 TURBO 24V V2"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "ĐÈN BI GẦM X-LIGHT 301 V2"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "ĐÈN BI GẦM X-LIGHT F10 TURBO V2"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "ĐÈN BI GẦM X-LIGHT F10 PRO V2"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Bi Gầm X-Light F10 2.0 New"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "BI GẦM X-LIGHT X3 ULTRA"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "ĐÈN BI GẦM X-LIGHT F10 NEW"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "BI GẦM X-LIGHT F10 HYPER 2.0"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "X-LIGHT F10 2.0 INCH MOTO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "BI GẦM X-LIGHT F10 PRO 3 NHIỆT MÀU"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "BI GẦM X-LIGHT F10 2.0 2024"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "BI GẦM X-LIGHT F10 TURBO 24V"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "BI GẦM HENVVEI GT-1"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "BI GẦM GTR G1 TURBO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "BI GẦM X-LIGHT F10 TURBO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "BI GẦM X-LIGHT F10 2.0 INCH 2023"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "BI GẦM X-LIGHT X3 PRO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "BI GẦM TITAN 301 - 3 NHIỆT MÀU"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "BI GẦM GTR G1 ULTRA"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "BI GẦM RED LIGHTING R8 SPYDER"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "BI GẦM FOGWAY GEN 1"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "BI GẦM MATRIX LIGHT M1 PRO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "BI GẦM X-LIGHT F10 2022 - CÓ MẮT QUỶ"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "HB4 - 9006 - HONDA VÀ ĐÁ PHA BI GẦM"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "BI GẦM LED GTR G1 PRO"
+        },
+        {
+          "@type": "ListItem",
+          "position": 30,
+          "name": "BI GẦM X-LIGHT F10 NEW"
+        },
+        {
+          "@type": "ListItem",
+          "position": 31,
+          "name": "BI GẦM GTR SPECIAL EDITION 150 PLUS"
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://auto365.vn/nang-cap-anh-sang-bi-gam#real-cases",
+      "name": "Case xe thực tế lắp bi gầm tại Auto365",
+      "numberOfItems": 4,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://auto365.vn/ford-everest-sport-2022-lap-bi-gam-aes-sv-30-max",
+          "name": "Ford Everest Sport 2022 lắp bi gầm AES SV 3.0 Max"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://auto365.vn/hyundai-creta-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k",
+          "name": "Hyundai Creta 2022 lắp bi gầm X-Light F10 Turbo V2 4300K"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://auto365.vn/mazda-cx-5-2016-lap-bi-gam-x-light-f10-turbo-v2-4300k",
+          "name": "Mazda CX-5 2016 lắp bi gầm X-Light F10 Turbo V2 4300K"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "url": "https://auto365.vn/mitsubishi-outlander-nang-cap-bi-gam-x-light-301-v2",
+          "name": "Mitsubishi Outlander nâng cấp bi gầm X-Light 301 V2"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://auto365.vn/nang-cap-anh-sang-bi-gam#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Bi gầm ô tô là gì?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bi gầm là cụm đèn sử dụng thấu kính hội tụ, lắp ở vị trí thấp phía trước xe để bổ sung vùng sáng gần mặt đường. Hiệu quả phụ thuộc cấu hình sản phẩm, vị trí lắp và quá trình căn chỉnh."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bi gầm 2.0 inch và 3.0 inch khác nhau thế nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Khác trước hết ở kích thước lens và không gian lắp đặt. Lens 2.0 inch gọn hơn cho hốc đèn nhỏ; lens 3.0 inch có nhiều lựa chọn hiệu năng cao. Khả năng lắp cần kiểm tra trên đúng xe."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Đi mưa nên chọn 3000K, 4300K hay 5500K?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "3000K cho sắc vàng rõ, 4300K cân bằng và 5500K trắng hơn. Không có một mức luôn tối ưu cho mọi tình huống; cần xem thêm beam pattern, mặt đường và điều kiện sử dụng."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Có nên chọn bi gầm công suất cao nhất?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Không. Công suất không mô tả đầy đủ chất lượng vùng sáng; cần xem cùng đường cắt Cos, độ phủ, độ gom Pha, tản nhiệt, fitment và căn chỉnh."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Làm sao biết xe có lắp vừa bi gầm?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cần kiểm tra đời xe, hốc đèn, mặt dưỡng, kích thước thân đèn, pát/bộ gá, khoảng hở tản nhiệt, dây/giắc và hệ thống điện."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+const fs = require('fs');
+const html = fs.readFileSync('auto365/bi-gam/index.html', 'utf8');
+const start = html.indexOf('id="evidence"');
+const end = html.indexOf('</section>', start);
+const section = html.slice(start, end);
+const required = ['Case xe đã lắp và vùng sáng thực tế', 'Mazda 6', 'X-Light F10 Turbo V2', '4300K', 'mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k'];
+const missing = required.filter((item) => !section.includes(item));
+if (missing.length) throw new Error(`Public case evidence is incomplete: ${missing.join(', ')}`);
+if (html.includes('id="compatibility"')) throw new Error('Duplicate case-directory block is still published.');
+console.log('Single public case-evidence section verified.');

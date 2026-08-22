@@ -1,0 +1,32 @@
+:root {
+  /* primitive.color */
+  --p-red-50:#fff1f2;--p-red-100:#ffe1e4;--p-red-500:#e31d2b;--p-red-600:#cc1422;--p-red-700:#b90f1c;
+  --p-gray-0:#fff;--p-gray-25:#fbfbfc;--p-gray-50:#f5f6f8;--p-gray-100:#eef0f3;--p-gray-200:#e2e4e8;--p-gray-300:#cdd1d7;--p-gray-500:#81868e;--p-gray-600:#62666d;--p-gray-800:#292b30;--p-gray-900:#101114;--p-black:#07080a;
+  --p-green-600:#17824a;--p-amber-600:#b76a00;
+  /* primitive.spacing */
+  --p-s-1:4px;--p-s-2:8px;--p-s-3:12px;--p-s-4:16px;--p-s-5:20px;--p-s-6:24px;--p-s-8:32px;--p-s-10:40px;--p-s-14:56px;--p-s-18:72px;
+  /* primitive.radius */
+  --p-r-sm:6px;--p-r-md:10px;--p-r-lg:14px;--p-r-xl:18px;--p-r-pill:999px;
+  /* primitive.type */
+  --p-fs-12:12px;--p-fs-13:13px;--p-fs-14:14px;--p-fs-16:16px;--p-fs-18:18px;--p-fs-22:22px;--p-fs-28:28px;--p-fs-36:36px;--p-fs-48:48px;
+  --p-shadow-sm:0 1px 2px rgba(16,17,20,.06);--p-shadow-md:0 10px 30px rgba(16,17,20,.08);--p-shadow-float:0 16px 48px rgba(16,17,20,.18);
+
+  /* semantic */
+  --brand:var(--p-red-500);--brand-hover:var(--p-red-600);--brand-active:var(--p-red-700);--brand-soft:var(--p-red-50);
+  --surface:var(--p-gray-0);--surface-subtle:var(--p-gray-50);--surface-dark:var(--p-gray-900);--surface-black:var(--p-black);
+  --text:var(--p-gray-900);--text-muted:var(--p-gray-600);--text-soft:var(--p-gray-500);--text-inverse:var(--p-gray-0);
+  --border:var(--p-gray-200);--border-strong:var(--p-gray-300);--success:var(--p-green-600);--warning:var(--p-amber-600);
+  --focus-ring:0 0 0 3px rgba(227,29,43,.16);
+  --container:1240px;--gutter:24px;--section-y:56px;
+
+  /* component */
+  --header-bg:var(--surface-black);--header-text:var(--text-inverse);
+  --hero-bg:linear-gradient(120deg,#0b0c0f 0%,#17191d 100%);
+  --btn-primary-bg:var(--brand);--btn-primary-hover:var(--brand-hover);--btn-radius:var(--p-r-md);
+  --finder-bg:var(--surface);--finder-border:var(--border);--finder-radius:var(--p-r-xl);
+  --filter-width:250px;--filter-radius:var(--p-r-lg);--filter-control-h:38px;
+  --product-radius:var(--p-r-lg);--product-border:var(--border);--product-media-bg:var(--surface-subtle);--product-price:var(--brand);
+  --compare-bg:var(--surface-dark);--compare-shadow:var(--p-shadow-float);
+  --answer-bg:#fff8f8;--answer-border:#ffd7db;
+}
+@media(max-width:767px){:root{--gutter:16px;--section-y:40px}}
