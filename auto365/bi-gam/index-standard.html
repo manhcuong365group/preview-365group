@@ -425,6 +425,16 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
       }
     });
   });
+  // Đưa các block hub bổ sung về đúng luồng đọc: giá → kiến thức → so sánh → chọn → tư vấn.
+  (() => {
+    const price = document.getElementById('bang-gia');
+    if (!price) return;
+    let anchor = price;
+    ['kien-thuc-nen','so-sanh-giai-phap','huong-dan-chon-lap','quyet-dinh-chon','tu-van-ban-hang','tin-tuc-uy-tin']
+      .map((id) => document.getElementById(id))
+      .filter(Boolean)
+      .forEach((section) => { anchor.insertAdjacentElement('afterend', section); anchor = section; });
+  })();
 </script>
 </body>
 </html>
