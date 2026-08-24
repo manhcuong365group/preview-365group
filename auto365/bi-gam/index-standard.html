@@ -151,6 +151,11 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     .choice-card ul { color:#087853; font-size:10px; line-height:1.8; list-style:none; padding:0; margin:10px 0 0; }
     .choice-card li:before { content:'✓'; margin-right:7px; font-weight:900; }
     .choice-card a { display:block; margin-top:10px; color:var(--red); font-size:10px; font-weight:900; }
+    /* Giữ product rail 2 hàng của index cũ: xem được nhiều card, phần còn lại cuộn ngang. */
+    #san-pham .product-grid { display:grid!important; grid-template-rows:repeat(2,minmax(0,auto))!important; grid-template-columns:none!important; grid-auto-flow:column!important; grid-auto-columns:minmax(270px,1fr)!important; gap:16px!important; overflow-x:auto!important; overflow-y:hidden!important; padding:2px 2px 12px!important; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:#c9cdd3 transparent; }
+    #san-pham .product-grid > .product-card { min-width:0; scroll-snap-align:start; }
+    #san-pham .product-grid { cursor:grab; }
+    #san-pham .product-grid.catalog-is-dragging { cursor:grabbing; scroll-snap-type:none; user-select:none; }
     /* Quy trình dạng chuỗi như index cũ: 7 bước liên tục trên một hàng. */
     .process-section .process-list { display:grid!important; grid-template-columns:repeat(7,minmax(0,1fr))!important; grid-auto-flow:initial!important; gap:0!important; width:100%!important; max-width:none!important; overflow:hidden!important; border:1px solid #343942; }
     .process-section .process-list li { min-height:196px; padding:28px 16px 22px; border-right:1px solid #343942; display:flex; flex-direction:column; justify-content:space-between; }
@@ -161,6 +166,7 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     @media(max-width:900px){.lead-hub-card{grid-template-columns:1fr}.lead-hub-card > div:first-child{padding:30px}.knowledge-deep-grid{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}.compare-grid,.guide-grid,.choice-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:640px){.lead-hub{padding-top:38px}.lead-hub-card{border-radius:16px}.lead-hub-card > div:first-child{padding:26px 20px}.lead-hub-form{grid-template-columns:1fr;padding:24px 20px}.lead-hub-form label:first-child{grid-column:auto}.lead-hub-form label:nth-child(3){display:none}.lead-hub-submit,.lead-hub-status,.lead-hub-call{grid-column:auto}.knowledge-deep,.decision-hub,.related-hub,.hub-compare{padding:42px 0}.decision-head{display:block}.decision-head p{margin-top:12px}.decision-grid,.related-grid,.compare-grid,.guide-grid,.choice-grid{grid-template-columns:1fr}.decision-card,.related-card,.compare-card,.choice-card{min-height:165px;padding:22px}.related-next{display:block}.related-next a{display:block;margin-top:8px}}
     @media(max-width:640px){
+      #san-pham .product-grid { grid-auto-columns:minmax(238px,78vw)!important; gap:10px!important; }
       .process-section .process-list{grid-template-columns:none!important;grid-template-rows:1fr!important;grid-auto-flow:column!important;grid-auto-columns:190px!important;overflow-x:auto!important;overflow-y:hidden!important}
       .process-list{display:grid!important;grid-template-columns:none!important;grid-template-rows:1fr!important;grid-auto-flow:column!important;grid-auto-columns:190px!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;scrollbar-width:thin}
       .process-list li{grid-row:1!important;scroll-snap-align:start}
