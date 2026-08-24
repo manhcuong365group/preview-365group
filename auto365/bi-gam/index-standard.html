@@ -121,8 +121,35 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     .knowledge-deep details[open] summary:after { content:'−'; }
     .knowledge-deep details p { color:#62666d; font-size:12px; line-height:1.7; margin-top:12px; }
     .knowledge-deep details ul { color:#62666d; font-size:12px; line-height:1.7; margin:10px 0 0; padding-left:18px; }
-    @media(max-width:900px){.lead-hub-card{grid-template-columns:1fr}.lead-hub-card > div:first-child{padding:30px}.knowledge-deep-grid{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:640px){.lead-hub{padding-top:38px}.lead-hub-card{border-radius:16px}.lead-hub-card > div:first-child{padding:26px 20px}.lead-hub-form{grid-template-columns:1fr;padding:24px 20px}.lead-hub-form label:first-child{grid-column:auto}.lead-hub-form label:nth-child(3){display:none}.lead-hub-submit,.lead-hub-status,.lead-hub-call{grid-column:auto}.knowledge-deep,.decision-hub,.related-hub{padding:42px 0}.decision-head{display:block}.decision-head p{margin-top:12px}.decision-grid,.related-grid{grid-template-columns:1fr}.decision-card,.related-card{min-height:165px;padding:22px}.related-next{display:block}.related-next a{display:block;margin-top:8px}}
+    .hub-compare { padding:70px 0; }
+    .hub-compare.soft { background:#f5f6f8; }
+    .hub-compare-head { max-width:900px; margin-bottom:28px; }
+    .hub-compare-head h2 { font-size:clamp(30px,4vw,52px); line-height:1.05; letter-spacing:-.05em; margin-top:8px; }
+    .hub-compare-head p { color:#62666d; font-size:13px; margin-top:12px; }
+    .compare-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .compare-card { border:1px solid #dfe2e6; border-radius:16px; padding:20px; background:#fff; }
+    .compare-card small { display:inline-flex; padding:6px 9px; border-radius:999px; background:#f0f2f4; color:#29313b; font-size:9px; font-weight:900; }
+    .compare-card:first-child small { color:var(--red); background:#fff0f2; }
+    .compare-card h3 { font-size:17px; margin-top:14px; }
+    .compare-card p { color:#62666d; font-size:11px; line-height:1.6; margin-top:8px; }
+    .compare-card a { display:block; border-top:1px dashed #dfe2e6; margin-top:14px; padding-top:12px; color:#29313b; font-size:10px; font-weight:850; }
+    .guide-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:22px; }
+    .guide-card { border-top:2px solid var(--red); padding-top:16px; }
+    .guide-card small { color:var(--red); font-size:9px; font-weight:900; letter-spacing:.1em; }
+    .guide-card h3 { font-size:19px; margin-top:12px; }
+    .guide-card p { color:#62666d; font-size:12px; line-height:1.65; margin-top:8px; }
+    .guide-card a { display:block; margin-top:12px; color:#17191e; font-size:10px; font-weight:900; }
+    .choice-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+    .choice-card { position:relative; border:1px solid #dfe2e6; border-radius:16px; padding:20px 22px; min-height:230px; background:#fff; overflow:hidden; }
+    .choice-card:after { content:''; position:absolute; right:-22px; bottom:-28px; width:80px; height:80px; border:16px solid #f0f2f4; border-radius:50%; }
+    .choice-card> b { color:#e0e4e9; font-size:27px; }
+    .choice-card h3 { font-size:17px; margin-top:20px; }
+    .choice-card p { color:#62666d; font-size:11px; line-height:1.5; margin-top:7px; }
+    .choice-card ul { color:#087853; font-size:10px; line-height:1.8; list-style:none; padding:0; margin:10px 0 0; }
+    .choice-card li:before { content:'✓'; margin-right:7px; font-weight:900; }
+    .choice-card a { display:block; margin-top:10px; color:var(--red); font-size:10px; font-weight:900; }
+    @media(max-width:900px){.lead-hub-card{grid-template-columns:1fr}.lead-hub-card > div:first-child{padding:30px}.knowledge-deep-grid{grid-template-columns:1fr}.decision-grid{grid-template-columns:1fr 1fr}.related-grid{grid-template-columns:1fr 1fr}.compare-grid,.guide-grid,.choice-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:640px){.lead-hub{padding-top:38px}.lead-hub-card{border-radius:16px}.lead-hub-card > div:first-child{padding:26px 20px}.lead-hub-form{grid-template-columns:1fr;padding:24px 20px}.lead-hub-form label:first-child{grid-column:auto}.lead-hub-form label:nth-child(3){display:none}.lead-hub-submit,.lead-hub-status,.lead-hub-call{grid-column:auto}.knowledge-deep,.decision-hub,.related-hub,.hub-compare{padding:42px 0}.decision-head{display:block}.decision-head p{margin-top:12px}.decision-grid,.related-grid,.compare-grid,.guide-grid,.choice-grid{grid-template-columns:1fr}.decision-card,.related-card,.compare-card,.choice-card{min-height:165px;padding:22px}.related-next{display:block}.related-next a{display:block;margin-top:8px}}
     @media(max-width:640px){
       .process-list{display:grid!important;grid-template-columns:none!important;grid-template-rows:1fr!important;grid-auto-flow:column!important;grid-auto-columns:190px!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;overscroll-behavior-inline:contain;scroll-snap-type:inline mandatory;scrollbar-width:thin}
       .process-list li{grid-row:1!important;scroll-snap-align:start}
@@ -266,6 +293,36 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
     </div>
     <div class="related-next"><span>ĐỌC TIẾP THEO NHU CẦU</span><a href="https://auto365.vn/do-den-gam-o-to-la-gi-tai-sao-nen-chon-anh-sang-vang-cho-den-gam">Độ đèn gầm ô tô là gì và khi nào nên chọn ánh sáng vàng? →</a></div>
   </div>
+</section>
+<section class="hub-compare soft" id="so-sanh-giai-phap" aria-label="So sánh giải pháp ánh sáng">
+  <div class="container">
+    <div class="hub-compare-head"><span class="kicker">SO SÁNH GIẢI PHÁP ÁNH SÁNG</span><h2>Bi gầm khác gì Bi LED, đèn pha halogen và các giải pháp khác?</h2><p>“Bi gầm” và “đèn gầm” được dùng cho cùng nhóm sản phẩm trong bài này. Các lựa chọn dưới đây khác nhau ở vị trí lắp, vai trò chiếu sáng và mức độ can thiệp vào xe.</p></div>
+    <div class="compare-grid">
+      <article class="compare-card"><small>VỊ TRÍ THẤP PHÍA TRƯỚC XE</small><h3>Bi gầm / đèn gầm</h3><p>Cụm projector có lens, thường lắp tại hốc đèn gầm. Phù hợp khi cần bổ sung vùng sáng theo cấu hình và vị trí lắp của xe.</p><a href="#chon-xe">Kiểm tra hốc đèn · hệ điện · pát lắp →</a></article>
+      <article class="compare-card"><small>CỤM ĐÈN PHA CHÍNH</small><h3>Bi LED</h3><p>Giải pháp nâng cấp cho cụm đèn pha chính, khác vị trí và mức độ can thiệp so với bi gầm.</p><a href="https://auto365.vn/nang-cap-anh-sang-bi-led">Tìm hiểu về Bi LED →</a></article>
+      <article class="compare-card"><small>CÔNG NGHỆ ĐÈN PHA NGUYÊN BẢN</small><h3>Đèn pha halogen</h3><p>Đèn pha nguyên bản thường có cấu hình và vùng sáng khác; cần đánh giá nền tảng xe trước khi thay đổi.</p><a href="#cach-chon-chuyen-sau">Cân nhắc vùng sáng pha nguyên bản →</a></article>
+      <article class="compare-card"><small>CỤM NGUYÊN BẢN CỦA XE</small><h3>Đèn sương mù</h3><p>Thường là cụm đèn ở vị trí thấp theo thiết kế xe. Không phải mọi đèn sương mù nguyên bản đều là bi gầm hoặc projector.</p><a href="https://auto365.vn/den-suong-mu-o-to">Tìm hiểu về đèn sương mù →</a></article>
+      <article class="compare-card"><small>MODULE LẮP ĐỘC LẬP</small><h3>Đèn gầm dạng rời</h3><p>Lắp bằng pát riêng, cấu tạo và phương án lắp không mặc định giống bi gầm trong hốc nguyên bản.</p><a href="https://auto365.vn/den-gam-dang-roi">Tìm hiểu đèn gầm dạng rời →</a></article>
+      <article class="compare-card"><small>NHÓM BỔ SUNG RIÊNG</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p><a href="#quy-trinh">Kiểm tra vị trí lắp · hướng chiếu · hệ điện →</a></article>
+    </div>
+  </div>
+</section>
+<section class="hub-compare" id="huong-dan-chon-lap" aria-label="Hướng dẫn chọn và lắp bi gầm">
+  <div class="container"><div class="hub-compare-head"><span class="kicker">HƯỚNG DẪN CHỌN VÀ LẮP</span><h2>Hướng dẫn chọn và lắp bi gầm theo xe</h2><p>Từ nhu cầu sử dụng, kích thước hốc đèn đến cấu tạo sản phẩm: đây là những thông tin cần kiểm tra trước khi chọn cấu hình cho xe.</p></div><div class="guide-grid">
+    <article class="guide-card"><small>2.0 INCH HAY 3.0 INCH?</small><h3>Ưu tiên fitment trước, hiệu năng sau</h3><p>Lens lớn không tự động tốt hơn. Hốc đèn, mặt dưỡng và phương án pát của đúng phiên bản xe mới quyết định được cấu hình.</p><a href="#kien-thuc-nen">Xem hướng dẫn chọn theo hốc đèn →</a></article>
+    <article class="guide-card"><small>3000K, 4300K HAY 5500K?</small><h3>Chọn theo môi trường sử dụng</h3><p>Nhiệt màu chỉ là một phần của bài toán; còn cần xét cung đường, thời tiết và khả năng căn chỉnh sau khi lắp.</p><a href="#kien-thuc-nen">Xem giải thích nhiệt màu →</a></article>
+    <article class="guide-card"><small>COS / PHA CÓ PHẢI SÁNG TỐT HƠN?</small><h3>Không thể kết luận chỉ từ công suất</h3><p>Quang học, đường cắt, độ phủ, vị trí lắp và hệ điện ảnh hưởng trực tiếp đến vùng sáng hữu ích.</p><a href="#kien-thuc-nen">Xem phương pháp đánh giá →</a></article>
+  </div></div>
+</section>
+<section class="hub-compare soft" id="quyet-dinh-chon" aria-label="Các quyết định khi chọn bi gầm">
+  <div class="container"><div class="hub-compare-head"><span class="kicker">CÁCH CHỌN ĐÚNG</span><h2>Chọn theo điều kiện đi thật, không theo “mẫu mạnh nhất”</h2><p>Sáng hơn thôi chưa đủ — góc chiếu phải đúng. Sáu câu hỏi dưới đây là sáu quyết định thực sự khi chọn bi gầm.</p></div><div class="choice-grid">
+    <article class="choice-card"><b>01</b><h3>2.0 inch hay 3.0 inch?</h3><p>Khác nhau trước hết ở hốc đèn xe bạn, không chỉ ở công suất ánh sáng.</p><ul><li>2.0 inch: hốc đèn nhỏ, thi công gọn</li><li>3.0 inch: cần hốc đủ rộng</li><li>Chưa đo hốc thì chưa kết luận</li></ul><a href="#chon-xe">Kiểm tra hốc đèn xe tôi →</a></article>
+    <article class="choice-card"><b>02</b><h3>3000K, 4300K hay 5500K?</h3><p>Chọn theo thời tiết và cung đường, không có nhiệt màu tốt nhất cho mọi người.</p><ul><li>3000K: vàng đậm, mưa và sương dày</li><li>4300K: cân bằng, dùng quanh năm</li><li>5500K: trắng, hợp đi phố</li></ul><a href="#kien-thuc-nen">Xem giải thích nhiệt màu →</a></article>
+    <article class="choice-card"><b>03</b><h3>Giữ zin hay dùng pát chuyển?</h3><p>Tùy cấu trúc hốc đèn từng xe và mức can thiệp được chấp nhận.</p><ul><li>Báo rõ có can thiệp gì không</li><li>Ảnh hốc đèn trước khi lắp</li><li>Phiếu cấu hình khi bàn giao</li></ul><a href="#quy-trinh">Xem quy trình lắp →</a></article>
+    <article class="choice-card"><b>04</b><h3>Đi phố hay hay đi tỉnh?</h3><p>Vùng sáng gần, mép đường và tầm xa cần khác nhau theo cung đường.</p><ul><li>Đi phố: vùng sáng có kiểm soát</li><li>Đi tỉnh: cần đánh giá tầm xa</li><li>Đường đèo: chú ý hai mép đường</li></ul><a href="#case-thuc">Xem ánh sáng thực tế →</a></article>
+    <article class="choice-card"><b>05</b><h3>Xe con 12V hay xe tải 24V?</h3><p>Điện áp phải đúng cấu hình; lắp sai điện áp có thể hỏng đèn và mất bảo hành.</p><ul><li>Kiểm tra hệ điện trước lắp</li><li>Xe tải chọn bản 24V chuyên dụng</li><li>Cấu hình ghi trên phiếu bàn giao</li></ul><a href="#chon-xe">Chọn cấu hình 24V →</a></article>
+    <article class="choice-card"><b>06</b><h3>Giá đã gồm những gì?</h3><p>Trước khi đặt lịch, cần biết rõ từng khoản để tránh phát sinh tại xưởng.</p><ul><li>Giá một đèn hay một cặp</li><li>Công lắp, pát và phụ kiện</li><li>VAT và ngày hiệu lực</li></ul><a href="#bang-gia">Xem bảng giá →</a></article>
+  </div></div>
 </section>
 <section class="lead-hub" id="tu-van-ban-hang" aria-label="Form tư vấn bán hàng">
   <div class="container">
