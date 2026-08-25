@@ -471,6 +471,14 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
       })
       .catch(() => {});
   })();
+  // Không khóa tiêu đề hub vào một con số cố định khi catalogue tiếp tục mở rộng.
+  (() => {
+    const catalogue = document.getElementById('san-pham');
+    const heading = catalogue?.querySelector('h2');
+    if (heading?.textContent.includes('31 sản phẩm')) heading.textContent = 'Danh mục sản phẩm và phụ kiện trong tuyến Bi Gầm';
+    const intro = catalogue?.querySelector('.section-head p');
+    if (intro?.textContent.includes('31 URL')) intro.textContent = 'Danh mục được cập nhật theo dữ liệu sản phẩm hiện có. Bi gầm ô tô, sản phẩm xe máy và phụ kiện được gắn nhãn rõ để không bị hiểu nhầm. Bộ lọc không tự kết luận tương thích.';
+  })();
 </script>
 </body>
 </html>
