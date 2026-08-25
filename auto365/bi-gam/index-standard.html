@@ -154,7 +154,7 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     /* Thu gọn nhịp dọc giữa các block để trang liền mạch hơn. */
     .section { padding:40px 0; }
     .knowledge-deep,.hub-compare,.lead-hub,.hub-extra { padding-top:38px; padding-bottom:38px; }
-    .process-section.section { padding-top:38px; padding-bottom:38px; }
+    .process-section.section { padding-top:32px; padding-bottom:32px; }
     /* Giữ product rail 2 hàng của index cũ: xem được nhiều card, phần còn lại cuộn ngang. */
     #san-pham .product-grid { display:grid!important; grid-template-rows:repeat(2,minmax(0,auto))!important; grid-template-columns:none!important; grid-auto-flow:column!important; grid-auto-columns:minmax(270px,1fr)!important; gap:16px!important; overflow-x:auto!important; overflow-y:hidden!important; padding:2px 2px 12px!important; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:#c9cdd3 transparent; }
     #san-pham .product-grid > .product-card { min-width:0; scroll-snap-align:start; }
@@ -163,7 +163,7 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     #san-pham .product-grid.catalog-is-dragging { cursor:grabbing; scroll-snap-type:none; user-select:none; }
     /* Quy trình dạng chuỗi như index cũ: 7 bước liên tục trên một hàng. */
     .process-section .process-list { display:grid!important; grid-template-columns:repeat(7,minmax(0,1fr))!important; grid-auto-flow:initial!important; gap:0!important; width:100%!important; max-width:none!important; overflow:hidden!important; border:1px solid #343942; }
-    .process-section .process-list li { min-height:196px; padding:28px 16px 22px; border-right:1px solid #343942; display:flex; flex-direction:column; justify-content:space-between; }
+    .process-section .process-list li { min-height:154px; padding:20px 14px 18px; border-right:1px solid #343942; display:flex; flex-direction:column; justify-content:space-between; }
     .process-section .process-list li:last-child { border-right:0; }
     .process-section .process-list li>b { color:#687180; font-size:22px; }
     .process-section .process-list li strong { display:block; color:#fff; font-size:12px; }
@@ -500,6 +500,31 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
   })();
   // Hiển thị sẵn nội dung các mục giải đáp; người đọc không phải mở từng câu hỏi.
   document.querySelectorAll('details').forEach((item) => { item.open = true; });
+  (() => {
+    const faq = document.querySelectorAll('.faq-list details');
+    const items = [
+      ['Bi gầm là gì và khác đèn gầm nguyên bản thế nào?', 'Bi gầm là cụm projector có thấu kính, thường lắp ở vị trí thấp phía trước xe. Đèn gầm nguyên bản không phải lúc nào cũng là projector hoặc có thể thay trực tiếp bằng bi gầm.'],
+      ['Nên chọn lens 2.0 hay 3.0 inch?', 'Kích thước lens phải theo hốc đèn, độ sâu, khoảng tản nhiệt và phương án pát của từng xe. Lens lớn hơn không mặc định phù hợp hơn.'],
+      ['Nên chọn nhiệt màu 3000K, 4300K hay 5500K?', '3000K phù hợp mưa và sương, 4300K cân bằng, 5500K cho ánh sáng trắng hơn khi đi phố. Nên chọn theo cung đường và hệ đèn đang có.'],
+      ['Bi gầm có gây chói xe đối diện không?', 'Có thể gây chói nếu lắp lệch, sai độ cao hoặc căn chỉnh không đúng. Sau thi công cần kiểm tra cutoff và nghiệm thu vùng sáng trên xe.'],
+      ['Xe 12V và 24V cần lưu ý gì?', 'Điện áp, giắc, dây nguồn, relay và bộ điều khiển phải đúng cấu hình. Xe tải hoặc xe có hệ điện đặc thù cần xác nhận riêng trước khi lắp.'],
+      ['Giá sản phẩm đã gồm công lắp chưa?', 'Giá niêm yết thường là giá sản phẩm hoặc một cặp. Pát, mặt dưỡng, dây, phụ kiện, công lắp, căn chỉnh và VAT cần được báo tách theo xe.'],
+      ['Lắp bi gầm có cần cắt dây zin hoặc dùng pát chuyển không?', 'Tùy cấu trúc hốc đèn và phương án thi công. Điểm lắp cần nói rõ mức can thiệp trước khi chốt cấu hình.'],
+      ['Sau khi lắp cần kiểm tra những gì?', 'Cần kiểm tra cos, pha, cutoff, hướng chiếu, độ kín, dây điện, chức năng chuyển chế độ và hướng dẫn bảo hành trước khi bàn giao.']
+    ];
+    faq.forEach((detail, index) => {
+      const item = items[index];
+      if (!item) return;
+      const summary = detail.querySelector('summary');
+      const answer = detail.querySelector('p');
+      if (summary) summary.innerHTML = `${item[0]}<span>−</span>`;
+      if (answer) answer.textContent = item[1];
+      detail.open = true;
+    });
+    const warranty = document.querySelectorAll('.warranty-row > div');
+    if (warranty[0]) { warranty[0].querySelector('b').textContent = 'Bảo hành theo từng sản phẩm'; warranty[0].querySelector('small').textContent = 'Thời hạn và điều kiện được xác nhận trên phiếu bàn giao.'; }
+    if (warranty[1]) { warranty[1].querySelector('b').textContent = 'Hỗ trợ sau lắp tại Auto365'; warranty[1].querySelector('small').textContent = 'Tra cứu điểm lắp và hồ sơ để được hỗ trợ đúng cấu hình.'; }
+  })();
   document.querySelector('.legal-section .method-note')?.remove();
 </script>
 </body>
