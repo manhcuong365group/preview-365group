@@ -514,6 +514,15 @@
   </script>
 <script>
 (function(){
+  var previewForm=document.getElementById('consultForm');
+  if(previewForm && /preview-365group\.pages\.dev$/.test(location.hostname)){
+    previewForm.addEventListener('submit',function(event){
+      event.preventDefault();
+      event.stopImmediatePropagation();
+      var status=document.getElementById('consultStatus');
+      if(status) status.textContent='Bản preview chưa kết nối CRM thật. Form sẽ gửi dữ liệu khi được triển khai trên auto365.vn.';
+    },true);
+  }
   var sticky=document.getElementById('contactSticky'), hero=document.querySelector('.hero');
   if(!sticky||!hero||!window.IntersectionObserver)return;
   sticky.classList.add('is-delayed');
