@@ -494,6 +494,8 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
     while (walker.nextNode()) nodes.push(walker.currentNode);
     nodes.forEach((node) => { replacements.forEach((value, key) => { if (node.nodeValue.includes(key)) node.nodeValue = node.nodeValue.replaceAll(key, value); }); });
   })();
+  // Hiển thị sẵn nội dung các mục giải đáp; người đọc không phải mở từng câu hỏi.
+  document.querySelectorAll('details').forEach((item) => { item.open = true; });
 </script>
 </body>
 </html>
