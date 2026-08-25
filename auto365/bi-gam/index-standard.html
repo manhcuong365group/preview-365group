@@ -205,12 +205,13 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
       #chon-xe select { min-height:48px!important; font-size:15px!important; }
       #chon-xe .finder-submit { min-height:50px!important; font-size:15px!important; }
       #kien-thuc-nen { display:block!important; visibility:visible!important; content-visibility:visible!important; overflow:visible!important; }
-      #kien-thuc-nen .knowledge-deep-grid { display:grid!important; grid-template-columns:1fr!important; gap:10px!important; }
-      #kien-thuc-nen .knowledge-card { display:block!important; min-height:0!important; padding:16px!important; }
+      #kien-thuc-nen .knowledge-deep-grid { display:flex!important; gap:10px!important; overflow-x:auto!important; overflow-y:hidden!important; padding:2px 2px 10px!important; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; }
+      #kien-thuc-nen .knowledge-card { display:block!important; flex:0 0 84vw!important; min-height:0!important; padding:16px!important; scroll-snap-align:start; }
       #kien-thuc-nen .knowledge-card h3 { font-size:16px!important; }
       #kien-thuc-nen .knowledge-card p, #kien-thuc-nen .knowledge-card ul { font-size:12px!important; }
       #so-sanh-giai-phap, #huong-dan-chon-lap, #quyet-dinh-chon, #tu-van-ban-hang, #tin-tuc-uy-tin { display:block!important; visibility:visible!important; content-visibility:visible!important; overflow:visible!important; }
-      #so-sanh-giai-phap .compare-grid, #huong-dan-chon-lap .guide-grid, #quyet-dinh-chon .choice-grid, #tin-tuc-uy-tin .hub-extra-grid { display:grid!important; grid-template-columns:1fr!important; }
+      #so-sanh-giai-phap .compare-grid, #huong-dan-chon-lap .guide-grid, #quyet-dinh-chon .choice-grid, #tin-tuc-uy-tin .hub-extra-grid { display:flex!important; gap:10px!important; overflow-x:auto!important; overflow-y:hidden!important; padding:2px 2px 10px!important; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; }
+      #so-sanh-giai-phap .compare-card, #huong-dan-chon-lap .guide-card, #quyet-dinh-chon .choice-card, #tin-tuc-uy-tin .hub-extra-card { flex:0 0 84vw!important; min-width:0!important; scroll-snap-align:start; }
       #tu-van-ban-hang .lead-hub-card { display:grid!important; grid-template-columns:1fr!important; }
       #san-pham .product-grid { grid-auto-columns:minmax(238px,78vw)!important; gap:10px!important; }
       .process-section .process-list{display:grid!important;grid-template-columns:none!important;grid-template-rows:1fr!important;grid-auto-flow:column!important;grid-auto-columns:190px!important;overflow-x:auto!important;overflow-y:hidden!important;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory}
