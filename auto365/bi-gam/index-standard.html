@@ -511,6 +511,12 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
     if (intro) intro.textContent = 'Xem các mẫu bi gầm, phụ kiện và thông số để tham khảo cấu hình phù hợp cho từng dòng xe.';
     const priceIntro = document.querySelector('#bang-gia .section-head p');
     if (priceIntro) priceIntro.textContent = 'Tham khảo các nhóm giá sản phẩm; chi phí lắp đặt sẽ được tư vấn và báo rõ theo từng xe.';
+    if (catalogue) {
+      const walker = document.createTreeWalker(catalogue, NodeFilter.SHOW_TEXT);
+      const nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach((node) => { node.nodeValue = node.nodeValue.replaceAll('Trang 1 · Hiển thị 20 / 31 sản phẩm', 'Danh sách sản phẩm').replaceAll('31 sản phẩm', 'sản phẩm'); });
+    }
   })();
   // Làm sạch các nhãn kỹ thuật nội bộ trước khi hiển thị cho khách hàng.
   (() => {
