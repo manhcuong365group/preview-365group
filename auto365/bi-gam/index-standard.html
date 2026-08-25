@@ -444,9 +444,8 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
       link.href = 'https://zalo.me/3622666363345050913';
     });
     document.querySelectorAll('b').forEach((node) => {
-      if (node.textContent.includes('Ngọc Trân') || node.textContent.includes('Đặng Minh Hoàng')) {
-        node.textContent = 'Nguyễn Quang Đạo · Chuyên gia đèn ô tô';
-      }
+      if (node.textContent.includes('Ngọc Trân')) node.textContent = 'Ngọc Trân';
+      if (node.textContent.includes('Đặng Minh Hoàng')) node.textContent = 'Nguyễn Quang Đạo · Chuyên gia đèn ô tô';
     });
   });
   // Đưa các block hub bổ sung về đúng luồng đọc: giá → kiến thức → so sánh → chọn → tư vấn.
@@ -484,6 +483,9 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
   (() => {
     const replacements = new Map([
       ['CATALOGUE CÓ KIỂM SOÁT', 'DANH MỤC SẢN PHẨM'],
+      ['CHỦ SỞ HỮU NỘI DUNG TRỤ CỘT', 'BIÊN TẬP NỘI DUNG'],
+      ['Phạm vi: cấu trúc nội dung, URL owner và dữ liệu thương mại.', 'Phụ trách nội dung và thông tin sản phẩm.'],
+      ['Phạm vi: fitment, điện áp, điều kiện thi công và giới hạn kết luận.', 'Phụ trách kiểm tra kỹ thuật và điều kiện lắp đặt.'],
       ['Mỗi nhu cầu có một URL owner riêng để người đọc và công cụ tìm kiếm không phải đoán chủ đề.', 'Mỗi nhu cầu có hướng dẫn riêng để bạn dễ tra cứu và lựa chọn.'],
       ['không tạo câu trả lời ẩn cho công cụ tìm kiếm.', 'giải thích rõ ràng để khách hàng dễ hiểu trước khi quyết định.']
     ]);
