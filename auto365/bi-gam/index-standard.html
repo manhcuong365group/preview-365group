@@ -152,6 +152,7 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     #san-pham .product-grid { display:grid!important; grid-template-rows:repeat(2,minmax(0,auto))!important; grid-template-columns:none!important; grid-auto-flow:column!important; grid-auto-columns:minmax(270px,1fr)!important; gap:16px!important; overflow-x:auto!important; overflow-y:hidden!important; padding:2px 2px 12px!important; scroll-snap-type:x mandatory; scrollbar-width:thin; scrollbar-color:#c9cdd3 transparent; }
     #san-pham .product-grid > .product-card { min-width:0; scroll-snap-align:start; }
     #san-pham .product-grid { cursor:grab; }
+    #san-pham .pagination { display:none!important; }
     #san-pham .product-grid.catalog-is-dragging { cursor:grabbing; scroll-snap-type:none; user-select:none; }
     /* Quy trình dạng chuỗi như index cũ: 7 bước liên tục trên một hàng. */
     .process-section .process-list { display:grid!important; grid-template-columns:repeat(7,minmax(0,1fr))!important; grid-auto-flow:initial!important; gap:0!important; width:100%!important; max-width:none!important; overflow:hidden!important; border:1px solid #343942; }
@@ -437,6 +438,19 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
       .map((id) => document.getElementById(id))
       .filter(Boolean)
       .forEach((section) => { anchor.insertAdjacentElement('afterend', section); anchor = section; });
+  })();
+  // Nạp tiếp trang 2 vào cùng rail để catalogue cuộn liên tục, không cần phân trang.
+  (() => {
+    const grid = document.querySelector('#san-pham .product-grid');
+    if (!grid || grid.dataset.allLoaded === 'true') return;
+    fetch(new URL('?page=2', window.location.href), { credentials:'same-origin' })
+      .then((response) => response.text())
+      .then((html) => {
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        doc.querySelectorAll('#san-pham .product-grid .product-card').forEach((card) => grid.appendChild(document.importNode(card, true)));
+        grid.dataset.allLoaded = 'true';
+      })
+      .catch(() => {});
   })();
 </script>
 </body>
