@@ -117,13 +117,10 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     .review-credit { display:inline-flex; margin-top:14px; padding:7px 10px; border:1px solid #e2e4e8; border-radius:999px; color:#62666d; font-size:11px; }
     .review-credit b { color:#20242b; margin-left:4px; }
     .knowledge-deep-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:28px; }
-    .knowledge-deep details { border:1px solid #dfe2e6; border-radius:15px; padding:18px 20px; background:#fff; }
-    .knowledge-deep summary { cursor:pointer; font-size:16px; font-weight:800; list-style:none; padding-right:24px; position:relative; }
-    .knowledge-deep summary::-webkit-details-marker { display:none; }
-    .knowledge-deep summary:after { content:'+'; position:absolute; right:0; color:var(--red); font-size:20px; line-height:1; }
-    .knowledge-deep details[open] summary:after { content:'−'; }
-    .knowledge-deep details p { color:#62666d; font-size:12px; line-height:1.7; margin-top:12px; }
-    .knowledge-deep details ul { color:#62666d; font-size:12px; line-height:1.7; margin:10px 0 0; padding-left:18px; }
+    .knowledge-card { border:1px solid #dfe2e6; border-radius:15px; padding:18px 20px; background:#fff; }
+    .knowledge-card h3 { font-size:16px; line-height:1.3; font-weight:800; }
+    .knowledge-card p { color:#62666d; font-size:12px; line-height:1.7; margin-top:12px; }
+    .knowledge-card ul { color:#62666d; font-size:12px; line-height:1.7; margin:10px 0 0; padding-left:18px; }
     .hub-compare { padding:70px 0; }
     .hub-compare.soft { background:#f5f6f8; }
     .hub-compare-head { max-width:900px; margin-bottom:28px; }
@@ -277,12 +274,12 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
   <div class="container">
     <div class="knowledge-deep-head"><span class="kicker">KIẾN THỨC NỀN · ĐỌC TRƯỚC KHI CHỌN</span><h2>Hiểu đúng bi gầm trước khi nhìn vào giá</h2><p>Thông số chỉ có ý nghĩa khi đặt trong bối cảnh chiếc xe, vị trí lắp, nhu cầu sử dụng và cách thi công. Đây là phần giải thích để người đọc không bị dẫn dắt chỉ bởi công suất hoặc tên thương hiệu.</p><span class="review-credit">Kiểm duyệt kỹ thuật:<b>Nguyễn Quang Đạo · Chuyên gia đèn ô tô</b></span></div>
     <div class="knowledge-deep-grid">
-      <details open><summary>Bi gầm hoạt động như thế nào?</summary><p>Projector dùng thấu kính để gom và định hình chùm sáng. Giá trị thực tế không chỉ nằm ở độ sáng cực đại mà còn ở vùng sáng gần, độ rõ của cutoff, khả năng chuyển cos/pha và độ ổn định sau thời gian vận hành.</p><ul><li>Đèn cần được cố định chắc và căn chỉnh sau lắp.</li><li>Chùm sáng lệch có thể gây chói dù sản phẩm có công suất cao.</li></ul></details>
-      <details><summary>Lens 2.0 và 3.0 inch khác nhau gì?</summary><p>Lens lớn hơn có thể tạo không gian quang học khác, nhưng không tự động phù hợp hơn. Kích thước hốc, độ sâu, vị trí pát và khoảng tản nhiệt mới quyết định khả năng lắp thực tế.</p><ul><li>Không chọn lens chỉ dựa trên kích thước.</li><li>Cần đo hốc và kiểm tra mặt dưỡng trước khi chốt.</li></ul></details>
-      <details><summary>Nhiệt màu ảnh hưởng thế nào?</summary><p>3000K thường cho ánh sáng vàng, hữu ích trong mưa hoặc sương; 4300K cân bằng giữa độ xuyên và độ tự nhiên; 5500K cho cảm giác trắng hơn trong điều kiện khô. Không có một nhiệt màu tốt nhất cho mọi cung đường.</p><ul><li>Ưu tiên nhu cầu đi phố, đi tỉnh hoặc đi mưa.</li><li>Cân nhắc phối màu với đèn pha và đèn đang có.</li></ul></details>
-      <details><summary>Cos, pha và cutoff cần xem gì?</summary><p>Cos cần vùng sáng gần đều, cutoff rõ và không hắt lên mắt xe đối diện. Pha cần độ mở và tầm chiếu phù hợp. Khi đánh giá, nên xem ảnh hoặc video trong điều kiện có mô tả rõ, không chỉ dựa vào một con số lumen.</p></details>
-      <details><summary>Vì sao phải kiểm tra 12V/24V?</summary><p>Điện áp, giắc, dây nguồn và bộ điều khiển phải phù hợp với xe. Xe dùng hệ thống 24V hoặc cấu hình điện đặc thù có thể cần phương án phụ kiện riêng; không nên mặc định mọi sản phẩm đều cắm là chạy.</p></details>
-      <details><summary>Giá sản phẩm có phải tổng chi phí không?</summary><p>Giá catalogue thường là giá sản phẩm hoặc một cặp sản phẩm. Tổng chi phí có thể gồm pát, mặt dưỡng, dây, relay, công lắp, căn chỉnh và VAT. Sales nên báo tách từng hạng mục sau khi kiểm tra xe.</p></details>
+      <article class="knowledge-card"><h3>Bi gầm hoạt động như thế nào?</h3><p>Projector dùng thấu kính để gom và định hình chùm sáng. Giá trị thực tế không chỉ nằm ở độ sáng cực đại mà còn ở vùng sáng gần, độ rõ của cutoff, khả năng chuyển cos/pha và độ ổn định sau thời gian vận hành.</p><ul><li>Đèn cần được cố định chắc và căn chỉnh sau lắp.</li><li>Chùm sáng lệch có thể gây chói dù sản phẩm có công suất cao.</li></ul></article>
+      <article class="knowledge-card"><h3>Lens 2.0 và 3.0 inch khác nhau gì?</h3><p>Lens lớn hơn có thể tạo không gian quang học khác, nhưng không tự động phù hợp hơn. Kích thước hốc, độ sâu, vị trí pát và khoảng tản nhiệt mới quyết định khả năng lắp thực tế.</p><ul><li>Không chọn lens chỉ dựa trên kích thước.</li><li>Cần đo hốc và kiểm tra mặt dưỡng trước khi chốt.</li></ul></article>
+      <article class="knowledge-card"><h3>Nhiệt màu ảnh hưởng thế nào?</h3><p>3000K thường cho ánh sáng vàng, hữu ích trong mưa hoặc sương; 4300K cân bằng giữa độ xuyên và độ tự nhiên; 5500K cho cảm giác trắng hơn trong điều kiện khô. Không có một nhiệt màu tốt nhất cho mọi cung đường.</p><ul><li>Ưu tiên nhu cầu đi phố, đi tỉnh hoặc đi mưa.</li><li>Cân nhắc phối màu với đèn pha và đèn đang có.</li></ul></article>
+      <article class="knowledge-card"><h3>Cos, pha và cutoff cần xem gì?</h3><p>Cos cần vùng sáng gần đều, cutoff rõ và không hắt lên mắt xe đối diện. Pha cần độ mở và tầm chiếu phù hợp. Khi đánh giá, nên xem ảnh hoặc video trong điều kiện có mô tả rõ, không chỉ dựa vào một con số lumen.</p></article>
+      <article class="knowledge-card"><h3>Vì sao phải kiểm tra 12V/24V?</h3><p>Điện áp, giắc, dây nguồn và bộ điều khiển phải phù hợp với xe. Xe dùng hệ thống 24V hoặc cấu hình điện đặc thù có thể cần phương án phụ kiện riêng; không nên mặc định mọi sản phẩm đều cắm là chạy.</p></article>
+      <article class="knowledge-card"><h3>Giá sản phẩm có phải tổng chi phí không?</h3><p>Giá catalogue thường là giá sản phẩm hoặc một cặp sản phẩm. Tổng chi phí có thể gồm pát, mặt dưỡng, dây, relay, công lắp, căn chỉnh và VAT. Sales nên báo tách từng hạng mục sau khi kiểm tra xe.</p></article>
     </div>
   </div>
 </section>
