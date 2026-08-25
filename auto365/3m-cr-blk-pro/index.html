@@ -36,6 +36,8 @@
         "name": "3M CR BLK Pro: Cấu hình 40/35/15, giá 2026 | Auto365",
         "description": "Trang tư vấn cấu hình và giá dịch vụ dán phim 3M Crystalline CR BLK Pro tại Auto365.",
         "inLanguage": "vi-VN",
+        "datePublished": "2025-11-12",
+        "dateModified": "2026-08-25",
         "author": [
           {"@type": "Person", "name": "Ngọc Trân"},
           {"@type": "Person", "name": "Đặng Minh Hoàng", "jobTitle": "Chuyên gia kiểm duyệt kỹ thuật"}
@@ -242,7 +244,7 @@
       .button{font-size:12px}
       .consult-form input,.consult-form select,.consult-form textarea{font-size:16px}
     }
-    .panorama-row[hidden]{display:none!important}
+    .panorama-row[hidden]{display:none!important}.contact-sticky.is-delayed{display:none}
     .form-consent{display:flex!important;grid-template-columns:none!important;align-items:flex-start;gap:8px;font-size:12px!important;font-weight:500!important;line-height:1.45}
     .form-consent input{width:16px!important;min-width:16px;margin-top:2px}
     .form-consent a{color:var(--gold-dark);text-decoration:underline}
@@ -510,5 +512,12 @@
     render();
   }());
   </script>
-</body>
+<script>
+(function(){
+  var sticky=document.getElementById('contactSticky'), hero=document.querySelector('.hero');
+  if(!sticky||!hero||!window.IntersectionObserver)return;
+  sticky.classList.add('is-delayed');
+  new IntersectionObserver(function(entries){sticky.classList.toggle('is-delayed',entries[0].isIntersecting);},{threshold:0.05}).observe(hero);
+})();
+</script></body>
 </html>
