@@ -259,6 +259,24 @@
     .form-consent{display:flex!important;grid-template-columns:none!important;align-items:flex-start;gap:8px;font-size:12px!important;font-weight:500!important;line-height:1.45}
     .form-consent input{width:16px!important;min-width:16px;margin-top:2px}
     .form-consent a{color:var(--gold-dark);text-decoration:underline}
+    /* FilmMatch: calmer, more editorial decision flow */
+    .selector-layout{gap:32px;align-items:stretch}
+    .questions-card{display:grid;gap:14px;padding:0;border:0;background:transparent;box-shadow:none}
+    .choice-group{margin:0;padding:20px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:linear-gradient(135deg,rgba(255,255,255,.075),rgba(255,255,255,.025));box-shadow:0 14px 32px rgba(0,0,0,.12)}
+    .choice-group.last-choice{padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.12)}
+    .choice-group legend{margin-bottom:15px;color:#fff;font-size:15px}
+    .choice-group legend span{width:30px;height:30px;border-radius:50%;box-shadow:0 5px 14px rgba(216,170,77,.24)}
+    .choice-grid{gap:12px}
+    .choice{min-height:76px;padding:14px 16px;border-color:rgba(255,255,255,.12);border-radius:13px;background:rgba(7,12,19,.22)}
+    .choice strong{font-size:14px}.choice small{margin-top:4px;font-size:12px;line-height:1.4}
+    .choice.active,.toggle.active{border-color:#e7bd53;background:linear-gradient(135deg,rgba(216,170,77,.24),rgba(216,170,77,.08));box-shadow:inset 0 0 0 1px rgba(245,205,128,.18),0 8px 18px rgba(0,0,0,.14)}
+    .toggle-row{grid-template-columns:140px 160px 1fr;gap:12px}.toggle{min-height:54px;border-radius:13px;background:rgba(7,12,19,.22);font-size:14px}.toggle-row>span{font-size:12px;line-height:1.45}
+    .result-card{top:92px;border:0;border-radius:20px;box-shadow:0 25px 60px rgba(0,0,0,.28)}
+    .result-head{padding:16px 20px;font-size:11px;letter-spacing:.055em}.result-head strong{font-size:10px}
+    .result-package{padding-top:24px}.result-package h3{font-size:29px}.result-price{margin-top:14px;font-size:31px}
+    .result-config>div{padding:12px 0;font-size:13px}.why-box{margin-top:18px;padding:16px;border-radius:13px}.why-box p{font-size:13px;line-height:1.55}
+    .safety-note{margin-top:15px;font-size:12px;line-height:1.45}.result-actions{grid-template-columns:1fr;gap:9px;margin-top:18px}.result-actions .button{min-height:50px;font-size:14px}
+    @media(max-width:680px){.questions-card{gap:11px}.choice-group{padding:16px 14px}.choice-group.last-choice{padding-bottom:16px}.choice-group legend{font-size:14px}.choice-group legend span{width:28px;height:28px}.choice{min-height:64px;padding:12px}.choice strong{font-size:14px}.choice small,.toggle-row>span{font-size:13px}.toggle{min-height:48px;font-size:14px}.result-head{font-size:12px}.result-head strong{font-size:11px}.result-actions .button{min-height:48px;font-size:14px}.form-consent{font-size:13px!important}}
   </style>
 </head>
 <body>
