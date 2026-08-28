@@ -281,6 +281,7 @@
     :root{--ink:#111318;--ink2:#1b1f26;--paper:#fff;--cream:#f7f7f8;--gold:#e21b2d;--gold-dark:#b51222;--gold-soft:#fdecef;--line:#d9dde3}
     body{color:var(--ink);background:#fff;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-.005em}
     h1,h2,h3,h4,p,button,input,select,textarea{font-family:inherit}.hero h1,.section-heading h2,.evidence-copy h2,.trust-copy h2,.final-grid h2{font-weight:500;letter-spacing:-.045em}.package-card h3,.result-package h3{font-weight:600}
+    .choice-group legend span{display:none!important}
     .site-header{color:var(--ink);border-bottom:1px solid #e5e7eb;background:rgba(255,255,255,.96)}
     .brand img{filter:none}.top-nav{color:#4b5563}.top-nav a:hover,.top-nav a:focus-visible{color:var(--gold-dark)}
     .header-call{border-color:#d9dde3}.header-call .icon{color:var(--gold)}.header-call small{color:#6b7280}
@@ -379,22 +380,22 @@
       <div class="section-heading selector-title"><div class="eyebrow light-eyebrow"><span></span> FilmMatch CR BLK</div><h2>Chọn cấu hình trong 30 giây</h2><p>Trả lời bốn câu ngắn. Auto365 sẽ đưa ra gợi ý ban đầu, giá theo xe và điểm cần kiểm tra trước khi chốt.</p></div>
       <div class="selector-layout">
         <div class="questions-card">
-          <fieldset class="choice-group"><legend><span>1</span> Xe của anh/chị thuộc nhóm nào?</legend><div class="choice-grid three">
+          <fieldset class="choice-group"><legend>Xe của anh/chị thuộc nhóm nào?</legend><div class="choice-grid three">
             <button type="button" class="choice js-vehicle" data-vehicle="minicar" aria-pressed="false"><strong>Minicar</strong><small>Xe đô thị cỡ nhỏ</small></button>
             <button type="button" class="choice js-vehicle active" data-vehicle="sedan" aria-pressed="true"><strong>Sedan</strong><small>Sedan phổ thông đến cao cấp</small></button>
             <button type="button" class="choice js-vehicle" data-vehicle="suv" aria-pressed="false"><strong>SUV / CUV / MPV</strong><small>Xe gầm cao, kính lớn</small></button>
           </div><select class="mobile-choice" data-mobile="vehicle" aria-label="Chọn nhóm xe"><option value="minicar">Minicar — Xe đô thị cỡ nhỏ</option><option value="sedan" selected>Sedan — Sedan phổ thông đến cao cấp</option><option value="suv">SUV / CUV / MPV — Xe gầm cao, kính lớn</option></select></fieldset>
-          <fieldset class="choice-group"><legend><span>2</span> Anh/chị thường lái xe khi nào?</legend><div class="choice-grid three">
+          <fieldset class="choice-group"><legend>Anh/chị thường lái xe khi nào?</legend><div class="choice-grid three">
             <button type="button" class="choice js-drive active" data-drive="day" aria-pressed="true"><strong>Chủ yếu ban ngày</strong><small>Ưu tiên giảm chói, dịu nắng</small></button>
             <button type="button" class="choice js-drive" data-drive="mixed" aria-pressed="false"><strong>Cả ngày và đêm</strong><small>Cần cân bằng nhiều yếu tố</small></button>
             <button type="button" class="choice js-drive" data-drive="night" aria-pressed="false"><strong>Đi đêm/mưa nhiều</strong><small>Ưu tiên độ sáng quan sát</small></button>
           </div><select class="mobile-choice" data-mobile="drive" aria-label="Chọn thời điểm lái xe"><option value="day" selected>Chủ yếu ban ngày — Ưu tiên giảm chói</option><option value="mixed">Cả ngày và đêm — Cân bằng nhiều yếu tố</option><option value="night">Đi đêm/mưa nhiều — Ưu tiên độ sáng</option></select></fieldset>
-          <fieldset class="choice-group"><legend><span>3</span> Điều gì quan trọng nhất?</legend><div class="choice-grid three">
+          <fieldset class="choice-group"><legend>Điều gì quan trọng nhất?</legend><div class="choice-grid three">
             <button type="button" class="choice js-priority" data-priority="visibility" aria-pressed="false"><strong>Tầm nhìn sáng</strong><small>Dễ thích nghi khi thiếu sáng</small></button>
             <button type="button" class="choice js-priority" data-priority="balanced" aria-pressed="false"><strong>Cân bằng</strong><small>Nhiệt, chói và quan sát</small></button>
             <button type="button" class="choice js-priority active" data-priority="privacy" aria-pressed="true"><strong>Riêng tư & giảm chói</strong><small>Ngoại hình đậm, khoang sau kín</small></button>
           </div><select class="mobile-choice" data-mobile="priority" aria-label="Chọn ưu tiên"><option value="visibility">Tầm nhìn sáng</option><option value="balanced">Cân bằng</option><option value="privacy" selected>Riêng tư & giảm chói</option></select></fieldset>
-          <fieldset class="choice-group last-choice"><legend><span>4</span> Xe có cửa sổ trời / panorama?</legend><div class="toggle-row"><button type="button" class="toggle js-panorama active" data-panorama="no" aria-pressed="true">Không</button><button type="button" class="toggle js-panorama" data-panorama="yes" aria-pressed="false">Có / Chưa chắc</button><span>Panorama được đo kích thước và báo giá riêng.</span></div><select class="mobile-choice" data-mobile="panorama" aria-label="Chọn cửa sổ trời"><option value="no" selected>Không</option><option value="yes">Có / Chưa chắc</option></select></fieldset>
+          <fieldset class="choice-group last-choice"><legend>Xe có cửa sổ trời / panorama?</legend><div class="toggle-row"><button type="button" class="toggle js-panorama active" data-panorama="no" aria-pressed="true">Không</button><button type="button" class="toggle js-panorama" data-panorama="yes" aria-pressed="false">Có / Chưa chắc</button><span>Panorama được đo kích thước và báo giá riêng.</span></div><select class="mobile-choice" data-mobile="panorama" aria-label="Chọn cửa sổ trời"><option value="no" selected>Không</option><option value="yes">Có / Chưa chắc</option></select></fieldset>
         </div>
         <aside class="result-card" aria-live="polite" aria-atomic="true">
           <div class="result-head"><span>Gợi ý dành cho xe của anh/chị</span><strong data-bind="code">CRP-SEDAN-40-35-15</strong></div>
@@ -591,3 +592,4 @@
 })();
 </script></body>
 </html>
+
