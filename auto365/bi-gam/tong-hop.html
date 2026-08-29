@@ -88,7 +88,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .product-price{color:var(--red);font-weight:800;font-size:20px;margin:0 0 12px}
 .product-spec{color:#70747b;font-size:10.5px;margin:4px 0 0}
 .spec-tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.spec-tile{border:1px solid var(--line);border-radius:10px;padding:10px 8px;text-align:center;color:#5b5f66}
+.spec-tile{border:1px solid var(--line);border-radius:9px;padding:7px 8px;text-align:center;color:#5b5f66}
 .spec-tile svg{margin:0 auto 4px}
 .spec-tile b{display:block;font-size:11.5px;color:var(--ink);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .spec-tile small{display:block;color:#8c8f95;font-size:9.5px;margin-top:2px}
@@ -100,11 +100,29 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .catalogue-more{display:flex;justify-content:center;margin-top:20px}
 @media (width<=900px) and (width>640px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (width<=640px){
-  .product-grid{grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:64vw;overflow-x:auto;overflow-y:hidden;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .product-grid{grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:50vw;gap:10px;overflow-x:auto;overflow-y:hidden;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
   .product-grid .product-card{scroll-snap-align:start;min-width:0}
   .catalogue-more{display:none!important}
+  .product-image{aspect-ratio:4/3}
+  .product-image img{padding:8px}
+  .product-body{padding:10px}
+  .product-brand-badge{font-size:9px;padding:3px 8px;margin-bottom:5px}
+  .product-card h3{font-size:12.5px;margin-bottom:5px}
+  .product-price{font-size:16px;margin-bottom:8px}
+  .spec-tiles{gap:5px}
+  .spec-tile{padding:5px 4px;border-radius:7px}
+  .spec-tile b{font-size:10px}
+  .spec-tile small{font-size:8px}
+  .product-needs{gap:4px;margin-top:8px}
+  .product-needs span{font-size:9px;padding:3px 7px}
+  .product-actions{gap:5px;margin-top:8px}
+  .btn-view,.btn-consult{min-height:34px;font-size:9.5px}
 }
-@media (width<=480px){.catalogue-toolbar{flex-direction:column;align-items:stretch}}
+@media (width<=640px){
+  .catalogue-toolbar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .catalogue-toolbar .search-box{grid-column:1/-1;min-width:0}
+  .catalogue-toolbar select,.catalogue-toolbar input{width:100%;min-width:0}
+}
 
 /* pricing */
 .price-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -123,12 +141,24 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .knowledge-item summary::-webkit-details-marker{display:none}
 .knowledge-item p{color:var(--muted);font-size:13px;line-height:1.7;margin:10px 0 0}
 .compare-table{margin-top:24px;width:100%;border-collapse:collapse;font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+@media (width<=640px){
+  .compare-table thead{display:none}
+  .compare-table,.compare-table tbody,.compare-table tr,.compare-table td{display:block;width:100%}
+  .compare-table{border-radius:0;border:0}
+  .compare-table tr{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
+  .compare-table td{border:0;padding:6px 0}
+  .compare-table td:before{content:attr(data-label);display:block;color:var(--red);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;margin-bottom:2px}
+}
 .compare-table th,.compare-table td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
 .compare-table th{background:var(--soft);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#5c6067}
 .table-scroll{overflow-x:auto}
 
 /* cases */
-.case-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.case-grid{display:grid;grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:min(260px,72vw);gap:14px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.case-grid .case-card{scroll-snap-align:start;min-width:0}
+.case-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.case-filter button{border:1px solid #3a3d44;background:#20232a;color:#d7d9dc;font-size:11.5px;font-weight:600;padding:7px 14px;border-radius:999px;cursor:pointer}
+.case-filter button.is-active{background:var(--red);border-color:var(--red);color:#fff}
 .case-card{background:#20232a;border:1px solid #33363d;border-radius:14px;overflow:hidden}
 .case-image{aspect-ratio:4/2.6;display:block;background:#111}
 .case-image img{width:100%;height:100%;object-fit:cover}
@@ -149,7 +179,13 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .warranty-lookup{margin-top:20px;background:#20232a;border:1px solid #33363d;border-radius:12px;padding:16px 18px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .warranty-lookup input{flex:1;min-width:180px;min-height:42px;border-radius:8px;border:1px solid #3a3d44;background:#101114;color:#fff;padding:0 12px;font-size:12px}
 @media (width<=900px){.process-timeline{grid-template-columns:repeat(4,1fr)}.process-step{border-bottom:1px solid #33363d}}
-@media (width<=560px){.process-timeline{grid-template-columns:1fr 1fr}}
+@media (width<=640px){
+  .process-timeline{display:flex;grid-template-columns:none;overflow-x:auto;overflow-y:hidden;border-radius:12px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .process-step{flex:0 0 128px;border-right:1px solid #33363d;border-bottom:0;padding:12px 10px;scroll-snap-align:start}
+  .process-step b{font-size:13px;margin-bottom:5px}
+  .process-step strong{font-size:10.5px}
+  .process-step small{font-size:9px;margin-top:3px}
+}
 
 /* faq + sources */
 .faq-item,.source-item{border-bottom:1px solid var(--line);padding:14px 0}
@@ -268,10 +304,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Bi gầm GTR G1 Turbo V2</a></h3>
     <p class="product-price">6.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>Cos 4800K / Pha 4300K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>Cos 4800K / Pha 4300K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
@@ -293,10 +329,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-20-max" target="_blank" rel="noreferrer">Bi gầm AES SV 2.0 Max</a></h3>
     <p class="product-price">5.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 50W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 50W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -318,10 +354,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Bi gầm AES SV 3.0 Pro</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>4800K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>4800K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -343,10 +379,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Bi gầm AES SV 3.0 Max</a></h3>
     <p class="product-price">6.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
@@ -368,10 +404,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Turbo 24V V2</a></h3>
     <p class="product-price">6.200.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -393,10 +429,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light 301 V2</a></h3>
     <p class="product-price">4.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span></div>
     <div class="product-actions">
@@ -418,10 +454,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Turbo V2</a></h3>
     <p class="product-price">6.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
@@ -443,10 +479,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-pro-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Pro V2</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span></div>
     <div class="product-actions">
@@ -468,10 +504,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 New</a></h3>
     <p class="product-price">4.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -493,10 +529,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-x-light-x3-ultra" target="_blank" rel="noreferrer">Bi gầm X-Light X3 Ultra</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
@@ -518,10 +554,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 New</a></h3>
     <p class="product-price">4.300.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>4800K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>4800K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -543,10 +579,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-xligh-f10-hyper-2" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Hyper 2.0</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 50W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>Cos 5000K/Pha 5000K - Cos 4500K/Pha 3000K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 50W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>Cos 5000K/Pha 5000K - Cos 4500K/Pha 3000K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -568,10 +604,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/x-light-f10-20-inch-moto" target="_blank" rel="noreferrer">X-Light F10 2.0 Inch Moto</a></h3>
     <p class="product-price">3.700.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>30W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>30W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -593,10 +629,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Pro 3 nhiệt màu</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Mưa, sương mù</span><span>Đi phố</span></div>
     <div class="product-actions">
@@ -618,10 +654,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/x-light-f10-2024" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 2024</a></h3>
     <p class="product-price">4.200.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>30W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>30W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -643,10 +679,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Turbo 24V</a></h3>
     <p class="product-price">6.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Khoảng 40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Khoảng 40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -668,10 +704,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-henvvei-gt-1" target="_blank" rel="noreferrer">Bi gầm Henvvei GT-1</a></h3>
     <p class="product-price">5.800.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -693,10 +729,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-gtr-g1-turbo" target="_blank" rel="noreferrer">Bi gầm GTR G1 Turbo</a></h3>
     <p class="product-price">6.200.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
+      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
@@ -718,10 +754,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Turbo</a></h3>
     <p class="product-price">6.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
+      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
@@ -743,10 +779,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 Inch 2023</a></h3>
     <p class="product-price">4.200.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -768,10 +804,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer">Bi gầm X-Light X3 Pro</a></h3>
     <p class="product-price">5.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -793,10 +829,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-titan-301" target="_blank" rel="noreferrer">Bi gầm Titan 301 – 3 nhiệt màu</a></h3>
     <p class="product-price">3.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Mưa, sương mù</span></div>
     <div class="product-actions">
@@ -818,10 +854,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-led-gtr-g1-ultra" target="_blank" rel="noreferrer">Bi gầm GTR G1 Ultra</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
+      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -843,10 +879,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-red-lighting-r8-spyder" target="_blank" rel="noreferrer">Bi gầm Red Lighting R8 Spyder</a></h3>
     <p class="product-price">5.500.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
+      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -868,10 +904,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-fogway-gen-1" target="_blank" rel="noreferrer">Bi gầm Fogway Gen 1</a></h3>
     <p class="product-price">4.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>12</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
+      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>12</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Mưa, sương mù</span></div>
     <div class="product-actions">
@@ -893,10 +929,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-matrix-light-m1-pro" target="_blank" rel="noreferrer">Bi gầm Matrix Light M1 Pro</a></h3>
     <p class="product-price">4.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>12</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
+      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>12</b><small>Bảo hành</small></div>
     </div>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
@@ -918,10 +954,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2022 – có mắt quỷ</a></h3>
     <p class="product-price">4.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>24</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -943,10 +979,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-led-gtr-g1-pro" target="_blank" rel="noreferrer">Bi gầm LED GTR G1 Pro</a></h3>
     <p class="product-price">Liên hệ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>Cần kiểm tra</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -968,10 +1004,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" rel="noreferrer">Bi gầm X-Light F10 New</a></h3>
     <p class="product-price">4.000.000đ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>2</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
+      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>2</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -993,10 +1029,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <h3><a href="https://auto365.vn/bi-gam-gtr-special-edition-150-plus" target="_blank" rel="noreferrer">Bi gầm GTR Special Edition 150 Plus</a></h3>
     <p class="product-price">Liên hệ</p>
     <div class="spec-tiles">
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3Z"/></svg><b>Cần kiểm tra</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4"/></svg><b>Cần xác nhận</b><small>Bảo hành</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
+      <div class="spec-tile"><b>Cần kiểm tra</b><small>Nhiệt màu</small></div>
+      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
     </div>
     
     <div class="product-actions">
@@ -1066,10 +1102,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <table class="compare-table">
         <thead><tr><th>Loại đèn</th><th>Vị trí lắp</th><th>Vai trò chính</th><th>Ghi chú</th></tr></thead>
         <tbody>
-          <tr><td>Bi gầm / đèn gầm</td><td>Thấp, phía trước xe</td><td>Bổ sung vùng sáng gần, hai mép đường</td><td>Cùng nhóm sản phẩm, cách gọi khác nhau theo vùng miền</td></tr>
-          <tr><td>Bi LED (đèn chính)</td><td>Cụm đèn pha chính</td><td>Chiếu sáng xa, đường giữa</td><td>Không thay thế vai trò của bi gầm</td></tr>
-          <tr><td>Halogen zin</td><td>Đèn pha/cos nguyên bản</td><td>Chiếu sáng cơ bản theo xe gốc</td><td>Thường được nâng cấp cùng lúc với bi gầm</td></tr>
-          <tr><td>Đèn sương mù nguyên bản</td><td>Cản trước, vị trí thấp</td><td>Hỗ trợ quan sát khi sương mù</td><td>Có thể trùng vị trí với bi gầm, cần đối chiếu quy chuẩn khi lắp thêm</td></tr>
+          <tr><td data-label="Loại đèn">Bi gầm / đèn gầm</td><td data-label="Vị trí lắp">Thấp, phía trước xe</td><td data-label="Vai trò chính">Bổ sung vùng sáng gần, hai mép đường</td><td data-label="Ghi chú">Cùng nhóm sản phẩm, cách gọi khác nhau theo vùng miền</td></tr>
+          <tr><td data-label="Loại đèn">Bi LED (đèn chính)</td><td data-label="Vị trí lắp">Cụm đèn pha chính</td><td data-label="Vai trò chính">Chiếu sáng xa, đường giữa</td><td data-label="Ghi chú">Không thay thế vai trò của bi gầm</td></tr>
+          <tr><td data-label="Loại đèn">Halogen zin</td><td data-label="Vị trí lắp">Đèn pha/cos nguyên bản</td><td data-label="Vai trò chính">Chiếu sáng cơ bản theo xe gốc</td><td data-label="Ghi chú">Thường được nâng cấp cùng lúc với bi gầm</td></tr>
+          <tr><td data-label="Loại đèn">Đèn sương mù nguyên bản</td><td data-label="Vị trí lắp">Cản trước, vị trí thấp</td><td data-label="Vai trò chính">Hỗ trợ quan sát khi sương mù</td><td data-label="Ghi chú">Có thể trùng vị trí với bi gầm, cần đối chiếu quy chuẩn khi lắp thêm</td></tr>
         </tbody>
       </table>
     </div>
@@ -1083,8 +1119,9 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <h2>10 xe thực tế đã lắp bi gầm tại Auto365</h2>
       <p>Hồ sơ ghi nhận xe, sản phẩm và những gì đã công bố. Xe khác vẫn cần kiểm tra lại — case không phải cam kết áp dụng cho mọi xe cùng dòng.</p>
     </div>
-    <div class="case-grid">
-<article class="case-card">
+    <div class="case-filter" id="case-filter"><button type="button" data-brand="" class="is-active">Tất cả</button><button type="button" data-brand="Mazda" class="">Mazda</button><button type="button" data-brand="Toyota" class="">Toyota</button><button type="button" data-brand="Ford" class="">Ford</button><button type="button" data-brand="Honda" class="">Honda</button><button type="button" data-brand="Mitsubishi" class="">Mitsubishi</button><button type="button" data-brand="Kia" class="">Kia</button><button type="button" data-brand="BMW" class="">BMW</button></div>
+    <div class="case-grid" id="case-grid">
+<article class="case-card" data-car-brand="Mazda">
   <a class="case-image" href="https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Mazda 6">
     <img src="https://auto365.vn/uploads/images/pages/auto365_20260706_131614_6a4b482e98913.jpg" alt="Mazda 6 lắp X-Light F10 Turbo V2 · 4300K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1096,7 +1133,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Toyota">
   <a class="case-image" href="https://auto365.vn/toyota-vios-15e-cvt-2021-lap-bi-gam-x-light-f10-20-new" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Toyota Vios 1.5E CVT 2021">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-vios-15e-cvt-2021-lap-x-light-f10-20-new-16-img_6a8fed9dc2dcd8.16311913.webp" alt="Toyota Vios 1.5E CVT 2021 lắp X-Light F10 2.0 New" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1108,7 +1145,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/toyota-vios-15e-cvt-2021-lap-bi-gam-x-light-f10-20-new" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Ford">
   <a class="case-image" href="https://auto365.vn/ford-ranger-wildtrak-2026-lap-x-light-f10-turbo-v2" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Ford Ranger Wildtrak 2026">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-ford-ranger-wildtrak-2026-nang-cap-bi-gam-x-light-f10-turbo-v2-img_6a8e669a862655.19242543.webp" alt="Ford Ranger Wildtrak 2026 lắp X-Light F10 Turbo V2 · 4300K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1120,7 +1157,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/ford-ranger-wildtrak-2026-lap-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Toyota">
   <a class="case-image" href="https://auto365.vn/toyota-hilux-2020-lap-bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Toyota Hilux 2.4E 4x2 AT 2020">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-hilux-2020-lap-bi-gam-aes-sv-30-max-img_6a8d1066e3f0d8.68138408.webp" alt="Toyota Hilux 2.4E 4x2 AT 2020 lắp AES SV 3.0 Max" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1132,7 +1169,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/toyota-hilux-2020-lap-bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Honda">
   <a class="case-image" href="https://auto365.vn/honda-cr-v-g-2024-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Honda CR-V G 2024">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-honda-cr-v-2024-lap-x-light-f10-turbo-v2-9-img_6a8bc72fd63098.50487058.webp" alt="Honda CR-V G 2024 lắp X-Light F10 Turbo V2 · 4300K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1144,7 +1181,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/honda-cr-v-g-2024-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Mitsubishi">
   <a class="case-image" href="https://auto365.vn/mitsubishi-xforce-ultimate-2024-lap-x-light-f10-hyper-20-gia-cau-hinh" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Mitsubishi Xforce Ultimate 2024">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-xforce-ultimate-2024-lap-x-light-f10-hyper-20-1-img_6a88263d406c77.35329237.jpg.webp" alt="Mitsubishi Xforce Ultimate 2024 lắp X-Light F10 Hyper 2.0 · 5000K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1156,7 +1193,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/mitsubishi-xforce-ultimate-2024-lap-x-light-f10-hyper-20-gia-cau-hinh" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Kia">
   <a class="case-image" href="https://auto365.vn/kia-seltos-2024-15l-at-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Kia Seltos 1.5L AT 2024">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-kia-seltos-15l-at-lap-x-light-f10-turbo-v2-1-img_6a858098e203a9.67835903.jpg.webp" alt="Kia Seltos 1.5L AT 2024 lắp X-Light F10 Turbo V2 · 4300K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1168,7 +1205,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/kia-seltos-2024-15l-at-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="BMW">
   <a class="case-image" href="https://auto365.vn/bmw-x5-e70-2010-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ BMW X5 E70 2010">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-bmw-x5-e70-2010-lap-x-light-f10-turbo-v2-7-img_6a890d3d5a7e49.04559629.jpg.webp" alt="BMW X5 E70 2010 lắp X-Light F10 Turbo V2 · 4300K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1180,7 +1217,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/bmw-x5-e70-2010-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Toyota">
   <a class="case-image" href="https://auto365.vn/toyota-fortuner-2018-lap-x5-ultra-f10-turbo-v2" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Toyota Fortuner Tiêu chuẩn 2018">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-fortuner-2018-lap-x5-ultra-f10-turbo-v2-img_6a8bc34651e711.49485682.webp" alt="Toyota Fortuner Tiêu chuẩn 2018 lắp X-Light F10 Turbo V2 · 5500K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1192,7 +1229,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/toyota-fortuner-2018-lap-x5-ultra-f10-turbo-v2" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card">
+<article class="case-card" data-car-brand="Ford">
   <a class="case-image" href="https://auto365.vn/ford-ranger-xls-2023-lap-x-light-f10-new-2025" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Ford Ranger XLS 2023">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-ford-ranger-xls-2023-nang-cap-x-light-f10-new-2025-img_6a8954a4d62a05.68703535.jpg.webp" alt="Ford Ranger XLS 2023 lắp X-Light F10 New 2025 · 4800K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1416,6 +1453,19 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     var btn = finderForm.querySelector('.finder-submit');
     btn.textContent = 'Đã gửi — Auto365 sẽ liên hệ lại';
     btn.disabled = true;
+  });
+
+  var caseFilter = document.getElementById('case-filter');
+  var caseCards = Array.prototype.slice.call(document.querySelectorAll('#case-grid .case-card'));
+  caseFilter.addEventListener('click', function(e){
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    Array.prototype.forEach.call(caseFilter.querySelectorAll('button'), function(b){ b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    var brand = btn.getAttribute('data-brand');
+    caseCards.forEach(function(c){
+      c.style.display = !brand || c.getAttribute('data-car-brand') === brand ? '' : 'none';
+    });
   });
 })();
 </script>
