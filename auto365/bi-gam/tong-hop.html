@@ -167,11 +167,14 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.price-layout{grid-template-columns:1fr;gap:24px}}
 
 /* knowledge */
-.knowledge-block summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:8px;color:var(--red);font-size:13px;font-weight:700;padding:10px 0}
+.knowledge-block summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:12px;background:var(--soft);border-radius:12px;padding:16px 18px;margin-bottom:20px}
 .knowledge-block summary::-webkit-details-marker{display:none}
-.knowledge-block summary span{width:9px;height:9px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg);transition:transform .2s;margin-top:-2px}
-.knowledge-block[open] summary span{transform:rotate(-135deg);margin-top:2px}
-.knowledge-block[open] summary{margin-bottom:8px}
+.knowledge-block summary .kb-tag{color:var(--red);font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;flex:none}
+.knowledge-block summary .kb-title{color:var(--ink);font-size:14px;font-weight:700;flex:1}
+.knowledge-block summary .kb-icon{width:9px;height:9px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg);transition:transform .2s;flex:none;margin-right:4px}
+.knowledge-block[open] summary .kb-icon{transform:rotate(-135deg);margin-top:4px}
+.knowledge-block summary:hover{background:#eef0f3}
+@media (width<=640px){.knowledge-block summary{flex-wrap:wrap;padding:14px}.knowledge-block summary .kb-title{flex:1 0 100%;order:1}.knowledge-block summary .kb-tag{order:0}.knowledge-block summary .kb-icon{order:0;margin-left:auto}}
 .knowledge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:36px;align-items:start}
 .knowledge-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:transform .15s,box-shadow .15s}
 .knowledge-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(16,17,20,.07)}
@@ -275,7 +278,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .gc-tag{color:var(--red);font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
 .guide-cluster-card h3{font-size:13.5px;line-height:1.3;margin:8px 0 6px;font-weight:700}
 .guide-cluster-card p{color:#70747b;font-size:11px;line-height:1.5;margin:0}
-@media (width<=1180px){.guide-cluster{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:220px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.guide-cluster-card{scroll-snap-align:start;min-width:0}}
+@media (width<=900px){.guide-cluster{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (width<=640px){
   .guide-cluster{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:70vw;overflow-x:auto;overflow-y:hidden;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
   .guide-cluster-card{scroll-snap-align:start;min-width:0}
@@ -352,13 +355,15 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
       </div>
       <div class="finder-bar-fields">
+        <label>Họ và tên <input type="text" placeholder="Nhập họ tên" required></label>
+        <label>Số điện thoại <input type="tel" placeholder="Nhập số điện thoại" required></label>
         <label>Hãng xe <select required><option value="">Chọn hãng</option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Mazda</option><option>Kia</option><option>Hyundai</option><option>Mitsubishi</option><option>Khác</option></select></label>
         <label>Dòng xe <input type="text" placeholder="VD: Vios, CR-V…"></label>
-        <label>Năm sản xuất <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
+        <label>Khu vực <select><option value="">Chọn khu vực</option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select></label>
         <label>Nhu cầu đi xe <select><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
       </div>
       <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
-      <p class="finder-bar-note">Không cần để lại số điện thoại để xem thông tin chung.</p>
+      <p class="finder-bar-note">Auto365 chỉ dùng thông tin này để liên hệ tư vấn, không dùng cho mục đích khác.</p>
     </form>
   </div>
 </section>
@@ -1046,7 +1051,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <p>Đọc nhanh các chủ đề dưới đây trước khi so sánh sản phẩm hoặc đặt lịch kiểm tra xe.</p>
     </div>
     <details class="knowledge-block">
-      <summary>Xem chi tiết 6 chủ đề <span></span></summary>
+      <summary><span class="kb-tag">Xem chi tiết</span><span class="kb-title">6 chủ đề chọn bi gầm</span><span class="kb-icon"></span></summary>
       <div class="knowledge-grid">
         <article class="knowledge-card"><span>01</span><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
         <article class="knowledge-card"><span>02</span><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></article>
@@ -1088,7 +1093,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label>Họ và tên <input type="text" placeholder="Nhập họ tên" required></label>
         <label>Số điện thoại <input type="tel" placeholder="Nhập số điện thoại" required></label>
         <label>Hãng xe (không bắt buộc) <input type="text" placeholder="Ví dụ: Mazda, Toyota"></label>
-        <label>Dòng xe <input type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
+        <label>Dòng xe (không bắt buộc) <input type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
         <label>Năm sản xuất (không bắt buộc) <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
         <label>Nhu cầu <select><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
         <button type="submit" class="btn btn-primary video-lead-submit">Gửi thông tin tư vấn</button>
