@@ -74,7 +74,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=640px){.finder-bar-fields{grid-template-columns:1fr}}
 
 /* catalogue */
-.catalogue-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:16px}
+.catalogue-toolbar{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:16px}
 .catalogue-toolbar select,.catalogue-toolbar input{min-height:40px;border:1px solid #d8dade;border-radius:8px;padding:0 10px;font-size:12px;background:#fff}
 .catalogue-toolbar .search-box{flex:1;min-width:180px;display:block}
 .catalogue-toolbar .search-box input{width:100%}
@@ -127,6 +127,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
   .catalogue-toolbar{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .catalogue-toolbar .search-box{grid-column:1/-1;min-width:0}
   .catalogue-toolbar select,.catalogue-toolbar input{width:100%;min-width:0}
+  .mobile-filter-toggle{grid-column:1/-1}
 }
 /* catalogue sidebar */
 .catalogue-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;align-items:start}
@@ -142,9 +143,11 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .filter-group input[type=checkbox]{width:15px;height:15px;min-width:0;min-height:0;flex:none;accent-color:var(--red);cursor:pointer}
 .mobile-filter-toggle{display:none}
 @media (width<=900px){.catalogue-layout{grid-template-columns:1fr}
-.catalogue-sidebar{display:none;position:fixed;inset:auto 0 0 0;z-index:90;border-radius:16px 16px 0 0;max-height:78vh;overflow-y:auto;box-shadow:0 -14px 40px rgba(16,17,20,.25);padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+.catalogue-sidebar{display:none;position:static;border-radius:14px;box-shadow:none;padding:16px;max-height:none;overflow-y:visible;margin-bottom:16px}
 .catalogue-sidebar.is-open{display:block}
-.mobile-filter-toggle{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border:1px solid #d8dade;border-radius:8px;background:#fff;font-size:12px;font-weight:700;cursor:pointer}
+.mobile-filter-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:1 0 100%;order:2;min-height:44px;padding:0 14px;border:1px solid #d8dade;border-radius:10px;background:#fff;font-size:12.5px;font-weight:700;cursor:pointer;color:var(--ink)}
+.mobile-filter-toggle span{color:var(--red);font-weight:700}
+#pf-sort{order:3}
 }
 
 
@@ -363,6 +366,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <p>Lọc theo thương hiệu, kích thước lens, điện áp và sắp xếp theo giá.</p>
     </div>
     <div class="catalogue-layout">
+      <div class="catalogue-toolbar">
+        <label class="search-box"><input type="text" id="pf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"></label>
+        <button type="button" class="mobile-filter-toggle" id="pf-mobile-toggle">Bộ lọc &amp; sắp xếp <span id="pf-toggle-label">Mở rộng</span></button>
+        <select id="pf-sort"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select>
+      </div>
       <aside class="catalogue-sidebar" id="catalogue-sidebar">
         <div class="sidebar-head"><b>Lọc bi gầm</b><button type="button" id="pf-clear">Xóa tất cả</button></div>
         <div class="filter-group">
@@ -392,11 +400,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         </div>
       </aside>
       <div class="catalogue-main">
-        <div class="catalogue-toolbar">
-          <label class="search-box"><input type="text" id="pf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"></label>
-          <button type="button" class="mobile-filter-toggle" id="pf-mobile-toggle">Bộ lọc</button>
-          <select id="pf-sort"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select>
-        </div>
     <p class="catalogue-count" id="pf-count"></p>
     <div class="product-grid" id="product-grid">
 <article class="product-card" data-brand="GTR" data-lens="3.0" data-voltage="12V" data-price="6000000" data-name="bi gầm gtr g1 turbo v2" data-color="4800K,4300K" data-needs="touring,mountain">
@@ -1481,7 +1484,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     search.value = '';
     shown = PAGE_SIZE; apply();
   });
-  if (mobileToggle) mobileToggle.addEventListener('click', function(){ sidebar.classList.toggle('is-open'); });
+  var toggleLabel = document.getElementById('pf-toggle-label');
+  if (mobileToggle) mobileToggle.addEventListener('click', function(){
+    var isOpen = sidebar.classList.toggle('is-open');
+    if (toggleLabel) toggleLabel.textContent = isOpen ? 'Thu gọn' : 'Mở rộng';
+  });
   moreBtn.addEventListener('click', function(){ shown += PAGE_SIZE; apply(); });
   window.addEventListener('resize', apply);
 
