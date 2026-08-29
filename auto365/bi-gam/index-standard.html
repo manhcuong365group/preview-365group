@@ -459,18 +459,19 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     .product-actions a{background:var(--red);color:#fff;border-radius:9px;min-height:38px;font-weight:700;flex:1;justify-content:center}
     .product-actions button{flex:1}
 
-    /* Compact card: shorter image, tighter padding, smaller type */
+    /* Moderately compact card: still readable, more compact than the original tall card */
     @media(min-width:901px){
-      #san-pham .product-visual{aspect-ratio:4/1.7}
-      #san-pham .product-body{padding:11px}
-      #san-pham .product-card h3{font-size:13px;margin:6px 0 8px;line-height:1.25}
-      #san-pham .product-price{min-height:0;margin-bottom:6px}
-      #san-pham .product-price strong{font-size:15px}
-      #san-pham .product-card dl>div{padding:5px 7px}
-      #san-pham .product-card dt,#san-pham .product-card dd{font-size:9px}
+      #san-pham .product-grid{grid-auto-columns:minmax(300px,1fr)!important}
+      #san-pham .product-visual{aspect-ratio:4/2}
+      #san-pham .product-body{padding:14px}
+      #san-pham .product-card h3{font-size:15px;margin:8px 0 10px;line-height:1.3}
+      #san-pham .product-price{min-height:0;margin-bottom:8px}
+      #san-pham .product-price strong{font-size:18px}
+      #san-pham .product-card dl>div{padding:7px 9px}
+      #san-pham .product-card dt,#san-pham .product-card dd{font-size:10px}
       #san-pham .product-needs{display:none}
-      #san-pham .product-actions{margin-top:8px;padding-top:8px;gap:8px}
-      #san-pham .product-actions a,#san-pham .product-actions button{min-height:36px;font-size:9px;padding:0 8px}
+      #san-pham .product-actions{margin-top:10px;padding-top:10px;gap:8px}
+      #san-pham .product-actions a,#san-pham .product-actions button{min-height:40px;font-size:10px;padding:0 10px}
     }
     .product-needs{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
     .product-needs span{background:#f0f2f4;color:#4a4d53;font-size:10px;font-weight:600;padding:4px 9px;border-radius:999px}
@@ -605,7 +606,7 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
     </div>
   </div>
 </section>
-<section class="hub-extra" id="tin-tuc-uy-tin" aria-label="Tin tức và địa chỉ nâng cấp">
+<section class="hub-extra" id="tin-tuc-uy-tin" aria-label="Tin tức và địa chỉ nâng cấp" hidden>
   <div class="container">
     <div class="hub-extra-head"><span class="kicker">HỆ THỐNG AUTO365 · ĐỊA CHỈ LẮP UY TÍN</span><h2>Tư vấn và lắp đặt tại đúng điểm thuộc hệ thống Auto365</h2><p>Chọn chi nhánh chính thức để được kiểm tra xe, xác nhận cấu hình, báo rõ từng hạng mục và lưu hồ sơ sau lắp.</p></div>
     <div class="hub-extra-grid">
@@ -738,5 +739,9 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
     } catch (_) {}
   });
 </script>
+<style>
+  /* Cụm cũ bị trùng với phần kiến thức, case và liên hệ trong bản tổng hợp. */
+  #kien-thuc-bi-gam, #case-gallery { display: none !important; }
+</style>
 </body>
 </html>
