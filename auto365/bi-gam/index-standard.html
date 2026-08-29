@@ -440,14 +440,16 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     .filter-group label{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:12.5px;color:#44474d;cursor:pointer}
     .filter-group input[type=checkbox]{width:15px!important;height:15px!important;min-height:0!important;min-width:0!important;flex:none;accent-color:var(--red);cursor:pointer}.filter-group label{min-height:0}
 
-    /* Desktop: plain wrapping 3-column grid, no horizontal scroll rail */
+    /* Desktop: 3-row horizontal-scroll rail (see many products, scroll for the rest) */
     @media(min-width:901px){
       #san-pham .product-grid{
-        display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;
-        grid-template-rows:none!important;grid-auto-flow:row!important;grid-auto-columns:unset!important;
-        gap:16px!important;overflow:visible!important;padding:2px!important;cursor:auto!important;
+        display:grid!important;grid-template-columns:none!important;
+        grid-template-rows:repeat(3,minmax(0,auto))!important;grid-auto-flow:column!important;
+        grid-auto-columns:minmax(270px,1fr)!important;
+        gap:16px!important;overflow-x:auto!important;overflow-y:hidden!important;padding:2px 2px 12px!important;
+        scroll-snap-type:x mandatory;cursor:grab;
       }
-      #san-pham .grid-arrow{display:none}
+      #san-pham .product-grid>.product-card{min-width:0;scroll-snap-align:start}
     }
 
     /* Simplified card: fewer specs, fewer actions, clamp name */
@@ -698,7 +700,16 @@ Vui l\xF2ng ki\u1EC3m tra t\u01B0\u01A1ng th\xEDch v\xE0 t\u1ED5ng chi ph\xED tr
   ['quyet-dinh-chon', 'tin-tuc-uy-tin', 'kien-thuc-bi-gam', 'case-gallery']
     .forEach((id) => document.getElementById(id)?.setAttribute('hidden', ''));
 
-  // Catalogue chỉ gồm bi gầm ô tô; tiêu đề/nội dung mô tả nay đã render đúng trực tiếp từ React, không cần script ghi đè nữa.
+  // Giữ toàn bộ mẫu bi gầm, kể cả mẫu dùng cho mô-tô; chỉ tách phụ kiện rời khỏi danh mục chính.
+  const excludedProductPaths = ['/hb4-9006-honda-va-da-pha-bi-gam'];
+  document.querySelectorAll('#san-pham .product-card').forEach((card) => {
+    const href = card.querySelector('a[href]')?.getAttribute('href') || '';
+    if (excludedProductPaths.some((path) => href.includes(path))) card.remove();
+  });
+  const productCount = document.querySelectorAll('#san-pham .product-card').length;
+  document.querySelectorAll('#san-pham .catalog-context b').forEach((node) => {
+    if (/^\d+$/.test(node.textContent.trim())) node.textContent = String(productCount);
+  });
 
   // Đồng bộ danh mục hiển thị với dữ liệu có cấu trúc.
   document.querySelectorAll('script[type="application/ld+json"]').forEach((node) => {
