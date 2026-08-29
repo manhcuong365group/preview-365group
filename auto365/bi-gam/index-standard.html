@@ -456,9 +456,22 @@ Ba ảnh sản phẩm/case thật vẫn dùng URL HTTPS tuyệt đối từ Auto
     .product-card h3{-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}
     .product-card dl>div:nth-child(3),.product-card dl>div:nth-child(4){display:none}
     .product-chat{display:none}
-    .product-actions{justify-content:flex-end}
-    .product-actions button{display:none}
-    .product-actions a{width:100%;justify-content:center;background:var(--red);color:#fff;border-radius:10px;min-height:42px;font-weight:700}
+    .product-actions a{background:var(--red);color:#fff;border-radius:9px;min-height:38px;font-weight:700;flex:1;justify-content:center}
+    .product-actions button{flex:1}
+
+    /* Compact card: shorter image, tighter padding, smaller type */
+    @media(min-width:901px){
+      #san-pham .product-visual{aspect-ratio:4/1.7}
+      #san-pham .product-body{padding:11px}
+      #san-pham .product-card h3{font-size:13px;margin:6px 0 8px;line-height:1.25}
+      #san-pham .product-price{min-height:0;margin-bottom:6px}
+      #san-pham .product-price strong{font-size:15px}
+      #san-pham .product-card dl>div{padding:5px 7px}
+      #san-pham .product-card dt,#san-pham .product-card dd{font-size:9px}
+      #san-pham .product-needs{display:none}
+      #san-pham .product-actions{margin-top:8px;padding-top:8px;gap:8px}
+      #san-pham .product-actions a,#san-pham .product-actions button{min-height:36px;font-size:9px;padding:0 8px}
+    }
     .product-needs{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
     .product-needs span{background:#f0f2f4;color:#4a4d53;font-size:10px;font-weight:600;padding:4px 9px;border-radius:999px}
 
