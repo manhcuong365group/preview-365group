@@ -160,23 +160,23 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.price-layout{grid-template-columns:1fr;gap:24px}}
 
 /* knowledge */
-.knowledge-accordion{display:grid;gap:10px;max-width:820px}
-.knowledge-item{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
-.knowledge-item summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none}
+.knowledge-accordion{display:grid;gap:10px;max-width:820px;margin-bottom:36px}
+.knowledge-item{border:1px solid #2c2e33;border-radius:12px;padding:16px 20px;background:#1a1c21}
+.knowledge-item summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#fff}
 .knowledge-item summary::-webkit-details-marker{display:none}
-.knowledge-item p{color:var(--muted);font-size:13px;line-height:1.7;margin:10px 0 0}
-.compare-table{margin-top:24px;width:100%;border-collapse:collapse;font-size:12.5px;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
-@media (width<=640px){
-  .compare-table thead{display:none}
-  .compare-table,.compare-table tbody,.compare-table tr,.compare-table td{display:block;width:100%}
-  .compare-table{border-radius:0;border:0}
-  .compare-table tr{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:10px}
-  .compare-table td{border:0;padding:6px 0}
-  .compare-table td:before{content:attr(data-label);display:block;color:var(--red);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;margin-bottom:2px}
-}
-.compare-table th,.compare-table td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
-.compare-table th{background:var(--soft);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#5c6067}
-.table-scroll{overflow-x:auto}
+.knowledge-item summary:after{content:'+';color:var(--red);font-size:19px;font-weight:700;flex:none;line-height:1;transition:transform .2s}
+.knowledge-item[open] summary:after{transform:rotate(45deg)}
+.knowledge-item p{color:#9195a0;font-size:13px;line-height:1.7;margin:12px 0 0}
+.knowledge-subhead{margin:0 0 14px}
+.knowledge-subhead h3{font-size:17px;font-weight:700;color:#fff;margin:0 0 6px}
+.knowledge-subhead p{color:#9195a0;font-size:12.5px;line-height:1.6;margin:0}
+.solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.solution-card{border:1px solid #2c2e33;border-radius:12px;padding:16px;background:#1a1c21}
+.solution-card small{color:#ff8890;font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.solution-card h3{font-size:13.5px;font-weight:700;margin:8px 0 6px;color:#fff}
+.solution-card p{color:#9195a0;font-size:11.5px;line-height:1.6;margin:0}
+@media (width<=900px){.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (width<=640px){.solution-grid{grid-template-columns:1fr}}
 
 /* cases */
 .case-grid{display:grid;grid-template-columns:none;grid-template-rows:none;grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
@@ -1026,15 +1026,19 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </section>
 
-<section class="section" id="kien-thuc">
+<section class="section dark" id="kien-thuc">
   <div class="shell">
     <div class="section-head">
       <span class="kicker">Kiến thức chọn bi gầm</span>
-      <h2>Bốn điều cần biết trước khi chọn bi gầm</h2>
-      <p>Đọc nhanh 4 chủ đề dưới đây trước khi so sánh sản phẩm hoặc đặt lịch kiểm tra xe.</p>
+      <h2>Sáu điều cần biết trước khi chọn bi gầm</h2>
+      <p>Đọc nhanh các chủ đề dưới đây trước khi so sánh sản phẩm hoặc đặt lịch kiểm tra xe.</p>
     </div>
     <div class="knowledge-accordion">
       <details class="knowledge-item" open>
+        <summary>Bi gầm hoạt động như thế nào?</summary>
+        <p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p>
+      </details>
+      <details class="knowledge-item">
         <summary>Nên chọn lens 2.0 hay 3.0 inch?</summary>
         <p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p>
       </details>
@@ -1043,24 +1047,29 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p>
       </details>
       <details class="knowledge-item">
+        <summary>Cos, pha và cutoff cần xem gì?</summary>
+        <p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p>
+      </details>
+      <details class="knowledge-item">
         <summary>Hốc đèn và hệ điện cần kiểm tra gì?</summary>
-        <p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau. Phương án dây, cầu chì, relay và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p>
+        <p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p>
       </details>
       <details class="knowledge-item">
         <summary>Chi phí và cân chỉnh sau lắp gồm những gì?</summary>
         <p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p>
       </details>
     </div>
-    <div class="table-scroll">
-      <table class="compare-table">
-        <thead><tr><th>Loại đèn</th><th>Vị trí lắp</th><th>Vai trò chính</th><th>Ghi chú</th></tr></thead>
-        <tbody>
-          <tr><td data-label="Loại đèn">Bi gầm / đèn gầm</td><td data-label="Vị trí lắp">Thấp, phía trước xe</td><td data-label="Vai trò chính">Bổ sung vùng sáng gần, hai mép đường</td><td data-label="Ghi chú">Cùng nhóm sản phẩm, cách gọi khác nhau theo vùng miền</td></tr>
-          <tr><td data-label="Loại đèn">Bi LED (đèn chính)</td><td data-label="Vị trí lắp">Cụm đèn pha chính</td><td data-label="Vai trò chính">Chiếu sáng xa, đường giữa</td><td data-label="Ghi chú">Không thay thế vai trò của bi gầm</td></tr>
-          <tr><td data-label="Loại đèn">Halogen zin</td><td data-label="Vị trí lắp">Đèn pha/cos nguyên bản</td><td data-label="Vai trò chính">Chiếu sáng cơ bản theo xe gốc</td><td data-label="Ghi chú">Thường được nâng cấp cùng lúc với bi gầm</td></tr>
-          <tr><td data-label="Loại đèn">Đèn sương mù nguyên bản</td><td data-label="Vị trí lắp">Cản trước, vị trí thấp</td><td data-label="Vai trò chính">Hỗ trợ quan sát khi sương mù</td><td data-label="Ghi chú">Có thể trùng vị trí với bi gầm, cần đối chiếu quy chuẩn khi lắp thêm</td></tr>
-        </tbody>
-      </table>
+    <div class="knowledge-subhead">
+      <h3>Bi gầm khác gì các giải pháp ánh sáng khác?</h3>
+      <p>"Bi gầm" và "đèn gầm" được dùng cho cùng nhóm sản phẩm trong trang này. Các lựa chọn dưới đây khác nhau ở vị trí lắp, vai trò chiếu sáng và mức độ can thiệp vào xe.</p>
+    </div>
+    <div class="solution-grid">
+      <article class="solution-card"><small>Vị trí thấp phía trước xe</small><h3>Bi gầm / đèn gầm</h3><p>Cụm projector có lens, thường lắp tại hốc đèn gầm — bổ sung vùng sáng gần và hai mép đường.</p></article>
+      <article class="solution-card"><small>Cụm đèn pha chính</small><h3>Bi LED</h3><p>Giải pháp nâng cấp cho cụm đèn pha chính, khác vị trí và mức can thiệp so với bi gầm.</p></article>
+      <article class="solution-card"><small>Công nghệ nguyên bản</small><h3>Halogen zin</h3><p>Đèn pha/cos nguyên bản của xe, thường có cấu hình và vùng sáng khác — cần đánh giá nền tảng xe trước khi thay đổi.</p></article>
+      <article class="solution-card"><small>Cụm nguyên bản của xe</small><h3>Đèn sương mù nguyên bản</h3><p>Thường là cụm đèn vị trí thấp theo thiết kế xe. Không phải đèn sương mù nguyên bản nào cũng là bi gầm hoặc projector.</p></article>
+      <article class="solution-card"><small>Module lắp độc lập</small><h3>Đèn gầm dạng rời</h3><p>Lắp bằng pát riêng; cấu tạo và phương án lắp không mặc định giống bi gầm trong hốc nguyên bản.</p></article>
+      <article class="solution-card"><small>Nhóm bổ sung riêng</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p></article>
     </div>
   </div>
 </section>
