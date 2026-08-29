@@ -160,23 +160,22 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.price-layout{grid-template-columns:1fr;gap:24px}}
 
 /* knowledge */
-.knowledge-accordion{display:grid;gap:10px;max-width:820px;margin-bottom:36px}
-.knowledge-item{border:1px solid #2c2e33;border-radius:12px;padding:16px 20px;background:#1a1c21}
-.knowledge-item summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;color:#fff}
-.knowledge-item summary::-webkit-details-marker{display:none}
-.knowledge-item summary:after{content:'+';color:var(--red);font-size:19px;font-weight:700;flex:none;line-height:1;transition:transform .2s}
-.knowledge-item[open] summary:after{transform:rotate(45deg)}
-.knowledge-item p{color:#9195a0;font-size:13px;line-height:1.7;margin:12px 0 0}
+.knowledge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:36px}
+.knowledge-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:transform .15s,box-shadow .15s}
+.knowledge-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(16,17,20,.07)}
+.knowledge-card span{color:var(--red);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.knowledge-card h3{font-size:14.5px;font-weight:700;margin:8px 0 8px;color:var(--ink)}
+.knowledge-card p{color:var(--muted);font-size:12.5px;line-height:1.65;margin:0}
 .knowledge-subhead{margin:0 0 14px}
-.knowledge-subhead h3{font-size:17px;font-weight:700;color:#fff;margin:0 0 6px}
-.knowledge-subhead p{color:#9195a0;font-size:12.5px;line-height:1.6;margin:0}
+.knowledge-subhead h3{font-size:19px;font-weight:700;color:var(--ink);margin:0 0 6px}
+.knowledge-subhead p{color:var(--muted);font-size:12.5px;line-height:1.6;margin:0}
 .solution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.solution-card{border:1px solid #2c2e33;border-radius:12px;padding:16px;background:#1a1c21}
-.solution-card small{color:#ff8890;font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
-.solution-card h3{font-size:13.5px;font-weight:700;margin:8px 0 6px;color:#fff}
-.solution-card p{color:#9195a0;font-size:11.5px;line-height:1.6;margin:0}
-@media (width<=900px){.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (width<=640px){.solution-grid{grid-template-columns:1fr}}
+.solution-card{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--soft)}
+.solution-card small{color:var(--red);font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.solution-card h3{font-size:13.5px;font-weight:700;margin:8px 0 6px;color:var(--ink)}
+.solution-card p{color:#70747b;font-size:11.5px;line-height:1.6;margin:0}
+@media (width<=900px){.knowledge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (width<=640px){.knowledge-grid{grid-template-columns:1fr}.solution-grid{grid-template-columns:1fr}}
 
 /* cases */
 .case-grid{display:grid;grid-template-columns:none;grid-template-rows:none;grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
@@ -1026,38 +1025,20 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </section>
 
-<section class="section dark" id="kien-thuc">
+<section class="section" id="kien-thuc">
   <div class="shell">
     <div class="section-head">
       <span class="kicker">Kiến thức chọn bi gầm</span>
       <h2>Sáu điều cần biết trước khi chọn bi gầm</h2>
       <p>Đọc nhanh các chủ đề dưới đây trước khi so sánh sản phẩm hoặc đặt lịch kiểm tra xe.</p>
     </div>
-    <div class="knowledge-accordion">
-      <details class="knowledge-item" open>
-        <summary>Bi gầm hoạt động như thế nào?</summary>
-        <p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p>
-      </details>
-      <details class="knowledge-item">
-        <summary>Nên chọn lens 2.0 hay 3.0 inch?</summary>
-        <p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p>
-      </details>
-      <details class="knowledge-item">
-        <summary>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</summary>
-        <p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p>
-      </details>
-      <details class="knowledge-item">
-        <summary>Cos, pha và cutoff cần xem gì?</summary>
-        <p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p>
-      </details>
-      <details class="knowledge-item">
-        <summary>Hốc đèn và hệ điện cần kiểm tra gì?</summary>
-        <p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p>
-      </details>
-      <details class="knowledge-item">
-        <summary>Chi phí và cân chỉnh sau lắp gồm những gì?</summary>
-        <p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p>
-      </details>
+    <div class="knowledge-grid">
+      <article class="knowledge-card"><span>01</span><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
+      <article class="knowledge-card"><span>02</span><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></article>
+      <article class="knowledge-card"><span>03</span><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3><p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p></article>
+      <article class="knowledge-card"><span>04</span><h3>Cos, pha và cutoff cần xem gì?</h3><p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p></article>
+      <article class="knowledge-card"><span>05</span><h3>Hốc đèn và hệ điện cần kiểm tra gì?</h3><p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p></article>
+      <article class="knowledge-card"><span>06</span><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p></article>
     </div>
     <div class="knowledge-subhead">
       <h3>Bi gầm khác gì các giải pháp ánh sáng khác?</h3>
