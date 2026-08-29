@@ -52,7 +52,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 
 /* hero */
 .hero{background:linear-gradient(160deg,#fff 0%,#f7f8fa 60%,#eef0f3 100%);padding:40px 0 44px}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:48px;align-items:start}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:48px;align-items:stretch}
 .hero-grid>*{min-width:0}
 .hero h1{font-size:clamp(30px,4vw,44px);line-height:1.08;letter-spacing:-.03em}
 .hero-lead{color:var(--muted);font-size:15px;line-height:1.65;margin-top:14px;max-width:600px}
@@ -60,7 +60,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .quick-summary b{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px}
 .quick-summary ul{margin:0;padding-left:18px;font-size:13px;color:#3a3d42;line-height:1.7}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.finder-bar{background:var(--ink-2);border-radius:20px;padding:24px;min-width:0}
+.finder-bar{background:var(--ink-2);border-radius:20px;padding:24px;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .finder-bar-head{color:#fff;margin-bottom:18px}
 .finder-bar-head .kicker{color:#ff8890;margin-bottom:6px}
 .finder-bar-head h2{font-size:18px;margin:4px 0 6px}
@@ -167,12 +167,16 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.price-layout{grid-template-columns:1fr;gap:24px}}
 
 /* knowledge */
-.knowledge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:36px}
-.knowledge-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;transition:transform .15s,box-shadow .15s}
+.knowledge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:36px;align-items:start}
+.knowledge-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:transform .15s,box-shadow .15s}
 .knowledge-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(16,17,20,.07)}
+.knowledge-card summary{cursor:pointer;list-style:none;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.knowledge-card summary::-webkit-details-marker{display:none}
+.knowledge-card summary:after{content:'+';color:var(--red);font-size:19px;font-weight:700;flex:none;line-height:1;transition:transform .2s}
+.knowledge-card[open] summary:after{transform:rotate(45deg)}
 .knowledge-card span{color:var(--red);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.knowledge-card h3{font-size:14.5px;font-weight:700;margin:8px 0 8px;color:var(--ink)}
-.knowledge-card p{color:var(--muted);font-size:12.5px;line-height:1.65;margin:0}
+.knowledge-card h3{font-size:14.5px;font-weight:700;margin:8px 0 0;color:var(--ink);line-height:1.3}
+.knowledge-card p{color:var(--muted);font-size:12.5px;line-height:1.65;margin:12px 0 0}
 .knowledge-subhead{margin:0 0 14px}
 .knowledge-subhead h3{font-size:19px;font-weight:700;color:var(--ink);margin:0 0 6px}
 .knowledge-subhead p{color:var(--muted);font-size:12.5px;line-height:1.6;margin:0}
@@ -1041,12 +1045,12 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <p>Đọc nhanh các chủ đề dưới đây trước khi so sánh sản phẩm hoặc đặt lịch kiểm tra xe.</p>
     </div>
     <div class="knowledge-grid">
-      <article class="knowledge-card"><span>01</span><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
-      <article class="knowledge-card"><span>02</span><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></article>
-      <article class="knowledge-card"><span>03</span><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3><p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p></article>
-      <article class="knowledge-card"><span>04</span><h3>Cos, pha và cutoff cần xem gì?</h3><p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p></article>
-      <article class="knowledge-card"><span>05</span><h3>Hốc đèn và hệ điện cần kiểm tra gì?</h3><p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p></article>
-      <article class="knowledge-card"><span>06</span><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p></article>
+      <details class="knowledge-card" open><summary><div><span>01</span><h3>Bi gầm hoạt động như thế nào?</h3></div></summary><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></details>
+      <details class="knowledge-card"><summary><div><span>02</span><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3></div></summary><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></details>
+      <details class="knowledge-card"><summary><div><span>03</span><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3></div></summary><p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p></details>
+      <details class="knowledge-card"><summary><div><span>04</span><h3>Cos, pha và cutoff cần xem gì?</h3></div></summary><p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p></details>
+      <details class="knowledge-card"><summary><div><span>05</span><h3>Hốc đèn và hệ điện cần kiểm tra gì?</h3></div></summary><p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p></details>
+      <details class="knowledge-card"><summary><div><span>06</span><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3></div></summary><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p></details>
     </div>
     <div class="knowledge-subhead">
       <h3>Bi gầm khác gì các giải pháp ánh sáng khác?</h3>
@@ -1081,7 +1085,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label>Số điện thoại <input type="tel" placeholder="Nhập số điện thoại" required></label>
         <label>Hãng xe (không bắt buộc) <input type="text" placeholder="Ví dụ: Mazda, Toyota"></label>
         <label>Dòng xe <input type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
-        <label class="field-full">Nhu cầu <select><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
+        <label>Năm sản xuất (không bắt buộc) <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
+        <label>Nhu cầu <select><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
         <button type="submit" class="btn btn-primary video-lead-submit">Gửi thông tin tư vấn</button>
         <p class="video-lead-note">Hoặc gọi ngay <a href="tel:0365365911">0365 365 911</a></p>
       </form>
