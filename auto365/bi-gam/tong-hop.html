@@ -88,11 +88,11 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .product-card h3{font-size:15px;line-height:1.3;margin:2px 0 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-weight:700}
 .product-price{color:var(--red);font-weight:800;font-size:20px;margin:0 0 12px}
 .product-spec{color:#70747b;font-size:10.5px;margin:4px 0 0}
-.spec-tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.spec-tile{border:1px solid var(--line);border-radius:9px;padding:7px 8px;text-align:center;color:#5b5f66}
-.spec-tile svg{margin:0 auto 4px}
-.spec-tile b{display:block;font-size:11.5px;color:var(--ink);font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.spec-tile small{display:block;color:#8c8f95;font-size:9.5px;margin-top:2px}
+.spec-list{border-top:1px solid var(--line);margin:10px 0 0;min-width:0}
+.spec-list>div{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid var(--line);padding:5px 0;min-width:0}
+.spec-list dt{color:#8a8d93;font-size:10.5px;flex:none}
+.spec-list dt:before{content:'•';color:var(--red);margin-right:5px}
+.spec-list dd{margin:0;color:#3a3d42;font-size:10.5px;font-weight:600;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
 .product-needs{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .product-needs span{background:#f0f2f4;color:#4a4d53;font-size:10px;font-weight:600;padding:4px 9px;border-radius:999px}
 .product-actions{display:flex;gap:8px;margin-top:14px}
@@ -179,7 +179,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .table-scroll{overflow-x:auto}
 
 /* cases */
-.case-grid{display:grid;grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:min(220px,68vw);gap:10px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.case-grid{display:grid;grid-template-columns:none;grid-template-rows:none;grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
 .case-grid .case-card{scroll-snap-align:start;min-width:0}
 .case-filter{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
 .case-filter button{border:1px solid var(--line);background:#fff;color:#44474d;font-size:11px;font-weight:600;padding:6px 12px;border-radius:999px;cursor:pointer}
@@ -404,12 +404,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Bi gầm GTR G1 Turbo V2</a></h3>
     <p class="product-price">6.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>Cos 4800K / Pha 4300K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>Cos 4800K / Pha 4300K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm GTR G1 Turbo V2\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-gtr-g1-turbo-v2">
@@ -429,12 +424,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-20-max" target="_blank" rel="noreferrer">Bi gầm AES SV 2.0 Max</a></h3>
     <p class="product-price">5.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 50W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>2.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 50W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K/4300K/5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm AES SV 2.0 Max\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-aes-sv-20-max">
@@ -454,12 +444,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Bi gầm AES SV 3.0 Pro</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>4800K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>4800K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm AES SV 3.0 Pro\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-aes-sv-30-pro">
@@ -479,12 +464,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Bi gầm AES SV 3.0 Max</a></h3>
     <p class="product-price">6.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K/4300K/5500K</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm AES SV 3.0 Max\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-aes-sv-30-max">
@@ -504,12 +484,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Turbo 24V V2</a></h3>
     <p class="product-price">6.200.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Đèn bi gầm X-Light F10 Turbo 24V V2\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2">
@@ -529,12 +504,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light 301 V2</a></h3>
     <p class="product-price">4.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Đèn bi gầm X-Light 301 V2\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/den-bi-gam-x-light-301-v2">
@@ -554,12 +524,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Turbo V2</a></h3>
     <p class="product-price">6.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Đèn bi gầm X-Light F10 Turbo V2\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2">
@@ -579,12 +544,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-pro-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Pro V2</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Cần kiểm tra</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Đèn bi gầm X-Light F10 Pro V2\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/den-bi-gam-x-light-f10-pro-v2">
@@ -604,12 +564,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 New</a></h3>
     <p class="product-price">4.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>2.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K - 4300K - 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 2.0 New\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/den-bi-gam-x-light-f10-2-new">
@@ -629,12 +584,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-x-light-x3-ultra" target="_blank" rel="noreferrer">Bi gầm X-Light X3 Ultra</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>45W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K/4300K/5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light X3 Ultra\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-x-light-x3-ultra">
@@ -654,12 +604,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 New</a></h3>
     <p class="product-price">4.300.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 45W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>4800K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 45W</dd></div><div><dt>Nhiệt màu</dt><dd>4800K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Đèn bi gầm X-Light F10 New\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/den-bi-gam-x-light-f10-new-2025">
@@ -679,12 +624,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-xligh-f10-hyper-2" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Hyper 2.0</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 50W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>Cos 5000K/Pha 5000K - Cos 4500K/Pha 3000K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>2.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 50W</dd></div><div><dt>Nhiệt màu</dt><dd>Cos 5000K/Pha 5000K - Cos 4500K/Pha 3000K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 Hyper 2.0\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-xligh-f10-hyper-2">
@@ -704,12 +644,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <span class="tag-moto">Dùng cho mô-tô</span>
     <h3><a href="https://auto365.vn/x-light-f10-20-inch-moto" target="_blank" rel="noreferrer">X-Light F10 2.0 Inch Moto</a></h3>
     <p class="product-price">3.700.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>30W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>2.0 inch</dd></div><div><dt>Công suất</dt><dd>30W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K - 4300K - 5500K</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: X-Light F10 2.0 Inch Moto\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/x-light-f10-20-inch-moto">
@@ -729,12 +664,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Pro 3 nhiệt màu</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Mưa, sương mù</span><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 Pro 3 nhiệt màu\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-xlight-f10-pro">
@@ -754,12 +684,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/x-light-f10-2024" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 2024</a></h3>
     <p class="product-price">4.200.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>30W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>2.0 inch</dd></div><div><dt>Công suất</dt><dd>30W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 2.0 2024\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/x-light-f10-2024">
@@ -779,12 +704,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Turbo 24V</a></h3>
     <p class="product-price">6.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Khoảng 40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>Khoảng 40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 Turbo 24V\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-x-light-f10-turbo-24v">
@@ -804,12 +724,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-henvvei-gt-1" target="_blank" rel="noreferrer">Bi gầm Henvvei GT-1</a></h3>
     <p class="product-price">5.800.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K - 4300K - 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K - 4300K - 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm Henvvei GT-1\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-henvvei-gt-1">
@@ -829,12 +744,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-gtr-g1-turbo" target="_blank" rel="noreferrer">Bi gầm GTR G1 Turbo</a></h3>
     <p class="product-price">6.200.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>Cần kiểm tra</dd></div><div><dt>Công suất</dt><dd>40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K/4300K/5500K</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm GTR G1 Turbo\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-gtr-g1-turbo">
@@ -854,12 +764,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Turbo</a></h3>
     <p class="product-price">6.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>Cần kiểm tra</dd></div><div><dt>Công suất</dt><dd>40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     <div class="product-needs"><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 Turbo\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-x-light-f10-turbo">
@@ -879,12 +784,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 Inch 2023</a></h3>
     <p class="product-price">4.200.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>2.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>2.0 inch</dd></div><div><dt>Công suất</dt><dd>35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 2.0 Inch 2023\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-x-light-f10-20-inch">
@@ -904,12 +804,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer">Bi gầm X-Light X3 Pro</a></h3>
     <p class="product-price">5.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light X3 Pro\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-led-x-light-x3-pro">
@@ -929,12 +824,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-titan-301" target="_blank" rel="noreferrer">Bi gầm Titan 301 – 3 nhiệt màu</a></h3>
     <p class="product-price">3.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm Titan 301 – 3 nhiệt màu\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-titan-301">
@@ -954,12 +844,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-led-gtr-g1-ultra" target="_blank" rel="noreferrer">Bi gầm GTR G1 Ultra</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>AR</dd></div><div><dt>Công suất</dt><dd>40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm GTR G1 Ultra\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-led-gtr-g1-ultra">
@@ -979,12 +864,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-red-lighting-r8-spyder" target="_blank" rel="noreferrer">Bi gầm Red Lighting R8 Spyder</a></h3>
     <p class="product-price">5.500.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><b>40W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>AR</dd></div><div><dt>Công suất</dt><dd>40W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm Red Lighting R8 Spyder\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-red-lighting-r8-spyder">
@@ -1004,12 +884,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-fogway-gen-1" target="_blank" rel="noreferrer">Bi gầm Fogway Gen 1</a></h3>
     <p class="product-price">4.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>12</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>AR</dd></div><div><dt>Công suất</dt><dd>35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>12 tháng</dd></div></dl>
     <div class="product-needs"><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm Fogway Gen 1\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-fogway-gen-1">
@@ -1029,12 +904,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-matrix-light-m1-pro" target="_blank" rel="noreferrer">Bi gầm Matrix Light M1 Pro</a></h3>
     <p class="product-price">4.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>12</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>AR</dd></div><div><dt>Công suất</dt><dd>35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>12 tháng</dd></div></dl>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm Matrix Light M1 Pro\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-matrix-light-m1-pro">
@@ -1054,12 +924,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2022 – có mắt quỷ</a></h3>
     <p class="product-price">4.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>AR</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000 / 4300 / 5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>24</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>AR</dd></div><div><dt>Công suất</dt><dd>Cần kiểm tra</dd></div><div><dt>Nhiệt màu</dt><dd>3000 / 4300 / 5500K</dd></div><div><dt>Bảo hành</dt><dd>24 tháng</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 2022 – có mắt quỷ\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy">
@@ -1079,12 +944,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-led-gtr-g1-pro" target="_blank" rel="noreferrer">Bi gầm LED GTR G1 Pro</a></h3>
     <p class="product-price">Liên hệ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>Cần kiểm tra</dd></div><div><dt>Công suất</dt><dd>Cần kiểm tra</dd></div><div><dt>Nhiệt màu</dt><dd>Cần kiểm tra</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm LED GTR G1 Pro\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-led-gtr-g1-pro">
@@ -1104,12 +964,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" rel="noreferrer">Bi gầm X-Light F10 New</a></h3>
     <p class="product-price">4.000.000đ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>3.0 inch</b><small>Lens</small></div>
-      <div class="spec-tile"><b>35W</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>3000K/4300K/5500K</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>2</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>3.0 inch</dd></div><div><dt>Công suất</dt><dd>35W</dd></div><div><dt>Nhiệt màu</dt><dd>3000K/4300K/5500K</dd></div><div><dt>Bảo hành</dt><dd>2 tháng</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm X-Light F10 New\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-x-light-f10">
@@ -1129,12 +984,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-gtr-special-edition-150-plus" target="_blank" rel="noreferrer">Bi gầm GTR Special Edition 150 Plus</a></h3>
     <p class="product-price">Liên hệ</p>
-    <div class="spec-tiles">
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Lens</small></div>
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Công suất</small></div>
-      <div class="spec-tile"><b>Cần kiểm tra</b><small>Nhiệt màu</small></div>
-      <div class="spec-tile"><b>Cần xác nhận</b><small>Bảo hành</small></div>
-    </div>
+    <dl class="spec-list"><div><dt>Lens</dt><dd>Cần kiểm tra</dd></div><div><dt>Công suất</dt><dd>Cần kiểm tra</dd></div><div><dt>Nhiệt màu</dt><dd>Cần kiểm tra</dd></div><div><dt>Bảo hành</dt><dd>Cần xác nhận</dd></div></dl>
     
     <div class="product-actions">
       <a class="btn-consult" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer" title="Tôi cần tư vấn sản phẩm: Bi gầm GTR Special Edition 150 Plus\nXe: (bổ sung khi nhắn)\nLink: https://auto365.vn/bi-gam-gtr-special-edition-150-plus">
