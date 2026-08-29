@@ -1497,8 +1497,16 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       return okQ && okBrand && okLens && okColor && okNeed;
     });
 
-    if (sortSel.value === 'price-asc') matched.sort(function(a,b){ return (+a.getAttribute('data-price')) - (+b.getAttribute('data-price')); });
-    else if (sortSel.value === 'price-desc') matched.sort(function(a,b){ return (+b.getAttribute('data-price')) - (+a.getAttribute('data-price')); });
+    if (sortSel.value === 'price-asc') matched.sort(function(a,b){
+      var pa = +a.getAttribute('data-price'), pb = +b.getAttribute('data-price');
+      if (!pa && !pb) return 0; if (!pa) return 1; if (!pb) return -1;
+      return pa - pb;
+    });
+    else if (sortSel.value === 'price-desc') matched.sort(function(a,b){
+      var pa = +a.getAttribute('data-price'), pb = +b.getAttribute('data-price');
+      if (!pa && !pb) return 0; if (!pa) return 1; if (!pb) return -1;
+      return pb - pa;
+    });
     else if (sortSel.value === 'name') matched.sort(function(a,b){ return a.getAttribute('data-name').localeCompare(b.getAttribute('data-name'), 'vi'); });
 
     var isMobile = window.matchMedia('(max-width: 640px)').matches;
