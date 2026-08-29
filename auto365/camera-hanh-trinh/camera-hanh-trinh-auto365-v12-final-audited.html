@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Camera hành trình ô tô: cách chọn và lắp theo xe | Auto365</title>
+<meta name="description" content="Chọn camera hành trình theo dòng xe, nhu cầu và ngân sách; so sánh trước–sau, GPS, Parking Mode, 4G và tìm điểm Auto365 gần bạn.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://auto365.vn/camera-hanh-trinh">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Camera hành trình ô tô: cách chọn, giá và lắp theo xe | Auto365.vn">
+<meta property="og:description" content="Một trang duy nhất: chọn camera theo xe, so sánh giải pháp, hiểu cách lắp, tìm điểm Auto365 gần nhất và nhận tư vấn. Chưa cần nhập số điện thoại.">
+<meta property="og:url" content="https://auto365.vn/camera-hanh-trinh">
+<meta property="og:locale" content="vi_VN">
+<!-- TODO-OG-IMAGE: bổ sung ảnh Open Graph thật 1200×630 trước khi live. -->
+<meta name="theme-color" content="#101418">
+<!--
+════════════════════════════════════════════════════════════════════
+  AUTO365 · CAMERA HÀNH TRÌNH · BẢN DỰNG V12 FINAL — AUDITED RELEASE CANDIDATE
+  ────────────────────────────────────────────────────────────────
+  V12 = nền production V10 (engine theo xe, form CRM-ready, tracking)
+      + lớp pillar (Quick Answer, hướng dẫn chọn, Knowledge Hub, schema)
+      + branch finder 90+ điểm (định vị thật theo tỉnh, không km giả)
+      + UX chọn điểm từ bản anh Việt: trạng thái đã chọn trên card,
+        branch id + name trong payload CRM, giờ mở cửa, đổi tỉnh render
+        ngay, sticky chuyển trạng thái khi giữ điểm
+  TRƯỚC KHI LIVE — tìm chuỗi "TODO-DATA" trong file này.
+  Mọi chỗ cần data thật đều được đánh dấu bằng chuỗi đó:
+    1. CONFIG (đầu <script>): hotline, Zalo OA, webhook CRM, GTM ID
+    2. PRICING: vùng giá thật theo bảng giá đang bán
+    3. VIDEOS: gắn video gốc từng điều kiện quay
+    4. CASES: ảnh + thông số ca lắp thật theo dòng xe
+    5. BRANCHES: danh sách 90+ điểm thật (địa chỉ, tọa độ, hotline, giờ mở)
+       — xác minh con số "90+" trước khi live
+    6. Chính sách bảo hành: xác nhận số tháng thiết bị + công lắp
+  Khi CONFIG.CRM_WEBHOOK_URL còn rỗng, form chạy CHẾ ĐỘ DEMO:
+  hiển thị rõ là demo + preview payload, KHÔNG hiện success giả.
+════════════════════════════════════════════════════════════════════
+-->
+<style>
+:root{
+  --ink:#101418;--ink2:#171c22;--ink3:#20262e;--paper:#f4f5f2;--white:#fff;
+  --red:#e23528;--red2:#c72920;--text:#15191e;--mut:#5f6873;
+  --line:#e0e3de;--soft:#eceee9;--ok:#137a4b;--okbg:#edf8f2;--warn:#a65b00;--warnbg:#fdf4e7;
+  --r:18px;--shadow:0 18px 55px -28px rgba(16,20,24,.28);--nav:68px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--text);line-height:1.62;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}img,video{display:block;max-width:100%}
+:focus-visible{outline:3px solid rgba(226,53,40,.5);outline-offset:2px;border-radius:6px}
+.container{width:min(1180px,92%);margin:auto}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.hidden{display:none!important}
+.todoChip{display:inline-flex;align-items:center;gap:6px;font-size:.63rem;font-weight:800;letter-spacing:.08em;color:var(--warn);background:var(--warnbg);border:1px dashed #d9a75f;border-radius:999px;padding:4px 9px;text-transform:uppercase}
+
+/* ───── Nav ───── */
+.nav{position:fixed;inset:0 0 auto;z-index:100;height:var(--nav);background:rgba(16,20,24,.93);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.navin{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:baseline;gap:10px;color:#fff}
+.logo strong{font-size:1.25rem;font-weight:900}.logo strong span{color:var(--red)}
+.logo small{font-size:.62rem;letter-spacing:.17em;color:#9ca6b0;text-transform:uppercase}
+.navlinks{display:flex;align-items:center;gap:22px}
+.navlinks a{font-size:.85rem;color:#c9d0d7;padding:6px 2px}.navlinks a:hover{color:#fff}
+.navphone{display:flex;align-items:center;gap:8px;color:#fff;font-weight:800;font-size:.9rem}
+.navphone svg{flex:none}
+.navcta{border:0;border-radius:10px;background:var(--red);color:#fff;padding:11px 16px;font-weight:800;min-height:44px;white-space:nowrap}
+.navcta:hover{background:var(--red2)}
+
+/* ───── Hero ───── */
+.hero{padding:calc(var(--nav) + 44px) 0 74px;background:radial-gradient(900px 430px at 12% 0%,rgba(226,53,40,.16),transparent 62%),radial-gradient(700px 400px at 100% 0%,rgba(65,100,150,.13),transparent 60%),var(--ink);color:#fff;overflow:hidden;position:relative}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:30%;background:repeating-linear-gradient(100deg,transparent 0 48px,rgba(255,255,255,.045) 48px 50px);mask-image:linear-gradient(to top,#000,transparent);pointer-events:none}
+.herogrid{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;letter-spacing:.16em;color:#abb4bd;text-transform:uppercase;margin-bottom:20px}
+.recdot{width:9px;height:9px;background:var(--red);border-radius:50%;box-shadow:0 0 0 6px rgba(226,53,40,.12)}
+h1{font-size:clamp(2.3rem,4.9vw,4rem);line-height:1.07;letter-spacing:-.045em;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--red)}
+.herosub{max-width:640px;color:#bac2ca;font-size:1.05rem;margin-bottom:26px}
+.heroTrust{display:flex;flex-wrap:wrap;gap:10px}
+.trustchip{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.11);background:rgba(255,255,255,.04);border-radius:999px;padding:8px 13px;font-size:.75rem;color:#d3d8de}
+.trustchip:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+
+/* ───── Selector (wizard) ───── */
+.selector{background:#fff;color:var(--text);border-radius:22px;padding:28px;box-shadow:0 35px 80px -40px rgba(0,0,0,.68)}
+.selectorTop{display:flex;justify-content:space-between;gap:15px;align-items:start;margin-bottom:18px}
+.selectorTop h2{font-size:1.34rem;line-height:1.25}
+.selectorTop p{font-size:.74rem;color:var(--mut);margin-top:3px}
+#stepLabel{font-size:.72rem;color:var(--mut);white-space:nowrap;padding-top:5px}
+.steps{display:flex;gap:8px;margin-bottom:18px}
+.stepdot{height:5px;flex:1;background:#e8eae6;border-radius:999px;transition:background .2s}
+.stepdot.on{background:var(--red)}
+.fieldgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:.79rem;font-weight:750;margin-bottom:7px}
+.field select,.field input{width:100%;border:1px solid #d5d9d3;background:#fafbf8;border-radius:11px;padding:13px 14px;color:var(--text);min-height:48px}
+.field select:focus,.field input:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(226,53,40,.11)}
+.stepTitle{font-size:.79rem;font-weight:750;margin-bottom:10px}
+.needgrid,.budgetgrid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.choice{position:relative}
+.choice input{position:absolute;opacity:0}
+.choice label{display:flex;align-items:flex-start;gap:9px;border:1px solid #dde0db;background:#fafbf9;border-radius:12px;padding:12px;min-height:56px;font-size:.83rem;cursor:pointer;transition:border-color .15s,background .15s}
+.choice label:before{content:"";width:18px;height:18px;border:1.5px solid #bbc2ba;border-radius:5px;flex:none;margin-top:1px;transition:.15s}
+.choice input:checked+label{border-color:var(--red);background:#fff4f2}
+.choice input:checked+label:before{background:var(--red);border-color:var(--red);box-shadow:inset 0 0 0 4px #fff}
+.choice input:focus-visible+label{outline:3px solid rgba(226,53,40,.5);outline-offset:2px}
+.choice.radio label:before{border-radius:50%}
+.wizardNav{display:flex;gap:9px}
+.btnBack{flex:0 0 auto;border:1px solid #d7dad5;background:#fff;border-radius:12px;padding:0 16px;font-weight:750;color:var(--mut);min-height:50px}
+.primary{flex:1;border:0;border-radius:12px;background:var(--red);color:#fff;padding:15px 18px;font-weight:850;display:flex;align-items:center;justify-content:center;gap:9px;min-height:50px;transition:background .15s}
+.primary:hover{background:var(--red2)}
+.primary[disabled]{opacity:.55;cursor:wait}
+.micro{text-align:center;color:var(--mut);font-size:.72rem;margin-top:10px}
+.skipline{text-align:center;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:.76rem;color:var(--mut)}
+.skipline a{color:var(--red);font-weight:750;text-decoration:underline;text-underline-offset:3px}
+.formmsg{font-size:.78rem;color:var(--red);margin:4px 0 10px;display:none}
+
+/* ───── Section base ───── */
+.sec{padding:92px 0}
+.sec.tight{padding-top:0}
+.sec.dark{background:var(--ink);color:#fff}
+.secHead{max-width:780px;margin-bottom:44px}
+.secHead.center{text-align:center;margin-left:auto;margin-right:auto}
+.kicker{font-size:.7rem;letter-spacing:.18em;color:var(--red);text-transform:uppercase;font-weight:800;margin-bottom:12px}
+.sec h2{font-size:clamp(1.8rem,3.4vw,2.65rem);line-height:1.14;letter-spacing:-.035em;margin-bottom:15px}
+.secHead p{color:var(--mut)}
+.dark .secHead p{color:#9da7b2}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+.reveal.vis{opacity:1;transform:none}
+
+/* ───── Result (kết quả tư vấn) ───── */
+.resultWrap{display:none;padding-top:84px}
+.resultCard{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.resultHead{padding:26px 28px;background:linear-gradient(120deg,#fff,#f5f6f2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;align-items:start}
+.resultHead .reason{margin-bottom:0}
+.score{background:var(--okbg);color:var(--ok);border-radius:999px;padding:8px 12px;font-size:.76rem;font-weight:800;white-space:nowrap}
+.resultGrid{display:grid;grid-template-columns:1.1fr .9fr}
+.recCol{padding:28px}
+.recCol+.recCol{border-left:1px solid var(--line);background:#fbfcfa}
+.tag{font-size:.67rem;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:850;margin-bottom:8px}
+.recCol h3{font-size:1.35rem;margin-bottom:8px}
+.reason{color:var(--mut);font-size:.9rem;margin-bottom:18px}
+.featureList{display:grid;gap:10px;margin-bottom:20px;list-style:none}
+.featureList li{display:flex;gap:10px;font-size:.9rem}
+.featureList li:before{content:"✓";color:var(--ok);font-weight:900;flex:none}
+.price{font-size:1.7rem;font-weight:900;letter-spacing:-.03em}
+.price small{font-size:.72rem;color:var(--mut);font-weight:600}
+.resultActions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.btn{border:0;border-radius:11px;padding:13px 17px;font-weight:800;min-height:46px}
+.btnRed{background:var(--red);color:#fff}.btnRed:hover{background:var(--red2)}
+.btnGhost{background:#fff;border:1px solid #d7dad5;color:var(--text)}
+.why{margin-top:16px;padding:14px 16px;border-radius:12px;background:#f6f7f4;font-size:.82rem}
+.why b{display:block;margin-bottom:6px;font-size:.78rem}
+.why ul{list-style:none;display:grid;gap:5px;color:var(--mut)}
+.why li:before{content:"→";color:var(--red);margin-right:7px;font-weight:800}
+.noteBox{margin-top:14px;padding:13px 16px;border-radius:12px;font-size:.82rem;display:none}
+.noteBox.warn{display:block;background:var(--warnbg);color:#7c4a08;border:1px solid #eedcbe}
+.noteBox.info{display:block;background:#eef3f8;color:#27435e;border:1px solid #d5e2ee}
+.checkStrip{margin-top:22px;background:var(--ink);color:#fff;border-radius:16px;padding:20px 22px}
+.checkStrip b{display:block;font-size:.86rem;margin-bottom:10px}
+.checkStrip ul{list-style:none;display:grid;gap:7px;grid-template-columns:1fr 1fr 1fr}
+.checkStrip li{font-size:.8rem;color:#c6cdd4;display:flex;gap:8px}
+.checkStrip li:before{content:"✓";color:#5fc48f;font-weight:900;flex:none}
+.disclaimer{font-size:.72rem;color:var(--mut);margin-top:16px}
+/* ───── Video proof ───── */
+.proofTabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.proofTab{border:1px solid rgba(255,255,255,.15);background:transparent;color:#cbd2d9;border-radius:999px;padding:10px 14px;font-weight:700;min-height:44px}
+.proofTab.on{background:var(--red);border-color:var(--red);color:#fff}
+.videoShell{aspect-ratio:16/8.4;border:1px solid rgba(255,255,255,.11);border-radius:20px;background:linear-gradient(145deg,#1f252d,#0b0e12);position:relative;overflow:hidden}
+.videoShell video{width:100%;height:100%;object-fit:cover}
+.videoPlaceholder{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px}
+.videoPlaceholder .mono{font-size:.72rem;letter-spacing:.13em;color:#8f9aa5;margin-bottom:14px}
+.videoPlaceholder ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:center;gap:7px;max-width:560px}
+.videoPlaceholder li{font-size:.68rem;color:#aab4be;border:1px dashed rgba(255,255,255,.22);border-radius:999px;padding:5px 10px}
+.videoMeta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+.meta{background:var(--ink2);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:13px}
+.meta b{display:block;font-size:.83rem}
+.meta span{font-size:.72rem;color:#98a3ae}
+.compareSlider{margin-top:38px;border:1px solid rgba(255,255,255,.11);border-radius:20px;overflow:hidden;position:relative;aspect-ratio:16/6.4;background:#0b0e12}
+.csLayer{position:absolute;inset:0;display:grid;place-items:center;font-size:.72rem;letter-spacing:.12em;color:#93a0ab}
+.csLayer.a{background:linear-gradient(120deg,#232a33,#11151a)}
+.csLayer.b{background:linear-gradient(120deg,#3a4450,#1d232b);clip-path:inset(0 0 0 var(--cs,50%))}
+.csHandle{position:absolute;top:0;bottom:0;left:var(--cs,50%);width:2px;background:var(--red);pointer-events:none}
+.csHandle:after{content:"◂ ▸";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:var(--red);color:#fff;font-size:.6rem;border-radius:999px;padding:6px 8px;white-space:nowrap}
+.csRange{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.csTag{position:absolute;top:12px;font-size:.62rem;letter-spacing:.1em;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:5px 10px;color:#dfe5ea;pointer-events:none}
+.csTag.l{left:12px}.csTag.r{right:12px}
+.proofNote{margin-top:12px;font-size:.72rem;color:#8f9aa5}
+
+/* ───── 5 lỗi thực tế ───── */
+.painGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.pain{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column}
+.painNo{font-size:.65rem;color:var(--red);font-weight:850;letter-spacing:.12em;margin-bottom:10px}
+.pain h3{font-size:.95rem;margin-bottom:8px;line-height:1.35}
+.pain p{font-size:.8rem;color:var(--mut);flex:1}
+.fix{margin-top:13px;padding-top:13px;border-top:1px solid var(--line);font-size:.76rem;font-weight:700}
+.fix span{display:block;font-size:.68rem;color:var(--ok);font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+
+/* ───── Products ───── */
+.intentTabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.intentTab{border:1px solid #d8dcd6;border-radius:999px;background:#fff;padding:10px 15px;font-weight:750;color:var(--mut);min-height:44px}
+.intentTab.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.productGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.product{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;display:flex;flex-direction:column}
+.product.featured{border-color:rgba(226,53,40,.55);box-shadow:0 18px 40px -28px rgba(226,53,40,.55)}
+.productBadge{align-self:flex-start;font-size:.65rem;border-radius:999px;padding:6px 10px;background:#fff0ee;color:var(--red);font-weight:850}
+.product h3{font-size:1.13rem;margin:12px 0 4px}
+.product>p{font-size:.84rem;color:var(--mut)}
+.fitBlock{margin:14px 0 4px;display:grid;gap:8px}
+.fitRow{padding:11px 13px;border-radius:11px;font-size:.78rem}
+.fitRow b{display:block;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;margin-bottom:3px}
+.fitRow.yes{background:var(--okbg)}.fitRow.yes b{color:var(--ok)}
+.fitRow.no{background:#faf1ef}.fitRow.no b{color:var(--red)}
+.fitRow.note{background:#f6f7f4}.fitRow.note b{color:var(--mut)}
+.specRow{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.specRow span{font-size:.68rem;background:#f1f3ef;border:1px solid var(--line);border-radius:999px;padding:5px 9px;color:var(--mut)}
+.productPrice{margin-top:auto;padding-top:14px;font-weight:900;font-size:1.05rem}
+.productPrice small{display:block;font-weight:600;font-size:.68rem;color:var(--mut)}
+.productActions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px}
+.productActions .btn{padding:12px 9px;font-size:.85rem}
+
+/* ───── Compare table ───── */
+.tableWrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:#fff;-webkit-overflow-scrolling:touch}
+table.cmp{width:100%;border-collapse:collapse;min-width:680px}
+.cmp th,.cmp td{padding:14px 16px;text-align:left;font-size:.85rem;border-bottom:1px solid var(--line)}
+.cmp thead th{background:var(--ink);color:#fff;font-size:.8rem;position:sticky;top:0}
+.cmp thead th:first-child{border-radius:0}
+.cmp tbody th{font-weight:750;background:#fafbf8;white-space:nowrap;position:sticky;left:0}
+.cmp td b.good{color:var(--ok)}
+.cmp td .dim{color:var(--mut)}
+.cmp tr:last-child th,.cmp tr:last-child td{border-bottom:0}
+.cmp tbody .colBest{background:#fff8f7}
+.cmp thead th.colBest{background:var(--red);color:#fff}
+.cmpFoot{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:18px}
+.cmpFoot p{font-size:.8rem;color:var(--mut)}
+
+/* ───── Cases (xe đã lắp) ───── */
+.casesTop{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.brandTabs{display:flex;gap:8px;flex-wrap:wrap}
+.brandTab{border:1px solid #d7dad5;background:#fff;border-radius:10px;padding:10px 13px;font-weight:750;min-height:44px}
+.brandTab.on{background:var(--red);border-color:var(--red);color:#fff}
+.caseGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.case{border-radius:17px;overflow:hidden;background:#fff;border:1px solid var(--line);display:flex;flex-direction:column}
+.caseMedia{aspect-ratio:16/10;background:linear-gradient(140deg,#dfe3dd,#f7f8f5);display:grid;place-items:center;color:#7b858e;font-size:.7rem;letter-spacing:.08em;text-align:center;padding:10px}
+.caseBody{padding:18px;display:flex;flex-direction:column;flex:1}
+.caseBody h3{font-size:1rem}
+.caseBody>p{font-size:.82rem;color:var(--mut);margin:7px 0 13px;flex:1}
+.caseSpecs{display:grid;gap:6px;margin-bottom:13px}
+.caseSpecs div{display:flex;justify-content:space-between;gap:12px;font-size:.76rem;border-bottom:1px dashed var(--soft);padding-bottom:6px}
+.caseSpecs span{color:var(--mut)}
+.caseMeta{display:flex;gap:7px;flex-wrap:wrap}
+.caseMeta span{font-size:.66rem;background:#f1f3ef;border-radius:999px;padding:5px 8px;color:var(--mut)}
+
+/* ───── Reviews ───── */
+.reviewStrip{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.review{background:#fff;border:1px dashed #cfd4cd;border-radius:16px;padding:20px;display:grid;gap:10px}
+.review .who{display:flex;gap:11px;align-items:center}
+.review .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(140deg,#e3e6e0,#f4f5f2);border:1px solid var(--line)}
+.review .who b{display:block;font-size:.85rem}
+.review .who span{font-size:.7rem;color:var(--mut)}
+.review p{font-size:.8rem;color:var(--mut)}
+
+/* ───── Process ───── */
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.proc{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+.dark .proc{background:var(--ink2);border-color:rgba(255,255,255,.09)}
+.procNo{font-size:.67rem;color:var(--red);font-weight:900;margin-bottom:10px;letter-spacing:.1em}
+.proc h3{font-size:.95rem;margin-bottom:7px}
+.proc p{font-size:.8rem;color:var(--mut)}
+.dark .proc p{color:#9da7b2}
+
+/* ───── Điện nguồn & Parking ───── */
+.powerGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.power{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.power .lvl{font-size:.66rem;font-weight:850;letter-spacing:.11em;text-transform:uppercase;color:var(--mut);margin-bottom:10px}
+.power h3{font-size:1.05rem;margin-bottom:8px}
+.power p{font-size:.83rem;color:var(--mut)}
+.power ul{list-style:none;margin-top:13px;display:grid;gap:7px}
+.power li{font-size:.8rem;color:var(--mut);display:flex;gap:8px}
+.power li:before{content:"·";color:var(--red);font-weight:900}
+.power .fitFor{margin-top:14px;padding-top:13px;border-top:1px solid var(--line);font-size:.76rem}
+.power .fitFor b{color:var(--ok)}
+.batteryNote{margin-top:18px;background:var(--ink);color:#c9d0d7;border-radius:16px;padding:20px 24px;font-size:.84rem;display:flex;gap:14px;align-items:start}
+.batteryNote strong{color:#fff}
+.batteryNote .ic{flex:none;width:36px;height:36px;border-radius:10px;background:rgba(226,53,40,.15);color:var(--red);display:grid;place-items:center;font-weight:900}
+
+/* ───── Trust / warranty ───── */
+.trustGrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.trustPanel{background:var(--ink2);border:1px solid rgba(255,255,255,.09);border-radius:18px;padding:24px}
+.trustPanel h3{margin-bottom:16px;font-size:1.05rem}
+.trustList{display:grid;gap:12px}
+.trustItem{display:flex;gap:12px}
+.trustIcon{width:34px;height:34px;border-radius:10px;background:rgba(226,53,40,.12);color:var(--red);display:grid;place-items:center;flex:none;font-weight:900;font-size:.8rem}
+.trustItem b{display:block;font-size:.9rem}
+.trustItem span{font-size:.78rem;color:#9da7b2}
+.warrantyMock{background:#fff;color:var(--text);border-radius:14px;padding:18px}
+.warrantyRow{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.82rem}
+.warrantyRow:last-child{border:0}
+.warrantyRow span{color:var(--mut)}
+.warrantyRow b{text-align:right}
+
+/* ───── Hệ thống & kỹ thuật viên ───── */
+.systemGrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
+.branchPanel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}
+.branchPanel h3{font-size:1.05rem;margin-bottom:6px}
+.branchPanel>p{font-size:.82rem;color:var(--mut);margin-bottom:16px}
+.branchList{display:grid;gap:9px;max-height:260px;overflow:auto}
+.branch{border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:.82rem;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.branch span{color:var(--mut);font-size:.74rem}
+.techGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.tech{background:#fff;border:1px dashed #cfd4cd;border-radius:16px;padding:18px;display:flex;gap:13px;align-items:center}
+.tech .ph{width:52px;height:52px;border-radius:14px;background:linear-gradient(140deg,#e3e6e0,#f4f5f2);border:1px solid var(--line);flex:none;display:grid;place-items:center;font-size:.6rem;color:#9aa3ac;text-align:center}
+.tech b{display:block;font-size:.86rem}
+.tech span{font-size:.72rem;color:var(--mut)}
+
+/* ───── FAQ ───── */
+.faqTabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:26px}
+.faqTab{border:1px solid #d8dcd6;border-radius:999px;background:#fff;padding:10px 15px;font-weight:750;color:var(--mut);min-height:44px}
+.faqTab.on{background:var(--red);border-color:var(--red);color:#fff}
+.faq{max-width:840px;margin:auto}
+.faqGroup{display:none}
+.faqGroup.on{display:block}
+.faqItem{border-bottom:1px solid var(--line)}
+.faqQ{width:100%;border:0;background:transparent;padding:19px 4px;display:flex;justify-content:space-between;gap:15px;text-align:left;font-weight:800;font-size:.95rem;min-height:44px}
+.faqA{max-height:0;overflow:hidden;transition:max-height .28s ease}
+.faqA p{padding:0 4px 20px;color:var(--mut);font-size:.89rem}
+.faqItem.on .faqA{max-height:420px}
+.faqItem.on .pm{transform:rotate(45deg);background:var(--red);color:#fff;border-color:var(--red)}
+.pm{width:26px;height:26px;border-radius:8px;border:1px solid var(--line);display:grid;place-items:center;flex:none;transition:.2s;font-weight:600}
+
+/* ───── Lead ───── */
+.contact{background:radial-gradient(800px 360px at 10% 0%,rgba(226,53,40,.14),transparent 60%),var(--ink);color:#fff}
+.contactGrid{display:grid;grid-template-columns:1fr .9fr;gap:32px;align-items:start}
+.leadSummary{display:grid;gap:2px;margin-top:22px}
+.summaryItem{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.09);font-size:.86rem}
+.summaryItem span{color:#9fa9b3}
+.summaryItem b{text-align:right}
+.slaLine{margin-top:18px;font-size:.8rem;color:#9fa9b3;display:flex;gap:10px;align-items:start}
+.slaLine i{font-style:normal;flex:none}
+.leadCard{background:#fff;color:var(--text);border-radius:20px;padding:26px}
+.leadCard h3{font-size:1.25rem;margin-bottom:5px}
+.leadCard>div>p{font-size:.83rem;color:var(--mut);margin-bottom:18px}
+.method{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:15px}
+.method>div{position:relative}
+.method input{position:absolute;opacity:0}
+.method label{display:grid;place-items:center;text-align:center;min-height:52px;border:1px solid #d9dcd7;border-radius:11px;font-size:.78rem;font-weight:750;cursor:pointer}
+.method input:checked+label{border-color:var(--red);background:#fff3f1;color:var(--red)}
+.method input:focus-visible+label{outline:3px solid rgba(226,53,40,.5);outline-offset:2px}
+.consent{display:flex;gap:9px;align-items:flex-start;font-size:.72rem;color:var(--mut);margin:4px 0 14px;cursor:pointer}
+.consent input{width:17px;height:17px;margin-top:2px;accent-color:var(--red);flex:none}
+.privacy{font-size:.69rem;color:var(--mut);text-align:center;margin-top:10px}
+.errPanel{display:none;margin-top:14px;background:#faf1ef;border:1px solid #eccfca;border-radius:12px;padding:15px;font-size:.8rem}
+.errPanel b{display:block;margin-bottom:6px;color:var(--red)}
+.errPanel .fallbackBtns{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:11px}
+.success{display:none;text-align:center;padding:20px 4px}
+.successIcon{width:58px;height:58px;margin:0 auto 15px;border-radius:50%;background:var(--okbg);color:var(--ok);display:grid;place-items:center;font-size:1.4rem;font-weight:900}
+.success h3{margin-bottom:8px}
+.success p{font-size:.84rem;color:var(--mut)}
+.demoBox{margin-top:16px;text-align:left;background:#f6f7f4;border:1px dashed #cfd4cd;border-radius:12px;padding:14px}
+.demoBox b{font-size:.7rem;letter-spacing:.09em;text-transform:uppercase;color:var(--warn)}
+.demoBox pre{font-size:.66rem;line-height:1.5;color:var(--mut);white-space:pre-wrap;word-break:break-all;margin-top:8px;max-height:180px;overflow:auto}
+
+/* ───── Footer & internal links ───── */
+.linkhub{background:#0e1216;color:#8f99a3;padding:38px 0;border-top:1px solid rgba(255,255,255,.06)}
+.linkhub h4{color:#c8cfd6;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+.linkCols{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.linkCols ul{list-style:none;display:grid;gap:8px}
+.linkCols a{font-size:.8rem;color:#8f99a3}
+.linkCols a:hover{color:#fff}
+footer{background:#0b0e11;color:#a1aab3;padding:30px 0}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.foot small{font-size:.72rem;line-height:1.7}
+
+/* ───── Sticky CTA ───── */
+.sticky{position:fixed;z-index:120;left:50%;bottom:calc(12px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);width:min(620px,calc(100% - 22px));background:rgba(16,20,24,.96);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.1);border-radius:15px;padding:9px;display:flex;align-items:center;gap:9px;box-shadow:0 15px 40px rgba(0,0,0,.28);transition:transform .25s ease,opacity .25s ease}
+.sticky.off{transform:translate(-50%,140%);opacity:0;pointer-events:none}
+.stickyText{flex:1;color:#fff;padding-left:8px;min-width:0}
+.stickyText b{display:block;font-size:.84rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stickyText span{font-size:.68rem;color:#9ca7b1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+.sticky a,.sticky button{border:0;border-radius:10px;padding:13px 14px;font-weight:850;min-height:46px;white-space:nowrap}
+.stickyCall{background:var(--ink3);color:#fff;display:grid;place-items:center}
+.stickyMain{background:var(--red);color:#fff}
+
+/* ───── Quick answer + TOC (pillar) ───── */
+.answerBox{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}
+.answerBox h2{font-size:clamp(1.5rem,2.6vw,2rem);margin:10px 0 14px}
+.answerBox>p{font-size:.95rem;color:var(--text)}
+.answerBox>p strong{font-weight:850}
+.answerList{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:18px}
+.answerPill{background:#f6f7f4;border:1px solid var(--line);border-radius:13px;padding:13px 15px}
+.answerPill b{display:block;font-size:.82rem;margin-bottom:3px}
+.answerPill span{font-size:.76rem;color:var(--mut)}
+.toc{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:16px}
+.toc a{border:1px solid var(--line);background:#fff;border-radius:11px;padding:11px 13px;font-size:.79rem;font-weight:700;color:var(--mut);display:flex;align-items:center;gap:8px;min-height:44px}
+.toc a:before{content:"→";color:var(--red);font-weight:900}
+.toc a:hover{border-color:var(--red);color:var(--text)}
+
+/* ───── Hướng dẫn chọn (guide) ───── */
+.guideGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.guideCard{background:#fff;border:1px solid var(--line);border-radius:17px;padding:22px}
+.guideCard .qa{font-size:.65rem;font-weight:850;letter-spacing:.12em;color:var(--red);text-transform:uppercase;margin-bottom:9px}
+.guideCard h3{font-size:1.02rem;margin-bottom:8px}
+.guideCard p{font-size:.83rem;color:var(--mut)}
+.guideCard ul{list-style:none;margin-top:12px;display:grid;gap:6px}
+.guideCard li{font-size:.78rem;color:var(--mut);display:flex;gap:8px}
+.guideCard li:before{content:"·";color:var(--red);font-weight:900}
+
+/* ───── Branch finder 90+ điểm ───── */
+.branchSec{background:var(--ink);color:#fff}
+.branchProof{display:flex;gap:9px;flex-wrap:wrap;margin-top:-22px;margin-bottom:34px}
+.branchProof span{border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.04);border-radius:999px;padding:7px 12px;font-size:.73rem;color:#cdd4da}
+.branchGrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:18px;align-items:start}
+.branchFinder{background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:24px}
+.branchFinder h3{font-size:1.05rem;margin-bottom:5px}
+.branchFinder>p{font-size:.79rem;color:#9da7b2;margin-bottom:15px}
+.locateBtn{width:100%;border:1px solid rgba(255,255,255,.16);background:#202832;color:#fff;border-radius:12px;padding:13px;font-weight:800;min-height:48px}
+.locateBtn:hover{border-color:var(--red)}
+.orLine{display:flex;align-items:center;gap:10px;color:#78838e;font-size:.68rem;margin:12px 0;letter-spacing:.1em}
+.orLine:before,.orLine:after{content:"";height:1px;background:rgba(255,255,255,.1);flex:1}
+.branchField{margin-bottom:12px}
+.branchField label{display:block;font-size:.75rem;font-weight:750;color:#cbd2d9;margin-bottom:6px}
+.branchField select{width:100%;background:#202832;color:#fff;border:1px solid rgba(255,255,255,.13);border-radius:11px;padding:13px 14px;font:inherit;min-height:48px}
+.branchFilters{display:grid;gap:9px;margin:14px 0}
+.branchCheck{display:flex;align-items:center;gap:9px;font-size:.78rem;color:#c7ced5;cursor:pointer}
+.branchCheck input{accent-color:var(--red);width:16px;height:16px}
+.findBtn{width:100%;border:0;border-radius:12px;background:var(--red);color:#fff;padding:14px;font-weight:900;min-height:50px}
+.findBtn:hover{background:var(--red2)}
+.branchFine{font-size:.67rem;color:#6f7a85;margin-top:12px;line-height:1.55}
+.branchStats{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:16px}
+.branchStat{background:#151a20;border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px}
+.branchStat b{display:block;font-size:1.05rem}
+.branchStat span{font-size:.68rem;color:#98a3ae}
+.branchResults{display:grid;gap:12px}
+.branchResultHead{display:flex;justify-content:space-between;gap:14px;align-items:start}
+.branchResultHead h3{font-size:1.1rem}
+.branchResultHead p{font-size:.78rem;color:#9da7b2;margin-top:3px}
+.branchStatus{font-size:.64rem;letter-spacing:.11em;background:rgba(226,53,40,.13);color:#ff9d94;border:1px solid rgba(226,53,40,.3);border-radius:999px;padding:7px 11px;white-space:nowrap}
+.branchList2{display:grid;gap:12px}
+.branchEmpty{border:1px dashed rgba(255,255,255,.18);border-radius:15px;padding:26px;text-align:center;font-size:.82rem;color:#9da7b2}
+.branchCard{background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:19px}
+.branchCard.selected{border-color:var(--red);box-shadow:0 0 0 1px rgba(226,53,40,.3)}
+.branchCardTop{display:flex;justify-content:space-between;gap:14px;align-items:start}
+.branchCard h4{font-size:.98rem}
+.branchAddress{font-size:.76rem;color:#9da7b2;margin-top:3px}
+.branchDistance{font-size:.72rem;color:#cdd4da;background:#151a20;border:1px solid rgba(255,255,255,.09);border-radius:999px;padding:6px 10px;white-space:nowrap}
+.branchTags{display:flex;gap:6px;flex-wrap:wrap;margin:11px 0}
+.branchTags span{font-size:.66rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:5px 9px;color:#c7ced5}
+.branchSlot{font-size:.76rem;color:#9fdcb8}
+.branchSlot b{margin-right:5px}
+.branchActions{display:flex;gap:8px;margin-top:13px;flex-wrap:wrap}
+.branchActions a,.branchActions button{border-radius:10px;padding:11px 13px;font-weight:800;font-size:.79rem;border:1px solid rgba(255,255,255,.15);background:transparent;color:#fff;min-height:44px;display:inline-flex;align-items:center}
+.branchActions .bookBranch{background:var(--red);border-color:var(--red);flex:1;justify-content:center}
+.branchActions .bookBranch:hover{background:var(--red2)}
+
+/* ───── Knowledge hub ───── */
+.topicGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.topicCard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:21px;display:flex;flex-direction:column}
+.topicCard h3{font-size:.98rem;margin-bottom:7px}
+.topicCard p{font-size:.8rem;color:var(--mut);flex:1}
+.topicCard a{margin-top:13px;font-size:.8rem;font-weight:800;color:var(--red)}
+.entityBand{background:var(--ink);color:#c9d0d7;border-radius:18px;padding:26px;margin-top:20px}
+.entityBand h3{color:#fff;font-size:1rem;margin-bottom:8px}
+.entityBand p{font-size:.85rem}
+.sourceBlock{background:#f6f7f4;border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin-top:14px}
+.sourceBlock h3{font-size:.85rem;margin-bottom:6px}
+.sourceBlock p{font-size:.79rem;color:var(--mut)}
+
+/* ───── Responsive ───── */
+@media(max-width:1050px){.painGrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:980px){
+.herogrid,.contactGrid,.trustGrid,.systemGrid{grid-template-columns:1fr}
+.heroText{max-width:760px}
+.productGrid,.caseGrid,.reviewStrip{grid-template-columns:1fr 1fr}
+.process{grid-template-columns:repeat(2,1fr)}
+.answerList,.toc{grid-template-columns:1fr 1fr}
+.guideGrid,.topicGrid{grid-template-columns:1fr 1fr}
+.branchGrid{grid-template-columns:1fr}
+.resultGrid{grid-template-columns:1fr}
+.recCol+.recCol{border-left:0;border-top:1px solid var(--line)}
+.videoMeta{grid-template-columns:repeat(2,1fr)}
+.powerGrid{grid-template-columns:1fr}
+.checkStrip ul{grid-template-columns:1fr}
+.linkCols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+.navlinks a,.navphone span{display:none}
+.logo small{display:none}
+.navcta{padding:10px 13px;font-size:.85rem}
+.hero{padding-bottom:48px}
+.herogrid{gap:28px}
+.selector{padding:20px}
+.fieldgrid,.needgrid,.budgetgrid{grid-template-columns:1fr}
+.sec{padding:70px 0}
+.painGrid,.productGrid,.caseGrid,.process,.reviewStrip,.techGrid,.answerList,.toc,.guideGrid,.topicGrid,.branchStats{grid-template-columns:1fr}
+.answerBox{padding:22px}
+.branchCardTop{display:block}
+.branchDistance{display:inline-block;margin-top:8px}
+.resultHead{display:block}
+.score{display:inline-block;margin-top:12px}
+.productActions{grid-template-columns:1fr}
+.method{grid-template-columns:1fr}
+.stickyText{padding-left:4px}
+.sticky{width:calc(100% - 16px)}
+.sticky a,.sticky button{flex:1;padding:13px 8px;font-size:.85rem}
+.videoShell{aspect-ratio:16/10}
+.compareSlider{aspect-ratio:16/9}
+.heroTrust{gap:7px}
+.linkCols{grid-template-columns:1fr}
+.resultWrap{padding-top:70px}
+}
+@media(max-width:480px){.stickyText{display:none}.sticky{padding:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":["WebPage","CollectionPage"],
+      "@id":"https://auto365.vn/camera-hanh-trinh#webpage",
+      "url":"https://auto365.vn/camera-hanh-trinh",
+      "name":"Camera hành trình ô tô: cách chọn, giá và lắp theo xe",
+      "description":"Trang trụ cột camera hành trình ô tô: hướng dẫn chọn theo dòng xe, nhu cầu và ngân sách; so sánh nhóm giải pháp; quy trình lắp đặt và bảo hành tại hệ thống Auto365.",
+      "inLanguage":"vi",
+      "dateModified":"2026-07-14",
+      "isPartOf":{"@type":"WebSite","name":"Auto365.vn","url":"https://auto365.vn"},
+      "about":[
+        {"@type":"Thing","name":"Camera hành trình ô tô"},
+        {"@type":"Thing","name":"Camera hành trình trước sau"},
+        {"@type":"Thing","name":"Parking Mode"},
+        {"@type":"Thing","name":"Camera hành trình 4G"}
+      ]
+    },
+    {
+      "@type":"ItemList",
+      "@id":"https://auto365.vn/camera-hanh-trinh#solution-groups",
+      "name":"Các nhóm giải pháp camera hành trình",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Camera trước"},
+        {"@type":"ListItem","position":2,"name":"Camera trước – sau"},
+        {"@type":"ListItem","position":3,"name":"Camera GPS nhắc tốc độ"},
+        {"@type":"ListItem","position":4,"name":"Camera trước – sau + Parking Mode"},
+        {"@type":"ListItem","position":5,"name":"Camera 4G/Cloud"}
+      ]
+    },
+    {
+      "@type":"Organization",
+      "@id":"https://auto365.vn#org",
+      "name":"Auto365.vn",
+      "url":"https://auto365.vn",
+      "brand":{"@type":"Brand","name":"Auto365"},
+      "parentOrganization":{"@type":"Organization","name":"365Group"}
+    },
+    {
+      "@type":"BreadcrumbList",
+      "itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://auto365.vn"},
+        {"@type":"ListItem","position":2,"name":"Camera hành trình","item":"https://auto365.vn/camera-hanh-trinh"}
+      ]
+    }
+  ]
+}
+</script>
+<!-- TODO-DATA: khi có địa chỉ chi nhánh thật, thêm khối LocalBusiness (mỗi chi nhánh 1 node) và Product schema theo model đang bán (kèm offers.price thật). KHÔNG thêm aggregateRating khi chưa có nguồn review kiểm chứng. -->
+</head>
+<body>
+<nav class="nav" aria-label="Điều hướng chính"><div class="container navin">
+  <a class="logo" href="#top"><strong>AUTO<span>365</span></strong><small>Camera hành trình</small></a>
+  <div class="navlinks">
+    <a href="#tu-van">Tìm theo xe</a>
+    <a href="#huong-dan">Cách chọn</a>
+    <a href="#san-pham">Giải pháp</a>
+    <a href="#diem-lap">Điểm lắp</a>
+    <a href="#xe-da-lap">Xe đã lắp</a>
+    <a href="#faq">Hỏi đáp</a>
+    <a class="navphone" id="navPhone" href="tel:" data-track="cta_call_nav" aria-label="Gọi hotline Auto365"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span id="navPhoneText"></span></a>
+    <button class="navcta" data-scroll="#lead">Nhận phương án</button>
+  </div>
+</div></nav>
+
+<!-- ═══════════ 1 · HERO + SMART SELECTOR ═══════════ -->
+<header class="hero" id="top"><div class="container herogrid">
+  <div class="heroText">
+    <div class="eyebrow"><span class="recdot"></span>Hệ thống tư vấn camera hành trình theo xe</div>
+    <h1>Camera hành trình phù hợp với <em>chiếc xe</em> và cách bạn sử dụng.</h1>
+    <p class="herosub">Không phải đoạn đường nào cũng đủ sáng. Và không phải camera nào sáng hơn cũng là đúng. Chọn xe, nhu cầu và ngân sách — trang sẽ đưa phương án kèm khoảng giá trong khoảng 45 giây.</p>
+    <div class="heroTrust">
+      <span class="trustchip">Tư vấn theo từng dòng xe</span>
+      <span class="trustchip">Không tư vấn dư tính năng</span>
+      <span class="trustchip">Thấy phương án trước, số điện thoại sau</span>
+      <span class="trustchip">Lắp đặt và bảo hành tại hệ thống Auto365</span>
+    </div>
+  </div>
+
+  <div class="selector" id="tu-van" aria-label="Bộ chọn camera theo xe">
+    <div class="selectorTop">
+      <div><h2>Tìm camera phù hợp</h2><p>Ba bước ngắn. Chưa cần nhập số điện thoại.</p></div>
+      <span class="mono" id="stepLabel" aria-live="polite">BƯỚC 1/3</span>
+    </div>
+    <div class="steps" aria-hidden="true"><i class="stepdot on"></i><i class="stepdot"></i><i class="stepdot"></i></div>
+    <form id="advisorForm" autocomplete="off">
+      <div id="advisorStep1">
+        <div class="fieldgrid">
+          <div class="field"><label for="brand">Hãng xe</label>
+            <select id="brand" required><option value="">Chọn hãng xe</option></select>
+          </div>
+          <div class="field"><label for="model">Dòng xe</label>
+            <select id="model" required disabled><option value="">Chọn hãng trước</option></select>
+          </div>
+        </div>
+        <div class="field hidden" id="modelOtherWrap"><label for="modelOther">Tên dòng xe</label>
+          <input id="modelOther" placeholder="Ví dụ: Captur, Seal U, C3…" maxlength="40">
+        </div>
+        <div class="field"><label for="year">Đời xe</label>
+          <select id="year"><option value="">Chưa rõ / không cần chọn</option></select>
+        </div>
+      </div>
+      <div id="advisorStep2" class="hidden">
+        <p class="stepTitle">Nhu cầu của anh/chị — chọn được nhiều mục</p>
+        <div class="needgrid" id="needGrid">
+          <div class="choice"><input type="checkbox" name="need" id="n1" value="evidence"><label for="n1">Có bằng chứng khi va chạm</label></div>
+          <div class="choice"><input type="checkbox" name="need" id="n2" value="dual"><label for="n2">Ghi rõ cả trước và sau</label></div>
+          <div class="choice"><input type="checkbox" name="need" id="n3" value="park"><label for="n3">Giám sát khi đỗ xe</label></div>
+          <div class="choice"><input type="checkbox" name="need" id="n4" value="speed"><label for="n4">Nhắc giới hạn tốc độ</label></div>
+          <div class="choice"><input type="checkbox" name="need" id="n5" value="remote"><label for="n5">Xem xe từ xa qua 4G</label></div>
+          <div class="choice"><input type="checkbox" name="need" id="n6" value="service"><label for="n6">Xe dịch vụ / chạy nhiều</label></div>
+          <div class="choice"><input type="checkbox" name="need" id="n0" value="unsure"><label for="n0">Chưa rõ, cần gợi ý</label></div>
+        </div>
+      </div>
+      <div id="advisorStep3" class="hidden">
+        <p class="stepTitle">Ngân sách dự kiến — trọn gói cả công lắp</p>
+        <div class="budgetgrid">
+          <div class="choice radio"><input type="radio" name="budget" id="b1" value="under2"><label for="b1">Dưới 2 triệu</label></div>
+          <div class="choice radio"><input type="radio" name="budget" id="b2" value="b24"><label for="b2">2 – 4 triệu</label></div>
+          <div class="choice radio"><input type="radio" name="budget" id="b3" value="b47"><label for="b3">4 – 7 triệu</label></div>
+          <div class="choice radio"><input type="radio" name="budget" id="b4" value="over7"><label for="b4">Trên 7 triệu</label></div>
+          <div class="choice radio"><input type="radio" name="budget" id="b5" value="open"><label for="b5">Chưa xác định</label></div>
+        </div>
+      </div>
+      <p class="formmsg" id="advisorMsg" role="alert">Vui lòng hoàn tất lựa chọn ở bước này.</p>
+      <div class="wizardNav">
+        <button class="btnBack hidden" type="button" id="advisorBack" aria-label="Quay lại bước trước">← Lại</button>
+        <button class="primary" type="button" id="advisorNext">Tiếp tục →</button>
+      </div>
+      <p class="micro">Lựa chọn chỉ dùng để đề xuất phương án — không gắn với thông tin cá nhân.</p>
+      <p class="skipline">Đã biết mình cần gì? <a href="#san-pham" data-track="advisor_skip">Xem thẳng các giải pháp ↓</a></p>
+    </form>
+  </div>
+</div></header>
+
+<!-- ═══════════ 2 · KẾT QUẢ TƯ VẤN TỨC THỜI ═══════════ -->
+<section class="sec resultWrap" id="ket-qua" aria-live="polite"><div class="container">
+  <div class="secHead">
+    <div class="kicker">Kết quả tư vấn tức thời</div>
+    <h2 id="resultTitle">Phương án phù hợp với xe của bạn</h2>
+    <p id="resultIntro"></p>
+  </div>
+  <div class="resultCard">
+    <div class="resultHead">
+      <div>
+        <strong id="resultContext">Xe và nhu cầu đã chọn</strong>
+        <p class="reason" id="resultVehicleNote">Model cụ thể sẽ được chốt sau khi đối chiếu cấu hình thực tế của xe và tồn kho.</p>
+      </div>
+      <span class="score" id="resultScore">Khớp nhu cầu đã chọn</span>
+    </div>
+    <div class="resultGrid">
+      <article class="recCol">
+        <div class="tag">Phương án khuyên dùng</div>
+        <h3 id="mainRecTitle"></h3>
+        <p class="reason" id="mainRecReason"></p>
+        <ul class="featureList" id="mainFeatures"></ul>
+        <div class="price" id="mainPrice"></div>
+        <div class="noteBox" id="budgetNote"></div>
+        <div class="resultActions">
+          <button class="btn btnRed" data-scroll="#lead" data-track="result_cta_main" data-plan-choice="main">Nhận model và giá chính xác</button>
+          <button class="btn btnGhost" data-scroll="#bang-chung" data-track="result_cta_proof">Xem video thực tế</button>
+        </div>
+        <div class="why" id="whyMain"><b>Vì sao đề xuất phương án này</b><ul id="whyMainList"></ul></div>
+      </article>
+      <article class="recCol">
+        <div class="tag">Phương án tiết kiệm hơn</div>
+        <h3 id="altRecTitle"></h3>
+        <p class="reason" id="altRecReason"></p>
+        <ul class="featureList" id="altFeatures"></ul>
+        <div class="price" id="altPrice"></div>
+        <div class="resultActions">
+          <button class="btn btnGhost" data-scroll="#lead" data-track="result_cta_alt" data-plan-choice="alt">Nhận lựa chọn tiết kiệm</button>
+        </div>
+        <div class="why" id="whyAlt"><b>Khi nào nên chọn phương án này</b><ul id="whyAltList"></ul></div>
+      </article>
+    </div>
+    <div style="padding:0 28px 26px">
+      <div class="noteBox info" id="installNote"></div>
+      <div class="checkStrip" id="checkStrip">
+        <b>Ba việc Auto365 kiểm tra trước khi bàn giao cấu hình này</b>
+        <ul id="checkList"></ul>
+      </div>
+    </div>
+  </div>
+  <p class="disclaimer">Khoảng giá hiển thị là vùng giá tham khảo theo nhóm giải pháp<span class="todoChip" style="margin-left:8px">TODO-DATA · thay bằng bảng giá thật trước khi live</span> — giá trọn gói chính xác phụ thuộc model, đời xe và cấu hình nguồn, được báo trước khi hẹn lịch.</p>
+</div></section>
+
+<!-- ═══════════ 2b · QUICK ANSWER + MỤC LỤC (PILLAR) ═══════════ -->
+<section class="sec" id="tong-quan"><div class="container">
+  <div class="answerBox reveal">
+    <div class="kicker">Trả lời nhanh · Camera hành trình ô tô</div>
+    <p class="mono" style="font-size:.68rem;color:var(--mut);margin-bottom:4px">CẬP NHẬT 14/07/2026 · TƯ VẤN THEO CẤU HÌNH TỪNG XE</p>
+    <h2>Camera hành trình nào phù hợp với xe của bạn?</h2>
+    <p><strong>Không có một mẫu camera tốt nhất cho mọi xe.</strong> Lựa chọn đúng phụ thuộc bốn yếu tố: cần ghi phía trước hay cả trước – sau, có cần giám sát khi đỗ, có cần nhắc tốc độ hoặc xem xe từ xa, và ngân sách trọn gói. Đi phố hằng ngày có thể chỉ cần camera trước 2K. Xe gia đình hay đi xa nên ưu tiên trước – sau. Xe đỗ ngoài trời cần Parking Mode kèm bộ nguồn có ngưỡng ngắt. Cần xem xe từ xa thì chỉ nhóm 4G/Cloud làm được.</p>
+    <div class="answerList">
+      <div class="answerPill"><b>Đi phố hằng ngày</b><span>Camera trước 2K hoặc trước – sau cơ bản.</span></div>
+      <div class="answerPill"><b>Đi tỉnh / cao tốc</b><span>Ưu tiên trước – sau, HDR và GPS.</span></div>
+      <div class="answerPill"><b>Đỗ ngoài trời</b><span>Parking Mode + bộ nguồn có ngưỡng ngắt.</span></div>
+      <div class="answerPill"><b>Theo dõi từ xa</b><span>Camera 4G/Cloud tùy model.</span></div>
+    </div>
+    <nav class="toc" aria-label="Mục lục trang">
+      <a href="#tu-van">Chọn theo dòng xe</a>
+      <a href="#huong-dan">Cách chọn camera</a>
+      <a href="#so-sanh">So sánh giải pháp</a>
+      <a href="#san-pham">Giải pháp theo nhu cầu</a>
+      <a href="#diem-lap">Điểm lắp gần bạn</a>
+      <a href="#xe-da-lap">Xe đã lắp thực tế</a>
+      <a href="#bao-hanh">Bảo hành điện tử</a>
+      <a href="#faq">Câu hỏi thường gặp</a>
+    </nav>
+  </div>
+</div></section>
+<!-- ═══════════ 3 · VIDEO PROOF ═══════════ -->
+<section class="sec dark" id="bang-chung"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Nhìn thấy trước khi quyết định</div>
+    <h2>Chất lượng ghi hình phải được chứng minh bằng video thật.</h2>
+    <p>Mỗi video dưới đây quay bằng chính model đang bán, trên xe thật, ghi rõ điều kiện quay và mức nén. Ưu tiên video gốc quay trên xe thật; nếu dùng tư liệu hãng phải ghi rõ nguồn và điều kiện minh họa.</p>
+  </div>
+  <div class="proofTabs" role="tablist" aria-label="Điều kiện quay">
+    <button class="proofTab on" data-proof="day" role="tab" aria-selected="true">Ban ngày</button>
+    <button class="proofTab" data-proof="night" role="tab" aria-selected="false">Ban đêm</button>
+    <button class="proofTab" data-proof="rain" role="tab" aria-selected="false">Trời mưa</button>
+    <button class="proofTab" data-proof="backlight" role="tab" aria-selected="false">Ngược sáng</button>
+    <button class="proofTab" data-proof="parking" role="tab" aria-selected="false">Parking Mode</button>
+  </div>
+  <div class="videoShell" id="videoShell" aria-label="Khu vực video thực tế"></div>
+  <div class="videoMeta">
+    <div class="meta"><b id="vmCondition">Điều kiện quay</b><span id="vmConditionSub">—</span></div>
+    <div class="meta"><b id="vmModel">Model camera</b><span id="vmModelSub">—</span></div>
+    <div class="meta"><b id="vmCar">Xe sử dụng</b><span id="vmCarSub">—</span></div>
+    <div class="meta"><b id="vmSource">Video nguồn</b><span id="vmSourceSub">—</span></div>
+  </div>
+
+  <div class="compareSlider" id="compareSlider" style="--cs:50%">
+    <div class="csLayer a">KHUNG HÌNH CAMERA PHỔ THÔNG — CÙNG ĐOẠN ĐƯỜNG, CÙNG GIỜ QUAY</div>
+    <div class="csLayer b">KHUNG HÌNH CAMERA CẢM BIẾN GHI ĐÊM — CÙNG ĐOẠN ĐƯỜNG, CÙNG GIỜ QUAY</div>
+    <div class="csHandle"></div>
+    <span class="csTag l">Camera phổ thông</span>
+    <span class="csTag r">Cảm biến ghi đêm</span>
+    <input class="csRange" id="csRange" type="range" min="0" max="100" value="50" aria-label="Kéo để so sánh hai khung hình">
+  </div>
+  <p class="proofNote">Kéo thanh trượt để so sánh. <span class="todoChip">TODO-DATA · thay 2 lớp nền bằng 2 khung hình gốc cùng đoạn đường, cùng thời điểm</span></p>
+</div></section>
+
+<!-- ═══════════ 4 · 5 LỖI CHỈ PHÁT HIỆN KHI CẦN VIDEO ═══════════ -->
+<section class="sec"><div class="container">
+  <div class="secHead center reveal">
+    <div class="kicker">Năm lỗi khách thường chỉ phát hiện khi cần clip</div>
+    <h2>Camera vẫn sáng không có nghĩa là camera vẫn đang ghi.</h2>
+    <p>Đây là các lỗi thường gặp khi kiểm tra camera hành trình — và là lý do quy trình bàn giao cần có bước test ghi hình, thẻ nhớ và khả năng tải clip.</p>
+  </div>
+  <div class="painGrid">
+    <article class="pain reveal"><div class="painNo">01 · MẤT VIDEO</div><h3>Camera sáng nhưng không ghi</h3><p>Thẻ nhớ hỏng, thẻ không đủ tốc độ ghi liên tục, hoặc vòng lặp bị lỗi từ lâu mà không có cảnh báo.</p><div class="fix"><span>Auto365 kiểm tra trước bàn giao</span>Test tốc độ thẻ, quay thử và mở lại file ngay tại xưởng.</div></article>
+    <article class="pain reveal"><div class="painNo">02 · BỊ GHI ĐÈ</div><h3>Clip va chạm đã bị xóa vòng lặp</h3><p>G‑sensor cấu hình sai độ nhạy, thư mục khóa đầy hoặc thẻ quá nhỏ khiến đoạn quan trọng bị ghi đè.</p><div class="fix"><span>Auto365 kiểm tra trước bàn giao</span>Cài độ nhạy G‑sensor và dung lượng thư mục khóa theo model.</div></article>
+    <article class="pain reveal"><div class="painNo">03 · QUÁ NHIỆT</div><h3>Treo máy khi xe đỗ nắng</h3><p>Thiết bị dùng pin lithium hoặc linh kiện không phù hợp nhiệt độ cabin xe tại Việt Nam.</p><div class="fix"><span>Auto365 kiểm tra trước bàn giao</span>Ưu tiên model dùng siêu tụ, đối chiếu dải nhiệt theo tài liệu hãng.</div></article>
+    <article class="pain reveal"><div class="painNo">04 · HAO BÌNH</div><h3>Parking Mode làm yếu ắc quy</h3><p>Đấu nguồn không có ngưỡng ngắt, hoặc bình xe đã yếu sẵn nhưng không được kiểm tra trước khi lắp.</p><div class="fix"><span>Auto365 kiểm tra trước bàn giao</span>Đo tình trạng bình và cài ngưỡng ngắt điện áp theo xe.</div></article>
+    <article class="pain reveal"><div class="painNo">05 · KHÔNG LẤY ĐƯỢC CLIP</div><h3>Có video nhưng không tải được</h3><p>App lỗi, quên mật khẩu Wi‑Fi camera, hoặc chưa từng được hướng dẫn thao tác tải clip.</p><div class="fix"><span>Auto365 kiểm tra trước bàn giao</span>Khách tự tải một clip thử bằng điện thoại của mình trước khi nhận xe.</div></article>
+  </div>
+</div></section>
+
+<!-- ═══════════ 4b · HƯỚNG DẪN CHỌN (PILLAR) ═══════════ -->
+<section class="sec tight" id="huong-dan"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Hướng dẫn chọn camera hành trình</div>
+    <h2>Chọn theo tình huống sử dụng, không chạy theo một thông số.</h2>
+    <p>Độ phân giải chỉ là một phần. Chất lượng cuối cùng còn nằm ở cảm biến, HDR, góc lắp, thẻ nhớ, nguồn điện và việc có lấy được clip lúc cần hay không.</p>
+  </div>
+  <div class="guideGrid">
+    <article class="guideCard reveal"><div class="qa">01 · Phạm vi ghi hình</div><h3>Camera trước hay trước – sau?</h3><p>Camera trước đủ cho nhu cầu bằng chứng cơ bản với chi phí thấp. Trước – sau hợp hơn cho xe gia đình, xe hay chạy cao tốc hoặc cần ghi tình huống từ phía sau.</p><ul><li>Trước: gọn, chi phí thấp.</li><li>Trước – sau: bao quát hơn, thời gian lắp lâu hơn.</li></ul></article>
+    <article class="guideCard reveal"><div class="qa">02 · Chất lượng hình</div><h3>2K, 4K, HDR và cảm biến</h3><p>4K tăng chi tiết nhưng không tự bảo đảm quay đêm tốt. Phải xem đồng thời cảm biến, HDR/WDR, bitrate và video thật của đúng model.</p><ul><li>Tin video thật hơn thông số trên hộp.</li><li>Xem đủ đêm, mưa và ngược sáng.</li></ul></article>
+    <article class="guideCard reveal"><div class="qa">03 · Khi xe đang đỗ</div><h3>Parking Mode cần gì?</h3><p>Cần camera hỗ trợ chế độ đỗ, bộ nguồn phù hợp và ngưỡng ngắt điện áp. Tình trạng ắc quy và thói quen đỗ phải được kiểm tra trước khi tư vấn.</p><ul><li>Không áp một cấu hình chung cho mọi xe.</li><li>Nói rõ điều kiện và giới hạn.</li></ul></article>
+    <article class="guideCard reveal"><div class="qa">04 · Hỗ trợ lái</div><h3>GPS và nhắc tốc độ</h3><p>GPS ghi vị trí và tốc độ vào video — bằng chứng mạnh hơn. Nhắc giới hạn tốc độ phụ thuộc dữ liệu bản đồ và chính sách cập nhật của từng hãng camera.</p><ul><li>GPS không phải là dẫn đường.</li><li>Là tính năng hỗ trợ, không thay quan sát biển báo.</li></ul></article>
+    <article class="guideCard reveal"><div class="qa">05 · Kết nối từ xa</div><h3>Camera 4G/Cloud có cần thiết?</h3><p>Hợp với người hay giao xe, đỗ nơi lạ hoặc quản lý nhiều xe. Đổi lại có phí SIM hoặc dịch vụ theo tháng tùy gói.</p><ul><li>Kiểm tra vùng phủ sóng nơi hay đỗ.</li><li>Đối chiếu chính sách lưu trữ cloud.</li></ul></article>
+    <article class="guideCard reveal"><div class="qa">06 · Độ ổn định</div><h3>Thẻ nhớ và khả năng lấy clip</h3><p>Thẻ phải là loại chuẩn ghi liên tục. Khi bàn giao, chủ xe cần tự mở app, xem clip, tải clip và biết lịch format thẻ định kỳ.</p><ul><li>Không chỉ tặng thẻ rồi bỏ qua kiểm tra.</li><li>Test ghi vòng lặp trước khi giao xe.</li></ul></article>
+  </div>
+</div></section>
+
+<!-- ═══════════ 5 · GIẢI PHÁP THEO NHU CẦU (DECISION CARDS) ═══════════ -->
+<section class="sec tight" id="san-pham"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Chọn theo nhu cầu, không chọn theo quảng cáo</div>
+    <h2>Mỗi nhu cầu chỉ cần vài lựa chọn đủ rõ.</h2>
+    <p>Card nào cũng nói thẳng cả hai chiều: phù hợp với ai và <em>không</em> phù hợp với ai. Model và giá trọn gói cụ thể sẽ do kỹ thuật chốt theo xe.<span class="todoChip" style="margin-left:8px">TODO-DATA · gắn model thật đang bán vào từng card (mẫu có sẵn trong code)</span></p>
+  </div>
+  <div class="intentTabs" role="tablist" aria-label="Nhóm nhu cầu">
+    <button class="intentTab on" data-intent="city" role="tab" aria-selected="true">Đi phố hằng ngày</button>
+    <button class="intentTab" data-intent="trip" role="tab" aria-selected="false">Hay đi tỉnh / cao tốc</button>
+    <button class="intentTab" data-intent="park" role="tab" aria-selected="false">Đỗ xe ngoài trời</button>
+    <button class="intentTab" data-intent="speed" role="tab" aria-selected="false">Nhắc tốc độ</button>
+    <button class="intentTab" data-intent="remote" role="tab" aria-selected="false">Theo dõi từ xa</button>
+  </div>
+  <div class="productGrid" id="productGrid"></div>
+  <!-- TODO-DATA · MẪU CARD MODEL THẬT — copy cấu trúc này vào PRODUCTS trong <script> khi gắn model thật:
+       {name:'70mai A510', tier:'dual', fitYes:'Xe gia đình đi phố và tỉnh, cần quay trước–sau rõ ban đêm.',
+        fitNo:'Khách cần xem xe từ xa 24/7 hoặc cảnh báo biển báo chuyên sâu.',
+        strong:'Chất lượng hình HDR, app dễ dùng.', note:'Parking Mode cần mua kèm bộ nguồn riêng.',
+        specs:['Trước–sau','HDR','GPS'], price:'X.XXX.XXXđ trọn gói (giá thật)', … }
+  -->
+</div></section>
+
+<!-- ═══════════ 6 · BẢNG SO SÁNH THỰC DỤNG ═══════════ -->
+<section class="sec tight" id="so-sanh"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">So sánh những gì khách thực sự cần</div>
+    <h2>Tám tiêu chí quyết định — không phải hai mươi thông số.</h2>
+  </div>
+  <div class="tableWrap reveal">
+    <table class="cmp" id="cmpTable">
+      <thead><tr>
+        <th scope="col">Tiêu chí</th>
+        <th scope="col">Camera trước</th>
+        <th scope="col" class="colBest">Trước – sau</th>
+        <th scope="col">Trước – sau + Parking</th>
+        <th scope="col">4G / Cloud</th>
+      </tr></thead>
+      <tbody>
+        <tr><th scope="row">Phù hợp với ai</th><td>Đi phố, ngân sách gọn</td><td class="colBest">Xe gia đình, đi tỉnh/cao tốc</td><td>Xe hay đỗ ngoài trời</td><td>Theo dõi từ xa, xe dịch vụ</td></tr>
+        <tr><th scope="row">Ghi trước – sau</th><td><span class="dim">Chỉ phía trước</span></td><td class="colBest"><b class="good">Có</b></td><td><b class="good">Có</b></td><td><b class="good">Có (tùy model)</b></td></tr>
+        <tr><th scope="row">Ghi đêm</th><td>Theo cảm biến model</td><td class="colBest">Theo cảm biến model</td><td>Theo cảm biến model</td><td>Theo cảm biến model</td></tr>
+        <tr><th scope="row">Giám sát khi đỗ</th><td><span class="dim">Không</span></td><td class="colBest"><span class="dim">Cần thêm bộ nguồn</span></td><td><b class="good">Có, kèm ngưỡng ngắt</b></td><td><b class="good">Có + báo về điện thoại</b></td></tr>
+        <tr><th scope="row">Nhắc giới hạn tốc độ</th><td>Tùy model có GPS</td><td class="colBest">Tùy model có GPS</td><td>Tùy model có GPS</td><td><b class="good">Thường có</b></td></tr>
+        <tr><th scope="row">Xem xe từ xa</th><td><span class="dim">Không</span></td><td class="colBest"><span class="dim">Không</span></td><td><span class="dim">Không</span></td><td><b class="good">Có, qua SIM 4G</b></td></tr>
+        <tr><th scope="row">Thẻ nhớ nên dùng</th><td>64GB chuyên dụng</td><td class="colBest">128GB chuyên dụng</td><td>128GB chuyên dụng</td><td>128GB + cloud tùy gói</td></tr>
+        <tr><th scope="row">Chi phí phát sinh</th><td><span class="dim">Không</span></td><td class="colBest"><span class="dim">Không</span></td><td><span class="dim">Không</span></td><td>Phí SIM/dịch vụ theo tháng</td></tr>
+        <tr><th scope="row">Vùng giá trọn gói</th><td data-price="under2">—</td><td class="colBest" data-price="b24">—</td><td data-price="b47">—</td><td data-price="over7">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cmpFoot reveal">
+    <p>Vùng giá là mức tham khảo theo nhóm giải pháp — model cụ thể có thể thấp hoặc cao hơn.</p>
+    <button class="btn btnRed" data-scroll="#tu-van" data-track="compare_cta">Mẫu nào phù hợp với xe tôi? →</button>
+  </div>
+</div></section>
+<!-- ═══════════ 6b · HỆ THỐNG 90+ ĐIỂM — BRANCH FINDER ═══════════ -->
+<section class="sec branchSec" id="diem-lap"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Hệ thống đứng sau sản phẩm</div>
+    <h2>Hơn 90 điểm Auto365 — tìm nơi lắp gần bạn.</h2>
+    <p>Chọn tỉnh/thành hoặc dùng vị trí hiện tại. Xe và cấu hình camera anh/chị đã chọn ở đầu trang sẽ đi cùng lịch hẹn — không phải khai lại từ đầu.</p>
+  </div>
+  <div class="branchProof reveal">
+    <span>Bảo hành điện tử toàn hệ thống</span>
+    <span>Hỗ trợ chéo giữa các điểm</span>
+    <span>Thi công theo cấu hình từng xe</span>
+  </div>
+  <div class="branchGrid">
+    <aside class="branchFinder reveal" aria-label="Tìm điểm Auto365 gần bạn">
+      <h3>Tìm Auto365 gần bạn</h3>
+      <p>Ưu tiên hiển thị điểm có dịch vụ camera hành trình phù hợp với phương án anh/chị vừa chọn.</p>
+      <button class="locateBtn" id="useLocation" type="button">⌖ Dùng vị trí hiện tại</button>
+      <div class="orLine">HOẶC CHỌN THỦ CÔNG</div>
+      <div class="branchField"><label for="provinceSelect">Tỉnh / thành phố</label><select id="provinceSelect"><option value="">— Chọn tỉnh / thành phố —</option></select></div>
+      <div class="branchField"><label for="districtSelect">Quận / khu vực</label><select id="districtSelect" disabled><option value="">— Tất cả khu vực —</option></select></div>
+      <div class="branchFilters">
+        <label class="branchCheck"><input id="filterSlot" type="checkbox"> Ưu tiên điểm có lịch trống gần</label>
+        <label class="branchCheck"><input id="filterWaiting" type="checkbox"> Có khu vực chờ cho khách</label>
+      </div>
+      <button class="findBtn" id="findBranch" type="button">Tìm 3 điểm phù hợp gần nhất</button>
+      <p class="branchFine">Vị trí chỉ dùng để gợi ý điểm gần — không lưu lại. Khoảng cách chi tiết hiển thị khi hệ thống điểm lắp có tọa độ đã xác minh.</p>
+      <div class="branchStats">
+        <div class="branchStat"><b>90+</b><span>Điểm toàn quốc<span class="todoChip" style="margin-left:5px;padding:2px 6px">xác minh số thật</span></span></div>
+        <div class="branchStat"><b>Điện tử</b><span>Bảo hành theo hệ thống</span></div>
+        <div class="branchStat"><b>Theo xe</b><span>Cấu hình thi công riêng</span></div>
+        <div class="branchStat"><b>60–120’</b><span>Thời gian lắp phổ biến</span></div>
+      </div>
+    </aside>
+    <div class="branchResults">
+      <div class="branchResultHead reveal">
+        <div><h3 id="branchResultTitle">Ba điểm phù hợp gần nhất</h3><p id="branchResultSub">Chọn vị trí để xem điểm lắp, dịch vụ và đặt lịch.</p></div>
+        <span class="branchStatus" id="branchStatus">CHƯA CHỌN VỊ TRÍ</span>
+      </div>
+      <div class="branchList2" id="branchList"><div class="branchEmpty">Chọn tỉnh/thành hoặc bấm “Dùng vị trí hiện tại”. Trang chỉ hiển thị vài điểm gần nhất thay vì đổ toàn bộ danh sách hơn 90 điểm.</div></div>
+      <p class="branchFine reveal" style="margin-top:2px">Danh sách điểm trong bản dựng là dữ liệu mẫu có đánh dấu rõ.<span class="todoChip" style="margin-left:6px">TODO-DATA · nạp BRANCHES thật: địa chỉ, tọa độ, hotline, giờ mở cửa, lịch kỹ thuật</span></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- ═══════════ 7 · XE ĐÃ LẮP THEO HÃNG ═══════════ -->
+<section class="sec" id="xe-da-lap"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Các xe đã lắp tại Auto365</div>
+    <h2>Khách tin hơn khi thấy đúng dòng xe của mình.</h2>
+    <p>Mỗi ca lắp production phải có ảnh xe thật, model camera, phương án nguồn, thời gian thi công và video bàn giao.<span class="todoChip" style="margin-left:8px">TODO-DATA · nạp case thật từ hệ thống — cấu trúc card đã dựng sẵn</span></p>
+  </div>
+  <div class="casesTop">
+    <div class="brandTabs" id="brandTabs" role="tablist" aria-label="Chọn hãng xe"></div>
+    <button class="btn btnGhost" data-scroll="#lead" data-track="case_ask">Gửi dòng xe cần tư vấn</button>
+  </div>
+  <div class="caseGrid" id="caseGrid"></div>
+</div></section>
+
+<!-- ═══════════ 8 · QUY TRÌNH THI CÔNG THẬT (8 BƯỚC) ═══════════ -->
+<section class="sec dark"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Quy trình thi công và bàn giao</div>
+    <h2>Lắp đặt là một nửa chất lượng của camera hành trình.</h2>
+    <p>Tám bước dưới đây nên được quay thành video thật tại xưởng — không dựng bóng bẩy, quay đúng thao tác kỹ thuật viên đang làm.</p>
+  </div>
+  <div class="process">
+    <article class="proc reveal"><div class="procNo">BƯỚC 01</div><h3>Kiểm tra xe và ắc quy</h3><p>Xác nhận dòng xe, vị trí lắp, nhu cầu Parking Mode và đo tình trạng bình trước khi thi công.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 02</div><h3>Tháo nẹp đúng kỹ thuật</h3><p>Tháo nẹp trần, trụ A bằng dụng cụ nhựa, giữ nguyên clip zin của xe.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 03</div><h3>Luồn dây và cố định</h3><p>Đi dây âm theo khung xe, cố định chống rung, không chắn túi khí rèm.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 04</div><h3>Cấp nguồn theo gói</h3><p>Cắm tẩu với gói cơ bản, hoặc lấy nguồn qua chân cầu chì bằng cáp chuyển cho Parking Mode — hạn chế tối đa can thiệp dây zin.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 05</div><h3>Lắp camera sau, căn góc</h3><p>Chọn vị trí bao quát kính hậu, căn góc theo từng thân xe — sedan, SUV hay bán tải đi dây khác nhau.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 06</div><h3>Cài app và test ghi hình</h3><p>Kết nối điện thoại chủ xe, quay thử, mở lại file kiểm tra cả hai mắt camera.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 07</div><h3>Test thẻ nhớ và chế độ đỗ</h3><p>Đo tốc độ thẻ, kiểm tra ghi vòng lặp, thử ngưỡng ngắt nếu có Parking Mode.</p></article>
+    <article class="proc reveal"><div class="procNo">BƯỚC 08</div><h3>Khách tự tải clip thử</h3><p>Chủ xe tự thao tác tải một video bằng điện thoại của mình trước khi rời xưởng — đây là bước nên có trong quy trình bàn giao.</p></article>
+  </div>
+</div></section>
+
+<!-- ═══════════ 9 · ĐIỆN ZIN & PARKING MODE ═══════════ -->
+<section class="sec" id="dien-nguon"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Điện xe và chế độ giám sát khi đỗ</div>
+    <h2>Ba cách cấp nguồn — chọn theo nhu cầu, không chọn theo đồ chơi.</h2>
+    <p>Phần lớn rủi ro của camera hành trình không nằm ở camera, mà nằm ở cách cấp nguồn. Đây là ba phương án Auto365 sử dụng.</p>
+  </div>
+  <div class="powerGrid">
+    <article class="power reveal">
+      <div class="lvl">Phương án 1 · Cơ bản</div>
+      <h3>Cắm tẩu 12V</h3>
+      <p>Camera chỉ ghi khi xe nổ máy. Không can thiệp điện xe.</p>
+      <ul><li>Lắp nhanh, tháo dễ</li><li>Không có Parking Mode</li><li>Phù hợp gói tiết kiệm</li></ul>
+      <div class="fitFor"><b>Hợp với:</b> khách chỉ cần bằng chứng khi đang chạy.</div>
+    </article>
+    <article class="power reveal">
+      <div class="lvl">Phương án 2 · Khuyên dùng cho Parking Mode</div>
+      <h3>Hardwire kit có ngưỡng ngắt</h3>
+      <p>Lấy nguồn qua chân cầu chì bằng cáp chuyển. Camera ghi cả khi tắt máy và tự ngắt khi điện áp bình xuống ngưỡng an toàn.</p>
+      <ul><li>Ngưỡng ngắt cài theo tình trạng bình (ví dụ 12.0V)</li><li>Ưu tiên không cắt, không nối dây zin</li><li>Bắt buộc đo bình trước khi lắp</li></ul>
+      <div class="fitFor"><b>Hợp với:</b> xe đỗ ngoài trời, cần giám sát khi vắng mặt.</div>
+    </article>
+    <article class="power reveal">
+      <div class="lvl">Phương án 3 · Giám sát dài</div>
+      <h3>Pin phụ / nguồn rời</h3>
+      <p>Bộ pin riêng cho camera, sạc khi xe chạy — không lấy điện trực tiếp từ ắc quy chính khi xe đỗ, tùy cấu hình lắp đặt.</p>
+      <ul><li>Thời gian giám sát dài hơn</li><li>Hạn chế sử dụng điện từ ắc quy chính khi xe đỗ</li><li>Chi phí cao hơn hardwire</li></ul>
+      <div class="fitFor"><b>Hợp với:</b> xe đỗ lâu ngày, khu vực phức tạp, xe điện cần tách nguồn.</div>
+    </article>
+  </div>
+  <div class="batteryNote reveal">
+    <span class="ic">!</span>
+    <div><strong>Xe điện và xe hybrid có cấu trúc nguồn khác xe xăng.</strong> Auto365 đối chiếu khuyến cáo của hãng xe trước khi lắp Parking Mode cho VinFast VF, BYD và các dòng EV khác — không áp một cấu hình chung cho mọi xe. Camera hỗ trợ ghi lại tình huống, không thay thế quan sát và trách nhiệm của người lái.</div>
+  </div>
+</div></section>
+
+<!-- ═══════════ 10 · BẢO HÀNH & MINH BẠCH ═══════════ -->
+<section class="sec dark" id="bao-hanh"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Niềm tin phải nhìn thấy được</div>
+    <h2>Bảo hành điện tử — tra được, không phải lời hứa miệng.</h2>
+  </div>
+  <div class="trustGrid">
+    <div class="trustPanel reveal">
+      <h3>Cách Auto365 bảo hành camera hành trình</h3>
+      <div class="trustList">
+        <div class="trustItem"><div class="trustIcon">01</div><div><b>Kích hoạt điện tử ngay khi bàn giao</b><span>Thông tin xe, model, ngày lắp và điểm lắp được lưu trên hệ thống — mất hóa đơn giấy vẫn tra được.</span></div></div>
+        <div class="trustItem"><div class="trustIcon">02</div><div><b>Bảo hành cả thiết bị và phần thi công</b><span>Thời hạn cụ thể hiển thị theo từng model khi báo giá.<span class="todoChip" style="margin:4px 0 0;display:inline-flex">TODO-DATA · số tháng theo chính sách thật</span></span></div></div>
+        <div class="trustItem"><div class="trustIcon">03</div><div><b>Hỗ trợ tại chi nhánh gần nhất</b><span>Đi tỉnh phát sinh lỗi có thể ghé điểm Auto365 gần nhất theo hệ thống, không bắt buộc quay lại nơi lắp.</span></div></div>
+        <div class="trustItem"><div class="trustIcon">04</div><div><b>Hỗ trợ cả lỗi sử dụng</b><span>App không kết nối, quên mật khẩu Wi‑Fi, đổi điện thoại — được hỗ trợ theo phạm vi chính sách của sản phẩm và hệ thống.</span></div></div>
+      </div>
+    </div>
+    <div class="trustPanel reveal">
+      <h3>Thẻ bảo hành điện tử của bạn sẽ trông thế này</h3>
+      <div class="warrantyMock" aria-label="Mô phỏng thẻ bảo hành điện tử">
+        <div class="warrantyRow"><span>Xe</span><b id="wCar">Hiển thị sau khi chọn xe ở đầu trang</b></div>
+        <div class="warrantyRow"><span>Sản phẩm</span><b id="wPlan">Model chốt sau tư vấn</b></div>
+        <div class="warrantyRow"><span>Ngày kích hoạt</span><b>Ngày bàn giao xe</b></div>
+        <div class="warrantyRow"><span>Điểm lắp</span><b id="wBranch">Chi nhánh anh/chị chọn</b></div>
+        <div class="warrantyRow"><span>Trạng thái</span><b style="color:#137a4b">Sẵn sàng kích hoạt</b></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ═══════════ 11 · HỆ THỐNG & KỸ THUẬT VIÊN ═══════════ -->
+<section class="sec" id="he-thong"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Con người thật phía sau hệ thống</div>
+    <h2>Lắp ở đâu cũng cùng một chuẩn kỹ thuật.</h2>
+    <p>Khu vực này chỉ hiển thị chứng thực có thật — không ảnh stock, không review dựng.</p>
+  </div>
+  <div>
+      <div class="techGrid">
+        <div class="tech reveal"><div class="ph">ẢNH<br>THẬT</div><div><b>Kỹ thuật viên phụ trách camera</b><span>Tên, số năm kinh nghiệm và số ca thi công — chỉ hiển thị khi có hồ sơ thật, không dùng ảnh minh họa.</span></div></div>
+        <div class="tech reveal"><div class="ph">ẢNH<br>THẬT</div><div><b>Khu thi công tiêu chuẩn</b><span>Ảnh thật khu lắp đặt, khu chờ và khu bàn giao của chi nhánh.</span></div></div>
+        <div class="tech reveal"><div class="ph">ẢNH<br>THẬT</div><div><b>Ca xử lý sự cố gần nhất</b><span>Case bảo hành thật: lỗi thẻ, camera không lên nguồn, app không kết nối — xử lý thế nào, mất bao lâu.</span></div></div>
+        <div class="tech reveal"><div class="ph">ẢNH<br>THẬT</div><div><b>Review có kiểm chứng</b><span>Ảnh xe, dòng xe, model, chi nhánh, ngày lắp — hoặc dẫn thẳng Google review.</span></div></div>
+      </div>
+      <p class="disclaimer" style="margin-top:14px">Bốn khung trên cố tình để trống thay vì dùng nội dung minh họa.<span class="todoChip" style="margin-left:6px">TODO-DATA · hồ sơ kỹ thuật viên, ảnh xưởng, case bảo hành, review kiểm chứng</span></p>
+  </div>
+</div></section>
+
+<!-- ═══════════ 11b · KNOWLEDGE HUB (PILLAR) ═══════════ -->
+<section class="sec tight" id="kien-thuc"><div class="container">
+  <div class="secHead reveal">
+    <div class="kicker">Kiến thức chuyên sâu · Camera hành trình</div>
+    <h2>Một trang trụ cột, nhiều đường dẫn chuyên sâu theo đúng ý định tìm kiếm.</h2>
+    <p>Trang này trả lời câu hỏi tổng quát và dẫn tiếp đến bài chuyên sâu, bài so sánh và case theo xe — không nhồi mọi từ khóa vào một khối nội dung.</p>
+  </div>
+  <div class="topicGrid">
+    <article class="topicCard reveal"><h3>Camera hành trình theo dòng xe</h3><p>Hub theo VinFast, Toyota, Ford, Hyundai, Kia, Mazda và các dòng phổ biến — mỗi dòng một cấu hình đi dây.</p><a href="#xe-da-lap" data-track="hub_cases">Xem xe đã lắp →</a></article>
+    <article class="topicCard reveal"><h3>Camera trước và trước – sau</h3><p>Phạm vi ghi hình, chi phí, cách đi dây và tình huống nào đáng nâng cấp camera sau.</p><a href="#so-sanh" data-track="hub_compare">Xem bảng so sánh →</a></article>
+    <article class="topicCard reveal"><h3>Parking Mode và nguồn điện</h3><p>Nguyên lý hardwire, ngưỡng ngắt điện áp và cách không làm hại ắc quy khi giám sát đỗ.</p><a href="#dien-nguon" data-track="hub_power">Xem 3 cách cấp nguồn →</a></article>
+    <article class="topicCard reveal"><h3>Thẻ nhớ camera hành trình</h3><p>Chọn dung lượng, chuẩn ghi liên tục, thời lượng lưu và lịch format định kỳ.</p><a href="#faq" data-track="hub_storage">Xem giải đáp thẻ nhớ →</a></article>
+    <article class="topicCard reveal"><h3>Camera GPS nhắc tốc độ</h3><p>Khác biệt giữa GPS ghi tốc độ, nhắc giới hạn và phần mềm dẫn đường — đâu là thứ anh/chị thật sự cần.</p><a href="#san-pham" data-track="hub_speed">Xem giải pháp →</a></article>
+    <article class="topicCard reveal"><h3>Camera 4G và Cloud</h3><p>Xem từ xa, thông báo va chạm, định vị, chi phí SIM và giới hạn thực tế của nhóm này.</p><a href="#san-pham" data-track="hub_4g">Xem nhóm 4G →</a></article>
+  </div>
+  <div class="entityBand reveal">
+    <h3>Vai trò của Auto365.vn</h3>
+    <p>Auto365.vn là nền tảng tư vấn và thi công nâng cấp ô tô thuộc hệ sinh thái 365Group. Với camera hành trình, trang này giúp chủ xe xác định nhu cầu, so sánh nhóm giải pháp, xem ca lắp thực tế, tìm điểm lắp gần nhất và nhận tư vấn theo đúng dòng xe.</p>
+  </div>
+  <div class="sourceBlock reveal">
+    <h3>Nguyên tắc dữ liệu của trang</h3>
+    <p>Thông số kỹ thuật lấy theo tài liệu nhà sản xuất. Giá hiển thị là vùng tham khảo cho đến khi nối bảng giá thật. Case, review và số liệu hệ thống chỉ hiển thị khi có kiểm chứng. Không dùng rating mặc định hay claim tuyệt đối. Ngày cập nhật nội dung ghi ở cuối trang.</p>
+  </div>
+</div></section>
+
+<!-- ═══════════ 12 · FAQ THEO Ý ĐỊNH ═══════════ -->
+<section class="sec tight" id="faq"><div class="container">
+  <div class="secHead center reveal">
+    <div class="kicker">Hỏi đáp trước khi lắp</div>
+    <h2>Trả lời thẳng những điều ảnh hưởng quyết định.</h2>
+  </div>
+  <div class="faqTabs" role="tablist" aria-label="Nhóm câu hỏi">
+    <button class="faqTab on" data-faq="buy" role="tab" aria-selected="true">Trước khi mua</button>
+    <button class="faqTab" data-faq="install" role="tab" aria-selected="false">Điện &amp; lắp đặt</button>
+    <button class="faqTab" data-faq="storage" role="tab" aria-selected="false">Thẻ nhớ &amp; video</button>
+    <button class="faqTab" data-faq="warranty" role="tab" aria-selected="false">Bảo hành</button>
+  </div>
+  <div class="faq" id="faqRoot"></div>
+</div></section>
+<!-- ═══════════ 13 · LEAD FORM CÁ NHÂN HÓA ═══════════ -->
+<section class="sec contact" id="lead"><div class="container contactGrid">
+  <div>
+    <div class="kicker">Nhận phương án cụ thể</div>
+    <h2>Chỉ cần số điện thoại — sau khi đã biết mình cần gì.</h2>
+    <p style="color:#9ea8b2;max-width:620px">Lựa chọn của anh/chị ở đầu trang sẽ tự đi kèm yêu cầu, để tư vấn viên biết dòng xe, nhu cầu và khoảng ngân sách trước khi liên hệ — không hỏi lại từ đầu.</p>
+    <div class="leadSummary" aria-label="Tóm tắt lựa chọn của bạn">
+      <div class="summaryItem"><span>Xe</span><b id="sumCar">Chưa chọn — <a href="#tu-van" style="text-decoration:underline">chọn ở đầu trang</a></b></div>
+      <div class="summaryItem"><span>Nhu cầu</span><b id="sumNeed">Chưa chọn</b></div>
+      <div class="summaryItem"><span>Ngân sách</span><b id="sumBudget">Chưa chọn</b></div>
+      <div class="summaryItem"><span>Phương án quan tâm</span><b id="sumPlan">Chưa chọn</b></div>
+      <div class="summaryItem"><span>Điểm lắp đã chọn</span><b id="sumBranch">Chưa chọn — <a href="#diem-lap" style="text-decoration:underline">tìm điểm gần bạn</a></b></div>
+    </div>
+    <p class="slaLine"><i>⏱</i><span>Auto365 phản hồi <b id="slaText"></b> sau khi nhận yêu cầu. Chọn “Chỉ gửi báo giá” nếu anh/chị không muốn nhận cuộc gọi.</span></p>
+  </div>
+  <div class="leadCard">
+    <div id="leadBody">
+      <h3 id="leadTitle">Nhận model và giá trọn gói</h3>
+      <p>Một trường bắt buộc duy nhất. Họ tên hỏi sau, khi anh/chị đã muốn nói chuyện.</p>
+      <form id="leadForm" novalidate>
+        <div class="field">
+          <label for="phone">Số điện thoại <span style="color:var(--red)">*</span></label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="09xx xxx xxx" required aria-describedby="leadMsg">
+        </div>
+        <div class="field">
+          <label id="methodLabel">Anh/chị muốn được liên hệ bằng</label>
+          <div class="method" role="radiogroup" aria-labelledby="methodLabel">
+            <div><input type="radio" name="method" id="m1" value="call" checked><label for="m1">Gọi điện</label></div>
+            <div><input type="radio" name="method" id="m2" value="zalo"><label for="m2">Zalo</label></div>
+            <div><input type="radio" name="method" id="m3" value="quote"><label for="m3">Chỉ gửi báo giá</label></div>
+          </div>
+        </div>
+        <!-- honeypot chống bot: người thật không nhìn thấy trường này -->
+        <div style="position:absolute;left:-9999px;top:-9999px" aria-hidden="true"><label>Công ty<input type="text" name="company" id="hpField" tabindex="-1" autocomplete="off"></label></div>
+        <label class="consent"><input type="checkbox" id="consent" required><span>Tôi đồng ý để Auto365 liên hệ và xử lý số điện thoại này cho mục đích tư vấn lắp đặt. <a href="/chinh-sach-du-lieu" style="text-decoration:underline">Chính sách dữ liệu</a></span></label>
+        <p class="formmsg" id="leadMsg" role="alert"></p>
+        <button class="primary" type="submit" id="leadSubmit">Nhận phương án và giá trọn gói</button>
+        <div class="errPanel" id="errPanel">
+          <b>Chưa gửi được yêu cầu — nhưng anh/chị không cần nhập lại.</b>
+          Kết nối đang gián đoạn. Chọn một trong hai cách dưới đây, nội dung tư vấn đã được giữ nguyên:
+          <div class="fallbackBtns">
+            <a class="btn btnRed" id="errCall" href="tel:" style="text-align:center" data-track="fallback_call">Gọi kỹ thuật ngay</a>
+            <a class="btn btnGhost" id="errZalo" href="" target="_blank" rel="noopener" style="text-align:center" data-track="fallback_zalo">Nhắn Zalo</a>
+          </div>
+        </div>
+        <p class="privacy">Không spam. Số điện thoại chỉ dùng cho lần tư vấn này.</p>
+      </form>
+    </div>
+    <div class="success" id="leadSuccess">
+      <div class="successIcon">✓</div>
+      <h3 id="successTitle">Đã nhận yêu cầu</h3>
+      <p id="successText"></p>
+      <div class="demoBox hidden" id="demoBox">
+        <b>Chế độ demo — CRM chưa được cấu hình</b>
+        <pre id="demoPayload"></pre>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<!-- ═══════════ 14 · INTERNAL LINKS ═══════════ -->
+<div class="linkhub"><div class="container">
+  <div class="linkCols">
+    <div>
+      <h4>Camera hành trình theo hãng xe</h4>
+      <ul id="brandLinks"></ul>
+    </div>
+    <div>
+      <h4>Giải pháp</h4>
+      <ul>
+        <li><a href="#san-pham" data-track="link_solutions">Camera trước – sau</a></li>
+        <li><a href="#dien-nguon" data-track="link_power">Parking Mode và hardwire kit</a></li>
+        <li><a href="#san-pham" data-track="link_4g">Camera 4G xem xe từ xa</a></li>
+        <li><a href="#so-sanh" data-track="link_compare">So sánh các nhóm giải pháp</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hỗ trợ</h4>
+      <ul>
+        <li><a href="#faq" data-track="link_faq">Câu hỏi trước khi lắp</a></li>
+        <li><a href="#bao-hanh" data-track="link_warranty">Bảo hành điện tử</a></li>
+        <li><a href="#diem-lap" data-track="link_branches">Tìm điểm lắp gần bạn</a></li>
+        <li><a href="#tu-van" data-track="link_advisor">Tìm camera theo xe</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer><div class="container foot">
+  <a class="logo" href="#top"><strong>AUTO<span>365</span></strong><small>Thuộc hệ sinh thái 365Group</small></a>
+  <small>© 2026 Auto365.vn · Trang tư vấn camera hành trình theo dòng xe<br>Cập nhật nội dung: 14/07/2026 · Thông số sản phẩm theo tài liệu nhà sản xuất</small>
+</div></footer>
+
+<!-- ═══════════ STICKY CTA THEO HÀNH TRÌNH ═══════════ -->
+<div class="sticky" id="sticky">
+  <div class="stickyText"><b id="stickyTitle">Tìm camera phù hợp với xe</b><span id="stickySub">Chọn xe và nhu cầu trong khoảng 45 giây</span></div>
+  <a class="stickyCall" id="stickyCall" href="tel:" data-track="cta_call_sticky" aria-label="Gọi kỹ thuật Auto365">Gọi kỹ thuật</a>
+  <button class="stickyMain" id="stickyMain" data-scroll="#tu-van" data-track="cta_sticky_main">Tìm theo xe</button>
+</div>
+
+<noscript><div style="position:fixed;inset:auto 0 0;background:#101418;color:#fff;padding:16px;text-align:center;font-size:.9rem;z-index:200">Trang cần JavaScript để chạy bộ tư vấn. Anh/chị có thể gọi trực tiếp kỹ thuật Auto365 qua hotline ở đầu trang.</div></noscript>
+<script>
+(function(){
+'use strict';
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+
+/* ════════════════════════════════════════════════════════════
+   CONFIG — TODO-DATA: đây là nơi DUY NHẤT cần sửa thông tin hệ thống
+   ════════════════════════════════════════════════════════════ */
+const CONFIG={
+  HOTLINE:'0365365911',                  // TODO-DATA: hotline thật (đang lấy theo bản dựng cũ)
+  ZALO_URL:'https://zalo.me/0365365911', // TODO-DATA: link Zalo OA thật
+  CRM_WEBHOOK_URL:'',                    // TODO-DATA: dán URL webhook CRM. Còn RỖNG = form chạy chế độ DEMO minh bạch, không giả success
+  GTM_ID:'',                             // TODO-DATA: 'GTM-XXXXXXX' để bật Google Tag Manager — mọi event đã push sẵn vào dataLayer
+  SLA_TEXT:'trong giờ làm việc 8:00–19:00', // TODO-DATA: thay bằng cam kết cụ thể, ví dụ 'trong 15 phút (8:00–19:00)'
+};
+
+/* TODO-DATA: vùng giá theo nhóm giải pháp — thay bằng bảng giá đang bán */
+const PRICING={
+  front   :{label:'Từ 1.590.000đ', min:1590000},
+  speed   :{label:'Từ 3.490.000đ', min:3490000},
+  dual    :{label:'Từ 3.990.000đ', min:3990000},
+  dualPark:{label:'Từ 4.990.000đ', min:4990000},
+  cloud   :{label:'Từ 6.490.000đ', min:6490000},
+  premium :{label:'Từ 7.490.000đ', min:7490000},
+};
+const PRICE_SUFFIX='trọn gói · vùng giá tham khảo';
+
+/* TODO-DATA: gắn video gốc — src rỗng sẽ hiện khung chờ kèm checklist quay */
+const VIDEOS={
+  day:      {label:'Ban ngày',     sub:'Phố đông, nắng gắt',                    src:'',model:'',car:'',source:''},
+  night:    {label:'Ban đêm',      sub:'Đường thiếu sáng, pha xe ngược chiều',  src:'',model:'',car:'',source:''},
+  rain:     {label:'Trời mưa',     sub:'Mưa lớn, gạt mưa hoạt động',            src:'',model:'',car:'',source:''},
+  backlight:{label:'Ngược sáng',   sub:'Ra khỏi hầm, mặt trời thấp',            src:'',model:'',car:'',source:''},
+  parking:  {label:'Parking Mode', sub:'Người lạ tiếp cận + va chạm khi đỗ',    src:'',model:'',car:'',source:''},
+};
+
+/* TODO-DATA: case lắp thật — thêm object theo mẫu là card tự đổi từ khung chờ sang case thật
+   {brand:'VinFast',model:'VF5',year:'2024',camera:'(model thật)',need:'Đi phố, đỗ ngoài trời',
+    power:'Hardwire có ngưỡng ngắt',time:'75 phút',price:'(giá tại thời điểm lắp)',img:'(đường dẫn ảnh)',video:'(link)'} */
+const CASES=[];
+
+/* ════════ HỆ THỐNG 90+ ĐIỂM ════════
+   TODO-DATA: thay 6 dòng mẫu bằng danh sách điểm thật từ hệ thống.
+   verified:true + lat/lng thật → card mới hiện khoảng cách khi khách dùng định vị.
+   Mẫu: {name:'Auto365 …',province:'TP. Hồ Chí Minh',district:'…',addr:'(địa chỉ thật)',
+         phone:'(hotline điểm)',hours:'8:00–19:00',lat:0,lng:0,maps:'(link chỉ đường)',
+         services:['Camera trước – sau','Parking Mode'],slotSoon:true,waiting:true,verified:true} */
+const BRANCHES=[
+  {id:'hcm-thuduc',name:'Auto365 Thủ Đức',province:'TP. Hồ Chí Minh',district:'TP. Thủ Đức',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera trước – sau','Parking Mode','Xe điện'],slotSoon:true,waiting:true,verified:false},
+  {id:'hcm-tanbinh',name:'Auto365 Tân Bình',province:'TP. Hồ Chí Minh',district:'Tân Bình',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera trước – sau','GPS nhắc tốc độ'],slotSoon:true,waiting:true,verified:false},
+  {id:'hcm-binhtan',name:'Auto365 Bình Tân',province:'TP. Hồ Chí Minh',district:'Bình Tân',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera hành trình','Camera 4G'],slotSoon:false,waiting:false,verified:false},
+  {id:'hn-caugiay',name:'Auto365 Cầu Giấy',province:'Hà Nội',district:'Cầu Giấy',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera trước – sau','GPS nhắc tốc độ'],slotSoon:true,waiting:true,verified:false},
+  {id:'hn-longbien',name:'Auto365 Long Biên',province:'Hà Nội',district:'Long Biên',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera hành trình','Parking Mode'],slotSoon:false,waiting:true,verified:false},
+  {id:'dn-haichau',name:'Auto365 Đà Nẵng',province:'Đà Nẵng',district:'Hải Châu',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera trước – sau','Parking Mode'],slotSoon:true,waiting:true,verified:false},
+  {id:'bd-tdm',name:'Auto365 Bình Dương',province:'Bình Dương',district:'Thủ Dầu Một',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera hành trình','Camera 4G'],slotSoon:true,waiting:false,verified:false},
+  {id:'kh-nhatrang',name:'Auto365 Nha Trang',province:'Khánh Hòa',district:'Nha Trang',addr:'Địa chỉ thật nạp từ hệ thống',hours:'8:00–18:00',services:['Camera trước – sau'],slotSoon:false,waiting:true,verified:false},
+];
+/* Tọa độ trung tâm tỉnh/thành — dùng để chọn tỉnh gần nhất khi khách bấm định vị.
+   Đây là tọa độ công khai của thành phố, KHÔNG phải tọa độ chi nhánh. */
+const PROVINCE_COORDS={
+  'TP. Hồ Chí Minh':[10.7769,106.7009],
+  'Hà Nội':[21.0278,105.8342],
+  'Đà Nẵng':[16.0544,108.2022],
+  'Hải Phòng':[20.8449,106.6881],
+  'Bình Dương':[10.9804,106.6519],
+  'Đồng Nai':[10.9574,106.8427],
+  'Khánh Hòa':[12.2388,109.1967],
+  'Phú Yên':[13.0882,109.0929],
+};
+
+/* ════════ DATABASE XE PHỔ BIẾN VN — dòng nào không có sẽ rơi về ô nhập tay ════════ */
+const V={s:'sedan',h:'hatch',c:'cuv',u:'suv',m:'mpv',p:'pickup',v:'van'};
+const VEHICLES={
+  'VinFast':{ev:true,models:{'VF3':V.h,'VF5':V.c,'VF6':V.c,'VF7':V.c,'VF8':V.u,'VF9':V.u,'VF e34':V.c,'Fadil':V.h,'Lux A2.0':V.s,'Lux SA2.0':V.u}},
+  'Toyota':{models:{'Vios':V.s,'Yaris Cross':V.c,'Corolla Cross':V.c,'Camry':V.s,'Corolla Altis':V.s,'Veloz Cross':V.m,'Avanza':V.m,'Innova Cross':V.m,'Fortuner':V.u,'Hilux':V.p,'Raize':V.c,'Land Cruiser':V.u,'Alphard':V.v}},
+  'Hyundai':{models:{'Grand i10':V.h,'Accent':V.s,'Elantra':V.s,'Stargazer':V.m,'Custin':V.m,'Creta':V.c,'Tucson':V.c,'Santa Fe':V.u,'Palisade':V.u}},
+  'Kia':{models:{'Morning':V.h,'Soluto':V.s,'K3':V.s,'K5':V.s,'Sonet':V.c,'Seltos':V.c,'Sportage':V.c,'Sorento':V.u,'Carnival':V.m,'Carens':V.m}},
+  'Mazda':{models:{'Mazda2':V.s,'Mazda3':V.s,'Mazda6':V.s,'CX-3':V.c,'CX-30':V.c,'CX-5':V.c,'CX-8':V.u,'BT-50':V.p}},
+  'Ford':{models:{'Ranger':V.p,'Ranger Raptor':V.p,'Everest':V.u,'Territory':V.c,'Explorer':V.u,'Transit':V.v}},
+  'Honda':{models:{'City':V.s,'Civic':V.s,'Accord':V.s,'BR-V':V.m,'HR-V':V.c,'CR-V':V.c}},
+  'Mitsubishi':{models:{'Xpander':V.m,'Xforce':V.c,'Attrage':V.s,'Outlander':V.c,'Triton':V.p,'Pajero Sport':V.u}},
+  'Suzuki':{models:{'XL7':V.m,'Ertiga':V.m,'Swift':V.h,'Jimny':V.u}},
+  'BYD':{ev:true,models:{'Atto 3':V.c,'Dolphin':V.h,'Seal':V.s,'M6':V.m,'Han':V.s}},
+  'Mercedes-Benz':{models:{'C-Class':V.s,'E-Class':V.s,'S-Class':V.s,'GLB':V.c,'GLC':V.c,'GLE':V.u,'V-Class':V.v}},
+  'BMW':{models:{'3 Series':V.s,'5 Series':V.s,'X3':V.c,'X5':V.u,'X7':V.u}},
+};
+const BODY_NOTES={
+  sedan:'Sedan đi dây gọn theo trần và trụ — cấu hình lắp tiêu chuẩn, camera sau đặt sát mép trên kính hậu.',
+  hatch:'Xe cỡ nhỏ/hatchback: cửa hậu mở liền kính nên dây camera sau cần ống ruột gà chịu gập — Auto365 xử lý sẵn phần này.',
+  cuv:'CUV/gầm cao: vị trí camera sau được căn để bao quát kính hậu mà không lọt viền sơn đen của kính.',
+  suv:'SUV/7 chỗ: camera sau căn góc để không vướng hàng ghế ba và tựa đầu — kỹ thuật sẽ test tầm nhìn thực tế trước bàn giao.',
+  mpv:'MPV/7 chỗ: camera sau căn góc để không vướng hàng ghế ba và khoang hành lý thường xuyên chất đồ.',
+  pickup:'Bán tải: dây camera sau dài hơn xe con và cần phương án đi dây riêng qua khoang thùng — Auto365 có cấu hình sẵn cho nhóm xe này.',
+  van:'Xe van/limousine: khoảng cách tới kính hậu lớn, cần đối chiếu độ dài dây camera sau của từng model trước khi lắp.',
+};
+const EV_NOTE='Xe điện/hybrid: cấu hình nguồn Parking Mode được đối chiếu khuyến cáo của hãng xe trước khi lắp — không áp cấu hình xe xăng sang xe điện.';
+
+const NEED_LABELS={evidence:'Bằng chứng khi va chạm',dual:'Ghi trước – sau',park:'Giám sát khi đỗ',speed:'Nhắc giới hạn tốc độ',remote:'Xem xe từ xa',service:'Xe dịch vụ / chạy nhiều',unsure:'Chưa rõ, cần gợi ý'};
+const BUDGET_LABELS={under2:'Dưới 2 triệu',b24:'2 – 4 triệu',b47:'4 – 7 triệu',over7:'Trên 7 triệu',open:'Chưa xác định'};
+const BUDGET_MAX={under2:2000000,b24:4000000,b47:7000000,over7:Infinity,open:null};
+
+/* ════════ TRACKING — mọi event đẩy vào dataLayer, gắn GTM là chạy ════════ */
+const qs=new URLSearchParams(location.search);
+const ATTR={landing_page:location.pathname+location.search,referrer:document.referrer||''};
+try{const saved=JSON.parse(sessionStorage.getItem('a365_attr')||'{}');Object.assign(ATTR,saved);}catch(e){}
+['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(k=>{const v=qs.get(k);if(v)ATTR[k]=v;});
+try{sessionStorage.setItem('a365_attr',JSON.stringify(ATTR));}catch(e){}
+function track(ev,params){window.dataLayer=window.dataLayer||[];window.dataLayer.push(Object.assign({event:ev},ATTR,params||{}));}
+if(CONFIG.GTM_ID){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',CONFIG.GTM_ID);}
+track('page_view_landing',{page_type:'camera_hanh_trinh'});
+
+/* ════════ TRẠNG THÁI NGƯỜI DÙNG ════════ */
+const profile={brand:'',model:'',year:'',body:'',ev:false,needs:[],budget:'',plan:'',planPrice:'',mainPlan:'',mainPrice:'',alt:'',altPrice:'',branchId:'',branchName:''};
+
+/* ════════ KHỞI TẠO LIÊN HỆ TỪ CONFIG ════════ */
+const fmtPhone=p=>p.replace(/^(\d{4})(\d{3})(\d{3})$/,'$1 $2 $3');
+['navPhone','stickyCall','errCall'].forEach(id=>{const el=document.getElementById(id);if(el)el.href='tel:'+CONFIG.HOTLINE;});
+$('#navPhoneText').textContent=fmtPhone(CONFIG.HOTLINE);
+$('#errZalo').href=CONFIG.ZALO_URL;
+$('#slaText').textContent=CONFIG.SLA_TEXT;
+
+/* ════════ WIZARD 3 BƯỚC ════════ */
+const brandSel=$('#brand'),modelSel=$('#model'),otherWrap=$('#modelOtherWrap'),otherInput=$('#modelOther'),yearSel=$('#year');
+Object.keys(VEHICLES).forEach(b=>{const o=document.createElement('option');o.textContent=b;brandSel.appendChild(o);});
+{const o=document.createElement('option');o.value='Khác';o.textContent='Hãng khác…';brandSel.appendChild(o);}
+{const y0=new Date().getFullYear();for(let y=y0;y>=2008;y--){const o=document.createElement('option');o.textContent=y;yearSel.appendChild(o);}const o=document.createElement('option');o.textContent='Trước 2008';yearSel.appendChild(o);}
+brandSel.addEventListener('change',()=>{
+  const b=brandSel.value,db=VEHICLES[b];
+  modelSel.innerHTML='';modelSel.disabled=!b;otherWrap.classList.add('hidden');otherInput.value='';
+  if(!b){modelSel.innerHTML='<option value="">Chọn hãng trước</option>';return;}
+  if(db){modelSel.appendChild(new Option('Chọn dòng xe',''));Object.keys(db.models).forEach(m=>modelSel.appendChild(new Option(m,m)));modelSel.appendChild(new Option('Dòng khác…','__other'));}
+  else{modelSel.appendChild(new Option('Nhập tên dòng xe bên dưới','__other'));modelSel.value='__other';otherWrap.classList.remove('hidden');}
+});
+modelSel.addEventListener('change',()=>{otherWrap.classList.toggle('hidden',modelSel.value!=='__other');if(modelSel.value==='__other')otherInput.focus();});
+/* "Chưa rõ" loại trừ các nhu cầu khác */
+$$('#needGrid input').forEach(cb=>cb.addEventListener('change',()=>{
+  if(cb.value==='unsure'&&cb.checked)$$('#needGrid input').forEach(x=>{if(x!==cb)x.checked=false;});
+  else if(cb.checked)$('#n0').checked=false;
+}));
+let step=1;
+const steps=[$('#advisorStep1'),$('#advisorStep2'),$('#advisorStep3')],dots=$$('.stepdot');
+function showStep(n){step=n;steps.forEach((el,i)=>el.classList.toggle('hidden',i!==n-1));dots.forEach((d,i)=>d.classList.toggle('on',i<n));
+  $('#stepLabel').textContent='BƯỚC '+n+'/3';$('#advisorBack').classList.toggle('hidden',n===1);
+  $('#advisorNext').textContent=n<3?'Tiếp tục →':'Xem phương án phù hợp';$('#advisorMsg').style.display='none';}
+function stepValid(){
+  if(step===1)return brandSel.value&&(modelSel.value&&modelSel.value!=='__other'||otherInput.value.trim());
+  if(step===2)return $$('#needGrid input:checked').length>0;
+  return !!$('input[name="budget"]:checked');}
+$('#advisorBack').addEventListener('click',()=>{showStep(step-1);track('advisor_back',{to_step:step});});
+$('#advisorNext').addEventListener('click',()=>{
+  if(!stepValid()){$('#advisorMsg').style.display='block';return;}
+  if(step===1){
+    profile.brand=brandSel.value;
+    profile.model=modelSel.value==='__other'?otherInput.value.trim():modelSel.value;
+    profile.year=yearSel.value;
+    const db=VEHICLES[profile.brand];
+    profile.body=db&&db.models[profile.model]||'';
+    profile.ev=!!(db&&db.ev);
+    track('vehicle_select',{vehicle_brand:profile.brand,vehicle_model:profile.model,vehicle_year:profile.year,vehicle_body:profile.body||'unknown'});
+    stickyState(1);showStep(2);
+  }else if(step===2){
+    profile.needs=$$('#needGrid input:checked').map(x=>x.value);
+    track('need_select',{needs:profile.needs.join(',')});showStep(3);
+  }else{
+    profile.budget=$('input[name="budget"]:checked').value;
+    track('budget_select',{budget:profile.budget});renderResult();
+  }
+});
+
+/* ════════ DECISION ENGINE — rule-based, giải thích được từng đề xuất ════════ */
+const TIERS={
+  front:   {title:'Camera trước ghi nét ngày và đêm', features:['Camera trước, cảm biến hỗ trợ thiếu sáng','Wi‑Fi tải video về điện thoại','G‑sensor khóa file khi va chạm','Thẻ nhớ chuẩn ghi liên tục'], alt:'Đủ bằng chứng phía trước với chi phí thấp nhất.'},
+  speed:   {title:'Camera GPS có nhắc giới hạn tốc độ', features:['Ghi hình phía trước','GPS ghi tốc độ và vị trí vào video','Nhắc giới hạn tốc độ theo dữ liệu model','Thẻ nhớ chuẩn ghi liên tục'], alt:'Ưu tiên hỗ trợ tốc độ, vẫn đủ bằng chứng phía trước.'},
+  dual:    {title:'Camera trước – sau cân bằng', features:['Ghi hình cả trước và sau','Cảm biến hỗ trợ ghi đêm','Wi‑Fi tải video, G‑sensor khóa file','Thẻ nhớ 128GB chuẩn ghi liên tục'], alt:'Điểm cân bằng phổ biến nhất giữa độ phủ và chi phí.'},
+  dualPark:{title:'Camera trước – sau + Parking Mode', features:['Ghi hình cả trước và sau','Giám sát khi đỗ, phát hiện va chạm','Bộ nguồn hardwire có ngưỡng ngắt bảo vệ bình','Đo tình trạng ắc quy trước khi lắp'], alt:'Bảo vệ xe cả khi anh/chị không ở gần xe.'},
+  cloud:   {title:'Camera 4G/Cloud xem xe từ xa', features:['Xem video và vị trí xe từ xa qua SIM 4G','Thông báo về điện thoại khi có va chạm lúc đỗ','Ghi hình trước (hoặc trước–sau tùy model)','Parking Mode kèm bộ nguồn phù hợp'], alt:'Nhóm 4G/Cloud hỗ trợ xem hoặc nhận dữ liệu từ xa khi camera, nguồn và kết nối mạng đáp ứng điều kiện của từng model.'},
+  premium: {title:'Camera trước – sau cao cấp', features:['Cảm biến lớn, ghi đêm và HDR tốt hơn','Ghi hình cả trước và sau','GPS, Wi‑Fi băng tần kép','Tùy chọn Parking Mode hoặc 4G theo model'], alt:'Ưu tiên chất lượng hình và độ ổn định lâu dài.'},
+};
+const WHY={
+  evidence:'Cần bằng chứng khi va chạm — cấu hình có G‑sensor tự khóa file lúc va đập, không bị ghi đè.',
+  dual:'Cần ghi cả phía sau — va chạm từ phía sau và tình huống tạt đầu, chuyển làn chiếm tỷ lệ lớn khi cần clip.',
+  park:'Xe thường đỗ không có người trông — Parking Mode chỉ an toàn khi đi kèm bộ nguồn có ngưỡng ngắt, nên hai thứ này luôn được đề xuất cùng nhau.',
+  speed:'Cần nhắc giới hạn tốc độ — model có GPS đọc giới hạn theo dữ liệu bản đồ. Đây là tính năng hỗ trợ, không thay thế việc quan sát biển báo.',
+  remote:'Cần xem xe từ xa — chỉ nhóm 4G/Cloud làm được. Wi‑Fi của camera thường chỉ hoạt động khi đứng gần xe.',
+  service:'Xe chạy nhiều giờ mỗi ngày — ưu tiên model dùng siêu tụ chịu nhiệt cabin và thẻ nhớ chuẩn ghi liên tục cường độ cao.',
+  unsure:'Anh/chị chưa chắc về nhu cầu — cấu hình trước–sau là điểm cân bằng phổ biến nhất và dễ nâng cấp thêm sau này.',
+};
+function recommend(p){
+  const has=k=>p.needs.includes(k);
+  let key='dual';
+  if(has('remote'))key='cloud';
+  else if(has('park'))key='dualPark';
+  else if(has('dual')||has('evidence')&&p.needs.length>1)key='dual';
+  else if(has('speed')&&!has('dual')&&!has('evidence'))key='speed';
+  else if(has('evidence'))key='dual';
+  if(p.needs.length===1&&has('evidence'))key='dual';
+  if(p.needs.length===1&&has('unsure'))key='dual';
+  /* ngân sách cao + không cần 4G/parking → nâng chất lượng cảm biến */
+  if(p.budget==='over7'&&key==='dual')key='premium';
+  const main=Object.assign({key},TIERS[key],{price:PRICING[key]});
+  /* tính năng bổ sung theo nhu cầu phụ */
+  main.features=main.features.slice();
+  if(has('speed')&&key!=='speed')main.features.push('Model có GPS nhắc giới hạn tốc độ');
+  if(has('service'))main.features.push('Ưu tiên bản siêu tụ + thẻ cường độ cao cho xe chạy nhiều');
+  if(has('park')&&key==='cloud')main.features.push('Giám sát đỗ có thông báo 4G về điện thoại');
+  /* phương án tiết kiệm */
+  const altKey=key==='cloud'?'dualPark':key==='dualPark'?'dual':key==='premium'?'dual':key==='dual'?'front':key==='speed'?'front':'front';
+  const alt=Object.assign({key:altKey},TIERS[altKey],{price:PRICING[altKey]});
+  /* đối chiếu ngân sách */
+  const cap=BUDGET_MAX[p.budget];let budgetNote='';
+  if(cap&&PRICING[key].min>cap){
+    budgetNote='Cấu hình đúng nhu cầu đang cao hơn khoảng ngân sách anh/chị chọn ('+BUDGET_LABELS[p.budget]+'). Có thể chia giai đoạn: lắp phần lõi trước, bổ sung '+(key==='dualPark'?'bộ nguồn Parking Mode':'hạng mục còn lại')+' sau — hoặc xem phương án tiết kiệm bên cạnh.';
+  }
+  /* lý do đề xuất */
+  const why=p.needs.filter(n=>WHY[n]).map(n=>WHY[n]);
+  if(!why.length)why.push(WHY.unsure);
+  const altWhy=['Chọn khi ngân sách là ưu tiên số một ở thời điểm này.',alt.alt,'Vẫn lắp đặt và bảo hành theo cùng một chuẩn kỹ thuật Auto365.'];
+  /* checklist bàn giao theo cấu hình */
+  const checks=['Test tốc độ thẻ nhớ, quay thử và mở lại file ngay tại xưởng'];
+  checks.push(has('park')||key==='dualPark'||key==='cloud'?'Đo tình trạng ắc quy và cài ngưỡng ngắt điện áp theo xe':'Căn góc camera theo thân xe và vùng quét gạt mưa');
+  checks.push(key==='cloud'?'Kích hoạt SIM 4G và test thông báo về điện thoại của anh/chị':'Anh/chị tự tải một clip thử bằng điện thoại trước khi nhận xe');
+  return {main,alt,budgetNote,why,altWhy,checks};
+}
+
+const REASONS={
+  front:'Đủ bằng chứng phía trước với chi phí thấp nhất — phù hợp khi nhu cầu chính là ghi lại tình huống lúc đang chạy.',
+  speed:'Kết hợp ghi hình và nhắc giới hạn tốc độ theo GPS — cho người chạy tỉnh, cao tốc thường xuyên.',
+  dual:'Cấu hình cân bằng giữa độ phủ, trải nghiệm dùng và chi phí — phù hợp phần lớn xe gia đình.',
+  dualPark:'Ghi lại tác động khi xe đỗ, đi kèm bộ nguồn bảo vệ ắc quy — cấu hình đúng cho xe đỗ ngoài trời.',
+  cloud:'Biết xe đang thế nào ngay trên điện thoại, kể cả khi anh/chị không ở gần xe.',
+  premium:'Ưu tiên cảm biến và độ ổn định — cho người muốn chất lượng hình tốt nhất nhóm trước–sau.',
+};
+function setList(sel,arr){$(sel).innerHTML=arr.map(x=>'<li>'+x+'</li>').join('');}
+function carLabel(){return [profile.brand,profile.model,profile.year].filter(Boolean).join(' ');}
+function renderResult(){
+  const rec=recommend(profile),car=carLabel();
+  profile.plan=rec.main.title;profile.planPrice=rec.main.price.label;profile.mainPlan=rec.main.title;profile.mainPrice=rec.main.price.label;profile.alt=rec.alt.title;profile.altPrice=rec.alt.price.label;
+  $('#resultTitle').textContent='Phương án phù hợp cho '+car;
+  const needTxt=profile.needs.map(n=>NEED_LABELS[n]).join(', ');
+  $('#resultIntro').textContent='Nhu cầu: '+needTxt+' · Ngân sách: '+BUDGET_LABELS[profile.budget]+'.';
+  $('#resultContext').textContent=car+' · '+needTxt;
+  $('#resultScore').textContent=rec.budgetNote?'Đúng nhu cầu · cần cân đối ngân sách':'Khớp '+profile.needs.length+' nhu cầu đã chọn';
+  $('#mainRecTitle').textContent=rec.main.title;
+  $('#mainRecReason').textContent=REASONS[rec.main.key];
+  setList('#mainFeatures',rec.main.features);
+  $('#mainPrice').innerHTML=rec.main.price.label+' <small>/ '+PRICE_SUFFIX+'</small>';
+  setList('#whyMainList',rec.why);
+  const bn=$('#budgetNote');
+  if(rec.budgetNote){bn.className='noteBox warn';bn.textContent=rec.budgetNote;}else{bn.className='noteBox';bn.textContent='';}
+  $('#altRecTitle').textContent=rec.alt.title;
+  $('#altRecReason').textContent=REASONS[rec.alt.key];
+  setList('#altFeatures',rec.alt.features);
+  $('#altPrice').innerHTML=rec.alt.price.label+' <small>/ '+PRICE_SUFFIX+'</small>';
+  setList('#whyAltList',rec.altWhy);
+  const bodyNote=BODY_NOTES[profile.body]||'Dòng xe này sẽ được kỹ thuật đối chiếu cấu hình đi dây và vị trí lắp khi xác nhận lịch.';
+  $('#installNote').textContent='Ghi chú lắp đặt cho xe của anh/chị: '+bodyNote+(profile.ev?' '+EV_NOTE:'');
+  setList('#checkList',rec.checks);
+  $('.resultWrap').style.display='block';
+  $('#sumCar').textContent=car;$('#sumNeed').textContent=needTxt;
+  $('#sumBudget').textContent=BUDGET_LABELS[profile.budget];$('#sumPlan').textContent=profile.plan;
+  $('#wCar').textContent=car;$('#wPlan').textContent=profile.plan;
+  $('#leadTitle').textContent='Nhận model và giá cho '+car;
+  stickyState(2);
+  track('recommendation_view',{vehicle_brand:profile.brand,vehicle_model:profile.model,vehicle_year:profile.year,needs:profile.needs.join(','),budget:profile.budget,recommended_product:rec.main.title,alt_product:rec.alt.title,price_band:rec.main.price.label,over_budget:!!rec.budgetNote});
+  $$('[data-plan-choice]').forEach(btn=>btn.onclick=()=>{const alt=btn.dataset.planChoice==='alt';profile.plan=alt?profile.alt:profile.mainPlan;profile.planPrice=alt?profile.altPrice:profile.mainPrice;$('#sumPlan').textContent=profile.plan;$('#wPlan').textContent=profile.plan;stickyState(alt?3:2);track('recommendation_choice',{choice:alt?'alt':'main',product:profile.plan,price_band:profile.planPrice});});
+  setTimeout(()=>$('#ket-qua').scrollIntoView({behavior:'smooth'}),60);
+}
+
+/* ════════ VIDEO PROOF ════════ */
+const PROOF_CHIPS=['Model camera','Xe sử dụng','Điều kiện quay','Độ phân giải gốc','Đã nén hay chưa','Tốc độ xe','Khoảng cách tham chiếu'];
+function renderProof(key){
+  const v=VIDEOS[key],shell=$('#videoShell');
+  $$('.proofTab').forEach(t=>{const on=t.dataset.proof===key;t.classList.toggle('on',on);t.setAttribute('aria-selected',on?'true':'false');});
+  if(v.src){shell.innerHTML='<video controls preload="metadata" playsinline src="'+v.src+'"></video>';}
+  else{shell.innerHTML='<div class="videoPlaceholder"><div><div class="mono">VIDEO GỐC · '+v.label.toUpperCase()+' · CHỜ GẮN (TODO-DATA)</div><ul>'+PROOF_CHIPS.map(x=>'<li>'+x+'</li>').join('')+'</ul></div></div>';}
+  $('#vmCondition').textContent=v.label;$('#vmConditionSub').textContent=v.sub;
+  $('#vmModel').textContent=v.model||'Model camera';$('#vmModelSub').textContent=v.model?'Đúng model quay video này':'Hiển thị đúng model quay';
+  $('#vmCar').textContent=v.car||'Xe sử dụng';$('#vmCarSub').textContent=v.car?'Xe quay video này':'Hiển thị xe và đời xe';
+  $('#vmSource').textContent=v.source||'Video nguồn';$('#vmSourceSub').textContent=v.source?'':'Ghi rõ video gốc hay đã nén';
+}
+$$('.proofTab').forEach(b=>b.addEventListener('click',()=>{renderProof(b.dataset.proof);track('video_proof_tab',{condition:b.dataset.proof});}));
+renderProof('day');
+let csTracked=false;
+$('#csRange').addEventListener('input',e=>{$('#compareSlider').style.setProperty('--cs',e.target.value+'%');if(!csTracked){csTracked=true;track('compare_slider_use');}});
+
+/* ════════ GIẢI PHÁP THEO NHU CẦU — decision cards ════════ */
+const PRODUCTS={
+  city:[
+    {name:'Gói camera trước 2K',key:'front',badge:'Tiết kiệm',desc:'Bằng chứng phía trước cho xe đi phố.',fitYes:'Người đi phố hằng ngày, cần clip khi có va chạm, ngân sách gọn.',fitNo:'Xe hay đỗ ngoài trời qua đêm hoặc cần ghi phía sau.',strong:'Chi phí thấp, lắp nhanh, đủ bằng chứng phía trước.',note:'Không có Parking Mode. Có thể nâng cấp camera sau ở lần sau.',specs:['Trước 2K','Wi‑Fi','G‑sensor']},
+    {name:'Gói trước – sau cân bằng',key:'dual',badge:'Khuyên dùng',featured:true,desc:'Độ phủ hai hướng cho xe gia đình.',fitYes:'Xe gia đình dùng hằng ngày, đi phố lẫn về quê, đi tỉnh.',fitNo:'Khách cần xem xe từ xa 24/7 qua điện thoại.',strong:'Cân bằng tốt nhất giữa độ phủ và chi phí.',note:'Muốn ghi cả khi đỗ cần thêm bộ nguồn hardwire.',specs:['Trước – sau','Ghi đêm','Wi‑Fi']},
+    {name:'Gói GPS nhắc tốc độ',key:'speed',badge:'Hay đi tỉnh',desc:'Ghi hình kèm nhắc giới hạn tốc độ.',fitYes:'Người thường chạy tỉnh lộ, cao tốc, ngại phạt nguội tốc độ.',fitNo:'Khách chỉ đi nội đô quãng ngắn mỗi ngày.',strong:'GPS ghi tốc độ và vị trí thẳng vào video — bằng chứng mạnh hơn.',note:'Nhắc tốc độ theo dữ liệu bản đồ của model — là tính năng hỗ trợ người lái.',specs:['GPS','Nhắc tốc độ','Ghi hình']},
+  ],
+  trip:[
+    {name:'Gói trước – sau HDR',key:'dual',badge:'Khuyên dùng',featured:true,desc:'Cho người chạy cao tốc thường xuyên.',fitYes:'Chạy cao tốc, đường trường — cần rõ biển số ở cả hai đầu xe.',fitNo:'Cần giám sát dài ngày khi đỗ nơi phức tạp.',strong:'HDR đỡ cháy sáng khi ra khỏi hầm, chạy ngược nắng.',note:'Chuyến dài nên dùng thẻ 128GB để không bị ghi đè sớm.',specs:['Trước – sau','HDR','GPS tùy model']},
+    {name:'Gói cao cấp cảm biến lớn',key:'premium',badge:'Chất lượng hình',desc:'Ghi đêm tốt hơn ở cùng điều kiện.',fitYes:'Đi đêm nhiều, muốn chất lượng hình tốt nhất nhóm trước–sau.',fitNo:'Ngân sách dưới 4 triệu — nhóm cân bằng đang hợp lý hơn.',strong:'Cảm biến lớn thu sáng tốt hơn, hình đêm sạch hơn.',note:'Chênh lệch giá trị rõ nhất với người thường xuyên đi đêm.',specs:['Cảm biến lớn','Trước – sau','GPS']},
+    {name:'Gói GPS nhắc tốc độ',key:'speed',badge:'Đường dài',desc:'Ghi hình kèm nhắc giới hạn tốc độ.',fitYes:'Chạy tuyến cố định, muốn được nhắc giới hạn từng đoạn.',fitNo:'Khách cần ghi phía sau — xem gói trước–sau có GPS.',strong:'Đỡ căng thẳng về tốc độ trên tuyến lạ.',note:'Dữ liệu giới hạn tốc độ cập nhật theo chính sách của hãng camera.',specs:['GPS','Nhắc tốc độ','Cảnh báo âm thanh']},
+  ],
+  park:[
+    {name:'Gói trước – sau + Parking Mode',key:'dualPark',badge:'Khuyên dùng',featured:true,desc:'Giám sát va chạm khi xe đỗ.',fitYes:'Xe đỗ ngoài trời, sân chung cư, lòng đường qua đêm.',fitNo:'Xe luôn đỗ hầm có bảo vệ và camera tòa nhà.',strong:'Ghi được va chạm lúc vắng mặt, nguồn có ngưỡng ngắt bảo vệ bình.',note:'Cần kiểm tra tình trạng ắc quy trước khi lắp.',specs:['Parking Mode','Hardwire','Trước – sau']},
+    {name:'Gói 4G báo động từ xa',key:'cloud',badge:'Xem từ xa',desc:'Thông báo về điện thoại khi có va chạm.',fitYes:'Muốn biết xe bị tác động ngay lúc xảy ra, không đợi ra xe mới biết.',fitNo:'Không muốn phí SIM/dịch vụ định kỳ.',strong:'Chủ động xử lý sớm: xem clip, ra xe, gọi hỗ trợ kịp thời.',note:'Có phí SIM 4G theo tháng tùy gói dữ liệu.',specs:['4G','Thông báo đẩy','Parking']},
+    {name:'Gói pin phụ giám sát dài',key:null,priceLabel:'Báo giá theo dung lượng pin',badge:'Đỗ dài ngày',desc:'Giám sát nhiều ngày không dùng điện bình.',fitYes:'Xe đỗ dài ngày: sân bay, công tác, về quê để xe lại.',fitNo:'Chỉ đỗ qua đêm thông thường — hardwire là đủ.',strong:'Không lấy điện ắc quy khi đỗ — an toàn cho bình kể cả đỗ cả tuần.',note:'Chi phí cao hơn hardwire, giá phụ thuộc dung lượng pin.',specs:['Pin phụ','Parking','Trước – sau']},
+  ],
+  speed:[
+    {name:'Gói GPS nhắc tốc độ',key:'speed',badge:'Khuyên dùng',featured:true,desc:'Đúng một việc: nhắc tốc độ và ghi hình.',fitYes:'Ưu tiên số một là được nhắc giới hạn tốc độ từng đoạn đường.',fitNo:'Cần ghi phía sau hoặc giám sát khi đỗ.',strong:'Cảnh báo bằng giọng nói, không cần nhìn màn hình.',note:'Là tính năng hỗ trợ — người lái vẫn quan sát biển báo thực tế.',specs:['GPS','Nhắc tốc độ','Ghi hình']},
+    {name:'Gói trước – sau có GPS',key:'dual',badge:'Đủ cả hai',desc:'Vừa nhắc tốc độ vừa ghi hai hướng.',fitYes:'Muốn một lần lắp đủ: bằng chứng hai đầu xe + nhắc tốc độ.',fitNo:'Ngân sách dưới 3 triệu.',strong:'Không phải đánh đổi giữa độ phủ và tính năng hỗ trợ.',note:'Chọn model có sẵn GPS — kỹ thuật sẽ lọc đúng model khi báo giá.',specs:['Trước – sau','GPS','Nhắc tốc độ']},
+    {name:'Gói cao cấp cảm biến lớn',key:'premium',badge:'Đi đêm nhiều',desc:'Thêm chất lượng hình cho người chạy đêm.',fitYes:'Chạy đêm thường xuyên trên tuyến thiếu sáng.',fitNo:'Ít khi đi đêm — nhóm cân bằng là đủ.',strong:'Hình đêm sạch, đọc biển số dễ hơn ở cùng điều kiện.',note:'Cân nhắc khi ngân sách trên 7 triệu.',specs:['Cảm biến lớn','GPS','Trước – sau']},
+  ],
+  remote:[
+    {name:'Gói 4G xem xe từ xa',key:'cloud',badge:'Khuyên dùng',featured:true,desc:'Xem video và vị trí xe qua điện thoại.',fitYes:'Hay giao xe cho người khác, đỗ nơi lạ và cần kiểm tra xe từ xa khi thiết bị đang có nguồn và kết nối 4G.',fitNo:'Không chấp nhận phí SIM/dịch vụ định kỳ.',strong:'Hỗ trợ kiểm tra xe từ xa mà camera Wi‑Fi thông thường không thực hiện được khi người dùng đứng xa xe.',note:'Tính năng xem từ xa phụ thuộc sóng 4G tại vị trí đỗ.',specs:['4G','Xem từ xa','Định vị']},
+    {name:'Gói 4G trước – sau',key:'cloud',badge:'Bao quát',desc:'Quản lý từ xa, ghi đủ hai hướng.',fitYes:'Xe dịch vụ, xe cho thuê — cần cả bằng chứng lẫn giám sát.',fitNo:'Xe cá nhân chỉ cần bằng chứng khi tự lái.',strong:'Một hệ thống lo đủ: clip hai đầu xe + theo dõi từ xa.',note:'Phí SIM theo tháng; dung lượng cloud tùy gói.',specs:['4G','Trước – sau','Parking']},
+    {name:'Gói định vị cho xe kinh doanh',key:'cloud',badge:'Xe dịch vụ',desc:'Lịch sử hành trình và video một app.',fitYes:'Chủ xe cho thuê tự lái, xe chạy hợp đồng cần lịch sử di chuyển.',fitNo:'Xe nhà ít di chuyển.',strong:'Quản lý nhiều chuyến, nhiều tài xế trong một tài khoản.',note:'Chọn gói dữ liệu theo số km chạy mỗi tháng.',specs:['Định vị','Lịch sử hành trình','4G']},
+  ],
+};
+function renderProducts(intent){
+  const arr=PRODUCTS[intent];
+  $('#productGrid').innerHTML=arr.map(p=>{
+    const price=p.key?PRICING[p.key].label:(p.priceLabel||'Liên hệ báo giá');
+    return '<article class="product'+(p.featured?' featured':'')+'">'
+      +'<span class="productBadge">'+p.badge+'</span><h3>'+p.name+'</h3><p>'+p.desc+'</p>'
+      +'<div class="fitBlock">'
+      +'<div class="fitRow yes"><b>Phù hợp với</b>'+p.fitYes+'</div>'
+      +'<div class="fitRow no"><b>Không phù hợp nếu</b>'+p.fitNo+'</div>'
+      +'<div class="fitRow note"><b>Điểm mạnh nhất</b>'+p.strong+'</div>'
+      +'<div class="fitRow note"><b>Cần lưu ý</b>'+p.note+'</div>'
+      +'</div><div class="specRow">'+p.specs.map(s=>'<span>'+s+'</span>').join('')+'</div>'
+      +'<div class="productPrice">'+price+'<small>'+(p.key?PRICE_SUFFIX:'không đoán giá khi chưa rõ cấu hình')+'</small></div>'
+      +'<div class="productActions"><button class="btn btnGhost" data-compare="'+p.name+'">So sánh</button><button class="btn btnRed" data-product="'+p.name+'" data-product-price="'+price+'">Tư vấn gói này</button></div></article>';
+  }).join('');
+  $$('#productGrid [data-product]').forEach(b=>b.addEventListener('click',()=>{
+    profile.plan=b.dataset.product;profile.planPrice=b.dataset.productPrice||'';$('#sumPlan').textContent=profile.plan;$('#wPlan').textContent=profile.plan;
+    stickyState(3);track('product_interest',{product:b.dataset.product,price_band:profile.planPrice,intent});
+    $('#lead').scrollIntoView({behavior:'smooth'});
+  }));
+  $$('#productGrid [data-compare]').forEach(b=>b.addEventListener('click',()=>{
+    track('compare_open',{product:b.dataset.compare});$('#so-sanh').scrollIntoView({behavior:'smooth'});
+  }));
+}
+renderProducts('city');
+$$('.intentTab').forEach(b=>b.addEventListener('click',()=>{
+  $$('.intentTab').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-selected','false');});
+  b.classList.add('on');b.setAttribute('aria-selected','true');
+  renderProducts(b.dataset.intent);track('intent_tab',{intent:b.dataset.intent});
+}));
+
+/* ════════ BẢNG SO SÁNH — điền vùng giá từ PRICING ════════ */
+const CMP_PRICE_MAP={under2:'front',b24:'dual',b47:'dualPark',over7:'cloud'};
+$$('#cmpTable [data-price]').forEach(td=>{td.innerHTML='<b>'+PRICING[CMP_PRICE_MAP[td.dataset.price]].label+'</b><br><span class="dim" style="font-size:.72rem">'+PRICE_SUFFIX+'</span>';});
+
+/* ════════ XE ĐÃ LẮP THEO HÃNG ════════ */
+const CASE_BRANDS=['VinFast','Toyota','Ford','Hyundai','Kia','Mazda','Honda','Mitsubishi'];
+$('#brandTabs').innerHTML=CASE_BRANDS.map((b,i)=>'<button class="brandTab'+(i===0?' on':'')+'" role="tab" aria-selected="'+(i===0)+'" data-brand="'+b+'">'+b+'</button>').join('');
+function renderCases(brand){
+  $$('.brandTab').forEach(t=>{const on=t.dataset.brand===brand;t.classList.toggle('on',on);t.setAttribute('aria-selected',on?'true':'false');});
+  const real=CASES.filter(c=>c.brand===brand);
+  let html='';
+  if(real.length){
+    html=real.map(c=>'<article class="case"><div class="caseMedia"'+(c.img?' style="background:url('+c.img+') center/cover"':'')+'>'+(c.img?'':'ẢNH XE THẬT')+'</div><div class="caseBody"><h3>'+c.brand+' '+c.model+' '+(c.year||'')+' lắp camera hành trình</h3><p>Nhu cầu: '+c.need+'</p><div class="caseSpecs"><div><span>Camera</span><b>'+c.camera+'</b></div><div><span>Nguồn</span><b>'+c.power+'</b></div><div><span>Thời gian lắp</span><b>'+c.time+'</b></div><div><span>Giá tại thời điểm lắp</span><b>'+c.price+'</b></div></div><div class="caseMeta"><span>Xe thật</span><span>Video bàn giao</span><span>Đánh giá sau dùng</span></div></div></article>').join('');
+  }else{
+    const models=Object.keys((VEHICLES[brand]||{models:{}}).models).slice(0,3);
+    html=models.map(m=>'<article class="case"><div class="caseMedia">ẢNH XE THẬT + VIDEO BÀN GIAO<br>'+(brand+' '+m).toUpperCase()+'<br><small style="letter-spacing:0;text-transform:none">TODO-DATA · nạp từ hệ thống ca lắp</small></div><div class="caseBody"><h3>'+brand+' '+m+' — chờ ca lắp thật</h3><p>Card này sẽ hiển thị đúng ca lắp '+m+' từ hệ thống: nhu cầu chủ xe, model camera, phương án nguồn, thời gian thi công và giá tại thời điểm lắp.</p><div class="caseSpecs"><div><span>Camera</span><b>—</b></div><div><span>Nguồn</span><b>—</b></div><div><span>Thời gian lắp</span><b>—</b></div><div><span>Giá tại thời điểm lắp</span><b>—</b></div></div><div class="caseMeta"><span>Ảnh thật</span><span>Video bàn giao</span><span>Đánh giá sau dùng</span></div></div></article>').join('');
+  }
+  $('#caseGrid').innerHTML=html;
+}
+renderCases('VinFast');
+$('#brandTabs').addEventListener('click',e=>{const t=e.target.closest('.brandTab');if(!t)return;renderCases(t.dataset.brand);track('case_brand',{brand:t.dataset.brand});});
+
+/* ════════ BRANCH FINDER — HỆ THỐNG 90+ ĐIỂM ════════
+   Nguyên tắc: định vị chỉ để chọn TỈNH gần nhất (tọa độ tỉnh là dữ liệu công khai, tính thật).
+   Khoảng cách từng điểm CHỈ hiển thị khi điểm có verified:true + lat/lng thật — không hiện km giả. */
+const provinceSelect=$('#provinceSelect'),districtSelect=$('#districtSelect');
+Object.keys(PROVINCE_COORDS).forEach(p=>provinceSelect.appendChild(new Option(p,p)));
+let userPos=null;
+function haversineKm(a,b,c,d){const R=6371,t=Math.PI/180,dLat=(c-a)*t,dLng=(d-b)*t;const h=Math.sin(dLat/2)**2+Math.cos(a*t)*Math.cos(c*t)*Math.sin(dLng/2)**2;return R*2*Math.atan2(Math.sqrt(h),Math.sqrt(1-h));}
+function nearestProvince(lat,lng){let best=null,bd=Infinity;Object.entries(PROVINCE_COORDS).forEach(([p,c])=>{const d=haversineKm(lat,lng,c[0],c[1]);if(d<bd){bd=d;best=p;}});return {province:best,km:bd};}
+provinceSelect.addEventListener('change',()=>{
+  const ds=[...new Set(BRANCHES.filter(b=>b.province===provinceSelect.value).map(b=>b.district))];
+  districtSelect.innerHTML='<option value="">— Tất cả khu vực —</option>'+ds.map(d=>'<option>'+d+'</option>').join('');
+  districtSelect.disabled=!ds.length;
+  if(provinceSelect.value)renderBranches('manual'); /* đổi tỉnh là thấy kết quả ngay, không bắt bấm thêm nút */
+});
+districtSelect.addEventListener('change',()=>{if(provinceSelect.value)renderBranches('manual');});
+function branchCard(b){
+  const dist=(userPos&&b.verified&&b.lat)?'<span class="branchDistance">'+haversineKm(userPos[0],userPos[1],b.lat,b.lng).toFixed(1).replace('.',',')+' km</span>':'';
+  const slot=b.slotSoon?'<div class="branchSlot"><b>●</b> Có lịch trống gần — xác nhận khi đặt</div>':'<div class="branchSlot" style="color:#c8b17e"><b>●</b> Lịch xếp theo xác nhận của kỹ thuật</div>';
+  const sel=profile.branchId===b.id;
+  return '<article class="branchCard'+(sel?' selected':'')+'"><div class="branchCardTop"><div><h4>'+b.name+(sel?' <span style="color:#5fc48f;font-size:.72rem;font-weight:800">✓ đã chọn</span>':'')+'</h4><div class="branchAddress">'+b.district+' · '+b.addr+(b.hours?' · '+b.hours:'')+(b.verified?'':' <span class="todoChip" style="padding:2px 7px">TODO-DATA</span>')+'</div></div>'+dist+'</div>'
+    +'<div class="branchTags">'+b.services.map(s=>'<span>'+s+'</span>').join('')+(b.waiting?'<span>Khu chờ cho khách</span>':'')+'</div>'+slot
+    +'<div class="branchActions"><a href="tel:'+(b.phone||CONFIG.HOTLINE)+'" data-branch-call="'+b.name+'">Gọi điểm này</a>'+(b.maps?'<a href="'+b.maps+'" target="_blank" rel="noopener" data-branch-map="'+b.name+'">Chỉ đường</a>':'')+'<button type="button" class="bookBranch" data-branch="'+b.id+'">'+(sel?'Đang giữ điểm này':'Đặt lịch với cấu hình đã chọn')+'</button></div></article>';
+}
+function renderBranches(mode,silent){
+  const p=provinceSelect.value,d=districtSelect.value;
+  if(!p){$('#branchStatus').textContent='VUI LÒNG CHỌN TỈNH/THÀNH';return;}
+  let items=BRANCHES.filter(b=>b.province===p&&(!d||b.district===d));
+  if($('#filterSlot').checked)items=items.filter(b=>b.slotSoon);
+  if($('#filterWaiting').checked)items=items.filter(b=>b.waiting);
+  let widened=false;
+  if(!items.length){items=BRANCHES.filter(b=>b.province===p);widened=true;}
+  items=items.slice(0,3);
+  $('#branchResultTitle').textContent=mode==='geo'?'Điểm phù hợp theo vị trí hiện tại':'Điểm Auto365 tại '+p;
+  $('#branchResultSub').textContent=profile.model
+    ?'Đang giữ cấu hình: '+[profile.brand,profile.model].filter(Boolean).join(' ')+' · '+(profile.plan||'camera hành trình')+'. Đặt lịch là thông tin này đi cùng.'
+    :(widened?'Không có điểm khớp hết bộ lọc — đang hiển thị các điểm cùng tỉnh/thành.':'Chọn một điểm để thông tin đi cùng yêu cầu tư vấn.');
+  $('#branchStatus').textContent=items.length?items.length+' ĐIỂM ĐƯỢC GỢI Ý':'CHƯA CÓ ĐIỂM TRONG DỮ LIỆU MẪU';
+  $('#branchList').innerHTML=items.length?items.map(branchCard).join(''):'<div class="branchEmpty">Khu vực này chưa có trong dữ liệu mẫu. Bản production nạp đủ danh sách 90+ điểm sẽ luôn trả về điểm gần nhất.</div>';
+  $$('#branchList .bookBranch').forEach(btn=>btn.addEventListener('click',()=>{
+    const b=BRANCHES.find(x=>x.id===btn.dataset.branch);if(!b)return;
+    profile.branchId=b.id;profile.branchName=b.name;
+    $('#sumBranch').textContent=b.name;$('#wBranch').textContent=b.name;
+    renderBranches(mode,true); /* vẽ lại để card hiện trạng thái đã chọn */
+    stickyState(4);
+    track('branch_select',{branch_id:b.id,branch_name:b.name,province:b.province,vehicle_brand:profile.brand,vehicle_model:profile.model,recommended_product:profile.plan||''});
+    $('#lead').scrollIntoView({behavior:'smooth'});
+  }));
+  $$('#branchList [data-branch-call]').forEach(a=>a.addEventListener('click',()=>track('branch_call',{branch:a.dataset.branchCall})));
+  $$('#branchList [data-branch-map]').forEach(a=>a.addEventListener('click',()=>track('branch_map',{branch:a.dataset.branchMap})));
+  if(!silent)track('branch_results_view',{province:p,district:d||'all',mode:mode||'manual',count:items.length,widened});
+}
+$('#findBranch').addEventListener('click',()=>renderBranches('manual'));
+$('#filterSlot').addEventListener('change',()=>{if(provinceSelect.value)renderBranches('manual');});
+$('#filterWaiting').addEventListener('change',()=>{if(provinceSelect.value)renderBranches('manual');});
+$('#useLocation').addEventListener('click',()=>{
+  if(!navigator.geolocation){$('#branchStatus').textContent='TRÌNH DUYỆT KHÔNG HỖ TRỢ ĐỊNH VỊ';return;}
+  $('#branchStatus').textContent='ĐANG XÁC ĐỊNH VỊ TRÍ…';
+  navigator.geolocation.getCurrentPosition(pos=>{
+    userPos=[pos.coords.latitude,pos.coords.longitude];
+    const near=nearestProvince(userPos[0],userPos[1]);
+    provinceSelect.value=near.province;
+    const ds=[...new Set(BRANCHES.filter(b=>b.province===provinceSelect.value).map(b=>b.district))];
+    districtSelect.innerHTML='<option value="">— Tất cả khu vực —</option>'+ds.map(d=>'<option>'+d+'</option>').join('');
+    districtSelect.disabled=!ds.length;
+    track('branch_geo',{province:near.province,approx_km_to_center:Math.round(near.km)});
+    renderBranches('geo');
+  },()=>{$('#branchStatus').textContent='KHÔNG LẤY ĐƯỢC VỊ TRÍ — CHỌN THỦ CÔNG GIÚP EM';},{timeout:8000,maximumAge:300000});
+});
+
+/* ════════ INTERNAL LINKS THEO HÃNG ════════ */
+$('#brandLinks').innerHTML=CASE_BRANDS.map(b=>'<li><a href="#xe-da-lap" data-brandlink="'+b+'">Camera hành trình cho xe '+b+'</a></li>').join('');
+$$('#brandLinks a').forEach(a=>a.addEventListener('click',()=>{renderCases(a.dataset.brandlink);track('brand_link',{brand:a.dataset.brandlink});}));
+
+/* ════════ FAQ THEO Ý ĐỊNH TÌM KIẾM ════════ */
+const FAQ={
+  buy:[
+    ['Nên chọn camera trước hay camera trước – sau?','Camera trước phù hợp khi ngân sách gọn và nhu cầu chính là bằng chứng phía trước. Camera trước – sau hợp hơn cho xe gia đình, xe hay chạy cao tốc — vì va chạm từ phía sau và tình huống tạt đầu, chuyển làn chiếm tỷ lệ lớn khi cần clip. Quyết định nên dựa trên thói quen dùng xe, không chỉ dựa trên giá.'],
+    ['Camera 2K và 4K khác nhau thế nào, có cần 4K không?','4K cho nhiều chi tiết hơn khi zoom biển số, nhưng chất lượng thực tế còn phụ thuộc cảm biến, HDR, bitrate và cách lắp. Một camera 2K cảm biến tốt có thể ghi đêm rõ hơn camera 4K cảm biến nhỏ. Không nên chọn chỉ dựa trên chữ 4K.'],
+    ['Có cần GPS không?','GPS ghi tốc độ và vị trí trực tiếp vào video — khi cần làm việc với bảo hiểm hoặc chứng minh sự việc, clip có tọa độ và tốc độ là bằng chứng mạnh hơn. GPS cũng là điều kiện để có tính năng nhắc giới hạn tốc độ.'],
+    ['Camera nhắc tốc độ có cần mạng không?','Phần lớn model nhắc tốc độ bằng GPS và dữ liệu bản đồ lưu sẵn trong máy, cập nhật qua app — không cần SIM. Mức độ đầy đủ của dữ liệu phụ thuộc từng hãng camera. Đây là tính năng hỗ trợ người lái, không thay thế việc quan sát biển báo thực tế.'],
+    ['Camera hành trình có thay thế được camera 360 không?','Hai thiết bị làm hai việc khác nhau. Camera 360 hỗ trợ quan sát quanh xe khi di chuyển chậm và đỗ xe; camera hành trình ghi bằng chứng khi xe chạy. Một số camera 360 có ghi hình nhưng góc quay và chất lượng thường không thay được camera hành trình chuyên dụng — nhiều chủ xe lắp cả hai cho hai mục đích.'],
+    ['Giá trọn gói gồm những gì?','Gồm thiết bị, thẻ nhớ phù hợp, phụ kiện nguồn theo gói (tẩu hoặc hardwire), công lắp, cài app kèm hướng dẫn sử dụng và bảo hành. Báo giá ghi rõ từng phần trước khi hẹn lịch — đúng cấu hình đã chốt thì không phát sinh thêm tại xưởng.'],
+  ],
+  install:[
+    ['Lắp camera có ảnh hưởng hệ thống điện của xe không?','Gói cắm tẩu không can thiệp điện xe. Gói Parking Mode lấy nguồn qua chân cầu chì bằng cáp chuyển — ưu tiên không cắt, không nối dây zin. Thi công đúng chuẩn kèm ngưỡng ngắt điện áp thì hệ thống điện và ắc quy được bảo vệ.'],
+    ['Xe điện có lắp Parking Mode được không?','Được, với cấu hình nguồn phù hợp. Xe điện có cấu trúc nguồn khác xe xăng nên Auto365 đối chiếu khuyến cáo của hãng xe trước khi lắp; một số trường hợp sẽ được tư vấn dùng pin phụ thay vì lấy nguồn từ xe.'],
+    ['Có phải cắt dây zin của xe không?','Auto365 ưu tiên cáp chuyển chân cầu chì và giắc chờ sẵn của xe. Trường hợp đặc biệt cần can thiệp khác sẽ được báo và giải thích trước khi làm — không tự ý xử lý.'],
+    ['Hardwire kit hoạt động thế nào?','Hardwire kit cấp nguồn cho camera cả khi tắt máy để chạy Parking Mode, đồng thời theo dõi điện áp ắc quy. Khi bình xuống đến ngưỡng cài đặt (ví dụ 12.0V), kit tự ngắt để xe luôn đủ điện đề nổ.'],
+    ['Camera 4G có xem xe trực tiếp được mọi lúc không?','Không nên kỳ vọng trực tiếp 24/7 ở mọi nơi. Khả năng xem từ xa phụ thuộc sóng 4G tại chỗ đỗ, gói dữ liệu và cấu hình nguồn khi xe tắt máy. Kỹ thuật sẽ nói rõ giới hạn theo từng model trước khi anh/chị quyết định.'],
+  ],
+  storage:[
+    ['Nên dùng thẻ nhớ bao nhiêu GB?','Camera một mắt thường dùng 64GB, camera trước – sau nên dùng 128GB. Quan trọng hơn dung lượng là loại thẻ: phải là thẻ chuẩn ghi liên tục (High Endurance) — thẻ thường dễ hỏng sau vài tháng ghi đè liên tục.'],
+    ['Thẻ lưu được bao nhiêu giờ video?','Phụ thuộc độ phân giải và bitrate của model. Camera trước – sau 2K với thẻ 128GB thường ghi được khoảng trên dưới chục giờ trước khi ghi đè vòng lặp. Kỹ thuật sẽ tính con số chính xác theo model anh/chị chốt.'],
+    ['Khi có va chạm, lấy clip thế nào?','G‑sensor tự khóa file lúc va chạm để không bị ghi đè. Anh/chị mở app, kết nối camera và tải clip về điện thoại ngay tại chỗ. Bước này được hướng dẫn và thực hành trước khi nhận xe — nếu lúng túng, gọi hotline để được hướng dẫn từ xa.'],
+    ['Bao lâu nên format thẻ nhớ một lần?','Nên format định kỳ khoảng 1–2 tháng và sau khi đã lưu clip quan trọng ra ngoài. Khi ghé Auto365 bảo dưỡng hoặc kiểm tra, kỹ thuật sẽ test và format thẻ giúp anh/chị.'],
+  ],
+  warranty:[
+    ['Bảo hành thiết bị hay cả công lắp?','Cả hai: thiết bị theo chính sách của hãng và phần thi công của Auto365. Thời hạn cụ thể hiển thị theo từng model khi báo giá — được ghi trong thẻ bảo hành điện tử, không phụ thuộc hóa đơn giấy.'],
+    ['Đang đi tỉnh mà camera lỗi thì làm thế nào?','Gọi hotline để được hướng dẫn xử lý từ xa trước. Nếu cần can thiệp trực tiếp, hệ thống sẽ điều phối đến điểm Auto365 gần nhất — không bắt buộc quay lại đúng nơi đã lắp.'],
+    ['Lỗi app, không kết nối được camera có được hỗ trợ không?','Có. Lỗi kết nối, quên mật khẩu Wi‑Fi camera, app không nhận thiết bị — đều được hỗ trợ từ xa hoặc tại xưởng, kể cả khi thiết bị không hỏng.'],
+    ['Đổi điện thoại mới có phải cài đặt lại không?','Chỉ cần cài lại app và kết nối lại camera — video trên thẻ nhớ không mất. Nếu cần, có thể liên hệ hoặc mang xe tới điểm Auto365 gần nhất để được hỗ trợ theo chính sách hiện hành.'],
+  ],
+};
+const FAQ_GROUP_LABELS={buy:'Trước khi mua',install:'Điện & lắp đặt',storage:'Thẻ nhớ & video',warranty:'Bảo hành'};
+$('#faqRoot').innerHTML=Object.keys(FAQ).map(g=>'<div class="faqGroup'+(g==='buy'?' on':'')+'" data-group="'+g+'">'+FAQ[g].map((q,i)=>{const id='faq-'+g+'-'+i;return '<div class="faqItem"><button class="faqQ" aria-expanded="false" aria-controls="'+id+'">'+q[0]+'<span class="pm" aria-hidden="true">+</span></button><div class="faqA" id="'+id+'"><p>'+q[1]+'</p></div></div>';}).join('')+'</div>').join('');
+$$('.faqTab').forEach(b=>b.addEventListener('click',()=>{
+  $$('.faqTab').forEach(x=>{x.classList.remove('on');x.setAttribute('aria-selected','false');});
+  b.classList.add('on');b.setAttribute('aria-selected','true');
+  $$('.faqGroup').forEach(gr=>gr.classList.toggle('on',gr.dataset.group===b.dataset.faq));
+  track('faq_group',{group:b.dataset.faq});
+}));
+$('#faqRoot').addEventListener('click',e=>{
+  const q=e.target.closest('.faqQ');if(!q)return;
+  const item=q.parentElement,open=item.classList.toggle('on');
+  q.setAttribute('aria-expanded',open?'true':'false');
+  if(open)track('faq_open',{question:q.textContent.replace('+','').trim().slice(0,80)});
+});
+/* FAQPage schema sinh từ đúng nội dung FAQ trên trang — một nguồn dữ liệu duy nhất */
+(function(){const all=Object.values(FAQ).flat();const ld={'@context':'https://schema.org','@type':'FAQPage','mainEntity':all.map(q=>({'@type':'Question','name':q[0],'acceptedAnswer':{'@type':'Answer','text':q[1]}}))};const s=document.createElement('script');s.type='application/ld+json';s.textContent=JSON.stringify(ld);document.head.appendChild(s);})();
+
+/* ════════ LEAD FORM — production-ready ════════
+   · CONFIG.CRM_WEBHOOK_URL rỗng  → chế độ DEMO minh bạch (hiện payload, nói rõ chưa gửi)
+   · Có URL                       → POST JSON thật, timeout 12s, lỗi thì hiện fallback gọi/Zalo
+   · Không bao giờ hiện "thành công" khi server chưa xác nhận                     */
+let formStartedAt=null,formStartedMs=0,submitting=false,submitted=false;
+$('#phone').addEventListener('focus',()=>{
+  if(!formStartedAt){formStartedAt=new Date().toISOString();formStartedMs=Date.now();track('form_start',{recommended_product:profile.plan||''});}
+});
+const METHOD_TEXT={call:'gọi lại cho anh/chị',zalo:'nhắn Zalo cho anh/chị',quote:'gửi báo giá qua Zalo/SMS và không gọi điện'};
+function leadError(msg){const el=$('#leadMsg');el.textContent=msg;el.style.display='block';}
+function buildPayload(phone,method){
+  return Object.assign({
+    source:'landing_camera_hanh_trinh',
+    page_url:location.href,
+    phone:phone,
+    contact_method:method,
+    vehicle_brand:profile.brand||null,
+    vehicle_model:profile.model||null,
+    vehicle_year:profile.year||null,
+    vehicle_body:profile.body||null,
+    needs:profile.needs.map(n=>NEED_LABELS[n]),
+    budget:BUDGET_LABELS[profile.budget]||null,
+    recommended_product:profile.plan||null,
+    price_band:profile.planPrice||null,
+    selected_branch_id:profile.branchId||null,
+    selected_branch_name:profile.branchName||null,
+    form_started_at:formStartedAt,
+    form_submitted_at:new Date().toISOString(),
+    fill_seconds:formStartedMs?Math.round((Date.now()-formStartedMs)/1000):null,
+  },ATTR);
+}
+function showSuccess(demo,payload){
+  submitted=true;
+  $('#leadBody').style.display='none';
+  const box=$('#leadSuccess');box.style.display='block';
+  const car=carLabel();
+  if(demo){
+    $('#successTitle').textContent='Form hoạt động — đang ở chế độ demo';
+    $('#successText').textContent='CRM_WEBHOOK_URL trong CONFIG còn trống nên yêu cầu này CHƯA được gửi đi đâu cả. Bên dưới là payload thật sẽ đẩy sang CRM khi cấu hình xong.';
+    $('#demoBox').classList.remove('hidden');
+    $('#demoPayload').textContent=JSON.stringify(payload,null,2);
+  }else{
+    $('#successTitle').textContent='Đã nhận yêu cầu'+(car?' cho '+car:'');
+    $('#successText').textContent='Auto365 sẽ '+METHOD_TEXT[payload.contact_method]+' '+CONFIG.SLA_TEXT+'. Nội dung đã kèm lựa chọn của anh/chị: '+(payload.recommended_product||'tư vấn chung')+(payload.budget?' · '+payload.budget:'')+'.';
+  }
+  box.scrollIntoView({behavior:'smooth',block:'center'});
+}
+$('#leadForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  if(submitting||submitted)return;
+  /* honeypot: bot điền trường ẩn thì bỏ qua trong im lặng */
+  if($('#hpField').value){track('lead_spam_honeypot');return;}
+  const raw=$('#phone').value.replace(/[\s.\-()]/g,'');
+  if(!/^(?:\+?84|0)(3|5|7|8|9)\d{8}$/.test(raw)){leadError('Vui lòng nhập đúng số điện thoại di động Việt Nam (09xx, 03xx, 07xx…).');return;}
+  if(!$('#consent').checked){leadError('Anh/chị vui lòng tích ô đồng ý để Auto365 được phép liên hệ.');return;}
+  $('#leadMsg').style.display='none';
+  const method=$('input[name="method"]:checked').value;
+  const payload=buildPayload(raw,method);
+  if(formStartedMs&&Date.now()-formStartedMs<2000)payload.spam_suspect=true; /* điền nhanh bất thường */
+  track('lead_submit_attempt',{contact_method:method,recommended_product:payload.recommended_product,phone_masked:raw.slice(0,3)+'****'+raw.slice(-3)});
+  if(!CONFIG.CRM_WEBHOOK_URL){
+    track('lead_submit_demo');
+    showSuccess(true,payload);
+    return;
+  }
+  submitting=true;
+  const btn=$('#leadSubmit');btn.disabled=true;btn.textContent='Đang gửi…';
+  $('#errPanel').style.display='none';
+  const ctl=new AbortController();
+  const to=setTimeout(function(){ctl.abort();},12000);
+  fetch(CONFIG.CRM_WEBHOOK_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:ctl.signal})
+    .then(function(r){
+      clearTimeout(to);
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      track('lead_submit_success',{contact_method:method,recommended_product:payload.recommended_product});
+      showSuccess(false,payload);
+    })
+    .catch(function(err){
+      clearTimeout(to);
+      submitting=false;btn.disabled=false;btn.textContent='Nhận phương án và giá trọn gói';
+      $('#errPanel').style.display='block';
+      track('lead_submit_error',{error:String(err&&err.message||err)});
+    });
+});
+
+/* ════════ STICKY CTA THEO HÀNH TRÌNH ════════ */
+function stickyState(stage){
+  const t=$('#stickyTitle'),s=$('#stickySub'),m=$('#stickyMain');
+  if(stage===1){
+    t.textContent=[profile.brand,profile.model].filter(Boolean).join(' ')||'Xe của anh/chị';
+    s.textContent='Còn 2 bước — chọn nhu cầu và ngân sách';
+    m.textContent='Tiếp tục chọn';m.dataset.scroll='#tu-van';
+  }else if(stage===2){
+    t.textContent=profile.plan;
+    s.textContent=([profile.brand,profile.model].filter(Boolean).join(' '))+' · '+profile.planPrice;
+    m.textContent='Nhận báo giá chính xác';m.dataset.scroll='#lead';
+  }else if(stage===3){
+    t.textContent=profile.plan;
+    s.textContent='Kỹ thuật sẽ lọc model đúng theo xe của anh/chị';
+    m.textContent='Tư vấn gói này';m.dataset.scroll='#lead';
+  }else if(stage===4){
+    t.textContent=profile.plan||('Lắp tại '+(profile.branchName||'điểm đã chọn'));
+    s.textContent=(profile.branchName||'Điểm đã chọn')+([profile.brand,profile.model].filter(Boolean).length?' · '+[profile.brand,profile.model].filter(Boolean).join(' '):' · Chọn xe ở đầu trang để giữ đúng cấu hình');
+    m.textContent='Hoàn tất đặt lịch';m.dataset.scroll='#lead';
+  }
+}
+/* ẩn sticky khi selector hoặc form đang trong tầm nhìn */
+const stickyEl=$('#sticky');let selVisible=false,leadVisible=false;
+function stickyToggle(){stickyEl.classList.toggle('off',selVisible||leadVisible);}
+new IntersectionObserver(function(en){selVisible=en[0].isIntersecting;stickyToggle();},{threshold:.25}).observe($('#tu-van'));
+new IntersectionObserver(function(en){leadVisible=en[0].isIntersecting;stickyToggle();},{threshold:.15}).observe($('#lead'));
+
+/* ════════ SCROLL, TRACK DELEGATION, REVEAL ════════ */
+$$('[data-scroll]').forEach(function(el){el.addEventListener('click',function(){
+  const target=$(el.dataset.scroll);if(target)target.scrollIntoView({behavior:'smooth'});
+  track('cta_click',{target:el.dataset.scroll,label:(el.textContent||'').trim().slice(0,60)});
+});});
+$$('[data-track]').forEach(function(el){if(el.dataset.trackBound)return;el.dataset.trackBound='1';el.addEventListener('click',function(){track(el.dataset.track,{href:el.getAttribute('href')||'',label:(el.textContent||'').trim().slice(0,60)});});});
+const revealIO=new IntersectionObserver(function(ens){ens.forEach(function(en){if(en.isIntersecting){en.target.classList.add('vis');revealIO.unobserve(en.target);}});},{threshold:.12});
+$$('.reveal').forEach(function(el){revealIO.observe(el);});
+const seenSections=new Set();
+const secIO=new IntersectionObserver(function(ens){ens.forEach(function(en){
+  if(en.isIntersecting&&!seenSections.has(en.target.id)){seenSections.add(en.target.id);track('section_view',{section:en.target.id});}
+});},{threshold:.3});
+$$('section[id]').forEach(function(s){secIO.observe(s);});
+})();
+</script>
+</body>
+</html>
+
