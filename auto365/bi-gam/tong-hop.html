@@ -52,25 +52,26 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 
 /* hero */
 .hero{background:linear-gradient(160deg,#fff 0%,#f7f8fa 60%,#eef0f3 100%);padding:40px 0 44px}
-.hero-copy{max-width:760px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:48px;align-items:start}
+.hero-grid>*{min-width:0}
 .hero h1{font-size:clamp(30px,4vw,44px);line-height:1.08;letter-spacing:-.03em}
 .hero-lead{color:var(--muted);font-size:15px;line-height:1.65;margin-top:14px;max-width:600px}
 .quick-summary{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-top:20px}
 .quick-summary b{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px}
 .quick-summary ul{margin:0;padding-left:18px;font-size:13px;color:#3a3d42;line-height:1.7}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.finder-bar{background:var(--ink-2);border-radius:20px;padding:26px 30px;margin-top:32px;display:grid;grid-template-columns:minmax(200px,.85fr) 2.3fr;gap:28px;align-items:center;min-width:0}
-.finder-bar-head{color:#fff;min-width:0}
+.finder-bar{background:var(--ink-2);border-radius:20px;padding:24px;min-width:0}
+.finder-bar-head{color:#fff;margin-bottom:18px}
 .finder-bar-head .kicker{color:#ff8890;margin-bottom:6px}
-.finder-bar-head h2{font-size:19px;margin:4px 0 6px}
+.finder-bar-head h2{font-size:18px;margin:4px 0 6px}
 .finder-bar-head p{color:#9195a0;font-size:12px;line-height:1.5;margin:0}
-.finder-bar-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:12px;align-items:end;min-width:0}
-.finder-bar-fields label{display:grid;gap:6px;font-size:10.5px;font-weight:700;color:#c7cad0;min-width:0}
-.finder-bar-fields select,.finder-bar-fields input{min-height:44px;border:1px solid #33353b;border-radius:10px;padding:0 12px;font-size:12.5px;background:#101114;color:#fff;min-width:0}
-.finder-bar-submit{min-height:44px;white-space:nowrap;padding:0 22px}
-.finder-bar-note{grid-column:1/-1;color:#7d818a;font-size:10.5px;margin:10px 0 0;text-align:right}
-@media (width<=1180px){.finder-bar{grid-template-columns:1fr}.finder-bar-head{margin-bottom:16px}.finder-bar-fields{grid-template-columns:repeat(2,1fr)}.finder-bar-submit{grid-column:1/-1}.finder-bar-note{text-align:left}}
-@media (width<=640px){.finder-bar{padding:20px}.finder-bar-fields{grid-template-columns:1fr}}
+.finder-bar-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
+.finder-bar-fields label{display:grid;gap:6px;font-size:11px;font-weight:700;color:#c7cad0;min-width:0}
+.finder-bar-fields select,.finder-bar-fields input{min-height:44px;border:1px solid #33353b;border-radius:10px;padding:0 12px;font-size:13px;background:#101114;color:#fff;min-width:0}
+.finder-bar-submit{width:100%;margin-top:14px;white-space:nowrap}
+.finder-bar-note{color:#7d818a;font-size:11px;text-align:center;margin-top:10px}
+@media (width<=900px){.hero-grid{grid-template-columns:1fr}}
+@media (width<=640px){.finder-bar-fields{grid-template-columns:1fr}}
 
 /* catalogue */
 .catalogue-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:16px}
@@ -316,8 +317,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <main id="noi-dung-chinh">
 
 <section class="hero">
-  <div class="shell">
-    <div class="hero-copy">
+  <div class="shell hero-grid">
+    <div>
       <span class="kicker">Auto365 · Bi gầm ô tô</span>
       <h1>Đèn bi gầm ô tô: bảng giá và cách chọn theo xe</h1>
       <p class="hero-lead">Bi gầm là cụm đèn projector lắp thấp phía trước ô tô để bổ sung vùng sáng gần và hai mép đường. Trước khi lắp cần đối chiếu hốc đèn, lens 2.0/3.0 inch, điện áp, pát và nhu cầu sử dụng — không nên chỉ nhìn theo giá hoặc công suất.</p>
@@ -347,8 +348,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label>Dòng xe <input type="text" placeholder="VD: Vios, CR-V…"></label>
         <label>Năm sản xuất <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
         <label>Nhu cầu đi xe <select><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
-        <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
       </div>
+      <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
       <p class="finder-bar-note">Không cần để lại số điện thoại để xem thông tin chung.</p>
     </form>
   </div>
