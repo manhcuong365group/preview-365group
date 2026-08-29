@@ -52,23 +52,25 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 
 /* hero */
 .hero{background:linear-gradient(160deg,#fff 0%,#f7f8fa 60%,#eef0f3 100%);padding:40px 0 44px}
-.hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:48px;align-items:start}
-.hero-grid>*{min-width:0}
+.hero-copy{max-width:760px}
 .hero h1{font-size:clamp(30px,4vw,44px);line-height:1.08;letter-spacing:-.03em}
 .hero-lead{color:var(--muted);font-size:15px;line-height:1.65;margin-top:14px;max-width:600px}
 .quick-summary{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-top:20px}
 .quick-summary b{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px}
 .quick-summary ul{margin:0;padding-left:18px;font-size:13px;color:#3a3d42;line-height:1.7}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
-.finder-card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--red);border-radius:18px;padding:24px;box-shadow:0 20px 50px rgba(16,17,20,.08)}
-.finder-card h2{font-size:18px}
-.finder-card>p{color:var(--muted);font-size:12px;margin-top:4px}
-.finder-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
-.finder-fields label{display:grid;gap:6px;font-size:11px;font-weight:700;color:#44474d}
-.finder-fields select,.finder-fields input{min-height:44px;border:1px solid #d8dade;border-radius:10px;padding:0 12px;font-size:13px;background:#fff;color:var(--ink)}
-.finder-submit{width:100%;margin-top:14px}
-.finder-note{color:#83868c;font-size:11px;text-align:center;margin-top:10px}
-@media (width<=900px){.hero-grid{grid-template-columns:1fr}}
+.finder-bar{background:var(--ink-2);border-radius:20px;padding:26px 30px;margin-top:32px;display:grid;grid-template-columns:minmax(200px,.85fr) 2.3fr;gap:28px;align-items:center;min-width:0}
+.finder-bar-head{color:#fff;min-width:0}
+.finder-bar-head .kicker{color:#ff8890;margin-bottom:6px}
+.finder-bar-head h2{font-size:19px;margin:4px 0 6px}
+.finder-bar-head p{color:#9195a0;font-size:12px;line-height:1.5;margin:0}
+.finder-bar-fields{display:grid;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:12px;align-items:end;min-width:0}
+.finder-bar-fields label{display:grid;gap:6px;font-size:10.5px;font-weight:700;color:#c7cad0;min-width:0}
+.finder-bar-fields select,.finder-bar-fields input{min-height:44px;border:1px solid #33353b;border-radius:10px;padding:0 12px;font-size:12.5px;background:#101114;color:#fff;min-width:0}
+.finder-bar-submit{min-height:44px;white-space:nowrap;padding:0 22px}
+.finder-bar-note{grid-column:1/-1;color:#7d818a;font-size:10.5px;margin:10px 0 0;text-align:right}
+@media (width<=1180px){.finder-bar{grid-template-columns:1fr}.finder-bar-head{margin-bottom:16px}.finder-bar-fields{grid-template-columns:repeat(2,1fr)}.finder-bar-submit{grid-column:1/-1}.finder-bar-note{text-align:left}}
+@media (width<=640px){.finder-bar{padding:20px}.finder-bar-fields{grid-template-columns:1fr}}
 
 /* catalogue */
 .catalogue-toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:16px}
@@ -247,9 +249,9 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-copy{padding:22px 26px;color:#fff}
 .video-lead-copy h2{font-size:clamp(19px,2.2vw,24px);line-height:1.2;margin-top:6px}
 .video-lead-copy p{color:#b9bec8;font-size:12px;line-height:1.5;margin-top:8px}
-.video-lead-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:30px 32px;align-content:start;min-width:0}
+.video-lead-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:28px 32px;align-content:center;min-width:0}
 .video-lead-form label{grid-column:span 1;display:grid;gap:6px;font-size:11.5px;font-weight:700;color:#20242b}
-.video-lead-form label:first-child,.video-lead-form label:nth-child(2){grid-column:1/-1}
+.video-lead-form label.field-full{grid-column:1/-1}
 .video-lead-form input,.video-lead-form select{min-height:44px;border:1px solid #d5dbe4;border-radius:10px;padding:0 12px;font-size:13px;color:#17191e}
 .video-lead-submit{grid-column:1/-1;min-height:46px}
 .video-lead-note{grid-column:1/-1;text-align:center;color:#7b8492;font-size:12px;margin:0}
@@ -275,8 +277,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .branch-finder-left,.branch-finder-right{border:1px solid var(--line);border-radius:16px;padding:22px}
 .branch-finder-left h2{font-size:clamp(19px,2.2vw,24px);line-height:1.2;margin-top:6px}
 .branch-finder-left p{color:var(--muted);font-size:12.5px;line-height:1.6;margin-top:8px}
-.branch-finder-stats{display:flex;gap:10px;margin:16px 0}
-.branch-finder-stats span{background:var(--soft);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600}
 .branch-finder-total{font-size:20px;display:block;margin-top:6px}
 .branch-region-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
 .branch-region{border:1px solid var(--line);border-radius:12px;padding:12px;display:block;min-width:0}
@@ -316,8 +316,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <main id="noi-dung-chinh">
 
 <section class="hero">
-  <div class="shell hero-grid">
-    <div>
+  <div class="shell">
+    <div class="hero-copy">
       <span class="kicker">Auto365 · Bi gầm ô tô</span>
       <h1>Đèn bi gầm ô tô: bảng giá và cách chọn theo xe</h1>
       <p class="hero-lead">Bi gầm là cụm đèn projector lắp thấp phía trước ô tô để bổ sung vùng sáng gần và hai mép đường. Trước khi lắp cần đối chiếu hốc đèn, lens 2.0/3.0 inch, điện áp, pát và nhu cầu sử dụng — không nên chỉ nhìn theo giá hoặc công suất.</p>
@@ -336,17 +336,20 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
       </div>
     </div>
-    <form class="finder-card" id="tu-van-theo-xe">
-      <h2>Nhận tư vấn theo xe</h2>
-      <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
-      <div class="finder-fields">
+    <form class="finder-bar" id="tu-van-theo-xe">
+      <div class="finder-bar-head">
+        <span class="kicker">Kiểm tra nhanh</span>
+        <h2>Nhận tư vấn theo xe</h2>
+        <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
+      </div>
+      <div class="finder-bar-fields">
         <label>Hãng xe <select required><option value="">Chọn hãng</option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Mazda</option><option>Kia</option><option>Hyundai</option><option>Mitsubishi</option><option>Khác</option></select></label>
         <label>Dòng xe <input type="text" placeholder="VD: Vios, CR-V…"></label>
-        <label>Năm sản xuất (không bắt buộc) <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
+        <label>Năm sản xuất <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
         <label>Nhu cầu đi xe <select><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
+        <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
       </div>
-      <button type="submit" class="btn btn-primary finder-submit">Gửi yêu cầu tư vấn</button>
-      <p class="finder-note">Không cần để lại số điện thoại để xem thông tin chung.</p>
+      <p class="finder-bar-note">Không cần để lại số điện thoại để xem thông tin chung.</p>
     </form>
   </div>
 </section>
@@ -1074,7 +1077,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label>Số điện thoại <input type="tel" placeholder="Nhập số điện thoại" required></label>
         <label>Hãng xe (không bắt buộc) <input type="text" placeholder="Ví dụ: Mazda, Toyota"></label>
         <label>Dòng xe <input type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
-        <label>Nhu cầu <select><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
+        <label class="field-full">Nhu cầu <select><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
         <button type="submit" class="btn btn-primary video-lead-submit">Gửi thông tin tư vấn</button>
         <p class="video-lead-note">Hoặc gọi ngay <a href="tel:0365365911">0365 365 911</a></p>
       </form>
@@ -1352,10 +1355,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <span class="kicker">Hệ thống Auto365</span>
         <h2>Tìm điểm Auto365 phù hợp gần bạn</h2>
         <p>Chọn khu vực để xem danh sách cửa hàng, địa chỉ, dịch vụ và thông tin liên hệ từng điểm.</p>
-        <div class="branch-finder-stats">
-          <span>📍 92 điểm Auto365</span>
-          <span>🗺️ 33 tỉnh/thành</span>
-        </div>
         <a class="btn btn-primary" href="https://auto365.vn/he-thong" target="_blank" rel="noreferrer">Tìm điểm gần tôi &rarr;</a>
       </div>
       <div class="branch-finder-right">
@@ -1490,7 +1489,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var finderForm = document.getElementById('tu-van-theo-xe');
   finderForm.addEventListener('submit', function(e){
     e.preventDefault();
-    var btn = finderForm.querySelector('.finder-submit');
+    var btn = finderForm.querySelector('.finder-bar-submit');
     btn.textContent = 'Đã gửi — Auto365 sẽ liên hệ lại';
     btn.disabled = true;
   });
