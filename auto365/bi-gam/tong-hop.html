@@ -171,6 +171,10 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .mobile-filter-grid select{min-height:38px;border:1px solid #d8dade;border-radius:8px;padding:0 6px;font-size:10.5px;background:#fff;width:100%;min-width:0;text-overflow:ellipsis}
 #pf-sort{order:3}
 }
+@media (width<=640px){
+  #pf-sort{grid-column:1/-1;order:1}
+  .mobile-filter-grid{grid-column:1/-1;order:2}
+}
 
 
 /* pricing */
