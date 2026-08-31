@@ -237,15 +237,10 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.price-layout{grid-template-columns:1fr;gap:24px}}
 
 /* knowledge */
-.knowledge-block summary{cursor:pointer;list-style:none;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:0}
-.knowledge-block[open] summary{margin-bottom:24px}
-.knowledge-block summary::-webkit-details-marker{display:none}
-.knowledge-block summary .kicker{display:block}
-.knowledge-block summary h2{margin:0;font-size:clamp(22px,2.8vw,30px);line-height:1.2}
-.knowledge-block summary .kb-icon{width:11px;height:11px;border-right:2px solid var(--red);border-bottom:2px solid var(--red);transform:rotate(45deg);transition:transform .2s;flex:none;margin-bottom:10px}
-.knowledge-block[open] summary .kb-icon{transform:rotate(-135deg);margin-bottom:4px}
-.knowledge-block summary:hover h2{color:var(--red)}
-@media (width<=640px){.knowledge-block summary{align-items:center}.knowledge-block summary .kb-icon{margin-bottom:0}}
+.knowledge-block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px}
+.knowledge-block-head .kicker{display:block}
+.knowledge-block-head h2{margin:0;font-size:clamp(22px,2.8vw,30px);line-height:1.2}
+@media (width<=640px){.knowledge-block-head{align-items:center}}
 .knowledge-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:36px}
 .knowledge-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:transform .15s,box-shadow .15s}
 .knowledge-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(16,17,20,.07)}
@@ -1058,14 +1053,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
 <section class="section" id="kien-thuc">
   <div class="shell">
-    <details class="knowledge-block" open>
-      <summary>
+    <div class="knowledge-block">
+      <div class="knowledge-block-head">
         <div>
           <span class="kicker">Kiến thức chọn bi gầm</span>
           <h2>Sáu điều cần biết trước khi chọn bi gầm</h2>
         </div>
-        <span class="kb-icon"></span>
-      </summary>
+      </div>
       <div class="knowledge-grid">
         <article class="knowledge-card"><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
         <article class="knowledge-card"><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Đo hốc đèn trước khi chọn: lens 3.0 inch cần nhiều không gian hơn nhưng cho vùng sáng rộng và đều, phù hợp xe con phổ thông. Lens 2.0 inch nhỏ gọn, phù hợp hốc hẹp hoặc xe máy — nhưng đổi lại vùng sáng thường hẹp hơn.</p></article>
@@ -1094,7 +1088,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <a class="btn btn-primary js-open-consult" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
         </div>
       </div>
-    </details>
+    </div>
   </div>
 </section>
 
