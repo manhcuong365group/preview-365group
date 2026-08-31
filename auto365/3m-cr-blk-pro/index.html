@@ -428,6 +428,33 @@
       <img class="section-photo" src="/3m-cr-blk-pro/hinh/bang-gia.webp" alt="Bảng giá phim cách nhiệt 3M tại Auto365" loading="lazy" width="1024" height="683">
     </div></section>
 
+    
+    <section class="section consult-section" id="consult"><div class="container consult-grid">
+      <div class="section-heading"><div class="eyebrow dark-eyebrow"><span></span> Nhận tư vấn theo xe</div><h2>Gửi thông tin để được gợi ý cấu hình</h2><p>Để lại thông tin cơ bản. Nhân viên sẽ xác nhận model xe, kính nguyên bản, mã phim từng vị trí và báo giá trước khi thi công.</p><img class="consult-photo" src="/3m-cr-blk-pro/hinh/xe-honda-civic.webp" alt="Đội ngũ Auto365 tư vấn cấu hình phim 3M CR BLK Pro" loading="lazy" width="1200" height="800"></div>
+      <form class="consult-form" id="consultForm" method="post" action="/api/leads">
+        <h3 class="consult-form-title full-field">Nhận tư vấn miễn phí</h3>
+        <label>Họ và tên<input id="form-name" name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
+        <label>Số điện thoại<input id="form-phone" name="phone" type="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
+        <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input id="form-car" name="car_model" type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
+        <label>Tỉnh / thành phố<input id="form-province" name="province" type="text" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></label>
+        <label>Nhu cầu ưu tiên<select id="form-priority" name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option>Chưa chắc, cần tư vấn</option></select></label>
+        <label>Gói đang quan tâm<select id="form-package" name="package"><option>Chưa chắc, cần tư vấn</option><option>3M Ceramic Hybrid</option><option>3M Ceramic IR</option><option>3M Crystalline Hybrid</option><option>3M Crystalline CR BLK</option><option>3M Crystalline Hybrid PRO</option><option>3M Crystalline CR BLK PRO</option></select></label>
+        <label class="full-field">Nhu cầu thêm <small>(không bắt buộc)</small><textarea id="form-note" name="note" rows="2" placeholder="Đi đêm, cần riêng tư, có panorama..."></textarea></label>
+        <input id="form-honey" name="form-honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        <input id="form-config-code" name="config_code" type="hidden" value="CRP-SEDAN-40-35-15">
+        <input id="form-vehicle-group" name="vehicle_group" type="hidden" value="sedan">
+        <input id="form-panorama" name="panorama" type="hidden" value="no">
+        <input id="form-offer-price" name="offer_price" type="hidden" value="15500000">
+        <input id="form-policy-version" name="policy_version" type="hidden" value="2026-08-27">
+        <input id="form-consent-at" name="consent_at" type="hidden" value="">
+        <label class="form-consent full-field"><input id="form-consent" name="consent" type="checkbox" value="true" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener noreferrer">Chính sách bảo mật</a>.</label>
+        <button class="button button-gold full-field" type="submit">Gửi thông tin tư vấn</button>
+        <p class="form-status full-field" id="consultStatus" aria-live="polite"></p>
+        <small class="form-disclaimer full-field">Thông tin được gửi bảo mật đến Auto365 để tư vấn cấu hình, báo giá và lịch thi công khi cần.</small>
+        <p class="consult-hotline full-field">Hoặc gọi ngay <a href="tel:0365365365">0365 365 365</a></p>
+      </form>
+    </div></section>
+
     <section class="section cases-section" id="cases"><div class="container">
       <div class="section-heading split-heading"><div><div class="eyebrow light-eyebrow"><span></span> Xe thật • Sản phẩm thật</div><h2>Case CR BLK Pro tại Auto365</h2></div><p>Mỗi case đều có ảnh thi công thực tế, cấu hình chi tiết và dữ liệu cụ thể của chính chiếc xe đó.</p></div>
       
@@ -485,33 +512,6 @@
       <div class="faq-list"><details open><summary>CR BLK Pro có phải một mã phim riêng của 3M không?</summary><p>Không. Đây là tên gói cấu hình dịch vụ tại Auto365, sử dụng các mã thuộc dòng 3M Crystalline CR BLK. Cấu hình điển hình là 40/35/15.</p></details><details><summary>CR BLK Pro khác gói thường ở đâu?</summary><p>Khác biệt chính nằm ở kính lái: Pro thường dùng CR BLK 40, còn gói tiêu chuẩn dùng CR BLK 50/60. Phần sườn và kính lưng có thể cùng dùng 35/15.</p></details><details><summary>Đi đêm nhiều có nên dùng CR BLK 40 cho kính lái?</summary><p>CR BLK 40 có độ xuyên sáng thấp hơn CR BLK 50/60. Người đi đêm hoặc mưa thường xuyên nên xem mẫu, kiểm tra trên xe và cân nhắc mã sáng hơn trước khi chốt.</p></details><details><summary>Giá đã gồm cửa sổ trời panorama chưa?</summary><p>Chưa. Panorama được đo theo diện tích và báo giá riêng. Nếu xe có phim cũ, chi phí xử lý cũng cần được xác nhận trước khi thi công.</p></details><details><summary>Tôi không biết xe thuộc nhóm nào thì làm sao?</summary><p>Chỉ cần gửi tên xe, đời xe hoặc ảnh xe qua Zalo. Auto365 sẽ xác định nhóm giá và gửi lại cấu hình để anh/chị kiểm tra trước.</p></details><details><summary>Phim 3M CR BLK Pro có chống tia UV không?</summary><p>Các mã CR BLK trong cấu hình Pro có khả năng cản tia UV (UV Block 99,9% trong điều kiện TDS) theo tài liệu kỹ thuật 3M. Kết quả thực tế phụ thuộc kính nguyên bản, mã phim và điều kiện đo.</p></details><details><summary>Sau khi dán phim bao lâu có thể hạ kính?</summary><p>Thời gian ổn định phụ thuộc thời tiết và điều kiện thi công. Khách hàng nên tuân thủ hướng dẫn bàn giao của điểm thi công, đặc biệt trong những ngày đầu sau khi dán.</p></details><details><summary>Bảo hành eWarranty phim CR BLK Pro như thế nào?</summary><p>Các mã phim CR BLK trong cấu hình Pro được bảo hành 10 năm theo điều kiện 3M. Khi bàn giao, khách hàng nên đối chiếu đúng mã phim theo từng vị trí và kiểm tra thông tin eWarranty.</p></details></div>
     </div></section>
   </main>
-
-  
-    <section class="section consult-section" id="consult"><div class="container consult-grid">
-      <div class="section-heading"><div class="eyebrow dark-eyebrow"><span></span> Nhận tư vấn theo xe</div><h2>Gửi thông tin để được gợi ý cấu hình</h2><p>Để lại thông tin cơ bản. Nhân viên sẽ xác nhận model xe, kính nguyên bản, mã phim từng vị trí và báo giá trước khi thi công.</p><img class="consult-photo" src="/3m-cr-blk-pro/hinh/xe-honda-civic.webp" alt="Đội ngũ Auto365 tư vấn cấu hình phim 3M CR BLK Pro" loading="lazy" width="1200" height="800"></div>
-      <form class="consult-form" id="consultForm" method="post" action="/api/leads">
-        <h3 class="consult-form-title full-field">Nhận tư vấn miễn phí</h3>
-        <label>Họ và tên<input id="form-name" name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
-        <label>Số điện thoại<input id="form-phone" name="phone" type="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
-        <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input id="form-car" name="car_model" type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
-        <label>Tỉnh / thành phố<input id="form-province" name="province" type="text" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></label>
-        <label>Nhu cầu ưu tiên<select id="form-priority" name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option>Chưa chắc, cần tư vấn</option></select></label>
-        <label>Gói đang quan tâm<select id="form-package" name="package"><option>Chưa chắc, cần tư vấn</option><option>3M Ceramic Hybrid</option><option>3M Ceramic IR</option><option>3M Crystalline Hybrid</option><option>3M Crystalline CR BLK</option><option>3M Crystalline Hybrid PRO</option><option>3M Crystalline CR BLK PRO</option></select></label>
-        <label class="full-field">Nhu cầu thêm <small>(không bắt buộc)</small><textarea id="form-note" name="note" rows="2" placeholder="Đi đêm, cần riêng tư, có panorama..."></textarea></label>
-        <input id="form-honey" name="form-honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
-        <input id="form-config-code" name="config_code" type="hidden" value="CRP-SEDAN-40-35-15">
-        <input id="form-vehicle-group" name="vehicle_group" type="hidden" value="sedan">
-        <input id="form-panorama" name="panorama" type="hidden" value="no">
-        <input id="form-offer-price" name="offer_price" type="hidden" value="15500000">
-        <input id="form-policy-version" name="policy_version" type="hidden" value="2026-08-27">
-        <input id="form-consent-at" name="consent_at" type="hidden" value="">
-        <label class="form-consent full-field"><input id="form-consent" name="consent" type="checkbox" value="true" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener noreferrer">Chính sách bảo mật</a>.</label>
-        <button class="button button-gold full-field" type="submit">Gửi thông tin tư vấn</button>
-        <p class="form-status full-field" id="consultStatus" aria-live="polite"></p>
-        <small class="form-disclaimer full-field">Thông tin được gửi bảo mật đến Auto365 để tư vấn cấu hình, báo giá và lịch thi công khi cần.</small>
-        <p class="consult-hotline full-field">Hoặc gọi ngay <a href="tel:0365365365">0365 365 365</a></p>
-      </form>
-    </div></section>
 
     <footer><div class="container footer-grid"><div><strong>AUTO365</strong><span>Hệ thống nâng cấp xe toàn quốc</span><span>Hotline tư vấn: <a href="tel:0365365365">0365 365 365</a></span><span>Email: marketing@365group.com.vn</span><span>Giờ làm việc: 8:30–17:30</span><span>Trụ sở tham khảo: Số 4/4/1/7 Đường số 3, Phường Hiệp Bình, TP. Hồ Chí Minh</span></div><p>Thông tin và giá trên trang là mức tham khảo. Cấu hình cuối cùng cần được xác nhận theo kính nguyên bản, mẫu xe và nhu cầu sử dụng thực tế. Panorama và xử lý phim cũ báo giá riêng nếu phát sinh.</p><a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365">Chính sách bảo mật</a></div></footer>
 
