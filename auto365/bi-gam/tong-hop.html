@@ -370,15 +370,15 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
       </div>
       <div class="finder-bar-fields">
-        <label>Họ và tên <input type="text" placeholder="Nhập họ tên" required></label>
-        <label>Số điện thoại <input type="tel" placeholder="Nhập số điện thoại" required></label>
-        <label>Hãng xe <select required><option value="">Chọn hãng</option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Mazda</option><option>Kia</option><option>Hyundai</option><option>Mitsubishi</option><option>Khác</option></select></label>
-        <label>Dòng xe <input type="text" placeholder="VD: Vios, CR-V…"></label>
-        <label>Khu vực <select><option value="">Chọn khu vực</option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select></label>
-        <label>Nhu cầu đi xe <select><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
+        <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
+        <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
+        <label>Hãng xe <select name="car_brand" required><option value="">Chọn hãng</option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Mazda</option><option>Kia</option><option>Hyundai</option><option>Mitsubishi</option><option>Khác</option></select></label>
+        <label>Dòng xe <input type="text" name="car_model" placeholder="VD: Vios, CR-V…"></label>
+        <label>Khu vực <select name="region"><option value="">Chọn khu vực</option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select></label>
+        <label>Nhu cầu đi xe <select name="driving_need"><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
       </div>
-      <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
-      <p class="finder-bar-note">Auto365 chỉ dùng thông tin này để liên hệ tư vấn, không dùng cho mục đích khác.</p>
+      <button type="submit" class="btn btn-primary finder-bar-submit">Mở Zalo để gửi yêu cầu</button>
+      <p class="finder-bar-note">Nội dung được sao chép để bạn gửi trực tiếp qua Zalo; trang không tự gửi dữ liệu.</p>
     </form>
   </div>
 </section>
@@ -1106,14 +1106,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         </div>
       </div>
       <form class="video-lead-form" id="video-lead-form">
-        <label>Họ và tên <input type="text" placeholder="Nhập họ tên" required></label>
-        <label>Số điện thoại <input type="tel" placeholder="Nhập số điện thoại" required></label>
-        <label>Hãng xe (không bắt buộc) <input type="text" placeholder="Ví dụ: Mazda, Toyota"></label>
-        <label>Dòng xe (không bắt buộc) <input type="text" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
-        <label>Năm sản xuất (không bắt buộc) <select><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
-        <label>Nhu cầu <select><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
-        <button type="submit" class="btn btn-primary video-lead-submit">Gửi thông tin tư vấn</button>
-        <p class="video-lead-note">Hoặc gọi ngay <a href="tel:0365365911">0365 365 911</a></p>
+        <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
+        <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
+        <label>Hãng xe (không bắt buộc) <input type="text" name="car_brand" placeholder="Ví dụ: Mazda, Toyota"></label>
+        <label>Dòng xe (không bắt buộc) <input type="text" name="car_model" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
+        <label>Năm sản xuất (không bắt buộc) <select name="car_year"><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
+        <label>Nhu cầu <select name="driving_need"><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
+        <button type="submit" class="btn btn-primary video-lead-submit">Mở Zalo để gửi yêu cầu</button>
+        <p class="video-lead-note">Nội dung được sao chép để gửi qua Zalo · Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
       </form>
     </div>
   </div>
@@ -1309,7 +1309,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="warranty-lookup">
       <b style="color:#fff;font-size:12px">Tra cứu bảo hành</b>
       <input type="text" placeholder="Nhập mã đơn hoặc số điện thoại">
-      <button type="button" class="btn btn-outline">Tra cứu</button>
+      <button type="button" class="btn btn-outline" id="warranty-open">Tra cứu</button>
     </div>
   </div>
 </section>
@@ -1566,12 +1566,76 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
   apply();
 
+  function copyText(text){
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text).then(function(){ return true; }, function(){ return false; });
+    }
+    var helper = document.createElement('textarea');
+    helper.value = text;
+    helper.setAttribute('readonly', '');
+    helper.style.position = 'fixed';
+    helper.style.opacity = '0';
+    document.body.appendChild(helper);
+    helper.select();
+    var copied = false;
+    try { copied = document.execCommand('copy'); } catch (err) {}
+    document.body.removeChild(helper);
+    return Promise.resolve(copied);
+  }
+
+  function valueOf(form, name){
+    var field = form.elements.namedItem(name);
+    return field && field.value ? field.value.trim() : '';
+  }
+
+  function openZaloRequest(form, noteSelector){
+    var rows = [
+      'AUTO365 - YÊU CẦU TƯ VẤN BI GẦM',
+      'Họ tên: ' + valueOf(form, 'full_name'),
+      'Số điện thoại: ' + valueOf(form, 'phone'),
+      'Xe: ' + [valueOf(form, 'car_brand'), valueOf(form, 'car_model'), valueOf(form, 'car_year')].filter(Boolean).join(' '),
+      'Khu vực: ' + valueOf(form, 'region'),
+      'Nhu cầu: ' + valueOf(form, 'driving_need'),
+      'Vui lòng kiểm tra đời/phiên bản, hốc đèn, pát, điện áp và hệ dây trước khi chốt cấu hình.'
+    ].filter(function(row){ return !/: $/.test(row); });
+    var note = form.querySelector(noteSelector);
+    copyText(rows.join('\n')).then(function(copied){
+      if (!note) return;
+      note.textContent = copied
+        ? 'Đã sao chép nội dung. Hãy dán vào cửa sổ Zalo vừa mở.'
+        : 'Zalo đã mở. Trình duyệt không cho phép tự sao chép; vui lòng nhập nội dung trực tiếp.';
+    });
+    var zalo = document.createElement('a');
+    zalo.href = 'https://zalo.me/0365365911';
+    zalo.target = '_blank';
+    zalo.rel = 'noopener noreferrer';
+    zalo.click();
+  }
+
   var finderForm = document.getElementById('tu-van-theo-xe');
   finderForm.addEventListener('submit', function(e){
     e.preventDefault();
-    var btn = finderForm.querySelector('.finder-bar-submit');
-    btn.textContent = 'Đã gửi — Auto365 sẽ liên hệ lại';
-    btn.disabled = true;
+    if (!finderForm.reportValidity()) return;
+    openZaloRequest(finderForm, '.finder-bar-note');
+  });
+
+  var warrantyOpen = document.getElementById('warranty-open');
+  if (warrantyOpen) warrantyOpen.addEventListener('click', function(){
+    window.open('https://baohanh.365group.com.vn/', '_blank', 'noopener,noreferrer');
+  });
+
+  document.addEventListener('click', function(e){
+    var productConsult = e.target.closest('.btn-consult');
+    if (productConsult) copyText((productConsult.getAttribute('title') || '').replace(/\\n/g, '\n'));
+    var cta = e.target.closest('a[href^="tel:"], a[href*="zalo.me"], a.btn, button.btn');
+    if (!cta) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'cta_click',
+      cta_text: (cta.textContent || '').trim().replace(/\s+/g, ' '),
+      cta_href: cta.getAttribute('href') || '',
+      page_topic: 'bi-gam-o-to'
+    });
   });
 
   var caseFilter = document.getElementById('case-filter');
@@ -1590,9 +1654,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var videoForm = document.getElementById('video-lead-form');
   videoForm.addEventListener('submit', function(e){
     e.preventDefault();
-    var btn = videoForm.querySelector('.video-lead-submit');
-    btn.textContent = 'Đã gửi — Auto365 sẽ liên hệ lại';
-    btn.disabled = true;
+    if (!videoForm.reportValidity()) return;
+    openZaloRequest(videoForm, '.video-lead-note');
   });
 })();
 </script>
