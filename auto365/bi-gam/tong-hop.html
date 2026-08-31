@@ -165,11 +165,12 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .filter-group label{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:12.5px;color:#44474d;cursor:pointer}
 .filter-group input[type=checkbox]{width:15px;height:15px;min-width:0;min-height:0;flex:none;accent-color:var(--red);cursor:pointer}
 .mobile-filter-toggle{display:none}
+.mobile-filter-grid{display:none}
 @media (width<=900px){.catalogue-layout{grid-template-columns:1fr}
-.catalogue-sidebar{display:none;position:static;border-radius:14px;box-shadow:none;padding:16px;max-height:none;overflow-y:visible;margin-bottom:16px}
-.catalogue-sidebar.is-open{display:block}
-.mobile-filter-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;flex:1 0 100%;order:2;min-height:44px;padding:0 14px;border:1px solid #d8dade;border-radius:10px;background:#fff;font-size:12.5px;font-weight:700;cursor:pointer;color:var(--ink)}
-.mobile-filter-toggle span{color:var(--red);font-weight:700}
+.catalogue-sidebar{display:none!important}
+.mobile-filter-toggle{display:none!important}
+.mobile-filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1 0 100%;order:2}
+.mobile-filter-grid select{min-height:40px;border:1px solid #d8dade;border-radius:8px;padding:0 10px;font-size:12px;background:#fff;width:100%}
 #pf-sort{order:3}
 }
 
@@ -420,8 +421,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="catalogue-layout">
       <div class="catalogue-toolbar">
         <label class="search-box"><input type="text" id="pf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"></label>
-        <button type="button" class="mobile-filter-toggle" id="pf-mobile-toggle">Bộ lọc &amp; sắp xếp <span id="pf-toggle-label">Mở rộng</span></button>
         <select id="pf-sort"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select>
+        <div class="mobile-filter-grid">
+          <select id="mf-brand"><option value="">Tất cả thương hiệu</option><option value="X-Light">X-Light</option><option value="GTR">GTR</option><option value="AES">AES</option><option value="Henvvei">Henvvei</option></select>
+          <select id="mf-lens"><option value="">Mọi kích thước lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select>
+          <select id="mf-color"><option value="">Mọi nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="5500K">5500K</option><option value="__ALL3__">3 nhiệt màu</option></select>
+          <select id="mf-need"><option value="">Mọi nhu cầu</option><option value="city,mixed">Đi phố</option><option value="rain">Mưa / sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select>
+        </div>
       </div>
       <aside class="catalogue-sidebar" id="catalogue-sidebar">
         <div class="sidebar-head"><b>Lọc bi gầm</b><button type="button" id="pf-clear">Xóa tất cả</button></div>
@@ -1634,11 +1640,21 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     search.value = '';
     shown = PAGE_SIZE; apply();
   });
-  var toggleLabel = document.getElementById('pf-toggle-label');
-  if (mobileToggle) mobileToggle.addEventListener('click', function(){
-    var isOpen = sidebar.classList.toggle('is-open');
-    if (toggleLabel) toggleLabel.textContent = isOpen ? 'Thu gọn' : 'Mở rộng';
-  });
+  function syncSingleSelect(sel, boxes){
+    sel.addEventListener('change', function(){
+      boxes.forEach(function(b){ b.checked = (b.value === sel.value); });
+      shown = PAGE_SIZE; apply();
+    });
+  }
+  var mfBrand = document.getElementById('mf-brand');
+  var mfLens = document.getElementById('mf-lens');
+  var mfColor = document.getElementById('mf-color');
+  var mfNeed = document.getElementById('mf-need');
+  if (mfBrand) syncSingleSelect(mfBrand, brandBoxes);
+  if (mfLens) syncSingleSelect(mfLens, lensBoxes);
+  if (mfColor) syncSingleSelect(mfColor, colorBoxes);
+  if (mfNeed) syncSingleSelect(mfNeed, needBoxes);
+
   moreBtn.addEventListener('click', function(){ shown += PAGE_SIZE; apply(); });
   window.addEventListener('resize', apply);
 
