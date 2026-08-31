@@ -81,7 +81,9 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.qs-row{grid-template-columns:1fr}}
 .qs-reco{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
 .qs-reco[hidden]{display:none}
-.qs-result{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start}
+.qs-result-list{display:flex;flex-direction:column;gap:16px}
+.qs-result{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.qs-result:last-child{padding-bottom:0;border-bottom:0}
 .qs-result img{width:96px;height:96px;object-fit:contain;background:var(--soft);border-radius:10px}
 .qs-result-name{font-size:15px;font-weight:800;color:var(--ink)}
 .qs-result-price{color:var(--red);font-weight:700;font-size:16px;margin:2px 0 8px}
@@ -457,6 +459,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <h2>Các mẫu bi gầm tại Auto365</h2>
       <p>Lọc theo thương hiệu, kích thước lens, điện áp và sắp xếp theo giá.</p>
     </div>
+    <figure class="article-image">
+      <img src="hinh/aes-sv-30-pro-infographic.webp" alt="Bi gầm AES SV 3.0 Pro: mắt trợ pha, 6 chip LED lớn, giá niêm yết 5.500.000đ/bộ" width="1400" height="640" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>AES SV 3.0 Pro</h3><p>5.500.000đ · Bảo hành 24 tháng</p></div>
+        <a class="btn btn-outline" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+      </figcaption>
+    </figure>
     <div class="catalogue-layout">
       <div class="catalogue-toolbar">
         <label class="search-box"><input type="text" id="pf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"></label>
@@ -1038,13 +1047,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <div class="price-step"><span>04</span><div><b>Công lắp / cân chỉnh</b><p>Theo phương án thi công</p></div></div>
       <div class="price-final">Tổng giá được chốt sau khi kiểm tra xe.</div>
     </div>
-    <figure class="article-image" style="grid-column:1/-1">
-      <img src="hinh/aes-sv-30-pro-infographic.webp" alt="Bi gầm AES SV 3.0 Pro: mắt trợ pha, 6 chip LED lớn, giá niêm yết 5.500.000đ/bộ" width="1400" height="640" loading="lazy" decoding="async">
-      <figcaption>
-        <div><h3>AES SV 3.0 Pro</h3><p>5.500.000đ · Bảo hành 24 tháng</p></div>
-        <a class="btn btn-outline" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      </figcaption>
-    </figure>
   </div>
 </section>
 
@@ -1078,13 +1080,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <article class="solution-card"><small>Module lắp độc lập</small><h3>Đèn gầm dạng rời</h3><p>Lắp bằng pát riêng; cấu tạo và phương án lắp không mặc định giống bi gầm trong hốc nguyên bản.</p></article>
         <article class="solution-card"><small>Nhóm bổ sung riêng</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p></article>
       </div>
-      <figure class="article-image">
-        <img src="hinh/xlight-f30-ultra-infographic.webp" alt="X-Light F30 Ultra: đèn gầm dạng rời, lắp không can thiệp đèn zin, chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
-        <figcaption>
-          <div><h3>X-Light F30 Ultra <span style="color:var(--muted);font-weight:400">(đèn gầm dạng rời)</span></h3><p>4.800.000đ · Lắp bằng pát riêng, không can thiệp đèn zin</p></div>
-          <a class="btn btn-outline" href="https://auto365.vn/x-light-f30-ultra" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-        </figcaption>
-      </figure>
       <div class="cta-strip">
         <p>Còn phân vân về lens, nhiệt màu hay điện áp?<span>Gọi kỹ thuật Auto365 để được tư vấn theo đúng xe.</span></p>
         <div class="cta-strip-actions">
@@ -1129,27 +1124,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <a class="btn btn-outline" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
       </figcaption>
     </figure>
-  </div>
-</section>
-
-<section class="section soft" id="quickselect">
-  <div class="shell">
-    <div class="section-head">
-      <span class="kicker">Chọn nhanh</span>
-      <h2>Chọn cấu hình đèn phù hợp trong 15 giây</h2>
-      <p>Chọn nhu cầu, lens và ngân sách — hệ thống đề xuất một mẫu tham khảo từ 30 sản phẩm đang có; cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.</p>
-    </div>
-    <div class="qs-bar">
-      <div class="qs-row">
-        <div class="qs-col"><label for="qs-need">1. Nhu cầu chính</label><select id="qs-need"><option value="">Chọn nhu cầu…</option><option value="city,mixed">Đi phố + đi tỉnh</option><option value="rain">Mưa, sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select></div>
-        <div class="qs-col"><label for="qs-lens">2. Kích thước lens</label><select id="qs-lens"><option value="">Chưa rõ / để hệ thống chọn</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select></div>
-        <div class="qs-col"><label for="qs-budget">3. Ngân sách</label><select id="qs-budget"><option value="">Chưa xác định</option><option value="under4">Dưới 4 triệu</option><option value="4to6">4–6 triệu</option><option value="over6">Trên 6 triệu</option></select></div>
-      </div>
-      <button type="button" class="btn btn-primary qs-submit" id="qs-submit">Tìm sản phẩm phù hợp</button>
-      <div class="qs-reco" id="qs-reco" hidden>
-        <div class="qs-result" id="qs-result"></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1288,6 +1262,27 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
         <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
         <a class="btn btn-primary js-open-consult" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="quickselect">
+  <div class="shell">
+    <div class="section-head">
+      <span class="kicker">Chọn nhanh</span>
+      <h2>Chọn cấu hình đèn phù hợp trong 15 giây</h2>
+      <p>Chọn nhu cầu, lens và ngân sách — hệ thống đề xuất một mẫu tham khảo từ 30 sản phẩm đang có; cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.</p>
+    </div>
+    <div class="qs-bar">
+      <div class="qs-row">
+        <div class="qs-col"><label for="qs-need">1. Nhu cầu chính</label><select id="qs-need"><option value="">Chọn nhu cầu…</option><option value="city,mixed">Đi phố + đi tỉnh</option><option value="rain">Mưa, sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select></div>
+        <div class="qs-col"><label for="qs-lens">2. Kích thước lens</label><select id="qs-lens"><option value="">Chưa rõ / để hệ thống chọn</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select></div>
+        <div class="qs-col"><label for="qs-budget">3. Ngân sách</label><select id="qs-budget"><option value="">Chưa xác định</option><option value="under4">Dưới 4 triệu</option><option value="4to6">4–6 triệu</option><option value="over6">Trên 6 triệu</option></select></div>
+      </div>
+      <button type="button" class="btn btn-primary qs-submit" id="qs-submit">Tìm sản phẩm phù hợp</button>
+      <div class="qs-reco" id="qs-reco" hidden>
+        <div class="qs-result-list" id="qs-result"></div>
       </div>
     </div>
   </div>
@@ -1887,29 +1882,33 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
       return;
     }
-    var best = matched[0];
-    var img = best.querySelector('.product-image img');
-    var nameLink = best.querySelector('h3 a');
-    var price = best.querySelector('.product-price').textContent;
+    var picks = matched.slice(0, 3);
     var reasons = [];
     if (needVal) reasons.push('đúng nhu cầu đã chọn');
     if (lensVal && !relaxedLens) reasons.push('lens ' + lensVal + ' inch');
     if (budgetVal && !relaxedBudget) reasons.push('trong tầm ngân sách');
-    var reasonText = reasons.length ? ('Phù hợp với ' + reasons.join(', ') + '.') : 'Gợi ý mức giá thấp nhất trong danh mục hiện có.';
-    if (relaxedLens) reasonText += ' Chưa có mẫu đúng lens đã chọn — đây là gợi ý gần nhất theo nhu cầu.';
-    else if (relaxedBudget) reasonText += ' Chưa có mẫu đúng ngân sách đã chọn — đây là gợi ý gần nhất.';
-    var zaloTitle = ('Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href).replace(/"/g, '&quot;');
-    qsResultBox.innerHTML =
-      '<img src="' + img.src + '" alt="' + img.alt + '">' +
-      '<div>' +
-        '<div class="qs-result-name">' + nameLink.textContent + '</div>' +
-        '<div class="qs-result-price">' + price + '</div>' +
-        '<p class="qs-result-reason">' + reasonText + ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.</p>' +
-        '<div class="qs-result-actions">' +
-          '<a class="btn btn-outline" href="' + nameLink.href + '" target="_blank" rel="noreferrer">Xem sản phẩm</a>' +
-          '<a class="btn btn-primary qs-consult" data-title="' + zaloTitle + '" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Tư vấn sản phẩm này</a>' +
+    var baseReason = reasons.length ? ('Phù hợp với ' + reasons.join(', ') + '.') : 'Gợi ý theo mức giá thấp nhất trong danh mục hiện có.';
+    if (relaxedLens) baseReason += ' Chưa có mẫu đúng lens đã chọn — đây là các gợi ý gần nhất theo nhu cầu.';
+    else if (relaxedBudget) baseReason += ' Chưa có mẫu đúng ngân sách đã chọn — đây là các gợi ý gần nhất.';
+    qsResultBox.innerHTML = picks.map(function(card, i){
+      var img = card.querySelector('.product-image img');
+      var nameLink = card.querySelector('h3 a');
+      var price = card.querySelector('.product-price').textContent;
+      var reasonText = i === 0 ? baseReason : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác.';
+      var zaloTitle = ('Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href).replace(/"/g, '&quot;');
+      return '<div class="qs-result">' +
+        '<img src="' + img.src + '" alt="' + img.alt + '">' +
+        '<div>' +
+          '<div class="qs-result-name">' + nameLink.textContent + '</div>' +
+          '<div class="qs-result-price">' + price + '</div>' +
+          '<p class="qs-result-reason">' + reasonText + (i === 0 ? ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.' : '') + '</p>' +
+          '<div class="qs-result-actions">' +
+            '<a class="btn btn-outline" href="' + nameLink.href + '" target="_blank" rel="noreferrer">Xem sản phẩm</a>' +
+            '<a class="btn btn-primary qs-consult" data-title="' + zaloTitle + '" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Tư vấn sản phẩm này</a>' +
+          '</div>' +
         '</div>' +
       '</div>';
+    }).join('');
     qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
   });
 
