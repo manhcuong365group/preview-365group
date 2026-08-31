@@ -119,6 +119,14 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .product-actions{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:14px}
 .btn-view{flex:1;background:var(--red);color:#fff;border-radius:9px;min-height:40px;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 6px}
 .catalogue-more{display:flex;justify-content:center;margin-top:20px}
+.infographic-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.infographic-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.infographic-card img{width:100%;height:auto;display:block;background:#0b0c0f}
+.infographic-card-body{padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.infographic-card-body h3{font-size:14px;margin:0 0 2px}
+.infographic-card-body p{color:var(--muted);font-size:11.5px;margin:0}
+.infographic-card-body .btn{flex:none}
+@media (width<=900px){.infographic-gallery{grid-template-columns:1fr}}
 .compare-toggle{flex:none;display:flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:1px solid #d8dade;border-radius:9px;font-size:11px;font-weight:600;color:#44474d;cursor:pointer;white-space:nowrap}
 .compare-toggle input{width:14px;height:14px;flex:none;accent-color:var(--red);cursor:pointer}
 .compare-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ink-2);border-top:1px solid #2c2e33;padding:12px 16px;display:none;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
@@ -357,19 +365,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-note a{color:var(--red);font-weight:700}
 @media (width<=900px){.video-lead-card{grid-template-columns:1fr}.video-lead-form{grid-template-columns:1fr 1fr}}
 @media (width<=640px){.video-lead-form{padding:20px 18px;grid-template-columns:1fr}.video-lead-form label{grid-column:1/-1}.video-lead-copy{padding:18px 20px}}
-
-/* guide cluster */
-.guide-cluster{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
-.guide-cluster-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;display:block;transition:transform .15s,box-shadow .15s}
-.guide-cluster-card:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(16,17,20,.08)}
-.gc-tag{color:var(--red);font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
-.guide-cluster-card h3{font-size:13.5px;line-height:1.3;margin:8px 0 6px;font-weight:700}
-.guide-cluster-card p{color:#70747b;font-size:11px;line-height:1.5;margin:0}
-@media (width<=900px){.guide-cluster{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media (width<=640px){
-  .guide-cluster{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:70vw;overflow-x:auto;overflow-y:hidden;padding-bottom:6px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-  .guide-cluster-card{scroll-snap-align:start;min-width:0}
-}
 
 /* branch finder */
 .branch-finder-card{display:grid;grid-template-columns:1fr 1.2fr;gap:16px}
@@ -1021,6 +1016,46 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </section>
 
+<section class="section soft" id="hinh-anh-san-pham">
+  <div class="shell">
+    <div class="section-head">
+      <span class="kicker">Hình ảnh sản phẩm</span>
+      <h2>Cấu tạo và thông số theo từng mẫu</h2>
+      <p>Ảnh kỹ thuật từ nhà sản xuất, thể hiện chip LED, hệ tản nhiệt và khả năng chống nước IP68 của từng mẫu đang bán tại Auto365.</p>
+    </div>
+    <div class="infographic-gallery">
+      <div class="infographic-card">
+        <img src="hinh/aes-sv-30-pro-infographic.webp" alt="Cấu tạo bi gầm AES SV 3.0 Pro: mắt trợ pha và 6 chip LED lớn" width="1400" height="640" loading="lazy" decoding="async">
+        <div class="infographic-card-body">
+          <div><h3>AES SV 3.0 Pro</h3><p>5.500.000đ · Bảo hành 24 tháng</p></div>
+          <a class="btn btn-outline" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+        </div>
+      </div>
+      <div class="infographic-card">
+        <img src="hinh/gtr-g1-turbo-v2-infographic.webp" alt="Cấu tạo bi gầm GTR G1 Turbo V2: tản nhiệt, chip LED và chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
+        <div class="infographic-card-body">
+          <div><h3>GTR G1 Turbo V2</h3><p>6.000.000đ · Bảo hành 24 tháng</p></div>
+          <a class="btn btn-outline" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+        </div>
+      </div>
+      <div class="infographic-card">
+        <img src="hinh/xlight-301-v2-infographic.webp" alt="Cấu tạo bi gầm X-Light 301 V2: chip LED, hệ tản nhiệt và chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
+        <div class="infographic-card-body">
+          <div><h3>X-Light 301 V2</h3><p>4.500.000đ · Bảo hành 24 tháng</p></div>
+          <a class="btn btn-outline" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+        </div>
+      </div>
+      <div class="infographic-card">
+        <img src="hinh/xlight-f30-ultra-infographic.webp" alt="Cấu tạo X-Light F30 Ultra: đèn gầm dạng rời, chống nước IP68, lắp không can thiệp đèn zin" width="1400" height="1050" loading="lazy" decoding="async">
+        <div class="infographic-card-body">
+          <div><h3>X-Light F30 Ultra <span style="color:var(--muted);font-weight:400">(dạng rời)</span></h3><p>4.800.000đ · Lắp không can thiệp đèn zin</p></div>
+          <a class="btn btn-outline" href="https://auto365.vn/x-light-f30-ultra" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section dark" id="gia-chi-phi">
   <div class="shell price-layout">
     <div>
@@ -1111,28 +1146,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <button type="submit" class="btn btn-primary video-lead-submit">Gửi yêu cầu tư vấn</button>
         <p class="video-lead-note">Nội dung được sao chép để gửi qua Zalo · Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
       </form>
-    </div>
-  </div>
-</section>
-
-<section class="section soft" id="huong-dan-lien-quan">
-  <div class="shell">
-    <div class="section-head">
-      <span class="kicker">Hướng dẫn liên quan</span>
-      <h2>Đọc tiếp theo đúng câu hỏi cần giải quyết</h2>
-      <p>Khoảng giá hiện hành được trình bày ngay tại bảng giá trên trang này. Các hướng dẫn dưới đây đi sâu vào quyết định, kỹ thuật, pháp lý, tương thích theo xe và case lắp thực tế.</p>
-    </div>
-    <div class="guide-cluster">
-      <a class="guide-cluster-card" href="#gia-chi-phi"><span class="gc-tag">Quyết định</span><h3>Có nên độ bi gầm cho ô tô?</h3><p>Xác định khi nào thật sự cần nâng cấp trước khi chọn sản phẩm.</p></a>
-      <a class="guide-cluster-card" href="#san-pham"><span class="gc-tag">Loại nào tốt</span><h3>Tiêu chí chọn bi gầm ô tô tốt</h3><p>Đọc theo nhu cầu và điều kiện xe, không xếp hạng tuyệt đối.</p></a>
-      <a class="guide-cluster-card" href="#kien-thuc"><span class="gc-tag">Hướng dẫn</span><h3>Hướng dẫn lựa chọn bi gầm</h3><p>Đi từ hốc đèn, lens, điện áp đến nhiệt màu và cách lắp.</p></a>
-      <a class="guide-cluster-card" href="#kien-thuc"><span class="gc-tag">Hốc nhỏ</span><h3>Hốc đèn gầm nhỏ nên chọn loại nào?</h3><p>Tuyến gợi ý cho bài toán lens 2.0 inch và không gian lắp.</p></a>
-      <a class="guide-cluster-card" href="#kien-thuc"><span class="gc-tag">Mưa, sương</span><h3>Dải sáng rộng hay chiếu xa?</h3><p>Phân biệt mục tiêu quan sát trong điều kiện thời tiết xấu.</p></a>
-      <a class="guide-cluster-card" href="#gia-chi-phi"><span class="gc-tag">Hệ điện</span><h3>Lưu ý để không ảnh hưởng hệ thống điện</h3><p>Kiểm tra giắc, relay, nguồn và cách đi dây trước khi thi công.</p></a>
-      <a class="guide-cluster-card" href="#quy-trinh"><span class="gc-tag">Bảo dưỡng</span><h3>Bảo dưỡng đèn bi gầm ô tô</h3><p>Xử lý sương sáng, hơi ẩm và các dấu hiệu cần kiểm tra.</p></a>
-      <a class="guide-cluster-card" href="#faq"><span class="gc-tag">Pháp lý</span><h3>Nghị định 168 và tình trạng kiểm định</h3><p>Đọc đúng phạm vi quy định trước khi phản đối kiểm định.</p></a>
-      <a class="guide-cluster-card js-open-consult" href="#tu-van-theo-xe"><span class="gc-tag">Theo dòng xe</span><h3>Tư vấn độ đèn theo từng dòng xe</h3><p>Tìm case và câu hỏi theo hãng, dòng và đời xe của bạn.</p></a>
-      <a class="guide-cluster-card" href="#case-thuc-te"><span class="gc-tag">Case thực</span><h3>Mazda 6 lắp F10 Turbo V2 4300K</h3><p>Case có cấu hình, ảnh thực tế, giá và hồ sơ lắp rõ ràng.</p></a>
     </div>
   </div>
 </section>
