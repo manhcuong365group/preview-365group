@@ -119,14 +119,14 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .product-actions{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:14px}
 .btn-view{flex:1;background:var(--red);color:#fff;border-radius:9px;min-height:40px;display:flex;align-items:center;justify-content:center;font-size:11.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 6px}
 .catalogue-more{display:flex;justify-content:center;margin-top:20px}
-.infographic-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.infographic-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
-.infographic-card img{width:100%;height:auto;display:block;background:#0b0c0f}
-.infographic-card-body{padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.infographic-card-body h3{font-size:14px;margin:0 0 2px}
-.infographic-card-body p{color:var(--muted);font-size:11.5px;margin:0}
-.infographic-card-body .btn{flex:none}
-@media (width<=900px){.infographic-gallery{grid-template-columns:1fr}}
+.article-image{margin:28px 0 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.article-image img{width:100%;height:auto;display:block;background:#0b0c0f}
+.article-image figcaption{padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.article-image figcaption h3{font-size:13.5px;margin:0 0 2px}
+.article-image figcaption p{color:var(--muted);font-size:11.5px;margin:0}
+.article-image figcaption .btn{flex:none}
+.dark .article-image{border-color:#33363d;background:#20232a}
+.dark .article-image figcaption p{color:#9195a0}
 .compare-toggle{flex:none;display:flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:1px solid #d8dade;border-radius:9px;font-size:11px;font-weight:600;color:#44474d;cursor:pointer;white-space:nowrap}
 .compare-toggle input{width:14px;height:14px;flex:none;accent-color:var(--red);cursor:pointer}
 .compare-bar{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--ink-2);border-top:1px solid #2c2e33;padding:12px 16px;display:none;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
@@ -1016,45 +1016,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </section>
 
-<section class="section soft" id="hinh-anh-san-pham">
-  <div class="shell">
-    <div class="section-head">
-      <span class="kicker">Hình ảnh sản phẩm</span>
-      <h2>Cấu tạo và thông số theo từng mẫu</h2>
-      <p>Ảnh kỹ thuật từ nhà sản xuất, thể hiện chip LED, hệ tản nhiệt và khả năng chống nước IP68 của từng mẫu đang bán tại Auto365.</p>
-    </div>
-    <div class="infographic-gallery">
-      <div class="infographic-card">
-        <img src="hinh/aes-sv-30-pro-infographic.webp" alt="Cấu tạo bi gầm AES SV 3.0 Pro: mắt trợ pha và 6 chip LED lớn" width="1400" height="640" loading="lazy" decoding="async">
-        <div class="infographic-card-body">
-          <div><h3>AES SV 3.0 Pro</h3><p>5.500.000đ · Bảo hành 24 tháng</p></div>
-          <a class="btn btn-outline" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-        </div>
-      </div>
-      <div class="infographic-card">
-        <img src="hinh/gtr-g1-turbo-v2-infographic.webp" alt="Cấu tạo bi gầm GTR G1 Turbo V2: tản nhiệt, chip LED và chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
-        <div class="infographic-card-body">
-          <div><h3>GTR G1 Turbo V2</h3><p>6.000.000đ · Bảo hành 24 tháng</p></div>
-          <a class="btn btn-outline" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-        </div>
-      </div>
-      <div class="infographic-card">
-        <img src="hinh/xlight-301-v2-infographic.webp" alt="Cấu tạo bi gầm X-Light 301 V2: chip LED, hệ tản nhiệt và chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
-        <div class="infographic-card-body">
-          <div><h3>X-Light 301 V2</h3><p>4.500.000đ · Bảo hành 24 tháng</p></div>
-          <a class="btn btn-outline" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-        </div>
-      </div>
-      <div class="infographic-card">
-        <img src="hinh/xlight-f30-ultra-infographic.webp" alt="Cấu tạo X-Light F30 Ultra: đèn gầm dạng rời, chống nước IP68, lắp không can thiệp đèn zin" width="1400" height="1050" loading="lazy" decoding="async">
-        <div class="infographic-card-body">
-          <div><h3>X-Light F30 Ultra <span style="color:var(--muted);font-weight:400">(dạng rời)</span></h3><p>4.800.000đ · Lắp không can thiệp đèn zin</p></div>
-          <a class="btn btn-outline" href="https://auto365.vn/x-light-f30-ultra" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section dark" id="gia-chi-phi">
   <div class="shell price-layout">
@@ -1077,6 +1038,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <div class="price-step"><span>04</span><div><b>Công lắp / cân chỉnh</b><p>Theo phương án thi công</p></div></div>
       <div class="price-final">Tổng giá được chốt sau khi kiểm tra xe.</div>
     </div>
+    <figure class="article-image" style="grid-column:1/-1">
+      <img src="hinh/aes-sv-30-pro-infographic.webp" alt="Bi gầm AES SV 3.0 Pro: mắt trợ pha, 6 chip LED lớn, giá niêm yết 5.500.000đ/bộ" width="1400" height="640" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>AES SV 3.0 Pro</h3><p>5.500.000đ · Bảo hành 24 tháng</p></div>
+        <a class="btn btn-outline" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -1110,6 +1078,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <article class="solution-card"><small>Module lắp độc lập</small><h3>Đèn gầm dạng rời</h3><p>Lắp bằng pát riêng; cấu tạo và phương án lắp không mặc định giống bi gầm trong hốc nguyên bản.</p></article>
         <article class="solution-card"><small>Nhóm bổ sung riêng</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p></article>
       </div>
+      <figure class="article-image">
+        <img src="hinh/xlight-f30-ultra-infographic.webp" alt="X-Light F30 Ultra: đèn gầm dạng rời, lắp không can thiệp đèn zin, chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
+        <figcaption>
+          <div><h3>X-Light F30 Ultra <span style="color:var(--muted);font-weight:400">(đèn gầm dạng rời)</span></h3><p>4.800.000đ · Lắp bằng pát riêng, không can thiệp đèn zin</p></div>
+          <a class="btn btn-outline" href="https://auto365.vn/x-light-f30-ultra" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+        </figcaption>
+      </figure>
       <div class="cta-strip">
         <p>Còn phân vân về lens, nhiệt màu hay điện áp?<span>Gọi kỹ thuật Auto365 để được tư vấn theo đúng xe.</span></p>
         <div class="cta-strip-actions">
@@ -1147,6 +1122,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <p class="video-lead-note">Nội dung được sao chép để gửi qua Zalo · Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
       </form>
     </div>
+    <figure class="article-image">
+      <img src="hinh/gtr-g1-turbo-v2-infographic.webp" alt="Bi gầm GTR G1 Turbo V2: cấu hình 6 chip LED lớn + 1 + 1, tản nhiệt quạt kép, chống nước IP68" width="1400" height="1050" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>Bi gầm GTR G1 Turbo V2</h3><p>Sản phẩm trong video unbox phía trên · 6.000.000đ</p></div>
+        <a class="btn btn-outline" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -1325,6 +1307,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <article class="why-card"><span>05</span><h3>Nhà phân phối chính thức, thuộc hệ sinh thái 365Group</h3><p>Phân phối các thương hiệu đèn uy tín như X-Light, GTR, AES, Henvvei — nguồn gốc rõ ràng, chính sách bảo hành minh bạch.</p></article>
       <article class="why-card"><span>06</span><h3>Bảo hành rõ ràng, nhiều ưu đãi hậu mãi</h3><p>Sản phẩm bảo hành đến 24 tháng theo từng dòng; thường xuyên có chương trình khuyến mãi và hậu mãi cho khách hàng đã lắp.</p></article>
     </div>
+    <figure class="article-image">
+      <img src="hinh/xlight-301-v2-infographic.webp" alt="Bi gầm X-Light 301 V2: chip LED lớn, hệ tản nhiệt và chống nước IP68, bảo hành chính hãng 2 năm" width="1400" height="1050" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>X-Light 301 V2</h3><p>4.500.000đ · Bảo hành 24 tháng</p></div>
+        <a class="btn btn-outline" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
+      </figcaption>
+    </figure>
     <div class="cta-strip">
       <p>Sẵn sàng lắp bi gầm đúng cấu hình cho xe của bạn?<span>Gọi, chat Zalo hoặc để lại thông tin để được tư vấn nhanh.</span></p>
       <div class="cta-strip-actions">
