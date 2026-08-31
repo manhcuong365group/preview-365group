@@ -212,7 +212,12 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .solution-card h3{font-size:13.5px;font-weight:700;margin:8px 0 6px;color:var(--ink)}
 .solution-card p{color:#70747b;font-size:11.5px;line-height:1.6;margin:0}
 @media (width<=900px){.knowledge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.solution-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (width<=640px){.knowledge-grid{grid-template-columns:1fr}.solution-grid{grid-template-columns:1fr}}
+@media (width<=640px){
+  .knowledge-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:82vw;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .knowledge-grid .knowledge-card{scroll-snap-align:start;min-width:0}
+  .solution-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:70vw;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+  .solution-grid .solution-card{scroll-snap-align:start;min-width:0}
+}
 
 /* why choose */
 .why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
@@ -1001,30 +1006,35 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
 <section class="section" id="kien-thuc">
   <div class="shell">
-    <div class="section-head">
-      <span class="kicker">Kiến thức chọn bi gầm</span>
-      <h2>Sáu điều cần biết trước khi chọn bi gầm</h2>
-    </div>
-    <div class="knowledge-grid">
-      <article class="knowledge-card"><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
-      <article class="knowledge-card"><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></article>
-      <article class="knowledge-card"><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3><p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p></article>
-      <article class="knowledge-card"><h3>Cos, pha và cutoff cần xem gì?</h3><p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p></article>
-      <article class="knowledge-card"><h3>Hốc đèn và hệ điện cần kiểm tra gì?</h3><p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p></article>
-      <article class="knowledge-card"><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p></article>
-    </div>
-    <div class="knowledge-subhead">
-      <h3>Bi gầm khác gì các giải pháp ánh sáng khác?</h3>
-      <p>"Bi gầm" và "đèn gầm" được dùng cho cùng nhóm sản phẩm trong trang này. Các lựa chọn dưới đây khác nhau ở vị trí lắp, vai trò chiếu sáng và mức độ can thiệp vào xe.</p>
-    </div>
-    <div class="solution-grid">
-      <article class="solution-card"><small>Vị trí thấp phía trước xe</small><h3>Bi gầm / đèn gầm</h3><p>Cụm projector có lens, thường lắp tại hốc đèn gầm — bổ sung vùng sáng gần và hai mép đường.</p></article>
-      <article class="solution-card"><small>Cụm đèn pha chính</small><h3>Bi LED</h3><p>Giải pháp nâng cấp cho cụm đèn pha chính, khác vị trí và mức can thiệp so với bi gầm.</p></article>
-      <article class="solution-card"><small>Công nghệ nguyên bản</small><h3>Halogen zin</h3><p>Đèn pha/cos nguyên bản của xe, thường có cấu hình và vùng sáng khác — cần đánh giá nền tảng xe trước khi thay đổi.</p></article>
-      <article class="solution-card"><small>Cụm nguyên bản của xe</small><h3>Đèn sương mù nguyên bản</h3><p>Thường là cụm đèn vị trí thấp theo thiết kế xe. Không phải đèn sương mù nguyên bản nào cũng là bi gầm hoặc projector.</p></article>
-      <article class="solution-card"><small>Module lắp độc lập</small><h3>Đèn gầm dạng rời</h3><p>Lắp bằng pát riêng; cấu tạo và phương án lắp không mặc định giống bi gầm trong hốc nguyên bản.</p></article>
-      <article class="solution-card"><small>Nhóm bổ sung riêng</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p></article>
-    </div>
+    <details class="knowledge-block">
+      <summary>
+        <div>
+          <span class="kicker">Kiến thức chọn bi gầm</span>
+          <h2>Sáu điều cần biết trước khi chọn bi gầm</h2>
+        </div>
+        <span class="kb-icon"></span>
+      </summary>
+      <div class="knowledge-grid">
+        <article class="knowledge-card"><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
+        <article class="knowledge-card"><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></article>
+        <article class="knowledge-card"><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3><p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p></article>
+        <article class="knowledge-card"><h3>Cos, pha và cutoff cần xem gì?</h3><p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p></article>
+        <article class="knowledge-card"><h3>Hốc đèn và hệ điện cần kiểm tra gì?</h3><p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p></article>
+        <article class="knowledge-card"><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p></article>
+      </div>
+      <div class="knowledge-subhead">
+        <h3>Bi gầm khác gì các giải pháp ánh sáng khác?</h3>
+        <p>"Bi gầm" và "đèn gầm" được dùng cho cùng nhóm sản phẩm trong trang này. Các lựa chọn dưới đây khác nhau ở vị trí lắp, vai trò chiếu sáng và mức độ can thiệp vào xe.</p>
+      </div>
+      <div class="solution-grid">
+        <article class="solution-card"><small>Vị trí thấp phía trước xe</small><h3>Bi gầm / đèn gầm</h3><p>Cụm projector có lens, thường lắp tại hốc đèn gầm — bổ sung vùng sáng gần và hai mép đường.</p></article>
+        <article class="solution-card"><small>Cụm đèn pha chính</small><h3>Bi LED</h3><p>Giải pháp nâng cấp cho cụm đèn pha chính, khác vị trí và mức can thiệp so với bi gầm.</p></article>
+        <article class="solution-card"><small>Công nghệ nguyên bản</small><h3>Halogen zin</h3><p>Đèn pha/cos nguyên bản của xe, thường có cấu hình và vùng sáng khác — cần đánh giá nền tảng xe trước khi thay đổi.</p></article>
+        <article class="solution-card"><small>Cụm nguyên bản của xe</small><h3>Đèn sương mù nguyên bản</h3><p>Thường là cụm đèn vị trí thấp theo thiết kế xe. Không phải đèn sương mù nguyên bản nào cũng là bi gầm hoặc projector.</p></article>
+        <article class="solution-card"><small>Module lắp độc lập</small><h3>Đèn gầm dạng rời</h3><p>Lắp bằng pát riêng; cấu tạo và phương án lắp không mặc định giống bi gầm trong hốc nguyên bản.</p></article>
+        <article class="solution-card"><small>Nhóm bổ sung riêng</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p></article>
+      </div>
+    </details>
   </div>
 </section>
 
