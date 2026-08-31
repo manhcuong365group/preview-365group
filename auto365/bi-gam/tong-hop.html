@@ -141,6 +141,16 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .compare-table .cmp-name{font-weight:700;color:var(--ink)}
 .cmp-highlights{list-style:none;margin:0;padding:0}
 .cmp-highlights li{position:relative;padding:3px 0 3px 12px;color:#3a3d42}
+.consult-modal{position:fixed;inset:0;z-index:95;background:rgba(16,17,20,.6);display:none;align-items:center;justify-content:center;padding:20px}
+.consult-modal.is-open{display:flex}
+.consult-modal-inner{background:var(--ink-2);border-radius:20px;max-width:460px;width:100%;max-height:90vh;overflow:auto;padding:24px}
+.consult-modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:16px;color:#fff}
+.consult-modal-head h3{font-size:18px;margin:0 0 4px}
+.consult-modal-head p{color:#9195a0;font-size:12px;line-height:1.5;margin:0}
+.consult-modal-close{border:0;background:#33353b;border-radius:8px;width:32px;height:32px;flex:none;font-size:16px;cursor:pointer;color:#fff}
+.consult-modal .finder-bar-fields{grid-template-columns:1fr 1fr}
+@media (width<=480px){.consult-modal .finder-bar-fields{grid-template-columns:1fr}}
+.cta-strip-actions{display:flex;gap:8px;flex-wrap:wrap}
 .cmp-highlights li:before{content:'';position:absolute;left:0;top:9px;width:4px;height:4px;border-radius:50%;background:var(--red)}
 @media (width<=640px){.compare-table{font-size:11px}.compare-table th{width:80px}.compare-table img{width:56px;height:56px}}
 @media (width<=1180px) and (width>900px){.btn-view{font-size:10px;padding:0 4px}.compare-toggle{font-size:10px;padding:0 8px}}
@@ -316,7 +326,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .cta-strip span{display:block;color:var(--muted);font-size:11.5px;font-weight:400;margin-top:3px}
 .dark .cta-strip span{color:#9195a0}
 .cta-strip .btn{flex:none;white-space:nowrap}
-@media (width<=640px){.cta-strip{flex-direction:column;align-items:flex-start}.cta-strip .btn{width:100%}}
+@media (width<=640px){.cta-strip{flex-direction:column;align-items:flex-start}.cta-strip .btn{width:100%}.cta-strip-actions{width:100%;flex-direction:column}}
 
 /* footer */
 footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
@@ -1046,7 +1056,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <li>Xác nhận dây, giắc, cầu chì và relay</li>
         <li>Báo công lắp, cân chỉnh và VAT</li>
       </ul>
-      <a class="btn" style="background:var(--red);color:#fff" href="#tu-van-theo-xe">Nhờ kiểm tra chi phí &rarr;</a>
+      <a class="btn js-open-consult" style="background:var(--red);color:#fff" href="#tu-van-theo-xe">Nhờ kiểm tra chi phí &rarr;</a>
     </div>
     <div class="price-steps">
       <div class="price-step"><span>01</span><div><b>Sản phẩm</b><p>3,5–6,2 triệu đồng theo đơn vị niêm yết</p></div></div>
@@ -1090,7 +1100,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       </div>
       <div class="cta-strip">
         <p>Còn phân vân về lens, nhiệt màu hay điện áp?<span>Gọi kỹ thuật Auto365 để được tư vấn theo đúng xe.</span></p>
-        <a class="btn btn-primary" href="tel:0365365911">Gọi 0365 365 911</a>
+        <div class="cta-strip-actions">
+          <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
+          <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
+          <a class="btn btn-primary js-open-consult" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+        </div>
       </div>
     </details>
   </div>
@@ -1140,7 +1154,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <a class="guide-cluster-card" href="#gia-chi-phi"><span class="gc-tag">Hệ điện</span><h3>Lưu ý để không ảnh hưởng hệ thống điện</h3><p>Kiểm tra giắc, relay, nguồn và cách đi dây trước khi thi công.</p></a>
       <a class="guide-cluster-card" href="#quy-trinh"><span class="gc-tag">Bảo dưỡng</span><h3>Bảo dưỡng đèn bi gầm ô tô</h3><p>Xử lý sương sáng, hơi ẩm và các dấu hiệu cần kiểm tra.</p></a>
       <a class="guide-cluster-card" href="#faq"><span class="gc-tag">Pháp lý</span><h3>Nghị định 168 và tình trạng kiểm định</h3><p>Đọc đúng phạm vi quy định trước khi phản đối kiểm định.</p></a>
-      <a class="guide-cluster-card" href="#tu-van-theo-xe"><span class="gc-tag">Theo dòng xe</span><h3>Tư vấn độ đèn theo từng dòng xe</h3><p>Tìm case và câu hỏi theo hãng, dòng và đời xe của bạn.</p></a>
+      <a class="guide-cluster-card js-open-consult" href="#tu-van-theo-xe"><span class="gc-tag">Theo dòng xe</span><h3>Tư vấn độ đèn theo từng dòng xe</h3><p>Tìm case và câu hỏi theo hãng, dòng và đời xe của bạn.</p></a>
       <a class="guide-cluster-card" href="#case-thuc-te"><span class="gc-tag">Case thực</span><h3>Mazda 6 lắp F10 Turbo V2 4300K</h3><p>Case có cấu hình, ảnh thực tế, giá và hồ sơ lắp rõ ràng.</p></a>
     </div>
   </div>
@@ -1277,7 +1291,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     </div>
     <div class="cta-strip">
       <p>Xe của bạn chưa có trong danh sách case?<span>Nhờ Auto365 kiểm tra hốc đèn và cấu hình phù hợp trước khi lắp.</span></p>
-      <a class="btn btn-primary" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+      <div class="cta-strip-actions">
+        <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
+        <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
+        <a class="btn btn-primary js-open-consult" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1297,8 +1315,12 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <article class="why-card"><span>06</span><h3>Bảo hành rõ ràng, nhiều ưu đãi hậu mãi</h3><p>Sản phẩm bảo hành đến 24 tháng theo từng dòng; thường xuyên có chương trình khuyến mãi và hậu mãi cho khách hàng đã lắp.</p></article>
     </div>
     <div class="cta-strip">
-      <p>Sẵn sàng lắp bi gầm đúng cấu hình cho xe của bạn?<span>Chat Zalo để được tư vấn nhanh, không cần gọi điện.</span></p>
-      <a class="btn btn-primary" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo tư vấn ngay</a>
+      <p>Sẵn sàng lắp bi gầm đúng cấu hình cho xe của bạn?<span>Gọi, chat Zalo hoặc để lại thông tin để được tư vấn nhanh.</span></p>
+      <div class="cta-strip-actions">
+        <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
+        <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
+        <a class="btn btn-primary js-open-consult" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+      </div>
     </div>
   </div>
 </section>
@@ -1460,7 +1482,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <p>Để lại thông tin hoặc liên hệ trực tiếp — Auto365 kiểm tra và phản hồi theo đúng xe.</p>
       </div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn" style="background:#fff;color:var(--red)" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+        <a class="btn js-open-consult" style="background:#fff;color:var(--red)" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
         <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
         <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
       </div>
@@ -1511,6 +1533,29 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div style="overflow-x:auto">
       <table class="compare-table" id="compare-table"></table>
     </div>
+  </div>
+</div>
+
+<div class="consult-modal" id="consult-modal">
+  <div class="consult-modal-inner">
+    <div class="consult-modal-head">
+      <div>
+        <h3>Nhận tư vấn theo xe</h3>
+        <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
+      </div>
+      <button type="button" class="consult-modal-close" id="consult-close" aria-label="Đóng">&times;</button>
+    </div>
+    <form class="finder-bar" id="consult-form" style="padding:0">
+      <div class="finder-bar-fields">
+        <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
+        <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
+        <label>Hãng xe <select name="car_brand" required><option value="">Chọn hãng</option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Mazda</option><option>Kia</option><option>Hyundai</option><option>Mitsubishi</option><option>Khác</option></select></label>
+        <label>Dòng xe <input type="text" name="car_model" placeholder="VD: Vios, CR-V…"></label>
+        <label class="finder-bar-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
+      </div>
+      <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
+      <p class="finder-bar-note consult-modal-note">Nội dung được sao chép để bạn gửi trực tiếp qua Zalo; trang không tự gửi dữ liệu.</p>
+    </form>
   </div>
 </div>
 
@@ -1665,6 +1710,34 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var warrantyOpen = document.getElementById('warranty-open');
   if (warrantyOpen) warrantyOpen.addEventListener('click', function(){
     window.open('https://baohanh.365group.com.vn/', '_blank', 'noopener,noreferrer');
+  });
+
+  var consultModal = document.getElementById('consult-modal');
+  var consultClose = document.getElementById('consult-close');
+  var consultForm = document.getElementById('consult-form');
+
+  function openConsultModal(){
+    consultModal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeConsultModal(){
+    consultModal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('.js-open-consult');
+    if (trigger) { e.preventDefault(); openConsultModal(); return; }
+  });
+  consultClose.addEventListener('click', closeConsultModal);
+  consultModal.addEventListener('click', function(e){
+    if (e.target === consultModal) closeConsultModal();
+  });
+
+  consultForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    if (!consultForm.reportValidity()) return;
+    openZaloRequest(consultForm, '.consult-modal-note');
   });
 
   document.addEventListener('click', function(e){
