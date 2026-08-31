@@ -6,6 +6,8 @@
 <title>Đèn bi gầm ô tô: bảng giá và cách chọn theo xe | Auto365</title>
 <meta name="description" content="Bảng giá bi gầm ô tô, cách chọn theo xe, case thực tế đã lắp và quy trình thi công tại Auto365. Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo.">
 <link rel="canonical" href="https://auto365.vn/nang-cap-anh-sang-bi-gam">
+<link rel="preconnect" href="https://www.youtube.com">
+<link rel="preconnect" href="https://i.ytimg.com">
 <meta property="og:title" content="Đèn bi gầm ô tô: bảng giá và cách chọn theo xe | Auto365">
 <meta property="og:description" content="Bảng giá bi gầm ô tô, cách chọn theo xe, case thực tế đã lắp và quy trình thi công tại Auto365.">
 <meta property="og:type" content="website">
@@ -1056,7 +1058,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
 <section class="section" id="kien-thuc">
   <div class="shell">
-    <details class="knowledge-block">
+    <details class="knowledge-block" open>
       <summary>
         <div>
           <span class="kicker">Kiến thức chọn bi gầm</span>
@@ -1066,8 +1068,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       </summary>
       <div class="knowledge-grid">
         <article class="knowledge-card"><h3>Bi gầm hoạt động như thế nào?</h3><p>Bi gầm dùng thấu kính projector để gom và định hình chùm sáng. Giá trị thực tế nằm ở vùng sáng gần, độ rõ của đường cắt sáng-tối (cutoff) và độ ổn định sau thời gian sử dụng — không chỉ ở công suất hay độ sáng cực đại.</p></article>
-        <article class="knowledge-card"><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Kích thước hốc đèn, không gian tản nhiệt, pát lắp và mục tiêu giữ zin quyết định phương án — không nên chọn chỉ theo sở thích. Lens 3.0 inch thường cho chùm sáng rộng hơn; lens 2.0 inch dễ lắp ở hốc nhỏ hoặc xe máy.</p></article>
-        <article class="knowledge-card"><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3><p>3000K cho ánh vàng, 4300K vàng trắng và 5500K trắng hơn. Nên chọn theo cung đường, thời tiết và cấu hình sản phẩm; không có một mức Kelvin tốt nhất cho mọi tình huống.</p></article>
+        <article class="knowledge-card"><h3>Nên chọn lens 2.0 hay 3.0 inch?</h3><p>Đo hốc đèn trước khi chọn: lens 3.0 inch cần nhiều không gian hơn nhưng cho vùng sáng rộng và đều, phù hợp xe con phổ thông. Lens 2.0 inch nhỏ gọn, phù hợp hốc hẹp hoặc xe máy — nhưng đổi lại vùng sáng thường hẹp hơn.</p></article>
+        <article class="knowledge-card"><h3>Nhiệt màu 3000K, 4300K, 5500K khác nhau thế nào?</h3><p>Ánh vàng 3000K xuyên sương tốt hơn nhưng vùng sáng hẹp hơn; trắng 5500K cho cảm giác sáng rõ nhưng dễ chói khi trời mưa hoặc sương mù. 4300K là mức trung gian được dùng phổ biến nhất. Không có mức Kelvin nào tốt nhất cho mọi điều kiện.</p></article>
         <article class="knowledge-card"><h3>Cos, pha và cutoff cần xem gì?</h3><p>Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên mắt xe đối diện; pha cần độ mở và tầm chiếu phù hợp nhu cầu sử dụng. Nên xem ảnh hoặc video có mô tả rõ điều kiện thực tế, không chỉ dựa vào một con số lumen.</p></article>
         <article class="knowledge-card"><h3>Hốc đèn và hệ điện cần kiểm tra gì?</h3><p>Hốc đèn, giắc kết nối, điện áp 12V/24V và logic điều khiển đèn của từng xe khác nhau — xe con thường dùng 12V, một số xe tải dùng 24V. Phương án dây, cầu chì, relay, mức dùng pát chuyển và mức can thiệp vào điện zin chỉ được chốt sau khi khảo sát trực tiếp.</p></article>
         <article class="knowledge-card"><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. Đây là bước bắt buộc để tránh chói hoặc lệch vùng sáng.</p></article>
@@ -1713,14 +1715,32 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var consultClose = document.getElementById('consult-close');
   var consultForm = document.getElementById('consult-form');
 
-  function openConsultModal(){
-    consultModal.classList.add('is-open');
+  var lastFocusedEl = null;
+  function getFocusable(container){
+    return Array.prototype.slice.call(container.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+  }
+  function openModal(modalEl){
+    lastFocusedEl = document.activeElement;
+    modalEl.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    var focusables = getFocusable(modalEl);
+    if (focusables.length) focusables[0].focus();
   }
-  function closeConsultModal(){
-    consultModal.classList.remove('is-open');
-    document.body.style.overflow = '';
+  function closeModal(modalEl){
+    modalEl.classList.remove('is-open');
+    if (!document.querySelector('.consult-modal.is-open, .compare-modal.is-open')) document.body.style.overflow = '';
+    if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') lastFocusedEl.focus();
   }
+  function trapFocus(modalEl, e){
+    var focusables = getFocusable(modalEl);
+    if (!focusables.length) return;
+    var first = focusables[0], last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+
+  function openConsultModal(){ openModal(consultModal); }
+  function closeConsultModal(){ closeModal(consultModal); }
 
   document.addEventListener('click', function(e){
     var trigger = e.target.closest('.js-open-consult');
@@ -1731,10 +1751,12 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     if (e.target === consultModal) closeConsultModal();
   });
   document.addEventListener('keydown', function(e){
-    if (e.key !== 'Escape') return;
-    if (consultModal.classList.contains('is-open')) closeConsultModal();
     var cModal = document.getElementById('compare-modal');
-    if (cModal && cModal.classList.contains('is-open')) cModal.classList.remove('is-open');
+    var openModalEl = consultModal.classList.contains('is-open') ? consultModal
+      : (cModal && cModal.classList.contains('is-open') ? cModal : null);
+    if (!openModalEl) return;
+    if (e.key === 'Escape') { closeModal(openModalEl); return; }
+    if (e.key === 'Tab') trapFocus(openModalEl, e);
   });
 
   consultForm.addEventListener('submit', function(e){
@@ -1841,11 +1863,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     });
     html += '</tbody>';
     compareTable.innerHTML = html;
-    compareModal.classList.add('is-open');
+    openModal(compareModal);
   });
 
-  compareCloseBtn.addEventListener('click', function(){ compareModal.classList.remove('is-open'); });
-  compareModal.addEventListener('click', function(e){ if (e.target === compareModal) compareModal.classList.remove('is-open'); });
+  compareCloseBtn.addEventListener('click', function(){ closeModal(compareModal); });
+  compareModal.addEventListener('click', function(e){ if (e.target === compareModal) closeModal(compareModal); });
 
   var qsNeed = document.getElementById('qs-need');
   var qsLens = document.getElementById('qs-lens');
