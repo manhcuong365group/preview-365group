@@ -1778,10 +1778,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var qsRecoBox = document.getElementById('qs-reco');
   var qsResultBox = document.getElementById('qs-result');
 
-  qsSubmit.addEventListener('click', function(){
-    var needVal = qsNeed.value, lensVal = qsLens.value, budgetVal = qsBudget.value;
-    var allCards = Array.prototype.slice.call(document.querySelectorAll('#product-grid .product-card'));
-    var matched = allCards.filter(function(c){
+  function qsMatch(cards, needVal, lensVal, budgetVal){
+    return cards.filter(function(c){
       var price = +c.getAttribute('data-price');
       if (!price) return false;
       var cardNeeds = (c.getAttribute('data-needs') || '').split(',');
@@ -1793,11 +1791,26 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       else if (budgetVal === 'over6') okBudget = price > 6000000;
       return okNeed && okLens && okBudget;
     });
+  }
+
+  qsSubmit.addEventListener('click', function(){
+    var needVal = qsNeed.value, lensVal = qsLens.value, budgetVal = qsBudget.value;
+    var allCards = Array.prototype.slice.call(document.querySelectorAll('#product-grid .product-card'));
+    var relaxedBudget = false, relaxedLens = false;
+    var matched = qsMatch(allCards, needVal, lensVal, budgetVal);
+    if (!matched.length && budgetVal) {
+      matched = qsMatch(allCards, needVal, lensVal, '');
+      relaxedBudget = true;
+    }
+    if (!matched.length && lensVal) {
+      matched = qsMatch(allCards, needVal, '', '');
+      relaxedLens = true; relaxedBudget = !!budgetVal;
+    }
     matched.sort(function(a,b){ return (+a.getAttribute('data-price')) - (+b.getAttribute('data-price')); });
 
     qsRecoBox.hidden = false;
     if (!matched.length) {
-      qsResultBox.innerHTML = '<p class="qs-empty">Chưa tìm được mẫu khớp đúng cả 3 tiêu chí đã chọn. Nhờ kỹ thuật Auto365 tư vấn trực tiếp để chọn đúng cấu hình.</p><div class="qs-result-actions"><a class="btn btn-primary" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo tư vấn</a><a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a></div>';
+      qsResultBox.innerHTML = '<p class="qs-empty">Chưa tìm được mẫu khớp đúng nhu cầu đã chọn. Nhờ kỹ thuật Auto365 tư vấn trực tiếp để chọn đúng cấu hình.</p><div class="qs-result-actions"><a class="btn btn-primary" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo tư vấn</a><a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a></div>';
       qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
       return;
     }
@@ -1807,9 +1820,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     var price = best.querySelector('.product-price').textContent;
     var reasons = [];
     if (needVal) reasons.push('đúng nhu cầu đã chọn');
-    if (lensVal) reasons.push('lens ' + lensVal + ' inch');
-    if (budgetVal) reasons.push('trong tầm ngân sách');
+    if (lensVal && !relaxedLens) reasons.push('lens ' + lensVal + ' inch');
+    if (budgetVal && !relaxedBudget) reasons.push('trong tầm ngân sách');
     var reasonText = reasons.length ? ('Phù hợp với ' + reasons.join(', ') + '.') : 'Gợi ý mức giá thấp nhất trong danh mục hiện có.';
+    if (relaxedLens) reasonText += ' Chưa có mẫu đúng lens đã chọn — đây là gợi ý gần nhất theo nhu cầu.';
+    else if (relaxedBudget) reasonText += ' Chưa có mẫu đúng ngân sách đã chọn — đây là gợi ý gần nhất.';
     var zaloTitle = ('Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href).replace(/"/g, '&quot;');
     qsResultBox.innerHTML =
       '<img src="' + img.src + '" alt="' + img.alt + '">' +
