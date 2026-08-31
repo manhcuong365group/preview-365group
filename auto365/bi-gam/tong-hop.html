@@ -68,10 +68,6 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .finder-bar-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}
 .finder-bar-fields label{display:grid;gap:6px;font-size:11px;font-weight:700;color:#c7cad0;min-width:0}
 .finder-bar-fields select,.finder-bar-fields input{min-height:44px;border:1px solid #33353b;border-radius:10px;padding:0 12px;font-size:13px;background:#101114;color:#fff;min-width:0}
-.finder-bar-upload{grid-column:1/-1;border:1px dashed #33353b;border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
-.finder-bar-upload b{font-size:11px;font-weight:700;color:#c7cad0}
-.finder-bar-upload small{font-size:10px;color:#7d818a}
-.finder-bar-upload input[type=file]{margin-top:4px;font-size:11px;color:#c7cad0}
 .finder-bar-consent{grid-column:1/-1;display:flex;align-items:flex-start;gap:8px;font-size:11px;color:#9195a0;line-height:1.5}
 .finder-bar-consent input{margin-top:2px;flex:none}
 .finder-bar-consent a{color:#ff8890;font-weight:700}
@@ -287,10 +283,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-form label{grid-column:span 1;display:grid;gap:6px;font-size:11.5px;font-weight:700;color:#20242b}
 .video-lead-form label.field-full{grid-column:1/-1}
 .video-lead-form input,.video-lead-form select{min-height:44px;border:1px solid #d5dbe4;border-radius:10px;padding:0 12px;font-size:13px;color:#17191e}
-.video-lead-upload{grid-column:1/-1;border:1px dashed #d5dbe4;border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
-.video-lead-upload b{font-size:11px;font-weight:700;color:#20242b}
-.video-lead-upload small{font-size:10px;color:#7b8492}
-.video-lead-upload input[type=file]{margin-top:4px;font-size:11px}
 .video-lead-consent{grid-column:1/-1;display:flex;align-items:flex-start;gap:8px;font-size:11px;color:#4a4d53;line-height:1.5}
 .video-lead-consent input{margin-top:2px;flex:none}
 .video-lead-consent a{color:var(--red);font-weight:700}
@@ -390,7 +382,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label>Dòng xe <input type="text" name="car_model" placeholder="VD: Vios, CR-V…"></label>
         <label>Khu vực <select name="region"><option value="">Chọn khu vực</option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select></label>
         <label>Nhu cầu đi xe <select name="driving_need"><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
-        <label class="finder-bar-upload"><b>Ảnh chính diện đầu xe (không bắt buộc)</b><small>JPEG, PNG, WebP, HEIC/HEIF · tối đa 15 MB</small><input type="file" name="front_photo" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.heic,.heif"></label>
         <label class="finder-bar-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
       </div>
       <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
@@ -1128,7 +1119,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label>Dòng xe (không bắt buộc) <input type="text" name="car_model" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
         <label>Năm sản xuất (không bắt buộc) <select name="car_year"><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
         <label>Nhu cầu <select name="driving_need"><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
-        <label class="video-lead-upload"><b>Ảnh chính diện đầu xe (không bắt buộc)</b><small>JPEG, PNG, WebP, HEIC/HEIF · tối đa 15 MB</small><input type="file" name="front_photo" accept="image/jpeg,image/png,image/webp,image/heic,image/heif,.jpg,.jpeg,.png,.webp,.heic,.heif"></label>
         <label class="video-lead-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
         <button type="submit" class="btn btn-primary video-lead-submit">Gửi yêu cầu tư vấn</button>
         <p class="video-lead-note">Nội dung được sao chép để gửi qua Zalo · Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
@@ -1614,9 +1604,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       'Xe: ' + [valueOf(form, 'car_brand'), valueOf(form, 'car_model'), valueOf(form, 'car_year')].filter(Boolean).join(' '),
       'Khu vực: ' + valueOf(form, 'region'),
       'Nhu cầu: ' + valueOf(form, 'driving_need'),
-      (function(){ var f = form.elements.namedItem('front_photo'); return f && f.files && f.files[0] ? 'Ảnh xe: sẽ gửi kèm trong Zalo' : ''; })(),
       'Vui lòng kiểm tra đời/phiên bản, hốc đèn, pát, điện áp và hệ dây trước khi chốt cấu hình.'
-    ].filter(function(row){ return row && !/: $/.test(row); });
+    ].filter(function(row){ return !/: $/.test(row); });
     var note = form.querySelector(noteSelector);
     copyText(rows.join('\n')).then(function(copied){
       if (!note) return;
