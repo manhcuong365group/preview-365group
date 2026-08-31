@@ -170,7 +170,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .catalogue-sidebar{display:none!important}
 .mobile-filter-toggle{display:none!important}
 .mobile-filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1 0 100%;order:2}
-.mobile-filter-grid select{min-height:40px;border:1px solid #d8dade;border-radius:8px;padding:0 10px;font-size:12px;background:#fff;width:100%}
+.mobile-filter-grid select{min-height:38px;border:1px solid #d8dade;border-radius:8px;padding:0 6px;font-size:10.5px;background:#fff;width:100%;min-width:0;text-overflow:ellipsis}
 #pf-sort{order:3}
 }
 
@@ -423,10 +423,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label class="search-box"><input type="text" id="pf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"></label>
         <select id="pf-sort"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select>
         <div class="mobile-filter-grid">
-          <select id="mf-brand"><option value="">Tất cả thương hiệu</option><option value="X-Light">X-Light</option><option value="GTR">GTR</option><option value="AES">AES</option><option value="Henvvei">Henvvei</option></select>
-          <select id="mf-lens"><option value="">Mọi kích thước lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select>
-          <select id="mf-color"><option value="">Mọi nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="5500K">5500K</option><option value="__ALL3__">3 nhiệt màu</option></select>
-          <select id="mf-need"><option value="">Mọi nhu cầu</option><option value="city,mixed">Đi phố</option><option value="rain">Mưa / sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select>
+          <select id="mf-brand"><option value="">Thương hiệu</option><option value="X-Light">X-Light</option><option value="GTR">GTR</option><option value="AES">AES</option><option value="Henvvei">Henvvei</option></select>
+          <select id="mf-lens"><option value="">Lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select>
+          <select id="mf-color"><option value="">Nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="5500K">5500K</option><option value="__ALL3__">3 nhiệt màu</option></select>
+          <select id="mf-need"><option value="">Nhu cầu</option><option value="city,mixed">Đi phố</option><option value="rain">Mưa / sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select>
         </div>
       </div>
       <aside class="catalogue-sidebar" id="catalogue-sidebar">
