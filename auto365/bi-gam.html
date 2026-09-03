@@ -391,6 +391,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 </style>
 </head>
 <body>
+<noscript><div style="background:#fff2f3;color:#6b191f;text-align:center;font-size:12px;padding:10px 16px">Trang cần JavaScript để gửi form tư vấn. Vui lòng gọi <a href="tel:0365365911" style="color:#6b191f;font-weight:700">0365 365 911</a> hoặc nhắn <a href="https://zalo.me/0365365911" style="color:#6b191f;font-weight:700">Zalo</a> để được hỗ trợ trực tiếp.</div></noscript>
 <a class="skip-link" href="#noi-dung-chinh">Bỏ qua điều hướng</a>
 <header class="site-header">
   <div class="shell header-row">
@@ -1705,6 +1706,23 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       form_id: form.id || '',
       page_topic: 'bi-gam-o-to'
     }, tracking));
+    try {
+      fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        keepalive: true,
+        body: JSON.stringify(Object.assign({
+          form_id: form.id || '',
+          page: 'bi-gam',
+          full_name: valueOf(form, 'full_name'),
+          phone: valueOf(form, 'phone'),
+          car_brand: valueOf(form, 'car_brand'),
+          car_model: valueOf(form, 'car_model'),
+          region: valueOf(form, 'region'),
+          driving_need: valueOf(form, 'driving_need')
+        }, tracking))
+      }).catch(function(){});
+    } catch (err) {}
     var zalo = document.createElement('a');
     zalo.href = 'https://zalo.me/0365365911';
     zalo.target = '_blank';
