@@ -1,77 +1,61 @@
-# Design system — 3M Crystalline CR BLK Pro
+# Design.md — CR BLK Pro (đồng bộ Auto365)
 
-Tài liệu này là quy chuẩn giao diện cho landing page CR BLK Pro. Các token được đặt theo cách đặt tên quen thuộc của Tailwind CSS để dễ chuyển sang utility class hoặc component framework.
+Quy chuẩn gọn cho trang CR BLK Pro, bám theo giao diện hiện có của Auto365 và cách tổ chức token trong Tailwind CSS Theme. Tailwind Theme dùng CSS variables làm nguồn token cho màu, font, breakpoint và spacing; tài liệu này chỉ định nghĩa các token cần thiết cho trang, không tạo một design system mới.
 
-## Mục tiêu
+## Nguyên tắc
 
-- Ưu tiên đọc nhanh: giá, cấu hình 40/35/15, bằng chứng thi công và CTA.
-- Tạo cảm giác kỹ thuật, chính hãng và đáng tin cậy; không dùng hiệu ứng làm giảm khả năng đọc.
-- Mobile-first, vùng bấm tối thiểu 44px và nội dung không bị bóp/cắt.
+- Giữ cảm giác Auto365: nền trắng, chữ đen/xám, điểm nhấn đỏ; vàng chỉ dùng cho hero hoặc thông tin kỹ thuật.
+- Nội dung ưu tiên theo thứ tự: cấu hình 40/35/15 → giá → bằng chứng/case → tư vấn.
+- Container, card và khoảng cách phải giống các trang Auto365 hiện có; không dùng gradient hoặc shadow nặng ngoài hero.
 
-## Tokens
+## Theme tokens
 
-| Nhóm | Token Tailwind tương đương | Giá trị hiện tại |
-|---|---|---|
-| Mực chính | `text-ink` | `#10131a` |
-| Mực phụ | `text-ink-2` | `#171d27` |
-| Nền trang | `bg-paper` | `#ffffff` |
-| Nền nhấn | `bg-cream` | `#f7f4ee` |
-| Chữ phụ | `text-muted` | `#636b79` |
-| Viền | `border-line` | `#dde1e7` |
-| Vàng thương hiệu | `amber-gold` | `#d8aa4d` |
-| Đỏ CTA | `red-accent` | `var(--accent)` |
-| Xanh liên hệ | `blue-link` | `#087be8` |
-| Thành công | `green-success` | `#18a957` |
+```css
+@theme {
+  --color-ink: #10131a;
+  --color-muted: #636b79;
+  --color-paper: #ffffff;
+  --color-line: #dde1e7;
+  --color-accent: #ed0016;
+  --color-gold: #d8aa4d;
+  --radius-card: 16px;
+  --shadow-card: 0 8px 24px rgb(15 20 28 / 8%);
+  --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+```
+
+Khi triển khai bằng Tailwind, dùng các lớp tương ứng như `bg-paper`, `text-ink`, `text-muted`, `border-line`, `text-accent`, `rounded-card` và `shadow-card`. Trong file HTML hiện tại, các token tương ứng nằm trong `:root` và phải được ưu tiên tái sử dụng.
+
+## Layout
+
+- Container: `max-width: 1180px`, ngang `24px` desktop và `16px` mobile.
+- Section: padding dọc 28–52px; không để hai section liền nhau có khoảng trắng quá lớn.
+- Grid: 3 cột desktop, 2 cột tablet, 1 cột mobile; gap 14–18px.
+- Ảnh nội dung dùng `width: 100%; height: auto`; thumbnail mới dùng `object-cover`.
 
 ## Typography
 
-- Font hệ thống: Inter, `ui-sans-serif`, `system-ui`.
-- H1: `text-5xl` đến `text-7xl`, weight 800–900, tracking âm.
-- H2: `text-3xl` đến `text-4xl`; mục hệ thống dùng tối đa 34px.
-- H3/card title: `text-base` đến `text-xl`, weight 700–800.
-- Body: `text-base`, line-height 1.6; mô tả phụ dùng `text-xs` hoặc `text-sm`.
-- Không viết hoa toàn bộ nội dung dài; chỉ eyebrow dùng uppercase và letter-spacing.
+- H1 hero: 48–74px desktop, giảm theo viewport.
+- H2 section: 28–36px; riêng mục hệ thống tối đa 34px.
+- H3 card: 16–20px, đậm vừa phải.
+- Body: 15–16px, line-height 1.55–1.6; mô tả phụ 12–14px.
 
-## Layout & spacing
+## Component rules
 
-- Container chuẩn: `max-w-[1180px]`, ngang `px-6`; desktop tối đa 1200px.
-- Khoảng cách section: 28–52px; giữa các card: 10–18px.
-- Grid desktop: 3 cột; tablet: 2 cột; mobile: 1 cột.
-- Ảnh dùng `w-full h-auto`; chỉ dùng `object-cover` cho thumbnail có chủ đích. Ảnh chứng nhận dùng `object-contain` để không cắt thông tin.
+- Card: nền trắng, viền `line`, bo góc 16px, shadow nhẹ; hover chỉ nâng 2–3px.
+- CTA chính: đỏ Auto365; gọi điện: xanh lá; liên kết phụ: đỏ hoặc xanh dương.
+- Case card: ảnh → tên xe → `Cấu hình đã dán: CR BLK 40 / 35 / 15` → link hồ sơ. Không đặt badge che ảnh.
+- Hệ thống Auto365: mỗi mục phải có mô tả ngắn, link riêng và số điện thoại đúng địa điểm.
+- Bảo hành: ghi “lên đến 10 năm theo điều kiện 3M”, kèm eWarranty; không diễn đạt như cam kết vô điều kiện.
 
-## Components
+## Responsive & QA
 
-### Section heading
+- Kiểm tra 320, 375, 768, 1024 và 1440px.
+- Không để H2/paragraph bị bóp chiều rộng hoặc tràn ngang.
+- Vùng bấm tối thiểu 44px; ảnh có `alt`; link ngoài có `noopener noreferrer`.
+- Trước khi live: kiểm tra console, ảnh/OG trả 200, schema hợp lệ và staging giữ `noindex`.
 
-Eyebrow ngắn, H2 rõ intent, mô tả tối đa 2–3 dòng. Không lặp lại cùng một tiêu đề ở các section liền nhau.
+## Nguồn tham chiếu
 
-### Card
-
-`rounded-xl` hoặc `rounded-2xl`, viền `border-line`, nền trắng, shadow nhẹ. Card có thể bấm phải có trạng thái hover/focus rõ ràng nhưng không nhảy layout.
-
-### CTA & liên hệ
-
-CTA chính dùng đỏ thương hiệu; gọi điện dùng xanh lá; Zalo dùng xanh dương. Mọi số điện thoại dùng `tel:` và mọi link ngoài dùng `target="_blank" rel="noopener noreferrer"`.
-
-### Case card
-
-Thứ tự cố định: ảnh → tên xe → `Cấu hình đã dán: CR BLK 40 / 35 / 15` → link hồ sơ. Không đặt badge che lên ảnh.
-
-### Warranty note
-
-Luôn ghi: **Bảo hành lên đến 10 năm theo điều kiện 3M**, kèm hướng dẫn đối chiếu mã phim và eWarranty; không biến claim thành cam kết vô điều kiện.
-
-## Responsive checklist
-
-- Không có nội dung tràn ngang ngoài carousel case có chủ đích.
-- H2 và paragraph không bị giới hạn chiều rộng quá hẹp.
-- Form, nút và liên kết có vùng chạm tối thiểu 44px.
-- Kiểm tra ở 320px, 375px, 768px, 1024px và 1440px.
-
-## Accessibility & QA
-
-- Mỗi ảnh có alt mô tả xe, mã phim hoặc hồ sơ.
-- Focus-visible phải nhìn thấy trên mọi button/link.
-- Tương phản chữ thường tối thiểu WCAG AA.
-- Trước khi publish: kiểm tra console, link ảnh/OG 200, schema hợp lệ và xác nhận staging vẫn `noindex`.
-
+- Giao diện và cấu trúc nội dung: [Auto365 — Phim cách nhiệt](https://auto365.vn/phim-cach-nhiet).
+- Cách tổ chức design tokens: [Tailwind CSS Theme](https://tailwindcss.com/docs/theme).
