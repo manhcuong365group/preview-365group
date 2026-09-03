@@ -24,6 +24,41 @@ Quy chuẩn gọn cho trang CR BLK Pro, bám theo giao diện hiện có của A
 }
 ```
 
+### Type scale
+
+| Token | Size | Line-height | Weight dùng chính |
+|---|---:|---:|---:|
+| `text-xs` | 12px | 1.45 | 500–700 |
+| `text-sm` | 14px | 1.5 | 400–600 |
+| `text-base` | 16px | 1.6 | 400–500 |
+| `text-lg` | 18px | 1.55 | 500–700 |
+| `text-xl` | 20px | 1.35 | 700 |
+| `text-2xl` | 24px | 1.2 | 700–800 |
+| `text-3xl` | 30px | 1.12 | 700–800 |
+| `text-4xl` | 36px | 1.08 | 700–800 |
+| `text-hero` | clamp(48px, 5.4vw, 74px) | 1.02 | 800–900 |
+
+Font weights chuẩn: `font-normal` 400, `font-medium` 500, `font-semibold` 600, `font-bold` 700, `font-extrabold` 800, `font-black` 900. Không dùng weight lẻ ngoài scale này.
+
+### Spacing scale
+
+Dùng scale 4px: `space-0` 0, `space-1` 4px, `space-2` 8px, `space-3` 12px, `space-4` 16px, `space-5` 20px, `space-6` 24px, `space-8` 32px, `space-10` 40px, `space-12` 48px, `space-16` 64px.
+
+- Khoảng cách nội dung trong card: `p-4` đến `p-6`.
+- Gap giữa card: `gap-3` đến `gap-5`.
+- Section dọc: `py-8` mobile, `py-12` desktop.
+- Heading và mô tả: `mb-3` hoặc `mb-4`; tránh margin tùy ý.
+
+### Shape, border, elevation
+
+- `rounded-sm`: 8px cho control nhỏ; `rounded-card`: 16px cho card; `rounded-lg`: 20px cho panel lớn.
+- Border mặc định 1px `border-line`; focus 2px `ring-accent`.
+- `shadow-card`: 0 8px 24px rgb(15 20 28 / 8%); chỉ dùng shadow-lg cho modal/hero.
+
+### Breakpoints
+
+`sm` 640px, `md` 768px, `lg` 1024px, `xl` 1280px. Thiết kế mobile trước; chỉ thay đổi grid, type và padding từ `md` trở lên.
+
 Khi triển khai bằng Tailwind, dùng các lớp tương ứng như `bg-paper`, `text-ink`, `text-muted`, `border-line`, `text-accent`, `rounded-card` và `shadow-card`. Trong file HTML hiện tại, các token tương ứng nằm trong `:root` và phải được ưu tiên tái sử dụng.
 
 ## Layout
@@ -47,6 +82,19 @@ Khi triển khai bằng Tailwind, dùng các lớp tương ứng như `bg-paper`
 - Case card: ảnh → tên xe → `Cấu hình đã dán: CR BLK 40 / 35 / 15` → link hồ sơ. Không đặt badge che ảnh.
 - Hệ thống Auto365: mỗi mục phải có mô tả ngắn, link riêng và số điện thoại đúng địa điểm.
 - Bảo hành: ghi “lên đến 10 năm theo điều kiện 3M”, kèm eWarranty; không diễn đạt như cam kết vô điều kiện.
+
+## Component contracts
+
+| Component | Padding | Gap | Type |
+|---|---|---|---|
+| Section heading | `0` | `gap-3` | eyebrow `text-xs`, H2 `text-3xl` |
+| Standard card | `p-5` | `gap-3` | title `text-lg font-bold`, body `text-sm` |
+| Price card | `p-6` | `gap-2` | price `text-3xl font-extrabold` |
+| Case card | `p-4` | `gap-2` | vehicle `text-xl font-bold`, config `text-sm` |
+| Button | `px-5 py-3` (min-height 44px) | `gap-2` | `text-sm font-bold` |
+| Form field | `px-4 py-3` (min-height 44px) | `gap-2` | label `text-sm font-semibold` |
+
+Mỗi component dùng đúng contract trên; nếu cần ngoại lệ phải ghi rõ trong CSS component và không tạo token mới tùy tiện.
 
 ## Responsive & QA
 
