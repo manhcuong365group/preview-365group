@@ -140,6 +140,16 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 /* Pager giờ dùng thẻ <a href> thật (URL ?page=N) thay vì <button>, giúp Google/screen reader nhận ra đây là link điều hướng. Vùng chạm tối thiểu 44x44px trên mobile. */
 .pager a{background:#fff;border:1px solid #dedbd7;border-radius:5px;min-width:44px;min-height:44px;padding:7px;cursor:pointer;font-weight:800;text-decoration:none;text-align:center;color:inherit;display:inline-flex;align-items:center;justify-content:center}
 .pager a.active{background:var(--red);border-color:var(--red);color:#fff}
+/* CTA Gọi/Zalo sticky trên mobile — report readiness nêu thiếu, ẩn trên desktop vì header đã có kênh liên hệ khác. */
+.mobile-cta-bar{display:none}
+@media(max-width:700px){
+body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+.mobile-cta-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(20,20,20,.08)}
+.mobile-cta-bar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:8px;font-weight:800;font-size:13px;text-decoration:none}
+.mobile-cta-bar .mcb-call{color:#fff;background:var(--red)}
+.mobile-cta-bar .mcb-zalo{color:var(--ink);background:#f1f0ee;border:1px solid var(--line)}
+.comparebar{bottom:66px}
+}
 </style>
 </head>
 <body>
@@ -163,6 +173,7 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 <section class="source"><div class="wrap source-grid"><div><b>Phạm vi dữ liệu</b>81 model, tên, URL, ảnh và giá hiển thị được đối chiếu từ danh mục Auto365 ngày 29/08/2026.</div><div><b>Biên soạn & kiểm duyệt</b>Nội dung được biên soạn theo tình huống sử dụng, sau đó rà soát các điểm dễ sai: nguồn cấp, camera phụ, thẻ nhớ, công lắp và nghiệm thu.</div><div><b>Minh bạch giá</b>“Từ giá” hoặc “Liên hệ” được giữ nguyên như danh mục; không suy diễn thành giá trọn gói.</div></div></section>
 <section class="content" style="padding-top:46px"><div class="wrap"><p class="eyebrow">ĐƯỜNG DẪN CHUYÊN SÂU</p><h2 style="margin:0 0 20px">Đi tiếp theo đúng câu hỏi của bạn.</h2><div class="paths"><article class="path"><b>Camera theo thương hiệu</b><p>So sánh nhóm 70mai, VIETMAP, BlackVue và các model đang có theo phân khúc.</p><a href="#thuong-hieu">Khám phá thương hiệu →</a></article><article class="path"><b>Camera theo nhu cầu</b><p>Đi hằng ngày, đi tỉnh, xe dịch vụ, ghi cabin hoặc ưu tiên giám sát khi đỗ.</p><a href="#tieu-chi-chon">Xem theo tình huống →</a></article><article class="path"><b>Camera theo ngân sách</b><p>Lọc trực tiếp mức dưới 2 triệu đến nhóm trên 10 triệu trong catalogue.</p><a href="#catalog">Lọc theo giá →</a></article><article class="path"><b>Lắp đặt và nghiệm thu</b><p>Kiểm tra nguồn cấp, phụ kiện, cách lấy clip và điểm lắp trước khi hẹn lịch.</p><a href="#diem-lap-uy-tin">Xem chuẩn lắp →</a></article></div></div></section>
 <footer class="footer"><div class="wrap footer-grid"><div><a class="brand" href="#top">AUTO<b>365</b></a><p>Hub tư vấn, lựa chọn và lắp đặt camera hành trình ô tô.</p></div><div><b>Khám phá</b><a href="#catalog">Catalogue 81 sản phẩm</a><a href="#huong-dan">Cách chọn camera</a><a href="#quy-trinh-lap">Lắp đặt & nghiệm thu</a></div><div><b>Liên hệ</b><a href="tel:0365365365">0365 365 365</a><a href="mailto:marketing@365group.com.vn">marketing@365group.com.vn</a></div></div></footer>
+<div class="mobile-cta-bar" id="mobileCtaBar"><a href="tel:0365365365" class="mcb-call" aria-label="Gọi hotline Auto365">Gọi 0365 365 365</a><a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener noreferrer" class="mcb-zalo" aria-label="Nhắn tin Zalo Auto365">Nhắn Zalo</a></div>
 <div class="comparebar" id="comparebar"><span id="compareText">Đã chọn 0/2 mẫu</span><a href="#catalog" id="clearCompare">Bỏ chọn</a></div>
 <script>
 /* Snapshot danh mục thật: [tên, slug, giá VNĐ/null, ảnh]. Ảnh đầy đủ ưu tiên cho các model mới; các model cũ dùng thẻ nhận diện để tránh gắn nhầm ảnh. */
