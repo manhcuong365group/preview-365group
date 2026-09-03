@@ -109,6 +109,7 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 .catalog-shell{display:block}
 .filters{display:none}
 }
+.scroll-hint{display:none}
 /* Mobile: catalogue hiển thị 2 hàng, ~2,5 cột, cuộn ngang thay vì list dọc dài. */
 @media(max-width:640px){
 .grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:40%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px;padding-left:22px;padding-right:22px}
@@ -124,6 +125,7 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 .benefit-grid{grid-auto-columns:68%!important}
 .locations{grid-auto-columns:68%!important}
 .path,.brand-tile,.decision,.branch-proof,.case,.flow,.benefit,.location{scroll-snap-align:start;min-width:0}
+.scroll-hint{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:700}
 }
 /* Giao diện phẳng: đồng bộ nền trắng cho mọi block, bỏ viền phân tách, rút ngắn khoảng cách dọc giữa các block. */
 .hero,.concept-top,.intro,.catalog,.content,.cases,.local,.brand-hub,.install-proof,.hub-depth,.hub-console,.install-flow,.live-blocks,.case-reference,.real-cases-top,.faq-bottom,.source,.market-brands,.brand-showcase,.compare-section{background:#fff!important;border-top:none!important;border-bottom:none!important}
@@ -149,6 +151,7 @@ body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
 .mobile-cta-bar .mcb-call{color:#fff;background:var(--red)}
 .mobile-cta-bar .mcb-zalo{color:var(--ink);background:#f1f0ee;border:1px solid var(--line)}
 .comparebar{bottom:66px}
+.product .actions button,.product .actions a{font-size:12px;padding:9px 6px}
 }
 </style>
 </head>
@@ -233,5 +236,6 @@ const faqGrid=document.querySelector('.faq-full'),sourceBlock=document.querySele
 /* Tra cứu chi nhánh: lọc danh sách điểm lắp theo từ khóa gõ vào. */
 (function(){const toggle=document.querySelector('#navToggle'),nav=document.querySelector('#navLinks');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));}})();
 (function(){const input=document.querySelector('#branchSearchInput');const items=Array.from(document.querySelectorAll('#branchResults .location'));const empty=document.querySelector('#branchEmpty');if(!input)return;input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let visible=0;items.forEach(el=>{const hay=(el.dataset.city+' '+el.textContent).toLowerCase();const match=!q||hay.includes(q);el.classList.toggle('hide',!match);if(match)visible++;});empty.classList.toggle('show',visible===0);});})();
+(function(){document.querySelectorAll('.grid,.paths,.decision-grid,.branch-proof-grid,.case-grid,.flow-grid,.benefit-grid,.locations').forEach(el=>{const hint=document.createElement('div');hint.className='scroll-hint';hint.textContent='Vuốt ngang để xem thêm →';el.insertAdjacentElement('beforebegin',hint);});})();
 </script>
 </body></html>
