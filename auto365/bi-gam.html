@@ -275,11 +275,16 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=640px){.why-grid{grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:250px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.why-grid .why-card{scroll-snap-align:start;min-width:0}}
 
 /* cases */
-.case-grid{display:grid;grid-template-columns:none;grid-template-rows:none;grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
-.case-grid .case-card{scroll-snap-align:start;min-width:0}
+.case-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.case-grid .case-card{min-width:0}
+.case-card.is-extra{display:none}
+.case-grid.is-expanded .case-card.is-extra{display:block}
+.case-more{display:flex;justify-content:center;margin-top:18px}
 .case-filter{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:14px}
 .case-filter button{border:1px solid var(--line);background:#fff;color:#44474d;font-size:11px;font-weight:600;padding:6px 12px;border-radius:999px;cursor:pointer}
 .case-filter button.is-active{background:var(--red);border-color:var(--red);color:#fff}
+@media (width<=900px) and (width>640px){.case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (width<=640px){.case-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.case-grid .case-card{scroll-snap-align:start}.case-grid .case-card.is-extra{display:block}.case-more{display:none!important}}
 .case-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .case-image{aspect-ratio:4/2.2;display:block;background:#f5f6f8}
 .case-image img{width:100%;height:100%;object-fit:cover}
@@ -464,6 +469,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <h2>Các mẫu bi gầm tại Auto365</h2>
       <p>Lọc theo thương hiệu, kích thước lens, điện áp và sắp xếp theo giá.</p>
     </div>
+    <figure class="article-image">
+      <img src="bi-gam/hinh/case-toyota-vios-2021-full.webp" alt="Toyota Vios 1.5E CVT 2021 sau khi lắp bi gầm X-Light F10 2.0 New tại Auto365" width="1620" height="1080" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>Toyota Vios 1.5E CVT 2021</h3><p>Ảnh thực tế sau khi lắp X-Light F10 2.0 New tại Auto365.</p></div>
+        <a class="btn btn-outline" href="#case-thuc-te">Xem thêm case</a>
+      </figcaption>
+    </figure>
     <div class="catalogue-layout">
       <div class="catalogue-toolbar">
         <label class="search-box"><input type="text" id="pf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"></label>
@@ -1045,6 +1057,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <div class="price-step"><span>04</span><div><b>Công lắp / cân chỉnh</b><p>Theo phương án thi công</p></div></div>
       <div class="price-final">Tổng giá được chốt sau khi kiểm tra xe.</div>
     </div>
+    <figure class="article-image" style="grid-column:1/-1">
+      <img src="bi-gam/hinh/case-ford-ranger-wildtrak-2026-full.webp" alt="Ford Ranger Wildtrak 2026 sau khi lắp bi gầm X-Light F10 Turbo V2 tại Auto365" width="800" height="533" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>Ford Ranger Wildtrak 2026</h3><p>Chi phí thực tế gồm sản phẩm, pát, dây/relay và công lắp — báo riêng sau khi kiểm tra xe.</p></div>
+        <a class="btn btn-outline" href="#case-thuc-te">Xem thêm case</a>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -1242,7 +1261,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/bmw-x5-e70-2010-lap-x-light-f10-turbo-v2-gia-cau-hinh" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card" data-car-brand="Toyota">
+<article class="case-card is-extra" data-car-brand="Toyota">
   <a class="case-image" href="https://auto365.vn/toyota-fortuner-2018-lap-x5-ultra-f10-turbo-v2" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Toyota Fortuner Tiêu chuẩn 2018">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-fortuner-2018-lap-x5-ultra-f10-turbo-v2-img_6a8bc34651e711.49485682.webp" alt="Toyota Fortuner Tiêu chuẩn 2018 lắp X-Light F10 Turbo V2 · 5500K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1254,7 +1273,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/toyota-fortuner-2018-lap-x5-ultra-f10-turbo-v2" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card" data-car-brand="Ford">
+<article class="case-card is-extra" data-car-brand="Ford">
   <a class="case-image" href="https://auto365.vn/ford-ranger-xls-2023-lap-x-light-f10-new-2025" target="_blank" rel="noreferrer" aria-label="Xem hồ sơ Ford Ranger XLS 2023">
     <img src="https://auto365.vn/uploads/images/news/auto365vn-ford-ranger-xls-2023-nang-cap-x-light-f10-new-2025-img_6a8954a4d62a05.68703535.jpg.webp" alt="Ford Ranger XLS 2023 lắp X-Light F10 New 2025 · 4800K" width="640" height="420" loading="lazy" decoding="async">
   </a>
@@ -1266,7 +1285,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/ford-ranger-xls-2023-lap-x-light-f10-new-2025" target="_blank" rel="noreferrer">Xem hồ sơ &rarr;</a>
   </div>
 </article>
-<article class="case-card" data-car-brand="Kia">
+<article class="case-card is-extra" data-car-brand="Kia">
   <a class="case-image" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer" aria-label="Xem sản phẩm X-Light 301 V2 lắp trên Kia Carnival 2004">
     <img src="bi-gam/hinh/case-kia-carnival-2004-x-light-301-v2.webp" alt="Kia Carnival 2004 lắp bi gầm X-Light 301 V2" width="1537" height="1023" loading="lazy" decoding="async">
   </a>
@@ -1278,7 +1297,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <a class="case-link" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Xem sản phẩm &rarr;</a>
   </div>
 </article>
-<article class="case-card" data-car-brand="VinFast">
+<article class="case-card is-extra" data-car-brand="VinFast">
   <a class="case-image" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer" aria-label="Xem sản phẩm GTR G1 Turbo V2 lắp trên VinFast VF6">
     <img src="bi-gam/hinh/case-vinfast-vf6-gtr-g1-turbo-v2.webp" alt="VinFast VF6 lắp bi gầm GTR G1 Turbo V2" width="800" height="532" loading="lazy" decoding="async">
   </a>
@@ -1291,6 +1310,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </article>
     </div>
+    <div class="case-more"><button type="button" class="btn btn-outline" id="case-more">Xem thêm case</button></div>
     <div class="cta-strip">
       <p>Xe của bạn chưa có trong danh sách case?<span>Nhờ Auto365 kiểm tra hốc đèn và cấu hình phù hợp trước khi lắp.</span></p>
       <div class="cta-strip-actions">
@@ -1371,6 +1391,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <div class="process-step"><b>06</b><strong>Cân chỉnh &amp; QC</strong><small>Kiểm tra vùng sáng, chống chói</small></div>
       <div class="process-step"><b>07</b><strong>Bàn giao &amp; bảo hành</strong><small>Phiếu bàn giao, điều kiện bảo hành</small></div>
     </div>
+    <figure class="article-image">
+      <img src="bi-gam/hinh/case-toyota-hilux-2020-full.webp" alt="Toyota Hilux 2.4E 4x2 AT 2020 sau khi hoàn thiện lắp bi gầm AES SV 3.0 Max tại Auto365" width="800" height="533" loading="lazy" decoding="async">
+      <figcaption>
+        <div><h3>Toyota Hilux 2.4E 4x2 AT 2020</h3><p>Bàn giao sau khi cân chỉnh vùng sáng — AES SV 3.0 Max.</p></div>
+        <a class="btn btn-outline" href="#case-thuc-te">Xem thêm case</a>
+      </figcaption>
+    </figure>
     <div class="warranty-lookup">
       <b style="color:#fff;font-size:12px">Tra cứu bảo hành</b>
       <input type="text" placeholder="Nhập mã đơn hoặc số điện thoại">
@@ -1842,6 +1869,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
   var caseFilter = document.getElementById('case-filter');
   var caseCards = Array.prototype.slice.call(document.querySelectorAll('#case-grid .case-card'));
+  var caseGridEl = document.getElementById('case-grid');
+  var caseMoreBtn = document.getElementById('case-more');
   caseFilter.addEventListener('click', function(e){
     var btn = e.target.closest('button');
     if (!btn) return;
@@ -1851,6 +1880,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     caseCards.forEach(function(c){
       c.style.display = !brand || c.getAttribute('data-car-brand') === brand ? '' : 'none';
     });
+    if (brand) {
+      caseGridEl.classList.add('is-expanded');
+      caseMoreBtn.hidden = true;
+    } else {
+      caseGridEl.classList.remove('is-expanded');
+      caseMoreBtn.hidden = false;
+    }
+  });
+  caseMoreBtn.addEventListener('click', function(){
+    caseGridEl.classList.add('is-expanded');
+    caseMoreBtn.hidden = true;
   });
 
   var videoForm = document.getElementById('video-lead-form');
