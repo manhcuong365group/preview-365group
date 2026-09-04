@@ -2006,10 +2006,15 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     return node;
   }
 
+  function cardNeeds(card){
+    return Array.prototype.map.call(card.querySelectorAll('.product-needs span'), function(s){ return s.textContent.trim(); });
+  }
+
   compareOpenBtn.addEventListener('click', function(){
     if (compareSelected.length < 2) return;
-    var rows = ['Hình ảnh', 'Sản phẩm', 'Giá', 'Điểm nổi bật'];
+    var rows = ['Hình ảnh', 'Sản phẩm', 'Thương hiệu', 'Giá', 'Lens', 'Điện áp', 'Nhu cầu phù hợp', 'Điểm nổi bật'];
     var highlightsList = compareSelected.map(cardHighlights);
+    var needsList = compareSelected.map(cardNeeds);
     var names = compareSelected.map(function(c){ return c.querySelector('h3 a').textContent.trim(); });
 
     compareTable.textContent = '';
@@ -2033,8 +2038,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         } else if (rowLabel === 'Sản phẩm') {
           var a = txt('a', {href: nameLink.href, target: '_blank', rel: 'noreferrer'}, nameLink.textContent);
           td = el('td', {'class': 'cmp-name'}, [a]);
+        } else if (rowLabel === 'Thương hiệu') {
+          td = txt('td', null, card.getAttribute('data-brand') || 'Chưa xác nhận');
         } else if (rowLabel === 'Giá') {
           td = txt('td', {'class': 'cmp-price'}, price.textContent);
+        } else if (rowLabel === 'Lens') {
+          var lensVal = card.getAttribute('data-lens');
+          td = txt('td', null, lensVal ? (lensVal + ' inch') : 'Cần kiểm tra');
+        } else if (rowLabel === 'Điện áp') {
+          td = txt('td', null, card.getAttribute('data-voltage') || 'Cần kiểm tra');
+        } else if (rowLabel === 'Nhu cầu phù hợp') {
+          td = needsList[i].length ? txt('td', null, needsList[i].join(', ')) : txt('td', null, 'Chưa gắn nhãn');
         } else {
           var ul = el('ul', {'class': 'cmp-highlights'}, highlightsList[i].map(function(h){ return txt('li', null, h); }));
           td = el('td', null, [ul]);
