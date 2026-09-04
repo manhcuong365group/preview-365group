@@ -252,7 +252,7 @@ document.querySelector('#hubFind').addEventListener('click',()=>{const vehicle=d
 const trustedLocations=document.querySelector('#diem-lap-uy-tin');const installFlow=document.querySelector('#quy-trinh-lap');if(trustedLocations&&installFlow)installFlow.after(trustedLocations);
 </script>
 <script>
-const marketBrands=document.querySelector('#thuong-hieu-thi-truong');const hubConsole=document.querySelector('#chon-cau-hinh');if(marketBrands&&hubConsole)hubConsole.after(marketBrands);
+const marketBrands=document.querySelector('#thuong-hieu');const hubConsole=document.querySelector('#chon-cau-hinh');if(marketBrands&&hubConsole)hubConsole.after(marketBrands);
 </script>
 <script>
 const faqGrid=document.querySelector('.faq-full'),sourceBlock=document.querySelector('.source');if(faqGrid&&sourceBlock){const faqSection=document.createElement('section');faqSection.className='faq-bottom';faqSection.id='faq';faqSection.innerHTML='<div class="wrap"><p class="eyebrow">CÂU HỎI THƯỜNG GẶP</p><h2>Những điều nên làm rõ trước khi lắp camera hành trình.</h2><p>Câu trả lời mang tính hướng dẫn lựa chọn; hãy xác nhận theo model, xe và gói lắp thực tế.</p></div>';faqSection.querySelector('.wrap').append(faqGrid);sourceBlock.before(faqSection);}
