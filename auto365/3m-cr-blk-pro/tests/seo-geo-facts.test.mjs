@@ -133,8 +133,8 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<p class="spec-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
-  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:360px minmax\(0,1fr\);align-items:start;gap:32px\}/);
-  assert.match(html, /\.evidence-data\{max-width:610px;justify-self:start;width:100%\}/);
+  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:440px minmax\(0,1fr\);align-items:start;gap:32px\}/);
+  assert.match(html, /\.evidence-data\{max-width:530px;justify-self:start;width:100%\}/);
 });
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
@@ -166,7 +166,8 @@ test('keeps location cards compact without redundant tags or address underlines'
 
 test('presents Auto365 reasons as four linked proof points rather than a generic checklist', () => {
   assert.match(html, /<h3 id="why-auto365-title">Vì sao nên chọn hệ thống Auto365 để thi công\?<\/h3>/);
-  assert.match(html, /Quyết định dựa trên những gì khách hàng có thể đối chiếu trước, trong và sau khi thi công\./);
+  assert.doesNotMatch(html, /Chọn dịch vụ có cơ sở/);
+  assert.doesNotMatch(html, /Quyết định dựa trên những gì khách hàng có thể đối chiếu trước, trong và sau khi thi công\./);
   assert.equal((html.match(/class="proof-card(?: |")/g) || []).length, 4);
   assert.match(html, /class="proof-card" href="#pro-shop-certificates"/);
   assert.match(html, /class="proof-card" href="#specs"/);
