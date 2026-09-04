@@ -1689,12 +1689,28 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     el.addEventListener('input', function(){ shown = PAGE_SIZE; apply(); });
     el.addEventListener('change', function(){ shown = PAGE_SIZE; apply(); });
   });
+  function syncSelectFromBoxes(sel, boxes){
+    if (!sel) return;
+    var checked = boxes.filter(function(b){ return b.checked; });
+    sel.value = checked.length === 1 ? checked[0].value : '';
+  }
   brandBoxes.concat(lensBoxes, colorBoxes, needBoxes).forEach(function(el){
-    el.addEventListener('change', function(){ shown = PAGE_SIZE; apply(); });
+    el.addEventListener('change', function(){
+      syncSelectFromBoxes(document.getElementById('mf-brand'), brandBoxes);
+      syncSelectFromBoxes(document.getElementById('mf-lens'), lensBoxes);
+      syncSelectFromBoxes(document.getElementById('mf-color'), colorBoxes);
+      syncSelectFromBoxes(document.getElementById('mf-need'), needBoxes);
+      shown = PAGE_SIZE; apply();
+    });
   });
   clearBtn.addEventListener('click', function(){
     brandBoxes.concat(lensBoxes, colorBoxes, needBoxes).forEach(function(el){ el.checked = false; });
     search.value = '';
+    sortSel.value = '';
+    ['mf-brand', 'mf-lens', 'mf-color', 'mf-need'].forEach(function(id){
+      var sel = document.getElementById(id);
+      if (sel) sel.value = '';
+    });
     shown = PAGE_SIZE; apply();
   });
   function syncSingleSelect(sel, boxes){
