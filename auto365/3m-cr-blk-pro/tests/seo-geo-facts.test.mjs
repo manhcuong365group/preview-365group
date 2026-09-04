@@ -111,3 +111,26 @@ test('uses compact location action chips and omits the district label', () => {
   assert.match(html, /\.location-actions\{display:flex;flex-wrap:wrap/);
   assert.match(html, /\.location-actions a\{display:inline-flex/);
 });
+
+test('limits case and price copy to evidence published on this preview', () => {
+  assert.match(html, /Mỗi case hiển thị ảnh thi công và cấu hình đã dán của xe\./);
+  assert.match(html, /Xe thật • Cấu hình đã dán/);
+  assert.doesNotMatch(html, /Case có ảnh, mã phim và ngày thi công/);
+  assert.match(html, /Báo giá theo nhóm xe<\/strong> — phạm vi hạng mục được xác nhận trước khi thi công\./);
+});
+
+test('uses only the stated Auto 75 condition for the published TDS table', () => {
+  assert.match(html, /Dữ liệu áp dụng cho tổ hợp phim \+ kính Auto 75 theo Table B \(kính ô tô xanh dày 6 mm, VLT nền 73%\)/);
+});
+
+test('does not initialize a sticky contact component that is absent from the markup', () => {
+  assert.doesNotMatch(html, /document\.getElementById\('contactSticky'\)/);
+  assert.doesNotMatch(html, /IntersectionObserver\(function\(entries\)\{sticky/);
+});
+
+test('keeps location cards compact without redundant tags or address underlines', () => {
+  assert.doesNotMatch(html, /class="location-tag"/);
+  assert.match(html, /\.location-card\{min-height:0\}/);
+  assert.match(html, /\.location-card \.location-address\{color:var\(--accent\);font-size:11px;font-weight:750;text-decoration:none\}/);
+  assert.match(html, /\.location-actions\{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;padding-top:0\}/);
+});
