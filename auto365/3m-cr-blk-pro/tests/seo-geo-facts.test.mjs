@@ -95,3 +95,11 @@ test('routes each location card to its detail page, map, or system hotline', () 
   assert.match(html, /href="https:\/\/maps\.app\.goo\.gl\/fZ38C2BhKZVyqLBv6"/);
   assert.match(html, /href="tel:19009365">Hotline 1900 9365<\/a>/);
 });
+
+test('uses the street address as the Google Maps link without service-hours copy', () => {
+  assert.doesNotMatch(html, /Giờ phục vụ:/);
+  assert.match(html, /class="location-address" href="https:\/\/www\.google\.com\/maps\?cid=9988450659874114499&amp;g_mp=[^"]+"[^>]*>4\/4\/1\/7 Đường số 3, Phường Hiệp Bình, TP\. Hồ Chí Minh<\/a>/);
+  assert.match(html, /class="location-address" href="https:\/\/maps\.app\.goo\.gl\/fZ38C2BhKZVyqLBv6"[^>]*>4\/4\/3\/3 Đường số 3, Khu phố 31, Phường Hiệp Bình, TP\. Hồ Chí Minh<\/a>/);
+  assert.match(html, /class="location-detail" href="https:\/\/auto365\.vn\/thu-duc"/);
+  assert.match(html, /class="location-detail" href="https:\/\/auto365\.vn\/3m-pro-shop-tru-so-chinh"/);
+});
