@@ -123,6 +123,11 @@ test('uses only the stated Auto 75 condition for the published TDS table', () =>
   assert.match(html, /Dữ liệu áp dụng cho tổ hợp phim \+ kính Auto 75 theo Table B \(kính ô tô xanh dày 6 mm, VLT nền 73%\)/);
 });
 
+test('keeps the technical-specification heading on one line on larger screens', () => {
+  assert.match(html, /\.evidence-copy h2\{font-size:clamp\(20px,2vw,28px\);white-space:nowrap\}/);
+  assert.match(html, /@media\(max-width:680px\)\{[^}]*\.evidence-copy h2\{white-space:normal\}/);
+});
+
 test('does not initialize a sticky contact component that is absent from the markup', () => {
   assert.doesNotMatch(html, /document\.getElementById\('contactSticky'\)/);
   assert.doesNotMatch(html, /IntersectionObserver\(function\(entries\)\{sticky/);
@@ -131,18 +136,24 @@ test('does not initialize a sticky contact component that is absent from the mar
 test('keeps location cards compact without redundant tags or address underlines', () => {
   assert.doesNotMatch(html, /class="location-tag"/);
   assert.match(html, /\.location-card\{min-height:0\}/);
-  assert.match(html, /\.location-card \.location-address\{color:var\(--accent\);font-size:11px;font-weight:750;text-decoration:none\}/);
+  assert.match(html, /\.location-card \.location-address\{color:#e31b23;font-size:11px;font-weight:750;text-decoration:none\}/);
+  assert.match(html, /\.location-actions \.location-phone\{color:#fff;border-color:#e31b23;background:#e31b23\}/);
   assert.match(html, /\.location-actions\{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;padding-top:0\}/);
   assert.match(html, /<span class="location-address location-availability">Hỗ trợ tư vấn toàn quốc<\/span>/);
 });
 
 test('presents Auto365 reasons as four linked proof points rather than a generic checklist', () => {
-  assert.match(html, /<h3 id="why-auto365-title">Tại sao chọn Auto365\?<\/h3>/);
+  assert.match(html, /<h3 id="why-auto365-title">Vì sao nên chọn hệ thống Auto365 để thi công\?<\/h3>/);
+  assert.match(html, /Quyết định dựa trên những gì khách hàng có thể đối chiếu trước, trong và sau khi thi công\./);
   assert.equal((html.match(/class="proof-card(?: |")/g) || []).length, 4);
   assert.match(html, /class="proof-card" href="#pro-shop-certificates"/);
   assert.match(html, /class="proof-card" href="#specs"/);
   assert.match(html, /class="proof-card" href="#cases"/);
   assert.match(html, /class="proof-card proof-card-accent" href="#warranty"/);
+  assert.match(html, /<strong>Chọn đúng điểm thi công<\/strong>/);
+  assert.match(html, /<strong>Chọn đúng cấu hình cho xe<\/strong>/);
+  assert.match(html, /<strong>Xem xe đã thi công trước<\/strong>/);
+  assert.match(html, /<strong>Có hồ sơ sau khi bàn giao<\/strong>/);
   assert.doesNotMatch(html, /Báo giá theo nhóm xe<\/strong> — phạm vi hạng mục/);
 });
 
