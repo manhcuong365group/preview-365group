@@ -133,8 +133,8 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<p class="spec-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
-  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:440px minmax\(0,1fr\);align-items:start;gap:32px\}/);
-  assert.match(html, /\.evidence-data\{max-width:530px;justify-self:start;width:100%\}/);
+  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:460px minmax\(0,1fr\);align-items:start;gap:32px\}/);
+  assert.match(html, /\.evidence-data\{max-width:460px;justify-self:start;width:100%\}/);
 });
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
