@@ -116,7 +116,7 @@ test('limits case and price copy to evidence published on this preview', () => {
   assert.match(html, /Mỗi case hiển thị ảnh thi công và cấu hình đã dán của xe\./);
   assert.match(html, /Xe thật • Cấu hình đã dán/);
   assert.doesNotMatch(html, /Case có ảnh, mã phim và ngày thi công/);
-  assert.match(html, /Báo giá theo nhóm xe<\/strong> — phạm vi hạng mục được xác nhận trước khi thi công\./);
+  assert.match(html, /Giá tham khảo trọn xe theo nhóm xe;/);
 });
 
 test('uses only the stated Auto 75 condition for the published TDS table', () => {
@@ -133,6 +133,17 @@ test('keeps location cards compact without redundant tags or address underlines'
   assert.match(html, /\.location-card\{min-height:0\}/);
   assert.match(html, /\.location-card \.location-address\{color:var\(--accent\);font-size:11px;font-weight:750;text-decoration:none\}/);
   assert.match(html, /\.location-actions\{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;padding-top:0\}/);
+  assert.match(html, /<span class="location-address location-availability">Hỗ trợ tư vấn toàn quốc<\/span>/);
+});
+
+test('presents Auto365 reasons as four linked proof points rather than a generic checklist', () => {
+  assert.match(html, /<h3 id="why-auto365-title">Tại sao chọn Auto365\?<\/h3>/);
+  assert.equal((html.match(/class="proof-card(?: |")/g) || []).length, 4);
+  assert.match(html, /class="proof-card" href="#pro-shop-certificates"/);
+  assert.match(html, /class="proof-card" href="#specs"/);
+  assert.match(html, /class="proof-card" href="#cases"/);
+  assert.match(html, /class="proof-card proof-card-accent" href="#warranty"/);
+  assert.doesNotMatch(html, /Báo giá theo nhóm xe<\/strong> — phạm vi hạng mục/);
 });
 
 test('uses a compact end-user heading rhythm without leftover eyebrow labels', () => {
