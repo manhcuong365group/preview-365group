@@ -1978,29 +1978,56 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     return Array.prototype.map.call(card.querySelectorAll('.product-highlights li'), function(li){ return li.textContent.trim(); });
   }
 
+  function el(tag, props, children){
+    var node = document.createElement(tag);
+    if (props) Object.keys(props).forEach(function(k){ node.setAttribute(k, props[k]); });
+    (children || []).forEach(function(c){ node.appendChild(c); });
+    return node;
+  }
+  function txt(tag, props, text){
+    var node = el(tag, props);
+    node.textContent = text;
+    return node;
+  }
+
   compareOpenBtn.addEventListener('click', function(){
     if (compareSelected.length < 2) return;
     var rows = ['Hình ảnh', 'Sản phẩm', 'Giá', 'Điểm nổi bật'];
     var highlightsList = compareSelected.map(cardHighlights);
     var names = compareSelected.map(function(c){ return c.querySelector('h3 a').textContent.trim(); });
-    var html = '<caption class="sr-only">So sánh ' + names.join(', ') + '</caption>';
-    html += '<thead class="sr-only"><tr><th scope="col">Tiêu chí</th>' + names.map(function(n){ return '<th scope="col">' + n + '</th>'; }).join('') + '</tr></thead>';
-    html += '<tbody>';
+
+    compareTable.textContent = '';
+    compareTable.appendChild(txt('caption', {'class': 'sr-only'}, 'So sánh ' + names.join(', ')));
+
+    var theadRow = el('tr', null, [txt('th', {scope: 'col'}, 'Tiêu chí')].concat(
+      names.map(function(n){ return txt('th', {scope: 'col'}, n); })
+    ));
+    compareTable.appendChild(el('thead', {'class': 'sr-only'}, [theadRow]));
+
+    var tbody = el('tbody');
     rows.forEach(function(rowLabel){
-      html += '<tr><th scope="row">' + rowLabel + '</th>';
+      var tr = el('tr', null, [txt('th', {scope: 'row'}, rowLabel)]);
       compareSelected.forEach(function(card, i){
         var img = card.querySelector('.product-image img');
         var nameLink = card.querySelector('h3 a');
         var price = card.querySelector('.product-price');
-        if (rowLabel === 'Hình ảnh') html += '<td><img src="' + img.src + '" alt="' + img.alt + '"></td>';
-        else if (rowLabel === 'Sản phẩm') html += '<td class="cmp-name"><a href="' + nameLink.href + '" target="_blank" rel="noreferrer">' + nameLink.textContent + '</a></td>';
-        else if (rowLabel === 'Giá') html += '<td class="cmp-price">' + price.textContent + '</td>';
-        else html += '<td><ul class="cmp-highlights"><li>' + highlightsList[i].join('</li><li>') + '</li></ul></td>';
+        var td;
+        if (rowLabel === 'Hình ảnh') {
+          td = el('td', null, [el('img', {src: img.src, alt: img.alt})]);
+        } else if (rowLabel === 'Sản phẩm') {
+          var a = txt('a', {href: nameLink.href, target: '_blank', rel: 'noreferrer'}, nameLink.textContent);
+          td = el('td', {'class': 'cmp-name'}, [a]);
+        } else if (rowLabel === 'Giá') {
+          td = txt('td', {'class': 'cmp-price'}, price.textContent);
+        } else {
+          var ul = el('ul', {'class': 'cmp-highlights'}, highlightsList[i].map(function(h){ return txt('li', null, h); }));
+          td = el('td', null, [ul]);
+        }
+        tr.appendChild(td);
       });
-      html += '</tr>';
+      tbody.appendChild(tr);
     });
-    html += '</tbody>';
-    compareTable.innerHTML = html;
+    compareTable.appendChild(tbody);
     openModal(compareModal);
   });
 
@@ -2041,25 +2068,33 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     if (budgetVal && !relaxedBudget) reasons.push('trong tầm ngân sách');
     var baseReason = reasons.length ? ('Phù hợp với ' + reasons.join(', ') + '.') : '';
     if (relaxedBudget) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng ngân sách đã chọn — đây là các gợi ý gần nhất theo nhu cầu và lens.';
-    qsResultBox.innerHTML = picks.map(function(card, i){
+    qsResultBox.textContent = '';
+    picks.forEach(function(card, i){
       var img = card.querySelector('.product-image img');
       var nameLink = card.querySelector('h3 a');
       var price = card.querySelector('.product-price').textContent;
       var reasonText = i === 0 ? baseReason : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác.';
-      var zaloTitle = ('Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href).replace(/"/g, '&quot;');
-      return '<div class="qs-result">' +
-        '<img src="' + img.src + '" alt="' + img.alt + '">' +
-        '<div>' +
-          '<div class="qs-result-name">' + nameLink.textContent + '</div>' +
-          '<div class="qs-result-price">' + price + '</div>' +
-          '<p class="qs-result-reason">' + reasonText + (i === 0 ? ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.' : '') + '</p>' +
-          '<div class="qs-result-actions">' +
-            '<a class="btn btn-outline" href="' + nameLink.href + '" target="_blank" rel="noreferrer">Xem sản phẩm</a>' +
-            '<a class="btn btn-primary qs-consult" data-title="' + zaloTitle + '" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Tư vấn sản phẩm này</a>' +
-          '</div>' +
-        '</div>' +
-      '</div>';
-    }).join('');
+      if (i === 0) reasonText += ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.';
+      var zaloTitle = 'Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href;
+
+      var consultLink = txt('a', {'class': 'btn btn-primary qs-consult', href: 'https://zalo.me/0365365911', target: '_blank', rel: 'noreferrer'}, 'Tư vấn sản phẩm này');
+      consultLink.setAttribute('data-title', zaloTitle);
+      var actions = el('div', {'class': 'qs-result-actions'}, [
+        txt('a', {'class': 'btn btn-outline', href: nameLink.href, target: '_blank', rel: 'noreferrer'}, 'Xem sản phẩm'),
+        consultLink
+      ]);
+      var body = el('div', null, [
+        txt('div', {'class': 'qs-result-name'}, nameLink.textContent),
+        txt('div', {'class': 'qs-result-price'}, price),
+        txt('p', {'class': 'qs-result-reason'}, reasonText),
+        actions
+      ]);
+      var row = el('div', {'class': 'qs-result'}, [
+        el('img', {src: img.src, alt: img.alt}),
+        body
+      ]);
+      qsResultBox.appendChild(row);
+    });
   }
 
   function qsRunSearch(needVal, lensVal, budgetVal, relaxedBudget){
