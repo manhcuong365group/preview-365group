@@ -75,3 +75,15 @@ test('keeps stylesheet tags balanced so browser CSS parsing is deterministic', (
   const closingTags = (html.match(/<\/style>/g) || []).length;
   assert.equal(openingTags, closingTags);
 });
+
+test('does not claim an unverified price confirmation and preserves certificate images', () => {
+  assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
+  assert.match(html, /\.pro-shop-gallery img\{height:150px;object-fit:contain\}/);
+  assert.doesNotMatch(html, /\.pro-shop-gallery img\{height:150px;object-fit:cover\}/);
+});
+
+test('does not reserve mobile space for a sticky CTA that is absent from the markup', () => {
+  assert.doesNotMatch(html, /id="contactSticky"/);
+  assert.doesNotMatch(html, /padding-bottom:calc\(68px \+ env\(safe-area-inset-bottom\)\)/);
+  assert.doesNotMatch(html, /\.contact-sticky\{display:none!important\}/);
+});
