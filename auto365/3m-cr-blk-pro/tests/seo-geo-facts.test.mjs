@@ -124,8 +124,16 @@ test('uses only the stated Auto 75 condition for the published TDS table', () =>
 });
 
 test('keeps the technical-specification heading on one line on larger screens', () => {
-  assert.match(html, /\.evidence-copy h2\{font-size:clamp\(20px,2vw,28px\);white-space:nowrap\}/);
-  assert.match(html, /@media\(max-width:680px\)\{[^}]*\.evidence-copy h2\{white-space:normal\}/);
+  assert.match(html, /\.evidence-data h2\{[^}]*font-size:clamp\(20px,2vw,28px\);white-space:nowrap\}/);
+  assert.match(html, /@media\(max-width:680px\)\{[^}]*\.evidence-data h2\{white-space:normal\}/);
+});
+
+test('places the real-installation image beside the technical table without redundant source panels', () => {
+  assert.match(html, /<div class="container evidence-grid">\s*<figure class="evidence-visual">[\s\S]*?<div class="evidence-data"><h2>Thông số dùng để lựa chọn<\/h2>/);
+  assert.match(html, /<p class="spec-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B/);
+  assert.doesNotMatch(html, /<div class="source-card">/);
+  assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
+  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:minmax\(280px,\.72fr\) minmax\(0,1\.28fr\);align-items:stretch;gap:28px\}/);
 });
 
 test('does not initialize a sticky contact component that is absent from the markup', () => {
