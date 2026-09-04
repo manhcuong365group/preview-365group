@@ -1579,10 +1579,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </div>
 
-<div class="compare-modal" id="compare-modal">
+<div class="compare-modal" id="compare-modal" role="dialog" aria-modal="true" aria-labelledby="compare-modal-title">
   <div class="compare-modal-inner">
     <div class="compare-modal-head">
-      <h3>So sánh sản phẩm</h3>
+      <h3 id="compare-modal-title">So sánh sản phẩm</h3>
       <button type="button" class="compare-modal-close" id="compare-close" aria-label="Đóng">&times;</button>
     </div>
     <div style="overflow-x:auto">
@@ -1591,12 +1591,12 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </div>
 
-<div class="consult-modal" id="consult-modal">
+<div class="consult-modal" id="consult-modal" role="dialog" aria-modal="true" aria-labelledby="consult-modal-title" aria-describedby="consult-modal-desc">
   <div class="consult-modal-inner">
     <div class="consult-modal-head">
       <div>
-        <h3>Nhận tư vấn theo xe</h3>
-        <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
+        <h3 id="consult-modal-title">Nhận tư vấn theo xe</h3>
+        <p id="consult-modal-desc">Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
       </div>
       <button type="button" class="consult-modal-close" id="consult-close" aria-label="Đóng">&times;</button>
     </div>
@@ -1828,16 +1828,28 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   function getFocusable(container){
     return Array.prototype.slice.call(container.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
   }
+  var INERT_TARGETS = ['.skip-link', '.site-header', '#noi-dung-chinh', 'footer', '#compare-bar'];
+  function setBackgroundInert(on){
+    INERT_TARGETS.forEach(function(sel){
+      var el = document.querySelector(sel);
+      if (!el) return;
+      if (on) el.setAttribute('inert', ''); else el.removeAttribute('inert');
+    });
+  }
   function openModal(modalEl){
     lastFocusedEl = document.activeElement;
     modalEl.classList.add('is-open');
     document.body.style.overflow = 'hidden';
+    setBackgroundInert(true);
     var focusables = getFocusable(modalEl);
     if (focusables.length) focusables[0].focus();
   }
   function closeModal(modalEl){
     modalEl.classList.remove('is-open');
-    if (!document.querySelector('.consult-modal.is-open, .compare-modal.is-open')) document.body.style.overflow = '';
+    if (!document.querySelector('.consult-modal.is-open, .compare-modal.is-open')) {
+      document.body.style.overflow = '';
+      setBackgroundInert(false);
+    }
     if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') lastFocusedEl.focus();
   }
   function trapFocus(modalEl, e){
