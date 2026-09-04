@@ -87,3 +87,11 @@ test('does not reserve mobile space for a sticky CTA that is absent from the mar
   assert.doesNotMatch(html, /padding-bottom:calc\(68px \+ env\(safe-area-inset-bottom\)\)/);
   assert.doesNotMatch(html, /\.contact-sticky\{display:none!important\}/);
 });
+
+test('routes each location card to its detail page, map, or system hotline', () => {
+  assert.match(html, /href="https:\/\/auto365\.vn\/thu-duc"[^>]*>Xem chi tiết →<\/a>/);
+  assert.match(html, /href="https:\/\/www\.google\.com\/maps\?cid=9988450659874114499&amp;g_mp=/);
+  assert.match(html, /href="https:\/\/auto365\.vn\/3m-pro-shop-tru-so-chinh"[^>]*>Xem chi tiết →<\/a>/);
+  assert.match(html, /href="https:\/\/maps\.app\.goo\.gl\/fZ38C2BhKZVyqLBv6"/);
+  assert.match(html, /href="tel:19009365">Hotline 1900 9365<\/a>/);
+});
