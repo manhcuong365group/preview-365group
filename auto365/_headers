@@ -7,3 +7,8 @@
 # HTML luôn revalidate — tránh webview/zone cache giữ bản cũ
 /phim-cach-nhiet-3m/*
   Cache-Control: no-cache, must-revalidate
+
+/bi-gam
+  Cache-Control: no-cache, must-revalidate
+/bi-gam.html
+  Cache-Control: no-cache, must-revalidate
