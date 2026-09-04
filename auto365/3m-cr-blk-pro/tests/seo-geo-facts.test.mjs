@@ -24,7 +24,7 @@ test('shows the verified configuration for each published case', () => {
 });
 
 test('keeps technical copy attributed to the applicable 3M TDS conditions', () => {
-  assert.match(html, /Thông số theo tài liệu 3M/);
+  assert.match(html, /<h2>Thông số dùng để lựa chọn<\/h2>/);
   assert.match(html, /Technical Data Sheet, Revision E, May 2024, Table B/);
   assert.match(html, /IRER được xác định trong dải 780–2\.500 nm/);
   assert.doesNotMatch(html, /Auto365 đo/);
@@ -133,4 +133,17 @@ test('keeps location cards compact without redundant tags or address underlines'
   assert.match(html, /\.location-card\{min-height:0\}/);
   assert.match(html, /\.location-card \.location-address\{color:var\(--accent\);font-size:11px;font-weight:750;text-decoration:none\}/);
   assert.match(html, /\.location-actions\{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;padding-top:0\}/);
+});
+
+test('uses a compact end-user heading rhythm without leftover eyebrow labels', () => {
+  assert.doesNotMatch(html, /class="eyebrow/);
+  assert.doesNotMatch(html, /\.eyebrow\{display:none\}/);
+  assert.match(html, /\.section\{padding:20px 0\}/);
+  assert.match(html, /\.pro-shop-section\{padding:20px 0 36px\}/);
+  assert.match(html, /@media\(max-width:680px\)\{\.section\{padding:18px 0\}/);
+});
+
+test('names the case gallery as real CR BLK Pro installations', () => {
+  assert.match(html, /<h2>Xe thực tế thi công dán phim cách nhiệt CR BLK Pro tại Auto365<\/h2>/);
+  assert.doesNotMatch(html, /<h2>Case CR BLK Pro tại Auto365<\/h2>/);
 });
