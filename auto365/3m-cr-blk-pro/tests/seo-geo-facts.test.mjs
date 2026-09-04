@@ -133,8 +133,8 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<p class="spec-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
-  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:minmax\(280px,\.72fr\) minmax\(0,1\.28fr\);align-items:stretch;gap:28px\}/);
-  assert.match(html, /\.evidence-data\{max-width:640px;justify-self:end;width:100%\}/);
+  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:360px minmax\(0,1fr\);align-items:start;gap:32px\}/);
+  assert.match(html, /\.evidence-data\{max-width:610px;justify-self:start;width:100%\}/);
 });
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
@@ -143,6 +143,11 @@ test('uses a compact transposed specification table for the three CR BLK codes',
   assert.match(html, /<th scope="row">TSER<\/th><td>58%<\/td><td>60%<\/td><td>64%<\/td>/);
   assert.match(html, /<th scope="row">Giảm chói<\/th><td>44%<\/td><td>55%<\/td><td>81%<\/td>/);
   assert.doesNotMatch(html, /Vị trí Auto365 đề xuất:/);
+});
+
+test('uses a consistent 34px desktop scale for every section heading', () => {
+  assert.match(html, /h2\{font-size:34px!important\}/);
+  assert.match(html, /@media\(max-width:680px\)\{h2\{font-size:28px!important\}\}/);
 });
 
 test('does not initialize a sticky contact component that is absent from the markup', () => {
