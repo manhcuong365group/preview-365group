@@ -99,7 +99,15 @@ test('routes each location card to its detail page, map, or system hotline', () 
 test('uses the street address as the Google Maps link without service-hours copy', () => {
   assert.doesNotMatch(html, /Giờ phục vụ:/);
   assert.match(html, /class="location-address" href="https:\/\/www\.google\.com\/maps\?cid=9988450659874114499&amp;g_mp=[^"]+"[^>]*>4\/4\/1\/7 Đường số 3, Phường Hiệp Bình, TP\. Hồ Chí Minh<\/a>/);
-  assert.match(html, /class="location-address" href="https:\/\/maps\.app\.goo\.gl\/fZ38C2BhKZVyqLBv6"[^>]*>4\/4\/3\/3 Đường số 3, Khu phố 31, Phường Hiệp Bình, TP\. Hồ Chí Minh<\/a>/);
+  assert.match(html, /class="location-address" href="https:\/\/maps\.app\.goo\.gl\/fZ38C2BhKZVyqLBv6"[^>]*>4\/4\/3\/3 Đường số 3, Phường Hiệp Bình, TP\. Hồ Chí Minh<\/a>/);
   assert.match(html, /class="location-detail" href="https:\/\/auto365\.vn\/thu-duc"/);
   assert.match(html, /class="location-detail" href="https:\/\/auto365\.vn\/3m-pro-shop-tru-so-chinh"/);
+});
+
+test('uses compact location action chips and omits the district label', () => {
+  assert.doesNotMatch(html, /Khu phố 31/);
+  assert.match(html, /<div class="location-actions"><a class="location-phone" href="tel:\+84365365911">Gọi 0365 365 911<\/a><a class="location-detail"/);
+  assert.match(html, /<div class="location-actions"><a class="location-phone" href="tel:\+84365365365">Gọi 0365 365 365<\/a><a class="location-detail"/);
+  assert.match(html, /\.location-actions\{display:flex;flex-wrap:wrap/);
+  assert.match(html, /\.location-actions a\{display:inline-flex/);
 });
