@@ -451,7 +451,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
       </div>
     </div>
-    <form class="finder-bar" id="tu-van-theo-xe">
+    <form class="finder-bar" id="tu-van-theo-xe" action="/api/lead" method="post">
       <div class="finder-bar-head">
         <span class="kicker">Kiểm tra nhanh</span>
         <h2>Nhận tư vấn theo xe</h2>
@@ -467,7 +467,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label class="finder-bar-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
       </div>
       <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
-      <p class="finder-bar-note" role="status" aria-live="polite">Nội dung được sao chép để bạn gửi trực tiếp qua Zalo; trang không tự gửi dữ liệu.</p>
+      <p class="finder-bar-note" role="status" aria-live="polite">Auto365 sẽ gửi họ tên, số điện thoại và thông tin xe đến hệ thống tiếp nhận để liên hệ tư vấn. Dữ liệu được xử lý theo Chính sách bảo mật. Sau khi gửi, bạn có thể tiếp tục trao đổi qua Zalo.</p>
     </form>
   </div>
 </section>
@@ -1599,7 +1599,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       </div>
       <button type="button" class="consult-modal-close" id="consult-close" aria-label="Đóng">&times;</button>
     </div>
-    <form class="finder-bar" id="consult-form" style="padding:0">
+    <form class="finder-bar" id="consult-form" style="padding:0" action="/api/lead" method="post">
       <div class="finder-bar-fields">
         <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
         <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
@@ -1608,7 +1608,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <label class="finder-bar-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
       </div>
       <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
-      <p class="finder-bar-note consult-modal-note" role="status" aria-live="polite">Nội dung được sao chép để bạn gửi trực tiếp qua Zalo; trang không tự gửi dữ liệu.</p>
+      <p class="finder-bar-note consult-modal-note" role="status" aria-live="polite">Auto365 sẽ gửi họ tên, số điện thoại và thông tin xe đến hệ thống tiếp nhận để liên hệ tư vấn. Dữ liệu được xử lý theo Chính sách bảo mật. Sau khi gửi, bạn có thể tiếp tục trao đổi qua Zalo.</p>
     </form>
   </div>
 </div>
