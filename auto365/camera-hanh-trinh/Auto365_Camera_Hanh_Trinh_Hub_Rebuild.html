@@ -127,12 +127,13 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 .market-card p{font-size:12px!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .market-card a{font-size:11px!important;padding-top:8px!important}
 /* Các mục nhiều thẻ thông tin khác cũng cuộn ngang 1 hàng thay vì xếp dọc dài trên mobile. */
-.paths,.brand-grid,.decision-grid,.branch-proof-grid,.case-grid,.flow-grid,.benefit-grid,.locations{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
+.paths,.brand-grid,.decision-grid,.branch-proof-grid,.case-photo-grid,.flow-grid,.benefit-grid,.locations{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
 .paths{grid-auto-columns:42%!important}
 .brand-grid{grid-auto-columns:42%!important}
 .decision-grid{grid-auto-columns:42%!important}
 .branch-proof-grid{grid-auto-columns:58%!important}
-.case-grid{grid-auto-columns:68%!important}
+.case-photo-grid{grid-auto-columns:78%!important}
+.case-photo{scroll-snap-align:start;min-width:0}
 .flow-grid{grid-auto-columns:58%!important}
 .benefit-grid{grid-auto-columns:68%!important}
 .locations{grid-auto-columns:68%!important}
@@ -264,6 +265,6 @@ const faqGrid=document.querySelector('.faq-full'),sourceBlock=document.querySele
 /* Tra cứu chi nhánh: lọc danh sách điểm lắp theo từ khóa gõ vào. */
 (function(){const toggle=document.querySelector('#navToggle'),nav=document.querySelector('#navLinks');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));}})();
 (function(){const input=document.querySelector('#branchSearchInput');const items=Array.from(document.querySelectorAll('#branchResults .location'));const empty=document.querySelector('#branchEmpty');if(!input)return;input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let visible=0;items.forEach(el=>{const hay=(el.dataset.city+' '+el.textContent).toLowerCase();const match=!q||hay.includes(q);el.classList.toggle('hide',!match);if(match)visible++;});empty.classList.toggle('show',visible===0);});})();
-(function(){document.querySelectorAll('.grid,.paths,.market-grid,.decision-grid,.branch-proof-grid,.case-grid,.flow-grid,.benefit-grid,.locations').forEach(el=>{const hint=document.createElement('div');hint.className='scroll-hint';hint.textContent='Vuốt ngang để xem thêm →';el.insertAdjacentElement('beforebegin',hint);});})();
+(function(){document.querySelectorAll('.grid,.paths,.market-grid,.decision-grid,.branch-proof-grid,.case-photo-grid,.flow-grid,.benefit-grid,.locations').forEach(el=>{const hint=document.createElement('div');hint.className='scroll-hint';hint.textContent='Vuốt ngang để xem thêm →';el.insertAdjacentElement('beforebegin',hint);});})();
 </script>
 </body></html>
