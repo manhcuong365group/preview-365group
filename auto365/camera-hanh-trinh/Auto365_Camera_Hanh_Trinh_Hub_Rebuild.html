@@ -60,13 +60,18 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 #huong-dan .knowledge-grid{grid-template-columns:1fr;max-width:760px;gap:34px}
 #huong-dan .checklist{max-width:none}
 /* Bọc từng câu hỏi trong accordion "Kiến thức trước khi mua" thành card có icon số, bớt thô/trần. */
-#huong-dan .accordion{border-top:none;counter-reset:qnum}
-#huong-dan .accordion details{counter-increment:qnum;border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-bottom:10px;background:#fbfbfa}
-#huong-dan .accordion details[open]{background:#fff;border-color:#dedcd5;box-shadow:0 4px 14px rgba(20,20,20,.05)}
-#huong-dan .accordion summary{display:flex;align-items:center;gap:12px}
-#huong-dan .accordion summary::before{content:counter(qnum,decimal-leading-zero);flex:none;width:30px;height:30px;border-radius:50%;background:#171717;color:#fff;font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center}
-#huong-dan .accordion summary::after{margin-left:auto}
-#huong-dan .accordion details p{margin:10px 0 0 42px}
+#huong-dan .accordion{border-top:none;counter-reset:qnum;display:flex;flex-direction:column;gap:10px}
+#huong-dan .accordion details{counter-increment:qnum;border:1px solid var(--line);border-radius:14px;padding:17px 20px;background:#fff;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease}
+#huong-dan .accordion details:hover{border-color:#e3bcbe;box-shadow:0 6px 16px rgba(20,20,20,.06)}
+#huong-dan .accordion details[open]{border-color:var(--red);border-left-width:3px;box-shadow:0 10px 26px rgba(231,36,45,.1)}
+#huong-dan .accordion summary{display:flex;align-items:center;gap:14px;font-size:15px}
+#huong-dan .accordion summary::before{content:counter(qnum,decimal-leading-zero);flex:none;width:30px;height:30px;border-radius:50%;background:#fdeceb;color:var(--red);font-size:12px;font-weight:900;display:flex;align-items:center;justify-content:center;transition:background .18s ease,color .18s ease}
+#huong-dan .accordion details[open] summary::before{background:var(--red);color:#fff}
+#huong-dan .accordion summary::after{content:'+';float:none;margin-left:auto;flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:var(--red);font-size:15px;font-weight:900;display:flex;align-items:center;justify-content:center;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+#huong-dan .accordion details[open] summary::after{content:'+';transform:rotate(45deg);background:var(--red);color:#fff;border-color:var(--red)}
+#huong-dan .accordion summary{list-style:none}
+#huong-dan .accordion summary::-webkit-details-marker{display:none}
+#huong-dan .accordion details p{margin:10px 0 0 44px;color:#555;line-height:1.6}
 @media(max-width:520px){#huong-dan .accordion details{padding:14px}#huong-dan .accordion summary::before{width:26px;height:26px;font-size:11px}#huong-dan .accordion details p{margin-left:38px}}
 /* Logo/wordmark cho từng thẻ thương hiệu trong khối "Khám phá theo thương hiệu". */
 .brand-logo-slot{height:34px;display:flex;align-items:center;margin-bottom:10px}
