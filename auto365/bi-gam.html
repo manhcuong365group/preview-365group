@@ -6,8 +6,6 @@
 <title>Đèn bi gầm ô tô: bảng giá và cách chọn theo xe | Auto365</title>
 <meta name="description" content="Xem giá bi gầm ô tô đang bán, cách chọn theo hốc đèn và nhu cầu, case lắp thực tế, quy trình cân chỉnh và điểm Auto365 gần bạn.">
 <link rel="canonical" href="https://auto365.vn/nang-cap-anh-sang-bi-gam">
-<link rel="preconnect" href="https://www.youtube.com">
-<link rel="preconnect" href="https://i.ytimg.com">
 <meta property="og:title" content="Đèn bi gầm ô tô: bảng giá và cách chọn theo xe | Auto365">
 <meta property="og:description" content="Xem giá bi gầm ô tô đang bán, cách chọn theo hốc đèn và nhu cầu, case lắp thực tế, quy trình cân chỉnh và điểm Auto365 gần bạn.">
 <meta property="og:type" content="website">
@@ -371,6 +369,9 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-media{display:flex;flex-direction:column;min-width:0}
 .video-embed{position:relative;width:100%;aspect-ratio:16/9;background:#000}
 .video-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.video-embed-facade{position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background-size:cover;background-position:center}
+.video-embed-facade:before{content:'';position:absolute;inset:0;background:rgba(0,0,0,.15)}
+.video-embed-facade:after{content:'';position:absolute;top:50%;left:50%;width:64px;height:64px;transform:translate(-50%,-50%);border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff'%3E%3Cpath d='M8 5v14l11-7z'/%3E%3C/svg%3E") center/26px no-repeat}
 .video-lead-copy{padding:22px 26px;color:#fff}
 .video-lead-copy h2{font-size:clamp(19px,2.2vw,24px);line-height:1.2;margin-top:6px}
 .video-lead-copy p{color:#b9bec8;font-size:12px;line-height:1.5;margin-top:8px}
@@ -1141,8 +1142,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   <div class="shell">
     <div class="video-lead-card">
       <div class="video-lead-media">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/bJY1IZbfgUA" title="Unbox Bi Gầm GTR G1 Turbo V2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-embed" id="video-embed">
+          <button type="button" class="video-embed-facade" id="video-embed-play" aria-label="Phát video Unbox Bi Gầm GTR G1 Turbo V2" style="background-image:url('bi-gam/hinh/video-unbox-gtr-g1-turbo-v2-thumb.webp')"></button>
         </div>
         <div class="video-lead-copy">
           <span class="kicker">Tư vấn theo xe</span>
@@ -1630,13 +1631,18 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var sortSel = document.getElementById('pf-sort');
   var clearBtn = document.getElementById('pf-clear');
   function checkedVals(boxes){ return boxes.filter(function(b){ return b.checked; }).map(function(b){ return b.value; }); }
+  function normalizeVN(str){
+    return (str || '').toLowerCase()
+      .replace(/đ/g, 'd')
+      .normalize('NFD').replace(/[̀-ͯ]/g, '');
+  }
   var moreBtn = document.getElementById('pf-more');
   var countEl = document.getElementById('pf-count');
   var PAGE_SIZE = 8;
   var shown = PAGE_SIZE;
 
   function apply(){
-    var q = search.value.trim().toLowerCase();
+    var q = normalizeVN(search.value.trim());
     var brands = checkedVals(brandBoxes);
     var lenses = checkedVals(lensBoxes);
     var colors = checkedVals(colorBoxes);
@@ -1645,7 +1651,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       var name = c.getAttribute('data-name');
       var cardColor = c.getAttribute('data-color') || '';
       var cardNeeds = (c.getAttribute('data-needs') || '').split(',');
-      var okQ = !q || name.indexOf(q) !== -1 || c.getAttribute('data-brand').toLowerCase().indexOf(q) !== -1;
+      var okQ = !q || normalizeVN(name).indexOf(q) !== -1 || normalizeVN(c.getAttribute('data-brand')).indexOf(q) !== -1;
       var okBrand = !brands.length || brands.indexOf(c.getAttribute('data-brand')) !== -1;
       var okLens = !lenses.length || lenses.indexOf(c.getAttribute('data-lens')) !== -1;
       var okColor = !colors.length || colors.some(function(cv){
@@ -1789,6 +1795,22 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     zalo.target = '_blank';
     zalo.rel = 'noopener noreferrer';
     zalo.click();
+  }
+
+  var videoPlayBtn = document.getElementById('video-embed-play');
+  if (videoPlayBtn) {
+    videoPlayBtn.addEventListener('click', function(){
+      var pc = document.createElement('link');
+      pc.rel = 'preconnect';
+      pc.href = 'https://www.youtube-nocookie.com';
+      document.head.appendChild(pc);
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/bJY1IZbfgUA?autoplay=1';
+      iframe.title = 'Unbox Bi Gầm GTR G1 Turbo V2';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      videoPlayBtn.replaceWith(iframe);
+    });
   }
 
   var finderForm = document.getElementById('tu-van-theo-xe');
