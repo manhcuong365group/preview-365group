@@ -139,7 +139,8 @@ test('places the real-installation image beside the technical table without redu
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
   assert.match(html, /<thead><tr><th scope="col">Thông số<\/th><th scope="col">CR BLK 40<\/th><th scope="col">CR BLK 35<\/th><th scope="col">CR BLK 15<\/th><\/tr><\/thead>/);
-  assert.match(html, /<th scope="row">VLT \(phim \+ kính Auto 75\)<\/th><td>41%<\/td><td>33%<\/td><td>14%<\/td>/);
+  assert.match(html, /<th scope="row">VLT<\/th><td>41%<\/td><td>33%<\/td><td>14%<\/td>/);
+  assert.doesNotMatch(html, /<th scope="row">VLT \(phim \+ kính Auto 75\)<\/th>/);
   assert.match(html, /<th scope="row">TSER<\/th><td>58%<\/td><td>60%<\/td><td>64%<\/td>/);
   assert.match(html, /<th scope="row">Giảm chói<\/th><td>44%<\/td><td>55%<\/td><td>81%<\/td>/);
   assert.doesNotMatch(html, /Vị trí Auto365 đề xuất:/);
@@ -165,17 +166,17 @@ test('keeps location cards compact without redundant tags or address underlines'
 });
 
 test('presents Auto365 reasons as four linked proof points rather than a generic checklist', () => {
-  assert.match(html, /<h3 id="why-auto365-title">Vì sao nên chọn hệ thống Auto365 để thi công\?<\/h3>/);
+  assert.match(html, /<h3 id="why-auto365-title">Mỗi lựa chọn đều có thông tin để kiểm tra và đối chiếu<\/h3>/);
   assert.doesNotMatch(html, /Chọn dịch vụ có cơ sở/);
   assert.doesNotMatch(html, /Quyết định dựa trên những gì khách hàng có thể đối chiếu trước, trong và sau khi thi công\./);
-  assert.equal((html.match(/class="proof-card(?: |")/g) || []).length, 4);
-  assert.match(html, /class="proof-card" href="#pro-shop-certificates"/);
-  assert.match(html, /class="proof-card" href="#specs"/);
-  assert.match(html, /class="proof-card" href="#cases"/);
-  assert.match(html, /class="proof-card proof-card-accent" href="#warranty"/);
-  assert.match(html, /<strong>Chọn đúng điểm thi công<\/strong>/);
-  assert.match(html, /<strong>Chọn đúng cấu hình cho xe<\/strong>/);
-  assert.match(html, /<strong>Xem xe đã thi công trước<\/strong>/);
+  assert.equal((html.match(/class="why-proof-card"/g) || []).length, 4);
+  assert.match(html, /class="why-proof-card" href="#pro-shop-certificates"/);
+  assert.match(html, /class="why-proof-card" href="#specs"/);
+  assert.match(html, /class="why-proof-card" href="#cases"/);
+  assert.match(html, /class="why-proof-card" href="#warranty"/);
+  assert.match(html, /<strong>Điểm thi công có thông tin để kiểm tra<\/strong>/);
+  assert.match(html, /<strong>Tư vấn cấu hình theo từng xe và nhu cầu<\/strong>/);
+  assert.match(html, /<strong>Quy trình rõ ràng và case thực tế để đối chiếu<\/strong>/);
   assert.match(html, /<strong>Có hồ sơ sau khi bàn giao<\/strong>/);
   assert.doesNotMatch(html, /Báo giá theo nhóm xe<\/strong> — phạm vi hạng mục/);
 });
@@ -204,12 +205,13 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   const cases = html.indexOf('id="cases"');
   const locations = html.indexOf('id="pro-shop"');
   assert.ok(finder > cases && finder < locations);
-  assert.match(html, /<h2>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
-  assert.match(html, /Hơn 90 chi nhánh · 33 tỉnh thành/);
-  assert.match(html, /<a class="branch-finder-cta" href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm gần tôi →<\/a>/);
-  assert.match(html, /<strong>Miền Bắc<\/strong><span>41 điểm<\/span>/);
-  assert.match(html, /<strong>Miền Trung<\/strong><span>26 điểm<\/span>/);
-  assert.match(html, /<strong>Miền Nam<\/strong><span>23 điểm<\/span>/);
+  assert.match(html, /class="a365-network"/);
+  assert.match(html, /<h2 class="a365-title"[^>]*>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
+  assert.match(html, /<h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3>/);
+  assert.match(html, /class="a365-btn" href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm gần tôi →<\/a>/);
+  assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
+  assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
+  assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
 });
 
 test('presents the specification evidence as two balanced desktop panels', () => {
@@ -267,4 +269,15 @@ test('uses a three-to-two visual-to-table ratio without stretching the photo', (
   assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
   assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none;width:100%;height:auto/);
   assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
+});
+
+test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
+  assert.match(html, /<h3 id="why-auto365-title">Mỗi lựa chọn đều có thông tin để kiểm tra và đối chiếu<\/h3>/);
+  assert.equal((html.match(/class="why-proof-card"/g) || []).length, 4);
+  assert.match(html, /class="why-proof-card" href="#pro-shop-certificates"/);
+  assert.match(html, /class="why-proof-card" href="#specs"/);
+  assert.match(html, /class="why-proof-card" href="#cases"/);
+  assert.match(html, /class="why-proof-card" href="#warranty"/);
+  assert.match(html, /class="why-certificate-band" id="pro-shop-certificates"/);
+  assert.match(html, /class="why-actions"/);
 });
