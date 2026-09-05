@@ -250,3 +250,9 @@ test('balances the visual and specification panels to the same desktop height', 
   assert.match(html, /\.evidence-visual\{height:100%/);
   assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
 });
+
+test('keeps the consultation form compact beside its image on desktop', () => {
+  assert.match(html, /\.consult-form\{padding:18px;gap:9px/);
+  assert.match(html, /\.consult-form input,\.consult-form select,\.consult-form textarea\{[^}]*padding:9px 10px/);
+  assert.match(html, /\.consult-form \.button-gold\{min-height:42px/);
+});
