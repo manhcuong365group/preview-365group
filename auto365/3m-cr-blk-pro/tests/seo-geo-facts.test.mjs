@@ -264,6 +264,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /\.a365-contact-actions\{grid-template-columns:1fr\}/);
   assert.match(html, /\.a365-contact-actions \.a365-btn\{height:40px;min-height:40px;font-size:12px\}/);
   assert.match(html, /\.a365-title,\.a365-right-title\{white-space:normal\}/);
+  assert.match(html, /#branch-finder \.a365-title,#branch-finder \.a365-right-title\{font-size:clamp\(20px,1\.6vw,22px\)!important;line-height:1\.15\}/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
@@ -347,6 +348,14 @@ test('keeps a compact vertical rhythm between page blocks', () => {
   assert.match(html, /\.media-section\{padding:8px 0\}/);
 });
 
+test('keeps the BMW, price-guide and Pro Shop visuals at the same content width', () => {
+  assert.match(html, /\.answer-photo\{width:min\(1200px,calc\(100% - 28px\)\)/);
+  assert.match(html, /\.section-photo\{max-width:1200px\}/);
+  assert.match(html, /hinh\/13-1\.jpg/);
+  assert.match(html, /hinh\/bang-gia\.webp/);
+  assert.match(html, /hinh\/2\.webp/);
+});
+
 test('presents the four certification visuals with compact captions only', () => {
   assert.doesNotMatch(html, /<div class="why-certificate-copy">/);
   assert.equal((html.match(/class="why-certificate-card"/g) || []).length, 4);
@@ -367,6 +376,7 @@ test('keeps only essential TDS context and includes the IRR values', () => {
 test('uses a three-to-two visual-to-table ratio with aligned evidence panels', () => {
   assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:stretch\}/);
   assert.match(html, /\.evidence-visual\{height:100%;aspect-ratio:auto/);
+  assert.match(html, /\.evidence-data\{height:100%\}/);
   assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none;width:100%;height:auto/);
   assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
 });
