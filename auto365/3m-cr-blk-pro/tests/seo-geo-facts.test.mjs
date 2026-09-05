@@ -113,6 +113,13 @@ test('routes each location card to its detail page, map, or system hotline', () 
   assert.match(html, /href="tel:19009365">Hotline 1900 9365<\/a>/);
 });
 
+test('uses the requested three contact actions in the branch finder', () => {
+  assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
+  assert.match(html, /href="https:\/\/zalo\.me\/3622666363345050913"[^>]*>Nhắn Zalo<\/a>/);
+  assert.match(html, /href="tel:0365365365"[^>]*>Gọi 0365 365 365<\/a>/);
+  assert.match(html, /class="a365-btn a365-btn-outline js-open-consult" type="button">Gửi thông tin tư vấn<\/button>/);
+});
+
 test('uses the street address as the Google Maps link without service-hours copy', () => {
   assert.doesNotMatch(html, /Giờ phục vụ:/);
   assert.match(html, /class="location-address" href="https:\/\/www\.google\.com\/maps\?cid=9988450659874114499&amp;g_mp=[^"]+"[^>]*>4\/4\/1\/7 Đường số 3, Phường Hiệp Bình, TP\. Hồ Chí Minh<\/a>/);
@@ -223,8 +230,8 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /class="a365-network"/);
   assert.match(html, /<h2 class="a365-title"[^>]*>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
   assert.match(html, /<h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3>/);
-  assert.match(html, /class="a365-btn" href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm gần tôi →<\/a>/);
-  assert.match(html, /\.a365-btn\{display:flex;width:100%;min-height:40px/);
+  assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
+  assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
