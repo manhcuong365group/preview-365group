@@ -60,7 +60,6 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 #huong-dan .checklist{max-width:none}
 /* Bọc từng câu hỏi trong accordion "Kiến thức trước khi mua" thành card có icon số, bớt thô/trần. */
 #huong-dan .accordion{border-top:none;display:grid;grid-template-columns:repeat(2,1fr);align-items:start;gap:12px}
-@media(max-width:700px){#huong-dan .accordion{grid-template-columns:1fr}}
 #huong-dan .accordion .qa-card{border:1px solid var(--line);border-radius:14px;padding:17px 20px;background:#fff;transition:border-color .18s ease,box-shadow .18s ease}
 #huong-dan .accordion .qa-card:hover{border-color:#e3bcbe;box-shadow:0 6px 16px rgba(20,20,20,.06)}
 #huong-dan .accordion .qa-card h3{margin:0;font-size:15px}
@@ -131,6 +130,9 @@ h1,h2,.brand,.section-title{font-weight:600!important}
 .market-card h3{font-size:15px!important}
 .market-card p{font-size:12px!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .market-card a{font-size:11px!important;padding-top:8px!important}
+/* Card "Kiến thức trước khi mua" cũng để 2 hàng cuộn ngang, tránh xếp dọc 6 card dài. */
+#huong-dan .accordion{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:80%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
+#huong-dan .qa-card{scroll-snap-align:start;min-width:0}
 /* Các mục nhiều thẻ thông tin khác cũng cuộn ngang 1 hàng thay vì xếp dọc dài trên mobile. */
 .paths,.brand-grid,.decision-grid,.branch-proof-grid,.case-photo-grid,.flow-grid,.benefit-grid,.locations{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
 .paths{grid-auto-columns:42%!important}
@@ -265,7 +267,7 @@ const faqGrid=document.querySelector('.faq-full'),sourceBlock=document.querySele
 /* Tra cứu chi nhánh: lọc danh sách điểm lắp theo từ khóa gõ vào. */
 (function(){const toggle=document.querySelector('#navToggle'),nav=document.querySelector('#navLinks');if(toggle&&nav){toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',open?'true':'false')});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false')}));}})();
 (function(){const input=document.querySelector('#branchSearchInput');const items=Array.from(document.querySelectorAll('#branchResults .location'));const empty=document.querySelector('#branchEmpty');if(!input)return;input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let visible=0;items.forEach(el=>{const hay=(el.dataset.city+' '+el.textContent).toLowerCase();const match=!q||hay.includes(q);el.classList.toggle('hide',!match);if(match)visible++;});empty.classList.toggle('show',visible===0);});})();
-(function(){document.querySelectorAll('.grid,.paths,.market-grid,.decision-grid,.branch-proof-grid,.case-photo-grid,.flow-grid,.benefit-grid,.locations').forEach(el=>{const hint=document.createElement('div');hint.className='scroll-hint';hint.textContent='Vuốt ngang để xem thêm →';el.insertAdjacentElement('beforebegin',hint);});})();
+(function(){document.querySelectorAll('.grid,.paths,.market-grid,#huong-dan .accordion,.decision-grid,.branch-proof-grid,.case-photo-grid,.flow-grid,.benefit-grid,.locations').forEach(el=>{const hint=document.createElement('div');hint.className='scroll-hint';hint.textContent='Vuốt ngang để xem thêm →';el.insertAdjacentElement('beforebegin',hint);});})();
 (function(){const bar=document.querySelector('#comparebar'),catalogSection=document.querySelector('#catalog');if(!bar||!catalogSection||!('IntersectionObserver' in window))return;const io=new IntersectionObserver(entries=>{bar.classList.toggle('near-catalog',entries[0].isIntersecting)},{rootMargin:'40% 0px'});io.observe(catalogSection);})();
 </script>
 </body></html>
