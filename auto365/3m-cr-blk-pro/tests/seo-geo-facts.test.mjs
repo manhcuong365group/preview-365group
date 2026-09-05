@@ -311,10 +311,11 @@ test('uses the page typography weight for Auto365 proof-card labels', () => {
 });
 
 test('keeps a compact vertical rhythm between page blocks', () => {
-  assert.match(html, /\.section\{padding:14px 0\}/);
-  assert.match(html, /\.pro-shop-section\{padding:16px 0 24px\}/);
-  assert.match(html, /\.why-auto365\{margin:14px 0 0\}/);
-  assert.match(html, /\.media-section\{padding:16px 0\}/);
+  assert.match(html, /\.section\{padding:7px 0\}/);
+  assert.match(html, /\.branch-finder\{padding:14px 0\}/);
+  assert.match(html, /\.pro-shop-section\{padding:8px 0 12px\}/);
+  assert.match(html, /\.why-auto365\{margin:7px 0 0\}/);
+  assert.match(html, /\.media-section\{padding:8px 0\}/);
 });
 
 test('presents the four certification visuals with compact captions only', () => {
