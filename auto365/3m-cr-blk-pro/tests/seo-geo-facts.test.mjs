@@ -14,6 +14,7 @@ test('keeps the quick-answer heading compact beside its supporting copy', () => 
   assert.match(html, /\.answer-card h2\{font-size:clamp\(23px,2vw,27px\)!important;line-height:1\.14\}/);
   assert.match(html, /\.trust-copy h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
   assert.match(html, /\.consult-section \.section-heading h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
+  assert.match(html, /\.trust-copy\{padding:26px;border:1px solid #dfe4eb;border-radius:18px;background:#fff\}/);
 });
 
 test('shows the verified configuration for each published case', () => {
