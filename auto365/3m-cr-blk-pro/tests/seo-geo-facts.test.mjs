@@ -269,7 +269,7 @@ test('uses a spacious, aligned Auto365 proof layout without redundant labels', (
   assert.doesNotMatch(html, /<span>Vì sao chọn Auto365\?<\/span>/);
   assert.doesNotMatch(html, /Hình ảnh chứng nhận, lắp đặt và hoạt động đào tạo được hiển thị để khách hàng tham khảo khi tư vấn\./);
   assert.match(html, /\.why-proof-card\{display:grid;min-height:0;grid-template-rows:40px 72px 155px auto/);
-  assert.match(html, /\.why-certificate-list img\{width:100%;height:150px/);
+  assert.match(html, /\.why-certificate-card img\{width:100%;height:200px/);
   assert.match(html, /\.answer-section\{padding-top:16px;padding-bottom:10px\}/);
 });
 
@@ -278,10 +278,13 @@ test('uses the page typography weight for Auto365 proof-card labels', () => {
   assert.match(html, /\.why-proof-card em\{[^}]*font-weight:600/);
 });
 
-test('shows only the four enlarged certification visuals', () => {
+test('presents the four certification visuals as detailed verification cards', () => {
   assert.doesNotMatch(html, /<div class="why-certificate-copy">/);
-  assert.match(html, /\.why-certificate-band\{display:block/);
-  assert.match(html, /\.why-certificate-list img\{width:100%;height:150px/);
+  assert.equal((html.match(/class="why-certificate-card"/g) || []).length, 4);
+  assert.match(html, /CHỨNG NHẬN 01/);
+  assert.match(html, /HỆ THỐNG · 3M AUTHORIZED DISTRIBUTOR VIETNAM/);
+  assert.match(html, /Xem hồ sơ phân phối 3M trên website 365Group →/);
+  assert.match(html, /\.why-certificate-card img\{width:100%;height:200px/);
 });
 
 test('keeps only essential TDS context and includes the IRR values', () => {
