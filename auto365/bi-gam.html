@@ -1993,6 +1993,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         if (!b.checked) b.disabled = compareSelected.length >= COMPARE_MAX;
       });
       updateCompareBar();
+      if (box.checked && compareSelected.length === 2) renderAndOpenCompare();
     });
   });
 
@@ -2022,7 +2023,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     return Array.prototype.map.call(card.querySelectorAll('.product-needs span'), function(s){ return s.textContent.trim(); });
   }
 
-  compareOpenBtn.addEventListener('click', function(){
+  function renderAndOpenCompare(){
     if (compareSelected.length < 2) return;
     var rows = ['Hình ảnh', 'Sản phẩm', 'Thương hiệu', 'Giá', 'Lens', 'Điện áp', 'Nhu cầu phù hợp', 'Điểm nổi bật'];
     var highlightsList = compareSelected.map(cardHighlights);
@@ -2071,8 +2072,9 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     });
     compareTable.appendChild(tbody);
     openModal(compareModal);
-  });
+  }
 
+  compareOpenBtn.addEventListener('click', renderAndOpenCompare);
   compareCloseBtn.addEventListener('click', function(){ closeModal(compareModal); });
   compareModal.addEventListener('click', function(e){ if (e.target === compareModal) closeModal(compareModal); });
 
