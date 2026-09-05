@@ -278,12 +278,13 @@ test('uses the page typography weight for Auto365 proof-card labels', () => {
   assert.match(html, /\.why-proof-card em\{[^}]*font-weight:600/);
 });
 
-test('presents the four certification visuals as detailed verification cards', () => {
+test('presents the four certification visuals with compact captions only', () => {
   assert.doesNotMatch(html, /<div class="why-certificate-copy">/);
   assert.equal((html.match(/class="why-certificate-card"/g) || []).length, 4);
-  assert.match(html, /CHỨNG NHẬN 01/);
-  assert.match(html, /HỆ THỐNG · 3M AUTHORIZED DISTRIBUTOR VIETNAM/);
-  assert.match(html, /Xem hồ sơ phân phối 3M trên website 365Group →/);
+  assert.doesNotMatch(html, /CHỨNG NHẬN 01/);
+  assert.doesNotMatch(html, /HỆ THỐNG · 3M AUTHORIZED DISTRIBUTOR VIETNAM/);
+  assert.doesNotMatch(html, /Xem hồ sơ phân phối 3M trên website 365Group →/);
+  assert.doesNotMatch(html, /class="why-actions"/);
   assert.match(html, /\.why-certificate-card img\{width:100%;height:200px/);
 });
 
@@ -309,7 +310,6 @@ test('presents Auto365 proof as four visual verification cards with a certificat
   assert.match(html, /class="why-proof-card" href="#cases"/);
   assert.match(html, /class="why-proof-card" href="#warranty"/);
   assert.match(html, /class="why-certificate-band" id="pro-shop-certificates"/);
-  assert.match(html, /class="why-actions"/);
   assert.match(html, /\.why-proof-card\{display:flex;min-height:0;flex-direction:column/);
   assert.match(html, /\.why-proof-card img\{width:100%;height:155px;margin-top:0/);
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/2\.webp" alt="Mặt tiền 3M Pro Shop Auto365"/);
