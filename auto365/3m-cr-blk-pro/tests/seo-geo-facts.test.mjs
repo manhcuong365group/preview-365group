@@ -211,3 +211,9 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<strong>Miền Trung<\/strong><span>26 điểm<\/span>/);
   assert.match(html, /<strong>Miền Nam<\/strong><span>23 điểm<\/span>/);
 });
+
+test('presents the specification evidence as two balanced desktop panels', () => {
+  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(420px,\.95fr\) minmax\(0,1\.05fr\);gap:20px;align-items:stretch\}/);
+  assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
+  assert.match(html, /\.evidence-data\{max-width:none;justify-self:stretch;padding:24px/);
+});
