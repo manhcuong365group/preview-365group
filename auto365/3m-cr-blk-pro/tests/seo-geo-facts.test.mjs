@@ -256,7 +256,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3>/);
   assert.match(html, /class="a365-right-heading"><h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3><a class="a365-all"/);
   assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
-  assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
+  assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\);gap:6px;margin-top:10px\}/);
   assert.match(html, /\.a365-title,\.a365-right-title\{min-height:0;font-size:clamp\(20px,1\.75vw,23px\)!important;line-height:1\.15;white-space:nowrap\}/);
   assert.match(html, /@media\(max-width:520px\)\{\.a365-contact-actions\{grid-template-columns:1fr\}\.a365-contact-actions \.a365-btn\{min-height:40px;font-size:12px\}\.a365-title,\.a365-right-title\{white-space:normal\}\}/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
