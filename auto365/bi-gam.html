@@ -112,7 +112,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .catalogue-toolbar .search-box input{width:100%}
 .catalogue-count{font-size:12px;color:var(--muted);margin-bottom:12px}
 .product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.product-card{display:flex;flex-direction:column;height:100%;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:transform .15s,box-shadow .15s}
+.product-card{position:relative;display:flex;flex-direction:column;height:100%;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:transform .15s,box-shadow .15s}
 .product-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(16,17,20,.08)}
 .product-card.is-hidden{display:none}
 .product-image{position:relative;aspect-ratio:1/1;background:#f5f6f8;display:block}
@@ -140,7 +140,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .article-image figcaption .btn{flex:none}
 .dark .article-image{border-color:#33363d;background:#20232a}
 .dark .article-image figcaption p{color:#9195a0}
-.compare-toggle{flex:none;display:flex;align-items:center;gap:6px;min-height:40px;padding:0 12px;border:1px solid #d8dade;border-radius:9px;font-size:11px;font-weight:600;color:#44474d;cursor:pointer;white-space:nowrap;background:transparent;transition:background .15s,border-color .15s,color .15s}
+.compare-toggle{position:absolute;top:10px;right:10px;z-index:2;flex:none;display:flex;align-items:center;gap:5px;min-height:34px;padding:0 10px;border:1px solid #d8dade;border-radius:999px;font-size:10.5px;font-weight:700;color:#44474d;cursor:pointer;white-space:nowrap;background:rgba(255,255,255,.94);box-shadow:0 1px 5px rgba(0,0,0,.15);transition:background .15s,border-color .15s,color .15s}
 .compare-toggle input{width:14px;height:14px;flex:none;accent-color:var(--red);cursor:pointer}
 .compare-toggle:has(input:checked),.compare-toggle.is-checked{background:var(--red);border-color:var(--red);color:#fff;font-weight:800}
 .compare-toggle:has(input:checked) input,.compare-toggle.is-checked input{accent-color:#fff}
@@ -527,7 +527,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <article class="product-card" data-brand="GTR" data-lens="3.0" data-voltage="12V" data-price="6000000" data-name="bi gầm gtr g1 turbo v2" data-color="4800K,4300K" data-needs="touring,mountain">
   <a class="product-image" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm GTR G1 Turbo V2">
     <img src="https://auto365.vn/uploads/images/products/auto365_20260708_094729_6a4dba4105bb6.jpg.webp" alt="Bi gầm GTR G1 Turbo V2" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">GTR</span>
     
@@ -537,14 +537,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-gtr-g1-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="AES" data-lens="2.0" data-voltage="12V" data-price="5000000" data-name="bi gầm aes sv 2.0 max" data-color="3000K,4300K,5500K" data-needs="small,city">
   <a class="product-image" href="https://auto365.vn/bi-gam-aes-sv-20-max" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm AES SV 2.0 Max">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-bi-gam-aes-sv-20-maxjpg-img_6a22717dda9377.83835825_auto365vn-1780642173-0.jpg.webp" alt="Bi gầm AES SV 2.0 Max" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">AES</span>
     
@@ -554,14 +554,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-aes-sv-20-max" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="AES" data-lens="3.0" data-voltage="12V" data-price="5500000" data-name="bi gầm aes sv 3.0 pro" data-color="4800K" data-needs="mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm AES SV 3.0 Pro">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-bi-gam-aes-sv-30-propng-img_6a421a71cfa512.25962916_auto365vn-1782717041-0.png.webp" alt="Bi gầm AES SV 3.0 Pro" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">AES</span>
     
@@ -571,14 +571,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-aes-sv-30-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="AES" data-lens="3.0" data-voltage="12V" data-price="6000000" data-name="bi gầm aes sv 3.0 max" data-color="3000K,4300K,5500K" data-needs="mixed,touring">
   <a class="product-image" href="https://auto365.vn/bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm AES SV 3.0 Max">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-bi-gam-aes-sv-30-maxjpg-img_6a226cb83b1524.53857901_auto365vn-1780640952-0.jpg.webp" alt="Bi gầm AES SV 3.0 Max" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">AES</span>
     
@@ -588,14 +588,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="24V" data-price="6200000" data-name="đèn bi gầm x-light f10 turbo 24v v2" data-color="3000K,4300K,5500K" data-needs="commercial">
   <a class="product-image" href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2" target="_blank" rel="noreferrer" aria-label="Xem Đèn bi gầm X-Light F10 Turbo 24V V2">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-artboard-6jpg-img_69e6db051b1b58.93298309_auto365vn-1776737029-0.jpg.webp" alt="Đèn bi gầm X-Light F10 Turbo 24V V2" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -605,14 +605,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="4500000" data-name="đèn bi gầm x-light 301 v2" data-color="3000K,4300K,5500K" data-needs="mixed,rain">
   <a class="product-image" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer" aria-label="Xem Đèn bi gầm X-Light 301 V2">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-301-v2-1jpg-img_6951df77ba7532.45163750_auto365vn-1766973303-0.jpg.webp" alt="Đèn bi gầm X-Light 301 V2" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -622,14 +622,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="6000000" data-name="đèn bi gầm x-light f10 turbo v2" data-color="3000K,4300K,5500K" data-needs="mixed,rain,touring">
   <a class="product-image" href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer" aria-label="Xem Đèn bi gầm X-Light F10 Turbo V2">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-f10-turbo-v2-autopng-img_6933a1a0299d56.68972047_auto365vn-1764991392-0.png" alt="Đèn bi gầm X-Light F10 Turbo V2" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -639,14 +639,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="5500000" data-name="đèn bi gầm x-light f10 pro v2" data-color="3000K,4300K,5500K" data-needs="mixed,rain">
   <a class="product-image" href="https://auto365.vn/den-bi-gam-x-light-f10-pro-v2" target="_blank" rel="noreferrer" aria-label="Xem Đèn bi gầm X-Light F10 Pro V2">
     <img src="https://auto365.vn/uploads/images/products/auto365vn-f10-pro-v2-autopng-img_6933a08f9a2641.40461353_auto365vn-1764991119-0.png.webp" alt="Đèn bi gầm X-Light F10 Pro V2" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -656,14 +656,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-pro-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="2.0" data-voltage="12V" data-price="4500000" data-name="bi gầm x-light f10 2.0 new" data-color="3000K,4300K,5500K" data-needs="small,city">
   <a class="product-image" href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 2.0 New">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%202.0%20NEW/f10-2-new.png.webp" alt="Bi gầm X-Light F10 2.0 New" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -673,14 +673,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="5500000" data-name="bi gầm x-light x3 ultra" data-color="3000K,4300K,5500K" data-needs="touring">
   <a class="product-image" href="https://auto365.vn/bi-gam-x-light-x3-ultra" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light X3 Ultra">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/xlight-x3-ultra/auto365.jpg.webp" alt="Bi gầm X-Light X3 Ultra" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -690,14 +690,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-x-light-x3-ultra" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="4300000" data-name="đèn bi gầm x-light f10 new" data-color="4800K" data-needs="city,mixed">
   <a class="product-image" href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer" aria-label="Xem Đèn bi gầm X-Light F10 New">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/den-bi-gam-x-light-f10-new-2025/den-bi-gam-x-light-f10-new-2025-auto365.jpg.webp" alt="Đèn bi gầm X-Light F10 New" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -707,14 +707,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="2.0" data-voltage="12V" data-price="5500000" data-name="bi gầm x-light f10 hyper 2.0" data-color="5000K,5000K,4500K,3000K" data-needs="small">
   <a class="product-image" href="https://auto365.vn/bi-gam-xligh-f10-hyper-2" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 Hyper 2.0">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%20HYPER%202.0/f10-hyper-2-10n-4.jpg.webp" alt="Bi gầm X-Light F10 Hyper 2.0" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -724,14 +724,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-xligh-f10-hyper-2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="2.0" data-voltage="" data-price="3700000" data-name="x-light f10 2.0 inch moto" data-color="3000K,4300K,5500K" data-needs="moto">
   <a class="product-image" href="https://auto365.vn/x-light-f10-20-inch-moto" target="_blank" rel="noreferrer" aria-label="Xem X-Light F10 2.0 Inch Moto">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-2024/10.jpg.webp" alt="X-Light F10 2.0 Inch Moto" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     <h3><a href="https://auto365.vn/x-light-f10-20-inch-moto" target="_blank" rel="noreferrer">X-Light F10 2.0 Inch Moto</a></h3>
@@ -740,14 +740,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/x-light-f10-20-inch-moto" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="5500000" data-name="bi gầm x-light f10 pro 3 nhiệt màu" data-color="3000K,4300K,5500K" data-needs="rain,mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 Pro 3 nhiệt màu">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-pro/10.jpg.webp" alt="Bi gầm X-Light F10 Pro 3 nhiệt màu" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -757,14 +757,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Mưa, sương mù</span><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="2.0" data-voltage="12V" data-price="4200000" data-name="bi gầm x-light f10 2.0 2024" data-color="3000K,4300K,5500K" data-needs="small,city">
   <a class="product-image" href="https://auto365.vn/x-light-f10-2024" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 2.0 2024">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-2024/10.jpg.webp" alt="Bi gầm X-Light F10 2.0 2024" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -774,14 +774,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/x-light-f10-2024" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="24V" data-price="6000000" data-name="bi gầm x-light f10 turbo 24v" data-color="3000K,4300K,5500K" data-needs="commercial">
   <a class="product-image" href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 Turbo 24V">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-turbo/8.jpg.webp" alt="Bi gầm X-Light F10 Turbo 24V" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -791,14 +791,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="Henvvei" data-lens="3.0" data-voltage="12V" data-price="5800000" data-name="bi gầm henvvei gt-1" data-color="3000K,4300K,5500K" data-needs="mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-henvvei-gt-1" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm Henvvei GT-1">
     <img src="https://auto365.vn/uploads/images/product/HENVVEI/GT-1/HENVVEI-GT-1.jpg.webp" alt="Bi gầm Henvvei GT-1" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">Henvvei</span>
     
@@ -808,14 +808,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-henvvei-gt-1" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="GTR" data-lens="3.0" data-voltage="12V" data-price="6200000" data-name="bi gầm gtr g1 turbo" data-color="3000K,4300K,5500K" data-needs="touring">
   <a class="product-image" href="https://auto365.vn/bi-gam-gtr-g1-turbo" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm GTR G1 Turbo">
     <img src="https://auto365.vn/uploads/images/product/bi-gam-gtr-g1-turbo/3.jpg.webp" alt="Bi gầm GTR G1 Turbo" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">GTR</span>
     
@@ -825,14 +825,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-gtr-g1-turbo" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="" data-voltage="12V" data-price="6000000" data-name="bi gầm x-light f10 turbo" data-color="3000K,4300K,5500K" data-needs="rain,touring">
   <a class="product-image" href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 Turbo">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-turbo/7.jpg.webp" alt="Bi gầm X-Light F10 Turbo" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -842,14 +842,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="2.0" data-voltage="12V" data-price="4200000" data-name="bi gầm x-light f10 2.0 inch 2023" data-color="3000K,4300K,5500K" data-needs="small,city">
   <a class="product-image" href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 2.0 Inch 2023">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/x-light-f10-2-inch/1.jpg.webp" alt="Bi gầm X-Light F10 2.0 Inch 2023" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -859,14 +859,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="5000000" data-name="bi gầm x-light x3 pro" data-color="3000K,4300K,5500K" data-needs="mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light X3 Pro">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/X3-PRO/6.jpg.webp" alt="Bi gầm X-Light X3 Pro" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -876,14 +876,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="Titan" data-lens="3.0" data-voltage="12V" data-price="3500000" data-name="bi gầm titan 301 – 3 nhiệt màu" data-color="3000K,4300K,5500K" data-needs="budget,rain">
   <a class="product-image" href="https://auto365.vn/bi-gam-titan-301" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm Titan 301 – 3 nhiệt màu">
     <img src="https://auto365.vn/uploads/images/product/TITAN/301/1.jpg.webp" alt="Bi gầm Titan 301 – 3 nhiệt màu" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">Titan</span>
     
@@ -893,14 +893,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-titan-301" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="GTR" data-lens="" data-voltage="12V" data-price="5500000" data-name="bi gầm gtr g1 ultra" data-color="3000K,4300K,5500K" data-needs="mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-led-gtr-g1-ultra" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm GTR G1 Ultra">
     <img src="https://auto365.vn/uploads/images/product/GTR/g1-ultra/gtr-g1-ultra-auto365%20(1).avif" alt="Bi gầm GTR G1 Ultra" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">GTR</span>
     
@@ -910,14 +910,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-led-gtr-g1-ultra" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="Red Lighting" data-lens="" data-voltage="12V" data-price="5500000" data-name="bi gầm red lighting r8 spyder" data-color="3000K,4300K,5500K" data-needs="mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-red-lighting-r8-spyder" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm Red Lighting R8 Spyder">
     <img src="https://auto365.vn/uploads/images/product/RED%20LIGHTING/r8-sypder-auto365-min.jpg.webp" alt="Bi gầm Red Lighting R8 Spyder" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">Red Lighting</span>
     
@@ -927,14 +927,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-red-lighting-r8-spyder" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="Fogway" data-lens="" data-voltage="12V" data-price="4000000" data-name="bi gầm fogway gen 1" data-color="3000K,4300K,5500K" data-needs="budget,rain">
   <a class="product-image" href="https://auto365.vn/bi-gam-fogway-gen-1" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm Fogway Gen 1">
     <img src="https://auto365.vn/uploads/images/product/FOGWAY/fogway-gen-1-auto.jpg.webp" alt="Bi gầm Fogway Gen 1" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">Fogway</span>
     
@@ -944,14 +944,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Mưa, sương mù</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-fogway-gen-1" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="Matrix Light" data-lens="" data-voltage="12V" data-price="4000000" data-name="bi gầm matrix light m1 pro" data-color="3000K,4300K,5500K" data-needs="budget,mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-matrix-light-m1-pro" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm Matrix Light M1 Pro">
     <img src="https://auto365.vn/uploads/images/product/MATRIX%20LIGHT/m1-pro-auto365.jpg.webp" alt="Bi gầm Matrix Light M1 Pro" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">Matrix Light</span>
     
@@ -961,14 +961,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-matrix-light-m1-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="" data-voltage="12V" data-price="4000000" data-name="bi gầm x-light f10 2022 – có mắt quỷ" data-color="3000K,4300K,5500K" data-needs="legacy">
   <a class="product-image" href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 2022 – có mắt quỷ">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%20M%E1%BA%AET%20QU%E1%BB%B6%202022/anh-sang-cos-bi-gam-x-light-f10-mat-quy.jpg.webp" alt="Bi gầm X-Light F10 2022 – có mắt quỷ" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -978,14 +978,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="GTR" data-lens="" data-voltage="12V" data-price="0" data-name="bi gầm led gtr g1 pro" data-color="" data-needs="legacy">
   <a class="product-image" href="https://auto365.vn/bi-gam-led-gtr-g1-pro" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm LED GTR G1 Pro">
     <img src="https://auto365.vn/uploads/images/2021/06/04/04-06-2021-1622804288-bi-gam-g1-pro-cao-cap-tai-auto365.png.webp" alt="Bi gầm LED GTR G1 Pro" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">GTR</span>
     
@@ -995,14 +995,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-led-gtr-g1-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V" data-price="4000000" data-name="bi gầm x-light f10 new" data-color="3000K,4300K,5500K" data-needs="legacy">
   <a class="product-image" href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light F10 New">
     <img src="https://auto365.vn/uploads/images/2022/09/19/19-09-2022-0-1663554502-1.png.webp" alt="Bi gầm X-Light F10 New" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">X-Light</span>
     
@@ -1012,14 +1012,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
 <article class="product-card" data-brand="GTR" data-lens="" data-voltage="12V" data-price="0" data-name="bi gầm gtr special edition 150 plus" data-color="" data-needs="legacy">
   <a class="product-image" href="https://auto365.vn/bi-gam-gtr-special-edition-150-plus" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm GTR Special Edition 150 Plus">
     <img src="https://auto365.vn/uploads/images/2020/03/26/26-03-2020-0-1585213562-special-edition%20_9.jpg.webp" alt="Bi gầm GTR Special Edition 150 Plus" width="600" height="600" loading="lazy" decoding="async">
-  </a>
+  </a><label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
   <div class="product-body">
     <span class="product-brand-badge">GTR</span>
     
@@ -1029,7 +1029,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-gtr-special-edition-150-plus" target="_blank" rel="noreferrer">Xem sản phẩm</a>
-      <label class="compare-toggle"><input type="checkbox" class="pf-compare"><span>So sánh</span></label>
+      
     </div>
   </div>
 </article>
