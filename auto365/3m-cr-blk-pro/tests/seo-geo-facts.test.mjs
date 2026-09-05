@@ -118,6 +118,7 @@ test('uses the requested three contact actions in the branch finder', () => {
   assert.match(html, /href="https:\/\/zalo\.me\/3622666363345050913"[^>]*>Nhắn Zalo<\/a>/);
   assert.match(html, /href="tel:0365365365"[^>]*>Gọi 0365 365 365<\/a>/);
   assert.match(html, /class="a365-btn a365-btn-outline js-open-consult" type="button">Gửi thông tin tư vấn<\/button>/);
+  assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;min-height:38px;align-items:center;justify-content:center;padding:0 8px;[^}]*white-space:nowrap\}/);
 });
 
 test('uses the street address as the Google Maps link without service-hours copy', () => {
