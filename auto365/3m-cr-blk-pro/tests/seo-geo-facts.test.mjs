@@ -267,7 +267,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
-  assert.match(html, /\.a365-grid\{display:grid;grid-template-columns:\.88fr 1\.12fr;gap:14px;align-items:stretch\}/);
+  assert.match(html, /\.a365-grid\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:14px;align-items:stretch\}/);
   assert.match(html, /\.a365-panel\{min-width:0;padding:18px/);
   assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:#e31b23/);
   assert.match(html, /\.a365-region\{display:flex;height:46px;min-height:46px;align-items:center;justify-content:space-between/);
