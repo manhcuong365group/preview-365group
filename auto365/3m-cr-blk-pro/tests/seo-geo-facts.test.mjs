@@ -13,6 +13,7 @@ test('states the CR BLK Pro ontology and search-intent heading accurately', () =
 test('keeps the quick-answer heading compact beside its supporting copy', () => {
   assert.match(html, /\.answer-card h2\{font-size:clamp\(23px,2vw,27px\)!important;line-height:1\.14\}/);
   assert.match(html, /\.trust-copy h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
+  assert.match(html, /\.consult-section \.section-heading h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
 });
 
 test('shows the verified configuration for each published case', () => {
