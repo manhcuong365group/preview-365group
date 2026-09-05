@@ -208,6 +208,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<h2 class="a365-title"[^>]*>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
   assert.match(html, /<h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3>/);
   assert.match(html, /class="a365-btn" href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm gần tôi →<\/a>/);
+  assert.match(html, /\.a365-btn\{display:flex;width:100%;min-height:40px/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
@@ -282,6 +283,7 @@ test('keeps a compact vertical rhythm between page blocks', () => {
   assert.match(html, /\.section\{padding:14px 0\}/);
   assert.match(html, /\.pro-shop-section\{padding:16px 0 24px\}/);
   assert.match(html, /\.why-auto365\{margin:14px 0 0\}/);
+  assert.match(html, /\.media-section\{padding:16px 0\}/);
 });
 
 test('presents the four certification visuals with compact captions only', () => {
