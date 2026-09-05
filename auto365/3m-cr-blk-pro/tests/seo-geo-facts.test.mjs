@@ -87,6 +87,12 @@ test('uses real price buttons and a keyboard-safe consultation modal', () => {
   assert.match(html, /consultForm\.contains\(event\.target\)/);
 });
 
+test('keeps pricing cards compact while preserving readable prices', () => {
+  assert.match(html, /\.price-cards\{gap:12px\}/);
+  assert.match(html, /\.price-card\{min-height:0;padding:18px 20px;border-width:1px;border-radius:16px\}/);
+  assert.match(html, /\.price-card>strong\{margin:8px 0 0;font-size:24px\}/);
+});
+
 test('keeps stylesheet tags balanced so browser CSS parsing is deterministic', () => {
   const openingTags = (html.match(/<style(?:\s[^>]*)?>/g) || []).length;
   const closingTags = (html.match(/<\/style>/g) || []).length;
