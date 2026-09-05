@@ -171,9 +171,9 @@ test('uses only the stated Auto 75 condition for the published TDS table', () =>
   assert.match(html, /Dữ liệu áp dụng cho tổ hợp phim \+ kính Auto 75 theo Table B \(kính ô tô xanh dày 6 mm, VLT nền 73%\)/);
 });
 
-test('keeps the technical-specification heading on one line on larger screens', () => {
-  assert.match(html, /\.evidence-data h2\{[^}]*font-size:clamp\(20px,2vw,28px\);white-space:nowrap\}/);
-  assert.match(html, /@media\(max-width:680px\)\{[^}]*\.evidence-data h2\{white-space:normal\}/);
+test('keeps the technical-specification layout responsive', () => {
+  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:stretch\}/);
+  assert.match(html, /@media\(max-width:900px\)\{\.evidence-grid\{align-items:stretch\}/);
 });
 
 test('places the real-installation image beside the technical table without redundant source panels', () => {
@@ -181,8 +181,7 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<p class="spec-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
-  assert.match(html, /\.evidence-grid\{display:grid;grid-template-columns:460px minmax\(0,1fr\);align-items:start;gap:32px\}/);
-  assert.match(html, /\.evidence-data\{max-width:460px;justify-self:start;width:100%\}/);
+  assert.match(html, /\.evidence-data\{padding:20px 22px\}/);
 });
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
@@ -259,13 +258,15 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
   assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\);gap:6px;margin-top:10px\}/);
   assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;height:46px;min-height:46px/);
-  assert.match(html, /\.a365-title,\.a365-right-title\{min-height:0;font-size:clamp\(20px,1\.75vw,23px\)!important;line-height:1\.15;white-space:nowrap\}/);
-  assert.match(html, /@media\(max-width:520px\)\{\.a365-contact-actions\{grid-template-columns:1fr\}\.a365-contact-actions \.a365-btn\{height:40px;min-height:40px;font-size:12px\}\.a365-title,\.a365-right-title\{white-space:normal\}\}/);
+  assert.match(html, /\.a365-title,\.a365-right-title\{min-height:0;margin:0;font-size:clamp\(20px,1\.75vw,23px\);line-height:1\.15;white-space:nowrap\}/);
+  assert.match(html, /\.a365-contact-actions\{grid-template-columns:1fr\}/);
+  assert.match(html, /\.a365-contact-actions \.a365-btn\{height:40px;min-height:40px;font-size:12px\}/);
+  assert.match(html, /\.a365-title,\.a365-right-title\{white-space:normal\}/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
-  assert.match(html, /\.a365-panel\{padding:18px\}/);
-  assert.match(html, /\.a365-grid\{align-items:stretch\}/);
+  assert.match(html, /\.a365-grid\{display:grid;grid-template-columns:\.88fr 1\.12fr;gap:14px;align-items:stretch\}/);
+  assert.match(html, /\.a365-panel\{min-width:0;padding:18px/);
   assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:#e31b23/);
   assert.match(html, /\.a365-region\{display:flex;height:46px;min-height:46px;align-items:center;justify-content:space-between/);
   assert.doesNotMatch(html, /Chọn khu vực để xem danh sách cửa hàng, địa chỉ, dịch vụ và thông tin liên hệ từng điểm/);
