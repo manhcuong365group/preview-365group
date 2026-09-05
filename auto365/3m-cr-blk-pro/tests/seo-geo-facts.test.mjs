@@ -269,8 +269,19 @@ test('uses a spacious, aligned Auto365 proof layout without redundant labels', (
   assert.doesNotMatch(html, /<span>Vì sao chọn Auto365\?<\/span>/);
   assert.doesNotMatch(html, /Hình ảnh chứng nhận, lắp đặt và hoạt động đào tạo được hiển thị để khách hàng tham khảo khi tư vấn\./);
   assert.match(html, /\.why-proof-card\{display:grid;min-height:0;grid-template-rows:40px 72px 155px auto/);
-  assert.match(html, /\.why-certificate-list img\{width:100%;height:120px/);
+  assert.match(html, /\.why-certificate-list img\{width:100%;height:150px/);
   assert.match(html, /\.answer-section\{padding-top:16px;padding-bottom:10px\}/);
+});
+
+test('uses the page typography weight for Auto365 proof-card labels', () => {
+  assert.match(html, /\.why-proof-card strong\{[^}]*font-weight:600/);
+  assert.match(html, /\.why-proof-card em\{[^}]*font-weight:600/);
+});
+
+test('shows only the four enlarged certification visuals', () => {
+  assert.doesNotMatch(html, /<div class="why-certificate-copy">/);
+  assert.match(html, /\.why-certificate-band\{display:block/);
+  assert.match(html, /\.why-certificate-list img\{width:100%;height:150px/);
 });
 
 test('keeps only essential TDS context and includes the IRR values', () => {
