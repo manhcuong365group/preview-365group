@@ -237,7 +237,7 @@ test('scales the evidence panels without forcing a tall cropped vehicle image', 
 
 test('keeps the specification panel compact at article width', () => {
   assert.match(html, /\.evidence-data\{padding:20px 22px/);
-  assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:10px 12px/);
+  assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
   assert.match(html, /\.spec-table-wrap>p\{padding:10px 12px;font-size:10px/);
 });
 
@@ -245,10 +245,9 @@ test('does not render stray text before the page content', () => {
   assert.doesNotMatch(html, /<\/style>`r`n/);
 });
 
-test('balances the visual and specification panels to the same desktop height', () => {
-  assert.match(html, /\.evidence-grid\{align-items:stretch\}/);
-  assert.match(html, /\.evidence-visual\{height:100%/);
-  assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
+test('keeps the visual at its natural wide aspect ratio', () => {
+  assert.match(html, /\.evidence-visual\{height:auto;aspect-ratio:auto/);
+  assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none/);
 });
 
 test('keeps the consultation form compact beside its image on desktop', () => {
@@ -262,4 +261,10 @@ test('keeps only essential TDS context and includes the IRR values', () => {
   assert.doesNotMatch(html, /<p class="evidence-intro">/);
   assert.doesNotMatch(html, /VLT trong bảng là VLT của tổ hợp phim/);
   assert.doesNotMatch(html, /class="source-legend"/);
+});
+
+test('uses a three-to-two visual-to-table ratio without stretching the photo', () => {
+  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
+  assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none;width:100%;height:auto/);
+  assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
 });
