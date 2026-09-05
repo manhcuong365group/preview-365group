@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
@@ -65,6 +65,14 @@ test('keeps JSON-LD and the inline interaction script syntactically valid', () =
   inlineScripts.forEach((script) => assert.doesNotThrow(() => new Function(script)));
 });
 
+test('ships every preview-local image and the social image with this page', async () => {
+  const localSources = [...html.matchAll(/(?:src|href)="(\/3m-cr-blk-pro\/hinh\/[^"]+)"/g)]
+    .map((match) => match[1]);
+  assert.ok(localSources.length > 0, 'preview-local image sources exist');
+  await Promise.all(localSources.map((source) => access(new URL(`../hinh/${source.split('/').pop()}`, import.meta.url))));
+  await access(new URL('../hinh/og-cr-blk-pro-1200x630.png', import.meta.url));
+});
+
 test('uses real price buttons and a keyboard-safe consultation modal', () => {
   assert.match(html, /<button type="button" class="price-card" id="price-minicar"/);
   assert.match(html, /<button type="button" class="price-card active" id="price-sedan"/);
@@ -83,6 +91,12 @@ test('does not claim an unverified price confirmation and preserves certificate 
   assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
   assert.match(html, /\.pro-shop-gallery img\{height:150px;object-fit:contain\}/);
   assert.doesNotMatch(html, /\.pro-shop-gallery img\{height:150px;object-fit:cover\}/);
+  assert.match(html, /\.why-certificate-card img\{object-fit:contain;background:#fff\}/);
+});
+
+test('keeps text readable on light case panels and publishes the current schema date', () => {
+  assert.match(html, /\.cases-section \.split-heading>p\{color:var\(--muted\)\}/);
+  assert.match(html, /"dateModified": "2026-09-05"/);
 });
 
 test('does not reserve mobile space for a sticky CTA that is absent from the markup', () => {
