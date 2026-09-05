@@ -108,6 +108,7 @@ test('keeps stylesheet tags balanced so browser CSS parsing is deterministic', (
   const openingTags = (html.match(/<style(?:\s[^>]*)?>/g) || []).length;
   const closingTags = (html.match(/<\/style>/g) || []).length;
   assert.equal(openingTags, closingTags);
+  assert.doesNotMatch(html, /\.branch-finder-grid\{|\.branch-finder-panel\{|\.branch-regions\{/);
 });
 
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
