@@ -31,10 +31,10 @@ test('shows the verified configuration for each published case', () => {
   }
 });
 
-test('keeps technical copy attributed to the applicable 3M TDS conditions', () => {
+test('keeps only the essential technical context beside the 3M values', () => {
   assert.match(html, /<h2>Thông số dùng để lựa chọn<\/h2>/);
-  assert.match(html, /Technical Data Sheet, Revision E, May 2024, Table B/);
   assert.match(html, /IRER được xác định trong dải 780–2\.500 nm/);
+  assert.doesNotMatch(html, /class="spec-source"/);
   assert.doesNotMatch(html, /Auto365 đo/);
 });
 
@@ -167,8 +167,8 @@ test('limits case and price copy to evidence published on this preview', () => {
   assert.match(html, /Giá tham khảo trọn xe theo nhóm xe;/);
 });
 
-test('uses only the stated Auto 75 condition for the published TDS table', () => {
-  assert.match(html, /Dữ liệu áp dụng cho tổ hợp phim \+ kính Auto 75 theo Table B \(kính ô tô xanh dày 6 mm, VLT nền 73%\)/);
+test('keeps the Auto 75 condition visible in the published TDS table', () => {
+  assert.match(html, /VLT \(phim \+ kính Auto 75\)/);
 });
 
 test('keeps the technical-specification layout responsive', () => {
@@ -178,7 +178,8 @@ test('keeps the technical-specification layout responsive', () => {
 
 test('places the real-installation image beside the technical table without redundant source panels', () => {
   assert.match(html, /<div class="container evidence-grid">\s*<figure class="evidence-visual">[\s\S]*?<div class="evidence-data"><h2>Thông số dùng để lựa chọn<\/h2>/);
-  assert.match(html, /<p class="spec-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B/);
+  assert.doesNotMatch(html, /class="spec-source"/);
+  assert.doesNotMatch(html, /Đo kiểm trên xe thực tế/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
   assert.match(html, /\.evidence-data\{padding:20px 22px\}/);
