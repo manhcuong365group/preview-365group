@@ -114,7 +114,6 @@ test('uses compact location action chips and omits the district label', () => {
 
 test('limits case and price copy to evidence published on this preview', () => {
   assert.match(html, /Mỗi case hiển thị ảnh thi công và cấu hình đã dán của xe\./);
-  assert.match(html, /Xe thật • Cấu hình đã dán/);
   assert.doesNotMatch(html, /Case có ảnh, mã phim và ngày thi công/);
   assert.match(html, /Giá tham khảo trọn xe theo nhóm xe;/);
 });
@@ -166,7 +165,7 @@ test('keeps location cards compact without redundant tags or address underlines'
 });
 
 test('presents Auto365 reasons as four linked proof points rather than a generic checklist', () => {
-  assert.match(html, /<h3 id="why-auto365-title">Mỗi lựa chọn đều có thông tin để kiểm tra và đối chiếu<\/h3>/);
+  assert.match(html, /<h2 class="why-auto365-title" id="why-auto365-title">Vì sao nên dán phim cách nhiệt tại Auto365\?<\/h2>/);
   assert.doesNotMatch(html, /Chọn dịch vụ có cơ sở/);
   assert.doesNotMatch(html, /Quyết định dựa trên những gì khách hàng có thể đối chiếu trước, trong và sau khi thi công\./);
   assert.equal((html.match(/class="why-proof-card"/g) || []).length, 4);
@@ -248,7 +247,7 @@ test('does not render stray text before the page content', () => {
 });
 
 test('keeps the visual at its natural wide aspect ratio', () => {
-  assert.match(html, /\.evidence-visual\{height:auto;aspect-ratio:auto/);
+  assert.match(html, /\.evidence-visual\{height:100%;aspect-ratio:auto/);
   assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none/);
 });
 
@@ -258,6 +257,14 @@ test('keeps the consultation form compact beside its image on desktop', () => {
   assert.match(html, /\.consult-form \.button-gold\{min-height:42px/);
 });
 
+test('aligns the consultation form with the adjacent introduction on desktop', () => {
+  assert.match(html, /@media\(min-width:901px\)\{\.consult-form\{margin-top:0\}\}/);
+});
+
+test('removes the redundant four-point service-proof strip below the hero', () => {
+  assert.doesNotMatch(html, /<section class="proof-strip" aria-label="Bằng chứng dịch vụ">/);
+});
+
 test('keeps only essential TDS context and includes the IRR values', () => {
   assert.match(html, /<th scope="row">IRR<\/th><td>98%<\/td><td>98%<\/td><td>98%<\/td>/);
   assert.doesNotMatch(html, /<p class="evidence-intro">/);
@@ -265,14 +272,15 @@ test('keeps only essential TDS context and includes the IRR values', () => {
   assert.doesNotMatch(html, /class="source-legend"/);
 });
 
-test('uses a three-to-two visual-to-table ratio without stretching the photo', () => {
-  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
+test('uses a three-to-two visual-to-table ratio with aligned evidence panels', () => {
+  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:stretch\}/);
+  assert.match(html, /\.evidence-visual\{height:100%;aspect-ratio:auto/);
   assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none;width:100%;height:auto/);
   assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
 });
 
 test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
-  assert.match(html, /<h3 id="why-auto365-title">Mỗi lựa chọn đều có thông tin để kiểm tra và đối chiếu<\/h3>/);
+  assert.match(html, /<h2 class="why-auto365-title" id="why-auto365-title">Vì sao nên dán phim cách nhiệt tại Auto365\?<\/h2>/);
   assert.equal((html.match(/class="why-proof-card"/g) || []).length, 4);
   assert.match(html, /class="why-proof-card" href="#pro-shop-certificates"/);
   assert.match(html, /class="why-proof-card" href="#specs"/);
@@ -280,6 +288,8 @@ test('presents Auto365 proof as four visual verification cards with a certificat
   assert.match(html, /class="why-proof-card" href="#warranty"/);
   assert.match(html, /class="why-certificate-band" id="pro-shop-certificates"/);
   assert.match(html, /class="why-actions"/);
+  assert.match(html, /\.why-proof-card\{display:flex;min-height:0;flex-direction:column/);
+  assert.match(html, /\.why-proof-card img\{width:100%;height:155px;margin-top:0/);
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/2\.webp" alt="Mặt tiền 3M Pro Shop Auto365"/);
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/5\.webp" alt="Không gian 3M Pro Shop Auto365 phục vụ tư vấn"/);
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/8\.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365"/);
