@@ -66,9 +66,34 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .hero h1{font-size:clamp(30px,4vw,44px);line-height:1.08;letter-spacing:-.03em}
 .hero-lead{color:var(--muted);font-size:15px;line-height:1.65;margin-top:14px;max-width:600px}
 .quick-summary{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;margin-top:20px}
-.quick-summary b{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:8px}
+.quick-summary b{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
 .quick-summary ul{margin:0;padding-left:18px;font-size:13px;color:#3a3d42;line-height:1.7}
+.quick-summary-list{display:flex;flex-direction:column;gap:12px}
+.quick-summary-item{display:flex;gap:10px;align-items:flex-start}
+.quick-summary-item .qi-icon{flex:none;width:28px;height:28px;border-radius:8px;background:#fff0f1;color:var(--red);display:flex;align-items:center;justify-content:center}
+.quick-summary-item p{margin:0;font-size:13px;color:#3a3d42;line-height:1.55}
 .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.hero-byline{display:flex;align-items:center;gap:10px;margin-top:22px;flex-wrap:wrap}
+.hero-byline img{width:36px;height:36px;border-radius:50%;object-fit:cover;flex:none}
+.hero-byline-name{font-size:12px;color:#3a3d42;line-height:1.4}
+.hero-byline-name b{color:var(--ink);font-weight:700}
+.hero-byline-sep{color:var(--line);font-size:11px}
+.hero-byline-date{font-size:11.5px;color:var(--muted)}
+.hero-media{position:relative;border-radius:18px;overflow:hidden;background:#0b0c0f;min-height:100%}
+.hero-media img{width:100%;height:100%;object-fit:cover;display:block;min-height:340px}
+.hero-media-card{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(16,17,20,.82);backdrop-filter:blur(4px);border-radius:14px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.hero-media-card h3{color:#fff;font-size:13.5px;margin:0 0 3px}
+.hero-media-card p{color:#c7cad0;font-size:11.5px;margin:0}
+.hero-media-card .btn{flex:none}
+.hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:32px}
+.hero-stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.hero-stat b{display:block;font-size:22px;color:var(--ink);letter-spacing:-.02em}
+.hero-stat span{font-size:11.5px;color:var(--muted);line-height:1.4}
+.hero-brands{margin-top:24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.hero-brands-label{font-size:10.5px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.hero-brands-list{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+.hero-brands-list span{font-weight:800;color:#8a8d93;font-size:14px;letter-spacing:.02em}
+@media (width<=900px){.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-media img{min-height:240px}}
 .finder-bar{background:var(--ink-2);border-radius:20px;padding:24px;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .finder-bar-head{color:#fff;margin-bottom:18px}
 .finder-bar-head .kicker{color:#ff8890;margin-bottom:6px}
@@ -435,37 +460,52 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <p class="hero-lead">Bi gầm ô tô là cụm đèn projector lắp thấp ở phía trước xe, giúp bổ sung vùng sáng gần và hai mép đường. Cấu hình phù hợp phải dựa trên hốc đèn, điện áp, pát lắp, nhiệt màu và nhu cầu sử dụng của từng xe.</p>
       <div class="quick-summary">
         <b>Trả lời nhanh</b>
-        <ul>
-          <li>Bi gầm bổ sung vùng sáng gần và mép đường, không thay thế đèn chiếu chính.</li>
-          <li>Giá sản phẩm hiện từ 3.500.000đ đến 6.200.000đ mỗi sản phẩm/cặp, chưa gồm pát, dây/relay, công lắp và VAT.</li>
-          <li>Phù hợp khi hốc đèn, điện áp và hệ điện của xe khớp với sản phẩm — cần kiểm tra trước khi chốt.</li>
-          <li>Case thực tế là bằng chứng tham khảo, không phải cam kết lắp được cho mọi xe cùng dòng.</li>
-        </ul>
+        <div class="quick-summary-list">
+          <div class="quick-summary-item">
+            <span class="qi-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2.05V17h6v-.25c0-.85.4-1.55 1-2.05A7 7 0 0 0 12 2Zm-2 17h4v1a2 2 0 0 1-4 0v-1Z"/></svg></span>
+            <p>Bi gầm bổ sung vùng sáng gần và mép đường, không thay thế đèn chiếu chính.</p>
+          </div>
+          <div class="quick-summary-item">
+            <span class="qi-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm.75 5v1.07c1.6.28 2.75 1.2 2.75 2.55 0 1.5-1.3 2.2-3.1 2.63-1.5.36-1.9.68-1.9 1.2 0 .5.55.85 1.5.85.95 0 1.4-.35 1.5-.9h1.9c-.1 1.3-1.1 2.15-2.65 2.4V18h-1.5v-1.08c-1.7-.25-2.8-1.15-2.85-2.62h1.9c.05.6.55 1 1.55 1 .9 0 1.4-.35 1.4-.85 0-.45-.4-.75-1.65-1.05-1.7-.4-3.35-1-3.35-2.75 0-1.35 1.1-2.25 2.7-2.5V7h1.5Z"/></svg></span>
+            <p>Giá sản phẩm hiện từ 3.500.000đ đến 6.200.000đ mỗi sản phẩm/cặp, chưa gồm pát, dây/relay, công lắp và VAT.</p>
+          </div>
+          <div class="quick-summary-item">
+            <span class="qi-icon" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19.4 13a7.7 7.7 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.65l-2-3.45a.5.5 0 0 0-.6-.22l-2.5 1a7.9 7.9 0 0 0-1.7-1L14.4 2.3a.5.5 0 0 0-.5-.4h-4a.5.5 0 0 0-.5.4L9 4.98c-.6.24-1.2.57-1.7 1l-2.5-1a.5.5 0 0 0-.6.22l-2 3.45a.5.5 0 0 0 .1.65L4.4 11a7.7 7.7 0 0 0 0 2l-2.1 1.6a.5.5 0 0 0-.1.65l2 3.45c.13.22.4.3.6.22l2.5-1c.5.43 1.1.76 1.7 1l.4 2.68c.05.24.25.4.5.4h4c.25 0 .45-.16.5-.4l.4-2.68c.6-.24 1.2-.57 1.7-1l2.5 1c.2.08.47 0 .6-.22l2-3.45a.5.5 0 0 0-.1-.65L19.4 13ZM12 15.5A3.5 3.5 0 1 1 12 8.5a3.5 3.5 0 0 1 0 7Z"/></svg></span>
+            <p>Phù hợp khi hốc đèn, điện áp và hệ điện của xe khớp với sản phẩm — cần kiểm tra trước khi chốt.</p>
+          </div>
+        </div>
       </div>
       <div class="hero-cta">
-        <a class="btn btn-primary" href="#tu-van-theo-xe">Nhận tư vấn theo xe</a>
+        <a class="btn btn-primary js-open-consult" href="#tu-van-theo-xe">Tìm cấu hình theo xe</a>
+        <a class="btn btn-outline" href="#case-thuc-te">Xem case thật</a>
         <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
-        <a class="btn btn-outline" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Chat Zalo</a>
+      </div>
+      <div class="hero-byline">
+        <img src="bi-gam/hinh/nguyen-quang-dao-avatar.webp" alt="Nguyễn Quang Đạo" width="36" height="36" loading="lazy" decoding="async">
+        <span class="hero-byline-name">Kiểm duyệt kỹ thuật <b>Nguyễn Quang Đạo</b></span>
+        <span class="hero-byline-sep">·</span>
+        <span class="hero-byline-date">Cập nhật 04/09/2026</span>
       </div>
     </div>
-    <form class="finder-bar" id="tu-van-theo-xe" action="/api/lead" method="post">
-      <div class="finder-bar-head">
-        <span class="kicker">Kiểm tra nhanh</span>
-        <h2>Nhận tư vấn theo xe</h2>
-        <p>Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
-      </div>
-      <div class="finder-bar-fields">
-        <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
-        <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
-        <label>Hãng xe <select name="car_brand" required><option value="">Chọn hãng</option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Mazda</option><option>Kia</option><option>Hyundai</option><option>Mitsubishi</option><option>Khác</option></select></label>
-        <label>Dòng xe <input type="text" name="car_model" placeholder="VD: Vios, CR-V…"></label>
-        <label>Khu vực <select name="region"><option value="">Chọn khu vực</option><option>Miền Bắc</option><option>Miền Trung</option><option>Miền Nam</option></select></label>
-        <label>Nhu cầu đi xe <select name="driving_need"><option>Đi phố + đi tỉnh</option><option>Mưa, sương và đường tối</option><option>Đi tỉnh / cao tốc</option><option>Chủ yếu đi phố</option></select></label>
-        <label class="finder-bar-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
-      </div>
-      <button type="submit" class="btn btn-primary finder-bar-submit">Gửi yêu cầu tư vấn</button>
-      <p class="finder-bar-note" role="status" aria-live="polite">Auto365 sẽ gửi họ tên, số điện thoại và thông tin xe đến hệ thống tiếp nhận để liên hệ tư vấn. Dữ liệu được xử lý theo Chính sách bảo mật. Sau khi gửi, bạn có thể tiếp tục trao đổi qua Zalo.</p>
-    </form>
+    <figure class="hero-media">
+      <img src="bi-gam/hinh/case-ford-ranger-wildtrak-2026-full.webp" alt="Ford Ranger Wildtrak 2026 lắp bi gầm X-Light F10 Turbo V2 tại Auto365" width="800" height="533" loading="eager" fetchpriority="high" decoding="async">
+      <figcaption class="hero-media-card">
+        <div><h3>Ford Ranger Wildtrak 2026 · hồ sơ xe thật</h3><p>Sau khi lắp bi gầm X-Light F10 Turbo V2 tại Auto365.</p></div>
+        <a class="btn btn-outline" style="background:#fff;color:var(--ink)" href="#case-thuc-te">Xem chi tiết &rarr;</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="shell">
+    <div class="hero-stats">
+      <div class="hero-stat"><b>30+</b><span>sản phẩm đang có trên danh mục</span></div>
+      <div class="hero-stat"><b>10+</b><span>hồ sơ xe thật đã tìm thấy</span></div>
+      <div class="hero-stat"><b>3,5–6,2tr</b><span>khoảng giá sản phẩm niêm yết</span></div>
+      <div class="hero-stat"><b>12/24V</b><span>cần kiểm tra đúng hệ điện của xe</span></div>
+    </div>
+    <div class="hero-brands">
+      <span class="hero-brands-label">Các thương hiệu bi gầm được lắp đặt nhiều tại Auto365</span>
+      <div class="hero-brands-list"><span>X-LIGHT</span><span>GTR</span><span>AES</span><span>HENVVEI</span></div>
+    </div>
   </div>
 </section>
 
@@ -1839,13 +1879,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       videoPlayBtn.replaceWith(iframe);
     });
   }
-
-  var finderForm = document.getElementById('tu-van-theo-xe');
-  finderForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    if (!finderForm.reportValidity()) return;
-    openZaloRequest(finderForm, '.finder-bar-note');
-  });
 
   var consultModal = document.getElementById('consult-modal');
   var consultClose = document.getElementById('consult-close');
