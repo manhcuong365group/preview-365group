@@ -244,3 +244,9 @@ test('keeps the specification panel compact at article width', () => {
 test('does not render stray text before the page content', () => {
   assert.doesNotMatch(html, /<\/style>`r`n/);
 });
+
+test('balances the visual and specification panels to the same desktop height', () => {
+  assert.match(html, /\.evidence-grid\{align-items:stretch\}/);
+  assert.match(html, /\.evidence-visual\{height:100%/);
+  assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
+});
