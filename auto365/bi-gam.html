@@ -387,7 +387,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-copy h2{font-size:clamp(19px,2.2vw,24px);line-height:1.2;margin-top:6px}
 .video-lead-copy p{color:#b9bec8;font-size:12px;line-height:1.5;margin-top:8px}
 .video-lead-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:28px 32px;align-content:start;min-width:0}
-.video-lead-form-title{grid-column:1/-1;margin:0 0 6px;font-size:24px;font-weight:800;color:var(--ink);line-height:1.2}
+.video-lead-form-title{grid-column:1/-1;margin:0 0 6px;font-size:24px;color:var(--ink);line-height:1.2}
 .video-lead-form label{grid-column:span 1;display:grid;gap:6px;font-size:11.5px;font-weight:700;color:#20242b}
 .video-lead-form label.field-full{grid-column:1/-1}
 .video-lead-form input,.video-lead-form select{min-height:44px;border:1px solid #d5dbe4;border-radius:10px;padding:0 12px;font-size:16px;color:#17191e}
@@ -406,12 +406,12 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .branch-finder-left h2{font-size:clamp(19px,2.2vw,24px);line-height:1.2;margin-top:6px}
 .branch-finder-left p{color:var(--muted);font-size:12.5px;line-height:1.6;margin-top:8px}
 .branch-finder-total{font-size:20px;display:block;margin-top:6px}
+.branch-finder-right-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .branch-region-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
 .branch-region{border:1px solid var(--line);border-radius:12px;padding:12px;display:block;min-width:0}
-.branch-region .br-num{color:#c5c7cb;font-size:13px;font-weight:800}
-.branch-region b{display:block;font-size:11px;color:#5c6067;margin-top:14px;font-weight:700}
+.branch-region b{display:block;font-size:11px;color:#5c6067;font-weight:700}
 .branch-region strong{display:block;font-size:15px;margin-top:4px}
-.branch-finder-all{display:block;text-align:center;background:var(--soft);border-radius:10px;padding:12px;margin-top:14px;font-size:12.5px;font-weight:700;color:var(--ink)}
+.branch-finder-all{display:inline-block;flex:none;background:var(--soft);border-radius:10px;padding:10px 16px;font-size:12.5px;font-weight:700;color:var(--ink);white-space:nowrap}
 @media (width<=900px){.branch-finder-card{grid-template-columns:1fr}}
 @media (width<=640px){.branch-region-grid{grid-template-columns:1fr 1fr 1fr;gap:6px}.branch-region{padding:8px}.branch-region strong{font-size:12px}.branch-finder-left,.branch-finder-right{padding:16px}}
 
@@ -446,7 +446,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="hero">
   <div class="shell hero-grid">
     <div>
-      <span class="kicker">Auto365 · Bi gầm ô tô</span>
       <h1>Đèn bi gầm ô tô: bảng giá và cách chọn theo xe</h1>
       <p class="hero-lead">Bi gầm ô tô là cụm đèn projector lắp thấp ở phía trước xe, giúp bổ sung vùng sáng gần và hai mép đường. Cấu hình phù hợp phải dựa trên hốc đèn, điện áp, pát lắp, nhiệt màu và nhu cầu sử dụng của từng xe.</p>
       <div class="quick-summary">
@@ -488,7 +487,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section" id="san-pham">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Danh mục sản phẩm</span>
       <h2>Các mẫu bi gầm tại Auto365</h2>
       <p>Lọc theo thương hiệu, kích thước lens, điện áp và sắp xếp theo giá.</p>
     </div>
@@ -1089,9 +1087,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section soft" id="quickselect">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Chọn nhanh</span>
       <h2>Chọn cấu hình đèn phù hợp trong 15 giây</h2>
-      <p>Chọn nhu cầu, lens và ngân sách — hệ thống đề xuất một mẫu tham khảo từ 30 sản phẩm đang có; cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.</p>
     </div>
     <div class="qs-bar">
       <div class="qs-row">
@@ -1110,7 +1106,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section dark" id="gia-chi-phi">
   <div class="shell price-layout">
     <div>
-      <span class="kicker">Chi phí</span>
       <h2>Giá bi gầm và chi phí lắp đặt.</h2>
       <p class="price-intro">Giá sản phẩm hiện từ 3.500.000đ đến 6.200.000đ mỗi sản phẩm/cặp, tùy mã sản phẩm. Giá chưa gồm pát/mặt dưỡng, dây/giắc, relay, công lắp, cân chỉnh và VAT. Tổng chi phí được xác nhận sau khi kiểm tra xe.</p>
       <ul class="price-checklist">
@@ -1143,7 +1138,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="knowledge-block">
       <div class="knowledge-block-head">
         <div>
-          <span class="kicker">Kiến thức chọn bi gầm</span>
           <h2>Sáu điều cần biết trước khi chọn bi gầm</h2>
         </div>
       </div>
@@ -1201,7 +1195,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <button type="button" class="video-embed-facade" id="video-embed-play" aria-label="Phát video Unbox Bi Gầm GTR G1 Turbo V2" style="background-image:url('bi-gam/hinh/video-unbox-gtr-g1-turbo-v2-thumb.webp')"></button>
         </div>
         <div class="video-lead-copy">
-          <span class="kicker">Tư vấn theo xe</span>
           <h2>Chuyên gia tư vấn cấu hình phù hợp</h2>
           <p>Để lại liên hệ và nhu cầu; hãng/dòng/năm xe bổ sung sau để Auto365 kiểm tra thực tế.</p>
         </div>
@@ -1232,7 +1225,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section" id="case-thuc-te">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Case thực tế</span>
       <h2>Xem case thực tế</h2>
     </div>
     <div class="case-filter" id="case-filter"><button type="button" data-brand="" class="is-active" aria-pressed="true">Tất cả</button><button type="button" data-brand="Mazda" aria-pressed="false">Mazda</button><button type="button" data-brand="Toyota" aria-pressed="false">Toyota</button><button type="button" data-brand="Ford" aria-pressed="false">Ford</button><button type="button" data-brand="Honda" aria-pressed="false">Honda</button><button type="button" data-brand="Mitsubishi" aria-pressed="false">Mitsubishi</button><button type="button" data-brand="Kia" aria-pressed="false">Kia</button><button type="button" data-brand="BMW" aria-pressed="false">BMW</button></div>
@@ -1366,7 +1358,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   <div class="shell">
     <div class="branch-finder-card">
       <div class="branch-finder-left">
-        <span class="kicker">Hệ thống Auto365</span>
         <h2>Tìm điểm Auto365 phù hợp gần bạn</h2>
         <p>Chọn khu vực để xem danh sách cửa hàng, địa chỉ, dịch vụ và thông tin liên hệ từng điểm.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:16px">
@@ -1374,15 +1365,19 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <a class="btn" style="background:var(--ink);color:#fff" href="tel:0365365911">Gọi 0365 365 911</a>
           <a class="btn btn-outline js-open-consult" href="#tu-van-theo-xe">Gửi thông tin tư vấn</a>
         </div>
-        <a class="branch-finder-all" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer">Xem toàn bộ hệ thống Auto365 &rarr;</a>
       </div>
       <div class="branch-finder-right">
-        <span class="kicker">Phủ sóng toàn quốc</span>
-        <b class="branch-finder-total">Hơn 90 chi nhánh &middot; 33 tỉnh thành</b>
+        <div class="branch-finder-right-head">
+          <div>
+            <span class="kicker">Phủ sóng toàn quốc</span>
+            <b class="branch-finder-total">Hơn 90 chi nhánh &middot; 33 tỉnh thành</b>
+          </div>
+          <a class="branch-finder-all" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer">Xem toàn bộ hệ thống Auto365 &rarr;</a>
+        </div>
         <div class="branch-region-grid">
-          <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><span class="br-num">01</span><b>MIỀN BẮC</b><strong>41 điểm</strong></a>
-          <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><span class="br-num">02</span><b>MIỀN TRUNG</b><strong>26 điểm</strong></a>
-          <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><span class="br-num">03</span><b>MIỀN NAM</b><strong>23 điểm</strong></a>
+          <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><b>MIỀN BẮC</b><strong>41 điểm</strong></a>
+          <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><b>MIỀN TRUNG</b><strong>26 điểm</strong></a>
+          <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><b>MIỀN NAM</b><strong>23 điểm</strong></a>
         </div>
       </div>
     </div>
@@ -1392,7 +1387,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section soft" id="vi-sao-chon">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Vì sao chọn Auto365</span>
       <h2>Sáu lý do khách hàng chọn Auto365</h2>
     </div>
     <div class="why-grid">
@@ -1424,7 +1418,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section dark" id="quy-trinh">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Quy trình &amp; bảo hành</span>
       <h2>7 bước từ tiếp nhận đến bàn giao</h2>
       <p>Quy trình áp dụng chung; thời lượng từng bước phụ thuộc tình trạng xe cụ thể.</p>
     </div>
@@ -1450,7 +1443,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section" id="faq">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Câu hỏi thường gặp</span>
       <h2>Hiểu rõ trước khi quyết định</h2>
       <p>Mỗi câu trả lời mở đầu bằng đáp án ngắn, sau đó là điều kiện áp dụng cụ thể.</p>
     </div>
@@ -1521,7 +1513,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section soft">
   <div class="shell">
     <div class="section-head">
-      <span class="kicker">Nguồn tham khảo</span>
       <h2>Tài liệu và dữ liệu dùng trong bài</h2>
     </div>
     <div class="faq-list">
