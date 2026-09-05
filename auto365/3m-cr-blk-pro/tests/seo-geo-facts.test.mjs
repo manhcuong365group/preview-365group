@@ -180,6 +180,7 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<div class="container evidence-grid">\s*<figure class="evidence-visual">[\s\S]*?<div class="evidence-data"><h2>Thông số dùng để lựa chọn<\/h2>/);
   assert.doesNotMatch(html, /class="spec-source"/);
   assert.doesNotMatch(html, /Đo kiểm trên xe thực tế/);
+  assert.match(html, /<figcaption class="evidence-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B — Solar Properties on Auto 75 Glass\./);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
   assert.match(html, /\.evidence-data\{padding:20px 22px\}/);
