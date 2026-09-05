@@ -94,6 +94,11 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .hero-brands-list{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
 .hero-brands-list span{font-weight:800;color:#8a8d93;font-size:14px;letter-spacing:.02em}
 @media (width<=900px){.hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (width<=640px){
+  .hero-media{aspect-ratio:auto}
+  .hero-media img{height:auto;aspect-ratio:4/3}
+  .hero-media-card{position:static;left:auto;right:auto;bottom:auto;border-radius:0}
+}
 .finder-bar{background:var(--ink-2);border-radius:20px;padding:24px;min-width:0;display:flex;flex-direction:column;justify-content:center}
 .finder-bar-head{color:#fff;margin-bottom:18px}
 .finder-bar-head .kicker{color:#ff8890;margin-bottom:6px}
