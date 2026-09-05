@@ -10,6 +10,10 @@ test('states the CR BLK Pro ontology and search-intent heading accurately', () =
   assert.match(html, /không phải một mã phim, model, SKU hoặc dòng sản phẩm riêng do 3M công bố/);
 });
 
+test('keeps the quick-answer heading compact beside its supporting copy', () => {
+  assert.match(html, /\.answer-card h2\{font-size:clamp\(23px,2vw,27px\)!important;line-height:1\.14\}/);
+});
+
 test('shows the verified configuration for each published case', () => {
   for (const [model, config] of [
     ['VinFast VF 7', 'CR BLK 40 / 15 / 15'],
