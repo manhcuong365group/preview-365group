@@ -256,3 +256,10 @@ test('keeps the consultation form compact beside its image on desktop', () => {
   assert.match(html, /\.consult-form input,\.consult-form select,\.consult-form textarea\{[^}]*padding:9px 10px/);
   assert.match(html, /\.consult-form \.button-gold\{min-height:42px/);
 });
+
+test('keeps only essential TDS context and includes the IRR values', () => {
+  assert.match(html, /<th scope="row">IRR<\/th><td>98%<\/td><td>98%<\/td><td>98%<\/td>/);
+  assert.doesNotMatch(html, /<p class="evidence-intro">/);
+  assert.doesNotMatch(html, /VLT trong bảng là VLT của tổ hợp phim/);
+  assert.doesNotMatch(html, /class="source-legend"/);
+});
