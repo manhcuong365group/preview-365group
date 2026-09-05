@@ -141,7 +141,7 @@ test('uses the requested three contact actions in the branch finder', () => {
   assert.match(html, /href="https:\/\/zalo\.me\/3622666363345050913"[^>]*>Nhắn Zalo<\/a>/);
   assert.match(html, /href="tel:0365365365"[^>]*>Gọi 0365 365 365<\/a>/);
   assert.match(html, /class="a365-btn a365-btn-outline js-open-consult" type="button">Gửi thông tin tư vấn<\/button>/);
-  assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;min-height:38px;align-items:center;justify-content:center;padding:0 8px;[^}]*white-space:nowrap\}/);
+  assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;height:46px;min-height:46px;align-items:center;justify-content:center;padding:0 8px;[^}]*white-space:nowrap\}/);
 });
 
 test('uses the street address as the Google Maps link without service-hours copy', () => {
@@ -257,15 +257,16 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /class="a365-right-heading"><h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3><a class="a365-all"/);
   assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
   assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\);gap:6px;margin-top:10px\}/);
+  assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;height:46px;min-height:46px/);
   assert.match(html, /\.a365-title,\.a365-right-title\{min-height:0;font-size:clamp\(20px,1\.75vw,23px\)!important;line-height:1\.15;white-space:nowrap\}/);
-  assert.match(html, /@media\(max-width:520px\)\{\.a365-contact-actions\{grid-template-columns:1fr\}\.a365-contact-actions \.a365-btn\{min-height:40px;font-size:12px\}\.a365-title,\.a365-right-title\{white-space:normal\}\}/);
+  assert.match(html, /@media\(max-width:520px\)\{\.a365-contact-actions\{grid-template-columns:1fr\}\.a365-contact-actions \.a365-btn\{height:40px;min-height:40px;font-size:12px\}\.a365-title,\.a365-right-title\{white-space:normal\}\}/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
   assert.match(html, /\.a365-panel\{padding:18px\}/);
   assert.match(html, /\.a365-grid\{align-items:stretch\}/);
   assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:#e31b23/);
-  assert.match(html, /\.a365-region\{display:flex;min-height:38px;align-items:center;justify-content:space-between/);
+  assert.match(html, /\.a365-region\{display:flex;height:46px;min-height:46px;align-items:center;justify-content:space-between/);
   assert.doesNotMatch(html, /Chọn khu vực để xem danh sách cửa hàng, địa chỉ, dịch vụ và thông tin liên hệ từng điểm/);
 });
 
