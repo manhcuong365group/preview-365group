@@ -302,7 +302,7 @@ test('uses a spacious, aligned Auto365 proof layout without redundant labels', (
   assert.doesNotMatch(html, /Hình ảnh chứng nhận, lắp đặt và hoạt động đào tạo được hiển thị để khách hàng tham khảo khi tư vấn\./);
   assert.match(html, /\.why-proof-card\{display:grid;min-height:0;grid-template-rows:40px 72px 155px auto/);
   assert.match(html, /\.why-certificate-card img\{width:100%;height:200px/);
-  assert.match(html, /\.answer-section\{padding-top:16px;padding-bottom:10px\}/);
+  assert.match(html, /\.answer-section\{padding-top:8px;padding-bottom:5px\}/);
 });
 
 test('uses the page typography weight for Auto365 proof-card labels', () => {
