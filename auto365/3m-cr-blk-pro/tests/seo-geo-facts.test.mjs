@@ -229,3 +229,18 @@ test('keeps the reference specification layout inside the article content width'
   assert.match(html, /\.evidence-section \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
   assert.doesNotMatch(html, /\.evidence-section \.container\{width:min\(1700px/);
 });
+
+test('scales the evidence panels without forcing a tall cropped vehicle image', () => {
+  assert.match(html, /\.evidence-visual\{min-height:0;aspect-ratio:\.96/);
+  assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
+});
+
+test('keeps the specification panel compact at article width', () => {
+  assert.match(html, /\.evidence-data\{padding:20px 22px/);
+  assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:10px 12px/);
+  assert.match(html, /\.spec-table-wrap>p\{padding:10px 12px;font-size:10px/);
+});
+
+test('does not render stray text before the page content', () => {
+  assert.doesNotMatch(html, /<\/style>`r`n/);
+});
