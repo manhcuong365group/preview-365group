@@ -377,7 +377,6 @@ test('keeps only essential TDS context and includes the IRR values', () => {
 test('uses a three-to-two visual-to-table ratio with aligned evidence panels', () => {
   assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:stretch\}/);
   assert.match(html, /\.evidence-visual\{height:100%;aspect-ratio:auto/);
-  assert.match(html, /\.evidence-data\{height:100%\}/);
   assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none;width:100%;height:auto/);
   assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
 });
@@ -385,7 +384,7 @@ test('uses a three-to-two visual-to-table ratio with aligned evidence panels', (
 test('shows the installation image and specification table directly on a white evidence section', () => {
   assert.match(html, /\.evidence-section\{background:#fff\}/);
   assert.match(html, /\.evidence-grid\{align-items:start\}/);
-  assert.match(html, /\.evidence-visual\{padding:0;background:transparent;box-shadow:none\}/);
+  assert.match(html, /\.evidence-visual\{display:flex;flex-direction:column;padding:0;background:transparent;box-shadow:none\}/);
   assert.match(html, /\.evidence-data\{height:auto;padding:0;background:transparent;box-shadow:none\}/);
 });
 
