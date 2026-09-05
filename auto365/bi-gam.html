@@ -171,11 +171,12 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .compare-toggle input{width:14px;height:14px;flex:none;accent-color:var(--red);cursor:pointer}
 .compare-toggle:has(input:checked),.compare-toggle.is-checked{background:var(--red);border-color:var(--red);color:#fff;font-weight:800}
 .compare-toggle:has(input:checked) input,.compare-toggle.is-checked input{accent-color:#fff}
-.compare-bar{position:fixed;left:0;right:0;top:61px;z-index:80;background:var(--ink-2);border-bottom:2px solid var(--red);box-shadow:0 10px 28px rgba(0,0,0,.45);padding:12px 16px;display:none;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.compare-bar{position:fixed;left:50%;top:72px;transform:translateX(-50%);z-index:80;background:var(--ink-2);border:1px solid #33363d;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,.35);padding:8px 10px 8px 16px;display:none;align-items:center;gap:12px;flex-wrap:nowrap;max-width:calc(100% - 32px)}
 .compare-bar.is-visible{display:flex}
-.compare-bar span{color:#fff;font-size:13px;font-weight:700}
+.compare-bar span{color:#fff;font-size:12px;font-weight:700;white-space:nowrap}
 .compare-bar span b{color:var(--red)}
-.compare-bar-actions{display:flex;gap:10px}
+.compare-bar-actions{display:flex;gap:8px;flex:none}
+.compare-bar-actions .btn{min-height:32px;padding:0 12px;font-size:11.5px}
 .compare-modal{position:fixed;inset:0;z-index:90;background:rgba(16,17,20,.6);display:none;align-items:center;justify-content:center;padding:20px}
 .compare-modal.is-open{display:flex}
 .compare-modal-inner{background:#fff;border-radius:16px;max-width:960px;width:100%;max-height:86vh;overflow:auto;padding:24px}
@@ -398,7 +399,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-copy{padding:22px 26px;color:#fff}
 .video-lead-copy h2{font-size:clamp(19px,2.2vw,24px);line-height:1.2;margin-top:6px}
 .video-lead-copy p{color:#b9bec8;font-size:12px;line-height:1.5;margin-top:8px}
-.video-lead-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:28px 32px;align-content:center;min-width:0}
+.video-lead-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:28px 32px;align-content:start;min-width:0}
+.video-lead-form-title{grid-column:1/-1;margin:0 0 4px;font-size:16px;font-weight:800;color:var(--ink)}
 .video-lead-form label{grid-column:span 1;display:grid;gap:6px;font-size:11.5px;font-weight:700;color:#20242b}
 .video-lead-form label.field-full{grid-column:1/-1}
 .video-lead-form input,.video-lead-form select{min-height:44px;border:1px solid #d5dbe4;border-radius:10px;padding:0 12px;font-size:16px;color:#17191e}
@@ -1112,6 +1114,26 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   </div>
 </section>
 
+<section class="section soft" id="quickselect">
+  <div class="shell">
+    <div class="section-head">
+      <span class="kicker">Chọn nhanh</span>
+      <h2>Chọn cấu hình đèn phù hợp trong 15 giây</h2>
+      <p>Chọn nhu cầu, lens và ngân sách — hệ thống đề xuất một mẫu tham khảo từ 30 sản phẩm đang có; cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.</p>
+    </div>
+    <div class="qs-bar">
+      <div class="qs-row">
+        <div class="qs-col"><label for="qs-need">1. Nhu cầu chính</label><select id="qs-need"><option value="">Chọn nhu cầu…</option><option value="city,mixed">Đi phố + đi tỉnh</option><option value="rain">Mưa, sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select></div>
+        <div class="qs-col"><label for="qs-lens">2. Kích thước lens</label><select id="qs-lens"><option value="">Chưa rõ / để hệ thống chọn</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select></div>
+        <div class="qs-col"><label for="qs-budget">3. Ngân sách</label><select id="qs-budget"><option value="">Chưa xác định</option><option value="under4">Dưới 4 triệu</option><option value="4to6">4–6 triệu</option><option value="over6">Trên 6 triệu</option></select></div>
+      </div>
+      <button type="button" class="btn btn-primary qs-submit" id="qs-submit">Tìm sản phẩm phù hợp</button>
+      <div class="qs-reco" id="qs-reco" hidden aria-live="polite">
+        <div class="qs-result-list" id="qs-result"></div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section dark" id="gia-chi-phi">
   <div class="shell price-layout">
@@ -1213,6 +1235,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         </div>
       </div>
       <form class="video-lead-form" id="video-lead-form">
+        <h3 class="video-lead-form-title">Để lại thông tin liên hệ</h3>
         <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
         <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
         <label>Hãng xe (không bắt buộc) <input type="text" name="car_brand" placeholder="Ví dụ: Mazda, Toyota"></label>
@@ -1385,27 +1408,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <a class="branch-region" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer"><span class="br-num">03</span><b>MIỀN NAM</b><strong>23 điểm</strong></a>
         </div>
         <a class="branch-finder-all" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noreferrer">Xem toàn bộ hệ thống Auto365 &rarr;</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section soft" id="quickselect">
-  <div class="shell">
-    <div class="section-head">
-      <span class="kicker">Chọn nhanh</span>
-      <h2>Chọn cấu hình đèn phù hợp trong 15 giây</h2>
-      <p>Chọn nhu cầu, lens và ngân sách — hệ thống đề xuất một mẫu tham khảo từ 30 sản phẩm đang có; cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.</p>
-    </div>
-    <div class="qs-bar">
-      <div class="qs-row">
-        <div class="qs-col"><label for="qs-need">1. Nhu cầu chính</label><select id="qs-need"><option value="">Chọn nhu cầu…</option><option value="city,mixed">Đi phố + đi tỉnh</option><option value="rain">Mưa, sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select></div>
-        <div class="qs-col"><label for="qs-lens">2. Kích thước lens</label><select id="qs-lens"><option value="">Chưa rõ / để hệ thống chọn</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select></div>
-        <div class="qs-col"><label for="qs-budget">3. Ngân sách</label><select id="qs-budget"><option value="">Chưa xác định</option><option value="under4">Dưới 4 triệu</option><option value="4to6">4–6 triệu</option><option value="over6">Trên 6 triệu</option></select></div>
-      </div>
-      <button type="button" class="btn btn-primary qs-submit" id="qs-submit">Tìm sản phẩm phù hợp</button>
-      <div class="qs-reco" id="qs-reco" hidden aria-live="polite">
-        <div class="qs-result-list" id="qs-result"></div>
       </div>
     </div>
   </div>
