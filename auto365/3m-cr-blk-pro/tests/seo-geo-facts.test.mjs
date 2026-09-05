@@ -386,6 +386,8 @@ test('shows the installation image and specification table directly on a white e
   assert.match(html, /\.evidence-grid\{align-items:start\}/);
   assert.match(html, /\.evidence-visual\{display:flex;flex-direction:column;padding:0;background:transparent;box-shadow:none\}/);
   assert.match(html, /\.evidence-data\{height:auto;padding:0;background:transparent;box-shadow:none\}/);
+  assert.match(html, /@media\(min-width:901px\)\{\.evidence-data\{margin-top:14px\}\}/);
+  assert.match(html, /@media\(max-width:900px\)\{\.evidence-data\{margin-top:0\}\}/);
 });
 
 test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
