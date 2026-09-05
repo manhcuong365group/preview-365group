@@ -180,6 +180,12 @@ test('presents Auto365 reasons as four linked proof points rather than a generic
   assert.doesNotMatch(html, /Báo giá theo nhóm xe<\/strong> — phạm vi hạng mục/);
 });
 
+test('keeps Auto365 proof cards and certificates free of redundant ordinal labels', () => {
+  const proofSection = html.slice(html.indexOf('class="pro-shop-reasons"'), html.indexOf('class="source-links"'));
+  assert.doesNotMatch(proofSection, /<b>0[1-4]<\/b>/);
+  assert.doesNotMatch(proofSection, /HỒ SƠ 0[1-4]/);
+});
+
 test('uses a compact end-user heading rhythm without leftover eyebrow labels', () => {
   assert.doesNotMatch(html, /class="eyebrow/);
   assert.doesNotMatch(html, /\.eyebrow\{display:none\}/);
