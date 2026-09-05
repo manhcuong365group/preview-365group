@@ -2136,14 +2136,16 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     });
   }
 
-  function qsRenderPicks(matched, needVal, lensVal, budgetVal, relaxedBudget){
+  function qsRenderPicks(matched, needVal, lensVal, budgetVal, relaxedBudget, relaxedLens, relaxedNeed){
     var picks = matched.slice(0, 3);
     var reasons = [];
-    if (needVal) reasons.push('đúng nhu cầu đã chọn');
-    if (lensVal) reasons.push('lens ' + lensVal + ' inch');
+    if (needVal && !relaxedNeed) reasons.push('đúng nhu cầu đã chọn');
+    if (lensVal && !relaxedLens) reasons.push('lens ' + lensVal + ' inch');
     if (budgetVal && !relaxedBudget) reasons.push('trong tầm ngân sách');
     var baseReason = reasons.length ? ('Phù hợp với ' + reasons.join(', ') + '.') : '';
-    if (relaxedBudget) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng ngân sách đã chọn — đây là các gợi ý gần nhất theo nhu cầu và lens.';
+    if (relaxedNeed) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu khớp đủ mọi tiêu chí — đây là gợi ý gần nhất theo mức giá phù hợp.';
+    else if (relaxedLens) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng lens đã chọn — đây là gợi ý gần nhất theo nhu cầu.';
+    else if (relaxedBudget) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng ngân sách đã chọn — đây là các gợi ý gần nhất theo nhu cầu và lens.';
     qsResultBox.textContent = '';
     picks.forEach(function(card, i){
       var img = card.querySelector('.product-image img');
@@ -2173,22 +2175,25 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     });
   }
 
-  function qsRunSearch(needVal, lensVal, budgetVal, relaxedBudget){
+  function qsRunSearch(needVal, lensVal, budgetVal){
     var allCards = Array.prototype.slice.call(document.querySelectorAll('#product-grid .product-card'));
+    var relaxedBudget = false, relaxedLens = false, relaxedNeed = false;
     var matched = qsMatch(allCards, needVal, lensVal, budgetVal);
+    if (!matched.length && budgetVal) {
+      matched = qsMatch(allCards, needVal, lensVal, '');
+      relaxedBudget = true;
+    }
+    if (!matched.length && lensVal) {
+      matched = qsMatch(allCards, needVal, '', '');
+      relaxedLens = true;
+    }
+    if (!matched.length && needVal) {
+      matched = qsMatch(allCards, '', '', '');
+      relaxedNeed = true;
+    }
     matched.sort(function(a,b){ return (+a.getAttribute('data-price')) - (+b.getAttribute('data-price')); });
     qsRecoBox.hidden = false;
-    if (!matched.length) {
-      var actions = '<div class="qs-result-actions">';
-      if (budgetVal) actions += '<button type="button" class="btn btn-outline" id="qs-retry-nobudget">Xem phương án khác ngân sách</button>';
-      actions += '<a class="btn btn-primary" href="https://zalo.me/0365365911" target="_blank" rel="noreferrer">Để kỹ thuật kiểm tra lens</a>';
-      actions += '</div>';
-      qsResultBox.innerHTML = '<p class="qs-empty">Không có mẫu khớp đủ các tiêu chí đã chọn.</p>' + actions;
-      var retryBtn = document.getElementById('qs-retry-nobudget');
-      if (retryBtn) retryBtn.addEventListener('click', function(){ qsRunSearch(needVal, lensVal, '', true); });
-    } else {
-      qsRenderPicks(matched, needVal, lensVal, budgetVal, relaxedBudget);
-    }
+    qsRenderPicks(matched, needVal, lensVal, budgetVal, relaxedBudget, relaxedLens, relaxedNeed);
     qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
   }
 
@@ -2200,7 +2205,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
       return;
     }
-    qsRunSearch(needVal, lensVal, budgetVal, false);
+    qsRunSearch(needVal, lensVal, budgetVal);
   });
 
   document.addEventListener('click', function(e){
