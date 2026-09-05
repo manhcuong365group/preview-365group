@@ -262,6 +262,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
   assert.match(html, /\.a365-panel\{padding:18px\}/);
   assert.match(html, /\.a365-grid\{align-items:stretch\}/);
+  assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:var\(--accent\)/);
   assert.match(html, /\.a365-region\{display:flex;min-height:70px;align-items:center;justify-content:space-between/);
   assert.doesNotMatch(html, /Chọn khu vực để xem danh sách cửa hàng, địa chỉ, dịch vụ và thông tin liên hệ từng điểm/);
 });
