@@ -382,6 +382,13 @@ test('uses a three-to-two visual-to-table ratio with aligned evidence panels', (
   assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
 });
 
+test('shows the installation image and specification table directly on a white evidence section', () => {
+  assert.match(html, /\.evidence-section\{background:#fff\}/);
+  assert.match(html, /\.evidence-grid\{align-items:start\}/);
+  assert.match(html, /\.evidence-visual\{padding:0;background:transparent;box-shadow:none\}/);
+  assert.match(html, /\.evidence-data\{height:auto;padding:0;background:transparent;box-shadow:none\}/);
+});
+
 test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
   assert.match(html, /<h2 class="why-auto365-title" id="why-auto365-title">Vì sao nên dán phim cách nhiệt tại Auto365\?<\/h2>/);
   assert.equal((html.match(/class="why-proof-card"/g) || []).length, 4);
