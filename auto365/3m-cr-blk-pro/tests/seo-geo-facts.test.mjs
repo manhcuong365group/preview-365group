@@ -252,6 +252,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /class="a365-network"/);
   assert.match(html, /<h2 class="a365-title"[^>]*>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
   assert.match(html, /<h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3>/);
+  assert.match(html, /class="a365-right-heading"><h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3><a class="a365-all"/);
   assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
   assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/);
   assert.match(html, /\.a365-title,\.a365-right-title\{min-height:0;font-size:clamp\(20px,1\.75vw,23px\)!important;line-height:1\.15;white-space:nowrap\}/);
@@ -259,6 +260,8 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
+  assert.match(html, /\.a365-panel\{padding:18px\}/);
+  assert.match(html, /\.a365-region\{min-height:70px;padding:11px 12px\}/);
 });
 
 test('presents the specification evidence as two balanced desktop panels', () => {
