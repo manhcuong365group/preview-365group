@@ -255,8 +255,8 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.ok(finder > cases && finder < locations);
   assert.match(html, /class="a365-network"/);
   assert.match(html, /<h2 class="a365-title"[^>]*>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
-  assert.match(html, /<h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3>/);
-  assert.match(html, /class="a365-right-heading"><h3 class="a365-right-title"[^>]*>Hơn 90 chi nhánh · 33 tỉnh thành<\/h3><a class="a365-all"/);
+  assert.match(html, /<h3 class="a365-right-title"[^>]*>91 điểm · 33 tỉnh thành<\/h3>/);
+  assert.match(html, /class="a365-right-heading"><h3 class="a365-right-title"[^>]*>91 điểm · 33 tỉnh thành<\/h3><a class="a365-all" href="https:\/\/auto365\.vn\/chi-nhanh"/);
   assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
   assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\);gap:6px;margin-top:10px\}/);
   assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;height:46px;min-height:46px/);
@@ -268,7 +268,7 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /@media\(max-width:680px\)\{#branch-finder \.a365-title,#branch-finder \.a365-right-title\{font-size:20px!important;line-height:1\.2;white-space:normal\}\}/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
-  assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">23 điểm<\/strong>/);
+  assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">24 điểm<\/strong>/);
   assert.match(html, /\.a365-grid\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:14px;align-items:stretch\}/);
   assert.match(html, /\.a365-panel\{min-width:0;padding:18px/);
   assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:#e31b23/);
