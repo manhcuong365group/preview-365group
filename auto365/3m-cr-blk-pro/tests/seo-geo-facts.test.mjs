@@ -218,9 +218,14 @@ test('presents the specification evidence as two balanced desktop panels', () =>
   assert.match(html, /\.evidence-data\{max-width:none;justify-self:stretch;padding:24px/);
 });
 
-test('uses the full-width reference layout for the specification evidence', () => {
-  assert.match(html, /\.evidence-section \.container\{width:min\(1700px,calc\(100% - 72px\)\)\}/);
+test('keeps the reference visual treatment for the specification evidence', () => {
+  assert.match(html, /\.evidence-section \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
   assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,\.9fr\) minmax\(560px,1fr\);gap:16px/);
   assert.match(html, /\.evidence-data\{[^}]*padding:30px 32px/);
   assert.match(html, /\.spec-table-wrap caption:before\{[^}]*background:#ed1b24/);
+});
+
+test('keeps the reference specification layout inside the article content width', () => {
+  assert.match(html, /\.evidence-section \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
+  assert.doesNotMatch(html, /\.evidence-section \.container\{width:min\(1700px/);
 });
