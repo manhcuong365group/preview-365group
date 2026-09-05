@@ -192,3 +192,16 @@ test('names the case gallery as real CR BLK Pro installations', () => {
   assert.match(html, /<h2>Xe thực tế thi công dán phim cách nhiệt CR BLK Pro tại Auto365<\/h2>/);
   assert.doesNotMatch(html, /<h2>Case CR BLK Pro tại Auto365<\/h2>/);
 });
+
+test('adds the nationwide Auto365 branch finder immediately after real installations', () => {
+  const finder = html.indexOf('id="branch-finder"');
+  const cases = html.indexOf('id="cases"');
+  const locations = html.indexOf('id="pro-shop"');
+  assert.ok(finder > cases && finder < locations);
+  assert.match(html, /<h2>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
+  assert.match(html, /Hơn 90 chi nhánh · 33 tỉnh thành/);
+  assert.match(html, /<a class="branch-finder-cta" href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm gần tôi →<\/a>/);
+  assert.match(html, /<strong>Miền Bắc<\/strong><span>41 điểm<\/span>/);
+  assert.match(html, /<strong>Miền Trung<\/strong><span>26 điểm<\/span>/);
+  assert.match(html, /<strong>Miền Nam<\/strong><span>23 điểm<\/span>/);
+});
