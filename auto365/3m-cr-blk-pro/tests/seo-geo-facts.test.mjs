@@ -280,4 +280,7 @@ test('presents Auto365 proof as four visual verification cards with a certificat
   assert.match(html, /class="why-proof-card" href="#warranty"/);
   assert.match(html, /class="why-certificate-band" id="pro-shop-certificates"/);
   assert.match(html, /class="why-actions"/);
+  assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/2\.webp" alt="Mặt tiền 3M Pro Shop Auto365"/);
+  assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/5\.webp" alt="Không gian 3M Pro Shop Auto365 phục vụ tư vấn"/);
+  assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/8\.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365"/);
 });
