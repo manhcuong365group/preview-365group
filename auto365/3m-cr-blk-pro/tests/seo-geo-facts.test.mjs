@@ -30,10 +30,13 @@ test('keeps technical copy attributed to the applicable 3M TDS conditions', () =
   assert.doesNotMatch(html, /Auto365 đo/);
 });
 
-test('uses Service schema without a price claim or a LocalBusiness entity on the money page', () => {
+test('connects the Service to the named installation location without a product or price schema claim', () => {
   assert.match(html, /"@type": "Service"/);
   assert.doesNotMatch(html, /"@type": "Product"/);
-  assert.doesNotMatch(html, /"@type": "LocalBusiness"/);
+  assert.match(html, /"@type": \["LocalBusiness", "AutomotiveBusiness"\]/);
+  assert.match(html, /"@id": "https:\/\/auto365\.vn\/thu-duc#automotive-business"/);
+  assert.match(html, /"hasMap": "https:\/\/www\.google\.com\/maps\?cid=9988450659874114499"/);
+  assert.match(html, /"parentOrganization": \{"@id": "https:\/\/auto365\.vn\/#organization"/);
   assert.doesNotMatch(html, /"@type": "Offer"/);
 });
 
@@ -138,8 +141,7 @@ test('places the real-installation image beside the technical table without redu
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
   assert.match(html, /<thead><tr><th scope="col">Thông số<\/th><th scope="col">CR BLK 40<\/th><th scope="col">CR BLK 35<\/th><th scope="col">CR BLK 15<\/th><\/tr><\/thead>/);
-  assert.match(html, /<th scope="row">VLT<\/th><td>41%<\/td><td>33%<\/td><td>14%<\/td>/);
-  assert.doesNotMatch(html, /<th scope="row">VLT \(phim \+ kính Auto 75\)<\/th>/);
+  assert.match(html, /<th scope="row">VLT \(phim \+ kính Auto 75\)<\/th><td>41%<\/td><td>33%<\/td><td>14%<\/td>/);
   assert.match(html, /<th scope="row">TSER<\/th><td>58%<\/td><td>60%<\/td><td>64%<\/td>/);
   assert.match(html, /<th scope="row">Giảm chói<\/th><td>44%<\/td><td>55%<\/td><td>81%<\/td>/);
   assert.doesNotMatch(html, /Vị trí Auto365 đề xuất:/);

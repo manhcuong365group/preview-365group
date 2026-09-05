@@ -6,7 +6,7 @@ Trạng thái: không được chuyển production cho đến khi toàn bộ m�
 
 - Định nghĩa CR BLK Pro là gói phối mã/dịch vụ của Auto365, không phải SKU hay dòng phim riêng của 3M.
 - Sáu case dùng đúng cấu hình đã được chốt trong phản hồi: VF7 40/15/15; Peugeot 40/35/15; Volvo 40/15/15 + panorama 15; Fortuner, CR-V và HR-V 40/15/15.
-- Money page chỉ dùng WebPage, Service, BreadcrumbList và FAQPage; không có Product, LocalBusiness hay Offer giá cố định.
+- Money page dùng WebPage, Service, BreadcrumbList và FAQPage; Service trỏ đến đúng điểm thi công Auto365.vn – Trụ Sở Chính qua LocalBusiness/AutomotiveBusiness, không có Product hay Offer giá cố định.
 - TDS nêu Revision E, May 2024, Table B; tách bạch IRER và IRR; khuyến nghị 40/35/15 được ghi là tư vấn Auto365.
 - Claim bảo hành nêu điều kiện và liên kết trực tiếp tới 3M Việt Nam.
 
@@ -14,9 +14,9 @@ Trạng thái: không được chuyển production cho đến khi toàn bộ m�
 
 1. Giá: xác nhận phạm vi áp dụng từng nhóm xe, đã/chưa VAT, hạng mục bao gồm, panorama/phim cũ và ngày hết hiệu lực. Chỉ sau đó mới bật Offer schema có `availability` và `priceValidUntil`.
 2. Asset production: upload và kiểm tra HTTP 200 cho `13-1.jpg`, `16.webp`, `2.webp`, `8.webp`, `bang-gia.webp`, `case-vinfast-vf7.jpg`, `phim-cach-nhiet-6.webp`, `phim-cach-nhiet-7.webp`, `phim-cach-nhiet-9.webp`, `phim-cach-nhiet-10.webp`, `xe-honda-civic.webp`, `xe-honda-crv.webp`, `xe-honda-hrv.webp`, `xe-toyota-fortuner.webp`, `xe-vinfast-vf8.webp` và OG image.
-3. CMS: tắt Product/SKU graph cũ trên canonical, không chèn thêm LocalBusiness vào money page.
+3. CMS: tắt Product/SKU graph cũ trên canonical và giữ duy nhất LocalBusiness đã xác nhận của Auto365.vn – Trụ Sở Chính; không chèn địa điểm hoặc NAP chưa được xác minh.
 4. Index: bỏ cả meta và header `noindex,nofollow` ở production; preview tiếp tục noindex.
-5. Entity/NAP: xác nhận dữ liệu LocalBusiness ở trang chi nhánh riêng, bao gồm quan hệ Auto365, 3M Pro Shop/Training Center, số điện thoại, địa chỉ, Google Business Profile và bản đồ.
+5. Entity/NAP: xác nhận dữ liệu LocalBusiness ở trang chi nhánh riêng, bao gồm quan hệ Auto365, 3M Pro Shop/Training Center, số điện thoại, địa chỉ, Google Business Profile, toạ độ geo và bản đồ. Chỉ bổ sung `geo` sau khi có toạ độ từ Google Business Profile.
 6. CRM/Analytics: kiểm thử gửi lead, UTM, consent, dataLayer/GA4, thông báo lỗi và retry theo môi trường production.
 
 ## QA trước phát hành
