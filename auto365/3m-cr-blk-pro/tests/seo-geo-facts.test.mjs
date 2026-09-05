@@ -93,11 +93,13 @@ test('keeps pricing cards compact while preserving readable prices', () => {
   assert.match(html, /\.price-card>strong\{margin:8px 0 0;font-size:24px\}/);
 });
 
-test('keeps package names and live starting prices aligned in blue comparison cards', () => {
+test('keeps package names and live starting prices aligned in distinct comparison cards', () => {
   assert.match(html, /class="package-title-row"><h3>CR BLK tiêu chuẩn<\/h3><div class="package-price"><span>Giá gói từ <strong data-bind="standard-compact">14,8 triệu<\/strong>/);
   assert.match(html, /data-bind="pro-compact">15,5 triệu/);
   assert.match(html, /\.package-card\{border:1px solid #1b5eaa;box-shadow:none\}/);
+  assert.match(html, /\.package-card\.pro-card,\.package-card\.pro-card\.selected\{border-color:#d8aa4d/);
   assert.match(html, /\.package-title-row\{display:flex;align-items:baseline;justify-content:space-between/);
+  assert.doesNotMatch(html, /Pro chênh 700\.000đ ở cả ba nhóm xe/);
 });
 
 test('keeps stylesheet tags balanced so browser CSS parsing is deterministic', () => {
