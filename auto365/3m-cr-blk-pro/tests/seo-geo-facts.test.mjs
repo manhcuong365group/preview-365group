@@ -286,6 +286,9 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">24 điểm<\/strong>/);
+  assert.match(html, /href="https:\/\/auto365\.vn\/chi-nhanh\?region=Mi%E1%BB%81n\+B%E1%BA%AFc"[^>]*><span class="a365-region-name">Miền Bắc/);
+  assert.match(html, /href="https:\/\/auto365\.vn\/chi-nhanh\?region=Mi%E1%BB%81n\+Trung\+%26\+T%C3%A2y\+Nguy%C3%AAn"[^>]*><span class="a365-region-name">Miền Trung/);
+  assert.match(html, /href="https:\/\/auto365\.vn\/chi-nhanh\?region=Mi%E1%BB%81n\+Nam"[^>]*><span class="a365-region-name">Miền Nam/);
   assert.match(html, /\.a365-grid\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:14px;align-items:stretch\}/);
   assert.match(html, /\.a365-panel\{min-width:0;padding:18px/);
   assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:#e31b23/);
