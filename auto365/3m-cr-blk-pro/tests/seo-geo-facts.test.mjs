@@ -207,7 +207,7 @@ test('routes each location card to its detail page, map, or system hotline', () 
 });
 
 test('uses the requested three contact actions in the branch finder', () => {
-  assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
+  assert.match(html, /class="a365-contact-actions" role="group" aria-label="Liên hệ Auto365"/);
   assert.match(html, /href="https:\/\/zalo\.me\/3622666363345050913"[^>]*>Nhắn Zalo<\/a>/);
   assert.match(html, /href="tel:0365365365"[^>]*>Gọi 0365 365 365<\/a>/);
   assert.match(html, /class="a365-btn a365-btn-outline js-open-consult" type="button">Gửi thông tin tư vấn<\/button>/);
@@ -325,9 +325,9 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.ok(finder > cases && finder < locations);
   assert.match(html, /class="a365-network"/);
   assert.match(html, /<h2 class="a365-title"[^>]*>Tìm điểm Auto365 phù hợp gần bạn<\/h2>/);
-  assert.match(html, /<h3 class="a365-right-title"[^>]*>91 điểm · 33 tỉnh thành<\/h3>/);
-  assert.match(html, /class="a365-right-heading"><h3 class="a365-right-title"[^>]*>91 điểm · 33 tỉnh thành<\/h3><a class="a365-all" href="https:\/\/auto365\.vn\/chi-nhanh"/);
-  assert.match(html, /class="a365-contact-actions" aria-label="Liên hệ Auto365"/);
+  assert.match(html, /<h2 class="a365-right-title"[^>]*>91 điểm · 33 tỉnh thành<\/h2>/);
+  assert.match(html, /class="a365-right-heading"><h2 class="a365-right-title"[^>]*>91 điểm · 33 tỉnh thành<\/h2><a class="a365-all" href="https:\/\/auto365\.vn\/chi-nhanh"/);
+  assert.match(html, /class="a365-contact-actions" role="group" aria-label="Liên hệ Auto365"/);
   assert.match(html, /\.a365-contact-actions\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\);gap:6px;margin-top:10px\}/);
   assert.match(html, /\.a365-contact-actions \.a365-btn\{display:flex;width:100%;height:46px;min-height:46px/);
   assert.match(html, /\.a365-title,\.a365-right-title\{min-height:0;margin:0;font-size:clamp\(20px,1\.75vw,23px\);line-height:1\.15;white-space:nowrap\}/);
@@ -480,7 +480,7 @@ test('keeps the certificate section structurally closed before the next section'
   const start = html.indexOf('<div class="why-certificate-band"');
   const end = html.indexOf('<section class="section media-section"', start);
   assert.ok(start >= 0 && end > start);
-  assert.match(html.slice(start, end), /<\/div>\s*<\/div>\s*<\/section>\s*<\/section>\s*$/);
+  assert.match(html.slice(start, end), /<\/div>\s*<\/div>\s*<\/section>\s*<\/div>\s*<\/section>\s*$/);
 });
 
 test('announces the visible case count after a brand filter changes', () => {
