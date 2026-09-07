@@ -385,6 +385,20 @@ test('keeps only essential TDS context and includes the IRR values', () => {
 test('prioritizes only the hero image and defers certificate images', () => {
   assert.match(html, /<div class="hero-media">\s*<img[^>]*loading="eager"[^>]*fetchpriority="high"/);
   assert.equal((html.match(/fetchpriority="high"/g) || []).length, 1);
+  const eagerImages = [...html.matchAll(/<img\b[^>]*loading="eager"[^>]*>/g)].map((match) => match[0]);
+  assert.equal(eagerImages.length, 1, 'only the LCP hero image may load eagerly');
+});
+
+test('keeps the certificate section structurally closed before the next section', () => {
+  const start = html.indexOf('<div class="why-certificate-band"');
+  const end = html.indexOf('<section class="section media-section"', start);
+  assert.ok(start >= 0 && end > start);
+  assert.match(html.slice(start, end), /<\/div>\s*<\/div>\s*<\/section>\s*<\/section>\s*$/);
+});
+
+test('announces the visible case count after a brand filter changes', () => {
+  assert.match(html, /<p id="caseFilterStatus" class="sr-only" aria-live="polite" aria-atomic="true"><\/p>/);
+  assert.match(html, /document\.getElementById\('caseFilterStatus'\)\.textContent=/);
 });
 
 test('links the published TDS source and does not overclaim measurement evidence', () => {
