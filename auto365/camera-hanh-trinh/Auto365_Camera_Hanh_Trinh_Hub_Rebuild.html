@@ -184,6 +184,12 @@ body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
 .comparebar{bottom:76px}
 .product .actions .compare-check,.product .actions a{font-size:12px;padding:9px 6px}
 }
+/* Card sản phẩm không có tag đặc trưng (không phải 4K) để trống hàng .chips: ẩn hẳn thay vì để khoảng trắng chết. */
+.chips:empty{display:none}
+/* Thẻ thương hiệu (BẢN ĐỒ THƯƠNG HIỆU) toàn chữ nhìn phẳng: thêm huy hiệu chữ cái đầu để dễ quét mắt và bắt mắt hơn, cùng phong cách với avatar tác giả. */
+.market-card{position:relative;padding-top:20px}
+.brand-mono{width:38px;height:38px;border-radius:10px;background:#171717;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px;letter-spacing:-.3px;margin-bottom:12px}
+.market-card:hover .brand-mono{background:var(--red)}
 </style>
 </head>
 <body>
@@ -268,5 +274,8 @@ const faqGrid=document.querySelector('.faq-full'),sourceBlock=document.querySele
 (function(){const input=document.querySelector('#branchSearchInput');const items=Array.from(document.querySelectorAll('#branchResults .location'));const empty=document.querySelector('#branchEmpty');if(!input)return;input.addEventListener('input',()=>{const q=input.value.trim().toLowerCase();let visible=0;items.forEach(el=>{const hay=(el.dataset.city+' '+el.textContent).toLowerCase();const match=!q||hay.includes(q);el.classList.toggle('hide',!match);if(match)visible++;});empty.classList.toggle('show',visible===0);});})();
 (function(){document.querySelectorAll('.grid,.paths,.market-grid,#huong-dan .accordion,.decision-grid,.branch-proof-grid,.case-photo-grid,.flow-grid,.benefit-grid,.locations').forEach(el=>{const hint=document.createElement('div');hint.className='scroll-hint';hint.textContent='Vuốt ngang để xem thêm →';el.insertAdjacentElement('beforebegin',hint);});})();
 (function(){const bar=document.querySelector('#comparebar'),catalogSection=document.querySelector('#catalog');if(!bar||!catalogSection||!('IntersectionObserver' in window))return;const io=new IntersectionObserver(entries=>{bar.classList.toggle('near-catalog',entries[0].isIntersecting)},{rootMargin:'40% 0px'});io.observe(catalogSection);})();
+</script>
+<script>
+document.querySelectorAll('.market-card h3').forEach(h=>{if(h.previousElementSibling&&h.previousElementSibling.classList.contains('brand-mono'))return;const mono=document.createElement('span');mono.className='brand-mono';mono.setAttribute('aria-hidden','true');mono.textContent=h.textContent.trim().slice(0,2).toUpperCase();h.before(mono);});
 </script>
 </body></html>
