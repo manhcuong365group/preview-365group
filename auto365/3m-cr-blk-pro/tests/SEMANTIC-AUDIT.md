@@ -2,6 +2,15 @@
 
 Scope: current CR BLK Pro source. This is a local-source audit, not production certification.
 
+## Compact reference trial
+
+- Adopted reference geometry: 1296px maximum container, 14–20px fluid gutters, 16–22px section padding per side, 14–16px grid gaps. Kept existing content and interactive markup.
+- All 17 measured main-section containers have equal width at each tested viewport (347px at 375, 740px at 768, approximately 987px at 1024, 1296px at 1440).
+- Reset the technical figure's default browser margin, which inset the image independently of the table. Added spacing before warranty links.
+- Browser interaction checks pass at all four widths: SUV price selection, standard package selection, modal opening, Escape and focus return, night-driving recommendation, VinFast filter. No page JavaScript exceptions observed. No real form submitted.
+- Existing JavaScript retained after audit; shared bubbling handlers rely on the existing stopPropagation listener. This could be consolidated separately, but no double action appeared in tested interactions.
+- Legacy CSS overrides remain. The trial adds a shared geometry section inside the existing responsive stylesheet; it does not claim a full CSS rewrite or removal of every unused rule.
+
 ## Fixed
 
 - Closed the missing Pro Shop container before the section ends. The previous regex test accepted the incomplete structure; corrected that expectation and added independent HTML validation.

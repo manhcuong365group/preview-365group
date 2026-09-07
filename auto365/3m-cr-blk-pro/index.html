@@ -386,6 +386,21 @@
     .consult-form{padding:18px;gap:9px}.consult-form-title{font-size:23px;margin-bottom:0}.consult-form label{font-size:12px}.consult-form input,.consult-form select,.consult-form textarea{margin-top:4px;padding:9px 10px;font-size:13px}.consult-form .button-gold{min-height:42px;font-size:14px}.form-disclaimer{font-size:10px;line-height:1.35}.consult-hotline{font-size:14px}@media(min-width:901px){.consult-form{margin-top:0}}@media(max-width:680px){.consult-form{padding:16px 12px;gap:9px}.consult-form-title{font-size:23px}.consult-form label{font-size:11px}.consult-form input,.consult-form select,.consult-form textarea{padding:9px;font-size:14px}.consult-form .button-gold{min-height:44px;font-size:14px}}
   </style>
   <style id="cr-blk-responsive-tokens">
+    /* Shared geometry from the approved compact reference. */
+    :root{--cr-width:1296px;--cr-gutter:clamp(14px,1.8vw,20px);--cr-section:clamp(16px,1.25vw,22px);--cr-gap:clamp(14px,1.2vw,16px)}
+    body .container,#main-content>.section>.container,#specs .container{width:min(var(--cr-width),calc(100% - 2 * var(--cr-gutter)));max-width:var(--cr-width);margin-inline:auto}
+    #main-content>.section,#main-content>.answer-section,#main-content>#specs{padding-block:var(--cr-section)}
+    #main-content .section-heading{margin-bottom:var(--cr-gap)}
+    #main-content .section-heading h2{margin-bottom:8px}
+    #main-content .section-heading p{margin-bottom:0}
+    #main-content :is(.package-compare,.price-cards,.knowledge-grid,.consult-grid,.trust-grid,.process-layout,.location-grid){gap:var(--cr-gap)}
+    #main-content .section-photo{max-width:100%;margin-bottom:0}
+    #main-content :is(.knowledge-card,.location-card,.trust-copy,.consult-form){box-shadow:0 1px 3px rgb(15 23 42 / .04);border-radius:16px}
+    #main-content .process-layout h2{font-size:clamp(24px,2.1vw,29px)}
+    #main-content .process-layout p{font-size:14px}
+    #main-content #specs .evidence-data{margin-top:0}
+    #main-content #specs .evidence-visual{margin:0}
+    #main-content .trust-copy .source-links{padding-top:var(--cr-gap)}
     /* Local fluid scale: scoped tokens keep the technical panel stable at every viewport. */
     #specs.evidence-section{padding-block:clamp(24px,2.5vw,32px) clamp(28px,3vw,40px)}
     #specs .evidence-data h2{font-size:clamp(24px,2.1vw,29px)}

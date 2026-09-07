@@ -12,6 +12,8 @@ const reports = [];
 try {
   for (const width of [375, 768, 1024, 1440]) {
     const page = await browser.newPage({ viewport: { width, height: 900 } });
+    const scriptErrors = [];
+    page.on('pageerror', error => scriptErrors.push(error.message));
     await page.route('https://local.audit/**', async route => {
       const path = resolve(root, '.' + new URL(route.request().url()).pathname);
       if (!path.startsWith(root)) return route.abort();
@@ -22,6 +24,7 @@ try {
       } catch { await route.fulfill({ status: 404, body: '' }); }
     });
     await page.goto('https://local.audit/3m-cr-blk-pro', { waitUntil: 'domcontentloaded' });
+    await page.addStyleTag({ content: 'html{scroll-behavior:auto!important}' });
     await page.locator('#expert-guide').scrollIntoViewIfNeeded();
     await page.evaluate(async () => {
       await document.fonts.ready;
@@ -33,6 +36,7 @@ try {
       const ids = [...document.querySelectorAll('[id]')].map(e => e.id);
       return {
         width: innerWidth,
+        containers: [...document.querySelectorAll('main > section > .container')].map(e => ({ section: e.parentElement.id, width: Math.round(e.getBoundingClientRect().width) })),
         overflow: document.documentElement.scrollWidth - innerWidth,
         gaps: parts.slice(1).map((p, i) => Math.round((p.top - parts[i].bottom) * 100) / 100),
         priceImageGap: rect(document.querySelector("#pricing .section-photo")).top - rect(document.querySelector("#pricing .price-cards")).bottom,
@@ -46,6 +50,30 @@ try {
       };
     });
     await page.locator('#expert-guide').screenshot({ path: resolve(output, `expert-${width}.png`) });
+    for (const section of ['branch-finder', 'specs', 'warranty', 'pricing']) {
+      await page.locator(`#${section}`).screenshot({ path: resolve(output, `${section}-${width}.png`) });
+    }
+    // Exercise real browser events without submitting a lead or visiting external destinations.
+    await page.locator('.js-price-select[data-vehicle="suv"]').click();
+    assert.equal(await page.locator('#form-vehicle-group').inputValue(), 'suv');
+    assert.equal(await page.locator('#form-offer-price').inputValue(), '18300000');
+    assert.ok(await page.locator('body').evaluate(e => e.classList.contains('form-modal-open')));
+    await page.keyboard.press('Escape');
+    assert.ok(await page.locator('.js-price-select[data-vehicle="suv"]').evaluate(e => e === document.activeElement));
+    await page.locator('.js-package[data-package="standard"]').click();
+    assert.equal(await page.locator('#form-offer-price').inputValue(), '17600000');
+    await page.keyboard.press('Escape');
+    const nightSelect = page.locator('.mobile-choice[data-mobile="drive"]');
+    if (await nightSelect.isVisible()) await nightSelect.selectOption('night');
+    else await page.locator('.js-drive[data-drive="night"]').click();
+    assert.match(await page.locator('#form-config-code').inputValue(), /^CRS-/);
+    const filter = page.locator('.case-filter[data-brand="VinFast"]');
+    if (await filter.count()) {
+      await filter.click();
+      assert.equal(await page.locator('.case-card:visible').count(), 1);
+    }
+    assert.deepEqual(scriptErrors, []);
+    report.interactions = 'vehicle, package, modal open/Escape/focus return, night recommendation, case filter: passed';
     reports.push(report);
     await page.close();
   }
@@ -53,6 +81,7 @@ try {
   if (process.argv.includes('--check')) {
     for (const r of reports) {
       assert.ok(r.overflow <= 1, `Page overflow at ${r.width}px`);
+      assert.ok(r.containers.every(c => Math.abs(c.width - r.containers[0].width) <= 1), `Misaligned container at ${r.width}px`);
       assert.ok(r.gaps.every(g => g >= 14 && g <= 25), `Uneven reading flow at ${r.width}px: ${r.gaps}`);
       assert.ok(r.priceImageGap >= 14, `Price image touches cards at ${r.width}px`);
       assert.equal(r.mainCount, 1);
