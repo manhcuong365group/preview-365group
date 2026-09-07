@@ -131,6 +131,13 @@ test('keeps stylesheet tags balanced so browser CSS parsing is deterministic', (
   assert.doesNotMatch(html, /\.branch-finder-grid\{|\.branch-finder-panel\{|\.branch-regions\{/);
 });
 
+test('keeps the proof and certificate layout stylesheet in the document head', () => {
+  const head = html.slice(0, html.indexOf('</head>'));
+  const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
+  assert.match(head, /<style id="cr-blk-proof-style">/);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 10);
+});
+
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
   assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
   assert.match(html, /\.pro-shop-gallery img\{height:150px;object-fit:contain\}/);
