@@ -3,6 +3,10 @@ import { access, readFile } from 'node:fs/promises';
 import { test } from 'node:test';
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
+const codePages = await Promise.all(['15', '35', '40', '50', '60'].map(async (code) => ({
+  code,
+  html: await readFile(new URL(`../../ma-phim/cr-blk-${code}.html`, import.meta.url), 'utf8'),
+})));
 
 test('states the CR BLK Pro ontology and search-intent heading accurately', () => {
   assert.match(html, /<h1>Phim cách nhiệt 3M CR BLK Pro: cấu hình, giá và cách chọn<\/h1>/);
@@ -409,6 +413,12 @@ test('links directly to each CR BLK code page from the configuration content', (
     '/3m-cr-blk-50',
     '/phim-cach-nhiet-3m-cr-blk-60',
   ]) assert.match(html, new RegExp(`href="https://auto365\\.vn${path}"`));
+});
+
+test('returns visitors from every CR BLK code page to the CR BLK Pro configuration', () => {
+  for (const { code, html: codePage } of codePages) {
+    assert.match(codePage, /href="https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro"/, `CR BLK ${code} needs a direct backlink`);
+  }
 });
 
 test('keeps the certificate section structurally closed before the next section', () => {
