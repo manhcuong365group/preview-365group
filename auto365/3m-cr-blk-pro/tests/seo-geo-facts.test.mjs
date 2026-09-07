@@ -46,6 +46,15 @@ test('connects the nationwide Service to Auto365 without a product or price sche
   assert.doesNotMatch(html, /"@type": "Offer"/);
 });
 
+test('uses stable schema entities for the page, its author, reviewer, breadcrumb and FAQ', () => {
+  assert.match(html, /"isPartOf": \{"@id": "https:\/\/auto365\.vn\/#website"\}/);
+  assert.match(html, /"breadcrumb": \{"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#breadcrumb"\}/);
+  assert.match(html, /"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#author"/);
+  assert.match(html, /"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#reviewer"/);
+  assert.match(html, /"@type": "BreadcrumbList",\s*"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#breadcrumb"/);
+  assert.match(html, /"@type": "FAQPage",\s*"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#faq"/);
+});
+
 test('links the warranty statement to the official 3M Vietnam policy page', () => {
   assert.match(html, /https:\/\/www\.3m\.com\.vn\/3M\/vi_VN\/car-personalization-vn\/products\/automotive-window-tint\//);
   assert.match(html, /phim cách nhiệt ô tô 3M được hỗ trợ bảo hành lên tới 10 năm/);
@@ -194,7 +203,7 @@ test('places the real-installation image beside the technical table without redu
 });
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
-  assert.match(html, /<thead><tr><th scope="col">Thông số<\/th><th scope="col">CR BLK 40<\/th><th scope="col">CR BLK 35<\/th><th scope="col">CR BLK 15<\/th><\/tr><\/thead>/);
+  assert.match(html, /<thead><tr><th scope="col">Thông số<\/th><th scope="col"><a href="https:\/\/auto365\.vn\/phim-cach-nhiet-3m-cr-blk-40">CR BLK 40<\/a><\/th><th scope="col"><a href="https:\/\/auto365\.vn\/phim-cach-nhiet-3m-cr-blk-35">CR BLK 35<\/a><\/th><th scope="col"><a href="https:\/\/auto365\.vn\/phim-cach-nhiet-3m-cr-blk-15">CR BLK 15<\/a><\/th><\/tr><\/thead>/);
   assert.match(html, /<th scope="row">VLT \(phim \+ kính Auto 75\)<\/th><td>41%<\/td><td>33%<\/td><td>14%<\/td>/);
   assert.match(html, /<th scope="row">TSER<\/th><td>58%<\/td><td>60%<\/td><td>64%<\/td>/);
   assert.match(html, /<th scope="row">Giảm chói<\/th><td>44%<\/td><td>55%<\/td><td>81%<\/td>/);
@@ -387,6 +396,16 @@ test('prioritizes only the hero image and defers certificate images', () => {
   assert.equal((html.match(/fetchpriority="high"/g) || []).length, 1);
   const eagerImages = [...html.matchAll(/<img\b[^>]*loading="eager"[^>]*>/g)].map((match) => match[0]);
   assert.equal(eagerImages.length, 1, 'only the LCP hero image may load eagerly');
+});
+
+test('links directly to each CR BLK code page from the configuration content', () => {
+  for (const path of [
+    '/phim-cach-nhiet-3m-cr-blk-15',
+    '/phim-cach-nhiet-3m-cr-blk-35',
+    '/phim-cach-nhiet-3m-cr-blk-40',
+    '/3m-cr-blk-50',
+    '/phim-cach-nhiet-3m-cr-blk-60',
+  ]) assert.match(html, new RegExp(`href="https://auto365\\.vn${path}"`));
 });
 
 test('keeps the certificate section structurally closed before the next section', () => {
