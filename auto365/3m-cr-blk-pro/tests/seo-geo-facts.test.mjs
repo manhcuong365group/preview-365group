@@ -451,6 +451,15 @@ test('prioritizes only the hero image and defers certificate images', () => {
   assert.equal(eagerImages.length, 1, 'only the LCP hero image may load eagerly');
 });
 
+test('serves responsive local image candidates for large below-fold visuals', async () => {
+  for (const asset of ['13-1-640.webp', '13-1-960.webp', '16-640.webp', '16-960.webp', 'bang-gia-640.webp']) {
+    await access(new URL(`../hinh/${asset}`, import.meta.url));
+  }
+  assert.match(html, /13-1-640\.webp 640w, \/3m-cr-blk-pro\/hinh\/13-1-960\.webp 960w, \/3m-cr-blk-pro\/hinh\/13-1\.jpg 1920w/);
+  assert.match(html, /16-640\.webp 640w, \/3m-cr-blk-pro\/hinh\/16-960\.webp 960w, \/3m-cr-blk-pro\/hinh\/16\.webp 1920w/);
+  assert.match(html, /bang-gia-640\.webp 640w, \/3m-cr-blk-pro\/hinh\/bang-gia\.webp 1024w/);
+});
+
 test('links directly to each CR BLK code page from the configuration content', () => {
   for (const path of [
     '/phim-cach-nhiet-3m-cr-blk-15',
