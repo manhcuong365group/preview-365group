@@ -60,6 +60,10 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=800px){.desktop-nav{display:none}}
 
 /* hero */
+.breadcrumb-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:12px 0 0;font-size:11.5px;color:#70747b}
+.breadcrumb-nav a{color:#70747b;text-decoration:underline}
+.breadcrumb-nav a:hover{color:var(--red)}
+.breadcrumb-nav [aria-current]{color:var(--ink);font-weight:700}
 .hero{background:linear-gradient(160deg,#fff 0%,#f7f8fa 60%,#eef0f3 100%);padding:40px 0 44px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(380px,1.1fr);gap:40px;align-items:stretch}
 .hero-grid>*{min-width:0}
@@ -449,6 +453,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 </header>
 
 <main id="noi-dung-chinh">
+
+<nav class="breadcrumb-nav shell" aria-label="Breadcrumb">
+  <a href="https://auto365.vn/">Trang chủ</a>
+  <span aria-hidden="true">›</span>
+  <a href="https://auto365.vn/nang-cap-anh-sang">Nâng cấp ánh sáng</a>
+  <span aria-hidden="true">›</span>
+  <span aria-current="page">Bi gầm ô tô</span>
+</nav>
 
 <section class="hero">
   <div class="shell hero-grid">
@@ -1168,6 +1180,14 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <article class="knowledge-card"><h3>Chi phí và cân chỉnh sau lắp gồm những gì?</h3><p>Ngoài giá sản phẩm, chi phí thực tế còn gồm pát, dây/relay, công lắp và cân chỉnh vùng sáng sau thi công. <a href="#faq-gia">Xem chi tiết &rarr;</a></p></article>
       </div>
       <figure class="article-image">
+        <div class="video-embed" style="aspect-ratio:16/9;position:relative;border-radius:14px;overflow:hidden;background:#101114">
+          <button type="button" class="video-embed-facade" data-youtube-id="weADPByfN7g" aria-label="Phát video Tiêu chí chọn bi gầm ô tô: thực tế VinFast VF3 lắp G1 Turbo V2" style="position:absolute;inset:0;width:100%;height:100%;border:0;padding:0;cursor:pointer;background-size:cover;background-position:center;background-image:url('https://i.ytimg.com/vi/weADPByfN7g/hqdefault.jpg')"></button>
+        </div>
+        <figcaption>
+          <div><h3>Tiêu chí chọn bi gầm — case VinFast VF3</h3><p>Video Auto365 Review giải thích tiêu chí chọn bi gầm qua case thực tế VinFast VF3 lắp GTR G1 Turbo V2.</p></div>
+        </figcaption>
+      </figure>
+      <figure class="article-image">
         <img src="bi-gam/hinh/xlight-301-v2-cos-pha-nhietmau-demo-v2.webp" alt="So sánh ánh sáng Cos và Pha ở 3 nhiệt màu 3000K, 4300K, 5500K trên bi gầm X-Light 301 V2" width="1080" height="614" loading="lazy" decoding="async">
         <figcaption>
           <div><h3>Ánh sáng thực tế Cos/Pha theo từng nhiệt màu</h3><p>Ảnh test thực tế trên X-Light 301 V2 — minh hoạ cho các mục nhiệt màu và cutoff phía trên.</p></div>
@@ -1862,6 +1882,22 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       videoPlayBtn.replaceWith(iframe);
     });
   }
+
+  document.addEventListener('click', function(e){
+    var btn = e.target.closest('.video-embed-facade[data-youtube-id]');
+    if (!btn) return;
+    var pc = document.createElement('link');
+    pc.rel = 'preconnect';
+    pc.href = 'https://www.youtube-nocookie.com';
+    document.head.appendChild(pc);
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + btn.getAttribute('data-youtube-id') + '?autoplay=1';
+    iframe.title = btn.getAttribute('aria-label') || 'Video';
+    iframe.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    btn.replaceWith(iframe);
+  });
 
   var consultModal = document.getElementById('consult-modal');
   var consultClose = document.getElementById('consult-close');
