@@ -12,8 +12,7 @@ test('states the CR BLK Pro ontology and search-intent heading accurately', () =
 
 test('keeps the quick-answer heading compact beside its supporting copy', () => {
   assert.match(html, /\.answer-card h2\{font-size:clamp\(23px,2vw,27px\)!important;line-height:1\.14\}/);
-  assert.match(html, /\.trust-copy h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
-  assert.match(html, /\.consult-section \.section-heading h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
+  assert.match(html, /\.trust-copy h2,\.consult-section \.section-heading h2\{font-size:clamp\(24px,2\.1vw,29px\)!important;line-height:1\.14\}/);
   assert.match(html, /\.trust-grid\{align-items:stretch\}\.trust-copy\{display:flex;flex-direction:column;padding:26px;border:1px solid #dfe4eb;border-radius:18px;background:#fff\}/);
   assert.match(html, /\.trust-copy \.source-links\{margin-top:auto\}/);
 });
@@ -38,13 +37,12 @@ test('keeps only the essential technical context beside the 3M values', () => {
   assert.doesNotMatch(html, /Auto365 đo/);
 });
 
-test('connects the Service to the named installation location without a product or price schema claim', () => {
+test('connects the nationwide Service to Auto365 without a product or price schema claim', () => {
   assert.match(html, /"@type": "Service"/);
   assert.doesNotMatch(html, /"@type": "Product"/);
-  assert.match(html, /"@type": \["LocalBusiness", "AutomotiveBusiness"\]/);
-  assert.match(html, /"@id": "https:\/\/auto365\.vn\/thu-duc#automotive-business"/);
-  assert.match(html, /"hasMap": "https:\/\/www\.google\.com\/maps\?cid=9988450659874114499"/);
-  assert.match(html, /"parentOrganization": \{"@id": "https:\/\/auto365\.vn\/#organization"/);
+  assert.match(html, /"provider": \{"@id": "https:\/\/auto365\.vn\/#organization"\}/);
+  assert.match(html, /"@type": "Organization"[\s\S]*?"@id": "https:\/\/auto365\.vn\/#organization"/);
+  assert.doesNotMatch(html, /"@type": \["LocalBusiness", "AutomotiveBusiness"\]/);
   assert.doesNotMatch(html, /"@type": "Offer"/);
 });
 
@@ -87,6 +85,14 @@ test('uses real price buttons and a keyboard-safe consultation modal', () => {
   assert.match(html, /lastModalTrigger/);
   assert.match(html, /event\.key==='Tab'/);
   assert.match(html, /consultForm\.contains\(event\.target\)/);
+  assert.match(html, /<form class="consult-form" id="consultForm"[^>]*role="dialog"[^>]*aria-modal="false"[^>]*aria-labelledby="consult-title"/);
+  assert.match(html, /dialog\.setAttribute\('aria-modal',document\.body\.classList\.contains\('form-modal-open'\)\?'true':'false'\)/);
+});
+
+test('includes a usable skip link and every referenced icon symbol', () => {
+  assert.match(html, /<a class="skip-link" href="#main-content">Chuyển đến nội dung chính<\/a>/);
+  assert.match(html, /<main id="main-content">/);
+  assert.match(html, /<symbol id="i-location" viewBox="0 0 24 24">/);
 });
 
 test('keeps pricing cards compact while preserving readable prices', () => {
@@ -194,9 +200,10 @@ test('uses a compact transposed specification table for the three CR BLK codes',
   assert.doesNotMatch(html, /Vị trí Auto365 đề xuất:/);
 });
 
-test('uses a consistent 34px desktop scale for every section heading', () => {
-  assert.match(html, /h2\{font-size:34px!important\}/);
-  assert.match(html, /@media\(max-width:680px\)\{h2\{font-size:28px!important\}\}/);
+test('uses scoped heading scales without a global h2 override', () => {
+  assert.match(html, /\.section-heading h2\{font-size:clamp\(22px,2\.6vw,34px\)\}/);
+  assert.match(html, /#specs \.evidence-data h2\{margin:0 0 14px;padding:0;font-size:clamp\(24px,2\.1vw,29px\);line-height:1\.14\}/);
+  assert.doesNotMatch(html, /(?:^|[;}])h2\{font-size:/);
 });
 
 test('does not initialize a sticky contact component that is absent from the markup', () => {
@@ -403,4 +410,11 @@ test('presents Auto365 proof as four visual verification cards with a certificat
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/2\.webp" alt="Mặt tiền 3M Pro Shop Auto365"/);
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/5\.webp" alt="Không gian 3M Pro Shop Auto365 phục vụ tư vấn"/);
   assert.match(html, /src="\/3m-cr-blk-pro\/hinh\/8\.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365"/);
+});
+
+test('keeps high-impact page layout rules scoped and declared in the document head', () => {
+  assert.match(html, /<style id="cr-blk-page-style">/);
+  assert.doesNotMatch(html, /(?:^|[;}])h2\{font-size:/);
+  assert.match(html, /#branch-finder \.a365-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+  assert.match(html, /#specs \.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
 });
