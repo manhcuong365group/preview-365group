@@ -135,49 +135,49 @@ test('keeps the proof and certificate layout stylesheet in the document head', (
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-proof-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the location and Pro Shop layout stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-location-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the price-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-price-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the package comparison stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-package-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the location phone treatment stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-location-phone-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-trust-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the consultation form stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-consult-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 4);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
@@ -241,8 +241,8 @@ test('keeps the Auto 75 condition visible in the published TDS table', () => {
 });
 
 test('keeps the technical-specification layout responsive', () => {
-  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:stretch\}/);
-  assert.match(html, /@media\(max-width:900px\)\{\.evidence-grid\{align-items:stretch\}/);
+  assert.match(html, /#specs \.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
+  assert.match(html, /@media\(max-width:900px\)\{[\s\S]*?#specs \.evidence-grid\{grid-template-columns:1fr\}/);
 });
 
 test('places the real-installation image beside the technical table without redundant source panels', () => {
@@ -252,7 +252,7 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<figcaption class="evidence-source">Nguồn kỹ thuật: <a href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
-  assert.match(html, /\.evidence-data\{padding:20px 22px\}/);
+  assert.match(html, /#specs \.evidence-data\{height:auto;margin:0;padding:0;background:transparent;box-shadow:none\}/);
 });
 
 test('uses a compact transposed specification table for the three CR BLK codes', () => {
@@ -334,15 +334,15 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
   assert.match(html, /\.a365-contact-actions\{grid-template-columns:1fr\}/);
   assert.match(html, /\.a365-contact-actions \.a365-btn\{height:40px;min-height:40px;font-size:12px\}/);
   assert.match(html, /\.a365-title,\.a365-right-title\{white-space:normal\}/);
-  assert.match(html, /#branch-finder \.a365-title,#branch-finder \.a365-right-title\{font-size:clamp\(20px,1\.6vw,22px\)!important;line-height:1\.15\}/);
-  assert.match(html, /@media\(max-width:680px\)\{#branch-finder \.a365-title,#branch-finder \.a365-right-title\{font-size:20px!important;line-height:1\.2;white-space:normal\}\}/);
+  assert.match(html, /#branch-finder \.a365-title,#branch-finder \.a365-right-title\{margin:0;font-size:clamp\(20px,1\.6vw,22px\);line-height:1\.15\}/);
+  assert.doesNotMatch(html, /#branch-finder \.a365-title,[^}]*!important/);
   assert.match(html, /<span class="a365-region-name">Miền Bắc<\/span><strong class="a365-region-count">41 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Trung<\/span><strong class="a365-region-count">26 điểm<\/strong>/);
   assert.match(html, /<span class="a365-region-name">Miền Nam<\/span><strong class="a365-region-count">24 điểm<\/strong>/);
   assert.match(html, /href="https:\/\/auto365\.vn\/chi-nhanh\?region=Mi%E1%BB%81n\+B%E1%BA%AFc"[^>]*><span class="a365-region-name">Miền Bắc/);
   assert.match(html, /href="https:\/\/auto365\.vn\/chi-nhanh\?region=Mi%E1%BB%81n\+Trung\+%26\+T%C3%A2y\+Nguy%C3%AAn"[^>]*><span class="a365-region-name">Miền Trung/);
   assert.match(html, /href="https:\/\/auto365\.vn\/chi-nhanh\?region=Mi%E1%BB%81n\+Nam"[^>]*><span class="a365-region-name">Miền Nam/);
-  assert.match(html, /\.a365-grid\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:14px;align-items:stretch\}/);
+  assert.match(html, /#branch-finder \.a365-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:14px;align-items:stretch\}/);
   assert.match(html, /\.a365-panel\{min-width:0;padding:18px/);
   assert.match(html, /\.a365-right \.a365-all\{min-height:0;margin:0;padding:0;color:#e31b23/);
   assert.match(html, /\.a365-region\{display:flex;height:46px;min-height:46px;align-items:center;justify-content:space-between/);
@@ -350,32 +350,30 @@ test('adds the nationwide Auto365 branch finder immediately after real installat
 });
 
 test('presents the specification evidence as two balanced desktop panels', () => {
-  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(420px,\.95fr\) minmax\(0,1\.05fr\);gap:20px;align-items:stretch\}/);
-  assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
-  assert.match(html, /\.evidence-data\{max-width:none;justify-self:stretch;padding:24px/);
+  assert.match(html, /#specs \.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
+  assert.match(html, /#specs \.evidence-visual img\{display:block;width:100%;height:auto;aspect-ratio:1\.5/);
+  assert.match(html, /#specs \.evidence-data\{height:auto;margin:0;padding:0;background:transparent;box-shadow:none\}/);
 });
 
 test('keeps the reference visual treatment for the specification evidence', () => {
-  assert.match(html, /\.evidence-section \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
-  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,\.9fr\) minmax\(560px,1fr\);gap:16px/);
-  assert.match(html, /\.evidence-data\{[^}]*padding:30px 32px/);
-  assert.match(html, /\.spec-table-wrap caption:before\{[^}]*background:#ed1b24/);
+  assert.match(html, /#specs \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
+  assert.match(html, /#specs \.spec-table-wrap caption\{padding:16px 16px 16px 34px/);
+  assert.match(html, /#specs \.spec-table-wrap caption::before\{top:17px;left:18px;width:6px;height:22px\}/);
 });
 
 test('keeps the reference specification layout inside the article content width', () => {
-  assert.match(html, /\.evidence-section \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
-  assert.doesNotMatch(html, /\.evidence-section \.container\{width:min\(1700px/);
+  assert.match(html, /#specs \.container\{width:min\(1180px,calc\(100% - 48px\)\)\}/);
+  assert.doesNotMatch(html, /#specs \.container\{width:min\(1700px/);
 });
 
 test('scales the evidence panels without forcing a tall cropped vehicle image', () => {
-  assert.match(html, /\.evidence-visual\{min-height:0;aspect-ratio:\.96/);
-  assert.match(html, /\.evidence-visual img\{flex:1;min-height:0;height:auto/);
+  assert.match(html, /#specs \.evidence-visual\{display:flex;min-height:0;flex-direction:column;padding:0/);
+  assert.match(html, /#specs \.evidence-visual img\{display:block;width:100%;height:auto;aspect-ratio:1\.5/);
 });
 
 test('keeps the specification panel compact at article width', () => {
-  assert.match(html, /\.evidence-data\{padding:20px 22px/);
-  assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
-  assert.match(html, /\.spec-table-wrap>p\{padding:10px 12px;font-size:10px/);
+  assert.match(html, /#specs \.spec-table-wrap th,#specs \.spec-table-wrap td\{padding:9px 10px\}/);
+  assert.match(html, /#specs \.spec-table-wrap>p\{padding:10px 12px;font-size:10px/);
 });
 
 test('does not render stray text before the page content', () => {
@@ -383,8 +381,7 @@ test('does not render stray text before the page content', () => {
 });
 
 test('keeps the visual at its natural wide aspect ratio', () => {
-  assert.match(html, /\.evidence-visual\{height:100%;aspect-ratio:auto/);
-  assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none/);
+  assert.match(html, /#specs \.evidence-visual img\{display:block;width:100%;height:auto;aspect-ratio:1\.5/);
 });
 
 test('keeps the consultation form compact beside its image on desktop', () => {
@@ -490,19 +487,17 @@ test('links the published TDS source and does not overclaim measurement evidence
 });
 
 test('uses a three-to-two visual-to-table ratio with aligned evidence panels', () => {
-  assert.match(html, /\.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:stretch\}/);
-  assert.match(html, /\.evidence-visual\{height:100%;aspect-ratio:auto/);
-  assert.match(html, /\.evidence-visual img\{aspect-ratio:1\.5;flex:none;width:100%;height:auto/);
-  assert.match(html, /\.spec-table-wrap th,\.spec-table-wrap td\{padding:9px 10px/);
+  assert.match(html, /#specs \.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
+  assert.match(html, /#specs \.evidence-visual img\{display:block;width:100%;height:auto;aspect-ratio:1\.5/);
+  assert.match(html, /#specs \.spec-table-wrap th,#specs \.spec-table-wrap td\{padding:9px 10px/);
 });
 
 test('shows the installation image and specification table directly on a white evidence section', () => {
-  assert.match(html, /\.evidence-section\{background:#fff\}/);
-  assert.match(html, /\.evidence-grid\{align-items:start\}/);
-  assert.match(html, /\.evidence-visual\{display:flex;flex-direction:column;padding:0;background:transparent;box-shadow:none\}/);
-  assert.match(html, /\.evidence-data\{height:auto;padding:0;background:transparent;box-shadow:none\}/);
-  assert.match(html, /@media\(min-width:901px\)\{\.evidence-data\{margin-top:14px\}\}/);
-  assert.match(html, /@media\(max-width:900px\)\{\.evidence-data\{margin-top:0\}\}/);
+  assert.match(html, /#specs\.evidence-section\{padding-block:clamp\(24px,2\.5vw,32px\) clamp\(28px,3vw,40px\)\}/);
+  assert.match(html, /#specs \.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
+  assert.match(html, /#specs \.evidence-visual\{display:flex;min-height:0;flex-direction:column;padding:0;background:transparent;box-shadow:none\}/);
+  assert.match(html, /@media\(min-width:901px\)\{#specs \.evidence-data\{margin-top:14px\}\}/);
+  assert.match(html, /@media\(max-width:900px\)\{#specs \.evidence-data\{margin-top:0\}\}/);
 });
 
 test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
