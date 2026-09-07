@@ -490,9 +490,9 @@
     <section class="section pricing-section" id="pricing" aria-labelledby="pricing-heading"><div class="container">
       <div class="section-heading split-heading"><div><h2 id="pricing-heading">Bảng giá CR BLK Pro theo nhóm xe</h2></div><p>Giá tham khảo trọn xe theo nhóm xe; phạm vi hạng mục, VAT, panorama và xử lý phim cũ được xác nhận trước khi thi công.</p></div>
       <div class="price-cards">
-        <button type="button" class="price-card" id="price-minicar" data-price-card="minicar" aria-label="Chọn gói CR BLK Pro cho Minicar"><div class="price-name"><span>Minicar</span><b>Xe đang chọn</b></div><strong>12.900.000đ</strong><p>CR BLK 40 + 35 + 15</p></button>
-        <button type="button" class="price-card active" id="price-sedan" data-price-card="sedan" aria-label="Chọn gói CR BLK Pro cho Sedan"><div class="price-name"><span>Sedan</span><b>Xe đang chọn</b></div><strong>15.500.000đ</strong><p>CR BLK 40 + 35 + 15</p></button>
-        <button type="button" class="price-card" id="price-suv" data-price-card="suv" aria-label="Chọn gói CR BLK Pro cho SUV, CUV hoặc MPV"><div class="price-name"><span>SUV / CUV / MPV</span><b>Xe đang chọn</b></div><strong>18.300.000đ</strong><p>CR BLK 40 + 35 + 15</p></button>
+        <article class="price-card" id="price-minicar" data-price-card="minicar"><div class="price-name"><span>Minicar</span><b>Xe đang chọn</b></div><strong>12.900.000đ</strong><p>CR BLK 40 + 35 + 15</p><button type="button" class="js-price-select" data-vehicle="minicar">Chọn gói và nhận tư vấn</button></article>
+        <article class="price-card active" id="price-sedan" data-price-card="sedan"><div class="price-name"><span>Sedan</span><b>Xe đang chọn</b></div><strong>15.500.000đ</strong><p>CR BLK 40 + 35 + 15</p><button type="button" class="js-price-select" data-vehicle="sedan">Chọn gói và nhận tư vấn</button></article>
+        <article class="price-card" id="price-suv" data-price-card="suv"><div class="price-name"><span>SUV / CUV / MPV</span><b>Xe đang chọn</b></div><strong>18.300.000đ</strong><p>CR BLK 40 + 35 + 15</p><button type="button" class="js-price-select" data-vehicle="suv">Chọn gói và nhận tư vấn</button></article>
       </div>
       <img class="section-photo" src="/3m-cr-blk-pro/hinh/bang-gia.webp" alt="Bảng giá phim cách nhiệt 3M tại Auto365" loading="lazy" width="1024" height="683">
     </div></section>
@@ -681,5 +681,6 @@
   new MutationObserver(function(){dialog.setAttribute('aria-modal',document.body.classList.contains('form-modal-open')?'true':'false');}).observe(document.body,{attributes:true,attributeFilter:['class']});
 }());
 </script>
+<script>document.querySelectorAll('.js-price-select').forEach(function(button){button.addEventListener('click',function(event){event.stopPropagation();});});</script>
 </body>
 </html>

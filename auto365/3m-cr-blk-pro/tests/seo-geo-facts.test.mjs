@@ -80,8 +80,9 @@ test('ships every preview-local image and the social image with this page', asyn
 });
 
 test('uses real price buttons and a keyboard-safe consultation modal', () => {
-  assert.match(html, /<button type="button" class="price-card" id="price-minicar"/);
-  assert.match(html, /<button type="button" class="price-card active" id="price-sedan"/);
+  assert.match(html, /<article class="price-card" id="price-minicar" data-price-card="minicar">/);
+  assert.match(html, /<article class="price-card active" id="price-sedan" data-price-card="sedan">/);
+  assert.match(html, /<button type="button" class="js-price-select" data-vehicle="sedan">Chọn gói và nhận tư vấn<\/button>/);
   assert.match(html, /lastModalTrigger/);
   assert.match(html, /event\.key==='Tab'/);
   assert.match(html, /consultForm\.contains\(event\.target\)/);
