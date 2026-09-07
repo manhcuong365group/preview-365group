@@ -134,6 +134,9 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .catalogue-toolbar select,.catalogue-toolbar input{min-height:44px;border:1px solid #d8dade;border-radius:8px;padding:0 10px;font-size:16px;background:#fff}
 .catalogue-toolbar .search-box{flex:1;min-width:180px;display:block}
 .catalogue-toolbar .search-box input{width:100%}
+.catalogue-need-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.need-chip{display:inline-flex;align-items:center;min-height:36px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-size:12.5px;font-weight:700;cursor:pointer}
+.need-chip.is-active{background:var(--red);border-color:var(--red);color:#fff}
 .catalogue-count{font-size:12px;color:var(--muted);margin-bottom:12px}
 .product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .product-card{position:relative;display:flex;flex-direction:column;height:100%;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;transition:transform .15s,box-shadow .15s}
@@ -565,6 +568,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         </div>
       </aside>
       <div class="catalogue-main">
+    <div class="catalogue-need-chips" id="catalogue-need-chips" role="group" aria-label="Phân nhóm theo nhu cầu sử dụng">
+      <button type="button" class="need-chip" data-need="city,mixed">Đi phố</button>
+      <button type="button" class="need-chip" data-need="rain">Mưa / sương mù</button>
+      <button type="button" class="need-chip" data-need="touring">Đi tỉnh / đường xa</button>
+    </div>
     <p class="catalogue-count" id="pf-count" aria-live="polite"></p>
     <div class="product-grid" id="product-grid">
 <article class="product-card" data-brand="GTR" data-lens="3.0" data-voltage="12V" data-price="6000000" data-name="bi gầm gtr g1 turbo v2" data-color="4800K,4300K" data-needs="touring,mountain">
@@ -1724,7 +1732,22 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
     countEl.textContent = 'Hiển thị ' + Math.min(limit, matched.length) + ' / ' + matched.length + ' sản phẩm';
     moreBtn.style.display = !isMobile && matched.length > shown ? 'inline-flex' : 'none';
+    needChips.forEach(function(chip){
+      chip.classList.toggle('is-active', needs.indexOf(chip.getAttribute('data-need')) !== -1);
+    });
   }
+
+  var needChips = Array.prototype.slice.call(document.querySelectorAll('.need-chip'));
+  needChips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var val = chip.getAttribute('data-need');
+      var box = needBoxes.filter(function(b){ return b.value === val; })[0];
+      if (!box) return;
+      box.checked = !box.checked;
+      box.dispatchEvent(new Event('change', {bubbles: true}));
+      document.getElementById('san-pham').scrollIntoView({behavior: 'smooth', block: 'start'});
+    });
+  });
 
   [search, sortSel].forEach(function(el){
     el.addEventListener('input', function(){ shown = PAGE_SIZE; apply(); });
