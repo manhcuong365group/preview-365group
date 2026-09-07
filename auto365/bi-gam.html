@@ -1809,6 +1809,12 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   }
 
   function openZaloRequest(form, noteSelector){
+    var submitBtn = form.querySelector('[type="submit"]');
+    var submitBtnLabel = submitBtn ? submitBtn.textContent : '';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Đang gửi…';
+    }
     var tracking = trackingParams();
     var trackingLine = Object.keys(tracking).map(function(k){ return k + '=' + tracking[k]; }).join(' | ');
     var rows = [
@@ -1859,7 +1865,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           lead_id: leadId
         }, tracking));
       })
-      .catch(function(){});
+      .catch(function(){
+        if (note) {
+          note.textContent = 'Hệ thống chưa ghi nhận được yêu cầu tự động — vui lòng dùng Zalo hoặc gọi 0365 365 911 để chắc chắn được hỗ trợ.';
+        }
+      })
+      .finally(function(){
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = submitBtnLabel;
+        }
+      });
     var zalo = document.createElement('a');
     zalo.href = 'https://zalo.me/3622666363345050913';
     zalo.target = '_blank';
