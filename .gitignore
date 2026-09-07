@@ -28,6 +28,7 @@ Thumbs.db
 .history/
 .wrangler/
 .agents/
+.worktrees/
 
 # review-builder tool
 review-builder/node_modules/
