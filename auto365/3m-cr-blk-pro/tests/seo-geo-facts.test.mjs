@@ -186,7 +186,7 @@ test('places the real-installation image beside the technical table without redu
   assert.match(html, /<div class="container evidence-grid">\s*<figure class="evidence-visual">[\s\S]*?<div class="evidence-data"><h2>Thông số dùng để lựa chọn<\/h2>/);
   assert.doesNotMatch(html, /class="spec-source"/);
   assert.doesNotMatch(html, /Đo kiểm trên xe thực tế/);
-  assert.match(html, /<figcaption class="evidence-source">Nguồn: 3M™ Automotive Window Film Crystalline™ Series, Technical Data Sheet, Revision E, May 2024, Table B — Solar Properties on Auto 75 Glass\./);
+  assert.match(html, /<figcaption class="evidence-source">Nguồn kỹ thuật: <a href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
   assert.match(html, /\.evidence-data\{padding:20px 22px\}/);
@@ -379,6 +379,13 @@ test('keeps only essential TDS context and includes the IRR values', () => {
   assert.doesNotMatch(html, /<p class="evidence-intro">/);
   assert.doesNotMatch(html, /VLT trong bảng là VLT của tổ hợp phim/);
   assert.doesNotMatch(html, /class="source-legend"/);
+});
+
+test('links the published TDS source and does not overclaim measurement evidence', () => {
+  assert.match(html, /href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
+  assert.match(html, /Các giá trị là hiệu suất ước tính và chỉ dùng để tham khảo\./);
+  assert.match(html, /alt="Xe VinFast sau khi dán phim 3M CR BLK tại 3M Pro Shop Auto365"/);
+  assert.doesNotMatch(html, /alt="Đo kiểm thông số phim 3M CR BLK Pro trên xe VinFast"/);
 });
 
 test('uses a three-to-two visual-to-table ratio with aligned evidence panels', () => {
