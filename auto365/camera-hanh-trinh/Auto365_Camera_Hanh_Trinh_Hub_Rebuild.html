@@ -197,6 +197,9 @@ body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
 .quick a:hover span{background:var(--red);border-color:var(--red);color:#fff}
 /* Ảnh sản phẩm không đồng bộ: ảnh nền trắng thuần trộn tốt với multiply, nhưng ảnh marketing có đồ họa màu (poster, chữ, icon) bị multiply làm xỉn màu. Bọc mỗi ảnh trong khung trắng bo góc để mọi ảnh trông nhất quán trong lưới, bỏ multiply. */
 .media img{background:#fff;border-radius:8px;padding:8px;box-shadow:0 1px 5px rgba(20,20,20,.07);mix-blend-mode:normal}
+/* "Lý do lựa chọn" (CAM KẾT 01-06): 6 thẻ toàn chữ, không có điểm nhấn thị giác. Thêm icon dấu tick tròn phía trên nhãn để dễ quét mắt và tăng cảm giác "đã xác nhận". */
+#diem-lap-uy-tin .branch-proof{position:relative;padding-top:56px}
+#diem-lap-uy-tin .branch-proof::before{content:'✓';position:absolute;top:16px;left:16px;width:30px;height:30px;border-radius:50%;background:#eaf6ee;color:#14733c;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px}
 </style>
 </head>
 <body>
