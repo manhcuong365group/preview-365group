@@ -381,6 +381,11 @@ test('keeps only essential TDS context and includes the IRR values', () => {
   assert.doesNotMatch(html, /class="source-legend"/);
 });
 
+test('prioritizes only the hero image and defers certificate images', () => {
+  assert.match(html, /<div class="hero-media">\s*<img[^>]*loading="eager"[^>]*fetchpriority="high"/);
+  assert.equal((html.match(/fetchpriority="high"/g) || []).length, 1);
+});
+
 test('links the published TDS source and does not overclaim measurement evidence', () => {
   assert.match(html, /href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
   assert.match(html, /Các giá trị là hiệu suất ước tính và chỉ dùng để tham khảo\./);
