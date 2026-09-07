@@ -135,21 +135,28 @@ test('keeps the proof and certificate layout stylesheet in the document head', (
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-proof-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 8);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 7);
 });
 
 test('keeps the location and Pro Shop layout stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-location-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 8);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 7);
 });
 
 test('keeps the price-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
   assert.match(head, /<style id="cr-blk-price-style">/);
-  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 8);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 7);
+});
+
+test('keeps the package comparison stylesheet in the document head', () => {
+  const head = html.slice(0, html.indexOf('</head>'));
+  const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
+  assert.match(head, /<style id="cr-blk-package-style">/);
+  assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 7);
 });
 
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
