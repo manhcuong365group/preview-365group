@@ -36,6 +36,7 @@ try {
       const ids = [...document.querySelectorAll('[id]')].map(e => e.id);
       return {
         width: innerWidth,
+        heroPadding: [getComputedStyle(document.querySelector(".hero")).paddingTop, getComputedStyle(document.querySelector(".hero")).paddingBottom].map(parseFloat),
         containers: [...document.querySelectorAll('main > section > .container')].map(e => ({ section: e.parentElement.id, width: Math.round(e.getBoundingClientRect().width) })),
         overflow: document.documentElement.scrollWidth - innerWidth,
         gaps: parts.slice(1).map((p, i) => Math.round((p.top - parts[i].bottom) * 100) / 100),
@@ -81,6 +82,7 @@ try {
   if (process.argv.includes('--check')) {
     for (const r of reports) {
       assert.ok(r.overflow <= 1, `Page overflow at ${r.width}px`);
+      assert.ok(r.heroPadding.every(p => p >= 16 && p <= 22) && r.heroPadding[0] === r.heroPadding[1], `Uneven hero padding at ${r.width}px`);
       assert.ok(r.containers.every(c => Math.abs(c.width - r.containers[0].width) <= 1), `Misaligned container at ${r.width}px`);
       assert.ok(r.gaps.every(g => g >= 14 && g <= 25), `Uneven reading flow at ${r.width}px: ${r.gaps}`);
       assert.ok(r.priceImageGap >= 14, `Price image touches cards at ${r.width}px`);
