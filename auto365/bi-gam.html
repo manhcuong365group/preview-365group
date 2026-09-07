@@ -103,11 +103,12 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 
 /* quickselect */
 .qs-bar{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
-.qs-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qs-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .qs-col label{display:block;font-size:11px;font-weight:700;color:#44474d;margin-bottom:6px}
 .qs-col select{width:100%;min-height:44px;border:1px solid #d8dade;border-radius:10px;padding:0 12px;font-size:16px;background:#fff}
 .qs-submit{width:100%;margin-top:16px;min-height:46px}
-@media (width<=800px){.qs-row{grid-template-columns:1fr}}
+@media (width<=900px){.qs-row{grid-template-columns:1fr 1fr}}
+@media (width<=520px){.qs-row{grid-template-columns:1fr}}
 .qs-reco{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
 .qs-reco[hidden]{display:none}
 .qs-result-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
@@ -1111,6 +1112,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <div class="qs-col"><label for="qs-need">1. Nhu cầu chính</label><select id="qs-need"><option value="">Chọn nhu cầu…</option><option value="city,mixed">Đi phố + đi tỉnh</option><option value="rain">Mưa, sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select></div>
         <div class="qs-col"><label for="qs-lens">2. Kích thước lens</label><select id="qs-lens"><option value="">Chưa rõ / để hệ thống chọn</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select></div>
         <div class="qs-col"><label for="qs-budget">3. Ngân sách</label><select id="qs-budget"><option value="">Chưa xác định</option><option value="under4">Dưới 4 triệu</option><option value="4to6">4–6 triệu</option><option value="over6">Trên 6 triệu</option></select></div>
+        <div class="qs-col"><label for="qs-voltage">4. Hệ điện xe</label><select id="qs-voltage"><option value="">Chưa rõ (chỉ gợi ý mẫu 12V phổ thông)</option><option value="12V">Xe con / bán tải phổ thông — 12V</option><option value="24V">Xe tải / xe thương mại — 24V</option></select></div>
       </div>
       <button type="button" class="btn btn-primary qs-submit" id="qs-submit">Tìm sản phẩm phù hợp</button>
       <div class="qs-reco" id="qs-reco" hidden aria-live="polite">
@@ -2083,6 +2085,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var qsNeed = document.getElementById('qs-need');
   var qsLens = document.getElementById('qs-lens');
   var qsBudget = document.getElementById('qs-budget');
+  var qsVoltage = document.getElementById('qs-voltage');
   var qsSubmit = document.getElementById('qs-submit');
   var qsRecoBox = document.getElementById('qs-reco');
   var qsResultBox = document.getElementById('qs-result');
@@ -2091,10 +2094,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     var needs = (c.getAttribute('data-needs') || '').split(',');
     return needs.indexOf('moto') === -1 && needs.indexOf('legacy') === -1;
   }
-  function qsMatch(cards, needVal, lensVal, budgetVal){
+  function qsMatch(cards, needVal, lensVal, budgetVal, voltageVal){
     return cards.filter(qsEligible).filter(function(c){
       var price = +c.getAttribute('data-price');
       if (!price) return false;
+      var cardVoltage = c.getAttribute('data-voltage') || '';
+      // Chưa rõ hệ điện -> chỉ gợi ý mẫu 12V; 24V chỉ xuất hiện khi người dùng tự chọn.
+      var okVoltage = voltageVal ? cardVoltage === voltageVal : cardVoltage !== '24V';
       var cardNeeds = (c.getAttribute('data-needs') || '').split(',');
       var okNeed = !needVal || needVal.split(',').some(function(n){ return cardNeeds.indexOf(n) !== -1; });
       var okLens = !lensVal || c.getAttribute('data-lens') === lensVal;
@@ -2102,26 +2108,34 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       if (budgetVal === 'under4') okBudget = price < 4000000;
       else if (budgetVal === '4to6') okBudget = price >= 4000000 && price <= 6000000;
       else if (budgetVal === 'over6') okBudget = price > 6000000;
-      return okNeed && okLens && okBudget;
+      return okVoltage && okNeed && okLens && okBudget;
     });
   }
 
-  function qsRenderPicks(matched, needVal, lensVal, budgetVal, relaxedBudget, relaxedLens, relaxedNeed){
+  function qsRenderPicks(matched, needVal, lensVal, budgetVal, voltageVal, relaxedBudget, relaxedLens, relaxedNeed){
     var picks = matched.slice(0, 3);
     var reasons = [];
     if (needVal && !relaxedNeed) reasons.push('đúng nhu cầu đã chọn');
     if (lensVal && !relaxedLens) reasons.push('lens ' + lensVal + ' inch');
     if (budgetVal && !relaxedBudget) reasons.push('trong tầm ngân sách');
+    reasons.push(voltageVal ? ('hệ điện ' + voltageVal) : 'hệ điện 12V phổ thông (mặc định khi chưa rõ xe)');
     var baseReason = reasons.length ? ('Phù hợp với ' + reasons.join(', ') + '.') : '';
     if (relaxedNeed) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu khớp đủ mọi tiêu chí — đây là gợi ý gần nhất theo mức giá phù hợp.';
     else if (relaxedLens) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng lens đã chọn — đây là gợi ý gần nhất theo nhu cầu.';
     else if (relaxedBudget) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng ngân sách đã chọn — đây là các gợi ý gần nhất theo nhu cầu và lens.';
     qsResultBox.textContent = '';
+    var firstPrice = picks.length ? +picks[0].getAttribute('data-price') : 0;
     picks.forEach(function(card, i){
       var img = card.querySelector('.product-image img');
       var nameLink = card.querySelector('h3 a');
       var price = card.querySelector('.product-price').textContent;
-      var reasonText = i === 0 ? baseReason : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác.';
+      var reasonText;
+      if (i === 0) {
+        reasonText = baseReason;
+      } else {
+        var samePrice = +card.getAttribute('data-price') === firstPrice;
+        reasonText = samePrice ? 'Lựa chọn thay thế cùng tiêu chí, cùng mức giá.' : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác.';
+      }
       if (i === 0) reasonText += ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.';
       var zaloTitle = 'Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href;
 
@@ -2145,37 +2159,38 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     });
   }
 
-  function qsRunSearch(needVal, lensVal, budgetVal){
+  function qsRunSearch(needVal, lensVal, budgetVal, voltageVal){
     var allCards = Array.prototype.slice.call(document.querySelectorAll('#product-grid .product-card'));
     var relaxedBudget = false, relaxedLens = false, relaxedNeed = false;
-    var matched = qsMatch(allCards, needVal, lensVal, budgetVal);
+    // Điện áp KHÔNG được nới khi cascading — 24V chỉ hiện khi người dùng tự chọn.
+    var matched = qsMatch(allCards, needVal, lensVal, budgetVal, voltageVal);
     if (!matched.length && budgetVal) {
-      matched = qsMatch(allCards, needVal, lensVal, '');
+      matched = qsMatch(allCards, needVal, lensVal, '', voltageVal);
       relaxedBudget = true;
     }
     if (!matched.length && lensVal) {
-      matched = qsMatch(allCards, needVal, '', '');
+      matched = qsMatch(allCards, needVal, '', '', voltageVal);
       relaxedLens = true;
     }
     if (!matched.length && needVal) {
-      matched = qsMatch(allCards, '', '', '');
+      matched = qsMatch(allCards, '', '', '', voltageVal);
       relaxedNeed = true;
     }
     matched.sort(function(a,b){ return (+a.getAttribute('data-price')) - (+b.getAttribute('data-price')); });
     qsRecoBox.hidden = false;
-    qsRenderPicks(matched, needVal, lensVal, budgetVal, relaxedBudget, relaxedLens, relaxedNeed);
+    qsRenderPicks(matched, needVal, lensVal, budgetVal, voltageVal, relaxedBudget, relaxedLens, relaxedNeed);
     qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
   }
 
   qsSubmit.addEventListener('click', function(){
-    var needVal = qsNeed.value, lensVal = qsLens.value, budgetVal = qsBudget.value;
-    if (!needVal && !lensVal && !budgetVal) {
+    var needVal = qsNeed.value, lensVal = qsLens.value, budgetVal = qsBudget.value, voltageVal = qsVoltage.value;
+    if (!needVal && !lensVal && !budgetVal && !voltageVal) {
       qsRecoBox.hidden = false;
-      qsResultBox.innerHTML = '<p class="qs-empty">Vui lòng chọn ít nhất một tiêu chí (nhu cầu, lens hoặc ngân sách) để nhận gợi ý.</p>';
+      qsResultBox.innerHTML = '<p class="qs-empty">Vui lòng chọn ít nhất một tiêu chí (nhu cầu, lens, ngân sách hoặc hệ điện) để nhận gợi ý.</p>';
       qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
       return;
     }
-    qsRunSearch(needVal, lensVal, budgetVal);
+    qsRunSearch(needVal, lensVal, budgetVal, voltageVal);
   });
 
   document.addEventListener('click', function(e){
