@@ -1217,7 +1217,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <p>Để lại liên hệ và nhu cầu; hãng/dòng/năm xe bổ sung sau để Auto365 kiểm tra thực tế.</p>
         </div>
       </div>
-      <form class="video-lead-form" id="video-lead-form">
+      <form class="video-lead-form" id="video-lead-form" action="/api/leads" method="post">
         <h3 class="video-lead-form-title">Nhận tư vấn miễn phí</h3>
         <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
         <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
@@ -1621,7 +1621,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       </div>
       <button type="button" class="consult-modal-close" id="consult-close" aria-label="Đóng">&times;</button>
     </div>
-    <form class="finder-bar" id="consult-form" style="padding:0" action="/api/lead" method="post">
+    <form class="finder-bar" id="consult-form" style="padding:0" action="/api/leads" method="post">
       <div class="finder-bar-fields">
         <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
         <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
@@ -1775,6 +1775,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     var field = form.elements.namedItem(name);
     return field && field.value ? field.value.trim() : '';
   }
+  function checkedOf(form, name){
+    var field = form.elements.namedItem(name);
+    return !!(field && field.checked);
+  }
 
   function trackingParams(){
     var params = new URLSearchParams(window.location.search);
@@ -1804,29 +1808,38 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         ? 'Đã sao chép nội dung. Hãy dán vào cửa sổ Zalo vừa mở.'
         : 'Zalo đã mở. Trình duyệt không cho phép tự sao chép; vui lòng nhập nội dung trực tiếp.';
     });
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(Object.assign({
-      event: 'generate_lead',
-      form_id: form.id || '',
-      page_topic: 'bi-gam-o-to'
-    }, tracking));
-    try {
-      fetch('/api/lead', {
-        method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        keepalive: true,
-        body: JSON.stringify(Object.assign({
+    var leadId = (form.id || 'lead') + '-' + Date.now();
+    var data = new FormData();
+    data.append('lead_id', leadId);
+    data.append('lead_source', 'BiGamPage');
+    data.append('created_at', new Date().toISOString());
+    data.append('form_id', form.id || '');
+    data.append('page', 'bi-gam');
+    data.append('full_name', valueOf(form, 'full_name'));
+    data.append('phone', valueOf(form, 'phone'));
+    data.append('car_brand', valueOf(form, 'car_brand'));
+    data.append('car_model', valueOf(form, 'car_model'));
+    data.append('car_year', valueOf(form, 'car_year'));
+    data.append('region', valueOf(form, 'region'));
+    data.append('driving_need', valueOf(form, 'driving_need'));
+    data.append('privacy_consent', checkedOf(form, 'privacy_consent') ? '1' : '0');
+    data.append('privacy_policy_version', 'auto365-2026');
+    Object.keys(tracking).forEach(function(k){ data.append(k, tracking[k]); });
+    fetch('/api/leads', { method: 'POST', body: data, keepalive: true })
+      .then(function(response){
+        if (!response.ok) throw new Error('Lead endpoint returned ' + response.status);
+        return response.json().catch(function(){ return null; });
+      })
+      .then(function(){
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push(Object.assign({
+          event: 'generate_lead',
           form_id: form.id || '',
-          page: 'bi-gam',
-          full_name: valueOf(form, 'full_name'),
-          phone: valueOf(form, 'phone'),
-          car_brand: valueOf(form, 'car_brand'),
-          car_model: valueOf(form, 'car_model'),
-          region: valueOf(form, 'region'),
-          driving_need: valueOf(form, 'driving_need')
-        }, tracking))
-      }).catch(function(){});
-    } catch (err) {}
+          page_topic: 'bi-gam-o-to',
+          lead_id: leadId
+        }, tracking));
+      })
+      .catch(function(){});
     var zalo = document.createElement('a');
     zalo.href = 'https://zalo.me/3622666363345050913';
     zalo.target = '_blank';
