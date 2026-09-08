@@ -193,7 +193,8 @@ test('keeps the location and Pro Shop layout stylesheet in the document head', (
 test('keeps the price-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-price-style">/);
+  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.price-cards\{gap:12px\}/);
+  assert.doesNotMatch(head, /id="cr-blk-price-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
@@ -214,6 +215,10 @@ test('keeps the location phone treatment stylesheet in the document head', () =>
 
 test('keeps the first CSS consolidation checkpoint at 13 style wrappers or fewer', () => {
   assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 13);
+});
+
+test('keeps the second CSS consolidation checkpoint at 12 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 12);
 });
 
 test('keeps the warranty trust-card stylesheet in the document head', () => {
