@@ -516,6 +516,11 @@ test('announces the visible case count after a brand filter changes', () => {
   assert.match(html, /document\.getElementById\('caseFilterStatus'\)\.textContent=/);
 });
 
+test('uses lightly rounded square case filters instead of pill-shaped controls', () => {
+  assert.match(html, /\.case-filter\{min-height:38px;padding:0 15px;border:1px solid #d9dde3;border-radius:6px;/);
+  assert.match(html, /@media\(max-width:680px\).*?\.case-filter\{flex:0 0 auto;min-height:34px;padding-inline:13px;font-size:11px;border-radius:6px\}/s);
+});
+
 test('links the published TDS source and does not overclaim measurement evidence', () => {
   assert.match(html, /href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
   assert.match(html, /Các giá trị là hiệu suất ước tính và chỉ dùng để tham khảo\./);
