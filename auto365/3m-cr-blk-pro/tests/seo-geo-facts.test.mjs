@@ -543,6 +543,11 @@ test('serves responsive local image candidates for large below-fold visuals', as
   assert.ok((await readFile(new URL('../hinh/og-cr-blk-pro-1200x630.png', import.meta.url))).length <= 300000);
 });
 
+test('keeps image fallbacks on the preview origin for predictable loading', () => {
+  const remoteFallbacks = [...html.matchAll(/<img\b[^>]*\bsrc="https:\/\/auto365\.vn\/(?:assets|uploads)\//g)];
+  assert.equal(remoteFallbacks.length, 0, 'image src fallbacks should not depend on a second origin');
+});
+
 test('links directly to each CR BLK code page from the configuration content', () => {
   for (const path of [
     '/phim-cach-nhiet-3m-cr-blk-15',
