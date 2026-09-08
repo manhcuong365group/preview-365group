@@ -259,6 +259,14 @@ test('removes superseded section padding overrides without changing the active c
   assert.match(html, /\.pro-shop-section\{padding:20px 0 36px\}/);
 });
 
+test('keeps the branch finder padding declaration single-sourced', () => {
+  assert.equal((html.match(/\.branch-finder\{padding:14px 0\}/g) || []).length, 1);
+});
+
+test('keeps the mobile media-section padding declaration single-sourced', () => {
+  assert.equal((html.match(/\.media-section\{padding:42px 0\}/g) || []).length, 1);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
