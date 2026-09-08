@@ -631,6 +631,7 @@ test('links directly to each CR BLK code page from the configuration content', (
 });
 
 test('links the three configuration explainer cards to their code pages', () => {
+  assert.match(html, /#main-content \.knowledge-card h3 a\{color:var\(--accent\);text-decoration:underline;/);
   for (const code of ['15', '35', '40']) {
     assert.match(html, new RegExp(`<article class="knowledge-card"><h3><a href="https://auto365\\.vn/phim-cach-nhiet-3m-cr-blk-${code}">`));
   }
