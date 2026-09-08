@@ -82,6 +82,11 @@ test('uses stable schema entities for the page, its author, reviewer, breadcrumb
   assert.match(html, /"@type": "FAQPage",\s*"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#faq"/);
 });
 
+test('surfaces the Auto365 press coverage as an EEAT reference', () => {
+  assert.match(html, /"citation": "https:\/\/auto365\.vn\/bao-chi-noi-ve-auto365-365group-3m-pro-shop"/);
+  assert.match(html, /href="https:\/\/auto365\.vn\/bao-chi-noi-ve-auto365-365group-3m-pro-shop"[^>]*>Báo chí nói về Auto365 &amp; 3M Pro Shop →<\/a>/);
+});
+
 test('links the warranty statement to the official 3M Vietnam policy page', () => {
   assert.match(html, /https:\/\/www\.3m\.com\.vn\/3M\/vi_VN\/car-personalization-vn\/products\/automotive-window-tint\//);
   assert.match(html, /phim cách nhiệt ô tô 3M được hỗ trợ bảo hành lên tới 10 năm/);
