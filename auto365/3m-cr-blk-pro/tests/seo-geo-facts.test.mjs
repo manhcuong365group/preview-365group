@@ -24,7 +24,6 @@ test('keeps the quick-answer heading compact beside its supporting copy', () => 
 test('shows the verified configuration for each published case', () => {
   for (const [model, config] of [
     ['VinFast VF 7', 'CR BLK 40 / 15 / 15'],
-    ['Peugeot 408', 'CR BLK 40 / 35 / 15'],
     ['Volvo XC90', 'CR BLK 40 / 15 / 15 · Panorama: CR BLK 15'],
     ['Toyota Fortuner', 'CR BLK 40 / 15 / 15'],
     ['Honda CR-V', 'CR BLK 40 / 15 / 15'],
@@ -48,6 +47,30 @@ test('connects the nationwide Service to Auto365 without a product or price sche
   assert.match(html, /"@type": "Organization"[\s\S]*?"@id": "https:\/\/auto365\.vn\/#organization"/);
   assert.doesNotMatch(html, /"@type": \["LocalBusiness", "AutomotiveBusiness"\]/);
   assert.doesNotMatch(html, /"@type": "Offer"/);
+});
+
+test('labels Peugeot 408 as a consultation when the source does not verify an installation record', () => {
+  assert.match(html, /<h3>Peugeot 408<\/h3><p>Cấu hình tư vấn: CR BLK 40 \/ 35 \/ 15<\/p>/);
+  assert.doesNotMatch(html, /<h3>Peugeot 408<\/h3><p>Cấu hình đã dán:/);
+  assert.match(html, /<h3>Peugeot 408<\/h3><p>Cấu hình tư vấn: CR BLK 40 \/ 35 \/ 15<\/p><strong>Xem tư vấn cho Peugeot 408/);
+  assert.match(html, /<h2>Xe thực tế và cấu hình tư vấn phim cách nhiệt 3M CR BLK Pro<\/h2>/);
+  assert.doesNotMatch(html, /<h2>Xe thực tế thi công dán phim cách nhiệt 3M CR BLK Pro<\/h2>/);
+});
+
+test('does not compare the Pro package as inherently more private in the rear cabin', () => {
+  assert.match(html, /Ngoại hình đồng bộ theo từng vị trí kính/);
+  assert.doesNotMatch(html, /Ngoại hình đồng bộ, riêng tư hơn/);
+});
+
+test('keeps evidence metadata scoped to what each asset and entity actually represents', () => {
+  assert.match(html, /alt="Xe Honda Civic tại 3M Pro Shop Auto365"/);
+  assert.match(html, /\.why-certificate-card img\{width:100%;height:200px;object-fit:contain\}/);
+  assert.doesNotMatch(html, /"sameAs": "https:\/\/auto365\.vn\/chi-nhanh"/);
+});
+
+test('publishes the confirmed technical review date with the reviewer identity', () => {
+  assert.match(html, /"dateReviewed": "2026-09-08"/);
+  assert.match(html, /Kiểm duyệt: <strong>Chuyên gia Đặng Minh Hoàng<\/strong><\/span><span>Rà soát kỹ thuật: <time datetime="2026-09-08">08\/09\/2026<\/time>/);
 });
 
 test('uses stable schema entities for the page, its author, reviewer, breadcrumb and FAQ', () => {
@@ -230,9 +253,10 @@ test('uses compact location action chips and omits the district label', () => {
 });
 
 test('limits case and price copy to evidence published on this preview', () => {
-  assert.match(html, /Mỗi case hiển thị ảnh thi công và cấu hình đã dán của xe\./);
+  assert.match(html, /Mỗi hồ sơ hiển thị ảnh, cấu hình đã thi công hoặc nội dung tư vấn theo dữ liệu hiện có\./);
   assert.doesNotMatch(html, /Case có ảnh, mã phim và ngày thi công/);
-  assert.match(html, /Giá tham khảo trọn xe theo nhóm xe;/);
+  assert.match(html, /Giá tham khảo trọn xe theo nhóm xe; phạm vi hạng mục, panorama và xử lý phim cũ được xác nhận trước khi thi công\./);
+  assert.doesNotMatch(html, /Giá tham khảo trọn xe theo nhóm xe, đã bao gồm VAT/);
 });
 
 test('keeps the Auto 75 condition visible in the published TDS table', () => {
@@ -312,8 +336,8 @@ test('uses a compact end-user heading rhythm without leftover eyebrow labels', (
   assert.match(html, /@media\(max-width:680px\)\{\.section\{padding:18px 0\}/);
 });
 
-test('names the case gallery as real CR BLK Pro installations', () => {
-  assert.match(html, /<h2>Xe thực tế thi công dán phim cách nhiệt CR BLK Pro tại Auto365<\/h2>/);
+test('names the case gallery according to its mixed installation and consultation evidence', () => {
+  assert.match(html, /<h2>Xe thực tế và cấu hình tư vấn phim cách nhiệt 3M CR BLK Pro<\/h2>/);
   assert.doesNotMatch(html, /<h2>Case CR BLK Pro tại Auto365<\/h2>/);
 });
 
