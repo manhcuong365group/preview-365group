@@ -418,11 +418,15 @@ test('keeps the warranty certificate image compact and contained', () => {
   assert.match(html, /#main-content \.trust-grid\{align-items:stretch\}/);
   assert.match(html, /#main-content \.trust-photo\{display:flex;align-items:center;min-height:0\}/);
   assert.match(html, /#main-content \.trust-photo img\{display:block;width:100%;height:auto;max-height:100%;min-height:0;object-fit:contain/);
-  assert.match(html, /@media\(max-width:680px\).*?#main-content \.trust-grid\{align-items:start\}#main-content \.trust-photo\{display:block\}#main-content \.trust-photo img\{height:auto;max-height:520px;min-height:0;object-fit:contain\}/s);
+  assert.match(html, /@media\(max-width:680px\).*?#main-content \.trust-grid\{align-items:start\}#main-content \.trust-photo\{display:block\}#main-content \.trust-photo img\{height:auto;max-height:520px;min-height:0;object-fit:contain\}#main-content \.trust-photo-note\{margin:8px 0 0;color:var\(--muted\);font-size:11px;line-height:1\.4;text-align:center\}/s);
 });
 
 test('keeps the desktop warranty image compact without stretching the copy card', () => {
-  assert.match(html, /@media\(min-width:681px\)\{#main-content \.trust-grid\{align-items:start\}#main-content \.trust-photo img\{width:100%;height:clamp\(420px,40vw,520px\);max-height:520px;min-height:0;object-fit:contain\}\}/);
+  assert.match(html, /@media\(min-width:681px\)\{#main-content \.trust-grid\{align-items:stretch\}#main-content \.trust-photo\{flex-direction:column;justify-content:center\}#main-content \.trust-photo img\{width:100%;height:clamp\(420px,36vw,500px\);max-height:500px;min-height:0;object-fit:contain\}#main-content \.trust-photo-note\{margin:8px 12px 0;color:var\(--muted\);font-size:11px;line-height:1\.4;text-align:center\}\}/);
+});
+
+test('balances warranty columns with an evidence caption under the compact image', () => {
+  assert.match(html, /<p class="trust-photo-note">Ảnh hồ sơ eWarranty tham khảo trên xe Volvo XC90\.<\/p>/);
 });
 
 test('aligns the consultation form with the adjacent introduction on desktop', () => {
