@@ -421,6 +421,10 @@ test('keeps the warranty certificate image compact and contained', () => {
   assert.match(html, /@media\(max-width:680px\).*?#main-content \.trust-grid\{align-items:start\}#main-content \.trust-photo\{display:block\}#main-content \.trust-photo img\{height:auto;max-height:520px;min-height:0;object-fit:contain\}/s);
 });
 
+test('keeps the desktop warranty image compact without stretching the copy card', () => {
+  assert.match(html, /@media\(min-width:681px\)\{#main-content \.trust-grid\{align-items:start\}#main-content \.trust-photo img\{width:100%;height:clamp\(420px,40vw,520px\);max-height:520px;min-height:0;object-fit:contain\}\}/);
+});
+
 test('aligns the consultation form with the adjacent introduction on desktop', () => {
   assert.match(html, /@media\(min-width:901px\)\{\.consult-form\{margin-top:0\}\}/);
 });
