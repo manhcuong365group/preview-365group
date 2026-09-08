@@ -252,6 +252,13 @@ test('keeps the ninth CSS consolidation checkpoint at 5 style wrappers or fewer'
   assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 5);
 });
 
+test('removes superseded section padding overrides without changing the active contract', () => {
+  assert.doesNotMatch(html, /\.section\{padding:7px 0\}/);
+  assert.doesNotMatch(html, /\.pro-shop-section\{padding:8px 0 12px\}/);
+  assert.match(html, /\.section\{padding:20px 0\}/);
+  assert.match(html, /\.pro-shop-section\{padding:20px 0 36px\}/);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
@@ -533,9 +540,9 @@ test('uses the page typography weight for Auto365 proof-card labels', () => {
 });
 
 test('keeps a compact vertical rhythm between page blocks', () => {
-  assert.match(html, /\.section\{padding:7px 0\}/);
+  assert.match(html, /\.section\{padding:20px 0\}/);
   assert.match(html, /\.branch-finder\{padding:14px 0\}/);
-  assert.match(html, /\.pro-shop-section\{padding:8px 0 12px\}/);
+  assert.match(html, /\.pro-shop-section\{padding:20px 0 36px\}/);
   assert.match(html, /\.why-auto365\{margin:7px 0 0\}/);
   assert.match(html, /\.media-section\{padding:8px 0\}/);
 });
