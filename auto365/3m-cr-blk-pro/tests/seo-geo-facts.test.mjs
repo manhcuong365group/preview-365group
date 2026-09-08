@@ -267,6 +267,14 @@ test('keeps the mobile media-section padding declaration single-sourced', () => 
   assert.equal((html.match(/\.media-section\{padding:42px 0\}/g) || []).length, 1);
 });
 
+test('keeps superseded evidence typography declarations out of the base layer', () => {
+  assert.doesNotMatch(html, /#specs \.evidence-source\{[^}]*font-size:10px/);
+  assert.doesNotMatch(html, /#specs \.evidence-data h2\{margin:0 0 14px;padding:0;font-size:clamp\(24px,2\.1vw,29px\);line-height:1\.14\}/);
+  assert.doesNotMatch(html, /#specs \.spec-table-wrap caption\{[^}]*font-size:15px/);
+  assert.ok((html.match(/#specs \.spec-table-wrap tbody th,#specs \.spec-table-wrap td\{font-size:13px\}/g) || []).length <= 1);
+  assert.doesNotMatch(html, /\.why-certificate-card img\{object-fit:contain;background:#fff\}/);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
@@ -286,7 +294,7 @@ test('keeps the consultation form stylesheet in the document head', () => {
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
   assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
   assert.doesNotMatch(html, /class="pro-shop-gallery"/);
-  assert.match(html, /\.why-certificate-card img\{object-fit:contain;background:#fff\}/);
+  assert.match(html, /\.why-certificate-card img\{background:#fff\}/);
 });
 
 test('keeps text readable on light case panels and publishes the current schema date', () => {
@@ -370,7 +378,7 @@ test('uses a compact transposed specification table for the three CR BLK codes',
 
 test('uses scoped heading scales without a global h2 override', () => {
   assert.match(html, /\.section-heading h2\{font-size:clamp\(22px,2\.6vw,34px\)\}/);
-  assert.match(html, /#specs \.evidence-data h2\{margin:0 0 14px;padding:0;font-size:clamp\(24px,2\.1vw,29px\);line-height:1\.14\}/);
+  assert.match(html, /#specs \.evidence-data h2\{font-size:clamp\(24px,2\.1vw,29px\)\}/);
   assert.doesNotMatch(html, /(?:^|[;}])h2\{font-size:/);
 });
 
