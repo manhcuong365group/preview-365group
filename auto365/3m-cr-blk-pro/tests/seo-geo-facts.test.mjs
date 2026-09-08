@@ -415,9 +415,10 @@ test('keeps the consultation form compact beside its image on desktop', () => {
 });
 
 test('keeps the warranty certificate image compact and contained', () => {
-  assert.match(html, /#main-content \.trust-grid\{align-items:start\}/);
-  assert.match(html, /#main-content \.trust-photo img\{display:block;width:100%;height:clamp\(340px,38vw,520px\);min-height:0;object-fit:contain/);
-  assert.match(html, /@media\(max-width:680px\).*?#main-content \.trust-photo img\{height:auto;max-height:520px;min-height:0;object-fit:contain\}/s);
+  assert.match(html, /#main-content \.trust-grid\{align-items:stretch\}/);
+  assert.match(html, /#main-content \.trust-photo\{display:flex;align-items:center;min-height:0\}/);
+  assert.match(html, /#main-content \.trust-photo img\{display:block;width:100%;height:auto;max-height:100%;min-height:0;object-fit:contain/);
+  assert.match(html, /@media\(max-width:680px\).*?#main-content \.trust-grid\{align-items:start\}#main-content \.trust-photo\{display:block\}#main-content \.trust-photo img\{height:auto;max-height:520px;min-height:0;object-fit:contain\}/s);
 });
 
 test('aligns the consultation form with the adjacent introduction on desktop', () => {
