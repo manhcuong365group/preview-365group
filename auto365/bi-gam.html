@@ -944,7 +944,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     </div>
   </div>
 </article>
-<article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="" data-price="5000000" data-name="bi gầm x-light x3 pro" data-color="3000K,4300K,5500K" data-needs="mixed">
+<article class="product-card" data-brand="X-Light" data-lens="3.0" data-voltage="12V,24V" data-price="5000000" data-name="bi gầm x-light x3 pro" data-color="3000K,4300K,5500K" data-needs="mixed">
   <a class="product-image" href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer" aria-label="Xem Bi gầm X-Light X3 Pro">
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/X3-PRO/6.jpg.webp" alt="Bi gầm X-Light X3 Pro" width="600" height="600" loading="lazy" decoding="async">
   </a>
@@ -953,7 +953,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
     <h3><a href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer">Bi gầm X-Light X3 Pro</a></h3>
     <p class="product-price">5.000.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">VAT: xác nhận khi báo giá</p>
-    <ul class="product-highlights"><li>Lens 3.0 inch · Cos 40W / Pha 55W</li><li>Nhiệt màu 3000 / 4300 / 5500K</li><li>Bảo hành 24 tháng</li><li>Hệ điện: cần đối chiếu mã (nguồn ghi 12/24V)</li></ul>
+    <ul class="product-highlights"><li>Lens 3.0 inch · Cos 40W / Pha 55W</li><li>Nhiệt màu 3000 / 4300 / 5500K</li><li>Bảo hành 24 tháng</li><li>Hệ điện: 12-24V (dùng được cả hai hệ điện)</li></ul>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-led-x-light-x3-pro" target="_blank" rel="noreferrer">Xem sản phẩm</a>
@@ -1718,7 +1718,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         return cardColor.indexOf(cv) !== -1;
       });
       var okNeed = !needs.length || needs.some(function(nv){ return nv.split(',').some(function(n){ return cardNeeds.indexOf(n) !== -1; }); });
-      var okVoltage = voltageFilter === null || (c.getAttribute('data-voltage') || '') === voltageFilter;
+      var cardVoltages = (c.getAttribute('data-voltage') || '').split(',').filter(Boolean);
+      var okVoltage = voltageFilter === null || (voltageFilter === '' ? cardVoltages.length === 0 : cardVoltages.indexOf(voltageFilter) !== -1);
       return okQ && okBrand && okLens && okColor && okNeed && okVoltage;
     });
 
@@ -2209,7 +2210,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           var lensVal = card.getAttribute('data-lens');
           td = txt('td', null, lensVal ? (lensVal + ' inch') : 'Cần kiểm tra');
         } else if (rowLabel === 'Hệ điện xe phù hợp') {
-          td = txt('td', null, card.getAttribute('data-voltage') || 'Cần kiểm tra');
+          td = txt('td', null, (card.getAttribute('data-voltage') || '').split(',').filter(Boolean).join(' & ') || 'Cần kiểm tra');
         } else if (rowLabel === 'Nhu cầu phù hợp') {
           td = needsList[i].length ? txt('td', null, needsList[i].join(', ')) : txt('td', null, 'Chưa gắn nhãn');
         } else {
@@ -2244,9 +2245,9 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     return cards.filter(qsEligible).filter(function(c){
       var price = +c.getAttribute('data-price');
       if (!price) return false;
-      var cardVoltage = c.getAttribute('data-voltage') || '';
-      // Chưa rõ hệ điện -> chỉ gợi ý mẫu 12V; 24V chỉ xuất hiện khi người dùng tự chọn.
-      var okVoltage = voltageVal ? cardVoltage === voltageVal : cardVoltage !== '24V';
+      var cardVoltages = (c.getAttribute('data-voltage') || '').split(',').filter(Boolean);
+      // Chưa rõ hệ điện -> chỉ gợi ý mẫu tương thích 12V; 24V-only chỉ xuất hiện khi người dùng tự chọn.
+      var okVoltage = voltageVal ? cardVoltages.indexOf(voltageVal) !== -1 : (cardVoltages.length === 0 || cardVoltages.indexOf('12V') !== -1);
       var cardNeeds = (c.getAttribute('data-needs') || '').split(',');
       var okNeed = !needVal || needVal.split(',').some(function(n){ return cardNeeds.indexOf(n) !== -1; });
       var okLens = !lensVal || c.getAttribute('data-lens') === lensVal;
