@@ -34,7 +34,7 @@ test('shows the verified configuration for each published case', () => {
 });
 
 test('keeps only the essential technical context beside the 3M values', () => {
-  assert.match(html, /<h2>Thông số dùng để lựa chọn<\/h2>/);
+  assert.match(html, /<h2>Thông số các mã phim trong cấu hình CR BLK Pro<\/h2>/);
   assert.match(html, /IRER được xác định trong dải 780–2\.500 nm/);
   assert.doesNotMatch(html, /class="spec-source"/);
   assert.doesNotMatch(html, /Auto365 đo/);
@@ -269,10 +269,11 @@ test('keeps the technical-specification layout responsive', () => {
 });
 
 test('places the real-installation image beside the technical table without redundant source panels', () => {
-  assert.match(html, /<div class="container evidence-grid">\s*<figure class="evidence-visual">[\s\S]*?<div class="evidence-data"><h2>Thông số dùng để lựa chọn<\/h2>/);
+  assert.match(html, /<div class="container evidence-grid">\s*<figure class="evidence-visual">[\s\S]*?<div class="evidence-data"><h2>Thông số các mã phim trong cấu hình CR BLK Pro<\/h2>/);
   assert.doesNotMatch(html, /class="spec-source"/);
   assert.doesNotMatch(html, /Đo kiểm trên xe thực tế/);
-  assert.match(html, /<figcaption class="evidence-source">Nguồn kỹ thuật: <a href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
+  assert.match(html, /<p class="evidence-source">Nguồn kỹ thuật: <a href="https:\/\/multimedia\.3m\.com\/mws\/media\/2414959O"/);
+  assert.doesNotMatch(html, /<caption>Thông số ba mã trong cấu hình CR BLK Pro<\/caption>/);
   assert.doesNotMatch(html, /<div class="source-card">/);
   assert.doesNotMatch(html, /Trang sản phẩm 3M Việt Nam →/);
   assert.match(html, /#specs \.evidence-data\{height:auto;margin:0;padding:0;background:transparent;box-shadow:none\}/);
@@ -540,6 +541,17 @@ test('shows the installation image and specification table directly on a white e
   assert.match(html, /#specs \.evidence-visual\{display:flex;min-height:0;flex-direction:column;padding:0;background:transparent;box-shadow:none\}/);
   assert.match(html, /@media\(min-width:901px\)\{#specs \.evidence-data\{margin-top:14px\}\}/);
   assert.match(html, /@media\(max-width:900px\)\{#specs \.evidence-data\{margin-top:0\}\}/);
+});
+
+test('keeps the technical source note beneath the specification table column', () => {
+  const visualStart = html.indexOf('<figure class="evidence-visual">');
+  const visualEnd = html.indexOf('</figure>', visualStart);
+  assert.ok(visualStart >= 0 && visualEnd > visualStart);
+  assert.equal(html.slice(visualStart, visualEnd).includes('evidence-source'), false);
+  const dataStart = html.indexOf('<div class="evidence-data">');
+  const tableEnd = html.indexOf('</table>', dataStart);
+  const noteStart = html.indexOf('<p class="evidence-source">', dataStart);
+  assert.ok(dataStart >= 0 && tableEnd > dataStart && noteStart > tableEnd);
 });
 
 test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
