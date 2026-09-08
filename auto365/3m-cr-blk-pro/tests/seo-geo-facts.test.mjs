@@ -244,6 +244,10 @@ test('keeps the seventh CSS consolidation checkpoint at 7 style wrappers or fewe
   assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 7);
 });
 
+test('keeps the eighth CSS consolidation checkpoint at 6 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 6);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
@@ -675,7 +679,8 @@ test('presents Auto365 proof as four visual verification cards with a certificat
 });
 
 test('keeps high-impact page layout rules scoped and declared in the document head', () => {
-  assert.match(html, /<style id="cr-blk-page-style">/);
+  assert.match(html, /<style id="cr-blk-location-style">[\s\S]*#branch-finder \.a365-grid\{/);
+  assert.doesNotMatch(html, /id="cr-blk-page-style"/);
   assert.doesNotMatch(html, /(?:^|[;}])h2\{font-size:/);
   assert.match(html, /#branch-finder \.a365-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
   assert.match(html, /#specs \.evidence-grid\{grid-template-columns:minmax\(0,3fr\) minmax\(400px,2fr\);gap:16px;align-items:start\}/);
