@@ -10,6 +10,8 @@ Scope: current CR BLK Pro source. This is a local-source audit, not production c
 - Browser interaction checks pass at all four widths: SUV price selection, standard package selection, modal opening, Escape and focus return, night-driving recommendation, VinFast filter. No page JavaScript exceptions observed. No real form submitted.
 - Existing JavaScript retained after audit; shared bubbling handlers rely on the existing stopPropagation listener. This could be consolidated separately, but no double action appeared in tested interactions.
 - Legacy CSS overrides remain. The trial adds a shared geometry section inside the existing responsive stylesheet; it does not claim a full CSS rewrite or removal of every unused rule.
+- Added `srcset` and `sizes` to all 25 page images using locally generated WebP candidates. The single hero image remains the only eager/high-priority image; OG PNG is 203 KB.
+- Added a source audit script for candidate generation and an equivalence check that compares computed CSS geometry before/after cleanup across desktop/mobile and modal-open states.
 
 ## Fixed
 

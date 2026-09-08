@@ -95,7 +95,7 @@ test('ships every preview-local image and the social image with this page', asyn
 test('uses real price buttons and a keyboard-safe consultation modal', () => {
   assert.match(html, /<article class="price-card" id="price-minicar" data-price-card="minicar">/);
   assert.match(html, /<article class="price-card active" id="price-sedan" data-price-card="sedan">/);
-  assert.match(html, /<button type="button" class="js-price-select" data-vehicle="sedan">Chọn gói và nhận tư vấn<\/button>/);
+  assert.match(html, /<button type="button" class="js-price-select" aria-pressed="true" data-vehicle="sedan">Chọn gói và nhận tư vấn<\/button>/);
   assert.match(html, /lastModalTrigger/);
   assert.match(html, /event\.key==='Tab'/);
   assert.match(html, /consultForm\.contains\(event\.target\)/);
@@ -182,14 +182,13 @@ test('keeps the consultation form stylesheet in the document head', () => {
 
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
   assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
-  assert.match(html, /\.pro-shop-gallery img\{height:150px;object-fit:contain\}/);
-  assert.doesNotMatch(html, /\.pro-shop-gallery img\{height:150px;object-fit:cover\}/);
+  assert.doesNotMatch(html, /class="pro-shop-gallery"/);
   assert.match(html, /\.why-certificate-card img\{object-fit:contain;background:#fff\}/);
 });
 
 test('keeps text readable on light case panels and publishes the current schema date', () => {
   assert.match(html, /\.cases-section \.split-heading>p\{color:var\(--muted\)\}/);
-  assert.match(html, /"dateModified": "2026-09-05"/);
+  assert.match(html, /"dateModified": "2026-09-07"/);
 });
 
 test('does not reserve mobile space for a sticky CTA that is absent from the markup', () => {
@@ -452,12 +451,17 @@ test('prioritizes only the hero image and defers certificate images', () => {
 });
 
 test('serves responsive local image candidates for large below-fold visuals', async () => {
-  for (const asset of ['13-1-640.webp', '13-1-960.webp', '16-640.webp', '16-960.webp', 'bang-gia-640.webp']) {
-    await access(new URL(`../hinh/${asset}`, import.meta.url));
+  for (const [tag] of html.matchAll(/<img\b[^>]*>/g)) {
+    assert.match(tag, /\bsizes="[^"]+"/);
+    const srcset = tag.match(/\bsrcset="([^"]+)"/)?.[1];
+    assert.ok(srcset, 'each image should offer responsive candidates');
+    for (const source of srcset.split(', ')) {
+      const [url, width] = source.split(' ');
+      assert.match(width, /^\d+w$/);
+      await access(new URL('../' + url.replace('/3m-cr-blk-pro/', ''), import.meta.url));
+    }
   }
-  assert.match(html, /13-1-640\.webp 640w, \/3m-cr-blk-pro\/hinh\/13-1-960\.webp 960w, \/3m-cr-blk-pro\/hinh\/13-1\.jpg 1920w/);
-  assert.match(html, /16-640\.webp 640w, \/3m-cr-blk-pro\/hinh\/16-960\.webp 960w, \/3m-cr-blk-pro\/hinh\/16\.webp 1920w/);
-  assert.match(html, /bang-gia-640\.webp 640w, \/3m-cr-blk-pro\/hinh\/bang-gia\.webp 1024w/);
+  assert.ok((await readFile(new URL('../hinh/og-cr-blk-pro-1200x630.png', import.meta.url))).length <= 300000);
 });
 
 test('links directly to each CR BLK code page from the configuration content', () => {
