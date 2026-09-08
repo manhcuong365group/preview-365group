@@ -554,6 +554,11 @@ test('keeps the technical source note beneath the specification table column', (
   assert.ok(dataStart >= 0 && tableEnd > dataStart && noteStart > tableEnd);
 });
 
+test('keeps the specification evidence columns equal on desktop without distorting mobile media', () => {
+  assert.match(html, /@media\(min-width:901px\)\{#specs \.evidence-grid\{align-items:stretch\}\s*#specs \.evidence-visual img\{height:100%;aspect-ratio:auto;object-fit:cover\}\}/);
+  assert.match(html, /@media\(max-width:900px\)\{#specs \.evidence-visual img\{height:auto;aspect-ratio:1\.5\}\}/);
+});
+
 test('presents Auto365 proof as four visual verification cards with a certificate band', () => {
   assert.match(html, /<h2 class="why-auto365-title" id="why-auto365-title">Vì sao nên dán phim cách nhiệt tại Auto365\?<\/h2>/);
   assert.equal((html.match(/class="why-proof-card"/g) || []).length, 4);
