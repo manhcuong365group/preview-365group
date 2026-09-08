@@ -179,7 +179,8 @@ test('keeps stylesheet tags balanced so browser CSS parsing is deterministic', (
 test('keeps the proof and certificate layout stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-proof-style">/);
+  assert.match(head, /<style id="cr-blk-location-style">[\s\S]*\.why-certificate-list\{display:grid/);
+  assert.doesNotMatch(head, /id="cr-blk-proof-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
@@ -233,6 +234,10 @@ test('keeps the fourth CSS consolidation checkpoint at 10 style wrappers or fewe
 
 test('keeps the fifth CSS consolidation checkpoint at 9 style wrappers or fewer', () => {
   assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 9);
+});
+
+test('keeps the sixth CSS consolidation checkpoint at 8 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 8);
 });
 
 test('keeps the warranty trust-card stylesheet in the document head', () => {
