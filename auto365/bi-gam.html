@@ -340,7 +340,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .case-filter button{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--line);background:#fff;color:#44474d;font-size:11px;font-weight:600;padding:6px 14px;border-radius:8px;cursor:pointer}
 .case-filter button.is-active{background:var(--red);border-color:var(--red);color:#fff}
 @media (width<=900px) and (width>640px){.case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (width<=640px){.case-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.case-grid .case-card{scroll-snap-align:start}.case-grid .case-card.is-extra{display:block}.case-more{display:none!important}}
+@media (width<=640px){.case-grid{grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:240px;gap:12px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.case-grid .case-card{scroll-snap-align:start;min-width:0}.case-grid .case-card.is-extra{display:block}.case-more{display:none!important}}
 .case-card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;height:100%}
 .case-image{position:relative;aspect-ratio:4/2.2;display:block;background:#f5f6f8;flex:none}
 .case-image img{width:100%;height:100%;object-fit:cover}
@@ -425,6 +425,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;background:#fff;padding:28px 32px;align-content:start;min-width:0}
 .video-lead-form-title{grid-column:1/-1;margin:0 0 6px;font-size:24px;color:var(--ink);line-height:1.2;text-align:center}
 .video-lead-form label{grid-column:span 1;display:grid;gap:6px;font-size:11.5px;font-weight:700;color:#20242b;min-width:0}
+.video-lead-form .field-required{color:var(--red);font-weight:700}
 .video-lead-form label.field-full{grid-column:1/-1}
 .video-lead-form input,.video-lead-form select{min-height:44px;border:1px solid #d5dbe4;border-radius:10px;padding:0 12px;font-size:16px;color:#17191e;width:100%;min-width:0}
 .video-lead-form label.video-lead-consent{grid-column:1/-1;display:flex;align-items:flex-start;gap:8px;font-size:11px;font-weight:400;color:#4a4d53;line-height:1.5}
@@ -1276,11 +1277,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       </div>
       <form class="video-lead-form" id="video-lead-form" action="/api/leads" method="post">
         <h3 class="video-lead-form-title">Nhận tư vấn miễn phí</h3>
-        <label>Họ và tên <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
-        <label>Số điện thoại <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
-        <label>Hãng xe (không bắt buộc) <input type="text" name="car_brand" placeholder="Ví dụ: Mazda, Toyota"></label>
-        <label>Dòng xe (không bắt buộc) <input type="text" name="car_model" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
-        <label>Năm sản xuất (không bắt buộc) <select name="car_year"><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
+        <label><span>Họ và tên <b class="field-required">*</b></span> <input type="text" name="full_name" placeholder="Nhập họ tên" required></label>
+        <label><span>Số điện thoại <b class="field-required">*</b></span> <input type="tel" name="phone" placeholder="Nhập số điện thoại" required></label>
+        <label>Hãng xe <input type="text" name="car_brand" placeholder="Ví dụ: Mazda, Toyota"></label>
+        <label>Dòng xe <input type="text" name="car_model" placeholder="VD: Ford Ranger, VF5, CX-5"></label>
+        <label>Năm sản xuất <select name="car_year"><option value="">Chọn năm</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021 trở về trước</option></select></label>
         <label>Nhu cầu <select name="driving_need"><option>Đi phố</option><option>Mưa, sương mù</option><option>Đi tỉnh, đường xa</option></select></label>
         <label class="video-lead-consent"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noreferrer">Chính sách bảo mật</a>.</span></label>
         <button type="submit" class="btn btn-primary video-lead-submit">Gửi yêu cầu tư vấn</button>
