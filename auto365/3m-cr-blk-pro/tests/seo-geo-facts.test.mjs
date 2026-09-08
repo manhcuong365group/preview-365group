@@ -630,6 +630,12 @@ test('links directly to each CR BLK code page from the configuration content', (
   ]) assert.match(html, new RegExp(`href="https://auto365\\.vn${path}"`));
 });
 
+test('links the three configuration explainer cards to their code pages', () => {
+  for (const code of ['15', '35', '40']) {
+    assert.match(html, new RegExp(`<article class="knowledge-card"><h3><a href="https://auto365\\.vn/phim-cach-nhiet-3m-cr-blk-${code}">`));
+  }
+});
+
 test('returns visitors from every CR BLK code page to the CR BLK Pro configuration', () => {
   for (const { code, html: codePage } of codePages) {
     assert.match(codePage, /href="https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro"/, `CR BLK ${code} needs a direct backlink`);
