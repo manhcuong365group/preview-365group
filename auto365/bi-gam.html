@@ -151,9 +151,8 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .product-card.is-hidden{display:none}
 .product-image{position:relative;aspect-ratio:1/1;background:#f5f6f8;display:block}
 .product-image img{width:100%;height:100%;object-fit:contain;padding:16px}
-.product-brand-badge{display:inline-block;background:#f0f2f4;color:#3a3d42;font-size:10px;font-weight:800;letter-spacing:.03em;padding:4px 10px;border-radius:6px;margin-bottom:8px}
+.product-brand-badge{display:none}
 .product-group-badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.03em;padding:4px 10px;border-radius:6px;margin:0 0 8px 6px}
-.product-group-badge--moto{background:#eaf1ff;color:#1d54c7}
 .product-group-badge--legacy{background:#fff2df;color:#a1590a}
 .product-body{padding:16px;display:flex;flex-direction:column;flex:1}
 .product-card h3{font-size:15px;line-height:1.3;margin:2px 0 8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-weight:700}
@@ -270,8 +269,13 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 #pf-sort{order:3}
 }
 @media (width<=640px){
-  #pf-sort{grid-column:1/-1;order:1}
-  .mobile-filter-grid{grid-column:1/-1;order:2}
+  .mobile-filter-grid{display:contents}
+  #mf-brand{order:1}
+  #mf-lens{order:2}
+  #mf-color{order:3}
+  #mf-need{order:4}
+  #pf-sort{order:5}
+  #mf-voltage{order:6}
 }
 
 
@@ -820,7 +824,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-2024/10.jpg.webp" alt="X-Light F10 2.0 Inch Moto" width="600" height="600" loading="lazy" decoding="async">
   </a>
   <div class="product-body">
-    <span class="product-brand-badge">X-Light</span><span class="product-group-badge product-group-badge--moto">Xe máy</span>
+    <span class="product-brand-badge">X-Light</span>
     <h3><a href="https://auto365.vn/x-light-f10-20-inch-moto" target="_blank" rel="noreferrer">X-Light F10 2.0 Inch Moto</a></h3>
     <p class="product-price">3.700.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">VAT: xác nhận khi báo giá</p>
     <ul class="product-highlights"><li>Lens 2.0 inch</li><li>30W</li><li>Nhiệt màu 3000K - 4300K - 5500K</li><li>Bảo hành 12 tháng</li></ul>
