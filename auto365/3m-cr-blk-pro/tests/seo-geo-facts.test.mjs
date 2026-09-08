@@ -225,17 +225,23 @@ test('keeps the third CSS consolidation checkpoint at 11 style wrappers or fewer
   assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 11);
 });
 
+test('keeps the fourth CSS consolidation checkpoint at 10 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 10);
+  assert.match(html, /<style>\s*\.price-card\{[\s\S]*?\.case-content p\{display:block;min-height:32px/);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-trust-style">/);
+  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.trust-grid\{align-items:stretch\}/);
+  assert.doesNotMatch(head, /id="cr-blk-trust-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the consultation form stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-trust-style">[\s\S]*\.consult-form\{padding:18px;gap:9px\}/);
+  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.consult-form\{padding:18px;gap:9px\}/);
   assert.doesNotMatch(head, /id="cr-blk-consult-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
