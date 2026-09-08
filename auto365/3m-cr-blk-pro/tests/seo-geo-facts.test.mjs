@@ -524,7 +524,7 @@ test('keeps only essential TDS context and includes the IRR values', () => {
 
 test('prioritizes only the hero image and defers certificate images', () => {
   assert.match(html, /<div class="hero-media">\s*<img[^>]*loading="eager"[^>]*fetchpriority="high"/);
-  assert.equal((html.match(/fetchpriority="high"/g) || []).length, 1);
+  assert.equal((html.match(/<img\b[^>]*fetchpriority="high"/g) || []).length, 1);
   const eagerImages = [...html.matchAll(/<img\b[^>]*loading="eager"[^>]*>/g)].map((match) => match[0]);
   assert.equal(eagerImages.length, 1, 'only the LCP hero image may load eagerly');
 });
@@ -546,6 +546,12 @@ test('serves responsive local image candidates for large below-fold visuals', as
 test('keeps image fallbacks on the preview origin for predictable loading', () => {
   const remoteFallbacks = [...html.matchAll(/<img\b[^>]*\bsrc="https:\/\/auto365\.vn\/(?:assets|uploads)\//g)];
   assert.equal(remoteFallbacks.length, 0, 'image src fallbacks should not depend on a second origin');
+});
+
+test('preloads the local hero candidate used for the LCP image', () => {
+  assert.match(html, /<link rel="preload" as="image"[^>]*href="\/3m-cr-blk-pro\/hinh\/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-cho--74c8d8-800\.webp"/);
+  assert.match(html, /imagesrcset="[^"]*74c8d8-640\.webp 640w[^"]*74c8d8-800\.webp 800w/);
+  assert.match(html, /imagesizes="\(max-width:900px\) calc\(100vw - 40px\), 600px"/);
 });
 
 test('links directly to each CR BLK code page from the configuration content', () => {
