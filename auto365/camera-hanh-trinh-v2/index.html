@@ -542,6 +542,11 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <button type="button" class="filter-clear" id="filterClear">Xóa tất cả</button>
 </div>
 
+<div class="filter-group" style="border-top:0;padding-top:0;margin-top:14px">
+<div class="filter-title">TÌM MODEL</div>
+<input id="search" aria-label="Tìm model camera" placeholder="VD: A810, SpeedMap, M310..." style="width:100%;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font:13px Arial;background:#fff">
+</div>
+
 <div class="filter-group">
 <div class="filter-title">THƯƠNG HIỆU</div>
 <div class="filter-options col-2">
@@ -585,19 +590,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </div>
 
-<div class="filter-group">
-<div class="filter-title">NHÓM XE</div>
-<div class="filter-pills">
-<button type="button" class="filter-pill active" data-vehicle="all">Tất cả nhóm xe</button>
-<button type="button" class="filter-pill" data-vehicle="ca-nhan">Xe cá nhân / gia đình</button>
-<button type="button" class="filter-pill" data-vehicle="dich-vu">Xe chạy dịch vụ / taxi</button>
-</div>
-</div>
-
-<div class="filter-group" style="border-bottom:0">
-<div class="filter-title">TÌM MODEL</div>
-<input id="search" aria-label="Tìm model camera" placeholder="VD: A810, SpeedMap, M310..." style="width:100%;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font:13px Arial;background:#fff">
-</div>
 </aside>
 
 <div class="catalog-main">
@@ -1317,7 +1309,6 @@ let state = {
   channels: new Set(),
   prices: new Set(),
   features: new Set(),
-  vehicle: 'all',
   search: '',
   sort: 'default',
   page: 1,
@@ -1383,15 +1374,10 @@ function filtered() {
         if (!matchFeatures(p, feat)) { featOk = false; break; }
       }
     }
-    // Vehicle filter
-    let vehicleOk = true;
-    if (state.vehicle === 'dich-vu') {
-      vehicleOk = p.channels === 3 || /cabin|q5|t400|t800|dms/i.test(p.name);
-    }
     // Search filter
     let searchOk = !state.search || p.low.includes(state.search);
 
-    return brandOk && chanOk && priceOk && featOk && vehicleOk && searchOk;
+    return brandOk && chanOk && priceOk && featOk && searchOk;
   });
 
   if (state.sort === 'price-asc') list = list.slice().sort((a, b) => (a.price || Infinity) - (b.price || Infinity));
@@ -1445,9 +1431,6 @@ function renderActiveChips() {
   state.features.forEach(f => {
     chips.push({ label: FEATURE_LABELS[f] || f, remove: () => { state.features.delete(f); syncCheckboxes(); render(); } });
   });
-  if (state.vehicle !== 'all') {
-    chips.push({ label: state.vehicle === 'dich-vu' ? 'Xe dịch vụ' : 'Xe cá nhân', remove: () => { state.vehicle = 'all'; syncPills(); render(); } });
-  }
   if (state.search) {
     chips.push({ label: '"' + state.search + '"', remove: () => { state.search = ''; document.querySelector('#search').value = ''; const sm = document.querySelector('#searchMobile'); if(sm) sm.value = ''; render(); } });
   }
@@ -1463,7 +1446,7 @@ function renderActiveChips() {
 
   // Mobile badge count
   const badge = document.querySelector('#mobileFilterBadge');
-  const count = state.brands.size + state.channels.size + state.prices.size + state.features.size + (state.vehicle !== 'all' ? 1 : 0);
+  const count = state.brands.size + state.channels.size + state.prices.size + state.features.size;
   if (badge) {
     badge.textContent = count;
     badge.style.display = count > 0 ? 'inline-block' : 'none';
@@ -1477,18 +1460,11 @@ function syncCheckboxes() {
   document.querySelectorAll('input[type=checkbox][name=feature]').forEach(i => i.checked = state.features.has(i.value));
 }
 
-function syncPills() {
-  document.querySelectorAll('.filter-pill').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.vehicle === state.vehicle);
-  });
-}
-
 function clearAllFilters() {
   state.brands.clear();
   state.channels.clear();
   state.prices.clear();
   state.features.clear();
-  state.vehicle = 'all';
   state.search = '';
   state.sort = 'default';
   state.page = 1;
@@ -1500,7 +1476,6 @@ function clearAllFilters() {
   if (srt) srt.value = 'default';
 
   syncCheckboxes();
-  syncPills();
   render();
 }
 
@@ -1619,16 +1594,6 @@ document.addEventListener('change', e => {
   }
 });
 
-// Vehicle pills handler
-document.addEventListener('click', e => {
-  const pill = e.target.closest('.filter-pill');
-  if (!pill) return;
-  state.vehicle = pill.dataset.vehicle;
-  state.page = 1;
-  syncPills();
-  render();
-});
-
 // Clear buttons
 document.querySelector('#filterClear')?.addEventListener('click', clearAllFilters);
 document.querySelector('#mobileFilterReset')?.addEventListener('click', clearAllFilters);
@@ -1667,7 +1632,6 @@ document.querySelector('#openMobileFilter')?.addEventListener('click', () => {
       mobileFilterContent.appendChild(g.cloneNode(true));
     });
     syncCheckboxes();
-    syncPills();
   }
   drawer.classList.add('open');
 });
@@ -1770,11 +1734,9 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   state.channels.add(channel);
   state.prices.clear();
   if (budget !== 'all') state.prices.add(budget);
-  state.vehicle = (vehicle === 'Xe dịch vụ' || use === 'Chở khách / cần cabin') ? 'dich-vu' : (vehicle === 'Xe cá nhân' ? 'ca-nhan' : 'all');
   state.page = 1;
 
   syncCheckboxes();
-  syncPills();
   render();
 
   const { picks, relaxed } = pickConfigs(channel, budget, use);
