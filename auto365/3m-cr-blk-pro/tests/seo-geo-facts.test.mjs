@@ -429,6 +429,10 @@ test('balances warranty columns with an evidence caption under the compact image
   assert.match(html, /<p class="trust-photo-note">Ảnh hồ sơ eWarranty tham khảo trên xe Volvo XC90\.<\/p>/);
 });
 
+test('keeps the process image and instructions aligned to the same top edge', () => {
+  assert.match(html, /\.process-layout\{display:grid;grid-template-columns:1\.1fr 1fr;gap:42px;align-items:start\}/);
+});
+
 test('aligns the consultation form with the adjacent introduction on desktop', () => {
   assert.match(html, /@media\(min-width:901px\)\{\.consult-form\{margin-top:0\}\}/);
 });
