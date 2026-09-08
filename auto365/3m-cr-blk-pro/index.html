@@ -54,13 +54,50 @@
         "name": "Dịch vụ dán phim cách nhiệt 3M Crystalline CR BLK Pro",
         "serviceType": "Dán phim cách nhiệt ô tô",
         "provider": {"@id": "https://auto365.vn/#organization"},
-        "areaServed": {"@type": "Country", "name": "Việt Nam"}
+        "areaServed": [
+          {"@type": "Country", "name": "Việt Nam"},
+          {"@type": "Place", "name": "Miền Bắc"},
+          {"@type": "Place", "name": "Miền Trung & Tây Nguyên"},
+          {"@type": "Place", "name": "Miền Nam"}
+        ]
+      },
+      {
+        "@type": "AutomotiveBusiness",
+        "@id": "https://auto365.vn/thu-duc#localbusiness",
+        "name": "Auto365.vn – Trụ Sở Chính",
+        "url": "https://auto365.vn/thu-duc",
+        "telephone": "+84 365 365 911",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "4/4/1/7 Đường số 3",
+          "addressLocality": "Phường Hiệp Bình",
+          "addressRegion": "TP. Hồ Chí Minh",
+          "addressCountry": "VN"
+        },
+        "hasMap": "https://www.google.com/maps?cid=9988450659874114499",
+        "parentOrganization": {"@id": "https://auto365.vn/#organization"}
       },
       {
         "@type": "Organization",
         "@id": "https://auto365.vn/#organization",
         "name": "Auto365",
-        "url": "https://auto365.vn/"
+        "url": "https://auto365.vn/",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "telephone": "+84 365 365 365",
+          "areaServed": "VN",
+          "availableLanguage": "vi"
+        },
+        "knowsAbout": ["phim cách nhiệt ô tô", "3M Crystalline CR BLK", "tư vấn cấu hình phim theo vị trí kính"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://auto365.vn/#website",
+        "url": "https://auto365.vn/",
+        "name": "Auto365",
+        "inLanguage": "vi-VN",
+        "publisher": {"@id": "https://auto365.vn/#organization"}
       },
       {
         "@type": "BreadcrumbList",

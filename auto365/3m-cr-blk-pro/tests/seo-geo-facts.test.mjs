@@ -87,6 +87,23 @@ test('surfaces the Auto365 press coverage as an EEAT reference', () => {
   assert.match(html, /href="https:\/\/auto365\.vn\/bao-chi-noi-ve-auto365-365group-3m-pro-shop"[^>]*>Báo chí nói về Auto365 &amp; 3M Pro Shop →<\/a>/);
 });
 
+test('publishes a verified Auto365 local entity for GEO discovery', () => {
+  assert.match(html, /"@type": "AutomotiveBusiness"/);
+  assert.match(html, /"@id": "https:\/\/auto365\.vn\/thu-duc#localbusiness"/);
+  assert.match(html, /"streetAddress": "4\/4\/1\/7 Đường số 3"/);
+  assert.match(html, /"telephone": "\+84 365 365 911"/);
+  assert.match(html, /"hasMap": "https:\/\/www\.google\.com\/maps\?cid=9988450659874114499/);
+  assert.match(html, /"areaServed": \[[\s\S]*"name": "Miền Bắc"[\s\S]*"name": "Miền Trung & Tây Nguyên"[\s\S]*"name": "Miền Nam"/);
+});
+
+test('resolves the website and organization entities referenced by the page', () => {
+  assert.match(html, /"@type": "WebSite"/);
+  assert.match(html, /"@id": "https:\/\/auto365\.vn\/#website"/);
+  assert.match(html, /"inLanguage": "vi-VN"/);
+  assert.match(html, /"contactPoint": \{[\s\S]*"telephone": "\+84 365 365 365"/);
+  assert.match(html, /"knowsAbout": \[[\s\S]*"phim cách nhiệt ô tô"[\s\S]*"3M Crystalline CR BLK"/);
+});
+
 test('links the warranty statement to the official 3M Vietnam policy page', () => {
   assert.match(html, /https:\/\/www\.3m\.com\.vn\/3M\/vi_VN\/car-personalization-vn\/products\/automotive-window-tint\//);
   assert.match(html, /phim cách nhiệt ô tô 3M được hỗ trợ bảo hành lên tới 10 năm/);
