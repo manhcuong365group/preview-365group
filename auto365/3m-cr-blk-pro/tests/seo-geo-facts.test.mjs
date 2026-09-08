@@ -207,8 +207,13 @@ test('keeps the package comparison stylesheet in the document head', () => {
 test('keeps the location phone treatment stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-location-phone-style">/);
+  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.location-actions \.location-phone\{color:#fff;border-color:#e31b23;background:#e31b23\}/);
+  assert.doesNotMatch(head, /id="cr-blk-location-phone-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
+});
+
+test('keeps the first CSS consolidation checkpoint at 13 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 13);
 });
 
 test('keeps the warranty trust-card stylesheet in the document head', () => {
