@@ -216,7 +216,8 @@ test('does not claim an unverified price confirmation and preserves certificate 
 
 test('keeps text readable on light case panels and publishes the current schema date', () => {
   assert.match(html, /\.cases-section \.split-heading>p\{color:var\(--muted\)\}/);
-  assert.match(html, /"dateModified": "2026-09-07"/);
+  assert.match(html, /"dateModified": "2026-09-08"/);
+  assert.match(html, /<time datetime="2026-09-08">08\/09\/2026<\/time>/);
 });
 
 test('does not reserve mobile space for a sticky CTA that is absent from the markup', () => {
