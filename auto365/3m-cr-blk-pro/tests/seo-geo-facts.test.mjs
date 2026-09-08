@@ -432,6 +432,11 @@ test('keeps submit and hotline actions in a balanced row', () => {
   assert.match(html, /@media\(max-width:680px\).*?#consult \.consult-action-row\{grid-template-columns:1fr\}/s);
 });
 
+test('keeps selector question and recommendation cards on one aligned row', () => {
+  assert.match(html, /#selector \.selector-layout\{align-items:stretch\}/);
+  assert.match(html, /#selector \.result-card\{align-self:stretch;display:flex;min-height:100%;flex-direction:column;box-sizing:border-box\}/);
+});
+
 test('removes the redundant four-point service-proof strip below the hero', () => {
   assert.doesNotMatch(html, /<section class="proof-strip" aria-label="Bằng chứng dịch vụ">/);
 });
