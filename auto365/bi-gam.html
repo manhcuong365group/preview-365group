@@ -2268,16 +2268,25 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     else if (relaxedBudget) baseReason += (baseReason ? ' ' : '') + 'Chưa có mẫu đúng ngân sách đã chọn — đây là các gợi ý gần nhất theo nhu cầu và lens.';
     qsResultBox.textContent = '';
     var firstPrice = picks.length ? +picks[0].getAttribute('data-price') : 0;
+    var budgetCap = { under4: 4000000, over6: 6000000 }[budgetVal];
+    function budgetDeltaText(cardPrice){
+      if (!relaxedBudget || !budgetCap) return '';
+      var delta = cardPrice - budgetCap;
+      if (Math.abs(delta) < 1) return '';
+      var deltaStr = new Intl.NumberFormat('vi-VN').format(Math.abs(delta)) + 'đ';
+      return delta > 0 ? (' (+' + deltaStr + ' so với mức bạn chọn)') : (' (thấp hơn ' + deltaStr + ' so với mức bạn chọn)');
+    }
     picks.forEach(function(card, i){
       var img = card.querySelector('.product-image img');
       var nameLink = card.querySelector('h3 a');
       var price = card.querySelector('.product-price').textContent;
+      var cardPrice = +card.getAttribute('data-price');
       var reasonText;
       if (i === 0) {
-        reasonText = baseReason;
+        reasonText = baseReason + budgetDeltaText(cardPrice);
       } else {
-        var samePrice = +card.getAttribute('data-price') === firstPrice;
-        reasonText = samePrice ? 'Lựa chọn thay thế cùng tiêu chí, cùng mức giá.' : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác.';
+        var samePrice = cardPrice === firstPrice;
+        reasonText = samePrice ? 'Lựa chọn thay thế cùng tiêu chí, cùng mức giá.' : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác' + budgetDeltaText(cardPrice) + '.';
       }
       if (i === 0) reasonText += ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.';
       var zaloTitle = 'Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href;
