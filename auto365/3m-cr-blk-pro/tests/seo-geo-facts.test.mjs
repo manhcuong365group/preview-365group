@@ -240,6 +240,10 @@ test('keeps the sixth CSS consolidation checkpoint at 8 style wrappers or fewer'
   assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 8);
 });
 
+test('keeps the seventh CSS consolidation checkpoint at 7 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 7);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
