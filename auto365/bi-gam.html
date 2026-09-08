@@ -540,6 +540,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <select id="mf-color"><option value="">Nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="4500K">4500K</option><option value="4800K">4800K</option><option value="5000K">5000K</option><option value="5500K">5500K</option><option value="__ALL3__">3 nhiệt màu</option></select>
           <label class="sr-only" for="mf-need">Lọc theo nhu cầu</label>
           <select id="mf-need"><option value="">Nhu cầu</option><option value="city,mixed">Đi phố</option><option value="rain">Mưa / sương mù</option><option value="touring">Đi tỉnh / đường xa</option></select>
+          <label class="sr-only" for="mf-voltage">Lọc theo hệ điện</label>
+          <select id="mf-voltage"><option value="">Hệ điện</option><option value="12V">Hệ điện 12V</option><option value="24V">Hệ điện 24V</option><option value="__UNSET__">Chưa xác định hệ điện</option></select>
         </div>
       </div>
       <aside class="catalogue-sidebar" id="catalogue-sidebar">
@@ -1213,7 +1215,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <figure class="article-image">
         <img src="bi-gam/hinh/xlight-301-v2-cos-pha-nhietmau-demo-v3.webp" alt="So sánh ánh sáng Cos và Pha ở 4 nhiệt màu 3000K, 4300K, 4800K, 5500K trên bi gầm X-Light 301 V2" width="1200" height="605" loading="lazy" decoding="async">
         <figcaption>
-          <div><h3>Ánh sáng thực tế Cos/Pha theo từng nhiệt màu</h3><p>Ảnh test thực tế trên X-Light 301 V2 — minh hoạ cho các mục nhiệt màu và cutoff phía trên.</p></div>
+          <div><h3>Ánh sáng thực tế Cos/Pha theo từng nhiệt màu</h3></div>
           <a class="btn btn-outline" href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
         </figcaption>
       </figure>
@@ -1230,7 +1232,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <article class="solution-card"><small>Nhóm bổ sung riêng</small><h3>Đèn trợ sáng</h3><p>Nhóm đèn bổ sung có vị trí lắp và mục đích sử dụng đa dạng, cần tư vấn riêng thay vì suy từ cấu hình bi gầm.</p></article>
       </div>
       <div class="cta-strip">
-        <p>Còn phân vân về lens, nhiệt màu hay điện áp?<span>Gọi kỹ thuật Auto365 để được tư vấn theo đúng xe.</span></p>
+        <p>Còn phân vân nên chọn giải pháp ánh sáng nào?<span>Gọi kỹ thuật Auto365 để được tư vấn theo đúng xe.</span></p>
         <div class="cta-strip-actions">
           <a class="btn btn-outline" href="tel:0365365911">Gọi 0365 365 911</a>
           <a class="btn btn-outline" href="https://zalo.me/3622666363345050913" target="_blank" rel="noreferrer">Chat Zalo</a>
@@ -1774,6 +1776,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     chip.addEventListener('click', function(){
       var val = chip.getAttribute('data-voltage-filter');
       voltageFilter = (voltageFilter === val) ? null : val;
+      var mfVoltageSel = document.getElementById('mf-voltage');
+      if (mfVoltageSel) mfVoltageSel.value = voltageFilter === null ? '' : (voltageFilter === '' ? '__UNSET__' : voltageFilter);
       shown = PAGE_SIZE; apply();
       document.getElementById('san-pham').scrollIntoView({behavior: 'smooth', block: 'start'});
     });
@@ -1802,7 +1806,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     voltageFilter = null;
     search.value = '';
     sortSel.value = '';
-    ['mf-brand', 'mf-lens', 'mf-color', 'mf-need'].forEach(function(id){
+    ['mf-brand', 'mf-lens', 'mf-color', 'mf-need', 'mf-voltage'].forEach(function(id){
       var sel = document.getElementById(id);
       if (sel) sel.value = '';
     });
@@ -1818,10 +1822,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var mfLens = document.getElementById('mf-lens');
   var mfColor = document.getElementById('mf-color');
   var mfNeed = document.getElementById('mf-need');
+  var mfVoltage = document.getElementById('mf-voltage');
   if (mfBrand) syncSingleSelect(mfBrand, brandBoxes);
   if (mfLens) syncSingleSelect(mfLens, lensBoxes);
   if (mfColor) syncSingleSelect(mfColor, colorBoxes);
   if (mfNeed) syncSingleSelect(mfNeed, needBoxes);
+  if (mfVoltage) {
+    mfVoltage.addEventListener('change', function(){
+      voltageFilter = mfVoltage.value === '' ? null : (mfVoltage.value === '__UNSET__' ? '' : mfVoltage.value);
+      shown = PAGE_SIZE; apply();
+    });
+  }
 
   moreBtn.addEventListener('click', function(){ shown += PAGE_SIZE; apply(); });
   window.addEventListener('resize', apply);
