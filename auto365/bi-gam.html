@@ -115,13 +115,20 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 @media (width<=520px){.qs-row{grid-template-columns:1fr}}
 .qs-reco{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
 .qs-reco[hidden]{display:none}
-.qs-result-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.qs-result{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
-.qs-result img{width:100%;aspect-ratio:1/1;height:auto;object-fit:contain;background:var(--soft);border-radius:10px;margin-bottom:10px;padding:12px}
-.qs-result-name{font-size:13.5px;font-weight:800;color:var(--ink);line-height:1.3}
-.qs-result-price{color:var(--red);font-weight:700;font-size:15px;margin:2px 0 6px}
-.qs-result-reason{color:var(--muted);font-size:11.5px;line-height:1.5;margin:0 0 10px}
-.qs-result-actions{display:flex;flex-direction:column;gap:8px;margin-top:auto}
+.qs-result-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qs-result{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}
+.qs-result.is-primary{border-color:var(--red);border-width:2px;padding:9px}
+.qs-badge{display:inline-block;align-self:flex-start;font-size:10px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:6px}
+.qs-badge--pick{background:var(--red);color:#fff}
+.qs-badge--save{background:#e7f6ec;color:#1a7a3e}
+.qs-badge--upgrade{background:#fdf1e3;color:#9a5b12}
+.qs-badge--alt{background:var(--soft);color:var(--muted)}
+.qs-result img{width:100%;aspect-ratio:4/3;height:auto;object-fit:contain;background:var(--soft);border-radius:8px;margin-bottom:8px;padding:8px}
+.qs-result-name{font-size:12.5px;font-weight:800;color:var(--ink);line-height:1.25}
+.qs-result-price{color:var(--red);font-weight:700;font-size:14px;margin:2px 0 4px}
+.qs-result-reason{color:var(--muted);font-size:11px;line-height:1.4;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.qs-result-actions{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+.qs-result-actions .btn{min-height:36px;font-size:12.5px}
 .qs-empty{color:var(--muted);font-size:13px;line-height:1.6}
 @media (width<=900px){.qs-result-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (width<=640px){.qs-result-list{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78vw;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.qs-result{scroll-snap-align:start}}
@@ -536,7 +543,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         </div>
       </div>
       <aside class="catalogue-sidebar" id="catalogue-sidebar">
-        <div class="sidebar-head"><b>Lọc bi gầm</b><button type="button" id="pf-clear">Xóa tất cả</button></div>
+        <div class="sidebar-head"><b>Bộ lọc</b><button type="button" id="pf-clear">Xóa tất cả</button></div>
         <div class="filter-group">
           <p>Thương hiệu</p>
           <div class="filter-brand-grid">
@@ -571,18 +578,16 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
           <label><input type="checkbox" class="pf-need" value="rain"><span>Mưa / sương mù</span></label>
           <label><input type="checkbox" class="pf-need" value="touring"><span>Đi tỉnh / đường xa</span></label>
         </div>
+        <div class="filter-group">
+          <p>Hệ điện</p>
+          <div class="catalogue-need-chips" id="catalogue-voltage-chips" role="group" aria-label="Phân nhóm theo hệ điện">
+            <button type="button" class="need-chip voltage-chip" data-voltage-filter="12V">Hệ điện 12V</button>
+            <button type="button" class="need-chip voltage-chip" data-voltage-filter="24V">Hệ điện 24V</button>
+            <button type="button" class="need-chip voltage-chip" data-voltage-filter="">Chưa xác định hệ điện</button>
+          </div>
+        </div>
       </aside>
       <div class="catalogue-main">
-    <div class="catalogue-need-chips" id="catalogue-need-chips" role="group" aria-label="Phân nhóm theo nhu cầu sử dụng">
-      <button type="button" class="need-chip" data-need="city,mixed">Đi phố</button>
-      <button type="button" class="need-chip" data-need="rain">Mưa / sương mù</button>
-      <button type="button" class="need-chip" data-need="touring">Đi tỉnh / đường xa</button>
-    </div>
-    <div class="catalogue-need-chips" id="catalogue-voltage-chips" role="group" aria-label="Phân nhóm theo hệ điện">
-      <button type="button" class="need-chip voltage-chip" data-voltage-filter="12V">Hệ điện 12V</button>
-      <button type="button" class="need-chip voltage-chip" data-voltage-filter="24V">Hệ điện 24V</button>
-      <button type="button" class="need-chip voltage-chip" data-voltage-filter="">Chưa xác định hệ điện</button>
-    </div>
     <p class="catalogue-count" id="pf-count" aria-live="polite"></p>
     <div class="product-grid" id="product-grid">
 <article class="product-card" data-brand="GTR" data-lens="3.0" data-voltage="12V" data-price="6000000" data-name="bi gầm gtr g1 turbo v2" data-color="4800K,4300K" data-needs="touring,mountain">
@@ -648,7 +653,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Bi gầm AES SV 3.0 Max</a></h3>
     <p class="product-price">6.000.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">Chưa gồm VAT</p>
-    <ul class="product-highlights"><li>Lens 3.0 inch · Cos ~45W / Pha ~70W</li><li>Nhiệt màu 3000K/4300K/5500K</li><li>Bảo hành 24 tháng</li><li>Xe đã lắp: <a href="https://auto365.vn/toyota-hilux-2020-lap-bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Toyota Hilux 2.4E 4x2 AT 2020</a></li></ul>
+    <ul class="product-highlights"><li>Lens 3.0 inch · Cos ~45W / Pha ~70W</li><li>Nhiệt màu 3000K/4300K/5500K</li><li>Bảo hành 24 tháng</li></ul>
     <div class="product-needs"><span>Đi phố</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-aes-sv-30-max" target="_blank" rel="noreferrer">Xem sản phẩm</a>
@@ -702,7 +707,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 Turbo V2</a></h3>
     <p class="product-price">6.000.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">Chưa gồm VAT</p>
-    <ul class="product-highlights"><li>Lens 3.0 inch · Cos ~45W / Pha ~75W</li><li>Nhiệt màu 3000 / 4300 / 5500K</li><li>Bảo hành 24 tháng</li><li>Xe đã lắp: <a href="https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k" target="_blank" rel="noreferrer">Mazda 6</a></li></ul>
+    <ul class="product-highlights"><li>Lens 3.0 inch · Cos ~45W / Pha ~75W</li><li>Nhiệt màu 3000 / 4300 / 5500K</li><li>Bảo hành 24 tháng</li></ul>
     <div class="product-needs"><span>Đi phố</span><span>Mưa, sương mù</span><span>Đi tỉnh, đường xa</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
@@ -738,7 +743,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer">Bi gầm X-Light F10 2.0 New</a></h3>
     <p class="product-price">4.500.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">Chưa gồm VAT</p>
-    <ul class="product-highlights"><li>Lens 2.0 inch · Cos ~40W / Pha ~60W</li><li>Nhiệt màu 3000K - 4300K - 5500K</li><li>Bảo hành 24 tháng</li><li>Xe đã lắp: <a href="https://auto365.vn/toyota-vios-15e-cvt-2021-lap-bi-gam-x-light-f10-20-new" target="_blank" rel="noreferrer">Toyota Vios 1.5E CVT 2021</a></li></ul>
+    <ul class="product-highlights"><li>Lens 2.0 inch · Cos ~40W / Pha ~60W</li><li>Nhiệt màu 3000K - 4300K - 5500K</li><li>Bảo hành 24 tháng</li></ul>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer">Xem sản phẩm</a>
@@ -774,7 +779,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer">Đèn bi gầm X-Light F10 New</a></h3>
     <p class="product-price">4.300.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">Chưa gồm VAT</p>
-    <ul class="product-highlights"><li>Lens 3.0 inch · Cos ~45W / Pha ~55W</li><li>Nhiệt màu 4800K</li><li>Bảo hành 24 tháng</li><li>Xe đã lắp: <a href="https://auto365.vn/ford-ranger-xls-2023-lap-x-light-f10-new-2025" target="_blank" rel="noreferrer">Ford Ranger XLS 2023</a></li></ul>
+    <ul class="product-highlights"><li>Lens 3.0 inch · Cos ~45W / Pha ~55W</li><li>Nhiệt màu 4800K</li><li>Bảo hành 24 tháng</li></ul>
     <div class="product-needs"><span>Đi phố</span></div>
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer">Xem sản phẩm</a>
@@ -792,7 +797,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     
     <h3><a href="https://auto365.vn/bi-gam-xligh-f10-hyper-2" target="_blank" rel="noreferrer">Bi gầm X-Light F10 Hyper 2.0</a></h3>
     <p class="product-price">5.500.000đ<span class="price-unit">/bộ</span></p><p class="product-vat">Chưa gồm VAT</p>
-    <ul class="product-highlights"><li>Lens 2.0 inch · Cos ~50W / Pha ~55W</li><li>Nhiệt màu Cos 5000K/Pha 5000K - Cos 4500K/Pha 3000K</li><li>Bảo hành 24 tháng</li><li>Xe đã lắp: <a href="https://auto365.vn/mitsubishi-xforce-ultimate-2024-lap-x-light-f10-hyper-20-gia-cau-hinh" target="_blank" rel="noreferrer">Mitsubishi Xforce Ultimate 2024</a></li></ul>
+    <ul class="product-highlights"><li>Lens 2.0 inch · Cos ~50W / Pha ~55W</li><li>Nhiệt màu Cos 5000K/Pha 5000K - Cos 4500K/Pha 3000K</li><li>Bảo hành 24 tháng</li></ul>
     
     <div class="product-actions">
       <a class="btn-view" href="https://auto365.vn/bi-gam-xligh-f10-hyper-2" target="_blank" rel="noreferrer">Xem sản phẩm</a>
@@ -2286,11 +2291,16 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       var price = card.querySelector('.product-price').textContent;
       var cardPrice = +card.getAttribute('data-price');
       var reasonText;
+      var badgeLabel, badgeClass;
       if (i === 0) {
         reasonText = baseReason + budgetDeltaText(cardPrice);
+        badgeLabel = 'Phù hợp'; badgeClass = 'qs-badge--pick';
       } else {
         var samePrice = cardPrice === firstPrice;
         reasonText = samePrice ? 'Lựa chọn thay thế cùng tiêu chí, cùng mức giá.' : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác' + budgetDeltaText(cardPrice) + '.';
+        if (samePrice) { badgeLabel = 'Lựa chọn thay thế'; badgeClass = 'qs-badge--alt'; }
+        else if (cardPrice > firstPrice) { badgeLabel = 'Nâng cấp'; badgeClass = 'qs-badge--upgrade'; }
+        else { badgeLabel = 'Tiết kiệm hơn'; badgeClass = 'qs-badge--save'; }
       }
       if (i === 0) reasonText += ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.';
       var zaloTitle = 'Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href;
@@ -2302,12 +2312,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         consultLink
       ]);
       var body = el('div', null, [
+        txt('span', {'class': 'qs-badge ' + badgeClass}, badgeLabel),
         txt('div', {'class': 'qs-result-name'}, nameLink.textContent),
         txt('div', {'class': 'qs-result-price'}, price),
         txt('p', {'class': 'qs-result-reason'}, reasonText),
         actions
       ]);
-      var row = el('div', {'class': 'qs-result'}, [
+      var row = el('div', {'class': 'qs-result' + (i === 0 ? ' is-primary' : '')}, [
         el('img', {src: img.src, alt: img.alt}),
         body
       ]);

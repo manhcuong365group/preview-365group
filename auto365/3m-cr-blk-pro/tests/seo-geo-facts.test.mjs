@@ -414,6 +414,12 @@ test('keeps the consultation form compact beside its image on desktop', () => {
   assert.match(html, /\.consult-form \.button-gold\{min-height:42px/);
 });
 
+test('keeps the warranty certificate image compact and contained', () => {
+  assert.match(html, /#main-content \.trust-grid\{align-items:start\}/);
+  assert.match(html, /#main-content \.trust-photo img\{display:block;width:100%;height:clamp\(340px,38vw,520px\);min-height:0;object-fit:contain/);
+  assert.match(html, /@media\(max-width:680px\).*?#main-content \.trust-photo img\{height:auto;max-height:520px;min-height:0;object-fit:contain\}/s);
+});
+
 test('aligns the consultation form with the adjacent introduction on desktop', () => {
   assert.match(html, /@media\(min-width:901px\)\{\.consult-form\{margin-top:0\}\}/);
 });
