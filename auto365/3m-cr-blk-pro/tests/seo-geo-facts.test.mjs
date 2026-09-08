@@ -418,6 +418,13 @@ test('aligns the consultation form with the adjacent introduction on desktop', (
   assert.match(html, /@media\(min-width:901px\)\{\.consult-form\{margin-top:0\}\}/);
 });
 
+test('keeps submit and hotline actions in a balanced row', () => {
+  assert.match(html, /<div class="consult-action-row full-field">\s*<button class="button button-gold" type="submit">Gửi thông tin tư vấn<\/button>\s*<a class="consult-hotline" href="tel:0365365365">/);
+  assert.match(html, /#consult \.consult-action-row\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:10px;grid-column:1\/-1\}/);
+  assert.match(html, /#consult \.consult-hotline\{display:flex;min-height:52px/);
+  assert.match(html, /@media\(max-width:680px\).*?#consult \.consult-action-row\{grid-template-columns:1fr\}/s);
+});
+
 test('removes the redundant four-point service-proof strip below the hero', () => {
   assert.doesNotMatch(html, /<section class="proof-strip" aria-label="Bằng chứng dịch vụ">/);
 });

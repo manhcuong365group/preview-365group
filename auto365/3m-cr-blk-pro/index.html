@@ -414,11 +414,16 @@
     #expert-guide .section-photo{order:initial}
     #expert-guide .expert-quote{padding:clamp(18px,2vw,24px);font-size:clamp(14px,1.2vw,17px)}
     #pricing .price-cards+.section-photo{margin-top:clamp(16px,1.5vw,22px)}
+    #consult .consult-action-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;grid-column:1/-1}
+    #consult .consult-action-row .button{width:100%;min-height:52px}
+    #consult .consult-hotline{display:flex;min-height:52px;align-items:center;justify-content:center;gap:6px;margin:0;padding:0 16px;border:1px solid #d2d9e3;border-radius:10px;color:#7c8492;background:#fff;text-align:center;font-size:15px}
+    #consult .consult-hotline a{color:var(--ink);font-weight:850}
 
     @media(min-width:901px){#specs .evidence-data{margin-top:14px}}
     @media(min-width:901px){#specs .evidence-grid{align-items:stretch}#specs .evidence-visual img{height:100%;aspect-ratio:auto;object-fit:cover}}
     @media(max-width:900px){#specs .evidence-data{margin-top:0}}
     @media(max-width:900px){#specs .evidence-visual img{height:auto;aspect-ratio:1.5}}
+    @media(max-width:680px){#consult .consult-action-row{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -612,9 +617,11 @@
         <input id="form-policy-version" name="policy_version" type="hidden" value="2026-08-27">
         <input id="form-consent-at" name="consent_at" type="hidden" value="">
         <label class="form-consent full-field"><input id="form-consent" name="consent" type="checkbox" value="true" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener noreferrer">Chính sách bảo mật</a>.</label>
-        <button class="button button-gold full-field" type="submit">Gửi thông tin tư vấn</button>
+        <div class="consult-action-row full-field">
+          <button class="button button-gold" type="submit">Gửi thông tin tư vấn</button>
+          <a class="consult-hotline" href="tel:0365365365"><span>Gọi hotline</span><strong>0365 365 365</strong></a>
+        </div>
         <p class="form-status full-field" id="consultStatus" aria-live="polite"></p>
-        <p class="consult-hotline full-field">Hoặc gọi ngay <a href="tel:0365365365">0365 365 365</a></p>
       </form>
     </div></section>
 
