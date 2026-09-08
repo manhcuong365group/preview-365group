@@ -434,7 +434,7 @@ test('keeps submit and hotline actions in a balanced row', () => {
 
 test('keeps selector question and recommendation cards on one aligned row', () => {
   assert.match(html, /#selector \.selector-layout\{align-items:stretch\}/);
-  assert.match(html, /#selector \.result-card\{align-self:stretch;display:flex;min-height:100%;flex-direction:column;box-sizing:border-box\}/);
+  assert.match(html, /#selector \.result-card\{position:static;align-self:stretch;display:flex;min-height:100%;flex-direction:column;box-sizing:border-box\}/);
 });
 
 test('removes the redundant four-point service-proof strip below the hero', () => {
