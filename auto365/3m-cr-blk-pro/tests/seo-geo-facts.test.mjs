@@ -193,7 +193,7 @@ test('keeps the location and Pro Shop layout stylesheet in the document head', (
 test('keeps the price-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.price-cards\{gap:12px\}/);
+  assert.match(head, /<style id="cr-blk-location-style">[\s\S]*\.price-cards\{gap:12px\}/);
   assert.doesNotMatch(head, /id="cr-blk-price-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
@@ -201,14 +201,15 @@ test('keeps the price-card stylesheet in the document head', () => {
 test('keeps the package comparison stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-package-style">/);
+  assert.match(head, /<style id="cr-blk-location-style">[\s\S]*\.package-card\{border:1px solid #1b5eaa/);
+  assert.doesNotMatch(head, /id="cr-blk-package-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
 test('keeps the location phone treatment stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.location-actions \.location-phone\{color:#fff;border-color:#e31b23;background:#e31b23\}/);
+  assert.match(head, /<style id="cr-blk-location-style">[\s\S]*\.location-actions \.location-phone\{color:#fff;border-color:#e31b23;background:#e31b23\}/);
   assert.doesNotMatch(head, /id="cr-blk-location-phone-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
@@ -230,10 +231,14 @@ test('keeps the fourth CSS consolidation checkpoint at 10 style wrappers or fewe
   assert.match(html, /<style>\s*\.price-card\{[\s\S]*?\.case-content p\{display:block;min-height:32px/);
 });
 
+test('keeps the fifth CSS consolidation checkpoint at 9 style wrappers or fewer', () => {
+  assert.ok((html.match(/<style(?:\s[^>]*)?>/g) || []).length <= 9);
+});
+
 test('keeps the warranty trust-card stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.trust-grid\{align-items:stretch\}/);
+  assert.match(head, /<style id="cr-blk-location-style">[\s\S]*\.trust-grid\{align-items:stretch\}/);
   assert.doesNotMatch(head, /id="cr-blk-trust-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
@@ -241,7 +246,7 @@ test('keeps the warranty trust-card stylesheet in the document head', () => {
 test('keeps the consultation form stylesheet in the document head', () => {
   const head = html.slice(0, html.indexOf('</head>'));
   const body = html.slice(html.indexOf('<body'), html.indexOf('</body>'));
-  assert.match(head, /<style id="cr-blk-package-style">[\s\S]*\.consult-form\{padding:18px;gap:9px\}/);
+  assert.match(head, /<style id="cr-blk-location-style">[\s\S]*\.consult-form\{padding:18px;gap:9px\}/);
   assert.doesNotMatch(head, /id="cr-blk-consult-style"/);
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
