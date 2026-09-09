@@ -127,6 +127,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .qs-result-name{font-size:12.5px;font-weight:800;color:var(--ink);line-height:1.25}
 .qs-result-price{color:var(--red);font-weight:700;font-size:14px;margin:2px 0 4px}
 .qs-result-vat{color:#8a8d93;font-weight:600;font-size:10px;margin:-2px 0 6px}
+.qs-result-case{display:inline-block;font-size:10.5px;font-weight:700;color:var(--red);margin:0 0 8px}
 .qs-result-reason{color:var(--muted);font-size:11px;line-height:1.4;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .qs-result-actions{display:flex;flex-direction:column;gap:6px;margin-top:auto}
 .qs-result-actions .btn{min-height:36px;font-size:12.5px}
@@ -1737,10 +1738,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     var rows = cards.map(function(c){
       var nameEl = c.querySelector('h3 a');
       var highlights = Array.prototype.map.call(c.querySelectorAll('.product-highlights li'), function(li){ return li.textContent.trim(); });
-      var first = highlights[0] || '';
-      var parts = first.split('·').map(function(s){ return s.trim(); });
-      var lens = (parts[0] || '').replace('Lens', '').trim() || '—';
-      var watt = parts[1] || '—';
+      var lens = (highlights[0] || '').replace('Lens', '').trim() || '—';
+      var watt = (highlights[1] || '').trim() || '—';
       var nhietMau = pick(highlights, 'Nhiệt màu') || '—';
       var baoHanh = pick(highlights, 'Bảo hành') || '—';
       var heDienLine = pick(highlights, 'Hệ điện');
@@ -2367,6 +2366,19 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     qsResultBox.textContent = '';
     var firstPrice = picks.length ? +picks[0].getAttribute('data-price') : 0;
     var budgetCap = { under4: 4000000, over6: 6000000 }[budgetVal];
+    var QS_CASE_LINKS = [
+      { name: 'đèn bi gầm x-light f10 turbo v2', caseName: 'Mazda 6', caseUrl: 'https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k' },
+      { name: 'bi gầm x-light f10 2.0 new', caseName: 'Toyota Vios 1.5E CVT 2021', caseUrl: 'https://auto365.vn/toyota-vios-15e-cvt-2021-lap-bi-gam-x-light-f10-20-new' },
+      { name: 'bi gầm aes sv 3.0 max', caseName: 'Toyota Hilux 2.4E 4x2 AT 2020', caseUrl: 'https://auto365.vn/toyota-hilux-2020-lap-bi-gam-aes-sv-30-max' },
+      { name: 'bi gầm x-light f10 hyper 2.0', caseName: 'Mitsubishi Xforce Ultimate 2024', caseUrl: 'https://auto365.vn/mitsubishi-xforce-ultimate-2024-lap-x-light-f10-hyper-20-gia-cau-hinh' },
+      { name: 'đèn bi gầm x-light f10 new', color: '4800K', caseName: 'Ford Ranger XLS 2023', caseUrl: 'https://auto365.vn/ford-ranger-xls-2023-lap-x-light-f10-new-2025' }
+    ];
+    function findCaseLink(card){
+      var name = card.getAttribute('data-name') || '';
+      var color = card.getAttribute('data-color') || '';
+      return QS_CASE_LINKS.filter(function(l){ return l.name === name; })
+        .filter(function(l){ return !l.color || color.indexOf(l.color) !== -1; })[0];
+    }
     function budgetDeltaText(cardPrice){
       if (!relaxedBudget || !budgetCap) return '';
       var delta = cardPrice - budgetCap;
@@ -2416,14 +2428,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         txt('a', {'class': 'btn btn-outline', href: nameLink.href, target: '_blank', rel: 'noreferrer'}, 'Xem sản phẩm'),
         consultLink
       ]);
-      var body = el('div', null, [
+      var caseLink = findCaseLink(card);
+      var bodyChildren = [
         txt('span', {'class': 'qs-badge ' + badgeClass}, badgeLabel),
         txt('div', {'class': 'qs-result-name'}, nameLink.textContent),
         txt('div', {'class': 'qs-result-price'}, price),
         txt('p', {'class': 'qs-result-vat'}, vatText),
-        txt('p', {'class': 'qs-result-reason'}, reasonText),
-        actions
-      ]);
+        txt('p', {'class': 'qs-result-reason'}, reasonText)
+      ];
+      if (caseLink) bodyChildren.push(txt('a', {'class': 'qs-result-case', href: caseLink.caseUrl, target: '_blank', rel: 'noreferrer'}, 'Xem trên ' + caseLink.caseName + ' →'));
+      bodyChildren.push(actions);
+      var body = el('div', null, bodyChildren);
       var row = el('div', {'class': 'qs-result' + (i === 0 ? ' is-primary' : '')}, [
         el('img', {src: img.src, alt: img.alt}),
         body
