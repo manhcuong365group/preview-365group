@@ -1805,7 +1805,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       var okNeed = !needs.length || needs.some(function(nv){ return nv.split(',').some(function(n){ return cardNeeds.indexOf(n) !== -1; }); });
       var cardVoltages = (c.getAttribute('data-voltage') || '').split(',').filter(Boolean);
       var okVoltage = voltageFilter === null || (voltageFilter === '' ? cardVoltages.length === 0 : cardVoltages.indexOf(voltageFilter) !== -1);
-      return okQ && okBrand && okLens && okColor && okNeed && okVoltage;
+      // Mẫu xe máy không nằm trong danh mục ô tô mặc định — chỉ hiện khi tìm kiếm đúng tên/thương hiệu.
+      var isMoto = cardNeeds.indexOf('moto') !== -1;
+      var okMoto = !isMoto || !!q;
+      return okQ && okBrand && okLens && okColor && okNeed && okVoltage && okMoto;
     });
 
     if (sortSel.value === 'price-asc') matched.sort(function(a,b){
