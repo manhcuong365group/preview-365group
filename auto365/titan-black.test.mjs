@@ -14,4 +14,5 @@ assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-image:ur
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-color:#087bd0/, 'requires a blue surround instead of black side bars');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100% 100%/, 'requires the supplied lens image to fill its matching frame');
 assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
-assert.match(page, /class="tb-faq__cta"[\s\S]*Gửi mẫu xe trước, xác nhận cấu hình rồi mới đặt lịch[\s\S]*Nhắn Zalo gửi ảnh cụm đèn/, 'requires the booking guidance in the FAQ column');
+assert.match(page, /<form class="tb-faq__form" id="tb-faq-form">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the supplied consultation form in the FAQ column');
+assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)/, 'requires the FAQ form to use the same Zalo consultation flow');
