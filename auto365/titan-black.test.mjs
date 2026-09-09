@@ -16,3 +16,10 @@ assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100
 assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
 assert.match(page, /<form class="tb-faq__form" id="tb-faq-form">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the supplied consultation form in the FAQ column');
 assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)/, 'requires the FAQ form to use the same Zalo consultation flow');
+for (const redundantCopy of [
+  'So sánh các thông số công bố của Titan Black 2021, 2.0 và phiên bản 2026.',
+  'Auto365 chỉ xác nhận phương án sau khi kiểm tra cụm đèn và hệ điện thực tế.',
+  'Quy trình 7 bước giúp thống nhất phương án, thi công và kiểm tra trước khi bàn giao.',
+  'Nội dung kỹ thuật của Bi LED Titan Black 2026 được đối chiếu với tài liệu sản phẩm. Phương án lắp đặt cần được kiểm tra theo cụm đèn, không gian lắp và hệ điện của từng xe.',
+  'Thông tin cần biết để chọn đúng phiên bản và xác nhận phương án theo xe thực tế.'
+]) assert.doesNotMatch(page, new RegExp(redundantCopy.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `removes redundant copy: ${redundantCopy}`);
