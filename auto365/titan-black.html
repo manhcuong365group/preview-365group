@@ -3141,10 +3141,21 @@
 #tb-product #anh-sang .tb-light-grid{display:none}
 #tb-product .tb-light-shared{min-height:0;aspect-ratio:16 / 9;margin:0;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220 url('titan-black/hinh/titan-back-8.webp') center / contain no-repeat}
 #tb-product .tb-light-shared img{display:none}
-#tb-product .tb-light-copy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:8px}
-#tb-product .tb-light-copy-grid article{padding:16px}
-#tb-product .tb-light-copy-grid h3{margin-top:6px}
-#tb-product .tb-light-copy-grid p{margin-top:6px}
+#tb-product #anh-sang .tb-section-head{margin-bottom:22px}
+#tb-product #anh-sang .tb-section-head .tb-eyebrow{display:flex;align-items:center;gap:12px;margin:0;color:#415b7d;font-size:12px;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
+#tb-product #anh-sang .tb-section-head .tb-eyebrow::before{content:"";width:38px;height:2px;background:var(--tb-brand)}
+#tb-product #anh-sang .tb-section-head h2{margin-top:10px!important;font-size:clamp(28px,2.6vw,42px);color:#0d1b35}
+#tb-product #anh-sang .tb-section-head h2 span{color:var(--tb-brand)}
+#tb-product #anh-sang .tb-section-head__desc{margin:10px 0 0;color:#66758b;font-size:clamp(16px,1.25vw,20px)}
+#tb-product .tb-light-layout{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(320px,.72fr);gap:18px;align-items:stretch}
+#tb-product .tb-light-copy-grid{display:grid;grid-template-columns:1fr;gap:18px;margin:0}
+#tb-product .tb-light-copy-grid article{display:flex;flex-direction:column;justify-content:center;position:relative;padding:28px 28px 28px 76px}
+#tb-product .tb-light-copy-grid article::before{content:"";position:absolute;top:29px;left:30px;width:15px;height:15px;border:8px solid #edf7ff;border-radius:50%;background:#087ff0}
+#tb-product .tb-light-copy-grid article:nth-child(2)::before{border-color:#fff8ea;background:#ffae00}
+#tb-product .tb-light-copy-grid .tb-eyebrow{margin:0;color:#087ff0}
+#tb-product .tb-light-copy-grid article:nth-child(2) .tb-eyebrow{color:#df9100}
+#tb-product .tb-light-copy-grid h3{margin-top:12px;font-size:clamp(21px,1.55vw,28px);color:#12213d!important}
+#tb-product .tb-light-copy-grid p{margin-top:14px;font-size:clamp(15px,1.08vw,18px);line-height:1.55}
 #tb-product .tb-feature{min-height:0}
 #tb-product .tb-why-buy{padding-top:6px}
 #tb-product .tb-why-buy__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
@@ -3214,7 +3225,7 @@
 #tb-product #thiet-ke .tb-feature:nth-child(2) figure img{content:url("titan-black/hinh/titan-back-3.webp")}
 #tb-product #thiet-ke .tb-feature:nth-child(3) figure img{content:url("titan-black/hinh/titan-back-4.webp")}
 #tb-product #so-sanh .tb-image-card img{content:url("titan-black/hinh/titan-back-7.webp")}
-@media(max-width:767.98px){#tb-product .tb-consult-cta,#tb-product .tb-branch-compact,#tb-product .tb-related-grid,#tb-product .tb-light-copy-grid,#tb-product .tb-spec-price,#tb-product .tb-why-buy__grid{grid-template-columns:1fr}#tb-product #lap-dat .tb-process{display:flex;gap:0;overflow-x:auto;padding:14px 10px 10px;scroll-snap-type:x proximity;scrollbar-width:thin}#tb-product #lap-dat .tb-process::before{display:none}#tb-product #lap-dat .tb-process__step{flex:0 0 148px;scroll-snap-align:start;text-align:center;padding:0 10px 8px}#tb-product #lap-dat .tb-process__step::before{margin:0 auto 7px}#tb-product .tb-consult-cta__actions{justify-content:flex-start}#tb-product .tb-branch-card--coverage .tb-branch-card__actions{position:static;margin-top:12px}#tb-product .tb-branch-stats{grid-template-columns:1fr}#tb-product .tb-branch-card__actions{flex-wrap:wrap}#tb-product .tb-branch-card__actions .tb-btn{min-width:100%}#tb-product .tb-spec-media img{max-height:360px}}
+@media(max-width:767.98px){#tb-product .tb-consult-cta,#tb-product .tb-branch-compact,#tb-product .tb-related-grid,#tb-product .tb-light-layout,#tb-product .tb-light-copy-grid,#tb-product .tb-spec-price,#tb-product .tb-why-buy__grid{grid-template-columns:1fr}#tb-product #anh-sang .tb-section-head{margin-bottom:16px}#tb-product #anh-sang .tb-section-head h2{font-size:clamp(27px,8vw,36px)}#tb-product .tb-light-copy-grid{gap:12px}#tb-product .tb-light-copy-grid article{padding:22px 20px 22px 60px}#tb-product .tb-light-copy-grid article::before{top:23px;left:22px}#tb-product #lap-dat .tb-process{display:flex;gap:0;overflow-x:auto;padding:14px 10px 10px;scroll-snap-type:x proximity;scrollbar-width:thin}#tb-product #lap-dat .tb-process::before{display:none}#tb-product #lap-dat .tb-process__step{flex:0 0 148px;scroll-snap-align:start;text-align:center;padding:0 10px 8px}#tb-product #lap-dat .tb-process__step::before{margin:0 auto 7px}#tb-product .tb-consult-cta__actions{justify-content:flex-start}#tb-product .tb-branch-card--coverage .tb-branch-card__actions{position:static;margin-top:12px}#tb-product .tb-branch-stats{grid-template-columns:1fr}#tb-product .tb-branch-card__actions{flex-wrap:wrap}#tb-product .tb-branch-card__actions .tb-btn{min-width:100%}#tb-product .tb-spec-media img{max-height:360px}}
 @media(max-width:767.98px){
   #tb-product #thong-so .tb-spec-list{grid-template-columns:1fr;gap:0}
   #tb-product #thong-so .tb-spec-row{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:12px}
@@ -3440,10 +3451,12 @@
 <div class="tb-shell">
 <div class="tb-section-head">
 <div>
-<p class="tb-eyebrow">Vùng sáng</p>
-<h2 style="margin-top:8px">Vùng sáng Cos và Pha theo từng nhu cầu</h2>
+<p class="tb-eyebrow">Hiệu suất ánh sáng</p>
+<h2 style="margin-top:8px">Vùng sáng <span>Cos và Pha</span> theo từng nhu cầu</h2>
+<p class="tb-section-head__desc">Kết hợp nhiệt màu tối ưu, hỗ trợ tầm nhìn rõ ràng trong nhiều điều kiện di chuyển.</p>
 </div>
 </div>
+<div class="tb-light-layout">
 <figure class="tb-light-shared">
 <img alt="Minh họa vùng sáng Cos và Pha Titan Black 2026" decoding="async" height="1000" loading="lazy" src="titan-black/hinh/titan-back-8.webp" width="1200"/>
 </figure>
@@ -3458,6 +3471,7 @@
 <h3>Tâm Pha 3000K: cấu hình ánh sáng vàng ở tâm</h3>
 <p>Tâm Pha 3000K là cấu hình được công bố của sản phẩm, không thay thế đèn sương mù chuyên dụng. Hiệu quả thực tế cần được kiểm tra sau khi căn chỉnh.</p>
 </article>
+</div>
 </div>
 <div class="tb-light-grid">
 <article class="tb-light-card tb-surface">

@@ -35,3 +35,6 @@ assert.match(page, /<div class="tb-hero-commerce__main">\s*<a class="tb-btn tb-b
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
 assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
 assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạt tản nhiệt 45 mm hỗ trợ lưu thông khí phía sau cụm đèn/, 'balances the cooling card with its 45 mm fan detail');
+assert.match(page, /tb-light-layout\{display:grid;grid-template-columns:minmax\(0,1\.28fr\) minmax\(320px,\.72fr\)/, 'lays out the lighting visual beside the Cos and Pha guidance');
+assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Chế độ Cos[\s\S]*?Chế độ Pha[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
+assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
