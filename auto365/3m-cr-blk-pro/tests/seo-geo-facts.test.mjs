@@ -163,6 +163,7 @@ test('keeps pricing cards compact while preserving readable prices', () => {
 test('keeps package names and live starting prices aligned in distinct comparison cards', () => {
   assert.match(html, /class="package-title-row"><h3>CR BLK tiêu chuẩn<\/h3><div class="package-price"><span>Giá gói từ <strong data-bind="standard-compact">14,8 triệu<\/strong>/);
   assert.match(html, /data-bind="pro-compact">15,5 triệu/);
+  assert.match(html, /Mã CR BLK 60 tham khảo: VLT 57%, TSER 54%, giảm chói 22%/);
   assert.match(html, /\.package-card\{border:1px solid #1b5eaa;box-shadow:none\}/);
   assert.match(html, /\.package-card\.pro-card,\.package-card\.pro-card\.selected\{border-color:#d8aa4d/);
   assert.match(html, /\.package-title-row\{display:flex;align-items:baseline;justify-content:space-between/);
