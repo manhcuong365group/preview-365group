@@ -41,9 +41,11 @@ assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile
 assert.match(page, /\.tb-light-layout\{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch\}/, 'uses a wrapping lighting layout that cannot overlap at zoomed viewport widths');
 for (const inlineReference of ['do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${inlineReference}"`), `keeps the Titan reference inline: ${inlineReference}`);
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
-assert.match(page, /tb-case-feature[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black[\s\S]*?titan-back-5\.webp/, 'adds the supplied Mazda 3 case feature in the AES-style reference area');
-assert.match(page, /<span class="tb-case-feature__tag">Ca lắp thực tế<\/span>[\s\S]*?Theo tư liệu ca lắp Mazda 3/, 'labels the Mazda 3 feature as an actual installation case');
-assert.match(page, /tb-case-feature\{display:grid;grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\)/, 'keeps the Mazda 3 case feature in a balanced two-column layout');
+assert.match(page, /Tham khảo các xe đã lắp đèn Titan Black tại Auto365/, 'uses an AES-style actual-installation library heading');
+assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota"[\s\S]*?data-install-filter="kia"/, 'provides brand filters for the actual-installation library');
+assert.match(page, /class="tb-install-grid"[\s\S]*?Toyota Camry[\s\S]*?Kia Morning[\s\S]*?Tổng hợp các mẫu xe/, 'shows three real Titan Black case cards');
+for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${caseUrl}"`), `links the actual Titan case: ${caseUrl}`);
+assert.match(page, /installFilters\.forEach[\s\S]*?dataset\.installBrand/, 'makes the actual-installation brand filters functional');
 assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}/, 'balances the FAQ form and question columns on desktop');
 assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
