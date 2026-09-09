@@ -3213,6 +3213,10 @@
 #tb-product .tb-trusted-address__points li{padding:12px 14px;border:1px solid #dbe8ef;border-radius:12px;background:#fff;color:#536173;font-size:var(--tb-fs-sm);font-weight:650}
 #tb-product .tb-trusted-address__actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 #tb-product #tb-nearby{display:none}
+#tb-product #tb-fit-summary,#tb-product #gia-bao-gom,#tb-product #tb-booking,#tb-product #tb-handover,#tb-product #review,#tb-product #production-data,#tb-product #trust,#tb-product #tb-technical-review,#tb-product #bai-lien-quan{display:none}
+#tb-product .tb-actual-2026{display:grid;grid-template-columns:minmax(0,.7fr) minmax(340px,1.3fr);gap:24px;align-items:center}
+#tb-product .tb-actual-2026 figure{margin:0;overflow:hidden;background:#f6f7f9}
+#tb-product .tb-actual-2026 img{display:block;width:100%;height:auto}
 #tb-product .tb-technical-review{padding:20px;background:linear-gradient(135deg,#fbfdff,#f5faff);border:1px solid #d8e8f1;border-radius:18px}
 #tb-product .tb-technical-review__intro{margin:8px 0 14px;color:var(--tb-muted)}
 #tb-product .tb-technical-review__person{display:flex;align-items:center;gap:14px;padding:15px;border:1px solid #dce8f0;border-radius:14px;background:#fff}
@@ -3274,6 +3278,7 @@
   #tb-product .tb-light-copy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:767.98px){#tb-product .tb-trusted-address,#tb-product .tb-trusted-address__points{grid-template-columns:1fr}}
+@media(max-width:767.98px){#tb-product .tb-actual-2026{grid-template-columns:1fr}}
 </style>
 <main class="tb-apple-cleanup" id="tb-product">
 <header class="tb-topbar">
@@ -3857,6 +3862,12 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
 </div>
 </div>
 </section>
+<section class="tb-section" id="tb-actual-2026">
+<div class="tb-shell tb-actual-2026">
+<div><p class="tb-eyebrow">Hình sản phẩm</p><h2 style="margin-top:8px">Hình thực tế Titan Black 2026</h2><p style="margin-top:12px">Hình ảnh sản phẩm Titan Black 2026; cấu hình lắp đặt vẫn cần được kiểm tra theo cụm đèn và hệ điện của từng xe.</p></div>
+<figure><img alt="Bi LED Titan Black 2026" decoding="async" height="900" loading="lazy" src="titan-black/hinh/cn.jpg" width="1200"/></figure>
+</div>
+</section>
 <section class="tb-section" id="tb-consult-cta">
 <div class="tb-shell">
 <article class="tb-consult-cta">
@@ -4406,7 +4417,7 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
 </article>
 </div>
 </section>
-<section class="tb-section">
+<section class="tb-section" id="tb-final-cta">
 <div class="tb-shell">
 <article class="tb-final">
 <div class="tb-final__badge">TITAN BLACK 2026 • AUTO365</div>
@@ -4503,6 +4514,16 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
       const specifications = root.querySelector("#thong-so");
       const comparison = root.querySelector("#so-sanh");
       if (specifications && comparison) comparison.before(specifications);
+
+      const pageFlow = [
+        "kiem-tra-xe", "video-teaser", "nhu-cau", "evidence", "anh-sang", "thiet-ke",
+        "so-sanh", "thong-so", "tuong-thich", "tb-why-buy", "tb-actual-2026",
+        "tb-consult-cta", "case-xe", "lap-dat", "tb-trusted-address", "faq", "tb-final-cta"
+      ];
+      pageFlow.forEach(id => {
+        const section = root.querySelector(`#${id}`);
+        if (section) root.append(section);
+      });
     })();
   </script>
 </main>

@@ -54,6 +54,8 @@ assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota
 assert.match(page, /class="tb-install-grid"[\s\S]*?Toyota Camry[\s\S]*?Kia Morning[\s\S]*?Tổng hợp các mẫu xe/, 'shows three real Titan Black case cards');
 for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${caseUrl}"`), `links the actual Titan case: ${caseUrl}`);
 assert.match(page, /installFilters\.forEach[\s\S]*?dataset\.installBrand/, 'makes the actual-installation brand filters functional');
+assert.match(page, /id="tb-actual-2026"[\s\S]*?Hình thực tế Titan Black 2026[\s\S]*?titan-black\/hinh\/cn\.jpg/, 'adds one compact Titan Black 2026 product image without presenting it as an installation case');
+assert.match(page, /const pageFlow = \[[\s\S]*?"kiem-tra-xe"[\s\S]*?"video-teaser"[\s\S]*?"nhu-cau"[\s\S]*?"evidence"[\s\S]*?"anh-sang"[\s\S]*?"thiet-ke"[\s\S]*?"so-sanh"[\s\S]*?"thong-so"[\s\S]*?"tuong-thich"[\s\S]*?"tb-why-buy"[\s\S]*?"tb-actual-2026"[\s\S]*?"tb-consult-cta"[\s\S]*?"case-xe"[\s\S]*?"lap-dat"[\s\S]*?"tb-trusted-address"[\s\S]*?"faq"[\s\S]*?"tb-final-cta"/, 'orders the landing page according to the approved 18-part content flow');
 assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}/, 'balances the FAQ form and question columns on desktop');
 assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
