@@ -3147,8 +3147,10 @@
 #tb-product #anh-sang .tb-section-head h2{margin-top:10px!important;font-size:clamp(28px,2.6vw,42px);color:#0d1b35}
 #tb-product #anh-sang .tb-section-head h2 span{color:var(--tb-brand)}
 #tb-product #anh-sang .tb-section-head__desc{margin:10px 0 0;color:#66758b;font-size:clamp(16px,1.25vw,20px)}
-#tb-product .tb-light-layout{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(320px,.72fr);gap:18px;align-items:stretch}
-#tb-product .tb-light-copy-grid{display:grid;grid-template-columns:1fr;gap:18px;margin:0}
+#tb-product .tb-light-layout{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch}
+#tb-product .tb-light-layout > *{min-width:0}
+#tb-product .tb-light-shared{flex:1 1 600px}
+#tb-product .tb-light-copy-grid{display:grid;flex:1 1 360px;grid-template-columns:1fr;gap:18px;margin:0}
 #tb-product .tb-light-copy-grid article{display:flex;flex-direction:column;justify-content:center;position:relative;padding:28px 28px 28px 76px}
 #tb-product .tb-light-copy-grid article::before{content:"";position:absolute;top:29px;left:30px;width:15px;height:15px;border:8px solid #edf7ff;border-radius:50%;background:#087ff0}
 #tb-product .tb-light-copy-grid article:nth-child(2)::before{border-color:#fff8ea;background:#ffae00}
