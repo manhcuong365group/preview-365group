@@ -42,3 +42,5 @@ for (const inlineReference of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
 assert.match(page, /tb-case-feature[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black[\s\S]*?titan-back-5\.webp/, 'adds the supplied Mazda 3 case feature in the AES-style reference area');
 assert.match(page, /tb-case-feature\{display:grid;grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\)/, 'keeps the Mazda 3 case feature in a balanced two-column layout');
+assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}/, 'balances the FAQ form and question columns on desktop');
+assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');

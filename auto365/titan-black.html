@@ -3226,6 +3226,10 @@
 #tb-product .tb-case-feature h3::after{content:"";display:block;width:56px;height:2px;margin-top:20px;background:#ef2330}
 #tb-product .tb-case-feature__note{margin-top:28px;padding:20px 22px;border:1px solid #ffc3c8;background:#fff8f8;color:#4f5560;line-height:1.65}
 #tb-product .tb-case-feature__source{margin:14px 0 0;color:#7c8592;font-size:var(--tb-fs-xs)}
+#tb-product #faq .tb-faq{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+#tb-product #faq .tb-faq > div:first-child{display:flex;flex-direction:column}
+#tb-product #faq .tb-faq__form{display:flex;flex:1;flex-direction:column;margin-top:16px;padding:24px}
+#tb-product #faq .tb-faq__form-note{margin-top:auto!important;padding-top:12px}
 #tb-product .tb-overview{margin:0 0 8px;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220}
 #tb-product .tb-overview img{width:100%;height:auto;max-height:560px;object-fit:cover;object-position:center}
 #tb-product .tb-hero__media img{content:url("titan-black/hinh/titan-back-6.webp")}
@@ -3236,6 +3240,8 @@
 #tb-product #so-sanh .tb-image-card img{content:url("titan-black/hinh/titan-back-7.webp")}
 @media(max-width:767.98px){#tb-product .tb-consult-cta,#tb-product .tb-branch-compact,#tb-product .tb-related-grid,#tb-product .tb-light-layout,#tb-product .tb-light-copy-grid,#tb-product .tb-spec-price,#tb-product .tb-why-buy__grid{grid-template-columns:1fr}#tb-product #anh-sang .tb-section-head{margin-bottom:16px}#tb-product #anh-sang .tb-section-head h2{font-size:clamp(27px,8vw,36px)}#tb-product .tb-light-copy-grid{gap:12px}#tb-product .tb-light-copy-grid article{padding:22px 20px 22px 60px}#tb-product .tb-light-copy-grid article::before{top:23px;left:22px}#tb-product #lap-dat .tb-process{display:flex;gap:0;overflow-x:auto;padding:14px 10px 10px;scroll-snap-type:x proximity;scrollbar-width:thin}#tb-product #lap-dat .tb-process::before{display:none}#tb-product #lap-dat .tb-process__step{flex:0 0 148px;scroll-snap-align:start;text-align:center;padding:0 10px 8px}#tb-product #lap-dat .tb-process__step::before{margin:0 auto 7px}#tb-product .tb-consult-cta__actions{justify-content:flex-start}#tb-product .tb-branch-card--coverage .tb-branch-card__actions{position:static;margin-top:12px}#tb-product .tb-branch-stats{grid-template-columns:1fr}#tb-product .tb-branch-card__actions{flex-wrap:wrap}#tb-product .tb-branch-card__actions .tb-btn{min-width:100%}#tb-product .tb-spec-media img{max-height:360px}}
 @media(max-width:767.98px){
+  #tb-product #faq .tb-faq{grid-template-columns:1fr}
+  #tb-product #faq .tb-faq__form{flex:none}
   #tb-product #thong-so .tb-spec-list{grid-template-columns:1fr;gap:0}
   #tb-product #thong-so .tb-spec-row{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:12px}
   #tb-product #thong-so .tb-spec-row span:last-child{text-align:right;overflow-wrap:anywhere}
