@@ -47,4 +47,5 @@ assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,m
 assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
+assert.match(page, /img\[alt="Phụ kiện đuôi vặn H4 Titan Black 2026"\]\{content:url\("titan-black\/hinh\/phu-kien-h4-bi-led-titan-black-2026\.jpg"\)/, 'uses the supplied H4 accessory image');
 for (const backlink of ['nhung-kinh-nghiem-can-biet-khi-do-den-o-to', 'co-nen-nang-cap-den-xe-o-to-khi-mua-xe-moi', 'bi-led-titan-black-2', 'bi-led-titan-black']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${backlink}"`), `keeps the original related article as an in-content backlink: ${backlink}`);
