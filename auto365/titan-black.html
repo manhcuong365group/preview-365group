@@ -3280,6 +3280,29 @@
   #tb-product .tb-light-copy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:767.98px){#tb-product .tb-trusted-address,#tb-product .tb-trusted-address__points{grid-template-columns:1fr}}
+/* Mobile token pass: every surviving section uses the same fluid gutter, type and card spacing. */
+@media(max-width:767.98px){
+  #tb-product{
+    --tb-mobile-gutter:clamp(14px,4vw,22px);
+    --tb-mobile-pad:clamp(16px,5vw,24px);
+    --tb-section-y:clamp(28px,8vw,40px);
+    --tb-grid-gap:clamp(12px,3.5vw,18px);
+  }
+  #tb-product .tb-shell{width:calc(100% - (2 * var(--tb-mobile-gutter)));max-width:none}
+  #tb-product .tb-section-head{display:block;margin-bottom:clamp(16px,5vw,24px)}
+  #tb-product .tb-section-head p{margin-top:10px;max-width:none}
+  #tb-product .tb-section-head h2{font-size:clamp(1.55rem,7vw,2.25rem)}
+  #tb-product .tb-light-layout{display:grid;grid-template-columns:1fr;gap:var(--tb-grid-gap)}
+  #tb-product .tb-light-shared{flex:none;width:100%;max-width:none}
+  #tb-product .tb-light-copy-grid{width:100%;gap:var(--tb-grid-gap)}
+  #tb-product .tb-spec-price,#tb-product .tb-consult-cta,#tb-product .tb-trusted-address{grid-template-columns:1fr;gap:var(--tb-grid-gap)}
+  #tb-product .tb-spec-panel,#tb-product .tb-price-panel,#tb-product .tb-feature__copy,#tb-product #faq .tb-faq__form,#tb-product .tb-consult-cta,#tb-product .tb-trusted-address{padding:var(--tb-mobile-pad)}
+  #tb-product .tb-actual-2026{max-width:none}
+  #tb-product #case-xe .tb-section-head{max-width:none}
+  #tb-product .tb-consult-cta__actions,#tb-product .tb-trusted-address__actions{display:grid;grid-template-columns:1fr;width:100%}
+  #tb-product .tb-consult-cta__actions .tb-btn,#tb-product .tb-trusted-address__actions .tb-btn{width:100%}
+  #tb-product #so-sanh .tb-table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
 </style>
 <main class="tb-apple-cleanup" id="tb-product">
 <header class="tb-topbar">
