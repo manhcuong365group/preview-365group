@@ -33,6 +33,7 @@ img{max-width:100%;display:block}
 .skip-link:focus{left:8px;top:8px}
 .shell{width:min(1180px,100% - 32px);margin-inline:auto}
 .section{padding:22px 0}
+.anchor-offset{display:block;height:0}
 .soft{background:var(--soft)}
 .dark{background:var(--ink-2);color:#fff}
 .dark .muted,.dark p{color:#b9bcc2}
@@ -1286,6 +1287,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 </section>
 
 <section class="section" id="tu-van-video">
+  <a id="tu-van-theo-xe" class="anchor-offset"></a>
   <div class="shell">
     <div class="video-lead-card">
       <div class="video-lead-media">
@@ -1774,7 +1776,9 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   function normalizeVN(str){
     return (str || '').toLowerCase()
       .replace(/đ/g, 'd')
-      .normalize('NFD').replace(/[̀-ͯ]/g, '');
+      .normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/[-–—]/g, ' ')
+      .replace(/\s+/g, ' ').trim();
   }
   var moreBtn = document.getElementById('pf-more');
   var countEl = document.getElementById('pf-count');
@@ -2240,7 +2244,11 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
   compareClearBtn.addEventListener('click', function(){
     compareSelected = [];
-    compareBoxes.forEach(function(b){ b.checked = false; b.disabled = false; });
+    compareBoxes.forEach(function(b){
+      b.checked = false; b.disabled = false;
+      var toggle = b.closest('.compare-toggle');
+      if (toggle) toggle.classList.remove('is-checked');
+    });
     updateCompareBar();
   });
 
