@@ -28,6 +28,8 @@ test('shows the verified configuration for each published case', () => {
     ['Toyota Fortuner', 'CR BLK 40 / 15 / 15'],
     ['Honda CR-V', 'CR BLK 40 / 15 / 15'],
     ['Honda HR-V', 'CR BLK 40 / 15 / 15'],
+    ['Kia Carnival', 'CR BLK 40 / 15 / 15'],
+    ['Kia K5', 'CR BLK 40 / 15 / 15'],
   ]) {
     assert.match(html, new RegExp(`<h3>${model}<\\/h3><p>Cấu hình đã dán: ${config.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}<\\/p>`));
   }
@@ -47,6 +49,23 @@ test('connects the nationwide Service to Auto365 without a product or price sche
   assert.match(html, /"@type": "Organization"[\s\S]*?"@id": "https:\/\/auto365\.vn\/#organization"/);
   assert.doesNotMatch(html, /"@type": \["LocalBusiness", "AutomotiveBusiness"\]/);
   assert.doesNotMatch(html, /"@type": "Offer"/);
+});
+
+test('publishes the eight requested real-case links and a Kia filter', () => {
+  for (const url of [
+    'https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-honda-cr-v',
+    'https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-toyota-fortuner',
+    'https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-honda-hr-v',
+    'https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-cho-volvo-xc90',
+    'https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-cho-peugeot-408',
+    'https://auto365.vn/kia-carnival-dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro',
+    'https://auto365.vn/co-nen-dan-phim-cach-nhiet-3m-cho-kia-k5',
+    'https://auto365.vn/vinfast-vf7-dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro',
+  ]) assert.match(html, new RegExp(`href="${url.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}"`));
+  assert.match(html, /<button class="case-filter" type="button" data-brand="Kia"/);
+  assert.match(html, /\.case-grid\{display:grid;grid-template-columns:repeat\(4,minmax\(0,1fr\)\);gap:16px;overflow:visible/);
+  assert.match(html, /@media\(max-width:900px\)\{\.case-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+  assert.match(html, /@media\(max-width:680px\)\{\.case-grid\{grid-template-columns:1fr/);
 });
 
 test('labels Peugeot 408 as a consultation when the source does not verify an installation record', () => {
