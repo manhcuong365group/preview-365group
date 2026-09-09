@@ -42,39 +42,40 @@ function octokit() {
 }
 
 async function listLandingPagesGitHub(): Promise<LandingPageSummary[]> {
-  const client = octokit();
-  const { data } = await client.rest.repos.getContent({ owner: OWNER, repo: REPO, path: "auto365", ref: BRANCH });
-  if (!Array.isArray(data)) return [];
-  const dirs = data.filter((entry) => entry.type === "dir");
+  try {
+    const client = octokit();
+    const { data } = await client.rest.repos.getContent({ owner: OWNER, repo: REPO, path: "auto365", ref: BRANCH });
+    if (!Array.isArray(data)) return [];
+    const dirs = data.filter((entry) => entry.type === "dir");
 
-  const pages = await Promise.all(
-    dirs.map(async (dir): Promise<LandingPageSummary | null> => {
-      const indexPath = `${dir.path}/index.html`;
-      try {
-        const [fileRes, commitsRes] = await Promise.all([
-          client.rest.repos.getContent({ owner: OWNER, repo: REPO, path: indexPath, ref: BRANCH }),
-          client.rest.repos.listCommits({ owner: OWNER, repo: REPO, path: indexPath, sha: BRANCH, per_page: 1 }),
-        ]);
-        const fileData = fileRes.data;
-        if (Array.isArray(fileData) || fileData.type !== "file" || !fileData.content) return null;
-        const html = Buffer.from(fileData.content, "base64").toString("utf-8");
-        const latest = commitsRes.data[0];
-        return {
-          slug: dir.name,
-          title: extractTitle(html) ?? dir.name,
-          path: indexPath,
-          liveUrl: `${LIVE_BASE_URL}/${dir.name}/`,
-          thumbnailUrl: hasThumbnail(dir.name) ? `/thumbnails/${dir.name}.jpg` : null,
-          lastModified: latest?.commit.committer?.date ?? null,
-          lastCommitMessage: latest?.commit.message.split("\n")[0] ?? null,
-        };
-      } catch {
-        return null;
-      }
-    }),
-  );
+    // ponytail: chỉ đọc index.html (1 request/page); lịch sử commit đã có ở dashboard activity.
+    const pages = await Promise.all(
+      dirs.map(async (dir): Promise<LandingPageSummary | null> => {
+        const indexPath = `${dir.path}/index.html`;
+        try {
+          const fileRes = await client.rest.repos.getContent({ owner: OWNER, repo: REPO, path: indexPath, ref: BRANCH });
+          const fileData = fileRes.data;
+          if (Array.isArray(fileData) || fileData.type !== "file" || !fileData.content) return null;
+          const html = Buffer.from(fileData.content, "base64").toString("utf-8");
+          return {
+            slug: dir.name,
+            title: extractTitle(html) ?? dir.name,
+            path: indexPath,
+            liveUrl: `${LIVE_BASE_URL}/${dir.name}/`,
+            thumbnailUrl: hasThumbnail(dir.name) ? `/thumbnails/${dir.name}.jpg` : null,
+            lastModified: null,
+            lastCommitMessage: null,
+          };
+        } catch {
+          return null;
+        }
+      }),
+    );
 
-  return pages.filter((p): p is LandingPageSummary => p !== null);
+    return pages.filter((p): p is LandingPageSummary => p !== null);
+  } catch {
+    return [];
+  }
 }
 
 export async function listLandingPages(): Promise<LandingPageSummary[]> {
