@@ -55,7 +55,9 @@ const javascript = [
 
 const iconSprite = html.match(/<svg\s+width=["']0["'][\s\S]*?<\/svg>/i)?.[0];
 const noscript = html.match(/<noscript>[\s\S]*?<\/noscript>/i)?.[0];
-const mainContent = html.match(/<main\b[^>]*>[\s\S]*?<\/main>/i)?.[0];
+const mainContent = html
+  .match(/<main\b[^>]*>[\s\S]*?<\/main>/i)?.[0]
+  ?.replace(/\s*<nav\s+class=["']breadcrumbs["'][\s\S]*?<\/nav>/i, '');
 
 if (!iconSprite || !mainContent) {
   throw new Error('Không tìm thấy icon sprite hoặc nội dung <main> để tạo HTML content-only.');
