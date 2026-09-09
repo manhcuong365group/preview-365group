@@ -71,6 +71,7 @@ test('keeps evidence metadata scoped to what each asset and entity actually repr
 test('publishes the confirmed technical review date with the reviewer identity', () => {
   assert.match(html, /"dateReviewed": "2026-09-08"/);
   assert.match(html, /Kiểm duyệt: <strong>Chuyên gia Đặng Minh Hoàng<\/strong><\/span><span>Rà soát kỹ thuật: <time datetime="2026-09-08">08\/09\/2026<\/time>/);
+  assert.match(html, /<a class="text-link" href="https:\/\/auto365\.vn\/tac-gia\/dang-minh-hoang"[^>]*>Chuyên gia Đặng Minh Hoàng<\/a>/);
 });
 
 test('uses stable schema entities for the page, its author, reviewer, breadcrumb and FAQ', () => {
@@ -78,6 +79,7 @@ test('uses stable schema entities for the page, its author, reviewer, breadcrumb
   assert.match(html, /"breadcrumb": \{"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#breadcrumb"\}/);
   assert.match(html, /"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#author"/);
   assert.match(html, /"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#reviewer"/);
+  assert.match(html, /"reviewedBy": \{"@type": "Person"[\s\S]*"url": "https:\/\/auto365\.vn\/tac-gia\/dang-minh-hoang"/);
   assert.match(html, /"@type": "BreadcrumbList",\s*"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#breadcrumb"/);
   assert.match(html, /"@type": "FAQPage",\s*"@id": "https:\/\/auto365\.vn\/phim-cach-nhiet-3m-crystalline-cr-blk-pro#faq"/);
 });
