@@ -29,3 +29,4 @@ assert.match(page, /<div class="tb-spec-list">[\s\S]*Điện áp[\s\S]*Bảo hà
 assert.match(page, /#tb-product #thong-so \.tb-spec-list\{grid-template-columns:1fr;gap:0\}/, 'stacks the balanced specifications into one readable column on mobile');
 assert.match(page, /#tb-product #so-sanh \.tb-compare__media\{grid-template-columns:1fr\}/, 'stacks the comparison visual and upgrade summary on mobile');
 assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:1fr\}\}/, 'stacks all consultation form fields on narrow phones');
+assert.match(page, /#tb-product \.tb-light-shared\{[^}]*max-width:1120px[^}]*margin-inline:auto[^}]*}/, 'keeps the shared lighting visual at a calmer desktop reading size');
