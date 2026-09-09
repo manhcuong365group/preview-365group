@@ -43,6 +43,7 @@ const whyBuySection = page.match(/<section class="tb-section tb-why-buy" id="tb-
 for (const caseBacklink of ['do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10']) assert.doesNotMatch(whyBuySection, new RegExp(`href="https://auto365\\.vn/${caseBacklink}"`), `removes actual-installation case backlinks from editorial copy: ${caseBacklink}`);
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
 assert.match(page, /Tham khảo các xe đã lắp đèn Titan Black tại Auto365/, 'uses an AES-style actual-installation library heading');
+assert.doesNotMatch(page, /#tb-product #case-xe\s*\{display:none/, 'keeps the actual-installation library visible');
 assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota"[\s\S]*?data-install-filter="kia"/, 'provides brand filters for the actual-installation library');
 assert.match(page, /class="tb-install-grid"[\s\S]*?Toyota Camry[\s\S]*?Kia Morning[\s\S]*?Tổng hợp các mẫu xe/, 'shows three real Titan Black case cards');
 for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${caseUrl}"`), `links the actual Titan case: ${caseUrl}`);
