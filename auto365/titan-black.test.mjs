@@ -23,3 +23,4 @@ for (const redundantCopy of [
   'Nội dung kỹ thuật của Bi LED Titan Black 2026 được đối chiếu với tài liệu sản phẩm. Phương án lắp đặt cần được kiểm tra theo cụm đèn, không gian lắp và hệ điện của từng xe.',
   'Thông tin cần biết để chọn đúng phiên bản và xác nhận phương án theo xe thực tế.'
 ]) assert.doesNotMatch(page, new RegExp(redundantCopy.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `removes redundant copy: ${redundantCopy}`);
+assert.doesNotMatch(page, /content:"FIT CHECK"/, 'removes the decorative fit-check label');
