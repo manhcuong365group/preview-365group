@@ -1,4 +1,4 @@
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { copyFile, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -6,6 +6,8 @@ const toolDir = dirname(fileURLToPath(import.meta.url));
 const pageDir = resolve(toolDir, '..');
 const sourcePath = resolve(pageDir, 'index.html');
 const outputDir = resolve(pageDir, 'cms');
+const assetSourceDir = resolve(pageDir, 'hinh');
+const assetOutputDir = resolve(outputDir, 'hinh');
 const htmlPath = resolve(outputDir, 'index.html');
 const contentPath = resolve(outputDir, 'content-only.html');
 const cssPath = resolve(outputDir, 'cr-blk-pro.css');
@@ -36,6 +38,10 @@ html = html.replace(
   /<meta\s+name=["']robots["']\s+content=["'][^"']*["']\s*\/?>/i,
   '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
 );
+
+// The CMS package lives in one directory. Make every page asset portable so
+// the editor only has to upload the generated `hinh` folder alongside it.
+html = html.replaceAll('/3m-cr-blk-pro/hinh/', './hinh/');
 
 if (!styles.length || !scripts.length || !insertedStylesheet || !insertedScript) {
   throw new Error('Không tìm thấy đầy đủ CSS/JS inline để tạo gói CMS.');
@@ -71,12 +77,36 @@ const contentOnly = [
   '',
 ].join('\n');
 
+const assetNames = [...new Set(
+  [...html.matchAll(/(?:src|srcset)=["']([^"']+)["']/gi)]
+    .flatMap(match => [...match[1].matchAll(/\.\/hinh\/([^\s,"']+)/g)].map(item => item[1]))
+)].sort();
+
+if (!assetNames.length) {
+  throw new Error('Không tìm thấy ảnh nào để đóng gói cho CMS.');
+}
+
 await mkdir(outputDir, { recursive: true });
+await rm(assetOutputDir, { recursive: true, force: true });
+await mkdir(assetOutputDir, { recursive: true });
+await Promise.all(assetNames.map(async name => {
+  const sourceAsset = resolve(assetSourceDir, name);
+  const targetAsset = resolve(assetOutputDir, name);
+  if (!targetAsset.startsWith(assetOutputDir)) {
+    throw new Error(`Tên ảnh không hợp lệ: ${name}`);
+  }
+  try {
+    await copyFile(sourceAsset, targetAsset);
+  } catch {
+    throw new Error(`Thiếu ảnh nguồn cần cho CMS: ${name}`);
+  }
+}));
 await Promise.all([
   writeFile(htmlPath, html, 'utf8'),
   writeFile(contentPath, contentOnly, 'utf8'),
   writeFile(cssPath, css, 'utf8'),
   writeFile(jsPath, javascript, 'utf8'),
+  writeFile(resolve(outputDir, 'asset-manifest.txt'), `${assetNames.join('\n')}\n`, 'utf8'),
 ]);
 
 console.log(JSON.stringify({
@@ -86,4 +116,5 @@ console.log(JSON.stringify({
   javascript: jsPath,
   styleBlocks: styles.length,
   scriptBlocks: scripts.length,
+  assets: assetNames.length,
 }, null, 2));
