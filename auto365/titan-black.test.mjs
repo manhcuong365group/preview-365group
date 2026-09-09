@@ -38,7 +38,7 @@ assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạ
 assert.match(page, /tb-light-layout\{display:grid;grid-template-columns:minmax\(0,1\.28fr\) minmax\(320px,\.72fr\)/, 'lays out the lighting visual beside the Cos and Pha guidance');
 assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Chế độ Cos[\s\S]*?Chế độ Pha[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
-for (const inlineReference of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10', 'bi-led-quoc-dan-da-quay-tro-lai-voi-ban-cap-nhat-moibi-led-titan-black-co-gi']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${inlineReference}"`), `keeps the Titan reference inline: ${inlineReference}`);
+for (const inlineReference of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${inlineReference}"`), `keeps the Titan reference inline: ${inlineReference}`);
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
 assert.match(page, /tb-case-feature[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black[\s\S]*?titan-back-5\.webp/, 'adds the supplied Mazda 3 case feature in the AES-style reference area');
 assert.match(page, /tb-case-feature\{display:grid;grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\)/, 'keeps the Mazda 3 case feature in a balanced two-column layout');
@@ -46,3 +46,4 @@ assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,m
 assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
+for (const backlink of ['nhung-kinh-nghiem-can-biet-khi-do-den-o-to', 'co-nen-nang-cap-den-xe-o-to-khi-mua-xe-moi', 'bi-led-titan-black-2', 'bi-led-titan-black']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${backlink}"`), `keeps the original related article as an in-content backlink: ${backlink}`);
