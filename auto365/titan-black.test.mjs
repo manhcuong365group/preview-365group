@@ -13,3 +13,4 @@ assert.match(page, /article\.tb-surface > figure\.tb-media img\{width:82%;height
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-image:url\('titan-black\/hinh\/titan-back-2\.webp'\)[^}]*\}/, 'requires the supplied two-version image for the lens block');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-color:#087bd0/, 'requires a blue surround instead of black side bars');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100% 100%/, 'requires the supplied lens image to fill its matching frame');
+assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
