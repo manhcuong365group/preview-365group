@@ -39,7 +39,8 @@ assert.match(page, /\.tb-light-shared\{flex:1 1 600px\}/, 'keeps the lighting vi
 assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Chế độ Cos[\s\S]*?Chế độ Pha[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
 assert.match(page, /\.tb-light-layout\{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch\}/, 'uses a wrapping lighting layout that cannot overlap at zoomed viewport widths');
-for (const inlineReference of ['do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${inlineReference}"`), `keeps the Titan reference inline: ${inlineReference}`);
+const whyBuySection = page.match(/<section class="tb-section tb-why-buy" id="tb-why-buy">([\s\S]*?)<\/section>/)?.[1] ?? '';
+for (const caseBacklink of ['do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10']) assert.doesNotMatch(whyBuySection, new RegExp(`href="https://auto365\\.vn/${caseBacklink}"`), `removes actual-installation case backlinks from editorial copy: ${caseBacklink}`);
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
 assert.match(page, /Tham khảo các xe đã lắp đèn Titan Black tại Auto365/, 'uses an AES-style actual-installation library heading');
 assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota"[\s\S]*?data-install-filter="kia"/, 'provides brand filters for the actual-installation library');
