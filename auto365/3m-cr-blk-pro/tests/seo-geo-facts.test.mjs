@@ -300,6 +300,11 @@ test('keeps Pro selection and lead response handling fail-closed', () => {
   assert.match(html, /try\{previous=Number\(localStorage\.getItem\(cooldownKey\)\|\|0\)\}catch/);
 });
 
+test('keeps one authoritative consultation submit handler', () => {
+  const handlers = html.match(/form\.addEventListener\('submit'/g) || [];
+  assert.equal(handlers.length, 1);
+});
+
 test('uses configuration-agnostic handover wording', () => {
   assert.match(html, /Đối chiếu mã phim đã chốt cho từng vị trí kính và hướng dẫn tra cứu eWarranty/);
   assert.doesNotMatch(html, /Đối chiếu đúng mã 40\/35\/15 và hướng dẫn tra cứu eWarranty/);
