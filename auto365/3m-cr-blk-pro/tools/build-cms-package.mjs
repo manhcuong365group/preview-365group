@@ -7,7 +7,9 @@ const pageDir = resolve(toolDir, '..');
 const sourcePath = resolve(pageDir, 'index.html');
 const outputDir = resolve(pageDir, 'cms');
 const assetSourceDir = resolve(pageDir, 'hinh');
-const assetOutputDir = resolve(outputDir, 'hinh');
+const assetFolderName = '3m-cr-blk-pro';
+const assetOutputDir = resolve(outputDir, assetFolderName);
+const assetUrlPath = `/uploads/images/products/${assetFolderName}/`;
 const htmlPath = resolve(outputDir, 'index.html');
 const contentPath = resolve(outputDir, 'content-only.html');
 const cssPath = resolve(outputDir, 'cr-blk-pro.css');
@@ -39,9 +41,8 @@ html = html.replace(
   '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">',
 );
 
-// The CMS package lives in one directory. Make every page asset portable so
-// the editor only has to upload the generated `hinh` folder alongside it.
-html = html.replaceAll('/3m-cr-blk-pro/hinh/', './hinh/');
+// The CMS host stores this landing page's assets under the agreed product URL.
+html = html.replaceAll('/3m-cr-blk-pro/hinh/', assetUrlPath);
 
 if (!styles.length || !scripts.length || !insertedStylesheet || !insertedScript) {
   throw new Error('Không tìm thấy đầy đủ CSS/JS inline để tạo gói CMS.');
@@ -79,7 +80,7 @@ const contentOnly = [
 
 const assetNames = [...new Set(
   [...html.matchAll(/(?:src|srcset)=["']([^"']+)["']/gi)]
-    .flatMap(match => [...match[1].matchAll(/\.\/hinh\/([^\s,"']+)/g)].map(item => item[1]))
+    .flatMap(match => [...match[1].matchAll(new RegExp(`${assetUrlPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^\\s,"']+)`, 'g'))].map(item => item[1]))
 )].sort();
 
 if (!assetNames.length) {
@@ -106,7 +107,7 @@ await Promise.all([
   writeFile(contentPath, contentOnly, 'utf8'),
   writeFile(cssPath, css, 'utf8'),
   writeFile(jsPath, javascript, 'utf8'),
-  writeFile(resolve(outputDir, 'asset-manifest.txt'), `${assetNames.join('\n')}\n`, 'utf8'),
+  writeFile(resolve(outputDir, 'asset-manifest.txt'), `${assetUrlPath}\n\n${assetNames.join('\n')}\n`, 'utf8'),
 ]);
 
 console.log(JSON.stringify({
