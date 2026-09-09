@@ -126,6 +126,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .qs-result img{width:100%;aspect-ratio:4/3;height:auto;object-fit:contain;background:var(--soft);border-radius:8px;margin-bottom:8px;padding:8px}
 .qs-result-name{font-size:12.5px;font-weight:800;color:var(--ink);line-height:1.25}
 .qs-result-price{color:var(--red);font-weight:700;font-size:14px;margin:2px 0 4px}
+.qs-result-vat{color:#8a8d93;font-weight:600;font-size:10px;margin:-2px 0 6px}
 .qs-result-reason{color:var(--muted);font-size:11px;line-height:1.4;margin:0 0 8px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .qs-result-actions{display:flex;flex-direction:column;gap:6px;margin-top:auto}
 .qs-result-actions .btn{min-height:36px;font-size:12.5px}
@@ -206,6 +207,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .compare-table th{background:var(--soft);color:#5c6067;font-size:11px;text-transform:uppercase;letter-spacing:.03em;width:110px}
 .compare-table img{width:80px;height:80px;object-fit:contain;background:var(--soft);border-radius:8px}
 .compare-table .cmp-price{color:var(--red);font-weight:800;font-size:15px}
+.compare-table .cmp-vat{color:#8a8d93;font-weight:600;font-size:10.5px;margin-top:2px}
 .compare-table .cmp-name{font-weight:700;color:var(--ink)}
 .cmp-highlights{list-style:none;margin:0;padding:0}
 .cmp-highlights li{position:relative;padding:3px 0 3px 12px;color:#3a3d42}
@@ -1183,8 +1185,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 <section class="section dark" id="gia-chi-phi">
   <div class="shell price-layout">
     <div>
-      <h2>Giá bi gầm và chi phí lắp đặt.</h2>
-      <p class="price-intro">Giá sản phẩm hiện từ 3.500.000đ đến 6.200.000đ mỗi bộ (1 cặp), tùy mã sản phẩm. Giá chưa gồm pát/mặt dưỡng, dây/giắc, relay, công lắp, cân chỉnh và VAT. Tổng chi phí được xác nhận sau khi kiểm tra xe.</p>
+      <h2>Giá bi gầm và chi phí lắp đặt</h2>
+      <p class="price-intro">Giá đèn và VAT được ghi theo từng mẫu trong danh mục bên trên. Tổng chi phí còn phụ thuộc bộ gá/mặt dưỡng, dây điện, relay, công lắp và cân chỉnh trên xe — xác nhận sau khi kiểm tra thực tế.</p>
       <ul class="price-checklist">
         <li>Báo riêng giá sản phẩm theo từng mã</li>
         <li>Xác nhận pát hoặc mặt dưỡng theo hốc xe</li>
@@ -1194,7 +1196,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       <a class="btn js-open-consult" style="background:var(--red);color:#fff" href="#tu-van-theo-xe">Nhờ kiểm tra chi phí &rarr;</a>
     </div>
     <div class="price-steps">
-      <div class="price-step"><span>01</span><div><b>Sản phẩm</b><p>3,5–6,2 triệu đồng mỗi bộ (1 cặp), tùy mã</p></div></div>
+      <div class="price-step"><span>01</span><div><b>Sản phẩm</b><p>Xem giá và VAT theo từng mẫu trong danh mục</p></div></div>
       <div class="price-step"><span>02</span><div><b>Pát / mặt dưỡng</b><p>Theo hốc đèn và đời xe</p></div></div>
       <div class="price-step"><span>03</span><div><b>Dây / relay</b><p>Theo hệ điện thực tế</p></div></div>
       <div class="price-step"><span>04</span><div><b>Công lắp / cân chỉnh</b><p>Theo phương án thi công</p></div></div>
@@ -2294,7 +2296,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         } else if (rowLabel === 'Thương hiệu') {
           td = txt('td', null, card.getAttribute('data-brand') || 'Chưa xác nhận');
         } else if (rowLabel === 'Giá') {
-          td = txt('td', {'class': 'cmp-price'}, price.textContent);
+          var vatEl = card.querySelector('.product-vat');
+          var priceChildren = [txt('div', null, price.textContent)];
+          if (vatEl) priceChildren.push(txt('div', {'class': 'cmp-vat'}, vatEl.textContent));
+          td = el('td', {'class': 'cmp-price'}, priceChildren);
         } else if (rowLabel === 'Lens') {
           var lensVal = card.getAttribute('data-lens');
           td = txt('td', null, lensVal ? (lensVal + ' inch') : 'Cần kiểm tra');
@@ -2369,22 +2374,38 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       var deltaStr = new Intl.NumberFormat('vi-VN').format(Math.abs(delta)) + 'đ';
       return delta > 0 ? (' (+' + deltaStr + ' so với mức bạn chọn)') : (' (thấp hơn ' + deltaStr + ' so với mức bạn chọn)');
     }
+    var anyRelaxed = relaxedBudget || relaxedLens || relaxedNeed;
     picks.forEach(function(card, i){
       var img = card.querySelector('.product-image img');
       var nameLink = card.querySelector('h3 a');
       var price = card.querySelector('.product-price').textContent;
+      var vatEl = card.querySelector('.product-vat');
+      var vatText = vatEl ? vatEl.textContent : '';
       var cardPrice = +card.getAttribute('data-price');
+      var cardLens = card.getAttribute('data-lens') || '';
+      var cardNeeds = (card.getAttribute('data-needs') || '').split(',');
+      var matchesLens = !lensVal || cardLens === lensVal;
+      var matchesNeed = !needVal || needVal.split(',').some(function(n){ return cardNeeds.indexOf(n) !== -1; });
       var reasonText;
       var badgeLabel, badgeClass;
       if (i === 0) {
         reasonText = baseReason + budgetDeltaText(cardPrice);
-        badgeLabel = 'Phù hợp'; badgeClass = 'qs-badge--pick';
+        badgeLabel = anyRelaxed ? 'Gợi ý gần nhất' : 'Phù hợp';
+        badgeClass = anyRelaxed ? 'qs-badge--alt' : 'qs-badge--pick';
       } else {
         var samePrice = cardPrice === firstPrice;
-        reasonText = samePrice ? 'Lựa chọn thay thế cùng tiêu chí, cùng mức giá.' : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác' + budgetDeltaText(cardPrice) + '.';
-        if (samePrice) { badgeLabel = 'Lựa chọn thay thế'; badgeClass = 'qs-badge--alt'; }
-        else if (cardPrice > firstPrice) { badgeLabel = 'Nâng cấp'; badgeClass = 'qs-badge--upgrade'; }
-        else { badgeLabel = 'Tiết kiệm hơn'; badgeClass = 'qs-badge--save'; }
+        var mismatches = [];
+        if (!matchesLens) mismatches.push('lens ' + (cardLens || 'chưa rõ') + ' inch (khác ' + lensVal + ' inch đã chọn)');
+        if (!matchesNeed) mismatches.push('khác nhu cầu đã chọn');
+        if (mismatches.length) {
+          reasonText = 'Mẫu khác — ' + mismatches.join(', ') + '.' + budgetDeltaText(cardPrice);
+          badgeLabel = 'Mẫu khác'; badgeClass = 'qs-badge--alt';
+        } else {
+          reasonText = samePrice ? 'Lựa chọn thay thế cùng tiêu chí, cùng mức giá.' : 'Lựa chọn thay thế cùng tiêu chí, mức giá khác' + budgetDeltaText(cardPrice) + '.';
+          if (samePrice) { badgeLabel = 'Lựa chọn thay thế'; badgeClass = 'qs-badge--alt'; }
+          else if (cardPrice > firstPrice) { badgeLabel = 'Nâng cấp'; badgeClass = 'qs-badge--upgrade'; }
+          else { badgeLabel = 'Tiết kiệm hơn'; badgeClass = 'qs-badge--save'; }
+        }
       }
       if (i === 0) reasonText += ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.';
       var zaloTitle = 'Tôi cần tư vấn sản phẩm: ' + nameLink.textContent + '\nXe: (bổ sung khi nhắn)\nLink: ' + nameLink.href;
@@ -2399,6 +2420,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         txt('span', {'class': 'qs-badge ' + badgeClass}, badgeLabel),
         txt('div', {'class': 'qs-result-name'}, nameLink.textContent),
         txt('div', {'class': 'qs-result-price'}, price),
+        txt('p', {'class': 'qs-result-vat'}, vatText),
         txt('p', {'class': 'qs-result-reason'}, reasonText),
         actions
       ]);
