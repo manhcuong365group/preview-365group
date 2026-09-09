@@ -169,6 +169,15 @@ test('uses real price buttons and a keyboard-safe consultation modal', () => {
   assert.match(html, /dialog\.setAttribute\('aria-modal',document\.body\.classList\.contains\('form-modal-open'\)\?'true':'false'\)/);
 });
 
+test('keeps the Pro package selected when a visitor enters through the price cards', () => {
+  assert.match(html, /function chooseVehicle\(value,source,manualPackage\)\{state\.vehicle=value;state\.manualPackage=manualPackage\|\|null/);
+  assert.match(html, /event\.stopPropagation\(\);chooseVehicle\(button\.dataset\.vehicle,'price_card','pro'\);openConsultModal\(event\)/);
+  assert.match(html, /if\(event\.target\.closest&&event\.target\.closest\('button,a,input,select,textarea'\)\)return;chooseVehicle\(card\.dataset\.priceCard,'price_card','pro'\)/);
+  assert.match(html, /trigger\.matches\('\[data-price-card\]'\)\)trigger=trigger\.querySelector\('\.js-price-select'\)\|\|trigger/);
+  assert.match(html, /consultForm\.setAttribute\('aria-modal','true'\)/);
+  assert.match(html, /consultForm\.setAttribute\('aria-modal','false'\)/);
+});
+
 test('includes a usable skip link and every referenced icon symbol', () => {
   assert.match(html, /<a class="skip-link" href="#main-content">Chuyển đến nội dung chính<\/a>/);
   assert.match(html, /<main id="main-content">/);
