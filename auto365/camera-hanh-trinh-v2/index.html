@@ -1350,10 +1350,13 @@ function features(p) {
   return x.slice(0, 3);
 }
 
+// Ghi chú: nhận diện tính năng theo tên/mẫu sản phẩm là cách làm tạm, chưa dựa trên
+// dữ liệu tính năng thật của từng SKU — 2 trường hợp dưới đã đối chiếu với trang sản
+// phẩm thật (A210, M310); các model khác cần Product xác nhận đầy đủ (xem báo cáo C02).
 function matchFeatures(p, feat) {
   if (feat === '4k') return /4K|A810|A800|T800|S720|DR900|TS-5K/i.test(p.name);
-  if (feat === 'parking') return /parking|s500|a810|m800|ts-5k|v740|q5|m1|m2|a800|a500/i.test(p.name) || p.channels >= 2;
-  if (feat === 'gps') return /gps|speedmap|m1|m2|c61|c65|kc01|g79|a50|f550g|a64g|a64gs|ts-c9p/i.test(p.name);
+  if (feat === 'parking') return /parking|s500|a810|m800|ts-5k|v740|q5|m1|m2|a800|a500|a210|m310/i.test(p.name) || p.channels >= 2;
+  if (feat === 'gps') return /gps|speedmap|m1|m2|c61|c65|kc01|g79|a50|f550g|a64g|a64gs|ts-c9p|a210/i.test(p.name);
   if (feat === 'lte') return /lte|4g|cloud|dms|dr750x|dr900x|vm350|vm300/i.test(p.name);
   return true;
 }
