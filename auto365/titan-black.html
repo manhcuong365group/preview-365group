@@ -3139,7 +3139,7 @@
 #tb-product .tb-spec-strip,#tb-product .tb-spec-price .tb-price-panel,#tb-product .tb-light-card__metric{display:none}
 #tb-product #anh-sang .tb-light-card--duplicate{display:none}
 #tb-product #anh-sang .tb-light-grid{display:none}
-#tb-product .tb-light-shared{min-height:0;aspect-ratio:16 / 9;margin:0;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220 url('titan-black/hinh/titan-back-8.webp') center / contain no-repeat}
+#tb-product .tb-light-shared{min-height:0;aspect-ratio:16 / 9;margin:0;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220 url('titan-black/hinh/titan-back-8.webp') center / cover no-repeat}
 #tb-product .tb-light-shared img{display:none}
 #tb-product #anh-sang .tb-section-head{margin-bottom:22px}
 #tb-product #anh-sang .tb-section-head .tb-eyebrow{display:flex;align-items:center;gap:12px;margin:0;color:#415b7d;font-size:12px;font-weight:750;letter-spacing:.16em;text-transform:uppercase}
@@ -3493,7 +3493,6 @@
 <div>
 <p class="tb-eyebrow">Hiệu suất ánh sáng</p>
 <h2 style="margin-top:8px">Vùng sáng <span>Cos và Pha</span> theo từng nhu cầu</h2>
-<p class="tb-section-head__desc">Kết hợp nhiệt màu tối ưu, hỗ trợ tầm nhìn rõ ràng trong nhiều điều kiện di chuyển.</p>
 </div>
 </div>
 <div class="tb-light-layout">
@@ -3581,7 +3580,6 @@
 <p class="tb-eyebrow">Xe đã thi công tại Auto365</p>
 <h2 style="margin-top:8px">Tham khảo các xe đã lắp đèn Titan Black tại Auto365</h2>
 </div>
-<p>Chọn hãng xe để xem các ca đã thực hiện. Các ca dưới đây sử dụng Titan Black 2.0; phương án Titan Black 2026 cần được kiểm tra theo cụm đèn và hệ điện thực tế.</p>
 </div>
 <div aria-label="Lọc ca thi công Titan Black theo hãng xe" class="tb-install-tabs" role="tablist">
 <button aria-pressed="true" class="tb-install-tab" data-install-filter="all" type="button">Tất cả</button>
@@ -4499,6 +4497,10 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
           installCards.forEach(card => { card.hidden = !(brand === "all" || card.dataset.installBrand === brand); });
         });
       });
+
+      const specifications = root.querySelector("#thong-so");
+      const comparison = root.querySelector("#so-sanh");
+      if (specifications && comparison) comparison.before(specifications);
     })();
   </script>
 </main>
