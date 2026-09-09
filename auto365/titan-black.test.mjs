@@ -38,6 +38,7 @@ assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạ
 assert.match(page, /tb-light-layout\{display:grid;grid-template-columns:minmax\(0,1\.28fr\) minmax\(320px,\.72fr\)/, 'lays out the lighting visual beside the Cos and Pha guidance');
 assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Chế độ Cos[\s\S]*?Chế độ Pha[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
+assert.match(page, /@media\(max-width:1199\.98px\) and \(min-width:768px\)\{\s*#tb-product \.tb-light-layout\{grid-template-columns:1fr\}/, 'stacks the lighting layout before its columns could collide on medium screens');
 for (const inlineReference of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-den-toyota-fortuner-moi-nhat-nam-2024', 'o-den-hyundai-i10']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${inlineReference}"`), `keeps the Titan reference inline: ${inlineReference}`);
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
 assert.match(page, /tb-case-feature[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black[\s\S]*?titan-back-5\.webp/, 'adds the supplied Mazda 3 case feature in the AES-style reference area');
