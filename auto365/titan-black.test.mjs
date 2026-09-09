@@ -33,3 +33,4 @@ assert.doesNotMatch(page, /#tb-product \.tb-light-shared\{[^}]*max-width:1120px[
 assert.match(page, /<div class="tb-price-line">\s*<div class="tb-price">6\.500\.000đ<\/div>\s*<span class="tb-price-vat">Chưa VAT<\/span>/, 'keeps the VAT note compact and inline with the price');
 assert.match(page, /<div class="tb-hero-commerce__main">\s*<a class="tb-btn tb-btn--dark"[\s\S]*?Nhắn Zalo tư vấn[\s\S]*?<a class="tb-btn tb-btn--primary" href="#kiem-tra-xe">Kiểm tra xe có lắp được không<\/a>/, 'places the vehicle check action beside Zalo consultation');
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
+assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
