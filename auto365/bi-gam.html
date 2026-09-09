@@ -2099,6 +2099,15 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var consultClose = document.getElementById('consult-close');
   var consultForm = document.getElementById('consult-form');
 
+  function validateNonBlank(form){
+    var ok = true;
+    Array.prototype.forEach.call(form.querySelectorAll('[required]'), function(f){
+      if (!f.value.trim()) { f.setCustomValidity('Vui lòng nhập nội dung, không chỉ để khoảng trắng.'); ok = false; }
+      else { f.setCustomValidity(''); }
+    });
+    return ok;
+  }
+
   var lastFocusedEl = null;
   function getFocusable(container){
     return Array.prototype.slice.call(container.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'));
@@ -2157,7 +2166,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 
   consultForm.addEventListener('submit', function(e){
     e.preventDefault();
-    if (!consultForm.reportValidity()) return;
+    if (!validateNonBlank(consultForm) || !consultForm.reportValidity()) return;
     openZaloRequest(consultForm, '.consult-modal-note');
   });
 
@@ -2203,7 +2212,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var videoForm = document.getElementById('video-lead-form');
   videoForm.addEventListener('submit', function(e){
     e.preventDefault();
-    if (!videoForm.reportValidity()) return;
+    if (!validateNonBlank(videoForm) || !videoForm.reportValidity()) return;
     openZaloRequest(videoForm, '.video-lead-note');
   });
 
