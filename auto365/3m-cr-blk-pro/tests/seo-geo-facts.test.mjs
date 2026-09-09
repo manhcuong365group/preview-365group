@@ -354,7 +354,7 @@ test('uses compact location action chips and omits the district label', () => {
 });
 
 test('limits case and price copy to evidence published on this preview', () => {
-  assert.match(html, /Mỗi hồ sơ hiển thị ảnh, cấu hình đã thi công hoặc nội dung tư vấn theo dữ liệu hiện có\./);
+  assert.doesNotMatch(html, /Mỗi hồ sơ hiển thị ảnh, cấu hình đã thi công hoặc nội dung tư vấn theo dữ liệu hiện có\./);
   assert.doesNotMatch(html, /Case có ảnh, mã phim và ngày thi công/);
   assert.match(html, /Giá tham khảo trọn xe theo nhóm xe; phạm vi hạng mục, panorama và xử lý phim cũ được xác nhận trước khi thi công\./);
   assert.doesNotMatch(html, /Giá tham khảo trọn xe theo nhóm xe, đã bao gồm VAT/);
