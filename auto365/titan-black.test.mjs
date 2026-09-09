@@ -24,6 +24,7 @@ for (const redundantCopy of [
   'Thông tin cần biết để chọn đúng phiên bản và xác nhận phương án theo xe thực tế.'
 ]) assert.doesNotMatch(page, new RegExp(redundantCopy.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `removes redundant copy: ${redundantCopy}`);
 assert.doesNotMatch(page, /content:"FIT CHECK"/, 'removes the decorative fit-check label');
+assert.doesNotMatch(page, /content:"VEHICLE FIT"/, 'removes the decorative vehicle-fit label');
 assert.match(page, /<div class="tb-spec-list">[\s\S]*Điện áp[\s\S]*Bảo hành[\s\S]*<\/div>\s*<div>[\s\S]*Nhiệt màu[\s\S]*Tuổi thọ công bố[\s\S]*<\/div>\s*<\/div>/, 'balances the specification list into two equal columns');
 assert.match(page, /#tb-product #thong-so \.tb-spec-list\{grid-template-columns:1fr;gap:0\}/, 'stacks the balanced specifications into one readable column on mobile');
 assert.match(page, /#tb-product #so-sanh \.tb-compare__media\{grid-template-columns:1fr\}/, 'stacks the comparison visual and upgrade summary on mobile');
