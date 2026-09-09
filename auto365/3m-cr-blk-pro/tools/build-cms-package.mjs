@@ -7,6 +7,7 @@ const pageDir = resolve(toolDir, '..');
 const sourcePath = resolve(pageDir, 'index.html');
 const outputDir = resolve(pageDir, 'cms');
 const htmlPath = resolve(outputDir, 'index.html');
+const contentPath = resolve(outputDir, 'content-only.html');
 const cssPath = resolve(outputDir, 'cr-blk-pro.css');
 const jsPath = resolve(outputDir, 'cr-blk-pro.js');
 
@@ -52,15 +53,33 @@ const javascript = [
   '',
 ].join('\n\n;\n\n');
 
+const iconSprite = html.match(/<svg\s+width=["']0["'][\s\S]*?<\/svg>/i)?.[0];
+const noscript = html.match(/<noscript>[\s\S]*?<\/noscript>/i)?.[0];
+const mainContent = html.match(/<main\b[^>]*>[\s\S]*?<\/main>/i)?.[0];
+
+if (!iconSprite || !mainContent) {
+  throw new Error('Không tìm thấy icon sprite hoặc nội dung <main> để tạo HTML content-only.');
+}
+
+const contentOnly = [
+  '<!-- Auto365 CR BLK Pro — dán phần này vào vùng nội dung CMS -->',
+  iconSprite,
+  noscript || '',
+  mainContent,
+  '',
+].join('\n');
+
 await mkdir(outputDir, { recursive: true });
 await Promise.all([
   writeFile(htmlPath, html, 'utf8'),
+  writeFile(contentPath, contentOnly, 'utf8'),
   writeFile(cssPath, css, 'utf8'),
   writeFile(jsPath, javascript, 'utf8'),
 ]);
 
 console.log(JSON.stringify({
   html: htmlPath,
+  contentOnly: contentPath,
   css: cssPath,
   javascript: jsPath,
   styleBlocks: styles.length,
