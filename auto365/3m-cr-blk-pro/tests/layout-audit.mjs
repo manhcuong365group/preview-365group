@@ -61,6 +61,10 @@ try {
     assert.ok(await page.locator('body').evaluate(e => e.classList.contains('form-modal-open')));
     await page.keyboard.press('Escape');
     assert.ok(await page.locator('.js-price-select[data-vehicle="suv"]').evaluate(e => e === document.activeElement));
+    await page.locator('.js-package[data-package="pro"]').click();
+    assert.equal(await page.locator('#form-config-code').inputValue(), 'CRP-SUV-40-35-15');
+    assert.equal(await page.locator('#form-offer-price').inputValue(), '18300000');
+    await page.keyboard.press('Escape');
     await page.locator('.js-package[data-package="standard"]').click();
     assert.equal(await page.locator('#form-offer-price').inputValue(), '17600000');
     await page.keyboard.press('Escape');

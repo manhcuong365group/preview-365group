@@ -291,6 +291,12 @@ test('keeps the consultation form stylesheet in the document head', () => {
   assert.equal((body.match(/<style(?:\s[^>]*)?>/g) || []).length, 0);
 });
 
+test('keeps Pro selection and lead response handling fail-closed', () => {
+  assert.match(html, /querySelectorAll\('\.js-package'\).*?event\.stopPropagation\(\)/s);
+  assert.match(html, /payload\.result&&payload\.result\.success===true/);
+  assert.match(html, /try\{previous=Number\(localStorage\.getItem\(cooldownKey\)\|\|0\)\}catch/);
+});
+
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
   assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
   assert.doesNotMatch(html, /class="pro-shop-gallery"/);
