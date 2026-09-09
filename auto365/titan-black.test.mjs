@@ -34,3 +34,4 @@ assert.match(page, /<div class="tb-price-line">\s*<div class="tb-price">6\.500\.
 assert.match(page, /<div class="tb-hero-commerce__main">\s*<a class="tb-btn tb-btn--dark"[\s\S]*?Nhắn Zalo tư vấn[\s\S]*?<a class="tb-btn tb-btn--primary" href="#kiem-tra-xe">Kiểm tra xe có lắp được không<\/a>/, 'places the vehicle check action beside Zalo consultation');
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
 assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
+assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạt tản nhiệt 45 mm hỗ trợ lưu thông khí phía sau cụm đèn/, 'balances the cooling card with its 45 mm fan detail');
