@@ -38,3 +38,5 @@ assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạ
 assert.match(page, /tb-light-layout\{display:grid;grid-template-columns:minmax\(0,1\.28fr\) minmax\(320px,\.72fr\)/, 'lays out the lighting visual beside the Cos and Pha guidance');
 assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Chế độ Cos[\s\S]*?Chế độ Pha[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
+assert.match(page, /id="bai-lien-quan"[\s\S]*?Xe đã lắp và tư liệu Titan Black[\s\S]*?toyota-nang-bi-led-titan-black-2[\s\S]*?kia-morning-titan-black-2[\s\S]*?do-den-bi-led-titan-black-20-tai-thanh-hoa/, 'adds the verified Titan case-study links near the end of the page');
+assert.match(page, /tb-related-grid\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/, 'lays out the six Titan references in a balanced desktop grid');
