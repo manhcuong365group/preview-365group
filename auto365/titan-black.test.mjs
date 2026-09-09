@@ -10,3 +10,4 @@ assert.match(page, /CANBUS\/decoder.*báo riêng|báo riêng.*CANBUS\/decoder/s,
 assert.match(page, /hình ảnh.*minh họa|minh họa.*hiệu quả thực tế/is, 'requires a light-image disclaimer');
 assert.match(page, /không cam kết kết quả đăng kiểm/i, 'requires a registration disclaimer');
 assert.match(page, /article\.tb-surface > figure\.tb-media img\{width:82%;height:82%\}/, 'requires a safe inset for the H4 image');
+assert.match(page, /\.tb-feature:nth-child\(1\) figure\{background-image:url\('titan-black\/hinh\/titan-back-6\.webp'\)\}/, 'requires the two-version image for the lens block');
