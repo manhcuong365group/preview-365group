@@ -40,3 +40,5 @@ assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shar
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
 assert.match(page, /id="bai-lien-quan"[\s\S]*?Xe đã lắp và tư liệu Titan Black[\s\S]*?toyota-nang-bi-led-titan-black-2[\s\S]*?kia-morning-titan-black-2[\s\S]*?do-den-bi-led-titan-black-20-tai-thanh-hoa/, 'adds the verified Titan case-study links near the end of the page');
 assert.match(page, /tb-related-grid\{display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\)/, 'lays out the six Titan references in a balanced desktop grid');
+assert.match(page, /tb-case-feature[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black[\s\S]*?titan-back-5\.webp/, 'adds the supplied Mazda 3 case feature in the AES-style reference area');
+assert.match(page, /tb-case-feature\{display:grid;grid-template-columns:minmax\(0,1fr\) minmax\(0,1fr\)/, 'keeps the Mazda 3 case feature in a balanced two-column layout');
