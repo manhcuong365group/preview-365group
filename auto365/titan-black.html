@@ -3207,6 +3207,10 @@
 #tb-product .tb-branch-stats div,#tb-product .tb-branch-stats a{display:flex;justify-content:space-between;align-items:center;min-height:46px;padding:0 12px;border:1px solid #dbe3ec;border-radius:10px;font-size:13px}
 #tb-product .tb-branch-stats a{color:inherit;text-decoration:none;transition:border-color .18s ease,background .18s ease}
 #tb-product .tb-branch-stats a:hover{border-color:#9ed8f2;background:#f7fcff}
+#tb-product .tb-trusted-address{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.9fr);gap:24px;align-items:center;padding:clamp(22px,3vw,34px);border:1px solid #cfe5ef;border-radius:18px;background:linear-gradient(120deg,#f4fbfe,#fff)}
+#tb-product .tb-trusted-address h2{margin:8px 0 0;color:#15213a!important;font-size:clamp(24px,2.4vw,34px)}
+#tb-product .tb-trusted-address__points{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0;padding:0;list-style:none}
+#tb-product .tb-trusted-address__points li{padding:12px 14px;border:1px solid #dbe8ef;border-radius:12px;background:#fff;color:#536173;font-size:var(--tb-fs-sm);font-weight:650}
 #tb-product .tb-technical-review{padding:20px;background:linear-gradient(135deg,#fbfdff,#f5faff);border:1px solid #d8e8f1;border-radius:18px}
 #tb-product .tb-technical-review__intro{margin:8px 0 14px;color:var(--tb-muted)}
 #tb-product .tb-technical-review__person{display:flex;align-items:center;gap:14px;padding:15px;border:1px solid #dce8f0;border-radius:14px;background:#fff}
@@ -3267,6 +3271,7 @@
   #tb-product .tb-light-layout{grid-template-columns:1fr}
   #tb-product .tb-light-copy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+@media(max-width:767.98px){#tb-product .tb-trusted-address,#tb-product .tb-trusted-address__points{grid-template-columns:1fr}}
 </style>
 <main class="tb-apple-cleanup" id="tb-product">
 <header class="tb-topbar">
@@ -4070,6 +4075,14 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
 <p>Hướng dẫn sử dụng và bảo hành.</p>
 </article>
 </div>
+</div>
+</section>
+<section class="tb-section" id="tb-trusted-address">
+<div class="tb-shell">
+<article class="tb-trusted-address">
+<div><p class="tb-eyebrow">Điểm lắp đặt tin cậy</p><h2>Địa chỉ lắp Titan Black uy tín</h2><p style="margin-top:12px">Nên chọn điểm lắp có kiểm tra trực tiếp cụm đèn, hệ điện và khả năng căn chỉnh trước khi xác nhận phương án thi công.</p></div>
+<ul class="tb-trusted-address__points"><li>Kiểm tra cấu hình theo xe</li><li>Căn chỉnh Cos/Pha trước bàn giao</li><li>Xác nhận hạng mục phát sinh</li><li>Hỗ trợ bảo hành sau lắp</li></ul>
+</article>
 </div>
 </section>
 <section class="tb-section" id="tb-handover">
