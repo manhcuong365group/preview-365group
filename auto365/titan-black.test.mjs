@@ -30,3 +30,5 @@ assert.match(page, /#tb-product #thong-so \.tb-spec-list\{grid-template-columns:
 assert.match(page, /#tb-product #so-sanh \.tb-compare__media\{grid-template-columns:1fr\}/, 'stacks the comparison visual and upgrade summary on mobile');
 assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:1fr\}\}/, 'stacks all consultation form fields on narrow phones');
 assert.doesNotMatch(page, /#tb-product \.tb-light-shared\{[^}]*max-width:1120px[^}]*}/, 'keeps the shared lighting visual at its original full-width treatment');
+assert.match(page, /<div class="tb-price-line">\s*<div class="tb-price">6\.500\.000đ<\/div>\s*<span class="tb-price-vat">Chưa VAT<\/span>/, 'keeps the VAT note compact and inline with the price');
+assert.match(page, /<div class="tb-hero-commerce__main">\s*<a class="tb-btn tb-btn--dark"[\s\S]*?Nhắn Zalo tư vấn[\s\S]*?<a class="tb-btn tb-btn--primary" href="#kiem-tra-xe">Kiểm tra xe có lắp được không<\/a>/, 'places the vehicle check action beside Zalo consultation');

@@ -2936,7 +2936,22 @@
 
 #tb-product .tb-hero-commerce__main{
   display:flex;
+  flex-wrap:wrap;
   gap:8px;
+}
+
+#tb-product .tb-price-line{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+}
+#tb-product .tb-price-vat{
+  color:var(--tb-muted);
+  font-size:var(--tb-fs-xs);
+  font-weight:650;
+}
+#tb-product .tb-hero-commerce__main .tb-btn--primary{
+  min-width:184px;
 }
 
 #tb-product .tb-hero-commerce__sub{
@@ -3242,14 +3257,14 @@
 <div class="tb-price-row">
 <div>
 <div class="tb-price-label">Giá tham khảo / cặp</div>
-<div class="tb-price">6.500.000đ</div>
-<p class="tb-price-note">Chưa VAT • công lắp và vật tư phát sinh xác nhận theo xe</p>
+<div class="tb-price-line"><div class="tb-price">6.500.000đ</div><span class="tb-price-vat">Chưa VAT</span></div>
+<p class="tb-price-note">Công lắp và vật tư phát sinh xác nhận theo xe</p>
 </div>
-<a class="tb-btn tb-btn--primary" href="#kiem-tra-xe">Kiểm tra xe có lắp được không</a>
 </div><div class="tb-hero-commerce"><div class="tb-hero-commerce__main">
 <a class="tb-btn tb-btn--dark" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">
     Nhắn Zalo tư vấn
   </a>
+<a class="tb-btn tb-btn--primary" href="#kiem-tra-xe">Kiểm tra xe có lắp được không</a>
 </div>
 <div class="tb-hero-commerce__sub">
 <a href="#kiem-tra-xe">Tư vấn theo xe</a>
