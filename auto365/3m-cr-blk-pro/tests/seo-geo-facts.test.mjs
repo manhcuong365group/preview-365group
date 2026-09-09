@@ -297,6 +297,11 @@ test('keeps Pro selection and lead response handling fail-closed', () => {
   assert.match(html, /try\{previous=Number\(localStorage\.getItem\(cooldownKey\)\|\|0\)\}catch/);
 });
 
+test('uses configuration-agnostic handover wording', () => {
+  assert.match(html, /Đối chiếu mã phim đã chốt cho từng vị trí kính và hướng dẫn tra cứu eWarranty/);
+  assert.doesNotMatch(html, /Đối chiếu đúng mã 40\/35\/15 và hướng dẫn tra cứu eWarranty/);
+});
+
 test('does not claim an unverified price confirmation and preserves certificate images', () => {
   assert.doesNotMatch(html, /được xác nhận ngày 27\/08\/2026/);
   assert.doesNotMatch(html, /class="pro-shop-gallery"/);
