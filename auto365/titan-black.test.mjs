@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { existsSync, readFileSync } from 'node:fs';
 
 const page = readFileSync(new URL('./titan-black.html', import.meta.url), 'utf8');
 
@@ -73,3 +73,9 @@ assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
 assert.match(page, /img\[alt="Phụ kiện đuôi vặn H4 Titan Black 2026"\]\{content:url\("titan-black\/hinh\/phu-kien-h4-bi-led-titan-black-2026\.jpg"\)/, 'uses the supplied H4 accessory image');
 for (const backlink of ['nhung-kinh-nghiem-can-biet-khi-do-den-o-to', 'co-nen-nang-cap-den-xe-o-to-khi-mua-xe-moi', 'bi-led-titan-black-2', 'bi-led-titan-black']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${backlink}"`), `keeps the original related article as an in-content backlink: ${backlink}`);
+const extractedInlineImages = Array.from({ length: 9 }, (_, index) => `titan-inline-${String(index + 1).padStart(2, '0')}.webp`);
+assert.doesNotMatch(page, /data:image\/(?:webp|png|jpe?g);base64,/, 'keeps product imagery out of inline base64 data URIs');
+for (const imageFile of extractedInlineImages) {
+  assert.match(page, new RegExp(`src="titan-black/hinh/${imageFile}"`), `references extracted image asset ${imageFile}`);
+  assert.ok(existsSync(new URL(`./titan-black/hinh/${imageFile}`, import.meta.url)), `stores extracted image asset ${imageFile}`);
+}
