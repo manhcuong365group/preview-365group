@@ -64,7 +64,8 @@ assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota
 assert.match(page, /class="tb-install-grid"[\s\S]*?Toyota Camry[\s\S]*?Kia Morning[\s\S]*?Tổng hợp các mẫu xe/, 'shows three real Titan Black case cards');
 for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${caseUrl}"`), `links the actual Titan case: ${caseUrl}`);
 assert.match(page, /installFilters\.forEach[\s\S]*?dataset\.installBrand/, 'makes the actual-installation brand filters functional');
-assert.match(page, /id="tb-actual-2026"[\s\S]*?Hình thực tế Titan Black 2026[\s\S]*?titan-black\/hinh\/titan-back-5\.webp/, 'shows the supplied Mazda 3 Titan Black image as one compact real-image section');
+assert.match(page, /id="tb-actual-2026"[\s\S]*?class="tb-actual-2026__grid"[\s\S]*?figcaption>Hình ảnh ghi nhận ca Mazda 3 nâng cấp Bi LED X-Light Titan Black\.<\/figcaption>[\s\S]*?titan-black\/hinh\/titan-back-5\.webp/, 'presents the supplied Mazda 3 image in a dedicated left-side feature panel');
+assert.match(page, /class="tb-actual-2026__badge">Hình thực tế<\/span>[\s\S]*?<h2>Mazda 3 nâng cấp Bi LED X-Light Titan Black<\/h2>[\s\S]*?class="tb-actual-2026__note"/, 'adds an AES-style right-side case summary for the Mazda 3 image');
 assert.match(page, /const pageFlow = \[[\s\S]*?"kiem-tra-xe"[\s\S]*?"video-teaser"[\s\S]*?"nhu-cau"[\s\S]*?"thong-so"[\s\S]*?"anh-sang"[\s\S]*?"thiet-ke"[\s\S]*?"tuong-thich"[\s\S]*?"so-sanh"[\s\S]*?"tb-fit-summary"[\s\S]*?"tb-consult-cta"[\s\S]*?"tb-actual-2026"[\s\S]*?"case-xe"[\s\S]*?"lap-dat"[\s\S]*?"tb-trusted-address"[\s\S]*?"faq"/, 'keeps the approved page flow through FAQ');
 assert.doesNotMatch(page, /id="tb-final-cta"/, 'removes the dark final consultation block requested by the user');
 assert.match(page, /pageFlow\.forEach[\s\S]*?root\.append\(section\);[\s\S]*?const footer = root\.querySelector\("\.tb-footer"\);[\s\S]*?if \(footer\) root\.append\(footer\);/, 'moves the footer after the ordered page flow instead of leaving a blank gap after the hero');
@@ -75,6 +76,7 @@ assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?--tb-mobile-gutter:cl
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-light-layout\{display:grid;grid-template-columns:1fr/, 'turns the flex-based light layout into a true one-column mobile layout');
 assert.match(page, /@media\(max-width:1199\.98px\) and \(min-width:768px\)\{[\s\S]*?\.tb-light-layout\{display:grid;grid-template-columns:minmax\(0,1fr\)/, 'uses a true stacked layout for the light visual at intermediate mobile and tablet widths');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-actual-2026\{max-width:none/, 'removes the desktop image width cap on mobile');
+assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-actual-2026__grid\{grid-template-columns:1fr/, 'stacks the Mazda 3 feature image and summary on mobile');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-section-head h2\{font-size:clamp\(/, 'uses fluid heading type on mobile instead of fixed pixel sizes');
 assert.match(page, /id="nhu-cau"[\s\S]*?<h2 style="margin-top:8px">Titan Black 2026 giải quyết vấn đề gì\?<\/h2>/, 'preserves the previously approved needs-section copy');
 assert.doesNotMatch(page, /Không nên quyết định chỉ dựa vào công suất\. Hãy bắt đầu từ tình huống lái xe và cấu hình cụm đèn hiện tại\./, 'removes the unapproved needs-section supporting sentence');
