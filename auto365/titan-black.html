@@ -356,6 +356,8 @@
     #tb-product .tb-checker label {
       display:grid;gap:5px;color:#5c6470;font-size:var(--tb-fs-xs);font-weight:700;
     }
+    #tb-product .tb-checker__consent { display:flex!important;align-items:flex-start;gap:8px;margin-top:12px;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important;font-weight:400!important; }
+    #tb-product .tb-checker__consent input { width:16px;height:16px;flex:0 0 auto;margin-top:1px;padding:0; }
 
     #tb-product .tb-checker input,
     #tb-product .tb-checker select {
@@ -3264,14 +3266,16 @@
 #tb-product #evidence{display:none}
 #tb-product #tb-why-buy{display:none}
 #tb-product #tb-fit-summary{display:block}
-#tb-product .tb-actual-2026{max-width:1120px;margin-inline:auto}
-#tb-product .tb-actual-2026__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:center}
+#tb-product .tb-actual-2026{max-width:1240px;margin-inline:auto}
+#tb-product .tb-actual-2026__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.96fr);gap:clamp(32px,5vw,64px);align-items:center}
 #tb-product .tb-actual-2026 figure{margin:0}
-#tb-product .tb-actual-2026__media{overflow:hidden;border-radius:16px;background:#0b121d}
+#tb-product .tb-actual-2026__media{overflow:hidden;border-radius:16px;background:#0b121d;box-shadow:0 12px 30px rgba(16,24,40,.08)}
 #tb-product .tb-actual-2026 img{display:block;width:100%;height:auto}
 #tb-product .tb-actual-2026 figcaption{margin-top:10px;text-align:center;color:var(--tb-subtle);font-size:var(--tb-fs-xs)}
-#tb-product .tb-actual-2026 h2{margin:0 0 22px;color:#171b24;font-size:clamp(28px,2.8vw,42px);text-align:left}
-#tb-product .tb-actual-2026__note{padding:20px;border:1px solid #ffc2c6;border-radius:16px;background:#fff7f7}
+#tb-product .tb-actual-2026__kicker{display:inline-flex;margin:0 0 18px;padding:8px 14px;border:1px solid #ff9ca4;border-radius:999px;color:#e92531;font-size:11px;font-weight:800;letter-spacing:.1em;line-height:1;text-transform:uppercase}
+#tb-product .tb-actual-2026 h2{margin:0;color:#171b24;font-size:clamp(26px,2.7vw,40px);line-height:1.12;text-align:left}
+#tb-product .tb-actual-2026__rule{width:84px;height:2px;margin:22px 0 26px;background:#e92531}
+#tb-product .tb-actual-2026__note{padding:22px 20px;border:1px solid #ffc2c6;border-radius:16px;background:#fff8f8}
 #tb-product .tb-actual-2026__note p{color:#4f5560;line-height:1.7}
 #tb-product .tb-actual-2026__source{margin-top:12px!important;color:var(--tb-subtle)!important;font-size:var(--tb-fs-xs)}
 #tb-product .tb-technical-review{padding:20px;background:linear-gradient(135deg,#fbfdff,#f5faff);border:1px solid #d8e8f1;border-radius:18px}
@@ -3470,7 +3474,8 @@
 <li><strong>Lắp đặt</strong><br/>Kiểm tra xe thực tế · có phụ kiện H4</li>
 </ul>
 </article>
-<form action="/api/booking" class="tb-checker tb-surface" id="tb-fit-form" method="post">
+<form action="/api/leads/lighting" class="tb-checker tb-surface" id="tb-fit-form" method="post">
+<input name="source_page" type="hidden" value="titan-black-2026"/>
 <p class="tb-eyebrow">Tư vấn theo dòng xe</p>
 <h2>Nhận tư vấn phương án lắp</h2>
 <p style="margin-top:8px">Gửi thông tin cơ bản để Auto365 kiểm tra sơ bộ theo cấu hình thực tế của xe.</p>
@@ -3494,6 +3499,7 @@
             <select name="need"><option>Kiểm tra phương án lắp</option><option>Nhận báo giá hoàn thiện</option><option>Tư vấn lịch lắp</option></select>
 </label>
 </div>
+<label class="tb-checker__consent"><input name="consent" required="" type="checkbox"/>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat" rel="noopener" target="_blank">Chính sách bảo mật</a>.</label>
 <div class="tb-checker__actions">
 <button class="tb-btn tb-btn--dark" type="submit">Nhận tư vấn phương án lắp</button>
 <a class="tb-btn tb-btn--zalo" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo</a>
@@ -3634,46 +3640,6 @@
 </article>
 </div>
 </div>
-</section><section class="tb-section tb-section--soft" id="evidence">
-<div class="tb-shell">
-<div class="tb-section-head">
-<div>
-<p class="tb-eyebrow">Kiểm chứng kỹ thuật</p>
-<h2 style="margin-top:8px">Tách rõ thông số công bố và kết quả trên xe thật</h2>
-</div>
-<p>Đây là lớp nội dung quan trọng cho người mua, SEO và AI Search: dữ liệu nào là thông số sản phẩm, dữ liệu nào phải kiểm tra trên từng xe.</p>
-</div>
-<div class="tb-evidence-grid">
-<article class="tb-evidence-card tb-surface">
-<div class="tb-evidence-card__head">
-<span class="tb-evidence-card__badge">Thông số công bố</span>
-<strong>Titan Black 2026</strong>
-</div>
-<div class="tb-evidence-metrics">
-<div><small>Cos</small><strong>~70 W/đèn</strong></div>
-<div><small>Pha</small><strong>~80 W/đèn</strong></div>
-<div><small>Cos</small><strong>5200K</strong></div>
-<div><small>Tâm Pha</small><strong>3000K</strong></div>
-</div>
-<p>Không xem các số trên như kết quả đo độc lập cho mọi xe.</p>
-</article>
-<article class="tb-evidence-card tb-surface">
-<div class="tb-evidence-card__head">
-<span class="tb-evidence-card__badge">Khi lắp trên xe</span>
-<strong>Cần kiểm tra 5 điểm</strong>
-</div>
-<ul class="tb-evidence-list">
-<li>Đường cắt Cos và chiều cao vùng sáng</li>
-<li>Điểm hội tụ Pha</li>
-<li>Độ chói với phương tiện đối diện</li>
-<li>Báo lỗi hệ thống điện/CANBUS nếu có</li>
-<li>Độ kín cụm đèn sau thi công</li>
-</ul>
-<p>Khi có test thật, nên lưu mẫu xe, ngày test, điện áp, thiết bị đo và người thực hiện.</p>
-</article>
-</div>
-<div class="tb-evidence-note"><strong>Nguyên tắc công khai:</strong> không dùng một ảnh vùng sáng hoặc một lần đo để suy rộng tuyệt đối cho mọi xe.</div>
-</div>
 </section><section class="tb-section" id="case-xe">
 <div class="tb-shell">
 <div class="tb-section-head">
@@ -3800,38 +3766,17 @@
 </figure>
 </div>
 </section>
-<section class="tb-section tb-why-buy" id="tb-why-buy">
-<div class="tb-shell">
-<div class="tb-section-head">
-<div>
-<p class="tb-eyebrow">Lý do lựa chọn</p>
-<h2 style="margin-top:8px">Vì sao nên chọn Titan Black 2026 cho xe của bạn?</h2>
-</div>
-</div>
-<div class="tb-why-buy__grid">
-<article class="tb-why-buy__card">
-<h3>Cần nâng cấp ánh sáng cho nhu cầu đi đêm</h3>
-<p>Vùng sáng cần được kiểm tra theo cụm đèn và căn chỉnh thực tế trước khi xác nhận phương án lắp. Xem thêm <a href="https://auto365.vn/nhung-kinh-nghiem-can-biet-khi-do-den-o-to">những điều cần biết trước khi độ đèn ô tô</a>.</p>
-</article>
-<article class="tb-why-buy__card">
-<h3>Cần căn chỉnh vùng Pha theo cụm đèn</h3>
-<p>Tâm Pha 3000K là cấu hình sản phẩm; hiệu quả thực tế cần được kiểm tra sau khi căn chỉnh theo từng xe.</p>
-</article>
-<article class="tb-why-buy__card">
-<h3>Nâng sáng nhưng vẫn hài hòa với xe</h3>
-<p>Thân ánh bạc, lens trong cùng hai kiểu lens giúp hướng đến một phương án nâng sáng phù hợp với nhiều cụm đèn. Nếu xe mới, hãy cân nhắc thêm <a href="https://auto365.vn/co-nen-nang-cap-den-xe-o-to-khi-mua-xe-moi">có nên nâng cấp đèn khi mua xe mới</a>.</p>
-</article>
-</div>
-</div>
-</section>
+
 <section class="tb-section" id="tb-actual-2026">
 <div class="tb-shell tb-actual-2026">
 <div class="tb-actual-2026__grid">
-<figure class="tb-actual-2026__media"><img alt="Mazda 3 nâng cấp Bi LED X-Light Titan Black" decoding="async" height="800" loading="lazy" src="titan-black/hinh/titan-back-5.webp" width="1200"/><figcaption>Hình ảnh ghi nhận ca Mazda 3 nâng cấp Bi LED X-Light Titan Black.</figcaption></figure>
+<figure class="tb-actual-2026__media"><img alt="Mazda 3 nâng cấp Bi LED X-Light Titan Black" decoding="async" height="800" loading="lazy" src="titan-black/hinh/titan-back-5.webp" width="1200"/><figcaption>Hình ảnh ca Mazda 3 nâng cấp Bi LED X-Light Titan Black tại Auto365 Trụ Sở Chính.</figcaption></figure>
 <div>
+<p class="tb-actual-2026__kicker">CA LẮP THỰC TẾ</p>
 <h2>Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365.vn – Trụ Sở Chính</h2>
-<div class="tb-actual-2026__note"><p>Theo tư liệu hình ảnh Mazda 3 do Auto365.vn – Trụ Sở Chính cung cấp, xe được nâng cấp Bi LED X-Light Titan Black 2026 tại cụm đèn chính. Phương án lắp thực tế cần được kiểm tra theo cụm đèn, không gian phía sau và hệ điện của từng xe trước khi xác nhận thi công.</p></div>
-<p class="tb-actual-2026__source">Nguồn: tư liệu hình ảnh Mazda 3 nâng cấp Titan Black 2026 do Auto365.vn – Trụ Sở Chính cung cấp.</p>
+<div class="tb-actual-2026__rule" aria-hidden="true"></div>
+<div class="tb-actual-2026__note"><p>Theo tư liệu ca Mazda 3 tại Auto365 Trụ Sở Chính, xe được nâng cấp Bi LED X-Light Titan Black 2026 ở cụm đèn chính. Cấu hình được kiểm tra theo cụm đèn, không gian phía sau và hệ điện của xe trước khi thi công.</p></div>
+<p class="tb-actual-2026__source">Nguồn: tư liệu ca Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365 Trụ Sở Chính.</p>
 </div>
 </div>
 </div>
@@ -3899,105 +3844,6 @@
         </a>
 </aside>
 </div>
-</section><section class="tb-section" id="gia-bao-gom">
-<div class="tb-shell">
-<div class="tb-section-head">
-<div>
-<p class="tb-eyebrow">Giá rõ trước khi đặt lịch</p>
-<h2 style="margin-top:8px">6.500.000đ gồm gì và có thể phát sinh gì?</h2>
-</div>
-<p>Tách rõ giá sản phẩm và phần phải kiểm tra theo xe giúp giảm do dự trước khi liên hệ.</p>
-</div>
-<div class="tb-cost-grid"><article class="tb-cost-card tb-cost-card--included tb-surface">
-<p class="tb-cost-card__label">Giá sản phẩm tham khảo</p>
-<div class="tb-cost-card__price">6.500.000đ</div>
-<p>/ cặp • chưa VAT</p>
-<h3 style="margin-top:16px">Giá này gồm</h3>
-<ul>
-<li>02 Bi LED Titan Black 2026</li>
-<li>Lens tròn hoặc lens vuông</li>
-<li>Bảo hành sản phẩm 36 tháng</li>
-<li>Công lắp và vật tư được xác nhận theo xe</li>
-</ul>
-</article>
-<article class="tb-cost-card tb-surface">
-<p class="tb-cost-card__label">Có thể phát sinh theo xe</p>
-<dl class="tb-extra-price-list">
-<div><dt>Hạng mục phát sinh</dt><dd>Kiểm tra và báo theo từng xe</dd></div>
-</dl>
-<a class="tb-btn tb-btn--dark tb-btn--wide" href="#kiem-tra-xe">Kiểm tra xe trước khi chốt</a>
-</article></div>
-</div>
-</section><section class="tb-section tb-section--soft" id="tb-booking">
-<div class="tb-shell">
-<div class="tb-section-head">
-<div>
-<p class="tb-eyebrow">Đặt lịch / nhận tư vấn</p>
-<h2 style="margin-top:8px">Chọn cách bạn muốn tiếp tục</h2>
-</div>
-<p>Không bắt khách đi tìm nút liên hệ. Sau khi xem giá, luôn có bước hành động rõ ràng.</p>
-</div>
-<div class="tb-conversion-grid">
-<article class="tb-conversion-card tb-conversion-card--primary tb-surface">
-<div class="tb-conversion-card__label">Khuyến nghị</div>
-<h3>Kiểm tra xe trước khi lắp</h3>
-<p>Phù hợp nếu bạn chưa biết xe cần pát, giắc hay CANBUS/decoder.</p>
-<form class="tb-booking-form" id="tb-booking-form">
-<div class="tb-booking-form__grid">
-<label>Họ tên
-              <input name="name" placeholder="Tên khách hàng" required=""/>
-</label>
-<label>Số điện thoại
-              <input inputmode="tel" name="phone" placeholder="09xx xxx xxx" required=""/>
-</label>
-<label>Xe
-              <input name="vehicle" placeholder="Ví dụ: Fortuner 2023" required=""/>
-</label>
-<label>Chi nhánh mong muốn
-              <input name="branch" placeholder="Khu vực / chi nhánh"/>
-</label>
-<label>Nhu cầu
-  <select name="need">
-<option value="fit-check">Kiểm tra xe phù hợp</option>
-<option value="booking">Đặt lịch lắp</option>
-<option value="price">Nhận báo giá chi tiết</option>
-<option value="technical">Tư vấn kỹ thuật</option>
-</select>
-</label>
-<label>Khung giờ mong muốn
-  <select name="time">
-<option value="">Chọn khung giờ</option>
-<option>Sáng</option>
-<option>Chiều</option>
-<option>Tối</option>
-</select>
-</label></div>
-<div class="tb-booking-form__actions">
-<button class="tb-btn tb-btn--primary" type="submit">Gửi yêu cầu đặt lịch</button>
-<span aria-live="polite" class="tb-booking-form__status" data-booking-status="" role="status"></span>
-</div>
-</form>
-</article>
-<article class="tb-conversion-card tb-surface">
-<div class="tb-conversion-card__label">Tư vấn nhanh</div>
-<h3>Gửi ảnh cụm đèn qua Zalo</h3>
-<p>Nhanh nhất nếu bạn muốn kỹ thuật viên xem cụm đèn và tư vấn sơ bộ trước.</p>
-<ul class="tb-conversion-list">
-<li>Ảnh mặt trước cụm đèn</li>
-<li>Ảnh phía sau / nắp chụp nếu có</li>
-<li>Hãng xe, mẫu xe, đời xe</li>
-</ul>
-<a class="tb-btn tb-btn--dark tb-btn--wide" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Mở Zalo gửi ảnh</a>
-</article>
-<article class="tb-conversion-card tb-surface">
-<div class="tb-conversion-card__label">Cần ngay</div>
-<h3>Gọi kỹ thuật</h3>
-<p>Phù hợp khi cần hỏi nhanh về lịch, chi nhánh hoặc tình trạng xe.</p>
-<div class="tb-conversion-phone">0365 365 911</div>
-<a class="tb-btn tb-btn--soft tb-btn--wide" href="tel:0365365911">Gọi ngay</a>
-</article>
-</div>
-</div>
 </section>
 <section class="tb-section tb-section--soft" id="lap-dat">
 <div class="tb-shell">
@@ -4047,135 +3893,8 @@
 </article>
 </div>
 </section>
-<section class="tb-section" id="tb-handover">
-<div class="tb-shell tb-handover-grid">
-<figure class="tb-handover-media tb-surface tb-media tb-media--photo">
-<img alt="Bộ Bi LED Titan Black 2026" decoding="async" height="960" loading="lazy" src="titan-black/hinh/titan-inline-09.webp" width="1440"/>
-</figure>
-<article class="tb-handover-note tb-surface">
-<p class="tb-eyebrow">Checklist bàn giao</p>
-<h2 style="margin-top:8px">Nhận xe xong nên kiểm tra gì?</h2>
-<ul>
-<li>Vùng sáng Cos</li>
-<li>Vùng sáng Pha</li>
-<li>Độ chói với xe đối diện</li>
-<li>Báo lỗi đèn trên taplo</li>
-<li>Độ kín cụm đèn</li>
-<li>Thao tác chuyển Cos/Pha</li>
-</ul>
-<p style="margin-top:12px">
-          Nếu vùng sáng lệch, quá cao hoặc có dấu hiệu gây chói, nên yêu cầu kỹ thuật viên căn chỉnh lại trước khi bàn giao.
-        </p>
-</article>
-</div>
-</section>
-<section class="tb-section tb-section--soft" id="review">
-<div class="tb-shell">
-<div class="tb-section-head">
-<div>
-<p class="tb-eyebrow">Đánh giá đã xác minh</p>
-<h2 style="margin-top:8px">Khách đã lắp Titan Black nói gì?</h2>
-</div>
-<p>Chỉ hiển thị phản hồi có nguồn thật. Không tự tạo rating hoặc lời nhận xét.</p>
-</div>
-<div class="tb-review-summary tb-surface"><div class="tb-review-summary__score">
-<span class="tb-review-summary__score-value">Chưa công bố</span>
-<small>Chỉ cập nhật khi có đánh giá đã xác minh</small>
-</div>
-<div class="tb-review-summary__breakdown">
-<div><span>Không hiển thị điểm số khi chưa có dữ liệu xác minh.</span></div>
-</div>
-<div class="tb-review-summary__sources">
-<span>Nguồn xác minh:</span>
-<b>Được cập nhật khi có nguồn đối chiếu.</b>
-</div></div>
-<div class="tb-review-grid"><article class="tb-review-card tb-surface">
-<div class="tb-review-card__top">
-<div class="tb-review-avatar">KH</div>
-<div>
-<strong>Đánh giá sẽ chỉ hiển thị khi có nguồn xác minh</strong>
-</div>
-</div>
-<p class="tb-review-quote">
-    Chưa có phản hồi khách hàng được xác minh để công bố.
-  </p>
-<dl class="tb-review-meta">
-<div><dt>Trạng thái</dt><dd>Chờ nguồn xác minh</dd></div>
-</dl>
-<span class="tb-review-verified">✓ Đã xác minh mua/lắp</span>
-</article><article class="tb-review-card tb-surface">
-<div class="tb-review-card__top">
-<div class="tb-review-avatar">KH</div>
-<div>
-<strong>Đánh giá sẽ chỉ hiển thị khi có nguồn xác minh</strong>
-</div>
-</div>
-<p class="tb-review-quote">
-    Chưa có phản hồi khách hàng được xác minh để công bố.
-  </p>
-<dl class="tb-review-meta">
-<div><dt>Trạng thái</dt><dd>Chờ nguồn xác minh</dd></div>
-</dl>
-<span class="tb-review-verified">✓ Đã xác minh mua/lắp</span>
-</article><article class="tb-review-card tb-surface">
-<div class="tb-review-card__top">
-<div class="tb-review-avatar">KH</div>
-<div>
-<strong>Đánh giá sẽ chỉ hiển thị khi có nguồn xác minh</strong>
-</div>
-</div>
-<p class="tb-review-quote">
-    Chưa có phản hồi khách hàng được xác minh để công bố.
-  </p>
-<dl class="tb-review-meta">
-<div><dt>Trạng thái</dt><dd>Chờ nguồn xác minh</dd></div>
-</dl>
-<span class="tb-review-verified">✓ Đã xác minh mua/lắp</span>
-</article></div>
-</div>
-</section><section class="tb-section tb-section--soft" id="production-data">
-<div class="tb-shell">
-<div class="tb-section-head">
-<div>
-<p class="tb-eyebrow">Trạng thái dữ liệu</p>
-<h2 style="margin-top:8px">Chỉ công bố dữ liệu có thể kiểm chứng</h2>
-</div>
-<p>Thông tin chỉ được hiển thị sau khi có nguồn đối chiếu phù hợp.</p>
-</div>
-<div class="tb-production-grid">
-<article class="tb-production-card tb-surface">
-<span>01</span>
-<h3>Case xe thật</h3>
-<ul>
-<li>Hồ sơ xe</li>
-<li>Ảnh đối chiếu</li>
-<li>Thông tin cấu hình</li>
-</ul>
-</article>
-<article class="tb-production-card tb-surface">
-<span>02</span>
-<h3>Review thật</h3>
-<ul>
-<li>Phản hồi có nguồn</li>
-</ul>
-</article>
-<article class="tb-production-card tb-surface">
-<span>03</span>
-<h3>Giá production</h3>
-<ul>
-<li>Chính sách giá đã xác nhận</li>
-</ul>
-</article>
-<article class="tb-production-card tb-surface">
-<span>04</span>
-<h3>Kênh bán hàng</h3>
-<ul>
-<li>Kênh tư vấn chính thức</li>
-</ul>
-</article>
-</div>
-</div>
-</section><section class="tb-section" id="trust">
+
+<section class="tb-section" id="trust">
 <div class="tb-shell">
 <div class="tb-section-head">
 <div>
@@ -4206,7 +3925,7 @@
 </div>
 </div>
 <p class="tb-trust-card__copy">
-    Rà soát khả năng tương thích thiết bị, nguồn điện, kết nối, đi dây, hiệu chuẩn và tiêu chí nghiệm thu trước bàn giao.
+    Đã kiểm duyệt nội dung kỹ thuật của bài Titan Black 2026: khả năng tương thích thiết bị, nguồn điện, kết nối, đi dây, căn chỉnh và tiêu chí nghiệm thu trước bàn giao.
   </p>
 <a class="tb-trust-card__link" href="https://auto365.vn/tac-gia/nguyen-quang-dao" rel="noopener" target="_blank">
     Xem hồ sơ chuyên môn →
@@ -4227,46 +3946,13 @@
           Thông số phải đối chiếu nguồn sản phẩm; case xe, review, thiết bị đo và kết quả thử chỉ hiển thị khi có dữ liệu thật để kiểm chứng.
         </div>
 </div>
-</section><section class="tb-section tb-section--soft" id="tb-nearby">
-<div class="tb-shell">
-<div class="tb-branch-compact">
-<article class="tb-branch-card tb-surface">
-<p class="tb-eyebrow">Hệ thống Auto365</p>
-<h2 style="margin-top:8px">Lắp Titan Black tại Auto365 gần bạn</h2>
-<p style="margin-top:8px">Chọn chi nhánh thuận tiện để kiểm tra xe và xác nhận phương án lắp trước khi thi công.</p>
-<div class="tb-branch-card__actions">
-<a class="tb-btn tb-btn--primary" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo</a>
-<a class="tb-btn tb-btn--dark" href="tel:0365365911">Gọi 0365 365 911</a>
-<a class="tb-btn tb-btn--soft" href="#kiem-tra-xe">Gửi thông tin tư vấn</a>
-</div>
-</article>
-<article class="tb-branch-card tb-branch-card--coverage tb-surface">
-<h2 style="margin-top:8px">91 điểm · 33 tỉnh thành</h2>
-<div class="tb-branch-stats"><a aria-label="Xem chi nhánh Auto365 miền Bắc" href="https://auto365.vn/chi-nhanh"><span>Miền Bắc</span><strong>41 điểm</strong></a><a aria-label="Xem chi nhánh Auto365 miền Trung" href="https://auto365.vn/chi-nhanh"><span>Miền Trung</span><strong>26 điểm</strong></a><a aria-label="Xem chi nhánh Auto365 miền Nam" href="https://auto365.vn/chi-nhanh"><span>Miền Nam</span><strong>24 điểm</strong></a></div>
-<div class="tb-branch-card__actions"><a class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh">Xem toàn bộ hệ thống Auto365 →</a></div>
-</article>
-</div>
-</div>
 </section>
-<section class="tb-section" id="tb-technical-review">
-<div class="tb-shell">
-<article class="tb-technical-review">
-<h2>Thông tin cố vấn kỹ thuật</h2>
-<div class="tb-technical-review__person">
-<div aria-hidden="true" class="tb-technical-review__avatar">NQĐ</div>
-<div>
-<h3>Nguyễn Quang Đạo</h3>
-<p>Cố vấn kỹ thuật · Chuyên môn đèn ô tô tại Auto365.vn – Trụ Sở Chính.</p>
-<p><a href="https://auto365.vn/tac-gia/nguyen-quang-dao" rel="noopener" target="_blank">Xem hồ sơ chuyên môn →</a></p>
-</div>
-</div>
-</article>
-</div>
-</section>
+
 <section class="tb-section tb-section--soft" id="faq">
 <div class="tb-shell tb-faq">
 <div>
-<form action="/api/booking" class="tb-faq__form" id="tb-faq-form" method="post">
+<form action="/api/leads/lighting" class="tb-faq__form" id="tb-faq-form" method="post">
+<input name="source_page" type="hidden" value="titan-black-2026"/>
 <h3>Nhận tư vấn miễn phí</h3>
 <div class="tb-faq__form-grid">
 <label><span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">*</b></span><input name="name" placeholder="Nhập họ tên" required=""/></label>
@@ -4284,7 +3970,7 @@
 <a aria-label="Tìm chi nhánh" class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M20 10.5c0 5.2-8 10.5-8 10.5S4 15.7 4 10.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.5" r="2.5"/></svg><span>Tìm chi nhánh</span></a>
 </div>
 <p aria-live="polite" class="tb-form-status" data-form-status="" role="status"></p>
-<p class="tb-faq__form-note">Yêu cầu được gửi đến Auto365; hoặc liên hệ <a href="tel:0365365911">Hotline 0365 365 911</a> khi cần hỗ trợ nhanh.</p>
+<p class="tb-faq__form-note">Auto365 chỉ xác nhận tiếp nhận sau khi hệ thống trả về mã yêu cầu; hoặc liên hệ <a href="tel:0365365911">Hotline 0365 365 911</a> khi cần hỗ trợ nhanh.</p>
 </form>
 </div>
 <div class="tb-faq__questions">
@@ -4292,7 +3978,7 @@
 <div class="tb-faq-list">
 <details class="tb-surface">
 <summary>Titan Black 2026 giá bao nhiêu? Giá đã gồm công lắp chưa?</summary>
-<p>Giá tham khảo là 6.500.000 VNĐ/cặp (2 đèn), chưa gồm VAT và áp dụng cho cả lens tròn/lens vuông. Công lắp, pát, giắc, dây, CANBUS/decoder hoặc vật tư phát sinh nếu có sẽ được kiểm tra và báo riêng theo từng xe.</p>
+<p>Giá tham khảo là 6.500.000 VNĐ/cặp (2 đèn), chưa bao gồm VAT và áp dụng cho cả lens tròn/lens vuông. Công lắp, pát, giắc, dây, CANBUS/decoder hoặc vật tư phát sinh nếu có sẽ được kiểm tra và báo riêng theo từng xe.</p>
 </details>
 <details class="tb-surface">
 <summary>Xe tôi nên chọn lens tròn hay lens vuông?</summary>
@@ -4300,7 +3986,7 @@
 </details>
 <details class="tb-surface">
 <summary>Ánh sáng Cos 5200K và tâm Pha 3000K phù hợp khi đi đêm thế nào?</summary>
-<p>Cos 5200K ưu tiên vùng sáng rõ, dịu mắt và dễ quan sát. Tâm Pha 3000K hỗ trợ nhận diện mặt đường khi đi mưa hoặc sương mù; hiệu quả thực tế cần được căn chỉnh theo từng xe.</p>
+<p>Cos 5200K và tâm Pha 3000K là cấu hình công bố của sản phẩm. Vùng sáng cần được kiểm tra và căn chỉnh theo cụm đèn thực tế của từng xe sau khi lắp.</p>
 </details>
 <details class="tb-surface">
 <summary>Xe dùng chân H4 có lắp Titan Black được không?</summary>
@@ -4321,26 +4007,7 @@
 </div>
 </div>
 </section>
-<section class="tb-section" id="bai-lien-quan">
-<div class="tb-shell">
-<div class="tb-section-head"><div><p class="tb-eyebrow">Hồ sơ thi công</p><h2 style="margin-top:8px">Ca lắp thực tế Titan Black</h2></div></div>
-<article class="tb-case-feature">
-<figure class="tb-case-feature__media">
-<img alt="Mazda 3 nâng cấp Bi LED X-Light Titan Black" decoding="async" height="800" loading="lazy" src="titan-black/hinh/titan-back-5.webp" width="1200"/>
-<figcaption>Hình ảnh ghi nhận ca Mazda 3 nâng cấp Bi LED X-Light Titan Black.</figcaption>
-</figure>
-<div>
-<span class="tb-case-feature__tag">Ca lắp thực tế</span>
-<h3>Mazda 3 nâng cấp Bi LED X-Light Titan Black</h3>
-<div class="tb-case-feature__note">
-<p>Theo tư liệu ca lắp Mazda 3, xe được nâng cấp Bi LED X-Light Titan Black tại cụm đèn chính. Cấu hình ghi nhận gồm lens vuông, điện áp 12–16 V, bảo hành 3 năm và nhiệt màu Cos 5200K / tâm Pha 3000K.</p>
-<p style="margin-top:12px">Phương án lắp thực tế cần được kiểm tra theo cụm đèn, không gian phía sau và hệ điện của từng xe trước khi xác nhận thi công.</p>
-</div>
-<p class="tb-case-feature__source">Nguồn: tư liệu hình ảnh Mazda 3 nâng cấp Titan Black do Auto365 cung cấp.</p>
-</div>
-</article>
-</div>
-</section>
+
 <footer class="tb-footer">
 <div class="tb-shell">
       Bi LED Titan Black 2026 • Auto365
@@ -4411,33 +4078,37 @@
           const submit = form.querySelector('button[type="submit"]');
           const status = form.querySelector("[data-form-status]");
           const data = new FormData(form);
-          const payload = {
-            name: data.get("name"),
-            phone: data.get("phone"),
-            vehicle: [data.get("brand"), data.get("model")].filter(Boolean).join(" ") || data.get("vehicle") || "Chưa cung cấp",
-            area: data.get("area") || "",
-            year: data.get("year") || "",
-            need: data.get("need") || "Tư vấn Titan Black 2026",
-            source: "titan-black-2026",
-            timestamp: new Date().toISOString()
-          };
+          const idempotencyKey = crypto.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+          data.set("full_name", data.get("name") || "");
+          data.set("vehicle", [data.get("brand"), data.get("model")].filter(Boolean).join(" ") || data.get("vehicle") || "Chưa cung cấp");
+          data.set("source_page", "titan-black-2026");
+          data.set("request_type", "remote_quote");
+          data.set("privacy_consent", data.get("consent") === "on" ? "1" : "");
+          data.set("consent_timestamp", new Date().toISOString());
+          data.set("idempotency_key", idempotencyKey);
           if (submit) { submit.disabled = true; submit.textContent = "Đang gửi yêu cầu…"; }
           if (status) { status.dataset.state = ""; status.textContent = ""; }
+          const controller = new AbortController();
+          const timeout = window.setTimeout(() => controller.abort(), 12000);
           try {
             const response = await fetch(form.action, {
               method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(payload)
+              body:data,
+              headers:{ "Accept":"application/json", "X-Idempotency-Key":idempotencyKey },
+              signal:controller.signal
             });
-            if (!response.ok) throw new Error(`Booking API returned ${response.status}`);
+            let payload = {};
+            try { payload = await response.json(); } catch (_) {}
+            if (!response.ok || !payload.lead_id) throw new Error("invalid_response");
             form.reset();
-            if (status) status.textContent = "Đã gửi yêu cầu. Auto365 sẽ liên hệ lại sớm nhất.";
+            if (status) status.textContent = `Auto365 đã nhận yêu cầu. Mã tiếp nhận: ${String(payload.lead_id).slice(0,60)}.`;
           } catch (error) {
             if (status) {
               status.dataset.state = "error";
-              status.textContent = "Hệ thống chưa tiếp nhận được yêu cầu. Vui lòng liên hệ Hotline 0365 365 911 hoặc gửi ảnh qua Zalo.";
+              status.textContent = error.name === "AbortError" ? "Hệ thống phản hồi chậm. Vui lòng thử lại hoặc liên hệ Hotline 0365 365 911." : "Chưa gửi được yêu cầu. Vui lòng thử lại, gọi Hotline 0365 365 911 hoặc nhắn Zalo.";
             }
           } finally {
+            window.clearTimeout(timeout);
             if (submit) { submit.disabled = false; submit.textContent = form.id === "tb-faq-form" ? "Gửi yêu cầu tư vấn" : "Nhận tư vấn phương án lắp"; }
           }
         });
@@ -4445,18 +4116,18 @@
 
       root.querySelectorAll("#faq details").forEach(detail => {
         const summary = detail.querySelector("summary");
-        let scrollPosition = null;
-        const preserveScrollPosition = () => { scrollPosition = window.scrollY; };
+        let summaryTop = null;
+        const preserveSummaryPosition = () => { summaryTop = summary?.getBoundingClientRect().top ?? null; };
 
-        summary?.addEventListener("pointerdown", preserveScrollPosition, { passive:true });
+        summary?.addEventListener("pointerdown", preserveSummaryPosition, { passive:true });
         summary?.addEventListener("keydown", event => {
-          if (event.key === "Enter" || event.key === " ") preserveScrollPosition();
+          if (event.key === "Enter" || event.key === " ") preserveSummaryPosition();
         });
         detail.addEventListener("toggle", () => {
-          if (scrollPosition === null) return;
+          if (summaryTop === null || !summary) return;
           requestAnimationFrame(() => {
-            window.scrollTo({ top:scrollPosition, behavior:"auto" });
-            scrollPosition = null;
+            window.scrollBy({ top:summary.getBoundingClientRect().top - summaryTop, behavior:"auto" });
+            summaryTop = null;
           });
         });
       });
