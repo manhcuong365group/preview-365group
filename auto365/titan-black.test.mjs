@@ -4,6 +4,10 @@ import { existsSync, readFileSync } from 'node:fs';
 const page = readFileSync(new URL('./titan-black.html', import.meta.url), 'utf8');
 
 assert.match(page, /<meta content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"\/>/, 'keeps the GitHub Pages preview out of search indexes while allowing link discovery');
+assert.doesNotMatch(page, /content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/, 'does not conflict with the preview noindex directive');
+assert.doesNotMatch(page, /"offers"\s*:\s*\{\s*"@type"\s*:\s*"Offer"/, 'does not publish a formal Offer while the displayed price remains a reference amount');
+assert.doesNotMatch(page, /href="#tb-nearby"/, 'does not link visitors to the removed nearby-branch block');
+assert.match(page, /href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm lắp gần tôi<\/a>[\s\S]*?href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Xem chi nhánh<\/a>/, 'sends both branch actions to the active Auto365 branch directory');
 assert.match(page, /#tb-product \.tb-hero__grid\{[\s\S]*?align-items:stretch;[\s\S]*?#tb-product \.tb-hero__content\{[\s\S]*?align-self:stretch;/, 'keeps the desktop hero content card the same height as its image');
 assert.match(page, /#tb-product \.tb-buy-grid \{[\s\S]*?align-items:stretch;/, 'keeps the quick-information card level with the consultation form on desktop');
 assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-checker tb-surface" id="tb-fit-form" method="post">/, 'sends the main consultation form to the verified lighting lead endpoint');
