@@ -34,6 +34,9 @@ assert.match(page, /#tb-product #so-sanh \.tb-compare__media\{grid-template-colu
 assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:1fr\}\}/, 'stacks all consultation form fields on narrow phones');
 assert.doesNotMatch(page, /#tb-product \.tb-light-shared\{[^}]*max-width:1120px[^}]*}/, 'keeps the shared lighting visual at its original full-width treatment');
 assert.match(page, /<div class="tb-price-line">\s*<div class="tb-price">6\.500\.000đ<\/div>\s*<span class="tb-price-vat">Chưa bao gồm VAT<\/span>/, 'keeps the full VAT note compact and inline with the price');
+const heroTrust = page.match(/<div aria-label="Điểm nổi bật Titan Black 2026" class="tb-hero-trust">([\s\S]*?)<\/div>\s*<\/div>\s*<section/)?.[1] ?? '';
+assert.doesNotMatch(heroTrust, /<span>0[123]<\/span>/, 'removes the 01, 02 and 03 labels from the hero fact cards');
+assert.match(page, /\.tb-hero-trust > div\{[\s\S]*?grid-template-columns:1fr;[\s\S]*?grid-template-areas:"v" "l"/, 'realigns the hero fact cards after removing their number labels');
 assert.match(page, /<div class="tb-hero-commerce__main">\s*<a class="tb-btn tb-btn--dark"[\s\S]*?Nhắn Zalo tư vấn[\s\S]*?<a class="tb-btn tb-btn--primary" href="#kiem-tra-xe">Kiểm tra xe có lắp được không<\/a>/, 'places the vehicle check action beside Zalo consultation');
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
 assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
