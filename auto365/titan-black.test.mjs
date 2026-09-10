@@ -68,6 +68,10 @@ assert.match(page, /id="tb-actual-2026"[\s\S]*?class="tb-actual-2026__grid"[\s\S
 assert.match(page, /class="tb-actual-2026__badge">Hình thực tế<\/span>[\s\S]*?<h2>Mazda 3 nâng cấp Bi LED X-Light Titan Black<\/h2>[\s\S]*?class="tb-actual-2026__note"/, 'adds an AES-style right-side case summary for the Mazda 3 image');
 assert.match(page, /const pageFlow = \[[\s\S]*?"kiem-tra-xe"[\s\S]*?"video-teaser"[\s\S]*?"nhu-cau"[\s\S]*?"thong-so"[\s\S]*?"anh-sang"[\s\S]*?"thiet-ke"[\s\S]*?"tuong-thich"[\s\S]*?"so-sanh"[\s\S]*?"tb-fit-summary"[\s\S]*?"tb-consult-cta"[\s\S]*?"tb-actual-2026"[\s\S]*?"case-xe"[\s\S]*?"lap-dat"[\s\S]*?"trust"[\s\S]*?"tb-trusted-address"[\s\S]*?"faq"/, 'places editorial and technical review after installation process and before the trusted address');
 assert.match(page, /id="trust"[\s\S]*?Nguồn &amp; kiểm duyệt[\s\S]*?Biên Tập Viên Auto365[\s\S]*?Nguyễn Quang Đạo/, 'shows the existing editor and technical reviewer identities');
+for (const productionPlaceholder of ['[ĐÃ/CHƯA] VAT', '[0365 xxx xxx]', '[Toyota Fortuner / mẫu xe] [202x]', '[Tên khách / ẩn danh]', '[4.x]/5', '[xxx.xxxđ]', 'Production data checklist', 'Campaign ID', 'API/CRM endpoint']) {
+  assert.doesNotMatch(page, new RegExp(productionPlaceholder.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `removes production placeholder from public HTML: ${productionPlaceholder}`);
+}
+assert.doesNotMatch(page, /Đi đêm rõ hơn, mắt bớt mỏi/, 'removes the unsupported eye-fatigue claim');
 assert.doesNotMatch(page, /id="tb-final-cta"/, 'removes the dark final consultation block requested by the user');
 assert.match(page, /pageFlow\.forEach[\s\S]*?root\.append\(section\);[\s\S]*?const footer = root\.querySelector\("\.tb-footer"\);[\s\S]*?if \(footer\) root\.append\(footer\);/, 'moves the footer after the ordered page flow instead of leaving a blank gap after the hero');
 assert.match(page, /const anchoredSection = location\.hash \? root\.querySelector\(location\.hash\) : null;[\s\S]*?if \(anchoredSection\) requestAnimationFrame\(\(\) => anchoredSection\.scrollIntoView\(\)\);/, 'restores hash-link scrolling after sections are reordered');
