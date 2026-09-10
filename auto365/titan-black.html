@@ -350,6 +350,9 @@
     #tb-product .tb-checker__grid {
       display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px;
     }
+    #tb-product .tb-checker__actions { display:grid;grid-template-columns:1.35fr 1fr 1.2fr;gap:8px;margin-top:12px; }
+    #tb-product .tb-checker__actions .tb-btn { display:flex;align-items:center;justify-content:center;min-height:40px;padding:9px 10px;text-align:center;font-size:var(--tb-fs-sm);white-space:nowrap; }
+    #tb-product .tb-checker__actions .tb-btn--zalo { background:#087ff0;border-color:#087ff0;color:#fff; }
 
     #tb-product .tb-checker label {
       display:grid;gap:5px;color:#5c6470;font-size:var(--tb-fs-xs);font-weight:700;
@@ -665,6 +668,7 @@
       #tb-product .tb-spec-strip::-webkit-scrollbar { display:none; }
       #tb-product .tb-spec-chip { min-width:160px;scroll-snap-align:start; }
       #tb-product .tb-checker__grid { grid-template-columns:1fr; }
+      #tb-product .tb-checker__actions { grid-template-columns:1fr; }
       #tb-product .tb-compare__media { grid-template-columns:1fr; }
       #tb-product .tb-light-card,
       #tb-product .tb-feature { grid-template-columns:1fr; }
@@ -3446,8 +3450,10 @@
             <select name="need"><option>Kiểm tra phương án lắp</option><option>Nhận báo giá hoàn thiện</option><option>Tư vấn lịch lắp</option></select>
 </label>
 </div>
-<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:12px">
+<div class="tb-checker__actions">
 <button class="tb-btn tb-btn--dark" type="submit">Nhận tư vấn phương án lắp</button>
+<a class="tb-btn tb-btn--zalo" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo</a>
+<a class="tb-btn tb-btn--soft" href="tel:0365365911">Hotline 0365 365 911</a>
 </div>
 </form>
 </div>
