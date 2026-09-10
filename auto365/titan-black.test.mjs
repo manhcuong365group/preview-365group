@@ -61,7 +61,7 @@ for (const caseBacklink of ['do-den-bi-led-titan-black-20-tai-thanh-hoa', 'do-de
 assert.doesNotMatch(page, /<div class="tb-related-grid">/, 'removes the separate related-articles card grid');
 assert.match(page, /Tham khảo các xe đã lắp đèn Titan Black tại Auto365/, 'uses an AES-style actual-installation library heading');
 assert.doesNotMatch(page, /#tb-product #case-xe\s*\{display:none/, 'keeps the actual-installation library visible');
-assert.match(page, /id="tb-trusted-address"[\s\S]*?Lắp Titan Black tại Auto365[\s\S]*?Hệ thống Auto365[\s\S]*?Xem chi nhánh Auto365/, 'combines Auto365 introduction and branch-finder call to action in the trusted-installation block');
+assert.match(page, /id="tb-trusted-address"[\s\S]*?Địa chỉ lắp Titan Black 2026 uy tín[\s\S]*?91 điểm · 33 tỉnh thành[\s\S]*?Miền Bắc[\s\S]*?Miền Trung[\s\S]*?Miền Nam/, 'combines the trusted Titan Black address and national Auto365 coverage in one block');
 assert.match(page, /#tb-product #tb-nearby\{display:none\}/, 'removes the separate nearby-branch block after it is consolidated into the Auto365 introduction');
 assert.match(page, /id="case-xe"[\s\S]*?id="lap-dat"[\s\S]*?id="tb-trusted-address"/, 'orders cases, installation process and consolidated Auto365 information in sequence');
 assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota"[\s\S]*?data-install-filter="kia"/, 'provides brand filters for the actual-installation library');
