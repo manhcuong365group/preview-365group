@@ -26,7 +26,7 @@ assert.match(page, /\.tb-faq__form-actions \.tb-btn:first-child\s*\{\s*grid-colu
 assert.match(page, /class="tb-btn tb-btn--zalo"[^>]*href="https:\/\/zalo\.me\/3622666363345050913"[^>]*><svg[^>]*class="tb-faq__action-icon"/, 'marks the FAQ Zalo action for its dedicated blue treatment and visible icon');
 assert.match(page, /\.tb-faq__action-icon \{ display:block;flex:0 0 auto;width:16px;height:16px/, 'shows compact action icons at every viewport width');
 assert.match(page, /@media \(max-width:480px\)\{[\s\S]*?\.tb-faq__form-actions \.tb-btn span\{display:none\}/, 'switches FAQ contact actions to compact icon-only controls on narrow phones');
-assert.match(page, /@media \(min-width:481px\)\{[\s\S]*?\.tb-faq__form-actions \{ grid-template-columns:112px 48px minmax\(150px,1fr\); \}[\s\S]*?\.tb-faq__form-actions \.tb-btn:nth-child\(3\) span\{display:inline\}/, 'keeps Zalo compact and shows the nearby-address action on web');
+assert.match(page, /@media \(min-width:481px\)\{[\s\S]*?\.tb-faq__form-actions \{ grid-template-columns:repeat\(3,minmax\(0,1fr\)\); \}[\s\S]*?\.tb-faq__form-actions \.tb-btn:nth-child\(3\) span\{display:inline\}/, 'balances all three contact actions while showing the nearby-address action on web');
 for (const redundantCopy of [
   'So sánh các thông số công bố của Titan Black 2021, 2.0 và phiên bản 2026.',
   'Auto365 chỉ xác nhận phương án sau khi kiểm tra cụm đèn và hệ điện thực tế.',
