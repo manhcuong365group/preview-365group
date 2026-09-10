@@ -2115,9 +2115,13 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   var consultClose = document.getElementById('consult-close');
   var consultForm = document.getElementById('consult-form');
 
+  function isBlankTextField(f){
+    return f.type !== 'checkbox' && f.type !== 'radio';
+  }
   function validateNonBlank(form){
     var ok = true;
     Array.prototype.forEach.call(form.querySelectorAll('[required]'), function(f){
+      if (!isBlankTextField(f)) return; // checkbox/radio: native required+checked đã đủ, không dùng .value làm bằng chứng.
       if (!f.value.trim()) { f.setCustomValidity('Vui lòng nhập nội dung, không chỉ để khoảng trắng.'); ok = false; }
       else { f.setCustomValidity(''); }
     });
@@ -2125,6 +2129,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   }
   function wireLiveNonBlankValidation(form){
     Array.prototype.forEach.call(form.querySelectorAll('[required]'), function(f){
+      if (!isBlankTextField(f)) return;
       var evt = (f.tagName === 'SELECT') ? 'change' : 'input';
       f.addEventListener(evt, function(){
         if (!f.value.trim()) f.setCustomValidity('Vui lòng nhập nội dung, không chỉ để khoảng trắng.');
