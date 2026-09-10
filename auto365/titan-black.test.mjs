@@ -124,12 +124,12 @@ assert.match(page, /id="tb-why-buy"[\s\S]*?<h2 style="margin-top:8px">Vì sao n�
 assert.match(page, /#tb-product #tb-why-buy\{display:none\}/, 'keeps the unapproved editorial section out of the published layout');
 assert.match(page, /#tb-product #tb-fit-summary,#tb-product #gia-bao-gom,#tb-product #tb-booking,#tb-product #tb-handover,#tb-product #review,#tb-product #production-data,#tb-product #tb-nearby,#tb-product #tb-technical-review,#tb-product #bai-lien-quan\{display:none\}/, 'hides every section outside the user-approved landing-page flow except the verified reviewer block');
 assert.doesNotMatch(page, /#tb-product #nhu-cau\{display:none\}/, 'keeps the approved needs section visible');
-assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}/, 'balances the FAQ form and question columns on desktop');
+assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}[\s\S]*?#tb-product #faq \.tb-faq\{align-items:start\}/, 'keeps FAQ columns top-aligned so answers can grow naturally');
 assert.match(page, /id="faq"[\s\S]*?class="tb-shell tb-faq"[\s\S]*?tb-faq__form[\s\S]*?class="tb-faq__questions"[\s\S]*?<h2>Câu hỏi thường gặp<\/h2>[\s\S]*?tb-faq-list/, 'places the FAQ heading above the right-hand question column');
-assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
+assert.match(page, /#tb-product #faq \.tb-faq > div:first-child,#tb-product #faq \.tb-faq__questions\{display:block\}/, 'keeps the form and question column independent of each other');
 assert.match(page, /#tb-product \.tb-faq details\{\s*width:100%;\s*margin:0;\s*padding:11px 16px;/, 'keeps FAQ questions compact and aligned to the full FAQ column');
-assert.match(page, /#tb-product \.tb-faq-list\{\s*width:100%;\s*height:100%;\s*justify-self:stretch;\s*grid-auto-rows:1fr;\s*gap:8px;\s*align-content:stretch;/, 'keeps FAQ rows aligned and evenly stretched to match the consultation form');
-assert.match(page, /#tb-product \.tb-faq details:not\(\[open\]\)\{display:flex;flex-direction:column;justify-content:center\}/, 'vertically centers closed FAQ summaries inside their stretched rows');
+assert.match(page, /#tb-product #faq \.tb-faq__questions \.tb-faq-list\{height:auto;grid-auto-rows:auto;align-content:start\}/, 'keeps FAQ rows fitted to their natural content height');
+assert.match(page, /#tb-product #faq \.tb-faq details:not\(\[open\]\)\{display:block;min-height:0;padding:14px 16px\}/, 'keeps closed FAQ summaries compact instead of vertically stretching them');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?#faq \.tb-faq-list\{height:auto;grid-auto-rows:auto;align-content:start\}[\s\S]*?#faq \.tb-faq details:not\(\[open\]\)\{display:block;min-height:0;padding:14px 16px\}/, 'keeps mobile FAQ rows fitted to their content instead of desktop-height stretching');
 assert.match(page, /#tb-product #faq \.tb-faq-list\{overflow-anchor:none\}/, 'prevents browser scroll anchoring from moving the FAQ viewport');
 assert.match(page, /querySelectorAll\("#faq details"\)\.forEach[\s\S]*?window\.scrollTo\(\{ top:scrollPosition, behavior:"auto" \}\)/, 'preserves the reader scroll position when a FAQ answer toggles');

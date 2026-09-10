@@ -3315,6 +3315,12 @@
 #tb-product #faq .tb-faq-list{overflow-anchor:none}
 #tb-product #faq .tb-faq__form{display:flex;flex:1;flex-direction:column;margin-top:16px;padding:24px}
 #tb-product #faq .tb-faq__form-note{margin-top:auto!important;padding-top:12px}
+/* FAQ answers must size to their own content; equal-height columns cause a visible jump on toggle. */
+#tb-product #faq .tb-faq{align-items:start}
+#tb-product #faq .tb-faq > div:first-child,#tb-product #faq .tb-faq__questions{display:block}
+#tb-product #faq .tb-faq__questions .tb-faq-list{height:auto;grid-auto-rows:auto;align-content:start}
+#tb-product #faq .tb-faq details:not([open]){display:block;min-height:0;padding:14px 16px}
+#tb-product #faq .tb-faq__form{display:block;flex:none}
 #tb-product .tb-overview{margin:0 0 8px;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220}
 #tb-product .tb-overview img{width:100%;height:auto;max-height:560px;object-fit:cover;object-position:center}
 #tb-product .tb-hero__media img{content:url("titan-black/hinh/titan-back-6.webp")}
