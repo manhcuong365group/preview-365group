@@ -59,6 +59,7 @@ for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-bl
 assert.match(page, /installFilters\.forEach[\s\S]*?dataset\.installBrand/, 'makes the actual-installation brand filters functional');
 assert.match(page, /id="tb-actual-2026"[\s\S]*?Hình thực tế Titan Black 2026[\s\S]*?titan-black\/hinh\/titan-back-5\.webp/, 'shows the supplied Mazda 3 Titan Black image as one compact real-image section');
 assert.match(page, /const pageFlow = \[[\s\S]*?"kiem-tra-xe"[\s\S]*?"video-teaser"[\s\S]*?"nhu-cau"[\s\S]*?"thong-so"[\s\S]*?"anh-sang"[\s\S]*?"thiet-ke"[\s\S]*?"tuong-thich"[\s\S]*?"so-sanh"[\s\S]*?"tb-fit-summary"[\s\S]*?"tb-consult-cta"[\s\S]*?"tb-actual-2026"[\s\S]*?"case-xe"[\s\S]*?"lap-dat"[\s\S]*?"tb-trusted-address"[\s\S]*?"faq"[\s\S]*?"tb-final-cta"/, 'uses the exact approved 01–17 page flow without an extra editorial section');
+assert.match(page, /pageFlow\.forEach[\s\S]*?root\.append\(section\);[\s\S]*?const footer = root\.querySelector\("\.tb-footer"\);[\s\S]*?if \(footer\) root\.append\(footer\);/, 'moves the footer after the ordered page flow instead of leaving a blank gap after the hero');
 assert.match(page, /#tb-product #tb-fit-summary\{display:block\}/, 'keeps the approved "phù hợp khi nào" section visible');
 assert.match(page, /#tb-product #evidence\{display:none\}/, 'hides the extra technical-evidence section that is outside the approved flow');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?--tb-mobile-gutter:clamp\(14px,4vw,22px\)/, 'defines a fluid mobile gutter from the page design tokens');
