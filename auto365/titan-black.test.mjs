@@ -96,6 +96,8 @@ assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-actual-2026__gri
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-section-head h2\{font-size:clamp\(/, 'uses fluid heading type on mobile instead of fixed pixel sizes');
 assert.match(page, /id="nhu-cau"[\s\S]*?<h2 style="margin-top:8px">Titan Black 2026 giải quyết vấn đề gì\?<\/h2>/, 'preserves the previously approved needs-section copy');
 assert.doesNotMatch(page, /Không nên quyết định chỉ dựa vào công suất\. Hãy bắt đầu từ tình huống lái xe và cấu hình cụm đèn hiện tại\./, 'removes the unapproved needs-section supporting sentence');
+assert.match(page, /#tb-product \.tb-hero \{\s*padding-block:18px 28px;\s*background:#fff;/, 'uses a flat white hero background');
+assert.match(page, /#tb-product \.tb-trusted-address\{[^}]*background:#fff\}/, 'uses a flat white trusted-address background');
 assert.match(page, /Tâm Pha 3000K cần được căn chỉnh theo từng cụm đèn để phát huy hiệu quả khi đi đêm\./, 'uses balanced copy for the Pha decision card');
 assert.doesNotMatch(page, /Titan Black 2026 công bố tâm Pha 3000K; hiệu quả thực tế còn phụ thuộc căn chỉnh và cụm đèn\./, 'removes the short Pha copy that leaves the card visually unbalanced');
 assert.match(page, /\.tb-decision-card\{padding:var\(--tb-card-pad\);display:flex;flex-direction:column\}/, 'makes decision cards equal-height flex columns');
