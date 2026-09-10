@@ -46,6 +46,7 @@ assert.match(page, /<div class="tb-hero-commerce__main">\s*<a class="tb-btn tb-b
 assert.match(page, /class="tb-checker__actions"[\s\S]*?Nhận tư vấn phương án lắp[\s\S]*?Nhắn Zalo[\s\S]*?Hotline 0365 365 911/, 'adds Zalo and hotline actions beside the top consultation form submission');
 assert.match(page, /\.tb-checker__actions \{ display:grid;grid-template-columns:1\.35fr 1fr 1\.2fr/, 'keeps the three top consultation actions aligned on desktop');
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
+assert.doesNotMatch(page, /<p class="tb-eyebrow">Hiệu suất ánh sáng<\/p>/, 'removes the lighting-section eyebrow requested by the user');
 assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
 assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạt tản nhiệt 45 mm hỗ trợ lưu thông khí phía sau cụm đèn/, 'balances the cooling card with its 45 mm fan detail');
 assert.match(page, /\.tb-light-shared\{flex:1 1 600px\}/, 'keeps the lighting visual beside the Cos and Pha guidance when space permits');
