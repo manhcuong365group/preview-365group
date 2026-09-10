@@ -68,6 +68,7 @@ assert.match(page, /id="tb-actual-2026"[\s\S]*?Hình thực tế Titan Black 202
 assert.match(page, /const pageFlow = \[[\s\S]*?"kiem-tra-xe"[\s\S]*?"video-teaser"[\s\S]*?"nhu-cau"[\s\S]*?"thong-so"[\s\S]*?"anh-sang"[\s\S]*?"thiet-ke"[\s\S]*?"tuong-thich"[\s\S]*?"so-sanh"[\s\S]*?"tb-fit-summary"[\s\S]*?"tb-consult-cta"[\s\S]*?"tb-actual-2026"[\s\S]*?"case-xe"[\s\S]*?"lap-dat"[\s\S]*?"tb-trusted-address"[\s\S]*?"faq"/, 'keeps the approved page flow through FAQ');
 assert.doesNotMatch(page, /id="tb-final-cta"/, 'removes the dark final consultation block requested by the user');
 assert.match(page, /pageFlow\.forEach[\s\S]*?root\.append\(section\);[\s\S]*?const footer = root\.querySelector\("\.tb-footer"\);[\s\S]*?if \(footer\) root\.append\(footer\);/, 'moves the footer after the ordered page flow instead of leaving a blank gap after the hero');
+assert.match(page, /const anchoredSection = location\.hash \? root\.querySelector\(location\.hash\) : null;[\s\S]*?if \(anchoredSection\) requestAnimationFrame\(\(\) => anchoredSection\.scrollIntoView\(\)\);/, 'restores hash-link scrolling after sections are reordered');
 assert.match(page, /#tb-product #tb-fit-summary\{display:block\}/, 'keeps the approved "phù hợp khi nào" section visible');
 assert.match(page, /#tb-product #evidence\{display:none\}/, 'hides the extra technical-evidence section that is outside the approved flow');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?--tb-mobile-gutter:clamp\(14px,4vw,22px\)/, 'defines a fluid mobile gutter from the page design tokens');

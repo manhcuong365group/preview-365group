@@ -4554,6 +4554,8 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
       });
       const footer = root.querySelector(".tb-footer");
       if (footer) root.append(footer);
+      const anchoredSection = location.hash ? root.querySelector(location.hash) : null;
+      if (anchoredSection) requestAnimationFrame(() => anchoredSection.scrollIntoView());
     })();
   </script>
 </main>
