@@ -131,6 +131,8 @@ assert.match(page, /#tb-product \.tb-faq details\{\s*width:100%;\s*margin:0;\s*p
 assert.match(page, /#tb-product \.tb-faq-list\{\s*width:100%;\s*height:100%;\s*justify-self:stretch;\s*grid-auto-rows:1fr;\s*gap:8px;\s*align-content:stretch;/, 'keeps FAQ rows aligned and evenly stretched to match the consultation form');
 assert.match(page, /#tb-product \.tb-faq details:not\(\[open\]\)\{display:flex;flex-direction:column;justify-content:center\}/, 'vertically centers closed FAQ summaries inside their stretched rows');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?#faq \.tb-faq-list\{height:auto;grid-auto-rows:auto;align-content:start\}[\s\S]*?#faq \.tb-faq details:not\(\[open\]\)\{display:block;min-height:0;padding:14px 16px\}/, 'keeps mobile FAQ rows fitted to their content instead of desktop-height stretching');
+assert.match(page, /#tb-product #faq \.tb-faq-list\{overflow-anchor:none\}/, 'prevents browser scroll anchoring from moving the FAQ viewport');
+assert.match(page, /querySelectorAll\("#faq details"\)\.forEach[\s\S]*?window\.scrollTo\(\{ top:scrollPosition, behavior:"auto" \}\)/, 'preserves the reader scroll position when a FAQ answer toggles');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
 assert.match(page, /img\[alt="Phụ kiện đuôi vặn H4 Titan Black 2026"\]\{content:url\("titan-black\/hinh\/phu-kien-h4-bi-led-titan-black-2026\.jpg"\)/, 'uses the supplied H4 accessory image');

@@ -3312,6 +3312,7 @@
 #tb-product #faq .tb-faq__questions{display:flex;flex-direction:column;min-width:0}
 #tb-product #faq .tb-faq__questions > h2{margin:0 0 16px}
 #tb-product #faq .tb-faq__questions .tb-faq-list{flex:1}
+#tb-product #faq .tb-faq-list{overflow-anchor:none}
 #tb-product #faq .tb-faq__form{display:flex;flex:1;flex-direction:column;margin-top:16px;padding:24px}
 #tb-product #faq .tb-faq__form-note{margin-top:auto!important;padding-top:12px}
 #tb-product .tb-overview{margin:0 0 8px;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220}
@@ -4432,6 +4433,24 @@
           } finally {
             if (submit) { submit.disabled = false; submit.textContent = form.id === "tb-faq-form" ? "Gửi yêu cầu tư vấn" : "Nhận tư vấn phương án lắp"; }
           }
+        });
+      });
+
+      root.querySelectorAll("#faq details").forEach(detail => {
+        const summary = detail.querySelector("summary");
+        let scrollPosition = null;
+        const preserveScrollPosition = () => { scrollPosition = window.scrollY; };
+
+        summary?.addEventListener("pointerdown", preserveScrollPosition, { passive:true });
+        summary?.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") preserveScrollPosition();
+        });
+        detail.addEventListener("toggle", () => {
+          if (scrollPosition === null) return;
+          requestAnimationFrame(() => {
+            window.scrollTo({ top:scrollPosition, behavior:"auto" });
+            scrollPosition = null;
+          });
         });
       });
 
