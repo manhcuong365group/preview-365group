@@ -49,6 +49,7 @@ assert.match(page, /\.tb-checker__actions \{ display:grid;grid-template-columns:
 assert.match(page, /@media \(max-width:767\.98px\) \{[\s\S]*?\.tb-checker__grid \{ grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:8px;/, 'keeps the top vehicle consultation fields in two compact mobile columns');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?#thiet-ke > \.tb-shell > article\.tb-surface\{grid-template-columns:1fr!important;gap:0!important\}/, 'stacks the H4 accessory image above its content on mobile');
 assert.match(page, /\.tb-light-shared\{aspect-ratio:auto;background:#fff\}[\s\S]*?\.tb-light-shared img\{display:block;width:100%;height:auto;object-fit:contain\}/, 'shows the full Cos/Pha illustration without cropping');
+assert.match(page, /#tb-product h2\{font-size:clamp\(22px,2vw,28px\)\}[\s\S]*?#tb-product h3\{font-size:clamp\(17px,1\.35vw,21px\)\}/, 'keeps secondary headings compact');
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
 assert.doesNotMatch(page, /<p class="tb-eyebrow">Hiệu suất ánh sáng<\/p>/, 'removes the lighting-section eyebrow requested by the user');
 assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
