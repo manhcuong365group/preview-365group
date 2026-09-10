@@ -88,6 +88,7 @@ assert.match(page, /#tb-product #tb-fit-summary,#tb-product #gia-bao-gom,#tb-pro
 assert.doesNotMatch(page, /#tb-product #nhu-cau\{display:none\}/, 'keeps the approved needs section visible');
 assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}/, 'balances the FAQ form and question columns on desktop');
 assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
+assert.match(page, /#tb-product \.tb-faq details\{\s*padding:11px 16px;/, 'keeps FAQ questions compact without excess vertical whitespace');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
 assert.match(page, /img\[alt="Phụ kiện đuôi vặn H4 Titan Black 2026"\]\{content:url\("titan-black\/hinh\/phu-kien-h4-bi-led-titan-black-2026\.jpg"\)/, 'uses the supplied H4 accessory image');
