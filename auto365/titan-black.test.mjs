@@ -20,13 +20,13 @@ assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\
 assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)[\s\S]*?fetch\(form\.action,[\s\S]*?method: "POST"[\s\S]*?JSON\.stringify\(payload\)/, 'sends both Titan consultation forms to the booking API as JSON');
 assert.match(page, /<span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">\*<\/b><\/span><input name="name"/, 'keeps the name required marker inline with its label');
 assert.match(page, /<span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">\*<\/b><\/span><input inputmode="tel" name="phone"/, 'keeps the phone required marker inline with its label');
-assert.match(page, /class="tb-faq__form-actions"[\s\S]*?<span>Zalo<\/span>[\s\S]*?Hotline 0365 365 911[\s\S]*?Tìm chi nhánh/, 'adds concise Zalo, hotline and branch actions beneath the consultation request');
+assert.match(page, /class="tb-faq__form-actions"[\s\S]*?<span>Zalo<\/span>[\s\S]*?Hotline 0365 365 911[\s\S]*?Tìm địa chỉ gần bạn/, 'adds concise Zalo, hotline and branch actions beneath the consultation request');
 assert.match(page, /\.tb-faq__form-actions\s*\{\s*display:grid;grid-template-columns:1\.5fr 1fr 1\.2fr;gap:8px/, 'keeps the three FAQ contact actions on one row where space permits');
 assert.match(page, /\.tb-faq__form-actions \.tb-btn:first-child\s*\{\s*grid-column:auto;background:#087ff0/, 'styles the Zalo action blue without spanning the row');
 assert.match(page, /class="tb-btn tb-btn--zalo"[^>]*href="https:\/\/zalo\.me\/3622666363345050913"[^>]*><svg[^>]*class="tb-faq__action-icon"/, 'marks the FAQ Zalo action for its dedicated blue treatment and visible icon');
 assert.match(page, /\.tb-faq__action-icon \{ display:block;flex:0 0 auto;width:16px;height:16px/, 'shows compact action icons at every viewport width');
 assert.match(page, /@media \(max-width:480px\)\{[\s\S]*?\.tb-faq__form-actions \.tb-btn span\{display:none\}/, 'switches FAQ contact actions to compact icon-only controls on narrow phones');
-assert.match(page, /@media \(min-width:481px\)\{[\s\S]*?\.tb-faq__form-actions \{ grid-template-columns:minmax\(0,1fr\) 48px 48px; \}[\s\S]*?\.tb-faq__form-actions \.tb-btn:not\(:first-child\) span\{display:none\}/, 'uses compact hotline and branch icons while keeping the Zalo label on web');
+assert.match(page, /@media \(min-width:481px\)\{[\s\S]*?\.tb-faq__form-actions \{ grid-template-columns:112px 48px minmax\(150px,1fr\); \}[\s\S]*?\.tb-faq__form-actions \.tb-btn:nth-child\(3\) span\{display:inline\}/, 'keeps Zalo compact and shows the nearby-address action on web');
 for (const redundantCopy of [
   'So sánh các thông số công bố của Titan Black 2021, 2.0 và phiên bản 2026.',
   'Auto365 chỉ xác nhận phương án sau khi kiểm tra cụm đèn và hệ điện thực tế.',
