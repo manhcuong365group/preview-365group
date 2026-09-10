@@ -16,6 +16,7 @@ assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100
 assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
 assert.match(page, /<form action="\/api\/booking" class="tb-faq__form" id="tb-faq-form" method="post">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the supplied API-enabled consultation form in the FAQ column');
 assert.match(page, /<form action="\/api\/booking" class="tb-faq__form" id="tb-faq-form" method="post">/, 'submits the FAQ consultation form to the booking API');
+assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:10px 8px\}\}/, 'keeps FAQ consultation fields in compact paired mobile rows');
 assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)[\s\S]*?fetch\(form\.action,[\s\S]*?method: "POST"[\s\S]*?JSON\.stringify\(payload\)/, 'sends both Titan consultation forms to the booking API as JSON');
 assert.match(page, /<span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">\*<\/b><\/span><input name="name"/, 'keeps the name required marker inline with its label');
 assert.match(page, /<span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">\*<\/b><\/span><input inputmode="tel" name="phone"/, 'keeps the phone required marker inline with its label');
@@ -37,7 +38,7 @@ assert.doesNotMatch(page, /content:"VEHICLE FIT"/, 'removes the decorative vehic
 assert.match(page, /<div class="tb-spec-list">[\s\S]*Điện áp[\s\S]*Bảo hành[\s\S]*<\/div>\s*<div>[\s\S]*Nhiệt màu[\s\S]*Tuổi thọ công bố[\s\S]*<\/div>\s*<\/div>/, 'balances the specification list into two equal columns');
 assert.match(page, /#tb-product #thong-so \.tb-spec-list\{grid-template-columns:1fr;gap:0\}/, 'stacks the balanced specifications into one readable column on mobile');
 assert.match(page, /#tb-product #so-sanh \.tb-compare__media\{grid-template-columns:1fr\}/, 'stacks the comparison visual and upgrade summary on mobile');
-assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:1fr\}\}/, 'stacks all consultation form fields on narrow phones');
+assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:10px 8px\}\}/, 'keeps consultation form fields in paired rows on narrow phones');
 assert.doesNotMatch(page, /#tb-product \.tb-light-shared\{[^}]*max-width:1120px[^}]*}/, 'keeps the shared lighting visual at its original full-width treatment');
 assert.match(page, /<div class="tb-price-line">\s*<div class="tb-price">6\.500\.000đ<\/div>\s*<span class="tb-price-vat">Chưa bao gồm VAT<\/span>/, 'keeps the full VAT note compact and inline with the price');
 const heroTrust = page.match(/<div aria-label="Điểm nổi bật Titan Black 2026" class="tb-hero-trust">([\s\S]*?)<\/div>\s*<\/div>\s*<section/)?.[1] ?? '';
