@@ -1,7 +1,14 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { existsSync, readFileSync } from 'node:fs';
 
 const page = readFileSync(new URL('./titan-black.html', import.meta.url), 'utf8');
+const approvalLock = JSON.parse(readFileSync(new URL('./titan-black/.internal/content-approval-lock.json', import.meta.url), 'utf8'));
+
+assert.equal(approvalLock.status, 'LOCKED', 'keeps the confirmed reviewer and Mazda case under an internal approval lock');
+assert.equal(approvalLock.content_snapshot.path, 'auto365/titan-black.html', 'binds the approval lock to the Titan page');
+const approvedMazdaAsset = readFileSync(new URL('./titan-black/hinh/titan-back-5.webp', import.meta.url));
+assert.equal(createHash('sha256').update(approvedMazdaAsset).digest('hex'), approvalLock.approved_scope[1].media.sha256, 'detects any change to the approved Mazda case asset');
 
 assert.match(page, /<meta content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"\/>/, 'keeps the GitHub Pages preview out of search indexes while allowing link discovery');
 assert.doesNotMatch(page, /content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/, 'does not conflict with the preview noindex directive');

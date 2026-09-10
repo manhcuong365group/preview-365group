@@ -1,0 +1,28 @@
+{
+  "record_type": "internal-content-approval-lock",
+  "status": "LOCKED",
+  "visibility": "Internal repository record only. It is not rendered, linked, or loaded by titan-black.html.",
+  "approved_on": "2026-09-10",
+  "approval_basis": "Direct confirmation from the page owner in the Titan Black implementation task.",
+  "content_snapshot": {
+    "path": "auto365/titan-black.html",
+    "commit": "abbab667c3ffc0126c91933dc43039bda6c451d3"
+  },
+  "approved_scope": [
+    {
+      "item": "Technical editorial review",
+      "reviewer": "Nguyễn Quang Đạo",
+      "approved_statement": "Đã kiểm duyệt nội dung kỹ thuật của bài Titan Black 2026: khả năng tương thích thiết bị, nguồn điện, kết nối, đi dây, căn chỉnh và tiêu chí nghiệm thu trước bàn giao."
+    },
+    {
+      "item": "Mazda 3 installation case",
+      "approved_statement": "Ca Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365.vn – Trụ Sở Chính được xác nhận để sử dụng trong bài Titan Black 2026.",
+      "media": {
+        "path": "auto365/titan-black/hinh/titan-back-5.webp",
+        "sha256": "b4f6ce39cc4cfa38be11aaea22448c10ace71a45dcb2c8d0134f392d6685ce85"
+      }
+    }
+  ],
+  "change_policy": "Any change to an approved statement, the Mazda case asset, or the referenced page content requires a new approval record with its own snapshot commit and asset hash.",
+  "audit_instruction": "Treat the two approved items as confirmed for this snapshot. Do not reopen them as unresolved evidence issues unless the snapshot, approved statements, or media hash changes."
+}
