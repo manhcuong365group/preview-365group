@@ -12,6 +12,7 @@ assert.match(page, /data\.set\("privacy_consent", data\.get\("consent"\) === "on
 assert.match(page, /CA LẮP THỰC TẾ[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365\.vn – Trụ Sở Chính/, 'presents the verified Mazda 3 installation in the AES-style case format');
 assert.match(page, /Nguyễn Quang Đạo[\s\S]*?Đã kiểm duyệt nội dung kỹ thuật của bài Titan Black 2026/, 'records the confirmed technical review');
 assert.doesNotMatch(page, /dịu mắt|đi mưa hoặc sương mù/i, 'removes unsupported lighting-performance claims');
+assert.doesNotMatch(page, /Cos\/Pha rõ hơn|phát huy hiệu quả khi đi đêm|dịu hơn bản 2021|cải thiện khả năng chiếu sáng khi di chuyển ban đêm/i, 'removes unsupported comparative or outcome claims');
 assert.doesNotMatch(page, /id="review"|id="production-data"|id="tb-nearby"|id="tb-technical-review"/, 'removes hidden internal, review and production-only sections from public HTML');
 assert.match(page, /id="tuong-thich"/, 'requires a public compatibility section');
 assert.match(page, /Lens tròn: 130 × 80 × 80 mm/, 'requires the round-lens dimensions');
@@ -122,7 +123,7 @@ assert.match(page, /id="nhu-cau"[\s\S]*?<h2 style="margin-top:8px">Titan Black 2
 assert.doesNotMatch(page, /Không nên quyết định chỉ dựa vào công suất\. Hãy bắt đầu từ tình huống lái xe và cấu hình cụm đèn hiện tại\./, 'removes the unapproved needs-section supporting sentence');
 assert.match(page, /#tb-product \.tb-hero \{\s*padding-block:18px 28px;\s*background:#fff;/, 'uses a flat white hero background');
 assert.match(page, /#tb-product \.tb-trusted-address\{[^}]*background:#fff\}/, 'uses a flat white trusted-address background');
-assert.match(page, /Tâm Pha 3000K cần được căn chỉnh theo từng cụm đèn để phát huy hiệu quả khi đi đêm\./, 'uses balanced copy for the Pha decision card');
+assert.match(page, /Tâm Pha 3000K cần được căn chỉnh theo từng cụm đèn trước khi bàn giao\./, 'uses evidence-based copy for the Pha decision card');
 assert.doesNotMatch(page, /Titan Black 2026 công bố tâm Pha 3000K; hiệu quả thực tế còn phụ thuộc căn chỉnh và cụm đèn\./, 'removes the short Pha copy that leaves the card visually unbalanced');
 assert.match(page, /\.tb-decision-card\{padding:var\(--tb-card-pad\);display:flex;flex-direction:column\}/, 'makes decision cards equal-height flex columns');
 assert.match(page, /\.tb-decision-card__tag\{display:inline-flex;margin-top:auto;padding:5px 8px/, 'keeps decision-card tags aligned despite different copy lengths');
