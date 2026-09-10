@@ -19,6 +19,9 @@ assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)/, 'requires 
 assert.match(page, /<span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">\*<\/b><\/span><input name="name"/, 'keeps the name required marker inline with its label');
 assert.match(page, /<span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">\*<\/b><\/span><input inputmode="tel" name="phone"/, 'keeps the phone required marker inline with its label');
 assert.match(page, /class="tb-faq__form-actions"[\s\S]*?Nhắn Zalo gửi ảnh cụm đèn[\s\S]*?Gọi 0365 365 911[\s\S]*?Tìm chi nhánh Auto365/, 'adds the three requested contact actions beneath the consultation request');
+assert.match(page, /\.tb-faq__form-actions\{display:grid;grid-template-columns:1\.5fr 1fr 1\.2fr;gap:8px/, 'keeps the three FAQ contact actions on one row where space permits');
+assert.match(page, /\.tb-faq__form-actions \.tb-btn:first-child\{grid-column:auto;background:#087ff0/, 'styles the Zalo action blue without spanning the row');
+assert.match(page, /class="tb-btn tb-btn--zalo" href="https:\/\/zalo\.me\/3622666363345050913"/, 'marks the FAQ Zalo action for its dedicated blue treatment');
 for (const redundantCopy of [
   'So sánh các thông số công bố của Titan Black 2021, 2.0 và phiên bản 2026.',
   'Auto365 chỉ xác nhận phương án sau khi kiểm tra cụm đèn và hệ điện thực tế.',

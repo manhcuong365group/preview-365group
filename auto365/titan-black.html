@@ -584,9 +584,10 @@
     #tb-product .tb-faq__consent { display:flex!important;grid-column:1 / -1;align-items:flex-start;gap:8px;margin-top:2px;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important;font-weight:400!important; }
     #tb-product .tb-faq__consent input { width:16px;height:16px;flex:0 0 auto;margin-top:1px;padding:0; }
     #tb-product .tb-faq__form button { width:100%;margin-top:14px; }
-    #tb-product .tb-faq__form-actions { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px; }
-    #tb-product .tb-faq__form-actions .tb-btn { display:flex;justify-content:center;align-items:center;min-height:42px;padding:9px 10px;text-align:center; }
-    #tb-product .tb-faq__form-actions .tb-btn:first-child { grid-column:1 / -1; }
+    #tb-product .tb-faq__form-actions { display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:8px;margin-top:10px; }
+    #tb-product .tb-faq__form-actions .tb-btn { display:flex;justify-content:center;align-items:center;min-width:0;min-height:42px;padding:9px 6px;text-align:center;font-size:clamp(9px,2.3vw,12px);white-space:nowrap; }
+    #tb-product .tb-faq__form-actions .tb-btn:first-child { grid-column:auto;background:#087ff0;border-color:#087ff0;color:#fff; }
+    #tb-product .tb-faq__form-actions .tb-btn--zalo:hover { background:#066dcc;border-color:#066dcc; }
     #tb-product .tb-faq__form-note { margin-top:10px!important;text-align:center;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important; }
     @media (max-width:480px){#tb-product .tb-faq__form-grid{grid-template-columns:1fr}}
 
@@ -4389,7 +4390,7 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
 </div>
 <button class="tb-btn tb-btn--primary" type="submit">Gửi yêu cầu tư vấn</button>
 <div class="tb-faq__form-actions">
-<a class="tb-btn tb-btn--primary" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo gửi ảnh cụm đèn</a>
+<a class="tb-btn tb-btn--zalo" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo gửi ảnh cụm đèn</a>
 <a class="tb-btn tb-btn--soft" href="tel:0365365911">Gọi 0365 365 911</a>
 <a class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh">Tìm chi nhánh Auto365</a>
 </div>
