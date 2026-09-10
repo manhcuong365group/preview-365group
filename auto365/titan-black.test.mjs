@@ -82,6 +82,7 @@ assert.match(page, /#tb-product #tb-nearby\{display:none\}/, 'removes the separa
 assert.match(page, /id="case-xe"[\s\S]*?id="lap-dat"[\s\S]*?id="tb-trusted-address"/, 'orders cases, installation process and consolidated Auto365 information in sequence');
 assert.match(page, /data-install-filter="all"[\s\S]*?data-install-filter="toyota"[\s\S]*?data-install-filter="kia"/, 'provides brand filters for the actual-installation library');
 assert.match(page, /class="tb-install-grid"[\s\S]*?Toyota Camry[\s\S]*?Kia Morning[\s\S]*?Tổng hợp các mẫu xe/, 'shows three real Titan Black case cards');
+assert.match(page, /#case-xe \.tb-install-grid\{display:flex;gap:12px;overflow-x:auto;[\s\S]*?scroll-snap-type:x proximity/, 'makes actual installation cases horizontally scrollable on mobile');
 for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${caseUrl}"`), `links the actual Titan case: ${caseUrl}`);
 assert.match(page, /installFilters\.forEach[\s\S]*?dataset\.installBrand/, 'makes the actual-installation brand filters functional');
 assert.match(page, /id="tb-actual-2026"[\s\S]*?class="tb-actual-2026__grid"[\s\S]*?figcaption>Hình ảnh ghi nhận ca Mazda 3 nâng cấp Bi LED X-Light Titan Black\.<\/figcaption>[\s\S]*?titan-black\/hinh\/titan-back-5\.webp/, 'presents the supplied Mazda 3 image in a dedicated left-side feature panel');
