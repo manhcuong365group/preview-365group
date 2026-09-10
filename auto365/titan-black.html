@@ -585,15 +585,15 @@
     #tb-product .tb-faq__consent input { width:16px;height:16px;flex:0 0 auto;margin-top:1px;padding:0; }
     #tb-product .tb-faq__form button { width:100%;margin-top:14px; }
     #tb-product .tb-faq__form-actions { display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:8px;margin-top:10px; }
-    #tb-product .tb-faq__form-actions .tb-btn { display:flex;justify-content:center;align-items:center;min-width:0;min-height:42px;padding:9px 6px;text-align:center;font-size:clamp(9px,2.3vw,12px);white-space:nowrap; }
+    #tb-product .tb-faq__form-actions .tb-btn { display:flex;justify-content:center;align-items:center;gap:6px;min-width:0;min-height:42px;padding:9px 6px;text-align:center;font-size:clamp(9px,2.3vw,12px);white-space:nowrap; }
     #tb-product .tb-faq__form-actions .tb-btn:first-child { grid-column:auto;background:#087ff0;border-color:#087ff0;color:#fff; }
     #tb-product .tb-faq__form-actions .tb-btn--zalo:hover { background:#066dcc;border-color:#066dcc; }
-    #tb-product .tb-faq__action-icon { display:none;width:18px;height:18px;stroke:currentColor;stroke-width:2;fill:none; }
+    #tb-product .tb-faq__action-icon { display:block;flex:0 0 auto;width:16px;height:16px;stroke:currentColor;stroke-width:2;fill:none; }
     @media (max-width:480px){
       #tb-product .tb-faq__form-actions { grid-template-columns:repeat(3,minmax(0,1fr)); }
       #tb-product .tb-faq__form-actions .tb-btn { min-height:40px;padding:8px; }
       #tb-product .tb-faq__form-actions .tb-btn span{display:none}
-      #tb-product .tb-faq__action-icon { display:block; }
+      #tb-product .tb-faq__action-icon { width:18px;height:18px; }
     }
     #tb-product .tb-faq__form-note { margin-top:10px!important;text-align:center;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important; }
     @media (max-width:480px){#tb-product .tb-faq__form-grid{grid-template-columns:1fr}}
@@ -4235,9 +4235,9 @@
 </div>
 <button class="tb-btn tb-btn--primary" type="submit">Gửi yêu cầu tư vấn</button>
 <div class="tb-faq__form-actions">
-<a aria-label="Nhắn Zalo gửi ảnh cụm đèn" class="tb-btn tb-btn--zalo" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M5 19.5 6.5 16A8 8 0 1 1 20 11.5a8 8 0 0 1-11.1 7.4Z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg><span>Nhắn Zalo gửi ảnh cụm đèn</span></a>
-<a aria-label="Gọi 0365 365 911" class="tb-btn tb-btn--soft" href="tel:0365365911"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M7.3 3.8 9.8 3l1.7 4.3-1.8 1.6a15.2 15.2 0 0 0 5.5 5.5l1.6-1.8 4.3 1.7-.8 2.5a3 3 0 0 1-3.2 2.1C10.6 18.1 5.9 13.4 5.1 6.9a3 3 0 0 1 2.2-3.1Z"/></svg><span>Gọi 0365 365 911</span></a>
-<a aria-label="Tìm chi nhánh Auto365" class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M20 10.5c0 5.2-8 10.5-8 10.5S4 15.7 4 10.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.5" r="2.5"/></svg><span>Tìm chi nhánh Auto365</span></a>
+<a aria-label="Gửi ảnh qua Zalo" class="tb-btn tb-btn--zalo" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M5 19.5 6.5 16A8 8 0 1 1 20 11.5a8 8 0 0 1-11.1 7.4Z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg><span>Gửi ảnh qua Zalo</span></a>
+<a aria-label="Hotline 0365 365 911" class="tb-btn tb-btn--soft" href="tel:0365365911"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M7.3 3.8 9.8 3l1.7 4.3-1.8 1.6a15.2 15.2 0 0 0 5.5 5.5l1.6-1.8 4.3 1.7-.8 2.5a3 3 0 0 1-3.2 2.1C10.6 18.1 5.9 13.4 5.1 6.9a3 3 0 0 1 2.2-3.1Z"/></svg><span>Hotline 0365 365 911</span></a>
+<a aria-label="Tìm chi nhánh Auto365" class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M20 10.5c0 5.2-8 10.5-8 10.5S4 15.7 4 10.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.5" r="2.5"/></svg><span>Tìm chi nhánh</span></a>
 </div>
 <p class="tb-faq__form-note">Nội dung sẽ được chuẩn bị để gửi qua Zalo; khi hệ thống tiếp nhận sẵn sàng, thông tin cũng được gửi tới Auto365. Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
 </form>
