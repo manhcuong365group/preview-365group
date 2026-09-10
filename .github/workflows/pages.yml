@@ -34,6 +34,7 @@ jobs:
         run: |
           rm -rf _site
           cp -R auto365 _site
+          node scripts/generate-preview-catalog.mjs _site
           BASE_PATH="$BASE_PATH" node --input-type=module <<'NODE'
           import fs from 'node:fs';
           import path from 'node:path';
