@@ -63,6 +63,7 @@ assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-light-layout\{di
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-actual-2026\{max-width:none/, 'removes the desktop image width cap on mobile');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-section-head h2\{font-size:clamp\(/, 'uses fluid heading type on mobile instead of fixed pixel sizes');
 assert.match(page, /id="nhu-cau"[\s\S]*?<h2 style="margin-top:8px">Titan Black 2026 giải quyết vấn đề gì\?<\/h2>/, 'preserves the previously approved needs-section copy');
+assert.doesNotMatch(page, /Không nên quyết định chỉ dựa vào công suất\. Hãy bắt đầu từ tình huống lái xe và cấu hình cụm đèn hiện tại\./, 'removes the unapproved needs-section supporting sentence');
 assert.match(page, /id="tb-why-buy"[\s\S]*?<h2 style="margin-top:8px">Vì sao nên chọn Titan Black 2026 cho xe của bạn\?<\/h2>/, 'preserves the existing editorial copy without rewriting it');
 assert.match(page, /#tb-product #tb-why-buy\{display:none\}/, 'keeps the unapproved editorial section out of the published layout');
 assert.match(page, /#tb-product #tb-fit-summary,#tb-product #gia-bao-gom,#tb-product #tb-booking,#tb-product #tb-handover,#tb-product #review,#tb-product #production-data,#tb-product #trust,#tb-product #tb-nearby,#tb-product #tb-technical-review,#tb-product #bai-lien-quan\{display:none\}/, 'hides every section outside the user-approved landing-page flow');
