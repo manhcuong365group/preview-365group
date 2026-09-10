@@ -3,6 +3,7 @@ import { existsSync, readFileSync } from 'node:fs';
 
 const page = readFileSync(new URL('./titan-black.html', import.meta.url), 'utf8');
 
+assert.match(page, /<meta content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"\/>/, 'keeps the GitHub Pages preview out of search indexes while allowing link discovery');
 assert.match(page, /id="tuong-thich"/, 'requires a public compatibility section');
 assert.match(page, /Lens tròn: 130 × 80 × 80 mm/, 'requires the round-lens dimensions');
 assert.match(page, /Lens vuông: 130 × 80 × 65 mm/, 'requires the square-lens dimensions');
