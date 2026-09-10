@@ -67,6 +67,7 @@ assert.match(page, /#tb-product #tb-fit-summary\{display:block\}/, 'keeps the ap
 assert.match(page, /#tb-product #evidence\{display:none\}/, 'hides the extra technical-evidence section that is outside the approved flow');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?--tb-mobile-gutter:clamp\(14px,4vw,22px\)/, 'defines a fluid mobile gutter from the page design tokens');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-light-layout\{display:grid;grid-template-columns:1fr/, 'turns the flex-based light layout into a true one-column mobile layout');
+assert.match(page, /@media\(max-width:1199\.98px\) and \(min-width:768px\)\{[\s\S]*?\.tb-light-layout\{display:grid;grid-template-columns:minmax\(0,1fr\)/, 'uses a true stacked layout for the light visual at intermediate mobile and tablet widths');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-actual-2026\{max-width:none/, 'removes the desktop image width cap on mobile');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?\.tb-section-head h2\{font-size:clamp\(/, 'uses fluid heading type on mobile instead of fixed pixel sizes');
 assert.match(page, /id="nhu-cau"[\s\S]*?<h2 style="margin-top:8px">Titan Black 2026 giải quyết vấn đề gì\?<\/h2>/, 'preserves the previously approved needs-section copy');
