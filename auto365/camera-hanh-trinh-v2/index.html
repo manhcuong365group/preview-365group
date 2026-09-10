@@ -470,8 +470,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </div>
 <aside class="quick">
-<h2>Tìm nhanh camera theo xe và nhu cầu sử dụng.</h2>
-<p>Trả lời 4 câu hỏi để xem những sản phẩm phù hợp với nhu cầu và ngân sách của bạn.</p>
+<h2>Tìm nhanh camera theo số kênh và ngân sách.</h2>
+<p>Trả lời 4 câu hỏi để xem những sản phẩm phù hợp; nhóm xe được dùng để tư vấn thêm về hệ thống điện khi lắp đặt.</p>
 <div class="configurator">
 <div class="config-steps">
 <div class="config-field">
@@ -1777,9 +1777,13 @@ function priceInBudget(p, budget) {
   return true;
 }
 
-function pickConfigs(channel, budget, use) {
-  let pool = PRODUCTS.filter(p => p.price && p.channels === channel && priceInBudget(p, budget));
+function pickConfigs(channel, budget, use, wantParking) {
+  let pool = PRODUCTS.filter(p => p.price && p.channels === channel && priceInBudget(p, budget) && (!wantParking || PARKING_SLUGS.has(p.slug)));
   let relaxed = false;
+  if (pool.length === 0 && wantParking) {
+    pool = PRODUCTS.filter(p => p.price && p.channels === channel && priceInBudget(p, budget));
+    relaxed = true;
+  }
   if (pool.length === 0) {
     pool = PRODUCTS.filter(p => p.price && p.channels === channel);
     relaxed = true;
@@ -1811,12 +1815,15 @@ function displayBrand(name) {
   return hit || 'khác';
 }
 
-function reasonFor(p, channel, budget, relaxed) {
+function reasonFor(p, channel, budget, relaxed, wantParking) {
   const parts = [];
   parts.push(p.channels + ' kênh' + (relaxed && p.channels !== channel ? ' (gần với ' + channel + ' kênh bạn chọn)' : ' đúng lựa chọn'));
   if (budget !== 'all' && p.price) {
     const inBudget = priceInBudget(p, budget);
     parts.push(inBudget ? 'trong khoảng ngân sách đã chọn' : 'ngoài khoảng ngân sách, gần nhất hiện có');
+  }
+  if (wantParking) {
+    parts.push(PARKING_SLUGS.has(p.slug) ? 'có Parking Mode cho đỗ xe nơi đông người' : 'chưa xác nhận Parking Mode');
   }
   parts.push('thương hiệu ' + displayBrand(p.name));
   return parts.join(' · ');
@@ -1830,26 +1837,28 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   else if (use === 'Lái đêm / đi tỉnh') channel = Math.max(channel, 2);
 
   const budget = document.querySelector('#hubBudget').value;
-  
+  const wantParking = (use === 'Đỗ xe nơi đông người');
+
   // Sync with main state
   state.channels.clear();
   state.channels.add(channel);
   state.prices.clear();
   if (budget !== 'all') state.prices.add(budget);
+  if (wantParking) state.features.add('parking'); else state.features.delete('parking');
   state.page = 1;
 
   syncCheckboxes();
   render();
 
-  const { picks, relaxed } = pickConfigs(channel, budget, use);
+  const { picks, relaxed } = pickConfigs(channel, budget, use, wantParking);
   const resultBox = document.querySelector('#configResult');
   const resultGrid = document.querySelector('#configResultGrid');
   const resultHead = document.querySelector('#configResultHead');
 
   if (picks.length) {
-    resultHead.textContent = relaxed ? 'Không có mẫu khớp đúng ngân sách/kênh — gần nhất hiện có:' : 'Các mẫu khớp số kênh và khoảng giá bạn chọn:';
+    resultHead.textContent = relaxed ? 'Không có mẫu khớp đúng ngân sách/kênh' + (wantParking ? '/Parking Mode' : '') + ' — gần nhất hiện có:' : 'Các mẫu khớp số kênh và khoảng giá bạn chọn' + (wantParking ? ', ưu tiên có Parking Mode' : '') + ':';
     resultGrid.innerHTML = picks.map(p =>
-      '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span><p>' + reasonFor(p, channel, budget, relaxed) + '</p><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a></article>'
+      '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span><p>' + reasonFor(p, channel, budget, relaxed, wantParking) + '</p><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a></article>'
     ).join('');
     resultBox.hidden = false;
     resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
