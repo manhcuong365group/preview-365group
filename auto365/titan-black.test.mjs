@@ -61,7 +61,10 @@ assert.doesNotMatch(visibleLightingCopy, /<p class="tb-eyebrow">Chế độ Cos<
 assert.match(page, /\.tb-light-copy-grid article\{display:flex;flex-direction:column;justify-content:flex-start;position:relative;padding:24px 28px\}[\s\S]*?\.tb-light-copy-grid h3\{margin:0;font-size:clamp\(18px,1\.3vw,22px\)!important/, 'aligns compact Cos and Pha copy at the top of each card');
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
 assert.match(page, /\.tb-light-layout\{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch\}/, 'uses a wrapping lighting layout that cannot overlap at zoomed viewport widths');
-assert.match(page, /\.tb-light-shared\{[^}]*background:#071220 url\('titan-black\/hinh\/titan-back-8\.webp'\) center \/ cover no-repeat/, 'fills the lighting visual frame without spare outer bars');
+const updatedLightingImage = '1789026525188_9057802958140973376_9057802958140973376_24cc37fb87b116baa0436686dd1cbd07.jpg';
+assert.match(page, new RegExp(`src="titan-black/hinh/${updatedLightingImage}"`), 'uses the supplied replacement lighting illustration');
+assert.match(page, new RegExp(`background:#071220 url\\('titan-black/hinh/${updatedLightingImage.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'\\) center / cover no-repeat`), 'uses the replacement image as the lighting frame fallback');
+assert.ok(existsSync(new URL(`./titan-black/hinh/${updatedLightingImage}`, import.meta.url)), 'publishes the supplied replacement lighting asset');
 for (const removedDescription of ['Kết hợp nhiệt màu tối ưu, hỗ trợ tầm nhìn rõ ràng trong nhiều điều kiện di chuyển.', 'Chọn hãng xe để xem các ca đã thực hiện. Các ca dưới đây sử dụng Titan Black 2.0; phương án Titan Black 2026 cần được kiểm tra theo cụm đèn và hệ điện thực tế.']) assert.doesNotMatch(page, new RegExp(removedDescription.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `removes requested supporting copy: ${removedDescription}`);
 assert.match(page, /const specifications = root\.querySelector\("#thong-so"\);[\s\S]*?if \(specifications && comparison\) comparison\.before\(specifications\);/, 'places the full technical specifications before the generation comparison');
 const whyBuySection = page.match(/<section class="tb-section tb-why-buy" id="tb-why-buy">([\s\S]*?)<\/section>/)?.[1] ?? '';
