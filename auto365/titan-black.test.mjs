@@ -105,8 +105,8 @@ assert.match(page, /#tb-product #tb-fit-summary,#tb-product #gia-bao-gom,#tb-pro
 assert.doesNotMatch(page, /#tb-product #nhu-cau\{display:none\}/, 'keeps the approved needs section visible');
 assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}/, 'balances the FAQ form and question columns on desktop');
 assert.match(page, /#tb-product #faq \.tb-faq > div:first-child\{display:flex;flex-direction:column\}/, 'allows the consultation form to match the FAQ column height');
-assert.match(page, /#tb-product \.tb-faq details\{\s*padding:11px 16px;/, 'keeps FAQ questions compact without excess vertical whitespace');
-assert.match(page, /#tb-product \.tb-faq-list\{\s*width:100%;\s*justify-self:stretch;\s*gap:8px;\s*align-content:start;/, 'keeps FAQ rows aligned to the full FAQ column without vertical stretching');
+assert.match(page, /#tb-product \.tb-faq details\{\s*width:100%;\s*margin:0;\s*padding:11px 16px;/, 'keeps FAQ questions compact and aligned to the full FAQ column');
+assert.match(page, /#tb-product \.tb-faq-list\{\s*width:100%;\s*height:100%;\s*justify-self:stretch;\s*grid-auto-rows:1fr;\s*gap:8px;\s*align-content:stretch;/, 'keeps FAQ rows aligned and evenly stretched to match the consultation form');
 assert.match(page, /#tb-product \.tb-faq details:not\(\[open\]\)\{display:flex;flex-direction:column;justify-content:center\}/, 'vertically centers closed FAQ summaries inside their stretched rows');
 assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/decoder/, 'groups possible CANBUS costs into the price FAQ');
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
