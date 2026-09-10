@@ -3177,13 +3177,12 @@
 #tb-product .tb-light-layout > *{min-width:0}
 #tb-product .tb-light-shared{flex:1 1 600px}
 #tb-product .tb-light-copy-grid{display:grid;flex:1 1 360px;grid-template-columns:1fr;gap:18px;margin:0}
-#tb-product .tb-light-copy-grid article{display:flex;flex-direction:column;justify-content:center;position:relative;padding:28px 28px 28px 76px}
-#tb-product .tb-light-copy-grid article::before{content:"";position:absolute;top:29px;left:30px;width:15px;height:15px;border:8px solid #edf7ff;border-radius:50%;background:#087ff0}
-#tb-product .tb-light-copy-grid article:nth-child(2)::before{border-color:#fff8ea;background:#ffae00}
+#tb-product .tb-light-copy-grid article{display:flex;flex-direction:column;justify-content:flex-start;position:relative;padding:24px 28px}
+#tb-product .tb-light-copy-grid article::before{display:none}
 #tb-product .tb-light-copy-grid .tb-eyebrow{margin:0;color:#087ff0}
 #tb-product .tb-light-copy-grid article:nth-child(2) .tb-eyebrow{color:#df9100}
-#tb-product .tb-light-copy-grid h3{margin-top:12px;font-size:clamp(21px,1.55vw,28px);color:#12213d!important}
-#tb-product .tb-light-copy-grid p{margin-top:14px;font-size:clamp(15px,1.08vw,18px);line-height:1.55}
+#tb-product .tb-light-copy-grid h3{margin:0;font-size:clamp(18px,1.3vw,22px)!important;color:#12213d!important}
+#tb-product .tb-light-copy-grid p{margin-top:10px;font-size:clamp(14px,1vw,16px);line-height:1.5}
 #tb-product .tb-feature{min-height:0}
 #tb-product .tb-why-buy{padding-top:6px}
 #tb-product .tb-why-buy__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
@@ -3218,11 +3217,11 @@
 }
 #tb-product .tb-light-shared{aspect-ratio:auto;background:#fff}
 #tb-product .tb-light-shared img{display:block;width:100%;height:auto;object-fit:contain}
-#tb-product h2{font-size:clamp(22px,2vw,28px)}
-#tb-product h3{font-size:clamp(17px,1.35vw,21px)}
+#tb-product h2{font-size:clamp(22px,2vw,28px)!important}
+#tb-product h3{font-size:clamp(17px,1.35vw,21px)!important}
 @media(max-width:767.98px){
-  #tb-product h2{font-size:clamp(21px,6vw,26px)}
-  #tb-product h3{font-size:clamp(16px,4.8vw,19px)}
+  #tb-product h2{font-size:clamp(21px,6vw,26px)!important}
+  #tb-product h3{font-size:clamp(16px,4.8vw,19px)!important}
 }
 #tb-product .tb-spec-price{grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);align-items:stretch}
 #tb-product .tb-spec-media{min-height:0;aspect-ratio:4 / 3;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220 url('titan-black/hinh/cn.jpg') center / contain no-repeat}
@@ -3348,6 +3347,7 @@
   #tb-product .tb-light-layout{display:grid;grid-template-columns:1fr;gap:var(--tb-grid-gap)}
   #tb-product .tb-light-shared{flex:none;width:100%;max-width:none}
   #tb-product .tb-light-copy-grid{width:100%;gap:var(--tb-grid-gap)}
+  #tb-product .tb-light-copy-grid article{padding:18px 20px}
   #tb-product .tb-spec-price,#tb-product .tb-consult-cta,#tb-product .tb-trusted-address{grid-template-columns:1fr;gap:var(--tb-grid-gap)}
   #tb-product .tb-spec-panel,#tb-product .tb-price-panel,#tb-product .tb-feature__copy,#tb-product #faq .tb-faq__form,#tb-product .tb-consult-cta,#tb-product .tb-trusted-address{padding:var(--tb-mobile-pad)}
   #tb-product .tb-actual-2026{max-width:none;padding-inline:var(--tb-mobile-pad)}
@@ -3587,12 +3587,10 @@
 </figure>
 <div class="tb-light-copy-grid">
 <article class="tb-surface">
-<p class="tb-eyebrow">Chế độ Cos</p>
 <h3>Cos 5200K: cấu hình nhiệt màu được công bố</h3>
 <p>Cos sử dụng nhiệt màu 5200K theo thông số sản phẩm. Vùng sáng cần được kiểm tra và căn chỉnh theo cụm đèn thực tế sau khi lắp.</p>
 </article>
 <article class="tb-surface">
-<p class="tb-eyebrow">Chế độ Pha</p>
 <h3>Tâm Pha 3000K: cấu hình ánh sáng vàng ở tâm</h3>
 <p>Tâm Pha 3000K là cấu hình được công bố của sản phẩm, không thay thế đèn sương mù chuyên dụng. Hiệu quả thực tế cần được kiểm tra sau khi căn chỉnh.</p>
 </article>

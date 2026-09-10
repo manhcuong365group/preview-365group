@@ -49,13 +49,16 @@ assert.match(page, /\.tb-checker__actions \{ display:grid;grid-template-columns:
 assert.match(page, /@media \(max-width:767\.98px\) \{[\s\S]*?\.tb-checker__grid \{ grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:8px;/, 'keeps the top vehicle consultation fields in two compact mobile columns');
 assert.match(page, /@media\(max-width:767\.98px\)\{[\s\S]*?#thiet-ke > \.tb-shell > article\.tb-surface\{grid-template-columns:1fr!important;gap:0!important\}/, 'stacks the H4 accessory image above its content on mobile');
 assert.match(page, /\.tb-light-shared\{aspect-ratio:auto;background:#fff\}[\s\S]*?\.tb-light-shared img\{display:block;width:100%;height:auto;object-fit:contain\}/, 'shows the full Cos/Pha illustration without cropping');
-assert.match(page, /#tb-product h2\{font-size:clamp\(22px,2vw,28px\)\}[\s\S]*?#tb-product h3\{font-size:clamp\(17px,1\.35vw,21px\)\}/, 'keeps secondary headings compact');
+assert.match(page, /#tb-product h2\{font-size:clamp\(22px,2vw,28px\)!important\}[\s\S]*?#tb-product h3\{font-size:clamp\(17px,1\.35vw,21px\)!important\}/, 'keeps secondary headings compact');
 assert.doesNotMatch(page, /Hình ảnh dùng để minh họa cấu hình Cos\/Pha theo tư liệu sản phẩm; hiệu quả thực tế phụ thuộc cụm đèn, cách căn chỉnh, mặt đường, thời tiết và điều kiện sử dụng của từng xe\./, 'removes the lighting-image disclaimer requested by the user');
 assert.doesNotMatch(page, /<p class="tb-eyebrow">Hiệu suất ánh sáng<\/p>/, 'removes the lighting-section eyebrow requested by the user');
 assert.doesNotMatch(page, /Công lắp và vật tư phát sinh xác nhận theo xe/, 'removes the extra installation-cost note below the hero price');
 assert.match(page, /<h3 style="margin-top:8px">Nhôm \+ quạt<\/h3>[\s\S]*Quạt tản nhiệt 45 mm hỗ trợ lưu thông khí phía sau cụm đèn/, 'balances the cooling card with its 45 mm fan detail');
 assert.match(page, /\.tb-light-shared\{flex:1 1 600px\}/, 'keeps the lighting visual beside the Cos and Pha guidance when space permits');
-assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Chế độ Cos[\s\S]*?Chế độ Pha[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
+assert.match(page, /<div class="tb-light-layout">\s*<figure class="tb-light-shared">[\s\S]*?<div class="tb-light-copy-grid">[\s\S]*?Cos 5200K:[\s\S]*?Tâm Pha 3000K:[\s\S]*?<\/div>\s*<\/div>/, 'groups the light visual and stacked guidance into one layout');
+const visibleLightingCopy = page.match(/<div class="tb-light-copy-grid">([\s\S]*?)<\/div>\s*<\/div>\s*<div class="tb-light-grid">/)?.[1] ?? '';
+assert.doesNotMatch(visibleLightingCopy, /<p class="tb-eyebrow">Chế độ Cos<\/p>|<p class="tb-eyebrow">Chế độ Pha<\/p>/, 'removes redundant Cos and Pha mode labels');
+assert.match(page, /\.tb-light-copy-grid article\{display:flex;flex-direction:column;justify-content:flex-start;position:relative;padding:24px 28px\}[\s\S]*?\.tb-light-copy-grid h3\{margin:0;font-size:clamp\(18px,1\.3vw,22px\)!important/, 'aligns compact Cos and Pha copy at the top of each card');
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
 assert.match(page, /\.tb-light-layout\{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch\}/, 'uses a wrapping lighting layout that cannot overlap at zoomed viewport widths');
 assert.match(page, /\.tb-light-shared\{[^}]*background:#071220 url\('titan-black\/hinh\/titan-back-8\.webp'\) center \/ cover no-repeat/, 'fills the lighting visual frame without spare outer bars');
