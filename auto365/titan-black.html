@@ -1674,6 +1674,10 @@
   #tb-product .tb-answer-grid,#tb-product .tb-decision-grid,#tb-product .tb-trust-grid{grid-template-columns:1fr}
   #tb-product .tb-evidence-metrics,#tb-product .tb-fit-result__grid{grid-template-columns:1fr 1fr}
 }
+@media(max-width:1023.98px){
+  #tb-product .tb-decision-grid{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin}
+  #tb-product .tb-decision-card{flex:0 0 min(82vw,360px);scroll-snap-align:start}
+}
 @media(max-width:575.98px){
   #tb-product .tb-evidence-metrics,#tb-product .tb-fit-result__grid{grid-template-columns:1fr}
 }
