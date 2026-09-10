@@ -578,10 +578,15 @@
     #tb-product .tb-faq__form h3 { text-align:center;color:var(--tb-dark);font-size:var(--tb-fs-xl); }
     #tb-product .tb-faq__form-grid { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 14px;margin-top:16px; }
     #tb-product .tb-faq__form label { display:grid;gap:5px;color:var(--tb-text);font-size:var(--tb-fs-xs);font-weight:700; }
+    #tb-product .tb-faq__label-text { display:inline-flex;align-items:center;gap:3px;line-height:1.2; }
+    #tb-product .tb-faq__label-text b { color:var(--tb-red); }
     #tb-product .tb-faq__form input,#tb-product .tb-faq__form select { min-width:0;height:44px;padding:0 12px;border:1px solid #cfd8e3;border-radius:10px;background:#fff;color:var(--tb-text);font:inherit;font-weight:400; }
     #tb-product .tb-faq__consent { display:flex!important;grid-column:1 / -1;align-items:flex-start;gap:8px;margin-top:2px;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important;font-weight:400!important; }
     #tb-product .tb-faq__consent input { width:16px;height:16px;flex:0 0 auto;margin-top:1px;padding:0; }
     #tb-product .tb-faq__form button { width:100%;margin-top:14px; }
+    #tb-product .tb-faq__form-actions { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:10px; }
+    #tb-product .tb-faq__form-actions .tb-btn { display:flex;justify-content:center;align-items:center;min-height:42px;padding:9px 10px;text-align:center; }
+    #tb-product .tb-faq__form-actions .tb-btn:first-child { grid-column:1 / -1; }
     #tb-product .tb-faq__form-note { margin-top:10px!important;text-align:center;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important; }
     @media (max-width:480px){#tb-product .tb-faq__form-grid{grid-template-columns:1fr}}
 
@@ -4377,8 +4382,8 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
 <form class="tb-faq__form" id="tb-faq-form">
 <h3>Nhận tư vấn miễn phí</h3>
 <div class="tb-faq__form-grid">
-<label>Họ và tên <span aria-hidden="true" style="color:var(--tb-red)">*</span><input name="name" placeholder="Nhập họ tên" required=""/></label>
-<label>Số điện thoại <span aria-hidden="true" style="color:var(--tb-red)">*</span><input inputmode="tel" name="phone" placeholder="Nhập số điện thoại" required=""/></label>
+<label><span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">*</b></span><input name="name" placeholder="Nhập họ tên" required=""/></label>
+<label><span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">*</b></span><input inputmode="tel" name="phone" placeholder="Nhập số điện thoại" required=""/></label>
 <label>Hãng xe<input name="brand" placeholder="Ví dụ: Mazda, Toyota"/></label>
 <label>Dòng xe<input name="model" placeholder="VD: Ford Ranger, VF5, CX-5"/></label>
 <label>Năm sản xuất<select name="year"><option value="">Chọn năm</option><option>Trước 2010</option><option>2010–2015</option><option>2016–2020</option><option>2021–nay</option></select></label>
@@ -4386,6 +4391,11 @@ Hãng + model + đời xe • URL case chi tiết • ảnh xe • cấu hình t
 <label class="tb-faq__consent"><input name="consent" required="" type="checkbox"/>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat" rel="noopener" target="_blank">Chính sách bảo mật</a>.</label>
 </div>
 <button class="tb-btn tb-btn--primary" type="submit">Gửi yêu cầu tư vấn</button>
+<div class="tb-faq__form-actions">
+<a class="tb-btn tb-btn--primary" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo gửi ảnh cụm đèn</a>
+<a class="tb-btn tb-btn--soft" href="tel:0365365911">Gọi 0365 365 911</a>
+<a class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh">Tìm chi nhánh Auto365</a>
+</div>
 <p class="tb-faq__form-note">Nội dung sẽ được chuẩn bị để gửi qua Zalo; khi hệ thống tiếp nhận sẵn sàng, thông tin cũng được gửi tới Auto365. Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
 </form>
 </div>
