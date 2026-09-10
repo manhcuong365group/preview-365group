@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from 'node:fs';
 const page = readFileSync(new URL('./titan-black.html', import.meta.url), 'utf8');
 
 assert.match(page, /<meta content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"\/>/, 'keeps the GitHub Pages preview out of search indexes while allowing link discovery');
+assert.match(page, /#tb-product \.tb-hero__grid\{[\s\S]*?align-items:stretch;[\s\S]*?#tb-product \.tb-hero__content\{[\s\S]*?align-self:stretch;/, 'keeps the desktop hero content card the same height as its image');
 assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-checker tb-surface" id="tb-fit-form" method="post">/, 'sends the main consultation form to the verified lighting lead endpoint');
 assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-faq__form" id="tb-faq-form" method="post">/, 'sends the FAQ consultation form to the verified lighting lead endpoint');
 assert.match(page, /fetch\(form\.action,\s*\{[\s\S]*?body:data,[\s\S]*?X-Idempotency-Key/, 'uses the lighting lead API contract with FormData and an idempotency key');
