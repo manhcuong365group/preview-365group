@@ -3295,8 +3295,10 @@
 #tb-product .tb-install-card__link{display:inline-flex;align-items:center;gap:7px;margin-top:auto;padding-top:18px;color:#171b24!important;font-size:var(--tb-fs-sm);font-weight:800;text-decoration:none}
 #tb-product .tb-install-card__link:hover{color:#e92531!important}
 #tb-product #faq .tb-faq{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
-#tb-product #faq .tb-faq__heading{margin-bottom:16px}
 #tb-product #faq .tb-faq > div:first-child{display:flex;flex-direction:column}
+#tb-product #faq .tb-faq__questions{display:flex;flex-direction:column;min-width:0}
+#tb-product #faq .tb-faq__questions > h2{margin:0 0 16px}
+#tb-product #faq .tb-faq__questions .tb-faq-list{flex:1}
 #tb-product #faq .tb-faq__form{display:flex;flex:1;flex-direction:column;margin-top:16px;padding:24px}
 #tb-product #faq .tb-faq__form-note{margin-top:auto!important;padding-top:12px}
 #tb-product .tb-overview{margin:0 0 8px;overflow:hidden;border:1px solid var(--tb-line);border-radius:var(--tb-r-lg);background:#071220}
@@ -4238,12 +4240,7 @@
 </div>
 </section>
 <section class="tb-section tb-section--soft" id="faq">
-<div class="tb-shell">
-<div class="tb-faq__heading">
-<p class="tb-eyebrow">Giải đáp trước khi lắp</p>
-<h2 style="margin-top:8px">Những điều chủ xe thường hỏi</h2>
-</div>
-<div class="tb-faq">
+<div class="tb-shell tb-faq">
 <div>
 <form action="/api/booking" class="tb-faq__form" id="tb-faq-form" method="post">
 <h3>Nhận tư vấn miễn phí</h3>
@@ -4266,6 +4263,8 @@
 <p class="tb-faq__form-note">Yêu cầu được gửi đến Auto365; hoặc liên hệ <a href="tel:0365365911">Hotline 0365 365 911</a> khi cần hỗ trợ nhanh.</p>
 </form>
 </div>
+<div class="tb-faq__questions">
+<h2>Câu hỏi thường gặp</h2>
 <div class="tb-faq-list">
 <details class="tb-surface">
 <summary>Titan Black 2026 giá bao nhiêu? Giá đã gồm công lắp chưa?</summary>
@@ -4295,7 +4294,6 @@
 <summary>Tôi cần gửi gì để được tư vấn và chọn chi nhánh gần nhất?</summary>
 <p>Gửi hãng xe, đời xe, khu vực đang ở và ảnh cụm đèn nếu có. Đội ngũ Auto365 sẽ tư vấn sơ bộ, sau đó hướng dẫn bạn đến <a href="https://auto365.vn/chi-nhanh">chi nhánh phù hợp</a> để kiểm tra xe và xác nhận lịch lắp.</p>
 </details>
-</div>
 </div>
 </div>
 </section>
