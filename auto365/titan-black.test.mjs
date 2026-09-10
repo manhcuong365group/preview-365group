@@ -14,8 +14,9 @@ assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-image:ur
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-color:#087bd0/, 'requires a blue surround instead of black side bars');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100% 100%/, 'requires the supplied lens image to fill its matching frame');
 assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
-assert.match(page, /<form class="tb-faq__form" id="tb-faq-form">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the supplied consultation form in the FAQ column');
-assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)/, 'requires the FAQ form to use the same Zalo consultation flow');
+assert.match(page, /<form action="\/api\/booking" class="tb-faq__form" id="tb-faq-form" method="post">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the supplied API-enabled consultation form in the FAQ column');
+assert.match(page, /<form action="\/api\/booking" class="tb-faq__form" id="tb-faq-form" method="post">/, 'submits the FAQ consultation form to the booking API');
+assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)[\s\S]*?fetch\(form\.action,[\s\S]*?method: "POST"[\s\S]*?JSON\.stringify\(payload\)/, 'sends both Titan consultation forms to the booking API as JSON');
 assert.match(page, /<span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">\*<\/b><\/span><input name="name"/, 'keeps the name required marker inline with its label');
 assert.match(page, /<span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">\*<\/b><\/span><input inputmode="tel" name="phone"/, 'keeps the phone required marker inline with its label');
 assert.match(page, /class="tb-faq__form-actions"[\s\S]*?Gửi ảnh qua Zalo[\s\S]*?Hotline 0365 365 911[\s\S]*?Tìm chi nhánh/, 'adds concise Zalo, hotline and branch actions beneath the consultation request');

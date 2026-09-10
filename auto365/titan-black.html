@@ -599,6 +599,8 @@
       #tb-product .tb-faq__action-icon { width:18px;height:18px; }
     }
     #tb-product .tb-faq__form-note { margin-top:10px!important;text-align:center;color:var(--tb-muted)!important;font-size:var(--tb-fs-xs)!important; }
+    #tb-product .tb-form-status{min-height:0;margin:10px 0 0;color:#147a50;font-size:var(--tb-fs-xs);font-weight:650;line-height:1.5}
+    #tb-product .tb-form-status[data-state="error"]{color:#a35a14}
     @media (max-width:480px){#tb-product .tb-faq__form-grid{grid-template-columns:1fr}}
 
     /* FINAL CTA */
@@ -3428,7 +3430,7 @@
 <li><strong>Lắp đặt</strong><br/>Kiểm tra xe thực tế · có phụ kiện H4</li>
 </ul>
 </article>
-<form class="tb-checker tb-surface" id="tb-fit-form">
+<form action="/api/booking" class="tb-checker tb-surface" id="tb-fit-form" method="post">
 <p class="tb-eyebrow">Tư vấn theo dòng xe</p>
 <h2>Nhận tư vấn phương án lắp</h2>
 <p style="margin-top:8px">Gửi thông tin cơ bản để Auto365 kiểm tra sơ bộ theo cấu hình thực tế của xe.</p>
@@ -3459,6 +3461,7 @@
 <a class="tb-btn tb-btn--zalo" href="https://zalo.me/3622666363345050913" rel="noopener" target="_blank">Nhắn Zalo</a>
 <a class="tb-btn tb-btn--soft" href="tel:0365365911">Hotline 0365 365 911</a>
 </div>
+<p aria-live="polite" class="tb-form-status" data-form-status="" role="status"></p>
 </form>
 </div>
 </section>
@@ -4231,7 +4234,7 @@
 <div>
 <p class="tb-eyebrow">Giải đáp trước khi lắp</p>
 <h2 style="margin-top:8px">Những điều chủ xe thường hỏi</h2>
-<form class="tb-faq__form" id="tb-faq-form">
+<form action="/api/booking" class="tb-faq__form" id="tb-faq-form" method="post">
 <h3>Nhận tư vấn miễn phí</h3>
 <div class="tb-faq__form-grid">
 <label><span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">*</b></span><input name="name" placeholder="Nhập họ tên" required=""/></label>
@@ -4248,7 +4251,8 @@
 <a aria-label="Hotline 0365 365 911" class="tb-btn tb-btn--soft" href="tel:0365365911"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M7.3 3.8 9.8 3l1.7 4.3-1.8 1.6a15.2 15.2 0 0 0 5.5 5.5l1.6-1.8 4.3 1.7-.8 2.5a3 3 0 0 1-3.2 2.1C10.6 18.1 5.9 13.4 5.1 6.9a3 3 0 0 1 2.2-3.1Z"/></svg><span>Hotline 0365 365 911</span></a>
 <a aria-label="Tìm chi nhánh Auto365" class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M20 10.5c0 5.2-8 10.5-8 10.5S4 15.7 4 10.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.5" r="2.5"/></svg><span>Tìm chi nhánh</span></a>
 </div>
-<p class="tb-faq__form-note">Nội dung sẽ được chuẩn bị để gửi qua Zalo; khi hệ thống tiếp nhận sẵn sàng, thông tin cũng được gửi tới Auto365. Hoặc gọi <a href="tel:0365365911">0365 365 911</a></p>
+<p aria-live="polite" class="tb-form-status" data-form-status="" role="status"></p>
+<p class="tb-faq__form-note">Yêu cầu được gửi đến Auto365; hoặc liên hệ <a href="tel:0365365911">Hotline 0365 365 911</a> khi cần hỗ trợ nhanh.</p>
 </form>
 </div>
 <div class="tb-faq-list">
@@ -4366,9 +4370,42 @@
       });
 
       root.querySelectorAll("#tb-fit-form,#tb-faq-form").forEach(form => {
-        form.addEventListener("submit", event => {
+        form.addEventListener("submit", async event => {
           event.preventDefault();
-          window.location.href = "https://zalo.me/3622666363345050913";
+          if (!form.reportValidity()) return;
+
+          const submit = form.querySelector('button[type="submit"]');
+          const status = form.querySelector("[data-form-status]");
+          const data = new FormData(form);
+          const payload = {
+            name: data.get("name"),
+            phone: data.get("phone"),
+            vehicle: [data.get("brand"), data.get("model")].filter(Boolean).join(" ") || data.get("vehicle") || "Chưa cung cấp",
+            area: data.get("area") || "",
+            year: data.get("year") || "",
+            need: data.get("need") || "Tư vấn Titan Black 2026",
+            source: "titan-black-2026",
+            timestamp: new Date().toISOString()
+          };
+          if (submit) { submit.disabled = true; submit.textContent = "Đang gửi yêu cầu…"; }
+          if (status) { status.dataset.state = ""; status.textContent = ""; }
+          try {
+            const response = await fetch(form.action, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            if (!response.ok) throw new Error(`Booking API returned ${response.status}`);
+            form.reset();
+            if (status) status.textContent = "Đã gửi yêu cầu. Auto365 sẽ liên hệ lại sớm nhất.";
+          } catch (error) {
+            if (status) {
+              status.dataset.state = "error";
+              status.textContent = "Hệ thống chưa tiếp nhận được yêu cầu. Vui lòng liên hệ Hotline 0365 365 911 hoặc gửi ảnh qua Zalo.";
+            }
+          } finally {
+            if (submit) { submit.disabled = false; submit.textContent = form.id === "tb-faq-form" ? "Gửi yêu cầu tư vấn" : "Nhận tư vấn phương án lắp"; }
+          }
         });
       });
 
