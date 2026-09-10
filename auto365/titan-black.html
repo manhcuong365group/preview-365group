@@ -597,8 +597,8 @@
       #tb-product .tb-faq__action-icon { width:18px;height:18px; }
     }
     @media (min-width:481px){
-      #tb-product .tb-faq__form-actions { display:flex;justify-content:flex-start; }
-      #tb-product .tb-faq__form-actions .tb-btn { flex:0 0 auto;padding:9px 14px; }
+      #tb-product .tb-faq__form-actions { display:grid;grid-template-columns:repeat(3,minmax(0,1fr)); }
+      #tb-product .tb-faq__form-actions .tb-btn { min-width:0;padding:9px 8px; }
       #tb-product .tb-faq__form-actions .tb-btn span{display:inline}
       #tb-product .tb-faq__form-actions .tb-btn--zalo{background:#e92531;border-color:#e92531}
     }
