@@ -3473,7 +3473,7 @@
 <li><strong>Lắp đặt</strong><br/>Kiểm tra xe thực tế · có phụ kiện H4</li>
 </ul>
 </article>
-<form action="https://zalo.me/3622666363345050913" class="tb-checker tb-surface" id="tb-fit-form" method="get" target="_blank">
+<form action="/api/leads/lighting" class="tb-checker tb-surface" id="tb-fit-form" method="post">
 <input name="source_page" type="hidden" value="titan-black-2026"/>
 <p class="tb-eyebrow">Tư vấn theo dòng xe</p>
 <h2>Nhận tư vấn phương án lắp</h2>
@@ -3954,7 +3954,7 @@
 <section class="tb-section tb-section--soft" id="faq">
 <div class="tb-shell tb-faq">
 <div>
-<form action="https://zalo.me/3622666363345050913" class="tb-faq__form" id="tb-faq-form" method="get" target="_blank">
+<form action="/api/leads/lighting" class="tb-faq__form" id="tb-faq-form" method="post">
 <input name="source_page" type="hidden" value="titan-black-2026"/>
 <h3>Nhận tư vấn miễn phí</h3>
 <div class="tb-faq__form-grid">
@@ -3973,7 +3973,7 @@
 <a aria-label="Tìm chi nhánh" class="tb-btn tb-btn--soft" href="https://auto365.vn/chi-nhanh"><svg aria-hidden="true" class="tb-faq__action-icon" viewBox="0 0 24 24"><path d="M20 10.5c0 5.2-8 10.5-8 10.5S4 15.7 4 10.5a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10.5" r="2.5"/></svg><span>Tìm chi nhánh</span></a>
 </div>
 <p aria-live="polite" class="tb-form-status" data-form-status="" role="status"></p>
-<p class="tb-faq__form-note">Nội dung sẽ được soạn để bạn xem lại, sao chép và tự gửi qua Zalo; hoặc liên hệ <a href="tel:0365365911">Hotline 0365 365 911</a> khi cần hỗ trợ nhanh.</p>
+<p class="tb-faq__form-note">Auto365 chỉ xác nhận tiếp nhận sau khi hệ thống trả về mã yêu cầu; hoặc liên hệ <a href="tel:0365365911">Hotline 0365 365 911</a> khi cần hỗ trợ nhanh.</p>
 </form>
 </div>
 <div class="tb-faq__questions">
@@ -4078,32 +4078,45 @@
           event.preventDefault();
           if (!form.reportValidity()) return;
 
+          const submit = form.querySelector('button[type="submit"]');
           const status = form.querySelector("[data-form-status]");
           const data = new FormData(form);
+          const idempotencyKey = crypto.randomUUID?.() || `${Date.now()}-${Math.random().toString(36).slice(2)}`;
           const activeVariant = root.querySelector('[data-variant][aria-pressed="true"]')?.textContent?.trim() || "Chưa chọn";
-          const message = [
-            "[Tư vấn Titan Black 2026]",
-            `Họ tên: ${data.get("name") || "Chưa cung cấp"}`,
-            `Số điện thoại: ${data.get("phone") || "Chưa cung cấp"}`,
-            `Xe: ${[data.get("brand"), data.get("model")].filter(Boolean).join(" ") || "Chưa cung cấp"}`,
-            `Đời xe / phiên bản: ${data.get("year") || "Chưa cung cấp"}`,
-            `Lens đang chọn: ${activeVariant}`,
-            `Nhu cầu: ${data.get("need") || "Chưa cung cấp"}`,
-            data.get("area") ? `Khu vực / chi nhánh: ${data.get("area")}` : ""
-          ].filter(Boolean).join("\n");
-
-          let copied = false;
+          data.set("full_name", data.get("name") || "");
+          data.set("vehicle", [data.get("brand"), data.get("model")].filter(Boolean).join(" ") || "Chưa cung cấp");
+          data.set("vehicle_year_version", data.get("year") || "Chưa cung cấp");
+          data.set("lens_variant", activeVariant);
+          data.set("source_page", "titan-black-2026");
+          data.set("request_type", "remote_quote");
+          data.set("privacy_consent", data.get("consent") === "on" ? "1" : "");
+          data.set("consent_timestamp", new Date().toISOString());
+          data.set("idempotency_key", idempotencyKey);
+          if (submit) { submit.disabled = true; submit.textContent = "Đang gửi yêu cầu…"; }
+          if (status) { status.dataset.state = ""; status.textContent = ""; }
+          const controller = new AbortController();
+          const timeout = window.setTimeout(() => controller.abort(), 12000);
           try {
-            await navigator.clipboard.writeText(message);
-            copied = true;
-          } catch (_) {}
-          if (status) {
-            status.dataset.state = "";
-            status.textContent = copied
-              ? "Nội dung tư vấn đã được sao chép. Zalo sẽ mở để bạn kiểm tra và tự gửi."
-              : "Zalo sẽ mở; vui lòng nhập hoặc dán lại thông tin để tự gửi.";
+            const response = await fetch(form.action, {
+              method: "POST",
+              body:data,
+              headers:{ "Accept":"application/json", "X-Idempotency-Key":idempotencyKey },
+              signal:controller.signal
+            });
+            let payload = {};
+            try { payload = await response.json(); } catch (_) {}
+            if (!response.ok || !payload.lead_id) throw new Error("invalid_response");
+            form.reset();
+            if (status) status.textContent = `Auto365 đã nhận yêu cầu. Mã tiếp nhận: ${String(payload.lead_id).slice(0,60)}.`;
+          } catch (error) {
+            if (status) {
+              status.dataset.state = "error";
+              status.textContent = error.name === "AbortError" ? "Hệ thống phản hồi chậm. Vui lòng thử lại hoặc liên hệ Hotline 0365 365 911." : "Chưa gửi được yêu cầu. Vui lòng thử lại, gọi Hotline 0365 365 911 hoặc nhắn Zalo.";
+            }
+          } finally {
+            window.clearTimeout(timeout);
+            if (submit) { submit.disabled = false; submit.textContent = form.id === "tb-faq-form" ? "Gửi yêu cầu tư vấn" : "Nhận tư vấn phương án lắp"; }
           }
-          window.open(form.action, "_blank", "noopener,noreferrer");
         });
       });
 

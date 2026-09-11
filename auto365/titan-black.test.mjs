@@ -20,10 +20,10 @@ assert.doesNotMatch(page, /href="#tb-nearby"/, 'does not link visitors to the re
 assert.match(page, /href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm lắp gần tôi<\/a>[\s\S]*?href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Xem chi nhánh<\/a>/, 'sends both branch actions to the active Auto365 branch directory');
 assert.match(page, /#tb-product \.tb-hero__grid\{[\s\S]*?align-items:stretch;[\s\S]*?#tb-product \.tb-hero__content\{[\s\S]*?align-self:stretch;/, 'keeps the desktop hero content card the same height as its image');
 assert.match(page, /#tb-product \.tb-buy-grid \{[\s\S]*?align-items:stretch;/, 'keeps the quick-information card level with the consultation form on desktop');
-assert.match(page, /<form action="https:\/\/zalo\.me\/3622666363345050913" class="tb-checker tb-surface" id="tb-fit-form" method="get" target="_blank">/, 'uses a customer-controlled Zalo flow for the main consultation form');
-assert.match(page, /<form action="https:\/\/zalo\.me\/3622666363345050913" class="tb-faq__form" id="tb-faq-form" method="get" target="_blank">/, 'uses a customer-controlled Zalo flow for the FAQ form');
-assert.doesNotMatch(page, /fetch\(form\.action|\/api\/leads\/lighting/, 'does not claim a lead API integration without a verified backend');
-assert.match(page, /Lens đang chọn: \$\{activeVariant\}[\s\S]*?navigator\.clipboard\.writeText\(message\)[\s\S]*?window\.open\(form\.action/, 'prepares the selected lens and vehicle details for the customer to review and send in Zalo');
+assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-checker tb-surface" id="tb-fit-form" method="post">/, 'sends the main consultation form to the production lighting lead endpoint');
+assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-faq__form" id="tb-faq-form" method="post">/, 'sends the FAQ consultation form to the production lighting lead endpoint');
+assert.match(page, /fetch\(form\.action,\s*\{[\s\S]*?method: "POST"[\s\S]*?body:data[\s\S]*?X-Idempotency-Key/, 'posts both forms to the lead endpoint with an idempotency key');
+assert.match(page, /data\.set\("vehicle_year_version"[\s\S]*?data\.set\("lens_variant", activeVariant\)[\s\S]*?!response\.ok\s*\|\|\s*!payload\.lead_id/, 'includes vehicle year/version and selected lens while confirming a real lead ID before success');
 assert.match(page, /CA LẮP THỰC TẾ[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365\.vn – Trụ Sở Chính/, 'presents the verified Mazda 3 installation in the AES-style case format');
 assert.match(page, /Nguyễn Quang Đạo[\s\S]*?Đã kiểm duyệt nội dung kỹ thuật của bài Titan Black 2026/, 'records the confirmed technical review');
 assert.doesNotMatch(page, /dịu mắt|đi mưa hoặc sương mù/i, 'removes unsupported lighting-performance claims');
@@ -42,9 +42,9 @@ assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-image:ur
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-color:#087bd0/, 'requires a blue surround instead of black side bars');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100% 100%/, 'requires the supplied lens image to fill its matching frame');
 assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
-assert.match(page, /<form action="https:\/\/zalo\.me\/3622666363345050913" class="tb-faq__form" id="tb-faq-form" method="get" target="_blank">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the customer-controlled Zalo consultation form in the FAQ column');
+assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-faq__form" id="tb-faq-form" method="post">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the production lead form in the FAQ column');
 assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:10px 8px\}\}/, 'keeps FAQ consultation fields in compact paired mobile rows');
-assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)[\s\S]*?navigator\.clipboard\.writeText\(message\)[\s\S]*?window\.open\(form\.action/, 'lets the customer review and send both consultation forms through Zalo');
+assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)[\s\S]*?fetch\(form\.action,\s*\{[\s\S]*?method: "POST"[\s\S]*?body:data/, 'sends both consultation forms to the production lead API');
 assert.match(page, /<span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">\*<\/b><\/span><input name="name"/, 'keeps the name required marker inline with its label');
 assert.match(page, /<span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">\*<\/b><\/span><input inputmode="tel" name="phone"/, 'keeps the phone required marker inline with its label');
 assert.match(page, /class="tb-faq__form-actions"[\s\S]*?<span>Nhắn Zalo<\/span>[\s\S]*?Hotline 0365 365 911[\s\S]*?Tìm chi nhánh/, 'adds concise Zalo, hotline and branch actions beneath the consultation request');
