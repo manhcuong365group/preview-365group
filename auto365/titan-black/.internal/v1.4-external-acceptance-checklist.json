@@ -1,0 +1,30 @@
+{
+  "record_type": "v1.4-external-acceptance-checklist",
+  "page_snapshot_commit": "5c175b25df7b38eb2d301d375b428c860631f803",
+  "resolved_in_page": [
+    "Thermal-color wording is normalized to Cos 5200K and tâm Pha 3000K.",
+    "Legacy comparison keeps source units without derived wattage deltas or a continuous 12–24 V range.",
+    "Consultation forms use a customer-controlled Zalo composition flow and include selected lens plus model-year/version.",
+    "Preview canonical, sharing metadata, Product-to-WebPage relationship, price scope and supporting case context are present.",
+    "The approved Mazda case and technical review are covered by the internal approval lock."
+  ],
+  "requires_external_evidence_before_production": [
+    {
+      "item": "Responsive and accessibility QA",
+      "acceptance_evidence": "Desktop, tablet and mobile test record covering tabs, FAQ, form, Zalo, phone, keyboard and image loading."
+    },
+    {
+      "item": "Performance and media QA",
+      "acceptance_evidence": "Measured performance report for the production URL, including the Mazda image and video."
+    },
+    {
+      "item": "Production crawl verification",
+      "acceptance_evidence": "Production canonical, robots, bot/WAF and URL Inspection results after the final URL is published."
+    },
+    {
+      "item": "Competition and AI discovery",
+      "acceptance_evidence": "Separate Top 3 benchmark and recorded Google, Gemini and ChatGPT discovery measurements."
+    }
+  ],
+  "status": "PENDING_EXTERNAL_VALIDATION"
+}
