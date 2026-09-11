@@ -325,6 +325,14 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
   .solution-grid .solution-card{scroll-snap-align:start;min-width:0}
 }
 
+/* brands */
+.brand-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:22px}
+.brand-card{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff}
+.brand-card h3{font-size:13.5px;font-weight:700;margin:0 0 6px;color:var(--ink)}
+.brand-card p{color:var(--muted);font-size:11.5px;line-height:1.5;margin:0}
+@media (width<=900px){.brand-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (width<=640px){.brand-grid{grid-template-columns:none;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-flow:column;grid-auto-columns:180px;gap:10px;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.brand-grid .brand-card{scroll-snap-align:start;min-width:0}}
+
 /* why choose */
 .why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .why-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column}
@@ -553,6 +561,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="section-head">
       <h2>Các mẫu bi gầm tại Auto365</h2>
       <p>Lọc theo thương hiệu, kích thước lens, nhiệt màu, nhu cầu và sắp xếp theo giá. Công suất Cos/Pha ghi trong bảng bên dưới tính trên 1 đèn, không phải theo cặp/bộ.</p>
+    </div>
+    <p style="color:var(--muted);font-size:12.5px;margin:0 0 12px">Auto365 hiện phân phối 8 thương hiệu bi gầm, tổng 29 mẫu trong danh mục:</p>
+    <div class="brand-grid">
+      <article class="brand-card"><h3>X-Light</h3><p>16 mẫu, giá 4.000.000–6.200.000đ/bộ, bảo hành 24 tháng.</p></article>
+      <article class="brand-card"><h3>GTR</h3><p>5 mẫu, giá 5.500.000–6.200.000đ/bộ, bảo hành 12–36 tháng theo mẫu.</p></article>
+      <article class="brand-card"><h3>AES</h3><p>3 mẫu, giá 5.000.000–6.000.000đ/bộ, bảo hành 24 tháng.</p></article>
+      <article class="brand-card"><h3>Henvvei</h3><p>1 mẫu, giá 5.800.000đ/bộ, bảo hành 24 tháng.</p></article>
+      <article class="brand-card"><h3>Titan</h3><p>1 mẫu, giá 3.500.000đ/bộ, bảo hành 24 tháng.</p></article>
+      <article class="brand-card"><h3>Red Lighting</h3><p>1 mẫu, giá 5.500.000đ/bộ, bảo hành 24 tháng.</p></article>
+      <article class="brand-card"><h3>Matrix Light</h3><p>1 mẫu, giá 4.000.000đ/bộ, bảo hành 12 tháng.</p></article>
+      <article class="brand-card"><h3>Fogway</h3><p>1 mẫu, giá 4.000.000đ/bộ, bảo hành 12 tháng.</p></article>
     </div>
     <div class="catalogue-layout">
       <div class="catalogue-toolbar">
