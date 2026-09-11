@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Bi LED Titan Black 2026",
+  "description": "Bi LED cụm đèn chính lens 3 inch, có phiên bản lens tròn và vuông; Cos khoảng 70 W/đèn ở 5200K, Pha khoảng 80 W/đèn với tâm Pha 3000K.",
+  "url": "https://manhcuong365group.github.io/preview-365group/titan-black.html",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://manhcuong365group.github.io/preview-365group/titan-black.html"
+  },
+  "brand": {
+    "@type": "Brand",
+    "name": "Titan"
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Công suất Cos",
+      "value": "~70 W/đèn"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Công suất Pha",
+      "value": "~80 W/đèn"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Nhiệt màu Cos",
+      "value": "5200 K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Tâm Pha",
+      "value": "3000 K"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Lens",
+      "value": "3 inch, tròn hoặc vuông"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Bảo hành",
+      "value": "36 tháng"
+    }
+  ]
+}
