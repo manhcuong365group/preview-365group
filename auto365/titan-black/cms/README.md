@@ -6,6 +6,6 @@ Files in this folder are generated from `auto365/titan-black.html`.
 2. Paste `titan-black.cms.html` into the CMS content/body area. Do not wrap it in another `main` element.
 3. Load `titan-black.js` after the HTML, preferably in the page footer.
 4. Add `titan-black.schema.jsonld` as a JSON-LD script in the page head if the CMS supports structured data.
-5. Keep the `titan-black/hinh/` asset directory available at the same relative path, or replace those image URLs with the CMS media URLs.
+5. Upload the supplied `uploads/images/products/titan-black-2026/` folder to `/www/wwwroot/auto365.vn/public_html/uploads/images/products/titan-black-2026/`. The HTML and CSS already use this production URL.
 
 The form posts to `/api/leads/lighting`; confirm that this route is available on the production domain before publishing.

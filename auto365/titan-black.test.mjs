@@ -165,9 +165,9 @@ assert.match(page, /Giá tham khảo là 6\.500\.000 VNĐ\/cặp[\s\S]*?CANBUS\/
 assert.doesNotMatch(page, /<summary>CANBUS\/decoder có tính thêm chi phí không\?<\/summary>/, 'removes the separate CANBUS FAQ to keep the columns balanced');
 assert.match(page, /img\[alt="Phụ kiện đuôi vặn H4 Titan Black 2026"\]\{content:url\("titan-black\/hinh\/phu-kien-h4-bi-led-titan-black-2026\.jpg"\)/, 'uses the supplied H4 accessory image');
 assert.match(page, /href="https:\/\/auto365\.vn\/bi-led-titan-black-2"/, 'keeps a contextual link to Titan Black 2.0 for generation comparison');
-const extractedInlineImages = Array.from({ length: 8 }, (_, index) => `titan-inline-${String(index + 1).padStart(2, '0')}.webp`);
 assert.doesNotMatch(page, /data:image\/(?:webp|png|jpe?g);base64,/, 'keeps product imagery out of inline base64 data URIs');
-for (const imageFile of extractedInlineImages) {
-  assert.match(page, new RegExp(`src="titan-black/hinh/${imageFile}"`), `references extracted image asset ${imageFile}`);
-  assert.ok(existsSync(new URL(`./titan-black/hinh/${imageFile}`, import.meta.url)), `stores extracted image asset ${imageFile}`);
+assert.doesNotMatch(page, /titan-inline-03\.webp|titan-inline-04\.webp/, 'removes hidden references to unavailable lighting images');
+const referencedAssets = [...new Set([...page.matchAll(/titan-black\/hinh\/([A-Za-z0-9._-]+)/g)].map(match => match[1]))];
+for (const imageFile of referencedAssets) {
+  assert.ok(existsSync(new URL(`./titan-black/hinh/${imageFile}`, import.meta.url)), `stores every referenced product asset: ${imageFile}`);
 }
