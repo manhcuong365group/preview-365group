@@ -443,6 +443,8 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
 .video-lead-consent a{color:var(--red);font-weight:700}
 .video-lead-submit{grid-column:1/-1;min-height:46px}
 .video-lead-note{grid-column:1/-1;text-align:center;color:#7b8492;font-size:12px;margin:0}
+.zalo-fallback-text{grid-column:1/-1;width:100%;min-height:84px;margin-top:8px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:11.5px;line-height:1.5;color:var(--ink);background:#fff;resize:vertical;box-sizing:border-box}
+.zalo-fallback-text[hidden]{display:none}
 .video-lead-note a{color:var(--red);font-weight:700}
 @media (width<=900px){.video-lead-card{grid-template-columns:1fr}.video-lead-form{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
 @media (width<=640px){.video-lead-form{padding:20px 18px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}.video-lead-copy{padding:18px 20px}}
@@ -1986,11 +1988,27 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       trackingLine ? ('Nguồn: ' + trackingLine) : ''
     ].filter(function(row){ return row && !/: $/.test(row); });
     var note = form.querySelector(noteSelector);
-    copyText(rows.join('\n')).then(function(copied){
+    var contentText = rows.join('\n');
+    copyText(contentText).then(function(copied){
       if (!note) return;
       note.textContent = copied
         ? 'Đã sao chép nội dung. Hãy dán vào cửa sổ Zalo vừa mở.'
-        : 'Zalo đã mở. Trình duyệt không cho phép tự sao chép; vui lòng nhập nội dung trực tiếp.';
+        : 'Zalo đã mở. Trình duyệt không cho phép tự sao chép; bôi đen nội dung bên dưới rồi tự sao chép:';
+      var fallback = note.nextElementSibling && note.nextElementSibling.classList.contains('zalo-fallback-text')
+        ? note.nextElementSibling
+        : null;
+      if (copied) {
+        if (fallback) fallback.hidden = true;
+        return;
+      }
+      if (!fallback) {
+        fallback = el('textarea', {'class': 'zalo-fallback-text', readonly: 'readonly', 'aria-label': 'Nội dung tư vấn để sao chép thủ công'});
+        note.insertAdjacentElement('afterend', fallback);
+      }
+      fallback.value = contentText;
+      fallback.hidden = false;
+      fallback.focus();
+      fallback.select();
     });
 
     var endpoint = document.body.dataset.leadEndpoint;
