@@ -222,6 +222,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .config-pick p{margin:0 0 8px;font-size:12px;color:#666;line-height:1.4}
 .config-pick a{color:var(--red);font-size:12px;font-weight:800}
 .config-result-note{margin:12px 0 0;font-size:11.5px;color:#888;line-height:1.5}
+.config-alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
+.config-alt-label{margin:0 0 10px;font-size:12px;font-weight:800;color:#8a5a00;background:#fff7e6;border:1px solid #f0dca6;border-radius:8px;padding:8px 10px;line-height:1.5}
 .market-brands{padding:38px 0;background:#fff}
 .market-brands h2{max-width:850px;font-size:28px;margin:0}
 .market-lead{max-width:830px;color:#555;margin:10px 0 0;font-size:14px}
@@ -469,7 +471,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <p class="eyebrow">CAMERA HÀNH TRÌNH Ô TÔ</p>
 <h1>Camera hành trình ô tô: <em>chọn theo tính năng</em> và hệ thống điện xe.</h1>
 <div class="hero-quick-answer-wrap">
-<p class="hero-quick-answer" id="heroQuickAnswer"><b>Trả lời nhanh:</b> Camera hành trình ô tô (dashcam) là thiết bị giám sát được lắp đặt trên kính lái hoặc gương chiếu hậu, có chức năng ghi lại hình ảnh và âm thanh trong suốt quá trình lưu thông. Thiết bị cung cấp dữ liệu làm bằng chứng khi xảy ra sự cố hoặc rà soát phạt nguội. Một số dòng có module GPS tích hợp giúp cảnh báo tốc độ theo vị trí (khu vực bẫy tốc độ, giới hạn tốc độ); đọc biển báo và hệ thống hỗ trợ lái xe an toàn (ADAS) là nhóm tính năng riêng, chỉ có ở một số model — không phải camera có GPS đều có ADAS. Cấu hình lắp đặt cần được đối chiếu với hệ thống điện nguyên bản của từng dòng xe để đảm bảo an toàn, ưu tiên phương án cắm giắc zin (Plug &amp; Play).</p>
+<p class="hero-quick-answer" id="heroQuickAnswer"><b>Trả lời nhanh:</b> Camera hành trình ô tô (dashcam) là thiết bị giám sát được lắp đặt trên kính lái hoặc gương chiếu hậu, có chức năng ghi lại hình ảnh và âm thanh trong suốt quá trình lưu thông. Thiết bị cung cấp dữ liệu làm bằng chứng khi xảy ra sự cố hoặc rà soát phạt nguội. Một số dòng có module GPS tích hợp để ghi lại tốc độ và hành trình di chuyển kèm video; tính năng cảnh báo khu vực hạn chế tốc độ, đọc biển báo hay hệ thống hỗ trợ lái xe an toàn (ADAS) là các nhóm tính năng riêng, chỉ xác nhận có ở một số model cụ thể — không suy ra từ việc camera có GPS. Cấu hình lắp đặt cần được đối chiếu với hệ thống điện nguyên bản của từng dòng xe để đảm bảo an toàn, ưu tiên phương án cắm giắc zin (Plug &amp; Play).</p>
 <button type="button" class="quick-answer-toggle" id="quickAnswerToggle">Xem thêm ↓</button>
 </div>
 <div class="hero-cta">
@@ -526,6 +528,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <div class="config-result" id="configResult" hidden>
 <h3 id="configResultHead">Các mẫu khớp số kênh và khoảng giá bạn chọn</h3>
 <div class="config-result-grid" id="configResultGrid"></div>
+<div id="configAlt" hidden></div>
 <p class="config-result-note">Đây là kết quả lọc theo số kênh và ngân sách. Auto365 cần biết thêm dòng xe, đời xe và nhu cầu ghi khi đỗ để xác nhận bộ nguồn, phụ kiện và tổng chi phí lắp đặt phù hợp.</p>
 </div>
 </div>
@@ -630,7 +633,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <div class="filter-options">
 <label class="check"><input type="checkbox" name="feature" value="4k"><span>Độ phân giải 4K</span></label>
 <label class="check"><input type="checkbox" name="feature" value="parking"><span>Chế độ đỗ xe Parking</span></label>
-<label class="check"><input type="checkbox" name="feature" value="gps"><span>GPS (cảnh báo tốc độ theo vị trí)</span></label>
+<label class="check"><input type="checkbox" name="feature" value="gps"><span>GPS ghi tốc độ và hành trình</span></label>
 <label class="check"><input type="checkbox" name="feature" value="lte"><span>Giám sát từ xa (4G/LTE)</span></label>
 </div>
 </div>
@@ -895,7 +898,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <div>
 <small>MAZDA CX-30 2024 LUXURY · 03/09/2026</small>
 <h3>70mai 4K A810 Lite — 2 kênh trước–sau (cấu hình lắp thực tế của ca này)</h3>
-<p>Camera trước 4K UHD, camera sau Full HD, giá sản phẩm 2.790.000đ. Cấu hình 2 kênh áp dụng riêng cho ca lắp này — bản 1 kênh trong danh mục có thể khác cấu hình, vui lòng xác nhận với Auto365 khi đặt lịch. Xem thêm vị trí lắp, góc quay và bước kiểm tra sau lắp. Xem bài chi tiết →</p>
+<p>Camera trước 4K UHD, camera sau Full HD. Cấu hình 2 kênh áp dụng riêng cho ca lắp này — khác với bản 1 kênh trong danh mục; giá cụ thể theo cấu hình (thân máy hay trọn bộ trước–sau) cần Auto365 xác nhận khi đặt lịch. Xem thêm vị trí lắp, góc quay và bước kiểm tra sau lắp. Xem bài chi tiết →</p>
 </div>
 </a>
 </article>
@@ -1266,7 +1269,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </article>
 <article class="term">
 <h3>GPS</h3>
-<p>Ghi lại tốc độ, vị trí và lộ trình di chuyển kèm theo video, hữu ích khi cần đối chiếu hành trình; một số model dùng GPS để cảnh báo khu vực hạn chế tốc độ. Đọc biển báo và hệ thống hỗ trợ lái an toàn (ADAS) là tính năng khác, không đi kèm mặc định với GPS.</p>
+<p>Ghi lại tốc độ, vị trí và lộ trình di chuyển kèm theo video, hữu ích khi cần đối chiếu hành trình. Cảnh báo khu vực hạn chế tốc độ, đọc biển báo và hệ thống hỗ trợ lái an toàn (ADAS) là các tính năng riêng, chỉ xác nhận khi model cụ thể công bố — không suy ra từ việc camera có GPS.</p>
 </article>
 <article class="term">
 <h3>Kết nối Wi‑Fi</h3>
@@ -1456,6 +1459,13 @@ const PARKING_SLUGS = new Set(['camera-hanh-trinh-70mai-a210','camera-hanh-trinh
 // 2 kênh nhưng là "trước + cabin/DMS" thay vì "trước + sau" — xác nhận trên trang thật.
 const FRONT_CABIN_SLUGS = new Set(['camera-hanh-trinh-o-to-cao-cap-blackvue-dr900x-2ch-dms-plus','camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus','camera-hanh-trinh-vietmap-da250','camera-hanh-trinh-vietmap-vm350']);
 const LTE_SLUGS = new Set(['camera-hanh-trinh4k-a800se-speedeye','camera-hanh-trinh-70mai-4k-a810-lite','camera-hanh-trinh-70mai-a510','camera-hanh-trinh-70mai-t800-4k','camera-hanh-trinh-70mai-m800','camera-hanh-trinh-70mai-4k-a810s','camera-hanh-trinh-vietmap-l110','camera-hanh-trinh-vietmap-v740','camera-hanh-trinh-70mai-omni','vietmap-speedmap-m2','camera-hanh-trinh-70mai-dash-cam-a810-4k','camera-hanh-trinh-han-quoc-blackvue-dr750x-2ch-lt','camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus','camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-3ch-dms-plus','camera-hanh-trinh-o-to-cao-cap-blackvue-dr900x-2ch-dms-plus','camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus','camera-hanh-trinh-vietmap-da250','camera-hanh-trinh-vietmap-d22','camera-hanh-trinh-vietmap-p2','camera-hanh-trinh-vietmap-vm300','camera-hanh-trinh-ddpai-x3-pro-gia-re','camera-hanh-trinh-vietmap-vm350']);
+// Độ phân giải xác nhận trực tiếp trên trang sản phẩm thật (bảng thông số), chỉ điền khi đã đọc thấy — không suy đoán cho SKU chưa xác minh.
+const RESOLUTION_MAP = {
+  'camera-hanh-trinh-70mai-a210': 'Trước Full HD 1080P · Sau Full HD 1080P',
+  'camera-hanh-trinh-70mai-4k-a810-lite': 'Trước 4K UHD · Sau Full HD',
+  'camera-hanh-trinh-70mai-a800se': 'Trước 4K UHD · Sau Full HD 1080P',
+  'camera-hanh-trinh4k-a800se-speedeye': 'Trước 4K UHD · Sau Full HD 1080P'
+};
 function matchFeatures(p, feat) {
   if (feat === '4k') return /4K|A810|A800|T800|S720|DR900|TS-5K/i.test(p.name);
   if (feat === 'parking') return PARKING_SLUGS.has(p.slug);
@@ -1662,16 +1672,19 @@ function updateCompare() {
     const p2 = PRODUCTS.find(p => p.url === state.chosen[1]);
     if (p1 && p2) {
       const yn = (v) => v ? 'Có' : 'Chưa xác nhận';
+      const resolution = (p) => RESOLUTION_MAP[p.slug] || (matchFeatures(p, '4k') ? 'Có camera 4K (chưa rõ độ phân giải camera sau)' : 'Chưa xác nhận độ phân giải cụ thể');
+      const parkingCell = (p) => matchFeatures(p, 'parking') ? 'Có — cần bộ nguồn/hardwire kit riêng' : 'Chưa xác nhận';
+      const lteCell = (p) => matchFeatures(p, 'lte') ? 'Có — cần SIM/gói dữ liệu riêng' : 'Chưa xác nhận';
       contentBox.innerHTML = '<table class="compare-table"><thead><tr><th>Tiêu chí</th><th>' + esc(p1.name) + '</th><th>' + esc(p2.name) + '</th></tr></thead><tbody>' +
         '<tr><td>Giá niêm yết</td><td style="color:var(--red);font-weight:800">' + money(p1.price) + '</td><td style="color:var(--red);font-weight:800">' + money(p2.price) + '</td></tr>' +
         '<tr><td>Số kênh ghi</td><td>' + p1.channels + ' kênh</td><td>' + p2.channels + ' kênh</td></tr>' +
         '<tr><td>Thương hiệu</td><td>' + p1.brand.toUpperCase() + '</td><td>' + p2.brand.toUpperCase() + '</td></tr>' +
-        '<tr><td>Độ phân giải 4K</td><td>' + yn(matchFeatures(p1, '4k')) + '</td><td>' + yn(matchFeatures(p2, '4k')) + '</td></tr>' +
+        '<tr><td>Độ phân giải</td><td>' + resolution(p1) + '</td><td>' + resolution(p2) + '</td></tr>' +
         '<tr><td>GPS</td><td>' + yn(matchFeatures(p1, 'gps')) + '</td><td>' + yn(matchFeatures(p2, 'gps')) + '</td></tr>' +
-        '<tr><td>Chế độ đỗ xe Parking</td><td>' + yn(matchFeatures(p1, 'parking')) + '</td><td>' + yn(matchFeatures(p2, 'parking')) + '</td></tr>' +
-        '<tr><td>Giám sát 4G/LTE</td><td>' + yn(matchFeatures(p1, 'lte')) + '</td><td>' + yn(matchFeatures(p2, 'lte')) + '</td></tr>' +
+        '<tr><td>Chế độ đỗ xe Parking</td><td>' + parkingCell(p1) + '</td><td>' + parkingCell(p2) + '</td></tr>' +
+        '<tr><td>Giám sát 4G/LTE</td><td>' + lteCell(p1) + '</td><td>' + lteCell(p2) + '</td></tr>' +
         '<tr><td>Chi tiết</td><td><a href="' + p1.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:800">Mở trang sản phẩm →</a></td><td><a href="' + p2.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:800">Mở trang sản phẩm →</a></td></tr>' +
-        '</tbody></table><p style="padding:12px 16px;margin:0;font-size:11.5px;color:#888">"Chưa xác nhận" nghĩa là trang sản phẩm gốc chưa công bố tính năng này, không đồng nghĩa sản phẩm chắc chắn không có.</p>';
+        '</tbody></table><p style="padding:12px 16px;margin:0;font-size:11.5px;color:#888">"Chưa xác nhận" nghĩa là trang sản phẩm gốc chưa công bố tính năng này, không đồng nghĩa sản phẩm chắc chắn không có. Điều kiện phụ kiện (bộ nguồn, SIM...) áp dụng chung cho tính năng, chi tiết theo model cần xem trang sản phẩm.</p>';
       modal.classList.add('open');
     }
   } else {
@@ -1855,14 +1868,23 @@ function reasonFor(p, channel, budget, relaxed, wantParking) {
 document.querySelector('#hubFind').addEventListener('click', () => {
   const vehicle = document.querySelector('#hubVehicle').value;
   const use = document.querySelector('#hubUse').value;
-  let channel = +document.querySelector('#hubChannel').value;
-  if (use === 'Chở khách / cần cabin' || vehicle === 'Xe dịch vụ') channel = Math.max(channel, 3);
-  else if (use === 'Lái đêm / đi tỉnh') channel = Math.max(channel, 2);
+  const channel = +document.querySelector('#hubChannel').value;
+
+  // Số kênh khách chọn luôn là điều kiện chính, không tự đổi ngầm.
+  // Nếu tình huống gợi ý số kênh khác, hiển thị thành mục "Gợi ý thay thế" riêng bên dưới.
+  let suggestedChannel = null, suggestedReason = '';
+  if ((use === 'Chở khách / cần cabin' || vehicle === 'Xe dịch vụ') && channel < 3) {
+    suggestedChannel = 3;
+    suggestedReason = 'cần ghi hình cabin (chở khách/xe dịch vụ)';
+  } else if (use === 'Lái đêm / đi tỉnh' && channel < 2) {
+    suggestedChannel = 2;
+    suggestedReason = 'lái đêm/đi tỉnh thường cần thêm camera sau để đối chiếu';
+  }
 
   const budget = document.querySelector('#hubBudget').value;
   const wantParking = (use === 'Đỗ xe nơi đông người');
 
-  // Sync with main state
+  // Sync with main state — đúng số kênh khách thật sự chọn
   state.channels.clear();
   state.channels.add(channel);
   state.prices.clear();
@@ -1877,16 +1899,37 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   const resultBox = document.querySelector('#configResult');
   const resultGrid = document.querySelector('#configResultGrid');
   const resultHead = document.querySelector('#configResultHead');
+  const altBox = document.querySelector('#configAlt');
 
   if (picks.length) {
     resultHead.textContent = relaxed ? 'Không có mẫu khớp đúng ngân sách/kênh' + (wantParking ? '/Parking Mode' : '') + ' — gần nhất hiện có:' : 'Các mẫu khớp số kênh và khoảng giá bạn chọn' + (wantParking ? ', ưu tiên có Parking Mode' : '') + ':';
     resultGrid.innerHTML = picks.map(p =>
       '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span><p>' + reasonFor(p, channel, budget, relaxed, wantParking) + '</p><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a></article>'
     ).join('');
+
+    if (suggestedChannel) {
+      const { picks: altPicks } = pickConfigs(suggestedChannel, budget, use, wantParking);
+      if (altPicks.length) {
+        altBox.hidden = false;
+        altBox.innerHTML = '<p class="config-alt-label">Gợi ý thay thế ' + suggestedChannel + ' kênh — vì ' + suggestedReason + '. Đánh đổi: giá thường cao hơn và đi dây thêm cho camera phụ.</p>' +
+          '<div class="config-result-grid">' + altPicks.slice(0, 2).map(p =>
+            '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a></article>'
+          ).join('') + '</div>';
+      } else {
+        altBox.hidden = true;
+        altBox.innerHTML = '';
+      }
+    } else {
+      altBox.hidden = true;
+      altBox.innerHTML = '';
+    }
+
     resultBox.hidden = false;
     resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
   } else {
     resultBox.hidden = true;
+    altBox.hidden = true;
+    altBox.innerHTML = '';
     document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
   }
 });
