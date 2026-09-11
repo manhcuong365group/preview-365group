@@ -1,10 +1,10 @@
 {
   "record_type": "v1.4-external-acceptance-checklist",
-  "page_snapshot_commit": "5c175b25df7b38eb2d301d375b428c860631f803",
+  "page_snapshot_commit": "07d28bb7536ceabd934142c7e7ddd28966fb06c3",
   "resolved_in_page": [
     "Thermal-color wording is normalized to Cos 5200K and tâm Pha 3000K.",
     "Legacy comparison keeps source units without derived wattage deltas or a continuous 12–24 V range.",
-    "Consultation forms use a customer-controlled Zalo composition flow and include selected lens plus model-year/version.",
+    "Consultation forms use the production lead API and include selected lens plus model-year/version."
     "Preview canonical, sharing metadata, Product-to-WebPage relationship, price scope and supporting case context are present.",
     "The approved Mazda case and technical review are covered by the internal approval lock."
   ],
