@@ -1,6 +1,6 @@
 {
   "record_type": "v1.4-external-acceptance-checklist",
-  "page_snapshot_commit": "07d28bb7536ceabd934142c7e7ddd28966fb06c3",
+  "page_snapshot_commit": "5792fb877a558068d6c13208d17759d567740539",
   "resolved_in_page": [
     "Thermal-color wording is normalized to Cos 5200K and tâm Pha 3000K.",
     "Legacy comparison keeps source units without derived wattage deltas or a continuous 12–24 V range.",
