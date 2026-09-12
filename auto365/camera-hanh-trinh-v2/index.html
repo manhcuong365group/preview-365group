@@ -289,10 +289,16 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .local-grid{display:grid;grid-template-columns:1.1fr 1.9fr;gap:45px}
 .local h2{font-size:28px;margin:0 0 10px}
 .local p{font-size:14px;color:#555;margin:0}
-.coverage-stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.coverage-stat{flex:1 1 90px;border:1px solid var(--line);border-radius:10px;padding:12px 10px;text-align:center;background:#fff}
-.coverage-stat b{display:block;font-size:22px;font-weight:800;color:var(--red);line-height:1.1}
-.coverage-stat span{display:block;font-size:11px;color:var(--muted);margin-top:2px}
+.coverage-stats{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin-top:18px;background:#fff}
+.coverage-headline{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.coverage-headline strong{font-size:19px;font-weight:800;color:var(--red)}
+.coverage-headline em{font-style:normal;color:var(--line)}
+.coverage-headline span{font-size:12px;color:var(--muted);margin-left:2px}
+.coverage-regions{display:flex}
+.coverage-region{flex:1;text-align:center;padding:0 6px;border-left:1px solid var(--line)}
+.coverage-region:first-child{border-left:0}
+.coverage-region b{display:block;font-size:20px;font-weight:800;line-height:1.1}
+.coverage-region span{display:block;font-size:11px;color:var(--muted);margin-top:2px}
 .branch-search{margin-top:18px}
 .branch-search input{width:100%;max-width:360px;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font:14px Arial;background:#fff}
 .branch-search input:focus{outline:2px solid var(--red);outline-offset:1px}
@@ -1218,11 +1224,14 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <h2>Tìm điểm lắp camera hành trình gần bạn.</h2>
 <p>Tìm điểm lắp Auto365 gần bạn, xem địa chỉ và giờ mở cửa. Hãy gọi trước để xác nhận lịch kỹ thuật viên.</p>
 <div class="coverage-stats">
-<div class="coverage-stat"><b>91</b><span>điểm</span></div>
-<div class="coverage-stat"><b>33</b><span>tỉnh/thành</span></div>
-<div class="coverage-stat"><b>41</b><span>điểm Miền Bắc</span></div>
-<div class="coverage-stat"><b>26</b><span>điểm Miền Trung</span></div>
-<div class="coverage-stat"><b>24</b><span>điểm Miền Nam</span></div>
+<div class="coverage-headline">
+<strong>91 điểm</strong><em>·</em><strong>33 tỉnh/thành</strong><span>phủ sóng toàn quốc</span>
+</div>
+<div class="coverage-regions">
+<div class="coverage-region"><b>41</b><span>Miền Bắc</span></div>
+<div class="coverage-region"><b>26</b><span>Miền Trung</span></div>
+<div class="coverage-region"><b>24</b><span>Miền Nam</span></div>
+</div>
 </div>
 <div class="branch-search">
 <input type="text" id="branchSearchInput" placeholder="VD: TP.HCM, Hà Nội, Đà Nẵng, Biên Hòa..." aria-label="Tra cứu chi nhánh">
