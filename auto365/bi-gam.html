@@ -134,6 +134,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .qs-result-vat{color:#8a8d93;font-weight:600;font-size:10px;margin:-2px 0 6px}
 .qs-result-case{display:inline-block;font-size:10.5px;font-weight:700;color:var(--red);margin:0 0 8px}
 .qs-result-reason{color:var(--muted);font-size:11px;line-height:1.45;margin:0 0 8px}
+.qs-result-body{display:flex;flex-direction:column;flex:1;min-height:0}
 .qs-result-actions{display:flex;flex-direction:column;gap:6px;margin-top:auto}
 .qs-result-actions .btn{min-height:36px;font-size:12.5px}
 .qs-empty{color:var(--muted);font-size:13px;line-height:1.6;grid-column:1/-1}
@@ -2512,7 +2513,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     ];
     if (caseLink) bodyChildren.push(txt('a', {'class': 'qs-result-case', href: caseLink.caseUrl, target: '_blank', rel: 'noreferrer'}, 'Xem trên ' + caseLink.caseName + ' →'));
     bodyChildren.push(actions);
-    var body = el('div', null, bodyChildren);
+    var body = el('div', {'class': 'qs-result-body'}, bodyChildren);
     return el('div', {'class': 'qs-result' + (extraClass ? ' ' + extraClass : '')}, [
       el('img', {src: img.src, alt: img.alt}),
       body
