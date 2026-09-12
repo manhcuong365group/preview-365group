@@ -116,9 +116,13 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .qs-submit{width:100%;margin-top:16px;min-height:46px}
 @media (width<=900px){.qs-row{grid-template-columns:1fr 1fr}}
 @media (width<=520px){.qs-row{grid-template-columns:1fr}}
-.qs-reco{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
-.qs-reco[hidden]{display:none}
-.qs-result-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.qs-modal{position:fixed;inset:0;z-index:92;background:rgba(16,17,20,.6);display:none;align-items:center;justify-content:center;padding:20px}
+.qs-modal.is-open{display:flex}
+.qs-modal-inner{background:#fff;border-radius:16px;max-width:960px;width:100%;max-height:86vh;overflow:auto;padding:24px}
+.qs-modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.qs-modal-head h3{font-size:18px;margin:0}
+.qs-modal-close{border:0;background:var(--soft);border-radius:8px;width:32px;height:32px;flex:none;font-size:16px;cursor:pointer;color:var(--ink)}
+.qs-result-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 .qs-result{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}
 .qs-result.is-primary{border-color:var(--red);border-width:2px;padding:9px}
 .qs-badge{display:inline-block;align-self:flex-start;font-size:10px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:6px}
@@ -135,7 +139,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.02em;margin:0}
 .qs-empty{color:var(--muted);font-size:13px;line-height:1.6;grid-column:1/-1}
 .qs-show-alt{grid-column:1/-1;justify-self:start}
 .qs-alt-card[hidden]{display:none}
-@media (width<=900px){.qs-result-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (width<=900px){.qs-result-list{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}}
 @media (width<=640px){.qs-result-list{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78vw;overflow-x:auto;overflow-y:hidden;padding-bottom:8px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}.qs-result{scroll-snap-align:start}}
 .finder-bar-note{color:#7d818a;font-size:11px;text-align:center;margin-top:10px}
 @media (width<=900px){.hero-grid{grid-template-columns:1fr}}
@@ -576,12 +580,19 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
         <div class="qs-col"><label for="qs-voltage">4. Hệ điện xe</label><select id="qs-voltage"><option value="">Chưa rõ (chỉ gợi ý mẫu 12V phổ thông)</option><option value="12V">Xe con / bán tải phổ thông — 12V</option><option value="24V">Xe tải / xe thương mại — 24V</option></select></div>
       </div>
       <button type="button" class="btn btn-primary qs-submit" id="qs-submit">Tìm sản phẩm phù hợp</button>
-      <div class="qs-reco" id="qs-reco" hidden aria-live="polite">
-        <div class="qs-result-list" id="qs-result"></div>
-      </div>
     </div>
   </div>
 </section>
+
+<div class="qs-modal" id="qs-reco" role="dialog" aria-modal="true" aria-labelledby="qs-modal-title">
+  <div class="qs-modal-inner">
+    <div class="qs-modal-head">
+      <h3 id="qs-modal-title">Kết quả gợi ý</h3>
+      <button type="button" class="qs-modal-close" id="qs-modal-close" aria-label="Đóng">&times;</button>
+    </div>
+    <div class="qs-result-list" id="qs-result" aria-live="polite"></div>
+  </div>
+</div>
 
 <section class="section" id="san-pham">
   <div class="shell">
@@ -2195,7 +2206,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   }
   function closeModal(modalEl){
     modalEl.classList.remove('is-open');
-    if (!document.querySelector('.consult-modal.is-open, .compare-modal.is-open')) {
+    if (!document.querySelector('.consult-modal.is-open, .compare-modal.is-open, .qs-modal.is-open')) {
       document.body.style.overflow = '';
       setBackgroundInert(false);
     }
@@ -2222,8 +2233,10 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   });
   document.addEventListener('keydown', function(e){
     var cModal = document.getElementById('compare-modal');
+    var qModal = document.getElementById('qs-reco');
     var openModalEl = consultModal.classList.contains('is-open') ? consultModal
-      : (cModal && cModal.classList.contains('is-open') ? cModal : null);
+      : (cModal && cModal.classList.contains('is-open') ? cModal
+      : (qModal && qModal.classList.contains('is-open') ? qModal : null));
     if (!openModalEl) return;
     if (e.key === 'Escape') { closeModal(openModalEl); return; }
     if (e.key === 'Tab') trapFocus(openModalEl, e);
@@ -2519,7 +2532,6 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     var allCards = Array.prototype.slice.call(document.querySelectorAll('#product-grid .product-card'));
     var exact = qsMatch(allCards, needVal, lensVal, budgetVal, voltageVal);
     exact.sort(function(a,b){ return (+a.getAttribute('data-price')) - (+b.getAttribute('data-price')); });
-    qsRecoBox.hidden = false;
     qsResultBox.textContent = '';
     if (exact.length) {
       var baseReason = qsKnownCriteriaReason(needVal, lensVal, budgetVal, voltageVal) + ' Cấu hình cuối vẫn cần kiểm tra hốc đèn và hệ điện trên xe.';
@@ -2569,15 +2581,17 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
       });
       qsResultBox.appendChild(altBtn);
     }
-    qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
+    openModal(qsRecoBox);
   }
+
+  document.getElementById('qs-modal-close').addEventListener('click', function(){ closeModal(qsRecoBox); });
+  qsRecoBox.addEventListener('click', function(e){ if (e.target === qsRecoBox) closeModal(qsRecoBox); });
 
   qsSubmit.addEventListener('click', function(){
     var needVal = qsNeed.value, lensVal = qsLens.value, budgetVal = qsBudget.value, voltageVal = qsVoltage.value;
     if (!needVal && !lensVal && !budgetVal && !voltageVal) {
-      qsRecoBox.hidden = false;
       qsResultBox.innerHTML = '<p class="qs-empty">Vui lòng chọn ít nhất một tiêu chí (nhu cầu, lens, khoảng giá hoặc hệ điện) để nhận gợi ý.</p>';
-      qsRecoBox.scrollIntoView({behavior:'smooth', block:'nearest'});
+      openModal(qsRecoBox);
       return;
     }
     qsRunSearch(needVal, lensVal, budgetVal, voltageVal);
