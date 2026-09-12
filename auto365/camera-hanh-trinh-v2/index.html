@@ -118,10 +118,10 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .filter-title{font-size:10.5px;font-weight:900;letter-spacing:.5px;color:#8a8a8a;margin-bottom:8px}
 .filter-options{display:flex;flex-direction:column;gap:1px}
 .filter-options.col-2{display:grid;grid-template-columns:1fr 1fr;gap:1px 3px}
-.check{display:flex;align-items:center;gap:5px;padding:5px 3px;margin:0 -3px;border-radius:6px;font-size:11px;color:#333;cursor:pointer;min-height:30px;line-height:1.25;min-width:0}
+.check{display:flex;align-items:center;gap:5px;padding:5px 3px;margin:0 -3px;border-radius:6px;font-size:10px;color:#333;cursor:pointer;min-height:30px;line-height:1.25;min-width:0}
 .check:hover{background:#f7f7f5}
 .check input{width:14px;height:14px;flex:none;accent-color:var(--red);cursor:pointer}
-.check span{min-width:0;white-space:normal;word-break:break-word}
+.check span{min-width:0;white-space:normal;overflow-wrap:break-word}
 .filter-pills{display:flex;flex-wrap:wrap;gap:7px}
 .filter-pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;min-height:34px;font-size:11.5px;font-weight:700;color:#555;cursor:pointer}
 .filter-pill:hover{border-color:#b9b9b9}
@@ -338,16 +338,16 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .glossary{padding:38px 0;background:#fff}
 .glossary h2{font-size:28px;margin:8px 0 0}
 .glossary-lead{max-width:720px;color:#555;margin:8px 0 0;font-size:14px}
-.term-accordion{display:grid;grid-template-columns:1fr;gap:10px;margin-top:20px}
-details.term{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fcfcfb;transition:border-color .18s ease,box-shadow .18s ease}
-details.term:hover{border-color:#e3bcbe;box-shadow:0 6px 16px rgba(20,20,20,.06)}
-details.term[open]{border-color:var(--red);border-left-width:3px;box-shadow:0 10px 26px rgba(231,36,45,.08)}
-.term summary{display:flex;align-items:center;gap:12px;list-style:none;cursor:pointer}
-.term summary::-webkit-details-marker{display:none}
-.term summary::after{content:'+';margin-left:auto;flex:none;width:24px;height:24px;border-radius:50%;border:1px solid var(--line);color:var(--red);font-size:14px;font-weight:900;display:flex;align-items:center;justify-content:center;transition:transform .18s ease,background .18s ease,border-color .18s ease}
-details.term[open] summary::after{transform:rotate(45deg);background:var(--red);color:#fff;border-color:var(--red)}
-.term h3{font-size:14px;margin:0;font-family:Manrope,"Be Vietnam Pro",sans-serif}
-.term p{font-size:12.5px;line-height:1.5;color:#666;margin:10px 0 0}
+.term-toggle{border:1px solid var(--line);border-radius:12px;background:#fcfcfb;margin-top:20px}
+.term-toggle>summary{display:flex;align-items:center;gap:12px;list-style:none;cursor:pointer;padding:14px 18px;font-weight:800;font-size:14px;color:var(--ink)}
+.term-toggle>summary::-webkit-details-marker{display:none}
+.term-toggle>summary::after{content:'+';margin-left:auto;flex:none;width:26px;height:26px;border-radius:50%;border:1px solid var(--line);color:var(--red);font-size:15px;font-weight:900;display:flex;align-items:center;justify-content:center;transition:transform .18s ease,background .18s ease,border-color .18s ease}
+.term-toggle[open]>summary::after{transform:rotate(45deg);background:var(--red);color:#fff;border-color:var(--red)}
+.term-toggle[open]>summary{border-bottom:1px solid var(--line)}
+.term-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:18px}
+.term{border:1px solid var(--line);border-radius:12px;padding:16px;background:#fff}
+.term h3{font-size:14px;margin:0 0 6px;font-family:Manrope,"Be Vietnam Pro",sans-serif}
+.term p{font-size:12.5px;line-height:1.5;color:#666;margin:0}
 .faq-bottom{padding:38px 0;background:#fafafa;border-top:1px solid var(--line)}
 .faq-bottom h2{margin:0;font-size:28px}
 .faq-bottom p{color:#666;max-width:700px;margin:8px 0 20px;font-size:14px}
@@ -375,6 +375,7 @@ details.term[open] summary::after{transform:rotate(45deg);background:var(--red);
   .config-steps{grid-template-columns:repeat(2,1fr)}
   .decision-grid{grid-template-columns:repeat(2,1fr)}
   .branch-proof-grid{grid-template-columns:repeat(2,1fr)}
+  .term-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:850px){
   .nav-toggle{display:flex}
@@ -424,6 +425,7 @@ details.term[open] summary::after{transform:rotate(45deg);background:var(--red);
   .review-grid{grid-template-columns:1fr}
   .benefit-grid{grid-auto-columns:75%!important}
   .locations{grid-auto-columns:75%!important}
+  .term-grid{grid-template-columns:1fr!important}
   .decision,.branch-proof,.benefit,.location{scroll-snap-align:start;min-width:0}
   .scroll-hint{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:700}
   .config-steps{grid-template-columns:1fr}
@@ -1281,40 +1283,43 @@ details.term[open] summary::after{transform:rotate(45deg);background:var(--red);
 <p class="eyebrow">THUẬT NGỮ CẦN BIẾT</p>
 <h2>Giải thích nhanh các thuật ngữ camera hành trình.</h2>
 <p class="glossary-lead">Nắm các khái niệm này giúp bạn đọc đúng thông số sản phẩm, không nhầm lẫn giữa các tính năng khi so sánh model.</p>
-<div class="term-accordion">
-<details class="term">
-<summary><h3>Kênh ghi hình</h3></summary>
+<details class="term-toggle">
+<summary>Xem 8 thuật ngữ →</summary>
+<div class="term-grid">
+<article class="term">
+<h3>Kênh ghi hình</h3>
 <p>Số camera ghi hình đồng thời. 1 kênh thường chỉ có camera trước; 2 kênh phổ biến là trước–sau nhưng cũng có cấu hình trước–cabin; 3 kênh thường ghi trước, sau và cabin. Kiểm tra đúng cấu hình của từng phiên bản trước khi chọn.</p>
-</details>
-<details class="term">
-<summary><h3>Parking Mode</h3></summary>
+</article>
+<article class="term">
+<h3>Parking Mode</h3>
 <p>Chế độ ghi khi xe đỗ, không phải mọi camera hay mọi máy đều hỗ trợ liên tục khi tắt máy — khả năng này phụ thuộc model, chế độ cài đặt và cần thêm bộ cấp nguồn hoặc dây trích ắc quy phù hợp.</p>
-</details>
-<details class="term">
-<summary><h3>Ghi vòng lặp (Loop recording)</h3></summary>
+</article>
+<article class="term">
+<h3>Ghi vòng lặp (Loop recording)</h3>
 <p>Camera tự ghi đè video cũ nhất khi thẻ nhớ đầy, giúp ghi liên tục mà không cần xóa thẻ thủ công.</p>
-</details>
-<details class="term">
-<summary><h3>HDR</h3></summary>
+</article>
+<article class="term">
+<h3>HDR</h3>
 <p>Dải tương phản động rộng, giúp hình ảnh rõ hơn khi chênh sáng mạnh, ví dụ lúc ra khỏi hầm hoặc ngược nắng.</p>
-</details>
-<details class="term">
-<summary><h3>GPS</h3></summary>
+</article>
+<article class="term">
+<h3>GPS</h3>
 <p>Ghi lại tốc độ, vị trí và lộ trình di chuyển kèm theo video, hữu ích khi cần đối chiếu hành trình. Cảnh báo khu vực hạn chế tốc độ, đọc biển báo và hệ thống hỗ trợ lái an toàn (ADAS) là các tính năng riêng, chỉ xác nhận khi model cụ thể công bố — không suy ra từ việc camera có GPS.</p>
-</details>
-<details class="term">
-<summary><h3>Kết nối Wi‑Fi</h3></summary>
+</article>
+<article class="term">
+<h3>Kết nối Wi‑Fi</h3>
 <p>Cho phép xem lại và tải video từ camera sang điện thoại qua ứng dụng, không cần tháo thẻ nhớ.</p>
-</details>
-<details class="term">
-<summary><h3>4G/LTE</h3></summary>
+</article>
+<article class="term">
+<h3>4G/LTE</h3>
 <p>Cho phép xem trực tiếp hoặc nhận cảnh báo từ xa qua mạng di động; thường cần SIM và gói dữ liệu riêng.</p>
-</details>
-<details class="term">
-<summary><h3>Thẻ nhớ chuyên dụng</h3></summary>
+</article>
+<article class="term">
+<h3>Thẻ nhớ chuyên dụng</h3>
 <p>Thẻ được thiết kế chịu ghi/xóa liên tục (endurance), bền hơn thẻ thường khi dùng cho ghi vòng lặp 24/7.</p>
-</details>
+</article>
 </div>
+</details>
 </div>
 </section>
 
