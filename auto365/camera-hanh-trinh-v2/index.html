@@ -236,8 +236,14 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .v2-real-cases{padding:38px 0;background:#f8f8f7}
 .v2-real-cases h2{font-size:27px;letter-spacing:-1px;margin:0}
 .v2-real-cases .wrap>p{color:#666;max-width:720px;margin:8px 0 16px;font-size:13px}
-.v2-real-cases-grid{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:300px;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
-.v2-real-case{scroll-snap-align:start;overflow:hidden;background:#fff;border:1px solid #e8e6e2;border-radius:14px;transition:transform .2s ease,box-shadow .2s ease}
+.case-brand-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.case-tab{padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;font:700 12.5px Arial;cursor:pointer;color:#333;white-space:nowrap}
+.case-tab:hover{border-color:var(--red)}
+.case-tab.active{background:var(--red);color:#fff;border-color:var(--red)}
+.v2-real-cases-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-height:648px;overflow:hidden;transition:max-height .35s ease}
+.v2-real-cases-grid.expanded{max-height:6000px}
+.v2-real-case{overflow:hidden;background:#fff;border:1px solid #e8e6e2;border-radius:14px;transition:transform .2s ease,box-shadow .2s ease}
+.v2-real-case.case-hidden{display:none}
 .v2-real-case:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(22,22,22,.07)}
 .v2-real-case a{display:block;color:inherit;text-decoration:none}
 .v2-real-case a:hover h3{text-decoration:underline}
@@ -246,6 +252,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .v2-real-case small{color:var(--red);font-weight:800;letter-spacing:.55px;font-size:10px;display:block;margin-bottom:4px}
 .v2-real-case h3{font-size:14.5px;line-height:1.32;margin:0 0 6px;font-family:Manrope,"Be Vietnam Pro",sans-serif}
 .v2-real-case p{font-size:12px;color:#666;line-height:1.45;margin:0}
+.case-show-more{display:block;margin:16px auto 0;padding:11px 26px;border:1px solid var(--line);border-radius:999px;background:#fff;font:800 13px Arial;cursor:pointer;color:#222}
+.case-show-more:hover{border-color:var(--red);color:var(--red)}
 .v2-video-block{margin-top:26px}
 .v2-video-block h3{font-family:Manrope,"Be Vietnam Pro",sans-serif;font-size:18px;margin:0 0 12px;max-width:720px}
 .v2-video-frame{position:relative;width:100%;max-width:760px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#111;box-shadow:0 10px 30px rgba(20,20,20,.09)}
@@ -385,6 +393,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .navlinks a:last-child{border-bottom:none}
   .hero-grid,.intro-grid,.local-grid,.depth-row,.footer-grid{grid-template-columns:1fr}
   .customer-summary-grid{grid-template-columns:repeat(2,1fr)}
+  .v2-real-cases-grid{grid-template-columns:repeat(2,1fr);max-height:700px}
   .catalog-shell{display:block}
   .filters{display:none}
   .filter-mobile-bar{display:flex;gap:8px;margin-bottom:14px;align-items:center}
@@ -403,8 +412,9 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .hero-quick-answer.expanded{max-height:none}
   .hero-quick-answer-wrap.collapsed .hero-quick-answer::after{content:'';position:absolute;left:0;right:0;bottom:0;height:32px;background:linear-gradient(rgba(247,247,245,0),#f7f7f5)}
   .quick-answer-toggle{display:block;width:100%;background:#f7f7f5;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;color:var(--red);font-weight:800;font-size:12.5px;padding:8px;cursor:pointer}
-  .v2-real-cases-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:78%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
-  .v2-real-case{scroll-snap-align:start;min-width:0}
+  .v2-real-cases-grid{grid-template-columns:1fr!important;max-height:1010px!important;gap:12px!important}
+  .case-brand-tabs{gap:6px}
+  .case-tab{padding:7px 13px;font-size:12px}
   .mobile-cta-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(20,20,20,.08)}
   .hero-cta{display:none}
   .mobile-cta-bar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:8px;font-weight:800;font-size:13px;text-decoration:none}
@@ -848,9 +858,21 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <div class="wrap">
 <h2>Một vài xe đã lắp để bạn dễ hình dung.</h2>
 <p>Mỗi xe có vị trí lắp và nhu cầu sử dụng riêng. Kỹ thuật viên sẽ tư vấn lại trước khi thực hiện.</p>
-<div class="scroll-hint-always">Cuộn ngang để xem thêm case →</div>
-<div class="v2-real-cases-grid">
-<article class="v2-real-case">
+<div class="case-brand-tabs" id="caseBrandTabs">
+<button type="button" class="case-tab active" data-brand="all">Tất cả</button>
+<button type="button" class="case-tab" data-brand="Mazda">Mazda</button>
+<button type="button" class="case-tab" data-brand="VinFast">VinFast</button>
+<button type="button" class="case-tab" data-brand="Hyundai">Hyundai</button>
+<button type="button" class="case-tab" data-brand="Kia">Kia</button>
+<button type="button" class="case-tab" data-brand="Mitsubishi">Mitsubishi</button>
+<button type="button" class="case-tab" data-brand="Honda">Honda</button>
+<button type="button" class="case-tab" data-brand="Ford">Ford</button>
+<button type="button" class="case-tab" data-brand="Toyota">Toyota</button>
+<button type="button" class="case-tab" data-brand="Subaru">Subaru</button>
+<button type="button" class="case-tab" data-brand="Lynk & Co">Lynk & Co</button>
+</div>
+<div class="v2-real-cases-grid" id="caseGrid">
+<article class="v2-real-case" data-brand="Mazda">
 <a href="https://auto365.vn/mazda-cx-5-2026-lap-70mai-4k-a810s" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-5-2026-lap-70mai-4k-a810s-img_6a9e6ac2b3b6c1.42428038.webp" alt="Mazda CX-5 2.0L Premium Sport 2026 lắp 70mai 4K A810S" loading="lazy">
 <div>
@@ -860,7 +882,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="VinFast">
 <a href="https://auto365.vn/vinfast-vf-6-2025-ban-plus-lap-70mai-t400" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-6-2025-ban-plus-lap-70mai-t400-img_6a9fa92f22cb64.61520689.webp" alt="VinFast VF 6 2025 bản Plus lắp 70mai T400" loading="lazy">
 <div>
@@ -870,7 +892,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="VinFast">
 <a href="https://auto365.vn/vinfast-vf6-plus-2025-lap-70mai-4k-a810s" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf6-plus-2025-lap-70mai-4k-a810s-img_6a9b7c3b38b098.26848502.webp" alt="VinFast VF6 Plus 2025 lắp 70mai 4K A810S" loading="lazy">
 <div>
@@ -880,7 +902,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Hyundai">
 <a href="https://auto365.vn/hyundai-custin-2025-lap-70mai-t400" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-hyundai-custin-2025-lap-70mai-t400-img_6a9e79c5e179d8.03677705.webp" alt="Hyundai Custin 2025 lắp 70mai T400" loading="lazy">
 <div>
@@ -890,7 +912,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Honda">
 <a href="https://auto365.vn/honda-city-rs-2021-lap-camera-hanh-trinh-70mai-t400-set" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-honda-city-rs-2021-lap-camera-hanh-trinh-70mai-t400-set-7-img_6a9bd950c795f8.20672404.webp" alt="Honda City RS 2021 lắp 70mai T400 Set" loading="lazy">
 <div>
@@ -900,7 +922,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Mazda">
 <a href="https://auto365.vn/mazda-cx-30-2024-luxury-lap-camera-hanh-trinh-70mai-4k-a810-lite" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-30-2024-luxury-lap-70mai-a810-lite-img_6a98e1cf384253.63846125.webp" alt="Mazda CX-30 2024 Luxury lắp 70mai 4K A810 Lite" loading="lazy">
 <div>
@@ -910,7 +932,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Kia">
 <a href="https://auto365.vn/kia-k5-2022-lap-70mai-a800se-speedeye" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-kia-k5-2022-lap-70mai-a800se-img_6a993f17340da2.49390802.webp" alt="Kia K5 2022 lắp 70mai A800SE SpeedEye" loading="lazy">
 <div>
@@ -920,7 +942,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Lynk & Co">
 <a href="https://auto365.vn/lynk-co-06-2024-hyper-pro-lap-70mai-a800se" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-lynk-co-06-2024-hyper-pro-lap-70mai-a800se-img_6a9e7c3c696cf0.38806589.webp" alt="Lynk & Co 06 2024 Hyper Pro lắp 70mai A800SE" loading="lazy">
 <div>
@@ -930,7 +952,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Mitsubishi">
 <a href="https://auto365.vn/mitsubishi-outlander-2021-lap-70mai-a800se-2-kenh" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-outlander-2021-lap-70mai-a800se-img_6a9fb926dce8c6.79774395.webp" alt="Mitsubishi Outlander 2021 lắp 70mai A800SE" loading="lazy">
 <div>
@@ -940,7 +962,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="VinFast">
 <a href="https://auto365.vn/vinfast-ec-van-lap-vietmap-r440" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-ec-van-lap-vietmap-r440-tai-auto365-img_6aa10dfb19baa1.62526529.webp" alt="VinFast EC Van lắp Vietmap R440 tại Auto365" loading="lazy">
 <div>
@@ -950,7 +972,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Ford">
 <a href="https://auto365.vn/ford-everest-2019-lap-camera-hanh-trinh-70mai-a510" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/pages/auto365vn-ford-everest-2019-lap-camera-hanh-trinh-70mai-a510-1-img_6aa3b477dddf14.79792389.webp" alt="Ford Everest 2019 lắp camera hành trình 70mai A510 tại Auto365.vn - Trụ Sở Chính" loading="lazy">
 <div>
@@ -960,7 +982,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="Toyota">
 <a href="https://auto365.vn/toyota-fortuner-2019-lap-camera-hanh-trinh-70mai-a800se" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/pages/auto365vn-toyota-fortuner-2019-lap-camera-hanh-trinh-70mai-a800se-7-img_6aa237b94fa3e3.23588112.webp" alt="Toyota Fortuner trong ca lắp 70mai A800SE tại Auto365" loading="lazy">
 <div>
@@ -970,7 +992,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
-<article class="v2-real-case">
+<article class="v2-real-case" data-brand="VinFast">
 <a href="https://auto365.vn/vinfast-limo-green-2025-lap-camera-hanh-trinh-70mai-t400-set" target="_blank" rel="noopener">
 <img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-limo-green-2025-lap-camera-hanh-trinh-70mai-t400-set-1-img_6aa228b5890068.06683292.webp" alt="VinFast Limo Green 2025 cùng hộp camera hành trình 70mai T400 Set tại Auto365.vn – Trụ Sở Chính" loading="lazy">
 <div>
@@ -980,7 +1002,78 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </div>
 </a>
 </article>
+<article class="v2-real-case" data-brand="Subaru">
+<a href="https://auto365.vn/subaru-forester-i-l-2020-lap-camera-hanh-trinh-70mai-a510" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-subaru-forester-i-l-2020-lap-camera-hanh-trinh-70mai-a510-8-img_6aa373c9b4c7d4.71355604.webp" alt="Subaru Forester i-L 2020 lắp camera hành trình 70mai A510 tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>SUBARU FORESTER I-L 2020 · 11/09/2026</small>
+<h3>70mai A510 — 2 kênh trước–sau</h3>
+<p>Camera trước độ phân giải cao, camera sau Full HD. Trang sản phẩm ghi 1 kênh mặc định, hỗ trợ 2 kênh khi thêm camera sau — giá cụ thể cho cấu hình này cần Auto365 xác nhận khi đặt lịch. Xem bài chi tiết →</p>
 </div>
+</a>
+</article>
+<article class="v2-real-case" data-brand="VinFast">
+<a href="https://auto365.vn/vinfast-vf-5-2025-plus-lap-camera-hanh-trinh-70mai-a510" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-5-2025-plus-lap-camera-hanh-trinh-70mai-a510-img_6aa36c4cb26165.29973289.webp" alt="VinFast VF 5 2025 Plus lắp camera hành trình 70mai A510 tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>VINFAST VF 5 2025 PLUS (XE ĐIỆN) · 11/09/2026</small>
+<h3>70mai A510 — 2 kênh trước–sau</h3>
+<p>Camera trước độ phân giải cao, camera sau Full HD. Trang sản phẩm ghi 1 kênh mặc định, hỗ trợ 2 kênh khi thêm camera sau — giá cụ thể cho cấu hình này cần Auto365 xác nhận khi đặt lịch. Xem bài chi tiết →</p>
+</div>
+</a>
+</article>
+<article class="v2-real-case" data-brand="Mazda">
+<a href="https://auto365.vn/mazda-cx-5-2022-20l-luxury-lap-70mai-a500s-truoc-sau" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-5-2022-lap-camera-hanh-trinh-70mai-a500s-img_6aa27e2da0b326.15102880.webp" alt="Mazda CX-5 2022 2.0L Luxury lắp 70mai A500S trước–sau tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>MAZDA CX-5 2022 2.0L LUXURY · 10/09/2026</small>
+<h3>70mai A500S — 2 kênh trước–sau</h3>
+<p>Camera trước độ phân giải cao, camera sau Full HD. Trang sản phẩm A500S ghi cấu hình 1 kênh mặc định — giá cụ thể cho bộ trước–sau cần Auto365 xác nhận khi đặt lịch. Xem bài chi tiết →</p>
+</div>
+</a>
+</article>
+<article class="v2-real-case" data-brand="Mazda">
+<a href="https://auto365.vn/mazda-cx-8-2022-luxury-lap-camera-hanh-trinh-70mai-a800se" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-8-2022-luxury-lap-camera-hanh-trinh-70mai-a800se-img_6aa237e90315a5.27282096.webp" alt="Mazda CX-8 2022 Luxury lắp 70mai A800SE 2 kênh tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>MAZDA CX-8 2022 LUXURY · 10/09/2026</small>
+<h3>70mai A800SE — 2 kênh trước–sau</h3>
+<p>Camera trước 4K và camera sau Full HD, ghi nhận hoạt động sau căn chỉnh. Theo bảng giá công bố trong bài, bộ trước + sau tham khảo 3.590.000đ — khác với giá 3.190.000đ của bản 1 kênh trong danh mục. Xem bài chi tiết →</p>
+</div>
+</a>
+</article>
+<article class="v2-real-case" data-brand="Kia">
+<a href="https://auto365.vn/kia-carnival-2022-lap-70mai-a210" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-kia-carnival-2022-lap-70mai-a210-img_6aa213b67fb275.87644776.webp" alt="Kia Carnival 2022 lắp camera hành trình 70mai A210 tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>KIA CARNIVAL 2022 · 10/09/2026</small>
+<h3>70mai A210 — 2 kênh trước–sau</h3>
+<p>Bàn giao kèm thẻ microSD 256GB. Theo bảng giá công bố trong bài, bộ trước + sau tham khảo 2.100.000đ — khác với giá 1.690.000đ của bản 1 kênh trong danh mục. Xem bài chi tiết →</p>
+</div>
+</a>
+</article>
+<article class="v2-real-case" data-brand="Hyundai">
+<a href="https://auto365.vn/hyundai-elantra-2022-1-6-at-lap-70mai-a800se" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-hyundai-elantra-2022-1-6-at-lap-70mai-a800se-img_6aa212cc9d02a1.63185451.webp" alt="Hyundai Elantra 2022 1.6 AT lắp 70mai A800SE 2 kênh tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>HYUNDAI ELANTRA 2022 1.6 AT · 10/09/2026</small>
+<h3>70mai A800SE — 2 kênh trước–sau</h3>
+<p>Camera trước 4K, camera sau Full HD, ghi nhận hoạt động sau căn chỉnh — giá cụ thể cho cấu hình 2 kênh cần Auto365 xác nhận khi đặt lịch. Xem bài chi tiết →</p>
+</div>
+</a>
+</article>
+<article class="v2-real-case" data-brand="Mitsubishi">
+<a href="https://auto365.vn/mitsubishi-destinator-2025-premium-lap-70mai-a800se" target="_blank" rel="noopener">
+<img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-destinator-2025-premium-lap-70mai-a800se-img_6aa0fab73250b1.06899074.webp" alt="Mitsubishi Destinator 2025 Premium lắp 70mai A800SE tại Auto365.vn – Trụ Sở Chính" loading="lazy">
+<div>
+<small>MITSUBISHI DESTINATOR 2025 PREMIUM · 09/09/2026</small>
+<h3>70mai A800SE — 2 kênh trước–sau</h3>
+<p>Camera trước 4K, camera sau Full HD, ghi nhận hoạt động sau căn chỉnh — giá cụ thể cho cấu hình 2 kênh cần Auto365 xác nhận khi đặt lịch. Xem bài chi tiết →</p>
+</div>
+</a>
+</article>
+</div>
+<button type="button" class="case-show-more" id="caseShowMore">Xem thêm case →</button>
 <div class="v2-video-block">
 <h3>Nâng cấp camera hành trình 70mai 4K — quay tại Auto365</h3>
 <div class="v2-video-frame">
@@ -2049,6 +2142,32 @@ document.querySelector('#hubFind').addEventListener('click', () => {
     hint.className = 'scroll-hint';
     hint.textContent = 'Vuốt ngang để xem thêm →';
     el.insertAdjacentElement('beforebegin', hint);
+  });
+})();
+
+// Lọc case thực tế theo hãng xe + nút xem thêm
+(function() {
+  const grid = document.getElementById('caseGrid');
+  const tabs = document.getElementById('caseBrandTabs');
+  const moreBtn = document.getElementById('caseShowMore');
+  if (!grid || !tabs || !moreBtn) return;
+  const cards = Array.from(grid.querySelectorAll('.v2-real-case'));
+  tabs.addEventListener('click', e => {
+    const btn = e.target.closest('.case-tab');
+    if (!btn) return;
+    tabs.querySelectorAll('.case-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const brand = btn.dataset.brand;
+    cards.forEach(c => {
+      c.classList.toggle('case-hidden', brand !== 'all' && c.dataset.brand !== brand);
+    });
+    grid.classList.remove('expanded');
+    moreBtn.textContent = 'Xem thêm case →';
+    moreBtn.style.display = '';
+  });
+  moreBtn.addEventListener('click', () => {
+    const expanded = grid.classList.toggle('expanded');
+    moreBtn.textContent = expanded ? 'Thu gọn ↑' : 'Xem thêm case →';
   });
 })();
 
