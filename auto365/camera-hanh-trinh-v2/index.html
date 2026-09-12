@@ -121,7 +121,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .check{display:flex;align-items:center;gap:5px;padding:5px 3px;margin:0 -3px;border-radius:6px;font-size:11px;color:#333;cursor:pointer;min-height:30px;line-height:1.25;min-width:0}
 .check:hover{background:#f7f7f5}
 .check input{width:14px;height:14px;flex:none;accent-color:var(--red);cursor:pointer}
-.check span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.check span{min-width:0;white-space:normal;word-break:break-word}
 .filter-pills{display:flex;flex-wrap:wrap;gap:7px}
 .filter-pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 12px;min-height:34px;font-size:11.5px;font-weight:700;color:#555;cursor:pointer}
 .filter-pill:hover{border-color:#b9b9b9}
@@ -503,7 +503,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 </select>
 </div>
 <div class="config-field">
-<label>04 · NGÂN SÁCH</label>
+<label>04 · NGÂN SÁCH THIẾT BỊ</label>
 <select id="hubBudget">
 <option value="all">Chưa giới hạn</option>
 <option value="low">Dưới 2 triệu</option>
@@ -511,6 +511,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <option value="high">5 – 10 triệu</option>
 <option value="premium">Trên 10 triệu</option>
 </select>
+<p style="margin:6px 0 0;font-size:11px;color:#888;line-height:1.4">Chưa gồm công lắp và phụ kiện bổ sung. <a href="#chi-phi-lap-dat" style="color:var(--red);font-weight:700">Xem bảng chi phí lắp đặt →</a></p>
 </div>
 </div>
 <div class="config-action">
