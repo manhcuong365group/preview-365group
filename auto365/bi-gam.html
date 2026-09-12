@@ -1734,7 +1734,7 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
     <div class="consult-modal-head">
       <div>
         <h3 id="consult-modal-title">Nhận tư vấn theo xe</h3>
-        <p id="consult-modal-desc">Để lại thông tin xe, Auto365 kiểm tra và phản hồi cấu hình phù hợp.</p>
+        <p id="consult-modal-desc">Điền thông tin xe để soạn tin; sau đó gửi qua Zalo để Auto365 kiểm tra cấu hình và tư vấn.</p>
       </div>
       <button type="button" class="consult-modal-close" id="consult-close" aria-label="Đóng">&times;</button>
     </div>
@@ -2607,24 +2607,39 @@ footer{background:var(--ink);color:#d7d9dc;padding:40px 0}
   openFaqFromHash();
 
   Array.prototype.forEach.call(document.querySelectorAll('[data-rail-nav]'), function(nav){
-    var railId = nav.getAttribute('data-rail-nav');
-    var rail = document.getElementById(railId);
+    var rail = document.getElementById(nav.getAttribute('data-rail-nav'));
     if (!rail) return;
-    var prevBtn = nav.querySelector('[data-rail-prev]');
-    var nextBtn = nav.querySelector('[data-rail-next]');
+    var prev = nav.querySelector('[data-rail-prev]');
+    var next = nav.querySelector('[data-rail-next]');
+    if (!prev || !next) return;
+    var scheduled = false;
+
     function step(){
-      var card = rail.children[0];
-      return card ? card.getBoundingClientRect().width + 10 : rail.clientWidth * 0.8;
+      var card = Array.prototype.find.call(rail.children, function(item){
+        return item.getClientRects().length > 0 && item.getBoundingClientRect().width > 0;
+      });
+      var gap = parseFloat(window.getComputedStyle(rail).columnGap) || 0;
+      return card ? card.getBoundingClientRect().width + gap : Math.max(1, rail.clientWidth * 0.8);
     }
-    function updateButtons(){
-      var max = rail.scrollWidth - rail.clientWidth - 2;
-      prevBtn.disabled = rail.scrollLeft <= 2;
-      nextBtn.disabled = rail.scrollLeft >= max;
+    function update(){
+      scheduled = false;
+      var max = Math.max(0, rail.scrollWidth - rail.clientWidth);
+      prev.disabled = max <= 2 || rail.scrollLeft <= 2;
+      next.disabled = max <= 2 || rail.scrollLeft >= max - 2;
     }
-    prevBtn.addEventListener('click', function(){ rail.scrollLeft -= step(); });
-    nextBtn.addEventListener('click', function(){ rail.scrollLeft += step(); });
-    rail.addEventListener('scroll', updateButtons, {passive: true});
-    updateButtons();
+    function schedule(){
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(update);
+    }
+
+    prev.addEventListener('click', function(){ rail.scrollLeft -= step(); schedule(); });
+    next.addEventListener('click', function(){ rail.scrollLeft += step(); schedule(); });
+    rail.addEventListener('scroll', schedule, {passive: true});
+    window.addEventListener('resize', schedule);
+    new MutationObserver(schedule).observe(rail, {childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style', 'hidden']});
+    if ('ResizeObserver' in window) new ResizeObserver(schedule).observe(rail);
+    schedule();
   });
 })();
 </script>
