@@ -500,6 +500,9 @@
     /* Apply the Apple-like system face consistently, including existing component overrides. */
     body,body button,body input,body select,body textarea,body h1,body h2,body h3,body p,body a,body span,body strong,body small,body summary,body li{font-family:"SF Pro Display","Helvetica Neue",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif!important}
     body h1,body h2,body h3,body strong,body summary{font-weight:600!important}
+    /* The original layout also used a large section top margin; reduce that gap explicitly. */
+    .section{margin-top:17px!important;padding:10px 0!important}
+    @media(max-width:760px){.section{margin-top:13px!important;padding:8px 0!important}}
   </style>
 </head>
 <body data-code="60" data-status="production-candidate">
