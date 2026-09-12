@@ -6,7 +6,6 @@ const toolDir = dirname(fileURLToPath(import.meta.url));
 const productDir = resolve(toolDir, '..');
 const sourcePath = resolve(productDir, '..', 'titan-black.html');
 const outputDir = resolve(productDir, 'cms');
-const assetSourceDir = resolve(productDir, 'hinh');
 const hostAssetDir = resolve(outputDir, 'uploads', 'images', 'products', 'titan-black-2026');
 const hostAssetBase = '/uploads/images/products/titan-black-2026/';
 const source = readFileSync(sourcePath, 'utf8');
@@ -26,9 +25,12 @@ if (mainStart < 0 || firstScriptAfterMain < 0 || !schema) {
 }
 
 const html = source.slice(mainStart, firstScriptAfterMain).trim();
-const assetPattern = /titan-black\/hinh\/([A-Za-z0-9._-]+)/g;
-const assetNames = [...new Set([...`${html}\n${styles}`.matchAll(assetPattern)].map(match => match[1]))].sort();
-const rewriteAssetPaths = content => content.replace(assetPattern, (_, fileName) => `${hostAssetBase}${fileName}`);
+const assetPattern = /((?:titan-black|titan-black-2026)\/hinh)\/([A-Za-z0-9._-]+)/g;
+const assetRefs = [...new Map([...`${html}\n${styles}`.matchAll(assetPattern)]
+  .map(match => [match[2], { directory: match[1], fileName: match[2] }])).values()]
+  .sort((a, b) => a.fileName.localeCompare(b.fileName));
+const assetNames = assetRefs.map(asset => asset.fileName);
+const rewriteAssetPaths = content => content.replace(assetPattern, (_, __, fileName) => `${hostAssetBase}${fileName}`);
 const readme = `# Titan Black 2026 — CMS package
 
 Files in this folder are generated from \`auto365/titan-black.html\`.
@@ -44,10 +46,10 @@ The form posts to \`/api/leads/lighting\`; confirm that this route is available 
 mkdirSync(outputDir, { recursive: true });
 rmSync(hostAssetDir, { recursive: true, force: true });
 mkdirSync(hostAssetDir, { recursive: true });
-for (const assetName of assetNames) {
-  const sourceAsset = resolve(assetSourceDir, assetName);
+for (const asset of assetRefs) {
+  const sourceAsset = resolve(productDir, '..', asset.directory, asset.fileName);
   if (!existsSync(sourceAsset)) throw new Error(`Missing referenced asset: ${sourceAsset}`);
-  copyFileSync(sourceAsset, resolve(hostAssetDir, assetName));
+  copyFileSync(sourceAsset, resolve(hostAssetDir, asset.fileName));
 }
 writeFileSync(resolve(outputDir, 'titan-black.cms.html'), `${rewriteAssetPaths(html)}\n`, 'utf8');
 writeFileSync(resolve(outputDir, 'titan-black.css'), `${rewriteAssetPaths(styles)}\n`, 'utf8');

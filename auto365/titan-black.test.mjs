@@ -7,7 +7,7 @@ const approvalLock = JSON.parse(readFileSync(new URL('./titan-black/.internal/co
 
 assert.equal(approvalLock.status, 'LOCKED', 'keeps the confirmed reviewer and Mazda case under an internal approval lock');
 assert.equal(approvalLock.content_snapshot.path, 'auto365/titan-black.html', 'binds the approval lock to the Titan page');
-const approvedMazdaAsset = readFileSync(new URL('./titan-black/hinh/titan-back-5.webp', import.meta.url));
+const approvedMazdaAsset = readFileSync(new URL('./titan-black-2026/hinh/titan-back-5.webp', import.meta.url));
 assert.equal(createHash('sha256').update(approvedMazdaAsset).digest('hex'), approvalLock.approved_scope[1].media.sha256, 'detects any change to the approved Mazda case asset');
 
 assert.match(page, /<meta content="noindex,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"\/>/, 'keeps the GitHub Pages preview out of search indexes while allowing link discovery');
@@ -21,7 +21,7 @@ assert.match(page, /href="https:\/\/auto365\.vn\/chi-nhanh"[^>]*>Tìm điểm l�
 assert.match(page, /#tb-product \.tb-hero__grid\{[\s\S]*?align-items:stretch;[\s\S]*?#tb-product \.tb-hero__content\{[\s\S]*?align-self:stretch;/, 'keeps the desktop hero content card the same height as its image');
 assert.match(page, /#tb-product \.tb-buy-grid \{[\s\S]*?align-items:stretch;/, 'keeps the quick-information card level with the consultation form on desktop');
 assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-checker tb-surface" id="tb-fit-form" method="post">/, 'sends the main consultation form to the production lighting lead endpoint');
-assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-faq__form" id="tb-faq-form" method="post">/, 'sends the FAQ consultation form to the production lighting lead endpoint');
+assert.doesNotMatch(page, /id="tb-faq-form"/, 'keeps the FAQ area focused on questions without a duplicate consultation form');
 assert.match(page, /fetch\(form\.action,\s*\{[\s\S]*?method: "POST"[\s\S]*?body:data[\s\S]*?X-Idempotency-Key/, 'posts both forms to the lead endpoint with an idempotency key');
 assert.match(page, /data\.set\("vehicle_year_version"[\s\S]*?data\.set\("lens_variant", activeVariant\)[\s\S]*?!response\.ok\s*\|\|\s*!payload\.lead_id/, 'includes vehicle year/version and selected lens while confirming a real lead ID before success');
 assert.match(page, /CA LẮP THỰC TẾ[\s\S]*?Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365\.vn – Trụ Sở Chính/, 'presents the verified Mazda 3 installation in the AES-style case format');
@@ -38,22 +38,10 @@ assert.match(page, /CANBUS\/decoder.*báo riêng|báo riêng.*CANBUS\/decoder/s,
 assert.match(page, /hình ảnh.*minh họa|minh họa.*hiệu quả thực tế/is, 'requires a light-image disclaimer');
 assert.match(page, /không cam kết kết quả đăng kiểm/i, 'requires a registration disclaimer');
 assert.match(page, /article\.tb-surface > figure\.tb-media img\{width:76%!important;height:76%!important;object-fit:contain!important\}/, 'requires an inline-style override that keeps the whole H4 accessory visible');
-assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-image:url\('titan-black\/hinh\/titan-back-2\.webp'\)[^}]*\}/, 'requires the supplied two-version image for the lens block');
+assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-image:url\('titan-black-2026\/hinh\/titan-back-2\.webp'\)[^}]*\}/, 'requires the supplied two-version image for the lens block');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-color:#087bd0/, 'requires a blue surround instead of black side bars');
 assert.match(page, /\.tb-feature:nth-child\(1\) figure\{[^}]*background-size:100% 100%/, 'requires the supplied lens image to fill its matching frame');
 assert.match(page, /\.tb-feature:nth-child\(2\) figure\{[^}]*aspect-ratio:16 \/ 9[^}]*background-size:100% 100%/, 'requires the cooling image to fill its matching frame');
-assert.match(page, /<form action="\/api\/leads\/lighting" class="tb-faq__form" id="tb-faq-form" method="post">[\s\S]*Nhận tư vấn miễn phí[\s\S]*name="year"[\s\S]*name="need"[\s\S]*Chính sách bảo mật/, 'requires the production lead form in the FAQ column');
-assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:10px 8px\}\}/, 'keeps FAQ consultation fields in compact paired mobile rows');
-assert.match(page, /querySelectorAll\("#tb-fit-form,#tb-faq-form"\)[\s\S]*?fetch\(form\.action,\s*\{[\s\S]*?method: "POST"[\s\S]*?body:data/, 'sends both consultation forms to the production lead API');
-assert.match(page, /<span class="tb-faq__label-text">Họ và tên <b aria-hidden="true">\*<\/b><\/span><input name="name"/, 'keeps the name required marker inline with its label');
-assert.match(page, /<span class="tb-faq__label-text">Số điện thoại <b aria-hidden="true">\*<\/b><\/span><input inputmode="tel" name="phone"/, 'keeps the phone required marker inline with its label');
-assert.match(page, /class="tb-faq__form-actions"[\s\S]*?<span>Nhắn Zalo<\/span>[\s\S]*?Hotline 0365 365 911[\s\S]*?Tìm chi nhánh/, 'adds concise Zalo, hotline and branch actions beneath the consultation request');
-assert.match(page, /\.tb-faq__form-actions\s*\{\s*display:grid;grid-template-columns:1\.5fr 1fr 1\.2fr;gap:8px/, 'keeps the three FAQ contact actions on one row where space permits');
-assert.match(page, /\.tb-faq__form-actions \.tb-btn:first-child\s*\{\s*grid-column:auto;background:#087ff0/, 'styles the Zalo action blue without spanning the row');
-assert.match(page, /class="tb-btn tb-btn--zalo"[^>]*href="https:\/\/zalo\.me\/3622666363345050913"[^>]*><svg[^>]*class="tb-faq__action-icon"/, 'marks the FAQ Zalo action for its dedicated blue treatment and visible icon');
-assert.match(page, /\.tb-faq__action-icon \{ display:block;flex:0 0 auto;width:16px;height:16px/, 'shows compact action icons at every viewport width');
-assert.match(page, /@media \(max-width:480px\)\{[\s\S]*?\.tb-faq__form-actions \.tb-btn span\{display:none\}/, 'switches FAQ contact actions to compact icon-only controls on narrow phones');
-assert.match(page, /@media \(min-width:481px\)\{[\s\S]*?\.tb-faq__form-actions \{ display:grid;grid-template-columns:repeat\(3,minmax\(0,1fr\)\); \}[\s\S]*?\.tb-faq__form-actions \.tb-btn span\{display:inline\}[\s\S]*?\.tb-faq__form-actions \.tb-btn--zalo\{background:#e92531;border-color:#e92531\}/, 'uses evenly stretched text contact actions on web');
 for (const redundantCopy of [
   'So sánh các thông số công bố của Titan Black 2021, 2.0 và phiên bản 2026.',
   'Auto365 chỉ xác nhận phương án sau khi kiểm tra cụm đèn và hệ điện thực tế.',
@@ -66,7 +54,6 @@ assert.doesNotMatch(page, /content:"VEHICLE FIT"/, 'removes the decorative vehic
 assert.match(page, /<div class="tb-spec-list">[\s\S]*Điện áp[\s\S]*Bảo hành[\s\S]*<\/div>\s*<div>[\s\S]*Nhiệt màu[\s\S]*Tuổi thọ công bố[\s\S]*<\/div>\s*<\/div>/, 'balances the specification list into two equal columns');
 assert.match(page, /#tb-product #thong-so \.tb-spec-list\{grid-template-columns:1fr;gap:0\}/, 'stacks the balanced specifications into one readable column on mobile');
 assert.match(page, /#tb-product #so-sanh \.tb-compare__media\{grid-template-columns:1fr\}/, 'stacks the comparison visual and upgrade summary on mobile');
-assert.match(page, /@media \(max-width:480px\)\{#tb-product \.tb-faq__form-grid\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);gap:10px 8px\}\}/, 'keeps consultation form fields in paired rows on narrow phones');
 assert.doesNotMatch(page, /#tb-product \.tb-light-shared\{[^}]*max-width:1120px[^}]*}/, 'keeps the shared lighting visual at its original full-width treatment');
 assert.match(page, /<div class="tb-price-line">\s*<div class="tb-price">6\.500\.000đ<\/div>\s*<span class="tb-price-vat">\/ cặp \(2 đèn\) · chưa VAT<\/span>[\s\S]*?Công lắp, pát, giắc, dây, CANBUS\/decoder/, 'states the unit, VAT and vehicle-specific installation costs beside the top price');
 const heroTrust = page.match(/<div aria-label="Điểm nổi bật Titan Black 2026" class="tb-hero-trust">([\s\S]*?)<\/div>\s*<\/div>\s*<section/)?.[1] ?? '';
@@ -93,9 +80,9 @@ assert.match(page, /\.tb-light-copy-grid article\{display:flex;flex-direction:co
 assert.match(page, /#tb-product \.tb-light-layout/, 'defines a responsive mobile treatment for the lighting layout');
 assert.match(page, /\.tb-light-layout\{display:flex;flex-wrap:wrap;gap:18px;align-items:stretch\}/, 'uses a wrapping lighting layout that cannot overlap at zoomed viewport widths');
 const updatedLightingImage = '1789026525188_9057802958140973376_9057802958140973376_24cc37fb87b116baa0436686dd1cbd07.jpg';
-assert.match(page, new RegExp(`src="titan-black/hinh/${updatedLightingImage}"`), 'uses the supplied replacement lighting illustration');
-assert.match(page, new RegExp(`background:#071220 url\\('titan-black/hinh/${updatedLightingImage.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'\\) center / cover no-repeat`), 'uses the replacement image as the lighting frame fallback');
-assert.ok(existsSync(new URL(`./titan-black/hinh/${updatedLightingImage}`, import.meta.url)), 'publishes the supplied replacement lighting asset');
+assert.match(page, new RegExp(`src="titan-black-2026/hinh/${updatedLightingImage}"`), 'uses the supplied replacement lighting illustration');
+assert.match(page, new RegExp(`background:#071220 url\\('titan-black-2026/hinh/${updatedLightingImage.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}'\\) center / cover no-repeat`), 'uses the replacement image as the lighting frame fallback');
+assert.ok(existsSync(new URL(`./titan-black-2026/hinh/${updatedLightingImage}`, import.meta.url)), 'publishes the supplied replacement lighting asset');
 for (const removedDescription of ['Kết hợp nhiệt màu tối ưu, hỗ trợ tầm nhìn rõ ràng trong nhiều điều kiện di chuyển.', 'Chọn hãng xe để xem các ca đã thực hiện. Các ca dưới đây sử dụng Titan Black 2.0; phương án Titan Black 2026 cần được kiểm tra theo cụm đèn và hệ điện thực tế.']) assert.doesNotMatch(page, new RegExp(removedDescription.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `removes requested supporting copy: ${removedDescription}`);
 assert.match(page, /const specifications = root\.querySelector\("#thong-so"\);[\s\S]*?if \(specifications && comparison\) comparison\.before\(specifications\);/, 'places the full technical specifications before the generation comparison');
 const whyBuySection = page.match(/<section class="tb-section tb-why-buy" id="tb-why-buy">([\s\S]*?)<\/section>/)?.[1] ?? '';
@@ -115,8 +102,8 @@ assert.match(page, /class="tb-install-grid"[\s\S]*?Toyota Camry[\s\S]*?Kia Morni
 assert.match(page, /#case-xe \.tb-install-grid\{display:flex;gap:12px;overflow-x:auto;[\s\S]*?scroll-snap-type:x proximity/, 'makes actual installation cases horizontally scrollable on mobile');
 for (const caseUrl of ['toyota-nang-bi-led-titan-black-2', 'kia-morning-titan-black-2', 'do-den-bi-led-titan-black-20-tai-thanh-hoa']) assert.match(page, new RegExp(`href="https://auto365\\.vn/${caseUrl}"`), `links the actual Titan case: ${caseUrl}`);
 assert.match(page, /installFilters\.forEach[\s\S]*?dataset\.installBrand/, 'makes the actual-installation brand filters functional');
-assert.match(page, /id="tb-actual-2026"[\s\S]*?class="tb-actual-2026__grid"[\s\S]*?titan-black\/hinh\/titan-back-5\.webp[\s\S]*?figcaption>Hình ảnh ca Mazda 3 nâng cấp Bi LED X-Light Titan Black tại Auto365 Trụ Sở Chính\.<\/figcaption>/, 'presents the supplied Mazda 3 image in a dedicated left-side feature panel');
-assert.ok(existsSync(new URL('./titan-black/hinh/titan-back-5.webp', import.meta.url)), 'publishes the supplied Mazda 3 image asset with the page');
+assert.match(page, /id="tb-actual-2026"[\s\S]*?class="tb-actual-2026__grid"[\s\S]*?titan-black-2026\/hinh\/titan-back-5\.webp[\s\S]*?figcaption>Hình ảnh ca Mazda 3 nâng cấp Bi LED X-Light Titan Black tại Auto365 Trụ Sở Chính\.<\/figcaption>/, 'presents the supplied Mazda 3 image in a dedicated left-side feature panel');
+assert.ok(existsSync(new URL('./titan-black-2026/hinh/titan-back-5.webp', import.meta.url)), 'publishes the supplied Mazda 3 image asset with the page');
 assert.match(page, /id="tb-actual-2026"[\s\S]*?<h2>Mazda 3 nâng cấp Bi LED X-Light Titan Black 2026 tại Auto365\.vn – Trụ Sở Chính<\/h2>[\s\S]*?class="tb-actual-2026__note"/, 'identifies the Mazda 3 installation as Titan Black 2026 at Auto365.vn headquarters');
 assert.doesNotMatch(page, /class="tb-actual-2026__badge">Hình thực tế<\/span>/, 'removes the redundant actual-image badge');
 assert.match(page, /const pageFlow = \[[\s\S]*?"kiem-tra-xe"[\s\S]*?"video-teaser"[\s\S]*?"nhu-cau"[\s\S]*?"thong-so"[\s\S]*?"anh-sang"[\s\S]*?"thiet-ke"[\s\S]*?"tuong-thich"[\s\S]*?"so-sanh"[\s\S]*?"tb-fit-summary"[\s\S]*?"tb-consult-cta"[\s\S]*?"tb-actual-2026"[\s\S]*?"case-xe"[\s\S]*?"lap-dat"[\s\S]*?"tb-trusted-address"[\s\S]*?"faq"[\s\S]*?"trust"/, 'places editorial and technical review at the end of the article');
@@ -152,9 +139,9 @@ assert.doesNotMatch(page, /id="tb-why-buy"/, 'removes the hidden editorial secti
 assert.match(page, /#tb-product #tb-why-buy\{display:none\}/, 'keeps the unapproved editorial section out of the published layout');
 assert.match(page, /#tb-product #tb-fit-summary,#tb-product #gia-bao-gom,#tb-product #tb-booking,#tb-product #tb-handover,#tb-product #review,#tb-product #production-data,#tb-product #tb-nearby,#tb-product #tb-technical-review,#tb-product #bai-lien-quan\{display:none\}/, 'hides every section outside the user-approved landing-page flow except the verified reviewer block');
 assert.doesNotMatch(page, /#tb-product #nhu-cau\{display:none\}/, 'keeps the approved needs section visible');
-assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:repeat\(2,minmax\(0,1fr\)\);align-items:stretch\}[\s\S]*?#tb-product #faq \.tb-faq\{align-items:start\}/, 'keeps FAQ columns top-aligned so answers can grow naturally');
-assert.match(page, /id="faq"[\s\S]*?class="tb-shell tb-faq"[\s\S]*?tb-faq__form[\s\S]*?class="tb-faq__questions"[\s\S]*?<h2>Câu hỏi thường gặp<\/h2>[\s\S]*?tb-faq-list/, 'places the FAQ heading above the right-hand question column');
-assert.match(page, /#tb-product #faq \.tb-faq > div:first-child,#tb-product #faq \.tb-faq__questions\{display:block\}/, 'keeps the form and question column independent of each other');
+assert.match(page, /#tb-product #faq \.tb-faq\{grid-template-columns:minmax\(0,1fr\);align-items:start\}/, 'uses the full FAQ width after removing the duplicate form');
+assert.match(page, /id="faq"[\s\S]*?class="tb-shell tb-faq"[\s\S]*?class="tb-faq__questions"[\s\S]*?<h2>Câu hỏi thường gặp<\/h2>[\s\S]*?tb-faq-list/, 'keeps the FAQ heading and question list without a duplicate form');
+assert.match(page, /#tb-product #faq \.tb-faq__questions\{display:block\}/, 'keeps the question list independent and naturally sized');
 assert.match(page, /#tb-product \.tb-faq details\{\s*width:100%;\s*margin:0;\s*padding:11px 16px;/, 'keeps FAQ questions compact and aligned to the full FAQ column');
 assert.match(page, /#tb-product #faq \.tb-faq__questions \.tb-faq-list\{height:auto;grid-auto-rows:auto;align-content:start\}/, 'keeps FAQ rows fitted to their natural content height');
 assert.match(page, /#tb-product #faq \.tb-faq details:not\(\[open\]\)\{display:block;min-height:0;padding:14px 16px\}/, 'keeps closed FAQ summaries compact instead of vertically stretching them');
@@ -167,7 +154,7 @@ assert.match(page, /img\[alt="Phụ kiện đuôi vặn H4 Titan Black 2026"\]\{
 assert.match(page, /href="https:\/\/auto365\.vn\/bi-led-titan-black-2"/, 'keeps a contextual link to Titan Black 2.0 for generation comparison');
 assert.doesNotMatch(page, /data:image\/(?:webp|png|jpe?g);base64,/, 'keeps product imagery out of inline base64 data URIs');
 assert.doesNotMatch(page, /titan-inline-03\.webp|titan-inline-04\.webp/, 'removes hidden references to unavailable lighting images');
-const referencedAssets = [...new Set([...page.matchAll(/titan-black\/hinh\/([A-Za-z0-9._-]+)/g)].map(match => match[1]))];
-for (const imageFile of referencedAssets) {
-  assert.ok(existsSync(new URL(`./titan-black/hinh/${imageFile}`, import.meta.url)), `stores every referenced product asset: ${imageFile}`);
+const referencedAssets = [...new Set([...page.matchAll(/(titan-black(?:-2026)?\/hinh)\/([A-Za-z0-9._-]+)/g)].map(match => [match[1], match[2]]))];
+for (const [assetDirectory, imageFile] of referencedAssets) {
+  assert.ok(existsSync(new URL(`./${assetDirectory}/${imageFile}`, import.meta.url)), `stores every referenced product asset: ${assetDirectory}/${imageFile}`);
 }
