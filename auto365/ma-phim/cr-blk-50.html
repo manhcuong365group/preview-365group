@@ -1226,6 +1226,8 @@
         card.dataset.brand=brand.toLowerCase();
         var title=card.querySelector('h3').textContent.trim();
         card.querySelector('h3').textContent=brand+' '+title;
+        var caseMeta=card.querySelector('.case-meta');
+        if(caseMeta){caseMeta.remove();}
         var media=document.createElement('div');
         media.className='case-media';
         media.innerHTML='<img src="'+caseImages[brand]+'" alt="'+brand+' '+title+' dán 3M CR BLK 50 tại Auto365" loading="lazy">';
