@@ -1264,6 +1264,18 @@
       addEditorialImage('#so-sanh','assets/cr-blk-50-xc60.webp','Volvo XC60 đã dán 3M Crystalline CR BLK 50 tại Auto365');
       addEditorialImage('[aria-labelledby="case-title"]','assets/cr-blk-50-installation.webp','Kỹ thuật viên thi công phim cách nhiệt trên kính xe');
     }
+    /* Keep the decision-making content together before proof and service information. */
+    var technologySection=document.querySelector('[aria-labelledby="technology-title"]');
+    var faqSection=document.querySelector('#faq');
+    var proofSection=document.querySelector('.proof');
+    var benefitSection=document.querySelector('[aria-labelledby="benefit-title"]');
+    var whySection=document.querySelector('.why-auto365');
+    if(caseSection&&technologySection){caseSection.before(technologySection);}
+    if(caseSection&&faqSection){caseSection.before(faqSection);}
+    if(caseSection&&proofSection){caseSection.after(proofSection);}
+    if(whySection&&benefitSection){whySection.after(benefitSection);}
+    var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
+    if(realCaseLink){realCaseLink.setAttribute('href','#case-title');}
   })();
   </script>
 </body>
