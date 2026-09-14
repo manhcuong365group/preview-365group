@@ -1271,7 +1271,11 @@
     var proofSection=document.querySelector('.proof');
     var benefitSection=document.querySelector('[aria-labelledby="benefit-title"]');
     var whySection=document.querySelector('.why-auto365');
+    var configSection=document.querySelector('[aria-labelledby="config-title"]');
+    var priceSection=document.querySelector('[aria-labelledby="price-title"]');
     if(caseSection&&technologySection){caseSection.before(technologySection);}
+    if(compareSection&&technologySection){compareSection.before(technologySection);}
+    if(configSection&&priceSection){configSection.after(priceSection);}
     if(caseSection&&proofSection){caseSection.after(proofSection);}
     if(whySection&&benefitSection){benefitSection.classList.add('benefit-integrated');whySection.appendChild(benefitSection);}
     if(whySection&&faqSection){whySection.after(faqSection);}
