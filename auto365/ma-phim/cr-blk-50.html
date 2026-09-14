@@ -1271,9 +1271,9 @@
     var benefitSection=document.querySelector('[aria-labelledby="benefit-title"]');
     var whySection=document.querySelector('.why-auto365');
     if(caseSection&&technologySection){caseSection.before(technologySection);}
-    if(caseSection&&faqSection){caseSection.before(faqSection);}
     if(caseSection&&proofSection){caseSection.after(proofSection);}
     if(whySection&&benefitSection){whySection.after(benefitSection);}
+    if(benefitSection&&faqSection){benefitSection.after(faqSection);}
     var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
     if(realCaseLink){realCaseLink.setAttribute('href','#case-title');}
   })();
