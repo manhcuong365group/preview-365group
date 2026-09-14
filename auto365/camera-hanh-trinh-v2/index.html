@@ -1545,7 +1545,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <h3>Bảo hành camera hành trình thường bao lâu?</h3>
 <div class="qa-body">
 <span class="qa-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5 19 6v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-2.5Z"/><path d="m9.2 12 2 2 3.8-4"/></svg></span>
-<p>Thời gian bảo hành và điều kiện đổi trả khác nhau theo từng hãng và model, không áp dụng chung cho mọi sản phẩm. Hãy xem đúng chính sách ghi trên trang sản phẩm hoặc hỏi kỹ thuật viên trước khi mua.</p>
+<p>Thời gian bảo hành và điều kiện đổi trả khác nhau theo từng hãng và model, không áp dụng chung cho mọi sản phẩm. Hãy xem đúng chính sách ghi trên trang sản phẩm hoặc hỏi kỹ thuật viên trước khi mua. Xem thêm <a href="https://auto365.vn/he-thong-bao-hanh" target="_blank" rel="noopener">hệ thống bảo hành Auto365 →</a></p>
 </div>
 </article>
 <article class="qa-card">
@@ -1745,10 +1745,11 @@ let state = {
 };
 
 function updateCanonical() {
+  // Phân trang chỉ là render phía client (không có HTML/URL riêng theo trang trên máy chủ),
+  // nên canonical luôn giữ nguyên URL gốc — không đổi theo state.page để khớp với HTML ban đầu.
   const link = document.querySelector('link[rel="canonical"]');
   if (!link) return;
-  const base = 'https://auto365.vn/camera-hanh-trinh-o-to';
-  link.href = state.page > 1 ? base + '?page=' + state.page : base;
+  link.href = 'https://auto365.vn/camera-hanh-trinh-o-to';
 }
 
 // URL query ?page=N
