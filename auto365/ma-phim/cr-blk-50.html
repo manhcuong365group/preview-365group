@@ -1349,6 +1349,14 @@
       provenanceSection.innerHTML='<strong>Nguồn và phạm vi dữ liệu</strong><p><strong>Biên soạn:</strong> Ban Biên Tập Auto365<br><strong>Chuyên gia kiểm duyệt:</strong> Đặng Minh Hoàng – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br><strong>Nguồn dữ liệu kỹ thuật:</strong> 3M Crystalline / CR BLK Technical Data Sheet – Revision F, August 2025<br><strong>Cập nhật:</strong> 15/09/2026</p><p>Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính được 3M công bố; kết quả trên từng xe có thể khác do kính nền, cấu hình và điều kiện sử dụng.</p>';
       finalCta.before(provenanceSection);
     }
+    /* Product/package block belongs near the decision entry point, like the Bi-Gầm showcase. */
+    var fitSection=document.querySelector('.fit-shell');
+    var tradeoffBlock=document.querySelector('[aria-labelledby="tradeoff-title"]');
+    if(fitSection&&configSection){
+      fitSection.after(configSection);
+      if(tradeoffBlock) configSection.after(tradeoffBlock);
+      if(priceSection) (tradeoffBlock||configSection).after(priceSection);
+    }
     var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
     if(realCaseLink){realCaseLink.setAttribute('href','#case-title');}
     /* Repair legacy JS literals that were saved as UTF-8 decoded as Latin-1. */
