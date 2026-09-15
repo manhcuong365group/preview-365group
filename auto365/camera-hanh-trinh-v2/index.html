@@ -366,6 +366,10 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .case-show-more{display:block;margin:16px auto 0;padding:11px 26px;border:1px solid var(--line);border-radius:999px;background:#fff;font:800 13px Arial;cursor:pointer;color:#222}
 .case-show-more:hover{border-color:var(--red);color:var(--red)}
 .v2-video-block{margin-top:26px}
+.video-lead-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(300px,.9fr);gap:20px;align-items:start}
+.video-lead-layout .v2-video-block{margin-top:0}
+.video-lead-layout .lead-form{margin-top:34px;padding:22px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 8px 22px rgba(20,20,20,.05)}
+@media (max-width:850px){.video-lead-layout{grid-template-columns:1fr}.video-lead-layout .lead-form{margin-top:18px}}
 .v2-video-block h3{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif;font-size:18px;margin:0 0 12px;max-width:720px}
 .v2-video-frame{position:relative;width:100%;max-width:760px;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#111;box-shadow:0 10px 30px rgba(20,20,20,.09)}
 .v2-video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
@@ -717,40 +721,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <p class="config-result-note">Đây là kết quả lọc theo số kênh và ngân sách. Auto365 cần biết thêm dòng xe, đời xe và nhu cầu ghi khi đỗ để xác nhận bộ nguồn, phụ kiện và tổng chi phí lắp đặt phù hợp.</p>
 </div>
 </div>
-<form class="lead-form" id="cameraLeadForm">
-<h3>Nhận tư vấn camera phù hợp</h3>
-<p>Để lại thông tin cơ bản, Auto365 sẽ đối chiếu model, xe và phương án lắp trước khi báo giá.</p>
-<div class="lead-form-grid">
-<div class="lead-form-field">
-<label for="leadName">Họ và tên</label>
-<input id="leadName" name="name" autocomplete="name" required placeholder="Nhập họ tên">
-</div>
-<div class="lead-form-field">
-<label for="leadPhone">Số điện thoại</label>
-<input id="leadPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
-</div>
-<div class="lead-form-field">
-<label for="leadCar">Dòng xe</label>
-<input id="leadCar" name="car" autocomplete="organization" placeholder="Ví dụ: Mazda CX-5 2024">
-</div>
-<div class="lead-form-field">
-<label for="leadNeed">Nhu cầu</label>
-<select id="leadNeed" name="need">
-<option>Chưa rõ, cần tư vấn</option>
-<option>Camera trước</option>
-<option>Camera trước + sau</option>
-<option>Camera có cabin</option>
-<option>Parking Mode / 4G</option>
-</select>
-</div>
-<div class="lead-form-field full">
-<label for="leadNote">Ghi chú thêm</label>
-<textarea id="leadNote" name="note" placeholder="Thời gian dự kiến, khu vực lắp hoặc điều bạn đang cân nhắc"></textarea>
-</div>
-</div>
-<button class="lead-form-submit" type="submit">Gửi thông tin tư vấn</button>
-<p class="lead-form-status" id="leadFormStatus" hidden></p>
-</form>
 </aside>
 </div>
 </section>
@@ -1834,12 +1804,48 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </article>
 </div>
 <button type="button" class="case-show-more" id="caseShowMore">Xem thêm case →</button>
+<div class="video-lead-layout">
 <div class="v2-video-block">
 <h3>Nâng cấp camera hành trình 70mai 4K — quay tại Auto365</h3>
 <div class="v2-video-frame">
 <iframe src="https://www.youtube-nocookie.com/embed/tWgVNmB6_kU" title="Nâng cấp camera hành trình 70mai Dash Cam 4K tại Auto365" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <p class="v2-video-caption">Video do Auto365 thực hiện, minh họa quá trình nâng cấp camera hành trình 4K thực tế — không thay thế bước tư vấn theo đúng xe của bạn.</p>
+</div>
+<form class="lead-form" id="cameraLeadForm">
+<h3>Nhận tư vấn camera phù hợp</h3>
+<p>Để lại thông tin cơ bản, Auto365 sẽ đối chiếu model, xe và phương án lắp trước khi báo giá.</p>
+<div class="lead-form-grid">
+<div class="lead-form-field">
+<label for="leadName">Họ và tên</label>
+<input id="leadName" name="name" autocomplete="name" required placeholder="Nhập họ tên">
+</div>
+<div class="lead-form-field">
+<label for="leadPhone">Số điện thoại</label>
+<input id="leadPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
+</div>
+<div class="lead-form-field">
+<label for="leadCar">Dòng xe</label>
+<input id="leadCar" name="car" autocomplete="organization" placeholder="Ví dụ: Mazda CX-5 2024">
+</div>
+<div class="lead-form-field">
+<label for="leadNeed">Nhu cầu</label>
+<select id="leadNeed" name="need">
+<option>Chưa rõ, cần tư vấn</option>
+<option>Camera trước</option>
+<option>Camera trước + sau</option>
+<option>Camera có cabin</option>
+<option>Parking Mode / 4G</option>
+</select>
+</div>
+<div class="lead-form-field full">
+<label for="leadNote">Ghi chú thêm</label>
+<textarea id="leadNote" name="note" placeholder="Thời gian dự kiến, khu vực lắp hoặc điều bạn đang cân nhắc"></textarea>
+</div>
+</div>
+<button class="lead-form-submit" type="submit">Gửi thông tin tư vấn</button>
+<p class="lead-form-status" id="leadFormStatus" hidden></p>
+</form>
 </div>
 </div>
 </section>
