@@ -526,6 +526,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 }
 @media(max-width:850px){
   .nav-toggle{display:flex}
+  .navcta{display:none}
   .navlinks{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 22px;box-shadow:0 8px 20px rgba(20,20,20,.08)}
   .navlinks.open{display:flex}
   .navlinks a{padding:12px 0;border-bottom:1px solid var(--line)}
@@ -546,7 +547,10 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .blockhead p{margin-top:8px}
 }
 @media(max-width:640px){
-  body{padding-bottom:calc(60px + env(safe-area-inset-bottom))}
+  body{padding-bottom:calc(60px + env(safe-area-inset-bottom));overflow-x:hidden}
+  .navcta{display:none!important}
+  .hero-grid,.hero-grid>div,.hero-grid>.quick,.configurator,.config-steps{min-width:0;width:100%}
+  .hero h1{font-size:clamp(30px,8.2vw,36px)!important;line-height:1.1;overflow-wrap:anywhere}
   .branch-quick-contact-v2{flex-wrap:wrap}
   .branch-quick-contact-v2 a{white-space:normal}
   .branch-quick-contact-v2 .bq-primary{flex:1 1 100%}
@@ -587,7 +591,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .term-grid{grid-template-columns:1fr!important}
   .decision,.branch-proof,.benefit,.location{scroll-snap-align:start;min-width:0}
   .scroll-hint{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:700}
-  .config-steps{grid-template-columns:1fr}
+  .config-steps{grid-template-columns:1fr!important}
+  .config-field{min-width:0}
   .customer-summary-grid{grid-template-columns:1fr}
   .config-result-grid{grid-template-columns:1fr}
   .hero h1{letter-spacing:-1.8px}
