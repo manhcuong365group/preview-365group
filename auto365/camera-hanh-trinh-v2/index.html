@@ -475,6 +475,15 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .location.hide{display:none}
 .hub-depth{padding:38px 0;background:#fff}
 .hub-depth h2{margin:0;max-width:760px;font-size:28px}
+
+/* Section headings and lead copy should use the full content rail.  Narrow
+   widths are reserved for card copy and long-form reading text, not section
+   introductions. */
+.needs-head,.matrix-head,.tiers-head,.tech-head,
+.install-proof .proof-head{max-width:none;width:100%}
+.market-brands h2,.market-lead,.live-intro,.flow-lead,
+.install-proof .proof-head p,.hub-depth h2,.knowledge-sub,
+.glossary-lead,.faq-bottom p{max-width:none;width:100%}
 .decision-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:22px}
 .decision{border:1px solid var(--line);border-radius:14px;padding:18px;min-height:158px;background:#fff}
 .decision .n{color:var(--red);font-size:11px;font-weight:900;letter-spacing:.8px}
