@@ -143,8 +143,9 @@ h1{font-weight:700;letter-spacing:-2.2px}
 
 /* Decision Hub - 7 Answer-First Technical Blocks */
 .tech-guide{padding:46px 0 40px;background:#fbfbfa;border-top:1px solid var(--line)}
-.knowledge-accordion{margin:34px 0 0;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 10px 28px rgba(20,20,20,.05)}
-.knowledge-accordion>summary{padding:20px 24px;cursor:pointer;list-style:none;font-size:22px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:12px}
+.knowledge-accordion-shell{max-width:var(--max);margin:28px auto 0;padding:0 22px}
+.knowledge-accordion{margin:0;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 6px 18px rgba(20,20,20,.04)}
+.knowledge-accordion>summary{padding:14px 18px;cursor:pointer;list-style:none;font-size:18px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:12px}
 .knowledge-accordion>summary::-webkit-details-marker{display:none}
 .knowledge-accordion>summary::after{content:'+';margin-left:auto;width:28px;height:28px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--red);font-size:20px;line-height:1}
 .knowledge-accordion[open]>summary{border-bottom:1px solid var(--line)}
@@ -152,7 +153,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .knowledge-accordion__body>section{margin:0;border-top:0}
 .knowledge-accordion__body>section:first-child{border-top:0}
 .knowledge-accordion__body .wrap{max-width:var(--max)}
-@media (max-width:640px){.knowledge-accordion>summary{padding:16px;font-size:18px}.knowledge-accordion__body .wrap{padding-left:16px;padding-right:16px}}
+@media (max-width:640px){.knowledge-accordion-shell{padding:0 16px}.knowledge-accordion>summary{padding:13px 15px;font-size:17px}.knowledge-accordion__body .wrap{padding-left:16px;padding-right:16px}}
 .tech-head{max-width:850px;margin-bottom:28px}
 .tech-head h2{font-size:28px;line-height:1.2;margin:0 0 10px}
 .tech-head p{color:#555;font-size:14px;line-height:1.6;margin:0}
@@ -1944,12 +1945,12 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </button>
 <div class="coverage-stats">
 <div class="coverage-headline">
-<strong>Hệ thống Auto365</strong><em>·</em><strong>Chưa xác minh</strong><span>số điểm theo danh sách cập nhật</span>
+<strong>Hơn 90 điểm</strong><em>·</em><strong>Nhiều tỉnh/thành</strong><span>trên toàn quốc</span>
 </div>
 <div class="coverage-regions">
-<div class="coverage-region"><b>—</b><span>Miền Bắc</span></div>
-<div class="coverage-region"><b>—</b><span>Miền Trung</span></div>
-<div class="coverage-region"><b>—</b><span>Miền Nam</span></div>
+<div class="coverage-region"><b>41</b><span>Miền Bắc</span></div>
+<div class="coverage-region"><b>26</b><span>Miền Trung</span></div>
+<div class="coverage-region"><b>24</b><span>Miền Nam</span></div>
 </div>
 </div>
 <div class="branch-quick-contact branch-quick-contact-v2">
@@ -3059,12 +3060,15 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   const accordion = document.createElement('details');
   accordion.className = 'knowledge-accordion';
   accordion.id = 'kien-thuc-camera';
+  const shell = document.createElement('div');
+  shell.className = 'knowledge-accordion-shell';
   const summary = document.createElement('summary');
   summary.textContent = 'Kiến thức chọn camera hành trình';
   const body = document.createElement('div');
   body.className = 'knowledge-accordion__body';
   accordion.append(summary, body);
-  faq.parentNode.insertBefore(accordion, faq);
+  shell.appendChild(accordion);
+  faq.parentNode.insertBefore(shell, faq);
   sections.forEach(section => body.appendChild(section));
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');
