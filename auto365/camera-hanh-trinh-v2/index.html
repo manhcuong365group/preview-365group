@@ -143,6 +143,16 @@ h1{font-weight:700;letter-spacing:-2.2px}
 
 /* Decision Hub - 7 Answer-First Technical Blocks */
 .tech-guide{padding:46px 0 40px;background:#fbfbfa;border-top:1px solid var(--line)}
+.knowledge-accordion{margin:34px 0 0;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 10px 28px rgba(20,20,20,.05)}
+.knowledge-accordion>summary{padding:20px 24px;cursor:pointer;list-style:none;font-size:22px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:12px}
+.knowledge-accordion>summary::-webkit-details-marker{display:none}
+.knowledge-accordion>summary::after{content:'+';margin-left:auto;width:28px;height:28px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--red);font-size:20px;line-height:1}
+.knowledge-accordion[open]>summary{border-bottom:1px solid var(--line)}
+.knowledge-accordion[open]>summary::after{content:'−';background:var(--red);border-color:var(--red);color:#fff}
+.knowledge-accordion__body>section{margin:0;border-top:0}
+.knowledge-accordion__body>section:first-child{border-top:0}
+.knowledge-accordion__body .wrap{max-width:var(--max)}
+@media (max-width:640px){.knowledge-accordion>summary{padding:16px;font-size:18px}.knowledge-accordion__body .wrap{padding-left:16px;padding-right:16px}}
 .tech-head{max-width:850px;margin-bottom:28px}
 .tech-head h2{font-size:28px;line-height:1.2;margin:0 0 10px}
 .tech-head p{color:#555;font-size:14px;line-height:1.6;margin:0}
@@ -3039,6 +3049,31 @@ document.querySelector('#hubFind').addEventListener('click', () => {
 })();
 
 // Initial render
+// Gom cac block kien thuc moi vao mot accordion, giu catalog va cac block van hanh ben ngoai.
+(function() {
+  const faq = document.getElementById('faq');
+  const ids = ['nhu-cau', 'so-sanh-nhanh', 'phan-khuc-gia', 'tieu-chi-ky-thuat'];
+  if (!faq || document.getElementById('kien-thuc-camera')) return;
+  const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
+  if (!sections.length) return;
+  const accordion = document.createElement('details');
+  accordion.className = 'knowledge-accordion';
+  accordion.id = 'kien-thuc-camera';
+  const summary = document.createElement('summary');
+  summary.textContent = 'Kiến thức chọn camera hành trình';
+  const body = document.createElement('div');
+  body.className = 'knowledge-accordion__body';
+  accordion.append(summary, body);
+  faq.parentNode.insertBefore(accordion, faq);
+  sections.forEach(section => body.appendChild(section));
+  document.addEventListener('click', event => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link) return;
+    const target = document.getElementById(link.getAttribute('href').slice(1));
+    if (target && target.closest('#kien-thuc-camera')) accordion.open = true;
+  });
+})();
+
 render();
 </script>
 
