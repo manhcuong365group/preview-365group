@@ -7,6 +7,7 @@
   <meta name="description" content="3M CR BLK 50 có VLT 48%, TSER 56% trên Auto 75 Glass. Xem giá, vị trí kính phù hợp, giới hạn sử dụng và dữ liệu TDS 3M.">
   <meta name="robots" content="noindex,nofollow,noarchive">
   <link rel="canonical" href="https://auto365.vn/3m-cr-blk-50">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e31b2d'/%3E%3Ctext x='32' y='43' font-size='32' text-anchor='middle' fill='white'%3EA%3C/text%3E%3C/svg%3E">
   <meta property="og:type" content="website">
   <meta property="og:title" content="3M CR BLK 50: Thông số, giá và vị trí kính phù hợp">
   <meta property="og:description" content="3M CR BLK 50 có VLT 48%, TSER 56% trên Auto 75 Glass. Xem giá, vị trí kính phù hợp, giới hạn sử dụng và dữ liệu TDS 3M.">
@@ -1326,6 +1327,22 @@
     }
     var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
     if(realCaseLink){realCaseLink.setAttribute('href','#case-title');}
+    /* Repair legacy JS literals that were saved as UTF-8 decoded as Latin-1. */
+    (function repairLegacyEncoding(){
+      var marker=/[ÃÂ]|á»|áº|Ä|Ä‘|Æ°|â€™|â†|â€“|Â·/;
+      var repair=function(value){
+        if(!value||!marker.test(value)) return value;
+        try{return decodeURIComponent(escape(value));}catch(error){return value;}
+      };
+      var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+      var node;
+      while(node=walker.nextNode()){node.nodeValue=repair(node.nodeValue);}
+      document.body.querySelectorAll('[alt],[title],[aria-label]').forEach(function(element){
+        ['alt','title','aria-label'].forEach(function(attribute){
+          if(element.hasAttribute(attribute)) element.setAttribute(attribute,repair(element.getAttribute(attribute)));
+        });
+      });
+    })();
   })();
   </script>
 </body>
