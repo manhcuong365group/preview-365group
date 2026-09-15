@@ -319,6 +319,19 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .config-pick p{margin:0 0 8px;font-size:12px;color:#666;line-height:1.4}
 .config-pick a{color:var(--red);font-size:12px;font-weight:800}
 .config-result-note{margin:12px 0 0;font-size:11.5px;color:#888;line-height:1.5}
+.lead-form{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+.lead-form h3{margin:0 0 5px;font-size:16px}
+.lead-form>p{margin:0 0 12px;color:#666;font-size:12px;line-height:1.5}
+.lead-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lead-form-field{display:flex;flex-direction:column;gap:5px}
+.lead-form-field.full{grid-column:1/-1}
+.lead-form-field label{font-size:11px;font-weight:800;color:#444}
+.lead-form-field input,.lead-form-field select,.lead-form-field textarea{width:100%;border:1px solid #ddd;border-radius:8px;padding:10px;background:#fff;color:#171717;font:13px Arial}
+.lead-form-field textarea{min-height:66px;resize:vertical}
+.lead-form-submit{margin-top:11px;width:100%;border:0;border-radius:9px;padding:11px;background:var(--red);color:#fff;font-weight:800;font-size:13px;cursor:pointer}
+.lead-form-submit:hover{background:#c81e26}
+.lead-form-status{margin:9px 0 0;font-size:12px;line-height:1.5;color:#14733c}
+@media (max-width:640px){.lead-form-grid{grid-template-columns:1fr}.lead-form-field.full{grid-column:auto}}
 .config-alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
 .config-alt-label{margin:0 0 10px;font-size:12px;font-weight:800;color:#8a5a00;background:#fff7e6;border:1px solid #f0dca6;border-radius:8px;padding:8px 10px;line-height:1.5}
 .market-brands{padding:38px 0;background:#fff}
@@ -349,7 +362,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .v2-real-case div{padding:14px}
 .v2-real-case small{color:var(--red);font-weight:800;letter-spacing:.55px;font-size:10px;display:block;margin-bottom:4px}
 .v2-real-case h3{font-size:14.5px;line-height:1.32;margin:0 0 6px;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif}
-.v2-real-case p{font-size:12px;color:#666;line-height:1.45;margin:0}
+.v2-real-case p{font-size:12px;color:#666;line-height:1.45;margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;min-height:34px}
 .case-show-more{display:block;margin:16px auto 0;padding:11px 26px;border:1px solid var(--line);border-radius:999px;background:#fff;font:800 13px Arial;cursor:pointer;color:#222}
 .case-show-more:hover{border-color:var(--red);color:var(--red)}
 .v2-video-block{margin-top:26px}
@@ -704,6 +717,40 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <p class="config-result-note">Đây là kết quả lọc theo số kênh và ngân sách. Auto365 cần biết thêm dòng xe, đời xe và nhu cầu ghi khi đỗ để xác nhận bộ nguồn, phụ kiện và tổng chi phí lắp đặt phù hợp.</p>
 </div>
 </div>
+<form class="lead-form" id="cameraLeadForm">
+<h3>Nhận tư vấn camera phù hợp</h3>
+<p>Để lại thông tin cơ bản, Auto365 sẽ đối chiếu model, xe và phương án lắp trước khi báo giá.</p>
+<div class="lead-form-grid">
+<div class="lead-form-field">
+<label for="leadName">Họ và tên</label>
+<input id="leadName" name="name" autocomplete="name" required placeholder="Nhập họ tên">
+</div>
+<div class="lead-form-field">
+<label for="leadPhone">Số điện thoại</label>
+<input id="leadPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
+</div>
+<div class="lead-form-field">
+<label for="leadCar">Dòng xe</label>
+<input id="leadCar" name="car" autocomplete="organization" placeholder="Ví dụ: Mazda CX-5 2024">
+</div>
+<div class="lead-form-field">
+<label for="leadNeed">Nhu cầu</label>
+<select id="leadNeed" name="need">
+<option>Chưa rõ, cần tư vấn</option>
+<option>Camera trước</option>
+<option>Camera trước + sau</option>
+<option>Camera có cabin</option>
+<option>Parking Mode / 4G</option>
+</select>
+</div>
+<div class="lead-form-field full">
+<label for="leadNote">Ghi chú thêm</label>
+<textarea id="leadNote" name="note" placeholder="Thời gian dự kiến, khu vực lắp hoặc điều bạn đang cân nhắc"></textarea>
+</div>
+</div>
+<button class="lead-form-submit" type="submit">Gửi thông tin tư vấn</button>
+<p class="lead-form-status" id="leadFormStatus" hidden></p>
+</form>
 </aside>
 </div>
 </section>
@@ -3075,6 +3122,29 @@ document.querySelector('#hubFind').addEventListener('click', () => {
     if (!link) return;
     const target = document.getElementById(link.getAttribute('href').slice(1));
     if (target && target.closest('#kien-thuc-camera')) accordion.open = true;
+  });
+})();
+
+// Form tu van: GitHub Pages khong co backend, nen tao email draft de khach gui tiep.
+(function() {
+  const form = document.getElementById('cameraLeadForm');
+  const status = document.getElementById('leadFormStatus');
+  if (!form || !status) return;
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const subject = 'Nhu cau tu van camera hanh trinh - ' + (data.get('name') || 'Khach hang');
+    const body = [
+      'Ho va ten: ' + (data.get('name') || ''),
+      'So dien thoai: ' + (data.get('phone') || ''),
+      'Dong xe: ' + (data.get('car') || 'Chua cung cap'),
+      'Nhu cau: ' + (data.get('need') || ''),
+      'Ghi chu: ' + (data.get('note') || 'Khong co')
+    ].join('\\n');
+    const mailto = 'mailto:support@365group.com.vn?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    status.innerHTML = 'Đã chuẩn bị thông tin. <a href="' + mailto + '">Bấm vào đây để gửi email</a> hoặc gọi 0365 365 911.';
+    status.hidden = false;
+    window.location.href = mailto;
   });
 })();
 
