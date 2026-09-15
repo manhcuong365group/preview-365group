@@ -3161,6 +3161,17 @@ render();
 document.querySelectorAll('.tech-action-note span').forEach((item) => {
   item.textContent = item.textContent.replace('\u0043\u00e1c m\u1eabu ti\u00eau bi\u1ec3u:', 'M\u1ed9t s\u1ed1 m\u1eabu tham kh\u1ea3o:');
 });
+document.querySelectorAll('.case-price-note b').forEach((item) => {
+  item.textContent = 'C\u00e1ch xem ca l\u1eafp:';
+});
+document.querySelectorAll('.case-show-more').forEach((item) => {
+  item.textContent = 'Xem th\u00eam ca l\u1eafp \u2192';
+});
+document.querySelectorAll('.branch-proof h3').forEach((item) => {
+  if (item.textContent.toLowerCase().includes('checklist')) {
+    item.textContent = 'L\u1eafp \u0111\u1eb7t v\u00e0 ki\u1ec3m tra tr\u01b0\u1edbc khi b\u00e0n giao';
+  }
+});
 </script>
 </body>
 </html>
