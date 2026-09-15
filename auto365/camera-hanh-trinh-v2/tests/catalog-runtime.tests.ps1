@@ -11,7 +11,7 @@ Describe 'catalogue runtime' {
         $html | Should Match "CATALOG_SSOT\.filter\(p => \['active', 'available_on_request'\]\.includes\(p\.status\)\)"
     }
 
-    It 'uses model-specific product CTAs' {
-        $html | Should Match "Xem ' \+ esc\(p\.name\)"
+    It 'uses concise product detail CTAs' {
+        $html | Should Match "p\.url.*Xem chi"
     }
 }
