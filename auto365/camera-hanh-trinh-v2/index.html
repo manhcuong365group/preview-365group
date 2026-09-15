@@ -2235,15 +2235,11 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 <h2>Giải thích nhanh các thuật ngữ camera hành trình.</h2>
 <p class="glossary-lead">Nắm các khái niệm này giúp bạn đọc đúng thông số sản phẩm, không nhầm lẫn giữa các tính năng khi so sánh model.</p>
 <details class="term-toggle">
-<summary>Xem 8 thuật ngữ →</summary>
+<summary>Xem 3 thuật ngữ bổ sung →</summary>
 <div class="term-grid">
 <article class="term">
 <h3>Kênh ghi hình</h3>
 <p>Số camera ghi hình đồng thời. 1 kênh thường chỉ có camera trước; 2 kênh phổ biến là trước–sau nhưng cũng có cấu hình trước–cabin; 3 kênh thường ghi trước, sau và cabin. Kiểm tra đúng cấu hình của từng phiên bản trước khi chọn.</p>
-</article>
-<article class="term">
-<h3>Parking Mode</h3>
-<p>Chế độ ghi khi xe đỗ, không phải mọi camera hay mọi máy đều hỗ trợ liên tục khi tắt máy — khả năng này phụ thuộc model, chế độ cài đặt và cần thêm bộ cấp nguồn hoặc dây trích ắc quy phù hợp.</p>
 </article>
 <article class="term">
 <h3>Ghi vòng lặp (Loop recording)</h3>
@@ -2252,22 +2248,6 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 <article class="term">
 <h3>HDR</h3>
 <p>Dải tương phản động rộng, giúp hình ảnh rõ hơn khi chênh sáng mạnh, ví dụ lúc ra khỏi hầm hoặc ngược nắng.</p>
-</article>
-<article class="term">
-<h3>GPS</h3>
-<p>Ghi lại tốc độ, vị trí và lộ trình di chuyển kèm theo video, hữu ích khi cần đối chiếu hành trình. Cảnh báo khu vực hạn chế tốc độ, đọc biển báo và hệ thống hỗ trợ lái an toàn (ADAS) là các tính năng riêng, chỉ xác nhận khi model cụ thể công bố — không suy ra từ việc camera có GPS.</p>
-</article>
-<article class="term">
-<h3>Kết nối Wi‑Fi</h3>
-<p>Cho phép xem lại và tải video từ camera sang điện thoại qua ứng dụng, không cần tháo thẻ nhớ.</p>
-</article>
-<article class="term">
-<h3>4G/LTE</h3>
-<p>Cho phép xem trực tiếp hoặc nhận cảnh báo từ xa qua mạng di động; thường cần SIM và gói dữ liệu riêng.</p>
-</article>
-<article class="term">
-<h3>Thẻ nhớ chuyên dụng</h3>
-<p>Thẻ endurance được thiết kế cho chu kỳ ghi/xóa liên tục; chọn loại và dung lượng theo yêu cầu ghi vòng lặp của từng model.</p>
 </article>
 </div>
 </details>
@@ -3116,13 +3096,15 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   const shell = document.createElement('div');
   shell.className = 'knowledge-accordion-shell';
   const summary = document.createElement('summary');
-  summary.textContent = 'Kiến thức chọn camera hành trình';
+  summary.textContent = 'Thông tin kiến thức camera hành trình';
   const body = document.createElement('div');
   body.className = 'knowledge-accordion__body';
   accordion.append(summary, body);
   shell.appendChild(accordion);
   faq.parentNode.insertBefore(shell, faq);
   sections.forEach(section => body.appendChild(section));
+  const glossary = document.getElementById('thuat-ngu');
+  if (glossary) body.appendChild(glossary);
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');
     if (!link) return;
