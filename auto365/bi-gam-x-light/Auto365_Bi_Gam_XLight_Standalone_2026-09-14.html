@@ -151,4 +151,71 @@ lucide-react/dist/esm/lucide-react.mjs:
    * See the LICENSE file in the root directory of this source tree.
    *)
 */
+</script><script id="xlight-ui-finalizer">
+(() => {
+  const hero = document.querySelector('.hero-visual');
+  const finder = document.querySelector('#chon-theo-xe .finder-grid');
+  if (hero && finder && !hero.classList.contains('hero-form-visual')) {
+    hero.classList.add('hero-form-visual');
+    hero.setAttribute('aria-label', 'Bộ chọn cấu hình theo xe');
+    hero.replaceChildren(finder);
+    document.querySelector('#chon-theo-xe')?.style.setProperty('display', 'none');
+  }
+  const showcase = document.querySelector('.models-section .product-showcase');
+  if (!showcase || document.querySelector('.xlight-catalog-shell')) return;
+  document.querySelector('.xlight-filter-bar')?.remove();
+  const shell = document.createElement('div');
+  shell.className = 'xlight-catalog-shell';
+  const filter = document.createElement('aside');
+  filter.className = 'xlight-catalog-filter';
+  filter.innerHTML = '<div class="xlight-catalog-filter-head"><span>Bộ lọc</span><button class="xlight-catalog-filter-clear" type="button">Xóa tất cả</button></div><div class="xlight-catalog-filter-group"><strong>Kích thước lens</strong><label><input type="checkbox" data-xlight-filter="lens-2"> 2.0 inch</label><label><input type="checkbox" data-xlight-filter="lens-3"> 3.0 inch</label></div><div class="xlight-catalog-filter-group"><strong>Nhiệt màu</strong><label><input type="checkbox" data-xlight-filter="temp-3"> 3 nhiệt màu</label><label><input type="checkbox" data-xlight-filter="temp-4"> 4800K</label></div>';
+  const main = document.createElement('div');
+  main.className = 'xlight-catalog-main';
+  const toolbar = document.createElement('div');
+  toolbar.className = 'xlight-catalog-toolbar';
+  toolbar.innerHTML = '<input type="search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…" aria-label="Tìm sản phẩm"><select aria-label="Sắp xếp sản phẩm"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp → cao</option><option value="price-desc">Giá cao → thấp</option><option value="name">Tên A → Z</option></select>';
+  const count = document.createElement('p');
+  count.className = 'xlight-catalog-count';
+  main.append(toolbar, count, showcase);
+  shell.append(filter, main);
+  showcase.parentNode.insertBefore(shell, showcase);
+  const cards = [...showcase.querySelectorAll('.product-card')];
+  const search = toolbar.querySelector('input');
+  const sort = toolbar.querySelector('select');
+  const price = (card) => Number((card.querySelector('.product-price')?.textContent || '').replace(/[^0-9]/g, '')) || 0;
+  const apply = () => {
+    const query = search.value.trim().toLowerCase();
+    const selected = [...filter.querySelectorAll('input:checked')].map((input) => input.dataset.xlightFilter);
+    cards.forEach((card) => {
+      const text = card.textContent.toLowerCase();
+      const lensSelected = selected.filter((key) => key.startsWith('lens-'));
+      const tempSelected = selected.filter((key) => key.startsWith('temp-'));
+      const lensMatch = !lensSelected.length || lensSelected.some((key) => key === 'lens-2' && text.includes('2.0 inch')) || lensSelected.some((key) => key === 'lens-3' && text.includes('3.0 inch'));
+      const tempMatch = !tempSelected.length || tempSelected.some((key) => key === 'temp-3' && text.includes('3000k') && text.includes('4300k') && text.includes('5500k')) || tempSelected.some((key) => key === 'temp-4' && text.includes('4800k'));
+      card.classList.toggle('is-filtered-out', !(text.includes(query) && lensMatch && tempMatch));
+    });
+    count.textContent = 'Hiển thị ' + cards.filter((card) => !card.classList.contains('is-filtered-out')).length + ' / ' + cards.length + ' sản phẩm';
+  };
+  search.addEventListener('input', apply);
+  filter.addEventListener('change', apply);
+  filter.querySelector('.xlight-catalog-filter-clear').addEventListener('click', () => { filter.querySelectorAll('input').forEach((input) => { input.checked = false; }); search.value = ''; apply(); });
+  sort.addEventListener('change', () => { cards.sort((a, b) => sort.value === 'name' ? a.textContent.localeCompare(b.textContent, 'vi') : sort.value === 'price-asc' ? price(a) - price(b) : sort.value === 'price-desc' ? price(b) - price(a) : 0).forEach((card) => showcase.append(card)); apply(); });
+  apply();
+})();
+</script><script>
+(() => {
+  const replaceText = (from, to) => {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach((node) => {
+      if (node.nodeValue.includes(from)) node.nodeValue = node.nodeValue.replaceAll(from, to);
+    });
+  };
+  replaceText('Hệ thống Auto365 toàn quốc', 'Tra cứu điểm lắp Auto365');
+  replaceText('Hỗ trợ toàn quốc', 'Tra cứu điểm lắp');
+  const style = document.createElement('style');
+  style.textContent = '@media (max-width: 720px){.xlight-app,.site-shell{max-width:100%;overflow-x:clip}.container{width:100%;max-width:100%;min-width:0;padding-inline:16px}.hero-grid,.answer-grid,.local-grid,.faq-grid,.final-cta-grid{min-width:0}.product-showcase,.decision-grid,.case-list,.process-grid,.trust-rail-grid{min-width:0;max-width:100%}img,svg,video{max-width:100%}}';
+  document.head.appendChild(style);
+})();
 </script></body></html>
