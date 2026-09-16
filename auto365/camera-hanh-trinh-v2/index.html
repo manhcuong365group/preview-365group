@@ -238,6 +238,12 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .catalog-main{min-width:0}
 .catalog-note{border:1px solid var(--line);border-radius:9px;background:#fff;padding:11px 14px;font-size:12px;margin-bottom:13px;display:flex;justify-content:space-between;gap:14px}
 .catalog-note strong{font-size:13px}
+.brand-hub-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:-6px 0 16px;font-size:12px;color:var(--muted)}
+.brand-hub-links a{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:6px 11px;background:#fff;color:var(--ink);font-weight:800}
+.brand-hub-links a:hover{border-color:var(--red);color:var(--red)}
+.price-block{margin-top:auto}
+.bundle-label{display:block;margin-top:2px;color:#666;font-size:10px;line-height:1.3}
+.price-note{display:block;margin-top:8px;color:#888;font-size:10.5px;line-height:1.4}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
 .product{background:#fff;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-height:322px;box-shadow:0 2px 10px rgba(25,25,25,.07);transition:transform .2s ease,box-shadow .2s ease}
 .product:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(25,25,25,.1)}
@@ -331,7 +337,27 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .lead-form-submit{margin-top:11px;width:100%;border:0;border-radius:9px;padding:11px;background:var(--red);color:#fff;font-weight:800;font-size:13px;cursor:pointer}
 .lead-form-submit:hover{background:#c81e26}
 .lead-form-status{margin:9px 0 0;font-size:12px;line-height:1.5;color:#14733c}
+.lead-modal{position:fixed;inset:0;z-index:140;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(18,20,24,.64);backdrop-filter:blur(3px)}
+.lead-modal.open{display:flex}
+.lead-dialog{position:relative;width:min(540px,100%);max-height:min(760px,calc(100vh - 32px));overflow:auto;padding:24px 22px 20px;border:1px solid rgba(255,255,255,.75);border-radius:16px;background:#fff;box-shadow:0 22px 70px rgba(0,0,0,.28)}
+.lead-dialog .lead-form{margin:0;padding:0;border:0}
+.lead-dialog .lead-form h3{margin:0;text-align:center;font-size:18px;letter-spacing:-.3px}
+.lead-dialog .lead-form>p{margin:6px 0 16px;text-align:center;color:#666;font-size:12px}
+.lead-dialog .lead-form-grid{gap:9px 10px}
+.lead-dialog .lead-form-field{gap:4px}
+.lead-dialog .lead-form-field label{font-size:10.5px;color:#333}
+.lead-dialog .lead-form-field input,.lead-dialog .lead-form-field select,.lead-dialog .lead-form-field textarea{min-height:38px;padding:9px 10px;border-color:#d4dbe5;border-radius:8px;font-size:12px;outline:none}
+.lead-dialog .lead-form-field input:focus,.lead-dialog .lead-form-field select:focus,.lead-dialog .lead-form-field textarea:focus{border-color:var(--red);box-shadow:0 0 0 2px rgba(231,36,45,.1)}
+.lead-dialog .lead-form-field input:invalid:not(:placeholder-shown){border-color:var(--red)}
+.lead-dialog .lead-form-field textarea{min-height:70px}
+.lead-dialog .lead-form-submit{min-height:44px;margin-top:14px;border-radius:10px;font-size:12px}
+.lead-dialog .lead-form-instruction{margin:9px 0 0!important;text-align:left!important;font-size:11px!important;color:#777!important}
+.lead-dialog-close{position:absolute;top:10px;right:10px;width:28px;height:28px;border:0;border-radius:50%;background:#f1f2f3;color:#79818b;font-size:18px;line-height:1;cursor:pointer}
+.lead-dialog-close:hover{background:#e5e7e9;color:#222}
+.hero-cta-consult{border:0;background:var(--red);color:#fff;cursor:pointer}
+.hero-cta-consult:hover{background:#c81e26}
 @media (max-width:640px){.lead-form-grid{grid-template-columns:1fr}.lead-form-field.full{grid-column:auto}}
+@media (max-width:640px){.lead-dialog{padding:22px 14px 16px;border-radius:14px}.lead-dialog .lead-form-grid{grid-template-columns:1fr}.lead-dialog .lead-form-field.full{grid-column:auto}}
 .config-alt{margin-top:14px;padding-top:14px;border-top:1px dashed var(--line)}
 .config-alt-label{margin:0 0 10px;font-size:12px;font-weight:800;color:#8a5a00;background:#fff7e6;border:1px solid #f0dca6;border-radius:8px;padding:8px 10px;line-height:1.5}
 .market-brands{padding:38px 0;background:#fff}
@@ -469,7 +495,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .loc-status.open::before{background:#1a8a4a}
 .loc-status.closed{color:#999}
 .loc-actions{display:flex;gap:14px}
-.location .loc-hours,.location .loc-phone,.location .loc-status{display:none}
+.location .loc-hours,.location .loc-phone{display:flex;align-items:center;gap:4px;margin:5px 0 0;color:#666;font-size:11px;line-height:1.4}
+.location .loc-status{display:none}
 .loc-nearest{border-color:var(--red);box-shadow:0 0 0 2px rgba(231,36,45,.15)}
 .branch-empty.show{display:block}
 .location.hide{display:none}
@@ -679,6 +706,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <a href="#nhu-cau" class="hero-cta-find">Tìm theo 5 nhu cầu xe ↓</a>
 <a href="#so-sanh-nhanh" class="hero-cta-compare">Bảng so sánh 5 phân khúc ↓</a>
 <a href="#catalog" class="hero-cta-catalog">Bảng giá 81 model ↓</a>
+<button type="button" class="hero-cta-consult" data-open-lead>Nhận tư vấn miễn phí</button>
 <a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener nofollow" class="hero-cta-zalo">Nhắn Zalo tư vấn</a>
 <a href="tel:0365365911" class="hero-cta-call">Gọi 0365 365 911</a>
 </div>
@@ -1064,6 +1092,12 @@ Khe SIM 4G LTE trực tiếp hoặc Module 4G Hardwire Kit · Hạ tầng Cloud 
 <h2><span data-catalog-count>81</span> camera hành trình để bạn tham khảo và lựa chọn.</h2>
 </div>
 </div>
+<nav class="brand-hub-links" aria-label="Hub thương hiệu camera hành trình">
+<span>Khám phá theo thương hiệu:</span>
+<a href="https://auto365.vn/camera-hanh-trinh-70mai">70mai</a>
+<a href="https://auto365.vn/camera-hanh-trinh-vietmap">VIETMAP</a>
+<a href="https://auto365.vn/camera-hanh-trinh-blackvue">BlackVue</a>
+</nav>
 
 <!-- Mobile Filter Bar -->
 <div class="filter-mobile-bar">
@@ -1144,7 +1178,7 @@ Khe SIM 4G LTE trực tiếp hoặc Module 4G Hardwire Kit · Hạ tầng Cloud 
 <div class="catalog-main">
 <div class="catalog-note">
 <div><strong id="resultCount">81 sản phẩm</strong><div class="filter-chips" id="activeFilterChips"></div></div>
-<span>Giá và tình trạng sản phẩm có thể thay đổi theo thời điểm. Tổng chi phí phụ thuộc số kênh, camera phụ, bộ nguồn, thẻ nhớ, SIM/data và phương án thi công.</span>
+<span><!-- BUNDLE_PRICE_NOTE -->Giá tham khảo cấu hình cơ bản, chưa gồm thẻ nhớ, bộ nguồn &amp; công lắp. Giá và tình trạng sản phẩm có thể thay đổi theo thời điểm.</span>
 </div>
 <div class="grid" id="productGrid" aria-live="polite"></div>
 <div class="pager" id="pager"></div>
@@ -1827,9 +1861,12 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </div>
 <p class="v2-video-caption">Video do Auto365 thực hiện, minh họa quá trình nâng cấp camera hành trình 4K thực tế — không thay thế bước tư vấn theo đúng xe của bạn.</p>
 </div>
+<div class="lead-modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle" hidden>
+<div class="lead-dialog">
+<button type="button" class="lead-dialog-close" id="leadModalClose" aria-label="Đóng form tư vấn">×</button>
 <form class="lead-form" id="cameraLeadForm">
 <h3>Nhận tư vấn camera phù hợp</h3>
-<p>Để lại thông tin cơ bản, Auto365 sẽ đối chiếu model, xe và phương án lắp trước khi báo giá.</p>
+<p id="leadModalTitle">Để lại thông tin, Auto365 sẽ đối chiếu model, xe và phương án lắp trước khi báo giá.</p>
 <div class="lead-form-grid">
 <div class="lead-form-field">
 <label for="leadName">Họ và tên</label>
@@ -1840,11 +1877,15 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 <input id="leadPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
 </div>
 <div class="lead-form-field">
-<label for="leadCar">Dòng xe</label>
-<input id="leadCar" name="car" autocomplete="organization" placeholder="Ví dụ: Mazda CX-5 2024">
+<label for="leadCar">Dòng xe / đời xe <span>(không bắt buộc)</span></label>
+<input id="leadCar" name="car" autocomplete="organization" placeholder="VD: Ford Ranger, VF5, CX-5">
 </div>
 <div class="lead-form-field">
-<label for="leadNeed">Nhu cầu</label>
+<label for="leadCity">Tỉnh / thành phố</label>
+<input id="leadCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
+</div>
+<div class="lead-form-field">
+<label for="leadNeed">Nhu cầu ưu tiên</label>
 <select id="leadNeed" name="need">
 <option>Chưa rõ, cần tư vấn</option>
 <option>Camera trước</option>
@@ -1853,14 +1894,28 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 <option>Parking Mode / 4G</option>
 </select>
 </div>
+<div class="lead-form-field">
+<label for="leadPackage">Gói đang quan tâm</label>
+<select id="leadPackage" name="package">
+<option>Chưa chọn model cụ thể</option>
+<option>Camera 1 kênh phía trước</option>
+<option>Camera 2 kênh trước – sau</option>
+<option>Camera 3 kênh có cabin</option>
+<option>Camera 4G / Cloud</option>
+</select>
+</div>
 <div class="lead-form-field full">
-<label for="leadNote">Ghi chú thêm</label>
-<textarea id="leadNote" name="note" placeholder="Thời gian dự kiến, khu vực lắp hoặc điều bạn đang cân nhắc"></textarea>
+<label for="leadNote">Nhu cầu thêm <span>(không bắt buộc)</span></label>
+<textarea id="leadNote" name="note" placeholder="Đi đêm, cần từ xa, có panorama..."></textarea>
 </div>
 </div>
-<button class="lead-form-submit" type="submit">Gửi thông tin tư vấn</button>
+<!-- FORM_SUBMIT_MAILTO_LABEL: button opens a mailto draft, not a CRM submission. -->
+<p class="lead-form-instruction">Sau khi bấm nút, ứng dụng email sẽ được mở với nội dung đã điền để bạn gửi tới Auto365.</p>
+<button class="lead-form-submit" type="submit">Soạn email tư vấn</button>
 <p class="lead-form-status" id="leadFormStatus" hidden></p>
 </form>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -2498,6 +2553,13 @@ function matchPrice(price, category) {
   return true;
 }
 
+function bundleLabel(p) {
+  if (p.coverage === 'front-rear-cabin') return 'Bộ 3 kênh · trước – sau – cabin';
+  if (p.coverage === 'front-rear') return 'Bộ 2 kênh · trước – sau';
+  if (p.coverage === 'front-cabin') return 'Bộ 2 kênh · trước – cabin';
+  return 'Bản camera trước · 1 kênh';
+}
+
 function filtered() {
   let list = PRODUCTS.filter(p => {
     // Brand multi-filter
@@ -2646,7 +2708,7 @@ function render() {
       '<div class="pbody"><h3>' + esc(p.name) + '</h3>' +
       '<p class="spec">' + (p.coverage === 'front-rear-cabin' ? 'Ghi trước · sau · cabin' : p.coverage === 'front-cabin' ? 'Cấu hình trước · cabin' : p.coverage === 'front-rear' ? 'Cấu hình trước · sau' : 'Camera phía trước') + '</p>' +
       '<div class="chips">' + features(p).map(x => '<span>' + x + '</span>').join('') + '</div>' +
-      '<div class="price ' + (p.price ? '' : 'ask') + '">' + money(p.price) + '</div>' +
+      '<div class="price-block"><div class="price ' + (p.price ? '' : 'ask') + '">' + money(p.price) + '</div><small class="bundle-label">' + bundleLabel(p) + '</small></div>' +
       '<span class="product-detail-cta">Xem chi tiết</span></div></a>' +
       '<div class="actions"><label class="compare-check' + (chosen ? ' checked' : '') + '"><input type="checkbox" data-compare="' + p.url + '"' + (chosen ? ' checked' : '') + '><span>So sánh</span></label></div></article>';
   }).join('') || '<p style="grid-column:1/-1;padding:24px;text-align:center;color:#666">Không tìm thấy mẫu phù hợp. Hãy bỏ bớt điều kiện lọc.</p>';
@@ -2692,9 +2754,14 @@ function updateCompare() {
       const yn = (v) => v ? 'Có' : 'Chưa xác nhận';
       const resolution = (p) => RESOLUTION_MAP[p.slug] || (matchFeatures(p, '4k') ? 'Có camera 4K (chưa rõ độ phân giải camera sau)' : 'Chưa xác nhận độ phân giải cụ thể');
       const parkingCell = (p) => matchFeatures(p, 'parking') ? 'Có — cần bộ nguồn/hardwire kit riêng' : 'Chưa xác nhận';
-      const lteCell = (p) => matchFeatures(p, 'lte') ? 'Tùy chọn — cần bộ kit 4G tương thích, SIM và gói dữ liệu riêng' : 'Chưa xác nhận';
+      // LTE_COMPARE_STATES: integrated, accessory, and unverified are rendered separately.
+      const lteCell = (p) => LTE_MODE[p.slug] === 'integrated'
+        ? 'Có — Tích hợp SIM 4G trực tiếp trên thân máy (cần SIM data)'
+        : LTE_MODE[p.slug] === 'accessory'
+          ? 'Tùy chọn — Cần mua thêm Hardwire Kit 4G và SIM riêng'
+          : 'Chưa xác nhận';
       contentBox.innerHTML = '<table class="compare-table"><thead><tr><th>Tiêu chí</th><th>' + esc(p1.name) + '</th><th>' + esc(p2.name) + '</th></tr></thead><tbody>' +
-        '<tr><td>Giá niêm yết</td><td style="color:var(--red);font-weight:800">' + money(p1.price) + '</td><td style="color:var(--red);font-weight:800">' + money(p2.price) + '</td></tr>' +
+        '<tr><td>Giá tham khảo</td><td style="color:var(--red);font-weight:800"><strong>' + money(p1.price) + '</strong><small class="bundle-label">' + bundleLabel(p1) + '</small></td><td style="color:var(--red);font-weight:800"><strong>' + money(p2.price) + '</strong><small class="bundle-label">' + bundleLabel(p2) + '</small></td></tr>' +
         '<tr><td>Số kênh ghi</td><td>' + p1.channels + ' kênh</td><td>' + p2.channels + ' kênh</td></tr>' +
         '<tr><td>Thương hiệu</td><td>' + p1.brand.toUpperCase() + '</td><td>' + p2.brand.toUpperCase() + '</td></tr>' +
         '<tr><td>Độ phân giải của cấu hình đang chọn</td><td>' + resolution(p1) + '</td><td>' + resolution(p2) + '</td></tr>' +
@@ -2703,7 +2770,7 @@ function updateCompare() {
         '<tr><td>Chế độ đỗ xe Parking</td><td>' + parkingCell(p1) + '</td><td>' + parkingCell(p2) + '</td></tr>' +
         '<tr><td>Giám sát 4G/LTE</td><td>' + lteCell(p1) + '</td><td>' + lteCell(p2) + '</td></tr>' +
         '<tr><td>Chi tiết</td><td><a href="' + p1.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:800">Mở trang sản phẩm →</a></td><td><a href="' + p2.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:800">Mở trang sản phẩm →</a></td></tr>' +
-        '</tbody></table><p style="padding:12px 16px;margin:0;font-size:11.5px;color:#888">"Chưa xác nhận" nghĩa là trang sản phẩm gốc chưa công bố tính năng này, không đồng nghĩa sản phẩm chắc chắn không có. Điều kiện phụ kiện (bộ nguồn, SIM...) áp dụng chung cho tính năng.</p>';
+        '</tbody></table><p style="padding:12px 16px;margin:0;font-size:11.5px;color:#888">Giá tham khảo cấu hình cơ bản, chưa gồm thẻ nhớ, bộ nguồn &amp; công lắp. "Chưa xác nhận" nghĩa là trang sản phẩm gốc chưa công bố tính năng này, không đồng nghĩa sản phẩm chắc chắn không có.</p>';
       modal.classList.add('open');
     }
   } else {
@@ -3141,9 +3208,30 @@ document.querySelector('#hubFind').addEventListener('click', () => {
 
 // Form tu van: GitHub Pages khong co backend, nen tao email draft de khach gui tiep.
 (function() {
+  const modal = document.getElementById('leadModal');
+  const openers = document.querySelectorAll('[data-open-lead]');
+  const close = document.getElementById('leadModalClose');
   const form = document.getElementById('cameraLeadForm');
   const status = document.getElementById('leadFormStatus');
-  if (!form || !status) return;
+  if (!modal || !form || !status) return;
+  let lastFocused = null;
+  const openModal = () => {
+    lastFocused = document.activeElement;
+    modal.hidden = false;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('leadName').focus();
+  };
+  const closeModal = () => {
+    modal.classList.remove('open');
+    modal.hidden = true;
+    document.body.style.overflow = '';
+    if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
+  };
+  openers.forEach(button => button.addEventListener('click', openModal));
+  close.addEventListener('click', closeModal);
+  modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
   form.addEventListener('submit', event => {
     event.preventDefault();
     const data = new FormData(form);
@@ -3152,11 +3240,13 @@ document.querySelector('#hubFind').addEventListener('click', () => {
       'Ho va ten: ' + (data.get('name') || ''),
       'So dien thoai: ' + (data.get('phone') || ''),
       'Dong xe: ' + (data.get('car') || 'Chua cung cap'),
+      'Tinh thanh: ' + (data.get('city') || 'Chua cung cap'),
       'Nhu cau: ' + (data.get('need') || ''),
+      'Goi quan tam: ' + (data.get('package') || ''),
       'Ghi chu: ' + (data.get('note') || 'Khong co')
     ].join('\\n');
     const mailto = 'mailto:support@365group.com.vn?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    status.innerHTML = 'Đã chuẩn bị thông tin. <a href="' + mailto + '">Bấm vào đây để gửi email</a> hoặc gọi 0365 365 911.';
+    status.innerHTML = 'Đang mở ứng dụng email để gửi yêu cầu. Nếu không mở, <a href="' + mailto + '">bấm vào đây để gửi email</a> hoặc gọi 0365 365 911.';
     status.hidden = false;
     window.location.href = mailto;
   });
