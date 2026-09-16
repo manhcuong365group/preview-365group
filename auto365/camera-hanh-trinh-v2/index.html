@@ -174,7 +174,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .quick a{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding:11px 0;font-weight:700;font-size:14px;transition:padding-left .15s ease}
 .quick a:hover{padding-left:4px;color:var(--red)}
 .quick a span{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;border:1px solid var(--line);flex:none;color:var(--red);font-size:13px;transition:background .15s ease,color .15s ease,border-color .15s ease}
-/* Form tìm nhanh (configurator) chuyển thẳng vào hero, thay cho danh sách link cũ — .quick đã tự có khung/nền/shadow nên bỏ khung lồng khung của .configurator, và ép 1 cột cho vừa cột hẹp bên hero. */
 .quick .configurator{background:none;padding:0;border:0;border-radius:0;box-shadow:none}
 .quick .config-steps{grid-template-columns:repeat(2,1fr);gap:10px 12px}
 .quick .config-field select{min-height:40px;padding:8px}
@@ -207,7 +206,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .filter-group:first-of-type{border-top:0;padding-top:0;margin-top:14px}
 .filter-group b{font-size:11px;display:block;margin-bottom:8px;color:#444}
 .filter-group button{border:1px solid #dededb;background:#fff;border-radius:999px;padding:6px 8px;margin:0 3px 5px 0;cursor:pointer;color:#555;font-size:10.5px}
-/* Bộ lọc checkbox mới (.filter-title/.filter-options/.check/.filter-pills) chưa có CSS riêng, đang hiện thô theo mặc định trình duyệt — thiết kế lại đồng bộ, gọn theo tham khảo trang đèn. */
 .filter-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:2px}
 .filter-head b{font-size:14px}
 .filter-clear{border:0;background:none;color:var(--red);font-size:11.5px;font-weight:800;cursor:pointer;padding:4px 0}
@@ -476,9 +474,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .hub-depth{padding:38px 0;background:#fff}
 .hub-depth h2{margin:0;max-width:760px;font-size:28px}
 
-/* Section headings and lead copy should use the full content rail.  Narrow
-   widths are reserved for card copy and long-form reading text, not section
-   introductions. */
 .needs-head,.matrix-head,.tiers-head,.tech-head,
 .install-proof .proof-head{max-width:none;width:100%}
 .market-brands h2,.market-lead,.live-intro,.flow-lead,
@@ -610,7 +605,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .hero-cta a.hero-cta-zalo,.hero-cta a.hero-cta-call{display:none}
   .hero-cta a{width:100%;text-align:center}
   .comparebar{bottom:82px}
-  /* Cải thiện kích thước card trên mobile: rộng 68% thay vì 40% để chống méo card */
   .grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:68%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px;padding-left:22px;padding-right:22px}
   .product{scroll-snap-align:start;min-width:0}
   .market-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:68%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
@@ -632,6 +626,11 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .term-grid{grid-template-columns:1fr!important}
   .decision,.branch-proof,.benefit,.location{scroll-snap-align:start;min-width:0}
   .scroll-hint{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:700}
+  .filter-mobile-bar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .filter-mobile-bar .search-box{grid-column:1/-1;width:100%}
+  .filter-mobile-bar select{width:100%;min-width:0}
+  .catalog-note{flex-direction:column;align-items:flex-start;gap:8px}
+  .catalog-note>span{display:block;max-width:100%}
   .config-steps{grid-template-columns:1fr!important}
   .config-field{min-width:0}
   .customer-summary-grid{grid-template-columns:1fr}
