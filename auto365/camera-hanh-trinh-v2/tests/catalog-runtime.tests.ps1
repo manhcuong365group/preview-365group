@@ -47,6 +47,13 @@ Describe 'catalogue runtime' {
         $html | Should Match 'window\.location\.href = mailto'
     }
 
+    It 'attempts the lead API before using the mailto fallback' {
+        $html | Should Match "fetch\('/api/lead'"
+        $html | Should Match "source: 'camera-hanh-trinh-v2'"
+        $html | Should Match 'response\.ok && result\.ok'
+        (Test-Path (Join-Path (Split-Path $pagePath -Parent) '..\..\functions\api\lead.js')) | Should Be $true
+    }
+
     It 'renders explicit LTE comparison states' {
         $html | Should Match 'LTE_COMPARE_STATES'
         $html | Should Match "LTE_MODE\[p\.slug\] === 'integrated'"
@@ -58,9 +65,10 @@ Describe 'catalogue runtime' {
         $html | Should Match 'function bundleLabel\(p\)'
         $html | Should Match 'price-block'
         $html | Should Match 'bundle-label'
-        $html | Should Match 'camera-hanh-trinh-70mai'
-        $html | Should Match 'camera-hanh-trinh-vietmap'
-        $html | Should Match 'camera-hanh-trinh-blackvue'
+        $html | Should Match 'data-jump-brand="70mai"'
+        $html | Should Match 'data-jump-brand="vietmap"'
+        $html | Should Match 'data-jump-brand="blackvue"'
+        $html | Should Not Match 'href="https://auto365\.vn/camera-hanh-trinh-(70mai|vietmap|blackvue)"'
         $html | Should Match 'BUNDLE_PRICE_NOTE'
     }
 }
