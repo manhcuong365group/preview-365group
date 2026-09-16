@@ -236,8 +236,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .btn-reset{flex:1;border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px;font-weight:800;font-size:13px;cursor:pointer;min-height:46px}
 .btn-apply{flex:2;border:0;background:var(--red);color:#fff;border-radius:9px;padding:12px;font-weight:800;font-size:13px;cursor:pointer;min-height:46px}
 .catalog-main{min-width:0}
-.product[data-product-url]{cursor:pointer}
-.product[data-product-url]:focus-visible{outline:3px solid rgba(231,36,45,.35);outline-offset:3px}
 .catalog-note{border:1px solid var(--line);border-radius:9px;background:#fff;padding:11px 14px;font-size:12px;margin-bottom:13px;display:flex;justify-content:space-between;gap:14px}
 .catalog-note strong{font-size:13px}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
@@ -2642,32 +2640,16 @@ function render() {
 
   grid.innerHTML = showing.map(p => {
     let chosen = state.chosen.includes(p.url);
-    return '<article class="product" data-product-url="' + esc(p.url) + '" tabindex="0" role="link" aria-label="Xem chi tiết ' + esc(p.name) + '"><div class="media">' +
+    return '<article class="product"><a class="product-card-link" target="_blank" rel="noopener" href="' + p.url + '" aria-label="Xem chi tiết ' + esc(p.name) + '"><div class="media">' +
       (p.image ? '<img loading="lazy" decoding="async" width="' + p.imageWidth + '" height="' + p.imageHeight + '" src="' + p.image + '" alt="' + esc(p.name) + '">' : '<div class="fallback">' + (p.brand === 'vietmap' ? 'VIETMAP' : p.brand === 'blackvue' ? 'BlackVue' : p.brand === '70mai' ? '70mai' : 'CAMERA') + '</div>') +
       '<span class="badge">' + p.channels + ' KÊNH</span></div>' +
       '<div class="pbody"><h3>' + esc(p.name) + '</h3>' +
       '<p class="spec">' + (p.coverage === 'front-rear-cabin' ? 'Ghi trước · sau · cabin' : p.coverage === 'front-cabin' ? 'Cấu hình trước · cabin' : p.coverage === 'front-rear' ? 'Cấu hình trước · sau' : 'Camera phía trước') + '</p>' +
       '<div class="chips">' + features(p).map(x => '<span>' + x + '</span>').join('') + '</div>' +
       '<div class="price ' + (p.price ? '' : 'ask') + '">' + money(p.price) + '</div>' +
-      '<div class="actions">' +
-      '<label class="compare-check' + (chosen ? ' checked' : '') + '"><input type="checkbox" data-compare="' + p.url + '"' + (chosen ? ' checked' : '') + '><span>So sánh</span></label>' +
-      '<a target="_blank" rel="noopener" href="' + p.url + '">Xem chi tiết</a>' +
-      '</div></div></article>';
+      '<span class="product-detail-cta">Xem chi tiết</span></div></a>' +
+      '<div class="actions"><label class="compare-check' + (chosen ? ' checked' : '') + '"><input type="checkbox" data-compare="' + p.url + '"' + (chosen ? ' checked' : '') + '><span>So sánh</span></label></div></article>';
   }).join('') || '<p style="grid-column:1/-1;padding:24px;text-align:center;color:#666">Không tìm thấy mẫu phù hợp. Hãy bỏ bớt điều kiện lọc.</p>';
-
-  grid.querySelectorAll('[data-product-url]').forEach(card => {
-    const openProduct = () => { window.location.href = card.dataset.productUrl; };
-    card.addEventListener('click', event => {
-      if (event.target.closest('a,button,input,label,select,textarea')) return;
-      openProduct();
-    });
-    card.addEventListener('keydown', event => {
-      if ((event.key === 'Enter' || event.key === ' ') && event.target === card) {
-        event.preventDefault();
-        openProduct();
-      }
-    });
-  });
 
   document.querySelector('#pager').innerHTML = Array.from({ length: pages }, (_, i) =>
     '<a href="?page=' + (i + 1) + '#catalog" class="' + (i + 1 === state.page ? 'active' : '') + '" data-page="' + (i + 1) + '" aria-label="Trang ' + (i + 1) + '"' + (i + 1 === state.page ? ' aria-current="page"' : '') + '>' + (i + 1) + '</a>'
