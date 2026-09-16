@@ -1402,11 +1402,19 @@
     /* Product/package block belongs near the decision entry point, like the Bi-Gầm showcase. */
     var fitSection=document.querySelector('.fit-shell');
     var tradeoffBlock=document.querySelector('[aria-labelledby="tradeoff-title"]');
-    if(fitSection&&configSection){
-      fitSection.after(configSection);
-      if(tradeoffBlock) configSection.after(tradeoffBlock);
-      if(priceSection) (tradeoffBlock||configSection).after(priceSection);
-    }
+    var answerSection=document.querySelector('[aria-labelledby="answer-title"]');
+    var decisionSection=document.querySelector('[aria-labelledby="decision-matrix-title"]');
+    var irrSection=document.querySelector('[aria-labelledby="irr-title"]');
+    if(answerSection){answerSection.remove();}
+    if(fitSection&&specSection){fitSection.after(specSection);}
+    if(specSection&&proofSection){specSection.after(proofSection);}
+    if(proofSection&&irrSection){proofSection.after(irrSection);}
+    if(irrSection&&technologySection){irrSection.after(technologySection);}
+    if(technologySection&&compareSection){technologySection.after(compareSection);}
+    if(compareSection&&decisionSection){compareSection.after(decisionSection);}
+    if(decisionSection&&configSection){decisionSection.after(configSection);}
+    if(configSection&&tradeoffBlock){configSection.after(tradeoffBlock);}
+    if(priceSection){(tradeoffBlock||configSection||decisionSection).after(priceSection);}
     var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
     if(realCaseLink){realCaseLink.setAttribute('href','#case-title');realCaseLink.textContent='Xem xe thực tế →';}
     /* Repair legacy JS literals that were saved as UTF-8 decoded as Latin-1. */
