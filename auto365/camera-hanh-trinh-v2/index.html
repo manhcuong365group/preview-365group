@@ -656,6 +656,10 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .need-card,.tier-card{scroll-snap-align:start;min-width:0}
   .tech-detail-grid{grid-template-columns:1fr}
   .flow-chain{margin:22px -22px 0;padding-left:22px;padding-right:22px}
+  /* Mobile follows desktop order and grid structure; only the product catalogue remains a two-row scroller. */
+  .market-grid,.needs-grid,.tiers-grid,.decision-grid,.branch-proof-grid,.benefit-grid,.locations{display:grid!important;grid-auto-flow:initial!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:none!important;grid-auto-columns:auto!important;overflow:visible!important;margin:0!important;padding:0!important;scroll-snap-type:none!important}
+  .flow-chain{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px 0 0!important;padding:0!important;overflow:visible!important}
+  .flow-node{min-width:0!important}
   .flow-node{min-width:78px}
   .decision-grid{grid-auto-columns:65%!important}
   .branch-proof-grid{grid-auto-columns:75%!important}
