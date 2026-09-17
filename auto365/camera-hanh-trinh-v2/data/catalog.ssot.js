@@ -27,7 +27,7 @@ window.CATALOG_SSOT = [
   {
     "product_id": "camera-hanh-trinh-yuemi-q5",
     "product_name": "CAMERA HÀNH TRÌNH YUEMI Q5",
-    "brand": "Khác",
+    "brand": "YUEMI",
     "model": "YUEMI Q5",
     "variant": null,
     "sku": null,

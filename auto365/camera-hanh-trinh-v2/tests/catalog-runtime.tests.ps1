@@ -51,7 +51,7 @@ Describe 'catalogue runtime' {
         $html | Should Match "fetch\('/api/lead'"
         $html | Should Match "source: 'camera-hanh-trinh-v2'"
         $html | Should Match 'response\.ok && result\.ok'
-        (Test-Path (Join-Path (Split-Path $pagePath -Parent) '..\..\functions\api\lead.js')) | Should Be $true
+        (Test-Path (Join-Path (Split-Path $pagePath -Parent) '..\functions\api\lead.js')) | Should Be $true
     }
 
     It 'renders explicit LTE comparison states' {

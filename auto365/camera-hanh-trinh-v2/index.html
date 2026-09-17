@@ -1597,9 +1597,6 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </div>
 </section>
 
-<div class="wrap"><div class="content-banner"><img src="hinh/9df91b93-5140-49d8-bb5b-5c2df93dc1b4.webp" alt="Camera hành trình đồng hành an toàn trên mọi cung đường" loading="lazy" width="1600" height="800" decoding="async"></div></div>
-
-<!-- 8. CASE THỰC TẾ & VIDEO MINH HỌA -->
 <section class="v2-real-cases" id="case-thuc-te">
 <div class="wrap">
 <h2>20 ca lắp camera hành trình thực tế để bạn tham khảo.</h2>
@@ -2556,10 +2553,12 @@ function bundleLabel(p) {
   return 'Bản camera trước · 1 kênh';
 }
 
+const SECONDARY_BRANDS = new Set(['yuemi', 'teyes', 'nextbase', 'htd', 'hp']);
+
 function filtered() {
   let list = PRODUCTS.filter(p => {
     // Brand multi-filter
-    let brandOk = state.brands.size === 0 || state.brands.has(p.brand);
+    let brandOk = state.brands.size === 0 || state.brands.has(p.brand) || (state.brands.has('other') && SECONDARY_BRANDS.has(p.brand));
     // Channel multi-filter
     let chanOk = state.channels.size === 0 || [...state.channels].some(ch => {
       if (ch === 2) return p.coverage === 'front-rear';
@@ -2603,6 +2602,7 @@ const BRAND_LABELS = {
   'ddpai': 'DDPAI',
   'thinkware': 'Thinkware',
   'ellicam': 'Ellicam',
+  'yuemi': 'YUEMI',
   'utour': 'UTOUR',
   'other': 'Hãng khác'
 };
