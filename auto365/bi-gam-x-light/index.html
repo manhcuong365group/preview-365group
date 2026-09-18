@@ -1201,13 +1201,7 @@ html,body,#root,#xlight-app,#xlight-app *,#xlight-app input,#xlight-app select,#
       <button type="button" class="nr-chip" data-brand="VinFast" aria-pressed="false"><img alt="VinFast" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" loading="lazy" decoding="async">VinFast</button>
       <button type="button" class="nr-chip" data-brand="Honda" aria-pressed="false"><img alt="Honda" src="https://auto365.vn/assets/frontend/images/car-brands/honda.png" loading="lazy" decoding="async">Honda</button>
       <button type="button" class="nr-chip" data-brand="Hyundai" aria-pressed="false"><img alt="Hyundai" src="https://auto365.vn/assets/frontend/images/car-brands/hyundai.png" loading="lazy" decoding="async">Hyundai</button>
-    </div>
-
-    <div class="nr-case-pager">
-      <p class="nr-meta" id="case-result-count">Hiển thị 8 / 12 xe</p>
-    </div>
-
-    <div class="nr-cases nr-cases--luoi" id="case-grid" aria-label="Hồ sơ xe thực tế">
+    </div><div class="nr-cases nr-cases--luoi" id="case-grid" aria-label="Hồ sơ xe thực tế">
       <a class="nr-case" data-car-brand="Ford" href="https://auto365.vn/ford-transit-2012-16-cho-lap-bi-gam-x-light-x3-ultra-gia-cau-hinh" target="_blank" rel="noreferrer"><figure class="nr-case-media"><img alt="Ford Transit 2012 16 chỗ lắp bi gầm X-Light X3 Ultra" src="https://auto365.vn/uploads/images/thumbnails/640x360xcrop/news/auto365vn-ford-transit-2012-16-cho-lap-bi-gam-x-light-x3-ultra-11-img_6a7a8a1fa96a09.27139423.jpg.webp" loading="lazy" decoding="async"></figure><span class="nr-case-cap"><span class="nr-case-xe"><img alt="Ford" src="https://auto365.vn/assets/frontend/images/car-brands/ford.png" loading="lazy" decoding="async"><span class="nr-case-ten">Ford Transit</span><span class="nr-case-nam">2012</span></span><span class="nr-case-work">Ford Transit 2012 16 chỗ lắp bi gầm X-Light X3 Ultra: Giá, cấu hình</span><span class="nr-case-chan"><span>Nâng cấp ánh sáng</span><time datetime="2026-08-11">11/08/2026</time><b>Xem case →</b></span></span></a>
       <a class="nr-case" data-car-brand="Mazda" href="https://auto365.vn/mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-20-gia-va-cau-hinh-thuc-te" target="_blank" rel="noreferrer"><figure class="nr-case-media"><img alt="Mazda CX-8 2021 Luxury lắp bi gầm X-Light F10 Hyper 2.0" src="https://auto365.vn/uploads/images/thumbnails/640x360xcrop/news/auto365vn-mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-2-0-12-img_6a76cff17c50b9.57221397.jpg.webp" loading="lazy" decoding="async"></figure><span class="nr-case-cap"><span class="nr-case-xe"><img alt="Mazda" src="https://auto365.vn/assets/frontend/images/car-brands/mazda.png" loading="lazy" decoding="async"><span class="nr-case-ten">Mazda CX-8</span><span class="nr-case-nam">2021</span></span><span class="nr-case-work">Mazda CX-8 2021 Luxury lắp bi gầm X-Light F10 Hyper 2.0: Giá và cấu hình thực tế</span><span class="nr-case-chan"><span>Nâng cấp ánh sáng</span><time datetime="2026-08-08">08/08/2026</time><b>Xem case →</b></span></span></a>
       <a class="nr-case" data-car-brand="Toyota" href="https://auto365.vn/toyota-camry-2008-lap-bi-gam-x-light-x3-ultra-4300k" target="_blank" rel="noreferrer"><figure class="nr-case-media"><img alt="Toyota Camry 2008 lắp Bi gầm X-Light X3 Ultra 4300K" src="https://auto365.vn/uploads/images/thumbnails/640x360xcrop/news/auto365vn-toyota-camry-nang-cap-x-light-x3-ultra-12-img_6a680e70a71527.70845746.jpg.webp" loading="lazy" decoding="async"></figure><span class="nr-case-cap"><span class="nr-case-xe"><img alt="Toyota" src="https://auto365.vn/assets/frontend/images/car-brands/toyota.png" loading="lazy" decoding="async"><span class="nr-case-ten">Toyota Camry</span></span><span class="nr-case-work">Toyota Camry 2008 lắp Bi gầm X-Light X3 Ultra 4300K: Giá 5,5 triệu</span><span class="nr-case-chan"><span>Nâng cấp ánh sáng</span><time datetime="2026-07-28">28/07/2026</time><b>Xem case →</b></span></span></a>
@@ -1873,7 +1867,6 @@ lucide-react/dist/esm/lucide-react.mjs:
   const buttons=[...section.querySelectorAll('#case-filter [data-brand]')];
   const moreWrap=section.querySelector('.case-more');
   const moreBtn=section.querySelector('#case-more');
-  const count=section.querySelector('#case-result-count');
   const limit=8;
   let brand='';
   let expanded=false;
@@ -1881,7 +1874,6 @@ lucide-react/dist/esm/lucide-react.mjs:
     const matched=cards.filter(card=>!brand||card.dataset.carBrand===brand);
     const visible=expanded?matched:matched.slice(0,limit);
     cards.forEach(card=>{card.hidden=!visible.includes(card)});
-    if(count)count.textContent=`Hiển thị ${visible.length} / ${matched.length} xe`;
     const hasMore=matched.length>limit;
     if(moreWrap)moreWrap.hidden=!hasMore;
     if(moreBtn){
