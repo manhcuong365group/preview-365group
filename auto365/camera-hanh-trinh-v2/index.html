@@ -657,6 +657,90 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .hero h1{letter-spacing:-1.8px}
   .expert-box{flex-direction:column}
 }
+
+/* Branch hero card (bhc-) — Auto365 design system v7 */
+.bhc-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.98fr);gap:14px;align-items:stretch;margin-bottom:26px}
+.bhc-card{position:relative;overflow:hidden;min-width:0;min-height:300px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);container-type:inline-size}
+.bhc-card-inner{position:relative;height:100%;padding:18px 20px 16px}
+.bhc-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 10px;color:var(--red);font-size:11px;line-height:1;font-weight:700;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
+.bhc-eyebrow::after{content:"";width:36px;height:1.5px;background:currentColor;border-radius:999px;opacity:.9}
+.bhc-map-bg{position:absolute;inset:0 0 auto auto;width:50%;height:270px;pointer-events:none;overflow:hidden}
+.bhc-map-bg::before{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.74) 14%,rgba(255,255,255,.07) 48%,transparent 74%),linear-gradient(180deg,rgba(255,255,255,.04),transparent 55%,#fff 100%)}
+.bhc-map-bg svg{width:100%;height:100%}
+.bhc-left-content{position:relative;z-index:5;width:74%;min-width:0}
+.bhc-headline{margin:0;max-width:500px;font-size:clamp(1.5rem,1.3rem + .8vw,1.9rem);line-height:1.1;letter-spacing:-.02em;font-weight:800;color:var(--ink)}
+.bhc-headline .bhc-red{display:block;color:var(--red)}
+.bhc-desc{margin:11px 0 0;max-width:515px;color:var(--muted);font-size:13px;line-height:1.5}
+.bhc-map-badge{position:absolute;z-index:6;right:20px;top:144px;padding:5px 10px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:999px;box-shadow:0 4px 12px rgba(35,55,75,.08);font-size:10px;font-weight:700;color:var(--ink);white-space:nowrap}
+.bhc-button-row{position:relative;z-index:8;display:grid;grid-template-columns:1.18fr .9fr .96fr;gap:8px;width:100%;margin-top:16px}
+.bhc-btn{min-width:0;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:7px;padding:0 8px;font-size:12px;line-height:1;font-weight:700;border:1.2px solid transparent;transition:transform .16s ease;background:#fff;white-space:nowrap;text-decoration:none}
+.bhc-btn svg{width:15px;height:15px;flex:0 0 15px}
+.bhc-btn:hover{transform:translateY(-1px)}
+.bhc-btn-primary{background:var(--red);color:#fff;box-shadow:0 7px 15px rgba(231,36,45,.18)}
+.bhc-btn-zalo{color:#176bc9;border-color:#3c86da}
+.bhc-btn-map{color:var(--red);border-color:#f27375}
+.bhc-fact-row{position:relative;z-index:10;display:grid;grid-template-columns:1.02fr 1.25fr 1.32fr .78fr;align-items:center;height:44px;margin-top:18px;min-width:0}
+.bhc-fact-item{height:100%;display:flex;align-items:center;gap:6px;padding-right:5px;min-width:0}
+.bhc-fact-item+.bhc-fact-item{border-left:1px solid var(--line);padding-left:7px}
+.bhc-fact-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 28px;background:#fff0f0;color:var(--red)}
+.bhc-fact-icon svg{width:13px;height:13px}
+.bhc-fact-item>span:last-child{min-width:0}
+.bhc-fact-title{display:block;font-size:10.5px;line-height:1.1;font-weight:700;color:var(--ink);white-space:nowrap}
+.bhc-fact-text{display:block;margin-top:2px;font-size:9.5px;line-height:1.1;color:var(--muted);white-space:nowrap}
+.bhc-right-card{padding:0}
+.bhc-right-card .bhc-card-inner{padding:18px 20px 16px;height:100%}
+.bhc-section-title{margin:16px 0 0;color:var(--ink);font-weight:800;letter-spacing:-.02em}
+.bhc-scale{font-size:clamp(1.3rem,1.15rem + .7vw,1.6rem);line-height:1.05;white-space:nowrap;padding-right:88px}
+.bhc-scale-hl{color:var(--red)}
+.bhc-vn{position:absolute;top:13px;right:18px;display:flex;align-items:flex-start;gap:6px;color:#f1a0a4}
+.bhc-vn-note{padding-top:1px;color:var(--red);font-size:8.2px;line-height:1.13;font-weight:700;font-style:italic;text-align:right;white-space:nowrap}
+.bhc-vn>svg{width:24px;height:52px;flex:0 0 24px}
+.bhc-regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:25px}
+.bhc-region{position:relative;display:grid;grid-template-rows:auto 1fr auto auto;min-width:0;height:112px;padding:12px 11px 11px;border:1px solid var(--line);border-radius:11px;transition:transform .16s ease,box-shadow .16s ease;text-decoration:none}
+.bhc-region:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(35,55,75,.06)}
+.bhc-region--1{color:var(--red);background:linear-gradient(180deg,#fffafa 0%,#fffdfd 100%)}
+.bhc-region--2{color:#176bc9;background:linear-gradient(180deg,#f9fcff 0%,#fdfefe 100%)}
+.bhc-region--3{color:#0b9a58;background:linear-gradient(180deg,#f8fdf9 0%,#fcfffd 100%)}
+.bhc-region-index{font-size:9.5px;line-height:1;font-weight:700;opacity:.38}
+.bhc-region-art{position:absolute;top:11px;right:11px;width:29px;height:29px}
+.bhc-region-name{grid-row:3;font-size:9.9px;line-height:1;font-weight:700;color:#667586;letter-spacing:.012em;white-space:nowrap}
+.bhc-region-count{grid-row:4;margin-top:6px;font-size:17px;line-height:1;font-weight:800;color:var(--ink);white-space:nowrap}
+.bhc-all{display:flex;align-items:center;justify-content:center;height:44px;margin-top:14px;border:1px solid var(--line);border-radius:10px;gap:9px;padding:0 12px;font-size:12px;line-height:1;font-weight:700;background:#fff;color:var(--ink);white-space:nowrap;text-decoration:none}
+.bhc-all svg{width:15px;height:15px;flex:0 0 15px}
+.bhc-all:hover{border-color:var(--red);color:var(--red)}
+@container(max-width:600px){.bhc-left-content{width:78%}.bhc-map-badge{right:16px}.bhc-fact-row{grid-template-columns:1fr 1.22fr 1.24fr .76fr}}
+@media(max-width:1060px){.bhc-grid{grid-template-columns:1fr;max-width:760px;margin-inline:auto}}
+@media(max-width:640px){
+  .bhc-grid{gap:12px}
+  .bhc-card{min-height:0;border-radius:14px}
+  .bhc-card-inner{padding:18px 15px}
+  .bhc-right-card .bhc-card-inner{padding:18px 15px}
+  .bhc-map-bg{width:100%;height:200px;opacity:.5}
+  .bhc-map-bg::before{background:linear-gradient(180deg,rgba(255,255,255,.18),#fff 94%)}
+  .bhc-left-content{width:100%}
+  .bhc-headline{font-size:clamp(1.4rem,7vw,1.7rem);max-width:100%}
+  .bhc-desc{font-size:12px;max-width:100%}
+  .bhc-map-badge{top:170px;right:15px;font-size:9px}
+  .bhc-button-row{grid-template-columns:1fr;margin-top:16px}
+  .bhc-btn{height:44px;font-size:12px}
+  .bhc-fact-row{grid-template-columns:1fr 1fr;height:auto;margin-top:16px}
+  .bhc-fact-item{padding:10px 7px}
+  .bhc-fact-item+.bhc-fact-item{border-left:0}
+  .bhc-fact-item:nth-child(even){border-left:1px solid var(--line)}
+  .bhc-fact-item:nth-child(n+3){border-top:1px solid var(--line)}
+  .bhc-fact-icon{width:30px;height:30px;flex:0 0 30px}
+  .bhc-fact-title{font-size:10.5px}
+  .bhc-fact-text{font-size:9px}
+  .bhc-scale{font-size:clamp(1.3rem,6.4vw,1.6rem);white-space:normal;margin-top:14px;padding-right:72px}
+  .bhc-vn{top:13px;right:14px}
+  .bhc-vn-note{font-size:8px}
+  .bhc-vn>svg{width:22px;height:48px}
+  .bhc-regions{grid-template-columns:1fr;margin-top:16px}
+  .bhc-region{height:90px}
+  .bhc-region-art{width:27px;height:27px}
+  .bhc-all{height:44px;margin-top:12px;font-size:11.5px}
+}
+@media(max-width:420px){.bhc-headline .bhc-red{max-width:290px}.bhc-fact-row{grid-template-columns:1fr}.bhc-fact-item:nth-child(even){border-left:0}.bhc-fact-item+.bhc-fact-item{border-top:1px solid var(--line)}}
 </style>
 </head>
 <body>
@@ -1928,39 +2012,81 @@ h1{font-weight:700;letter-spacing:-2.2px}
 
 <!-- 11. ĐIỂM LẮP TIÊU BIỂU & TÌM KIẾM CHI NHÁNH -->
 <section class="local" id="dia-diem">
-<div class="wrap local-grid">
-<div>
+<div class="wrap">
 <h2>Tìm điểm lắp camera hành trình gần bạn.</h2>
 <p>Danh sách bên dưới gồm 4 điểm tiêu biểu trong hệ thống Auto365. Phạm vi điểm lắp và lịch nhận xe cần được xác nhận theo danh sách cập nhật. <a href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem toàn bộ hệ thống chi nhánh →</a> nếu chưa thấy khu vực của bạn.</p>
-<div class="branch-search branch-search-v2">
-<span class="bs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></span>
-<input type="text" id="branchSearchInput" placeholder="Nhập tỉnh/thành, quận/huyện hoặc tìm khu vực gần bạn..." aria-label="Tra cứu chi nhánh">
+<div class="bhc-grid">
+<article class="bhc-card">
+<div class="bhc-map-bg" aria-hidden="true">
+<svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice">
+<defs>
+<linearGradient id="bhcMapBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset="1" stop-color="#edf5fa"/></linearGradient>
+<filter id="bhcPinShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#e7242d" flood-opacity=".22"/></filter>
+</defs>
+<rect width="560" height="420" fill="url(#bhcMapBg)"/>
+<path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"/>
+<path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"/>
+<path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"/>
+<path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"/>
+<path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"/>
+<rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"/>
+<path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#e7242d" filter="url(#bhcPinShadow)"/>
+<circle cx="363" cy="113" r="16" fill="#fff"/>
+<path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"/><circle cx="464" cy="85" r="7" fill="#fff"/>
+<path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"/><circle cx="250" cy="135" r="7" fill="#fff"/>
+</svg>
 </div>
-<button type="button" class="branch-locate" id="branchLocate">
-<span class="bs-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
-<span><b>Dùng vị trí của tôi</b><small id="branchLocateStatus">So sánh với 4 điểm đang giới thiệu</small></span>
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="m9 6 6 6-6 6"/></svg>
-</button>
-<div class="coverage-stats">
-<div class="coverage-headline">
-<strong>Hơn 90 điểm</strong><em>·</em><strong>Nhiều tỉnh/thành</strong><span>trên toàn quốc</span>
+<div class="bhc-card-inner">
+<div class="bhc-left-content">
+<p class="bhc-eyebrow">AUTO365 TRỤ SỞ CHÍNH</p>
+<h3 class="bhc-headline">Kết nối nhanh với<span class="bhc-red">Auto365 Trụ Sở Chính</span></h3>
+<p class="bhc-desc">Liên hệ để được tư vấn lắp camera hành trình, đặt lịch hoặc hỗ trợ kỹ thuật. Có thể gọi trực tiếp, nhắn Zalo hoặc mở Google Maps để xem đường đi.</p>
 </div>
-<div class="coverage-regions">
-<div class="coverage-region"><b>41</b><span>Miền Bắc</span></div>
-<div class="coverage-region"><b>26</b><span>Miền Trung</span></div>
-<div class="coverage-region"><b>24</b><span>Miền Nam</span></div>
+<span class="bhc-map-badge">Auto365 Trụ Sở Chính</span>
+<div class="bhc-button-row">
+<a class="bhc-btn bhc-btn-primary" href="tel:0365365911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg>Gọi 0365 365 911</a>
+<a class="bhc-btn bhc-btn-zalo" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener nofollow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L4 20l1.1-4.3A8.5 8.5 0 1 1 21 11.5Z"/></svg>Zalo tư vấn</a>
+<a class="bhc-btn bhc-btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg>Google Maps</a>
+</div>
+<div class="bhc-fact-row">
+<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z"/><circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/></svg></span><span><span class="bhc-fact-title">Tư vấn nhanh</span><span class="bhc-fact-text">Qua hotline hoặc Zalo</span></span></div>
+<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" /></svg></span><span><span class="bhc-fact-title">Trụ Sở Chính</span><span class="bhc-fact-text">Phường Hiệp Bình, TP.HCM</span></span></div>
+<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg></span><span><span class="bhc-fact-title">Chỉ đường</span><span class="bhc-fact-text">Mở trực tiếp Google Maps</span></span></div>
+<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg></span><span><span class="bhc-fact-title">Hotline</span><span class="bhc-fact-text">0365 365 911</span></span></div>
 </div>
 </div>
-<div class="branch-quick-contact branch-quick-contact-v2">
-<a class="bq-primary" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem hệ thống Auto365 →</a>
-<a class="bq-outline" href="tel:0365365911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg>Gọi 0365 365 911</a>
-<a class="bq-outline" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener nofollow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L4 20l1.1-4.3A8.5 8.5 0 1 1 21 11.5Z"/></svg>Chat Zalo</a>
+</article>
+<article class="bhc-card bhc-right-card">
+<div class="bhc-card-inner">
+<p class="bhc-eyebrow">PHỦ SÓNG TOÀN QUỐC</p>
+<h3 class="bhc-section-title bhc-scale"><span class="bhc-scale-hl">91 chi nhánh</span> · 33 tỉnh thành</h3>
+<span class="bhc-vn" aria-hidden="true">
+<span class="bhc-vn-note">Auto365 có mặt<br>khắp Việt Nam</span>
+<svg viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></svg>
+</span>
+<div class="bhc-regions">
+<a class="bhc-region bhc-region--1" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">
+<span class="bhc-region-index">01</span>
+<svg class="bhc-region-art" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/></svg>
+<span class="bhc-region-name">MIỀN BẮC</span>
+<span class="bhc-region-count">41 điểm</span>
+</a>
+<a class="bhc-region bhc-region--2" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">
+<span class="bhc-region-index">02</span>
+<svg class="bhc-region-art" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/></svg>
+<span class="bhc-region-name">MIỀN TRUNG</span>
+<span class="bhc-region-count">26 điểm</span>
+</a>
+<a class="bhc-region bhc-region--3" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">
+<span class="bhc-region-index">03</span>
+<svg class="bhc-region-art" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/></svg>
+<span class="bhc-region-name">MIỀN NAM</span>
+<span class="bhc-region-count">24 điểm</span>
+</a>
 </div>
-<div class="trust-badges">
-<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-3-7-9V5l7-2 7 2v7c0 6-7 9-7 9Z"/></svg>Hệ thống Auto365 toàn quốc</div>
-<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="17" cy="9" r="2.4"/><path d="M23 20c0-2.6-1.8-4.7-4.3-5.4"/></svg>Kỹ thuật viên chuyên nghiệp</div>
-<div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2-1.5-2-3.4-2.3.9a7.7 7.7 0 0 0-1.7-1L15 3h-4l-.4 2.9a7.7 7.7 0 0 0-1.7 1l-2.3-.9-2 3.4L6.6 11a7.6 7.6 0 0 0 0 2l-2 1.5 2 3.4 2.3-.9c.5.4 1.1.8 1.7 1L11 21h4l.4-2.9c.6-.2 1.2-.6 1.7-1l2.3.9 2-3.4L19.4 13Z"/></svg>Trang thiết bị hiện đại</div>
+<a class="bhc-all" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem toàn bộ hệ thống Auto365<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
+</article>
 </div>
 <div>
 <div class="local-list-head">
