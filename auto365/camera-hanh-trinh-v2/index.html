@@ -137,17 +137,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 
 /* Decision Hub - 7 Answer-First Technical Blocks */
 .tech-guide{padding:23px 0 20px;background:#fbfbfa;border-top:1px solid var(--line)}
-.knowledge-accordion-shell{max-width:var(--max);margin:28px auto 0;padding:0 22px}
-.knowledge-accordion{margin:0;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden;box-shadow:0 6px 18px rgba(20,20,20,.04)}
-.knowledge-accordion>summary{padding:14px 18px;cursor:pointer;list-style:none;font-size:18px;font-weight:800;color:var(--ink);display:flex;align-items:center;gap:12px}
-.knowledge-accordion>summary::-webkit-details-marker{display:none}
-.knowledge-accordion>summary::after{content:'+';margin-left:auto;width:28px;height:28px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--red);font-size:20px;line-height:1}
-.knowledge-accordion[open]>summary{border-bottom:1px solid var(--line)}
-.knowledge-accordion[open]>summary::after{content:'−';background:var(--red);border-color:var(--red);color:#fff}
-.knowledge-accordion__body>section{margin:0;border-top:0}
-.knowledge-accordion__body>section:first-child{border-top:0}
-.knowledge-accordion__body .wrap{max-width:var(--max)}
-@media (max-width:640px){.knowledge-accordion-shell{padding:0 16px}.knowledge-accordion>summary{padding:13px 15px;font-size:17px}.knowledge-accordion__body .wrap{padding-left:16px;padding-right:16px}}
 .tech-head{max-width:850px;margin-bottom:28px}
 .tech-head h2{font-size:28px;line-height:1.2;margin:0 0 10px}
 .tech-head p{color:#555;font-size:14px;line-height:1.6;margin:0}
@@ -2192,6 +2181,11 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </article>
 </div>
 
+<div class="content-banner-row">
+<img src="hinh/auto365vn-kiem-tra-camera-truoc-va-camera-sau-img_6aa10e1f2e4fd8.77381281.webp" alt="So sánh hiển thị camera trước và camera sau qua màn hình gương" loading="lazy" width="800" height="404" decoding="async">
+<img src="hinh/auto365vn-man-hinh-kiem-tra-3-kenh-70mai-t400-vf6-img_6a9fbbc5203342.07124701.webp" alt="Kiểm tra 3 góc camera trước, cabin, sau qua ứng dụng điện thoại" loading="lazy" width="800" height="404" decoding="async">
+</div>
+
 <div class="expert-box">
 <div class="expert-avatar">NQĐ</div>
 <div>
@@ -2259,11 +2253,6 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </div>
 </div>
 </section>
-
-<div class="wrap"><div class="content-banner-row">
-<img src="hinh/auto365vn-kiem-tra-camera-truoc-va-camera-sau-img_6aa10e1f2e4fd8.77381281.webp" alt="So sánh hiển thị camera trước và camera sau qua màn hình gương" loading="lazy" width="800" height="404" decoding="async">
-<img src="hinh/auto365vn-man-hinh-kiem-tra-3-kenh-70mai-t400-vf6-img_6a9fbbc5203342.07124701.webp" alt="Kiểm tra 3 góc camera trước, cabin, sau qua ứng dụng điện thoại" loading="lazy" width="800" height="404" decoding="async">
-</div></div>
 
 <div class="wrap"><div class="content-banner"><img src="hinh/0c50424d-0e49-48d2-b7dd-9716a62890b8.webp" alt="Camera hành trình ghi bằng chứng rõ ràng, bảo vệ bạn mọi lúc" loading="lazy" width="1600" height="800" decoding="async"></div></div>
 
@@ -3144,33 +3133,6 @@ document.querySelector('#hubFind').addEventListener('click', () => {
 })();
 
 // Initial render
-// Gom cac block kien thuc moi vao mot accordion, giu catalog va cac block van hanh ben ngoai.
-(function() {
-  const faq = document.getElementById('faq');
-  const ids = ['nhu-cau', 'so-sanh-nhanh', 'phan-khuc-gia', 'tieu-chi-ky-thuat'];
-  if (!faq || document.getElementById('kien-thuc-camera')) return;
-  const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
-  if (!sections.length) return;
-  const accordion = document.createElement('details');
-  accordion.className = 'knowledge-accordion';
-  accordion.id = 'kien-thuc-camera';
-  const shell = document.createElement('div');
-  shell.className = 'knowledge-accordion-shell';
-  const summary = document.createElement('summary');
-  summary.textContent = 'Thông tin kiến thức camera hành trình';
-  const body = document.createElement('div');
-  body.className = 'knowledge-accordion__body';
-  accordion.append(summary, body);
-  shell.appendChild(accordion);
-  faq.parentNode.insertBefore(shell, faq);
-  sections.forEach(section => body.appendChild(section));
-  document.addEventListener('click', event => {
-    const link = event.target.closest('a[href^="#"]');
-    if (!link) return;
-    const target = document.getElementById(link.getAttribute('href').slice(1));
-    if (target && target.closest('#kien-thuc-camera')) accordion.open = true;
-  });
-})();
 
 // Form tu van: uu tien API lead khi production da cau hinh; fallback mailto tren preview/static host.
 (function() {
