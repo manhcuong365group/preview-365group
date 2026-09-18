@@ -374,6 +374,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .case-tab{padding:8px 16px;border:1px solid var(--line);border-radius:999px;background:#fff;font:700 12.5px Arial;cursor:pointer;color:#333;white-space:nowrap}
 .case-tab:hover{border-color:var(--red)}
 .case-tab.active{background:#f7f7f5;color:var(--red);border-color:var(--red);font-weight:800}
+.scroll-hint-mobile-only{display:none}
 .v2-real-cases-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-height:545px;overflow:hidden;transition:max-height .35s ease}
 .v2-real-cases-grid.expanded{max-height:6000px!important}
 .v2-real-case{overflow:hidden;background:#fff;border:1px solid #e8e6e2;border-radius:14px;transition:transform .2s ease,box-shadow .2s ease}
@@ -628,8 +629,10 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .hero-quick-answer-wrap{position:relative}
   .hero-quick-answer{max-height:none;overflow:visible;position:relative;margin-bottom:0;border-radius:10px}
   .quick-answer-toggle{display:none}
-  .v2-real-cases-grid{grid-template-columns:1fr!important;max-height:540px!important;gap:12px!important}
-  .v2-real-cases-grid.expanded{max-height:none!important}
+  .scroll-hint-mobile-only{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:700}
+  .v2-real-cases-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:68%!important;gap:10px!important;max-height:none!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px;padding-left:22px;padding-right:22px}
+  .v2-real-case{scroll-snap-align:start;min-width:0}
+  .case-show-more{display:none}
   .guide-reading-head{display:block}.guide-reading-head>a{display:inline-block;margin-top:8px}.guide-reading-grid{grid-template-columns:1fr}
   .case-brand-tabs{gap:6px}
   .case-tab{padding:7px 13px;font-size:12px}
@@ -1610,6 +1613,7 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 <button type="button" class="case-tab" data-brand="Subaru">Subaru</button>
 <button type="button" class="case-tab" data-brand="Lynk & Co">Lynk & Co</button>
 </div>
+<div class="scroll-hint-mobile-only">Vuốt ngang để xem thêm ca lắp →</div>
 <div class="v2-real-cases-grid" id="caseGrid">
 <article class="v2-real-case" data-brand="Mazda">
 <a href="https://auto365.vn/mazda-cx-5-2026-lap-70mai-4k-a810s" target="_blank" rel="noopener">
