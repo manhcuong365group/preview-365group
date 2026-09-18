@@ -913,13 +913,10 @@
     @media (max-width:900px){.case-heading{grid-template-columns:1fr;gap:10px}.compare-grid{grid-template-columns:1fr}}
     @media (max-width:640px){.case-filters{margin-inline:calc((100vw - 100%) / -2);padding-inline:18px 1px}.case-grid{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,minmax(0,auto));grid-auto-columns:calc((100% - 12px) * .77);grid-template-columns:none;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px}.case-card{min-height:0;scroll-snap-align:start}}
     @media (max-width:640px){.service-locator{margin-top:48px}.locator-card{padding:16px}.locator-card h3{font-size:15px}.locator-card p{font-size:12.5px}.locator-actions a{min-height:38px;padding:7px 11px}.service-gallery{margin-top:24px}.service-gallery-grid{grid-template-columns:repeat(2,1fr);gap:9px}.service-gallery-card span{padding:8px 9px;font-size:11px}}
-    /* Use open editorial columns for explanatory sections; reserve cards for actions. */
-    .position-card,.benefit-card{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;min-height:0!important;padding:20px 4px!important;border-top:1px solid var(--line)!important}
     .position-card .state{margin-bottom:14px!important}
-    .benefit-card .benefit-no{margin-bottom:12px!important}
     .benefit-card .benefit-no{display:none!important}
-    .case-card .case-tag{display:none!important}
     .section-kicker{display:none!important}
+    .case-card .case-tag{display:none!important}
     .case-photo{width:100%;aspect-ratio:1.65/1;object-fit:cover;border-radius:12px;margin:0 0 14px}
     .data-visuals{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}.data-visuals figure{margin:0;overflow:hidden;border-radius:14px;background:#f5f5f3}.data-visuals img{width:100%;aspect-ratio:1.65/1;object-fit:cover}.data-visuals figcaption{padding:9px 11px;font-size:12px;color:#59616c}
     .benefit-evidence{width:100%;aspect-ratio:1.7/1;object-fit:cover;border-radius:12px;margin-top:14px}
@@ -1059,9 +1056,125 @@
     .spectral-line{display:none!important}
     .hero-offer{background:#171a20!important;backdrop-filter:none!important}
     .image-frame::after{background:linear-gradient(180deg,transparent 52%,rgba(5,6,8,.62) 100%)!important}
+    /* Auto365 HQ + branch coverage module (design system v7), classes prefixed a365hq- to avoid clashing with page-wide .btn/.eyebrow/.card. */
+    .a365hq-shell{
+      --a365-red-500:#ef2326;--a365-blue-600:#176bc9;--a365-green-600:#0b9a58;--a365-white:#fff;
+      --a365-gray-25:#fbfcfd;--a365-gray-50:#f5f7f9;--a365-gray-100:#eef2f5;--a365-gray-200:#dce4ea;
+      --a365-gray-600:#657487;--a365-gray-800:#303946;--a365-gray-900:#202934;
+      --a365hq-surface-card:var(--a365-white);--a365hq-text-primary:var(--a365-gray-900);
+      --a365hq-text-secondary:var(--a365-gray-600);--a365hq-border-subtle:var(--a365-gray-200);
+      --a365hq-brand:var(--a365-red-500);--a365hq-info:var(--a365-blue-600);--a365hq-success:var(--a365-green-600);
+      --a365hq-type-display:clamp(1.625rem,1.38rem + .55vw,1.95rem);
+      --a365hq-type-section:clamp(1.45rem,1.28rem + .45vw,1.78rem);
+      --a365hq-type-body:clamp(.72rem,.69rem + .08vw,.79rem);
+      --a365hq-type-label:clamp(.625rem,.60rem + .05vw,.69rem);
+      --a365hq-type-button:clamp(.68rem,.65rem + .08vw,.76rem);
+      --a365hq-type-meta:clamp(.54rem,.52rem + .04vw,.60rem);
+      --a365hq-type-card-title:clamp(.61rem,.59rem + .04vw,.67rem);
+      --a365hq-type-count:clamp(1.02rem,.94rem + .18vw,1.16rem);
+      --a365hq-radius-lg:16px;--a365hq-shadow-card:0 10px 28px rgba(33,51,71,.055);--a365hq-container:1296px;
+      font-family:Arial,sans-serif;
+    }
+    .a365hq-branch-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.98fr);gap:14px;width:100%;max-width:var(--a365hq-container);margin-inline:auto;align-items:stretch}
+    .a365hq-card{position:relative;overflow:hidden;min-width:0;min-height:318px;background:var(--a365hq-surface-card);border:1px solid var(--a365hq-border-subtle);border-radius:var(--a365hq-radius-lg);box-shadow:var(--a365hq-shadow-card);container-type:inline-size}
+    .a365hq-card-inner{position:relative;height:100%;padding:18px 20px 16px}
+    .a365hq-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 10px;color:var(--a365hq-brand);font-size:var(--a365hq-type-label);line-height:1;font-weight:700;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
+    .a365hq-eyebrow::after{content:"";width:36px;height:1.5px;background:currentColor;border-radius:999px;opacity:.9}
+    .a365hq-left-map-bg{position:absolute;inset:0 0 auto auto;width:50%;height:270px;pointer-events:none;overflow:hidden}
+    .a365hq-left-map-bg::before{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.74) 14%,rgba(255,255,255,.07) 48%,transparent 74%),linear-gradient(180deg,rgba(255,255,255,.04),transparent 55%,#fff 100%)}
+    .a365hq-left-map-bg svg{width:100%;height:100%}
+    .a365hq-left-content{position:relative;z-index:5;width:74%;min-width:0}
+    .a365hq-headline{margin:0;max-width:500px;font-size:var(--a365hq-type-display);line-height:1.03;letter-spacing:-.035em;font-weight:700;color:var(--a365hq-text-primary)}
+    .a365hq-headline-line{display:block}
+    .a365hq-headline .a365hq-red{display:block;color:var(--a365hq-brand)}
+    .a365hq-desc{margin:11px 0 0;max-width:515px;color:var(--a365hq-text-secondary);font-size:var(--a365hq-type-body);line-height:1.48;font-weight:400}
+    .a365hq-map-badge{position:absolute;z-index:6;right:20px;top:144px;padding:5px 10px;background:rgba(255,255,255,.96);border:1px solid #d8e0e7;border-radius:999px;box-shadow:0 4px 12px rgba(35,55,75,.08);font-size:9.5px;font-weight:700;color:var(--a365-gray-800);white-space:nowrap}
+    .a365hq-button-row{position:relative;z-index:8;display:grid;grid-template-columns:1.18fr .9fr .96fr;gap:8px;width:100%;margin-top:13px}
+    .a365hq-btn{min-width:0;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:7px;padding:0 8px;font-size:var(--a365hq-type-button);line-height:1;font-weight:700;border:1.2px solid transparent;transition:transform .16s ease,box-shadow .16s ease;background:#fff;white-space:nowrap;text-decoration:none}
+    .a365hq-btn svg{width:15px;height:15px;flex:0 0 15px}
+    .a365hq-btn:hover{transform:translateY(-1px)}
+    .a365hq-btn-primary{background:var(--a365hq-brand);color:#fff;box-shadow:0 7px 15px rgba(239,35,38,.13)}
+    .a365hq-btn-zalo{color:var(--a365hq-info);border-color:#3c86da}
+    .a365hq-btn-map{color:var(--a365hq-brand);border-color:#f27375}
+    .a365hq-fact-row{position:relative;z-index:10;display:grid;grid-template-columns:1.02fr 1.25fr 1.32fr .78fr;align-items:center;height:44px;margin-top:18px;min-width:0}
+    .a365hq-fact-item{height:100%;display:flex;align-items:center;gap:6px;padding-right:5px;min-width:0}
+    .a365hq-fact-item+.a365hq-fact-item{border-left:1px solid var(--a365hq-border-subtle);padding-left:7px}
+    .a365hq-fact-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 28px;background:#fff0f0;color:var(--a365hq-brand)}
+    .a365hq-fact-icon svg{width:13px;height:13px}
+    .a365hq-fact-item>span:last-child{min-width:0}
+    .a365hq-fact-title{display:block;font-size:var(--a365hq-type-card-title);line-height:1.08;font-weight:700;color:#26313d;white-space:nowrap}
+    .a365hq-fact-text{display:block;margin-top:2px;font-size:var(--a365hq-type-meta);line-height:1.08;color:#68788c;white-space:nowrap;letter-spacing:-.012em}
+    .a365hq-right-card{padding:0}
+    .a365hq-right-card .a365hq-card-inner{padding:0;height:100%}
+    .a365hq-nr-panel{position:relative;height:100%;min-width:0}
+    .a365hq-nr-branch-coverage{padding:18px 20px 16px}
+    .a365hq-nr-eyebrow{display:flex;align-items:center;gap:10px;margin:0;color:var(--a365hq-brand);font-size:var(--a365hq-type-label);line-height:1;font-weight:700;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
+    .a365hq-nr-eyebrow--rule::after{content:"";width:36px;height:1.5px;background:currentColor;border-radius:999px;opacity:.9}
+    .a365hq-nr-section-title{margin:16px 0 0;color:var(--a365hq-text-primary);font-weight:700;letter-spacing:-.032em}
+    .a365hq-nr-branch-scale{font-size:var(--a365hq-type-section);line-height:1.02;white-space:nowrap;padding-right:88px}
+    .a365hq-nr-branch-scale-hl{color:var(--a365hq-brand)}
+    .a365hq-nr-branch-vn{position:absolute;top:13px;right:18px;display:flex;align-items:flex-start;gap:6px;color:#f1a0a4}
+    .a365hq-nr-branch-vn-note{padding-top:1px;color:var(--a365hq-brand);font-size:8.2px;line-height:1.13;font-weight:700;font-style:italic;text-align:right;white-space:nowrap}
+    .a365hq-nr-branch-vn>svg{width:24px;height:52px;flex:0 0 24px;shape-rendering:geometricPrecision}
+    .a365hq-nr-branch-regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:25px}
+    .a365hq-nr-branch-region{position:relative;display:grid;grid-template-rows:auto 1fr auto auto;min-width:0;height:112px;padding:12px 11px 11px;border:1px solid var(--a365hq-border-subtle);border-radius:11px;transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease;text-decoration:none}
+    .a365hq-nr-branch-region:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(35,55,75,.055)}
+    .a365hq-nr-branch-region--1{color:var(--a365hq-brand);background:linear-gradient(180deg,#fffafa 0%,#fffdfd 100%)}
+    .a365hq-nr-branch-region--2{color:var(--a365hq-info);background:linear-gradient(180deg,#f9fcff 0%,#fdfefe 100%)}
+    .a365hq-nr-branch-region--3{color:var(--a365hq-success);background:linear-gradient(180deg,#f8fdf9 0%,#fcfffd 100%)}
+    .a365hq-nr-branch-region-index{font-size:9.5px;line-height:1;font-weight:700;opacity:.38}
+    .a365hq-nr-branch-region-art{position:absolute;top:11px;right:11px;width:29px;height:29px;shape-rendering:geometricPrecision}
+    .a365hq-nr-branch-region-name{grid-row:3;font-size:9.9px;line-height:1;font-weight:700;color:#667586;letter-spacing:.012em;white-space:nowrap}
+    .a365hq-nr-branch-region-count{grid-row:4;margin-top:6px;font-size:var(--a365hq-type-count);line-height:1;font-weight:700;white-space:nowrap;color:var(--a365hq-text-primary)}
+    .a365hq-nr-btn{display:flex;align-items:center;justify-content:center;text-decoration:none}
+    .a365hq-nr-branch-all{height:44px;margin-top:14px;border:1px solid #d8e0e7;border-radius:10px;gap:9px;padding:0 12px;font-size:var(--a365hq-type-button);line-height:1;font-weight:700;background:#fff;color:#26313c;white-space:nowrap}
+    .a365hq-nr-branch-all .a365hq-nr-svg{width:15px;height:15px;flex:0 0 15px}
+    @container (max-width:600px){
+      .a365hq-left-content{width:78%}
+      .a365hq-map-badge{right:16px}
+      .a365hq-fact-row{grid-template-columns:1fr 1.22fr 1.24fr .76fr}
+    }
+    @media(max-width:1060px){
+      .a365hq-branch-grid{grid-template-columns:1fr;max-width:760px}
+      .a365hq-card{min-height:318px}
+      .a365hq-left-content{width:70%}
+    }
+    @media(max-width:680px){
+      .a365hq-branch-grid{gap:12px}
+      .a365hq-card{min-height:0;border-radius:14px}
+      .a365hq-card-inner{padding:18px 15px}.a365hq-right-card .a365hq-card-inner{padding:0}
+      .a365hq-left-map-bg{width:100%;height:220px;opacity:.52}
+      .a365hq-left-map-bg::before{background:linear-gradient(180deg,rgba(255,255,255,.18),#fff 94%)}
+      .a365hq-left-content{width:100%}
+      .a365hq-headline{font-size:clamp(1.55rem,7vw,1.8rem);max-width:100%}
+      .a365hq-desc{font-size:12px;max-width:100%}
+      .a365hq-map-badge{top:188px;right:15px;font-size:9px}
+      .a365hq-button-row{grid-template-columns:1fr;margin-top:16px}
+      .a365hq-btn{height:44px;font-size:12px}
+      .a365hq-fact-row{grid-template-columns:1fr 1fr;height:auto;margin-top:16px}
+      .a365hq-fact-item{padding:10px 7px}
+      .a365hq-fact-item+.a365hq-fact-item{border-left:0}
+      .a365hq-fact-item:nth-child(even){border-left:1px solid var(--a365hq-border-subtle)}
+      .a365hq-fact-item:nth-child(n+3){border-top:1px solid var(--a365hq-border-subtle)}
+      .a365hq-fact-icon{width:30px;height:30px;flex-basis:30px}
+      .a365hq-fact-title{font-size:10.5px}.a365hq-fact-text{font-size:9px}
+      .a365hq-nr-branch-coverage{padding:18px 15px}
+      .a365hq-nr-branch-scale{font-size:clamp(1.4rem,6.4vw,1.7rem);white-space:normal;margin-top:14px;padding-right:72px}
+      .a365hq-nr-branch-vn{top:13px;right:14px}.a365hq-nr-branch-vn-note{font-size:8px}.a365hq-nr-branch-vn>svg{width:22px;height:48px}
+      .a365hq-nr-branch-regions{grid-template-columns:1fr;margin-top:16px}
+      .a365hq-nr-branch-region{height:90px}
+      .a365hq-nr-branch-region-art{width:27px;height:27px}
+      .a365hq-nr-branch-all{height:44px;margin-top:12px;font-size:11.5px}
+    }
+    @media(max-width:420px){
+      .a365hq-headline .a365hq-red{max-width:290px}
+      .a365hq-fact-row{grid-template-columns:1fr}
+      .a365hq-fact-item:nth-child(even){border-left:0}
+      .a365hq-fact-item+.a365hq-fact-item{border-top:1px solid var(--a365hq-border-subtle)}
+    }
   </style>
 </head>
-<body data-code="50" data-status="production-candidate" data-last-reviewed="2026-09-16">
+<body data-code="50">
   <a class="skip-link" href="#noi-dung">Bỏ qua đến nội dung chính</a>
   <div class="demo-bar ">Bản xem trước thông tin dịch vụ · Giá và cấu hình xác nhận theo xe</div>
   <header class="brandbar">
@@ -1152,7 +1265,7 @@
         <div class="trust-item"><strong>Kiểm tra thiết bị sau dán</strong><span>Kiểm tra GPS, ETC/VETC, camera và HUD theo từng xe.</span></div>
       </div>
       <section class="section" id="phu-hop" aria-labelledby="position-title"><div class="section-kicker">Bản đồ vị trí kính</div><h2 id="position-title">CR BLK 50 nên được cân nhắc ở đâu?</h2><p class="lede">Đây là gợi ý tư vấn Auto365 dựa trên VLT và bối cảnh sử dụng, không phải chỉ định vị trí kính của 3M. Mỗi xe vẫn phải kiểm tra kính nguyên bản.</p><div class="position-grid"><article class="position-card yes"><span class="state">Cân bằng</span><h3>Kính lái</h3><p>Gợi ý phổ biến khi cần dung hòa tầm nhìn, giảm chói và hiệu năng.</p></article><article class="position-card yes"><span class="state">Sáng</span><h3>Kính sườn trước</h3><p>Phù hợp người ưu tiên quan sát bên hông, ít cần riêng tư.</p></article><article class="position-card caution"><span class="state">Ít riêng tư</span><h3>Kính sườn sau</h3><p>Có thể làm khoang sau sáng hơn mong muốn; so sánh với 35/15.</p></article><article class="position-card caution"><span class="state">Theo nhu cầu</span><h3>Kính lưng</h3><p>Ưu tiên quan sát hơn riêng tư; kiểm tra kính nền và camera.</p></article></div></section>
-      <section class="section" id="thong-so" aria-labelledby="data-title"><div class="section-kicker">Dữ liệu theo điều kiện kính</div><h2 id="data-title">Thông số 3M CR BLK 50 theo từng loại kính tham chiếu</h2><p class="lede">Không dùng một con số VLT để dự đoán chắc chắn mọi xe. Chuyển làn để xem dữ liệu 3M trên hai loại kính tham chiếu.</p><div class="data-toolbar"><div class="lane-buttons" role="group" aria-label="Mã phim CR BLK" data-code-buttons><button class="lane-btn active" type="button" data-code="50" aria-pressed="true">CR BLK 50</button></div></div><div class="data-toolbar"><div class="lane-buttons" role="group" aria-label="Điều kiện kính" data-lane-buttons><button class="lane-btn active" type="button" data-lane="auto" aria-pressed="true">Auto 75 Glass</button><button class="lane-btn" type="button" data-lane="clear" aria-pressed="false">Kính trong 6 mm</button></div><span class="data-note">3M TDS Revision F · August 2025</span></div><div class="metric-grid" data-metric-grid></div><div class="table-wrap"><table class="spec-table"><thead><tr><th>Điều kiện kính</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th><th>VLR ngoài / trong</th></tr></thead><tbody data-spec-tbody></tbody></table></div><p class="fit-note">Mã CR BLK 15 chưa có trong bản TDS 3M Revision F đang dẫn nguồn ở trang này nên chưa đưa vào so sánh.</p><div class="definition-grid"><div class="definition"><strong>TSER</strong>Tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Đây là chỉ số phù hợp để giải thích hiệu suất nhiệt tổng thể.</div><div class="definition"><strong>IRER</strong>Năng lượng hồng ngoại bị loại bỏ trong dải 780-2.500 nm, có tính phần hấp thụ rồi tái bức xạ vào xe.</div><div class="definition"><strong>IRR không phải TSER</strong>IRR đo dải 900-1.000 nm trên phim còn liner; không quy đổi IRR thành tỷ lệ loại bỏ tổng nhiệt.</div></div><div class="source-box"><strong>Điều kiện nguồn:</strong> Auto 75 là kính ô tô xanh dày 6 mm, VLT nền 73%; dữ liệu ước tính, thử theo ANSI/NFRC 200 và chỉ dùng tham khảo. Đây là gợi ý cấu hình Auto365, không phải tuyên bố phù hợp mặc định cho mọi kính lái. <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">Mở TDS 3M</a> · <a href="https://www.3m.com.vn/3M/vi_VN/p/d/b00016683/" target="_blank" rel="noopener">Trang 3M Việt Nam</a>.</div></section>
+      <section class="section" id="thong-so" aria-labelledby="data-title"><div class="section-kicker">Dữ liệu theo điều kiện kính</div><h2 id="data-title">Thông số 3M CR BLK 50 theo từng loại kính tham chiếu</h2><p class="lede">Không dùng một con số VLT để dự đoán chắc chắn mọi xe. Chuyển làn để xem dữ liệu 3M trên hai loại kính tham chiếu.</p><div class="data-toolbar"><div class="lane-buttons" role="group" aria-label="Điều kiện kính" data-lane-buttons><button class="lane-btn active" type="button" data-lane="auto" aria-pressed="true">Auto 75 Glass</button><button class="lane-btn" type="button" data-lane="clear" aria-pressed="false">Kính trong 6 mm</button></div><span class="data-note">3M TDS Revision F · August 2025</span></div><div class="metric-grid" data-metric-grid></div><div class="table-wrap"><table class="spec-table"><thead><tr><th>Điều kiện kính</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th><th>VLR ngoài / trong</th></tr></thead><tbody data-spec-tbody></tbody></table></div><p class="fit-note">Mã CR BLK 15 chưa có trong bản TDS 3M Revision F đang dẫn nguồn ở trang này nên chưa đưa vào so sánh.</p><div class="definition-grid"><div class="definition"><strong>TSER</strong>Tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Đây là chỉ số phù hợp để giải thích hiệu suất nhiệt tổng thể.</div><div class="definition"><strong>IRER</strong>Năng lượng hồng ngoại bị loại bỏ trong dải 780-2.500 nm, có tính phần hấp thụ rồi tái bức xạ vào xe.</div><div class="definition"><strong>IRR không phải TSER</strong>IRR đo dải 900-1.000 nm trên phim còn liner; không quy đổi IRR thành tỷ lệ loại bỏ tổng nhiệt.</div></div><div class="source-box"><strong>Điều kiện nguồn:</strong> Auto 75 là kính ô tô xanh dày 6 mm, VLT nền 73%; dữ liệu ước tính, thử theo ANSI/NFRC 200 và chỉ dùng tham khảo. Đây là gợi ý cấu hình Auto365, không phải tuyên bố phù hợp mặc định cho mọi kính lái. <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">Mở TDS 3M</a> · <a href="https://www.3m.com.vn/3M/vi_VN/p/d/b00016683/" target="_blank" rel="noopener">Trang 3M Việt Nam</a>.</div></section>
       <section class="section" id="so-sanh" aria-labelledby="decision-matrix-title">
         <div class="section-kicker">So sánh trước khi chốt mã</div>
         <h2 id="decision-matrix-title">Chọn CR BLK 40, 50 hay 60 theo nhu cầu</h2>
@@ -1214,7 +1327,7 @@
 
       <section class="section" aria-labelledby="case-title">
         <div class="section-kicker">Bài xe thực tế</div>
-        <h2 id="case-title">12 bài xe thực tế để tham khảo cấu hình CR BLK 50 tại Auto365</h2>
+        <h2 id="case-title">12 xe thi công dán phim cách nhiệt tại Auto365</h2>
         <p class="lede">Xem các bài xe có liên quan đến lựa chọn CR BLK 50 trên nhiều dòng xe. Mỗi bài được giữ theo mức thông tin công khai; cấu hình và mã phim cho xe của bạn cần được xác nhận riêng trước khi thi công.</p>
         <div class="case-grid">
           <article class="case-card"><span class="case-tag">VinFast</span><h3>VF 6</h3><p>Dán riêng CR BLK 50 cho kính lái, tập trung vào độ truyền sáng và kiểm tra kính trước khi thi công.</p><div class="case-meta"><span>CR BLK 50 · kính lái</span><span>Xe điện · CUV</span></div><a href="https://auto365.vn/vinfast-vf-6-dan-3m-cr-blk-50-kinh-lai">Xem bài xe VF 6 →</a></article>
@@ -1260,15 +1373,7 @@
           </div>
         </div>
       </section>
-      <section class="section" aria-labelledby="limits-title">
-        <div class="section-kicker">Phạm vi cần biết</div>
-        <h2 id="limits-title">Những điều CR BLK 50 không thể đảm bảo thay cho phép đo thực tế</h2>
-        <div class="limits-list">
-          <div><strong>Không cùng độ sáng trên mọi xe</strong>VLT sau dán phụ thuộc kính nguyên bản, cấu hình kính và điều kiện đo.</div>
-          <div><strong>Không đồng nghĩa cản 56% nhiệt mọi lúc</strong>TSER là dữ liệu tham chiếu của hệ phim–kính, không phải nhiệt độ cabin.</div>
-          <div><strong>Không mặc định thiết bị giống nhau</strong>GPS, ETC/VETC, camera, HUD và cảm nhận chói cần được kiểm tra theo từng xe.</div>
-          <div><strong>Không thay thế tư vấn kỹ thuật</strong>Người lái thường xuyên đi đêm nên xem mẫu trực tiếp và thử tầm nhìn trước khi chốt.</div>
-        </div>
+      <section class="section" aria-label="Kiểm tra xe thực tế">
         <div class="funnel-cta"><p>Đang phân vân giữa CR BLK 50 và 60?</p><a class="btn btn-primary" href="#fit-title">Kiểm tra xe thực tế</a></div>
       </section>
       <section class="section" id="faq" aria-labelledby="faq-title">
@@ -1337,12 +1442,11 @@
       "60":{auto:{vlt:57,tser:54,irer:67,irr:97,uv:"99,9",glare:22,vlrOut:7,vlrIn:7},clear:{vlt:69,tser:49,irer:68,irr:97,uv:"99,8",glare:22,vlrOut:8,vlrIn:9}}
     };
     var LANE_LABEL={auto:"Auto 75 · kính nền 73%",clear:"Kính trong 6 mm · nền 89%"};
-    var codeButtons=document.querySelectorAll("[data-code-buttons] [data-code]");
     var laneButtonsSpec=document.querySelectorAll("[data-lane-buttons] [data-lane]");
     var metricGrid=document.querySelector("[data-metric-grid]");
     var specTbody=document.querySelector("[data-spec-tbody]");
     var dataTitle=document.getElementById("data-title");
-    if(codeButtons.length&&laneButtonsSpec.length&&metricGrid&&specTbody){
+    if(laneButtonsSpec.length&&metricGrid&&specTbody){
       var currentCode="50",currentLane="auto";
       var renderSpec=function(){
         var d=FILM_DATA[currentCode][currentLane];
@@ -1359,13 +1463,6 @@
         }).join("");
         if(dataTitle){dataTitle.textContent="Thông số 3M CR BLK "+currentCode+" theo từng loại kính tham chiếu";}
       };
-      codeButtons.forEach(function(button){
-        button.addEventListener("click",function(){
-          currentCode=button.getAttribute("data-code");
-          codeButtons.forEach(function(item){item.classList.toggle("active",item===button);item.setAttribute("aria-pressed",String(item===button));});
-          renderSpec();
-        });
-      });
       laneButtonsSpec.forEach(function(button){
         button.addEventListener("click",function(){
           currentLane=button.getAttribute("data-lane");
@@ -1422,7 +1519,7 @@
       var caseHeading=document.createElement('div');
       caseHeading.className='case-heading';
       caseKicker.textContent='Bài xe thực tế';
-      caseTitle.textContent='12 bài xe thực tế để tham khảo cấu hình CR BLK 50 tại Auto365';
+      caseTitle.textContent='12 xe thi công dán phim cách nhiệt tại Auto365';
       caseDescription.textContent='Xem các bài xe có liên quan đến lựa chọn CR BLK 50 trên nhiều dòng xe. Mỗi bài được giữ theo mức thông tin công khai; cấu hình và mã phim cho xe của bạn cần được xác nhận riêng trước khi thi công.';
       var caseCopy=document.createElement('div');
       caseCopy.appendChild(caseKicker);
@@ -1481,7 +1578,7 @@
           caseGrid.scrollTo({left:0,behavior:'smooth'});
         });
       });
-      caseSection.insertAdjacentHTML('afterend','<section class="service-locator system-experience system-compact" aria-labelledby="locator-title"><article class="system-panel"><p class="system-eyebrow">Hệ thống Auto365</p><h2 id="locator-title">Tìm điểm Auto365 phù hợp gần bạn</h2><div class="compact-actions"><a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener">Nhắn Zalo</a><a href="tel:+84365365365">Gọi 0365 365 365</a><a href="https://auto365.vn/lien-he">Gửi thông tin tư vấn</a></div></article><article class="system-panel"><p class="system-eyebrow">Phủ sóng toàn quốc</p><div class="compact-title-row"><h2>91 điểm · 33 tỉnh thành</h2><a href="https://auto365.vn/lien-he">Xem toàn bộ hệ thống Auto365 →</a></div><div class="region-grid"><div class="region-card"><span>MIỀN BẮC</span><strong>41 điểm</strong></div><div class="region-card"><span>MIỀN TRUNG</span><strong>26 điểm</strong></div><div class="region-card"><span>MIỀN NAM</span><strong>24 điểm</strong></div></div></article></section>');
+      caseSection.insertAdjacentHTML('afterend','<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><symbol id="a365hq-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol><symbol id="a365hq-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="a365hq-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="12" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></symbol><symbol id="a365hq-i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><!-- Branch coverage illustration system --><symbol id="a365hq-il-khue-van-cac" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/><path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"/></g></symbol><symbol id="a365hq-il-cau" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/><path d="M9 36.5h30"/></g></symbol><symbol id="a365hq-il-cao-oc" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/><path d="M28 11h10"/></g></symbol><symbol id="a365hq-il-vn" viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></symbol></svg><section class="a365hq-shell service-locator" aria-label="Hệ thống Auto365"><section class="a365hq-branch-grid" aria-label="Auto365 Trụ Sở Chính và hệ thống chi nhánh"><article class="a365hq-card a365hq-left-card"><div class="a365hq-left-map-bg" aria-hidden="true"><svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="a365hq-mapbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset="1" stop-color="#edf5fa"/></linearGradient><filter id="a365hq-pinshadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#ef2326" flood-opacity=".22"/></filter></defs><rect width="560" height="420" fill="url(#a365hq-mapbg)"/><path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"/><path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"/><path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"/><path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"/><path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"/><path d="M55 244c66-7 103-25 150-31 52-6 113 19 173 14 52-4 89-24 144-47" fill="none" stroke="#d9dde2" stroke-width="5" stroke-linecap="round"/><path d="M40 115c54 17 97 12 145-5 57-20 104-14 151 3 59 21 113 17 180-6" fill="none" stroke="#e2e6ea" stroke-width="5" stroke-linecap="round"/><rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"/><path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#ef2326" filter="url(#a365hq-pinshadow)"/><circle cx="363" cy="113" r="16" fill="#fff"/><path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"/><circle cx="464" cy="85" r="7" fill="#fff"/><path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"/><circle cx="250" cy="135" r="7" fill="#fff"/></svg></div><div class="a365hq-card-inner"><div class="a365hq-left-content"><p class="a365hq-eyebrow">AUTO365 TRỤ SỞ CHÍNH</p><h2 class="a365hq-headline"><span class="a365hq-headline-line">Kết nối nhanh với</span><span class="a365hq-red">Auto365 Trụ Sở Chính</span></h2><p class="a365hq-desc">Liên hệ để được tư vấn dịch vụ, đặt lịch hoặc hỗ trợ kỹ thuật. Có thể gọi trực tiếp, nhắn Zalo hoặc mở Google Maps để xem đường đi.</p></div><span class="a365hq-map-badge">Auto365 Trụ Sở Chính</span><div class="a365hq-button-row"><a class="a365hq-btn a365hq-btn-primary" href="tel:+84365365365"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg>Gọi 0365 365 365</a><a class="a365hq-btn a365hq-btn-zalo" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-zalo"/></svg>Zalo tư vấn</a><a class="a365hq-btn a365hq-btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg>Google Maps</a></div><div class="a365hq-fact-row"><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-chat"/></svg></span><span><span class="a365hq-fact-title">Tư vấn nhanh</span><span class="a365hq-fact-text">Qua hotline hoặc Zalo</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-building"/></svg></span><span><span class="a365hq-fact-title">Trụ Sở Chính</span><span class="a365hq-fact-text">Phường Hiệp Bình, TP.HCM</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg></span><span><span class="a365hq-fact-title">Chỉ đường</span><span class="a365hq-fact-text">Mở trực tiếp Google Maps</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg></span><span><span class="a365hq-fact-title">Hotline</span><span class="a365hq-fact-text">0365 365 365</span></span></div></div></div></article><article class="a365hq-card a365hq-right-card"><div class="a365hq-card-inner"><div class="a365hq-nr-panel a365hq-nr-branch-coverage"><p class="a365hq-nr-eyebrow a365hq-nr-eyebrow--rule">PHỦ SÓNG TOÀN QUỐC</p><h3 class="a365hq-nr-section-title a365hq-nr-branch-scale"><span class="a365hq-nr-branch-scale-hl">91 chi nhánh</span> · 33 tỉnh thành </h3><span class="a365hq-nr-branch-vn" aria-hidden="true"><span class="a365hq-nr-branch-vn-note">Auto365 có mặt<br>khắp Việt Nam</span><svg viewBox="0 0 44 100"><use href="#a365hq-il-vn"></use></svg></span><div class="a365hq-nr-branch-regions"><a class="a365hq-nr-branch-region a365hq-nr-branch-region--1" href="https://auto365.vn/chi-nhanh?mien=bac"><span class="a365hq-nr-branch-region-index">01</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-khue-van-cac"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN BẮC</span><span class="a365hq-nr-branch-region-count">41 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--2" href="https://auto365.vn/chi-nhanh?mien=trung"><span class="a365hq-nr-branch-region-index">02</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cau"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN TRUNG</span><span class="a365hq-nr-branch-region-count">26 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--3" href="https://auto365.vn/chi-nhanh?mien=nam"><span class="a365hq-nr-branch-region-index">03</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cao-oc"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN NAM</span><span class="a365hq-nr-branch-region-count">24 điểm</span></a></div><a class="a365hq-nr-btn a365hq-nr-branch-all" href="https://auto365.vn/chi-nhanh"> Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="a365hq-nr-svg" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></article></section></section>');
     }
     var compareSection=document.querySelector('#so-sanh');
     var serviceLocator=document.querySelector('.service-locator');
