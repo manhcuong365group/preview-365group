@@ -768,9 +768,9 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <nav class="hub-toc" aria-label="Mục lục điều hướng">
 <div class="wrap">
 <span class="hub-toc-label">Nội dung chính:</span>
+<a href="#catalog">81 Model &amp; Bảng giá</a>
 <a href="#nhu-cau">5 Nhu cầu xe</a>
 <a href="#so-sanh-nhanh">Bảng so sánh nhóm nhu cầu</a>
-<a href="#catalog">81 Model &amp; Bảng giá</a>
 <a href="#phan-khuc-gia">4 Phân khúc ngân sách</a>
 <a href="#tieu-chi-ky-thuat">Tiêu chí kỹ thuật (2K/4K, 4G, ADAS)</a>
 <a href="#case-thuc-te">20 Ca lắp thực tế</a>
@@ -870,6 +870,128 @@ h1{font-weight:700;letter-spacing:-2.2px}
 <p><a href="https://auto365.vn/camera-hanh-trinh-o-to">Mở danh mục camera hành trình Auto365</a></p>
 </section>
 </noscript>
+
+<!-- 3. CATALOGUE SẢN PHẨM -->
+<section class="catalog" id="catalog">
+<div class="wrap">
+<div class="blockhead">
+<div>
+<h2><span data-catalog-count>81</span> camera hành trình để bạn tham khảo và lựa chọn.</h2>
+</div>
+</div>
+<nav class="brand-hub-links" aria-label="Hub thương hiệu camera hành trình">
+<span>Khám phá theo thương hiệu:</span>
+<!-- Hub riêng 70mai/VIETMAP/BlackVue trả 404 trên production ngày 16/09/2026; dùng hub đã xác minh + lọc nội bộ để tránh link chết. -->
+<a href="https://auto365.vn/camera-hanh-trinh-o-to#catalog" data-jump-brand="70mai">70mai</a>
+<a href="https://auto365.vn/camera-hanh-trinh-o-to#catalog" data-jump-brand="vietmap">VIETMAP</a>
+<a href="https://auto365.vn/camera-hanh-trinh-o-to#catalog" data-jump-brand="blackvue">BlackVue</a>
+</nav>
+
+<!-- Mobile Filter Bar -->
+<div class="filter-mobile-bar">
+<div class="search-box">
+<input id="searchMobile" aria-label="Tìm sản phẩm hoặc thương hiệu" placeholder="Tìm tên sản phẩm hoặc thương hiệu...">
+</div>
+<select id="mobileBrandFilter" aria-label="Lọc theo thương hiệu">
+<option value="all">Thương hiệu</option>
+<option value="70mai">70mai</option><option value="vietmap">VIETMAP</option><option value="blackvue">BlackVue</option><option value="ddpai">DDPAI</option><option value="thinkware">Thinkware</option><option value="ellicam">Ellicam</option><option value="utour">UTOUR</option><option value="other">Hãng khác</option>
+</select>
+<select id="mobileChannelFilter" aria-label="Lọc theo số kênh">
+<option value="all">Số kênh ghi</option><option value="1">1 kênh · phía trước</option><option value="2">2 kênh · trước + sau</option><option value="3">3 kênh · có cabin</option>
+</select>
+<select id="mobilePriceFilter" aria-label="Lọc theo mức giá">
+<option value="all">Mức giá</option><option value="low">Dưới 2 triệu</option><option value="mid">2 – 5 triệu</option><option value="high">5 – 10 triệu</option><option value="premium">Trên 10 triệu</option>
+</select>
+<select id="mobileFeatureFilter" aria-label="Lọc theo tính năng">
+<option value="all">Tính năng</option><option value="4k">Độ phân giải 4K</option><option value="parking">Chế độ đỗ xe</option><option value="gps">GPS</option><option value="warning">Cảnh báo giao thông</option><option value="lte">Giám sát từ xa</option>
+</select>
+<select id="filterSortMobile" aria-label="Sắp xếp giá">
+<option value="default">Sắp xếp mặc định</option>
+<option value="price-asc">Giá tăng</option>
+<option value="price-desc">Giá giảm</option>
+</select>
+<button type="button" class="filter-mobile-btn" id="openMobileFilter" aria-label="Mở bộ lọc chi tiết">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
+<span>Lọc chi tiết</span>
+<span class="badge-count" id="mobileFilterBadge" style="display:none">0</span>
+</button>
+</div>
+
+<div class="catalog-shell">
+<!-- Desktop Sidebar Filters -->
+<aside class="filters" aria-label="Bộ lọc sản phẩm">
+<div class="filter-head">
+<b>Bộ lọc</b>
+<button type="button" class="filter-clear" id="filterClear">Xóa tất cả</button>
+</div>
+
+<div class="filter-group" style="border-top:0;padding-top:0;margin-top:14px">
+<div class="filter-title">TÌM MODEL</div>
+<input id="search" aria-label="Tìm model camera" placeholder="VD: A810, M310..." style="width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:9px 10px;font:11.5px Arial;background:#fff">
+</div>
+
+<div class="filter-group">
+<div class="filter-title">THƯƠNG HIỆU</div>
+<div class="filter-options col-2">
+<label class="check"><input type="checkbox" name="brand" value="70mai"><span>70mai</span></label>
+<label class="check"><input type="checkbox" name="brand" value="vietmap"><span>VIETMAP</span></label>
+<label class="check"><input type="checkbox" name="brand" value="blackvue"><span>BlackVue</span></label>
+<label class="check"><input type="checkbox" name="brand" value="ddpai"><span>DDPAI</span></label>
+<label class="check"><input type="checkbox" name="brand" value="thinkware"><span>Thinkware</span></label>
+<label class="check"><input type="checkbox" name="brand" value="ellicam"><span>Ellicam</span></label>
+<label class="check"><input type="checkbox" name="brand" value="utour"><span>UTOUR</span></label>
+<label class="check"><input type="checkbox" name="brand" value="other"><span>Khác</span></label>
+</div>
+</div>
+
+<div class="filter-group">
+<div class="filter-title">SỐ KÊNH GHI</div>
+<div class="filter-options">
+<label class="check"><input type="checkbox" name="channel" value="1"><span>1 kênh (phía trước)</span></label>
+<label class="check"><input type="checkbox" name="channel" value="2"><span>2 kênh (trước + sau)</span></label>
+<label class="check"><input type="checkbox" name="channel" value="3"><span>3 kênh (trước + sau + cabin)</span></label>
+</div>
+</div>
+
+<div class="filter-group">
+<div class="filter-title">MỨC GIÁ</div>
+<div class="filter-options">
+<label class="check"><input type="checkbox" name="price" value="low"><span>Dưới 2 triệu</span></label>
+<label class="check"><input type="checkbox" name="price" value="mid"><span>2 – 5 triệu</span></label>
+<label class="check"><input type="checkbox" name="price" value="high"><span>5 – 10 triệu</span></label>
+<label class="check"><input type="checkbox" name="price" value="premium"><span>Trên 10 triệu</span></label>
+</div>
+</div>
+
+<div class="filter-group">
+<div class="filter-title">TÍNH NĂNG NỔI BẬT</div>
+<div class="filter-options">
+<label class="check"><input type="checkbox" name="feature" value="4k"><span>Độ phân giải 4K</span></label>
+<label class="check"><input type="checkbox" name="feature" value="parking"><span>Chế độ đỗ xe Parking</span></label>
+<label class="check"><input type="checkbox" name="feature" value="gps"><span>GPS ghi tốc độ và hành trình</span></label>
+<label class="check"><input type="checkbox" name="feature" value="warning"><span>Cảnh báo giao thông/tốc độ</span></label>
+<label class="check"><input type="checkbox" name="feature" value="lte"><span>Giám sát từ xa (4G/LTE)</span></label>
+</div>
+</div>
+
+</aside>
+
+<div class="catalog-main">
+<div class="catalog-note">
+<div><strong id="resultCount">81 sản phẩm</strong><div class="filter-chips" id="activeFilterChips"></div></div>
+<span><!-- BUNDLE_PRICE_NOTE -->Giá tham khảo cấu hình cơ bản, chưa gồm thẻ nhớ, bộ nguồn &amp; công lắp. Giá và tình trạng sản phẩm có thể thay đổi theo thời điểm.</span>
+</div>
+<p class="catalog-provenance">Nguồn dữ liệu: danh mục và PDP Auto365; thông số có liên kết nguồn hãng khi đã xác minh. Ngày kiểm tra catalog: 15/09/2026. “Liên hệ” hoặc “cần xác nhận” nghĩa là Auto365 chưa công khai giá/cấu hình cố định cho phiên bản đó.</p>
+<div class="grid" id="productGrid" aria-live="polite"></div>
+<div class="pager" id="pager"></div>
+<div class="comparebar near-catalog" id="comparebar">
+<span id="compareText">Đã chọn 0/2 mẫu</span>
+<a href="#catalog" id="clearCompare">Bỏ chọn</a>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 <!-- 2A. 5 NHÓM NHU CẦU XE THỰC TẾ -->
 <section class="needs-section" id="nhu-cau">
@@ -1081,127 +1203,6 @@ Khe SIM 4G LTE trực tiếp hoặc Module 4G Hardwire Kit · Hạ tầng Cloud 
 </div>
 </section>
 
-<!-- 3. CATALOGUE SẢN PHẨM -->
-<section class="catalog" id="catalog">
-<div class="wrap">
-<div class="blockhead">
-<div>
-<h2><span data-catalog-count>81</span> camera hành trình để bạn tham khảo và lựa chọn.</h2>
-</div>
-</div>
-<nav class="brand-hub-links" aria-label="Hub thương hiệu camera hành trình">
-<span>Khám phá theo thương hiệu:</span>
-<!-- Hub riêng 70mai/VIETMAP/BlackVue trả 404 trên production ngày 16/09/2026; dùng hub đã xác minh + lọc nội bộ để tránh link chết. -->
-<a href="https://auto365.vn/camera-hanh-trinh-o-to#catalog" data-jump-brand="70mai">70mai</a>
-<a href="https://auto365.vn/camera-hanh-trinh-o-to#catalog" data-jump-brand="vietmap">VIETMAP</a>
-<a href="https://auto365.vn/camera-hanh-trinh-o-to#catalog" data-jump-brand="blackvue">BlackVue</a>
-</nav>
-
-<!-- Mobile Filter Bar -->
-<div class="filter-mobile-bar">
-<div class="search-box">
-<input id="searchMobile" aria-label="Tìm sản phẩm hoặc thương hiệu" placeholder="Tìm tên sản phẩm hoặc thương hiệu...">
-</div>
-<select id="mobileBrandFilter" aria-label="Lọc theo thương hiệu">
-<option value="all">Thương hiệu</option>
-<option value="70mai">70mai</option><option value="vietmap">VIETMAP</option><option value="blackvue">BlackVue</option><option value="ddpai">DDPAI</option><option value="thinkware">Thinkware</option><option value="ellicam">Ellicam</option><option value="utour">UTOUR</option><option value="other">Hãng khác</option>
-</select>
-<select id="mobileChannelFilter" aria-label="Lọc theo số kênh">
-<option value="all">Số kênh ghi</option><option value="1">1 kênh · phía trước</option><option value="2">2 kênh · trước + sau</option><option value="3">3 kênh · có cabin</option>
-</select>
-<select id="mobilePriceFilter" aria-label="Lọc theo mức giá">
-<option value="all">Mức giá</option><option value="low">Dưới 2 triệu</option><option value="mid">2 – 5 triệu</option><option value="high">5 – 10 triệu</option><option value="premium">Trên 10 triệu</option>
-</select>
-<select id="mobileFeatureFilter" aria-label="Lọc theo tính năng">
-<option value="all">Tính năng</option><option value="4k">Độ phân giải 4K</option><option value="parking">Chế độ đỗ xe</option><option value="gps">GPS</option><option value="warning">Cảnh báo giao thông</option><option value="lte">Giám sát từ xa</option>
-</select>
-<select id="filterSortMobile" aria-label="Sắp xếp giá">
-<option value="default">Sắp xếp mặc định</option>
-<option value="price-asc">Giá tăng</option>
-<option value="price-desc">Giá giảm</option>
-</select>
-<button type="button" class="filter-mobile-btn" id="openMobileFilter" aria-label="Mở bộ lọc chi tiết">
-<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
-<span>Lọc chi tiết</span>
-<span class="badge-count" id="mobileFilterBadge" style="display:none">0</span>
-</button>
-</div>
-
-<div class="catalog-shell">
-<!-- Desktop Sidebar Filters -->
-<aside class="filters" aria-label="Bộ lọc sản phẩm">
-<div class="filter-head">
-<b>Bộ lọc</b>
-<button type="button" class="filter-clear" id="filterClear">Xóa tất cả</button>
-</div>
-
-<div class="filter-group" style="border-top:0;padding-top:0;margin-top:14px">
-<div class="filter-title">TÌM MODEL</div>
-<input id="search" aria-label="Tìm model camera" placeholder="VD: A810, M310..." style="width:100%;box-sizing:border-box;border:1px solid var(--line);border-radius:8px;padding:9px 10px;font:11.5px Arial;background:#fff">
-</div>
-
-<div class="filter-group">
-<div class="filter-title">THƯƠNG HIỆU</div>
-<div class="filter-options col-2">
-<label class="check"><input type="checkbox" name="brand" value="70mai"><span>70mai</span></label>
-<label class="check"><input type="checkbox" name="brand" value="vietmap"><span>VIETMAP</span></label>
-<label class="check"><input type="checkbox" name="brand" value="blackvue"><span>BlackVue</span></label>
-<label class="check"><input type="checkbox" name="brand" value="ddpai"><span>DDPAI</span></label>
-<label class="check"><input type="checkbox" name="brand" value="thinkware"><span>Thinkware</span></label>
-<label class="check"><input type="checkbox" name="brand" value="ellicam"><span>Ellicam</span></label>
-<label class="check"><input type="checkbox" name="brand" value="utour"><span>UTOUR</span></label>
-<label class="check"><input type="checkbox" name="brand" value="other"><span>Khác</span></label>
-</div>
-</div>
-
-<div class="filter-group">
-<div class="filter-title">SỐ KÊNH GHI</div>
-<div class="filter-options">
-<label class="check"><input type="checkbox" name="channel" value="1"><span>1 kênh (phía trước)</span></label>
-<label class="check"><input type="checkbox" name="channel" value="2"><span>2 kênh (trước + sau)</span></label>
-<label class="check"><input type="checkbox" name="channel" value="3"><span>3 kênh (trước + sau + cabin)</span></label>
-</div>
-</div>
-
-<div class="filter-group">
-<div class="filter-title">MỨC GIÁ</div>
-<div class="filter-options">
-<label class="check"><input type="checkbox" name="price" value="low"><span>Dưới 2 triệu</span></label>
-<label class="check"><input type="checkbox" name="price" value="mid"><span>2 – 5 triệu</span></label>
-<label class="check"><input type="checkbox" name="price" value="high"><span>5 – 10 triệu</span></label>
-<label class="check"><input type="checkbox" name="price" value="premium"><span>Trên 10 triệu</span></label>
-</div>
-</div>
-
-<div class="filter-group">
-<div class="filter-title">TÍNH NĂNG NỔI BẬT</div>
-<div class="filter-options">
-<label class="check"><input type="checkbox" name="feature" value="4k"><span>Độ phân giải 4K</span></label>
-<label class="check"><input type="checkbox" name="feature" value="parking"><span>Chế độ đỗ xe Parking</span></label>
-<label class="check"><input type="checkbox" name="feature" value="gps"><span>GPS ghi tốc độ và hành trình</span></label>
-<label class="check"><input type="checkbox" name="feature" value="warning"><span>Cảnh báo giao thông/tốc độ</span></label>
-<label class="check"><input type="checkbox" name="feature" value="lte"><span>Giám sát từ xa (4G/LTE)</span></label>
-</div>
-</div>
-
-</aside>
-
-<div class="catalog-main">
-<div class="catalog-note">
-<div><strong id="resultCount">81 sản phẩm</strong><div class="filter-chips" id="activeFilterChips"></div></div>
-<span><!-- BUNDLE_PRICE_NOTE -->Giá tham khảo cấu hình cơ bản, chưa gồm thẻ nhớ, bộ nguồn &amp; công lắp. Giá và tình trạng sản phẩm có thể thay đổi theo thời điểm.</span>
-</div>
-<p class="catalog-provenance">Nguồn dữ liệu: danh mục và PDP Auto365; thông số có liên kết nguồn hãng khi đã xác minh. Ngày kiểm tra catalog: 15/09/2026. “Liên hệ” hoặc “cần xác nhận” nghĩa là Auto365 chưa công khai giá/cấu hình cố định cho phiên bản đó.</p>
-<div class="grid" id="productGrid" aria-live="polite"></div>
-<div class="pager" id="pager"></div>
-<div class="comparebar near-catalog" id="comparebar">
-<span id="compareText">Đã chọn 0/2 mẫu</span>
-<a href="#catalog" id="clearCompare">Bỏ chọn</a>
-</div>
-</div>
-</div>
-</div>
-</section>
 
 <!-- 3B. PHÂN KHÚC GIÁ & NGÂN SÁCH -->
 <section class="tiers-section" id="phan-khuc-gia">
