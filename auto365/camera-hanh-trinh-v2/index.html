@@ -128,8 +128,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .tier-features{border-top:1px solid var(--line);padding:10px 0;margin:0 0 12px;font-size:11.5px;color:#444}
 .tier-features ul{margin:0;padding-left:15px}
 .tier-features li{margin-bottom:4px}
-.tier-models{font-size:11.5px;color:#666;margin-bottom:16px}
-.tier-models b{color:var(--ink);display:block;margin-bottom:4px}
 .tier-cta{margin-top:auto;padding:10px;border:1px solid var(--line);border-radius:8px;background:#f8f8f7;color:var(--ink);font-weight:800;font-size:12px;text-align:center;cursor:pointer;transition:all .15s ease}
 .tier-cta:hover{background:var(--red);border-color:var(--red);color:#fff}
 .tier-card.tier-popular .tier-cta{background:var(--red);border-color:var(--red);color:#fff}
@@ -1226,10 +1224,6 @@ Khe SIM 4G LTE trực tiếp hoặc Module 4G Hardwire Kit · Hạ tầng Cloud 
 <li>Thiết kế nhỏ gọn, cắm tẩu hoặc nguồn giắc</li>
 </ul>
 </div>
-<div class="tier-models">
-<b>Model tiêu biểu:</b>
-DDPAI Mini (999k), 70mai M310 (1.190k), Ellicam A620 (1.320k), 70mai A210 (1.690k), Vietmap TS-C9P (1.890k)
-</div>
 <button type="button" class="tier-cta" data-jump-price="low">Lọc sản phẩm &lt; 2 triệu ↓</button>
 </article>
 
@@ -1247,10 +1241,6 @@ DDPAI Mini (999k), 70mai M310 (1.190k), Ellicam A620 (1.320k), 70mai A210 (1.690
 <li>Hỗ trợ Parking Mode và cảnh báo ADAS</li>
 </ul>
 </div>
-<div class="tier-models">
-<b>Model tiêu biểu:</b>
-70mai A500S (2.390k), 70mai A510 1 kênh (2.690k), Vietmap TS-2K Lite (2.990k), Vietmap C61 Pro (3.440k), 70mai T400 (3.590k), Vietmap KC01 (4.190k), 70mai 4K A810 (4.590k)
-</div>
 <button type="button" class="tier-cta" data-jump-price="mid">Lọc sản phẩm 2 – 5 triệu ↓</button>
 </article>
 
@@ -1267,10 +1257,6 @@ DDPAI Mini (999k), 70mai M310 (1.190k), Ellicam A620 (1.320k), 70mai A210 (1.690
 <li>Ống kính thủy tinh quang học cao cấp 7 lớp</li>
 </ul>
 </div>
-<div class="tier-models">
-<b>Model tiêu biểu:</b>
-Vietmap SpeedMap M1 (5.990k), UTOUR C2 MAX (6.900k), BlackVue DR590X-2CH (6.900k), Vietmap V740 (7.690k), 70mai T800 4K (7.900k), Vietmap SpeedMap M2 (7.990k)
-</div>
 <button type="button" class="tier-cta" data-jump-price="high">Lọc sản phẩm 5 – 10 triệu ↓</button>
 </article>
 
@@ -1286,10 +1272,6 @@ Vietmap SpeedMap M1 (5.990k), UTOUR C2 MAX (6.900k), BlackVue DR590X-2CH (6.900k
 <li>Giám sát tài xế DMS bằng trí tuệ nhân tạo</li>
 <li>Lưu trữ sự kiện tự động lên điện toán đám mây</li>
 </ul>
-</div>
-<div class="tier-models">
-<b>Model tiêu biểu:</b>
-BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH DMS Plus (16.900k)
 </div>
 <button type="button" class="tier-cta" data-jump-price="premium">Lọc sản phẩm &gt; 10 triệu ↓</button>
 </article>
@@ -2834,6 +2816,17 @@ document.querySelectorAll('[data-jump-brand]').forEach(link => link.addEventList
   const sm = document.querySelector('#searchMobile');
   if (sm) sm.value = state.search;
   render();
+}));
+
+// Jump to price tier from Price Tiers cards
+document.querySelectorAll('[data-jump-price]').forEach(btn => btn.addEventListener('click', () => {
+  const value = btn.dataset.jumpPrice;
+  state.prices.clear();
+  state.prices.add(value);
+  state.page = 1;
+  syncCheckboxes();
+  render();
+  document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
 }));
 
 // Configurator helper & logic
