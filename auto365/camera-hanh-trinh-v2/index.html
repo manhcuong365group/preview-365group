@@ -78,8 +78,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .needs-head{max-width:850px;margin-bottom:22px}
 .needs-head h2{font-size:28px;line-height:1.2;margin:0 0 10px}
 .needs-head p{color:#555;font-size:14px;line-height:1.6;margin:0}
-.needs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.need-card{border:1px solid #e7e4df;border-radius:14px;background:#fff;padding:22px;display:flex;flex-direction:column;box-shadow:0 4px 14px rgba(20,20,20,.03);transition:transform .2s ease,box-shadow .2s ease}
+.needs-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.need-card{flex:0 1 calc((100% - 28px)/3);border:1px solid #e7e4df;border-radius:14px;background:#fff;padding:22px;display:flex;flex-direction:column;box-shadow:0 4px 14px rgba(20,20,20,.03);transition:transform .2s ease,box-shadow .2s ease}
 .need-card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(20,20,20,.08)}
 .need-badge{display:inline-flex;align-self:flex-start;padding:4px 9px;border-radius:6px;background:#fbf2f2;color:var(--red);font-size:10.5px;font-weight:900;letter-spacing:.4px;margin-bottom:12px;text-transform:uppercase}
 .need-card h3{font-size:17px;margin:0 0 8px;line-height:1.3;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif}
@@ -593,7 +593,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .config-steps{grid-template-columns:repeat(2,1fr)}
   .decision-grid{grid-template-columns:repeat(2,1fr)}
   .branch-proof-grid{grid-template-columns:repeat(2,1fr)}
-  .needs-grid{grid-template-columns:repeat(2,1fr)}
+  .need-card{flex-basis:calc((100% - 14px)/2)}
   .tiers-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:850px){
