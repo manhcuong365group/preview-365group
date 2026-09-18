@@ -593,7 +593,6 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .config-steps{grid-template-columns:repeat(2,1fr)}
   .decision-grid{grid-template-columns:repeat(2,1fr)}
   .branch-proof-grid{grid-template-columns:repeat(2,1fr)}
-  .term-grid{grid-template-columns:repeat(2,1fr)}
   .needs-grid{grid-template-columns:repeat(2,1fr)}
   .tiers-grid{grid-template-columns:repeat(2,1fr)}
 }
@@ -648,7 +647,7 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .market-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:68%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
   .market-card{scroll-snap-align:start;min-width:0}
   .accordion{grid-template-columns:1fr!important}
-  .decision-grid,.branch-proof-grid,.benefit-grid,.locations{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
+  .decision-grid,.branch-proof-grid,.benefit-grid,.locations,.term-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
   .needs-grid,.tiers-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
   .needs-grid{grid-auto-columns:82%!important}
   .tiers-grid{display:grid!important;grid-auto-flow:row!important;grid-template-columns:1fr!important;grid-auto-columns:auto!important;overflow:visible!important;scroll-snap-type:none!important;margin:0!important;padding:0!important}
@@ -662,7 +661,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
   .review-grid{grid-template-columns:1fr}
   .benefit-grid{grid-auto-columns:75%!important}
   .locations{grid-auto-columns:75%!important}
-  .term-grid{grid-template-columns:1fr!important}
+  .term-grid{grid-auto-columns:82%!important}
+  .term{scroll-snap-align:start;min-width:0}
   .decision,.branch-proof,.benefit,.location{scroll-snap-align:start;min-width:0}
   .scroll-hint{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:700}
   .filter-mobile-bar{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
@@ -3098,7 +3098,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
 
 // Scroll hints trên mobile
 (function() {
-  document.querySelectorAll('.grid,.decision-grid,.branch-proof-grid,.flow-chain,.benefit-grid,.locations').forEach(el => {
+  document.querySelectorAll('.grid,.decision-grid,.branch-proof-grid,.flow-chain,.benefit-grid,.locations,.term-grid').forEach(el => {
     const hint = document.createElement('div');
     hint.className = 'scroll-hint';
     hint.textContent = 'Vuốt ngang để xem thêm →';
