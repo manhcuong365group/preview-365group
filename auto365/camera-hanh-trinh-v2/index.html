@@ -179,6 +179,8 @@ h1{font-weight:700;letter-spacing:-2.2px}
 .concept-top h2{font-size:22px;letter-spacing:-.6px;font-weight:700;margin:0 0 10px}
 .concept-top p{font-size:14px;line-height:1.65;color:#555;margin:0}
 .type-compare{margin-top:22px;overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff}
+.concept-top-terms-lead{margin:22px 0 0;font-size:14px;color:#555}
+.concept-top-terms{margin-top:12px}
 .quick-pick{padding:15px 0 3px}
 .quick-pick .type-compare{margin-top:0}
 .quick-pick-note{font-size:12px;color:var(--muted);margin:8px 0 0}
@@ -1489,6 +1491,21 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 </tbody>
 </table>
 </div>
+<p class="concept-top-terms-lead"><b>3 thuật ngữ cần biết trước khi chọn:</b> đọc nhanh để phân biệt đúng cấu hình và tính năng giữa các model.</p>
+<div class="term-grid concept-top-terms">
+<article class="term">
+<h3>Kênh ghi hình</h3>
+<p>Số camera ghi hình đồng thời. 1 kênh thường chỉ có camera trước; 2 kênh phổ biến là trước–sau nhưng cũng có cấu hình trước–cabin; 3 kênh thường ghi trước, sau và cabin. Kiểm tra đúng cấu hình của từng phiên bản trước khi chọn.</p>
+</article>
+<article class="term">
+<h3>Ghi vòng lặp (Loop recording)</h3>
+<p>Camera tự ghi đè video cũ nhất khi thẻ nhớ đầy, giúp ghi liên tục mà không cần xóa thẻ thủ công.</p>
+</article>
+<article class="term">
+<h3>HDR</h3>
+<p>Dải tương phản động rộng, giúp hình ảnh rõ hơn khi chênh sáng mạnh, ví dụ lúc ra khỏi hầm hoặc ngược nắng.</p>
+</article>
+</div>
 </div>
 </section>
 
@@ -2247,28 +2264,6 @@ BlackVue DR750X-2CH LTE Plus (11.400k), DR900X-2CH Plus 4K (12.400k), DR750X-3CH
 <img src="hinh/auto365vn-kiem-tra-camera-truoc-va-camera-sau-img_6aa10e1f2e4fd8.77381281.webp" alt="So sánh hiển thị camera trước và camera sau qua màn hình gương" loading="lazy" width="800" height="404" decoding="async">
 <img src="hinh/auto365vn-man-hinh-kiem-tra-3-kenh-70mai-t400-vf6-img_6a9fbbc5203342.07124701.webp" alt="Kiểm tra 3 góc camera trước, cabin, sau qua ứng dụng điện thoại" loading="lazy" width="800" height="404" decoding="async">
 </div></div>
-
-<!-- 14. THUẬT NGỮ CẦN BIẾT -->
-<section class="glossary" id="thuat-ngu">
-<div class="wrap">
-<h2>3 thuật ngữ cần biết trước khi chọn camera</h2>
-<p class="glossary-lead">Đọc nhanh để phân biệt đúng cấu hình và tính năng giữa các model.</p>
-<div class="term-grid">
-<article class="term">
-<h3>Kênh ghi hình</h3>
-<p>Số camera ghi hình đồng thời. 1 kênh thường chỉ có camera trước; 2 kênh phổ biến là trước–sau nhưng cũng có cấu hình trước–cabin; 3 kênh thường ghi trước, sau và cabin. Kiểm tra đúng cấu hình của từng phiên bản trước khi chọn.</p>
-</article>
-<article class="term">
-<h3>Ghi vòng lặp (Loop recording)</h3>
-<p>Camera tự ghi đè video cũ nhất khi thẻ nhớ đầy, giúp ghi liên tục mà không cần xóa thẻ thủ công.</p>
-</article>
-<article class="term">
-<h3>HDR</h3>
-<p>Dải tương phản động rộng, giúp hình ảnh rõ hơn khi chênh sáng mạnh, ví dụ lúc ra khỏi hầm hoặc ngược nắng.</p>
-</article>
-</div>
-</div>
-</section>
 
 <div class="wrap"><div class="content-banner"><img src="hinh/0c50424d-0e49-48d2-b7dd-9716a62890b8.webp" alt="Camera hành trình ghi bằng chứng rõ ràng, bảo vệ bạn mọi lúc" loading="lazy" width="1600" height="800" decoding="async"></div></div>
 
@@ -3169,8 +3164,6 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   shell.appendChild(accordion);
   faq.parentNode.insertBefore(shell, faq);
   sections.forEach(section => body.appendChild(section));
-  const glossary = document.getElementById('thuat-ngu');
-  if (glossary) body.appendChild(glossary);
   document.addEventListener('click', event => {
     const link = event.target.closest('a[href^="#"]');
     if (!link) return;
