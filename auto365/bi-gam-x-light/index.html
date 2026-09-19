@@ -921,7 +921,8 @@ html,body,#root,#xlight-app,#xlight-app *,#xlight-app input,#xlight-app select,#
   #xlight-app #vi-sao-chon .xl-why-head{max-width:none!important;text-align:left!important;margin-bottom:16px!important}
   #xlight-app #vi-sao-chon .xl-why-head h2{font-size:24px!important;line-height:1.16!important;max-width:none!important}
   #xlight-app #vi-sao-chon .xl-why-head p{max-width:none!important;font-size:13px!important}
-  #xlight-app .xl-why-grid{grid-template-columns:1fr!important;gap:10px!important}
+  #xlight-app .xl-why-grid{display:grid!important;grid-auto-flow:column!important;grid-template-rows:repeat(2,minmax(0,auto))!important;grid-template-columns:none!important;grid-auto-columns:76vw!important;gap:10px!important;overflow-x:auto!important;overflow-y:visible!important;scroll-snap-type:x mandatory!important;padding:2px 2px 8px!important;margin:0!important}
+  #xlight-app .xl-why-card{scroll-snap-align:start!important}
 }
 @media(max-width:420px){
   #xlight-app #case-thuc-te .nr-cases{grid-template-columns:1fr!important}
