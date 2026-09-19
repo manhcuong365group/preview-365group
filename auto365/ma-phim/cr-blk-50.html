@@ -529,6 +529,15 @@
     .decision-matrix col.col-spec{width:27%}
     .decision-matrix col.col-note{width:60%}
     .decision-matrix td:nth-child(2){white-space:nowrap}
+    .decision-cards{display:none}
+    @media (max-width:640px){
+      .matrix-wrap{display:none}
+      .decision-cards{display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:12px;margin-top:20px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+      .decision-cards::-webkit-scrollbar{display:none}
+      .decision-cards article{scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+      .decision-cards .decision-spec{font-weight:700;color:#111214;margin:6px 0 8px}
+      .decision-cards p{color:#5c636d;margin:0}
+    }
     .funnel-cta{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:20px;padding:16px 18px;border-radius:16px;background:#111316;color:#fff}
     .funnel-cta p{margin:0;color:#c6cbd2;font-size:14px}
     .funnel-cta .btn{flex:none}
@@ -1307,13 +1316,18 @@
         <p class="lede">Ba điểm 3M công bố cho Crystalline CR BLK được tóm tắt ở đây; xem thêm thông tin về cấu trúc và phạm vi dữ liệu của dòng phim tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">trang Crystalline CR BLK</a>.</p>
         <div class="technology">
           <article class="tech-card"><div class="tech-number">200+</div><h3>Lớp quang học siêu mỏng</h3><p>Cấu trúc phim quang học đa lớp độc quyền kết hợp công nghệ nano theo mô tả của 3M.</p></article>
-          <article class="tech-card"><div class="tech-number">PHI KIM</div><h3>Thiết kế không kim loại</h3><p>Cấu trúc phim không kim loại theo công bố của 3M, không gây nhiễu sóng điện tử, thẻ ETC và GPS; Auto365 vẫn kiểm tra theo từng xe.</p></article>
+          <article class="tech-card"><div class="tech-number">0</div><h3>Kim loại trong cấu trúc</h3><p>Thiết kế phi kim theo công bố của 3M, không gây nhiễu sóng điện tử, thẻ ETC và GPS; Auto365 vẫn kiểm tra theo từng xe.</p></article>
           <article class="tech-card"><div class="tech-number">2</div><h3>Điều kiện kính tham chiếu</h3><p>Auto 75 và kính trong 6 mm cho kết quả khác nhau; tách bạch hai điều kiện đo thay vì gộp chung một con số.</p></article>
         </div>
       </section>
       <section class="section" id="so-sanh" aria-labelledby="decision-matrix-title">
         <div class="section-kicker">So sánh trước khi chốt mã</div>
         <h2 id="decision-matrix-title">Chọn CR BLK 40, 50 hay 60 theo nhu cầu</h2>
+        <div class="decision-cards">
+          <article><div class="compare-code">60</div><p class="decision-spec">VLT 57% · TSER 54% · giảm chói 22%</p><p>CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, vì vậy có thể được đặt cạnh CR BLK 50 để cân nhắc khi người dùng ưu tiên kính lái sáng hơn.</p></article>
+          <article><div class="compare-code">50</div><p class="decision-spec">VLT 48% · TSER 56% · giảm chói 34%</p><p>Đi phố và đi tỉnh xen kẽ, muốn dung hòa quan sát, giảm chói và hiệu năng nhiệt.</p></article>
+          <article><div class="compare-code">40</div><p class="decision-spec">VLT 41% · TSER 58% · giảm chói 44%</p><p>Ưu tiên giảm chói và cảm giác dịu mắt hơn, sau khi đã xem mẫu thực tế trên xe.</p></article>
+        </div>
         <div class="matrix-wrap">
         <table class="decision-matrix">
           <colgroup><col class="col-code"><col class="col-spec"><col class="col-note"></colgroup>
