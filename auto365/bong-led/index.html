@@ -2672,14 +2672,14 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
         <span style="position:absolute; left:14px; top:50%; transform:translateY(-50%); font-size:16px; color:#64748b;">🔍</span>
         <input type="text" id="socket-search-input" placeholder="Gõ tên xe hoặc chân bóng để tra cứu (VD: VF3, Vios, Xpander, Ranger, H4, H7...)" style="width:100%; min-height:44px; padding:0 14px 0 42px; border:1.5px solid #cbd5e1; border-radius:10px; font-size:14.5px; outline:none; transition:border-color .2s;" onfocus="this.style.borderColor='#e31b2d'" onblur="this.style.borderColor='#cbd5e1'">
       </div>
-      <div style="display:flex; gap:6px; flex-wrap:wrap; font-size:12px;">
-        <span style="color:#64748b; align-self:center; font-weight:600;">Xem nhanh:</span>
-        <button type="button" class="btn-quick-socket" style="border:1px solid #e2e8f0; background:#f8fafc; padding:4px 10px; border-radius:6px; font-weight:700; cursor:pointer;" onclick="filterSocket('H4')">H4</button>
-        <button type="button" class="btn-quick-socket" style="border:1px solid #e2e8f0; background:#f8fafc; padding:4px 10px; border-radius:6px; font-weight:700; cursor:pointer;" onclick="filterSocket('H7')">H7</button>
-        <button type="button" class="btn-quick-socket" style="border:1px solid #e2e8f0; background:#f8fafc; padding:4px 10px; border-radius:6px; font-weight:700; cursor:pointer;" onclick="filterSocket('H11')">H11</button>
-        <button type="button" class="btn-quick-socket" style="border:1px solid #e2e8f0; background:#f8fafc; padding:4px 10px; border-radius:6px; font-weight:700; cursor:pointer;" onclick="filterSocket('9005')">9005/9006</button>
-        <button type="button" class="btn-quick-socket" style="border:1px solid #e2e8f0; background:#f8fafc; padding:4px 10px; border-radius:6px; font-weight:700; cursor:pointer;" onclick="filterSocket('T10')">T10</button>
-        <button type="button" class="btn-quick-socket" style="border:1px solid #e2e8f0; background:#f8fafc; padding:4px 10px; border-radius:6px; font-weight:700; cursor:pointer;" onclick="filterSocket('')">Tất cả</button>
+      <div style="display:flex; gap:6px; flex-wrap:wrap; font-size:12px;" id="quick-socket-group">
+        <span style="color:#64748b; align-self:center; font-weight:700;">Xem nhanh:</span>
+        <button type="button" class="btn-quick-socket" data-socket="H4" style="border:1px solid #e2e8f0; background:#f8fafc; color:#1e293b; padding:6px 12px; border-radius:7px; font-weight:700; cursor:pointer; transition:all .15s ease;" onclick="filterSocket('H4')">H4</button>
+        <button type="button" class="btn-quick-socket" data-socket="H7" style="border:1px solid #e2e8f0; background:#f8fafc; color:#1e293b; padding:6px 12px; border-radius:7px; font-weight:700; cursor:pointer; transition:all .15s ease;" onclick="filterSocket('H7')">H7</button>
+        <button type="button" class="btn-quick-socket" data-socket="H11" style="border:1px solid #e2e8f0; background:#f8fafc; color:#1e293b; padding:6px 12px; border-radius:7px; font-weight:700; cursor:pointer; transition:all .15s ease;" onclick="filterSocket('H11')">H11</button>
+        <button type="button" class="btn-quick-socket" data-socket="9005" style="border:1px solid #e2e8f0; background:#f8fafc; color:#1e293b; padding:6px 12px; border-radius:7px; font-weight:700; cursor:pointer; transition:all .15s ease;" onclick="filterSocket('9005')">9005/9006</button>
+        <button type="button" class="btn-quick-socket" data-socket="T10" style="border:1px solid #e2e8f0; background:#f8fafc; color:#1e293b; padding:6px 12px; border-radius:7px; font-weight:700; cursor:pointer; transition:all .15s ease;" onclick="filterSocket('T10')">T10</button>
+        <button type="button" class="btn-quick-socket active" data-socket="" style="border:1px solid #e31b2d; background:#e31b2d; color:#ffffff; padding:6px 12px; border-radius:7px; font-weight:700; cursor:pointer; transition:all .15s ease;" onclick="filterSocket('')">Tất cả</button>
       </div>
     </div>
   </div>
@@ -3210,7 +3210,95 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     <td>Đuôi quạt làm mát bị nắp chụp ép sát, nhiệt không thoát được ra ngoài khiến mạch điều khiển tự động giảm công suất (thermal throttling) để bảo vệ chip.</td>
     <td>Thay nắp chụp cao su mở rộng (Flexible Extended Dust Cap) tạo buồng thoát nhiệt tối thiểu 2cm phía sau đuôi quạt.</td>
   </tr>
-  </tbody></table></div></div></section><section class="section" id="cam-nang" aria-labelledby="cam-nang-title"><div class="wrap wrap--reading"><div class="section-title"><div><p class="micro">Đọc theo câu hỏi</p><h2 id="cam-nang-title">Cẩm nang chọn bóng LED ô tô</h2></div></div><div class="grid grid-3"><article class="soft-card"><h3>Tra chân bóng theo xe</h3><p><a href="https://auto365.vn/bang-tra-chan-bong-den">Bảng tra chân bóng Auto365</a> để định hướng; đối chiếu thêm trên cụm đèn thực tế.</p></article><article class="soft-card"><h3>4300K hay 6000K?</h3><p><a href="#nhiet-mau">Xem cách chọn nhiệt màu</a> và vì sao không thể đánh giá đi mưa chỉ từ Kelvin.</p></article><article class="soft-card"><h3>Thay bóng hay lên Bi LED?</h3><p><a href="#so-sanh">So sánh phạm vi nâng cấp</a>; lựa chọn phụ thuộc tình trạng cụm đèn và vùng sáng cần cải thiện.</p></article></div><article class="soft-card deep-guide" id="nhiet-mau"><h3>4300K và 6000K: chọn theo điều kiện nào?</h3><p>4300K có sắc ấm hơn 6000K. Tuy nhiên, màu ánh sáng không cho biết riêng khả năng quan sát mặt đường ướt. Cần xem phân bố ánh sáng, chói phản xạ, tình trạng kính đèn và điều kiện sử dụng.</p><p>Nếu thường đi mưa, hãy trao đổi nhu cầu đó trước khi thử đèn. Không chọn 4300K vì lời hứa “xuyên sương”, cũng không chọn 6000K chỉ vì nhìn trắng hơn khi đứng trước xe. Cả hai đều cần nghiệm thu trên đúng cụm đèn.</p></article></div></section><section class="section compact" id="bang-gia" aria-labelledby="bang-gia-title">
+  </tbody></table></div></div></section><section class="section" id="cam-nang" aria-labelledby="cam-nang-title">
+<div class="wrap">
+  <div class="section-title">
+    <div>
+      <p class="micro" style="color:#e31b2d; font-weight:800; letter-spacing:.08em;">ĐỌC THEO CÂU HỎI THƯỜNG GẶP</p>
+      <h2 id="cam-nang-title">Cẩm nang chọn bóng LED ô tô &amp; Tư vấn kỹ thuật thực tế</h2>
+    </div>
+    <p class="small">Tổng hợp kiến thức cốt lõi giúp chủ xe chọn đúng chuẩn chân, đúng nhiệt màu và phương án thi công tối ưu nhất.</p>
+  </div>
+
+  <div class="grid grid-3" style="margin-bottom:16px;">
+    <article class="soft-card" style="display:flex; flex-direction:column; justify-content:space-between; border-top:3px solid #e31b2d;">
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <span class="badge" style="background:#fee2e2; color:#b91c1c; font-weight:700; font-size:11.5px; padding:3px 8px; border-radius:4px;">Chuẩn chân gài</span>
+          <span style="font-size:18px;">🔍</span>
+        </div>
+        <h3 style="font-size:17px; margin:0 0 8px; font-weight:700; color:#1e293b;">Tra chân bóng theo dòng xe</h3>
+        <p style="font-size:14px; line-height:1.55; color:#475569; margin:0;">Mỗi dòng xe và vị trí đèn (Cos, Pha, Gầm) sử dụng chuẩn chân gài khác nhau (H4, H7, H11, 9005...). Chọn đúng chân zin để cắm giắc 100% không cắt chế dây hay ngàm chóa.</p>
+      </div>
+      <div style="margin-top:14px; padding-top:10px; border-top:1px dashed #e2e8f0;">
+        <a href="#chan-bong" class="text-link" style="font-weight:700; color:#e31b2d; font-size:13.5px; display:inline-flex; align-items:center; gap:4px;">Tra cứu bảng chân bóng ↑</a>
+      </div>
+    </article>
+
+    <article class="soft-card" style="display:flex; flex-direction:column; justify-content:space-between; border-top:3px solid #f59e0b;">
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <span class="badge" style="background:#fef3c7; color:#b45309; font-weight:700; font-size:11.5px; padding:3px 8px; border-radius:4px;">Nhiệt màu Kelvin</span>
+          <span style="font-size:18px;">💡</span>
+        </div>
+        <h3 style="font-size:17px; margin:0 0 8px; font-weight:700; color:#1e293b;">4300K hay 6000K: Chọn loại nào?</h3>
+        <p style="font-size:14px; line-height:1.55; color:#475569; margin:0;">4300K sắc vàng ấm tối ưu bám đường khi trời mưa hoặc sương mù dày; 6000K ánh sáng trắng hiện đại cho tầm quan sát rõ nét, phản xạ biển báo tốt trên đường khô ráo.</p>
+      </div>
+      <div style="margin-top:14px; padding-top:10px; border-top:1px dashed #e2e8f0;">
+        <a href="#nhiet-mau" class="text-link" style="font-weight:700; color:#d97706; font-size:13.5px; display:inline-flex; align-items:center; gap:4px;">Xem chi tiết cách chọn ↓</a>
+      </div>
+    </article>
+
+    <article class="soft-card" style="display:flex; flex-direction:column; justify-content:space-between; border-top:3px solid #0284c7;">
+      <div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+          <span class="badge" style="background:#e0f2fe; color:#0369a1; font-weight:700; font-size:11.5px; padding:3px 8px; border-radius:4px;">Giải pháp nâng cấp</span>
+          <span style="font-size:18px;">⚡</span>
+        </div>
+        <h3 style="font-size:17px; margin:0 0 8px; font-weight:700; color:#1e293b;">Thay bóng LED hay lên Bi LED?</h3>
+        <p style="font-size:14px; line-height:1.55; color:#475569; margin:0;">Thay bóng LED giữ nguyên chóa đèn zin, thi công nhanh 30 phút, chi phí hợp lý. Độ Bi LED thay đổi toàn bộ cụm thấu kính cho luồng sáng gom rộng và mặt cắt phẳng tuyệt đối.</p>
+      </div>
+      <div style="margin-top:14px; padding-top:10px; border-top:1px dashed #e2e8f0;">
+        <a href="#so-sanh" class="text-link" style="font-weight:700; color:#0284c7; font-size:13.5px; display:inline-flex; align-items:center; gap:4px;">Xem bảng so sánh chi tiết →</a>
+      </div>
+    </article>
+  </div>
+
+  <article class="soft-card deep-guide" id="nhiet-mau" style="background:#ffffff; border:1px solid #e2e8f0; border-radius:14px; padding:22px 24px; box-shadow:0 4px 16px rgba(15,23,42,0.04);">
+    <div style="display:flex; align-items:center; gap:10px; margin-bottom:12px;">
+      <span style="background:#ef4444; color:#fff; font-size:12px; font-weight:800; padding:2px 8px; border-radius:4px;">CHUYÊN SÂU</span>
+      <h3 style="font-size:19px; margin:0; color:#0f172a;">4300K và 6000K: Chọn theo điều kiện vận hành thực tế</h3>
+    </div>
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:18px; margin-top:14px;">
+      <div style="background:#fffbeb; border:1px solid #fef3c7; border-radius:10px; padding:16px;">
+        <strong style="color:#b45309; font-size:15px; display:flex; align-items:center; gap:6px;">
+          <span>🟡</span> Khi nào nên chọn 4300K (Vàng ấm)?
+        </strong>
+        <ul style="margin:8px 0 0; padding-left:18px; font-size:13.5px; color:#451a03; line-height:1.6;">
+          <li>Xe thường xuyên di chuyển cung đường đèo núi (Tây Bắc, Tây Nguyên), vùng mưa nhiều hoặc sương mù dày.</li>
+          <li>Bước sóng ánh sáng vàng ít bị khúc xạ và tán xạ ngược bởi hạt nước lơ lửng, giúp người lái không bị mỏi mắt.</li>
+          <li><em>Lưu ý kỹ thuật Auto365:</em> Không chọn vì lời quảng cáo "xuyên sương thần thánh". Độ bám đường thực tế phụ thuộc nhiều vào chất lượng chóa đèn và luồng cắt sáng cos.</li>
+        </ul>
+      </div>
+
+      <div style="background:#f0f9ff; border:1px solid #e0f2fe; border-radius:10px; padding:16px;">
+        <strong style="color:#0369a1; font-size:15px; display:flex; align-items:center; gap:6px;">
+          <span>⚪</span> Khi nào nên chọn 6000K (Trắng sáng thời trang)?
+        </strong>
+        <ul style="margin:8px 0 0; padding-left:18px; font-size:13.5px; color:#0c4a6e; line-height:1.6;">
+          <li>Xe chủ yếu di chuyển trong đô thị, đường quốc lộ và đường cao tốc có đèn đường hỗ trợ.</li>
+          <li>Ánh sáng trắng mang lại thẩm mỹ hiện đại, phản xạ rất nhạy với biển báo giao thông và vạch kẻ đường ban đêm.</li>
+          <li><em>Lưu ý kỹ thuật Auto365:</em> Khi lắp bóng 6000K trên chóa phản xạ Halogen zin, bắt buộc phải cân chỉnh góc nghiêng luồng sáng trên bảng đo chuẩn để triệt tiêu chói lóa xe ngược chiều.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:14px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
+      <p style="margin:0; font-size:13px; color:#64748b;">Khách hàng có thể trải nghiệm trực tiếp 2 nhiệt màu thực tế tại xưởng Auto365 trước khi quyết định thi công.</p>
+      <a href="#tu-van-mien-phi" style="font-size:13px; font-weight:700; color:#e31b2d;">Đặt lịch thử ánh sáng trực tiếp →</a>
+    </div>
+  </article>
+</div>
+</section><section class="section compact" id="bang-gia" aria-labelledby="bang-gia-title">
 <div class="wrap">
   <div class="section-title">
     <div>
@@ -3307,7 +3395,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
   <p class="note" style="margin-top:14px;"><strong>Quy tắc thanh toán Auto365:</strong> Mọi khách hàng đều được yêu cầu báo giá chi tiết bằng văn bản trước khi tháo lắp: <em>Tên sản phẩm + Chuẩn chân + Số lượng + VAT + Công lắp + Phụ kiện (nếu có) + Thời hạn bảo hành</em>. Các khoản đã nằm trong gói dịch vụ cam kết không cộng thêm lần nữa.</p>
 </div>
 </section><section class="section" id="faq" aria-labelledby="faq-title">
-<div class="wrap"><div class="section-title"><div><p class="micro">Hỏi đáp kỹ thuật</p><h2 id="faq-title">Câu hỏi thường gặp về bóng LED ô tô</h2></div></div><div class="faq-grid"><details class="faq-item"><summary><span>Bóng LED ô tô có lắp được cho mọi xe không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Cần xác nhận đời, phiên bản, cụm đèn, vị trí và chân bóng; sau đó kiểm tra khoảng hở, hệ điện và vùng sáng sau lắp. Cùng tên xe hoặc cùng chân bóng chưa đủ kết luận phù hợp.</p></details><details class="faq-item"><summary><span>Bóng LED ô tô giá bao nhiêu?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Trong danh mục đối chiếu ngày 18/09/2026, S3 Pro V2 từ 1.500.000 đồng/bộ, S6 Pro V2 từ 2.000.000 đồng/bộ; bản H4 có giá riêng. T10 là đèn phụ, giá 200.000 đồng/cặp. Đây là giá sản phẩm; VAT, công lắp và phụ kiện cần xem theo từng cấu hình và báo giá.</p></details><details class="faq-item"><summary><span>Một bộ bóng có phải là hai bóng không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không nên tự suy ra. Một số nguồn niêm yết theo bộ, nguồn khác theo cặp. Khi báo giá cần ghi rõ số bóng, driver và phụ kiện đi kèm; trang này giữ đơn vị theo nguồn của từng mã.</p></details><details class="faq-item"><summary><span>S3 Pro V2 hay S6 Pro V2 phù hợp hơn?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>S3 Pro V2 có giá khởi điểm thấp hơn; S6 Pro V2 có các đặc điểm cấu hình riêng và hồ sơ VF5 Plus H7 để tham khảo. Chọn sau khi đối chiếu chân bóng, nguồn điện, khoảng hở và thử vùng sáng, không xếp hạng chỉ bằng công suất công bố.</p></details><details class="faq-item"><summary><span>Cùng chân H7 có chắc lắp thay được không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Ngàm giữ, adapter, nắp chụp, không gian phía sau và hệ điều khiển có thể khác. Cần đối chiếu trên đúng cụm đèn trước khi chốt.</p></details><details class="faq-item"><summary><span>4300K có chắc đi mưa tốt hơn 6000K không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không thể kết luận chỉ từ Kelvin. 4300K có sắc ấm hơn 6000K; hiệu quả quan sát còn phụ thuộc vùng sáng, chói phản xạ và điều kiện đường. Hãy kiểm tra với cụm đèn và nhu cầu thực tế.</p></details><details class="faq-item"><summary><span>Có CANbus thì chắc chắn không báo lỗi không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Cần kiểm tra nhấp nháy, cảnh báo taplo và chức năng Cos/Pha trên xe. Lỗi điện phải được chẩn đoán trước khi bổ sung bộ giải mã.</p></details><details class="faq-item"><summary><span>Bóng LED T10 có dùng thay đèn pha không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không dùng T10 để thay bóng đèn chính H4, H7 hoặc H11. T10 chỉ được chọn cho vị trí có chuẩn chân và yêu cầu điện, màu ánh sáng phù hợp.</p></details><details class="faq-item"><summary><span>Thay bóng LED có chắc đạt kiểm định không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không thể xác nhận kết quả kiểm định chỉ từ tên bóng hoặc quảng cáo của sản phẩm. Trước khi thay đổi cấu hình đèn, trao đổi với cơ sở kiểm định về phương án cụ thể và yêu cầu đang áp dụng.</p></details><details class="faq-item"><summary><span>Cần gửi gì để được tư vấn bóng LED theo xe?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Gửi hãng, dòng, năm sản xuất, phiên bản, vị trí đèn và vấn đề muốn cải thiện. Nếu có thể chụp an toàn, thêm ảnh mặt đèn, nhãn/chân bóng và phía sau nắp chụp. Không tự tháo bộ phận nóng hoặc có nguy cơ điện để chụp ảnh.</p></details><details class="faq-item"><summary><span>Bảo hành bóng LED có bao gồm công lắp không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Bảo hành thiết bị và trách nhiệm với phần thi công cần được xác nhận riêng. Hỏi thời hạn, phạm vi, chứng từ và điểm tiếp nhận; không hiểu tuổi thọ công bố là thời hạn bảo hành.</p></details><details class="faq-item"><summary><span>Các dòng bóng LED X-Light và NaoEvo tại Auto365 có gì khác biệt và nên chọn dòng nào?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Auto365 tập trung phân phối chính hãng 2 hệ thương hiệu X-Light và NaoEvo với đầy đủ các chuẩn chân bóng (H1, H4, H7, H11, 9005, 9006, 9012). Sự khác biệt nằm ở phân khúc nhu cầu: Dòng S3 Pro tối ưu chi phí thay thế bóng Halogen đi phố; dòng S6 Pro và S9 Pro tăng cường công suất và gom sáng xa cho đường tối/cao tốc; dòng S8 Pro 4300K tối ưu bám đường cho xe hay đi tỉnh, gặp mưa và sương mù. Tất cả sản phẩm đều được bảo hành chính hãng 24 tháng tại hơn 90 chi nhánh Auto365 toàn quốc.</p></details></div></section><section class="section compact" id="co-so" aria-labelledby="co-so-title"><div class="wrap wrap--reading"><div class="section-title"><div><p class="micro">Nguồn thông tin</p><h2 id="co-so-title">Nguồn sản phẩm, hồ sơ xe và ngày đối chiếu</h2></div><p>Đối chiếu ngày 18/09/2026. Giá và tình trạng hàng có thể thay đổi sau thời điểm này.</p></div><div class="grid grid-2">
+<div class="wrap"><div class="section-title"><div><p class="micro">Hỏi đáp kỹ thuật</p><h2 id="faq-title">Câu hỏi thường gặp về bóng LED ô tô</h2></div></div><div class="faq-grid"><details class="faq-item"><summary><span>Bóng LED ô tô có lắp được cho mọi xe không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Cần xác nhận đời, phiên bản, cụm đèn, vị trí và chân bóng; sau đó kiểm tra khoảng hở, hệ điện và vùng sáng sau lắp. Cùng tên xe hoặc cùng chân bóng chưa đủ kết luận phù hợp.</p></details><details class="faq-item"><summary><span>Bóng LED ô tô giá bao nhiêu?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Trong danh mục đối chiếu ngày 18/09/2026, S3 Pro V2 từ 1.500.000 đồng/bộ, S6 Pro V2 từ 2.000.000 đồng/bộ; bản H4 có giá riêng. T10 là đèn phụ, giá 200.000 đồng/cặp. Đây là giá sản phẩm; VAT, công lắp và phụ kiện cần xem theo từng cấu hình và báo giá.</p></details><details class="faq-item"><summary><span>Một bộ bóng có phải là hai bóng không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không nên tự suy ra. Một số nguồn niêm yết theo bộ, nguồn khác theo cặp. Khi báo giá cần ghi rõ số bóng, driver và phụ kiện đi kèm; trang này giữ đơn vị theo nguồn của từng mã.</p></details><details class="faq-item"><summary><span>S3 Pro V2 hay S6 Pro V2 phù hợp hơn?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>S3 Pro V2 có giá khởi điểm thấp hơn; S6 Pro V2 có các đặc điểm cấu hình riêng và hồ sơ VF5 Plus H7 để tham khảo. Chọn sau khi đối chiếu chân bóng, nguồn điện, khoảng hở và thử vùng sáng, không xếp hạng chỉ bằng công suất công bố.</p></details><details class="faq-item"><summary><span>Cùng chân H7 có chắc lắp thay được không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Ngàm giữ, adapter, nắp chụp, không gian phía sau và hệ điều khiển có thể khác. Cần đối chiếu trên đúng cụm đèn trước khi chốt.</p></details><details class="faq-item"><summary><span>4300K có chắc đi mưa tốt hơn 6000K không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không thể kết luận chỉ từ Kelvin. 4300K có sắc ấm hơn 6000K; hiệu quả quan sát còn phụ thuộc vùng sáng, chói phản xạ và điều kiện đường. Hãy kiểm tra với cụm đèn và nhu cầu thực tế.</p></details><details class="faq-item"><summary><span>Có CANbus thì chắc chắn không báo lỗi không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Cần kiểm tra nhấp nháy, cảnh báo taplo và chức năng Cos/Pha trên xe. Lỗi điện phải được chẩn đoán trước khi bổ sung bộ giải mã.</p></details><details class="faq-item"><summary><span>Bóng LED T10 có dùng thay đèn pha không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không dùng T10 để thay bóng đèn chính H4, H7 hoặc H11. T10 chỉ được chọn cho vị trí có chuẩn chân và yêu cầu điện, màu ánh sáng phù hợp.</p></details><details class="faq-item"><summary><span>Thay bóng LED có chắc đạt kiểm định không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không thể xác nhận kết quả kiểm định chỉ từ tên bóng hoặc quảng cáo của sản phẩm. Trước khi thay đổi cấu hình đèn, trao đổi với cơ sở kiểm định về phương án cụ thể và yêu cầu đang áp dụng.</p></details><details class="faq-item"><summary><span>Cần gửi gì để được tư vấn bóng LED theo xe?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Gửi hãng, dòng, năm sản xuất, phiên bản, vị trí đèn và vấn đề muốn cải thiện. Nếu có thể chụp an toàn, thêm ảnh mặt đèn, nhãn/chân bóng và phía sau nắp chụp. Không tự tháo bộ phận nóng hoặc có nguy cơ điện để chụp ảnh.</p></details><details class="faq-item"><summary><span>Bảo hành bóng LED có bao gồm công lắp không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Bảo hành thiết bị và trách nhiệm với phần thi công cần được xác nhận riêng. Hỏi thời hạn, phạm vi, chứng từ và điểm tiếp nhận; không hiểu tuổi thọ công bố là thời hạn bảo hành.</p></details><details class="faq-item"><summary><span>Các dòng bóng LED X-Light và NaoEvo tại Auto365 có gì khác biệt và nên chọn dòng nào?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Auto365 tập trung phân phối chính hãng 2 hệ thương hiệu X-Light và NaoEvo với đầy đủ các chuẩn chân bóng (H1, H4, H7, H11, 9005, 9006, 9012). Sự khác biệt nằm ở phân khúc nhu cầu: Dòng S3 Pro tối ưu chi phí thay thế bóng Halogen đi phố; dòng S6 Pro và S9 Pro tăng cường công suất và gom sáng xa cho đường tối/cao tốc; dòng S8 Pro 4300K tối ưu bám đường cho xe hay đi tỉnh, gặp mưa và sương mù. Tất cả sản phẩm đều được bảo hành chính hãng 24 tháng tại hơn 90 chi nhánh Auto365 toàn quốc.</p></details></div></section><section class="section compact" id="co-so" aria-labelledby="co-so-title"><div class="wrap"><div class="section-title"><div><p class="micro">Nguồn thông tin</p><h2 id="co-so-title">Nguồn sản phẩm, hồ sơ xe và ngày đối chiếu</h2></div><p>Đối chiếu ngày 18/09/2026. Giá và tình trạng hàng có thể thay đổi sau thời điểm này.</p></div><div class="grid grid-2">
   <article class="card">
     <h3 style="font-size: 15px; margin: 0 0 6px;">Thông số &amp; Thương mại chính hãng</h3>
     <p style="font-size: 13.5px; line-height: 1.5; color: #414b59; margin: 0 0 8px;">
@@ -3353,27 +3441,69 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
  const emit=(action,item='')=>document.dispatchEvent(new CustomEvent('auto365:led',{detail:{action,item}}));
  const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
  function toast(message){clearTimeout(toastTimer);$('#toast').textContent=message;$('#toast').hidden=false;toastTimer=setTimeout(()=>$('#toast').hidden=true,4500);}
- function filterSocket(socket) {
+ function runSocketFilter(query) {
+    const q = (query || '').toLowerCase().trim();
+    const rows = document.querySelectorAll('#socket-lookup-table tbody tr');
+    let matched = 0;
+    rows.forEach(r => {
+      const data = (r.getAttribute('data-socket-row') || '') + ' ' + r.textContent.toLowerCase();
+      const isMatch = (!q || data.includes(q));
+      r.style.display = isMatch ? '' : 'none';
+      if (isMatch) matched++;
+    });
+
+    // Highlight active quick button
+    const btns = document.querySelectorAll('.btn-quick-socket');
+    btns.forEach(b => {
+      const bSock = (b.getAttribute('data-socket') || '').toLowerCase();
+      const isActive = (!q && !bSock) || (q && bSock && (bSock === q || bSock.includes(q) || q.includes(bSock)));
+      if (isActive) {
+        b.classList.add('active');
+        b.style.background = '#e31b2d';
+        b.style.color = '#ffffff';
+        b.style.borderColor = '#e31b2d';
+      } else {
+        b.classList.remove('active');
+        b.style.background = '#f8fafc';
+        b.style.color = '#1e293b';
+        b.style.borderColor = '#e2e8f0';
+      }
+    });
+  }
+
+  function filterSocket(socket) {
     const input = document.getElementById('socket-search-input');
     if (input) input.value = socket;
     runSocketFilter(socket);
   }
 
-  function runSocketFilter(query) {
-    const q = (query || '').toLowerCase().trim();
-    const rows = document.querySelectorAll('#socket-lookup-table tbody tr');
-    rows.forEach(r => {
-      const data = (r.getAttribute('data-socket-row') || '') + ' ' + r.textContent.toLowerCase();
-      r.style.display = (!q || data.includes(q)) ? '' : 'none';
+  // Expose to window/global scope so inline onclick="filterSocket(...)" works flawlessly
+  window.filterSocket = filterSocket;
+  window.runSocketFilter = runSocketFilter;
+
+  function initSocketLookupEvents() {
+    const sInput = document.getElementById('socket-search-input');
+    if (sInput && !sInput._bound) {
+      sInput._bound = true;
+      sInput.addEventListener('input', (e) => runSocketFilter(e.target.value));
+    }
+    document.querySelectorAll('.btn-quick-socket').forEach(b => {
+      if (!b._bound) {
+        b._bound = true;
+        b.addEventListener('click', (e) => {
+          e.preventDefault();
+          const sock = b.getAttribute('data-socket') || '';
+          filterSocket(sock);
+        });
+      }
     });
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const sInput = document.getElementById('socket-search-input');
-    if (sInput) {
-      sInput.addEventListener('input', (e) => runSocketFilter(e.target.value));
-    }
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSocketLookupEvents);
+  } else {
+    initSocketLookupEvents();
+  }
 
   async function sendAuto365LeadApi(payload, leadId) {
     const controller = new AbortController();
