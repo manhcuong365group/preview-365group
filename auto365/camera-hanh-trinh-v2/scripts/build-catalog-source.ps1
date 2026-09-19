@@ -19,6 +19,7 @@ function Get-CatalogBrand {
     if ($Name -match '(?i)thinkware') { return 'Thinkware' }
     if ($Name -match '(?i)ellicam') { return 'Ellicam' }
     if ($Name -match '(?i)utour') { return 'UTOUR' }
+    if ($Name -match '(?i)yuemi') { return 'YUEMI' }
     return 'Khác'
 }
 

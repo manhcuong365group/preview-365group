@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T07:35:03.463Z",
+  "generatedAt": "2026-09-16T10:09:34.796Z",
   "pages": [
     {
       "slug": "3m-cr-blk-pro",
@@ -7,7 +7,7 @@
       "description": "Tự chọn cấu hình phim 3M CR BLK Pro theo xe và thói quen lái. Xem giá 12,9–18,3 triệu, so sánh CR BLK thường và Pro, gọi hoặc nhắn Zalo Auto365.",
       "category": "Phim cách nhiệt",
       "url": "./3m-cr-blk-pro/index.html",
-      "updatedAt": 1788952491933.9631
+      "updatedAt": 1789461455029.205
     },
     {
       "slug": "3m-crystalline-hybrid",
@@ -15,7 +15,7 @@
       "description": "Giá gói 3M Crystalline Hybrid từ 9 triệu: kính lái CR BLK 60/50, sườn và lưng NR 25/15/5, bảo hành điện tử 3M 10 năm. Chọn cấu hình theo xe.",
       "category": "Phim cách nhiệt",
       "url": "./3m-crystalline-hybrid/index.html",
-      "updatedAt": 1788947180919.5122
+      "updatedAt": 1789461455076.4077
     },
     {
       "slug": "review",
@@ -23,7 +23,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Nội dung & thương hiệu",
       "url": "./review/index.html",
-      "updatedAt": 1786163700406.8464
+      "updatedAt": 1789461456517.6077
     },
     {
       "slug": "bao-chi-noi-ve-auto365-365group-3m-pro-shop",
@@ -31,7 +31,7 @@
       "description": "Trung tâm dữ liệu (Authority Evidence Hub) tập hợp các bài báo và trang tin độc lập, được tổng hợp bởi ông Đặng Minh Hoàng nhằm cung cấp thông tin minh bạch về hệ thống Auto365.",
       "category": "Phim cách nhiệt",
       "url": "./bao-chi-noi-ve-auto365-365group-3m-pro-shop/index.html",
-      "updatedAt": 1786163699943.0193
+      "updatedAt": 1789461455172.601
     },
     {
       "slug": "g1-tubor-v2",
@@ -39,7 +39,7 @@
       "description": "Bi gầm GTR G1 Ultra V2: Cos khoảng 45W, Pha khoảng 75W, 4800K + 3000K, IP68, giá 6.000.000 VNĐ/bộ chưa VAT, bảo hành điện tử 24 tháng tại Auto365.",
       "category": "Đèn & bi gầm",
       "url": "./g1-tubor-v2/index.html",
-      "updatedAt": 1786163699984.134
+      "updatedAt": 1789461455813.9011
     },
     {
       "slug": "bi-gam",
@@ -47,15 +47,31 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Đèn & bi gầm",
       "url": "./bi-gam/index.html",
-      "updatedAt": 1788426076304.9033
+      "updatedAt": 1789461455280.7996
+    },
+    {
+      "slug": "bi-gam-x-light",
+      "title": "Bi Gầm X-Light Chính Hãng: Giá Sản Phẩm &amp; So Sánh | Auto365",
+      "description": "So sánh bi gầm X-Light 301 V2, F10 Pro V2, X3 Ultra, F10 Turbo V2 theo lens, Cos/Pha, nhiệt màu và giá. Chọn mẫu theo xe, tìm điểm lắp Auto365.",
+      "category": "Đèn & bi gầm",
+      "url": "./bi-gam-x-light/index.html",
+      "updatedAt": 1789553338385.3245
+    },
+    {
+      "slug": "bi-gam-xlight-standalone",
+      "title": "Bi Gầm X-Light Chính Hãng: Giá Sản Phẩm &amp; So Sánh | Auto365",
+      "description": "Trang preview đang được hoàn thiện.",
+      "category": "Đèn & bi gầm",
+      "url": "./bi-gam-xlight-standalone/index.html",
+      "updatedAt": 1789461455244.111
     },
     {
       "slug": "titan-black",
-      "title": "Bi LED Titan Black 2026 | Auto365",
+      "title": "Bi LED Titan Black 2026: Giá, thông số, lắp đặt | Auto365",
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Khác",
       "url": "./titan-black.html",
-      "updatedAt": 1789025187577.452
+      "updatedAt": 1789461456668.838
     },
     {
       "slug": "bi-led-x-light-v30-ultra",
@@ -63,7 +79,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Đèn & bi gầm",
       "url": "./bi-led-x-light-v30-ultra/index.html",
-      "updatedAt": 1788947180920.5098
+      "updatedAt": 1789461455381.2354
     },
     {
       "slug": "bui-hung-viet",
@@ -71,7 +87,7 @@
       "description": "Hồ sơ chuyên gia của ông Bùi Hùng Việt — CEO hệ thống Auto365, chuỗi trung tâm nâng cấp xe thành lập ngày 26/03/2016 tại Thủ Đức, TP.HCM. Được báo ngành gọi là",
       "category": "Nội dung & thương hiệu",
       "url": "./bui-hung-viet/index.html",
-      "updatedAt": 1786163699967.1582
+      "updatedAt": 1789461455397.0217
     },
     {
       "slug": "camera-hanh-trinh-70mai",
@@ -79,7 +95,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Camera",
       "url": "./camera-hanh-trinh-70mai/index.html",
-      "updatedAt": 1788946393772.4355
+      "updatedAt": 1789461455409.365
     },
     {
       "slug": "camera-hanh-trinh-v2",
@@ -87,15 +103,7 @@
       "description": "Hướng dẫn chọn camera hành trình ô tô (dashcam) quay trước sau, cảnh báo tốc độ. Cập nhật giá Vietmap, 70mai và tiêu chuẩn đi dây cắm giắc zin tại Auto365.",
       "category": "Camera",
       "url": "./camera-hanh-trinh-v2/index.html",
-      "updatedAt": 1789024773234.9082
-    },
-    {
-      "slug": "camera-hanh-trinh-auto365",
-      "title": "Camera Hành Trình Ô Tô: Cách Chọn, Giá &amp; Lắp Theo Xe | Auto365.vn",
-      "description": "Trang preview đang được hoàn thiện.",
-      "category": "Camera",
-      "url": "./camera-hanh-trinh-auto365/index.html",
-      "updatedAt": 1788946400684.6304
+      "updatedAt": 1789552668358.2805
     },
     {
       "slug": "dang-minh-hoang",
@@ -103,7 +111,7 @@
       "description": "Đặng Minh Hoàng là Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center, một nhân sự quản lý có 10 năm kinh nghiệm (từ năm 2016) trong lĩnh vực phim cách nhiệt, PPF và phụ kiện ô tô tại hệ thống Auto365.",
       "category": "Nội dung & thương hiệu",
       "url": "./dang-minh-hoang/index.html",
-      "updatedAt": 1786163699980.0896
+      "updatedAt": 1789461455695.67
     },
     {
       "slug": "bi-gam",
@@ -111,7 +119,7 @@
       "description": "Xem các mẫu bi gầm ô tô theo nhiệt màu 3000K, 4300K, 5500K, giá sản phẩm và chi phí lắp đặt tại Auto365, so sánh lựa chọn và tìm điểm tư vấn phù hợp.",
       "category": "Đèn & bi gầm",
       "url": "./bi-gam.html",
-      "updatedAt": 1789025187575.4524
+      "updatedAt": 1789461455244.111
     },
     {
       "slug": "den-gam-dang-roi",
@@ -119,7 +127,7 @@
       "description": "Hub đèn gầm dạng rời ô tô: danh mục cập nhật, hướng dẫn chọn theo nhu cầu, hệ điện, nhiệt màu, hồ sơ xe thật và phương pháp kiểm chứng tại Auto365.",
       "category": "Đèn & bi gầm",
       "url": "./den-gam-dang-roi/index.html",
-      "updatedAt": 1788426076340.9954
+      "updatedAt": 1789461455697.174
     },
     {
       "slug": "m20-v2",
@@ -127,7 +135,7 @@
       "description": "Titan Moto M20 Ultra V2: đèn gầm dạng rời X2 nguồn sáng Cos/Pha, Cos ~50W, Pha ~70W, 3 nhiệt màu, IP68 theo công bố. Giá 4.500.000 VNĐ/bộ, bảo hành 18 tháng.",
       "category": "Đèn & bi gầm",
       "url": "./m20-v2/index.html",
-      "updatedAt": 1788426076404.5625
+      "updatedAt": 1789461455969.089
     },
     {
       "slug": "m10-v3",
@@ -135,7 +143,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Đèn & bi gầm",
       "url": "./m10-v3/index.html",
-      "updatedAt": 1788426076387.5725
+      "updatedAt": 1789461455958.9705
     },
     {
       "slug": "danh-gia-3m-ceramic-nr",
@@ -143,7 +151,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Phim cách nhiệt",
       "url": "./danh-gia-3m-ceramic-nr/index.html",
-      "updatedAt": 1786163699980.0896
+      "updatedAt": 1789461455695.67
     },
     {
       "slug": "ceramic-ir",
@@ -151,15 +159,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Phim cách nhiệt",
       "url": "./ceramic-ir/index.html",
-      "updatedAt": 1788947180924.6475
-    },
-    {
-      "slug": "3m-ceramic-nr-preview",
-      "title": "Phim cách nhiệt 3M Ceramic NR (Ceramic Hybrid)",
-      "description": "Phim cách nhiệt 3M Ceramic Hybrid Series NR gồm các mã NR5, NR15, NR25, NR35. Tìm hiểu công nghệ, thông số, cách chọn mã phim cho từng vị trí kính, bảng giá, bảo hành 10 năm và địa chỉ dán chính hãng tại Auto365.",
-      "category": "Phim cách nhiệt",
-      "url": "./3m-ceramic-nr-preview/index.html",
-      "updatedAt": 1788946400678.618
+      "updatedAt": 1789461455469.0962
     },
     {
       "slug": "phim-cach-nhiet-o-to-3m-ceramic-hybrid",
@@ -167,7 +167,7 @@
       "description": "Phim cách nhiệt 3M Ceramic NR (Ceramic Hybrid): Gồm các mã 3M Ceramic NR35/NR25/NR15/NR5, VLT 5–35%, TSER đến 68%, giảm chói đến 93%, UVR đến 99%, bảo hành điện tử lên đến 10 năm, tư vấn và thi công tại Auto365.",
       "category": "Phim cách nhiệt",
       "url": "./phim-cach-nhiet-o-to-3m-ceramic-hybrid/index.html",
-      "updatedAt": 1786777024063.768
+      "updatedAt": 1789461456296.9907
     },
     {
       "slug": "phim-cach-nhiet-3m",
@@ -175,7 +175,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Phim cách nhiệt",
       "url": "./phim-cach-nhiet-3m/index.html",
-      "updatedAt": 1786777024053.4253
+      "updatedAt": 1789461456139.383
     },
     {
       "slug": "crystalline-cr-blk",
@@ -183,7 +183,7 @@
       "description": "3M Crystalline CR BLK là dòng phim cách nhiệt cao cấp của 3M với các mã CR BLK 60, 50, 40, 35 và 15. Xem bảng giá, thông số TSER, VLT, UVR và hướng dẫn chọn mã cho từng vị trí kính tại Auto365.",
       "category": "Phim cách nhiệt",
       "url": "./crystalline-cr-blk/index.html",
-      "updatedAt": 1788947180926.6487
+      "updatedAt": 1789461455667.8848
     },
     {
       "slug": "auto365-3m-pillar-v11.12",
@@ -191,7 +191,7 @@
       "description": "Bảng giá phim cách nhiệt 3M 5,9–18,3 triệu, chọn mã theo từng kính bằng FilmMatch, xem chứng nhận, eWarranty và case xe thật tại Auto365.",
       "category": "Phim cách nhiệt",
       "url": "./auto365-3m-pillar-v11.12/index.html",
-      "updatedAt": 1788426076227.6077
+      "updatedAt": 1789461455140.5464
     },
     {
       "slug": "auto365_cam_nang_phim_cach_nhiet_v2",
@@ -199,7 +199,7 @@
       "description": "Prototype Auto365 Hub Phim cách nhiệt V3: Knowledge Map tách riêng Library Filter, thiết kế để scale kho bài lớn.",
       "category": "Phim cách nhiệt",
       "url": "./auto365_cam_nang_phim_cach_nhiet_v2/index.html",
-      "updatedAt": 1786772018909.802
+      "updatedAt": 1789461455171.567
     },
     {
       "slug": "auto365_cam_nang_phim_cach_nhiet",
@@ -207,7 +207,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Phim cách nhiệt",
       "url": "./auto365_cam_nang_phim_cach_nhiet/index.html",
-      "updatedAt": 1786454225755.6345
+      "updatedAt": 1789461455167.8752
     },
     {
       "slug": "phim-cach-nhiet",
@@ -215,7 +215,7 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Phim cách nhiệt",
       "url": "./phim-cach-nhiet/index.html",
-      "updatedAt": 1788947180928.6462
+      "updatedAt": 1789461456372.1416
     },
     {
       "slug": "quy-dinh-dan-phim-cach-nhiet-o-to",
@@ -223,7 +223,7 @@
       "description": "Thông tư 48/2024/TT-BGTVT và QCVN 32:2024/BGTVT nói gì về kính ô tô, ngưỡng 70% thuộc về ai, và vì sao không được tự suy ngưỡng cho phim dán hậu mãi.",
       "category": "Phim cách nhiệt",
       "url": "./quy-dinh-dan-phim-cach-nhiet-o-to/index.html",
-      "updatedAt": 1788426076413.2625
+      "updatedAt": 1789461456375.1738
     },
     {
       "slug": "thong-so-phim-cach-nhiet-o-to",
@@ -231,7 +231,7 @@
       "description": "VLT, VLR, TSER, IRR, IRER, UVR nghĩa là gì, vì sao film-only khác glass + film, và giới hạn của máy đo cầm tay tại điểm bán — kèm nguồn cho từng con số.",
       "category": "Phim cách nhiệt",
       "url": "./thong-so-phim-cach-nhiet-o-to/index.html",
-      "updatedAt": 1786776840858.5022
+      "updatedAt": 1789461456518.669
     },
     {
       "slug": "he-thong",
@@ -239,7 +239,7 @@
       "description": "Danh bạ 90 điểm nâng cấp xe Auto365 phủ khắp toàn quốc — tìm theo vị trí, tỉnh/thành hoặc tên quen gọi. Địa chỉ, số máy trực, chỉ đường Google Maps.",
       "category": "Hệ thống",
       "url": "./he-thong/index.html",
-      "updatedAt": 1788947180927.648
+      "updatedAt": 1789461455823.5342
     },
     {
       "slug": "auto365-newsroom-v2.6.11",
@@ -247,7 +247,15 @@
       "description": "Trang preview đang được hoàn thiện.",
       "category": "Nội dung & thương hiệu",
       "url": "./auto365-newsroom-v2.6.11/index.html",
-      "updatedAt": 1786191510903.366
+      "updatedAt": 1789461455155.6858
+    },
+    {
+      "slug": "bong-led",
+      "title": "Bóng LED ô tô: chọn đúng chân bóng, lắp đúng xe | Auto365",
+      "description": "Chọn bóng LED ô tô theo chân bóng, cụm đèn và nhu cầu. So sánh giá, bảo hành, xem hồ sơ VF5/VF3 và chuẩn bị thông tin tư vấn tại Auto365.",
+      "category": "Đèn & bi gầm",
+      "url": "./bong-led/index.html",
+      "updatedAt": 1789736943781
     }
   ]
 }
