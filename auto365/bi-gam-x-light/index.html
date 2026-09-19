@@ -2020,7 +2020,7 @@ lucide-react/dist/esm/lucide-react.mjs:
         var t = cb.closest('.p-card-compare-toggle');
         if(t) t.classList.remove('is-active');
       });
-      syncBar();
+      syncBarPublic();
     });
     return bar;
   }
@@ -2032,6 +2032,7 @@ lucide-react/dist/esm/lucide-react.mjs:
     viewBtn.disabled = selected.length < 2;
     viewBtn.textContent = selected.length < 2 ? 'Chọn thêm để so sánh' : 'Xem so sánh (' + selected.length + ')';
   }
+  function syncBarPublic(){ syncBar(); document.dispatchEvent(new CustomEvent('xlcompare:sync', { detail: { count: selected.length, max: MAX, ids: selected.map(function(p){ return p.id; }) } })); }
   function init(){
     document.querySelectorAll('.product-showcase-grid .p-card-compare-input').forEach(function(input){
       if(input.dataset.compareReady === '1') return;
@@ -2053,12 +2054,122 @@ lucide-react/dist/esm/lucide-react.mjs:
           selected = selected.filter(function(p){ return p.id !== product.id; });
           if(toggle) toggle.classList.remove('is-active');
         }
-        syncBar();
+        syncBarPublic();
       });
     });
-    syncBar();
+    syncBarPublic();
   }
+    window.xlCompareApi = {
+    MAX: MAX,
+    getCount: function(){ return selected.length; },
+    has: function(id){ return selected.some(function(p){ return p.id === id; }); },
+    add: function(product){
+      if(selected.length >= MAX) return false;
+      if(selected.some(function(p){ return p.id === product.id; })) return true;
+      selected.push(product);
+      syncBarPublic();
+      return true;
+    },
+    remove: function(id){
+      selected = selected.filter(function(p){ return p.id !== id; });
+      syncBarPublic();
+    },
+    openModal: function(){ render(); }
+  };
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+})();
+</script><script id="xlight-comparison-table-compare">
+(function(){
+  function productFromRow(tr){
+    var th = tr.querySelector("th[scope=row]");
+    var nameEl = th.querySelector(".compare-check span");
+    var name = nameEl ? (nameEl.childNodes[0] ? nameEl.childNodes[0].textContent.trim() : nameEl.textContent.trim()) : "";
+    var link = th.querySelector("a.source-link[href]");
+    var tds = tr.querySelectorAll("td");
+    var lensB = tds[0] ? tds[0].querySelector("b") : null;
+    var lens = lensB ? lensB.textContent.trim() : "";
+    var cosB = tds[1] ? tds[1].querySelector("b") : null;
+    var cosPha = cosB ? cosB.textContent.trim() : "";
+    var colorNote = tds[2] ? tds[2].textContent.trim() : "";
+    var priceEl = tds[3] ? tds[3].querySelector("strong") : null;
+    var price = priceEl ? priceEl.textContent.trim() : "";
+    return {
+      id: "table-" + name,
+      name: name,
+      image: "",
+      price: price,
+      vat: "Chưa gồm VAT.",
+      brand: "X-Light",
+      lens: lens,
+      voltage: "",
+      need: colorNote,
+      specs: [lens, cosPha, colorNote].filter(Boolean),
+      href: link ? link.getAttribute("href") : "#"
+    };
+  }
+  function setButtonState(btn, checked){
+    btn.setAttribute("aria-checked", checked ? "true" : "false");
+    btn.setAttribute("data-state", checked ? "checked" : "unchecked");
+  }
+  function init(){
+    var api = window.xlCompareApi;
+    if(!api) return;
+    var toolbar = document.querySelector(".compare-toolbar");
+    var toolbarCount = toolbar ? toolbar.querySelector("b") : null;
+    function updateToolbar(){
+      if(toolbarCount) toolbarCount.textContent = api.getCount() + "/" + api.MAX + " mẫu đã chọn";
+    }
+    function syncRowStates(){
+      document.querySelectorAll(".comparison-table tbody tr").forEach(function(tr){
+        var label = tr.querySelector(".compare-check");
+        if(!label) return;
+        var btn = label.querySelector("button[role=checkbox]");
+        var hiddenInput = label.querySelector("input[type=checkbox]");
+        if(!btn) return;
+        var p = productFromRow(tr);
+        var checked = api.has(p.id);
+        setButtonState(btn, checked);
+        if(hiddenInput) hiddenInput.checked = checked;
+      });
+    }
+    document.querySelectorAll(".comparison-table tbody tr").forEach(function(tr){
+      var label = tr.querySelector(".compare-check");
+      if(!label) return;
+      var btn = label.querySelector("button[role=checkbox]");
+      var hiddenInput = label.querySelector("input[type=checkbox]");
+      if(!btn || btn.dataset.compareReady === "1") return;
+      btn.dataset.compareReady = "1";
+      btn.addEventListener("click", function(){
+        var product = productFromRow(tr);
+        var isChecked = btn.getAttribute("aria-checked") === "true";
+        if(isChecked){
+          api.remove(product.id);
+          setButtonState(btn, false);
+          if(hiddenInput) hiddenInput.checked = false;
+        }else{
+          var ok = api.add(product);
+          if(!ok) return;
+          setButtonState(btn, true);
+          if(hiddenInput) hiddenInput.checked = true;
+        }
+        updateToolbar();
+      });
+    });
+    var viewLink = document.querySelector('.compare-toolbar a[href="#bang-chon"]');
+    if(viewLink){
+      viewLink.addEventListener("click", function(e){
+        e.preventDefault();
+        api.openModal();
+      });
+    }
+    document.addEventListener("xlcompare:sync", function(){
+      updateToolbar();
+      syncRowStates();
+    });
+    updateToolbar();
+    syncRowStates();
+  }
+  if(document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })();
 </script><script id="xlight-lead-form-script">
 (function(){
