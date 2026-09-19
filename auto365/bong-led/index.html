@@ -194,7 +194,7 @@
     .table-wrap th[scope="row"] { background: #fafbfc; min-width: 150px; font-weight: 700; }
     .table-wrap tr:last-child td { border-bottom: 0; }
 
-    /* Socket Lookup Table - Có Khung Phân Tách Rõ Ràng */
+    /* Socket Lookup Table - Khung Viền Tinh Tế, Chữ Mảnh Thanh Thoát */
     #socket-lookup-table {
       width: 100%;
       border-collapse: collapse;
@@ -202,44 +202,58 @@
     }
     #socket-lookup-table th,
     #socket-lookup-table td {
-      border: 1px solid #cbd5e1 !important;
-      padding: 13px 15px;
+      border: 1px solid #e2e8f0 !important;
+      padding: 12px 14px;
       vertical-align: middle;
+      font-weight: 400;
     }
     #socket-lookup-table thead th {
-      background: #e2e8f0 !important;
-      color: #0f172a !important;
-      font-weight: 800;
-      font-size: 13px;
+      background: #f8fafc !important;
+      color: #475569 !important;
+      font-weight: 600;
+      font-size: 12.5px;
       text-transform: uppercase;
-      letter-spacing: .04em;
-      border-bottom: 2px solid #94a3b8 !important;
+      letter-spacing: .03em;
+      border-bottom: 1.5px solid #cbd5e1 !important;
+      padding: 11px 14px;
     }
     #socket-lookup-table tbody tr:nth-child(even) {
-      background: #f8fafc;
+      background: #fafbfc;
     }
     #socket-lookup-table tbody tr:hover {
       background: #f1f5f9;
     }
     #socket-lookup-table .col-socket {
-      background: #f8fafc;
+      background: #fafbfc;
       text-align: center;
-      border-right: 1.5px solid #cbd5e1 !important;
+      border-right: 1px solid #e2e8f0 !important;
+    }
+    #socket-lookup-table .feat-lead {
+      color: #1e293b;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 3px;
     }
     #socket-lookup-table .car-box {
       background: #ffffff;
-      border: 1px solid #cbd5e1;
-      border-radius: 6px;
-      padding: 6px 9px;
-      font-size: 13px;
+      border: 1px solid #e9edf2;
+      border-radius: 5px;
+      padding: 5px 8px;
+      font-size: 12.5px;
       line-height: 1.4;
-      box-shadow: 0 1px 2px rgba(15,23,42,0.03);
+      color: #475569;
     }
-    #socket-lookup-table .car-box strong {
-      color: #e31b2d;
+    #socket-lookup-table .car-box .brand {
+      color: #0f172a;
+      font-weight: 600;
       margin-right: 3px;
     }
-    .table-wrap:focus { outline-offset: 2px; }
+    #socket-lookup-table .note-desc {
+      color: #64748b;
+      font-size: 12.5px;
+      line-height: 1.45;
+      margin-top: 4px;
+    }
 
     /* ==========================================================================
        BUTTON CONTRACT
@@ -2744,166 +2758,166 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
       <tbody>
         <tr data-socket-row="h4 vios i10 morning accent ranger triton xl7 ertiga wigo innova hilux">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">H4</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(HB2 / 9003)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">H4</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(HB2 / 9003)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">3 chấu cắm tam giác</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">3 chấu cắm tam giác</span>
             Bóng tích hợp 2 tim sáng chung Cos &amp; Pha trong một thân bóng. Có tấm chắn chống chói chuyên dụng dưới tim Cos.
           </td>
           <td>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 10px;">
-              <div class="car-box"><strong>Toyota:</strong> Vios (E), Innova, Hilux, Wigo</div>
-              <div class="car-box"><strong>Ford:</strong> Ranger (XLS/XLT), Everest cũ</div>
-              <div class="car-box"><strong>Hyundai:</strong> Grand i10, Accent (MT/Base)</div>
-              <div class="car-box"><strong>Suzuki:</strong> XL7, Ertiga, Swift</div>
-              <div class="car-box"><strong>Kia:</strong> Morning, Soluto</div>
-              <div class="car-box"><strong>Mitsubishi:</strong> Triton, Attrage, Mirage</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 8px;">
+              <div class="car-box"><span class="brand">Toyota:</span> Vios (E), Innova, Hilux, Wigo</div>
+              <div class="car-box"><span class="brand">Ford:</span> Ranger (XLS/XLT), Everest cũ</div>
+              <div class="car-box"><span class="brand">Hyundai:</span> Grand i10, Accent (MT/Base)</div>
+              <div class="car-box"><span class="brand">Suzuki:</span> XL7, Ertiga, Swift</div>
+              <div class="car-box"><span class="brand">Kia:</span> Morning, Soluto</div>
+              <div class="car-box"><span class="brand">Mitsubishi:</span> Triton, Attrage, Mirage</div>
             </div>
           </td>
           <td>
-            <span class="badge dark" style="padding:3px 8px; font-size:11.5px; font-weight:700;">2 tim Cos / Pha</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">Cần chọn dòng LED có vách ngăn sáng sắc nét để không làm lóa xe đối diện.</div>
+            <span class="badge dark" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">2 tim Cos / Pha</span>
+            <div class="note-desc">Cần chọn dòng LED có vách ngăn sáng sắc nét để không làm lóa xe đối diện.</div>
           </td>
         </tr>
 
         <tr data-socket-row="h7 vf3 vf5 fadil tucson santafe cerato k3 seltos ecosport focus mazda3 kona">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">H7</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(Chân gài 2 chấu)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">H7</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(Chân gài 2 chấu)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">2 chấu cắm dẹt song song</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">2 chấu cắm dẹt song song</span>
             Bóng 1 tim đơn. Thường đảm nhiệm chế độ Cos riêng hoặc Pha riêng trong cụm chóa đôi hoặc bi Halogen.
           </td>
           <td>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 10px;">
-              <div class="car-box"><strong>VinFast:</strong> VF3, VF5 Plus, Fadil</div>
-              <div class="car-box"><strong>Ford:</strong> EcoSport, Focus, Fiesta</div>
-              <div class="car-box"><strong>Hyundai:</strong> Tucson, SantaFe, Kona, Elantra</div>
-              <div class="car-box"><strong>Mazda:</strong> Mazda 3, Mazda 2 (Halogen)</div>
-              <div class="car-box"><strong>Kia:</strong> Cerato / K3, Seltos, Carens</div>
-              <div class="car-box"><strong>Khác:</strong> Nhiều dòng xe Hàn / Mỹ / Đức</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 8px;">
+              <div class="car-box"><span class="brand">VinFast:</span> VF3, VF5 Plus, Fadil</div>
+              <div class="car-box"><span class="brand">Ford:</span> EcoSport, Focus, Fiesta</div>
+              <div class="car-box"><span class="brand">Hyundai:</span> Tucson, SantaFe, Kona, Elantra</div>
+              <div class="car-box"><span class="brand">Mazda:</span> Mazda 3, Mazda 2 (Halogen)</div>
+              <div class="car-box"><span class="brand">Kia:</span> Cerato / K3, Seltos, Carens</div>
+              <div class="car-box"><span class="brand">Khác:</span> Nhiều dòng xe Hàn / Mỹ / Đức</div>
             </div>
           </td>
           <td>
-            <span class="badge red" style="padding:3px 8px; font-size:11.5px; font-weight:700;">Cần ngàm giữ Adapter</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">Nhiều xe (VF3, VF5, Ford, Kia) dùng ngàm khóa nhựa; Auto365 trang bị adapter cắm giắc zin.</div>
+            <span class="badge red" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">Cần ngàm giữ Adapter</span>
+            <div class="note-desc">Nhiều xe (VF3, VF5, Ford, Kia) dùng ngàm khóa nhựa; Auto365 trang bị adapter cắm giắc zin.</div>
           </td>
         </tr>
 
         <tr data-socket-row="h11 h8 h9 h16 xpander fortuner camry cross crv civic city cx5 mazda6 navara">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">H11</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(H8 / H9 / H16 JP)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">H11</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(H8 / H9 / H16 JP)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">Đuôi cắm chữ L, ngàm xoay 3 tai</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">Đuôi cắm chữ L, ngàm 3 tai xoay</span>
             Có gioăng cao su chống nước kín khít tuyệt đối. Rất phổ biến cho đèn Cos Bi Projector và Đèn gầm sương mù.
           </td>
           <td>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 10px;">
-              <div class="car-box"><strong>Mitsubishi:</strong> Xpander (Cos/Gầm), Outlander</div>
-              <div class="car-box"><strong>Mazda:</strong> CX-5, Mazda 6, Mazda 3 (Gầm)</div>
-              <div class="car-box"><strong>Toyota:</strong> Fortuner, Camry, Cross, Hilux</div>
-              <div class="car-box"><strong>Nissan:</strong> Navara, X-Trail, Almera</div>
-              <div class="car-box"><strong>Honda:</strong> CR-V, Civic, City (Cos/Gầm)</div>
-              <div class="car-box"><strong>Kia/Hyundai:</strong> Sorento, Tucson (Gầm)</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 8px;">
+              <div class="car-box"><span class="brand">Mitsubishi:</span> Xpander (Cos/Gầm), Outlander</div>
+              <div class="car-box"><span class="brand">Mazda:</span> CX-5, Mazda 6, Mazda 3 (Gầm)</div>
+              <div class="car-box"><span class="brand">Toyota:</span> Fortuner, Camry, Cross, Hilux</div>
+              <div class="car-box"><span class="brand">Nissan:</span> Navara, X-Trail, Almera</div>
+              <div class="car-box"><span class="brand">Honda:</span> CR-V, Civic, City (Cos/Gầm)</div>
+              <div class="car-box"><span class="brand">Kia/Hyundai:</span> Sorento, Tucson (Gầm)</div>
             </div>
           </td>
           <td>
-            <span class="badge green" style="padding:3px 8px; font-size:11.5px; font-weight:700;">Cắm giắc zin 100%</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">Chỉ cần xoay 45 độ là khóa ngàm. Đạt chuẩn kháng nước IP68 an toàn tuyệt đối cho vị trí gầm thấp.</div>
+            <span class="badge green" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">Cắm giắc zin 100%</span>
+            <div class="note-desc">Chỉ cần xoay 45 độ là khóa ngàm. Đạt chuẩn kháng nước IP68 an toàn tuyệt đối cho vị trí gầm thấp.</div>
           </td>
         </tr>
 
         <tr data-socket-row="9005 9006 hb3 hb4 camry crv civic rav4 sorento pajero accord altis">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">9005 / 9006</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(HB3 / HB4)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">9005 / 9006</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(HB3 / HB4)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">Đuôi giắc cắm vuông chữ L</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">Đuôi giắc cắm vuông chữ L</span>
             9005 (HB3) chuyên cho đèn Pha chiếu xa công suất cao; 9006 (HB4) dùng cho Cos hoặc đèn sương mù xe Mỹ/Nhật.
           </td>
           <td>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 10px;">
-              <div class="car-box"><strong>Honda:</strong> CR-V, Civic, Accord (Pha 9005)</div>
-              <div class="car-box"><strong>Kia / Hyundai:</strong> Sorento, Sedona, SantaFe</div>
-              <div class="car-box"><strong>Toyota:</strong> Camry, Altis, RAV4, Fortuner</div>
-              <div class="car-box"><strong>Mitsubishi:</strong> Pajero Sport (Pha 9005 / Cos 9006)</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 8px;">
+              <div class="car-box"><span class="brand">Honda:</span> CR-V, Civic, Accord (Pha 9005)</div>
+              <div class="car-box"><span class="brand">Kia / Hyundai:</span> Sorento, Sedona, SantaFe</div>
+              <div class="car-box"><span class="brand">Toyota:</span> Camry, Altis, RAV4, Fortuner</div>
+              <div class="car-box"><span class="brand">Mitsubishi:</span> Pajero Sport (Pha/Cos)</div>
             </div>
           </td>
           <td>
-            <span class="badge dark" style="padding:3px 8px; font-size:11.5px; font-weight:700;">Chuyên đèn Pha gom xa</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">9005 và 9006 có gờ ngàm khác nhau; Auto365 lắp đúng mã chân chuẩn để giữ đúng tiêu cự tim sáng.</div>
+            <span class="badge dark" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">Chuyên đèn Pha gom xa</span>
+            <div class="note-desc">9005 và 9006 có gờ ngàm khác nhau; Auto365 lắp đúng mã chân chuẩn để giữ đúng tiêu cự tim sáng.</div>
           </td>
         </tr>
 
         <tr data-socket-row="9012 hir2 vios yaris cruze tucson">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">9012</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(HIR2)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">9012</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(HIR2)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">Bóng 1 tim công suất cao</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">Bóng 1 tim công suất cao</span>
             Hình dáng tựa 9006 nhưng tai ngàm rộng hơn. Dùng trong cụm bi cầu projector có màn trập điện tử Cos/Pha chung.
           </td>
           <td>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 10px;">
-              <div class="car-box"><strong>Toyota:</strong> Vios (G Projector), Yaris</div>
-              <div class="car-box"><strong>Chevrolet:</strong> Cruze, Captiva đời mới</div>
-              <div class="car-box"><strong>Hyundai:</strong> Tucson (bản Bi Halogen)</div>
-              <div class="car-box"><strong>Ford:</strong> Một số phiên bản nhập khẩu</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 8px;">
+              <div class="car-box"><span class="brand">Toyota:</span> Vios (G Projector), Yaris</div>
+              <div class="car-box"><span class="brand">Chevrolet:</span> Cruze, Captiva đời mới</div>
+              <div class="car-box"><span class="brand">Hyundai:</span> Tucson (bản Bi Halogen)</div>
+              <div class="car-box"><span class="brand">Ford:</span> Một số phiên bản nhập khẩu</div>
             </div>
           </td>
           <td>
-            <span class="badge gold" style="padding:3px 8px; font-size:11.5px; font-weight:700;">Bi Halogen Projector</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">KTV căn chỉnh hướng xoay 360 độ của thân bóng để luồng sáng gom trọn vẹn qua thấu kính bi cầu.</div>
+            <span class="badge gold" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">Bi Halogen Projector</span>
+            <div class="note-desc">KTV căn chỉnh hướng xoay 360 độ của thân bóng để luồng sáng gom trọn vẹn qua thấu kính bi cầu.</div>
           </td>
         </tr>
 
         <tr data-socket-row="t10 w5w demi bien so tran cop xe">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">T10</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(W5W / Chân cắm)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">T10</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(W5W / Chân cắm)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">Chân dẹt nêm cắm trực tiếp</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">Chân dẹt nêm cắm trực tiếp</span>
             Kích thước siêu nhỏ gọn, công suất 3W - 5W. Nguồn sáng phụ trợ định vị, biển số và nội thất xe.
           </td>
           <td>
-            <div class="car-box" style="padding:10px 12px; line-height:1.55;">
-              <strong style="display:block; margin-bottom:4px; color:#0f172a;">Trang bị trên 99% các dòng xe ô tô tại Việt Nam:</strong>
+            <div class="car-box" style="padding:8px 10px; line-height:1.5;">
+              <span class="brand" style="display:block; margin-bottom:2px;">Trang bị trên 99% các dòng xe ô tô tại Việt Nam:</span>
               Đèn demi định vị ban ngày, đèn soi biển số sau, đèn trần cabin, đèn soi cốp và bậc lên xuống.
             </div>
           </td>
           <td>
-            <span class="badge dark" style="padding:3px 8px; font-size:11.5px; font-weight:700;">Đèn phụ trợ</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">Không dùng thay đèn chính (Cos/Pha). Kiểm tra phân cực âm/dương (+/-) khi cắm giắc.</div>
+            <span class="badge dark" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">Đèn phụ trợ</span>
+            <div class="note-desc">Không dùng thay đèn chính (Cos/Pha). Kiểm tra phân cực âm/dương (+/-) khi cắm giắc.</div>
           </td>
         </tr>
 
         <tr data-socket-row="d1 d2 d3 d4 d1s d2s d3s d4s xenon led">
           <th scope="row" class="col-socket">
-            <strong style="color:#e31b2d; font-size:18px; display:block; line-height:1.1;">D1 / D2<br>D3 / D4</strong>
-            <small style="color:#64748b; font-weight:600; display:block; margin-top:4px;">(Chân Bi Xenon gốc)</small>
+            <strong style="color:#e31b2d; font-size:17px; font-weight:700; display:block; line-height:1.15;">D1 / D2<br>D3 / D4</strong>
+            <small style="color:#64748b; font-weight:500; font-size:11.5px; display:block; margin-top:3px;">(Chân Bi Xenon gốc)</small>
           </th>
-          <td style="line-height:1.55; font-size:13.5px;">
-            <strong style="color:#0f172a;">Chân bóng Xenon HID cao cấp</strong>.<br>
+          <td style="line-height:1.5; font-size:13px; color:#475569;">
+            <span class="feat-lead">Chân bóng Xenon HID cao cấp</span>
             Bóng LED chuyển đổi cắm trực tiếp vào giắc Ballast zin, không cần cắt dây hay can thiệp điện cao áp.
           </td>
           <td>
-            <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px 10px;">
-              <div class="car-box"><strong>Ford:</strong> Ranger Wildtrak (cũ), Everest</div>
-              <div class="car-box"><strong>Kia:</strong> Sedona, Optima (Bi Xenon)</div>
-              <div class="car-box"><strong>Mazda:</strong> Mazda 3, CX-9 (bản Xenon)</div>
-              <div class="car-box"><strong>Xe nhập:</strong> BMW, Audi, Mercedes, Lexus</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:5px 8px;">
+              <div class="car-box"><span class="brand">Ford:</span> Ranger Wildtrak (cũ), Everest</div>
+              <div class="car-box"><span class="brand">Kia:</span> Sedona, Optima (Bi Xenon)</div>
+              <div class="car-box"><span class="brand">Mazda:</span> Mazda 3, CX-9 (bản Xenon)</div>
+              <div class="car-box"><span class="brand">Xe nhập:</span> BMW, Audi, Mercedes, Lexus</div>
             </div>
           </td>
           <td>
-            <span class="badge red" style="padding:3px 8px; font-size:11.5px; font-weight:700;">Cần tư vấn chuyên sâu</span>
-            <div style="font-size:12.5px; color:#475569; margin-top:5px; line-height:1.45;">Cần đo kiểm điện áp ngõ ra của Ballast zin để đảm bảo LED khởi động tức thì, không báo lỗi taplo.</div>
+            <span class="badge red" style="padding:2.5px 7px; font-size:11px; font-weight:600; border-radius:4px;">Cần tư vấn chuyên sâu</span>
+            <div class="note-desc">Cần đo kiểm điện áp ngõ ra của Ballast zin để đảm bảo LED khởi động tức thì, không báo lỗi taplo.</div>
           </td>
         </tr>
       </tbody>
