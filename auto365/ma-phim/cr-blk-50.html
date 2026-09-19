@@ -519,10 +519,16 @@
     .quick-verdict-item{border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 16px;font-size:13px;color:#4f5863}
     .quick-verdict-item strong{display:block;margin-bottom:5px;color:#111214;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
     .matrix-wrap{overflow-x:auto;margin-top:20px}
-    .decision-matrix{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px}
-    .decision-matrix th,.decision-matrix td{padding:13px 14px;border-bottom:1px solid #ece9e3;text-align:left;vertical-align:top}
-    .decision-matrix th{background:#f8f7f4;color:#616975;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .decision-matrix{width:100%;table-layout:fixed;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px}
+    .decision-matrix th,.decision-matrix td{padding:13px 14px;border:1px solid #ece9e3;text-align:left;vertical-align:top}
+    .decision-matrix th{background:#f8f7f4;color:#616975;font-size:11px;text-transform:uppercase;letter-spacing:.06em;border-top:0}
     .decision-matrix tr:last-child td{border-bottom:0}
+    .decision-matrix tr td:first-child,.decision-matrix tr th:first-child{border-left:0}
+    .decision-matrix tr td:last-child,.decision-matrix tr th:last-child{border-right:0}
+    .decision-matrix col.col-code{width:13%}
+    .decision-matrix col.col-spec{width:27%}
+    .decision-matrix col.col-note{width:60%}
+    .decision-matrix td:nth-child(2){white-space:nowrap}
     .funnel-cta{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:20px;padding:16px 18px;border-radius:16px;background:#111316;color:#fff}
     .funnel-cta p{margin:0;color:#c6cbd2;font-size:14px}
     .funnel-cta .btn{flex:none}
@@ -997,7 +1003,7 @@
     @media (max-width: 640px) {
       .hero-subtitle{font-size:14px}
       .quick-verdict,.limits-list{grid-template-columns:1fr}
-      .decision-matrix{min-width:520px}
+      .decision-matrix{min-width:700px}
       .funnel-cta{padding:14px}
     }
     /* Lightweight Apple system typography. Uses SF Pro on Apple devices and a close system fallback elsewhere. */
@@ -1310,11 +1316,12 @@
         <h2 id="decision-matrix-title">Chọn CR BLK 40, 50 hay 60 theo nhu cầu</h2>
         <div class="matrix-wrap">
         <table class="decision-matrix">
-          <thead><tr><th>Mã phim</th><th>Thiên về</th><th>Nên cân nhắc khi</th></tr></thead>
+          <colgroup><col class="col-code"><col class="col-spec"><col class="col-note"></colgroup>
+          <thead><tr><th>Mã phim</th><th>Thông số tham chiếu</th><th>Nên cân nhắc khi</th></tr></thead>
           <tbody>
-            <tr><td><strong>CR BLK 60</strong></td><td>Độ sáng</td><td>CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, vì vậy có thể được đặt cạnh CR BLK 50 để cân nhắc khi người dùng ưu tiên kính lái sáng hơn.</td></tr>
-            <tr><td><strong>CR BLK 50</strong></td><td>Cân bằng</td><td>Đi phố và đi tỉnh xen kẽ, muốn dung hòa quan sát, giảm chói và hiệu năng nhiệt.</td></tr>
-            <tr><td><strong>CR BLK 40</strong></td><td>Dịu sáng hơn</td><td>Ưu tiên giảm chói và cảm giác dịu mắt hơn, sau khi đã xem mẫu thực tế trên xe.</td></tr>
+            <tr><td><strong>CR BLK 60</strong></td><td>VLT 57% · TSER 54% · giảm chói 22%</td><td>CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, vì vậy có thể được đặt cạnh CR BLK 50 để cân nhắc khi người dùng ưu tiên kính lái sáng hơn.</td></tr>
+            <tr><td><strong>CR BLK 50</strong></td><td>VLT 48% · TSER 56% · giảm chói 34%</td><td>Đi phố và đi tỉnh xen kẽ, muốn dung hòa quan sát, giảm chói và hiệu năng nhiệt.</td></tr>
+            <tr><td><strong>CR BLK 40</strong></td><td>VLT 41% · TSER 58% · giảm chói 44%</td><td>Ưu tiên giảm chói và cảm giác dịu mắt hơn, sau khi đã xem mẫu thực tế trên xe.</td></tr>
           </tbody>
         </table>
         </div>
@@ -1356,8 +1363,7 @@
       </section>
       <figure class="editorial-interlude"><img src="assets/cr-blk-50-vf6.webp" alt="VinFast VF 6 đã dán 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></figure>
       <section class="section" aria-labelledby="case-title">
-        <div class="case-heading"><div><div class="section-kicker">Bài xe thực tế</div><h2 id="case-title">12 xe thi công dán phim cách nhiệt tại Auto365</h2></div></div>
-        <p class="lede">Tham khảo các xe thực tế đã thi công 3M Crystalline CR BLK tại Auto365, trong đó CR BLK 50 được sử dụng cho kính lái theo cấu hình của từng ca. Mã phim trên từng ô kính cần được đối chiếu từ phiếu cấu hình hoặc hồ sơ thi công của chính chiếc xe; ảnh ngoại quan không đủ để xác định chính xác mã phim.</p>
+        <div class="case-heading"><div><div class="section-kicker">Bài xe thực tế</div><h2 id="case-title">Xe dán phim cách nhiệt thực tế tại Auto365</h2></div></div>
         <div class="case-filters" role="group" aria-label="Lọc bài xe theo thương hiệu">
           <button class="case-filter active" type="button" data-brand="all" aria-pressed="true">Tất cả</button>
           <button class="case-filter" type="button" data-brand="vinfast" aria-pressed="false">VinFast</button>
