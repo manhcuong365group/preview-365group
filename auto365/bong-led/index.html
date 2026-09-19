@@ -1311,6 +1311,186 @@
 .qs-result-actions .qs-btn-primary:hover {
   background: #c81424;
 }
+
+/* ================================================================
+   AUTO365 COMPARE MODAL (BI-GẦM STANDARD)
+   ================================================================ */
+.xl-compare-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.xl-compare-overlay.is-open {
+  display: flex;
+}
+.xl-compare-modal {
+  width: min(980px, 100%);
+  max-height: min(88vh, 800px);
+  overflow: hidden;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(15, 23, 42, 0.28);
+  font-family: inherit;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+}
+.xl-compare-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px solid #edf1f5;
+  flex: none;
+}
+.xl-compare-head h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #101d2d;
+}
+.xl-compare-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.xl-compare-close:hover {
+  background: #e2e8f0;
+}
+.xl-compare-body {
+  padding: 0 24px 20px;
+  overflow: auto;
+  flex: 1;
+}
+.xl-compare-empty {
+  padding: 32px 0;
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+}
+.xl-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border: 1px solid #dbe1e8;
+  background: #fff;
+  margin-top: 14px;
+}
+.xl-compare-table th,
+.xl-compare-table td {
+  border: 1px solid #dbe1e8;
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #333333;
+  background: #fff;
+}
+.xl-compare-table th:first-child {
+  width: 125px;
+  background: #f3f5f8;
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+.xl-compare-table .xl-img-cell {
+  height: 90px;
+  vertical-align: middle;
+  text-align: center;
+}
+.xl-compare-table img {
+  width: 110px;
+  height: 75px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+.xl-compare-table .xl-name {
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #101d2d;
+  text-decoration: none;
+  display: block;
+}
+.xl-compare-table .xl-name:hover {
+  color: #e31b2d;
+}
+.xl-compare-table .xl-price {
+  display: block;
+  color: #e31b2d;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.xl-compare-table .xl-vat {
+  display: block;
+  margin-top: 3px;
+  color: #7b8491;
+  font-size: 11px;
+}
+.xl-compare-tip {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.45;
+}
+@media (max-width: 720px) {
+  .xl-compare-overlay {
+    align-items: flex-end;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .xl-compare-modal {
+    width: 100%;
+    max-height: 88vh;
+    border-radius: 16px 16px 0 0;
+  }
+  .xl-compare-head {
+    padding: 14px 16px;
+  }
+  .xl-compare-head h3 {
+    font-size: 17px;
+  }
+  .xl-compare-body {
+    padding: 0 14px 16px;
+  }
+  .xl-compare-table {
+    min-width: 580px;
+  }
+  .xl-compare-table th:first-child {
+    width: 100px;
+  }
+  .xl-compare-table th,
+  .xl-compare-table td {
+    padding: 10px 11px;
+    font-size: 12px;
+  }
+  .xl-compare-table .xl-price {
+    font-size: 15px;
+  }
+}
 </style><style id="he-thong-auto365-style">
 /* ================================================================
    AUTO365 BRANCH SYSTEM COMPONENT (SCOPED TO #he-thong-auto365)
@@ -2707,7 +2887,15 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     </ul>
     <p style="font-size: 13px; color: #666; margin-top: 10px;">Đơn vị xuất bản: Hệ thống Auto365 toàn quốc. Hotline hỗ trợ kỹ thuật: <a class="text-link" href="tel:0365365911">0365 365 911</a></p>
   </article>
-</div></div></section><section class="section compact" id="lien-he" aria-labelledby="lien-he-title"><div class="wrap"><div class="section-title"><div><p class="micro">Auto365</p><h2 id="lien-he-title">Kiểm tra cấu hình bóng LED cho xe của bạn</h2></div><p>Chuẩn bị thông tin xe và nhu cầu để cuộc tư vấn đi đúng vấn đề.</p></div><div class="cta"><div><h3>Chọn bóng sau khi hiểu rõ cụm đèn</h3><p>Hỏi rõ mã, phiên bản, tổng chi phí và bước kiểm tra sau lắp trước khi quyết định.</p></div><div class="cta-actions"><a class="btn red" href="tel:0365365911">Gọi 0365 365 911</a><a class="btn" href="#tu-van-mien-phi">Soạn nội dung tư vấn</a><a class="btn ghost" href="https://auto365.vn/chi-nhanh">Tìm chi nhánh</a></div></div></div></section></main><div class="compare-tray" hidden="" id="compare-tray"><span id="compare-count" aria-live="polite">0 sản phẩm đã chọn</span><button class="btn" disabled="" id="open-compare" type="button">So sánh</button><button class="btn ghost" id="clear-compare" type="button">Xóa</button></div><div class="toast" hidden="" id="toast" role="status" aria-live="polite"></div><dialog id="compare-dialog" aria-labelledby="compare-title"><div class="dialog-head"><h2 id="compare-title">So sánh cấu hình sản phẩm</h2><button class="btn ghost" id="close-compare" type="button"><svg class="icon"><use href="#icon-close"></use></svg> Đóng</button></div><div class="dialog-body" id="compare-table"></div></dialog><div class="mobile-sticky"><a class="btn red" href="tel:0365365911"><svg class="icon"><use href="#icon-phone"></use></svg> Gọi tư vấn</a><a class="btn dark" href="#tu-van-mien-phi">Soạn yêu cầu</a></div><footer class="footer"><div class="wrap"><p><strong>Auto365 · Bóng LED ô tô</strong></p><p>Hotline ánh sáng: <a href="tel:0365365911">0365 365 911</a> · <a href="https://auto365.vn/chi-nhanh">Hệ thống chi nhánh</a> · <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365">Chính sách bảo mật</a></p><p>Thông tin sản phẩm và nguồn được đối chiếu ngày 18/09/2026. Xác nhận cấu hình và báo giá trước khi lắp.</p></div></footer><script type="application/json" id="product-data">[{"id": "s3", "family": "s3", "name": "X-Light S3 Pro V2", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h1", "h7", "h11", "9005", "9006", "9012"], "socketText": "H1 / H7 / H11 / 9005 / 9006 / 9012", "price": 1500000, "unit": "bộ", "kelvin": "6000K", "voltage": "12/24V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Cân nhắc khi ưu tiên ngân sách từ 1,5 triệu đồng cho bộ bóng; kiểm tra khoảng hở, hệ điện và vùng sáng.", "source": "s3", "maker": "x3", "url": "https://auto365.vn/bong-led-x-light-s3-pro-v2", "sourceUrl": "https://auto365.vn/bong-led-x-light-s3-pro-v2", "date": "2026-09-18", "priceText": "1.500.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s3-pro-v2-2jpg-img_695f1520573f10.37907652_auto365vn-1767839008-0.jpg.webp"}, {"id": "s3h4", "family": "s3", "name": "X-Light S3 Pro V2 H4", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h4"], "socketText": "H4", "price": 1600000, "unit": "bộ", "kelvin": "6000K", "voltage": "12/24V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Phiên bản H4 cho cấu hình dùng chung Cos/Pha; phải thử cả hai chế độ sau khi lắp.", "source": "s3h4", "maker": "x3", "url": "https://auto365.vn/bong-led-x-light-s3-pro-v2-chan-h4", "sourceUrl": "https://auto365.vn/bong-led-x-light-s3-pro-v2-chan-h4", "date": "2026-09-18", "priceText": "1.600.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s3-pro-v2-h4jpg-img_695f16e809e3a7.78715026_auto365vn-1767839464-0.jpg.webp"}, {"id": "s6", "family": "s6", "name": "X-Light S6 Pro V2", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h1", "h7", "h11", "9005", "9006", "9012"], "socketText": "H1 / H7 / H11 / 9005 / 9006 / 9012", "price": 2000000, "unit": "bộ", "kelvin": "6000K", "voltage": "12V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Cân nhắc khi cần thử và căn vị trí bóng trong cụm đèn; có hồ sơ VF5 Plus dùng phiên bản H7 để tham khảo.", "source": "s6", "maker": "x6", "url": "https://auto365.vn/bong-led-x-light-s6-pro-v2", "sourceUrl": "https://auto365.vn/bong-led-x-light-s6-pro-v2", "date": "2026-09-18", "priceText": "2.000.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s6-pro-v2-2jpg-img_695f37003ad421.05937516_auto365vn-1767847680-0.jpg.webp"}, {"id": "s6h4", "family": "s6", "name": "X-Light S6 Pro V2 H4", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h4"], "socketText": "H4", "price": 2200000, "unit": "bộ", "kelvin": "6000K", "voltage": "12V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Phiên bản H4 của S6 Pro V2. Không dùng kết quả lắp H7 để suy ra hiệu quả trên cụm H4.", "source": "s6h4", "maker": "x6", "url": "https://auto365.vn/bong-led-x-light-s6-pro-v2-chan-h4", "sourceUrl": "https://auto365.vn/bong-led-x-light-s6-pro-v2-chan-h4", "date": "2026-09-18", "priceText": "2.200.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s6-pro-v2-4jpg-img_695f38042eb080.27014796_auto365vn-1767847940-0.jpg.webp"}, {"id": "s8", "family": "s8", "name": "S8 Pro 4300K H4", "brand": "X-Light – Series NaoEvo", "brandKey": "xlight", "sockets": ["h4"], "socketText": "H4", "price": 2700000, "unit": "cặp", "kelvin": "4300K", "voltage": "Xem hồ sơ đúng phiên bản", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "VAT xác nhận theo báo giá", "fit": "Cân nhắc nếu muốn màu ánh sáng ấm hơn 6000K. Hiệu quả khi mưa vẫn phải đánh giá qua cụm đèn thực tế.", "source": "s8", "maker": "x8", "url": "https://auto365.vn/bong-led-naoevo-s8-pro-nhiet-mau-4300k-chan-h4", "sourceUrl": "https://auto365.vn/bong-led-naoevo-s8-pro-nhiet-mau-4300k-chan-h4", "date": "2026-09-18", "priceText": "2.700.000 đ/cặp", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/product/X-LIGHT/bong-led-s8-pro-4300K-chan-h4/s8-pro-4300k-chan-h4-5.png.webp"}, {"id": "s9", "family": "s9", "name": "NaoEvo S9 Pro H7", "brand": "NaoEvo", "brandKey": "naoevo", "sockets": ["h7"], "socketText": "H7", "price": 2800000, "unit": "cặp", "kelvin": "5800K", "voltage": "9–16V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "VAT xác nhận theo báo giá", "fit": "Mã H7 có hồ sơ VF3 để tham khảo. Cần xác nhận đúng phiên bản, nguồn hàng và điều kiện bảo hành khi đặt.", "source": "s9", "maker": null, "url": "https://auto365.vn/bong-led-naoevo-s9-pro-chan-h7", "sourceUrl": "https://auto365.vn/bong-led-naoevo-s9-pro-chan-h7", "date": "2026-09-18", "priceText": "2.800.000 đ/cặp", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/product/naoevo/s9-pro/h7/1.jpg.webp"}, {"id": "t10", "family": "t10", "name": "X-Light T10", "brand": "X-Light", "brandKey": "xlight", "sockets": ["t10"], "socketText": "T10", "price": 200000, "unit": "cặp", "kelvin": "Trắng / vàng / xanh theo phiên bản", "voltage": "Xác nhận theo phiên bản", "warranty": "12 tháng", "group": "aux", "position": "Đèn phụ", "vat": "Chưa gồm VAT", "fit": "Dành cho vị trí dùng chân T10 phù hợp. Không thay thế bóng đèn chính H4/H7/H11; màu đèn phải đúng công năng vị trí lắp.", "source": "t10", "maker": null, "url": "https://auto365.vn/den-led-x-light-t10", "sourceUrl": "https://auto365.vn/den-led-x-light-t10", "date": "2026-09-18", "priceText": "200.000 đ/cặp", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/product_12052026/xlight-t10-1.jpg.webp"}, {"id":"ns9-9005","family":"ns9","name":"NaoEvo S9 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":2800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-9005","date":"2026-09-18","priceText":"2.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/9005/1.jpg.webp"}, {"id":"ns9-h11","family":"ns9","name":"NaoEvo S9 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":2800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h11","date":"2026-09-18","priceText":"2.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/h11/1.jpg.webp"}, {"id":"ns9-h4","family":"ns9","name":"NaoEvo S9 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":3000000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h4","date":"2026-09-18","priceText":"3.000.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/h4/1.jpg.webp"}, {"id":"ns9-h1","family":"ns9","name":"NaoEvo S9 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":2800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h1","date":"2026-09-18","priceText":"2.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/h1/1.jpg.webp"}, {"id":"ns8-9005","family":"ns8","name":"NaoEvo S8 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-9005","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/9005/1.jpg.webp"}, {"id":"ns8-h11","family":"ns8","name":"NaoEvo S8 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h11","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h11/1.jpg.webp"}, {"id":"ns8-h7","family":"ns8","name":"NaoEvo S8 Pro H7","brand":"NaoEvo","brandKey":"naoevo","sockets":["h7"],"socketText":"H7","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h7","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h7","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h7","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h7/1.jpg.webp"}, {"id":"ns8-h4","family":"ns8","name":"NaoEvo S8 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":2700000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h4","date":"2026-09-18","priceText":"2.700.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h4/1.jpg.webp"}, {"id":"ns8-h1","family":"ns8","name":"NaoEvo S8 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h1","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h1/1.jpg.webp"}, {"id":"ns6-9005","family":"ns6","name":"NaoEvo S6 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-9005","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/9005/1.jpg.webp"}, {"id":"ns6-h11","family":"ns6","name":"NaoEvo S6 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h11","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h11/1.jpg.webp"}, {"id":"ns6-h7","family":"ns6","name":"NaoEvo S6 Pro H7","brand":"NaoEvo","brandKey":"naoevo","sockets":["h7"],"socketText":"H7","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h7","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h7","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h7","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h7/1.jpg.webp"}, {"id":"ns6-h4","family":"ns6","name":"NaoEvo S6 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":2000000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h4","date":"2026-09-18","priceText":"2.000.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h4/1.jpg.webp"}, {"id":"ns6-h1","family":"ns6","name":"NaoEvo S6 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h1","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h1/S6pro-H1.jpg.webp"}, {"id":"ns3-9005","family":"ns3","name":"NaoEvo S3 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-9005","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/9005-9006-9012/1.jpg.webp"}, {"id":"ns3-h11","family":"ns3","name":"NaoEvo S3 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h11","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h11/1.jpg.webp"}, {"id":"ns3-h7","family":"ns3","name":"NaoEvo S3 Pro H7","brand":"NaoEvo","brandKey":"naoevo","sockets":["h7"],"socketText":"H7","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h7","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h7","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h7","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h7/1.jpg.webp"}, {"id":"ns3-h4","family":"ns3","name":"NaoEvo S3 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":1700000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h4","date":"2026-09-18","priceText":"1.700.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h4/1.jpg.webp"}, {"id":"ns3-h1","family":"ns3","name":"NaoEvo S3 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h1","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h1/1.jpg.webp"}, {"id":"s8k43","family":"s8k43","name":"S8 Pro 4300K","brand":"X-Light – Series NaoEvo","brandKey":"xlight","sockets":["h1","h7","h11","9005","9006","9012"],"socketText":"H1 / H7 / H11 / 9005 / 9006 / 9012","price":2500000,"unit":"cặp","kelvin":"4300K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân nhắc nếu muốn màu ánh sáng ấm hơn 6000K; xác nhận đúng phiên bản trước khi đặt.","source":"s8k43","maker":"x8k43","url":"https://auto365.vn/bong-led-s8-pro-4300k","sourceUrl":"https://auto365.vn/bong-led-s8-pro-4300k","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/X-LIGHT/naoevo-s8-pro-4300k/naoevo-s8-pro-4300k-4.png.webp"}]</script><script>(()=>{
+</div></div></section><section class="section compact" id="lien-he" aria-labelledby="lien-he-title"><div class="wrap"><div class="section-title"><div><p class="micro">Auto365</p><h2 id="lien-he-title">Kiểm tra cấu hình bóng LED cho xe của bạn</h2></div><p>Chuẩn bị thông tin xe và nhu cầu để cuộc tư vấn đi đúng vấn đề.</p></div><div class="cta"><div><h3>Chọn bóng sau khi hiểu rõ cụm đèn</h3><p>Hỏi rõ mã, phiên bản, tổng chi phí và bước kiểm tra sau lắp trước khi quyết định.</p></div><div class="cta-actions"><a class="btn red" href="tel:0365365911">Gọi 0365 365 911</a><a class="btn" href="#tu-van-mien-phi">Soạn nội dung tư vấn</a><a class="btn ghost" href="https://auto365.vn/chi-nhanh">Tìm chi nhánh</a></div></div></div></section></main><div class="compare-tray" hidden="" id="compare-tray"><span id="compare-count" aria-live="polite">0 sản phẩm đã chọn</span><button class="btn" disabled="" id="open-compare" type="button">So sánh</button><button class="btn ghost" id="clear-compare" type="button">Xóa</button></div><div class="toast" hidden="" id="toast" role="status" aria-live="polite"></div><div class="xl-compare-overlay" id="xl-compare-overlay" role="dialog" aria-modal="true" aria-labelledby="xl-compare-title">
+  <div class="xl-compare-modal">
+    <div class="xl-compare-head">
+      <h3 id="xl-compare-title">So sánh cấu hình sản phẩm</h3>
+      <button type="button" class="xl-compare-close" id="xl-compare-close" aria-label="Đóng so sánh">×</button>
+    </div>
+    <div class="xl-compare-body" id="xl-compare-body"></div>
+  </div>
+</div><div class="mobile-sticky"><a class="btn red" href="tel:0365365911"><svg class="icon"><use href="#icon-phone"></use></svg> Gọi tư vấn</a><a class="btn dark" href="#tu-van-mien-phi">Soạn yêu cầu</a></div><footer class="footer"><div class="wrap"><p><strong>Auto365 · Bóng LED ô tô</strong></p><p>Hotline ánh sáng: <a href="tel:0365365911">0365 365 911</a> · <a href="https://auto365.vn/chi-nhanh">Hệ thống chi nhánh</a> · <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365">Chính sách bảo mật</a></p><p>Thông tin sản phẩm và nguồn được đối chiếu ngày 18/09/2026. Xác nhận cấu hình và báo giá trước khi lắp.</p></div></footer><script type="application/json" id="product-data">[{"id": "s3", "family": "s3", "name": "X-Light S3 Pro V2", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h1", "h7", "h11", "9005", "9006", "9012"], "socketText": "H1 / H7 / H11 / 9005 / 9006 / 9012", "price": 1500000, "unit": "bộ", "kelvin": "6000K", "voltage": "12/24V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Cân nhắc khi ưu tiên ngân sách từ 1,5 triệu đồng cho bộ bóng; kiểm tra khoảng hở, hệ điện và vùng sáng.", "source": "s3", "maker": "x3", "url": "https://auto365.vn/bong-led-x-light-s3-pro-v2", "sourceUrl": "https://auto365.vn/bong-led-x-light-s3-pro-v2", "date": "2026-09-18", "priceText": "1.500.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s3-pro-v2-2jpg-img_695f1520573f10.37907652_auto365vn-1767839008-0.jpg.webp"}, {"id": "s3h4", "family": "s3", "name": "X-Light S3 Pro V2 H4", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h4"], "socketText": "H4", "price": 1600000, "unit": "bộ", "kelvin": "6000K", "voltage": "12/24V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Phiên bản H4 cho cấu hình dùng chung Cos/Pha; phải thử cả hai chế độ sau khi lắp.", "source": "s3h4", "maker": "x3", "url": "https://auto365.vn/bong-led-x-light-s3-pro-v2-chan-h4", "sourceUrl": "https://auto365.vn/bong-led-x-light-s3-pro-v2-chan-h4", "date": "2026-09-18", "priceText": "1.600.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s3-pro-v2-h4jpg-img_695f16e809e3a7.78715026_auto365vn-1767839464-0.jpg.webp"}, {"id": "s6", "family": "s6", "name": "X-Light S6 Pro V2", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h1", "h7", "h11", "9005", "9006", "9012"], "socketText": "H1 / H7 / H11 / 9005 / 9006 / 9012", "price": 2000000, "unit": "bộ", "kelvin": "6000K", "voltage": "12V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Cân nhắc khi cần thử và căn vị trí bóng trong cụm đèn; có hồ sơ VF5 Plus dùng phiên bản H7 để tham khảo.", "source": "s6", "maker": "x6", "url": "https://auto365.vn/bong-led-x-light-s6-pro-v2", "sourceUrl": "https://auto365.vn/bong-led-x-light-s6-pro-v2", "date": "2026-09-18", "priceText": "2.000.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s6-pro-v2-2jpg-img_695f37003ad421.05937516_auto365vn-1767847680-0.jpg.webp"}, {"id": "s6h4", "family": "s6", "name": "X-Light S6 Pro V2 H4", "brand": "X-Light", "brandKey": "xlight", "sockets": ["h4"], "socketText": "H4", "price": 2200000, "unit": "bộ", "kelvin": "6000K", "voltage": "12V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "Chưa gồm VAT", "fit": "Phiên bản H4 của S6 Pro V2. Không dùng kết quả lắp H7 để suy ra hiệu quả trên cụm H4.", "source": "s6h4", "maker": "x6", "url": "https://auto365.vn/bong-led-x-light-s6-pro-v2-chan-h4", "sourceUrl": "https://auto365.vn/bong-led-x-light-s6-pro-v2-chan-h4", "date": "2026-09-18", "priceText": "2.200.000 đ/bộ", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/products/auto365vn-bong-led-x-light-s6-pro-v2-4jpg-img_695f38042eb080.27014796_auto365vn-1767847940-0.jpg.webp"}, {"id": "s8", "family": "s8", "name": "S8 Pro 4300K H4", "brand": "X-Light – Series NaoEvo", "brandKey": "xlight", "sockets": ["h4"], "socketText": "H4", "price": 2700000, "unit": "cặp", "kelvin": "4300K", "voltage": "Xem hồ sơ đúng phiên bản", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "VAT xác nhận theo báo giá", "fit": "Cân nhắc nếu muốn màu ánh sáng ấm hơn 6000K. Hiệu quả khi mưa vẫn phải đánh giá qua cụm đèn thực tế.", "source": "s8", "maker": "x8", "url": "https://auto365.vn/bong-led-naoevo-s8-pro-nhiet-mau-4300k-chan-h4", "sourceUrl": "https://auto365.vn/bong-led-naoevo-s8-pro-nhiet-mau-4300k-chan-h4", "date": "2026-09-18", "priceText": "2.700.000 đ/cặp", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/product/X-LIGHT/bong-led-s8-pro-4300K-chan-h4/s8-pro-4300k-chan-h4-5.png.webp"}, {"id": "s9", "family": "s9", "name": "NaoEvo S9 Pro H7", "brand": "NaoEvo", "brandKey": "naoevo", "sockets": ["h7"], "socketText": "H7", "price": 2800000, "unit": "cặp", "kelvin": "5800K", "voltage": "9–16V", "warranty": "24 tháng", "group": "main", "position": "Đèn chính", "vat": "VAT xác nhận theo báo giá", "fit": "Mã H7 có hồ sơ VF3 để tham khảo. Cần xác nhận đúng phiên bản, nguồn hàng và điều kiện bảo hành khi đặt.", "source": "s9", "maker": null, "url": "https://auto365.vn/bong-led-naoevo-s9-pro-chan-h7", "sourceUrl": "https://auto365.vn/bong-led-naoevo-s9-pro-chan-h7", "date": "2026-09-18", "priceText": "2.800.000 đ/cặp", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/product/naoevo/s9-pro/h7/1.jpg.webp"}, {"id": "t10", "family": "t10", "name": "X-Light T10", "brand": "X-Light", "brandKey": "xlight", "sockets": ["t10"], "socketText": "T10", "price": 200000, "unit": "cặp", "kelvin": "Trắng / vàng / xanh theo phiên bản", "voltage": "Xác nhận theo phiên bản", "warranty": "12 tháng", "group": "aux", "position": "Đèn phụ", "vat": "Chưa gồm VAT", "fit": "Dành cho vị trí dùng chân T10 phù hợp. Không thay thế bóng đèn chính H4/H7/H11; màu đèn phải đúng công năng vị trí lắp.", "source": "t10", "maker": null, "url": "https://auto365.vn/den-led-x-light-t10", "sourceUrl": "https://auto365.vn/den-led-x-light-t10", "date": "2026-09-18", "priceText": "200.000 đ/cặp", "installation": "Công lắp, căn chỉnh và phụ kiện xác nhận riêng", "image": "https://auto365.vn/uploads/images/product_12052026/xlight-t10-1.jpg.webp"}, {"id":"ns9-9005","family":"ns9","name":"NaoEvo S9 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":2800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-9005","date":"2026-09-18","priceText":"2.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/9005/1.jpg.webp"}, {"id":"ns9-h11","family":"ns9","name":"NaoEvo S9 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":2800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h11","date":"2026-09-18","priceText":"2.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/h11/1.jpg.webp"}, {"id":"ns9-h4","family":"ns9","name":"NaoEvo S9 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":3000000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h4","date":"2026-09-18","priceText":"3.000.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/h4/1.jpg.webp"}, {"id":"ns9-h1","family":"ns9","name":"NaoEvo S9 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":2800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Công suất cao nhất trong dòng NaoEvo; kiểm tra hệ điện và khoảng hở trước khi chọn.","source":"ns9-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s9-pro-chan-h1","date":"2026-09-18","priceText":"2.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s9-pro/h1/1.jpg.webp"}, {"id":"ns8-9005","family":"ns8","name":"NaoEvo S8 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-9005","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/9005/1.jpg.webp"}, {"id":"ns8-h11","family":"ns8","name":"NaoEvo S8 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h11","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h11/1.jpg.webp"}, {"id":"ns8-h7","family":"ns8","name":"NaoEvo S8 Pro H7","brand":"NaoEvo","brandKey":"naoevo","sockets":["h7"],"socketText":"H7","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h7","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h7","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h7","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h7/1.jpg.webp"}, {"id":"ns8-h4","family":"ns8","name":"NaoEvo S8 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":2700000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h4","date":"2026-09-18","priceText":"2.700.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h4/1.jpg.webp"}, {"id":"ns8-h1","family":"ns8","name":"NaoEvo S8 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":2500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân bằng công suất và giá; xác nhận đúng chân và phiên bản trước khi đặt.","source":"ns8-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s8-pro-chan-h1","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s8-pro/h1/1.jpg.webp"}, {"id":"ns6-9005","family":"ns6","name":"NaoEvo S6 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-9005","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/9005/1.jpg.webp"}, {"id":"ns6-h11","family":"ns6","name":"NaoEvo S6 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h11","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h11/1.jpg.webp"}, {"id":"ns6-h7","family":"ns6","name":"NaoEvo S6 Pro H7","brand":"NaoEvo","brandKey":"naoevo","sockets":["h7"],"socketText":"H7","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h7","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h7","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h7","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h7/1.jpg.webp"}, {"id":"ns6-h4","family":"ns6","name":"NaoEvo S6 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":2000000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h4","date":"2026-09-18","priceText":"2.000.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h4/1.jpg.webp"}, {"id":"ns6-h1","family":"ns6","name":"NaoEvo S6 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":1800000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Phù hợp ngân sách tầm trung; kiểm tra chân bóng và hệ điện trước khi lắp.","source":"ns6-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s6-pro-chan-h1","date":"2026-09-18","priceText":"1.800.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s6-pro/h1/S6pro-H1.jpg.webp"}, {"id":"ns3-9005","family":"ns3","name":"NaoEvo S3 Pro 9005","brand":"NaoEvo","brandKey":"naoevo","sockets":["9005","9006","9012"],"socketText":"9005 / 9006 / 9012","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-9005","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-9005","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-9005","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/9005-9006-9012/1.jpg.webp"}, {"id":"ns3-h11","family":"ns3","name":"NaoEvo S3 Pro H11","brand":"NaoEvo","brandKey":"naoevo","sockets":["h11"],"socketText":"H11","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h11","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h11","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h11","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h11/1.jpg.webp"}, {"id":"ns3-h7","family":"ns3","name":"NaoEvo S3 Pro H7","brand":"NaoEvo","brandKey":"naoevo","sockets":["h7"],"socketText":"H7","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h7","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h7","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h7","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h7/1.jpg.webp"}, {"id":"ns3-h4","family":"ns3","name":"NaoEvo S3 Pro H4","brand":"NaoEvo","brandKey":"naoevo","sockets":["h4"],"socketText":"H4","price":1700000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h4","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h4","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h4","date":"2026-09-18","priceText":"1.700.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h4/1.jpg.webp"}, {"id":"ns3-h1","family":"ns3","name":"NaoEvo S3 Pro H1","brand":"NaoEvo","brandKey":"naoevo","sockets":["h1"],"socketText":"H1","price":1500000,"unit":"cặp","kelvin":"5800K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Khởi điểm ngân sách thấp trong dòng NaoEvo; xác nhận đúng chân bóng trước khi lắp.","source":"ns3-h1","maker":null,"url":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h1","sourceUrl":"https://auto365.vn/bong-led-naoevo-s3-pro-chan-h1","date":"2026-09-18","priceText":"1.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/naoevo/s3-pro/h1/1.jpg.webp"}, {"id":"s8k43","family":"s8k43","name":"S8 Pro 4300K","brand":"X-Light – Series NaoEvo","brandKey":"xlight","sockets":["h1","h7","h11","9005","9006","9012"],"socketText":"H1 / H7 / H11 / 9005 / 9006 / 9012","price":2500000,"unit":"cặp","kelvin":"4300K","voltage":"Xem hồ sơ đúng phiên bản","warranty":"24 tháng","group":"main","position":"Đèn chính","vat":"VAT xác nhận theo báo giá","fit":"Cân nhắc nếu muốn màu ánh sáng ấm hơn 6000K; xác nhận đúng phiên bản trước khi đặt.","source":"s8k43","maker":"x8k43","url":"https://auto365.vn/bong-led-s8-pro-4300k","sourceUrl":"https://auto365.vn/bong-led-s8-pro-4300k","date":"2026-09-18","priceText":"2.500.000 đ/cặp","installation":"Công lắp, căn chỉnh và phụ kiện xác nhận riêng","image":"https://auto365.vn/uploads/images/product/X-LIGHT/naoevo-s8-pro-4300k/naoevo-s8-pro-4300k-4.png.webp"}]</script><script>(()=>{
  'use strict';
  const $=(q,c=document)=>c.querySelector(q), $$=(q,c=document)=>Array.from(c.querySelectorAll(q));
  const products=JSON.parse($('#product-data').textContent), byId=new Map(products.map(p=>[p.id,p]));
@@ -2750,51 +2938,250 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
   list.forEach(p=>$('#product-grid').append($(`[data-product-id="${p.id}"]`)));
   emit('sort',order);
  });
- function updateCompare(){
-  $('#compare-tray').hidden=selected.size===0;
-  $('#compare-count').textContent=`${selected.size}/3 cấu hình đã chọn`;
-  $('#open-compare').disabled=selected.size<2;
-  $$('[data-compare]').forEach(i=>i.checked=selected.has(i.dataset.compare));
- }
- $$('[data-compare]').forEach(i=>i.addEventListener('change',()=>{
-  const p=byId.get(i.dataset.compare);
-  if(i.checked&&selected.size>=3){i.checked=false;toast('Chọn tối đa 3 cấu hình. Bỏ một cấu hình trước khi thêm.');return;}
-  if(i.checked&&selected.size&&byId.get([...selected][0]).group!==p.group){i.checked=false;toast('T10 là đèn phụ. Hãy so sánh các cấu hình cùng nhiệm vụ chiếu sáng.');return;}
-  i.checked?selected.add(p.id):selected.delete(p.id);updateCompare();emit('compare_select',p.id);
- }));
- $('#clear-compare').addEventListener('click',()=>{selected.clear();updateCompare();});
- $('#open-compare').addEventListener('click',()=>{
-  if(selected.size<2)return;
-  const list=[...selected].map(id=>byId.get(id)),table=el('table'),caption=el('caption','Giá sản phẩm theo đơn vị niêm yết; không quy đổi bộ/cặp khi chưa xác nhận thành phần.');table.append(caption);
-  const head=el('thead'),row=el('tr');const corner=el('th','Tiêu chí');corner.scope='col';row.append(corner);
-  list.forEach(p=>{const th=el('th',p.name);th.scope='col';row.append(th);});head.append(row);table.append(head);
-  const body=el('tbody');
-  const rows=[['Chân bóng',p=>p.socketText],['Thương hiệu',p=>p.brand],['Nhiệt màu',p=>p.kelvin],['Điện áp',p=>p.voltage],['Giá sản phẩm',p=>p.priceText],['VAT',p=>p.vat],['Công lắp / phụ kiện',p=>p.installation],['Bảo hành thiết bị',p=>p.warranty],['Điều kiện lựa chọn',p=>p.fit]];
-  rows.forEach(([title,get])=>{const tr=el('tr'),th=el('th',title);th.scope='row';tr.append(th);list.forEach(p=>tr.append(el('td',get(p))));body.append(tr);});
-  const sr=el('tr'),sh=el('th','Nguồn');sh.scope='row';sr.append(sh);list.forEach(p=>{const td=el('td'),link=el('a','Xem hồ sơ sản phẩm');link.href=p.url;td.append(link);sr.append(td);});body.append(sr);table.append(body);
-  const wrap=el('div',undefined,'table-wrap');wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Bảng so sánh cấu hình');wrap.append(table);$('#compare-table').replaceChildren(wrap);
-  $('#compare-dialog').showModal();$('#close-compare').focus();emit('compare_open',list.map(p=>p.id).join(','));
- });
- $('#close-compare').addEventListener('click',()=>$('#compare-dialog').close());
- $('#compare-dialog').addEventListener('close',()=>$('#open-compare').focus());
- const tips={city:'Ưu tiên kiểm tra vùng chiếu gần và độ chói ở chế độ Cos.',night:'Kiểm tra cả Cos/Pha, vùng chiếu xa và khoảng tối; trao đổi thêm về Bi LED nếu thay bóng chưa đáp ứng.',rain:'Đánh giá vùng sáng và phản xạ khi mặt đường ướt. Không chọn chỉ theo Kelvin.',issue:'Cần kiểm tra lỗi điện trước khi chọn bóng: nguồn cấp, jack, điều khiển và cảnh báo taplo.',look:'Cân nhắc màu ánh sáng sau khi đã xác nhận công năng, độ phù hợp và vùng sáng.'};
- const heroForm=$('#hero-sales-form');if(heroForm)heroForm.addEventListener('submit',event=>{
-  event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;
-  const brand=$('#hero-car-brand').value,model=$('#hero-car-model').value.trim(),year=$('#hero-car-year').value,trim=$('#hero-trim').value.trim(),position=$('#hero-light-position').value,need=$('#hero-driving-need').value;
-  if(!model){$('#hero-car-model').setCustomValidity('Vui lòng nhập dòng xe.');$('#hero-car-model').reportValidity();return;}
-  const result=$('#hero-sales-result');result.replaceChildren();result.classList.add('result-ready');
-  result.append(el('strong',`${brand} ${model} · ${year}${trim?' · '+trim:''}`));
-  result.append(el('p',need==='issue'?'Ưu tiên kiểm tra lỗi điện trước khi nâng cấp.':'Thông tin để chuẩn bị buổi tư vấn; chưa xác nhận tương thích.'));
-  if(!trim)result.append(el('p','Cần bổ sung phiên bản và loại cụm đèn đang dùng.'));
-  if(position==='unknown')result.append(el('p','Cần xác định vị trí đèn muốn thay trước khi chọn chân bóng.'));
-  else if(position==='fog'){const p=el('p','Đèn gầm cần phân biệt thay bóng trong cụm gầm với lắp Bi gầm. '),link=el('a','Xem tuyến Bi gầm');link.href='https://auto365.vn/nang-cap-anh-sang-bi-gam';p.append(link);result.append(p);}
-  else if(position==='aux')result.append(el('p','Đèn phụ cần đúng vị trí và chuẩn chân. Không dùng danh mục đèn chính để suy ra tương thích.'));
-  result.append(el('p',tips[need]));
-  result.append(el('p','Bước tiếp theo: xác nhận chân bóng, quang học, nắp chụp, khoảng hở và hệ điện; kiểm tra vùng sáng sau lắp.'));
-  const link=el('a','Soạn yêu cầu tư vấn →','text-link');link.href='#tu-van-mien-phi';result.append(link);
-  $('#mid-brand').value=brand;$('#mid-model').value=model+(trim?' '+trim:'');$('#mid-year').value=year;
-  result.focus({preventScroll:true});emit('fit_check');
- });
+ function closeCompareModal() {
+    const modal = document.getElementById('xl-compare-overlay');
+    if (modal) {
+      modal.classList.remove('is-open');
+      document.documentElement.style.overflow = '';
+    }
+  }
+
+  function renderCompareTable() {
+    const modal = document.getElementById('xl-compare-overlay');
+    if (!modal) return;
+    const body = document.getElementById('xl-compare-body');
+    if (!body) return;
+
+    if (selected.size < 2) {
+      body.innerHTML = '<p class="xl-compare-empty">Tích chọn tối thiểu 2 sản phẩm bằng ô "So sánh" trên từng thẻ sản phẩm để xem bảng đối chiếu.</p>';
+      return;
+    }
+
+    const list = [...selected].map(id => byId.get(id));
+    const rows = [];
+
+    function rowHtml(label, cells, cls = '') {
+      return '<tr><th scope="row">' + label + '</th>' + cells.map(c => '<td class="' + cls + '">' + c + '</td>').join('') + '</tr>';
+    }
+
+    // 1. Image
+    rows.push(rowHtml('Hình ảnh', list.map(p => p.image ? '<img src="' + p.image + '" alt="' + p.name.replace(/"/g, '&quot;') + '">' : ''), 'xl-img-cell'));
+    // 2. Name
+    rows.push(rowHtml('Sản phẩm', list.map(p => '<a class="xl-name" href="' + p.url + '" target="_blank" rel="noreferrer">' + p.name + '</a>')));
+    // 3. Brand
+    rows.push(rowHtml('Thương hiệu', list.map(p => '<strong>' + p.brand + '</strong>')));
+    // 4. Price
+    rows.push(rowHtml('Giá niêm yết', list.map(p => '<span class="xl-price">' + p.priceText + '</span><span class="xl-vat">' + p.vat + '</span>')));
+    // 5. Socket
+    rows.push(rowHtml('Chân bóng', list.map(p => '<span style="font-weight:700; color:#101d2d;">' + p.socketText + '</span>')));
+    // 6. Color Temp
+    rows.push(rowHtml('Nhiệt màu', list.map(p => p.kelvin)));
+    // 7. Voltage
+    rows.push(rowHtml('Hệ điện xe', list.map(p => p.voltage)));
+    // 8. Warranty
+    rows.push(rowHtml('Bảo hành', list.map(p => '<span class="badge dark" style="padding:3px 8px; border-radius:6px; background:#1e293b; color:#fff; font-size:11px; font-weight:700;">' + p.warranty + '</span>')));
+    // 9. Installation
+    rows.push(rowHtml('Công lắp / căn chỉnh', list.map(p => p.installation)));
+    // 10. Fit / Recommendation
+    rows.push(rowHtml('Phù hợp theo xe', list.map(p => '<span style="font-size:12px; color:#475569; line-height:1.45;">' + p.fit + '</span>')));
+    // 11. Actions
+    rows.push(rowHtml('Hành động', list.map(p => `
+      <div style="display:flex; flex-direction:column; gap:6px;">
+        <button type="button" class="btn red" style="width:100%; min-height:36px; padding:0 10px; font-size:12.5px; font-weight:800; border-radius:8px; border:0; background:#e31b2d; color:#fff; cursor:pointer;" data-compare-consult="${p.id}">Tư vấn dòng này</button>
+        <button type="button" style="background:none; border:0; color:#64748b; font-size:11.5px; cursor:pointer; text-decoration:underline;" data-compare-remove="${p.id}">Bỏ so sánh</button>
+      </div>
+    `)));
+
+    body.innerHTML = `
+      <table class="xl-compare-table">
+        ${rows.join('')}
+      </table>
+      <p class="xl-compare-tip">Đang so sánh ${list.length}/3 cấu hình. Tích hoặc bỏ tích ô "So sánh" trên danh mục để thay đổi.</p>
+    `;
+
+    // Remove item directly from compare table
+    body.querySelectorAll('[data-compare-remove]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.compareRemove;
+        selected.delete(id);
+        updateCompare();
+        if (selected.size < 2) {
+          closeCompareModal();
+        } else {
+          renderCompareTable();
+        }
+      });
+    });
+
+    // Consult item from compare table
+    body.querySelectorAll('[data-compare-consult]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.compareConsult;
+        const p = byId.get(id);
+        closeCompareModal();
+        if (p && typeof window.showConsultStepGlobal === 'function') {
+          window.showConsultStepGlobal({
+            id: p.id,
+            name: p.name,
+            priceText: p.priceText,
+            img: p.image
+          }, { isPick: true, isUpgrade: false, diffBudget: 0, diffBase: 0 });
+        } else {
+          const f = document.getElementById('tu-van-mien-phi');
+          if (f) f.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  }
+
+  function openCompareModal() {
+    if (selected.size < 2) return;
+    renderCompareTable();
+    const modal = document.getElementById('xl-compare-overlay');
+    if (modal) {
+      modal.classList.add('is-open');
+      document.documentElement.style.overflow = 'hidden';
+      emit('compare_open', [...selected].join(','));
+    }
+  }
+
+  function updateCompare(){
+    const tray = document.getElementById('compare-tray');
+    if (tray) {
+      tray.hidden = selected.size === 0;
+      document.getElementById('compare-count').textContent = selected.size + '/3 cấu hình đã chọn';
+      const openBtn = document.getElementById('open-compare');
+      if (openBtn) {
+        openBtn.disabled = selected.size < 2;
+        openBtn.textContent = selected.size < 2 ? 'Chọn thêm để so sánh' : 'Xem so sánh (' + selected.size + ')';
+      }
+    }
+    $$('[data-compare]').forEach(i => i.checked = selected.has(i.dataset.compare));
+  }
+
+  $$('[data-compare]').forEach(i => i.addEventListener('change', () => {
+    const p = byId.get(i.dataset.compare);
+    if (i.checked && selected.size >= 3) {
+      i.checked = false;
+      toast('Chọn tối đa 3 cấu hình. Bỏ một cấu hình trước khi thêm.');
+      return;
+    }
+    if (i.checked && selected.size && byId.get([...selected][0]).group !== p.group) {
+      i.checked = false;
+      toast('T10 là đèn phụ. Hãy so sánh các cấu hình cùng nhiệm vụ chiếu sáng.');
+      return;
+    }
+
+    if (i.checked) {
+      selected.add(p.id);
+      updateCompare();
+      emit('compare_select', p.id);
+      // AUTO OPEN POPUP WHEN 2 PRODUCTS SELECTED (AS REQUESTED)
+      if (selected.size >= 2) {
+        openCompareModal();
+      }
+    } else {
+      selected.delete(p.id);
+      updateCompare();
+      emit('compare_select', p.id);
+      if (selected.size < 2) {
+        closeCompareModal();
+      } else {
+        renderCompareTable();
+      }
+    }
+  }));
+
+  const btnOpenComp = document.getElementById('open-compare');
+  if (btnOpenComp) {
+    btnOpenComp.addEventListener('click', () => {
+      if (selected.size >= 2) openCompareModal();
+    });
+  }
+
+  const btnClearComp = document.getElementById('clear-compare');
+  if (btnClearComp) {
+    btnClearComp.addEventListener('click', () => {
+      selected.clear();
+      updateCompare();
+      closeCompareModal();
+    });
+  }
+
+  const compOverlay = document.getElementById('xl-compare-overlay');
+  if (compOverlay) {
+    compOverlay.addEventListener('click', e => {
+      if (e.target === compOverlay) closeCompareModal();
+    });
+  }
+
+  const btnCloseComp = document.getElementById('xl-compare-close');
+  if (btnCloseComp) {
+    btnCloseComp.addEventListener('click', closeCompareModal);
+  }
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('xl-compare-overlay');
+      if (modal && modal.classList.contains('is-open')) {
+        closeCompareModal();
+      }
+    }
+  });
+
+  const tips = {
+    city: 'Ưu tiên kiểm tra vùng chiếu gần và độ chói ở chế độ Cos.',
+    night: 'Kiểm tra cả Cos/Pha, vùng chiếu xa và khoảng tối; trao đổi thêm về Bi LED nếu thay bóng chưa đáp ứng.',
+    rain: 'Đánh giá vùng sáng và phản xạ khi mặt đường ướt. Không chọn chỉ theo Kelvin.',
+    issue: 'Cần kiểm tra lỗi điện trước khi chọn bóng: nguồn cấp, jack, điều khiển và cảnh báo taplo.',
+    look: 'Cân nhắc màu ánh sáng sau khi đã xác nhận công năng, độ phù hợp và vùng sáng.'
+  };
+
+  const heroForm = $('#hero-sales-form');
+  if (heroForm) heroForm.addEventListener('submit', event => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    if (!form.reportValidity()) return;
+    const brand = $('#hero-car-brand')?.value || '',
+          model = ($('#hero-car-model')?.value || '').trim(),
+          year = $('#hero-car-year')?.value || '',
+          trim = ($('#hero-trim')?.value || '').trim(),
+          position = $('#hero-light-position')?.value || '',
+          need = $('#hero-driving-need')?.value || '';
+    if (!model && $('#hero-car-model')) {
+      $('#hero-car-model').setCustomValidity('Vui lòng nhập dòng xe.');
+      $('#hero-car-model').reportValidity();
+      return;
+    }
+    const result = $('#hero-sales-result');
+    if (result) {
+      result.replaceChildren();
+      result.classList.add('result-ready');
+      result.append(el('strong', `${brand} ${model} · ${year}${trim ? ' · ' + trim : ''}`));
+      result.append(el('p', need === 'issue' ? 'Ưu tiên kiểm tra lỗi điện trước khi nâng cấp.' : 'Thông tin để chuẩn bị buổi tư vấn; chưa xác nhận tương thích.'));
+      if (!trim) result.append(el('p', 'Cần bổ sung phiên bản và loại cụm đèn đang dùng.'));
+      if (position === 'unknown') result.append(el('p', 'Cần xác định vị trí đèn muốn thay trước khi chọn chân bóng.'));
+      else if (position === 'fog') {
+        const p = el('p', 'Đèn gầm cần phân biệt thay bóng trong cụm gầm với lắp Bi gầm. '),
+              link = el('a', 'Xem tuyến Bi gầm');
+        link.href = 'https://auto365.vn/nang-cap-anh-sang-bi-gam';
+        p.append(link);
+        result.append(p);
+      } else if (position === 'aux') {
+        result.append(el('p', 'Đèn phụ cần đúng vị trí và chuẩn chân. Không dùng danh mục đèn chính để suy ra tương thích.'));
+      }
+      if (tips[need]) result.append(el('p', tips[need]));
+      result.append(el('p', 'Bước tiếp theo: xác nhận chân bóng, quang học, nắp chụp, khoảng hở và hệ điện; kiểm tra vùng sáng sau lắp.'));
+      const link = el('a', 'Soạn yêu cầu tư vấn →', 'text-link');
+      link.href = '#tu-van-mien-phi';
+      result.append(link);
+      result.focus({ preventScroll: true });
+    }
+    if ($('#mid-brand') && brand) $('#mid-brand').value = brand;
+    if ($('#mid-model') && model) $('#mid-model').value = model + (trim ? ' ' + trim : '');
+    if ($('#mid-year') && year) $('#mid-year').value = year;
+    emit('fit_check');
+  });
  $('#hero-car-model')?.addEventListener('input',e=>e.target.setCustomValidity(''));
  $('#mid-sales-form').addEventListener('submit', event => {
   event.preventDefault();
@@ -3085,6 +3472,11 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
       vReco.hidden = false;
     }
   }
+
+  window.showConsultStepGlobal = function(item, matchObj) {
+    openModal();
+    showConsultStep(item, matchObj);
+  };
 
   function showConsultStep(item, matchObj) {
     activeConsultItem = item;
