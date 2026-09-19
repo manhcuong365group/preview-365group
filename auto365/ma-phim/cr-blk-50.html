@@ -1570,6 +1570,41 @@
     var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
     if(realCaseLink){realCaseLink.setAttribute('href','#case-title');realCaseLink.textContent='Xem xe thực tế →';}
     }
+    /* Stable case-card imagery: keep article cards visual even while legacy layout mutations stay disabled. */
+    (function restoreCaseCardImages(){
+      var caseSection=document.querySelector('[aria-labelledby="case-title"]');
+      if(!caseSection) return;
+      var caseGrid=caseSection.querySelector('.case-grid');
+      if(!caseGrid) return;
+      var caseImages={
+        'VinFast':'https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-6-dan-cr-blk-50-kinh-lai-img_6aa2631bd4a841.46488692.webp',
+        'Volvo':'https://auto365.vn/uploads/images/news/auto365vn-volvo-xc60-dan-phim-cach-nhiet-3m-o-dau-img_6aa3af39ef5226.13225865.webp',
+        'MG':'https://auto365.vn/uploads/images/news/auto365vn-mg5-dan-phim-3m-crystalline-cr-blk-kiem-tra-khi-nhan-xe-img_6a83c2bd94efa8.75871752.png.webp',
+        'Hyundai':'https://auto365.vn/uploads/images/news/auto365vn-hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk-img_6a76af5a886743.94271249.png.webp',
+        'Toyota':'https://auto365.vn/uploads/images/news/auto365_20260707_172456_6a4cd3f813b05.png.webp',
+        'Mazda':'https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5-14-img_6a574cec6cb8d3.87514689.jpg.webp',
+        'Kia':'https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365-vn-tru-so-chinh-10png-img_6a476b080245d5.35547863_.png.webp',
+        'Ford':'assets/cr-blk-50-before-after.webp',
+        'Mitsubishi':'assets/cr-blk-50-installation.webp',
+        'Lynk & Co':'assets/cr-blk-50-vf6.webp'
+      };
+      caseGrid.querySelectorAll('.case-card').forEach(function(card){
+        if(card.querySelector('.case-media')) return;
+        var brand=(card.querySelector('.case-tag')||{}).textContent||'';
+        brand=brand.trim();
+        var title=(card.querySelector('h3')||{}).textContent||brand;
+        title=title.trim();
+        var image=caseImages[brand]||'assets/cr-blk-50-vf6.webp';
+        card.dataset.brand=brand.toLowerCase();
+        if(brand&&title&&!title.toLowerCase().startsWith(brand.toLowerCase())){
+          card.querySelector('h3').textContent=brand+' '+title;
+        }
+        var media=document.createElement('div');
+        media.className='case-media';
+        media.innerHTML='<img src="'+image+'" alt="Hình ảnh '+brand+' '+title+' trong bài tham khảo cấu hình CR BLK" loading="lazy">';
+        card.insertBefore(media,card.firstChild);
+      });
+    })();
     /* Repair legacy JS literals that were saved as UTF-8 decoded as Latin-1. */
     (function repairLegacyEncoding(){
       var marker=/[ÃÂ]|á»|áº|Ä|Ä‘|Æ°|â€™|â†|â€“|Â·/;
