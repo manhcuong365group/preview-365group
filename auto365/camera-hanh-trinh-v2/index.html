@@ -314,6 +314,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .lead-modal{position:fixed;inset:0;z-index:140;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(18,20,24,.64);backdrop-filter:blur(3px)}
 .lead-modal.open{display:flex}
 .lead-dialog{position:relative;width:min(540px,100%);max-height:min(760px,calc(100vh - 32px));overflow:auto;padding:24px 22px 20px;border:1px solid rgba(255,255,255,.75);border-radius:16px;background:#fff;box-shadow:0 22px 70px rgba(0,0,0,.28)}
+.config-result-dialog{width:min(680px,100%)}
+.config-result-dialog #configResultHead{margin:0 0 14px;padding-right:20px}
 .lead-dialog .lead-form{margin:0;padding:0;border:0}
 .lead-dialog .lead-form h3{margin:0;text-align:center;font-size:18px;letter-spacing:-.3px}
 .lead-dialog .lead-form>p{margin:6px 0 16px;text-align:center;color:#666;font-size:12px}
@@ -828,12 +830,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 <div class="config-action">
 <button id="hubFind" type="button">Xem sản phẩm phù hợp →</button>
-</div>
-<div class="config-result" id="configResult" hidden>
-<h3 id="configResultHead">Các mẫu khớp số kênh và khoảng giá bạn chọn</h3>
-<div class="config-result-grid" id="configResultGrid"></div>
-<div id="configAlt" hidden></div>
-<p class="config-result-note">Đây là kết quả lọc theo số kênh và ngân sách. Auto365 cần biết thêm dòng xe, đời xe và nhu cầu ghi khi đỗ để xác nhận bộ nguồn, phụ kiện và tổng chi phí lắp đặt phù hợp.</p>
 </div>
 </div>
 </aside>
@@ -1795,6 +1791,16 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 <p class="v2-video-caption">Video do Auto365 Review thực hiện, đánh giá tính năng camera hành trình 70mai A210 — không thay thế bước tư vấn theo đúng xe của bạn.</p>
 </div>
+<div class="lead-modal" id="configResultModal" role="dialog" aria-modal="true" aria-labelledby="configResultHead" hidden>
+<div class="lead-dialog config-result-dialog">
+<button type="button" class="lead-dialog-close" id="configResultModalClose" aria-label="Đóng kết quả tư vấn">×</button>
+<h3 id="configResultHead">Các mẫu khớp số kênh và khoảng giá bạn chọn</h3>
+<div class="config-result-grid" id="configResultGrid"></div>
+<div id="configAlt" hidden></div>
+<p class="config-result-note">Đây là kết quả lọc theo số kênh và ngân sách. Auto365 cần biết thêm dòng xe, đời xe và nhu cầu ghi khi đỗ để xác nhận bộ nguồn, phụ kiện và tổng chi phí lắp đặt phù hợp.</p>
+</div>
+</div>
+
 <div class="lead-modal" id="leadModal" role="dialog" aria-modal="true" aria-labelledby="leadModalTitle" hidden>
 <div class="lead-dialog">
 <button type="button" class="lead-dialog-close" id="leadModalClose" aria-label="Đóng form tư vấn">×</button>
@@ -2852,6 +2858,21 @@ document.querySelectorAll('[data-jump-brand]').forEach(link => link.addEventList
   render();
 }));
 
+// Config result modal close handling
+(function() {
+  const modal = document.getElementById('configResultModal');
+  const close = document.getElementById('configResultModalClose');
+  if (!modal || !close) return;
+  const closeModal = () => {
+    modal.classList.remove('open');
+    modal.hidden = true;
+    document.body.style.overflow = '';
+  };
+  close.addEventListener('click', closeModal);
+  modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
+})();
+
 // Jump to price tier from Price Tiers cards
 document.querySelectorAll('[data-jump-price]').forEach(btn => btn.addEventListener('click', () => {
   const value = btn.dataset.jumpPrice;
@@ -2986,7 +3007,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   render();
 
   const { picks, relaxed } = pickConfigs(channel, budget, use, wantParking);
-  const resultBox = document.querySelector('#configResult');
+  const resultBox = document.querySelector('#configResultModal');
   const resultGrid = document.querySelector('#configResultGrid');
   const resultHead = document.querySelector('#configResultHead');
   const altBox = document.querySelector('#configAlt');
@@ -3018,7 +3039,8 @@ document.querySelector('#hubFind').addEventListener('click', () => {
     }
 
     resultBox.hidden = false;
-    resultBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    resultBox.classList.add('open');
+    document.body.style.overflow = 'hidden';
   } else {
     resultBox.hidden = true;
     altBox.hidden = true;
