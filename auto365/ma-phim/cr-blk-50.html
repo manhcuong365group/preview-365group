@@ -411,6 +411,33 @@
     .answer-first{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:0 12px 34px rgba(15,18,22,.06)}
     .answer-first p{font-size:18px;color:#444b54;margin:0;max-width:900px}
     .hero-media{position:relative}
+    .hero-recommend{display:grid;gap:14px;border:1px solid rgba(255,255,255,.16);border-radius:26px;background:#151820;padding:22px;box-shadow:0 24px 70px rgba(0,0,0,.28)}
+    .hero-recommend-kicker{color:#ffb5b9;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+    .hero-recommend h2{margin:0;color:#fff;font-size:clamp(24px,2.4vw,34px)!important;font-weight:550!important;line-height:1.12!important}
+    .hero-recommend p{margin:0;color:#c7cdd6;font-size:14px;line-height:1.55}
+    .film-suggest-list{display:grid;gap:10px;margin-top:4px}
+    .film-suggest-card{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:start;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:#1d222b;padding:14px}
+    .film-suggest-code{display:flex;align-items:center;justify-content:center;min-width:62px;height:44px;border-radius:12px;background:#fff;color:#111214;font-size:21px;font-weight:750;letter-spacing:-.04em}
+    .film-suggest-card.is-current{border-color:rgba(237,7,21,.55);background:#231b20}
+    .film-suggest-card.is-current .film-suggest-code{background:var(--red);color:#fff}
+    .film-suggest-card strong{display:block;color:#fff;font-size:15px;margin-bottom:4px}
+    .film-suggest-card span{display:block;color:#aeb7c3;font-size:12px;line-height:1.45}
+    .hero-recommend-foot{display:flex;flex-wrap:wrap;gap:9px;margin-top:4px}
+    .hero-recommend-foot a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;border-radius:999px;padding:9px 13px;text-decoration:none;font-size:12px;font-weight:750}
+    .hero-recommend-foot a:first-child{background:var(--red);color:#fff}
+    .hero-recommend-foot a:last-child{border:1px solid rgba(255,255,255,.18);color:#fff}
+    .hero-fit-card{background:#fff;border-radius:24px;padding:24px;box-shadow:0 30px 80px rgba(0,0,0,.38)}
+    .hero-fit-card h3{margin:0 0 14px;font-size:18px!important;font-weight:600;color:#111214}
+    .hero-fit-card .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .hero-fit-card .field-wide{grid-column:1/-1}
+    .hero-fit-card .field label{display:block;font-size:11px;font-weight:700;color:#5d626b;margin-bottom:5px}
+    .hero-fit-card select{width:100%;min-height:42px;border:1px solid #dfe3e8;border-radius:10px;background:#fff;color:#252a30;padding:8px 10px;font-size:13px}
+    .hero-fit-card .fit-submit{width:100%;min-height:46px;margin-top:14px;border:0;border-radius:999px;background:var(--red);color:#fff;font-weight:700;cursor:pointer}
+    .hero-fit-card .fit-result{margin-top:14px;padding:14px;border-radius:14px;background:#f7f8fa;border:1px solid #ece9e3;color:#4b525c;font-size:13px}
+    .hero-fit-card .fit-result strong{display:block;color:var(--red);font-size:14px;margin-bottom:5px}
+    .hero-fit-card .fit-result p{margin:6px 0 0}
+    .metric-ribbon-label{margin:16px 0 8px;color:#c7cdd6;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+    @media (max-width:640px){.hero-fit-card{padding:18px;border-radius:18px}.hero-fit-card .field-grid{grid-template-columns:1fr}}
     .image-frame{position:relative;border-radius:30px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.18);background:#1b1e22}
     .image-frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(5,6,8,.72) 100%)}
     .image-frame img{width:100%;aspect-ratio:4/3;object-fit:cover}
@@ -1065,12 +1092,20 @@
           </div>
         </div>
         <div class="hero-media">
-          <figure class="image-frame">
-            <img src="assets/cr-blk-50-vf6.webp" alt="VinFast VF 6 dán phim 3M Crystalline CR BLK 50 tại Auto365" width="800" height="533" fetchpriority="high">
-            <span class="source-chip">3M TDS · Revision F · August 2025</span>
-            <figcaption class="image-caption">Ảnh xe thực tế dán dòng CR BLK; mã phim cần đọc từ phiếu cấu hình từng xe.</figcaption>
-          </figure>
-          <div class="metric-ribbon" aria-label="Thông số trên kính Auto 75"><div class="metric"><strong>48%</strong><span>VLT · truyền sáng</span></div><div class="metric"><strong>56%</strong><span>TSER · tổng năng lượng</span></div><div class="metric"><strong>68%</strong><span>IRER · dải rộng</span></div><div class="metric"><strong>99,9%</strong><span>UV Block</span></div></div>
+          <div class="hero-fit-card" id="fit-title" aria-label="Gợi ý mã phim theo vị trí kính">
+            <h3>Gợi ý mã phim theo vị trí kính</h3>
+            <form class="fit-form" data-fit-form>
+              <div class="field-grid">
+                <div class="field"><label for="priority">Ưu tiên sử dụng</label><select id="priority" name="priority"><option value="visibility">Ưu tiên quan sát</option><option value="balance">Cân bằng sáng và giảm chói</option><option value="privacy">Ưu tiên riêng tư</option></select></div>
+                <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
+                <div class="field field-wide"><label for="night">Tần suất đi đêm</label><select id="night" name="night"><option value="often">Thường xuyên</option><option value="sometimes">Thỉnh thoảng</option><option value="rare">Hiếm khi</option></select></div>
+              </div>
+              <button class="fit-submit" type="submit">Đề xuất mã kính</button>
+              <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Đề xuất mã kính" để xem gợi ý</strong><p class="fit-note">3 lựa chọn ở trên đã có sẵn mặc định — đổi lại theo nhu cầu rồi bấm nút để nhận mã CR BLK phù hợp.</p></div>
+            </form>
+          </div>
+          <p class="metric-ribbon-label" data-ribbon-label>Thông số CR BLK 50 · Auto 75 Glass</p>
+          <div class="metric-ribbon" aria-label="Thông số theo mã đang xem" data-metric-ribbon><div class="metric" data-metric="vlt"><strong>48%</strong><span>VLT · truyền sáng</span></div><div class="metric" data-metric="tser"><strong>56%</strong><span>TSER · tổng năng lượng</span></div><div class="metric" data-metric="irer"><strong>68%</strong><span>IRER · dải rộng</span></div><div class="metric" data-metric="uv"><strong>99,9%</strong><span>UV Block</span></div></div>
         </div>
       </div>
     </div>
@@ -1109,7 +1144,6 @@
         <div class="trust-item"><strong>Kiểm tra thiết bị sau dán</strong><span>Kiểm tra GPS, ETC/VETC, camera và HUD theo từng xe.</span></div>
       </div>
       <section class="section" id="phu-hop" aria-labelledby="position-title"><div class="section-kicker">Bản đồ vị trí kính</div><h2 id="position-title">CR BLK 50 nên được cân nhắc ở đâu?</h2><p class="lede">Đây là gợi ý tư vấn Auto365 dựa trên VLT và bối cảnh sử dụng, không phải chỉ định vị trí kính của 3M. Mỗi xe vẫn phải kiểm tra kính nguyên bản.</p><div class="position-grid"><article class="position-card yes"><span class="state">Cân bằng</span><h3>Kính lái</h3><p>Gợi ý phổ biến khi cần dung hòa tầm nhìn, giảm chói và hiệu năng.</p></article><article class="position-card yes"><span class="state">Sáng</span><h3>Kính sườn trước</h3><p>Phù hợp người ưu tiên quan sát bên hông, ít cần riêng tư.</p></article><article class="position-card caution"><span class="state">Ít riêng tư</span><h3>Kính sườn sau</h3><p>Có thể làm khoang sau sáng hơn mong muốn; so sánh với 35/15.</p></article><article class="position-card caution"><span class="state">Theo nhu cầu</span><h3>Kính lưng</h3><p>Ưu tiên quan sát hơn riêng tư; kiểm tra kính nền và camera.</p></article></div></section>
-      <section class="section fit-shell" aria-label="Đề xuất mã phim theo vị trí kính"><div class="fit-intro"><div class="section-kicker">Tư vấn nhanh</div><h2 id="fit-title">Gợi ý mã phim theo vị trí kính</h2><p>Chọn vị trí kính, thói quen đi đêm và ưu tiên sử dụng để xem mã CR BLK nên xem trước. Đây là gợi ý sàng lọc, vẫn cần đo kính nền và xem mẫu thực tế trước khi chốt.</p></div><form class="fit-form" data-fit-form><div class="field-grid"><div class="field"><label for="priority">Ưu tiên sử dụng</label><select id="priority" name="priority"><option value="visibility">Ưu tiên quan sát</option><option value="balance">Cân bằng sáng và giảm chói</option><option value="privacy">Ưu tiên riêng tư</option></select></div><div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div><div class="field field-wide"><label for="night">Tần suất đi đêm</label><select id="night" name="night"><option value="often">Thường xuyên</option><option value="sometimes">Thỉnh thoảng</option><option value="rare">Hiếm khi</option></select></div></div><button class="btn btn-primary fit-submit" type="submit">Đề xuất mã kính</button><div class="fit-result" data-fit-result aria-live="polite"><strong>Mã nên xem trước</strong>Chọn đủ ba tiêu chí để nhận gợi ý CR BLK 40/50/60/35/15 theo vị trí kính.</div></form></section>
       <section class="section" id="thong-so" aria-labelledby="data-title"><div class="section-kicker">Dữ liệu theo điều kiện kính</div><h2 id="data-title">Thông số 3M CR BLK 50 theo từng loại kính tham chiếu</h2><p class="lede">Không dùng một con số VLT để dự đoán chắc chắn mọi xe. Chuyển làn để xem dữ liệu 3M trên hai loại kính tham chiếu.</p><div class="data-toolbar"><div class="lane-buttons" role="group" aria-label="Điều kiện kính"><button class="lane-btn active" type="button" data-lane="auto" aria-pressed="true">Auto 75 Glass</button><button class="lane-btn" type="button" data-lane="clear" aria-pressed="false">Kính trong 6 mm</button></div><span class="data-note">3M TDS Revision F · August 2025</span></div><div class="metric-grid"><div class="data-card" data-lane="auto"><strong>48%</strong><span>VLT</span></div><div class="data-card" data-lane="auto"><strong>56%</strong><span>TSER</span></div><div class="data-card" data-lane="auto"><strong>68%</strong><span>IRER</span></div><div class="data-card" data-lane="auto"><strong>98%</strong><span>IRR</span></div><div class="data-card" data-lane="auto"><strong>99,9%</strong><span>UV Block</span></div><div class="data-card" data-lane="auto"><strong>34%</strong><span>Giảm chói</span></div><div class="data-card" data-lane="clear" hidden><strong>59%</strong><span>VLT</span></div><div class="data-card" data-lane="clear" hidden><strong>52%</strong><span>TSER</span></div><div class="data-card" data-lane="clear" hidden><strong>69%</strong><span>IRER</span></div><div class="data-card" data-lane="clear" hidden><strong>98%</strong><span>IRR</span></div><div class="data-card" data-lane="clear" hidden><strong>99,9%</strong><span>UV Block</span></div><div class="data-card" data-lane="clear" hidden><strong>34%</strong><span>Giảm chói</span></div></div><div class="table-wrap"><table class="spec-table"><thead><tr><th>Điều kiện kính</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th><th>VLR ngoài / trong</th></tr></thead><tbody><tr><td>Auto 75 · kính nền 73%</td><td>48%</td><td>56%</td><td>68%</td><td>98%</td><td>99,9%</td><td>34%</td><td>7% / 7%</td></tr><tr><td>Kính trong 6 mm · nền 89%</td><td>59%</td><td>52%</td><td>69%</td><td>98%</td><td>99,9%</td><td>34%</td><td>7% / 8%</td></tr></tbody></table></div><div class="definition-grid"><div class="definition"><strong>TSER</strong>Tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Đây là chỉ số phù hợp để giải thích hiệu suất nhiệt tổng thể.</div><div class="definition"><strong>IRER</strong>Năng lượng hồng ngoại bị loại bỏ trong dải 780-2.500 nm, có tính phần hấp thụ rồi tái bức xạ vào xe.</div><div class="definition"><strong>IRR không phải TSER</strong>IRR đo dải 900-1.000 nm trên phim còn liner; không quy đổi IRR thành tỷ lệ loại bỏ tổng nhiệt.</div></div><div class="source-box"><strong>Điều kiện nguồn:</strong> Auto 75 là kính ô tô xanh dày 6 mm, VLT nền 73%; dữ liệu ước tính, thử theo ANSI/NFRC 200 và chỉ dùng tham khảo. Đây là gợi ý cấu hình Auto365, không phải tuyên bố phù hợp mặc định cho mọi kính lái. <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">Mở TDS 3M</a> · <a href="https://www.3m.com.vn/3M/vi_VN/p/d/b00016683/" target="_blank" rel="noopener">Trang 3M Việt Nam</a>.</div></section>
       <section class="section" aria-labelledby="price-title"><div class="section-kicker">Giá tham khảo theo vị trí</div><h2 id="price-title">Giá dán 3M CR BLK 50 tham khảo</h2><div class="price-panel"><div><div class="price-value">Kính lái từ 5.700.000đ · Đã gồm VAT</div><div class="price-note">Giá tham khảo Auto365 cập nhật 06/2026; xác nhận lại theo xe, vị trí kính, phạm vi thi công và chương trình tại thời điểm đặt lịch.</div></div><div class="price-note"><strong>Muốn dán trọn xe?</strong><br>Đối chiếu các gói có CR BLK 50 ở phần cấu hình trọn xe.</div></div></section>
       <section class="section" id="so-sanh" aria-labelledby="compare-title"><div class="section-kicker">So sánh trước khi chốt mã</div><h2 id="compare-title">CR BLK 50 khác CR BLK 40 và CR BLK 60 như thế nào?</h2><p class="lede">Trên cùng kính Auto 75, CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, nên có thể được đặt cạnh CR BLK 50 khi người dùng ưu tiên kính lái sáng hơn; đổi lại TSER tham chiếu thấp hơn 2 điểm phần trăm. CR BLK 40 giảm VLT 7 điểm phần trăm và tăng TSER 2 điểm phần trăm so với mã 50. Đây là đánh đổi giữa độ truyền sáng và hiệu năng tham chiếu, không phải phép đo nhiệt độ cabin của từng xe.</p><div class="compare-grid"><article class="compare-card"><div class="compare-code">60</div><h3>Sáng hơn</h3><p>VLT 57%; TSER 54%; giảm chói 22%.</p><a href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60">Xem CR BLK 60 →</a></article><article class="compare-card"><div class="compare-code">40</div><h3>Đậm hơn</h3><p>VLT 41%; TSER 58%; giảm chói 44%.</p><a href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40">Xem CR BLK 40 →</a></article></div></section>
@@ -1319,6 +1353,8 @@
         result.innerHTML="<strong>Mã nên xem trước: "+recommendation.code+"</strong><p>"+recommendation.reason+"</p><p class=\"fit-note\">Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền và kiểm tra xe thực tế.</p>";
       });
     }
+    /* Layout mutation block disabled: keep the authored HTML stable and prevent old patches from reverting sections on load. */
+    if(false){
     var compareGrid=document.querySelector("#so-sanh .compare-grid");
     if(compareGrid){
       compareGrid.innerHTML=''
@@ -1341,7 +1377,7 @@
       caseCopy.appendChild(caseKicker);
       caseCopy.appendChild(caseTitle);
       caseHeading.appendChild(caseCopy);
-      caseDescription.remove();
+      /* Keep the case intro visible; it explains why all 12 vehicle cards are relevant. */
       caseSection.insertBefore(caseHeading,caseGrid);
       var brands=['VinFast','Toyota','Mazda','Hyundai','Kia','Volvo','MG','Ford','Mitsubishi','Lynk & Co'];
       var caseCards=caseGrid.querySelectorAll('.case-card');
@@ -1401,7 +1437,7 @@
       compareSection.insertAdjacentHTML('afterend','<section class="section evidence-gallery" aria-labelledby="evidence-title"><div class="section-kicker">Hình ảnh thực tế</div><h2 id="evidence-title">Hình ảnh thi công & kiểm tra thực tế</h2><div class="evidence-gallery-grid"><figure class="evidence-photo"><img src="assets/cr-blk-50-vf6.webp" alt="VinFast VF 6 dán 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"><figcaption>VinFast VF 6 · CR BLK 50</figcaption></figure><figure class="evidence-photo"><img src="assets/cr-blk-50-before-after.webp" alt="So sánh kính lái trước và sau khi dán phim 3M" loading="lazy"><figcaption>Kính lái · trước và sau dán</figcaption></figure><figure class="evidence-photo"><img src="assets/cr-blk-50-xc60.webp" alt="Volvo XC60 dán 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"><figcaption>Volvo XC60 · CR BLK 50</figcaption></figure><figure class="evidence-photo"><img src="assets/cr-blk-50-meter.webp" alt="Máy đo thông số kính lái trước và sau thi công" loading="lazy"><figcaption>Đo kính lái · trước và sau</figcaption></figure><figure class="evidence-photo"><img src="assets/cr-blk-50-installation.webp" alt="Kỹ thuật viên thi công phim cách nhiệt trên kính xe" loading="lazy"><figcaption>Thi công phim cách nhiệt</figcaption></figure><figure class="evidence-photo"><img src="assets/cr-blk-50-warranty.webp" alt="Chứng nhận bảo hành phim cách nhiệt 3M CR BLK 50" loading="lazy"><figcaption>Hồ sơ bảo hành 3M</figcaption></figure></div></section>');
     }
     var evidenceGallery=document.querySelector('.evidence-gallery');
-    if(evidenceGallery){evidenceGallery.remove();}
+    /* Keep the practical image gallery visible after the comparison block. */
     var serviceLocator=document.querySelector('.service-locator');
     if(serviceLocator){
       serviceLocator.innerHTML='<div class="locator-heading"><div><div class="section-kicker">Hệ thống Auto365</div><h2 id="locator-title">Hệ thống Auto365 · Điểm tư vấn & thi công</h2></div></div><div class="locator-cards"><article class="locator-card"><h3>Auto365.vn – Trụ Sở Chính</h3><p>4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.<br>Điểm tiếp nhận lịch và tư vấn cấu hình theo từng vị trí kính.</p><div class="locator-actions"><a class="primary" href="tel:+84365365365">Gọi 0365 365 365</a><a href="https://auto365.vn/lien-he">Xem bản đồ →</a></div></article><article class="locator-card"><h3>3M Pro Shop & 3M Training Center</h3><p>4/4/3/3 Đường Số 3, Khu phố 31, Phường Hiệp Bình, TP. Hồ Chí Minh.<br>Trung tâm trải nghiệm vật liệu và chuẩn hóa kỹ thuật.</p><div class="locator-actions"><a class="primary" href="tel:+84365365365">Gọi 0365 365 365</a><a href="https://auto365.vn/lien-he">Xem bản đồ →</a></div></article><article class="locator-card"><h3>Tra cứu hệ thống Auto365 toàn quốc</h3><p>Tìm điểm gần bạn và xác nhận trước dịch vụ 3M đang được triển khai tại từng điểm.</p><div class="locator-actions"><a href="https://auto365.vn/lien-he">Tra cứu hệ thống →</a><a class="primary" href="tel:+84365365365">Gọi 0365 365 365</a></div></article></div><div class="service-gallery"><div class="section-kicker">Không gian & con người</div><h2>Vì sao nên dán phim cách nhiệt tại Auto365?</h2><div class="service-gallery-grid"><article class="service-gallery-card"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Không gian 3M Pro Shop Auto365 Thủ Đức" loading="lazy"><span>Không gian 3M Pro Shop</span></article><article class="service-gallery-card"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Khu vực dịch vụ Auto365" loading="lazy"><span>Quy trình tư vấn theo xe</span></article><article class="service-gallery-card"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-4jpg-img_69afc0d5b0f591.96279763_auto365vn.jpg" alt="Hoạt động thi công tại Auto365" loading="lazy"><span>Thi công và kiểm tra thực tế</span></article><article class="service-gallery-card"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Đội ngũ Auto365 3M Pro Shop" loading="lazy"><span>Đội ngũ 3M Pro Shop</span></article></div></div>';
@@ -1417,7 +1453,7 @@
     if(serviceLocator){serviceLocator.classList.add('system-experience','system-compact');serviceLocator.innerHTML='<article class="system-panel"><p class="system-eyebrow">Hệ thống Auto365</p><h2>Tìm điểm Auto365 phù hợp gần bạn</h2><div class="compact-actions"><a href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener">Nhắn Zalo</a><a href="tel:+84365365365">Gọi 0365 365 365</a><a href="https://auto365.vn/lien-he">Gửi thông tin tư vấn</a></div></article><article class="system-panel"><p class="system-eyebrow">Phủ sóng toàn quốc</p><div class="compact-title-row"><h2>91 điểm · 33 tỉnh thành</h2><a href="https://auto365.vn/lien-he">Xem toàn bộ hệ thống Auto365 →</a></div><div class="region-grid"><div class="region-card"><span>MIỀN BẮC</span><strong>41 điểm</strong></div><div class="region-card"><span>MIỀN TRUNG</span><strong>26 điểm</strong></div><div class="region-card"><span>MIỀN NAM</span><strong>24 điểm</strong></div></div></article>';}
     if(serviceLocator){serviceLocator.insertAdjacentHTML('afterend','<section class="section system-details" aria-labelledby="system-details-title"><h2 id="system-details-title">Hệ thống Auto365 · Điểm tư vấn & thi công</h2><p class="lede">Auto365.vn – Trụ Sở Chính là điểm tư vấn, đặt lịch và thi công phim 3M trong hệ sinh thái Auto365/365Group. Khách hàng có thể đối chiếu nguồn phim, quy trình thi công và hồ sơ eWarranty trước khi chốt.</p><div class="system-detail-grid"><article class="system-detail-card"><h3>Auto365.vn – Trụ Sở Chính</h3><p>Điểm tiếp nhận lịch và tư vấn cấu hình theo từng vị trí kính; phạm vi thi công xác nhận khi đặt lịch.</p><strong>4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh</strong><div class="detail-actions"><a class="primary" href="tel:+84365365365">Gọi 0365 365 365</a><a href="https://auto365.vn/lien-he">Xem chi tiết →</a></div></article><article class="system-detail-card"><h3>3M Pro Shop & 3M Training Center</h3><p>Trung tâm trải nghiệm vật liệu, đào tạo và chuẩn hóa kỹ thuật; khách đặt lịch trước khi đến.</p><strong>4/4/3/3 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh</strong><div class="detail-actions"><a class="primary" href="tel:+84365365365">Gọi 0365 365 365</a><a href="https://auto365.vn/lien-he">Xem chi tiết →</a></div></article><article class="system-detail-card"><h3>Tra cứu hệ thống Auto365 toàn quốc</h3><p>Tra cứu điểm Auto365 gần anh/chị và xác nhận trước dịch vụ 3M đang được triển khai tại từng điểm.</p><strong>Hỗ trợ tư vấn toàn quốc</strong><div class="detail-actions"><a href="https://auto365.vn/lien-he">Tra cứu hệ thống →</a><a class="primary" href="tel:+84365365365">Gọi 0365 365 365</a></div></article></div></section>');}
     var systemDetails=document.querySelector('.system-details');
-    if(systemDetails){systemDetails.remove();}
+    /* Keep system details visible; do not remove the service/context block. */
     var whyAuto365=document.querySelector('.service-locator');
     if(whyAuto365){
       var oldServiceGallery=whyAuto365.querySelector('.service-gallery');
@@ -1483,7 +1519,7 @@
     var answerSection=document.querySelector('[aria-labelledby="answer-title"]');
     var decisionSection=document.querySelector('[aria-labelledby="decision-matrix-title"]');
     var irrSection=document.querySelector('[aria-labelledby="irr-title"]');
-    if(answerSection){answerSection.remove();}
+    /* Keep the quick answer section visible; it prevents the article from feeling like pieces disappeared. */
     if(fitSection&&specSection){fitSection.after(specSection);}
     if(specSection&&proofSection){specSection.after(proofSection);}
     if(proofSection&&irrSection){proofSection.after(irrSection);}
@@ -1495,6 +1531,7 @@
     if(priceSection){(tradeoffBlock||configSection||decisionSection).after(priceSection);}
     var realCaseLink=document.querySelector('.why-auto365 a[href="#evidence-title"]');
     if(realCaseLink){realCaseLink.setAttribute('href','#case-title');realCaseLink.textContent='Xem xe thực tế →';}
+    }
     /* Repair legacy JS literals that were saved as UTF-8 decoded as Latin-1. */
     (function repairLegacyEncoding(){
       var marker=/[ÃÂ]|á»|áº|Ä|Ä‘|Æ°|â€™|â†|â€“|Â·/;
