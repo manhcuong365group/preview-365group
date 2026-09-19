@@ -1076,7 +1076,8 @@
   gap: 6px;
   margin-top: auto;
 }
-.qs-result-actions a {
+.qs-result-actions a,
+.qs-result-actions button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1085,6 +1086,215 @@
   font-weight: 800;
   border-radius: 8px;
   text-decoration: none;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  width: 100%;
+}
+
+/* Multi-step Consultation View in Modal */
+.qs-modal-head-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.qs-btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  font-family: inherit;
+}
+.qs-btn-back:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+.qs-selected-product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+}
+.qs-sel-thumb {
+  width: 64px;
+  height: 64px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 4px;
+  flex: none;
+}
+.qs-sel-info {
+  flex: 1;
+  min-width: 0;
+}
+.qs-sel-tags {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+.qs-badge--dark {
+  background: #1e293b;
+  color: #fff;
+}
+.qs-sel-name {
+  font-size: 15.5px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px;
+  line-height: 1.3;
+}
+.qs-sel-pricing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.qs-sel-price {
+  color: #e31b2d;
+  font-weight: 800;
+  font-size: 15.5px;
+}
+.qs-consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.qs-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 14px;
+}
+.qs-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.qs-field.full-width {
+  grid-column: span 2;
+}
+.qs-field span {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #334155;
+}
+.qs-field input,
+.qs-field select {
+  height: 42px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13.5px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.qs-field input:focus,
+.qs-field select:focus {
+  border-color: #e31b2d;
+  box-shadow: 0 0 0 3px rgba(227, 27, 45, 0.12);
+}
+.qs-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #64748b;
+  line-height: 1.45;
+  cursor: pointer;
+  margin-top: 2px;
+}
+.qs-consent input {
+  margin-top: 2px;
+  accent-color: #e31b2d;
+  cursor: pointer;
+}
+.qs-submit-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+.qs-btn-zalo {
+  flex: 1;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #e31b2d;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.15s ease;
+}
+.qs-btn-zalo:hover {
+  background: #c81424;
+}
+.qs-btn-zalo svg {
+  fill: currentColor;
+}
+.qs-btn-tel {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 16px;
+  background: #f1f5f9;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: background 0.15s ease;
+}
+.qs-btn-tel:hover {
+  background: #e2e8f0;
+}
+.qs-subnote {
+  font-size: 11.5px;
+  color: #64748b;
+  margin: 0;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .qs-form-grid {
+    grid-template-columns: 1fr;
+  }
+  .qs-field.full-width {
+    grid-column: span 1;
+  }
+  .qs-submit-row {
+    flex-direction: column;
+  }
+  .qs-modal-inner {
+    padding: 18px 14px;
+  }
 }
 .qs-result-actions .qs-btn-outline {
   border: 1px solid #d8dee7;
@@ -2642,11 +2852,129 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
 </script>
   <div class="qs-modal" id="qs-reco" role="dialog" aria-modal="true" aria-labelledby="qs-modal-title">
     <div class="qs-modal-inner">
-      <div class="qs-modal-head">
-        <h3 id="qs-modal-title">Kết quả gợi ý bóng LED phù hợp</h3>
-        <button type="button" class="qs-modal-close" id="qs-modal-close" aria-label="Đóng">×</button>
+      <!-- Step 1: Recommendation Product Cards -->
+      <div id="qs-view-reco">
+        <div class="qs-modal-head">
+          <h3 id="qs-modal-title">Kết quả gợi ý bóng LED phù hợp</h3>
+          <button type="button" class="qs-modal-close" id="qs-modal-close" aria-label="Đóng">×</button>
+        </div>
+        <div class="qs-result-list" id="qs-result" aria-live="polite"></div>
       </div>
-      <div class="qs-result-list" id="qs-result" aria-live="polite"></div>
+
+      <!-- Step 2: In-Modal Consultation Form -->
+      <div id="qs-view-consult" hidden>
+        <div class="qs-modal-head">
+          <div class="qs-modal-head-left">
+            <button type="button" class="qs-btn-back" id="qs-btn-back" aria-label="Quay lại">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>Chọn mẫu khác</span>
+            </button>
+            <h3 id="qs-consult-title">Tư vấn lắp đặt theo xe</h3>
+          </div>
+          <button type="button" class="qs-modal-close" id="qs-consult-close" aria-label="Đóng">×</button>
+        </div>
+
+        <!-- Selected Product Summary Card -->
+        <div class="qs-selected-product" id="qs-selected-card">
+          <img id="qs-sel-img" src="" alt="" class="qs-sel-thumb">
+          <div class="qs-sel-info">
+            <div class="qs-sel-tags">
+              <span class="qs-badge" id="qs-sel-badge">Khuyến nghị hàng đầu</span>
+              <span class="qs-badge qs-badge--dark">Bảo hành 24T</span>
+            </div>
+            <h4 class="qs-sel-name" id="qs-sel-name">X-Light S3 Pro V2 H4</h4>
+            <div class="qs-sel-pricing">
+              <span class="qs-sel-price" id="qs-sel-price">1.600.000đ/bộ</span>
+              <span class="qs-diff-tag" id="qs-sel-diff" style="display:none"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Form -->
+        <form class="qs-consult-form" id="qs-consult-form" autocomplete="on">
+          <div class="qs-form-grid">
+            <label class="qs-field">
+              <span>Họ và tên <strong class="red">*</strong></span>
+              <input type="text" id="qsc-name" name="name" placeholder="Nguyễn Văn A" required>
+            </label>
+            <label class="qs-field">
+              <span>Số điện thoại <strong class="red">*</strong></span>
+              <input type="tel" id="qsc-phone" name="phone" placeholder="0901 234 567" required pattern="^(0|\+84)[0-9]{9,10}$">
+            </label>
+            <label class="qs-field">
+              <span>Hãng &amp; Dòng xe <strong class="red">*</strong></span>
+              <input type="text" id="qsc-car" name="car" placeholder="VD: VinFast VF3, Ford Ranger, Mazda 3" required>
+            </label>
+            <label class="qs-field">
+              <span>Tỉnh thành tư vấn / lắp đặt</span>
+              <select id="qsc-province" name="province">
+                <option value="">Chọn tỉnh thành gần nhất</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="TP. Hồ Chí Minh">TP. Hồ Chí Minh</option>
+                <option value="Đà Nẵng">Đà Nẵng</option>
+                <option value="Hải Phòng">Hải Phòng</option>
+                <option value="Cần Thơ">Cần Thơ</option>
+                <option value="An Giang">An Giang</option>
+                <option value="Bắc Ninh">Bắc Ninh</option>
+                <option value="Cà Mau">Cà Mau</option>
+                <option value="Cao Bằng">Cao Bằng</option>
+                <option value="Đắk Lắk">Đắk Lắk</option>
+                <option value="Điện Biên">Điện Biên</option>
+                <option value="Đồng Nai">Đồng Nai</option>
+                <option value="Đồng Tháp">Đồng Tháp</option>
+                <option value="Gia Lai">Gia Lai</option>
+                <option value="Hà Tĩnh">Hà Tĩnh</option>
+                <option value="Huế">Huế</option>
+                <option value="Hưng Yên">Hưng Yên</option>
+                <option value="Khánh Hòa">Khánh Hòa</option>
+                <option value="Lai Châu">Lai Châu</option>
+                <option value="Lâm Đồng">Lâm Đồng</option>
+                <option value="Lạng Sơn">Lạng Sơn</option>
+                <option value="Lào Cai">Lào Cai</option>
+                <option value="Nghệ An">Nghệ An</option>
+                <option value="Ninh Bình">Ninh Bình</option>
+                <option value="Phú Thọ">Phú Thọ</option>
+                <option value="Quảng Ngãi">Quảng Ngãi</option>
+                <option value="Quảng Ninh">Quảng Ninh</option>
+                <option value="Quảng Trị">Quảng Trị</option>
+                <option value="Sơn La">Sơn La</option>
+                <option value="Tây Ninh">Tây Ninh</option>
+                <option value="Thái Nguyên">Thái Nguyên</option>
+                <option value="Thanh Hóa">Thanh Hóa</option>
+                <option value="Tuyên Quang">Tuyên Quang</option>
+                <option value="Vĩnh Long">Vĩnh Long</option>
+              </select>
+            </label>
+            <label class="qs-field full-width">
+              <span>Nhu cầu di chuyển chính</span>
+              <select id="qsc-need" name="need">
+                <option value="Đi phố, chống chói xe đối diện">Đi phố, chống chói xe đối diện</option>
+                <option value="Thường xuyên đi đêm, đường xa, quốc lộ">Thường xuyên đi đêm, đường xa, quốc lộ</option>
+                <option value="Hay đi trời mưa lớn, sương mù dày">Hay đi trời mưa lớn, sương mù dày</option>
+                <option value="Chóa phản xạ hở cần gom sáng chuẩn">Chóa phản xạ hở cần gom sáng chuẩn</option>
+                <option value="Cần chuyên viên đo thử máy kiểm định ánh sáng tại chi nhánh">Cần kiểm tra trực tiếp tại chi nhánh gần nhất</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="qs-consent">
+            <input type="checkbox" id="qsc-consent" checked required>
+            <span>Tôi đồng ý Auto365 sử dụng thông tin để liên hệ tư vấn, báo giá và kiểm tra chuẩn chân bóng theo xe.</span>
+          </label>
+
+          <div class="qs-submit-row">
+            <button type="submit" class="qs-btn-zalo" id="qsc-submit">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#i-zalo"></use></svg>
+              <span>Soạn tin tư vấn qua Zalo</span>
+            </button>
+            <a class="qs-btn-tel" href="tel:0365365911">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#i-phone"></use></svg>
+              <span>Gọi ngay: 0365 365 911</span>
+            </a>
+          </div>
+          <p class="qs-subnote">Nội dung sẽ được tự động tạo sẵn và chuyển sang Zalo chính thức của Auto365. Không mất phí tư vấn.</p>
+        </form>
+      </div>
     </div>
   </div>
   
@@ -2746,7 +3074,89 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     }
   ];
 
+  var activeConsultItem = null;
+  var activeConsultMatch = null;
+
+  function showRecoStep() {
+    var vReco = document.getElementById('qs-view-reco');
+    var vConsult = document.getElementById('qs-view-consult');
+    if (vReco && vConsult) {
+      vConsult.hidden = true;
+      vReco.hidden = false;
+    }
+  }
+
+  function showConsultStep(item, matchObj) {
+    activeConsultItem = item;
+    activeConsultMatch = matchObj;
+
+    var vReco = document.getElementById('qs-view-reco');
+    var vConsult = document.getElementById('qs-view-consult');
+    if (!vReco || !vConsult) return;
+
+    var selImg = document.getElementById('qs-sel-img');
+    var selName = document.getElementById('qs-sel-name');
+    var selPrice = document.getElementById('qs-sel-price');
+    var selBadge = document.getElementById('qs-sel-badge');
+    var selDiff = document.getElementById('qs-sel-diff');
+
+    if (selImg) { selImg.src = item.img; selImg.alt = item.name; }
+    if (selName) selName.textContent = item.name;
+    if (selPrice) selPrice.textContent = item.priceText;
+
+    if (matchObj && matchObj.isUpgrade && matchObj.diffBudget > 0) {
+      if (selBadge) {
+        selBadge.className = 'qs-badge qs-badge--upgrade';
+        selBadge.textContent = 'Nâng cấp (+' + formatVND(matchObj.diffBudget) + ')';
+      }
+      if (selDiff) {
+        selDiff.style.display = 'inline-flex';
+        selDiff.textContent = '+' + formatVND(matchObj.diffBudget) + ' (Nâng cấp)';
+      }
+    } else if (matchObj && matchObj.isPick) {
+      if (selBadge) {
+        selBadge.className = 'qs-badge qs-badge--pick';
+        selBadge.textContent = 'Khuyến nghị hàng đầu';
+      }
+      if (selDiff) selDiff.style.display = 'none';
+    } else {
+      if (selBadge) {
+        selBadge.className = 'qs-badge qs-badge--alt';
+        selBadge.textContent = 'Lựa chọn thay thế';
+      }
+      if (selDiff) selDiff.style.display = 'none';
+    }
+
+    // Pre-fill need if selected in hero finder
+    var heroNeed = document.getElementById('qs-need') ? document.getElementById('qs-need').value : '';
+    var qscNeed = document.getElementById('qsc-need');
+    if (qscNeed && heroNeed) {
+      if (heroNeed === 'city') qscNeed.value = 'Đi phố, chống chói xe đối diện';
+      else if (heroNeed === 'touring') qscNeed.value = 'Thường xuyên đi đêm, đường xa, quốc lộ';
+      else if (heroNeed === 'rain') qscNeed.value = 'Hay đi trời mưa lớn, sương mù dày';
+      else if (heroNeed === 'reflector') qscNeed.value = 'Chóa phản xạ hở cần gom sáng chuẩn';
+    }
+
+    // Pre-fill province if already set in page form
+    var midProv = document.getElementById('mid-province');
+    var qscProv = document.getElementById('qsc-province');
+    if (midProv && qscProv && midProv.value) {
+      qscProv.value = midProv.value;
+    }
+
+    // Switch view
+    vReco.hidden = true;
+    vConsult.hidden = false;
+
+    var modalInner = document.querySelector('.qs-modal-inner');
+    if (modalInner) modalInner.scrollTop = 0;
+
+    var nameInput = document.getElementById('qsc-name');
+    if (nameInput) setTimeout(function() { nameInput.focus(); }, 120);
+  }
+
   function openModal() {
+    showRecoStep();
     var m = document.getElementById('qs-reco');
     if (m) {
       m.classList.add('is-open');
@@ -2759,6 +3169,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     if (m) {
       m.classList.remove('is-open');
       document.documentElement.style.overflow = '';
+      showRecoStep();
     }
   }
 
@@ -2920,10 +3331,10 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
       var btnDetail = el('a', { class: 'qs-btn-outline', href: item.url, target: '_blank', rel: 'noreferrer' });
       btnDetail.textContent = 'Xem chi tiết sản phẩm';
 
-      var btnConsult = el('a', { class: 'qs-btn-primary', href: '#tu-van-mien-phi' });
+      var btnConsult = el('button', { type: 'button', class: 'qs-btn-primary' });
       btnConsult.textContent = 'Tư vấn theo dòng xe';
       btnConsult.addEventListener('click', function() {
-        closeModal();
+        showConsultStep(item, { isPick: isPick, isUpgrade: isUpgrade, diffBudget: diffBudget, diffBase: diffBase });
       });
 
       actions.appendChild(btnDetail);
@@ -2955,6 +3366,66 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
   var btnClose = document.getElementById('qs-modal-close');
   if (btnClose) {
     btnClose.addEventListener('click', closeModal);
+  }
+
+  var btnConsultClose = document.getElementById('qs-consult-close');
+  if (btnConsultClose) {
+    btnConsultClose.addEventListener('click', closeModal);
+  }
+
+  var btnBack = document.getElementById('qs-btn-back');
+  if (btnBack) {
+    btnBack.addEventListener('click', showRecoStep);
+  }
+
+  var consultForm = document.getElementById('qs-consult-form');
+  if (consultForm) {
+    consultForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var name = (document.getElementById('qsc-name').value || '').trim();
+      var phone = (document.getElementById('qsc-phone').value || '').trim();
+      var car = (document.getElementById('qsc-car').value || '').trim();
+      var prov = (document.getElementById('qsc-province').value || '').trim();
+      var need = (document.getElementById('qsc-need').value || '').trim();
+      var prod = activeConsultItem || { name: 'Bóng LED Auto365', priceText: '' };
+
+      var phoneClean = phone.replace(/[\s.-]/g, '');
+      if (!/^(0|\+84)[0-9]{9,10}$/.test(phoneClean)) {
+        alert('Vui lòng nhập số điện thoại hợp lệ (10 số, bắt đầu bằng 0).');
+        document.getElementById('qsc-phone').focus();
+        return;
+      }
+
+      var msgLines = [
+        'Xin chào Auto365, tôi muốn nhận tư vấn lắp đặt bóng LED:',
+        '• Sản phẩm quan tâm: ' + prod.name + (prod.priceText ? ' (' + prod.priceText + ')' : ''),
+        '• Khách hàng: ' + name,
+        '• Số điện thoại: ' + phoneClean,
+        car ? '• Dòng xe: ' + car : '',
+        prov ? '• Tỉnh thành: ' + prov : '',
+        need ? '• Nhu cầu: ' + need : '',
+        'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
+      ].filter(Boolean).join('\n');
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(msgLines).catch(function() {});
+      }
+
+      // Sync to on-page form fields
+      var midName = document.getElementById('mid-name'); if (midName) midName.value = name;
+      var midPhone = document.getElementById('mid-phone'); if (midPhone) midPhone.value = phoneClean;
+      var midModel = document.getElementById('mid-model'); if (midModel && car) midModel.value = car;
+      var midProv = document.getElementById('mid-province'); if (midProv && prov) midProv.value = prov;
+
+      if (typeof toast === 'function') {
+        toast('Đã sao chép yêu cầu! Đang mở Zalo kết nối chuyên viên Auto365...');
+      }
+
+      setTimeout(function() {
+        window.open('https://zalo.me/0365365911', '_blank');
+      }, 350);
+    });
   }
 
   var modal = document.getElementById('qs-reco');
