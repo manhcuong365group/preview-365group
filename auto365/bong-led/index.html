@@ -576,6 +576,113 @@
     details.faq-item[open] summary .faq-icon { transform: rotate(180deg); }
     details.faq-item p { padding: 0 16px 12px; font-size: 14px; margin: 0; color: #454b55; line-height: 1.7; }
 
+    /* FAQ Compact & Expand Toggle */
+    .faq-item--more { display: none !important; }
+    .faq-grid.is-expanded .faq-item--more { display: block !important; }
+    .faq-toggle-wrap { display: flex; justify-content: center; margin-top: 18px; }
+    .btn-faq-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 22px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #1e293b;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+      transition: all 0.2s ease;
+      font-family: inherit;
+    }
+    .btn-faq-toggle:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+      color: var(--red2);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+    }
+    .btn-faq-toggle .faq-toggle-icon {
+      transition: transform 0.25s ease;
+    }
+
+    /* EEAT Technical Reviewer Box */
+    .eeat-box {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-top: 28px;
+      padding: 20px 24px;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      background: #f8fafc;
+    }
+    .eeat-avatar {
+      flex: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #e31b2d;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+    .eeat-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .eeat-kicker {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #e31b2d;
+      margin-bottom: 4px;
+    }
+    .eeat-name {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .eeat-name a {
+      color: #0f172a;
+      text-decoration: underline;
+    }
+    .eeat-name a:hover {
+      color: #e31b2d;
+    }
+    .eeat-title {
+      color: #64748b;
+      font-size: 13px;
+      margin: 2px 0 8px;
+      line-height: 1.4;
+    }
+    .eeat-desc {
+      color: #334155;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 0;
+    }
+    .eeat-note {
+      color: #64748b;
+      font-size: 12px;
+      margin: 8px 0 0;
+      line-height: 1.5;
+    }
+    @media (max-width: 640px) {
+      .eeat-box {
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+      }
+    }
+
     /* Final CTA */
     .cta { background: linear-gradient(135deg, #17191d, #2a1012); color: #fff; border-radius: var(--radius-xl); padding: 24px 28px; display: grid; grid-template-columns: 1.4fr .6fr; gap: 16px; align-items: center; }
     .cta p { color: #e4e7ee; margin: 8px 0 0; }
@@ -3369,7 +3476,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     </div>
     <div style="margin-top:14px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
       <p style="margin:0; font-size:13px; color:#64748b;">Khách hàng có thể trải nghiệm trực tiếp 2 nhiệt màu thực tế tại xưởng Auto365 trước khi quyết định thi công.</p>
-      <a href="#tu-van-mien-phi" style="font-size:13px; font-weight:700; color:#e31b2d;">Đặt lịch thử ánh sáng trực tiếp →</a>
+      <a href="#tu-van-mien-phi" id="btn-direct-light-test" class="btn-direct-light-test" style="font-size:13px; font-weight:700; color:#e31b2d; cursor:pointer;">Đặt lịch thử ánh sáng trực tiếp →</a>
     </div>
   </article>
 </div>
@@ -3469,7 +3576,84 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
   <p class="note" style="margin-top:14px;"><strong>Quy tắc thanh toán Auto365:</strong> Mọi khách hàng đều được yêu cầu báo giá chi tiết bằng văn bản trước khi tháo lắp: <em>Tên sản phẩm + Chuẩn chân + Số lượng + VAT + Công lắp + Phụ kiện (nếu có) + Thời hạn bảo hành</em>. Các khoản đã nằm trong gói dịch vụ cam kết không cộng thêm lần nữa.</p>
 </div>
 </section><section class="section" id="faq" aria-labelledby="faq-title">
-<div class="wrap"><div class="section-title"><div><p class="micro">Hỏi đáp kỹ thuật</p><h2 id="faq-title">Câu hỏi thường gặp về bóng LED ô tô</h2></div></div><div class="faq-grid"><details class="faq-item"><summary><span>Bóng LED ô tô có lắp được cho mọi xe không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Cần xác nhận đời, phiên bản, cụm đèn, vị trí và chân bóng; sau đó kiểm tra khoảng hở, hệ điện và vùng sáng sau lắp. Cùng tên xe hoặc cùng chân bóng chưa đủ kết luận phù hợp.</p></details><details class="faq-item"><summary><span>Bóng LED ô tô giá bao nhiêu?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Trong danh mục đối chiếu ngày 18/09/2026, S3 Pro V2 từ 1.500.000 đồng/bộ, S6 Pro V2 từ 2.000.000 đồng/bộ; bản H4 có giá riêng. T10 là đèn phụ, giá 200.000 đồng/cặp. Đây là giá sản phẩm; VAT, công lắp và phụ kiện cần xem theo từng cấu hình và báo giá.</p></details><details class="faq-item"><summary><span>Một bộ bóng có phải là hai bóng không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không nên tự suy ra. Một số nguồn niêm yết theo bộ, nguồn khác theo cặp. Khi báo giá cần ghi rõ số bóng, driver và phụ kiện đi kèm; trang này giữ đơn vị theo nguồn của từng mã.</p></details><details class="faq-item"><summary><span>S3 Pro V2 hay S6 Pro V2 phù hợp hơn?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>S3 Pro V2 có giá khởi điểm thấp hơn; S6 Pro V2 có các đặc điểm cấu hình riêng và hồ sơ VF5 Plus H7 để tham khảo. Chọn sau khi đối chiếu chân bóng, nguồn điện, khoảng hở và thử vùng sáng, không xếp hạng chỉ bằng công suất công bố.</p></details><details class="faq-item"><summary><span>Cùng chân H7 có chắc lắp thay được không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Ngàm giữ, adapter, nắp chụp, không gian phía sau và hệ điều khiển có thể khác. Cần đối chiếu trên đúng cụm đèn trước khi chốt.</p></details><details class="faq-item"><summary><span>4300K có chắc đi mưa tốt hơn 6000K không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không thể kết luận chỉ từ Kelvin. 4300K có sắc ấm hơn 6000K; hiệu quả quan sát còn phụ thuộc vùng sáng, chói phản xạ và điều kiện đường. Hãy kiểm tra với cụm đèn và nhu cầu thực tế.</p></details><details class="faq-item"><summary><span>Có CANbus thì chắc chắn không báo lỗi không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không. Cần kiểm tra nhấp nháy, cảnh báo taplo và chức năng Cos/Pha trên xe. Lỗi điện phải được chẩn đoán trước khi bổ sung bộ giải mã.</p></details><details class="faq-item"><summary><span>Bóng LED T10 có dùng thay đèn pha không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không dùng T10 để thay bóng đèn chính H4, H7 hoặc H11. T10 chỉ được chọn cho vị trí có chuẩn chân và yêu cầu điện, màu ánh sáng phù hợp.</p></details><details class="faq-item"><summary><span>Thay bóng LED có chắc đạt kiểm định không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Không thể xác nhận kết quả kiểm định chỉ từ tên bóng hoặc quảng cáo của sản phẩm. Trước khi thay đổi cấu hình đèn, trao đổi với cơ sở kiểm định về phương án cụ thể và yêu cầu đang áp dụng.</p></details><details class="faq-item"><summary><span>Cần gửi gì để được tư vấn bóng LED theo xe?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Gửi hãng, dòng, năm sản xuất, phiên bản, vị trí đèn và vấn đề muốn cải thiện. Nếu có thể chụp an toàn, thêm ảnh mặt đèn, nhãn/chân bóng và phía sau nắp chụp. Không tự tháo bộ phận nóng hoặc có nguy cơ điện để chụp ảnh.</p></details><details class="faq-item"><summary><span>Bảo hành bóng LED có bao gồm công lắp không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Bảo hành thiết bị và trách nhiệm với phần thi công cần được xác nhận riêng. Hỏi thời hạn, phạm vi, chứng từ và điểm tiếp nhận; không hiểu tuổi thọ công bố là thời hạn bảo hành.</p></details><details class="faq-item"><summary><span>Các dòng bóng LED X-Light và NaoEvo tại Auto365 có gì khác biệt và nên chọn dòng nào?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary><p>Auto365 tập trung phân phối chính hãng 2 hệ thương hiệu X-Light và NaoEvo với đầy đủ các chuẩn chân bóng (H1, H4, H7, H11, 9005, 9006, 9012). Sự khác biệt nằm ở phân khúc nhu cầu: Dòng S3 Pro tối ưu chi phí thay thế bóng Halogen đi phố; dòng S6 Pro và S9 Pro tăng cường công suất và gom sáng xa cho đường tối/cao tốc; dòng S8 Pro 4300K tối ưu bám đường cho xe hay đi tỉnh, gặp mưa và sương mù. Tất cả sản phẩm đều được bảo hành chính hãng 24 tháng tại hơn 90 chi nhánh Auto365 toàn quốc.</p></details></div></section><section class="section compact" id="co-so" aria-labelledby="co-so-title"><div class="wrap"><div class="section-title"><div><p class="micro">Nguồn thông tin</p><h2 id="co-so-title">Nguồn sản phẩm, hồ sơ xe và ngày đối chiếu</h2></div><p>Đối chiếu ngày 18/09/2026. Giá và tình trạng hàng có thể thay đổi sau thời điểm này.</p></div><div class="grid grid-2">
+<div class="wrap">
+  <div class="section-title">
+    <div>
+      <p class="micro">Hỏi đáp kỹ thuật</p>
+      <h2 id="faq-title">Câu hỏi thường gặp về bóng LED ô tô</h2>
+    </div>
+  </div>
+  <div class="faq-grid" id="faq-grid">
+    <details class="faq-item">
+      <summary><span>Bóng LED ô tô có lắp được cho mọi xe không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không. Cần xác nhận đời, phiên bản, cụm đèn, vị trí và chân bóng; sau đó kiểm tra khoảng hở, hệ điện và vùng sáng sau lắp. Cùng tên xe hoặc cùng chân bóng chưa đủ kết luận phù hợp.</p>
+    </details>
+    <details class="faq-item">
+      <summary><span>Bóng LED ô tô giá bao nhiêu?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Trong danh mục đối chiếu ngày 18/09/2026, S3 Pro V2 từ 1.500.000 đồng/bộ, S6 Pro V2 từ 2.000.000 đồng/bộ; bản H4 có giá riêng. T10 là đèn phụ, giá 200.000 đồng/cặp. Đây là giá sản phẩm; VAT, công lắp và phụ kiện cần xem theo từng cấu hình và báo giá.</p>
+    </details>
+    <details class="faq-item">
+      <summary><span>Một bộ bóng có phải là hai bóng không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không nên tự suy ra. Một số nguồn niêm yết theo bộ, nguồn khác theo cặp. Khi báo giá cần ghi rõ số bóng, driver và phụ kiện đi kèm; trang này giữ đơn vị theo nguồn của từng mã.</p>
+    </details>
+    <details class="faq-item">
+      <summary><span>S3 Pro V2 hay S6 Pro V2 phù hợp hơn?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>S3 Pro V2 có giá khởi điểm thấp hơn; S6 Pro V2 có các đặc điểm cấu hình riêng và hồ sơ VF5 Plus H7 để tham khảo. Chọn sau khi đối chiếu chân bóng, nguồn điện, khoảng hở và thử vùng sáng, không xếp hạng chỉ bằng công suất công bố.</p>
+    </details>
+    <details class="faq-item">
+      <summary><span>Cùng chân H7 có chắc lắp thay được không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không. Ngàm giữ, adapter, nắp chụp, không gian phía sau và hệ điều khiển có thể khác. Cần đối chiếu trên đúng cụm đèn trước khi chốt.</p>
+    </details>
+    <details class="faq-item">
+      <summary><span>4300K có chắc đi mưa tốt hơn 6000K không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không thể kết luận chỉ từ Kelvin. 4300K có sắc ấm hơn 6000K; hiệu quả quan sát còn phụ thuộc vùng sáng, chói phản xạ và điều kiện đường. Hãy kiểm tra với cụm đèn và nhu cầu thực tế.</p>
+    </details>
+    <details class="faq-item faq-item--more">
+      <summary><span>Có CANbus thì chắc chắn không báo lỗi không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không. Cần kiểm tra nhấp nháy, cảnh báo taplo và chức năng Cos/Pha trên xe. Lỗi điện phải được chẩn đoán trước khi bổ sung bộ giải mã.</p>
+    </details>
+    <details class="faq-item faq-item--more">
+      <summary><span>Bóng LED T10 có dùng thay đèn pha không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không dùng T10 để thay bóng đèn chính H4, H7 hoặc H11. T10 chỉ được chọn cho vị trí có chuẩn chân và yêu cầu điện, màu ánh sáng phù hợp.</p>
+    </details>
+    <details class="faq-item faq-item--more">
+      <summary><span>Thay bóng LED có chắc đạt kiểm định không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Không thể xác nhận kết quả kiểm định chỉ từ tên bóng hoặc quảng cáo của sản phẩm. Trước khi thay đổi cấu hình đèn, trao đổi với cơ sở kiểm định về phương án cụ thể và yêu cầu đang áp dụng.</p>
+    </details>
+    <details class="faq-item faq-item--more">
+      <summary><span>Cần gửi gì để được tư vấn bóng LED theo xe?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Gửi hãng, dòng, năm sản xuất, phiên bản, vị trí đèn và vấn đề muốn cải thiện. Nếu có thể chụp an toàn, thêm ảnh mặt đèn, nhãn/chân bóng và phía sau nắp chụp. Không tự tháo bộ phận nóng hoặc có nguy cơ điện để chụp ảnh.</p>
+    </details>
+    <details class="faq-item faq-item--more">
+      <summary><span>Bảo hành bóng LED có bao gồm công lắp không?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Bảo hành thiết bị và trách nhiệm với phần thi công cần được xác nhận riêng. Hỏi thời hạn, phạm vi, chứng từ và điểm tiếp nhận; không hiểu tuổi thọ công bố là thời hạn bảo hành.</p>
+    </details>
+    <details class="faq-item faq-item--more">
+      <summary><span>Các dòng bóng LED X-Light và NaoEvo tại Auto365 có gì khác biệt và nên chọn dòng nào?</span><svg class="icon faq-icon"><use href="#icon-chevron-down"></use></svg></summary>
+      <p>Auto365 tập trung phân phối chính hãng 2 hệ thương hiệu X-Light và NaoEvo với đầy đủ các chuẩn chân bóng (H1, H4, H7, H11, 9005, 9006, 9012). Sự khác biệt nằm ở phân khúc nhu cầu: Dòng S3 Pro tối ưu chi phí thay thế bóng Halogen đi phố; dòng S6 Pro và S9 Pro tăng cường công suất và gom sáng xa cho đường tối/cao tốc; dòng S8 Pro 4300K tối ưu bám đường cho xe hay đi tỉnh, gặp mưa và sương mù. Tất cả sản phẩm đều được bảo hành chính hãng 24 tháng tại hơn 90 chi nhánh Auto365 toàn quốc.</p>
+    </details>
+  </div>
+
+  <div class="faq-toggle-wrap">
+    <button type="button" class="btn-faq-toggle" id="btn-toggle-faq" aria-expanded="false">
+      <span class="faq-toggle-text">Xem thêm 6 câu hỏi thường gặp khác</span>
+      <svg class="icon faq-toggle-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </button>
+  </div>
+
+  <!-- EEAT Technical Reviewer Card -->
+  <div class="eeat-box">
+    <div class="eeat-avatar">NQĐ</div>
+    <div class="eeat-content">
+      <span class="eeat-kicker">KIỂM DUYỆT KỸ THUẬT</span>
+      <h3 class="eeat-name"><a href="https://auto365.vn/tac-gia/nguyen-quang-dao" target="_blank" rel="noopener noreferrer">Nguyễn Quang Đạo</a></h3>
+      <p class="eeat-title">Chuyên gia đèn ô tô, Auto365</p>
+      <p class="eeat-desc">Biên soạn: Ban Biên Tập Auto365. Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo. Phạm vi: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.</p>
+      <p class="eeat-note">Nội dung không thay thế kiểm tra xe thực tế tại điểm thi công · Ngày kiểm duyệt: 09/09/2026 · Dữ liệu sản phẩm cập nhật: 08/09/2026</p>
+    </div>
+  </div>
+</div>
+</section><section class="section compact" id="co-so" aria-labelledby="co-so-title"><div class="wrap"><div class="section-title"><div><p class="micro">Nguồn thông tin</p><h2 id="co-so-title">Nguồn sản phẩm, hồ sơ xe và ngày đối chiếu</h2></div><p>Đối chiếu ngày 18/09/2026. Giá và tình trạng hàng có thể thay đổi sau thời điểm này.</p></div><div class="grid grid-2">
   <article class="card">
     <h3 style="font-size: 15px; margin: 0 0 6px;">Thông số &amp; Thương mại chính hãng</h3>
     <p style="font-size: 13.5px; line-height: 1.5; color: #414b59; margin: 0 0 8px;">
@@ -4207,6 +4391,25 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     showConsultStep(item, matchObj);
   };
 
+  window.openBookingLightTest = function() {
+    var testItem = {
+      name: 'Trải nghiệm so sánh nhiệt màu 4300K & 6000K trên xe thực tế',
+      priceText: 'Miễn phí trải nghiệm tại xưởng',
+      img: 'https://auto365.vn/uploads/images/product/X-LIGHT/bong-led-s8-pro-4300K-chan-h4/s8-pro-4300k-chan-h4-5.png.webp'
+    };
+
+    openModal();
+    showConsultStep(testItem, {
+      isPick: true,
+      isUpgrade: false,
+      diffBudget: 0,
+      isDirectBooking: true,
+      customTitle: 'Đặt lịch thử ánh sáng trực tiếp tại xưởng Auto365',
+      customBadge: 'Miễn phí trải nghiệm',
+      customNeed: 'Đặt lịch thử ánh sáng 4300K / 6000K trực tiếp trên xe'
+    });
+  };
+
   function showConsultStep(item, matchObj) {
     activeConsultItem = item;
     activeConsultMatch = matchObj;
@@ -4220,12 +4423,27 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     var selPrice = document.getElementById('qs-sel-price');
     var selBadge = document.getElementById('qs-sel-badge');
     var selDiff = document.getElementById('qs-sel-diff');
+    var consultTitle = document.getElementById('qs-consult-title');
+    var btnBack = document.getElementById('qs-btn-back');
+
+    if (consultTitle) {
+      consultTitle.textContent = (matchObj && matchObj.customTitle) ? matchObj.customTitle : 'Tư vấn lắp đặt theo xe';
+    }
+    if (btnBack) {
+      btnBack.style.display = (matchObj && matchObj.isDirectBooking) ? 'none' : '';
+    }
 
     if (selImg) { selImg.src = item.img; selImg.alt = item.name; }
     if (selName) selName.textContent = item.name;
     if (selPrice) selPrice.textContent = item.priceText;
 
-    if (matchObj && matchObj.isUpgrade && matchObj.diffBudget > 0) {
+    if (matchObj && matchObj.customBadge) {
+      if (selBadge) {
+        selBadge.className = 'qs-badge qs-badge--pick';
+        selBadge.textContent = matchObj.customBadge;
+      }
+      if (selDiff) selDiff.style.display = 'none';
+    } else if (matchObj && matchObj.isUpgrade && matchObj.diffBudget > 0) {
       if (selBadge) {
         selBadge.className = 'qs-badge qs-badge--upgrade';
         selBadge.textContent = 'Nâng cấp (+' + formatVND(matchObj.diffBudget) + ')';
@@ -4248,14 +4466,31 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
       if (selDiff) selDiff.style.display = 'none';
     }
 
-    // Pre-fill need if selected in hero finder
-    var heroNeed = document.getElementById('qs-need') ? document.getElementById('qs-need').value : '';
+    // Pre-fill need
     var qscNeed = document.getElementById('qsc-need');
-    if (qscNeed && heroNeed) {
-      if (heroNeed === 'city') qscNeed.value = 'Đi phố, chống chói xe đối diện';
-      else if (heroNeed === 'touring') qscNeed.value = 'Thường xuyên đi đêm, đường xa, quốc lộ';
-      else if (heroNeed === 'rain') qscNeed.value = 'Hay đi trời mưa lớn, sương mù dày';
-      else if (heroNeed === 'reflector') qscNeed.value = 'Chóa phản xạ hở cần gom sáng chuẩn';
+    if (qscNeed) {
+      if (matchObj && matchObj.customNeed) {
+        var optFound = false;
+        for (var oi = 0; oi < qscNeed.options.length; oi++) {
+          if (qscNeed.options[oi].value === matchObj.customNeed) {
+            optFound = true;
+            break;
+          }
+        }
+        if (!optFound) {
+          var newOpt = document.createElement('option');
+          newOpt.value = matchObj.customNeed;
+          newOpt.textContent = matchObj.customNeed;
+          qscNeed.appendChild(newOpt);
+        }
+        qscNeed.value = matchObj.customNeed;
+      } else {
+        var heroNeed = document.getElementById('qs-need') ? document.getElementById('qs-need').value : '';
+        if (heroNeed === 'city') qscNeed.value = 'Đi phố, chống chói xe đối diện';
+        else if (heroNeed === 'touring') qscNeed.value = 'Thường xuyên đi đêm, đường xa, quốc lộ';
+        else if (heroNeed === 'rain') qscNeed.value = 'Hay đi trời mưa lớn, sương mù dày';
+        else if (heroNeed === 'reflector') qscNeed.value = 'Chóa phản xạ hở cần gom sáng chuẩn';
+      }
     }
 
     // Pre-fill province if already set in page form
@@ -4501,6 +4736,34 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
 
   var consultForm = document.getElementById('qs-consult-form');
   if (consultForm) {
+    // Wire direct light test booking button
+    var btnLightTest = document.getElementById('btn-direct-light-test');
+    if (btnLightTest) {
+      btnLightTest.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.openBookingLightTest();
+      });
+    }
+
+    // Wire FAQ compact toggle button
+    var btnToggleFaq = document.getElementById('btn-toggle-faq');
+    var faqGridEl = document.getElementById('faq-grid');
+    if (btnToggleFaq && faqGridEl) {
+      var faqToggleText = btnToggleFaq.querySelector('.faq-toggle-text');
+      var faqToggleIcon = btnToggleFaq.querySelector('.faq-toggle-icon');
+      btnToggleFaq.addEventListener('click', function() {
+        var isExp = faqGridEl.classList.toggle('is-expanded');
+        btnToggleFaq.setAttribute('aria-expanded', isExp ? 'true' : 'false');
+        if (isExp) {
+          if (faqToggleText) faqToggleText.textContent = 'Thu gọn bớt câu hỏi';
+          if (faqToggleIcon) faqToggleIcon.style.transform = 'rotate(180deg)';
+        } else {
+          if (faqToggleText) faqToggleText.textContent = 'Xem thêm 6 câu hỏi thường gặp khác';
+          if (faqToggleIcon) faqToggleIcon.style.transform = '';
+        }
+      });
+    }
+
     consultForm.addEventListener('submit', function(e) {
       e.preventDefault();
 
@@ -4518,15 +4781,16 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
         return;
       }
 
+      var isBooking = activeConsultMatch && activeConsultMatch.isDirectBooking;
       var msgLines = [
-        'Xin chào Auto365, tôi muốn nhận tư vấn lắp đặt bóng LED:',
-        '• Sản phẩm quan tâm: ' + prod.name + (prod.priceText ? ' (' + prod.priceText + ')' : ''),
+        isBooking ? 'Xin chào Auto365, tôi muốn đặt lịch thử ánh sáng trực tiếp tại xưởng:' : 'Xin chào Auto365, tôi muốn nhận tư vấn lắp đặt bóng LED:',
+        isBooking ? '• Nội dung: ' + prod.name : '• Sản phẩm quan tâm: ' + prod.name + (prod.priceText ? ' (' + prod.priceText + ')' : ''),
         '• Khách hàng: ' + name,
         '• Số điện thoại: ' + phoneClean,
         car ? '• Dòng xe: ' + car : '',
-        prov ? '• Tỉnh thành: ' + prov : '',
+        prov ? '• Tỉnh thành / Chi nhánh: ' + prov : '',
         need ? '• Nhu cầu: ' + need : '',
-        'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
+        isBooking ? 'Nhờ kỹ thuật viên Auto365 liên hệ xác nhận khung giờ thử ánh sáng 4300K / 6000K trực tiếp.' : 'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
       ].filter(Boolean).join('\n');
 
       if (navigator.clipboard && window.isSecureContext) {
