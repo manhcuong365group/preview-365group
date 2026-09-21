@@ -419,6 +419,13 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .local{padding:19px 0;background:#fff}
 .local-grid{display:grid;grid-template-columns:1.1fr 1.9fr;gap:45px}
 .local h2{font-size:24px;margin:0 0 10px}
+.local-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:0}
+.local-head h2{margin:0}
+.local-locate-btn{display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:999px;background:var(--red);color:#fff;border:none;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+.local-locate-btn svg{width:16px;height:16px;flex:0 0 16px}
+.local-locate-btn:hover{background:#c81e26}
+.local-locate-status{margin:8px 0 14px;font-size:12.5px;color:var(--muted)}
+.local-locate-status:empty{display:none}
 .local p{font-size:14px;color:#555;margin:0}
 .coverage-stats{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px;background:#fcfcfb}
 .coverage-headline{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:10px}
@@ -661,7 +668,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 /* Branch hero card (bhc-) — Auto365 design system v7 */
 .bhc-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.98fr);gap:14px;align-items:stretch;margin-bottom:26px}
 .bhc-card{position:relative;overflow:hidden;min-width:0;min-height:300px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);container-type:inline-size}
-.bhc-card-inner{position:relative;height:100%;padding:18px 20px 16px}
+.bhc-card-inner{position:relative;height:100%;padding:26px 20px 16px}
 .bhc-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 10px;color:var(--red);font-size:11px;line-height:1;font-weight:500;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
 .bhc-eyebrow::after{content:"";width:36px;height:1.5px;background:currentColor;border-radius:999px;opacity:.9}
 .bhc-map-bg{position:absolute;inset:0 0 auto auto;width:50%;height:270px;pointer-events:none;overflow:hidden}
@@ -688,7 +695,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .bhc-fact-title{display:block;font-size:10.5px;line-height:1.1;font-weight:500;color:var(--ink);white-space:nowrap}
 .bhc-fact-text{display:block;margin-top:2px;font-size:9.5px;line-height:1.1;color:var(--muted);white-space:nowrap}
 .bhc-right-card{padding:0}
-.bhc-right-card .bhc-card-inner{padding:18px 20px 16px;height:100%}
+.bhc-right-card .bhc-card-inner{padding:26px 20px 16px;height:100%}
 .bhc-section-title{margin:0;color:var(--ink);font-weight:600;letter-spacing:-.02em}
 .bhc-scale{font-size:clamp(1.3rem,1.15rem + .7vw,1.6rem);line-height:1.05;white-space:nowrap;padding-right:88px}
 .bhc-scale-hl{color:var(--red)}
@@ -711,6 +718,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 @container(max-width:600px){.bhc-left-content{width:78%}.bhc-map-badge{right:16px}.bhc-fact-row{grid-template-columns:1fr 1.22fr 1.24fr .76fr}}
 @media(max-width:1060px){.bhc-grid{grid-template-columns:1fr;max-width:760px;margin-inline:auto}}
 @media(max-width:640px){
+  .local-head{flex-direction:column;align-items:stretch}
+  .local-locate-btn{justify-content:center}
   .bhc-grid{gap:12px}
   .bhc-card{min-height:0;border-radius:14px}
   .bhc-card-inner{padding:18px 15px}
@@ -1057,7 +1066,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div>
 <h2>Camera hành trình là gì, dùng khi nào và chọn từ đâu?</h2>
 </div>
-<p>Ba loại camera phục vụ mục đích khác nhau và có thể cùng tồn tại trên một xe mà không thay thế nhau. Bảng dưới đây giúp bạn phân biệt nhanh trước khi xem sản phẩm, tìm hiểu thương hiệu và tham khảo các xe đã lắp.</p>
 <div class="type-compare">
 <table>
 <caption>So sánh nhanh: camera hành trình, camera lùi và camera 360°</caption>
@@ -1217,7 +1225,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="wrap">
 <div class="tiers-head">
 <h2>Bảng phân khúc giá camera hành trình: Chọn theo ngân sách từ 81 model</h2>
-<p>Danh mục camera hành trình tại Auto365 trải dài từ 999.000đ đến 16.900.000đ, chia làm 4 phân khúc rõ ràng giúp bạn dễ dàng khoanh vùng thiết bị phù hợp với túi tiền và mục đích sử dụng.</p>
 </div>
 <div class="tiers-grid">
 
@@ -1287,7 +1294,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </article>
 
 </div>
-<p style="margin:16px 0 0;font-size:12px;color:var(--muted)">* Ngoài 63 model có giá niêm yết theo 4 phân khúc trên, danh mục còn 18 model cao cấp/chuyên biệt có giá theo thời điểm hoặc tùy chọn cấu hình (liên hệ trực tiếp để có báo giá trọn gói).</p>
 </div>
 </section>
 
@@ -1308,7 +1314,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <section class="live-blocks" id="loi-ich">
 <div class="wrap">
 <h2>Ghi lại hành trình để an tâm hơn khi lái xe.</h2>
-<p class="live-intro">Camera không thay người lái đưa ra quyết định và không ghi toàn bộ bối cảnh. Giá trị của nó là lưu lại phạm vi quan sát để xem lại sự việc, nếu camera, thẻ nhớ và cấu hình đang hoạt động đúng.</p>
 <div class="benefit-grid">
 <article class="benefit">
 <i>✓</i>
@@ -1877,7 +1882,11 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <!-- 11. ĐIỂM LẮP TIÊU BIỂU & TÌM KIẾM CHI NHÁNH -->
 <section class="local" id="dia-diem">
 <div class="wrap">
+<div class="local-head">
 <h2>Tìm điểm lắp camera hành trình gần bạn.</h2>
+<button type="button" id="branchLocate" class="local-locate-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>Tìm điểm gần tôi →</button>
+</div>
+<p class="local-locate-status" id="branchLocateStatus"></p>
 <div class="bhc-grid">
 <article class="bhc-card">
 <div class="bhc-map-bg" aria-hidden="true">
