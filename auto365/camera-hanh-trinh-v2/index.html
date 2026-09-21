@@ -350,8 +350,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .case-tab:hover{border-color:var(--red)}
 .case-tab.active{background:#f7f7f5;color:var(--red);border-color:var(--red);font-weight:600}
 .scroll-hint-mobile-only{display:none}
-.v2-real-cases-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-height:545px;overflow:hidden;transition:max-height .35s ease}
-.v2-real-cases-grid.expanded{max-height:6000px!important}
+.v2-real-cases-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.v2-real-cases-grid:not(.expanded) .v2-real-case.case-collapsible{display:none}
 .v2-real-case{overflow:hidden;background:#fff;border:1px solid #e8e6e2;border-radius:14px;transition:transform .2s ease,box-shadow .2s ease}
 .v2-real-case.case-hidden{display:none}
 .v2-real-case:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(22,22,22,.07)}
@@ -592,7 +592,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .navlinks a:last-child{border-bottom:none}
   .hero-grid,.intro-grid,.local-grid,.depth-row,.footer-grid{grid-template-columns:1fr}
   .customer-summary-grid{grid-template-columns:repeat(2,1fr)}
-  .v2-real-cases-grid{grid-template-columns:repeat(2,1fr);max-height:545px}
+  .v2-real-cases-grid{grid-template-columns:repeat(2,1fr)}
   .content-banner-row{grid-template-columns:1fr}
   .catalog-shell{display:block}
   .filters{display:none}
@@ -622,6 +622,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .scroll-hint-mobile-only{display:block;margin:0 0 8px;color:var(--muted);font-size:11px;font-weight:500}
   .v2-real-cases-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:68%!important;gap:10px!important;max-height:none!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px;padding-left:22px;padding-right:22px}
   .v2-real-case{scroll-snap-align:start;min-width:0}
+  .v2-real-case.case-collapsible:not(.case-hidden){display:block!important}
   .case-show-more{display:none}
   .guide-reading-head{display:block}.guide-reading-head>a{display:inline-block;margin-top:8px}.guide-reading-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:75%!important;gap:10px!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}.guide-reading-card{scroll-snap-align:start;min-width:0}
   .case-brand-tabs{gap:6px}
@@ -3200,6 +3201,13 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   const moreBtn = document.getElementById('caseShowMore');
   if (!grid || !tabs || !moreBtn) return;
   const cards = Array.from(grid.querySelectorAll('.v2-real-case'));
+  const COLLAPSE_LIMIT = 8;
+  function updateCollapsible() {
+    const visible = cards.filter(c => !c.classList.contains('case-hidden'));
+    cards.forEach(c => c.classList.remove('case-collapsible'));
+    visible.slice(COLLAPSE_LIMIT).forEach(c => c.classList.add('case-collapsible'));
+  }
+  updateCollapsible();
   tabs.addEventListener('click', e => {
     const btn = e.target.closest('.case-tab');
     if (!btn) return;
@@ -3209,6 +3217,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
     cards.forEach(c => {
       c.classList.toggle('case-hidden', brand !== 'all' && c.dataset.brand !== brand);
     });
+    updateCollapsible();
     grid.classList.remove('expanded');
     moreBtn.textContent = 'Xem thêm ca lắp →';
     moreBtn.style.display = '';
