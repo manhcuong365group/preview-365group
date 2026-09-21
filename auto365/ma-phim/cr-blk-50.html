@@ -519,10 +519,25 @@
     .quick-verdict-item{border:1px solid var(--line);border-radius:14px;background:#fff;padding:15px 16px;font-size:13px;color:#4f5863}
     .quick-verdict-item strong{display:block;margin-bottom:5px;color:#111214;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
     .matrix-wrap{overflow-x:auto;margin-top:20px}
-    .decision-matrix{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px}
-    .decision-matrix th,.decision-matrix td{padding:13px 14px;border-bottom:1px solid #ece9e3;text-align:left;vertical-align:top}
-    .decision-matrix th{background:#f8f7f4;color:#616975;font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+    .decision-matrix{width:100%;table-layout:fixed;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14px}
+    .decision-matrix th,.decision-matrix td{padding:13px 14px;border:1px solid #ece9e3;text-align:left;vertical-align:top}
+    .decision-matrix th{background:#f8f7f4;color:#616975;font-size:11px;text-transform:uppercase;letter-spacing:.06em;border-top:0}
     .decision-matrix tr:last-child td{border-bottom:0}
+    .decision-matrix tr td:first-child,.decision-matrix tr th:first-child{border-left:0}
+    .decision-matrix tr td:last-child,.decision-matrix tr th:last-child{border-right:0}
+    .decision-matrix col.col-code{width:13%}
+    .decision-matrix col.col-spec{width:27%}
+    .decision-matrix col.col-note{width:60%}
+    .decision-matrix td:nth-child(2){white-space:nowrap}
+    .decision-cards{display:none}
+    @media (max-width:640px){
+      .matrix-wrap{display:none}
+      .decision-cards{display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:12px;margin-top:20px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}
+      .decision-cards::-webkit-scrollbar{display:none}
+      .decision-cards article{scroll-snap-align:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}
+      .decision-cards .decision-spec{font-weight:700;color:#111214;margin:6px 0 8px}
+      .decision-cards p{color:#5c636d;margin:0}
+    }
     .funnel-cta{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:20px;padding:16px 18px;border-radius:16px;background:#111316;color:#fff}
     .funnel-cta p{margin:0;color:#c6cbd2;font-size:14px}
     .funnel-cta .btn{flex:none}
@@ -997,7 +1012,7 @@
     @media (max-width: 640px) {
       .hero-subtitle{font-size:14px}
       .quick-verdict,.limits-list{grid-template-columns:1fr}
-      .decision-matrix{min-width:520px}
+      .decision-matrix{min-width:700px}
       .funnel-cta{padding:14px}
     }
     /* Lightweight Apple system typography. Uses SF Pro on Apple devices and a close system fallback elsewhere. */
@@ -1012,7 +1027,13 @@
     .region-card strong{font-size:24px!important;font-weight:500!important}
     .system-compact .system-panel h2{font-size:20px!important}
     .why-auto365 .benefit-integrated h2{font-size:20px!important}
-    .case-card h3{font-size:17px!important}
+    /* Final compact pass: shrink case-card media/type further, this must stay last in source order. */
+    .case-media img{aspect-ratio:2/1!important}
+    .case-grid{gap:8px!important}
+    .case-card h3{font-size:14px!important;padding:10px 12px 0!important}
+    .case-card p{font-size:11.5px!important;min-height:0!important;padding:4px 12px 0!important}
+    .case-card a{font-size:12px!important;padding:8px 12px 12px!important}
+    @media (max-width:640px){.case-card h3{font-size:13.5px!important}.case-card p{font-size:11px!important}}
     @media(max-width:640px){
       h2{font-size:22px!important}
       h3{font-size:15px!important}
@@ -1207,17 +1228,13 @@
             <div class="series-name">3M™ Automotive Window Film<strong>Crystalline™ CR BLK</strong></div>
           </div>
            <h1>Phim cách nhiệt 3M CR BLK 50: thông số và cách chọn theo vị trí kính</h1>
-           <p class="hero-subtitle">Mã phim Crystalline có độ sáng trung bình, thường được cân nhắc cho kính lái khi cần cân bằng quan sát, giảm chói và hiệu năng nhiệt.</p>
-           <p class="hero-answer"><strong>3M CR BLK 50 là một mã phim thuộc dòng 3M Crystalline CR BLK.</strong> Trên Auto 75 Glass, mã phim này có VLT tham chiếu 48% và TSER 56% theo TDS 3M. Trong cấu hình tư vấn của Auto365, CR BLK 50 có thể được cân nhắc cho kính lái hoặc các vị trí kính ưu tiên độ truyền sáng tương đối cao; kết quả thực tế vẫn phụ thuộc kính nguyên bản và nhu cầu sử dụng.</p>
+           <p class="hero-answer"><strong>3M CR BLK 50 là mã phim thuộc dòng 3M Crystalline CR BLK, VLT tham chiếu 48% và TSER 56% trên Auto 75 Glass theo TDS 3M.</strong> Độ sáng trung bình này thường được cân nhắc cho kính lái hoặc các vị trí ưu tiên độ truyền sáng tương đối cao, khi cần cân bằng quan sát, giảm chói và hiệu năng nhiệt; kết quả thực tế vẫn phụ thuộc kính nguyên bản và nhu cầu sử dụng.</p>
           <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
             <div><span class="hero-offer-label">Giá kính lái tham khảo (đã gồm VAT)</span><div class="hero-price">Từ 5.700.000đ</div><div class="hero-price-note">Giá đã gồm VAT · Cập nhật 06/2026.</div></div>
             <a class="btn btn-primary" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener">Nhận báo giá theo xe</a>
           </div>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener">Tư vấn CR BLK 50 qua Zalo</a>
-            <a class="btn btn-ghost" href="#phu-hop">Kiểm tra mã có hợp xe</a>
-            <a class="btn btn-ghost" href="https://auto365.vn/lien-he">Xem địa chỉ Auto365</a>
-            <a class="btn btn-ghost" href="tel:+84365365365">Gọi 0365 365 365</a>
+            <a class="btn btn-ghost" href="#so-sanh">So sánh CR BLK 40/50/60</a>
           </div>
           <div class="quick-facts">
             <span><i></i> Phi kim theo mô tả 3M</span>
@@ -1266,55 +1283,22 @@
       </div>
       <section class="section" id="phu-hop" aria-labelledby="position-title"><div class="section-kicker">Bản đồ vị trí kính</div><h2 id="position-title">CR BLK 50 nên được cân nhắc ở đâu?</h2><p class="lede">Đây là gợi ý tư vấn Auto365 dựa trên VLT và bối cảnh sử dụng, không phải chỉ định vị trí kính của 3M. Mỗi xe vẫn phải kiểm tra kính nguyên bản.</p><div class="position-grid"><article class="position-card yes"><span class="state">Cân bằng</span><h3>Kính lái</h3><p>Gợi ý phổ biến khi cần dung hòa tầm nhìn, giảm chói và hiệu năng.</p></article><article class="position-card yes"><span class="state">Sáng</span><h3>Kính sườn trước</h3><p>Phù hợp người ưu tiên quan sát bên hông, ít cần riêng tư.</p></article><article class="position-card caution"><span class="state">Ít riêng tư</span><h3>Kính sườn sau</h3><p>Có thể làm khoang sau sáng hơn mong muốn; so sánh với 35/15.</p></article><article class="position-card caution"><span class="state">Theo nhu cầu</span><h3>Kính lưng</h3><p>Ưu tiên quan sát hơn riêng tư; kiểm tra kính nền và camera.</p></article></div></section>
       <section class="section" id="thong-so" aria-labelledby="data-title"><div class="section-kicker">Dữ liệu theo điều kiện kính</div><h2 id="data-title">Thông số 3M CR BLK 50 theo từng loại kính tham chiếu</h2><p class="lede">Không dùng một con số VLT để dự đoán chắc chắn mọi xe. Chọn điều kiện kính tham chiếu để xem dữ liệu 3M công bố.</p><div class="data-toolbar"><div class="lane-buttons" role="group" aria-label="Điều kiện kính" data-lane-buttons><button class="lane-btn active" type="button" data-lane="auto" aria-pressed="true">Auto 75 Glass</button><button class="lane-btn" type="button" data-lane="clear" aria-pressed="false">Kính trong 6 mm</button></div><span class="data-note">3M TDS Revision F · August 2025</span></div><div class="metric-grid" data-metric-grid><div class="data-card" data-lane="auto"><strong>48%</strong><span>VLT</span></div><div class="data-card" data-lane="auto"><strong>56%</strong><span>TSER</span></div><div class="data-card" data-lane="auto"><strong>68%</strong><span>IRER</span></div><div class="data-card" data-lane="auto"><strong>98%</strong><span>IRR</span></div><div class="data-card" data-lane="auto"><strong>99,9%</strong><span>UV Block</span></div><div class="data-card" data-lane="auto"><strong>34%</strong><span>Giảm chói</span></div><div class="data-card" data-lane="clear" hidden><strong>59%</strong><span>VLT</span></div><div class="data-card" data-lane="clear" hidden><strong>52%</strong><span>TSER</span></div><div class="data-card" data-lane="clear" hidden><strong>69%</strong><span>IRER</span></div><div class="data-card" data-lane="clear" hidden><strong>98%</strong><span>IRR</span></div><div class="data-card" data-lane="clear" hidden><strong>99,9%</strong><span>UV Block</span></div><div class="data-card" data-lane="clear" hidden><strong>34%</strong><span>Giảm chói</span></div></div><div class="table-wrap"><table class="spec-table"><thead><tr><th>Điều kiện kính</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th><th>VLR ngoài / trong</th></tr></thead><tbody data-spec-tbody><tr><td>Auto 75 · kính nền 73%</td><td>48%</td><td>56%</td><td>68%</td><td>98%</td><td>99,9%</td><td>34%</td><td>7% / 7%</td></tr><tr><td>Kính trong 6 mm · nền 89%</td><td>59%</td><td>52%</td><td>69%</td><td>98%</td><td>99,9%</td><td>34%</td><td>7% / 8%</td></tr></tbody></table></div><p class="fit-note">Mã CR BLK 15 chưa có trong bản TDS 3M Revision F đang dẫn nguồn ở trang này nên chưa đưa vào so sánh.</p><div class="definition-grid"><div class="definition"><strong>TSER</strong>Tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Đây là chỉ số phù hợp để giải thích hiệu suất nhiệt tổng thể.</div><div class="definition"><strong>IRER</strong>Năng lượng hồng ngoại bị loại bỏ trong dải 780-2.500 nm, có tính phần hấp thụ rồi tái bức xạ vào xe.</div><div class="definition"><strong>IRR không phải TSER</strong>IRR đo dải 900-1.000 nm trên phim còn liner; không quy đổi IRR thành tỷ lệ loại bỏ tổng nhiệt.</div></div><div class="source-box"><strong>Điều kiện nguồn:</strong> Auto 75 là kính ô tô xanh dày 6 mm, VLT nền 73%; dữ liệu ước tính, thử theo ANSI/NFRC 200 và chỉ dùng tham khảo. Đây là gợi ý cấu hình Auto365, không phải tuyên bố phù hợp mặc định cho mọi kính lái. <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">Mở TDS 3M</a> · <a href="https://www.3m.com.vn/3M/vi_VN/p/d/b00016683/" target="_blank" rel="noopener">Trang 3M Việt Nam</a>.</div></section>
-      <figure class="editorial-interlude"><img src="assets/cr-blk-50-before-after.webp" alt="So sánh kính lái trước và sau khi dán phim 3M" loading="lazy"></figure>
-      <section class="section proof" aria-label="Xe thật và kiểm duyệt kỹ thuật">
-        <div class="proof-media"><img src="https://auto365.vn/uploads/images/product/3m/3m-cr-blk-50/CRYSTALLINE-3M-CR-BLK-50.png.webp" alt="Xe thực tế thuộc tuyến 3M Crystalline CR BLK tại Auto365" width="800" height="533" loading="lazy"></div>
-        <div class="proof-copy">
-          <div class="section-kicker">Xe thật · quy trình thật</div>
-          <h2>Đo kính nền trước, kiểm tra thiết bị sau</h2>
-          <p>Trước khi chọn mã, hãy trao đổi về kính nguyên bản, tần suất đi đêm và các thiết bị liên quan trên xe. Các bài xe thực tế giúp tham khảo cấu hình đã sử dụng; cấu hình cho xe của bạn cần được tư vấn riêng.</p>
-          <ul>
-            <li>Đo và ghi VLT kính nguyên bản trước khi tư vấn.</li>
-            <li>Xem mẫu thực tế theo thói quen đi ngày/đêm.</li>
-            <li>Kiểm tra GPS, ETC/VETC, camera, HUD theo từng xe.</li>
-            <li>Kích hoạt và hướng dẫn tra cứu bảo hành điện tử 3M.</li>
-          </ul>
-          <div class="reviewer">
-            <span class="reviewer-mark" aria-hidden="true">ĐH</span>
-            <div><strong>Đặng Minh Hoàng</strong><small>Kiểm duyệt kỹ thuật · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center</small></div>
-          </div>
-        </div>
-      </section>
-      <figure class="editorial-interlude"><img src="assets/cr-blk-50-meter.webp" alt="Đo thông số kính lái trước và sau thi công" loading="lazy"></figure>
-      <section class="section" aria-labelledby="irr-title">
-        <h2 id="irr-title">IRR 98% có nghĩa CR BLK 50 cản 98% nhiệt không?</h2>
-        <p class="lede"><strong>Không.</strong> IRR 98% không đồng nghĩa phim loại bỏ 98% tổng nhiệt đi qua kính.</p>
-        <div class="definition-grid">
-          <div class="definition"><strong>IRR</strong>Đo một dải hồng ngoại cụ thể trên phim còn liner.</div>
-          <div class="definition"><strong>TSER</strong>Phản ánh tổng năng lượng mặt trời bị loại bỏ trong điều kiện đo của hệ phim - kính.</div>
-          <div class="definition"><strong>Cách đọc đúng</strong>Khi đánh giá hiệu năng nhiệt tổng thể, dùng TSER theo điều kiện kính tham chiếu; không thay TSER bằng IRR.</div>
-        </div>
-      </section>
-      <section class="section" aria-labelledby="technology-title">
-        <div class="section-kicker">Chất riêng Crystalline</div>
-        <h2 id="technology-title">Hiệu năng đến từ cấu trúc quang học, không chỉ từ độ tối</h2>
-        <p class="lede">Ba điểm 3M công bố cho Crystalline CR BLK được tóm tắt ở đây; xem thêm thông tin về cấu trúc và phạm vi dữ liệu của dòng phim tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">trang Crystalline CR BLK</a>.</p>
-        <div class="technology">
-          <article class="tech-card"><div class="tech-number">200+</div><h3>Lớp quang học siêu mỏng</h3><p>Cấu trúc phim quang học đa lớp độc quyền kết hợp công nghệ nano theo mô tả của 3M.</p></article>
-          <article class="tech-card"><div class="tech-number">PHI KIM</div><h3>Thiết kế không kim loại</h3><p>Cấu trúc phim không kim loại theo công bố của 3M, không gây nhiễu sóng điện tử, thẻ ETC và GPS; Auto365 vẫn kiểm tra theo từng xe.</p></article>
-          <article class="tech-card"><div class="tech-number">2</div><h3>Điều kiện kính tham chiếu</h3><p>Auto 75 và kính trong 6 mm cho kết quả khác nhau; tách bạch hai điều kiện đo thay vì gộp chung một con số.</p></article>
-        </div>
-      </section>
       <section class="section" id="so-sanh" aria-labelledby="decision-matrix-title">
         <div class="section-kicker">So sánh trước khi chốt mã</div>
         <h2 id="decision-matrix-title">Chọn CR BLK 40, 50 hay 60 theo nhu cầu</h2>
+        <div class="decision-cards">
+          <article><div class="compare-code">60</div><p class="decision-spec">VLT 57% · TSER 54% · giảm chói 22%</p><p>CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, vì vậy có thể được đặt cạnh CR BLK 50 để cân nhắc khi người dùng ưu tiên kính lái sáng hơn.</p></article>
+          <article><div class="compare-code">50</div><p class="decision-spec">VLT 48% · TSER 56% · giảm chói 34%</p><p>Đi phố và đi tỉnh xen kẽ, muốn dung hòa quan sát, giảm chói và hiệu năng nhiệt.</p></article>
+          <article><div class="compare-code">40</div><p class="decision-spec">VLT 41% · TSER 58% · giảm chói 44%</p><p>Ưu tiên giảm chói và cảm giác dịu mắt hơn, sau khi đã xem mẫu thực tế trên xe.</p></article>
+        </div>
         <div class="matrix-wrap">
         <table class="decision-matrix">
-          <thead><tr><th>Mã phim</th><th>Thiên về</th><th>Nên cân nhắc khi</th></tr></thead>
+          <colgroup><col class="col-code"><col class="col-spec"><col class="col-note"></colgroup>
+          <thead><tr><th>Mã phim</th><th>Thông số tham chiếu</th><th>Nên cân nhắc khi</th></tr></thead>
           <tbody>
-            <tr><td><strong>CR BLK 60</strong></td><td>Độ sáng</td><td>CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, vì vậy có thể được đặt cạnh CR BLK 50 để cân nhắc khi người dùng ưu tiên kính lái sáng hơn.</td></tr>
-            <tr><td><strong>CR BLK 50</strong></td><td>Cân bằng</td><td>Đi phố và đi tỉnh xen kẽ, muốn dung hòa quan sát, giảm chói và hiệu năng nhiệt.</td></tr>
-            <tr><td><strong>CR BLK 40</strong></td><td>Dịu sáng hơn</td><td>Ưu tiên giảm chói và cảm giác dịu mắt hơn, sau khi đã xem mẫu thực tế trên xe.</td></tr>
+            <tr><td><strong>CR BLK 60</strong></td><td>VLT 57% · TSER 54% · giảm chói 22%</td><td>CR BLK 60 có VLT tham chiếu cao hơn CR BLK 50, vì vậy có thể được đặt cạnh CR BLK 50 để cân nhắc khi người dùng ưu tiên kính lái sáng hơn.</td></tr>
+            <tr><td><strong>CR BLK 50</strong></td><td>VLT 48% · TSER 56% · giảm chói 34%</td><td>Đi phố và đi tỉnh xen kẽ, muốn dung hòa quan sát, giảm chói và hiệu năng nhiệt.</td></tr>
+            <tr><td><strong>CR BLK 40</strong></td><td>VLT 41% · TSER 58% · giảm chói 44%</td><td>Ưu tiên giảm chói và cảm giác dịu mắt hơn, sau khi đã xem mẫu thực tế trên xe.</td></tr>
           </tbody>
         </table>
         </div>
@@ -1354,10 +1338,48 @@
           </article>
         </div>
       </section>
+      <figure class="editorial-interlude"><img src="assets/cr-blk-50-before-after.webp" alt="So sánh kính lái trước và sau khi dán phim 3M" loading="lazy"></figure>
+      <section class="section proof" aria-label="Xe thật và kiểm duyệt kỹ thuật">
+        <div class="proof-media"><img src="https://auto365.vn/uploads/images/product/3m/3m-cr-blk-50/CRYSTALLINE-3M-CR-BLK-50.png.webp" alt="Xe thực tế thuộc tuyến 3M Crystalline CR BLK tại Auto365" width="800" height="533" loading="lazy"></div>
+        <div class="proof-copy">
+          <div class="section-kicker">Xe thật · quy trình thật</div>
+          <h2>Đo kính nền trước, kiểm tra thiết bị sau</h2>
+          <p>Trước khi chọn mã, hãy trao đổi về kính nguyên bản, tần suất đi đêm và các thiết bị liên quan trên xe. Các bài xe thực tế giúp tham khảo cấu hình đã sử dụng; cấu hình cho xe của bạn cần được tư vấn riêng.</p>
+          <ul>
+            <li>Đo và ghi VLT kính nguyên bản trước khi tư vấn.</li>
+            <li>Xem mẫu thực tế theo thói quen đi ngày/đêm.</li>
+            <li>Kiểm tra GPS, ETC/VETC, camera, HUD theo từng xe.</li>
+            <li>Kích hoạt và hướng dẫn tra cứu bảo hành điện tử 3M.</li>
+          </ul>
+          <div class="reviewer">
+            <span class="reviewer-mark" aria-hidden="true">ĐH</span>
+            <div><strong>Đặng Minh Hoàng</strong><small>Kiểm duyệt kỹ thuật · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center</small></div>
+          </div>
+        </div>
+      </section>
+      <figure class="editorial-interlude"><img src="assets/cr-blk-50-meter.webp" alt="Đo thông số kính lái trước và sau thi công" loading="lazy"></figure>
+      <section class="section" aria-labelledby="irr-title">
+        <h2 id="irr-title">IRR 98% có nghĩa CR BLK 50 cản 98% nhiệt không?</h2>
+        <p class="lede"><strong>Không.</strong> IRR 98% không đồng nghĩa phim loại bỏ 98% tổng nhiệt đi qua kính.</p>
+        <div class="definition-grid">
+          <div class="definition"><strong>IRR</strong>Đo một dải hồng ngoại cụ thể trên phim còn liner.</div>
+          <div class="definition"><strong>TSER</strong>Phản ánh tổng năng lượng mặt trời bị loại bỏ trong điều kiện đo của hệ phim - kính.</div>
+          <div class="definition"><strong>Cách đọc đúng</strong>Khi đánh giá hiệu năng nhiệt tổng thể, dùng TSER theo điều kiện kính tham chiếu; không thay TSER bằng IRR.</div>
+        </div>
+      </section>
+      <section class="section" aria-labelledby="technology-title">
+        <div class="section-kicker">Chất riêng Crystalline</div>
+        <h2 id="technology-title">Hiệu năng đến từ cấu trúc quang học, không chỉ từ độ tối</h2>
+        <p class="lede">Ba điểm 3M công bố cho Crystalline CR BLK được tóm tắt ở đây; xem thêm thông tin về cấu trúc và phạm vi dữ liệu của dòng phim tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">trang Crystalline CR BLK</a>.</p>
+        <div class="technology">
+          <article class="tech-card"><div class="tech-number">200+</div><h3>Lớp quang học siêu mỏng</h3><p>Cấu trúc phim quang học đa lớp độc quyền kết hợp công nghệ nano theo mô tả của 3M.</p></article>
+          <article class="tech-card"><div class="tech-number">0</div><h3>Kim loại trong cấu trúc</h3><p>Thiết kế phi kim theo công bố của 3M, không gây nhiễu sóng điện tử, thẻ ETC và GPS; Auto365 vẫn kiểm tra theo từng xe.</p></article>
+          <article class="tech-card"><div class="tech-number">2</div><h3>Điều kiện kính tham chiếu</h3><p>Auto 75 và kính trong 6 mm cho kết quả khác nhau; tách bạch hai điều kiện đo thay vì gộp chung một con số.</p></article>
+        </div>
+      </section>
       <figure class="editorial-interlude"><img src="assets/cr-blk-50-vf6.webp" alt="VinFast VF 6 đã dán 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></figure>
       <section class="section" aria-labelledby="case-title">
-        <div class="case-heading"><div><div class="section-kicker">Bài xe thực tế</div><h2 id="case-title">12 xe thi công dán phim cách nhiệt tại Auto365</h2></div></div>
-        <p class="lede">Tham khảo các xe thực tế đã thi công 3M Crystalline CR BLK tại Auto365, trong đó CR BLK 50 được sử dụng cho kính lái theo cấu hình của từng ca. Mã phim trên từng ô kính cần được đối chiếu từ phiếu cấu hình hoặc hồ sơ thi công của chính chiếc xe; ảnh ngoại quan không đủ để xác định chính xác mã phim.</p>
+        <div class="case-heading"><div><div class="section-kicker">Bài xe thực tế</div><h2 id="case-title">Xe dán phim cách nhiệt thực tế tại Auto365</h2></div></div>
         <div class="case-filters" role="group" aria-label="Lọc bài xe theo thương hiệu">
           <button class="case-filter active" type="button" data-brand="all" aria-pressed="true">Tất cả</button>
           <button class="case-filter" type="button" data-brand="vinfast" aria-pressed="false">VinFast</button>
@@ -1378,12 +1400,12 @@
           <article class="case-card" data-brand="hyundai"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk-img_6a76af5a886743.94271249.png.webp" alt="Hyundai Santa Fe dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Hyundai</span><h3>Hyundai Santa Fe</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk">Xem hồ sơ xe →</a></article>
           <article class="case-card" data-brand="toyota"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365_20260707_172456_6a4cd3f813b05.png.webp" alt="Toyota Veloz Cross dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Veloz Cross</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-toyota-veloz-cross">Xem hồ sơ xe →</a></article>
           <article class="case-card" data-brand="mazda"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5-14-img_6a574cec6cb8d3.87514689.jpg.webp" alt="Mazda CX-5 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Mazda</span><h3>Mazda CX-5</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="kia"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365-vn-tru-so-chinh-10png-img_6a476b080245d5.35547863_.png" alt="Kia Carens dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Kia</span><h3>Kia Carens</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365-vn-tru-so-chinh-10png-img_6a476b080245d5.35547863_.png">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="lynk & co"><div class="case-media"><img src="assets/cr-blk-50-vf6.webp" alt="Lynk &amp; Co 06 dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Lynk &amp; Co</span><h3>Lynk &amp; Co 06</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/lynk-co-06-dan-phim-cach-nhiet-3m">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="assets/cr-blk-50-before-after.webp" alt="Toyota Corolla Cross dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Corolla Cross</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="assets/cr-blk-50-meter.webp" alt="Toyota Innova Cross dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Innova Cross</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="ford"><div class="case-media"><img src="assets/cr-blk-50-before-after.webp" alt="Ford Everest dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Ford</span><h3>Ford Everest</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="mitsubishi"><div class="case-media"><img src="assets/cr-blk-50-installation.webp" alt="Mitsubishi Destinator dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Mitsubishi</span><h3>Mitsubishi Destinator</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-mitsubishi-destinator">Xem hồ sơ xe →</a></article>
+          <article class="case-card" data-brand="kia"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365-vn-tru-so-chinh-10png-img_6a476b080245d5.35547863_.png" alt="Kia Carens dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Kia</span><h3>Kia Carens</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365vn-tru-so-chinh">Xem hồ sơ xe →</a></article>
+          <article class="case-card" data-brand="lynk & co"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-lynk-co-06-dan-phim-cach-nhiet-3m-img_6a896e81764eb7.93060792.png.webp" alt="Lynk &amp; Co 06 dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Lynk &amp; Co</span><h3>Lynk &amp; Co 06</h3><p>Kính lái CR BLK 50 · Sườn trước CR BLK 35 · Sườn sau IR 15; giữ nguyên kính lưng.</p><a href="https://auto365.vn/lynk-co-06-dan-phim-cach-nhiet-3m">Xem hồ sơ xe →</a></article>
+          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong-img_6a7a9af22a30d3.71123956.png.webp" alt="Toyota Corolla Cross dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Corolla Cross</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong">Xem hồ sơ xe →</a></article>
+          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross-10-img_6a633cce0220a3.05376622.png.webp" alt="Toyota Innova Cross dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Innova Cross</h3><p>Kính lái CR BLK 50 · Sườn CR BLK 35 · Lưng CR BLK 15 · Cửa sổ trời IR15</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross">Xem hồ sơ xe →</a></article>
+          <article class="case-card" data-brand="ford"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-260605-frame-tin-tuc-web-auto365-1png-img_6a47883739b554.83691649_.png.webp" alt="Ford Everest dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Ford</span><h3>Ford Everest</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest">Xem hồ sơ xe →</a></article>
+          <article class="case-card" data-brand="mitsubishi"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-destinator-dan-phim-cach-nhiet-3m-crystalline-cr-blk-11-img_6a5dedd09be4e4.60334728.png.webp" alt="Mitsubishi Destinator dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Mitsubishi</span><h3>Mitsubishi Destinator</h3><p>CR BLK full xe · Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-mitsubishi-destinator">Xem hồ sơ xe →</a></article>
         </div>
       </section>
       <figure class="editorial-interlude"><img src="assets/cr-blk-50-installation.webp" alt="Kỹ thuật viên thi công phim cách nhiệt trên kính xe" loading="lazy"></figure>
@@ -1412,7 +1434,7 @@
       </section>
       <section class="section source-box" aria-label="Nguồn và phạm vi dữ liệu">
         <strong>Nguồn và phạm vi dữ liệu</strong>
-        <p><strong>Biên soạn:</strong> Ban Biên Tập Auto365<br><strong>Chuyên gia kiểm duyệt:</strong> <a href="https://auto365.vn/dang-minh-hoang">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br><strong>Nguồn dữ liệu kỹ thuật:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Crystalline / CR BLK Technical Data Sheet – Revision F, August 2025</a><br><strong>Cập nhật và kiểm duyệt:</strong> 15/09/2026</p>
+        <p><strong>Biên soạn:</strong> Ban Biên Tập Auto365<br><strong>Chuyên gia kiểm duyệt:</strong> <a href="https://auto365.vn/dang-minh-hoang">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br><strong>Nguồn dữ liệu kỹ thuật:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Crystalline / CR BLK Technical Data Sheet – Revision F, August 2025</a><br><strong>Xuất bản:</strong> 15/09/2026 · <strong>Cập nhật nội dung:</strong> 16/09/2026</p>
         <p>Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính được 3M công bố; kết quả trên từng xe có thể khác do kính nền, cấu hình và điều kiện sử dụng. Giá, ưu đãi, điểm thi công và phạm vi bảo hành cần được xác nhận lại trước khi đặt lịch.</p>
       </section>
       <section class="section final-cta" aria-label="Nhận tư vấn cấu hình">
@@ -1486,10 +1508,10 @@
         var result=document.querySelector("[data-fit-result]");
         var recommendation={code:"CR BLK 50",reason:"Mã cân bằng để bắt đầu đối chiếu khi cần dung hòa quan sát, giảm chói và hiệu năng nhiệt."};
         if(position==="roof"){
-          recommendation={code:"Đo kính riêng trước khi chọn mã",reason:"Cửa sổ trời/panorama khác nhau theo xe; cần kiểm tra kính nền, nhiệt độ khoang và hướng dẫn vật liệu trước khi chọn CR BLK."};
+          recommendation={advisory:true,title:"Cần kiểm tra riêng",reason:"Cửa sổ trời/panorama khác nhau theo xe; cần kiểm tra kính nền, nhiệt độ khoang và hướng dẫn vật liệu trước khi chọn CR BLK."};
         }else if(position==="windshield"){
-          if(night==="often"||priority==="visibility"){recommendation={code:"CR BLK 60 hoặc CR BLK 50",reason:"CR BLK 60 có VLT tham chiếu cao hơn, nên có thể đặt cạnh CR BLK 50 khi muốn kính lái sáng hơn; quyết định cuối cùng vẫn cần đối chiếu xe thực tế."};}
-          else if(priority==="privacy"){recommendation={code:"CR BLK 50, không tự hạ mã tối hơn",reason:"Kính lái không nên chọn theo riêng tư trước; cần giữ quan sát, đo kính nền và xem mẫu từ ghế lái."};}
+          if(priority==="privacy"){recommendation={code:"CR BLK 50",reason:"Kính lái ưu tiên giữ tầm nhìn an toàn nên không khuyến nghị mã tối hơn dù bạn chọn ưu tiên riêng tư; CR BLK 50 vẫn giảm chói tốt hơn kính nguyên bản. Nếu đi đêm nhiều, xem thêm CR BLK 60 để đối chiếu độ sáng."};}
+          else if(night==="often"||priority==="visibility"){recommendation={code:"CR BLK 60 hoặc CR BLK 50",reason:"CR BLK 60 có VLT tham chiếu cao hơn, nên có thể đặt cạnh CR BLK 50 khi muốn kính lái sáng hơn; quyết định cuối cùng vẫn cần đối chiếu xe thực tế."};}
         }else if(position==="front"){
           recommendation=priority==="visibility"?{code:"CR BLK 60 hoặc CR BLK 50",reason:"Kính sườn trước ảnh hưởng quan sát gương và bên hông; đặt CR BLK 60 cạnh CR BLK 50 nếu muốn kính sáng hơn."}:{code:"CR BLK 50",reason:"Phù hợp để cân bằng độ sáng và giảm chói ở hàng kính trước, sau khi kiểm tra kính nguyên bản."};
         }else if(position==="rear"||position==="back"){
@@ -1497,7 +1519,8 @@
           else if(priority==="visibility"||night==="often"){recommendation={code:"CR BLK 50 hoặc CR BLK 60",reason:"Nếu cần quan sát khoang sau rõ hơn, bắt đầu với mã sáng rồi so sánh với mã tối hơn khi cần riêng tư."};}
           else{recommendation={code:"CR BLK 35 hoặc CR BLK 50",reason:"Có thể so sánh giữa riêng tư và độ sáng cabin; quyết định theo kính nền, nhu cầu gia đình và tầm nhìn phía sau."};}
         }
-        result.innerHTML="<strong>Mã nên xem trước: "+recommendation.code+"</strong><p>"+recommendation.reason+"</p><p class=\"fit-note\">Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền và kiểm tra xe thực tế.</p>";
+        var heading=recommendation.advisory?recommendation.title:"Mã nên xem trước: "+recommendation.code;
+        result.innerHTML="<strong>"+heading+"</strong><p>"+recommendation.reason+"</p><p class=\"fit-note\">Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền và kiểm tra xe thực tế.</p>";
       });
     }
     var caseSection=document.querySelector('[aria-labelledby="case-title"]');
@@ -1566,8 +1589,8 @@
       var zaloUrl='https://zalo.me/3622666363345050913';
       var openZalo=function(){var popup=window.open(zaloUrl,'_blank','noopener');return !!popup;};
       status.textContent='Đang chuẩn bị nội dung để gửi Zalo…';
-      if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){var opened=openZalo();status.textContent=opened?'Đã sao chép nội dung. Mở Zalo, dán vào cuộc trò chuyện và bấm gửi.':'Đã sao chép nội dung. Hãy bấm “Mở Zalo Auto365”, dán vào cuộc trò chuyện và bấm gửi.';}).catch(function(){var opened=openZalo();status.textContent=opened?'Chưa sao chép được. Nội dung đã hiển thị bên dưới; hãy chọn sao chép rồi dán vào Zalo.':'Chưa sao chép được và popup bị chặn. Hãy sao chép nội dung bên dưới rồi bấm “Mở Zalo Auto365”.';});}
-      else{var opened=openZalo();status.textContent=opened?'Chưa sao chép tự động được. Hãy sao chép nội dung bên dưới, dán vào Zalo và bấm gửi.':'Chưa sao chép được và popup bị chặn. Hãy sao chép nội dung bên dưới rồi bấm “Mở Zalo Auto365”.';}
+      if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){var opened=openZalo();status.textContent=opened?'Đã sao chép nội dung. Mở Zalo, dán vào cuộc trò chuyện và bấm gửi.':'Đã sao chép nội dung. Nếu Zalo chưa mở, bấm liên kết bên dưới, dán vào cuộc trò chuyện và bấm gửi.';}).catch(function(){var opened=openZalo();status.textContent=opened?'Chưa sao chép được. Nội dung đã hiển thị bên dưới; hãy chọn sao chép rồi dán vào Zalo.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';});}
+      else{var opened=openZalo();status.textContent=opened?'Chưa sao chép tự động được. Hãy sao chép nội dung bên dưới, dán vào Zalo và bấm gửi.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';}
     });
   })();
   </script>
