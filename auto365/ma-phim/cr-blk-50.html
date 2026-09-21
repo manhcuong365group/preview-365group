@@ -1510,8 +1510,8 @@
         if(position==="roof"){
           recommendation={advisory:true,title:"Cần kiểm tra riêng",reason:"Cửa sổ trời/panorama khác nhau theo xe; cần kiểm tra kính nền, nhiệt độ khoang và hướng dẫn vật liệu trước khi chọn CR BLK."};
         }else if(position==="windshield"){
-          if(night==="often"||priority==="visibility"){recommendation={code:"CR BLK 60 hoặc CR BLK 50",reason:"CR BLK 60 có VLT tham chiếu cao hơn, nên có thể đặt cạnh CR BLK 50 khi muốn kính lái sáng hơn; quyết định cuối cùng vẫn cần đối chiếu xe thực tế."};}
-          else if(priority==="privacy"){recommendation={code:"CR BLK 50, không tự hạ mã tối hơn",reason:"Kính lái không nên chọn theo riêng tư trước; cần giữ quan sát, đo kính nền và xem mẫu từ ghế lái."};}
+          if(priority==="privacy"){recommendation={code:"CR BLK 50",reason:"Kính lái ưu tiên giữ tầm nhìn an toàn nên không khuyến nghị mã tối hơn dù bạn chọn ưu tiên riêng tư; CR BLK 50 vẫn giảm chói tốt hơn kính nguyên bản. Nếu đi đêm nhiều, xem thêm CR BLK 60 để đối chiếu độ sáng."};}
+          else if(night==="often"||priority==="visibility"){recommendation={code:"CR BLK 60 hoặc CR BLK 50",reason:"CR BLK 60 có VLT tham chiếu cao hơn, nên có thể đặt cạnh CR BLK 50 khi muốn kính lái sáng hơn; quyết định cuối cùng vẫn cần đối chiếu xe thực tế."};}
         }else if(position==="front"){
           recommendation=priority==="visibility"?{code:"CR BLK 60 hoặc CR BLK 50",reason:"Kính sườn trước ảnh hưởng quan sát gương và bên hông; đặt CR BLK 60 cạnh CR BLK 50 nếu muốn kính sáng hơn."}:{code:"CR BLK 50",reason:"Phù hợp để cân bằng độ sáng và giảm chói ở hàng kính trước, sau khi kiểm tra kính nguyên bản."};
         }else if(position==="rear"||position==="back"){
