@@ -68,8 +68,13 @@ Describe 'catalogue runtime' {
         $html | Should Match 'data-jump-brand="70mai"'
         $html | Should Match 'data-jump-brand="vietmap"'
         $html | Should Match 'data-jump-brand="blackvue"'
+        $html | Should Match 'href="https://auto365\.vn/camera-hanh-trinh-o-to-70mai"'
+        $html | Should Match 'href="https://auto365\.vn/camera-hanh-trinh-o-to-vietmap"'
+        $html | Should Match 'href="https://auto365\.vn/camera-hanh-trinh-o-to-blackvue"'
         $html | Should Not Match 'href="https://auto365\.vn/camera-hanh-trinh-(70mai|vietmap|blackvue)"'
         $html | Should Not Match 'BUNDLE_PRICE_NOTE'
         $html | Should Not Match 'Dữ liệu tham khảo cập nhật'
+        $html | Should Not Match 'siêu tụ điện'
+        $html | Should Match 'lastReviewed":"2026-09-22"'
     }
 }
