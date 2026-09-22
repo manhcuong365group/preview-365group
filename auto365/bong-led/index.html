@@ -4367,7 +4367,8 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     need ? '• Nhu cầu: ' + need : '',
     'Mã yêu cầu: ' + leadId,
     'Nhờ chuyên viên kiểm tra chân bóng, chuẩn cụm đèn và báo giá phù hợp.'
-  ].filter(Boolean).join('\n');
+  ].filter(Boolean).join('
+');
 
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(lines).catch(() => {});
@@ -4800,7 +4801,172 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     return (n || 0).toLocaleString('vi-VN') + 'đ';
   }
 
-  function runSearch() {\n    var need = document.getElementById('qs-need') ? document.getElementById('qs-need').value : '';\n    var socket = document.getElementById('qs-socket') ? document.getElementById('qs-socket').value : '';\n    var budget = document.getElementById('qs-budget') ? document.getElementById('qs-budget').value : '';\n    var voltage = document.getElementById('qs-voltage') ? document.getElementById('qs-voltage').value : '';\n\n    var budgetMax = Infinity;\n    var budgetMin = 0;\n    var hasBudgetFilter = false;\n    if (budget === 'under20') {\n      budgetMax = 2000000;\n      hasBudgetFilter = true;\n    } else if (budget === '20to25') {\n      budgetMin = 2000000;\n      budgetMax = 2500000;\n      hasBudgetFilter = true;\n    } else if (budget === 'over25') {\n      budgetMin = 2500000;\n      hasBudgetFilter = true;\n    }\n\n    var results = [];\n    var addedIds = {};\n\n    var strictMatches = LED_CATALOG.filter(function(item) {\n      var okSocket = !socket || item.sockets.indexOf(socket) !== -1;\n      var okNeed = !need || item.needs.indexOf(need) !== -1;\n      var okBudget = item.price >= budgetMin && item.price <= budgetMax;\n      var itemVoltage = item.voltage || '12V';\n      var okVoltage = !voltage || itemVoltage === voltage || itemVoltage.indexOf(voltage) !== -1;\n      return okSocket && okNeed && okBudget && okVoltage;\n    });\n\n    strictMatches.forEach(function(item) {\n      results.push({\n        item: item,\n        isUpgrade: false,\n        diffBudget: 0,\n        diffBase: 0\n      });\n      addedIds[item.id] = true;\n    });\n\n    if (results.length < 3) {\n      var priceExpanded = LED_CATALOG.filter(function(item) {\n        if (addedIds[item.id]) return false;\n        var okSocket = !socket || item.sockets.indexOf(socket) !== -1;\n        var okNeed = !need || item.needs.indexOf(need) !== -1;\n        var itemVoltage = item.voltage || '12V';\n        var okVoltage = !voltage || itemVoltage === voltage || itemVoltage.indexOf(voltage) !== -1;\n        return okSocket && okNeed && okVoltage;\n      });\n\n      priceExpanded.sort(function(a, b) {\n        return a.price - b.price;\n      });\n\n      priceExpanded.forEach(function(item) {\n        if (results.length >= 3) return;\n        var isExceed = hasBudgetFilter && budgetMax !== Infinity && item.price > budgetMax;\n        var diffB = isExceed ? item.price - budgetMax : 0;\n        var basePrice = results[0] ? results[0].item.price : (budgetMax !== Infinity ? budgetMax : item.price);\n        var diffBase = item.price > basePrice ? item.price - basePrice : 0;\n\n        results.push({\n          item: item,\n          isUpgrade: isExceed,\n          diffBudget: diffB,\n          diffBase: diffBase\n        });\n        addedIds[item.id] = true;\n      });\n    }\n\n    var finalThree = results.slice(0, 3);\n    var resultBox = document.getElementById('qs-result');\n    if (!resultBox) return;\n    \n    if (finalThree.length === 0) {\n      resultBox.innerHTML = '<div style="padding: 24px; text-align: center; background: #fff; border: 1px solid #dce4ea; border-radius: 8px;"><p style="margin:0; color:#ef2326; font-weight:600; font-size:16px;">Chưa tìm thấy cấu hình phù hợp</p><p style="margin:8px 0 0; font-size:14px; color:#657487; line-height:1.5;">Vui lòng điều chỉnh tiêu chí hoặc để lại thông tin, chuyên viên Auto365 sẽ tra cứu hồ sơ xe và tư vấn trực tiếp.</p></div>';\n      return;\n    }\n    \n    resultBox.innerHTML = '';\n    var isFullySpecified = socket !== '' && voltage !== '';\n\n    finalThree.forEach(function(matchObj, idx) {\n      var isPick = idx === 0;\n      var isUpgrade = matchObj.isUpgrade;\n      var diffBudget = matchObj.diffBudget;\n      var diffBase = matchObj.diffBase;\n      var item = matchObj.item;\n\n      var card = el('div', { class: 'qs-result' + (isPick ? ' is-primary' : (isUpgrade ? ' is-upgrade' : '')) });\n\n      var badgeClass = 'qs-badge ';\n      var badgeText = '';\n      if (isPick) {\n        badgeClass += 'qs-badge--pick';\n        badgeText = isFullySpecified ? 'Khuyến nghị hàng đầu' : 'Sản phẩm để đối chiếu';\n      } else if (isUpgrade) {\n        badgeClass += 'qs-badge--upgrade';\n        badgeText = 'Nâng cấp (+' + formatVND(diffBudget) + ')';\n      } else {\n        badgeClass += 'qs-badge--alt';\n        badgeText = 'Lựa chọn thay thế';\n      }\n      var badge = el('span', { class: badgeClass });\n      badge.textContent = badgeText;\n\n      var img = el('img', { src: item.img, alt: item.name, loading: 'lazy' });\n      var body = el('div', { class: 'qs-result-body' });\n      var name = el('div', { class: 'qs-result-name' });\n      name.textContent = item.name;\n\n      var price = el('div', { class: 'qs-result-price' });\n      price.textContent = item.priceText;\n      if (isUpgrade && diffBudget > 0) {\n        var diffTag = el('span', { class: 'qs-diff-tag' });\n        diffTag.textContent = '+' + formatVND(diffBudget) + ' (Nâng cấp)';\n        price.appendChild(diffTag);\n      }\n\n      var vat = el('p', { class: 'qs-result-vat' });\n      vat.textContent = 'Giá niêm yết chính hãng, bảo hành ' + (item.warranty || '24 tháng');\n\n      var reason = el('p', { class: 'qs-result-reason' });\n      if (isPick) {\n        reason.textContent = isFullySpecified ? ('Phù hợp tối đa tiêu chí chọn: chuẩn chân ' + socket + ', điện áp ' + voltage + '.') : ('Phù hợp với nhu cầu, tuy nhiên cần xác nhận đúng chuẩn chân cắm và hệ điện của xe.');\n      } else if (isUpgrade) {\n        var diffInfo = '+' + formatVND(diffBudget) + ' vượt ngân sách';\n        if (diffBase > 0) {\n          diffInfo += ', +' + formatVND(diffBase) + ' so với bản tiêu chuẩn';\n        }\n        reason.innerHTML = '<strong>Gợi ý nâng cấp:</strong> ' + diffInfo + '.';\n      } else {\n        reason.textContent = 'Lựa chọn thay thế cùng phân khúc chất lượng.';\n      }\n\n      var actions = el('div', { class: 'qs-result-actions' });\n      var btnDetail = el('a', { class: 'qs-btn-outline', href: item.url, target: '_blank', rel: 'noreferrer' });\n      btnDetail.textContent = 'Xem chi tiết sản phẩm';\n\n      var btnConsult = el('button', { type: 'button', class: 'qs-btn-primary' });\n      btnConsult.textContent = 'Tư vấn theo dòng xe';\n      btnConsult.addEventListener('click', function() {\n        showConsultStep(item, { isPick: isPick, isUpgrade: isUpgrade, diffBudget: diffBudget, diffBase: diffBase });\n      });\n\n      actions.appendChild(btnDetail);\n      actions.appendChild(btnConsult);\n\n      body.appendChild(badge);\n      body.appendChild(name);\n      body.appendChild(price);\n      body.appendChild(vat);\n      body.appendChild(reason);\n      body.appendChild(actions);\n\n      card.appendChild(img);\n      card.appendChild(body);\n      resultBox.appendChild(card);\n    });\n\n    openModal();\n  }
+  function runSearch() {
+    var need = document.getElementById('qs-need') ? document.getElementById('qs-need').value : '';
+    var socket = document.getElementById('qs-socket') ? document.getElementById('qs-socket').value : '';
+    var budget = document.getElementById('qs-budget') ? document.getElementById('qs-budget').value : '';
+    var voltage = document.getElementById('qs-voltage') ? document.getElementById('qs-voltage').value : '';
+
+    var budgetMax = Infinity;
+    var budgetMin = 0;
+    var hasBudgetFilter = false;
+    if (budget === 'under20') {
+      budgetMax = 2000000;
+      hasBudgetFilter = true;
+    } else if (budget === '20to25') {
+      budgetMin = 2000000;
+      budgetMax = 2500000;
+      hasBudgetFilter = true;
+    } else if (budget === 'over25') {
+      budgetMin = 2500000;
+      hasBudgetFilter = true;
+    }
+
+    var results = [];
+    var addedIds = {};
+
+    var strictMatches = LED_CATALOG.filter(function(item) {
+      var okSocket = !socket || item.sockets.indexOf(socket) !== -1;
+      var okNeed = !need || item.needs.indexOf(need) !== -1;
+      var okBudget = item.price >= budgetMin && item.price <= budgetMax;
+      var itemVoltage = item.voltage || '12V';
+      var okVoltage = !voltage || itemVoltage === voltage || itemVoltage.indexOf(voltage) !== -1;
+      return okSocket && okNeed && okBudget && okVoltage;
+    });
+
+    strictMatches.forEach(function(item) {
+      results.push({
+        item: item,
+        isUpgrade: false,
+        diffBudget: 0,
+        diffBase: 0
+      });
+      addedIds[item.id] = true;
+    });
+
+    if (results.length < 3) {
+      var priceExpanded = LED_CATALOG.filter(function(item) {
+        if (addedIds[item.id]) return false;
+        var okSocket = !socket || item.sockets.indexOf(socket) !== -1;
+        var okNeed = !need || item.needs.indexOf(need) !== -1;
+        var itemVoltage = item.voltage || '12V';
+        var okVoltage = !voltage || itemVoltage === voltage || itemVoltage.indexOf(voltage) !== -1;
+        return okSocket && okNeed && okVoltage;
+      });
+
+      priceExpanded.sort(function(a, b) {
+        return a.price - b.price;
+      });
+
+      priceExpanded.forEach(function(item) {
+        if (results.length >= 3) return;
+        var isExceed = hasBudgetFilter && budgetMax !== Infinity && item.price > budgetMax;
+        var diffB = isExceed ? item.price - budgetMax : 0;
+        var basePrice = results[0] ? results[0].item.price : (budgetMax !== Infinity ? budgetMax : item.price);
+        var diffBase = item.price > basePrice ? item.price - basePrice : 0;
+
+        results.push({
+          item: item,
+          isUpgrade: isExceed,
+          diffBudget: diffB,
+          diffBase: diffBase
+        });
+        addedIds[item.id] = true;
+      });
+    }
+
+    var finalThree = results.slice(0, 3);
+    var resultBox = document.getElementById('qs-result');
+    if (!resultBox) return;
+    
+    if (finalThree.length === 0) {
+      resultBox.innerHTML = '<div style="padding: 24px; text-align: center; background: #fff; border: 1px solid #dce4ea; border-radius: 8px;"><p style="margin:0; color:#ef2326; font-weight:600; font-size:16px;">Chưa tìm thấy cấu hình phù hợp</p><p style="margin:8px 0 0; font-size:14px; color:#657487; line-height:1.5;">Vui lòng điều chỉnh tiêu chí hoặc để lại thông tin, chuyên viên Auto365 sẽ tra cứu hồ sơ xe và tư vấn trực tiếp.</p></div>';
+      return;
+    }
+    
+    resultBox.innerHTML = '';
+    var isFullySpecified = socket !== '' && voltage !== '';
+
+    finalThree.forEach(function(matchObj, idx) {
+      var isPick = idx === 0;
+      var isUpgrade = matchObj.isUpgrade;
+      var diffBudget = matchObj.diffBudget;
+      var diffBase = matchObj.diffBase;
+      var item = matchObj.item;
+
+      var card = el('div', { class: 'qs-result' + (isPick ? ' is-primary' : (isUpgrade ? ' is-upgrade' : '')) });
+
+      var badgeClass = 'qs-badge ';
+      var badgeText = '';
+      if (isPick) {
+        badgeClass += 'qs-badge--pick';
+        badgeText = isFullySpecified ? 'Khuyến nghị hàng đầu' : 'Sản phẩm để đối chiếu';
+      } else if (isUpgrade) {
+        badgeClass += 'qs-badge--upgrade';
+        badgeText = 'Nâng cấp (+' + formatVND(diffBudget) + ')';
+      } else {
+        badgeClass += 'qs-badge--alt';
+        badgeText = 'Lựa chọn thay thế';
+      }
+      var badge = el('span', { class: badgeClass });
+      badge.textContent = badgeText;
+
+      var img = el('img', { src: item.img, alt: item.name, loading: 'lazy' });
+      var body = el('div', { class: 'qs-result-body' });
+      var name = el('div', { class: 'qs-result-name' });
+      name.textContent = item.name;
+
+      var price = el('div', { class: 'qs-result-price' });
+      price.textContent = item.priceText;
+      if (isUpgrade && diffBudget > 0) {
+        var diffTag = el('span', { class: 'qs-diff-tag' });
+        diffTag.textContent = '+' + formatVND(diffBudget) + ' (Nâng cấp)';
+        price.appendChild(diffTag);
+      }
+
+      var vat = el('p', { class: 'qs-result-vat' });
+      vat.textContent = 'Giá niêm yết chính hãng, bảo hành ' + (item.warranty || '24 tháng');
+
+      var reason = el('p', { class: 'qs-result-reason' });
+      if (isPick) {
+        reason.textContent = isFullySpecified ? ('Phù hợp tối đa tiêu chí chọn: chuẩn chân ' + socket + ', điện áp ' + voltage + '.') : ('Phù hợp với nhu cầu, tuy nhiên cần xác nhận đúng chuẩn chân cắm và hệ điện của xe.');
+      } else if (isUpgrade) {
+        var diffInfo = '+' + formatVND(diffBudget) + ' vượt ngân sách';
+        if (diffBase > 0) {
+          diffInfo += ', +' + formatVND(diffBase) + ' so với bản tiêu chuẩn';
+        }
+        reason.innerHTML = '<strong>Gợi ý nâng cấp:</strong> ' + diffInfo + '.';
+      } else {
+        reason.textContent = 'Lựa chọn thay thế cùng phân khúc chất lượng.';
+      }
+
+      var actions = el('div', { class: 'qs-result-actions' });
+      var btnDetail = el('a', { class: 'qs-btn-outline', href: item.url, target: '_blank', rel: 'noreferrer' });
+      btnDetail.textContent = 'Xem chi tiết sản phẩm';
+
+      var btnConsult = el('button', { type: 'button', class: 'qs-btn-primary' });
+      btnConsult.textContent = 'Tư vấn theo dòng xe';
+      btnConsult.addEventListener('click', function() {
+        showConsultStep(item, { isPick: isPick, isUpgrade: isUpgrade, diffBudget: diffBudget, diffBase: diffBase });
+      });
+
+      actions.appendChild(btnDetail);
+      actions.appendChild(btnConsult);
+
+      body.appendChild(badge);
+      body.appendChild(name);
+      body.appendChild(price);
+      body.appendChild(vat);
+      body.appendChild(reason);
+      body.appendChild(actions);
+
+      card.appendChild(img);
+      card.appendChild(body);
+      resultBox.appendChild(card);
+    });
+
+    openModal();
+  }
 
   var btnSubmit = document.getElementById('qs-submit');
   if (btnSubmit) {
@@ -4882,7 +5048,8 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
         prov ? '• Tỉnh thành / Chi nhánh: ' + prov : '',
         need ? '• Nhu cầu: ' + need : '',
         isBooking ? 'Nhờ kỹ thuật viên Auto365 liên hệ xác nhận khung giờ thử ánh sáng 4300K / 6000K trực tiếp.' : 'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
-      ].filter(Boolean).join('\n');
+      ].filter(Boolean).join('
+');
 
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(msgLines).catch(function() {});
