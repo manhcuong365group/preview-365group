@@ -217,11 +217,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .btn-reset{flex:1;border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px;font-weight:600;font-size:13px;cursor:pointer;min-height:46px}
 .btn-apply{flex:2;border:0;background:var(--red);color:#fff;border-radius:9px;padding:12px;font-weight:600;font-size:13px;cursor:pointer;min-height:46px}
 .catalog-main{min-width:0}
-.catalog-note{border:1px solid var(--line);border-radius:9px;background:#fff;padding:11px 14px;font-size:12px;margin-bottom:13px;display:flex;justify-content:space-between;gap:14px}
-.catalog-note strong{font-size:13px}
 .price-block{margin-top:auto}
-.product-source-link,.product-source-missing{display:block;margin-top:6px;font-size:10px;color:var(--muted);line-height:1.3}
-.product-source-link{text-decoration:underline}
 .bundle-label{display:block;margin-top:2px;color:#666;font-size:10px;line-height:1.3}
 .price-note{display:block;margin-top:8px;color:#888;font-size:10.5px;line-height:1.4}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
@@ -250,6 +246,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .pager{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-top:22px}
 .pager a{background:#fff;border:1px solid #dedbd7;border-radius:6px;min-width:38px;min-height:38px;padding:7px 10px;cursor:pointer;font-weight:600;text-decoration:none;text-align:center;color:inherit;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
 .pager a.active{background:var(--red);border-color:var(--red);color:#fff}
+.pager-more{width:min(360px,100%);min-height:44px;border:1px solid var(--red);border-radius:10px;background:var(--red);color:#fff;font-weight:700;font-size:13px;cursor:pointer}
+.pager-more:hover{background:#c81e26;border-color:#c81e26}
 .comparebar{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#171717;color:#fff;padding:10px 16px;border-radius:8px;display:none;z-index:40;box-shadow:var(--shadow);font-size:13px}
 .comparebar.show.near-catalog{display:flex;gap:15px;align-items:center}
 .comparebar a{background:var(--red);padding:6px 10px;border-radius:4px;font-weight:600;color:#fff}
@@ -661,8 +659,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .filter-mobile-bar{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .filter-mobile-bar .search-box{grid-column:1/-1;width:100%}
   .filter-mobile-bar select{min-width:0}
-  .catalog-note{flex-direction:column;align-items:flex-start;gap:8px}
-.catalog-note>span{display:block;max-width:100%}
   .config-steps{grid-template-columns:1fr!important}
   .quick .config-steps{grid-template-columns:repeat(2,1fr)!important;gap:10px 12px!important}
   .config-field{min-width:0}
@@ -675,27 +671,26 @@ h1{font-weight:500;letter-spacing:-2.2px}
 /* Branch hero card (bhc-) — Auto365 design system v7 */
 .bhc-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.98fr);gap:28px;align-items:stretch;margin-bottom:26px}
 .bhc-card{position:relative;overflow:hidden;min-width:0;min-height:300px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);container-type:inline-size}
-.bhc-card-inner{position:relative;height:100%;padding:26px 20px 16px}
-.bhc-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 46px;color:var(--red);font-size:11px;line-height:1.22;font-weight:500;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
+.bhc-card-inner{position:relative;height:100%;padding:30px 20px 20px}
+.bhc-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:var(--red);font-size:11px;line-height:1.35;font-weight:500;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
 .bhc-eyebrow::after{content:"";width:36px;height:1.5px;background:currentColor;border-radius:999px;opacity:.9}
 .bhc-map-bg{position:absolute;inset:0 0 auto auto;width:50%;height:270px;pointer-events:none;overflow:hidden}
 .bhc-map-bg::before{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.74) 14%,rgba(255,255,255,.07) 48%,transparent 74%),linear-gradient(180deg,rgba(255,255,255,.04),transparent 55%,#fff 100%)}
 .bhc-map-bg svg{width:100%;height:100%}
 .bhc-left-content{position:relative;z-index:5;width:74%;min-width:0}
-.bhc-headline{margin:0;max-width:500px;font-family:inherit;font-size:24px;line-height:1.34;letter-spacing:-.65px;font-weight:600;color:var(--ink)}
+.bhc-headline{margin:0 0 12px;max-width:500px;font-family:inherit;font-size:24px;line-height:1.38;letter-spacing:-.65px;font-weight:600;color:var(--ink)}
 .bhc-headline .bhc-red{display:inline;color:var(--red)}
-.bhc-desc{margin:28px 0 0;max-width:515px;min-height:39px;color:var(--muted);font-size:13px;line-height:1.72}
-.bhc-map-badge{position:absolute;z-index:6;right:20px;top:78px;padding:5px 10px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:999px;box-shadow:0 4px 12px rgba(35,55,75,.08);font-size:10px;font-weight:500;color:var(--ink);white-space:nowrap}
-.bhc-button-row{position:relative;z-index:8;display:grid;grid-template-columns:1.18fr .9fr .96fr;gap:8px;width:100%;margin-top:16px}
+.bhc-desc{margin:0;max-width:515px;min-height:42px;color:var(--muted);font-size:13px;line-height:1.85}
+.bhc-button-row{position:relative;z-index:8;display:grid;grid-template-columns:1.18fr .9fr .96fr;gap:10px;width:100%;margin-top:24px}
 .bhc-btn{min-width:0;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:7px;padding:0 8px;font-size:12px;line-height:1;font-weight:500;border:1.2px solid transparent;transition:transform .16s ease;background:#fff;white-space:nowrap;text-decoration:none}
 .bhc-btn svg{width:15px;height:15px;flex:0 0 15px}
 .bhc-btn:hover{transform:translateY(-1px)}
 .bhc-btn-primary{background:var(--red);color:#fff;box-shadow:0 7px 15px rgba(231,36,45,.18)}
 .bhc-btn-zalo{color:#176bc9;border-color:#3c86da}
 .bhc-btn-map{color:var(--red);border-color:#f27375}
-.bhc-fact-row{position:relative;z-index:10;display:grid;grid-template-columns:1.02fr 1.25fr 1.32fr .78fr;align-items:center;height:44px;margin-top:18px;min-width:0}
-.bhc-fact-item{height:100%;display:flex;align-items:center;gap:6px;padding-right:5px;min-width:0}
-.bhc-fact-item+.bhc-fact-item{border-left:1px solid var(--line);padding-left:7px}
+.bhc-fact-row{position:relative;z-index:10;display:grid;grid-template-columns:1.02fr 1.25fr 1.32fr .78fr;align-items:center;min-height:52px;margin-top:22px;min-width:0}
+.bhc-fact-item{height:100%;display:flex;align-items:center;gap:8px;padding:6px 8px 6px 0;min-width:0}
+.bhc-fact-item+.bhc-fact-item{border-left:1px solid var(--line);padding-left:10px}
 .bhc-fact-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 28px;background:#fff0f0;color:var(--red)}
 .bhc-fact-icon svg{width:13px;height:13px}
 .bhc-fact-item>span:last-child{min-width:0}
@@ -722,7 +717,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .bhc-all{display:flex;align-items:center;justify-content:center;height:44px;margin-top:14px;border:1px solid var(--line);border-radius:10px;gap:9px;padding:0 12px;font-size:12px;line-height:1;font-weight:500;background:#fff;color:var(--ink);white-space:nowrap;text-decoration:none}
 .bhc-all svg{width:15px;height:15px;flex:0 0 15px}
 .bhc-all:hover{border-color:var(--red);color:var(--red)}
-@container(max-width:600px){.bhc-left-content{width:78%}.bhc-map-badge{right:16px}.bhc-fact-row{grid-template-columns:1fr 1.22fr 1.24fr .76fr}}
+@container(max-width:600px){.bhc-left-content{width:78%}.bhc-fact-row{grid-template-columns:1fr 1.22fr 1.24fr .76fr}}
 @media(max-width:1060px){.bhc-grid{grid-template-columns:1fr;max-width:760px;margin-inline:auto}}
 @media(max-width:640px){
   .local-head{flex-direction:column;align-items:stretch}
@@ -735,7 +730,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .bhc-left-content{width:100%}
   .bhc-headline{font-size:clamp(1.4rem,7vw,1.7rem);max-width:100%}
   .bhc-desc{font-size:12px;max-width:100%}
-  .bhc-map-badge{display:none}
   .bhc-button-row{grid-template-columns:1fr;margin-top:16px}
   .bhc-btn{height:44px;font-size:12px}
   .bhc-fact-row{grid-template-columns:1fr 1fr;height:auto;margin-top:16px}
@@ -1050,10 +1044,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </aside>
 
 <div class="catalog-main">
-<div class="catalog-note">
-<div><strong id="resultCount">81 sản phẩm</strong><div class="filter-chips" id="activeFilterChips"></div></div>
-<span><!-- BUNDLE_PRICE_NOTE -->Dữ liệu tham khảo cập nhật 22/09/2026 từ danh mục Auto365; giá cơ bản thường chưa gồm thẻ nhớ, bộ nguồn &amp; công lắp nếu không ghi rõ. Vui lòng xác nhận lại trước khi lắp.</span>
-</div>
 <div class="grid" id="productGrid" aria-live="polite"></div>
 <div class="pager" id="pager"></div>
 <div class="comparebar near-catalog" id="comparebar">
@@ -1534,7 +1524,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="v2-video-frame">
 <iframe src="https://www.youtube-nocookie.com/embed/1-iU3547ptM" title="Đánh giá 70mai A210: Camera hành trình dùng siêu tụ điện" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<p class="v2-video-caption">Video do Auto365 Review thực hiện, đánh giá tính năng camera hành trình 70mai A210 — không thay thế bước tư vấn theo đúng xe của bạn.</p>
 </div>
 <div class="lead-modal" id="configResultModal" role="dialog" aria-modal="true" aria-labelledby="configResultHead" hidden>
 <div class="lead-dialog config-result-dialog">
@@ -1903,7 +1892,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <h3 class="bhc-headline">Auto365.vn - <span class="bhc-red">Trụ Sở Chính</span></h3>
 <p class="bhc-desc">Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p>
 </div>
-<span class="bhc-map-badge">Auto365 Trụ Sở Chính</span>
 <div class="bhc-button-row">
 <a class="bhc-btn bhc-btn-primary" href="tel:0365365911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg>Gọi 0365 365 911</a>
 <a class="bhc-btn bhc-btn-zalo" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener nofollow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L4 20l1.1-4.3A8.5 8.5 0 1 1 21 11.5Z"/></svg>Zalo tư vấn</a>
@@ -2436,6 +2424,7 @@ let state = {
   search: '',
   sort: 'default',
   page: 1,
+  mobileShown: 12,
   chosen: []
 };
 
@@ -2462,7 +2451,12 @@ window.addEventListener('popstate', () => {
 });
 
 const perPage = 12;
+const isMobileCatalog = () => window.matchMedia && window.matchMedia('(max-width:640px)').matches;
 const money = n => n ? new Intl.NumberFormat('vi-VN').format(n) + 'đ' : 'Liên hệ';
+function resetCatalogPaging() {
+  state.page = 1;
+  state.mobileShown = perPage;
+}
 
 function features(p) {
   let x = [];
@@ -2649,6 +2643,7 @@ function clearAllFilters() {
   state.search = '';
   state.sort = 'default';
   state.page = 1;
+  state.mobileShown = 12;
 
   document.querySelector('#search').value = '';
   const sm = document.querySelector('#searchMobile');
@@ -2663,15 +2658,18 @@ function clearAllFilters() {
 function render() {
   const list = filtered(), pages = Math.max(1, Math.ceil(list.length / perPage));
   if (state.page > pages) state.page = 1;
-  const showing = list.slice((state.page - 1) * perPage, state.page * perPage);
+  const mobileMode = isMobileCatalog();
+  if (mobileMode && state.mobileShown > list.length) state.mobileShown = list.length || 12;
+  const showing = mobileMode ? list.slice(0, state.mobileShown) : list.slice((state.page - 1) * perPage, state.page * perPage);
   const grid = document.querySelector('#productGrid');
 
-  document.querySelector('#resultCount').textContent = list.length + ' sản phẩm phù hợp';
+  const resultCount = document.querySelector('#resultCount');
+  if (resultCount) resultCount.textContent = list.length + ' sản phẩm phù hợp';
   renderActiveChips();
 
   grid.innerHTML = showing.map(p => {
     let chosen = state.chosen.includes(p.url);
-    const sourceLink = p.technical && p.technical.official_source ? '<a class="product-source-link" href="' + esc(p.technical.official_source) + '" target="_blank" rel="noopener">Nguồn hãng / tài liệu</a>' : '<small class="product-source-missing">Nguồn hãng: chưa xác minh</small>';
+    const sourceLink = '';
     return '<article class="product"><a class="product-card-link" target="_blank" rel="noopener" href="' + p.url + '" aria-label="Xem chi tiết ' + esc(p.name) + '"><div class="media">' +
       (p.image ? '<img loading="lazy" decoding="async" width="' + p.imageWidth + '" height="' + p.imageHeight + '" src="' + p.image + '" alt="' + esc(p.name) + '">' : '<div class="fallback">' + (p.brand === 'vietmap' ? 'VIETMAP' : p.brand === 'blackvue' ? 'BlackVue' : p.brand === '70mai' ? '70mai' : 'CAMERA') + '</div>') +
       '<span class="badge">' + p.channels + ' KÊNH</span></div>' +
@@ -2683,9 +2681,16 @@ function render() {
       '<div class="actions"><a class="product-detail-cta" target="_blank" rel="noopener" href="' + p.url + '">Xem chi tiết</a><label class="compare-check' + (chosen ? ' checked' : '') + '"><input type="checkbox" data-compare="' + p.url + '"' + (chosen ? ' checked' : '') + '><span>So sánh</span></label></div></article>';
   }).join('') || '<p style="grid-column:1/-1;padding:24px;text-align:center;color:#666">Không tìm thấy mẫu phù hợp. Hãy bỏ bớt điều kiện lọc.</p>';
 
-  document.querySelector('#pager').innerHTML = Array.from({ length: pages }, (_, i) =>
-    '<a href="?page=' + (i + 1) + '#catalog" class="' + (i + 1 === state.page ? 'active' : '') + '" data-page="' + (i + 1) + '" aria-label="Trang ' + (i + 1) + '"' + (i + 1 === state.page ? ' aria-current="page"' : '') + '>' + (i + 1) + '</a>'
-  ).join('');
+  document.querySelector('#pager').innerHTML = mobileMode
+    ? (state.mobileShown < list.length ? '<button type="button" class="pager-more" data-load-more> Xem thêm sản phẩm (' + state.mobileShown + '/' + list.length + ') </button>' : '')
+    : Array.from({ length: pages }, (_, i) =>
+      '<a href="?page=' + (i + 1) + '#catalog" class="' + (i + 1 === state.page ? 'active' : '') + '" data-page="' + (i + 1) + '" aria-label="Trang ' + (i + 1) + '"' + (i + 1 === state.page ? ' aria-current="page"' : '') + '>' + (i + 1) + '</a>'
+    ).join('');
+
+  document.querySelector('[data-load-more]')?.addEventListener('click', () => {
+    state.mobileShown = Math.min(list.length, state.mobileShown + perPage);
+    render();
+  });
 
   document.querySelectorAll('[data-compare]').forEach(b => b.onchange = () => {
     const id = b.dataset.compare;
@@ -2764,25 +2769,25 @@ document.addEventListener('change', e => {
   if (!t) return;
   if (t.matches('input[type=checkbox][name=brand]')) {
     if (t.checked) state.brands.add(t.value); else state.brands.delete(t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
   if (t.matches('input[type=checkbox][name=channel]')) {
     if (t.checked) state.channels.add(+t.value); else state.channels.delete(+t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
   if (t.matches('input[type=checkbox][name=price]')) {
     if (t.checked) state.prices.add(t.value); else state.prices.delete(t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
   if (t.matches('input[type=checkbox][name=feature]')) {
     if (t.checked) state.features.add(t.value); else state.features.delete(t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
@@ -2795,7 +2800,7 @@ document.querySelector('#mobileFilterReset')?.addEventListener('click', clearAll
 // Search inputs
 document.querySelector('#search').oninput = e => {
   state.search = e.target.value.toLowerCase().trim();
-  state.page = 1;
+  resetCatalogPaging();
   const sm = document.querySelector('#searchMobile');
   if (sm) sm.value = e.target.value;
   render();
@@ -2803,7 +2808,7 @@ document.querySelector('#search').oninput = e => {
 
 document.querySelector('#searchMobile').oninput = e => {
   state.search = e.target.value.toLowerCase().trim();
-  state.page = 1;
+  resetCatalogPaging();
   document.querySelector('#search').value = e.target.value;
   render();
 };
@@ -2811,7 +2816,7 @@ document.querySelector('#searchMobile').oninput = e => {
 // Mobile Sort select
 document.querySelector('#filterSortMobile').onchange = e => {
   state.sort = e.target.value;
-  state.page = 1;
+  resetCatalogPaging();
   render();
 };
 
@@ -2819,7 +2824,7 @@ function applyMobileQuickFilter(selectId, targetSet, cast = value => value) {
   document.querySelector(selectId)?.addEventListener('change', e => {
     targetSet.clear();
     if (e.target.value !== 'all') targetSet.add(cast(e.target.value));
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   });
@@ -2864,7 +2869,7 @@ document.querySelectorAll('[data-jump-brand]').forEach(link => link.addEventList
   state.brands.clear();
   if (value !== 'all') state.brands.add(value);
   state.search = link.dataset.jumpSearch || '';
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   const s = document.querySelector('#search');
   if (s) s.value = state.search;
@@ -2893,7 +2898,7 @@ document.querySelectorAll('[data-jump-price]').forEach(btn => btn.addEventListen
   const value = btn.dataset.jumpPrice;
   state.prices.clear();
   state.prices.add(value);
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   render();
   document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
@@ -2904,7 +2909,7 @@ document.querySelectorAll('[data-jump-channel]').forEach(btn => btn.addEventList
   const value = +btn.dataset.jumpChannel;
   state.channels.clear();
   state.channels.add(value);
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   render();
   document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
@@ -2915,7 +2920,7 @@ document.querySelectorAll('[data-jump-feature]').forEach(btn => btn.addEventList
   const value = btn.dataset.jumpFeature;
   state.features.clear();
   state.features.add(value);
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   render();
   document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
@@ -3031,7 +3036,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   state.prices.clear();
   if (budget !== 'all') state.prices.add(budget);
   if (wantParking) state.features.add('parking'); else state.features.delete('parking');
-  state.page = 1;
+  resetCatalogPaging();
 
   syncCheckboxes();
   render();
