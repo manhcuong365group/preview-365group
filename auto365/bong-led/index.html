@@ -4409,14 +4409,6 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
       statusEl.innerHTML = 'Gửi yêu cầu không thành công do kết nối. Vui lòng thử lại hoặc gọi Hotline <strong>0365 365 911</strong> để được tư vấn ngay.';
     }
   });
-  }).catch(() => {
-    if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Gửi yêu cầu tư vấn'; }
-    if (statusEl) {
-      statusEl.style.display = 'block';
-      statusEl.style.color = '#e31b2d';
-      statusEl.innerHTML = 'Đã lưu yêu cầu. Bạn có thể <a href="https://zalo.me/0365365911" target="_blank" style="color:#087fae;text-decoration:underline;">chat Zalo Auto365</a> để phản hồi ngay.';
-    }
-  });
 
   emit('consult_submit', { form_source: 'bong-led-mid' });
 });
@@ -5084,6 +5076,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
 })();
 </script>
 </body></html>
+
 
 
 
