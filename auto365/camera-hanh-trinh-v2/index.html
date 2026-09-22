@@ -220,8 +220,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .catalog-note{border:1px solid var(--line);border-radius:9px;background:#fff;padding:11px 14px;font-size:12px;margin-bottom:13px;display:flex;justify-content:space-between;gap:14px}
 .catalog-note strong{font-size:13px}
 .price-block{margin-top:auto}
-.product-source-link,.product-source-missing{display:block;margin-top:6px;font-size:10px;color:var(--muted);line-height:1.3}
-.product-source-link{text-decoration:underline}
 .bundle-label{display:block;margin-top:2px;color:#666;font-size:10px;line-height:1.3}
 .price-note{display:block;margin-top:8px;color:#888;font-size:10.5px;line-height:1.4}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
@@ -250,6 +248,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .pager{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin-top:22px}
 .pager a{background:#fff;border:1px solid #dedbd7;border-radius:6px;min-width:38px;min-height:38px;padding:7px 10px;cursor:pointer;font-weight:600;text-decoration:none;text-align:center;color:inherit;display:inline-flex;align-items:center;justify-content:center;font-size:13px}
 .pager a.active{background:var(--red);border-color:var(--red);color:#fff}
+.pager-more{width:min(360px,100%);min-height:44px;border:1px solid var(--red);border-radius:10px;background:var(--red);color:#fff;font-weight:700;font-size:13px;cursor:pointer}
+.pager-more:hover{background:#c81e26;border-color:#c81e26}
 .comparebar{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#171717;color:#fff;padding:10px 16px;border-radius:8px;display:none;z-index:40;box-shadow:var(--shadow);font-size:13px}
 .comparebar.show.near-catalog{display:flex;gap:15px;align-items:center}
 .comparebar a{background:var(--red);padding:6px 10px;border-radius:4px;font-weight:600;color:#fff}
@@ -2433,6 +2433,7 @@ let state = {
   search: '',
   sort: 'default',
   page: 1,
+  mobileShown: 12,
   chosen: []
 };
 
@@ -2459,7 +2460,12 @@ window.addEventListener('popstate', () => {
 });
 
 const perPage = 12;
+const isMobileCatalog = () => window.matchMedia && window.matchMedia('(max-width:640px)').matches;
 const money = n => n ? new Intl.NumberFormat('vi-VN').format(n) + 'đ' : 'Liên hệ';
+function resetCatalogPaging() {
+  state.page = 1;
+  state.mobileShown = perPage;
+}
 
 function features(p) {
   let x = [];
@@ -2646,6 +2652,7 @@ function clearAllFilters() {
   state.search = '';
   state.sort = 'default';
   state.page = 1;
+  state.mobileShown = 12;
 
   document.querySelector('#search').value = '';
   const sm = document.querySelector('#searchMobile');
@@ -2660,7 +2667,9 @@ function clearAllFilters() {
 function render() {
   const list = filtered(), pages = Math.max(1, Math.ceil(list.length / perPage));
   if (state.page > pages) state.page = 1;
-  const showing = list.slice((state.page - 1) * perPage, state.page * perPage);
+  const mobileMode = isMobileCatalog();
+  if (mobileMode && state.mobileShown > list.length) state.mobileShown = list.length || 12;
+  const showing = mobileMode ? list.slice(0, state.mobileShown) : list.slice((state.page - 1) * perPage, state.page * perPage);
   const grid = document.querySelector('#productGrid');
 
   document.querySelector('#resultCount').textContent = list.length + ' sản phẩm phù hợp';
@@ -2668,7 +2677,7 @@ function render() {
 
   grid.innerHTML = showing.map(p => {
     let chosen = state.chosen.includes(p.url);
-    const sourceLink = p.technical && p.technical.official_source ? '<a class="product-source-link" href="' + esc(p.technical.official_source) + '" target="_blank" rel="noopener">Nguồn hãng / tài liệu</a>' : '<small class="product-source-missing">Nguồn hãng: chưa xác minh</small>';
+    const sourceLink = '';
     return '<article class="product"><a class="product-card-link" target="_blank" rel="noopener" href="' + p.url + '" aria-label="Xem chi tiết ' + esc(p.name) + '"><div class="media">' +
       (p.image ? '<img loading="lazy" decoding="async" width="' + p.imageWidth + '" height="' + p.imageHeight + '" src="' + p.image + '" alt="' + esc(p.name) + '">' : '<div class="fallback">' + (p.brand === 'vietmap' ? 'VIETMAP' : p.brand === 'blackvue' ? 'BlackVue' : p.brand === '70mai' ? '70mai' : 'CAMERA') + '</div>') +
       '<span class="badge">' + p.channels + ' KÊNH</span></div>' +
@@ -2680,9 +2689,16 @@ function render() {
       '<div class="actions"><a class="product-detail-cta" target="_blank" rel="noopener" href="' + p.url + '">Xem chi tiết</a><label class="compare-check' + (chosen ? ' checked' : '') + '"><input type="checkbox" data-compare="' + p.url + '"' + (chosen ? ' checked' : '') + '><span>So sánh</span></label></div></article>';
   }).join('') || '<p style="grid-column:1/-1;padding:24px;text-align:center;color:#666">Không tìm thấy mẫu phù hợp. Hãy bỏ bớt điều kiện lọc.</p>';
 
-  document.querySelector('#pager').innerHTML = Array.from({ length: pages }, (_, i) =>
-    '<a href="?page=' + (i + 1) + '#catalog" class="' + (i + 1 === state.page ? 'active' : '') + '" data-page="' + (i + 1) + '" aria-label="Trang ' + (i + 1) + '"' + (i + 1 === state.page ? ' aria-current="page"' : '') + '>' + (i + 1) + '</a>'
-  ).join('');
+  document.querySelector('#pager').innerHTML = mobileMode
+    ? (state.mobileShown < list.length ? '<button type="button" class="pager-more" data-load-more> Xem thêm sản phẩm (' + state.mobileShown + '/' + list.length + ') </button>' : '')
+    : Array.from({ length: pages }, (_, i) =>
+      '<a href="?page=' + (i + 1) + '#catalog" class="' + (i + 1 === state.page ? 'active' : '') + '" data-page="' + (i + 1) + '" aria-label="Trang ' + (i + 1) + '"' + (i + 1 === state.page ? ' aria-current="page"' : '') + '>' + (i + 1) + '</a>'
+    ).join('');
+
+  document.querySelector('[data-load-more]')?.addEventListener('click', () => {
+    state.mobileShown = Math.min(list.length, state.mobileShown + perPage);
+    render();
+  });
 
   document.querySelectorAll('[data-compare]').forEach(b => b.onchange = () => {
     const id = b.dataset.compare;
@@ -2761,25 +2777,25 @@ document.addEventListener('change', e => {
   if (!t) return;
   if (t.matches('input[type=checkbox][name=brand]')) {
     if (t.checked) state.brands.add(t.value); else state.brands.delete(t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
   if (t.matches('input[type=checkbox][name=channel]')) {
     if (t.checked) state.channels.add(+t.value); else state.channels.delete(+t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
   if (t.matches('input[type=checkbox][name=price]')) {
     if (t.checked) state.prices.add(t.value); else state.prices.delete(t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
   if (t.matches('input[type=checkbox][name=feature]')) {
     if (t.checked) state.features.add(t.value); else state.features.delete(t.value);
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   }
@@ -2792,7 +2808,7 @@ document.querySelector('#mobileFilterReset')?.addEventListener('click', clearAll
 // Search inputs
 document.querySelector('#search').oninput = e => {
   state.search = e.target.value.toLowerCase().trim();
-  state.page = 1;
+  resetCatalogPaging();
   const sm = document.querySelector('#searchMobile');
   if (sm) sm.value = e.target.value;
   render();
@@ -2800,7 +2816,7 @@ document.querySelector('#search').oninput = e => {
 
 document.querySelector('#searchMobile').oninput = e => {
   state.search = e.target.value.toLowerCase().trim();
-  state.page = 1;
+  resetCatalogPaging();
   document.querySelector('#search').value = e.target.value;
   render();
 };
@@ -2808,7 +2824,7 @@ document.querySelector('#searchMobile').oninput = e => {
 // Mobile Sort select
 document.querySelector('#filterSortMobile').onchange = e => {
   state.sort = e.target.value;
-  state.page = 1;
+  resetCatalogPaging();
   render();
 };
 
@@ -2816,7 +2832,7 @@ function applyMobileQuickFilter(selectId, targetSet, cast = value => value) {
   document.querySelector(selectId)?.addEventListener('change', e => {
     targetSet.clear();
     if (e.target.value !== 'all') targetSet.add(cast(e.target.value));
-    state.page = 1;
+    resetCatalogPaging();
     syncCheckboxes();
     render();
   });
@@ -2861,7 +2877,7 @@ document.querySelectorAll('[data-jump-brand]').forEach(link => link.addEventList
   state.brands.clear();
   if (value !== 'all') state.brands.add(value);
   state.search = link.dataset.jumpSearch || '';
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   const s = document.querySelector('#search');
   if (s) s.value = state.search;
@@ -2890,7 +2906,7 @@ document.querySelectorAll('[data-jump-price]').forEach(btn => btn.addEventListen
   const value = btn.dataset.jumpPrice;
   state.prices.clear();
   state.prices.add(value);
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   render();
   document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
@@ -2901,7 +2917,7 @@ document.querySelectorAll('[data-jump-channel]').forEach(btn => btn.addEventList
   const value = +btn.dataset.jumpChannel;
   state.channels.clear();
   state.channels.add(value);
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   render();
   document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
@@ -2912,7 +2928,7 @@ document.querySelectorAll('[data-jump-feature]').forEach(btn => btn.addEventList
   const value = btn.dataset.jumpFeature;
   state.features.clear();
   state.features.add(value);
-  state.page = 1;
+  resetCatalogPaging();
   syncCheckboxes();
   render();
   document.querySelector('#catalog').scrollIntoView({ behavior: 'smooth' });
@@ -3028,7 +3044,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   state.prices.clear();
   if (budget !== 'all') state.prices.add(budget);
   if (wantParking) state.features.add('parking'); else state.features.delete('parking');
-  state.page = 1;
+  resetCatalogPaging();
 
   syncCheckboxes();
   render();
