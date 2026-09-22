@@ -61,7 +61,7 @@ Describe 'catalogue runtime' {
         $html | Should Match "LTE_MODE\[p\.slug\]"
     }
 
-    It 'labels bundle coverage and links the three brand hubs' {
+    It 'labels bundle coverage, links the three brand hubs, and keeps the public catalog clean' {
         $html | Should Match 'function bundleLabel\(p\)'
         $html | Should Match 'price-block'
         $html | Should Match 'bundle-label'
@@ -69,6 +69,7 @@ Describe 'catalogue runtime' {
         $html | Should Match 'data-jump-brand="vietmap"'
         $html | Should Match 'data-jump-brand="blackvue"'
         $html | Should Not Match 'href="https://auto365\.vn/camera-hanh-trinh-(70mai|vietmap|blackvue)"'
-        $html | Should Match 'BUNDLE_PRICE_NOTE'
+        $html | Should Not Match 'BUNDLE_PRICE_NOTE'
+        $html | Should Not Match 'Dữ liệu tham khảo cập nhật'
     }
 }
