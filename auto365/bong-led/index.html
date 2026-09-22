@@ -4290,8 +4290,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     need ? '• Nhu cầu: ' + need : '',
     'Mã yêu cầu: ' + leadId,
     'Nhờ chuyên viên kiểm tra chân bóng, chuẩn cụm đèn và báo giá phù hợp.'
-  ].filter(Boolean).join('
-');
+  ].filter(Boolean).join('\n');
 
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(lines).catch(() => {});
