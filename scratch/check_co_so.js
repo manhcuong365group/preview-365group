@@ -1,0 +1,5 @@
+﻿const fs = require('fs');
+let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
+
+const s1 = html.indexOf('<h3 style="font-size: 15px; margin: 0 0 6px;">Hồ sơ xe thực tế &amp; Quy chuẩn kiểm định</h3>');
+console.log(html.substring(s1, s1 + 1000));

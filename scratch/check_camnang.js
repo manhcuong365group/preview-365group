@@ -1,8 +1,5 @@
 ﻿const fs = require('fs');
 let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
 
-const camNangStart = html.indexOf('<h2 id="cam-nang-title"');
-const camNangEnd = html.indexOf('</section>', camNangStart);
-if(camNangStart > -1) {
-    console.log(html.substring(camNangStart, camNangEnd).substring(0, 1500));
-}
+const s1 = html.indexOf('<li>Bước sóng ánh sáng vàng ít bị khúc xạ và tán xạ ngược bởi hạt nước lơ lửng, giúp người lái không bị mỏi mắt.</li>');
+console.log(html.substring(s1 - 500, s1 + 500));
