@@ -388,6 +388,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .lead-capture-form .lead-form-field input,.lead-capture-form .lead-form-field select,.lead-capture-form .lead-form-field textarea{min-height:42px;padding:10px 12px;border:1px solid #d4dbe5;border-radius:8px;font-size:13px;outline:none}
 .lead-capture-form .lead-form-field textarea{min-height:72px}
 .lead-capture-form .lead-form-field input:focus,.lead-capture-form .lead-form-field select:focus,.lead-capture-form .lead-form-field textarea:focus{border-color:var(--red);box-shadow:0 0 0 2px rgba(231,36,45,.1)}
+.lead-consent{display:flex;align-items:flex-start;gap:8px;margin:12px 0 0;color:#666;font-size:11px;line-height:1.45}
+.lead-consent input{width:15px;height:15px;margin:1px 0 0;accent-color:var(--red);flex:0 0 auto}
 .lead-capture-form .lead-form-instruction{margin:10px 0 0;color:#777;font-size:11px;line-height:1.45}
 .lead-capture-form .lead-form-submit{min-height:46px;margin-top:10px;font-size:14px}
 .lead-capture-form .lead-form-status{padding:10px 12px;border-radius:8px;background:#f4f8f5}
@@ -1468,7 +1470,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <button type="button" class="lead-dialog-close" id="leadModalClose" aria-label="Đóng form tư vấn">×</button>
 <form class="lead-form" id="cameraLeadForm">
 <h3>Nhận tư vấn camera phù hợp</h3>
-<p id="leadModalTitle">Để lại thông tin, Auto365 sẽ đối chiếu model, xe và phương án lắp trước khi báo giá.</p>
+<p id="leadModalTitle">Để lại thông tin, Auto365 sẽ đối chiếu nhu cầu, mẫu camera, khoảng giá và phương án lắp trước khi báo giá.</p>
 <div class="lead-form-grid">
 <div class="lead-form-field">
 <label for="leadName">Họ và tên</label>
@@ -1479,31 +1481,27 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <input id="leadPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
 </div>
 <div class="lead-form-field">
-<label for="leadCar">Dòng xe / đời xe <span>(không bắt buộc)</span></label>
-<input id="leadCar" name="car" autocomplete="organization" placeholder="VD: Ford Ranger, VF5, CX-5">
-</div>
-<div class="lead-form-field">
-<label for="leadCity">Tỉnh / thành phố</label>
-<input id="leadCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
-</div>
-<div class="lead-form-field">
-<label for="leadNeed">Nhu cầu ưu tiên</label>
-<select id="leadNeed" name="need">
-<option>Chưa rõ, cần tư vấn</option>
-<option>Camera trước</option>
-<option>Camera trước + sau</option>
-<option>Camera có cabin</option>
-<option>Parking Mode / 4G</option>
+<label for="leadBrand">Hãng camera quan tâm</label>
+<select id="leadBrand" name="brand">
+<option>Chưa chọn, cần tư vấn</option>
+<option>70mai</option><option>VIETMAP</option><option>BlackVue</option><option>DDPAI</option><option>Thinkware</option><option>UTOUR</option><option>Hãng khác</option>
 </select>
 </div>
 <div class="lead-form-field">
-<label for="leadPackage">Gói đang quan tâm</label>
-<select id="leadPackage" name="package">
-<option>Chưa chọn model cụ thể</option>
-<option>Camera 1 kênh phía trước</option>
-<option>Camera 2 kênh trước – sau</option>
-<option>Camera 3 kênh có cabin</option>
-<option>Camera 4G / Cloud</option>
+<label for="leadCity">Tỉnh / thành phố <span>(không bắt buộc)</span></label>
+<input id="leadCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
+</div>
+<div class="lead-form-field">
+<label for="leadNeed">Nhu cầu / sản phẩm muốn tư vấn</label>
+<select id="leadNeed" name="need">
+<option>Chưa rõ, cần tư vấn</option>
+<option>Camera trước</option><option>Camera trước + sau</option><option>Camera 3 kênh có cabin</option><option>Camera có Parking Mode</option><option>Camera có 4G / Cloud</option><option>Tư vấn chọn model</option>
+</select>
+</div>
+<div class="lead-form-field">
+<label for="leadBudget">Khoảng giá dự kiến</label>
+<select id="leadBudget" name="budget">
+<option>Chưa xác định, cần tư vấn</option><option>Dưới 2 triệu</option><option>2 – 5 triệu</option><option>5 – 10 triệu</option><option>Trên 10 triệu</option>
 </select>
 </div>
 <div class="lead-form-field full">
@@ -1511,6 +1509,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <textarea id="leadNote" name="note" placeholder="Đi đêm, cần từ xa, có panorama..."></textarea>
 </div>
 </div>
+<label class="lead-consent"><input type="checkbox" name="consent" value="Đồng ý" required><span>Tôi đồng ý để Auto365 sử dụng thông tin này để liên hệ tư vấn.</span></label>
 <!-- FORM_SUBMIT_MAILTO_LABEL: button opens a mailto draft, not a CRM submission. -->
 <p class="lead-form-instruction">Sau khi bấm nút, ứng dụng email sẽ được mở với nội dung đã điền để bạn gửi tới Auto365.</p>
 <button class="lead-form-submit" type="submit">Soạn email tư vấn</button>
@@ -1668,31 +1667,27 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <input id="leadInlinePhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
 </div>
 <div class="lead-form-field">
-<label for="leadInlineCar">Dòng xe / đời xe <span>(không bắt buộc)</span></label>
-<input id="leadInlineCar" name="car" autocomplete="organization" placeholder="VD: Ford Ranger, VF5, CX-5">
-</div>
-<div class="lead-form-field">
-<label for="leadInlineCity">Tỉnh / thành phố</label>
-<input id="leadInlineCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
-</div>
-<div class="lead-form-field">
-<label for="leadInlineNeed">Nhu cầu ưu tiên</label>
-<select id="leadInlineNeed" name="need">
-<option>Chưa rõ, cần tư vấn</option>
-<option>Camera trước</option>
-<option>Camera trước + sau</option>
-<option>Camera có cabin</option>
-<option>Parking Mode / 4G</option>
+<label for="leadInlineBrand">Hãng camera quan tâm</label>
+<select id="leadInlineBrand" name="brand">
+<option>Chưa chọn, cần tư vấn</option>
+<option>70mai</option><option>VIETMAP</option><option>BlackVue</option><option>DDPAI</option><option>Thinkware</option><option>UTOUR</option><option>Hãng khác</option>
 </select>
 </div>
 <div class="lead-form-field">
-<label for="leadInlinePackage">Gói đang quan tâm</label>
-<select id="leadInlinePackage" name="package">
-<option>Chưa chọn model cụ thể</option>
-<option>Camera 1 kênh phía trước</option>
-<option>Camera 2 kênh trước – sau</option>
-<option>Camera 3 kênh có cabin</option>
-<option>Camera 4G / Cloud</option>
+<label for="leadInlineCity">Tỉnh / thành phố <span>(không bắt buộc)</span></label>
+<input id="leadInlineCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
+</div>
+<div class="lead-form-field">
+<label for="leadInlineNeed">Nhu cầu / sản phẩm muốn tư vấn</label>
+<select id="leadInlineNeed" name="need">
+<option>Chưa rõ, cần tư vấn</option>
+<option>Camera trước</option><option>Camera trước + sau</option><option>Camera 3 kênh có cabin</option><option>Camera có Parking Mode</option><option>Camera có 4G / Cloud</option><option>Tư vấn chọn model</option>
+</select>
+</div>
+<div class="lead-form-field">
+<label for="leadInlineBudget">Khoảng giá dự kiến</label>
+<select id="leadInlineBudget" name="budget">
+<option>Chưa xác định, cần tư vấn</option><option>Dưới 2 triệu</option><option>2 – 5 triệu</option><option>5 – 10 triệu</option><option>Trên 10 triệu</option>
 </select>
 </div>
 <div class="lead-form-field full">
@@ -1700,6 +1695,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <textarea id="leadInlineNote" name="note" placeholder="Ví dụ: ưu tiên ghi hình khi đỗ, cần lắp tại chi nhánh..."></textarea>
 </div>
 </div>
+<label class="lead-consent"><input type="checkbox" name="consent" value="Đồng ý" required><span>Tôi đồng ý để Auto365 sử dụng thông tin này để liên hệ tư vấn.</span></label>
 <p class="lead-form-instruction">Nếu website chưa kết nối nhận yêu cầu tự động, ứng dụng email sẽ mở để bạn gửi thông tin tới Auto365.</p>
 <button class="lead-form-submit" type="submit">Gửi thông tin tư vấn</button>
 <p class="lead-form-status" data-form-status hidden></p>
@@ -3369,21 +3365,22 @@ document.querySelector('#hubFind').addEventListener('click', () => {
       const body = [
         'Ho va ten: ' + (data.get('name') || ''),
         'So dien thoai: ' + (data.get('phone') || ''),
-        'Dong xe: ' + (data.get('car') || 'Chua cung cap'),
+        'Hang camera quan tam: ' + (data.get('brand') || 'Chua chon'),
         'Tinh thanh: ' + (data.get('city') || 'Chua cung cap'),
-        'Nhu cau: ' + (data.get('need') || ''),
-        'Goi quan tam: ' + (data.get('package') || ''),
+        'Nhu cau / san pham tu van: ' + (data.get('need') || ''),
+        'Khoang gia du kien: ' + (data.get('budget') || 'Chua xac dinh'),
         'Ghi chu: ' + (data.get('note') || 'Khong co')
       ].join('\\n');
       const mailto = 'mailto:support@365group.com.vn?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       const payload = {
         name: data.get('name') || '',
         phone: data.get('phone') || '',
-        car: data.get('car') || '',
+        brand: data.get('brand') || '',
         city: data.get('city') || '',
         need: data.get('need') || '',
-        package: data.get('package') || '',
+        budget: data.get('budget') || '',
         note: data.get('note') || '',
+        consent: data.get('consent') === 'Đồng ý',
         source: 'camera-hanh-trinh-v2',
         page_url: window.location.href
       };
