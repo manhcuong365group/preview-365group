@@ -4827,8 +4827,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
         prov ? '• Tỉnh thành / Chi nhánh: ' + prov : '',
         need ? '• Nhu cầu: ' + need : '',
         isBooking ? 'Nhờ kỹ thuật viên Auto365 liên hệ xác nhận khung giờ thử ánh sáng 4300K / 6000K trực tiếp.' : 'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
-      ].filter(Boolean).join('
-');
+      ].filter(Boolean).join('\n');
 
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(msgLines).catch(function() {});

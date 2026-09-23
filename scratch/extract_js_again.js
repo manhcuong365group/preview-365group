@@ -1,7 +1,5 @@
 ﻿const fs = require('fs');
 let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
-
-// I'll extract all JS blocks and run node syntax check on them
 const regex = /<script\b[^>]*>([\s\S]*?)<\/script>/gm;
 let match;
 let scripts = [];
