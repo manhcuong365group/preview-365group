@@ -32,7 +32,8 @@ Describe 'catalogue runtime' {
 
     It 'keeps the A510 catalogue price tied to the listed one-channel configuration' {
         $html | Should Match 'A510.{0,250}2\.690'
-        $html | Should Match 'A510_CATALOG_ONE_CHANNEL_PRICE'
+        $html | Should Match "'Camera hành trình 70mai A510','camera-hanh-trinh-70mai-a510',2690000"
+        $html | Should Not Match 'A510_CATALOG_ONE_CHANNEL_PRICE'
     }
 
     It 'shows branch phone and opening hours in the local section' {
@@ -61,16 +62,16 @@ Describe 'catalogue runtime' {
         $html | Should Match "LTE_MODE\[p\.slug\]"
     }
 
-    It 'labels bundle coverage, links the three brand hubs, and keeps the public catalog clean' {
+    It 'labels bundle coverage, uses brand filters, and keeps the public catalog clean' {
         $html | Should Match 'function bundleLabel\(p\)'
         $html | Should Match 'price-block'
         $html | Should Match 'bundle-label'
         $html | Should Match 'data-jump-brand="70mai"'
         $html | Should Match 'data-jump-brand="vietmap"'
         $html | Should Match 'data-jump-brand="blackvue"'
-        $html | Should Match 'href="https://auto365\.vn/camera-hanh-trinh-o-to-70mai"'
-        $html | Should Match 'href="https://auto365\.vn/camera-hanh-trinh-o-to-vietmap"'
-        $html | Should Match 'href="https://auto365\.vn/camera-hanh-trinh-o-to-blackvue"'
+        $html | Should Not Match 'Hub VIETMAP'
+        $html | Should Not Match 'Hub BlackVue'
+        $html | Should Not Match 'Hub 70mai'
         $html | Should Not Match 'href="https://auto365\.vn/camera-hanh-trinh-(70mai|vietmap|blackvue)"'
         $html | Should Not Match 'BUNDLE_PRICE_NOTE'
         $html | Should Not Match 'Dữ liệu tham khảo cập nhật'
