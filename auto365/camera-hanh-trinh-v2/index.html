@@ -169,11 +169,11 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .quick-pick{padding:15px 0 3px}
 .quick-pick .type-compare{margin-top:0}
 .quick-pick-note{font-size:12px;color:var(--muted);margin:8px 0 0}
-.type-compare table{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}
+.type-compare table{width:100%;table-layout:fixed;border-collapse:collapse;font-size:13px;min-width:560px}
 .type-compare caption{text-align:left;padding:12px 16px 0;font-size:12px;font-weight:600;color:#666}
 .type-compare th,.type-compare td{padding:12px 16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 .type-compare thead th{background:#f7f7f5;font-size:11px;letter-spacing:.3px;color:#666;font-weight:600}
-.type-compare tbody th{font-weight:600;white-space:nowrap;color:var(--ink)}
+.type-compare tbody th{font-weight:600;color:var(--ink)}
 .type-compare tbody tr:last-child td,.type-compare tbody tr:last-child th{border-bottom:none}
 .catalog{padding:18px 0 21px;background:#f8f8f7}
 .blockhead{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:20px}
@@ -1738,6 +1738,12 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="type-compare">
 <table>
 <caption>So sánh nhanh: camera hành trình, camera lùi và camera 360°</caption>
+<colgroup>
+<col style="width:18%">
+<col style="width:25%">
+<col style="width:23%">
+<col style="width:34%">
+</colgroup>
 <thead>
 <tr>
 <th scope="col">Loại camera</th>
