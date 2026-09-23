@@ -2000,7 +2000,11 @@ lucide-react/dist/esm/lucide-react.mjs:
     bar.className = 'xl-compare-bar';
     bar.innerHTML = '<span class="xl-compare-bar-count">Đã chọn <b id="xl-compare-bar-num">0</b> sản phẩm để so sánh</span><span class="xl-compare-bar-actions"><button type="button" class="xl-compare-bar-clear">Bỏ chọn</button><button type="button" class="xl-compare-bar-view">Chọn thêm để so sánh</button></span>';
     document.body.appendChild(bar);
-    bar.querySelector('.xl-compare-bar-view').addEventListener('click', function(){ if(selected.length >= 2) render(); });
+    bar.querySelector('.xl-compare-bar-view').addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      if(selected.length >= 2) render();
+    });
     bar.querySelector('.xl-compare-bar-clear').addEventListener('click', function(){
       selected = [];
       document.querySelectorAll('.p-card-compare-input').forEach(function(cb){
@@ -2064,6 +2068,13 @@ lucide-react/dist/esm/lucide-react.mjs:
     },
     openModal: function(){ render(); }
   };
+  document.addEventListener('click', function(e){
+    var viewBtn = e.target.closest && e.target.closest('.xl-compare-bar-view');
+    if(!viewBtn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    if(selected.length >= 2) render();
+  }, true);
   if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
 </script><script id="xlight-comparison-table-compare">
