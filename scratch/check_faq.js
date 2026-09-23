@@ -1,11 +1,6 @@
 ﻿const fs = require('fs');
-const html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
-const faqStart = html.indexOf('<div class="faq-grid" id="faq-grid">');
-const faqEnd = html.indexOf('</div>', html.lastIndexOf('</details>', faqStart + 10000));
-const faqHTML = html.substring(faqStart, faqEnd);
+let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
 
-const questions = faqHTML.match(/<summary>.*?<\/summary>/g);
-if (questions) {
-    console.log("Total visible FAQs:", questions.length);
-    questions.forEach(q => console.log(q.replace(/<[^>]+>/g, '')));
-}
+const s1 = html.indexOf('<section class="section" id="faq"');
+const e1 = html.indexOf('</section>', s1) + 10;
+console.log(html.substring(s1, e1));
