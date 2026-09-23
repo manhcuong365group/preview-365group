@@ -377,6 +377,21 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .video-lead-layout{display:block}
 .video-lead-layout .v2-video-block{margin-top:0}
 .video-lead-layout .lead-form{margin-top:34px;padding:22px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 8px 22px rgba(20,20,20,.05)}
+.lead-capture-section{padding:22px 0;background:#f7f7f5}
+.lead-capture-panel{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:24px;align-items:start;padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(20,20,20,.045)}
+.lead-capture-intro h2{margin:0 0 8px;font-size:24px;line-height:1.2;letter-spacing:-.6px}
+.lead-capture-intro p{margin:0;color:#666;font-size:13px;line-height:1.55}
+.lead-capture-intro a{display:inline-block;margin-top:14px;color:var(--red);font-weight:700;font-size:14px}
+.lead-capture-form{margin:0;padding:0;border:0}
+.lead-capture-form .lead-form-grid{gap:10px}
+.lead-capture-form .lead-form-field label{font-size:12px}
+.lead-capture-form .lead-form-field input,.lead-capture-form .lead-form-field select,.lead-capture-form .lead-form-field textarea{min-height:42px;padding:10px 12px;border:1px solid #d4dbe5;border-radius:8px;font-size:13px;outline:none}
+.lead-capture-form .lead-form-field textarea{min-height:72px}
+.lead-capture-form .lead-form-field input:focus,.lead-capture-form .lead-form-field select:focus,.lead-capture-form .lead-form-field textarea:focus{border-color:var(--red);box-shadow:0 0 0 2px rgba(231,36,45,.1)}
+.lead-capture-form .lead-form-instruction{margin:10px 0 0;color:#777;font-size:11px;line-height:1.45}
+.lead-capture-form .lead-form-submit{min-height:46px;margin-top:10px;font-size:14px}
+.lead-capture-form .lead-form-status{padding:10px 12px;border-radius:8px;background:#f4f8f5}
+@media (max-width:700px){.lead-capture-panel{grid-template-columns:1fr;gap:16px;padding:18px}.lead-capture-intro h2{font-size:21px}}
 .guide-reading-path{padding:15px 0;background:#fff;border-top:1px solid var(--line)}
 .guide-reading-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}
 .guide-reading-head h2{font-size:23px;margin:0}
@@ -1632,6 +1647,63 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 </article>
 </div>
+</div>
+</section>
+
+<section class="lead-capture-section" id="form-tu-van">
+<div class="wrap lead-capture-panel">
+<div class="lead-capture-intro">
+<h2>Để lại thông tin, nhận tư vấn theo xe</h2>
+<p>Cho Auto365 biết dòng xe và nhu cầu của bạn. Kỹ thuật viên sẽ đối chiếu cấu hình camera, phụ kiện và phương án lắp phù hợp.</p>
+<a href="tel:0365365911">Cần tư vấn nhanh? Gọi 0365 365 911</a>
+</div>
+<form class="lead-form lead-capture-form" id="cameraLeadInlineForm">
+<div class="lead-form-grid">
+<div class="lead-form-field">
+<label for="leadInlineName">Họ và tên</label>
+<input id="leadInlineName" name="name" autocomplete="name" required placeholder="Nhập họ tên">
+</div>
+<div class="lead-form-field">
+<label for="leadInlinePhone">Số điện thoại</label>
+<input id="leadInlinePhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
+</div>
+<div class="lead-form-field">
+<label for="leadInlineCar">Dòng xe / đời xe <span>(không bắt buộc)</span></label>
+<input id="leadInlineCar" name="car" autocomplete="organization" placeholder="VD: Ford Ranger, VF5, CX-5">
+</div>
+<div class="lead-form-field">
+<label for="leadInlineCity">Tỉnh / thành phố</label>
+<input id="leadInlineCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
+</div>
+<div class="lead-form-field">
+<label for="leadInlineNeed">Nhu cầu ưu tiên</label>
+<select id="leadInlineNeed" name="need">
+<option>Chưa rõ, cần tư vấn</option>
+<option>Camera trước</option>
+<option>Camera trước + sau</option>
+<option>Camera có cabin</option>
+<option>Parking Mode / 4G</option>
+</select>
+</div>
+<div class="lead-form-field">
+<label for="leadInlinePackage">Gói đang quan tâm</label>
+<select id="leadInlinePackage" name="package">
+<option>Chưa chọn model cụ thể</option>
+<option>Camera 1 kênh phía trước</option>
+<option>Camera 2 kênh trước – sau</option>
+<option>Camera 3 kênh có cabin</option>
+<option>Camera 4G / Cloud</option>
+</select>
+</div>
+<div class="lead-form-field full">
+<label for="leadInlineNote">Thông tin cần tư vấn thêm <span>(không bắt buộc)</span></label>
+<textarea id="leadInlineNote" name="note" placeholder="Ví dụ: ưu tiên ghi hình khi đỗ, cần lắp tại chi nhánh..."></textarea>
+</div>
+</div>
+<p class="lead-form-instruction">Nếu website chưa kết nối nhận yêu cầu tự động, ứng dụng email sẽ mở để bạn gửi thông tin tới Auto365.</p>
+<button class="lead-form-submit" type="submit">Gửi thông tin tư vấn</button>
+<p class="lead-form-status" data-form-status hidden></p>
+</form>
 </div>
 </section>
 
@@ -3255,6 +3327,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   const form = document.getElementById('cameraLeadForm');
   const status = document.getElementById('leadFormStatus');
   if (!modal || !form || !status) return;
+  const forms = [form, document.getElementById('cameraLeadInlineForm')].filter(Boolean);
   let lastFocused = null;
   const openModal = (trigger) => {
     lastFocused = document.activeElement;
@@ -3281,53 +3354,57 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   close.addEventListener('click', closeModal);
   modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
-  const openMailto = (mailto, message) => {
-    status.innerHTML = message + ' <a href="' + mailto + '">Bấm vào đây để mở email</a> hoặc gọi 0365 365 911.';
-    status.hidden = false;
-    window.location.href = mailto;
-  };
-  form.addEventListener('submit', async event => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const subject = 'Nhu cau tu van camera hanh trinh - ' + (data.get('name') || 'Khach hang');
-    const body = [
-      'Ho va ten: ' + (data.get('name') || ''),
-      'So dien thoai: ' + (data.get('phone') || ''),
-      'Dong xe: ' + (data.get('car') || 'Chua cung cap'),
-      'Tinh thanh: ' + (data.get('city') || 'Chua cung cap'),
-      'Nhu cau: ' + (data.get('need') || ''),
-      'Goi quan tam: ' + (data.get('package') || ''),
-      'Ghi chu: ' + (data.get('note') || 'Khong co')
-    ].join('\\n');
-    const mailto = 'mailto:support@365group.com.vn?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    const payload = {
-      name: data.get('name') || '',
-      phone: data.get('phone') || '',
-      car: data.get('car') || '',
-      city: data.get('city') || '',
-      need: data.get('need') || '',
-      package: data.get('package') || '',
-      note: data.get('note') || '',
-      source: 'camera-hanh-trinh-v2',
-      page_url: window.location.href
+  forms.forEach(currentForm => {
+    const currentStatus = currentForm.querySelector('[data-form-status]') || (currentForm === form ? status : null);
+    if (!currentStatus) return;
+    const openMailto = (mailto, message) => {
+      currentStatus.innerHTML = message + ' <a href="' + mailto + '">Bấm vào đây để mở email</a> hoặc gọi 0365 365 911.';
+      currentStatus.hidden = false;
+      window.location.href = mailto;
     };
-    status.textContent = 'Đang chuyển yêu cầu tới Auto365…';
-    status.hidden = false;
-    try {
-      const response = await fetch('/api/lead', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(payload)
-      });
-      const result = await response.json().catch(() => ({}));
-      if (response.ok && result.ok) {
-        status.textContent = 'Đã gửi yêu cầu tới Auto365. Nhân viên sẽ liên hệ theo thông tin bạn cung cấp.';
-        return;
+    currentForm.addEventListener('submit', async event => {
+      event.preventDefault();
+      const data = new FormData(currentForm);
+      const subject = 'Nhu cau tu van camera hanh trinh - ' + (data.get('name') || 'Khach hang');
+      const body = [
+        'Ho va ten: ' + (data.get('name') || ''),
+        'So dien thoai: ' + (data.get('phone') || ''),
+        'Dong xe: ' + (data.get('car') || 'Chua cung cap'),
+        'Tinh thanh: ' + (data.get('city') || 'Chua cung cap'),
+        'Nhu cau: ' + (data.get('need') || ''),
+        'Goi quan tam: ' + (data.get('package') || ''),
+        'Ghi chu: ' + (data.get('note') || 'Khong co')
+      ].join('\\n');
+      const mailto = 'mailto:support@365group.com.vn?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      const payload = {
+        name: data.get('name') || '',
+        phone: data.get('phone') || '',
+        car: data.get('car') || '',
+        city: data.get('city') || '',
+        need: data.get('need') || '',
+        package: data.get('package') || '',
+        note: data.get('note') || '',
+        source: 'camera-hanh-trinh-v2',
+        page_url: window.location.href
+      };
+      currentStatus.textContent = 'Đang chuyển yêu cầu tới Auto365…';
+      currentStatus.hidden = false;
+      try {
+        const response = await fetch('/api/lead', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(payload)
+        });
+        const result = await response.json().catch(() => ({}));
+        if (response.ok && result.ok) {
+          currentStatus.textContent = 'Đã gửi yêu cầu tới Auto365. Nhân viên sẽ liên hệ theo thông tin bạn cung cấp.';
+          return;
+        }
+      } catch (error) {
+        // Preview/static host chưa có API thì dùng fallback bên dưới.
       }
-    } catch (error) {
-      // Preview/static host chưa có API thì dùng fallback bên dưới.
-    }
-    openMailto(mailto, 'Chưa kết nối được hệ thống nhận lead tự động. Ứng dụng email sẽ được mở để bạn gửi yêu cầu');
+      openMailto(mailto, 'Chưa kết nối được hệ thống nhận yêu cầu tự động. Ứng dụng email sẽ mở để bạn gửi thông tin');
+    });
   });
 })();
 
