@@ -3095,18 +3095,18 @@ function pickConfigs(channel, budget, use, wantParking, selectedBrands = selecte
   pool = pool.slice().sort((a, b) => a.price - b.price);
   const picks = [], seenBrands = new Set();
   for (const p of pool) {
-    if (picks.length >= 4) break;
+    if (picks.length >= 3) break;
     if (relaxedReason !== 'budget' && seenBrands.has(p.brand) && picks.length >= 2 && seenBrands.size >= 2) continue;
     picks.push(p);
     seenBrands.add(p.brand);
   }
   if (picks.length < 2) {
     for (const p of pool) {
-      if (picks.length >= 4) break;
+      if (picks.length >= 3) break;
       if (!picks.includes(p)) picks.push(p);
     }
   }
-  return { picks: picks.slice(0, 4), relaxed, relaxedReason };
+  return { picks: picks.slice(0, 3), relaxed, relaxedReason };
 }
 
 const BRAND_DISPLAY = ['70mai', 'VIETMAP', 'BlackVue', 'DDPAI', 'Thinkware', 'Nextbase', 'UTOUR', 'Ellicam', 'TEYES', 'HTD', 'HP', 'YUEMI'];
