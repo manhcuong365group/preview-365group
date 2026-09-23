@@ -378,11 +378,14 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .video-lead-layout .v2-video-block{margin-top:0}
 .video-lead-layout .lead-form{margin-top:34px;padding:22px;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 8px 22px rgba(20,20,20,.05)}
 .lead-capture-section{padding:22px 0;background:#f7f7f5}
-.lead-capture-panel{display:grid;grid-template-columns:minmax(220px,.72fr) minmax(0,1.28fr);gap:24px;align-items:start;padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(20,20,20,.045)}
-.lead-capture-intro h2{margin:0 0 8px;font-size:24px;line-height:1.2;letter-spacing:-.6px}
+.lead-capture-panel{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;align-items:stretch;padding:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 8px 24px rgba(20,20,20,.045)}
+.lead-capture-visual{min-width:0;background:#f5f6f7}
+.lead-capture-visual img{display:block;width:100%;height:330px;object-fit:cover;object-position:center}
+.lead-capture-intro{padding:17px 20px 20px}
+.lead-capture-intro h2{margin:0 0 8px;font-size:22px;line-height:1.2;letter-spacing:-.6px}
 .lead-capture-intro p{margin:0;color:#666;font-size:13px;line-height:1.55}
 .lead-capture-intro a{display:inline-block;margin-top:14px;color:var(--red);font-weight:700;font-size:14px}
-.lead-capture-form{margin:0;padding:0;border:0}
+.lead-capture-form{margin:0;padding:24px;border:0;align-self:center}
 .lead-capture-form .lead-form-grid{gap:10px}
 .lead-capture-form .lead-form-field label{font-size:12px}
 .lead-capture-form .lead-form-field input,.lead-capture-form .lead-form-field select,.lead-capture-form .lead-form-field textarea{min-height:42px;padding:10px 12px;border:1px solid #d4dbe5;border-radius:8px;font-size:13px;outline:none}
@@ -393,7 +396,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .lead-capture-form .lead-form-instruction{margin:10px 0 0;color:#777;font-size:11px;line-height:1.45}
 .lead-capture-form .lead-form-submit{min-height:46px;margin-top:10px;font-size:14px}
 .lead-capture-form .lead-form-status{padding:10px 12px;border-radius:8px;background:#f4f8f5}
-@media (max-width:700px){.lead-capture-panel{grid-template-columns:1fr;gap:16px;padding:18px}.lead-capture-intro h2{font-size:21px}}
+@media (max-width:700px){.lead-capture-panel{grid-template-columns:1fr}.lead-capture-visual img{height:220px}.lead-capture-intro{padding:15px 18px 18px}.lead-capture-intro h2{font-size:21px}.lead-capture-form{padding:18px}}
 .guide-reading-path{padding:15px 0;background:#fff;border-top:1px solid var(--line)}
 .guide-reading-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:14px}
 .guide-reading-head h2{font-size:23px;margin:0}
@@ -1481,7 +1484,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <input id="leadPhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
 </div>
 <div class="lead-form-field">
-<label for="leadBrand">Hãng camera quan tâm</label>
+<label for="leadBrand">Hãng camera quan tâm <span>(không bắt buộc)</span></label>
 <select id="leadBrand" name="brand">
 <option>Chưa chọn, cần tư vấn</option>
 <option>70mai</option><option>VIETMAP</option><option>BlackVue</option><option>DDPAI</option><option>Thinkware</option><option>UTOUR</option><option>Hãng khác</option>
@@ -1489,7 +1492,10 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 <div class="lead-form-field">
 <label for="leadCity">Tỉnh / thành phố <span>(không bắt buộc)</span></label>
-<input id="leadCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
+<select id="leadCity" name="city" autocomplete="address-level1">
+<option value="">Chọn tỉnh / thành phố</option>
+<option>An Giang</option><option>Bắc Ninh</option><option>Cà Mau</option><option>Cao Bằng</option><option>Đà Nẵng</option><option>Đắk Lắk</option><option>Điện Biên</option><option>Đồng Nai</option><option>Đồng Tháp</option><option>Gia Lai</option><option>Hà Nội</option><option>Hà Tĩnh</option><option>Hải Phòng</option><option>Hưng Yên</option><option>Khánh Hòa</option><option>Lai Châu</option><option>Lâm Đồng</option><option>Lạng Sơn</option><option>Lào Cai</option><option>Nghệ An</option><option>Ninh Bình</option><option>Phú Thọ</option><option>Quảng Ngãi</option><option>Quảng Ninh</option><option>Quảng Trị</option><option>Sơn La</option><option>Tây Ninh</option><option>Thái Nguyên</option><option>Thanh Hóa</option><option>Thành phố Hồ Chí Minh</option><option>Thành phố Huế</option><option>Tuyên Quang</option><option>Vĩnh Long</option><option>Cần Thơ</option>
+</select>
 </div>
 <div class="lead-form-field">
 <label for="leadNeed">Nhu cầu / sản phẩm muốn tư vấn</label>
@@ -1651,10 +1657,13 @@ h1{font-weight:500;letter-spacing:-2.2px}
 
 <section class="lead-capture-section" id="form-tu-van">
 <div class="wrap lead-capture-panel">
+<div class="lead-capture-visual">
+<img src="hinh/auto365vn-nghiem-thu-70mai-t400-vinfast-vf6-2025-img_6a9fbbd0c0c779.60955729.webp" alt="Kỹ thuật viên Auto365 kiểm tra camera hành trình 70mai T400 trên VinFast VF6" loading="lazy" width="800" height="800" decoding="async">
 <div class="lead-capture-intro">
-<h2>Để lại thông tin, nhận tư vấn theo xe</h2>
-<p>Cho Auto365 biết dòng xe và nhu cầu của bạn. Kỹ thuật viên sẽ đối chiếu cấu hình camera, phụ kiện và phương án lắp phù hợp.</p>
+<h2>Nhận tư vấn camera theo nhu cầu</h2>
+<p>Cho Auto365 biết hãng camera, nơi lắp và khoảng giá bạn quan tâm. Kỹ thuật viên sẽ tư vấn model, phụ kiện và phương án lắp phù hợp.</p>
 <a href="tel:0365365911">Cần tư vấn nhanh? Gọi 0365 365 911</a>
+</div>
 </div>
 <form class="lead-form lead-capture-form" id="cameraLeadInlineForm">
 <div class="lead-form-grid">
@@ -1667,7 +1676,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <input id="leadInlinePhone" name="phone" type="tel" autocomplete="tel" required placeholder="Nhập số điện thoại">
 </div>
 <div class="lead-form-field">
-<label for="leadInlineBrand">Hãng camera quan tâm</label>
+<label for="leadInlineBrand">Hãng camera quan tâm <span>(không bắt buộc)</span></label>
 <select id="leadInlineBrand" name="brand">
 <option>Chưa chọn, cần tư vấn</option>
 <option>70mai</option><option>VIETMAP</option><option>BlackVue</option><option>DDPAI</option><option>Thinkware</option><option>UTOUR</option><option>Hãng khác</option>
@@ -1675,7 +1684,10 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 <div class="lead-form-field">
 <label for="leadInlineCity">Tỉnh / thành phố <span>(không bắt buộc)</span></label>
-<input id="leadInlineCity" name="city" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh, Hà Nội">
+<select id="leadInlineCity" name="city" autocomplete="address-level1">
+<option value="">Chọn tỉnh / thành phố</option>
+<option>An Giang</option><option>Bắc Ninh</option><option>Cà Mau</option><option>Cao Bằng</option><option>Đà Nẵng</option><option>Đắk Lắk</option><option>Điện Biên</option><option>Đồng Nai</option><option>Đồng Tháp</option><option>Gia Lai</option><option>Hà Nội</option><option>Hà Tĩnh</option><option>Hải Phòng</option><option>Hưng Yên</option><option>Khánh Hòa</option><option>Lai Châu</option><option>Lâm Đồng</option><option>Lạng Sơn</option><option>Lào Cai</option><option>Nghệ An</option><option>Ninh Bình</option><option>Phú Thọ</option><option>Quảng Ngãi</option><option>Quảng Ninh</option><option>Quảng Trị</option><option>Sơn La</option><option>Tây Ninh</option><option>Thái Nguyên</option><option>Thanh Hóa</option><option>Thành phố Hồ Chí Minh</option><option>Thành phố Huế</option><option>Tuyên Quang</option><option>Vĩnh Long</option><option>Cần Thơ</option>
+</select>
 </div>
 <div class="lead-form-field">
 <label for="leadInlineNeed">Nhu cầu / sản phẩm muốn tư vấn</label>
