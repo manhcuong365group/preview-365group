@@ -302,7 +302,9 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .config-pick b{display:block;font-size:13px;line-height:1.3;margin-bottom:4px;color:#171717}
 .config-pick-price{display:block;color:var(--red);font-weight:600;font-size:14px;margin-bottom:6px}
 .config-pick p{margin:0 0 8px;font-size:12px;color:#666;line-height:1.4}
-.config-pick a{color:var(--red);font-size:12px;font-weight:600}
+.config-pick a{display:block;color:var(--red);font-size:12px;font-weight:600}
+.config-pick-cta{display:block;width:100%;margin-top:8px;padding:9px 10px;border:none;border-radius:8px;background:var(--red);color:#fff;font-size:12px;font-weight:600;cursor:pointer;text-align:center}
+.config-pick-cta:hover{background:#c81e26}
 .config-result-note{margin:12px 0 0;font-size:11.5px;color:#888;line-height:1.5}
 .config-result-cta{display:block;width:100%;margin-top:14px;padding:13px 16px;border:none;border-radius:10px;background:var(--red);color:#fff;font-size:14px;font-weight:600;cursor:pointer;text-align:center}
 .config-result-cta:hover{background:#c81e26}
@@ -2935,19 +2937,26 @@ document.querySelectorAll('[data-jump-brand]').forEach(link => link.addEventList
     modal.hidden = true;
     document.body.style.overflow = '';
   };
+  const goToForm = productName => {
+    closeModal();
+    const formSection = document.getElementById('form-tu-van');
+    if (!formSection) return;
+    formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const noteField = document.getElementById('leadInlineNote');
+    if (noteField && productName) {
+      noteField.value = 'Muốn tư vấn: ' + productName + (noteField.value ? '\n' + noteField.value : '');
+    }
+    const firstField = document.getElementById('leadInlineName');
+    if (firstField) setTimeout(() => firstField.focus(), 450);
+  };
   close.addEventListener('click', closeModal);
   modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
-  if (toForm) {
-    toForm.addEventListener('click', () => {
-      closeModal();
-      const formSection = document.getElementById('form-tu-van');
-      if (!formSection) return;
-      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      const firstField = document.getElementById('leadInlineName');
-      if (firstField) setTimeout(() => firstField.focus(), 450);
-    });
-  }
+  if (toForm) toForm.addEventListener('click', () => goToForm());
+  modal.addEventListener('click', event => {
+    const pickBtn = event.target.closest('.config-pick-cta');
+    if (pickBtn) goToForm(pickBtn.dataset.productName || '');
+  });
 })();
 
 // Jump to price tier from Price Tiers cards
@@ -3166,7 +3175,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
           : 'Không có mẫu khớp đầy đủ. Mẫu đúng hướng ghi gần nhất hiện có:';
     resultGrid.innerHTML = picks.map(p => {
       const upgradeBadge = relaxed && relaxedReason === 'budget' ? budgetDiffLabel(p.price, budget) : '';
-      return '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span>' + upgradeBadge + '<p>' + reasonFor(p, channel, budget, relaxed, wantParking) + '</p><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a></article>';
+      return '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span>' + upgradeBadge + '<p>' + reasonFor(p, channel, budget, relaxed, wantParking) + '</p><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a><button type="button" class="config-pick-cta" data-product-name="' + esc(p.name) + '">Tư vấn sản phẩm này →</button></article>';
     }).join('');
 
     if (suggestedChannel) {
@@ -3175,7 +3184,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
         altBox.hidden = false;
         altBox.innerHTML = '<p class="config-alt-label"><b>Gợi ý thay thế ' + suggestedChannel + ' kênh.</b> ' + suggestedNote + '</p>' +
           '<div class="config-result-grid">' + altPicks.slice(0, 2).map(p =>
-            '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a></article>'
+            '<article class="config-pick"><b>' + esc(p.name) + '</b><span class="config-pick-price">' + money(p.price) + '</span><a href="' + p.url + '" target="_blank" rel="noopener noreferrer">Xem sản phẩm →</a><button type="button" class="config-pick-cta" data-product-name="' + esc(p.name) + '">Tư vấn sản phẩm này →</button></article>'
           ).join('') + '</div>';
       } else {
         altBox.hidden = true;
