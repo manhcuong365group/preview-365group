@@ -469,7 +469,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .branch-quick-contact{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .branch-quick-contact a{font-size:12px;font-weight:600;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:7px 12px;white-space:nowrap}
 .branch-quick-contact a:hover{border-color:var(--red);color:var(--red)}
-.locations{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.locations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .location{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fff;transition:transform .2s ease,box-shadow .2s ease}
 .location:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(22,22,22,.07)}
 .location b{display:block;font-size:14px;font-weight:500}
@@ -673,7 +673,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .branch-proof-grid{grid-auto-columns:75%!important}
   .review-grid{grid-template-columns:1fr}
   .benefit-grid{grid-auto-columns:75%!important}
-  .locations{grid-auto-columns:75%!important}
+  .locations{grid-template-rows:1fr!important;grid-auto-columns:80%!important}
   .term-grid{grid-auto-columns:82%!important}
   .term{scroll-snap-align:start;min-width:0}
   .decision,.branch-proof,.benefit,.location{scroll-snap-align:start;min-width:0}
@@ -1814,20 +1814,6 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <a href="https://www.google.com/maps?q=10.840778,106.7133792" target="_blank" rel="noopener noreferrer">Bản đồ →</a>
 </div>
 </article>
-<article class="location" data-city="ha noi hà nội duong noi" data-lat="20.9546004" data-lng="105.753902" data-hours="08:30-17:30" data-days="all">
-<div class="loc-photo">
-<img src="https://auto365.vn/uploads/images/branch/auto365vn-auto365-ha-noi-4jpg-img_6a058d528ecbb5.46436107_.jpg.webp" alt="Auto365 Hà Nội" loading="lazy" width="800" height="600" decoding="async">
-</div>
-<b>Auto365 Hà Nội</b>
-<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>Số 5 ngách 43, Ngõ 14 Quang Trung, P. Dương Nội, Hà Nội</p>
-<small class="loc-hours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>08:30 – 17:30 · Cả tuần</small>
-<small class="loc-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg>ĐT: 0888 006 669</small>
-<span class="loc-status" data-status></span>
-<div class="loc-actions">
-<a href="https://auto365.vn/ha-noi" target="_blank" rel="noopener">Xem chi tiết →</a>
-<a href="https://www.google.com/maps?q=20.9546004,105.753902" target="_blank" rel="noopener noreferrer">Bản đồ →</a>
-</div>
-</article>
 <article class="location" data-city="da nang đà nẵng hoa cuong" data-lat="16.030662" data-lng="108.223858" data-hours="07:45-18:00" data-days="all">
 <div class="loc-photo">
 <img src="https://auto365.vn/uploads/images/H%C3%8CNH%20%C4%90%E1%BA%A0I%20L%C3%9D/MI%E1%BB%80N%20TRUNG/auto365-da-nang-khai-truong.jpg.png.webp" alt="Auto365 Đà Nẵng" loading="lazy" width="480" height="480" decoding="async">
@@ -1857,7 +1843,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 </article>
 </div>
-<p class="branch-empty" id="branchEmpty">Danh sách này đang giới thiệu 4 điểm lắp tiêu biểu, chưa phải toàn bộ hệ thống. Chưa thấy khu vực của bạn? <a href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem toàn bộ hệ thống chi nhánh →</a> hoặc gọi <a href="tel:0365365911">0365 365 911</a> để tìm điểm hỗ trợ phù hợp.</p>
+<p class="branch-empty" id="branchEmpty">Danh sách này đang giới thiệu 3 điểm lắp tiêu biểu, chưa phải toàn bộ hệ thống. Chưa thấy khu vực của bạn? <a href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem toàn bộ hệ thống chi nhánh →</a> hoặc gọi <a href="tel:0365365911">0365 365 911</a> để tìm điểm hỗ trợ phù hợp.</p>
 </div>
 </div>
 </section>
