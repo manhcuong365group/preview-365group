@@ -1,5 +1,5 @@
 ﻿const fs = require('fs');
 let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
-const start = html.indexOf('function runSearch() {');
-const end = html.indexOf('function showRecoStep() {', start);
-console.log(html.substring(start, end));
+const s1 = html.indexOf('function runSearch()');
+const e1 = html.indexOf('function openModal()', s1);
+console.log(html.substring(s1, e1));
