@@ -1,8 +1,12 @@
-const fs = require('fs');
-const file = 'auto365/bong-led/index.html';
-let html = fs.readFileSync(file, 'utf8');
+﻿const fs = require('fs');
+let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
 
-html = html.replace(/\.shop-grid\s*\{\s*grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\);\s*gap:\s*12px;\s*\}/, '.shop-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }');
-
-fs.writeFileSync(file, html);
-console.log('Added display: grid back.');
+const s1 = html.indexOf('<section class="section" id="cum-den"');
+const gridStart = html.indexOf('<div class="grid grid-3">', s1);
+if (gridStart !== -1 && gridStart - s1 < 300) {
+    html = html.substring(0, gridStart) + '<div class="grid grid-4">' + html.substring(gridStart + 25);
+    fs.writeFileSync('auto365/bong-led/index.html', '\ufeff' + html.replace(/^\ufeff/, ''), 'utf8');
+    console.log("Changed grid-3 to grid-4");
+} else {
+    console.log("Could not find grid-3 in cum-den section");
+}
