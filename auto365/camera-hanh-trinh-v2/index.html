@@ -693,7 +693,9 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .quick .config-steps{grid-template-columns:repeat(2,1fr)!important;gap:10px 12px!important}
   .config-field{min-width:0}
   .customer-summary-grid{grid-template-columns:1fr}
-  .config-result-grid{grid-template-columns:1fr}
+  .config-result-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-auto-columns:68%!important;gap:10px!important;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -14px;padding-left:14px;padding-right:14px}
+  .config-pick{scroll-snap-align:start;min-width:0}
+  .config-pick-img{height:90px}
   .hero h1{letter-spacing:-1.8px}
   .expert-box{flex-direction:column}
 }
