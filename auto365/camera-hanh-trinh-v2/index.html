@@ -261,6 +261,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .compare-dialog .compare-table{width:100%;border-collapse:collapse;font-size:13px}
 .compare-dialog .compare-table th,.compare-dialog .compare-table td{padding:12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
 .compare-dialog .compare-table th{background:#171717;color:#fff;position:sticky;top:0}
+.compare-consult-btn{display:inline-flex;align-items:center;justify-content:center;margin-top:8px;border:0;border-radius:8px;background:var(--red);color:#fff;padding:8px 12px;font-weight:600;font-size:12px;cursor:pointer}
+.compare-consult-btn:hover{background:#c81e26}
 .customer-summary{padding:16px 0;background:#fff}
 .customer-summary-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:16px}
 .customer-summary h2{margin:0;font-size:22px;line-height:1.2;letter-spacing:-.8px}
@@ -2719,7 +2721,7 @@ function updateCompare() {
         '<tr><td>Cảnh báo giao thông/tốc độ</td><td>' + yn(matchFeatures(p1, 'warning')) + '</td><td>' + yn(matchFeatures(p2, 'warning')) + '</td></tr>' +
         '<tr><td>Chế độ đỗ xe Parking</td><td>' + parkingCell(p1) + '</td><td>' + parkingCell(p2) + '</td></tr>' +
         '<tr><td>Giám sát 4G/LTE</td><td>' + lteCell(p1) + '</td><td>' + lteCell(p2) + '</td></tr>' +
-        '<tr><td>Chi tiết</td><td><a href="' + p1.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:600">Mở trang sản phẩm →</a></td><td><a href="' + p2.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:600">Mở trang sản phẩm →</a></td></tr>' +
+        '<tr><td>Chi tiết</td><td><a href="' + p1.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:600">Mở trang sản phẩm →</a><br><button type="button" class="compare-consult-btn" data-open-lead data-lead-note="Tư vấn sản phẩm: ' + esc(p1.name) + '">Tư vấn sản phẩm</button></td><td><a href="' + p2.url + '" target="_blank" rel="noopener" style="color:var(--red);font-weight:600">Mở trang sản phẩm →</a><br><button type="button" class="compare-consult-btn" data-open-lead data-lead-note="Tư vấn sản phẩm: ' + esc(p2.name) + '">Tư vấn sản phẩm</button></td></tr>' +
         '</tbody></table><p style="padding:12px 16px;margin:0;font-size:11.5px;color:#888">Giá tham khảo cấu hình cơ bản, chưa gồm thẻ nhớ, bộ nguồn &amp; công lắp.</p>';
       modal.classList.add('open');
     }
@@ -3249,14 +3251,16 @@ document.querySelector('#hubFind').addEventListener('click', () => {
 // Form tu van: uu tien API lead khi production da cau hinh; fallback mailto tren preview/static host.
 (function() {
   const modal = document.getElementById('leadModal');
-  const openers = document.querySelectorAll('[data-open-lead]');
   const close = document.getElementById('leadModalClose');
   const form = document.getElementById('cameraLeadForm');
   const status = document.getElementById('leadFormStatus');
   if (!modal || !form || !status) return;
   let lastFocused = null;
-  const openModal = () => {
+  const openModal = (trigger) => {
     lastFocused = document.activeElement;
+    const note = trigger && trigger.dataset ? trigger.dataset.leadNote : '';
+    const noteField = document.getElementById('leadNote');
+    if (note && noteField) noteField.value = note;
     modal.hidden = false;
     modal.classList.add('open');
     document.body.style.overflow = 'hidden';
@@ -3268,7 +3272,12 @@ document.querySelector('#hubFind').addEventListener('click', () => {
     document.body.style.overflow = '';
     if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
   };
-  openers.forEach(button => button.addEventListener('click', openModal));
+  document.addEventListener('click', event => {
+    const trigger = event.target.closest('[data-open-lead]');
+    if (!trigger) return;
+    event.preventDefault();
+    openModal(trigger);
+  });
   close.addEventListener('click', closeModal);
   modal.addEventListener('click', event => { if (event.target === modal) closeModal(); });
   document.addEventListener('keydown', event => { if (event.key === 'Escape' && !modal.hidden) closeModal(); });
