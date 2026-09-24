@@ -2403,12 +2403,13 @@ lucide-react/dist/esm/lucide-react.mjs:
     return data;
   }
   function confirmLead(result){
-    return result && result.success === true && typeof result.lead_id === 'string' && result.lead_id.trim();
+    return !!(result && (result.success === true || result.success === 'true' || result.status === 'success'));
   }
   async function submitLead(data, leadId){
     if (typeof window.AUTO365_XLIGHT_LEAD_SUBMIT === 'function') {
       var customResult = await window.AUTO365_XLIGHT_LEAD_SUBMIT(data);
       if (!confirmLead(customResult)) throw new Error('Lead handler did not confirm');
+      customResult = Object.assign({}, customResult, { lead_id: (customResult && typeof customResult.lead_id === 'string' && customResult.lead_id.trim()) || leadId });
       return customResult;
     }
     var controller = new AbortController();
@@ -2417,7 +2418,8 @@ lucide-react/dist/esm/lucide-react.mjs:
       var response = await fetch(leadEndpoint(), { method:'POST', body:data, keepalive:true, signal:controller.signal, headers:{ 'Idempotency-Key': leadId } });
       if (!response.ok) throw new Error('Lead API returned ' + response.status);
       var result = await response.json().catch(function(){ return null; });
-      if (!confirmLead(result)) throw new Error('Lead API did not confirm');
+      if (!confirmLead(result)) throw new Error((result && result.message) || 'Lead API did not confirm');
+      result = Object.assign({}, result, { lead_id: (result && typeof result.lead_id === 'string' && result.lead_id.trim()) || leadId });
       return result;
     } finally {
       clearTimeout(timer);
@@ -2467,7 +2469,8 @@ lucide-react/dist/esm/lucide-react.mjs:
         var result = await submitLead(data, leadId);
         localStorage.setItem('xlight_last_submit_time', String(Date.now()));
         delete form.dataset.leadId; delete form.dataset.leadFingerprint;
-        if (note) note.innerHTML = 'Đã gửi yêu cầu tư vấn. Auto365 sẽ gọi lại xác nhận cấu hình phù hợp. Mã lead: <strong>' + result.lead_id + '</strong>.';
+        if (note) note.innerHTML = 'Gửi thông tin tư vấn thành công! Auto365 sẽ liên hệ với bạn sớm nhất. Mã yêu cầu: <strong>' + result.lead_id + '</strong>.';
+        form.reset(); var selBox = document.getElementById('xl-lead-selected'); if (selBox) selBox.hidden = true;
         if (submitBtn) submitBtn.textContent = 'Đã gửi yêu cầu ✓';
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({ event:'lead_form_submit', form_source:'bi-gam-x-light', service:'Bi gầm X-Light', lead_id:result.lead_id });
