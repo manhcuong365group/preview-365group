@@ -2611,7 +2611,9 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
                 <option value="H4">Chân H4 — cần xác nhận đúng vị trí và cụm đèn</option>
                 <option value="H7">Chân H7 — theo mã bóng và tài liệu đúng cấu hình</option>
                 <option value="H11">Chân H11 — theo mã bóng và tài liệu đúng cấu hình</option>
-                <option value="9005">Chân 9005 / HB3 / 9006 / 9012</option>
+                <option value="9005">Chân 9005 (HB3)</option>
+                <option value="9006">Chân 9006 (HB4)</option>
+                <option value="9012">Chân 9012 (HIR2)</option>
                 <option value="T10">Chân T10 (Demi, soi biển, trần xe)</option>
               </select>
             </label>
@@ -4459,7 +4461,8 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
               <span>Gọi ngay: 0365 365 911</span>
             </a>
           </div>
-          <p class="qs-subnote">Nội dung sẽ được tự động tạo sẵn và chuyển sang Zalo chính thức của Auto365. Không mất phí tư vấn.</p>
+          <p class="qs-subnote" style="margin-bottom:8px;">Nếu điện thoại không tự động chuyển, bạn có thể sao chép nội dung dưới đây và gửi cho chuyên viên:</p>
+          <textarea id="qsc-copy-area" readonly style="width:100%; height:80px; padding:10px; border:1px solid #dce4ea; border-radius:8px; font-size:13px; margin-bottom:12px; color:#657487; resize:none; background:#f9fbfc;" placeholder="Nội dung sẽ hiện ở đây sau khi bạn ấn nút..."></textarea>
         </form>
       </div>
     </div>
@@ -4844,6 +4847,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
 
       if (navigator.clipboard && window.isSecureContext) {
         navigator.clipboard.writeText(msgLines).catch(function() {});
+      var copyArea = document.getElementById('qsc-copy-area'); if(copyArea) { copyArea.value = msgLines; }
       }
 
       // Sync to on-page form fields
@@ -4853,7 +4857,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
       var midProv = document.getElementById('mid-province'); if (midProv && prov) midProv.value = prov;
 
       if (typeof toast === 'function') {
-        toast('Đã sao chép yêu cầu! Đang mở Zalo kết nối chuyên viên Auto365...');
+        toast('Đã copy. Hãy DÁN (Paste) nội dung vào Zalo và GỬI cho chuyên viên Auto365 nhé!');
       }
 
       setTimeout(function() {
