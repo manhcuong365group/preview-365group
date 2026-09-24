@@ -141,7 +141,12 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .tech-answer-first{background:#fdf5f5;border-left:4px solid var(--red);border-radius:0 8px 8px 0;padding:13px 16px;margin-bottom:14px;font-size:13.5px;line-height:1.65;color:#333}
 .tech-answer-first b{color:var(--red)}
 .tech-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.tech-detail-grid.three-col{grid-template-columns:repeat(3,1fr)}
 .tech-detail-card{background:#fbfbfa;border:1px solid var(--line);border-radius:10px;padding:13px 15px}
+.tech-compare-3col{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.tech-compare-col{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 13px;text-align:center}
+.tech-compare-col b{display:block;color:var(--red);font-size:13px;margin-bottom:6px}
+.tech-compare-col p{margin:0;font-size:12px;line-height:1.5;color:var(--muted)}
 .tech-detail-card h4{font-size:13px;margin:0 0 5px;color:var(--ink)}
 .tech-detail-card p{font-size:12px;color:#555;line-height:1.5;margin:0}
 .tech-action-note{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:12px;color:#666}
@@ -680,6 +685,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .tiers-grid{display:grid!important;grid-auto-flow:row!important;grid-template-columns:1fr!important;grid-auto-columns:auto!important;overflow:visible!important;scroll-snap-type:none!important;margin:0!important;padding:0!important}
   .tier-card{scroll-snap-align:none}
   .tech-detail-grid{grid-template-columns:1fr}
+  .tech-detail-grid.three-col{grid-template-columns:1fr}
+  .tech-compare-3col{grid-template-columns:1fr}
   .flow-chain{margin:22px -22px 0;padding-left:22px;padding-right:22px}
   .flow-node{min-width:78px}
   .decision-grid{grid-auto-columns:65%!important}
@@ -2144,18 +2151,36 @@ h1{font-weight:500;letter-spacing:-2.2px}
 
 <!-- BLOCK 3: GPS vs Cảnh báo giao thông -->
 <article class="tech-qa-block">
-<h3>3. GPS, cảnh báo tốc độ và ADAS khác nhau thế nào?</h3><img src="hinh/infographic-gps-vs-adas.png" alt="So sánh GPS, cảnh báo tốc độ và ADAS trên camera hành trình: GPS ghi tốc độ và tọa độ; cảnh báo tốc độ phụ thuộc dữ liệu giao thông; ADAS hỗ trợ cảnh báo theo cảm biến/camera" loading="lazy" width="1672" height="941" decoding="async" class="tech-qa-infographic">
-<div class="tech-answer-first">
-<b>Điểm cần biết:</b> GPS, cảnh báo tốc độ và ADAS là ba nhóm tính năng khác nhau. GPS chủ yếu ghi tốc độ và tọa độ lên video. Cảnh báo tốc độ/camera phạt nguội phụ thuộc phần mềm và dữ liệu giao thông Việt Nam được cập nhật theo hãng. ADAS là nhóm cảnh báo hỗ trợ lái như lệch làn hoặc khoảng cách xe trước, độ chính xác phụ thuộc camera, góc lắp, ánh sáng và từng model.
+<h3>3. GPS, cảnh báo tốc độ và ADAS khác nhau thế nào?</h3>
+<div class="tech-compare-3col">
+<div class="tech-compare-col">
+<b>GPS</b>
+<p>Ghi tốc độ và tọa độ lên video khi lái xe.</p>
 </div>
-<div class="tech-detail-grid">
+<div class="tech-compare-col">
+<b>Cảnh báo tốc độ / biển báo</b>
+<p>Phụ thuộc phần mềm, dữ liệu và khu vực hỗ trợ.</p>
+</div>
+<div class="tech-compare-col">
+<b>ADAS</b>
+<p>Cảnh báo hỗ trợ lái như lệch làn, nguy cơ va chạm; tùy model.</p>
+</div>
+</div>
+<div class="tech-answer-first">
+<b>Điểm cần biết:</b> GPS hỗ trợ ghi vị trí và tốc độ. Cảnh báo giới hạn tốc độ hoặc biển báo phụ thuộc phần mềm, dữ liệu và khu vực hỗ trợ. ADAS là nhóm hỗ trợ lái như cảnh báo lệch làn hoặc nguy cơ va chạm, tùy model. Camera có GPS không mặc nhiên có đầy đủ các cảnh báo này.
+</div>
+<div class="tech-detail-grid three-col">
 <div class="tech-detail-card">
 <h4>GPS ghi tốc độ &amp; Tọa độ</h4>
 <p>Hiển thị km/h thực tế và vị trí bản đồ khi xem lại clip. Hữu ích khi cần đối chiếu tốc độ trong trường hợp có tranh chấp giao thông.</p>
 </div>
 <div class="tech-detail-card">
-<h4>Cảnh báo biển báo &amp; ADAS</h4>
-<p>Phát âm thanh/giọng nói tiếng Việt nhắc nhở sắp đến đoạn giới hạn tốc độ, camera phạt nguội, hoặc cảnh báo lệch làn, cảnh báo va chạm xe phía trước.</p>
+<h4>Cảnh báo tốc độ &amp; biển báo</h4>
+<p>Phát âm thanh/giọng nói tiếng Việt nhắc nhở sắp đến đoạn giới hạn tốc độ hoặc camera phạt nguội. Phụ thuộc phần mềm và dữ liệu giao thông được cập nhật theo hãng.</p>
+</div>
+<div class="tech-detail-card">
+<h4>ADAS (hỗ trợ lái)</h4>
+<p>Cảnh báo lệch làn hoặc nguy cơ va chạm xe phía trước, tùy model. Độ chính xác phụ thuộc camera, góc lắp và điều kiện ánh sáng.</p>
 </div>
 </div>
 <div class="tech-action-note">
