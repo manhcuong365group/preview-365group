@@ -525,19 +525,29 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .trust-badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
 .trust-badges div{display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:500;color:#444}
 .trust-badges svg{width:16px;height:16px;color:var(--red);flex:none}
-.local-list-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:14px}
-.local-list-head h3{font-size:16px;margin:0}
-.local-list-head a{font-size:12px;font-weight:600;color:var(--red);white-space:nowrap}
-.loc-photo{position:relative;margin:-13px -13px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:120px}
+.local-list-eyebrow{width:34px;height:4px;background:var(--red);border-radius:2px;margin-bottom:10px}
+.local-list-head{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;margin-bottom:6px}
+.local-list-head h3{font-size:28px;font-weight:700;margin:0;color:var(--ink)}
+.local-list-head a{font-size:13px;font-weight:600;color:var(--red);white-space:nowrap}
+.local-list-sub{margin:4px 0 18px;color:var(--muted);font-size:14px}
+.loc-photo{position:relative;margin:-13px -13px 10px;border-radius:14px 14px 0 0;overflow:hidden;height:190px}
 .loc-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.loc-badge{position:absolute;top:8px;left:8px;background:var(--red);color:#fff;font-size:9.5px;font-weight:600;letter-spacing:.4px;padding:4px 8px;border-radius:6px}
+.loc-badge{position:absolute;top:10px;left:10px;display:inline-flex;align-items:center;gap:5px;background:var(--red);color:#fff;font-size:11px;font-weight:700;letter-spacing:.3px;padding:6px 10px;border-radius:999px}
+.loc-badge svg{width:12px;height:12px}
 .location p svg,.location .loc-hours svg,.location .loc-phone svg{width:13px;height:13px;margin-right:5px;vertical-align:-2px;color:var(--muted);flex:none}
 .loc-status{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:500;margin-bottom:8px}
 .loc-status::before{content:'';width:7px;height:7px;border-radius:50%;background:#bbb}
 .loc-status.open{color:#1a8a4a}
 .loc-status.open::before{background:#1a8a4a}
 .loc-status.closed{color:#999}
-.loc-actions{display:flex;gap:14px}
+.loc-actions{display:flex;gap:8px;margin-top:12px}
+.location a{min-height:0}
+.loc-actions a{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:11px 10px;border-radius:9px;font-size:13px;font-weight:600;white-space:nowrap}
+.loc-actions a:first-child{background:var(--red);color:#fff}
+.loc-actions a:first-child:hover{background:#c81e26}
+.loc-actions a:last-child{border:1px solid var(--line);color:var(--ink)}
+.loc-actions a:last-child:hover{border-color:var(--red);color:var(--red)}
+.loc-actions a svg{width:14px;height:14px;flex:none}
 .location .loc-hours,.location .loc-phone{display:flex;align-items:center;gap:4px;margin:5px 0 0;color:#666;font-size:11px;line-height:1.4}
 .location .loc-status{display:none}
 .location .loc-hours{display:none}
@@ -694,6 +704,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .review-grid{grid-template-columns:1fr}
   .benefit-grid{grid-auto-columns:75%!important}
   .locations{grid-template-rows:1fr!important;grid-auto-columns:80%!important}
+  .local-list-head{flex-direction:column;align-items:flex-start;gap:6px}
+  .local-list-head h3{font-size:21px}
   .term-grid{grid-auto-columns:82%!important}
   .term{scroll-snap-align:start;min-width:0}
   .decision,.branch-proof,.benefit,.location{scroll-snap-align:start;min-width:0}
@@ -1744,15 +1756,17 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </article>
 </div>
 <div>
+<span class="local-list-eyebrow"></span>
 <div class="local-list-head">
 <h3>Một số chi nhánh nổi bật</h3>
 <a href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem tất cả chi nhánh →</a>
 </div>
+<p class="local-list-sub">Hệ thống Auto365 luôn sẵn sàng tư vấn và lắp đặt camera hành trình chính hãng trên toàn quốc.</p>
 <div class="locations" id="branchResults">
 <article class="location" data-city="tp.hcm ho chi minh hcm thu duc tru so chinh hiệp bình" data-lat="10.840778" data-lng="106.7133792" data-hours="08:30-18:30" data-days="mon-fri">
 <div class="loc-photo">
 <img src="https://auto365.vn/uploads/images/branch/auto365vn-1jpg-img_69e58319aee2f5.16637466_.jpg.webp" alt="Auto365 Trụ sở chính TP.HCM" loading="lazy" width="1080" height="1080" decoding="async">
-<span class="loc-badge">TRỤ SỞ CHÍNH</span>
+<span class="loc-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>TRỤ SỞ CHÍNH</span>
 </div>
 <b>Auto365 Trụ sở chính · TP.HCM</b>
 <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM</p>
@@ -1761,7 +1775,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <span class="loc-status" data-status></span>
 <div class="loc-actions">
 <a href="https://auto365.vn/thu-duc" target="_blank" rel="noopener">Xem chi tiết →</a>
-<a href="https://www.google.com/maps?q=10.840778,106.7133792" target="_blank" rel="noopener noreferrer">Bản đồ →</a>
+<a href="https://www.google.com/maps?q=10.840778,106.7133792" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg>Bản đồ →</a>
 </div>
 </article>
 <article class="location" data-city="da nang đà nẵng hoa cuong" data-lat="16.030662" data-lng="108.223858" data-hours="07:45-18:00" data-days="all">
@@ -1775,7 +1789,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <span class="loc-status" data-status></span>
 <div class="loc-actions">
 <a href="https://auto365.vn/da-nang" target="_blank" rel="noopener">Xem chi tiết →</a>
-<a href="https://www.google.com/maps?q=16.030662,108.223858" target="_blank" rel="noopener noreferrer">Bản đồ →</a>
+<a href="https://www.google.com/maps?q=16.030662,108.223858" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg>Bản đồ →</a>
 </div>
 </article>
 <article class="location" data-city="tan phu tân phú ho chi minh hồ chí minh tay thanh tây thạnh" data-lat="10.807546" data-lng="106.621759" data-hours="08:00-18:30" data-days="mon-sun">
@@ -1789,7 +1803,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <span class="loc-status" data-status></span>
 <div class="loc-actions">
 <a href="https://auto365.vn/quan-tan-phu" target="_blank" rel="noopener">Xem chi tiết →</a>
-<a href="https://www.google.com/maps?q=10.807546,106.621759" target="_blank" rel="noopener noreferrer">Bản đồ →</a>
+<a href="https://www.google.com/maps?q=10.807546,106.621759" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg>Bản đồ →</a>
 </div>
 </article>
 </div>
