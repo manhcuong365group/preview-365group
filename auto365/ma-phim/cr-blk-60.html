@@ -106,6 +106,8 @@
     .section-title{font-family:var(--display);font-size:clamp(23px,2.9vw,33px);font-weight:600;line-height:1.2;letter-spacing:-.02em;margin:0 0 10px;color:var(--ink)}
     .dark .section-title{color:#fff}
     .section-desc{color:var(--muted);max-width:none;margin:0}
+    .section-link{margin-top:16px;font-size:14px}
+    .inline-link{color:var(--red);font-weight:700;text-decoration:underline;text-underline-offset:3px}
     .dark .section-desc{color:#adb4bf}
     .pos:hover,.compare:hover,.package:hover,.tech:hover,.why:hover,.right:hover{transform:translateY(-2px);border-color:#d6aaa3;box-shadow:0 10px 24px rgba(35,25,20,.06)}
     .position-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
@@ -412,80 +414,193 @@
 
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"WebPage",
-        "@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#webpage",
-        "url":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60",
-        "name":"3M CR BLK 60 kính lái sáng: 57% VLT, giá & so sánh 50/40 | Auto365",
-        "description":"3M CR BLK 60 dành cho người ưu tiên kính lái sáng: VLT 57%, TSER 54% trên Auto 75. Xem 60 khác 50/40 ở đâu, khi nào nên chọn và cách đọc đúng IRR/IRER.",
-        "dateModified":"2026-09-23",
-        "author":{"@type":"Organization","@id":"https://auto365.vn/#organization","name":"Auto365"},
-        "reviewedBy":{"@type":"Person","@id":"https://auto365.vn/dang-minh-hoang","name":"Đặng Minh Hoàng","jobTitle":"Giám đốc điều hành 3M Pro Shop & 3M Training Center"},
-        "mainEntity":{"@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#product"},
-        "breadcrumb":{"@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#breadcrumb"}
-      },
-      {
-        "@type":"Product",
-        "@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#product",
-        "name":"3M Crystalline CR BLK 60",
-        "brand":{"@type":"Brand","name":"3M"},
-        "category":"Phim cách nhiệt ô tô",
-        "image":"https://auto365.vn/uploads/images/products/auto365vn-cr-blk-60jpeg-img_6a2fb441abdd50.08029257_auto365vn-1781511233-0.jpeg.webp",
-        "description":"Mã phim 3M Crystalline CR BLK 60 ưu tiên độ sáng cho kính lái, với VLT tham chiếu 57% trên kính Auto 75.",
-        "isVariantOf":{
-          "@type":"ProductGroup",
-          "@id":"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk#productgroup",
-          "name":"3M Crystalline CR BLK"
+        "@type": "WebPage",
+        "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#webpage",
+        "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60",
+        "name": "3M CR BLK 60 kính lái sáng: 57% VLT, giá & so sánh 50/40 | Auto365",
+        "description": "3M CR BLK 60 dành cho người ưu tiên kính lái sáng: VLT 57%, TSER 54% trên Auto 75. Xem 60 khác 50/40 ở đâu, khi nào nên chọn và cách đọc đúng IRR/IRER.",
+        "dateModified": "2026-09-23",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://auto365.vn/#organization",
+          "name": "Auto365"
         },
-        "additionalProperty":[
-          {"@type":"PropertyValue","name":"VLT trên Auto 75 Glass","value":"57%"},
-          {"@type":"PropertyValue","name":"TSER trên Auto 75 Glass","value":"54%"},
-          {"@type":"PropertyValue","name":"IRER trên Auto 75 Glass","value":"67%"},
-          {"@type":"PropertyValue","name":"IRR - film with liner","value":"97%"},
-          {"@type":"PropertyValue","name":"Giảm chói trên Auto 75 Glass","value":"22%"},
-          {"@type":"PropertyValue","name":"Điều kiện tham chiếu","value":"Kính ô tô xanh 6 mm, VLT nền 73%; dữ liệu ước tính, ANSI/NFRC 200, 3M TDS Revision F 08/2025"}
-        ],
-        "offers":{
-          "@type":"Offer",
-          "name":"Dán 3M Crystalline CR BLK 60 kính lái",
-          "priceCurrency":"VND",
-          "price":"5700000",
-          "url":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60",
-          "availability":"https://schema.org/InStock",
-          "seller":{"@id":"https://auto365.vn/#organization"}
+        "reviewedBy": {
+          "@type": "Person",
+          "@id": "https://auto365.vn/dang-minh-hoang",
+          "name": "Đặng Minh Hoàng",
+          "jobTitle": "Giám đốc điều hành 3M Pro Shop & 3M Training Center"
+        },
+        "mainEntity": {
+          "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#product"
+        },
+        "breadcrumb": {
+          "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#breadcrumb"
         }
       },
       {
-        "@type":"Service",
-        "@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#service",
-        "name":"Dịch vụ tư vấn và dán 3M Crystalline CR BLK 60",
-        "serviceType":"Tư vấn cấu hình và dán phim cách nhiệt ô tô",
-        "provider":{"@type":"Organization","@id":"https://auto365.vn/#organization","name":"Auto365"},
-        "areaServed":{"@type":"Country","name":"Việt Nam"},
-        "isRelatedTo":{"@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#product"}
+        "@type": "Product",
+        "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#product",
+        "name": "3M Crystalline CR BLK 60",
+        "brand": {
+          "@type": "Brand",
+          "name": "3M"
+        },
+        "category": "Phim cách nhiệt ô tô",
+        "image": "https://auto365.vn/uploads/images/products/auto365vn-cr-blk-60jpeg-img_6a2fb441abdd50.08029257_auto365vn-1781511233-0.jpeg.webp",
+        "description": "Mã phim 3M Crystalline CR BLK 60 ưu tiên độ sáng cho kính lái, với VLT tham chiếu 57% trên kính Auto 75.",
+        "isVariantOf": {
+          "@type": "ProductGroup",
+          "@id": "https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk#productgroup",
+          "name": "3M Crystalline CR BLK"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "VLT trên Auto 75 Glass",
+            "value": "57%"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "TSER trên Auto 75 Glass",
+            "value": "54%"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "IRER trên Auto 75 Glass",
+            "value": "67%"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "IRR - film with liner",
+            "value": "97%"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Giảm chói trên Auto 75 Glass",
+            "value": "22%"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Điều kiện tham chiếu",
+            "value": "Kính ô tô xanh 6 mm, VLT nền 73%; dữ liệu ước tính, ANSI/NFRC 200, 3M TDS Revision F 08/2025"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "name": "Dán 3M Crystalline CR BLK 60 kính lái",
+          "priceCurrency": "VND",
+          "price": "5700000",
+          "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60",
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@id": "https://auto365.vn/#organization"
+          }
+        }
       },
       {
-        "@type":"BreadcrumbList",
-        "@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#breadcrumb",
-        "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Trang chủ","item":"https://auto365.vn"},
-          {"@type":"ListItem","position":2,"name":"Phim cách nhiệt 3M","item":"https://auto365.vn/phim-cach-nhiet-o-to-3m"},
-          {"@type":"ListItem","position":3,"name":"3M Crystalline CR BLK","item":"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-          {"@type":"ListItem","position":4,"name":"CR BLK 60","item":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"}
+        "@type": "Service",
+        "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#service",
+        "name": "Dịch vụ tư vấn và dán 3M Crystalline CR BLK 60",
+        "serviceType": "Tư vấn cấu hình và dán phim cách nhiệt ô tô",
+        "provider": {
+          "@type": "Organization",
+          "@id": "https://auto365.vn/#organization",
+          "name": "Auto365"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Việt Nam"
+        },
+        "isRelatedTo": {
+          "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#product"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Trang chủ",
+            "item": "https://auto365.vn"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Phim cách nhiệt 3M",
+            "item": "https://auto365.vn/phim-cach-nhiet-o-to-3m"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "3M Crystalline CR BLK",
+            "item": "https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "CR BLK 60",
+            "item": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"
+          }
         ]
       },
       {
-        "@type":"FAQPage",
-        "@id":"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#faq",
-        "mainEntity":[
-          {"@type":"Question","name":"Đi đêm nhiều có nên ưu tiên CR BLK 60 không?","acceptedAnswer":{"@type":"Answer","text":"Có thể ưu tiên xem CR BLK 60 trước vì VLT tham chiếu 57% trên Auto 75 cao hơn CR BLK 50 và 40. Tuy nhiên cần đo kính nền và xem mẫu từ ghế lái; 57% không phải kết quả cố định trên mọi xe."}},
-          {"@type":"Question","name":"57% VLT của CR BLK 60 nhìn thực tế có sáng không?","acceptedAnswer":{"@type":"Answer","text":"Trong bộ 40/50/60, CR BLK 60 là mã sáng nhất trên Auto 75. Nhưng cảm giác sáng còn phụ thuộc kính nguyên bản, ánh sáng ngoài xe và mắt người lái. Vì vậy nên xem mẫu trực tiếp thay vì suy từ phần trăm VLT."}},
-          {"@type":"Question","name":"CR BLK 60 sáng 57% nhưng TSER 54% có mâu thuẫn không?","acceptedAnswer":{"@type":"Answer","text":"Không. VLT đo ánh sáng nhìn thấy truyền qua, còn TSER phản ánh tổng năng lượng mặt trời bị loại bỏ. Hai chỉ số đo hai khía cạnh khác nhau; CR BLK 60 có thể giữ VLT cao mà vẫn đạt TSER 54% trên Auto 75."}},
-          {"@type":"Question","name":"IRR 97% có nghĩa CR BLK 60 cản 97% tổng nhiệt không?","acceptedAnswer":{"@type":"Answer","text":"Không. IRR đo hồng ngoại trên một dải bước sóng cụ thể; TSER mới là chỉ số phù hợp hơn để nói về tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Không nên thay TSER bằng IRR."}},
-          {"@type":"Question","name":"Khi nào nên bỏ CR BLK 60 để chọn CR BLK 50?","acceptedAnswer":{"@type":"Answer","text":"Nếu bạn đi ban ngày nhiều, muốn kính lái đằm hơn và ưu tiên giảm chói, CR BLK 50 đáng cân nhắc hơn. Trên Auto 75, 50 có VLT 48% và giảm chói 34%, còn 60 là 57% và 22%."}},
-          {"@type":"Question","name":"CR BLK 60 có ảnh hưởng GPS, ETC hoặc điện thoại không?","acceptedAnswer":{"@type":"Answer","text":"3M mô tả dòng Crystalline là phim phi kim, được thiết kế để không gây nhiễu các tín hiệu điện tử phổ biến. Auto365 vẫn nên kiểm tra GPS, ETC/VETC, camera và HUD trên chính chiếc xe sau khi hoàn tất thi công."}}
+        "@type": "FAQPage",
+        "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Đi đêm nhiều có nên ưu tiên CR BLK 60 không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Có thể ưu tiên xem CR BLK 60 trước vì VLT tham chiếu 57% trên Auto 75 cao hơn CR BLK 50 và 40. Tuy nhiên cần đo kính nền và xem mẫu từ ghế lái; “57%” không phải kết quả cố định trên mọi xe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "57% VLT của CR BLK 60 nhìn thực tế có sáng không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Trong bộ 40/50/60, CR BLK 60 là mã sáng nhất trên Auto 75. Nhưng cảm giác “sáng” còn phụ thuộc kính nguyên bản, ánh sáng ngoài xe và mắt người lái. Vì vậy nên xem mẫu trực tiếp thay vì suy từ phần trăm VLT."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "CR BLK 60 sáng 57% nhưng TSER 54% có mâu thuẫn không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Không. VLT đo ánh sáng nhìn thấy truyền qua, còn TSER phản ánh tổng năng lượng mặt trời bị loại bỏ. Hai chỉ số đo hai khía cạnh khác nhau; CR BLK 60 có thể giữ VLT cao mà vẫn đạt TSER 54% trên Auto 75."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "IRR 97% có nghĩa CR BLK 60 cản 97% tổng nhiệt không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Không. IRR 97% được đo trong dải 900–1.000 nm trên phim kèm lớp liner, không có kính, nên không phải tỷ lệ loại bỏ tổng nhiệt. Khi so sánh hiệu suất nhiệt của hệ phim–kính, hãy đọc TSER và IRER theo đúng điều kiện kính tham chiếu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Khi nào nên bỏ CR BLK 60 để chọn CR BLK 50?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nếu bạn đi ban ngày nhiều, muốn kính lái đằm hơn và ưu tiên giảm chói, CR BLK 50 đáng cân nhắc hơn. Trên Auto 75, 50 có VLT 48% và giảm chói 34%, còn 60 là 57% và 22%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "CR BLK 60 có ảnh hưởng GPS, ETC hoặc điện thoại không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "3M mô tả dòng Crystalline là phim phi kim, được thiết kế để không gây nhiễu các tín hiệu điện tử phổ biến. Auto365 vẫn nên kiểm tra GPS, ETC/VETC, camera và HUD trên chính chiếc xe sau khi hoàn tất thi công."
+            }
+          }
         ]
       }
     ]
@@ -540,16 +655,16 @@
           </div>
 
           <div class="hero-media">
-            <div class="hero-fit-card" id="fit-title" aria-label="Gợi ý mã phim theo vị trí kính">
-              <h3>Gợi ý mã phim theo vị trí kính</h3>
+            <div class="hero-fit-card" id="fit-title" aria-label="CR BLK 60 có phù hợp với bạn?">
+              <h3>CR BLK 60 có phù hợp với bạn?</h3>
               <form class="fit-form" data-fit-form>
                 <div class="field-grid">
                   <div class="field"><label for="priority">Ưu tiên sử dụng</label><select id="priority" name="priority"><option value="visibility">Ưu tiên quan sát</option><option value="balance">Cân bằng sáng và giảm chói</option><option value="privacy">Ưu tiên riêng tư</option></select></div>
                   <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
                   <div class="field field-wide"><label for="night">Tần suất đi đêm</label><select id="night" name="night"><option value="often">Thường xuyên</option><option value="sometimes">Thỉnh thoảng</option><option value="rare">Hiếm khi</option></select></div>
                 </div>
-                <button class="fit-submit" type="submit">Đề xuất mã kính</button>
-                <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Đề xuất mã kính" để xem gợi ý</strong><p>3 lựa chọn ở trên đã có sẵn mặc định — đổi lại theo nhu cầu rồi bấm nút để nhận mã CR BLK phù hợp.</p></div>
+                <button class="fit-submit" type="submit">Kiểm tra CR BLK 60</button>
+                <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Kiểm tra CR BLK 60" để xem gợi ý</strong><p>3 lựa chọn ở trên đã có sẵn mặc định — đổi lại theo nhu cầu rồi bấm nút để biết CR BLK 60 phù hợp hay nên cân nhắc 50/40.</p></div>
               </form>
             </div>
             <p class="metric-ribbon-label">Thông số CR BLK 60 · Auto 75 Glass</p>
@@ -598,6 +713,7 @@
             <p>Ưu tiên quan sát hơn riêng tư; cần cân nhắc camera, kính nền và nhu cầu chống nhìn từ ngoài.</p>
           </article>
         </div>
+        <p class="section-desc section-link">Muốn phối phim cho toàn bộ xe? Xem <a class="inline-link" href="https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh">cách chọn mã CR BLK theo từng vị trí kính</a> và <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">cấu hình của dòng 3M Crystalline CR BLK</a>.</p>
       </div>
     </section>
 
@@ -639,7 +755,7 @@
           <div class="spec-explain">
             <div class="explain"><b>TSER</b>Tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Dùng chỉ số này khi giải thích hiệu suất nhiệt tổng thể.</div>
             <div class="explain"><b>IRER</b>Năng lượng hồng ngoại bị loại bỏ trong dải 780–2.500 nm, có tính phần năng lượng hấp thụ có thể tái bức xạ.</div>
-            <div class="explain"><b>IRR không phải TSER</b>IRR đo dải hẹp hơn 900–1.000 nm; không quy đổi IRR 97% thành “cản 97% tổng nhiệt”.</div>
+            <div class="explain"><b>IRR không phải TSER</b>IRR 97% được đo trong dải 900–1.000 nm trên phim kèm lớp liner, không có kính. Đây không phải tỷ lệ loại bỏ tổng nhiệt; khi so sánh hệ phim–kính hãy đọc TSER và IRER theo đúng điều kiện kính tham chiếu.</div>
           </div>
 
           <div class="source-note"><strong>Cách dùng bảng này:</strong> dùng các con số để so sánh các mã trên <em>cùng điều kiện kính</em>, không dùng để hứa hẹn VLT cuối cùng trên một chiếc xe cụ thể. Kính nguyên bản, màu kính, góc kính và điều kiện đo đều có thể làm kết quả thay đổi.</div>
@@ -783,7 +899,7 @@
           </details>
           <details>
             <summary>IRR 97% có nghĩa CR BLK 60 cản 97% tổng nhiệt không?</summary>
-            <p>Không. IRR đo hồng ngoại trên một dải bước sóng cụ thể; TSER mới là chỉ số phù hợp hơn để nói về tổng năng lượng mặt trời bị loại bỏ bởi hệ phim - kính. Không nên thay TSER bằng IRR.</p>
+            <p>Không. IRR 97% được đo trong dải 900–1.000 nm trên phim kèm lớp liner, không có kính, nên không phải tỷ lệ loại bỏ tổng nhiệt. Khi so sánh hiệu suất nhiệt của hệ phim–kính, hãy đọc TSER và IRER theo đúng điều kiện kính tham chiếu.</p>
           </details>
           <details>
             <summary>Khi nào nên bỏ CR BLK 60 để chọn CR BLK 50?</summary>
@@ -912,7 +1028,7 @@
           else{rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"So giữa riêng tư và độ sáng cabin: 40 sáng hơn một chút cho tầm nhìn phía sau, 35 kín hơn; quyết định theo kính nền và camera/gương."};}
         }
         var heading=rec.advisory?rec.title:"Mã nên xem trước: "+rec.code;
-        result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền và kiểm tra xe thực tế.</p>";
+        result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền. Muốn phối cho toàn xe? <a class=\"inline-link\" href=\"https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh\">Xem cách chọn mã CR BLK theo từng vị trí kính</a>.</p>";
       });
     })();
     (function(){
