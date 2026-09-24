@@ -903,13 +903,13 @@
           }
           else{rec={code:"CR BLK 60",reason:"Ưu tiên quan sát: CR BLK 60 với VLT 57% trên Auto 75 là mã nên xem trước; vẫn đo kính nền và xem mẫu từ ghế lái."};}
         }else if(position==="front"){
-          if(priority==="privacy"){rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Kính sườn trước muốn kín hơn: CR BLK 40 giữ được quan sát gương hông tốt hơn 35; xem cả hai sau khi đo kính nền."};}
+          if(priority==="privacy"){rec={code:"CR BLK 35",reason:"Kính sườn trước muốn kín hơn: CR BLK 35 giữ được riêng tư tốt; xem sau khi đo kính nền."};}
           else if(priority==="visibility"||night==="often"){rec={code:"CR BLK 60 hoặc CR BLK 50",reason:"Kính sườn trước ảnh hưởng quan sát gương và bên hông; bắt đầu với 60 nếu muốn sáng, so với 50 nếu cần dịu hơn."};}
-          else{rec={code:"CR BLK 50 hoặc CR BLK 40",reason:"Cân bằng độ sáng và giảm chói ở hàng kính trước; ít đi đêm thì đặt thêm 40 cạnh 50 để so."};}
+          else{rec={code:"CR BLK 50 hoặc CR BLK 35",reason:"Cân bằng độ sáng và giảm chói ở hàng kính trước; ít đi đêm thì đặt thêm 35 cạnh 50 để so."};}
         }else if(position==="rear"||position==="back"){
           if(priority==="privacy"){rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"Kính sau/kính lưng thường ưu tiên riêng tư; CR BLK 60 quá sáng cho mục tiêu này. Xem 35/15 sau khi đo kính nền và kiểm tra camera/gương."};}
           else if(priority==="visibility"||night==="often"){rec={code:"CR BLK 50 hoặc CR BLK 60",reason:"Nếu cần quan sát khoang sau rõ, bắt đầu với mã sáng rồi so với mã tối hơn khi cần riêng tư."};}
-          else{rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"So giữa riêng tư và độ sáng cabin: 40 sáng hơn một chút cho tầm nhìn phía sau, 35 kín hơn; quyết định theo kính nền và camera/gương."};}
+          else{rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"So giữa riêng tư và độ sáng cabin: dùng 35 cho hài hòa hoặc 15 để kín hơn; quyết định theo kính nền."};}
         }
         var heading=rec.advisory?rec.title:"Mã nên xem trước: "+rec.code;
         result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền và kiểm tra xe thực tế.</p>";
