@@ -3474,7 +3474,7 @@ document.querySelector('#hubFind').addEventListener('click', () => {
   const moreBtn = document.getElementById('caseShowMore');
   if (!grid || !tabs || !moreBtn) return;
   const cards = Array.from(grid.querySelectorAll('.v2-real-case'));
-  const COLLAPSE_LIMIT = 8;
+  const COLLAPSE_LIMIT = 12;
   function updateCollapsible() {
     const visible = cards.filter(c => !c.classList.contains('case-hidden'));
     cards.forEach(c => c.classList.remove('case-collapsible'));
