@@ -455,7 +455,7 @@
     .mini-pill { border: 1px solid var(--line); background: #fff; border-radius: var(--radius-pill); padding: 6px 13px; font-size: 13px; font-weight: 700; cursor: pointer; min-height: 44px; display: inline-flex; align-items: center; }
     .mini-pill.active, .mini-pill:hover { background: var(--dark); color: #fff; border-color: var(--dark); }
 
-    .shop-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .shop-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
     .shop-card { background: #fff; border: 1px solid var(--line); border-radius: var(--radius-md); box-shadow: none; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
     .shop-photo { display: block; aspect-ratio: 1/1; background: #fff; border-bottom: 1px solid var(--line); }
     .shop-photo img { width: 100%; height: 100%; object-fit: contain; padding: 12px; }
@@ -963,8 +963,8 @@
        ========================================================================== */
     @media (min-width: 1021px) {
       .mobile-nav { display: none !important; }
-      .shop-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
-      .shop-grid.collapsed .shop-card:nth-child(n+4) { display: none; }
+      .shop-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+      .shop-grid.collapsed .shop-card:nth-child(n+9) { display: none; }
       .filter-panel { top: 90px; }
     }
     @media (max-width: 1020px) {
