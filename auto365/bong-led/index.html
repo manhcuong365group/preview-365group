@@ -3084,96 +3084,72 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
 </section><section class="section" id="he-thong-auto365" aria-labelledby="he-thong-auto365-title"><div class="wrap">
   <div class="section-title">
     <div>
-      
       <h2 id="he-thong-auto365-title">Tìm chi nhánh Auto365 phù hợp với khu vực của bạn</h2>
     </div>
   </div>
-<section class="branch-grid" aria-label="Auto365 Trụ Sở Chính và hệ thống chi nhánh">
-  <article class="card left-card">
-    <div class="left-map-bg" aria-hidden="true">
-      <svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice">
-        <defs>
-          <linearGradient id="mapbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"></stop><stop offset="1" stop-color="#edf5fa"></stop></linearGradient>
-          <filter id="pinshadow" x="-50%" y="-50%" width="200%" height="200%"><fedropshadow dx="0" dy="8" stdDeviation="9" flood-color="#ef2326" flood-opacity=".22"></fedropshadow></filter>
-        </defs>
-        <rect width="560" height="420" fill="url(#mapbg)"></rect>
-        <path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"></path>
-        <path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"></path>
-        <path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"></path>
-        <path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"></path>
-        <path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"></path>
-        <path d="M55 244c66-7 103-25 150-31 52-6 113 19 173 14 52-4 89-24 144-47" fill="none" stroke="#d9dde2" stroke-width="5" stroke-linecap="round"></path>
-        <path d="M40 115c54 17 97 12 145-5 57-20 104-14 151 3 59 21 113 17 180-6" fill="none" stroke="#e2e6ea" stroke-width="5" stroke-linecap="round"></path>
-        <rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"></rect>
-        <path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#ef2326" filter="url(#pinshadow)"></path>
-        <circle cx="363" cy="113" r="16" fill="#fff"></circle>
-        <path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"></path><circle cx="464" cy="85" r="7" fill="#fff"></circle>
-        <path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"></path><circle cx="250" cy="135" r="7" fill="#fff"></circle>
-      </svg>
-    </div>
-    <div class="card-inner">
-      <div class="left-content">
-        
-        <h2 class="headline">Auto365.vn <span class="red">- Trụ Sở Chính</span></h2>
-        <p class="desc">Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p>
+  <style>
+    .hq2-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .hq2-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px}
+    .hq2-head{display:flex;align-items:center;gap:12px;margin-bottom:4px}
+    .hq2-icon{width:40px;height:40px;border-radius:10px;background:#fdecec;color:#e31b2d;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .hq2-icon svg{width:20px;height:20px}
+    .hq2-title{font-size:17px;font-weight:700;color:#17191d;margin:0}
+    .hq2-title .red{color:#e31b2d}
+    .hq2-sub{font-size:13.5px;color:#657487;margin:4px 0 14px}
+    .hq2-facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:2px}
+    .hq2-fact{display:flex;align-items:flex-start;gap:9px;padding:12px 10px 12px 0;border-bottom:1px solid var(--line)}
+    .hq2-fact:nth-child(odd){border-right:1px solid var(--line);padding-left:0}
+    .hq2-fact-icon{width:26px;height:26px;border-radius:7px;background:#fdecec;color:#e31b2d;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+    .hq2-fact-icon svg{width:14px;height:14px}
+    .hq2-fact-label{display:block;font-size:11.5px;color:#8a8d93;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+    .hq2-fact-value{display:block;font-size:13.5px;color:#2d3440;font-weight:600}
+    .hq2-actions{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+    .hq2-btn{flex:1;min-width:110px;display:flex;align-items:center;justify-content:center;gap:6px;border-radius:10px;padding:11px 10px;font-size:13.5px;font-weight:700;border:1px solid var(--line);white-space:nowrap}
+    .hq2-btn svg{width:15px;height:15px}
+    .hq2-btn.primary{background:#e31b2d;border-color:#e31b2d;color:#fff}
+    .hq2-btn.zalo{color:#0068ff;border-color:#c7ddff}
+    .hq2-btn.map{color:#e31b2d;border-color:#f6c9cd}
+    .hq2-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}
+    .hq2-stat{background:#f7f8fa;border-radius:12px;padding:14px 10px;text-align:center}
+    .hq2-stat-idx{font-size:12px;font-weight:800;color:#c7ccd4;display:block}
+    .hq2-stat-icon{margin:4px auto 6px;width:26px;height:26px;color:#e31b2d}
+    .hq2-stat-name{display:block;font-size:11px;font-weight:800;letter-spacing:.03em;color:#657487}
+    .hq2-stat-count{display:block;font-size:19px;font-weight:800;margin-top:2px}
+    .hq2-stat.mien-bac .hq2-stat-count{color:#e31b2d}
+    .hq2-stat.mien-trung .hq2-stat-count{color:#3156c7}
+    .hq2-stat.mien-nam .hq2-stat-count{color:#18a058}
+    .hq2-all{display:flex;align-items:center;justify-content:center;gap:8px;background:#f7f8fa;border-radius:10px;padding:13px;font-weight:700;font-size:14px;color:#17191d}
+    .hq2-all svg{width:16px;height:16px}
+    @media (max-width:680px){.hq2-grid{grid-template-columns:1fr}.hq2-facts{grid-template-columns:1fr}.hq2-fact:nth-child(odd){border-right:0}}
+  </style>
+  <div class="hq2-grid">
+    <div class="hq2-card">
+      <div class="hq2-head"><span class="hq2-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-building"></use></svg></span><h3 class="hq2-title">Auto365.vn · <span class="red">Trụ sở chính</span></h3></div>
+      <p class="hq2-sub">4/4/1/7 Đường số 3, P. Hiệp Bình, TP. Hồ Chí Minh</p>
+      <div class="hq2-facts">
+        <div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></span><span><span class="hq2-fact-label">Giờ làm việc</span><span class="hq2-fact-value">8:30 – 18:30</span></span></div>
+        <div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-building"></use></svg></span><span><span class="hq2-fact-label">Trụ sở</span><span class="hq2-fact-value">Hiệp Bình, TP.HCM</span></span></div>
+        <div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24"><use href="#icon-shield-check"></use></svg></span><span><span class="hq2-fact-label">Bảo hành</span><span class="hq2-fact-value">Theo từng sản phẩm</span></span></div>
+        <div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24"><use href="#i-chat"></use></svg></span><span><span class="hq2-fact-label">Tư vấn</span><span class="hq2-fact-value">Hotline, Zalo</span></span></div>
       </div>
-      
-      <div class="button-row">
-        <a class="btn btn-primary" href="tel:0365365911"><svg viewBox="0 0 24 24"><use href="#i-phone"></use></svg>Gọi 0365 365 911</a>
-        <a class="btn btn-zalo" href="https://zalo.me/0365365911" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-zalo"></use></svg>Zalo tư vấn</a>
-        <a class="btn btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-map"></use></svg>Google Maps</a>
-      </div>
-      <div class="fact-row">
-        <div class="fact-item"><span class="fact-icon"><svg viewBox="0 0 24 24"><use href="#i-chat"></use></svg></span><span><span class="fact-title">Tư vấn nhanh</span><span class="fact-text">Qua hotline hoặc Zalo</span></span></div>
-        <div class="fact-item"><span class="fact-icon"><svg viewBox="0 0 24 24"><use href="#i-building"></use></svg></span><span><span class="fact-title">Trụ Sở Chính</span><span class="fact-text">Phường Hiệp Bình, TP.HCM</span></span></div>
-        <div class="fact-item"><span class="fact-icon"><svg viewBox="0 0 24 24"><use href="#i-map"></use></svg></span><span><span class="fact-title">Chỉ đường</span><span class="fact-text">Mở trực tiếp Google Maps</span></span></div>
-        <div class="fact-item"><span class="fact-icon"><svg viewBox="0 0 24 24"><use href="#i-phone"></use></svg></span><span><span class="fact-title">Hotline</span><span class="fact-text">0365 365 911</span></span></div>
-      </div>
-    </div>
-  </article>
-
-  <article class="card right-card">
-    <div class="card-inner">
-      <div class="nr-panel nr-branch-coverage">
-        <p class="nr-eyebrow nr-eyebrow--rule">PHỦ SÓNG TOÀN QUỐC</p>
-        <h3 class="nr-section-title nr-branch-scale">
-  <span class="nr-branch-scale-hl">Hơn 90 chi nhánh</span> · 34 tỉnh thành
-</h3>
-
-        <span class="nr-branch-vn" aria-hidden="true">
-          <span class="nr-branch-vn-note">Auto365 có mặt<br>khắp Việt Nam</span>
-          <svg viewBox="0 0 44 100"><use href="#il-vn"></use></svg>
-        </span>
-
-        <div class="nr-branch-regions">
-          <a class="nr-branch-region nr-branch-region--1" href="https://auto365.vn/chi-nhanh?mien=bac">
-            <span class="nr-branch-region-index">01</span>
-            <svg class="nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#il-khue-van-cac"></use></svg>
-            <span class="nr-branch-region-name">MIỀN BẮC</span>
-            <span class="nr-branch-region-count">41 điểm</span>
-          </a>
-          <a class="nr-branch-region nr-branch-region--2" href="https://auto365.vn/chi-nhanh?mien=trung">
-            <span class="nr-branch-region-index">02</span>
-            <svg class="nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#il-cau"></use></svg>
-            <span class="nr-branch-region-name">MIỀN TRUNG</span>
-            <span class="nr-branch-region-count">26 điểm</span>
-          </a>
-          <a class="nr-branch-region nr-branch-region--3" href="https://auto365.vn/chi-nhanh?mien=nam">
-            <span class="nr-branch-region-index">03</span>
-            <svg class="nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#il-cao-oc"></use></svg>
-            <span class="nr-branch-region-name">MIỀN NAM</span>
-            <span class="nr-branch-region-count">24 điểm</span>
-          </a>
-        </div>
-
-        <a class="nr-btn nr-branch-all" href="https://auto365.vn/chi-nhanh">
-          Xem toàn bộ hệ thống Auto365
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="nr-svg" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
-        </a>
+      <div class="hq2-actions">
+        <a class="hq2-btn primary" href="tel:0365365911"><svg viewBox="0 0 24 24"><use href="#i-phone"></use></svg>Gọi 0365 365 911</a>
+        <a class="hq2-btn zalo" href="https://zalo.me/0365365911" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-zalo"></use></svg>Zalo tư vấn</a>
+        <a class="hq2-btn map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-map"></use></svg>Google Maps</a>
       </div>
     </div>
-  </article>
-</section><section class="section" id="thuong-hieu" aria-labelledby="thuong-hieu-title">
+    <div class="hq2-card">
+      <div class="hq2-head"><span class="hq2-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5L11 16M16 7.5L13 16"></path></svg></span><h3 class="hq2-title"><span class="red">91 chi nhánh</span> · 33 tỉnh thành</h3></div>
+      <p class="hq2-sub">Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam</p>
+      <div class="hq2-stats">
+        <a class="hq2-stat mien-bac" href="https://auto365.vn/chi-nhanh?mien=bac"><span class="hq2-stat-idx">01</span><svg class="hq2-stat-icon" viewBox="0 0 48 48"><use href="#il-khue-van-cac"></use></svg><span class="hq2-stat-name">MIỀN BẮC</span><span class="hq2-stat-count">41 điểm</span></a>
+        <a class="hq2-stat mien-trung" href="https://auto365.vn/chi-nhanh?mien=trung"><span class="hq2-stat-idx">02</span><svg class="hq2-stat-icon" viewBox="0 0 48 48"><use href="#il-cau"></use></svg><span class="hq2-stat-name">MIỀN TRUNG</span><span class="hq2-stat-count">26 điểm</span></a>
+        <a class="hq2-stat mien-nam" href="https://auto365.vn/chi-nhanh?mien=nam"><span class="hq2-stat-idx">03</span><svg class="hq2-stat-icon" viewBox="0 0 48 48"><use href="#il-cao-oc"></use></svg><span class="hq2-stat-name">MIỀN NAM</span><span class="hq2-stat-count">24 điểm</span></a>
+      </div>
+      <a class="hq2-all" href="https://auto365.vn/chi-nhanh">Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+    </div>
+  </div>
+</div></section><section class="section" id="thuong-hieu" aria-labelledby="thuong-hieu-title">
 <div class="wrap">
   <div class="section-title">
     <div>
