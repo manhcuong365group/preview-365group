@@ -137,6 +137,9 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .tech-head h2{font-size:24px;line-height:1.2;margin:0 0 10px}
 .tech-head p{color:#555;font-size:14px;line-height:1.6;margin:0}
 .tech-qa-block{margin-bottom:26px;background:#fff;border:1px solid #e7e4df;border-radius:14px;padding:22px 24px;box-shadow:0 4px 16px rgba(20,20,20,.03)}
+.tech-qa-split{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.tech-qa-media{position:sticky;top:20px}
+.tech-qa-media .tech-qa-infographic{margin:0}
 .tech-qa-block h3{font-size:18px;line-height:1.3;margin:0 0 12px;color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Arial,sans-serif}
 .tech-answer-first{background:#fdf5f5;border-left:4px solid var(--red);border-radius:0 8px 8px 0;padding:13px 16px;margin-bottom:14px;font-size:13.5px;line-height:1.65;color:#333}
 .tech-answer-first b{color:var(--red)}
@@ -695,6 +698,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .tiers-grid{display:grid!important;grid-auto-flow:row!important;grid-template-columns:1fr!important;grid-auto-columns:auto!important;overflow:visible!important;scroll-snap-type:none!important;margin:0!important;padding:0!important}
   .tier-card{scroll-snap-align:none}
   .tech-detail-grid{grid-template-columns:1fr}
+  .tech-qa-split{grid-template-columns:1fr}
+  .tech-qa-media{position:static}
   .tech-detail-grid.three-col{grid-template-columns:1fr}
   .tech-compare-3col{grid-template-columns:1fr}
   .flow-chain{margin:22px -22px 0;padding-left:22px;padding-right:22px}
@@ -2120,8 +2125,10 @@ h1{font-weight:500;letter-spacing:-2.2px}
 </div>
 
 <!-- BLOCK 1: 2K vs 4K -->
-<article class="tech-qa-block">
-<h3>1. 2K vs 4K: Độ phân giải nào thực sự cần thiết khi lái xe tại Việt Nam?</h3><img src="hinh/infographic-2k-vs-4k.png" alt="So sánh camera hành trình 2K và 4K: 2K phù hợp đi phố hằng ngày, tiết kiệm dung lượng; 4K phù hợp đi xa, cao tốc, cần zoom chi tiết và bằng chứng" loading="lazy" width="1672" height="941" decoding="async" class="tech-qa-infographic">
+<article class="tech-qa-block tech-qa-split">
+<div class="tech-qa-media"><img src="hinh/infographic-2k-vs-4k.png" alt="So sánh camera hành trình 2K và 4K: 2K phù hợp đi phố hằng ngày, tiết kiệm dung lượng; 4K phù hợp đi xa, cao tốc, cần zoom chi tiết và bằng chứng" loading="lazy" width="1672" height="941" decoding="async" class="tech-qa-infographic"></div>
+<div class="tech-qa-body">
+<h3>1. 2K vs 4K: Độ phân giải nào thực sự cần thiết khi lái xe tại Việt Nam?</h3>
 <div class="tech-answer-first">
 <b>Điểm cần biết:</b> Chuẩn 2K (1440p) là điểm cân bằng phù hợp cho nhiều nhu cầu đi phố và đi làm hằng ngày, với dung lượng tệp thường nhẹ hơn 4K nếu cùng điều kiện nén và thời lượng. Khả năng đọc rõ biển số phụ thuộc độ phân giải, cảm biến, tốc độ tương đối, ánh sáng, góc quay và khoảng cách thực tế; nên kiểm tra trên đúng model và điều kiện sử dụng của bạn. Chuẩn 4K (2160p) phù hợp hơn khi bạn thường xuyên lái xe trên cao tốc, đi tỉnh hoặc chạy đêm tốc độ cao, cho phép phóng to để xem lại chi tiết hơn ở làn đối diện. Chất lượng 4K thực tế còn phụ thuộc cảm biến, ống kính, thuật toán xử lý, firmware, thẻ nhớ và cấu hình của từng model.
 </div>
@@ -2138,6 +2145,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="tech-action-note">
 <span>Các mẫu tiêu biểu: 70mai A510 (2K), Vietmap TS-2K Lite (2K), 70mai 4K A810 (4K), Vietmap C61 Pro (4K)</span>
 <a href="#catalog" data-jump-feature="4k">Lọc các mẫu 4K tại Auto365 →</a>
+</div>
 </div>
 </article>
 
