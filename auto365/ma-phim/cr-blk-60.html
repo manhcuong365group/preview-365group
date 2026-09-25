@@ -82,13 +82,9 @@
     .hero-offer .btn{white-space:nowrap}    .quick-facts{display:flex;flex-wrap:wrap;gap:9px 16px;color:#b9bec6;font-size:12px;margin-top:12px}
     .quick-facts span{display:inline-flex;align-items:center;gap:8px}
     .quick-facts i{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px rgba(215,25,32,.14)}    .hero-media{display:flex;flex-direction:column;gap:16px}
-    .hero-visual{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:24px;background:#111417;min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;overflow:hidden}
-    .fit-check-hero{box-shadow:0 20px 50px rgba(0,0,0,.35)}
+        .fit-check-hero{box-shadow:0 20px 50px rgba(0,0,0,.35)}
     .fit-check-hero h2{font-size:clamp(18px,2.2vw,21px)}
-    .hero-visual svg{width:64px;height:64px;color:#4b525c}
-    .hero-visual b{font-family:var(--display);font-size:14px;font-weight:600;color:#c8ccd3}
-    .hero-visual span{font-size:12px;color:#6b7480;max-width:280px}
-    .fit-check{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 50px rgba(17,24,39,.06)}
+                .fit-check{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 50px rgba(17,24,39,.06)}
     .fit-check h2{font-family:var(--display);font-size:clamp(21px,2.6vw,26px);font-weight:600;margin:0 0 8px;letter-spacing:-.02em;color:var(--ink)}
     .chip-group{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 14px}
     .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 16px;font-size:13px;font-weight:600;color:#3a4049;min-height:44px;display:inline-flex;align-items:center;cursor:pointer;transition:background .16s,border-color .16s,color .16s}
@@ -120,8 +116,11 @@
     .compare .verdict-line b{color:#26282c}
     .price-disclaimer{margin-top:10px;font-size:11px;color:var(--muted)}
     .package-badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 10px;font-size:10px;font-weight:700;background:var(--soft);color:#4b525c;border:1px solid var(--line);margin-left:8px}
-    .evidence-shell{margin-top:18px;display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;align-items:start}
-    @media(max-width:900px){.evidence-shell{grid-template-columns:1fr}.video-embed{max-height:460px}}
+    .evidence-shell{margin-top:18px;display:grid;grid-template-columns:1fr;gap:16px;align-items:start}
+    .evidence-merge{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+    .evidence-col .section-title{font-size:clamp(20px,2.4vw,26px)}
+    @media(max-width:900px){.evidence-shell{grid-template-columns:1fr}.video-embed{max-height:460px}.evidence-merge{grid-template-columns:1fr;gap:32px}}
+    @media(min-width:1001px){.tech-grid-stack.tech-grid{grid-template-columns:1fr}}
     .case-placeholder{border:1.5px dashed #cfd3d9;border-radius:20px;padding:24px;background:#fbfbfc}
     .case-placeholder .case-tag{display:inline-flex;align-items:center;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:700;background:#fff3d6;color:#8a6200;margin-bottom:12px}
     .case-placeholder h3{font-family:var(--display);font-size:16px;font-weight:600;margin:0 0 8px;color:var(--ink)}
@@ -302,10 +301,7 @@
       .hero-code{font-size:64px}
       .fit-check{padding:20px;border-radius:18px}
       .answer-bullets{grid-template-columns:1fr}
-      .case-fields{grid-template-columns:1fr}
-      .hero-visual{min-height:220px}
-      .hero-visual svg{width:48px;height:48px}
-      .position-grid,.compare-grid,.tech-grid,.why-grid,.rights-grid,.cert-grid,.package-grid,.spec-explain{
+      .case-fields{grid-template-columns:1fr}      .position-grid,.compare-grid,.tech-grid,.why-grid,.rights-grid,.cert-grid,.package-grid,.spec-explain{
         display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;
         scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;
         margin-inline:-11px;padding:2px 11px 8px;scroll-padding-inline:11px
@@ -696,7 +692,7 @@
               <div class="series-name">3M™ Automotive Window Film<strong>Crystalline™ CR BLK</strong></div>
             </div>
             <h1>Phim cách nhiệt 3M CR BLK 60: kính lái sáng 57% VLT và cách chọn so với 50/40</h1>
-            <p class="hero-lead">Nếu ưu tiên số một là <strong>kính lái sáng và dễ quan sát</strong>, CR BLK 60 là mã nên xem trước trong bộ 40/50/60. Trên kính Auto 75 tham chiếu, phim đạt VLT 57% — cao hơn CR BLK 50 — trong khi TSER vẫn ở mức 54%.</p>
+            <p class="hero-lead">CR BLK 60 là một mã cấu hình trong dòng phim cách nhiệt ô tô <strong>3M Crystalline CR BLK</strong>, và là mã <strong>sáng nhất trong nhóm 40/50/60</strong> mà Auto365 đang triển khai — dành cho kính lái ưu tiên độ sáng và dễ quan sát.</p>
             <div class="hero-offer" aria-label="Giá tham khảo">
               <div><span class="hero-offer-label">Giá kính lái tham khảo (đã gồm VAT)</span><div class="hero-price">Từ 5.700.000đ</div><div class="hero-price-note">CR BLK 60 / 50 · theo bảng giá hệ thống 08/2026, cần xác nhận theo cấu hình xe.</div></div>
             </div>
@@ -714,11 +710,6 @@
           </div>
 
           <div class="hero-media">
-            <div class="hero-visual" role="img" aria-label="Ảnh minh họa xe dán CR BLK 60 — cần bổ sung ảnh thật">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13"/><path d="M3 13h18v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4Z"/><circle cx="7.5" cy="17.5" r="1.4"/><circle cx="16.5" cy="17.5" r="1.4"/></svg>
-              <b>Ảnh xe / kính lái CR BLK 60</b>
-              <span>Vị trí dành cho ảnh thật do CMS/đội hình ảnh bổ sung — chưa dùng ảnh minh họa dàn dựng.</span>
-            </div>
             <div class="fit-check fit-check-hero" id="fit-check" aria-label="CR BLK 60 có phù hợp với xe của bạn?">
               <h2>CR BLK 60 có phù hợp với xe của bạn?</h2>
               <form data-fit-form>
@@ -870,29 +861,39 @@
 
     <section class="section" id="xe-thuc-te">
       <div class="container">
-        <h2 class="section-title">CR BLK 60 trên xe thực tế</h2>
-        <p class="section-desc">Video thi công thực tế dưới đây được Auto365.vn - Trụ Sở Chính đăng công khai trên Facebook. Các trường chưa xác nhận trong hồ sơ case vẫn để trống, chờ CMS bổ sung — không suy diễn thêm ngoài nội dung video.</p>
-
-        <div class="evidence-shell">
-          <div class="video-placeholder">
-            <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false" width="100%" height="100%" style="border:0;position:absolute;inset:0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
-            <div class="video-caption"><strong>Porsche Panamera 4 E-Hybrid dán CR BLK 60 tại Auto365</strong>Nguồn: <a class="inline-link" style="color:#ff8f99" href="https://www.facebook.com/reel/1114943977858429" target="_blank" rel="noopener">Auto365.vn - Trụ Sở Chính trên Facebook</a>.</div>
+        <div class="evidence-merge">
+          <div class="evidence-col">
+            <h2 class="section-title">Vì sao CR BLK 60 vẫn có TSER 54% dù VLT tới 57%?</h2>
+            <div class="tech-grid tech-grid-stack">
+              <article class="tech"><div class="big">200+</div><h3>Lớp quang học siêu mỏng</h3><p>3M mô tả cấu trúc MOF gồm hơn 200 lớp trong một màng phim rất mỏng.</p></article>
+              <article class="tech"><div class="big">0</div><h3>Kim loại trong cấu trúc</h3><p>Thiết kế phi kim giúp hạn chế nguy cơ gây nhiễu GPS, điện thoại, 5G và các tín hiệu điện tử phổ biến.</p></article>
+              <article class="tech"><div class="big">99,9%</div><h3>Chặn tia UV</h3><p>Trên cả hai điều kiện kính tham chiếu, CR BLK 60 giữ mức chặn UV 99,8–99,9% dù là mã sáng nhất trong bộ 40/50/60.</p></article>
+            </div>
           </div>
 
-          <div class="case-placeholder">
-            <span class="case-tag">Xác nhận một phần từ video — các trường còn lại cần CMS bổ sung</span>
-            <h3>Case CR BLK 60 · Porsche Panamera 4 E-Hybrid</h3>
-            <ul class="case-fields">
-              <li><b>Dòng xe:</b> Porsche Panamera 4 E-Hybrid</li>
-              <li><b>Năm xe:</b> —</li>
-              <li><b>Kính lái:</b> CR BLK 60</li>
-              <li><b>Mã kính khác:</b> —</li>
-              <li><b>Chi nhánh thi công:</b> —</li>
-              <li><b>Ngày thi công:</b> —</li>
-              <li><b>VLT kính nền (nếu đo):</b> —</li>
-              <li><b>VLT sau thi công (nếu đo):</b> —</li>
-              <li><b>Thiết bị đo (nếu có):</b> —</li>
-            </ul>
+          <div class="evidence-col">
+            <h2 class="section-title">CR BLK 60 trên xe thực tế</h2>
+            <p class="section-desc">Video thi công thực tế do Auto365.vn - Trụ Sở Chính đăng công khai trên Facebook. Các trường chưa xác nhận trong hồ sơ case vẫn để trống, chờ CMS bổ sung.</p>
+            <div class="video-placeholder">
+              <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false" width="100%" height="100%" style="border:0;position:absolute;inset:0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
+              <div class="video-caption"><strong>Porsche Panamera 4 E-Hybrid dán CR BLK 60 tại Auto365</strong>Nguồn: <a class="inline-link" style="color:#ff8f99" href="https://www.facebook.com/reel/1114943977858429" target="_blank" rel="noopener">Auto365.vn - Trụ Sở Chính trên Facebook</a>.</div>
+            </div>
+
+            <div class="case-placeholder">
+              <span class="case-tag">Xác nhận một phần từ video — các trường còn lại cần CMS bổ sung</span>
+              <h3>Case CR BLK 60 · Porsche Panamera 4 E-Hybrid</h3>
+              <ul class="case-fields">
+                <li><b>Dòng xe:</b> Porsche Panamera 4 E-Hybrid</li>
+                <li><b>Năm xe:</b> —</li>
+                <li><b>Kính lái:</b> CR BLK 60</li>
+                <li><b>Mã kính khác:</b> —</li>
+                <li><b>Chi nhánh thi công:</b> —</li>
+                <li><b>Ngày thi công:</b> —</li>
+                <li><b>VLT kính nền (nếu đo):</b> —</li>
+                <li><b>VLT sau thi công (nếu đo):</b> —</li>
+                <li><b>Thiết bị đo (nếu có):</b> —</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -937,25 +938,13 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">Vì sao CR BLK 60 vẫn có TSER 54% dù VLT tới 57%?</h2>
-
-        <div class="tech-grid">
-          <article class="tech"><div class="big">200+</div><h3>Lớp quang học siêu mỏng</h3><p>3M mô tả cấu trúc MOF gồm hơn 200 lớp trong một màng phim rất mỏng.</p></article>
-          <article class="tech"><div class="big">0</div><h3>Kim loại trong cấu trúc</h3><p>Thiết kế phi kim giúp hạn chế nguy cơ gây nhiễu GPS, điện thoại, 5G và các tín hiệu điện tử phổ biến.</p></article>
-          <article class="tech"><div class="big">99,9%</div><h3>Chặn tia UV</h3><p>Trên cả hai điều kiện kính tham chiếu, CR BLK 60 giữ mức chặn UV 99,8–99,9% dù là mã sáng nhất trong bộ 40/50/60.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section alt" aria-label="Hệ thống Auto365">
+    <section class="section" aria-label="Hệ thống Auto365">
       <div class="container">
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><symbol id="a365hq-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol><symbol id="a365hq-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="a365hq-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="12" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></symbol><symbol id="a365hq-i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><!-- Branch coverage illustration system --><symbol id="a365hq-il-khue-van-cac" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/><path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"/></g></symbol><symbol id="a365hq-il-cau" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/><path d="M9 36.5h30"/></g></symbol><symbol id="a365hq-il-cao-oc" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/><path d="M28 11h10"/></g></symbol><symbol id="a365hq-il-vn" viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></symbol></svg><section class="a365hq-shell service-locator" aria-label="Hệ thống Auto365"><section class="a365hq-branch-grid" aria-label="Auto365 Trụ Sở Chính và hệ thống chi nhánh"><article class="a365hq-card a365hq-left-card"><div class="a365hq-left-map-bg" aria-hidden="true"><svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="a365hq-mapbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset="1" stop-color="#edf5fa"/></linearGradient><filter id="a365hq-pinshadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#ef2326" flood-opacity=".22"/></filter></defs><rect width="560" height="420" fill="url(#a365hq-mapbg)"/><path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"/><path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"/><path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"/><path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"/><path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"/><path d="M55 244c66-7 103-25 150-31 52-6 113 19 173 14 52-4 89-24 144-47" fill="none" stroke="#d9dde2" stroke-width="5" stroke-linecap="round"/><path d="M40 115c54 17 97 12 145-5 57-20 104-14 151 3 59 21 113 17 180-6" fill="none" stroke="#e2e6ea" stroke-width="5" stroke-linecap="round"/><rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"/><path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#ef2326" filter="url(#a365hq-pinshadow)"/><circle cx="363" cy="113" r="16" fill="#fff"/><path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"/><circle cx="464" cy="85" r="7" fill="#fff"/><path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"/><circle cx="250" cy="135" r="7" fill="#fff"/></svg></div><div class="a365hq-card-inner"><div class="a365hq-left-content"><p class="a365hq-eyebrow a365hq-eyebrow--rule">CHI NHÁNH GẦN BẠN</p><h2 class="a365hq-headline">Auto365.vn - <span class="a365hq-red">Trụ Sở Chính</span></h2><p class="a365hq-desc">Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p></div><span class="a365hq-map-badge">Auto365 Trụ Sở Chính</span><div class="a365hq-button-row"><a class="a365hq-btn a365hq-btn-primary" href="tel:+84365365365"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg>Gọi 0365 365 365</a><a class="a365hq-btn a365hq-btn-zalo" href="https://zalo.me/3820993010764366025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-zalo"/></svg>Zalo tư vấn</a><a class="a365hq-btn a365hq-btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg>Google Maps</a></div><div class="a365hq-fact-row"><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-chat"/></svg></span><span><span class="a365hq-fact-title">Tư vấn nhanh</span><span class="a365hq-fact-text">Qua hotline hoặc Zalo</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-building"/></svg></span><span><span class="a365hq-fact-title">Trụ Sở Chính</span><span class="a365hq-fact-text">Phường Hiệp Bình, TP.HCM</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg></span><span><span class="a365hq-fact-title">Chỉ đường</span><span class="a365hq-fact-text">Mở trực tiếp Google Maps</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg></span><span><span class="a365hq-fact-title">Hotline</span><span class="a365hq-fact-text">0365 365 365</span></span></div></div></div></article><article class="a365hq-card a365hq-right-card"><div class="a365hq-card-inner"><div class="a365hq-nr-panel a365hq-nr-branch-coverage"><p class="a365hq-nr-eyebrow a365hq-nr-eyebrow--rule">PHỦ SÓNG TOÀN QUỐC</p><h3 class="a365hq-nr-section-title a365hq-nr-branch-scale"><span class="a365hq-nr-branch-scale-hl">91 chi nhánh</span> · 33 tỉnh thành </h3><span class="a365hq-nr-branch-vn" aria-hidden="true"><span class="a365hq-nr-branch-vn-note">Auto365 có mặt<br>khắp Việt Nam</span><svg viewBox="0 0 44 100"><use href="#a365hq-il-vn"></use></svg></span><div class="a365hq-nr-branch-regions"><a class="a365hq-nr-branch-region a365hq-nr-branch-region--1" href="https://auto365.vn/chi-nhanh?mien=bac"><span class="a365hq-nr-branch-region-index">01</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-khue-van-cac"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN BẮC</span><span class="a365hq-nr-branch-region-count">41 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--2" href="https://auto365.vn/chi-nhanh?mien=trung"><span class="a365hq-nr-branch-region-index">02</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cau"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN TRUNG</span><span class="a365hq-nr-branch-region-count">26 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--3" href="https://auto365.vn/chi-nhanh?mien=nam"><span class="a365hq-nr-branch-region-index">03</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cao-oc"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN NAM</span><span class="a365hq-nr-branch-region-count">24 điểm</span></a></div><a class="a365hq-nr-btn a365hq-nr-branch-all" href="https://auto365.vn/chi-nhanh"> Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="a365hq-nr-svg" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></article></section></section>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt">
       <div class="container">
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
 
@@ -975,7 +964,7 @@
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Quyền lợi khi dán 3M CR BLK 60 tại Auto365</h2>
 
@@ -989,7 +978,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt">
       <div class="container">
         <h2 class="section-title">FAQ về CR BLK 60</h2>
 
