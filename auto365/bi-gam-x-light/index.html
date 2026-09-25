@@ -1116,8 +1116,8 @@ html body #xlight-app #qs-reco .qs-result-actions a.qs-btn-outline,html body #xl
 #qs-reco .qs-badge{font-size:11px!important;padding:4px 10px!important;text-transform:none!important;letter-spacing:0!important}
 #qs-reco .qs-note,#qs-reco .qs-empty{grid-column:1/-1;font-size:13.5px;line-height:1.55;color:#4b5563;margin:4px 0 0}
 #qs-reco .qs-modal-close{min-width:44px;min-height:44px}
-#xlight-app .qs-short-answer{margin:10px 0 0;padding:10px 12px;border-radius:8px;background:#fff7f7;border:1px solid #f3d0d3;color:#333;font-size:12.5px;line-height:1.55}
-#xlight-app .qs-short-answer b{color:#e31b2d}
+#xlight-app .qs-quick-picks{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0 0}#xlight-app .qs-quick-picks span{font-size:12px;font-weight:700;color:#64748b;margin-right:2px}#xlight-app .qs-quick-picks .qs-pick{min-height:32px;padding:6px 11px;border:1px solid #f3c2c7;border-radius:8px;background:#fff7f7;color:#b91c1c;font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;line-height:1.2}#xlight-app .qs-quick-picks .qs-pick:hover{background:#e31b2d;border-color:#e31b2d;color:#fff}
+
 #xlight-app .xl-lead-selected{grid-column:1/-1;margin:0;padding:10px 12px;border-radius:8px;background:#f0f9ff;border:1px solid #bae6fd;color:#0c4a6e;font-size:13px;line-height:1.5}
 #xlight-app .xl-lead-selected[hidden]{display:none!important}
 .xl-compare-table .xl-compare-remove{display:block;margin-top:8px;min-height:36px;padding:6px 10px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#475569;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
@@ -1131,7 +1131,7 @@ html body #xlight-app #qs-reco .qs-result-actions a.qs-btn-outline,html body #xl
   #xlight-app .product-showcase-grid::-webkit-scrollbar,#xlight-app .xl-why-grid::-webkit-scrollbar,#xlight-app .xl-cost-grid::-webkit-scrollbar,#xlight-app .xl-need-grid::-webkit-scrollbar,#xlight-app .xl-form-guide-stack::-webkit-scrollbar,#xlight-app .xl-process-timeline-grid::-webkit-scrollbar{height:6px}
   #xlight-app .product-showcase-grid::-webkit-scrollbar-thumb,#xlight-app .xl-why-grid::-webkit-scrollbar-thumb,#xlight-app .xl-cost-grid::-webkit-scrollbar-thumb,#xlight-app .xl-need-grid::-webkit-scrollbar-thumb,#xlight-app .xl-form-guide-stack::-webkit-scrollbar-thumb,#xlight-app .xl-process-timeline-grid::-webkit-scrollbar-thumb{background:#e31b2d;border-radius:999px}
   #xlight-app .product-showcase-grid::-webkit-scrollbar-track,#xlight-app .xl-why-grid::-webkit-scrollbar-track,#xlight-app .xl-cost-grid::-webkit-scrollbar-track,#xlight-app .xl-need-grid::-webkit-scrollbar-track,#xlight-app .xl-form-guide-stack::-webkit-scrollbar-track,#xlight-app .xl-process-timeline-grid::-webkit-scrollbar-track{background:#e5e7eb;border-radius:999px}
-  #xlight-app .qs-short-answer{font-size:12px}
+  #xlight-app .qs-quick-picks .qs-pick{min-height:36px;font-size:12px}
 }
 </style><style id="xlight-spec-table">
 #xlight-app .xl-spec-details{margin:16px 0 0;border:1px solid #d8dee7;border-radius:10px;background:#fff}
@@ -1228,7 +1228,7 @@ html body #xlight-app #qs-reco .qs-result-actions a.qs-btn-outline,html body #xl
             <a href="#xl-lead-form" style="display:block; text-align:center; margin-top:10px; font-weight:600; color:#0284c7; background:#f8fafc; padding:8px 0; border:1px solid #e2e8f0; border-radius:6px; text-decoration:none;">
               📝 Để lại thông tin, Auto365 tư vấn theo đúng xe
             </a>
-            <p class="qs-short-answer"><b>Gợi ý nhanh theo nhu cầu:</b> xe con 12V đi phố → 301 V2 (4,5 tr/cặp) hoặc F10 2.0 New (4,5 tr/bộ); cần Pha mạnh đi tỉnh → F10 Turbo V2 (6 tr/cặp); xe tải 24V → F10 Turbo 24V V2 (6,2 tr/bộ). Giá chưa VAT, chốt mẫu sau khi kiểm tra hốc đèn.</p>
+            <div class="qs-quick-picks" aria-label="Gợi ý nhanh"><span>Gợi ý nhanh:</span><button type="button" class="qs-pick" data-need="city" data-voltage="12V">Xe con, đi phố</button><button type="button" class="qs-pick" data-need="touring" data-voltage="12V">Đi tỉnh, cần Pha mạnh</button><button type="button" class="qs-pick" data-need="compact" data-voltage="12V">Hốc gầm nhỏ</button><button type="button" class="qs-pick" data-need="" data-voltage="24V">Xe tải 24V</button></div>
         </div>
       </div>
     </div>
@@ -2650,6 +2650,12 @@ lucide-react/dist/esm/lucide-react.mjs:
     submit.addEventListener('click', function(){
       qsRunSearch(document.getElementById('qs-need').value, document.getElementById('qs-lens').value, document.getElementById('qs-budget').value, document.getElementById('qs-voltage').value);
     });
+    document.querySelectorAll('.qs-pick').forEach(function(b){ b.addEventListener('click', function(){
+      document.getElementById('qs-need').value = b.getAttribute('data-need') || '';
+      document.getElementById('qs-voltage').value = b.getAttribute('data-voltage') || '';
+      document.getElementById('qs-lens').value = ''; document.getElementById('qs-budget').value = '';
+      qsRunSearch(document.getElementById('qs-need').value, '', '', document.getElementById('qs-voltage').value);
+    }); });
     closeBtn.addEventListener('click', closeQsModal);
     modal.addEventListener('click', function(e){ if (e.target === modal) closeQsModal(); });
     document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeQsModal(); });
