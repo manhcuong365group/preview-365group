@@ -120,17 +120,20 @@
     .compare .verdict-line b{color:#26282c}
     .price-disclaimer{margin-top:10px;font-size:11px;color:var(--muted)}
     .package-badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 10px;font-size:10px;font-weight:700;background:var(--soft);color:#4b525c;border:1px solid var(--line);margin-left:8px}
-    .evidence-shell{margin-top:18px;display:grid;grid-template-columns:1fr;gap:16px}
+    .evidence-shell{margin-top:18px;display:grid;grid-template-columns:.85fr 1.15fr;gap:16px;align-items:start}
+    @media(max-width:900px){.evidence-shell{grid-template-columns:1fr}.video-embed{max-height:460px}}
     .case-placeholder{border:1.5px dashed #cfd3d9;border-radius:20px;padding:24px;background:#fbfbfc}
     .case-placeholder .case-tag{display:inline-flex;align-items:center;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:700;background:#fff3d6;color:#8a6200;margin-bottom:12px}
     .case-placeholder h3{font-family:var(--display);font-size:16px;font-weight:600;margin:0 0 8px;color:var(--ink)}
     .case-fields{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px;font-size:13px;color:var(--muted)}
     .case-fields li b{color:#3a4049;font-weight:600}
     .video-placeholder{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#111417}
+    .video-embed{aspect-ratio:9/16;max-height:520px;position:relative;background:#0c0e10}
     .video-thumb{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(180deg,#15181c,#0c0e10)}
     .video-thumb svg{width:56px;height:56px;color:#fff;opacity:.92}
     .video-caption{padding:16px 18px;color:#c8ccd3;font-size:13px}
     .video-caption strong{display:block;color:#fff;font-size:14px;margin-bottom:4px}
+    .video-caption a{font-weight:700}
     @media(max-width:1000px){.answer-bullets{grid-template-columns:1fr}.fit-check .field-row{grid-template-columns:1fr}}
     .section{padding:36px 0}
     .section.alt{background:var(--soft)}
@@ -868,28 +871,28 @@
     <section class="section" id="xe-thuc-te">
       <div class="container">
         <h2 class="section-title">CR BLK 60 trên xe thực tế</h2>
-        <p class="section-desc">Auto365 chưa có case thi công CR BLK 60 đủ hồ sơ để đăng — mục dưới đây là chỗ CMS bổ sung khi có case thật, không phải case đã xác nhận.</p>
+        <p class="section-desc">Video thi công thực tế dưới đây được Auto365.vn - Trụ Sở Chính đăng công khai trên Facebook. Các trường chưa xác nhận trong hồ sơ case vẫn để trống, chờ CMS bổ sung — không suy diễn thêm ngoài nội dung video.</p>
 
         <div class="evidence-shell">
+          <div class="video-placeholder">
+            <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false" width="100%" height="100%" style="border:0;position:absolute;inset:0" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
+            <div class="video-caption"><strong>Porsche Panamera 4 E-Hybrid dán CR BLK 60 tại Auto365</strong>Nguồn: <a class="inline-link" style="color:#ff8f99" href="https://www.facebook.com/reel/1114943977858429" target="_blank" rel="noopener">Auto365.vn - Trụ Sở Chính trên Facebook</a>.</div>
+          </div>
+
           <div class="case-placeholder">
-            <span class="case-tag">Cần dữ liệu thực tế — CMS bổ sung case cụ thể</span>
-            <h3>Case CR BLK 60 (placeholder)</h3>
+            <span class="case-tag">Xác nhận một phần từ video — các trường còn lại cần CMS bổ sung</span>
+            <h3>Case CR BLK 60 · Porsche Panamera 4 E-Hybrid</h3>
             <ul class="case-fields">
-              <li><b>Dòng xe / năm xe:</b> —</li>
+              <li><b>Dòng xe:</b> Porsche Panamera 4 E-Hybrid</li>
+              <li><b>Năm xe:</b> —</li>
               <li><b>Kính lái:</b> CR BLK 60</li>
               <li><b>Mã kính khác:</b> —</li>
               <li><b>Chi nhánh thi công:</b> —</li>
               <li><b>Ngày thi công:</b> —</li>
-              <li><b>Ảnh trước / sau:</b> —</li>
               <li><b>VLT kính nền (nếu đo):</b> —</li>
               <li><b>VLT sau thi công (nếu đo):</b> —</li>
               <li><b>Thiết bị đo (nếu có):</b> —</li>
             </ul>
-          </div>
-
-          <div class="video-placeholder">
-            <div class="video-thumb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5Z"/></svg></div>
-            <div class="video-caption"><strong>CR BLK 60 nhìn từ ghế lái thực tế như thế nào?</strong>Chưa có video — vị trí dành cho video quay thực tế (kèm VideoObject schema) khi có nội dung.</div>
           </div>
         </div>
       </div>
