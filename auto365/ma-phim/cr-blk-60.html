@@ -67,12 +67,7 @@
     .series-name{font-size:12px;text-transform:uppercase;letter-spacing:.13em;color:#acb2bb}
     .series-name strong{display:block;color:#fff;font-size:clamp(18px,2vw,24px);letter-spacing:-.02em;text-transform:none;margin-top:5px;font-family:var(--display);font-weight:600}
     .hero h1{font-family:var(--display);font-size:clamp(27px,3.2vw,38px);font-weight:500;line-height:1.12;letter-spacing:-.02em;margin:0 0 14px;max-width:720px}
-    .hero-lead{color:#c8ccd3;font-size:16px;line-height:1.55;max-width:690px;margin:0 0 18px}
-    .hero-traits{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0 0}
-    .hero-trait{border:1px solid rgba(215,25,32,.14);border-radius:14px;padding:14px 13px;background:rgba(255,255,255,.92);color:#252a30}
-    .hero-trait b{display:block;color:#252a30;font-size:23px;line-height:1.05;margin-bottom:4px;font-family:var(--display);font-weight:700}
-    .hero-trait span{color:#687380;font-size:11px}
-    .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+    .hero-lead{color:#c8ccd3;font-size:16px;line-height:1.55;max-width:690px;margin:0 0 18px}    .hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
     .btn{min-height:46px;padding:0 19px;border-radius:12px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:14px;font-weight:700;border:1px solid transparent;transition:transform .2s ease,background .2s ease,border-color .2s ease}
     .btn:hover{transform:translateY(-2px)}
     .btn-primary{background:var(--red);color:#fff}
@@ -84,22 +79,50 @@
     .hero-offer-label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.11em;color:#aeb5bf;font-weight:800;margin-bottom:4px}
     .hero-price{font-family:var(--display);font-size:30px;line-height:1.05;color:#fff;font-weight:700;letter-spacing:-.03em}
     .hero-price-note{font-size:12px;color:#aeb5bf;margin-top:5px}
-    .hero-offer .btn{white-space:nowrap}
-    .hero-fit-card{background:#fff;border-radius:24px;padding:22px;box-shadow:0 30px 80px rgba(0,0,0,.38);color:var(--text)}
-    .hero-fit-card h3{margin:0 0 12px;font-family:var(--display);font-size:16px;font-weight:500;color:#111214}
-    .quick-facts{display:flex;flex-wrap:wrap;gap:9px 16px;color:#b9bec6;font-size:12px;margin-top:12px}
+    .hero-offer .btn{white-space:nowrap}    .quick-facts{display:flex;flex-wrap:wrap;gap:9px 16px;color:#b9bec6;font-size:12px;margin-top:12px}
     .quick-facts span{display:inline-flex;align-items:center;gap:8px}
-    .quick-facts i{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px rgba(215,25,32,.14)}
-    .hero-fit-card .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-    .hero-fit-card .field-wide{grid-column:1/-1}
-    .hero-fit-card .field label{display:block;font-size:11px;font-weight:700;color:#5d626b;margin-bottom:5px}
-    .hero-fit-card select{width:100%;min-height:42px;border:1px solid #dfe3e8;border-radius:10px;background:#fff;color:#252a30;padding:8px 10px;font-size:13px}
-    .hero-fit-card .fit-submit{width:100%;min-height:46px;margin-top:12px;border:0;border-radius:999px;background:var(--red);color:#fff;font-weight:700;cursor:pointer;transition:background .2s ease,transform .2s ease}
-    .hero-fit-card .fit-submit:hover{background:var(--red2);transform:translateY(-2px)}
-    .hero-fit-card .fit-result{margin-top:12px;padding:14px;border-radius:14px;background:#f7f8fa;border:1px solid #ece9e3;color:#4b525c;font-size:13px;line-height:1.55}
-    .hero-fit-card .fit-result strong{display:block;color:var(--red);font-size:14px;margin-bottom:5px}
-    .hero-fit-card .fit-result p{margin:6px 0 0}
-    .metric-ribbon-label{margin:14px 0 0;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#aeb5bf}
+    .quick-facts i{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px rgba(215,25,32,.14)}    .hero-visual{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:24px;background:#111417;min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;overflow:hidden}
+    .hero-visual svg{width:64px;height:64px;color:#4b525c}
+    .hero-visual b{font-family:var(--display);font-size:14px;font-weight:600;color:#c8ccd3}
+    .hero-visual span{font-size:12px;color:#6b7480;max-width:280px}
+    .fit-check{background:#fff;border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 50px rgba(17,24,39,.06)}
+    .fit-check h2{font-family:var(--display);font-size:clamp(21px,2.6vw,26px);font-weight:600;margin:0 0 8px;letter-spacing:-.02em;color:var(--ink)}
+    .chip-group{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 14px}
+    .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 16px;font-size:13px;font-weight:600;color:#3a4049;min-height:44px;display:inline-flex;align-items:center;cursor:pointer;transition:background .16s,border-color .16s,color .16s}
+    .chip:hover{border-color:#b9bec6}
+    .chip.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .fit-check .field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+    .fit-check .field label{display:block;font-size:11px;font-weight:700;color:#5d626b;margin-bottom:5px}
+    .fit-check select{width:100%;min-height:44px;border:1px solid #dfe3e8;border-radius:10px;background:#fff;color:#252a30;padding:8px 12px;font-size:13px}
+    .fit-check .fit-submit{min-height:46px;padding:0 22px;border:0;border-radius:999px;background:var(--red);color:#fff;font-weight:700;cursor:pointer;transition:background .2s ease,transform .2s ease}
+    .fit-check .fit-submit:hover{background:var(--red2);transform:translateY(-2px)}
+    .fit-check .fit-result{margin-top:16px;padding:16px;border-radius:14px;background:var(--soft);border:1px solid var(--line);color:#4b525c;font-size:13px;line-height:1.6}
+    .fit-check .fit-result strong{display:block;color:var(--red);font-size:14px;margin-bottom:5px}
+    .fit-check .fit-result p{margin:6px 0 0}
+    .answer-bullets{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .answer-bullets li{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--text);border:1px solid var(--line);border-radius:14px;padding:14px}
+    .answer-bullets li svg{flex:0 0 20px;width:20px;height:20px;color:var(--red);margin-top:1px}
+    .verdict-block{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:18px 20px;background:var(--soft)}
+    .verdict-block p{margin:0;font-size:14px;color:var(--text);line-height:1.65}
+    .spec-card{position:relative}
+    .spec-card svg{width:22px;height:22px;color:var(--red);margin:0 auto 8px}
+    .tds-note{font-size:11px;color:var(--muted);margin-top:6px}
+    .compare .verdict-line{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);font-size:12px;color:#555}
+    .compare .verdict-line b{color:#26282c}
+    .price-disclaimer{margin-top:10px;font-size:11px;color:var(--muted)}
+    .package-badge{display:inline-flex;align-items:center;border-radius:999px;padding:4px 10px;font-size:10px;font-weight:700;background:var(--soft);color:#4b525c;border:1px solid var(--line);margin-left:8px}
+    .evidence-shell{margin-top:18px;display:grid;grid-template-columns:1fr;gap:16px}
+    .case-placeholder{border:1.5px dashed #cfd3d9;border-radius:20px;padding:24px;background:#fbfbfc}
+    .case-placeholder .case-tag{display:inline-flex;align-items:center;border-radius:999px;padding:5px 11px;font-size:11px;font-weight:700;background:#fff3d6;color:#8a6200;margin-bottom:12px}
+    .case-placeholder h3{font-family:var(--display);font-size:16px;font-weight:600;margin:0 0 8px;color:var(--ink)}
+    .case-fields{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:6px 18px;font-size:13px;color:var(--muted)}
+    .case-fields li b{color:#3a4049;font-weight:600}
+    .video-placeholder{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#111417}
+    .video-thumb{aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;background:linear-gradient(180deg,#15181c,#0c0e10)}
+    .video-thumb svg{width:56px;height:56px;color:#fff;opacity:.92}
+    .video-caption{padding:16px 18px;color:#c8ccd3;font-size:13px}
+    .video-caption strong{display:block;color:#fff;font-size:14px;margin-bottom:4px}
+    @media(max-width:1000px){.answer-bullets{grid-template-columns:1fr}.fit-check .field-row{grid-template-columns:1fr}}
     .section{padding:36px 0}
     .section.alt{background:var(--soft)}
     .section.dark{background:var(--dark);color:#fff}
@@ -255,20 +278,21 @@
       .series-name{font-size:10px}
       .series-name strong{font-size:18px}
       .hero h1{font-size:28px}
-      .hero-traits{grid-template-columns:repeat(2,1fr)}
       .hero-offer{grid-template-columns:1fr;align-items:start;gap:12px}
       .hero-offer .btn{width:100%}
       .hero-price{font-size:26px}
-      .hero-fit-card{padding:18px;border-radius:18px}
-      .hero-fit-card .field-grid{grid-template-columns:1fr}
-      .hero-fit-card .field-wide{grid-column:auto}
       .section{padding:28px 0}
       table{min-width:620px}
       th,td{padding:11px 10px;font-size:11px}
       td:first-child,th:first-child{padding-left:14px}
       .hero-cta .btn{flex:1 1 calc(50% - 5px);padding:0 10px;font-size:13px}
-      .package-link,.why a,details p a,.tiny a{display:inline-flex;align-items:center;min-height:36px}
+      .package-link,.why a,details p a,.tiny a{display:inline-flex;align-items:center;min-height:44px}
       .hero-code{font-size:64px}
+      .fit-check{padding:20px;border-radius:18px}
+      .answer-bullets{grid-template-columns:1fr}
+      .case-fields{grid-template-columns:1fr}
+      .hero-visual{min-height:220px}
+      .hero-visual svg{width:48px;height:48px}
       .position-grid,.compare-grid,.tech-grid,.why-grid,.rights-grid,.cert-grid,.package-grid,.spec-explain{
         display:flex;grid-template-columns:none;gap:10px;overflow-x:auto;overflow-y:hidden;
         scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;
@@ -416,6 +440,12 @@
   {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://auto365.vn/#organization",
+        "name": "Auto365",
+        "url": "https://auto365.vn"
+      },
       {
         "@type": "WebPage",
         "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60#webpage",
@@ -608,6 +638,14 @@
               "@type": "Answer",
               "text": "3M Việt Nam công bố phim ô tô được hỗ trợ bảo hành lên tới 10 năm khi bán, lắp đặt và kích hoạt theo chính sách áp dụng. Chủ xe cần nhận thông tin tra cứu eWarranty sau thi công."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "Giá kính lái CR BLK 60 bao nhiêu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Giá kính lái tham khảo từ 5.700.000đ (đã gồm VAT) theo bảng giá hệ thống 08/2026. Đây là giá tham khảo, cần xác nhận lại theo cấu hình xe và chương trình hiện hành trước khi đặt lịch."
+            }
           }
         ]
       }
@@ -647,42 +685,62 @@
             </div>
             <h1>Phim cách nhiệt 3M CR BLK 60: kính lái sáng 57% VLT và cách chọn so với 50/40</h1>
             <p class="hero-lead">Nếu ưu tiên số một là <strong>kính lái sáng và dễ quan sát</strong>, CR BLK 60 là mã nên xem trước trong bộ 40/50/60. Trên kính Auto 75 tham chiếu, phim đạt VLT 57% — cao hơn CR BLK 50 — trong khi TSER vẫn ở mức 54%.</p>
-            <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
-              <div><span class="hero-offer-label">Giá kính lái tham khảo (đã gồm VAT)</span><div class="hero-price">Từ 5.700.000đ</div><div class="hero-price-note">CR BLK 60 / 50 · theo bảng giá hệ thống 08/2026.</div></div>
-              <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
+            <div class="hero-offer" aria-label="Giá tham khảo">
+              <div><span class="hero-offer-label">Giá kính lái tham khảo (đã gồm VAT)</span><div class="hero-price">Từ 5.700.000đ</div><div class="hero-price-note">CR BLK 60 / 50 · theo bảng giá hệ thống 08/2026, cần xác nhận theo cấu hình xe.</div></div>
             </div>
             <div class="hero-cta">
-              <a class="btn btn-ghost" href="#so-sanh">So sánh CR BLK 40 / 50 / 60</a>
-              <a class="btn btn-ghost" href="#thong-so">Xem thông số đầy đủ</a>
+              <a class="btn btn-primary" href="#fit-check">Tìm mã phim phù hợp</a>
+              <button class="btn btn-ghost" type="button" data-open-zalo>Xem giá / nhận tư vấn</button>
             </div>
+            <p class="hero-note"><a class="inline-link" style="color:#ff8f99" href="#so-sanh">So sánh CR BLK 40 / 50 / 60 →</a></p>
             <div class="quick-facts">
-              <span><i></i> Phi kim theo mô tả 3M</span>
-              <span><i></i> Phim quang học đa lớp 200+</span>
-              <span><i></i> Dữ liệu có điều kiện đo</span>
+              <span><i></i> 3M Crystalline</span>
+              <span><i></i> Phi kim</span>
+              <span><i></i> eWarranty</span>
+              <span><i></i> Dữ liệu theo TDS 3M</span>
             </div>
           </div>
 
           <div class="hero-media">
-            <div class="hero-fit-card" id="fit-title" aria-label="CR BLK 60 có phù hợp với bạn?">
-              <h3>CR BLK 60 có phù hợp với bạn?</h3>
-              <form class="fit-form" data-fit-form>
-                <div class="field-grid">
-                  <div class="field"><label for="priority">Ưu tiên sử dụng</label><select id="priority" name="priority"><option value="visibility">Ưu tiên quan sát</option><option value="balance">Cân bằng sáng và giảm chói</option><option value="privacy">Ưu tiên riêng tư</option></select></div>
-                  <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
-                  <div class="field field-wide"><label for="night">Tần suất đi đêm</label><select id="night" name="night"><option value="often">Thường xuyên</option><option value="sometimes">Thỉnh thoảng</option><option value="rare">Hiếm khi</option></select></div>
-                </div>
-                <button class="fit-submit" type="submit">Kiểm tra CR BLK 60</button>
-                <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Kiểm tra CR BLK 60" để xem gợi ý</strong><p>3 lựa chọn ở trên đã có sẵn mặc định — đổi lại theo nhu cầu rồi bấm nút để biết CR BLK 60 phù hợp hay nên cân nhắc 50/40.</p></div>
-              </form>
-            </div>
-            <p class="metric-ribbon-label">Thông số CR BLK 60 · Auto 75 Glass</p>
-            <div class="hero-traits" aria-label="Thông số chính">
-              <div class="hero-trait"><b>57%</b><span>VLT · Auto 75</span></div>
-              <div class="hero-trait"><b>54%</b><span>TSER · Auto 75</span></div>
-              <div class="hero-trait"><b>67%</b><span>IRER · Auto 75</span></div>
-              <div class="hero-trait"><b>99,9%</b><span>UV Block · Auto 75</span></div>
+            <div class="hero-visual" role="img" aria-label="Ảnh minh họa xe dán CR BLK 60 — cần bổ sung ảnh thật">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 13l1.5-4.5A2 2 0 0 1 6.4 7h11.2a2 2 0 0 1 1.9 1.5L21 13"/><path d="M3 13h18v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4Z"/><circle cx="7.5" cy="17.5" r="1.4"/><circle cx="16.5" cy="17.5" r="1.4"/></svg>
+              <b>Ảnh xe / kính lái CR BLK 60</b>
+              <span>Vị trí dành cho ảnh thật do CMS/đội hình ảnh bổ sung — chưa dùng ảnh minh họa dàn dựng.</span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="fit-check" aria-label="CR BLK 60 có phù hợp với xe của bạn?" style="padding-top:22px;padding-bottom:22px">
+      <div class="container">
+        <div class="fit-check">
+          <h2>CR BLK 60 có phù hợp với xe của bạn?</h2>
+          <p class="section-desc">Chọn ưu tiên gần nhất với nhu cầu của bạn để xem CR BLK 60 có nên cân nhắc hay nên đối chiếu với 50/40 trước.</p>
+          <form data-fit-form>
+            <div class="chip-group" role="radiogroup" aria-label="Ưu tiên sử dụng" data-chip-group="priority">
+              <button type="button" class="chip active" data-value="visibility" aria-pressed="true">Ưu tiên kính sáng</button>
+              <button type="button" class="chip" data-value="night" aria-pressed="false">Đi đêm nhiều</button>
+              <button type="button" class="chip" data-value="balance" aria-pressed="false">Cân bằng sáng / giảm chói</button>
+              <button type="button" class="chip" data-value="privacy" aria-pressed="false">Cần riêng tư hơn</button>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
+            </div>
+            <button class="fit-submit" type="submit">Tìm mã phim phù hợp</button>
+            <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Tìm mã phim phù hợp" để xem gợi ý</strong><p>Đã chọn sẵn "Ưu tiên kính sáng" — đổi lựa chọn nếu cần rồi bấm nút để xem CR BLK 60 nên cân nhắc hay nên xem mẫu 50/40 trước.</p></div>
+          </form>
+        </div>
+
+        <ul class="answer-bullets" aria-label="CR BLK 60 phù hợp với ai?">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Ưu tiên kính lái sáng, dễ quan sát hơn là dịu mắt tối đa</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Cần quan sát tốt khi lái xe ban đêm hoặc trời ít sáng</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Thường xuyên di chuyển trong điều kiện ánh sáng yếu</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Chấp nhận mức giảm chói thấp hơn CR BLK 50/40 để đổi lấy độ sáng</span></li>
+        </ul>
+
+        <div class="verdict-block">
+          <p><strong>CR BLK 60 có tốt không?</strong> CR BLK 60 là mã sáng nhất trong nhóm 40/50/60 trên Auto 75 (VLT 57%), phù hợp khi ưu tiên quan sát và đi đêm. Đánh đổi là TSER thấp hơn CR BLK 50 khoảng 2 điểm và mức giảm chói thấp hơn khoảng 12 điểm. Nếu đi ban ngày nhiều và muốn kính đằm hơn, nên xem thêm CR BLK 50 trước khi chốt.</p>
         </div>
       </div>
     </section>
@@ -738,13 +796,14 @@
             </div>
             <div class="tds-pill">3M TDS Revision F · August 2025</div>
           </div>
+          <p class="tds-note" style="padding:0 20px">"Auto 75" là điều kiện kính tham chiếu theo TDS 3M, không phải kết quả cố định trên mọi xe.</p>
 
           <div class="spec-cards" id="specCards">
-            <div class="spec-card"><b data-field="vlt">57%</b><span>VLT</span></div>
-            <div class="spec-card"><b data-field="tser">54%</b><span>TSER</span></div>
-            <div class="spec-card"><b data-field="irer">67%</b><span>IRER</span></div>
+            <div class="spec-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><b data-field="vlt">57%</b><span>VLT</span></div>
+            <div class="spec-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3c2 3-2 4-2 7a2 2 0 0 0 4 0c1 1 1 3 0 4a4 4 0 1 1-6-5c1-2 2-3 4-6Z"/></svg><b data-field="tser">54%</b><span>TSER</span></div>
+            <div class="spec-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M2 12c1.5-3 3-3 4.5 0s3 3 4.5 0 3-3 4.5 0 3 3 4.5 0"/></svg><b data-field="irer">67%</b><span>IRER</span></div>
             <div class="spec-card"><b data-field="irr">97%</b><span>IRR</span></div>
-            <div class="spec-card"><b data-field="uv">99,9%</b><span>UV Block</span></div>
+            <div class="spec-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/></svg><b data-field="uv">99,9%</b><span>UV Block</span></div>
             <div class="spec-card"><b data-field="glare">22%</b><span>Giảm chói</span></div>
           </div>
 
@@ -781,33 +840,66 @@
             <h3>CR BLK 60</h3>
             <div class="spec">VLT 57% · TSER 54% · giảm chói 22%</div>
             <p><strong>Mã ưu tiên quan sát.</strong> Chọn khi độ sáng kính lái quan trọng hơn việc tăng thêm độ dịu và giảm chói.</p>
+            <div class="verdict-line"><b>Đặc tính:</b> sáng nhất trong nhóm 40/50/60 · <b>Ưu tiên:</b> khả năng quan sát</div>
           </article>
           <article class="compare">
             <div class="num">50</div>
             <h3>CR BLK 50</h3>
             <div class="spec">VLT 48% · TSER 56% · giảm chói 34%</div>
             <p><strong>Mã cân bằng.</strong> VLT thấp hơn 60 nhưng đổi lại giảm chói nhiều hơn; phù hợp người đi cả ngày lẫn đêm và muốn kính đằm hơn.</p>
+            <div class="verdict-line"><b>Đặc tính:</b> cân bằng · <b>Ưu tiên:</b> ngày + đêm</div>
           </article>
           <article class="compare">
             <div class="num">40</div>
             <h3>CR BLK 40</h3>
             <div class="spec">VLT 41% · TSER 58% · giảm chói 44%</div>
             <p>Tối hơn và dịu mắt hơn khi đi nắng; cần xem mẫu thực tế kỹ hơn nếu người lái thường xuyên đi ban đêm.</p>
+            <div class="verdict-line"><b>Đặc tính:</b> dịu hơn · <b>Ưu tiên:</b> giảm chói hơn</div>
           </article>
         </div>
-        <p class="section-desc section-link">Trên cùng kính Auto 75, CR BLK 60 có VLT cao hơn CR BLK 50 <strong>9 điểm phần trăm</strong>; đổi lại, TSER thấp hơn 2 điểm và giảm chói thấp hơn 12 điểm. Vì vậy nên xem CR BLK 60 trước khi ưu tiên kính sáng, rồi đối chiếu mẫu <a class="inline-link" href="https://auto365.vn/3m-cr-blk-50">CR BLK 50</a> nếu cần dịu hơn ban ngày.</p>
+        <p class="section-desc section-link">Trên cùng kính Auto 75, CR BLK 60 có VLT cao hơn CR BLK 50 <strong>9 điểm phần trăm</strong>, nhưng TSER thấp hơn 2 điểm và mức giảm chói thấp hơn 12 điểm phần trăm. Vì vậy nên xem CR BLK 60 trước khi ưu tiên kính sáng, rồi đối chiếu mẫu <a class="inline-link" href="https://auto365.vn/3m-cr-blk-50">CR BLK 50</a> nếu cần dịu hơn ban ngày.</p>
 
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="xe-thuc-te">
+      <div class="container">
+        <h2 class="section-title">CR BLK 60 trên xe thực tế</h2>
+        <p class="section-desc">Auto365 chưa có case thi công CR BLK 60 đủ hồ sơ để đăng — mục dưới đây là chỗ CMS bổ sung khi có case thật, không phải case đã xác nhận.</p>
+
+        <div class="evidence-shell">
+          <div class="case-placeholder">
+            <span class="case-tag">Cần dữ liệu thực tế — CMS bổ sung case cụ thể</span>
+            <h3>Case CR BLK 60 (placeholder)</h3>
+            <ul class="case-fields">
+              <li><b>Dòng xe / năm xe:</b> —</li>
+              <li><b>Kính lái:</b> CR BLK 60</li>
+              <li><b>Mã kính khác:</b> —</li>
+              <li><b>Chi nhánh thi công:</b> —</li>
+              <li><b>Ngày thi công:</b> —</li>
+              <li><b>Ảnh trước / sau:</b> —</li>
+              <li><b>VLT kính nền (nếu đo):</b> —</li>
+              <li><b>VLT sau thi công (nếu đo):</b> —</li>
+              <li><b>Thiết bị đo (nếu có):</b> —</li>
+            </ul>
+          </div>
+
+          <div class="video-placeholder">
+            <div class="video-thumb" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M10 8.5v7l6-3.5-6-3.5Z"/></svg></div>
+            <div class="video-caption"><strong>CR BLK 60 nhìn từ ghế lái thực tế như thế nào?</strong>Chưa có video — vị trí dành cho video quay thực tế (kèm VideoObject schema) khi có nội dung.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
       <div class="container">
         <h2 class="section-title">CR BLK 60 nằm trong gói nào của Auto365?</h2>
         <p class="section-desc">CR BLK 60 có thể được cân nhắc cho kính lái trong gói Crystalline CR BLK và Crystalline Hybrid. Giá trọn gói phụ thuộc loại xe và phạm vi kính thi công.</p>
 
         <div class="package-grid">
           <article class="package">
-            <div class="label">Gói tiêu chuẩn</div>
+            <div class="label">Gói tiêu chuẩn<span class="package-badge">Đồng bộ Crystalline</span></div>
             <h3>3M Crystalline CR BLK</h3>
             <div class="package-config"><b>Kính lái:</b> CR BLK 60 / 50<br><b>Kính sườn & kính lưng:</b> CR BLK 35 / 15</div>
             <div class="tiny">Bảng giá tham khảo · đã gồm VAT · cập nhật 08/2026</div>
@@ -817,11 +909,12 @@
               <div class="price-item"><span>SUV / CUV</span><b>17.600.000đ</b></div>
             </div>
             <p>Phù hợp người muốn phối cùng dòng CR BLK trên nhiều vị trí kính; CR BLK 60 được cân nhắc khi kính lái cần ưu tiên độ sáng.</p>
+            <p class="price-disclaimer">Giá tham khảo, cần xác nhận theo cấu hình xe và chương trình hiện hành.</p>
             <a class="package-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">Xem chi tiết gói Crystalline CR BLK →</a>
           </article>
 
           <article class="package">
-            <div class="label">Gói Hybrid</div>
+            <div class="label">Gói Hybrid<span class="package-badge">Tối ưu ngân sách</span></div>
             <h3>3M Crystalline Hybrid</h3>
             <div class="package-config"><b>Kính lái:</b> CR BLK 60 / 50<br><b>Kính sườn & kính lưng:</b> NR 25 / 15 / 5</div>
             <div class="tiny">Bảng giá tham khảo · đã gồm VAT · cập nhật 08/2026</div>
@@ -831,13 +924,14 @@
               <div class="price-item"><span>SUV / CUV</span><b>12.500.000đ</b></div>
             </div>
             <p>Phối CR BLK 60 hoặc 50 ở kính lái với NR ở các kính còn lại; phù hợp khi muốn ưu tiên trải nghiệm kính lái nhưng tối ưu chi phí toàn xe.</p>
+            <p class="price-disclaimer">Giá tham khảo, cần xác nhận theo cấu hình xe và chương trình hiện hành.</p>
             <a class="package-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid">Xem chi tiết gói Crystalline Hybrid →</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Vì sao CR BLK 60 vẫn có TSER 54% dù VLT tới 57%?</h2>
 
@@ -849,13 +943,13 @@
       </div>
     </section>
 
-    <section class="section" aria-label="Hệ thống Auto365">
+    <section class="section alt" aria-label="Hệ thống Auto365">
       <div class="container">
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><symbol id="a365hq-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol><symbol id="a365hq-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="a365hq-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="12" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></symbol><symbol id="a365hq-i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><!-- Branch coverage illustration system --><symbol id="a365hq-il-khue-van-cac" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/><path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"/></g></symbol><symbol id="a365hq-il-cau" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/><path d="M9 36.5h30"/></g></symbol><symbol id="a365hq-il-cao-oc" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/><path d="M28 11h10"/></g></symbol><symbol id="a365hq-il-vn" viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></symbol></svg><section class="a365hq-shell service-locator" aria-label="Hệ thống Auto365"><section class="a365hq-branch-grid" aria-label="Auto365 Trụ Sở Chính và hệ thống chi nhánh"><article class="a365hq-card a365hq-left-card"><div class="a365hq-left-map-bg" aria-hidden="true"><svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="a365hq-mapbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset="1" stop-color="#edf5fa"/></linearGradient><filter id="a365hq-pinshadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#ef2326" flood-opacity=".22"/></filter></defs><rect width="560" height="420" fill="url(#a365hq-mapbg)"/><path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"/><path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"/><path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"/><path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"/><path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"/><path d="M55 244c66-7 103-25 150-31 52-6 113 19 173 14 52-4 89-24 144-47" fill="none" stroke="#d9dde2" stroke-width="5" stroke-linecap="round"/><path d="M40 115c54 17 97 12 145-5 57-20 104-14 151 3 59 21 113 17 180-6" fill="none" stroke="#e2e6ea" stroke-width="5" stroke-linecap="round"/><rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"/><path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#ef2326" filter="url(#a365hq-pinshadow)"/><circle cx="363" cy="113" r="16" fill="#fff"/><path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"/><circle cx="464" cy="85" r="7" fill="#fff"/><path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"/><circle cx="250" cy="135" r="7" fill="#fff"/></svg></div><div class="a365hq-card-inner"><div class="a365hq-left-content"><p class="a365hq-eyebrow a365hq-eyebrow--rule">CHI NHÁNH GẦN BẠN</p><h2 class="a365hq-headline">Auto365.vn - <span class="a365hq-red">Trụ Sở Chính</span></h2><p class="a365hq-desc">Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p></div><span class="a365hq-map-badge">Auto365 Trụ Sở Chính</span><div class="a365hq-button-row"><a class="a365hq-btn a365hq-btn-primary" href="tel:+84365365365"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg>Gọi 0365 365 365</a><a class="a365hq-btn a365hq-btn-zalo" href="https://zalo.me/3820993010764366025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-zalo"/></svg>Zalo tư vấn</a><a class="a365hq-btn a365hq-btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg>Google Maps</a></div><div class="a365hq-fact-row"><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-chat"/></svg></span><span><span class="a365hq-fact-title">Tư vấn nhanh</span><span class="a365hq-fact-text">Qua hotline hoặc Zalo</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-building"/></svg></span><span><span class="a365hq-fact-title">Trụ Sở Chính</span><span class="a365hq-fact-text">Phường Hiệp Bình, TP.HCM</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg></span><span><span class="a365hq-fact-title">Chỉ đường</span><span class="a365hq-fact-text">Mở trực tiếp Google Maps</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg></span><span><span class="a365hq-fact-title">Hotline</span><span class="a365hq-fact-text">0365 365 365</span></span></div></div></div></article><article class="a365hq-card a365hq-right-card"><div class="a365hq-card-inner"><div class="a365hq-nr-panel a365hq-nr-branch-coverage"><p class="a365hq-nr-eyebrow a365hq-nr-eyebrow--rule">PHỦ SÓNG TOÀN QUỐC</p><h3 class="a365hq-nr-section-title a365hq-nr-branch-scale"><span class="a365hq-nr-branch-scale-hl">91 chi nhánh</span> · 33 tỉnh thành </h3><span class="a365hq-nr-branch-vn" aria-hidden="true"><span class="a365hq-nr-branch-vn-note">Auto365 có mặt<br>khắp Việt Nam</span><svg viewBox="0 0 44 100"><use href="#a365hq-il-vn"></use></svg></span><div class="a365hq-nr-branch-regions"><a class="a365hq-nr-branch-region a365hq-nr-branch-region--1" href="https://auto365.vn/chi-nhanh?mien=bac"><span class="a365hq-nr-branch-region-index">01</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-khue-van-cac"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN BẮC</span><span class="a365hq-nr-branch-region-count">41 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--2" href="https://auto365.vn/chi-nhanh?mien=trung"><span class="a365hq-nr-branch-region-index">02</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cau"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN TRUNG</span><span class="a365hq-nr-branch-region-count">26 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--3" href="https://auto365.vn/chi-nhanh?mien=nam"><span class="a365hq-nr-branch-region-index">03</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cao-oc"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN NAM</span><span class="a365hq-nr-branch-region-count">24 điểm</span></a></div><a class="a365hq-nr-btn a365hq-nr-branch-all" href="https://auto365.vn/chi-nhanh"> Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="a365hq-nr-svg" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></article></section></section>
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
 
@@ -867,15 +961,15 @@
         </div>
 
         <div class="cert-grid">
-          <figure class="cert"><img src="assets/cert-3m-pro-shop.jpg" alt="3M Pro Shop Certificate"><figcaption>3M™ Pro Shop Certificate</figcaption></figure>
-          <figure class="cert"><img src="assets/cert-preferred-installer.jpg" alt="Preferred Installer"><figcaption>Preferred Installer</figcaption></figure>
-          <figure class="cert"><img src="assets/cert-training-center-event.jpg" alt="3M Training Center"><figcaption>3M™ Training Center</figcaption></figure>
-          <figure class="cert"><img src="assets/cert-distributor-365group.jpg" alt="365Group hồ sơ phân phối 3M"><figcaption>365Group · hồ sơ phân phối 3M</figcaption></figure>
+          <figure class="cert"><img src="assets/cert-3m-pro-shop.jpg" alt="3M Pro Shop Certificate" loading="lazy" width="300" height="225"><figcaption>3M™ Pro Shop Certificate</figcaption></figure>
+          <figure class="cert"><img src="assets/cert-preferred-installer.jpg" alt="Preferred Installer" loading="lazy" width="300" height="225"><figcaption>Preferred Installer</figcaption></figure>
+          <figure class="cert"><img src="assets/cert-training-center-event.jpg" alt="3M Training Center" loading="lazy" width="300" height="225"><figcaption>3M™ Training Center</figcaption></figure>
+          <figure class="cert"><img src="assets/cert-distributor-365group.jpg" alt="365Group hồ sơ phân phối 3M" loading="lazy" width="300" height="225"><figcaption>365Group · hồ sơ phân phối 3M</figcaption></figure>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt">
       <div class="container">
         <h2 class="section-title">Quyền lợi khi dán 3M CR BLK 60 tại Auto365</h2>
 
@@ -889,7 +983,7 @@
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">FAQ về CR BLK 60</h2>
 
@@ -922,6 +1016,10 @@
             <summary>Bảo hành CR BLK 60 như thế nào?</summary>
             <p>3M Việt Nam công bố phim ô tô được hỗ trợ bảo hành lên tới 10 năm khi bán, lắp đặt và kích hoạt theo chính sách áp dụng. Chủ xe cần nhận thông tin tra cứu eWarranty sau thi công.</p>
           </details>
+          <details>
+            <summary>Giá kính lái CR BLK 60 bao nhiêu?</summary>
+            <p>Giá kính lái tham khảo từ 5.700.000đ (đã gồm VAT) theo bảng giá hệ thống 08/2026. Đây là giá tham khảo, cần xác nhận lại theo cấu hình xe và chương trình hiện hành trước khi đặt lịch.</p>
+          </details>
         </div>
 
         <div class="source-box">
@@ -943,7 +1041,7 @@
             <h2>Ưu tiên đi đêm? So CR BLK 60 với 50 trên chính kính xe của bạn</h2>
             <p>Gửi dòng xe, năm sản xuất, tình trạng kính/phim hiện tại và tỷ lệ đi ngày–đêm. Auto365 sẽ đo kính nền, đặt CR BLK 60 cạnh CR BLK 50 nếu cần và tư vấn theo mức sáng bạn thực sự muốn trước khi chốt cấu hình.</p>
           </div>
-          <button class="btn btn-primary" type="button" data-open-zalo>Nhận tư vấn CR BLK 60</button>
+          <button class="btn btn-primary" type="button" data-open-zalo>Xem giá / nhận tư vấn</button>
         </div>
       </div>
     </section>
@@ -959,10 +1057,9 @@
     </div>
   </footer>
 
-  <div class="mobile-sticky">
+  <div class="mobile-sticky" style="grid-template-columns:1fr 1.4fr">
     <a href="tel:+84365365365">Gọi ngay</a>
-    <a href="#thong-so">Thông số</a>
-    <button class="hot" type="button" data-open-zalo>Tư vấn CR BLK 60</button>
+    <a class="hot" href="#fit-check">Tìm mã phim phù hợp</a>
   </div>
 
   <section class="film-lead-modal" id="film-lead-modal" hidden aria-labelledby="film-lead-title" role="dialog" aria-modal="true">
@@ -971,13 +1068,12 @@
       <h2 id="film-lead-title">Nhận tư vấn miễn phí</h2>
       <form id="film-lead-form">
         <div class="film-lead-grid">
-          <div class="film-lead-field"><label for="film-lead-name">Họ và tên</label><input id="film-lead-name" name="name" autocomplete="name" placeholder="Nhập họ tên" required></div>
-          <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
-          <div class="film-lead-field"><label for="film-lead-vehicle">Dòng xe / đời xe <small>(không bắt buộc)</small></label><input id="film-lead-vehicle" name="vehicle" placeholder="VD: Ford Ranger, VF5, CX-5"></div>
+          <div class="film-lead-field"><label for="film-lead-vehicle">Dòng xe</label><input id="film-lead-vehicle" name="vehicle" placeholder="VD: Ford Ranger, VF5, CX-5" required></div>
+          <div class="film-lead-field"><label for="film-lead-year">Năm xe</label><input id="film-lead-year" name="year" inputmode="numeric" placeholder="VD: 2022"></div>
           <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
-          <div class="film-lead-field"><label for="film-lead-need">Nhu cầu ưu tiên</label><select id="film-lead-need" name="need"><option>Ưu tiên kính lái sáng</option><option>Cân bằng chống nóng và quan sát</option><option>Tăng riêng tư khoang sau</option></select></div>
-          <div class="film-lead-field"><label for="film-lead-package">Gói đang quan tâm</label><select id="film-lead-package" name="package"><option>3M Crystalline CR BLK 60</option><option>3M Crystalline CR BLK</option><option>3M Crystalline Hybrid</option></select></div>
-          <div class="film-lead-field full"><label for="film-lead-note">Nhu cầu thêm <small>(không bắt buộc)</small></label><textarea id="film-lead-note" name="note" placeholder="Đi đêm nhiều, tình trạng kính/phim hiện tại, có panorama..."></textarea></div>
+          <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
+          <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Ưu tiên kính lái sáng</option><option>Cân bằng chống nóng và quan sát</option><option>Tăng riêng tư khoang sau</option></select></div>
+          <input type="hidden" id="film-lead-package" name="package" value="3M Crystalline CR BLK 60">
         </div>
         <p class="film-lead-instruction">Sau khi mở Zalo, anh/chị cần dán nội dung và bấm gửi. Thông tin chưa được gửi tự động.</p>
         <textarea id="film-lead-message" class="film-lead-message" readonly aria-label="Nội dung tư vấn để sao chép"></textarea>
@@ -1008,40 +1104,39 @@
     (function(){
       var form=document.querySelector("[data-fit-form]");
       if(!form)return;
+      var chipGroup=form.querySelector('[data-chip-group="priority"]');
+      var chips=chipGroup?[].slice.call(chipGroup.querySelectorAll(".chip")):[];
+      var priority="visibility";
+      chips.forEach(function(chip){
+        chip.addEventListener("click",function(){
+          chips.forEach(function(c){c.classList.remove("active");c.setAttribute("aria-pressed","false");});
+          chip.classList.add("active");chip.setAttribute("aria-pressed","true");
+          priority=chip.dataset.value;
+        });
+      });
       form.addEventListener("submit",function(event){
         event.preventDefault();
         var position=form.querySelector("[name=position]").value;
-        var night=form.querySelector("[name=night]").value;
-        var priority=form.querySelector("[name=priority]").value;
         var result=document.querySelector("[data-fit-result]");
-        var rec={code:"CR BLK 60",reason:"Mã sáng nhất trong bộ 40/50/60 trên Auto 75; phù hợp khi ưu tiên quan sát và đi đêm."};
+        var rec={code:"CR BLK 60",reason:"Mã sáng nhất trong bộ 40/50/60 trên Auto 75; phù hợp để xem trước khi ưu tiên quan sát và đi đêm."};
         if(position==="roof"){
           rec={advisory:true,title:"Cần kiểm tra riêng",reason:"Cửa sổ trời/panorama khác nhau theo xe; cần kiểm tra kính nền, nhiệt độ khoang và hướng dẫn vật liệu trước khi chọn CR BLK."};
         }else if(position==="windshield"){
-          if(priority==="privacy"){
-            rec=night==="rare"
-              ?{code:"CR BLK 40 hoặc CR BLK 50",reason:"Ít đi đêm và muốn kính lái đằm nhất trong bộ: CR BLK 40 (VLT 41%, giảm chói 44%) là mã nên xem trước, đặt cạnh 50 để so; vẫn giữ tầm nhìn an toàn nên không đi xuống mã tối hơn."}
-              :{code:"CR BLK 50",reason:"Kính lái ưu tiên giữ tầm nhìn an toàn; CR BLK 50 giảm chói tốt hơn 60 (34% so với 22%) mà vẫn giữ VLT 48%. Nếu hiếm khi đi đêm mới nên cân nhắc 40."};
-          }
-          else if(priority==="balance"){
-            rec=night==="rare"
-              ?{code:"CR BLK 50 hoặc CR BLK 40",reason:"Đi ngày là chính: so CR BLK 50 với 40 để chọn mức dịu; 40 giảm chói hơn 50 thêm 10 điểm nhưng cần xem mẫu kỹ nếu có lúc chạy đêm."}
-              :night==="sometimes"
-                ?{code:"CR BLK 50 hoặc CR BLK 60",reason:"Đi ngày nhiều nhưng vẫn có đêm: đặt CR BLK 50 cạnh 60 để so trực tiếp; 60 sáng hơn 9 điểm VLT, 50 giảm chói hơn 12 điểm."}
-                :{code:"CR BLK 60 hoặc CR BLK 50",reason:"Đi đêm thường xuyên: bắt đầu với CR BLK 60 (VLT 57%), so với 50 nếu thấy chưa đủ dịu ban ngày."};
-          }
-          else{rec={code:"CR BLK 60",reason:"Ưu tiên quan sát: CR BLK 60 với VLT 57% trên Auto 75 là mã nên xem trước; vẫn đo kính nền và xem mẫu từ ghế lái."};}
+          if(priority==="privacy"){rec={code:"CR BLK 40 hoặc CR BLK 50",reason:"Cần riêng tư hơn ở kính lái vẫn nên ưu tiên tầm nhìn an toàn nên không đi xuống mã quá tối; CR BLK 40 (giảm chói 44%) hoặc CR BLK 50 (giảm chói 34%) phù hợp để xem trước, đặt cạnh nhau để so."};}
+          else if(priority==="night"){rec={code:"CR BLK 60",reason:"Đi đêm nhiều: CR BLK 60 (VLT 57% trên Auto 75) nên cân nhắc trước trong nhóm 40/50/60; vẫn cần đo kính nền và xem mẫu thực tế từ ghế lái."};}
+          else if(priority==="balance"){rec={code:"CR BLK 50 hoặc CR BLK 60",reason:"Cân bằng sáng và giảm chói: nên xem mẫu thực tế CR BLK 50 và 60 cạnh nhau; 60 sáng hơn khoảng 9 điểm VLT, 50 giảm chói hơn khoảng 12 điểm."};}
+          else{rec={code:"CR BLK 60",reason:"Ưu tiên kính sáng: CR BLK 60 (VLT 57% trên Auto 75) phù hợp để xem trước; cần kiểm tra kính nền vì kết quả thực tế phụ thuộc kính nguyên bản."};}
         }else if(position==="front"){
-          if(priority==="privacy"){rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Kính sườn trước muốn kín hơn: CR BLK 40 giữ được quan sát gương hông tốt hơn 35; xem cả hai sau khi đo kính nền."};}
-          else if(priority==="visibility"||night==="often"){rec={code:"CR BLK 60 hoặc CR BLK 50",reason:"Kính sườn trước ảnh hưởng quan sát gương và bên hông; bắt đầu với 60 nếu muốn sáng, so với 50 nếu cần dịu hơn."};}
-          else{rec={code:"CR BLK 50 hoặc CR BLK 40",reason:"Cân bằng độ sáng và giảm chói ở hàng kính trước; ít đi đêm thì đặt thêm 40 cạnh 50 để so."};}
+          if(priority==="privacy"){rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Kính sườn trước cần riêng tư hơn: CR BLK 40 giữ quan sát gương hông tốt hơn 35; nên xem cả hai sau khi đo kính nền."};}
+          else if(priority==="night"||priority==="visibility"){rec={code:"CR BLK 60 hoặc CR BLK 50",reason:"Kính sườn trước ảnh hưởng quan sát gương và bên hông; nên xem trước CR BLK 60 nếu muốn sáng, đối chiếu 50 nếu cần dịu hơn."};}
+          else{rec={code:"CR BLK 50 hoặc CR BLK 40",reason:"Cân bằng độ sáng và giảm chói ở hàng kính trước; nên đặt CR BLK 50 và 40 cạnh nhau để so mẫu thực tế."};}
         }else if(position==="rear"||position==="back"){
-          if(priority==="privacy"){rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"Kính sau/kính lưng thường ưu tiên riêng tư; CR BLK 60 quá sáng cho mục tiêu này. Xem 35/15 sau khi đo kính nền và kiểm tra camera/gương."};}
-          else if(priority==="visibility"||night==="often"){rec={code:"CR BLK 50 hoặc CR BLK 60",reason:"Nếu cần quan sát khoang sau rõ, bắt đầu với mã sáng rồi so với mã tối hơn khi cần riêng tư."};}
-          else{rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"So giữa riêng tư và độ sáng cabin: 40 sáng hơn một chút cho tầm nhìn phía sau, 35 kín hơn; quyết định theo kính nền và camera/gương."};}
+          if(priority==="privacy"){rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"Kính sau/kính lưng cần riêng tư hơn thì CR BLK 60 chưa phù hợp cho mục tiêu này; nên xem 35/15 sau khi đo kính nền và kiểm tra camera/gương."};}
+          else if(priority==="night"||priority==="visibility"){rec={code:"CR BLK 50 hoặc CR BLK 60",reason:"Cần quan sát khoang sau rõ hơn thì nên xem trước mã sáng, rồi đối chiếu mã tối hơn nếu sau đó cần riêng tư."};}
+          else{rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Cân bằng giữa riêng tư và độ sáng cabin: nên xem mẫu 40 và 35 cạnh nhau, quyết định theo kính nền và camera/gương."};}
         }
-        var heading=rec.advisory?rec.title:"Mã nên xem trước: "+rec.code;
-        result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền. Muốn phối cho toàn xe? <a class=\"inline-link\" href=\"https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh\">Xem cách chọn mã CR BLK theo từng vị trí kính</a>.</p>";
+        var heading=rec.advisory?rec.title:"Nên cân nhắc: "+rec.code;
+        result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng cần xác nhận sau khi đo kính nền và xem mẫu thực tế. Muốn phối cho toàn xe? <a class=\"inline-link\" href=\"https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh\">Xem cách chọn mã CR BLK theo từng vị trí kính</a>.</p>";
       });
     })();
     (function(){
@@ -1053,7 +1148,7 @@
         if(label&&/hybrid/i.test(label)) packageField.value='3M Crystalline Hybrid';
         else if(label&&/crystalline cr blk$/i.test(label.trim())) packageField.value='3M Crystalline CR BLK';
         else packageField.value='3M Crystalline CR BLK 60';
-        modal.hidden=false;document.body.classList.add('film-lead-open');form.elements.name.focus();
+        modal.hidden=false;document.body.classList.add('film-lead-open');form.elements.vehicle.focus();
       }
       function closeModal(){modal.hidden=true;document.body.classList.remove('film-lead-open');if(lastFocus)lastFocus.focus();}
       document.querySelectorAll('[data-open-zalo]').forEach(function(btn){btn.addEventListener('click',function(){openModal('');});});
@@ -1069,7 +1164,7 @@
         event.preventDefault();if(!form.reportValidity())return;
         var data=new FormData(form),phone=String(data.get('phone')||'').trim();
         if(!/^(?:\+84|0)(?:[ .-]?\d){8,10}$/.test(phone)){status.textContent='Vui lòng nhập số điện thoại Việt Nam hợp lệ.';form.elements.phone.focus();return;}
-        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Họ tên: '+data.get('name'),'Số điện thoại: '+phone,'Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Nhu cầu: '+data.get('need'),'Gói quan tâm: '+data.get('package'),'Ghi chú: '+(data.get('note')||'Không có')].join('\n');
+        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Gói quan tâm: '+data.get('package')].join('\n');
         messageField.value=message;
         var zaloUrl='https://zalo.me/3820993010764366025';
         var openZalo=function(){var popup=window.open(zaloUrl,'_blank','noopener');return !!popup;};
