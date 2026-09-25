@@ -1928,7 +1928,7 @@ lucide-react/dist/esm/lucide-react.mjs:
         const rest = visibleCount - Math.min(visibleCount, LIMIT);
         moreBtn.hidden = filtering || visibleCount <= LIMIT;
         moreBtn.setAttribute('aria-expanded', String(state.expanded));
-        moreBtn.textContent = state.expanded ? 'Thu gọn danh sách' : 'Xem thêm ' + rest + ' sản phẩm';
+        moreBtn.textContent = state.expanded ? 'Thu gọn' : 'Xem thêm sản phẩm';
       }
       grid.classList.add('is-expanded');
       grid.classList.toggle('has-no-results', visibleCount === 0);
