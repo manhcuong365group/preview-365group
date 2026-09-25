@@ -81,7 +81,10 @@
     .hero-price-note{font-size:12px;color:#aeb5bf;margin-top:5px}
     .hero-offer .btn{white-space:nowrap}    .quick-facts{display:flex;flex-wrap:wrap;gap:9px 16px;color:#b9bec6;font-size:12px;margin-top:12px}
     .quick-facts span{display:inline-flex;align-items:center;gap:8px}
-    .quick-facts i{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px rgba(215,25,32,.14)}    .hero-visual{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:24px;background:#111417;min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;overflow:hidden}
+    .quick-facts i{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 0 4px rgba(215,25,32,.14)}    .hero-media{display:flex;flex-direction:column;gap:16px}
+    .hero-visual{position:relative;border:1px solid rgba(255,255,255,.14);border-radius:24px;background:#111417;min-height:200px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px;overflow:hidden}
+    .fit-check-hero{box-shadow:0 20px 50px rgba(0,0,0,.35)}
+    .fit-check-hero h2{font-size:clamp(18px,2.2vw,21px)}
     .hero-visual svg{width:64px;height:64px;color:#4b525c}
     .hero-visual b{font-family:var(--display);font-size:14px;font-weight:600;color:#c8ccd3}
     .hero-visual span{font-size:12px;color:#6b7480;max-width:280px}
@@ -104,6 +107,12 @@
     .answer-bullets li svg{flex:0 0 20px;width:20px;height:20px;color:var(--red);margin-top:1px}
     .verdict-block{margin-top:18px;border:1px solid var(--line);border-radius:16px;padding:18px 20px;background:var(--soft)}
     .verdict-block p{margin:0;font-size:14px;color:var(--text);line-height:1.65}
+    .hero .answer-bullets{margin-top:28px}
+    .hero .answer-bullets li{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe2e6}
+    .hero .answer-bullets li svg{color:#ff8f99}
+    .hero .verdict-block{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14)}
+    .hero .verdict-block p{color:#c8ccd3}
+    .hero .verdict-block strong{color:#fff}
     .spec-card{position:relative}
     .spec-card svg{width:22px;height:22px;color:var(--red);margin:0 auto 8px}
     .tds-note{font-size:11px;color:var(--muted);margin-top:6px}
@@ -707,29 +716,23 @@
               <b>Ảnh xe / kính lái CR BLK 60</b>
               <span>Vị trí dành cho ảnh thật do CMS/đội hình ảnh bổ sung — chưa dùng ảnh minh họa dàn dựng.</span>
             </div>
+            <div class="fit-check fit-check-hero" id="fit-check" aria-label="CR BLK 60 có phù hợp với xe của bạn?">
+              <h2>CR BLK 60 có phù hợp với xe của bạn?</h2>
+              <form data-fit-form>
+                <div class="chip-group" role="radiogroup" aria-label="Ưu tiên sử dụng" data-chip-group="priority">
+                  <button type="button" class="chip active" data-value="visibility" aria-pressed="true">Ưu tiên kính sáng</button>
+                  <button type="button" class="chip" data-value="night" aria-pressed="false">Đi đêm nhiều</button>
+                  <button type="button" class="chip" data-value="balance" aria-pressed="false">Cân bằng sáng / giảm chói</button>
+                  <button type="button" class="chip" data-value="privacy" aria-pressed="false">Cần riêng tư hơn</button>
+                </div>
+                <div class="field-row">
+                  <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
+                </div>
+                <button class="fit-submit" type="submit">Tìm mã phim phù hợp</button>
+                <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Tìm mã phim phù hợp" để xem gợi ý</strong><p>Đã chọn sẵn "Ưu tiên kính sáng" — đổi lựa chọn nếu cần rồi bấm nút để xem CR BLK 60 nên cân nhắc hay nên xem mẫu 50/40 trước.</p></div>
+              </form>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="fit-check" aria-label="CR BLK 60 có phù hợp với xe của bạn?" style="padding-top:22px;padding-bottom:22px">
-      <div class="container">
-        <div class="fit-check">
-          <h2>CR BLK 60 có phù hợp với xe của bạn?</h2>
-          <p class="section-desc">Chọn ưu tiên gần nhất với nhu cầu của bạn để xem CR BLK 60 có nên cân nhắc hay nên đối chiếu với 50/40 trước.</p>
-          <form data-fit-form>
-            <div class="chip-group" role="radiogroup" aria-label="Ưu tiên sử dụng" data-chip-group="priority">
-              <button type="button" class="chip active" data-value="visibility" aria-pressed="true">Ưu tiên kính sáng</button>
-              <button type="button" class="chip" data-value="night" aria-pressed="false">Đi đêm nhiều</button>
-              <button type="button" class="chip" data-value="balance" aria-pressed="false">Cân bằng sáng / giảm chói</button>
-              <button type="button" class="chip" data-value="privacy" aria-pressed="false">Cần riêng tư hơn</button>
-            </div>
-            <div class="field-row">
-              <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
-            </div>
-            <button class="fit-submit" type="submit">Tìm mã phim phù hợp</button>
-            <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Tìm mã phim phù hợp" để xem gợi ý</strong><p>Đã chọn sẵn "Ưu tiên kính sáng" — đổi lựa chọn nếu cần rồi bấm nút để xem CR BLK 60 nên cân nhắc hay nên xem mẫu 50/40 trước.</p></div>
-          </form>
         </div>
 
         <ul class="answer-bullets" aria-label="CR BLK 60 phù hợp với ai?">
