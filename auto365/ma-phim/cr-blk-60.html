@@ -402,41 +402,29 @@
       .section-title{font-size:22px}
       .mobile-sticky a{font-size:13px}
     }
-    /* Tech + video block: video column sized to the reel, tech cards fill remaining height. */
-    .evidence-merge{grid-template-columns:minmax(0,1fr) 380px;gap:32px;align-items:stretch}
-    .evidence-col{display:flex;flex-direction:column;min-width:0}
-    .evidence-col .section-desc{margin-bottom:14px}
-    .evidence-col .tech-grid.tech-grid-stack{flex:1;display:grid;grid-template-columns:1fr;grid-auto-rows:1fr;gap:12px;margin-top:14px}
-    .tech-grid-stack .tech{display:grid;grid-template-columns:132px 1fr;grid-template-rows:auto auto;column-gap:20px;align-content:center;padding:22px 24px}
-    .tech-grid-stack .tech .big{grid-row:1/3;align-self:center;font-size:44px}
-    .tech-grid-stack .tech h3{margin:0 0 4px;align-self:end}
-    .tech-grid-stack .tech p{align-self:start}
-    .video-placeholder{width:100%;max-width:380px;background:#111417;border-radius:18px}
-    .video-embed{max-width:none;width:100%}
-    .video-embed iframe{aspect-ratio:9/16;width:100%}
-    @media(max-width:900px){.evidence-merge{grid-template-columns:1fr}.video-placeholder{margin-inline:auto}}
-    @media(max-width:640px){.tech-grid-stack .tech{grid-template-columns:1fr;padding:18px}.tech-grid-stack .tech .big{grid-row:auto;font-size:36px;margin-bottom:8px}}
     /* Rhythm + contrast pass */
     .section{padding:22px 0}
     .section.alt{background:#f7f6f3}
     .section-title{font-weight:600;color:#1d2127;position:relative;padding-top:12px}
     .section-title::before{content:"";position:absolute;left:0;top:0;width:28px;height:3px;border-radius:2px;background:var(--red)}
-    .process{background:#111316!important;color:#fff;padding:36px 0!important}
-    .process .section-title{color:#fff}
-    .process .section-desc{color:#b8bec7}
-    .steps{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:s}
-    .steps li{position:relative;background:#1b1e23;border:1px solid #2c3037;border-radius:16px;padding:18px 16px}
-    .steps .n{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:15px;margin-bottom:12px}
-    .steps h3{font-family:var(--display);font-size:15px;font-weight:600;color:#fff;margin:0 0 6px}
-    .steps p{margin:0;font-size:13px;color:#aeb5bf;line-height:1.5}
-    .steps li:not(:last-child)::after{content:"";position:absolute;top:34px;right:-12px;width:12px;height:2px;background:#3a3f47}
-    .process-reviewer{display:flex;align-items:center;gap:12px;margin:18px 0 0;font-size:13px;color:#b8bec7}
-    .process-reviewer a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
-    .rv{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#fff;color:#111316;font-weight:700;font-size:13px;flex:0 0 36px}
-    @media(max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}.steps li::after{display:none}}
-    @media(max-width:640px){.section{padding:18px 0}.process{padding:28px 0!important}
-      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:-11px;padding:2px 11px 8px;scroll-padding-inline:11px;gap:10px}
-      .steps::-webkit-scrollbar{display:none}.steps li{flex:0 0 70%;scroll-snap-align:start}}
+    .process-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 24px 26px}
+    .process-title{font-family:var(--display);font-size:clamp(20px,2.3vw,25px);font-weight:600;color:#1d2127;margin:0 0 6px;letter-spacing:-.02em}
+    .process-title .red{color:var(--red)}
+    .process-sub{margin:0;font-size:14px;color:var(--muted)}
+    .steps8{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(8,1fr)}
+    .steps8 li{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:12px}
+    .steps8 li:not(:last-child)::after{content:"";position:absolute;top:21px;left:calc(50% + 28px);width:calc(100% - 56px);height:2px;background:linear-gradient(90deg,var(--red),rgba(215,25,32,.08))}
+    .steps8 .n{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:16px;box-shadow:0 0 0 5px #fdecec}
+    .steps8 .t{font-size:13px;color:#30343a;line-height:1.35;padding:0 4px}
+    @media(max-width:900px){.steps8{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px}.steps8::-webkit-scrollbar{display:none}.steps8 li{flex:0 0 108px;scroll-snap-align:start}.steps8 li:not(:last-child)::after{left:calc(50% + 26px);width:calc(100% - 52px)}}
+    @media(max-width:640px){.process-card{padding:18px 16px 20px}.steps8 li{flex-basis:96px}.steps8 .t{font-size:12.5px}}
+    .real-wrap{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:40px;align-items:center}
+    .real-copy .btn{margin-top:18px}
+    .real-copy .section-desc+.section-desc{margin-top:10px}
+    .video-placeholder{width:100%;max-width:360px;border-radius:18px;background:#111417;margin-inline:auto}
+    .video-embed{max-width:none;width:100%}
+    .video-embed iframe{width:100%;aspect-ratio:9/16}
+    @media(max-width:900px){.real-wrap{grid-template-columns:1fr;gap:20px}}
   </style>
 
   <script type="application/ld+json">
@@ -838,31 +826,35 @@
       </div>
     </section>
 
-    <section class="section" id="xe-thuc-te">
+    <section class="section" aria-labelledby="tech-title">
       <div class="container">
-        <div class="evidence-merge">
-          <div class="evidence-col">
-            <h2 class="section-title">Công nghệ nào tạo nên CR BLK 60?</h2>
-            <div class="tech-grid tech-grid-stack">
+        <h2 class="section-title" id="tech-title">Công nghệ nào tạo nên CR BLK 60?</h2>
+        <div class="tech-grid">
               <article class="tech"><div class="big">200+</div><h3>Lớp quang học siêu mỏng</h3><p>3M mô tả cấu trúc MOF gồm hơn 200 lớp trong một màng phim rất mỏng.</p></article>
               <article class="tech"><div class="big">0</div><h3>Kim loại trong cấu trúc</h3><p>Thiết kế phi kim giúp hạn chế nguy cơ gây nhiễu GPS, điện thoại, 5G và các tín hiệu điện tử phổ biến.</p></article>
               <article class="tech"><div class="big">99,9%</div><h3>Chặn tia UV</h3><p>Trên cả hai điều kiện kính tham chiếu, CR BLK 60 giữ mức chặn UV 99,8–99,9%, gần như toàn bộ tia UV.</p></article>
             </div>
-          </div>
+      </div>
+    </section>
 
-          <div class="evidence-col">
-            <h2 class="section-title">CR BLK 60 trên xe thực tế</h2>
-            <p class="section-desc">Video thi công thực tế do Auto365.vn - Trụ Sở Chính đăng công khai trên Facebook.</p>
-            <div class="video-placeholder">
-              <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false&width=380" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
+    <section class="section alt" id="xe-thuc-te" aria-labelledby="real-title">
+      <div class="container">
+        <div class="real-wrap">
+          <div class="real-copy">
+            <h2 class="section-title" id="real-title">CR BLK 60 trên xe thực tế</h2>
+            <p class="section-desc">Porsche Panamera 4 E-Hybrid dán CR BLK 60 ở kính lái tại Auto365 — video do Auto365.vn - Trụ Sở Chính đăng công khai trên Facebook.</p>
+            <p class="section-desc">Muốn xem độ sáng thực tế trên xe của bạn? Auto365 đặt mẫu CR BLK 60 cạnh CR BLK 50 từ ghế lái trước khi chốt.</p>
+            <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
+          </div>
+          <div class="video-placeholder">
+              <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false&width=360" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
               <div class="video-caption"><strong>Porsche Panamera 4 E-Hybrid dán CR BLK 60 tại Auto365</strong>Nguồn: <a class="inline-link" style="color:#ff8f99" href="https://www.facebook.com/reel/1114943977858429" target="_blank" rel="noopener">Auto365.vn - Trụ Sở Chính trên Facebook</a>.</div>
             </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">CR BLK 60 nằm trong gói nào của Auto365?</h2>
         <p class="section-desc">CR BLK 60 xuất hiện ở vị trí kính lái trong cả hai gói dưới đây — Crystalline CR BLK và Crystalline Hybrid. Giá trọn gói tùy vào loại xe và phạm vi kính thi công.</p>
@@ -903,20 +895,24 @@
 
     <section class="section process" aria-labelledby="process-title">
       <div class="container">
-        <h2 class="section-title" id="process-title">Quy trình dán CR BLK 60 tại Auto365</h2>
-        <p class="section-desc">Đo kính nền trước, chốt cấu hình từng ô kính rồi mới thi công — để độ sáng sau khi dán đúng với mức bạn đã chọn.</p>
-        <ol class="steps">
-          <li><span class="n">1</span><h3>Tư vấn &amp; đo kính nền</h3><p>Hỏi thói quen đi ngày/đêm, đo và ghi VLT kính nguyên bản.</p></li>
-          <li><span class="n">2</span><h3>Xem mẫu thực tế</h3><p>Đặt mẫu CR BLK 60 cạnh CR BLK 50 từ ghế lái để so độ sáng.</p></li>
-          <li><span class="n">3</span><h3>Chốt cấu hình</h3><p>Chọn mã cho từng ô kính và báo giá theo đúng xe.</p></li>
-          <li><span class="n">4</span><h3>Thi công</h3><p>Tháo phim cũ miễn phí, vệ sinh kính và dán phim 3M chính hãng.</p></li>
-          <li><span class="n">5</span><h3>Nghiệm thu &amp; bảo hành</h3><p>Kiểm tra GPS, ETC/VETC, camera, HUD; kích hoạt eWarranty 3M.</p></li>
-        </ol>
-        <p class="process-reviewer"><span class="rv">ĐH</span>Quy trình kiểm duyệt kỹ thuật bởi <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> — Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center</p>
+        <div class="process-card">
+          <h2 class="process-title" id="process-title">8 bước Auto365 kiểm tra <span class="red">trước khi bàn giao</span></h2>
+          <p class="process-sub">Thời gian thi công tham khảo cho cấu hình trọn xe khoảng 2–4 giờ với xe không cần xử lý đặc biệt.</p>
+          <ol class="steps8">
+            <li><span class="n">1</span><span class="t">Kiểm tra xe</span></li>
+            <li><span class="n">2</span><span class="t">Chốt nhu cầu</span></li>
+            <li><span class="n">3</span><span class="t">Chọn mã phim</span></li>
+            <li><span class="n">4</span><span class="t">Chốt phạm vi</span></li>
+            <li><span class="n">5</span><span class="t">Đối chiếu vật liệu</span></li>
+            <li><span class="n">6</span><span class="t">Thi công</span></li>
+            <li><span class="n">7</span><span class="t">Kiểm tra lại</span></li>
+            <li><span class="n">8</span><span class="t">Bàn giao &amp; eWarranty</span></li>
+          </ol>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt">
       <div class="container">
         <h2 class="section-title">Quyền lợi khi dán 3M CR BLK 60 tại Auto365</h2>
 
@@ -930,7 +926,7 @@
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
         <p class="section-desc">Từ điểm thi công, tư vấn cấu hình, xe thực tế đến hồ sơ eWarranty — Auto365 công khai thông tin để khách hàng kiểm tra trước và sau khi sử dụng dịch vụ.</p>
@@ -951,7 +947,7 @@
       </div>
     </section>
 
-    <section class="section" aria-label="Hệ thống Auto365">
+    <section class="section alt" aria-label="Hệ thống Auto365">
       <div class="container">
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><symbol id="a365hq-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol><symbol id="a365hq-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="a365hq-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="12" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></symbol><symbol id="a365hq-i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><!-- Branch coverage illustration system --><symbol id="a365hq-il-khue-van-cac" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/><path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"/></g></symbol><symbol id="a365hq-il-cau" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/><path d="M9 36.5h30"/></g></symbol><symbol id="a365hq-il-cao-oc" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/><path d="M28 11h10"/></g></symbol><symbol id="a365hq-il-vn" viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></symbol></svg><div class="hqx-grid">
   <article class="hqx-card">
@@ -981,7 +977,7 @@
       </div>
     </section>
 
-    <section class="section alt">
+    <section class="section">
       <div class="container">
         <h2 class="section-title">FAQ về CR BLK 60</h2>
 
@@ -1032,7 +1028,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section alt">
       <div class="container">
         <div class="final-cta">
           <div>
