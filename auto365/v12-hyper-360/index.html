@@ -403,6 +403,26 @@ main>section:nth-of-type(even){background:#f8f9fa!important}
 }
 
 /* v4 layout polish */
+.faq-combo{display:block}
+.cz-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.cz-card{border:1px solid var(--a365-line);border-radius:14px;background:#fff;overflow:hidden;display:flex;flex-direction:column;color:inherit;text-decoration:none;transition:.18s}.cz-card:hover{box-shadow:0 10px 24px rgba(18,24,40,.06);transform:translateY(-2px)}.cz-card figure{margin:0}.cz-card img{width:100%;height:auto!important;aspect-ratio:16/9;object-fit:cover;display:block}.cz-body,.cz-more>div{padding:12px 14px;display:flex;flex-direction:column;gap:4px;flex:1}.cz-card b{font-size:14.5px;color:#2c2f33}.cz-card b span{font-weight:500;color:#6d7681}.cz-card small{font-size:12.5px;color:#6d7681}.cz-card em{font-style:normal;font-size:13px;color:#ef233c;font-weight:600;margin-top:auto;padding-top:6px}.cz-more{background:#fff8f9;border-color:#f3d3d8;justify-content:center}.cz-more>div{justify-content:center}
+.dl-box{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;border:1px solid #f3d3d8;border-radius:18px;background:#fff;padding:24px!important}.dl-main p{font-size:14.5px;color:#5f646b;line-height:1.7;margin:10px 0 0}.dl-main a{color:#ef233c}.dl-checks{list-style:none;padding:0;margin:14px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:8px}.dl-checks li{border:1px solid var(--a365-line);border-radius:10px;padding:9px 12px;font-size:13.5px;color:#2c2f33}.dl-checks li::before{content:"✓ ";color:#1a9b5c;font-weight:700}.dl-side{display:flex;flex-direction:column;gap:8px}.dl-big{font-size:20px;color:#2c2f33;margin-bottom:4px}.dl-side>a:not(.dl-find){display:flex;justify-content:space-between;border:1px solid var(--a365-line);border-radius:10px;padding:10px 14px;color:#2c2f33;text-decoration:none;font-size:14px}.dl-side>a b{color:#ef233c}.dl-btns{display:flex;gap:8px;margin-top:6px}.dl-btns .btn{flex:1;justify-content:center;padding:10px}.dl-find{font-size:13.5px;color:#ef233c;text-align:center;font-weight:600}
+.hq-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.hq-card{border:1px solid var(--a365-line);border-radius:16px;background:#fff;padding:20px;display:flex;flex-direction:column;gap:12px}.hq-title{font-size:20px;margin:0;color:#2c2f33}.hq-addr{margin:0;color:#6d7681;font-size:14px}.hq-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}.hq-facts>div,.hq-regions>a{border:1px solid var(--a365-line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;text-decoration:none}.hq-facts small,.hq-regions small{font-size:12px;color:#6d7681}.hq-facts b{font-size:14px;color:#2c2f33}.hq-regions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.hq-regions b{font-size:20px;color:#ef233c}.hq-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}.hq-btns .btn,.hq-all{justify-content:center;padding:10px 14px}.hq-btns .btn{flex:1}.hq-all{margin-top:auto}.contact-section .related{margin-top:18px}
+@media (max-width:900px){.cz-grid{grid-template-columns:1fr 1fr}.dl-box,.hq-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.cz-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:2px 16px 12px;scrollbar-width:none}.cz-card{flex:0 0 72%;scroll-snap-align:start}.dl-checks,.hq-facts{grid-template-columns:1fr 1fr}.dl-box{padding:16px!important}.hq-btns .btn{flex:1 1 45%}}
+.src3{grid-template-columns:1fr 1fr!important}.src3-card:last-child{grid-column:1/-1}.src3-card:last-child .src3-list{grid-template-columns:1fr 1fr;column-gap:32px}
+@media (max-width:900px){.src3{grid-template-columns:1fr!important}.src3-card:last-child .src3-list{grid-template-columns:1fr}}
+.faq{grid-template-columns:1fr!important;gap:10px!important}.faq details{border:1px solid var(--a365-line)!important;border-radius:12px!important;background:#fff!important}.faq summary{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px!important;font-size:14.5px!important;font-weight:700;line-height:1.45;min-height:0!important;cursor:pointer;list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary .icon{color:#ef233c;flex:none;width:18px;height:18px;transition:transform .2s}.faq details[open] summary .icon{transform:rotate(180deg)}.faq-answer{background:#fff!important;padding:0 18px 14px!important;max-width:none!important;font-size:14px}
+.v12-process{border:1px solid #f3d3d8!important;background:#fff8f9!important;padding:20px 12px 14px!important}
+.faq-combo{display:grid;grid-template-columns:.9fr 1.1fr;gap:24px;align-items:start}
+.faq-combo .fit-panel{display:block!important}.faq-combo .fit-copy{margin-bottom:16px}.faq-combo .fit-copy .section-title{font-size:22px}.faq-combo .section-head{margin-bottom:12px!important}
+.src3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.src3-card{border:1px solid var(--a365-line);border-radius:16px;background:#fff;padding:18px}.src3-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ef233c;margin-bottom:10px}.src3-person{display:flex;gap:12px;align-items:center;margin-bottom:10px}.src3-av{width:44px;height:44px;border-radius:50%;background:#fff3f5;color:#ef233c;font-weight:800;font-size:13px;display:grid;place-items:center;flex:none}.src3-person b{display:block;font-size:15px;color:#2c2f33}.src3-person small{color:#6d7681;font-size:12.5px}.src3-card p{font-size:13.5px;color:#5f646b;line-height:1.6;margin:0}.src3-list{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13px;color:#5f646b;line-height:1.55}
+.sec-cta{margin-top:20px;padding:14px 18px;border:1px solid #f3d3d8;background:#fff8f9;border-radius:14px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.sec-cta>span{font-weight:600;color:#2c2f33;font-size:15px}.sec-cta-btns{display:flex;gap:8px;flex-wrap:wrap}.sec-cta .btn{padding:9px 16px;font-size:14px;min-height:0}
+@media (max-width:900px){.faq-combo,.src3{grid-template-columns:1fr}}
+@media (max-width:640px){.sec-cta{padding:12px}.sec-cta-btns{width:100%}.sec-cta .btn{flex:1 1 auto;justify-content:center}.sec-cta .btn-primary{flex:1 1 60%}.sec-cta .btn[href^="tel"]{display:none}.sec-cta>span{font-size:14px}}
+.v12-process{list-style:none;margin:0;padding:18px 8px 8px;display:grid;grid-template-columns:repeat(7,1fr);position:relative;counter-reset:step;background:#fff;border-radius:16px}.v12-process::before{content:"";position:absolute;top:34px;left:calc(100%/14);right:calc(100%/14);height:1px;background:#f3c6cd}.v12-step{counter-increment:step;position:relative;padding:0 10px 10px;text-align:center}.v12-step::before{content:"0" counter(step);display:grid;place-items:center;width:34px;height:34px;margin:0 auto 10px;border-radius:50%;border:2px solid #ef233c;background:#fff;color:#ef233c;font-size:12px;font-weight:800;position:relative;z-index:1}.v12-step h3{font-size:14.5px;font-weight:700;margin:0;color:#2c2f33;line-height:1.35}.v12-step p{font-size:12.5px;color:#6d7681;margin:5px 0 0;line-height:1.5}
+@media (max-width:900px){.v12-process{grid-template-columns:1fr;padding:4px 0;background:none}.v12-process::before{top:17px;bottom:17px;left:17px;right:auto;width:1px;height:auto}.v12-step{display:grid;grid-template-columns:34px 1fr;column-gap:14px;text-align:left;padding:0 0 14px}.v12-step::before{grid-row:span 2;margin:0}.v12-step h3{align-self:center}.v12-step p{margin-top:2px}}
+#quy-trinh .step-card p{display:none!important}#quy-trinh .step-card{display:flex;align-items:center;min-height:0!important}#quy-trinh .step-card h3{margin:0!important}
+#quy-trinh .step-icon{display:none}#quy-trinh .process-step{display:flex;flex-direction:column}#quy-trinh .step-card{flex:1;padding:16px!important}#quy-trinh .step-card h3{font-size:15px;margin:0 0 6px}#quy-trinh .step-card p{font-size:13px;line-height:1.55;margin:0}#quy-trinh .process-timeline{align-items:stretch}
 .subhead,.section-head,.section-head>div,.section-head p{max-width:none!important}.section-head>div{flex:1 1 auto;min-width:0}
 .spec-layout{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:start}.spec-aside{position:sticky;top:90px}.spec-fig{margin:0!important;max-width:none!important}
 @media (max-width:900px){.spec-layout{grid-template-columns:1fr}.spec-aside{position:static}}
@@ -517,10 +537,10 @@ main>section:nth-of-type(even){background:#f8f9fa!important}
 <div class="aio-card"><span class="card-kicker">Điểm chính</span><h3>12 chip LED theo 4 hướng, xoay chỉnh 360°</h3><p class="aio-answer">12 chip phân bổ quanh thân bóng, kết hợp cơ chế xoay giúp căn chỉnh vị trí phát sáng khi lắp.</p></div>
 <div class="aio-card"><span class="card-kicker">Điều kiện lắp</span><h3>Không chọn chỉ dựa vào tên xe</h3><p class="aio-answer">Khả năng lắp thực tế phụ thuộc chân đèn, hốc lắp, hệ thống điện và phương án căn chỉnh vùng sáng trên từng xe.</p></div>
 </div></div></section>
-<section class="section" id="thiet-ke"><div class="container"><div class="section-head"><div><span class="eyebrow">Thiết kế sản phẩm</span><h2 class="section-title">Cấu tạo nổi bật của V12 Hyper 360</h2></div></div><div class="feat-grid"><article class="feat-card"><img alt="Thiết kế 12 chip LED phân bổ theo 4 hướng quanh thân bóng X-Light V12 Hyper 360" loading="lazy" width="1600" height="1066" src="hinh/x-light-v12-hyper-360-12-chip-led.webp"/><div class="feat-body"><h3>12 chip LED bố trí 4 hướng</h3><p>Theo tài liệu sản phẩm, V12 Hyper 360 có 12 chip LED bố trí theo 4 hướng quanh thân đèn.</p><p class="feat-note">Hiệu quả chiếu sáng thực tế được kiểm tra trên cụm đèn của từng xe sau khi lắp.</p></div></article><article class="feat-card"><img alt="Cơ chế xoay chỉnh 360° khi lắp bóng LED X-Light V12 Hyper 360 vào cụm đèn" loading="lazy" width="1600" height="1066" src="hinh/x-light-v12-hyper-360-xoay-360.webp"/><div class="feat-body"><h3>Điều chỉnh xoay 360°</h3><p>Hỗ trợ xoay chỉnh 360° theo thiết kế. Khi lắp, kỹ thuật viên kiểm tra vị trí bóng rồi căn chỉnh vùng sáng theo cụm đèn của xe.</p><p class="feat-note">Cơ chế xoay không thay thế bước căn chỉnh ánh sáng sau lắp để tránh chói ngược chiều.</p></div></article><article class="feat-card"><img alt="Hệ thống tản nhiệt ống đồng kết hợp quạt của bóng LED X-Light V12 Hyper 360" loading="lazy" width="1600" height="1066" src="hinh/x-light-v12-hyper-360-tan-nhiet-ong-dong-quat.webp"/><div class="feat-body"><h3>Tản nhiệt ống đồng + quạt</h3><p>Ống đồng kết hợp quạt làm mát theo tài liệu kỹ thuật. Hốc lắp cần đủ khoảng trống cho đuôi bóng, quạt và nắp chụp bụi đóng kín.</p><p class="feat-note">Nhiệt độ vận hành thực tế còn phụ thuộc hốc lắp và điều kiện sử dụng trên từng xe.</p></div></article></div></div></section>
+<section class="section" id="thiet-ke"><div class="container"><div class="section-head"><div><span class="eyebrow">Thiết kế sản phẩm</span><h2 class="section-title">Cấu tạo nổi bật của V12 Hyper 360</h2></div></div><div class="feat-grid"><article class="feat-card"><img alt="Thiết kế 12 chip LED phân bổ theo 4 hướng quanh thân bóng X-Light V12 Hyper 360" loading="lazy" width="1600" height="1066" src="hinh/x-light-v12-hyper-360-12-chip-led.webp"/><div class="feat-body"><h3>12 chip LED bố trí 4 hướng</h3><p>Theo tài liệu sản phẩm, V12 Hyper 360 có 12 chip LED bố trí theo 4 hướng quanh thân đèn.</p><p class="feat-note">Hiệu quả chiếu sáng thực tế được kiểm tra trên cụm đèn của từng xe sau khi lắp.</p></div></article><article class="feat-card"><img alt="Cơ chế xoay chỉnh 360° khi lắp bóng LED X-Light V12 Hyper 360 vào cụm đèn" loading="lazy" width="1600" height="1066" src="hinh/x-light-v12-hyper-360-xoay-360.webp"/><div class="feat-body"><h3>Điều chỉnh xoay 360°</h3><p>Hỗ trợ xoay chỉnh 360° theo thiết kế. Khi lắp, kỹ thuật viên kiểm tra vị trí bóng rồi căn chỉnh vùng sáng theo cụm đèn của xe.</p><p class="feat-note">Cơ chế xoay không thay thế bước căn chỉnh ánh sáng sau lắp để tránh chói ngược chiều.</p></div></article><article class="feat-card"><img alt="Hệ thống tản nhiệt ống đồng kết hợp quạt của bóng LED X-Light V12 Hyper 360" loading="lazy" width="1600" height="1066" src="hinh/x-light-v12-hyper-360-tan-nhiet-ong-dong-quat.webp"/><div class="feat-body"><h3>Tản nhiệt ống đồng + quạt</h3><p>Ống đồng kết hợp quạt làm mát theo tài liệu kỹ thuật. Hốc lắp cần đủ khoảng trống cho đuôi bóng, quạt và nắp chụp bụi đóng kín.</p><p class="feat-note">Nhiệt độ vận hành thực tế còn phụ thuộc hốc lắp và điều kiện sử dụng trên từng xe.</p></div></article></div><div class="sec-cta"><span>Muốn biết V12 Hyper 360 có lắp được trên xe của bạn?</span><div class="sec-cta-btns"><a class="btn btn-primary" href="#fitment">Kiểm tra xe của tôi</a><a class="btn btn-outline" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Chat Zalo</a></div></div></div></section>
 <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Thông số kỹ thuật</span><h2 class="section-title">X-Light V12 Hyper 360</h2></div></div><div class="spec-main"><div class="spec-wrap"><table class="spec-table"><thead><tr><th>Thông số</th><th>Giá trị theo tài liệu sản phẩm</th></tr></thead><tbody>
 <tr><td>Tên sản phẩm</td><td>Bóng LED X-Light V12 Hyper 360</td></tr><tr><td>Thương hiệu</td><td>X-Light</td></tr><tr><td>Loại đèn</td><td>Bóng LED thay thế bóng Halogen</td></tr><tr><td>Vị trí sử dụng</td><td>Đèn chiếu sáng chính ô tô, trong bi cầu nguyên bản</td></tr><tr><td>Năm ra mắt</td><td>2026</td></tr><tr><td>Lựa chọn chân đèn</td><td>H7, H11 và nhóm 9005/9006/9012</td></tr><tr><td>Công suất công bố</td><td>Khoảng 55 W/đèn</td></tr><tr><td>Cấu hình chip</td><td>12 chip LED phân bổ quanh thân đèn, bố trí theo 4 hướng</td></tr><tr><td>Nhiệt màu</td><td>5.800 K</td></tr><tr><td>Cơ chế điều chỉnh</td><td>Hỗ trợ điều chỉnh xoay 360° theo thiết kế sản phẩm</td></tr><tr><td>Tản nhiệt</td><td>Ống đồng kết hợp quạt</td></tr><tr><td>Điện áp hoạt động công bố</td><td>12–16 V</td></tr><tr><td>Nhiệt độ hoạt động công bố</td><td>-40°C đến 100°C</td></tr><tr><td>Tuổi thọ công bố</td><td>30.000 giờ</td></tr><tr><td>Cấp bảo vệ công bố</td><td>IP68</td></tr><tr><td>Quy cách bán</td><td>Một cặp gồm 02 bóng</td></tr><tr><td>Bảo hành</td><td>24 tháng theo chính sách áp dụng tại thời điểm mua</td></tr>
-</tbody></table></div><p class="subhead" style="margin-top:14px">Nguồn: tài liệu sản phẩm X-Light V12 Hyper 360, đối chiếu ngày 23/09/2026. Tuổi thọ công bố (30.000 giờ) và thời hạn bảo hành (24 tháng) là hai thông tin khác nhau.</p></div></div></section>
+</tbody></table></div><p class="subhead" style="margin-top:14px">Nguồn: tài liệu sản phẩm X-Light V12 Hyper 360, đối chiếu ngày 23/09/2026. Tuổi thọ công bố (30.000 giờ) và thời hạn bảo hành (24 tháng) là hai thông tin khác nhau.</p></div><div class="sec-cta"><span>Cần tư vấn chân bóng phù hợp với xe?</span><div class="sec-cta-btns"><a class="btn btn-primary" href="#fitment">Kiểm tra xe của tôi</a><a class="btn btn-outline" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Chat Zalo</a></div></div></div></section>
 <section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Chọn đúng tình huống</span><h2 class="section-title">V12 Hyper 360 phù hợp với nhu cầu nào?</h2></div></div><div class="grid g3">
 <div class="decision-card"><div class="iconbox"><svg class="icon"><use href="#i-bulb"></use></svg></div><h3>Halogen trong bi cầu nguyên bản</h3><p>Có thể cân nhắc sau khi kiểm tra chân bóng, hốc lắp và hệ thống điện.</p><span class="status">Có thể cân nhắc</span></div>
 <div class="decision-card"><div class="iconbox"><svg class="icon"><use href="#i-car"></use></svg></div><h3>Xe điện dùng Halogen trong bi cầu</h3><p>Cần kiểm tra hệ thống điều khiển đèn trước, vì không phải xe nào cũng lắp được mà không báo lỗi.</p><span class="status">Cần kiểm tra</span></div>
@@ -536,8 +556,8 @@ main>section:nth-of-type(even){background:#f8f9fa!important}
 <li>Hệ thống điện, điều khiển đèn và nhu cầu sử dụng phụ kiện tương thích nếu có.</li>
 <li>Khả năng căn chỉnh vùng sáng phù hợp sau khi lắp.</li>
 </ol><div class="note" style="margin-top:16px"><svg class="icon"><use href="#i-info"></use></svg><div>Với xe điện hoặc xe có hệ thống điều khiển đèn đặc thù, nhu cầu sử dụng CANBUS/decoder phải được xác định theo xe. Nếu cần phụ kiện, Auto365 tư vấn phương án và chi phí trước khi thi công.</div></div></div></div>
-</div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Chi phí rõ trước khi lắp</span><h2 class="section-title">Giá V12 Hyper 360 gồm những gì?</h2></div></div><div class="price-box"><div class="price-box-head"><div><div class="price-label">Giá tham khảo cho một cặp gồm 02 bóng</div><div class="big">2.500.000đ</div></div><span class="badge">Chưa bao gồm VAT</span></div><table class="price-table"><thead><tr><th>Khoản chi phí</th><th>Phạm vi</th></tr></thead><tbody><tr><td>Sản phẩm</td><td>2.500.000 đồng/cặp, gồm 02 bóng</td></tr><tr><td>VAT</td><td>Chưa bao gồm trong mức giá trên</td></tr><tr><td>Công lắp</td><td>Báo riêng theo xe</td></tr><tr><td>Giắc chuyển, bộ giải mã CANBUS/decoder, vật tư khác</td><td>Chỉ phát sinh khi xe cần, báo trước khi thi công</td></tr></tbody></table></div><div class="note"><svg class="icon"><use href="#i-info"></use></svg><div>Trước khi thi công, Auto365 xác nhận tình trạng cung cấp sản phẩm và báo tổng chi phí theo phương án đã kiểm tra trên xe. Giá một cặp bóng không phải giá hoàn thiện sau lắp đặt.</div></div></div></section>
+<div class="sec-cta"><span>Chưa rõ xe dùng chân H7, H11 hay 9005/9006/9012?</span><div class="sec-cta-btns"><a class="btn btn-primary" href="#fitment">Kiểm tra xe của tôi</a><a class="btn btn-outline" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Chat Zalo</a></div></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Chi phí rõ trước khi lắp</span><h2 class="section-title">Giá V12 Hyper 360 gồm những gì?</h2></div></div><div class="price-box"><div class="price-box-head"><div><div class="price-label">Giá tham khảo cho một cặp gồm 02 bóng</div><div class="big">2.500.000đ</div></div><span class="badge">Chưa bao gồm VAT</span></div><table class="price-table"><thead><tr><th>Khoản chi phí</th><th>Phạm vi</th></tr></thead><tbody><tr><td>Sản phẩm</td><td>2.500.000 đồng/cặp, gồm 02 bóng</td></tr><tr><td>VAT</td><td>Chưa bao gồm trong mức giá trên</td></tr><tr><td>Công lắp</td><td>Báo riêng theo xe</td></tr><tr><td>Giắc chuyển, bộ giải mã CANBUS/decoder, vật tư khác</td><td>Chỉ phát sinh khi xe cần, báo trước khi thi công</td></tr></tbody></table></div><div class="note"><svg class="icon"><use href="#i-info"></use></svg><div>Trước khi thi công, Auto365 xác nhận tình trạng cung cấp sản phẩm và báo tổng chi phí theo phương án đã kiểm tra trên xe. Giá một cặp bóng không phải giá hoàn thiện sau lắp đặt.</div></div><div class="sec-cta"><span>Nhận báo giá trọn gói theo xe của bạn.</span><div class="sec-cta-btns"><a class="btn btn-primary" href="#fitment">Kiểm tra xe của tôi</a><a class="btn btn-outline" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Chat Zalo</a></div></div></div></section>
 <section class="section compact process-section" id="quy-trinh">
 <div class="container">
 <div class="section-head section-head-center">
@@ -547,99 +567,23 @@ main>section:nth-of-type(even){background:#f8f9fa!important}
 <p class="subhead">Từ tiếp nhận xe đến bàn giao, mỗi bước đều có điểm kiểm tra rõ ràng để chốt đúng cấu hình và căn chỉnh ánh sáng sau lắp.</p>
 </div>
 </div>
-<ol class="process-timeline">
-<li class="process-step">
-<div class="step-top"><span class="step-number">01</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-clipboard"></use></svg></span><h3>Tiếp nhận xe</h3><p>Ghi nhận mẫu xe, đời xe, phiên bản, cấu hình đèn và nhu cầu sử dụng.</p></div>
-</li>
-<li class="process-step">
-<div class="step-top"><span class="step-number">02</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-search"></use></svg></span><h3>Kiểm tra tương thích</h3><p>Đối chiếu chân bóng, hốc lắp, hệ thống điện và tình trạng cụm đèn.</p></div>
-</li>
-<li class="process-step">
-<div class="step-top"><span class="step-number">03</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-plan"></use></svg></span><h3>Xác nhận phương án</h3><p>Thống nhất loại chân bóng, phụ kiện cần dùng và chi phí trước thi công.</p></div>
-</li>
-<li class="process-step">
-<div class="step-top"><span class="step-number">04</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-wrench"></use></svg></span><h3>Lắp đặt</h3><p>Lắp đúng ngàm, kiểm tra kết nối nguồn và độ kín nắp chụp bụi.</p></div>
-</li>
-<li class="process-step">
-<div class="step-top"><span class="step-number">05</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-target"></use></svg></span><h3>Căn chỉnh ánh sáng</h3><p>Kiểm tra phân bố sáng, đường cắt và hướng chiếu theo cấu hình cụm đèn cùng hướng dẫn kỹ thuật phù hợp để hạn chế chói cho phương tiện đi đối diện.</p></div>
-</li>
-<li class="process-step">
-<div class="step-top"><span class="step-number">06</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-gear"></use></svg></span><h3>Kiểm tra vận hành</h3><p>Kiểm tra đèn, quạt làm mát và tín hiệu điều khiển trên xe.</p></div>
-</li>
-<li class="process-step">
-<div class="step-top"><span class="step-number">07</span></div>
-<div class="step-card"><span class="step-icon"><svg class="icon"><use href="#i-shield"></use></svg></span><h3>Bàn giao &amp; bảo hành</h3><p>Hướng dẫn theo dõi vận hành, kích hoạt bảo hành điện tử 24 tháng. Khách hàng nên kiểm tra thời điểm bắt đầu và phạm vi bảo hành khi nhận xe.</p></div>
-</li>
-</ol>
-</div>
+<ol class="v12-process"><li class="v12-step"><h3>Tiếp nhận xe</h3><p>Ghi nhận mẫu xe, đời xe và cấu hình đèn.</p></li><li class="v12-step"><h3>Kiểm tra tương thích</h3><p>Đối chiếu chân bóng, hốc lắp, hệ thống điện.</p></li><li class="v12-step"><h3>Xác nhận phương án</h3><p>Chốt chân bóng, phụ kiện và chi phí.</p></li><li class="v12-step"><h3>Lắp đặt</h3><p>Lắp đúng ngàm, kín nắp chụp bụi.</p></li><li class="v12-step"><h3>Căn chỉnh ánh sáng</h3><p>Chỉnh đường cắt, hướng chiếu, hạn chế chói.</p></li><li class="v12-step"><h3>Kiểm tra vận hành</h3><p>Kiểm tra đèn, quạt và tín hiệu trên xe.</p></li><li class="v12-step"><h3>Bàn giao &amp; bảo hành</h3><p>Kích hoạt bảo hành điện tử 24 tháng.</p></li></ol>
+<div class="sec-cta"><span>Đặt lịch kiểm tra và lắp đặt tại Auto365.</span><div class="sec-cta-btns"><a class="btn btn-primary" href="#fitment">Kiểm tra xe của tôi</a><a class="btn btn-outline" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Chat Zalo</a></div></div></div>
 </section>
+<section class="section" id="diem-lap"><div class="container dl-box"><div class="dl-main"><span class="eyebrow">Hệ thống Auto365</span><h2 class="section-title">Điểm lắp V12 Hyper 360 tại Auto365</h2><p>Auto365 kiểm tra cụm đèn, hệ thống điện và không gian lắp theo từng xe trước khi xác nhận phương án thi công.</p><p>Tại TP.HCM, có thể đến <a href="https://auto365.vn/thu-duc">Auto365 – Trụ Sở Chính</a>, 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP.HCM. Trước khi đến, nên gọi <a href="tel:+84365365911">0365.365.911</a> để xác nhận cấu hình xe, chân bóng và lịch tiếp nhận.</p><p>V12 Hyper 360 được bảo hành 24 tháng theo chính sách tại thời điểm mua. Khi bàn giao, nên xác nhận phạm vi bảo hành cho sản phẩm, phần thi công và vật tư phát sinh; có thể tra cứu tại <a href="https://baohanh.365group.com.vn/" rel="noopener" target="_blank">cổng bảo hành đèn</a>.</p><ul class="dl-checks"><li>Kiểm tra cấu hình theo xe</li><li>Căn chỉnh vùng sáng trước bàn giao</li><li>Xác nhận hạng mục phát sinh</li><li>Hỗ trợ bảo hành sau lắp</li></ul></div><aside class="dl-side"><b class="dl-big">91 điểm · 33 tỉnh thành</b><a href="https://auto365.vn/chi-nhanh?mien=bac"><span>Miền Bắc</span><b>41 điểm</b></a><a href="https://auto365.vn/chi-nhanh?mien=trung"><span>Miền Trung</span><b>26 điểm</b></a><a href="https://auto365.vn/chi-nhanh?mien=nam"><span>Miền Nam</span><b>24 điểm</b></a><div class="dl-btns"><a class="btn btn-primary" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Zalo tư vấn</a></div><a class="dl-find" href="https://auto365.vn/chi-nhanh">Tìm chi nhánh gần bạn →</a></aside></div></section>
 <section class="section fitment" id="fitment"><div class="container fit-panel">
 <div class="fit-copy"><span class="eyebrow">Kiểm tra tương thích</span><h2 class="section-title">Xe của bạn có phù hợp với V12 Hyper 360?</h2><p class="subhead">Khả năng lắp đặt thực tế phụ thuộc chân đèn, hốc lắp, hệ thống điện và phương án căn chỉnh vùng sáng trên từng xe. Công lắp, phụ kiện chuyển đổi và vật tư phát sinh được kiểm tra, báo riêng trước khi thi công.</p></div>
 <form class="fit-form" id="fitForm"><div class="field"><label for="make">Hãng xe</label><input id="make" name="make" placeholder="Ví dụ: VinFast" required=""/></div><div class="field"><label for="model">Dòng xe</label><input id="model" name="model" placeholder="Ví dụ: VF 5" required=""/></div><div class="field"><label for="year">Đời xe / năm</label><input id="year" inputmode="numeric" name="year" placeholder="Ví dụ: 2025"/></div><div class="field"><label for="lamp">Cấu hình đèn hiện tại</label><select id="lamp" name="lamp"><option value="">Chọn cấu hình</option><option>Halogen trong bi cầu</option><option>Bi LED / Laser nguyên bản</option><option>Chóa phản xạ không có bi</option><option>Không rõ / cần kiểm tra</option></select></div><div class="field full"><label for="base">Chân bóng (nếu biết)</label><select id="base" name="base"><option value="">Chưa rõ</option><option>H7</option><option>H11</option><option>9005 / 9006 / 9012</option><option>H4</option><option>Khác</option></select></div><div class="fit-actions"><button class="btn btn-primary" type="submit">Tạo yêu cầu kiểm tra<svg class="icon"><use href="#i-arrow"></use></svg></button><span style="font-size:12px;color:#777">Auto365 sẽ liên hệ tư vấn sau khi xem thông tin xe.</span></div><div aria-live="polite" class="fit-result" id="fitResult" role="status"></div></form>
 </div></section>
-<section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">FAQ</span><h2 class="section-title">Câu hỏi thường gặp về V12 Hyper 360</h2></div></div><div class="faq">
-<details open=""><summary>Giá 2.500.000 đồng đã gồm những gì?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Đây là giá tham khảo cho một cặp gồm 02 bóng, chưa bao gồm VAT. Công lắp và phụ kiện phát sinh được báo riêng theo cấu hình xe.</div></details>
+<section class="section" id="faq"><div class="container"><div class="section-head"><div><span class="eyebrow">FAQ</span><h2 class="section-title">Câu hỏi thường gặp về V12 Hyper 360</h2></div></div><div class="faq">
+<details><summary>Giá 2.500.000 đồng đã gồm những gì?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Đây là giá tham khảo cho một cặp gồm 02 bóng, chưa bao gồm VAT. Công lắp và phụ kiện phát sinh được báo riêng theo cấu hình xe.</div></details>
 <details><summary>Có thể chọn chân bóng chỉ dựa vào tên xe không?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Chưa đủ. Cần xác định đời xe, phiên bản, cấu hình đèn đang dùng và đối chiếu trực tiếp chân bóng, ngàm cùng giắc kết nối trước khi chọn.</div></details>
 <details><summary>V12 Hyper 360 có dùng cho xe điện được không?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Có thể cân nhắc với xe điện đang dùng bóng Halogen trong bi cầu nguyên bản, sau khi kiểm tra tương thích. Hiện chưa có danh sách xe điện đã kiểm chứng, nên Auto365 cần kiểm tra trên từng mẫu xe trước khi xác nhận lắp được hoặc không báo lỗi.</div></details>
 <details><summary>12 chip LED có đồng nghĩa sáng hơn bóng LED hai mặt không?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Không thể kết luận chỉ từ số chip. Cần dữ liệu đo đối chứng trong cùng điều kiện và trên cấu hình đèn cụ thể để so sánh độ sáng hoặc vùng chiếu.</div></details>
 <details><summary>Lắp V12 Hyper 360 có được cam kết đăng kiểm không?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Auto365 không cam kết kết quả đăng kiểm. Kết quả phụ thuộc tình trạng xe, quy định áp dụng và cách đèn được lắp, căn chỉnh tại thời điểm kiểm định.</div></details>
 <details><summary>Sản phẩm được bảo hành bao lâu?<svg class="icon"><use href="#i-chevron"></use></svg></summary><div class="faq-answer">Thời hạn bảo hành là 24 tháng theo chính sách áp dụng tại thời điểm mua. Auto365 xác nhận điều kiện và thời điểm bắt đầu bảo hành khi bàn giao.</div></details>
 </div></div></section>
-<section class="section evidence section-anchor" id="nguon-xac-minh"><div class="container"><span class="eyebrow" style="color:#ff8d98">Nguồn &amp; xác minh</span><h2 class="section-title">Nguồn thông tin và người rà soát</h2><p class="subhead">Thông số trên trang lấy từ tài liệu sản phẩm X-Light và được bộ phận kỹ thuật Auto365 rà soát.</p><div class="evidence-grid"><div class="evidence-card"><h3>Phạm vi thông tin</h3><ul><li>Thông số lấy từ tài liệu sản phẩm X-Light V12 Hyper 360, đối chiếu ngày 23/09/2026. Đây là số liệu công bố, không phải kết quả đo trên một xe cụ thể.</li><li>12 chip theo 4 hướng và cơ chế xoay 360° là đặc điểm thiết kế; hiệu quả chiếu sáng thực tế phụ thuộc cụm đèn và cách căn chỉnh trên từng xe.</li><li>Khả năng lắp được kiểm tra theo từng xe; xe điện hoặc xe có hệ thống điều khiển đèn đặc thù có thể cần thêm CANBUS/decoder.</li><li>Giá 2.500.000đ/cặp chưa gồm VAT; công lắp và vật tư phát sinh báo riêng theo xe.</li><li>Auto365 không cam kết kết quả đăng kiểm; kết quả phụ thuộc tình trạng xe, quy định áp dụng và cách lắp, căn chỉnh.</li></ul></div><div class="people"><div class="person"><div class="avatar">BBT</div><div><b>Ban Biên Tập Auto365</b><span>Biên tập nội dung</span></div></div><div class="person"><div class="avatar">NQĐ</div><div><b>Nguyễn Quang Đạo</b><span>Rà soát kỹ thuật</span></div></div><div class="person"><div class="avatar">26/9</div><div><b>Cập nhật 26/09/2026</b><span>Đối chiếu tài liệu ngày 23/09/2026</span></div></div></div></div></div></section>
-<section class="section section-anchor proof-section" id="case-thuc-te">
-<div class="container">
-<div class="section-head proof-head">
-<div>
-<span class="eyebrow">Xe thực tế &amp; hồ sơ lắp đặt</span>
-<h2 class="section-title">Hồ sơ lắp đặt thực tế tại Auto365</h2>
-<p class="subhead">Hồ sơ lắp V12 Hyper 360 sẽ được cập nhật khi có xe hoàn thiện. Trong lúc chờ, bạn có thể tham khảo các hồ sơ nâng cấp ánh sáng khác (không phải V12 Hyper 360) tại Auto365.</p>
-</div>
-<a class="text-link" href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Xem thêm hồ sơ nâng cấp ánh sáng →</a>
-</div>
-<div class="case-feature-grid">
-<article class="real-case-card real-case-card--featured">
-<div class="real-case-media">
-<img alt="Case Ford Ranger Wildtrak 2026 trên trang nâng cấp ánh sáng Auto365" height="788" loading="lazy" src="https://auto365.vn/uploads/images/pages/bi-gam/case-ford-ranger-wildtrak-2026-before-after-v2.webp" width="1400"/>
-<span class="case-badge">Hồ sơ tham khảo</span>
-</div>
-<div class="real-case-body">
-<span class="card-kicker">Ford Ranger Wildtrak 2026</span>
-<h3>Hồ sơ trước / sau và chi phí theo xe</h3>
-<p>Hồ sơ ghi rõ cấu hình xe, hạng mục phát sinh và phạm vi báo giá.</p>
-<div class="case-data-grid">
-<span><b>Hình ảnh</b>Ảnh trước/sau</span>
-<span><b>Hạng mục</b>Nâng cấp bi gầm</span>
-<span><b>Ghi chú</b>Hồ sơ tham khảo</span>
-</div>
-</div>
-</article>
-<div class="real-case-list">
-<article class="real-case-card real-case-card--compact">
-<img alt="Honda City RS 2021 - case nâng cấp ánh sáng Auto365" height="450" loading="lazy" src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-honda-city-rs-2021-lap-bi-gam-gtr-g1-turbo-8-img_6ab483bcbfe687.89794796.webp" width="800"/>
-<div class="real-case-body">
-<span class="card-kicker">Hồ sơ nâng cấp ánh sáng</span>
-<h3>Honda City RS 2021</h3>
-<p>Hồ sơ nâng cấp ánh sáng với tên xe, đời xe và cấu hình.</p>
-</div>
-</article>
-<article class="real-case-card real-case-card--compact">
-<img alt="Hyundai Custin 2024 - case nâng cấp ánh sáng Auto365" height="450" loading="lazy" src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-hyundai-custin-2024-lap-bi-gam-x-light-301-v2-15-img_6ab3a6d0b9aff5.32629948.webp" width="800"/>
-<div class="real-case-body">
-<span class="card-kicker">Hồ sơ nâng cấp ánh sáng</span>
-<h3>Hyundai Custin 2024</h3>
-<p>Hồ sơ nâng cấp ánh sáng với tên xe, đời xe và cấu hình.</p>
-</div>
-</article>
-</div>
-</div>
-</div>
-</section>
+<section class="section section-anchor" id="case-thuc-te"><div class="container"><div class="section-head"><div><span class="eyebrow">Xe thực tế</span><h2 class="section-title">Xe đã nâng cấp ánh sáng tại Auto365</h2><p class="subhead">Hồ sơ V12 Hyper 360 sẽ được cập nhật khi có xe hoàn thiện. Các hồ sơ dưới đây là xe nâng cấp ánh sáng khác tại Auto365, không phải V12 Hyper 360.</p></div><a class="text-link" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to">Xem tất cả hồ sơ →</a></div><div class="cz-grid"><a class="cz-card" href="https://auto365.vn/nang-cap-anh-sang-bi-gam"><figure><img alt="Case Ford Ranger Wildtrak 2026 trên trang nâng cấp ánh sáng Auto365" loading="lazy" width="800" height="450" src="https://auto365.vn/uploads/images/pages/bi-gam/case-ford-ranger-wildtrak-2026-before-after-v2.webp"/></figure><div class="cz-body"><b>Ford Ranger Wildtrak <span>2026</span></b><small>Nâng cấp bi gầm · hồ sơ tham khảo</small><em>Xem chi tiết lắp đặt →</em></div></a><a class="cz-card" href="https://auto365.vn/nang-cap-anh-sang-bi-gam"><figure><img alt="Honda City RS 2021 - case nâng cấp ánh sáng Auto365" loading="lazy" width="800" height="450" src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-honda-city-rs-2021-lap-bi-gam-gtr-g1-turbo-8-img_6ab483bcbfe687.89794796.webp"/></figure><div class="cz-body"><b>Honda City RS <span>2021</span></b><small>Nâng cấp ánh sáng · hồ sơ tham khảo</small><em>Xem chi tiết lắp đặt →</em></div></a><a class="cz-card" href="https://auto365.vn/nang-cap-anh-sang-bi-gam"><figure><img alt="Hyundai Custin 2024 - case nâng cấp ánh sáng Auto365" loading="lazy" width="800" height="450" src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-hyundai-custin-2024-lap-bi-gam-x-light-301-v2-15-img_6ab3a6d0b9aff5.32629948.webp"/></figure><div class="cz-body"><b>Hyundai Custin <span>2024</span></b><small>Nâng cấp ánh sáng · hồ sơ tham khảo</small><em>Xem chi tiết lắp đặt →</em></div></a><a class="cz-card cz-more" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to"><div><b>Xem thêm hồ sơ</b><small>Hàng trăm xe đã nâng cấp ánh sáng tại hệ thống Auto365</small><em>Xem tất cả →</em></div></a></div></div></section>
 <section class="section section-anchor editorial-section" id="cam-nang-video">
 <div class="container">
 <div class="section-head editorial-head">
@@ -710,51 +654,13 @@ main>section:nth-of-type(even){background:#f8f9fa!important}
 </div>
 </div>
 </section>
-<section class="section compact contact-section" id="lien-he">
-<div class="container">
-<div class="contact-shell">
-<div class="contact-intro">
-<div>
-<span class="eyebrow">Tư vấn &amp; lắp đặt tại Auto365</span>
-<h2 class="section-title">Gửi mẫu xe của bạn để được kiểm tra tương thích</h2>
-<p class="subhead">Hãy gửi mẫu xe, đời xe, phiên bản và ảnh cụm đèn hiện tại. Auto365 sẽ tư vấn chân bóng, vật tư cần dùng, tình trạng cung cấp và thời gian thi công dự kiến trước khi xác nhận lịch hẹn.</p>
-</div>
-<div class="contact-primary">
-<a class="btn btn-primary btn-lg" href="tel:+84365365911"><svg class="icon"><use href="#i-phone"></use></svg>Gọi 0365.365.911</a>
-<span>Hotline tư vấn: 8:00 – 21:00</span>
-</div>
-</div>
-<div class="contact-grid contact-grid-v3">
-<a class="contact-card contact-card-v3" href="https://auto365.vn/chi-nhanh">
-<span class="contact-icon"><svg class="icon"><use href="#i-pin"></use></svg></span>
-<span class="contact-copy"><b>Trụ sở Auto365.vn tại TP.HCM</b><span>4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh</span></span>
-<svg class="icon contact-arrow"><use href="#i-arrow"></use></svg>
-</a>
-<a class="contact-card contact-card-v3" href="tel:+84365365911">
-<span class="contact-icon"><svg class="icon"><use href="#i-phone"></use></svg></span>
-<span class="contact-copy"><b>Hotline tư vấn đèn</b><span>0365.365.911</span></span>
-<svg class="icon contact-arrow"><use href="#i-arrow"></use></svg>
-</a>
-<a class="contact-card contact-card-v3" href="https://zalo.me/0365365911" rel="noopener" target="_blank">
-<span class="contact-icon"><svg class="icon"><use href="#i-phone"></use></svg></span>
-<span class="contact-copy"><b>Gửi thông tin xe qua Zalo</b><span>Zalo Kỹ thuật Auto365 — gửi mẫu xe, đời xe, phiên bản và ảnh cụm đèn hiện tại.</span></span>
-<svg class="icon contact-arrow"><use href="#i-arrow"></use></svg>
-</a>
-<a class="contact-card contact-card-v3" href="https://auto365.vn/chi-nhanh">
-<span class="contact-icon"><svg class="icon"><use href="#i-car"></use></svg></span>
-<span class="contact-copy"><b>Khu vực khác</b><span>Tra cứu chi nhánh Auto365 và xác nhận điểm tiếp nhận phù hợp trước khi đến.</span></span>
-<svg class="icon contact-arrow"><use href="#i-arrow"></use></svg>
-</a>
-</div>
-<div class="related">
+<section class="section compact contact-section" id="lien-he"><div class="container"><div class="hq-grid"><div class="hq-card"><h2 class="hq-title">Auto365.vn · Trụ sở chính</h2><p class="hq-addr">4/4/1/7 Đường số 3, P. Hiệp Bình, TP. Hồ Chí Minh</p><div class="hq-facts"><div><small>Giờ làm việc</small><b>8:30 – 18:30</b></div><div><small>Trụ sở</small><b>Hiệp Bình, TP.HCM</b></div><div><small>Bảo hành</small><b>24 tháng (V12 Hyper 360)</b></div><div><small>Tư vấn</small><b>Hotline, Zalo</b></div></div><div class="hq-btns"><a class="btn btn-primary" href="tel:+84365365911">Gọi 0365.365.911</a><a class="btn btn-outline" href="https://zalo.me/0365365911" rel="noopener" target="_blank">Zalo tư vấn</a><a class="btn btn-outline" href="https://maps.app.goo.gl/jretwrtDBxQQJmRH6" rel="noopener" target="_blank">Google Maps</a></div></div><div class="hq-card"><h2 class="hq-title">91 chi nhánh · 33 tỉnh thành</h2><p class="hq-addr">Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam</p><div class="hq-regions"><a href="https://auto365.vn/chi-nhanh?mien=bac"><small>01 · Miền Bắc</small><b>41 điểm</b></a><a href="https://auto365.vn/chi-nhanh?mien=trung"><small>02 · Miền Trung</small><b>26 điểm</b></a><a href="https://auto365.vn/chi-nhanh?mien=nam"><small>03 · Miền Nam</small><b>24 điểm</b></a></div><a class="btn btn-outline hq-all" href="https://auto365.vn/chi-nhanh">Xem toàn bộ hệ thống Auto365</a></div></div><div class="related">
 <a href="https://auto365.vn/bong-led-o-to">Bóng LED ô tô</a>
 <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Nâng cấp ánh sáng bi gầm</a>
 <a href="https://auto365.vn/tin-tuc">Cẩm nang Auto365</a>
 <a href="https://auto365.vn/chi-nhanh">Hệ thống chi nhánh</a>
-</div>
-</div>
-</div>
-</section>
+</div></div></section>
+<section class="section section-anchor" id="nguon-xac-minh"><div class="container"><div class="section-head"><div><span class="eyebrow">Nguồn &amp; xác minh</span><h2 class="section-title">Thông tin sản phẩm và người rà soát</h2></div></div><div class="src3"><div class="src3-card"><span class="src3-tag">Biên tập</span><div class="src3-person"><span class="src3-av">BBT</span><div><b>Ban Biên Tập Auto365</b><small>Biên tập nội dung</small></div></div><p>Biên soạn nội dung theo tài liệu sản phẩm X-Light và quy trình tư vấn, lắp đặt tại Auto365.</p></div><div class="src3-card"><span class="src3-tag">Rà soát kỹ thuật</span><div class="src3-person"><span class="src3-av">NQĐ</span><div><b>Nguyễn Quang Đạo</b><small>Kỹ thuật Auto365</small></div></div><p>Rà soát thông số, điều kiện lắp và nội dung kỹ thuật. Cập nhật 26/09/2026, đối chiếu tài liệu ngày 23/09/2026.</p></div><div class="src3-card"><span class="src3-tag">Phạm vi thông tin</span><ul class="src3-list"><li>Thông số lấy từ tài liệu sản phẩm X-Light V12 Hyper 360, đối chiếu ngày 23/09/2026. Đây là số liệu công bố, không phải kết quả đo trên một xe cụ thể.</li><li>12 chip theo 4 hướng và cơ chế xoay 360° là đặc điểm thiết kế; hiệu quả chiếu sáng thực tế phụ thuộc cụm đèn và cách căn chỉnh trên từng xe.</li><li>Khả năng lắp được kiểm tra theo từng xe; xe điện hoặc xe có hệ thống điều khiển đèn đặc thù có thể cần thêm CANBUS/decoder.</li><li>Giá 2.500.000đ/cặp chưa gồm VAT; công lắp và vật tư phát sinh báo riêng theo xe.</li><li>Auto365 không cam kết kết quả đăng kiểm; kết quả phụ thuộc tình trạng xe, quy định áp dụng và cách lắp, căn chỉnh.</li></ul></div></div></div></section>
 </main>
 <footer><div class="container">Thông tin kỹ thuật và khả năng lắp đặt được trình bày theo phạm vi tài liệu sản phẩm và cần đối chiếu theo từng cấu hình xe trước khi thi công.</div></footer>
 <div aria-label="Liên hệ nhanh" class="mobile-bar"><a class="btn btn-outline" href="tel:+84365365911">Gọi tư vấn</a><a class="btn btn-primary" href="#fitment">Kiểm tra xe</a></div>
