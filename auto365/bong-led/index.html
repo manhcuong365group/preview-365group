@@ -2455,7 +2455,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
-<style id="font-sync">body{font-weight:400;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}h1,h2,h3{font-weight:600!important;letter-spacing:-.02em}strong,b{font-weight:600}</style><style id="shorten-mobile">#chan-bong:not(.cb-open) tbody tr:nth-child(n+4){display:none}#chan-bong .cb-toggle{display:flex;max-width:320px;margin-left:auto;margin-right:auto}@media (max-width:680px){#nhiet-mau:not(.nm-open)>div:nth-of-type(2){display:none!important}#nhiet-mau .nm-toggle{display:flex}#khai-niem .grid-2,#cam-nang .cnp-guides .grid-3,#co-so .grid-2{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:84%;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-16px;margin-right:-16px;padding:0 16px 6px;scrollbar-width:none}#khai-niem .grid-2>*,#cam-nang .cnp-guides .grid-3>*,#co-so .grid-2>*{scroll-snap-align:start;min-width:0}}.nm-toggle{display:none;width:100%;justify-content:center;margin:4px 0 0;padding:10px;border:1px solid #d8dde3;border-radius:10px;background:#fff;font:inherit;font-size:14px;font-weight:600;color:#e31b2d;cursor:pointer}.cb-toggle{display:none;width:100%;justify-content:center;margin:10px 0 0;padding:11px;border:1px solid #d8dde3;border-radius:10px;background:#fff;font:inherit;font-size:14px;font-weight:600;color:#e31b2d;cursor:pointer}</style></head><body>
+<style id="font-sync">body{font-weight:400;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}h1,h2,h3{font-weight:600!important;letter-spacing:-.02em}strong,b{font-weight:600}</style><style id="shorten-mobile">#chan-bong:not(.cb-open) tbody tr:nth-child(n+4){display:none}#chan-bong .cb-toggle{display:flex;max-width:320px;margin-left:auto;margin-right:auto}@media (max-width:680px){#thong-so .param-grid{display:grid;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:82%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 6px;scrollbar-width:none}#thong-so .param-grid::-webkit-scrollbar{display:none}#thong-so .param-card{scroll-snap-align:start}#nhiet-mau:not(.nm-open)>div:nth-of-type(2){display:none!important}#nhiet-mau .nm-toggle{display:flex}#khai-niem .grid-2,#cam-nang .cnp-guides .grid-3,#co-so .grid-2{display:grid!important;grid-template-columns:none!important;grid-auto-flow:column;grid-auto-columns:84%;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;margin-left:-16px;margin-right:-16px;padding:0 16px 6px;scrollbar-width:none}#khai-niem .grid-2>*,#cam-nang .cnp-guides .grid-3>*,#co-so .grid-2>*{scroll-snap-align:start;min-width:0}}.nm-toggle{display:none;width:100%;justify-content:center;margin:4px 0 0;padding:10px;border:1px solid #d8dde3;border-radius:10px;background:#fff;font:inherit;font-size:14px;font-weight:600;color:#e31b2d;cursor:pointer}.cb-toggle{display:none;width:100%;justify-content:center;margin:10px 0 0;padding:11px;border:1px solid #d8dde3;border-radius:10px;background:#fff;font:inherit;font-size:14px;font-weight:600;color:#e31b2d;cursor:pointer}</style></head><body>
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;" aria-hidden="true">
   <symbol id="icon-phone" viewBox="0 0 24 24">
     <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
@@ -3209,11 +3209,16 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
 </div>
 </section><section class="section" id="thong-so" aria-labelledby="thong-so-title">
 <div class="wrap">
-  <div class="param-section-head">
-    
-    <h2 id="thong-so-title" class="param-title">Watt, lumen, lux, Kelvin và CANbus khác nhau thế nào?</h2>
-    
-  </div>
+  <style>
+#thong-so .ts-acc{border:1px solid #e5e7eb;border-radius:14px;background:#fff}
+#thong-so .ts-acc>summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;cursor:pointer}
+#thong-so .ts-acc>summary::-webkit-details-marker{display:none}
+#thong-so .ts-acc>summary h2{margin:0}
+#thong-so .ts-acc>summary::after{content:"+";flex:none;color:#e31b2d;font-size:26px;font-weight:400;line-height:1}
+#thong-so .ts-acc[open]>summary::after{content:"\2212"}
+#thong-so .ts-acc-body{padding:0 20px 20px}
+@media (max-width:680px){#thong-so .ts-acc>summary{padding:15px 16px}#thong-so .ts-acc-body{padding:0 16px 16px}}
+</style><details class="ts-acc"><summary><h2 id="thong-so-title" class="param-title">Watt, lumen, lux, Kelvin và CANbus khác nhau thế nào?</h2></summary><div class="ts-acc-body">
 
   <div class="param-callout">
     <div class="param-callout-icon">
@@ -3225,18 +3230,145 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     </div>
   </div>
 
-  <style>
-#thong-so .ts-list{border-top:1px solid #e5e7eb}
-#thong-so .ts-item{border-bottom:1px solid #e5e7eb}
-#thong-so .ts-item summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 4px;font-size:15px;font-weight:500;color:#20242b;cursor:pointer}
-#thong-so .ts-item summary::-webkit-details-marker{display:none}
-#thong-so .ts-item summary::after{content:"+";flex:none;color:#e31b2d;font-size:20px;font-weight:400;line-height:1}
-#thong-so .ts-item[open] summary::after{content:"\2212"}
-#thong-so .ts-body{padding:0 4px 16px;font-size:14px;line-height:1.6;color:#475569}
-#thong-so .ts-body p{margin:0 0 6px}
-#thong-so .ts-check b{color:#20242b;font-weight:600}
-@media (max-width:680px){#thong-so .ts-item summary{padding:15px 2px;font-size:14.5px}}
-</style><div class="ts-list"><details class="ts-item"><summary>Watt (W) cho biết gì về bóng LED?</summary><div class="ts-body"><p>Cho biết <strong>công suất điện</strong> theo điều kiện mà nhà sản xuất công bố.</p><p class="ts-check"><b>Cần kiểm tra thêm:</b> Đơn vị tính cho mỗi bóng hay cả bộ, chế độ Cos/Pha, điện áp và khả năng ổn định công suất khi nóng.</p></div></details><details class="ts-item"><summary>Lumen (lm) cao có nghĩa là chiếu đường tốt hơn?</summary><div class="ts-body"><p>Mô tả <strong>quang thông</strong> của nguồn sáng theo phép đo được công bố.</p><p class="ts-check"><b>Cần kiểm tra thêm:</b> Không nên đồng nhất lumen với lượng ánh sáng hữu ích trên mặt đường qua một cụm đèn cụ thể.</p></div></details><details class="ts-item"><summary>Lux (lx) khác lumen thế nào?</summary><div class="ts-body"><p>Thể hiện <strong>độ rọi tại một vị trí đo</strong>, tức lượng ánh sáng nhận trên bề mặt.</p><p class="ts-check"><b>Cần kiểm tra thêm:</b> Khoảng cách, điểm đo, thiết bị, điện áp và điều kiện đo phải tương đồng mới có ý nghĩa so sánh.</p></div></details><details class="ts-item"><summary>Kelvin (K) có phải là độ sáng mạnh hay yếu?</summary><div class="ts-body"><p>Cho biết <strong>nhiệt độ màu tương quan</strong>, tức sắc thái ánh sáng ấm hay lạnh.</p><p class="ts-check"><b>Cần kiểm tra thêm:</b> 4300K thường có sắc ấm hơn 6000K. Kelvin không phải thước đo ánh sáng mạnh hay yếu.</p></div></details><details class="ts-item"><summary>Nhiều chip LED hơn có sáng và gom tốt hơn không?</summary><div class="ts-body"><p>Mô tả <strong>cấu hình nguồn LED</strong> và vị trí phát sáng so với hệ quang học của chóa/cụm đèn.</p><p class="ts-check"><b>Cần kiểm tra thêm:</b> Nhiều chip hơn không tự động đồng nghĩa đường cắt tốt hơn hoặc ít gây chói hơn.</p></div></details><details class="ts-item"><summary>CANbus / giải mã có chắc chắn hết báo lỗi taplo không?</summary><div class="ts-body"><p>Cách gọi phổ biến cho <strong>giải pháp xử lý tương thích điện</strong> giữa bóng LED và hệ thống xe.</p><p class="ts-check"><b>Cần kiểm tra thêm:</b> Kiểm tra lỗi taplo, nhấp nháy và chức năng đèn trên đúng dòng xe; không nên xem đây là cam kết hết lỗi.</p></div></details></div>
+  <div class="param-grid">
+    <!-- 1. Watt -->
+    <article class="param-card">
+      <div>
+        <div class="param-card-header">
+          <div class="param-card-title-group">
+            <div class="param-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="param-card-title">Watt</h3>
+          </div>
+          <span class="param-card-badge">W</span>
+        </div>
+        <p class="param-card-desc">Cho biết <strong>công suất điện</strong> theo điều kiện mà nhà sản xuất công bố.</p>
+      </div>
+      <div class="param-check-box">
+        <div class="param-check-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>CẦN KIỂM TRA THÊM</span>
+        </div>
+        <p class="param-check-desc">Đơn vị tính cho mỗi bóng hay cả bộ, chế độ Cos/Pha, điện áp và khả năng ổn định công suất khi nóng.</p>
+      </div>
+    </article>
+
+    <!-- 2. Lumen -->
+    <article class="param-card">
+      <div>
+        <div class="param-card-header">
+          <div class="param-card-title-group">
+            <div class="param-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </div>
+            <h3 class="param-card-title">Lumen</h3>
+          </div>
+          <span class="param-card-badge">lm</span>
+        </div>
+        <p class="param-card-desc">Mô tả <strong>quang thông</strong> của nguồn sáng theo phép đo được công bố.</p>
+      </div>
+      <div class="param-check-box">
+        <div class="param-check-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>CẦN KIỂM TRA THÊM</span>
+        </div>
+        <p class="param-check-desc">Không nên đồng nhất lumen với lượng ánh sáng hữu ích trên mặt đường qua một cụm đèn cụ thể.</p>
+      </div>
+    </article>
+
+    <!-- 3. Lux -->
+    <article class="param-card">
+      <div>
+        <div class="param-card-header">
+          <div class="param-card-title-group">
+            <div class="param-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3 class="param-card-title">Lux</h3>
+          </div>
+          <span class="param-card-badge">lx</span>
+        </div>
+        <p class="param-card-desc">Thể hiện <strong>độ rọi tại một vị trí đo</strong>, tức lượng ánh sáng nhận trên bề mặt.</p>
+      </div>
+      <div class="param-check-box">
+        <div class="param-check-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>CẦN KIỂM TRA THÊM</span>
+        </div>
+        <p class="param-check-desc">Khoảng cách, điểm đo, thiết bị, điện áp và điều kiện đo phải tương đồng mới có ý nghĩa so sánh.</p>
+      </div>
+    </article>
+
+    <!-- 4. Kelvin -->
+    <article class="param-card">
+      <div>
+        <div class="param-card-header">
+          <div class="param-card-title-group">
+            <div class="param-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/></svg>
+            </div>
+            <h3 class="param-card-title">Kelvin</h3>
+          </div>
+          <span class="param-card-badge">K</span>
+        </div>
+        <p class="param-card-desc">Cho biết <strong>nhiệt độ màu tương quan</strong>, tức sắc thái ánh sáng ấm hay lạnh.</p>
+      </div>
+      <div class="param-check-box">
+        <div class="param-check-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>CẦN KIỂM TRA THÊM</span>
+        </div>
+        <p class="param-check-desc">4300K thường có sắc ấm hơn 6000K. Kelvin không phải thước đo ánh sáng mạnh hay yếu.</p>
+      </div>
+    </article>
+
+    <!-- 5. Chip & vị trí phát sáng -->
+    <article class="param-card">
+      <div>
+        <div class="param-card-header">
+          <div class="param-card-title-group">
+            <div class="param-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9"/><path d="M9 1v3"/><path d="M15 1v3"/><path d="M9 20v3"/><path d="M15 20v3"/><path d="M20 9h3"/><path d="M20 14h3"/><path d="M1 9h3"/><path d="M1 14h3"/></svg>
+            </div>
+            <h3 class="param-card-title">Chip &amp; vị trí phát sáng</h3>
+          </div>
+          <span class="param-card-badge">Optics</span>
+        </div>
+        <p class="param-card-desc">Mô tả <strong>cấu hình nguồn LED</strong> và vị trí phát sáng so với hệ quang học của chóa/cụm đèn.</p>
+      </div>
+      <div class="param-check-box">
+        <div class="param-check-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>CẦN KIỂM TRA THÊM</span>
+        </div>
+        <p class="param-check-desc">Nhiều chip hơn không tự động đồng nghĩa đường cắt tốt hơn hoặc ít gây chói hơn.</p>
+      </div>
+    </article>
+
+    <!-- 6. CANbus / giải mã -->
+    <article class="param-card">
+      <div>
+        <div class="param-card-header">
+          <div class="param-card-title-group">
+            <div class="param-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/></svg>
+            </div>
+            <h3 class="param-card-title">CANbus / giải mã</h3>
+          </div>
+          <span class="param-card-badge">Điện xe</span>
+        </div>
+        <p class="param-card-desc">Cách gọi phổ biến cho <strong>giải pháp xử lý tương thích điện</strong> giữa bóng LED và hệ thống xe.</p>
+      </div>
+      <div class="param-check-box">
+        <div class="param-check-title">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+          <span>CẦN KIỂM TRA THÊM</span>
+        </div>
+        <p class="param-check-desc">Kiểm tra lỗi taplo, nhấp nháy và chức năng đèn trên đúng dòng xe; không nên xem đây là cam kết hết lỗi.</p>
+      </div>
+    </article>
+  </div></div></details>
 
   
 </div>
