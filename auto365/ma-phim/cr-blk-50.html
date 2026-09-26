@@ -1179,7 +1179,79 @@
       .a365hq-fact-item:nth-child(even){border-left:0}
       .a365hq-fact-item+.a365hq-fact-item{border-top:1px solid var(--a365hq-border-subtle)}
     }
-  </style>
+  /* ===== CASE THUC TE + CAM NANG (theo auto365.vn/phim-cach-nhiet-o-to-3m) ===== */
+.rc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.rc-head .section-desc{max-width:720px}
+.rc-all{flex:none;display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border:1px solid #d9dde2;border-radius:999px;background:#fff;color:#1d2228;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.rc-all:hover{border-color:#e31b2d;color:#e31b2d}
+.rc-all svg,.rc-case-go svg{width:15px;height:15px}
+.rc-filter{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:4px 0 18px}
+.rc-filter-lb{flex:none;white-space:nowrap;font-size:13px;font-weight:600;color:#59616b;margin-right:2px}
+.rc-chip{display:inline-flex;align-items:center;justify-content:center;height:38px;min-width:58px;padding:0 14px;border:1px solid #e0e3e7;border-radius:999px;background:#fff;color:#2a3038;font-size:13px;font-weight:600;cursor:pointer;transition:.15s}
+.rc-chip .rc-logo{height:20px;width:auto;max-width:48px;object-fit:contain}
+.rc-chip:hover{border-color:#bfc5cc}
+.rc-chip.is-active{border-color:#e31b2d;box-shadow:0 0 0 1px #e31b2d inset;color:#e31b2d}
+.rc-logo--txt{font-size:12px;font-weight:700;color:#2a3038}
+.rc-rail{position:relative}
+.rc-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px}
+.rc-track::-webkit-scrollbar{display:none}
+.rc-case{scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;border:1px solid #e4e7eb;border-radius:14px;overflow:hidden;color:inherit;text-decoration:none;transition:.2s}
+.rc-case:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,25,30,.09)}
+.rc-case.is-hidden{display:none}
+.rc-case-media{margin:0;aspect-ratio:16/9;background:#eef0f3;overflow:hidden}
+.rc-case-media img{width:100%;height:100%;object-fit:cover;display:block}
+.rc-case-cap{display:flex;flex-direction:column;gap:8px;padding:14px;flex:1}
+.rc-case-xe{display:flex;align-items:center;gap:8px}
+.rc-case-xe .rc-logo{height:18px;width:auto;max-width:36px;object-fit:contain}
+.rc-case-ten{font-size:12px;font-weight:700;color:#59616b;text-transform:uppercase;letter-spacing:.03em}
+.rc-case-work{font-size:15px;line-height:1.4;font-weight:600;color:#1d2228;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.rc-case-pos{align-self:flex-start;font-size:11.5px;font-weight:600;color:#b3121f;background:#fdeef0;border-radius:6px;padding:4px 8px}
+.rc-case-foot{margin-top:auto;padding-top:10px;border-top:1px solid #eef0f2;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:#7a828c}
+.rc-case-go{display:inline-flex;align-items:center;gap:4px;font-weight:700;color:#1d2228}
+.rc-case:hover .rc-case-go{color:#e31b2d}
+.rc-rail-btn{position:absolute;top:28%;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid #e0e3e7;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.1);font-size:22px;line-height:1;cursor:pointer;color:#1d2228}
+.rc-rail-btn--prev{left:-18px}
+.rc-rail-btn--next{right:-18px}
+.rc-rail-btn:disabled{opacity:0;pointer-events:none}
+.rc-head--mag{align-items:center;margin-bottom:18px}
+.rc-mag-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+.rc-mag-lead{position:relative;display:flex;flex-direction:column;border:1px solid #e4e7eb;border-radius:16px;overflow:hidden;color:inherit;text-decoration:none;background:#fff}
+.rc-mag-lead img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.rc-mag-badge{position:absolute;top:14px;left:14px;z-index:1;background:#e31b2d;color:#fff;font-size:11px;font-weight:700;padding:5px 10px;border-radius:999px}
+.rc-mag-lead-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.rc-mag-lead-title{font-size:20px;line-height:1.35;font-weight:700;color:#1d2228}
+.rc-mag-lead:hover .rc-mag-lead-title{color:#e31b2d}
+.rc-mag-lead time{font-size:12px;color:#8a929b}
+.rc-mag-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.rc-mag-item{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:start;color:inherit;text-decoration:none;padding-bottom:12px;border-bottom:1px solid #eceef1}
+.rc-mag-list li:last-child .rc-mag-item{border-bottom:0;padding-bottom:0}
+.rc-mag-item img{width:150px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.rc-mag-item>span{display:flex;flex-direction:column;gap:4px}
+.rc-mag-title{font-size:14.5px;line-height:1.4;font-weight:700;color:#1d2228}
+.rc-mag-item:hover .rc-mag-title{color:#e31b2d}
+.rc-mag-desc{font-size:12.5px;line-height:1.5;color:#6b737d;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rc-mag-item time{font-size:11.5px;color:#8a929b}
+@media(max-width:1000px){
+  .rc-track{grid-auto-columns:calc((100% - 16px)/2)}
+  .rc-mag-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .rc-head{flex-direction:column;align-items:flex-start;gap:10px}
+  .rc-head--mag{flex-direction:row;align-items:center}
+  .rc-filter{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-16px;padding-right:16px}
+  .rc-filter::-webkit-scrollbar{display:none}
+  .rc-chip{flex:none}
+  .rc-track{grid-auto-columns:82%;margin-right:-16px;padding-right:16px}
+  .rc-rail-btn{display:none}
+  .rc-mag-lead-title{font-size:18px}
+  .rc-mag-item{grid-template-columns:112px 1fr;gap:12px}
+  .rc-mag-item img{width:112px}
+  .rc-mag-desc{display:none}
+  .rc-mag-lead .rc-mag-desc{display:-webkit-box}
+}
+
+.rc-head h2{margin:0 0 8px}.rc-head .lede{margin:0 0 14px;max-width:720px}.rc-mag-lead-title,.rc-case-work{letter-spacing:-.01em;line-height:1.35}
+</style>
 </head>
 <body data-code="50">
   <a class="skip-link" href="#noi-dung">Bỏ qua đến nội dung chính</a>
@@ -1363,36 +1435,142 @@
         </div>
       </section>
       <figure class="editorial-interlude"><img src="assets/cr-blk-50-vf6.webp" alt="VinFast VF 6 đã dán 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></figure>
-      <section class="section" aria-labelledby="case-title">
-        <div class="case-heading"><div><div class="section-kicker">Bài xe thực tế</div><h2 id="case-title">Xe dán phim cách nhiệt thực tế tại Auto365</h2></div></div>
-        <div class="case-filters" role="group" aria-label="Lọc bài xe theo thương hiệu">
-          <button class="case-filter active" type="button" data-brand="all" aria-pressed="true">Tất cả</button>
-          <button class="case-filter" type="button" data-brand="vinfast" aria-pressed="false">VinFast</button>
-          <button class="case-filter" type="button" data-brand="toyota" aria-pressed="false">Toyota</button>
-          <button class="case-filter" type="button" data-brand="mazda" aria-pressed="false">Mazda</button>
-          <button class="case-filter" type="button" data-brand="hyundai" aria-pressed="false">Hyundai</button>
-          <button class="case-filter" type="button" data-brand="kia" aria-pressed="false">Kia</button>
-          <button class="case-filter" type="button" data-brand="volvo" aria-pressed="false">Volvo</button>
-          <button class="case-filter" type="button" data-brand="mg" aria-pressed="false">MG</button>
-          <button class="case-filter" type="button" data-brand="ford" aria-pressed="false">Ford</button>
-          <button class="case-filter" type="button" data-brand="mitsubishi" aria-pressed="false">Mitsubishi</button>
-          <button class="case-filter" type="button" data-brand="lynk & co" aria-pressed="false">Lynk &amp; Co</button>
-        </div>
-        <div class="case-grid">
-          <article class="case-card" data-brand="vinfast"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-6-dan-cr-blk-50-kinh-lai-img_6aa2631bd4a841.46488692.webp" alt="VinFast VF 6 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">VinFast</span><h3>VinFast VF 6</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/vinfast-vf-6-dan-3m-cr-blk-50-kinh-lai">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="volvo"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-volvo-xc60-dan-phim-cach-nhiet-3m-o-dau-img_6aa3af39ef5226.13225865.webp" alt="Volvo XC60 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Volvo</span><h3>Volvo XC60</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/volvo-xc60-dan-phim-cach-nhiet-3m-o-dau">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="mg"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-mg5-dan-phim-3m-crystalline-cr-blk-kiem-tra-khi-nhan-xe-img_6a83c2bd94efa8.75871752.png.webp" alt="MG MG5 dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">MG</span><h3>MG MG5</h3><p>Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</p><a href="https://auto365.vn/mg5-dan-phim-3m-crystalline-cr-blk-kiem-tra-khi-nhan-xe">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="hyundai"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk-img_6a76af5a886743.94271249.png.webp" alt="Hyundai Santa Fe dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Hyundai</span><h3>Hyundai Santa Fe</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365_20260707_172456_6a4cd3f813b05.png.webp" alt="Toyota Veloz Cross dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Veloz Cross</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-toyota-veloz-cross">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="mazda"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5-14-img_6a574cec6cb8d3.87514689.jpg.webp" alt="Mazda CX-5 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Mazda</span><h3>Mazda CX-5</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="kia"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365-vn-tru-so-chinh-10png-img_6a476b080245d5.35547863_.png" alt="Kia Carens dán kính lái 3M Crystalline CR BLK 50 tại Auto365" loading="lazy"></div><span class="case-tag">Kia</span><h3>Kia Carens</h3><p>Kính lái CR BLK 50</p><a href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365vn-tru-so-chinh">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="lynk & co"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-lynk-co-06-dan-phim-cach-nhiet-3m-img_6a896e81764eb7.93060792.png.webp" alt="Lynk &amp; Co 06 dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Lynk &amp; Co</span><h3>Lynk &amp; Co 06</h3><p>Kính lái CR BLK 50 · Sườn trước CR BLK 35 · Sườn sau IR 15; giữ nguyên kính lưng.</p><a href="https://auto365.vn/lynk-co-06-dan-phim-cach-nhiet-3m">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong-img_6a7a9af22a30d3.71123956.png.webp" alt="Toyota Corolla Cross dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Corolla Cross</h3><p>Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</p><a href="https://auto365.vn/toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="toyota"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross-10-img_6a633cce0220a3.05376622.png.webp" alt="Toyota Innova Cross dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Toyota</span><h3>Toyota Innova Cross</h3><p>Kính lái CR BLK 50 · Sườn CR BLK 35 · Lưng CR BLK 15 · Cửa sổ trời IR15</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="ford"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-260605-frame-tin-tuc-web-auto365-1png-img_6a47883739b554.83691649_.png.webp" alt="Ford Everest dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Ford</span><h3>Ford Everest</h3><p>Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest">Xem hồ sơ xe →</a></article>
-          <article class="case-card" data-brand="mitsubishi"><div class="case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-destinator-dan-phim-cach-nhiet-3m-crystalline-cr-blk-11-img_6a5dedd09be4e4.60334728.png.webp" alt="Mitsubishi Destinator dán 3M Crystalline CR BLK tại Auto365" loading="lazy"></div><span class="case-tag">Mitsubishi</span><h3>Mitsubishi Destinator</h3><p>Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</p><a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-mitsubishi-destinator">Xem hồ sơ xe →</a></article>
-        </div>
-      </section>
+      <section class="section rc-cases" id="xe-thuc-te" aria-labelledby="case-title">
+<div class="rc-head">
+<div><div class="section-kicker">Bài xe thực tế</div>
+<h2 id="case-title">Xe thực tế dùng 3M CR BLK 50 tại Auto365</h2>
+<p class="lede">Hồ sơ thi công thực tế có dùng CR BLK 50 ở kính lái — xem cách mã 50 được phối với kính sườn và kính lưng trên từng xe.</p></div>
+<a class="rc-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div>
+<div class="rc-filter" role="group" aria-label="Lọc case theo hãng xe">
+<span class="rc-filter-lb">Hãng xe:</span>
+<button type="button" class="rc-chip is-active" data-case-filter="all">Tất cả</button>
+<button type="button" class="rc-chip" data-case-filter="vinfast" title="VinFast" aria-label="VinFast"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="volvo" title="Volvo" aria-label="Volvo"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/volvo.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="mg" title="MG" aria-label="MG"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mg.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="hyundai" title="Hyundai" aria-label="Hyundai"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/hyundai.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="toyota" title="Toyota" aria-label="Toyota"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/toyota.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="mazda" title="Mazda" aria-label="Mazda"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mazda.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="kia" title="Kia" aria-label="Kia"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/kia.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="lynk-co" title="Lynk &amp; Co" aria-label="Lynk &amp; Co"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/lynk-co.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="ford" title="Ford" aria-label="Ford"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/ford.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="rc-chip" data-case-filter="mitsubishi" title="Mitsubishi" aria-label="Mitsubishi"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mitsubishi.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+</div>
+<div class="rc-rail">
+<button type="button" class="rc-rail-btn rc-rail-btn--prev" data-rail-prev aria-label="Xem case trước">‹</button>
+<div class="rc-track" data-rail role="region" aria-label="Hồ sơ xe thực tế">
+<a class="rc-case" href="https://auto365.vn/vinfast-vf-6-dan-3m-cr-blk-50-kinh-lai" data-brand="vinfast">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-6-dan-cr-blk-50-kinh-lai-img_6aa2631bd4a841.46488692.webp" alt="VinFast VF 6 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">VinFast VF 6</span></span>
+<span class="rc-case-work">VinFast VF 6 dán kính lái 3M Crystalline CR BLK 50 tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50</span>
+<span class="rc-case-foot"><time datetime="2026-09-10">10/09/2026</time><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/volvo-xc60-dan-phim-cach-nhiet-3m-o-dau" data-brand="volvo">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-volvo-xc60-dan-phim-cach-nhiet-3m-o-dau-img_6aa3af39ef5226.13225865.webp" alt="Volvo XC60 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/volvo.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Volvo XC60</span></span>
+<span class="rc-case-work">Volvo XC60 dán kính lái 3M Crystalline CR BLK 50 tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50</span>
+<span class="rc-case-foot"><time datetime="2026-09-11">11/09/2026</time><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/mg5-dan-phim-3m-crystalline-cr-blk-kiem-tra-khi-nhan-xe" data-brand="mg">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-mg5-dan-phim-3m-crystalline-cr-blk-kiem-tra-khi-nhan-xe-img_6a83c2bd94efa8.75871752.png.webp" alt="MG MG5 dán 3M Crystalline CR BLK tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mg.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">MG MG5</span></span>
+<span class="rc-case-work">MG MG5 dán 3M Crystalline CR BLK tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk" data-brand="hyundai">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-hyundai-santa-fe-di-xuyen-viet-chon-ma-cr-blk-img_6a76af5a886743.94271249.png.webp" alt="Hyundai Santa Fe dán kính lái 3M Crystalline CR BLK 50 tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/hyundai.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Hyundai Santa Fe</span></span>
+<span class="rc-case-work">Hyundai Santa Fe dán kính lái 3M Crystalline CR BLK 50 tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-toyota-veloz-cross" data-brand="toyota">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365_20260707_172456_6a4cd3f813b05.png.webp" alt="Toyota Veloz Cross dán kính lái 3M Crystalline CR BLK 50 tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/toyota.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Toyota Veloz Cross</span></span>
+<span class="rc-case-work">Toyota Veloz Cross dán kính lái 3M Crystalline CR BLK 50 tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5" data-brand="mazda">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-3m-cr-blk-50-cho-mazda-cx-5-14-img_6a574cec6cb8d3.87514689.jpg.webp" alt="Mazda CX-5 dán kính lái 3M Crystalline CR BLK 50 tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mazda.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Mazda CX-5</span></span>
+<span class="rc-case-work">Mazda CX-5 dán kính lái 3M Crystalline CR BLK 50 tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365vn-tru-so-chinh" data-brand="kia">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-kinh-lai-cr-blk-50-cho-kia-carens-tai-auto365-vn-tru-so-chinh-10png-img_6a476b080245d5.35547863_.png" alt="Kia Carens dán kính lái 3M Crystalline CR BLK 50 tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/kia.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Kia Carens</span></span>
+<span class="rc-case-work">Kia Carens dán kính lái 3M Crystalline CR BLK 50 tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/lynk-co-06-dan-phim-cach-nhiet-3m" data-brand="lynk-co">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-lynk-co-06-dan-phim-cach-nhiet-3m-img_6a896e81764eb7.93060792.png.webp" alt="Lynk &amp; Co 06 dán 3M Crystalline CR BLK tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/lynk-co.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Lynk &amp; Co 06</span></span>
+<span class="rc-case-work">Lynk &amp; Co 06 dán 3M Crystalline CR BLK tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50 · Sườn trước CR BLK 35 · Sườn sau IR 15; giữ nguyên kính lưng.</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong" data-brand="toyota">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-toyota-corolla-cross-dan-phim-cach-nhiet-cabin-co-bi-toi-khong-img_6a7a9af22a30d3.71123956.png.webp" alt="Toyota Corolla Cross dán 3M Crystalline CR BLK tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/toyota.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Toyota Corolla Cross</span></span>
+<span class="rc-case-work">Toyota Corolla Cross dán 3M Crystalline CR BLK tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross" data-brand="toyota">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-toyota-innova-cross-10-img_6a633cce0220a3.05376622.png.webp" alt="Toyota Innova Cross dán 3M Crystalline CR BLK tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/toyota.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Toyota Innova Cross</span></span>
+<span class="rc-case-work">Toyota Innova Cross dán 3M Crystalline CR BLK tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50 · Sườn CR BLK 35 · Lưng CR BLK 15 · Cửa sổ trời IR15</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest" data-brand="ford">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-260605-frame-tin-tuc-web-auto365-1png-img_6a47883739b554.83691649_.png.webp" alt="Ford Everest dán 3M Crystalline CR BLK tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/ford.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Ford Everest</span></span>
+<span class="rc-case-work">Ford Everest dán 3M Crystalline CR BLK tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="rc-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-mitsubishi-destinator" data-brand="mitsubishi">
+<figure class="rc-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-destinator-dan-phim-cach-nhiet-3m-crystalline-cr-blk-11-img_6a5dedd09be4e4.60334728.png.webp" alt="Mitsubishi Destinator dán 3M Crystalline CR BLK tại Auto365" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="rc-case-cap">
+<span class="rc-case-xe"><img class="rc-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mitsubishi.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="rc-case-ten">Mitsubishi Destinator</span></span>
+<span class="rc-case-work">Mitsubishi Destinator dán 3M Crystalline CR BLK tại Auto365</span>
+<span class="rc-case-pos">Kính lái CR BLK 50 · Xem cấu hình từng vị trí kính</span>
+<span class="rc-case-foot"><span>Hồ sơ Auto365</span><span class="rc-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+</div>
+<button type="button" class="rc-rail-btn rc-rail-btn--next" data-rail-next aria-label="Xem case tiếp">›</button>
+</div>
+</section>
+<section class="section rc-mag" id="cam-nang" aria-labelledby="mag-title">
+<div class="rc-head rc-head--mag"><h2 id="mag-title">Cẩm nang phim cách nhiệt</h2><a class="rc-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+<div class="rc-mag-grid">
+<a class="rc-mag-lead" href="https://auto365.vn/dan-phim-cach-nhiet-nhung-kinh-lai-van-phai-sang"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-dan-phim-cach-nhiet-nhung-kinh-lai-van-phai-sang-img_6ab48c4ea33e56.93652810.webp" alt="Dán phim cách nhiệt nhưng kính lái vẫn phải sáng: cách chọn phim cho người hay chạy đêm" width="800" height="450" loading="lazy" decoding="async"><span class="rc-mag-badge">Cẩm nang</span><span class="rc-mag-lead-body"><span class="rc-mag-lead-title">Dán phim cách nhiệt nhưng kính lái vẫn phải sáng: cách chọn phim cho người hay chạy đêm</span><span class="rc-mag-desc">So sánh CR BLK 60, CR BLK 50 theo VLT, TSER, bảng giá và lưu ý thử phim thực tế trên kính lái.</span><time datetime="2026-09-24">24/09/2026</time></span></a>
+<ol class="rc-mag-list">
+<li><a class="rc-mag-item" href="https://auto365.vn/di-nang-rat-tay-kinh-lai-hay-kinh-suon-nen-dan-phim-truoc"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-di-nang-rat-tay-nen-xu-ly-kinh-lai-hay-kinh-suon-img_6ab4938e254fa2.46303240.webp" alt="Đi nắng 30 phút đã rát tay: kính lái và kính sườn nên ưu tiên xử lý vị trí nào trước?" width="330" height="186" loading="lazy" decoding="async"><span><span class="rc-mag-title">Đi nắng 30 phút đã rát tay: kính lái và kính sườn nên ưu tiên xử lý vị trí nào trước?</span><span class="rc-mag-desc">Cách xác định vị trí kính cần ưu tiên và cách phối mã.</span><time datetime="2026-09-24">24/09/2026</time></span></a></li>
+<li><a class="rc-mag-item" href="https://auto365.vn/kinh-lai-xuat-hien-quang-sang-khi-mua"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-kinh-lai-xuat-hien-quang-sang-khi-mua-img_6aa798c5bd39b6.74936374.webp" alt="Kính lái xuất hiện quầng sáng khi mưa: màng dầu, vết xước hay phim cũ?" width="330" height="186" loading="lazy" decoding="async"><span><span class="rc-mag-title">Kính lái xuất hiện quầng sáng khi mưa: màng dầu, vết xước hay phim cũ?</span><span class="rc-mag-desc">Cách kiểm mặt kính, lưỡi gạt, vết xước và phim cũ trước khi xử lý.</span><time datetime="2026-09-14">14/09/2026</time></span></a></li>
+<li><a class="rc-mag-item" href="https://auto365.vn/3m-ceramic-hybrid-va-crystalline-hybrid"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-3m-ceramic-hybrid-va-crystalline-hybrid-img_6aa7947c81c719.72678310.webp" alt="3M Ceramic Hybrid và Crystalline Hybrid khác nhau thế nào?" width="330" height="186" loading="lazy" decoding="async"><span><span class="rc-mag-title">3M Ceramic Hybrid và Crystalline Hybrid khác nhau thế nào?</span><span class="rc-mag-desc">So sánh theo cấu hình kính lái, thông số và giá gói.</span><time datetime="2026-09-14">14/09/2026</time></span></a></li>
+<li><a class="rc-mag-item" href="https://auto365.vn/kinh-lai-dan-phim-lau-nam-bi-mo-kiem-tra-gi-truoc"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-kinh-lai-dan-phim-cach-nhiet-lau-nam-bi-mo-img_6aa4d25df27ea4.58395354.webp" alt="Kính lái dán phim lâu năm bị mờ: kiểm tra gì trước?" width="330" height="186" loading="lazy" decoding="async"><span><span class="rc-mag-title">Kính lái dán phim lâu năm bị mờ: kiểm tra gì trước?</span><span class="rc-mag-desc">Nhận biết nguyên nhân và thời điểm nên mang xe đi kiểm tra.</span><time datetime="2026-09-12">12/09/2026</time></span></a></li>
+</ol>
+</div>
+</section>
       <figure class="editorial-interlude"><img src="assets/cr-blk-50-installation.webp" alt="Kỹ thuật viên thi công phim cách nhiệt trên kính xe" loading="lazy"></figure>
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><symbol id="a365hq-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol><symbol id="a365hq-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="a365hq-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="12" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></symbol><symbol id="a365hq-i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><!-- Branch coverage illustration system --><symbol id="a365hq-il-khue-van-cac" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/><path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"/></g></symbol><symbol id="a365hq-il-cau" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/><path d="M9 36.5h30"/></g></symbol><symbol id="a365hq-il-cao-oc" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/><path d="M28 11h10"/></g></symbol><symbol id="a365hq-il-vn" viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></symbol></svg><section class="a365hq-shell service-locator" aria-label="Hệ thống Auto365"><section class="a365hq-branch-grid" aria-label="Auto365 Trụ Sở Chính và hệ thống chi nhánh"><article class="a365hq-card a365hq-left-card"><div class="a365hq-left-map-bg" aria-hidden="true"><svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="a365hq-mapbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset="1" stop-color="#edf5fa"/></linearGradient><filter id="a365hq-pinshadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#ef2326" flood-opacity=".22"/></filter></defs><rect width="560" height="420" fill="url(#a365hq-mapbg)"/><path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"/><path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"/><path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"/><path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"/><path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"/><path d="M55 244c66-7 103-25 150-31 52-6 113 19 173 14 52-4 89-24 144-47" fill="none" stroke="#d9dde2" stroke-width="5" stroke-linecap="round"/><path d="M40 115c54 17 97 12 145-5 57-20 104-14 151 3 59 21 113 17 180-6" fill="none" stroke="#e2e6ea" stroke-width="5" stroke-linecap="round"/><rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"/><path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#ef2326" filter="url(#a365hq-pinshadow)"/><circle cx="363" cy="113" r="16" fill="#fff"/><path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"/><circle cx="464" cy="85" r="7" fill="#fff"/><path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"/><circle cx="250" cy="135" r="7" fill="#fff"/></svg></div><div class="a365hq-card-inner"><div class="a365hq-left-content"><p class="a365hq-eyebrow a365hq-eyebrow--rule">CHI NHÁNH GẦN BẠN</p><h2 class="a365hq-headline">Auto365.vn - <span class="a365hq-red">Trụ sở chính</span></h2><p class="a365hq-desc">Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p></div><span class="a365hq-map-badge">Auto365 Trụ Sở Chính</span><div class="a365hq-button-row"><a class="a365hq-btn a365hq-btn-primary" href="tel:+84365365365"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg>Gọi 0365 365 365</a><a class="a365hq-btn a365hq-btn-zalo" href="https://zalo.me/3820993010764366025" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-zalo"/></svg>Zalo tư vấn</a><a class="a365hq-btn a365hq-btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg>Google Maps</a></div><div class="a365hq-fact-row"><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-chat"/></svg></span><span><span class="a365hq-fact-title">Tư vấn nhanh</span><span class="a365hq-fact-text">Qua hotline hoặc Zalo</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-building"/></svg></span><span><span class="a365hq-fact-title">Trụ Sở Chính</span><span class="a365hq-fact-text">Phường Hiệp Bình, TP.HCM</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-map"/></svg></span><span><span class="a365hq-fact-title">Chỉ đường</span><span class="a365hq-fact-text">Mở trực tiếp Google Maps</span></span></div><div class="a365hq-fact-item"><span class="a365hq-fact-icon"><svg viewBox="0 0 24 24"><use href="#a365hq-i-phone"/></svg></span><span><span class="a365hq-fact-title">Hotline</span><span class="a365hq-fact-text">0365 365 365</span></span></div></div></div></article><article class="a365hq-card a365hq-right-card"><div class="a365hq-card-inner"><div class="a365hq-nr-panel a365hq-nr-branch-coverage"><p class="a365hq-nr-eyebrow a365hq-nr-eyebrow--rule">PHỦ SÓNG TOÀN QUỐC</p><h3 class="a365hq-nr-section-title a365hq-nr-branch-scale"><span class="a365hq-nr-branch-scale-hl">91 chi nhánh</span> · 33 tỉnh thành </h3><span class="a365hq-nr-branch-vn" aria-hidden="true"><span class="a365hq-nr-branch-vn-note">Auto365 có mặt<br>khắp Việt Nam</span><svg viewBox="0 0 44 100"><use href="#a365hq-il-vn"></use></svg></span><div class="a365hq-nr-branch-regions"><a class="a365hq-nr-branch-region a365hq-nr-branch-region--1" href="https://auto365.vn/chi-nhanh?mien=bac"><span class="a365hq-nr-branch-region-index">01</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-khue-van-cac"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN BẮC</span><span class="a365hq-nr-branch-region-count">41 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--2" href="https://auto365.vn/chi-nhanh?mien=trung"><span class="a365hq-nr-branch-region-index">02</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cau"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN TRUNG</span><span class="a365hq-nr-branch-region-count">26 điểm</span></a><a class="a365hq-nr-branch-region a365hq-nr-branch-region--3" href="https://auto365.vn/chi-nhanh?mien=nam"><span class="a365hq-nr-branch-region-index">03</span><svg class="a365hq-nr-branch-region-art" viewBox="0 0 48 48" aria-hidden="true"><use href="#a365hq-il-cao-oc"></use></svg><span class="a365hq-nr-branch-region-name">MIỀN NAM</span><span class="a365hq-nr-branch-region-count">24 điểm</span></a></div><a class="a365hq-nr-btn a365hq-nr-branch-all" href="https://auto365.vn/chi-nhanh"> Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="a365hq-nr-svg" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a></div></div></article></section></section>
 <section class="section why-auto365" aria-labelledby="why-title"><div class="section-kicker">Từ tư vấn đến bàn giao</div><h2 id="why-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2><p class="lede">Từ điểm thi công, tư vấn cấu hình, xe thực tế đến hồ sơ eWarranty — Auto365 công khai thông tin để khách hàng kiểm tra trước và sau khi sử dụng dịch vụ.</p><div class="why-grid"><article class="why-card"><div class="why-card-copy"><h3>Điểm thi công có thông tin để kiểm tra</h3><p>3M Pro Shop & 3M Training Center có không gian kỹ thuật và trải nghiệm thực tế.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365"><a href="https://auto365.vn/lien-he">Kiểm tra điểm thi công →</a></article><article class="why-card"><div class="why-card-copy"><h3>Tư vấn cấu hình theo từng xe và nhu cầu</h3><p>Đối chiếu TDS 3M, kính nền và thói quen lái để chọn mã phim phù hợp.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt"><a href="#fit-title">Xem cơ sở tư vấn →</a></article><article class="why-card"><div class="why-card-copy"><h3>Quy trình rõ ràng, đối chiếu thực tế</h3><p>Tham khảo xe thật và ảnh kiểm tra để biết cấu hình đang được triển khai.</p></div><img src="assets/cr-blk-50-installation.webp" alt="Thi công phim cách nhiệt thực tế"><a href="#evidence-title">Xem case xe thực tế →</a></article><article class="why-card"><div class="why-card-copy"><h3>Có hồ sơ sau khi bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành và điều kiện eWarranty để tiếp tục kiểm tra sau dịch vụ.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Đội ngũ Auto365 3M Pro Shop"><a href="#faq-title">Xem bảo hành eWarranty →</a></article></div><div class="credential-grid"><figure class="credential-card"><img src="assets/cert-3m-pro-shop.jpg" alt="Chứng nhận 3M Pro Shop của Auto365" loading="lazy"><figcaption>3M™ Pro Shop Certificate</figcaption></figure><figure class="credential-card"><img src="assets/cert-preferred-installer.jpg" alt="Chứng nhận 3M Preferred Installer" loading="lazy"><figcaption>Preferred Installer</figcaption></figure><figure class="credential-card"><img src="assets/cert-training-center-event.jpg" alt="Sự kiện trao chứng nhận 3M Training Center" loading="lazy"><figcaption>3M™ Training Center</figcaption></figure><figure class="credential-card"><img src="assets/cert-distributor-365group.jpg" alt="Chứng nhận nhà phân phối 3M của 365Group" loading="lazy"><figcaption>365Group · hồ sơ phân phối 3M</figcaption></figure></div></section>
@@ -1508,24 +1686,26 @@
         result.innerHTML="<strong>"+heading+"</strong><p>"+recommendation.reason+"</p><p class=\"fit-note\">Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng nên xác nhận sau khi đo kính nền và kiểm tra xe thực tế.</p>";
       });
     }
-    var caseSection=document.querySelector('[aria-labelledby="case-title"]');
-    if(caseSection){
-      var filterButtons=caseSection.querySelectorAll('.case-filter');
-      var caseCards=caseSection.querySelectorAll('.case-card');
-      filterButtons.forEach(function(button){
-        button.addEventListener('click',function(){
-          var selected=button.dataset.brand;
-          filterButtons.forEach(function(item){
-            var active=item===button;
-            item.classList.toggle('active',active);
-            item.setAttribute('aria-pressed',String(active));
-          });
-          caseCards.forEach(function(card){
-            card.hidden=selected!=='all'&&card.dataset.brand!==selected;
-          });
-        });
-      });
-    }
+    (function(){
+      var btns=document.querySelectorAll('[data-case-filter]');
+      var cards=document.querySelectorAll('.rc-case[data-brand]');
+      var track=document.querySelector('[data-rail]');
+      var prev=document.querySelector('[data-rail-prev]'),next=document.querySelector('[data-rail-next]');
+      if(!track)return;
+      function sync(){prev.disabled=track.scrollLeft<4;next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-4;}
+      btns.forEach(function(btn){btn.addEventListener('click',function(){
+        btns.forEach(function(x){x.classList.remove('is-active');});
+        btn.classList.add('is-active');
+        var f=btn.dataset.caseFilter;
+        cards.forEach(function(c){c.classList.toggle('is-hidden',f!=='all'&&c.dataset.brand!==f);});
+        track.scrollLeft=0;sync();
+      });});
+      function step(){return (cards[0]?cards[0].offsetWidth:260)+16;}
+      prev.addEventListener('click',function(){track.scrollBy({left:-step(),behavior:'smooth'});});
+      next.addEventListener('click',function(){track.scrollBy({left:step(),behavior:'smooth'});});
+      track.addEventListener('scroll',sync,{passive:true});
+      window.addEventListener('resize',sync);sync();
+    })();
     (function repairLegacyEncoding(){
       var marker=/[ÃÂ]|á»|áº|Ä |Ä‘|Æ°|â€™|â†|â€“|Â·/;
       var repair=function(value){
