@@ -648,6 +648,7 @@
 {
   "@context": "https://schema.org",
   "@graph": [
+    { "@type": "BreadcrumbList", "itemListElement": [ { "@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://auto365.vn/" }, { "@type": "ListItem", "position": 2, "name": "3M Crystalline CR BLK", "item": "https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk" }, { "@type": "ListItem", "position": 3, "name": "CR BLK 35" } ] },
     {
       "@type": "Product",
       "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35#product",
@@ -657,14 +658,7 @@
         "name": "3M"
       },
       "image": "https://auto365.vn/uploads/images/products/auto365vn-cr-blk-35jpeg-img_6a2fb4a84aa3b7.85602908_auto365vn-1781511336-0.jpeg.webp",
-      "description": "Mã phim 3M Crystalline CR BLK 35 thường được cân nhắc cho kính sườn và kính sau khi cần riêng tư vừa phải, giảm chói và vẫn giữ khả năng quan sát.",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "VND",
-        "price": "2600000",
-        "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35",
-        "availability": "https://schema.org/InStock"
-      }
+      "description": "1"
     },
     {
       "@type": "FAQPage",
@@ -715,7 +709,7 @@
           "name": "Khi nào nên chọn mã tối hơn CR BLK 35?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Khi ưu tiên chính là tăng riêng tư cho kính sườn sau hoặc kính lưng. Tuy nhiên cần xem mẫu thực tế; trang này không gán số kỹ thuật cho CR BLK 15 từ TDS Revision F vì bản TDS đang dẫn nguồn không có hàng dữ liệu mã 15."
+            "text": "Khi ưu tiên chính là tăng riêng tư cho kính sườn sau hoặc kính lưng. Tuy nhiên cần xem mẫu thực tế; CR BLK 15 có VLT 14% theo TDS Revision E tháng 05/2024, cho độ riêng tư cao hơn."
           }
         }
       ]
@@ -725,7 +719,7 @@
 </script>
 </head>
 <body>
-<div class="demo-bar">Bản xem trước thông tin dịch vụ · Giá và cấu hình xác nhận theo xe</div>
+
 <header class="brandbar">
 <div class="container brandbar-inner">
 <a aria-label="Auto365" href="https://auto365.vn">
@@ -746,7 +740,7 @@
 <div class="hero-grid">
 <div>
 <div class="hero-kicker">3M Crystalline CR BLK · kính sườn &amp; kính sau</div>
-<h1><span>CÂN BẰNG RIÊNG TƯ &amp; QUAN SÁT</span>CR BLK 35</h1>
+<h1>3M CR BLK 35: thông số và cách chọn cho kính sườn, kính sau</h1>
 <p class="hero-lead">CR BLK 35 là mã đáng cân nhắc khi muốn <strong>kính sườn/kính sau dịu hơn và kín đáo hơn</strong> nhưng chưa muốn đi tới mức quá tối. Trên kính Auto 75 tham chiếu, phim có VLT 33%, TSER 60% và giảm chói 55%.</p>
 <div aria-label="Thông số chính" class="hero-traits">
 <div class="hero-trait"><b>33%</b><span>VLT · Auto 75</span></div>
@@ -947,9 +941,9 @@
 <table>
 <thead><tr><th>Mã phim</th><th>Thông số tham chiếu</th><th>Nên cân nhắc khi</th></tr></thead>
 <tbody>
+<tr><td>CR BLK 40</td><td>VLT 41% · TSER 58% · giảm chói 44%</td><td>Kính sườn trước nếu ưu tiên độ sáng và quan sát.</td></tr>
 <tr><td>CR BLK 35</td><td>VLT 33% · TSER 60% · giảm chói 55%</td><td>Kính sườn trước/sau cần cân bằng quan sát, giảm chói và riêng tư.</td></tr>
-<tr><td>CR BLK 15</td><td>Không gán số từ TDS Revision F đang dẫn</td><td>Kính sườn sau/kính lưng cần riêng tư cao hơn.</td></tr>
-<tr><td>Phối theo vị trí</td><td>Không dùng một mã cho toàn xe</td><td>Tách kính sườn trước và khoang sau theo nhu cầu thực tế.</td></tr>
+<tr><td>CR BLK 15</td><td>VLT 14% · TSER 64% · giảm chói 81%</td><td>Kính sườn sau/kính lưng cần riêng tư cao hơn.</td></tr>
 </tbody>
 </table>
 </div>
@@ -965,45 +959,7 @@
 <div class="mid-consult-point">Có thể đối chiếu CR BLK 35 với 15 hoặc mã tối hơn.</div>
 </div>
 </div>
-<form class="mid-consult-form" id="midConsultForm">
-<div class="mid-form-grid">
-<div class="mid-field">
-<label for="midCar">Dòng xe</label>
-<input class="mid-input" id="midCar" name="car" placeholder="VD: Ford Everest"/>
-</div>
-<div class="mid-field">
-<label for="midYear">Năm xe</label>
-<input class="mid-input" id="midYear" inputmode="numeric" name="year" placeholder="VD: 2025"/>
-</div>
-<div class="mid-field">
-<label for="midGlass">Vị trí kính cần dán</label>
-<select class="mid-select" id="midGlass" name="glass">
-<option>Kính sườn trước</option>
-<option>Kính sườn sau</option>
-<option>Kính lưng</option>
-<option>Nhiều vị trí / full xe</option>
-</select>
-</div>
-<div class="mid-field">
-<label for="midNeed">Ưu tiên chính</label>
-<select class="mid-select" id="midNeed" name="need">
-<option>Cân bằng quan sát &amp; riêng tư</option>
-<option>Ưu tiên sáng, dễ quan sát</option>
-<option>Ưu tiên riêng tư hơn</option>
-<option>Giảm chói / dịu ánh sáng</option>
-</select>
-</div>
-<div class="mid-field mid-field--full">
-<label for="midContact">Số điện thoại / Zalo</label>
-<input class="mid-input" id="midContact" name="contact" placeholder="Nhập số để Auto365 liên hệ tư vấn"/>
-</div>
-</div>
-<div class="mid-form-actions">
-<button class="btn btn-primary" type="submit">Nhận đề xuất mã phim</button>
-<span class="mid-form-note">Demo front-end: nút sẽ mở Zalo kèm nội dung đã chọn.</span>
-</div>
-<div class="mid-form-success" id="midConsultSuccess">Đã tạo nội dung tư vấn. Đang mở Zalo Auto365…</div>
-</form>
+<div class="mid-consult-form"><p style="font-size:14px;color:#4b525c">Nhấp vào nút dưới đây để kết nối trực tiếp với chuyên viên Auto365 qua Zalo và nhận báo giá, cấu hình theo xe của bạn.</p><div class="mid-form-actions" style="margin-top:16px;"><a href="https://zalo.me/3820993010764366025" target="_blank" class="btn btn-primary" style="display:inline-block;width:100%;text-align:center">Nhận đề xuất mã phim qua Zalo</a></div></div>
 </div>
 </div>
 </div>
@@ -1038,7 +994,7 @@
 <div class="price-item"><span>SUV / CUV</span><b>18.300.000đ</b></div>
 </div>
 <p>Vẫn dùng CR BLK 35/15 cho các vị trí kính sườn/kính lưng; điểm nâng cấp chính nằm ở cấu hình kính lái CR BLK 40.</p>
-<a class="package-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk-pro">Xem chi tiết gói CR BLK Pro →</a>
+<a class="package-link" href="https://auto365.vn/phim-cach-nhiet-3m-crystalline-cr-blk-pro">Xem chi tiết gói CR BLK Pro →</a>
 </article>
 </div>
 </div>
@@ -1157,24 +1113,8 @@
 <a href="https://auto365.vn/geely-ex2-dan-phim-cach-nhiet-3m">Xem hồ sơ xe →</a>
 </div>
 </article>
-<article class="case-card" data-brand="Ford">
-<img alt="Kính nguyên bản tối màu sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-kiinh-nguyen-ban-toi-mau-img_6a7a8afe537ae0.15273827.jpg.webp"/>
-<div class="case-body">
-<div class="case-brand">Ford</div>
-<h3>Kính nguyên bản tối màu</h3>
-<p>Case kỹ thuật cho thấy cần đo kính nền trước khi chọn CR BLK 35.</p>
-<a href="https://auto365.vn/kinh-nguyen-ban-toi-mau-can-do-gi-truoc-khi-dan-phim">Xem hồ sơ xe →</a>
-</div>
-</article>
-<article class="case-card" data-brand="Subaru">
-<img alt="Chọn mã theo từng vị trí kính sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinhpng-img_69d74cb4cc42d5.35516631_.png.webp"/>
-<div class="case-body">
-<div class="case-brand">Subaru</div>
-<h3>Chọn mã theo từng vị trí kính</h3>
-<p>Hướng dẫn tổng hợp cách đặt CR BLK 35 trong cấu hình kính sườn/kính lưng.</p>
-<a href="https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh">Xem hồ sơ xe →</a>
-</div>
-</article>
+
+
 </div>
 <div class="case-more">
 <a class="btn" href="https://auto365.vn/tin-tuc" style="border:1px solid #e0e3e7;background:#fff;color:#222">Xem thêm case thực tế →</a>
@@ -1218,7 +1158,7 @@
 <article class="why"><h3>Đo kính trước khi chọn mã</h3><p>CR BLK 35 thay đổi VLT theo kính nền; kiểm tra xe thật giúp tránh chọn theo catalogue một cách máy móc.</p><a href="#thong-so">Xem dữ liệu →</a></article>
 <article class="why"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính sườn trước, sườn sau và kính lưng có ưu tiên quan sát/riêng tư khác nhau.</p><a href="#phu-hop">Xem vị trí kính →</a></article>
 <article class="why"><h3>Có case xe để đối chiếu</h3><p>CR BLK 35 có nhiều cấu hình xe thật được công khai để kiểm tra cách phối mã.</p><a href="#so-sanh">So sánh mã →</a></article>
-<article class="why"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành và eWarranty sau thi công.</p><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+<article class="why"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
 </div>
 <div class="cert-grid">
 <figure class="cert"><img alt="3M Pro Shop Certificate" src="assets/cert-3m-pro-shop.jpg"/><figcaption>3M™ Pro Shop Certificate</figcaption></figure>
@@ -1236,7 +1176,7 @@
 <div class="rights-grid">
 <article class="right"><div class="index">01</div><h3>Tháo &amp; vệ sinh phim cũ</h3><p>Thực hiện theo chương trình dịch vụ đang áp dụng tại thời điểm thi công.</p></article>
 <article class="right"><div class="index">02</div><h3>Kiểm tra kính sườn/lưng</h3><p>Kiểm tra kính nền, đường sấy kính lưng và các vùng cần quan sát trước thi công.</p></article>
-<article class="right"><div class="index">03</div><h3>eWarranty 3M</h3><p>Kích hoạt và bàn giao thông tin bảo hành theo chính sách 3M áp dụng.</p></article>
+<article class="right"><div class="index">03</div><h3>eWarranty 3M</h3><p>Kích hoạt và bàn giao thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam áp dụng.</p></article>
 <article class="right"><div class="index">04</div><h3>Kiểm tra hoàn thiện</h3><p>Quan sát gương bên, camera sau, bề mặt phim và các thiết bị liên quan sau thi công.</p></article>
 </div>
 <div class="choice-strip">
@@ -1272,15 +1212,15 @@
 </details>
 <details>
 <summary>Khi nào nên chọn mã tối hơn CR BLK 35?</summary>
-<p>Khi ưu tiên chính là tăng riêng tư cho kính sườn sau hoặc kính lưng. Tuy nhiên cần xem mẫu thực tế; trang này không gán số kỹ thuật cho CR BLK 15 từ TDS Revision F vì bản TDS đang dẫn nguồn không có hàng dữ liệu mã 15.</p>
+<p>Khi ưu tiên chính là tăng riêng tư cho kính sườn sau hoặc kính lưng. Tuy nhiên cần xem mẫu thực tế; CR BLK 15 có VLT 14% theo TDS Revision E tháng 05/2024, cho độ riêng tư cao hơn.</p>
 </details>
 </div>
 <div class="source-box"><strong>Nguồn và phạm vi dữ liệu</strong><br/><br/>
 <strong>Biên soạn:</strong> Ban Biên Tập Auto365<br/>
 <strong>Chuyên gia kiểm duyệt:</strong> Đặng Minh Hoàng – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br/>
-<strong>Nguồn kỹ thuật chính:</strong> 3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025<br/>
+<strong>Nguồn kỹ thuật chính:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025</a><br/>
 <strong>Nguồn đối chiếu thị trường:</strong> Auto365, 365Group, AKauto, Auto365 Mỹ Đình, TILIMIT, Ô Tô Hoàng Kim và các bài cấu hình xe thực tế Auto365.<br/>
-<strong>Cập nhật bản demo:</strong> 23/09/2026<br/><br/>
+
 Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M công bố. Giá, ưu đãi, cấu hình và phạm vi bảo hành cần được xác nhận tại thời điểm đặt lịch.</div>
 </div>
 </section>
@@ -1316,11 +1256,7 @@ Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M
 <button aria-label="Đóng" class="close" data-close-modal="" type="button">×</button>
 <h3>Nhận tư vấn miễn phí</h3>
 <p class="tiny">Gửi thông tin xe để được đối chiếu CR BLK 35 với mã sáng/tối hơn theo đúng vị trí kính.</p>
-<form id="zaloForm" onsubmit="event.preventDefault();window.open('https://zalo.me/3820993010764366025','_blank');">
-<input aria-label="Dòng xe" class="field" placeholder="Dòng xe / năm sản xuất"/>
-<input aria-label="Số điện thoại" class="field" placeholder="Số điện thoại"/>
-<button class="btn btn-primary" style="width:100%;margin-top:12px" type="submit">Mở Zalo tư vấn</button>
-</form>
+<div id="zaloForm"><p style="font-size:14px;color:#4b525c">Nhấp vào nút dưới đây để kết nối trực tiếp với chuyên viên Auto365 qua Zalo và nhận báo giá, cấu hình theo xe của bạn.</p><a class="btn btn-primary" href="https://zalo.me/3820993010764366025" target="_blank" style="display:inline-block;width:100%;margin-top:12px;text-align:center">Mở Zalo tư vấn</a></div>
 </div>
 </div>
 <script>
@@ -1377,9 +1313,9 @@ const fitmentData = {
   },
   frontside: {
     visibility: {
-      high: {code:"CR BLK 35",tag:"Ưu tiên quan sát gương bên",reason:"Với kính sườn trước và nhu cầu nhìn gương bên rõ hơn, CR BLK 35 là mã nên được xem trước trong nhóm kính sườn.",alt:"Có thể đo kính nền trước nếu cần ưu tiên quan sát hơn",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
+      high: {code:"CR BLK 40",tag:"Ưu tiên quan sát gương bên",reason:"Với kính sườn trước và nhu cầu nhìn gương bên rõ hơn, CR BLK 35 là mã nên được xem trước trong nhóm kính sườn.",alt:"Có thể đo kính nền trước nếu cần ưu tiên quan sát hơn",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
       medium: {code:"CR BLK 35",tag:"Sáng hơn cho kính sườn trước",reason:"CR BLK 35 vẫn là mã chính cho kính sườn trước; nếu kính nền đã tối, nên đo kính trước khi chốt.",alt:"Có thể đo kính nền trước khi chốt",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Sáng & thoáng hơn",reason:"Nếu bạn ưu tiên tầm nhìn bên hông, CR BLK 35 là mã chính cho kính sườn trước trong taxonomy hiện tại.",alt:"Có thể đo kính nền trước khi chốt",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
+      low: {code:"CR BLK 40",tag:"Sáng & thoáng hơn",reason:"Nếu bạn ưu tiên tầm nhìn bên hông, CR BLK 35 là mã chính cho kính sườn trước trong taxonomy hiện tại.",alt:"Có thể đo kính nền trước khi chốt",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
     },
     balance: {
       high: {code:"CR BLK 35",tag:"Cân bằng riêng tư & quan sát",reason:"Với kính sườn trước và nhu cầu cân bằng, CR BLK 35 thường là mã đáng xem trước: kín hơn CR BLK 40, giảm chói tốt hơn nhưng vẫn phù hợp để quan sát nếu kính nguyên bản không quá đậm.",alt:"Có thể đo kính nền và kiểm tra góc nhìn gương",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
