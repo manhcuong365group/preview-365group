@@ -18,12 +18,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <style>
     :root{
-      --ink:#17191d;
+      --ink:#111214;
       --text:#333;
       --muted:#68707a;
-      --line:#e5e7eb;
-      --soft:#f5f6f7;
-      --soft2:#f9fafb;
+      --line:#dedbd4;
+      --soft:#e9e7e1;
+      --soft2:#f0eee8;
       --white:#fff;
       --red:#e31b2d;
       --red2:#c91525;
@@ -40,22 +40,15 @@
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
-    body{margin:0;font-family:var(--font);color:var(--text);background:#fff;font-size:16px;line-height:1.7;font-weight:400}
+    body{margin:0;font-family:var(--font);color:var(--text);background:#f4f2ed;font-size:16px;line-height:1.7;font-weight:400}
     img{max-width:100%;display:block}
     a{color:inherit;text-decoration:none}
     button,input{font:inherit}
     button{cursor:pointer}
     .container{width:min(calc(100% - 32px),var(--container));margin-inline:auto}
     .demo-bar{background:#f0f1f3;color:#5f6670;text-align:center;font-size:12px;padding:7px 14px;border-bottom:1px solid #e2e4e7}
-    .brandbar{position:sticky;top:0;z-index:80;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-    .brandbar-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-    .brandbar img{width:150px;height:42px;object-fit:contain}
-    .nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}
-    .nav a:hover{color:var(--red)}
-    .phone{display:flex;align-items:center;gap:9px;font-weight:700;font-size:14px}
-    .phone-dot{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#fff0f1;color:var(--red)}
-    .hero{background:var(--dark);color:white;overflow:hidden}
-    .crumbs{padding-top:22px;color:#aeb4bd;font-size:12px}
+        .crumbs a{color:#dce0e6;text-decoration:none}
+    .crumbs .sep{opacity:0.45;margin:0 6px;}
     .hero-grid{min-height:670px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:48px;padding:42px 0 64px}
     .hero-kicker{display:flex;align-items:center;gap:9px;color:#ff8f99;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
     .hero h1{font-family:var(--display);font-size:clamp(48px,7vw,86px);line-height:.97;letter-spacing:-.055em;margin:14px 0 20px}
@@ -643,6 +636,16 @@
   .mid-consult-form{padding:18px !important}
   .final-cta{padding:18px !important}
 }
+.brandbar{background:#090a0c;color:#fff;border-bottom:1px solid rgba(255,255,255,.11);position:relative;z-index:5;}
+.brandbar-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brandmark{display:flex;align-items:center;gap:14px;text-decoration:none;font-weight:800;letter-spacing:.02em;color:#fff;}
+.mark-3m{font-size:30px;line-height:1;color:#ef2b31;letter-spacing:-.09em}
+.mark-divider{height:28px;width:1px;background:rgba(255,255,255,.3)}
+.mark-auto{font-size:15px;letter-spacing:.16em}
+.brand-nav{display:flex;align-items:center;gap:24px;font-size:14px;color:#c9ced5}
+.brand-nav a{text-decoration:none}
+.brand-nav a:hover{color:#fff}
+.brand-phone{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 14px;color:#fff!important;font-weight:700}
 </style>
 <script type="application/ld+json">
 {
@@ -727,18 +730,18 @@
 <body>
 
 <header class="brandbar">
-<div class="container brandbar-inner">
-<a aria-label="Auto365" href="https://auto365.vn">
-<img alt="3M AUTO365 · PRO SHOP" src="https://auto365.vn/assets/images/logo.svg"/>
-</a>
-<nav aria-label="Điều hướng nội dung" class="nav">
-<a href="#phu-hop">Vị trí kính</a>
-<a href="#thong-so">Thông số</a>
-<a href="#so-sanh">So sánh</a>
-</nav>
-<a class="phone" href="tel:+84365365365"><span class="phone-dot">☎</span>0365 365 365</a>
-</div>
-</header>
+    <div class="container brandbar-inner">
+      <a class="brandmark" href="https://auto365.vn" aria-label="Auto365">
+        <span class="mark-3m">3M</span><span class="mark-divider"></span><span class="mark-auto">AUTO365 · PRO SHOP</span>
+      </a>
+      <nav class="brand-nav" aria-label="Điều hướng chính">
+        <a href="#phu-hop">Vị trí kính</a>
+        <a href="#thong-so">Thông số</a>
+        <a href="#so-sanh">So sánh</a>
+        <a class="brand-phone" href="tel:+84365365365">0365 365 365</a>
+      </nav>
+    </div>
+  </header>
 <main>
 <section class="hero" id="noi-dung">
 <div class="container">
