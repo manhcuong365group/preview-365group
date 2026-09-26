@@ -646,6 +646,77 @@
 .brand-nav a{text-decoration:none}
 .brand-nav a:hover{color:#fff}
 .brand-phone{border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 14px;color:#fff!important;font-weight:700}
+
+/* ===== CASE THUC TE + CAM NANG (theo auto365.vn/phim-cach-nhiet-o-to-3m) ===== */
+.c35-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.c35-head .section-desc{max-width:720px}
+.c35-all{flex:none;display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 16px;border:1px solid #d9dde2;border-radius:999px;background:#fff;color:#1d2228;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.c35-all:hover{border-color:#e31b2d;color:#e31b2d}
+.c35-all svg,.c35-case-go svg{width:15px;height:15px}
+.c35-filter{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:4px 0 18px}
+.c35-filter-lb{flex:none;white-space:nowrap;font-size:13px;font-weight:600;color:#59616b;margin-right:2px}
+.c35-chip{display:inline-flex;align-items:center;justify-content:center;height:38px;min-width:58px;padding:0 14px;border:1px solid #e0e3e7;border-radius:999px;background:#fff;color:#2a3038;font-size:13px;font-weight:600;cursor:pointer;transition:.15s}
+.c35-chip .c35-logo{height:20px;width:auto;max-width:48px;object-fit:contain}
+.c35-chip:hover{border-color:#bfc5cc}
+.c35-chip.is-active{border-color:#e31b2d;box-shadow:0 0 0 1px #e31b2d inset;color:#e31b2d}
+.c35-logo--txt{font-size:12px;font-weight:700;color:#2a3038}
+.c35-rail{position:relative}
+.c35-track{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px}
+.c35-track::-webkit-scrollbar{display:none}
+.c35-case{scroll-snap-align:start;display:flex;flex-direction:column;background:#fff;border:1px solid #e4e7eb;border-radius:14px;overflow:hidden;color:inherit;text-decoration:none;transition:.2s}
+.c35-case:hover{transform:translateY(-3px);box-shadow:0 14px 32px rgba(20,25,30,.09)}
+.c35-case.is-hidden{display:none}
+.c35-case-media{margin:0;aspect-ratio:16/9;background:#eef0f3;overflow:hidden}
+.c35-case-media img{width:100%;height:100%;object-fit:cover;display:block}
+.c35-case-cap{display:flex;flex-direction:column;gap:8px;padding:14px;flex:1}
+.c35-case-xe{display:flex;align-items:center;gap:8px}
+.c35-case-xe .c35-logo{height:18px;width:auto;max-width:36px;object-fit:contain}
+.c35-case-ten{font-size:12px;font-weight:700;color:#59616b;text-transform:uppercase;letter-spacing:.03em}
+.c35-case-work{font-family:var(--display);font-size:15px;line-height:1.4;font-weight:600;color:#1d2228;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.c35-case-pos{align-self:flex-start;font-size:11.5px;font-weight:600;color:#b3121f;background:#fdeef0;border-radius:6px;padding:4px 8px}
+.c35-case-foot{margin-top:auto;padding-top:10px;border-top:1px solid #eef0f2;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:#7a828c}
+.c35-case-go{display:inline-flex;align-items:center;gap:4px;font-weight:700;color:#1d2228}
+.c35-case:hover .c35-case-go{color:#e31b2d}
+.c35-rail-btn{position:absolute;top:28%;z-index:2;width:38px;height:38px;border-radius:50%;border:1px solid #e0e3e7;background:#fff;box-shadow:0 6px 16px rgba(0,0,0,.1);font-size:22px;line-height:1;cursor:pointer;color:#1d2228}
+.c35-rail-btn--prev{left:-18px}
+.c35-rail-btn--next{right:-18px}
+.c35-rail-btn:disabled{opacity:0;pointer-events:none}
+.c35-head--mag{align-items:center;margin-bottom:18px}
+.c35-mag-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+.c35-mag-lead{position:relative;display:flex;flex-direction:column;border:1px solid #e4e7eb;border-radius:16px;overflow:hidden;color:inherit;text-decoration:none;background:#fff}
+.c35-mag-lead img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
+.c35-mag-badge{position:absolute;top:14px;left:14px;z-index:1;background:#e31b2d;color:#fff;font-size:11px;font-weight:700;padding:5px 10px;border-radius:999px}
+.c35-mag-lead-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.c35-mag-lead-title{font-family:var(--display);font-size:20px;line-height:1.35;font-weight:700;color:#1d2228}
+.c35-mag-lead:hover .c35-mag-lead-title{color:#e31b2d}
+.c35-mag-lead time{font-size:12px;color:#8a929b}
+.c35-mag-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.c35-mag-item{display:grid;grid-template-columns:150px 1fr;gap:14px;align-items:start;color:inherit;text-decoration:none;padding-bottom:12px;border-bottom:1px solid #eceef1}
+.c35-mag-list li:last-child .c35-mag-item{border-bottom:0;padding-bottom:0}
+.c35-mag-item img{width:150px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px;display:block}
+.c35-mag-item>span{display:flex;flex-direction:column;gap:4px}
+.c35-mag-title{font-size:14.5px;line-height:1.4;font-weight:700;color:#1d2228}
+.c35-mag-item:hover .c35-mag-title{color:#e31b2d}
+.c35-mag-desc{font-size:12.5px;line-height:1.5;color:#6b737d;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.c35-mag-item time{font-size:11.5px;color:#8a929b}
+@media(max-width:1000px){
+  .c35-track{grid-auto-columns:calc((100% - 16px)/2)}
+  .c35-mag-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .c35-head{flex-direction:column;align-items:flex-start;gap:10px}
+  .c35-head--mag{flex-direction:row;align-items:center}
+  .c35-filter{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-16px;padding-right:16px}
+  .c35-filter::-webkit-scrollbar{display:none}
+  .c35-chip{flex:none}
+  .c35-track{grid-auto-columns:82%;margin-right:-16px;padding-right:16px}
+  .c35-rail-btn{display:none}
+  .c35-mag-lead-title{font-size:18px}
+  .c35-mag-item{grid-template-columns:112px 1fr;gap:12px}
+  .c35-mag-item img{width:112px}
+  .c35-mag-desc{display:none}
+  .c35-mag-lead .c35-mag-desc{display:-webkit-box}
+}
 </style>
 <script type="application/ld+json">
 {
@@ -1053,80 +1124,91 @@
 </section>
 
 <figure class="editorial-interlude"><img src="../phim-cach-nhiet/hinh/phim-cach-nhiet-4.jpg" alt="Dán phim cách nhiệt 3M CR BLK 35" loading="lazy"></figure>
-<section class="section case-gallery alt">
+<section class="section alt c35-cases" id="xe-thuc-te" aria-labelledby="case-title">
 <div class="container">
-<div class="eyebrow">CASE THỰC TẾ</div>
-<h2 class="section-title">Xe thực tế dùng 3M CR BLK 35 tại Auto365</h2>
-<p class="section-desc">Các cấu hình dưới đây có ghi nhận CR BLK 35 trên xe thực tế. Lọc theo hãng để xem cách mã 35 được dùng ở kính sườn trước, sườn sau hoặc kính lưng.</p>
-<div aria-label="Lọc case theo hãng" class="case-filter" role="tablist">
-<button class="active" data-case-filter="all" type="button">Tất cả</button>
-<button data-case-filter="Subaru" type="button">Subaru</button>
-<button data-case-filter="Ford" type="button">Ford</button>
-<button data-case-filter="Volkswagen" type="button">Volkswagen</button>
-<button data-case-filter="LynkCo" type="button">Lynk &amp; Co</button>
-<button data-case-filter="Mitsubishi" type="button">Mitsubishi</button>
-<button data-case-filter="Geely" type="button">Geely</button>
+<div class="c35-head">
+<div><div class="eyebrow">Case thực tế</div>
+<h2 class="section-title" id="case-title">Xe thực tế dùng 3M CR BLK 35 tại Auto365</h2>
+<p class="section-desc">Hồ sơ thi công thực tế có dùng CR BLK 35 ở kính sườn trước, sườn sau hoặc kính lưng — xem cách mã 35 được phối cùng kính lái và các mã tối hơn trên từng xe.</p></div>
+<a class="c35-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
-<div class="case-grid">
-<article class="case-card" data-brand="Subaru">
-<img alt="Subaru Forester sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-subaru-forester-danphim-3m-cr-blk-img_6ab38d25d29a73.57512366.webp"/>
-<div class="case-body">
-<div class="case-brand">Subaru</div>
-<h3>Subaru Forester</h3>
-<p>CR BLK 35 kính sườn trước; phối mã khác theo từng vị trí kính.</p>
-<a href="https://auto365.vn/subaru-forester-dan-phim-3m-cr-blk">Xem hồ sơ xe →</a>
+<div class="c35-filter" role="group" aria-label="Lọc case theo hãng xe">
+<span class="c35-filter-lb">Hãng xe:</span>
+<button type="button" class="c35-chip is-active" data-case-filter="all">Tất cả</button>
+<button type="button" class="c35-chip" data-case-filter="subaru" title="Subaru" aria-label="Subaru"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/subaru.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="c35-chip" data-case-filter="volkswagen" title="Volkswagen" aria-label="Volkswagen"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/volkswagen.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="c35-chip" data-case-filter="geely" title="Geely" aria-label="Geely"><span class="c35-logo c35-logo--txt">Geely</span></button>
+<button type="button" class="c35-chip" data-case-filter="lynk-co" title="Lynk &amp; Co" aria-label="Lynk &amp; Co"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/lynk-co.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="c35-chip" data-case-filter="mitsubishi" title="Mitsubishi" aria-label="Mitsubishi"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mitsubishi.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
+<button type="button" class="c35-chip" data-case-filter="ford" title="Ford" aria-label="Ford"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/ford.png" alt="" role="presentation" loading="lazy" decoding="async"></button>
 </div>
-</article>
-<article class="case-card" data-brand="Ford">
-<img alt="Ford Everest sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-260605-frame-tin-tuc-web-auto365-1png-img_6a47883739b554.83691649_.png.webp"/>
-<div class="case-body">
-<div class="case-brand">Ford</div>
-<h3>Ford Everest</h3>
-<p>CR BLK 35 kính sườn trước; kính lái CR BLK 50, phía sau dùng mã tối hơn.</p>
-<a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest">Xem hồ sơ xe →</a>
+<div class="c35-rail">
+<button type="button" class="c35-rail-btn c35-rail-btn--prev" data-rail-prev aria-label="Xem case trước">‹</button>
+<div class="c35-track" data-rail role="region" aria-label="Hồ sơ xe thực tế">
+<a class="c35-case" href="https://auto365.vn/subaru-forester-dan-phim-3m-cr-blk" data-brand="subaru">
+<figure class="c35-case-media"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-subaru-forester-danphim-3m-cr-blk-img_6ab38d25d29a73.57512366.webp" alt="Subaru Forester dán phim 3M CR BLK: chọn phim theo từng vị trí kính" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="c35-case-cap">
+<span class="c35-case-xe"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/subaru.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="c35-case-ten">Subaru Forester</span></span>
+<span class="c35-case-work">Subaru Forester dán phim 3M CR BLK: chọn phim theo từng vị trí kính</span>
+<span class="c35-case-pos">Sườn trước: CR BLK 35</span>
+<span class="c35-case-foot"><time datetime="2026-09-23">23/09/2026</time><span class="c35-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="c35-case" href="https://auto365.vn/volkswagen-viloran-dan-phim-3m-cr-blk" data-brand="volkswagen">
+<figure class="c35-case-media"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-volkswagen-viloran-dan-phim-3m-cr-blk-img_6aab54e5accf49.02627310.webp" alt="Volkswagen Viloran dán phim 3M Crystalline CR BLK: cấu hình 50/35/15" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="c35-case-cap">
+<span class="c35-case-xe"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/volkswagen.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="c35-case-ten">Volkswagen Viloran</span></span>
+<span class="c35-case-work">Volkswagen Viloran dán phim 3M Crystalline CR BLK: cấu hình 50/35/15</span>
+<span class="c35-case-pos">Sườn trước: CR BLK 35</span>
+<span class="c35-case-foot"><time datetime="2026-09-17">17/09/2026</time><span class="c35-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="c35-case" href="https://auto365.vn/geely-ex2-dan-phim-cach-nhiet-3m" data-brand="geely">
+<figure class="c35-case-media"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-geely-ex2-dan-phim-cach-nhiet-3m-img_6aa77eea393062.65270935.webp" alt="Geely EX2 dán phim cách nhiệt 3M: cấu hình CR BLK và Ceramic NR" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="c35-case-cap">
+<span class="c35-case-xe"><span class="c35-logo c35-logo--txt">Geely</span><span class="c35-case-ten">Geely EX2</span></span>
+<span class="c35-case-work">Geely EX2 dán phim cách nhiệt 3M: cấu hình CR BLK và Ceramic NR</span>
+<span class="c35-case-pos">Sườn trước: CR BLK 35</span>
+<span class="c35-case-foot"><time datetime="2026-09-14">14/09/2026</time><span class="c35-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="c35-case" href="https://auto365.vn/lynk-co-06-dan-phim-cach-nhiet-3m" data-brand="lynk-co">
+<figure class="c35-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-lynk-co-06-dan-phim-cach-nhiet-3m-img_6a896e81764eb7.93060792.png.webp" alt="Lynk &amp; Co 06 dán phim cách nhiệt 3M: vì sao không dùng một mã cho toàn xe" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="c35-case-cap">
+<span class="c35-case-xe"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/lynk-co.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="c35-case-ten">Lynk &amp; Co 06</span></span>
+<span class="c35-case-work">Lynk &amp; Co 06 dán phim cách nhiệt 3M: vì sao không dùng một mã cho toàn xe</span>
+<span class="c35-case-pos">Sườn trước: CR BLK 35</span>
+<span class="c35-case-foot"><span>Hồ sơ Auto365</span><span class="c35-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="c35-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-mitsubishi-destinator" data-brand="mitsubishi">
+<figure class="c35-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-destinator-dan-phim-cach-nhiet-3m-crystalline-cr-blk-11-img_6a5dedd09be4e4.60334728.png.webp" alt="Mitsubishi Destinator dán phim cách nhiệt 3M Crystalline CR BLK" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="c35-case-cap">
+<span class="c35-case-xe"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/mitsubishi.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="c35-case-ten">Mitsubishi Destinator</span></span>
+<span class="c35-case-work">Mitsubishi Destinator dán phim cách nhiệt 3M Crystalline CR BLK</span>
+<span class="c35-case-pos">Sườn trước, sườn sau, kính lưng: CR BLK 35</span>
+<span class="c35-case-foot"><span>Hồ sơ Auto365</span><span class="c35-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
+<a class="c35-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest" data-brand="ford">
+<figure class="c35-case-media"><img src="https://auto365.vn/uploads/images/news/auto365vn-260605-frame-tin-tuc-web-auto365-1png-img_6a47883739b554.83691649_.png.webp" alt="Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK" width="640" height="360" loading="lazy" decoding="async"></figure>
+<span class="c35-case-cap">
+<span class="c35-case-xe"><img class="c35-logo" src="https://auto365.vn/assets/frontend/images/car-brands/ford.png" alt="" role="presentation" loading="lazy" decoding="async"><span class="c35-case-ten">Ford Everest</span></span>
+<span class="c35-case-work">Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK</span>
+<span class="c35-case-pos">Sườn trước: CR BLK 35 · kính lái CR BLK 50</span>
+<span class="c35-case-foot"><span>Hồ sơ Auto365</span><span class="c35-case-go">Xem chi tiết lắp đặt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
+</span></a>
 </div>
-</article>
-<article class="case-card" data-brand="Volkswagen">
-<img alt="Volkswagen Viloran sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-volkswagen-viloran-dan-phim-3m-cr-blk-img_6aab54e5accf49.02627310.webp"/>
-<div class="case-body">
-<div class="case-brand">Volkswagen</div>
-<h3>Volkswagen Viloran</h3>
-<p>CR BLK 35 kính sườn trước; cấu hình được tách theo mục tiêu quan sát và riêng tư.</p>
-<a href="https://auto365.vn/volkswagen-viloran-dan-phim-3m-cr-blk">Xem hồ sơ xe →</a>
+<button type="button" class="c35-rail-btn c35-rail-btn--next" data-rail-next aria-label="Xem case tiếp">›</button>
 </div>
-</article>
-<article class="case-card" data-brand="LynkCo">
-<img alt="Lynk &amp; Co 06 sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-lynk-co-06-dan-phim-cach-nhiet-3m-img_6a896e81764eb7.93060792.png.webp"/>
-<div class="case-body">
-<div class="case-brand">Lynk &amp; Co</div>
-<h3>Lynk &amp; Co 06</h3>
-<p>CR BLK 35 kính sườn trước; case cho thấy lý do không nên dùng một mã cho toàn xe.</p>
-<a href="https://auto365.vn/lynk-co-06-dan-phim-cach-nhiet-3m">Xem hồ sơ xe →</a>
 </div>
-</article>
-<article class="case-card" data-brand="Mitsubishi">
-<img alt="Mitsubishi Destinator sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-mitsubishi-destinator-dan-phim-cach-nhiet-3m-crystalline-cr-blk-11-img_6a5dedd09be4e4.60334728.png.webp"/>
-<div class="case-body">
-<div class="case-brand">Mitsubishi</div>
-<h3>Mitsubishi Destinator</h3>
-<p>CR BLK 35 cho sườn trước, sườn sau và kính lưng; kính lái dùng mã khác.</p>
-<a href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-cho-mitsubishi-destinator">Xem hồ sơ xe →</a>
-</div>
-</article>
-<article class="case-card" data-brand="Geely">
-<img alt="Geely EX2 sử dụng CR BLK 35" loading="lazy" src="https://auto365.vn/uploads/images/news/auto365vn-geely-ex2-dan-phim-cach-nhiet-3m-img_6aa77eea393062.65270935.webp"/>
-<div class="case-body">
-<div class="case-brand">Geely</div>
-<h3>Geely EX2</h3>
-<p>CR BLK 35 kính sườn trước; bài nhấn mạnh kiểm tra góc nhìn gương.</p>
-<a href="https://auto365.vn/geely-ex2-dan-phim-cach-nhiet-3m">Xem hồ sơ xe →</a>
-</div>
-</article>
-
-
-</div>
-<div class="case-more">
-<a class="btn" href="https://auto365.vn/tin-tuc" style="border:1px solid #e0e3e7;background:#fff;color:#222">Xem thêm case thực tế →</a>
+</section>
+<section class="section c35-mag" id="cam-nang" aria-labelledby="mag-title">
+<div class="container">
+<div class="c35-head c35-head--mag"><h2 class="section-title" id="mag-title">Cẩm nang phim cách nhiệt</h2><a class="c35-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+<div class="c35-mag-grid">
+<a class="c35-mag-lead" href="https://auto365.vn/di-nang-rat-tay-kinh-lai-hay-kinh-suon-nen-dan-phim-truoc"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-di-nang-rat-tay-nen-xu-ly-kinh-lai-hay-kinh-suon-img_6ab4938e254fa2.46303240.webp" alt="Đi nắng 30 phút đã rát tay: kính lái và kính sườn nên ưu tiên xử lý vị trí nào trước?" width="800" height="450" loading="lazy" decoding="async"><span class="c35-mag-badge">Cẩm nang</span><span class="c35-mag-lead-body"><span class="c35-mag-lead-title">Đi nắng 30 phút đã rát tay: kính lái và kính sườn nên ưu tiên xử lý vị trí nào trước?</span><span class="c35-mag-desc">Hướng dẫn xác định kính lái hay kính sườn cần ưu tiên dán phim cách nhiệt, cách phối mã và bảng giá 3M.</span><time datetime="2026-09-24">24/09/2026</time></span></a>
+<ol class="c35-mag-list">
+<li><a class="c35-mag-item" href="https://auto365.vn/sai-thong-tin-bao-hanh-dien-tu-phim-cach-nhiet"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-sai-thong-tin-bao-hanh-dien-tu-phim-cach-nhiet-img_6ab4823532faf7.33235257.webp" alt="Sai thông tin bảo hành điện tử phim cách nhiệt: cập nhật thế nào?" width="330" height="186" loading="lazy" decoding="async"><span><span class="c35-mag-title">Sai thông tin bảo hành điện tử phim cách nhiệt: cập nhật thế nào?</span><span class="c35-mag-desc">Cách đối chiếu 7 trường dữ liệu eWarranty và tra cứu lại trên EWS 2.0.</span><time datetime="2026-09-24">24/09/2026</time></span></a></li>
+<li><a class="c35-mag-item" href="https://auto365.vn/dan-phim-cach-nhiet-co-lam-kinh-o-to-nut-do-soc-nhiet-khong"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-dan-phim-cach-nhiet-kinh-o-to-nut-do-soc-nhiet-2-webp-img_6ab1fca57a0697.18180690.webp" alt="Dán phim cách nhiệt có làm kính ô tô nứt do sốc nhiệt không?" width="330" height="186" loading="lazy" decoding="async"><span><span class="c35-mag-title">Dán phim cách nhiệt có làm kính ô tô nứt do sốc nhiệt không?</span><span class="c35-mag-desc">Kiểm tra điểm khởi phát, cạnh kính và dấu tác động cơ học trước khi kết luận.</span><time datetime="2026-09-22">22/09/2026</time></span></a></li>
+<li><a class="c35-mag-item" href="https://auto365.vn/vet-soc-nuoc-sau-dan-phim-cach-nhiet"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-vet-soc-nuoc-sau-dan-phim-cach-nhiet-khi-nao-can-kiem-tra-img_6aad01dc1cf5a4.76315140.webp" alt="Vết sọc nước sau dán phim cách nhiệt: khi nào cần kiểm tra?" width="330" height="186" loading="lazy" decoding="async"><span><span class="c35-mag-title">Vết sọc nước sau dán phim cách nhiệt: khi nào cần kiểm tra?</span><span class="c35-mag-desc">Cách theo dõi vùng ẩm, nhận biết bong mép hoặc méo hình sau thi công.</span><time datetime="2026-09-18">18/09/2026</time></span></a></li>
+<li><a class="c35-mag-item" href="https://auto365.vn/tuoi-tho-phim-cach-nhiet-3m"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-tuoi-tho-phim-cach-nhiet-3m-img_6aa26de38ca126.39370742.webp" alt="Tuổi thọ phim cách nhiệt 3M: dùng được bao lâu và khi nào cần thay?" width="330" height="186" loading="lazy" decoding="async"><span><span class="c35-mag-title">Tuổi thọ phim cách nhiệt 3M: dùng được bao lâu và khi nào cần thay?</span><span class="c35-mag-desc">Phân biệt tuổi thọ phim với thời hạn bảo hành và thời điểm cần kiểm tra.</span><time datetime="2026-09-10">10/09/2026</time></span></a></li>
+</ol>
 </div>
 </div>
 </section>
@@ -1384,17 +1466,33 @@ updateFitment();
 
 
 const caseFilterButtons = document.querySelectorAll("[data-case-filter]");
-const caseCards = document.querySelectorAll(".case-card[data-brand]");
+const caseCards = document.querySelectorAll(".c35-case[data-brand]");
+const caseTrack = document.querySelector("[data-rail]");
+const railPrev = document.querySelector("[data-rail-prev]");
+const railNext = document.querySelector("[data-rail-next]");
+function syncRail(){
+  if(!caseTrack) return;
+  railPrev.disabled = caseTrack.scrollLeft < 4;
+  railNext.disabled = caseTrack.scrollLeft + caseTrack.clientWidth >= caseTrack.scrollWidth - 4;
+}
 caseFilterButtons.forEach(btn=>{
   btn.addEventListener("click",()=>{
-    caseFilterButtons.forEach(x=>x.classList.remove("active"));
-    btn.classList.add("active");
+    caseFilterButtons.forEach(x=>x.classList.remove("is-active"));
+    btn.classList.add("is-active");
     const filter = btn.dataset.caseFilter;
-    caseCards.forEach(card=>{
-      card.classList.toggle("is-hidden", filter !== "all" && card.dataset.brand !== filter);
-    });
+    caseCards.forEach(card=>card.classList.toggle("is-hidden", filter !== "all" && card.dataset.brand !== filter));
+    caseTrack.scrollLeft = 0;
+    syncRail();
   });
 });
+if(caseTrack){
+  const step = ()=> (caseCards[0] ? caseCards[0].offsetWidth : 260) + 16;
+  railPrev.addEventListener("click",()=>caseTrack.scrollBy({left:-step(),behavior:"smooth"}));
+  railNext.addEventListener("click",()=>caseTrack.scrollBy({left:step(),behavior:"smooth"}));
+  caseTrack.addEventListener("scroll",syncRail,{passive:true});
+  window.addEventListener("resize",syncRail);
+  syncRail();
+}
 
 const midConsultForm = document.getElementById("midConsultForm");
 if(midConsultForm){
