@@ -432,6 +432,22 @@
     .metric{background:#33383f}
     .btn-ghost{background:#353a42;border-color:#4a5058}
     .final-cta{background:#2a2e35}
+    .real-wrap{grid-template-columns:minmax(0,1fr) 320px;gap:28px;align-items:stretch}
+    .real-copy{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 30px;display:flex;flex-direction:column}
+    .real-tag{align-self:flex-start;font-size:12px;font-weight:700;color:var(--red);background:#fdecec;border-radius:999px;padding:5px 11px;margin-bottom:14px}
+    .real-facts{margin:20px 0 0;display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    .real-facts div{padding:14px 16px;background:#faf9f7}
+    .real-facts div+div{border-left:1px solid var(--line)}
+    .real-facts dt{font-size:12px;color:var(--muted);margin-bottom:4px}
+    .real-facts dd{margin:0;font-size:14px;font-weight:600;color:#1d2127;line-height:1.35}
+    .real-note{margin:18px 0 0;font-size:14px;color:#4f5660}
+    .real-actions{margin-top:auto;padding-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+    .real-actions .btn{margin:0}
+    .real-ghost{border:1px solid var(--line);background:#fff;color:#1d2127}
+    .real-ghost:hover{border-color:#c9c4ba}
+    .video-placeholder{max-width:320px;border-radius:18px;overflow:hidden}
+    @media(max-width:900px){.real-wrap{grid-template-columns:1fr}}
+    @media(max-width:640px){.real-copy{padding:20px 18px}.real-facts{grid-template-columns:1fr}.real-facts div+div{border-left:0;border-top:1px solid var(--line)}.real-actions .btn{flex:1 1 100%}}
   </style>
 
   <script type="application/ld+json">
@@ -848,14 +864,23 @@
       <div class="container">
         <div class="real-wrap">
           <div class="real-copy">
+            <span class="real-tag">Xe thực tế tại Auto365</span>
             <h2 class="section-title" id="real-title">CR BLK 60 trên xe thực tế</h2>
-            <p class="section-desc">Porsche Panamera 4 E-Hybrid dán CR BLK 60 ở kính lái tại Auto365 — video do Auto365.vn - Trụ Sở Chính đăng công khai trên Facebook.</p>
-            <p class="section-desc">Muốn xem độ sáng thực tế trên xe của bạn? Auto365 đặt mẫu CR BLK 60 cạnh CR BLK 50 từ ghế lái trước khi chốt.</p>
-            <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
+            <p class="section-desc">Porsche Panamera 4 E-Hybrid dán CR BLK 60 ở kính lái — xem trực tiếp độ sáng kính sau khi dán qua video thi công.</p>
+            <dl class="real-facts">
+              <div><dt>Dòng xe</dt><dd>Porsche Panamera 4 E-Hybrid</dd></div>
+              <div><dt>Kính lái</dt><dd>3M Crystalline CR BLK 60</dd></div>
+              <div><dt>Nguồn</dt><dd>Video Auto365.vn - Trụ Sở Chính</dd></div>
+            </dl>
+            <p class="real-note">Muốn xem độ sáng trên chính xe của bạn? Auto365 đặt mẫu CR BLK 60 cạnh CR BLK 50 từ ghế lái trước khi chốt.</p>
+            <div class="real-actions">
+              <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
+              <a class="btn real-ghost" href="https://www.facebook.com/reel/1114943977858429" target="_blank" rel="noopener">Xem trên Facebook ↗</a>
+            </div>
           </div>
           <div class="video-placeholder">
-              <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false&width=360" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
-              <div class="video-caption"><strong>Porsche Panamera 4 E-Hybrid dán CR BLK 60 tại Auto365</strong>Nguồn: <a class="inline-link" style="color:#ff8f99" href="https://www.facebook.com/reel/1114943977858429" target="_blank" rel="noopener">Auto365.vn - Trụ Sở Chính trên Facebook</a>.</div>
+              <div class="video-embed"><iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1114943977858429&show_text=false&width=320" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" title="Video CR BLK 60 dán trên Porsche Panamera 4 E-Hybrid tại Auto365"></iframe></div>
+              
             </div>
         </div>
       </div>
