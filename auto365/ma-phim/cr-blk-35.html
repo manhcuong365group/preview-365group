@@ -717,6 +717,12 @@
   ]
 }
 </script>
+
+<style>
+    .film-lead-modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:16px;background:rgba(20,24,30,.68);backdrop-filter:blur(4px)}
+    .film-lead-modal[hidden]{display:none}.film-lead-dialog{position:relative;width:min(540px,100%);max-height:calc(100vh - 32px);overflow:auto;padding:22px;border:1px solid #dfe3e8;border-radius:16px;background:#fff;box-shadow:0 24px 80px rgba(0,0,0,.28)}
+     .film-lead-dialog h2{margin:0;text-align:center;font-size:21px!important}.film-lead-close{position:absolute;top:12px;right:14px;width:28px;height:28px;border:0;border-radius:50%;background:#f0f2f4;color:#65707b;font-size:18px;cursor:pointer}.film-lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}.film-lead-field{display:grid;gap:5px}.film-lead-field.full{grid-column:1/-1}.film-lead-field label{font-size:10px;font-weight:800;color:#252b32}.film-lead-field input,.film-lead-field select,.film-lead-field textarea{width:100%;box-sizing:border-box;min-height:40px;padding:9px 10px;border:1px solid #cfd7e0;border-radius:8px;background:#fff;color:#252b32;font:inherit;font-size:12px}.film-lead-field textarea{min-height:70px;resize:vertical}.film-lead-submit{width:100%;min-height:42px;margin-top:12px;border:0;border-radius:9px;background:#ed0715;color:#fff;font:inherit;font-size:12px;font-weight:800;cursor:pointer}.film-lead-instruction{margin:10px 0 6px;color:#4f5964;font-size:11px;line-height:1.5}.film-lead-message{width:100%;min-height:110px;box-sizing:border-box;padding:9px 10px;border:1px solid #cfd7e0;border-radius:8px;background:#f8fafc;color:#252b32;font:inherit;font-size:12px;line-height:1.45;resize:vertical}.film-lead-zalo{display:inline-flex;align-items:center;justify-content:center;min-height:38px;margin-top:9px;padding:8px 13px;border-radius:8px;background:#0b72e7;color:#fff;text-decoration:none;font-size:12px;font-weight:800}.film-lead-status{margin:9px 0 0;color:#606b77;font-size:11px;text-align:center}.package-card,.code-link{cursor:pointer}.package-card:focus-visible,.code-link:focus-visible{outline:3px solid var(--red);outline-offset:3px}@media(max-width:560px){.film-lead-grid{grid-template-columns:1fr}.film-lead-field.full{grid-column:auto}.film-lead-dialog{padding:20px 16px}}
+  </style>
 </head>
 <body>
 
@@ -959,7 +965,7 @@
 <div class="mid-consult-point">Có thể đối chiếu CR BLK 35 với 15 hoặc mã tối hơn.</div>
 </div>
 </div>
-<div class="mid-consult-form" style="display:flex; flex-direction:column; justify-content:center; padding:32px; background:#fff; text-align:center;"><div style="width:56px; height:56px; background:#e5f0ff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0068ff" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div><h3 style="font-size:20px; font-weight:700; color:#111; margin:0 0 8px;">Nhận tư vấn mã phim</h3><p style="font-size:14px; color:#555; margin:0 0 20px; line-height:1.5;">Chuyên viên Auto365 sẽ dựa trên dòng xe và kính nguyên bản của bạn để gợi ý phương án tốt nhất.</p><a href="https://zalo.me/3820993010764366025" target="_blank" style="display:inline-block; width:100%; background:#0068ff; color:#fff; font-weight:bold; border-radius:8px; padding:14px; text-align:center; text-decoration:none; box-shadow:0 4px 12px rgba(0,104,255,0.2);">Mở chat Zalo Auto365</a></div>
+<div class="mid-consult-form" style="display:flex; flex-direction:column; justify-content:center; padding:32px; background:#fff; text-align:center;"><div style="width:56px; height:56px; background:#e5f0ff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 16px;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0068ff" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></div><h3 style="font-size:20px; font-weight:700; color:#111; margin:0 0 8px;">Nhận tư vấn mã phim</h3><p style="font-size:14px; color:#555; margin:0 0 20px; line-height:1.5;">Chuyên viên Auto365 sẽ dựa trên dòng xe và kính nguyên bản của bạn để gợi ý phương án tốt nhất.</p><button type="button" onclick="window.openFilmLeadModal(\'3M Crystalline CR BLK 35\')" style="display:inline-block; width:100%; background:#0068ff; color:#fff; font-weight:bold; border-radius:8px; padding:14px; text-align:center; border:none; box-shadow:0 4px 12px rgba(0,104,255,0.2); cursor:pointer;">Điền form tư vấn</button></div>
 </div>
 </div>
 </div>
@@ -1130,7 +1136,7 @@
 <p>Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p>
 <div class="branch-actions">
 <a class="btn btn-primary" href="tel:+84365365365">Gọi 0365 365 365</a>
-<a class="btn btn-ghost" href="https://zalo.me/3820993010764366025">Zalo tư vấn</a>
+<button type="button" class="btn btn-ghost" onclick="window.openFilmLeadModal(\'3M Crystalline CR BLK 35\')" style="cursor:pointer; border:none; background:none;">Zalo tư vấn</button>
 <a class="btn btn-ghost" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9">Google Maps</a>
 </div>
 <div class="branch-stat">
@@ -1232,7 +1238,7 @@ Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M
 <h2>Chốt CR BLK 35 sau khi biết kính nền và mức riêng tư bạn muốn</h2>
 <p>Gửi dòng xe, năm sản xuất, vị trí kính cần dán và nhu cầu quan sát/riêng tư. Auto365 sẽ đối chiếu CR BLK 35 với mã sáng hơn hoặc tối hơn, kiểm tra kính nền và tư vấn cấu hình trước khi chốt.</p>
 </div>
-<button class="btn btn-primary" data-open-zalo="" type="button">Nhận tư vấn CR BLK 35</button>
+<button class="btn btn-primary" onclick="window.openFilmLeadModal(\'3M Crystalline CR BLK 35\')" type="button">Nhận tư vấn CR BLK 35</button>
 </div>
 </div>
 </section>
@@ -1249,16 +1255,9 @@ Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M
 <div class="mobile-sticky">
 <a href="tel:+84365365365">Gọi ngay</a>
 <a href="#thong-so">Thông số</a>
-<button class="hot" data-open-zalo="" type="button">Tư vấn CR BLK 35</button>
+<button class="hot" onclick="window.openFilmLeadModal(\'3M Crystalline CR BLK 35\')" type="button">Tư vấn CR BLK 35</button>
 </div>
-<div aria-hidden="true" class="modal" id="zaloModal">
-<div class="modal-card">
-<button aria-label="Đóng" class="close" data-close-modal="" type="button">×</button>
-<h3>Nhận tư vấn miễn phí</h3>
-<p class="tiny">Gửi thông tin xe để được đối chiếu CR BLK 35 với mã sáng/tối hơn theo đúng vị trí kính.</p>
-<div id="zaloForm" style="background:#f4f8fa; padding:20px; border-radius:12px; text-align:center; margin-top:16px; border:1px solid #e1e9ed;"><p style="font-size:15px; color:#4b525c; margin:0 0 16px; line-height:1.5;">Kết nối trực tiếp với chuyên viên Auto365 qua Zalo để nhận báo giá chi tiết và cấu hình phù hợp nhất cho xe của bạn.</p><a class="btn btn-primary" href="https://zalo.me/3820993010764366025" target="_blank" style="display:inline-block; width:100%; background:#0068ff; color:#fff; font-weight:bold; border-radius:8px; padding:14px; text-align:center; border:none; box-shadow:0 4px 12px rgba(0,104,255,0.2);">Chat Zalo nhận báo giá</a></div>
-</div>
-</div>
+
 <script>
     const specData = {
       auto75:{vlt:"33%",tser:"60%",irer:"67%",irr:"98%",uv:"99,9%",glare:"55%"},
@@ -1276,21 +1275,7 @@ Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M
       });
     });
 
-    const modal=document.getElementById("zaloModal");
-    document.querySelectorAll("[data-open-zalo]").forEach(btn=>btn.addEventListener("click",()=>{
-      modal.classList.add("open");
-      modal.setAttribute("aria-hidden","false");
-    }));
-    document.querySelector("[data-close-modal]").addEventListener("click",()=>{
-      modal.classList.remove("open");
-      modal.setAttribute("aria-hidden","true");
-    });
-    modal.addEventListener("click",e=>{
-      if(e.target===modal){
-        modal.classList.remove("open");
-        modal.setAttribute("aria-hidden","true");
-      }
-    });
+    
   
 
 const fitmentData = {
@@ -1431,5 +1416,64 @@ if(midConsultForm){
   });
 }
 </script>
+
+<section class="film-lead-modal" id="film-lead-modal" hidden aria-labelledby="film-lead-title" role="dialog" aria-modal="true">
+    <div class="film-lead-dialog">
+      <button class="film-lead-close" type="button" aria-label="Đóng form">×</button>
+      <h2 id="film-lead-title">Nhận tư vấn miễn phí</h2>
+      <form id="film-lead-form">
+        <div class="film-lead-grid">
+          <div class="film-lead-field"><label for="film-lead-name">Họ và tên</label><input id="film-lead-name" name="name" autocomplete="name" placeholder="Nhập họ tên" required></div>
+          <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
+          <div class="film-lead-field"><label for="film-lead-vehicle">Dòng xe / đời xe <small>(không bắt buộc)</small></label><input id="film-lead-vehicle" name="vehicle" placeholder="VD: Ford Ranger, VF5, CX-5"></div>
+          <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
+          <div class="film-lead-field"><label for="film-lead-need">Nhu cầu ưu tiên</label><select id="film-lead-need" name="need"><option>Tăng riêng tư khoang sau</option><option>Ưu tiên kính lái sáng</option><option>Cân bằng chống nóng và quan sát</option></select></div>
+          <div class="film-lead-field"><label for="film-lead-package">Gói đang quan tâm</label><select id="film-lead-package" name="package"><option>3M Crystalline CR BLK 35</option><option>3M Crystalline CR BLK</option><option>3M Crystalline Hybrid</option></select></div>
+          <div class="film-lead-field full"><label for="film-lead-note">Nhu cầu thêm <small>(không bắt buộc)</small></label><textarea id="film-lead-note" name="note" placeholder="Đi đêm, cần riêng tư, có panorama..."></textarea></div>
+        </div>
+        <p class="film-lead-instruction">Sau khi mở Zalo, anh/chị cần dán nội dung và bấm gửi. Thông tin chưa được gửi tự động.</p>
+        <textarea id="film-lead-message" class="film-lead-message" readonly aria-label="Nội dung tư vấn để sao chép"></textarea>
+        <button class="film-lead-submit" type="submit">Sao chép nội dung và mở Zalo</button>
+        <a class="film-lead-zalo" href="https://zalo.me/3820993010764366025" target="_blank" rel="noopener">Mở Zalo Auto365</a>
+        <p class="film-lead-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+<script>
+  (function(){
+    var modal=document.getElementById('film-lead-modal'),dialog=modal&&modal.querySelector('.film-lead-dialog'),form=document.getElementById('film-lead-form');
+    if(!modal||!form)return;
+    var packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null;
+    window.openFilmLeadModal = function openModal(label){
+      lastFocus=document.activeElement;
+      if(label&&/hybrid/i.test(label)) packageField.value='3M Crystalline Hybrid';
+      else if(label&&/crystalline cr blk/i.test(label)) packageField.value='3M Crystalline CR BLK';
+      else packageField.value='3M Crystalline CR BLK 35';
+      modal.hidden=false;document.body.classList.add('film-lead-open');form.elements.name.focus();
+    }
+    function closeModal(){modal.hidden=true;document.body.classList.remove('film-lead-open');if(lastFocus)lastFocus.focus();}
+    /* .code-link remains a real navigation link. Do not intercept it with the lead form. */
+    document.querySelectorAll('.package-card').forEach(function(card){
+      card.setAttribute('tabindex','0');card.setAttribute('role','button');
+      card.addEventListener('click',function(event){if(!event.target.closest('a'))openModal(card.querySelector('strong')?.textContent||'');});
+      card.addEventListener('keydown',function(event){if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(card.querySelector('strong')?.textContent||'');}});
+    });
+    modal.querySelector('.film-lead-close').addEventListener('click',closeModal);
+    modal.addEventListener('click',function(event){if(event.target===modal)closeModal();});
+    document.addEventListener('keydown',function(event){if(event.key==='Escape'&&!modal.hidden)closeModal();});
+    form.addEventListener('submit',function(event){
+      event.preventDefault();if(!form.reportValidity())return;
+      var data=new FormData(form),phone=String(data.get('phone')||'').trim();
+      if(!/^(?:\+84|0)(?:[ .-]?\d){8,10}$/.test(phone)){status.textContent='Vui lòng nhập số điện thoại Việt Nam hợp lệ.';form.elements.phone.focus();return;}
+      var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Họ tên: '+data.get('name'),'Số điện thoại: '+phone,'Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Nhu cầu: '+data.get('need'),'Gói quan tâm: '+data.get('package'),'Ghi chú: '+(data.get('note')||'Không có')].join('\n');
+      messageField.value=message;
+      var zaloUrl='https://zalo.me/3820993010764366025';
+      var openZalo=function(){var popup=window.open(zaloUrl,'_blank','noopener');return !!popup;};
+      status.textContent='Đang chuẩn bị nội dung để gửi Zalo…';
+      if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){var opened=openZalo();status.textContent=opened?'Đã sao chép nội dung. Mở Zalo, dán vào cuộc trò chuyện và bấm gửi.':'Đã sao chép nội dung. Nếu Zalo chưa mở, bấm liên kết bên dưới, dán vào cuộc trò chuyện và bấm gửi.';}).catch(function(){var opened=openZalo();status.textContent=opened?'Chưa sao chép được. Nội dung đã hiển thị bên dưới; hãy chọn sao chép rồi dán vào Zalo.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';});}
+      else{var opened=openZalo();status.textContent=opened?'Chưa sao chép tự động được. Hãy sao chép nội dung bên dưới, dán vào Zalo và bấm gửi.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';}
+    });
+  })();
+  </script>
 </body>
 </html>
