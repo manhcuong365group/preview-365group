@@ -362,6 +362,12 @@
     .hqx-all svg{width:15px;height:15px}
     @media(max-width:900px){.hqx-grid{grid-template-columns:1fr}}
     @media(max-width:560px){.hqx-card{padding:16px}.hqx-fact:nth-child(even){padding-left:10px}.hqx-actions{grid-template-columns:1fr 1fr}.hqx-btn.primary{grid-column:1/-1}.hqx-regions{gap:7px}.hqx-region{padding:10px;min-height:96px}.hqx-region .art{width:26px;height:26px}.hqx-region .ct{font-size:16px}.hqx-title{font-size:17px}}
+    @media(max-width:640px){
+      .answer-bullets,.hqx-grid{display:flex;gap:10px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-inline:-11px;padding:2px 11px 8px;scroll-padding-inline:11px}
+      .answer-bullets::-webkit-scrollbar,.hqx-grid::-webkit-scrollbar{display:none}
+      .answer-bullets>li{flex:0 0 72%;scroll-snap-align:start}
+      .hqx-grid>.hqx-card{flex:0 0 88%;scroll-snap-align:start}
+    }
   </style>
 
   <script type="application/ld+json">
