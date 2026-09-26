@@ -416,6 +416,27 @@
     .video-embed iframe{aspect-ratio:9/16;width:100%}
     @media(max-width:900px){.evidence-merge{grid-template-columns:1fr}.video-placeholder{margin-inline:auto}}
     @media(max-width:640px){.tech-grid-stack .tech{grid-template-columns:1fr;padding:18px}.tech-grid-stack .tech .big{grid-row:auto;font-size:36px;margin-bottom:8px}}
+    /* Rhythm + contrast pass */
+    .section{padding:22px 0}
+    .section.alt{background:#f7f6f3}
+    .section-title{font-weight:600;color:#1d2127;position:relative;padding-top:12px}
+    .section-title::before{content:"";position:absolute;left:0;top:0;width:28px;height:3px;border-radius:2px;background:var(--red)}
+    .process{background:#111316!important;color:#fff;padding:36px 0!important}
+    .process .section-title{color:#fff}
+    .process .section-desc{color:#b8bec7}
+    .steps{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:s}
+    .steps li{position:relative;background:#1b1e23;border:1px solid #2c3037;border-radius:16px;padding:18px 16px}
+    .steps .n{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:15px;margin-bottom:12px}
+    .steps h3{font-family:var(--display);font-size:15px;font-weight:600;color:#fff;margin:0 0 6px}
+    .steps p{margin:0;font-size:13px;color:#aeb5bf;line-height:1.5}
+    .steps li:not(:last-child)::after{content:"";position:absolute;top:34px;right:-12px;width:12px;height:2px;background:#3a3f47}
+    .process-reviewer{display:flex;align-items:center;gap:12px;margin:18px 0 0;font-size:13px;color:#b8bec7}
+    .process-reviewer a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+    .rv{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:#fff;color:#111316;font-weight:700;font-size:13px;flex:0 0 36px}
+    @media(max-width:1000px){.steps{grid-template-columns:repeat(3,1fr)}.steps li::after{display:none}}
+    @media(max-width:640px){.section{padding:18px 0}.process{padding:28px 0!important}
+      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:-11px;padding:2px 11px 8px;scroll-padding-inline:11px;gap:10px}
+      .steps::-webkit-scrollbar{display:none}.steps li{flex:0 0 70%;scroll-snap-align:start}}
   </style>
 
   <script type="application/ld+json">
@@ -877,6 +898,21 @@
             <a class="package-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid">Xem chi tiết gói Crystalline Hybrid →</a>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 class="section-title" id="process-title">Quy trình dán CR BLK 60 tại Auto365</h2>
+        <p class="section-desc">Đo kính nền trước, chốt cấu hình từng ô kính rồi mới thi công — để độ sáng sau khi dán đúng với mức bạn đã chọn.</p>
+        <ol class="steps">
+          <li><span class="n">1</span><h3>Tư vấn &amp; đo kính nền</h3><p>Hỏi thói quen đi ngày/đêm, đo và ghi VLT kính nguyên bản.</p></li>
+          <li><span class="n">2</span><h3>Xem mẫu thực tế</h3><p>Đặt mẫu CR BLK 60 cạnh CR BLK 50 từ ghế lái để so độ sáng.</p></li>
+          <li><span class="n">3</span><h3>Chốt cấu hình</h3><p>Chọn mã cho từng ô kính và báo giá theo đúng xe.</p></li>
+          <li><span class="n">4</span><h3>Thi công</h3><p>Tháo phim cũ miễn phí, vệ sinh kính và dán phim 3M chính hãng.</p></li>
+          <li><span class="n">5</span><h3>Nghiệm thu &amp; bảo hành</h3><p>Kiểm tra GPS, ETC/VETC, camera, HUD; kích hoạt eWarranty 3M.</p></li>
+        </ol>
+        <p class="process-reviewer"><span class="rv">ĐH</span>Quy trình kiểm duyệt kỹ thuật bởi <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> — Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center</p>
       </div>
     </section>
 
