@@ -391,13 +391,14 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .case-filter-row{display:flex;align-items:center;gap:12px;margin:20px 0 18px}
 .case-filter-label{flex:none;font-size:13px;color:#555}
 .case-brand-tabs{display:flex;flex-wrap:wrap;gap:8px;min-width:0}
-.case-tab{height:46px;min-width:100px;padding:0 14px;border:1px solid #e3e7ec;border-radius:12px;background:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-family:inherit;font-weight:600;font-size:13px;color:#333;white-space:nowrap;box-shadow:0 1px 2px rgba(16,24,40,.05);transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease,background .18s ease}
-.case-tab img{display:block;width:auto;height:auto;max-height:24px;max-width:80px;filter:grayscale(.35);opacity:.82;transition:filter .18s ease,opacity .18s ease,transform .18s ease}
-.case-tab:hover{border-color:#f3b4b8;box-shadow:0 6px 16px rgba(227,27,45,.1);transform:translateY(-2px)}
-.case-tab:hover img{filter:none;opacity:1;transform:scale(1.05)}
-.case-tab:focus-visible{outline:2px solid var(--red);outline-offset:2px}
-.case-tab.active{background:#fff6f6;border-color:var(--red);box-shadow:0 0 0 3px rgba(227,27,45,.12),0 6px 16px rgba(227,27,45,.1);color:var(--red)}
-.case-tab.active img{filter:none;opacity:1}
+.case-tab{height:40px;min-width:100px;padding:0 14px;border:1px solid #dfe3e8;border-radius:10px;background:#fff;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-family:inherit;font-weight:600;font-size:13.5px;color:#1f2329;white-space:nowrap;transition:border-color .15s ease,background .15s ease}
+.case-tab img{display:block;width:auto;height:auto;max-height:24px;max-width:78px}
+.case-tab:hover{border-color:#b9c2cd}
+.case-tab:focus-visible{outline:2px solid #b9c2cd;outline-offset:2px}
+.case-tab.active{background:#eef1f5;border-color:#c9d0da}
+.case-brand-tabs:not(.show-all) .case-tab--extra{display:none}
+.case-more{height:40px;min-width:100px;padding:0 14px;border:1px dashed #cfd6df;border-radius:10px;background:#fff;cursor:pointer;font-family:inherit;font-weight:500;font-size:13.5px;color:#5b6472;white-space:nowrap}
+.case-more:hover{border-color:#9aa4b1;color:#1f2329}
 .scroll-hint-mobile-only{display:none}
 .v2-real-cases-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .v2-real-cases-grid:not(.expanded) .v2-real-case.case-collapsible{display:none}
@@ -720,8 +721,10 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .v2-cases-head{flex-direction:column;gap:12px}
   .v2-real-cases h2{font-size:23px}
   .case-filter-row{align-items:flex-start;flex-direction:column;gap:8px}
-  .case-brand-tabs{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding:5px 4px 7px}
+  .case-brand-tabs{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:4px}
   .case-tab{flex:none}
+  .case-brand-tabs .case-tab--extra{display:inline-flex}
+  .case-more{display:none}
   .v2-cases-panel .v2-real-cases-grid{margin:0 -16px!important;padding-left:16px;padding-right:16px}
   .case-show-more{display:none}
   .guide-reading-head{display:block}.guide-reading-head>a{display:inline-block;margin-top:8px}.guide-reading-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;grid-auto-columns:75%!important;gap:10px!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}.guide-reading-card{scroll-snap-align:start;min-width:0}
@@ -1298,15 +1301,16 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="case-brand-tabs" id="caseBrandTabs">
 <button type="button" class="case-tab active" data-brand="all">Tất cả</button>
 <button type="button" class="case-tab" data-brand="VinFast" aria-label="VinFast" title="VinFast"><img src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"></button>
-<button type="button" class="case-tab" data-brand="Mazda" aria-label="Mazda" title="Mazda"><img src="https://auto365.vn/assets/frontend/images/car-brands/mazda.png" alt="Mazda" width="250" height="229" loading="lazy" decoding="async"></button>
-<button type="button" class="case-tab" data-brand="Hyundai" aria-label="Hyundai" title="Hyundai"><img src="https://auto365.vn/assets/frontend/images/car-brands/hyundai.png" alt="Hyundai" width="250" height="33" loading="lazy" decoding="async"></button>
-<button type="button" class="case-tab" data-brand="Kia" aria-label="Kia" title="Kia"><img src="https://auto365.vn/assets/frontend/images/car-brands/kia.png" alt="Kia" width="250" height="63" loading="lazy" decoding="async"></button>
-<button type="button" class="case-tab" data-brand="Mitsubishi" aria-label="Mitsubishi" title="Mitsubishi"><img src="https://auto365.vn/assets/frontend/images/car-brands/mitsubishi.png" alt="Mitsubishi" width="250" height="268" loading="lazy" decoding="async"></button>
 <button type="button" class="case-tab" data-brand="Toyota" aria-label="Toyota" title="Toyota"><img src="https://auto365.vn/assets/frontend/images/car-brands/toyota.png" alt="Toyota" width="250" height="162" loading="lazy" decoding="async"></button>
 <button type="button" class="case-tab" data-brand="Honda" aria-label="Honda" title="Honda"><img src="https://auto365.vn/assets/frontend/images/car-brands/honda.png" alt="Honda" width="250" height="32" loading="lazy" decoding="async"></button>
+<button type="button" class="case-tab" data-brand="Hyundai" aria-label="Hyundai" title="Hyundai"><img src="https://auto365.vn/assets/frontend/images/car-brands/hyundai.png" alt="Hyundai" width="250" height="33" loading="lazy" decoding="async"></button>
+<button type="button" class="case-tab" data-brand="Kia" aria-label="Kia" title="Kia"><img src="https://auto365.vn/assets/frontend/images/car-brands/kia.png" alt="Kia" width="250" height="63" loading="lazy" decoding="async"></button>
+<button type="button" class="case-tab" data-brand="Mazda" aria-label="Mazda" title="Mazda"><img src="https://auto365.vn/assets/frontend/images/car-brands/mazda.png" alt="Mazda" width="250" height="229" loading="lazy" decoding="async"></button>
 <button type="button" class="case-tab" data-brand="Ford" aria-label="Ford" title="Ford"><img src="https://auto365.vn/assets/frontend/images/car-brands/ford.png" alt="Ford" width="250" height="90" loading="lazy" decoding="async"></button>
-<button type="button" class="case-tab" data-brand="Subaru" aria-label="Subaru" title="Subaru"><img src="https://auto365.vn/assets/frontend/images/car-brands/subaru.png" alt="Subaru" width="250" height="151" loading="lazy" decoding="async"></button>
-<button type="button" class="case-tab" data-brand="Lynk &amp; Co" aria-label="Lynk &amp; Co" title="Lynk &amp; Co"><img src="https://auto365.vn/assets/frontend/images/car-brands/lynk-co.png" alt="Lynk &amp; Co" width="250" height="36" loading="lazy" decoding="async"></button>
+<button type="button" class="case-tab" data-brand="Mitsubishi" aria-label="Mitsubishi" title="Mitsubishi"><img src="https://auto365.vn/assets/frontend/images/car-brands/mitsubishi.png" alt="Mitsubishi" width="250" height="268" loading="lazy" decoding="async"></button>
+<button type="button" class="case-tab case-tab--extra" data-brand="Subaru" aria-label="Subaru" title="Subaru"><img src="https://auto365.vn/assets/frontend/images/car-brands/subaru.png" alt="Subaru" width="250" height="151" loading="lazy" decoding="async"></button>
+<button type="button" class="case-tab case-tab--extra" data-brand="Lynk &amp; Co" aria-label="Lynk &amp; Co" title="Lynk &amp; Co"><img src="https://auto365.vn/assets/frontend/images/car-brands/lynk-co.png" alt="Lynk &amp; Co" width="250" height="36" loading="lazy" decoding="async"></button>
+<button type="button" class="case-more" id="caseBrandMore" aria-expanded="false">+2 hãng</button>
 </div>
 </div>
 <div class="scroll-hint-mobile-only">Vuốt ngang để xem thêm ca lắp →</div>
@@ -3559,6 +3563,12 @@ document.querySelector('#hubFind').addEventListener('click', () => {
     grid.classList.remove('expanded');
     moreBtn.textContent = 'Xem thêm ca lắp →';
     moreBtn.style.display = '';
+  });
+  const brandMore = document.getElementById('caseBrandMore');
+  brandMore?.addEventListener('click', () => {
+    tabs.classList.add('show-all');
+    brandMore.setAttribute('aria-expanded', 'true');
+    brandMore.hidden = true;
   });
   moreBtn.addEventListener('click', () => {
     const expanded = grid.classList.toggle('expanded');
