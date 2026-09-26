@@ -678,12 +678,12 @@
         <ul class="answer-bullets" aria-label="CR BLK 60 phù hợp với ai?">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Ưu tiên kính lái sáng, dễ quan sát hơn là dịu mắt tối đa</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Cần quan sát tốt khi lái xe ban đêm hoặc trời ít sáng</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Thường xuyên di chuyển trong điều kiện ánh sáng yếu</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Xe có kính nguyên bản đã hơi tối, cần giữ kính lái sáng sau khi dán</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Chấp nhận mức giảm chói thấp hơn CR BLK 50/40 để đổi lấy độ sáng</span></li>
         </ul>
 
         <div class="verdict-block">
-          <p><strong>CR BLK 60 có tốt không?</strong> CR BLK 60 là mã sáng nhất trong nhóm 40/50/60 trên Auto 75 (VLT 57%), phù hợp khi ưu tiên quan sát và đi đêm. Đánh đổi là TSER thấp hơn CR BLK 50 khoảng 2 điểm và mức giảm chói thấp hơn khoảng 12 điểm. Nếu đi ban ngày nhiều và muốn kính đằm hơn, nên xem thêm CR BLK 50 trước khi chốt.</p>
+          <p><strong>CR BLK 60 có tốt không?</strong> CR BLK 60 là mã sáng nhất trong nhóm 40/50/60 trên Auto 75 (VLT 57%), phù hợp khi ưu tiên quan sát và đi đêm. Đổi lại, mức cách nhiệt và giảm chói thấp hơn CR BLK 50 một chút — xem bảng so sánh ngay bên dưới. Nếu đi ban ngày nhiều và muốn kính đằm hơn, nên xem thêm CR BLK 50 trước khi chốt.</p>
         </div>
       </div>
     </section>
@@ -764,23 +764,8 @@
 
         <div class="spec-shell">
           <div class="spec-head">
-            <div class="spec-tabs">
-              <button class="spec-tab active" type="button" data-spec="auto75">Auto 75 · kính nền 73%</button>
-              <button class="spec-tab" type="button" data-spec="clear6">Kính trong 6 mm · nền 89%</button>
-            </div>
             <div class="tds-pill">3M TDS Revision F · August 2025</div>
           </div>
-          <p class="tds-note" style="padding:0 20px">"Auto 75" là điều kiện kính tham chiếu theo TDS 3M, không phải kết quả cố định trên mọi xe.</p>
-
-          <div class="spec-cards" id="specCards">
-            <div class="spec-card"><b data-field="vlt">57%</b><span>VLT</span></div>
-            <div class="spec-card"><b data-field="tser">54%</b><span>TSER</span></div>
-            <div class="spec-card"><b data-field="irer">67%</b><span>IRER</span></div>
-            <div class="spec-card"><b data-field="irr">97%</b><span>IRR</span></div>
-            <div class="spec-card"><b data-field="uv">99,9%</b><span>UV Block</span></div>
-            <div class="spec-card"><b data-field="glare">22%</b><span>Giảm chói</span></div>
-          </div>
-
           <div class="spec-table-wrap">
             <table>
               <thead>
@@ -812,7 +797,7 @@
             <div class="tech-grid tech-grid-stack">
               <article class="tech"><div class="big">200+</div><h3>Lớp quang học siêu mỏng</h3><p>3M mô tả cấu trúc MOF gồm hơn 200 lớp trong một màng phim rất mỏng.</p></article>
               <article class="tech"><div class="big">0</div><h3>Kim loại trong cấu trúc</h3><p>Thiết kế phi kim giúp hạn chế nguy cơ gây nhiễu GPS, điện thoại, 5G và các tín hiệu điện tử phổ biến.</p></article>
-              <article class="tech"><div class="big">99,9%</div><h3>Chặn tia UV</h3><p>Trên cả hai điều kiện kính tham chiếu, CR BLK 60 giữ mức chặn UV 99,8–99,9% dù là mã sáng nhất trong bộ 40/50/60.</p></article>
+              <article class="tech"><div class="big">99,9%</div><h3>Chặn tia UV</h3><p>Trên cả hai điều kiện kính tham chiếu, CR BLK 60 giữ mức chặn UV 99,8–99,9%, gần như toàn bộ tia UV.</p></article>
             </div>
           </div>
 
@@ -1034,21 +1019,6 @@
   </section>
 
   <script>
-    const specData = {
-      auto75:{vlt:"57%",tser:"54%",irer:"67%",irr:"97%",uv:"99,9%",glare:"22%"},
-      clear6:{vlt:"69%",tser:"49%",irer:"68%",irr:"97%",uv:"99,8%",glare:"22%"}
-    };
-    document.querySelectorAll(".spec-tab").forEach(btn=>{
-      btn.addEventListener("click",()=>{
-        document.querySelectorAll(".spec-tab").forEach(x=>x.classList.remove("active"));
-        btn.classList.add("active");
-        const d=specData[btn.dataset.spec];
-        Object.entries(d).forEach(([k,v])=>{
-          const el=document.querySelector('[data-field="'+k+'"]');
-          if(el) el.textContent=v;
-        });
-      });
-    });
 
     (function(){
       var form=document.querySelector("[data-fit-form]");
