@@ -766,89 +766,52 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .expert-box{flex-direction:column}
 }
 
-/* Branch hero card (bhc-) — Auto365 design system v7 */
-.bhc-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.98fr);gap:28px;align-items:stretch;margin-bottom:26px}
-.bhc-card{position:relative;overflow:hidden;min-width:0;min-height:300px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);container-type:inline-size}
-.bhc-card-inner{position:relative;height:100%;padding:30px 20px 20px}
-.bhc-eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:var(--red);font-size:11px;line-height:1.35;font-weight:500;letter-spacing:.085em;text-transform:uppercase;white-space:nowrap}
-.bhc-eyebrow::after{content:"";width:36px;height:1.5px;background:currentColor;border-radius:999px;opacity:.9}
-.bhc-map-bg{position:absolute;inset:0 0 auto auto;width:50%;height:270px;pointer-events:none;overflow:hidden}
-.bhc-map-bg::before{content:"";position:absolute;inset:0;z-index:3;background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.74) 14%,rgba(255,255,255,.07) 48%,transparent 74%),linear-gradient(180deg,rgba(255,255,255,.04),transparent 55%,#fff 100%)}
-.bhc-map-bg svg{width:100%;height:100%}
-.bhc-left-content{position:relative;z-index:5;width:74%;min-width:0}
-.bhc-headline{margin:0 0 12px;max-width:500px;font-family:inherit;font-size:24px;line-height:1.38;letter-spacing:-.65px;font-weight:600;color:var(--ink)}
-.bhc-headline .bhc-red{display:inline;color:var(--red)}
-.bhc-desc{margin:0;max-width:515px;min-height:42px;color:var(--muted);font-size:13px;line-height:1.85}
-.bhc-button-row{position:relative;z-index:8;display:grid;grid-template-columns:1.18fr .9fr .96fr;gap:10px;width:100%;margin-top:24px}
-.bhc-btn{min-width:0;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;gap:7px;padding:0 8px;font-size:12px;line-height:1;font-weight:500;border:1.2px solid transparent;transition:transform .16s ease;background:#fff;white-space:nowrap;text-decoration:none}
-.bhc-btn svg{width:15px;height:15px;flex:0 0 15px}
-.bhc-btn:hover{transform:translateY(-1px)}
-.bhc-btn-primary{background:var(--red);color:#fff;box-shadow:0 7px 15px rgba(231,36,45,.18)}
-.bhc-btn-zalo{color:#176bc9;border-color:#3c86da}
-.bhc-btn-map{color:var(--red);border-color:#f27375}
-.bhc-fact-row{position:relative;z-index:10;display:grid;grid-template-columns:1.02fr 1.25fr 1.32fr .78fr;align-items:center;min-height:52px;margin-top:22px;min-width:0}
-.bhc-fact-item{height:100%;display:flex;align-items:center;gap:8px;padding:6px 8px 6px 0;min-width:0}
-.bhc-fact-item+.bhc-fact-item{border-left:1px solid var(--line);padding-left:10px}
-.bhc-fact-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:0 0 28px;background:#fff0f0;color:var(--red)}
-.bhc-fact-icon svg{width:13px;height:13px}
-.bhc-fact-item>span:last-child{min-width:0}
-.bhc-fact-title{display:block;font-size:10.5px;line-height:1.1;font-weight:500;color:var(--ink);white-space:nowrap}
-.bhc-fact-text{display:block;margin-top:2px;font-size:9.5px;line-height:1.1;color:var(--muted);white-space:nowrap}
-.bhc-right-card{padding:0}
-.bhc-right-card .bhc-card-inner{padding:26px 20px 16px;height:100%}
-.bhc-section-title{margin:0;color:var(--ink);font-weight:600;letter-spacing:-.02em}
-.bhc-scale{font-size:clamp(1.3rem,1.15rem + .7vw,1.6rem);line-height:1.05;white-space:nowrap;padding-right:88px}
-.bhc-scale-hl{color:var(--red)}
-.bhc-vn{position:absolute;top:13px;right:18px;display:flex;align-items:flex-start;gap:6px;color:#f1a0a4}
-.bhc-vn-note{padding-top:1px;color:var(--red);font-size:8.2px;line-height:1.13;font-weight:500;font-style:italic;text-align:right;white-space:nowrap}
-.bhc-vn>svg{width:24px;height:52px;flex:0 0 24px}
-.bhc-regions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:25px}
-.bhc-region{position:relative;display:grid;grid-template-rows:auto 1fr auto auto;min-width:0;height:112px;padding:12px 11px 11px;border:1px solid var(--line);border-radius:11px;transition:transform .16s ease,box-shadow .16s ease;text-decoration:none}
-.bhc-region:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(35,55,75,.06)}
-.bhc-region--1{color:var(--red);background:linear-gradient(180deg,#fffafa 0%,#fffdfd 100%)}
-.bhc-region--2{color:#176bc9;background:linear-gradient(180deg,#f9fcff 0%,#fdfefe 100%)}
-.bhc-region--3{color:#0b9a58;background:linear-gradient(180deg,#f8fdf9 0%,#fcfffd 100%)}
-.bhc-region-index{font-size:9.5px;line-height:1;font-weight:500;opacity:.38}
-.bhc-region-art{position:absolute;top:11px;right:11px;width:29px;height:29px}
-.bhc-region-name{grid-row:3;font-size:9.9px;line-height:1;font-weight:500;color:#667586;letter-spacing:.012em;white-space:nowrap}
-.bhc-region-count{grid-row:4;margin-top:6px;font-size:17px;line-height:1;font-weight:600;color:var(--ink);white-space:nowrap}
-.bhc-all{display:flex;align-items:center;justify-content:center;height:44px;margin-top:14px;border:1px solid var(--line);border-radius:10px;gap:9px;padding:0 12px;font-size:12px;line-height:1;font-weight:500;background:#fff;color:var(--ink);white-space:nowrap;text-decoration:none}
-.bhc-all svg{width:15px;height:15px;flex:0 0 15px}
-.bhc-all:hover{border-color:var(--red);color:var(--red)}
-@container(max-width:600px){.bhc-left-content{width:78%}.bhc-fact-row{grid-template-columns:1fr 1.22fr 1.24fr .76fr}}
-@media(max-width:1060px){.bhc-grid{grid-template-columns:1fr;max-width:760px;margin-inline:auto}}
+@container(max-width:600px){}
+
 @media(max-width:640px){
   .local-head{flex-direction:column;align-items:stretch}
-  .bhc-grid{gap:12px}
-  .bhc-card{min-height:0;border-radius:14px}
-  .bhc-card-inner{padding:18px 15px}
-  .bhc-right-card .bhc-card-inner{padding:18px 15px}
-  .bhc-map-bg{width:100%;height:200px;opacity:.5}
-  .bhc-map-bg::before{background:linear-gradient(180deg,rgba(255,255,255,.18),#fff 94%)}
-  .bhc-left-content{width:100%}
-  .bhc-headline{font-size:clamp(1.4rem,7vw,1.7rem);max-width:100%}
-  .bhc-desc{font-size:12px;max-width:100%}
-  .bhc-button-row{grid-template-columns:1fr;margin-top:16px}
-  .bhc-btn{height:44px;font-size:12px}
-  .bhc-fact-row{grid-template-columns:1fr 1fr;height:auto;margin-top:16px}
-  .bhc-fact-item{padding:10px 7px}
-  .bhc-fact-item+.bhc-fact-item{border-left:0}
-  .bhc-fact-item:nth-child(even){border-left:1px solid var(--line)}
-  .bhc-fact-item:nth-child(n+3){border-top:1px solid var(--line)}
-  .bhc-fact-icon{width:30px;height:30px;flex:0 0 30px}
-  .bhc-fact-title{font-size:10.5px}
-  .bhc-fact-text{font-size:9px}
-  .bhc-scale{font-size:clamp(1.3rem,6.4vw,1.6rem);white-space:normal;margin-top:14px;padding-right:72px}
-  .bhc-vn{top:13px;right:14px}
-  .bhc-vn-note{font-size:8px}
-  .bhc-vn>svg{width:22px;height:48px}
-  .bhc-regions{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-auto-columns:68%!important;gap:9px!important;margin-top:16px;overflow-x:auto;padding-bottom:6px}
-  .bhc-region{height:90px;scroll-snap-align:start;min-width:0}
-  .bhc-region-art{width:27px;height:27px}
-  .bhc-all{height:44px;margin-top:12px;font-size:11.5px}
 }
-@media(max-width:420px){.bhc-headline .bhc-red{max-width:290px}.bhc-fact-row{grid-template-columns:1fr}.bhc-fact-item:nth-child(even){border-left:0}.bhc-fact-item+.bhc-fact-item{border-top:1px solid var(--line)}}
-.tech-qa-infographic{width:100%;height:auto;border-radius:12px;margin:16px 0;display:block}</style>
+
+.tech-qa-infographic{width:100%;height:auto;border-radius:12px;margin:16px 0;display:block}/* HQ + branch coverage (hq2-) — same module as bong-led / bi-gam-x-light */
+.hq2-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch;margin-bottom:26px}
+.hq2-card{background:#fff;border:1px solid #e5e8ee;border-radius:16px;padding:20px;display:flex;flex-direction:column;min-width:0}
+.hq2-head{display:flex;align-items:center;gap:12px;margin-bottom:2px}
+.hq2-icon{width:40px;height:40px;border-radius:10px;background:#fdecec;color:#e31b2d;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hq2-icon svg{width:20px;height:20px}
+.hq2-title{font-size:20px;font-weight:700;color:#17191d;margin:0;line-height:1.3;letter-spacing:-.3px}
+.hq2-title .red{color:#e31b2d}
+.hq2-sub{font-size:13.5px;color:#657487;margin:4px 0 14px 52px}
+.hq2-facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #e5e8ee}
+.hq2-fact{display:flex;align-items:center;gap:12px;padding:12px 10px 12px 0;border-bottom:1px solid #e5e8ee}
+.hq2-fact:nth-child(odd){border-right:1px solid #e5e8ee}
+.hq2-fact:nth-child(even){padding-left:14px}
+.hq2-fact:nth-last-child(-n+2){border-bottom:0}
+.hq2-fact-icon{width:34px;height:34px;border-radius:9px;background:#fdecec;color:#e31b2d;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.hq2-fact-icon svg{width:17px;height:17px}
+.hq2-fact-label{display:block;font-size:14px;color:#1f2329;font-weight:500}
+.hq2-fact-value{display:block;font-size:12px;color:#6b7280;margin-top:2px}
+.hq2-actions{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:8px;margin-top:auto;padding-top:14px}
+.hq2-btn{min-width:0;display:flex;align-items:center;justify-content:center;gap:7px;border-radius:10px;height:44px;padding:0 8px;font-size:13.5px;font-weight:700;border:1px solid #e5e8ee;white-space:nowrap;text-decoration:none;transition:transform .15s ease}
+.hq2-btn:hover{transform:translateY(-1px)}
+.hq2-btn svg{width:16px;height:16px;flex:none}
+.hq2-btn.primary{background:#e31b2d;border-color:#e31b2d;color:#fff}
+.hq2-btn.zalo{color:#1f2329;border-color:#3c86da;background:#f7fbff}
+.hq2-btn.map{color:#e31b2d;border-color:#f27375}
+.hq2-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 12px}
+.hq2-stat{position:relative;display:block;background:#f9fafb;border:1px solid #e5e8ee;border-radius:12px;padding:14px 16px 16px;text-decoration:none;min-width:0;transition:border-color .15s ease}
+.hq2-stat:hover{border-color:#c9d0da}
+.hq2-stat-idx{display:block;font-size:15px;font-weight:700}
+.hq2-stat svg{position:absolute;top:12px;right:12px;width:40px;height:40px}
+.hq2-stat-name{display:block;margin-top:18px;font-size:12px;font-weight:600;letter-spacing:.06em;color:#5b6472}
+.hq2-stat-count{display:block;margin-top:12px;font-size:20px;font-weight:800}
+.hq2-stat.mien-bac .hq2-stat-idx{color:#f5b8bd}.hq2-stat.mien-bac svg,.hq2-stat.mien-bac .hq2-stat-count{color:#e31b2d}
+.hq2-stat.mien-trung .hq2-stat-idx{color:#aac0e8}.hq2-stat.mien-trung svg,.hq2-stat.mien-trung .hq2-stat-count{color:#3156c7}
+.hq2-stat.mien-nam .hq2-stat-idx{color:#a9d8bd}.hq2-stat.mien-nam svg,.hq2-stat.mien-nam .hq2-stat-count{color:#18a058}
+.hq2-all{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:auto;background:#f7f8fa;border:1px solid #dfe3ea;border-radius:10px;height:44px;font-weight:600;font-size:14px;color:#17191d;text-decoration:none}
+.hq2-all:hover{border-color:#c9d0da}
+.hq2-all svg{width:16px;height:16px}
+@media (max-width:760px){.hq2-grid{grid-template-columns:1fr;gap:14px}.hq2-card{padding:16px}.hq2-sub{margin-left:0}.hq2-fact{gap:8px;padding:10px 8px 10px 0}.hq2-fact:nth-child(even){padding-left:10px}.hq2-fact-icon{width:28px;height:28px}.hq2-fact-label{font-size:13px}.hq2-fact-value{font-size:11.5px}.hq2-actions{grid-template-columns:1fr 1fr}.hq2-btn{font-size:13px}.hq2-btn.primary{grid-column:1/-1}.hq2-stat{padding:12px 10px}.hq2-stat svg{width:28px;height:28px;top:10px;right:8px}.hq2-stat-name{font-size:10.5px;margin-top:14px}.hq2-stat-count{font-size:17px;margin-top:8px}}
+</style>
 </head>
 <body>
 <header class="nav wrap">
@@ -1735,77 +1698,69 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="local-head">
 <h2>Tìm điểm lắp camera hành trình gần bạn.</h2>
 </div>
-<div class="bhc-grid">
-<article class="bhc-card">
-<div class="bhc-map-bg" aria-hidden="true">
-<svg viewBox="0 0 560 420" preserveAspectRatio="xMidYMid slice">
-<defs>
-<linearGradient id="bhcMapBg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fbfcfd"/><stop offset="1" stop-color="#edf5fa"/></linearGradient>
-<filter id="bhcPinShadow" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#e7242d" flood-opacity=".22"/></filter>
-</defs>
-<rect width="560" height="420" fill="url(#bhcMapBg)"/>
-<path d="M10 72C100 106 144 87 206 74c74-16 127 38 200 14 51-17 96-57 146-48" fill="none" stroke="#f8fafb" stroke-width="27"/>
-<path d="M-20 178C58 154 104 169 177 142c78-28 127-72 218-62 86 9 122 65 192 63" fill="none" stroke="#fff" stroke-width="12"/>
-<path d="M-15 306c76-24 139-66 209-66 70 0 111 33 174 31 65-2 113-45 198-31" fill="none" stroke="#fff" stroke-width="13"/>
-<path d="M67-15c17 76 58 120 83 178 28 65 25 131 44 257M182-20c18 58 24 112 63 164 35 47 49 102 55 178M318-20c-6 72 32 118 30 171-2 49-33 88-31 157M454-18c-26 54-43 101-47 153-5 57 13 115 11 192" fill="none" stroke="#f7f9fb" stroke-width="10"/>
-<path d="M510-5c-27 66-50 105-51 173-1 44-23 85-40 122-18 40-27 86-47 130" fill="none" stroke="#d9eff8" stroke-width="28" opacity=".8"/>
-<rect x="222" y="87" width="82" height="48" rx="7" fill="#d8efd8" opacity=".9"/>
-<path d="M318 114c0-27 20-47 45-47s45 20 45 47c0 30-31 62-45 86-14-24-45-56-45-86Z" fill="#e7242d" filter="url(#bhcPinShadow)"/>
-<circle cx="363" cy="113" r="16" fill="#fff"/>
-<path d="M444 86c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#ef5a60"/><circle cx="464" cy="85" r="7" fill="#fff"/>
-<path d="M230 136c0-12 9-21 20-21s20 9 20 21c0 13-13 27-20 38-7-11-20-25-20-38Z" fill="#f05d62"/><circle cx="250" cy="135" r="7" fill="#fff"/>
-</svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="hq2-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path></symbol><symbol id="hq2-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></path><circle cx="9" cy="11" r="1" fill="currentColor"></circle><circle cx="12" cy="11" r="1" fill="currentColor"></circle><circle cx="15" cy="11" r="1" fill="currentColor"></circle></symbol><symbol id="hq2-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"></path><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"></path></symbol><symbol id="hq2-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path></symbol><symbol id="hq2-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"></rect><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"></path><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"></path></symbol><symbol id="hq2-icon-shield-check" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+    <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-4"></path>
+  </symbol><symbol id="hq2-il-cao-oc" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 39h36"></path>
+      <path d="M10 39V27h10v12"></path>
+      <path d="M20 39V20h8v19"></path>
+      <path d="M28 39V11h10v28"></path>
+      <path d="M13.5 31h3M13.5 35h3"></path>
+      <path d="M23 24h2M23 28h2M23 32h2M23 36h2"></path>
+      <path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"></path>
+      <path d="M28 11h10"></path>
+    </g>
+  </symbol><symbol id="hq2-il-cau" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 36.5h36M9 32.5h30"></path>
+      <path d="M12 32.5V26M36 32.5V26"></path>
+      <path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"></path>
+      <path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"></path>
+      <path d="M24 13.5v19"></path>
+      <path d="M9 36.5h30"></path>
+    </g>
+  </symbol><symbol id="hq2-il-khue-van-cac" viewBox="0 0 48 48">
+    <g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 39.5h34"></path>
+      <path d="M11 35.5h26M14 32.5h20"></path>
+      <path d="M15.5 32.5V25h17v7.5"></path>
+      <path d="M18 25v7.5M30 25v7.5"></path>
+      <path d="M14 24h20"></path>
+      <path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"></path>
+      <path d="M18 21.5v-7h12v7"></path>
+      <circle cx="24" cy="18" r="2.7"></circle>
+      <path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"></path>
+      <path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"></path>
+    </g>
+  </symbol></svg>
+<div class="hq2-grid">
+<div class="hq2-card">
+<div class="hq2-head"><span class="hq2-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#hq2-i-building"></use></svg></span><h3 class="hq2-title">Auto365.vn · <span class="red">Trụ sở chính</span></h3></div>
+<p class="hq2-sub">4/4/1/7 Đường số 3, P. Hiệp Bình, TP. Hồ Chí Minh</p>
+<div class="hq2-facts">
+<div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg></span><span><span class="hq2-fact-label">Giờ làm việc</span><span class="hq2-fact-value">8:30 – 18:30</span></span></div>
+<div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><use href="#hq2-i-building"></use></svg></span><span><span class="hq2-fact-label">Trụ sở</span><span class="hq2-fact-value">Hiệp Bình, TP.HCM</span></span></div>
+<div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24"><use href="#hq2-icon-shield-check"></use></svg></span><span><span class="hq2-fact-label">Bảo hành</span><span class="hq2-fact-value">Theo từng sản phẩm</span></span></div>
+<div class="hq2-fact"><span class="hq2-fact-icon"><svg viewBox="0 0 24 24"><use href="#hq2-i-chat"></use></svg></span><span><span class="hq2-fact-label">Tư vấn</span><span class="hq2-fact-value">Hotline, Zalo</span></span></div>
 </div>
-<div class="bhc-card-inner">
-<div class="bhc-left-content">
-<p class="bhc-eyebrow">ĐIỂM LẮP TIÊU BIỂU</p>
-<h3 class="bhc-headline">Auto365.vn - <span class="bhc-red">Trụ Sở Chính</span></h3>
-<p class="bhc-desc">Địa chỉ: 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh.</p>
-</div>
-<div class="bhc-button-row">
-<a class="bhc-btn bhc-btn-primary" href="tel:0365365911"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg>Gọi 0365 365 911</a>
-<a class="bhc-btn bhc-btn-zalo" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener nofollow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L4 20l1.1-4.3A8.5 8.5 0 1 1 21 11.5Z"/></svg>Zalo tư vấn</a>
-<a class="bhc-btn bhc-btn-map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg>Google Maps</a>
-</div>
-<div class="bhc-fact-row">
-<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z"/><circle cx="9" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="11" r="1" fill="currentColor" stroke="none"/></svg></span><span><span class="bhc-fact-title">Tư vấn nhanh</span><span class="bhc-fact-text">Qua hotline hoặc Zalo</span></span></div>
-<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" /></svg></span><span><span class="bhc-fact-title">Trụ Sở Chính</span><span class="bhc-fact-text">Phường Hiệp Bình, TP.HCM</span></span></div>
-<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z"/><path d="M9 4.2v13.6M15 6.2v13.6" stroke-linecap="round"/></svg></span><span><span class="bhc-fact-title">Chỉ đường</span><span class="bhc-fact-text">Mở trực tiếp Google Maps</span></span></div>
-<div class="bhc-fact-item"><span class="bhc-fact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.2 2.2Z"/></svg></span><span><span class="bhc-fact-title">Hotline</span><span class="bhc-fact-text">0365 365 911</span></span></div>
+<div class="hq2-actions">
+<a class="hq2-btn primary" href="tel:0365365911"><svg viewBox="0 0 24 24"><use href="#hq2-i-phone"></use></svg>Gọi 0365 365 911</a>
+<a class="hq2-btn zalo" href="https://zalo.me/3622666363345050913" target="_blank" rel="noopener nofollow"><svg viewBox="0 0 24 24"><use href="#hq2-i-zalo"></use></svg>Zalo tư vấn</a>
+<a class="hq2-btn map" href="https://maps.app.goo.gl/RBTsoUefXQ1Lh7KF9" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#hq2-i-map"></use></svg>Google Maps</a>
 </div>
 </div>
-</article>
-<article class="bhc-card bhc-right-card">
-<div class="bhc-card-inner">
-<p class="bhc-eyebrow">PHỦ SÓNG TOÀN QUỐC</p>
-<h3 class="bhc-section-title bhc-scale"><span class="bhc-scale-hl">91 chi nhánh</span> · 33 tỉnh thành</h3>
-<span class="bhc-vn" aria-hidden="true">
-<span class="bhc-vn-note">Auto365 có mặt<br>khắp Việt Nam</span>
-<svg viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></svg>
-</span>
-<div class="bhc-regions">
-<a class="bhc-region bhc-region--1" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">
-<span class="bhc-region-index">01</span>
-<svg class="bhc-region-art" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/></svg>
-<span class="bhc-region-name">MIỀN BẮC</span>
-<span class="bhc-region-count">41 điểm</span>
-</a>
-<a class="bhc-region bhc-region--2" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">
-<span class="bhc-region-index">02</span>
-<svg class="bhc-region-art" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/></svg>
-<span class="bhc-region-name">MIỀN TRUNG</span>
-<span class="bhc-region-count">26 điểm</span>
-</a>
-<a class="bhc-region bhc-region--3" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">
-<span class="bhc-region-index">03</span>
-<svg class="bhc-region-art" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/></svg>
-<span class="bhc-region-name">MIỀN NAM</span>
-<span class="bhc-region-count">24 điểm</span>
-</a>
+<div class="hq2-card">
+<div class="hq2-head"><span class="hq2-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2.5"></circle><circle cx="18" cy="6" r="2.5"></circle><circle cx="12" cy="18" r="2.5"></circle><path d="M8 7.5L11 16M16 7.5L13 16"></path></svg></span><h3 class="hq2-title"><span class="red">91 chi nhánh</span> · 33 tỉnh thành</h3></div>
+<p class="hq2-sub">Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam</p>
+<div class="hq2-stats">
+<a class="hq2-stat mien-bac" href="https://auto365.vn/chi-nhanh?mien=bac" target="_blank" rel="noopener"><span class="hq2-stat-idx">01</span><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#hq2-il-khue-van-cac"></use></svg><span class="hq2-stat-name">MIỀN BẮC</span><span class="hq2-stat-count">41 điểm</span></a>
+<a class="hq2-stat mien-trung" href="https://auto365.vn/chi-nhanh?mien=trung" target="_blank" rel="noopener"><span class="hq2-stat-idx">02</span><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#hq2-il-cau"></use></svg><span class="hq2-stat-name">MIỀN TRUNG</span><span class="hq2-stat-count">26 điểm</span></a>
+<a class="hq2-stat mien-nam" href="https://auto365.vn/chi-nhanh?mien=nam" target="_blank" rel="noopener"><span class="hq2-stat-idx">03</span><svg viewBox="0 0 48 48" aria-hidden="true"><use href="#hq2-il-cao-oc"></use></svg><span class="hq2-stat-name">MIỀN NAM</span><span class="hq2-stat-count">24 điểm</span></a>
 </div>
-<a class="bhc-all" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem toàn bộ hệ thống Auto365<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="hq2-all" href="https://auto365.vn/chi-nhanh" target="_blank" rel="noopener">Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
 </div>
-</article>
 </div>
 <div>
 <span class="local-list-eyebrow"></span>
