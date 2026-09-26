@@ -20,7 +20,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-anh-dai-dien-img_6a67310c4aa3f7.64974820.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-a210.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -45,7 +45,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://auto365.vn/camera-hanh-trinh-yuemi-q5",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-yuemi-q5-6jpg-img_6a460e15b4cb90.14940603_auto365vn-1782976021-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-yuemi-q5.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -71,7 +71,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-23",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-a800se-speed-eye-12jpg-img_6a3bb01c10b686.73285627_auto365vn-1782296604-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh4k-a800se-speedeye.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -96,7 +96,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-m310-plus-2k-1jpg-img_6a1eab320a74f8.58972133_auto365vn-1780394802-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-m310-plus-2k.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -121,7 +121,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-4k-a810-lite-11jpg-img_6a1aa781334ab3.43724906_auto365vn-1780131713-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-4k-a810-lite.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -146,7 +146,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-m310-plus-3k-1jpg-img_69c7a2af84aa49.17967351_auto365vn-1774690991-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-m310-plus-3k.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -171,7 +171,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-m310-1jpg-img_69c795d79c2134.15805207_auto365vn-1774687703-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-m310.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -196,7 +196,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-a200-1jpg-img_69c7927c9f5974.46088010_auto365vn-1774686844-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-a200.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -221,7 +221,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/instructions/70maiDashCam_A510_UserManual.pdf",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-a510-3jpg-img_69c77d92bd5c67.19855155_auto365vn-1774681490-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-a510.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -246,7 +246,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-t400-4jpg-img_69c65a24543576.63720693_auto365vn-1774606884-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-t400.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -271,7 +271,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://new-cdn-res.70mai.com/global/t800/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-70mai-t800jpg-img_69c653b73508e7.77528060_auto365vn-1774605239-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-t800-4k.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -296,7 +296,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/m800/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-70mai-m800png-img_6989b4574b8170.90986465_auto365vn-1770632279-0.png",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-m800.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -321,7 +321,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-a810spng-img_6985b30ccab317.96897457_auto365vn-1770369804-0.png",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-4k-a810s.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -346,7 +346,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-vietmap-l110jpg-img_690c489f8d7332.51204442_auto365vn-1762412703-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-l110.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -371,7 +371,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/products/auto365vn-camera-hanh-trinh-viet-map-v740jpg-img_690c48d22fb2d2.27421140_auto365vn-1762412754-0.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-v740.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -396,7 +396,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/70mai/camera-hanh-trinh-70mai-a800se/camera-hanh-trinh-70mai-a800se.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-a800se.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -421,7 +421,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://www.70mai.com/vn/support/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/70mai/camera-hanh-trinh-70mai-omni/camera-hanh-trinh-70mai-omni.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-omni.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -446,7 +446,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://vietmap.vn/camera-hanh-trinh-4k",
     "last_verified": "2026-09-23",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-r440/camera-hanh-trinh-vietmap-r440.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-r440.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -471,7 +471,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://vietmap.vn/camera-hanh-trinh-4k",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-s720/camera-hanh-trinh-vietmap-s720.png",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-s720.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -496,7 +496,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://media.blackvue.com/vi/firmware-download/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/BLACKVUE/Camera%20Ha%CC%80nh%20Tri%CC%80nh%20Ha%CC%80n%20Quo%CC%82%CC%81c%20Blackvue%20DR590X-2CH%20.png",
+    "image": "hinh/sp/camera-hanh-trinh-han-quoc-blackvue-dr590x-2ch.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -521,7 +521,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-s860/vietmap-s860.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-s860.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -546,7 +546,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/camera-hanh-trinh-htd-carplay-ap-c23/camera-hanh-trinh-htd-carplay-ap-c23.webp",
+    "image": "hinh/sp/camera-hanh-trinh-htd-c23.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -571,7 +571,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/70mai/camera-hanh-trinh-70mai-s500/camera-hanh-trinh-70mai-s500.png",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-s500.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -596,7 +596,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/camera-hanh-trinh-ellicam-a64gs/camera-hanh-trinh-ellicam-a64gs.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ellicam-a64gs.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -621,7 +621,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/camera-hanh-trinh-ellicam-a660/camera-hanh-trinh-ellicam-a660.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ellicam-a64g.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -646,7 +646,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-h68/camera-hanh-trinh-vietmap-h68.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-h68.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -671,7 +671,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/camera-hanh-trinh-ellicam-a660/camera-hanh-trinh-ellicam-a660.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ellicam-a64g.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -696,7 +696,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/camera-hanh-trinh-ellicam-a650s/camera-hanh-trinh-ellicam-a650s.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ellicam-a650s.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -721,7 +721,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/camera-hanh-trinh-ellicam-a650/camera-hanh-trinh-ellicam-a650-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ellicam-a650.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -746,7 +746,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/camera-hanh-trinh-ellicam-a620/camera-hanh-trinh-ellicam-a620-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ellicam-a620.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -771,7 +771,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/SpeedMap-M2/camera-hanh-trinh-m2-10.jpg",
+    "image": "hinh/sp/vietmap-speedmap-m2.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -796,7 +796,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/icar/Camera%20h%C3%A0nh%20tr%C3%ACnh%20Nextbase%20A161%20Wifi/icar.vn-camera-hanh-trinh-nextbase-a161-wifi-camera-hanh-trinh-nextbase-a161-wifi-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-nextbase-a161-wifi.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -821,7 +821,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/icar/Camera%20h%C3%A0nh%20tr%C3%ACnh%20Nextbase%20A160%20Single%20Dashcam/icar.vn-camera-hanh-trinh-nextbase-a160-single-dashcam-camera-hanh-trinh-nextbase-a160-single-dashcam-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-nextbase-a160-single-dashcam.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -846,7 +846,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-h9s/vietmap-h9s%20(1).jpg",
+    "image": "hinh/sp/vietmap-h9s.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -871,7 +871,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-h86/vietmap-h86%20(1).jpg",
+    "image": "hinh/sp/vietmap-h86.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -896,7 +896,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/camera-hanh-trinh-x5-teyes/camera-hanh-trinh-x5-teyes%20(1).jpg",
+    "image": "hinh/sp/camera-hanh-trinh-x5-teyes.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -921,7 +921,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-c1/vietmap-c1%20(1).jpg",
+    "image": "hinh/sp/vietmap-c1.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -946,7 +946,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/vietmap/vietmap-ts-h2k/vietmap-ts-h2k%20(1).jpg",
+    "image": "hinh/sp/vietmap-ts-h2k.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -971,7 +971,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/70mai/m300/camera-hanh-trinh-70mai-m300-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-m300.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -996,7 +996,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-ts-5k/vietmap-ts-5k-1.webp",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-ts-5k.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1021,7 +1021,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-ts-2k-lite/vietmap-ts-2k-lite-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-ts-2k-lite.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1046,7 +1046,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/70mai/camera-hanh-trinh-70mai-a800s/camera-hanh-trinh-xiaomi-70mai-a800s-4.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70-mai-a800s.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1071,7 +1071,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/UTOUR/c2-max/c2-max-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1096,7 +1096,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/UTOUR/C2L/c2l-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2l.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1121,7 +1121,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/70mai/70mai-a500s/1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-xiaomi-70mai-a500s.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1146,7 +1146,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/70mai/a810-4k/a810-4k.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-70mai-dash-cam-a810-4k.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1171,7 +1171,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-ts-c9p/an-toan-khi-co-cam-bien-va-cham-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-ts-c9p.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1196,7 +1196,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://media.blackvue.com/vi/firmware-download/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/BLACKVUE/CAMERA%20HA%CC%80NH%20TRI%CC%80NH%20O%CC%82%20TO%CC%82%20CAO%20CA%CC%82%CC%81P%20BLACKVUE%20DR750X-2CH%20LTE%20PLUS.png",
+    "image": "hinh/sp/camera-hanh-trinh-han-quoc-blackvue-dr750x-2ch-lt.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1221,7 +1221,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://media.blackvue.com/vi/firmware-download/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/BLACKVUE/CAMERA%20HA%CC%80NH%20TRI%CC%80NH%20O%CC%82%20TO%CC%82%20CAO%20CA%CC%82%CC%81P%20BLACKVUE%20DR900X-2CH%20DMS%20PLUS.png",
+    "image": "hinh/sp/camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1247,7 +1247,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://media.blackvue.com/vi/firmware-download/",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/BLACKVUE/Blackvue-DR750X-3CH-DMS-PLUS-5.png",
+    "image": "hinh/sp/camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-3ch-dms-plus.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1273,7 +1273,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/BLACKVUE/CAMERA%20HA%CC%80NH%20TRI%CC%80NH%20O%CC%82%20TO%CC%82%20CAO%20CA%CC%82%CC%81P%20BLACKVUE%20DR900X-2CH%20DMS%20PLUS.png",
+    "image": "hinh/sp/camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1299,7 +1299,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Blackvue/Blackvue%20DR750X%20-2CH%20DMS%20LTE%20Plus.png",
+    "image": "hinh/sp/camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1324,7 +1324,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-da250.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-da250.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1349,7 +1349,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-d22.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-d22.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1374,7 +1374,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-p2.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-p2.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1399,7 +1399,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/camera-hanh-trinh/VIETMAP-V5/pp1-6bf19459-0396-438b-9023-6af4df630d6a.webp",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-v5.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1424,7 +1424,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/C9/p1.webp",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-c9.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1474,7 +1474,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": "https://vietmap.vn/camera-hanh-trinh-4k",
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-c61.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-c61-pro.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1499,7 +1499,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-vm350/anh-dai-dien-cf92ed57-a546-4301-9df0-14c6a0fb49ef.webp",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-vm350.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1524,7 +1524,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/Camera%20H%C3%A0nh%20Tr%C3%ACnh/camera-hanh-trinh-vietmap-vm300-giam-sat-truc-tuyen.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-vm300.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1549,7 +1549,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/speed-m1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-speedmap-m1.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1574,7 +1574,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2021/12/22/22-12-2021-0-1640144488-camera-hanh-trinh-vietmap-kc01-4.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-kc01.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1599,7 +1599,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2021/12/20/20-12-2021-1639972856-camera-hanh-trinh-vietmap.png",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-c65.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1624,7 +1624,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2020/03/10/10-03-2020-1583810660-mini-x3-pro.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ddpai-x3-pro-gia-re.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1649,7 +1649,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2020/03/10/10-03-2020-1583808780-DSC00284.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ddpai-mini-gia-re.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1674,7 +1674,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2020/03/09/09-03-2020-1583749790-DSC00318.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ddpai-mini-3-gia-re.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1699,7 +1699,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2020/03/09/09-03-2020-1583748508-DSC00289.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ddpai-mini-2p-gia-re.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1724,7 +1724,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2020/03/09/09-03-2020-1583747737-DSC00335.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-ddpai-mini-one.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1749,7 +1749,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/HOANG/DSC05016.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-xiaomi-70mai.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1774,7 +1774,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/2020/03/13/13-03-2020-0-1584073097-g79-vietmap-5.png",
+    "image": "hinh/sp/vietmap-g79-man-hinh-guong-vua-dan-duong-vua-ghi-hinh.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1799,7 +1799,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/Ch%C3%A2u%20123/Bi%20gam/untitled%20folder/camera-hanh-trinh-vietmap-x9s-1.png",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-x9s-nang-tam-chat-luong.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1824,7 +1824,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/Ch%C3%A2u%20123/Bi%20gam/untitled%20folder/camera-hanh-trinh-vietmap-ir22.png",
+    "image": "hinh/sp/camera-hanh-trinh-vietmap-ir22.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1849,7 +1849,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/Ch%C3%A2u%20123/Bi%20gam/untitled%20folder/black-vue-dr650s-2ch-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-blackvue-dr650s-2ch.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1874,7 +1874,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/product/VIETMAP/vietmap-a50/pp-01.webp",
+    "image": "hinh/sp/vietmap-a50-camera-hanh-trinh.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1899,7 +1899,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/Ch%C3%A2u%20123/BlackVue-450-1CH-07-1-1.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-xe-hoiblackvue-dr450-1ch.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1924,7 +1924,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/Ch%C3%A2u%20123/products_x350_recordingmodes_thinkwaredashcam_x350(1).jpg",
+    "image": "hinh/sp/camera-hanh-trinh-thinkware-dash-cam-x350.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1949,7 +1949,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/Ch%C3%A2u%20123/camera-hanh-trinh-hp-f550g-gps-cho-trai-nghiem-thu-vi.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-hp-f550g-gpscho-trai-nghiem-thu-vi.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1974,7 +1974,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/VYYYYY/thinkware%20dash%20cam%20X550.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-thinkware-dash-cam-x550.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -1999,7 +1999,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/VYYYYY/51kqiCrv0oL._SX425_.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-thinkware-dash-cam-f770.webp",
     "image_width": 450,
     "image_height": 450
   },
@@ -2024,7 +2024,7 @@ window.CATALOG_SSOT = [
     "required_accessories": [],
     "official_source": null,
     "last_verified": "2026-09-15",
-    "image": "https://auto365.vn/uploads/images/thumbnails/450x450xcrop/catalog/VYYYYY/1-F50.jpg",
+    "image": "hinh/sp/camera-hanh-trinh-thinkware-dash-cam-f50.webp",
     "image_width": 450,
     "image_height": 450
   }
