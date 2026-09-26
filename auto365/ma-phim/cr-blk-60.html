@@ -462,6 +462,14 @@
       .real-note{font-size:13.5px;margin-top:14px}
       .real-actions{padding-top:16px}
     }
+    .ew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+    .guide-card{display:flex;flex-direction:column;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:17px;background:#fff;padding:18px;text-decoration:none;color:inherit;transition:border-color .18s ease}
+    .guide-card:hover{border-color:#c9c4ba}
+    .guide-card h3{font-size:14.5px;font-weight:500;line-height:1.4;margin:0;color:#252a30}
+    .guide-card span{font-size:12.5px;color:var(--red);font-weight:600}
+    @media(max-width:1000px){.guide-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.ew-grid{grid-template-columns:1fr;gap:10px}.guide-grid{grid-template-columns:1fr;gap:10px}.guide-card{padding:15px 16px;flex-direction:row;align-items:center}.guide-card span{white-space:nowrap;font-size:12px}}
   </style>
 
   <script type="application/ld+json">
@@ -962,14 +970,27 @@
         <div class="rights-grid">
           <article class="right"><h3>Tháo & vệ sinh phim cũ</h3><p>Tháo và vệ sinh phim cũ miễn phí khi dán tại Auto365.</p></article>
           <article class="right"><h3>Chăm sóc xe sau thi công</h3><p>Rửa xe, hút bụi nội thất, vệ sinh kính và tẩy ố kính theo phạm vi chương trình hiện hành.</p></article>
-          <article class="right"><h3>eWarranty 3M</h3><p><a class="inline-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/" target="_blank" rel="noopener">3M Việt Nam công bố</a> phim ô tô được hỗ trợ bảo hành lên tới 10 năm khi bán, lắp đặt và kích hoạt theo chính sách áp dụng; Auto365 bàn giao thông tin để tra cứu.</p></article>
+          <article class="right"><h3>eWarranty 3M</h3><p>Nhận thông tin tra cứu bảo hành điện tử ngay khi bàn giao xe. <a class="inline-link" href="#bao-hanh">Xem cách kiểm tra</a></p></article>
           <article class="right"><h3>Kiểm tra hoàn thiện</h3><p>Kiểm tra GPS, thẻ ETC và các cảm biến/thiết bị liên quan trên kính sau khi hoàn tất thi công.</p></article>
         </div>
 
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="bao-hanh" aria-labelledby="ew-title">
+      <div class="container">
+        <h2 class="section-title" id="ew-title">Bảo hành eWarranty 3M: kiểm tra sau khi bàn giao</h2>
+        <p class="section-desc"><a class="inline-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/" target="_blank" rel="noopener">3M Việt Nam công bố</a> phim ô tô được hỗ trợ bảo hành lên tới 10 năm khi bán, lắp đặt và kích hoạt theo chính sách áp dụng. Sau khi dán CR BLK 60, bạn nên giữ lại thông tin sau:</p>
+        <div class="ew-grid">
+          <article class="right"><h3>Mã phim từng vị trí</h3><p>Kính lái dán CR BLK 60, các kính còn lại dán mã nào — ghi rõ trong phiếu bàn giao.</p></article>
+          <article class="right"><h3>Thông tin tra cứu eWarranty</h3><p>Auto365 bàn giao thông tin để bạn tự tra cứu bảo hành điện tử sau thi công.</p></article>
+          <article class="right"><h3>Điểm thi công</h3><p>Chi nhánh Auto365 đã dán xe, để liên hệ khi cần kiểm tra hoặc hỗ trợ bảo hành.</p></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section alt">
       <div class="container">
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
         <p class="section-desc">Điểm thi công, cách tư vấn, xe thực tế và hồ sơ eWarranty đều được công khai để bạn tự kiểm tra trước và sau khi dán.</p>
@@ -990,7 +1011,7 @@
       </div>
     </section>
 
-    <section class="section alt" aria-label="Hệ thống Auto365">
+    <section class="section" aria-label="Hệ thống Auto365">
       <div class="container">
 <svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true"><symbol id="a365hq-i-phone" viewBox="0 0 24 24"><path d="M6.8 3.8h2.8l1.5 4.5-2.2 1.4c1.1 2.4 3 4.4 5.4 5.5l1.4-2.3 4.5 1.5v2.8c0 1.4-1.2 2.6-2.6 2.5C10.3 19.2 4.8 13.7 4.3 6.4c-.1-1.4 1-2.6 2.5-2.6Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-zalo" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="14" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M8 9h8M8 13h3M14 13h2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/><path d="m8.5 18.5-2 2v-2" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></symbol><symbol id="a365hq-i-map" viewBox="0 0 24 24"><path d="m3.5 6.2 5.5-2 6 2 5.5-2v13.6l-5.5 2-6-2-5.5 2V6.2Z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M9 4.2v13.6M15 6.2v13.6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol><symbol id="a365hq-i-building" viewBox="0 0 24 24"><path d="M4 20h16M6.5 20V9.2l5-2.4V20M14 20V4.8L18 3v17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.3 11.2h1M8.3 14.1h1M8.3 17h1M15.6 7.4h1M15.6 10.3h1M15.6 13.2h1M15.6 16.1h1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="a365hq-i-chat" viewBox="0 0 24 24"><path d="M4.5 5.5h15v11h-9l-4.5 3v-3H4.5v-11Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="9" cy="11" r="1" fill="currentColor"/><circle cx="12" cy="11" r="1" fill="currentColor"/><circle cx="15" cy="11" r="1" fill="currentColor"/></symbol><symbol id="a365hq-i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol><!-- Branch coverage illustration system --><symbol id="a365hq-il-khue-van-cac" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M7 39.5h34"/><path d="M11 35.5h26M14 32.5h20"/><path d="M15.5 32.5V25h17v7.5"/><path d="M18 25v7.5M30 25v7.5"/><path d="M14 24h20"/><path d="M16.5 21.5h15l3.8 2.5H12.7l3.8-2.5Z"/><path d="M18 21.5v-7h12v7"/><circle cx="24" cy="18" r="2.7"/><path d="M16 14.5h16M18.5 11.5h11M21 8.5h6M24 6v2.5"/><path d="M15.5 14.5 12.5 17M32.5 14.5 35.5 17"/></g></symbol><symbol id="a365hq-il-cau" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 36.5h36M9 32.5h30"/><path d="M12 32.5V26M36 32.5V26"/><path d="M12 26c0-7.4 4.6-13 10.4-13S33 18.6 33 26"/><path d="M18.5 32.5V24c0-6.2 2.3-10.5 5.5-10.5s5.5 4.3 5.5 10.5v8.5"/><path d="M24 13.5v19"/><path d="M9 36.5h30"/></g></symbol><symbol id="a365hq-il-cao-oc" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round"><path d="M6 39h36"/><path d="M10 39V27h10v12"/><path d="M20 39V20h8v19"/><path d="M28 39V11h10v28"/><path d="M13.5 31h3M13.5 35h3"/><path d="M23 24h2M23 28h2M23 32h2M23 36h2"/><path d="M31.5 15h3M31.5 19h3M31.5 23h3M31.5 27h3M31.5 31h3M31.5 35h3"/><path d="M28 11h10"/></g></symbol><symbol id="a365hq-il-vn" viewBox="0 0 44 100"><path d="M18.5 2.4c4.9-1 10.4 1.2 13 4.8 2.5 3.6-.2 7-3.2 9.7-2.4 2.2-1.5 5.1 1.2 7.5 3.1 2.7 4 5.7 1.3 8.8-2.7 3.1-4.1 5.8-1.3 9.1 3.1 3.7 2.9 7.2-.3 10.6-3.2 3.5-4.4 7-.8 10.8 3.4 3.7 3 7.5-.7 10.8-3.5 3.1-6.2 6.5-6.2 10.3 0 4.4 3.4 7.1 7.2 9.4-3.1 3.1-7.3 4.6-11.7 3.5-5.4-1.3-9.2-5.3-9.5-9.9-.3-4 3.3-7.2 4.3-10.9 1.1-4-1.9-6.9-4.1-9.9-2.1-2.9-.7-6.3 2.4-9.1 3.2-2.9 4.1-6 .9-9.6-3-3.5-2.4-6.8.7-9.9 3.4-3.3 4.7-6.5 1.7-10.2-2.8-3.4-3.1-6.7.4-9.5 3-2.4 5.1-5.2 4.8-8.4-.2-2.4-1.7-4.4-.1-7.9Z" fill="currentColor"/></symbol></svg><div class="hqx-grid">
   <article class="hqx-card">
@@ -1017,6 +1038,18 @@
     <a class="hqx-all" href="https://auto365.vn/chi-nhanh">Xem toàn bộ hệ thống Auto365 <svg viewBox="0 0 24 24"><use href="#a365hq-i-arrow"/></svg></a>
   </article>
 </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="guide-title">
+      <div class="container">
+        <h2 class="section-title" id="guide-title">Cẩm nang phim cách nhiệt</h2>
+        <div class="guide-grid">
+          <a class="guide-card" href="https://auto365.vn/dan-phim-cach-nhiet-nhung-kinh-lai-van-phai-sang"><h3>Dán phim cách nhiệt nhưng kính lái vẫn phải sáng</h3><span>Đọc bài →</span></a>
+          <a class="guide-card" href="https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh"><h3>Nên dán mã CR BLK nào cho từng vị trí kính?</h3><span>Đọc bài →</span></a>
+          <a class="guide-card" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"><h3>Dòng 3M Crystalline CR BLK</h3><span>Xem dòng phim →</span></a>
+          <a class="guide-card" href="https://auto365.vn/phim-cach-nhiet-o-to-3m"><h3>Bảng giá phim cách nhiệt 3M</h3><span>Xem bảng giá →</span></a>
+        </div>
       </div>
     </section>
 
