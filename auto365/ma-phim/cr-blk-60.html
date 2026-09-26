@@ -463,13 +463,21 @@
       .real-actions{padding-top:16px}
     }
     .ew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
-    .guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
-    .guide-card{display:flex;flex-direction:column;justify-content:space-between;gap:12px;border:1px solid var(--line);border-radius:17px;background:#fff;padding:18px;text-decoration:none;color:inherit;transition:border-color .18s ease}
-    .guide-card:hover{border-color:#c9c4ba}
-    .guide-card h3{font-size:14.5px;font-weight:500;line-height:1.4;margin:0;color:#252a30}
-    .guide-card span{font-size:12.5px;color:var(--red);font-weight:600}
+    @media(max-width:640px){.ew-grid{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.ew-grid::-webkit-scrollbar{display:none}.ew-grid>*{flex:0 0 78%;scroll-snap-align:start}}
+    .guide-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .guide-more{flex:none;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-size:13px;font-weight:600;color:#252a30;text-decoration:none;background:#fff}
+    .guide-more:hover{border-color:#c9c4ba}
+    .guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 18px;margin-top:18px}
+    .guide-card{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:inherit}
+    .guide-img{display:block;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#eee}
+    .guide-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+    .guide-card:hover img{transform:scale(1.04)}
+    .guide-card h3{font-size:14px;font-weight:500;line-height:1.45;margin:0;color:#252a30;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .guide-card:hover h3{color:var(--red)}
+    .guide-card time{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--muted)}
+    .guide-card time svg{width:14px;height:14px}
     @media(max-width:1000px){.guide-grid{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.ew-grid{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.ew-grid::-webkit-scrollbar{display:none}.ew-grid>*{flex:0 0 78%;scroll-snap-align:start}.guide-grid{grid-template-columns:1fr;gap:10px}.guide-card{padding:15px 16px;flex-direction:row;align-items:center}.guide-card span{white-space:nowrap;font-size:12px}}
+    @media(max-width:640px){.guide-more{padding:7px 11px;font-size:12px}.guide-grid{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.guide-grid::-webkit-scrollbar{display:none}.guide-card{flex:0 0 72%;scroll-snap-align:start}.guide-card h3{font-size:13.5px}}
   </style>
 
   <script type="application/ld+json">
@@ -1043,12 +1051,16 @@
 
     <section class="section alt" aria-labelledby="guide-title">
       <div class="container">
-        <h2 class="section-title" id="guide-title">Cẩm nang phim cách nhiệt</h2>
+        <div class="guide-head"><h2 class="section-title" id="guide-title">Cẩm nang phim cách nhiệt</h2><a class="guide-more" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả →</a></div>
         <div class="guide-grid">
-          <a class="guide-card" href="https://auto365.vn/dan-phim-cach-nhiet-nhung-kinh-lai-van-phai-sang"><h3>Dán phim cách nhiệt nhưng kính lái vẫn phải sáng</h3><span>Đọc bài →</span></a>
-          <a class="guide-card" href="https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh"><h3>Nên dán mã CR BLK nào cho từng vị trí kính?</h3><span>Đọc bài →</span></a>
-          <a class="guide-card" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"><h3>Dòng 3M Crystalline CR BLK</h3><span>Xem dòng phim →</span></a>
-          <a class="guide-card" href="https://auto365.vn/phim-cach-nhiet-o-to-3m"><h3>Bảng giá phim cách nhiệt 3M</h3><span>Xem bảng giá →</span></a>
+          <a class="guide-card" href="https://auto365.vn/di-nang-rat-tay-kinh-lai-hay-kinh-suon-nen-dan-phim-truoc"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-di-nang-rat-tay-nen-xu-ly-kinh-lai-hay-kinh-suon-img_6ab4938e254fa2.46303240.webp" alt="Đi nắng 30 phút đã rát tay: kính lái và kính sườn nên ưu tiên xử lý vị trí nào trước?" loading="lazy" width="800" height="450"></span><h3>Đi nắng 30 phút đã rát tay: kính lái và kính sườn nên ưu tiên xử lý vị trí nào trước?</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>24/09/2026 10:05</time></a>
+          <a class="guide-card" href="https://auto365.vn/sai-thong-tin-bao-hanh-dien-tu-phim-cach-nhiet"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-sai-thong-tin-bao-hanh-dien-tu-phim-cach-nhiet-img_6ab4823532faf7.33235257.webp" alt="Sai thông tin bảo hành điện tử phim cách nhiệt: Cập nhật thế nào? Hướng dẫn đối chiếu và quy trình xử lý" loading="lazy" width="800" height="450"></span><h3>Sai thông tin bảo hành điện tử phim cách nhiệt: Cập nhật thế nào? Hướng dẫn đối chiếu và quy trình xử lý</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>24/09/2026 08:51</time></a>
+          <a class="guide-card" href="https://auto365.vn/vet-soc-nuoc-sau-dan-phim-cach-nhiet"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-vet-soc-nuoc-sau-dan-phim-cach-nhiet-khi-nao-can-kiem-tra-img_6aad01dc1cf5a4.76315140.webp" alt="Vết sọc nước sau dán phim cách nhiệt: khi nào cần kiểm tra?" loading="lazy" width="800" height="450"></span><h3>Vết sọc nước sau dán phim cách nhiệt: khi nào cần kiểm tra?</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>18/09/2026 16:18</time></a>
+          <a class="guide-card" href="https://auto365.vn/kinh-lai-xuat-hien-quang-sang-khi-mua"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-kinh-lai-xuat-hien-quang-sang-khi-mua-img_6aa798c5bd39b6.74936374.webp" alt="Kính lái xuất hiện quầng sáng khi mưa: màng dầu, vết xước hay phim cũ?" loading="lazy" width="800" height="450"></span><h3>Kính lái xuất hiện quầng sáng khi mưa: màng dầu, vết xước hay phim cũ?</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>14/09/2026 13:48</time></a>
+          <a class="guide-card" href="https://auto365.vn/dan-phim-cach-nhiet-nhung-kinh-lai-van-phai-sang"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-dan-phim-cach-nhiet-nhung-kinh-lai-van-phai-sang-img_6ab48c4ea33e56.93652810.webp" alt="Dán phim cách nhiệt nhưng kính lái vẫn phải sáng: cách chọn phim cho người hay chạy đêm" loading="lazy" width="800" height="450"></span><h3>Dán phim cách nhiệt nhưng kính lái vẫn phải sáng: cách chọn phim cho người hay chạy đêm</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>24/09/2026 09:34</time></a>
+          <a class="guide-card" href="https://auto365.vn/dan-phim-cach-nhiet-co-lam-kinh-o-to-nut-do-soc-nhiet-khong"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-dan-phim-cach-nhiet-kinh-o-to-nut-do-soc-nhiet-2-webp-img_6ab1fca57a0697.18180690.webp" alt="Dán phim cách nhiệt có làm kính ô tô nứt do sốc nhiệt không?" loading="lazy" width="800" height="450"></span><h3>Dán phim cách nhiệt có làm kính ô tô nứt do sốc nhiệt không?</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>22/09/2026 10:57</time></a>
+          <a class="guide-card" href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-cach-doc-thong-so-3m-ceramic-nr-nr35-nr25-nr15-nr5-1-img_6aa79ca40413d9.75697238.webp" alt="Cách đọc thông số 3M Ceramic NR: VLT, TSER, IRER, IRR" loading="lazy" width="800" height="450"></span><h3>Cách đọc thông số 3M Ceramic NR: VLT, TSER, IRER, IRR</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>14/09/2026 14:05</time></a>
+          <a class="guide-card" href="https://auto365.vn/3m-ceramic-hybrid-va-crystalline-hybrid"><span class="guide-img"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-3m-ceramic-hybrid-va-crystalline-hybrid-img_6aa7947c81c719.72678310.webp" alt="3M Ceramic Hybrid và Crystalline Hybrid khác nhau thế nào?" loading="lazy" width="800" height="450"></span><h3>3M Ceramic Hybrid và Crystalline Hybrid khác nhau thế nào?</h3><time><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>14/09/2026 13:30</time></a>
         </div>
       </div>
     </section>
