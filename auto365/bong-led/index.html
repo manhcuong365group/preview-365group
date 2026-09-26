@@ -4671,7 +4671,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     });
 
     var finalThree = results.slice(0, 3);
-    resultBox.innerHTML = '<div style="margin-bottom: 12px; font-size: 14px; color: #0f172a; font-weight: 500;">Sản phẩm để đối chiếu — cần kiểm tra cụm đèn, khoảng hở và hệ điều khiển trước khi xác nhận lắp.</div>';
+    resultBox.innerHTML = '<div style="grid-column:1/-1; margin-bottom: 12px; font-size: 14px; color: #0f172a; font-weight: 500;">Sản phẩm để đối chiếu — cần kiểm tra cụm đèn, khoảng hở và hệ điều khiển trước khi xác nhận lắp.</div>';
     finalThree.forEach(function(matchObj, idx) {
       var isPick = idx === 0;
       var isUpgrade = matchObj.isUpgrade;
