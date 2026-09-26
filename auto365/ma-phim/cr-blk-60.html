@@ -188,10 +188,12 @@
     .tech h3{font-family:var(--display);font-size:16px;font-weight:600;margin:14px 0 6px}
     .tech p{font-size:14px;color:var(--muted);margin:0}
     .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:18px}
-    .why{border:1px solid var(--line);border-radius:18px;padding:22px;background:#fff;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
-    .why h3{font-family:var(--display);font-size:15px;font-weight:600;margin:0 0 7px}
-    .why p{font-size:12px;color:var(--muted);margin:0 0 12px}
-    .why a{font-size:12px;font-weight:700}
+    .why{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+    .why-copy{padding:16px 16px 0}
+    .why h3{font-family:var(--display);font-size:15px;font-weight:600;margin:0 0 6px}
+    .why p{font-size:12px;color:var(--muted);margin:0}
+    .why img{width:100%;aspect-ratio:1.5/1;object-fit:cover;margin-top:14px}
+    .why a{display:block;padding:11px 16px 14px;font-size:12px;font-weight:700;color:var(--red)}
     .cert-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
     .cert{border:1px solid var(--line);border-radius:14px;background:#fff;padding:8px;overflow:hidden;transition:transform .16s ease,box-shadow .16s ease}
     .cert:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(35,55,75,.055)}
@@ -920,12 +922,13 @@
     <section class="section alt">
       <div class="container">
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
+        <p class="section-desc">Từ điểm thi công, tư vấn cấu hình, xe thực tế đến hồ sơ eWarranty — Auto365 công khai thông tin để khách hàng kiểm tra trước và sau khi sử dụng dịch vụ.</p>
 
         <div class="why-grid">
-          <article class="why"><h3>Điểm thi công có thông tin để kiểm tra</h3><p>3M Pro Shop & 3M Training Center có không gian kỹ thuật và trải nghiệm thực tế.</p><a href="https://auto365.vn/thu-duc">Kiểm tra điểm thi công →</a></article>
-          <article class="why"><h3>Tư vấn cấu hình theo từng xe và nhu cầu</h3><p>Đối chiếu TDS 3M, kính nền và thói quen lái để chọn mã phim phù hợp.</p><a href="#phu-hop">Xem cơ sở tư vấn →</a></article>
-          <article class="why"><h3>Quy trình rõ ràng, đối chiếu thực tế</h3><p>Đo kính nền, xem mẫu thật từ ghế lái và chốt mã theo phiếu cấu hình trước khi dán.</p><a href="#thong-so">Xem dữ liệu kỹ thuật →</a></article>
-          <article class="why"><h3>Có hồ sơ sau khi bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành và điều kiện eWarranty để tiếp tục kiểm tra sau dịch vụ.</p><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Xem bảo hành eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Điểm thi công có thông tin để kiểm tra</h3><p>3M Pro Shop & 3M Training Center có không gian kỹ thuật và trải nghiệm thực tế.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="https://auto365.vn/thu-duc">Kiểm tra điểm thi công →</a></article>
+          <article class="why"><div class="why-copy"><h3>Tư vấn cấu hình theo từng xe và nhu cầu</h3><p>Đối chiếu TDS 3M, kính nền và thói quen lái để chọn mã phim phù hợp.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem cơ sở tư vấn →</a></article>
+          <article class="why"><div class="why-copy"><h3>Quy trình rõ ràng, đối chiếu thực tế</h3><p>Tham khảo xe thật và video thi công để biết cấu hình đang được triển khai.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau khi bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành và điều kiện eWarranty để tiếp tục kiểm tra sau dịch vụ.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Đội ngũ Auto365 3M Pro Shop" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Xem bảo hành eWarranty →</a></article>
         </div>
 
         <div class="cert-grid">
