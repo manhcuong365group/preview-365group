@@ -1070,13 +1070,13 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <option value="70mai">70mai</option><option value="vietmap">VIETMAP</option><option value="blackvue">BlackVue</option><option value="ddpai">DDPAI</option><option value="thinkware">Thinkware</option><option value="ellicam">Ellicam</option><option value="utour">UTOUR</option><option value="other">Hãng khác</option>
 </select>
 <select id="mobileChannelFilter" aria-label="Lọc theo số kênh">
-<option value="all">Số kênh ghi</option><option value="1">1 kênh · phía trước</option><option value="2">2 kênh · trước + sau</option><option value="3">3 kênh · có cabin</option>
+<option value="all">Số kênh ghi</option><option value="1">1 kênh · phía trước</option><option value="2">2 kênh · trước + sau</option><option value="4">2 kênh · trước + cabin</option><option value="3">3 kênh · có cabin</option>
 </select>
 <select id="mobilePriceFilter" aria-label="Lọc theo mức giá">
 <option value="all">Mức giá</option><option value="low">Dưới 2 triệu</option><option value="mid">2 – 5 triệu</option><option value="high">5 – 10 triệu</option><option value="premium">Trên 10 triệu</option>
-</select>
+<option value="contact">Liên hệ báo giá</option></select>
 <select id="mobileFeatureFilter" aria-label="Lọc theo tính năng">
-<option value="all">Tính năng</option><option value="4k">Độ phân giải 4K</option><option value="parking">Chế độ đỗ xe</option><option value="gps">GPS</option><option value="warning">Cảnh báo giao thông</option><option value="lte">Giám sát từ xa</option>
+<option value="all">Tính năng</option><option value="4k">Độ phân giải 4K</option><option value="parking">Chế độ đỗ xe</option><option value="gps">GPS</option><option value="warning">Cảnh báo giao thông</option><option value="wifi">Wi-Fi</option><option value="adas">ADAS</option><option value="lte">Giám sát từ xa</option>
 </select>
 <select id="filterSortMobile" aria-label="Sắp xếp giá">
 <option value="default">Sắp xếp mặc định</option>
@@ -1122,6 +1122,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <div class="filter-options">
 <label class="check"><input type="checkbox" name="channel" value="1"><span>1 kênh (phía trước)</span></label>
 <label class="check"><input type="checkbox" name="channel" value="2"><span>2 kênh (trước + sau)</span></label>
+<label class="check"><input type="checkbox" name="channel" value="4"><span>2 kênh (trước + cabin)</span></label>
 <label class="check"><input type="checkbox" name="channel" value="3"><span>3 kênh (trước + sau + cabin)</span></label>
 </div>
 </div>
@@ -1133,6 +1134,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <label class="check"><input type="checkbox" name="price" value="mid"><span>2 – 5 triệu</span></label>
 <label class="check"><input type="checkbox" name="price" value="high"><span>5 – 10 triệu</span></label>
 <label class="check"><input type="checkbox" name="price" value="premium"><span>Trên 10 triệu</span></label>
+<label class="check"><input type="checkbox" name="price" value="contact"><span>Liên hệ báo giá</span></label>
 </div>
 </div>
 
@@ -1143,6 +1145,8 @@ h1{font-weight:500;letter-spacing:-2.2px}
 <label class="check"><input type="checkbox" name="feature" value="parking"><span>Chế độ đỗ xe Parking</span></label>
 <label class="check"><input type="checkbox" name="feature" value="gps"><span>GPS ghi tốc độ và hành trình</span></label>
 <label class="check"><input type="checkbox" name="feature" value="warning"><span>Cảnh báo giao thông/tốc độ</span></label>
+<label class="check"><input type="checkbox" name="feature" value="wifi"><span>Kết nối Wi-Fi (xem trên điện thoại)</span></label>
+<label class="check"><input type="checkbox" name="feature" value="adas"><span>ADAS (cảnh báo lệch làn/va chạm)</span></label>
 <label class="check"><input type="checkbox" name="feature" value="lte"><span>Giám sát từ xa (4G/LTE)</span></label>
 </div>
 </div>
@@ -2790,16 +2794,23 @@ const LTE_MODE = {
 const RESOLUTION_MAP = {"camera-hanh-trinh-70mai-a210":"Camera trước Full HD 1080P","camera-hanh-trinh-yuemi-q5":"Camera trước 4K / camera cabin 1K / camera sau 1K","camera-hanh-trinh4k-a800se-speedeye":"Camera trước 4K UHD; camera sau tùy phiên bản/bộ bán","camera-hanh-trinh-70mai-m310-plus-2k":"2K 2560 × 1440P","camera-hanh-trinh-70mai-4k-a810-lite":"Camera trước 4K UHD 3840 × 2160P","camera-hanh-trinh-70mai-m310-plus-3k":"3K 2880 × 1620P","camera-hanh-trinh-70mai-m310":"2304 × 1296P","camera-hanh-trinh-70mai-a200":"Camera trước Full HD 1080P; camera sau Full HD 1080P (camera sau bán riêng)","camera-hanh-trinh-70mai-a510":"Camera trước 2592×1944P (4:3) / 2560×1440P (16:9)","camera-hanh-trinh-70mai-t400":"Camera trước 2560 × 1440P; camera sau 1920 × 1080P; camera cabin 1920 × 1080P","camera-hanh-trinh-70mai-t800-4k":"Camera trước 3840 × 2160P; camera sau 3840 × 2160P; camera cabin 1920 × 1080P","camera-hanh-trinh-70mai-m800":"Camera trước 4K UHD / camera sau Full HD 1080P","camera-hanh-trinh-70mai-4k-a810s":"Camera trước 4K UHD 3840 × 2160P; camera sau 1080P HDR","camera-hanh-trinh-vietmap-l110":"2K 2560 × 1440P","camera-hanh-trinh-vietmap-v740":"Camera trước Full HD 1080P / camera sau Full HD 1080P","camera-hanh-trinh-70mai-a800se":"Camera trước 4K UHD","camera-hanh-trinh-70mai-omni":"Full HD 1080P (1920 × 1080)","camera-hanh-trinh-vietmap-r440":"Camera trước 4K; camera sau Full HD 1080P","camera-hanh-trinh-vietmap-s720":"Camera trước 4K 3840 × 2160P hoặc 2K 2560 × 1440P 60 FPS; hỗ trợ camera sau Full HD 1080P","camera-hanh-trinh-han-quoc-blackvue-dr590x-2ch":"Camera trước Full HD 1080P 30 FPS / camera sau Full HD 1080P 30 FPS","camera-hanh-trinh-vietmap-s860":"Camera trước 3K 2592 × 1944P 30 FPS; camera sau Full HD 1920 × 1080P 30 FPS","camera-hanh-trinh-htd-c23":"4K (3840×2560)","camera-hanh-trinh-70mai-s500":"2592×1944P; hỗ trợ ghi hình 2 kênh","camera-hanh-trinh-ellicam-a64gs":"Camera trước Full HD 1080P / camera sau Full HD 1080P","camera-hanh-trinh-ellicam-a64g":"Full HD 1080P","camera-hanh-trinh-vietmap-h68":"Camera trước Full HD 1920×1080P; hỗ trợ camera sau Full HD 1920×1080P (phụ kiện)","camera-hanh-trinh-ellicam-a660":"Camera trước 2K / camera sau 1280 × 720P","camera-hanh-trinh-ellicam-a650s":"Camera trước Full HD 1080P / camera sau Full HD 1080P","camera-hanh-trinh-ellicam-a650":"Camera trước Full HD 1080P / camera sau Full HD 1080P","camera-hanh-trinh-ellicam-a620":"2K (2304 × 1296)","vietmap-speedmap-m2":"Camera trước 2K; camera sau Full HD","camera-hanh-trinh-nextbase-a161-wifi":"Full HD 1080P@60FPS (1 kênh) hoặc Full HD 1080P@30FPS (2 kênh)","camera-hanh-trinh-nextbase-a160-single-dashcam":"Full HD 1080P 30 FPS","vietmap-h9s":"Full HD 1080P (1920×1080)","vietmap-h86":"Camera trước Ultra HD 4K; camera sau Full HD 1920×1080P","camera-hanh-trinh-x5-teyes":"Full HD 1080P","vietmap-c1":"Full HD 1080P (1920×1080)","vietmap-ts-h2k":"Full HD 1080P (1920×1080) trước + sau","camera-hanh-trinh-70mai-m300":"2304 × 1296P","camera-hanh-trinh-vietmap-ts-5k":"Camera trước 4K / camera sau Full HD 1080P","camera-hanh-trinh-vietmap-ts-2k-lite":"Camera trước Super HD 2K 1440P 30FPS; camera sau Full HD 1080P","camera-hanh-trinh-70-mai-a800s":"Camera trước 4K UHD 3840 × 2160P; camera sau 1080P","camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max":"Camera trước 4K; hỗ trợ camera sau Full HD tùy cấu hình","camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2l":"4K","camera-hanh-trinh-xiaomi-70mai-a500s":"Camera trước 2592 × 1944P","camera-hanh-trinh-70mai-dash-cam-a810-4k":"Camera trước 4K UHD 3840 × 2160P; camera sau Full HD 1080P HDR","camera-hanh-trinh-vietmap-ts-c9p":"2K (2560 × 1440)","camera-hanh-trinh-han-quoc-blackvue-dr750x-2ch-lt":"Camera trước Full HD 1080P 60 FPS / camera sau Full HD 1080P 30 FPS","camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus":"Camera trước 4K UHD 30 FPS; camera sau Full HD 1080P 30 FPS","camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-3ch-dms-plus":"Trước Full HD 1080P 60 FPS / sau Full HD 1080P 30 FPS / DMS HD 720P 10 FPS","camera-hanh-trinh-o-to-cao-cap-blackvue-dr900x-2ch-dms-plus":"Camera trước 4K UHD 30 FPS / camera DMS Full HD 1080P 30 FPS","camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus":"Camera trước Full HD 1080P 60 FPS / camera DMS Full HD 1080P 30 FPS","camera-hanh-trinh-vietmap-da250":"Camera trước Full HD 1080P/HD 720P / camera cabin HD 720P","camera-hanh-trinh-vietmap-d22":"Camera trước Full HD 1080P / camera sau AHD 720P","camera-hanh-trinh-vietmap-p2":"Camera trước Full HD 1080P; camera sau AHD 720P","camera-hanh-trinh-vietmap-c9":"Full HD 1080P","camera-hanh-trinh-vietmap-g40":"Camera trước Full HD 1080P / camera sau Full HD 1080P","camera-hanh-trinh-vietmap-c61-pro":"4K","camera-hanh-trinh-vietmap-vm350":"Camera trước Full HD 1080P/HD 720P / camera cabin HD 720P","camera-hanh-trinh-vietmap-vm300":"Camera trước Full HD 1080P; camera trong 720P hồng ngoại","camera-hanh-trinh-vietmap-speedmap-m1":"Camera trước Super HD 2K 30FPS; camera sau Full HD 1080P 30FPS","camera-hanh-trinh-vietmap-kc01":"Camera trước 2K 1440P / camera sau Full HD 1080P","camera-hanh-trinh-vietmap-c65":"Camera trước 4K / camera sau Full HD 1080P","camera-hanh-trinh-ddpai-x3-pro-gia-re":"Camera trước 1600P (2K+) / camera sau Full HD 1080P","camera-hanh-trinh-ddpai-mini-gia-re":"1920 × 1080P 30 FPS","camera-hanh-trinh-ddpai-mini-3-gia-re":"2560 × 1600P 30 FPS","camera-hanh-trinh-ddpai-mini-2p-gia-re":"2K (2560 × 1440) 25 FPS; hỗ trợ 1080P/720P","camera-hanh-trinh-ddpai-mini-one":"1920 × 1080P 30 FPS","camera-hanh-trinh-xiaomi-70mai":"Full HD 1080P, 30FPS","vietmap-g79-man-hinh-guong-vua-dan-duong-vua-ghi-hinh":"Camera trước Full HD 1080P; camera sau VGA 8 LED","camera-hanh-trinh-vietmap-x9s-nang-tam-chat-luong":"Full HD 1080P (1920×1080); hỗ trợ 720P","camera-hanh-trinh-vietmap-ir22":"Full HD 1080P (1920 × 1080); hỗ trợ 720P","camera-hanh-trinh-blackvue-dr650s-2ch":"Camera trước Full HD 1080P 30 FPS / camera sau HD 720P 30 FPS","vietmap-a50-camera-hanh-trinh":"Camera trước Full HD 1080P (camera sau hồng ngoại: chưa công bố)","camera-hanh-trinh-xe-hoiblackvue-dr450-1ch":"Full HD 1080P 30 FPS","camera-hanh-trinh-thinkware-dash-cam-x350":"Full HD 1080P (1920 × 1080) 30 FPS","camera-hanh-trinh-hp-f550g-gpscho-trai-nghiem-thu-vi":"QHD 2560×1440P 30FPS; hỗ trợ Full HD 1080P 60FPS","camera-hanh-trinh-thinkware-dash-cam-x550":"Camera trước Full HD 1080P / hỗ trợ camera sau Full HD 1080P","camera-hanh-trinh-thinkware-dash-cam-f770":"Full HD 1080P (1920×1080) trước + sau, 30FPS","camera-hanh-trinh-thinkware-dash-cam-f50":"Full HD 1080P"};
 // Cảnh báo giao thông/tốc độ — tính năng riêng, tách khỏi GPS. Chỉ đánh dấu true khi trang sản phẩm thật mô tả rõ tính năng cảnh báo (không suy từ tên hay từ việc có GPS).
 const WARNING_SLUGS = new Set(['camera-hanh-trinh4k-a800se-speedeye','camera-hanh-trinh-vietmap-l110','camera-hanh-trinh-vietmap-v740','camera-hanh-trinh-vietmap-r440','camera-hanh-trinh-vietmap-s720','camera-hanh-trinh-vietmap-s860','camera-hanh-trinh-htd-c23','camera-hanh-trinh-ellicam-a64gs','camera-hanh-trinh-ellicam-a64g','camera-hanh-trinh-vietmap-h68','vietmap-speedmap-m2','vietmap-h86','camera-hanh-trinh-vietmap-ts-2k-lite','camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max','camera-hanh-trinh-vietmap-d22','camera-hanh-trinh-vietmap-p2','camera-hanh-trinh-vietmap-g40','camera-hanh-trinh-vietmap-c61-pro','camera-hanh-trinh-vietmap-speedmap-m1','camera-hanh-trinh-vietmap-kc01','camera-hanh-trinh-vietmap-c65','vietmap-a50-camera-hanh-trinh','camera-hanh-trinh-thinkware-dash-cam-x350','camera-hanh-trinh-thinkware-dash-cam-x550','camera-hanh-trinh-thinkware-dash-cam-f770']);
+// Wi-Fi: đọc từ dòng "Wi-Fi/Ứng dụng" trong bảng thông số trang sản phẩm thật; "Không hỗ trợ"/"chưa công bố"/không có dòng → không tính.
+const WIFI_SLUGS = new Set(["camera-hanh-trinh-70-mai-a800s","camera-hanh-trinh-70mai-4k-a810-lite","camera-hanh-trinh-70mai-4k-a810s","camera-hanh-trinh-70mai-a200","camera-hanh-trinh-70mai-a210","camera-hanh-trinh-70mai-a800se","camera-hanh-trinh-70mai-dash-cam-a810-4k","camera-hanh-trinh-70mai-m300","camera-hanh-trinh-70mai-m310","camera-hanh-trinh-70mai-m310-plus-2k","camera-hanh-trinh-70mai-m310-plus-3k","camera-hanh-trinh-70mai-m800","camera-hanh-trinh-70mai-omni","camera-hanh-trinh-70mai-s500","camera-hanh-trinh-70mai-t400","camera-hanh-trinh-70mai-t800-4k","camera-hanh-trinh-blackvue-dr650s-2ch","camera-hanh-trinh-ddpai-mini-2p-gia-re","camera-hanh-trinh-ddpai-mini-3-gia-re","camera-hanh-trinh-ddpai-mini-one","camera-hanh-trinh-ddpai-x3-pro-gia-re","camera-hanh-trinh-ellicam-a620","camera-hanh-trinh-ellicam-a64g","camera-hanh-trinh-ellicam-a64gs","camera-hanh-trinh-ellicam-a650","camera-hanh-trinh-ellicam-a650s","camera-hanh-trinh-ellicam-a660","camera-hanh-trinh-han-quoc-blackvue-dr590x-2ch","camera-hanh-trinh-han-quoc-blackvue-dr750x-2ch-lt","camera-hanh-trinh-htd-c23","camera-hanh-trinh-nextbase-a161-wifi","camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus","camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus","camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-3ch-dms-plus","camera-hanh-trinh-o-to-cao-cap-blackvue-dr900x-2ch-dms-plus","camera-hanh-trinh-thinkware-dash-cam-f770","camera-hanh-trinh-thinkware-dash-cam-x350","camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max","camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2l","camera-hanh-trinh-vietmap-c61-pro","camera-hanh-trinh-vietmap-c65","camera-hanh-trinh-vietmap-c9","camera-hanh-trinh-vietmap-d22","camera-hanh-trinh-vietmap-da250","camera-hanh-trinh-vietmap-g40","camera-hanh-trinh-vietmap-h68","camera-hanh-trinh-vietmap-kc01","camera-hanh-trinh-vietmap-l110","camera-hanh-trinh-vietmap-p2","camera-hanh-trinh-vietmap-r440","camera-hanh-trinh-vietmap-s720","camera-hanh-trinh-vietmap-s860","camera-hanh-trinh-vietmap-speedmap-m1","camera-hanh-trinh-vietmap-ts-2k-lite","camera-hanh-trinh-vietmap-ts-5k","camera-hanh-trinh-vietmap-ts-c9p","camera-hanh-trinh-vietmap-v740","camera-hanh-trinh-vietmap-vm300","camera-hanh-trinh-vietmap-vm350","camera-hanh-trinh-vietmap-x9s-nang-tam-chat-luong","camera-hanh-trinh-xiaomi-70mai","camera-hanh-trinh-xiaomi-70mai-a500s","camera-hanh-trinh-yuemi-q5","camera-hanh-trinh4k-a800se-speedeye","vietmap-a50-camera-hanh-trinh","vietmap-c1","vietmap-h86","vietmap-h9s","vietmap-speedmap-m2","vietmap-ts-h2k"]);
+// ADAS: chỉ tính khi trang sản phẩm thật ghi rõ ADAS/LDWS/FCWS/cảnh báo lệch làn hoặc va chạm phía trước.
+const ADAS_SLUGS = new Set(["camera-hanh-trinh-70-mai-a800s","camera-hanh-trinh-70mai-4k-a810-lite","camera-hanh-trinh-70mai-4k-a810s","camera-hanh-trinh-70mai-a510","camera-hanh-trinh-70mai-a800se","camera-hanh-trinh-70mai-dash-cam-a810-4k","camera-hanh-trinh-70mai-m800","camera-hanh-trinh-70mai-omni","camera-hanh-trinh-70mai-t800-4k","camera-hanh-trinh-ellicam-a64g","camera-hanh-trinh-ellicam-a64gs","camera-hanh-trinh-ellicam-a650","camera-hanh-trinh-ellicam-a650s","camera-hanh-trinh-ellicam-a660","camera-hanh-trinh-hp-f550g-gpscho-trai-nghiem-thu-vi","camera-hanh-trinh-htd-c23","camera-hanh-trinh-thinkware-dash-cam-f770","camera-hanh-trinh-thinkware-dash-cam-x550","camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max","camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2l","camera-hanh-trinh-vietmap-d22","camera-hanh-trinh-vietmap-g40","camera-hanh-trinh-vietmap-ir22","camera-hanh-trinh-vietmap-p2","camera-hanh-trinh-vietmap-ts-5k","camera-hanh-trinh-vietmap-v5","camera-hanh-trinh-vietmap-v740","camera-hanh-trinh-x5-teyes","camera-hanh-trinh-xe-hoiblackvue-dr450-1ch","camera-hanh-trinh-xiaomi-70mai-a500s","camera-hanh-trinh-yuemi-q5","camera-hanh-trinh4k-a800se-speedeye","vietmap-g79-man-hinh-guong-vua-dan-duong-vua-ghi-hinh"]);
 function matchFeatures(p, feat) {
   if (feat === '4k') return /(4K|UHD|3840\s*[×x]\s*2160|2160P)/i.test(RESOLUTION_MAP[p.slug] || '');
   if (feat === 'parking') return PARKING_SLUGS.has(p.slug);
   if (feat === 'gps') return GPS_SLUGS.has(p.slug);
   if (feat === 'lte') return Boolean(LTE_MODE[p.slug]);
   if (feat === 'warning') return WARNING_SLUGS.has(p.slug);
+  if (feat === 'wifi') return WIFI_SLUGS.has(p.slug);
+  if (feat === 'adas') return ADAS_SLUGS.has(p.slug);
   return true;
 }
 
 function matchPrice(price, category) {
+  if (category === 'contact') return !price;
   if (!price) return false;
   if (category === 'low') return price < 2000000;
   if (category === 'mid') return price >= 2000000 && price < 5000000;
@@ -2824,6 +2835,7 @@ function filtered() {
     // Channel multi-filter
     let chanOk = state.channels.size === 0 || [...state.channels].some(ch => {
       if (ch === 2) return p.coverage === 'front-rear';
+      if (ch === 4) return p.coverage === 'front-cabin';
       if (ch === 3) return p.coverage === 'front-rear-cabin';
       return ch === 1 && p.coverage === 'front';
     });
@@ -2869,11 +2881,14 @@ const BRAND_LABELS = {
   'other': 'Hãng khác'
 };
 
+const CHANNEL_LABELS = { 1: '1 kênh', 2: '2 kênh trước + sau', 3: '3 kênh', 4: '2 kênh trước + cabin' };
+
 const PRICE_LABELS = {
   'low': '< 2 triệu',
   'mid': '2 – 5 triệu',
   'high': '5 – 10 triệu',
-  'premium': '> 10 triệu'
+  'premium': '> 10 triệu',
+  'contact': 'Liên hệ báo giá'
 };
 
 const FEATURE_LABELS = {
@@ -2881,6 +2896,8 @@ const FEATURE_LABELS = {
   'parking': 'Parking Mode',
   'gps': 'GPS',
   'warning': 'Cảnh báo giao thông/tốc độ',
+  'wifi': 'Wi-Fi',
+  'adas': 'ADAS',
   'lte': 'Giám sát 4G/Cloud'
 };
 
@@ -2893,7 +2910,7 @@ function renderActiveChips() {
     chips.push({ label: BRAND_LABELS[b] || b, remove: () => { state.brands.delete(b); syncCheckboxes(); render(); } });
   });
   state.channels.forEach(ch => {
-    chips.push({ label: ch + ' kênh', remove: () => { state.channels.delete(ch); syncCheckboxes(); render(); } });
+    chips.push({ label: CHANNEL_LABELS[ch] || ch + ' kênh', remove: () => { state.channels.delete(ch); syncCheckboxes(); render(); } });
   });
   state.prices.forEach(pr => {
     chips.push({ label: PRICE_LABELS[pr] || pr, remove: () => { state.prices.delete(pr); syncCheckboxes(); render(); } });
