@@ -3830,7 +3830,6 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
  'use strict';
  const $=(q,c=document)=>c.querySelector(q), $$=(q,c=document)=>Array.from(c.querySelectorAll(q));
  const products=JSON.parse($('#product-data').textContent), byId=new Map(products.map(p=>[p.id,p]));
- if(matchMedia('(max-width:680px)').matches)$('.filter-disclosure').open=false;
  const selected=new Set();let toastTimer;
  const emit=(action,item='')=>document.dispatchEvent(new CustomEvent('auto365:led',{detail:{action,item}}));
  const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n;};
