@@ -2571,7 +2571,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
       </div>
       <h1>Bóng LED ô tô: chọn đúng chân, đúng cấu hình xe</h1>
       <p class="hero-lead">
-        Bóng LED ô tô cần được chọn theo chân bóng, điện áp và cấu hình cụm đèn. Danh mục dưới đây giúp bạn đối chiếu các dòng sản phẩm, giá và bảo hành; trước khi đặt, cần xác nhận vị trí Cos/Pha hoặc đèn phụ, khoảng hở và phương án lắp trên xe. Nếu chưa biết chân bóng, hãy gửi thông tin xe để Auto365 hỗ trợ kiểm tra.
+        Chọn bóng LED ô tô bắt đầu từ vị trí đèn và chân bóng đúng trên xe, sau đó kiểm điện áp, loại chóa, khoảng hở nắp chụp và khả năng căn chỉnh vùng sáng. Bảng giá trên trang ghi theo từng mã và đơn vị; công lắp, VAT và phụ kiện cần xác nhận trong báo giá. Nếu chưa biết cấu hình đèn, hãy gửi thông tin xe để Auto365 kiểm tra trước khi đặt.
       </p>
       <div class="hero-actions">
         <a class="button button-primary" href="#san-pham">
@@ -2591,7 +2591,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
         <div class="finder-controls">
           <div class="step-title">
             <b>Tìm bóng LED ô tô theo nhu cầu</b>
-            <small>Chọn tiêu chí, hệ thống gợi ý mẫu phù hợp nhất</small>
+            <small>Xem sản phẩm để đối chiếu theo thông tin bạn cung cấp</small>
           </div>
           <div class="fields-grid">
             <label class="field">
@@ -2600,14 +2600,14 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
                 <option value="">Chọn nhu cầu…</option>
                 <option value="city">Đi phố, thay bóng Halogen</option>
                 <option value="touring">Đi tỉnh, đường thiếu sáng</option>
-                <option value="rain">Mưa, sương mù (4300K)</option>
+                <option value="rain">Hay đi mưa, sương mù (ưu tiên 4300K)</option>
                 <option value="reflector">Chóa phản xạ cần gom sáng</option>
               </select>
             </label>
             <label class="field">
               <span>2. Kích thước &amp; Chân bóng</span>
               <select id="qs-socket" class="finder-select" aria-label="2. Chuẩn chân bóng">
-                <option value="">Chưa rõ / để hệ thống chọn</option>
+                <option value="">Chưa rõ — cần Auto365 kiểm tra</option>
                 <option value="H4">Chân H4 — cần xác nhận đúng vị trí và cụm đèn</option>
                 <option value="H7">Chân H7 — theo mã bóng và tài liệu đúng cấu hình</option>
                 <option value="H11">Chân H11 — theo mã bóng và tài liệu đúng cấu hình</option>
@@ -2629,13 +2629,14 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
             <label class="field">
               <span>4. Hệ điện xe</span>
               <select id="qs-voltage" class="finder-select" aria-label="4. Hệ điện xe">
+                <option value="" selected>Chưa rõ — cần Auto365 kiểm tra</option>
                 <option value="12V">Xe con / SUV / Bán tải — 12V</option>
                 <option value="24V">Xe tải / xe thương mại — 24V</option>
               </select>
             </label>
           </div>
           <button type="button" class="hero-quick-submit" id="qs-submit">
-            Tìm sản phẩm phù hợp
+            Xem sản phẩm để đối chiếu
             <svg class="icon" aria-hidden="true" style="width:16px;height:16px;"><use href="#icon-arrow-right"></use></svg>
           </button>
           <a href="#tu-van-mien-phi" class="hero-quick-lead">
@@ -3021,14 +3022,14 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
 @media (max-width:680px){#case-thuc-te .v2-cases-panel{padding:18px 16px}#case-thuc-te .v2-cases-head{flex-direction:column;gap:12px}#case-thuc-te h2{font-size:23px}#case-thuc-te .v2-case-foot{padding:9px 12px;font-size:11.5px}#case-thuc-te .v2-case-date{white-space:nowrap}#case-thuc-te .v2-case-date svg{display:none}#case-thuc-te .v2-case-body{padding:12px}#case-thuc-te .v2-real-cases-grid{grid-template-rows:repeat(2,auto);grid-auto-columns:68%;gap:10px;margin:0 -16px;padding-left:16px;padding-right:16px}}
 </style>
 <div class="wrap"><div class="v2-cases-panel">
-<div class="v2-cases-head"><div><h2 id="case-thuc-te-title">Xe thực tế <em>nổi bật</em></h2><p>Hồ sơ xe thực tế đã lắp bóng LED tại Auto365.</p></div><a class="v2-cases-all" href="https://auto365.vn/tin-tuc/xe-thuc-te-tai-auto365" target="_blank" rel="noopener">Xem tất cả case →</a></div>
+<div class="v2-cases-head"><div><h2 id="case-thuc-te-title">Xe thực tế <em>nổi bật</em></h2><p>Hồ sơ từng xe cụ thể đã lắp tại Auto365. Mỗi case chỉ đúng cho cấu hình đèn của chiếc xe đó, không áp chung cho cả dòng xe.</p></div><a class="v2-cases-all" href="https://auto365.vn/tin-tuc/xe-thuc-te-tai-auto365" target="_blank" rel="noopener">Xem tất cả case →</a></div>
 <div class="v2-real-cases-grid">
 <article class="v2-real-case"><a href="https://auto365.vn/nang-cap-bong-led-x-light-s6-pro-v2-cho-vinfast-vf5" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/news/auto365vn-nang-cap-bong-led-x-light-s6-pro-v2-cho-vinfast-vf5-img_6a58aaea3579c7.17499522.jpg.webp" alt="VinFast VF5 — VF5 Plus lắp bóng LED X-Light S6 Pro V2" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast VF5</h3></div><p>VF5 Plus lắp bóng LED X-Light S6 Pro V2</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-07-16">16/07/2026</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
 <article class="v2-real-case"><a href="https://auto365.vn/bong-led-vinfast-vf3-naoevo-s9-pro-chan-h7" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/tintuc/2025/t3/s9-pro/bong-led-vinfast-vf3-naoevo-s9.jpg.webp" alt="VinFast VF3 — VF3 lắp bóng LED NaoEvo S9 Pro chân H7" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast VF3</h3></div><p>VF3 lắp bóng LED NaoEvo S9 Pro chân H7</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2025-03-12">12/03/2025</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
 <article class="v2-real-case"><a href="https://auto365.vn/bong-led-vinfast-vf3-naoevo-s8-pro-chan-h7" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/tintuc/2025/t3/s8-pro/vinfast-vf3-naoevo-s8-pro.jpg" alt="VinFast VF3 — VF3 lắp bóng LED NaoEvo S8 Pro chân H7" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast VF3</h3></div><p>VF3 lắp bóng LED NaoEvo S8 Pro chân H7</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2025-03-12">12/03/2025</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
 <article class="v2-real-case"><a href="https://auto365.vn/bong-led-vinfast-vf3-h7-naoevo-s6" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/tintuc/2025/t3/s7-pro/bong-led-vinfast-vf3-s6-pro-h7.jpg" alt="VinFast VF3 — VF3 lắp bóng LED NaoEvo S6 Pro chân H7" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast VF3</h3></div><p>VF3 lắp bóng LED NaoEvo S6 Pro chân H7</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2025-03-11">11/03/2025</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
 <article class="v2-real-case"><a href="https://auto365.vn/bong-led-vinfast-vf3-h7-naoevo-s3" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/tintuc/2025/t3/vinfast-vf-s3-pro/bong-led-vinfast-vf3-s3-pro-chan-h7.jpg" alt="VinFast VF3 — VF3 lắp bóng LED NaoEvo S3 Pro chân H7" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast VF3</h3></div><p>VF3 lắp bóng LED NaoEvo S3 Pro chân H7</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2025-03-11">11/03/2025</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
-<article class="v2-real-case"><a href="https://auto365.vn/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro.jpg.webp" alt="VinFast Fadil — Fadil lắp bi gầm X-Light F10 Pro và bóng LED NaoEvo S8 Pro" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast Fadil</h3></div><p>Fadil lắp bi gầm X-Light F10 Pro và bóng LED NaoEvo S8 Pro</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2024-08-10">10/08/2024</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
+<article class="v2-real-case"><a href="https://auto365.vn/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro" target="_blank" rel="noopener"><img class="v2-case-img" src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro.jpg.webp" alt="VinFast Fadil — Fadil lắp bi gầm X-Light F10 Pro và bóng LED NaoEvo S8 Pro" loading="lazy" width="1104" height="600" decoding="async"><div class="v2-case-body"><div class="v2-case-head"><img class="v2-case-logo" src="https://auto365.vn/assets/frontend/images/car-brands/vinfast.png" alt="VinFast" width="250" height="251" loading="lazy" decoding="async"><h3>VinFast Fadil</h3></div><p>Lắp phối hợp 2 hạng mục: bi gầm X-Light F10 Pro và bóng LED NaoEvo S8 Pro</p></div><div class="v2-case-foot"><span class="v2-case-date"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2024-08-10">10/08/2024</time></span><span class="v2-case-go">Xem chi tiết lắp đặt →</span></div></a></article>
 </div>
 </div></div>
 </section><section class="section" id="vi-sao-auto365" aria-labelledby="vi-sao-auto365-title">
@@ -3196,9 +3197,9 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
         </p>
       </article>
       <article class="soft-card">
-        <h3 style="font-size: 16px; margin: 0 0 8px; font-weight: 600; color: #20242b;">Ưu điểm vượt trội</h3>
+        <h3 style="font-size: 16px; margin: 0 0 8px; font-weight: 600; color: #20242b;">So với Halogen cần đối chiếu gì?</h3>
         <p style="font-size: 14.5px; line-height: 1.6; color: #475261; margin: 0;">
-          So với Halogen zin, bóng LED thường tiết kiệm điện năng hơn và tỏa nhiệt thấp hơn ở mặt kính đèn — mức chênh lệch cụ thể phụ thuộc từng mã sản phẩm, nên đối chiếu thông số công bố của đúng model trước khi so sánh. Ánh sáng 4300K–6000K giúp thay đổi tầm nhìn ban đêm, nhưng hiệu quả thực tế còn phụ thuộc cụm đèn và điều kiện đường. Nhiệt tỏa thấp hơn cũng giảm nguy cơ chóa bị rạn/ố theo thời gian, không phải cam kết loại trừ hoàn toàn.
+          Mức tiêu thụ điện, nhiệt tỏa ra và độ sáng trên mặt đường khác nhau theo từng mã bóng và từng cụm đèn, nên không so sánh chung "LED với Halogen" bằng một con số. Khi chọn, hãy đối chiếu công suất và điện áp công bố của đúng mã, chế độ Cos/Pha, rồi kiểm vùng sáng và đường cắt sau khi lắp trên chính chiếc xe.
         </p>
       </article>
   </div>
@@ -3612,14 +3613,14 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
 <div class="cnp-head"><h2 id="cam-nang-title">Cẩm nang chọn bóng LED ô tô</h2><a class="cnp-all" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to" target="_blank" rel="noopener">Xem tất cả →</a></div>
 <button class="cnp-nav cnp-prev" type="button" aria-label="Bài trước">‹</button><button class="cnp-nav cnp-next" type="button" aria-label="Bài tiếp">›</button>
 <div class="cnp-grid">
-<article class="cnp-card"><a href="https://auto365.vn/top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/tin%20t%E1%BB%A9c/2024/T8/top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3/top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3-10.jpg" alt="Top 4 bóng LED NaoEvo có thể nâng cấp cho VinFast VF3" width="800" height="450" loading="lazy" decoding="async"><h3>Top 4 bóng LED NaoEvo có thể nâng cấp cho VinFast VF3</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-08-02T13:49">02/08/2024 13:49</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/toyota-camry-2018-20e-lap-x-light-v20-new-2025" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-toyota-camry-2018-20e-lap-x-light-v20-new-2025-1-img_6ab72ceb9af1b8.21552792.webp" alt="Toyota Camry 2018 2.0E lắp bi LED X-Light V20 New 2025 cho đèn chính" width="800" height="450" loading="lazy" decoding="async"><h3>Toyota Camry 2018 2.0E lắp bi LED X-Light V20 New 2025 cho đèn chính</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-26T09:21">26/09/2026 09:21</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max-14-img_6ab62e93291146.39209539.webp" alt="Kia Carnival 2.2D Luxury 2025 lắp bi gầm AES SV 3.0 Max" width="800" height="450" loading="lazy" decoding="async"><h3>Kia Carnival 2.2D Luxury 2025 lắp bi gầm AES SV 3.0 Max</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-25T15:19">25/09/2026 15:19</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/toyota-corolla-altis-18g-2023-lap-bi-led-x-light-v20-square" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-toyota-corolla-altis-18g-2023-lap-bi-led-x-light-v20-square-8-img_6ab616b5951e71.63638064.webp" alt="Toyota Corolla Altis 1.8G 2023 lắp bi LED X-Light V20 Square" width="800" height="450" loading="lazy" decoding="async"><h3>Toyota Corolla Altis 1.8G 2023 lắp bi LED X-Light V20 Square</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-25T13:37">25/09/2026 13:37</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/toyota-fortuner-2020-lap-den-chinh-x-light-x5-ultra" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-toyota-fortuner-2020-lap-den-chinh-x-light-x5-ultra-img_6ab61500903161.38387332.webp" alt="Toyota Fortuner 2020 2.7V 4x4 AT lắp đèn chính X-Light X5 Ultra" width="800" height="450" loading="lazy" decoding="async"><h3>Toyota Fortuner 2020 2.7V 4x4 AT lắp đèn chính X-Light X5 Ultra</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-25T13:30">25/09/2026 13:30</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/vinfast-vf-8-2024-plus-lap-combo-v20l-quantum-va-sv-turbo-s" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-vinfast-vf-8-2024-plus-lap-combo-v20l-quantum-va-sv-turbo-s-img_6ab49c5dde4154.16780987.webp" alt="VinFast VF 8 2024 Plus lắp combo V20L Quantum và AES SV Turbo S" width="800" height="450" loading="lazy" decoding="async"><h3>VinFast VF 8 2024 Plus lắp combo V20L Quantum và AES SV Turbo S</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-24T10:43">24/09/2026 10:43</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/honda-city-rs-2021-lap-bi-gam-gtr-g1-turbo" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-honda-city-rs-2021-lap-bi-gam-gtr-g1-turbo-8-img_6ab483bcbfe687.89794796.webp" alt="Honda City RS 2021 lắp bi gầm GTR G1 Turbo" width="800" height="450" loading="lazy" decoding="async"><h3>Honda City RS 2021 lắp bi gầm GTR G1 Turbo</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-24T08:58">24/09/2026 08:58</time></span></a></article>
-<article class="cnp-card"><a href="https://auto365.vn/kia-optima-2018-2-0-at-lap-bi-led-x-light-v30-ultra-2026" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/auto365vn-kia-optima-2018-20-at-lap-den-chinh-x-light-v30-ultra-2026-img_6ab0d5fa151e28.40588913.webp" alt="Kia Optima 2018 2.0 AT lắp bi LED X-Light V30 Ultra 2026" width="800" height="450" loading="lazy" decoding="async"><h3>Kia Optima 2018 2.0 AT lắp bi LED X-Light V30 Ultra 2026</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2026-09-21T14:00">21/09/2026 14:00</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/bang-ma-tra-chan-bong-den-cho-tat-ca-cac-dong-xe-2023" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/service/BANG-MA-TRA-CHAN-BONG-DEN/BANG-MA-TRA-CHAN-BONG-DEN-CHO-TAT-CA-CAC-DONG-XE-2023.jpg.webp" alt="Bảng mã tra chân bóng đèn cho các dòng xe" width="800" height="450" loading="lazy" decoding="async"><h3>Bảng mã tra chân bóng đèn cho các dòng xe</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2023-07-28T10:55">28/07/2023 10:55</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/su-khac-biet-cua-chan-den-h4-va-h7" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/t7/su-khac-biet-cua-chan-h4-va-h7/su-khac-biet-cua-chan-den-h4-va-h7-5.jpg.webp" alt="Sự khác biệt của chân bóng đèn H4 và H7" width="800" height="450" loading="lazy" decoding="async"><h3>Sự khác biệt của chân bóng đèn H4 và H7</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-07-18T17:10">18/07/2024 17:10</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/chan-den-h4" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/t5/chan-den-h4/chan-den-h4-5.jpg.webp" alt="Chân đèn H4: các dòng xe nào sử dụng?" width="800" height="450" loading="lazy" decoding="async"><h3>Chân đèn H4: các dòng xe nào sử dụng?</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-05-24T10:32">24/05/2024 10:32</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/chan-den-h7" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/tin-tuc/chan-den-h7/chan-den-h7-4.jpg.webp" alt="Chân đèn H7: các dòng xe nào sử dụng?" width="800" height="450" loading="lazy" decoding="async"><h3>Chân đèn H7: các dòng xe nào sử dụng?</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-03-28T13:07">28/03/2024 13:07</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/chan-den-9005" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T3/chan-den-9005/chan-den-9005-2.jpg.webp" alt="Chân đèn 9005: các dòng xe nào sử dụng?" width="800" height="450" loading="lazy" decoding="async"><h3>Chân đèn 9005: các dòng xe nào sử dụng?</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-04-01T11:21">01/04/2024 11:21</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/chan-den-9006" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T6/chan-den-9006/chan-den-9006-1.jpg.webp" alt="Chân đèn 9006: các dòng xe nào sử dụng?" width="800" height="450" loading="lazy" decoding="async"><h3>Chân đèn 9006: các dòng xe nào sử dụng?</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-06-11T09:53">11/06/2024 09:53</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/c2-thanh-phan-cua-den-pha-cos" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/sach-do-den/thanh-phan-cua-den-pha-cos/thanh-phan-cua-den-pha-cos-1.jpg" alt="Thành phần của đèn pha cos: chóa, thấu kính và bóng" width="800" height="450" loading="lazy" decoding="async"><h3>Thành phần của đèn pha cos: chóa, thấu kính và bóng</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2025-06-28T11:10">28/06/2025 11:10</time></span></a></article>
+<article class="cnp-card"><a href="https://auto365.vn/top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3/top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3-10.jpg.webp" alt="Top 4 bóng LED NaoEvo có thể nâng cấp cho VinFast VF3" width="800" height="450" loading="lazy" decoding="async"><h3>Top 4 bóng LED NaoEvo có thể nâng cấp cho VinFast VF3</h3><span class="cnp-date"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><time datetime="2024-08-02T13:49">02/08/2024 13:49</time></span></a></article>
 </div>
 <div class="cnp-guides"><div class="grid grid-3" style="margin-bottom:16px;">
     <article class="soft-card" style="display:flex; flex-direction:column; justify-content:space-between; border-top:3px solid #e31b2d;">
@@ -3643,7 +3644,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
           <span style="font-size:18px;">💡</span>
         </div>
         <h3 style="font-size:15px; margin:0 0 8px; font-weight:600; color:#333333;">4300K hay 6000K: Chọn loại nào?</h3>
-        <p style="font-size:14px; line-height:1.55; color:#475569; margin:0;">4300K sắc vàng ấm hỗ trợ quan sát khi trời mưa hoặc sương mù; 6000K ánh sáng trắng hiện đại cho tầm quan sát rõ nét, phản xạ biển báo tốt trên đường khô ráo.</p>
+        <p style="font-size:14px; line-height:1.55; color:#475569; margin:0;">4300K có sắc ấm hơn, 6000K trắng hơn. Nhiệt màu chỉ mô tả màu ánh sáng; một mình nó không đủ để kết luận bóng nào quan sát tốt hơn khi mưa hoặc sương mù — cần xem cùng cụm đèn và vùng sáng thực tế.</p>
       </div>
       <div style="margin-top:14px; padding-top:10px; border-top:1px dashed #e2e8f0;">
         <a href="#nhiet-mau" class="text-link" style="font-weight:700; color:#d97706; font-size:13.5px; display:inline-flex; align-items:center; gap:4px;">Xem chi tiết cách chọn ↓</a>
@@ -3682,7 +3683,7 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
     </div>
     <div style="margin-top:14px; padding-top:12px; border-top:1px solid #f1f5f9; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px;">
       <p style="margin:0; font-size:13px; color:#64748b;">Gửi thông tin xe và điều kiện thường di chuyển để được tư vấn cấu hình cần kiểm tra.</p>
-      <a href="#tu-van-mien-phi" id="btn-direct-light-test" class="btn-direct-light-test" style="font-size:13px; font-weight:700; color:#e31b2d; cursor:pointer;">Đặt lịch thử ánh sáng trực tiếp →</a>
+      <a href="#tu-van-mien-phi" id="btn-direct-light-test" class="btn-direct-light-test" style="font-size:13px; font-weight:700; color:#e31b2d; cursor:pointer;">Gửi thông tin xe để kiểm tra →</a>
     </div>
   </article></div>
 </div></div>
@@ -4282,11 +4283,21 @@ $('#mid-sales-form').addEventListener('submit', event => {
     if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Gửi lại yêu cầu tư vấn'; }
     if (statusEl) {
       statusEl.style.color = '#e31b2d';
-      if (err.message === 'LEAD_ENDPOINT_NOT_CONFIGURED') {
-        statusEl.innerHTML = 'Bản xem trước chưa tiếp nhận yêu cầu qua biểu mẫu. Bạn có thể gọi hoặc gửi thông tin qua Zalo để được tư vấn.';
-      } else {
-        statusEl.textContent = 'Chưa xác nhận được việc tiếp nhận. Thông tin của bạn vẫn được giữ trên trang; vui lòng thử lại hoặc liên hệ Auto365 qua hotline/Zalo.';
-      }
+      statusEl.textContent = err.message === 'LEAD_ENDPOINT_NOT_CONFIGURED'
+        ? 'Biểu mẫu chưa gửi được yêu cầu. Thông tin bạn nhập vẫn được giữ; bạn có thể gọi hoặc sao chép nội dung rồi gửi qua Zalo.'
+        : 'Chưa xác nhận được việc tiếp nhận. Thông tin bạn nhập vẫn được giữ; vui lòng thử lại, gọi hoặc sao chép nội dung rồi gửi qua Zalo.';
+      const leadText = ['Xin chào Auto365, tôi cần tư vấn bóng LED ô tô:', name ? '• Tên: ' + name : '', '• SĐT: ' + phone, '• Xe: ' + carText, province ? '• Khu vực: ' + province : '', need ? '• Nhu cầu: ' + need : ''].filter(Boolean).join('\n');
+      const acts = document.createElement('div');
+      acts.className = 'lead-fallback';
+      acts.innerHTML = '<a class="lf-btn lf-call" href="tel:0365365911">Gọi 0365 365 911</a><button type="button" class="lf-btn lf-copy">Sao chép nội dung</button><a class="lf-btn lf-zalo" href="https://zalo.me/0365365911" target="_blank" rel="noopener">Mở Zalo</a><textarea class="lf-text" readonly rows="4" aria-label="Nội dung yêu cầu để gửi qua Zalo"></textarea>';
+      acts.querySelector('.lf-text').value = leadText;
+      acts.querySelector('.lf-copy').addEventListener('click', function() {
+        const btn = this, ta = acts.querySelector('.lf-text');
+        const done = ok => { btn.textContent = ok ? 'Đã sao chép — dán vào Zalo để gửi' : 'Chưa sao chép được — hãy chọn và sao chép ô bên dưới'; if (ok) emit('copy_request'); else { ta.focus(); ta.select(); } };
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(leadText).then(() => done(true), () => done(false));
+        else { ta.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) {} done(ok); }
+      });
+      statusEl.appendChild(acts);
     }
   });
 });
@@ -4295,7 +4306,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
  $$('#mobile-nav a').forEach(link=>link.addEventListener('click',()=>{$('#mobile-nav').hidden=true;$('#menu-toggle').setAttribute('aria-expanded','false');}));
  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!$('#mobile-nav').hidden){$('#mobile-nav').hidden=true;$('#menu-toggle').setAttribute('aria-expanded','false');$('#menu-toggle').focus();}});
  $$('a[href^="tel:"]').forEach(link=>link.addEventListener('click',()=>emit('phone_click')));
- $$('a[href^="https://zalo.me/"]').forEach(link=>link.addEventListener('click',()=>emit('zalo_click')));
+ $$('a[href^="https://zalo.me/"]').forEach(link=>link.addEventListener('click',()=>emit('zalo_open')));
  updateShop();updateCompare();
 })();
 </script>
@@ -4469,9 +4480,9 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
       isUpgrade: false,
       diffBudget: 0,
       isDirectBooking: true,
-      customTitle: 'Đặt lịch thử ánh sáng trực tiếp tại xưởng Auto365',
-      customBadge: 'Miễn phí trải nghiệm',
-      customNeed: 'Đặt lịch thử ánh sáng 4300K / 6000K trực tiếp trên xe'
+      customTitle: 'Gửi thông tin xe để Auto365 kiểm tra',
+      customBadge: 'Hỗ trợ kỹ thuật',
+      customNeed: 'Nhờ kiểm tra cụm đèn và tư vấn nhiệt màu 4300K / 6000K theo xe'
     });
   };
 
@@ -4602,130 +4613,120 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
     return (n || 0).toLocaleString('vi-VN') + 'đ';
   }
 
+  var QS_MSG = {
+    missing: 'Chưa đủ thông tin chân bóng và hệ điện để gợi ý sản phẩm. Gửi ảnh cụm đèn hoặc thông tin xe để kỹ thuật viên kiểm tra.',
+    t10: 'T10 là bóng cho đèn phụ. Auto365 cần xác nhận vị trí và điện áp của xe trước khi gợi ý đúng mã.',
+    none: 'Chưa có sản phẩm đã xác minh khớp thông tin này. Không chọn chân hoặc điện áp khác thay thế.',
+    ok: 'Sản phẩm để đối chiếu; kỹ thuật viên cần kiểm vị trí, chóa, nắp chụp và hệ điều khiển trước khi chốt lắp.'
+  };
+  var QS_BUDGET = {
+    under20: { min: 0, max: 1999999, label: 'Dưới 2 triệu' },
+    '20to25': { min: 2000000, max: 2500000, label: '2 – 2,5 triệu' },
+    over25: { min: 2500001, max: Infinity, label: 'Trên 2,5 triệu' }
+  };
+
+  function qsStop(msg) {
+    var resultBox = document.getElementById('qs-result');
+    resultBox.innerHTML = '<div style="grid-column:1/-1;padding:24px;text-align:center;background:#fff;border:1px solid #dce4ea;border-radius:8px;"><p style="margin:0 0 16px;color:#333;font-weight:500;font-size:15px;line-height:1.55;">' + msg + '</p><button type="button" onclick="showConsultStepGlobal({id:\'\', name:\'Gửi thông tin nhờ kiểm tra xe\', priceText:\'Chờ báo giá\', img:\'https://auto365.vn/uploads/images/product_12052026/xlight-t10-1.jpg.webp\'}, {isPick:false, customBadge:\'Hỗ trợ kỹ thuật\', customTitle:\'Gửi thông tin xe cần kiểm tra\', isDirectBooking:true})" style="background:#e31b2d;color:#fff;border:0;padding:10px 20px;border-radius:8px;font-weight:600;cursor:pointer;">Gửi thông tin xe để kiểm tra</button></div>';
+    openModal();
+  }
+
+  function qsNote(text) {
+    var n = el('div', { style: 'grid-column:1/-1;margin:0 0 12px;font-size:14px;color:#333;line-height:1.55;' });
+    n.textContent = text;
+    return n;
+  }
+
+  function qsCard(item, isFirst, outNote) {
+    var card = el('div', { class: 'qs-result' + (isFirst ? ' is-primary' : (outNote ? ' is-upgrade' : '')) });
+    var badge = el('span', { class: 'qs-badge ' + (outNote ? 'qs-badge--upgrade' : (isFirst ? 'qs-badge--pick' : 'qs-badge--alt')) });
+    badge.textContent = outNote ? 'Ngoài khoảng giá' : 'Để đối chiếu';
+    var img = el('img', { src: (item.image || item.img), alt: item.name, loading: 'lazy' });
+    var body = el('div', { class: 'qs-result-body' });
+    var name = el('div', { class: 'qs-result-name' });
+    name.textContent = item.name;
+    var price = el('div', { class: 'qs-result-price' });
+    price.textContent = item.priceText || formatVND(item.price);
+    var meta = el('p', { class: 'qs-result-vat' });
+    meta.textContent = 'Chân ' + (item.socketText || (item.sockets || []).join(', ')) + ' · ' + (item.supportedVehicleVoltages || []).join('/') + 'V · ' + (item.kelvin || '') + ' · Bảo hành ' + (item.warranty || 'theo chính sách mã');
+    var cost = el('p', { class: 'qs-result-vat' });
+    cost.textContent = (item.vat || 'VAT cần xác nhận trong báo giá') + '; ' + (item.installation || 'công lắp và phụ kiện xác nhận khi kiểm xe') + '.';
+    var reason = el('p', { class: 'qs-result-reason' });
+    reason.textContent = outNote || 'Để đối chiếu, cần kiểm xe trước khi xác nhận lắp.';
+    var actions = el('div', { class: 'qs-result-actions' });
+    var btnDetail = el('a', { class: 'qs-btn-outline', href: item.url, target: '_blank', rel: 'noreferrer' });
+    btnDetail.textContent = 'Xem chi tiết sản phẩm';
+    var btnConsult = el('button', { type: 'button', class: 'qs-btn-primary' });
+    btnConsult.textContent = 'Gửi thông tin xe để kiểm tra';
+    btnConsult.addEventListener('click', function() { showConsultStep(item, { isPick: isFirst, isUpgrade: !!outNote, diffBudget: 0, diffBase: 0 }); });
+    actions.appendChild(btnDetail);
+    actions.appendChild(btnConsult);
+    [badge, name, price, meta, cost, reason, actions].forEach(function(x) { body.appendChild(x); });
+    card.appendChild(img);
+    card.appendChild(body);
+    return card;
+  }
+
   function runSearch() {
     var need = document.getElementById('qs-need') ? document.getElementById('qs-need').value : '';
-    var socketStr = document.getElementById('qs-socket') ? document.getElementById('qs-socket').value : '';
-    var socket = socketStr.trim().toUpperCase();
+    var socket = (document.getElementById('qs-socket') ? document.getElementById('qs-socket').value : '').trim().toUpperCase();
     var budget = document.getElementById('qs-budget') ? document.getElementById('qs-budget').value : '';
-    var voltageStr = document.getElementById('qs-voltage') ? document.getElementById('qs-voltage').value : '';
-    var voltage = parseInt(voltageStr);
-
+    var voltage = parseInt(document.getElementById('qs-voltage') ? document.getElementById('qs-voltage').value : '', 10);
     var resultBox = document.getElementById('qs-result');
     if (!resultBox) return;
 
-    if (!socket || ![12, 24].includes(voltage)) {
-      resultBox.innerHTML = '<div style="padding: 24px; text-align: center; background: #fff; border: 1px solid #dce4ea; border-radius: 8px;"><p style="margin:0; color:#ef2326; font-weight:600; font-size:16px;">Cần xác nhận chân bóng và hệ điện của xe.</p><p style="margin:8px 0 16px; font-size:14px; color:#657487; line-height:1.5;">Vui lòng điều chỉnh tiêu chí hoặc gửi thông tin để Auto365 kiểm tra.</p><button type="button" onclick="showConsultStepGlobal({id:\'\', name:\'Gửi thông tin nhờ kiểm tra xe\', priceText:\'Chờ báo giá\', img:\'https://auto365.vn/uploads/images/product_12052026/xlight-t10-1.jpg.webp\'}, {isPick:false, customBadge:\'Hỗ trợ kỹ thuật\', customTitle:\'Gửi thông tin xe cần kiểm tra\', isDirectBooking:true})" style="background:#e31b2d; color:#fff; border:0; padding:10px 20px; border-radius:8px; font-weight:600; cursor:pointer;">Điền thông tin xe</button></div>';
-      openModal();
+    // Hard conditions: socket and vehicle voltage must both be chosen by the customer.
+    if (!socket || [12, 24].indexOf(voltage) === -1) { qsStop(QS_MSG.missing); return; }
+
+    var sameSocket = LED_CATALOG.filter(function(item) {
+      return Array.isArray(item.sockets) && item.sockets.some(function(v) { return String(v).toUpperCase() === socket; });
+    });
+    var eligible = sameSocket.filter(function(item) {
+      return item.technicalStatus === 'verified' && item.sellStatus === 'active' &&
+        Array.isArray(item.supportedVehicleVoltages) && item.supportedVehicleVoltages.indexOf(voltage) !== -1;
+    });
+    if (!eligible.length) {
+      var t10NoVoltage = socket === 'T10' && sameSocket.some(function(i) { return !(i.supportedVehicleVoltages || []).length; });
+      qsStop(t10NoVoltage ? QS_MSG.t10 : QS_MSG.none);
       return;
     }
 
-    var eligible = LED_CATALOG.filter(function(item) {
-      if (item.technicalStatus !== 'verified' || item.sellStatus !== 'active') return false;
-      var okSocket = Array.isArray(item.sockets) && item.sockets.some(function(v) { return String(v).toUpperCase() === socket; });
-      var okVoltage = Array.isArray(item.supportedVehicleVoltages) && item.supportedVehicleVoltages.indexOf(voltage) !== -1;
-      return okSocket && okVoltage;
+    // Need: only 4300K is a hard preference, and only among already-eligible SKUs.
+    var wants4300 = need === 'rain';
+    var has4300 = eligible.some(function(i) { return i.kelvin === '4300K'; });
+    eligible.sort(function(a, b) {
+      if (wants4300) {
+        var d = (a.kelvin === '4300K' ? 0 : 1) - (b.kelvin === '4300K' ? 0 : 1);
+        if (d) return d;
+      }
+      return a.price - b.price;
     });
 
-    if (eligible.length === 0) {
-      resultBox.innerHTML = '<div style="padding: 24px; text-align: center; background: #fff; border: 1px solid #dce4ea; border-radius: 8px;"><p style="margin:0; color:#ef2326; font-weight:600; font-size:16px;">Chưa có cấu hình đã xác minh phù hợp với thông tin này.</p><p style="margin:8px 0 16px; font-size:14px; color:#657487; line-height:1.5;">Gửi thông tin xe để Auto365 kiểm tra.</p><button type="button" onclick="showConsultStepGlobal({id:\'\', name:\'Gửi thông tin nhờ kiểm tra xe\', priceText:\'Chờ báo giá\', img:\'https://auto365.vn/uploads/images/product_12052026/xlight-t10-1.jpg.webp\'}, {isPick:false, customBadge:\'Hỗ trợ kỹ thuật\', customTitle:\'Gửi thông tin xe cần kiểm tra\', isDirectBooking:true})" style="background:#e31b2d; color:#fff; border:0; padding:10px 20px; border-radius:8px; font-weight:600; cursor:pointer;">Điền thông tin xe</button></div>';
-      openModal();
-      return;
+    var range = QS_BUDGET[budget];
+    var inRange = range ? eligible.filter(function(i) { return i.price >= range.min && i.price <= range.max; }) : eligible;
+    var outRange = range ? eligible.filter(function(i) { return inRange.indexOf(i) === -1; }) : [];
+
+    resultBox.innerHTML = '';
+    resultBox.appendChild(qsNote(QS_MSG.ok));
+    if (wants4300 && !has4300) {
+      resultBox.appendChild(qsNote('Hiện danh mục chưa có bóng 4300K ' + socket + ' đã xác minh và đang bán cho điều kiện này. Các mẫu dưới đây có nhiệt màu khác và chỉ để tham khảo; cần kiểm cụm đèn trên xe.'));
     }
+    if (range && !inRange.length) {
+      resultBox.appendChild(qsNote('Chưa có mẫu đúng chân và hệ điện trong khoảng ' + range.label + '.'));
+    }
+    inRange.slice(0, 3).forEach(function(item, idx) { resultBox.appendChild(qsCard(item, idx === 0, '')); });
 
-    var budgetMax = Infinity;
-    var hasBudgetFilter = false;
-    if (budget === 'under20') { budgetMax = 2000000; hasBudgetFilter = true; }
-    else if (budget === '20to25') { budgetMax = 2500000; hasBudgetFilter = true; }
-
-    var results = [];
-    eligible.forEach(function(item) {
-      var diffB = (hasBudgetFilter && item.price > budgetMax) ? item.price - budgetMax : 0;
-      results.push({ item: item, isUpgrade: diffB > 0, diffBudget: diffB });
-    });
-
-    var needKelvin = need === 'rain' ? '4300K' : null;
-    results.sort(function(a, b) {
-      if (a.isUpgrade !== b.isUpgrade) return a.isUpgrade ? 1 : -1;
-      if (needKelvin) {
-        var aMatch = a.item.kelvin === needKelvin ? 0 : 1;
-        var bMatch = b.item.kelvin === needKelvin ? 0 : 1;
-        if (aMatch !== bMatch) return aMatch - bMatch;
-      }
-      return a.item.price - b.item.price;
-    });
-
-    var finalThree = results.slice(0, 3);
-    resultBox.innerHTML = '<div style="grid-column:1/-1; margin-bottom: 12px; font-size: 14px; color: #0f172a; font-weight: 500;">Sản phẩm để đối chiếu — cần kiểm tra cụm đèn, khoảng hở và hệ điều khiển trước khi xác nhận lắp.</div>';
-    finalThree.forEach(function(matchObj, idx) {
-      var isPick = idx === 0;
-      var isUpgrade = matchObj.isUpgrade;
-      var diffBudget = matchObj.diffBudget;
-      var item = matchObj.item;
-
-      var card = el('div', { class: 'qs-result' + (isPick ? ' is-primary' : (isUpgrade ? ' is-upgrade' : '')) });
-
-      var badgeClass = 'qs-badge ';
-      var badgeText = '';
-      if (isPick) {
-        badgeClass += 'qs-badge--pick';
-        badgeText = 'Sản phẩm để đối chiếu';
-      } else if (isUpgrade) {
-        badgeClass += 'qs-badge--upgrade';
-        badgeText = 'Nâng cấp (+' + formatVND(diffBudget) + ')';
-      } else {
-        badgeClass += 'qs-badge--alt';
-        badgeText = 'Lựa chọn thay thế';
-      }
-      var badge = el('span', { class: badgeClass });
-      badge.textContent = badgeText;
-
-      var img = el('img', { src: (item.image || item.img), alt: item.name, loading: 'lazy' });
-      var body = el('div', { class: 'qs-result-body' });
-      var name = el('div', { class: 'qs-result-name' });
-      name.textContent = item.name;
-
-      var price = el('div', { class: 'qs-result-price' });
-      price.textContent = item.priceText;
-      if (isUpgrade && diffBudget > 0) {
-        var diffTag = el('span', { class: 'qs-diff-tag' });
-        diffTag.textContent = '+' + formatVND(diffBudget) + ' (Nâng cấp)';
-        price.appendChild(diffTag);
-      }
-
-      var vat = el('p', { class: 'qs-result-vat' });
-      vat.textContent = 'Giá niêm yết chính hãng, bảo hành ' + (item.warranty || '24 tháng');
-
-      var reason = el('p', { class: 'qs-result-reason' });
-      if (isPick) {
-        reason.textContent = 'Cần kiểm tra cụm đèn, khoảng hở và hệ điều khiển trước khi xác nhận lắp.';
-      } else if (isUpgrade) {
-        reason.innerHTML = '<strong>Gợi ý nâng cấp:</strong> +' + formatVND(diffBudget) + ' vượt ngân sách.';
-      } else {
-        reason.textContent = 'Cần kiểm tra cụm đèn, khoảng hở và hệ điều khiển trước khi xác nhận lắp.';
-      }
-
-      var actions = el('div', { class: 'qs-result-actions' });
-      var btnDetail = el('a', { class: 'qs-btn-outline', href: item.url, target: '_blank', rel: 'noreferrer' });
-      btnDetail.textContent = 'Xem chi tiết sản phẩm';
-
-      var btnConsult = el('button', { type: 'button', class: 'qs-btn-primary' });
-      btnConsult.textContent = 'Tư vấn theo dòng xe';
-      btnConsult.addEventListener('click', function() {
-        showConsultStep(item, { isPick: isPick, isUpgrade: isUpgrade, diffBudget: diffBudget, diffBase: 0 });
+    if (outRange.length) {
+      var head = el('div', { style: 'grid-column:1/-1;margin:16px 0 8px;font-size:15px;font-weight:600;color:#333;' });
+      head.textContent = 'Phương án để cân nhắc thêm';
+      resultBox.appendChild(head);
+      outRange.slice(0, 3).forEach(function(item) {
+        var why = item.price < range.min
+          ? 'Thấp hơn khoảng ' + range.label + ' ' + formatVND(range.min - item.price) + '; không phải kết quả khớp khoảng giá.'
+          : 'Cao hơn khoảng ' + range.label + ' ' + formatVND(item.price - range.max) + '; không phải kết quả khớp khoảng giá.';
+        resultBox.appendChild(qsCard(item, false, why));
       });
-
-      actions.appendChild(btnDetail);
-      actions.appendChild(btnConsult);
-      body.appendChild(badge);
-      body.appendChild(name);
-      body.appendChild(price);
-      body.appendChild(vat);
-      body.appendChild(reason);
-      body.appendChild(actions);
-      card.appendChild(img);
-      card.appendChild(body);
-      resultBox.appendChild(card);
-    });
+    }
     openModal();
   }
 
@@ -4801,19 +4802,31 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
 
       var isBooking = activeConsultMatch && activeConsultMatch.isDirectBooking;
       var msgLines = [
-        isBooking ? 'Xin chào Auto365, tôi muốn đặt lịch thử ánh sáng trực tiếp tại xưởng:' : 'Xin chào Auto365, tôi muốn nhận tư vấn lắp đặt bóng LED:',
+        isBooking ? 'Xin chào Auto365, tôi muốn gửi thông tin xe để kiểm tra:' : 'Xin chào Auto365, tôi muốn nhận tư vấn lắp đặt bóng LED:',
         isBooking ? '• Nội dung: ' + prod.name : '• Sản phẩm quan tâm: ' + prod.name + (prod.priceText ? ' (' + prod.priceText + ')' : ''),
         '• Khách hàng: ' + name,
         '• Số điện thoại: ' + phoneClean,
         car ? '• Dòng xe: ' + car : '',
         prov ? '• Tỉnh thành / Chi nhánh: ' + prov : '',
         need ? '• Nhu cầu: ' + need : '',
-        isBooking ? 'Nhờ kỹ thuật viên Auto365 liên hệ xác nhận khung giờ thử ánh sáng 4300K / 6000K trực tiếp.' : 'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
+        isBooking ? 'Nhờ kỹ thuật viên Auto365 liên hệ để kiểm tra cụm đèn và tư vấn nhiệt màu theo xe.' : 'Nhờ chuyên viên Auto365 kiểm tra đúng chân bóng và báo giá hoàn thiện theo xe.'
       ].filter(Boolean).join('\n');
 
       var copyArea = document.getElementById('qsc-copy-area'); if(copyArea) { copyArea.value = msgLines; }
+      function qsEmit(action) { document.dispatchEvent(new CustomEvent('auto365:led', { detail: { action: action, item: '' } })); }
+      function copyDone(ok) {
+        if (typeof toast === 'function') {
+          toast(ok ? 'Đã sao chép. Hãy dán nội dung vào Zalo và bấm gửi cho Auto365.' : 'Chưa sao chép được. Hãy chọn và sao chép nội dung trong ô bên dưới rồi gửi qua Zalo.');
+        }
+        if (ok) qsEmit('copy_request');
+        else if (copyArea) { copyArea.focus(); copyArea.select(); }
+      }
       if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(msgLines).catch(function() {});
+        navigator.clipboard.writeText(msgLines).then(function() { copyDone(true); }, function() { copyDone(false); });
+      } else {
+        var copied = false;
+        if (copyArea) { copyArea.select(); try { copied = document.execCommand('copy'); } catch (err) {} }
+        copyDone(copied);
       }
 
       // Sync to on-page form fields
@@ -4822,11 +4835,8 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
       var midModel = document.getElementById('mid-model'); if (midModel && car) midModel.value = car;
       var midProv = document.getElementById('mid-province'); if (midProv && prov) midProv.value = prov;
 
-      if (typeof toast === 'function') {
-        toast('Đã copy. Hãy DÁN (Paste) nội dung vào Zalo và GỬI cho chuyên viên Auto365 nhé!');
-      }
-
       setTimeout(function() {
+        qsEmit('zalo_open');
         window.open('https://zalo.me/0365365911', '_blank');
       }, 350);
     });
@@ -4844,7 +4854,7 @@ $('#mid-phone').addEventListener('input', e => e.target.setCustomValidity(''));
   });
 })();
 </script>
-<style>.xl-process-timeline-grid:before{height:2px!important;background:#e31b2d!important;opacity:.55}.filter-panel .check-grid{gap:2px 10px}.filter-panel .check-row{min-height:30px!important;font-size:13px;gap:8px}.filter-panel .check-row input{width:15px;height:15px}.filter-panel .filter-group{padding:10px 0}.filter-panel legend,.filter-panel .filter-group strong{font-size:12px;margin-bottom:6px}.filter-disclosure summary{padding:12px 16px;font-size:15px}.mid-banner{margin-top:10px;margin-bottom:10px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.mid-banner a{display:block;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(15,17,23,.08)}.mid-banner img{display:block;width:100%;height:auto}@media (max-width:680px){.mid-banner{grid-template-columns:1fr;gap:10px}.mid-banner a{border-radius:12px}}.cta-mid-wrap{margin-top:6px;margin-bottom:6px}.socket-grid{grid-template-columns:1fr 1fr!important;column-gap:10px}.mobile-filter-grid{display:none}@media (max-width:680px){.mobile-filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.mf-select{width:100%;height:44px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:#fff;font-size:14px;color:#17191d}.filter-disclosure .filter-group{display:none}.filter-disclosure summary{padding:12px 16px}.consult-form .lead-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}.consult-form .lead-grid input,.consult-form .lead-grid select{font-size:14px;padding-left:10px;min-width:0}.consult-form .lead-grid select{padding-right:28px;background-position:right 8px center}.consult-form .lead-consent,.consult-form .lead-subnote{grid-column:1/-1}.consult-form .lead-grid label{font-size:12.5px;min-width:0}.consult-form{padding:18px 14px}.consult-form #mid-submit-btn+div{flex-wrap:wrap;gap:4px 10px!important}.consult-form #mid-submit-btn+div>*{white-space:nowrap}.xl-process-timeline-grid{display:grid!important;grid-template-columns:1fr 1fr!important;overflow:visible!important;gap:8px!important;padding-bottom:0!important}.xl-process-timeline-grid:before{display:none}.xl-process-timeline-grid li{display:flex;align-items:center;gap:10px;background:#f7f8fa;border:1px solid var(--line);border-radius:10px;padding:8px 10px}.xl-process-timeline-grid span{width:28px;height:28px;margin:0;box-shadow:none;flex-shrink:0;font-size:11px}.xl-process-timeline-grid h3{margin:0;font-size:13px;font-weight:600}.xl-process-timeline-head{margin-bottom:12px}.consult-cta-strip .consult-cta-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;width:100%}.consult-cta-strip .consult-cta-actions .btn{width:100%;min-height:44px;border-radius:10px!important;white-space:nowrap;padding:10px 8px;justify-content:center;display:flex;align-items:center}.consult-cta-strip .consult-cta-actions .btn.red{grid-column:1/-1}#loi-thuong-gap .table-wrap{overflow:visible!important;border:0!important;background:transparent!important}#loi-thuong-gap table{display:block;min-width:0!important;width:100%}#loi-thuong-gap caption,#loi-thuong-gap thead{display:none}#loi-thuong-gap tbody{display:grid;gap:10px}#loi-thuong-gap tr{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}#loi-thuong-gap th,#loi-thuong-gap td{display:block;border:0!important;padding:0!important;background:transparent!important;text-align:left}#loi-thuong-gap th{font-size:14.5px;font-weight:700;color:#17191d;margin-bottom:6px}#loi-thuong-gap td{font-size:13px;line-height:1.5;color:#475261;margin-top:4px}#loi-thuong-gap td:nth-of-type(1):before{content:"Kiểm tra: ";font-weight:700;color:#17191d}#loi-thuong-gap td:nth-of-type(2):before{content:"Nên làm: ";font-weight:700;color:#e31b2d}#so-sanh .grid-3,#so-sanh .grid-4,#ban-do-nganh .grid-3,#ban-do-nganh .grid-4,#cum-den .grid-3,#cum-den .grid-4,#cam-nang .grid-3,#cam-nang .grid-4,#bang-gia .grid-3,#bang-gia .grid-4{display:grid!important;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-template-columns:none!important;grid-auto-columns:80%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:-16px;padding-right:16px}#so-sanh .grid-3>*,#so-sanh .grid-4>*,#ban-do-nganh .grid-3>*,#ban-do-nganh .grid-4>*,#cum-den .grid-3>*,#cum-den .grid-4>*,#cam-nang .grid-3>*,#cam-nang .grid-4>*,#bang-gia .grid-3>*,#bang-gia .grid-4>*{scroll-snap-align:start;min-width:0}}</style><script>(function(){var sels=document.querySelectorAll(".mf-select");if(!sels.length)return;var cbs=function(g){return document.querySelectorAll(".shop-filter[data-group=\""+g+"\"]")};sels.forEach(function(s){s.addEventListener("change",function(){cbs(s.dataset.mfGroup).forEach(function(c){var want=c.value===s.value;if(c.checked!==want){c.checked=want;c.dispatchEvent(new Event("change",{bubbles:true}));}});});});function sync(){sels.forEach(function(s){var on=[].filter.call(cbs(s.dataset.mfGroup),function(c){return c.checked});s.value=on.length===1?on[0].value:"";});}document.addEventListener("change",function(e){if(e.target.classList&&e.target.classList.contains("shop-filter"))sync();});document.addEventListener("click",function(e){if(e.target.closest&&(e.target.closest("#clear-shop-filter")||e.target.closest("[data-quick]")))setTimeout(sync,0);});})();</script><script>(function(){var s=document.getElementById("chan-bong");if(!s)return;function o(){s.classList.add("cb-open");var b=s.querySelector(".cb-toggle");if(b)b.style.display="none"}var i=document.getElementById("socket-search-input");if(i)i.addEventListener("input",o);s.querySelectorAll(".btn-quick-socket").forEach(function(b){b.addEventListener("click",o)})})();</script></body></html>
+<style>.xl-process-timeline-grid:before{height:2px!important;background:#e31b2d!important;opacity:.55}.filter-panel .check-grid{gap:2px 10px}.filter-panel .check-row{min-height:30px!important;font-size:13px;gap:8px}.filter-panel .check-row input{width:15px;height:15px}.filter-panel .filter-group{padding:10px 0}.filter-panel legend,.filter-panel .filter-group strong{font-size:12px;margin-bottom:6px}.filter-disclosure summary{padding:12px 16px;font-size:15px}.mid-banner{margin-top:10px;margin-bottom:10px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.mid-banner a{display:block;border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(15,17,23,.08)}.mid-banner img{display:block;width:100%;height:auto}@media (max-width:680px){.mid-banner{grid-template-columns:1fr;gap:10px}.mid-banner a{border-radius:12px}}.cta-mid-wrap{margin-top:6px;margin-bottom:6px}.socket-grid{grid-template-columns:1fr 1fr!important;column-gap:10px}.mobile-filter-grid{display:none}@media (max-width:680px){.mobile-filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.mf-select{width:100%;height:44px;border:1px solid var(--line);border-radius:10px;padding:0 10px;background:#fff;font-size:14px;color:#17191d}.filter-disclosure .filter-group{display:none}.filter-disclosure summary{padding:12px 16px}.consult-form .lead-grid{grid-template-columns:1fr 1fr!important;gap:10px!important}.consult-form .lead-grid input,.consult-form .lead-grid select{font-size:14px;padding-left:10px;min-width:0}.consult-form .lead-grid select{padding-right:28px;background-position:right 8px center}.consult-form .lead-consent,.consult-form .lead-subnote{grid-column:1/-1}.consult-form .lead-grid label{font-size:12.5px;min-width:0}.consult-form{padding:18px 14px}.consult-form #mid-submit-btn+div{flex-wrap:wrap;gap:4px 10px!important}.consult-form #mid-submit-btn+div>*{white-space:nowrap}.xl-process-timeline-grid{display:grid!important;grid-template-columns:1fr 1fr!important;overflow:visible!important;gap:8px!important;padding-bottom:0!important}.xl-process-timeline-grid:before{display:none}.xl-process-timeline-grid li{display:flex;align-items:center;gap:10px;background:#f7f8fa;border:1px solid var(--line);border-radius:10px;padding:8px 10px}.xl-process-timeline-grid span{width:28px;height:28px;margin:0;box-shadow:none;flex-shrink:0;font-size:11px}.xl-process-timeline-grid h3{margin:0;font-size:13px;font-weight:600}.xl-process-timeline-head{margin-bottom:12px}.consult-cta-strip .consult-cta-actions{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;width:100%}.consult-cta-strip .consult-cta-actions .btn{width:100%;min-height:44px;border-radius:10px!important;white-space:nowrap;padding:10px 8px;justify-content:center;display:flex;align-items:center}.consult-cta-strip .consult-cta-actions .btn.red{grid-column:1/-1}#loi-thuong-gap .table-wrap{overflow:visible!important;border:0!important;background:transparent!important}#loi-thuong-gap table{display:block;min-width:0!important;width:100%}#loi-thuong-gap caption,#loi-thuong-gap thead{display:none}#loi-thuong-gap tbody{display:grid;gap:10px}#loi-thuong-gap tr{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}#loi-thuong-gap th,#loi-thuong-gap td{display:block;border:0!important;padding:0!important;background:transparent!important;text-align:left}#loi-thuong-gap th{font-size:14.5px;font-weight:700;color:#17191d;margin-bottom:6px}#loi-thuong-gap td{font-size:13px;line-height:1.5;color:#475261;margin-top:4px}#loi-thuong-gap td:nth-of-type(1):before{content:"Kiểm tra: ";font-weight:700;color:#17191d}#loi-thuong-gap td:nth-of-type(2):before{content:"Nên làm: ";font-weight:700;color:#e31b2d}#so-sanh .grid-3,#so-sanh .grid-4,#ban-do-nganh .grid-3,#ban-do-nganh .grid-4,#cum-den .grid-3,#cum-den .grid-4,#cam-nang .grid-3,#cam-nang .grid-4,#bang-gia .grid-3,#bang-gia .grid-4{display:grid!important;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-template-columns:none!important;grid-auto-columns:80%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;margin-right:-16px;padding-right:16px}#so-sanh .grid-3>*,#so-sanh .grid-4>*,#ban-do-nganh .grid-3>*,#ban-do-nganh .grid-4>*,#cum-den .grid-3>*,#cum-den .grid-4>*,#cam-nang .grid-3>*,#cam-nang .grid-4>*,#bang-gia .grid-3>*,#bang-gia .grid-4>*{scroll-snap-align:start;min-width:0}}.lead-fallback{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.lf-btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border-radius:10px;border:1px solid #d8dde3;background:#fff;color:#333;font:inherit;font-size:13.5px;font-weight:600;text-decoration:none;cursor:pointer}.lf-call{background:#e31b2d;border-color:#e31b2d;color:#fff}.lf-zalo{color:#0068ff;border-color:#c7ddff}.lf-text{flex-basis:100%;width:100%;font:inherit;font-size:13px;color:#333;border:1px solid #e5e7eb;border-radius:10px;padding:8px 10px;resize:vertical}</style><script>(function(){var sels=document.querySelectorAll(".mf-select");if(!sels.length)return;var cbs=function(g){return document.querySelectorAll(".shop-filter[data-group=\""+g+"\"]")};sels.forEach(function(s){s.addEventListener("change",function(){cbs(s.dataset.mfGroup).forEach(function(c){var want=c.value===s.value;if(c.checked!==want){c.checked=want;c.dispatchEvent(new Event("change",{bubbles:true}));}});});});function sync(){sels.forEach(function(s){var on=[].filter.call(cbs(s.dataset.mfGroup),function(c){return c.checked});s.value=on.length===1?on[0].value:"";});}document.addEventListener("change",function(e){if(e.target.classList&&e.target.classList.contains("shop-filter"))sync();});document.addEventListener("click",function(e){if(e.target.closest&&(e.target.closest("#clear-shop-filter")||e.target.closest("[data-quick]")))setTimeout(sync,0);});})();</script><script>(function(){var s=document.getElementById("chan-bong");if(!s)return;function o(){s.classList.add("cb-open");var b=s.querySelector(".cb-toggle");if(b)b.style.display="none"}var i=document.getElementById("socket-search-input");if(i)i.addEventListener("input",o);s.querySelectorAll(".btn-quick-socket").forEach(function(b){b.addEventListener("click",o)})})();</script></body></html>
 
 
 
