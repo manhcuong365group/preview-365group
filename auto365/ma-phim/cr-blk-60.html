@@ -492,6 +492,7 @@
     @media(max-width:640px){.section,.section.alt{padding-top:22px;padding-bottom:22px}}
     #so-sanh.section,#xe-thuc-te.section,.section.process,section[aria-labelledby="guide-title"].section{background:#f7f6f3}
     .package h3{font-weight:700;font-size:19px;color:#1f2328;letter-spacing:-.01em}
+    .hero-fit-card .field-grid.one{grid-template-columns:1fr}
   </style>
 
   <script type="application/ld+json">
@@ -742,15 +743,15 @@
           </div>
 
           <div class="hero-media">
-            <div class="hero-fit-card" id="fit-check" aria-label="Gợi ý mã phim theo vị trí kính">
-              <h3>Gợi ý mã phim theo vị trí kính</h3>
+            <div class="hero-fit-card" id="fit-check" aria-label="Chọn mã kính lái: CR BLK 60, 50 hay 40?">
+              <h3>Chọn mã kính lái: CR BLK 60, 50 hay 40?</h3>
               <form class="fit-form" data-fit-form>
-                <div class="field-grid">
+                <div class="field-grid one">
                   <div class="field"><label for="priority">Ưu tiên sử dụng</label><select id="priority" name="priority"><option value="visibility">Ưu tiên quan sát</option><option value="night">Đi đêm nhiều</option><option value="balance">Cân bằng sáng và giảm chói</option><option value="privacy">Ưu tiên riêng tư</option></select></div>
-                  <div class="field"><label for="position">Vị trí kính</label><select id="position" name="position"><option value="windshield">Kính lái</option><option value="front">Kính sườn trước</option><option value="rear">Kính sườn sau</option><option value="back">Kính lưng</option><option value="roof">Cửa sổ trời / panorama</option></select></div>
+                  <input type="hidden" id="position" name="position" value="windshield">
                 </div>
                 <button class="fit-submit" type="submit">Đề xuất mã kính</button>
-                <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Đề xuất mã kính" để xem gợi ý</strong><p class="fit-note">Chọn nhu cầu và vị trí kính, rồi bấm nút để xem nên dùng mã nào.</p></div>
+                <div class="fit-result" data-fit-result aria-live="polite"><strong>Bấm "Đề xuất mã kính" để xem gợi ý</strong><p class="fit-note">Chọn nhu cầu lái xe, rồi bấm nút để xem nên dán mã nào cho kính lái.</p></div>
               </form>
             </div>
             <p class="metric-ribbon-label">Thông số CR BLK 60 · Auto 75 Glass</p>
@@ -1179,7 +1180,7 @@
           else{rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"Cân bằng riêng tư và độ sáng cabin: CR BLK 35 sáng hơn, CR BLK 15 kín hơn; nên xem mẫu cả hai theo kính nền và camera lùi."};}
         }
         var heading=rec.advisory?rec.title:"Nên cân nhắc: "+rec.code;
-        result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng cần xác nhận sau khi đo kính nền và xem mẫu thực tế. Muốn phối cho toàn xe? <a class=\"inline-link\" href=\"https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh\">Xem cách chọn mã CR BLK theo từng vị trí kính</a>.</p>";
+        result.innerHTML="<strong>"+heading+"</strong><p>"+rec.reason+"</p><p>Gợi ý này dùng để chọn mẫu cần xem; mã cuối cùng cần xác nhận sau khi đo kính nền và xem mẫu thực tế. Kính sườn và kính lưng thường dùng CR BLK 35 hoặc 15, xem <a class=\"inline-link\" href=\"https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh\">cách chọn mã CR BLK theo từng vị trí kính</a>.</p>";
       });
     })();
     (function(){
