@@ -487,6 +487,7 @@
     .real-proof b{color:#252a30;font-weight:600;font-size:14px}
     .real-proof i{font-style:normal;color:var(--red);font-weight:600;font-size:12.5px;white-space:nowrap}
     @media(min-width:901px){.real-evi{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:14px;align-items:stretch;margin-top:18px}.real-evi .real-facts{grid-template-columns:1fr;grid-auto-rows:1fr;margin:0}.real-evi .real-facts div{display:flex;flex-direction:column;justify-content:center}.real-evi .real-facts div+div{border-left:0;border-top:1px solid var(--line)}.real-evi .real-proof{margin:0}}
+    #film-lead-form:not(.is-fallback) .film-lead-message,#film-lead-form:not(.is-fallback) .film-lead-zalo{display:none}
   </style>
 
   <script type="application/ld+json">
@@ -1144,9 +1145,10 @@
           <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Ưu tiên kính lái sáng</option><option>Cân bằng chống nóng và quan sát</option><option>Tăng riêng tư khoang sau</option></select></div>
           <input type="hidden" id="film-lead-package" name="package" value="3M Crystalline CR BLK 60">
         </div>
-        <p class="film-lead-instruction">Zalo sẽ mở ra, anh/chị dán nội dung vào khung chat rồi bấm gửi là xong.</p>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
+        <p class="film-lead-instruction">Auto365 sẽ gọi lại tư vấn theo số điện thoại anh/chị để lại.</p>
         <textarea id="film-lead-message" class="film-lead-message" readonly aria-label="Nội dung tư vấn để sao chép"></textarea>
-        <button class="film-lead-submit" type="submit">Sao chép nội dung và mở Zalo</button>
+        <button class="film-lead-submit" type="submit">Gửi thông tin tư vấn</button>
         <a class="film-lead-zalo" href="https://zalo.me/3820993010764366025" target="_blank" rel="noopener">Mở Zalo Auto365</a>
         <p class="film-lead-status" aria-live="polite"></p>
       </form>
@@ -1210,12 +1212,25 @@
         var data=new FormData(form),phone=String(data.get('phone')||'').trim();
         if(!/^(?:\+84|0)(?:[ .-]?\d){8,10}$/.test(phone)){status.textContent='Vui lòng nhập số điện thoại Việt Nam hợp lệ.';form.elements.phone.focus();return;}
         var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Gói quan tâm: '+data.get('package')].join('\n');
-        messageField.value=message;
-        var zaloUrl='https://zalo.me/3820993010764366025';
-        var openZalo=function(){var popup=window.open(zaloUrl,'_blank','noopener');return !!popup;};
-        status.textContent='Đang chuẩn bị nội dung để gửi Zalo…';
-        if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){var opened=openZalo();status.textContent=opened?'Đã sao chép nội dung. Mở Zalo, dán vào cuộc trò chuyện và bấm gửi.':'Đã sao chép nội dung. Nếu Zalo chưa mở, bấm liên kết bên dưới, dán vào cuộc trò chuyện và bấm gửi.';}).catch(function(){var opened=openZalo();status.textContent=opened?'Chưa sao chép được. Nội dung đã hiển thị bên dưới; hãy chọn sao chép rồi dán vào Zalo.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';});}
-        else{var opened=openZalo();status.textContent=opened?'Chưa sao chép tự động được. Hãy sao chép nội dung bên dưới, dán vào Zalo và bấm gửi.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';}
+        var btn=form.querySelector('.film-lead-submit');
+        if(form.elements.website&&form.elements.website.value)return;
+        var q=new URLSearchParams(location.search),fd=new FormData();
+        fd.append('fullname','');fd.append('phone',phone);
+        fd.append('car_model',[data.get('vehicle'),data.get('year')].filter(Boolean).join(' '));
+        fd.append('city',data.get('city')||'');fd.append('priority',data.get('need')||'');
+        fd.append('service',data.get('package')||'3M Crystalline CR BLK 60');
+        fd.append('source_page','Landing 3M CR BLK 60');fd.append('source_url',location.href);fd.append('referrer',document.referrer||'');
+        ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){fd.append(k,q.get(k)||'');});
+        function fallback(){
+          messageField.value=message;form.classList.add('is-fallback');
+          status.textContent='Chưa gửi được thông tin. Anh/chị sao chép nội dung bên dưới và gửi qua Zalo, hoặc gọi 0365 365 365.';
+          if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){status.textContent='Chưa gửi được thông tin. Nội dung đã được sao chép, bấm “Mở Zalo Auto365” rồi dán vào khung chat, hoặc gọi 0365 365 365.';}).catch(function(){});}
+        }
+        btn.disabled=true;btn.textContent='Đang gửi…';status.textContent='';
+        fetch('/api/leads',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(res){
+          if(res&&res.success){form.reset();form.classList.remove('is-fallback');status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho anh/chị sớm nhất.';}
+          else fallback();
+        }).catch(fallback).finally(function(){btn.disabled=false;btn.textContent='Gửi thông tin tư vấn';});
       });
     })();
   </script>
