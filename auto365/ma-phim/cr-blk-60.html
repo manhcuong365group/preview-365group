@@ -493,6 +493,7 @@
     #so-sanh.section,#xe-thuc-te.section,.section.process,section[aria-labelledby="guide-title"].section{background:#f7f6f3}
     .package h3{font-weight:700;font-size:19px;color:#1f2328;letter-spacing:-.01em}
     .hero-fit-card .field-grid.one{grid-template-columns:1fr}
+    .film-lead-consent{grid-column:1/-1;display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.5;color:#4f5964}.film-lead-consent input{margin-top:3px;flex:none;width:16px;height:16px;accent-color:var(--red)}.film-lead-consent a{color:var(--red)}
   </style>
 
   <script type="application/ld+json">
@@ -1135,12 +1136,14 @@
       <h2 id="film-lead-title">Nhận tư vấn miễn phí</h2>
       <form id="film-lead-form">
         <div class="film-lead-grid">
+          <div class="film-lead-field"><label for="film-lead-name">Họ và tên</label><input id="film-lead-name" name="full_name" autocomplete="name" placeholder="Nhập họ tên" required></div>
           <div class="film-lead-field"><label for="film-lead-vehicle">Dòng xe</label><input id="film-lead-vehicle" name="vehicle" placeholder="VD: Ford Ranger, VF5, CX-5" required></div>
           <div class="film-lead-field"><label for="film-lead-year">Năm xe</label><input id="film-lead-year" name="year" inputmode="numeric" placeholder="VD: 2022"></div>
           <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
           <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
           <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Ưu tiên kính lái sáng</option><option>Cân bằng chống nóng và quan sát</option><option>Tăng riêng tư khoang sau</option></select></div>
           <input type="hidden" id="film-lead-package" name="package" value="3M Crystalline CR BLK 60">
+          <label class="film-lead-consent full"><input type="checkbox" name="privacy_consent" value="1" required><span>Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</span></label>
         </div>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
         <p class="film-lead-instruction">Auto365 sẽ gọi lại tư vấn theo số điện thoại anh/chị để lại.</p>
@@ -1186,7 +1189,7 @@
     (function(){
       var modal=document.getElementById('film-lead-modal'),form=document.getElementById('film-lead-form');
       if(!modal||!form)return;
-      var packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null;
+      var leadAttempt=null,packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null;
       function openModal(label){
         lastFocus=document.activeElement;
         if(label&&/hybrid/i.test(label)) packageField.value='3M Crystalline Hybrid';
@@ -1208,26 +1211,36 @@
         event.preventDefault();if(!form.reportValidity())return;
         var data=new FormData(form),phone=String(data.get('phone')||'').trim();
         if(!/^(?:\+84|0)(?:[ .-]?\d){8,10}$/.test(phone)){status.textContent='Vui lòng nhập số điện thoại Việt Nam hợp lệ.';form.elements.phone.focus();return;}
-        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Gói quan tâm: '+data.get('package')].join('\n');
+        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Họ tên: '+(data.get('full_name')||''),'Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Gói quan tâm: '+data.get('package')].join('\n');
         var btn=form.querySelector('.film-lead-submit');
         if(form.elements.website&&form.elements.website.value)return;
-        var q=new URLSearchParams(location.search),fd=new FormData();
-        fd.append('fullname','');fd.append('phone',phone);
-        fd.append('car_model',[data.get('vehicle'),data.get('year')].filter(Boolean).join(' '));
-        fd.append('city',data.get('city')||'');fd.append('priority',data.get('need')||'');
-        fd.append('service',data.get('package')||'3M Crystalline CR BLK 60');
-        fd.append('source_page','Landing 3M CR BLK 60');fd.append('source_url',location.href);fd.append('referrer',document.referrer||'');
-        ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){fd.append(k,q.get(k)||'');});
+        var q=new URLSearchParams(location.search),tracking={};
+        ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function(k){if(q.get(k))tracking[k]=q.get(k);});
+        var payloadData={full_name:String(data.get('full_name')||'').trim(),phone:phone.replace(/[^\d+]/g,''),car_brand:'',car_model:String(data.get('vehicle')||'').trim(),car_year:String(data.get('year')||'').trim(),region:String(data.get('city')||'').trim(),driving_need:String(data.get('need')||'')};
+        var fp=JSON.stringify(payloadData);
+        if(!leadAttempt||leadAttempt.fp!==fp)leadAttempt={fp:fp,key:(window.crypto&&crypto.randomUUID)?crypto.randomUUID():'cr60-'+Date.now()+'-'+Math.random().toString(36).slice(2),consent_at:new Date().toISOString()};
         function fallback(){
           messageField.value=message;form.classList.add('is-fallback');
-          status.textContent='Chưa gửi được thông tin. Anh/chị sao chép nội dung bên dưới và gửi qua Zalo, hoặc gọi 0365 365 365.';
-          if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){status.textContent='Chưa gửi được thông tin. Nội dung đã được sao chép, bấm “Mở Zalo Auto365” rồi dán vào khung chat, hoặc gọi 0365 365 365.';}).catch(function(){});}
+          status.textContent='Chưa xác nhận được yêu cầu. Anh/chị thử lại, gửi nội dung bên dưới qua Zalo hoặc gọi 0365 365 365.';
+          if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){status.textContent='Chưa xác nhận được yêu cầu. Nội dung đã được sao chép, bấm “Mở Zalo Auto365” rồi dán vào khung chat, hoặc gọi 0365 365 365.';}).catch(function(){});}
         }
+        window.dataLayer=window.dataLayer||[];
+        window.dataLayer.push(Object.assign({event:'lead_submit_attempt',form_id:'film-lead-form'},tracking));
+        var controller=new AbortController(),timer=setTimeout(function(){controller.abort();},12000);
         btn.disabled=true;btn.textContent='Đang gửi…';status.textContent='';
-        fetch('/api/leads',{method:'POST',body:fd}).then(function(r){return r.json();}).then(function(res){
-          if(res&&res.success){form.reset();form.classList.remove('is-fallback');status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho anh/chị sớm nhất.';}
-          else fallback();
-        }).catch(fallback).finally(function(){btn.disabled=false;btn.textContent='Gửi thông tin tư vấn';});
+        fetch('/api/leads',{method:'POST',credentials:'same-origin',keepalive:true,signal:controller.signal,
+          headers:{'Content-Type':'application/json','Accept':'application/json','Idempotency-Key':leadAttempt.key},
+          body:JSON.stringify(Object.assign({},payloadData,{privacy_consent:!!form.elements.privacy_consent.checked,consent_at:leadAttempt.consent_at,privacy_policy_version:'2026-09',form_id:'film-lead-form',page:'cr-blk-60',idempotency_key:leadAttempt.key,service:data.get('package')||'3M Crystalline CR BLK 60',source_page:'3M CR BLK 60',source_url:location.href.split('?')[0],referrer:document.referrer||'',note:message},tracking))
+        }).then(function(res){return res.json().catch(function(){return null;}).then(function(body){
+          if(!(res.ok&&body&&body.success===true&&/^[A-Za-z0-9_-]{1,100}$/.test(String(body.lead_id||''))))throw new Error('unconfirmed');return body;});
+        }).then(function(receipt){
+          form.reset();form.classList.remove('is-fallback');leadAttempt=null;
+          status.textContent='Auto365 đã nhận yêu cầu và sẽ gọi lại theo số anh/chị vừa để lại.';
+          window.dataLayer.push(Object.assign({event:'generate_lead',form_id:'film-lead-form',page_topic:'cr-blk-60',lead_id:String(receipt.lead_id)},tracking));
+        }).catch(function(err){
+          window.dataLayer.push(Object.assign({event:'lead_submit_error',form_id:'film-lead-form',error_type:err&&err.name==='AbortError'?'timeout':'unconfirmed'},tracking));
+          fallback();
+        }).finally(function(){clearTimeout(timer);btn.disabled=false;btn.textContent='Gửi thông tin tư vấn';});
       });
     })();
   </script>
