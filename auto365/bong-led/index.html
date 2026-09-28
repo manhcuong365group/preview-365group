@@ -3884,10 +3884,8 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
   }
 
   async function sendAuto365LeadApi(payload, requestId) {
-  const endpoint = window.AUTO365_LED_CONFIG?.leadEndpoint;
-  if (typeof endpoint !== 'string' || !endpoint.trim()) {
-    throw new Error('LEAD_ENDPOINT_NOT_CONFIGURED');
-  }
+  // Same endpoint and contract as the CR BLK landing forms: POST /api/leads -> {"success": true}
+  const endpoint = window.AUTO365_LED_CONFIG?.leadEndpoint || '/api/leads';
   if (typeof requestId !== 'string' || !requestId.trim()) {
     throw new Error('REQUEST_ID_REQUIRED');
   }
@@ -3902,6 +3900,9 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
       }
     });
     body.append('request_id', requestId);
+    const q = new URLSearchParams(location.search);
+    body.append('referrer', document.referrer || '');
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(k => body.append(k, q.get(k) || ''));
 
     const response = await fetch(endpoint, {
       method: 'POST',
@@ -3912,15 +3913,15 @@ html, body, button, input, select, textarea, h1, h2, h3, h4, p, a, span, table, 
       body,
       signal: controller.signal
     });
-    if (response.status !== 200) {
+    if (!response.ok) {
       throw new Error('LEAD_HTTP_' + response.status);
     }
     const result = await response.json();
-    if (!result || result.success !== true ||
-        typeof result.lead_id !== 'string' || !result.lead_id.trim()) {
+    if (!result || result.success !== true) {
       throw new Error('LEAD_NOT_CONFIRMED');
     }
-    return { success: true, lead_id: result.lead_id.trim() };
+    const id = result.lead_id != null ? String(result.lead_id).trim() : '';
+    return { success: true, lead_id: id };
   } finally {
     clearTimeout(timer);
   }
@@ -4268,24 +4269,22 @@ $('#mid-sales-form').addEventListener('submit', event => {
 
   sendAuto365LeadApi(payload, currentRequestId).then(res => {
     isSubmitting = false;
-    if (res.success !== true || typeof res.lead_id !== 'string' || !res.lead_id.trim()) {
+    if (res.success !== true) {
       throw new Error('lead_not_confirmed');
     }
     if (submitBtn) { submitBtn.textContent = 'Đã gửi yêu cầu thành công ✓'; submitBtn.style.background = '#10b981'; }
     if (statusEl) {
       statusEl.style.color = '#10b981';
-      statusEl.textContent = 'Auto365 đã tiếp nhận yêu cầu. Mã tiếp nhận: ' + res.lead_id;
+      statusEl.textContent = res.lead_id ? 'Auto365 đã tiếp nhận yêu cầu. Mã tiếp nhận: ' + res.lead_id : 'Đã gửi thông tin. Auto365 sẽ gọi lại cho bạn sớm nhất.';
     }
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'lead_form_submit', form_source: 'bong-led-mid', lead_id: res.lead_id });
+    window.dataLayer.push(Object.assign({ event: 'lead_form_submit', form_source: 'bong-led-mid' }, res.lead_id ? { lead_id: res.lead_id } : {}));
   }).catch((err) => {
     isSubmitting = false;
     if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = 'Gửi lại yêu cầu tư vấn'; }
     if (statusEl) {
       statusEl.style.color = '#e31b2d';
-      statusEl.textContent = err.message === 'LEAD_ENDPOINT_NOT_CONFIGURED'
-        ? 'Biểu mẫu chưa gửi được yêu cầu. Thông tin bạn nhập vẫn được giữ; bạn có thể gọi hoặc sao chép nội dung rồi gửi qua Zalo.'
-        : 'Chưa xác nhận được việc tiếp nhận. Thông tin bạn nhập vẫn được giữ; vui lòng thử lại, gọi hoặc sao chép nội dung rồi gửi qua Zalo.';
+      statusEl.textContent = 'Chưa gửi được thông tin. Thông tin bạn nhập vẫn được giữ; vui lòng thử lại, gọi hoặc sao chép nội dung rồi gửi qua Zalo.';
       const leadText = ['Xin chào Auto365, tôi cần tư vấn bóng LED ô tô:', name ? '• Tên: ' + name : '', '• SĐT: ' + phone, '• Xe: ' + carText, province ? '• Khu vực: ' + province : '', need ? '• Nhu cầu: ' + need : ''].filter(Boolean).join('\n');
       const acts = document.createElement('div');
       acts.className = 'lead-fallback';
