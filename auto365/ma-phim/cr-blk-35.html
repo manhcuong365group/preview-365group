@@ -1131,13 +1131,15 @@ if(caseTrack){
         <h2 class="section-title">Quyền lợi khi dán 3M CR BLK 35 tại Auto365</h2>
         <p class="section-desc">Phạm vi áp dụng và chi phí cần được xác nhận trên báo giá/phiếu đặt lịch tại thời điểm thi công; chương trình có thể thay đổi theo thời điểm.</p>
 
-        <div class="rights-grid">
+        <div class="r35-split">
+<figure class="r35-fig r35-split-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-chung-nhan-bao-hanh-ien-tu-3m-cua-subaru-forester-img_6ab38ce49a15f5.65753543.webp" alt="Chứng nhận bảo hành điện tử 3M của Subaru Forester" loading="lazy" decoding="async"><figcaption>Mẫu thông tin bảo hành điện tử 3M của chiếc Forester: mã phim được ghi theo từng vị trí kính.</figcaption></figure>
+<div class="rights-grid">
           <article class="right"><h3>Tháo &amp; vệ sinh phim cũ</h3><p>Thực hiện theo chương trình dịch vụ đang áp dụng tại thời điểm thi công.</p></article>
           <article class="right"><h3>Kiểm tra kính sườn/lưng</h3><p>Kiểm tra kính nền, đường sấy kính lưng và các vùng cần quan sát trước thi công.</p></article>
           <article class="right"><h3>eWarranty 3M</h3><p>Kích hoạt và bàn giao thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam áp dụng.</p></article>
           <article class="right"><h3>Kiểm tra hoàn thiện</h3><p>Quan sát gương bên, camera sau, bề mặt phim và các thiết bị liên quan sau thi công.</p></article>
         </div>
-<figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-chung-nhan-bao-hanh-ien-tu-3m-cua-subaru-forester-img_6ab38ce49a15f5.65753543.webp" alt="Chứng nhận bảo hành điện tử 3M của Subaru Forester" loading="lazy" decoding="async"><figcaption>Mẫu thông tin bảo hành điện tử 3M của chiếc Forester: mã phim được ghi theo từng vị trí kính.</figcaption></figure>
+</div>
 
 
       </div>
@@ -1572,5 +1574,13 @@ updateFitment();
 .r35-fig figcaption{margin-top:8px;font-size:13px;color:#6b737d;text-align:center}
 </style>
 <style>.package h3{font-weight:700!important;color:#111418!important}</style>
+<style>
+.r35-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:center}
+.r35-split .r35-split-fig{margin:0;max-width:none}
+.r35-split .rights-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:14px!important;margin:0!important;overflow:visible!important}
+.r35-split .rights-grid>*{flex:none!important;min-width:0}
+@media(max-width:900px){.r35-split{grid-template-columns:1fr}}
+@media(max-width:640px){.r35-split .rights-grid{gap:10px!important}}
+</style>
 </body>
 </html>
