@@ -490,6 +490,8 @@
     @media(min-width:901px){.real-wrap{grid-template-columns:minmax(0,1fr) 380px}.real-wrap>.video-placeholder{max-width:380px;align-self:center}}
     .section,.section.alt{background:#fff;padding-top:28px;padding-bottom:28px}.section-desc+.spec-shell,.section-title+.spec-shell{margin-top:18px}
     @media(max-width:640px){.section,.section.alt{padding-top:22px;padding-bottom:22px}}
+    #so-sanh.section,#xe-thuc-te.section,.section.process,section[aria-labelledby="guide-title"].section{background:#f7f6f3}
+    .package h3{font-weight:700;font-size:19px;color:#1f2328;letter-spacing:-.01em}
   </style>
 
   <script type="application/ld+json">
@@ -1168,12 +1170,12 @@
           else if(priority==="balance"){rec={code:"CR BLK 50 hoặc CR BLK 60",reason:"Cân bằng sáng và giảm chói: nên xem mẫu thực tế CR BLK 50 và 60 cạnh nhau; 60 sáng hơn khoảng 9 điểm VLT, 50 giảm chói hơn khoảng 12 điểm."};}
           else{rec={code:"CR BLK 60",reason:"Ưu tiên kính sáng: CR BLK 60 (VLT 57% trên Auto 75) phù hợp để xem trước; cần kiểm tra kính nền vì kết quả thực tế phụ thuộc kính nguyên bản."};}
         }else if(position==="front"){
-          if(priority==="privacy"){rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Kính sườn trước cần riêng tư hơn: CR BLK 40 giữ quan sát gương hông tốt hơn 35; nên xem cả hai sau khi đo kính nền."};}
-          else if(priority==="night"||priority==="visibility"){rec={code:"CR BLK 60 hoặc CR BLK 50",reason:"Kính sườn trước ảnh hưởng quan sát gương và bên hông; nên xem trước CR BLK 60 nếu muốn sáng, đối chiếu 50 nếu cần dịu hơn."};}
-          else{rec={code:"CR BLK 50 hoặc CR BLK 40",reason:"Cân bằng độ sáng và giảm chói ở hàng kính trước; nên đặt CR BLK 50 và 40 cạnh nhau để so mẫu thực tế."};}
+          if(priority==="privacy"){rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"Kính sườn trước cần kín hơn: CR BLK 35 vẫn nhìn gương hông ổn, CR BLK 15 kín hơn nhưng tối hơn khi đi đêm; nên xem mẫu cả hai."};}
+          else if(priority==="night"||priority==="visibility"){rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Kính sườn trước thường dán mã đậm hơn kính lái: CR BLK 40 nhìn gương hông rõ khi đi đêm, CR BLK 35 kín và mát hơn. CR BLK 60 nên để cho kính lái."};}
+          else{rec={code:"CR BLK 35 hoặc CR BLK 40",reason:"Cân bằng giữa chống nắng hông và quan sát gương: CR BLK 35 là cấu hình phổ biến cho sườn trước, chọn 40 nếu muốn sáng hơn."};}
         }else if(position==="rear"||position==="back"){
           if(priority==="privacy"){rec={code:"CR BLK 35 hoặc CR BLK 15",reason:"Kính sau/kính lưng cần riêng tư hơn thì CR BLK 60 chưa phù hợp cho mục tiêu này; nên xem 35/15 sau khi đo kính nền và kiểm tra camera/gương."};}
-          else if(priority==="night"||priority==="visibility"){rec={code:"CR BLK 50 hoặc CR BLK 60",reason:"Cần quan sát khoang sau rõ hơn thì nên xem trước mã sáng, rồi đối chiếu mã tối hơn nếu sau đó cần riêng tư."};}
+          else if(priority==="night"||priority==="visibility"){rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Kính sau vẫn nên đậm hơn kính lái; CR BLK 40 giữ tầm nhìn phía sau khi lùi xe ban đêm, CR BLK 35 kín hơn cho hàng ghế sau."};}
           else{rec={code:"CR BLK 40 hoặc CR BLK 35",reason:"Cân bằng giữa riêng tư và độ sáng cabin: nên xem mẫu 40 và 35 cạnh nhau, quyết định theo kính nền và camera/gương."};}
         }
         var heading=rec.advisory?rec.title:"Nên cân nhắc: "+rec.code;
