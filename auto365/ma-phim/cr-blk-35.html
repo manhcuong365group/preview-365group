@@ -1598,5 +1598,13 @@ main h2,.section h2,.section-title,.mg2-head h2,#he-thong-auto365 h2{font-weight
 .mg2-head h2::before{height:18px!important}
 }
 </style>
+<style>
+@media(max-width:1000px){
+.c35-track{grid-template-columns:none!important;grid-template-rows:repeat(2,auto)!important;grid-auto-flow:column!important;grid-auto-columns:calc((100% - 12px)/2.2)!important;overflow-x:auto!important;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px!important}
+.c35-track::-webkit-scrollbar{display:none}
+.c35-case{scroll-snap-align:start}
+}
+@media(max-width:640px){.c35-track{grid-auto-columns:72%!important;gap:10px!important}}
+</style>
 </body>
 </html>
