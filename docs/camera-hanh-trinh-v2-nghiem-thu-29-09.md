@@ -20,14 +20,14 @@ Người chạy: dev (Claude Code). Ký duyệt claim: **Nguyễn Quang Đạo**
 | 9 | 70mai T400 | 3 kênh trước – trong – sau; 1440P | https://www.70mai.com/vn/t400/ | Khớp | |
 | 10 | 70mai A810 | 4G qua phụ kiện | https://www.70mai.com/global/a810/ | Khớp — trang hãng global ghi "4G Connectivity (Optional)", cần Hardwire Kit UP04 mua riêng, chỉ bán ở một số khu vực → cần xác nhận UP04 có bán tại VN | |
 | 11 | 70mai A210 | 1080P; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a210/ | Khớp | |
-| 12 | 70mai 4K A810 Lite | 4K; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a810lite/ | **Lệch:** trang hãng (VN + global) chỉ có phát hiện va chạm khi đỗ (G-sensor), không có ADAS; trang Auto365 ghi ADAS "Có" → cần kỹ thuật xác nhận, nếu đúng thì đổi thành "Chưa xác nhận" | |
+| 12 | 70mai 4K A810 Lite | 4K; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a810lite/ | Khớp phần đã ghi. ADAS: trang hãng không nêu, **kỹ thuật (Nguyễn Quang Đạo) xác nhận 29/09 giữ theo PDP Auto365**. Đồng bộ thêm theo PDP: bản Trước + sau 3.190.000đ, 4G qua bộ kit | |
 | 13 | 70mai M310 | 1296P; Giám sát đỗ xe | https://www.70mai.com/vn/m310/ | Khớp — trang hãng ghi "Điều khiển ứng dụng" (kết nối Wi-Fi với điện thoại) | |
 | 14 | 70mai A200 | 1080P; Giám sát đỗ xe | https://www.70mai.com/vn/a200/ | Khớp — trang hãng ghi "Điều khiển ứng dụng" (kết nối Wi-Fi với điện thoại) | |
 | 15 | 70MAI T800 4K | Ghi 3 kênh; 1080P; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/t800/ | Khớp | |
 | 16 | 70MAI 4K A810S | Ghi trước + sau; 4K; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/a810s/ | Khớp | |
 | 17 | VietMap L110 | 2K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-l110 | Khớp | |
 | 18 | Vietmap V740 | Ghi trước + sau; 1080P; GPS; Wi-Fi; ADAS; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-v740 | Khớp | |
-| 19 | 70mai Omni | 1080P; GPS; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/omni/ | Khớp phần ứng dụng ("đồng bộ với Ứng dụng 70mai"). **Chưa thấy trên trang hãng:** bộ nhớ eMMC — cần kỹ thuật xác nhận | |
+| 19 | 70mai Omni | 1080P; GPS; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/omni/ | Khớp phần ứng dụng. Bộ nhớ eMMC: **kỹ thuật (Nguyễn Quang Đạo) xác nhận 29/09 theo PDP Auto365** — "eMMC tích hợp 32GB / 64GB / 128GB tùy phiên bản" | |
 | 20 | Vietmap R440: Màn hình gương thế hệ mới | Ghi trước + sau; 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-r440 | Khớp | |
 | 21 | Vietmap S720 | 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-s720 | Khớp | |
 | 22 | VIETMAP S860 | Ghi trước + sau; 3K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-s860 | Khớp | |
@@ -46,7 +46,7 @@ Người chạy: dev (Claude Code). Ký duyệt claim: **Nguyễn Quang Đạo**
 
 Mục 11–34 đối chiếu tự động theo từ khoá trên trang hãng (bỏ header/nav/footer), reviewer cần xem lại trước khi ký.
 
-**Tổng: 34/81 mẫu có nguồn hãng**, còn 2 mẫu cần kỹ thuật xác nhận: **A810 Lite** (trang ghi ADAS nhưng hãng không công bố) và **Omni** (bộ nhớ eMMC).
+**Tổng: 34/81 mẫu có nguồn hãng**, các claim chưa thấy trên trang hãng (A810 Lite ADAS, Omni eMMC) đã được kỹ thuật xác nhận 29/09 theo PDP Auto365.
 
 Chưa đối chiếu được (47 mẫu): BlackVue (blackvue.com bật xác minh chống bot), DDPAI (trang hãng không còn các mẫu này), Thinkware, Ellicam, UTOUR, Nextbase, HTD, HP, Yuemi, 70mai A800SE/M300/M310 Plus (trang hãng VN 404), VIETMAP D22/P2/V5/C9/G40/C61 PRO/C65/G79/X9S/IR22/A50 (không có trong sitemap vietmap.vn). Cần kỹ thuật kiểm tay hoặc lấy tài liệu từ nhà phân phối.
 
@@ -87,6 +87,6 @@ Thay đổi: tự host font Inter (latin + vietnamese, bỏ Google Fonts) để 
 ## 4. Còn chờ bộ phận khác
 
 - **Quản lý sản phẩm:** bảng offer theo bộ (VAT/công lắp/phụ kiện) cho 80 model, giá 18 mẫu "Liên hệ", `offer_id` cho các phiên bản.
-- **Kỹ thuật:** ký bảng claim mục 1; xác nhận A810 4G; kiểm tay BlackVue.
+- **Kỹ thuật:** ký bảng claim mục 1; kiểm tay BlackVue và các mẫu chưa có trang hãng; xác nhận bộ 4G UP04 có bán tại VN (A810, A810 Lite).
 - **Dev auto365.vn:** xác nhận `/api/leads` trả `{"success": true}`, test CRM.
 - **SEO:** xử lý trùng `/camera-hanh-trinh-o-to-2025`, GSC/sitemap sau khi lên production, đo CWV.

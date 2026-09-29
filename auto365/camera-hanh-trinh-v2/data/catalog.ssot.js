@@ -155,11 +155,20 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-4k-a810-lite",
-    "offer_id": "camera-hanh-trinh-70mai-4k-a810-lite",
+    "offer_id": "camera-hanh-trinh-70mai-4k-a810-lite--truoc",
     "product_name": "Camera hành trình 70mai 4K A810 Lite",
     "brand": "70mai",
     "model": "4K A810 Lite",
-    "variant": null,
+    "variant": "Camera trước",
+    "other_variants": [
+      {
+        "offer_id": "camera-hanh-trinh-70mai-4k-a810-lite--truoc-sau",
+        "name": "Trước + sau (A810-1 Lite)",
+        "price": 3190000,
+        "channels": 2,
+        "coverage": "front-rear"
+      }
+    ],
     "sku": null,
     "pdp_url": "https://auto365.vn/camera-hanh-trinh-70mai-4k-a810-lite",
     "price": 2790000,
@@ -176,7 +185,7 @@ window.CATALOG_SSOT = [
     "wifi": "yes",
     "adas": "yes",
     "parking_mode": "yes",
-    "lte": "unknown",
+    "lte": "accessory",
     "box_contents": null,
     "memory_included": null,
     "memory_card": "microSD 32–512 GB",
@@ -651,7 +660,7 @@ window.CATALOG_SSOT = [
     "parking_mode": "yes",
     "lte": "unknown",
     "box_contents": null,
-    "memory_included": "Bộ nhớ eMMC tích hợp 32GB",
+    "memory_included": "Bộ nhớ eMMC tích hợp 32GB / 64GB / 128GB tùy phiên bản",
     "memory_card": "Không dùng thẻ microSD – bộ nhớ eMMC tích hợp 32GB / 64GB / 128GB tùy phiên bản",
     "warranty": "12 tháng",
     "required_accessories": [],
