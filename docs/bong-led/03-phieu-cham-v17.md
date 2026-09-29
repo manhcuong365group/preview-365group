@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản chấm | `auto365/bong-led/index.html`, SHA-256 `9c12b9e778d4d8facf3f5073e4e6dcb03e273f186b44da6337cc3f8826768ad2` |
+| Bản chấm | `auto365/bong-led/index.html`, SHA-256 `3064406686680e0018b27755a2e21d2a4187f3dca8a3607d9436f17c04e5f09c` |
 | Ngày chấm | 29/09/2026 |
 | Loại chấm | Tự chấm bản preview — **chưa phải phiếu nghiệm thu chính thức** |
 | Người kiểm duyệt nội dung | Nguyễn Quang Đạo (29/09/2026) |

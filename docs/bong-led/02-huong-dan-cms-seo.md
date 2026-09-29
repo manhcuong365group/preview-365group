@@ -1,6 +1,6 @@
 # Bóng LED ô tô — Hướng dẫn đưa lên CMS / SEO
 
-Áp dụng cho bản HTML có SHA-256 `9c12b9e778d4d8facf3f5073e4e6dcb03e273f186b44da6337cc3f8826768ad2` (xem `01-noi-dung-ban-duyet.md`).
+Áp dụng cho bản HTML có SHA-256 `3064406686680e0018b27755a2e21d2a4187f3dca8a3607d9436f17c04e5f09c` (xem `01-noi-dung-ban-duyet.md`).
 
 ## 1. URL và thẻ đầu trang
 
