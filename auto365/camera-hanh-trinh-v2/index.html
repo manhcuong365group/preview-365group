@@ -3080,7 +3080,7 @@ function updateCompare() {
       const rearCell = p => p.coverage === 'front' || p.coverage === 'front-cabin' ? 'Không (bộ không có camera sau)' : T(p).rear_camera_included === 'yes' ? 'Có — ghi trong phụ kiện kèm theo' : 'Chưa xác nhận';
       const boxCell = p => T(p).box_contents ? esc(T(p).box_contents.replace(/^\s*-\s*/, '').replace(/\s+-\s+/g, ' · ')) : 'Chưa xác nhận';
       const powerCell = p => featureState(p, 'parking') === 'yes' ? 'Cần bộ nguồn/hardwire kit riêng — xác nhận khi báo giá' : 'Chưa xác nhận';
-      const variantCell = p => (T(p).variant ? esc(T(p).variant) : '—') + ((T(p).other_variants || []).length ? '<br><small>Bản khác: ' + T(p).other_variants.map(v => esc(v.name || '') + ' ' + money(v.price)).join(', ') + '</small>' : '');
+      const variantCell = p => (T(p).variant ? esc(T(p).variant) : '—') + ((T(p).other_variants || []).length ? '<br><small>Bản khác: ' + T(p).other_variants.map(v => esc(v.name || '') + ' ' + money(v.price) + (v.channels ? ' (' + v.channels + ' kênh)' : '')).join(', ') + '</small>' : '');
       const specCell = (p, i) => (SPEC_TEXT[p.slug] && SPEC_TEXT[p.slug][i]) ? esc(SPEC_TEXT[p.slug][i]) : 'Chưa xác nhận';
       const scopeCell = (p) => PRICE_SCOPE_NOTE[p.slug] || 'Giá sản phẩm/bộ đang công bố; tổng lắp xác nhận theo xe';
       // LTE_COMPARE_STATES: integrated, accessory, and unverified are rendered separately.

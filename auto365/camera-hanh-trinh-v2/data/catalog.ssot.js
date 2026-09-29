@@ -4,6 +4,7 @@
 window.CATALOG_SSOT = [
   {
     "product_id": "camera-hanh-trinh-70mai-a210",
+    "offer_id": "camera-hanh-trinh-70mai-a210",
     "product_name": "Camera hành trình 70mai A210",
     "brand": "70mai",
     "model": "A210",
@@ -30,7 +31,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://www.70mai.com/vn/support/",
+    "official_source": "https://www.70mai.com/vn/a210/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","GPS","Wi-Fi","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-a210",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -40,6 +43,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-yuemi-q5",
+    "offer_id": "camera-hanh-trinh-yuemi-q5",
     "product_name": "CAMERA HÀNH TRÌNH YUEMI Q5",
     "brand": "YUEMI",
     "model": "YUEMI Q5",
@@ -76,6 +80,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh4k-a800se-speedeye",
+    "offer_id": "camera-hanh-trinh4k-a800se-speedeye",
     "product_name": "Camera hành trình  4K A800SE SpeedEye",
     "brand": "70mai",
     "model": "4K A800SE SpeedEye",
@@ -113,6 +118,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-m310-plus-2k",
+    "offer_id": "camera-hanh-trinh-70mai-m310-plus-2k",
     "product_name": "Camera Hành Trình 70mai M310 Plus 2K",
     "brand": "70mai",
     "model": "M310 Plus 2K",
@@ -149,6 +155,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-4k-a810-lite",
+    "offer_id": "camera-hanh-trinh-70mai-4k-a810-lite",
     "product_name": "Camera hành trình 70mai 4K A810 Lite",
     "brand": "70mai",
     "model": "4K A810 Lite",
@@ -175,7 +182,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 32–512 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://www.70mai.com/vn/support/",
+    "official_source": "https://www.70mai.com/vn/a810lite/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["4K","GPS","Wi-Fi","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-4k-a810-lite",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -185,6 +194,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-m310-plus-3k",
+    "offer_id": "camera-hanh-trinh-70mai-m310-plus-3k",
     "product_name": "Camera Hành Trình 70mai M310 Plus 3K",
     "brand": "70mai",
     "model": "M310 Plus 3K",
@@ -221,6 +231,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-m310",
+    "offer_id": "camera-hanh-trinh-70mai-m310",
     "product_name": "Camera hành trình 70mai M310",
     "brand": "70mai",
     "model": "M310",
@@ -247,7 +258,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 16–256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://www.70mai.com/vn/support/",
+    "official_source": "https://www.70mai.com/vn/m310/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1296P","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-m310",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -257,6 +270,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-a200",
+    "offer_id": "camera-hanh-trinh-70mai-a200",
     "product_name": "Camera hành trình 70mai A200",
     "brand": "70mai",
     "model": "A200",
@@ -283,7 +297,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://www.70mai.com/vn/support/",
+    "official_source": "https://www.70mai.com/vn/a200/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-a200",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -293,14 +309,18 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-a510",
+    "offer_id": "camera-hanh-trinh-70mai-a510--truoc",
     "product_name": "Camera hành trình 70mai A510",
     "brand": "70mai",
     "model": "A510",
     "variant": "Camera trước",
     "other_variants": [
       {
+        "offer_id": "camera-hanh-trinh-70mai-a510--truoc-sau",
         "name": "Trước + sau",
-        "price": 2990000
+        "price": 2990000,
+        "channels": 2,
+        "coverage": "front-rear"
       }
     ],
     "sku": null,
@@ -337,6 +357,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-t400",
+    "offer_id": "camera-hanh-trinh-70mai-t400",
     "product_name": "CAMERA HÀNH TRÌNH 70MAI T400",
     "brand": "70mai",
     "model": "T400",
@@ -375,6 +396,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-t800-4k",
+    "offer_id": "camera-hanh-trinh-70mai-t800-4k",
     "product_name": "CAMERA HÀNH TRÌNH 70MAI T800 4K",
     "brand": "70mai",
     "model": "T800 4K",
@@ -401,7 +423,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 32–512 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://new-cdn-res.70mai.com/global/t800/",
+    "official_source": "https://www.70mai.com/vn/t800/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi 3 kênh","1080P","GPS","Wi-Fi","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-t800-4k",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -411,6 +435,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-m800",
+    "offer_id": "camera-hanh-trinh-70mai-m800",
     "product_name": "Camera hành trình 70mai M800",
     "brand": "70mai",
     "model": "M800",
@@ -449,6 +474,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-4k-a810s",
+    "offer_id": "camera-hanh-trinh-70mai-4k-a810s",
     "product_name": "CAMERA HÀNH TRÌNH 70MAI 4K A810S",
     "brand": "70mai",
     "model": "4K A810S",
@@ -475,7 +501,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 32–512 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://www.70mai.com/vn/support/",
+    "official_source": "https://www.70mai.com/vn/a810s/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","4K","GPS","Wi-Fi","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-4k-a810s",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -485,6 +513,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-l110",
+    "offer_id": "camera-hanh-trinh-vietmap-l110",
     "product_name": "Camera Hành Trình VietMap L110",
     "brand": "Vietmap",
     "model": "L110",
@@ -511,7 +540,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-l110",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["2K","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-l110",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -521,6 +552,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-v740",
+    "offer_id": "camera-hanh-trinh-vietmap-v740",
     "product_name": "Camera hành trình Vietmap V740",
     "brand": "Vietmap",
     "model": "V740",
@@ -547,7 +579,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-v740",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","1080P","GPS","Wi-Fi","ADAS","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-v740",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -557,6 +591,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-a800se",
+    "offer_id": "camera-hanh-trinh-70mai-a800se",
     "product_name": "Camera hành trình 70mai A800SE",
     "brand": "70mai",
     "model": "A800SE",
@@ -593,6 +628,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-omni",
+    "offer_id": "camera-hanh-trinh-70mai-omni",
     "product_name": "Camera hành trình 70mai Omni",
     "brand": "70mai",
     "model": "Omni",
@@ -619,7 +655,9 @@ window.CATALOG_SSOT = [
     "memory_card": "Không dùng thẻ microSD – bộ nhớ eMMC tích hợp 32GB / 64GB / 128GB tùy phiên bản",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://www.70mai.com/vn/support/",
+    "official_source": "https://www.70mai.com/vn/omni/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","GPS","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-omni",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -629,6 +667,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-r440",
+    "offer_id": "camera-hanh-trinh-vietmap-r440",
     "product_name": "Camera hành trình Vietmap R440: Màn hình gương thế hệ mới",
     "brand": "Vietmap",
     "model": "R440: Màn hình gương thế hệ mới",
@@ -655,7 +694,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://vietmap.vn/camera-hanh-trinh-4k",
+    "official_source": "https://vietmap.vn/vietmap-r440",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","4K","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-r440",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-23",
@@ -665,6 +706,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-s720",
+    "offer_id": "camera-hanh-trinh-vietmap-s720",
     "product_name": "Camera hành trình Vietmap S720",
     "brand": "Vietmap",
     "model": "S720",
@@ -691,7 +733,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": "https://vietmap.vn/camera-hanh-trinh-4k",
+    "official_source": "https://vietmap.vn/vietmap-s720",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["4K","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-s720",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -701,6 +745,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-han-quoc-blackvue-dr590x-2ch",
+    "offer_id": "camera-hanh-trinh-han-quoc-blackvue-dr590x-2ch",
     "product_name": "CAMERA HÀNH TRÌNH HÀN QUỐC BLACKVUE DR590X-2CH",
     "brand": "BlackVue",
     "model": "HÀN QUỐC DR590X-2CH",
@@ -737,6 +782,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-s860",
+    "offer_id": "camera-hanh-trinh-vietmap-s860",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP S860",
     "brand": "Vietmap",
     "model": "S860",
@@ -763,7 +809,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-s860",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","3K","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-s860",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -773,6 +821,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-htd-c23",
+    "offer_id": "camera-hanh-trinh-htd-c23",
     "product_name": "CAMERA HÀNH TRÌNH HTD C23",
     "brand": "Khác",
     "model": "HTD C23",
@@ -809,6 +858,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-s500",
+    "offer_id": "camera-hanh-trinh-70mai-s500",
     "product_name": "CAMERA HÀNH TRÌNH GƯƠNG 70MAI S500",
     "brand": "70mai",
     "model": "GƯƠNG S500",
@@ -835,7 +885,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 32–128 GB, Class 10/U1 trở lên",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://www.70mai.com/vn/s500/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","1944P","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-s500",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -845,6 +897,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ellicam-a64gs",
+    "offer_id": "camera-hanh-trinh-ellicam-a64gs",
     "product_name": "CAMERA HÀNH TRÌNH ELLICAM A64GS",
     "brand": "Ellicam",
     "model": "A64GS",
@@ -881,6 +934,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ellicam-a64g",
+    "offer_id": "camera-hanh-trinh-ellicam-a64g",
     "product_name": "CAMERA HÀNH TRÌNH ELLICAM A64G",
     "brand": "Ellicam",
     "model": "A64G",
@@ -917,6 +971,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-h68",
+    "offer_id": "camera-hanh-trinh-vietmap-h68",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP H68",
     "brand": "Vietmap",
     "model": "H68",
@@ -943,7 +998,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-h68",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-h68",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -953,6 +1010,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ellicam-a660",
+    "offer_id": "camera-hanh-trinh-ellicam-a660",
     "product_name": "CAMERA HÀNH TRÌNH ELLICAM A660",
     "brand": "Ellicam",
     "model": "A660",
@@ -989,6 +1047,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ellicam-a650s",
+    "offer_id": "camera-hanh-trinh-ellicam-a650s",
     "product_name": "CAMERA HÀNH TRÌNH ELLICAM A650S",
     "brand": "Ellicam",
     "model": "A650S",
@@ -1025,6 +1084,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ellicam-a650",
+    "offer_id": "camera-hanh-trinh-ellicam-a650",
     "product_name": "CAMERA HÀNH TRÌNH ELLICAM A650",
     "brand": "Ellicam",
     "model": "A650",
@@ -1061,6 +1121,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ellicam-a620",
+    "offer_id": "camera-hanh-trinh-ellicam-a620",
     "product_name": "CAMERA HÀNH TRÌNH ELLICAM A620",
     "brand": "Ellicam",
     "model": "A620",
@@ -1097,6 +1158,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-speedmap-m2",
+    "offer_id": "vietmap-speedmap-m2",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP SPEEDMAP M2",
     "brand": "Vietmap",
     "model": "SPEEDMAP M2",
@@ -1135,6 +1197,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-nextbase-a161-wifi",
+    "offer_id": "camera-hanh-trinh-nextbase-a161-wifi",
     "product_name": "CAMERA HÀNH TRÌNH NEXTBASE A161 WIFI",
     "brand": "Khác",
     "model": "NEXTBASE A161 WIFI",
@@ -1171,6 +1234,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-nextbase-a160-single-dashcam",
+    "offer_id": "camera-hanh-trinh-nextbase-a160-single-dashcam",
     "product_name": "CAMERA HÀNH TRÌNH NEXTBASE A160 SINGLE DASHCAM",
     "brand": "Khác",
     "model": "NEXTBASE A160 SINGLE DASHCAM",
@@ -1207,6 +1271,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-h9s",
+    "offer_id": "vietmap-h9s",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP H9S",
     "brand": "Vietmap",
     "model": "H9S",
@@ -1233,7 +1298,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128GB; tối thiểu 8GB Class 10",
     "warranty": null,
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-h9s",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","Wi-Fi"],
     "features_source": "https://auto365.vn/vietmap-h9s",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1243,6 +1310,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-h86",
+    "offer_id": "vietmap-h86",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP H86",
     "brand": "Vietmap",
     "model": "H86",
@@ -1269,7 +1337,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 256GB; tối thiểu 8GB Class 10",
     "warranty": null,
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-h86",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","4K","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/vietmap-h86",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1279,6 +1349,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-x5-teyes",
+    "offer_id": "camera-hanh-trinh-x5-teyes",
     "product_name": "CAMERA HÀNH TRÌNH X5 TEYES",
     "brand": "Khác",
     "model": "X5 TEYES",
@@ -1305,7 +1376,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128 GB",
     "warranty": null,
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/camera-hanh-trinh-x5-teyes",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","ADAS"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-x5-teyes",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1315,6 +1388,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-c1",
+    "offer_id": "vietmap-c1",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP C1",
     "brand": "Vietmap",
     "model": "C1",
@@ -1341,7 +1415,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128GB; tối thiểu 8GB Class 10",
     "warranty": null,
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-c1",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1080P","Wi-Fi","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/vietmap-c1",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1351,6 +1427,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-ts-h2k",
+    "offer_id": "vietmap-ts-h2k",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP TS-H2K",
     "brand": "Vietmap",
     "model": "TS-H2K",
@@ -1377,7 +1454,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128GB; Class 10",
     "warranty": null,
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-ts-h2k",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","1080P","Wi-Fi","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/vietmap-ts-h2k",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1387,6 +1466,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-m300",
+    "offer_id": "camera-hanh-trinh-70mai-m300",
     "product_name": "CAMERA HÀNH TRÌNH 70MAI M300",
     "brand": "70mai",
     "model": "M300",
@@ -1423,6 +1503,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-ts-5k",
+    "offer_id": "camera-hanh-trinh-vietmap-ts-5k",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP TS-5K",
     "brand": "Vietmap",
     "model": "TS-5K",
@@ -1449,7 +1530,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-ts-5k",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","4K","GPS","Wi-Fi","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-ts-5k",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1459,6 +1542,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-ts-2k-lite",
+    "offer_id": "camera-hanh-trinh-vietmap-ts-2k-lite",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP TS-2K LITE",
     "brand": "Vietmap",
     "model": "TS-2K LITE",
@@ -1497,6 +1581,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70-mai-a800s",
+    "offer_id": "camera-hanh-trinh-70-mai-a800s",
     "product_name": "CAMERA HÀNH TRÌNH XIAOMI 70MAI A800S 4K FULL HD (BẢN FULL CAMERA TRƯỚC VÀ SAU)",
     "brand": "70mai",
     "model": "XIAOMI A800S 4K FULL HD (BẢN FULL CAMERA TRƯỚC VÀ SAU)",
@@ -1523,7 +1608,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 32–256GB, U3/Class 10",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://www.70mai.com/vn/a800s/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","4K","GPS","Wi-Fi","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70-mai-a800s",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1533,6 +1620,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max",
+    "offer_id": "camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2-max",
     "product_name": "CAMERA HÀNH TRÌNH Ô TÔ UTOUR C2 MAX",
     "brand": "UTOUR",
     "model": "UTOUR C2 MAX",
@@ -1569,6 +1657,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2l",
+    "offer_id": "camera-hanh-trinh-va-canh-bao-tien-va-cham-utour-c2l",
     "product_name": "CAMERA HÀNH TRÌNH Ô TÔ UTOUR C2L",
     "brand": "UTOUR",
     "model": "UTOUR C2L",
@@ -1605,6 +1694,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-xiaomi-70mai-a500s",
+    "offer_id": "camera-hanh-trinh-xiaomi-70mai-a500s",
     "product_name": "CAMERA HÀNH TRÌNH XIAOMI 70MAI A500S",
     "brand": "70mai",
     "model": "XIAOMI A500S",
@@ -1631,7 +1721,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 16–128GB, Class 10 trở lên",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://www.70mai.com/vn/a500s/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["1944P","GPS","Wi-Fi","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-xiaomi-70mai-a500s",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1641,6 +1733,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-70mai-dash-cam-a810-4k",
+    "offer_id": "camera-hanh-trinh-70mai-dash-cam-a810-4k",
     "product_name": "CAMERA HÀNH TRÌNH 70MAI DASH CAM A810 4K (FULL CAM TRƯỚC VÀ SAU)",
     "brand": "70mai",
     "model": "DASH CAM A810 4K (FULL CAM TRƯỚC VÀ SAU)",
@@ -1667,7 +1760,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD 32–256 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://www.70mai.com/vn/a810/",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","4K","GPS","Wi-Fi","ADAS","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-70mai-dash-cam-a810-4k",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1677,6 +1772,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-ts-c9p",
+    "offer_id": "camera-hanh-trinh-vietmap-ts-c9p",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP TS-C9P",
     "brand": "Vietmap",
     "model": "TS-C9P",
@@ -1703,7 +1799,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-ts-c9p",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["2K","GPS","Wi-Fi"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-ts-c9p",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -1713,6 +1811,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-han-quoc-blackvue-dr750x-2ch-lt",
+    "offer_id": "camera-hanh-trinh-han-quoc-blackvue-dr750x-2ch-lt",
     "product_name": "CAMERA HÀNH TRÌNH Ô TÔ CAO CẤP BLACKVUE DR750X-2CH LTE PLUS",
     "brand": "BlackVue",
     "model": "CAO CẤP DR750X-2CH LTE PLUS",
@@ -1749,6 +1848,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus",
+    "offer_id": "camera-hanh-trinh-o-to-4k-blackvue-dr900x-2ch-plus",
     "product_name": "Camera Hành Trình Ô Tô 4K Blackvue DR900X-2CH PLUS",
     "brand": "BlackVue",
     "model": "4K DR900X-2CH PLUS",
@@ -1785,6 +1885,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-3ch-dms-plus",
+    "offer_id": "camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-3ch-dms-plus",
     "product_name": "CAMERA HÀNH TRÌNH Ô TÔ CAO CẤP BLACKVUE DR750X-3CH DMS PLUS",
     "brand": "BlackVue",
     "model": "CAO CẤP DR750X-3CH DMS PLUS",
@@ -1822,6 +1923,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-o-to-cao-cap-blackvue-dr900x-2ch-dms-plus",
+    "offer_id": "camera-hanh-trinh-o-to-cao-cap-blackvue-dr900x-2ch-dms-plus",
     "product_name": "CAMERA HÀNH TRÌNH Ô TÔ CAO CẤP BLACKVUE DR900X-2CH DMS PLUS",
     "brand": "BlackVue",
     "model": "CAO CẤP DR900X-2CH DMS PLUS",
@@ -1859,6 +1961,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus",
+    "offer_id": "camera-hanh-trinh-o-to-cao-cap-blackvue-dr750x-2ch-dms-lte-plus",
     "product_name": "Camera Hành Trình Ô tô Cao Cấp Blackvue DR750X -2CH DMS LTE Plus",
     "brand": "BlackVue",
     "model": "Cao Cấp DR750X -2CH DMS LTE Plus",
@@ -1896,6 +1999,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-da250",
+    "offer_id": "camera-hanh-trinh-vietmap-da250",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP DA250",
     "brand": "Vietmap",
     "model": "DA250",
@@ -1935,6 +2039,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-d22",
+    "offer_id": "camera-hanh-trinh-vietmap-d22",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP D22",
     "brand": "Vietmap",
     "model": "D22",
@@ -1971,6 +2076,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-p2",
+    "offer_id": "camera-hanh-trinh-vietmap-p2",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP P2",
     "brand": "Vietmap",
     "model": "P2",
@@ -2007,6 +2113,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-v5",
+    "offer_id": "camera-hanh-trinh-vietmap-v5",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP V5",
     "brand": "Vietmap",
     "model": "V5",
@@ -2043,6 +2150,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-c9",
+    "offer_id": "camera-hanh-trinh-vietmap-c9",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP C9",
     "brand": "Vietmap",
     "model": "C9",
@@ -2079,6 +2187,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-g40",
+    "offer_id": "camera-hanh-trinh-vietmap-g40",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP G40",
     "brand": "Vietmap",
     "model": "G40",
@@ -2115,6 +2224,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-c61-pro",
+    "offer_id": "camera-hanh-trinh-vietmap-c61-pro",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP C61 PRO",
     "brand": "Vietmap",
     "model": "C61 PRO",
@@ -2151,6 +2261,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-vm350",
+    "offer_id": "camera-hanh-trinh-vietmap-vm350",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP VM350",
     "brand": "Vietmap",
     "model": "VM350",
@@ -2190,6 +2301,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-vm300",
+    "offer_id": "camera-hanh-trinh-vietmap-vm300",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP VM300",
     "brand": "Vietmap",
     "model": "VM300",
@@ -2229,6 +2341,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-speedmap-m1",
+    "offer_id": "camera-hanh-trinh-vietmap-speedmap-m1",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP SPEEDMAP M1",
     "brand": "Vietmap",
     "model": "SPEEDMAP M1",
@@ -2267,6 +2380,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-kc01",
+    "offer_id": "camera-hanh-trinh-vietmap-kc01",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP KC01 CẢNH BÁO GIAO THÔNG",
     "brand": "Vietmap",
     "model": "KC01 CẢNH BÁO GIAO THÔNG",
@@ -2293,7 +2407,9 @@ window.CATALOG_SSOT = [
     "memory_card": "microSD tối đa 128 GB",
     "warranty": "12 tháng",
     "required_accessories": [],
-    "official_source": null,
+    "official_source": "https://vietmap.vn/vietmap-kc01-canh-bao-giao-thong",
+    "official_checked_at": "2026-09-29",
+    "official_claims": ["Ghi trước + sau","2K","GPS","Wi-Fi","Cảnh báo tốc độ/giao thông","Giám sát đỗ xe"],
     "features_source": "https://auto365.vn/camera-hanh-trinh-vietmap-kc01",
     "features_verified_at": "2026-09-28",
     "last_verified": "2026-09-15",
@@ -2303,6 +2419,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-c65",
+    "offer_id": "camera-hanh-trinh-vietmap-c65",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP C65",
     "brand": "Vietmap",
     "model": "C65",
@@ -2339,6 +2456,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ddpai-x3-pro-gia-re",
+    "offer_id": "camera-hanh-trinh-ddpai-x3-pro-gia-re",
     "product_name": "Camera hành trình DDPAI X3 Pro",
     "brand": "DDPAI",
     "model": "X3 Pro",
@@ -2375,6 +2493,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ddpai-mini-gia-re",
+    "offer_id": "camera-hanh-trinh-ddpai-mini-gia-re",
     "product_name": "CAMERA HÀNH TRÌNH DDPAI MINI",
     "brand": "DDPAI",
     "model": "MINI",
@@ -2411,6 +2530,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ddpai-mini-3-gia-re",
+    "offer_id": "camera-hanh-trinh-ddpai-mini-3-gia-re",
     "product_name": "CAMERA HÀNH TRÌNH DDPAI MINI 3",
     "brand": "DDPAI",
     "model": "MINI 3",
@@ -2447,6 +2567,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ddpai-mini-2p-gia-re",
+    "offer_id": "camera-hanh-trinh-ddpai-mini-2p-gia-re",
     "product_name": "CAMERA HÀNH TRÌNH DDPAI MINI 2P",
     "brand": "DDPAI",
     "model": "MINI 2P",
@@ -2483,6 +2604,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-ddpai-mini-one",
+    "offer_id": "camera-hanh-trinh-ddpai-mini-one",
     "product_name": "CAMERA HÀNH TRÌNH DDPAI MINI ONE",
     "brand": "DDPAI",
     "model": "MINI ONE",
@@ -2519,6 +2641,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-xiaomi-70mai",
+    "offer_id": "camera-hanh-trinh-xiaomi-70mai",
     "product_name": "CAMERA HÀNH TRÌNH XIAOMI 70MAI",
     "brand": "70mai",
     "model": "XIAOMI",
@@ -2555,6 +2678,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-g79-man-hinh-guong-vua-dan-duong-vua-ghi-hinh",
+    "offer_id": "vietmap-g79-man-hinh-guong-vua-dan-duong-vua-ghi-hinh",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP G79",
     "brand": "Vietmap",
     "model": "G79",
@@ -2591,6 +2715,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-x9s-nang-tam-chat-luong",
+    "offer_id": "camera-hanh-trinh-vietmap-x9s-nang-tam-chat-luong",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP X9S",
     "brand": "Vietmap",
     "model": "X9S",
@@ -2627,6 +2752,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-vietmap-ir22",
+    "offer_id": "camera-hanh-trinh-vietmap-ir22",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP IR22",
     "brand": "Vietmap",
     "model": "IR22",
@@ -2663,6 +2789,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-blackvue-dr650s-2ch",
+    "offer_id": "camera-hanh-trinh-blackvue-dr650s-2ch",
     "product_name": "CAMERA HÀNH TRÌNH BLACKVUE DR650S - 2CH",
     "brand": "BlackVue",
     "model": "DR650S - 2CH",
@@ -2699,6 +2826,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "vietmap-a50-camera-hanh-trinh",
+    "offer_id": "vietmap-a50-camera-hanh-trinh",
     "product_name": "CAMERA HÀNH TRÌNH VIETMAP A50",
     "brand": "Vietmap",
     "model": "A50",
@@ -2735,6 +2863,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-xe-hoiblackvue-dr450-1ch",
+    "offer_id": "camera-hanh-trinh-xe-hoiblackvue-dr450-1ch",
     "product_name": "CAMERA HÀNH TRÌNH XE HƠI BLACKVUE DR450-1CH",
     "brand": "BlackVue",
     "model": "DR450-1CH",
@@ -2771,6 +2900,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-thinkware-dash-cam-x350",
+    "offer_id": "camera-hanh-trinh-thinkware-dash-cam-x350",
     "product_name": "CAMERA HÀNH TRÌNH THINKWARE DASH CAM X350",
     "brand": "Thinkware",
     "model": "DASH CAM X350",
@@ -2807,6 +2937,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-hp-f550g-gpscho-trai-nghiem-thu-vi",
+    "offer_id": "camera-hanh-trinh-hp-f550g-gpscho-trai-nghiem-thu-vi",
     "product_name": "CAMERA HÀNH TRÌNH HP F550G GPS",
     "brand": "Khác",
     "model": "HP F550G GPS",
@@ -2843,6 +2974,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-thinkware-dash-cam-x550",
+    "offer_id": "camera-hanh-trinh-thinkware-dash-cam-x550",
     "product_name": "CAMERA HÀNH TRÌNH THINKWARE DASH CAM X550",
     "brand": "Thinkware",
     "model": "DASH CAM X550",
@@ -2879,6 +3011,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-thinkware-dash-cam-f770",
+    "offer_id": "camera-hanh-trinh-thinkware-dash-cam-f770",
     "product_name": "CAMERA HÀNH TRÌNH THINKWARE DASH CAM F770",
     "brand": "Thinkware",
     "model": "DASH CAM F770",
@@ -2915,6 +3048,7 @@ window.CATALOG_SSOT = [
   },
   {
     "product_id": "camera-hanh-trinh-thinkware-dash-cam-f50",
+    "offer_id": "camera-hanh-trinh-thinkware-dash-cam-f50",
     "product_name": "CAMERA HÀNH TRÌNH THINKWARE DASH CAM F50",
     "brand": "Thinkware",
     "model": "DASH CAM F50",
