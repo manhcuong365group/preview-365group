@@ -1,6 +1,6 @@
 # Camera hành trình V2 — Biên bản đối chiếu claim & 15 bài test (29/09/2026)
 
-Bản kiểm: preview https://manhcuong365group.github.io/preview-365group/camera-hanh-trinh-v2/ — commit `7b26570e`.
+Bản kiểm: preview https://manhcuong365group.github.io/preview-365group/camera-hanh-trinh-v2/ — commit `568b33cc` (vòng 2).
 Người chạy: dev (Claude Code). Ký duyệt claim: **Nguyễn Quang Đạo** (reviewer kỹ thuật). Ký test: QA.
 
 ## 1. Đối chiếu claim với trang chính thức của hãng
@@ -19,8 +19,36 @@ Người chạy: dev (Claude Code). Ký duyệt claim: **Nguyễn Quang Đạo**
 | 8 | 70mai A510 | GPS & ADAS tích hợp; 1944P; 2 kênh | https://www.70mai.com/vn/a510/ | Khớp | |
 | 9 | 70mai T400 | 3 kênh trước – trong – sau; 1440P | https://www.70mai.com/vn/t400/ | Khớp | |
 | 10 | 70mai A810 | 4G qua phụ kiện | https://www.70mai.com/vn/a810/ | **Không công bố** trên trang hãng VN (chỉ nêu Hardwire Kit UP03). Chưa sửa dữ liệu — cần kỹ thuật xác nhận giữ hay chuyển `lte: unknown`. | |
+| 11 | 70mai A210 | 1080P; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a210/ | Khớp | |
+| 12 | 70mai 4K A810 Lite | 4K; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a810lite/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** ADAS (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 13 | 70mai M310 | 1296P; Giám sát đỗ xe | https://www.70mai.com/vn/m310/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 14 | 70mai A200 | 1080P; Giám sát đỗ xe | https://www.70mai.com/vn/a200/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 15 | 70MAI T800 4K | Ghi 3 kênh; 1080P; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/t800/ | Khớp | |
+| 16 | 70MAI 4K A810S | Ghi trước + sau; 4K; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/a810s/ | Khớp | |
+| 17 | VietMap L110 | 2K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-l110 | Khớp | |
+| 18 | Vietmap V740 | Ghi trước + sau; 1080P; GPS; Wi-Fi; ADAS; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-v740 | Khớp | |
+| 19 | 70mai Omni | 1080P; GPS; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/omni/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi, Bộ nhớ eMMC (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 20 | Vietmap R440: Màn hình gương thế hệ mới | Ghi trước + sau; 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-r440 | Khớp | |
+| 21 | Vietmap S720 | 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-s720 | Khớp | |
+| 22 | VIETMAP S860 | Ghi trước + sau; 3K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-s860 | Khớp | |
+| 23 | GƯƠNG 70MAI S500 | Ghi trước + sau; 1944P; Giám sát đỗ xe | https://www.70mai.com/vn/s500/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 24 | VIETMAP H68 | 1080P; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông | https://vietmap.vn/vietmap-h68 | Khớp | |
+| 25 | VIETMAP H9S | 1080P; Wi-Fi | https://vietmap.vn/vietmap-h9s | Khớp | |
+| 26 | VIETMAP H86 | Ghi trước + sau; 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-h86 | Khớp | |
+| 27 | X5 TEYES | 1080P; ADAS | https://vietmap.vn/camera-hanh-trinh-x5-teyes | Khớp | |
+| 28 | VIETMAP C1 | 1080P; Wi-Fi; Giám sát đỗ xe | https://vietmap.vn/vietmap-c1 | Khớp | |
+| 29 | VIETMAP TS-H2K | Ghi trước + sau; 1080P; Wi-Fi; Giám sát đỗ xe | https://vietmap.vn/vietmap-ts-h2k | Khớp | |
+| 30 | VIETMAP TS-5K | Ghi trước + sau; 4K; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://vietmap.vn/vietmap-ts-5k | Khớp | |
+| 31 | XIAOMI 70MAI A800S 4K FULL HD (BẢN FULL CAMER | Ghi trước + sau; 4K; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/a800s/ | Khớp | |
+| 32 | XIAOMI 70MAI A500S | 1944P; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/a500s/ | Khớp | |
+| 33 | VIETMAP TS-C9P | 2K; GPS; Wi-Fi | https://vietmap.vn/vietmap-ts-c9p | Khớp | |
+| 34 | VIETMAP KC01 CẢNH BÁO GIAO THÔNG | Ghi trước + sau; 2K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-kc01-canh-bao-giao-thong | Khớp | |
 
-Chưa đối chiếu được: BlackVue (blackvue.com chặn truy cập tự động, 403) — cần kỹ thuật kiểm tay. 70mai A800SE: trang hãng VN trả 404.
+Mục 11–34 đối chiếu tự động theo từ khoá trên trang hãng (bỏ header/nav/footer), reviewer cần xem lại trước khi ký.
+
+**Tổng: 34/81 mẫu có nguồn hãng**, trong đó 6 mẫu (A810, A810 Lite, M310, A200, Omni, S500) có claim chưa thấy trên trang hãng (không tự sửa dữ liệu).
+
+Chưa đối chiếu được (47 mẫu): BlackVue (blackvue.com bật xác minh chống bot), DDPAI (trang hãng không còn các mẫu này), Thinkware, Ellicam, UTOUR, Nextbase, HTD, HP, Yuemi, 70mai A800SE/M300/M310 Plus (trang hãng VN 404), VIETMAP D22/P2/V5/C9/G40/C61 PRO/C65/G79/X9S/IR22/A50 (không có trong sitemap vietmap.vn). Cần kỹ thuật kiểm tay hoặc lấy tài liệu từ nhà phân phối.
 
 ## 2. Bộ 15 bài test (kế hoạch 28/09)
 
@@ -37,12 +65,26 @@ Chưa đối chiếu được: BlackVue (blackvue.com chặn truy cập tự đ�
 | 9 | Mở/đóng tư vấn từ card & so sánh | **Đạt** | Một modal tại một thời điểm; `product_id` đúng; đóng thì mở lại bảng so sánh, focus về nút. |
 | 10 | Form OK / API lỗi / mạng lỗi | **Đạt (giả lập)** | POST `/api/leads`; chỉ báo "Đã gửi" khi `{"success": true}`; `success:false`, HTTP 500, mất mạng → giữ dữ liệu + hotline 0365 365 911. **CX** với backend thật. |
 | 11 | `?page=2#catalog` / tắt JS | **Đạt** | Không còn link `?page=`; tham số bị bỏ qua, canonical sạch; nút "Xem thêm" 12→24; noscript đủ 81 link. |
-| 12 | 5 ca xe + 5 claim ngẫu nhiên | **Đạt một phần** | 10 claim đối chiếu hãng (mục 1). Ca xe: cần reviewer ký nguồn/ngày từng ca. |
+| 12 | 5 ca xe + 5 claim ngẫu nhiên | **Đạt một phần** | 34 mẫu có nguồn hãng (mục 1). Ca xe: cần reviewer ký nguồn/ngày từng ca. |
 | 13 | 4 VideoObject | **Đạt** | Đủ name/description/thumbnail/embed/uploadDate thật; 4 video oEmbed 200 (xem được). |
 | 14 | Production HTTP/robots/canonical/sitemap | **CX** | Bản mới chưa lên production. Hiện `/camera-hanh-trinh-o-to` và `/camera-hanh-trinh-o-to-2025` đều 200, index, tự canonical → cần SEO chốt 301/canonical cho URL 2025. Preview: noindex ✓. |
-| 15 | Mobile + hiệu năng + lead | **Đạt một phần** | 375px không cuộn ngang, form 2 trường/hàng, video cuộn ngang. **CX**: CWV thực, CRM nhận lead thử. |
+| 15 | Mobile + hiệu năng + lead | **Đạt một phần** | 375px không cuộn ngang; lab mobile (mục 3) LCP ~0,8s, CLS ≤0,002. **CX**: CWV thực (CrUX) sau khi lên production, CRM nhận lead thử. |
 
-## 3. Còn chờ bộ phận khác
+## 3. Hiệu năng lab (mobile)
+
+Puppeteer, iPhone 12, mạng 1,6 Mbps / 150 ms, CPU chậm 4×, 5 lượt, trung vị:
+
+| Chỉ số | Trước (7b26570e) | Sau (568b33cc) |
+|---|---|---|
+| FCP / LCP | ~0,85 s | ~0,84 s |
+| CLS | 0,002 | ≤ 0,002 |
+| Tổng thời gian chặn (TBT) | ~2,5 s | ~1,1 s |
+| Load | ~3,7 s | ~2,1 s |
+| Thời gian layout | ~2,3 s | ~0,75 s |
+
+Thay đổi: tự host font Inter (latin + vietnamese, bỏ Google Fonts) để khỏi dàn trang lại khi font về; `content-visibility:auto` cho các section dưới màn hình đầu (trừ catalog/case có modal); link neo và URL có `#` render đủ trang trước khi cuộn (đã test mọi link neo desktop + mobile). Số liệu lab trên máy dev, không thay cho CWV thực.
+
+## 4. Còn chờ bộ phận khác
 
 - **Quản lý sản phẩm:** bảng offer theo bộ (VAT/công lắp/phụ kiện) cho 80 model, giá 18 mẫu "Liên hệ", `offer_id` cho các phiên bản.
 - **Kỹ thuật:** ký bảng claim mục 1; xác nhận A810 4G; kiểm tay BlackVue.
