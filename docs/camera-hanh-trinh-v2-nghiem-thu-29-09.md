@@ -18,20 +18,20 @@ Người chạy: dev (Claude Code). Ký duyệt claim: **Nguyễn Quang Đạo**
 | 7 | 70mai M800 | Bộ nhớ eMMC tích hợp; 2 kênh | https://www.70mai.com/vn/m800/ | Khớp (dung lượng 128GB lấy từ PDP Auto365) | |
 | 8 | 70mai A510 | GPS & ADAS tích hợp; 1944P; 2 kênh | https://www.70mai.com/vn/a510/ | Khớp | |
 | 9 | 70mai T400 | 3 kênh trước – trong – sau; 1440P | https://www.70mai.com/vn/t400/ | Khớp | |
-| 10 | 70mai A810 | 4G qua phụ kiện | https://www.70mai.com/vn/a810/ | **Không công bố** trên trang hãng VN (chỉ nêu Hardwire Kit UP03). Chưa sửa dữ liệu — cần kỹ thuật xác nhận giữ hay chuyển `lte: unknown`. | |
+| 10 | 70mai A810 | 4G qua phụ kiện | https://www.70mai.com/global/a810/ | Khớp — trang hãng global ghi "4G Connectivity (Optional)", cần Hardwire Kit UP04 mua riêng, chỉ bán ở một số khu vực → cần xác nhận UP04 có bán tại VN | |
 | 11 | 70mai A210 | 1080P; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a210/ | Khớp | |
-| 12 | 70mai 4K A810 Lite | 4K; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a810lite/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** ADAS (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
-| 13 | 70mai M310 | 1296P; Giám sát đỗ xe | https://www.70mai.com/vn/m310/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
-| 14 | 70mai A200 | 1080P; Giám sát đỗ xe | https://www.70mai.com/vn/a200/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 12 | 70mai 4K A810 Lite | 4K; GPS; Wi-Fi; Giám sát đỗ xe | https://www.70mai.com/vn/a810lite/ | **Lệch:** trang hãng (VN + global) chỉ có phát hiện va chạm khi đỗ (G-sensor), không có ADAS; trang Auto365 ghi ADAS "Có" → cần kỹ thuật xác nhận, nếu đúng thì đổi thành "Chưa xác nhận" | |
+| 13 | 70mai M310 | 1296P; Giám sát đỗ xe | https://www.70mai.com/vn/m310/ | Khớp — trang hãng ghi "Điều khiển ứng dụng" (kết nối Wi-Fi với điện thoại) | |
+| 14 | 70mai A200 | 1080P; Giám sát đỗ xe | https://www.70mai.com/vn/a200/ | Khớp — trang hãng ghi "Điều khiển ứng dụng" (kết nối Wi-Fi với điện thoại) | |
 | 15 | 70MAI T800 4K | Ghi 3 kênh; 1080P; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/t800/ | Khớp | |
 | 16 | 70MAI 4K A810S | Ghi trước + sau; 4K; GPS; Wi-Fi; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/a810s/ | Khớp | |
 | 17 | VietMap L110 | 2K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-l110 | Khớp | |
 | 18 | Vietmap V740 | Ghi trước + sau; 1080P; GPS; Wi-Fi; ADAS; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-v740 | Khớp | |
-| 19 | 70mai Omni | 1080P; GPS; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/omni/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi, Bộ nhớ eMMC (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 19 | 70mai Omni | 1080P; GPS; ADAS; Giám sát đỗ xe | https://www.70mai.com/vn/omni/ | Khớp phần ứng dụng ("đồng bộ với Ứng dụng 70mai"). **Chưa thấy trên trang hãng:** bộ nhớ eMMC — cần kỹ thuật xác nhận | |
 | 20 | Vietmap R440: Màn hình gương thế hệ mới | Ghi trước + sau; 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-r440 | Khớp | |
 | 21 | Vietmap S720 | 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-s720 | Khớp | |
 | 22 | VIETMAP S860 | Ghi trước + sau; 3K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-s860 | Khớp | |
-| 23 | GƯƠNG 70MAI S500 | Ghi trước + sau; 1944P; Giám sát đỗ xe | https://www.70mai.com/vn/s500/ | Khớp phần đã ghi. **Chưa thấy trên trang hãng:** Wi-Fi (dữ liệu lấy từ PDP Auto365, chờ kỹ thuật xác nhận) | |
+| 23 | GƯƠNG 70MAI S500 | Ghi trước + sau; 1944P; Giám sát đỗ xe | https://www.70mai.com/vn/s500/ | Khớp — trang hãng ghi "Điều khiển ứng dụng" (kết nối Wi-Fi với điện thoại) | |
 | 24 | VIETMAP H68 | 1080P; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông | https://vietmap.vn/vietmap-h68 | Khớp | |
 | 25 | VIETMAP H9S | 1080P; Wi-Fi | https://vietmap.vn/vietmap-h9s | Khớp | |
 | 26 | VIETMAP H86 | Ghi trước + sau; 4K; GPS; Wi-Fi; Cảnh báo tốc độ/giao thông; Giám sát đỗ xe | https://vietmap.vn/vietmap-h86 | Khớp | |
@@ -46,7 +46,7 @@ Người chạy: dev (Claude Code). Ký duyệt claim: **Nguyễn Quang Đạo**
 
 Mục 11–34 đối chiếu tự động theo từ khoá trên trang hãng (bỏ header/nav/footer), reviewer cần xem lại trước khi ký.
 
-**Tổng: 34/81 mẫu có nguồn hãng**, trong đó 6 mẫu (A810, A810 Lite, M310, A200, Omni, S500) có claim chưa thấy trên trang hãng (không tự sửa dữ liệu).
+**Tổng: 34/81 mẫu có nguồn hãng**, còn 2 mẫu cần kỹ thuật xác nhận: **A810 Lite** (trang ghi ADAS nhưng hãng không công bố) và **Omni** (bộ nhớ eMMC).
 
 Chưa đối chiếu được (47 mẫu): BlackVue (blackvue.com bật xác minh chống bot), DDPAI (trang hãng không còn các mẫu này), Thinkware, Ellicam, UTOUR, Nextbase, HTD, HP, Yuemi, 70mai A800SE/M300/M310 Plus (trang hãng VN 404), VIETMAP D22/P2/V5/C9/G40/C61 PRO/C65/G79/X9S/IR22/A50 (không có trong sitemap vietmap.vn). Cần kỹ thuật kiểm tay hoặc lấy tài liệu từ nhà phân phối.
 
