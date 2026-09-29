@@ -821,6 +821,7 @@ h1{font-weight:500;letter-spacing:-2.2px}
 .hero ~ section{padding-top:12px;padding-bottom:12px}
 /* Bỏ qua dàn trang các section ngoài màn hình (catalog/case có modal fixed nên loại trừ) */
 .hero ~ section:not(#catalog):not(#case-thuc-te){content-visibility:auto;contain-intrinsic-size:auto 900px}
+html.cv-off .hero ~ section:not(#catalog):not(#case-thuc-te){content-visibility:visible}
 .content-banner,.content-banner-row{margin-top:10px;margin-bottom:10px}
 .content-banner-row.tech-banner-row{margin:0 0 16px}
 .tech-qa-block{margin-bottom:16px}
@@ -2698,6 +2699,17 @@ h1{font-weight:500;letter-spacing:-2.2px}
 
 <!-- JAVASCRIPT HỢP NHẤT DUY NHẤT -->
 <script>
+// Link neo: dàn trang đủ các section (content-visibility) trước khi cuộn để vị trí đích chính xác.
+(function() {
+  const renderAll = () => document.documentElement.classList.add("cv-off");
+  if (location.hash.length > 1) renderAll();
+  document.addEventListener("click", e => {
+    const a = e.target.closest && e.target.closest("a[href^=\"#\"]");
+    if (a && a.getAttribute("href").length > 1) renderAll();
+  }, true);
+  window.addEventListener("hashchange", renderAll);
+})();
+
 
 // Hai kênh không mặc định là trước–sau: một số model là trước–cabin/DMS.
 
