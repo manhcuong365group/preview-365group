@@ -24,6 +24,12 @@ for (const p of catalog) {
   else {
     const m = card.match(/<div class="price[^"]*">([^<]+)<\/div>/);
     if (!m || m[1] !== want) errors.push(`card lệch giá ${url}: ${m ? m[1] : "?"} ≠ ${want}`);
+    const cov = p.coverage || (p.channels === 3 ? "front-rear-cabin" : p.channels === 2 ? "front-rear" : "front");
+    const wantLabel = p.coverage_basis === "inferred" && p.channels > 1
+      ? `Bộ ${p.channels} kênh · hướng ghi cần xác nhận`
+      : { "front-rear-cabin": "Bộ 3 kênh · trước – sau – cabin", "front-rear": "Bộ 2 kênh · trước – sau", "front-cabin": "Bộ 2 kênh · trước – cabin", front: "Bản camera trước · 1 kênh" }[cov];
+    const lab = card.match(/<small class="bundle-label">([^<]+)<\/small>/);
+    if (!lab || lab[1] !== wantLabel) errors.push(`card lệch hướng ghi ${url}: ${lab ? lab[1] : "?"} ≠ ${wantLabel}`);
   }
 
   const li = html.match(new RegExp(`<li><a href="${url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">[^<]*— ([^<]+)</a></li>`));
@@ -35,4 +41,4 @@ if (errors.length) {
   console.error(`✗ ${errors.length} lỗi:\n` + errors.join("\n"));
   process.exit(1);
 }
-console.log(`✓ ${catalog.length} sản phẩm: giá khớp giữa catalog.ssot.js, card HTML và <noscript>.`);
+console.log(`✓ ${catalog.length} sản phẩm: giá và hướng ghi khớp giữa catalog.ssot.js, card HTML và <noscript>.`);
