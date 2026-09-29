@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản chấm | `auto365/bong-led/index.html`, SHA-256 `3064406686680e0018b27755a2e21d2a4187f3dca8a3607d9436f17c04e5f09c` |
+| Bản chấm | `auto365/bong-led/index.html`, SHA-256 `f5fef8fa81e483b2f78d43aa58a1f2e0abe0c9216c0d827b8b5361cb39a17e9d` |
 | Ngày chấm | 29/09/2026 |
 | Loại chấm | Tự chấm bản preview — **chưa phải phiếu nghiệm thu chính thức** |
 | Người kiểm duyệt nội dung | Nguyễn Quang Đạo (29/09/2026) |
@@ -22,13 +22,13 @@
 | **S** | | **27,8/30** | Chưa đạt 28,5 |
 | G1 | Trả lời trực tiếp | 9,5/10 | Đoạn trả lời ngay sau H1; bộ chọn trả lời có điều kiện |
 | G2 | Giới hạn & điều kiện | 9,4/10 | Thông báo rõ khi thiếu thông tin / không có 4300K / T10 |
-| G3 | Chứng cứ & thực thể | 4,4/5 | Nguồn theo 27 mã; case ghi nơi thi công; người duyệt + ngày. Trừ: case chưa có link tới trang trụ sở trên auto365.vn; địa chỉ trụ sở không thống nhất giữa các trang |
-| **G** | | **23,3/25** | Chưa đạt 23,75 |
+| G3 | Chứng cứ & thực thể | 4,8/5 | Nguồn theo 27 mã; 6 case ghi thi công tại Trụ sở chính (4/4/1/7 Đường số 3, P. Hiệp Bình) kèm link bản đồ; Organization schema có địa chỉ + hasMap; người duyệt + ngày. Trừ: chưa đối chiếu GBP của trụ sở |
+| **G** | | **23,7/25** | Sát ngưỡng 23,75 |
 | U1 | Dễ đọc (desktop + mobile 375px) | 4,8/5 | Kiểm bằng đo layout, không tràn ngang; accordion, bảng vuốt ngang |
 | U2 | Hành động | 4,7/5 | Bộ chọn, CTA, form có dự phòng. Trừ: chưa gửi lead thật |
 | U3 | Bộ bàn giao | 5/5 | 3 file cùng hash: `01-noi-dung-ban-duyet.md`, `02-huong-dan-cms-seo.md`, `03-phieu-cham-v17.md` |
 | **U** | | **14,5/15** | |
-| **Tổng** | | **93,6/100** | **Chưa đạt 95** |
+| **Tổng** | | **94,0/100** | **Chưa đạt 95** |
 
 ## Lỗi chặn
 
@@ -57,7 +57,7 @@
 1. Đưa bản mới lên auto365.vn theo `02-huong-dan-cms-seo.md` → S2 +0,7, xoá 2 lỗi chặn.
 2. Thêm link từ `/nang-cap-anh-sang` và các bài chân bóng về hub → S3 +0,3.
 3. Product xác nhận điện áp NaoEvo / S8 → C1 +0,5.
-4. Thống nhất địa chỉ trụ sở, gắn link trang trụ sở vào case → G3 +0,5.
-5. Gửi 1 lead thử thật → U2 +0,3.
+4. Gửi 1 lead thử thật → U2 +0,3.
+5. Đối chiếu địa chỉ trụ sở 4/4/1/7 với Google Business Profile → G3 +0,2.
 
-Ước tính sau khi làm đủ: **≈ 95,9/100**, SEO ≈ 28,8, GEO ≈ 23,8.
+Ước tính sau khi làm đủ: **≈ 95,8/100**, SEO ≈ 28,8, GEO ≈ 23,9.

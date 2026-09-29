@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bong-led/index.html` |
 | Preview | https://preview-365group.pages.dev/bong-led/ |
 | URL production (owner) | https://auto365.vn/nang-cap-anh-sang-bong-led |
-| SHA-256 bản duyệt | `3064406686680e0018b27755a2e21d2a4187f3dca8a3607d9436f17c04e5f09c` |
+| SHA-256 bản duyệt | `f5fef8fa81e483b2f78d43aa58a1f2e0abe0c9216c0d827b8b5361cb39a17e9d` |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 29/09/2026 |
 | Ngày đối chiếu dữ liệu sản phẩm | 28/09/2026 |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 (phiếu chấm: `03-phieu-cham-v17.md`) |
@@ -44,7 +44,7 @@
 | Trạng thái bán | 25 đang bán; NaoEvo S6 Pro H1 và S8 Pro 4300K (bản tổng) ngừng kinh doanh | Trang sản phẩm từng mã, kiểm 29/09/2026 |
 | Hệ thống | 90+ chi nhánh · 33 tỉnh thành | auto365.vn/chi-nhanh |
 | Hotline tổ chức | 0365 365 911 (`+84365365911`) | Xác nhận 28/09/2026 |
-| Nơi thi công case | Trụ sở chính Auto365 | Xác nhận 29/09/2026 |
+| Nơi thi công case | Trụ sở chính Auto365 — 4/4/1/7 Đường số 3, P. Hiệp Bình, TP.HCM | Xác nhận 29/09/2026 |
 | Điện áp NaoEvo / S8 | 12V theo dữ liệu bộ chọn | **Chờ Product xác nhận** — trang S8 ghi "16V" |
 
 Chi tiết từng mã (chân, điện áp, nhiệt màu, giá/đơn vị/VAT, bảo hành, trạng thái, link) nằm trong khối `#nguon-theo-ma` và JSON `#product-data` của HTML.
