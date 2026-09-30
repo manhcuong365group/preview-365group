@@ -734,8 +734,10 @@ h1{font-weight:500;letter-spacing:-2.2px}
   .market-card{scroll-snap-align:start;min-width:0}
   .accordion{grid-template-columns:1fr!important}
   .decision-grid,.branch-proof-grid,.benefit-grid,.locations,.term-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:repeat(2,1fr)!important;gap:10px!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding-bottom:8px;margin:0 -22px!important;padding-left:22px;padding-right:22px}
-  .tiers-grid{display:grid!important;grid-auto-flow:row!important;grid-template-columns:1fr!important;grid-auto-columns:auto!important;overflow:visible!important;scroll-snap-type:none!important;margin:0!important;padding:0!important}
-  .tier-card{scroll-snap-align:none}
+  .tiers-grid{display:grid!important;grid-auto-flow:column!important;grid-template-columns:none!important;grid-template-rows:auto!important;grid-auto-columns:82%!important;gap:12px!important;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 -22px!important;padding:4px 22px 10px!important;scroll-padding:0 22px}
+  .tiers-grid::-webkit-scrollbar{display:none}
+  .tier-card{scroll-snap-align:start;min-width:0}
+  .tier-card:hover{transform:none}
   .tech-detail-grid{grid-template-columns:1fr}
   .tech-qa-split{grid-template-columns:1fr}
   .tech-qa-split.tech-qa-split-rev .tech-qa-media,.tech-qa-split.tech-qa-split-rev .tech-qa-body{order:0}
