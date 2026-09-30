@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bong-led/index.html` |
 | Preview | https://preview-365group.pages.dev/bong-led/ |
 | URL production (owner) | https://auto365.vn/nang-cap-anh-sang-bong-led |
-| SHA-256 bản duyệt | `f5fef8fa81e483b2f78d43aa58a1f2e0abe0c9216c0d827b8b5361cb39a17e9d` |
+| SHA-256 bản duyệt | `29467dbd83beb00cc5efefcd7f39c304d38bf0bc2c41e87bdd96eaadd6c37548` |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 29/09/2026 |
 | Ngày đối chiếu dữ liệu sản phẩm | 28/09/2026 |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 (phiếu chấm: `03-phieu-cham-v17.md`) |
