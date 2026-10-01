@@ -1041,7 +1041,7 @@ const caseTrack = document.querySelector("[data-rail]");
 const railPrev = document.querySelector("[data-rail-prev]");
 const railNext = document.querySelector("[data-rail-next]");
 function syncRail(){
-  if(!caseTrack) return;
+  if(!caseTrack||!railPrev||!railNext) return;
   railPrev.disabled = caseTrack.scrollLeft < 4;
   railNext.disabled = caseTrack.scrollLeft + caseTrack.clientWidth >= caseTrack.scrollWidth - 4;
 }
@@ -1057,8 +1057,8 @@ caseFilterButtons.forEach(btn=>{
 });
 if(caseTrack){
   const step = ()=> (caseCards[0] ? caseCards[0].offsetWidth : 260) + 16;
-  railPrev.addEventListener("click",()=>caseTrack.scrollBy({left:-step(),behavior:"smooth"}));
-  railNext.addEventListener("click",()=>caseTrack.scrollBy({left:step(),behavior:"smooth"}));
+  if(railPrev) railPrev.addEventListener("click",()=>caseTrack.scrollBy({left:-step(),behavior:"smooth"}));
+  if(railNext) railNext.addEventListener("click",()=>caseTrack.scrollBy({left:step(),behavior:"smooth"}));
   caseTrack.addEventListener("scroll",syncRail,{passive:true});
   window.addEventListener("resize",syncRail);
   syncRail();
