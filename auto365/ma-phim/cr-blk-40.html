@@ -1416,6 +1416,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
       <h2 id="film-lead-title">Nhận tư vấn miễn phí</h2>
       <form id="film-lead-form">
         <div class="film-lead-grid">
+          <div class="film-lead-field full"><label for="film-lead-name">Họ và tên</label><input id="film-lead-name" name="fullname" autocomplete="name" placeholder="Nhập họ tên"></div>
           <div class="film-lead-field"><label for="film-lead-vehicle">Dòng xe</label><input id="film-lead-vehicle" name="vehicle" placeholder="VD: Ford Ranger, VF5, CX-5" required></div>
           <div class="film-lead-field"><label for="film-lead-year">Năm xe</label><input id="film-lead-year" name="year" inputmode="numeric" placeholder="VD: 2022"></div>
           <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
@@ -1423,10 +1424,11 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Giảm chói kính lái</option><option>Cân bằng chống nóng và quan sát</option><option>Giữ kính lái sáng khi đi đêm</option></select></div>
           <input type="hidden" id="film-lead-package" name="package" value="3M Crystalline CR BLK 40">
         </div>
-        <p class="film-lead-instruction">Sau khi mở Zalo, anh/chị cần dán nội dung và bấm gửi. Thông tin chưa được gửi tự động.</p>
-        <textarea id="film-lead-message" class="film-lead-message" readonly aria-label="Nội dung tư vấn để sao chép"></textarea>
-        <button class="film-lead-submit" type="submit">Sao chép nội dung và mở Zalo</button>
-        <a class="film-lead-zalo" href="https://zalo.me/0365365365" target="_blank" rel="noopener">Mở Zalo Auto365</a>
+        <input name="form-honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+        <label class="film-lead-consent"><input type="checkbox" name="consent" value="true" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
+        <textarea id="film-lead-message" class="film-lead-message" hidden readonly aria-label="Nội dung tư vấn để sao chép"></textarea>
+        <button class="film-lead-submit" type="submit">Gửi thông tin tư vấn</button>
+        <a class="film-lead-zalo" hidden href="https://zalo.me/0365365365" target="_blank" rel="noopener">Mở Zalo Auto365</a>
         <p class="film-lead-status" aria-live="polite"></p>
       </form>
     </div>
@@ -1773,15 +1775,18 @@ updateFitment();
       document.addEventListener('keydown',function(event){if(event.key==='Escape'&&!modal.hidden)closeModal();});
       form.addEventListener('submit',function(event){
         event.preventDefault();if(!form.reportValidity())return;
+        if(form.elements['form-honey']&&form.elements['form-honey'].value)return;
         var data=new FormData(form),phone=String(data.get('phone')||'').trim();
         if(!/^(?:\+84|0)(?:[ .-]?\d){8,10}$/.test(phone)){status.textContent='Vui lòng nhập số điện thoại Việt Nam hợp lệ.';form.elements.phone.focus();return;}
-        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Gói quan tâm: '+data.get('package')].join('\n');
-        messageField.value=message;
-        var zaloUrl='https://zalo.me/0365365365';
-        var openZalo=function(){var popup=window.open(zaloUrl,'_blank','noopener');return !!popup;};
-        status.textContent='Đang chuẩn bị nội dung để gửi Zalo…';
-        if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(message).then(function(){var opened=openZalo();status.textContent=opened?'Đã sao chép nội dung. Mở Zalo, dán vào cuộc trò chuyện và bấm gửi.':'Đã sao chép nội dung. Nếu Zalo chưa mở, bấm liên kết bên dưới, dán vào cuộc trò chuyện và bấm gửi.';}).catch(function(){var opened=openZalo();status.textContent=opened?'Chưa sao chép được. Nội dung đã hiển thị bên dưới; hãy chọn sao chép rồi dán vào Zalo.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';});}
-        else{var opened=openZalo();status.textContent=opened?'Chưa sao chép tự động được. Hãy sao chép nội dung bên dưới, dán vào Zalo và bấm gửi.':'Chưa sao chép được. Hãy sao chép nội dung bên dưới; nếu Zalo chưa mở, bấm liên kết “Mở Zalo Auto365”.';}
+        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Họ tên: '+(data.get('fullname')||'Chưa cung cấp'),'Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Mã / gói quan tâm: '+data.get('package')].join('\n');
+        var body=new FormData();body.append('fullname',data.get('fullname')||'');body.append('phone',phone);body.append('car_model',[data.get('vehicle'),data.get('year')].filter(Boolean).join(' '));body.append('province',data.get('city')||'');body.append('note',message);body.append('package',data.get('package')||'');body.append('consent','true');body.append('consent_at',new Date().toISOString());body.append('service','Phim cách nhiệt 3M');body.append('source_page',document.title);body.append('source_url',location.href);body.append('referrer',document.referrer||'');
+        var q=new URLSearchParams(location.search);['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){body.append(k,q.get(k)||'')});
+        var submit=form.querySelector('.film-lead-submit');submit.disabled=true;submit.textContent='Đang gửi...';status.textContent='';
+        var fallback=function(msg){messageField.value=message;messageField.hidden=false;form.querySelector('.film-lead-zalo').hidden=false;status.textContent=msg;};
+        fetch('/api/leads',{method:'POST',body:body,credentials:'same-origin'}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})}).then(function(p){
+          if(p.ok&&p.j&&p.j.success===true){status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho bạn sớm.';form.reset();messageField.hidden=true;}
+          else fallback((p.j&&p.j.message)||'Chưa gửi được. Thông tin của bạn vẫn còn bên dưới — gọi 0365 365 365 hoặc mở Zalo và dán nội dung để gửi.');
+        }).catch(function(){fallback('Chưa gửi được lúc này. Thông tin của bạn vẫn còn bên dưới — gọi 0365 365 365 hoặc mở Zalo và dán nội dung để gửi.');}).finally(function(){submit.disabled=false;submit.textContent='Gửi thông tin tư vấn';});
       });
     })();
   </script>
@@ -1887,5 +1892,6 @@ main h2,.section h2,.section-title,.mg2-head h2,#he-thong-auto365 h2{font-weight
 <style>.package-grid:has(> .package:only-child){grid-template-columns:minmax(0,640px)!important;justify-content:center}</style>
 <style>.hero-byline{margin:10px 0 0;font-size:12.5px;color:#aeb5bf}.hero-byline a{color:#fff;text-decoration:underline;text-underline-offset:2px}.hero-lead strong{color:#fff}</style>
 <style>.mx-gal{margin-top:18px}.mx-gal h3{font-size:16px;margin:0 0 10px}.mx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mx-grid figure{margin:0}.mx-grid img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border-radius:8px;display:block}.mx-grid figcaption{font-size:12.5px;color:#6b737d;margin-top:6px}@media(max-width:640px){.mx-grid{grid-template-columns:1fr;gap:12px}}</style>
+<style>.film-lead-consent{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:#4b5563;margin:12px 0}.film-lead-consent input{margin-top:3px}.film-lead-consent a{color:#e31b2d}</style>
 </body>
 </html>
