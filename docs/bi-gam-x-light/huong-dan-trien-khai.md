@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `4abb19c423a1b4d35b52b74c9a0a8682436cf72e14a21aeb83bbdf943de8ac89` (commit `3b65224e`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `0168beb5752b074512a567675c3d63121c9294781df11bcc4e8f79d2d766d266` (commit `acf8376c`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
@@ -45,6 +45,8 @@
 - Lead test đã gửi 30/09 vào API production: **mã 60** ("TEST X-LIGHT (Claude) - vui long xoa", SĐT 0900000000). CRM kiểm các trường rồi xoá.
 
 ## 5. Liên kết nội bộ cần gắn (sau khi URL production trả 200)
+
+Đoạn HTML dán sẵn + checklist từng trang: [doan-link-ve-hub.md](doan-link-ve-hub.md).
 
 Anchor gợi ý, đặt trong đoạn văn có ngữ cảnh, **mỗi trang 1 link**, không lặp anchor ở mọi đoạn.
 
