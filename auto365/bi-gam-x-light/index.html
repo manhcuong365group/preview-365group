@@ -103,7 +103,7 @@
     </div>
 
   </div>
-<div class="container"><dl class="xl-hero-stats"><div><dt>15</dt><dd>mẫu X-Light đang có trên danh mục</dd></div><div><dt>30</dt><dd>hồ sơ xe thật đã lắp tại Auto365</dd></div><div><dt>4–6,2tr</dt><dd>khoảng giá sản phẩm niêm yết, chưa VAT</dd></div><div><dt>12/24V</dt><dd>cần kiểm tra đúng hệ điện của xe</dd></div></dl></div>
+<div class="container"><dl class="xl-hero-stats"><div><dt data-stat="models">15</dt><dd>mẫu X-Light đang có trên danh mục</dd></div><div><dt data-stat="cases">30</dt><dd>hồ sơ xe thật đã lắp tại Auto365</dd></div><div><dt data-stat="price">4–6,2tr</dt><dd>khoảng giá sản phẩm niêm yết, chưa VAT</dd></div><div><dt>12/24V</dt><dd>cần kiểm tra đúng hệ điện của xe</dd></div></dl></div>
 </section><div class="qs-modal" id="qs-reco" role="dialog" aria-modal="true" aria-labelledby="qs-modal-title"><div class="qs-modal-inner"><div class="qs-modal-head"><h3 id="qs-modal-title">Các mẫu theo tiêu chí anh/chị đã chọn</h3><button type="button" class="qs-modal-close" id="qs-modal-close" aria-label="Đóng">×</button></div><div class="qs-result-list" id="qs-result" aria-live="polite"></div></div></div><section class="section models-section" id="dong-san-pham">
   <div class="container">
     <div class="section-heading split-heading">
@@ -1524,4 +1524,4 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
-</script></body></html>
+</script><script id="xl-hero-stats-js">(function(){function run(){var c=document.querySelectorAll(".product-showcase-grid .p-card"),k=document.querySelectorAll("#case-grid .nr-case"),ps=[];c.forEach(function(e){var v=+e.getAttribute("data-price");if(v)ps.push(v)});var f=function(v){return (Math.round(v/1e5)/10).toString().replace(".",",").replace(/,0$/,"")};var set=function(n,v){var e=document.querySelector("[data-stat="+n+"]");if(e&&v)e.textContent=v};if(c.length)set("models",c.length);if(k.length)set("cases",k.length);if(ps.length)set("price",f(Math.min.apply(0,ps))+"–"+f(Math.max.apply(0,ps))+"tr")}if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",run);else run()})();</script></body></html>
