@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `0168beb5752b074512a567675c3d63121c9294781df11bcc4e8f79d2d766d266` (commit `acf8376c`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `34daadc4c4490489d6a1d29aa4e5f447c11575d0f3f2436804527f116ad6640b` (commit `a0bea3c4`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
