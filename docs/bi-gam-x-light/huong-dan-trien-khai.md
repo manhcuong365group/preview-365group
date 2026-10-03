@@ -10,7 +10,7 @@
 | Thẻ | Preview (giữ nguyên) | Production |
 |---|---|---|
 | URL | preview-365group.pages.dev/bi-gam-x-light/ | **https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light** (trả HTTP 200) |
-| `<title>` | Bi gầm X-Light: Giá sản phẩm, so sánh mẫu & tư vấn | Auto365 | giữ nguyên |\| Auto365 | giữ nguyên |
+| `<title>` | Bi gầm X-Light: Giá sản phẩm, so sánh mẫu & tư vấn | Auto365 | giữ nguyên |
 | Meta description | So sánh bi gầm X-Light theo lens, Cos/Pha, nhiệt màu, điện áp và giá. Xem mẫu hiện hành, case xe thực tế, chi phí lắp đặt và gửi cấu hình để Auto365 tư vấn theo xe. | giữ nguyên |
 | H1 | Bi gầm X-Light: các dòng hiện có và cách chọn phù hợp | giữ nguyên |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light | giữ nguyên (tự trỏ) |
