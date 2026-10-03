@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `d3a38a052da44f836acd62ed663b36a9018ed67d810880b5709a195db47feb51` (commit `f2ef4862`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `843ccf5f7683af9c7a9e6f292fe2ca571367752d8060ec126eb7e8526714a271` (commit `aca045e9`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
@@ -19,6 +19,8 @@
 | og:url, `@id` trong schema | đã trỏ URL production | giữ nguyên |
 
 > Không copy `auto365/_headers` sang production. Preview phải luôn giữ `noindex`.
+>
+> **Xoá khối kiểm tra nội bộ** trước khi đăng: đoạn từ comment `<!-- INTERNAL-CHECK ... -->` tới hết `<script id="xl-internal-check-js">` ở cuối bài (sau `#faq`), cùng `<style id="xl-internal-check-css">` trong `<head>`. Khối này tự ẩn ngoài `pages.dev`, nhưng vẫn phải xoá khỏi mã production.
 
 ## 2. Ảnh
 
