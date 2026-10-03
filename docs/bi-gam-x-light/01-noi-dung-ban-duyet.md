@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `843ccf5f7683af9c7a9e6f292fe2ca571367752d8060ec126eb7e8526714a271` (commit `aca045e9`) |
+| SHA-256 bản duyệt | `bbab8e22c1b555ef846fe54a1fe862a01bc85a8f72800c8c09d05659d74230a8` (commit `25ab7b2a`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026", schema `dateModified` 2026-09-30) |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -67,7 +67,7 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 ## Hồ sơ xe (case)
 
 - 30 case, mỗi dòng gắn với **URL sản phẩm mà chính bài case dẫn tới** (`data-sku`), không ghép theo tên.
-- 28/30 khớp SKU. **Honda City** và **Honda CR-V 1.5L L 2018** ghi "F10 New (chưa xác nhận phiên bản)", không tính cho SKU nào — chờ phiếu xưởng.
+- 30/30 gắn SKU theo link sản phẩm trong bài case. **Honda City** và **Honda CR-V 1.5L L 2018** (bài ghi "F10 New") gắn **F10 New 2025** vì bài case dẫn tới trang sản phẩm này — quyết định 03/10/2026.
 - Nơi lắp lấy từ bài case: 29/30 ghi Auto365 – Trụ sở chính; Hyundai Tucson "hồ sơ chưa ghi".
 - Đời xe lấy từ hồ sơ: XL7 2023, Outlander 2021; City, Tucson, Limo Green ghi "hồ sơ chưa ghi đời".
 
@@ -81,3 +81,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Phân phiên bản | Không xếp hạng theo đời; chỉ ghi đúng tên/đời theo trang sản phẩm | 28/09/2026 |
 | Người duyệt | Nguyễn Quang Đạo | 30/09/2026 |
 | Sapo | Bản do người phụ trách nội dung viết (answer-first) | 02/10/2026 |
+| Case Honda City / CR-V 2018 | Gắn F10 New 2025 theo link sản phẩm trong bài case | 03/10/2026 |
