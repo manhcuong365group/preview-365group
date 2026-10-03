@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `47638995d593b36c36cdcf5c1169db8aaa10ce3578a25b51a3ac245ebd96f922` (commit `7e7397ea`) |
+| SHA-256 bản duyệt | `23580b502a8352b2a77f4e80132d97ac6ffca548afcfa81f69f398801a2e9f75` (commit `9b86b3bb`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026", schema `dateModified` 2026-09-30) |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -35,7 +35,7 @@
 | 5 | `chi-phi-hoan-thien` | Chi phí lắp bi gầm X-Light gồm những gì? | 7 khoản; giá niêm yết cập nhật 30/09/2026 |
 | 6 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
 | 7 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
-| 8 | `vi-sao-chon` | Auto365 giúp bạn chọn và lắp bi gầm X-Light như thế nào? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
+| 8 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
 | 9 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
 | 10 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
 | 11 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 6 bài |
