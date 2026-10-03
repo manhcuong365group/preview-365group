@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `f84aba30896b8964facb686f678ae750f01c955cdb08f8a79ad352e9572ddbcf` (commit `ea11db57`) |
+| SHA-256 bản duyệt | `ffca51120e589dcdc253f36f926ba43eb8a0e43516c0acd3f095fa1306bfbe83` (commit `a302e35e`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026", schema `dateModified` 2026-09-30) |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
