@@ -560,21 +560,46 @@
       "url": "https://auto365.vn"
     },
     {
+      "@type": "AutoRepair",
+      "@id": "https://auto365.vn/#tru-so-chinh",
+      "name": "Auto365.vn – Trụ Sở Chính",
+      "url": "https://auto365.vn/",
+      "telephone": "+84365365365",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4/4/1/7 Đường số 3, Phường Hiệp Bình",
+        "addressLocality": "Thành phố Hồ Chí Minh",
+        "addressCountry": "VN"
+      },
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auto365.vn/#team-content",
+      "name": "Team Content Auto365",
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
       "@type": "WebPage",
       "@id": "https://auto365.vn/ir50#webpage",
       "url": "https://auto365.vn/ir50",
       "name": "3M Ceramic IR50 kính lái: giá 3.300.000đ, thông số | Auto365",
       "description": "Phim 3M IR50 là mã kính lái của dòng Ceramic IR: VLT 50%, TSER 54%, phi kim. Giá dán 3.300.000đ, so với NR35, CR BLK 40 và xe thực tế tại Auto365.",
-      "dateModified": "2026-10-02",
+      "dateModified": "2026-10-03",
       "author": {
         "@type": "Organization",
-        "@id": "https://auto365.vn/#organization",
-        "name": "Auto365"
+        "@id": "https://auto365.vn/#team-content",
+        "name": "Team Content Auto365"
       },
       "reviewedBy": {
         "@type": "Person",
         "@id": "https://auto365.vn/tac-gia/dang-minh-hoang#person",
         "name": "Đặng Minh Hoàng",
+        "url": "https://auto365.vn/tac-gia/dang-minh-hoang",
         "jobTitle": "Giám đốc điều hành 3M Pro Shop & 3M Training Center"
       },
       "mainEntity": {
@@ -582,6 +607,18 @@
       },
       "breadcrumb": {
         "@id": "https://auto365.vn/ir50#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://auto365.vn/#organization"
+      },
+      "citation": {
+        "@type": "CreativeWork",
+        "name": "3M Automotive Window Film Ceramic IR Series Technical Data Sheet – Revision B, July 2021",
+        "url": "https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf",
+        "publisher": {
+          "@type": "Organization",
+          "name": "3M"
+        }
       }
     },
     {
@@ -636,7 +673,9 @@
           "name": "Điều kiện tham chiếu",
           "value": "Kính Auto 75, VLT nền 73%; 3M TDS Ceramic IR Revision B 07/2021"
         }
-      ]
+      ],
+      "model": "IR50",
+      "url": "https://auto365.vn/ir50"
     },
     {
       "@type": "Service",
@@ -644,9 +683,7 @@
       "name": "Dịch vụ tư vấn và dán 3M Ceramic IR50",
       "serviceType": "Tư vấn cấu hình và dán phim cách nhiệt ô tô",
       "provider": {
-        "@type": "Organization",
-        "@id": "https://auto365.vn/#organization",
-        "name": "Auto365"
+        "@id": "https://auto365.vn/#tru-so-chinh"
       },
       "areaServed": {
         "@type": "Country",
@@ -657,13 +694,15 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "3300000",
-        "priceCurrency": "VND",
-        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 3300000,
+          "priceCurrency": "VND"
+        },
         "url": "https://auto365.vn/ir50",
         "description": "Giá tham khảo dịch vụ dán 3M Ceramic IR50 cho kính lái, xác nhận theo dòng xe",
         "seller": {
-          "@id": "https://auto365.vn/#organization"
+          "@id": "https://auto365.vn/#tru-so-chinh"
         }
       }
     },
@@ -706,7 +745,7 @@
           "name": "3M IR50 dán kính nào?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "IR50 chỉ dán kính lái. Kính sườn và kính sau trong dòng Ceramic IR dùng IR25 (VLT 25%) hoặc IR15 (VLT 16%) trên kính Auto 75."
+            "text": "Trong cấu hình Auto365 đang triển khai, IR50 được tư vấn cho kính lái. Kính sườn và kính sau phối IR25 (VLT 25%) hoặc IR15 (VLT 16%) trên kính Auto 75."
           }
         },
         {
@@ -761,7 +800,7 @@
     }
   ]
 }
-  </script>
+</script>
 <style>.mx-gal{margin-top:18px}.mx-gal h3{font-size:16px;margin:0 0 10px}.mx-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.mx-grid figure{margin:0}.mx-grid img{width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border-radius:8px;display:block}.mx-grid figcaption{font-size:12.5px;color:#6b737d;margin-top:6px}@media(max-width:640px){.mx-grid{grid-template-columns:1fr;gap:12px}}</style>
 </head>
 
@@ -796,7 +835,7 @@
             </div>
             <h1>3M Ceramic IR50: thông số và cách chọn cho kính lái</h1>
             <p class="hero-lead"><strong>3M IR50</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Ceramic IR</strong> (phim gốm ceramic, phi kim theo mô tả 3M), là mã kính lái của dòng này. Trên kính Auto 75, phim có VLT 50%, TSER 54% và giảm chói 32% (3M TDS Rev B, 07/2021). Giá dán tại Auto365 từ 3.300.000đ cho kính lái, kèm bảo hành điện tử 3M. Hợp với người muốn kính lái sáng, hay đi tối hoặc đi mưa.</p>
-            <p class="hero-byline">Kiểm duyệt kỹ thuật: <a href="https://auto365.vn/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-02">02/10/2026</time></p>
+            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-03">03/10/2026</time></p>
             <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
               <div><span class="hero-offer-label">Giá dán IR50 từ</span><div class="hero-price">3.300.000đ</div><div class="hero-price-note">Kính lái · xác nhận theo dòng xe khi báo giá. Dán trọn xe: gói 3M Ceramic IR từ 7.200.000đ.</div></div>
               <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
@@ -822,8 +861,8 @@
               <div class="fit-result" aria-live="polite">
                 <strong id="fitmentPrimary">IR50</strong>
                 <span class="fit-pill" id="fitmentTag">Mã kính lái của dòng Ceramic IR</span>
-                <p id="fitmentReason">Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.</p>
-                <div class="fit-meta"><span id="fitmentAltText">Có thể đối chiếu thêm NR35 hoặc CR BLK 40</span><a href="ir50.html" id="fitmentLink">Xem IR50 →</a></div>
+                <p id="fitmentReason">Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.</p>
+                <div class="fit-meta"><span id="fitmentAltText">Có thể đối chiếu thêm NR35 hoặc CR BLK 40</span><a href="https://auto365.vn/ir50" id="fitmentLink">Xem IR50 →</a></div>
               </div>
             </div>
             <p class="metric-ribbon-label">Thông số IR50 · Auto 75 Glass</p>
@@ -847,7 +886,7 @@
         <h2 class="section-title" id="la-gi-title">3M IR50 là gì?</h2>
         <div class="irx-intro">
           <div>
-            <p>IR50 là mã kính lái của dòng <strong>3M Ceramic IR</strong>, dòng phim gốm ceramic mà 3M mô tả là không chứa kim loại. Cả dòng chỉ có ba mã: IR50 dán kính lái, còn IR25 và IR15 lo phần kính sườn, kính sau. Nếu bạn hỏi “IR50 dán kính nào” thì câu trả lời ngắn gọn là kính lái, và trong dòng Ceramic IR cũng chỉ có IR50 làm việc này.</p>
+            <p>IR50 là mã kính lái của dòng <strong>3M Ceramic IR</strong>, dòng phim gốm ceramic mà 3M mô tả là không chứa kim loại. Auto365 hiện triển khai ba mã Ceramic IR: IR50, IR25, IR15; IR50 được tư vấn cho kính lái, còn IR25 và IR15 cho kính sườn, kính sau. Nếu bạn hỏi “IR50 dán kính nào” thì trong cấu hình Auto365 đang triển khai, câu trả lời ngắn gọn là kính lái.</p>
             <p>IR50 sáng hơn hẳn hai mã còn lại: trên kính ô tô xanh Auto 75, VLT đạt 50%, cao gấp đôi IR25 (25%) và gấp ba IR15 (16%). Đổi lại, phim vẫn cản nhiệt khá với TSER 54%, IRER 66% và cản UV 99,8%. Trên kính trong 6 mm, 3M ghi VLT 60%, nên con số thật trên xe bạn sẽ nằm theo kính nguyên bản, Auto365 đo trước khi dán.</p>
             <p>IR50 hợp với chủ xe hay chạy tối, đi mưa, vào hầm và muốn kính lái thoáng, nhìn rõ. Nếu bạn thấy chói nắng là vấn đề lớn hơn, nên xem thêm NR35 (giảm chói 52%) hoặc CR BLK 40 (giảm chói 44%) trước khi chốt.</p>
           </div>
@@ -855,7 +894,7 @@
             <h3>Đặc điểm chính</h3>
             <ul>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Dòng 3M Ceramic IR, phim gốm phi kim theo mô tả 3M</span></li>
-              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Chỉ dùng cho kính lái; kính sườn, kính sau dùng IR25 hoặc IR15</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Tư vấn cho kính lái trong cấu hình Auto365; kính sườn, kính sau phối IR25 hoặc IR15</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>VLT 50% trên kính Auto 75, 60% trên kính trong 6 mm</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>TSER 54%, IRER 66%, cản UV 99,8% (Auto 75)</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Giảm chói 32%, kính lái vẫn sáng khi đi tối</span></li>
@@ -884,7 +923,7 @@
     <div class="code-switch-wrap">
       <nav class="container code-switch" aria-label="Chọn mã Ceramic IR">
         <span class="switch-label">Chọn mã</span>
-        <a class="code-link active" href="ir50.html" aria-current="page">IR50</a><a class="code-link" href="ir25.html">IR25</a><a class="code-link" href="ir15.html">IR15</a>
+        <a class="code-link active" href="https://auto365.vn/ir50" aria-current="page">IR50</a><a class="code-link" href="https://auto365.vn/ir25">IR25</a><a class="code-link" href="https://auto365.vn/ir15">IR15</a>
       </nav>
     </div>
 
@@ -922,7 +961,7 @@
     <section class="section" id="phu-hop">
       <div class="container">
         <h2 class="section-title">IR50 nên được cân nhắc ở vị trí kính nào?</h2>
-        <p class="section-desc">IR50 chỉ dán <strong>kính lái</strong>. Kính sườn và kính sau trong cùng dòng dùng IR25 hoặc IR15, Auto365 không dán IR50 lên kính sườn.</p>
+        <p class="section-desc">Trong cấu hình Auto365 đang triển khai, IR50 được tư vấn cho <strong>kính lái</strong>; kính sườn và kính sau phối IR25 hoặc IR15.</p>
 
         <div class="position-grid">
           <article class="pos recommended">
@@ -931,17 +970,17 @@
             <p>Đây là vị trí của IR50 trong bảng giá Ceramic IR. Xe có kính nền đậm nên đo VLT kính nguyên bản trước khi chốt.</p>
           </article>
           <article class="pos">
-            <span class="tag">Không áp dụng</span>
+            <span class="tag">Ngoài cấu hình Auto365</span>
             <h3>Kính sườn trước</h3>
             <p>Dùng IR25 (VLT 25%) hoặc IR15 (VLT 16%) theo nhu cầu quan sát gương bên.</p>
           </article>
           <article class="pos">
-            <span class="tag">Không áp dụng</span>
+            <span class="tag">Ngoài cấu hình Auto365</span>
             <h3>Kính sườn sau</h3>
             <p>Dùng IR25 hoặc IR15; IR15 thường được cân nhắc khi cần khoang sau kín hơn.</p>
           </article>
           <article class="pos">
-            <span class="tag">Không áp dụng</span>
+            <span class="tag">Ngoài cấu hình Auto365</span>
             <h3>Kính lưng</h3>
             <p>Dùng IR25 hoặc IR15; kiểm tra gương trung tâm và camera sau trước khi chốt.</p>
           </article>
@@ -957,7 +996,7 @@
 
         <div class="spec-shell">
           <div class="spec-head">
-            <div class="tds-pill">3M TDS Ceramic IR · Revision B · July 2021</div>
+            <div class="tds-pill"><a href="https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf" target="_blank" rel="noopener" style="color:inherit">3M TDS Ceramic IR · Revision B · July 2021</a></div>
           </div>
           <div class="spec-table-wrap">
             <table>
@@ -1106,10 +1145,10 @@ if(caseTrack){
             <div class="spec-table-wrap">
               <table class="irp-table">
                 <thead><tr><th>Mã</th><th>Kính lái</th><th>Kính sườn</th><th>Kính sau</th></tr></thead>
-                <tbody><tr style="background:#fdecec;font-weight:700"><td>IR50</td><td>3.300.000đ</td><td>—</td><td>—</td></tr><tr><td><a class="inline-link" href="ir25.html">IR25</a></td><td>—</td><td>1.800.000đ</td><td>2.300.000đ</td></tr><tr><td><a class="inline-link" href="ir15.html">IR15</a></td><td>—</td><td>1.800.000đ</td><td>2.300.000đ</td></tr></tbody>
+                <tbody><tr style="background:#fdecec;font-weight:700"><td>IR50</td><td>3.300.000đ</td><td>—</td><td>—</td></tr><tr><td><a class="inline-link" href="https://auto365.vn/ir25">IR25</a></td><td>—</td><td>1.800.000đ</td><td>2.300.000đ</td></tr><tr><td><a class="inline-link" href="https://auto365.vn/ir15">IR15</a></td><td>—</td><td>1.800.000đ</td><td>2.300.000đ</td></tr></tbody>
               </table>
             </div>
-            <div class="tiny" style="margin-top:10px">Áp dụng từ 06/2026 · đã gồm VAT · “—”: không áp dụng cho vị trí này</div>
+            <div class="tiny" style="margin-top:10px">Áp dụng từ 06/2026 · đã gồm VAT · “—”: Auto365 không tư vấn mã cho vị trí này</div>
             <p class="price-disclaimer">Cửa sổ trời nhỏ tính bằng 1 kính sườn; cửa sổ trời panorama tính bằng 1 kính lái. Giá xác nhận theo dòng xe khi báo giá.</p>
             <a class="package-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-ir">Xem bảng giá dòng Ceramic IR →</a>
           </article>
@@ -1159,10 +1198,10 @@ if(caseTrack){
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
 
         <div class="why-grid">
-          <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>IR50 cho VLT 50% hay 60% còn tùy kính nền, nên Auto365 đo xe thật trước khi tư vấn.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
-          <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính lái, kính sườn trước, sườn sau và kính lưng có ưu tiên quan sát/riêng tư khác nhau.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>Hồ sơ xe thật cho thấy IR50 được phối với IR25/IR15 ở kính sườn và kính lưng.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img src="https://auto365.vn/uploads/images/products/auto365vn-ir-50-img_6a86d8f57372f7.00423421.jpg.webp" alt="3M Ceramic IR50 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>IR50 cho VLT 50% hay 60% còn tùy kính nền, nên Auto365 đo xe thật trước khi tư vấn.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
+          <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính lái, kính sườn trước, sườn sau và kính lưng có ưu tiên quan sát/riêng tư khác nhau.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>Hồ sơ xe thật cho thấy IR50 được phối với IR25/IR15 ở kính sườn và kính lưng.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/products/auto365vn-ir-50-img_6a86d8f57372f7.00423421.jpg.webp" alt="3M Ceramic IR50 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
 
         <div class="cert-grid">
@@ -1300,7 +1339,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
         <div class="faq">
           <details open>
             <summary>3M IR50 dán kính nào?</summary>
-            <p>IR50 chỉ dán kính lái. Kính sườn và kính sau trong dòng Ceramic IR dùng IR25 (VLT 25%) hoặc IR15 (VLT 16%) trên kính Auto 75.</p>
+            <p>Trong cấu hình Auto365 đang triển khai, IR50 được tư vấn cho kính lái. Kính sườn và kính sau phối IR25 (VLT 25%) hoặc IR15 (VLT 16%) trên kính Auto 75.</p>
           </details>
           <details>
             <summary>Giá dán IR50 kính lái bao nhiêu?</summary>
@@ -1330,8 +1369,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
 
         <div class="source-box">
           <strong>Nguồn và phạm vi dữ liệu</strong><br><br>
-          <strong>Biên soạn:</strong> Ban Biên Tập Auto365<br>
-          <strong>Chuyên gia kiểm duyệt:</strong> <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br>
+          <strong>Biên soạn:</strong> Team Content Auto365 · <strong>Rà soát kỹ thuật:</strong> <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br>
           <strong>Nguồn kỹ thuật chính:</strong> <a href="https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf" target="_blank" rel="noopener">3M™ Automotive Window Film Ceramic IR Series – Technical Data Sheet, Revision B, July 2021</a><br>
           <strong>Nguồn đối chiếu:</strong> Catalog 3M Ceramic NR Việt Nam 03/2026 (NR35); 3M Crystalline Series TDS Revision F 08/2025 và Revision E 05/2024 (CR BLK); bảng giá dán lẻ Auto365 áp dụng từ 06/2026; các bài cấu hình xe thực tế Auto365.<br><br>
           Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M công bố. Giá, ưu đãi, cấu hình và phạm vi bảo hành cần được xác nhận tại thời điểm đặt lịch.
@@ -1398,69 +1436,69 @@ const fitmentData = {
    "high": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Đi đêm nhiều: đo VLT kính nguyên bản trước khi chốt",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    },
    "medium": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Có thể đối chiếu thêm NR35 hoặc CR BLK 40",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    },
    "low": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Có thể đối chiếu thêm NR35 hoặc CR BLK 40",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    }
   },
   "balance": {
    "high": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Đi đêm nhiều: đo VLT kính nguyên bản trước khi chốt",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    },
    "medium": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Có thể đối chiếu thêm NR35 hoặc CR BLK 40",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    },
    "low": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Có thể đối chiếu thêm NR35 hoặc CR BLK 40",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    }
   },
   "privacy": {
    "high": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Muốn kính lái dịu hơn: đối chiếu NR35 (VLT 43%) hoặc CR BLK 40 (VLT 41%)",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    },
    "medium": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Muốn kính lái dịu hơn: đối chiếu NR35 (VLT 43%) hoặc CR BLK 40 (VLT 41%)",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    },
    "low": {
     "code": "IR50",
     "tag": "Mã kính lái của dòng Ceramic IR",
-    "reason": "Trong dòng Ceramic IR, IR50 là mã duy nhất dùng cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 không dùng cho kính lái.",
+    "reason": "Trong ba mã Ceramic IR Auto365 đang triển khai (IR50, IR25, IR15), IR50 được tư vấn cho kính lái: VLT 50% trên kính Auto 75 tham chiếu. IR25 và IR15 được tư vấn cho kính sườn, kính sau.",
     "alt": "Muốn kính lái dịu hơn: đối chiếu NR35 (VLT 43%) hoặc CR BLK 40 (VLT 41%)",
-    "link": "ir50.html"
+    "link": "https://auto365.vn/ir50"
    }
   }
  },
@@ -1471,21 +1509,21 @@ const fitmentData = {
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính sườn trước khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR25",
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính sườn trước khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "low": {
     "code": "IR25",
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính sườn trước khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    }
   },
   "balance": {
@@ -1494,21 +1532,21 @@ const fitmentData = {
     "tag": "Cân bằng quan sát & riêng tư",
     "reason": "Với kính sườn trước và nhu cầu đi tối, IR25 (VLT 25%) là mốc nên xem trước IR15 (VLT 16%).",
     "alt": "Đối chiếu IR15 nếu khoang xe cần kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR25",
     "tag": "Cân bằng quan sát & riêng tư",
     "reason": "Với kính sườn trước và nhu cầu đi tối, IR25 (VLT 25%) là mốc nên xem trước IR15 (VLT 16%).",
     "alt": "Đối chiếu IR15 nếu khoang xe cần kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "low": {
     "code": "IR15",
     "tag": "Kín hơn khi ít đi tối",
     "reason": "Nếu ít đi tối, IR15 (VLT 16%, giảm chói 78% trên Auto 75) có thể được cân nhắc cho kính sườn trước; nên xem mẫu trên kính xe trước khi chốt.",
     "alt": "Đối chiếu IR25 nếu muốn sáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    }
   },
   "privacy": {
@@ -1517,21 +1555,21 @@ const fitmentData = {
     "tag": "Giữ quan sát gương bên",
     "reason": "Ở kính sườn trước và đi đêm nhiều, IR25 thường được cân nhắc trước để giữ khả năng nhìn gương bên; IR15 nên để cho khoang sau.",
     "alt": "Muốn kín hơn: dùng IR15 cho sườn sau/kính lưng",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR15",
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính sườn trước khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Đối chiếu IR25 nếu vẫn muốn nhìn ra ngoài thoáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    },
    "low": {
     "code": "IR15",
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính sườn trước khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Đối chiếu IR25 nếu vẫn muốn nhìn ra ngoài thoáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    }
   }
  },
@@ -1542,21 +1580,21 @@ const fitmentData = {
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính sườn sau khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR25",
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính sườn sau khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "low": {
     "code": "IR25",
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính sườn sau khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    }
   },
   "balance": {
@@ -1565,21 +1603,21 @@ const fitmentData = {
     "tag": "Cân bằng quan sát & riêng tư",
     "reason": "Với kính sườn sau và nhu cầu đi tối, IR25 (VLT 25%) là mốc nên xem trước IR15 (VLT 16%).",
     "alt": "Đối chiếu IR15 nếu khoang xe cần kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR25",
     "tag": "Cân bằng quan sát & riêng tư",
     "reason": "Với kính sườn sau và nhu cầu đi tối, IR25 (VLT 25%) là mốc nên xem trước IR15 (VLT 16%).",
     "alt": "Đối chiếu IR15 nếu khoang xe cần kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "low": {
     "code": "IR15",
     "tag": "Kín hơn khi ít đi tối",
     "reason": "Nếu ít đi tối, IR15 (VLT 16%, giảm chói 78% trên Auto 75) có thể được cân nhắc cho kính sườn sau; nên xem mẫu trên kính xe trước khi chốt.",
     "alt": "Đối chiếu IR25 nếu muốn sáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    }
   },
   "privacy": {
@@ -1588,21 +1626,21 @@ const fitmentData = {
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính sườn sau khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Đối chiếu IR25 nếu vẫn muốn nhìn ra ngoài thoáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    },
    "medium": {
     "code": "IR15",
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính sườn sau khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Đối chiếu IR25 nếu vẫn muốn nhìn ra ngoài thoáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    },
    "low": {
     "code": "IR15",
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính sườn sau khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Đối chiếu IR25 nếu vẫn muốn nhìn ra ngoài thoáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    }
   }
  },
@@ -1613,21 +1651,21 @@ const fitmentData = {
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính lưng khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR25",
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính lưng khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "low": {
     "code": "IR25",
     "tag": "Sáng hơn trong nhóm sườn/sau",
     "reason": "IR25 có VLT 25% trên Auto 75, cao hơn IR15 (16%), nên thường được cân nhắc cho kính lưng khi cần nhìn ra ngoài dễ hơn.",
     "alt": "Đối chiếu IR15 nếu muốn kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    }
   },
   "balance": {
@@ -1636,21 +1674,21 @@ const fitmentData = {
     "tag": "Cân bằng quan sát & riêng tư",
     "reason": "Với kính lưng và nhu cầu đi tối, IR25 (VLT 25%) là mốc nên xem trước IR15 (VLT 16%).",
     "alt": "Đối chiếu IR15 nếu khoang xe cần kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "medium": {
     "code": "IR25",
     "tag": "Cân bằng quan sát & riêng tư",
     "reason": "Với kính lưng và nhu cầu đi tối, IR25 (VLT 25%) là mốc nên xem trước IR15 (VLT 16%).",
     "alt": "Đối chiếu IR15 nếu khoang xe cần kín hơn",
-    "link": "ir25.html"
+    "link": "https://auto365.vn/ir25"
    },
    "low": {
     "code": "IR15",
     "tag": "Kín hơn khi ít đi tối",
     "reason": "Nếu ít đi tối, IR15 (VLT 16%, giảm chói 78% trên Auto 75) có thể được cân nhắc cho kính lưng; nên xem mẫu trên kính xe trước khi chốt.",
     "alt": "Đối chiếu IR25 nếu muốn sáng hơn",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    }
   },
   "privacy": {
@@ -1659,21 +1697,21 @@ const fitmentData = {
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính lưng khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Kiểm tra gương trung tâm, camera sau trước khi chốt",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    },
    "medium": {
     "code": "IR15",
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính lưng khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Kiểm tra gương trung tâm, camera sau trước khi chốt",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    },
    "low": {
     "code": "IR15",
     "tag": "Ưu tiên riêng tư",
     "reason": "IR15 có VLT 16% và giảm chói 78% trên Auto 75, thường được cân nhắc cho kính lưng khi ưu tiên giảm nhìn từ ngoài vào.",
     "alt": "Kiểm tra gương trung tâm, camera sau trước khi chốt",
-    "link": "ir15.html"
+    "link": "https://auto365.vn/ir15"
    }
   }
  }

@@ -576,21 +576,46 @@
       "url": "https://auto365.vn"
     },
     {
+      "@type": "AutoRepair",
+      "@id": "https://auto365.vn/#tru-so-chinh",
+      "name": "Auto365.vn – Trụ Sở Chính",
+      "url": "https://auto365.vn/",
+      "telephone": "+84365365365",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4/4/1/7 Đường số 3, Phường Hiệp Bình",
+        "addressLocality": "Thành phố Hồ Chí Minh",
+        "addressCountry": "VN"
+      },
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auto365.vn/#team-content",
+      "name": "Team Content Auto365",
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
       "@type": "WebPage",
       "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35#webpage",
       "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35",
       "name": "3M CR BLK 35: giá, thông số, dán kính sườn | Auto365",
       "description": "3M CR BLK 35 là mã phim Crystalline cho kính sườn, kính lưng: VLT 33%, TSER 60%, giảm chói 55%. Giá từ 2.600.000đ/cặp sườn trước, eWarranty 10 năm.",
-      "dateModified": "2026-10-02",
+      "dateModified": "2026-10-03",
       "author": {
         "@type": "Organization",
-        "@id": "https://auto365.vn/#organization",
-        "name": "Auto365"
+        "@id": "https://auto365.vn/#team-content",
+        "name": "Team Content Auto365"
       },
       "reviewedBy": {
         "@type": "Person",
         "@id": "https://auto365.vn/tac-gia/dang-minh-hoang#person",
         "name": "Đặng Minh Hoàng",
+        "url": "https://auto365.vn/tac-gia/dang-minh-hoang",
         "jobTitle": "Giám đốc điều hành 3M Pro Shop & 3M Training Center"
       },
       "mainEntity": {
@@ -598,6 +623,18 @@
       },
       "breadcrumb": {
         "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://auto365.vn/#organization"
+      },
+      "citation": {
+        "@type": "CreativeWork",
+        "name": "3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025",
+        "url": "https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf",
+        "publisher": {
+          "@type": "Organization",
+          "name": "3M"
+        }
       }
     },
     {
@@ -647,7 +684,9 @@
           "name": "Điều kiện tham chiếu",
           "value": "Kính Auto 75, VLT nền 73%; 3M TDS Revision F 08/2025"
         }
-      ]
+      ],
+      "model": "CR BLK 35",
+      "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
     },
     {
       "@type": "Service",
@@ -655,9 +694,7 @@
       "name": "Dịch vụ tư vấn và dán 3M Crystalline CR BLK 35",
       "serviceType": "Tư vấn cấu hình và dán phim cách nhiệt ô tô",
       "provider": {
-        "@type": "Organization",
-        "@id": "https://auto365.vn/#organization",
-        "name": "Auto365"
+        "@id": "https://auto365.vn/#tru-so-chinh"
       },
       "areaServed": {
         "@type": "Country",
@@ -668,13 +705,15 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "2600000",
-        "priceCurrency": "VND",
-        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 2600000,
+          "priceCurrency": "VND"
+        },
         "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35",
         "description": "Giá tham khảo dịch vụ dán 3M Crystalline CR BLK 35 cho 1 cặp kính sườn trước (2 kính), xác nhận theo dòng xe",
         "seller": {
-          "@id": "https://auto365.vn/#organization"
+          "@id": "https://auto365.vn/#tru-so-chinh"
         }
       }
     },
@@ -725,7 +764,7 @@
           "name": "CR BLK 35 dán kính nào?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "CR BLK 35 dùng cho kính sườn trước, kính sườn sau và kính lưng. Kính sườn trước là vị trí dùng 35 phổ biến vì người lái vẫn nhìn gương bên rõ. Mã này không dùng cho kính lái; kính lái dùng CR BLK 60, 50 hoặc 40."
+            "text": "CR BLK 35 dùng cho kính sườn trước, kính sườn sau và kính lưng. Kính sườn trước là vị trí dùng 35 phổ biến vì người lái vẫn nhìn gương bên rõ. Trong cấu hình Auto365 đang triển khai, kính lái được tư vấn CR BLK 60, 50 hoặc 40, không phối CR BLK 35."
           }
         },
         {
@@ -772,7 +811,7 @@
     }
   ]
 }
-  </script>
+</script>
 </head>
 
 <body>
@@ -806,7 +845,7 @@
             </div>
             <h1>3M CR BLK 35 cho kính sườn và kính lưng: thông số, giá, cách chọn</h1>
             <p class="hero-lead"><strong>3M CR BLK 35</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Crystalline CR BLK</strong> (phim quang học đa lớp, phi kim theo mô tả 3M), dùng cho kính sườn và kính lưng, hay được chọn cho kính sườn trước. Trên kính Auto 75, phim có VLT 33%, TSER 60% và giảm chói 55% (3M TDS Rev F, 08/2025). Giá dán tại Auto365 từ 2.600.000đ cho 1 cặp kính sườn trước, kèm bảo hành điện tử 3M. Kín vừa phải mà vẫn nhìn gương bên dễ.</p>
-            <p class="hero-byline">Kiểm duyệt kỹ thuật: <a href="https://auto365.vn/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-02">02/10/2026</time></p>
+            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-03">03/10/2026</time></p>
             <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
               <div><span class="hero-offer-label">Giá dán CR BLK 35 từ</span><div class="hero-price">2.600.000đ</div><div class="hero-price-note">1 cặp kính sườn trước · xác nhận theo dòng xe khi báo giá. Dán trọn xe: gói CR BLK từ 12.200.000đ.</div></div>
               <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
@@ -848,7 +887,7 @@
         <div class="cri-intro">
           <div>
             <h2 class="section-title" id="intro-title">3M CR BLK 35 là gì?</h2>
-            <p>Thuộc dòng 3M Crystalline CR BLK, dòng phim quang học đa lớp mà 3M mô tả là phi kim, gồm hơn 200 lớp siêu mỏng. Dòng này có 5 mã: <strong>60, 50 và 40 chỉ dán kính lái</strong>; <strong>35 và 15 dành cho kính sườn, kính lưng</strong>.</p>
+            <p>Thuộc dòng 3M Crystalline CR BLK, dòng phim quang học đa lớp mà 3M mô tả là phi kim, gồm hơn 200 lớp siêu mỏng. Auto365 hiện triển khai các mã CR BLK 60, 50, 40, 35 và 15: <strong>60, 50 và 40 được tư vấn cho kính lái</strong>; <strong>35 và 15 cho kính sườn, kính lưng</strong>.</p>
             <p>Trong hai mã kính sườn, 35 là mã sáng hơn. Trên kính Auto 75, CR BLK 35 cho VLT 33%, còn CR BLK 15 chỉ 14%. Đổi lại, 15 giảm chói 81% so với 55% của 35, trong khi TSER chỉ chênh vài điểm (64% và 60%). Nói gọn, chọn 35 hay 15 chủ yếu là chọn độ kín; độ mát của hai mã khá gần nhau.</p>
             <p>Vì vậy CR BLK 35 hợp với kính sườn trước, chỗ người lái cần nhìn gương bên rõ lúc chiều tối hay trời mưa. Nhiều chủ xe dán luôn 35 cho sườn sau và kính lưng khi không cần khoang sau quá kín, như cấu hình trên Mitsubishi Destinator bên dưới.</p>
           </div>
@@ -926,9 +965,9 @@
 
         <div class="position-grid">
           <article class="pos">
-            <span class="tag">Không dùng</span>
+            <span class="tag">Auto365 không tư vấn</span>
             <h3>Kính lái</h3>
-            <p>Kính lái dùng nhóm CR BLK 60/50/40 để giữ tầm nhìn phía trước. CR BLK 35 không dán kính lái.</p>
+            <p>Kính lái dùng nhóm CR BLK 60/50/40 để giữ tầm nhìn phía trước. Auto365 không tư vấn CR BLK 35 cho kính lái.</p>
           </article>
           <article class="pos recommended">
             <span class="tag">Ưu tiên</span>
@@ -958,7 +997,7 @@
 
         <div class="spec-shell">
           <div class="spec-head">
-            <div class="tds-pill">3M TDS Revision F · August 2025</div>
+            <div class="tds-pill"><a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener" style="color:inherit">3M TDS Revision F · August 2025</a></div>
           </div>
           <div class="spec-table-wrap">
             <table>
@@ -1199,10 +1238,10 @@ if(caseTrack){
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
 
         <div class="why-grid">
-          <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Cùng là CR BLK 35 nhưng mỗi xe ra một độ sáng khác; đo kính thật giúp bạn không phải đoán theo catalogue.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
-          <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính sườn trước, sườn sau và kính lưng có ưu tiên quan sát/riêng tư khác nhau.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>CR BLK 35 có nhiều cấu hình xe thật được công khai để kiểm tra cách phối mã.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img src="https://auto365.vn/uploads/images/products/auto365vn-cr-blk-35jpeg-img_6a2fb4a84aa3b7.85602908_auto365vn-1781511336-0.jpeg.webp" alt="3M Crystalline CR BLK 35 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Cùng là CR BLK 35 nhưng mỗi xe ra một độ sáng khác; đo kính thật giúp bạn không phải đoán theo catalogue.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
+          <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính sườn trước, sườn sau và kính lưng có ưu tiên quan sát/riêng tư khác nhau.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>CR BLK 35 có nhiều cấu hình xe thật được công khai để kiểm tra cách phối mã.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/products/auto365vn-cr-blk-35jpeg-img_6a2fb4a84aa3b7.85602908_auto365vn-1781511336-0.jpeg.webp" alt="3M Crystalline CR BLK 35 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
 
         <div class="cert-grid">
@@ -1344,7 +1383,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           </details>
           <details>
             <summary>CR BLK 35 dán kính nào?</summary>
-            <p>CR BLK 35 dùng cho kính sườn trước, kính sườn sau và kính lưng. Kính sườn trước là vị trí dùng 35 phổ biến vì người lái vẫn nhìn gương bên rõ. Mã này không dùng cho kính lái; kính lái dùng CR BLK 60, 50 hoặc 40.</p>
+            <p>CR BLK 35 dùng cho kính sườn trước, kính sườn sau và kính lưng. Kính sườn trước là vị trí dùng 35 phổ biến vì người lái vẫn nhìn gương bên rõ. Trong cấu hình Auto365 đang triển khai, kính lái được tư vấn CR BLK 60, 50 hoặc 40, không phối CR BLK 35.</p>
           </details>
           <details>
             <summary>33% VLT có tối không, ban đêm nhìn gương được không?</summary>
@@ -1370,10 +1409,8 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
 
         <div class="source-box">
           <strong>Nguồn và phạm vi dữ liệu</strong><br><br>
-          <strong>Biên soạn:</strong> Ban Biên Tập Auto365<br>
-          <strong>Chuyên gia kiểm duyệt:</strong> <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br>
-          <strong>Nguồn kỹ thuật chính:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025</a><br>
-          <strong>Nguồn đối chiếu thị trường:</strong> Auto365, 365Group, AKauto, Auto365 Mỹ Đình, TILIMIT, Ô Tô Hoàng Kim và các bài cấu hình xe thực tế Auto365.<br><br>
+          <strong>Biên soạn:</strong> Team Content Auto365 · <strong>Rà soát kỹ thuật:</strong> <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br>
+          <strong>Nguồn kỹ thuật chính:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025</a><br><br>
           Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M công bố. Giá, ưu đãi, cấu hình và phạm vi bảo hành cần được xác nhận tại thời điểm đặt lịch.
         </div>
       </div>

@@ -576,21 +576,46 @@
       "url": "https://auto365.vn"
     },
     {
+      "@type": "AutoRepair",
+      "@id": "https://auto365.vn/#tru-so-chinh",
+      "name": "Auto365.vn – Trụ Sở Chính",
+      "url": "https://auto365.vn/",
+      "telephone": "+84365365365",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4/4/1/7 Đường số 3, Phường Hiệp Bình",
+        "addressLocality": "Thành phố Hồ Chí Minh",
+        "addressCountry": "VN"
+      },
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://auto365.vn/#team-content",
+      "name": "Team Content Auto365",
+      "parentOrganization": {
+        "@id": "https://auto365.vn/#organization"
+      }
+    },
+    {
       "@type": "WebPage",
       "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40#webpage",
       "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40",
       "name": "3M CR BLK 40 kính lái: giá, thông số, có tối không | Auto365",
       "description": "3M CR BLK 40 là mã phim Crystalline cho kính lái: VLT 41%, TSER 58%, giảm chói 44%. Giá từ 6.500.000đ, so với CR BLK 50/60 và lưu ý khi đi đêm.",
-      "dateModified": "2026-10-02",
+      "dateModified": "2026-10-03",
       "author": {
         "@type": "Organization",
-        "@id": "https://auto365.vn/#organization",
-        "name": "Auto365"
+        "@id": "https://auto365.vn/#team-content",
+        "name": "Team Content Auto365"
       },
       "reviewedBy": {
         "@type": "Person",
         "@id": "https://auto365.vn/tac-gia/dang-minh-hoang#person",
         "name": "Đặng Minh Hoàng",
+        "url": "https://auto365.vn/tac-gia/dang-minh-hoang",
         "jobTitle": "Giám đốc điều hành 3M Pro Shop & 3M Training Center"
       },
       "mainEntity": {
@@ -598,6 +623,18 @@
       },
       "breadcrumb": {
         "@id": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40#breadcrumb"
+      },
+      "publisher": {
+        "@id": "https://auto365.vn/#organization"
+      },
+      "citation": {
+        "@type": "CreativeWork",
+        "name": "3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025",
+        "url": "https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf",
+        "publisher": {
+          "@type": "Organization",
+          "name": "3M"
+        }
       }
     },
     {
@@ -610,7 +647,7 @@
       },
       "category": "Phim cách nhiệt ô tô",
       "image": "https://auto365.vn/uploads/images/products/auto365vn-cr-blk-40-img_6a8031832d8fb9.53473086.jpg.webp",
-      "description": "3M Crystalline CR BLK 40 là mã phim quang học đa lớp phi kim (theo mô tả 3M) chỉ dùng cho kính lái, VLT 41%, TSER 58%, giảm chói 44% trên kính Auto 75.",
+      "description": "3M Crystalline CR BLK 40 là mã phim quang học đa lớp phi kim (theo mô tả 3M) được Auto365 tư vấn cho kính lái, VLT 41%, TSER 58%, giảm chói 44% trên kính Auto 75.",
       "additionalProperty": [
         {
           "@type": "PropertyValue",
@@ -645,14 +682,16 @@
         {
           "@type": "PropertyValue",
           "name": "Vị trí kính áp dụng",
-          "value": "Chỉ kính lái"
+          "value": "Kính lái (cấu hình Auto365 đang triển khai)"
         },
         {
           "@type": "PropertyValue",
           "name": "Điều kiện tham chiếu",
           "value": "Kính Auto 75, VLT nền 73%; 3M TDS Revision F 08/2025"
         }
-      ]
+      ],
+      "model": "CR BLK 40",
+      "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"
     },
     {
       "@type": "Service",
@@ -660,9 +699,7 @@
       "name": "Dịch vụ tư vấn và dán 3M Crystalline CR BLK 40 cho kính lái",
       "serviceType": "Tư vấn cấu hình và dán phim cách nhiệt ô tô",
       "provider": {
-        "@type": "Organization",
-        "@id": "https://auto365.vn/#organization",
-        "name": "Auto365"
+        "@id": "https://auto365.vn/#tru-so-chinh"
       },
       "areaServed": {
         "@type": "Country",
@@ -673,13 +710,15 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "6500000",
-        "priceCurrency": "VND",
-        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "minPrice": 6500000,
+          "priceCurrency": "VND"
+        },
         "url": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40",
         "description": "Giá tham khảo dịch vụ dán 3M Crystalline CR BLK 40 cho kính lái, xác nhận theo dòng xe",
         "seller": {
-          "@id": "https://auto365.vn/#organization"
+          "@id": "https://auto365.vn/#tru-so-chinh"
         }
       }
     },
@@ -754,7 +793,7 @@
           "name": "CR BLK 40 có dán kính sườn hoặc kính lưng được không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Không. Tại Auto365, CR BLK 40 (cùng 50 và 60) chỉ dùng cho kính lái. Kính sườn trước, sườn sau và kính lưng dùng CR BLK 35 hoặc CR BLK 15 tùy bạn muốn nhìn thoáng hay kín đáo."
+            "text": "Trong cấu hình Auto365 đang triển khai, CR BLK 40 (cùng 50 và 60) được tư vấn cho kính lái; kính sườn trước, sườn sau và kính lưng phối CR BLK 35 hoặc CR BLK 15 tùy bạn muốn nhìn thoáng hay kín đáo."
           }
         },
         {
@@ -777,7 +816,7 @@
     }
   ]
 }
-  </script>
+</script>
 </head>
 
 <body>
@@ -810,8 +849,8 @@
               <div class="series-name">3M™ Automotive Window Film<strong>Crystalline™ CR BLK</strong></div>
             </div>
             <h1>3M CR BLK 40 cho kính lái: thông số, giá và có nên chọn</h1>
-            <p class="hero-lead"><strong>3M CR BLK 40</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Crystalline CR BLK</strong> (phim quang học đa lớp, phi kim theo mô tả 3M), chỉ dùng cho kính lái. Trên kính Auto 75, phim có VLT 41%, TSER 58% và giảm chói 44% (3M TDS Rev F, 08/2025), đậm hơn CR BLK 50 (VLT 48%) và 60 (57%). Giá dán tại Auto365 từ 6.500.000đ cho kính lái, kèm bảo hành điện tử 3M. Hợp với người đi ban ngày là chính.</p>
-            <p class="hero-byline">Kiểm duyệt kỹ thuật: <a href="https://auto365.vn/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-02">02/10/2026</time></p>
+            <p class="hero-lead"><strong>3M CR BLK 40</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Crystalline CR BLK</strong> (phim quang học đa lớp, phi kim theo mô tả 3M), được Auto365 tư vấn cho kính lái. Trên kính Auto 75, phim có VLT 41%, TSER 58% và giảm chói 44% (3M TDS Rev F, 08/2025), đậm hơn CR BLK 50 (VLT 48%) và 60 (57%). Giá dán tại Auto365 từ 6.500.000đ cho kính lái, kèm bảo hành điện tử 3M. Hợp với người đi ban ngày là chính.</p>
+            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-03">03/10/2026</time></p>
             <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
               <div><span class="hero-offer-label">Giá dán CR BLK 40 từ</span><div class="hero-price">6.500.000đ</div><div class="hero-price-note">Kính lái · xác nhận theo dòng xe khi báo giá. Dán trọn xe: gói Hybrid Pro từ 9.800.000đ, CR BLK Pro từ 12.900.000đ.</div></div>
               <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
@@ -853,7 +892,7 @@
         <div class="cri-intro">
           <div>
             <h2 class="section-title" id="intro-title">3M CR BLK 40 là gì?</h2>
-            <p>Thuộc dòng 3M Crystalline CR BLK, dòng phim quang học đa lớp mà 3M mô tả là phi kim, gồm hơn 200 lớp siêu mỏng. Dòng này có 5 mã: <strong>60, 50 và 40 chỉ dán kính lái</strong>; <strong>35 và 15 dành cho kính sườn, kính lưng</strong>.</p>
+            <p>Thuộc dòng 3M Crystalline CR BLK, dòng phim quang học đa lớp mà 3M mô tả là phi kim, gồm hơn 200 lớp siêu mỏng. Auto365 hiện triển khai các mã CR BLK 60, 50, 40, 35 và 15: <strong>60, 50 và 40 được tư vấn cho kính lái</strong>; <strong>35 và 15 cho kính sườn, kính lưng</strong>.</p>
             <p>Trong ba mã kính lái, 40 là mã tối hơn cả: VLT 41%, so với 48% của CR BLK 50 và 57% của CR BLK 60 (cùng đo trên Auto 75). Đổi lại, mức giảm chói lên 44%, so với 34% và 22%. TSER cũng nhỉnh hơn một chút: 58%, so với 56% và 54%.</p>
             <p>Người chọn CR BLK 40 thường chạy ban ngày nhiều, hay đi đường nắng gắt và thấy kính lái sáng quá gây chói mắt. Nếu bạn thường lái đêm hoặc đi mưa, hãy xem CR BLK 50 hoặc 60 trước. CR BLK 40 cũng là kính lái trong hai gói CR BLK Pro và Hybrid Pro của Auto365.</p>
           </div>
@@ -878,7 +917,7 @@
         </ul>
 
         <div class="verdict-block">
-          <p><strong>CR BLK 40 có tối không?</strong> Ban ngày, kính lái dịu hơn rõ so với 50/60 và đỡ chói khi nắng gắt. Ban đêm cảm giác tối hơn hai mã kia, dễ thấy ở đường thiếu sáng hoặc khi mưa. Con số 41% đo trên kính Auto 75; kính lái zin mỗi xe một khác, nên Auto365 đo kính nền và cho xem mẫu 40 cạnh 50/60 ngay trên xe. Kính sườn và kính lưng dùng CR BLK 35 hoặc 15, không dùng 40.</p>
+          <p><strong>CR BLK 40 có tối không?</strong> Ban ngày, kính lái dịu hơn rõ so với 50/60 và đỡ chói khi nắng gắt. Ban đêm cảm giác tối hơn hai mã kia, dễ thấy ở đường thiếu sáng hoặc khi mưa. Con số 41% đo trên kính Auto 75; kính lái zin mỗi xe một khác, nên Auto365 đo kính nền và cho xem mẫu 40 cạnh 50/60 ngay trên xe. Với kính sườn và kính lưng, Auto365 phối CR BLK 35 hoặc 15.</p>
         </div>
       </div>
     </section>
@@ -893,7 +932,7 @@
     <section class="section alt" id="so-sanh">
       <div class="container">
         <h2 class="section-title">CR BLK 40, 50 hay 60 cho kính lái?</h2>
-        <p class="section-desc">Cả ba mã đều chỉ dành cho kính lái. Đặt cạnh nhau trên cùng kính Auto 75: số mã càng nhỏ thì kính càng tối và giảm chói càng nhiều.</p>
+        <p class="section-desc">Trong cấu hình Auto365, cả ba mã được tư vấn cho kính lái. Đặt cạnh nhau trên cùng kính Auto 75: số mã càng nhỏ thì kính càng tối và giảm chói càng nhiều.</p>
 
         <div class="compare-grid">
           <article class="compare active">
@@ -917,6 +956,19 @@
         </div>
         <p class="section-desc" style="margin-top:14px"><strong>Nếu bạn hay chạy đêm:</strong> hãy đo VLT kính lái thực tế, xem mẫu lúc trời tối và kiểm tra quy định hiện hành về độ truyền sáng kính lái trước khi chốt CR BLK 40.</p>
 
+        <div class="spec-table-wrap" style="margin-top:16px">
+          <table style="min-width:0">
+            <caption style="text-align:left;font-weight:700;padding:0 0 8px">Chọn theo nhu cầu</caption>
+            <thead><tr><th>Nhu cầu</th><th>Gợi ý</th></tr></thead>
+            <tbody>
+              <tr><td>Ban ngày, ưu tiên giảm chói</td><td>Xem CR BLK 40 sau khi xem mẫu trên kính xe</td></tr>
+              <tr><td>Ưu tiên ánh sáng, nhìn thoáng</td><td>Xem CR BLK 50 hoặc CR BLK 60</td></tr>
+              <tr><td>Hay đi đêm, đi mưa</td><td>Đo kính nền, xem mẫu ở chỗ thiếu sáng trước khi chốt</td></tr>
+              <tr><td>Dán trọn xe</td><td>Gói 3M Crystalline CR BLK Pro hoặc Hybrid Pro</td></tr>
+            </tbody>
+          </table>
+        </div>
+
         <div class="xline-box">
           <h3>So với dòng khác</h3>
           <p>Mã kính lái gần CR BLK 40 ở dòng Ceramic IR là IR50. Trên kính Auto 75: CR BLK 40 có VLT 41% · TSER 58% · giảm chói 44% (3M Crystalline TDS Revision F · 08/2025); IR50 có VLT 50% · TSER 54% · giảm chói 32% (3M Ceramic IR TDS Revision B · 07/2021). So sánh đầy đủ: <a class="inline-link" href="https://auto365.vn/so-sanh-ir50-va-cr-blk-40-cho-kinh-lai">So sánh IR50 và CR BLK 40 cho kính lái</a>.</p>
@@ -927,7 +979,7 @@
     <section class="section" id="phu-hop">
       <div class="container">
         <h2 class="section-title">CR BLK 40 dùng ở vị trí kính nào?</h2>
-        <p class="section-desc">Tại Auto365, CR BLK 40 <strong>chỉ dùng cho kính lái</strong>. Kính sườn và kính lưng dùng CR BLK 35 hoặc CR BLK 15.</p>
+        <p class="section-desc">Trong cấu hình Auto365 đang triển khai, CR BLK 40 <strong>được tư vấn cho kính lái</strong>; kính sườn, kính lưng phối CR BLK 35 hoặc 15.</p>
 
         <div class="position-grid">
           <article class="pos recommended">
@@ -936,17 +988,17 @@
             <p>Kính lái dịu và giảm chói hơn 50/60. Nên đo kính nền và tính đến thói quen đi đêm trước khi chốt.</p>
           </article>
           <article class="pos">
-            <span class="tag">Không dùng – xem CR BLK 35/15</span>
+            <span class="tag">Ngoài cấu hình Auto365 – xem CR BLK 35/15</span>
             <h3>Kính sườn trước</h3>
             <p>Dùng <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35">CR BLK 35</a> để cân bằng độ kín và khả năng nhìn gương bên.</p>
           </article>
           <article class="pos">
-            <span class="tag">Không dùng – xem CR BLK 35/15</span>
+            <span class="tag">Ngoài cấu hình Auto365 – xem CR BLK 35/15</span>
             <h3>Kính sườn sau</h3>
             <p>Chọn <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35">CR BLK 35</a> hoặc <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15">CR BLK 15</a> theo mức riêng tư mong muốn.</p>
           </article>
           <article class="pos">
-            <span class="tag">Không dùng – xem CR BLK 35/15</span>
+            <span class="tag">Ngoài cấu hình Auto365 – xem CR BLK 35/15</span>
             <h3>Kính lưng</h3>
             <p>Chọn <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35">CR BLK 35</a> hoặc <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15">CR BLK 15</a>; kiểm tra camera, gương trung tâm và đường sấy kính.</p>
           </article>
@@ -963,7 +1015,7 @@
 
         <div class="spec-shell">
           <div class="spec-head">
-            <div class="tds-pill">3M TDS Revision F · August 2025</div>
+            <div class="tds-pill"><a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener" style="color:inherit">3M TDS Revision F · August 2025</a></div>
           </div>
           <div class="spec-table-wrap">
             <table>
@@ -1085,6 +1137,10 @@
 </div>
 <div class="mx-gal"><h3>Ảnh xe thực tế phối nhiều mã</h3><div class="mx-grid"><figure><img src="assets/auto365vn-goc-34-bmw-x3-sau-khi-hoan-thien-3m-crystalline-cr-blk-40-o-kinh-lai-va-cr-blk-15-o-kinh-suon-img_6ab7638c0684a9.66691721.webp" alt="BMW X3: kính lái CR BLK 40, kính sườn CR BLK 15" loading="lazy" decoding="async" width="800" height="533"><figcaption>BMW X3: kính lái CR BLK 40, kính sườn CR BLK 15</figcaption></figure><figure><img src="assets/auto365vn-bmw-330i-sau-khi-hoan-thien-cau-hinh-cr-blk-40-o-kinh-lai-va-cr-blk-15-o-kinh-suon-kinh-lung-img_6ab9e0d8dbb824.86747341.webp" alt="BMW 330i: kính lái CR BLK 40, kính sườn và kính lưng CR BLK 15" loading="lazy" decoding="async" width="800" height="533"><figcaption>BMW 330i: kính lái CR BLK 40, kính sườn và kính lưng CR BLK 15</figcaption></figure><figure><img src="assets/auto365vn-cau-hinh-phim-cach-nhiet-3m-cr-blk-pro-kia-k5jpg-img_6a6881f6e3dd36.46104986.webp" alt="Kia K5 dán gói 3M Crystalline CR BLK Pro" loading="lazy" decoding="async" width="800" height="533"><figcaption>Kia K5 dán gói 3M Crystalline CR BLK Pro</figcaption></figure></div></div>
 </div>
+<div class="xline-box">
+<h3>Ghi nhận trong hồ sơ ca xe</h3>
+<p>Bài case Kia Sportage dán riêng kính lái CR BLK 40 ghi số hiển thị 85% trước dán và 41% sau dán trên thiết bị model 86110A; đây là số đo của chính ca xe, không phải chứng nhận hiệu chuẩn và không đồng nhất với VLT 41% trong TDS. Xem bài: <a class="inline-link" href="https://auto365.vn/kia-sportage-dan-3m-cr-blk-40-kinh-lai">Kia Sportage dán 3M CR BLK 40 cho kính lái</a>.</p>
+</div>
 </div></div>
 </section>
 <script>
@@ -1201,10 +1257,10 @@ if(caseTrack){
         <h2 class="section-title">Vì sao nên dán phim cách nhiệt tại Auto365?</h2>
 
         <div class="why-grid">
-          <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Kính lái zin mỗi xe một khác; đo kính nền và xem mẫu trên xe giúp bạn chốt đúng độ sáng.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
-          <article class="why"><div class="why-copy"><h3>Tư vấn theo nhu cầu đi đêm</h3><p>So CR BLK 40 với 50/60 theo thói quen lái và đúng vị trí kính: 40 chỉ cho kính lái.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#so-sanh">Xem so sánh →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>CR BLK 40 có nhiều cấu hình kính lái trên xe thật được công khai để đối chiếu.</p></div><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img src="https://auto365.vn/uploads/images/products/auto365vn-cr-blk-40-img_6a8031832d8fb9.53473086.jpg.webp" alt="3M Crystalline CR BLK 40 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Kính lái zin mỗi xe một khác; đo kính nền và xem mẫu trên xe giúp bạn chốt đúng độ sáng.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
+          <article class="why"><div class="why-copy"><h3>Tư vấn theo nhu cầu đi đêm</h3><p>So CR BLK 40 với 50/60 theo thói quen lái và đúng vị trí kính: 40 được tư vấn cho kính lái.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#so-sanh">Xem so sánh →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>CR BLK 40 có nhiều cấu hình kính lái trên xe thật được công khai để đối chiếu.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/products/auto365vn-cr-blk-40-img_6a8031832d8fb9.53473086.jpg.webp" alt="3M Crystalline CR BLK 40 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
 
         <div class="cert-grid">
@@ -1358,7 +1414,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           </details>
           <details>
             <summary>CR BLK 40 có dán kính sườn hoặc kính lưng được không?</summary>
-            <p>Không. Tại Auto365, CR BLK 40 (cùng 50 và 60) chỉ dùng cho kính lái. Kính sườn trước, sườn sau và kính lưng dùng CR BLK 35 hoặc CR BLK 15 tùy bạn muốn nhìn thoáng hay kín đáo.</p>
+            <p>Trong cấu hình Auto365 đang triển khai, CR BLK 40 (cùng 50 và 60) được tư vấn cho kính lái; kính sườn trước, sườn sau và kính lưng phối CR BLK 35 hoặc CR BLK 15 tùy bạn muốn nhìn thoáng hay kín đáo.</p>
           </details>
           <details>
             <summary>IRR 98% có phải CR BLK 40 cản 98% nhiệt?</summary>
@@ -1373,10 +1429,8 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
 
         <div class="source-box">
           <strong>Nguồn và phạm vi dữ liệu</strong><br><br>
-          <strong>Biên soạn:</strong> Ban Biên Tập Auto365<br>
-          <strong>Chuyên gia kiểm duyệt:</strong> <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br>
-          <strong>Nguồn kỹ thuật chính:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025</a><br>
-          <strong>Nguồn đối chiếu thị trường:</strong> Auto365, 365Group, AKauto, Auto365 Mỹ Đình, TILIMIT, Ô Tô Hoàng Kim và các bài cấu hình xe thực tế Auto365.<br><br>
+          <strong>Biên soạn:</strong> Team Content Auto365 · <strong>Rà soát kỹ thuật:</strong> <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center<br>
+          <strong>Nguồn kỹ thuật chính:</strong> <a href="https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf" target="_blank" rel="noopener">3M Automotive Window Film Crystalline Series Technical Data Sheet – Revision F, August 2025</a><br><br>
           Thông số nêu trên là dữ liệu tham chiếu theo điều kiện kính 3M công bố. Giá, ưu đãi, cấu hình và phạm vi bảo hành cần được xác nhận tại thời điểm đặt lịch.
         </div>
       </div>
@@ -1511,22 +1565,22 @@ const fitmentData = {
   "visibility": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1534,22 +1588,22 @@ const fitmentData = {
   "balance": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1557,22 +1611,22 @@ const fitmentData = {
   "glare": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn trước",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn trước",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn trước, CR BLK 35 là mã nên xem để giữ khả năng nhìn gương bên.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1582,22 +1636,22 @@ const fitmentData = {
   "visibility": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1605,22 +1659,22 @@ const fitmentData = {
   "balance": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1628,22 +1682,22 @@ const fitmentData = {
   "glare": {
    "high": {
     "code": "CR BLK 15",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 35 nếu muốn nhìn ra thoáng hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"
    },
    "medium": {
     "code": "CR BLK 15",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 35 nếu muốn nhìn ra thoáng hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"
    },
    "low": {
     "code": "CR BLK 15",
-    "tag": "CR BLK 40 không dùng cho kính sườn sau",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính sườn sau",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính sườn sau, chọn CR BLK 35 hoặc CR BLK 15 tùy mức riêng tư mong muốn.",
     "alt": "Có thể đối chiếu thêm: CR BLK 35 nếu muốn nhìn ra thoáng hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"
    }
@@ -1653,22 +1707,22 @@ const fitmentData = {
   "visibility": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1676,22 +1730,22 @@ const fitmentData = {
   "balance": {
    "high": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "medium": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    },
    "low": {
     "code": "CR BLK 35",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 15 nếu cần riêng tư hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"
    }
@@ -1699,22 +1753,22 @@ const fitmentData = {
   "glare": {
    "high": {
     "code": "CR BLK 15",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 35 nếu muốn nhìn ra thoáng hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"
    },
    "medium": {
     "code": "CR BLK 15",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 35 nếu muốn nhìn ra thoáng hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"
    },
    "low": {
     "code": "CR BLK 15",
-    "tag": "CR BLK 40 không dùng cho kính lưng",
-    "reason": "CR BLK 40 chỉ dùng cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
+    "tag": "Auto365 không tư vấn CR BLK 40 cho kính lưng",
+    "reason": "Trong cấu hình Auto365, CR BLK 40 được tư vấn cho kính lái. Với kính lưng, chọn CR BLK 35 hoặc CR BLK 15; kiểm tra camera và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: CR BLK 35 nếu muốn nhìn ra thoáng hơn",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"
    }
