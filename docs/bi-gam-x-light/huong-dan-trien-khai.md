@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `34daadc4c4490489d6a1d29aa4e5f447c11575d0f3f2436804527f116ad6640b` (commit `a0bea3c4`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `88088ae62f1f28e899a3495254c794f24626b60495390679d5103e4607e0ef1c` (commit `d12824ea`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
@@ -10,7 +10,7 @@
 | Thẻ | Preview (giữ nguyên) | Production |
 |---|---|---|
 | URL | preview-365group.pages.dev/bi-gam-x-light/ | **https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light** (trả HTTP 200) |
-| `<title>` | Bi gầm X-Light: Giá, so sánh mẫu & tư vấn theo xe \| Auto365 | giữ nguyên |
+| `<title>` | Bi gầm X-Light: Giá sản phẩm, so sánh mẫu & tư vấn | Auto365 | giữ nguyên |\| Auto365 | giữ nguyên |
 | Meta description | So sánh bi gầm X-Light theo lens, Cos/Pha, nhiệt màu, điện áp và giá. Xem mẫu hiện hành, case xe thực tế, chi phí lắp đặt và gửi cấu hình để Auto365 tư vấn theo xe. | giữ nguyên |
 | H1 | Bi gầm X-Light: các dòng hiện có và cách chọn phù hợp | giữ nguyên |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light | giữ nguyên (tự trỏ) |
