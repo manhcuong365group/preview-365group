@@ -560,6 +560,15 @@
     .cri-keys li:last-child{margin-bottom:0}
     .cri-sub{font-family:var(--display);font-size:18px;font-weight:600;margin:0 0 4px;color:#1d2127}
     @media(max-width:900px){.cri-intro{grid-template-columns:1fr;gap:16px}}
+  
+    /* why: benefits checklist + landscape images */
+    .why-benefits{list-style:none;margin:16px 0 0;padding:16px 20px;background:#f6f7f9;border:1px solid #e9ecef;border-radius:8px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px 20px}
+    .why-benefits li{display:flex;align-items:flex-start;gap:8px;font-size:14px;line-height:1.45;color:#222}
+    .why-benefits svg{flex:0 0 18px;margin-top:1px}
+    .why-grid .why img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;display:block}
+    .cert-grid .cert img{width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#fff}
+    @media(max-width:900px){.why-benefits{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.why-benefits{grid-template-columns:1fr}}
   </style>
 
   <script type="application/ld+json">
@@ -1277,25 +1286,6 @@ if(caseTrack){
       </div>
     </section>
 
-    <section class="section alt">
-      <div class="container">
-        <h2 class="section-title">Quyền lợi khi dán 3M CR BLK 35 tại Auto365</h2>
-
-        <div class="r35-split">
-<figure class="r35-fig"><img src="assets/auto365vn-chung-nhan-bao-hanh-cua-geely-ex2-ghi-cau-hinh-theo-tung-vi-tri-kinh-va-thoi-han-10092026-10092036-img_6aa77c94dcbbc0.03513421.webp" alt="Chứng nhận bảo hành điện tử 3M của Geely EX2: kính lái CR BLK 50, kính sườn trước CR BLK 35, kính sườn sau và kính lưng NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Chứng nhận bảo hành điện tử 3M của Geely EX2: kính lái CR BLK 50, kính sườn trước CR BLK 35, kính sườn sau và kính lưng NR15.</figcaption></figure>
-<div class="rights-grid">
-          <article class="right"><h3>Miễn phí tháo &amp; vệ sinh phim cũ</h3><p>Tháo phim cũ và vệ sinh kính trước khi dán, không tính thêm phí.</p></article>
-          <article class="right"><h3>Tặng rửa xe + hút bụi nội thất</h3><p>Xe được rửa và hút bụi nội thất khi bàn giao.</p></article>
-          <article class="right"><h3>Tặng vệ sinh kính + tẩy ố kính</h3><p>Làm sạch và tẩy ố mặt kính trước khi dán phim.</p></article>
-          <article class="right"><h3>Giảm giá cho lần dán tiếp theo</h3><p>Ưu đãi khi bạn quay lại dán phim cho xe tiếp theo.</p></article>
-          <article class="right"><h3>eWarranty 3M lên đến 10 năm theo dòng phim</h3><p>Bảo hành điện tử 3M, tra cứu được sau bàn giao.</p></article>
-          <article class="right"><h3>Thi công tại 3M Pro Shop ủy quyền</h3><p>Kỹ thuật viên thi công tại điểm 3M Pro Shop được ủy quyền.</p></article>
-        </div>
-</div>
-
-
-      </div>
-    </section>
 
     <section class="section">
       <div class="container">
@@ -1307,6 +1297,15 @@ if(caseTrack){
           <article class="why"><div class="why-copy"><h3>Có case xe để đối chiếu</h3><p>CR BLK 35 có nhiều cấu hình xe thật được công khai để kiểm tra cách phối mã.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
           <article class="why"><div class="why-copy"><h3>Có hồ sơ sau bàn giao</h3><p>Đối chiếu mã phim, thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam và eWarranty sau thi công.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/products/auto365vn-cr-blk-35jpeg-img_6a2fb4a84aa3b7.85602908_auto365vn-1781511336-0.jpeg.webp" alt="3M Crystalline CR BLK 35 tại Auto365" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
+
+        <ul class="why-benefits" aria-label="Quyền lợi khi dán phim tại Auto365">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e9b50"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Miễn phí tháo &amp; vệ sinh phim cũ</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e9b50"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tặng rửa xe + hút bụi nội thất</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e9b50"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tặng vệ sinh kính + tẩy ố kính</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e9b50"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Giảm giá cho lần dán tiếp theo</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e9b50"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>eWarranty 3M lên đến 10 năm theo dòng phim</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#2e9b50"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Thi công tại 3M Pro Shop ủy quyền</span></li>
+        </ul>
 
         <div class="cert-grid">
           <figure class="cert"><img src="assets/cert-3m-pro-shop.jpg" alt="3M Pro Shop Certificate" loading="lazy" width="300" height="225"><figcaption>3M™ Pro Shop Certificate</figcaption></figure>
