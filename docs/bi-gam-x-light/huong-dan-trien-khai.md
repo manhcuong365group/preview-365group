@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `88088ae62f1f28e899a3495254c794f24626b60495390679d5103e4607e0ef1c` (commit `d12824ea`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `d3a38a052da44f836acd62ed663b36a9018ed67d810880b5709a195db47feb51` (commit `f2ef4862`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
@@ -30,10 +30,10 @@
 
 ## 3. Schema (JSON-LD trong `<head>`)
 
-9 node: `Person` (reviewer), `Service`, `TechArticle`, `CollectionPage`, `BreadcrumbList`, `ItemList` (15 mẫu), `Brand`, `AutoPartsStore` (hotline +84365365911), `FAQPage` (10 câu).
+9 node: `Person` (reviewer), `Service`, `TechArticle`, `CollectionPage`, `BreadcrumbList`, `ItemList` (15 mẫu), `Brand`, `AutoPartsStore` (hotline +84365365911), `FAQPage` (11 câu).
 
 - **Không** thêm `Product`/`Offer`/`aggregateRating` trên hub; các loại này thuộc trang sản phẩm.
-- FAQPage phải trùng từng chữ với 10 câu hiển thị trong `#faq`. Sửa câu nào thì sửa cả hai chỗ.
+- FAQPage phải trùng từng chữ với 11 câu hiển thị trong `#faq`. Sửa câu nào thì sửa cả hai chỗ.
 - Sau khi đăng: kiểm bằng https://search.google.com/test/rich-results (không lỗi, cảnh báo chấp nhận được).
 
 ## 4. Form, CRM và đo lường
