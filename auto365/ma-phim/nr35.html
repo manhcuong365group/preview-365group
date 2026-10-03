@@ -1137,7 +1137,7 @@ if(caseTrack){
               </tbody>
             </table>
         </div>
-        <p class="price-disclaimer">Giá dán lẻ cho một vị trí kính, áp dụng từ 06/2026, giữ nguyên mọi nhóm xe; cửa sổ trời nhỏ tính như 1 kính sườn. Giá xác nhận theo dòng xe khi báo giá.</p>
+        <p class="price-disclaimer">Giá dán lẻ cho một vị trí kính, áp dụng từ 06/2026, giữ nguyên mọi nhóm xe. Cửa sổ trời từ 850.000đ; panorama hoặc cửa sổ trời lớn báo giá theo diện tích sau khi kiểm tra xe. Giá xác nhận theo dòng xe khi báo giá.</p>
         <p class="section-desc section-link" style="margin-top:14px">Cấu hình và bảng giá trọn xe đầy đủ xem tại <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">dòng 3M Ceramic NR (Ceramic Hybrid)</a>; khác biệt giữa các gói: <a class="inline-link" href="https://auto365.vn/3m-ceramic-hybrid-va-crystalline-hybrid">3M Ceramic Hybrid và Crystalline Hybrid</a>.</p>
       </div>
     </section>
@@ -1403,6 +1403,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
           <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
           <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Kính lái sáng, hay lái đêm</option><option>Cân bằng chống nóng và quan sát</option><option>So sánh NR35 với IR50</option></select></div>
+          <div class="film-lead-field full"><label for="film-lead-glass">Vị trí kính cần dán</label><select id="film-lead-glass" name="glass_position"><option value="">Chưa xác định</option><option>Kính lái</option><option>Kính sườn trước</option><option>Kính sườn sau</option><option>Kính lưng</option><option>Cửa sổ trời</option><option>Nhiều vị trí</option></select></div>
           <input type="hidden" id="film-lead-package" name="package" value="3M Ceramic NR35">
         </div>
         <input name="form-honey" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
@@ -1546,8 +1547,8 @@ updateFitment();
         if(form.elements['form-honey']&&form.elements['form-honey'].value)return;
         var data=new FormData(form),phone=String(data.get('phone')||'').trim();
         if(!/^(?:\+84|0)(?:[ .-]?\d){8,10}$/.test(phone)){status.textContent='Vui lòng nhập số điện thoại Việt Nam hợp lệ.';form.elements.phone.focus();return;}
-        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Họ tên: '+(data.get('fullname')||'Chưa cung cấp'),'Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Mã / gói quan tâm: '+data.get('package')].join('\n');
-        var body=new FormData();body.append('fullname',data.get('fullname')||'');body.append('phone',phone);body.append('car_model',[data.get('vehicle'),data.get('year')].filter(Boolean).join(' '));body.append('province',data.get('city')||'');body.append('note',message);body.append('package',data.get('package')||'');body.append('consent','true');body.append('consent_at',new Date().toISOString());body.append('service','Phim cách nhiệt 3M');body.append('source_page',document.title);body.append('source_url',location.href);body.append('referrer',document.referrer||'');
+        var message=['Yêu cầu tư vấn phim cách nhiệt Auto365','Họ tên: '+(data.get('fullname')||'Chưa cung cấp'),'Dòng xe: '+(data.get('vehicle')||'Chưa cung cấp'),'Năm xe: '+(data.get('year')||'Chưa cung cấp'),'Khu vực: '+(data.get('city')||'Chưa cung cấp'),'Số điện thoại: '+phone,'Nhu cầu: '+(data.get('need')||'Chưa xác định'),'Vị trí kính: '+(data.get('glass_position')||'Chưa xác định'),'Mã / gói quan tâm: '+data.get('package')].join('\n');
+        var body=new FormData();body.append('fullname',data.get('fullname')||'');body.append('phone',phone);body.append('car_model',[data.get('vehicle'),data.get('year')].filter(Boolean).join(' '));body.append('province',data.get('city')||'');body.append('note',message);body.append('package',data.get('package')||'');body.append('glass_position',data.get('glass_position')||'');body.append('consent','true');body.append('consent_at',new Date().toISOString());body.append('service','Phim cách nhiệt 3M');body.append('source_page',document.title);body.append('source_url',location.href);body.append('referrer',document.referrer||'');
         var q=new URLSearchParams(location.search);['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){body.append(k,q.get(k)||'')});
         var submit=form.querySelector('.film-lead-submit');submit.disabled=true;submit.textContent='Đang gửi...';status.textContent='';
         var fallback=function(msg){messageField.value=message;messageField.hidden=false;form.querySelector('.film-lead-zalo').hidden=false;status.textContent=msg;};
@@ -1669,5 +1670,6 @@ tr.nr-cur td{background:#fff3f4}
 </style>
 <style>.hero-byline{margin:10px 0 0;font-size:12.5px;color:#aeb5bf}.hero-byline a{color:#fff;text-decoration:underline;text-underline-offset:2px}.hero-lead strong{color:#fff}</style>
 <style>.film-lead-consent{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:#4b5563;margin:12px 0}.film-lead-consent input{margin-top:3px}.film-lead-consent a{color:#e31b2d}</style>
+<style>.film-lead-zalo[hidden],.film-lead-message[hidden]{display:none!important}</style>
 </body>
 </html>
