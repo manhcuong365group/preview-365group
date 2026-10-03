@@ -5,8 +5,8 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `ffca51120e589dcdc253f36f926ba43eb8a0e43516c0acd3f095fa1306bfbe83` (commit `a302e35e`) |
-| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026", schema `dateModified` 2026-09-30) |
+| SHA-256 bản duyệt | `3fbf1d6705edd23a1ab77d104a853003aeb13a6a363919f5b3cd1e5808fa069e` (commit `84d0eb52`) |
+| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 03/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 03/10/2026", schema `dateModified` 2026-10-03) |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
 
@@ -79,6 +79,6 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Hotline | 0365 365 911 | 29/09/2026 |
 | Số chi nhánh | 91 chi nhánh · 33 tỉnh thành | 30/09/2026 |
 | Phân phiên bản | Không xếp hạng theo đời; chỉ ghi đúng tên/đời theo trang sản phẩm | 28/09/2026 |
-| Người duyệt | Nguyễn Quang Đạo | 30/09/2026 |
+| Người duyệt | Nguyễn Quang Đạo | 03/10/2026 |
 | Sapo | Bản do người phụ trách nội dung viết (answer-first) | 02/10/2026 |
 | Case Honda City / CR-V 2018 | Gắn F10 New 2025 theo link sản phẩm trong bài case | 03/10/2026 |
