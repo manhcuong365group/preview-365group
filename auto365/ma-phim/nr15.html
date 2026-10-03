@@ -810,6 +810,21 @@
   ]
 }
 </script>
+<style id="split-layout">
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:center}
+.split--rev .split-media{order:2}
+.split--top{align-items:start}
+.split+*{margin-top:24px}
+.split-media figure{margin:0}
+.split-media img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.split-media figcaption{font-size:13px;color:#6b7280;line-height:1.45;margin-top:8px}
+.split-body{min-width:0}
+.split-body>:first-child{margin-top:0}
+.split-body>:last-child{margin-bottom:0}
+.split .cri-intro{grid-template-columns:1fr}
+@media(min-width:901px){.split .steps8{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}.split .steps8 li{flex-direction:row;text-align:left;gap:10px}.split .steps8 li::after{display:none}.split .steps8 .n{flex:0 0 auto;width:36px;height:36px;font-size:15px}}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:20px}.split--rev .split-media{order:0}}
+</style>
 </head>
 
 <body>
@@ -882,6 +897,9 @@
 
     <section class="section" id="gioi-thieu" aria-labelledby="intro-title" style="padding-top:30px;padding-bottom:30px">
       <div class="container">
+<div class="split split--top">
+<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-thi-cong-tai-kinh-lung-geely-ex2-chung-nhan-ghi-nr-15-cho-vi-tri-nay-img_6aa77c788621d6.19337584.webp" alt="Thi công tại kính lưng Geely EX2; chứng nhận ghi NR15 cho vị trí này" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Thi công tại kính lưng Geely EX2; chứng nhận ghi NR15 cho vị trí này.</figcaption></figure></div>
+<div class="split-body">
         <h2 class="section-title" id="intro-title">3M NR15 là gì?</h2>
         <div class="verdict-block">
           <p style="margin:0 0 10px">Ceramic NR là dòng phim mới của 3M Việt Nam. Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố, tăng riêng tư và hạn chế ảnh hưởng đến các kết nối như điện thoại, GPS, Bluetooth, ETC/VETC.</p>
@@ -897,7 +915,8 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Auto365 không tư vấn cho kính lái; kính lái phối NR35 hoặc CR BLK tùy gói</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Auto365 kiểm tra lại kết nối điện thoại, GPS, ETC/VETC sau khi dán</span></li>
         </ul>
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-thi-cong-tai-kinh-lung-geely-ex2-chung-nhan-ghi-nr-15-cho-vi-tri-nay-img_6aa77c788621d6.19337584.webp" alt="Thi công tại kính lưng Geely EX2; chứng nhận ghi NR15 cho vị trí này" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Thi công tại kính lưng Geely EX2; chứng nhận ghi NR15 cho vị trí này.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-suon-porsche-panamera-dan-3m-ceramic-nr15-nham-tang-tinh-rieng-tu-va-ho-tro-giam-nhiet-cho-khoang-cabinjpg-img_6a471c417c1af8.68336908_auto365vn.jpg" alt="Kính sườn Porsche Panamera dán 3M Ceramic NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn Porsche Panamera dán 3M Ceramic NR15.</figcaption></figure></div>
+</div>
+</div>
 </div>
     </section>
 
@@ -934,7 +953,7 @@
           </article>
         </div>
         <p class="section-desc" style="margin-top:14px">NR15 không có giá kính lái tại Auto365. So sánh với dòng khác: <a class="inline-link" href="https://auto365.vn/so-sanh-3m-ceramic-nr-ceramic-ir-cr-blk">So sánh 3M Ceramic NR, Ceramic IR và CR BLK</a>.</p>
-      <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-hinh-anh-minh-hoa-do-sang-cua-cac-ma-phim-trong-goi-3m-ceramic-hybrid-jpg-img_6a5754771c8b94.20509311.jpg" alt="Hình minh họa độ sáng của các mã phim trong gói 3M Ceramic Hybrid" width="800" height="533" loading="lazy" decoding="async"><figcaption>Hình minh họa độ sáng của các mã phim trong gói 3M Ceramic Hybrid.</figcaption></figure>
+      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-hinh-anh-minh-hoa-do-sang-cua-cac-ma-phim-trong-goi-3m-ceramic-hybrid-jpg-img_6a5754771c8b94.20509311.jpg" alt="Hình minh họa độ sáng của các mã phim trong gói 3M Ceramic Hybrid" width="800" height="533" loading="lazy" decoding="async"><figcaption>Hình minh họa độ sáng của các mã phim trong gói 3M Ceramic Hybrid.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-phong-thi-cong-dan-phim-cach-nhiet-3m-ceramic-nr-cho-porsche-panamera-tai-auto365vn-tru-so-chinhjpg-img_6a471c480b5aa2.36972268_auto365vn.jpg" alt="Phòng thi công dán 3M Ceramic NR cho Porsche Panamera tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Phòng thi công dán 3M Ceramic NR cho Porsche Panamera tại Auto365.vn - Trụ Sở Chính.</figcaption></figure></div>
 </div>
     </section>
 
@@ -1007,14 +1026,18 @@
 
     <section class="section" aria-labelledby="tech-title">
       <div class="container">
+<div class="split split--rev">
+<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-lung-bmw-320i-sau-khi-hoan-thien-3m-ceramic-nr15jpg-img_6a461119b998b7.01986624_auto365vn.jpg" alt="Kính lưng BMW 320i sau khi hoàn thiện 3M Ceramic NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính lưng BMW 320i sau khi hoàn thiện 3M Ceramic NR15.</figcaption></figure></div>
+<div class="split-body">
         <h2 class="section-title" id="tech-title">Vì sao NR15 có IRR 86% nhưng TSER 65%?</h2>
         <p class="section-desc">Hai con số đo theo hai cách khác nhau. IRR chỉ xét một dải hồng ngoại hẹp trên phim chưa dán, còn TSER tính toàn bộ năng lượng mặt trời đi qua kính đã dán phim. NR25 và NR15 cùng IRR 86% nhưng TSER khác nhau (59% và 65%).</p>
+</div>
+</div>
         <div class="tech-grid">
               <article class="tech"><div class="big">86% ≠ 65%</div><h3>IRR khác TSER</h3><p>Thấy IRR 86% rồi nghĩ phim cản 86% nhiệt là cách hiểu sai hay gặp. Khi so cản nhiệt, hãy nhìn TSER 65%.</p></article>
               <article class="tech"><div class="big">14%</div><h3>VLT trên một kính tham chiếu</h3><p>Con số đo trên kính xanh 6 mm có VLT 73%. Kính zin của xe bạn sáng hay đậm hơn thì kết quả sau dán cũng lệch theo.</p></article>
               <article class="tech"><div class="big">NR</div><h3>Nano Ceramic + Nano Reflective</h3><p>Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố, tăng riêng tư và hạn chế ảnh hưởng đến các kết nối như điện thoại, GPS, Bluetooth, ETC/VETC. 3M không công bố kết quả thử với từng thiết bị, nên sau khi dán, kỹ thuật viên Auto365 thử lại GPS, thẻ ETC và camera ngay trên xe.</p></article>
             </div>
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-lung-bmw-320i-sau-khi-hoan-thien-3m-ceramic-nr15jpg-img_6a461119b998b7.01986624_auto365vn.jpg" alt="Kính lưng BMW 320i sau khi hoàn thiện 3M Ceramic NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính lưng BMW 320i sau khi hoàn thiện 3M Ceramic NR15.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-ceramic-nrjpg-img_6a47aac4ddf354.21962369_auto365vn.jpg" alt="Minh họa công nghệ Ceramic Hybrid: phản xạ nhiệt" width="800" height="533" loading="lazy" decoding="async"><figcaption>Minh họa công nghệ Ceramic Hybrid: phản xạ nhiệt (ảnh trang 3M Ceramic Hybrid của Auto365).</figcaption></figure></div>
 </div>
     </section>
 
@@ -1293,6 +1316,9 @@ if(caseTrack){
 
     <section class="section process" aria-labelledby="process-title">
       <div class="container">
+<div class="split split--top">
+<div class="split-media"><figure><img src="assets/auto365vn-ky-thuat-vien-thi-cong-phim-tai-kinh-suon-truoc-geely-ex2-img_6aa77c54a2ec90.07212463.webp" alt="Kỹ thuật viên Auto365 thi công phim tại kính sườn trước Geely EX2" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên Auto365 thi công phim tại kính sườn trước Geely EX2.</figcaption></figure></div>
+<div class="split-body">
         <div class="process-card">
           <h2 class="process-title" id="process-title">8 bước Auto365 kiểm tra <span class="red">trước khi bàn giao</span></h2>
           <p class="process-sub">Với NR15 ở kính sườn/kính lưng: đo VLT kính nguyên bản, quan sát gương bên từ ghế lái, kiểm tra camera sau và đường sấy kính lưng trước và sau thi công.</p>
@@ -1307,7 +1333,8 @@ if(caseTrack){
             <li><span class="n">8</span><span class="t">Bàn giao &amp; eWarranty</span></li>
           </ol>
         </div>
-      <div class="r35-row"><figure><img src="assets/auto365vn-ky-thuat-vien-thi-cong-phim-tai-kinh-suon-truoc-geely-ex2-img_6aa77c54a2ec90.07212463.webp" alt="Kỹ thuật viên Auto365 thi công phim tại kính sườn trước Geely EX2" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên Auto365 thi công phim tại kính sườn trước Geely EX2.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-phong-thi-cong-dan-phim-cach-nhiet-3m-ceramic-nr-cho-porsche-panamera-tai-auto365vn-tru-so-chinhjpg-img_6a471c480b5aa2.36972268_auto365vn.jpg" alt="Phòng thi công dán 3M Ceramic NR cho Porsche Panamera tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Phòng thi công dán 3M Ceramic NR cho Porsche Panamera tại Auto365.vn - Trụ Sở Chính.</figcaption></figure></div>
+</div>
+</div>
 </div>
     </section>
 
@@ -1692,15 +1719,15 @@ const fitmentData = {
    },
    "medium": {
     "code": "NR15",
-    "tag": "Kín nhất cho kính lưng",
-    "reason": "Auto365 không tư vấn NR5 cho kính lưng để giữ tầm nhìn qua gương trung tâm. NR15 (VLT 14%, TSER 65% trên kính ô tô xanh 6 mm, VLT nền 73%) là mã kín nhất Auto365 dùng cho kính lưng; nên kiểm tra camera lùi và đường sấy kính.",
+    "tag": "Riêng tư cao cho kính lưng",
+    "reason": "Auto365 không tư vấn NR5 cho kính lưng để giữ tầm nhìn qua gương trung tâm. NR15 (VLT 14%, TSER 65% trên kính ô tô xanh 6 mm, VLT nền 73%) là mã có VLT thấp hơn NR25 mà Auto365 tư vấn cho kính lưng; nên kiểm tra camera lùi và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: NR25 nếu hay lái đêm",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-15"
    },
    "low": {
     "code": "NR15",
-    "tag": "Kín nhất cho kính lưng",
-    "reason": "Auto365 không tư vấn NR5 cho kính lưng để giữ tầm nhìn qua gương trung tâm. NR15 (VLT 14%, TSER 65% trên kính ô tô xanh 6 mm, VLT nền 73%) là mã kín nhất Auto365 dùng cho kính lưng; nên kiểm tra camera lùi và đường sấy kính.",
+    "tag": "Riêng tư cao cho kính lưng",
+    "reason": "Auto365 không tư vấn NR5 cho kính lưng để giữ tầm nhìn qua gương trung tâm. NR15 (VLT 14%, TSER 65% trên kính ô tô xanh 6 mm, VLT nền 73%) là mã có VLT thấp hơn NR25 mà Auto365 tư vấn cho kính lưng; nên kiểm tra camera lùi và đường sấy kính.",
     "alt": "Có thể đối chiếu thêm: NR25 nếu hay lái đêm",
     "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-15"
    }

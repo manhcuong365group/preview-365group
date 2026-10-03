@@ -810,6 +810,21 @@
   ]
 }
 </script>
+<style id="split-layout">
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:center}
+.split--rev .split-media{order:2}
+.split--top{align-items:start}
+.split+*{margin-top:24px}
+.split-media figure{margin:0}
+.split-media img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.split-media figcaption{font-size:13px;color:#6b7280;line-height:1.45;margin-top:8px}
+.split-body{min-width:0}
+.split-body>:first-child{margin-top:0}
+.split-body>:last-child{margin-bottom:0}
+.split .cri-intro{grid-template-columns:1fr}
+@media(min-width:901px){.split .steps8{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}.split .steps8 li{flex-direction:row;text-align:left;gap:10px}.split .steps8 li::after{display:none}.split .steps8 .n{flex:0 0 auto;width:36px;height:36px;font-size:15px}}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:20px}.split--rev .split-media{order:0}}
+</style>
 </head>
 
 <body>
@@ -882,10 +897,13 @@
 
     <section class="section" id="gioi-thieu" aria-labelledby="intro-title" style="padding-top:30px;padding-bottom:30px">
       <div class="container">
+<div class="split split--top">
+<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-dan-phim-3m-ceramic-hybrid-6jpg-img_6a3b4f356164a5.52359306_auto365vn.jpg" alt="Dán 3M Ceramic NR35 cho kính lái VinFast VF3" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Dán 3M Ceramic NR35 cho kính lái VinFast VF3.</figcaption></figure></div>
+<div class="split-body">
         <h2 class="section-title" id="intro-title">3M NR35 là gì?</h2>
         <div class="verdict-block">
           <p style="margin:0 0 10px">Ceramic NR là dòng phim mới của 3M Việt Nam. Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố, tăng riêng tư và hạn chế ảnh hưởng đến các kết nối như điện thoại, GPS, Bluetooth, ETC/VETC.</p>
-          <p style="margin:0 0 10px">NR35 là mã sáng nhất trong dòng và là kính lái của gói Ceramic Hybrid; mã này hợp với chủ xe muốn kính lái dịu nắng ban ngày.</p>
+          <p style="margin:0 0 10px">NR35 có VLT cao hơn NR25, NR15 và NR5, và là kính lái của gói Ceramic Hybrid; mã này hợp với chủ xe muốn kính lái dịu nắng ban ngày.</p>
         </div>
         <h3 style="margin:20px 0 0;font-size:18px">Đặc điểm chính của NR35</h3>
         <ul class="answer-bullets" aria-label="Đặc điểm chính của NR35">
@@ -896,7 +914,8 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Tư vấn cho kính lái trong cấu hình Auto365: giá 2.600.000đ, xác nhận theo dòng xe</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Auto365 kiểm tra lại kết nối điện thoại, GPS, ETC/VETC sau khi dán</span></li>
         </ul>
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-dan-phim-3m-ceramic-hybrid-6jpg-img_6a3b4f356164a5.52359306_auto365vn.jpg" alt="Dán 3M Ceramic NR35 cho kính lái VinFast VF3" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Dán 3M Ceramic NR35 cho kính lái VinFast VF3.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-2png-img_6a46411f3fec70.59202569_auto365vn.png" alt="Cấu hình 3M Ceramic NR35 kính lái và NR15 kính sườn, kính lưng cho VinFast VF3" width="800" height="533" loading="lazy" decoding="async"><figcaption>Cấu hình 3M Ceramic NR35 kính lái và NR15 kính sườn, kính lưng cho VinFast VF3.</figcaption></figure></div>
+</div>
+</div>
 </div>
     </section>
 
@@ -961,7 +980,7 @@
           </article>
         </div>
         <p class="section-desc section-link">Muốn phối phim cho toàn bộ xe? Xem <a class="inline-link" href="https://auto365.vn/cach-phoi-phim-3m-ceramic-nr-theo-tung-vi-tri-kinh">cách phối phim 3M Ceramic NR theo từng vị trí kính</a> và <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">cấu hình gói 3M Ceramic Hybrid</a>.</p>
-        <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-3m-ceramic-nr35-kinh-lai-jpg-img_6a5755e3446300.24924595.jpg" alt="VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính.</figcaption></figure>
+        <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-3m-ceramic-nr35-kinh-lai-jpg-img_6a5755e3446300.24924595.jpg" alt="VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-quy-trinh-thi-cong-3m-ceramic-nr-auto365jpgjpg-img_6a44b0942781b8.55590688_auto365vn.jpg" alt="Quy trình thi công 3M Ceramic NR tại Auto365 (case Hyundai Accent 2025)" width="800" height="533" loading="lazy" decoding="async"><figcaption>Quy trình thi công 3M Ceramic NR tại Auto365 (case Hyundai Accent 2025).</figcaption></figure></div>
       </div>
     </section>
 
@@ -1002,15 +1021,19 @@
 
     <section class="section" aria-labelledby="tech-title">
       <div class="container">
+<div class="split split--rev">
+<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-hyundai-accent-2025-cau-hinh-3m-ceramic-nr35-nr15jpgjpg-img_6a44af03da09c4.01190774_auto365vn.jpg" alt="Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15.</figcaption></figure></div>
+<div class="split-body">
         <h2 class="section-title" id="tech-title">Vì sao NR35 có IRR 79% nhưng TSER chỉ 51%?</h2>
         <p class="section-desc">Hai con số đo theo hai cách khác nhau. IRR chỉ xét một dải hồng ngoại hẹp trên phim chưa dán, còn TSER tính toàn bộ năng lượng mặt trời đi qua kính đã dán phim.</p>
+</div>
+</div>
         <div class="tech-grid">
               <article class="tech"><div class="big">79% ≠ 51%</div><h3>IRR khác TSER</h3><p>Thấy IRR 79% rồi nghĩ phim cản 79% nhiệt là cách hiểu sai hay gặp. Khi so cản nhiệt, hãy nhìn TSER 51%.</p></article>
               <article class="tech"><div class="big">43%</div><h3>VLT trên một kính tham chiếu</h3><p>Con số đo trên kính xanh 6 mm có VLT 73%. Kính zin của xe bạn sáng hay đậm hơn thì kết quả sau dán cũng lệch theo.</p></article>
               <article class="tech"><div class="big">NR</div><h3>Nano Ceramic + Nano Reflective</h3><p>Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố, tăng riêng tư và hạn chế ảnh hưởng đến các kết nối như điện thoại, GPS, Bluetooth, ETC/VETC. 3M không công bố kết quả thử với từng thiết bị, nên sau khi dán, kỹ thuật viên Auto365 thử lại GPS, thẻ ETC và camera ngay trên xe.</p></article>
             </div>
-        <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-hyundai-accent-2025-cau-hinh-3m-ceramic-nr35-nr15jpgjpg-img_6a44af03da09c4.01190774_auto365vn.jpg" alt="Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-ceramic-nrjpg-img_6a47aac4ddf354.21962369_auto365vn.jpg" alt="Minh họa công nghệ Ceramic Hybrid: phản xạ nhiệt" width="800" height="533" loading="lazy" decoding="async"><figcaption>Minh họa công nghệ Ceramic Hybrid: phản xạ nhiệt (ảnh trang 3M Ceramic Hybrid của Auto365).</figcaption></figure></div>
-      </div>
+</div>
     </section>
 
     <section class="section alt c35-cases" id="xe-thuc-te" aria-labelledby="case-title">
@@ -1210,6 +1233,9 @@ if(caseTrack){
 
     <section class="section process" aria-labelledby="process-title">
       <div class="container">
+<div class="split split--top">
+<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-4png-img_6a461b501be0a0.37513613_auto365vn.png" alt="Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính.</figcaption></figure></div>
+<div class="split-body">
         <div class="process-card">
           <h2 class="process-title" id="process-title">8 bước Auto365 kiểm tra <span class="red">trước khi bàn giao</span></h2>
           <p class="process-sub">Với NR35 ở kính lái: đo VLT kính nguyên bản, kiểm tra vùng camera ADAS / cảm biến mưa, xem tầm nhìn từ ghế lái trước và sau thi công.</p>
@@ -1224,7 +1250,8 @@ if(caseTrack){
             <li><span class="n">8</span><span class="t">Bàn giao &amp; eWarranty</span></li>
           </ol>
         </div>
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-4png-img_6a461b501be0a0.37513613_auto365vn.png" alt="Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-quy-trinh-thi-cong-3m-ceramic-nr-auto365jpgjpg-img_6a44b0942781b8.55590688_auto365vn.jpg" alt="Quy trình thi công 3M Ceramic NR tại Auto365 (case Hyundai Accent 2025)" width="800" height="533" loading="lazy" decoding="async"><figcaption>Quy trình thi công 3M Ceramic NR tại Auto365 (case Hyundai Accent 2025).</figcaption></figure></div>
+</div>
+</div>
 </div>
     </section>
 

@@ -828,6 +828,21 @@
   ]
 }
 </script>
+<style id="split-layout">
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:32px;align-items:center}
+.split--rev .split-media{order:2}
+.split--top{align-items:start}
+.split+*{margin-top:24px}
+.split-media figure{margin:0}
+.split-media img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.split-media figcaption{font-size:13px;color:#6b7280;line-height:1.45;margin-top:8px}
+.split-body{min-width:0}
+.split-body>:first-child{margin-top:0}
+.split-body>:last-child{margin-bottom:0}
+.split .cri-intro{grid-template-columns:1fr}
+@media(min-width:901px){.split .steps8{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 18px}.split .steps8 li{flex-direction:row;text-align:left;gap:10px}.split .steps8 li::after{display:none}.split .steps8 .n{flex:0 0 auto;width:36px;height:36px;font-size:15px}}
+@media(max-width:900px){.split{grid-template-columns:1fr;gap:20px}.split--rev .split-media{order:0}}
+</style>
 </head>
 
 <body>
@@ -900,10 +915,13 @@
 
     <section class="section" id="la-gi" aria-labelledby="intro-title" style="padding-top:30px;padding-bottom:30px">
       <div class="container">
+<div class="split split--top">
+<div class="split-media"><figure><img src="assets/auto365vn-bmw-330i-sau-khi-hoan-thien-cau-hinh-cr-blk-40-o-kinh-lai-va-cr-blk-15-o-kinh-suon-kinh-lung-img_6ab9e0d8dbb824.86747341.webp" alt="BMW 330i sau khi hoàn thiện cấu hình CR BLK 40 ở kính lái và CR BLK 15 ở kính sườn, kính lưng tại Auto365" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>BMW 330i sau khi hoàn thiện cấu hình CR BLK 40 ở kính lái và CR BLK 15 ở kính sườn, kính lưng tại Auto365.</figcaption></figure></div>
+<div class="split-body">
         <div class="cri-intro">
           <div>
             <h2 class="section-title" id="intro-title">3M CR BLK 15 là gì?</h2>
-            <p>Dòng 3M Crystalline CR BLK được 3M mô tả là phim quang học phi kim gồm hơn 200 lớp siêu mỏng, nên mức cản nhiệt không phụ thuộc chủ yếu vào độ tối của phim. Trong các mã Auto365 đang triển khai, CR BLK 15 là mã đậm nhất: độ mát gần CR BLK 35 nhưng kín hơn rõ.</p>
+            <p>Dòng 3M Crystalline CR BLK được 3M mô tả là phim quang học phi kim gồm hơn 200 lớp siêu mỏng, nên mức cản nhiệt không phụ thuộc chủ yếu vào độ tối của phim. Trong các mã Auto365 đang triển khai, CR BLK 15 có VLT thấp hơn CR BLK 35, 40, 50 và 60: độ mát gần CR BLK 35 nhưng kín hơn rõ.</p>
           <p>Mã này hợp với chủ xe ưu tiên sự riêng tư cho hàng ghế sau, như xe gia đình chở trẻ nhỏ hoặc xe thường chở khách.</p>
           </div>
           <div class="cri-keys">
@@ -918,6 +936,8 @@
             </ul>
           </div>
         </div>
+</div>
+</div>
         <h3 class="cri-sub">CR BLK 15 hợp với ai?</h3>
         <ul class="answer-bullets" aria-label="CR BLK 15 phù hợp với ai?">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Muốn hàng ghế sau kín đáo, hạn chế nhìn từ ngoài vào qua kính sườn sau và kính lưng</span></li>
@@ -929,7 +949,6 @@
         <div class="verdict-block">
           <p><strong>CR BLK 15 có tối quá không?</strong> Ban ngày, người ngồi sau vẫn nhìn ra ngoài bình thường, còn từ ngoài khó nhìn rõ bên trong. Ban đêm thì tối hơn 35 thấy rõ, nhất là ở đường thiếu sáng, nên với kính lưng bạn nên dùng thêm camera lùi.</p>
         </div>
-      <div class="r35-row"><figure><img src="assets/auto365vn-bmw-330i-sau-khi-hoan-thien-cau-hinh-cr-blk-40-o-kinh-lai-va-cr-blk-15-o-kinh-suon-kinh-lung-img_6ab9e0d8dbb824.86747341.webp" alt="BMW 330i sau khi hoàn thiện cấu hình CR BLK 40 ở kính lái và CR BLK 15 ở kính sườn, kính lưng tại Auto365" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>BMW 330i sau khi hoàn thiện cấu hình CR BLK 40 ở kính lái và CR BLK 15 ở kính sườn, kính lưng tại Auto365.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-suon-sau-va-kinh-lung-subaru-forester-su-dung-phim-3m-crystalline-cr-blk-15-img_6ab38ca8c27e16.64126730.webp" alt="Kính sườn sau và kính lưng Subaru Forester sử dụng 3M Crystalline CR BLK 15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn sau và kính lưng Subaru Forester sử dụng 3M Crystalline CR BLK 15.</figcaption></figure></div>
 </div>
     </section>
 
@@ -1037,15 +1056,19 @@
 
     <section class="section" aria-labelledby="tech-title">
       <div class="container">
+<div class="split split--rev">
+<div class="split-media"><figure><img src="assets/auto365vn-bmw-x3-sau-khi-dan-3m-cr-blk-15-o-kinh-suon-truoc-img_6ab764029b3475.07450274.webp" alt="BMW X3 sau khi dán CR BLK 15 ở kính sườn" width="800" height="533" loading="lazy" decoding="async"><figcaption>BMW X3 sau khi dán CR BLK 15 ở kính sườn.</figcaption></figure></div>
+<div class="split-body">
         <h2 class="section-title" id="tech-title">CR BLK 15 tối hơn 35 nhiều, sao TSER chỉ hơn vài điểm?</h2>
         <p class="section-desc">Theo 3M, Crystalline gồm hơn 200 lớp quang học phi kim, chặn nhiệt chủ yếu bằng cách chọn lọc dải hồng ngoại, ít phụ thuộc vào độ tối. Vì thế CR BLK 15 (VLT 14%) có TSER 64%, chỉ nhỉnh hơn CR BLK 35 (60%); khác biệt lớn nằm ở độ kín và mức giảm chói 81%.</p>
+</div>
+</div>
         <div class="tech-grid">
               <article class="tech"><div class="big">200+</div><h3>Lớp quang học siêu mỏng</h3><p>Cấu trúc MOF hơn 200 lớp theo mô tả của 3M, thay vì chỉ dựa vào lớp nhuộm màu tối.</p></article>
               <article class="tech"><div class="big">0</div><h3>Kim loại trong cấu trúc</h3><p>Phim phi kim được 3M mô tả là không gây nhiễu điện tử, GPS, radio vệ tinh và thiết bị di động gồm 5G.</p></article>
               <article class="tech"><div class="big">2</div><h3>Điều kiện kính tham chiếu</h3><p>Auto 75 cho 14%, kính trong 6 mm cho 17%: kính nền vẫn ảnh hưởng tới độ tối thực tế trên xe.</p></article>
             </div>
-        <div class="r35-row"><figure><img src="assets/auto365vn-bmw-x3-sau-khi-dan-3m-cr-blk-15-o-kinh-suon-truoc-img_6ab764029b3475.07450274.webp" alt="BMW X3 sau khi dán CR BLK 15 ở kính sườn" width="800" height="533" loading="lazy" decoding="async"><figcaption>BMW X3 sau khi dán CR BLK 15 ở kính sườn.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kia-k5-hoan-thien-kinh-suon-cr-blk-15jpg-img_6a68823129cc27.32758858.webp" alt="Kính sườn Kia K5 sau khi dán 3M CR BLK 15 tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn Kia K5 sau khi dán 3M CR BLK 15 tại Auto365.vn - Trụ Sở Chính.</figcaption></figure></div>
-      </div>
+</div>
     </section>
 
     <section class="section alt c35-cases" id="xe-thuc-te" aria-labelledby="case-title">
@@ -1278,6 +1301,9 @@ if(caseTrack){
 
     <section class="section process" aria-labelledby="process-title">
       <div class="container">
+<div class="split split--top">
+<div class="split-media"><figure><img src="assets/ky-thuat-vien-thuc-hien-dan-phim-cach-nhiet-tai-auto365vn-tr-1790932598.webp" alt="Kỹ thuật viên Auto365 dán phim cách nhiệt 3M tại trụ sở chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên Auto365 dán phim cách nhiệt 3M tại trụ sở chính.</figcaption></figure></div>
+<div class="split-body">
         <div class="process-card">
           <h2 class="process-title" id="process-title">8 bước Auto365 kiểm tra <span class="red">trước khi bàn giao</span></h2>
           <p class="process-sub">Riêng với CR BLK 15, kỹ thuật viên đo VLT kính zin, soát gương chiếu hậu trong, camera sau và đường sấy kính lưng cả trước lẫn sau khi dán.</p>
@@ -1291,10 +1317,10 @@ if(caseTrack){
             <li><span class="n">7</span><span class="t">Kiểm tra lại</span></li>
             <li><span class="n">8</span><span class="t">Bàn giao &amp; eWarranty</span></li>
           </ol>
-<div class="r35-row"><figure><img src="assets/ky-thuat-vien-thuc-hien-dan-phim-cach-nhiet-tai-auto365vn-tr-1790932598.webp" alt="Kỹ thuật viên Auto365 dán phim cách nhiệt 3M tại trụ sở chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên Auto365 dán phim cách nhiệt 3M tại trụ sở chính.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-xu-ly-be-mat-kinh-suon-kia-k5-trong-khi-dan-phimjpg-img_6a68828036af36.65883054.webp" alt="Kỹ thuật viên xử lý bề mặt và gạt dung dịch khi thi công phim cho kính sườn Kia K5" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên xử lý bề mặt và gạt dung dịch khi thi công phim cho kính sườn Kia K5.</figcaption></figure></div>
-
-        </div>
-      </div>
+</div>
+</div>
+</div>
+</div>
     </section>
 
 
