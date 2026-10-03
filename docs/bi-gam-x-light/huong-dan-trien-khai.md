@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `3288bafde829ce3e1a2383504615d4099e5195cd269638515400ffa4d1a04570` (commit `956f7064`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `47638995d593b36c36cdcf5c1169db8aaa10ce3578a25b51a3ac245ebd96f922` (commit `7e7397ea`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
@@ -26,7 +26,7 @@
 
 | Ảnh | Trên preview | Việc cần làm |
 |---|---|---|
-| Ảnh chia khối Land Rover, Honda | `hinh/case-media-1-landrover.webp`, `hinh/case-media-3-honda-black.webp` | Upload lên thư viện ảnh auto365.vn, thay đường dẫn `hinh/...` bằng URL mới |
+| Ảnh chia khối + 6 ảnh thẻ "Vì sao chọn" | toàn bộ file trong `hinh/` được trang tham chiếu | Upload lên thư viện ảnh auto365.vn, thay đường dẫn `hinh/...` bằng URL mới |
 | Ảnh sản phẩm, case, logo hãng | Đã là URL `https://auto365.vn/uploads/...` | Không cần làm gì |
 | og:image | Ảnh sản phẩm X-Light trên auto365.vn | Giữ, hoặc thay bằng ảnh 1200×630 |
 
