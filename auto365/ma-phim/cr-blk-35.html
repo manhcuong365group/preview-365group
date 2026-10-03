@@ -900,6 +900,41 @@
 .mp-rel-card li:first-child{border-top:0}.mp-rel-card a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .mp-rel-note{color:var(--muted);font-weight:400}
 </style>
+<style id="single-fig">
+.r35-fig{display:block;width:100%;max-width:820px!important;margin:24px auto 0!important}
+.r35-fig img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px}
+.r35-fig figcaption{margin-top:8px;font-size:13px;line-height:1.45;color:#6b737d;text-align:center}
+</style>
+<style id="fm-style">
+.hero-fit-card .fm-note{margin:10px 0 0;font-size:12px;line-height:1.5;color:#6b737d}
+.fm-modal{position:fixed;inset:0;z-index:1001;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(20,24,30,.62)}
+.fm-modal[hidden]{display:none}
+.fm-dialog{position:relative;width:100%;max-width:560px;max-height:calc(100vh - 32px);overflow:auto;background:#fff;border-radius:8px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.35);color:#252a30;font-size:14px;line-height:1.55;text-align:left}
+.fm-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;border-radius:8px;background:#f2f3f5;color:#252a30;font-size:20px;line-height:1;cursor:pointer}
+.fm-close:focus-visible,.fm-btn:focus-visible{outline:2px solid #e31b2d;outline-offset:2px}
+.fm-kicker{margin:0 0 4px;font-size:12px;font-weight:700;color:#6b737d;text-transform:uppercase;letter-spacing:.04em}
+.fm-dialog h2{margin:0 40px 4px 0;font-size:22px;line-height:1.25;color:#111418}
+.fm-line{margin:0 0 12px;font-size:13px;color:#e31b2d;font-weight:700}
+.fm-specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 12px}
+.fm-specs div{background:#f7f8fa;border:1px solid #eceef1;border-radius:8px;padding:10px 8px;text-align:center}
+.fm-specs strong{display:block;font-size:19px;color:#111418}
+.fm-specs span{display:block;font-size:11.5px;color:#6b737d}
+.fm-row{margin:0 0 6px}.fm-row b{color:#111418}
+.fm-reason{margin:10px 0 0;padding:10px 12px;border-left:3px solid #e31b2d;background:#fff6f7;border-radius:0 8px 8px 0;font-size:13.5px}
+.fm-flag{margin:10px 0 0;font-size:12.5px;color:#6b737d}
+.fm-actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+.fm-btn{flex:1 1 180px;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;cursor:pointer;border:1px solid #e31b2d;font-family:inherit}
+.fm-btn-primary{background:#e31b2d;color:#fff}.fm-btn-ghost{background:#fff;color:#e31b2d}
+.fm-alts{margin:18px 0 0;padding:14px 0 0;border-top:1px solid #eceef1}
+.fm-alts[hidden]{display:none}
+.fm-alts h3{margin:0 0 8px;font-size:14px;color:#111418}
+.fm-alts ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fm-alts li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 10px;padding:10px 12px;border:1px solid #eceef1;border-radius:8px;font-size:13px}
+.fm-alts a{color:#e31b2d;font-weight:700;text-decoration:none}
+.fm-src{margin:12px 0 0;font-size:11.5px;color:#8a919a}
+body.fm-open{overflow:hidden}
+@media(max-width:640px){.fm-modal{align-items:flex-end;padding:0}.fm-dialog{max-width:none;border-radius:8px 8px 0 0;max-height:88vh;padding:20px 16px calc(20px + env(safe-area-inset-bottom))}.fm-dialog h2{font-size:20px}.fm-specs strong{font-size:17px}}
+</style>
 </head>
 
 <body>
@@ -949,19 +984,15 @@
           </div>
 
           <div class="hero-media">
-            <div class="hero-fit-card" id="fit-check" aria-label="Gợi ý mã phim theo vị trí kính">
-              <h3>Gợi ý mã phim theo vị trí kính</h3>
+            <div class="hero-fit-card" id="fit-check" aria-label="Gợi ý mã phim 3M theo vị trí kính">
+              <h3>Gợi ý mã phim 3M theo vị trí kính</h3>
               <div class="field-grid">
-                <div class="field"><label for="fitmentPosition">Vị trí kính</label><select id="fitmentPosition"><option value="windshield">Kính lái</option><option selected value="frontside">Kính sườn trước</option><option value="rearside">Kính sườn sau</option><option value="rear">Kính lưng</option></select></div>
-                <div class="field"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Sáng &amp; dễ quan sát</option><option selected value="balance">Cân bằng</option><option value="privacy">Riêng tư hơn</option></select></div>
-                <div class="field field-wide"><label for="fitmentNight">Tần suất đi tối / đi đêm</label><select id="fitmentNight"><option value="high">Nhiều</option><option selected value="medium">Trung bình</option><option value="low">Ít</option></select></div>
+                <div class="field"><label for="fitmentPosition">Vị trí kính</label><select id="fitmentPosition"><option value="windshield">Kính lái</option><option value="frontside" selected>Kính sườn trước</option><option value="rearside">Kính sườn sau</option><option value="rear">Kính lưng</option><option value="sunroof">Cửa sổ trời</option></select></div>
+                <div class="field"><label for="fitmentLine">Dòng phim ưu tiên</label><select id="fitmentLine"><option value="cr" selected>Crystalline CR BLK</option><option value="ir">Ceramic IR</option><option value="nr">Ceramic NR</option><option value="any">Chưa rõ</option></select></div>
+                <div class="field field-wide"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Trong, dễ quan sát</option><option value="balance" selected>Cân bằng</option><option value="privacy">Giảm chói, riêng tư</option></select></div>
               </div>
-              <div class="fit-result" aria-live="polite">
-                <strong id="fitmentPrimary">CR BLK 35</strong>
-                <span class="fit-pill" id="fitmentTag">Mã cân bằng cho kính sườn trước</span>
-                <p id="fitmentReason">CR BLK 35 phù hợp khi muốn sườn trước riêng tư vừa phải mà vẫn nhìn gương rõ.</p>
-                <div class="fit-meta"><span id="fitmentAltText">Có thể đo kính nền và kiểm tra góc nhìn gương</span><a href="https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35" id="fitmentLink">Xem CR BLK 35 →</a></div>
-              </div>
+              <button type="button" class="fit-submit" id="fitmentOpen" aria-haspopup="dialog" aria-controls="fm-modal">Xem mã phù hợp</button>
+              <p class="fm-note">Gợi ý từ 12 mã 3M: CR BLK 60/50/40/35/15, IR50/25/15, NR35/25/15/5.</p>
             </div>
             <p class="metric-ribbon-label">Thông số CR BLK 35 · Auto 75 Glass</p>
             <div class="metric-ribbon" aria-label="Thông số theo mã đang xem"><div class="metric"><strong>33%</strong><span>VLT · truyền sáng</span></div><div class="metric"><strong>60%</strong><span>TSER · tổng năng lượng</span></div><div class="metric"><strong>67%</strong><span>IRER · dải rộng</span></div><div class="metric"><strong>55%</strong><span>Giảm chói</span></div></div>
@@ -990,9 +1021,7 @@
 
     <section class="section" id="la-gi" aria-labelledby="intro-title" style="padding-top:30px;padding-bottom:30px">
       <div class="container">
-<div class="split split--top">
-<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-volkswagen-viloran-3m-cr-blk-50-35-15-webp-img_6aab5406b88e87.43101295.webp" alt="Volkswagen Viloran với cấu hình 3M CR BLK 50, 35 và 15 tại Auto365" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Volkswagen Viloran với cấu hình 3M CR BLK 50, 35 và 15 tại Auto365.</figcaption></figure></div>
-<div class="split-body">
+
         <div class="cri-intro">
           <div>
             <h2 class="section-title" id="intro-title">3M CR BLK 35 là gì?</h2>
@@ -1011,8 +1040,8 @@
             </ul>
           </div>
         </div>
-</div>
-</div>
+
+<figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-volkswagen-viloran-3m-cr-blk-50-35-15-webp-img_6aab5406b88e87.43101295.webp" alt="Volkswagen Viloran với cấu hình 3M CR BLK 50, 35 và 15 tại Auto365" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Volkswagen Viloran với cấu hình 3M CR BLK 50, 35 và 15 tại Auto365.</figcaption></figure>
         <h3 class="cri-sub">CR BLK 35 hợp với ai?</h3>
         <ul class="answer-bullets" aria-label="CR BLK 35 phù hợp với ai?">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Muốn kính sườn trước, sườn sau hoặc kính lưng kín đáo vừa phải, giảm ánh sáng gắt</span></li>
@@ -1061,7 +1090,7 @@
           </article>
         </div>
         <p class="section-desc" style="margin-top:14px">Số liệu CR BLK 15 theo 3M TDS Revision E · 05/2024. So sánh với dòng khác: <a class="inline-link" href="https://auto365.vn/so-sanh-3m-ceramic-nr-ceramic-ir-cr-blk">So sánh 3M Ceramic NR, Ceramic IR và CR BLK</a>.</p>
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-viloran-kinh-suon-truoc-cr-blk-35-webp-img_6aab6cd4e89a55.44340535.webp" alt="Kính sườn trước Volkswagen Viloran sử dụng CR BLK 35" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn trước Volkswagen Viloran sử dụng CR BLK 35.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-viloran-kinh-suon-sau-cr-blk-15-webp-img_6aab6d0b7c77a7.57056543.webp" alt="Kính sườn sau Volkswagen Viloran sử dụng CR BLK 15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn sau Volkswagen Viloran sử dụng CR BLK 15.</figcaption></figure></div>
+      <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-viloran-kinh-suon-truoc-cr-blk-35-webp-img_6aab6cd4e89a55.44340535.webp" alt="Kính sườn trước Volkswagen Viloran sử dụng CR BLK 35" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn trước Volkswagen Viloran sử dụng CR BLK 35.</figcaption></figure>
 </div>
     </section>
 
@@ -1093,7 +1122,7 @@
             <p>Riêng tư vừa phải; kiểm tra camera sau, gương trong và đường sấy trước khi dán.</p>
           </article>
         </div>
-        <div class="r35-row"><figure><img src="assets/35/auto365vn-kinh-suon-truoc-subaru-forester-su-dung-phim-3m-crystalline-cr-blk-35-img_6ab38c93a69113.99534111.webp" alt="Đo kính sườn trước Subaru Forester dán 3M CR BLK 35" width="800" height="533" loading="lazy" decoding="async"><figcaption>Đo kính sườn trước Subaru Forester dán 3M CR BLK 35.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-suon-truoc-geely-ex2-dung-cr-blk-35-theo-ho-so-img_6aa77c3e6497e9.88167879.webp" alt="Kính sườn trước Geely EX2 dán CR BLK 35" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kính sườn trước Geely EX2 dán CR BLK 35.</figcaption></figure></div>
+        <figure class="r35-fig"><img src="assets/35/auto365vn-kinh-suon-truoc-subaru-forester-su-dung-phim-3m-crystalline-cr-blk-35-img_6ab38c93a69113.99534111.webp" alt="Đo kính sườn trước Subaru Forester dán 3M CR BLK 35" width="800" height="533" loading="lazy" decoding="async"><figcaption>Đo kính sườn trước Subaru Forester dán 3M CR BLK 35.</figcaption></figure>
         <p class="section-desc section-link">Muốn phối phim cho toàn bộ xe? Xem <a class="inline-link" href="https://auto365.vn/nen-dan-phim-cach-nhiet-3m-crystalline-cr-blk-ma-nao-cho-tung-vi-tri-kinh">cách chọn mã CR BLK theo từng vị trí kính</a> và <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk">cấu hình của dòng 3M Crystalline CR BLK</a>.</p>
       </div>
     </section>
@@ -1128,20 +1157,18 @@
 
           <div class="source-note"><strong>Về IRR:</strong> 3M đo IRR trên phim kèm liner, không có kính; các cột VLT, TSER, IRER và giảm chói đo trên hệ phim + kính.</div>
         </div>
-      <div class="r35-row"><figure><img src="assets/auto365vn-geely-ex2-voi-cr-blk-50-o-kinh-lai-cr-blk-35-o-kinh-suon-truoc-va-nr-15-o-khu-vuc-phia-sau-img_6aa77b84a936c2.93850625.webp" alt="Geely EX2 tại Auto365: kính lái CR BLK 50, kính sườn trước CR BLK 35, phía sau NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Geely EX2 tại Auto365: kính lái CR BLK 50, kính sườn trước CR BLK 35, phía sau NR15.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-suon-truoc-dung-cr-blk-35-trong-khi-kinh-suon-sau-dung-ir-15-tao-hai-muc-truyen-sang-khac-nhau-tren-cung-chiec-lynk-co-06-img_6a896cf9877bc2.21250232.jpg" alt="Lynk &amp; Co 06: kính sườn trước CR BLK 35, kính sườn sau IR 15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Lynk &amp; Co 06: kính sườn trước CR BLK 35, kính sườn sau IR 15.</figcaption></figure></div>
+      <figure class="r35-fig"><img src="assets/auto365vn-geely-ex2-voi-cr-blk-50-o-kinh-lai-cr-blk-35-o-kinh-suon-truoc-va-nr-15-o-khu-vuc-phia-sau-img_6aa77b84a936c2.93850625.webp" alt="Geely EX2 tại Auto365: kính lái CR BLK 50, kính sườn trước CR BLK 35, phía sau NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Geely EX2 tại Auto365: kính lái CR BLK 50, kính sườn trước CR BLK 35, phía sau NR15.</figcaption></figure>
 </div>
     </section>
 
 
     <section class="section" aria-labelledby="tech-title">
       <div class="container">
-<div class="split split--rev">
-<div class="split-media"><figure><img src="assets/auto365vn-ky-thuat-vien-thi-cong-phim-tai-kinh-suon-truoc-geely-ex2-img_6aa77c54a2ec90.07212463.webp" alt="Thi công kính sườn trước Geely EX2 (CR BLK 35)" width="800" height="533" loading="lazy" decoding="async"><figcaption>Thi công CR BLK 35 cho kính sườn trước Geely EX2.</figcaption></figure></div>
-<div class="split-body">
+
         <h2 class="section-title" id="tech-title">Vì sao CR BLK 35 giảm chói 55% mà vẫn giữ VLT 33%?</h2>
         <p class="section-desc">Theo 3M, Crystalline gồm hơn 200 lớp quang học phi kim, chặn nhiệt bằng cách chọn lọc dải hồng ngoại thay vì chỉ dựa vào lớp nhuộm màu. Nhờ vậy CR BLK 35 giữ VLT 33% mà vẫn đạt TSER 60% trên Auto 75.</p>
-</div>
-</div>
+
+<figure class="r35-fig"><img src="assets/auto365vn-ky-thuat-vien-thi-cong-phim-tai-kinh-suon-truoc-geely-ex2-img_6aa77c54a2ec90.07212463.webp" alt="Thi công kính sườn trước Geely EX2 (CR BLK 35)" width="800" height="533" loading="lazy" decoding="async"><figcaption>Thi công CR BLK 35 cho kính sườn trước Geely EX2.</figcaption></figure>
         <div class="tech-grid">
               <article class="tech"><div class="big">200+</div><h3>Lớp quang học mỏng</h3><p>Cấu trúc MOF hơn 200 lớp theo mô tả của 3M, thay vì chỉ dựa vào lớp nhuộm màu.</p></article>
               <article class="tech"><div class="big">0</div><h3>Kim loại trong cấu trúc</h3><p>Phim phi kim được 3M mô tả là không gây nhiễu điện tử, GPS, radio vệ tinh và thiết bị di động gồm 5G.</p></article>
@@ -1344,9 +1371,7 @@ if(caseTrack){
 
     <section class="section process" aria-labelledby="process-title">
       <div class="container">
-<div class="split split--top">
-<div class="split-media"><figure><img src="assets/35/auto365vn-ky-thuat-vien-thi-cong-phim-cach-nhiet-3m-tren-kinh-suon-subaru-forester-tai-auto365vn-tru-so-chinh-img_6ab38cf5ee5d91.10158612.webp" alt="Kỹ thuật viên Auto365 thi công phim 3M trên kính sườn Subaru Forester" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên Auto365 thi công phim 3M trên kính sườn Subaru Forester.</figcaption></figure></div>
-<div class="split-body">
+
         <div class="process-card">
           <h2 class="process-title" id="process-title">8 bước Auto365 kiểm tra <span class="red">trước khi bàn giao</span></h2>
           <p class="process-sub">Riêng với CR BLK 35, kỹ thuật viên đo VLT kính zin, ngồi ghế lái kiểm tra gương bên, rồi soát camera sau và đường sấy kính lưng cả trước lẫn sau khi dán.</p>
@@ -1361,8 +1386,8 @@ if(caseTrack){
             <li><span class="n">8</span><span class="t">Bàn giao &amp; eWarranty</span></li>
           </ol>
 </div>
-</div>
-</div>
+
+<figure class="r35-fig"><img src="assets/35/auto365vn-ky-thuat-vien-thi-cong-phim-cach-nhiet-3m-tren-kinh-suon-subaru-forester-tai-auto365vn-tru-so-chinh-img_6ab38cf5ee5d91.10158612.webp" alt="Kỹ thuật viên Auto365 thi công phim 3M trên kính sườn Subaru Forester" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên Auto365 thi công phim 3M trên kính sườn Subaru Forester.</figcaption></figure>
 </div>
     </section>
 
@@ -1599,6 +1624,22 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
     <a class="hot" href="#fit-check">Tìm mã phim phù hợp</a>
   </div>
 
+  <div class="fm-modal" id="fm-modal" hidden>
+    <div class="fm-dialog" role="dialog" aria-modal="true" aria-labelledby="fm-title" tabindex="-1">
+      <button type="button" class="fm-close" data-fm-close aria-label="Đóng">×</button>
+      <p class="fm-kicker">Mã 3M gợi ý theo lựa chọn của bạn</p>
+      <h2 id="fm-title"></h2>
+      <p class="fm-line" id="fm-line"></p>
+      <div class="fm-specs" id="fm-specs"></div>
+      <p class="fm-row"><b>Vị trí dùng:</b> <span id="fm-pos"></span></p>
+      <p class="fm-row"><b>Giá tham khảo:</b> <span id="fm-price"></span></p>
+      <p class="fm-reason" id="fm-reason"></p>
+      <p class="fm-flag" id="fm-flag" hidden></p>
+      <div class="fm-actions"><a class="fm-btn fm-btn-ghost" id="fm-link" href="#">Xem trang mã</a><button type="button" class="fm-btn fm-btn-primary" id="fm-lead">Nhận tư vấn</button></div>
+      <div class="fm-alts" id="fm-alts-wrap"><h3>Có thể so sánh thêm</h3><ul id="fm-alts"></ul></div>
+      <p class="fm-src">Thông số tham chiếu theo dữ liệu 3M trên kính nền tiêu chuẩn; kết quả thực tế phụ thuộc kính zin, Auto365 đo kính trước khi chốt mã.</p>
+    </div>
+  </div>
   <section class="film-lead-modal" id="film-lead-modal" hidden aria-labelledby="film-lead-title" role="dialog" aria-modal="true">
     <div class="film-lead-dialog">
       <button class="film-lead-close" type="button" aria-label="Đóng form">×</button>
@@ -1625,106 +1666,83 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
   </section>
 
   <script>
-const fitmentData = {
-  windshield: {
-    visibility: {
-      high: {code:"CR BLK 60",tag:"Ưu tiên kính lái sáng",reason:"Nếu muốn kính lái sáng, trong, nên xem CR BLK 60 trước vì VLT cao hơn CR BLK 50 và CR BLK 40.",alt:"Có thể đối chiếu thêm: CR BLK 50 nếu muốn kính dịu hơn",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
-      medium: {code:"CR BLK 60",tag:"Ưu tiên kính lái sáng",reason:"Muốn kính lái sáng, dễ quan sát thì hợp CR BLK 60; nên đo kính nền trước khi chốt.",alt:"Có thể đối chiếu thêm: CR BLK 50 nếu muốn cân bằng hơn",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
-      low: {code:"CR BLK 60",tag:"Kính lái sáng",reason:"CR BLK 60 phù hợp nếu ưu tiên chính là giữ tầm nhìn thoáng ở kính lái.",alt:"Có thể đối chiếu thêm: CR BLK 50",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"}
-    },
-    balance: {
-      high: {code:"CR BLK 50",tag:"Mã kính lái cân bằng",reason:"CR BLK 50 hợp khi muốn kính lái dịu hơn CR BLK 60 mà vẫn trong.",alt:"Có thể đối chiếu thêm: CR BLK 60 để ưu tiên sáng hơn",link:"https://auto365.vn/3m-cr-blk-50"},
-      medium: {code:"CR BLK 50",tag:"Cân bằng sáng & giảm chói",reason:"Khi cần kính lái cân bằng, nên so CR BLK 50 với CR BLK 60 trước.",alt:"Có thể đối chiếu thêm: CR BLK 60",link:"https://auto365.vn/3m-cr-blk-50"},
-      low: {code:"CR BLK 50",tag:"Cân bằng kính lái",reason:"Nếu không cần kính quá sáng, CR BLK 50 dịu hơn CR BLK 60 mà vẫn dễ quan sát.",alt:"Có thể đối chiếu thêm: CR BLK 40 nếu muốn dịu hơn nữa",link:"https://auto365.vn/3m-cr-blk-50"}
-    },
-    privacy: {
-      high: {code:"CR BLK 40",tag:"Kính lái dịu hơn",reason:"Muốn kính lái dịu hơn thì nên đặt CR BLK 40 cạnh CR BLK 50/60 để so.",alt:"Có thể đối chiếu thêm: CR BLK 50 nếu muốn kính trong hơn",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-      medium: {code:"CR BLK 40",tag:"Dịu hơn ở kính lái",reason:"CR BLK 40 hợp khi muốn kính lái dịu hơn, giảm chói nhiều hơn CR BLK 50/60.",alt:"Có thể đối chiếu thêm: CR BLK 50",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-      low: {code:"CR BLK 40",tag:"Ưu tiên cảm giác dịu",reason:"Nếu muốn kính lái dịu mắt hơn, có thể chọn CR BLK 40 thay vì CR BLK 50/60.",alt:"Có thể đối chiếu thêm: CR BLK 50",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"}
-    }
-  },
-  frontside: {
-    visibility: {
-      high: {code:"CR BLK 35",tag:"Đo kính nền trước khi chốt",reason:"Kính sườn trước cần nhìn gương bên rõ nên xem CR BLK 35 trước; Auto365 đo kính nền và kiểm tra góc nhìn gương trước khi chốt.",alt:"Đo kính nền trước khi chốt",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Mã chính cho kính sườn trước",reason:"CR BLK 35 là mã chính cho kính sườn trước; nếu kính nền có VLT thấp, nên đo kính trước khi chốt.",alt:"Có thể đo kính nền trước khi chốt",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Sáng & thoáng hơn",reason:"Nếu ưu tiên sáng và thoáng ở kính sườn trước, hãy xem mẫu CR BLK 35 trên chính kính xe; kính nguyên bản càng sáng thì kết quả càng thoáng.",alt:"Có thể đo kính nền trước khi chốt",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    },
-    balance: {
-      high: {code:"CR BLK 35",tag:"Cân bằng riêng tư & quan sát",reason:"Kính sườn trước cần cân bằng thì nên xem CR BLK 35 trước: giảm chói 55% trên Auto 75, mức quan sát còn tùy VLT kính nguyên bản.",alt:"Có thể đo kính nền và kiểm tra góc nhìn gương",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Mã cân bằng cho kính sườn trước",reason:"CR BLK 35 phù hợp khi muốn sườn trước riêng tư vừa phải mà vẫn nhìn gương rõ.",alt:"Có thể đo kính nền và kiểm tra góc nhìn gương nếu muốn sáng hơn",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Cân bằng cho sườn trước",reason:"CR BLK 35 cân bằng giữa quan sát và riêng tư.",alt:"Có thể đo kính nền và kiểm tra góc nhìn gương",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    },
-    privacy: {
-      high: {code:"CR BLK 35",tag:"Giữ riêng tư, vẫn nhìn gương rõ",reason:"Ở kính sườn trước, kể cả khi cần kín hơn, vẫn nên xem CR BLK 35 trước để nhìn gương bên rõ.",alt:"Cần kín hơn nữa: dùng CR BLK 15 cho khoang sau",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Ưu tiên riêng tư vừa phải",reason:"CR BLK 35 hợp khi muốn sườn trước kín hơn mà vẫn nhìn gương bên rõ.",alt:"Có thể đo kính nền và kiểm tra góc nhìn gương nếu kính xe vốn có VLT thấp",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Riêng tư vừa phải",reason:"Với kính sườn trước, nên xem CR BLK 35 trước.",alt:"Có thể đo kính nền và kiểm tra góc nhìn gương",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    }
-  },
-  rearside: {
-    visibility: {
-      high: {code:"CR BLK 35",tag:"Khoang sau sáng hơn",reason:"Nếu muốn hàng ghế sau nhìn ra ngoài dễ hơn, CR BLK 35 là mức cân bằng.",alt:"Có thể giữ CR BLK 35 nếu ưu tiên quan sát",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Cân bằng cho kính sườn sau",reason:"CR BLK 35 giúp khoang sau dịu và kín vừa phải.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15) nếu cần riêng tư cao",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Dịu hơn cho khoang sau",reason:"Khi muốn khoang sau thoáng, chọn CR BLK 35.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15)",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    },
-    balance: {
-      high: {code:"CR BLK 35",tag:"Cân bằng riêng tư",reason:"CR BLK 35 thường hợp cho sườn sau khi cần cân bằng giữa nhìn ra ngoài và kín đáo.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15) nếu khoang sau cần kín hơn",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Mã cân bằng cho khoang sau",reason:"Nếu muốn khoang sau dịu, kín đáo vừa phải, hãy xem CR BLK 35 trước.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15) cho riêng tư cao",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Cân bằng hàng ghế sau",reason:"CR BLK 35 là mức giữa cho hàng ghế sau: dịu nắng mà vẫn nhìn ra ngoài được.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15)",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    },
-    privacy: {
-      high: {code:"CR BLK 15",tag:"Ưu tiên riêng tư cao",reason:"Nếu cần tăng riêng tư cho hàng ghế sau, nên xem CR BLK 15, kín hơn CR BLK 35.",alt:"Có thể đối chiếu thêm: CR BLK 35 nếu vẫn muốn nhìn ra ngoài thoáng hơn",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-      medium: {code:"CR BLK 15",tag:"Riêng tư hơn cho khoang sau",reason:"Khi cần hạn chế người bên ngoài nhìn vào, CR BLK 15 hợp với sườn sau hơn CR BLK 35.",alt:"Có thể đối chiếu thêm: CR BLK 35",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-      low: {code:"CR BLK 15",tag:"Kín đáo hơn cho sườn sau",reason:"Nếu ưu tiên riêng tư, CR BLK 15 cho mức riêng tư cao hơn CR BLK 35.",alt:"Có thể đối chiếu thêm: CR BLK 35",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"}
-    }
-  },
-  rear: {
-    visibility: {
-      high: {code:"CR BLK 35",tag:"Cân bằng cho kính lưng",reason:"CR BLK 35 hợp khi kính lưng cần nhìn qua gương trung tâm và camera rõ hơn.",alt:"Có thể giữ CR BLK 35 nếu ưu tiên quan sát",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Kính lưng dịu hơn",reason:"Muốn kính lưng dịu, kín vừa phải mà vẫn nhìn ra sau rõ thì nên xem CR BLK 35 trước.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15) nếu ưu tiên riêng tư",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Thoáng hơn cho kính lưng",reason:"CR BLK 35 hợp kính lưng khi cần thoáng và dễ quan sát phía sau.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15)",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    },
-    balance: {
-      high: {code:"CR BLK 35",tag:"Mã giữa cho kính lưng",reason:"CR BLK 35 cân bằng giữa riêng tư và quan sát, phù hợp nếu kính lưng cần dịu hơn mà vẫn trong.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15)",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      medium: {code:"CR BLK 35",tag:"Cân bằng kính lưng",reason:"Muốn khoang sau dễ chịu mà kính lưng vẫn trong thì bắt đầu từ CR BLK 35.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15) cho riêng tư cao",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-      low: {code:"CR BLK 35",tag:"Mức cân bằng",reason:"CR BLK 35 phù hợp khi muốn khoang sau dịu và kín vừa phải, không quá thiên về riêng tư.",alt:"Có thể đối chiếu thêm: mã kín hơn (CR BLK 15)",link:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"}
-    },
-    privacy: {
-      high: {code:"CR BLK 15",tag:"Riêng tư cao cho kính lưng",reason:"Nếu cần kính lưng thật kín, nên đặt CR BLK 15 cạnh CR BLK 35 để so.",alt:"Có thể đối chiếu thêm: CR BLK 35 nếu vẫn muốn tầm nhìn thoáng hơn",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-      medium: {code:"CR BLK 15",tag:"Đậm hơn cho kính lưng",reason:"Khi cần hạn chế người bên ngoài nhìn vào qua kính lưng, CR BLK 15 hợp hơn CR BLK 35.",alt:"Có thể đối chiếu thêm: CR BLK 35",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"},
-      low: {code:"CR BLK 15",tag:"Ưu tiên kín đáo",reason:"Nếu ưu tiên riêng tư phía sau, chọn CR BLK 15.",alt:"Có thể đối chiếu thêm: CR BLK 35",link:"https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-cr-blk"}
-    }
-  }
-};
-
-const fitmentEls = {
-  position: document.getElementById("fitmentPosition"),
-  priority: document.getElementById("fitmentPriority"),
-  night: document.getElementById("fitmentNight"),
-  primary: document.getElementById("fitmentPrimary"),
-  tag: document.getElementById("fitmentTag"),
-  reason: document.getElementById("fitmentReason"),
-  alt: document.getElementById("fitmentAltText"),
-  link: document.getElementById("fitmentLink")
-};
-
-function updateFitment(){
-  if(!fitmentEls.position) return;
-  const pos = fitmentEls.position.value;
-  const pri = fitmentEls.priority.value;
-  const night = fitmentEls.night.value;
-  const data = fitmentData[pos][pri][night];
-  fitmentEls.primary.textContent = data.code;
-  fitmentEls.tag.textContent = data.tag;
-  fitmentEls.reason.textContent = data.reason;
-  fitmentEls.alt.textContent = data.alt;
-  fitmentEls.link.href = data.link;
-  fitmentEls.link.textContent = "Xem " + data.code + " →";
+const FILM_CODES = [
+  {id:"CR BLK 60",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],price:"Từ 5.700.000đ / kính lái",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
+  {id:"CR BLK 50",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],price:"Từ 5.700.000đ / kính lái",url:"https://auto365.vn/3m-cr-blk-50"},
+  {id:"CR BLK 40",line:"cr",name:"3M Crystalline CR BLK 40",vlt:41,tser:58,glare:44,pos:["windshield"],price:"Từ 6.500.000đ / kính lái",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"},
+  {id:"CR BLK 35",line:"cr",name:"3M Crystalline CR BLK 35",vlt:33,tser:60,glare:55,pos:["frontside","rearside","rear"],price:"Từ 2.600.000đ / cặp kính sườn trước",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
+  {id:"CR BLK 15",line:"cr",name:"3M Crystalline CR BLK 15",vlt:14,tser:64,glare:81,pos:["frontside","rearside","rear","sunroof"],price:"Từ 2.600.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"},
+  {id:"IR50",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],price:"Từ 3.300.000đ / kính lái",url:"https://auto365.vn/ir50"},
+  {id:"IR25",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],price:"Từ 1.800.000đ / cặp kính sườn",url:"https://auto365.vn/ir25"},
+  {id:"IR15",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],price:"Từ 1.800.000đ / cặp kính sườn",url:"https://auto365.vn/ir15"},
+  {id:"NR35",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],price:"Từ 2.600.000đ / kính lái",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
+  {id:"NR25",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],price:"Từ 1.700.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
+  {id:"NR15",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],price:"Từ 1.700.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
+  {id:"NR5",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","sunroof"],price:"Từ 1.700.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
+];
+const FILM_LINES = {cr:"3M Crystalline CR BLK",ir:"3M Ceramic IR",nr:"3M Ceramic NR"};
+const FILM_POS = {windshield:"kính lái",frontside:"kính sườn trước",rearside:"kính sườn sau",rear:"kính lưng",sunroof:"cửa sổ trời"};
+const FILM_POS_LEAD = {windshield:"Kính lái",frontside:"Kính sườn trước",rearside:"Kính sườn sau",rear:"Kính lưng",sunroof:"Cửa sổ trời"};
+function recommendFilm(pos, line, pri){
+  const allowed = FILM_CODES.filter(c=>c.pos.indexOf(pos)>-1).sort((a,b)=>b.vlt-a.vlt);
+  let pool = line && line!=="any" ? allowed.filter(c=>c.line===line) : allowed;
+  const lineMissing = !!(line && line!=="any" && !pool.length);
+  if(!pool.length) pool = allowed;
+  let pick, rank;
+  if(pri==="visibility"){pick=pool[0];rank="cao nhất";}
+  else if(pri==="privacy"){pick=pool[pool.length-1];rank="thấp nhất";}
+  else {pick=pool[Math.floor((pool.length-1)/2)];rank=pool.length>2?"ở mức giữa":"cao hơn";}
+  if(pool.length===1) rank="duy nhất";
+  const alts = allowed.filter(c=>c!==pick).sort((a,b)=>(Math.abs(a.vlt-pick.vlt)-Math.abs(b.vlt-pick.vlt))||((a.line===pick.line?0:1)-(b.line===pick.line?0:1))).slice(0,2);
+  return {pick:pick, alts:alts, pool:pool, rank:rank, lineMissing:lineMissing};
 }
-
-[fitmentEls.position, fitmentEls.priority, fitmentEls.night].forEach(el=>{
-  if(el) el.addEventListener("change", updateFitment);
-});
-updateFitment();
+(function(){
+  var pos=document.getElementById("fitmentPosition"), line=document.getElementById("fitmentLine"), pri=document.getElementById("fitmentPriority"), btn=document.getElementById("fitmentOpen");
+  var modal=document.getElementById("fm-modal");
+  if(!pos||!line||!pri||!modal||!btn) return;
+  var dialog=modal.querySelector(".fm-dialog"), lastFocus=null, current=null;
+  function $(id){return document.getElementById(id);}
+  function render(){
+    var r=recommendFilm(pos.value,line.value,pri.value), c=r.pick, p=FILM_POS[pos.value];
+    current={code:c,pos:pos.value};
+    $("fm-title").textContent=c.name;
+    $("fm-line").textContent="Dòng "+FILM_LINES[c.line];
+    $("fm-specs").innerHTML='<div><strong>'+c.vlt+'%</strong><span>VLT '+c.id+'</span></div><div><strong>'+c.tser+'%</strong><span>TSER '+c.id+'</span></div><div><strong>'+c.glare+'%</strong><span>Giảm chói '+c.id+'</span></div>';
+    $("fm-pos").textContent=c.pos.map(function(k){return FILM_POS[k];}).join(", ");
+    $("fm-price").textContent=c.id+": "+c.price.charAt(0).toLowerCase()+c.price.slice(1);
+    var scopeName=(r.lineMissing||line.value==="any")?"3M":FILM_LINES[c.line];
+    var txt=r.pool.length>1
+      ? "Trong các mã "+scopeName+" dùng cho "+p+" ("+r.pool.map(function(x){return x.id;}).join(", ")+"), "+c.id+" có VLT "+r.rank+": "+c.vlt+"%."
+      : c.id+" là mã "+scopeName+" dùng cho "+p+", VLT "+c.id+" "+c.vlt+"%.";
+    $("fm-reason").textContent=txt+" TSER "+c.id+" "+c.tser+"%, giảm chói "+c.id+" "+c.glare+"%.";
+    var flag=$("fm-flag");
+    if(r.lineMissing){flag.hidden=false;flag.textContent="Dòng "+FILM_LINES[line.value]+" không có mã dùng cho "+p+", gợi ý được lấy từ các dòng 3M khác.";} else flag.hidden=true;
+    $("fm-link").href=c.url; $("fm-link").textContent="Xem trang "+c.id;
+    $("fm-alts").innerHTML=r.alts.map(function(a){return '<li><span><b>'+a.id+'</b> · VLT '+a.vlt+'% · TSER '+a.tser+'% · giảm chói '+a.glare+'%</span><a href="'+a.url+'">Xem '+a.id+' →</a></li>';}).join("");
+    $("fm-alts-wrap").hidden=!r.alts.length;
+    return r;
+  }
+  function open(){lastFocus=document.activeElement;render();modal.hidden=false;document.body.classList.add("fm-open");modal.querySelector(".fm-close").focus();}
+  function close(back){modal.hidden=true;document.body.classList.remove("fm-open");if(back!==false&&lastFocus)lastFocus.focus();}
+  window.filmMatch={recommend:recommendFilm,codes:FILM_CODES,render:render,open:open,close:close};
+  btn.addEventListener("click",open);
+  modal.addEventListener("click",function(e){if(e.target===modal||e.target.closest("[data-fm-close]"))close();});
+  document.addEventListener("keydown",function(e){
+    if(modal.hidden)return;
+    if(e.key==="Escape"){e.preventDefault();close();return;}
+    if(e.key==="Tab"){var f=[].slice.call(dialog.querySelectorAll("a[href],button")).filter(function(x){return x.offsetParent!==null;});if(!f.length)return;var a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}
+  });
+  $("fm-lead").addEventListener("click",function(){
+    if(!current)return; close(false);
+    if(typeof window.openFilmLeadModal==="function"){
+      window.openFilmLeadModal(current.code.name);
+      var form=document.getElementById("film-lead-form");
+      if(form&&form.elements.package) form.elements.package.value=current.code.name;
+      var g=document.getElementById("film-lead-glass"); if(g) g.value=FILM_POS_LEAD[current.pos];
+    }
+  });
+})();
     (function(){
       var modal=document.getElementById('film-lead-modal'),form=document.getElementById('film-lead-form');
       if(!modal||!form)return;

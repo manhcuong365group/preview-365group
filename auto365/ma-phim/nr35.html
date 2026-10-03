@@ -898,6 +898,41 @@
 .mp-rel-card li:first-child{border-top:0}.mp-rel-card a{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .mp-rel-note{color:var(--muted);font-weight:400}
 </style>
+<style id="single-fig">
+.r35-fig{display:block;width:100%;max-width:820px!important;margin:24px auto 0!important}
+.r35-fig img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px}
+.r35-fig figcaption{margin-top:8px;font-size:13px;line-height:1.45;color:#6b737d;text-align:center}
+</style>
+<style id="fm-style">
+.hero-fit-card .fm-note{margin:10px 0 0;font-size:12px;line-height:1.5;color:#6b737d}
+.fm-modal{position:fixed;inset:0;z-index:1001;display:flex;align-items:center;justify-content:center;padding:16px;background:rgba(20,24,30,.62)}
+.fm-modal[hidden]{display:none}
+.fm-dialog{position:relative;width:100%;max-width:560px;max-height:calc(100vh - 32px);overflow:auto;background:#fff;border-radius:8px;padding:24px;box-shadow:0 24px 70px rgba(0,0,0,.35);color:#252a30;font-size:14px;line-height:1.55;text-align:left}
+.fm-close{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;border-radius:8px;background:#f2f3f5;color:#252a30;font-size:20px;line-height:1;cursor:pointer}
+.fm-close:focus-visible,.fm-btn:focus-visible{outline:2px solid #e31b2d;outline-offset:2px}
+.fm-kicker{margin:0 0 4px;font-size:12px;font-weight:700;color:#6b737d;text-transform:uppercase;letter-spacing:.04em}
+.fm-dialog h2{margin:0 40px 4px 0;font-size:22px;line-height:1.25;color:#111418}
+.fm-line{margin:0 0 12px;font-size:13px;color:#e31b2d;font-weight:700}
+.fm-specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 12px}
+.fm-specs div{background:#f7f8fa;border:1px solid #eceef1;border-radius:8px;padding:10px 8px;text-align:center}
+.fm-specs strong{display:block;font-size:19px;color:#111418}
+.fm-specs span{display:block;font-size:11.5px;color:#6b737d}
+.fm-row{margin:0 0 6px}.fm-row b{color:#111418}
+.fm-reason{margin:10px 0 0;padding:10px 12px;border-left:3px solid #e31b2d;background:#fff6f7;border-radius:0 8px 8px 0;font-size:13.5px}
+.fm-flag{margin:10px 0 0;font-size:12.5px;color:#6b737d}
+.fm-actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+.fm-btn{flex:1 1 180px;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:8px;font-weight:700;font-size:14px;text-decoration:none;cursor:pointer;border:1px solid #e31b2d;font-family:inherit}
+.fm-btn-primary{background:#e31b2d;color:#fff}.fm-btn-ghost{background:#fff;color:#e31b2d}
+.fm-alts{margin:18px 0 0;padding:14px 0 0;border-top:1px solid #eceef1}
+.fm-alts[hidden]{display:none}
+.fm-alts h3{margin:0 0 8px;font-size:14px;color:#111418}
+.fm-alts ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.fm-alts li{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 10px;padding:10px 12px;border:1px solid #eceef1;border-radius:8px;font-size:13px}
+.fm-alts a{color:#e31b2d;font-weight:700;text-decoration:none}
+.fm-src{margin:12px 0 0;font-size:11.5px;color:#8a919a}
+body.fm-open{overflow:hidden}
+@media(max-width:640px){.fm-modal{align-items:flex-end;padding:0}.fm-dialog{max-width:none;border-radius:8px 8px 0 0;max-height:88vh;padding:20px 16px calc(20px + env(safe-area-inset-bottom))}.fm-dialog h2{font-size:20px}.fm-specs strong{font-size:17px}}
+</style>
 </head>
 
 <body>
@@ -947,19 +982,15 @@
           </div>
 
           <div class="hero-media">
-            <div class="hero-fit-card" id="fit-check" aria-label="Gợi ý chọn mã Ceramic NR">
-              <h3>Gợi ý chọn mã Ceramic NR</h3>
+            <div class="hero-fit-card" id="fit-check" aria-label="Gợi ý mã phim 3M theo vị trí kính">
+              <h3>Gợi ý mã phim 3M theo vị trí kính</h3>
               <div class="field-grid">
-                <div class="field"><label for="fitmentPosition">Vị trí kính</label><select id="fitmentPosition"><option value="windshield" selected>Kính lái</option></select></div>
-                <div class="field"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Sáng &amp; dễ quan sát</option><option value="balance" selected>Cân bằng</option><option value="privacy">Riêng tư hơn</option></select></div>
-                <div class="field field-wide"><label for="fitmentNight">Tần suất đi tối / đi đêm</label><select id="fitmentNight"><option value="high">Nhiều</option><option value="medium" selected>Trung bình</option><option value="low">Ít</option></select></div>
+                <div class="field"><label for="fitmentPosition">Vị trí kính</label><select id="fitmentPosition"><option value="windshield" selected>Kính lái</option><option value="frontside">Kính sườn trước</option><option value="rearside">Kính sườn sau</option><option value="rear">Kính lưng</option><option value="sunroof">Cửa sổ trời</option></select></div>
+                <div class="field"><label for="fitmentLine">Dòng phim ưu tiên</label><select id="fitmentLine"><option value="cr">Crystalline CR BLK</option><option value="ir">Ceramic IR</option><option value="nr" selected>Ceramic NR</option><option value="any">Chưa rõ</option></select></div>
+                <div class="field field-wide"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Trong, dễ quan sát</option><option value="balance" selected>Cân bằng</option><option value="privacy">Giảm chói, riêng tư</option></select></div>
               </div>
-              <div class="fit-result" aria-live="polite">
-                <strong id="fitmentPrimary">NR35</strong>
-                <span class="fit-pill" id="fitmentTag">Mã kính lái của gói Ceramic Hybrid</span>
-                <p id="fitmentReason">NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%.</p>
-                <div class="fit-meta"><span id="fitmentAltText">Có thể đối chiếu thêm: IR50 (VLT 50%)</span><a href="https://auto365.vn/phim-cach-nhiet-3m-nr-35" id="fitmentLink">Xem NR35 →</a></div>
-              </div>
+              <button type="button" class="fit-submit" id="fitmentOpen" aria-haspopup="dialog" aria-controls="fm-modal">Xem mã phù hợp</button>
+              <p class="fm-note">Gợi ý từ 12 mã 3M: CR BLK 60/50/40/35/15, IR50/25/15, NR35/25/15/5.</p>
             </div>
             <p class="metric-ribbon-label">Thông số NR35 · kính xanh 6 mm, nền 73%</p>
             <div class="metric-ribbon" aria-label="Thông số theo mã đang xem"><div class="metric"><strong>43%</strong><span>VLT · truyền sáng</span></div><div class="metric"><strong>51%</strong><span>TSER · tổng năng lượng</span></div><div class="metric"><strong>58%</strong><span>IRER · dải rộng</span></div><div class="metric"><strong>52%</strong><span>Giảm chói</span></div></div>
@@ -988,9 +1019,7 @@
 
     <section class="section" id="gioi-thieu" aria-labelledby="intro-title" style="padding-top:30px;padding-bottom:30px">
       <div class="container">
-<div class="split split--top">
-<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-dan-phim-3m-ceramic-hybrid-6jpg-img_6a3b4f356164a5.52359306_auto365vn.jpg" alt="Dán 3M Ceramic NR35 cho kính lái VinFast VF3" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Dán 3M Ceramic NR35 cho kính lái VinFast VF3.</figcaption></figure></div>
-<div class="split-body">
+
         <h2 class="section-title" id="intro-title">3M NR35 là gì?</h2>
         <div class="verdict-block">
           <p style="margin:0 0 10px">Ceramic NR là dòng phim mới của 3M Việt Nam. Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố, tăng riêng tư và hạn chế ảnh hưởng đến các kết nối như điện thoại, GPS, Bluetooth, ETC/VETC.</p>
@@ -1005,8 +1034,8 @@
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Dùng cho kính lái, giá 2.600.000đ, xác nhận theo dòng xe</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Auto365 kiểm tra lại kết nối điện thoại, GPS, ETC/VETC sau khi dán</span></li>
         </ul>
-</div>
-</div>
+
+<figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-dan-phim-3m-ceramic-hybrid-6jpg-img_6a3b4f356164a5.52359306_auto365vn.jpg" alt="Dán 3M Ceramic NR35 cho kính lái VinFast VF3" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Dán 3M Ceramic NR35 cho kính lái VinFast VF3.</figcaption></figure>
 </div>
     </section>
 
@@ -1040,7 +1069,7 @@
         <p class="section-desc" style="margin-top:14px">Xem thêm: <a class="inline-link" href="https://auto365.vn/ir50">3M Ceramic IR50</a>.</p>
         <p class="section-desc" style="margin-top:8px">So sánh đầy đủ: <a class="inline-link" href="https://auto365.vn/nr35-hay-ir50-cho-kinh-lai">NR35 hay IR50 cho kính lái</a>.</p>
 
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-3m-ceramic-nr35-kinh-lai-nr15-kinh-suon-va-kinh-lung-jpg-img_6a575590550be5.43234602.jpg" alt="VinFast VF3 dán 3M Ceramic NR35 cho kính lái, NR15 cho kính sườn và kính lưng" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán 3M Ceramic NR35 cho kính lái, NR15 cho kính sườn và kính lưng.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-ir50-kinh-lai-ir15-kinh-suon-kinh-lung-jpg-img_6a57562e8c1c72.27821828.jpg" alt="VinFast VF3 dán IR50 cho kính lái, IR15 cho kính sườn và kính lưng tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán IR50 cho kính lái, IR15 cho kính sườn và kính lưng tại Auto365.vn - Trụ Sở Chính.</figcaption></figure></div>
+      <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-3m-ceramic-nr35-kinh-lai-nr15-kinh-suon-va-kinh-lung-jpg-img_6a575590550be5.43234602.jpg" alt="VinFast VF3 dán 3M Ceramic NR35 cho kính lái, NR15 cho kính sườn và kính lưng" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán 3M Ceramic NR35 cho kính lái, NR15 cho kính sườn và kính lưng.</figcaption></figure>
 </div>
     </section>
 
@@ -1073,7 +1102,7 @@
           </article>
         </div>
         <p class="section-desc section-link">Muốn phối phim cho toàn bộ xe? Xem <a class="inline-link" href="https://auto365.vn/cach-phoi-phim-3m-ceramic-nr-theo-tung-vi-tri-kinh">cách phối phim 3M Ceramic NR theo từng vị trí kính</a> và <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">cấu hình gói 3M Ceramic Hybrid</a>.</p>
-        <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-3m-ceramic-nr35-kinh-lai-jpg-img_6a5755e3446300.24924595.jpg" alt="VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-quy-trinh-thi-cong-3m-ceramic-nr-auto365jpgjpg-img_6a44b0942781b8.55590688_auto365vn.jpg" alt="Thi công 3M Ceramic NR cho Hyundai Accent 2025 tại Auto365" width="800" height="533" loading="lazy" decoding="async"><figcaption>Thi công 3M Ceramic NR cho Hyundai Accent 2025 tại Auto365.</figcaption></figure></div>
+        <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf3-3m-ceramic-nr35-kinh-lai-jpg-img_6a5755e3446300.24924595.jpg" alt="VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>VinFast VF3 dán NR35 cho kính lái tại Auto365.vn - Trụ Sở Chính.</figcaption></figure>
       </div>
     </section>
 
@@ -1109,20 +1138,18 @@
 
           <div class="source-note"><strong>Về nguồn số liệu:</strong> VLT, TSER, IRER và giảm chói đo trên kính xanh 6 mm có VLT 73%; riêng IRR đo trên phim kèm liner, không có kính. Catalog dòng NR không công bố độ phản quang (VLR) và số liệu trên kính trong, nên bảng không có các cột đó. Kính nền xe bạn khác thì số đo thực tế cũng khác. Xem thêm <a class="inline-link" href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">cách đọc thông số Ceramic NR</a>.</div>
         </div>
-      <div class="r35-row"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-3png-img_6a4641406ff748.03721836_auto365vn.png" alt="Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3.</figcaption></figure><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-kiem-tra-thong-so-truoc-va-sau-khi-dan-phim-cach-nhiet-3m-ceramic-nr-tai-auto365vn-tru-so-chinhjpg-img_6a461150300d04.47596061_auto365vn.jpg" alt="Kỹ thuật viên kiểm tra thông số BMW 320i trước và sau khi dán 3M Ceramic NR tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kỹ thuật viên kiểm tra thông số BMW 320i trước và sau khi dán 3M Ceramic NR tại Auto365.vn - Trụ Sở Chính.</figcaption></figure></div>
+      <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-3png-img_6a4641406ff748.03721836_auto365vn.png" alt="Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3.</figcaption></figure>
 </div>
     </section>
 
 
     <section class="section" aria-labelledby="tech-title">
       <div class="container">
-<div class="split split--rev">
-<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-hyundai-accent-2025-cau-hinh-3m-ceramic-nr35-nr15jpgjpg-img_6a44af03da09c4.01190774_auto365vn.jpg" alt="Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15.</figcaption></figure></div>
-<div class="split-body">
+
         <h2 class="section-title" id="tech-title">Vì sao NR35 có IRR 79% nhưng TSER chỉ 51%?</h2>
         <p class="section-desc">Hai con số đo theo hai cách khác nhau. IRR chỉ xét một dải hồng ngoại hẹp trên phim chưa dán, còn TSER tính toàn bộ năng lượng mặt trời đi qua kính đã dán phim.</p>
-</div>
-</div>
+
+<figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-hyundai-accent-2025-cau-hinh-3m-ceramic-nr35-nr15jpgjpg-img_6a44af03da09c4.01190774_auto365vn.jpg" alt="Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Hyundai Accent 2025 cấu hình 3M Ceramic NR35 và NR15.</figcaption></figure>
         <div class="tech-grid">
               <article class="tech"><div class="big">79% ≠ 51%</div><h3>IRR khác TSER</h3><p>Thấy IRR 79% rồi nghĩ phim cản 79% nhiệt là cách hiểu sai hay gặp. Khi so cản nhiệt, hãy nhìn TSER 51%.</p></article>
               <article class="tech"><div class="big">43%</div><h3>VLT trên một kính tham chiếu</h3><p>Kính zin có độ truyền sáng thấp hơn kính tham chiếu (VLT 73%) thì VLT sau khi dán sẽ thấp hơn 43%.</p></article>
@@ -1275,9 +1302,7 @@ if(caseTrack){
 
     <section class="section process" aria-labelledby="process-title">
       <div class="container">
-<div class="split split--top">
-<div class="split-media"><figure><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-4png-img_6a461b501be0a0.37513613_auto365vn.png" alt="Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính.</figcaption></figure></div>
-<div class="split-body">
+
         <div class="process-card">
           <h2 class="process-title" id="process-title">8 bước Auto365 kiểm tra <span class="red">trước khi bàn giao</span></h2>
           <p class="process-sub">Với NR35 ở kính lái: đo VLT kính nguyên bản, kiểm tra vùng camera ADAS / cảm biến mưa, xem tầm nhìn từ ghế lái trước và sau thi công.</p>
@@ -1292,8 +1317,8 @@ if(caseTrack){
             <li><span class="n">8</span><span class="t">Bàn giao &amp; eWarranty</span></li>
           </ol>
         </div>
-</div>
-</div>
+
+<figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-4png-img_6a461b501be0a0.37513613_auto365vn.png" alt="Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"><figcaption>Quy trình thi công phim cách nhiệt 3M Ceramic NR tại Auto365 - Trụ Sở Chính.</figcaption></figure>
 </div>
     </section>
 
@@ -1532,6 +1557,22 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
     <a class="hot" href="#fit-check">Tìm mã phim phù hợp</a>
   </div>
 
+  <div class="fm-modal" id="fm-modal" hidden>
+    <div class="fm-dialog" role="dialog" aria-modal="true" aria-labelledby="fm-title" tabindex="-1">
+      <button type="button" class="fm-close" data-fm-close aria-label="Đóng">×</button>
+      <p class="fm-kicker">Mã 3M gợi ý theo lựa chọn của bạn</p>
+      <h2 id="fm-title"></h2>
+      <p class="fm-line" id="fm-line"></p>
+      <div class="fm-specs" id="fm-specs"></div>
+      <p class="fm-row"><b>Vị trí dùng:</b> <span id="fm-pos"></span></p>
+      <p class="fm-row"><b>Giá tham khảo:</b> <span id="fm-price"></span></p>
+      <p class="fm-reason" id="fm-reason"></p>
+      <p class="fm-flag" id="fm-flag" hidden></p>
+      <div class="fm-actions"><a class="fm-btn fm-btn-ghost" id="fm-link" href="#">Xem trang mã</a><button type="button" class="fm-btn fm-btn-primary" id="fm-lead">Nhận tư vấn</button></div>
+      <div class="fm-alts" id="fm-alts-wrap"><h3>Có thể so sánh thêm</h3><ul id="fm-alts"></ul></div>
+      <p class="fm-src">Thông số tham chiếu theo dữ liệu 3M trên kính nền tiêu chuẩn; kết quả thực tế phụ thuộc kính zin, Auto365 đo kính trước khi chốt mã.</p>
+    </div>
+  </div>
   <section class="film-lead-modal" id="film-lead-modal" hidden aria-labelledby="film-lead-title" role="dialog" aria-modal="true">
     <div class="film-lead-dialog">
       <button class="film-lead-close" type="button" aria-label="Đóng form">×</button>
@@ -1558,109 +1599,83 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
   </section>
 
   <script>
-const fitmentData = {
- "windshield": {
-  "visibility": {
-   "high": {
-    "code": "NR35",
-    "tag": "Mã kính lái của dòng NR · VLT 43%",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%. Muốn kính lái trong hơn, có thể so thêm IR50 (VLT 50%) hoặc CR BLK 60.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   },
-   "medium": {
-    "code": "NR35",
-    "tag": "Mã kính lái của gói Ceramic Hybrid",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   },
-   "low": {
-    "code": "NR35",
-    "tag": "Mã kính lái của gói Ceramic Hybrid",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   }
-  },
-  "balance": {
-   "high": {
-    "code": "NR35",
-    "tag": "Mã kính lái của dòng NR · VLT 43%",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%. Muốn kính lái trong hơn, có thể so thêm IR50 (VLT 50%) hoặc CR BLK 60.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   },
-   "medium": {
-    "code": "NR35",
-    "tag": "Mã kính lái của gói Ceramic Hybrid",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   },
-   "low": {
-    "code": "NR35",
-    "tag": "Mã kính lái của gói Ceramic Hybrid",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   }
-  },
-  "privacy": {
-   "high": {
-    "code": "NR35",
-    "tag": "Mã kính lái của dòng NR · VLT 43%",
-    "reason": "NR35 là mã kính lái của dòng Ceramic NR, VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%. Muốn kính lái trong hơn, có thể so thêm IR50 (VLT 50%) hoặc CR BLK 60.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   },
-   "medium": {
-    "code": "NR35",
-    "tag": "Mã kính lái của gói Ceramic Hybrid",
-    "reason": "Trong dòng Ceramic NR, kính lái dùng NR35 (VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%). Muốn riêng tư hơn thì chọn mã VLT thấp ở kính sườn (NR25, NR15, NR5) hoặc kính lưng (NR25, NR15), không thay ở kính lái.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   },
-   "low": {
-    "code": "NR35",
-    "tag": "Mã kính lái của gói Ceramic Hybrid",
-    "reason": "Trong dòng Ceramic NR, kính lái dùng NR35 (VLT 43% trên kính ô tô xanh 6 mm, VLT nền 73%). Muốn riêng tư hơn thì chọn mã VLT thấp ở kính sườn (NR25, NR15, NR5) hoặc kính lưng (NR25, NR15), không thay ở kính lái.",
-    "alt": "Có thể đối chiếu thêm: IR50 (VLT 50%)",
-    "link": "https://auto365.vn/phim-cach-nhiet-3m-nr-35"
-   }
-  }
- }
-};
-
-const fitmentEls = {
-  position: document.getElementById("fitmentPosition"),
-  priority: document.getElementById("fitmentPriority"),
-  night: document.getElementById("fitmentNight"),
-  primary: document.getElementById("fitmentPrimary"),
-  tag: document.getElementById("fitmentTag"),
-  reason: document.getElementById("fitmentReason"),
-  alt: document.getElementById("fitmentAltText"),
-  link: document.getElementById("fitmentLink")
-};
-
-function updateFitment(){
-  if(!fitmentEls.position) return;
-  const pos = fitmentEls.position.value;
-  const pri = fitmentEls.priority.value;
-  const night = fitmentEls.night.value;
-  const data = fitmentData[pos][pri][night];
-  fitmentEls.primary.textContent = data.code;
-  fitmentEls.tag.textContent = data.tag;
-  fitmentEls.reason.textContent = data.reason;
-  fitmentEls.alt.textContent = data.alt;
-  fitmentEls.link.href = data.link;
-  fitmentEls.link.textContent = "Xem " + data.code + " →";
+const FILM_CODES = [
+  {id:"CR BLK 60",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],price:"Từ 5.700.000đ / kính lái",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
+  {id:"CR BLK 50",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],price:"Từ 5.700.000đ / kính lái",url:"https://auto365.vn/3m-cr-blk-50"},
+  {id:"CR BLK 40",line:"cr",name:"3M Crystalline CR BLK 40",vlt:41,tser:58,glare:44,pos:["windshield"],price:"Từ 6.500.000đ / kính lái",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"},
+  {id:"CR BLK 35",line:"cr",name:"3M Crystalline CR BLK 35",vlt:33,tser:60,glare:55,pos:["frontside","rearside","rear"],price:"Từ 2.600.000đ / cặp kính sườn trước",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
+  {id:"CR BLK 15",line:"cr",name:"3M Crystalline CR BLK 15",vlt:14,tser:64,glare:81,pos:["frontside","rearside","rear","sunroof"],price:"Từ 2.600.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"},
+  {id:"IR50",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],price:"Từ 3.300.000đ / kính lái",url:"https://auto365.vn/ir50"},
+  {id:"IR25",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],price:"Từ 1.800.000đ / cặp kính sườn",url:"https://auto365.vn/ir25"},
+  {id:"IR15",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],price:"Từ 1.800.000đ / cặp kính sườn",url:"https://auto365.vn/ir15"},
+  {id:"NR35",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],price:"Từ 2.600.000đ / kính lái",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
+  {id:"NR25",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],price:"Từ 1.700.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
+  {id:"NR15",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],price:"Từ 1.700.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
+  {id:"NR5",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","sunroof"],price:"Từ 1.700.000đ / cặp kính sườn",url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
+];
+const FILM_LINES = {cr:"3M Crystalline CR BLK",ir:"3M Ceramic IR",nr:"3M Ceramic NR"};
+const FILM_POS = {windshield:"kính lái",frontside:"kính sườn trước",rearside:"kính sườn sau",rear:"kính lưng",sunroof:"cửa sổ trời"};
+const FILM_POS_LEAD = {windshield:"Kính lái",frontside:"Kính sườn trước",rearside:"Kính sườn sau",rear:"Kính lưng",sunroof:"Cửa sổ trời"};
+function recommendFilm(pos, line, pri){
+  const allowed = FILM_CODES.filter(c=>c.pos.indexOf(pos)>-1).sort((a,b)=>b.vlt-a.vlt);
+  let pool = line && line!=="any" ? allowed.filter(c=>c.line===line) : allowed;
+  const lineMissing = !!(line && line!=="any" && !pool.length);
+  if(!pool.length) pool = allowed;
+  let pick, rank;
+  if(pri==="visibility"){pick=pool[0];rank="cao nhất";}
+  else if(pri==="privacy"){pick=pool[pool.length-1];rank="thấp nhất";}
+  else {pick=pool[Math.floor((pool.length-1)/2)];rank=pool.length>2?"ở mức giữa":"cao hơn";}
+  if(pool.length===1) rank="duy nhất";
+  const alts = allowed.filter(c=>c!==pick).sort((a,b)=>(Math.abs(a.vlt-pick.vlt)-Math.abs(b.vlt-pick.vlt))||((a.line===pick.line?0:1)-(b.line===pick.line?0:1))).slice(0,2);
+  return {pick:pick, alts:alts, pool:pool, rank:rank, lineMissing:lineMissing};
 }
-
-[fitmentEls.position, fitmentEls.priority, fitmentEls.night].forEach(el=>{
-  if(el) el.addEventListener("change", updateFitment);
-});
-updateFitment();
+(function(){
+  var pos=document.getElementById("fitmentPosition"), line=document.getElementById("fitmentLine"), pri=document.getElementById("fitmentPriority"), btn=document.getElementById("fitmentOpen");
+  var modal=document.getElementById("fm-modal");
+  if(!pos||!line||!pri||!modal||!btn) return;
+  var dialog=modal.querySelector(".fm-dialog"), lastFocus=null, current=null;
+  function $(id){return document.getElementById(id);}
+  function render(){
+    var r=recommendFilm(pos.value,line.value,pri.value), c=r.pick, p=FILM_POS[pos.value];
+    current={code:c,pos:pos.value};
+    $("fm-title").textContent=c.name;
+    $("fm-line").textContent="Dòng "+FILM_LINES[c.line];
+    $("fm-specs").innerHTML='<div><strong>'+c.vlt+'%</strong><span>VLT '+c.id+'</span></div><div><strong>'+c.tser+'%</strong><span>TSER '+c.id+'</span></div><div><strong>'+c.glare+'%</strong><span>Giảm chói '+c.id+'</span></div>';
+    $("fm-pos").textContent=c.pos.map(function(k){return FILM_POS[k];}).join(", ");
+    $("fm-price").textContent=c.id+": "+c.price.charAt(0).toLowerCase()+c.price.slice(1);
+    var scopeName=(r.lineMissing||line.value==="any")?"3M":FILM_LINES[c.line];
+    var txt=r.pool.length>1
+      ? "Trong các mã "+scopeName+" dùng cho "+p+" ("+r.pool.map(function(x){return x.id;}).join(", ")+"), "+c.id+" có VLT "+r.rank+": "+c.vlt+"%."
+      : c.id+" là mã "+scopeName+" dùng cho "+p+", VLT "+c.id+" "+c.vlt+"%.";
+    $("fm-reason").textContent=txt+" TSER "+c.id+" "+c.tser+"%, giảm chói "+c.id+" "+c.glare+"%.";
+    var flag=$("fm-flag");
+    if(r.lineMissing){flag.hidden=false;flag.textContent="Dòng "+FILM_LINES[line.value]+" không có mã dùng cho "+p+", gợi ý được lấy từ các dòng 3M khác.";} else flag.hidden=true;
+    $("fm-link").href=c.url; $("fm-link").textContent="Xem trang "+c.id;
+    $("fm-alts").innerHTML=r.alts.map(function(a){return '<li><span><b>'+a.id+'</b> · VLT '+a.vlt+'% · TSER '+a.tser+'% · giảm chói '+a.glare+'%</span><a href="'+a.url+'">Xem '+a.id+' →</a></li>';}).join("");
+    $("fm-alts-wrap").hidden=!r.alts.length;
+    return r;
+  }
+  function open(){lastFocus=document.activeElement;render();modal.hidden=false;document.body.classList.add("fm-open");modal.querySelector(".fm-close").focus();}
+  function close(back){modal.hidden=true;document.body.classList.remove("fm-open");if(back!==false&&lastFocus)lastFocus.focus();}
+  window.filmMatch={recommend:recommendFilm,codes:FILM_CODES,render:render,open:open,close:close};
+  btn.addEventListener("click",open);
+  modal.addEventListener("click",function(e){if(e.target===modal||e.target.closest("[data-fm-close]"))close();});
+  document.addEventListener("keydown",function(e){
+    if(modal.hidden)return;
+    if(e.key==="Escape"){e.preventDefault();close();return;}
+    if(e.key==="Tab"){var f=[].slice.call(dialog.querySelectorAll("a[href],button")).filter(function(x){return x.offsetParent!==null;});if(!f.length)return;var a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}
+  });
+  $("fm-lead").addEventListener("click",function(){
+    if(!current)return; close(false);
+    if(typeof window.openFilmLeadModal==="function"){
+      window.openFilmLeadModal(current.code.name);
+      var form=document.getElementById("film-lead-form");
+      if(form&&form.elements.package) form.elements.package.value=current.code.name;
+      var g=document.getElementById("film-lead-glass"); if(g) g.value=FILM_POS_LEAD[current.pos];
+    }
+  });
+})();
     (function(){
       var modal=document.getElementById('film-lead-modal'),form=document.getElementById('film-lead-form');
       if(!modal||!form)return;
