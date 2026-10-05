@@ -2,10 +2,10 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `cc5d159024e6ba24dd139985c703138c78657c7d180c4ce928b2b88d0d563992` (commit `ae629964`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
+| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `e8cc5fc7ad476c75a7b0543a45f2caeb8264d35741e3d95581dda25d7bf33803` (commit `3779fbae`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
 | Ngày chấm | 05/10/2026 (tự chấm lại sau tái kiểm 05/10 của người duyệt) |
 | Loại chấm | Tự chấm bản preview — **chưa phải phiếu nghiệm thu chính thức**; người duyệt chấm lại theo mã |
-| Người kiểm duyệt nội dung | Nguyễn Quang Đạo (03/10/2026) |
+| Người kiểm duyệt nội dung | Nguyễn Quang Đạo (05/10/2026) |
 | Ngưỡng đạt | Tổng ≥ 95/100 · SEO ≥ 28,5/30 · GEO ≥ 23,75/25 · 0 lỗi chặn |
 | Bộ bàn giao | `01-noi-dung-ban-duyet.md` · `huong-dan-trien-khai.md` (+ `doan-link-ve-hub.md`) · `03-phieu-cham-v17.md` |
 
