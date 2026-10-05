@@ -3,7 +3,7 @@
 - **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `e8cc5fc7ad476c75a7b0543a45f2caeb8264d35741e3d95581dda25d7bf33803` (commit `3779fbae`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
-- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 03/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
+- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
 
 ## 1. URL và thẻ đầu trang
 
