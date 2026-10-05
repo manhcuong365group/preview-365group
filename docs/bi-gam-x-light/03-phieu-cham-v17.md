@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `7e160e97739b57ec9a12ed6fc75a417e29e589376b0764ca8f7775e448f45d66` (commit `db74c93c`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
+| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `cc5d159024e6ba24dd139985c703138c78657c7d180c4ce928b2b88d0d563992` (commit `ae629964`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
 | Ngày chấm | 05/10/2026 (tự chấm lại sau tái kiểm 05/10 của người duyệt) |
 | Loại chấm | Tự chấm bản preview — **chưa phải phiếu nghiệm thu chính thức**; người duyệt chấm lại theo mã |
 | Người kiểm duyệt nội dung | Nguyễn Quang Đạo (03/10/2026) |
@@ -23,7 +23,7 @@
 | **S** | | **28/30** | Thiếu 0,5 so với ngưỡng 28,5 |
 | G1 | Trả lời rõ, đủ ngữ cảnh | 9,5/10 | Giá/đơn vị/VAT/cơ chế màu đứng cạnh nhau; FAQ phân biệt bi gầm và đèn gầm |
 | G2 | Lập luận lựa chọn | 9,5/10 | Lọc theo thông số có nguồn; số mẫu khớp + "Xem tất cả"; ghi rõ W không phải phép đo chiếu xa |
-| G3 | Nguồn & truy nguyên | 4,5/5 | Link SKU, case, người duyệt, ngày; case gắn SKU theo link công khai, phân biệt "đã lắp" và "liên quan". Trừ: chưa đối chiếu phiếu xưởng gốc; câu bảo hành toàn hệ thống/KTV nhiều năm chưa gắn nguồn chính sách |
+| G3 | Nguồn & truy nguyên | 4,5/5 | Link SKU, case, người duyệt, ngày; case gắn SKU theo link công khai, phân biệt "đã lắp" và "liên quan". Trừ: chưa đối chiếu phiếu xưởng gốc; câu bảo hành/KTV đã viết theo phạm vi chính sách, chưa gắn nguồn văn bản |
 | **G** | | **23,5/25** | Thiếu 0,25 so với ngưỡng |
 | U1 | Dễ đọc (desktop + mobile 375px) | 4,5/5 | Ghi chú/bảng ≥ 13px; không tràn ngang; đo bằng trình duyệt giả lập, chưa phải máy thật |
 | U2 | Bước tiếp theo | 4,5/5 | Form/CTA rõ. Test lead 87 (03/10) là **team tự báo**: API `success:true`, đủ mẫu/giá/UTM/gclid, event 1 lần; lỗi/timeout báo đúng. CRM/routing/GA4: CX |

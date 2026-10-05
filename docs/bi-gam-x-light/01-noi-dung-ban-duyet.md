@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `7e160e97739b57ec9a12ed6fc75a417e29e589376b0764ca8f7775e448f45d66` (commit `db74c93c`) |
+| SHA-256 bản duyệt | `cc5d159024e6ba24dd139985c703138c78657c7d180c4ce928b2b88d0d563992` (commit `ae629964`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 03/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 03/10/2026", schema `dateModified` 2026-10-03) |
 | Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -19,7 +19,7 @@
 | `<title>` | Bi gầm X-Light: Giá sản phẩm, so sánh mẫu & tư vấn \| Auto365 |
 | Meta description | So sánh bi gầm X-Light, dòng đèn gầm ô tô dạng thấu kính, theo lens, Cos/Pha, nhiệt màu, điện áp và giá. Xem mẫu hiện hành, case xe thực tế, chi phí lắp đặt và gửi cấu hình để Auto365 tư vấn theo xe. |
 | H1 | Bi gầm X-Light: các dòng hiện có và cách chọn phù hợp |
-| Sapo | Bi gầm X-Light là dòng đèn gầm ô tô mang thương hiệu X-Light, nổi bật với thiết kế cụm bi cầu (projector) độc lập giúp ánh sáng bám mặt đường và mở rộng tầm nhìn. Các mẫu bi gầm của hãng hiện được phân loại dựa trên ba thông số kỹ thuật cốt lõi: kích thước lens, dải nhiệt màu và điện áp hoạt động. Để đảm bảo an toàn và hiệu năng, việc chốt cấu hình cần được đối chiếu trực tiếp với hệ thống điện nguyên bản, kích thước hốc gầm thực tế của xe và nhu cầu di chuyển. |
+| Sapo | Bi gầm X-Light là dòng đèn gầm ô tô mang thương hiệu X-Light, nổi bật với thiết kế cụm bi cầu (projector) độc lập giúp ánh sáng bám mặt đường và mở rộng tầm nhìn. Các mẫu được phân loại theo kích thước lens, cách chọn hoặc đổi nhiệt màu và điện áp hoạt động; giá sản phẩm niêm yết từ 4 đến 6,2 triệu đồng/cặp, chưa VAT. Công lắp và vật tư được báo theo đúng xe sau khi Auto365 kiểm tra hốc gầm và hệ điện. |
 | CTA | Lọc mẫu theo nhu cầu · Nhận tư vấn cấu hình và chi phí cho xe · Xem xe đã thi công → |
 | Dải số liệu | 15 mẫu · 30 hồ sơ xe thật · 4–6,2tr (giá sản phẩm niêm yết, chưa VAT) · 12/24V — số tự tính lại từ thẻ sản phẩm và lưới case khi tải trang |
 | Bộ lọc nhanh | Nhu cầu · Lens · Khoảng giá sản phẩm · Hệ điện xe; hiện số mẫu khớp + "Xem tất cả ứng viên" |
@@ -80,5 +80,6 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Số chi nhánh | 91 chi nhánh · 33 tỉnh thành | 30/09/2026 |
 | Phân phiên bản | Không xếp hạng theo đời; chỉ ghi đúng tên/đời theo trang sản phẩm | 28/09/2026 |
 | Người duyệt | Nguyễn Quang Đạo | 03/10/2026 |
-| Sapo | Bản do người phụ trách nội dung viết (answer-first) | 02/10/2026 |
+| Sapo | Câu định nghĩa của người phụ trách nội dung + giá và bước kiểm xe theo tái kiểm 05/10 | 05/10/2026 |
+| Bảo hành / KTV | "Hỗ trợ tiếp nhận bảo hành theo chính sách từng mẫu"; KTV "giàu kinh nghiệm", không ghi số năm khi chưa có nguồn | 05/10/2026 |
 | Case Honda City / CR-V 2018 | Gắn F10 New 2025 theo link sản phẩm trong bài case | 03/10/2026 |
