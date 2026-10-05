@@ -1,9 +1,9 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `3fbf1d6705edd23a1ab77d104a853003aeb13a6a363919f5b3cd1e5808fa069e` (commit `84d0eb52`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `7e160e97739b57ec9a12ed6fc75a417e29e589376b0764ca8f7775e448f45d66` (commit `db74c93c`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
-- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 30/09/2026 (trang ghi "Cập nhật 30/09/2026"; schema `dateModified` 2026-09-30).
+- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 03/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 03/10/2026"; schema `dateModified` 2026-10-03). Ngày giá niêm yết (30/09/2026) là trường riêng, không đổi theo ngày duyệt.
 
 ## 1. URL và thẻ đầu trang
 
@@ -11,7 +11,7 @@
 |---|---|---|
 | URL | preview-365group.pages.dev/bi-gam-x-light/ | **https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light** (trả HTTP 200) |
 | `<title>` | Bi gầm X-Light: Giá sản phẩm, so sánh mẫu & tư vấn \| Auto365 | giữ nguyên |
-| Meta description | So sánh bi gầm X-Light theo lens, Cos/Pha, nhiệt màu, điện áp và giá. Xem mẫu hiện hành, case xe thực tế, chi phí lắp đặt và gửi cấu hình để Auto365 tư vấn theo xe. | giữ nguyên |
+| Meta description | So sánh bi gầm X-Light, dòng đèn gầm ô tô dạng thấu kính, theo lens, Cos/Pha, nhiệt màu, điện áp và giá. Xem mẫu hiện hành, case xe thực tế, chi phí lắp đặt và gửi cấu hình để Auto365 tư vấn theo xe. | giữ nguyên, chép đúng chuỗi này vào CMS |
 | H1 | Bi gầm X-Light: các dòng hiện có và cách chọn phù hợp | giữ nguyên |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light | giữ nguyên (tự trỏ) |
 | Meta robots | `noindex, follow` | **`index, follow`** |
@@ -26,7 +26,7 @@
 
 | Ảnh | Trên preview | Việc cần làm |
 |---|---|---|
-| Ảnh chia khối + 6 ảnh thẻ "Vì sao chọn" | toàn bộ file trong `hinh/` được trang tham chiếu | Upload lên thư viện ảnh auto365.vn, thay đường dẫn `hinh/...` bằng URL mới |
+| **8 ảnh trong `hinh/`** (2 ảnh chia khối + 6 ảnh thẻ "Vì sao chọn") | `case-media-1-landrover.webp`<br>`case-media-3-honda-black.webp`<br>`auto365vn-ford-ranger-wildtrak-2026-lap-x-light-f10-turbo-v2-4300k-img_6a8e662b682615.63670804.webp`<br>`auto365vn-porsche-cayenne-s-2014-sau-khi-hoan-thien-nang-ap-xlight-f10-turbo-v2-4300k-img_6a7ace518585a0.34278298.jpg.webp`<br>`auto365vn-ky-thuat-vien-kiem-tra-va-co-dinh-den-khi-thi-cong-img_6a9a666c6fca70.15900967.webp`<br>`auto365vn-kiem-tra-anh-sang-cos-tren-bang-test-den.webp`<br>`auto365vn-mat-duong-khi-lap-den-gam-f10-turbo-v2-cho-wildtrak-img_6a8e6684d01370.85128287.webp`<br>`auto365vn-kiem-tra-khoang-trong-lap-bi-gam-o-to-dien-img_6a7af4b03fe3b0.96753490.jpg.webp` | Upload đủ 8 ảnh lên thư viện ảnh auto365.vn, thay từng đường dẫn `hinh/...` bằng URL mới |
 | Ảnh sản phẩm, case, logo hãng | Đã là URL `https://auto365.vn/uploads/...` | Không cần làm gì |
 | og:image | Ảnh sản phẩm X-Light trên auto365.vn | Giữ, hoặc thay bằng ảnh 1200×630 |
 
@@ -44,7 +44,15 @@
 - Chỉ báo thành công khi API trả `{"success": true}`.
 - Trường gửi kèm: họ tên, SĐT, xe, tỉnh, nhu cầu, `selected_model`/`selected_id`/`selected_url`, `package_price`, `configuration_id`, `vehicle_group`, UTM, gclid/gbraid/wbraid/fbclid, `source_url`, `lead_id`.
 - Sự kiện dataLayer: `view_recommendation`, `select_product`, `click_call`, `click_zalo`, `lead_form_submit`. Gắn conversion Ads/GA4 vào `lead_form_submit` **chỉ khi API xác nhận thành công**.
-- Lead test đã gửi 30/09 vào API production: **mã 60** ("TEST X-LIGHT (Claude) - vui long xoa", SĐT 0900000000). CRM kiểm các trường rồi xoá.
+- Nhật ký test lead (đều gửi tới `https://auto365.vn/api/leads`, SĐT 0900000000, tên chứa "TEST … vui long xoa"):
+
+| Mã | Ngày | Cách gửi | Response | Trạng thái kiểm |
+|---|---|---|---|---|
+| 60 | 30/09/2026 | POST thủ công đúng các trường form | `success:true` | **Team tự báo** — CRM chưa xác nhận |
+| 87 | 03/10/2026 | Form thật trên preview, request chuyển nguyên văn sang API production (F10 2.0 New, UTM + gclid test) | `success:true`, form hiện "Mã yêu cầu: 87", `lead_form_submit` 1 lần | **Team tự báo** — CRM/routing/GA4 chưa xác nhận |
+| — | 03/10/2026 | Giả lập API lỗi 500, `success:false`, timeout (không tạo lead) | Form báo chưa gửi được, giữ mẫu đã chọn, không bắn event | **Team tự báo** |
+
+  CRM cần: mở lead 60 và 87 đối chiếu trường, rồi xoá cả hai.
 
 ## 5. Liên kết nội bộ cần gắn (sau khi URL production trả 200)
 
@@ -133,7 +141,7 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 1 | URL production trả 200 | `curl -I` | | | |
 | 2 | Không còn `noindex` (meta + header) | Xem nguồn trang, `curl -I` | | | |
 | 3 | Canonical tự trỏ | Xem nguồn trang | | | |
-| 4 | 2 ảnh `hinh/` đã thay URL auto365.vn | Mở trang, không ảnh vỡ | | | |
+| 4 | Đủ 8 ảnh `hinh/` đã thay URL auto365.vn | Mở trang, không ảnh vỡ | | | |
 | 5 | Rich Results Test không lỗi | search.google.com/test/rich-results | | | |
 | 6 | Form gửi thật trên production, API trả `success: true` | Gửi 1 lead test, đánh dấu TEST | | | |
 | 7 | Lead trong CRM đủ mẫu/giá/nguồn/UTM | CRM | | | |
@@ -141,4 +149,4 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 9 | Link từ hub tổng, 15 sản phẩm, 30 case | Xem nguồn từng trang | | | |
 | 10 | GSC: URL is on Google | URL Inspection | | | |
 | 11 | Mobile thật (iPhone + Android): lọc, so sánh, form, gọi, Zalo | Thao tác tay | | | |
-| 12 | Xoá lead test mã 60 và lead test ở mục 6 | CRM | | | |
+| 12 | Xoá lead test mã 60, 87 và lead test ở mục 6 | CRM | | | |
