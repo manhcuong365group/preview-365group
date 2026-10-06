@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `e8cc5fc7ad476c75a7b0543a45f2caeb8264d35741e3d95581dda25d7bf33803` (commit `3779fbae`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `f19d0ccbee9ddfe27fe840e0d2e5f4e79f6d352d30ba51beadfca86fd08ad86b` (commit `d0facaa8`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
@@ -150,3 +150,20 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 10 | GSC: URL is on Google | URL Inspection | | | |
 | 11 | Mobile thật (iPhone + Android): lọc, so sánh, form, gọi, Zalo | Thao tác tay | | | |
 | 12 | Xoá lead test mã 60, 87 và lead test ở mục 6 | CRM | | | |
+
+## 8. Ghi chú release cho CMS v2 (06/10/2026)
+
+Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại từ commit ghi ở đầu file. Các thay đổi IT/CMS phải giữ nguyên khi tích hợp:
+
+| Hạng mục | Mã nguồn | Lưu ý khi namespace/build |
+|---|---|---|
+| Ẩn thẻ catalogue khi lọc | `card.hidden = !vis` (vẫn giữ class `is-hidden` cho tương thích) + `<style id="xl-catalog-hidden">` với `#xl-product-grid > .p-card[hidden]{display:none!important}` | Không đổi tên thuộc tính `hidden`; nếu prefix selector thì giữ cùng scope cho rule trên |
+| UTM khi URL đã làm sạch | `campaignValue(key)`: lấy query hiện tại, nếu rỗng lấy `window.__a365Campaign[key]`; form dùng `data.set` (không append trường rỗng) cho 5 UTM và gclid/gbraid/wbraid/fbclid | Template phải chụp `window.__a365Campaign` trước khi làm sạch URL. Wrapper FormData nên coi trường rỗng là chưa có |
+| Mã lead | `serverLeadId()`: nhận `lead_id` dạng chuỗi hoặc số từ API; UUID client chỉ dùng khi API không trả mã | Chốt contract API: `success` + `lead_id` |
+| Conversion | Trang đẩy `lead_form_submit` sau khi API xác nhận; template có `generate_lead` | Chọn **một** conversion chính trong GTM/Ads, event còn lại chỉ hỗ trợ |
+| Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-05; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
+| Bảo hành | Thẻ "Chính hãng, bảo hành điện tử" + link https://auto365.vn/chinh-sach-bao-hanh | — |
+| Địa điểm | Bản preview chỉ có `#diem-lap` | Template v2 đang thêm `#he-thong` → gộp còn một khối |
+| Kiểm nội bộ | `#xl-internal-check` | Xoá khỏi source production (BLOCK_06) |
+
+QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2; lens 2.0 → 4; chuỗi không khớp → 0; xoá lọc → 8; mở URL có UTM, chờ URL được làm sạch rồi gửi form → payload còn đủ UTM/click ID.

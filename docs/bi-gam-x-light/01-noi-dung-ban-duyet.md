@@ -5,9 +5,9 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `e8cc5fc7ad476c75a7b0543a45f2caeb8264d35741e3d95581dda25d7bf33803` (commit `3779fbae`) |
+| SHA-256 bản duyệt | `f19d0ccbee9ddfe27fe840e0d2e5f4e79f6d352d30ba51beadfca86fd08ad86b` (commit `d0facaa8`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026", schema `dateModified` 2026-10-05) |
-| Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
+| Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
 
 > File HTML ở trên **chính là nội dung khách đọc**. Tài liệu này mô tả bản đó để đối chiếu, không chép lại toàn văn để tránh lệch bản. Khi sửa nội dung: sửa HTML → tính lại SHA-256 → cập nhật bảng này, `huong-dan-trien-khai.md` và phiếu chấm cùng lúc.
