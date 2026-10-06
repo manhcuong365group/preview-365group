@@ -574,7 +574,7 @@
     {
       "@type": "AutoRepair",
       "@id": "https://auto365.vn/#tru-so-chinh",
-      "name": "Auto365.vn – Trụ Sở Chính",
+      "name": "Auto365.vn - Trụ Sở Chính",
       "url": "https://auto365.vn/",
       "telephone": "+84365365365",
       "address": {
@@ -746,19 +746,36 @@
       "isRelatedTo": {
         "@id": "https://auto365.vn/ir25#product"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "minPrice": 1800000,
-          "priceCurrency": "VND"
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "3M Ceramic IR25 - 1 cặp kính sườn",
+          "url": "https://auto365.vn/ir25",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1800000,
+            "priceCurrency": "VND"
+          },
+          "description": "Giá dán IR25 từ 1.800.000đ cho 1 cặp kính sườn (2 kính đối xứng), đã gồm VAT và công dán; xác nhận theo dòng xe.",
+          "seller": {
+            "@id": "https://auto365.vn/#tru-so-chinh"
+          }
         },
-        "url": "https://auto365.vn/ir25",
-        "description": "Giá tham khảo dịch vụ dán 3M Ceramic IR25 cho 1 cặp kính sườn (2 kính đối xứng); kính sau 2.300.000đ cho 1 kính lưng; đã gồm công dán, xác nhận theo dòng xe",
-        "seller": {
-          "@id": "https://auto365.vn/#tru-so-chinh"
+        {
+          "@type": "Offer",
+          "name": "3M Ceramic IR25 - kính lưng",
+          "url": "https://auto365.vn/ir25",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 2300000,
+            "priceCurrency": "VND"
+          },
+          "description": "Giá dán IR25 từ 2.300.000đ cho 1 kính lưng, đã gồm VAT và công dán; có thể chênh theo diện tích kính.",
+          "seller": {
+            "@id": "https://auto365.vn/#tru-so-chinh"
+          }
         }
-      }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -984,7 +1001,7 @@ body.fm-open{overflow:hidden}
               <div class="field-grid">
                 <div class="field"><label for="fitmentPosition">Vị trí kính</label><select id="fitmentPosition"><option value="windshield">Kính lái</option><option value="frontside" selected>Kính sườn trước</option><option value="rearside">Kính sườn sau</option><option value="rear">Kính lưng</option><option value="sunroof">Cửa sổ trời</option></select></div>
                 <div class="field"><label for="fitmentLine">Dòng phim ưu tiên</label><select id="fitmentLine"><option value="cr">Crystalline CR BLK</option><option value="ir" selected>Ceramic IR</option><option value="nr">Ceramic NR</option><option value="any">Chưa rõ</option></select></div>
-                <div class="field field-wide"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Trong, dễ quan sát</option><option value="balance" selected>Độ sáng ở mức giữa</option><option value="privacy">Giảm chói, riêng tư</option></select></div>
+                <div class="field field-wide"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Trong, dễ quan sát</option><option value="balance" selected>Độ sáng ở mức giữa</option><option value="privacy">Kín hơn (độ truyền sáng thấp)</option></select></div>
               </div>
               <button type="button" class="fit-submit" id="fitmentOpen" aria-haspopup="dialog" aria-controls="fm-modal">Xem mã phù hợp</button>
               <p class="fm-note">Gợi ý từ 12 mã 3M: CR BLK 60/50/40/35/15, IR50/25/15, NR35/25/15/5.</p>
@@ -1555,10 +1572,12 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
       <h2 id="fm-title"></h2>
       <p class="fm-line" id="fm-line"></p>
       <div class="fm-specs" id="fm-specs"></div>
+      <p class="fm-src" id="fm-spec-src"></p>
       <p class="fm-row"><b>Vị trí đang tư vấn:</b> <span id="fm-curpos"></span></p>
       <p class="fm-row"><b>Vị trí theo cấu hình tư vấn của Auto365:</b> <span id="fm-pos"></span></p>
       <p class="fm-row"><b>Giá tham khảo:</b> <span id="fm-price"></span></p>
       <p class="fm-reason" id="fm-reason"></p>
+      <p class="fm-src" id="fm-sort-note">Gợi ý xếp theo độ truyền sáng (VLT) trong cấu hình Auto365; chỉ số giảm chói là thông số riêng của từng mã.</p>
       <p class="fm-flag" id="fm-flag" hidden></p>
       <p class="fm-flag" id="fm-observation-note" hidden></p>
       <div class="fm-actions"><a class="fm-btn fm-btn-ghost" id="fm-link" href="#">Xem trang mã</a><button type="button" class="fm-btn fm-btn-primary" id="fm-lead">Nhận tư vấn</button></div>
@@ -1578,7 +1597,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           <div class="film-lead-field"><label for="film-lead-year">Năm xe</label><input id="film-lead-year" name="year" inputmode="numeric" placeholder="VD: 2022"></div>
           <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
           <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
-          <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Giữ quan sát gương bên ở kính sườn trước</option><option>Cân bằng chống nóng và quan sát</option><option>Tăng riêng tư khoang sau</option></select></div>
+          <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Ưu tiên kính trong, dễ quan sát</option><option>Giảm chói, riêng tư</option><option>Cân bằng chống nóng và quan sát</option><option>Cần tư vấn cấu hình phù hợp</option></select></div>
           <div class="film-lead-field full"><label for="film-lead-glass">Vị trí kính cần dán</label><select id="film-lead-glass" name="glass_position"><option value="">Chưa xác định</option><option>Kính lái</option><option>Kính sườn trước</option><option>Kính sườn sau</option><option>Kính lưng</option><option>Cửa sổ trời</option><option>Nhiều vị trí</option></select></div>
           <input type="hidden" id="film-lead-package" name="package" value="3M Ceramic IR25">
         </div>
@@ -1594,24 +1613,25 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
 
   <script>
 const FILM_CODES = [
-  {id:"CR BLK 60",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
-  {id:"CR BLK 50",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái"},url:"https://auto365.vn/3m-cr-blk-50"},
-  {id:"CR BLK 40",line:"cr",name:"3M Crystalline CR BLK 40",vlt:41,tser:58,glare:44,pos:["windshield"],offersByPosition:{"windshield":"Từ 6.500.000đ / kính lái"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"},
-  {id:"CR BLK 35",line:"cr",name:"3M Crystalline CR BLK 35",vlt:33,tser:60,glare:55,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 2.600.000đ / cặp kính sườn trước"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-  {id:"CR BLK 15",line:"cr",name:"3M Crystalline CR BLK 15",vlt:14,tser:64,glare:81,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 2.600.000đ / cặp kính sườn","rearside":"Từ 2.600.000đ / cặp kính sườn"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"},
-  {id:"IR50",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],offersByPosition:{"windshield":"Từ 3.300.000đ / kính lái"},url:"https://auto365.vn/ir50"},
-  {id:"IR25",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn","rearside":"Từ 1.800.000đ / cặp kính sườn","rear":"Từ 2.300.000đ / kính lưng"},url:"https://auto365.vn/ir25"},
-  {id:"IR15",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn","rearside":"Từ 1.800.000đ / cặp kính sườn","rear":"Từ 2.300.000đ / kính lưng"},url:"https://auto365.vn/ir15"},
-  {id:"NR35",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],offersByPosition:{"windshield":"Từ 2.600.000đ / kính lái"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
-  {id:"NR25",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn","rearside":"Từ 1.700.000đ / cặp kính sườn","rear":"Từ 1.900.000đ / kính lưng","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
-  {id:"NR15",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn","rearside":"Từ 1.700.000đ / cặp kính sườn","rear":"Từ 1.900.000đ / kính lưng","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
-  {id:"NR5",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","sunroof"],offersByPosition:{"rearside":"Từ 1.700.000đ / cặp kính sườn","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
+  {id:"CR BLK 60",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
+  {id:"CR BLK 50",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/3m-cr-blk-50"},
+  {id:"CR BLK 40",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 40",vlt:41,tser:58,glare:44,pos:["windshield"],offersByPosition:{"windshield":"Từ 6.500.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"},
+  {id:"CR BLK 35",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 35",vlt:33,tser:60,glare:55,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 2.600.000đ / một cặp kính sườn trước, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
+  {id:"CR BLK 15",src:"TDS Crystalline Rev E 05/2024",line:"cr",name:"3M Crystalline CR BLK 15",vlt:14,tser:64,glare:81,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 2.600.000đ / một cặp kính sườn, đã gồm VAT và công dán","rearside":"Từ 2.600.000đ / một cặp kính sườn, đã gồm VAT và công dán"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"},
+  {id:"IR50",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],offersByPosition:{"windshield":"Từ 3.300.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/ir50"},
+  {id:"IR25",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 2.300.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/ir25"},
+  {id:"IR15",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 2.300.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/ir15"},
+  {id:"NR35",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],offersByPosition:{"windshield":"Từ 2.600.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
+  {id:"NR25",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, đã gồm VAT; panorama báo giá theo xe"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
+  {id:"NR15",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, đã gồm VAT; panorama báo giá theo xe"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
+  {id:"NR5",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","sunroof"],offersByPosition:{"rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, đã gồm VAT; panorama báo giá theo xe"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
 ];
 const FILM_LINES = {cr:"3M Crystalline CR BLK",ir:"3M Ceramic IR",nr:"3M Ceramic NR"};
 const FILM_POS = {windshield:"kính lái",frontside:"kính sườn trước",rearside:"kính sườn sau",rear:"kính lưng",sunroof:"cửa sổ trời"};
 const FILM_POS_LEAD = {windshield:"Kính lái",frontside:"Kính sườn trước",rearside:"Kính sườn sau",rear:"Kính lưng",sunroof:"Cửa sổ trời"};
 const FILM_OBS_ALT={"CR BLK 15":"CR BLK 35","IR15":"IR25","NR15":"NR25"};
-function filmObservationNote(id,pos){if(pos==="sunroof")return "Kiểm tra loại kính nóc trước khi tư vấn thi công.";if(pos==="frontside"&&FILM_OBS_ALT[id])return "Nên xem mẫu trên xe và kiểm tra góc nhìn gương. Nếu ưu tiên quan sát, so thêm "+FILM_OBS_ALT[id]+".";if(pos==="rear"&&id==="CR BLK 15")return "Kiểm tra tầm nhìn qua kính lưng và gương chiếu hậu trong xe; camera lùi hỗ trợ khi lùi xe.";return "";}
+const FILM_OBS_REAR={"CR BLK 15":1,"IR15":1,"NR15":1};
+function filmObservationNote(id,pos){if(pos==="windshield"&&id==="CR BLK 40")return "Nếu thường đi đêm, gặp mưa hoặc đường thiếu sáng, nên xem mẫu CR BLK 50 hoặc CR BLK 60 từ vị trí lái trước khi chọn. Khả năng quan sát cần được kiểm tra trên chính xe.";if(pos==="sunroof")return "Cần kiểm tra loại kính nóc và diện tích trước khi tư vấn thi công; panorama báo giá theo xe.";if(pos==="frontside"&&FILM_OBS_ALT[id])return "Với kính sườn trước, hãy thử góc nhìn gương bên từ ghế lái, nhất là khi trời mưa hoặc ít sáng. Nếu ưu tiên quan sát, xem thêm "+FILM_OBS_ALT[id]+" trên xe trước khi chốt.";if(pos==="rear"&&FILM_OBS_REAR[id])return "Với kính lưng, kiểm tra tầm nhìn qua gương chiếu hậu trong xe"+(id==="IR15"?" (gương trung tâm)":"")+", nhất là khi trời mưa hoặc ít sáng; camera lùi hỗ trợ khi lùi xe nhưng không thay thế quan sát qua kính. Nếu ưu tiên quan sát, xem mã sáng hơn.";return "";}
 const FILM_NO_PRICE="Gửi dòng xe để nhận báo giá cho vị trí này";
 function filmPriceLabel(c,pos){var o=(c.offersByPosition||{})[pos];return c.id+" · "+FILM_POS[pos]+": "+(o?o.charAt(0).toLowerCase()+o.slice(1):FILM_NO_PRICE);}
 function recommendFilm(pos, line, pri){
@@ -1648,6 +1668,8 @@ function recommendFilm(pos, line, pri){
     $("fm-price").textContent=filmPriceLabel(c,pos.value);
     $("fm-curpos").textContent=FILM_POS_LEAD[pos.value]||"";
     var obs=$("fm-observation-note"),obsTxt=filmObservationNote(c.id,pos.value);obs.textContent=obsTxt;obs.hidden=!obsTxt;
+    if(obsTxt&&pos.value==="frontside"&&FILM_OBS_ALT[c.id]){var alt=FILM_CODES.filter(function(x){return x.id===FILM_OBS_ALT[c.id];})[0];if(alt){var al=document.createElement("a");al.href=alt.url;al.id="fm-obs-link";al.textContent="So với "+alt.id;obs.appendChild(document.createTextNode(" "));obs.appendChild(al);}}
+    $("fm-spec-src").textContent=c.src?"Nguồn thông số: "+c.src+".":"";
     var scopeName=(r.lineMissing||line.value==="any")?"3M":FILM_LINES[c.line];
     var txt=r.pool.length>1
       ? "Theo cấu hình tư vấn của Auto365, trong các mã "+scopeName+" cho "+p+" ("+r.pool.map(function(x){return x.id;}).join(", ")+"), "+c.id+" có VLT "+r.rank+": "+c.vlt+"%."
@@ -1672,28 +1694,36 @@ function recommendFilm(pos, line, pri){
       if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}
   });
   $("fm-lead").addEventListener("click",function(){
-    if(!current)return; close(false);
+    if(!current)return; var opener=lastFocus; close(false);
     if(typeof window.openFilmLeadModal==="function"){
-      window.openFilmLeadModal(current.code.name,FILM_POS_LEAD[current.pos]);
+      window.openFilmLeadModal(current.code.name,FILM_POS_LEAD[current.pos],opener);
     }
   });
 })();
     (function(){
       var modal=document.getElementById('film-lead-modal'),form=document.getElementById('film-lead-form');
       if(!modal||!form)return;
-      var packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null;
+      var packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null,needField=form.elements.need,zaloLink=form.querySelector('.film-lead-zalo');
       var DEFAULT_LABEL='3M Ceramic IR25',glassField=document.getElementById('film-lead-glass'),interest=document.getElementById('film-lead-interest');
       var validLabels=(window.filmMatch?window.filmMatch.codes.map(function(c){return c.name;}):[]).concat([].map.call(document.querySelectorAll('.package h3'),function(h){return h.textContent.trim();}));
-      function openModal(label,glass){
-        lastFocus=document.activeElement;
+      var GENERIC_NEEDS=['Ưu tiên kính trong, dễ quan sát','Giảm chói, riêng tư','Cân bằng chống nóng và quan sát','Cần tư vấn cấu hình phù hợp'];
+      function syncNeeds(){
+        var list=GENERIC_NEEDS.slice();if(/(^|\s)(NR35|IR50)$/.test(packageField.value))list.push('So sánh NR35 với IR50');
+        needField.innerHTML='';var o=document.createElement('option');o.value='';o.textContent='— Chưa xác định —';needField.appendChild(o);
+        list.forEach(function(t){var e=document.createElement('option');e.textContent=t;needField.appendChild(e);});needField.value='';
+      }
+      function resetTransientUI(){status.textContent='';messageField.value='';messageField.hidden=true;if(zaloLink)zaloLink.hidden=true;}
+      function openModal(label,glass,returnTo){
+        lastFocus=returnTo||document.activeElement;
+        resetTransientUI();
         label=(label||'').trim();
         packageField.value=validLabels.indexOf(label)>-1?label:DEFAULT_LABEL;
         glassField.value=glass||'';
-        interest.textContent=packageField.value;
+        interest.textContent=packageField.value;syncNeeds();
         modal.hidden=false;document.body.classList.add('film-lead-open');form.elements.vehicle.focus();
       }
       window.openFilmLeadModal=openModal;
-      function closeModal(){modal.hidden=true;document.body.classList.remove('film-lead-open');if(lastFocus)lastFocus.focus();}
+      function closeModal(){modal.hidden=true;document.body.classList.remove('film-lead-open');var t=lastFocus;if(!t||!t.isConnected||t.hidden||!t.getClientRects().length)t=document.getElementById('fitmentOpen');if(t&&t.focus)t.focus();}
       document.querySelectorAll('[data-open-zalo]').forEach(function(btn){btn.addEventListener('click',function(){openModal(DEFAULT_LABEL,'');});});
       document.querySelectorAll('.package').forEach(function(card){
         card.setAttribute('tabindex','0');card.setAttribute('role','button');
@@ -1702,7 +1732,17 @@ function recommendFilm(pos, line, pri){
       });
       modal.querySelector('.film-lead-close').addEventListener('click',closeModal);
       modal.addEventListener('click',function(event){if(event.target===modal)closeModal();});
-      document.addEventListener('keydown',function(event){if(event.key==='Escape'&&!modal.hidden)closeModal();});
+      document.addEventListener('keydown',function(event){
+        if(modal.hidden)return;
+        if(event.key==='Escape'){event.preventDefault();closeModal();return;}
+        if(event.key==='Tab'){
+          var f=[].slice.call(modal.querySelectorAll('a[href],button:not([disabled]),input:not([type=hidden]):not([hidden]),select,textarea:not([hidden])')).filter(function(x){return !x.hidden&&x.getClientRects().length>0;});
+          if(!f.length)return;var first=f[0],last=f[f.length-1];
+          if(!modal.contains(document.activeElement)){event.preventDefault();first.focus();}
+          else if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+          else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+        }
+      });
       form.addEventListener('submit',function(event){
         event.preventDefault();if(!form.reportValidity())return;
         if(form.elements['form-honey']&&form.elements['form-honey'].value)return;
@@ -1714,7 +1754,7 @@ function recommendFilm(pos, line, pri){
         var submit=form.querySelector('.film-lead-submit');submit.disabled=true;submit.textContent='Đang gửi...';status.textContent='';
         var fallback=function(msg){messageField.value=message;messageField.hidden=false;form.querySelector('.film-lead-zalo').hidden=false;status.textContent=msg;};
         fetch('/api/leads',{method:'POST',body:body,credentials:'same-origin'}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})}).then(function(p){
-          if(p.ok&&p.j&&p.j.success===true){status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho bạn sớm.';form.reset();messageField.hidden=true;}
+          if(p.ok&&p.j&&p.j.success===true){var pkg=packageField.value,gl=glassField.value;form.reset();packageField.value=pkg;glassField.value=gl;interest.textContent=pkg;syncNeeds();messageField.value='';messageField.hidden=true;if(zaloLink)zaloLink.hidden=true;status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho bạn sớm.';}
           else fallback((p.j&&p.j.message)||'Chưa gửi được. Thông tin của bạn vẫn còn bên dưới — gọi 0365 365 365 hoặc mở Zalo và dán nội dung để gửi.');
         }).catch(function(){fallback('Chưa gửi được lúc này. Thông tin của bạn vẫn còn bên dưới — gọi 0365 365 365 hoặc mở Zalo và dán nội dung để gửi.');}).finally(function(){submit.disabled=false;submit.textContent='Gửi thông tin tư vấn';});
       });
