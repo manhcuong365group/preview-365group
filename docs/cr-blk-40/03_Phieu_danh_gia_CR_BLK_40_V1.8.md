@@ -10,22 +10,22 @@
 |---|---:|---:|---|
 | C1 | 10 | 9 | Thông số khớp TDS Rev F (hai điều kiện kính); giá có VAT, đơn vị; bảo hành dùng câu điều kiện. Thiếu: xác nhận thời hạn riêng CR BLK 40 |
 | C2 | 10 | 9,5 | Có thông số, vị trí, so sánh 40/50/60, giá, gói, case có số đo, FAQ 8 câu, quy trình |
-| C3 | 10 | 9 | Đã bỏ giọng AI và câu nội bộ; còn vài đoạn lặp ý ở khối lợi ích |
+| C3 | 10 | 9,5 | Đã bỏ giọng AI và câu nội bộ; quét văn bản trang (06/10/2026) không còn câu dài lặp nguyên văn |
 | S1 | 10 | 9,5 | Intent rõ (mã + kính lái + giá + cách chọn); giữ URL hiện có |
 | S2 | 10 | 9,5 | Một H1, title/meta đúng, bảng có caption và scope, ảnh có alt |
 | S3 | 10 | 9 | Link production kiểm 200; schema nối đúng @id. Chưa kiểm bản live sau ghép CMS |
 | G1 | 10 | 9,5 | Câu trả lời trích riêng vẫn đúng chủ thể, phạm vi "tư vấn tại Auto365" |
 | G2 | 10 | 9,5 | Có căn cứ và đánh đổi (VLT 41/48/57), có hướng xem mẫu khi thiếu sáng |
 | G3 | 5 | 4,5 | TDS Rev F/E có link; số đo Sportage lấy từ bài hồ sơ, chưa đính kèm biên bản đo gốc |
-| U1 | 5 | 4,5 | Bố cục, bảng, mỗi khối một hình; mobile mới kiểm bằng giả lập 375px |
+| U1 | 5 | 5 | Bố cục, bảng, mỗi khối một hình; giả lập 360/390/430/768/1280px không tràn trang, bảng cuộn trong khối. Thiết bị thật tính ở L5 |
 | U2 | 5 | 4,5 | Popup gợi ý mã theo vị trí đúng giá, form giữ đúng mã/gói/vị trí |
 | U3 | 5 | 5 | Ba phần 01–03 khớp cùng phiên bản (bảng đối chiếu cuối phiếu); đã quét bản đăng, không có ghi chú nội bộ, chỗ trống hay mã hồ sơ. Điểm chỉ áp dụng cho đúng mã băm bên dưới; sửa HTML thì phải đối chiếu lại |
 
-**Đã xác nhận:** C = 27,5/30 · S = 28/30 (SEO 9,33/10) · G = 23,5/25 (GEO 9,40/10) · U = 14/15 → **93,0/100**. Không còn tiêu chí CX trong 12 tiêu chí; các CX còn lại thuộc tầng Live (L1–L8).
+**Đã xác nhận:** C = 28/30 · S = 28/30 (SEO 9,33/10) · G = 23,5/25 (GEO 9,40/10) · U = 14,5/15 → **94,0/100**. Không còn tiêu chí CX trong 12 tiêu chí; các CX còn lại thuộc tầng Live (L1–L8).
 
 ## Kết luận nội dung
 
-**CHƯA ĐẠT NỘI DUNG V1.8** theo ngưỡng (S ≥ 28,5; G ≥ 23,75; Tổng ≥ 95): tổng 93,0 < 95, S = 28 < 28,5 và G = 23,5 < 23,75.
+**CHƯA ĐẠT NỘI DUNG V1.8** theo ngưỡng (S ≥ 28,5; G ≥ 23,75; Tổng ≥ 95): tổng 94,0 < 95, S = 28 < 28,5 và G = 23,5 < 23,75.
 
 Cách đóng khoảng cách:
 1. Đính kèm biên bản đo gốc của case Sportage (thiết bị, vị trí, điều kiện) → G3. Catalog NR không thuộc phạm vi trang CR BLK 40, nên không tính vào G3.
