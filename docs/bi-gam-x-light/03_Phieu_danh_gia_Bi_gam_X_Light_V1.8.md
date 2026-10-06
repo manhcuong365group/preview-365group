@@ -13,7 +13,7 @@
 
 | Mã | Tiêu chí | Điểm đề xuất | Căn cứ (mã N liên quan) | Còn mở |
 |---|---|---:|---|---|
-| C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn, 35W chưa tách, cơ chế màu thống nhất; câu bảo hành viết lại theo chính sách công khai, link chính sách đặt cạnh câu (N1) | Ngày hiệu lực giá 05/10 cần nguồn thương mại xác nhận (§9.4) |
+| C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn, 35W chưa tách, cơ chế màu thống nhất; câu bảo hành viết lại theo chính sách công khai, link chính sách đặt cạnh câu (N1) | Ngày hiệu lực giá 06/10/2026 do người phụ trách chốt |
 | C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, 11 FAQ (N2) | — |
 | C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; lý do chọn Auto365 viết theo phạm vi xác nhận (N3) | Trùng khối địa điểm `#he-thong` / `#diem-lap` nằm ở template CMS v2 |
 | **C** | | **28,5/30** | | |
@@ -55,7 +55,7 @@
 ## 4. Việc để chuyển sang "ĐẠT NỘI DUNG V1.8"
 
 1. CMS build lại v2 từ commit ghi trong 01, kiểm 5 ca catalogue + UTM sau cleanup → U2, U3.
-2. Kinh doanh xác nhận ngày hiệu lực giá 05/10/2026 → C1.
+2. ~~Ngày hiệu lực giá~~ — đã chốt 06/10/2026.
 3. CMS chốt graph schema/`@id` bản v2, gộp khối địa điểm trùng → S2, C3.
 4. Dán link về hub theo `doan-link-ve-hub.md`; đăng URL production → S3.
 5. Xưởng đối chiếu 2 xe Honda → G3.
