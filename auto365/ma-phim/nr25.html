@@ -380,6 +380,9 @@
     .verdict-block{background:#f8f7f4}
     th{background:#f8f7f4;color:#6d737c;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:11px 12px}
     td{font-size:13px;padding:11px 12px;border-top-color:#ece9e3}
+    tbody th[scope=row]{background:transparent;color:inherit;font-size:13px;text-transform:none;letter-spacing:0;padding:11px 12px 11px 20px;border-top:1px solid #ece9e3}
+    tr.nr-cur th[scope=row]{background:#fff3f4}
+    .spec-table-wrap caption{position:sticky;left:0;max-width:calc(100vw - 72px);box-sizing:border-box}
     .faq{border-top:0;display:grid;gap:10px}
     details{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
     summary{font-size:15px;font-weight:500;padding:15px 48px 15px 17px;color:#30343a}
@@ -572,7 +575,7 @@
     {
       "@type": "AutoRepair",
       "@id": "https://auto365.vn/#tru-so-chinh",
-      "name": "Auto365.vn – Trụ Sở Chính",
+      "name": "Auto365.vn - Trụ Sở Chính",
       "url": "https://auto365.vn/",
       "telephone": "+84365365365",
       "address": {
@@ -599,7 +602,7 @@
       "url": "https://auto365.vn/phim-cach-nhiet-3m-nr-25",
       "name": "3M NR25 kính sườn, kính sau: thông số và giá | Auto365",
       "description": "3M Ceramic NR25 cho kính sườn, kính sau, cửa sổ trời: VLT 29%, TSER 59%, giảm chói 68% (catalog 3M). Giá kính sườn 1.700.000đ, kính sau 1.900.000đ. Kính lái dùng NR35.",
-      "dateModified": "2026-10-03",
+      "dateModified": "2026-10-06",
       "author": {
         "@type": "Organization",
         "@id": "https://auto365.vn/#team-content",
@@ -762,19 +765,50 @@
       "isRelatedTo": {
         "@id": "https://auto365.vn/phim-cach-nhiet-3m-nr-25#product"
       },
-      "offers": {
-        "@type": "Offer",
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "minPrice": 1700000,
-          "priceCurrency": "VND"
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "3M Ceramic NR25 - 1 cặp kính sườn",
+          "url": "https://auto365.vn/phim-cach-nhiet-3m-nr-25",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1700000,
+            "priceCurrency": "VND"
+          },
+          "description": "Giá dán NR25 từ 1.700.000đ cho 1 cặp kính sườn (2 kính đối xứng), đã gồm VAT và công dán; xác nhận theo dòng xe.",
+          "seller": {
+            "@id": "https://auto365.vn/#tru-so-chinh"
+          }
         },
-        "url": "https://auto365.vn/phim-cach-nhiet-3m-nr-25",
-        "description": "Giá tham khảo dịch vụ dán 3M Ceramic NR25 cho 1 cặp kính sườn (2 kính đối xứng), đã gồm công dán, xác nhận theo dòng xe",
-        "seller": {
-          "@id": "https://auto365.vn/#tru-so-chinh"
+        {
+          "@type": "Offer",
+          "name": "3M Ceramic NR25 - kính lưng",
+          "url": "https://auto365.vn/phim-cach-nhiet-3m-nr-25",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 1900000,
+            "priceCurrency": "VND"
+          },
+          "description": "Giá dán NR25 từ 1.900.000đ cho 1 kính lưng, đã gồm VAT và công dán; có thể chênh theo diện tích kính.",
+          "seller": {
+            "@id": "https://auto365.vn/#tru-so-chinh"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "3M Ceramic NR25 - cửa sổ trời nhỏ",
+          "url": "https://auto365.vn/phim-cach-nhiet-3m-nr-25",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": 850000,
+            "priceCurrency": "VND"
+          },
+          "description": "Giá dán NR25 từ 850.000đ cho 1 cửa sổ trời nhỏ, đã gồm VAT; cửa sổ trời tùy xe, báo giá theo cấu hình.",
+          "seller": {
+            "@id": "https://auto365.vn/#tru-so-chinh"
+          }
         }
-      }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -815,7 +849,7 @@
           "name": "Dán NR25 giá bao nhiêu?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Giá dán lẻ NR25 theo từng vị trí kính: kính sườn 1.700.000đ cho một cặp kính sườn (2 kính đối xứng), kính sau 1.900.000đ cho 1 kính lưng (có thể chênh theo diện tích kính), cửa sổ trời nhỏ từ 850.000đ tính theo diện tích, panorama báo giá theo xe. Giá đã gồm công dán, miễn phí tháo và vệ sinh phim cũ. Giá áp dụng từ 06/2026 cho mọi nhóm xe và được xác nhận theo dòng xe khi báo giá."
+            "text": "Giá dán lẻ NR25 theo từng vị trí kính: kính sườn 1.700.000đ cho một cặp kính sườn (2 kính đối xứng), kính sau 1.900.000đ cho 1 kính lưng (có thể chênh theo diện tích kính), cửa sổ trời nhỏ từ 850.000đ tùy xe và diện tích; panorama báo giá theo xe. Giá đã gồm công dán, miễn phí tháo và vệ sinh phim cũ. Giá áp dụng từ 06/2026 cho mọi nhóm xe và được xác nhận theo dòng xe khi báo giá."
           }
         },
         {
@@ -831,7 +865,7 @@
           "name": "NR25 dán kính sườn trước có ổn không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Kính sườn trước là vị trí NR25 hay được dùng trong các xe Auto365 đã làm, vì sáng hơn NR15 khi nhìn gương bên. Kính zin từng xe khác nhau nên VLT thực tế có thể thấp hơn số catalog; nên xem mẫu trên xe thực tế để chọn phù hợp."
+            "text": "Kính sườn trước là vị trí NR25 được ghi trong các hồ sơ NR25 trên trang này (VinFast VF3, VF 5), vì NR25 sáng hơn NR15 trên cùng kính tham chiếu; nên kiểm tra góc nhìn gương bên trên xe. Kính zin từng xe khác nhau nên VLT thực tế có thể thấp hơn số catalog; nên xem mẫu trên xe thực tế để chọn phù hợp."
           }
         },
         {
@@ -855,7 +889,7 @@
           "name": "Gói nào của Auto365 có NR25?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cả ba gói 3M Ceramic Hybrid, 3M Crystalline Hybrid và 3M Crystalline Hybrid Pro đều dùng NR25, NR15 hoặc NR5 cho kính sườn, NR25 hoặc NR15 cho kính lưng. Khác nhau ở kính lái: NR35, CR BLK 60/50 hoặc CR BLK 40."
+            "text": "Cả ba gói 3M Ceramic Hybrid, 3M Crystalline Hybrid và 3M Crystalline Hybrid Pro đều dùng NR25, NR15 hoặc NR5 cho kính sườn, NR25, NR15 hoặc NR5 cho kính lưng. Khác nhau ở kính lái: NR35, CR BLK 60/50 hoặc CR BLK 40."
           }
         },
         {
@@ -863,7 +897,7 @@
           "name": "Dán NR25 có được bảo hành không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam áp dụng."
+            "text": "Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam áp dụng."
           }
         }
       ]
@@ -979,7 +1013,7 @@ body.fm-open{overflow:hidden}
             </div>
             <h1>3M Ceramic NR25: thông số và cách chọn cho kính sườn, kính sau và cửa sổ trời</h1>
             <p class="hero-lead"><strong>3M NR25</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Ceramic NR</strong> (công nghệ lai Nano Ceramic kết hợp Nano Reflective), dùng cho kính sườn, kính sau và cửa sổ trời; kính lái của dòng này là NR35. Trên kính xanh 6 mm (VLT nền 73%), phim có VLT 29%, TSER 59% và giảm chói 68% (catalog 3M Ceramic NR, 03/2026). Giá dán tại Auto365 từ 1.700.000đ cho 1 cặp kính sườn, kèm bảo hành điện tử 3M.</p>
-            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-03">03/10/2026</time></p>
+            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật nội dung <time datetime="2026-10-06">06/10/2026</time></p>
             <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
               <div><span class="hero-offer-label">Giá dán NR25 từ</span><div class="hero-price">1.700.000đ</div><div class="hero-price-note">1 cặp kính sườn · kính lưng 1.900.000đ, cửa sổ trời nhỏ từ 850.000đ · đã gồm công dán, miễn phí tháo &amp; vệ sinh phim cũ · xác nhận theo dòng xe khi báo giá.</div></div>
               <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
@@ -1000,7 +1034,7 @@ body.fm-open{overflow:hidden}
               <div class="field-grid">
                 <div class="field"><label for="fitmentPosition">Vị trí kính</label><select id="fitmentPosition"><option value="windshield">Kính lái</option><option value="frontside" selected>Kính sườn trước</option><option value="rearside">Kính sườn sau</option><option value="rear">Kính lưng</option><option value="sunroof">Cửa sổ trời</option></select></div>
                 <div class="field"><label for="fitmentLine">Dòng phim ưu tiên</label><select id="fitmentLine"><option value="cr">Crystalline CR BLK</option><option value="ir">Ceramic IR</option><option value="nr" selected>Ceramic NR</option><option value="any">Chưa rõ</option></select></div>
-                <div class="field field-wide"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Trong, dễ quan sát</option><option value="balance" selected>Độ sáng ở mức giữa</option><option value="privacy">Giảm chói, riêng tư</option></select></div>
+                <div class="field field-wide"><label for="fitmentPriority">Ưu tiên</label><select id="fitmentPriority"><option value="visibility">Trong, dễ quan sát</option><option value="balance" selected>Độ sáng ở mức giữa</option><option value="privacy">Kín hơn (độ truyền sáng thấp)</option></select></div>
               </div>
               <button type="button" class="fit-submit" id="fitmentOpen" aria-haspopup="dialog" aria-controls="fm-modal">Xem mã phù hợp</button>
               <p class="fm-note">Gợi ý từ 12 mã 3M: CR BLK 60/50/40/35/15, IR50/25/15, NR35/25/15/5.</p>
@@ -1020,10 +1054,11 @@ body.fm-open{overflow:hidden}
           <ul>
             <li><b>Dòng phim:</b> <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">3M Ceramic NR</a></li>
             <li><b>Vị trí kính:</b> kính sườn, kính sau, cửa sổ trời; không dán kính lái</li>
+            <li><b>Chính sách kính lái:</b> Theo cấu hình tư vấn hiện tại của Auto365, NR25 được cân nhắc cho kính sườn, kính lưng và cửa sổ trời; kính lái dùng NR35 trong dòng Ceramic NR.</li>
             <li><b>Thông số:</b> VLT 29% · TSER 59% · giảm chói 68% (kính xanh 6 mm, VLT nền 73%)</li>
             <li><b>Giá dán từ:</b> 1.700.000đ cho 1 cặp kính sườn, đã gồm VAT và công dán</li>
-            <li><b>Bảo hành:</b> eWarranty 3M 10 năm theo chính sách 3M Việt Nam</li>
-            <li><b>Nguồn số liệu:</b> <a class="inline-link" href="#nguon-tham-khao">Catalog 3M Ceramic NR (Nano Reflective), 3M Việt Nam · 03/2026</a></li>
+            <li><b>Bảo hành:</b> eWarranty 3M lên đến 10 năm theo chính sách 3M Việt Nam</li>
+            <li><b>Nguồn số liệu:</b> <a class="inline-link" href="#nguon-tham-khao">Catalog 3M Ceramic NR (Nano Reflective), 3M Việt Nam · 03/2026</a> · <a class="inline-link" href="assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf" target="_blank" rel="noopener">tải PDF</a></li>
           </ul>
         </div>
       </div>
@@ -1068,7 +1103,7 @@ body.fm-open{overflow:hidden}
           <article class="compare active">
             <h3>NR25</h3>
             <div class="spec">VLT 29% · TSER 59% · giảm chói 68% · IRER 63%</div>
-            <p><strong>NR25 sáng hơn NR15 và NR5</strong> để đối chiếu; kiểm tra góc nhìn gương trên xe trước khi chốt kính sườn trước.</p>
+            <p><strong>NR25 sáng hơn NR15 và NR5</strong> trên cùng kính tham chiếu; xem mẫu từ ghế lái và kiểm tra góc nhìn gương trước khi chốt kính sườn trước.</p>
             <div class="verdict-line"><b>Đặc tính:</b> sáng hơn · <b>Thường dùng:</b> sườn trước</div>
           </article>
           <article class="compare">
@@ -1081,7 +1116,7 @@ body.fm-open{overflow:hidden}
             <h3>NR5</h3>
             <div class="spec">VLT 7% · TSER 69% · giảm chói 93% · IRER 68%</div>
             <p><strong>NR5 kín hơn NR15,</strong> dành cho khoang sau khi bạn ưu tiên riêng tư.</p>
-            <div class="verdict-line"><b>Đặc tính:</b> riêng tư cao · <b>Thường dùng:</b> sườn sau, cửa sổ trời</div>
+            <div class="verdict-line"><b>Đặc tính:</b> riêng tư cao · <b>Thường dùng:</b> sườn sau, lưng, cửa sổ trời</div>
           </article>
         </div>
         <p class="section-desc" style="margin-top:14px">Kính lái dùng NR35 (VLT 43%, TSER 51%), xem <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">3M Ceramic NR35</a>. So sánh với dòng khác: <a class="inline-link" href="https://auto365.vn/so-sanh-3m-ceramic-nr-ceramic-ir-cr-blk">So sánh 3M Ceramic NR, Ceramic IR và CR BLK</a>.</p>
@@ -1104,12 +1139,12 @@ body.fm-open{overflow:hidden}
           <article class="pos recommended">
             <span class="tag">Ưu tiên</span>
             <h3>Kính sườn trước</h3>
-            <p>Sáng, dễ nhìn gương bên.</p>
+            <p>Sáng hơn NR15 và NR5; nên kiểm tra góc nhìn gương bên trên xe.</p>
           </article>
           <article class="pos">
             <span class="tag">Cân bằng</span>
             <h3>Kính sườn sau / lưng</h3>
-            <p>Khoang sau dịu nhưng vẫn nhìn ra ngoài được.</p>
+            <p>Khoang sau dịu hơn; mức nhìn ra ngoài tùy kính zin và ánh sáng, nên xem mẫu trước khi chốt.</p>
           </article>
           <article class="pos">
             <span class="tag">Theo nhu cầu</span>
@@ -1134,18 +1169,19 @@ body.fm-open{overflow:hidden}
           </div>
           <div class="spec-table-wrap">
             <table>
+              <caption style="caption-side:top;text-align:left;font-size:13px;color:#6b737d;padding:0 0 8px">Thông số tham chiếu 3M Ceramic NR25 theo từng điều kiện kính, nguồn Catalog 3M Ceramic NR 03/2026</caption>
               <thead>
-                <tr><th>Mã · kính xanh 6 mm, nền 73%</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th></tr>
+                <tr><th scope="col">Mã · kính xanh 6 mm, nền 73%</th><th scope="col">VLT</th><th scope="col">TSER</th><th scope="col">IRER</th><th scope="col">IRR*</th><th scope="col">UV</th><th scope="col">Giảm chói</th></tr>
               </thead>
               <tbody>
-                <tr><td><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">NR35</a></td><td>43%</td><td>51%</td><td>58%</td><td>79%</td><td>99%</td><td>52%</td></tr>
-                <tr class="nr-cur"><td><b>NR25</b> (đang xem)</td><td>29%</td><td>59%</td><td>63%</td><td>86%</td><td>99%</td><td>68%</td></tr>
-                <tr><td><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-15">NR15</a></td><td>14%</td><td>65%</td><td>66%</td><td>86%</td><td>99%</td><td>84%</td></tr>
-                <tr><td><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-5">NR5</a></td><td>7%</td><td>69%</td><td>68%</td><td>91%</td><td>99%</td><td>93%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left"><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">NR35</a></th><td>43%</td><td>51%</td><td>58%</td><td>79%</td><td>99%</td><td>52%</td></tr>
+                <tr class="nr-cur"><th scope="row" style="font-weight:600;text-align:left"><b>NR25</b> (đang xem)</th><td>29%</td><td>59%</td><td>63%</td><td>86%</td><td>99%</td><td>68%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left"><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-15">NR15</a></th><td>14%</td><td>65%</td><td>66%</td><td>86%</td><td>99%</td><td>84%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left"><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-5">NR5</a></th><td>7%</td><td>69%</td><td>68%</td><td>91%</td><td>99%</td><td>93%</td></tr>
               </tbody>
             </table>
           </div>
-          <p class="spec-src" style="margin:10px 0 0;font-size:13px;line-height:1.5;color:#6b737d">Nguồn: Catalog 3M Ceramic NR 03/2026 (3M Việt Nam), bảng mã tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">trang dòng 3M Ceramic NR</a> · <a href="#nguon-tham-khao">Xem tất cả tài liệu</a></p>
+          <p class="spec-src" style="margin:10px 0 0;font-size:13px;line-height:1.5;color:#6b737d">Nguồn: <a href="assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf" target="_blank" rel="noopener">Catalog 3M Ceramic NR (3M Việt Nam, 03/2026, PDF)</a>, bảng mã tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">trang dòng 3M Ceramic NR</a> · <a href="#nguon-tham-khao">Xem tất cả tài liệu</a></p>
 
           <div class="spec-explain">
             <div class="explain"><b>TSER 59%</b>Phần năng lượng mặt trời (ánh sáng, hồng ngoại, UV) mà kính đã dán phim chặn lại. Muốn so khả năng cản nhiệt giữa các mã, hãy nhìn con số này trước.</div>
@@ -1153,7 +1189,7 @@ body.fm-open{overflow:hidden}
             <div class="explain"><b>IRR 86% ≠ cản 86% tổng nhiệt</b>Con số này chỉ đo dải hồng ngoại hẹp 900–1.000 nm, trên phim chưa dán lên kính. IRR cao hơn TSER là bình thường, nhưng nó không cho biết tổng nhiệt được chặn.</div>
           </div>
 
-          <div class="source-note"><strong>Về nguồn số liệu:</strong> VLT, TSER, IRER và giảm chói đo trên kính xanh 6 mm có VLT 73%; riêng IRR đo trên phim kèm liner, không có kính. Catalog dòng NR không công bố độ phản quang (VLR) và số liệu trên kính trong, nên bảng không có các cột đó. Kính nền xe bạn khác thì số đo thực tế cũng khác. Xem thêm <a class="inline-link" href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">cách đọc thông số Ceramic NR</a>.</div>
+          <div class="source-note"><strong>* Về IRR và nguồn số liệu:</strong> VLT, TSER, IRER và giảm chói đo trên kính xanh 6 mm có VLT 73%; riêng IRR đo trên phim kèm liner, không có kính. Catalog dòng NR không công bố độ phản quang (VLR) và số liệu trên kính trong, nên bảng không có các cột đó. Kính nền xe bạn khác thì số đo thực tế cũng khác. Xem thêm <a class="inline-link" href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">cách đọc thông số Ceramic NR</a>.</div>
         </div>
       <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-3png-img_6a4641406ff748.03721836_auto365vn.png" alt="Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3.</figcaption></figure>
 </div>
@@ -1184,7 +1220,7 @@ body.fm-open{overflow:hidden}
           <article class="package">
             <div class="label">Gói Ceramic Hybrid<span class="package-badge">Kính lái NR35</span></div>
             <h3>3M Ceramic Hybrid</h3>
-            <div class="package-config"><b>Kính lái:</b> NR35<br><b>Kính sườn &amp; cửa sổ trời:</b> NR25 / NR15 / NR5<br><b>Kính lưng:</b> NR25 / NR15</div>
+            <div class="package-config"><b>Kính lái:</b> NR35<br><b>Kính sườn &amp; cửa sổ trời:</b> NR25 / NR15 / NR5<br><b>Kính lưng:</b> NR25 / NR15 / NR5</div>
             <div class="tiny">Bảng giá tham khảo · đã gồm VAT</div>
             <div class="price-list">
               <div class="price-item"><span>Minicar</span><b>5.900.000đ</b></div>
@@ -1197,7 +1233,7 @@ body.fm-open{overflow:hidden}
           <article class="package">
             <div class="label">Gói Crystalline Hybrid<span class="package-badge">Kính lái CR BLK</span></div>
             <h3>3M Crystalline Hybrid</h3>
-            <div class="package-config"><b>Kính lái:</b> CR BLK 60 / 50<br><b>Kính sườn:</b> NR25 / NR15 / NR5<br><b>Kính lưng:</b> NR25 / NR15</div>
+            <div class="package-config"><b>Kính lái:</b> CR BLK 60 / 50<br><b>Kính sườn:</b> NR25 / NR15 / NR5<br><b>Kính lưng:</b> NR25 / NR15 / NR5</div>
             <div class="tiny">Bảng giá tham khảo · đã gồm VAT</div>
             <div class="price-list">
               <div class="price-item"><span>Minicar</span><b>9.000.000đ</b></div>
@@ -1210,7 +1246,7 @@ body.fm-open{overflow:hidden}
           <article class="package">
             <div class="label">Gói Crystalline Hybrid Pro<span class="package-badge">Kính lái CR BLK 40</span></div>
             <h3>3M Crystalline Hybrid Pro</h3>
-            <div class="package-config"><b>Kính lái:</b> CR BLK 40<br><b>Kính sườn:</b> NR25 / NR15 / NR5<br><b>Kính lưng:</b> NR25 / NR15</div>
+            <div class="package-config"><b>Kính lái:</b> CR BLK 40<br><b>Kính sườn:</b> NR25 / NR15 / NR5<br><b>Kính lưng:</b> NR25 / NR15 / NR5</div>
             <div class="tiny">Bảng giá tham khảo · đã gồm VAT</div>
             <div class="price-list">
               <div class="price-item"><span>Minicar</span><b>9.800.000đ</b></div>
@@ -1229,7 +1265,7 @@ body.fm-open{overflow:hidden}
     <section class="section c35-cases" id="xe-thuc-te" aria-labelledby="case-title">
 <div class="container"><div class="c35-panel">
 <div class="c35-head">
-<div><h2 class="section-title" id="case-title">Xe thực tế dùng 3M NR25 tại Auto365</h2></div>
+<div><h2 class="section-title" id="case-title">Xe thực tế dùng 3M Ceramic NR tại Auto365</h2><p class="c35-sub" style="display:block">VinFast VF3 và VinFast VF 5 là hồ sơ ghi sườn trước NR25. Các xe còn lại là hồ sơ cùng dòng Ceramic NR (gói ghi trên nhãn), không ghi riêng NR25.</p></div>
 <a class="c35-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 <div class="c35-filter" role="group" aria-label="Lọc case theo hãng xe">
@@ -1336,8 +1372,8 @@ if(caseTrack){
         <div class="why-grid">
           <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Đo kính zin giúp tư vấn mã và đối chiếu mẫu; VLT sau thi công được kiểm tra lại trên chính xe.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
           <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính phía trước cần nhìn rõ, khoang sau cần kín đáo, nên mỗi vị trí được tư vấn mã riêng.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
-          <article class="why"><div class="why-copy"><h3>Có xe thật để xem trước</h3><p>Bạn có thể xem các xe đã dán NR25 tại Auto365 trước khi chọn.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
-          <article class="why"><div class="why-copy"><h3>Bảo hành rõ ràng sau bàn giao</h3><p>Bàn giao đúng mã phim đã chốt và kích hoạt bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam.</p></div><img width="800" height="533" src="assets/auto365vn-chung-nhan-bao-hanh-dien-tu-3m-vinfast-vf3-nr35-nr25-nr15.webp" alt="Chứng nhận bảo hành điện tử 3M của một xe VinFast VF3 tại Auto365: kính lái NR35, kính sườn trước NR25, kính sườn sau NR15" loading="lazy" decoding="async"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Có xe thật để xem trước</h3><p>Bạn có thể xem xe dùng NR25 và các mã cùng dòng Ceramic NR tại Auto365 trước khi chọn.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
+          <article class="why"><div class="why-copy"><h3>Bảo hành rõ ràng sau bàn giao</h3><p>Bàn giao đúng mã phim đã chốt và kích hoạt bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam.</p></div><img width="800" height="533" src="assets/auto365vn-chung-nhan-bao-hanh-dien-tu-3m-vinfast-vf3-nr35-nr25-nr15.webp" alt="Chứng nhận bảo hành điện tử 3M của một xe VinFast VF3 tại Auto365: kính lái NR35, kính sườn trước NR25, kính sườn sau NR15" loading="lazy" decoding="async"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
 
         
@@ -1514,7 +1550,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
         <div class="faq">
           <details open>
             <summary>Dán NR25 giá bao nhiêu?</summary>
-            <p>Giá dán lẻ NR25 theo từng vị trí kính: kính sườn 1.700.000đ cho một cặp kính sườn (2 kính đối xứng), kính sau 1.900.000đ cho 1 kính lưng (có thể chênh theo diện tích kính), cửa sổ trời nhỏ từ 850.000đ tính theo diện tích, panorama báo giá theo xe. Giá đã gồm công dán, miễn phí tháo và vệ sinh phim cũ. Giá áp dụng từ 06/2026 cho mọi nhóm xe và được xác nhận theo dòng xe khi báo giá.</p>
+            <p>Giá dán lẻ NR25 theo từng vị trí kính: kính sườn 1.700.000đ cho một cặp kính sườn (2 kính đối xứng), kính sau 1.900.000đ cho 1 kính lưng (có thể chênh theo diện tích kính), cửa sổ trời nhỏ từ 850.000đ tùy xe và diện tích; panorama báo giá theo xe. Giá đã gồm công dán, miễn phí tháo và vệ sinh phim cũ. Giá áp dụng từ 06/2026 cho mọi nhóm xe và được xác nhận theo dòng xe khi báo giá.</p>
           </details>
           <details>
             <summary>Kính lái có nên dán NR25 không?</summary>
@@ -1522,7 +1558,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           </details>
           <details>
             <summary>NR25 dán kính sườn trước có ổn không?</summary>
-            <p>Kính sườn trước là vị trí NR25 hay được dùng trong các xe Auto365 đã làm, vì sáng hơn NR15 khi nhìn gương bên. Kính zin từng xe khác nhau nên VLT thực tế có thể thấp hơn số catalog; nên xem mẫu trên xe thực tế để chọn phù hợp.</p>
+            <p>Kính sườn trước là vị trí NR25 được ghi trong các hồ sơ NR25 trên trang này (VinFast VF3, VF 5), vì NR25 sáng hơn NR15 trên cùng kính tham chiếu; nên kiểm tra góc nhìn gương bên trên xe. Kính zin từng xe khác nhau nên VLT thực tế có thể thấp hơn số catalog; nên xem mẫu trên xe thực tế để chọn phù hợp.</p>
           </details>
           <details>
             <summary>NR25 khác NR15 thế nào?</summary>
@@ -1534,11 +1570,11 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           </details>
           <details>
             <summary>Gói nào của Auto365 có NR25?</summary>
-            <p>Cả ba gói 3M Ceramic Hybrid, 3M Crystalline Hybrid và 3M Crystalline Hybrid Pro đều dùng NR25, NR15 hoặc NR5 cho kính sườn, NR25 hoặc NR15 cho kính lưng. Khác nhau ở kính lái: NR35, CR BLK 60/50 hoặc CR BLK 40.</p>
+            <p>Cả ba gói 3M Ceramic Hybrid, 3M Crystalline Hybrid và 3M Crystalline Hybrid Pro đều dùng NR25, NR15 hoặc NR5 cho kính sườn, NR25, NR15 hoặc NR5 cho kính lưng. Khác nhau ở kính lái: NR35, CR BLK 60/50 hoặc CR BLK 40.</p>
           </details>
           <details>
             <summary>Dán NR25 có được bảo hành không?</summary>
-            <p>Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam áp dụng.</p>
+            <p>Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam áp dụng.</p>
           </details>
         </div>
 
@@ -1570,8 +1606,8 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
     <section class="section mp-more" id="lien-ket" aria-labelledby="lien-ket-title">
       <div class="container">
         <h2 class="mp-more-title" id="lien-ket-title">Xem thêm và nguồn tài liệu</h2>
-        <p class="mp-more-row mp-more-links"><span class="mp-more-label">Xem thêm:</span> <a href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">3M NR35</a> (kính lái) · <a href="https://auto365.vn/phim-cach-nhiet-3m-nr-15">3M NR15</a> (kính sườn, kính sau, cửa sổ trời) · <a href="https://auto365.vn/phim-cach-nhiet-3m-nr-5">3M NR5</a> (sườn sau, cửa sổ trời) · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Tổng quan phim cách nhiệt ô tô 3M</a> · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">Trang dòng 3M Ceramic NR</a> · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid">Gói 3M Crystalline Hybrid</a> · <a href="https://auto365.vn/3m-ceramic-hybrid-va-crystalline-hybrid">3M Ceramic Hybrid và Crystalline Hybrid khác nhau thế nào</a> · <a href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">Cách đọc thông số 3M Ceramic NR: VLT, TSER, IRER, IRR</a> · <a href="https://auto365.vn/chi-nhanh">Hệ thống chi nhánh Auto365</a></p>
-        <p class="mp-more-row mp-more-src" id="nguon-tham-khao"><span class="mp-more-label">Nguồn tài liệu:</span> Catalog phim cách nhiệt ô tô 3M Ceramic NR (Nano Reflective), 3M Việt Nam  · 03/2026  · tài liệu do 3M Việt Nam phát hành; bảng mã và giá xem tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">trang dòng 3M Ceramic NR</a> · <a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty" target="_blank" rel="noopener">Tra cứu bảo hành điện tử eWarranty 3M</a>  · cổng tra cứu của 3M · <a href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/" target="_blank" rel="noopener">3M Việt Nam – Phim cách nhiệt ô tô</a>  · trang 3M Việt Nam · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a>  · cập nhật 03/10/2026</p>
+        <p class="mp-more-row mp-more-links"><span class="mp-more-label">Xem thêm:</span> <a href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">3M NR35</a> (kính lái) · <a href="https://auto365.vn/phim-cach-nhiet-3m-nr-15">3M NR15</a> (kính sườn, kính sau, cửa sổ trời) · <a href="https://auto365.vn/phim-cach-nhiet-3m-nr-5">3M NR5</a> (sườn sau, kính lưng, cửa sổ trời) · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Tổng quan phim cách nhiệt ô tô 3M</a> · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">Trang dòng 3M Ceramic NR</a> · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid">Gói 3M Crystalline Hybrid</a> · <a href="https://auto365.vn/3m-ceramic-hybrid-va-crystalline-hybrid">3M Ceramic Hybrid và Crystalline Hybrid khác nhau thế nào</a> · <a href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">Cách đọc thông số 3M Ceramic NR: VLT, TSER, IRER, IRR</a> · <a href="https://auto365.vn/chi-nhanh">Hệ thống chi nhánh Auto365</a></p>
+        <p class="mp-more-row mp-more-src" id="nguon-tham-khao"><span class="mp-more-label">Nguồn tài liệu:</span> <a href="assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf" target="_blank" rel="noopener">Catalog 3M Ceramic NR (3M Việt Nam, 03/2026, PDF)</a> · tài liệu do 3M Việt Nam phát hành; bảng mã và giá xem tại <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">trang dòng 3M Ceramic NR</a> · <a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty" target="_blank" rel="noopener">Tra cứu bảo hành điện tử eWarranty 3M</a>  · cổng tra cứu của 3M · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a>  · cập nhật 03/10/2026</p>
       </div>
     </section>
 
@@ -1599,10 +1635,12 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
       <h2 id="fm-title"></h2>
       <p class="fm-line" id="fm-line"></p>
       <div class="fm-specs" id="fm-specs"></div>
+      <p class="fm-src" id="fm-spec-src"></p>
       <p class="fm-row"><b>Vị trí đang tư vấn:</b> <span id="fm-curpos"></span></p>
       <p class="fm-row"><b>Vị trí theo cấu hình tư vấn của Auto365:</b> <span id="fm-pos"></span></p>
       <p class="fm-row"><b>Giá tham khảo:</b> <span id="fm-price"></span></p>
       <p class="fm-reason" id="fm-reason"></p>
+      <p class="fm-src" id="fm-sort-note">Gợi ý xếp theo độ truyền sáng (VLT) trong cấu hình Auto365; chỉ số giảm chói là thông số riêng của từng mã.</p>
       <p class="fm-flag" id="fm-flag" hidden></p>
       <p class="fm-flag" id="fm-observation-note" hidden></p>
       <div class="fm-actions"><a class="fm-btn fm-btn-ghost" id="fm-link" href="#">Xem trang mã</a><button type="button" class="fm-btn fm-btn-primary" id="fm-lead">Nhận tư vấn</button></div>
@@ -1622,7 +1660,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           <div class="film-lead-field"><label for="film-lead-year">Năm xe</label><input id="film-lead-year" name="year" inputmode="numeric" placeholder="VD: 2022"></div>
           <div class="film-lead-field"><label for="film-lead-city">Tỉnh / thành phố</label><input id="film-lead-city" name="city" placeholder="VD: TP. Hồ Chí Minh, Hà Nội"></div>
           <div class="film-lead-field"><label for="film-lead-phone">Số điện thoại</label><input id="film-lead-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></div>
-          <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Kính sườn trước dễ nhìn gương</option><option>Khoang sau dịu nhưng vẫn sáng</option><option>Cửa sổ trời giảm nắng</option></select></div>
+          <div class="film-lead-field full"><label for="film-lead-need">Nhu cầu ưu tiên <small>(không bắt buộc)</small></label><select id="film-lead-need" name="need"><option value="">— Chưa xác định —</option><option>Ưu tiên kính trong, dễ quan sát</option><option>Giảm chói, riêng tư</option><option>Cân bằng chống nóng và quan sát</option><option>Cần tư vấn cấu hình phù hợp</option></select></div>
           <div class="film-lead-field full"><label for="film-lead-glass">Vị trí kính cần dán</label><select id="film-lead-glass" name="glass_position"><option value="">Chưa xác định</option><option>Kính lái</option><option>Kính sườn trước</option><option>Kính sườn sau</option><option>Kính lưng</option><option>Cửa sổ trời</option><option>Nhiều vị trí</option></select></div>
           <input type="hidden" id="film-lead-package" name="package" value="3M Ceramic NR25">
         </div>
@@ -1638,24 +1676,25 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
 
   <script>
 const FILM_CODES = [
-  {id:"CR BLK 60",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
-  {id:"CR BLK 50",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái"},url:"https://auto365.vn/3m-cr-blk-50"},
-  {id:"CR BLK 40",line:"cr",name:"3M Crystalline CR BLK 40",vlt:41,tser:58,glare:44,pos:["windshield"],offersByPosition:{"windshield":"Từ 6.500.000đ / kính lái"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"},
-  {id:"CR BLK 35",line:"cr",name:"3M Crystalline CR BLK 35",vlt:33,tser:60,glare:55,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 2.600.000đ / cặp kính sườn trước"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
-  {id:"CR BLK 15",line:"cr",name:"3M Crystalline CR BLK 15",vlt:14,tser:64,glare:81,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 2.600.000đ / cặp kính sườn","rearside":"Từ 2.600.000đ / cặp kính sườn"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"},
-  {id:"IR50",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],offersByPosition:{"windshield":"Từ 3.300.000đ / kính lái"},url:"https://auto365.vn/ir50"},
-  {id:"IR25",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn","rearside":"Từ 1.800.000đ / cặp kính sườn","rear":"Từ 2.300.000đ / kính lưng"},url:"https://auto365.vn/ir25"},
-  {id:"IR15",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn","rearside":"Từ 1.800.000đ / cặp kính sườn","rear":"Từ 2.300.000đ / kính lưng"},url:"https://auto365.vn/ir15"},
-  {id:"NR35",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],offersByPosition:{"windshield":"Từ 2.600.000đ / kính lái"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
-  {id:"NR25",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn","rearside":"Từ 1.700.000đ / cặp kính sườn","rear":"Từ 1.900.000đ / kính lưng","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
-  {id:"NR15",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn","rearside":"Từ 1.700.000đ / cặp kính sườn","rear":"Từ 1.900.000đ / kính lưng","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
-  {id:"NR5",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","sunroof"],offersByPosition:{"rearside":"Từ 1.700.000đ / cặp kính sườn","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
+  {id:"CR BLK 60",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
+  {id:"CR BLK 50",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/3m-cr-blk-50"},
+  {id:"CR BLK 40",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 40",vlt:41,tser:58,glare:44,pos:["windshield"],offersByPosition:{"windshield":"Từ 6.500.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40"},
+  {id:"CR BLK 35",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 35",vlt:33,tser:60,glare:55,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 2.600.000đ / một cặp kính sườn trước, đã gồm VAT","rear":"Từ 4.100.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35"},
+  {id:"CR BLK 15",src:"TDS Crystalline Rev E 05/2024",line:"cr",name:"3M Crystalline CR BLK 15",vlt:14,tser:64,glare:81,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 2.600.000đ / một cặp kính sườn, đã gồm VAT và công dán","rearside":"Từ 2.600.000đ / một cặp kính sườn, đã gồm VAT và công dán","rear":"Từ 4.100.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15"},
+  {id:"IR50",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],offersByPosition:{"windshield":"Từ 3.300.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/ir50"},
+  {id:"IR25",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 2.300.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/ir25"},
+  {id:"IR15",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 2.300.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/ir15"},
+  {id:"NR35",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],offersByPosition:{"windshield":"Từ 2.600.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
+  {id:"NR25",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama báo giá theo xe; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
+  {id:"NR15",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama báo giá theo xe; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
+  {id:"NR5",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","rear","sunroof"],offersByPosition:{"rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama báo giá theo xe; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
 ];
 const FILM_LINES = {cr:"3M Crystalline CR BLK",ir:"3M Ceramic IR",nr:"3M Ceramic NR"};
 const FILM_POS = {windshield:"kính lái",frontside:"kính sườn trước",rearside:"kính sườn sau",rear:"kính lưng",sunroof:"cửa sổ trời"};
 const FILM_POS_LEAD = {windshield:"Kính lái",frontside:"Kính sườn trước",rearside:"Kính sườn sau",rear:"Kính lưng",sunroof:"Cửa sổ trời"};
 const FILM_OBS_ALT={"CR BLK 15":"CR BLK 35","IR15":"IR25","NR15":"NR25"};
-function filmObservationNote(id,pos){if(pos==="sunroof")return "Kiểm tra loại kính nóc trước khi tư vấn thi công.";if(pos==="frontside"&&FILM_OBS_ALT[id])return "Nên xem mẫu trên xe và kiểm tra góc nhìn gương. Nếu ưu tiên quan sát, so thêm "+FILM_OBS_ALT[id]+".";if(pos==="rear"&&id==="CR BLK 15")return "Kiểm tra tầm nhìn qua kính lưng và gương chiếu hậu trong xe; camera lùi hỗ trợ khi lùi xe.";return "";}
+const FILM_OBS_REAR={"CR BLK 15":1,"IR15":1,"NR15":1,"NR5":1};
+function filmObservationNote(id,pos){if(pos==="windshield"&&id==="CR BLK 40")return "Nếu thường đi đêm, gặp mưa hoặc đường thiếu sáng, nên xem mẫu CR BLK 50 hoặc CR BLK 60 từ vị trí lái trước khi chọn. Khả năng quan sát cần được kiểm tra trên chính xe.";if(pos==="sunroof")return "Cần kiểm tra loại kính nóc và diện tích trước khi tư vấn thi công; cửa sổ trời tùy xe, báo giá theo cấu hình.";if(pos==="frontside"&&FILM_OBS_ALT[id])return "Với kính sườn trước, hãy thử góc nhìn gương bên từ ghế lái, nhất là khi trời mưa hoặc ít sáng. Nếu ưu tiên quan sát, xem thêm "+FILM_OBS_ALT[id]+" trên xe trước khi chốt.";if(pos==="rear"&&FILM_OBS_REAR[id])return "Với kính lưng, kiểm tra tầm nhìn qua gương chiếu hậu trong xe"+(id==="IR15"?" (gương trung tâm)":"")+", nhất là khi trời mưa hoặc ít sáng; camera lùi hỗ trợ khi lùi xe nhưng không thay thế quan sát qua kính. Nếu ưu tiên quan sát, xem mã sáng hơn.";return "";}
 const FILM_NO_PRICE="Gửi dòng xe để nhận báo giá cho vị trí này";
 function filmPriceLabel(c,pos){var o=(c.offersByPosition||{})[pos];return c.id+" · "+FILM_POS[pos]+": "+(o?o.charAt(0).toLowerCase()+o.slice(1):FILM_NO_PRICE);}
 function recommendFilm(pos, line, pri){
@@ -1692,6 +1731,8 @@ function recommendFilm(pos, line, pri){
     $("fm-price").textContent=filmPriceLabel(c,pos.value);
     $("fm-curpos").textContent=FILM_POS_LEAD[pos.value]||"";
     var obs=$("fm-observation-note"),obsTxt=filmObservationNote(c.id,pos.value);obs.textContent=obsTxt;obs.hidden=!obsTxt;
+    if(obsTxt&&pos.value==="frontside"&&FILM_OBS_ALT[c.id]){var alt=FILM_CODES.filter(function(x){return x.id===FILM_OBS_ALT[c.id];})[0];if(alt){var al=document.createElement("a");al.href=alt.url;al.id="fm-obs-link";al.textContent="So với "+alt.id;obs.appendChild(document.createTextNode(" "));obs.appendChild(al);}}
+    $("fm-spec-src").textContent=c.src?"Nguồn thông số: "+c.src+".":"";
     var scopeName=(r.lineMissing||line.value==="any")?"3M":FILM_LINES[c.line];
     var txt=r.pool.length>1
       ? "Theo cấu hình tư vấn của Auto365, trong các mã "+scopeName+" cho "+p+" ("+r.pool.map(function(x){return x.id;}).join(", ")+"), "+c.id+" có VLT "+r.rank+": "+c.vlt+"%."
@@ -1716,28 +1757,36 @@ function recommendFilm(pos, line, pri){
       if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}
   });
   $("fm-lead").addEventListener("click",function(){
-    if(!current)return; close(false);
+    if(!current)return; var opener=lastFocus; close(false);
     if(typeof window.openFilmLeadModal==="function"){
-      window.openFilmLeadModal(current.code.name,FILM_POS_LEAD[current.pos]);
+      window.openFilmLeadModal(current.code.name,FILM_POS_LEAD[current.pos],opener);
     }
   });
 })();
     (function(){
       var modal=document.getElementById('film-lead-modal'),form=document.getElementById('film-lead-form');
       if(!modal||!form)return;
-      var packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null;
+      var packageField=form.elements.package,status=form.querySelector('.film-lead-status'),messageField=document.getElementById('film-lead-message'),lastFocus=null,needField=form.elements.need,zaloLink=form.querySelector('.film-lead-zalo');
       var DEFAULT_LABEL='3M Ceramic NR25',glassField=document.getElementById('film-lead-glass'),interest=document.getElementById('film-lead-interest');
       var validLabels=(window.filmMatch?window.filmMatch.codes.map(function(c){return c.name;}):[]).concat([].map.call(document.querySelectorAll('.package h3'),function(h){return h.textContent.trim();}));
-      function openModal(label,glass){
-        lastFocus=document.activeElement;
+      var GENERIC_NEEDS=['Ưu tiên kính trong, dễ quan sát','Giảm chói, riêng tư','Cân bằng chống nóng và quan sát','Cần tư vấn cấu hình phù hợp'];
+      function syncNeeds(){
+        var list=GENERIC_NEEDS.slice();if(/(^|\s)(NR35|IR50)$/.test(packageField.value))list.push('So sánh NR35 với IR50');
+        needField.innerHTML='';var o=document.createElement('option');o.value='';o.textContent='— Chưa xác định —';needField.appendChild(o);
+        list.forEach(function(t){var e=document.createElement('option');e.textContent=t;needField.appendChild(e);});needField.value='';
+      }
+      function resetTransientUI(){status.textContent='';messageField.value='';messageField.hidden=true;if(zaloLink)zaloLink.hidden=true;}
+      function openModal(label,glass,returnTo){
+        lastFocus=returnTo||document.activeElement;
+        resetTransientUI();
         label=(label||'').trim();
         packageField.value=validLabels.indexOf(label)>-1?label:DEFAULT_LABEL;
         glassField.value=glass||'';
-        interest.textContent=packageField.value;
+        interest.textContent=packageField.value;syncNeeds();
         modal.hidden=false;document.body.classList.add('film-lead-open');form.elements.vehicle.focus();
       }
       window.openFilmLeadModal=openModal;
-      function closeModal(){modal.hidden=true;document.body.classList.remove('film-lead-open');if(lastFocus)lastFocus.focus();}
+      function closeModal(){modal.hidden=true;document.body.classList.remove('film-lead-open');var t=lastFocus;if(!t||!t.isConnected||t.hidden||!t.getClientRects().length)t=document.getElementById('fitmentOpen');if(t&&t.focus)t.focus();}
       document.querySelectorAll('[data-open-zalo]').forEach(function(btn){btn.addEventListener('click',function(){openModal(DEFAULT_LABEL,'');});});
       document.querySelectorAll('.package').forEach(function(card){
         card.setAttribute('tabindex','0');card.setAttribute('role','button');
@@ -1746,7 +1795,17 @@ function recommendFilm(pos, line, pri){
       });
       modal.querySelector('.film-lead-close').addEventListener('click',closeModal);
       modal.addEventListener('click',function(event){if(event.target===modal)closeModal();});
-      document.addEventListener('keydown',function(event){if(event.key==='Escape'&&!modal.hidden)closeModal();});
+      document.addEventListener('keydown',function(event){
+        if(modal.hidden)return;
+        if(event.key==='Escape'){event.preventDefault();closeModal();return;}
+        if(event.key==='Tab'){
+          var f=[].slice.call(modal.querySelectorAll('a[href],button:not([disabled]),input:not([type=hidden]):not([hidden]),select,textarea:not([hidden])')).filter(function(x){return !x.hidden&&x.getClientRects().length>0;});
+          if(!f.length)return;var first=f[0],last=f[f.length-1];
+          if(!modal.contains(document.activeElement)){event.preventDefault();first.focus();}
+          else if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+          else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+        }
+      });
       form.addEventListener('submit',function(event){
         event.preventDefault();if(!form.reportValidity())return;
         if(form.elements['form-honey']&&form.elements['form-honey'].value)return;
@@ -1758,7 +1817,7 @@ function recommendFilm(pos, line, pri){
         var submit=form.querySelector('.film-lead-submit');submit.disabled=true;submit.textContent='Đang gửi...';status.textContent='';
         var fallback=function(msg){messageField.value=message;messageField.hidden=false;form.querySelector('.film-lead-zalo').hidden=false;status.textContent=msg;};
         fetch('/api/leads',{method:'POST',body:body,credentials:'same-origin'}).then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j}})}).then(function(p){
-          if(p.ok&&p.j&&p.j.success===true){status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho bạn sớm.';form.reset();messageField.hidden=true;}
+          if(p.ok&&p.j&&p.j.success===true){var pkg=packageField.value,gl=glassField.value;form.reset();packageField.value=pkg;glassField.value=gl;interest.textContent=pkg;syncNeeds();messageField.value='';messageField.hidden=true;if(zaloLink)zaloLink.hidden=true;status.textContent='Đã gửi thông tin. Auto365 sẽ gọi lại cho bạn sớm.';}
           else fallback((p.j&&p.j.message)||'Chưa gửi được. Thông tin của bạn vẫn còn bên dưới — gọi 0365 365 365 hoặc mở Zalo và dán nội dung để gửi.');
         }).catch(function(){fallback('Chưa gửi được lúc này. Thông tin của bạn vẫn còn bên dưới — gọi 0365 365 365 hoặc mở Zalo và dán nội dung để gửi.');}).finally(function(){submit.disabled=false;submit.textContent='Gửi thông tin tư vấn';});
       });

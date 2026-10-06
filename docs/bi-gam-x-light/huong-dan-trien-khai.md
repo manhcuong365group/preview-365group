@@ -1,9 +1,9 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `e8cc5fc7ad476c75a7b0543a45f2caeb8264d35741e3d95581dda25d7bf33803` (commit `3779fbae`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `246b4fe23ea37bb448ba72a1ab852d0a0ea4e66c701419342eaabeb3c3220fce` (commit `656244ec`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
-- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
+- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026"; schema `dateModified` 2026-10-06). Ngày hiệu lực giá niêm yết: 06/10/2026 (người phụ trách xác nhận); ngày đối chiếu thông số: 06/10/2026.
 
 ## 1. URL và thẻ đầu trang
 
@@ -51,8 +51,9 @@
 | 60 | 30/09/2026 | POST thủ công đúng các trường form | `success:true` | **Team tự báo** — CRM chưa xác nhận |
 | 87 | 03/10/2026 | Form thật trên preview, request chuyển nguyên văn sang API production (F10 2.0 New, UTM + gclid test) | `success:true`, form hiện "Mã yêu cầu: 87", `lead_form_submit` 1 lần | **Team tự báo** — CRM/routing/GA4 chưa xác nhận |
 | — | 03/10/2026 | Giả lập API lỗi 500, `success:false`, timeout (không tạo lead) | Form báo chưa gửi được, giữ mẫu đã chọn, không bắn event | **Team tự báo** |
+| 111 | 06/10/2026 | E2E: trang preview + script template production thật (capture, cleanup, wrapper fetch), chạy dưới URL production có UTM; URL được làm sạch sau tương tác rồi mới gửi | `{success:true, lead_id:"111", test:true}`; payload đủ 5 UTM, `request_id` = Idempotency-Key; UI "Mã yêu cầu: 111"; `lead_form_submit` 1 lần với lead_id 111 | **Team tự báo** — API xác nhận; CRM/GA4 chưa xác nhận |
 
-  CRM cần: mở lead 60 và 87 đối chiếu trường, rồi xoá cả hai.
+  CRM cần: mở lead 60, 87 và 111 đối chiếu trường (111 phải có utm_campaign = xlight_qa_e2e và request_id c8891775-6098-45fe-bd50-9f25ec1e6fd5), rồi xoá cả ba.
 
 ## 5. Liên kết nội bộ cần gắn (sau khi URL production trả 200)
 
@@ -150,3 +151,21 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 10 | GSC: URL is on Google | URL Inspection | | | |
 | 11 | Mobile thật (iPhone + Android): lọc, so sánh, form, gọi, Zalo | Thao tác tay | | | |
 | 12 | Xoá lead test mã 60, 87 và lead test ở mục 6 | CRM | | | |
+
+## 8. Ghi chú release cho CMS v2 (06/10/2026)
+
+Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại từ commit ghi ở đầu file. Các thay đổi IT/CMS phải giữ nguyên khi tích hợp:
+
+| Hạng mục | Mã nguồn | Lưu ý khi namespace/build |
+|---|---|---|
+| Ẩn thẻ catalogue khi lọc | `card.hidden = !vis` (vẫn giữ class `is-hidden` cho tương thích) + `<style id="xl-catalog-hidden">` với `#xl-product-grid > .p-card[hidden]{display:none!important}` | Không đổi tên thuộc tính `hidden`; nếu prefix selector thì giữ cùng scope cho rule trên |
+| UTM khi URL đã làm sạch | `<script id="xl-campaign-capture">` ngay sau `<meta charset>`: chụp 9 khoá (5 UTM + gclid/gbraid/wbraid/fbclid) vào `window.__a365Campaign` lúc tải, trước mọi cleanup. Form: `campaignValue()` (query → snapshot), chỉ `set` khi có giá trị; sau đó bù trường rỗng từ snapshot, không ghi đè giá trị thật | Script capture phải đứng **trước** đoạn cleanup URL của template. Wrapper FormData của template: coi trường rỗng là chưa có (`!body.has(k) || !String(body.get(k)||"").trim()`) |
+| Giá trị lọc | `normFilter()`: chuẩn hoá điện áp/lens (chữ thường, bỏ khoảng trắng thừa, bỏ hậu tố "inch") ở cả checkbox, select mobile và `data-voltage`/`data-lens` | CMS đổi hoa/thường hay ghi nhãn "2.0 inch" vẫn lọc đúng (đã thử) |
+| Mã lead | Payload gửi `request_id` (UUID client, trùng header `Idempotency-Key`, giữ nguyên khi gửi lại) — **không** gửi `lead_id` phía client. `lead_id` chỉ lấy từ response (chuỗi hoặc số, `serverLeadId()`). Không có `lead_id` → UI hiện "Mã tham chiếu" 8 ký tự đầu của request_id | Backend: nhận `request_id` để chống trùng; response `{success:true, lead_id}`; CRM lưu cả `request_id` và `lead_id` để đối chiếu |
+| Conversion | Trang đẩy `lead_form_submit` 1 lần sau khi API xác nhận, gồm `lead_id` (server, nếu có), `request_id`, `lead_id_source` (server/none); không có tên/SĐT/ghi chú | Chọn **một** conversion chính (`lead_form_submit` hoặc `generate_lead` của template), dedupe theo `lead_id`/`request_id` |
+| Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-06; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
+| Bảo hành | Thanh trên: "Bảo hành theo chính sách từng mẫu · hỗ trợ kích hoạt bảo hành điện tử" (mobile chỉ vế đầu); FAQ: 13/15 PDP ghi 24 tháng, F10 2.0 2024 và F10 New đời trước chưa ghi; link chính sách | Không đưa lại "Bảo hành điện tử 24 tháng" chung cho cả trang |
+| Địa điểm | Bản preview chỉ có `#diem-lap` | Template v2 đang thêm `#he-thong` → gộp còn một khối |
+| Kiểm nội bộ | `#xl-internal-check` | Xoá khỏi source production (BLOCK_06) |
+
+QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2; lens 2.0 → 4; chuỗi không khớp → 0; xoá lọc → 8; mở URL có UTM, chờ URL được làm sạch rồi gửi form → payload còn đủ UTM/click ID.

@@ -5,9 +5,9 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `e8cc5fc7ad476c75a7b0543a45f2caeb8264d35741e3d95581dda25d7bf33803` (commit `3779fbae`) |
-| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026", schema `dateModified` 2026-10-05) |
-| Tiêu chuẩn chấm | SEO/GEO V1.7 — phiếu chấm: [03-phieu-cham-v17.md](03-phieu-cham-v17.md) |
+| SHA-256 bản duyệt | `246b4fe23ea37bb448ba72a1ab852d0a0ea4e66c701419342eaabeb3c3220fce` (commit `656244ec`) |
+| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026", schema `dateModified` 2026-10-06) |
+| Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
 
 > File HTML ở trên **chính là nội dung khách đọc**. Tài liệu này mô tả bản đó để đối chiếu, không chép lại toàn văn để tránh lệch bản. Khi sửa nội dung: sửa HTML → tính lại SHA-256 → cập nhật bảng này, `huong-dan-trien-khai.md` và phiếu chấm cùng lúc.
@@ -32,7 +32,7 @@
 | 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm, so sánh tối đa 3 mẫu, bảng thông số |
 | 3 | `chon-theo-nhu-cau` | Chọn bi gầm X-Light theo nhu cầu sử dụng | 6 nhu cầu; 5 thẻ có link xe đã lắp thật |
 | 4 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
-| 5 | `chi-phi-hoan-thien` | Chi phí lắp bi gầm X-Light gồm những gì? | 7 khoản; giá niêm yết cập nhật 05/10/2026 |
+| 5 | `chi-phi-hoan-thien` | Chi phí lắp bi gầm X-Light gồm những gì? | 7 khoản; giá niêm yết cập nhật 06/10/2026 |
 | 6 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
 | 7 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
 | 8 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
@@ -79,7 +79,7 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Hotline | 0365 365 911 | 29/09/2026 |
 | Số chi nhánh | 91 chi nhánh · 33 tỉnh thành | 30/09/2026 |
 | Phân phiên bản | Không xếp hạng theo đời; chỉ ghi đúng tên/đời theo trang sản phẩm | 28/09/2026 |
-| Người duyệt | Nguyễn Quang Đạo | 05/10/2026 |
+| Người duyệt | Nguyễn Quang Đạo | 06/10/2026 |
 | Sapo | Câu định nghĩa của người phụ trách nội dung + giá và bước kiểm xe theo tái kiểm 05/10 | 05/10/2026 |
 | Bảo hành / KTV | "Hỗ trợ tiếp nhận bảo hành theo chính sách từng mẫu"; KTV "giàu kinh nghiệm", không ghi số năm khi chưa có nguồn | 05/10/2026 |
 | Case Honda City / CR-V 2018 | Gắn F10 New 2025 theo link sản phẩm trong bài case | 03/10/2026 |
