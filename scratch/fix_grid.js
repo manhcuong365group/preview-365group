@@ -1,12 +1,1 @@
-﻿const fs = require('fs');
-let html = fs.readFileSync('auto365/bong-led/index.html', 'utf8');
-
-const s1 = html.indexOf('<section class="section" id="cum-den"');
-const gridStart = html.indexOf('<div class="grid grid-3">', s1);
-if (gridStart !== -1 && gridStart - s1 < 300) {
-    html = html.substring(0, gridStart) + '<div class="grid grid-4">' + html.substring(gridStart + 25);
-    fs.writeFileSync('auto365/bong-led/index.html', '\ufeff' + html.replace(/^\ufeff/, ''), 'utf8');
-    console.log("Changed grid-3 to grid-4");
-} else {
-    console.log("Could not find grid-3 in cum-den section");
-}
+const fs = require('fs'); const file = 'auto365/bi-gam/vinfast-vf3/index.html'; let content = fs.readFileSync(file, 'utf8'); const oldStyle = 'style=\x22display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #e2e8f0;\x22'; const newClass = 'class=\x22vf3lp-support-grid\x22'; if (content.includes(oldStyle)) { content = content.replace(oldStyle, newClass); const cssToInject = '.vf3lp-support-grid { display: grid; gap: 1px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #e2e8f0; grid-template-columns: 1fr; } @media(min-width: 768px) { .vf3lp-support-grid { grid-template-columns: repeat(3, 1fr); } }'; content = content.replace('</head>', '<style>' + cssToInject + '</style></head>'); fs.writeFileSync(file, content, 'utf8'); console.log('Fixed grid'); } else { console.log('Old style not found'); }
