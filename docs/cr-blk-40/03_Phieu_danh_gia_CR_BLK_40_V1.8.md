@@ -19,18 +19,18 @@
 | G3 | 5 | 4 | TDS Rev F/E có link; thiếu catalog NR công khai; chưa có biên bản đo riêng cho case |
 | U1 | 5 | 4,5 | Bố cục, bảng, mỗi khối một hình; mobile mới kiểm bằng giả lập 375px |
 | U2 | 5 | 4,5 | Popup gợi ý mã theo vị trí đúng giá, form giữ đúng mã/gói/vị trí |
-| U3 | 5 | CX | Bộ 01–03 mới tạo; chưa có xác nhận reviewer và thương mại cùng phiên bản |
+| U3 | 5 | 5 | Ba phần 01–03 khớp cùng phiên bản (bảng đối chiếu cuối phiếu); đã quét bản đăng, không có ghi chú nội bộ, chỗ trống hay mã hồ sơ. Điểm chỉ áp dụng cho đúng mã băm bên dưới; sửa HTML thì phải đối chiếu lại |
 
-**Đã xác nhận:** C = 27,5/30 · S = 28/30 (SEO 9,33/10) · G = 23/25 (GEO 9,20/10) · U = 9/15 (U3 CX) → **87,5/100**, khoảng còn mở 87,5–92,5.
+**Đã xác nhận:** C = 27,5/30 · S = 28/30 (SEO 9,33/10) · G = 23/25 (GEO 9,20/10) · U = 14/15 → **92,5/100**. Không còn tiêu chí CX trong 12 tiêu chí; các CX còn lại thuộc tầng Live (L1–L8).
 
 ## Kết luận nội dung
 
-**CHƯA ĐẠT NỘI DUNG V1.8** theo ngưỡng (S ≥ 28,5; G ≥ 23,75; Tổng ≥ 95): S tối đa hiện 28 và G 23 chưa chạm ngưỡng; kể cả khi U3 đạt tối đa, tổng chỉ 92,5.
+**CHƯA ĐẠT NỘI DUNG V1.8** theo ngưỡng (S ≥ 28,5; G ≥ 23,75; Tổng ≥ 95): tổng 92,5 < 95, S = 28 < 28,5 và G = 23 < 23,75.
 
 Cách đóng khoảng cách:
 1. Catalog NR có URL và biên bản đo case → G3.
 2. Kiểm bản live sau ghép CMS → S3.
-3. Reviewer và thương mại xác nhận → C1, U3.
+3. Reviewer và thương mại xác nhận thời hạn bảo hành riêng → C1.
 4. Mobile trên thiết bị thật → U1.
 
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
@@ -63,3 +63,20 @@ BLOCK_01–08: không phát hiện trong phạm vi preview. BLOCK_07: production
 | L8 | Pass (preview) | Nội dung, bảng, FAQ có trong HTML |
 
 Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6, L7 — chưa nghiệm thu đầy đủ.
+
+## Bảng đối chiếu phiên bản (U3)
+
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `6dbfe40f56f7523fe82c6f0fb6ce87dcef3ce1b3969bec32e2f259aa311c5a1d` (kiểm 06/10/2026).
+
+| Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
+|---|---|---|---|---|
+| Title | 3M CR BLK 40 kính lái: giá, thông số và cách chọn (59 ký tự) | 59 ký tự | 59 ký tự | Có |
+| URL / canonical | https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40 | cùng URL | cùng URL | Có |
+| Ngày xuất bản / sửa | 2026-10-06 / 2026-10-06 | cùng | cùng | Có |
+| Số FAQ | 8 (HTML = JSON-LD) | 8 | 8 | Có |
+| Giá | Từ 6.500.000đ / kính lái, đã gồm VAT và công dán; Service minPrice 6.500.000 VND | minPrice 6.500.000 VND | không đổi | Có |
+| Thông số Auto 75 | VLT 41, TSER 58, IRER 67, IRR 98, UV 99,9, giảm chói 44, VLR 6/6 | nguồn TDS Rev F 08/2025 | cùng nguồn | Có |
+| Vị trí tư vấn | "Auto365 tư vấn cho kính lái" | cùng cách nói | cùng | Có |
+| Ghi chú nội bộ trong bản đăng | Không có (đã quét TODO, CX, SSOT, "nội bộ", mã hồ sơ) | — | — | Có |
+
+Điểm U3 chỉ áp dụng cho phiên bản này. Khi HTML thay đổi, cập nhật mã băm, ngày và bảng này trong cùng lần sửa.
