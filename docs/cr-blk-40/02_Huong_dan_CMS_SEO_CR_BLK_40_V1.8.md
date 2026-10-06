@@ -31,7 +31,6 @@
 - 3M Crystalline CR BLK TDS Revision E, 05/2024 (hàng CR BLK 15 trong popup)
 - 3M Ceramic IR TDS Revision B, 07/2021 (IR50/25/15 trong popup)
 - 3M Việt Nam, phim ô tô (bảo hành lên tới 10 năm): https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/
-- Catalog 3M Ceramic NR 03/2026 (NR trong popup): CHƯA có URL công khai, cần upload bản gốc.
 
 ## 4. Bản thay thế cho trang live (dán vào CMS)
 
@@ -47,4 +46,4 @@
 
 - Hồ sơ/chính sách bảo hành riêng CR BLK 40 tại Việt Nam (trang đang dùng câu điều kiện: 3M Việt Nam công bố lên tới 10 năm, thời hạn cụ thể ghi trên hồ sơ bàn giao).
 - Danh sách chi nhánh có dịch vụ CR BLK 40. Ưu đãi áp dụng toàn hệ thống đã được xác nhận.
-- URL công khai catalog Ceramic NR; Search Console (URL Inspection, canonical Google chọn); mobile thiết bị thật; PageSpeed; lead thử vào CRM.
+- Biên bản đo gốc của case Sportage; Search Console (URL Inspection, canonical Google chọn); mobile thiết bị thật; PageSpeed; lead thử vào CRM.
