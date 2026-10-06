@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `f19d0ccbee9ddfe27fe840e0d2e5f4e79f6d352d30ba51beadfca86fd08ad86b` (commit `d0facaa8`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `75399d0435134fa08f57dd48f63a88afa8a2c9e8ae24ad184a32b5e42cc24f5a` (commit `87971fbb`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
@@ -159,10 +159,11 @@ Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại t�
 |---|---|---|
 | Ẩn thẻ catalogue khi lọc | `card.hidden = !vis` (vẫn giữ class `is-hidden` cho tương thích) + `<style id="xl-catalog-hidden">` với `#xl-product-grid > .p-card[hidden]{display:none!important}` | Không đổi tên thuộc tính `hidden`; nếu prefix selector thì giữ cùng scope cho rule trên |
 | UTM khi URL đã làm sạch | `campaignValue(key)`: lấy query hiện tại, nếu rỗng lấy `window.__a365Campaign[key]`; form dùng `data.set` (không append trường rỗng) cho 5 UTM và gclid/gbraid/wbraid/fbclid | Template phải chụp `window.__a365Campaign` trước khi làm sạch URL. Wrapper FormData nên coi trường rỗng là chưa có |
+| Giá trị lọc | `normFilter()`: chuẩn hoá điện áp/lens (chữ thường, bỏ khoảng trắng thừa, bỏ hậu tố "inch") ở cả checkbox, select mobile và `data-voltage`/`data-lens` | CMS đổi hoa/thường hay ghi nhãn "2.0 inch" vẫn lọc đúng (đã thử) |
 | Mã lead | `serverLeadId()`: nhận `lead_id` dạng chuỗi hoặc số từ API; UUID client chỉ dùng khi API không trả mã | Chốt contract API: `success` + `lead_id` |
 | Conversion | Trang đẩy `lead_form_submit` sau khi API xác nhận; template có `generate_lead` | Chọn **một** conversion chính trong GTM/Ads, event còn lại chỉ hỗ trợ |
 | Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-05; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
-| Bảo hành | Thẻ "Chính hãng, bảo hành điện tử" + link https://auto365.vn/chinh-sach-bao-hanh | — |
+| Bảo hành | Thanh trên: "Bảo hành theo chính sách từng mẫu · hỗ trợ kích hoạt bảo hành điện tử" (mobile chỉ vế đầu); FAQ: 13/15 PDP ghi 24 tháng, F10 2.0 2024 và F10 New đời trước chưa ghi; link chính sách | Không đưa lại "Bảo hành điện tử 24 tháng" chung cho cả trang |
 | Địa điểm | Bản preview chỉ có `#diem-lap` | Template v2 đang thêm `#he-thong` → gộp còn một khối |
 | Kiểm nội bộ | `#xl-internal-check` | Xoá khỏi source production (BLOCK_06) |
 
