@@ -1,9 +1,9 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `12f98dff06b8db09773a704a9883aae12478d0ffb7e27955eff1160de5c59a9d` (commit `deb69b9a`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `246b4fe23ea37bb448ba72a1ab852d0a0ea4e66c701419342eaabeb3c3220fce` (commit `656244ec`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
-- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày hiệu lực giá niêm yết: 06/10/2026 (người phụ trách xác nhận); ngày đối chiếu thông số: 05/10/2026.
+- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026"; schema `dateModified` 2026-10-06). Ngày hiệu lực giá niêm yết: 06/10/2026 (người phụ trách xác nhận); ngày đối chiếu thông số: 06/10/2026.
 
 ## 1. URL và thẻ đầu trang
 
@@ -163,7 +163,7 @@ Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại t�
 | Giá trị lọc | `normFilter()`: chuẩn hoá điện áp/lens (chữ thường, bỏ khoảng trắng thừa, bỏ hậu tố "inch") ở cả checkbox, select mobile và `data-voltage`/`data-lens` | CMS đổi hoa/thường hay ghi nhãn "2.0 inch" vẫn lọc đúng (đã thử) |
 | Mã lead | Payload gửi `request_id` (UUID client, trùng header `Idempotency-Key`, giữ nguyên khi gửi lại) — **không** gửi `lead_id` phía client. `lead_id` chỉ lấy từ response (chuỗi hoặc số, `serverLeadId()`). Không có `lead_id` → UI hiện "Mã tham chiếu" 8 ký tự đầu của request_id | Backend: nhận `request_id` để chống trùng; response `{success:true, lead_id}`; CRM lưu cả `request_id` và `lead_id` để đối chiếu |
 | Conversion | Trang đẩy `lead_form_submit` 1 lần sau khi API xác nhận, gồm `lead_id` (server, nếu có), `request_id`, `lead_id_source` (server/none); không có tên/SĐT/ghi chú | Chọn **một** conversion chính (`lead_form_submit` hoặc `generate_lead` của template), dedupe theo `lead_id`/`request_id` |
-| Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-05; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
+| Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-06; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
 | Bảo hành | Thanh trên: "Bảo hành theo chính sách từng mẫu · hỗ trợ kích hoạt bảo hành điện tử" (mobile chỉ vế đầu); FAQ: 13/15 PDP ghi 24 tháng, F10 2.0 2024 và F10 New đời trước chưa ghi; link chính sách | Không đưa lại "Bảo hành điện tử 24 tháng" chung cho cả trang |
 | Địa điểm | Bản preview chỉ có `#diem-lap` | Template v2 đang thêm `#he-thong` → gộp còn một khối |
 | Kiểm nội bộ | `#xl-internal-check` | Xoá khỏi source production (BLOCK_06) |

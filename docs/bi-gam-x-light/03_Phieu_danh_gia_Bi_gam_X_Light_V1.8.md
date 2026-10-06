@@ -7,7 +7,7 @@
 | Môi trường | **Preview/staging** (`preview-365group.pages.dev`, `noindex`). Bản CMS v2 (`v2.auto365.vn`) cần nhận lại mã nguồn này — xem mục "Ghi chú release cho CMS v2" trong [huong-dan-trien-khai.md](huong-dan-trien-khai.md) |
 | Ngày chấm | 06/10/2026 |
 | Loại chấm | Tự chấm, đề xuất cho người duyệt — **không phải phiếu nghiệm thu** |
-| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo (05/10/2026) · Biên soạn: Team Content Auto365 |
+| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo (06/10/2026) · Biên soạn: Team Content Auto365 |
 
 ## 1. Điểm theo tiêu chí
 
