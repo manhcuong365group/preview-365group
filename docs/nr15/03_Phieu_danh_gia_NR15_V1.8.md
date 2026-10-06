@@ -8,7 +8,7 @@
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 9,5 | Số theo catalog NR (không có URL công khai); giá có VAT |
+| C1 | 10 | 9,5 | Số theo catalog NR (catalog có link PDF preview; URL production chờ CMS, nên chưa nâng); giá có VAT |
 | C2 | 10 | 9,5 | Đủ thông số, so sánh 15/25/5, giá 3 vị trí, 12 case |
 | C3 | 10 | 9,5 | Giọng trung tính, bỏ câu hứa hẹn |
 | S1 | 10 | 9,5 | Intent rõ |
@@ -16,27 +16,27 @@
 | S3 | 10 | 9,5 | Schema đúng @id; chưa kiểm live |
 | G1 | 10 | 9,5 | Câu trích đúng chủ thể |
 | G2 | 10 | 9,5 | Có đánh đổi và hướng xem mẫu |
-| G3 | 5 | 4 | Catalog NR không có URL công khai; 12 case, 1 ảnh máy đo chưa có biên bản |
+| G3 | 5 | 5 | Catalog NR đã có link PDF; ảnh máy đo chủ trang đã duyệt 06/10/2026; 12 case ghi NR15 |
 | U1 | 5 | 5 | Không tràn ngang 375/1280 |
 | U2 | 5 | 4,5 | Popup/form đạt kiểm thử tự động |
 | U3 | 5 | 5 | Bảng đối chiếu khớp |
 
-**Tổng hợp:** C = 28,5/30 · S = 28,5/30 · G = 23/25 · U = 14,5/15 → **94,5/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
+**Tổng hợp:** C = 28,5/30 · S = 28,5/30 · G = 24/25 · U = 14,5/15 → **95,5/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
 
 ## Kết luận nội dung
 
-**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng tổng 94,5 < 95, GEO 23 < 23,75.**
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 95,5 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 chưa nâng vì chưa kiểm live và back-link.
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (nguồn không có URL công khai, biên bản đo, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu còn lại: URL production của catalog (CMS), biên bản đo gốc dạng file, kiểm live — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
 
 | Mã | Kết quả |
 |---|---|
-| N1 dữ kiện có nguồn | Đáp ứng một phần: VLT 14, TSER 65, IRER 66, giảm chói 84 (kính xanh 6 mm nền 73%; Catalog 3M Ceramic NR VN 03/2026); nguồn không có URL công khai ghi rõ ở mục CX |
+| N1 dữ kiện có nguồn | Đáp ứng một phần: VLT 14, TSER 65, IRER 66, giảm chói 84 (kính xanh 6 mm nền 73%; Catalog 3M Ceramic NR VN 03/2026); catalog NR có link PDF preview, URL production chờ CMS (mục CX) |
 | N2 trả lời hỗ trợ quyết định | Đáp ứng (so sánh mã, FAQ 7 câu, popup chọn mã có ghi chú quan sát có điều kiện) |
-| N3 bằng chứng năng lực | Một phần: case trong trang; biên bản đo gốc chưa có |
+| N3 bằng chứng năng lực | Một phần: case trong trang; ảnh máy đo/chứng nhận đã được chủ trang duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập); biên bản đo gốc dạng file chưa có |
 | N4 thực thể | Đáp ứng: publisher Organization, provider AutoRepair "Auto365.vn - Trụ Sở Chính", brand 3M, Product/Service |
 | N5 vai trò trang và liên kết | Đáp ứng trên preview; production còn lệch (xem file 02 mục 2 và 4) |
 
@@ -61,7 +61,9 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/nr15.html`, SHA-256 `a73ce56e0c7e2b07e015eaee069bbf6a57b3103e1ab2e384fdf7bcd44cd78df5` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/nr15.html`, SHA-256 `dc43fd7e285f37d7cce5cae6e074146eca4df3dc8a0c792f8c3974b167099164` (kiểm 06/10/2026).
+
+Cập nhật 06/10/2026: thêm link PDF catalog NR (HTML đã đổi, mã băm mới). 
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|

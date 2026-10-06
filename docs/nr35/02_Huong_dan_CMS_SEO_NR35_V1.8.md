@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr35.html` (preview https://preview-365group.pages.dev/ma-phim/nr35)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-35 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính lái dòng Ceramic NR. Câu hỏi chính: NR35 giá kính lái, so IR50.
-- Phiên bản bàn giao: HTML SHA-256 `2ca2d4551ff9531c915aecc3d4fc78d5a589881eb9da0737d2586f943eb7092d` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR35_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `3dc7294986d27b98b17e92f7bf7f905b6ed7abb1109cbe42bbedbb376a74d3a5` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR35_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
@@ -45,10 +45,12 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 - Bảo hành (3M Việt Nam, lên tới 10 năm): https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/
 - Crystalline TDS Rev F 08/2025: https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf ; Ceramic IR TDS Rev B 07/2021: https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf
 
+- 06/10/2026: catalog 3M Ceramic NR (3M Việt Nam, 03/2026) đã có link PDF công khai trên preview (`assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf`, chủ trang đồng ý công bố). Khi lên CMS production phải thay bằng URL production của file PDF và đặt vào `citation.url` của WebPage trong JSON-LD (hiện CỐ Ý không có `url` trong citation vì đường dẫn tương đối không hợp lệ theo schema.org). Ảnh máy đo, giấy chứng nhận, ảnh case trên trang đã được chủ trang duyệt (xác nhận của chủ trang 06/10/2026, không phải kiểm định độc lập của phòng thí nghiệm).
+
 ## 6. Còn chờ dữ liệu (CX)
 
-- Catalog 3M Ceramic NR Việt Nam 03/2026 chưa có URL công khai để dẫn link trực tiếp; chỉ dẫn tên tài liệu + ngày. Khi có URL công khai thì thêm link và chấm lại G3.
-- Bản chụp/biên bản đo gốc (thiết bị, ngày, vị trí kính, kính nguyên bản) cho các ảnh máy đo trên trang.
+- (Đã xử lý 06/10/2026) Catalog 3M Ceramic NR VN 03/2026: đã có link PDF trên preview. Việc còn lại khi lên CMS: thay bằng URL production và điền `citation.url` trong JSON-LD (xem mục 5).
+- Ảnh máy đo/chứng nhận trên trang: chủ trang đã duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập). Biên bản đo gốc (thiết bị, ngày, kính nguyên bản) vẫn chưa có file riêng.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).
 - Search Console (URL Inspection, canonical Google chọn), mobile thiết bị thật, PageSpeed, lead thử vào CRM (form POST /api/leads, chỉ báo thành công khi {"success": true}).

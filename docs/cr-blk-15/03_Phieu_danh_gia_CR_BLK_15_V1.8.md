@@ -16,7 +16,7 @@
 | S3 | 10 | 9 | Schema nối @id; chưa kiểm link live, back-link Subaru/Viloran chưa gắn (việc team) |
 | G1 | 10 | 9,5 | Câu trích riêng đúng chủ thể, phạm vi tư vấn Auto365 |
 | G2 | 10 | 9,5 | Có đánh đổi 15 vs 35, hướng dẫn xem mẫu khi thiếu sáng |
-| G3 | 5 | 4,5 | TDS Rev E có link; 2 ảnh máy đo chưa có biên bản gốc; back-link từ case Subaru/Viloran chưa gắn (việc team) |
+| G3 | 5 | 4,5 | TDS Rev E có link; ảnh máy đo đã được chủ trang duyệt 06/10/2026 (xác nhận của chủ trang; chưa có biên bản gốc dạng file); back-link từ case Subaru/Viloran chưa gắn (việc team) |
 | U1 | 5 | 5 | Preview 375/1280px không tràn ngang (puppeteer); thiết bị thật tính ở L5 |
 | U2 | 5 | 4,5 | Popup + form chạy đúng: Esc trả focus, khóa Tab, nhãn quan tâm = gói ẩn sau gửi thử |
 | U3 | 5 | 5 | Bảng đối chiếu cuối phiếu khớp, quét ghi chú nội bộ sạch |

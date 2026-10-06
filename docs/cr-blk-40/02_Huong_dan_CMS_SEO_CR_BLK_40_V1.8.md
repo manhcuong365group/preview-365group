@@ -46,4 +46,4 @@
 
 - Hồ sơ/chính sách bảo hành riêng CR BLK 40 tại Việt Nam (trang đang dùng câu điều kiện: 3M Việt Nam công bố lên tới 10 năm, thời hạn cụ thể ghi trên hồ sơ bàn giao).
 - Danh sách chi nhánh có dịch vụ CR BLK 40. Ưu đãi áp dụng toàn hệ thống đã được xác nhận.
-- Biên bản đo gốc của case Sportage; Search Console (URL Inspection, canonical Google chọn); mobile thiết bị thật; PageSpeed; lead thử vào CRM.
+- Ảnh máy đo/case trên trang đã được chủ trang duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập; điểm không đổi). Còn chờ: biên bản đo gốc dạng file của case Sportage; Search Console (URL Inspection, canonical Google chọn); mobile thiết bị thật; PageSpeed; lead thử vào CRM.
