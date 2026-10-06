@@ -379,6 +379,9 @@
     .verdict-block{background:#f8f7f4}
     th{background:#f8f7f4;color:#6d737c;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:11px 12px}
     td{font-size:13px;padding:11px 12px;border-top-color:#ece9e3}
+    tbody th[scope=row]{background:transparent;color:inherit;font-size:13px;text-transform:none;letter-spacing:0;padding:11px 12px 11px 20px;border-top:1px solid #ece9e3}
+    tr.nr-cur th[scope=row]{background:#fff3f4}
+    .spec-table-wrap caption{position:sticky;left:0;max-width:calc(100vw - 72px);box-sizing:border-box}
     .faq{border-top:0;display:grid;gap:10px}
     details{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
     summary{font-size:15px;font-weight:500;padding:15px 48px 15px 17px;color:#30343a}
@@ -598,7 +601,7 @@
       "url": "https://auto365.vn/ir15",
       "name": "3M Ceramic IR15 kính sườn, kính sau: giá, thông số | Auto365",
       "description": "Phim 3M IR15 dòng Ceramic IR cho kính sườn, kính sau: VLT 16%, TSER 63%, giảm chói 78%. Giá từ 1.800.000đ/cặp kính sườn, bảo hành điện tử 3M tại Auto365.",
-      "dateModified": "2026-10-03",
+      "dateModified": "2026-10-06",
       "author": {
         "@type": "Organization",
         "@id": "https://auto365.vn/#team-content",
@@ -856,7 +859,7 @@
           "name": "Dán IR15 được bảo hành thế nào?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sau thi công, Auto365 kích hoạt eWarranty 3M và bàn giao thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam áp dụng. Bạn có thể tra cứu lại trên hệ thống eWarranty của 3M."
+            "text": "Sau thi công, Auto365 kích hoạt eWarranty 3M và bàn giao thông tin bảo hành điện tử lên đến 10 năm theo chính sách 3M Việt Nam áp dụng. Bạn có thể tra cứu lại trên hệ thống eWarranty của 3M."
           }
         }
       ]
@@ -972,7 +975,7 @@ body.fm-open{overflow:hidden}
             </div>
             <h1>3M Ceramic IR15: thông số và cách chọn cho kính sườn, kính sau</h1>
             <p class="hero-lead"><strong>3M IR15</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Ceramic IR</strong> (phim gốm ceramic, phi kim theo mô tả 3M), được Auto365 tư vấn cho kính sườn và kính sau; kính lái phối IR50. Trên kính Auto 75, phim có VLT 16%, TSER 63% và giảm chói 78% (3M TDS Rev B, 07/2021). Giá dán tại Auto365 từ 1.800.000đ cho 1 cặp kính sườn, kính sau 2.300.000đ, kèm bảo hành điện tử 3M. Hợp với kính sườn sau, kính lưng cần kín đáo.</p>
-            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-03">03/10/2026</time></p>
+            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật nội dung <time datetime="2026-10-06">06/10/2026</time></p>
             <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
               <div><span class="hero-offer-label">Giá dán IR15 từ</span><div class="hero-price">1.800.000đ</div><div class="hero-price-note">1 cặp kính sườn · kính lưng 2.300.000đ · đã gồm công dán, miễn phí tháo &amp; vệ sinh phim cũ · xác nhận theo dòng xe khi báo giá. Dán trọn xe: gói 3M Ceramic IR từ 7.200.000đ.</div></div>
               <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
@@ -1015,7 +1018,7 @@ body.fm-open{overflow:hidden}
             <li><b>Vị trí kính:</b> kính sườn và kính sau (kính lái phối IR50)</li>
             <li><b>Thông số:</b> VLT 16% · TSER 63% · giảm chói 78% (kính Auto 75, VLT nền 73%)</li>
             <li><b>Giá dán từ:</b> 1.800.000đ cho 1 cặp kính sườn; kính sau 2.300.000đ, đã gồm VAT và công dán</li>
-            <li><b>Bảo hành:</b> eWarranty 3M 10 năm theo chính sách 3M Việt Nam</li>
+            <li><b>Bảo hành:</b> eWarranty 3M lên đến 10 năm theo chính sách 3M Việt Nam</li>
             <li><b>Nguồn số liệu:</b> <a class="inline-link" href="#nguon-tham-khao">3M Ceramic IR Series TDS – Revision B · 07/2021</a></li>
           </ul>
         </div>
@@ -1152,12 +1155,13 @@ body.fm-open{overflow:hidden}
           </div>
           <div class="spec-table-wrap">
             <table>
+              <caption style="caption-side:top;text-align:left;font-size:13px;color:#6b737d;padding:0 0 8px">Thông số tham chiếu 3M Ceramic IR 15 theo từng điều kiện kính, nguồn TDS Ceramic IR Revision B, 07/2021</caption>
               <thead>
-                <tr><th>Điều kiện kính</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th></tr>
+                <tr><th scope="col">Điều kiện kính</th><th scope="col">VLT</th><th scope="col">TSER</th><th scope="col">IRER</th><th scope="col">IRR*</th><th scope="col">UV</th><th scope="col">Giảm chói</th></tr>
               </thead>
               <tbody>
-                <tr><td>Auto 75 · kính nền 73%</td><td>16%</td><td>63%</td><td>67%</td><td>90%</td><td>99,9%</td><td>78%</td></tr>
-                <tr><td>Kính trong 6 mm · nền 89%</td><td>19%</td><td>59%</td><td>61%</td><td>90%</td><td>99,8%</td><td>78%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left">Auto 75 · kính ô tô xanh 6 mm, nền 73%</th><td>16%</td><td>63%</td><td>67%</td><td>90%</td><td>99,9%</td><td>78%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left">Kính trong 6 mm · nền 89%</th><td>19%</td><td>59%</td><td>61%</td><td>90%</td><td>99,8%</td><td>78%</td></tr>
               </tbody>
             </table>
           </div>
@@ -1169,7 +1173,7 @@ body.fm-open{overflow:hidden}
             <div class="explain"><b>IRR 90% ≠ cản 90% tổng nhiệt</b>IRR là tỷ lệ loại bỏ hồng ngoại trong dải hẹp 900–1.000 nm theo cách 3M định nghĩa, không đại diện cho toàn bộ nhiệt mặt trời.</div>
           </div>
 
-          <div class="source-note"><strong>Lưu ý:</strong> Các giá trị theo TDS Ceramic IR Revision B, 07/2021, trình bày theo từng kính nền; IRR đo trên phim kèm liner ở dải 900–1.000 nm. Kết quả trên xe cần kiểm tra theo kính zin.</div>
+          <div class="source-note"><strong>* Về IRR:</strong> Các giá trị theo TDS Ceramic IR Revision B, 07/2021, trình bày theo từng kính nền; IRR đo trên phim kèm liner ở dải 900–1.000 nm. Kết quả trên xe cần kiểm tra theo kính zin.</div>
         </div>
         <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-ceramic-ir-6-img_6a576921753392.19029824.webp" alt="Đối chiếu thông số kính sườn trước và sau khi dán phim 3M Ceramic IR 15" width="800" height="533" loading="lazy" decoding="async"><figcaption>Đối chiếu thông số kính sườn trước và sau khi dán phim 3M Ceramic IR 15.</figcaption></figure>
       </div>
@@ -1302,7 +1306,7 @@ if(caseTrack){
           <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Đo kính zin giúp tư vấn mã và đối chiếu mẫu; VLT sau thi công được kiểm tra lại trên chính xe.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
           <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính phía trước cần nhìn rõ, khoang sau cần kín đáo, nên mỗi vị trí được tư vấn mã riêng.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
           <article class="why"><div class="why-copy"><h3>Có xe thật để xem trước</h3><p>Bạn có thể xem các xe đã dán IR15 tại Auto365 trước khi chọn.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
-          <article class="why"><div class="why-copy"><h3>Bảo hành rõ ràng sau bàn giao</h3><p>Bàn giao đúng mã phim đã chốt và kích hoạt bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-suon-truoc-dung-cr-blk-35-trong-khi-kinh-suon-sau-dung-ir-15-tao-hai-muc-truyen-sang-khac-nhau-tren-cung-chiec-lynk-co-06-img_6a896cf9877bc2.21250232.jpg" alt="Lynk &amp; Co 06 tại Auto365: kính sườn trước CR BLK 35, kính sườn sau IR15" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Bảo hành rõ ràng sau bàn giao</h3><p>Bàn giao đúng mã phim đã chốt và kích hoạt bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-kinh-suon-truoc-dung-cr-blk-35-trong-khi-kinh-suon-sau-dung-ir-15-tao-hai-muc-truyen-sang-khac-nhau-tren-cung-chiec-lynk-co-06-img_6a896cf9877bc2.21250232.jpg" alt="Lynk &amp; Co 06 tại Auto365: kính sườn trước CR BLK 35, kính sườn sau IR15" loading="lazy"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
 
         
@@ -1503,7 +1507,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           </details>
           <details>
             <summary>Dán IR15 được bảo hành thế nào?</summary>
-            <p>Sau thi công, Auto365 kích hoạt eWarranty 3M và bàn giao thông tin bảo hành điện tử 10 năm theo chính sách 3M Việt Nam áp dụng. Bạn có thể tra cứu lại trên hệ thống eWarranty của 3M.</p>
+            <p>Sau thi công, Auto365 kích hoạt eWarranty 3M và bàn giao thông tin bảo hành điện tử lên đến 10 năm theo chính sách 3M Việt Nam áp dụng. Bạn có thể tra cứu lại trên hệ thống eWarranty của 3M.</p>
           </details>
         </div>
 

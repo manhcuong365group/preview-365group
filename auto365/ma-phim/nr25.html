@@ -380,6 +380,9 @@
     .verdict-block{background:#f8f7f4}
     th{background:#f8f7f4;color:#6d737c;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding:11px 12px}
     td{font-size:13px;padding:11px 12px;border-top-color:#ece9e3}
+    tbody th[scope=row]{background:transparent;color:inherit;font-size:13px;text-transform:none;letter-spacing:0;padding:11px 12px 11px 20px;border-top:1px solid #ece9e3}
+    tr.nr-cur th[scope=row]{background:#fff3f4}
+    .spec-table-wrap caption{position:sticky;left:0;max-width:calc(100vw - 72px);box-sizing:border-box}
     .faq{border-top:0;display:grid;gap:10px}
     details{border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden}
     summary{font-size:15px;font-weight:500;padding:15px 48px 15px 17px;color:#30343a}
@@ -599,7 +602,7 @@
       "url": "https://auto365.vn/phim-cach-nhiet-3m-nr-25",
       "name": "3M NR25 kính sườn, kính sau: thông số và giá | Auto365",
       "description": "3M Ceramic NR25 cho kính sườn, kính sau, cửa sổ trời: VLT 29%, TSER 59%, giảm chói 68% (catalog 3M). Giá kính sườn 1.700.000đ, kính sau 1.900.000đ. Kính lái dùng NR35.",
-      "dateModified": "2026-10-03",
+      "dateModified": "2026-10-06",
       "author": {
         "@type": "Organization",
         "@id": "https://auto365.vn/#team-content",
@@ -863,7 +866,7 @@
           "name": "Dán NR25 có được bảo hành không?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam áp dụng."
+            "text": "Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam áp dụng."
           }
         }
       ]
@@ -979,7 +982,7 @@ body.fm-open{overflow:hidden}
             </div>
             <h1>3M Ceramic NR25: thông số và cách chọn cho kính sườn, kính sau và cửa sổ trời</h1>
             <p class="hero-lead"><strong>3M NR25</strong> là phim cách nhiệt ô tô thuộc dòng <strong>3M Ceramic NR</strong> (công nghệ lai Nano Ceramic kết hợp Nano Reflective), dùng cho kính sườn, kính sau và cửa sổ trời; kính lái của dòng này là NR35. Trên kính xanh 6 mm (VLT nền 73%), phim có VLT 29%, TSER 59% và giảm chói 68% (catalog 3M Ceramic NR, 03/2026). Giá dán tại Auto365 từ 1.700.000đ cho 1 cặp kính sườn, kèm bảo hành điện tử 3M.</p>
-            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật <time datetime="2026-10-03">03/10/2026</time></p>
+            <p class="hero-byline">Biên soạn: Team Content Auto365 · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang">Đặng Minh Hoàng</a> · Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center · Cập nhật nội dung <time datetime="2026-10-06">06/10/2026</time></p>
             <div class="hero-offer" aria-label="Giá và tư vấn nhanh">
               <div><span class="hero-offer-label">Giá dán NR25 từ</span><div class="hero-price">1.700.000đ</div><div class="hero-price-note">1 cặp kính sườn · kính lưng 1.900.000đ, cửa sổ trời nhỏ từ 850.000đ · đã gồm công dán, miễn phí tháo &amp; vệ sinh phim cũ · xác nhận theo dòng xe khi báo giá.</div></div>
               <button class="btn btn-primary" type="button" data-open-zalo>Nhận báo giá theo xe</button>
@@ -1022,7 +1025,7 @@ body.fm-open{overflow:hidden}
             <li><b>Vị trí kính:</b> kính sườn, kính sau, cửa sổ trời; không dán kính lái</li>
             <li><b>Thông số:</b> VLT 29% · TSER 59% · giảm chói 68% (kính xanh 6 mm, VLT nền 73%)</li>
             <li><b>Giá dán từ:</b> 1.700.000đ cho 1 cặp kính sườn, đã gồm VAT và công dán</li>
-            <li><b>Bảo hành:</b> eWarranty 3M 10 năm theo chính sách 3M Việt Nam</li>
+            <li><b>Bảo hành:</b> eWarranty 3M lên đến 10 năm theo chính sách 3M Việt Nam</li>
             <li><b>Nguồn số liệu:</b> <a class="inline-link" href="#nguon-tham-khao">Catalog 3M Ceramic NR (Nano Reflective), 3M Việt Nam · 03/2026</a></li>
           </ul>
         </div>
@@ -1134,14 +1137,15 @@ body.fm-open{overflow:hidden}
           </div>
           <div class="spec-table-wrap">
             <table>
+              <caption style="caption-side:top;text-align:left;font-size:13px;color:#6b737d;padding:0 0 8px">Thông số tham chiếu 3M Ceramic NR25 theo từng điều kiện kính, nguồn Catalog 3M Ceramic NR 03/2026</caption>
               <thead>
-                <tr><th>Mã · kính xanh 6 mm, nền 73%</th><th>VLT</th><th>TSER</th><th>IRER</th><th>IRR</th><th>UV</th><th>Giảm chói</th></tr>
+                <tr><th scope="col">Mã · kính xanh 6 mm, nền 73%</th><th scope="col">VLT</th><th scope="col">TSER</th><th scope="col">IRER</th><th scope="col">IRR*</th><th scope="col">UV</th><th scope="col">Giảm chói</th></tr>
               </thead>
               <tbody>
-                <tr><td><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">NR35</a></td><td>43%</td><td>51%</td><td>58%</td><td>79%</td><td>99%</td><td>52%</td></tr>
-                <tr class="nr-cur"><td><b>NR25</b> (đang xem)</td><td>29%</td><td>59%</td><td>63%</td><td>86%</td><td>99%</td><td>68%</td></tr>
-                <tr><td><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-15">NR15</a></td><td>14%</td><td>65%</td><td>66%</td><td>86%</td><td>99%</td><td>84%</td></tr>
-                <tr><td><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-5">NR5</a></td><td>7%</td><td>69%</td><td>68%</td><td>91%</td><td>99%</td><td>93%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left"><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-35">NR35</a></th><td>43%</td><td>51%</td><td>58%</td><td>79%</td><td>99%</td><td>52%</td></tr>
+                <tr class="nr-cur"><th scope="row" style="font-weight:600;text-align:left"><b>NR25</b> (đang xem)</th><td>29%</td><td>59%</td><td>63%</td><td>86%</td><td>99%</td><td>68%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left"><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-15">NR15</a></th><td>14%</td><td>65%</td><td>66%</td><td>86%</td><td>99%</td><td>84%</td></tr>
+                <tr><th scope="row" style="font-weight:600;text-align:left"><a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-3m-nr-5">NR5</a></th><td>7%</td><td>69%</td><td>68%</td><td>91%</td><td>99%</td><td>93%</td></tr>
               </tbody>
             </table>
           </div>
@@ -1153,7 +1157,7 @@ body.fm-open{overflow:hidden}
             <div class="explain"><b>IRR 86% ≠ cản 86% tổng nhiệt</b>Con số này chỉ đo dải hồng ngoại hẹp 900–1.000 nm, trên phim chưa dán lên kính. IRR cao hơn TSER là bình thường, nhưng nó không cho biết tổng nhiệt được chặn.</div>
           </div>
 
-          <div class="source-note"><strong>Về nguồn số liệu:</strong> VLT, TSER, IRER và giảm chói đo trên kính xanh 6 mm có VLT 73%; riêng IRR đo trên phim kèm liner, không có kính. Catalog dòng NR không công bố độ phản quang (VLR) và số liệu trên kính trong, nên bảng không có các cột đó. Kính nền xe bạn khác thì số đo thực tế cũng khác. Xem thêm <a class="inline-link" href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">cách đọc thông số Ceramic NR</a>.</div>
+          <div class="source-note"><strong>* Về IRR và nguồn số liệu:</strong> VLT, TSER, IRER và giảm chói đo trên kính xanh 6 mm có VLT 73%; riêng IRR đo trên phim kèm liner, không có kính. Catalog dòng NR không công bố độ phản quang (VLR) và số liệu trên kính trong, nên bảng không có các cột đó. Kính nền xe bạn khác thì số đo thực tế cũng khác. Xem thêm <a class="inline-link" href="https://auto365.vn/cach-doc-thong-so-3m-ceramic-nr-vlt-tser-irer-irr">cách đọc thông số Ceramic NR</a>.</div>
         </div>
       <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-tai-auto365-tru-so-chinh-3png-img_6a4641406ff748.03721836_auto365vn.png" alt="Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3" width="800" height="533" loading="lazy" decoding="async"><figcaption>Kiểm tra thông số phim 3M Ceramic NR sau khi dán lên VinFast VF3.</figcaption></figure>
 </div>
@@ -1337,7 +1341,7 @@ if(caseTrack){
           <article class="why"><div class="why-copy"><h3>Đo kính trước khi chọn mã</h3><p>Đo kính zin giúp tư vấn mã và đối chiếu mẫu; VLT sau thi công được kiểm tra lại trên chính xe.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-3jpg-img_69afc0b8762306.43126406_auto365vn.jpg" alt="Điểm thi công Auto365" loading="lazy"><a href="#thong-so">Xem dữ liệu →</a></article>
           <article class="why"><div class="why-copy"><h3>Tư vấn theo từng vị trí kính</h3><p>Kính phía trước cần nhìn rõ, khoang sau cần kín đáo, nên mỗi vị trí được tư vấn mã riêng.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-1jpg-img_69afc0c993cf21.12563049_auto365vn.jpg" alt="Tư vấn cấu hình phim cách nhiệt" loading="lazy"><a href="#phu-hop">Xem vị trí kính →</a></article>
           <article class="why"><div class="why-copy"><h3>Có xe thật để xem trước</h3><p>Bạn có thể xem các xe đã dán NR25 tại Auto365 trước khi chọn.</p></div><img width="800" height="533" src="https://auto365.vn/uploads/images/pages/auto365vn-3m-pro-shop-auto365-thu-duc-5jpg-img_69afc0dc792df1.13223043_auto365vn.jpg" alt="Quy trình thi công tại Auto365" loading="lazy"><a href="#xe-thuc-te">Xem xe thực tế →</a></article>
-          <article class="why"><div class="why-copy"><h3>Bảo hành rõ ràng sau bàn giao</h3><p>Bàn giao đúng mã phim đã chốt và kích hoạt bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam.</p></div><img width="800" height="533" src="assets/auto365vn-chung-nhan-bao-hanh-dien-tu-3m-vinfast-vf3-nr35-nr25-nr15.webp" alt="Chứng nhận bảo hành điện tử 3M của một xe VinFast VF3 tại Auto365: kính lái NR35, kính sườn trước NR25, kính sườn sau NR15" loading="lazy" decoding="async"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
+          <article class="why"><div class="why-copy"><h3>Bảo hành rõ ràng sau bàn giao</h3><p>Bàn giao đúng mã phim đã chốt và kích hoạt bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam.</p></div><img width="800" height="533" src="assets/auto365vn-chung-nhan-bao-hanh-dien-tu-3m-vinfast-vf3-nr35-nr25-nr15.webp" alt="Chứng nhận bảo hành điện tử 3M của một xe VinFast VF3 tại Auto365: kính lái NR35, kính sườn trước NR25, kính sườn sau NR15" loading="lazy" decoding="async"><a href="https://ews2.3m.com/ews/pub/vnaf/searchWarranty">Tra cứu eWarranty →</a></article>
         </div>
 
         
@@ -1538,7 +1542,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
           </details>
           <details>
             <summary>Dán NR25 có được bảo hành không?</summary>
-            <p>Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty 10 năm theo chính sách 3M Việt Nam áp dụng.</p>
+            <p>Có. Sau khi thi công, Auto365 kích hoạt và bàn giao thông tin bảo hành điện tử eWarranty lên đến 10 năm theo chính sách 3M Việt Nam áp dụng.</p>
           </details>
         </div>
 
