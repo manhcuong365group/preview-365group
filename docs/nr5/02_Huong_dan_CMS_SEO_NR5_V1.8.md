@@ -2,8 +2,8 @@
 
 - Bản nguồn: `auto365/ma-phim/nr5.html` (preview https://preview-365group.pages.dev/ma-phim/nr5)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-5 (cập nhật URL hiện có, không tạo URL mới)
-- Loại trang: Mã phim kính sườn sau/cửa sổ trời dòng Ceramic NR (không dùng kính lái, kính lưng, sườn trước). Câu hỏi chính: NR5 kín đến đâu, giá, khác NR15.
-- Phiên bản bàn giao: HTML SHA-256 `29a94b9a0a778c43d4a840d877fcba57b40a4b71aa8dcaa3bb29ba502e35f40a` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR5_V1.8.md`
+- Loại trang: Mã phim kính sườn sau/kính lưng/cửa sổ trời dòng Ceramic NR (không dùng kính lái, sườn trước). Quy tắc kính lưng cập nhật 06/10/2026 theo Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026): NR25/NR15/NR5 cùng 1.900.000đ/kính lưng; quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi. Câu hỏi chính: NR5 kín đến đâu, giá, khác NR15.
+- Phiên bản bàn giao: HTML SHA-256 `492fdfc94d5cfc5098689c1c42e6224e332d73eeb5dbc85b1b1c08b10d8ef5c2` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR5_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
@@ -12,9 +12,9 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 **Nội dung trang này đã sửa**
 
-- Nhãn hero "Giá NR5 cho cặp kính sườn sau"; vị trí trong Product.description và additionalProperty: "kính sườn sau, cửa sổ trời".
+- Nhãn hero "Giá NR5 cho cặp kính sườn sau"; vị trí trong Product.description và additionalProperty: "kính sườn sau, kính lưng, cửa sổ trời"; thêm Offer "NR5 - kính lưng" (minPrice 1900000) và câu nhắc kiểm tra tầm nhìn qua gương chiếu hậu trong xe (VLT 7%), camera lùi chỉ hỗ trợ khi lùi xe.
 - FAQ riêng tư viết lại (HTML + JSON-LD khớp); FAQ NR5 vs NR15 nêu "với kính sườn sau, NR5/NR15/NR25 cùng giá tham khảo 1.700.000đ/cặp".
-- Thẻ gói tách "Kính sườn trước: NR25 / NR15" và "Kính sườn sau: NR25 / NR15 / NR5" (NR5 chỉ sườn sau); FAQ gói sửa tương ứng.
+- Thẻ gói tách "Kính sườn trước: NR25 / NR15" và "Kính sườn sau: NR25 / NR15 / NR5" (NR5 dùng cho sườn sau và kính lưng; không dùng sườn trước, kính lái); FAQ gói sửa tương ứng.
 - Quy trình 8 bước: mỗi bước thêm một dòng kết quả đầu ra. Không thêm alias NR05.
 
 **Sửa dùng chung (cả 9 trang mã phim)**: popup ghi chú quan sát theo vị trí + link "So với …" (CR BLK 15/IR15/NR15 ở sườn trước); nhãn giá có "đã gồm VAT"; nguồn thông số theo mã (trường SRC); nhãn ưu tiên "Kín hơn (độ truyền sáng thấp)" kèm dòng giải thích xếp theo VLT; form lead (trả focus về nút mở popup, khóa Tab trong hộp thoại, xóa trạng thái cũ mỗi lần mở, sau gửi thành công nhãn "Bạn đang quan tâm" luôn bằng gói ẩn, tùy chọn nhu cầu theo gói); tên điểm "Auto365.vn - Trụ Sở Chính" (gạch ngang thường); "điểm phần trăm" thay cho "điểm".
@@ -25,12 +25,12 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 |---|---|
 | HTTP, canonical | 200; canonical tự trỏ đúng URL |
 | Robots | `index, follow, max-image-preview:large…`, không noindex. Preview có noindex qua `_headers` (đúng chủ đích); không mang header này sang production. |
-| Nội dung live cũ 1 | Live: canonical đúng, index/follow. Live ghi bảng "Kính sườn 1.700.000đ · Kính sau 1.900.000đ · Cửa sổ trời 850.000đ" cho NR5, trong khi cùng trang nói không nên dùng NR5 cho kính lưng → gỡ dòng kính sau. |
+| Nội dung live cũ 1 | Live: canonical đúng, index/follow. Live ghi bảng "Kính sườn 1.700.000đ · Kính sau 1.900.000đ · Cửa sổ trời 850.000đ" cho NR5. Theo Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026), NR5 dùng cho kính lưng 1.900.000đ → giữ dòng kính sau; không còn mâu thuẫn. |
 | Nội dung live cũ 2 | Live gán NR15 cho kính sườn trước, NR5 cho kính sườn sau: khớp bản mới. |
 
 ## 3. Việc IT/CMS
 
-1. Thay nội dung trang hiện có bằng bản mới; giữ một H1 và title/meta của bản mới (title 60 ký tự: "3M NR5 kính sườn sau, cửa sổ trời: thông số và giá | Auto365").
+1. Thay nội dung trang hiện có bằng bản mới; giữ một H1 và title/meta của bản mới (title: "3M NR5 kính sườn sau, kính lưng, cửa sổ trời: thông số và giá | Auto365").
 2. Ảnh trong `assets/` upload lên CMS, đổi `src` sang URL CMS thật; đường dẫn `assets/…` chỉ dùng cho preview.
 3. JSON-LD: hợp nhất với graph CMS tự sinh, không để hai Product/WebPage mâu thuẫn. Giữ Organization, AutoRepair `#tru-so-chinh`, WebPage (author, reviewedBy, citation, dateModified), Product, Service (offers theo vị trí: giá hiện có [1700000,850000] VND), BreadcrumbList, FAQPage (7 câu, khớp HTML). Không thêm InStock, priceValidUntil, rating.
 4. Form `/api/leads`: kiểm bằng lead thử do team tạo (đánh dấu TEST): hero → NR5; thẻ gói → gói + "Nhiều vị trí"; popup gợi ý mã + vị trí → đúng mã + vị trí. Chỉ coi là thành công khi phản hồi {"success": true}. Lưu ý: /api/leads không validate phone/consent phía server.
@@ -38,8 +38,8 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 ## 4. Việc team (trang/bài khác trên site live — không sửa trong đợt này)
 
-- Gỡ giá kính sau khỏi bảng giá live NR5.
-- Hub Ceramic NR: NR5 chỉ ghi sườn sau/cửa sổ trời.
+- Giữ giá kính sau 1.900.000đ trên bảng giá live NR5 (theo Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)).
+- Hub Ceramic NR: NR5 ghi sườn sau, kính lưng, cửa sổ trời.
 - Bài VF3 NR (live): việc của team, không sửa trong đợt này.
 
 ## 5. Nguồn

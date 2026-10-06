@@ -61,17 +61,17 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/nr5.html`, SHA-256 `29a94b9a0a778c43d4a840d877fcba57b40a4b71aa8dcaa3bb29ba502e35f40a` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/nr5.html`, SHA-256 `492fdfc94d5cfc5098689c1c42e6224e332d73eeb5dbc85b1b1c08b10d8ef5c2` (kiểm 06/10/2026).
 
 Cập nhật 06/10/2026: thêm link PDF catalog NR (HTML đã đổi, mã băm mới). 
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|
-| Title | 3M NR5 kính sườn sau, cửa sổ trời: thông số và giá | Auto365 (60 ký tự) | cùng | cùng | Có |
+| Title | 3M NR5 kính sườn sau, kính lưng, cửa sổ trời: thông số và giá | Auto365 | cùng | cùng | Có |
 | URL / canonical | https://auto365.vn/phim-cach-nhiet-3m-nr-5 | https://auto365.vn/phim-cach-nhiet-3m-nr-5 | cùng | Có |
 | dateModified | 2026-10-06 (không có datePublished) | cùng | cùng | Có |
 | Số FAQ | 7 (HTML = JSON-LD) | 7 | 7 | Có |
-| Giá | Giá NR5 cho cặp kính sườn sau từ 1.700.000đ; cửa sổ trời nhỏ từ 850.000đ; đã gồm VAT. Service tách 2 Offer; minPrice trong schema: [1700000,850000] | cùng | cùng | Có |
+| Giá | Giá NR5 cho cặp kính sườn sau từ 1.700.000đ; kính lưng 1.900.000đ/kính; cửa sổ trời nhỏ từ 850.000đ; đã gồm VAT (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)). Service tách 3 Offer; minPrice trong schema: [1700000,1900000,850000] | cùng | cùng | Có |
 | Thông số | 7%VLT · truyền sáng | 69%TSER · tổng năng lượng | 68%IRER · dải rộng | 93%Giảm chói | VLT 7, TSER 69, IRER 68, giảm chói 93 (kính xanh 6 mm nền 73%; Catalog 3M Ceramic NR VN 03/2026) | cùng | Có |
 | Ghi chú nội bộ trong bản đăng | Không có (quét TODO, CX, SSOT, "nội bộ", "mã hồ sơ", lorem) | — | — | Có |
 
