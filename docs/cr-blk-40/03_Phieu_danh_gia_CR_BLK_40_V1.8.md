@@ -64,7 +64,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `13d2ee0b84747dbe1f263882c1cb19cee08eaa495c7ba53cac32f79ffe39e370` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `dba13f2db46bdd1fcab325e077f861ba6a2ec9114e39151ca8a80ada30ab45b8` (kiểm 06/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|
@@ -78,3 +78,5 @@ Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `13d2ee0b
 | Ghi chú nội bộ trong bản đăng | Không có (đã quét TODO, CX, SSOT, "nội bộ", mã hồ sơ) | — | — | Có |
 
 Điểm U3 chỉ áp dụng cho phiên bản này. Khi HTML thay đổi, cập nhật mã băm, ngày và bảng này trong cùng lần sửa.
+
+> Cập nhật 06/10/2026: nguồn bảo hành là cổng eWarranty 3M (https://ews2.3m.com/ews/pub/vnaf/searchWarranty) — chủ trang xác nhận đây là link chuẩn; đã mở được bằng trình duyệt. Đã bỏ link trang 3M Việt Nam (phim ô tô) khỏi các trang.

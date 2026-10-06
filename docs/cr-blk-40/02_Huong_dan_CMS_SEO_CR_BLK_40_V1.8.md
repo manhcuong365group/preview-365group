@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-40.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-40)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: trang sản phẩm/mã phim. Câu hỏi chính: CR BLK 40 dùng cho kính lái ra bao nhiêu %, giá, có nên chọn không.
-- Phiên bản bàn giao: HTML SHA-256 `13d2ee0b84747dbe1f263882c1cb19cee08eaa495c7ba53cac32f79ffe39e370` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `dba13f2db46bdd1fcab325e077f861ba6a2ec9114e39151ca8a80ada30ab45b8` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
 - datePublished: 2026-10-06 · dateModified: 2026-10-06 (chỉ đổi dateModified khi sửa nội dung thật)
 
 ## 1. Đã kiểm trên production (06/10/2026)
@@ -47,3 +47,5 @@
 - Hồ sơ/chính sách bảo hành riêng CR BLK 40 tại Việt Nam (trang đang dùng câu điều kiện: 3M Việt Nam công bố lên tới 10 năm, thời hạn cụ thể ghi trên hồ sơ bàn giao).
 - Danh sách chi nhánh có dịch vụ CR BLK 40. Ưu đãi áp dụng toàn hệ thống đã được xác nhận.
 - Ảnh máy đo/case trên trang đã được chủ trang duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập; điểm không đổi). Còn chờ: biên bản đo gốc dạng file của case Sportage; Search Console (URL Inspection, canonical Google chọn); mobile thiết bị thật; PageSpeed; lead thử vào CRM.
+
+> Cập nhật 06/10/2026: nguồn bảo hành là cổng eWarranty 3M (https://ews2.3m.com/ews/pub/vnaf/searchWarranty) — chủ trang xác nhận đây là link chuẩn; đã mở được bằng trình duyệt. Đã bỏ link trang 3M Việt Nam (phim ô tô) khỏi các trang.

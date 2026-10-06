@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr15.html` (preview https://preview-365group.pages.dev/ma-phim/nr15)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau/cửa sổ trời dòng Ceramic NR; kính lái dùng NR35. Câu hỏi chính: NR15 giá, kín đến đâu, so NR25/NR5.
-- Phiên bản bàn giao: HTML SHA-256 `dc43fd7e285f37d7cce5cae6e074146eca4df3dc8a0c792f8c3974b167099164` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `1ad61fa8ecf901e77af1537251f66d461f8d749ce3d7c483dedea5e0c701f336` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR15_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
@@ -56,3 +56,5 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).
 - Search Console (URL Inspection, canonical Google chọn), mobile thiết bị thật, PageSpeed, lead thử vào CRM (form POST /api/leads, chỉ báo thành công khi {"success": true}).
+
+> Cập nhật 06/10/2026: nguồn bảo hành là cổng eWarranty 3M (https://ews2.3m.com/ews/pub/vnaf/searchWarranty) — chủ trang xác nhận đây là link chuẩn; đã mở được bằng trình duyệt. Đã bỏ link trang 3M Việt Nam (phim ô tô) khỏi các trang.

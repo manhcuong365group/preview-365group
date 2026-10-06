@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-15.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-15)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/kính lưng. Câu hỏi chính: CR BLK 15 có hợp xe của tôi không, giá, nhìn ra ngoài thế nào.
-- Phiên bản bàn giao: HTML SHA-256 `c6e34cc978c75d230514b7011b51269c58cc91ab2ccf67d38d166dad11efc51d` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `f263060846f27527f6797f74f927c715c7c881ece4efb48c8675a1c4486eaaff` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_15_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
@@ -59,3 +59,5 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).
 - Search Console (URL Inspection, canonical Google chọn), mobile thiết bị thật, PageSpeed, lead thử vào CRM (form POST /api/leads, chỉ báo thành công khi {"success": true}).
+
+> Cập nhật 06/10/2026: nguồn bảo hành là cổng eWarranty 3M (https://ews2.3m.com/ews/pub/vnaf/searchWarranty) — chủ trang xác nhận đây là link chuẩn; đã mở được bằng trình duyệt. Đã bỏ link trang 3M Việt Nam (phim ô tô) khỏi các trang.
