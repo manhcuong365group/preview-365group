@@ -8,7 +8,7 @@
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 9 | Thông số khớp TDS Rev E (không còn trong Rev F; chưa có link công khai); giá có VAT; bảo hành đúng cách nói đã xác nhận. Trừ vì nguồn Rev E không có URL |
+| C1 | 10 | 10 | Thông số khớp TDS Rev E (hàng CR BLK 15; Rev F không còn hàng này) và trang đã link công khai tới Rev E trên multimedia.3m.com (kiểm 06/10/2026); giá có VAT; bảo hành nêu đúng cách đã xác nhận |
 | C2 | 10 | 9,5 | Có thông số, vị trí, so sánh 15/35, giá sườn, FAQ 7 câu, quy trình; thiếu giá lưng/cửa sổ trời (chưa xác nhận) |
 | C3 | 10 | 9,5 | Đã bỏ nhấn mạnh tối; chỉ còn nhắc điều kiện chiều tối/thiếu sáng theo yêu cầu, giọng trung tính |
 | S1 | 10 | 9,5 | Intent rõ, giữ URL hiện có |
@@ -16,18 +16,18 @@
 | S3 | 10 | 9 | Schema nối @id; chưa kiểm link live, back-link Subaru/Viloran chưa gắn (việc team) |
 | G1 | 10 | 9,5 | Câu trích riêng đúng chủ thể, phạm vi tư vấn Auto365 |
 | G2 | 10 | 9,5 | Có đánh đổi 15 vs 35, hướng dẫn xem mẫu khi thiếu sáng |
-| G3 | 5 | 4 | TDS Rev E không có link; 2 ảnh máy đo chưa có biên bản; 8 case nhưng back-link chưa gắn |
+| G3 | 5 | 4,5 | TDS Rev E có link; 2 ảnh máy đo chưa có biên bản gốc; back-link từ case Subaru/Viloran chưa gắn (việc team) |
 | U1 | 5 | 5 | Preview 375/1280px không tràn ngang (puppeteer); thiết bị thật tính ở L5 |
 | U2 | 5 | 4,5 | Popup + form chạy đúng: Esc trả focus, khóa Tab, nhãn quan tâm = gói ẩn sau gửi thử |
 | U3 | 5 | 5 | Bảng đối chiếu cuối phiếu khớp, quét ghi chú nội bộ sạch |
 
-**Tổng hợp:** C = 28/30 · S = 28/30 · G = 23/25 · U = 14,5/15 → **93,5/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
+**Tổng hợp:** C = 29/30 · S = 28/30 · G = 23,5/25 · U = 14,5/15 → **95,0/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
 
 ## Kết luận nội dung
 
-**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng tổng 93,5 < 95, SEO 28 < 28,5, GEO 23 < 23,75.**
+**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng SEO 28 < 28,5 và GEO 23,5 < 23,75 (tổng 95,0 đã chạm ngưỡng).**
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (nguồn không có URL công khai, biên bản đo, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (biên bản đo gốc, back-link từ bài case, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
