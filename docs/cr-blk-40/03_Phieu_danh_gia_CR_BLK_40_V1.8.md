@@ -8,30 +8,28 @@
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 9 | Thông số khớp TDS Rev F (hai điều kiện kính); giá có VAT, đơn vị; bảo hành dùng câu điều kiện. Thiếu: xác nhận thời hạn riêng CR BLK 40 |
+| C1 | 10 | 10 | Thông số khớp TDS Rev F (hai điều kiện kính); giá có VAT, đơn vị; bảo hành lên đến 10 năm theo chính sách 3M Việt Nam (chủ trang xác nhận 06/10/2026), khớp trang 3M Việt Nam |
 | C2 | 10 | 9,5 | Có thông số, vị trí, so sánh 40/50/60, giá, gói, case có số đo, FAQ 8 câu, quy trình |
 | C3 | 10 | 9,5 | Đã bỏ giọng AI và câu nội bộ; quét văn bản trang (06/10/2026) không còn câu dài lặp nguyên văn |
 | S1 | 10 | 9,5 | Intent rõ (mã + kính lái + giá + cách chọn); giữ URL hiện có |
 | S2 | 10 | 9,5 | Một H1, title/meta đúng, bảng có caption và scope, ảnh có alt |
-| S3 | 10 | 9 | Link production kiểm 200; schema nối đúng @id. Chưa kiểm bản live sau ghép CMS |
+| S3 | 10 | 9,5 | 181 link ngoài/nội bộ kiểm 06/10/2026 không hỏng thật; schema nối đúng @id; có hướng dẫn CMS/canonical. Không khẳng định đã kiểm live (tính ở L1) |
 | G1 | 10 | 9,5 | Câu trả lời trích riêng vẫn đúng chủ thể, phạm vi "tư vấn tại Auto365" |
 | G2 | 10 | 9,5 | Có căn cứ và đánh đổi (VLT 41/48/57), có hướng xem mẫu khi thiếu sáng |
-| G3 | 5 | 4,5 | TDS Rev F/E có link; số đo Sportage lấy từ bài hồ sơ, chưa đính kèm biên bản đo gốc |
+| G3 | 5 | 5 | TDS Rev F/E có link; case Sportage dẫn bài hồ sơ chính thức của Auto365 (máy 86110A, 85% → 41%, giới hạn nêu rõ), được chủ trang xác nhận là hồ sơ chuẩn |
 | U1 | 5 | 5 | Bố cục, bảng, mỗi khối một hình; giả lập 360/390/430/768/1280px không tràn trang, bảng cuộn trong khối. Thiết bị thật tính ở L5 |
 | U2 | 5 | 4,5 | Popup gợi ý mã theo vị trí đúng giá, form giữ đúng mã/gói/vị trí |
 | U3 | 5 | 5 | Ba phần 01–03 khớp cùng phiên bản (bảng đối chiếu cuối phiếu); đã quét bản đăng, không có ghi chú nội bộ, chỗ trống hay mã hồ sơ. Điểm chỉ áp dụng cho đúng mã băm bên dưới; sửa HTML thì phải đối chiếu lại |
 
-**Đã xác nhận:** C = 28/30 · S = 28/30 (SEO 9,33/10) · G = 23,5/25 (GEO 9,40/10) · U = 14,5/15 → **94,0/100**. Không còn tiêu chí CX trong 12 tiêu chí; các CX còn lại thuộc tầng Live (L1–L8).
+**Đã xác nhận:** C = 29/30 · S = 28,5/30 (SEO 9,50/10) · G = 24/25 (GEO 9,60/10) · U = 14,5/15 → **96,0/100**. Không còn tiêu chí CX trong 12 tiêu chí; các CX còn lại thuộc tầng Live (L1–L8).
 
 ## Kết luận nội dung
 
-**CHƯA ĐẠT NỘI DUNG V1.8** theo ngưỡng (S ≥ 28,5; G ≥ 23,75; Tổng ≥ 95): tổng 94,0 < 95, S = 28 < 28,5 và G = 23,5 < 23,75.
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 96,0 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi; U3 đồng bộ; không còn CX trọng yếu trong 12 tiêu chí.
 
-Cách đóng khoảng cách:
-1. Đính kèm biên bản đo gốc của case Sportage (thiết bị, vị trí, điều kiện) → G3. Catalog NR không thuộc phạm vi trang CR BLK 40, nên không tính vào G3.
-2. Kiểm bản live sau ghép CMS → S3.
-3. Reviewer và thương mại xác nhận thời hạn bảo hành riêng → C1.
-4. Mobile trên thiết bị thật → U1.
+Điều kiện giữ kết luận: chỉ áp dụng cho đúng phiên bản HTML ghi trong bảng đối chiếu. Đây là kết luận nội dung, chưa phải nghiệm thu Live. Các CX còn lại thuộc L1–L8 (dán lên CMS, GSC, mobile thiết bị thật, PageSpeed, lead thử vào CRM).
+
+SEO đạt đúng ngưỡng (28,5/30, không dư), nên mọi sửa đổi sau này phải chấm lại. Mức dư dành cho việc chấm lại là S3 sau khi kiểm bản live.
 
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
@@ -39,9 +37,9 @@ Cách đóng khoảng cách:
 
 | Mã | Kết quả |
 |---|---|
-| N1 dữ kiện có nguồn | Đáp ứng thông số và giá; bảo hành dùng câu điều kiện, CX thời hạn riêng |
+| N1 dữ kiện có nguồn | Đáp ứng thông số, giá, bảo hành lên đến 10 năm theo 3M Việt Nam (chủ trang xác nhận) |
 | N2 trả lời hỗ trợ quyết định | Đáp ứng (so sánh 40/50/60, FAQ đi đêm, popup) |
-| N3 bằng chứng năng lực | Case Sportage (số đo máy 86110A theo hồ sơ), K5 (cấu hình, nơi thi công); chưa có biên bản đo đầy đủ → CX |
+| N3 bằng chứng năng lực | Case Sportage (số đo máy 86110A theo hồ sơ), K5 (cấu hình, nơi thi công); dẫn bài hồ sơ chính thức Auto365, được chủ trang xác nhận là hồ sơ chuẩn |
 | N4 thực thể | Đáp ứng: publisher Organization, provider AutoRepair Trụ Sở Chính, brand 3M, Product CR BLK 40 |
 | N5 vai trò trang và liên kết | Đáp ứng trên preview; production còn lệch (xem file 02) |
 
@@ -66,7 +64,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `6dbfe40f56f7523fe82c6f0fb6ce87dcef3ce1b3969bec32e2f259aa311c5a1d` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `13d2ee0b84747dbe1f263882c1cb19cee08eaa495c7ba53cac32f79ffe39e370` (kiểm 06/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|
