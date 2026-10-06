@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr15.html` (preview https://preview-365group.pages.dev/ma-phim/nr15)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau/cửa sổ trời dòng Ceramic NR; kính lái dùng NR35. Câu hỏi chính: NR15 giá, kín đến đâu, so NR25/NR5.
-- Phiên bản bàn giao: HTML SHA-256 `2b2e532d45f3425d1ed24f659d1d5be1bbbff37ed51a042811efe68db0d8306b` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `57530e8490fd67b794fbb86a990d0201620460263c62edfd231b52f1cf1e6052` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR15_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi

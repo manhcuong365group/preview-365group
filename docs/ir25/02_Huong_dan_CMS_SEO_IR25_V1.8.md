@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/ir25.html` (preview https://preview-365group.pages.dev/ma-phim/ir25)
 - URL production giữ nguyên: https://auto365.vn/ir25 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau dòng Ceramic IR. Câu hỏi chính: IR25 giá, hợp kính sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `bcaa58617859e015377df71e39aabf565b79258a6ff3905a97aa81c1ff137bdb` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR25_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `cf0f342fd2483dab8e4ea025afa4fa0f4be917969e11ce5ffb825fa62977d602` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR25_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
