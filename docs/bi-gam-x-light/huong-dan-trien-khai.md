@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `3d9642b8693efcc2bb4d953aafbbdca1022735f605f90a99c240449506cb85ad` (commit `b66eb74a`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `ca2361283f570d04bb1eb3aea5be54ba0c0ee46c2ae025164908912058883bd7` (commit `70925a0d`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
@@ -51,8 +51,9 @@
 | 60 | 30/09/2026 | POST thủ công đúng các trường form | `success:true` | **Team tự báo** — CRM chưa xác nhận |
 | 87 | 03/10/2026 | Form thật trên preview, request chuyển nguyên văn sang API production (F10 2.0 New, UTM + gclid test) | `success:true`, form hiện "Mã yêu cầu: 87", `lead_form_submit` 1 lần | **Team tự báo** — CRM/routing/GA4 chưa xác nhận |
 | — | 03/10/2026 | Giả lập API lỗi 500, `success:false`, timeout (không tạo lead) | Form báo chưa gửi được, giữ mẫu đã chọn, không bắn event | **Team tự báo** |
+| 111 | 06/10/2026 | E2E: trang preview + script template production thật (capture, cleanup, wrapper fetch), chạy dưới URL production có UTM; URL được làm sạch sau tương tác rồi mới gửi | `{success:true, lead_id:"111", test:true}`; payload đủ 5 UTM, `request_id` = Idempotency-Key; UI "Mã yêu cầu: 111"; `lead_form_submit` 1 lần với lead_id 111 | **Team tự báo** — API xác nhận; CRM/GA4 chưa xác nhận |
 
-  CRM cần: mở lead 60 và 87 đối chiếu trường, rồi xoá cả hai.
+  CRM cần: mở lead 60, 87 và 111 đối chiếu trường (111 phải có utm_campaign = xlight_qa_e2e và request_id c8891775-6098-45fe-bd50-9f25ec1e6fd5), rồi xoá cả ba.
 
 ## 5. Liên kết nội bộ cần gắn (sau khi URL production trả 200)
 
