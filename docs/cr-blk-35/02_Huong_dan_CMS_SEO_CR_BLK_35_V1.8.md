@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-35.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-35)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn trước/sau/kính lưng. Câu hỏi chính: CR BLK 35 giá, hợp kính sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `59f29e12c256f830ba20295bac472ab4d1429c293f3bfdfadcd1bc50f6a733f7` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_35_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `c7344eb8863df98db0f726221e251cd5e2907bad6d9326cf2e70c4acb55479ae` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_35_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi

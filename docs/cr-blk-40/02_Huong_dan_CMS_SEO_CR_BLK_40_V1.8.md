@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-40.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-40)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: trang sản phẩm/mã phim. Câu hỏi chính: CR BLK 40 dùng cho kính lái ra bao nhiêu %, giá, có nên chọn không.
-- Phiên bản bàn giao: HTML SHA-256 `dba13f2db46bdd1fcab325e077f861ba6a2ec9114e39151ca8a80ada30ab45b8` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `56d09b2dcdb37b5feaf5ecda6c71b15c76ad893cc7fc5005a9c196d05aea8d48` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
 - datePublished: 2026-10-06 · dateModified: 2026-10-06 (chỉ đổi dateModified khi sửa nội dung thật)
 
 ## 1. Đã kiểm trên production (06/10/2026)

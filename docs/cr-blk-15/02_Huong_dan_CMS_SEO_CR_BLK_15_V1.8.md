@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-15.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-15)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/kính lưng. Câu hỏi chính: CR BLK 15 có hợp xe của tôi không, giá, nhìn ra ngoài thế nào.
-- Phiên bản bàn giao: HTML SHA-256 `f263060846f27527f6797f74f927c715c7c881ece4efb48c8675a1c4486eaaff` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `874599a4aed3673b578f72af0bb1913f872a627a7604d7dfeddd74c77e2bd44d` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_15_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi

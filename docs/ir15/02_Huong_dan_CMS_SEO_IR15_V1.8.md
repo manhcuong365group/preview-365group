@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/ir15.html` (preview https://preview-365group.pages.dev/ma-phim/ir15)
 - URL production giữ nguyên: https://auto365.vn/ir15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/kính lưng dòng Ceramic IR. Câu hỏi chính: IR15 giá, kín đến đâu, khác IR25.
-- Phiên bản bàn giao: HTML SHA-256 `61707d7215ed0ea3f8d0de14dab0c2737f8847651797ab66f6a684c233a11c12` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `838c7a1a016a4b344bdda0c62e31a5fab291bdfabd4039660fdb5d61862c9af4` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR15_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi

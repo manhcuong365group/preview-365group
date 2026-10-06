@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr35.html` (preview https://preview-365group.pages.dev/ma-phim/nr35)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-35 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính lái dòng Ceramic NR. Câu hỏi chính: NR35 giá kính lái, so IR50.
-- Phiên bản bàn giao: HTML SHA-256 `554a218378cb4ec533d8c1a0f032a4871b8675ac61476eefee3f1caddd7f25a6` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR35_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `ce1a32132c6a2cfcbb2b9c853e4cf16db40523fa03b6891e07333a45a287b87e` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR35_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
