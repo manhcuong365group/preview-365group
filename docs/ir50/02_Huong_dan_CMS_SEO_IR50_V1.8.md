@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/ir50.html` (preview https://preview-365group.pages.dev/ma-phim/ir50)
 - URL production giữ nguyên: https://auto365.vn/ir50 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính lái dòng Ceramic IR. Câu hỏi chính: IR50 giá, VLT 50% hay 60%, so NR35/CR BLK 40.
-- Phiên bản bàn giao: HTML SHA-256 `ef2f9844deb5c523058f742a385717e79705e156ce3f8e326fc3a271d9ab1243` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR50_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `4e75a9666088bc4211264bdbf06aebead76067b68719c265c226c734b3eef248` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR50_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi

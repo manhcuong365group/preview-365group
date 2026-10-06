@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr5.html` (preview https://preview-365group.pages.dev/ma-phim/nr5)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-5 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/cửa sổ trời dòng Ceramic NR (không dùng kính lái, kính lưng, sườn trước). Câu hỏi chính: NR5 kín đến đâu, giá, khác NR15.
-- Phiên bản bàn giao: HTML SHA-256 `eb1281af414f1abde43a4579c3c1dce45c0d432c2b0635e8e3dd73bfef9012d9` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR5_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `da375459006ad6d13a0bbf851eea49f7d8d75ca7bdb6a4a4619a8bafd5461b14` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR5_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
@@ -53,7 +53,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 ## 6. Còn chờ dữ liệu (CX)
 
 - (Đã xử lý 06/10/2026) Catalog 3M Ceramic NR VN 03/2026: đã có link PDF trên preview. Việc còn lại khi lên CMS: thay bằng URL production và điền `citation.url` trong JSON-LD (xem mục 5).
-- Chưa có biên bản đo riêng NR5.
+- Biên bản đo riêng NR5: trang không tuyên bố số đo riêng nên không dùng để trừ điểm.
 - Ảnh máy đo/chứng nhận trên trang: chủ trang đã duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập). Biên bản đo gốc (thiết bị, ngày, kính nguyên bản) vẫn chưa có file riêng.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).

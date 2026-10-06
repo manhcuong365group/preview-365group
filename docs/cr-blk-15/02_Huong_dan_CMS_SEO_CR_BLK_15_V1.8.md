@@ -55,7 +55,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 - TDS Crystalline Rev E 05/2024 (hàng CR BLK 15) đã có link công khai trên trang (multimedia.3m.com, mã 2672231O); Rev F 08/2025 không còn hàng 15, nên giữ Rev E làm nguồn cho CR BLK 15.
 - Giá kính lưng 4.100.000đ và cửa sổ trời 1.300.000đ trên live: chưa xác nhận, không đưa vào bản mới.
-- Ảnh máy đo trên trang: chủ trang đã duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập); biên bản đo gốc dạng file vẫn chưa có. Back-link Subaru/Viloran vẫn là việc team nên G3/S3 chưa nâng.
+- Ảnh máy đo trên trang: chủ trang đã duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập); biên bản đo gốc dạng file vẫn chưa có. Back-link Subaru/Viloran vẫn là việc team (câu anchor có sẵn ở mục 4); S3 giữ 9,5.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).
 - Search Console (URL Inspection, canonical Google chọn), mobile thiết bị thật, PageSpeed, lead thử vào CRM (form POST /api/leads, chỉ báo thành công khi {"success": true}).

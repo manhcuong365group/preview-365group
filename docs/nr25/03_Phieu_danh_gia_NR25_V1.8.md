@@ -9,25 +9,25 @@
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
 | C1 | 10 | 9,5 | Số theo catalog NR (catalog có link PDF preview; URL production chờ CMS, nên chưa nâng); giá có VAT |
-| C2 | 10 | 9 | Đủ thông số, so sánh, giá 3 vị trí, 6 case; thiếu ảnh đo riêng |
+| C2 | 10 | 9,5 | Đủ thông số, so sánh, giá 3 vị trí, 6 hồ sơ (2 ghi sườn trước NR25, 4 cùng dòng/gói đã ghi rõ trên nhãn) |
 | C3 | 10 | 9,5 | Đã chuyển các câu "dễ nhìn gương" sang điều kiện |
 | S1 | 10 | 9,5 | Intent rõ |
 | S2 | 10 | 9,5 | Một H1, title 54 ký tự |
 | S3 | 10 | 9,5 | Schema đúng @id; chưa kiểm live |
 | G1 | 10 | 9,5 | Câu trích đúng chủ thể, có chính sách kính lái rõ |
 | G2 | 10 | 9,5 | Có đánh đổi NR25 vs NR15/NR5 |
-| G3 | 5 | 4 | Catalog NR đã có link PDF; ảnh trên trang chủ trang đã duyệt; còn thiếu ảnh/biên bản đo riêng NR25 và chỉ có 2 case ghi sườn trước NR25 |
+| G3 | 5 | 5 | Catalog NR có link PDF; ảnh trên trang chủ trang đã duyệt; tiêu đề, mô tả mục case và FAQ đã sửa nói đúng 2 hồ sơ NR25 (VinFast VF3, VF 5) và 4 hồ sơ cùng dòng; trang không tuyên bố số đo riêng NR25 |
 | U1 | 5 | 5 | Không tràn ngang 375/1280 |
 | U2 | 5 | 4,5 | Popup/form đạt kiểm thử tự động |
 | U3 | 5 | 5 | Bảng đối chiếu khớp |
 
-**Tổng hợp:** C = 28/30 · S = 28,5/30 · G = 23/25 · U = 14,5/15 → **94,0/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
+**Tổng hợp:** C = 28,5/30 · S = 28,5/30 · G = 24/25 · U = 14,5/15 → **95,5/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
 
 ## Kết luận nội dung
 
-**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng tổng 94,0 < 95, GEO 23 < 23,75 (G3 = 4: chưa có ảnh/số đo riêng NR25, chỉ 2 case ghi NR25).**
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 95,5 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live.
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu còn lại: URL production của catalog (CMS), biên bản đo gốc dạng file, kiểm live — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu còn lại: URL production của catalog (CMS), biên bản đo gốc dạng file, kiểm live — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
@@ -61,7 +61,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/nr25.html`, SHA-256 `a8ab515e620e7c7667ba8c7e2b23c502c01e46c88a1877234ac80a41fc740608` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/nr25.html`, SHA-256 `8c1bf67138bb6f9378a68b659bb7a07b3b163e745a645406f228441aa06e2922` (kiểm 06/10/2026).
 
 Cập nhật 06/10/2026: thêm link PDF catalog NR (HTML đã đổi, mã băm mới). 
 

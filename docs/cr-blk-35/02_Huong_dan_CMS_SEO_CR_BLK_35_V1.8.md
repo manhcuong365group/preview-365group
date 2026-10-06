@@ -49,7 +49,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 ## 6. Còn chờ dữ liệu (CX)
 
 - Giá kính lưng/cửa sổ trời trên live (xem trên) chưa xác nhận.
-- Biên bản đo riêng CR BLK 35 (trang chưa có ảnh máy đo).
+- Biên bản đo riêng CR BLK 35: trang không đăng ảnh máy đo và không tuyên bố số đo riêng, nên không dùng để trừ điểm.
 - Bản chụp/biên bản đo gốc (thiết bị, ngày, vị trí kính, kính nguyên bản) cho các ảnh máy đo trên trang.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).

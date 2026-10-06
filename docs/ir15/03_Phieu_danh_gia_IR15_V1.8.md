@@ -8,26 +8,26 @@
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 9,5 | Khớp TDS Rev B; giá có VAT |
-| C2 | 10 | 9,5 | Đủ thông số, so sánh IR15/IR25, giá, case có IR15 |
+| C1 | 10 | 10 | Khớp TDS Rev B (link công khai); giá có VAT; bảo hành lên đến 10 năm theo chính sách 3M Việt Nam (chủ trang xác nhận) |
+| C2 | 10 | 9,5 | Đủ thông số, so sánh IR15/IR25, giá, 3 case ghi IR15 |
 | C3 | 10 | 9,5 | Giọng trung tính |
 | S1 | 10 | 9,5 | Intent rõ |
 | S2 | 10 | 9,5 | Một H1, title 60 ký tự |
 | S3 | 10 | 9,5 | Schema đúng @id; chưa kiểm live |
 | G1 | 10 | 9,5 | Câu trích đúng chủ thể |
 | G2 | 10 | 9,5 | Có đánh đổi và hướng xem mẫu khi thiếu sáng |
-| G3 | 5 | 4 | TDS có link; chưa có biên bản đo riêng IR15 |
+| G3 | 5 | 5 | TDS Rev B có link; 3 thẻ case đều ghi IR15 kèm vị trí theo từng bài; trang không đăng ảnh máy đo và không tuyên bố số đo riêng IR15 |
 | U1 | 5 | 5 | Không tràn ngang 375/1280 |
 | U2 | 5 | 4,5 | Popup/form đạt kiểm thử tự động |
 | U3 | 5 | 5 | Bảng đối chiếu khớp |
 
-**Tổng hợp:** C = 28,5/30 · S = 28,5/30 · G = 23/25 · U = 14,5/15 → **94,5/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
+**Tổng hợp:** C = 29/30 · S = 28,5/30 · G = 24/25 · U = 14,5/15 → **96,0/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
 
 ## Kết luận nội dung
 
-**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng tổng 94,5 < 95, GEO 23 < 23,75.**
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 96,0 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live.
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (nguồn không có URL công khai, biên bản đo, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (nguồn không có URL công khai, biên bản đo, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5

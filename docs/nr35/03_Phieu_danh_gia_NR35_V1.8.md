@@ -25,9 +25,9 @@
 
 ## Kết luận nội dung
 
-**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 95,5 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 chưa nâng vì chưa kiểm live và back-link.
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 95,5 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live.
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu còn lại: URL production của catalog (CMS), biên bản đo gốc dạng file, kiểm live — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu còn lại: URL production của catalog (CMS), biên bản đo gốc dạng file, kiểm live — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5

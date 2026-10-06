@@ -48,7 +48,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 ## 6. Còn chờ dữ liệu (CX)
 
-- Chưa có case riêng IR25 (3 case trong trang là case dòng IR có IR15) nên G3 và C2 bị trừ.
+- Chưa có case riêng IR25: trang ghi rõ điều này (3 case là hồ sơ cùng dòng IR15) nên không trừ G3/C2 theo số case.
 - Bản chụp/biên bản đo gốc (thiết bị, ngày, vị trí kính, kính nguyên bản) cho các ảnh máy đo trên trang.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).

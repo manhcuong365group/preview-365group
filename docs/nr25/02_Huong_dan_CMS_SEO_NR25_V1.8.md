@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr25.html` (preview https://preview-365group.pages.dev/ma-phim/nr25)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-25 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau/cửa sổ trời dòng Ceramic NR; kính lái dùng NR35. Câu hỏi chính: NR25 giá, hợp sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `a8ab515e620e7c7667ba8c7e2b23c502c01e46c88a1877234ac80a41fc740608` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR25_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `8c1bf67138bb6f9378a68b659bb7a07b3b163e745a645406f228441aa06e2922` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR25_V1.8.md`
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi
@@ -50,7 +50,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 ## 6. Còn chờ dữ liệu (CX)
 
 - (Đã xử lý 06/10/2026) Catalog 3M Ceramic NR VN 03/2026: đã có link PDF trên preview. Việc còn lại khi lên CMS: thay bằng URL production và điền `citation.url` trong JSON-LD (xem mục 5).
-- Chưa có ảnh/biên bản đo riêng NR25 (6 case trong trang là case có NR25 theo cấu hình).
+- Biên bản đo riêng NR25: trang không tuyên bố số đo riêng; mục case đã ghi đúng 2 hồ sơ NR25 và 4 hồ sơ cùng dòng nên không trừ theo số case.
 - Ảnh máy đo/chứng nhận trên trang: chủ trang đã duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập). Biên bản đo gốc (thiết bị, ngày, kính nguyên bản) vẫn chưa có file riêng.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).

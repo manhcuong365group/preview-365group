@@ -16,18 +16,18 @@
 | S3 | 10 | 9,5 | Schema đúng @id; chưa kiểm live |
 | G1 | 10 | 9,5 | Câu trích đúng chủ thể |
 | G2 | 10 | 9,5 | Có đánh đổi 35 vs 15, hướng xem mẫu |
-| G3 | 5 | 4,5 | TDS Rev F có link, 5 case sườn trước nhưng chưa có ảnh/biên bản đo riêng cho CR BLK 35 |
+| G3 | 5 | 5 | TDS Rev F có link; 8 thẻ case đều ghi CR BLK 35 kèm vị trí theo từng bài và có link bài; trang không đăng ảnh máy đo, không tuyên bố số đo riêng CR BLK 35 |
 | U1 | 5 | 5 | Không tràn ngang 375/1280 (puppeteer) |
 | U2 | 5 | 4,5 | Popup/form đạt kiểm thử tự động |
 | U3 | 5 | 5 | Bảng đối chiếu khớp |
 
-**Tổng hợp:** C = 29/30 · S = 28,5/30 · G = 23,5/25 · U = 14,5/15 → **95,5/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
+**Tổng hợp:** C = 29/30 · S = 28,5/30 · G = 24/25 · U = 14,5/15 → **96,0/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
 
 ## Kết luận nội dung
 
-**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng GEO 23,5 < 23,75.**
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 96,0 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live.
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (nguồn không có URL công khai, biên bản đo, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (nguồn không có URL công khai, biên bản đo, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5

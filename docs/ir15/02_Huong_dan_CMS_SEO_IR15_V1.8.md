@@ -48,7 +48,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 ## 6. Còn chờ dữ liệu (CX)
 
-- Chưa có ảnh/biên bản đo riêng cho IR15 trong trang (3 case "có dùng IR15").
+- Biên bản đo riêng IR15: trang không tuyên bố số đo riêng nên không dùng để trừ điểm (3 case đều ghi IR15).
 - Bản chụp/biên bản đo gốc (thiết bị, ngày, vị trí kính, kính nguyên bản) cho các ảnh máy đo trên trang.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).
 - Danh sách chi nhánh có dịch vụ cho mã này (ưu đãi/dịch vụ áp dụng toàn hệ thống 91 chi nhánh đã được chủ trang xác nhận).

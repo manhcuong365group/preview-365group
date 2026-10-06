@@ -13,21 +13,21 @@
 | C3 | 10 | 9,5 | Đã bỏ nhấn mạnh tối; chỉ còn nhắc điều kiện chiều tối/thiếu sáng theo yêu cầu, giọng trung tính |
 | S1 | 10 | 9,5 | Intent rõ, giữ URL hiện có |
 | S2 | 10 | 9,5 | Một H1, title 51 ký tự, ảnh có alt (ảnh minh họa decorative alt rỗng) |
-| S3 | 10 | 9 | Schema nối @id; chưa kiểm link live, back-link Subaru/Viloran chưa gắn (việc team) |
+| S3 | 10 | 9,5 | Schema nối @id; 61 link http(s) của trang kiểm 06/10/2026 (non-200: ews2.3m.com 503 và trang 3m.com.vn timeout từ máy kiểm, cả hai đã biết); câu anchor back-link Subaru/Viloran đã liệt kê sẵn ở file 02 mục 4 (việc team, chưa gắn); chưa kiểm live |
 | G1 | 10 | 9,5 | Câu trích riêng đúng chủ thể, phạm vi tư vấn Auto365 |
 | G2 | 10 | 9,5 | Có đánh đổi 15 vs 35, hướng dẫn xem mẫu khi thiếu sáng |
-| G3 | 5 | 4,5 | TDS Rev E có link; ảnh máy đo đã được chủ trang duyệt 06/10/2026 (xác nhận của chủ trang; chưa có biên bản gốc dạng file); back-link từ case Subaru/Viloran chưa gắn (việc team) |
+| G3 | 5 | 5 | TDS Rev E có link; ảnh máy đo chủ trang đã duyệt 06/10/2026; 8 thẻ case đều ghi CR BLK 15 kèm vị trí theo từng bài và có link bài; biên bản đo gốc dạng file trang không tuyên bố nên không trừ (back-link tính ở S3) |
 | U1 | 5 | 5 | Preview 375/1280px không tràn ngang (puppeteer); thiết bị thật tính ở L5 |
 | U2 | 5 | 4,5 | Popup + form chạy đúng: Esc trả focus, khóa Tab, nhãn quan tâm = gói ẩn sau gửi thử |
 | U3 | 5 | 5 | Bảng đối chiếu cuối phiếu khớp, quét ghi chú nội bộ sạch |
 
-**Tổng hợp:** C = 29/30 · S = 28/30 · G = 23,5/25 · U = 14,5/15 → **95,0/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
+**Tổng hợp:** C = 29/30 · S = 28,5/30 · G = 24/25 · U = 14,5/15 → **96,0/100**. Ngưỡng: tổng ≥ 95, S ≥ 28,5, G ≥ 23,75.
 
 ## Kết luận nội dung
 
-**CHƯA ĐỦ BẰNG CHỨNG: chưa đạt ngưỡng SEO 28 < 28,5 và GEO 23,5 < 23,75 (tổng 95,0 đã chạm ngưỡng).**
+**ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 96,0 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live. S3 = 9,5 vì link của chính trang đã kiểm và câu anchor back-link đã sẵn; S3 chỉ lên 10 khi back-link thật được gắn và kiểm live.
 
-Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (biên bản đo gốc, back-link từ bài case, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại G3/C1/S3.
+Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (biên bản đo gốc, back-link từ bài case, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
