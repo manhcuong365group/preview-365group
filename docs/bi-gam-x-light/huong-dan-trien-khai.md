@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `75399d0435134fa08f57dd48f63a88afa8a2c9e8ae24ad184a32b5e42cc24f5a` (commit `87971fbb`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `3d9642b8693efcc2bb4d953aafbbdca1022735f605f90a99c240449506cb85ad` (commit `b66eb74a`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 05/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 05/10/2026"; schema `dateModified` 2026-10-05). Ngày giá niêm yết và ngày đối chiếu thông số: 05/10/2026.
@@ -158,10 +158,10 @@ Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại t�
 | Hạng mục | Mã nguồn | Lưu ý khi namespace/build |
 |---|---|---|
 | Ẩn thẻ catalogue khi lọc | `card.hidden = !vis` (vẫn giữ class `is-hidden` cho tương thích) + `<style id="xl-catalog-hidden">` với `#xl-product-grid > .p-card[hidden]{display:none!important}` | Không đổi tên thuộc tính `hidden`; nếu prefix selector thì giữ cùng scope cho rule trên |
-| UTM khi URL đã làm sạch | `campaignValue(key)`: lấy query hiện tại, nếu rỗng lấy `window.__a365Campaign[key]`; form dùng `data.set` (không append trường rỗng) cho 5 UTM và gclid/gbraid/wbraid/fbclid | Template phải chụp `window.__a365Campaign` trước khi làm sạch URL. Wrapper FormData nên coi trường rỗng là chưa có |
+| UTM khi URL đã làm sạch | `<script id="xl-campaign-capture">` ngay sau `<meta charset>`: chụp 9 khoá (5 UTM + gclid/gbraid/wbraid/fbclid) vào `window.__a365Campaign` lúc tải, trước mọi cleanup. Form: `campaignValue()` (query → snapshot), chỉ `set` khi có giá trị; sau đó bù trường rỗng từ snapshot, không ghi đè giá trị thật | Script capture phải đứng **trước** đoạn cleanup URL của template. Wrapper FormData của template: coi trường rỗng là chưa có (`!body.has(k) || !String(body.get(k)||"").trim()`) |
 | Giá trị lọc | `normFilter()`: chuẩn hoá điện áp/lens (chữ thường, bỏ khoảng trắng thừa, bỏ hậu tố "inch") ở cả checkbox, select mobile và `data-voltage`/`data-lens` | CMS đổi hoa/thường hay ghi nhãn "2.0 inch" vẫn lọc đúng (đã thử) |
-| Mã lead | `serverLeadId()`: nhận `lead_id` dạng chuỗi hoặc số từ API; UUID client chỉ dùng khi API không trả mã | Chốt contract API: `success` + `lead_id` |
-| Conversion | Trang đẩy `lead_form_submit` sau khi API xác nhận; template có `generate_lead` | Chọn **một** conversion chính trong GTM/Ads, event còn lại chỉ hỗ trợ |
+| Mã lead | Payload gửi `request_id` (UUID client, trùng header `Idempotency-Key`, giữ nguyên khi gửi lại) — **không** gửi `lead_id` phía client. `lead_id` chỉ lấy từ response (chuỗi hoặc số, `serverLeadId()`). Không có `lead_id` → UI hiện "Mã tham chiếu" 8 ký tự đầu của request_id | Backend: nhận `request_id` để chống trùng; response `{success:true, lead_id}`; CRM lưu cả `request_id` và `lead_id` để đối chiếu |
+| Conversion | Trang đẩy `lead_form_submit` 1 lần sau khi API xác nhận, gồm `lead_id` (server, nếu có), `request_id`, `lead_id_source` (server/none); không có tên/SĐT/ghi chú | Chọn **một** conversion chính (`lead_form_submit` hoặc `generate_lead` của template), dedupe theo `lead_id`/`request_id` |
 | Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-05; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
 | Bảo hành | Thanh trên: "Bảo hành theo chính sách từng mẫu · hỗ trợ kích hoạt bảo hành điện tử" (mobile chỉ vế đầu); FAQ: 13/15 PDP ghi 24 tháng, F10 2.0 2024 và F10 New đời trước chưa ghi; link chính sách | Không đưa lại "Bảo hành điện tử 24 tháng" chung cho cả trang |
 | Địa điểm | Bản preview chỉ có `#diem-lap` | Template v2 đang thêm `#he-thong` → gộp còn một khối |
