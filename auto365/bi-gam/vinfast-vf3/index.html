@@ -754,7 +754,113 @@
 		<link rel="stylesheet" href="https://v2.auto365.vn/assets/frontend/css/newsroom/components/svg-icon.css?v=1790161337">
 		<link rel="stylesheet" href="https://v2.auto365.vn/assets/frontend/css/newsroom/components/lead.css?v=1791014014">
 		<link rel="stylesheet" href="https://v2.auto365.vn/assets/frontend/css/newsroom/components/dock.css?v=1791020520">
-									<style>.vf3lp-support-grid { display: grid; gap: 1px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #e2e8f0; grid-template-columns: 1fr; } @media(min-width: 768px) { .vf3lp-support-grid { grid-template-columns: repeat(3, 1fr); } }</style></head>
+									<style>.vf3lp-support-grid { display: grid; gap: 1px; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; background: #e2e8f0; grid-template-columns: 1fr; } @media(min-width: 768px) { .vf3lp-support-grid { grid-template-columns: repeat(3, 1fr); } }</style>
+<style>
+.vf3lp-knowledge-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+@media(min-width: 900px) {
+  .vf3lp-knowledge-layout {
+    grid-template-columns: 1.15fr 1fr;
+    align-items: stretch;
+  }
+}
+.vf3lp-k-featured {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+}
+.vf3lp-k-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #f1f5f9;
+}
+.vf3lp-k-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.vf3lp-k-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #dc2626;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+.vf3lp-k-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.vf3lp-k-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #dc2626;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.vf3lp-k-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+}
+.vf3lp-k-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  align-items: center;
+}
+.vf3lp-k-item-thumb {
+  flex-shrink: 0;
+  width: 160px;
+  aspect-ratio: 16/10;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f1f5f9;
+}
+.vf3lp-k-item-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.vf3lp-k-item-content {
+  flex: 1;
+}
+@media (max-width: 600px) {
+  .vf3lp-k-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .vf3lp-k-item-thumb {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
+</style>
+
+</head>
 
 	<body>
 					<noscript>
@@ -2424,9 +2530,22 @@ Tư vấn độ đèn cho từng dòng xe</a>
 <h2 id="vf3lp-case" class="vf3lp-h2">Xe VinFast lắp đèn gầm tại Auto365</h2>
 <div class="vf3lp-head-act"><a class="vf3lp-more" href="https://v2.auto365.vn/xe-thuc-te">Xem tất cả case →</a></div>
 </div>
-<div class="vf3lp-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 24px; align-items: stretch;">
+
+  <div class="vf3lp-car-filters" style="display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 24px;">
+    <button type="button" class="vf3lp-car-btn active" data-car="all">Tất cả</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vf3">VinFast VF 3</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vf5">VinFast VF 5</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vf6">VinFast VF 6</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vf7">VinFast VF 7</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vf8">VinFast VF 8</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vf9">VinFast VF 9</button>
+    <button type="button" class="vf3lp-car-btn" data-car="vfe34">VinFast VF e34</button>
+    <button type="button" class="vf3lp-car-btn" data-car="fadil">VinFast Fadil</button>
+    <button type="button" class="vf3lp-car-btn" data-car="limo">VinFast Limo Green</button>
+  </div>
+<div class="vf3lp-grid" id="vf3lp-case-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 24px; align-items: stretch;">
 <!-- Card 1 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="vf7">
 <a href="https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k-1791164660.webp" alt="VinFast VF 7 Plus" loading="lazy" width="320" height="180">
 </a>
@@ -2438,7 +2557,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 2 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="fadil">
 <a href="https://auto365.vn/vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2-6-img_6ab5fe2fee3135.18253047.webp" alt="VinFast Fadil" loading="lazy" width="320" height="180">
 </a>
@@ -2450,7 +2569,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 3 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="limo">
 <a href="https://auto365.vn/vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-limo-green-2025-ang-cap-f10-new-5-img_6a79a38ff042c9.26722921.jpg.webp" alt="VinFast Limo Green" loading="lazy" width="320" height="180">
 </a>
@@ -2462,7 +2581,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 4 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="vf6">
 <a href="https://auto365.vn/vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k-img_6a696dffdd3219.33813887.jpg.webp" alt="VinFast VF 6" loading="lazy" width="320" height="180">
 </a>
@@ -2474,7 +2593,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 5 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="vf6">
 <a href="https://auto365.vn/vinfast-vf-6-nang-cap-bi-gam-gtr-g1-turbo-v2" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf-6-nang-cap-bi-gam-gtr-g1-turbo-v2-img_6a619cbf49d1d0.17538316.jpg.webp" alt="VinFast VF 6" loading="lazy" width="320" height="180">
 </a>
@@ -2486,7 +2605,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 6 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="limo">
 <a href="https://auto365.vn/nang-cap-bi-gam-xlight-f10-2-new-cho-vinfast-limo-green" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-nang-cap-bi-gam-xlight-f10-2-new-cho-vinfast-limo-green-img_6a5b4b9395a0b4.47826233.jpg.webp" alt="VinFast Limo Green" loading="lazy" width="320" height="180">
 </a>
@@ -2498,7 +2617,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 7 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="vf6">
 <a href="https://auto365.vn/vinfast-vf6-do-bi-gam-x-light-f10-turbo-v2" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365_20260706_134641_6a4b4f51ef1fc.jpg.webp" alt="VinFast VF 6" loading="lazy" width="320" height="180">
 </a>
@@ -2510,7 +2629,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </article>
 <!-- Card 8 -->
-<article class="vf3lp-card">
+<article class="vf3lp-card" data-car="fadil">
 <a href="https://auto365.vn/vinfast-fadil-do-den-bi-gam-x-light-f10-pro-va-bong-led-naoevo-s8-pro" tabindex="-1" aria-hidden="true">
 <img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2-6-img_6ab5fe2fee3135.18253047.webp" alt="VinFast Fadil" loading="lazy" width="320" height="180">
 </a>
@@ -2558,8 +2677,60 @@ Tư vấn độ đèn cho từng dòng xe</a>
     
   </div>
   
-<div class="vf3lp-knowledge-grid">
-<article class="vf3lp-knowledge-card"><a href="https://auto365.vn/vinfast-vf3-dan-phim-cach-nhiet-3m-2026" tabindex="-1" aria-hidden="true"><img src="https://auto365.vn/uploads/images/news/auto365vn-vinfast-vf3-dan-phim-cach-nhiet-3m-img_6a575c5c3dedc8.74603835.png" alt="Phim cách nhiệt VF3" loading="lazy" /></a><small>CẨM NANG VINFAST VF3</small><h3><a href="https://auto365.vn/vinfast-vf3-dan-phim-cach-nhiet-3m-2026">Phim cách nhiệt VF3</a></h3><p>Giảm nóng cabin, chống UV.</p><a href="https://auto365.vn/vinfast-vf3-dan-phim-cach-nhiet-3m-2026">Xem cẩm nang &rarr;</a></article><article class="vf3lp-knowledge-card"><a href="https://auto365.vn/vinfast-vf3-dan-ppf" tabindex="-1" aria-hidden="true"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/vinfast-vf3-dan-ppf/vinfast-dan-ppf.jpg" alt="Dán PPF cho VF3" loading="lazy" /></a><small>CẨM NANG VINFAST VF3</small><h3><a href="https://auto365.vn/vinfast-vf3-dan-ppf">Dán PPF cho VF3</a></h3><p>Bảo vệ sơn khỏi trầy xước, đá văng.</p><a href="https://auto365.vn/vinfast-vf3-dan-ppf">Xem cẩm nang &rarr;</a></article><article class="vf3lp-knowledge-card"><a href="https://auto365.vn/mini-car-vinfast-vf3-do-duoc-gi" tabindex="-1" aria-hidden="true"><img src="https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/mini-car-vinfast-vf3-do-duoc-gi/vf3.png" alt="Phụ kiện VF3" loading="lazy" /></a><small>CẨM NANG VINFAST VF3</small><h3><a href="https://auto365.vn/mini-car-vinfast-vf3-do-duoc-gi">Phụ kiện VF3</a></h3><p>VF3 độ được gì: tiện nghi, thẩm mỹ.</p><a href="https://auto365.vn/mini-car-vinfast-vf3-do-duoc-gi">Khám phá ngay &rarr;</a></article></div>
+<div class="vf3lp-knowledge-layout">
+  <!-- Bài nổi bật bên trái -->
+  <article class="vf3lp-k-featured">
+    <div class="vf3lp-k-thumb">
+      <span class="vf3lp-k-badge">Nổi bật</span>
+      <a href="https://auto365.vn/co-nen-nang-cap-bi-gam-cho-o-to-dien" tabindex="-1" aria-hidden="true">
+        <img src="https://auto365.vn/uploads/images/news/auto365vn-co-nen-nang-cap-bi-gam-cho-o-to-dien-img_6a7af57c21db79.91921273.jpg.webp" alt="Có nên nâng cấp bi gầm cho ô tô điện?" loading="lazy">
+      </a>
+    </div>
+    <div class="vf3lp-k-content">
+      <div class="vf3lp-k-meta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>Cẩm nang bi gầm</span>
+      </div>
+      <h3 style="margin: 8px 0 10px; font-size: 1.25rem; font-weight: 700; line-height: 1.4;">
+        <a href="https://auto365.vn/co-nen-nang-cap-bi-gam-cho-o-to-dien" style="color: #0f172a; text-decoration: none;">Có nên nâng cấp bi gầm cho ô tô điện? Khi nào cần lắp?</a>
+      </h3>
+      <p style="margin: 0; color: #64748b; font-size: 14px; line-height: 1.6;">
+        Bi gầm không phải nâng cấp bắt buộc cho mọi ô tô điện. Tìm hiểu khi nào nên lắp, các tiêu chí an toàn điện và quy trình kiểm tra xe VF3 trước khi thi công.
+      </p>
+    </div>
+  </article>
+
+  <!-- 2 bài danh sách bên phải -->
+  <div class="vf3lp-k-list">
+    <article class="vf3lp-k-item">
+      <a href="https://auto365.vn/hoc-den-gam-nho-nen-chon-bi-gam-nao" class="vf3lp-k-item-thumb" tabindex="-1" aria-hidden="true">
+        <img src="https://auto365.vn/uploads/images/news/auto365vn-chon-bi-gam-2-0-inch-nao-img_6a7ed4cea92812.75790267.jpg.webp" alt="Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?" loading="lazy">
+      </a>
+      <div class="vf3lp-k-item-content">
+        <h4 style="margin: 0 0 6px; font-size: 1rem; font-weight: 600; line-height: 1.4;">
+          <a href="https://auto365.vn/hoc-den-gam-nho-nen-chon-bi-gam-nao" style="color: #0f172a; text-decoration: none;">Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?</a>
+        </h4>
+        <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">
+          Xe có kích thước hốc đèn nhỏ gọn như VF3 cần kiểm tra hốc, pát/gá, quạt tản nhiệt và góc chiếu trước khi chọn bi gầm 2.0 inch.
+        </p>
+      </div>
+    </article>
+
+    <article class="vf3lp-k-item">
+      <a href="https://auto365.vn/den-gam-o-to-sang-yeu" class="vf3lp-k-item-thumb" tabindex="-1" aria-hidden="true">
+        <img src="https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-sang-yeu-img_6a8951b97ac488.13455452.jpg.webp" alt="Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra" loading="lazy">
+      </a>
+      <div class="vf3lp-k-item-content">
+        <h4 style="margin: 0 0 6px; font-size: 1rem; font-weight: 600; line-height: 1.4;">
+          <a href="https://auto365.vn/den-gam-o-to-sang-yeu" style="color: #0f172a; text-decoration: none;">Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra</a>
+        </h4>
+        <p style="margin: 0; color: #64748b; font-size: 13px; line-height: 1.5;">
+          Đèn gầm sáng yếu do đâu? Hướng dẫn kiểm tra mặt kính, chóa, nguồn điện, góc chiếu và độ bám đường thực tế.
+        </p>
+      </div>
+    </article>
+  </div>
+</div>
 
 
 
@@ -2735,70 +2906,116 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 </section>
 
-<section data-reveal style="background: #1e293b; padding: 60px 0; border-radius: 16px; margin: 24px auto; max-width: 1200px; width: 92%;">
-  <div class="vf3lp-in" style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
-    <h2 style="color: #fff; font-size: 1.75rem; margin-top: 0; margin-bottom: 40px; font-weight: 600;">7 bước từ tiếp nhận đến bàn giao</h2>
-    <div class="vf3lp-timeline">
-      <div class="vf3lp-timeline-line"></div>
+<section data-reveal class="vf3lp-band" style="padding: 48px 0; background: #ffffff;">
+  <div class="vf3lp-in" style="max-width: 1200px; margin: 0 auto; padding: 0 16px;">
+    <h2 style="color: #0f172a; font-size: 1.75rem; margin-top: 0; margin-bottom: 36px; font-weight: 700;">7 bước từ tiếp nhận đến bàn giao</h2>
+    
+    <div class="vf3lp-process-timeline">
+      <div class="vf3lp-process-line"></div>
       
-      <div class="vf3lp-step">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">1</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Ghi nhận nhu cầu</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Hãng, dòng, năm xe và nhu cầu sử dụng</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">01</div>
+        <div class="vf3lp-process-title">Ghi nhận nhu cầu</div>
       </div>
 
-      <div class="vf3lp-step">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">2</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Khảo sát xe</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Kiểm tra hốc đèn, điện áp và hệ điện</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">02</div>
+        <div class="vf3lp-process-title">Tư vấn chọn mẫu</div>
       </div>
 
-      <div class="vf3lp-step">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">3</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Tư vấn cấu hình</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Chọn lens, nhiệt màu phù hợp</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">03</div>
+        <div class="vf3lp-process-title">Khảo sát xe</div>
       </div>
 
-      <div class="vf3lp-step">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">4</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Xác nhận chi phí</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Sản phẩm, pát, công lắp, VAT</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">04</div>
+        <div class="vf3lp-process-title">Xác nhận chi phí</div>
       </div>
 
-      <div class="vf3lp-step">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">5</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Thi công</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Lắp đặt theo cấu hình đã chốt</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">05</div>
+        <div class="vf3lp-process-title">Lắp đặt &amp; đi dây</div>
       </div>
 
-      <div class="vf3lp-step">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">6</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Căn chỉnh và kiểm tra</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Kiểm tra vùng sáng, chống chói</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">06</div>
+        <div class="vf3lp-process-title">Căn Cos/Pha</div>
       </div>
 
-      <div class="vf3lp-step" style="padding-right: 0;">
-        <div style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid #fca5a5; background: #1e293b; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-bottom: 16px;">7</div>
-        <div>
-          <h4 style="color: #fff; font-size: 0.95rem; margin: 0 0 8px;">Bàn giao & bảo hành</h4>
-          <p style="color: #94a3b8; font-size: 0.85rem; margin: 0; line-height: 1.5;">Phiếu bàn giao, điều kiện bảo hành</p>
-        </div>
+      <div class="vf3lp-process-step">
+        <div class="vf3lp-process-num">07</div>
+        <div class="vf3lp-process-title">Bàn giao &amp; bảo hành</div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+.vf3lp-process-timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: flex-start;
+  padding: 10px 0 20px;
+}
+.vf3lp-process-line {
+  position: absolute;
+  top: 26px;
+  left: 30px;
+  right: 30px;
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 1;
+}
+.vf3lp-process-step {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 7);
+  padding: 0 4px;
+}
+.vf3lp-process-num {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #dc2626;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  box-shadow: 0 0 0 4px #ffffff, 0 2px 6px rgba(220, 38, 38, 0.3);
+}
+.vf3lp-process-title {
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+@media (max-width: 768px) {
+  .vf3lp-process-timeline {
+    overflow-x: auto;
+    padding-bottom: 16px;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .vf3lp-process-line {
+    width: 600px;
+  }
+  .vf3lp-process-step {
+    min-width: 90px;
+    width: 90px;
+    flex-shrink: 0;
+  }
+}
+</style>
+
 <section data-reveal class="vf3lp-band vf3lp-band--soft">
 <div class="vf3lp-in">
   <div class="vf3lp-head">
@@ -3282,6 +3499,55 @@ Tư vấn độ đèn cho từng dòng xe</a>
 				<script defer type="text/javascript" src="https://v2.auto365.vn/assets/frontend/js/social/social.js?v=1.1.12"></script>
 
 		
-			</body>
+			
+<style>
+.vf3lp-car-filters { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0 24px; }
+.vf3lp-car-btn {
+  padding: 7px 16px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.vf3lp-car-btn:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+.vf3lp-car-btn.active {
+  background: #dc2626 !important;
+  color: #ffffff !important;
+  border-color: #dc2626 !important;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(220, 38, 38, 0.25);
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var btns = document.querySelectorAll('.vf3lp-car-btn');
+  var cards = document.querySelectorAll('#vf3lp-case-grid .vf3lp-card');
+  btns.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      btns.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      var car = this.getAttribute('data-car');
+      cards.forEach(function(card) {
+        if (car === 'all' || card.getAttribute('data-car') === car) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+
+</body>
 
 </html>
