@@ -14,7 +14,7 @@
 | Mã | Tiêu chí | Điểm xác nhận | Căn cứ (mã N) | CX / phần còn mở |
 |---|---|---:|---|---|
 | C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn ghi theo trang sản phẩm; bảo hành 13/15 mẫu theo PDP; bỏ câu ngầm hiểu "chi nhánh nào cũng bảo hành"; dateModified 2026-10-08 khớp lần sửa nội dung (N1) | Phần sửa 07–08/10 chưa được người kiểm duyệt xác nhận lại |
-| C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, 11 FAQ (N2) | — |
+| C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, 6 FAQ (N2) | — |
 | C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; tiêu đề thẻ khớp thân thẻ (N3) | — |
 | **C** | | **28,5/30** | | |
 | S1 | Nhu cầu tìm kiếm và vai trò URL | 9,5/10 | Hub thương hiệu X-Light; phân vai hub tổng/PDP/case (N5) | — |
@@ -70,7 +70,7 @@ Không có lỗi chặn nội dung đã xác nhận (§3).
 | BLOCK_05 Sai điểm liên hệ | Không — hotline 0365 365 911 |
 | BLOCK_06 Ghi chú nội bộ trong bản đăng | **Phải xoá khi lên production**: khối `#xl-internal-check` (preview tự ẩn ngoài pages.dev/localhost) |
 | BLOCK_07 Production noindex/canonical/404 | Áp cho live — URL production đang 404 |
-| BLOCK_08 Schema sai so với hiển thị | Không — FAQ 11 câu khớp; credit khớp |
+| BLOCK_08 Schema sai so với hiển thị | Không — FAQ 6 câu khớp; credit khớp |
 
 ## 4. Việc để chuyển sang "ĐẠT NỘI DUNG V1.8"
 

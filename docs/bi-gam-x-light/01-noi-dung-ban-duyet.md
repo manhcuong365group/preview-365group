@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `ab085b5344732fbe1e1fff1f9f2476ebfd8cc6a2842254bee7cebc8c00ae6163` (commit `3fd1a098`) |
+| SHA-256 bản duyệt | `574a9403be7005f24fce4141617f5774cab55a0b5aa85017dfbc5d6b3f9e1161` (commit `d2ab3bf9`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 06/10/2026 (schema `lastReviewed` 2026-10-06). Nội dung sửa 07–08/10 theo V1.8, `dateModified` 2026-10-08; dòng cuối FAQ ghi "duyệt ngày 06/10/2026. Cập nhật nội dung 08/10/2026" |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -21,7 +21,6 @@
 | H1 | Bi gầm X-Light: các dòng hiện có và cách chọn phù hợp |
 | Sapo | Bi gầm X-Light là dòng đèn gầm ô tô mang thương hiệu X-Light, nổi bật với thiết kế cụm bi cầu (projector) độc lập giúp ánh sáng bám mặt đường và mở rộng tầm nhìn. Các mẫu được phân loại theo kích thước lens, cách chọn hoặc đổi nhiệt màu và điện áp hoạt động; giá sản phẩm niêm yết từ 4 đến 6,2 triệu đồng/cặp, chưa VAT. Công lắp và vật tư được báo theo đúng xe sau khi Auto365 kiểm tra hốc gầm và hệ điện. |
 | CTA | Lọc mẫu theo nhu cầu · Nhận tư vấn cấu hình và chi phí cho xe · Xem xe đã thi công → |
-| Dải số liệu | 15 mẫu · 30 hồ sơ xe thật · 4–6,2tr (giá sản phẩm niêm yết, chưa VAT) · 12/24V — số tự tính lại từ thẻ sản phẩm và lưới case khi tải trang |
 | Bộ lọc nhanh | Nhu cầu · Lens · Khoảng giá sản phẩm · Hệ điện xe; hiện số mẫu khớp + "Xem tất cả ứng viên" |
 
 ## Thứ tự nội dung trên trang
@@ -30,15 +29,16 @@
 |---|---|---|---|
 | 1 | `top` | H1 + sapo + bộ lọc nhanh | |
 | 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, công suất Pha/đèn; so sánh tối đa 3 mẫu; bảng thông số |
-| 3 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
-| 4 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
-| 5 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
-| 6 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
-| 7 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
-| 8 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
-| 9 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 6 bài |
-| 10 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 11 câu, khớp từng chữ với FAQPage schema |
-| 11 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
+| 3 | `hinh-anh-thuc-te` | Hình ảnh lắp bi gầm X-Light tại Auto365 | 8 ảnh từ các xe trong bảng case; chú thích ghi xe và mẫu theo hồ sơ |
+| 4 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
+| 5 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
+| 6 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
+| 7 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
+| 8 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
+| 9 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
+| 10 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 6 bài |
+| 11 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 6 câu, khớp từng chữ với FAQPage schema |
+| 12 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
 
 ## Dữ liệu sản phẩm (đang hiển thị)
 
@@ -84,3 +84,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Mưa/sương | Không lọc/khuyên theo nhiệt màu; tư vấn theo vùng phủ, vị trí lắp, căn Cos trên xe (V1.8 §7.1) | 08/10/2026 |
 | Chính hãng / căn chỉnh | Không ghi "phân phối chính thức" và "bảng test chuyên dụng" khi chưa có hồ sơ (V1.8 §8.1, §7.1) | 08/10/2026 |
 | Bỏ khối "Chọn theo nhu cầu" và "Chi phí lắp gồm những gì" | Theo góp ý chủ quản; nhu cầu còn ở bộ lọc nhanh đầu trang, chi phí còn ở sapo/FAQ/form | 08/10/2026 |
+| FAQ còn 6 câu; bỏ dải số liệu hero; thêm khối ảnh thi công | Theo góp ý chủ quản | 08/10/2026 |
