@@ -5,51 +5,59 @@
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 (06/10/2026). Cấu trúc điểm giữ nguyên V1.7; thêm mã hướng dẫn N1–N5 |
 | Bản chấm | Preview `auto365/bi-gam-x-light/index.html` — SHA-256 và commit ghi trong [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
 | Môi trường | **Preview/staging** (`preview-365group.pages.dev`, `noindex`). Bản CMS v2 (`v2.auto365.vn`) cần nhận lại mã nguồn này — xem mục "Ghi chú release cho CMS v2" trong [huong-dan-trien-khai.md](huong-dan-trien-khai.md) |
-| Ngày chấm | 06/10/2026 · chấm lại 08/10/2026 sau khi sửa theo tái kiểm 06/10 |
+| Ngày chấm | 06/10/2026 · chấm lại 08/10/2026 theo toàn văn V1.8 (mục 7.1, 8.1, 9.3, 9.4, 11.3) |
 | Loại chấm | Tự chấm, đề xuất cho người duyệt — **không phải phiếu nghiệm thu** |
-| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo (06/10/2026) · Biên soạn: Team Content Auto365 |
+| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 06/10/2026; phần sửa 07–08/10 chưa được duyệt lại (trang ghi "duyệt ngày 06/10/2026. Cập nhật nội dung 08/10/2026") · Biên soạn: Team Content Auto365 |
 
 ## 1. Điểm theo tiêu chí
 
-| Mã | Tiêu chí | Điểm đề xuất | Căn cứ (mã N liên quan) | Còn mở |
+| Mã | Tiêu chí | Điểm xác nhận | Căn cứ (mã N) | CX / phần còn mở |
 |---|---|---:|---|---|
-| C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn, 35W chưa tách, cơ chế màu thống nhất; câu bảo hành viết lại theo chính sách công khai, link chính sách đặt cạnh câu (N1) | Ngày hiệu lực giá 06/10/2026 do người phụ trách chốt |
+| C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn ghi theo trang sản phẩm; bảo hành 13/15 mẫu theo PDP; bỏ câu ngầm hiểu "chi nhánh nào cũng bảo hành"; dateModified 2026-10-08 khớp lần sửa nội dung (N1) | Phần sửa 07–08/10 chưa được người kiểm duyệt xác nhận lại |
 | C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, 11 FAQ (N2) | — |
-| C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; lý do chọn Auto365 viết theo phạm vi xác nhận (N3) | Trùng khối địa điểm `#he-thong` / `#diem-lap` nằm ở template CMS v2 |
+| C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; tiêu đề thẻ khớp thân thẻ (N3) | — |
 | **C** | | **28,5/30** | | |
 | S1 | Nhu cầu tìm kiếm và vai trò URL | 9,5/10 | Hub thương hiệu X-Light; phân vai hub tổng/PDP/case (N5) | — |
-| S2 | Nội dung SEO trên trang | 9,5/10 | Title/H1/meta; credit thống nhất: meta author + `TechArticle.author` = Team Content Auto365, `CollectionPage.reviewedBy` = Nguyễn Quang Đạo, khớp dòng hiển thị (N4) | Graph schema CMS v2 khác preview — CMS chốt `@id` |
-| S3 | Liên kết và hồ sơ triển khai | 9/10 | Hồ sơ CMS, đoạn link soạn sẵn, ghi chú release v2 (N5) | Link vào chưa triển khai; release pack v2 cần hash bản CMS |
-| **S** | | **28/30** | | Thiếu 0,5 |
+| S2 | Nội dung SEO trên trang | 9,5/10 | Title/H1/meta; credit thống nhất; Brand X-Light nối vào TechArticle bằng `mentions`; 3/3 bảng có `th scope` (N4) | Graph @id bản CMS v2 do CMS chốt |
+| S3 | Liên kết và hồ sơ triển khai | 9/10 | 9 link 301 đã đổi về URL cuối; hồ sơ CMS, đoạn link soạn sẵn, ghi chú release v2 (N5) | **CX:** link vào từ hub tổng/PDP/case và URL production chưa triển khai — tối đa +1 |
+| **S** | | **28/30** | | Khoảng 28–29 |
 | G1 | Câu trả lời rõ, đủ ngữ cảnh | 9,5/10 | Giá/đơn vị/VAT/điện áp/cơ chế màu đứng cạnh nhau | — |
-| G2 | Lập luận phục vụ nhu cầu | 9,5/10 | Lọc điện áp/lens/nhu cầu/ngân sách; W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
-| G3 | Nguồn và truy nguyên | 4,5/5 | PDP, case, hồ sơ người duyệt, chính sách bảo hành (N1, N3) | Phiên bản thi công 2 xe Honda chưa đối chiếu |
-| **G** | | **23,5/25** | | Thiếu 0,25 |
-| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng chọn → so → case → tư vấn; mobile 360–414px không tràn | Máy thật: CX |
-| U2 | Hành động tiếp theo | 4,5/5 | Catalogue ẩn đúng thẻ (đã thử khi gỡ CSS `.is-hidden`): 301→1, 24V→2, lens 2.0→4, không khớp→0, xoá lọc→8; form chuyển đúng mẫu; UTM lấy từ snapshot khi URL đã sạch; `lead_id` số được giữ | CRM/routing/GA4: CX; v2 cần build lại |
-| U3 | Bộ bàn giao nhất quán | 4/5 | 01 + 02 + 03 cùng hash preview; có ghi chú release v2 | Chưa có hash/release ID bản CMS v2 |
-| **U** | | **13/15** | | |
-| **Tổng** | | **93/100** | | Các mục CX ghi riêng ở §2, không cộng vào điểm |
+| G2 | Lập luận phục vụ nhu cầu | 9,5/10 | Nhu cầu "mưa, sương mù" không còn lọc theo 3000K (mục 7.1); W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
+| G3 | Nguồn và truy nguyên | 4,5/5 | PDP, case, chính sách bảo hành; bỏ tuyên bố "bảng test chuyên dụng" và "phân phối chính thức" khi chưa có hồ sơ (N1, N3) | **CX:** phiên bản thi công 2 xe Honda — tối đa +0,5 |
+| **G** | | **23,5/25** | | Khoảng 23,5–24 |
+| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng chọn → so → case → tư vấn; 390/1440px không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
+| U2 | Hành động tiếp theo | 4,5/5 | Catalogue, form, UTM snapshot, request_id; so sánh không tự bật popup | **CX:** API → CRM → GA4 cho lead 60/87/111 — tối đa +0,5 |
+| U3 | Bộ bàn giao nhất quán | 4/5 | 01 + 02 + 03 cùng hash preview | **CX:** hash/release bản CMS v2 — tối đa +1 |
+| **U** | | **13/15** | | Khoảng 13–14,5 |
+| **Tổng** | | **93/100 đã xác nhận** | | **Khoảng còn mở 93–96** |
 
-## 2. Kết luận theo V1.8 (§13.3)
+## 2. Kết luận theo V1.8 (§11.3, §13.3)
 
-**CHƯA ĐẠT NỘI DUNG V1.8** cho bản preview này — tổng 93/100 < 95 và S 28/30 < 28,5. Điểm chỉ tính phần đã xác nhận trên bản đang chấm.
+**CHƯA ĐỦ BẰNG CHỨNG.** Điểm đã xác nhận 93/100 (S 28 = 9,33/10; G 23,5 = 9,40/10). Mức tối đa còn có thể đạt là tổng 96, S 29, G 24, đều vượt ngưỡng 95 / 28,5 / 23,75. Vì vậy theo §11.3 chưa được kết luận "chưa đạt". Các CX trọng yếu có thể đổi kết luận:
 
-Việc cần xác nhận (CX) — ghi riêng, không dùng để nâng điểm:
+- S3: link vào từ hub tổng/PDP/case; URL production trả 200.
+- U3: bản CMS v2 build lại từ mã nguồn này, có hash/release ID.
+- U2: CRM/GA4 xác nhận lead test 60, 87, 111 rồi xoá.
+- G3: xưởng đối chiếu phiên bản thi công 2 xe Honda.
 
-- Bản CMS v2 build lại từ mã nguồn này (catalogue, UTM, credit, bảo hành).
-- API → CRM → GA4: lead test 60, 87, 111 do team tự gửi; CRM/GA4 chưa xác nhận.
-- Link vào từ hub tổng/PDP/case; URL production 200.
+Không có lỗi chặn nội dung đã xác nhận (§3).
 
-### Đã sửa ngày 08/10/2026 (theo tái kiểm 06/10)
+### Đã sửa ngày 08/10/2026
 
-| Mục | Đã sửa |
-|---|---|
-| Nguồn công suất | Bỏ "hãng công bố" ở ghi chú popup so sánh, bảng Hiểu nhanh và tiêu chí Đi tỉnh; ghi "theo trang sản phẩm Auto365, tính mỗi đèn" |
-| FAQ lens / Kelvin, thẻ mưa sương, chú thích bảng | Sửa cả phần hiển thị và FAQ schema; bảng ghi ngày đối chiếu 06/10/2026 |
-| ID trùng | `xlight-real-case-like-bigm-v5` chỉ còn ở thẻ style; script đổi thành `xlight-real-case-like-bigm-v5-js` |
-| So sánh | Chọn mẫu thứ 2 không tự mở popup; người dùng bấm "Xem so sánh". Mẫu thứ 4 vẫn báo trên thanh, và trong popup khi popup đang mở |
-| Hồ sơ triển khai | Bỏ câu "chạy được ngay"; ghi 4 điều kiện nghiệm thu; danh sách trường gửi đổi `lead_id` → `request_id` |
+| Mục | Căn cứ V1.8 | Đã sửa |
+|---|---|---|
+| Nguồn công suất | §6.1 | Bỏ "hãng công bố" ở popup so sánh, bảng Hiểu nhanh và tiêu chí Đi tỉnh; ghi "theo trang sản phẩm Auto365, tính mỗi đèn" |
+| FAQ lens / Kelvin, thẻ mưa sương, chú thích bảng | §7.1 | Sửa cả phần hiển thị và FAQ schema |
+| Nhu cầu "mưa, sương mù" | §7.1 | Không còn lọc theo nhiệt màu 3000K; câu tư vấn chuyển sang vùng phủ, vị trí lắp, căn Cos trên xe |
+| Thẻ "91 chi nhánh" | §8.1 | Bỏ "bảo hành thuận tiện tại địa phương"; giữ theo thẻ bảo hành: gửi tại chi nhánh nơi mua, điểm khác do Auto365 xác nhận |
+| Thẻ căn chỉnh | §7.1 | Bỏ "bảng test chuyên dụng… đúng cao độ" (chưa có biên bản); ghi quy trình căn lại sau lắp, khách kiểm tra trước khi nhận xe |
+| "Chính hãng" / "phân phối chính thức" | §8.1 | Đổi thành "Bảo hành điện tử theo từng mẫu" và "nơi bán có nguồn gốc rõ ràng" cho tới khi có hồ sơ ủy quyền |
+| Link 301 | §9.3 | 9 chỗ `bi-gam-xligh-f10-hyper-2` → `bi-gam-x-light-f10-hyper-20` |
+| Thực thể | §10.1 | TechArticle `mentions` Brand X-Light |
+| Ngày | §9.4 | `dateModified` 2026-10-08; `lastReviewed` giữ 2026-10-06; dòng hiển thị tách ngày duyệt và ngày cập nhật nội dung |
+| ID trùng | — | Script đổi thành `xlight-real-case-like-bigm-v5-js` |
+| So sánh | — | Chọn mẫu thứ 2 không tự bật popup |
+| Hồ sơ triển khai | U3 | Bỏ "chạy được ngay"; 4 điều kiện nghiệm thu; `request_id` thay `lead_id` trong danh sách trường |
 
 ## 3. Lỗi chặn (§12)
 
@@ -71,4 +79,7 @@ Việc cần xác nhận (CX) — ghi riêng, không dùng để nâng điểm:
 3. CMS chốt graph schema/`@id` bản v2, gộp khối địa điểm trùng → S2, C3.
 4. Dán link về hub theo `doan-link-ve-hub.md`; đăng URL production → S3.
 5. Xưởng đối chiếu 2 xe Honda → G3.
-6. CRM xác nhận lead 60/87 rồi xoá → U2.
+6. CRM xác nhận lead 60/87/111 rồi xoá → U2.
+7. Có giấy ủy quyền X-Light thì mới khôi phục chữ "chính hãng/phân phối chính thức"; có biên bản căn chỉnh thì mới ghi phương pháp → G3.
+8. Người kiểm duyệt xác nhận phần sửa 07–08/10 thì cập nhật `lastReviewed` → C1.
+9. CMS điền `datePublished` = ngày đăng production đầu tiên.

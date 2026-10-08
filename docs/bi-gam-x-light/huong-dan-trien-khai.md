@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `5daf74fa930464eda1509549b063c792bf65b4d006ba8d3c4bbc18a0d522f806` (commit `d4e5df16`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `8843de1595c322796e7680fc78d6a7c3f31e38d3ce62e726896908abf6746117` (commit `32b4ee60`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026"; schema `dateModified` 2026-10-06). Ngày hiệu lực giá niêm yết: 06/10/2026 (người phụ trách xác nhận); ngày đối chiếu thông số: 06/10/2026.
@@ -169,3 +169,10 @@ Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại t�
 | Kiểm nội bộ | `#xl-internal-check` | Xoá khỏi source production (BLOCK_06) |
 
 QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2; lens 2.0 → 4; chuỗi không khớp → 0; xoá lọc → 8; mở URL có UTM, chờ URL được làm sạch rồi gửi form → payload còn đủ UTM/click ID.
+
+## Bổ sung 08/10/2026 (V1.8)
+
+- `datePublished`: chưa có trong schema vì URL production chưa đăng. CMS điền ngày đăng production đầu tiên vào TechArticle và CollectionPage, không sửa về sau (§9.4).
+- `dateModified` 2026-10-08, `lastReviewed` 2026-10-06. Chỉ đổi `lastReviewed` khi người kiểm duyệt xác nhận lại.
+- 87/93 ảnh chưa có `width`/`height`. Template CMS nên thêm kích thước để tránh nhảy bố cục.
+- Link sản phẩm F10 Hyper 2.0 dùng URL cuối `https://auto365.vn/bi-gam-x-light-f10-hyper-20` (URL cũ `bi-gam-xligh-f10-hyper-2` chuyển hướng 301).
