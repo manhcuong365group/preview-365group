@@ -1,0 +1,85 @@
+# Bàn giao triển khai 10 trang mã phim (V1.8) — việc cần người xác nhận
+
+Ngày lập: 08/10/2026. Phạm vi: cr-blk-15, cr-blk-35, cr-blk-40, ir50, ir25, ir15, nr35, nr25, nr15, nr5.
+Các mục dưới đây cần quyết định hoặc thao tác của người có thẩm quyền; phần Claude đã chuẩn bị sẵn nội dung để chỉ cần xác nhận/làm theo. Ô "Xác nhận" để trống đến khi người phụ trách điền.
+
+## 1. Xác nhận thương mại (Kinh doanh) — một văn bản cho cả 10 trang
+
+Các giá trị đang hiển thị trên preview, đều ghi "đã gồm VAT". Kinh doanh xác nhận đúng/sai từng dòng, mốc hiệu lực và phạm vi.
+
+| Hạng mục | Giá hiển thị | Xác nhận (Đúng/Sửa thành) |
+|---|---|---|
+| CR BLK 60 / 50 kính lái | 5.700.000đ / kính | |
+| CR BLK 40 kính lái | 6.500.000đ / kính | |
+| IR50 kính lái | 3.300.000đ / kính | |
+| NR35 kính lái | 2.600.000đ / kính | |
+| Kính sườn (1 cặp) CR BLK 35/15 | 2.600.000đ | |
+| Kính sườn (1 cặp) IR25/IR15 | 1.800.000đ | |
+| Kính sườn (1 cặp) NR25/NR15/NR5 | 1.700.000đ | |
+| Kính lưng CR BLK 35/15 | 4.100.000đ | |
+| Kính lưng IR25/IR15 | 2.300.000đ | |
+| Kính lưng NR25/NR15/NR5 | 1.900.000đ | |
+| Cửa sổ trời nhỏ NR | từ 850.000đ, tùy xe; panorama báo giá theo xe | |
+| Cửa sổ trời CR BLK 15 / IR15 | báo giá theo xe | |
+| Gói CR BLK Pro / CR BLK | 12,9/15,5/18,3 tr · 12,2/14,8/17,6 tr (Minicar/Sedan/SUV) | |
+| Gói Hybrid Pro / Hybrid | 9,8/11,6/13,3 tr · 9,0/10,8/12,5 tr | |
+| Gói Ceramic Hybrid / Ceramic IR | 5,9/7,9/9,5 tr · 7,2/9,0/10,5 tr | |
+
+Cần trả lời thêm:
+1. Giá đã gồm VAT và công dán, tháo + vệ sinh phim cũ miễn phí: áp dụng mọi điểm hay theo điều kiện? ______
+2. Quyền lợi (rửa xe/hút bụi, vệ sinh kính, giảm giá lần sau): điểm nào áp dụng? ______
+3. Mốc hiệu lực bảng giá (đang ghi "từ 06/2026"): ______
+4. Gói Ceramic Hybrid ghi "sườn sau & cửa sổ trời": mái kính nhỏ có nằm trong giá gói không; panorama tính riêng? ______
+5. Điểm nào là 3M Pro Shop / Training Center được chứng nhận (đối chiếu 4 giấy chứng nhận trên trang)? ______
+Người xác nhận / ngày: ______
+
+Sau khi có xác nhận: nếu khác giá hiển thị, báo Claude để sửa đồng loạt (HTML, FAQ, JSON-LD, bộ gợi ý).
+
+## 2. Chốt nguồn số liệu NR và CR BLK 15 (Kỹ thuật/Master Data)
+
+- NR: trang đang dùng Catalog 3M Ceramic NR Việt Nam 03/2026 (bảng 4 mã, kính xanh 6 mm, nền 73%). Master Data nội bộ ghi TDS NR 01/2026 với bộ số khác (ví dụ NR15 VLT 12%). Hai bộ không được trộn trong cùng trang.
+  - Đề xuất: giữ catalog VN 03/2026 cho các trang Việt Nam (đúng thị trường, đã có PDF công khai), và thêm catalog này vào registry kèm ngày/người xác nhận. Nếu chọn TDS 01/2026 thì báo Claude để đổi toàn bộ số NR ở 4 trang + bộ gợi ý.
+  - Quyết định: ______ Người/ngày: ______
+- CR BLK 15: trang đang dẫn TDS Rev E 05/2024 (theo quyết định chủ trang). Registry v9.0 xếp Rev E là lưu trữ và dùng brochure CR BLK Việt Nam 2025 (số 14/64/81 khớp cả hai). Quyết định giữ Rev E hay đổi nhãn sang brochure: ______
+
+## 3. Upload catalog PDF lên production (IT/CMS)
+
+1. Upload `auto365/ma-phim/assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf` (6,2 MB) và các ảnh trong `assets/` lên kho tài sản của CMS; ghi lại URL thật.
+2. Thay mọi `href="assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf"` và `src="assets/…"` trong 10 trang bằng URL thật. Lệnh gợi ý (chạy sau khi có URL, ví dụ BASE):
+   `sed -i 's#assets/#BASE/#g' auto365/ma-phim/<slug>.html`
+3. Thêm `"url": "<URL PDF thật>"` vào `WebPage.citation` của catalog NR trong JSON-LD (nr35, nr25, nr15, nr5, ir50).
+4. Kiểm từng URL trả 200 và đúng loại nội dung (PDF/ảnh), không phải trang HTML thay thế.
+
+## 4. Đồng bộ các bài đang chạy trên auto365.vn (Content/SEO)
+
+Quy tắc đã chốt: NR25 không dùng kính lái; NR5 được dùng cho kính lưng.
+
+| Trang live | Cần sửa |
+|---|---|
+| https://auto365.vn/phim-cach-nhiet-3m-nr-25 | Bỏ lựa chọn "Kính lái 2.600.000đ" cho NR25; ghi kính lái dùng NR35 |
+| https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid (hub NR) | Bỏ thẻ "Kính lái" của NR25 và giá kính lái ở cột NR25; thẻ NR5 thêm kính lưng |
+| https://auto365.vn/phim-cach-nhiet-3m-nr-15 | Tách dòng "kính lái 2.600.000đ" ra khỏi bảng giá NR15 (ghi rõ đó là NR35) |
+| https://auto365.vn/phim-cach-nhiet-3m-nr-5 | Bộ chọn/mô tả: thêm kính lưng 1.900.000đ; "kính sườn" ghi rõ sườn sau |
+| https://auto365.vn/vinfast-vf3-dan-phim-cach-nhiet-3m-2026 | Bảng IR dùng VLT 58% cho IR50: đổi theo TDS Rev B cùng một nền kính (IR50 = 50% trên Auto 75, 60% trên kính trong) hoặc ghi rõ đó là số đo ca xe |
+| https://auto365.vn/vinfast-vf5-chay-dich-vu-chon-phim-cach-nhiet | NR25/NR15 VLT 24%/12% (TDS NR Rev A 01/2026) khác catalog VN 29%/14%: đối chiếu theo mục 2 |
+| Hub Crystalline | Bỏ câu "cách nhiệt tốt hơn / chống nóng hiệu quả"; bỏ CR BLK 40 khỏi hàng kính sườn trước (thay bản trong docs/cr-blk-40/02…) |
+| K5 (CR BLK 40) | Hotline phim 0365 365 911 → kiểm theo quy định hotline đã chốt |
+
+## 5. Nghiệm thu L1–L8 sau khi ghép CMS (IT/QA)
+
+Ghi Pass/Fail/CX/NA cho từng URL sau khi đăng, kèm ngày và phạm vi:
+- L1 nội dung/ảnh/title/H1/meta khớp bản duyệt · L2 HTTP 200, canonical tự trỏ, meta robots `index, follow`, **không** có `X-Robots-Tag: noindex` (header này chỉ dành cho preview) · L3 URL Inspection (canonical Google chọn) · L4 Rich Results/Schema Validator, JSON-LD không trùng graph CMS · L5 desktop/mobile/tablet thật · L6 PageSpeed lab + field · L7 link, điện thoại, form `/api/leads` bằng lead thử đánh dấu TEST (đúng mã/vị trí/gói) · L8 HTML trả về có đủ văn bản, bảng, a href.
+
+## 6. Theo dõi AI (SEO/Local) — báo cáo riêng, không tính điểm
+
+Ghi riêng 5 tín hiệu: Found, Understood, Cited, Mentioned, Recommended; kèm nền tảng/model, chế độ tìm web, ngày giờ, câu hỏi nguyên văn, toàn văn trả lời, URL được dẫn. Tách phép thử không đưa URL (đo tìm thấy) và có đưa URL (đo hiểu). Mốc: T0 (ngày đăng thật), +7, +14, +28 ngày.
+
+Bộ câu hỏi tự nhiên (không nhắc Auto365):
+1. CR BLK 40 có phù hợp kính lái không, VLT bao nhiêu?
+2. CR BLK 35 hay CR BLK 15 cho kính sườn?
+3. IR50 và NR35 khác nhau gì cho kính lái?
+4. IR25 khác IR15 thế nào, kính lưng giá bao nhiêu?
+5. NR25 có dán kính lái được không?
+6. NR5 dán kính lưng có nhìn được không, đi đêm cần lưu ý gì?
+7. IRR 91% có phải giảm 91% nhiệt không?
+8. Bảo hành phim 3M lên đến 10 năm tra cứu ở đâu?
