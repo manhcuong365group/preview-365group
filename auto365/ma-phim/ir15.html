@@ -998,6 +998,12 @@ body.fm-open{overflow:hidden}
 .container .package .price-disclaimer{margin-bottom:12px}
 @media(min-width:901px){.container .package-grid.nr-pk3{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .container figure figcaption{text-align:center}
+.container .package-grid.has-photo{grid-template-columns:1fr 1fr;align-items:stretch}
+.container .package-photo{margin:0;border-radius:8px;overflow:hidden;border:1px solid var(--line,#e6e6e9);min-height:300px}
+.container .package-photo img{width:100%;height:100%;object-fit:cover;display:block}
+@media(min-width:901px){.container .package-grid.nr-pk3.has-photo{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.container .package-photo{display:none}.container .package-grid.has-photo{grid-template-columns:1fr}}
+
 .container .cri-sub{margin-top:26px}
 @media(max-width:700px){.container .answer-bullets{display:grid!important;grid-template-columns:1fr!important;overflow:visible!important;scroll-snap-type:none!important}.container .answer-bullets li{flex:none!important;width:auto!important;min-width:0!important}}
 .container .answer-bullets li{align-items:center}
@@ -1248,7 +1254,7 @@ body.fm-open{overflow:hidden}
       <div class="container">
         <h2 class="section-title">IR15 nằm trong gói nào của Auto365?</h2>
 
-        <div class="package-grid">
+        <div class="package-grid has-photo">
           <article class="package">
             <div class="label">Gói trọn xe<span class="package-badge">Đồng bộ Ceramic IR</span></div>
             <h3>3M Ceramic IR</h3>
@@ -1262,6 +1268,7 @@ body.fm-open{overflow:hidden}
             <p class="price-disclaimer">Giá tham khảo, cần xác nhận theo cấu hình xe và chương trình hiện hành. Cửa sổ trời tính riêng, không nằm trong giá gói.</p>
             <a class="package-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-ir">Xem chi tiết gói Ceramic IR →</a>
           </article>
+          <figure class="package-photo"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-ceramic-ir-2-img_6a576982bec214.22375088.webp" alt="VinFast VF 6 hoàn thiện dán phim 3M Ceramic IR tại 3M Pro Shop &amp; 3M Training Center" loading="lazy" decoding="async"></figure>
         </div>
         <p class="section-desc section-link" style="margin-top:14px">Muốn kính lái ở dòng khác nhưng giữ sườn/lưng ceramic? Xem <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid">gói 3M Ceramic Hybrid</a> hoặc <a class="inline-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid">gói 3M Crystalline Hybrid</a>.</p>
       </div>
