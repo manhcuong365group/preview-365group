@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `105185769d4f45820127c9424d27a17004d0c1ed2d00b2c9687ae168804e75f5` (commit `e03f5c8c`) |
+| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `3675fc4ff04f8912fffaba6b9c7b3042dd3ecea086f2990cf5d9b8609dc2ef2e` (commit `8481e761`) |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
 | Ngày duyệt | 08/10/2026 (Asia/Saigon) |
@@ -16,7 +16,7 @@ Kết quả: **Đã duyệt lại toàn bộ bản trang ngày 08/10/2026.** Tra
 
 | Phần đã duyệt | Nội dung |
 |---|---|
-| Thông số | Lens, điện áp đèn, Cos/Pha W/đèn ghi theo trang sản phẩm; 35W chưa tách Cos/Pha ghi rõ |
+| Thông số | Lens, điện áp đèn, Cos/Pha W/đèn ghi theo trang sản phẩm; F10 2.0 inch và F10 New đời trước ghi 35W / 40W theo trang sản phẩm (đối chiếu 08/10/2026) |
 | Tư vấn chọn mẫu | FAQ "Nên chọn mẫu bi gầm X-Light nào theo nhu cầu?" (đi phố, đi tỉnh, hốc nhỏ, 24V, nhiệt màu) |
 | Mưa/sương | Không chọn theo nhiệt màu; tư vấn theo vùng phủ, vị trí lắp, căn Cos trên xe |
 | Căn chỉnh | Căn lại đường cắt Cos/Pha sau lắp; khách kiểm tra vùng sáng trước khi nhận xe |

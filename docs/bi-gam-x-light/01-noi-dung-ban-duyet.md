@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `105185769d4f45820127c9424d27a17004d0c1ed2d00b2c9687ae168804e75f5` (commit `e03f5c8c`) |
+| SHA-256 bản duyệt | `3675fc4ff04f8912fffaba6b9c7b3042dd3ecea086f2990cf5d9b8609dc2ef2e` (commit `8481e761`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -57,9 +57,9 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | F10 2.0 2024 | 4.200.000đ | 12V | 2.0 | 30 / 50 | Đổi 3 màu trên cùng đèn |
 | F10 Turbo 24V | 6.000.000đ | 24V | 3.0 | ~40 / ~65 | Chọn 1 màu khi mua |
 | F10 Turbo | 6.000.000đ | 12V | 3.0 | ~40 / ~65 | Chọn 1 màu khi mua |
-| F10 2.0 inch | 4.200.000đ | 12V | 2.0 | 35W (nguồn chưa tách Cos/Pha) | Chưa xác nhận |
+| F10 2.0 inch | 4.200.000đ | 12V | 2.0 | 35 / 40 | Chưa xác nhận |
 | F10 2022 có mắt quỷ | 4.000.000đ | 12V | 3.0 | 35 / 40 | Chưa xác nhận |
-| F10 New (đời trước) | 4.000.000đ | 12V | 3.0 | 35W (nguồn chưa tách Cos/Pha) | Cố định 4800K |
+| F10 New (đời trước) | 4.000.000đ | 12V | 3.0 | 35 / 40 | Cố định 4800K |
 
 ## Hồ sơ xe (case)
 
@@ -91,3 +91,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Lọc tản nhiệt | Lấy từ dải thông số trang sản phẩm: 7 chủ động (quạt), 6 thụ động; F10 Hyper 2.0 và F10 2.0 inch không ghi nên không xếp nhóm. Nhóm "Nhân LED", "Tính năng", "Công suất Pha" đã thử rồi bỏ | 08/10/2026 |
 | Bố cục cuối ngày 08/10 | Bỏ khối "Bài viết & nội dung liên quan" (link riêng chuyển lên đầu khối Cẩm nang); khối video + form đặt ngay trên Cẩm nang; ảnh 6 lý do thay bằng ảnh minh họa mới, bỏ nhãn đỏ trên ảnh | 08/10/2026 |
 | Khối "3 điều cần kiểm" | Chuyển từ dưới form vào đầu mục "Hiểu nhanh"; anchor `#kien-thuc` giữ nguyên | 08/10/2026 |
+| Công suất F10 2.0 inch, F10 New đời trước | 35W Cos / 40W Pha theo dải thông số trang sản phẩm (thay ghi chú "35W chưa tách Cos/Pha") | 08/10/2026 |
