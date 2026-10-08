@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr35.html` (preview https://preview-365group.pages.dev/ma-phim/nr35)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-35 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính lái dòng Ceramic NR. Câu hỏi chính: NR35 giá kính lái, so IR50.
-- Phiên bản bàn giao: HTML SHA-256 `10f14bf5d325dba69bc3c690d9d145187758fc1945b9dffb6277aca7d4242f8b` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR35_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `f76b9f3745381d8f410262b2ba8409036fe2c9df64fb5b701aaa795ac853ebee` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR35_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
