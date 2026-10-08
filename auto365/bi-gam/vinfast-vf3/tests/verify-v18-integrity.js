@@ -8,7 +8,7 @@ const mustContain = [
   'Auto365 SEO/GEO/HTML V1.8',
   'Bi gầm VinFast VF3: phương án lắp, giá và case thực tế',
   'Team Content Auto365',
-  'Rà soát kỹ thuật: <strong>Đặng Minh Hoàng</strong>',
+  'Rà soát kỹ thuật: <strong>Nguyễn Quang Đạo</strong>',
   'Đã xác minh trên VinFast VF3',
   'Kỹ thuật đã xác nhận tương thích VF3',
   'Cần kiểm tra VF3 trước khi chốt cấu hình',
@@ -48,7 +48,6 @@ const forbidden = [
   'top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3-10.jpg',
   'top-3-dong-den-lens-vuong-cho-xe-vinfast-vf3-7.jpg',
   'Tất cả chi nhánh Auto365 đang hoạt động đều tiếp nhận lắp bi gầm',
-  'Nguyễn Quang Đạo',
   'Lắp bi gầm có bị lỗi đăng kiểm không?',
   'Đèn bi gầm Kỹ thuật đã xác nhận tương thích VF3',
   'Bi gầm Cần kiểm tra VF3 trước khi chốt cấu hình SV'
