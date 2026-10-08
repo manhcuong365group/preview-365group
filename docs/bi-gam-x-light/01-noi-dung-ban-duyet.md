@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `393476c2b4b4b37b7ade0e58696f353fedeff72c952cae1664812085f1c67867` (commit `5711be99`) |
+| SHA-256 bản duyệt | `ab49e09d1c204b4fea2ad034a489d86d88c79e6982f56cffba96037e91b5a8df` (commit `fb777f2b`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -31,14 +31,13 @@
 | 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, tản nhiệt; so sánh tối đa 3 mẫu; bảng thông số |
 | 3 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
 | 4 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
-| 5 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
+| 5 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do có ảnh (6 ảnh minh họa có ghi "ảnh minh họa" trong alt); 90+ chi nhánh · 33 tỉnh thành |
 | 6 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
 | 7 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
-| 8 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 4 liên kết (hub, đèn gầm dạng rời, cẩm nang, xe thực tế) |
-| 9 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Video VF6 · F10 Turbo V2 (bấm để phát) + form gửi `/api/leads` |
-| 10 | `cam-nang-lien-quan` | Cẩm nang ánh sáng liên quan | 1 bài lớn + 3 bài, ảnh/ngày/mô tả lấy từ bài trên auto365.vn |
-| 11 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 7 câu, khớp từng chữ với FAQPage schema |
-| 12 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
+| 8 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Trái: video VF6 · F10 Turbo V2 (bấm để phát, youtube-nocookie); phải: form gửi `/api/leads` |
+| 9 | `cam-nang-lien-quan` | Cẩm nang ánh sáng liên quan | 1 bài lớn + 3 bài (mobile vuốt ngang); link "Đèn gầm dạng rời", "Xe thực tế", "Xem tất cả" ở đầu khối |
+| 10 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 7 câu, khớp từng chữ với FAQPage schema |
+| 11 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
 
 ## Dữ liệu sản phẩm (đang hiển thị)
 
@@ -75,7 +74,7 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 |---|---|---|
 | Đơn vị giá | Mọi mẫu ghi "/cặp"; không dùng "bộ" | 02/10/2026 |
 | Hotline | 0365 365 911 | 29/09/2026 |
-| Số chi nhánh | 91 chi nhánh · 33 tỉnh thành | 30/09/2026 |
+| Số chi nhánh | 90+ chi nhánh · 33 tỉnh thành (trước đó 91 chi nhánh, chốt 30/09) | 08/10/2026 |
 | Phân phiên bản | Không xếp hạng theo đời; chỉ ghi đúng tên/đời theo trang sản phẩm | 28/09/2026 |
 | Người duyệt | Nguyễn Quang Đạo | 08/10/2026 |
 | Sapo | Câu định nghĩa của người phụ trách nội dung + giá và bước kiểm xe theo tái kiểm 05/10 | 05/10/2026 |
@@ -84,9 +83,10 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Mưa/sương | Không lọc/khuyên theo nhiệt màu; tư vấn theo vùng phủ, vị trí lắp, căn Cos trên xe (V1.8 §7.1) | 08/10/2026 |
 | Chính hãng / căn chỉnh | Không ghi "phân phối chính thức" và "bảng test chuyên dụng" khi chưa có hồ sơ (V1.8 §8.1, §7.1) | 08/10/2026 |
 | Bỏ khối "Chọn theo nhu cầu" và "Chi phí lắp gồm những gì" | Theo góp ý chủ quản; nhu cầu còn ở bộ lọc nhanh đầu trang, chi phí còn ở sapo/FAQ/form | 08/10/2026 |
-| FAQ còn 6 câu; bỏ dải số liệu hero; thêm khối ảnh thi công | Theo góp ý chủ quản | 08/10/2026 |
+| FAQ 7 câu; bỏ dải số liệu hero; khối ảnh thi công đã thêm rồi bỏ | Theo góp ý chủ quản | 08/10/2026 |
 | Chính hãng | 365Group phân phối chính hãng X-Light; Auto365 thuộc 365Group, nên các câu "chính hãng" trên trang có căn cứ | 08/10/2026 |
 | Case Honda City / CR-V 2018 | Xác nhận phiên bản thi công F10 New 2025; bỏ nhãn "chưa đối chiếu" | 08/10/2026 |
 | Lead test → CRM/GA4 | Người phụ trách xác nhận thành công; còn xoá lead 60/87/111 | 08/10/2026 |
 | Số chi nhánh hiển thị | "90+ chi nhánh" thay "91 chi nhánh" | 08/10/2026 |
-| Lọc nhân LED / tản nhiệt | Lấy từ dải thông số trang sản phẩm; mẫu không ghi thì không xếp nhóm (F10 Pro 3 màu, F10 Turbo 24V: nhân LED; F10 Hyper 2.0, F10 2.0 inch: tản nhiệt) | 08/10/2026 |
+| Lọc tản nhiệt | Lấy từ dải thông số trang sản phẩm: 7 chủ động (quạt), 6 thụ động; F10 Hyper 2.0 và F10 2.0 inch không ghi nên không xếp nhóm. Nhóm "Nhân LED", "Tính năng", "Công suất Pha" đã thử rồi bỏ | 08/10/2026 |
+| Bố cục cuối ngày 08/10 | Bỏ khối "Bài viết & nội dung liên quan" (link riêng chuyển lên đầu khối Cẩm nang); khối video + form đặt ngay trên Cẩm nang; ảnh 6 lý do thay bằng ảnh minh họa mới, bỏ nhãn đỏ trên ảnh | 08/10/2026 |

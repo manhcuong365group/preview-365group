@@ -1,9 +1,9 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `393476c2b4b4b37b7ade0e58696f353fedeff72c952cae1664812085f1c67867` (commit `5711be99`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `ab49e09d1c204b4fea2ad034a489d86d88c79e6982f56cffba96037e91b5a8df` (commit `fb777f2b`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
-- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026"; schema `dateModified` 2026-10-06). Ngày hiệu lực giá niêm yết: 06/10/2026 (người phụ trách xác nhận); ngày đối chiếu thông số: 06/10/2026.
+- **Người duyệt chuyên môn:** Nguyễn Quang Đạo, duyệt lại toàn bộ bản này ngày 08/10/2026 (dòng cuối mục FAQ ghi "duyệt ngày 08/10/2026. Cập nhật 08/10/2026"; schema `dateModified` và `lastReviewed` 2026-10-08). Phiếu duyệt: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md). Ngày hiệu lực giá niêm yết: 06/10/2026; ngày đối chiếu thông số: 06/10/2026, dải thông số tản nhiệt: 08/10/2026.
 
 ## 1. URL và thẻ đầu trang
 
@@ -26,16 +26,18 @@
 
 | Ảnh | Trên preview | Việc cần làm |
 |---|---|---|
-| **8 ảnh trong `hinh/`** (2 ảnh chia khối + 6 ảnh thẻ "Vì sao chọn") | `case-media-1-landrover.webp`<br>`case-media-3-honda-black.webp`<br>`auto365vn-ford-ranger-wildtrak-2026-lap-x-light-f10-turbo-v2-4300k-img_6a8e662b682615.63670804.webp`<br>`auto365vn-porsche-cayenne-s-2014-sau-khi-hoan-thien-nang-ap-xlight-f10-turbo-v2-4300k-img_6a7ace518585a0.34278298.jpg.webp`<br>`auto365vn-ky-thuat-vien-kiem-tra-va-co-dinh-den-khi-thi-cong-img_6a9a666c6fca70.15900967.webp`<br>`auto365vn-kiem-tra-anh-sang-cos-tren-bang-test-den.webp`<br>`auto365vn-mat-duong-khi-lap-den-gam-f10-turbo-v2-cho-wildtrak-img_6a8e6684d01370.85128287.webp`<br>`auto365vn-kiem-tra-khoang-trong-lap-bi-gam-o-to-dien-img_6a7af4b03fe3b0.96753490.jpg.webp` | Upload đủ 8 ảnh lên thư viện ảnh auto365.vn, thay từng đường dẫn `hinh/...` bằng URL mới |
+| **6 ảnh trong `hinh/`** (thẻ "Vì sao chọn", ảnh minh họa) | `auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp`<br>`auto365vn-tra-cuu-bao-hanh-dien-tu.webp`<br>`auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp`<br>`auto365vn-can-chinh-den-tren-bang-test-xuong.webp`<br>`auto365vn-bao-gia-lap-dat-bi-gam.webp`<br>`auto365vn-tu-van-den-gam-theo-tung-xe.webp` | Upload lên CMS, thay `hinh/...` bằng URL `https://auto365.vn/uploads/...`; giữ nguyên alt (có ghi "ảnh minh họa") |
+| Ảnh bìa video | `https://i.ytimg.com/vi/k7jZofGkGhQ/hqdefault.jpg` | Không cần làm gì; iframe youtube-nocookie chỉ tải khi bấm |
+| Ảnh khối Cẩm nang | URL `https://auto365.vn/uploads/images/thumbnails/...` của 4 bài | Không cần làm gì |
 | Ảnh sản phẩm, case, logo hãng | Đã là URL `https://auto365.vn/uploads/...` | Không cần làm gì |
 | og:image | Ảnh sản phẩm X-Light trên auto365.vn | Giữ, hoặc thay bằng ảnh 1200×630 |
 
 ## 3. Schema (JSON-LD trong `<head>`)
 
-9 node: `Person` (reviewer), `Service`, `TechArticle`, `CollectionPage`, `BreadcrumbList`, `ItemList` (15 mẫu), `Brand`, `AutoPartsStore` (hotline +84365365911), `FAQPage` (11 câu).
+9 node: `Person` (reviewer), `Service`, `TechArticle`, `CollectionPage`, `BreadcrumbList`, `ItemList` (15 mẫu), `Brand`, `AutoPartsStore` (hotline +84365365911), `FAQPage` (7 câu).
 
 - **Không** thêm `Product`/`Offer`/`aggregateRating` trên hub; các loại này thuộc trang sản phẩm.
-- FAQPage phải trùng từng chữ với 11 câu hiển thị trong `#faq`. Sửa câu nào thì sửa cả hai chỗ.
+- FAQPage phải trùng từng chữ với 7 câu hiển thị trong `#faq`. Sửa câu nào thì sửa cả hai chỗ.
 - Sau khi đăng: kiểm bằng https://search.google.com/test/rich-results (không lỗi, cảnh báo chấp nhận được).
 
 ## 4. Form, CRM và đo lường
@@ -142,7 +144,7 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 1 | URL production trả 200 | `curl -I` | | | |
 | 2 | Không còn `noindex` (meta + header) | Xem nguồn trang, `curl -I` | | | |
 | 3 | Canonical tự trỏ | Xem nguồn trang | | | |
-| 4 | Đủ 8 ảnh `hinh/` đã thay URL auto365.vn | Mở trang, không ảnh vỡ | | | |
+| 4 | Đủ 6 ảnh `hinh/` đã thay URL auto365.vn; ảnh bìa video và 4 ảnh Cẩm nang hiển thị | Mở trang, không ảnh vỡ | | | |
 | 5 | Rich Results Test không lỗi | search.google.com/test/rich-results | | | |
 | 6 | Form gửi thật trên production, API trả `success: true` | Gửi 1 lead test, đánh dấu TEST | | | |
 | 7 | Lead trong CRM đủ mẫu/giá/nguồn/UTM | CRM | | | |
@@ -150,7 +152,7 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 9 | Link từ hub tổng, 15 sản phẩm, 30 case | Xem nguồn từng trang | | | |
 | 10 | GSC: URL is on Google | URL Inspection | | | |
 | 11 | Mobile thật (iPhone + Android): lọc, so sánh, form, gọi, Zalo | Thao tác tay | | | |
-| 12 | Xoá lead test mã 60, 87 và lead test ở mục 6 | CRM | | | |
+| 12 | Xoá lead test mã 60, 87, 111 và lead test ở mục 6 | CRM | | | |
 
 ## 8. Ghi chú release cho CMS v2 (06/10/2026)
 
@@ -163,12 +165,12 @@ Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại t�
 | Giá trị lọc | `normFilter()`: chuẩn hoá điện áp/lens (chữ thường, bỏ khoảng trắng thừa, bỏ hậu tố "inch") ở cả checkbox, select mobile và `data-voltage`/`data-lens` | CMS đổi hoa/thường hay ghi nhãn "2.0 inch" vẫn lọc đúng (đã thử) |
 | Mã lead | Payload gửi `request_id` (UUID client, trùng header `Idempotency-Key`, giữ nguyên khi gửi lại) — **không** gửi `lead_id` phía client. `lead_id` chỉ lấy từ response (chuỗi hoặc số, `serverLeadId()`). Không có `lead_id` → UI hiện "Mã tham chiếu" 8 ký tự đầu của request_id | Backend: nhận `request_id` để chống trùng; response `{success:true, lead_id}`; CRM lưu cả `request_id` và `lead_id` để đối chiếu |
 | Conversion | Trang đẩy `lead_form_submit` 1 lần sau khi API xác nhận, gồm `lead_id` (server, nếu có), `request_id`, `lead_id_source` (server/none); không có tên/SĐT/ghi chú | Chọn **một** conversion chính (`lead_form_submit` hoặc `generate_lead` của template), dedupe theo `lead_id`/`request_id` |
-| Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-06; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
+| Credit | meta author + `TechArticle.author` = Team Content Auto365; `CollectionPage.reviewedBy` + `lastReviewed` = Nguyễn Quang Đạo, 2026-10-08; dòng hiển thị cuối FAQ khớp | Graph CMS (WebSite/Organization) dùng chung `@id`, không tạo node trùng |
 | Bảo hành | Thanh trên: "Bảo hành theo chính sách từng mẫu · hỗ trợ kích hoạt bảo hành điện tử" (mobile chỉ vế đầu); FAQ: 13/15 PDP ghi 24 tháng, F10 2.0 2024 và F10 New đời trước chưa ghi; link chính sách | Không đưa lại "Bảo hành điện tử 24 tháng" chung cho cả trang |
 | Địa điểm | Bản preview chỉ có `#diem-lap` | Template v2 đang thêm `#he-thong` → gộp còn một khối |
 | Kiểm nội bộ | `#xl-internal-check` | Xoá khỏi source production (BLOCK_06) |
 
-QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2; lens 2.0 → 4; chuỗi không khớp → 0; xoá lọc → 8; mở URL có UTM, chờ URL được làm sạch rồi gửi form → payload còn đủ UTM/click ID.
+QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2; lens 2.0 → 4; giá dưới 4,5tr → 5; tản nhiệt chủ động → 7; chuỗi không khớp → 0; xoá lọc → 8; mở URL có UTM, chờ URL được làm sạch rồi gửi form → payload còn đủ UTM/click ID.
 
 ## Bổ sung 08/10/2026 (V1.8)
 
@@ -176,3 +178,5 @@ QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2
 - `dateModified` 2026-10-08, `lastReviewed` 2026-10-06. Chỉ đổi `lastReviewed` khi người kiểm duyệt xác nhận lại.
 - 87/93 ảnh chưa có `width`/`height`. Template CMS nên thêm kích thước để tránh nhảy bố cục.
 - Link sản phẩm F10 Hyper 2.0 dùng URL cuối `https://auto365.vn/bi-gam-x-light-f10-hyper-20` (URL cũ `bi-gam-xligh-f10-hyper-2` chuyển hướng 301).
+- Khối tư vấn: video bấm-để-phát (`.xl-video-facade` + `<script id="xl-video-facade-js">`), không nhúng iframe sẵn. Giữ `youtube-nocookie.com`.
+- Bộ lọc tản nhiệt dùng `data-cooling` (active/passive) trên từng `.p-card`; `data-led` còn trong thẻ nhưng không có nhóm lọc dùng tới, có thể giữ.
