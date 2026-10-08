@@ -29,6 +29,10 @@
 
 Điều kiện giữ kết luận: chỉ áp dụng cho đúng phiên bản HTML ghi trong bảng đối chiếu. Đây là kết luận nội dung, chưa phải nghiệm thu Live. Các CX còn lại thuộc L1–L8 (dán lên CMS, GSC, mobile thiết bị thật, PageSpeed, lead thử vào CRM).
 
+Cập nhật 06/10/2026 (đợt 2): áp dụng góp ý kiểm độc lập (ngày nguồn, meta điều kiện kính, VAT hero/FAQ, nhu cầu form, link nguồn popup, caption chứng nhận). Điểm giữ nguyên, chưa chấm lại bởi reviewer.
+
+Đợt 3 (06/10/2026): áp dụng thêm góp ý kiểm độc lập (câu IRER/IRR, giá và đơn vị, caption bảng, phạm vi Pro Shop, mô tả thiết bị). Điểm giữ nguyên.
+
 SEO đạt đúng ngưỡng (28,5/30, không dư), nên mọi sửa đổi sau này phải chấm lại. Mức dư dành cho việc chấm lại là S3 sau khi kiểm bản live.
 
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
@@ -64,7 +68,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `1500b653fd46d068e3bad5f81f45c46d584d868d9e4f797d4783b03c472f2e62` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `49f56b78d37f2291eff941680d5d633c31662d76093fbb287c882d6a94730524` (kiểm 06/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|

@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/ir50.html` (preview https://preview-365group.pages.dev/ma-phim/ir50)
 - URL production giữ nguyên: https://auto365.vn/ir50 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính lái dòng Ceramic IR. Câu hỏi chính: IR50 giá, VLT 50% hay 60%, so NR35/CR BLK 40.
-- Phiên bản bàn giao: HTML SHA-256 `89be02b19873266f24c2cb110a100308ad706fc70ca42b4101299f9260a7586a` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR50_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `3f99a1464ac12572c0d29fa3e14c5cc1890b87890cb7710ef12ba6a57560a1f5` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR50_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 

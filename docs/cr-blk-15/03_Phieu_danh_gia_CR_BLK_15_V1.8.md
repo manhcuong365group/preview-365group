@@ -28,6 +28,10 @@
 **ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 96,0 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live. S3 = 9,5 vì link của chính trang đã kiểm và câu anchor back-link đã sẵn; S3 chỉ lên 10 khi back-link thật được gắn và kiểm live.
 
 Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu chủ yếu là bằng chứng bên ngoài (biên bản đo gốc, back-link từ bài case, kiểm live) — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
+Cập nhật 06/10/2026 (đợt 2): áp dụng góp ý kiểm độc lập (ngày nguồn, meta điều kiện kính, VAT hero/FAQ, nhu cầu form, link nguồn popup, caption chứng nhận). Điểm giữ nguyên, chưa chấm lại bởi reviewer.
+
+Đợt 3 (06/10/2026): áp dụng thêm góp ý kiểm độc lập (câu IRER/IRR, giá và đơn vị, caption bảng, phạm vi Pro Shop, mô tả thiết bị). Điểm giữ nguyên.
+
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
@@ -61,7 +65,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-15.html`, SHA-256 `b0db9daa392ece2661e629eb7af8865ebe6e602db2342588688d7fb9e08d83b2` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-15.html`, SHA-256 `9f03e61b688a0d97e87d9d2a232d5a8c5d5a95a5f9b9ccd48d58316da39a274c` (kiểm 06/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|

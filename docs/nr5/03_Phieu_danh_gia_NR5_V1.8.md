@@ -28,6 +28,10 @@
 **ĐẠT NỘI DUNG V1.8 (bản preview)**: Tổng 95,5 ≥ 95; SEO 28,5 ≥ 28,5; GEO 24 ≥ 23,75; không lỗi chặn nội dung trong phạm vi. Số case giữ đúng thực tế theo quyết định chủ trang 06/10/2026, không trừ điểm theo số case; tiêu đề, mô tả và nhãn thẻ case đã rà để chỉ nêu đúng mã và vị trí từng hồ sơ. Đây là kết luận nội dung của bản preview, chưa phải nghiệm thu Live (L1, L3, L5, L6, L7 còn CX); S3 giữ 9,5 vì chưa kiểm live.
 
 Không có lỗi chặn nội dung trong phạm vi preview. Phần thiếu còn lại: URL production của catalog (CMS), biên bản đo gốc dạng file, kiểm live — các mục CX trong file 02. Khi bổ sung được, chấm lại C1/S3.
+Cập nhật 06/10/2026 (đợt 2): áp dụng góp ý kiểm độc lập (ngày nguồn, meta điều kiện kính, VAT hero/FAQ, nhu cầu form, link nguồn popup, caption chứng nhận). Điểm giữ nguyên, chưa chấm lại bởi reviewer.
+
+Đợt 3 (06/10/2026): áp dụng thêm góp ý kiểm độc lập (câu IRER/IRR, giá và đơn vị, caption bảng, phạm vi Pro Shop, mô tả thiết bị). Điểm giữ nguyên.
+
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
@@ -61,7 +65,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/nr5.html`, SHA-256 `492fdfc94d5cfc5098689c1c42e6224e332d73eeb5dbc85b1b1c08b10d8ef5c2` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/nr5.html`, SHA-256 `13876cb8326c7af8337225bad3f648defd7c0d83f56e243636da5156c48e1a8e` (kiểm 06/10/2026).
 
 Cập nhật 06/10/2026: thêm link PDF catalog NR (HTML đã đổi, mã băm mới). 
 
