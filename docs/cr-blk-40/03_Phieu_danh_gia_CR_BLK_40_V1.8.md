@@ -35,6 +35,8 @@ Cập nhật 06/10/2026 (đợt 2): áp dụng góp ý kiểm độc lập (ngà
 
 Đợt 4 (08/10/2026): đối chiếu giá/quyền lợi/chứng nhận với trang chuẩn https://auto365.vn/phim-cach-nhiet-o-to-3m; panorama từ 2.600.000đ; nguồn CR BLK 15 chuyển sang brochure Việt Nam ©2025. Điểm giữ nguyên.
 
+Đợt 5 (08/10/2026): mốc giá xác nhận 08/10/2026; cửa sổ trời tính riêng, không nằm trong giá gói. Điểm giữ nguyên.
+
 SEO đạt đúng ngưỡng (28,5/30, không dư), nên mọi sửa đổi sau này phải chấm lại. Mức dư dành cho việc chấm lại là S3 sau khi kiểm bản live.
 
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
@@ -70,7 +72,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `ea75424ac92b8e9bbabe835d4c6170b526eb9f0a429801a675f1dc6071fc756b` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-40.html`, SHA-256 `5e2aef7f2ce3fb7af99e6cbc63c825b471b685a77efaf368a35c99f9e0c245f4` (kiểm 08/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|

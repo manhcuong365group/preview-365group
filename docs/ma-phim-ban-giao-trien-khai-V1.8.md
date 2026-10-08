@@ -19,7 +19,7 @@ Các giá trị đang hiển thị trên preview, đều ghi "đã gồm VAT". G
 | Kính lưng CR BLK 35/15 | 4.100.000đ | Khớp trang chuẩn 08/10/2026 |
 | Kính lưng IR25/IR15 | 2.300.000đ | Khớp trang chuẩn 08/10/2026 |
 | Kính lưng NR25/NR15/NR5 | 1.900.000đ | Khớp trang chuẩn 08/10/2026 |
-| Cửa sổ trời nhỏ NR | từ 850.000đ, tùy diện tích; panorama từ 2.600.000đ, báo giá theo kích thước và rèm che thực tế | Khớp trang chuẩn 08/10/2026 |
+| Cửa sổ trời nhỏ NR | từ 850.000đ, tùy diện tích; panorama từ 2.600.000đ, báo giá theo kích thước kính | Khớp trang chuẩn 08/10/2026 |
 | Cửa sổ trời CR BLK 15 / IR15 | báo giá theo xe | Khớp trang chuẩn 08/10/2026 |
 | Gói CR BLK Pro / CR BLK | 12,9/15,5/18,3 tr · 12,2/14,8/17,6 tr (Minicar/Sedan/SUV) | Khớp trang chuẩn 08/10/2026 |
 | Gói Hybrid Pro / Hybrid | 9,8/11,6/13,3 tr · 9,0/10,8/12,5 tr | Khớp trang chuẩn 08/10/2026 |
@@ -28,8 +28,8 @@ Các giá trị đang hiển thị trên preview, đều ghi "đã gồm VAT". G
 Cần trả lời thêm:
 1. Giá đã gồm VAT và công dán, tháo + vệ sinh phim cũ miễn phí: áp dụng mọi điểm hay theo điều kiện? ______
 2. Quyền lợi (rửa xe/hút bụi, vệ sinh kính, giảm giá lần sau): điểm nào áp dụng? ______
-3. Mốc hiệu lực bảng giá (đang ghi "từ 06/2026"): ______
-4. Gói Ceramic Hybrid ghi "sườn sau & cửa sổ trời": mái kính nhỏ có nằm trong giá gói không; panorama tính riêng? ______
+3. Mốc hiệu lực bảng giá: **08/10/2026 (đã xác nhận)**. Trang đã đổi từ "từ 06/2026" sang "cập nhật và xác nhận ngày 08/10/2026". ✔ Đã trả lời
+4. Mái kính (cửa sổ trời): **không nằm trong giá gói (đã xác nhận)**. Mọi gói (Ceramic Hybrid, Ceramic IR, Crystalline Hybrid/Pro, CR BLK/Pro…) không gồm cửa sổ trời; tính riêng: nhỏ từ 850.000đ tùy diện tích, panorama từ 2.600.000đ báo giá theo kích thước kính. Trang đã ghi "Cửa sổ trời tính riêng, không nằm trong giá gói." ✔ Đã trả lời
 5. Điểm nào là 3M Pro Shop / Training Center được chứng nhận (đối chiếu 4 giấy chứng nhận trên trang)? ______
 Người xác nhận / ngày: ______
 
