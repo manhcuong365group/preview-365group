@@ -988,6 +988,17 @@ body.fm-open{overflow:hidden}
 .container .irx-box{border-radius:8px;padding:20px 22px 12px;display:flex;flex-direction:column;justify-content:center}
 @media(max-width:860px){.irx-intro>div:first-child{padding:16px 18px}.irx-box{padding:16px 18px 8px}}
 </style>
+<style>
+/* Cân chỉnh các khối cho đều nhau */
+@media(min-width:901px){.container .position-grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}}
+.container .answer-bullets li{align-items:center}
+.container .compare-grid .compare{display:flex;flex-direction:column}
+.container .compare-grid .compare .verdict-line{margin-top:auto}
+.container .answer-bullets li svg{margin-top:0}
+.container .spec-shell .spec-head{padding-bottom:0}
+.container .spec-shell caption{padding:14px 20px 10px!important;text-align:left}
+.container .spec-shell .source-note,.container .spec-shell .spec-src{padding:12px 20px;margin:0!important}
+</style>
 </head>
 
 <body>
@@ -1114,8 +1125,8 @@ body.fm-open{overflow:hidden}
 
     <section class="section alt" id="so-sanh">
       <div class="container">
-        <h2 class="section-title">IR15 hay IR25 cho kính sườn sau, kính lưng?</h2>
-        <p class="section-desc">Hai mã cùng dòng Ceramic IR, đều đo trên kính ô tô xanh Auto 75 (VLT nền 73%), nên có thể so trực tiếp.</p>
+        <h2 class="section-title">IR15, IR25 hay IR50 cho từng vị trí kính?</h2>
+        <p class="section-desc">Ba mã cùng dòng Ceramic IR, đều đo trên kính ô tô xanh Auto 75 (VLT nền 73%), nên có thể so trực tiếp.</p>
 
         <div class="compare-grid">
           <article class="compare active">
@@ -1130,8 +1141,14 @@ body.fm-open{overflow:hidden}
             <p><strong>IR25 sáng hơn IR15,</strong> hợp kính sườn trước, hoặc khoang sau khi bạn chưa cần quá kín.</p>
             <div class="verdict-line"><b>Giá:</b> cùng mức với IR15</div>
           </article>
+          <article class="compare">
+            <h3>IR50</h3>
+            <div class="spec">VLT 50% · TSER 54% · IRER 66% · giảm chói 32%</div>
+            <p><strong>IR50 sáng hơn IR25 và IR15,</strong> được Auto365 ưu tiên tư vấn cho kính lái; kính sườn và kính sau chọn IR25 hoặc IR15.</p>
+            <div class="verdict-line"><b>Giá:</b> kính lái 3.300.000đ</div>
+          </article>
         </div>
-        <p class="section-desc" style="margin-top:14px">Nguồn: IR15, IR25 theo 3M Ceramic IR TDS Revision B · 07/2021. So sánh với dòng khác: <a class="inline-link" href="https://auto365.vn/so-sanh-ir15-va-cr-blk-15-cho-kinh-suon-sau-kinh-hau">So sánh IR15 và CR BLK 15 cho kính sườn sau, kính hậu</a>.</p>
+        <p class="section-desc" style="margin-top:14px">Nguồn: IR15, IR25, IR50 theo 3M Ceramic IR TDS Revision B · 07/2021. So sánh với dòng khác: <a class="inline-link" href="https://auto365.vn/so-sanh-ir15-va-cr-blk-15-cho-kinh-suon-sau-kinh-hau">So sánh IR15 và CR BLK 15 cho kính sườn sau, kính hậu</a>.</p>
       <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-3m-ceramic-ir-5-img_6a5769c264e5b7.58499151.webp" alt="Nissan Almera dán phim 3M Ceramic IR tại 3M Pro Shop" width="800" height="533" loading="lazy" decoding="async"><figcaption>Nissan Almera dán phim 3M Ceramic IR tại 3M Pro Shop.</figcaption></figure>
 </div>
     </section>
