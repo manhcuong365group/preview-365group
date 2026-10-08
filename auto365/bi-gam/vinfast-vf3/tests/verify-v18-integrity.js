@@ -29,6 +29,12 @@ const mustContain = [
   'Đèn bi gầm X-Light F10 Turbo V2',
   'Bi gầm X-Light 301 V2',
   'Bi gầm AES SV 3.0 Pro',
+  'hinh/bi-gam-vinfast-vf3-muc-dich-tang-sang.png',
+  'hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
+  'hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
+  'hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png',
+  'Bảng chọn &amp; mức độ bằng chứng sản phẩm bi gầm cho VinFast VF3',
+  'Các phương án nâng cấp ánh sáng khác cho VinFast VF3',
   'about',
   'mentions',
   'datePublished',
@@ -38,10 +44,9 @@ const mustContain = [
 const forbidden = [
   'Evidence Level:',
   'Ba mẫu đầu có căn cứ rõ nhất: video lắp trên VF3 hoặc bảo hành 2 năm',
-  'Bong Led Vinfast Vf3 S3 Pro Chan H7',
-  'Top 4 Bong Led Naoevo Co The Nang Cap Vinfast Vf3',
-  'Top 3 Dong Den Lens Vuong Cho Xe Vinfast Vf3',
-  'Vinfast Vf3 Nang Cap Bi Led X Light V20 Square',
+  'bong-led-vinfast-vf3-s3-pro-chan-h7.jpg',
+  'top-4-bong-led-naoevo-co-the-nang-cap-vinfast-vf3-10.jpg',
+  'top-3-dong-den-lens-vuong-cho-xe-vinfast-vf3-7.jpg',
   'Tất cả chi nhánh Auto365 đang hoạt động đều tiếp nhận lắp bi gầm',
   'Nguyễn Quang Đạo',
   'Lắp bi gầm có bị lỗi đăng kiểm không?',
@@ -57,6 +62,20 @@ if (missing.length) {
 const stillPresent = forbidden.filter((needle) => combined.includes(needle));
 if (stillPresent.length) {
   throw new Error(`Forbidden V1.8 VF3 content still present: ${stillPresent.join(', ')}`);
+}
+
+// Check physical image files exist
+const requiredImages = [
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-muc-dich-tang-sang.png',
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png'
+];
+
+for (const imgPath of requiredImages) {
+  if (!fs.existsSync(imgPath)) {
+    throw new Error(`Missing physical image file: ${imgPath}`);
+  }
 }
 
 const requiredHandoffFiles = [
@@ -76,4 +95,4 @@ for (const file of requiredHandoffFiles) {
   }
 }
 
-console.log('VF3 V1.8 evidence, data scope, entity, reviewer, legal FAQ and U3 integrity verified.');
+console.log('VF3 V1.8 evidence, images, data scope, entity, reviewer, legal FAQ and U3 integrity verified successfully.');
