@@ -25,7 +25,7 @@
 | G2 | Lập luận phục vụ nhu cầu | 9,5/10 | FAQ "Nên chọn mẫu theo nhu cầu" nêu mẫu + lý do cho đi phố/đi tỉnh/hốc nhỏ/24V/nhiệt màu, W có giới hạn, Kelvin không quyết định độ sáng; Nhu cầu "mưa, sương mù" không còn lọc theo 3000K (mục 7.1); W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
 | G3 | Nguồn và truy nguyên | 5/5 | PDP, case, chính sách bảo hành; 2 xe Honda đã xác nhận F10 New 2025 (08/10/2026); căn cứ "chính hãng": 365Group phân phối X-Light (N1, N3) | — |
 | **G** | | **24/25** | | |
-| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → case → lý do chọn → chi nhánh → hiểu nhanh (3 điều cần kiểm + accordion) → video + form → cẩm nang → FAQ; 360/390/414/1440px không tràn ngang, khối thẻ vuốt ngang có chủ đích, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
+| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → case → lý do chọn → chi nhánh → hiểu nhanh (accordion 5 mục) → video + form → cẩm nang → FAQ; 360/390/414/1440px không tràn ngang, khối thẻ vuốt ngang có chủ đích, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
 | U2 | Hành động tiếp theo | 5/5 | Catalogue + lọc, form, UTM snapshot, request_id; API → CRM → GA4 cho lead test đã được người phụ trách xác nhận thành công 08/10/2026 | Xoá lead test 60/87/111 khỏi CRM |
 | U3 | Bộ bàn giao nhất quán | 5/5 | 01 + 02 + 03 + 04 cùng hash/commit preview; 01 liệt kê đúng 10 khối hiện có; 02 đúng 6 ảnh, FAQ 7, credit 08/10; 04 ghi người và ngày cho mọi xác nhận; khối kiểm tra nội bộ cuối trang dẫn tới cả 4 tài liệu | Bản CMS v2 kiểm ở L1 |
 | **U** | | **14,5/15** | | |
