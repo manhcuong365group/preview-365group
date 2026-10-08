@@ -85,3 +85,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Chính hãng / căn chỉnh | Không ghi "phân phối chính thức" và "bảng test chuyên dụng" khi chưa có hồ sơ (V1.8 §8.1, §7.1) | 08/10/2026 |
 | Bỏ khối "Chọn theo nhu cầu" và "Chi phí lắp gồm những gì" | Theo góp ý chủ quản; nhu cầu còn ở bộ lọc nhanh đầu trang, chi phí còn ở sapo/FAQ/form | 08/10/2026 |
 | FAQ còn 6 câu; bỏ dải số liệu hero; thêm khối ảnh thi công | Theo góp ý chủ quản | 08/10/2026 |
+| Chính hãng | 365Group phân phối chính hãng X-Light; Auto365 thuộc 365Group, nên các câu "chính hãng" trên trang có căn cứ | 08/10/2026 |

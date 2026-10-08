@@ -81,6 +81,6 @@ Không có lỗi chặn nội dung đã xác nhận (§3).
 4. Dán link về hub theo `doan-link-ve-hub.md`; đăng URL production → S3.
 5. Xưởng đối chiếu 2 xe Honda → G3.
 6. CRM xác nhận lead 60/87/111 rồi xoá → U2.
-7. Có giấy ủy quyền X-Light thì mới khôi phục chữ "chính hãng/phân phối chính thức"; có biên bản căn chỉnh thì mới ghi phương pháp → G3.
+7. ~~Căn cứ chính hãng~~ — đã xác nhận 08/10/2026: 365Group phân phối chính hãng X-Light, Auto365 thuộc 365Group. Còn biên bản căn chỉnh thì mới ghi phương pháp → G3.
 8. Người kiểm duyệt xác nhận phần sửa 07–08/10 thì cập nhật `lastReviewed` → C1.
 9. CMS điền `datePublished` = ngày đăng production đầu tiên.
