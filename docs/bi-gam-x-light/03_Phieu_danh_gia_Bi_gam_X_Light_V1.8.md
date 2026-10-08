@@ -14,7 +14,7 @@
 | Mã | Tiêu chí | Điểm xác nhận | Căn cứ (mã N) | CX / phần còn mở |
 |---|---|---:|---|---|
 | C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn ghi theo trang sản phẩm; bảo hành 13/15 mẫu theo PDP; bỏ câu ngầm hiểu "chi nhánh nào cũng bảo hành"; dateModified 2026-10-08 khớp lần sửa nội dung (N1) | Phần sửa 07–08/10 chưa được người kiểm duyệt xác nhận lại |
-| C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, 6 FAQ (N2) | — |
+| C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue + bộ lọc (hệ điện, lens, nhiệt màu, giá/cặp, Pha/đèn), 30 case có nơi lắp, 8 ảnh thi công, 7 FAQ gồm câu chọn mẫu theo nhu cầu và câu giá/VAT/công lắp (N2) | — |
 | C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; tiêu đề thẻ khớp thân thẻ (N3) | — |
 | **C** | | **28,5/30** | | |
 | S1 | Nhu cầu tìm kiếm và vai trò URL | 9,5/10 | Hub thương hiệu X-Light; phân vai hub tổng/PDP/case (N5) | — |
@@ -22,10 +22,10 @@
 | S3 | Liên kết và hồ sơ triển khai | 9/10 | 9 link 301 đã đổi về URL cuối; hồ sơ CMS, đoạn link soạn sẵn, ghi chú release v2 (N5) | **CX:** link vào từ hub tổng/PDP/case và URL production chưa triển khai — tối đa +1 |
 | **S** | | **28/30** | | Khoảng 28–29 |
 | G1 | Câu trả lời rõ, đủ ngữ cảnh | 9,5/10 | Giá/đơn vị/VAT/điện áp/cơ chế màu đứng cạnh nhau | — |
-| G2 | Lập luận phục vụ nhu cầu | 9,5/10 | Nhu cầu "mưa, sương mù" không còn lọc theo 3000K (mục 7.1); W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
+| G2 | Lập luận phục vụ nhu cầu | 9,5/10 | FAQ "Nên chọn mẫu theo nhu cầu" nêu mẫu + lý do cho đi phố/đi tỉnh/hốc nhỏ/24V/nhiệt màu, W có giới hạn, Kelvin không quyết định độ sáng; Nhu cầu "mưa, sương mù" không còn lọc theo 3000K (mục 7.1); W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
 | G3 | Nguồn và truy nguyên | 4,5/5 | PDP, case, chính sách bảo hành; bỏ tuyên bố "bảng test chuyên dụng" và "phân phối chính thức" khi chưa có hồ sơ (N1, N3) | **CX:** phiên bản thi công 2 xe Honda — tối đa +0,5 |
 | **G** | | **23,5/25** | | Khoảng 23,5–24 |
-| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng chọn → so → case → tư vấn; 390/1440px không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
+| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → ảnh thi công → tư vấn → case → FAQ; 390/1440px không tràn, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
 | U2 | Hành động tiếp theo | 4,5/5 | Catalogue, form, UTM snapshot, request_id; so sánh không tự bật popup | **CX:** API → CRM → GA4 cho lead 60/87/111 — tối đa +0,5 |
 | U3 | Bộ bàn giao nhất quán | 4/5 | 01 + 02 + 03 cùng hash preview | **CX:** hash/release bản CMS v2 — tối đa +1 |
 | **U** | | **13/15** | | Khoảng 13–14,5 |
@@ -42,7 +42,7 @@
 
 Không có lỗi chặn nội dung đã xác nhận (§3).
 
-### Đã sửa ngày 08/10/2026
+### Đã sửa ngày 08/10/2026 (gồm góp ý chủ quản cùng ngày)
 
 | Mục | Căn cứ V1.8 | Đã sửa |
 |---|---|---|
@@ -58,6 +58,7 @@ Không có lỗi chặn nội dung đã xác nhận (§3).
 | ID trùng | — | Script đổi thành `xlight-real-case-like-bigm-v5-js` |
 | So sánh | — | Chọn mẫu thứ 2 không tự bật popup |
 | Hồ sơ triển khai | U3 | Bỏ "chạy được ngay"; 4 điều kiện nghiệm thu; `request_id` thay `lead_id` trong danh sách trường |
+| Bố cục theo góp ý chủ quản | — | Bỏ khối "Chọn theo nhu cầu", khối "Chi phí", dải số liệu hero và nhóm lọc "Cách chọn nhiệt màu"; thêm lọc giá/cặp và công suất Pha; thêm 8 ảnh thi công đúng xe trong bảng case; FAQ 11 → 7 câu, câu mới gom hướng dẫn chọn theo nhu cầu (hiển thị + schema) |
 
 ## 3. Lỗi chặn (§12)
 
@@ -70,7 +71,7 @@ Không có lỗi chặn nội dung đã xác nhận (§3).
 | BLOCK_05 Sai điểm liên hệ | Không — hotline 0365 365 911 |
 | BLOCK_06 Ghi chú nội bộ trong bản đăng | **Phải xoá khi lên production**: khối `#xl-internal-check` (preview tự ẩn ngoài pages.dev/localhost) |
 | BLOCK_07 Production noindex/canonical/404 | Áp cho live — URL production đang 404 |
-| BLOCK_08 Schema sai so với hiển thị | Không — FAQ 6 câu khớp; credit khớp |
+| BLOCK_08 Schema sai so với hiển thị | Không — FAQ 7 câu khớp; credit khớp |
 
 ## 4. Việc để chuyển sang "ĐẠT NỘI DUNG V1.8"
 

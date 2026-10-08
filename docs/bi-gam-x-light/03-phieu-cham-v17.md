@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `574a9403be7005f24fce4141617f5774cab55a0b5aa85017dfbc5d6b3f9e1161` (commit `d2ab3bf9`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
+| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `1fc127d7ae166a4c86fb0c0d0d5612e4b1c6cc823421ce5d4a3ee766bf46d9a5` (commit `49643020`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
 | Ngày chấm | 05/10/2026 (tự chấm lại sau tái kiểm 05/10 của người duyệt) |
 | Loại chấm | Tự chấm bản preview — **chưa phải phiếu nghiệm thu chính thức**; người duyệt chấm lại theo mã |
 | Người kiểm duyệt nội dung | Nguyễn Quang Đạo (06/10/2026) |
@@ -14,7 +14,7 @@
 | Mã | Nội dung | Điểm | Căn cứ / còn thiếu |
 |---|---|---:|---|
 | C1 | Chính xác, nhất quán | 9/10 | Case gắn SKU theo URL sản phẩm; 28/30 là "đã lắp", 2 xe Honda hiển thị "hồ sơ liên quan — chưa đối chiếu phiên bản thi công"; popup so sánh đọc đúng Cos/Pha; 2 mẫu chỉ có 35W ghi "nguồn chưa tách Cos/Pha"; đơn vị thống nhất "cặp". Trừ: dữ liệu chưa gom về một nguồn chung (XL-05) |
-| C2 | Đủ theo vai trò | 9,5/10 | 15 mẫu, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, FAQ 6 câu |
+| C2 | Đủ theo vai trò | 9,5/10 | 15 mẫu, nhu cầu, chi phí 7 khoản, 30 case có nơi lắp, FAQ 7 câu |
 | C3 | Tự nhiên, hữu ích | 9/10 | Sapo trả lời thẳng; CTA đúng hành động; giới hạn ghi ngay cạnh dữ kiện |
 | **C** | | **27,5/30** | |
 | S1 | Nhu cầu & vai trò URL | 9,5/10 | Hub thương hiệu, phân vai với hub tổng/PDP/case |

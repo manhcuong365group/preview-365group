@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `574a9403be7005f24fce4141617f5774cab55a0b5aa85017dfbc5d6b3f9e1161` (commit `d2ab3bf9`) |
+| SHA-256 bản duyệt | `1fc127d7ae166a4c86fb0c0d0d5612e4b1c6cc823421ce5d4a3ee766bf46d9a5` (commit `49643020`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 06/10/2026 (schema `lastReviewed` 2026-10-06). Nội dung sửa 07–08/10 theo V1.8, `dateModified` 2026-10-08; dòng cuối FAQ ghi "duyệt ngày 06/10/2026. Cập nhật nội dung 08/10/2026" |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -37,7 +37,7 @@
 | 8 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
 | 9 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
 | 10 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 6 bài |
-| 11 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 6 câu, khớp từng chữ với FAQPage schema |
+| 11 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 7 câu, khớp từng chữ với FAQPage schema |
 | 12 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
 
 ## Dữ liệu sản phẩm (đang hiển thị)
