@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr25.html` (preview https://preview-365group.pages.dev/ma-phim/nr25)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-25 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau/cửa sổ trời dòng Ceramic NR; kính lái dùng NR35. Câu hỏi chính: NR25 giá, hợp sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `76fa048248f6818d95be0ee87df6d14d547a95377e047d392789f074062ecffe` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR25_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `ef0faeb9637c3ce05ff225d3271496dc6fb4fee552e29abe5c9ea53b19b8737c` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR25_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 

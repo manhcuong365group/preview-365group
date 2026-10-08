@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-35.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-35)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-35 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn trước/sau/kính lưng. Câu hỏi chính: CR BLK 35 giá, hợp kính sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `c58ec497075a47c9535d0a97d7ab665a2ef6d2414cd2e43fd8c7e8bf19936b91` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_35_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `df7c33b073e66561e677a1affd7fea2723136ea4bfeca75a84a9758a1659b360` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_35_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
