@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `32b1b04d396a969a8ba0d48eec59589a5705edfa0e8e4fa20bfe8318ffd775cb` (commit `d4bf7f2d`) |
+| SHA-256 bản duyệt | `e87351e0591ae9e6f85d5371e3c3bdbb5443eab4b0e30ff0305361b25c3eeff5` (commit `8dc67166`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -28,7 +28,7 @@
 | # | Khối (id) | Tiêu đề | Ghi chú |
 |---|---|---|---|
 | 1 | `top` | H1 + sapo + bộ lọc nhanh | |
-| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, công suất Pha/đèn; so sánh tối đa 3 mẫu; bảng thông số |
+| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, tính năng; so sánh tối đa 3 mẫu; bảng thông số |
 | 3 | `hinh-anh-thuc-te` | Hình ảnh lắp bi gầm X-Light tại Auto365 | 8 ảnh từ các xe trong bảng case; chú thích ghi xe và mẫu theo hồ sơ |
 | 4 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
 | 5 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |

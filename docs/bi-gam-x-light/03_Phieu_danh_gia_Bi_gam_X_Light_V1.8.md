@@ -53,7 +53,7 @@ Kết luận nội dung không phải nghiệm thu live (§13.3). Mức sẵn s�
 | ID trùng | — | Script đổi thành `xlight-real-case-like-bigm-v5-js` |
 | So sánh | — | Chọn mẫu thứ 2 không tự bật popup |
 | Hồ sơ triển khai | U3 | Bỏ "chạy được ngay"; 4 điều kiện nghiệm thu; `request_id` thay `lead_id` trong danh sách trường |
-| Bố cục theo góp ý chủ quản | — | Bỏ khối "Chọn theo nhu cầu", khối "Chi phí", dải số liệu hero và nhóm lọc "Cách chọn nhiệt màu"; thêm lọc giá/cặp và công suất Pha; thêm 8 ảnh thi công đúng xe trong bảng case; FAQ 11 → 7 câu, câu mới gom hướng dẫn chọn theo nhu cầu (hiển thị + schema) |
+| Bố cục theo góp ý chủ quản | — | Bỏ khối "Chọn theo nhu cầu", khối "Chi phí", dải số liệu hero và nhóm lọc "Cách chọn nhiệt màu"; thêm lọc giá/cặp và tính năng; thêm 8 ảnh thi công đúng xe trong bảng case; FAQ 11 → 7 câu, câu mới gom hướng dẫn chọn theo nhu cầu (hiển thị + schema) |
 
 ## 3. Lỗi chặn (§12)
 
