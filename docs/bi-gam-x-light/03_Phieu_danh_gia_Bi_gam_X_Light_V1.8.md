@@ -14,7 +14,7 @@
 | Mã | Tiêu chí | Điểm xác nhận | Căn cứ (mã N) | CX / phần còn mở |
 |---|---|---:|---|---|
 | C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn theo trang sản phẩm; bảo hành 13/15 mẫu theo PDP; nội dung sửa 07–08/10 đã được kiểm duyệt kỹ thuật 08/10/2026 (N1) | — |
-| C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue + bộ lọc (hệ điện, lens, nhiệt màu, giá/cặp, Pha/đèn), 30 case có nơi lắp, 8 ảnh thi công, 7 FAQ gồm câu chọn mẫu theo nhu cầu và câu giá/VAT/công lắp (N2) | — |
+| C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue + bộ lọc (hệ điện, lens, nhiệt màu, giá/cặp, Pha/đèn), 30 case có nơi lắp, 7 FAQ gồm câu chọn mẫu theo nhu cầu và câu giá/VAT/công lắp (N2) | — |
 | C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; tiêu đề thẻ khớp thân thẻ (N3) | — |
 | **C** | | **28,5/30** | | |
 | S1 | Nhu cầu tìm kiếm và vai trò URL | 9,5/10 | Hub thương hiệu X-Light; phân vai hub tổng/PDP/case (N5) | — |
@@ -25,7 +25,7 @@
 | G2 | Lập luận phục vụ nhu cầu | 9,5/10 | FAQ "Nên chọn mẫu theo nhu cầu" nêu mẫu + lý do cho đi phố/đi tỉnh/hốc nhỏ/24V/nhiệt màu, W có giới hạn, Kelvin không quyết định độ sáng; Nhu cầu "mưa, sương mù" không còn lọc theo 3000K (mục 7.1); W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
 | G3 | Nguồn và truy nguyên | 5/5 | PDP, case, chính sách bảo hành; 2 xe Honda đã xác nhận F10 New 2025 (08/10/2026); căn cứ "chính hãng": 365Group phân phối X-Light (N1, N3) | — |
 | **G** | | **24/25** | | |
-| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → ảnh thi công → tư vấn → case → FAQ; 390/1440px không tràn, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
+| U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → tư vấn → case → FAQ; 390/1440px không tràn, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
 | U2 | Hành động tiếp theo | 5/5 | Catalogue + lọc, form, UTM snapshot, request_id; API → CRM → GA4 cho lead test đã được người phụ trách xác nhận thành công 08/10/2026 | Xoá lead test 60/87/111 khỏi CRM |
 | U3 | Bộ bàn giao nhất quán | 5/5 | 01 + 02 + 03 + 04 (phiếu duyệt) cùng hash preview; mọi xác nhận ghi người và ngày; khối kiểm tra nội bộ cuối trang dẫn tới cả 4 tài liệu và tự ẩn ngoài preview | Bản CMS v2 kiểm ở L1 |
 | **U** | | **14,5/15** | | |
@@ -53,7 +53,7 @@ Kết luận nội dung không phải nghiệm thu live (§13.3). Mức sẵn s�
 | ID trùng | — | Script đổi thành `xlight-real-case-like-bigm-v5-js` |
 | So sánh | — | Chọn mẫu thứ 2 không tự bật popup |
 | Hồ sơ triển khai | U3 | Bỏ "chạy được ngay"; 4 điều kiện nghiệm thu; `request_id` thay `lead_id` trong danh sách trường |
-| Bố cục theo góp ý chủ quản | — | Bỏ khối "Chọn theo nhu cầu", khối "Chi phí", dải số liệu hero và nhóm lọc "Cách chọn nhiệt màu"; thêm lọc giá/cặp và tính năng; thêm 8 ảnh thi công đúng xe trong bảng case; FAQ 11 → 7 câu, câu mới gom hướng dẫn chọn theo nhu cầu (hiển thị + schema) |
+| Bố cục theo góp ý chủ quản | — | Bỏ khối "Chọn theo nhu cầu", khối "Chi phí", dải số liệu hero và nhóm lọc "Cách chọn nhiệt màu"; thêm lọc giá/cặp; (khối ảnh thi công đã thêm rồi bỏ theo góp ý); FAQ 11 → 7 câu, câu mới gom hướng dẫn chọn theo nhu cầu (hiển thị + schema) |
 
 ## 3. Lỗi chặn (§12)
 

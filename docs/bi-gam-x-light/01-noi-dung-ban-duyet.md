@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `e87351e0591ae9e6f85d5371e3c3bdbb5443eab4b0e30ff0305361b25c3eeff5` (commit `8dc67166`) |
+| SHA-256 bản duyệt | `db1462e133bff8c2b43487e92fb354834b447a50945bd2c9dd0d0a2db9ecd174` (commit `8a3c4f6f`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -28,17 +28,16 @@
 | # | Khối (id) | Tiêu đề | Ghi chú |
 |---|---|---|---|
 | 1 | `top` | H1 + sapo + bộ lọc nhanh | |
-| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, tính năng; so sánh tối đa 3 mẫu; bảng thông số |
-| 3 | `hinh-anh-thuc-te` | Hình ảnh lắp bi gầm X-Light tại Auto365 | 8 ảnh từ các xe trong bảng case; chú thích ghi xe và mẫu theo hồ sơ |
-| 4 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
-| 5 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
-| 6 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
-| 7 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
-| 8 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
-| 9 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
-| 10 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 6 bài |
-| 11 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 7 câu, khớp từng chữ với FAQPage schema |
-| 12 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
+| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp; so sánh tối đa 3 mẫu; bảng thông số |
+| 3 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
+| 4 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
+| 5 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
+| 6 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
+| 7 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
+| 8 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
+| 9 | `noi-dung-lien-quan` | Bài viết & nội dung liên quan | 6 bài |
+| 10 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 7 câu, khớp từng chữ với FAQPage schema |
+| 11 | `xl-internal-check` | Kiểm tra nội bộ — bộ bàn giao | Chỉ hiện trên pages.dev/localhost; **xoá khi đăng production** |
 
 ## Dữ liệu sản phẩm (đang hiển thị)
 

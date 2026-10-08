@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `e87351e0591ae9e6f85d5371e3c3bdbb5443eab4b0e30ff0305361b25c3eeff5` (commit `8dc67166`) |
+| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `db1462e133bff8c2b43487e92fb354834b447a50945bd2c9dd0d0a2db9ecd174` (commit `8a3c4f6f`) |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
 | Ngày duyệt | 08/10/2026 (Asia/Saigon) |
@@ -20,8 +20,7 @@ Kết quả: **Đã duyệt lại toàn bộ bản trang ngày 08/10/2026.** Tra
 | Tư vấn chọn mẫu | FAQ "Nên chọn mẫu bi gầm X-Light nào theo nhu cầu?" (đi phố, đi tỉnh, hốc nhỏ, 24V, nhiệt màu) |
 | Mưa/sương | Không chọn theo nhiệt màu; tư vấn theo vùng phủ, vị trí lắp, căn Cos trên xe |
 | Căn chỉnh | Căn lại đường cắt Cos/Pha sau lắp; khách kiểm tra vùng sáng trước khi nhận xe |
-| Bộ lọc | Hệ điện, lens, nhiệt màu, giá/cặp, tính năng |
-| Ảnh thi công | 8 ảnh đúng xe và mẫu trong bảng case |
+| Bộ lọc | Hệ điện, lens, nhiệt màu, giá/cặp |
 | FAQ | 7 câu, khớp FAQPage schema |
 
 ## 2. Dữ kiện thương mại và hồ sơ đã chốt
