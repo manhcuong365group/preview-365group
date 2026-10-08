@@ -19,28 +19,25 @@
 | **C** | | **28,5/30** | | |
 | S1 | Nhu cầu tìm kiếm và vai trò URL | 9,5/10 | Hub thương hiệu X-Light; phân vai hub tổng/PDP/case (N5) | — |
 | S2 | Nội dung SEO trên trang | 9,5/10 | Title/H1/meta; credit thống nhất; Brand X-Light nối vào TechArticle bằng `mentions`; 3/3 bảng có `th scope` (N4) | Graph @id bản CMS v2 do CMS chốt |
-| S3 | Liên kết và hồ sơ triển khai | 9/10 | 9 link 301 đã đổi về URL cuối; hồ sơ CMS, đoạn link soạn sẵn, ghi chú release v2 (N5) | **CX:** link vào từ hub tổng/PDP/case và URL production chưa triển khai — tối đa +1 |
-| **S** | | **28/30** | | Khoảng 28–29 |
+| S3 | Liên kết và hồ sơ triển khai | 9,5/10 | Link trong trang trỏ URL cuối (9 link 301 đã sửa); canonical, Schema, đoạn link về hub soạn sẵn, hướng dẫn CMS và ghi chú release v2 (N5) | Link vào từ hub tổng/PDP/case và URL production 200 thuộc giai đoạn sau xuất bản (§13.1 bước 7, §13.3) — kiểm ở L2/L7, không tính vào điểm nội dung |
+| **S** | | **28,5/30** | | Đạt ngưỡng 28,5 (vừa đủ) |
 | G1 | Câu trả lời rõ, đủ ngữ cảnh | 9,5/10 | Giá/đơn vị/VAT/điện áp/cơ chế màu đứng cạnh nhau | — |
 | G2 | Lập luận phục vụ nhu cầu | 9,5/10 | FAQ "Nên chọn mẫu theo nhu cầu" nêu mẫu + lý do cho đi phố/đi tỉnh/hốc nhỏ/24V/nhiệt màu, W có giới hạn, Kelvin không quyết định độ sáng; Nhu cầu "mưa, sương mù" không còn lọc theo 3000K (mục 7.1); W có giới hạn; "đã lắp" tách "hồ sơ liên quan" | — |
-| G3 | Nguồn và truy nguyên | 4,5/5 | PDP, case, chính sách bảo hành; bỏ tuyên bố "bảng test chuyên dụng" và "phân phối chính thức" khi chưa có hồ sơ (N1, N3) | **CX:** phiên bản thi công 2 xe Honda — tối đa +0,5 |
-| **G** | | **23,5/25** | | Khoảng 23,5–24 |
+| G3 | Nguồn và truy nguyên | 5/5 | PDP, case, chính sách bảo hành; 2 xe Honda đã xác nhận F10 New 2025 (08/10/2026); căn cứ "chính hãng": 365Group phân phối X-Light (N1, N3) | — |
+| **G** | | **24/25** | | |
 | U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → ảnh thi công → tư vấn → case → FAQ; 390/1440px không tràn, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
-| U2 | Hành động tiếp theo | 4,5/5 | Catalogue, form, UTM snapshot, request_id; so sánh không tự bật popup | **CX:** API → CRM → GA4 cho lead 60/87/111 — tối đa +0,5 |
-| U3 | Bộ bàn giao nhất quán | 4/5 | 01 + 02 + 03 cùng hash preview | **CX:** hash/release bản CMS v2 — tối đa +1 |
-| **U** | | **13/15** | | Khoảng 13–14,5 |
-| **Tổng** | | **93/100 đã xác nhận** | | **Khoảng còn mở 93–96** |
+| U2 | Hành động tiếp theo | 5/5 | Catalogue + lọc, form, UTM snapshot, request_id; API → CRM → GA4 cho lead test đã được người phụ trách xác nhận thành công 08/10/2026 | Xoá lead test 60/87/111 khỏi CRM |
+| U3 | Bộ bàn giao nhất quán | 4,5/5 | 01 + 02 + 03 cùng hash preview | Xác nhận kỹ thuật/thương mại mới ghi qua chat, chưa có phiếu duyệt ký tên; bản CMS v2 kiểm ở L1 |
+| **U** | | **14/15** | | |
+| **Tổng** | | **95/100 đã xác nhận** | | C 28,5 · S 28,5 · G 24 · U 14 |
 
 ## 2. Kết luận theo V1.8 (§11.3, §13.3)
 
-**CHƯA ĐỦ BẰNG CHỨNG.** Điểm đã xác nhận 93/100 (S 28 = 9,33/10; G 23,5 = 9,40/10). Mức tối đa còn có thể đạt là tổng 96, S 29, G 24, đều vượt ngưỡng 95 / 28,5 / 23,75. Vì vậy theo §11.3 chưa được kết luận "chưa đạt". Các CX trọng yếu có thể đổi kết luận:
+**CHƯA ĐỦ BẰNG CHỨNG — chỉ còn 1 CX.** Điểm đã xác nhận 95/100 (S 28,5 = 9,50/10; G 24 = 9,60/10), đủ cả ba ngưỡng 95 / 28,5 / 23,75 (S vừa đúng ngưỡng). Không có lỗi chặn.
 
-- S3: link vào từ hub tổng/PDP/case; URL production trả 200.
-- U3: bản CMS v2 build lại từ mã nguồn này, có hash/release ID.
-- U2: CRM/GA4 xác nhận lead test 60, 87, 111 rồi xoá.
-- G3: xưởng đối chiếu phiên bản thi công 2 xe Honda.
+CX trọng yếu còn lại: nội dung sửa 07–08/10 (FAQ chọn theo nhu cầu, câu mưa/sương, căn chỉnh, lọc Pha/giá, bố cục) chưa được người kiểm duyệt kỹ thuật xác nhận lại. Nếu kiểm duyệt phát hiện sai, C1/G2 có thể giảm dưới ngưỡng. Khi Nguyễn Quang Đạo ký phiếu duyệt bản này → **ĐẠT NỘI DUNG V1.8**, cập nhật `lastReviewed` và dòng "duyệt ngày".
 
-Không có lỗi chặn nội dung đã xác nhận (§3).
+Tách riêng (không phải điểm nội dung): link vào từ hub/PDP/case, URL production 200, bản CMS v2 — nghiệm thu Live L1–L8 sau khi đăng.
 
 ### Đã sửa ngày 08/10/2026 (gồm góp ý chủ quản cùng ngày)
 
@@ -79,8 +76,8 @@ Không có lỗi chặn nội dung đã xác nhận (§3).
 2. ~~Ngày hiệu lực giá~~ — đã chốt 06/10/2026.
 3. CMS chốt graph schema/`@id` bản v2, gộp khối địa điểm trùng → S2, C3.
 4. Dán link về hub theo `doan-link-ve-hub.md`; đăng URL production → S3.
-5. Xưởng đối chiếu 2 xe Honda → G3.
-6. CRM xác nhận lead 60/87/111 rồi xoá → U2.
+5. ~~Xưởng đối chiếu 2 xe Honda~~ — đã xác nhận F10 New 2025 ngày 08/10/2026.
+6. ~~CRM xác nhận lead test~~ — xác nhận thành công 08/10/2026; còn xoá lead 60/87/111.
 7. ~~Căn cứ chính hãng~~ — đã xác nhận 08/10/2026: 365Group phân phối chính hãng X-Light, Auto365 thuộc 365Group. Còn biên bản căn chỉnh thì mới ghi phương pháp → G3.
 8. Người kiểm duyệt xác nhận phần sửa 07–08/10 thì cập nhật `lastReviewed` → C1.
 9. CMS điền `datePublished` = ngày đăng production đầu tiên.

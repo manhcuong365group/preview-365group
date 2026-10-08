@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `1fc127d7ae166a4c86fb0c0d0d5612e4b1c6cc823421ce5d4a3ee766bf46d9a5` (commit `49643020`) |
+| SHA-256 bản duyệt | `0ff35033be43bb865ddaec1cebb2e7de1eb57cf3217bb4333a15bc026604f63e` (commit `7fc5d10e`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 06/10/2026 (schema `lastReviewed` 2026-10-06). Nội dung sửa 07–08/10 theo V1.8, `dateModified` 2026-10-08; dòng cuối FAQ ghi "duyệt ngày 06/10/2026. Cập nhật nội dung 08/10/2026" |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -65,7 +65,7 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 ## Hồ sơ xe (case)
 
 - 30 case, mỗi dòng gắn với **URL sản phẩm mà chính bài case dẫn tới** (`data-sku`), không ghép theo tên.
-- 30/30 gắn SKU theo link sản phẩm trong bài case. **Honda City** và **Honda CR-V 1.5L L 2018** (bài ghi "F10 New") gắn **F10 New 2025** vì bài case dẫn tới trang sản phẩm này — quyết định 03/10/2026. Từ 05/10: 2 xe này có `data-verify="linked"`, hiển thị "Hồ sơ liên quan (chưa đối chiếu phiên bản thi công)", không tính là "đã lắp" cho tới khi xưởng xác nhận.
+- 30/30 gắn SKU theo link sản phẩm trong bài case. **Honda City** và **Honda CR-V 1.5L L 2018** dùng **F10 New 2025** — đã xác nhận phiên bản thi công ngày 08/10/2026, hiển thị như các case đã lắp khác.
 - Nơi lắp lấy từ bài case: 29/30 ghi Auto365 – Trụ sở chính; Hyundai Tucson "hồ sơ chưa ghi".
 - Đời xe lấy từ hồ sơ: XL7 2023, Outlander 2021; City, Tucson, Limo Green ghi "hồ sơ chưa ghi đời".
 
@@ -86,3 +86,5 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Bỏ khối "Chọn theo nhu cầu" và "Chi phí lắp gồm những gì" | Theo góp ý chủ quản; nhu cầu còn ở bộ lọc nhanh đầu trang, chi phí còn ở sapo/FAQ/form | 08/10/2026 |
 | FAQ còn 6 câu; bỏ dải số liệu hero; thêm khối ảnh thi công | Theo góp ý chủ quản | 08/10/2026 |
 | Chính hãng | 365Group phân phối chính hãng X-Light; Auto365 thuộc 365Group, nên các câu "chính hãng" trên trang có căn cứ | 08/10/2026 |
+| Case Honda City / CR-V 2018 | Xác nhận phiên bản thi công F10 New 2025; bỏ nhãn "chưa đối chiếu" | 08/10/2026 |
+| Lead test → CRM/GA4 | Người phụ trách xác nhận thành công; còn xoá lead 60/87/111 | 08/10/2026 |
