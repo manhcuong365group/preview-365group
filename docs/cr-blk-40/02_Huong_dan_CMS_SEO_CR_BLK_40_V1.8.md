@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-40.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-40)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: trang sản phẩm/mã phim. Câu hỏi chính: CR BLK 40 dùng cho kính lái ra bao nhiêu %, giá, có nên chọn không.
-- Phiên bản bàn giao: HTML SHA-256 `c1d5af4f115fd9b9f9584ca6af9888f7e09b1609fffe5da19373ae03b36eda0b` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `ea75424ac92b8e9bbabe835d4c6170b526eb9f0a429801a675f1dc6071fc756b` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - datePublished: 2026-10-06 · dateModified: 2026-10-08 (chỉ đổi dateModified khi sửa nội dung thật)
 
@@ -29,7 +29,7 @@
 ## 3. Nguồn
 
 - 3M Crystalline TDS Revision F, 08/2025 (CR BLK 40/50/60/35): https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf
-- 3M Crystalline CR BLK TDS Revision E, 05/2024 (hàng CR BLK 15 trong popup)
+- Brochure 3M Crystalline CR BLK Việt Nam ©2025: https://multimedia.3m.com/mws/media/2625471O/cbtd-personal-auto-2025.pdf (CR BLK 15 trong popup)
 - 3M Ceramic IR TDS Revision B, 07/2021 (IR50/25/15 trong popup)
 - 3M Việt Nam, phim ô tô (bảo hành lên tới 10 năm): https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/
 

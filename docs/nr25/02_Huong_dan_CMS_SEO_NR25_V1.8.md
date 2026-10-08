@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr25.html` (preview https://preview-365group.pages.dev/ma-phim/nr25)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-25 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau/cửa sổ trời dòng Ceramic NR; kính lái dùng NR35. Câu hỏi chính: NR25 giá, hợp sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `3c08df2fc33be1c423c6cd71200754ed367be0f50efdcaf44dde98a89f6b3e19` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR25_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `3ed634080bbbc94f9f002dc7e0801c8cc59bf7def099c0ff0bf8306ecad5d3b8` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR25_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
@@ -15,7 +15,7 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 - Tóm tắt nhanh: thêm dòng chính sách kính lái ("NR25 được cân nhắc cho sườn, lưng, cửa sổ trời; kính lái dùng NR35").
 - Thẻ so sánh NR25 viết lại; thẻ sườn trước/sườn sau và FAQ sườn trước chuyển sang giọng điều kiện (bỏ "dễ nhìn gương" khẳng định).
-- Service.offers tách 3 Offer (cặp sườn, kính lưng, cửa sổ trời nhỏ); popup nhãn cửa sổ trời có VAT và "panorama báo giá theo xe".
+- Service.offers tách 3 Offer (cặp sườn, kính lưng, cửa sổ trời nhỏ); popup nhãn cửa sổ trời có VAT và "panorama từ 2.600.000đ, báo giá theo kích thước và rèm che thực tế".
 
 **Sửa dùng chung (cả 9 trang mã phim)**: popup ghi chú quan sát theo vị trí + link "So với …" (CR BLK 15/IR15/NR15 ở sườn trước); nhãn giá có "đã gồm VAT"; nguồn thông số theo mã (trường SRC); nhãn ưu tiên "Kín hơn (độ truyền sáng thấp)" kèm dòng giải thích xếp theo VLT; form lead (trả focus về nút mở popup, khóa Tab trong hộp thoại, xóa trạng thái cũ mỗi lần mở, sau gửi thành công nhãn "Bạn đang quan tâm" luôn bằng gói ẩn, tùy chọn nhu cầu theo gói); tên điểm "Auto365.vn - Trụ Sở Chính" (gạch ngang thường); "điểm phần trăm" thay cho "điểm".
 

@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/nr5.html` (preview https://preview-365group.pages.dev/ma-phim/nr5)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-nr-5 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/kính lưng/cửa sổ trời dòng Ceramic NR (không dùng kính lái, sườn trước). Quy tắc kính lưng cập nhật 06/10/2026 theo Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026): NR25/NR15/NR5 cùng 1.900.000đ/kính lưng; quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi. Câu hỏi chính: NR5 kín đến đâu, giá, khác NR15.
-- Phiên bản bàn giao: HTML SHA-256 `2e4d538812205e816558719a3611d60b64ab0421e86bd93ae71b32b7b5a03102` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR5_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `bb9f0f6660095800bab8e84bcd47a13b3a4f2109ba650caef0a4f51a09822e4f` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_NR5_V1.8.md`
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
 ## 1. Bối cảnh các sửa đổi

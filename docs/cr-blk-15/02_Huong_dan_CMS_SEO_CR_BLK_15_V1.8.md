@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-15.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-15)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/kính lưng. Câu hỏi chính: CR BLK 15 có hợp xe của tôi không, giá, nhìn ra ngoài thế nào.
-- Phiên bản bàn giao: HTML SHA-256 `cc6037c01a7428c0a47f4c1ce266db0cc16967d61965ef88f2d54379953fcb40` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `d4aced2c191adbec7da7946c50c0ddf03e2df8b8d03c8400a7a0ce9f2f9e87f4` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_15_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
@@ -48,13 +48,13 @@ Sếp duyệt preview lúc khoảng 18:00 ngày 05/10/2026 và yêu cầu chỉn
 
 ## 5. Nguồn
 
-- Thông số trang: VLT 14, TSER 64, IRER 66, giảm chói 81 (kính Auto 75; TDS Crystalline Rev E 05/2024).
+- Thông số trang: VLT 14, TSER 64, IRER 66, giảm chói 81 (kính Auto 75; brochure 3M Việt Nam ©2025).
 - Bảo hành (3M Việt Nam, lên tới 10 năm): https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/products/automotive-window-tint/
 - Crystalline TDS Rev F 08/2025: https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf ; Ceramic IR TDS Rev B 07/2021: https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf
 
 ## 6. Còn chờ dữ liệu (CX)
 
-- TDS Crystalline Rev E 05/2024 (hàng CR BLK 15) đã có link công khai trên trang (multimedia.3m.com, mã 2672231O); Rev F 08/2025 không còn hàng 15, nên giữ Rev E làm nguồn cho CR BLK 15.
+- Brochure 3M Crystalline CR BLK Việt Nam ©2025 (CR BLK 15) đã có link công khai trên trang (multimedia.3m.com); CR BLK 60/50/40/35 theo TDS Rev F 08/2025.
 - Giá kính lưng 4.100.000đ và cửa sổ trời 1.300.000đ trên live: chưa xác nhận, không đưa vào bản mới.
 - Ảnh máy đo trên trang: chủ trang đã duyệt 06/10/2026 (xác nhận của chủ trang, không phải kiểm định độc lập); biên bản đo gốc dạng file vẫn chưa có. Back-link Subaru/Viloran vẫn là việc team (câu anchor có sẵn ở mục 4); S3 giữ 9,5.
 - Văn bản chính sách bảo hành riêng theo từng mã phim tại Việt Nam (trang đang dùng câu "lên đến 10 năm theo chính sách 3M Việt Nam" do chủ trang xác nhận).

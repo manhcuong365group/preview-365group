@@ -32,6 +32,8 @@ Cập nhật 06/10/2026 (đợt 2): áp dụng góp ý kiểm độc lập (ngà
 
 Đợt 3 (06/10/2026): áp dụng thêm góp ý kiểm độc lập (câu IRER/IRR, giá và đơn vị, caption bảng, phạm vi Pro Shop, mô tả thiết bị). Điểm giữ nguyên.
 
+Đợt 4 (08/10/2026): đối chiếu giá/quyền lợi/chứng nhận với trang chuẩn https://auto365.vn/phim-cach-nhiet-o-to-3m; panorama từ 2.600.000đ; nguồn CR BLK 15 chuyển sang brochure Việt Nam ©2025. Điểm giữ nguyên.
+
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
@@ -65,7 +67,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-35.html`, SHA-256 `07cb2576b03b90091832104d155d5c85ee3f0a27b20f48426541114549174ca2` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-35.html`, SHA-256 `b4f2cda9d1022cbf49956677377df77c1022cdabe1faa7efc70f8946e8de0739` (kiểm 06/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|

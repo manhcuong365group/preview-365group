@@ -5,25 +5,25 @@ Các mục dưới đây cần quyết định hoặc thao tác của người c
 
 ## 1. Xác nhận thương mại (Kinh doanh) — một văn bản cho cả 10 trang
 
-Các giá trị đang hiển thị trên preview, đều ghi "đã gồm VAT". Kinh doanh xác nhận đúng/sai từng dòng, mốc hiệu lực và phạm vi.
+Các giá trị đang hiển thị trên preview, đều ghi "đã gồm VAT". Giá đã được đối chiếu và khớp trang chuẩn https://auto365.vn/phim-cach-nhiet-o-to-3m (08/10/2026); Kinh doanh chỉ cần xác nhận các câu hỏi bổ sung bên dưới (mốc hiệu lực, phạm vi áp dụng).
 
-| Hạng mục | Giá hiển thị | Xác nhận (Đúng/Sửa thành) |
+| Hạng mục | Giá hiển thị | Xác nhận |
 |---|---|---|
-| CR BLK 60 / 50 kính lái | 5.700.000đ / kính | |
-| CR BLK 40 kính lái | 6.500.000đ / kính | |
-| IR50 kính lái | 3.300.000đ / kính | |
-| NR35 kính lái | 2.600.000đ / kính | |
-| Kính sườn (1 cặp) CR BLK 35/15 | 2.600.000đ | |
-| Kính sườn (1 cặp) IR25/IR15 | 1.800.000đ | |
-| Kính sườn (1 cặp) NR25/NR15/NR5 | 1.700.000đ | |
-| Kính lưng CR BLK 35/15 | 4.100.000đ | |
-| Kính lưng IR25/IR15 | 2.300.000đ | |
-| Kính lưng NR25/NR15/NR5 | 1.900.000đ | |
-| Cửa sổ trời nhỏ NR | từ 850.000đ, tùy xe; panorama báo giá theo xe | |
-| Cửa sổ trời CR BLK 15 / IR15 | báo giá theo xe | |
-| Gói CR BLK Pro / CR BLK | 12,9/15,5/18,3 tr · 12,2/14,8/17,6 tr (Minicar/Sedan/SUV) | |
-| Gói Hybrid Pro / Hybrid | 9,8/11,6/13,3 tr · 9,0/10,8/12,5 tr | |
-| Gói Ceramic Hybrid / Ceramic IR | 5,9/7,9/9,5 tr · 7,2/9,0/10,5 tr | |
+| CR BLK 60 / 50 kính lái | 5.700.000đ / kính | Khớp trang chuẩn 08/10/2026 |
+| CR BLK 40 kính lái | 6.500.000đ / kính | Khớp trang chuẩn 08/10/2026 |
+| IR50 kính lái | 3.300.000đ / kính | Khớp trang chuẩn 08/10/2026 |
+| NR35 kính lái | 2.600.000đ / kính | Khớp trang chuẩn 08/10/2026 |
+| Kính sườn (1 cặp) CR BLK 35/15 | 2.600.000đ | Khớp trang chuẩn 08/10/2026 |
+| Kính sườn (1 cặp) IR25/IR15 | 1.800.000đ | Khớp trang chuẩn 08/10/2026 |
+| Kính sườn (1 cặp) NR25/NR15/NR5 | 1.700.000đ | Khớp trang chuẩn 08/10/2026 |
+| Kính lưng CR BLK 35/15 | 4.100.000đ | Khớp trang chuẩn 08/10/2026 |
+| Kính lưng IR25/IR15 | 2.300.000đ | Khớp trang chuẩn 08/10/2026 |
+| Kính lưng NR25/NR15/NR5 | 1.900.000đ | Khớp trang chuẩn 08/10/2026 |
+| Cửa sổ trời nhỏ NR | từ 850.000đ, tùy diện tích; panorama từ 2.600.000đ, báo giá theo kích thước và rèm che thực tế | Khớp trang chuẩn 08/10/2026 |
+| Cửa sổ trời CR BLK 15 / IR15 | báo giá theo xe | Khớp trang chuẩn 08/10/2026 |
+| Gói CR BLK Pro / CR BLK | 12,9/15,5/18,3 tr · 12,2/14,8/17,6 tr (Minicar/Sedan/SUV) | Khớp trang chuẩn 08/10/2026 |
+| Gói Hybrid Pro / Hybrid | 9,8/11,6/13,3 tr · 9,0/10,8/12,5 tr | Khớp trang chuẩn 08/10/2026 |
+| Gói Ceramic Hybrid / Ceramic IR | 5,9/7,9/9,5 tr · 7,2/9,0/10,5 tr | Khớp trang chuẩn 08/10/2026 |
 
 Cần trả lời thêm:
 1. Giá đã gồm VAT và công dán, tháo + vệ sinh phim cũ miễn phí: áp dụng mọi điểm hay theo điều kiện? ______
@@ -33,16 +33,16 @@ Cần trả lời thêm:
 5. Điểm nào là 3M Pro Shop / Training Center được chứng nhận (đối chiếu 4 giấy chứng nhận trên trang)? ______
 Người xác nhận / ngày: ______
 
-Sau khi có xác nhận: nếu khác giá hiển thị, báo Claude để sửa đồng loạt (HTML, FAQ, JSON-LD, bộ gợi ý).
+Nếu Kinh doanh trả lời khác giá hiển thị, báo Claude để sửa đồng loạt (HTML, FAQ, JSON-LD, bộ gợi ý).
 
-## 2. Chốt nguồn số liệu NR và CR BLK 15 (Kỹ thuật/Master Data)
+## 2. Nguồn số liệu NR và CR BLK 15 (Kỹ thuật/Master Data) — đã quyết định
 
-- NR: trang đang dùng Catalog 3M Ceramic NR Việt Nam 03/2026 (bảng 4 mã, kính xanh 6 mm, nền 73%). Master Data nội bộ ghi TDS NR 01/2026 với bộ số khác (ví dụ NR15 VLT 12%). Hai bộ không được trộn trong cùng trang.
-  - Đề xuất: giữ catalog VN 03/2026 cho các trang Việt Nam (đúng thị trường, đã có PDF công khai), và thêm catalog này vào registry kèm ngày/người xác nhận. Nếu chọn TDS 01/2026 thì báo Claude để đổi toàn bộ số NR ở 4 trang + bộ gợi ý.
-  - Quyết định: ______ Người/ngày: ______
-- CR BLK 15: trang đang dẫn TDS Rev E 05/2024 (theo quyết định chủ trang). Registry v9.0 xếp Rev E là lưu trữ và dùng brochure CR BLK Việt Nam 2025 (số 14/64/81 khớp cả hai). Quyết định giữ Rev E hay đổi nhãn sang brochure: ______
+- NR: dùng Catalog 3M Ceramic NR Việt Nam 03/2026 (bảng 4 mã, kính xanh 6 mm, nền 73%). Không trộn với bộ số TDS NR 01/2026 trong Master Data nội bộ. Cần thêm catalog này vào registry kèm ngày/người xác nhận.
+- CR BLK 15: dùng Brochure 3M Crystalline CR BLK Việt Nam ©2025 (https://multimedia.3m.com/mws/media/2625471O/cbtd-personal-auto-2025.pdf). Số 14/64/81 giữ nguyên; CR BLK 60/50/40/35 theo TDS Rev F 08/2025.
 
 ## 3. Upload catalog PDF lên production (IT/CMS)
+
+Vì sao cần upload / nếu không: link tương đối `assets/` chỉ chạy ở preview; trên auto365.vn sẽ 404, khách bấm nguồn gặp lỗi, mất truy nguyên (G3/S3) và ảnh chứng nhận bị vỡ.
 
 1. Upload `auto365/ma-phim/assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf` (6,2 MB) và các ảnh trong `assets/` lên kho tài sản của CMS; ghi lại URL thật.
 2. Thay mọi `href="assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf"` và `src="assets/…"` trong 10 trang bằng URL thật. Lệnh gợi ý (chạy sau khi có URL, ví dụ BASE):

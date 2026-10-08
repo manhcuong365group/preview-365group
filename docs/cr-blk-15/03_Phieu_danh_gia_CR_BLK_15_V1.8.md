@@ -8,7 +8,7 @@
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 10 | Thông số khớp TDS Rev E (hàng CR BLK 15; Rev F không còn hàng này) và trang đã link công khai tới Rev E trên multimedia.3m.com (kiểm 06/10/2026); giá có VAT; bảo hành nêu đúng cách đã xác nhận |
+| C1 | 10 | 10 | Thông số CR BLK 15 khớp Brochure 3M Crystalline CR BLK Việt Nam ©2025 và trang đã link công khai tới brochure này trên multimedia.3m.com (kiểm 06/10/2026); giá có VAT; bảo hành nêu đúng cách đã xác nhận |
 | C2 | 10 | 9,5 | Có thông số, vị trí, so sánh 15/35, giá sườn, FAQ 7 câu, quy trình; thiếu giá lưng/cửa sổ trời (chưa xác nhận) |
 | C3 | 10 | 9,5 | Đã bỏ nhấn mạnh tối; chỉ còn nhắc điều kiện chiều tối/thiếu sáng theo yêu cầu, giọng trung tính |
 | S1 | 10 | 9,5 | Intent rõ, giữ URL hiện có |
@@ -16,7 +16,7 @@
 | S3 | 10 | 9,5 | Schema nối @id; 61 link http(s) của trang kiểm 06/10/2026 (non-200: ews2.3m.com 503 và trang 3m.com.vn timeout từ máy kiểm, cả hai đã biết); câu anchor back-link Subaru/Viloran đã liệt kê sẵn ở file 02 mục 4 (việc team, chưa gắn); chưa kiểm live |
 | G1 | 10 | 9,5 | Câu trích riêng đúng chủ thể, phạm vi tư vấn Auto365 |
 | G2 | 10 | 9,5 | Có đánh đổi 15 vs 35, hướng dẫn xem mẫu khi thiếu sáng |
-| G3 | 5 | 5 | TDS Rev E có link; ảnh máy đo chủ trang đã duyệt 06/10/2026; 8 thẻ case đều ghi CR BLK 15 kèm vị trí theo từng bài và có link bài; biên bản đo gốc dạng file trang không tuyên bố nên không trừ (back-link tính ở S3) |
+| G3 | 5 | 5 | Brochure Việt Nam ©2025 có link; ảnh máy đo chủ trang đã duyệt 06/10/2026; 8 thẻ case đều ghi CR BLK 15 kèm vị trí theo từng bài và có link bài; biên bản đo gốc dạng file trang không tuyên bố nên không trừ (back-link tính ở S3) |
 | U1 | 5 | 5 | Preview 375/1280px không tràn ngang (puppeteer); thiết bị thật tính ở L5 |
 | U2 | 5 | 4,5 | Popup + form chạy đúng: Esc trả focus, khóa Tab, nhãn quan tâm = gói ẩn sau gửi thử |
 | U3 | 5 | 5 | Bảng đối chiếu cuối phiếu khớp, quét ghi chú nội bộ sạch |
@@ -32,13 +32,15 @@ Cập nhật 06/10/2026 (đợt 2): áp dụng góp ý kiểm độc lập (ngà
 
 Đợt 3 (06/10/2026): áp dụng thêm góp ý kiểm độc lập (câu IRER/IRR, giá và đơn vị, caption bảng, phạm vi Pro Shop, mô tả thiết bị). Điểm giữ nguyên.
 
+Đợt 4 (08/10/2026): đối chiếu giá/quyền lợi/chứng nhận với trang chuẩn https://auto365.vn/phim-cach-nhiet-o-to-3m; panorama từ 2.600.000đ; nguồn CR BLK 15 chuyển sang brochure Việt Nam ©2025. Điểm giữ nguyên.
+
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
 
 ## N1–N5
 
 | Mã | Kết quả |
 |---|---|
-| N1 dữ kiện có nguồn | Đáp ứng một phần: VLT 14, TSER 64, IRER 66, giảm chói 81 (kính Auto 75; TDS Crystalline Rev E 05/2024); nguồn không có URL công khai ghi rõ ở mục CX |
+| N1 dữ kiện có nguồn | Đáp ứng một phần: VLT 14, TSER 64, IRER 66, giảm chói 81 (kính Auto 75; brochure 3M Việt Nam ©2025); nguồn không có URL công khai ghi rõ ở mục CX |
 | N2 trả lời hỗ trợ quyết định | Đáp ứng (so sánh mã, FAQ 7 câu, popup chọn mã có ghi chú quan sát có điều kiện) |
 | N3 bằng chứng năng lực | Một phần: case trong trang; biên bản đo gốc chưa có |
 | N4 thực thể | Đáp ứng: publisher Organization, provider AutoRepair "Auto365.vn - Trụ Sở Chính", brand 3M, Product/Service |
@@ -65,7 +67,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-15.html`, SHA-256 `cc6037c01a7428c0a47f4c1ce266db0cc16967d61965ef88f2d54379953fcb40` (kiểm 06/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-15.html`, SHA-256 `d4aced2c191adbec7da7946c50c0ddf03e2df8b8d03c8400a7a0ce9f2f9e87f4` (kiểm 06/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|
@@ -74,7 +76,7 @@ Phiên bản bàn giao: HTML `auto365/ma-phim/cr-blk-15.html`, SHA-256 `cc6037c0
 | dateModified | 2026-10-06 (không có datePublished) | cùng | cùng | Có |
 | Số FAQ | 7 (HTML = JSON-LD) | 7 | 7 | Có |
 | Giá | Từ 2.600.000đ / một cặp kính sườn, đã gồm VAT và công dán; Service minPrice 2.600.000 VND; kính lưng/cửa sổ trời "báo giá theo xe" (không công bố số); minPrice trong schema: [2600000] | cùng | cùng | Có |
-| Thông số | 14%VLT · truyền sáng | 64%TSER · tổng năng lượng | 66%IRER · dải rộng | 81%Giảm chói | VLT 14, TSER 64, IRER 66, giảm chói 81 (kính Auto 75; TDS Crystalline Rev E 05/2024) | cùng | Có |
+| Thông số | 14%VLT · truyền sáng | 64%TSER · tổng năng lượng | 66%IRER · dải rộng | 81%Giảm chói | VLT 14, TSER 64, IRER 66, giảm chói 81 (kính Auto 75; brochure 3M Việt Nam ©2025) | cùng | Có |
 | Ghi chú nội bộ trong bản đăng | Không có (quét TODO, CX, SSOT, "nội bộ", "mã hồ sơ", lorem) | — | — | Có |
 
 Điểm U3 chỉ áp dụng cho phiên bản này. Khi HTML thay đổi, cập nhật mã băm, ngày và bảng này trong cùng lần sửa.
