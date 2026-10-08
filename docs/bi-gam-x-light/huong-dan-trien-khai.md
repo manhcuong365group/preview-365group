@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `ab49e09d1c204b4fea2ad034a489d86d88c79e6982f56cffba96037e91b5a8df` (commit `fb777f2b`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `105185769d4f45820127c9424d27a17004d0c1ed2d00b2c9687ae168804e75f5` (commit `e03f5c8c`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, duyệt lại toàn bộ bản này ngày 08/10/2026 (dòng cuối mục FAQ ghi "duyệt ngày 08/10/2026. Cập nhật 08/10/2026"; schema `dateModified` và `lastReviewed` 2026-10-08). Phiếu duyệt: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md). Ngày hiệu lực giá niêm yết: 06/10/2026; ngày đối chiếu thông số: 06/10/2026, dải thông số tản nhiệt: 08/10/2026.

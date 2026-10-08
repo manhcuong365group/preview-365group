@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `ab49e09d1c204b4fea2ad034a489d86d88c79e6982f56cffba96037e91b5a8df` (commit `fb777f2b`) |
+| SHA-256 bản duyệt | `105185769d4f45820127c9424d27a17004d0c1ed2d00b2c9687ae168804e75f5` (commit `e03f5c8c`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -33,7 +33,7 @@
 | 4 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
 | 5 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do có ảnh (6 ảnh minh họa có ghi "ảnh minh họa" trong alt); 90+ chi nhánh · 33 tỉnh thành |
 | 6 | `diem-lap` | Trụ sở chính + danh bạ chi nhánh | |
-| 7 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
+| 7 | `hieu-ve-x-light` | Hiểu nhanh về bi gầm X-Light | Khối "3 điều cần kiểm để chọn đúng bi gầm X-Light" (`#kien-thuc`) + accordion: các dòng, mẫu hay phân vân, hàng chính hãng, thương hiệu |
 | 8 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Trái: video VF6 · F10 Turbo V2 (bấm để phát, youtube-nocookie); phải: form gửi `/api/leads` |
 | 9 | `cam-nang-lien-quan` | Cẩm nang ánh sáng liên quan | 1 bài lớn + 3 bài (mobile vuốt ngang); link "Đèn gầm dạng rời", "Xe thực tế", "Xem tất cả" ở đầu khối |
 | 10 | `faq` | Câu hỏi thường gặp về bi gầm X-Light | 7 câu, khớp từng chữ với FAQPage schema |
@@ -90,3 +90,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Số chi nhánh hiển thị | "90+ chi nhánh" thay "91 chi nhánh" | 08/10/2026 |
 | Lọc tản nhiệt | Lấy từ dải thông số trang sản phẩm: 7 chủ động (quạt), 6 thụ động; F10 Hyper 2.0 và F10 2.0 inch không ghi nên không xếp nhóm. Nhóm "Nhân LED", "Tính năng", "Công suất Pha" đã thử rồi bỏ | 08/10/2026 |
 | Bố cục cuối ngày 08/10 | Bỏ khối "Bài viết & nội dung liên quan" (link riêng chuyển lên đầu khối Cẩm nang); khối video + form đặt ngay trên Cẩm nang; ảnh 6 lý do thay bằng ảnh minh họa mới, bỏ nhãn đỏ trên ảnh | 08/10/2026 |
+| Khối "3 điều cần kiểm" | Chuyển từ dưới form vào đầu mục "Hiểu nhanh"; anchor `#kien-thuc` giữ nguyên | 08/10/2026 |

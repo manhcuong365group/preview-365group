@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `ab49e09d1c204b4fea2ad034a489d86d88c79e6982f56cffba96037e91b5a8df` (commit `fb777f2b`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
+| Bản chấm | `auto365/bi-gam-x-light/index.html` — SHA-256 `105185769d4f45820127c9424d27a17004d0c1ed2d00b2c9687ae168804e75f5` (commit `e03f5c8c`), cùng mã với [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
 | Ngày chấm | 05/10/2026 (tự chấm lại sau tái kiểm 05/10 của người duyệt) |
 | Loại chấm | Tự chấm bản preview — **chưa phải phiếu nghiệm thu chính thức**; người duyệt chấm lại theo mã |
 | Người kiểm duyệt nội dung | Nguyễn Quang Đạo (06/10/2026) |
