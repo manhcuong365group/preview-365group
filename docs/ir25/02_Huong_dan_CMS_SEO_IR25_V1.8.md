@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/ir25.html` (preview https://preview-365group.pages.dev/ma-phim/ir25)
 - URL production giữ nguyên: https://auto365.vn/ir25 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn/kính sau dòng Ceramic IR. Câu hỏi chính: IR25 giá, hợp kính sườn trước không.
-- Phiên bản bàn giao: HTML SHA-256 `a6e5f5eab28f8c54e7b55754daa5efcaf926762e1aa5aae1a0d53b5bc6f1a938` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR25_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `b6282f783c48823e5969fa98d592096e56474e67195f83b6af81371740dd99b9` (06/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR25_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-06; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 
