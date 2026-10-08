@@ -7,13 +7,13 @@
 | Môi trường | **Preview/staging** (`preview-365group.pages.dev`, `noindex`). Bản CMS v2 (`v2.auto365.vn`) cần nhận lại mã nguồn này — xem mục "Ghi chú release cho CMS v2" trong [huong-dan-trien-khai.md](huong-dan-trien-khai.md) |
 | Ngày chấm | 06/10/2026 · chấm lại 08/10/2026 theo toàn văn V1.8 (mục 7.1, 8.1, 9.3, 9.4, 11.3) |
 | Loại chấm | Tự chấm, đề xuất cho người duyệt — **không phải phiếu nghiệm thu** |
-| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 06/10/2026; phần sửa 07–08/10 chưa được duyệt lại (trang ghi "duyệt ngày 06/10/2026. Cập nhật nội dung 08/10/2026") · Biên soạn: Team Content Auto365 |
+| Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại bản này ngày 08/10/2026 · Biên soạn: Team Content Auto365 · Phiếu duyệt: [04](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 
 ## 1. Điểm theo tiêu chí
 
 | Mã | Tiêu chí | Điểm xác nhận | Căn cứ (mã N) | CX / phần còn mở |
 |---|---|---:|---|---|
-| C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn ghi theo trang sản phẩm; bảo hành 13/15 mẫu theo PDP; bỏ câu ngầm hiểu "chi nhánh nào cũng bảo hành"; dateModified 2026-10-08 khớp lần sửa nội dung (N1) | Phần sửa 07–08/10 chưa được người kiểm duyệt xác nhận lại |
+| C1 | Chính xác và nhất quán | 9,5/10 | Giá/cặp/VAT, W/đèn theo trang sản phẩm; bảo hành 13/15 mẫu theo PDP; nội dung sửa 07–08/10 đã được kiểm duyệt kỹ thuật 08/10/2026 (N1) | — |
 | C2 | Đầy đủ theo vai trò | 9,5/10 | Catalogue + bộ lọc (hệ điện, lens, nhiệt màu, giá/cặp, Pha/đèn), 30 case có nơi lắp, 8 ảnh thi công, 7 FAQ gồm câu chọn mẫu theo nhu cầu và câu giá/VAT/công lắp (N2) | — |
 | C3 | Tự nhiên và hữu ích | 9,5/10 | Sapo trả lời thẳng kèm giá và bước kiểm xe; tiêu đề thẻ khớp thân thẻ (N3) | — |
 | **C** | | **28,5/30** | | |
@@ -27,17 +27,15 @@
 | **G** | | **24/25** | | |
 | U1 | Cấu trúc dễ đọc | 4,5/5 | Luồng sản phẩm → ảnh thi công → tư vấn → case → FAQ; 390/1440px không tràn, không lỗi JS | Popup kết quả lọc nhanh trên mobile mở sẵn ở vị trí cuộn ngang, cột giới thiệu bị cắt (lỗi có từ trước, chưa sửa) |
 | U2 | Hành động tiếp theo | 5/5 | Catalogue + lọc, form, UTM snapshot, request_id; API → CRM → GA4 cho lead test đã được người phụ trách xác nhận thành công 08/10/2026 | Xoá lead test 60/87/111 khỏi CRM |
-| U3 | Bộ bàn giao nhất quán | 4,5/5 | 01 + 02 + 03 cùng hash preview | Xác nhận kỹ thuật/thương mại mới ghi qua chat, chưa có phiếu duyệt ký tên; bản CMS v2 kiểm ở L1 |
-| **U** | | **14/15** | | |
-| **Tổng** | | **95/100 đã xác nhận** | | C 28,5 · S 28,5 · G 24 · U 14 |
+| U3 | Bộ bàn giao nhất quán | 5/5 | 01 + 02 + 03 + 04 (phiếu duyệt) cùng hash preview; mọi xác nhận ghi người và ngày; khối kiểm tra nội bộ cuối trang dẫn tới cả 4 tài liệu và tự ẩn ngoài preview | Bản CMS v2 kiểm ở L1 |
+| **U** | | **14,5/15** | | |
+| **Tổng** | | **95,5/100** | | C 28,5 · S 28,5 · G 24 · U 14,5 |
 
 ## 2. Kết luận theo V1.8 (§11.3, §13.3)
 
-**CHƯA ĐỦ BẰNG CHỨNG — chỉ còn 1 CX.** Điểm đã xác nhận 95/100 (S 28,5 = 9,50/10; G 24 = 9,60/10), đủ cả ba ngưỡng 95 / 28,5 / 23,75 (S vừa đúng ngưỡng). Không có lỗi chặn.
+**ĐẠT NỘI DUNG V1.8.** Tổng 95,5/100; SEO 28,5/30 (9,50/10, đúng ngưỡng 28,5); GEO 24/25 (9,60/10). Không lỗi chặn nội dung, U3 đồng bộ, không còn CX trọng yếu: kiểm duyệt kỹ thuật 08/10/2026, case Honda, CRM/GA4 và căn cứ chính hãng đã xác nhận (xem [04](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md)).
 
-CX trọng yếu còn lại: nội dung sửa 07–08/10 (FAQ chọn theo nhu cầu, câu mưa/sương, căn chỉnh, lọc Pha/giá, bố cục) chưa được người kiểm duyệt kỹ thuật xác nhận lại. Nếu kiểm duyệt phát hiện sai, C1/G2 có thể giảm dưới ngưỡng. Khi Nguyễn Quang Đạo ký phiếu duyệt bản này → **ĐẠT NỘI DUNG V1.8**, cập nhật `lastReviewed` và dòng "duyệt ngày".
-
-Tách riêng (không phải điểm nội dung): link vào từ hub/PDP/case, URL production 200, bản CMS v2 — nghiệm thu Live L1–L8 sau khi đăng.
+Kết luận nội dung không phải nghiệm thu live (§13.3). Mức sẵn sàng triển khai: sẵn sàng đăng, với điều kiện xoá khối `#xl-internal-check`, CMS điền `datePublished`, rồi nghiệm thu L1–L8 (link về hub, URL 200, bản CMS v2 khớp bản duyệt).
 
 ### Đã sửa ngày 08/10/2026 (gồm góp ý chủ quản cùng ngày)
 
