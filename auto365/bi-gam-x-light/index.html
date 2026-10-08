@@ -134,7 +134,7 @@
 
     <div class="catalogue-wrapper">
       <!-- SIDEBAR FILTER CHUẨN BI GẦM HUB -->
-      <div class="xl-mf-panel"><input type="text" id="mf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"><div class="xl-mf-grid"><select id="mf-lens" aria-label="Lọc theo lens"><option value="">Lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select><select id="mf-color" aria-label="Lọc theo nhiệt màu"><option value="">Nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="4500K">4500K</option><option value="4800K">4800K</option><option value="5000K">5000K</option><option value="5500K">5500K</option><option value="switchable">3 nhiệt màu</option></select><select id="mf-sort" aria-label="Sắp xếp sản phẩm"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select><select id="mf-voltage" aria-label="Lọc theo hệ điện"><option value="">Hệ điện</option><option value="12V">Hệ điện 12V</option><option value="24V">Hệ điện 24V</option></select><select id="mf-price" aria-label="Lọc theo giá sản phẩm"><option value="">Giá / cặp</option><option value="under45">Dưới 4,5 triệu</option><option value="45to55">4,5 – 5,5 triệu</option><option value="over55">Trên 5,5 triệu</option></select><select id="mf-pha" aria-label="Lọc theo công suất Pha"><option value="">Công suất Pha</option><option value="le55">Pha đến 55W</option><option value="60to65">Pha 60 – 65W</option><option value="ge70">Pha từ 70W</option></select></div></div><aside class="catalogue-filter-sidebar">
+      <div class="xl-mf-panel"><input type="text" id="mf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"><div class="xl-mf-grid"><select id="mf-lens" aria-label="Lọc theo lens"><option value="">Lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select><select id="mf-color" aria-label="Lọc theo nhiệt màu"><option value="">Nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="4500K">4500K</option><option value="4800K">4800K</option><option value="5000K">5000K</option><option value="5500K">5500K</option><option value="switchable">3 nhiệt màu</option></select><select id="mf-sort" aria-label="Sắp xếp sản phẩm"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select><select id="mf-voltage" aria-label="Lọc theo hệ điện"><option value="">Hệ điện</option><option value="12V">Hệ điện 12V</option><option value="24V">Hệ điện 24V</option></select><select id="mf-price" aria-label="Lọc theo giá sản phẩm"><option value="">Giá / cặp</option><option value="under45">Dưới 4,5 triệu</option><option value="45to55">4,5 – 5,5 triệu</option><option value="over55">Trên 5,5 triệu</option></select><select id="mf-feat" aria-label="Lọc theo tính năng"><option value="">Tính năng</option><option value="switchable">Đổi 3 màu trên đèn</option><option value="purchase_variant">Chọn màu khi mua</option><option value="demon">Có mắt quỷ</option><option value="current">Mẫu hiện hành</option></select></div></div><aside class="catalogue-filter-sidebar">
         <div class="filter-head">
           <b>Bộ lọc</b>
           <button type="button" class="filter-clear-btn" id="xl-clear-filters">Xóa tất cả</button>
@@ -214,20 +214,23 @@
         </div>
 
         <div class="filter-group">
-          <div class="filter-group-title">Công suất Pha / đèn</div>
+          <div class="filter-group-title">Tính năng</div>
           <label class="filter-checkbox-label">
-            <input type="checkbox" class="xl-filter-pha" value="le55">
-            <span>Đến 55W</span>
+            <input type="checkbox" class="xl-filter-feat" value="switchable">
+            <span>Đổi 3 màu trên cùng đèn</span>
           </label>
           <label class="filter-checkbox-label">
-            <input type="checkbox" class="xl-filter-pha" value="60to65">
-            <span>60 – 65W</span>
+            <input type="checkbox" class="xl-filter-feat" value="purchase_variant">
+            <span>Chọn màu khi mua</span>
           </label>
           <label class="filter-checkbox-label">
-            <input type="checkbox" class="xl-filter-pha" value="ge70">
-            <span>Từ 70W</span>
+            <input type="checkbox" class="xl-filter-feat" value="demon">
+            <span>Có mắt quỷ</span>
           </label>
-          <p class="xl-filter-note">Theo trang sản phẩm. Mẫu chỉ ghi tổng 35W chưa tách Cos/Pha nên không nằm trong nhóm nào.</p>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" class="xl-filter-feat" value="current">
+            <span>Mẫu hiện hành</span>
+          </label>
         </div>
 
       </aside>
@@ -617,10 +620,10 @@
     const lensChecks = Array.from(document.querySelectorAll('.xl-filter-lens'));
     const colorChecks = Array.from(document.querySelectorAll('.xl-filter-color'));
     const priceChecks = Array.from(document.querySelectorAll('.xl-filter-price'));
-    const phaChecks = Array.from(document.querySelectorAll('.xl-filter-pha'));
+    const featChecks = Array.from(document.querySelectorAll('.xl-filter-feat'));
     const modeChecks = Array.from(document.querySelectorAll('.xl-filter-mode'));
     const oldCount = cards.filter(c => (c.dataset.era || 'current') === 'old').length;
-    const state = { q: '', voltages: [], lenses: [], colors: [], prices: [], phas: [], modes: [], showOld: false, sort: 'default', expanded: false };
+    const state = { q: '', voltages: [], lenses: [], colors: [], prices: [], feats: [], modes: [], showOld: false, sort: 'default', expanded: false };
     const LIMIT = 8;
     const moreBtn = document.getElementById('xl-show-more');
 
@@ -648,7 +651,7 @@
       state.lenses = lensChecks.filter(c => c.checked).map(c => normFilter(c.value));
       state.colors = colorChecks.filter(c => c.checked).map(c => c.value);
       state.prices = priceChecks.filter(c => c.checked).map(c => c.value);
-      state.phas = phaChecks.filter(c => c.checked).map(c => c.value);
+      state.feats = featChecks.filter(c => c.checked).map(c => c.value);
       state.modes = modeChecks.filter(c => c.checked).map(c => c.value);
       state.sort = sortSelect ? sortSelect.value || 'default' : 'default';
       if (state.q) state.showOld = true;
@@ -681,14 +684,15 @@
         const matchColor = !state.colors.length || state.colors.some(v => v === 'switchable' ? card.dataset.colorMode === 'switchable' : colorValues.includes(v));
         const price = parseInt(card.dataset.price || '0', 10);
         const matchPrice = !state.prices.length || state.prices.some(k => inPrice(price, k));
-        const matchPha = !state.phas.length || state.phas.some(k => inPha(parseInt(card.dataset.pha || '0', 10), k));
+        const isFeat = k => k === 'demon' ? /mắt quỷ/i.test(card.dataset.name + ' ' + (card.querySelector('.p-card-name') || {}).textContent) : k === 'current' ? (card.dataset.era || 'current') === 'current' : card.dataset.colorMode === k;
+        const matchPha = !state.feats.length || state.feats.some(isFeat);
         const matchMode = !state.modes.length || state.modes.includes(card.dataset.colorMode);
         const matchEra = true;
         const visible = matchSearch && matchVoltage && matchLens && matchColor && matchPrice && matchPha && matchMode && matchEra;
         card.dataset.match = visible ? '1' : '0';
         if (visible) visibleCount++;
       });
-      const filtering = !!(terms.length || state.voltages.length || state.lenses.length || state.colors.length || state.prices.length || state.phas.length || state.modes.length);
+      const filtering = !!(terms.length || state.voltages.length || state.lenses.length || state.colors.length || state.prices.length || state.feats.length || state.modes.length);
       const showAll = state.expanded || filtering;
       let shown = 0;
       Array.from(grid.querySelectorAll('.p-card')).forEach(card => {
@@ -714,17 +718,17 @@
     moreBtn?.addEventListener('click', () => { state.expanded = !state.expanded; render(); if (!state.expanded) grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     searchInput?.addEventListener('input', render);
     sortSelect?.addEventListener('change', render);
-    [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...phaChecks, ...modeChecks].forEach(c => c.addEventListener('change', render));
+    [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...featChecks, ...modeChecks].forEach(c => c.addEventListener('change', render));
     oldToggle?.addEventListener('click', () => {
       state.showOld = !state.showOld;
       if (!state.showOld && searchInput && searchInput.value.trim()) searchInput.value = '';
       render();
     });
     clearBtn?.addEventListener('click', () => {
-      [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...phaChecks, ...modeChecks].forEach(c => c.checked = false);
+      [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...featChecks, ...modeChecks].forEach(c => c.checked = false);
       if (searchInput) searchInput.value = '';
       if (sortSelect) sortSelect.value = 'default';
-      ['mf-search', 'mf-lens', 'mf-color', 'mf-voltage', 'mf-price', 'mf-pha', 'mf-mode', 'mf-sort'].forEach(id => { const el = document.getElementById(id); if (el) el.value = el.tagName === 'SELECT' && id === 'mf-sort' ? 'default' : ''; });
+      ['mf-search', 'mf-lens', 'mf-color', 'mf-voltage', 'mf-price', 'mf-feat', 'mf-mode', 'mf-sort'].forEach(id => { const el = document.getElementById(id); if (el) el.value = el.tagName === 'SELECT' && id === 'mf-sort' ? 'default' : ''; });
       state.showOld = false;
       state.expanded = false;
       render();
@@ -1615,7 +1619,7 @@
     bridgeCheckboxGroup(mfLens, '.xl-filter-lens');
     bridgeCheckboxGroup(mfColor, '.xl-filter-color');
     bridgeCheckboxGroup(mfVoltage, '.xl-filter-voltage');
-    ['price', 'pha', 'mode'].forEach(function(k){ var el = document.getElementById('mf-' + k); if (el) bridgeCheckboxGroup(el, '.xl-filter-' + k); });
+    ['price', 'feat', 'mode'].forEach(function(k){ var el = document.getElementById('mf-' + k); if (el) bridgeCheckboxGroup(el, '.xl-filter-' + k); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
