@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `9fd70091963f2761882dedc01c075f5ad5ae7cc7338a69878ad6cbb16e9b58be` (commit `5e5241cc`) |
+| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `13f859885035b761b915e9c6f2e6873a1083905d9fa902c33bd1deedaf6f9f66` (commit `2c6e8a26`) |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
 | Ngày duyệt | 08/10/2026 (Asia/Saigon) |
