@@ -134,7 +134,7 @@
 
     <div class="catalogue-wrapper">
       <!-- SIDEBAR FILTER CHUẨN BI GẦM HUB -->
-      <div class="xl-mf-panel"><input type="text" id="mf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"><div class="xl-mf-grid"><select id="mf-lens" aria-label="Lọc theo lens"><option value="">Lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select><select id="mf-color" aria-label="Lọc theo nhiệt màu"><option value="">Nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="4500K">4500K</option><option value="4800K">4800K</option><option value="5000K">5000K</option><option value="5500K">5500K</option><option value="switchable">3 nhiệt màu</option></select><select id="mf-sort" aria-label="Sắp xếp sản phẩm"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select><select id="mf-voltage" aria-label="Lọc theo hệ điện"><option value="">Hệ điện</option><option value="12V">Hệ điện 12V</option><option value="24V">Hệ điện 24V</option></select><select id="mf-price" aria-label="Lọc theo giá sản phẩm"><option value="">Giá / cặp</option><option value="under45">Dưới 4,5 triệu</option><option value="45to55">4,5 – 5,5 triệu</option><option value="over55">Trên 5,5 triệu</option></select></div></div><aside class="catalogue-filter-sidebar">
+      <div class="xl-mf-panel"><input type="text" id="mf-search" placeholder="Tìm tên sản phẩm hoặc thương hiệu…"><div class="xl-mf-grid"><select id="mf-lens" aria-label="Lọc theo lens"><option value="">Lens</option><option value="2.0">2.0 inch</option><option value="3.0">3.0 inch</option></select><select id="mf-color" aria-label="Lọc theo nhiệt màu"><option value="">Nhiệt màu</option><option value="3000K">3000K</option><option value="4300K">4300K</option><option value="4500K">4500K</option><option value="4800K">4800K</option><option value="5000K">5000K</option><option value="5500K">5500K</option><option value="switchable">3 nhiệt màu</option></select><select id="mf-sort" aria-label="Sắp xếp sản phẩm"><option value="default">Sắp xếp mặc định</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option><option value="name">Tên A–Z</option></select><select id="mf-voltage" aria-label="Lọc theo hệ điện"><option value="">Hệ điện</option><option value="12V">Hệ điện 12V</option><option value="24V">Hệ điện 24V</option></select><select id="mf-price" aria-label="Lọc theo giá sản phẩm"><option value="">Giá / cặp</option><option value="under45">Dưới 4,5 triệu</option><option value="45to55">4,5 – 5,5 triệu</option><option value="over55">Trên 5,5 triệu</option></select><select id="mf-led" aria-label="Lọc theo nhân LED"><option value="">Nhân LED</option><option value="big6">6 nhân (Big)</option><option value="plus1">6 nhân + 1</option><option value="six">6 nhân</option></select><select id="mf-cool" aria-label="Lọc theo tản nhiệt"><option value="">Tản nhiệt</option><option value="active">Chủ động (quạt)</option><option value="passive">Thụ động</option></select></div></div><aside class="catalogue-filter-sidebar">
         <div class="filter-head">
           <b>Bộ lọc</b>
           <button type="button" class="filter-clear-btn" id="xl-clear-filters">Xóa tất cả</button>
@@ -213,6 +213,34 @@
           <p class="xl-filter-note">Giá niêm yết, chưa VAT, chưa gồm công lắp.</p>
         </div>
 
+        <div class="filter-group">
+          <div class="filter-group-title">Nhân LED</div>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" class="xl-filter-led" value="big6">
+            <span>6 nhân (Big)</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" class="xl-filter-led" value="plus1">
+            <span>6 nhân + 1</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" class="xl-filter-led" value="six">
+            <span>6 nhân</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group-title">Tản nhiệt</div>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" class="xl-filter-cool" value="active">
+            <span>Chủ động (quạt)</span>
+          </label>
+          <label class="filter-checkbox-label">
+            <input type="checkbox" class="xl-filter-cool" value="passive">
+            <span>Thụ động</span>
+          </label>
+        </div>
+
         
       </aside>
 
@@ -221,7 +249,7 @@
         <div class="product-showcase-grid" id="xl-product-grid">
 
           <!-- 1. F10 Turbo V2 -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light f10 turbo v2" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="6000000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light f10 turbo v2" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="6000000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/products/auto365vn-f10-turbo-v2-autopng-img_6933a1a0299d56.68972047_auto365vn-1764991392-0.png.webp" alt="Bi gầm X-Light F10 Turbo V2" loading="lazy">
             </div>
@@ -231,6 +259,7 @@
               <li><span>Điện áp đèn</span><b>12–16V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~45W / ~75W</b></li>
               <li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · quạt</b></li>
             </ul>
             <div class="p-card-price">6.000.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -240,7 +269,7 @@
           </article>
 
           <!-- 2. 301 V2 -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light 301 v2" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="4500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light 301 v2" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="4500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/products/auto365vn-301-v2-1jpg-img_6951df77ba7532.45163750_auto365vn-1766973303-0.jpg.webp" alt="Bi gầm X-Light 301 V2" loading="lazy">
             </div>
@@ -250,6 +279,7 @@
               <li><span>Điện áp đèn</span><b>12–16V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~45W / ~55W</b></li>
               <li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · chủ động</b></li>
             </ul>
             <div class="p-card-price">4.500.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -259,7 +289,7 @@
           </article>
 
           <!-- 3. X3 Ultra -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light x3 ultra" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="5500000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light x3 ultra" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="5500000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/product/X-LIGHT/xlight-x3-ultra/auto365.jpg.webp" alt="Bi gầm X-Light X3 Ultra" loading="lazy">
             </div>
@@ -269,6 +299,7 @@
               <li><span>Điện áp đèn</span><b>12–16V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>45W / 70W</b></li>
               <li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · chủ động</b></li>
             </ul>
             <div class="p-card-price">5.500.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -278,7 +309,7 @@
           </article>
 
           <!-- 4. F10 2.0 New -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light f10 2.0 new" data-lens="2.0" data-voltage="12V" data-color="3-temp" data-price="4500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light f10 2.0 new" data-lens="2.0" data-voltage="12V" data-color="3-temp" data-price="4500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%202.0%20NEW/f10-2-new.png.webp" alt="Bi gầm X-Light F10 2.0 New" loading="lazy">
             </div>
@@ -288,6 +319,7 @@
               <li><span>Điện áp đèn</span><b>12–16V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~40W / ~60W</b></li>
               <li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · quạt</b></li>
             </ul>
             <div class="p-card-price">4.500.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -297,7 +329,7 @@
           </article>
 
           <!-- 5. F10 Pro V2 -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light f10 pro v2" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="5500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light f10 pro v2" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="5500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/products/auto365vn-f10-pro-v2-autopng-img_6933a08f9a2641.40461353_auto365vn-1764991119-0.png.webp" alt="Bi gầm X-Light F10 Pro V2" loading="lazy">
             </div>
@@ -307,6 +339,7 @@
               <li><span>Điện áp đèn</span><b>12–16V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~45W / ~65W</b></li>
               <li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · chủ động</b></li>
             </ul>
             <div class="p-card-price">5.500.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -316,7 +349,7 @@
           </article>
 
           <!-- 6. F10 New 2025 -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light f10 new 2025" data-lens="3.0" data-voltage="12V" data-color="4800K" data-price="4300000" data-color-mode="fixed" data-unit="cặp" data-vat="excl" data-color-values="4800K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light f10 new 2025" data-lens="3.0" data-voltage="12V" data-color="4800K" data-price="4300000" data-color-mode="fixed" data-unit="cặp" data-vat="excl" data-color-values="4800K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/product/X-LIGHT/den-bi-gam-x-light-f10-new-2025/den-bi-gam-x-light-f10-new-2025-auto365.jpg.webp" alt="Bi gầm X-Light F10 New 2025" loading="lazy">
             </div>
@@ -326,6 +359,7 @@
               <li><span>Điện áp đèn</span><b>12–16V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~45W / ~55W</b></li>
               <li><span>Nhiệt màu</span><b>4800K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · chủ động, tản nhiệt kép</b></li>
             </ul>
             <div class="p-card-price">4.300.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -335,7 +369,7 @@
           </article>
 
           <!-- 8. F10 Turbo 24V -->
-          <article class="p-card" data-era="current" data-name="bi gam x-light f10 turbo 24v v2" data-lens="3.0" data-voltage="24V" data-color="3-temp" data-price="6200000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K">
+          <article class="p-card" data-era="current" data-name="bi gam x-light f10 turbo 24v v2" data-lens="3.0" data-voltage="24V" data-color="3-temp" data-price="6200000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="big6" data-cooling="active">
             <div class="p-card-thumb">
               <img src="https://auto365.vn/uploads/images/products/auto365vn-artboard-6jpg-img_69e6db051b1b58.93298309_auto365vn-1776737029-0.jpg.webp" alt="Bi gầm X-Light F10 Turbo 24V V2" loading="lazy">
             </div>
@@ -345,6 +379,7 @@
               <li><span>Điện áp đèn</span><b>24V</b></li>
               <li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~45W / ~75W</b></li>
               <li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) · chủ động</b></li>
             </ul>
             <div class="p-card-price">6.200.000đ <span>/ cặp · chưa VAT</span></div>
             <div class="p-card-actions">
@@ -353,14 +388,22 @@
             </div>
           </article>
 
-<article class="p-card" data-era="current" data-name="bi gam x-light f10 hyper 2.0" data-lens="2.0" data-voltage="12V" data-color="cos-pha" data-price="5500000" data-color-mode="cos_pha_variant" data-unit="cặp" data-vat="excl" data-color-values="5000K 4500K 3000K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%20HYPER%202.0/f10-hyper-2-10n-4.jpg.webp" alt="Bi gầm X-Light F10 Hyper 2.0" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Hyper 2.0</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>2.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~50W / ~55W</b></li><li><span>Nhiệt màu</span><b>Cos/Pha 5000K/5000K hoặc 4500K/3000K</b></li></ul><div class="p-card-price">5.500.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-hyper-20" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 pro 3 nhiet mau" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="5500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-pro/10.jpg.webp" alt="Bi gầm X-Light F10 Pro 3 nhiệt màu" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Pro 3 nhiệt màu</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~35W / ~55W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li></ul><div class="p-card-price">5.500.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 2.0 2024" data-lens="2.0" data-voltage="12V" data-color="3-temp" data-price="4200000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-2024/10.jpg.webp" alt="Bi gầm X-Light F10 2.0 2024" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 2.0 2024</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>2.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>30W / 50W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li></ul><div class="p-card-price">4.200.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/x-light-f10-2024" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 turbo 24v" data-lens="3.0" data-voltage="24V" data-color="3-temp" data-price="6000000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-turbo/8.jpg.webp" alt="Bi gầm X-Light F10 Turbo 24V" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Turbo 24V</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>24V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~40W / ~65W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li></ul><div class="p-card-price">6.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 turbo" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="6000000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-turbo/7.jpg.webp" alt="Bi gầm X-Light F10 Turbo" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Turbo</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~40W / ~65W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li></ul><div class="p-card-price">6.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 2.0 inch" data-lens="2.0" data-voltage="12V" data-color="3-temp" data-price="4200000" data-color-mode="unknown" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/x-light-f10-2-inch/1.jpg.webp" alt="Bi gầm X-Light F10 2.0 inch" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 2.0 inch</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>2.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>35W (nguồn chưa tách Cos/Pha)</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li></ul><div class="p-card-price">4.200.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 2022 co mat quy" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="4000000" data-color-mode="unknown" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%20M%E1%BA%AET%20QU%E1%BB%B6%202022/anh-sang-cos-bi-gam-x-light-f10-mat-quy.jpg.webp" alt="Bi gầm X-Light F10 2022 · Có mắt quỷ" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 2022 · Có mắt quỷ</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>35W / 40W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li></ul><div class="p-card-price">4.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
-<article class="p-card" data-era="old" data-name="bi gam x-light f10 new cu" data-lens="3.0" data-voltage="12V" data-color="4800K" data-price="4000000" data-color-mode="fixed" data-unit="cặp" data-vat="excl" data-color-values="4800K"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/2022/09/19/19-09-2022-0-1663554502-1.png.webp" alt="Bi gầm X-Light F10 New" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 New</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>35W (nguồn chưa tách Cos/Pha)</b></li><li><span>Nhiệt màu</span><b>4800K</b></li></ul><div class="p-card-price">4.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="current" data-name="bi gam x-light f10 hyper 2.0" data-lens="2.0" data-voltage="12V" data-color="cos-pha" data-price="5500000" data-color-mode="cos_pha_variant" data-unit="cặp" data-vat="excl" data-color-values="5000K 4500K 3000K" data-led="plus1" data-cooling=""><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%20HYPER%202.0/f10-hyper-2-10n-4.jpg.webp" alt="Bi gầm X-Light F10 Hyper 2.0" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Hyper 2.0</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>2.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~50W / ~55W</b></li><li><span>Nhiệt màu</span><b>Cos/Pha 5000K/5000K hoặc 4500K/3000K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân (Big) + 1 · chưa ghi</b></li></ul><div class="p-card-price">5.500.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-hyper-20" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 pro 3 nhiet mau" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="5500000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="" data-cooling="passive"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-pro/10.jpg.webp" alt="Bi gầm X-Light F10 Pro 3 nhiệt màu" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Pro 3 nhiệt màu</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~35W / ~55W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>chưa ghi · thụ động</b></li></ul><div class="p-card-price">5.500.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 2.0 2024" data-lens="2.0" data-voltage="12V" data-color="3-temp" data-price="4200000" data-color-mode="switchable" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="six" data-cooling="passive"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-2024/10.jpg.webp" alt="Bi gầm X-Light F10 2.0 2024" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 2.0 2024</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>2.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>30W / 50W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân · thụ động</b></li></ul><div class="p-card-price">4.200.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/x-light-f10-2024" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 turbo 24v" data-lens="3.0" data-voltage="24V" data-color="3-temp" data-price="6000000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="" data-cooling="passive"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-turbo/8.jpg.webp" alt="Bi gầm X-Light F10 Turbo 24V" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Turbo 24V</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>24V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~40W / ~65W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>chưa ghi · thụ động</b></li></ul><div class="p-card-price">6.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 turbo" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="6000000" data-color-mode="purchase_variant" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="six" data-cooling="passive"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/f10-turbo/7.jpg.webp" alt="Bi gầm X-Light F10 Turbo" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 Turbo</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>~40W / ~65W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân · thụ động</b></li></ul><div class="p-card-price">6.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 2.0 inch" data-lens="2.0" data-voltage="12V" data-color="3-temp" data-price="4200000" data-color-mode="unknown" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="plus1" data-cooling=""><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/x-light-f10-2-inch/1.jpg.webp" alt="Bi gầm X-Light F10 2.0 inch" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 2.0 inch</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>2.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>35W (nguồn chưa tách Cos/Pha)</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 + 1 nhân · chưa ghi</b></li></ul><div class="p-card-price">4.200.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 2022 co mat quy" data-lens="3.0" data-voltage="12V" data-color="3-temp" data-price="4000000" data-color-mode="unknown" data-unit="cặp" data-vat="excl" data-color-values="3000K 4300K 5500K" data-led="six" data-cooling="passive"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/product/X-LIGHT/F10%20M%E1%BA%AET%20QU%E1%BB%B6%202022/anh-sang-cos-bi-gam-x-light-f10-mat-quy.jpg.webp" alt="Bi gầm X-Light F10 2022 · Có mắt quỷ" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 2022 · Có mắt quỷ</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>35W / 40W</b></li><li><span>Nhiệt màu</span><b>3000K · 4300K · 5500K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân · thụ động</b></li></ul><div class="p-card-price">4.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
+<article class="p-card" data-era="old" data-name="bi gam x-light f10 new cu" data-lens="3.0" data-voltage="12V" data-color="4800K" data-price="4000000" data-color-mode="fixed" data-unit="cặp" data-vat="excl" data-color-values="4800K" data-led="six" data-cooling="passive"><div class="p-card-thumb"><img src="https://auto365.vn/uploads/images/2022/09/19/19-09-2022-0-1663554502-1.png.webp" alt="Bi gầm X-Light F10 New" loading="lazy"></div><h3 class="p-card-name">Bi gầm X-Light F10 New</h3><ul class="p-card-specs"><li><span>Kích thước Lens</span><b>3.0 inch</b></li><li><span>Điện áp đèn</span><b>12V</b></li><li><span>Công suất Cos/Pha (mỗi đèn)</span><b>35W (nguồn chưa tách Cos/Pha)</b></li><li><span>Nhiệt màu</span><b>4800K</b></li>
+              <li><span>Nhân LED · tản nhiệt</span><b>6 nhân · thụ động</b></li></ul><div class="p-card-price">4.000.000đ <span>/ cặp · chưa VAT</span></div><div class="p-card-actions"><a href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" class="p-card-btn-detail">Xem sản phẩm</a><label class="p-card-btn-zalo p-card-compare-toggle"><input type="checkbox" class="p-card-compare-input" aria-label="Chọn để so sánh">So sánh</label></div></article>
         </div><p class="xl-catalog-note">Giá mỗi mẫu ghi kèm đơn vị cặp, đều chưa gồm VAT. Công lắp và vật tư theo xe sẽ được báo trước khi làm.</p><p class="xl-no-results" id="xl-no-results" hidden>Chưa có mẫu nào khớp. Thử bỏ bớt bộ lọc, hoặc <a href="#xl-lead-form">để lại thông tin</a> để Auto365 tư vấn theo xe.</p><button class="xl-show-more" id="xl-show-more" type="button" aria-expanded="false" hidden>Xem thêm sản phẩm</button><details class="xl-spec-details" id="thong-so-cac-mau"><summary>Thông số và khác biệt các mẫu X-Light</summary><div class="xl-spec-scroll"><table class="xl-spec-table"><caption>Thông số và giá đối chiếu từ các trang sản phẩm Auto365 ngày 06/10/2026. Công suất ghi theo thông tin tại từng nguồn, tính mỗi đèn; không phải kết quả đo trên xe. Giá theo cặp, chưa VAT, chưa gồm công và vật tư lắp đặt.</caption><thead><tr><th scope="col">Mẫu</th><th scope="col">Lens</th><th scope="col">Nguồn</th><th scope="col">Cos/Pha (W, theo công bố)</th><th scope="col">Nhiệt màu · cơ chế</th><th scope="col">Giá / đơn vị / VAT</th><th scope="col">Nguồn</th></tr></thead><tbody><tr><th scope="row">X-Light F10 Turbo V2</th><td>3.0 inch</td><td>12–16V</td><td>~45W / ~75W</td><td>3000K · 4300K · 5500K<small>Chọn 1 nhiệt màu khi mua</small></td><td><b>6.000.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-v2" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">X-Light 301 V2</th><td>3.0 inch</td><td>12–16V</td><td>~45W / ~55W</td><td>3000K · 4300K · 5500K<small>Đổi 3 nhiệt màu trên cùng đèn</small></td><td><b>4.500.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/den-bi-gam-x-light-301-v2" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">X-Light X3 Ultra</th><td>3.0 inch</td><td>12–16V</td><td>45W / 70W</td><td>3000K · 4300K · 5500K<small>Chọn 1 nhiệt màu khi mua</small></td><td><b>5.500.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-x-light-x3-ultra" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">X-Light F10 2.0 New</th><td>2.0 inch</td><td>12–16V</td><td>~40W / ~60W</td><td>3000K · 4300K · 5500K<small>Đổi 3 nhiệt màu trên cùng đèn</small></td><td><b>4.500.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/den-bi-gam-x-light-f10-2-new" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">X-Light F10 Pro V2</th><td>3.0 inch</td><td>12–16V</td><td>~45W / ~65W</td><td>3000K · 4300K · 5500K<small>Đổi 3 nhiệt màu trên cùng đèn</small></td><td><b>5.500.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/den-bi-gam-x-light-f10-pro-v2" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">X-Light F10 New 2025</th><td>3.0 inch</td><td>12–16V</td><td>~45W / ~55W</td><td>4800K<small>Một nhiệt màu cố định</small></td><td><b>4.300.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/den-bi-gam-x-light-f10-new-2025" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">X-Light F10 Turbo 24V V2</th><td>3.0 inch</td><td>24V</td><td>~45W / ~75W</td><td>3000K · 4300K · 5500K<small>Chọn 1 nhiệt màu khi mua</small></td><td><b>6.200.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/den-bi-gam-x-light-f10-turbo-24v-v2" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 Hyper 2.0</th><td>2.0 inch</td><td>12V</td><td>~50W / ~55W</td><td>Cos/Pha 5000K/5000K hoặc 4500K/3000K<small>Theo cấu hình Cos/Pha, chọn khi mua</small></td><td><b>5.500.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-x-light-f10-hyper-20" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 Pro 3 nhiệt màu</th><td>3.0 inch</td><td>12V</td><td>~35W / ~55W</td><td>3000K · 4300K · 5500K<small>Đổi 3 nhiệt màu trên cùng đèn</small></td><td><b>5.500.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-xlight-f10-pro" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 2.0 2024</th><td>2.0 inch</td><td>12V</td><td>30W / 50W</td><td>3000K · 4300K · 5500K<small>Đổi 3 nhiệt màu trên cùng đèn</small></td><td><b>4.200.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/x-light-f10-2024" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 Turbo 24V</th><td>3.0 inch</td><td>24V</td><td>~40W / ~65W</td><td>3000K · 4300K · 5500K<small>Chọn 1 nhiệt màu khi mua</small></td><td><b>6.000.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-x-light-f10-turbo-24v" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 Turbo</th><td>3.0 inch</td><td>12V</td><td>~40W / ~65W</td><td>3000K · 4300K · 5500K<small>Chọn 1 nhiệt màu khi mua</small></td><td><b>6.000.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-x-light-f10-turbo" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 2.0 inch</th><td>2.0 inch</td><td>12V</td><td>35W <small>(nguồn chưa tách Cos/Pha)</small></td><td>3000K · 4300K · 5500K<small>Chưa xác nhận</small></td><td><b>4.200.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-x-light-f10-20-inch" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 2022 · Có mắt quỷ</th><td>3.0 inch</td><td>12V</td><td>35W / 40W</td><td>3000K · 4300K · 5500K<small>Chưa xác nhận</small></td><td><b>4.000.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-led-x-light-f10-2022-co-mat-quy" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr><tr><th scope="row">Bi gầm X-Light F10 New</th><td>3.0 inch</td><td>12V</td><td>35W <small>(nguồn chưa tách Cos/Pha)</small></td><td>4800K<small>Một nhiệt màu cố định</small></td><td><b>4.000.000đ</b> / cặp · chưa VAT</td><td><a href="https://auto365.vn/bi-gam-x-light-f10" target="_blank" rel="noreferrer">Trang sản phẩm</a></td></tr></tbody></table></div></details>
       </div>
     </div>
@@ -446,7 +489,7 @@
       <li><span>07</span><h3>Bàn giao & bảo hành</h3></li>
     </ol>
   </div>
-</section><section class="section xl-why-section" id="vi-sao-chon"><div class="container"><div class="xl-why-head"><h2>Vì sao nên lắp bi gầm X-Light tại Auto365?</h2></div><div class="xl-why-grid"><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp" alt="Mặt tiền chi nhánh Auto365, hệ thống nâng cấp xe 91 chi nhánh tại 33 tỉnh thành (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"><span class="xl-why-tag">91 chi nhánh</span></figure><h3>91 chi nhánh tại 33 tỉnh thành</h3><p>Kiểm tra hốc đèn và hệ điện ngay tại chi nhánh gần nhất; tiện quay lại căn chỉnh khi cần.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-porsche-cayenne-s-2014-sau-khi-hoan-thien-nang-ap-xlight-f10-turbo-v2-4300k-img_6a7ace518585a0.34278298.jpg.webp" alt="Porsche Cayenne S 2014 hoàn thiện lắp X-Light F10 Turbo V2, kèm hộp sản phẩm chính hãng" width="640" height="360" loading="lazy" decoding="async"><span class="xl-why-tag">Bảo hành</span></figure><h3>Bảo hành điện tử theo từng mẫu</h3><p>Bảo hành theo <a href="https://auto365.vn/chinh-sach-bao-hanh" target="_blank" rel="noreferrer">chính sách</a> và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp" alt="Xưởng Auto365 chuẩn bị bộ bi gầm X-Light X3 Ultra trước khi lắp (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"><span class="xl-why-tag">KTV lành nghề</span></figure><h3>Kỹ thuật viên giàu kinh nghiệm</h3><p>Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-can-chinh-den-tren-bang-test-xuong.webp" alt="Căn đường cắt Cos trên bảng test tại xưởng Auto365 (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"><span class="xl-why-tag">Căn chỉnh chuẩn</span></figure><h3>Căn chỉnh Cos/Pha chuyên nghiệp</h3><p>Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-mat-duong-khi-lap-den-gam-f10-turbo-v2-cho-wildtrak-img_6a8e6684d01370.85128287.webp" alt="Mặt dưỡng lắp bi gầm F10 Turbo V2 cho Ford Ranger Wildtrak" width="640" height="360" loading="lazy" decoding="async"><span class="xl-why-tag">Giá công khai</span></figure><h3>Giá niêm yết, báo giá minh bạch</h3><p>Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-kiem-tra-khoang-trong-lap-bi-gam-o-to-dien-img_6a7af4b03fe3b0.96753490.jpg.webp" alt="Kỹ thuật viên Auto365 kiểm tra hốc đèn gầm trước khi đề xuất mẫu" width="640" height="360" loading="lazy" decoding="async"><span class="xl-why-tag">Kỹ thuật duyệt</span></figure><h3>Tư vấn đúng theo từng xe</h3><p>Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt.</p></article></div></div></section><section class="section xl-hq3-section" id="diem-lap"><div class="container"><div class="nr-container nr-branch-pair nr-branch-pair--hq"><div class="nr-panel nr-branch-invite">
+</section><section class="section xl-why-section" id="vi-sao-chon"><div class="container"><div class="xl-why-head"><h2>Vì sao nên lắp bi gầm X-Light tại Auto365?</h2></div><div class="xl-why-grid"><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp" alt="Mặt tiền chi nhánh Auto365, hệ thống nâng cấp xe 90+ chi nhánh tại 33 tỉnh thành (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>90+ chi nhánh tại 33 tỉnh thành</h3><p>Kiểm tra hốc đèn và hệ điện ngay tại chi nhánh gần nhất; tiện quay lại căn chỉnh khi cần.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-porsche-cayenne-s-2014-sau-khi-hoan-thien-nang-ap-xlight-f10-turbo-v2-4300k-img_6a7ace518585a0.34278298.jpg.webp" alt="Porsche Cayenne S 2014 hoàn thiện lắp X-Light F10 Turbo V2, kèm hộp sản phẩm chính hãng" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Bảo hành điện tử theo từng mẫu</h3><p>Bảo hành theo <a href="https://auto365.vn/chinh-sach-bao-hanh" target="_blank" rel="noreferrer">chính sách</a> và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp" alt="Xưởng Auto365 chuẩn bị bộ bi gầm X-Light X3 Ultra trước khi lắp (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Kỹ thuật viên giàu kinh nghiệm</h3><p>Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-can-chinh-den-tren-bang-test-xuong.webp" alt="Căn đường cắt Cos trên bảng test tại xưởng Auto365 (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Căn chỉnh Cos/Pha chuyên nghiệp</h3><p>Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-mat-duong-khi-lap-den-gam-f10-turbo-v2-cho-wildtrak-img_6a8e6684d01370.85128287.webp" alt="Mặt dưỡng lắp bi gầm F10 Turbo V2 cho Ford Ranger Wildtrak" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Giá niêm yết, báo giá minh bạch</h3><p>Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công.</p></article><article class="xl-why-card has-photo"><figure class="xl-why-photo"><img src="hinh/auto365vn-kiem-tra-khoang-trong-lap-bi-gam-o-to-dien-img_6a7af4b03fe3b0.96753490.jpg.webp" alt="Kỹ thuật viên Auto365 kiểm tra hốc đèn gầm trước khi đề xuất mẫu" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Tư vấn đúng theo từng xe</h3><p>Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt.</p></article></div></div></section><section class="section xl-hq3-section" id="diem-lap"><div class="container"><div class="nr-container nr-branch-pair nr-branch-pair--hq"><div class="nr-panel nr-branch-invite">
   <div class="nr-branch-head">
     <span class="nr-branch-head-ico">    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="nr-svg" aria-hidden="true"><path d="M3.5 20.5h17"></path><path d="M5.5 20.5V9.5L12 5l6.5 4.5v11"></path><path d="M10 20.5V16h4v4.5"></path><path d="M9.5 11.5h.01M14.5 11.5h.01"></path><path d="M12 5V2.5l3 1-3 1"></path></svg></span>
     <div class="nr-branch-head-text">
@@ -480,7 +523,7 @@
             <div class="nr-branch-head">
         <span class="nr-branch-head-ico">    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="nr-svg" aria-hidden="true"><circle cx="12" cy="5.5" r="2.2"></circle><circle cx="5" cy="18" r="2.2"></circle><circle cx="19" cy="18" r="2.2"></circle><path d="M10.9 7.4 6.1 16.1M13.1 7.4l4.8 8.7M7.2 18h9.6"></path></svg></span>
         <div class="nr-branch-head-text">
-          <h3 class="nr-branch-head-title"><em>91 chi nhánh</em> · 33 tỉnh thành</h3>
+          <h3 class="nr-branch-head-title"><em>90+ chi nhánh</em> · 33 tỉnh thành</h3>
           <p class="nr-branch-head-sub">Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam</p>
         </div>
       </div>
@@ -601,10 +644,11 @@
     const lensChecks = Array.from(document.querySelectorAll('.xl-filter-lens'));
     const colorChecks = Array.from(document.querySelectorAll('.xl-filter-color'));
     const priceChecks = Array.from(document.querySelectorAll('.xl-filter-price'));
-    const featChecks = Array.from(document.querySelectorAll('.xl-filter-feat'));
+    const ledChecks = Array.from(document.querySelectorAll('.xl-filter-led'));
+    const coolChecks = Array.from(document.querySelectorAll('.xl-filter-cool'));
     const modeChecks = Array.from(document.querySelectorAll('.xl-filter-mode'));
     const oldCount = cards.filter(c => (c.dataset.era || 'current') === 'old').length;
-    const state = { q: '', voltages: [], lenses: [], colors: [], prices: [], feats: [], modes: [], showOld: false, sort: 'default', expanded: false };
+    const state = { q: '', voltages: [], lenses: [], colors: [], prices: [], leds: [], cools: [], modes: [], showOld: false, sort: 'default', expanded: false };
     const LIMIT = 8;
     const moreBtn = document.getElementById('xl-show-more');
 
@@ -632,7 +676,8 @@
       state.lenses = lensChecks.filter(c => c.checked).map(c => normFilter(c.value));
       state.colors = colorChecks.filter(c => c.checked).map(c => c.value);
       state.prices = priceChecks.filter(c => c.checked).map(c => c.value);
-      state.feats = featChecks.filter(c => c.checked).map(c => c.value);
+      state.leds = ledChecks.filter(c => c.checked).map(c => c.value);
+      state.cools = coolChecks.filter(c => c.checked).map(c => c.value);
       state.modes = modeChecks.filter(c => c.checked).map(c => c.value);
       state.sort = sortSelect ? sortSelect.value || 'default' : 'default';
       if (state.q) state.showOld = true;
@@ -665,15 +710,14 @@
         const matchColor = !state.colors.length || state.colors.some(v => v === 'switchable' ? card.dataset.colorMode === 'switchable' : colorValues.includes(v));
         const price = parseInt(card.dataset.price || '0', 10);
         const matchPrice = !state.prices.length || state.prices.some(k => inPrice(price, k));
-        const isFeat = k => k === 'demon' ? /mắt quỷ/i.test(card.dataset.name + ' ' + (card.querySelector('.p-card-name') || {}).textContent) : k === 'current' ? (card.dataset.era || 'current') === 'current' : card.dataset.colorMode === k;
-        const matchPha = !state.feats.length || state.feats.some(isFeat);
+        const matchPha = (!state.leds.length || state.leds.includes(card.dataset.led)) && (!state.cools.length || state.cools.includes(card.dataset.cooling));
         const matchMode = !state.modes.length || state.modes.includes(card.dataset.colorMode);
         const matchEra = true;
         const visible = matchSearch && matchVoltage && matchLens && matchColor && matchPrice && matchPha && matchMode && matchEra;
         card.dataset.match = visible ? '1' : '0';
         if (visible) visibleCount++;
       });
-      const filtering = !!(terms.length || state.voltages.length || state.lenses.length || state.colors.length || state.prices.length || state.feats.length || state.modes.length);
+      const filtering = !!(terms.length || state.voltages.length || state.lenses.length || state.colors.length || state.prices.length || state.leds.length || state.cools.length || state.modes.length);
       const showAll = state.expanded || filtering;
       let shown = 0;
       Array.from(grid.querySelectorAll('.p-card')).forEach(card => {
@@ -699,17 +743,17 @@
     moreBtn?.addEventListener('click', () => { state.expanded = !state.expanded; render(); if (!state.expanded) grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     searchInput?.addEventListener('input', render);
     sortSelect?.addEventListener('change', render);
-    [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...featChecks, ...modeChecks].forEach(c => c.addEventListener('change', render));
+    [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...ledChecks, ...coolChecks, ...modeChecks].forEach(c => c.addEventListener('change', render));
     oldToggle?.addEventListener('click', () => {
       state.showOld = !state.showOld;
       if (!state.showOld && searchInput && searchInput.value.trim()) searchInput.value = '';
       render();
     });
     clearBtn?.addEventListener('click', () => {
-      [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...featChecks, ...modeChecks].forEach(c => c.checked = false);
+      [...voltageChecks, ...lensChecks, ...colorChecks, ...priceChecks, ...ledChecks, ...coolChecks, ...modeChecks].forEach(c => c.checked = false);
       if (searchInput) searchInput.value = '';
       if (sortSelect) sortSelect.value = 'default';
-      ['mf-search', 'mf-lens', 'mf-color', 'mf-voltage', 'mf-price', 'mf-feat', 'mf-mode', 'mf-sort'].forEach(id => { const el = document.getElementById(id); if (el) el.value = el.tagName === 'SELECT' && id === 'mf-sort' ? 'default' : ''; });
+      ['mf-search', 'mf-lens', 'mf-color', 'mf-voltage', 'mf-price', 'mf-led', 'mf-cool', 'mf-mode', 'mf-sort'].forEach(id => { const el = document.getElementById(id); if (el) el.value = el.tagName === 'SELECT' && id === 'mf-sort' ? 'default' : ''; });
       state.showOld = false;
       state.expanded = false;
       render();
@@ -1600,7 +1644,7 @@
     bridgeCheckboxGroup(mfLens, '.xl-filter-lens');
     bridgeCheckboxGroup(mfColor, '.xl-filter-color');
     bridgeCheckboxGroup(mfVoltage, '.xl-filter-voltage');
-    ['price', 'feat', 'mode'].forEach(function(k){ var el = document.getElementById('mf-' + k); if (el) bridgeCheckboxGroup(el, '.xl-filter-' + k); });
+    ['price', 'led', 'cool', 'mode'].forEach(function(k){ var el = document.getElementById('mf-' + k); if (el) bridgeCheckboxGroup(el, '.xl-filter-' + k); });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
