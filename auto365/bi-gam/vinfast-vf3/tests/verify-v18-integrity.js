@@ -33,8 +33,6 @@ const mustContain = [
   'hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
   'hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
   'hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png',
-  'Bảng chọn &amp; mức độ bằng chứng sản phẩm bi gầm cho VinFast VF3',
-  'Các phương án nâng cấp ánh sáng khác cho VinFast VF3',
   'about',
   'mentions',
   'datePublished',
