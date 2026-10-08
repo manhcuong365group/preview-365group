@@ -5,7 +5,7 @@
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 (06/10/2026). Cấu trúc điểm giữ nguyên V1.7; thêm mã hướng dẫn N1–N5 |
 | Bản chấm | Preview `auto365/bi-gam-x-light/index.html` — SHA-256 và commit ghi trong [01-noi-dung-ban-duyet.md](01-noi-dung-ban-duyet.md) |
 | Môi trường | **Preview/staging** (`preview-365group.pages.dev`, `noindex`). Bản CMS v2 (`v2.auto365.vn`) cần nhận lại mã nguồn này — xem mục "Ghi chú release cho CMS v2" trong [huong-dan-trien-khai.md](huong-dan-trien-khai.md) |
-| Ngày chấm | 06/10/2026 |
+| Ngày chấm | 06/10/2026 · chấm lại 08/10/2026 sau khi sửa theo tái kiểm 06/10 |
 | Loại chấm | Tự chấm, đề xuất cho người duyệt — **không phải phiếu nghiệm thu** |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo (06/10/2026) · Biên soạn: Team Content Auto365 |
 
@@ -29,15 +29,27 @@
 | U2 | Hành động tiếp theo | 4,5/5 | Catalogue ẩn đúng thẻ (đã thử khi gỡ CSS `.is-hidden`): 301→1, 24V→2, lens 2.0→4, không khớp→0, xoá lọc→8; form chuyển đúng mẫu; UTM lấy từ snapshot khi URL đã sạch; `lead_id` số được giữ | CRM/routing/GA4: CX; v2 cần build lại |
 | U3 | Bộ bàn giao nhất quán | 4/5 | 01 + 02 + 03 cùng hash preview; có ghi chú release v2 | Chưa có hash/release ID bản CMS v2 |
 | **U** | | **13/15** | | |
-| **Tổng** | | **93/100 đã xác nhận** | | **Khoảng còn mở 93–96,5** |
+| **Tổng** | | **93/100** | | Các mục CX ghi riêng ở §2, không cộng vào điểm |
 
 ## 2. Kết luận theo V1.8 (§13.3)
 
-**CHƯA ĐỦ BẰNG CHỨNG** — điểm đã xác nhận 93/100 (S 28/30 = 9,33; G 23,5/25 = 9,40). Mức tối đa còn có thể đạt vượt ngưỡng 95, nên chưa kết luận "chưa đạt"; còn CX trọng yếu có thể đổi kết luận:
+**CHƯA ĐẠT NỘI DUNG V1.8** cho bản preview này — tổng 93/100 < 95 và S 28/30 < 28,5. Điểm chỉ tính phần đã xác nhận trên bản đang chấm.
+
+Việc cần xác nhận (CX) — ghi riêng, không dùng để nâng điểm:
 
 - Bản CMS v2 build lại từ mã nguồn này (catalogue, UTM, credit, bảo hành).
-- API → CRM → event: lead test 60, 87 do team tự báo; CRM chưa xác nhận.
+- API → CRM → GA4: lead test 60, 87, 111 do team tự gửi; CRM/GA4 chưa xác nhận.
 - Link vào từ hub tổng/PDP/case; URL production 200.
+
+### Đã sửa ngày 08/10/2026 (theo tái kiểm 06/10)
+
+| Mục | Đã sửa |
+|---|---|
+| Nguồn công suất | Bỏ "hãng công bố" ở ghi chú popup so sánh, bảng Hiểu nhanh và tiêu chí Đi tỉnh; ghi "theo trang sản phẩm Auto365, tính mỗi đèn" |
+| FAQ lens / Kelvin, thẻ mưa sương, chú thích bảng | Sửa cả phần hiển thị và FAQ schema; bảng ghi ngày đối chiếu 06/10/2026 |
+| ID trùng | `xlight-real-case-like-bigm-v5` chỉ còn ở thẻ style; script đổi thành `xlight-real-case-like-bigm-v5-js` |
+| So sánh | Chọn mẫu thứ 2 không tự mở popup; người dùng bấm "Xem so sánh". Mẫu thứ 4 vẫn báo trên thanh, và trong popup khi popup đang mở |
+| Hồ sơ triển khai | Bỏ câu "chạy được ngay"; ghi 4 điều kiện nghiệm thu; danh sách trường gửi đổi `lead_id` → `request_id` |
 
 ## 3. Lỗi chặn (§12)
 

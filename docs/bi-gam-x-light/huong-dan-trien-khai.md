@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `246b4fe23ea37bb448ba72a1ab852d0a0ea4e66c701419342eaabeb3c3220fce` (commit `656244ec`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `5daf74fa930464eda1509549b063c792bf65b4d006ba8d3c4bbc18a0d522f806` (commit `d4e5df16`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026"; schema `dateModified` 2026-10-06). Ngày hiệu lực giá niêm yết: 06/10/2026 (người phụ trách xác nhận); ngày đối chiếu thông số: 06/10/2026.
@@ -40,9 +40,9 @@
 
 ## 4. Form, CRM và đo lường
 
-- Form gửi `POST /api/leads` **cùng domain** (FormData, header `Idempotency-Key`). Trên auto365.vn chạy được ngay; trên preview luôn báo chưa gửi được (405) — **không chạy Ads vào link preview**.
+- Form gửi `POST /api/leads` **cùng domain** (FormData, header `Idempotency-Key`). Trên auto365.vn chỉ coi là chạy khi đủ 4 điều kiện: endpoint nhận đúng contract (trả `success` + `lead_id`), CRM nhận và route đúng chi nhánh, sự kiện GA4/Ads ghi nhận, và lead test được xác nhận rồi xoá. Trên preview luôn báo chưa gửi được (405) — **không chạy Ads vào link preview**.
 - Chỉ báo thành công khi API trả `{"success": true}`.
-- Trường gửi kèm: họ tên, SĐT, xe, tỉnh, nhu cầu, `selected_model`/`selected_id`/`selected_url`, `package_price`, `configuration_id`, `vehicle_group`, UTM, gclid/gbraid/wbraid/fbclid, `source_url`, `lead_id`.
+- Trường gửi kèm: họ tên, SĐT, xe, tỉnh, nhu cầu, `selected_model`/`selected_id`/`selected_url`, `package_price`, `configuration_id`, `vehicle_group`, UTM, gclid/gbraid/wbraid/fbclid, `source_url`, `request_id` (mã yêu cầu phía client, trùng `Idempotency-Key`). Trang không gửi `lead_id`; `lead_id` lấy từ phản hồi API.
 - Sự kiện dataLayer: `view_recommendation`, `select_product`, `click_call`, `click_zalo`, `lead_form_submit`. Gắn conversion Ads/GA4 vào `lead_form_submit` **chỉ khi API xác nhận thành công**.
 - Nhật ký test lead (đều gửi tới `https://auto365.vn/api/leads`, SĐT 0900000000, tên chứa "TEST … vui long xoa"):
 

@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `246b4fe23ea37bb448ba72a1ab852d0a0ea4e66c701419342eaabeb3c3220fce` (commit `656244ec`) |
+| SHA-256 bản duyệt | `5daf74fa930464eda1509549b063c792bf65b4d006ba8d3c4bbc18a0d522f806` (commit `d4e5df16`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 06/10/2026 (dòng kiểm duyệt cuối mục FAQ ghi "Cập nhật 06/10/2026", schema `dateModified` 2026-10-06) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -46,7 +46,7 @@
 
 Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm công lắp. Công suất ghi theo W/đèn, theo công bố.
 
-| Mẫu | Giá | Hệ điện | Lens | Cos/Pha (W/đèn) | Cơ chế nhiệt màu |
+| Mẫu | Giá | Hệ điện | Lens | Cos/Pha (W/đèn, theo trang sản phẩm) | Cơ chế nhiệt màu |
 |---|---:|---|---|---|---|
 | X-Light F10 Turbo V2 | 6.000.000đ | 12V | 3.0 | ~45 / ~75 | Chọn 1 màu khi mua |
 | X-Light 301 V2 | 4.500.000đ | 12V | 3.0 | ~45 / ~55 | Đổi 3 màu trên cùng đèn |
