@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `8843de1595c322796e7680fc78d6a7c3f31e38d3ce62e726896908abf6746117` (commit `32b4ee60`) |
+| SHA-256 bản duyệt | `eec53216beb4a82f59162b5d6b5b7c369430057b9a68de45115a24dfa18bf9ee` (commit ``) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt ngày 06/10/2026 (schema `lastReviewed` 2026-10-06). Nội dung sửa 07–08/10 theo V1.8, `dateModified` 2026-10-08; dòng cuối FAQ ghi "duyệt ngày 06/10/2026. Cập nhật nội dung 08/10/2026" |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -29,10 +29,8 @@
 | # | Khối (id) | Tiêu đề | Ghi chú |
 |---|---|---|---|
 | 1 | `top` | H1 + sapo + bộ lọc nhanh | |
-| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm, so sánh tối đa 3 mẫu, bảng thông số |
-| 3 | `chon-theo-nhu-cau` | Chọn bi gầm X-Light theo nhu cầu sử dụng | 6 nhu cầu; 5 thẻ có link xe đã lắp thật |
+| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, công suất Pha/đèn, cách chọn nhiệt màu; so sánh tối đa 3 mẫu; bảng thông số |
 | 4 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
-| 5 | `chi-phi-hoan-thien` | Chi phí lắp bi gầm X-Light gồm những gì? | 7 khoản; giá niêm yết cập nhật 06/10/2026 |
 | 6 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
 | 7 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
 | 8 | `vi-sao-chon` | Vì sao nên lắp bi gầm X-Light tại Auto365? | Quy trình 7 bước + 6 lý do; 91 chi nhánh · 33 tỉnh thành |
@@ -85,3 +83,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Case Honda City / CR-V 2018 | Gắn F10 New 2025 theo link sản phẩm trong bài case | 03/10/2026 |
 | Mưa/sương | Không lọc/khuyên theo nhiệt màu; tư vấn theo vùng phủ, vị trí lắp, căn Cos trên xe (V1.8 §7.1) | 08/10/2026 |
 | Chính hãng / căn chỉnh | Không ghi "phân phối chính thức" và "bảng test chuyên dụng" khi chưa có hồ sơ (V1.8 §8.1, §7.1) | 08/10/2026 |
+| Bỏ khối "Chọn theo nhu cầu" và "Chi phí lắp gồm những gì" | Theo góp ý chủ quản; nhu cầu còn ở bộ lọc nhanh đầu trang, chi phí còn ở sapo/FAQ/form | 08/10/2026 |
