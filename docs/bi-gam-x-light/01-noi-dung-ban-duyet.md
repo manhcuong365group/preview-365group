@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `db1462e133bff8c2b43487e92fb354834b447a50945bd2c9dd0d0a2db9ecd174` (commit `8a3c4f6f`) |
+| SHA-256 bản duyệt | `3dc2901dbf63f909de370259ee6993550ee45edbe05671b5eb97273488531456` (commit `c914535d`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -28,7 +28,7 @@
 | # | Khối (id) | Tiêu đề | Ghi chú |
 |---|---|---|---|
 | 1 | `top` | H1 + sapo + bộ lọc nhanh | |
-| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp; so sánh tối đa 3 mẫu; bảng thông số |
+| 2 | `dong-san-pham` | Các mẫu bi gầm X-Light tại Auto365 | 15 thẻ sản phẩm; bộ lọc hệ điện, lens, nhiệt màu, giá/cặp, nhân LED, tản nhiệt; so sánh tối đa 3 mẫu; bảng thông số |
 | 3 | `tu-van-form` | Để lại thông tin để được tư vấn theo nhu cầu | Form gửi `/api/leads` |
 | 4 | `case-thuc-te` | Xe đã thi công lắp đèn gầm X-Light | 30 case + bảng tra 30 xe (xe · mẫu · nơi lắp · hồ sơ) |
 | 5 | `tu-van` | Dải CTA | Gọi 0365 365 911 · Zalo · Kiểm tra cấu hình |
@@ -87,3 +87,5 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Chính hãng | 365Group phân phối chính hãng X-Light; Auto365 thuộc 365Group, nên các câu "chính hãng" trên trang có căn cứ | 08/10/2026 |
 | Case Honda City / CR-V 2018 | Xác nhận phiên bản thi công F10 New 2025; bỏ nhãn "chưa đối chiếu" | 08/10/2026 |
 | Lead test → CRM/GA4 | Người phụ trách xác nhận thành công; còn xoá lead 60/87/111 | 08/10/2026 |
+| Số chi nhánh hiển thị | "90+ chi nhánh" thay "91 chi nhánh" | 08/10/2026 |
+| Lọc nhân LED / tản nhiệt | Lấy từ dải thông số trang sản phẩm; mẫu không ghi thì không xếp nhóm (F10 Pro 3 màu, F10 Turbo 24V: nhân LED; F10 Hyper 2.0, F10 2.0 inch: tản nhiệt) | 08/10/2026 |

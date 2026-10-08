@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `db1462e133bff8c2b43487e92fb354834b447a50945bd2c9dd0d0a2db9ecd174` (commit `8a3c4f6f`) |
+| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `3dc2901dbf63f909de370259ee6993550ee45edbe05671b5eb97273488531456` (commit `c914535d`) |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
 | Ngày duyệt | 08/10/2026 (Asia/Saigon) |
@@ -20,7 +20,7 @@ Kết quả: **Đã duyệt lại toàn bộ bản trang ngày 08/10/2026.** Tra
 | Tư vấn chọn mẫu | FAQ "Nên chọn mẫu bi gầm X-Light nào theo nhu cầu?" (đi phố, đi tỉnh, hốc nhỏ, 24V, nhiệt màu) |
 | Mưa/sương | Không chọn theo nhiệt màu; tư vấn theo vùng phủ, vị trí lắp, căn Cos trên xe |
 | Căn chỉnh | Căn lại đường cắt Cos/Pha sau lắp; khách kiểm tra vùng sáng trước khi nhận xe |
-| Bộ lọc | Hệ điện, lens, nhiệt màu, giá/cặp |
+| Bộ lọc | Hệ điện, lens, nhiệt màu, giá/cặp, nhân LED, tản nhiệt (theo trang sản phẩm, đọc 08/10/2026) |
 | FAQ | 7 câu, khớp FAQPage schema |
 
 ## 2. Dữ kiện thương mại và hồ sơ đã chốt
@@ -31,7 +31,7 @@ Kết quả: **Đã duyệt lại toàn bộ bản trang ngày 08/10/2026.** Tra
 | Đơn vị giá | Theo cặp, không dùng "bộ" | 02/10/2026 |
 | Bảo hành | Theo chính sách từng mẫu; 13/15 mẫu công bố 24 tháng tại trang sản phẩm | 06/10/2026 |
 | Hotline | 0365 365 911 | 29/09/2026 |
-| Hệ thống | 91 chi nhánh · 33 tỉnh thành | 30/09/2026 |
+| Hệ thống | 90+ chi nhánh · 33 tỉnh thành | 08/10/2026 |
 | Chính hãng | 365Group phân phối chính hãng X-Light; Auto365 thuộc 365Group | 08/10/2026 |
 | Case Honda City / CR-V 1.5L L 2018 | Phiên bản thi công F10 New 2025 | 08/10/2026 |
 | Lead → CRM → GA4 | Lead test 60/87/111 nhận thành công | 08/10/2026 |
