@@ -1002,6 +1002,20 @@ body.fm-open{overflow:hidden}
 .metric strong{color:#111214}
 .metric span{color:#6b737d}
 </style>
+<style>
+/* Khối "là gì?" cân hai cột */
+.cri-intro{display:grid;grid-template-columns:1.35fr 1fr;gap:20px;align-items:stretch;margin-bottom:24px}
+.cri-intro>div:first-child{border:1px solid var(--line,#e6e6e9);border-radius:8px;padding:20px 22px;background:#fff;display:flex;flex-direction:column;justify-content:center}
+.cri-intro>div:first-child .section-title{margin:0 0 12px}
+.cri-intro p{margin:0 0 12px;font-size:15px;line-height:1.65;color:#3c424a}
+.cri-intro p:last-child{margin-bottom:0}
+.cri-keys{border:1px solid var(--line,#e6e6e9);border-radius:8px;padding:20px 22px;background:#f8f7f4;display:flex;flex-direction:column;justify-content:center}
+.cri-keys h3{margin:0 0 10px;font-size:16px;font-weight:600;color:#1d2127}
+.cri-keys ul{margin:0;padding-left:18px;font-size:14px;line-height:1.55;color:#3c424a}
+.cri-keys li{margin:0 0 9px}
+.cri-keys li:last-child{margin-bottom:0}
+@media(max-width:900px){.cri-intro{grid-template-columns:1fr;gap:16px}.cri-intro>div:first-child,.cri-keys{padding:16px 18px}}
+</style>
 </head>
 
 <body>
@@ -1072,20 +1086,24 @@ body.fm-open{overflow:hidden}
     <section class="section" id="gioi-thieu" aria-labelledby="intro-title" style="padding-top:30px;padding-bottom:30px">
       <div class="container">
 
-        <h2 class="section-title" id="intro-title">3M NR5 là gì?</h2>
-        <div class="verdict-block">
-          <p style="margin:0 0 10px">Ceramic NR là dòng phim mới của 3M Việt Nam. Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố và tăng riêng tư. Catalog Ceramic NR mô tả cấu trúc kết hợp vật liệu gốm và kim loại. Khả năng hoạt động của điện thoại, GPS, Bluetooth và ETC/VETC cần kiểm tra trên chính xe; bảng thông số nhiệt không thay phép kiểm các thiết bị đó.</p>
-          <p style="margin:0 0 10px">NR5 có VLT thấp hơn NR15, NR25 và NR35, hợp với xe gia đình hay xe đưa đón cần hàng ghế sau riêng tư, hoặc xe có cửa sổ trời, panorama hay bị nắng rọi thẳng.</p>
+        <div class="cri-intro">
+          <div>
+            <h2 class="section-title" id="intro-title">3M NR5 là gì?</h2>
+            <p>Ceramic NR là dòng phim mới của 3M Việt Nam. Dòng phim này sử dụng công nghệ lai Nano Ceramic kết hợp Nano Reflective nhằm hỗ trợ giảm nóng khoang xe, giảm chói, hỗ trợ loại bỏ tia UV theo thông số công bố và tăng riêng tư. Catalog Ceramic NR mô tả cấu trúc kết hợp vật liệu gốm và kim loại. Khả năng hoạt động của điện thoại, GPS, Bluetooth và ETC/VETC cần kiểm tra trên chính xe; bảng thông số nhiệt không thay phép kiểm các thiết bị đó.</p>
+          <p>NR5 có VLT thấp hơn NR15, NR25 và NR35, hợp với xe gia đình hay xe đưa đón cần hàng ghế sau riêng tư, hoặc xe có cửa sổ trời, panorama hay bị nắng rọi thẳng.</p>
+          </div>
+          <div class="cri-keys">
+            <h3>Đặc điểm chính của NR5</h3>
+            <ul>
+              <li>VLT 7%: thấp hơn NR15 (14%), hợp khoang sau cần riêng tư</li>
+              <li>TSER 69%, IRER 68%: cản nhiệt nhiều hơn NR15 và NR25</li>
+              <li>Giảm chói 93%, cản UV 99% theo catalog 3M</li>
+              <li>Auto365 không tư vấn cho kính lái, không nên dùng cho kính sườn trước</li>
+              <li>Auto365 kiểm tra lại kết nối điện thoại, GPS, ETC/VETC sau khi dán</li>
+        
+            </ul>
+          </div>
         </div>
-        <h3 style="margin:20px 0 0;font-size:18px">Đặc điểm chính của NR5</h3>
-        <ul class="answer-bullets" aria-label="Đặc điểm chính của NR5">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>VLT 7%: thấp hơn NR15 (14%), hợp khoang sau cần riêng tư</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>TSER 69%, IRER 68%: cản nhiệt nhiều hơn NR15 và NR25</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Giảm chói 93%, cản UV 99% theo catalog 3M</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Giá: 1 cặp kính sườn sau 1.700.000đ, kính lưng 1.900.000đ, cửa sổ trời nhỏ từ 850.000đ</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Auto365 không tư vấn cho kính lái, không nên dùng cho kính sườn trước</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span>Auto365 kiểm tra lại kết nối điện thoại, GPS, ETC/VETC sau khi dán</span></li>
-        </ul>
 
 <figure class="r35-fig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-dan-phim-3m-ceramic-nr-5-cho-cua-so-troijpg-img_6a3200444e64e4.98409565_auto365vn.jpg" alt="Dán 3M Ceramic NR 5 cho cửa sổ trời" width="800" height="533" fetchpriority="high" decoding="async"><figcaption>Dán 3M Ceramic NR 5 cho cửa sổ trời.</figcaption></figure>
 </div>
