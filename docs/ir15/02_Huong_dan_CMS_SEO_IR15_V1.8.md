@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/ir15.html` (preview https://preview-365group.pages.dev/ma-phim/ir15)
 - URL production giữ nguyên: https://auto365.vn/ir15 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: Mã phim kính sườn sau/kính lưng dòng Ceramic IR. Câu hỏi chính: IR15 giá, kín đến đâu, khác IR25.
-- Phiên bản bàn giao: HTML SHA-256 `7bb0ac26efaf8155ce28960e36979ffb0ba5eecc0616dc0f7f9792e805a47b7b` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR15_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `2f89b67cb7a2025d3c885d5c18d4823e96833076d2b94f69e3cf8ad04c8e2d6e` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_IR15_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - dateModified: 2026-10-08; byline "Cập nhật nội dung 06/10/2026". Không có datePublished (chưa có dữ liệu); không tự thêm.
 

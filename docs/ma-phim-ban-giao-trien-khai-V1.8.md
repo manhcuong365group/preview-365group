@@ -83,3 +83,20 @@ Bộ câu hỏi tự nhiên (không nhắc Auto365):
 6. NR5 dán kính lưng có nhìn được không, đi đêm cần lưu ý gì?
 7. IRR 91% có phải giảm 91% nhiệt không?
 8. Bảo hành phim 3M lên đến 10 năm tra cứu ở đâu?
+
+## 7. Ghi chú cho IT/CMS khi nhập lên v2 (theo các báo cáo kiểm v2 ngày 08–09/10/2026)
+
+Đã sửa trong HTML nguồn (repo, 09/10/2026) — cần nhập lại bản mới lên v2:
+- Link catalog NR trong bộ gợi ý mã (popup) tự lấy đúng thư mục của ảnh chứng nhận, nên trên v2 sẽ trỏ `/assets/landing/ma-phim/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf` (file này đã có trên v2, HTTP 200). Hết lỗi 404.
+- Nút "Mua / tư vấn" của thanh CMS (`data-js="landing-len-mua"`) được trang bắt trước và mở đúng form tư vấn của mã đang xem. IT nên gỡ handler cũ (cuộn tới form ẩn) để tránh xử lý trùng.
+- Modal gợi ý mã và form tư vấn có z-index 1101/1102, cao hơn header CMS (1040) và thanh sticky (1030); thanh sticky tự ẩn khi modal mở. Hết lỗi bấm nút đóng bị header che.
+- CR BLK 40: nhãn nguồn CR BLK 15 trong popup đổi sang "Brochure 3M Crystalline CR BLK Việt Nam ©2025".
+- CR BLK 15: bảng ghi rõ Auto 75 theo brochure VN ©2025 + TDS Rev E; hàng kính trong 6 mm và VLR theo TDS Rev E (có link).
+- Chữ "Xem tất cả case" đổi thành "Xem tất cả hồ sơ xe".
+
+Việc chỉ CMS làm được (không nằm trong HTML landing):
+- Title/meta/OG/Twitter do CMS xuất đang là bản cũ (vd CR BLK 40 còn "kính lái hoặc kính sườn trước"; NR5 thiếu kính lưng). Dùng đúng `<title>` và `<meta name="description">` trong file HTML repo của từng mã.
+- Thanh giá sticky của CMS cần ghi đơn vị, ví dụ "Từ 1.700.000đ/cặp kính sườn" (NR), "Từ 1.800.000đ/cặp kính sườn" (IR25/IR15), "Từ 2.600.000đ/cặp kính sườn" (CR BLK 15/35), "Từ 6.500.000đ/kính lái" (CR BLK 40), "Từ 3.300.000đ/kính lái" (IR50), "Từ 2.600.000đ/kính lái" (NR35). NR25 hiện đang hiện 2.600.000đ không đơn vị: đổi thành 1.700.000đ/cặp kính sườn.
+- CMS đang bỏ node FAQPage khỏi JSON-LD của landing; nếu muốn giữ, nhập nguyên khối JSON-LD trong file HTML.
+- Breadcrumb CMS của CR BLK 40 đang đi qua "CR BLK Pro"; nên đi qua "3M Crystalline CR BLK" cho khớp BreadcrumbList.
+- Khi lên auto365.vn: upload cùng thư mục `/assets/landing/ma-phim/` (ảnh + PDF), canonical/og:url về URL production, bỏ noindex của v2.

@@ -1017,6 +1017,12 @@ body.fm-open{overflow:hidden}
 .container .spec-shell caption{padding:14px 20px 10px!important;text-align:left}
 .container .spec-shell .source-note,.container .spec-shell .spec-src{padding:12px 20px;margin:0!important}
 </style>
+<style>
+/* v2 CMS: modal trên header/sticky của CMS */
+.fm-modal{z-index:1101!important}
+.film-lead-modal{z-index:1102!important}
+body:has(.fm-modal:not([hidden])) .pd26-bar,body:has(.film-lead-modal:not([hidden])) .pd26-bar{visibility:hidden;pointer-events:none}
+</style>
 </head>
 
 <body>
@@ -1283,7 +1289,7 @@ body.fm-open{overflow:hidden}
 <div class="container"><div class="c35-panel">
 <div class="c35-head">
 <div><h2 class="section-title" id="case-title">Xe thực tế dùng 3M Ceramic IR15 tại Auto365</h2></div>
-<a class="c35-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả case <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<a class="c35-all" href="https://auto365.vn/tin-tuc/cam-nang-phim-cach-nhiet">Xem tất cả hồ sơ xe <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
 </div>
 <div class="c35-filter" role="group" aria-label="Lọc case theo hãng xe">
 <span class="c35-filter-lb">Hãng xe:</span>
@@ -1668,6 +1674,7 @@ t.addEventListener('scroll',s,{passive:true});window.addEventListener('resize',s
   </section>
 
   <script>
+const NR_CAT=(function(){var i=document.querySelector('img[src*="cert-3m-pro-shop"]');var b=i?i.getAttribute("src").replace(/cert-3m-pro-shop.[a-z]+$/,""):"assets/";return b+"3m-ceramic-nr-catalog-viet-nam-03-2026.pdf";})();
 const FILM_CODES = [
   {id:"CR BLK 60",srcUrl:"https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 60",vlt:57,tser:54,glare:22,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-cr-blk-60"},
   {id:"CR BLK 50",srcUrl:"https://multimedia.3m.com/mws/media/2628835O/cystalline-technical-data-sheet.pdf",src:"TDS Crystalline Rev F 08/2025",line:"cr",name:"3M Crystalline CR BLK 50",vlt:48,tser:56,glare:34,pos:["windshield"],offersByPosition:{"windshield":"Từ 5.700.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/3m-cr-blk-50"},
@@ -1677,10 +1684,10 @@ const FILM_CODES = [
   {id:"IR50",srcUrl:"https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR50",vlt:50,tser:54,glare:32,pos:["windshield"],offersByPosition:{"windshield":"Từ 3.300.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/ir50"},
   {id:"IR25",srcUrl:"https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR25",vlt:25,tser:61,glare:65,pos:["frontside","rearside","rear"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 2.300.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/ir25"},
   {id:"IR15",srcUrl:"https://multimedia.3m.com/mws/media/1919598O/3m-automotive-window-film-ceramic-ir-series-tech-data-sheet.pdf",src:"TDS Ceramic IR Rev B 07/2021",line:"ir",name:"3M Ceramic IR15",vlt:16,tser:63,glare:78,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.800.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 2.300.000đ / kính lưng, đã gồm VAT"},url:"https://auto365.vn/ir15"},
-  {id:"NR35",srcUrl:"assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],offersByPosition:{"windshield":"Từ 2.600.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
-  {id:"NR25",srcUrl:"assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama từ 2.600.000đ, báo giá theo kích thước kính; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
-  {id:"NR15",srcUrl:"assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama từ 2.600.000đ, báo giá theo kích thước kính; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
-  {id:"NR5",srcUrl:"assets/3m-ceramic-nr-catalog-viet-nam-03-2026.pdf",src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","rear","sunroof"],offersByPosition:{"rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama từ 2.600.000đ, báo giá theo kích thước kính; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
+  {id:"NR35",srcUrl:NR_CAT,src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR35",vlt:43,tser:51,glare:52,pos:["windshield"],offersByPosition:{"windshield":"Từ 2.600.000đ / kính lái, đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-35"},
+  {id:"NR25",srcUrl:NR_CAT,src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR25",vlt:29,tser:59,glare:68,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama từ 2.600.000đ, báo giá theo kích thước kính; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-25"},
+  {id:"NR15",srcUrl:NR_CAT,src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR15",vlt:14,tser:65,glare:84,pos:["frontside","rearside","rear","sunroof"],offersByPosition:{"frontside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama từ 2.600.000đ, báo giá theo kích thước kính; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-15"},
+  {id:"NR5",srcUrl:NR_CAT,src:"Catalog 3M Ceramic NR 03/2026",line:"nr",name:"3M Ceramic NR5",vlt:7,tser:69,glare:93,pos:["rearside","rear","sunroof"],offersByPosition:{"rearside":"Từ 1.700.000đ / cặp kính sườn, đã gồm VAT","rear":"Từ 1.900.000đ / kính lưng, đã gồm VAT","sunroof":"Từ 850.000đ / cửa sổ trời nhỏ, tùy xe; panorama từ 2.600.000đ, báo giá theo kích thước kính; đã gồm VAT"},url:"https://auto365.vn/phim-cach-nhiet-3m-nr-5"}
 ];
 const FILM_LINES = {cr:"3M Crystalline CR BLK",ir:"3M Ceramic IR",nr:"3M Ceramic NR"};
 const FILM_POS = {windshield:"kính lái",frontside:"kính sườn trước",rearside:"kính sườn sau",rear:"kính lưng",sunroof:"cửa sổ trời"};
@@ -1943,4 +1950,26 @@ section[aria-labelledby="tech-title"] .split-media img{flex:none;height:auto;min
 .compare-grid,.position-grid{align-items:stretch}
 </style>
 <style>.film-lead-zalo[hidden],.film-lead-message[hidden]{display:none!important}</style>
+<script>
+/* v2 CMS: sticky "Mua / tư vấn" mở form tư vấn của trang; sửa link assets theo đường dẫn ảnh thực tế */
+(function(){
+  function productName(){try{var s=document.querySelectorAll('script[type="application/ld+json"]');for(var i=0;i<s.length;i++){var j=JSON.parse(s[i].textContent);var g=j['@graph']||[j];for(var k=0;k<g.length;k++){if(g[k]['@type']==='Product'&&g[k].name)return g[k].name}}}catch(e){}return ''}
+  document.addEventListener('click',function(ev){
+    var t=ev.target.closest&&ev.target.closest('[data-js="landing-len-mua"]');
+    if(!t||typeof window.openFilmLeadModal!=='function')return;
+    ev.preventDefault();ev.stopImmediatePropagation();
+    var f=window.openFilmLeadModal,n=productName();
+    if(f.length>=4)f(n,'',t);else f(n,'');
+  },true);
+  function fixAssets(){
+    var i=document.querySelector('img[src*="cert-3m-pro-shop"]');if(!i)return;
+    var base=i.getAttribute('src').replace(/cert-3m-pro-shop.[a-z]+$/,'');
+    if(base==='assets/')return;
+    document.querySelectorAll('a[href^="assets/"]').forEach(function(a){a.setAttribute('href',base+a.getAttribute('href').slice(7))});
+  }
+  window.__a365AssetBase=function(){var i=document.querySelector('img[src*="cert-3m-pro-shop"]');return i?i.getAttribute('src').replace(/cert-3m-pro-shop.[a-z]+$/,''):'assets/'};
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',fixAssets);else fixAssets();
+  new MutationObserver(fixAssets).observe(document.documentElement,{subtree:true,childList:true});
+})();
+</script>
 </body>
