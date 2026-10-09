@@ -154,7 +154,7 @@ Nếu CMS có khối "bài liên quan" tự động theo tag, có thể gắn ta
 | 11 | Mobile thật (iPhone + Android): lọc, so sánh, form, gọi, Zalo | Thao tác tay | | | |
 | 12 | Xoá lead test mã 60, 87, 111 và lead test ở mục 6 | CRM | | | |
 
-## 8. Ghi chú release cho CMS v2 (06/10/2026)
+## 8. Ghi chú release cho CMS v2 (lập 06/10/2026, bổ sung 09/10/2026 ở mục 9)
 
 Bản v2 (`v2.auto365.vn/nang-cap-anh-sang-bi-gam-x-light`) cần build lại từ commit ghi ở đầu file. Các thay đổi IT/CMS phải giữ nguyên khi tích hợp:
 
@@ -175,8 +175,33 @@ QA sau build (v2 và production): tìm "301" → 1 thẻ hiển thị; 24V → 2
 ## Bổ sung 08/10/2026 (V1.8)
 
 - `datePublished`: chưa có trong schema vì URL production chưa đăng. CMS điền ngày đăng production đầu tiên vào TechArticle và CollectionPage, không sửa về sau (§9.4).
-- `dateModified` 2026-10-08, `lastReviewed` 2026-10-06. Chỉ đổi `lastReviewed` khi người kiểm duyệt xác nhận lại.
+- `dateModified` 2026-10-08, `lastReviewed` 2026-10-08 (Nguyễn Quang Đạo duyệt lại toàn bộ ngày 08/10, xem phiếu 04).
 - 87/93 ảnh chưa có `width`/`height`. Template CMS nên thêm kích thước để tránh nhảy bố cục.
 - Link sản phẩm F10 Hyper 2.0 dùng URL cuối `https://auto365.vn/bi-gam-x-light-f10-hyper-20` (URL cũ `bi-gam-xligh-f10-hyper-2` chuyển hướng 301).
 - Khối tư vấn: video bấm-để-phát (`.xl-video-facade` + `<script id="xl-video-facade-js">`), không nhúng iframe sẵn. Giữ `youtube-nocookie.com`.
 - Bộ lọc tản nhiệt dùng `data-cooling` (active/passive) trên từng `.p-card`; `data-led` còn trong thẻ nhưng không có nhóm lọc dùng tới, có thể giữ.
+
+## 9. Bản v2 lệch bản duyệt — việc CMS cần sửa (tái kiểm v2 ngày 08/10/2026, đối chiếu 09/10/2026)
+
+Bản preview (hash ở đầu file) không có các lỗi dưới đây; v2 đang dựng từ dữ liệu cũ hoặc thiếu trường. Sửa ở tầng dữ liệu/generator của CMS, không sửa tay từng ô.
+
+| # | Lỗi trên v2 | Bản duyệt (preview) | Việc cần làm | Ưu tiên |
+|---|---|---|---|---|
+| 1 | F10 Turbo (đời trước, `/bi-gam-x-light-f10-turbo`): thẻ, `data-price`, Offer = 5.500.000đ; bảng = 6.000.000đ | 6.000.000đ/cặp chưa VAT ở mọi chỗ; PDP 08/10 cũng 6.000.000đ | Đồng bộ thẻ, `data-price`, bảng, so sánh, lọc nhanh, tóm tắt form, Offer về 6.000.000đ | P0 trước Ads (BLOCK_02) |
+| 2 | Thẻ F10 2.0 inch và F10 New đời trước còn "35W, nguồn chưa tách Cos/Pha" | 35W / 40W theo PDP | Sửa dữ liệu dùng chung của thẻ (bảng so sánh đọc từ thẻ) | P0 |
+| 3 | 15/15 thẻ thiếu `data-cooling` → lọc "Chủ động"/"Thụ động" ra 0 mẫu | `data-cooling` active/passive trên từng `.p-card` (7/6, 2 mẫu chưa xếp) | CMS xuất `data-cooling` từ mapping đã duyệt; mẫu chưa duyệt để trống; không hardcode số đếm | P0 trước Ads |
+| 4 | 15 Product lồng trong ItemList có `brand` = Auto365 | Hub không khai Product/Offer; Brand X-Light `https://x-light.vn/#brand`, TechArticle `mentions` Brand | Hoặc bỏ lớp Product/Offer tự sinh, hoặc giữ nhưng `Product.brand` = X-Light, Auto365 là seller; URL HTTPS cuối | P0 trước phát hành (BLOCK_08) |
+| 5 | `TechArticle.author` = Nguyễn Quang Đạo; `dateModified` 05/10; thiếu `mentions` Brand | author = Team Content Auto365; `reviewedBy` + `lastReviewed` 2026-10-08 = Nguyễn Quang Đạo; `dateModified` 2026-10-08 | Sửa generator theo bản duyệt; `datePublished` = ngày đăng production thật | P0 trước phát hành |
+| 6 | 8 link case trên gallery v2 trả 404 (Innova Cross 2024, Fortuner 2022, LR2 2010, Fadil 2021, Custin 2024, Altis 2015, CR-V 2018, City RS 2022) | Preview trỏ URL production, kiểm 09/10 đều 200 | Sửa route v2 hoặc trỏ URL canonical production đã kiểm; QA lại từng href đúng bài | P1 trước Ads |
+| 7 | Capture đầu trang chỉ giữ 5 UTM + gclid; wrapper FormData chỉ bù khi thiếu khoá, không bù khoá rỗng | `xl-campaign-capture` giữ 9 khoá; form bù cả khoá rỗng từ snapshot | Mang nguyên script capture + logic bù rỗng vào template dùng chung | P0 trước Ads |
+| 8 | Gallery 74 case thay cho 30 case + bảng tra xe/nơi lắp | 30 case có nơi lắp | Nếu giữ gallery 74: ghi rõ trong handoff CMS là lựa chọn template; không nhận đã đối chiếu cấu hình/nơi lắp cho cả 74 | P1 |
+
+QA sau khi CMS sửa: so lại từng dòng trên v2; lọc tản nhiệt kết hợp giá/điện áp/tìm kiếm rồi xoá lọc; GET lại 8 href; Rich Results/graph đối chiếu hiển thị. Chấm lại V1.8 trên bản v2 có hash/release mới, không chuyển điểm preview sang v2.
+
+### Dữ kiện trang sản phẩm thay đổi sau 06/10 — chờ người duyệt chốt
+
+| Dữ kiện | Trang sản phẩm (đọc 09/10/2026) | Hub hiện ghi | Trạng thái |
+|---|---|---|---|
+| Bảo hành F10 New đời trước | "2 Năm" | FAQ: chưa ghi thời hạn (đếm 13/15) | Chờ xác nhận chính sách |
+| Nhiệt màu F10 New đời trước | 3000K / 4300K / 5500K | 4800K cố định | Chờ kỹ thuật chốt đúng SKU/phiên bản |
+| Tản nhiệt F10 Hyper 2.0 | "Thụ Động + Quạt" | Chưa xếp nhóm | Chờ chốt mapping |

@@ -68,14 +68,14 @@ Kết luận nội dung không phải nghiệm thu live (§13.3). Mức sẵn s�
 | BLOCK_07 Production noindex/canonical/404 | Áp cho live — URL production đang 404 |
 | BLOCK_08 Schema sai so với hiển thị | Không — FAQ 7 câu khớp; credit khớp |
 
-## 4. Việc để chuyển sang "ĐẠT NỘI DUNG V1.8"
+## 4. Phạm vi điểm và việc còn lại sau khi đạt
 
-1. CMS build lại v2 từ commit ghi trong 01, kiểm 5 ca catalogue + UTM sau cleanup → U2, U3.
-2. ~~Ngày hiệu lực giá~~ — đã chốt 06/10/2026.
-3. CMS chốt graph schema/`@id` bản v2, gộp khối địa điểm trùng → S2, C3.
-4. Dán link về hub theo `doan-link-ve-hub.md`; đăng URL production → S3.
-5. ~~Xưởng đối chiếu 2 xe Honda~~ — đã xác nhận F10 New 2025 ngày 08/10/2026.
-6. ~~CRM xác nhận lead test~~ — xác nhận thành công 08/10/2026; còn xoá lead 60/87/111.
-7. ~~Căn cứ chính hãng~~ — đã xác nhận 08/10/2026: 365Group phân phối chính hãng X-Light, Auto365 thuộc 365Group. Còn biên bản căn chỉnh thì mới ghi phương pháp → G3.
-8. Người kiểm duyệt xác nhận phần sửa 07–08/10 thì cập nhật `lastReviewed` → C1.
-9. CMS điền `datePublished` = ngày đăng production đầu tiên.
+Điểm 95,5/100 ở trên là của **bản preview** (hash ghi ở 01). Không áp cho bản v2/CMS: tái kiểm v2 ngày 08/10/2026 chấm 86/100 do v2 lệch dữ liệu (giá F10 Turbo, công suất 2 mẫu, `data-cooling`, Product.brand, author/ngày, 8 link case) — danh sách sửa ở mục 9 của [02](huong-dan-trien-khai.md). Sau khi CMS sửa phải chấm lại bản v2 có hash/release mới.
+
+Việc phát hành (không thuộc điểm nội dung preview):
+
+1. CMS sửa 8 mục ở 02 §9, rồi QA lại trên v2.
+2. Người duyệt chốt 3 dữ kiện trang sản phẩm mới đổi (02 §9): bảo hành và nhiệt màu F10 New đời trước, tản nhiệt F10 Hyper 2.0; cập nhật hub theo kết quả.
+3. Đăng URL production; xoá khối `#xl-internal-check`; CMS điền `datePublished`.
+4. Gắn link về hub theo `doan-link-ve-hub.md`; nghiệm thu Live L1–L8.
+5. Xoá lead test 60/87/111 khỏi CRM.
