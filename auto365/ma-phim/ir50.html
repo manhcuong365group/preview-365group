@@ -1048,6 +1048,19 @@ body .pos:hover,body .compare:hover,body .package:hover,body .why:hover,body .c3
 body .section p,body .section li{color:#333}
 @media(prefers-reduced-motion:reduce){body .pos:hover,body .compare:hover,body .package:hover,body .why:hover,body .c35-case:hover,body .tech:hover{transform:none}}
 </style>
+<style>
+/* Thẻ "Vì sao chọn": tiêu đề/đoạn/ảnh/link thẳng hàng */
+@media(min-width:901px){
+body .why-grid{grid-template-rows:auto auto auto;align-items:stretch}
+body .why{display:grid!important;grid-row:span 3;grid-template-rows:subgrid;gap:0}
+}
+body .why-copy{padding:18px 18px 14px!important;display:flex;flex-direction:column}
+body .why h3{font-size:16px;line-height:1.35;margin:0 0 8px;min-height:2.7em}
+body .why p{font-size:14px;line-height:1.6;margin:0;color:#4b525c}
+body .why img{margin-top:0!important;aspect-ratio:4/3;object-fit:cover}
+body .why > a{padding:12px 18px 16px;display:block}
+@media(max-width:900px){body .why h3{min-height:0}}
+</style>
 </head>
 
 <body>
