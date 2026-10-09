@@ -21,7 +21,7 @@ const mustContain = [
   'Phạm vi pháp lý',
   'Việc chấp nhận khi kiểm định phụ thuộc cấu hình thực tế',
   'Chọn điểm Auto365 có dịch vụ nâng cấp ánh sáng và xác nhận cấu hình trước khi đặt lịch',
-  'Xe VinFast đã lắp bi gầm tại Auto365',
+  'Xe VinFast khác đã lắp bi gầm tại Auto365',
   'VinFast VF3 lắp GTR G1 Turbo V2 tại Auto365',
   'VinFast VF7 Plus 2025 lắp X-Light F10 Turbo V2 5500K',
   'https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k',
@@ -59,6 +59,34 @@ if (missing.length) {
 const stillPresent = forbidden.filter((needle) => combined.includes(needle));
 if (stillPresent.length) {
   throw new Error(`Forbidden V1.8 VF3 content still present: ${stillPresent.join(', ')}`);
+}
+
+// Fix sheet 08/10/2026: these must be visible in the HTML itself, not only in vf3.json
+const htmlMustContain = [
+  'vf3lp-ev--case">Đã có case VF3 được xác minh',
+  'vf3lp-ev--check">Cần kiểm tra xe trước khi chốt',
+  'data-yt="Aa0Of6ZtxEE"',
+  'data-yt="weADPByfN7g"',
+  '"@type": "FAQPage"',
+  'Không thể kết luận kết quả kiểm định chỉ từ tên sản phẩm'
+];
+const htmlMissing = htmlMustContain.filter((needle) => !html.includes(needle));
+if (htmlMissing.length) {
+  throw new Error(`Missing VF3 fix-sheet content in HTML: ${htmlMissing.join(', ')}`);
+}
+const htmlForbidden = [
+  'Báo giá trọn gói',
+  'Chuẩn hóa 90+ chi nhánh',
+  'căn chỉnh lại nếu sai lệch trong thời hạn bảo hành',
+  'máy laser',
+  '"numberOfItems": 0',
+  'kinh-nghiem-chon-nhiet-mau-den-gam',
+  'do-bi-gam-o-to-co-duoc-dang-kiem-khong',
+  'quy-trinh-can-chinh-duong-cat-sang-bi-gam'
+];
+const htmlStill = htmlForbidden.filter((needle) => html.includes(needle));
+if (htmlStill.length) {
+  throw new Error(`Forbidden VF3 claim still in HTML: ${htmlStill.join(', ')}`);
 }
 
 // Check physical image files exist
