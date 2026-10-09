@@ -1005,6 +1005,18 @@ body:has(.fm-modal:not([hidden])) .pd26-bar,body:has(.film-lead-modal:not([hidde
 }
 @media(prefers-reduced-motion:reduce){.container .c35-case,.container .why,.container .package{transition:none!important;transform:none!important}}
 </style>
+<style>
+/* Design guardrails (file sếp 09/10): khung 1296px, khoảng cách section, màu nền/viền, bo góc thẻ */
+:root{--container:1296px}
+body .section{padding:40px 0}
+body .section.alt{background:#f8f9fa}
+@media(max-width:640px){body .section{padding:28px 0}}
+body .pos,body .compare,body .package,body .why,body .cert,body .c35-case,body .cri-keys,body .cri-intro>div:first-child,body .irx-box,body .container .irx-intro>div:first-child,body .spec-shell,body .answer-bullets li,body .verdict-block,body .hero-fit-card,body .hero-offer,body .metric-ribbon,body .tech,body .faq-item,body details{border-color:#e5e7eb;border-radius:12px}
+body .pos,body .compare,body .package,body .why,body .c35-case,body .tech{box-shadow:none}
+body .pos:hover,body .compare:hover,body .package:hover,body .why:hover,body .c35-case:hover,body .tech:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(17,18,20,.06)}
+body .section p,body .section li{color:#333}
+@media(prefers-reduced-motion:reduce){body .pos:hover,body .compare:hover,body .package:hover,body .why:hover,body .c35-case:hover,body .tech:hover{transform:none}}
+</style>
 </head>
 
 <body>
