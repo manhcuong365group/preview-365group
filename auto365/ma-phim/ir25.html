@@ -1011,6 +1011,20 @@ body.fm-open{overflow:hidden}
 .film-lead-modal{z-index:1102!important}
 body:has(.fm-modal:not([hidden])) .pd26-bar,body:has(.film-lead-modal:not([hidden])) .pd26-bar{visibility:hidden;pointer-events:none}
 </style>
+<style>
+/* Xe thực tế: mobile 1 cột, thẻ ngang gọn */
+@media(max-width:640px){
+.container [data-rail]{display:grid!important;grid-template-columns:1fr!important;grid-auto-flow:row!important;grid-template-rows:none!important;grid-auto-columns:auto!important;overflow:visible!important;gap:12px!important;scroll-snap-type:none!important}
+.container .c35-case{display:grid!important;grid-template-columns:150px 1fr;align-items:start;column-gap:0;width:auto!important;min-width:0!important}
+.container .c35-case.is-hidden{display:none!important}
+.container .c35-case-media{margin:10px 0 10px 10px;aspect-ratio:16/9!important;border-radius:6px;overflow:hidden}
+.container .c35-case-media img{width:100%;height:100%;object-fit:cover}
+.container .c35-case-cap{padding:10px 12px!important}
+.container .c35-case-work{-webkit-line-clamp:2}
+.container .c35-rail-btn{display:none!important}
+}
+@media(prefers-reduced-motion:reduce){.container .c35-case,.container .why,.container .package{transition:none!important;transform:none!important}}
+</style>
 </head>
 
 <body>
