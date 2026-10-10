@@ -99,3 +99,4 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 - Cẩm nang: thanh trượt 1 hàng (5 bài), nút ‹ › trượt ngang.
 - Lý do chọn: thêm dải "Thương hiệu đèn tại Auto365" (8 logo X-Light, GTR, AES, Henvvei, Titan, Red Lighting, Matrix Light, Fogway — ảnh lấy từ auto365.vn như hub nâng cấp ánh sáng). Logo tĩnh, không có bộ lọc theo hãng trên trang này.
 - Mobile (≤600px): tab nhu cầu 2 cột; thẻ Lý do chọn 2 hàng cuộn ngang (ảnh nhỏ trái); case xe VinFast khác 2 hàng cuộn ngang (≤768px); Dòng xe VinFast 2 cột; chi nhánh: info 2×2, nút Gọi full + Zalo/Maps chia đôi, 3 ô miền 1 hàng. Trang mobile ~15.600px → ~13.300px.
+- Chân bài có khối `#vf3lp-internal-check` (Kiểm tra nội bộ → link 02/03/04), chỉ hiện trên pages.dev/localhost. **Xoá khối này và script `vf3lp-internal-check-js` khi đăng production** (BLOCK_06). Phiếu duyệt: `04_Phieu_duyet_Bi_Gam_VinFast_VF3_V1.8.md`.
