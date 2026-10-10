@@ -24,7 +24,7 @@ Loại trang: tư vấn theo xe / lựa chọn (V1.8 §3). Intent trọng tâm: 
 | Ngày kiểm nội dung (hero) | 10/10/2026 |
 | Cập nhật (cuối trang) | 10/10/2026 — khớp dateModified; tên reviewer link về trang tác giả |
 
-Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → Có gì cần biết → Sản phẩm (2 hàng + Xem tất cả, bảng so sánh) → [CTA] → Xe VinFast khác đã lắp → Giá và phạm vi chi phí / Khi nào cần kiểm tra xe → [CTA] → Lý do chọn → Địa điểm → Cẩm nang → Nâng cấp khác → Dòng xe VinFast khác → [CTA] → FAQ (5 câu + Xem thêm; FAQPage giữ đủ 11) → Form.
+Thứ tự (theo đề xuất redesign 10/10, mục 15): Hero (ảnh VF3 thật + badge case) → Trả lời nhanh + 4 số liệu → **Top 3 bi gầm đề xuất** (GTR nổi bật + 2 mẫu cần kiểm tra) + bộ lọc + 6 mẫu khác sau nút "Xem thêm" + bảng so sánh 9 mẫu → **Video VF3 (nền tối) + so sánh tắt/bật bi gầm + ảnh ban đêm** → Case VF3 xác minh + xe VinFast tham khảo → [CTA] → Giá (thẻ giá + bảng 6 hạng mục) → 4 điểm kiểm tra kỹ thuật + khi nào cần kiểm tra xe → Lý do chọn (6 thẻ icon) + quy trình 4 bước (mở rộng 7 bước) → **Hệ thống chi nhánh — giữ nguyên** → Cẩm nang (1 bài nổi bật + 4 bài) → Nâng cấp khác → Dòng VinFast khác (thẻ ngang) → FAQ (7 câu + Xem thêm; FAQPage giữ 11) → Form.
 
 ## Sản phẩm, giá, mức xác minh
 
@@ -39,11 +39,13 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 
 | File / nguồn | Loại | Alt |
 | --- | --- | --- |
-| `hinh/vf3-bi-gam-*.webp` (9 ảnh, bản 1600px + `-800`) | **Ảnh thật** VF3 lắp bi gầm tại Auto365 (nhận 10/10/2026; biển số đã che). Dùng cho: ảnh Tổng quan, 4 thẻ giới thiệu, thẻ "Kiểm tra xe tại chi nhánh", khối 8 ảnh trong band video | alt mô tả đúng ảnh, không ghi mã đèn |
-| `hinh/ly-do-*.png` (5 ảnh còn lại) | Ảnh minh họa (AI) khối Lý do chọn | "Ảnh minh họa: …" |
+| `hinh/vf3-bi-gam-bat-den-truoc-auto365.webp` | Ảnh thật, hero + ảnh "bật bi gầm" trong so sánh | mô tả đúng ảnh |
+| `hinh/vf3-bi-gam-tat-den-truoc-auto365.webp` | Ảnh thật, "tắt bi gầm" trong so sánh (cùng vị trí, ban ngày) | mô tả đúng ảnh |
+| `hinh/vf3-bi-gam-vung-sang-ben-hong-dem.webp` | Ảnh thật, vùng sáng ban đêm (ghi nhận trực quan, không phải phép đo) | mô tả đúng ảnh |
+| `hinh/og-vf3-bi-gam.jpg` (1200×630) | OG/Twitter image — thay ảnh Toyota Hilux trước đây. Khi đăng CMS: upload và đổi URL tuyệt đối sang auto365.vn | — |
 | Video `Aa0Of6ZtxEE`, `weADPByfN7g` | Video thi công thật VF3 + GTR G1 Turbo V2 | tiêu đề video |
 
-Đã gỡ 4 ảnh AI `bi-gam-vinfast-vf3-*.png` và `ly-do-kiem-tra-xe-tai-chi-nhanh.png`. Ảnh cận đèn pha RGB trong bộ ảnh gốc **không dùng** vì là đèn chính (hạng mục khác). **CX:** xác nhận mã đèn trên chiếc VF3 trong ảnh (dự kiến GTR G1 Turbo V2 như video) trước khi ghi mã vào alt/caption. Khi đăng CMS: upload ảnh lên thư viện auto365.vn và thay đường dẫn tương đối.
+Redesign 10/10: gỡ toàn bộ ảnh minh họa AI (4 ảnh giới thiệu, 6 ảnh Lý do chọn); trang chỉ còn ảnh thật VF3 và ảnh sản phẩm/bài viết. Ảnh cận đèn pha RGB không dùng (đèn chính, khác hạng mục). **CX:** xác nhận mã đèn trên chiếc VF3 trong ảnh (dự kiến GTR G1 Turbo V2 như video). Khi đăng CMS: upload ảnh lên thư viện auto365.vn và thay đường dẫn tương đối.
 
 ## Link
 

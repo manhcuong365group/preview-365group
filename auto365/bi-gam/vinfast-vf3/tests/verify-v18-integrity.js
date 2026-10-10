@@ -16,12 +16,12 @@ const mustContain = [
   'chưa gồm VAT và chưa bao gồm phụ kiện, pát/mặt dưỡng, công lắp hoặc căn chỉnh',
   'Nguồn đối chiếu',
   'Phạm vi sử dụng',
-  'Ngày kiểm nội dung',
+  'Cập nhật: <time datetime="2026-10-10">',
   'Điều kỹ thuật cần kiểm tra',
   'Phạm vi pháp lý',
   'Việc chấp nhận khi kiểm định phụ thuộc cấu hình thực tế',
   'Chọn điểm Auto365 có dịch vụ nâng cấp ánh sáng và xác nhận cấu hình trước khi đặt lịch',
-  'Xe VinFast khác đã lắp bi gầm tại Auto365',
+  'Tham khảo các xe VinFast khác đã lắp bi gầm tại Auto365',
   'VinFast VF3 lắp GTR G1 Turbo V2 tại Auto365',
   'VinFast VF7 Plus 2025 lắp X-Light F10 Turbo V2 5500K',
   'https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k',
@@ -29,12 +29,9 @@ const mustContain = [
   'Đèn bi gầm X-Light F10 Turbo V2',
   'Bi gầm X-Light 301 V2',
   'Bi gầm AES SV 3.0 Pro',
-  'hinh/vf3-bi-gam-bat-den-truoc-auto365-800.webp',
-  'hinh/vf3-bi-gam-vung-sang-mat-duong-dem-800.webp',
-  'hinh/vf3-bi-gam-ong-kinh-trong-hoc-can-800.webp',
-  'hinh/vf3-bi-gam-vi-tri-lap-hoc-can-800.webp',
   'Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365',
   'biển số đã được che',
+  'hinh/vf3-bi-gam-bat-den-truoc-auto365.webp',
   'about',
   'mentions',
   'datePublished',
@@ -82,7 +79,11 @@ const htmlMustContain = [
   '"lastReviewed": "2026-10-10"',
   'id="vf3lp-so-sanh"',
   '<caption id="vf3lp-cmp-cap">',
-  'Nhu cầu chỉ là gợi ý để lọc nhanh'
+  'Nhu cầu chỉ là gợi ý để lọc nhanh',
+  'Top 3 bi gầm đề xuất cho VinFast VF3',
+  'data-js="vf3lp-ba"',
+  'og-vf3-bi-gam.jpg',
+  'Xem đầy đủ 7 bước'
 ];
 const htmlMissing = htmlMustContain.filter((needle) => !html.includes(needle));
 if (htmlMissing.length) {
@@ -108,10 +109,10 @@ if (htmlStill.length) {
 
 // Check physical image files exist
 const requiredImages = [
-  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-bat-den-truoc-auto365-800.webp',
-  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-vung-sang-mat-duong-dem-800.webp',
-  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-ong-kinh-trong-hoc-can-800.webp',
-  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-vi-tri-lap-hoc-can-800.webp'
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-bat-den-truoc-auto365.webp',
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-tat-den-truoc-auto365.webp',
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-vung-sang-ben-hong-dem.webp',
+  'auto365/bi-gam/vinfast-vf3/hinh/og-vf3-bi-gam.jpg'
 ];
 
 for (const imgPath of requiredImages) {
