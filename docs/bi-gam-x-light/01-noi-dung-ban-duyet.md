@@ -5,7 +5,7 @@
 | File nguồn | `auto365/bi-gam-x-light/index.html` |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
-| SHA-256 bản duyệt | `5ce9a01e9b1ad04cc9afbe9103a8503c786e1b1cf6905adb91db50fdbc3724ac` (commit `4b4c334c`) |
+| SHA-256 bản duyệt | `b2f5d74152bab3e26199c5c11d24b53ee41f656d515436eb9f45cb25bd52bf50` (commit `b2d66370`) |
 | Người kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt lại toàn bộ bản này ngày 08/10/2026 (`lastReviewed` 2026-10-08; dòng cuối FAQ "duyệt ngày 08/10/2026") · phiếu: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md) |
 | Tiêu chuẩn chấm | SEO/GEO V1.8 — phiếu: [03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md](03_Phieu_danh_gia_Bi_gam_X_Light_V1.8.md) (bản V1.7 lưu lịch sử: [03-phieu-cham-v17.md](03-phieu-cham-v17.md)) |
 | Hướng dẫn CMS/SEO | [huong-dan-trien-khai.md](huong-dan-trien-khai.md) · đoạn link CMS: [doan-link-ve-hub.md](doan-link-ve-hub.md) |
@@ -92,3 +92,4 @@ Giá sản phẩm theo **cặp** (1 cặp = 2 đèn), **chưa VAT**, chưa gồm
 | Bố cục cuối ngày 08/10 | Bỏ khối "Bài viết & nội dung liên quan" (link riêng chuyển lên đầu khối Cẩm nang); khối video + form đặt ngay trên Cẩm nang; ảnh 6 lý do thay bằng ảnh minh họa mới, bỏ nhãn đỏ trên ảnh | 08/10/2026 |
 | Khối "3 điều cần kiểm" | Chuyển từ dưới form vào mục "Hiểu nhanh", thành mục accordion đầu tiên; anchor `#kien-thuc` giữ nguyên | 08/10/2026 |
 | Công suất F10 2.0 inch, F10 New đời trước | 35W Cos / 40W Pha theo dải thông số trang sản phẩm (thay ghi chú "35W chưa tách Cos/Pha") | 08/10/2026 |
+| Câu chữ theo tái kiểm v2 10/10 | FAQ đi phố có điều kiện; chi nhánh gần bạn sau khi Auto365 xác nhận điểm; tên cơ sở "Auto365.vn - Trụ Sở Chính"; `dateModified` 2026-10-10, `lastReviewed` giữ 08/10 | 10/10/2026 |

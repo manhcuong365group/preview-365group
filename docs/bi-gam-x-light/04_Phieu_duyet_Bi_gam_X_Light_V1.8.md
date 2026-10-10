@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `5ce9a01e9b1ad04cc9afbe9103a8503c786e1b1cf6905adb91db50fdbc3724ac` (commit `4b4c334c`) |
+| Bản duyệt | `auto365/bi-gam-x-light/index.html` — SHA-256 `b2f5d74152bab3e26199c5c11d24b53ee41f656d515436eb9f45cb25bd52bf50` (commit `b2d66370`) |
 | Preview | https://preview-365group.pages.dev/bi-gam-x-light/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light |
 | Ngày duyệt | 08/10/2026 (Asia/Saigon) |
@@ -38,6 +38,12 @@ Kết quả: **Đã duyệt lại toàn bộ bản trang ngày 08/10/2026.** Tra
 | Chính hãng | 365Group phân phối chính hãng X-Light; Auto365 thuộc 365Group | 08/10/2026 |
 | Case Honda City / CR-V 1.5L L 2018 | Phiên bản thi công F10 New 2025 | 08/10/2026 |
 | Lead → CRM → GA4 | Lead test 60/87/111 nhận thành công | 08/10/2026 |
+
+## 2b. Sửa sau ngày duyệt
+
+| Ngày | Nội dung | Trạng thái duyệt |
+|---|---|---|
+| 10/10/2026 | FAQ "Đi phố là chính" viết có điều kiện; thẻ chi nhánh thêm bước Auto365 xác nhận điểm tiếp nhận; tên cơ sở "Auto365.vn - Trụ Sở Chính" | Chờ Nguyễn Quang Đạo xác nhận |
 
 ## 3. Việc còn lại (không thuộc điểm nội dung)
 

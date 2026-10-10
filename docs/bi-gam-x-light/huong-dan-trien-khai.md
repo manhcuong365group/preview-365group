@@ -1,6 +1,6 @@
 # Hub bi gầm X-Light — Hồ sơ bàn giao lên production
 
-- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `5ce9a01e9b1ad04cc9afbe9103a8503c786e1b1cf6905adb91db50fdbc3724ac` (commit `4b4c334c`). Nếu file đổi thì cập nhật lại mã này.
+- **Bản HTML áp dụng:** `auto365/bi-gam-x-light/index.html`, SHA-256 `b2f5d74152bab3e26199c5c11d24b53ee41f656d515436eb9f45cb25bd52bf50` (commit `b2d66370`). Nếu file đổi thì cập nhật lại mã này.
 - **Preview:** https://preview-365group.pages.dev/bi-gam-x-light/
 - **URL production:** https://auto365.vn/nang-cap-anh-sang-bi-gam-x-light
 - **Người duyệt chuyên môn:** Nguyễn Quang Đạo, duyệt lại toàn bộ bản này ngày 08/10/2026 (dòng cuối mục FAQ ghi "duyệt ngày 08/10/2026. Cập nhật 08/10/2026"; schema `dateModified` và `lastReviewed` 2026-10-08). Phiếu duyệt: [04_Phieu_duyet_Bi_gam_X_Light_V1.8.md](04_Phieu_duyet_Bi_gam_X_Light_V1.8.md). Ngày hiệu lực giá niêm yết: 06/10/2026; ngày đối chiếu thông số: 06/10/2026, dải thông số tản nhiệt: 08/10/2026.
@@ -195,6 +195,9 @@ Bản preview (hash ở đầu file) không có các lỗi dưới đây; v2 đa
 | 6 | 8 link case trên gallery v2 trả 404 (Innova Cross 2024, Fortuner 2022, LR2 2010, Fadil 2021, Custin 2024, Altis 2015, CR-V 2018, City RS 2022) | Preview trỏ URL production, kiểm 09/10 đều 200 | Sửa route v2 hoặc trỏ URL canonical production đã kiểm; QA lại từng href đúng bài | P1 trước Ads |
 | 7 | Capture đầu trang chỉ giữ 5 UTM + gclid; wrapper FormData chỉ bù khi thiếu khoá, không bù khoá rỗng | `xl-campaign-capture` giữ 9 khoá; form bù cả khoá rỗng từ snapshot | Mang nguyên script capture + logic bù rỗng vào template dùng chung | P0 trước Ads |
 | 8 | Gallery 74 case thay cho 30 case + bảng tra xe/nơi lắp | 30 case có nơi lắp | Nếu giữ gallery 74: ghi rõ trong handoff CMS là lựa chọn template; không nhận đã đối chiếu cấu hình/nơi lắp cho cả 74 | P1 |
+| 9 | Lọc nhanh báo "chưa có case" cho F10 Hyper 2.0 / F10 2.0 New dù gallery có xe (Innova Cross 2024, Fortuner 2022, CX-5, CX-8 / Vios 2021, XL7, Limo Green…) — tái kiểm 10/10 | Mỗi case có `data-sku` = URL sản phẩm mà bài case dẫn tới; bộ tư vấn đọc `data-sku` (kiểm 10/10: Hyper 2.0 và 2.0 New hiện xe đã lắp) | Gallery v2 xuất `data-sku` từ quan hệ bài xe–sản phẩm đã duyệt; không dùng `data-model` (dòng xe) làm khoá; một nguồn dữ liệu cho bộ tư vấn, gallery và link | P1 trước release |
+| 10 | Lọc hãng Ford ẩn Ford Transit 2012; Land Rover LR2, Corolla Altis cũng thiếu `data-brand`/`data-model` — tái kiểm 10/10 | Mọi case có `data-brand`; kiểm 10/10: chip Ford hiện Ranger, Transit, Everest | Bổ sung taxonomy hãng/dòng từ record CMS; kiểm dữ liệu thiếu trước xuất bản | P1 trước release |
+| 11 | Graph: CollectionPage/Service/Breadcrumb dùng namespace v2, TechArticle/ItemList dùng production; `mainEntityOfPage` trỏ `#collectionpage` không tồn tại; 15 Offer xuất InStock + đổi trả 7 ngày chưa rõ nguồn | Một namespace production; `mainEntityOfPage` = `#webpage`; không có Offer | Sinh @id từ một registry HTTPS production; nếu giữ Offer thì tồn kho/đổi trả phải có nguồn | P1 trước phát hành |
 
 QA sau khi CMS sửa: so lại từng dòng trên v2; lọc tản nhiệt kết hợp giá/điện áp/tìm kiếm rồi xoá lọc; GET lại 8 href; Rich Results/graph đối chiếu hiển thị. Chấm lại V1.8 trên bản v2 có hash/release mới, không chuyển điểm preview sang v2.
 
@@ -205,3 +208,10 @@ QA sau khi CMS sửa: so lại từng dòng trên v2; lọc tản nhiệt kết 
 | Bảo hành F10 New đời trước | "2 Năm" | FAQ: chưa ghi thời hạn (đếm 13/15) | Chờ xác nhận chính sách |
 | Nhiệt màu F10 New đời trước | 3000K / 4300K / 5500K | 4800K cố định | Chờ kỹ thuật chốt đúng SKU/phiên bản |
 | Tản nhiệt F10 Hyper 2.0 | "Thụ Động + Quạt" | Chưa xếp nhóm | Chờ chốt mapping |
+
+### Sửa câu chữ ngày 10/10/2026 (theo tái kiểm v2 10/10, mục A6) — CMS cần lấy lại
+
+- FAQ "Nên chọn mẫu theo nhu cầu" (hiển thị + FAQPage): ý "Đi phố là chính" viết lại có điều kiện (chưa cần nâng cấp nếu ánh sáng nguyên bản đáp ứng; giá sản phẩm chỉ là một phần chi phí).
+- Thẻ "90+ chi nhánh": kiểm tra tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp.
+- Khối liên hệ: tên cơ sở chuẩn "Auto365.vn - Trụ Sở Chính".
+- `dateModified` 2026-10-10, dòng cuối FAQ "Cập nhật 10/10/2026"; `lastReviewed` giữ 2026-10-08 (người kiểm duyệt chưa duyệt lại 3 câu này).
