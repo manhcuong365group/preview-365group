@@ -89,6 +89,7 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 
 ## Cập nhật bố cục 10/10
 
-- Hero: cột trái = eyebrow, H1 2 dòng, meta có icon, "Trả lời nhanh" (`#master-tra-loi`) ngay dưới H1, 2 nút; cột phải = 1 ảnh VF3 thật cao bằng cột trái. Khung "Tìm bi gầm hợp với VF3" trải ngang bên dưới (tiêu đề + ô tìm 1 hàng; chip nhu cầu + ghi chú giá hàng dưới).
-- 2 ảnh thật đặt trong 2 thẻ: "Giá và phạm vi chi phí" + ảnh xe VF3 bật đèn (chú thích ảnh thực tế, biển số đã che); "Khi nào cần kiểm tra xe" + ảnh cụm đèn chính (chú thích hạng mục riêng, không thuộc bi gầm). Không còn khối ảnh nền tối riêng.
-- Khối "Địa điểm Auto365 tiếp nhận": làm lại giao diện theo mẫu 10/10 (ô thông tin 2×2, 3 nút cùng hàng, 3 ô miền có hình địa danh). Nội dung và số liệu giữ nguyên. Sửa nút Google Maps trước đây trỏ `#` → link Maps trụ sở (cùng link trang bi gầm X-Light).
+- Hero: cột trái = eyebrow, H1 2 dòng (không còn dòng tác giả/ngày — reviewer + ngày cập nhật ở dòng ghi chú cuối trang và schema), "Trả lời nhanh" (`#master-tra-loi`) ngay dưới H1, 2 nút; cột phải = 1 ảnh VF3 thật (cao 300px). Khung "Tìm bi gầm hợp với VF3" trải ngang bên dưới (tiêu đề + ô tìm 1 hàng; chip nhu cầu + ghi chú giá hàng dưới).
+- 2 thẻ xếp dọc, mỗi thẻ nội dung bên trái + ảnh bên phải: "Giá và phạm vi chi phí" + ảnh xe VF3 bật đèn (chú thích ảnh thực tế, biển số đã che); "Khi nào cần kiểm tra xe" + ảnh cụm đèn chính (chú thích hạng mục riêng, không thuộc bi gầm). Không còn khối ảnh nền tối riêng.
+- Khối "Địa điểm Auto365 tiếp nhận": làm lại giao diện theo mẫu 10/10 (ô thông tin 2×2, 3 nút cùng hàng, 3 ô miền có hình địa danh). Nội dung và số liệu giữ nguyên; bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" theo yêu cầu 10/10 (ý này còn trong FAQ chi nhánh). Sửa nút Google Maps trước đây trỏ `#` → link Maps trụ sở (cùng link trang bi gầm X-Light).
+- Popup lọc: khôi phục dòng đếm `[data-loc="dem"]` ("N mẫu phù hợp") — thiếu phần tử này làm script page-asset dừng, ô tìm ở hero không mở được popup.
