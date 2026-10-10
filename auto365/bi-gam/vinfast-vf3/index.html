@@ -2908,7 +2908,13 @@ Tư vấn độ đèn cho từng dòng xe</a>
 @media(max-width:768px){.vf3lp-gal-pair{grid-template-columns:1fr}}
 .vf3lp-gal .vf3lp-ev-note{margin-top:10px;font-size:12.5px}
 .vf3lp-cmp{margin-top:32px}
-.vf3lp-cmp-title{margin:0 0 12px;font-size:18px;font-weight:700;color:#0f172a}
+.vf3lp-cmp{border:1px solid #e2e8f0;border-radius:12px;background:#fff;padding:0 16px}
+.vf3lp-cmp-title{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0;padding:14px 0;font-size:17px;font-weight:700;color:#0f172a;cursor:pointer;list-style:none}
+.vf3lp-cmp-title::-webkit-details-marker{display:none}
+.vf3lp-cmp-hint{font-size:13px;font-weight:500;color:#64748b}
+.vf3lp-cmp-title svg{width:20px;height:20px;margin-left:auto;fill:none;stroke:currentColor;stroke-width:2;transition:transform .2s}
+.vf3lp-cmp[open] .vf3lp-cmp-title svg{transform:rotate(180deg)}
+.vf3lp-cmp[open]{padding-bottom:16px}
 .vf3lp-cmp-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
 .vf3lp-cmp-table{width:100%;min-width:760px;border-collapse:collapse;font-size:13.5px;color:#334155}
 .vf3lp-cmp-table caption{caption-side:bottom;text-align:left;padding:10px 14px;font-size:12.5px;color:#64748b;border-top:1px solid #e2e8f0}
@@ -3057,8 +3063,8 @@ Tư vấn độ đèn cho từng dòng xe</a>
   </div>
   <div class="vf3lp-prod-more"><a class="vf3lp-btn vf3lp-prod-toggle" href="https://v2.auto365.vn/nang-cap-anh-sang-bi-gam">Xem thêm mẫu bi gầm <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
 
-  <div class="vf3lp-cmp" id="vf3lp-so-sanh">
-    <h3 class="vf3lp-cmp-title">So sánh nhanh 9 mẫu bi gầm cho VF3</h3>
+  <details class="vf3lp-cmp" id="vf3lp-so-sanh">
+    <summary class="vf3lp-cmp-title">So sánh nhanh 9 mẫu bi gầm cho VF3 <span class="vf3lp-cmp-hint">Lens, công suất, nhiệt màu, bảo hành, giá</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary>
     <div class="vf3lp-cmp-scroll" tabindex="0" role="region" aria-labelledby="vf3lp-cmp-cap">
       <table class="vf3lp-cmp-table">
         <caption id="vf3lp-cmp-cap">Thông số theo trang sản phẩm Auto365, đối chiếu 10/10/2026. Giá thiết bị /bộ đèn, chưa gồm VAT, chưa gồm pát, công lắp và căn chỉnh.</caption>
@@ -3082,7 +3088,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
       <li><strong>Một nhiệt màu hay ba nhiệt màu:</strong> GTR G1 Turbo V2 và AES SV 3.0 Pro dùng nhiệt màu cố định; các mẫu còn lại chuyển được 3000/4300/5500K. Nhiệt màu (K) chỉ sắc độ ánh sáng, không phản ánh độ sáng hay tầm chiếu.</li>
       <li><strong>Công suất</strong> là số hãng/nhà phân phối công bố trên trang sản phẩm, không phải phép đo trên VF3. Pha cao hơn không tự đồng nghĩa nhìn xa hơn; vùng sáng thực tế phụ thuộc vị trí lắp và căn chỉnh.</li>
     </ul>
-  </div>
+  </details>
 </div>
 </section>
 
