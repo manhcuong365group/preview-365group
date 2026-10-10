@@ -88,3 +88,9 @@ Công cụ: Puppeteer (Chromium headless) trên bản local, đo LCP/CLS bằng 
 | Desktop 1440×900, không giới hạn | 0,44 s | 0,003 | ~1,08 MB | 29 | 4.137 |
 
 Trước khi đưa case vào template: DOM 7.178, 576 ảnh. Sau: DOM 4.137, 238 ảnh (ảnh lazy-load).
+
+## Trước khi đăng production — xoá khối kiểm tra nội bộ
+
+- Xoá `<aside id="internal-check">` và script đi kèm ở cuối `<main>` (khối này tự hiện trên pages.dev/localhost, tự ẩn ở domain khác nhưng vẫn nằm trong HTML).
+- Không đưa thư mục `nang-cap-anh-sang/kiem-tra-noi-bo/` lên production.
+- Nếu còn trong bản đăng: lỗi chặn BLOCK_06 (V1.8 §12).
