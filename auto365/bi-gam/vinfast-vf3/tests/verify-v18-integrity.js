@@ -63,7 +63,6 @@ if (stillPresent.length) {
 // Fix sheet 08/10/2026: these must be visible in the HTML itself, not only in vf3.json
 const htmlMustContain = [
   'vf3lp-ev--case">Có video VF3',
-  'vf3lp-ev--check">Kiểm tra xe',
   'data-yt="Aa0Of6ZtxEE"',
   'data-yt="weADPByfN7g"',
   '"@type": "FAQPage"',

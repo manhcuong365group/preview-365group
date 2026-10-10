@@ -17,7 +17,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | Phần đã duyệt | Nội dung |
 |---|---|
 | Thông số | Bảng "So sánh nhanh 9 mẫu bi gầm cho VF3": lens, công suất Cos/Pha mỗi đèn, nhiệt màu, bảo hành — theo trang sản phẩm auto365.vn, đọc 10/10/2026 (quy tắc: PDP là nguồn được chấp nhận) |
-| Mức xác minh trên VF3 | GTR G1 Turbo V2 = có video thi công VF3; F10 Turbo V2 = kỹ thuật xác nhận tương thích (10/10/2026); 7 mẫu còn lại = cần kiểm tra xe trước khi chốt |
+| Mức xác minh trên VF3 | GTR G1 Turbo V2 = có video thi công VF3; 8 mẫu còn lại = kỹ thuật xác nhận lắp được trên VF3 (10/10/2026); vẫn kiểm tra pát/điện trên xe trước khi chốt |
 | Tư vấn | Trả lời nhanh, khối "Khi nào cần kiểm tra xe", 11 FAQ (FAQPage khớp nội dung), câu đăng kiểm không kết luận pháp lý |
 | Bảo hành | Thiết bị theo chính sách từng mẫu; lỗi do lắp đặt không thuộc bảo hành thiết bị |
 
@@ -31,6 +31,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | Video VF3 | 2 video GTR G1 Turbo V2 trên VF3 tại Auto365 | Nguồn đối chiếu trong `data/vf3.json` (06/10/2026) |
 | Ảnh thật | VF3 bật đèn trước Auto365 (biển số che); cụm đèn chính RGB ghi rõ hạng mục riêng | Nhận 10/10/2026 — **xe trong ảnh lắp GTR G1 Turbo V2**, xác nhận 10/10/2026; alt + chú thích đã ghi tên mẫu |
 | F10 Turbo V2 trên VF3 | Kỹ thuật đã xác nhận tương thích VF3 (khớp `vf3.json`); bảng so sánh ghi "Kỹ thuật xác nhận", FAQ + FAQPage cập nhật | **Đã xác nhận 10/10/2026** |
+| 7 mẫu còn lại trên VF3 | X-Light 301 V2, F10 2.0 New, F10 Pro V2, X3 Ultra, AES SV 3.0 Pro, SV 3.0 Max, SV 2.0 Max: kỹ thuật xác nhận lắp được; bảng so sánh đổi "Kiểm tra xe" → "Kỹ thuật xác nhận", FAQ + FAQPage cập nhật | **Đã xác nhận 10/10/2026** |
 | Lead → CRM | Test 10/10/2026 trên trang VF3 v2: form tư vấn → `/api/leads` 200 `{"success":true,"lead_id":"30","test":true}`; popup báo giá (GTR G1 Turbo V2) → 200, gộp vào lead #30 (trùng số trong 5 phút). Preview `pages.dev` trả 405 và form báo lỗi đúng (không báo thành công giả) | **Đạt** — CRM đã nhận lead test (người phụ trách xác nhận 10/10/2026); xoá lead #30 |
 
 ## 2b. Sửa sau ngày duyệt — Nguyễn Quang Đạo đã xác nhận 10/10/2026
@@ -59,4 +60,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `e82845653a31c6e1ab027f9ffa2494b33ec89386a0f0b8acf3bf8eb702c2949f`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `0314f5f36e0d31cee9243c0a0c0b8d74eba714a804eea88da41153cdf8356d7f`
