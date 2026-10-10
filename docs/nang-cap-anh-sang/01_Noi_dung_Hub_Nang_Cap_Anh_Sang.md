@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `ad64e5ca6e97ece6b583178e8ddd2b9884c030b47e66b0df85a737a888caffb5`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `5fc1ea8e5769764be6ad9391c3884526edb007732e411dd6a49880266e1813c8`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -86,7 +86,14 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 - 05Thi công
 - 06Cân chỉnh và kiểm tra
 - 07Bàn giao & bảo hành
-## Xe của bạn dùng chóa phản xạ hay projector?  `#chon-theo-den`
+Khảo sát xe: ướm mặt dưỡng vào hốc đèn gầm trước khi chốt cấu hình.
+
+Bàn giao: bi gầm lắp gọn trong hốc đèn nguyên bản, đã cân chỉnh vùng sáng.
+
+## Kiến thức cần nắm khi độ đèn  `#kien-thuc-nang-cap`
+
+
+**Xe của bạn dùng chóa phản xạ hay projector?**
 
 
 **Ánh sáng phản xạ từ bề mặt chóa**
@@ -111,34 +118,13 @@ Projector dồn sáng xuống mặt đường với đường cắt (cutoff) s�
 - Đèn gầm dạng rời khi xe không có hốc gầm; nên hỏi trước về vị trí lắp và cách sử dụng.
 Cấu tạo một bi LED projector: chóa phản xạ, cụm chip LED, quạt tản nhiệt và lens — minh họa trên mẫu Titan Black.
 
-## Halogen, Xenon, LED và Laser khác nhau thế nào?  `#cong-nghe`
+
+**Halogen, Xenon, LED và Laser khác nhau thế nào?**
 
 Bốn nguồn sáng phổ biến trên ô tô — khác nhau ở nguyên lý phát sáng, độ trễ, nhiệt và yêu cầu lắp đặt.
 
 
-| Nguồn sáng | Nguyên lý | Ưu điểm | Lưu ý |
-| --- | --- | --- | --- |
-| Halogen | Dây tóc nóng sáng trong bóng khí halogen | Rẻ, dễ thay, ánh vàng ấm | Tỏa nhiều nhiệt, tuổi thọ thấp, độ sáng hạn chế |
-| Xenon / HID | Hồ quang điện trong bóng khí xenon, cần ballast kích điện áp cao | Ánh sáng mạnh, phổ biến trên bi cầu đời cũ | Cần vài giây để đạt độ sáng tối đa; thêm ballast/bộ kích |
-| LED | Chip bán dẫn phát sáng trực tiếp | Bật sáng tức thì, tiêu thụ điện thấp hơn halogen ở mức sáng tương đương, nhỏ gọn | Nhạy nhiệt: cần quạt hoặc khối tản nhiệt nhôm/đồng tốt |
-| Laser (trên bi Laser) | Diode laser kích lớp phosphor, thường chỉ dùng cho Pha; Cos vẫn là LED | Hỗ trợ tầm chiếu xa ở chế độ Pha | Giá cao; cần xác minh cấu hình laser thật theo hãng |
-
-## Các nhóm nâng cấp ánh sáng khác nhau ở đâu?  `#so-sanh`
-
-Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
-
-
-| Nhóm | Vị trí | Phù hợp | Điểm mạnh | Cần kiểm tra | Giá sản phẩm |
-| --- | --- | --- | --- | --- | --- |
-| Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Cụm đèn, pát, nhiệt, căn chỉnh | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → |
-| Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Quang học, không gian lắp, nhiệt | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → |
-| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Kích thước chóa, chân H4, tản nhiệt | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F-15 V2Xem danh mục → |
-| Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Hốc gầm, lens, hệ điện, nhiệt màu | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → |
-| Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Vị trí pát, góc chiếu, hệ điện | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → |
-| Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Chân bóng, Canbus, tản nhiệt | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → |
-| Đèn trợ sáng | Vị trí phụ trợ | Đường tối, off-road | Spot / Flood theo mục đích | Vị trí lắp, IP, hệ điện, mục đích sử dụng | Từ 1.200.000đ/bộMẫu: ĐÈN TRỢ SÁNG TITAN MOTO M10 PLUSXem danh mục → |
-
-## Cách đọc thông số đèn ô tô  `#kien-thuc`
+**Cách đọc thông số đèn ô tô**
 
 
 **Lumen (lm)**
@@ -197,11 +183,8 @@ Nếu gặp một trong các tình huống sau, nên mang xe tới chi nhánh đ
 - Mỏi mắt khi chạy đêm hoặc trời mưa
 - Chùm sáng tán, không có đường cắt rõ, dễ chói xe đối diện
 - Chóa hoặc mặt kính đèn ố vàng, mờ, hấp hơi
-Trước khi chốt mẫu đèn, nên yêu cầu điểm thi công kiểm tra trực tiếp hốc đèn, giắc kết nối và hệ điện trên đúng xe — cùng một dòng xe nhưng khác đời hoặc phiên bản vẫn có thể khác cấu tạo. Ưu tiên nơi có ảnh hoặc video thi công thực tế trên xe tương tự, và hỏi rõ phương án cân chỉnh vùng sáng sau lắp.
 
-Nguyễn Quang Đạo · Chuyên gia đèn ô tô, Auto365
-
-## Lỗi thường gặp sau khi độ đèn và cách phòng tránh  `#loi-thuong-gap`
+**Lỗi thường gặp sau khi độ đèn và cách phòng tránh**
 
 Phần lớn lỗi sau khi độ đèn đến từ việc chọn sai loại đèn cho cụm đèn zin, đi dây thiếu bảo vệ hoặc bỏ qua bước cân chỉnh.
 
@@ -252,9 +235,34 @@ Cách phòng tránh: Ưu tiên giắc cắm phù hợp, relay và cầu chì ri�
 
 Nên kiểm tra góc chiếu, độ kín keo, quạt tản nhiệt và giắc nối định kỳ — đặc biệt sau va chạm, sau khi thay giảm xóc, khi xe thường chở nặng, hoặc trước mùa mưa và trước chuyến đi xa.
 
-## Lắp đúng – chiếu đúng – dùng đúng  `#phap-ly`
+Trước khi chốt mẫu đèn, nên yêu cầu điểm thi công kiểm tra trực tiếp hốc đèn, giắc kết nối và hệ điện trên đúng xe — cùng một dòng xe nhưng khác đời hoặc phiên bản vẫn có thể khác cấu tạo. Ưu tiên nơi có ảnh hoặc video thi công thực tế trên xe tương tự, và hỏi rõ phương án cân chỉnh vùng sáng sau lắp.
 
-Ba nguyên tắc nên kiểm tra khi nâng cấp hệ thống chiếu sáng ô tô để sử dụng hiệu quả, hạn chế gây chói và phù hợp với cấu hình xe.
+Nguyễn Quang Đạo · Chuyên gia đèn ô tô, Auto365
+
+
+| Nguồn sáng | Nguyên lý | Ưu điểm | Lưu ý |
+| --- | --- | --- | --- |
+| Halogen | Dây tóc nóng sáng trong bóng khí halogen | Rẻ, dễ thay, ánh vàng ấm | Tỏa nhiều nhiệt, tuổi thọ thấp, độ sáng hạn chế |
+| Xenon / HID | Hồ quang điện trong bóng khí xenon, cần ballast kích điện áp cao | Ánh sáng mạnh, phổ biến trên bi cầu đời cũ | Cần vài giây để đạt độ sáng tối đa; thêm ballast/bộ kích |
+| LED | Chip bán dẫn phát sáng trực tiếp | Bật sáng tức thì, tiêu thụ điện thấp hơn halogen ở mức sáng tương đương, nhỏ gọn | Nhạy nhiệt: cần quạt hoặc khối tản nhiệt nhôm/đồng tốt |
+| Laser (trên bi Laser) | Diode laser kích lớp phosphor, thường chỉ dùng cho Pha; Cos vẫn là LED | Hỗ trợ tầm chiếu xa ở chế độ Pha | Giá cao; cần xác minh cấu hình laser thật theo hãng |
+
+## Các nhóm nâng cấp ánh sáng khác nhau ở đâu?  `#so-sanh`
+
+Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
+
+
+| Nhóm | Vị trí | Phù hợp | Điểm mạnh | Cần kiểm tra | Giá sản phẩm |
+| --- | --- | --- | --- | --- | --- |
+| Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Cụm đèn, pát, nhiệt, căn chỉnh | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → |
+| Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Quang học, không gian lắp, nhiệt | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → |
+| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Kích thước chóa, chân H4, tản nhiệt | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F-15 V2Xem danh mục → |
+| Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Hốc gầm, lens, hệ điện, nhiệt màu | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → |
+| Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Vị trí pát, góc chiếu, hệ điện | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → |
+| Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Chân bóng, Canbus, tản nhiệt | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → |
+| Đèn trợ sáng | Vị trí phụ trợ | Đường tối, off-road | Spot / Flood theo mục đích | Vị trí lắp, IP, hệ điện, mục đích sử dụng | Từ 1.200.000đ/bộMẫu: ĐÈN TRỢ SÁNG TITAN MOTO M10 PLUSXem danh mục → |
+
+## Lắp đúng – chiếu đúng – dùng đúng  `#phap-ly`
 
 
 **Lắp đúng vị trí**
@@ -284,6 +292,8 @@ Sử dụng đèn, pha/cos phù hợp điều kiện giao thông, thời tiết 
 - Bật đèn chiếu sáng từ 18 giờ đến 6 giờ sáng hôm sau
 - Bật đèn khi sương mù, mưa hoặc bụi làm hạn chế tầm nhìn
 - Chuyển pha sang cos trong các tình huống luật quy định để hạn chế gây chói
+Vùng sáng Cos/Pha cần có đường cắt rõ và được cân chỉnh sau lắp để hạn chế chói xe đối diện.
+
 Tham khảo pháp lý hiện hành: Luật Trật tự, an toàn giao thông đường bộ 2024 ; Nghị định 168/2024/NĐ-CP ; Nghị định 238/2026/NĐ-CP .
 
 
@@ -383,6 +393,6 @@ Auto365
 - Cẩm nang ánh sángChính sách bảo hành
 Văn bản
 
-- Luật TTATGT đường bộ 2024 · Điều 20Nghị định 168/2024/NĐ-CP · Điều 13Nghị định 238/2026/NĐ-CPIEC 60529 · cấp bảo vệ IP
+- Luật TTATGT đường bộ 2024Điều 20 · Sử dụng đènNghị định 168/2024/NĐ-CP · Điều 13Nghị định 238/2026/NĐ-CPIEC 60529 · cấp bảo vệ IP
 Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, cầu chì · công lắp và cân chỉnh · VAT. Tổng giá chốt sau khi kiểm tra xe.
 
