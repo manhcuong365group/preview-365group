@@ -51,6 +51,7 @@ Vì sao cần upload / nếu không: link tương đối `assets/` chỉ chạy 
 4. Kiểm từng URL trả 200 và đúng loại nội dung (PDF/ảnh), không phải trang HTML thay thế.
 
 ## 4. Đồng bộ các bài đang chạy trên auto365.vn (Content/SEO)
+> **Cập nhật 10/10/2026:** user xác nhận các bài live trong danh sách dưới đã sửa xong. Kiểm lại VF3, Innova, panorama: không còn bộ số IR cũ (VLT 58%/18%); panorama đã ghi cửa sổ trời nhỏ 850.000đ.
 
 Quy tắc đã chốt: NR25 không dùng kính lái; NR5 được dùng cho kính lưng.
 
