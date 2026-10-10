@@ -95,3 +95,4 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 - Đã bỏ khung tìm kiếm ở hero và popup lọc (`vf3lp-loc`). Mức xác minh từng mẫu hiển thị trong bảng so sánh ("Có video VF3" / "Kiểm tra xe").
 - Form báo giá (`nr-quote`): thêm dòng trạng thái `[data-js="nr-quote-status"]` — thiếu phần tử này làm `quote.js` lỗi, mọi nút "Báo giá"/"Nhận báo giá" không mở được form.
 - 4 tab nhu cầu dưới "Trả lời nhanh" lọc lưới sản phẩm theo `nhu_cau` trong `vf3.json` (JS inline, không phụ thuộc page-asset). Khi lọc hiện ghi chú "Gợi ý theo nhu cầu, kỹ thuật viên xác nhận mẫu phù hợp khi kiểm tra xe" + nút Bỏ lọc. **CX Kỹ thuật:** căn cứ gán nhu cầu cho từng mẫu (§7.1).
+- Giao diện chung (10/10): bo góc 8px cho mọi khung/thẻ/ảnh nội dung (chip, nút viên thuốc giữ tròn); khoảng cách giữa các block 10px, đệm dọc trong block 10px (giảm 50%); FAQ dạng danh sách không khung, dấu +/−.
