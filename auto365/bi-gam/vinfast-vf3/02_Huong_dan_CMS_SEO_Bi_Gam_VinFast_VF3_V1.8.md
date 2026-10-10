@@ -39,11 +39,11 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 
 | File / nguồn | Loại | Alt |
 | --- | --- | --- |
-| `hinh/bi-gam-vinfast-vf3-*.png` (4 ảnh) | Ảnh minh họa (AI), không phải evidence | "Ảnh minh họa: …" |
-| `hinh/ly-do-*.png` (6 ảnh) | Ảnh minh họa (AI) khối Lý do chọn | "Ảnh minh họa: …" |
+| `hinh/vf3-bi-gam-*.webp` (9 ảnh, bản 1600px + `-800`) | **Ảnh thật** VF3 lắp bi gầm tại Auto365 (nhận 10/10/2026; biển số đã che). Dùng cho: ảnh Tổng quan, 4 thẻ giới thiệu, thẻ "Kiểm tra xe tại chi nhánh", khối 8 ảnh trong band video | alt mô tả đúng ảnh, không ghi mã đèn |
+| `hinh/ly-do-*.png` (5 ảnh còn lại) | Ảnh minh họa (AI) khối Lý do chọn | "Ảnh minh họa: …" |
 | Video `Aa0Of6ZtxEE`, `weADPByfN7g` | Video thi công thật VF3 + GTR G1 Turbo V2 | tiêu đề video |
 
-**CX Media:** ảnh case VF3 thật (toàn xe, cận vị trí lắp, vùng sáng) có mã media và người xác minh, để thay ảnh minh họa.
+Đã gỡ 4 ảnh AI `bi-gam-vinfast-vf3-*.png` và `ly-do-kiem-tra-xe-tai-chi-nhanh.png`. Ảnh cận đèn pha RGB trong bộ ảnh gốc **không dùng** vì là đèn chính (hạng mục khác). **CX:** xác nhận mã đèn trên chiếc VF3 trong ảnh (dự kiến GTR G1 Turbo V2 như video) trước khi ghi mã vào alt/caption. Khi đăng CMS: upload ảnh lên thư viện auto365.vn và thay đường dẫn tương đối.
 
 ## Link
 

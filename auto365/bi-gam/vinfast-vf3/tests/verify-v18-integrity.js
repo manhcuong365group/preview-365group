@@ -29,10 +29,12 @@ const mustContain = [
   'Đèn bi gầm X-Light F10 Turbo V2',
   'Bi gầm X-Light 301 V2',
   'Bi gầm AES SV 3.0 Pro',
-  'hinh/bi-gam-vinfast-vf3-muc-dich-tang-sang.png',
-  'hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
-  'hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
-  'hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png',
+  'hinh/vf3-bi-gam-bat-den-truoc-auto365-800.webp',
+  'hinh/vf3-bi-gam-vung-sang-mat-duong-dem-800.webp',
+  'hinh/vf3-bi-gam-ong-kinh-trong-hoc-can-800.webp',
+  'hinh/vf3-bi-gam-vi-tri-lap-hoc-can-800.webp',
+  'Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365',
+  'biển số đã được che',
   'about',
   'mentions',
   'datePublished',
@@ -106,10 +108,10 @@ if (htmlStill.length) {
 
 // Check physical image files exist
 const requiredImages = [
-  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-muc-dich-tang-sang.png',
-  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
-  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
-  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png'
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-bat-den-truoc-auto365-800.webp',
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-vung-sang-mat-duong-dem-800.webp',
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-ong-kinh-trong-hoc-can-800.webp',
+  'auto365/bi-gam/vinfast-vf3/hinh/vf3-bi-gam-vi-tri-lap-hoc-can-800.webp'
 ];
 
 for (const imgPath of requiredImages) {

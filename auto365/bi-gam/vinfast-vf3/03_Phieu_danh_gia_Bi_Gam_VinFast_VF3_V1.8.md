@@ -18,7 +18,7 @@
 
 | Mã | Tối đa | Điểm | Bằng chứng / vị trí | Cần sửa / điều kiện đóng |
 | --- | ---: | --- | --- | --- |
-| C1 | 10 | 9,0 + CX | 9 SKU khớp staging; giá ghi "/bộ đèn", chưa VAT, công/pát/căn chỉnh báo riêng; ảnh AI có alt "Ảnh minh họa"; đã bỏ "an toàn", "sương mù", "trọn gói", "máy laser". | CX Commercial: hiệu lực giá. |
+| C1 | 10 | 9,0 + CX | 9 SKU khớp staging; giá ghi "/bộ đèn", chưa VAT, công/pát/căn chỉnh báo riêng; ảnh thật VF3 thay ảnh AI ở các khối VF3, 5 ảnh AI còn lại có nhãn "Ảnh minh họa"; đã bỏ "an toàn", "sương mù", "trọn gói", "máy laser". | CX Commercial: hiệu lực giá. |
 | C2 | 10 | 9,5 | Trả lời nhanh, 9 sản phẩm, **bảng so sánh 9 mẫu có nguồn PDP** + 4 ghi chú đánh đổi (§4.2), video VF3, giá, khi nào cần kiểm tra xe, 11 FAQ. | — |
 | C3 | 10 | 9,0 | Văn khách đọc, không nhãn nội bộ, không claim tuyệt đối. | — |
 | S1 | 10 | 9,0 | Intent bi gầm VF3; link hub `/nang-cap-anh-sang-bi-gam`; bài đèn chính không nằm trong khối bi gầm. | — |
@@ -26,15 +26,15 @@
 | S3 | 10 | 8,5 + CX | Đã gỡ 3 link 404; 02 CMS cập nhật @id, ngày, link, CTA. | CX SEO: chốt domain canonical (`v2.auto365.vn` vs `auto365.vn` trong `vf3.json`). |
 | G1 | 10 | 9,0 | Trả lời nhanh trích riêng vẫn đúng chủ thể, phạm vi giá và điều kiện kiểm tra xe. | — |
 | G2 | 10 | 9,0 | Đánh đổi lens 3.0/2.0, nhiệt màu cố định/ba mức, công suất công bố ≠ phép đo (§7.1); GTR có video VF3; mẫu khác ghi cần kiểm tra; nhãn nhu cầu ghi là gợi ý. | Fitment từng SKU trên VF3 vẫn chỉ có GTR. |
-| G3 | 5 | 4,25 + CX | Video thi công VF3; thông số có nguồn PDP + ngày đọc trong caption; ngày đối chiếu giá; link chính sách bảo hành; reviewer đã duyệt. | CX Kỹ thuật: hồ sơ fitment từng SKU (F10 Turbo V2 đang để CHECK_REQUIRED); CX Media: ảnh case VF3 thật. |
-| U1 | 5 | 4,5 | Video VF3 đưa lên ngay sau Tổng quan, nền tối làm điểm nhấn; sản phẩm 2 hàng + "Xem tất cả"; FAQ hiện 5 câu + "Xem thêm"; H2 28px desktop; không tràn ngang mobile. | Hero chưa có ảnh; khối Lý do chọn còn dài (đổi layout — chưa làm). |
+| G3 | 5 | 4,75 + CX | Video thi công VF3; **9 ảnh thật VF3 lắp bi gầm tại Auto365** (vị trí lắp, ban ngày, vùng sáng ban đêm); thông số có nguồn PDP; ngày đối chiếu giá; link chính sách bảo hành; reviewer đã duyệt. | CX Kỹ thuật: hồ sơ fitment từng SKU (F10 Turbo V2 đang để CHECK_REQUIRED); mã đèn trên xe trong ảnh. |
+| U1 | 5 | 4,75 | Video VF3 lên sau Tổng quan, nền tối + khối 8 ảnh thật; ảnh thật ở Tổng quan và 4 thẻ giới thiệu; sản phẩm 2 hàng + "Xem tất cả"; FAQ 5 câu + "Xem thêm"; không tràn ngang mobile. | Khối Lý do chọn còn dài (đổi layout — chưa làm). |
 | U2 | 5 | 4,75 | 3 khối CTA + form + gọi/Zalo đúng hotline đèn. | L7: test form/CRM trên production. |
 | U3 | 5 | 4,75 | 01/02/03 cùng phiên bản 10/10/2026; test kiểm trực tiếp trong HTML (ngày, Article, nhãn, claim cấm). | Đóng hết sau khi các CX được cập nhật vào 02/03. |
 
-**Điểm đã xác nhận:** C 27,5 · S 27,0 · G 22,25 · U 14,0 · **Tổng 90,75/100**.  
-**Khoảng còn mở (§11.3):** CX C1 (tối đa +1), S3 (+1,5), G3 (+0,75) → tổng 90,75–94,0; S 27,0–28,5; **G 22,25–23,0**.
+**Điểm đã xác nhận:** C 27,5 · S 27,0 · G 22,75 · U 14,25 · **Tổng 91,5/100**.  
+**Khoảng còn mở (§11.3):** CX C1 (tối đa +1), S3 (+1,5), G3 (+0,25) → tổng 91,5–94,25; S 27,0–28,5; **G 22,75–23,0**.
 
-**Kết luận nội dung: CHƯA ĐẠT NỘI DUNG V1.8.** Kể cả khi đóng hết CX, G tối đa 23,0 < 23,75 và tổng tối đa 94,0 < 95. Phần còn kéo điểm: bằng chứng trên VF3 mới có cho 1/9 mẫu (G2/G3), chưa có ảnh case VF3 thật (G3), và U1 (hero chưa có ảnh).
+**Kết luận nội dung: CHƯA ĐẠT NỘI DUNG V1.8.** Kể cả khi đóng hết CX, G tối đa 23,0 < 23,75 và tổng tối đa 94,25 < 95. Phần còn kéo điểm: bằng chứng lắp trên VF3 mới có cho 1/9 mẫu (G2/G3) và khối Lý do chọn dài (U1).
 
 ## 3. N1–N5 (§20.3)
 
@@ -42,7 +42,7 @@
 | --- | --- | --- | --- | --- |
 | N1 | Giá, bảo hành | Đáp ứng / CX | Giá thiết bị, VAT, đơn vị, ngày đối chiếu; bảo hành theo chính sách, tách khỏi fitment. | Commercial xác nhận hiệu lực giá. |
 | N2 | Quyết định chọn bi gầm VF3 | Đáp ứng | Trả lời nhanh, bảng so sánh có nguồn + đánh đổi, khối kiểm tra xe, FAQ. | — |
-| N3 | Case/video VF3 | Đáp ứng / CX | 2 video GTR G1 Turbo V2 trên VF3; case xe khác ghi tham khảo; ảnh AI có nhãn minh họa. | Media: ảnh case VF3 thật. |
+| N3 | Case/video VF3 | Đáp ứng / CX | 2 video GTR G1 Turbo V2 trên VF3; 9 ảnh thật VF3 tại Auto365; case xe khác ghi tham khảo; ảnh AI còn lại có nhãn minh họa. | Xác nhận mã đèn trên xe trong ảnh. |
 | N4 | Thực thể | Đáp ứng | Publisher Auto365; about VinFast VF3; mentions 9 Product có brand GTR/X-Light/AES; reviewedBy Nguyễn Quang Đạo (Person @id dùng chung). | — |
 | N5 | Vai trò URL | Đáp ứng / CX | Intent VF3 tách hub ngành. | Chốt domain canonical. |
 
@@ -50,7 +50,7 @@
 
 | Mã | Kết quả |
 | --- | --- |
-| BLOCK_01 | Không phát hiện trong phạm vi đã kiểm (ảnh sai hạng mục đã gỡ; ảnh AI có nhãn minh họa). |
+| BLOCK_01 | Không phát hiện trong phạm vi đã kiểm (ảnh sai hạng mục đã gỡ; ảnh cận đèn pha không dùng vì khác hạng mục; ảnh AI còn lại có nhãn minh họa). |
 | BLOCK_02 | Không phát hiện (đã bỏ "trọn gói"; giá thiết bị và chi phí khác tách rõ). |
 | BLOCK_03 | Không phát hiện (reviewer Nguyễn Quang Đạo đã duyệt 10/10/2026; thông số lấy từ PDP, không tự đo). |
 | BLOCK_04 | Không phát hiện (mẫu chưa có hồ sơ ghi cần kiểm tra xe; nhãn nhu cầu ghi là gợi ý). |
@@ -79,7 +79,7 @@
 - Video VF3 khôi phục; case xe VinFast khác ghi rõ tham khảo; 3 khối CTA; sản phẩm 2 hàng + "Xem tất cả".
 - Mức xác minh trong modal lọc; đoạn giải thích dưới H2 sản phẩm.
 - Bỏ claim: trọn gói, chuẩn hóa 90+ chi nhánh, máy laser/chống chói, nhiệt màu tối ưu, căn chỉnh lại trong bảo hành, an toàn, sương mù.
-- Alt "Ảnh minh họa" cho 10 ảnh AI (4 khối giới thiệu, 6 khối Lý do chọn).
+- Alt "Ảnh minh họa" cho các ảnh AI; 10/10: thay bằng 9 ảnh thật VF3 tại Auto365 (Tổng quan, 4 thẻ giới thiệu, thẻ Kiểm tra xe, khối 8 ảnh), gỡ 5 file ảnh AI.
 - Schema: Article (about/mentions/datePublished/dateModified 2026-10-09), ItemList 9, FAQPage 11.
 - 10/10: video VF3 lên ngay sau Tổng quan (nền tối), FAQ 5 câu + "Xem thêm", H2 28px; số chi nhánh "90+ / 91" dùng số đã chốt ở các trang trước.
 - 10/10: reviewer Nguyễn Quang Đạo duyệt — reviewedBy/lastReviewed/dateModified 2026-10-10, hero + "Cập nhật" 10/10/2026; bảng so sánh 9 mẫu (nguồn PDP) + ghi chú đánh đổi.
@@ -90,7 +90,7 @@
 | Việc | Phụ trách |
 | --- | --- |
 | Hồ sơ fitment từng SKU (F10 Turbo V2 trước) | Kỹ thuật |
-| Ảnh case VF3 thật thay ảnh minh họa | Media |
+| Xác nhận mã đèn trên chiếc VF3 trong bộ ảnh thật | Kỹ thuật |
 | Hiệu lực giá, đơn vị, VAT | Commercial |
 | Domain canonical production | SEO |
 | L1–L3, L6, L7 sau khi đăng | IT/CMS |
