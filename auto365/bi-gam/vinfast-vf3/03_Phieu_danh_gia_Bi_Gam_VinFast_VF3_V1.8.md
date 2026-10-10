@@ -18,23 +18,23 @@
 
 | Mã | Tối đa | Điểm | Bằng chứng / vị trí | Cần sửa / điều kiện đóng |
 | --- | ---: | --- | --- | --- |
-| C1 | 10 | 9,0 + CX | 9 SKU khớp staging; giá ghi "/bộ đèn", chưa VAT, công/pát/căn chỉnh báo riêng; ảnh AI có alt "Ảnh minh họa"; đã bỏ "an toàn", "sương mù", "trọn gói", "máy laser". | CX Commercial: hiệu lực giá. |
+| C1 | 10 | 10 | 9 SKU khớp staging, giá đã xác nhận 10/10/2026; "/bộ đèn", chưa VAT, công/pát/căn chỉnh báo riêng; ảnh thật ghi đúng mẫu GTR G1 Turbo V2; ảnh AI có nhãn minh họa; không còn claim tuyệt đối. | — |
 | C2 | 10 | 9,5 | Trả lời nhanh, 9 sản phẩm, **bảng so sánh 9 mẫu có nguồn PDP** + 4 ghi chú đánh đổi (§4.2), video VF3, giá, khi nào cần kiểm tra xe, 11 FAQ. | — |
 | C3 | 10 | 9,0 | Văn khách đọc, không nhãn nội bộ, không claim tuyệt đối. | — |
 | S1 | 10 | 9,0 | Intent bi gầm VF3; link hub `/nang-cap-anh-sang-bi-gam`; bài đèn chính không nằm trong khối bi gầm. | — |
 | S2 | 10 | 9,5 | Title/H1/meta khớp nội dung; alt ảnh minh họa đúng; schema Article (about VF3, mentions 9 sản phẩm), CollectionPage, FAQPage khớp hiển thị. | — |
 | S3 | 10 | 8,5 + CX | Đã gỡ 3 link 404; 02 CMS cập nhật @id, ngày, link, CTA. | CX SEO: chốt domain canonical (`v2.auto365.vn` vs `auto365.vn` trong `vf3.json`). |
 | G1 | 10 | 9,0 | Trả lời nhanh trích riêng vẫn đúng chủ thể, phạm vi giá và điều kiện kiểm tra xe. | — |
-| G2 | 10 | 9,0 | Đánh đổi lens 3.0/2.0, nhiệt màu cố định/ba mức, công suất công bố ≠ phép đo (§7.1); GTR có video VF3; mẫu khác ghi cần kiểm tra; nhãn nhu cầu ghi là gợi ý. | Fitment từng SKU trên VF3 vẫn chỉ có GTR. |
-| G3 | 5 | 4,5 + CX | Video thi công VF3; 1 ảnh thật VF3 lắp bi gầm tại Auto365; thông số có nguồn PDP; ngày đối chiếu giá; link chính sách bảo hành; reviewer đã duyệt. | CX Kỹ thuật: hồ sơ fitment từng SKU (F10 Turbo V2 đang để CHECK_REQUIRED); mã đèn trên xe trong ảnh. |
+| G2 | 10 | 9,5 | Mức xác minh rõ: GTR G1 Turbo V2 có video VF3, F10 Turbo V2 kỹ thuật xác nhận tương thích, 7 mẫu còn lại cần kiểm tra xe; bảng so sánh có nguồn + đánh đổi. | Nhãn nhu cầu từng mẫu vẫn là gợi ý (ghi rõ trên trang). |
+| G3 | 5 | 5,0 | Video thi công VF3; ảnh thật VF3 + GTR G1 Turbo V2 tại Auto365; thông số có nguồn PDP; giá xác nhận; reviewer Nguyễn Quang Đạo duyệt (kể cả sửa sau duyệt); phiếu duyệt 04. | — |
 | U1 | 5 | 4,5 | Video VF3 đưa lên ngay sau Tổng quan, nền tối làm điểm nhấn; sản phẩm 2 hàng + "Xem tất cả"; FAQ hiện 5 câu + "Xem thêm"; H2 28px desktop; không tràn ngang mobile. | Hero chưa có ảnh; khối Lý do chọn còn dài (đổi layout — chưa làm). |
 | U2 | 5 | 4,75 | 3 khối CTA + form + gọi/Zalo đúng hotline đèn. | L7: test form/CRM trên production. |
 | U3 | 5 | 4,75 | 01/02/03 cùng phiên bản 10/10/2026; test kiểm trực tiếp trong HTML (ngày, Article, nhãn, claim cấm). | Đóng hết sau khi các CX được cập nhật vào 02/03. |
 
-**Điểm đã xác nhận:** C 27,5 · S 27,0 · G 22,5 · U 14,0 · **Tổng 91,0/100**.  
-**Khoảng còn mở (§11.3):** CX C1 (tối đa +1), S3 (+1,5), G3 (+0,5) → tổng 91,0–94,0; S 27,0–28,5; **G 22,5–23,0**.
+**Điểm đã xác nhận:** C 28,5 · S 27,0 · G 23,5 · U 14,0 · **Tổng 93,0/100**.  
+**Khoảng còn mở (§11.3):** CX S3 (+1,5, domain canonical) → tổng 93,0–94,5; S 27,0–28,5; **G 23,5** (không còn CX).
 
-**Kết luận nội dung: CHƯA ĐẠT NỘI DUNG V1.8.** Kể cả khi đóng hết CX, G tối đa 23,0 < 23,75 và tổng tối đa 94,0 < 95. Phần còn kéo điểm: bằng chứng trên VF3 mới có cho 1/9 mẫu (G2/G3), chưa có ảnh case VF3 thật (G3), và U1 (hero chưa có ảnh).
+**Kết luận nội dung: CHƯA ĐẠT NỘI DUNG V1.8.** G 23,5 < 23,75 và tổng tối đa 94,5 < 95. Phần còn kéo điểm: G1/G2 (mới 2/9 mẫu có bằng chứng VF3; nhãn nhu cầu chưa có căn cứ kỹ thuật) và U1/U3 — cần thêm hồ sơ fitment các mẫu còn lại để qua ngưỡng.
 
 ## 3. N1–N5 (§20.3)
 

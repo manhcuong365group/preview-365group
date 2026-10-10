@@ -32,7 +32,7 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 - Lưới chính hiện 2 hàng (8 desktop / 4 mobile); nút "Xem thêm mẫu bi gầm" là link sang hub `https://v2.auto365.vn/nang-cap-anh-sang-bi-gam`. Mẫu thứ 9 (AES SV 2.0 Max) vẫn nằm trong HTML, bảng so sánh và bộ lọc.
 - Mức xác minh hiển thị trong bảng so sánh (popup lọc đã bỏ 10/10): GTR G1 Turbo V2 = "Đã có case VF3 được xác minh" (căn cứ 2 video); 8 mẫu còn lại = "Cần kiểm tra xe trước khi chốt". Thẻ lưới chính không gắn nhãn (yêu cầu 09/10); đoạn dưới H2 sản phẩm nêu GTR là mẫu có video VF3.
 - Bảng **"So sánh nhanh 9 mẫu bi gầm cho VF3"** (`#vf3lp-so-sanh`, trong khối Sản phẩm, dưới nút "Xem tất cả"): lens, công suất Cos/Pha mỗi đèn, nhiệt màu, bảo hành, giá, trạng thái trên VF3. Nguồn: trang sản phẩm auto365.vn đọc 10/10/2026 (quy tắc reviewer: PDP là nguồn được chấp nhận). Ô "—" = PDP không ghi (lens AES SV 3.0 Pro); bảo hành AES SV 3.0 Max "Xác nhận khi báo giá" vì PDP không ghi. Có caption, `th scope`, cuộn ngang riêng trên mobile. Hiển thị dạng accordion `<details>` **thu gọn mặc định** (yêu cầu 10/10); bảng vẫn nằm trong HTML. 4 ghi chú đánh đổi: bằng chứng VF3, lens 3.0 vs 2.0, một vs ba nhiệt màu, công suất công bố khác phép đo.
-- F10 Turbo V2: `vf3.json` ghi "Kỹ thuật đã xác nhận tương thích VF3" nhưng chưa có hồ sơ trong `nguon_doi_chieu` → trang để CHECK_REQUIRED. **CX Kỹ thuật.**
+- F10 Turbo V2: kỹ thuật đã xác nhận tương thích VF3 (10/10/2026) — bảng so sánh nhãn "Kỹ thuật xác nhận", FAQ + FAQPage cập nhật.
 - Nhãn nhu cầu trong bộ lọc (đi phố / đi mưa / đi tỉnh / tiết kiệm) là gợi ý lọc, có ghi chú "không phải xác nhận tương thích". **CX Kỹ thuật** nếu muốn dùng làm căn cứ chọn.
 
 ## Ảnh & video
@@ -100,3 +100,4 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 - Lý do chọn: thêm dải "Thương hiệu đèn tại Auto365" (8 logo X-Light, GTR, AES, Henvvei, Titan, Red Lighting, Matrix Light, Fogway — ảnh lấy từ auto365.vn như hub nâng cấp ánh sáng). Logo tĩnh, không có bộ lọc theo hãng trên trang này.
 - Mobile (≤600px): tab nhu cầu 2 cột; thẻ Lý do chọn 2 hàng cuộn ngang (ảnh nhỏ trái); case xe VinFast khác 2 hàng cuộn ngang (≤768px); Dòng xe VinFast 2 cột; chi nhánh: info 2×2, nút Gọi full + Zalo/Maps chia đôi, 3 ô miền 1 hàng. Trang mobile ~15.600px → ~13.300px.
 - Chân bài có khối `#vf3lp-internal-check` (Kiểm tra nội bộ → link 02/03/04), chỉ hiện trên pages.dev/localhost. **Xoá khối này và script `vf3lp-internal-check-js` khi đăng production** (BLOCK_06). Phiếu duyệt: `04_Phieu_duyet_Bi_Gam_VinFast_VF3_V1.8.md`.
+- Test lead 10/10/2026 trên v2: form tư vấn + popup báo giá → lead #30 (cờ test). Xoá khỏi CRM.
