@@ -2905,7 +2905,6 @@ Tư vấn độ đèn cho từng dòng xe</a>
 .vf3lp-band--hero{background:radial-gradient(1200px 500px at 85% 0%,#eef2f7 0%,rgba(255,255,255,0) 60%),linear-gradient(180deg,#ffffff 0%,#f6f7f9 100%) !important}
 .vf3lp-hx{display:block !important}
 .vf3lp-hx-top{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:stretch}
-.vf3lp-hx-top>.vf3lp-hx-media{order:-1}
 .vf3lp-hx-copy{display:flex;flex-direction:column;justify-content:center}
 .vf3lp-hx-eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 14px !important;color:#dc2626 !important;font-weight:600;letter-spacing:.04em}
 .vf3lp-hx-eyebrow::before{content:"";width:40px;height:2px;background:#dc2626;border-radius:2px}
@@ -2989,6 +2988,12 @@ Tư vấn độ đèn cho từng dòng xe</a>
 .vf3lp-faq{border:0 !important;padding:0 !important;background:transparent !important;border-radius:0 !important}
 .vf3lp .vf3lp-card,.vf3lp .vf3lp-cmp,.vf3lp .vf3lp-cmp-scroll,.vf3lp .vf3lp-cn-card,.vf3lp .vf3lp-br-card,.vf3lp .vf3lp-br-info,.vf3lp .vf3lp-br-reg,.vf3lp .vf3lp-br-ico,.vf3lp .vf3lp-br-btn,.vf3lp .vf3lp-br-all,.vf3lp .vf3lp-cta,.vf3lp .nr-callout,.vf3lp .vf3lp-support-card,.vf3lp .vf3lp-process-wrap,.vf3lp .vf3lp-card-col,.vf3lp .vf3lp-need-note,.vf3lp .vf3lp-xe-grid>li,.vf3lp .vf3lp-card-fig img,.vf3lp .vf3lp-hx-car,.vf3lp .vf3lp-overview>img,.vf3lp .vf3lp-prod-anh,.vf3lp .vf3lp-vd-grid .vf3lp-video,.vf3lp .vf3lp-vd-grid .vf3lp-thumb,.vf3lp .vf3lp-tech-ico{border-radius:8px !important}
 .vf3lp .vf3lp-prod-grid .vf3lp-card.vf3lp-prod{border-radius:8px !important}
+.vf3lp .vf3lp-cn-rail{grid-template-rows:auto !important}
+.vf3lp .vf3lp-card-rows>.vf3lp-card-col:first-child{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);grid-template-areas:"fig head" "fig body"}
+.vf3lp .vf3lp-card-col{grid-template-rows:auto auto !important;align-content:center}
+.vf3lp .vf3lp-card-col>.vf3lp-head{align-self:end}
+.vf3lp .vf3lp-card-col>aside{align-self:start}
+@media(max-width:768px){.vf3lp .vf3lp-card-rows>.vf3lp-card-col:first-child{grid-template-columns:1fr;grid-template-areas:"fig" "head" "body"}}
 .vf3lp{row-gap:10px !important}
 .vf3lp>.vf3lp-band{padding-top:10px !important;padding-bottom:10px !important}
 .vf3lp>.vf3lp-band--hero{padding-top:16px !important;padding-bottom:16px !important}
