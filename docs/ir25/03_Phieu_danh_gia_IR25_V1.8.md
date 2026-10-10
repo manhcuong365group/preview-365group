@@ -69,7 +69,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/ir25.html`, SHA-256 `0f3f5630cd5e703e7c72bcc024c4cd9837abc6be8797d114526cd4dd59266a8e` (kiểm 08/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/ir25.html`, SHA-256 `9bfdae6c742b890b73f5cd205c9854ae61fbf5d08113ed94202a0ca702544a05` (kiểm 08/10/2026).
 
 | Dữ kiện | 01 — Bản đăng (HTML) | 02 — Hướng dẫn CMS/SEO | 03 — Phiếu này | Khớp |
 |---|---|---|---|---|
