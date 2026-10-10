@@ -42,6 +42,7 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 | `hinh/bi-gam-vinfast-vf3-*.png` (4 ảnh) | Ảnh minh họa (AI), không phải evidence | "Ảnh minh họa: …" |
 | `hinh/ly-do-*.png` (6 ảnh) | Ảnh minh họa (AI) khối Lý do chọn | "Ảnh minh họa: …" |
 | `hinh/vf3-bi-gam-bat-den-truoc-auto365.webp` | **Ảnh thật** VF3 lắp bi gầm tại Auto365 (biển số đã che), 1 ảnh đại diện dưới 2 video | mô tả đúng ảnh, chưa ghi mã đèn |
+| `hinh/vf3-den-chinh-rgb-auto365.webp` | Ảnh thật cụm **đèn chính** đã nâng cấp trên cùng chiếc VF3 — đặt cạnh ảnh bi gầm theo yêu cầu 10/10, caption ghi rõ hạng mục riêng, không thuộc bi gầm | mô tả đúng ảnh |
 | `hinh/og-vf3-bi-gam.jpg` (1200×630) | OG/Twitter image — thay ảnh Toyota Hilux trước đây. Khi đăng CMS: upload và đổi URL tuyệt đối sang auto365.vn | — |
 | Video `Aa0Of6ZtxEE`, `weADPByfN7g` | Video thi công thật VF3 + GTR G1 Turbo V2 | tiêu đề video |
 

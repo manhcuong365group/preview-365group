@@ -2812,7 +2812,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 </div>
 <div class="vf3lp-gal">
 <h3 class="vf3lp-gal-title">Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365</h3>
-<figure class="vf3lp-gal-one"><img src="hinh/vf3-bi-gam-bat-den-truoc-auto365.webp" alt="VinFast VF3 lắp bi gầm tại Auto365, bật đèn nhìn trực diện" loading="lazy" width="1448" height="1086"></figure>
+<div class="vf3lp-gal-pair"><figure class="vf3lp-gal-one"><img src="hinh/vf3-bi-gam-bat-den-truoc-auto365.webp" alt="VinFast VF3 lắp bi gầm tại Auto365, bật đèn nhìn trực diện" loading="lazy" width="1448" height="1086"></figure><figure class="vf3lp-gal-one"><img src="hinh/vf3-den-chinh-rgb-auto365.webp" alt="Cụm đèn chính đã nâng cấp trên VinFast VF3 tại Auto365" loading="lazy" width="1600" height="900"><figcaption>Cụm đèn chính trên chiếc VF3 này cũng được nâng cấp tại Auto365 — hạng mục riêng, không thuộc bi gầm.</figcaption></figure></div>
 <p class="vf3lp-ev-note">Ảnh chụp thực tế tại Auto365; biển số đã được che.</p>
 </div>
 </div>
@@ -2901,7 +2901,11 @@ Tư vấn độ đèn cho từng dòng xe</a>
 .vf3lp-gal{margin-top:28px}
 .vf3lp-gal-title{margin:0 0 12px;font-size:18px;font-weight:700;color:#fff}
 .vf3lp-gal-one{margin:0;max-width:880px;border-radius:12px;overflow:hidden;background:#1e293b}
-.vf3lp-gal-one img{display:block;width:100%;height:auto}
+.vf3lp-gal-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:1100px}
+.vf3lp-gal-pair .vf3lp-gal-one{max-width:none}
+.vf3lp-gal-one img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+.vf3lp-gal-one figcaption{padding:8px 12px;font-size:12.5px;line-height:1.5;color:#cbd5e1}
+@media(max-width:768px){.vf3lp-gal-pair{grid-template-columns:1fr}}
 .vf3lp-gal .vf3lp-ev-note{margin-top:10px;font-size:12.5px}
 .vf3lp-cmp{margin-top:32px}
 .vf3lp-cmp-title{margin:0 0 12px;font-size:18px;font-weight:700;color:#0f172a}
