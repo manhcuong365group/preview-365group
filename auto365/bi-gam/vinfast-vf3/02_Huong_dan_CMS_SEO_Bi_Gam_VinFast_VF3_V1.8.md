@@ -43,7 +43,6 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 | `hinh/ly-do-*.png` (6 ảnh) | Ảnh minh họa (AI) khối Lý do chọn | "Ảnh minh họa: …" |
 | `hinh/vf3-bi-gam-bat-den-truoc-auto365.webp` | **Ảnh thật** VF3 lắp bi gầm tại Auto365 (biển số đã che), 1 ảnh đại diện dưới 2 video | mô tả đúng ảnh, chưa ghi mã đèn |
 | `hinh/vf3-den-chinh-rgb-auto365.webp` | Ảnh thật cụm **đèn chính** đã nâng cấp trên cùng chiếc VF3 — đặt cạnh ảnh bi gầm theo yêu cầu 10/10, caption ghi rõ hạng mục riêng, không thuộc bi gầm | mô tả đúng ảnh |
-| `hinh/vf3-bi-gam-bat-den-ban-ngay.webp`, `hinh/vf3-bi-gam-vi-tri-lap-hoc-can.webp` | Ảnh thật VF3: đầu thẻ "Giá và phạm vi chi phí" / "Khi nào cần kiểm tra xe" | mô tả đúng ảnh |
 | `hinh/og-vf3-bi-gam.jpg` (1200×630) | OG/Twitter image — thay ảnh Toyota Hilux trước đây. Khi đăng CMS: upload và đổi URL tuyệt đối sang auto365.vn | — |
 | Video `Aa0Of6ZtxEE`, `weADPByfN7g` | Video thi công thật VF3 + GTR G1 Turbo V2 | tiêu đề video |
 
@@ -90,5 +89,5 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 
 ## Cập nhật bố cục 10/10
 
-- "Trả lời nhanh" (`#master-tra-loi`) đặt trong hero, ngay dưới H1.
-- Khối "Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365" (`#vf3lp-anh-thuc-te`, nền tối) đặt sau khối Giá / Khi nào cần kiểm tra xe.
+- Hero theo mẫu thiết kế 10/10: trái = eyebrow, H1 2 dòng, meta có icon; phải = 1 ảnh VF3 thật (`vf3-bi-gam-bat-den-truoc-auto365.webp`, không dùng ảnh xe dựng trong mẫu). Hàng dưới: "Trả lời nhanh" (`#master-tra-loi`) + 2 nút | khung "Tìm bi gầm hợp với VF3".
+- Khối "Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365" (`#vf3lp-anh-thuc-te`, nền tối) đặt sau khối Giá / Khi nào cần kiểm tra xe. 2 thẻ Giá / Kiểm tra xe không gắn ảnh.
