@@ -3,7 +3,7 @@
 - Bản nguồn: `auto365/ma-phim/cr-blk-40.html` (preview https://preview-365group.pages.dev/ma-phim/cr-blk-40)
 - URL production giữ nguyên: https://auto365.vn/phim-cach-nhiet-3m-cr-blk-40 (cập nhật URL hiện có, không tạo URL mới)
 - Loại trang: trang sản phẩm/mã phim. Câu hỏi chính: CR BLK 40 dùng cho kính lái ra bao nhiêu %, giá, có nên chọn không.
-- Phiên bản bàn giao: HTML SHA-256 `2b317e779e64753e18423127a3926a4866926e25de725eda3f02f09ad587f380` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
+- Phiên bản bàn giao: HTML SHA-256 `25a8f849269bf7165a607e0ac147bc0580976d5a38c8c7d70a556e13daf2042d` (08/10/2026); phần 01 = file HTML này; phần 03 = `03_Phieu_danh_gia_CR_BLK_40_V1.8.md`
 - Cập nhật 06/10/2026 (nguồn: Bảng giá chính thức 3M AutoFilm (chủ trang xác nhận 06/10/2026)): kính lưng NR25/NR15/NR5 cùng 1.900.000đ/kính; NR5 nay được dùng cho kính lưng (quy tắc cũ "NR5 không dùng kính lưng" đã thu hồi). Quy tắc kính lưng NR đã đồng bộ ở dữ liệu gợi ý mã, thẻ gói, FAQ (HTML + JSON-LD) của trang này (chỉ dữ liệu gợi ý dùng chung). NR35 chỉ kính lái; NR25/NR5 không dùng kính lái.
 - datePublished: 2026-10-06 · dateModified: 2026-10-08 (chỉ đổi dateModified khi sửa nội dung thật)
 

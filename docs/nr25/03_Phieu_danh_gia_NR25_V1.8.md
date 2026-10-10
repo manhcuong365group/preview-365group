@@ -69,7 +69,7 @@ Kết luận Live: CÁC MỤC ĐÃ KIỂM TRA ĐẠT; CÒN CX Ở L1, L3, L5, L6
 
 ## Bảng đối chiếu phiên bản (U3)
 
-Phiên bản bàn giao: HTML `auto365/ma-phim/nr25.html`, SHA-256 `4a992eb2ce0d25047397feb9a9b1bfd3eddadd70e8b6b077a39ebb202128e393` (kiểm 08/10/2026).
+Phiên bản bàn giao: HTML `auto365/ma-phim/nr25.html`, SHA-256 `2a1da9799a497bd4ff1022f36b3e9fe180f41342fd2959181663ea8697209cca` (kiểm 08/10/2026).
 
 Cập nhật 06/10/2026: thêm link PDF catalog NR (HTML đã đổi, mã băm mới). 
 
