@@ -98,4 +98,4 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 - Giao diện chung (10/10): bo góc 8px cho mọi khung/thẻ/ảnh nội dung (chip, nút viên thuốc giữ tròn); khoảng cách giữa các block 10px, đệm dọc trong block 10px (giảm 50%); FAQ dạng danh sách không khung, dấu +/−.
 - Cẩm nang: thanh trượt 1 hàng (5 bài), nút ‹ › trượt ngang.
 - Lý do chọn: thêm dải "Thương hiệu đèn tại Auto365" (8 logo X-Light, GTR, AES, Henvvei, Titan, Red Lighting, Matrix Light, Fogway — ảnh lấy từ auto365.vn như hub nâng cấp ánh sáng). Logo tĩnh, không có bộ lọc theo hãng trên trang này.
-- Mobile (≤600px): tab nhu cầu 2 cột; thẻ Lý do chọn dạng ngang (ảnh 112px trái); Dòng xe VinFast 2 cột; chi nhánh: info 2×2, nút Gọi full + Zalo/Maps chia đôi, 3 ô miền 1 hàng. Trang mobile ~15.600px → ~13.300px.
+- Mobile (≤600px): tab nhu cầu 2 cột; thẻ Lý do chọn 2 hàng cuộn ngang (ảnh nhỏ trái); case xe VinFast khác 2 hàng cuộn ngang (≤768px); Dòng xe VinFast 2 cột; chi nhánh: info 2×2, nút Gọi full + Zalo/Maps chia đôi, 3 ô miền 1 hàng. Trang mobile ~15.600px → ~13.300px.
