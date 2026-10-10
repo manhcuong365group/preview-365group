@@ -1,65 +1,104 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast VF3 V1.8
 
-Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8  
-Loại trang: landing page/tư vấn theo xe  
-Ngày kiểm: 09/10/2026, Asia/Saigon (rà lại theo phiếu kiểm tra & fix ngày 08/10/2026)  
-Người biên tập: Team Content Auto365  
-Rà soát kỹ thuật: Nguyễn Quang Đạo (chờ hồ sơ duyệt riêng cho VF3 — xem VF3-04)  
-Phạm vi: source local `index.html`, preview `https://preview-365group.pages.dev/bi-gam/vinfast-vf3/`. Chưa nghiệm thu live production.
+## 1. Thông tin đầu vào (§20.1)
 
-## Kết luận hiện tại
+| Trường | Nội dung |
+| --- | --- |
+| Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 (hiệu lực 06/10/2026) |
+| Tên trang / URL | Bi gầm VinFast VF3 — canonical khai báo `https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3` (CX domain, xem S3) |
+| Loại trang / Intent | Tư vấn theo xe / lựa chọn — "bi gầm VinFast VF3": lắp được không, chọn mẫu nào, giá gồm gì, khi nào cần kiểm tra xe |
+| Môi trường / Phiên bản | Preview `https://preview-365group.pages.dev/bi-gam/vinfast-vf3/`; bản nguồn `index.html` 10/10/2026 |
+| Ngày kiểm / Múi giờ | 10/10/2026, Asia/Saigon |
+| Người biên tập / Reviewer | Team Content Auto365 / Nguyễn Quang Đạo — **đã duyệt 10/10/2026** (chủ quản xác nhận) |
+| Xác nhận thương mại | **CX** — giá đối chiếu `stg_products` 06/10/2026, chưa có xác nhận hiệu lực của Commercial |
+| Nguồn đã đọc | 9 trang sản phẩm auto365.vn (thông số, đọc 10/10/2026); `data/vf3.json` (sản phẩm, giá, FAQ, bảo hành, video); 2 video VF3 trên auto365.vn; trạng thái HTTP các link cẩm nang (09/10/2026); phiếu kiểm tra & fix 08/10/2026 |
+| Phạm vi / Ngoại lệ | Sửa nội dung, alt, schema, hồ sơ; **giữ nguyên layout** theo yêu cầu 10/10/2026. Đề xuất thiết kế lại chưa thực hiện. |
 
-**HOLD nghiệm thu.** Đã đóng các lỗi nội dung sửa được trong HTML. Chưa chấm PASS V1.8 vì còn CX cần Kỹ thuật / Operations / Media xác nhận và chưa chạy QA live L1–L8 trên production. Điểm 98,6/100 của phiếu ngày 07/10 không còn hiệu lực (phiếu đó ghi đóng P0 nhưng trang thực tế thiếu video VF3, thiếu nhãn xác minh, FAQ chỉ 4/11, ItemList rỗng).
+## 2. Bảng điểm (§20.2)
 
-## Ma trận lỗi (theo phiếu 08/10/2026)
+| Mã | Tối đa | Điểm | Bằng chứng / vị trí | Cần sửa / điều kiện đóng |
+| --- | ---: | --- | --- | --- |
+| C1 | 10 | 9,0 + CX | 9 SKU khớp staging; giá ghi "/bộ đèn", chưa VAT, công/pát/căn chỉnh báo riêng; ảnh AI có alt "Ảnh minh họa"; đã bỏ "an toàn", "sương mù", "trọn gói", "máy laser". | CX Commercial: hiệu lực giá. |
+| C2 | 10 | 9,5 | Trả lời nhanh, 9 sản phẩm, **bảng so sánh 9 mẫu có nguồn PDP** + 4 ghi chú đánh đổi (§4.2), video VF3, giá, khi nào cần kiểm tra xe, 11 FAQ. | — |
+| C3 | 10 | 9,0 | Văn khách đọc, không nhãn nội bộ, không claim tuyệt đối. | — |
+| S1 | 10 | 9,0 | Intent bi gầm VF3; link hub `/nang-cap-anh-sang-bi-gam`; bài đèn chính không nằm trong khối bi gầm. | — |
+| S2 | 10 | 9,5 | Title/H1/meta khớp nội dung; alt ảnh minh họa đúng; schema Article (about VF3, mentions 9 sản phẩm), CollectionPage, FAQPage khớp hiển thị. | — |
+| S3 | 10 | 8,5 + CX | Đã gỡ 3 link 404; 02 CMS cập nhật @id, ngày, link, CTA. | CX SEO: chốt domain canonical (`v2.auto365.vn` vs `auto365.vn` trong `vf3.json`). |
+| G1 | 10 | 9,0 | Trả lời nhanh trích riêng vẫn đúng chủ thể, phạm vi giá và điều kiện kiểm tra xe. | — |
+| G2 | 10 | 9,0 | Đánh đổi lens 3.0/2.0, nhiệt màu cố định/ba mức, công suất công bố ≠ phép đo (§7.1); GTR có video VF3; mẫu khác ghi cần kiểm tra; nhãn nhu cầu ghi là gợi ý. | Fitment từng SKU trên VF3 vẫn chỉ có GTR. |
+| G3 | 5 | 4,25 + CX | Video thi công VF3; thông số có nguồn PDP + ngày đọc trong caption; ngày đối chiếu giá; link chính sách bảo hành; reviewer đã duyệt. | CX Kỹ thuật: hồ sơ fitment từng SKU (F10 Turbo V2 đang để CHECK_REQUIRED); CX Media: ảnh case VF3 thật. |
+| U1 | 5 | 4,5 | Video VF3 đưa lên ngay sau Tổng quan, nền tối làm điểm nhấn; sản phẩm 2 hàng + "Xem tất cả"; FAQ hiện 5 câu + "Xem thêm"; H2 28px desktop; không tràn ngang mobile. | Hero chưa có ảnh; khối Lý do chọn còn dài (đổi layout — chưa làm). |
+| U2 | 5 | 4,75 | 3 khối CTA + form + gọi/Zalo đúng hotline đèn. | L7: test form/CRM trên production. |
+| U3 | 5 | 4,75 | 01/02/03 cùng phiên bản 10/10/2026; test kiểm trực tiếp trong HTML (ngày, Article, nhãn, claim cấm). | Đóng hết sau khi các CX được cập nhật vào 02/03. |
 
-| ID | Ưu tiên | Trạng thái | Đã làm / còn thiếu |
+**Điểm đã xác nhận:** C 27,5 · S 27,0 · G 22,25 · U 14,0 · **Tổng 90,75/100**.  
+**Khoảng còn mở (§11.3):** CX C1 (tối đa +1), S3 (+1,5), G3 (+0,75) → tổng 90,75–94,0; S 27,0–28,5; **G 22,25–23,0**.
+
+**Kết luận nội dung: CHƯA ĐẠT NỘI DUNG V1.8.** Kể cả khi đóng hết CX, G tối đa 23,0 < 23,75 và tổng tối đa 94,0 < 95. Phần còn kéo điểm: bằng chứng trên VF3 mới có cho 1/9 mẫu (G2/G3), chưa có ảnh case VF3 thật (G3), và U1 (hero chưa có ảnh).
+
+## 3. N1–N5 (§20.3)
+
+| Mã | Phạm vi | Kết quả | Bằng chứng | Cách xử lý |
+| --- | --- | --- | --- | --- |
+| N1 | Giá, bảo hành | Đáp ứng / CX | Giá thiết bị, VAT, đơn vị, ngày đối chiếu; bảo hành theo chính sách, tách khỏi fitment. | Commercial xác nhận hiệu lực giá. |
+| N2 | Quyết định chọn bi gầm VF3 | Đáp ứng | Trả lời nhanh, bảng so sánh có nguồn + đánh đổi, khối kiểm tra xe, FAQ. | — |
+| N3 | Case/video VF3 | Đáp ứng / CX | 2 video GTR G1 Turbo V2 trên VF3; case xe khác ghi tham khảo; ảnh AI có nhãn minh họa. | Media: ảnh case VF3 thật. |
+| N4 | Thực thể | Đáp ứng | Publisher Auto365; about VinFast VF3; mentions 9 Product có brand GTR/X-Light/AES; reviewedBy Nguyễn Quang Đạo (Person @id dùng chung). | — |
+| N5 | Vai trò URL | Đáp ứng / CX | Intent VF3 tách hub ngành. | Chốt domain canonical. |
+
+## 4. Blockers
+
+| Mã | Kết quả |
+| --- | --- |
+| BLOCK_01 | Không phát hiện trong phạm vi đã kiểm (ảnh sai hạng mục đã gỡ; ảnh AI có nhãn minh họa). |
+| BLOCK_02 | Không phát hiện (đã bỏ "trọn gói"; giá thiết bị và chi phí khác tách rõ). |
+| BLOCK_03 | Không phát hiện (reviewer Nguyễn Quang Đạo đã duyệt 10/10/2026; thông số lấy từ PDP, không tự đo). |
+| BLOCK_04 | Không phát hiện (mẫu chưa có hồ sơ ghi cần kiểm tra xe; nhãn nhu cầu ghi là gợi ý). |
+| BLOCK_05 | Không phát hiện (hotline 0365 365 911 khớp contactPoint đèn). |
+| BLOCK_06 | Không phát hiện ghi chú nội bộ trên bản đăng. |
+| BLOCK_07 | NA ở preview (noindex có chủ đích); kiểm khi lên production. |
+| BLOCK_08 | Không phát hiện (không Review/Rating/Offer giả; FAQPage khớp hiển thị). |
+
+## 5. Nhật ký Live (§20.4) — preview, chưa phải production
+
+| Mã | Phạm vi / ngày | Trạng thái | Bằng chứng |
 | --- | --- | --- | --- |
-| VF3-01 | P0 | **Một phần** | Không còn ảnh H7/Naoevo/lens vuông/V20 trong khối bi gầm. 4 ảnh khối "có gì cần biết" là ảnh minh họa (AI) → alt đổi thành "Ảnh minh họa: …", thẻ "Trải nghiệm thực tế" đổi thành "Tư vấn theo phiên bản" để không bị đọc như evidence. **CX Media:** cần ảnh case VF3 + GTR G1 Turbo V2 có mã media, hồ sơ gốc, người xác minh. |
-| VF3-02 | P0 | **Đóng trong HTML** | Nhãn xác minh hiển thị trong modal lọc (thẻ sản phẩm ở lưới chính không gắn nhãn theo yêu cầu 09/10; đoạn dưới H2 nêu rõ GTR G1 Turbo V2 là mẫu đã có video VF3): GTR G1 Turbo V2 = "Đã có case VF3 được xác minh" (CASE_VERIFIED, căn cứ 2 video VF3); 8 mẫu còn lại = "Cần kiểm tra xe trước khi chốt" (CHECK_REQUIRED). Đoạn giải thích mức xác minh đặt dưới H2 sản phẩm. Bỏ meta "Bảo hành 2 năm" khỏi modal lọc. **Lưu ý:** `vf3.json` ghi F10 Turbo V2 = "Kỹ thuật đã xác nhận tương thích VF3" nhưng `nguon_doi_chieu` không có hồ sơ → tạm để CHECK_REQUIRED, chờ Kỹ thuật gửi hồ sơ fitment để nâng lên FITMENT_VERIFIED. |
-| VF3-03 | P0/CX | **Đóng câu chữ, CX Master Data** | Bỏ badge "Chuẩn hóa 90+ chi nhánh"; thêm câu "Khả năng tiếp nhận và phạm vi thi công bi gầm được xác nhận theo từng cơ sở trước khi đặt lịch." **CX Operations:** Master Data chi nhánh có dịch vụ bi gầm/VF3. |
-| VF3-04 | P1/CX | **CX** | Giữ reviewer Nguyễn Quang Đạo (không tự thay). Cần hồ sơ: phạm vi duyệt, ngày, version cho trang VF3. |
-| VF3-05 | P1 | **Đóng** | FAQ đăng kiểm dùng đoạn an toàn của phiếu 08/10, không kết luận pháp lý. FAQ hiện đủ 11/11 câu theo `vf3.json`. |
-| VF3-06 | P1 | **Đóng trong preview** | Khôi phục section "Video thi công bi gầm trên VinFast VF3" (2 video `Aa0Of6ZtxEE`, `weADPByfN7g`). Đã test click → modal mở đúng YouTube embed, không rơi vào placeholder. Cần test lại trên production. |
-| VF3-07 | P1 | **Đóng câu chữ, chờ Commercial** | Giá 9 SKU khớp `stg_products` (đối chiếu 06/10/2026). Bỏ "Báo giá trọn gói" (bước 4 + dock) → "Báo giá từng hạng mục". Thêm thẻ AES SV 2.0 Max (5.000.000đ) đang thiếu ở lưới chính. Commercial xác nhận đơn vị/VAT/hiệu lực. |
-| VF3-08 | QA | **Một phần** | Schema: thêm FAQPage (11 câu, khớp visible); ItemList 9 sản phẩm (chỉ name + url, không Offer/Review). Sửa tràn ngang mobile 375px (grid gốc + khối 7 bước + rail cẩm nang). Còn: L1–L3, L6, L7 trên production. |
+| L1 | Production | CX | Chưa đăng. |
+| L2 | Preview HTTP 200, noindex staging | CX (production) | — |
+| L3 | GSC | CX | Chưa có quyền / chưa đăng. |
+| L4 | JSON-LD parse OK, @graph 7 node (10/10) | Pass (preview) | Person, Article, CollectionPage[9] + reviewedBy, FAQPage(11). |
+| L5 | Desktop 1366px, mobile 375px (09/10) | Pass (preview, mô phỏng viewport) | Không tràn ngang; modal video mở YouTube. |
+| L6 | Hiệu năng | CX | Chưa đo. |
+| L7 | Form/CRM, tel, Zalo | CX | Chưa test gửi lead. |
+| L8 | HTML trả về chứa text, giá, link `a href` | Pass (preview) | Đọc bằng cheerio. |
 
-## Sửa thêm ngoài ma trận
+**Kết luận Live:** CÁC MỤC ĐÃ KIỂM TRA ĐẠT TRÊN PREVIEW; CÒN CX TẠI L1–L3, L6, L7 — chưa nghiệm thu production.
 
-- Claim chưa có căn cứ trong khối 7 bước: "nhiệt màu tối ưu", "cắm giắc zin an toàn", "Cân chỉnh máy laser, cắt sáng chuẩn chống chói" → viết lại theo mô tả quy trình, không claim tuyệt đối.
-- Thẻ "Hậu mãi": bỏ "căn chỉnh lại nếu sai lệch trong thời hạn bảo hành" (mâu thuẫn `bao_hanh.thi_cong`) → ghi đúng: lỗi do lắp đặt không thuộc bảo hành thiết bị, trao đổi phương án/chi phí trước khi xử lý.
-- Case section đổi H2 thành "Xe VinFast khác đã lắp bi gầm tại Auto365" + ghi chú case xe khác chỉ để tham khảo, không thay kiểm tra trên VF3.
-- Cẩm nang: gỡ 3 bài trả 404 trên v2 (kiểm 09/10/2026): `kinh-nghiem-chon-nhiet-mau-den-gam`, `do-bi-gam-o-to-co-duoc-dang-kiem-khong`, `quy-trinh-can-chinh-duong-cat-sang-bi-gam`. Sửa tiêu đề 2 bài cho khớp title thật, bỏ "khắc phục triệt để", "chuẩn xác".
+## 6. Đã sửa trong đợt này (09–10/10/2026)
 
-## N1–N5
+- Video VF3 khôi phục; case xe VinFast khác ghi rõ tham khảo; 3 khối CTA; sản phẩm 2 hàng + "Xem tất cả".
+- Mức xác minh trong modal lọc; đoạn giải thích dưới H2 sản phẩm.
+- Bỏ claim: trọn gói, chuẩn hóa 90+ chi nhánh, máy laser/chống chói, nhiệt màu tối ưu, căn chỉnh lại trong bảo hành, an toàn, sương mù.
+- Alt "Ảnh minh họa" cho 10 ảnh AI (4 khối giới thiệu, 6 khối Lý do chọn).
+- Schema: Article (about/mentions/datePublished/dateModified 2026-10-09), ItemList 9, FAQPage 11.
+- 10/10: video VF3 lên ngay sau Tổng quan (nền tối), FAQ 5 câu + "Xem thêm", H2 28px; số chi nhánh "90+ / 91" dùng số đã chốt ở các trang trước.
+- 10/10: reviewer Nguyễn Quang Đạo duyệt — reviewedBy/lastReviewed/dateModified 2026-10-10, hero + "Cập nhật" 10/10/2026; bảng so sánh 9 mẫu (nguồn PDP) + ghi chú đánh đổi.
+- "Cập nhật" cuối trang; 3 link cẩm nang 404 đã gỡ; sửa tràn ngang mobile.
 
-| Mã | Kết quả | Ghi chú |
-| --- | --- | --- |
-| N1 | Đáp ứng một phần | Giá tách thiết bị / phụ kiện / công / VAT; bảo hành tách khỏi fitment. Chờ Commercial xác nhận hiệu lực giá. |
-| N2 | Đáp ứng | Quick Answer, nhãn xác minh từng SKU, khối "khi nào cần kiểm tra xe", 11 FAQ. |
-| N3 | Đáp ứng một phần | Video/case VF3 GTR G1 Turbo V2 đã hiển thị; case xe VinFast khác ghi rõ chỉ tham khảo. Ảnh khối giới thiệu là ảnh minh họa (CX Media). |
-| N4 | Đáp ứng | Auto365 (publisher), VinFast VF3, GTR/X-Light/AES, reviewer thống nhất giữa visible text và schema. |
-| N5 | Đáp ứng | Intent bi gầm VF3; hub `/nang-cap-anh-sang-bi-gam` giữ intent ngành; bài đèn chính không nằm trong khối bi gầm. |
+## 7. Còn mở — người phụ trách
 
-## Definition of Done
-
-- [ ] Ảnh trong khối bi gầm đúng VF3 + đúng hạng mục (CX Media — đang là ảnh minh họa có ghi rõ)
-- [x] Case/video có nguồn, đúng SKU/version (2 video GTR G1 Turbo V2 trên VF3)
-- [x] Không dùng bảo hành như evidence fitment
-- [x] Từng SKU có trạng thái xác minh hiển thị trong modal lọc (lưới chính bỏ nhãn theo yêu cầu; F10 Turbo V2 chờ hồ sơ để nâng mức)
-- [ ] Claim local khớp Master Data (CX Operations)
-- [ ] Reviewer có hồ sơ duyệt VF3 (CX)
-- [ ] Giá, VAT, công, pát, phụ kiện xác nhận với Commercial/SSOT
-- [x] FAQ pháp lý không có kết luận tuyệt đối
-- [x] Video/card/modal mở đúng (preview)
-- [ ] Canonical, indexability, CWV trên production
-- [ ] Form/CTA/CRM tracking test end-to-end
-- [ ] U3 A/B/C đồng bộ sau khi đóng CX
-- [ ] Chấm lại tổng, SEO, GEO sau QA live
+| Việc | Phụ trách |
+| --- | --- |
+| Hồ sơ fitment từng SKU (F10 Turbo V2 trước) | Kỹ thuật |
+| Ảnh case VF3 thật thay ảnh minh họa | Media |
+| Hiệu lực giá, đơn vị, VAT | Commercial |
+| Domain canonical production | SEO |
+| L1–L3, L6, L7 sau khi đăng | IT/CMS |
+| Thiết kế lại để cải thiện U1 (chưa làm — giữ layout) | Chủ quản quyết định |
 
 ## U3
 
-- 01: `index.html` (09/10/2026)
-- 02: `02_Huong_dan_CMS_SEO_Bi_Gam_VinFast_VF3_V1.8.md`
-- 03: `03_Phieu_danh_gia_Bi_Gam_VinFast_VF3_V1.8.md` (file này)
-- Test: `tests/verify-v18-integrity.js` — đã thêm kiểm tra nhãn xác minh, video, FAQPage và các claim bị cấm trực tiếp trong HTML.
+- 01: `index.html` (10/10/2026)
+- 02: `02_Huong_dan_CMS_SEO_Bi_Gam_VinFast_VF3_V1.8.md` (10/10/2026)
+- 03: file này (10/10/2026)
+- Test: `tests/verify-v18-integrity.js`

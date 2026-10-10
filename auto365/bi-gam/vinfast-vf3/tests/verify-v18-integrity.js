@@ -68,7 +68,19 @@ const htmlMustContain = [
   'data-yt="Aa0Of6ZtxEE"',
   'data-yt="weADPByfN7g"',
   '"@type": "FAQPage"',
-  'Không thể kết luận kết quả kiểm định chỉ từ tên sản phẩm'
+  'Không thể kết luận kết quả kiểm định chỉ từ tên sản phẩm',
+  // V1.8 §3/§9.4/§10: schema dates and entities must live in the HTML, not only in vf3.json
+  '"@type": "Article"',
+  '"about": [',
+  '"mentions": [',
+  '"datePublished": "2026-10-02',
+  '"dateModified": "2026-10-10',
+  '<time datetime="2026-10-10">10/10/2026</time>',
+  '"reviewedBy": {',
+  '"lastReviewed": "2026-10-10"',
+  'id="vf3lp-so-sanh"',
+  '<caption id="vf3lp-cmp-cap">',
+  'Nhu cầu chỉ là gợi ý để lọc nhanh'
 ];
 const htmlMissing = htmlMustContain.filter((needle) => !html.includes(needle));
 if (htmlMissing.length) {
@@ -82,7 +94,10 @@ const htmlForbidden = [
   '"numberOfItems": 0',
   'kinh-nghiem-chon-nhiet-mau-den-gam',
   'do-bi-gam-o-to-co-duoc-dang-kiem-khong',
-  'quy-trinh-can-chinh-duong-cat-sang-bi-gam'
+  'quy-trinh-can-chinh-duong-cat-sang-bi-gam',
+  'hỗ trợ lái xe an toàn',
+  'hay sương mù',
+  'đường tối an toàn'
 ];
 const htmlStill = htmlForbidden.filter((needle) => html.includes(needle));
 if (htmlStill.length) {
