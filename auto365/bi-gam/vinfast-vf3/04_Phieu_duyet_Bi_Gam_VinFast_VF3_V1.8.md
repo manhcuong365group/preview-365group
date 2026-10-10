@@ -33,18 +33,18 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | F10 Turbo V2 trên VF3 | Để "cần kiểm tra xe"; `vf3.json` ghi "kỹ thuật đã xác nhận" nhưng không có hồ sơ | **Chờ Kỹ thuật** |
 | Lead → CRM | Form tư vấn + popup báo giá (`nr-quote`) | **Chưa test gửi lead** |
 
-## 2b. Sửa sau ngày duyệt — chờ Nguyễn Quang Đạo xác nhận
+## 2b. Sửa sau ngày duyệt — Nguyễn Quang Đạo đã xác nhận 10/10/2026
 
-| Ngày | Nội dung |
-|---|---|
-| 10/10/2026 | Thêm ảnh thật VF3; 2 thẻ Giá / Khi nào cần kiểm tra xe có ảnh, so le đối xứng |
-| 10/10/2026 | Hero: bỏ eyebrow và dòng tác giả, H1 nhỏ lại, trả lời nhanh rút gọn (không nhãn), 4 tab nhu cầu lọc lưới sản phẩm theo `nhu_cau` trong `vf3.json` (có ghi chú "gợi ý, kỹ thuật viên xác nhận") |
-| 10/10/2026 | Bỏ khung tìm kiếm + popup lọc; sửa form báo giá (thiếu `nr-quote-status`) |
-| 10/10/2026 | Lưới sản phẩm 2 hàng, "Xem thêm" sang hub; bảng so sánh thu gọn (accordion) |
-| 10/10/2026 | Khối chi nhánh làm lại giao diện, sửa link Google Maps (trước trỏ `#`); bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" |
-| 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile |
+| Ngày | Nội dung | Trạng thái |
+|---|---|---|
+| 10/10/2026 | Thêm ảnh thật VF3; 2 thẻ Giá / Khi nào cần kiểm tra xe có ảnh, so le đối xứng | Đã xác nhận |
+| 10/10/2026 | Hero: bỏ eyebrow và dòng tác giả, H1 nhỏ lại, trả lời nhanh rút gọn (không nhãn), 4 tab nhu cầu lọc lưới sản phẩm theo `nhu_cau` trong `vf3.json` (có ghi chú "gợi ý, kỹ thuật viên xác nhận") | Đã xác nhận |
+| 10/10/2026 | Bỏ khung tìm kiếm + popup lọc; sửa form báo giá (thiếu `nr-quote-status`) | Đã xác nhận |
+| 10/10/2026 | Lưới sản phẩm 2 hàng, "Xem thêm" sang hub; bảng so sánh thu gọn (accordion) | Đã xác nhận |
+| 10/10/2026 | Khối chi nhánh làm lại giao diện, sửa link Google Maps (trước trỏ `#`); bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" | Đã xác nhận |
+| 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
-Không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ trong các lần sửa trên — chỉ bố cục, ảnh và chức năng.
+Không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ trong các lần sửa trên — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
 
 ## 3. Việc còn lại (không thuộc điểm nội dung)
 
