@@ -32,7 +32,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | Ảnh thật | VF3 bật đèn trước Auto365 (biển số che); cụm đèn chính RGB ghi rõ hạng mục riêng | Nhận 10/10/2026 — **xe trong ảnh lắp GTR G1 Turbo V2**, xác nhận 10/10/2026; alt + chú thích đã ghi tên mẫu |
 | F10 Turbo V2 trên VF3 | Kỹ thuật đã xác nhận tương thích VF3 (khớp `vf3.json`); bảng so sánh ghi "Kỹ thuật xác nhận", FAQ + FAQPage cập nhật | **Đã xác nhận 10/10/2026** |
 | 7 mẫu còn lại trên VF3 | X-Light 301 V2, F10 2.0 New, F10 Pro V2, X3 Ultra, AES SV 3.0 Pro, SV 3.0 Max, SV 2.0 Max: kỹ thuật xác nhận lắp được; bảng so sánh đổi "Kiểm tra xe" → "Kỹ thuật xác nhận", FAQ + FAQPage cập nhật | **Đã xác nhận 10/10/2026** |
-| Lead → CRM | Test 10/10/2026 trên trang VF3 v2: form tư vấn → `/api/leads` 200 `{"success":true,"lead_id":"30","test":true}`; popup báo giá (GTR G1 Turbo V2) → 200, gộp vào lead #30 (trùng số trong 5 phút). Preview `pages.dev` trả 405 và form báo lỗi đúng (không báo thành công giả) | **Đạt** — CRM đã nhận lead test (người phụ trách xác nhận 10/10/2026); xoá lead #30 |
+| Lead → CRM | Test 10/10/2026 trên trang VF3 v2: form tư vấn → `/api/leads` 200 `{"success":true,"lead_id":"30","test":true}`; popup báo giá (GTR G1 Turbo V2) → 200, gộp vào lead #30 (trùng số trong 5 phút). Preview `pages.dev` trả 405 và form báo lỗi đúng (không báo thành công giả) | **Đạt** — CRM đã nhận lead test; lead #30 đã xoá (xác nhận 10/10/2026) |
 
 ## 2b. Sửa sau ngày duyệt — Nguyễn Quang Đạo đã xác nhận 10/10/2026
 
@@ -52,7 +52,6 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 | Việc | Giai đoạn |
 |---|---|
-| Xoá lead test #30 ("TEST VF3 - Claude (xoa)", SĐT hotline 0365 365 911) khỏi CRM | Vận hành |
 | Xoá khối `#vf3lp-internal-check` khi đăng | Trước khi đăng production (BLOCK_06) |
 | Upload ảnh + OG image lên thư viện auto365.vn, đổi URL tuyệt đối | Khi đăng CMS |
 | Chốt domain canonical; CMS điền `datePublished` = ngày đăng đầu tiên | Khi đăng production |
