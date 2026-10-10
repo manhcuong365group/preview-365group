@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `b961b497a6c99a1fd45b34b3b918c8992d31e5ac0bac0412986dd7f52a0cd6df`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `ad64e5ca6e97ece6b583178e8ddd2b9884c030b47e66b0df85a737a888caffb5`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -17,9 +17,7 @@ _Danh mục 129 mẫu: xem 04_Master_Data_San_Pham_Hub_Anh_Sang.csv_
 
 ## Xe thực tế nổi bật  `#cases`
 
-_Xe thực tế: 24 case hiển thị sẵn + phần còn lại trong template (tổng 362)_
-
-## Thương hiệu đèn tại Auto365  `#thuong-hieu`
+_Xe thực tế: 24 case hiển thị sẵn + phần còn lại trong template (tổng 370)_
 
 ## Vì sao nên nâng cấp ánh sáng tại Auto365?  `#vi-sao`
 
@@ -44,16 +42,14 @@ Thi công đèn ô tô hằng ngày trên nhiều dòng xe — từ thay bóng, 
 Kiểm tra đường cắt Cos/Pha, hướng chiếu và cân bằng hai bên trên bảng test để hạn chế gây chói khi dùng đúng chế độ; bạn xem vùng sáng trước khi nhận xe.
 
 
-**Báo giá tách bạch từng khoản**
+**Đại lý ủy quyền chính hãng X-Light**
 
-Giá đèn niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng từng khoản và chốt trước khi thi công.
+365Group — nhà phân phối chính hãng X-Light — cấp chứng nhận đại lý lắp đặt chính hãng cho Auto365 tại 4/4/1/7 Đường số 3, hiệu lực từ 01/01/2020.
 
 
 **Tư vấn theo từng xe cụ thể**
 
 Kiểm tra cụm đèn zin, chân bóng và hệ điện 12V/24V trên xe trước khi đề xuất — không tư vấn chung chung theo ảnh.
-
-Chứng nhận đại lý ủy quyền lắp đặt chính hãng đèn X-Light do Công ty TNHH Xuất nhập khẩu 365Group cấp cho cửa hàng Auto365 Thủ Đức (địa chỉ 4/4/1/7 Đường số 3, trùng địa chỉ Trụ Sở Chính hiện nay), hiệu lực từ 01/01/2020 — áp dụng cho cơ sở ghi trên chứng nhận.
 
 
 **Auto365.vn - Trụ Sở Chính**
@@ -81,22 +77,6 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 
 03
 
-## Xem toàn bộ danh mục trên Auto365  `#nhom`
-
-Cụm đèn pha chính
-
-Cụm đèn pha chính
-
-Chóa đèn nhỏ / chân H4
-
-Hốc đèn gầm
-
-Pát riêng phía trước
-
-Thay bóng trong chóa zin
-
-Vị trí phụ trợ
-
 ## 7 bước từ tiếp nhận đến bàn giao  `#quy-trinh`
 
 - 01Ghi nhận nhu cầu
@@ -106,30 +86,6 @@ Vị trí phụ trợ
 - 05Thi công
 - 06Cân chỉnh và kiểm tra
 - 07Bàn giao & bảo hành
-## Không biết tên sản phẩm vẫn chọn được  `#nhu-cau`
-
-Hãy bắt đầu từ cung đường bạn hay đi; kỹ thuật viên sẽ xác nhận cấu hình phù hợp trên xe.
-
-
-**Đi phố**
-
-Ưu tiên vùng Cos đều, đường cắt rõ, hạn chế chói xe đối diện.
-
-
-**Đi tỉnh / cao tốc**
-
-Cần vùng sáng xa hơn và chế độ Pha đủ tốt để quan sát sớm.
-
-
-**Mưa / sương mù**
-
-Bổ sung vùng sáng thấp, hai mép đường; có thể cân nhắc ánh sáng ấm 3000–4300K, nhưng hiệu quả còn tùy phân bố sáng, vị trí lắp và góc chiếu.
-
-
-**Đường tối / off-road**
-
-Đèn trợ sáng dạng Spot (chiếu xa) hoặc Flood (chiếu rộng) tùy mục đích; cần xác nhận vị trí lắp và hệ điện.
-
 ## Xe của bạn dùng chóa phản xạ hay projector?  `#chon-theo-den`
 
 
@@ -296,28 +252,79 @@ Cách phòng tránh: Ưu tiên giắc cắm phù hợp, relay và cầu chì ri�
 
 Nên kiểm tra góc chiếu, độ kín keo, quạt tản nhiệt và giắc nối định kỳ — đặc biệt sau va chạm, sau khi thay giảm xóc, khi xe thường chở nặng, hoặc trước mùa mưa và trước chuyến đi xa.
 
-Kỹ thuật viên Auto365 lắp và kiểm tra đèn gầm — đi dây có relay, cầu chì và kiểm tra kín nước trước khi bàn giao.
+## Lắp đúng – chiếu đúng – dùng đúng  `#phap-ly`
 
-## Quy định sử dụng đèn và lắp thêm đèn trên ô tô  `#phap-ly`
-
-
-**Khi nào bật đèn, khi nào chuyển đèn cos**
-
-- Bật đèn chiếu sáng từ 18 giờ đến 6 giờ sáng hôm sau, hoặc khi sương mù, mưa, bụi làm hạn chế tầm nhìn.
-- Chuyển từ đèn chiếu xa (pha) sang chiếu gần (cos) khi: gặp người đi bộ qua đường; đi trong khu đông dân cư có hệ thống chiếu sáng; gặp xe đi ngược chiều (trừ khi có dải phân cách chống chói); chuyển hướng tại nút giao.
-Hiệu lực từ 01/01/2025.
+Ba nguyên tắc nên kiểm tra khi nâng cấp hệ thống chiếu sáng ô tô để sử dụng hiệu quả, hạn chế gây chói và phù hợp với cấu hình xe.
 
 
-**Lắp đèn bổ sung đúng quy định**
+**Lắp đúng vị trí**
 
-Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP có quy định xử lý việc lắp thêm đèn ngoài thiết kế của xe; đèn sương mù dạng rời được lắp theo quy định là trường hợp được loại trừ. Nghị định 238/2026/NĐ-CP (hiệu lực 15/08/2026) sửa đổi một số điều của Nghị định 168 nhưng không thay đổi quy định này. Vì vậy, vị trí lắp, phương án đi dây và cách sử dụng cần được tư vấn trước khi thi công.
+Kiểm tra hốc đèn, pát/mặt dưỡng, hệ điện và phương án đấu nối thực tế trên xe trước khi thi công.
 
-Auto365 tư vấn vị trí lắp, đi dây có relay, cầu chì và cách sử dụng để đèn bổ sung đúng quy định.
+- Đúng vị trí sử dụng
+- Đủ khoảng trống lắp đặt
+- Pát/mặt dưỡng phù hợp
+- Dây, relay, cầu chì rõ ràng
+- Không can thiệp tùy tiện vào hệ điện
+
+**Chiếu đúng vùng sáng**
+
+Hiệu quả chiếu sáng không chỉ nằm ở công suất. Sau khi lắp cần kiểm tra đường cắt, độ phủ, chiều cao vùng sáng và khả năng căn chỉnh.
+
+- Đường cắt sáng (cutoff) rõ
+- Góc chiếu phù hợp
+- Cos/Pha được căn chỉnh
+- Hạn chế gây chói xe đối diện
+- Không chọn chỉ dựa trên watt/lumen
+
+**Dùng đúng tình huống**
+
+Sử dụng đèn, pha/cos phù hợp điều kiện giao thông, thời tiết và tầm nhìn. Theo Điều 20 Luật Trật tự, an toàn giao thông đường bộ 2024:
+
+- Bật đèn chiếu sáng từ 18 giờ đến 6 giờ sáng hôm sau
+- Bật đèn khi sương mù, mưa hoặc bụi làm hạn chế tầm nhìn
+- Chuyển pha sang cos trong các tình huống luật quy định để hạn chế gây chói
+Tham khảo pháp lý hiện hành: Luật Trật tự, an toàn giao thông đường bộ 2024 ; Nghị định 168/2024/NĐ-CP ; Nghị định 238/2026/NĐ-CP .
 
 
-**Sáng hơn chưa chắc an toàn hơn**
+**Xem quy định chi tiết**
 
-Độ rọi quá cao hoặc chùm sáng lệch có thể gây chói cho xe ngược chiều. Ưu tiên đường cắt sáng rõ, góc chiếu đúng và cân chỉnh sau lắp hơn là chỉ chạy theo công suất.
+
+**Khi nào phải bật đèn và khi nào chuyển sang cos?**
+
+Điều 20 Luật Trật tự, an toàn giao thông đường bộ 2024 (Luật 36/2024/QH15, hiệu lực từ 01/01/2025) quy định người điều khiển phương tiện phải sử dụng đèn:
+
+- từ 18 giờ đến 6 giờ sáng hôm sau;
+- khi sương mù, mưa, bụi hoặc điều kiện thời tiết làm hạn chế tầm nhìn;
+- chuyển từ pha sang cos trong các tình huống quy định nhằm tránh gây chói, như gặp người đi bộ qua đường, đi trong khu đông dân cư có hệ thống chiếu sáng, gặp xe đi ngược chiều hoặc khi chuyển hướng tại nút giao.
+Nguồn: Cổng thông tin Chính phủ
+
+
+**Lắp thêm đèn cần đối chiếu quy định nào?**
+
+Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP quy định xử lý hành vi điều khiển xe lắp thêm đèn ở phía trước, phía sau, trên nóc, dưới gầm, một hoặc hai bên thành xe, trừ trường hợp thuộc ngoại lệ theo quy định hiện hành.
+
+Mức phạt tham khảo: 1–2 triệu đồng và trừ 2 điểm GPLX đối với trường hợp thuộc hành vi áp dụng. Cần đối chiếu văn bản hiện hành trước khi áp dụng cho một cấu hình lắp cụ thể.
+
+Toàn văn Nghị định 168/2024/NĐ-CP
+
+
+**Đèn sương mù dạng rời cần hiểu thế nào?**
+
+Quy định hiện hành có ngoại lệ đối với đèn sương mù dạng rời được lắp theo quy định. Ngoại lệ này không có nghĩa mọi loại đèn gầm dạng rời đều được phép lắp: vẫn cần kiểm tra vị trí, phương án lắp, hướng chiếu, hệ điện và yêu cầu kỹ thuật thực tế.
+
+
+**Văn bản sửa đổi hiện hành**
+
+Nghị định 238/2026/NĐ-CP ban hành ngày 26/06/2026, có hiệu lực từ 15/08/2026, sửa đổi, bổ sung Nghị định 168/2024/NĐ-CP. Nội dung điểm a khoản 3 Điều 13 nêu trên không thay đổi.
+
+Hệ thống văn bản Chính phủ
+
+Lưu ý: Nội dung trên dùng để tham khảo nhanh. Quy định có thể thay đổi theo thời điểm và cách áp dụng còn phụ thuộc loại xe, vị trí lắp, cấu hình thực tế và yêu cầu kiểm định/đăng kiểm. Trước khi thi công nên đối chiếu văn bản pháp luật hiện hành và kiểm tra xe trực tiếp.
+
+## Tư vấn theo xe  `#tu-van`
+
+_Form tư vấn — xem 02 mục Lead_
 
 ## Xem ánh sáng trên xe trước khi chọn  `#video`
 
@@ -358,10 +365,6 @@ Bảo hành theo từng mã sản phẩm: thời hạn, phạm vi và điểm ti
 **Lắp thêm đèn trợ sáng, đèn gầm cần lưu ý gì về quy định?**
 
 Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP có quy định xử lý việc lắp thêm đèn ngoài thiết kế của xe; đèn sương mù dạng rời được lắp theo quy định là trường hợp được loại trừ. Nghị định 238/2026/NĐ-CP sửa đổi một số điều của Nghị định 168 nhưng không thay đổi quy định này. Trước khi lắp, nên được tư vấn vị trí lắp, phương án đi dây và cách sử dụng để đèn bổ sung đúng quy định.
-
-## Hỏi kỹ thuật viên về xe của bạn  `#tu-van`
-
-_Form tư vấn — xem 02 mục Lead_
 
 ## kiem-duyet  `#kiem-duyet`
 
