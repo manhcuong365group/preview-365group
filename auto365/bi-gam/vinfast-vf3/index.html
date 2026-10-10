@@ -2951,6 +2951,42 @@ Tư vấn độ đèn cho từng dòng xe</a>
 @media(max-width:560px){.vf3lp-hx-title{font-size:28px !important}.vf3lp-hx-title span{font-size:22px}.vf3lp-hx-meta>span{border-right:0;padding-right:0;margin-right:12px}}
 .vf3lp-hero-answer{margin:0 0 20px}
 .vf3lp-hero-answer .nr-callout{margin:0}
+.vf3lp-br{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:16px}
+.vf3lp-br-card{display:flex;flex-direction:column;gap:14px;padding:18px;border:1px solid #e2e8f0;border-radius:14px;background:#fff}
+.vf3lp-br-top{display:flex;gap:12px;align-items:flex-start}
+.vf3lp-br-top h3{margin:0;font-size:19px;font-weight:700;color:#0f172a;line-height:1.3}
+.vf3lp-br-top p{margin:4px 0 0;font-size:13px;color:#64748b;line-height:1.5}
+.vf3lp-br-red{color:#dc2626}
+.vf3lp-br-ico{display:inline-flex;flex:none;width:38px;height:38px;align-items:center;justify-content:center;border-radius:10px;background:#fee2e2;color:#dc2626}
+.vf3lp-br-ico svg{width:20px;height:20px}
+.vf3lp-br-ico--sm{width:30px;height:30px;border-radius:8px}
+.vf3lp-br-ico--sm svg{width:16px;height:16px}
+.vf3lp-br-info{display:grid;grid-template-columns:1fr 1fr;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden}
+.vf3lp-br-cell{display:flex;gap:10px;align-items:center;padding:10px 12px;border-bottom:1px solid #e2e8f0}
+.vf3lp-br-cell:nth-child(odd){border-right:1px solid #e2e8f0}
+.vf3lp-br-cell:nth-last-child(-n+2){border-bottom:0}
+.vf3lp-br-cell strong{display:block;font-size:13.5px;font-weight:600;color:#0f172a}
+.vf3lp-br-cell span:not(.vf3lp-br-ico){display:block;font-size:12px;color:#64748b}
+.vf3lp-br-act{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:auto}
+.vf3lp-br-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:40px;padding:8px 10px;border-radius:9px;font-size:13.5px;font-weight:600;text-decoration:none;border:1px solid transparent;white-space:nowrap}
+.vf3lp-br-btn svg{width:16px;height:16px;flex:none}
+.vf3lp-br-btn--call{background:#e11d2e;color:#fff !important}
+.vf3lp-br-btn--zalo{border-color:#0068ff;color:#0068ff !important;background:#fff}
+.vf3lp-br-btn--map{border-color:#e11d2e;color:#e11d2e !important;background:#fff}
+.vf3lp-br-zalo{display:inline-flex;align-items:center;justify-content:center;height:16px;padding:0 3px;border-radius:4px;background:#0068ff;color:#fff;font-size:8px;font-weight:800}
+.vf3lp-br-regs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.vf3lp-br-reg{position:relative;padding:12px 14px;border:1px solid #e2e8f0;border-radius:10px;background:#fff}
+.vf3lp-br-num{display:block;font-size:13px;font-weight:700;opacity:.45}
+.vf3lp-br-lm{position:absolute;top:10px;right:12px;width:54px !important;height:46px !important}
+.vf3lp-br-reg p{margin:22px 0 2px;font-size:11.5px;font-weight:700;letter-spacing:.04em;color:#475569}
+.vf3lp-br-reg strong{font-size:20px;font-weight:800}
+.vf3lp-br-reg--n{color:#dc2626}.vf3lp-br-reg--c{color:#2563eb}.vf3lp-br-reg--s{color:#16a34a}
+.vf3lp-br-reg--n .vf3lp-br-num,.vf3lp-br-reg--c .vf3lp-br-num,.vf3lp-br-reg--s .vf3lp-br-num{color:inherit}
+.vf3lp-br-all{display:flex;align-items:center;justify-content:center;gap:8px;min-height:40px;border:1px solid #e2e8f0;border-radius:9px;background:#f8fafc;color:#0f172a !important;font-size:13.5px;font-weight:600;text-decoration:none}
+.vf3lp-br-all svg{width:16px;height:16px}
+.vf3lp-br-note{margin:-4px 0 0;font-size:12px;color:#64748b;line-height:1.5}
+@media(max-width:900px){.vf3lp-br{grid-template-columns:1fr}}
+@media(max-width:480px){.vf3lp-br-act{grid-template-columns:1fr}.vf3lp-br-regs{grid-template-columns:1fr}.vf3lp-br-info{grid-template-columns:1fr}.vf3lp-br-cell:nth-child(odd){border-right:0}.vf3lp-br-cell:nth-last-child(2){border-bottom:1px solid #e2e8f0}}
 .vf3lp-card-col{display:flex;flex-direction:column}
 .vf3lp-card-fig{margin:auto 0 0;padding-top:18px}
 .vf3lp-card-fig img{display:block !important;width:100% !important;height:auto !important;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
@@ -3536,89 +3572,33 @@ Tư vấn độ đèn cho từng dòng xe</a>
   </div>
   <!-- Chọn điểm Auto365 có dịch vụ nâng cấp ánh sáng và xác nhận cấu hình trước khi đặt lịch. Địa chỉ, hotline và giờ làm việc từng chi nhánh xem tại trang hệ thống chi nhánh. -->
 
-  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: 24px; margin-top: 24px;">
-    <!-- Card Trụ sở -->
-    <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; background: #fff;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
-        <div style="width: 48px; height: 48px; background: #fee2e2; color: #dc2626; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M10 21v-5h4v5"/></svg>
-        </div>
-        <div>
-          <h3 style="margin: 0; font-size: 1.125rem; color: #0f172a; font-weight: 600;">Auto365.vn · <span style="color: #dc2626;">Trụ sở chính</span></h3>
-          <p style="margin: 4px 0 0; font-size: 0.875rem; color: #64748b;">4/4/1/7 Đường số 3, P. Hiệp Bình, TP. Hồ Chí Minh</p>
-        </div>
-      </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; border-top: 1px solid #f1f5f9; border-bottom: 1px solid #f1f5f9; padding: 16px 0;">
-        <div style="display: flex; gap: 12px;">
-          <div style="color: #dc2626;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-          <div>
-            <strong style="display: block; font-size: 0.875rem; color: #1e293b;">Giờ làm việc</strong>
-            <span style="font-size: 0.875rem; color: #64748b;">8:30 – 18:30</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 12px;">
-          <div style="color: #dc2626;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
-          <div>
-            <strong style="display: block; font-size: 0.875rem; color: #1e293b;">Trụ sở</strong>
-            <span style="font-size: 0.875rem; color: #64748b;">Hiệp Bình, TP.HCM</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 12px;">
-          <div style="color: #dc2626;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div>
-            <strong style="display: block; font-size: 0.875rem; color: #1e293b;">Bảo hành</strong>
-            <span style="font-size: 0.875rem; color: #64748b;">Theo từng sản phẩm</span>
-          </div>
-        </div>
-        <div style="display: flex; gap: 12px;">
-          <div style="color: #dc2626;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
-          <div>
-            <strong style="display: block; font-size: 0.875rem; color: #1e293b;">Tư vấn</strong>
-            <span style="font-size: 0.875rem; color: #64748b;">Hotline, Zalo</span>
-          </div>
-        </div>
-      </div>
-      <div style="display: grid; grid-template-columns: minmax(max-content, 1.2fr) 1fr 1fr; gap: 12px;">
-          <a href="tel:0365365911" style="background: #dc2626; color: #fff; padding: 10px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.875rem; display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Gọi 0365 365 911</a>
-          <a href="https://zalo.me/0365365911" target="_blank" style="border: 1px solid #0068ff; color: #0068ff; padding: 10px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.875rem; display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21.815 10.638C21.815 6.42 17.587 3 12.355 3 7.124 3 2.895 6.42 2.895 10.638c0 2.228 1.157 4.237 2.983 5.568.17.126.24.348.175.547l-.926 2.853c-.116.357.25.68.583.513l3.24-1.632c.162-.08.35-.094.522-.036 1.053.35 2.217.538 3.428.538 5.232 0 9.46-3.42 9.46-7.638z"/></svg> Zalo tư vấn</a>
-          <a href="#" style="border: 1px solid #dc2626; color: #dc2626; padding: 10px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.875rem; display: flex; align-items: center; justify-content: center; gap: 6px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Google Maps</a>
-        </div>
-    </div>
+  <div class="vf3lp-br">
+<div class="vf3lp-br-card">
+<div class="vf3lp-br-top"><span class="vf3lp-br-ico"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-5h6v5"/></svg></span><div><h3>Auto365.vn · <span class="vf3lp-br-red">Trụ sở chính</span></h3><p>4/4/1/7 Đường số 3, P. Hiệp Bình, TP. Hồ Chí Minh</p></div></div>
+<div class="vf3lp-br-info">
+<div class="vf3lp-br-cell"><span class="vf3lp-br-ico vf3lp-br-ico--sm"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><div><strong>Giờ làm việc</strong><span>8:30 – 18:30</span></div></div>
+<div class="vf3lp-br-cell"><span class="vf3lp-br-ico vf3lp-br-ico--sm"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/></svg></span><div><strong>Trụ sở</strong><span>Hiệp Bình, TP.HCM</span></div></div>
+<div class="vf3lp-br-cell"><span class="vf3lp-br-ico vf3lp-br-ico--sm"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><strong>Bảo hành</strong><span>Theo từng sản phẩm</span></div></div>
+<div class="vf3lp-br-cell"><span class="vf3lp-br-ico vf3lp-br-ico--sm"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></span><div><strong>Tư vấn</strong><span>Hotline, Zalo</span></div></div>
+</div>
+<div class="vf3lp-br-act">
+<a class="vf3lp-br-btn vf3lp-br-btn--call" href="tel:0365365911"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2"/></svg>Gọi 0365 365 911</a>
+<a class="vf3lp-br-btn vf3lp-br-btn--zalo" href="https://zalo.me/0365365911" target="_blank" rel="noopener"><span class="vf3lp-br-zalo">Zalo</span>Zalo tư vấn</a>
+<a class="vf3lp-br-btn vf3lp-br-btn--map" href="https://www.google.com/maps/search/?api=1&amp;query=4%2F4%2F1%2F7%20%C4%90%C6%B0%E1%BB%9Dng%20S%E1%BB%91%203%2C%20Ph%C6%B0%E1%BB%9Dng%20Hi%E1%BB%87p%20B%C3%ACnh%2C%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh" target="_blank" rel="noopener"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 00-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Google Maps</a>
+</div>
+</div>
+<div class="vf3lp-br-card">
+<div class="vf3lp-br-top"><span class="vf3lp-br-ico"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M10.8 7.2L6.2 15.8M13.2 7.2l4.6 8.6M7.5 18h9"/></svg></span><div><h3><span class="vf3lp-br-red">90+ chi nhánh</span> · 33 tỉnh thành</h3><p>Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam</p></div></div>
+<div class="vf3lp-br-regs">
+<div class="vf3lp-br-reg vf3lp-br-reg--n"><span class="vf3lp-br-num">01</span><svg class="vf3lp-br-lm" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 3v4M10 13c6-1 10-4 14-6 4 2 8 5 14 6M14 13v5M34 13v5M8 21c7-1 11-3 16-5 5 2 9 4 16 5M12 21v8M36 21v8M20 21v8M28 21v8M6 29h36M8 33h32M10 37h28"/></svg><p>MIỀN BẮC</p><strong>41 điểm</strong></div>
+<div class="vf3lp-br-reg vf3lp-br-reg--c"><span class="vf3lp-br-num">02</span><svg class="vf3lp-br-lm" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 30h44M4 30c4-14 12-14 16 0M20 30c4-14 12-14 16 0M36 30c3-9 7-10 10-4"/><path d="M8 30v-8M12 30v-11M16 30v-8M24 30v-8M28 30v-11M32 30v-8M6 36h36"/></svg><p>MIỀN TRUNG</p><strong>26 điểm</strong></div>
+<div class="vf3lp-br-reg vf3lp-br-reg--s"><span class="vf3lp-br-num">03</span><svg class="vf3lp-br-lm" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 37h40M8 37V20h8v17M20 37V6l4-3 4 3v31M32 37V14h8v23"/><path d="M11 24h2M11 28h2M11 32h2M23 10h2M23 15h2M23 20h2M23 25h2M23 30h2M35 18h2M35 23h2M35 28h2M35 33h2"/></svg><p>MIỀN NAM</p><strong>24 điểm</strong></div>
+</div>
+<a class="vf3lp-br-all" href="https://v2.auto365.vn/chi-nhanh">Xem toàn bộ hệ thống Auto365 <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<p class="vf3lp-br-note">Khả năng tiếp nhận và phạm vi thi công bi gầm được xác nhận theo từng cơ sở trước khi đặt lịch.</p>
+</div>
+</div>
 
-    <!-- Card Hệ thống -->
-    <div style="border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; background: #fff;">
-      <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
-        <div style="width: 48px; height: 48px; background: #fee2e2; color: #dc2626; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-        </div>
-        <div>
-          <h3 style="margin: 0; font-size: 1.125rem; color: #0f172a; font-weight: 600;"><span style="color: #dc2626;">90+ chi nhánh</span> · 33 tỉnh thành</h3>
-          <p style="margin: 4px 0 0; font-size: 0.875rem; color: #64748b;">Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam. Khả năng tiếp nhận và phạm vi thi công bi gầm được xác nhận theo từng cơ sở trước khi đặt lịch.</p>
-        </div>
-      </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 24px;">
-        <div style="border: 1px solid #f1f5f9; border-radius: 8px; padding: 16px; text-align: center;">
-          <span style="color: #fca5a5; font-size: 0.875rem; font-weight: 600;">01</span>
-          <div style="margin: 12px 0;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.5" style="margin:0 auto;"><path d="M4 21h16M12 3l-8 5v13h16V8l-8-5z"/></svg></div>
-          <p style="margin: 0 0 4px; font-size: 0.75rem; color: #64748b; font-weight: 600;">MIỀN BẮC</p>
-          <strong style="font-size: 1.125rem; color: #dc2626;">41 điểm</strong>
-        </div>
-        <div style="border: 1px solid #f1f5f9; border-radius: 8px; padding: 16px; text-align: center;">
-          <span style="color: #93c5fd; font-size: 0.875rem; font-weight: 600;">02</span>
-          <div style="margin: 12px 0;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5" style="margin:0 auto;"><path d="M2 20h20M5 20V10l3-5 4 5v10m6 0V10l-3-5-4 5"/></svg></div>
-          <p style="margin: 0 0 4px; font-size: 0.75rem; color: #64748b; font-weight: 600;">MIỀN TRUNG</p>
-          <strong style="font-size: 1.125rem; color: #2563eb;">26 điểm</strong>
-        </div>
-        <div style="border: 1px solid #f1f5f9; border-radius: 8px; padding: 16px; text-align: center;">
-          <span style="color: #86efac; font-size: 0.875rem; font-weight: 600;">03</span>
-          <div style="margin: 12px 0;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.5" style="margin:0 auto;"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M12 10V2"/></svg></div>
-          <p style="margin: 0 0 4px; font-size: 0.75rem; color: #64748b; font-weight: 600;">MIỀN NAM</p>
-          <strong style="font-size: 1.125rem; color: #16a34a;">24 điểm</strong>
-        </div>
-      </div>
-      <a href="https://v2.auto365.vn/chi-nhanh" style="display: block; background: #f8fafc; border: 1px solid #e2e8f0; color: #334155; padding: 12px; text-align: center; border-radius: 8px; text-decoration: none; font-weight: 500; font-size: 0.875rem;">Xem toàn bộ hệ thống Auto365 →</a>
-    </div>
-  </div>
 </div>
 </section>
 <section data-reveal class="vf3lp-band">
