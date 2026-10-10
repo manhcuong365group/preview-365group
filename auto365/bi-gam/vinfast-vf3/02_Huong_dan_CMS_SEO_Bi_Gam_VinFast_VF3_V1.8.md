@@ -89,7 +89,7 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 
 ## Cập nhật bố cục 10/10
 
-- Hero: cột trái = H1 2 dòng (không eyebrow, không dòng tác giả/ngày — reviewer + ngày ở dòng ghi chú cuối trang và schema), đoạn trả lời nhanh (`#master-tra-loi`, bản rút gọn, không hiện nhãn — giữ aria-label) ngay dưới H1, 4 tab nhu cầu, 2 nút; cột phải = 1 ảnh VF3 thật (cao 300px).
+- Hero (2 cột bằng nhau, ảnh trái — chữ phải, ảnh cao bằng khối chữ): cột chữ = H1 2 dòng (không eyebrow, không dòng tác giả/ngày — reviewer + ngày ở dòng ghi chú cuối trang và schema), đoạn trả lời nhanh (`#master-tra-loi`, bản rút gọn, không hiện nhãn — giữ aria-label) ngay dưới H1, 4 tab nhu cầu, 2 nút; cột ảnh = 1 ảnh VF3 thật. Mobile: ảnh trước, chữ sau.
 - 2 thẻ xếp dọc, mỗi thẻ nội dung bên trái + ảnh bên phải: "Giá và phạm vi chi phí" + ảnh xe VF3 bật đèn (chú thích ảnh thực tế, biển số đã che); "Khi nào cần kiểm tra xe" + ảnh cụm đèn chính (chú thích hạng mục riêng, không thuộc bi gầm). Không còn khối ảnh nền tối riêng.
 - Khối "Địa điểm Auto365 tiếp nhận": làm lại giao diện theo mẫu 10/10 (ô thông tin 2×2, 3 nút cùng hàng, 3 ô miền có hình địa danh). Nội dung và số liệu giữ nguyên; bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" theo yêu cầu 10/10 (ý này còn trong FAQ chi nhánh). Sửa nút Google Maps trước đây trỏ `#` → link Maps trụ sở (cùng link trang bi gầm X-Light).
 - Đã bỏ khung tìm kiếm ở hero và popup lọc (`vf3lp-loc`). Mức xác minh từng mẫu hiển thị trong bảng so sánh ("Có video VF3" / "Kiểm tra xe").
