@@ -97,3 +97,4 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 - 4 tab nhu cầu dưới "Trả lời nhanh" lọc lưới sản phẩm theo `nhu_cau` trong `vf3.json` (JS inline, không phụ thuộc page-asset). Khi lọc hiện ghi chú "Gợi ý theo nhu cầu, kỹ thuật viên xác nhận mẫu phù hợp khi kiểm tra xe" + nút Bỏ lọc. **CX Kỹ thuật:** căn cứ gán nhu cầu cho từng mẫu (§7.1).
 - Giao diện chung (10/10): bo góc 8px cho mọi khung/thẻ/ảnh nội dung (chip, nút viên thuốc giữ tròn); khoảng cách giữa các block 10px, đệm dọc trong block 10px (giảm 50%); FAQ dạng danh sách không khung, dấu +/−.
 - Cẩm nang: thanh trượt 1 hàng (5 bài), nút ‹ › trượt ngang.
+- Lý do chọn: thêm dải "Thương hiệu đèn tại Auto365" (8 logo X-Light, GTR, AES, Henvvei, Titan, Red Lighting, Matrix Light, Fogway — ảnh lấy từ auto365.vn như hub nâng cấp ánh sáng). Logo tĩnh, không có bộ lọc theo hãng trên trang này.
