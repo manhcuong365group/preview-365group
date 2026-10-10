@@ -64,6 +64,9 @@ Quy tắc đã chốt: NR25 không dùng kính lái; NR5 được dùng cho kín
 | https://auto365.vn/vinfast-vf5-chay-dich-vu-chon-phim-cach-nhiet | NR25/NR15 VLT 24%/12% (TDS NR Rev A 01/2026) khác catalog VN 29%/14%: đối chiếu theo mục 2 |
 | Hub Crystalline | Bỏ câu "cách nhiệt tốt hơn / chống nóng hiệu quả"; bỏ CR BLK 40 khỏi hàng kính sườn trước (thay bản trong docs/cr-blk-40/02…) |
 | K5 (CR BLK 40) | Hotline phim 0365 365 911 → kiểm theo quy định hotline đã chốt |
+| https://auto365.vn/innova-dan-phim-cach-nhiet-3m-camera-hanh-trinh | Thân bài/trích đoạn IR15 còn VLT 18%, TSER 59%, UV 99%: đổi theo TDS Rev B cùng một nền kính (Auto 75: 16/63, UV 99,9%; kính trong: 19/59). Giữ phần thẻ sản phẩm đã đúng |
+| https://auto365.vn/dan-phim-cach-nhiet-3m-ceramic-nr-cua-so-troi-panorama-gia-bao-nhieu | Kính cửa sổ trời nhỏ ghi 1.700.000đ, 10 trang mã và hub NR ghi từ 850.000đ: Kinh doanh chốt một mức rồi đồng bộ |
+| VF3 (bài 2026) | Đoạn tư vấn giá dùng hotline 0365 365 911, cuối bài dùng 0365 365 365: kiểm theo phân luồng hotline |
 
 ## 5. Nghiệm thu L1–L8 sau khi ghép CMS (IT/QA)
 
