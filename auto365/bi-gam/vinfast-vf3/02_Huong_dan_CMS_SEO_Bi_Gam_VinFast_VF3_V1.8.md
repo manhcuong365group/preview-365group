@@ -89,5 +89,5 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 
 ## Cập nhật bố cục 10/10
 
-- Hero theo mẫu thiết kế 10/10: trái = eyebrow, H1 2 dòng, meta có icon; phải = 1 ảnh VF3 thật (`vf3-bi-gam-bat-den-truoc-auto365.webp`, không dùng ảnh xe dựng trong mẫu). Hàng dưới: "Trả lời nhanh" (`#master-tra-loi`) + 2 nút | khung "Tìm bi gầm hợp với VF3".
+- Hero: cột trái = eyebrow, H1 2 dòng, meta có icon, "Trả lời nhanh" (`#master-tra-loi`) ngay dưới H1, 2 nút; cột phải = 1 ảnh VF3 thật cao bằng cột trái. Khung "Tìm bi gầm hợp với VF3" trải ngang bên dưới (tiêu đề + ô tìm 1 hàng; chip nhu cầu + ghi chú giá hàng dưới).
 - Khối "Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365" (`#vf3lp-anh-thuc-te`, nền tối) đặt sau khối Giá / Khi nào cần kiểm tra xe. 2 thẻ Giá / Kiểm tra xe không gắn ảnh.
