@@ -30,7 +30,7 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 
 - 9 SKU theo `vf3.json` (giá thiết bị, chưa VAT, đơn vị **/bộ đèn**, đối chiếu `stg_products` 06/10/2026). **CX Commercial:** hiệu lực giá.
 - Lưới chính hiện 2 hàng (8 desktop / 4 mobile); nút "Xem thêm mẫu bi gầm" là link sang hub `https://v2.auto365.vn/nang-cap-anh-sang-bi-gam`. Mẫu thứ 9 (AES SV 2.0 Max) vẫn nằm trong HTML, bảng so sánh và bộ lọc.
-- Mức xác minh hiển thị trong modal lọc: GTR G1 Turbo V2 = "Đã có case VF3 được xác minh" (căn cứ 2 video); 8 mẫu còn lại = "Cần kiểm tra xe trước khi chốt". Thẻ lưới chính không gắn nhãn (yêu cầu 09/10); đoạn dưới H2 sản phẩm nêu GTR là mẫu có video VF3.
+- Mức xác minh hiển thị trong bảng so sánh (popup lọc đã bỏ 10/10): GTR G1 Turbo V2 = "Đã có case VF3 được xác minh" (căn cứ 2 video); 8 mẫu còn lại = "Cần kiểm tra xe trước khi chốt". Thẻ lưới chính không gắn nhãn (yêu cầu 09/10); đoạn dưới H2 sản phẩm nêu GTR là mẫu có video VF3.
 - Bảng **"So sánh nhanh 9 mẫu bi gầm cho VF3"** (`#vf3lp-so-sanh`, trong khối Sản phẩm, dưới nút "Xem tất cả"): lens, công suất Cos/Pha mỗi đèn, nhiệt màu, bảo hành, giá, trạng thái trên VF3. Nguồn: trang sản phẩm auto365.vn đọc 10/10/2026 (quy tắc reviewer: PDP là nguồn được chấp nhận). Ô "—" = PDP không ghi (lens AES SV 3.0 Pro); bảo hành AES SV 3.0 Max "Xác nhận khi báo giá" vì PDP không ghi. Có caption, `th scope`, cuộn ngang riêng trên mobile. Hiển thị dạng accordion `<details>` **thu gọn mặc định** (yêu cầu 10/10); bảng vẫn nằm trong HTML. 4 ghi chú đánh đổi: bằng chứng VF3, lens 3.0 vs 2.0, một vs ba nhiệt màu, công suất công bố khác phép đo.
 - F10 Turbo V2: `vf3.json` ghi "Kỹ thuật đã xác nhận tương thích VF3" nhưng chưa có hồ sơ trong `nguon_doi_chieu` → trang để CHECK_REQUIRED. **CX Kỹ thuật.**
 - Nhãn nhu cầu trong bộ lọc (đi phố / đi mưa / đi tỉnh / tiết kiệm) là gợi ý lọc, có ghi chú "không phải xác nhận tương thích". **CX Kỹ thuật** nếu muốn dùng làm căn cứ chọn.
@@ -89,7 +89,8 @@ Preview đã kiểm 09–10/10/2026: L5 (desktop 1366px, mobile 375px — không
 
 ## Cập nhật bố cục 10/10
 
-- Hero: cột trái = eyebrow, H1 2 dòng (không còn dòng tác giả/ngày — reviewer + ngày cập nhật ở dòng ghi chú cuối trang và schema), "Trả lời nhanh" (`#master-tra-loi`) ngay dưới H1, 2 nút; cột phải = 1 ảnh VF3 thật (cao 300px). Khung "Tìm bi gầm hợp với VF3" trải ngang bên dưới (tiêu đề + ô tìm 1 hàng; chip nhu cầu + ghi chú giá hàng dưới).
+- Hero: cột trái = eyebrow, H1 2 dòng (không còn dòng tác giả/ngày — reviewer + ngày cập nhật ở dòng ghi chú cuối trang và schema), "Trả lời nhanh" (`#master-tra-loi`) ngay dưới H1, 2 nút; cột phải = 1 ảnh VF3 thật (cao 300px). Không còn khung tìm kiếm (bỏ theo yêu cầu 10/10).
 - 2 thẻ xếp dọc, mỗi thẻ nội dung bên trái + ảnh bên phải: "Giá và phạm vi chi phí" + ảnh xe VF3 bật đèn (chú thích ảnh thực tế, biển số đã che); "Khi nào cần kiểm tra xe" + ảnh cụm đèn chính (chú thích hạng mục riêng, không thuộc bi gầm). Không còn khối ảnh nền tối riêng.
 - Khối "Địa điểm Auto365 tiếp nhận": làm lại giao diện theo mẫu 10/10 (ô thông tin 2×2, 3 nút cùng hàng, 3 ô miền có hình địa danh). Nội dung và số liệu giữ nguyên; bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" theo yêu cầu 10/10 (ý này còn trong FAQ chi nhánh). Sửa nút Google Maps trước đây trỏ `#` → link Maps trụ sở (cùng link trang bi gầm X-Light).
-- Popup lọc: khôi phục dòng đếm `[data-loc="dem"]` ("N mẫu phù hợp") — thiếu phần tử này làm script page-asset dừng, ô tìm ở hero không mở được popup.
+- Đã bỏ khung tìm kiếm ở hero và popup lọc (`vf3lp-loc`). Mức xác minh từng mẫu hiển thị trong bảng so sánh ("Có video VF3" / "Kiểm tra xe").
+- Form báo giá (`nr-quote`): thêm dòng trạng thái `[data-js="nr-quote-status"]` — thiếu phần tử này làm `quote.js` lỗi, mọi nút "Báo giá"/"Nhận báo giá" không mở được form.

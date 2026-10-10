@@ -62,8 +62,8 @@ if (stillPresent.length) {
 
 // Fix sheet 08/10/2026: these must be visible in the HTML itself, not only in vf3.json
 const htmlMustContain = [
-  'vf3lp-ev--case">Đã có case VF3 được xác minh',
-  'vf3lp-ev--check">Cần kiểm tra xe trước khi chốt',
+  'vf3lp-ev--case">Có video VF3',
+  'vf3lp-ev--check">Kiểm tra xe',
   'data-yt="Aa0Of6ZtxEE"',
   'data-yt="weADPByfN7g"',
   '"@type": "FAQPage"',
@@ -79,7 +79,7 @@ const htmlMustContain = [
   '"lastReviewed": "2026-10-10"',
   'id="vf3lp-so-sanh"',
   '<caption id="vf3lp-cmp-cap">',
-  'Nhu cầu chỉ là gợi ý để lọc nhanh',
+  'data-js="nr-quote-status"',
   'Ảnh thực tế VinFast VF3 lắp bi gầm tại Auto365',
   'biển số đã được che',
   'hinh/vf3-bi-gam-bat-den-truoc-auto365.webp',
