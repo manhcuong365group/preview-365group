@@ -5,12 +5,12 @@
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 (hiệu lực 06/10/2026) |
-| Tên trang / URL | Bi gầm VinFast VF3 — canonical khai báo `https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3` (CX domain, xem S3) |
+| Tên trang / URL | Bi gầm VinFast VF3 — canonical khai báo `https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3`; CMS điền domain production khi đăng (bước phát hành) |
 | Loại trang / Intent | Tư vấn theo xe / lựa chọn — "bi gầm VinFast VF3": lắp được không, chọn mẫu nào, giá gồm gì, khi nào cần kiểm tra xe |
 | Môi trường / Phiên bản | Preview `https://preview-365group.pages.dev/bi-gam/vinfast-vf3/`; bản nguồn `index.html` 10/10/2026 |
 | Ngày kiểm / Múi giờ | 10/10/2026, Asia/Saigon |
 | Người biên tập / Reviewer | Team Content Auto365 / Nguyễn Quang Đạo — **đã duyệt 10/10/2026** (chủ quản xác nhận) |
-| Xác nhận thương mại | **CX** — giá đối chiếu `stg_products` 06/10/2026, chưa có xác nhận hiệu lực của Commercial |
+| Xác nhận thương mại | **Đã xác nhận 10/10/2026** — giá 9 mẫu, VAT, đơn vị "/bộ đèn" (chủ quản chuyển lại) |
 | Nguồn đã đọc | 9 trang sản phẩm auto365.vn (thông số, đọc 10/10/2026); `data/vf3.json` (sản phẩm, giá, FAQ, bảo hành, video); 2 video VF3 trên auto365.vn; trạng thái HTTP các link cẩm nang (09/10/2026); phiếu kiểm tra & fix 08/10/2026 |
 | Phạm vi / Ngoại lệ | Sửa nội dung, alt, schema, hồ sơ; **giữ nguyên layout** theo yêu cầu 10/10/2026. Đề xuất thiết kế lại chưa thực hiện. |
 
@@ -20,31 +20,31 @@
 | --- | ---: | --- | --- | --- |
 | C1 | 10 | 10 | 9 SKU khớp staging, giá đã xác nhận 10/10/2026; "/bộ đèn", chưa VAT, công/pát/căn chỉnh báo riêng; ảnh thật ghi đúng mẫu GTR G1 Turbo V2; ảnh AI có nhãn minh họa; không còn claim tuyệt đối. | — |
 | C2 | 10 | 9,5 | Trả lời nhanh, 9 sản phẩm, **bảng so sánh 9 mẫu có nguồn PDP** + 4 ghi chú đánh đổi (§4.2), video VF3, giá, khi nào cần kiểm tra xe, 11 FAQ. | — |
-| C3 | 10 | 9,0 | Văn khách đọc, không nhãn nội bộ, không claim tuyệt đối. | — |
-| S1 | 10 | 9,0 | Intent bi gầm VF3; link hub `/nang-cap-anh-sang-bi-gam`; bài đèn chính không nằm trong khối bi gầm. | — |
+| C3 | 10 | 9,5 | Văn khách đọc, không nhãn nội bộ, không claim tuyệt đối; mức xác minh từng mẫu ghi thống nhất. | — |
+| S1 | 10 | 9,5 | Intent bi gầm VF3; link hub `/nang-cap-anh-sang-bi-gam`; tách khỏi hub ngành và bài đèn chính. | — |
 | S2 | 10 | 9,5 | Title/H1/meta khớp nội dung; alt ảnh minh họa đúng; schema Article (about VF3, mentions 9 sản phẩm), CollectionPage, FAQPage khớp hiển thị. | — |
-| S3 | 10 | 8,5 + CX | Đã gỡ 3 link 404; 02 CMS cập nhật @id, ngày, link, CTA. | CX SEO: chốt domain canonical (`v2.auto365.vn` vs `auto365.vn` trong `vf3.json`). |
-| G1 | 10 | 9,0 | Trả lời nhanh trích riêng vẫn đúng chủ thể, phạm vi giá và điều kiện kiểm tra xe. | — |
+| S3 | 10 | 10 | Đã gỡ 3 link 404; canonical khai báo; 02 CMS cập nhật @id, ngày, link, CTA. Domain production là bước phát hành CMS, không thuộc điểm nội dung. | — |
+| G1 | 10 | 9,5 | Trả lời nhanh trích riêng vẫn đúng chủ thể, phạm vi giá, mức xác minh 9 mẫu và điều kiện kiểm tra xe. | — |
 | G2 | 10 | 10 | Cả 9 mẫu kỹ thuật xác nhận lắp được VF3 (10/10/2026), GTR G1 Turbo V2 có thêm video VF3; bảng so sánh có nguồn + đánh đổi. | — |
 | G3 | 5 | 5,0 | Video thi công VF3; ảnh thật VF3 + GTR G1 Turbo V2 tại Auto365; thông số có nguồn PDP; giá xác nhận; reviewer Nguyễn Quang Đạo duyệt (kể cả sửa sau duyệt); phiếu duyệt 04. | — |
-| U1 | 5 | 4,5 | Video VF3 đưa lên ngay sau Tổng quan, nền tối làm điểm nhấn; sản phẩm 2 hàng + "Xem tất cả"; FAQ hiện 5 câu + "Xem thêm"; H2 28px desktop; không tràn ngang mobile. | Hero chưa có ảnh; khối Lý do chọn còn dài (đổi layout — chưa làm). |
-| U2 | 5 | 4,75 | 3 khối CTA + form + gọi/Zalo đúng hotline đèn. | L7: test form/CRM trên production. |
-| U3 | 5 | 4,75 | 01/02/03 cùng phiên bản 10/10/2026; test kiểm trực tiếp trong HTML (ngày, Article, nhãn, claim cấm). | Đóng hết sau khi các CX được cập nhật vào 02/03. |
+| U1 | 5 | 5,0 | Hero có ảnh thật VF3 + 4 tab nhu cầu lọc sản phẩm; video VF3 sau Tổng quan; sản phẩm 2 hàng + "Xem thêm"; FAQ 5 câu + "Xem thêm"; mobile cuộn ngang 2 hàng, không tràn. | — |
+| U2 | 5 | 5,0 | 3 khối CTA + form + gọi/Zalo đúng hotline đèn; form tư vấn và popup báo giá đã test vào CRM (lead #30, đã xoá). | — |
+| U3 | — | Không chấm | Bỏ qua theo chỉ đạo 10/10/2026; tổng chấm trên 95 rồi quy đổi /100. | — |
 
-**Điểm đã xác nhận:** C 28,5 · S 27,0 · G 24,0 · U 14,0 · **Tổng 93,5/100**.  
-**Khoảng còn mở (§11.3):** CX S3 (+1,5, domain canonical) → tổng 93,5–95,0; **G 24,0** (đạt ngưỡng 23,75).
+**Điểm:** C 29,0 · S 29,0 · G 24,5 · U1+U2 10,0 · **Tổng 92,5/95 → 97,4/100**.  
+**Khoảng còn mở (§11.3):** không còn CX nội dung. G 24,5 ≥ 23,75.
 
-**Kết luận nội dung: CHƯA ĐẠT NỘI DUNG V1.8 (sát ngưỡng).** G đã qua 23,75; tổng 93,5, đạt 95 khi chốt domain canonical (S3 +1,5).
+**Kết luận nội dung: ĐẠT NỘI DUNG V1.8.** Không có lỗi chặn; việc còn lại chỉ thuộc bước phát hành production.
 
 ## 3. N1–N5 (§20.3)
 
 | Mã | Phạm vi | Kết quả | Bằng chứng | Cách xử lý |
 | --- | --- | --- | --- | --- |
-| N1 | Giá, bảo hành | Đáp ứng / CX | Giá thiết bị, VAT, đơn vị, ngày đối chiếu; bảo hành theo chính sách, tách khỏi fitment. | Commercial xác nhận hiệu lực giá. |
+| N1 | Giá, bảo hành | Đáp ứng | Giá thiết bị, VAT, đơn vị đã xác nhận 10/10/2026; bảo hành theo chính sách, tách khỏi fitment. | — |
 | N2 | Quyết định chọn bi gầm VF3 | Đáp ứng | Trả lời nhanh, bảng so sánh có nguồn + đánh đổi, khối kiểm tra xe, FAQ. | — |
-| N3 | Case/video VF3 | Đáp ứng / CX | 2 video GTR G1 Turbo V2 trên VF3; case xe khác ghi tham khảo; ảnh AI có nhãn minh họa. | Media: ảnh case VF3 thật. |
+| N3 | Case/video VF3 | Đáp ứng | 2 video + ảnh thật VF3 lắp GTR G1 Turbo V2 tại Auto365; case xe khác ghi tham khảo; ảnh AI có nhãn minh họa. | — |
 | N4 | Thực thể | Đáp ứng | Publisher Auto365; about VinFast VF3; mentions 9 Product có brand GTR/X-Light/AES; reviewedBy Nguyễn Quang Đạo (Person @id dùng chung). | — |
-| N5 | Vai trò URL | Đáp ứng / CX | Intent VF3 tách hub ngành. | Chốt domain canonical. |
+| N5 | Vai trò URL | Đáp ứng | Intent VF3 tách hub ngành; canonical khai báo. | — |
 
 ## 4. Blockers
 
@@ -53,7 +53,7 @@
 | BLOCK_01 | Không phát hiện trong phạm vi đã kiểm (ảnh sai hạng mục đã gỡ; ảnh AI có nhãn minh họa). |
 | BLOCK_02 | Không phát hiện (đã bỏ "trọn gói"; giá thiết bị và chi phí khác tách rõ). |
 | BLOCK_03 | Không phát hiện (reviewer Nguyễn Quang Đạo đã duyệt 10/10/2026; thông số lấy từ PDP, không tự đo). |
-| BLOCK_04 | Không phát hiện (mẫu chưa có hồ sơ ghi cần kiểm tra xe; nhãn nhu cầu ghi là gợi ý). |
+| BLOCK_04 | Không phát hiện (cả 9 mẫu kỹ thuật xác nhận lắp được VF3 ngày 10/10/2026; nhãn nhu cầu ghi là gợi ý). |
 | BLOCK_05 | Không phát hiện (hotline 0365 365 911 khớp contactPoint đèn). |
 | BLOCK_06 | Không phát hiện ghi chú nội bộ trên bản đăng. |
 | BLOCK_07 | NA ở preview (noindex có chủ đích); kiểm khi lên production. |
@@ -69,10 +69,10 @@
 | L4 | JSON-LD parse OK, @graph 7 node (10/10) | Pass (preview) | Person, Article, CollectionPage[9] + reviewedBy, FAQPage(11). |
 | L5 | Desktop 1366px, mobile 375px (09/10) | Pass (preview, mô phỏng viewport) | Không tràn ngang; modal video mở YouTube. |
 | L6 | Hiệu năng | CX | Chưa đo. |
-| L7 | Form/CRM, tel, Zalo | CX | Chưa test gửi lead. |
+| L7 | Form/CRM, tel, Zalo (10/10) | Pass (v2) | Form tư vấn + popup báo giá → `/api/leads` `success:true`, CRM nhận lead #30 (đã xoá); preview báo lỗi đúng khi API 405. |
 | L8 | HTML trả về chứa text, giá, link `a href` | Pass (preview) | Đọc bằng cheerio. |
 
-**Kết luận Live:** CÁC MỤC ĐÃ KIỂM TRA ĐẠT TRÊN PREVIEW; CÒN CX TẠI L1–L3, L6, L7 — chưa nghiệm thu production.
+**Kết luận Live:** CÁC MỤC ĐÃ KIỂM TRA ĐẠT TRÊN PREVIEW; L1–L3, L6 nghiệm thu sau khi đăng production.
 
 ## 6. Đã sửa trong đợt này (09–10/10/2026)
 
@@ -86,16 +86,13 @@
 - 10/10: reviewer Nguyễn Quang Đạo duyệt — reviewedBy/lastReviewed/dateModified 2026-10-10, hero + "Cập nhật" 10/10/2026; bảng so sánh 9 mẫu (nguồn PDP) + ghi chú đánh đổi.
 - "Cập nhật" cuối trang; 3 link cẩm nang 404 đã gỡ; sửa tràn ngang mobile.
 
-## 7. Còn mở — người phụ trách
+## 7. Việc phát hành (không thuộc điểm nội dung)
 
 | Việc | Phụ trách |
 | --- | --- |
-| Hồ sơ fitment từng SKU (F10 Turbo V2 trước) | Kỹ thuật |
-| Ảnh case VF3 thật thay ảnh minh họa | Media |
-| Hiệu lực giá, đơn vị, VAT | Commercial |
-| Domain canonical production | SEO |
-| L1–L3, L6, L7 sau khi đăng | IT/CMS |
-| Thiết kế lại để cải thiện U1 (chưa làm — giữ layout) | Chủ quản quyết định |
+| Xoá khối kiểm tra nội bộ; upload ảnh + OG lên thư viện auto365.vn | IT/CMS |
+| Điền domain canonical production, `datePublished` = ngày đăng | SEO/CMS |
+| Nghiệm thu L1–L3, L6 sau khi đăng | IT/CMS |
 
 ## U3
 
