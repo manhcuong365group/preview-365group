@@ -84,10 +84,10 @@ Công cụ: Puppeteer (Chromium headless) chạy trực tiếp trên https://pre
 
 | Cấu hình | LCP | CLS | Tải (load) | Truyền tải | Request | DOM |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,37 s | 0 | 2,0 s | ~487 KB | 15 | 4.154 |
-| Desktop 1440×900, không giới hạn | 0,33 s | 0,001 | 0,74 s | ~1.060 KB | 25 | 4.154 |
+| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,49 s | 0 | 2,3 s | ~490 KB | 15 | 4.426 |
+| Desktop 1440×900, không giới hạn | 0,31 s | 0,001 | 0,69 s | ~1.064 KB | 25 | 4.426 |
 
-Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.154 / 232 ảnh (lazy-load).
+Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.426 / 246 ảnh (lazy-load).
 
 ## Trước khi đăng production — xoá khối kiểm tra nội bộ
 
