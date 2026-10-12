@@ -31,7 +31,7 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | A05 | Thiếu `<main>` | Một `<main id="main-content">` + skip link | HTML |
 | U3 | Bộ bàn giao | 01 Nội dung (xuất tự động, có SHA-256) + 02 CMS/SEO + 03 phiếu này + 04 Master Data cùng phiên bản | docs/nang-cap-anh-sang/ (nội bộ) |
 | A01 / RW-05 | Khóa giá/VAT/đơn vị | Chủ quản xác nhận 10/10/2026: giá, VAT, đơn vị như PDP là đúng; 129 dòng Master Data đánh dấu đã xác nhận | 04_Master_Data |
-| C1 / N3 | Reviewer | Nguyễn Quang Đạo đã duyệt bản 10/10/2026; schema có lastReviewed | 02 mục 2 |
+| C1 / N3 | Reviewer | Nguyễn Quang Đạo duyệt bản cuối 12/10/2026 (lượt trước 10/10/2026); schema lastReviewed/dateModified = 2026-10-12, khớp dòng "Cập nhật nội dung 12/10/2026" trên trang | 02 mục 2 |
 | A10 | NĐ 238/2026 sửa NĐ 168 | Đã đọc bản gốc: điểm a khoản 3 Điều 13 không bị thay đổi bởi NĐ 238 (đối chiếu Điều 3 và khoản 11 Điều 19 NĐ 238). NĐ 238 có sửa/thay thuật ngữ ở các điểm khác của Điều 13; hub không mô tả các thay đổi đó. Trang, FAQ, FAQPage chỉ ghi "không thay đổi quy định này" cho điểm a khoản 3 | vanban.chinhphu.vn docid 218613 |
 
 ## Giữ theo quyết định chủ quản (khác đề xuất hồ sơ)
