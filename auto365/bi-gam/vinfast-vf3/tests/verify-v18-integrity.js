@@ -76,9 +76,8 @@ const htmlMustContain = [
   'id="vf3lp-so-sanh"',
   '<caption id="vf3lp-cmp-cap">',
   'data-js="nr-quote-status"',
-  'Ảnh thực tế VinFast VF3 lắp bi gầm GTR G1 Turbo V2 tại Auto365',
+  'VinFast VF3 lắp bi gầm GTR G1 Turbo V2 tại Auto365, bật đèn nhìn trực diện',
   'vf3lp-ev--fit">Kỹ thuật xác nhận',
-  'biển số đã được che',
   'hinh/vf3-bi-gam-bat-den-truoc-auto365.webp',
   'og-vf3-bi-gam.jpg'
 ];

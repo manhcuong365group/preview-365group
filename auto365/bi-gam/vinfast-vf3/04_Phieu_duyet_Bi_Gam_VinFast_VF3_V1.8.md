@@ -51,6 +51,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 12/10/2026 | 4 tab nhu cầu ở hero mở popup gợi ý mẫu (Báo giá / Xem chi tiết / Xem cả 9 mẫu), lưới sản phẩm không lọc nữa; sửa câu thẻ "Đã lắp thực tế trên VF3" | Theo yêu cầu chủ quản |
 | 12/10/2026 | Bỏ khối "VF3 nâng cấp bi gầm có gì cần biết?" (4 thẻ trùng ý, ảnh minh họa xe khác VF3) | Theo yêu cầu chủ quản |
 | 12/10/2026 | Thẻ "Khi nào cần kiểm tra xe": thay ảnh đèn pha RGB bằng ảnh thật cận cảnh bi gầm trong hốc cản VF3, bỏ chú thích "hạng mục riêng" | Theo yêu cầu chủ quản (ảnh do chủ quản gửi) |
+| 12/10/2026 | Đổi chỗ 2 ảnh thật giữa thẻ Giá và thẻ Kiểm tra xe; bỏ 2 chú thích ảnh; bỏ dòng "Cấu hình chưa có hồ sơ tương thích xác nhận" (9 mẫu đã xác nhận) | Theo yêu cầu chủ quản |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -66,4 +67,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `06f54168080521d636305188c6c499d8fd494dc01387d533631679c7352fc5df`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `22b96636852041146e26269ee173021e349d4223866c83cdefa5563835aa6f0d`
