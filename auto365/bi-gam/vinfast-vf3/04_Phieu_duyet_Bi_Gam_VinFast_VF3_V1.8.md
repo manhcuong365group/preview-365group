@@ -19,7 +19,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | Thông số | Bảng "So sánh nhanh 9 mẫu bi gầm cho VF3": lens, công suất Cos/Pha mỗi đèn, nhiệt màu, bảo hành — theo trang sản phẩm auto365.vn, đọc 10/10/2026 (quy tắc: PDP là nguồn được chấp nhận) |
 | Mức xác minh trên VF3 | GTR G1 Turbo V2 = có video thi công VF3; 8 mẫu còn lại = kỹ thuật xác nhận lắp được trên VF3 (10/10/2026); vẫn kiểm tra pát/điện trên xe trước khi chốt |
 | Tư vấn | Trả lời nhanh, khối "Khi nào cần kiểm tra xe", 11 FAQ (FAQPage khớp nội dung), câu đăng kiểm không kết luận pháp lý |
-| Bảo hành | Thiết bị theo chính sách từng mẫu; lỗi do lắp đặt không thuộc bảo hành thiết bị |
+| Bảo hành | Thiết bị theo chính sách từng mã; chất lượng thi công: Auto365 tiếp nhận, kiểm tra nguyên nhân, xử lý theo chính sách dịch vụ/phiếu bàn giao; chi phí ngoài bảo hành thông báo và thống nhất trước (theo chỉ đạo sếp 12/10/2026) |
 
 ## 2. Dữ kiện thương mại và hồ sơ
 
@@ -45,6 +45,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 10/10/2026 | Khối chi nhánh làm lại giao diện, sửa link Google Maps (trước trỏ `#`); bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" | Đã xác nhận |
 | 10/10/2026 | Ghi tên mẫu GTR G1 Turbo V2 vào alt/chú thích ảnh thật; F10 Turbo V2 → "Kỹ thuật xác nhận" (bảng so sánh, ghi chú lưới, FAQ "GTR hay X-Light" + FAQPage) | Đã xác nhận (dữ kiện do người phụ trách nội dung chuyển lại) |
 | 12/10/2026 | Link "Xem trang video" trong modal trỏ về v2.auto365.vn (trước trỏ nhầm domain preview); câu fitment 9 mẫu ghi rõ "theo hồ sơ kỹ thuật nội bộ (rà soát: Nguyễn Quang Đạo, 10/10/2026)" | Sửa kỹ thuật, không đổi dữ kiện |
+| 12/10/2026 | "Hậu mãi sau lắp đặt": thay câu bảo hành theo nội dung phiếu nghiệm thu 10/10, phân biệt bảo hành thiết bị và trách nhiệm thi công | Đã duyệt (chỉ đạo sếp) |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -60,4 +61,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `57a8e3d1ad7689f18f472467f390bf857de19be3c1bd06403dc8a8d48693e4f7`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `64e9bb1075190adbc4624861267836cc4a091c0df4e9ddcc6f08720da232d3a2`
