@@ -33,7 +33,7 @@ Các trang con nên có link quay về hub (breadcrumb hoặc khối "Xem tổng
 | H1 | Độ đèn ô tô: Bi LED, Bi Laser, bi gầm, bóng LED và đèn trợ sáng (duy nhất) |
 | Canonical | https://auto365.vn/nang-cap-anh-sang |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (xem mục 6) |
-| Rà soát kỹ thuật | Nguyễn Quang Đạo — **đã duyệt bản 10/10/2026** (chủ quản xác nhận). Schema: `reviewedBy` + `lastReviewed` 2026-10-10 trên CollectionPage |
+| Rà soát kỹ thuật | Nguyễn Quang Đạo — **đã duyệt bản 12/10/2026** (bản cuối, chủ quản xác nhận; lượt duyệt trước 10/10/2026). Schema: `reviewedBy` + `lastReviewed` 2026-10-12 trên CollectionPage |
 | dateModified | 2026-10-10 — ngày nội dung sửa thực tế; không đổi chỉ vì kiểm lại |
 | Landmark | Một `<main id="main-content">` + skip link |
 
