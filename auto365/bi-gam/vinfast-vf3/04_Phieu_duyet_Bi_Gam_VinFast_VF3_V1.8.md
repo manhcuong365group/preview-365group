@@ -54,6 +54,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 12/10/2026 | Đổi chỗ 2 ảnh thật giữa thẻ Giá và thẻ Kiểm tra xe; bỏ 2 chú thích ảnh; bỏ dòng "Cấu hình chưa có hồ sơ tương thích xác nhận" (9 mẫu đã xác nhận) | Theo yêu cầu chủ quản |
 | 12/10/2026 | Sắp lại 6 thẻ "Lý do chọn" theo hub; thẻ 5 đổi thành "Đại lý chính hãng X-Light, GTR, AES" (chủ quản xác nhận đại lý cả 3 hãng), ảnh chứng nhận X-Light | Theo yêu cầu chủ quản |
 | 12/10/2026 | Thay ảnh 5 thẻ "Lý do chọn" bằng ảnh VF3 do chủ quản gửi (chi nhánh, tra cứu bảo hành, lắp đặt, phiếu bàn giao, bảng giá); alt ghi "Ảnh minh họa"; giữ ảnh chứng nhận đại lý | Theo yêu cầu chủ quản |
+| 12/10/2026 | Viết lại câu trả lời nhanh ở hero (trả lời thẳng nhu cầu, nêu hãng X-Light/GTR/AES, giá từ 4,5 triệu/bộ chưa VAT) | Theo yêu cầu chủ quản |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -69,4 +70,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `5c2b25a765344dc47b063305bcbe352ea6f1e6baf3e73bf478957d5b2360758d`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `bcaba0578c9dd78493520c6073287c803c1feb8398b1ea2bef3b42c1b9998ec3`
