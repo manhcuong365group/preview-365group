@@ -58,7 +58,7 @@ Thứ tự H2: Sản phẩm → Xe thực tế → Thương hiệu → Vì sao c
 - 129 mẫu tiêu biểu từ 7 danh mục (trang đầu mỗi danh mục, lấy 08–10/10/2026). Bảng: `04_Master_Data_San_Pham_Hub_Anh_Sang.csv` — **chủ quản xác nhận 10/10/2026 giá/VAT/đơn vị đúng theo PDP**; giá có hiệu lực theo PDP tại ngày này.
 - Đơn vị/VAT trên card lấy từ ghi chú giá trên chính PDP ("Giá bộ đèn tham khảo, chưa bao gồm VAT"); giữ "/cặp" cho bi gầm X-Light (đã chốt 02/10) và AES Turbo BM (theo PDP).
 - Banner F+ Pro Mini dùng bản **không ghi giá** (banner gốc ghi "bao gồm VAT" lệch PDP).
-- Case: nguồn `index_ajax.php?…action=newsroomSearch&case_hub=xe-thuc-te-tai-auto365` lọc nhóm ánh sáng = 362 case (10/10/2026). Năm xe lấy từ tên xe trước chữ "lắp", rồi mới đến `nam_xe` (bài Acura MDX 2008 có `nam_xe=2025` — **CMS nên sửa trường này**). Tiêu đề case được làm gọn khi hiển thị (bỏ đoạn quảng cáo, từ nói quá, chữ in hoa).
+- Case: nguồn `index_ajax.php?…action=newsroomSearch&case_hub=xe-thuc-te-tai-auto365` lọc nhóm ánh sáng = 370 case ở bản hiện hành (feed làm mới tối 10/10/2026; snapshot sáng 10/10 là 362). Năm xe lấy từ tên xe trước chữ "lắp", rồi mới đến `nam_xe` (bài Acura MDX 2008 có `nam_xe=2025` — **CMS nên sửa trường này**). Tiêu đề case được làm gọn khi hiển thị (bỏ đoạn quảng cáo, từ nói quá, chữ in hoa).
 - 24 case đầu nằm trong DOM; phần còn lại trong `<template>` (vẫn có trong HTML nguồn), dựng ra khi khách lọc/xem thêm.
 
 ## 5. Pháp lý (đã viết lại 10/10)
@@ -78,16 +78,16 @@ Thứ tự H2: Sản phẩm → Xe thực tế → Thương hiệu → Vì sao c
 - [ ] Rich Results Test / Schema validator cho bản live.
 - [ ] Đo Core Web Vitals trên production (field khi có dữ liệu CrUX).
 
-## 7. Đo lab trên preview (A11) — 10/10/2026
+## 7. Đo lab trên preview (A11) — đo lại 12/10/2026
 
-Công cụ: Puppeteer (Chromium headless) trên bản local, đo LCP/CLS bằng PerformanceObserver. Số lab, không thay field data.
+Công cụ: Puppeteer (Chromium headless) chạy trực tiếp trên https://preview-365group.pages.dev/nang-cap-anh-sang/ (Cloudflare Pages), đo LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau sự kiện load. Số lab, không thay field data/CrUX. Log gốc: trang kiểm tra nội bộ, mục "Nhật ký kiểm thử".
 
-| Cấu hình | LCP | CLS | Tải lần đầu | Request | DOM |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,45 s | 0,044 | ~1,26 MB | 27 | 4.137 |
-| Desktop 1440×900, không giới hạn | 0,44 s | 0,003 | ~1,08 MB | 29 | 4.137 |
+| Cấu hình | LCP | CLS | Tải (load) | Truyền tải | Request | DOM |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,49 s | 0,044 | 5,7 s | ~1.003 KB | 22 | 4.154 |
+| Desktop 1440×900, không giới hạn | 0,33 s | 0,001 | 0,67 s | ~564 KB | 25 | 4.154 |
 
-Trước khi đưa case vào template: DOM 7.178, 576 ảnh. Sau: DOM 4.137, 238 ảnh (ảnh lazy-load).
+Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.154 / 232 ảnh (lazy-load).
 
 ## Trước khi đăng production — xoá khối kiểm tra nội bộ
 
