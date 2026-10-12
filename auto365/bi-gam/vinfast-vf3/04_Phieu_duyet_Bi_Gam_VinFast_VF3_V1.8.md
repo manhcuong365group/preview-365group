@@ -44,6 +44,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 10/10/2026 | Lưới sản phẩm 2 hàng, "Xem thêm" sang hub; bảng so sánh thu gọn (accordion) | Đã xác nhận |
 | 10/10/2026 | Khối chi nhánh làm lại giao diện, sửa link Google Maps (trước trỏ `#`); bỏ câu "Khả năng tiếp nhận… theo từng cơ sở" | Đã xác nhận |
 | 10/10/2026 | Ghi tên mẫu GTR G1 Turbo V2 vào alt/chú thích ảnh thật; F10 Turbo V2 → "Kỹ thuật xác nhận" (bảng so sánh, ghi chú lưới, FAQ "GTR hay X-Light" + FAQPage) | Đã xác nhận (dữ kiện do người phụ trách nội dung chuyển lại) |
+| 12/10/2026 | Link "Xem trang video" trong modal trỏ về v2.auto365.vn (trước trỏ nhầm domain preview); câu fitment 9 mẫu ghi rõ "theo hồ sơ kỹ thuật nội bộ (rà soát: Nguyễn Quang Đạo, 10/10/2026)" | Sửa kỹ thuật, không đổi dữ kiện |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -59,4 +60,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `0545280ff85239b2a6547020d851556d7e45c76bbaa5d803d9aa7d4b186ec3fe`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `57a8e3d1ad7689f18f472467f390bf857de19be3c1bd06403dc8a8d48693e4f7`
