@@ -48,6 +48,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 12/10/2026 | "Hậu mãi sau lắp đặt": thay câu bảo hành theo nội dung phiếu nghiệm thu 10/10, phân biệt bảo hành thiết bị và trách nhiệm thi công | Đã duyệt (chỉ đạo sếp) |
 | 12/10/2026 | Bỏ đoạn "Mức độ xác minh trên VinFast VF3…" dưới H2 sản phẩm (mức xác minh vẫn ghi ở bảng so sánh, FAQ) | Theo yêu cầu chủ quản |
 | 12/10/2026 | Viết lại 6 thẻ "Lý do chọn" ngắn đều, hướng lợi ích (dữ kiện đã chốt: video VF3, báo giá tách dòng, phiếu bàn giao, bảo hành điện tử, 90+ chi nhánh/33 tỉnh); ý hậu mãi giữ nguyên nghĩa câu sếp duyệt | Theo yêu cầu chủ quản |
+| 12/10/2026 | 4 tab nhu cầu ở hero mở popup gợi ý mẫu (Báo giá / Xem chi tiết / Xem cả 9 mẫu), lưới sản phẩm không lọc nữa; sửa câu thẻ "Đã lắp thực tế trên VF3" | Theo yêu cầu chủ quản |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -63,4 +64,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `3e1eb50de6bd96d9d0aec752e621cf31568bb4dac529978f8981529722c0893c`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `a0d40442568bbcc2752bc607cadd17f5709c72817eb2268c561cc78b27a2cf9a`

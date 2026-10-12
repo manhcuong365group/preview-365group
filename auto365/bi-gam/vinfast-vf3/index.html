@@ -2926,6 +2926,27 @@ Tư vấn độ đèn cho từng dòng xe</a>
 .vf3lp-hx-bulb svg{width:20px;height:20px}
 .vf3lp-hx-answer .nr-callout-text{font-size:15px;line-height:1.6;color:#334155;margin:0}
 .vf3lp-need{display:flex;flex-wrap:wrap;gap:8px}
+.vf3lp-ndlg{width:min(560px,calc(100% - 32px));max-height:85vh;padding:0;border:0;border-radius:8px;box-shadow:0 20px 50px rgba(15,23,42,.3);overflow:hidden;display:none;flex-direction:column}
+.vf3lp-ndlg[open]{display:flex}
+.vf3lp-ndlg::backdrop{background:rgba(15,23,42,.55)}
+.vf3lp-ndlg-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid #eef2f7}
+.vf3lp-ndlg-head h2{margin:0;font-size:18px;font-weight:700;color:#0f172a}
+.vf3lp-ndlg-x{flex:none;width:36px;height:36px;border:0;border-radius:8px;background:#f1f5f9;font-size:22px;line-height:1;cursor:pointer;color:#334155}
+.vf3lp-ndlg-list{overflow:auto;padding:6px 18px}
+.vf3lp-ndlg-item{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #f1f5f9}
+.vf3lp-ndlg-item:last-child{border-bottom:0}
+.vf3lp-ndlg-item img{flex:none;width:88px !important;height:66px;object-fit:contain;border-radius:8px;background:#f8fafc}
+.vf3lp-ndlg-info{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.vf3lp-ndlg-name{font-weight:700;font-size:15px;color:#0f172a;text-decoration:none}
+.vf3lp-ndlg-price{font-size:14px;font-weight:700;color:#dc2626}
+.vf3lp-ndlg-btns{display:flex;align-items:center;gap:14px;margin-top:4px}
+.vf3lp-ndlg-quote{padding:6px 14px;border:0;border-radius:8px;background:#dc2626;color:#fff;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.vf3lp-ndlg-btns a{font-size:13px;font-weight:600;color:#334155}
+.vf3lp-ndlg-foot{padding:12px 18px;border-top:1px solid #eef2f7;background:#fafafa}
+.vf3lp-ndlg-foot p{margin:0 0 6px;font-size:12.5px;color:#64748b}
+.vf3lp-ndlg-all{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:#dc2626;text-decoration:none}
+.vf3lp-ndlg-all svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+@media(max-width:600px){.vf3lp-ndlg{width:100%;max-width:100%;max-height:82vh;margin:auto 0 0;border-radius:12px 12px 0 0}}
 .vf3lp-need-tab{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #e2e8f0;border-radius:999px;background:#fff;color:#0f172a;font:inherit;font-size:13.5px;font-weight:500;cursor:pointer;transition:border-color .15s,background .15s}
 .vf3lp-need-tab svg{width:18px;height:18px}
 .vf3lp-need-tab:hover{border-color:#fca5a5}
@@ -3380,7 +3401,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
             </span>
             <h3 style="margin: 0; font-size: 15.5px; font-weight: 700; color: #0f172a;">Đã lắp thực tế trên VF3</h3>
           </div>
-          <p style="margin: 0; font-size: 13.5px; color: #64748b; line-height: 1.5;">GTR G1 Turbo V2 đã thi công trên VF3 tại Auto365, có video để bạn xem trước kết quả trước khi chọn.</p>
+          <p style="margin: 0; font-size: 13.5px; color: #64748b; line-height: 1.5;">Cả 9 mẫu được kỹ thuật xác nhận lắp vừa VF3, có video thi công thực tế để bạn xem ánh sáng trước khi chọn.</p>
         </div>
       </div>
 
@@ -3822,7 +3843,8 @@ Tư vấn độ đèn cho từng dòng xe</a>
   <div class="vf3lp-prod-more"><button type="button" class="vf3lp-btn vf3lp-prod-toggle vf3lp-faq-toggle" aria-controls="vf3lp-faq-list" aria-expanded="false">Xem thêm câu hỏi <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></div>
 </div>
 </section>
-<script>(function(){var g=document.getElementById("vf3lp-prod-grid"),note=document.getElementById("vf3lp-need-note"),tabs=document.querySelectorAll(".vf3lp-need-tab");if(!g||!note||!tabs.length)return;var names={};tabs.forEach(function(t){names[t.dataset.need]=t.textContent.trim()});function set(n){tabs.forEach(function(t){t.setAttribute("aria-pressed",t.dataset.need===n?"true":"false")});var c=0;g.querySelectorAll(".vf3lp-prod").forEach(function(p){var ok=!n||(" "+p.dataset.nhuCau+" ").indexOf(" "+n+" ")>=0;p.classList.toggle("is-need-hide",!ok);if(ok)c++});g.classList.toggle("is-need",!!n);g.classList.toggle("is-collapsed",!n);note.hidden=!n;if(n)note.firstChild.textContent=c+" mẫu cho “"+names[n]+"”."}tabs.forEach(function(t){t.addEventListener("click",function(){var on=t.getAttribute("aria-pressed")==="true";set(on?"":t.dataset.need);if(!on)document.getElementById("vf3lp-sp").scrollIntoView({behavior:"smooth",block:"start"})})});note.querySelector(".vf3lp-need-clear").addEventListener("click",function(){set("")})})();</script>
+<dialog class="vf3lp-ndlg" id="vf3lp-ndlg" aria-labelledby="vf3lp-ndlg-t"><div class="vf3lp-ndlg-head"><h2 id="vf3lp-ndlg-t">Gợi ý bi gầm cho VF3</h2><button type="button" class="vf3lp-ndlg-x" aria-label="Đóng">×</button></div><div class="vf3lp-ndlg-list"></div><div class="vf3lp-ndlg-foot"><p>Gợi ý theo nhu cầu, kỹ thuật viên xác nhận cấu hình khi kiểm tra xe. Giá thiết bị chưa VAT.</p><a href="#vf3lp-sp" class="vf3lp-ndlg-all">Xem cả 9 mẫu <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></dialog>
+<script>(function(){var g=document.getElementById("vf3lp-prod-grid"),d=document.getElementById("vf3lp-ndlg"),tabs=document.querySelectorAll(".vf3lp-need-tab");if(!g||!d||!tabs.length)return;var list=d.querySelector(".vf3lp-ndlg-list"),t=d.querySelector("#vf3lp-ndlg-t"),last=null;function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}function close(){if(d.open)d.close()}d.addEventListener("close",function(){tabs.forEach(function(x){x.setAttribute("aria-pressed","false")});if(last)last.focus()});function open(btn){var n=btn.dataset.need,name=btn.textContent.trim(),html="";last=btn;tabs.forEach(function(x){x.setAttribute("aria-pressed",x===btn?"true":"false")});t.textContent="Bi gầm VF3: "+name.charAt(0).toLowerCase()+name.slice(1);g.querySelectorAll(".vf3lp-prod").forEach(function(p,i){if((" "+p.dataset.nhuCau+" ").indexOf(" "+n+" ")<0)return;var a=p.querySelector("h3 a"),img=p.querySelector("img"),pr=p.querySelector(".vf3lp-price");html+='<div class="vf3lp-ndlg-item"><img src="'+esc(img.src)+'" alt="'+esc(img.alt)+'" width="88" height="66" loading="lazy"><div class="vf3lp-ndlg-info"><a class="vf3lp-ndlg-name" href="'+esc(a.href)+'">'+esc(a.textContent)+'</a><span class="vf3lp-ndlg-price">'+esc(pr?pr.textContent.trim():"")+'</span><div class="vf3lp-ndlg-btns"><button type="button" class="vf3lp-ndlg-quote" data-i="'+i+'">Báo giá</button><a href="'+esc(a.href)+'">Xem chi tiết</a></div></div></div>'});list.innerHTML=html;if(d.showModal)d.showModal();else d.setAttribute("open","")}tabs.forEach(function(x){x.addEventListener("click",function(){open(x)})});d.querySelector(".vf3lp-ndlg-x").addEventListener("click",close);d.addEventListener("click",function(ev){if(ev.target===d){close();return}var q=ev.target.closest(".vf3lp-ndlg-quote");if(q){var src=g.querySelectorAll(".vf3lp-prod")[+q.dataset.i].querySelector('[data-action="nr-quote"]');close();if(src)src.click();return}if(ev.target.closest(".vf3lp-ndlg-all")){ev.preventDefault();close();document.getElementById("vf3lp-sp").scrollIntoView({behavior:"smooth",block:"start"})}})})();</script>
 <script>(function(){var g=document.getElementById("vf3lp-faq-list"),b=document.querySelector(".vf3lp-faq-toggle");if(!g||!b)return;b.addEventListener("click",function(){var open=g.classList.toggle("is-collapsed")===false;b.setAttribute("aria-expanded",open);b.firstChild.nodeValue=open?"Thu gọn ":"Xem thêm câu hỏi ";b.classList.toggle("is-open",open);if(!open)g.scrollIntoView({block:"start"});});})();</script>
 <section data-reveal class="vf3lp-band vf3lp-band--soft"><div class="vf3lp-in"><p class="vf3lp-note">Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao"><strong>Nguyễn Quang Đạo</strong></a> · Nguồn dữ liệu: chính sách bảo hành Auto365, thông tin sản phẩm trên website và video thi công VF3 tại Auto365 · Cập nhật: <time datetime="2026-10-10">10/10/2026</time></p></div></section>
 <div class="vf3lp-khung" id="tu-van"><section class="nr-lead nr-lead--bar nr-lead--flush" data-js="nr-lead-root" data-hotline="0365365911" aria-labelledby="nr-lead-913156-title">
