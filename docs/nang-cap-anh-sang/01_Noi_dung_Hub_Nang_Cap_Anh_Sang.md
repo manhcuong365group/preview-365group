@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `12f2e20a1ffef3f10ab87055b2fe903f02a98fbb1f87d5b4c1488ec9256d1aea`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `5246ea5f17cc79526ab8d96301142290826afac36dfe8fe64979111c48a0d54c`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -15,16 +15,16 @@ Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Cập nhật nội dung 10/10
 
 _Danh mục 129 mẫu: xem 04_Master_Data_San_Pham_Hub_Anh_Sang.csv_
 
-## Xe thực tế nổi bật  `#cases`
+## Xe thực tế đã lắp tại Auto365  `#cases`
 
 _Xe thực tế: 24 case hiển thị sẵn + phần còn lại trong template (tổng 370)_
 
 ## Vì sao nên nâng cấp ánh sáng tại Auto365?  `#vi-sao`
 
 
-**Hệ thống 90+ chi nhánh toàn quốc**
+**90+ chi nhánh tại 33 tỉnh thành**
 
-Có mặt tại 33 tỉnh thành — dễ đưa xe đến kiểm tra trước khi lắp và quay lại bảo dưỡng, chỉnh đèn khi cần.
+Dễ đưa xe đến kiểm tra trước khi lắp, quay lại bảo dưỡng hoặc chỉnh đèn khi cần.
 
 
 **Bảo hành điện tử theo từng mẫu**
@@ -32,14 +32,14 @@ Có mặt tại 33 tỉnh thành — dễ đưa xe đến kiểm tra trước kh
 Thời hạn ghi rõ trên trang sản phẩm và phiếu bàn giao, tra cứu online được; hỗ trợ chỉnh lại vùng sáng trong thời gian bảo hành.
 
 
-**Kỹ thuật viên chuyên về đèn**
+**Kỹ thuật viên thi công đèn**
 
-Thi công đèn ô tô hằng ngày trên nhiều dòng xe — từ thay bóng, độ bi pha đến lắp bi gầm — hạn chế can thiệp vào kết cấu zin.
+Đã thi công trên nhiều dòng xe, từ thay bóng, nâng cấp bi pha đến lắp bi gầm; ưu tiên phương án ít can thiệp vào kết cấu zin.
 
 
 **Cân chỉnh vùng sáng trước bàn giao**
 
-Kiểm tra đường cắt Cos/Pha, hướng chiếu và cân bằng hai bên trên bảng test để hạn chế gây chói khi dùng đúng chế độ; bạn xem vùng sáng trước khi nhận xe.
+Kiểm tra đường cắt Cos/Pha, hướng chiếu và độ cân bằng hai bên trên bảng test để hạn chế chói; bạn xem vùng sáng trước khi nhận xe.
 
 
 **Đại lý ủy quyền chính hãng X-Light**
@@ -49,7 +49,7 @@ Kiểm tra đường cắt Cos/Pha, hướng chiếu và cân bằng hai bên tr
 
 **Tư vấn theo từng xe cụ thể**
 
-Kiểm tra cụm đèn zin, chân bóng và hệ điện 12V/24V trên xe trước khi đề xuất — không tư vấn chung chung theo ảnh.
+Kiểm tra cụm đèn zin, chân bóng và hệ điện 12V/24V trên xe rồi mới đề xuất cấu hình, thay vì tư vấn chung qua ảnh.
 
 
 **Auto365.vn - Trụ Sở Chính**
@@ -69,7 +69,7 @@ Hotline, Zalo
 
 **90+ chi nhánh · 33 tỉnh thành**
 
-Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
+Có mặt ở cả 3 miền Bắc – Trung – Nam
 
 01
 
@@ -109,7 +109,7 @@ Chóa được thiết kế theo vị trí dây tóc của đúng loại bóng z
 
 **Tấm chắn và thấu kính tạo đường cắt sáng**
 
-Projector dồn sáng xuống mặt đường với đường cắt (cutoff) sắc nét nên dễ kiểm soát chói. Bi zin halogen hoặc xenon có thể thay bằng Bi LED hay Bi Laser.
+Projector gom sáng xuống mặt đường với đường cắt (cutoff) rõ, nên dễ kiểm soát chói hơn. Bi zin halogen hoặc xenon có thể thay bằng Bi LED hay Bi Laser.
 
 - Thay bi chính bằng Bi LED hoặc Bi Laser — cùng kích thước lens chưa đủ; cần vừa thân đèn, pát, khoảng tản nhiệt và giắc của xe.
 - Hoặc dùng bóng LED cho bi halogen, tùy cấu tạo của bi zin.
@@ -138,7 +138,7 @@ Tổng lượng ánh sáng nguồn đèn phát ra. Lumen cao chưa chắc nhìn 
 
 **Lux (lx)**
 
-Độ rọi đo tại một điểm trên mặt đường — phản ánh ánh sáng thực sự tới nơi cần nhìn.
+Độ rọi đo tại một điểm trên mặt đường, cho biết lượng sáng tới vùng cần nhìn.
 
 
 **Nhiệt màu (K)**
@@ -218,7 +218,7 @@ Cách phòng tránh: Dán keo kín và kiểm tra sau thi công; xem lại trư�
 
 Nguyên nhân thường gặp: Quá nhiệt do tản nhiệt kém, quạt hỏng, nguồn cấp hoặc giắc lỏng.
 
-Cách phòng tránh: Chọn mẫu tản nhiệt tốt, đi dây có relay/cầu chì, kiểm tra quạt định kỳ.
+Cách phòng tránh: Chọn mẫu có tản nhiệt phù hợp, đi dây có relay/cầu chì và kiểm tra quạt định kỳ.
 
 
 **Hai bên sáng không đều**
@@ -241,14 +241,14 @@ Nên kiểm tra góc chiếu, độ kín keo, quạt tản nhiệt và giắc n�
 
 Trước khi chốt mẫu đèn, nên yêu cầu điểm thi công kiểm tra trực tiếp hốc đèn, giắc kết nối và hệ điện trên đúng xe — cùng một dòng xe nhưng khác đời hoặc phiên bản vẫn có thể khác cấu tạo. Ưu tiên nơi có ảnh hoặc video thi công thực tế trên xe tương tự, và hỏi rõ phương án cân chỉnh vùng sáng sau lắp.
 
-Nguyễn Quang Đạo · Chuyên gia đèn ô tô, Auto365
+Nguyễn Quang Đạo · Kiểm duyệt kỹ thuật đèn ô tô, Auto365
 
 
 | Nguồn sáng | Nguyên lý | Ưu điểm | Lưu ý |
 | --- | --- | --- | --- |
-| Halogen | Dây tóc nóng sáng trong bóng khí halogen | Rẻ, dễ thay, ánh vàng ấm | Tỏa nhiều nhiệt, tuổi thọ thấp, độ sáng hạn chế |
-| Xenon / HID | Hồ quang điện trong bóng khí xenon, cần ballast kích điện áp cao | Ánh sáng mạnh, phổ biến trên bi cầu đời cũ | Cần vài giây để đạt độ sáng tối đa; thêm ballast/bộ kích |
-| LED | Chip bán dẫn phát sáng trực tiếp | Bật sáng tức thì, tiêu thụ điện thấp hơn halogen ở mức sáng tương đương, nhỏ gọn | Nhạy nhiệt: cần quạt hoặc khối tản nhiệt nhôm/đồng tốt |
+| Halogen | Dây tóc nóng sáng trong bóng khí halogen | Rẻ, dễ thay, ánh vàng ấm | Tỏa nhiều nhiệt, tuổi thọ ngắn hơn LED, độ sáng hạn chế |
+| Xenon / HID | Hồ quang điện trong bóng khí xenon, cần ballast kích điện áp cao | Sáng hơn halogen, thường gặp trên bi cầu đời cũ | Cần vài giây để đạt độ sáng tối đa; thêm ballast/bộ kích |
+| LED | Chip bán dẫn phát sáng trực tiếp | Bật sáng tức thì, tiêu thụ điện thấp hơn halogen ở mức sáng tương đương, nhỏ gọn | Nhạy nhiệt: cần quạt hoặc khối tản nhiệt nhôm/đồng phù hợp |
 | Laser (trên bi Laser) | Diode laser kích lớp phosphor, thường chỉ dùng cho Pha; Cos vẫn là LED | Hỗ trợ tầm chiếu xa ở chế độ Pha | Giá cao; cần xác minh cấu hình laser thật theo hãng |
 
 ## Các nhóm nâng cấp ánh sáng khác nhau ở đâu?  `#so-sanh`
@@ -381,7 +381,7 @@ Bảo hành theo từng mã sản phẩm: thời hạn, phạm vi và điểm ti
 
 **Nguyễn Quang Đạo**
 
-Chuyên gia đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
+Kiểm duyệt kỹ thuật đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
 
 Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Cập nhật 10/10/2026
 
