@@ -66,4 +66,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `a09270023b3e6db8500ac461c3064b5e8c8aa2610e2eedd143e13bcb440ba3a4`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `06f54168080521d636305188c6c499d8fd494dc01387d533631679c7352fc5df`
