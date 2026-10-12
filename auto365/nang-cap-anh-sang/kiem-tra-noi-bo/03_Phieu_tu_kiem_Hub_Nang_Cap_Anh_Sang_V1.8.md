@@ -24,7 +24,7 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | RW-07 | Nguồn chưa có link | Luật 36/2024, NĐ 168, NĐ 238, IEC 60529 đều có link gốc | 02 mục 5 |
 | A02 | 90+ chi nhánh | Trang /chi-nhanh công bố 91 địa điểm, 33 tỉnh/thành (41/26/24) — khớp "90+" | auto365.vn/chi-nhanh |
 | A02 | "Chính hãng" X-Light | Căn cứ: 365Group phân phối chính hãng X-Light, Auto365 thuộc 365Group (chủ quản xác nhận 08/10); ảnh chứng nhận đại lý ghi rõ cơ sở áp dụng | Chứng nhận 01/01/2020 |
-| A04 / A11 | DOM nặng | Case từ thứ 25 vào `<template>`; DOM 7.178 → 4.154, ảnh 576 → 232; đo lại trên pages.dev 12/10/2026: LCP lab mobile 1,49 s, CLS 0,044 (cấu hình và log ở trang kiểm tra nội bộ) | 02 mục 7 |
+| A04 / A11 | DOM nặng | Case từ thứ 25 vào `<template>`; DOM 7.178 → 4.154, ảnh 576 → 232; đo lại trên pages.dev 12/10/2026: LCP lab mobile 1,37 s, CLS 0 (cấu hình và log ở trang kiểm tra nội bộ) | 02 mục 7 |
 | U1 | Trang dài | Gộp 4 khối kiến thức (cụm đèn zin, nguồn sáng, đọc thông số, lỗi thường gặp) vào 1 section accordion; giữ id cũ trên từng mục | HTML |
 | U2 | Lead test end-to-end | POST /api/leads từ cấu hình form của hub → {"success":true, lead_id 143, test:true}; chủ quản xác nhận đã thấy lead trong CRM (10/10/2026) | lead_id 143 — xoá khỏi CRM sau kiểm tra |
 | A05 | Thiếu `<main>` | Một `<main id="main-content">` + skip link | HTML |

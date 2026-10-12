@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `c1730aec946af078b8c985be451098009eeb9cad0341166b76688a220657f3e6`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `12f2e20a1ffef3f10ab87055b2fe903f02a98fbb1f87d5b4c1488ec9256d1aea`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -89,6 +89,10 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 Khảo sát xe: ướm mặt dưỡng vào hốc đèn gầm trước khi chốt cấu hình.
 
 Bàn giao: bi gầm lắp gọn trong hốc đèn nguyên bản, đã cân chỉnh vùng sáng.
+
+## Xem ánh sáng trên xe trước khi chọn  `#video`
+
+_Video: 12 video YouTube Auto365_
 
 ## Kiến thức cần nắm khi độ đèn  `#kien-thuc-nang-cap`
 
@@ -335,10 +339,6 @@ Lưu ý: Nội dung trên dùng để tham khảo nhanh. Quy định có thể t
 ## Tư vấn theo xe  `#tu-van`
 
 _Form tư vấn — xem 02 mục Lead_
-
-## Xem ánh sáng trên xe trước khi chọn  `#video`
-
-_Video: 12 video YouTube Auto365_
 
 ## Cẩm nang đèn & ánh sáng ô tô  `#cam-nang`
 
