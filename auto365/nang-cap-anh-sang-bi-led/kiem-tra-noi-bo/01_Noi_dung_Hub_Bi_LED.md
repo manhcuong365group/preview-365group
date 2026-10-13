@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `a588acb72f928a947bfd06c62e9a2281b85976dd2ee64dde2465197002dda0b0`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `3dee4cd9af875d18fddcb0512faf33996a2e62af97a9e6e954ba51cae82f798f`
 
 Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -113,9 +113,9 @@ Bi Laser · Bi LED Mini Bi Laser thường vẫn dùng LED cho Cos, bổ sung di
 
 So với đèn zinMức cải thiện thực tế phụ thuộc cụm đèn zin, mẫu bi và chất lượng thi công. Đổi lại cần mở cụm đèn, dán keo và cân chỉnh — xem lỗi thường gặp. Vùng Cos có đường cắt rõ, sáng đều mặt đườngPha xa hơn ngay trong cùng một biBật sáng tức thì, không cần thời gian khởi động như xenonChọn được nhiệt màu 3000K – 6000K hoặc bản 3 nhiệt màuTuổi thọ công bố phần lớn 30.000 giờ (theo nhà sản xuất)
 
-Cos và Pha của cùng một bi LED (AES EV2 Square, 5000K) trên đường thực tế: Cos có đường cắt, Pha soi xa hơn.
+Cos và Pha của cùng một bi LED (Titan Black 2026) trên đường thực tế: Cos có đường cắt, Pha soi xa hơn.
 
-Cấu tạo một bi LED projector: chóa, chip LED, khối đồng tản nhiệt và quạt — minh họa trên AES Turbo BM.
+Cấu tạo một bi LED projector: chóa phản xạ, cụm chip LED, quạt tản nhiệt và lens — minh họa trên mẫu Titan Black.
 
 So sánh bi LED với bi gầm, đèn trợ sáng và nguồn sáng Halogen/Xenon/Laser xem tại trang Nâng cấp ánh sáng.
 
@@ -139,7 +139,7 @@ Bi cầu zin (halogen / xenon) Cùng kích thước lens chưa đủ: cần vừ
 
 Theo 127 case bi LED đã đăng — bấm để xem xe thực tế. Cùng dòng xe vẫn có thể khác cụm đèn giữa các đời, nên đây là tham khảo; kỹ thuật viên xác nhận trên xe của bạn.Honda CR-V7Hyundai Santa Fe7Ford Ranger6Hyundai Accent5Mazda35Toyota Fortuner5VinFast VF85Hyundai Grand i104Toyota Camry4VinFast VF33Kia Cerato3Mitsubishi Xpander3Toyota Innova2Ford Everest2Honda HR-V2Mazda22
 
-Bi LED có chiều dài, quạt và khối tản nhiệt phía sau — kỹ thuật viên đo không gian cụm đèn trước khi chốt mẫu (ví dụ AES Turbo BM).
+Ví dụ xe halogen nâng cấp bi LED trong cụm đèn zin (Mazda 3, Titan Black).
 
 ### Chọn bi LED theo lens, nhiệt màu và thông số  `#chon-bi-led`
 
@@ -195,7 +195,7 @@ Một số mẫu bổ sung mắt trợ Pha, chế độ tăng sáng hoặc hai n
 
 07Phần lớn mẫu trên trang công bố 30.000 giờ, một số 50.000 giờ — là số liệu nhà sản xuất trong điều kiện tản nhiệt đúng.
 
-Trái: kích thước bi lens vuông (AES EV2 Square) — cần vừa cụm đèn và mặt dưỡng. Phải: cùng một mẫu ở 3000K – 4300K – 6000K (AES Turbo BM 3 nhiệt màu): nhiệt màu đổi sắc ánh sáng, không phải độ sáng.
+Trái: cùng mẫu bi có bản lens tròn và lens vuông. Phải: cấu hình chóa và chip LED 6+1 bên trong bi.
 
 ### Lỗi thường gặp sau khi độ bi LED và cách phòng tránh  `#loi-thuong-gap`
 

@@ -21,9 +21,6 @@ Ngày: 13/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | BL-13 | Trả góp / khuyến mãi (đối thủ có) | Không có trang/chương trình trả góp trên auto365.vn (/tra-gop 404) → không nêu | — |
 | U2 | Lead test end-to-end | POST /api/leads theo cấu hình form → {"success":true, lead_id 162, test:true}; source_page sửa thành nang-cap-anh-sang-bi-led | Log kiểm thử |
 | BL-14 | Chữ khối "Vì sao" còn từ claim ("toàn quốc", "chuyên về đèn", "hằng ngày") | Đồng bộ 6 thẻ theo bản hub đã duyệt 13/10/2026 | HTML #vi-sao |
-| BL-15 | Ảnh Titan Black mang logo X-Light (dễ nhầm thương hiệu) | Thay 6 ảnh kiến thức bằng ảnh từ PDP AES (EV2 Square, Turbo BM); xoá file cũ | HTML #kien-thuc-nang-cap |
-| BL-16 | 86/106 tên viết HOA toàn bộ, lẫn với tên thường | Chuẩn hoá tên trên card, alt, nút so sánh, bảng thông số và schema Product (giữ mã/viết tắt: LED, AES, GTR, V20, CB150, 24V…) | HTML + JSON-LD + 04 |
-| BL-17 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 13/10/2026; schema lastReviewed/dateModified 2026-10-13, khớp dòng "Duyệt và cập nhật 13/10/2026" | 02 mục 2 |
 
 ## Giữ theo quyết định chủ quản
