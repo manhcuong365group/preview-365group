@@ -12,7 +12,7 @@
 
 | Dữ kiện | Giá trị | Nguồn / trạng thái |
 |---|---|---|
-| Mẫu đèn | 14 mẫu lens 3.0 inch. Bảng so sánh 7 mẫu chính: GTR G1 Turbo V2, X-Light F10 Turbo V2, X-Light 301 V2, AES SV 3.0 Pro, X-Light F10 Pro V2, X-Light X3 Ultra, AES SV 3.0 Max. Thêm 7 mẫu theo PDP auto365.vn 13/10/2026: X-Light X3 Pro 5,0tr, GTR G1 Ultra 5,5tr, Henvvei GT-1 5,8tr, Red Lighting R8 Spyder 5,5tr, Matrix Light M1 Pro 4,0tr, Fogway Gen 1 4,0tr, Titan 301 3,5tr | Chủ quản 13/10/2026: "các mẫu 3.0 inch lắp được cho VF6 và VF7". Bỏ F10 2.0 New và SV 2.0 Max; thêm các mẫu 3.0 inch theo yêu cầu chủ quản |
+| Mẫu đèn | 14 mẫu lens 3.0 inch. Bảng so sánh 8 mẫu chính: GTR G1 Turbo V2, X-Light F10 Turbo V2, X-Light 301 V2, AES SV 3, X-Light X3 Pro (thông số PDP: ~40W/~55W, 3000/4300/5500K, 24 tháng).0 Pro, X-Light F10 Pro V2, X-Light X3 Ultra, AES SV 3.0 Max. Thêm 7 mẫu theo PDP auto365.vn 13/10/2026: X-Light X3 Pro 5,0tr, GTR G1 Ultra 5,5tr, Henvvei GT-1 5,8tr, Red Lighting R8 Spyder 5,5tr, Matrix Light M1 Pro 4,0tr, Fogway Gen 1 4,0tr, Titan 301 3,5tr | Chủ quản 13/10/2026: "các mẫu 3.0 inch lắp được cho VF6 và VF7". Bỏ F10 2.0 New và SV 2.0 Max; thêm các mẫu 3.0 inch theo yêu cầu chủ quản |
 | Giá | 3.500.000–6.000.000đ/bộ đèn, chưa VAT | 7 mẫu chính dùng bảng giá đã chốt cho VF3 (10/10/2026); 7 mẫu thêm lấy giá PDP — **cần Kinh doanh xác nhận** |
 | Bằng chứng trên VF6 | X-Light F10 Turbo V2: 1 video + 2 bài case VF6; GTR G1 Turbo V2: 1 bài case VF6 | Bài có sẵn trên auto365.vn |
 | Video | 1 video: Giải pháp tăng sáng VinFast VF6 (YouTube k7jZofGkGhQ) | auto365.vn |
@@ -27,4 +27,4 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (13/10/2026): `09b29192fb1b3a694ed11cfc8ca92ff5eb4626fdbb9ecbdf3e5d6bea2e41fcbe`
+SHA-256 `index.html` (13/10/2026): `2b04619d636ca64f1fed182c6cc80a35f517c471b68a33068aec2a6ae4ac1e27`
