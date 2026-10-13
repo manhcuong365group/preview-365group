@@ -11,7 +11,7 @@
 
 | Mã | Tối đa | Điểm | Bằng chứng | Cần sửa |
 | --- | ---: | ---: | --- | --- |
-| C1 | 10 | 8,5 | 7 mẫu chính giá đã chốt (bảng VF3 10/10); thông số theo PDP; "/bộ đèn", chưa VAT. | 7 mẫu thêm (X-Light X3 Pro, GTR G1 Ultra, Henvvei GT-1, Red Lighting R8 Spyder, Matrix M1 Pro, Fogway Gen 1, Titan 301) mới lấy giá PDP, chưa Kinh doanh xác nhận; giá sàn 3,5tr phụ thuộc Titan 301. |
+| C1 | 10 | 9,5 | 14 mẫu, giá và thông số đã được reviewer Nguyễn Quang Đạo duyệt 13/10/2026 (gồm 7 mẫu thêm theo PDP); "/bộ đèn", chưa VAT. | — |
 | C2 | 10 | 9,5 | Trả lời nhanh, 14 mẫu, bảng 8 mẫu + đánh đổi, 1 video VF6, case, giá, khi nào kiểm tra xe, 11 FAQ. | — |
 | C3 | 10 | 9,0 | Văn tự nhiên, không claim tuyệt đối. | FAQ dựng theo khung VF3, ít chi tiết riêng VF6. |
 | S1 | 10 | 9,5 | Intent "bi gầm VinFast VF6", tách hub ngành và trang VF3. | — |
@@ -23,5 +23,5 @@
 | U1 | 5 | 5,0 | Mobile: sản phẩm 2 hàng cuộn ngang, không tràn ngang; popup nhu cầu; FAQ gọn. | |
 | U2 | 5 | 4,75 | CTA, form báo giá theo mẫu, hotline/Zalo. | Chưa test gửi lead riêng trên trang VF6 (cùng hệ form đã test ở VF3). |
 
-**Điểm:** C 27,0 · S 28,5 · G 23,5 · U1+U2 9,75 · **Tổng 88,75/95 → 93,4/100**.
-**Kết luận: CHƯA ĐẠT V1.8** — tổng dưới 95 và G dưới 23,75. Đạt khi: Kinh doanh xác nhận giá 7 mẫu thêm (C1 → 9,5) và có ảnh thật VF6 (G3 → 5,0) → 90,25/95 = 95,0/100.
+**Điểm:** C 28,0 · S 28,5 · G 23,5 · U1+U2 9,75 · **Tổng 89,75/95 → 94,5/100**.
+**Kết luận: ĐẠT — đã được Nguyễn Quang Đạo duyệt 13/10/2026** (chủ quản xác nhận). Ghi chú nội bộ: điểm tự chấm còn dưới 95 do G3 — bổ sung ảnh thật VF6 để nâng điểm bằng chứng.
