@@ -19,6 +19,8 @@ Ngày: 13/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | BL-11 | Video ít | 16 clip bi LED ô tô kênh Auto365, 8 hiển thị sẵn | HTML #video |
 | BL-12 | Ảnh khối "Vì sao" và kiến thức | Thay 4 ảnh "Vì sao" theo ảnh chủ quản gửi; mỗi mục kiến thức có ảnh | HTML |
 | BL-13 | Trả góp / khuyến mãi (đối thủ có) | Không có trang/chương trình trả góp trên auto365.vn (/tra-gop 404) → không nêu | — |
+| U2 | Lead test end-to-end | POST /api/leads theo cấu hình form → {"success":true, lead_id 162, test:true}; source_page sửa thành nang-cap-anh-sang-bi-led | Log kiểm thử |
+| BL-14 | Chữ khối "Vì sao" còn từ claim ("toàn quốc", "chuyên về đèn", "hằng ngày") | Đồng bộ 6 thẻ theo bản hub đã duyệt 13/10/2026 | HTML #vi-sao |
 | C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 13/10/2026; schema lastReviewed/dateModified 2026-10-13, khớp dòng "Duyệt và cập nhật 13/10/2026" | 02 mục 2 |
 
 ## Giữ theo quyết định chủ quản
@@ -35,6 +37,6 @@ Ngày: 13/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Việc | Người | Ghi chú |
 | --- | --- | --- |
 | Nghiệm thu production | IT/SEO | Checklist 02 mục 6 |
-| Lead test end-to-end | IT | Chưa gửi lead test từ trang này (preview không gọi CRM) |
+| Xác nhận lead 162 trong CRM rồi xoá | Chủ quản/IT | Lead test gửi 13/10/2026 |
 | 301 bài blog bảng giá bi LED cũ | SEO/CMS | 02 mục 1 |
 | Đo lab lại trên pages.dev | SEO | Số hiện tại đo trên preview cục bộ |

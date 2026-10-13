@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `3f64ca71af2723a2ad976297e4e0e4b6e14b80405d13dcee8efd92f7a4dbc8e5`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `3dee4cd9af875d18fddcb0512faf33996a2e62af97a9e6e954ba51cae82f798f`
 
 Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -22,21 +22,21 @@ _Xe thực tế: 127 case bi LED (24 hiển thị sẵn + template)_
 
 ## Vì sao nên lắp bi LED tại Auto365?  `#vi-sao`
 
-**Hệ thống 90+ chi nhánh toàn quốc**
+**90+ chi nhánh tại 33 tỉnh thành**
 
-Có mặt tại 33 tỉnh thành — dễ đưa xe đến kiểm tra trước khi lắp và quay lại bảo dưỡng, chỉnh đèn khi cần.
+Dễ đưa xe đến kiểm tra trước khi lắp, quay lại bảo dưỡng hoặc chỉnh đèn khi cần.
 
 **Bảo hành điện tử theo từng mẫu**
 
 Thời hạn ghi rõ trên trang sản phẩm và phiếu bàn giao, tra cứu online được; hỗ trợ chỉnh lại vùng sáng trong thời gian bảo hành.
 
-**Kỹ thuật viên chuyên về đèn**
+**Kỹ thuật viên thi công đèn**
 
-Thi công đèn ô tô hằng ngày trên nhiều dòng xe — từ thay bóng, độ bi pha đến lắp bi gầm — hạn chế can thiệp vào kết cấu zin.
+Đã thi công trên nhiều dòng xe, từ thay bóng, nâng cấp bi pha đến lắp bi gầm; ưu tiên phương án ít can thiệp vào kết cấu zin.
 
 **Cân chỉnh vùng sáng trước bàn giao**
 
-Kiểm tra đường cắt Cos/Pha, hướng chiếu và cân bằng hai bên trên bảng test để hạn chế gây chói khi dùng đúng chế độ; bạn xem vùng sáng trước khi nhận xe.
+Kiểm tra đường cắt Cos/Pha, hướng chiếu và độ cân bằng hai bên trên bảng test để hạn chế chói; bạn xem vùng sáng trước khi nhận xe.
 
 **Đại lý ủy quyền chính hãng X-Light**
 
@@ -44,7 +44,7 @@ Kiểm tra đường cắt Cos/Pha, hướng chiếu và cân bằng hai bên tr
 
 **Tư vấn theo từng xe cụ thể**
 
-Kiểm tra cụm đèn zin, chân bóng và hệ điện 12V/24V trên xe trước khi đề xuất — không tư vấn chung chung theo ảnh.
+Kiểm tra cụm đèn zin, chân bóng và hệ điện 12V/24V trên xe rồi mới đề xuất cấu hình, thay vì tư vấn chung qua ảnh.
 
 **Auto365.vn - Trụ Sở Chính**
 

@@ -66,15 +66,15 @@ Thứ tự H2: Gợi ý bi LED theo xe → Bi LED đang có tại Auto365 → Xe
 - [ ] Bỏ `<meta name="robots" content="noindex,nofollow">`; kiểm `X-Robots-Tag`, robots.txt, WAF không chặn Googlebot/OAI-SearchBot.
 - [ ] Ảnh trong `hinh/` đưa lên CDN auto365.vn, giữ tên file và alt.
 - [ ] Rich Results Test: BreadcrumbList, ItemList/Product, FAQPage không lỗi.
-- [ ] Form gửi tới `/api/leads` trên domain thật; chỉ báo thành công khi phản hồi `{"success": true}`; gửi 1 lead test và xoá trong CRM.
+- [ ] Form gửi tới `/api/leads` trên domain thật; chỉ báo thành công khi phản hồi `{"success": true}`. Lead test 162 đã gửi 13/10/2026 từ cấu hình form preview — xác nhận trong CRM rồi xoá.
 - [ ] Xoá `<aside id="internal-check">` + script đi kèm; không đưa thư mục `kiem-tra-noi-bo/` lên production.
 - [ ] Quyết định 301 cho 3 bài blog bảng giá bi LED (mục 1).
 
 ## 7. Đo lab trên preview
 
-Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-13T12:14:55.608Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
+Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-13T12:26:54.175Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
 
 | Cấu hình | Giới hạn | LCP | CLS | Load | Truyền tải | Request | DOM |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 1.05 s | 0.030 | 5.27 s | 1333 KB | 20 | 4695 |
-| desktop 1440 | không giới hạn | 0.26 s | 0.001 | 0.45 s | 2124 KB | 38 | 4695 |
+| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 0.90 s | 0.031 | 5.50 s | 1388 KB | 20 | 4695 |
+| desktop 1440 | không giới hạn | 0.26 s | 0.001 | 0.43 s | 2124 KB | 38 | 4695 |
