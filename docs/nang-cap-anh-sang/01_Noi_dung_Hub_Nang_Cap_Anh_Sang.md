@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `c37b43a584bf2072604211d65ec93d78d9bb6f8d1490db64c07f129ff4deb3aa`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `9d3cfbbe005f368eda5336dc51f99f23f0a4101162eaf520159e1e1a5d4e107f`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -316,9 +316,7 @@ Nguồn: Cổng thông tin Chính phủ
 
 **Lắp thêm đèn cần đối chiếu quy định nào?**
 
-Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP quy định xử lý hành vi điều khiển xe lắp thêm đèn ở phía trước, phía sau, trên nóc, dưới gầm, một hoặc hai bên thành xe, trừ trường hợp thuộc ngoại lệ theo quy định hiện hành.
-
-Mức phạt tham khảo: 1–2 triệu đồng và trừ 2 điểm GPLX đối với trường hợp thuộc hành vi áp dụng. Cần đối chiếu văn bản hiện hành trước khi áp dụng cho một cấu hình lắp cụ thể.
+Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP có quy định về việc lắp thêm đèn ở phía trước, phía sau, trên nóc, dưới gầm, một hoặc hai bên thành xe, kèm các trường hợp ngoại lệ. Vì vậy, đèn bổ sung nên được tư vấn vị trí lắp, phương án đi dây và cách sử dụng ngay từ đầu, rồi đối chiếu văn bản hiện hành cho cấu hình cụ thể.
 
 Toàn văn Nghị định 168/2024/NĐ-CP
 
@@ -374,7 +372,7 @@ Bảo hành theo từng mã sản phẩm: thời hạn, phạm vi và điểm ti
 
 **Lắp thêm đèn trợ sáng, đèn gầm cần lưu ý gì về quy định?**
 
-Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP có quy định xử lý việc lắp thêm đèn ngoài thiết kế của xe; đèn sương mù dạng rời được lắp theo quy định là trường hợp được loại trừ. Nghị định 238/2026/NĐ-CP sửa đổi một số điều của Nghị định 168 nhưng không thay đổi quy định này. Trước khi lắp, nên được tư vấn vị trí lắp, phương án đi dây và cách sử dụng để đèn bổ sung đúng quy định.
+Điểm a khoản 3 Điều 13 Nghị định 168/2024/NĐ-CP có quy định về việc lắp thêm đèn ngoài thiết kế của xe, trong đó đèn sương mù dạng rời được lắp theo quy định là trường hợp ngoại lệ. Nghị định 238/2026/NĐ-CP sửa đổi một số điều của Nghị định 168 nhưng không thay đổi quy định này. Trước khi lắp, nên được tư vấn vị trí lắp, phương án đi dây và cách sử dụng để đèn bổ sung đúng quy định.
 
 ## kiem-duyet  `#kiem-duyet`
 
