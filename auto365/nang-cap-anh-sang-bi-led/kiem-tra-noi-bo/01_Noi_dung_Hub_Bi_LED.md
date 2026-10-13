@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `f87ac69f15195ddf64d702d27b67ad758fcf79b4914a6e96157a6b1d00907845`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `ce74eeb5ce6ce872129a1acf512e02cd62a48b2ab3c6c0a35e6811b54fb5fdb8`
 
 Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -113,7 +113,7 @@ Bi Laser · Bi LED Mini Bi Laser thường vẫn dùng LED cho Cos, bổ sung di
 
 So với đèn zinMức cải thiện thực tế phụ thuộc cụm đèn zin, mẫu bi và chất lượng thi công. Đổi lại cần mở cụm đèn, dán keo và cân chỉnh — xem lỗi thường gặp. Vùng Cos có đường cắt rõ, sáng đều mặt đườngPha xa hơn ngay trong cùng một biBật sáng tức thì, không cần thời gian khởi động như xenonChọn được nhiệt màu 3000K – 6000K hoặc bản 3 nhiệt màuTuổi thọ công bố phần lớn 30.000 giờ (theo nhà sản xuất)
 
-Cos và Pha của cùng một bi LED (Titan Black 2026) trên đường thực tế: Cos có đường cắt, Pha soi xa hơn.
+BMW 3 F30 sau khi lắp bi LED AES Turbo BM: bi projector nằm gọn trong cụm đèn pha zin, đường cắt Cos rõ.
 
 So sánh bi LED với bi gầm, đèn trợ sáng và nguồn sáng Halogen/Xenon/Laser xem tại trang Nâng cấp ánh sáng.
 
@@ -137,7 +137,7 @@ Bi cầu zin (halogen / xenon) Cùng kích thước lens chưa đủ: cần vừ
 
 Theo 127 case bi LED đã đăng — bấm để xem xe thực tế. Cùng dòng xe vẫn có thể khác cụm đèn giữa các đời, nên đây là tham khảo; kỹ thuật viên xác nhận trên xe của bạn.Honda CR-V7Hyundai Santa Fe7Ford Ranger6Hyundai Accent5Mazda35Toyota Fortuner5VinFast VF85Hyundai Grand i104Toyota Camry4VinFast VF33Kia Cerato3Mitsubishi Xpander3Toyota Innova2Ford Everest2Honda HR-V2Mazda22
 
-Ví dụ xe halogen nâng cấp bi LED trong cụm đèn zin (Mazda 3, Titan Black).
+Cặp bi LED đặt trong cụm đèn pha BMW 3 F30 đã mở — kích thước bi phải vừa không gian bên trong cụm đèn.
 
 ### Chọn bi LED theo lens, nhiệt màu và thông số  `#chon-bi-led`
 
@@ -193,7 +193,7 @@ Một số mẫu bổ sung mắt trợ Pha, chế độ tăng sáng hoặc hai n
 
 07Phần lớn mẫu trên trang công bố 30.000 giờ, một số 50.000 giờ — là số liệu nhà sản xuất trong điều kiện tản nhiệt đúng.
 
-Trái: cùng mẫu bi có bản lens tròn và lens vuông. Phải: cấu hình chóa và chip LED 6+1 bên trong bi.
+Cùng một vị trí test ở 3000K – 4300K – 6000K: nhiệt màu đổi sắc ánh sáng, không phải độ sáng.
 
 ### Lỗi thường gặp sau khi độ bi LED và cách phòng tránh  `#loi-thuong-gap`
 
@@ -223,7 +223,7 @@ Dấu hiệu: sáng giảm sau thời gian chạy, quạt kêu hoặc không qua
 
 Dấu hiệu: báo lỗi bóng hoặc đèn nháy sau khi lắp bi.Phòng tránh: dùng decoder phù hợp với xe, không tự gắn điện trở tải.Đọc hướng dẫn chi tiết →
 
-Bi cần khoảng trống phía sau cụm đèn để quạt và khối tản nhiệt làm việc — thiếu chỗ là nguyên nhân thường gặp của sáng yếu dần.
+Cố định bi thẳng trục bằng pát trước khi dán keo — bước quyết định đường cắt, độ kín và độ bền sau lắp.
 
 ### Các thương hiệu bi LED tại Auto365  `#thuong-hieu`
 
@@ -269,7 +269,7 @@ Số mẫu và khoảng giá tính theo danh mục trên trang (giá niêm yết
 
 1 mẫu · Liên hệXem mẫu Tirtim →
 
-Mỗi hãng có nhiều đời sản phẩm — ví dụ Titan Black 2021, 2.0 và 2026 — nên so theo thông số từng đời.
+Mercedes C300 lắp bi LED X-Light V20 — mỗi hãng có nhiều dòng và đời sản phẩm khác nhau.
 
 > QĐ Trước khi chốt mẫu bi, nên yêu cầu kiểm tra trực tiếp không gian trong cụm đèn, khoảng tản nhiệt phía sau và giắc kết nối trên đúng xe — cùng một dòng xe nhưng khác đời hoặc phiên bản vẫn có thể khác chóa. Hỏi rõ phương án pát, mặt dưỡng và cách cân chỉnh đường cắt Cos sau lắp.Nguyễn Quang Đạo · Chuyên gia đèn ô tô, Auto365
 
