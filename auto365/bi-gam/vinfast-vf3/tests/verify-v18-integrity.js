@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const html = fs.readFileSync('auto365/bi-gam/vinfast/vf3/index.html', 'utf8');
-const data = fs.readFileSync('auto365/bi-gam/vinfast/vf3/data/vf3.json', 'utf8');
+const html = fs.readFileSync('auto365/bi-gam/vinfast-vf3/index.html', 'utf8');
+const data = fs.readFileSync('auto365/bi-gam/vinfast-vf3/data/vf3.json', 'utf8');
 const combined = `${html}\n${data}`;
 
 const mustContain = [
@@ -105,10 +105,10 @@ if (htmlStill.length) {
 
 // Check physical image files exist
 const requiredImages = [
-  'auto365/bi-gam/vinfast/vf3/hinh/bi-gam-vinfast-vf3-muc-dich-tang-sang.png',
-  'auto365/bi-gam/vinfast/vf3/hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
-  'auto365/bi-gam/vinfast/vf3/hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
-  'auto365/bi-gam/vinfast/vf3/hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png'
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-muc-dich-tang-sang.png',
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-cau-hinh-phu-hop.png',
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-ky-thuat-lap-dat.png',
+  'auto365/bi-gam/vinfast-vf3/hinh/bi-gam-vinfast-vf3-trai-nghiem-thuc-te.png'
 ];
 
 for (const imgPath of requiredImages) {
@@ -118,8 +118,8 @@ for (const imgPath of requiredImages) {
 }
 
 const requiredHandoffFiles = [
-  'auto365/bi-gam/vinfast/vf3/02_Huong_dan_CMS_SEO_Bi_Gam_VinFast_VF3_V1.8.md',
-  'auto365/bi-gam/vinfast/vf3/03_Phieu_danh_gia_Bi_Gam_VinFast_VF3_V1.8.md'
+  'auto365/bi-gam/vinfast-vf3/02_Huong_dan_CMS_SEO_Bi_Gam_VinFast_VF3_V1.8.md',
+  'auto365/bi-gam/vinfast-vf3/03_Phieu_danh_gia_Bi_Gam_VinFast_VF3_V1.8.md'
 ];
 
 const missingHandoffFiles = requiredHandoffFiles.filter((file) => !fs.existsSync(file));

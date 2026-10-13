@@ -1,9 +1,9 @@
 # Hướng Dẫn CMS/SEO — Bi Gầm VinFast VF3 V1.8
 
 Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8  
-Bản nguồn: `auto365/bi-gam/vinfast/vf3/index.html` (phiên bản 10/10/2026)  
+Bản nguồn: `auto365/bi-gam/vinfast-vf3/index.html` (phiên bản 10/10/2026)  
 URL canonical đang khai báo: `https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3` — **CX:** `data/vf3.json` ghi `https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3`; SEO chốt domain production trước khi đăng.  
-URL preview: `https://preview-365group.pages.dev/bi-gam/vinfast/vf3/` (noindex có chủ đích của staging, §9.4)  
+URL preview: `https://preview-365group.pages.dev/bi-gam/vinfast-vf3/` (noindex có chủ đích của staging, §9.4)  
 Ngày kiểm hồ sơ: 10/10/2026, Asia/Saigon
 
 ## Phạm vi
