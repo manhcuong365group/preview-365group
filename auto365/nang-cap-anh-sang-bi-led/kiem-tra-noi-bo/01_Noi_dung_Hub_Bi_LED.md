@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `e90c89dda26ca3df39e7fff12365f3ec2286fcd768c11f6019dc9860ac7bfa68`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `9a0ab3ecacb25bcc84cec5a90c3db18c93f8ff2ff7b36138cf13fa2bfddbeb11`
 
 Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -114,8 +114,6 @@ Bi Laser · Bi LED Mini Bi Laser thường vẫn dùng LED cho Cos, bổ sung di
 So với đèn zinMức cải thiện thực tế phụ thuộc cụm đèn zin, mẫu bi và chất lượng thi công. Đổi lại cần mở cụm đèn, dán keo và cân chỉnh — xem lỗi thường gặp. Vùng Cos có đường cắt rõ, sáng đều mặt đườngPha xa hơn ngay trong cùng một biBật sáng tức thì, không cần thời gian khởi động như xenonChọn được nhiệt màu 3000K – 6000K hoặc bản 3 nhiệt màuTuổi thọ công bố phần lớn 30.000 giờ (theo nhà sản xuất)
 
 Cos và Pha của cùng một bi LED (Titan Black 2026) trên đường thực tế: Cos có đường cắt, Pha soi xa hơn.
-
-Cấu tạo một bi LED projector: chóa phản xạ, cụm chip LED, quạt tản nhiệt và lens — minh họa trên mẫu Titan Black.
 
 So sánh bi LED với bi gầm, đèn trợ sáng và nguồn sáng Halogen/Xenon/Laser xem tại trang Nâng cấp ánh sáng.
 
