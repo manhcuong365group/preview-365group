@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `e63342a6f48c5e4745971a5063a8cb85cc6b648215d0c0ba5206f01fe440c190`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `f87ac69f15195ddf64d702d27b67ad758fcf79b4914a6e96157a6b1d00907845`
 
 Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
