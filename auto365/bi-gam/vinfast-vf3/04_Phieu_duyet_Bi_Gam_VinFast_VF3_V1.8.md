@@ -56,6 +56,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 12/10/2026 | Thay ảnh 5 thẻ "Lý do chọn" bằng ảnh VF3 do chủ quản gửi (chi nhánh, tra cứu bảo hành, lắp đặt, phiếu bàn giao, bảng giá); alt ghi "Ảnh minh họa"; giữ ảnh chứng nhận đại lý | Theo yêu cầu chủ quản |
 | 12/10/2026 | Viết lại câu trả lời nhanh ở hero (trả lời thẳng nhu cầu, nêu hãng X-Light/GTR/AES, giá từ 4,5 triệu/bộ chưa VAT) | Theo yêu cầu chủ quản |
 | 12/10/2026 | Bảng so sánh: thêm "~" công suất X3 Ultra; cột "Trên VF3" thêm link "Xem case VF3" (GTR) và nút "Kiểm tra cấu hình" mở form báo giá đúng mẫu (8 mẫu còn lại) — theo phiếu nghiệm thu | Theo yêu cầu chủ quản |
+| 13/10/2026 | Khối video VF3 đổi tên "Video và case thi công…", thêm bài case "VinFast VF3 2025 Plus lắp bi gầm GTR G1 Turbo V2" (auto365.vn); bỏ câu ghi chú case VinFast khác | Theo yêu cầu chủ quản |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -71,4 +72,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `37a29d94bb87359d75898624c8d1a02631d60e0851789ddb014b24de73d7bfe7`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `93aa6da558517371cd72bac91aefe5c4e40ec200d00fb25c4f12cde09a60415c`
