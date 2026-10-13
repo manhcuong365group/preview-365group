@@ -20,7 +20,7 @@ const mustContain = [
   'Phạm vi pháp lý',
   'Việc chấp nhận khi kiểm định phụ thuộc cấu hình thực tế',
   'Chọn điểm Auto365 có dịch vụ nâng cấp ánh sáng và xác nhận cấu hình trước khi đặt lịch',
-  'Xe VinFast khác đã lắp bi gầm tại Auto365',
+  'Xe VinFast đã lắp bi gầm tại Auto365',
   'VinFast VF3 lắp GTR G1 Turbo V2 tại Auto365',
   'VinFast VF7 Plus 2025 lắp X-Light F10 Turbo V2 5500K',
   'https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k',
