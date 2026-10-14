@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `fd3cb6ba545c60c3b64420d568aa15ff4e2bd34fc5dfac46a92f8de8d74322c8`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `3dbfe6e33892b373af7137f2fe4f9d340abf071dd82fbce58c432852ef233d18`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
