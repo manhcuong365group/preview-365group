@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `9d3cfbbe005f368eda5336dc51f99f23f0a4101162eaf520159e1e1a5d4e107f`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `c0eef0304c11abc8ce28e191f73310308cbfbda60f4a852c5aaed735cbad5005`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -260,7 +260,7 @@ Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhó
 | --- | --- | --- | --- | --- | --- |
 | Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Cụm đèn, pát, nhiệt, căn chỉnh | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → |
 | Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Quang học, không gian lắp, nhiệt | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → |
-| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Kích thước chóa, chân H4, tản nhiệt | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F-15 V2Xem danh mục → |
+| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Kích thước chóa, chân H4, tản nhiệt | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F15Xem danh mục → |
 | Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Hốc gầm, lens, hệ điện, nhiệt màu | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → |
 | Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Vị trí pát, góc chiếu, hệ điện | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → |
 | Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Chân bóng, Canbus, tản nhiệt | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → |
