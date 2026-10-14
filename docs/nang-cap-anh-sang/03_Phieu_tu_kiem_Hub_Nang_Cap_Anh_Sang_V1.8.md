@@ -28,6 +28,7 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | U1 | Trang dài | Gộp 4 khối kiến thức (cụm đèn zin, nguồn sáng, đọc thông số, lỗi thường gặp) vào 1 section accordion; giữ id cũ trên từng mục | HTML |
 | U2 | Lead test end-to-end | POST /api/leads từ cấu hình form của hub → {"success":true, lead_id 143, test:true}; chủ quản xác nhận đã thấy lead trong CRM (10/10/2026) | lead_id 143 — xoá khỏi CRM sau kiểm tra |
 | AS-07 (bổ sung 12/10) | Câu chữ claim | Bỏ "nổi bật", "toàn quốc", "chuyên gia", "sắc nét", "tốt"; 7 tiêu đề case có "siêu khủng/cực đỉnh/đỉnh cao/đầu tiên tại Việt Nam/lên đến 100 triệu" đổi về tiêu đề trung tính theo xe + hạng mục; tiêu đề cẩm nang bỏ "triệt để/trình làng/siêu phẩm"; jobTitle reviewer = "Kiểm duyệt kỹ thuật đèn ô tô" (khớp hiển thị) | HTML + JSON-LD |
+| V2-11 / A04 / A05 (14/10) | Lựa chọn chưa nối với bằng chứng; quy trình chỉ có tên bước | Bảng 7 nhóm thêm cột "Xe thực tế" (case mới nhất của nhóm + số case); tên mẫu tạo mốc link tới PDP; 7 bước có đầu ra từng bước; dòng "Trước khi chọn nhóm nào cũng cần kiểm" dưới bảng | HTML |
 | A05 | Thiếu `<main>` | Một `<main id="main-content">` + skip link | HTML |
 | U3 | Bộ bàn giao | 01 Nội dung (xuất tự động, có SHA-256) + 02 CMS/SEO + 03 phiếu này + 04 Master Data cùng phiên bản | docs/nang-cap-anh-sang/ (nội bộ) |
 | A01 / RW-05 | Khóa giá/VAT/đơn vị | Chủ quản xác nhận 10/10/2026: giá, VAT, đơn vị như PDP là đúng; 129 dòng Master Data đánh dấu đã xác nhận | 04_Master_Data |
