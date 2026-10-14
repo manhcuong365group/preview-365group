@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `12c569fffc96b4be503537b6ff9d1b0e5660989fbb98df30d832e3be595249c9`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `e91e0afb34736d970d8e38bdf7a029478c38ddd5039dca7af8be6a562c1750fc`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -55,8 +55,6 @@ Kiểm tra cụm đèn zin, chân bóng và hệ điện 12V/24V trên xe rồi 
 **Auto365.vn - Trụ Sở Chính**
 
 4/4/1/7 Đường số 3, P. Hiệp Bình, TP. Hồ Chí Minh
-
-Thuộc hệ sinh thái 365Group — điểm tư vấn, lắp đặt và hỗ trợ bảo hành các dòng đèn theo nhu cầu sử dụng thực tế của từng xe.
 
 8:30 – 18:30
 
@@ -256,15 +254,15 @@ Nguyễn Quang Đạo · Kiểm duyệt kỹ thuật đèn ô tô, Auto365
 Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
 
 
-| Nhóm | Vị trí | Phù hợp | Điểm mạnh | Cần kiểm tra | Giá sản phẩm |
-| --- | --- | --- | --- | --- | --- |
-| Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Cụm đèn, pát, nhiệt, căn chỉnh | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → |
-| Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Quang học, không gian lắp, nhiệt | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → |
-| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Kích thước chóa, chân H4, tản nhiệt | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F15Xem danh mục → |
-| Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Hốc gầm, lens, hệ điện, nhiệt màu | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → |
-| Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Vị trí pát, góc chiếu, hệ điện | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → |
-| Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Chân bóng, Canbus, tản nhiệt | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → |
-| Đèn trợ sáng | Vị trí phụ trợ | Đường tối, off-road | Spot / Flood theo mục đích | Vị trí lắp, IP, hệ điện, mục đích sử dụng | Từ 1.200.000đ/bộMẫu: ĐÈN TRỢ SÁNG TITAN MOTO M10 PLUSXem danh mục → |
+| Nhóm | Vị trí | Phù hợp | Điểm mạnh | Giá sản phẩm |
+| --- | --- | --- | --- | --- |
+| Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → |
+| Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → |
+| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F15Xem danh mục → |
+| Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → |
+| Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → |
+| Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → |
+| Đèn trợ sáng | Vị trí phụ trợ | Đường tối, off-road | Spot / Flood theo mục đích | Từ 1.200.000đ/bộMẫu: ĐÈN TRỢ SÁNG TITAN MOTO M10 PLUSXem danh mục → |
 
 ## Lắp đúng – chiếu đúng – dùng đúng  `#phap-ly`
 
