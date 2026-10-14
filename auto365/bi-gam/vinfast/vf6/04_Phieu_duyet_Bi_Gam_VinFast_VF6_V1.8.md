@@ -27,4 +27,4 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (13/10/2026): `ec3f33b7b4a1e919e5c9a8ae9f27de5154934449683a82ad69035af2313aa0cb`
+SHA-256 `index.html` (13/10/2026): `769de764acb1466c25992d009ebd5e660121166cf36a3d1301b283530023d3bd`
