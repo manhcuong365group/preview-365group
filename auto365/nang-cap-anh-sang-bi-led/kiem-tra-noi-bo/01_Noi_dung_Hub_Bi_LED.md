@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `e524916b1b4b154e882b163849499145ad774c4a8bba8a1d4474d6e03df3a1aa`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `2c60caa592ea84326b2bc444f0bb1914bcbaa87e5043fb43e3869a52d6903a5a`
 
 Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -347,8 +347,8 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: BẢN SỬA 14/10/2026 THEO TÁI KIỂM 13/10 — CHỜ DUYỆT LẠI. Đã sửa F01–F15 trong phạm vi trang. Cần duyệt lại: F03 (câu bảo hành theo chính sách gốc — Commercial), F08 (đã gỡ nhãn "Độc quyền" theo lock 365Group), F12 (tóm tắt Điều 20 — anh Nguyễn Quang Đạo).
+Trạng thái: ĐÃ DUYỆT 14/10/2026 · BẢN SỬA THEO TÁI KIỂM 13/10. Đã sửa F01–F15; chủ quản duyệt câu bảo hành (F03) và tóm tắt Điều 20 (F12), giữ nhãn "Độc quyền" (F08). Việc còn lại ngoài trang: xác nhận lead 162 trong CRM, inventory URL/301/GSC/đo AI khi lên production.
 
-Lịch sử: bản 13/10/2026 được anh Nguyễn Quang Đạo duyệt; tái kiểm 13/10 chấm 90,3/100, chưa đạt V1.8.
+Lịch sử: bản 13/10/2026 do Nguyễn Quang Đạo duyệt; tái kiểm 13/10 chấm 90,3/100.
 
 Xem phiếu duyệt chi tiết →

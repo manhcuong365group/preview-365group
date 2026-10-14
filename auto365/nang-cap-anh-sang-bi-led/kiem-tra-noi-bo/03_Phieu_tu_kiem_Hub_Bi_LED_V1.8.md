@@ -28,7 +28,7 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | F05 | Bảng thông số Turbo BM ghi 9 triệu cho cả 2 bản | "Từ 9.000.000đ/cặp (1 nhiệt màu); 10.000.000đ/cặp (3 nhiệt màu)"; AggregateOffer 9–10 triệu giữ nguyên | HTML .specAll |
 | F06 | Hồ sơ tự ghi "đạt, không còn việc mở" | Aside + phiếu ghi bản sửa chờ duyệt lại, giữ lịch sử duyệt 13/10; 02 bỏ mục tiêu FAQ/Product rich result trên hub, thêm kiểm Search generative AI/OAI-SearchBot | 02, aside |
 | F07 | Cột Lens trộn "AR" với kích thước | 28 mẫu không có kích thước inch → ghi "Chưa có kích thước (PDP: AR)", không vào bộ lọc lens; chuẩn hoá "3.0 inch" | HTML, 04 |
-| F08 | 10 nhãn "Độc quyền" | Gỡ khỏi card theo lock ngôn từ 365Group | HTML |
+| F08 | 10 nhãn "Độc quyền" | Chủ quản quyết định giữ nhãn theo PDP (14/10/2026) | HTML |
 | F10 | "Bi cầu" rộng hơn bi LED | Thêm đoạn phạm vi đầu mục kiến thức 1, dẫn trang Nâng cấp ánh sáng | HTML #bi-led-la-gi |
 | F12 | Tóm tắt Điều 20 giản lược | Viết đủ: thời gian/điều kiện bật đèn; 4 trường hợp chuyển Cos gồm người đi bộ và ngoại lệ dải phân cách chống chói (theo Cổng Chính phủ) | HTML #phap-ly |
 | F13 | Finder gọi "theo xe"; lý do "mức giá khác" khi cùng giá | Đổi "Gợi ý bi LED theo tiêu chí"; ghi rõ chưa kiểm khả năng lắp theo xe; lý do "cùng mức giá" khi trùng giá | HTML |
@@ -52,8 +52,6 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | --- | --- | --- |
 | Nghiệm thu production | IT/SEO | Checklist 02 mục 6 |
 | Xác nhận lead 162 trong CRM rồi xoá | Chủ quản/IT | Lead test gửi 13/10/2026 |
-| Duyệt lại F08/F12 | Nguyễn Quang Đạo | Gỡ nhãn Độc quyền; tóm tắt Điều 20 |
-| Xác nhận câu bảo hành F03 | Commercial | Câu theo chính sách gốc |
 | Inventory URL, GSC, đo AI theo bộ query | SEO | Theo báo cáo tái kiểm 13/10 mục 6, 10–11 |
 | 301 bài blog bảng giá bi LED cũ | SEO/CMS | 02 mục 1 |
 | Đo lab lại trên pages.dev | SEO | Số hiện tại đo trên preview cục bộ |
