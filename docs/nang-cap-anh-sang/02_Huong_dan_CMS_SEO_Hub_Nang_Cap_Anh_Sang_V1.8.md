@@ -94,3 +94,18 @@ Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản 
 - Xoá `<aside id="internal-check">` và script đi kèm ở cuối `<main>` (khối này tự hiện trên pages.dev/localhost, tự ẩn ở domain khác nhưng vẫn nằm trong HTML).
 - Không đưa thư mục `nang-cap-anh-sang/kiem-tra-noi-bo/` lên production.
 - Nếu còn trong bản đăng: lỗi chặn BLOCK_06 (V1.8 §12).
+
+## Ghi chú release cho CMS v2 (theo tái kiểm v2 tối 13/10/2026)
+
+Bản v2 (`v2.auto365.vn/nang-cap-anh-sang`) là bản CMS dựng lại từ preview; các lỗi dưới đây nằm ở phía v2, preview là bản nguồn để đối chiếu.
+
+| Mã | Lỗi trên v2 | Bản nguồn (preview) | CMS cần làm |
+| --- | --- | --- | --- |
+| V2-01 | CTA hero `href="#cases"` nhưng section case đổi ID thành `case-thuc-te` | Section case có `id="cases"` | Giữ `id="cases"` hoặc đổi href thành `#case-thuc-te`; rà mọi anchor tới case |
+| V2-02 | Modal so sánh Titan Black 2026 chỉ ghi 3000K | Modal lấy `data-a-k` = "5200K / tâm Pha 3000K" | Modal dùng đúng trường nhiệt màu đầy đủ (Cos 5200K, tâm Pha 3000K), không dùng `data-k` của bộ lọc |
+| V2-03 | Thương hiệu Titan Black: card/modal "Titan", trường thương hiệu PDP "X-Light" | Chủ quản chốt 14/10/2026: thương hiệu **X-Light** (Titan Black là tên dòng). Preview đã đổi card, bộ lọc, so sánh, schema và 04 | v2 đổi `data-brand`/modal/schema của Titan Black 2026 sang X-Light |
+| V2-04 | Bảng nhóm ghi mốc "F-15 V2" nhưng v2 không có card F-15 V2 | Preview có cả F15 và F-15 V2 (cùng 2.200.000đ); từ 14/10 mốc tự chọn **F15** khi trùng giá | Lấy lại HTML preview (mốc F15) hoặc thêm lại card F-15 V2 |
+| V2-05 | 125 card nhưng ItemList 123 (thiếu S6 Pro H1, S8 Pro 4300K) | Preview: ItemList sinh từ cùng danh sách 129 card | Sinh card và ItemList từ cùng nguồn theo URL/SKU |
+| V2-06 | Bộ hồ sơ 129 mẫu không khớp 125 mẫu v2 | 01–04 khớp preview 129 mẫu | Nếu v2 cố ý bỏ 4 mẫu: xuất lại 01/04 cho 125 mẫu và ghi lý do; nếu không: khôi phục đủ 129 |
+
+Bộ lọc nhiệt màu: preview đổi nhãn thành "Nhiệt màu (Cos hoặc tâm Pha)" vì một mẫu có thể xuất hiện ở mốc của tâm Pha (ví dụ Titan Black 2026 ở 3000K).
