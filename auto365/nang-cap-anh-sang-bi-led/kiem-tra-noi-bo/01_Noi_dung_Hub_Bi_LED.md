@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `2c60caa592ea84326b2bc444f0bb1914bcbaa87e5043fb43e3869a52d6903a5a`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `f4bd7b9f7e37584d93fa351712c2fd8f1320c3adcfc26902d94a9c3587914ee8`
 
 Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -10,7 +10,7 @@ Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 13/10/2026 · Cập nhật 14/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nhật 14/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -339,7 +339,7 @@ Nếu xe mới đã dùng đèn LED projector zin và đáp ứng nhu cầu, có
 
 Chuyên gia đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
 
-Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 13/10/2026
+Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 14/10/2026
 
 Thông số theo trang sản phẩm Auto365, đối chiếu 12/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
 
@@ -347,7 +347,7 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: ĐÃ DUYỆT 14/10/2026 · BẢN SỬA THEO TÁI KIỂM 13/10. Đã sửa F01–F15; chủ quản duyệt câu bảo hành (F03) và tóm tắt Điều 20 (F12), giữ nhãn "Độc quyền" (F08). Việc còn lại ngoài trang: xác nhận lead 162 trong CRM, inventory URL/301/GSC/đo AI khi lên production.
+Trạng thái: ĐÃ DUYỆT 14/10/2026 · BẢN SỬA THEO TÁI KIỂM 13/10. Đã sửa F01–F15; chủ quản duyệt câu bảo hành (F03) và tóm tắt Điều 20 (F12), giữ nhãn "Độc quyền" (F08). Lead test 162 đã xác nhận vào CRM. Việc còn lại ngoài trang: inventory URL/301/GSC/đo AI khi lên production.
 
 Lịch sử: bản 13/10/2026 do Nguyễn Quang Đạo duyệt; tái kiểm 13/10 chấm 90,3/100.
 
