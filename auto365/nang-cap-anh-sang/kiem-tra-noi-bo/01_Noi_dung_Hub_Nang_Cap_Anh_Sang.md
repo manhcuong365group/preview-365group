@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `c0eef0304c11abc8ce28e191f73310308cbfbda60f4a852c5aaed735cbad5005`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `12c569fffc96b4be503537b6ff9d1b0e5660989fbb98df30d832e3be595249c9`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -11,7 +11,7 @@ Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để �
 
 Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Cập nhật nội dung 12/10/2026
 
-## Tìm sản phẩm phù hợp  `#catalog`
+## Các sản phẩm đèn tại Auto365  `#catalog`
 
 _Danh mục 129 mẫu: xem 04_Master_Data_San_Pham_Hub_Anh_Sang.csv_
 
