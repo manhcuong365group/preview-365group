@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `5d5a848b07fc935037100a296729ba23921f1975ab1d663e2e0623402d54c9c8`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `97c40e2d7aef7832a62b5bc314d1a776404b3fad43f679fd8bff405d99a5b240`
 
 Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -16,7 +16,7 @@ Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nh�
 
 _Danh mục 106 mẫu: xem 04_Master_Data_San_Pham_Bi_LED.csv_
 
-## Xe thực tế đã lắp bi LED  `#cases`
+## Xe thực tế đã lắp bi LED, thi công tại Auto365  `#cases`
 
 _Xe thực tế: 127 case bi LED (24 hiển thị sẵn + template)_
 

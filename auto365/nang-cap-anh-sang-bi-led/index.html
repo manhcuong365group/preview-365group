@@ -642,9 +642,6 @@ main a.btn,main button.btn{min-height:42px}
         <button class="btn dark" type="submit">Gợi ý bi LED phù hợp</button>
       </form>
     </div>
-    <div class="promo promoOne">
-      <a href="https://auto365.vn/bi-led-aes-sv-turbo-s-2026" target="_blank" rel="noopener"><img src="hinh/banner-bi-led-aes-sv-turbo-s-2026.webp" alt="Bi LED AES SV Turbo S 2026 — giá niêm yết 8.000.000đ/bộ, chưa gồm VAT" width="2000" height="77" fetchpriority="high" decoding="async"></a>
-    </div>
   </div>
 </header>
 
@@ -1663,7 +1660,7 @@ main a.btn,main button.btn{min-height:42px}
 <section class="soft"  id="cases">
 <div class="c">
   <div class="head">
-    <div><h2>Xe thực tế <span class="hl">đã lắp bi LED</span></h2></div>
+    <div><h2>Xe thực tế đã lắp bi LED, thi công tại Auto365</h2></div>
     <a class="btn" href="https://auto365.vn/tin-tuc/xe-thuc-te-tai-auto365" target="_blank" rel="noopener">Xem tất cả case →</a>
   </div>
   <div class="caseFilters">
@@ -2306,7 +2303,8 @@ main a.btn,main button.btn{min-height:42px}
 <script>
 (function(){
   var PAGE = 12;
-  (function(){ var g = document.getElementById('grid'), cs = getComputedStyle(g); if (cs.gridAutoFlow.indexOf('column') < 0) { var n = cs.gridTemplateColumns.split(' ').filter(Boolean).length; if (n) PAGE = n * 2; } })(); // 2 hàng sản phẩm
+  function calcPage(){ var g = document.getElementById('grid'), cs = getComputedStyle(g); if (cs.gridAutoFlow.indexOf('column') < 0) { var n = cs.gridTemplateColumns.split(' ').filter(Boolean).length; if (n) return n * 2; } return 12; } // 2 hàng sản phẩm
+  PAGE = calcPage();
   var grid = document.getElementById('grid');
   var cards = Array.prototype.slice.call(grid.querySelectorAll('.prod'));
   var limit = PAGE;
@@ -2353,7 +2351,8 @@ main a.btn,main button.btn{min-height:42px}
   }
   function setCats(arr){ $$('input[name=cat]').forEach(function(i){ i.checked = i.value ? arr.indexOf(i.value) > -1 : !arr.length; }); }
   function setPrice(v){ $$('input[name=price]').forEach(function(i){ i.checked = i.value === (v || ''); }); }
-  function reset(){ limit = PAGE; render(); }
+  function reset(){ PAGE = calcPage(); limit = PAGE; render(); }
+  var rzT; window.addEventListener('resize', function(){ clearTimeout(rzT); rzT = setTimeout(function(){ var rows = Math.max(1, Math.round(limit / PAGE)); var np = calcPage(); if (np !== PAGE) { PAGE = np; limit = PAGE * rows; render(); } }, 150); });
   function goCatalog(){ var el = document.getElementById('catalog'); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 
   $$('.sidebar input, .brandBar input').forEach(function(i){ i.addEventListener(i.type === 'search' ? 'input' : 'change', reset); });

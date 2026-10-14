@@ -59,7 +59,7 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | --- | --- |
 | Gợi ý mẫu theo nhu cầu (6 nhóm) | Bỏ |
 | Ghi chú 3 dòng dưới sapo hero | Bỏ |
-| Banner slider 2 hình | Giữ 1 banner AES SV Turbo S |
+| Banner hero | Bỏ banner (chủ quản 14/10/2026) |
 | Kiến thức dạng tab | Giữ accordion như hub |
 | Thương hiệu Bi LED Titan Black 2026 | X-Light (Titan Black là tên dòng) — card, bộ lọc, schema, 04 (chủ quản chốt 14/10/2026) |
 

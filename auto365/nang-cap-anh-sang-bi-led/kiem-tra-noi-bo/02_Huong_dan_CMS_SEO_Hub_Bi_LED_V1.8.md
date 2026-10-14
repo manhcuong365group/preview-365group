@@ -31,7 +31,7 @@ Ngày hồ sơ: 14/10/2026, Asia/Saigon
 | dateModified | 2026-10-14 |
 | Landmark | Một `<main id="main-content">` + skip link |
 
-Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto365 → Xe thực tế đã lắp bi LED → Vì sao nên lắp bi LED tại Auto365? → 7 bước từ tiếp nhận đến bàn giao → Xem ánh sáng bi LED trước khi chọn → Bi LED ô tô: cần biết gì trước khi lắp? → Bi LED giá bao nhiêu? Chọn theo phân khúc → Lắp bi LED đúng và dùng đúng chế độ Cos/Pha → Tư vấn bi LED theo xe → Cẩm nang bi LED & đèn pha ô tô → Câu hỏi thường gặp về bi LED ô tô → Chưa biết xe của bạn hợp mẫu bi LED nào?.
+Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto365 → Xe thực tế đã lắp bi LED, thi công tại Auto365 → Vì sao nên lắp bi LED tại Auto365? → 7 bước từ tiếp nhận đến bàn giao → Xem ánh sáng bi LED trước khi chọn → Bi LED ô tô: cần biết gì trước khi lắp? → Bi LED giá bao nhiêu? Chọn theo phân khúc → Lắp bi LED đúng và dùng đúng chế độ Cos/Pha → Tư vấn bi LED theo xe → Cẩm nang bi LED & đèn pha ô tô → Câu hỏi thường gặp về bi LED ô tô → Chưa biết xe của bạn hợp mẫu bi LED nào?.
 
 ## 3. Schema (một `@graph`)
 
@@ -73,9 +73,9 @@ Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto36
 
 ## 7. Đo lab trên preview
 
-Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-14T13:10:24.037Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
+Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-14T13:23:57.126Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
 
 | Cấu hình | Giới hạn | LCP | CLS | Load | Truyền tải | Request | DOM |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 0.92 s | 0.030 | 5.21 s | 1339 KB | 20 | 4705 |
-| desktop 1440 | không giới hạn | 0.26 s | 0.001 | 0.38 s | 2129 KB | 38 | 4705 |
+| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 0.92 s | 0.030 | 5.29 s | 1308 KB | 19 | 4701 |
+| desktop 1440 | không giới hạn | 0.29 s | 0.001 | 0.46 s | 2300 KB | 41 | 4701 |
