@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `071d3ca4a14b0846366ef7ad72081774f3026cedd07e56ffd477bf51d213935a`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `e524916b1b4b154e882b163849499145ad774c4a8bba8a1d4474d6e03df3a1aa`
 
 Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -233,11 +233,11 @@ Số mẫu và khoảng giá tính theo danh mục trên trang (giá niêm yết
 
 **Titan**
 
-31 mẫu · 2.000.000đ – 9.900.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu) · bi lẻ từ 1.700.000đ/chiếcThương hiệu Titan Moto (tên thương hiệu, không phải đèn xe máy) có các dòng Black, Gold, Platinum, CB và nhiều mẫu Mini 1.5–2.0 inch cho chóa nhỏ.Xem mẫu Titan →
+30 mẫu · 2.000.000đ – 9.900.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu) · bi lẻ từ 1.700.000đ/chiếcThương hiệu Titan Moto (tên thương hiệu, không phải đèn xe máy) có các dòng Black, Gold, Platinum, CB và nhiều mẫu Mini 1.5–2.0 inch cho chóa nhỏ.Xem mẫu Titan →
 
 **X-Light**
 
-31 mẫu · 3.900.000đ – 13.500.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)365Group là nhà phân phối chính hãng X-Light; Auto365 là đại lý ủy quyền lắp đặt. Dải mẫu rộng từ dòng Mini (F+ Pro Mini) đến V20, V30 Ultra, Quantum X.Xem mẫu X-Light →
+32 mẫu · 3.900.000đ – 13.500.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)365Group là nhà phân phối chính hãng X-Light; Auto365 là đại lý ủy quyền lắp đặt. Dải mẫu rộng từ dòng Mini (F+ Pro Mini) đến V20, V30 Ultra, Quantum X.Xem mẫu X-Light →
 
 **GTR**
 
