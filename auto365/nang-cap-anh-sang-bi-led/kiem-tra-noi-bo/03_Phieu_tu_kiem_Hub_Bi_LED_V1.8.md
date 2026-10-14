@@ -34,6 +34,7 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | F13 | Finder gọi "theo xe"; lý do "mức giá khác" khi cùng giá | Đổi "Gợi ý bi LED theo tiêu chí"; ghi rõ chưa kiểm khả năng lắp theo xe; lý do "cùng mức giá" khi trùng giá | HTML |
 | F14 | Ranh giới phân khúc | "5 – dưới 10 triệu" | HTML #so-sanh |
 | F07b | 83 mẫu thiếu kích thước lens, 33 mẫu thiếu công suất | Đọc lại toàn bộ PDP: lấy thêm lens của 21 mẫu và công suất của 14 mẫu từ phần mô tả PDP (bảng thông số trống hoặc ghi "AR"); 62 mẫu (lens) và 19 mẫu (công suất) PDP không công bố → giữ "chưa có" | PDP 14/10/2026 |
+| C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
 | C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 14/10/2026; schema lastReviewed/dateModified 2026-10-14, khớp dòng "Duyệt và cập nhật 14/10/2026" | 02 mục 2 |

@@ -73,9 +73,9 @@ Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto36
 
 ## 7. Đo lab trên preview
 
-Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-14T11:25:20.204Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
+Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-14T12:55:17.831Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
 
 | Cấu hình | Giới hạn | LCP | CLS | Load | Truyền tải | Request | DOM |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 0.89 s | 0.030 | 5.23 s | 1339 KB | 20 | 4705 |
-| desktop 1440 | không giới hạn | 0.27 s | 0.001 | 0.39 s | 2129 KB | 38 | 4705 |
+| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 1.00 s | 0.030 | 5.44 s | 1339 KB | 20 | 4705 |
+| desktop 1440 | không giới hạn | 0.29 s | 0.001 | 0.48 s | 2129 KB | 38 | 4705 |
