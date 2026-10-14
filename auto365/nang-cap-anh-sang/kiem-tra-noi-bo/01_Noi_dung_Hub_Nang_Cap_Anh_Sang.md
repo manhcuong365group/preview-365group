@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `e91e0afb34736d970d8e38bdf7a029478c38ddd5039dca7af8be6a562c1750fc`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `e7db65580264559e006125585f936a3f188cf4cd34639c53f51f487aab319333`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -251,7 +251,7 @@ Nguyễn Quang Đạo · Kiểm duyệt kỹ thuật đèn ô tô, Auto365
 
 ## Các nhóm nâng cấp ánh sáng khác nhau ở đâu?  `#so-sanh`
 
-Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
+Trước khi chọn nhóm nào cũng cần kiểm: cụm đèn hoặc hốc lắp, hệ điện 12V/24V, không gian tản nhiệt và bước cân chỉnh vùng sáng sau lắp. Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
 
 
 | Nhóm | Vị trí | Phù hợp | Điểm mạnh | Giá sản phẩm |
