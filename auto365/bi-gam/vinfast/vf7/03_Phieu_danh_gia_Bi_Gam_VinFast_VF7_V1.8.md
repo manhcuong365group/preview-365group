@@ -19,7 +19,7 @@
 | S3 | 10 | 9,5 | Canonical khai báo; link hub, PDP, case; 301 từ đường dẫn cũ. | Link trộn v2.auto365.vn và auto365.vn — CMS thống nhất domain khi đăng. |
 | G1 | 10 | 9,5 | Câu đầu nêu nhu cầu, có từ khoá "lắp bi gầm VinFast VF7", giá, hãng. | — |
 | G2 | 10 | 9,5 | Mức xác minh từng mẫu: case/video vs "Kỹ thuật xác nhận"; bảng có nguồn PDP. | — |
-| G3 | 5 | 4,0 | 2 bài case VF7 trên auto365.vn; reviewer Đạo; nguồn PDP. Trừ: không có video bi gầm VF7, chưa có ảnh thật VF7 riêng, giá 7 mẫu thêm chưa xác nhận. | |
+| G3 | 5 | 4,0 | 2 bài case VF7 trên auto365.vn; reviewer Đạo; nguồn PDP. Trừ: không có video bi gầm VF7, chưa có ảnh thật VF7 riêng. | |
 | U1 | 5 | 4,75 | Mobile: sản phẩm 2 hàng cuộn ngang, không tràn ngang; popup nhu cầu; FAQ gọn. | |
 | U2 | 5 | 4,75 | CTA, form báo giá theo mẫu, hotline/Zalo. | Chưa test gửi lead riêng trên trang VF7 (cùng hệ form đã test ở VF3). |
 

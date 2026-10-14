@@ -19,7 +19,7 @@
 | S3 | 10 | 9,5 | Canonical khai báo; link hub, PDP, case; 301 từ đường dẫn cũ. | Link trộn v2.auto365.vn và auto365.vn — CMS thống nhất domain khi đăng. |
 | G1 | 10 | 9,5 | Câu đầu nêu nhu cầu, có từ khoá "lắp bi gầm VinFast VF6", giá, hãng. | — |
 | G2 | 10 | 9,5 | Mức xác minh từng mẫu: case/video vs "Kỹ thuật xác nhận"; bảng có nguồn PDP. | — |
-| G3 | 5 | 4,5 | Video VF6 + 3 bài case VF6 trên auto365.vn; reviewer Đạo; nguồn PDP. Trừ: chưa có ảnh thật VF6 riêng (dùng ảnh bìa bài case), giá 7 mẫu thêm chưa xác nhận. | |
+| G3 | 5 | 4,5 | Video VF6 + 3 bài case VF6 trên auto365.vn; reviewer Đạo; nguồn PDP. Trừ: chưa có ảnh thật VF6 riêng (dùng ảnh bìa bài case). | |
 | U1 | 5 | 5,0 | Mobile: sản phẩm 2 hàng cuộn ngang, không tràn ngang; popup nhu cầu; FAQ gọn. | |
 | U2 | 5 | 4,75 | CTA, form báo giá theo mẫu, hotline/Zalo. | Chưa test gửi lead riêng trên trang VF6 (cùng hệ form đã test ở VF3). |
 
