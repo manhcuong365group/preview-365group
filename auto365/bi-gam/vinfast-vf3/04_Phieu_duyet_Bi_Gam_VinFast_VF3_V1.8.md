@@ -58,6 +58,7 @@ Kết quả: **Đã duyệt ngày 10/10/2026.** Trang ghi "Rà soát kỹ thuậ
 | 12/10/2026 | Bảng so sánh: thêm "~" công suất X3 Ultra; cột "Trên VF3" thêm link "Xem case VF3" (GTR) và nút "Kiểm tra cấu hình" mở form báo giá đúng mẫu (8 mẫu còn lại) — theo phiếu nghiệm thu | Theo yêu cầu chủ quản |
 | 13/10/2026 | Thêm bài case "VinFast VF3 2025 Plus lắp bi gầm GTR G1 Turbo V2" (auto365.vn) lên đầu khối case, đổi tiêu đề "Xe VinFast đã lắp bi gầm tại Auto365"; bỏ câu ghi chú case VinFast khác | Theo yêu cầu chủ quản |
 | 14/10/2026 | Theo phiếu audit 13/10: thẻ "Đã lắp thực tế trên VF3" ghi rõ chỉ GTR G1 Turbo V2 có video; thêm ghi chú case VF3 2025 Plus có tháo cản trước, làm mới mặt dưỡng (đối chiếu bài case gốc) | Sửa nội dung |
+| 14/10/2026 | Bảo hành AES SV 3.0 Max: "Xác nhận khi báo giá" → 24 tháng (chủ quản xác nhận) — áp dụng cả trang VF6, VF7 | Theo xác nhận chủ quản |
 | 10/10/2026 | Thêm dải logo "Thương hiệu đèn tại Auto365"; FAQ dạng danh sách; bo góc 8px; giảm khoảng cách; tối ưu mobile | Đã xác nhận |
 
 Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, bảo hành hay FAQ — chỉ bố cục, ảnh và chức năng. Xác nhận "oke hết" do người phụ trách nội dung chuyển lại ngày 10/10/2026.
@@ -73,4 +74,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `6b69ee3d6cb433d06a0bd171b7127b69d221e86fd9d4a0919cb1a2c48c4fa267`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `32f7cf9d0f89adbfde5b4fc394fc71eb956614a54e72ea1ce422536cd4d871a8`
