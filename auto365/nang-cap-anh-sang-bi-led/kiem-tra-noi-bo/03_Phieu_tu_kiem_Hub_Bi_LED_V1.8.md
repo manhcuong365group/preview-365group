@@ -39,6 +39,20 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
 | C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 14/10/2026; schema lastReviewed/dateModified 2026-10-14, khớp dòng "Duyệt và cập nhật 14/10/2026" | 02 mục 2 |
 
+## Điểm tự chấm sau sửa (14/10/2026, bỏ U3 theo chỉ đạo)
+
+| Mã | Điểm | Căn cứ / phần còn trừ |
+| --- | ---: | --- |
+| C1 Chính xác, nhất quán | 10/10 | F01–F05 đã đóng; nhiệt màu, giá biến thể, đơn vị, bi lẻ khớp PDP |
+| C2 Đầy đủ theo vai trò | 10/10 | 62 mẫu thiếu lens, 19 mẫu thiếu công suất do PDP không công bố — trang ghi "chưa có", sheet bổ sung đã gửi Kinh doanh |
+| C3 Tự nhiên, hữu ích | 10/10 | Tên sản phẩm đồng bộ sau khi CMS đổi tên |
+| S1 Vai trò URL | 9,5/10 | 3 bài blog bảng giá bi LED cũ vẫn trả 200 — chờ 301 |
+| S2 SEO trên trang | 10/10 | Title/meta/H1, th scope đủ, schema khớp hiển thị |
+| S3 Liên kết, hồ sơ | 10/10 | 02 cập nhật theo hướng dẫn Google 2026 |
+| G1 + G2 + G3 | 25/25 | Bảo hành đủ phạm vi, "bi cầu", Điều 20 nguyên văn, nguồn PDP |
+| U1 + U2 | 10/10 | Finder chuyển đủ điều kiện; lead 162 đã xác nhận |
+| **Tổng** | **94,5/95 = 99,5/100** | **ĐẠT** — không lỗi chặn |
+
 ## Giữ theo quyết định chủ quản
 
 | Đề xuất | Quyết định |
@@ -55,5 +69,6 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | --- | --- | --- |
 | Nghiệm thu production | IT/SEO | Checklist 02 mục 6 |
 | Inventory URL, GSC, đo AI theo bộ query | SEO | Theo báo cáo tái kiểm 13/10 mục 6, 10–11 |
-| 301 bài blog bảng giá bi LED cũ | SEO/CMS | 02 mục 1 |
+| 301 bài blog bảng giá bi LED cũ (đưa hub mới lên production trước) | SEO/CMS | docs/yeu-cau-cms-bi-led-2026-10-14.md — Việc 2 |
+| Bổ sung kích thước lens (62 mẫu) và công suất (19 mẫu) lên PDP | Kinh doanh/hãng | docs/bi-led-thieu-lens-cong-suat-2026-10-14.xlsx |
 | Đo lab lại trên pages.dev | SEO | Số hiện tại đo trên preview cục bộ |
