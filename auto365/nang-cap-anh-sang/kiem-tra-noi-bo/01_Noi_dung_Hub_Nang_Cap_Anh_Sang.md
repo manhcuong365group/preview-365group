@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `3dbfe6e33892b373af7137f2fe4f9d340abf071dd82fbce58c432852ef233d18`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `c0b38aade2c505340dca2e7d69776b79001f4f72c81f64e65c3a11317ef7c07a`
 Ngày xuất: 10/10/2026. File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -254,15 +254,15 @@ Nguyễn Quang Đạo · Kiểm duyệt kỹ thuật đèn ô tô, Auto365
 Trước khi chọn nhóm nào cũng cần kiểm: cụm đèn hoặc hốc lắp, hệ điện 12V/24V, không gian tản nhiệt và bước cân chỉnh vùng sáng sau lắp. Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
 
 
-| Nhóm | Vị trí | Phù hợp | Điểm mạnh | Giá sản phẩm | Xe thực tế |
-| --- | --- | --- | --- | --- | --- |
-| Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → | VinFast VF3 2025127 case trên trang |
-| Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → | Ford Explorer 201957 case trên trang |
-| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F15Xem danh mục → | Toyota Hilux6 case trên trang |
-| Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → | VinFast VF7 2025138 case trên trang |
-| Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → | Hyundai Custin 202513 case trên trang |
-| Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → | Toyota Corolla Cross 20238 case trên trang |
-| Đèn trợ sáng | Vị trí phụ trợ | Đường tối, off-road | Spot / Flood theo mục đích | Từ 1.200.000đ/bộMẫu: ĐÈN TRỢ SÁNG TITAN MOTO M10 PLUSXem danh mục → | Mitsubishi Xpander 20186 case trên trang |
+| Nhóm | Vị trí | Phù hợp | Điểm mạnh | Giá sản phẩm |
+| --- | --- | --- | --- | --- |
+| Bi LED | Cụm đèn pha chính | Đi phố, đi tỉnh | Vùng sáng cân bằng, dễ kiểm soát Cos/Pha | Từ 3.600.000đ/bộMẫu: Bi LED AES Ev2 SquareXem danh mục → |
+| Bi Laser | Cụm đèn pha chính | Đi tỉnh, cao tốc | Hỗ trợ tầm chiếu xa | Từ 4.000.000đ/bộMẫu: Bi Laser Titan Moto Black Mini 1.8Xem danh mục → |
+| Bi LED Mini | Chóa đèn nhỏ / chân H4 | Đi phố, xe chóa nhỏ | Gọn, lắp được cụm đèn ít không gian | Từ 2.200.000đ/bộMẫu: Bi LED Mini Titan Moto F15Xem danh mục → |
+| Bi gầm | Hốc đèn gầm | Mưa, sương, vùng gần | Bổ sung vùng thấp và hai mép đường | Từ 3.500.000đ/bộMẫu: Bi gầm Titan 301 (3 nhiệt màu)Xem danh mục → |
+| Đèn gầm dạng rời | Pát riêng phía trước | Xe không có hốc gầm phù hợp | Lắp độc lập, ít can thiệp hốc zin | Từ 2.000.000đ/bộMẫu: Đèn gầm dạng rời Titan Moto M10 Ultra V3Xem danh mục → |
+| Bóng LED | Thay bóng trong chóa zin | Nâng cấp gọn | Thi công đơn giản hơn | Từ 1.500.000đ/bộMẫu: X-Light S3 Pro V2Xem danh mục → |
+| Đèn trợ sáng | Vị trí phụ trợ | Đường tối, off-road | Spot / Flood theo mục đích | Từ 1.200.000đ/bộMẫu: ĐÈN TRỢ SÁNG TITAN MOTO M10 PLUSXem danh mục → |
 
 ## Lắp đúng – chiếu đúng – dùng đúng  `#phap-ly`
 
