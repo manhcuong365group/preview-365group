@@ -63,7 +63,7 @@ h3{font-size:18px;line-height:1.28;margin-bottom:8px}
 .check{display:flex;align-items:center;gap:7px;font-size:13px;color:#444;cursor:pointer}.check input{width:16px;height:16px;accent-color:var(--r)}.check em{font-style:normal;color:#999;font-size:11px;margin-left:auto}
 .catalogMain{min-width:0}
 .ctabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:10px;margin-bottom:6px;scrollbar-width:thin}
-.ctab{flex:none;padding:8px 13px;border:1px solid var(--l);border-radius:999px;background:#fff;font-size:13px;font-weight:700;cursor:pointer;min-height:38px}
+.ctab{flex:none;padding:8px 13px;border:1px solid var(--l);border-radius:8px;background:#fff;font-size:13px;font-weight:700;cursor:pointer;min-height:38px}
 .ctab[aria-pressed=true]{background:var(--dark);border-color:var(--dark);color:#fff}
 .catalogTop{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:10px;flex-wrap:wrap}
 .count{font-size:13px;color:#666}.sort{display:flex;align-items:center;gap:8px;font-size:13px;color:#666}.sort select{padding:8px 10px;border:1px solid var(--l);border-radius:8px;background:#fff;min-height:38px}
@@ -76,7 +76,7 @@ h3{font-size:18px;line-height:1.28;margin-bottom:8px}
 .prodBody{padding:12px;display:flex;flex-direction:column;flex:1}.brandline{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:6px}.brandline small{font-size:10px;color:#888;font-weight:700;text-transform:uppercase}
 .prod h3{font-size:14px;line-height:1.3;min-height:36px;margin-bottom:8px}.prod h3 a:hover{color:var(--r)}
 .pp{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 0}.price{font-size:17px;font-weight:700;color:var(--r)}.price.contact{color:var(--t)}.unit{font-size:11px;color:#888;font-weight:600}.vat{font-size:10px;color:#999;margin-left:6px}
-.specs{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}.spec{font-size:10.5px;padding:4px 7px;border-radius:999px;background:#f3f4f6;color:#5c6168}
+.specs{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}.spec{font-size:10.5px;padding:4px 7px;border-radius:8px;background:#f3f4f6;color:#5c6168}
 .cardActions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:11px}
 .cardActions a,.compareBox{display:flex;align-items:center;justify-content:center;gap:5px;padding:8px 6px;border:1px solid var(--l);border-radius:8px;font-size:12px;font-weight:700;min-height:38px;cursor:pointer}
 .cardActions a,.compareBox{white-space:nowrap;font-size:11.5px;padding:8px 4px}.cardActions a:hover{border-color:var(--t)}.compareBox input{width:14px;height:14px;accent-color:var(--r)}
@@ -120,7 +120,7 @@ dialog.cmpDlg::backdrop{background:rgba(0,0,0,.45)}
 /* needs */
 .needGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.need{border:1px solid var(--l);border-radius:8px;padding:20px;background:#fff;display:flex;flex-direction:column}
 .need .n{width:32px;height:32px;border-radius:8px;background:#222;color:#fff;display:grid;place-items:center;font-size:12px;font-weight:700;margin-bottom:12px}.need p{color:var(--m);font-size:14px}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}.chip{font-size:12px;padding:6px 9px;border-radius:999px;background:#f0f2f4}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 14px}.chip{font-size:12px;padding:6px 9px;border-radius:8px;background:#f0f2f4}
 .need .btn{margin-top:auto;min-height:40px;font-size:13px}
 /* compare table */
 .compare5{border:1px solid var(--l);border-radius:8px;background:#fff;overflow:auto}
@@ -393,7 +393,7 @@ h3,.prod h3,.case h3,.art h3,.faq summary{font-weight:600}
 .srcList{margin:12px 0 0;display:grid;grid-template-columns:78px 1fr;gap:10px 12px;font-size:13px}
 .srcList dt{color:var(--m);font-weight:500;padding-top:3px}
 .srcList dd{margin:0;display:flex;flex-wrap:wrap;gap:6px}
-.srcList dd a,.srcList dd span{display:inline-block;padding:3px 9px;border:1px solid var(--l);border-radius:999px;background:#fafbfc;color:var(--body);font-weight:400;line-height:1.5}
+.srcList dd a,.srcList dd span{display:inline-block;padding:3px 9px;border:1px solid var(--l);border-radius:8px;background:#fafbfc;color:var(--body);font-weight:400;line-height:1.5}
 .srcList dd a:hover{border-color:var(--r);color:var(--r)}
 @media(max-width:560px){.srcList{grid-template-columns:1fr;gap:4px}.srcList dt{padding-top:6px}}
 /* brands: 8 logos in one row */
@@ -593,6 +593,7 @@ main a.btn,main button.btn{min-height:42px}
 .caseCnt{display:block;font-size:12px;color:var(--m);margin-top:2px}
 @media(max-width:860px){.timeline .td{max-width:none;text-align:left}}
 @media(max-width:860px){.timeline li{display:grid!important;grid-template-columns:32px 1fr;column-gap:12px;row-gap:2px;align-items:start;text-align:left}.timeline .dot{grid-row:1/3}.timeline .tl{text-align:left;padding-top:6px}.timeline .td{grid-column:2;text-align:left}}
+main h2{font-size:24px!important;line-height:1.3!important}
 </style>
 </head>
 <body>
