@@ -1,6 +1,6 @@
 # 03 — Phiếu tự kiểm Hub Bi LED ô tô V1.8
 
-Ngày: 13/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
+Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
 
 ## Đã xử lý
 
@@ -21,7 +21,20 @@ Ngày: 13/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | BL-13 | Trả góp / khuyến mãi (đối thủ có) | Không có trang/chương trình trả góp trên auto365.vn (/tra-gop 404) → không nêu | — |
 | U2 | Lead test end-to-end | POST /api/leads theo cấu hình form → {"success":true, lead_id 162, test:true}; source_page sửa thành nang-cap-anh-sang-bi-led | Log kiểm thử |
 | BL-14 | Chữ khối "Vì sao" còn từ claim ("toàn quốc", "chuyên về đèn", "hằng ngày") | Đồng bộ 6 thẻ theo bản hub đã duyệt 13/10/2026 | HTML #vi-sao |
-| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 13/10/2026; schema lastReviewed/dateModified 2026-10-13, khớp dòng "Duyệt và cập nhật 13/10/2026" | 02 mục 2 |
+| F01 | Nhiệt màu "4" (X5 Pro, V30 Ultra 2022) | Không đoán giá trị; card/so sánh/bảng ghi "Chưa xác minh (PDP ghi “4”)", bỏ khỏi bộ lọc nhiệt màu; 04 đánh dấu chờ xác minh | HTML, 04 |
+| F02 | Nút "Xem tất cả mẫu khớp" chỉ chuyển giá/điện | Xoá bộ lọc cũ rồi áp đủ lens/giá/điện/nhiệt màu (trắng = 5000–6000K); mẫu thiếu kích thước lens không vào kết quả khớp | Log kiểm thử |
+| F03 | FAQ bảo hành thiếu mốc và ngoại lệ 90 ngày | Ghi mốc "kể từ khi nhận sản phẩm và hồ sơ đủ điều kiện", trường hợp tới 90 ngày, tách tuổi thọ công bố với bảo hành; text = FAQPage | auto365.vn/chinh-sach-bao-hanh |
+| F04 | Khoảng giá hãng khác đơn vị | Ghi "giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu"; tách bi lẻ /chiếc (Titan); AES tính tới 10 triệu (Turbo BM 3 nhiệt màu) | HTML #thuong-hieu |
+| F05 | Bảng thông số Turbo BM ghi 9 triệu cho cả 2 bản | "Từ 9.000.000đ/cặp (1 nhiệt màu); 10.000.000đ/cặp (3 nhiệt màu)"; AggregateOffer 9–10 triệu giữ nguyên | HTML .specAll |
+| F06 | Hồ sơ tự ghi "đạt, không còn việc mở" | Aside + phiếu ghi bản sửa chờ duyệt lại, giữ lịch sử duyệt 13/10; 02 bỏ mục tiêu FAQ/Product rich result trên hub, thêm kiểm Search generative AI/OAI-SearchBot | 02, aside |
+| F07 | Cột Lens trộn "AR" với kích thước | 28 mẫu không có kích thước inch → ghi "Chưa có kích thước (PDP: AR)", không vào bộ lọc lens; chuẩn hoá "3.0 inch" | HTML, 04 |
+| F08 | 10 nhãn "Độc quyền" | Gỡ khỏi card theo lock ngôn từ 365Group | HTML |
+| F10 | "Bi cầu" rộng hơn bi LED | Thêm đoạn phạm vi đầu mục kiến thức 1, dẫn trang Nâng cấp ánh sáng | HTML #bi-led-la-gi |
+| F12 | Tóm tắt Điều 20 giản lược | Viết đủ: thời gian/điều kiện bật đèn; 4 trường hợp chuyển Cos gồm người đi bộ và ngoại lệ dải phân cách chống chói (theo Cổng Chính phủ) | HTML #phap-ly |
+| F13 | Finder gọi "theo xe"; lý do "mức giá khác" khi cùng giá | Đổi "Gợi ý bi LED theo tiêu chí"; ghi rõ chưa kiểm khả năng lắp theo xe; lý do "cùng mức giá" khi trùng giá | HTML |
+| F14 | Ranh giới phân khúc | "5 – dưới 10 triệu" | HTML #so-sanh |
+| F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
+| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 14/10/2026; schema lastReviewed/dateModified 2026-10-13, khớp dòng "Duyệt và cập nhật 14/10/2026" | 02 mục 2 |
 
 ## Giữ theo quyết định chủ quản
 
@@ -38,5 +51,8 @@ Ngày: 13/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | --- | --- | --- |
 | Nghiệm thu production | IT/SEO | Checklist 02 mục 6 |
 | Xác nhận lead 162 trong CRM rồi xoá | Chủ quản/IT | Lead test gửi 13/10/2026 |
+| Duyệt lại F01/F08/F12 | Nguyễn Quang Đạo | Nhiệt màu đúng SKU X5 Pro, V30 Ultra 2022; gỡ nhãn Độc quyền; tóm tắt Điều 20 |
+| Xác nhận câu bảo hành F03 | Commercial | Câu theo chính sách gốc |
+| Inventory URL, GSC, đo AI theo bộ query | SEO | Theo báo cáo tái kiểm 13/10 mục 6, 10–11 |
 | 301 bài blog bảng giá bi LED cũ | SEO/CMS | 02 mục 1 |
 | Đo lab lại trên pages.dev | SEO | Số hiện tại đo trên preview cục bộ |

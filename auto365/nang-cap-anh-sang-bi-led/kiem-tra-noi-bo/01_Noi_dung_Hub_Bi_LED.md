@@ -1,8 +1,8 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `8034056767dcf30758b1dfa9b2e2515cc2c4676f11c02d114a913cfabd734421`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `1351746d8b9a5debdf4d1dad62f4d7523bc36a546f65cd2679f80b9b62fd50c3`
 
-Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
+Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
 
@@ -10,7 +10,7 @@ Ngày xuất: 13/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Duyệt và cập nhật 13/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 13/10/2026 · Cập nhật 14/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -96,6 +96,8 @@ Thời gian tham khảo trên trang sản phẩm Auto365: V20L Quantum khoảng 
 ## Bi LED ô tô: cần biết gì trước khi lắp?  `#kien-thuc-nang-cap`
 
 ### Bi LED là gì, khác bóng LED thế nào và mang lại gì?  `#bi-led-la-gi`
+
+“Bi cầu” là cách gọi quen thuộc của đèn projector có thấu kính. Nguồn sáng của projector có thể là halogen, xenon hoặc LED; một số cấu hình bổ sung laser cho Pha. Trang này tập trung vào bi LED (bi cầu LED) nâng cấp đèn chính ô tô; bóng LED, bi gầm và bi Laser có cách chọn và vị trí sử dụng riêng — xem trang Nâng cấp ánh sáng.
 
 **Nguồn sáng + chóa + tấm chắn + thấu kính**
 
@@ -231,35 +233,35 @@ Số mẫu và khoảng giá tính theo danh mục trên trang (giá niêm yết
 
 **Titan**
 
-31 mẫu · 1.700.000đ – 9.900.000đThương hiệu Titan Moto (tên thương hiệu, không phải đèn xe máy) có các dòng Black, Gold, Platinum, CB và nhiều mẫu Mini 1.5–2.0 inch cho chóa nhỏ.Xem mẫu Titan →
+31 mẫu · 2.000.000đ – 9.900.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu) · bi lẻ từ 1.700.000đ/chiếcThương hiệu Titan Moto (tên thương hiệu, không phải đèn xe máy) có các dòng Black, Gold, Platinum, CB và nhiều mẫu Mini 1.5–2.0 inch cho chóa nhỏ.Xem mẫu Titan →
 
 **X-Light**
 
-31 mẫu · 3.900.000đ – 13.500.000đ365Group là nhà phân phối chính hãng X-Light; Auto365 là đại lý ủy quyền lắp đặt. Dải mẫu rộng từ dòng Mini (F+ Pro Mini) đến V20, V30 Ultra, Quantum X.Xem mẫu X-Light →
+31 mẫu · 3.900.000đ – 13.500.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)365Group là nhà phân phối chính hãng X-Light; Auto365 là đại lý ủy quyền lắp đặt. Dải mẫu rộng từ dòng Mini (F+ Pro Mini) đến V20, V30 Ultra, Quantum X.Xem mẫu X-Light →
 
 **GTR**
 
-13 mẫu · 4.500.000đ – 8.000.000đCác dòng Limited, Premium và G-LED qua nhiều thế hệ; nhiều mẫu đời cũ đang để liên hệ.Xem mẫu GTR →
+13 mẫu · 4.500.000đ – 8.000.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)Các dòng Limited, Premium và G-LED qua nhiều thế hệ; nhiều mẫu đời cũ đang để liên hệ.Xem mẫu GTR →
 
 **Red Lighting**
 
-10 mẫu · 4.500.000đ – 10.000.000đCác dòng Red Magic, Red Turbo, Red Pro, Red Ultra; có mẫu "siêu ngắn" cho cụm đèn ít chiều sâu.Xem mẫu Red Lighting →
+10 mẫu · 4.500.000đ – 10.000.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)Các dòng Red Magic, Red Turbo, Red Pro, Red Ultra; có mẫu "siêu ngắn" cho cụm đèn ít chiều sâu.Xem mẫu Red Lighting →
 
 **AES**
 
-8 mẫu · 3.600.000đ – 9.000.000đDòng EV2, EV6, EV8, SV Turbo và Turbo BM; có mẫu lens vuông và bản 3 nhiệt màu.Xem mẫu AES →
+8 mẫu · 3.600.000đ – 10.000.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)Dòng EV2, EV6, EV8, SV Turbo và Turbo BM; có mẫu lens vuông và bản 3 nhiệt màu.Xem mẫu AES →
 
 **Henvvei**
 
-5 mẫu · 8.000.000đ – 13.500.000đDòng L83, L85, L88 Pro và module H3 Pro ở phân khúc tầm trung – cao.Xem mẫu Henvvei →
+5 mẫu · 8.000.000đ – 13.500.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)Dòng L83, L85, L88 Pro và module H3 Pro ở phân khúc tầm trung – cao.Xem mẫu Henvvei →
 
 **Matrix Light**
 
-3 mẫu · 7.000.000đ – 7.000.000đXem mẫu Matrix Light →
+3 mẫu · 7.000.000đ – 7.000.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)Xem mẫu Matrix Light →
 
 **Fogway**
 
-2 mẫu · 7.000.000đ – 8.500.000đXem mẫu Fogway →
+2 mẫu · 7.000.000đ – 8.500.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu)Xem mẫu Fogway →
 
 **Osram**
 
@@ -278,7 +280,7 @@ Mercedes C300 lắp bi LED X-Light V20 — mỗi hãng có nhiều dòng và đ�
 | Phân khúc | Phù hợp | Cần kiểm tra | Giá sản phẩm |
 | --- | --- | --- | --- |
 | Phổ thôngDưới 5 triệu | Thay halogen zin, đi phố là chính; có bi Mini cho chóa nhỏ | Lens, không gian chóa, tản nhiệt | 2.000.000đ – 4.700.000đ16 mẫu · giá niêm yết/bộ |
-| Tầm trung5 – 10 triệu | Đi phố và đi tỉnh thường xuyên | Nhiệt màu, đường cắt Cos, pát/mặt dưỡng | 5.000.000đ – 9.900.000đ48 mẫu · giá niêm yết/bộ |
+| Tầm trung5 – dưới 10 triệu | Đi phố và đi tỉnh thường xuyên | Nhiệt màu, đường cắt Cos, pát/mặt dưỡng | 5.000.000đ – 9.900.000đ48 mẫu · giá niêm yết/bộ |
 | Cao cấpTừ 10 triệu | Đi tỉnh, cao tốc, chạy đêm nhiều | Không gian tản nhiệt, hệ điện, cân chỉnh | 10.000.000đ – 13.500.000đ10 mẫu · giá niêm yết/bộ |
 
 Khoảng giá tính theo giá niêm yết/bộ trên trang sản phẩm Auto365 (đối chiếu 12/10/2026), chưa gồm VAT, pát/mặt dưỡng, dây và công lắp. Không tính 3 mẫu bán lẻ theo chiếc (từ 1.700.000đ/chiếc) và 29 mẫu đời cũ đang để "Liên hệ". Một số mẫu có nhiều phiên bản (1 hoặc 3 nhiệt màu) với giá khác nhau. Xem từng mẫu trong danh mục sản phẩm phía trên.
@@ -297,7 +299,7 @@ Chỉnh đường cắt Cos, chiều cao vùng sáng và cân bằng hai bên đ
 
 **Dùng đúng Cos/Pha**
 
-Theo Điều 20 Luật Trật tự, an toàn giao thông đường bộ 2024: bật đèn từ 18 giờ đến 6 giờ sáng hôm sau và khi trời mưa, sương mù; chuyển Pha sang Cos khi gặp xe ngược chiều, trong khu đông dân cư có chiếu sáng hoặc khi chuyển hướng tại nút giao.
+Theo Điều 20 Luật Trật tự, an toàn giao thông đường bộ 2024: bật đèn chiếu sáng phía trước từ 18 giờ hôm trước đến 06 giờ hôm sau, hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn. Tắt đèn chiếu xa (Pha), bật đèn chiếu gần (Cos) khi gặp người đi bộ qua đường; khi đi qua khu đông dân cư có hệ thống chiếu sáng đang hoạt động; khi gặp xe đi ngược chiều, trừ trường hợp dải phân cách có khả năng chống chói; khi chuyển hướng tại nơi đường giao nhau.
 
 Nguồn: Điều 20 Luật TTATGT đường bộ 2024 (Cổng thông tin Chính phủ). Quy định về lắp thêm đèn (Nghị định 168/2024, 238/2026) xem tại trang Nâng cấp ánh sáng.
 
@@ -307,15 +309,11 @@ Nguồn: Điều 20 Luật TTATGT đường bộ 2024 (Cổng thông tin Chính 
 
 **Cách chăm sóc mặt kính đèn pha ô tô hạn chế xước, ố vàng và rạn nứt**
 
-**Lắp GTR G1 Turbo V2 khi hốc đèn chật: 8 mục cần kiểm tra**
-
 **Xe báo lỗi bóng đèn sau nâng cấp: Nguyên nhân và cách xử lý**
 
 **Thiết kế hai nguồn Cos trên đèn bi LED X-Light V20L Quantum mang lại lợi ích thiết thực nào?**
 
 **Tại sao nên kiểm tra độ chụm và cường độ sáng của đèn trước khi phượt hè**
-
-**X5 Ultra: Tầm chiếu xa hàng trăm mét - Làm chủ tốc độ trên đường cao tốc đêm hè.**
 
 Các mẫu bi LED ô tô trên trang có giá sản phẩm niêm yết từ 2.000.000đ đến 13.500.000đ mỗi bộ (bi lẻ bán theo chiếc từ 1.700.000đ), chưa gồm VAT. Pát/mặt dưỡng, dây/relay, công lắp và cân chỉnh tùy xe được báo riêng sau khi kiểm tra.
 
@@ -333,7 +331,7 @@ Không thể kết luận chung cho mọi cấu hình. Khi đăng kiểm, cơ s�
 
 Thời gian tham khảo trên trang sản phẩm Auto365: X-Light V20L Quantum khoảng 4–5 giờ, X-Light V30 Ultra khoảng 5–7 giờ. Thời gian thực tế tùy cấu trúc cụm đèn, phương án đi dây và cân chỉnh; kỹ thuật viên báo cụ thể khi hẹn lịch.
 
-Phần lớn mẫu trên trang công bố tuổi thọ 30.000 giờ, một số 50.000 giờ, theo nhà sản xuất. Thời hạn bảo hành ghi theo từng mã sản phẩm. Theo chính sách bảo hành đèn của Auto365: cần còn hạn, đã kích hoạt bảo hành điện tử 365Group, còn nguyên tem/seri; lỗi nhà máy (không sáng, chập chờn, kẹt màn trập, hư quạt, sáng yếu) được đổi mới; bị từ chối nếu đổ keo lên bi, mài cắt ngoài vị trí cho phép, vào nước do thi công hoặc tự tháo mở. Thời gian xử lý 15–30 ngày làm việc.
+Phần lớn mẫu trên trang công bố tuổi thọ 30.000 giờ, một số 50.000 giờ, theo nhà sản xuất — tuổi thọ công bố không phải thời hạn bảo hành. Thời hạn và điều kiện bảo hành theo từng mã sản phẩm. Theo chính sách bảo hành đèn của Auto365: cần còn hạn, đã kích hoạt bảo hành điện tử 365Group, còn nguyên tem/seri; lỗi nhà máy (không sáng, chập chờn, kẹt màn trập, hư quạt, sáng yếu) được đổi mới; bị từ chối nếu đổ keo lên bi, mài cắt ngoài vị trí cho phép, vào nước do thi công hoặc tự tháo mở. Thời gian xử lý thông thường 15–30 ngày làm việc kể từ khi Auto365 nhận sản phẩm và hồ sơ đáp ứng đủ điều kiện; trường hợp đủ điều kiện nhưng hết sản phẩm thay thế có thể tới 90 ngày làm việc. Khi tiếp nhận, Auto365 xác nhận phạm vi và thời gian dự kiến cho từng hồ sơ.
 
 Nếu xe mới đã dùng đèn LED projector zin và đáp ứng nhu cầu, có thể giữ nguyên hoặc bổ sung bi gầm. Với xe mới dùng halogen chóa phản xạ hoặc bi halogen, độ bi LED là lựa chọn phổ biến; nên hỏi trước về ảnh hưởng tới bảo hành hãng xe và phương án đấu nối không cắt dây zin.
 
@@ -349,8 +347,8 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: ĐÃ DUYỆT XONG · ĐẠT NỘI DUNG V1.8. Đã chốt toàn bộ: kiểm duyệt kỹ thuật, nội dung, giá/đơn vị 106 mẫu và câu chữ FAQ gồm câu đăng kiểm (Nguyễn Quang Đạo, 13/10/2026). Không còn việc mở về nội dung.
+Trạng thái: BẢN SỬA 14/10/2026 THEO TÁI KIỂM 13/10 — CHỜ DUYỆT LẠI. Đã sửa F01–F15 trong phạm vi trang. Cần duyệt lại: F01 (nhiệt màu X5 Pro, V30 Ultra 2022 tạm ghi "chưa xác minh"), F03 (câu bảo hành theo chính sách gốc — Commercial), F08 (đã gỡ nhãn "Độc quyền" theo lock 365Group), F12 (tóm tắt Điều 20 — anh Nguyễn Quang Đạo).
 
-Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8. Không có lỗi chặn nội dung.
+Lịch sử: bản 13/10/2026 được anh Nguyễn Quang Đạo duyệt; tái kiểm 13/10 chấm 90,3/100, chưa đạt V1.8.
 
 Xem phiếu duyệt chi tiết →
