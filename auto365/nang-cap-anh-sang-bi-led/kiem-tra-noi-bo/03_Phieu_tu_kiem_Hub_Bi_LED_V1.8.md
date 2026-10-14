@@ -21,7 +21,7 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | BL-13 | Trả góp / khuyến mãi (đối thủ có) | Không có trang/chương trình trả góp trên auto365.vn (/tra-gop 404) → không nêu | — |
 | U2 | Lead test end-to-end | POST /api/leads theo cấu hình form → {"success":true, lead_id 162, test:true}; source_page sửa thành nang-cap-anh-sang-bi-led | Log kiểm thử |
 | BL-14 | Chữ khối "Vì sao" còn từ claim ("toàn quốc", "chuyên về đèn", "hằng ngày") | Đồng bộ 6 thẻ theo bản hub đã duyệt 13/10/2026 | HTML #vi-sao |
-| F01 | Nhiệt màu "4" (X5 Pro, V30 Ultra 2022) | Không đoán giá trị; card/so sánh/bảng ghi "Chưa xác minh (PDP ghi “4”)", bỏ khỏi bộ lọc nhiệt màu; 04 đánh dấu chờ xác minh | HTML, 04 |
+| F01 | Nhiệt màu "4" (X5 Pro, V30 Ultra 2022) | PDP đã sửa thành 5000K (đối chiếu 14/10/2026); card, bộ lọc, so sánh, bảng thông số và 04 cập nhật 5000K | PDP X5 Pro, V30 Ultra 2022 |
 | F02 | Nút "Xem tất cả mẫu khớp" chỉ chuyển giá/điện | Xoá bộ lọc cũ rồi áp đủ lens/giá/điện/nhiệt màu (trắng = 5000–6000K); mẫu thiếu kích thước lens không vào kết quả khớp | Log kiểm thử |
 | F03 | FAQ bảo hành thiếu mốc và ngoại lệ 90 ngày | Ghi mốc "kể từ khi nhận sản phẩm và hồ sơ đủ điều kiện", trường hợp tới 90 ngày, tách tuổi thọ công bố với bảo hành; text = FAQPage | auto365.vn/chinh-sach-bao-hanh |
 | F04 | Khoảng giá hãng khác đơn vị | Ghi "giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu"; tách bi lẻ /chiếc (Titan); AES tính tới 10 triệu (Turbo BM 3 nhiệt màu) | HTML #thuong-hieu |
@@ -51,7 +51,7 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | --- | --- | --- |
 | Nghiệm thu production | IT/SEO | Checklist 02 mục 6 |
 | Xác nhận lead 162 trong CRM rồi xoá | Chủ quản/IT | Lead test gửi 13/10/2026 |
-| Duyệt lại F01/F08/F12 | Nguyễn Quang Đạo | Nhiệt màu đúng SKU X5 Pro, V30 Ultra 2022; gỡ nhãn Độc quyền; tóm tắt Điều 20 |
+| Duyệt lại F08/F12 | Nguyễn Quang Đạo | Gỡ nhãn Độc quyền; tóm tắt Điều 20 |
 | Xác nhận câu bảo hành F03 | Commercial | Câu theo chính sách gốc |
 | Inventory URL, GSC, đo AI theo bộ query | SEO | Theo báo cáo tái kiểm 13/10 mục 6, 10–11 |
 | 301 bài blog bảng giá bi LED cũ | SEO/CMS | 02 mục 1 |

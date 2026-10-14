@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `1351746d8b9a5debdf4d1dad62f4d7523bc36a546f65cd2679f80b9b62fd50c3`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `071d3ca4a14b0846366ef7ad72081774f3026cedd07e56ffd477bf51d213935a`
 
 Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -347,7 +347,7 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: BẢN SỬA 14/10/2026 THEO TÁI KIỂM 13/10 — CHỜ DUYỆT LẠI. Đã sửa F01–F15 trong phạm vi trang. Cần duyệt lại: F01 (nhiệt màu X5 Pro, V30 Ultra 2022 tạm ghi "chưa xác minh"), F03 (câu bảo hành theo chính sách gốc — Commercial), F08 (đã gỡ nhãn "Độc quyền" theo lock 365Group), F12 (tóm tắt Điều 20 — anh Nguyễn Quang Đạo).
+Trạng thái: BẢN SỬA 14/10/2026 THEO TÁI KIỂM 13/10 — CHỜ DUYỆT LẠI. Đã sửa F01–F15 trong phạm vi trang. Cần duyệt lại: F03 (câu bảo hành theo chính sách gốc — Commercial), F08 (đã gỡ nhãn "Độc quyền" theo lock 365Group), F12 (tóm tắt Điều 20 — anh Nguyễn Quang Đạo).
 
 Lịch sử: bản 13/10/2026 được anh Nguyễn Quang Đạo duyệt; tái kiểm 13/10 chấm 90,3/100, chưa đạt V1.8.
 
