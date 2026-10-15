@@ -36,6 +36,7 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | AS14-05 (15/10) | 4 nhãn "Độc quyền" chưa có căn cứ trong hồ sơ | Giữ nhãn: chủ quản xác nhận 14/10/2026 đây là sản phẩm độc quyền tại Auto365 (theo PDP). Ghi ở cột "Ghi chú Commercial" của 04 cho 4 dòng | 04 |
 | AS14-06 (15/10) | 22 bóng LED ghi "VAT xác nhận theo báo giá" trong khi PDP ghi chưa VAT | Đổi thành "Chưa gồm VAT" theo ghi chú giá PDP (chủ quản xác nhận giá/VAT theo PDP 10/10) — card, modal, 04 đồng bộ | HTML + 04 |
 | AS14-08/09 (15/10) | Bi cầu/projector; "Cos ~55W Cos/bi"; chữ VAT nhỏ | Câu ngắn dưới bảng nhóm: bi cầu = projector có thấu kính, Bi LED/Mini/Laser thuộc dạng này; spec card "Cos ~55W/bi", "Pha ~90W/bi"; chữ VAT 12,5px | HTML |
+| Theo dõi (15/10) | Việc ngoài phạm vi preview | Chủ quản xác nhận 15/10/2026: reviewer đã chấm lại bản preview mới; CMS đã áp các sửa vào bản v2; lead test 143 đã xoá khỏi CRM | — |
 | A05 | Thiếu `<main>` | Một `<main id="main-content">` + skip link | HTML |
 | U3 | Bộ bàn giao | 01 Nội dung (xuất tự động, có SHA-256) + 02 CMS/SEO + 03 phiếu này + 04 Master Data cùng phiên bản | docs/nang-cap-anh-sang/ (nội bộ) |
 | A01 / RW-05 | Khóa giá/VAT/đơn vị | Chủ quản xác nhận 10/10/2026: giá, VAT, đơn vị như PDP là đúng; 129 dòng Master Data đánh dấu đã xác nhận | 04_Master_Data |
