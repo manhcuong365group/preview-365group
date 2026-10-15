@@ -4,7 +4,7 @@
 |---|---|
 | Bản duyệt | `auto365/bi-gam/vinfast-vf3/index.html` — SHA-256 ghi ở cuối phiếu, đối chiếu với bản trên preview |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast-vf3/ |
-| URL production dự kiến | https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3 (SEO/CMS điền domain production khi đăng) |
+| URL production dự kiến | https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3 (SEO/CMS điền domain production khi đăng) |
 | Ngày duyệt | 10/10/2026 (Asia/Saigon) |
 | Cách ghi nhận | Xác nhận "anh Đạo duyệt" do người phụ trách nội dung chuyển lại ngày 10/10/2026. Phiếu ghi đúng người và phạm vi được xác nhận, không thay chữ ký gốc nếu quy trình nội bộ yêu cầu |
 
@@ -74,4 +74,4 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `830b8b6ece3bf54e9262a7c8f974f3cccf72df560426184eb10737d833f4e2dd`
+SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `afb8d79c4cf5cc83676f15f32a2ed481de6f1552e71d20a2c68a2d5b7b4d4778`

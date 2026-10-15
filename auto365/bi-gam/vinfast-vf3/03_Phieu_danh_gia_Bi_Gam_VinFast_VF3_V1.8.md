@@ -5,7 +5,7 @@
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 (hiệu lực 06/10/2026) |
-| Tên trang / URL | Bi gầm VinFast VF3 — canonical khai báo `https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3`; CMS điền domain production khi đăng (bước phát hành) |
+| Tên trang / URL | Bi gầm VinFast VF3 — canonical khai báo `https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3`; CMS điền domain production khi đăng (bước phát hành) |
 | Loại trang / Intent | Tư vấn theo xe / lựa chọn — "bi gầm VinFast VF3": lắp được không, chọn mẫu nào, giá gồm gì, khi nào cần kiểm tra xe |
 | Môi trường / Phiên bản | Preview `https://preview-365group.pages.dev/bi-gam/vinfast-vf3/`; bản nguồn `index.html` 10/10/2026 |
 | Ngày kiểm / Múi giờ | 10/10/2026, Asia/Saigon |
