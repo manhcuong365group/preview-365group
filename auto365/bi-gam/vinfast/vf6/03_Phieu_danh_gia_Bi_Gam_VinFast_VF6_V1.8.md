@@ -32,3 +32,11 @@
 - Popup "Xem tất cả" mở đủ 14 mẫu ngay trên trang.
 - Lens AES SV 3.0 Pro 3.0 inch, bảo hành AES SV 3.0 Max 24 tháng (chủ quản xác nhận 14/10).
 - Canonical/breadcrumb theo URL mới /nang-cap-anh-sang-bi-gam/vinfast/vf6.
+
+## Chấm lại 15/10/2026 (U3 không chấm, /95 → /100)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,5 | 9,0 | 9,5 | 9,5 | 9,5 | 9,5 | 9,0 | 5 | 5 | 4,75 |
+
+C 28,0 · S 28,5 · G 23,5 · U 9,75 → **89,75/95 = 94,5/100**. G3 lên 5 (2 video + case + ảnh thật VF6). Còn trừ: G2 (popup chỉ có sản phẩm, chưa có tiêu chí chọn), C3 (FAQ khô), U2 (chưa test lead riêng trang). Áp bộ FAQ mới (câu chọn mẫu theo tiêu chí) → C3 9,5, G2 9,5 → 90,75/95 = 95,5/100. Trạng thái ĐẠT giữ theo duyệt anh Đạo.
