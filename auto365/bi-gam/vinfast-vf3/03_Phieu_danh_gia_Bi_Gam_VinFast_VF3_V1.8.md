@@ -108,3 +108,5 @@
 | 10 | 9,5 | 9,0 | 9,5 | 9,5 | 9,5 | 9,5 | 10 | 5 | 5 | 5 |
 
 C 28,5 · S 28,5 · G 24,5 · U 10 → **91,5/95 = 96,3/100 — ĐẠT**. Trừ C3: FAQ còn vài câu khô, trùng ý (đề xuất bộ FAQ 6 câu đang chờ duyệt). S3: URL mới /nang-cap-anh-sang-bi-gam/vinfast/vf3 đã đồng bộ canonical/breadcrumb; redirect v2 trỏ http:// là việc IT.
+
+Sau khi thay FAQ 6 câu (15/10): C3 9,5 → **92,0/95 = 96,8/100 — ĐẠT**.
