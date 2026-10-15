@@ -63,7 +63,7 @@ const htmlMustContain = [
   'data-yt="Aa0Of6ZtxEE"',
   'data-yt="weADPByfN7g"',
   '"@type": "FAQPage"',
-  'Không thể kết luận kết quả kiểm định chỉ từ tên sản phẩm',
+  'không thể kết luận kết quả kiểm định chỉ từ tên sản phẩm',
   // V1.8 §3/§9.4/§10: schema dates and entities must live in the HTML, not only in vf3.json
   '"@type": "Article"',
   '"about": [',

@@ -26,4 +26,6 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF7 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (13/10/2026): `518c47d3c6d28ba54e9b154ac5f74686f7f07340161be89fb9219f9669bc7727`
+SHA-256 `index.html` (13/10/2026): `98bb2fc588359fc28605a88860f23661761d478743bb85bd17dbd19e9c43750e`
+
+- 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
