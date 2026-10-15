@@ -1,8 +1,8 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `18bb9506e44eeca7579f551983843cc4dfc88279fa63dc3c9cd147be9d076d52`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `ad4f86c7f9f5be612d506f1b86c70f6db9e51886a737af4de91e0225945e1da6`
 
-Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
+Ngày xuất: 15/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
 
@@ -10,7 +10,7 @@ Ngày xuất: 14/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nhật 14/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 14/10/2026 · Cập nhật 15/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -141,7 +141,11 @@ Theo 127 case bi LED đã đăng — bấm để xem xe thực tế. Cùng dòng
 
 Cặp bi LED đặt trong cụm đèn pha BMW 3 F30 đã mở — kích thước bi phải vừa không gian bên trong cụm đèn.
 
-### Chọn bi LED theo lens, nhiệt màu và thông số  `#chon-bi-led`
+### Chọn bi LED theo nhu cầu, lens, nhiệt màu và thông số  `#chon-bi-led`
+
+Chọn theo tình huống sử dụng trước, rồi mới tới lens, nhiệt màu và thông số. Mỗi phương án đều cần kiểm cụm đèn thực tế trên xe.
+
+Case chỉ để tham khảo — cùng dòng xe nhưng khác đời/phiên bản vẫn có thể khác cụm đèn. Không chọn mẫu chỉ theo watt hay giá.
 
 **Lens 3.0, 2.5, 2.0 hay 1.8 inch?**
 
@@ -347,8 +351,8 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: ĐÃ DUYỆT 14/10/2026 · ĐẠT NỘI DUNG V1.8 — tự chấm 94,5/95 (quy đổi 99,5/100). Đã sửa F01–F15 theo tái kiểm 13/10; chủ quản duyệt bảo hành (F03), Điều 20 (F12), giữ nhãn "Độc quyền" (F08); tên sản phẩm đồng bộ theo CMS; lead test 162 đã vào CRM. Việc còn lại ngoài trang: 301 ba bài blog bảng giá cũ, bổ sung lens/công suất trên PDP, nghiệm thu production.
+Trạng thái: BẢN SỬA 15/10/2026 THEO TÁI KIỂM 14/10 — CHỜ TÁI KIỂM. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) chờ anh Nguyễn Quang Đạo duyệt. R06 (inventory/301/production) giao SEO/CMS.
 
-Lịch sử: bản 13/10/2026 do Nguyễn Quang Đạo duyệt; tái kiểm 13/10 chấm 90,3/100.
+Lịch sử: bản 13/10 do Nguyễn Quang Đạo duyệt; tái kiểm độc lập 90,3/100 (13/10), 93,5/100 (14/10). Tự chấm team bỏ U3: 94,5/95 — chỉ là điểm theo phạm vi 95.
 
 Xem phiếu duyệt chi tiết →

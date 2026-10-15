@@ -1,6 +1,6 @@
 # 03 — Phiếu tự kiểm Hub Bi LED ô tô V1.8
 
-Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
+Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
 
 ## Đã xử lý
 
@@ -37,21 +37,28 @@ Ngày: 14/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
-| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 14/10/2026; schema lastReviewed/dateModified 2026-10-14, khớp dòng "Duyệt và cập nhật 14/10/2026" | 02 mục 2 |
+| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 15/10/2026; schema lastReviewed/dateModified 2026-10-14, khớp dòng "Duyệt và cập nhật 15/10/2026" | 02 mục 2 |
 
-## Điểm tự chấm sau sửa (14/10/2026, bỏ U3 theo chỉ đạo)
+## Kết quả chấm (ghi đúng phạm vi)
 
-| Mã | Điểm | Căn cứ / phần còn trừ |
-| --- | ---: | --- |
-| C1 Chính xác, nhất quán | 10/10 | F01–F05 đã đóng; nhiệt màu, giá biến thể, đơn vị, bi lẻ khớp PDP |
-| C2 Đầy đủ theo vai trò | 10/10 | 62 mẫu thiếu lens, 19 mẫu thiếu công suất do PDP không công bố — trang ghi "chưa có", sheet bổ sung đã gửi Kinh doanh |
-| C3 Tự nhiên, hữu ích | 10/10 | Tên sản phẩm đồng bộ sau khi CMS đổi tên |
-| S1 Vai trò URL | 9,5/10 | 3 bài blog bảng giá bi LED cũ vẫn trả 200 — chờ 301 |
-| S2 SEO trên trang | 10/10 | Title/meta/H1, th scope đủ, schema khớp hiển thị |
-| S3 Liên kết, hồ sơ | 10/10 | 02 cập nhật theo hướng dẫn Google 2026 |
-| G1 + G2 + G3 | 25/25 | Bảo hành đủ phạm vi, "bi cầu", Điều 20 nguyên văn, nguồn PDP |
-| U1 + U2 | 10/10 | Finder chuyển đủ điều kiện; lead 162 đã xác nhận |
-| **Tổng** | **94,5/95 = 99,5/100** | **ĐẠT** — không lỗi chặn |
+| Lượt | Người chấm | Cách chấm | Kết quả |
+| --- | --- | --- | --- |
+| Tái kiểm 13/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | 90,3/100 — chưa đạt |
+| Tái kiểm 14/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **93,5/100 — chưa đạt** (SEO 28,3/30; GEO 23,2/25) |
+| Tự chấm team 14/10/2026 | Team Content | Bỏ U3 theo chỉ đạo, thang 95 | 94,5/95 — chỉ là điểm theo phạm vi 95, **không dùng thay** kết quả tái kiểm đủ 12 tiêu chí |
+| Bản sửa 15/10/2026 (R01–R07) | — | — | **Chờ tái kiểm** |
+
+## Sửa theo tái kiểm 14/10/2026 (bản 15/10)
+
+| Mã | Phát hiện | Đã làm | Bằng chứng |
+| --- | --- | --- | --- |
+| R01 | Lọc 24 tháng bỏ sót mẫu ghi "2 năm" | Quy "2 năm"/"24 Tháng" về 24 tháng cho bộ lọc (5 mẫu); câu bảo hành gốc giữ nguyên, kể cả Red Magic 1.0 New Plus "1 năm đổi mới + 1 năm thay thế linh kiện" | 04 cột "Bảo hành dùng để lọc"; log kiểm thử |
+| R02 | Lens V30 Ultra 2022 chưa theo PDP mới | Đọc lại bảng thông số toàn bộ PDP 15/10: thêm kích thước lens cho 36 mẫu (gồm V30 Ultra 2022 = 3.0 inch); còn 26 mẫu PDP chưa ghi. Không nhập các số không rõ đơn vị ("29", "45") | 04 cột lịch sử cập nhật |
+| R03 | Điểm tự chấm phạm vi 95 trình bày như đạt đủ V1.8 | Tách bảng kết quả theo lượt/cách chấm; aside và trang phiếu ghi "chờ tái kiểm" | Mục "Kết quả chấm" |
+| R04 | Dữ liệu sửa 14/10 thiếu lịch sử | 04 thêm cột "Lịch sử cập nhật" (ngày · trường · cũ → mới · nguồn) cho từng dòng; giữ ngày lấy dữ liệu lần đầu | 04 |
+| R05 | Chọn theo nhu cầu còn chung | Thêm bảng 4 tình huống (đi phố, đường tối/đi tỉnh, mưa, xe LED zin/xe điện): nên cân nhắc, cần kiểm, khi chưa cần đổi bi; dẫn case thật Innova/V30 Ultra 2026, BMW 3 F30/Turbo BM, VF3/Quantum X V2 — **bản nháp chờ anh Nguyễn Quang Đạo duyệt** | HTML #chon-bi-led |
+| R07 | Ô so sánh Turbo BM chỉ "Từ 9 triệu" | Ô giá trong so sánh hiện thêm dòng biến thể (1 nhiệt màu 9 triệu, 3 nhiệt màu 10 triệu) cho mọi mẫu có ghi chú biến thể | HTML compare |
+| R06 | Inventory URL, 301, production | Ngoài repo — giao SEO/CMS | docs/yeu-cau-cms-bi-led-2026-10-14.md |
 
 ## Giữ theo quyết định chủ quản
 

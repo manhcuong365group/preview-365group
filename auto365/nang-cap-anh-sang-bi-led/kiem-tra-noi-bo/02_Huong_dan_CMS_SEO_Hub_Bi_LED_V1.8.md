@@ -4,7 +4,7 @@ Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8 (06/10/2026)
 Bản nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 ghi trong 01 cùng phiên bản
 URL preview: `https://preview-365group.pages.dev/nang-cap-anh-sang-bi-led/` (noindex có chủ đích của staging)
 URL production: `https://auto365.vn/nang-cap-anh-sang-bi-led` — đang là trang danh mục "Bi LED ô tô"; hub **thay nội dung tại URL này**, giữ nguyên URL
-Ngày hồ sơ: 14/10/2026, Asia/Saigon
+Ngày hồ sơ: 15/10/2026, Asia/Saigon
 
 ## 1. Vai trò URL
 
@@ -27,8 +27,8 @@ Ngày hồ sơ: 14/10/2026, Asia/Saigon
 | H1 | Bi LED ô tô (đèn bi cầu LED) chính hãng tại Auto365 (duy nhất) |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-led |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (mục 6) |
-| Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản 13/10/2026. Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 14/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-14 |
-| dateModified | 2026-10-14 |
+| Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản 13/10/2026. Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 15/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-14 |
+| dateModified | 2026-10-15 |
 | Landmark | Một `<main id="main-content">` + skip link |
 
 Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto365 → Xe thực tế đã lắp bi LED, thi công tại Auto365 → Vì sao nên lắp bi LED tại Auto365? → 7 bước từ tiếp nhận đến bàn giao → Xem ánh sáng bi LED trước khi chọn → Bi LED ô tô: cần biết gì trước khi lắp? → Bi LED giá bao nhiêu? Chọn theo phân khúc → Lắp bi LED đúng và dùng đúng chế độ Cos/Pha → Tư vấn bi LED theo xe → Cẩm nang bi LED & đèn pha ô tô → Câu hỏi thường gặp về bi LED ô tô → Chưa biết xe của bạn hợp mẫu bi LED nào?.
@@ -47,7 +47,7 @@ Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto36
 ## 4. Dữ liệu sản phẩm & case
 
 - 106 mẫu bi LED = toàn bộ danh mục production `/nang-cap-anh-sang-bi-led` (107 mục, 5 trang phân trang), bỏ "Bi gầm LED X-Light F10" (bi gầm nằm nhầm danh mục). Bảng: `04_Master_Data_San_Pham_Bi_LED.csv`.
-- 20 mẫu đầu lấy theo hub Nâng cấp ánh sáng (09–10/10/2026); 86 mẫu còn lại lấy từ PDP ngày 12/10/2026. 77 mẫu có giá, 29 mẫu đời cũ "Liên hệ"; đơn vị mặc định /bộ, 3 mẫu "(lẻ)" /chiếc, Turbo BM /cặp theo PDP. **Anh Đạo duyệt giá/đơn vị 14/10/2026.**
+- 20 mẫu đầu lấy theo hub Nâng cấp ánh sáng (09–10/10/2026); 86 mẫu còn lại lấy từ PDP ngày 12/10/2026. 77 mẫu có giá, 29 mẫu đời cũ "Liên hệ"; đơn vị mặc định /bộ, 3 mẫu "(lẻ)" /chiếc, Turbo BM /cặp theo PDP. **Anh Đạo duyệt giá/đơn vị 15/10/2026.**
 - "Titan Moto" là tên thương hiệu (đèn ô tô). Loại xe: 105 ô tô, 1 mẫu ô tô/xe máy (X-Light V20 Moto, PDP ghi dùng được cả ô tô).
 - Case: 127 case bi LED (24 card DOM + 103 trong `<template id="caseMoreTpl">`), lọc theo hãng/dòng xe; 16 chip "Dòng xe đã lắp" lấy từ case.
 - Video: 16 clip bi LED ô tô từ kênh YouTube Auto365 (8 hiển thị sẵn).
@@ -73,9 +73,9 @@ Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto36
 
 ## 7. Đo lab trên preview
 
-Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-14T13:29:16.391Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
+Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-15T07:54:42.654Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
 
 | Cấu hình | Giới hạn | LCP | CLS | Load | Truyền tải | Request | DOM |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 1.10 s | 0.030 | 5.44 s | 1308 KB | 19 | 4701 |
-| desktop 1440 | không giới hạn | 0.26 s | 0.001 | 0.44 s | 2301 KB | 41 | 4701 |
+| mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 0.89 s | 0.030 | 5.11 s | 1310 KB | 19 | 4736 |
+| desktop 1440 | không giới hạn | 0.26 s | 0.001 | 0.43 s | 2302 KB | 41 | 4736 |
