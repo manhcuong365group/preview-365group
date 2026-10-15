@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `ad4f86c7f9f5be612d506f1b86c70f6db9e51886a737af4de91e0225945e1da6`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `a823e84bd3e42bc72e0142cade5b9ae45a76a5ed220cdcaa080718e44567e044`
 
 Ngày xuất: 15/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -10,7 +10,7 @@ Ngày xuất: 15/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 14/10/2026 · Cập nhật 15/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nhật 15/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -343,7 +343,7 @@ Nếu xe mới đã dùng đèn LED projector zin và đáp ứng nhu cầu, có
 
 Chuyên gia đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
 
-Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 14/10/2026
+Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 15/10/2026
 
 Thông số theo trang sản phẩm Auto365, đối chiếu 12/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
 
@@ -351,7 +351,7 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: BẢN SỬA 15/10/2026 THEO TÁI KIỂM 14/10 — CHỜ TÁI KIỂM. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) chờ anh Nguyễn Quang Đạo duyệt. R06 (inventory/301/production) giao SEO/CMS.
+Trạng thái: BẢN SỬA 15/10/2026 THEO TÁI KIỂM 14/10 — CHỜ TÁI KIỂM. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) đã được anh Nguyễn Quang Đạo duyệt 15/10/2026. R06 (inventory/301/production) giao SEO/CMS.
 
 Lịch sử: bản 13/10 do Nguyễn Quang Đạo duyệt; tái kiểm độc lập 90,3/100 (13/10), 93,5/100 (14/10). Tự chấm team bỏ U3: 94,5/95 — chỉ là điểm theo phạm vi 95.
 

@@ -37,7 +37,7 @@ Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
-| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 15/10/2026; schema lastReviewed/dateModified 2026-10-14, khớp dòng "Duyệt và cập nhật 15/10/2026" | 02 mục 2 |
+| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 15/10/2026; schema lastReviewed/dateModified 2026-10-15, khớp dòng "Duyệt và cập nhật 15/10/2026" | 02 mục 2 |
 
 ## Kết quả chấm (ghi đúng phạm vi)
 
@@ -56,7 +56,7 @@ Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | R02 | Lens V30 Ultra 2022 chưa theo PDP mới | Đọc lại bảng thông số toàn bộ PDP 15/10: thêm kích thước lens cho 36 mẫu (gồm V30 Ultra 2022 = 3.0 inch); còn 26 mẫu PDP chưa ghi. Không nhập các số không rõ đơn vị ("29", "45") | 04 cột lịch sử cập nhật |
 | R03 | Điểm tự chấm phạm vi 95 trình bày như đạt đủ V1.8 | Tách bảng kết quả theo lượt/cách chấm; aside và trang phiếu ghi "chờ tái kiểm" | Mục "Kết quả chấm" |
 | R04 | Dữ liệu sửa 14/10 thiếu lịch sử | 04 thêm cột "Lịch sử cập nhật" (ngày · trường · cũ → mới · nguồn) cho từng dòng; giữ ngày lấy dữ liệu lần đầu | 04 |
-| R05 | Chọn theo nhu cầu còn chung | Thêm bảng 4 tình huống (đi phố, đường tối/đi tỉnh, mưa, xe LED zin/xe điện): nên cân nhắc, cần kiểm, khi chưa cần đổi bi; dẫn case thật Innova/V30 Ultra 2026, BMW 3 F30/Turbo BM, VF3/Quantum X V2 — **bản nháp chờ anh Nguyễn Quang Đạo duyệt** | HTML #chon-bi-led |
+| R05 | Chọn theo nhu cầu còn chung | Thêm bảng 4 tình huống (đi phố, đường tối/đi tỉnh, mưa, xe LED zin/xe điện): nên cân nhắc, cần kiểm, khi chưa cần đổi bi; dẫn case thật Innova/V30 Ultra 2026, BMW 3 F30/Turbo BM, VF3/Quantum X V2 — anh Nguyễn Quang Đạo duyệt 15/10/2026 | HTML #chon-bi-led |
 | R07 | Ô so sánh Turbo BM chỉ "Từ 9 triệu" | Ô giá trong so sánh hiện thêm dòng biến thể (1 nhiệt màu 9 triệu, 3 nhiệt màu 10 triệu) cho mọi mẫu có ghi chú biến thể | HTML compare |
 | R06 | Inventory URL, 301, production | Ngoài repo — giao SEO/CMS | docs/yeu-cau-cms-bi-led-2026-10-14.md |
 
@@ -77,5 +77,5 @@ Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Nghiệm thu production | IT/SEO | Checklist 02 mục 6 |
 | Inventory URL, GSC, đo AI theo bộ query | SEO | Theo báo cáo tái kiểm 13/10 mục 6, 10–11 |
 | 301 bài blog bảng giá bi LED cũ (đưa hub mới lên production trước) | SEO/CMS | docs/yeu-cau-cms-bi-led-2026-10-14.md — Việc 2 |
-| Bổ sung kích thước lens (62 mẫu) và công suất (19 mẫu) lên PDP | Kinh doanh/hãng | docs/bi-led-thieu-lens-cong-suat-2026-10-14.xlsx |
+| Bổ sung kích thước lens (62 mẫu) và công suất (19 mẫu) lên PDP | Kinh doanh/hãng | docs/bi-led-thieu-lens-cong-suat-2026-10-15.xlsx |
 | Đo lab lại trên pages.dev | SEO | Số hiện tại đo trên preview cục bộ |
