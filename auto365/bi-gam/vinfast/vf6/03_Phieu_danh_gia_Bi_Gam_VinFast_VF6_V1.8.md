@@ -12,10 +12,10 @@
 | Mã | Tối đa | Điểm | Bằng chứng | Cần sửa |
 | --- | ---: | ---: | --- | --- |
 | C1 | 10 | 9,5 | 14 mẫu, giá và thông số đã được reviewer Nguyễn Quang Đạo duyệt 13/10/2026 (gồm 7 mẫu thêm theo PDP); "/bộ đèn", chưa VAT. | — |
-| C2 | 10 | 9,5 | Trả lời nhanh, 14 mẫu, bảng 8 mẫu + đánh đổi, 1 video VF6, case, giá, khi nào kiểm tra xe, 11 FAQ. | — |
+| C2 | 10 | 9,5 | Trả lời nhanh, 14 mẫu, bảng 8 mẫu + đánh đổi, 2 video VF6, case, giá, khi nào kiểm tra xe, 12 FAQ. | — |
 | C3 | 10 | 9,0 | Văn tự nhiên, không claim tuyệt đối. | FAQ dựng theo khung VF3, ít chi tiết riêng VF6. |
 | S1 | 10 | 9,5 | Intent "bi gầm VinFast VF6", tách hub ngành và trang VF3. | — |
-| S2 | 10 | 9,5 | Title/H1/meta khớp; alt đầy đủ; Article + CollectionPage(14) + FAQPage(11) khớp hiển thị. | — |
+| S2 | 10 | 9,5 | Title/H1/meta khớp; alt đầy đủ; Article + CollectionPage(14) + FAQPage(12) khớp hiển thị. | — |
 | S3 | 10 | 9,5 | Canonical khai báo; link hub, PDP, case; 301 từ đường dẫn cũ. | Link trộn v2.auto365.vn và auto365.vn — CMS thống nhất domain khi đăng. |
 | G1 | 10 | 9,5 | Câu đầu nêu nhu cầu, có từ khoá "lắp bi gầm VinFast VF6", giá, hãng. | — |
 | G2 | 10 | 9,5 | Mức xác minh từng mẫu: case/video vs "Kỹ thuật xác nhận"; bảng có nguồn PDP. | — |
@@ -25,3 +25,10 @@
 
 **Điểm:** C 28,0 · S 28,5 · G 23,5 · U1+U2 9,75 · **Tổng 89,75/95 → 94,5/100**.
 **Kết luận: ĐẠT — đã được Nguyễn Quang Đạo duyệt 13/10/2026** (chủ quản xác nhận). Ghi chú nội bộ: điểm tự chấm còn dưới 95 do G3 — bổ sung ảnh thật VF6 để nâng điểm bằng chứng.
+
+## Cập nhật 15/10/2026
+
+- Nút "Xem thêm câu hỏi" mở đủ 12 FAQ khi bấm thật (trước bị 2 handler bật/tắt chồng nhau).
+- Popup "Xem tất cả" mở đủ 14 mẫu ngay trên trang.
+- Lens AES SV 3.0 Pro 3.0 inch, bảo hành AES SV 3.0 Max 24 tháng (chủ quản xác nhận 14/10).
+- Canonical/breadcrumb theo URL mới /nang-cap-anh-sang-bi-gam/vinfast/vf6.

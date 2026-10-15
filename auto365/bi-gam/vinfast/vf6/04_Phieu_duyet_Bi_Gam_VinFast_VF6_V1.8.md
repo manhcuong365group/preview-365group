@@ -22,7 +22,6 @@
 
 | Việc | Giai đoạn |
 |---|---|
-| AES SV 3.0 Pro: bảng so sánh chưa có thông số lens (để "—") | Bổ sung khi có PDP |
 | Đơn vị giá: trang dùng "/bộ đèn" như VF3; bài case X-Light ghi "/cặp" | Chủ quản chốt nếu cần đồng bộ |
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
