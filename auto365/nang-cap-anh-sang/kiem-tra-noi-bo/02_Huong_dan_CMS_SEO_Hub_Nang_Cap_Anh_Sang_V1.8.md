@@ -5,7 +5,7 @@ Bản nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 ghi trong 01 c
 Hồ sơ bàn giao: `docs/nang-cap-anh-sang/` (nội bộ, không deploy lên Cloudflare)
 URL preview: `https://preview-365group.pages.dev/nang-cap-anh-sang/` (noindex có chủ đích của staging)
 URL production: `https://auto365.vn/nang-cap-anh-sang` — đang là trang danh mục "Độ đèn ô tô"; hub sẽ **thay nội dung tại URL này**, giữ nguyên URL
-Ngày hồ sơ: 10/10/2026, Asia/Saigon
+Ngày hồ sơ: 10/10/2026 · cập nhật 15/10/2026 (delta 13–15/10), Asia/Saigon
 
 ## 1. Vai trò URL
 
@@ -28,16 +28,16 @@ Các trang con nên có link quay về hub (breadcrumb hoặc khối "Xem tổng
 
 | Trường | Giá trị |
 | --- | --- |
-| Title | Độ đèn ô tô: Bi LED, Bi Laser, bi gầm, bóng LED \| Auto365 |
+| Title | Độ đèn ô tô: Bi LED, Bi Laser, bi gầm, bóng LED &#124; Auto365 |
 | Meta description | Độ đèn ô tô: so sánh Bi LED, Bi Laser, bi gầm và bóng LED theo xe, nhu cầu, giá sản phẩm, chi phí lắp cùng lưu ý kỹ thuật tại Auto365. |
 | H1 | Độ đèn ô tô: Bi LED, Bi Laser, bi gầm, bóng LED và đèn trợ sáng (duy nhất) |
 | Canonical | https://auto365.vn/nang-cap-anh-sang |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (xem mục 6) |
 | Rà soát kỹ thuật | Nguyễn Quang Đạo — **đã duyệt bản 12/10/2026** (bản cuối, chủ quản xác nhận; lượt duyệt trước 10/10/2026). Schema: `reviewedBy` + `lastReviewed` 2026-10-12 trên CollectionPage |
-| dateModified | 2026-10-10 — ngày nội dung sửa thực tế; không đổi chỉ vì kiểm lại |
+| dateModified | 2026-10-15 — ngày sửa nội dung thực tế (delta 13–15/10: bỏ con số phạt, thương hiệu Titan Black, mốc F15, bố cục, ảnh, bộ lọc). `lastReviewed` giữ 2026-10-12 = ngày anh Đạo rà soát; phần kỹ thuật/pháp lý duyệt 12/10 vẫn áp dụng, delta 13–15/10 do chủ quản chốt |
 | Landmark | Một `<main id="main-content">` + skip link |
 
-Thứ tự H2: Sản phẩm → Xe thực tế → Thương hiệu → Vì sao chọn (kèm trụ sở + hệ thống) → 7 nhóm → Quy trình → Theo nhu cầu → Chóa hay projector → Công nghệ nguồn sáng → So sánh 7 nhóm → Đọc thông số → Lỗi thường gặp → Pháp lý → Video → Cẩm nang → FAQ → Form → Kiểm duyệt.
+Thứ tự H2 (bản 15/10): Lọc nhanh theo nhu cầu (hero) → Các sản phẩm đèn tại Auto365 → Xe thực tế đã lắp tại Auto365 → Vì sao nên nâng cấp ánh sáng tại Auto365? (kèm thương hiệu, trụ sở, hệ thống) → 7 bước từ tiếp nhận đến bàn giao → Xem ánh sáng trên xe trước khi chọn → Kiến thức cần nắm khi độ đèn (4 mục accordion: chóa/projector, nguồn sáng, thông số, lỗi thường gặp) → Các nhóm nâng cấp ánh sáng khác nhau ở đâu? → Lắp đúng – chiếu đúng – dùng đúng (chi tiết pháp lý trong accordion) → Tư vấn theo xe → Cẩm nang → FAQ → CTA cuối.
 
 ## 3. Schema (một `@graph`)
 
@@ -65,7 +65,7 @@ Thứ tự H2: Sản phẩm → Xe thực tế → Thương hiệu → Vì sao c
 
 - Luật TTATGT đường bộ 36/2024/QH15, Điều 20 — link Cổng Văn bản Chính phủ.
 - Nghị định 168/2024/NĐ-CP, điểm a khoản 3 Điều 13 — trang nêu có quy định xử lý lắp thêm đèn ngoài thiết kế và ngoại lệ đèn sương mù dạng rời lắp theo quy định; **không ghi mức phạt cụ thể**.
-- Nghị định 238/2026/NĐ-CP (ban hành 26/06/2026, hiệu lực 15/08/2026) — đã đọc bản gốc trên chinhphu.vn ngày 10/10/2026: Điều 3 chỉ sửa **điểm b khoản 8 Điều 13** (biển số); điểm a khoản 3 Điều 13 **không thay đổi**. Trang ghi rõ điều này.
+- Nghị định 238/2026/NĐ-CP (ban hành 26/06/2026, hiệu lực 15/08/2026) — đã đọc bản gốc trên chinhphu.vn ngày 10/10/2026: điểm a khoản 3 Điều 13 **không bị thay đổi** bởi NĐ 238 (đối chiếu Điều 3 và khoản 11 Điều 19 NĐ 238); NĐ 238 có sửa/thay thuật ngữ ở một số điểm khác của Điều 13 mà hub không mô tả.
 - IEC 60529 — link webstore.iec.ch.
 
 ## 6. Checklist khi lên production (A03)
@@ -78,16 +78,16 @@ Thứ tự H2: Sản phẩm → Xe thực tế → Thương hiệu → Vì sao c
 - [ ] Rich Results Test / Schema validator cho bản live.
 - [ ] Đo Core Web Vitals trên production (field khi có dữ liệu CrUX).
 
-## 7. Đo lab trên preview (A11) — đo lại 12/10/2026
+## 7. Đo lab trên preview (A11) — đo lại 15/10/2026
 
 Công cụ: Puppeteer (Chromium headless) chạy trực tiếp trên https://preview-365group.pages.dev/nang-cap-anh-sang/ (Cloudflare Pages), đo LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau sự kiện load. Số lab, không thay field data/CrUX. Log gốc: trang kiểm tra nội bộ, mục "Nhật ký kiểm thử".
 
 | Cấu hình | LCP | CLS | Tải (load) | Truyền tải | Request | DOM |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,42 s | 0,044 | 4,8 s | ~804 KB | 18 | 4.403 |
-| Desktop 1440×900, không giới hạn | 0,33 s | 0,001 | 0,70 s | ~1.178 KB | 41 | 4.403 |
+| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,30 s | 0,044 | 4,7 s | ~805 KB | 18 | 4.431 |
+| Desktop 1440×900, không giới hạn | 0,28 s | 0,001 | 0,76 s | ~1.179 KB | 41 | 4.431 |
 
-Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.426 / 246 ảnh (lazy-load).
+Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.431 / 244 ảnh (lazy-load).
 
 ## Trước khi đăng production — xoá khối kiểm tra nội bộ
 

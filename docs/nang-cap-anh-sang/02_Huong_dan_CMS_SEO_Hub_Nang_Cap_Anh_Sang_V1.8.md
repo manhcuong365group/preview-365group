@@ -78,16 +78,16 @@ Thứ tự H2 (bản 15/10): Lọc nhanh theo nhu cầu (hero) → Các sản ph
 - [ ] Rich Results Test / Schema validator cho bản live.
 - [ ] Đo Core Web Vitals trên production (field khi có dữ liệu CrUX).
 
-## 7. Đo lab trên preview (A11) — đo lại 12/10/2026
+## 7. Đo lab trên preview (A11) — đo lại 15/10/2026
 
 Công cụ: Puppeteer (Chromium headless) chạy trực tiếp trên https://preview-365group.pages.dev/nang-cap-anh-sang/ (Cloudflare Pages), đo LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau sự kiện load. Số lab, không thay field data/CrUX. Log gốc: trang kiểm tra nội bộ, mục "Nhật ký kiểm thử".
 
 | Cấu hình | LCP | CLS | Tải (load) | Truyền tải | Request | DOM |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,42 s | 0,044 | 4,8 s | ~804 KB | 18 | 4.403 |
-| Desktop 1440×900, không giới hạn | 0,33 s | 0,001 | 0,70 s | ~1.178 KB | 41 | 4.403 |
+| Mobile 390×844, CPU ×4, 1,6 Mbps, RTT 150 ms | 1,30 s | 0,044 | 4,7 s | ~805 KB | 18 | 4.431 |
+| Desktop 1440×900, không giới hạn | 0,28 s | 0,001 | 0,76 s | ~1.179 KB | 41 | 4.431 |
 
-Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.426 / 246 ảnh (lazy-load).
+Lịch sử: trước khi đưa case vào template DOM 7.178 / 576 ảnh; bản hiện hành DOM 4.431 / 244 ảnh (lazy-load).
 
 ## Trước khi đăng production — xoá khối kiểm tra nội bộ
 
