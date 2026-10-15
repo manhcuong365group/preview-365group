@@ -3,7 +3,7 @@
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — U3 không chấm (chỉ đạo 10/10/2026), tổng /95 quy đổi /100 |
-| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/vf6/ · canonical https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf6 |
+| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/vf6/ · canonical https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 |
 | Ngày chấm | 13/10/2026 |
 | Reviewer | Nguyễn Quang Đạo — đã duyệt 13/10/2026 (chủ quản xác nhận) |
 

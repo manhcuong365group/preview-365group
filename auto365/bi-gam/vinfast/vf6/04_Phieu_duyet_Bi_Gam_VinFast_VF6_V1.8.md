@@ -4,7 +4,7 @@
 |---|---|
 | Bản duyệt | `auto365/bi-gam/vinfast/vf6/index.html` — SHA-256 ở cuối phiếu |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf6/ |
-| URL production dự kiến | https://v2.auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf6 |
+| URL production dự kiến | https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 |
 | Dựng từ | Khung trang VF3 đã duyệt (10/10/2026), dựng ngày 13/10/2026 |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 13/10/2026** (người phụ trách nội dung xác nhận) |
 
@@ -27,4 +27,4 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (13/10/2026): `9f4a46319ae12dbd527b22861b7464ddd6c5286fd69981f24c4d26be57198227`
+SHA-256 `index.html` (13/10/2026): `e2407bd7e1f000d5bd673d84c641aea6097d620c033598328def08a78cc8bbfa`
