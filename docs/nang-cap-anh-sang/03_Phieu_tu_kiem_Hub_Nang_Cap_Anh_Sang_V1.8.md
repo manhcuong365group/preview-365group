@@ -36,11 +36,11 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | AS14-05 (15/10) | 4 nhãn "Độc quyền" chưa có căn cứ trong hồ sơ | Giữ nhãn: chủ quản xác nhận 14/10/2026 đây là sản phẩm độc quyền tại Auto365 (theo PDP). Ghi ở cột "Ghi chú Commercial" của 04 cho 4 dòng | 04 |
 | AS14-06 (15/10) | 22 bóng LED ghi "VAT xác nhận theo báo giá" trong khi PDP ghi chưa VAT | Đổi thành "Chưa gồm VAT" theo ghi chú giá PDP (chủ quản xác nhận giá/VAT theo PDP 10/10) — card, modal, 04 đồng bộ | HTML + 04 |
 | AS14-08/09 (15/10) | Bi cầu/projector; "Cos ~55W Cos/bi"; chữ VAT nhỏ | Câu ngắn dưới bảng nhóm: bi cầu = projector có thấu kính, Bi LED/Mini/Laser thuộc dạng này; spec card "Cos ~55W/bi", "Pha ~90W/bi"; chữ VAT 12,5px | HTML |
-| Theo dõi (15/10) | Việc ngoài phạm vi preview | Chủ quản xác nhận 15/10/2026: reviewer đã chấm lại bản preview mới; CMS đã áp các sửa vào bản v2; lead test 143 đã xoá khỏi CRM; đã nghiệm thu L1–L8 | — |
+| Theo dõi (15/10) | Việc ngoài phạm vi preview | **Trạng thái: đã xác nhận theo báo cáo chủ quản ngày 15/10/2026, chờ hồ sơ đính kèm.** (1) Reviewer chấm lại: có báo cáo tái kiểm 15/10/2026 — xem mục "Phiếu chấm hiện hành". (2) CMS áp sửa vào v2: chủ quản báo; chưa có bản/hash v2 và nhật ký kiểm của v2. (3) Lead test 143 xoá khỏi CRM: chủ quản báo; chưa có ảnh/log CRM. (4) Nghiệm thu L1–L8: chủ quản báo; chưa có biên bản (URL production, hash, ngày, người, kết quả từng bước) | Báo cáo tái kiểm 15/10 (mục 1); mục 2–4 chờ hồ sơ |
 | A05 | Thiếu `<main>` | Một `<main id="main-content">` + skip link | HTML |
 | U3 | Bộ bàn giao | 01 Nội dung (xuất tự động, có SHA-256) + 02 CMS/SEO + 03 phiếu này + 04 Master Data cùng phiên bản | docs/nang-cap-anh-sang/ (nội bộ) |
 | A01 / RW-05 | Khóa giá/VAT/đơn vị | Chủ quản xác nhận 10/10/2026: giá, VAT, đơn vị như PDP là đúng; 129 dòng Master Data đánh dấu đã xác nhận | 04_Master_Data |
-| C1 / N3 | Reviewer | Nguyễn Quang Đạo duyệt bản cuối 12/10/2026 (lượt trước 10/10/2026); schema lastReviewed/dateModified = 2026-10-12, khớp dòng "Cập nhật nội dung 12/10/2026" trên trang | 02 mục 2 |
+| C1 / N3 | Reviewer và ngày | Nguyễn Quang Đạo duyệt kỹ thuật/pháp lý bản 12/10/2026 (lượt trước 10/10/2026). Hiện hành: `lastReviewed` = 2026-10-12 (ngày duyệt, dòng byline "(12/10/2026)"); `dateModified` = 2026-10-15 (ngày sửa nội dung, dòng "Cập nhật nội dung 15/10/2026"). Delta 13–15/10 do chủ quản chốt, chưa có lượt duyệt kỹ thuật mới | 02 mục 2; schema CollectionPage |
 | A10 | NĐ 238/2026 sửa NĐ 168 | Đã đọc bản gốc: điểm a khoản 3 Điều 13 không bị thay đổi bởi NĐ 238 (đối chiếu Điều 3 và khoản 11 Điều 19 NĐ 238). NĐ 238 có sửa/thay thuật ngữ ở các điểm khác của Điều 13; hub không mô tả các thay đổi đó. Trang, FAQ, FAQPage chỉ ghi "không thay đổi quy định này" cho điểm a khoản 3 | vanban.chinhphu.vn docid 218613 |
 
 ## Giữ theo quyết định chủ quản (khác đề xuất hồ sơ)
@@ -51,11 +51,28 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | A08: 4 lý do | Giữ 6 thẻ "Vì sao chọn" |
 | RW-03: bỏ F10 xe máy | Giữ (đèn dùng được cho cả xe máy) |
 | AS-14 / RW-07: link nhảy đầu trang | Không thêm |
+| AS14-05 / AS15-01: bỏ 4 nhãn "Độc quyền" theo quy ước claim | **Ngoại lệ do chủ quản quyết định 14/10/2026, giữ nhãn.** Phạm vi: chỉ 4 SKU Bi Laser Henvvei L91 Pro 2024, Henvvei L92 Pro (new 2024), X-Light X6 Pro, Henvvei L95 Pro 2022; chỉ nhãn "Độc quyền" như trên PDP, không thêm câu claim khác. Chủ thể: Auto365. Lãnh thổ/kênh/thời hạn: chưa có văn bản — Commercial bổ sung; nếu không bổ sung được trước production thì bỏ nhãn |
 
-## Còn lại (chỉ thực hiện được khi lên production)
+## Trạng thái việc ngoài preview (cập nhật 16/10/2026)
 
-| Việc | Người | Ghi chú |
-| --- | --- | --- |
-| Nghiệm thu production L1–L8 | IT/SEO | Checklist ở 02 mục 6 |
-| Đo AI Search T0/+7/+14/+28 | SEO | Sau khi production phát hành |
-| Ảnh "Vì sao chọn" | Media | Một số ảnh là ảnh dựng, alt ghi "ảnh minh họa"; thay ảnh thật nếu có |
+| Việc | Người | Trạng thái | Bằng chứng cần đính kèm |
+| --- | --- | --- | --- |
+| Nghiệm thu production L1–L8 | IT/SEO | Chủ quản báo đã làm 15/10; **chờ biên bản** | URL production, hash bản phát hành, ngày, người, kết quả L1–L8 (checklist 02) |
+| CMS v2 áp các sửa V2-01…06 | CMS | Chủ quản báo đã làm 15/10; **chờ hồ sơ** | URL/hash v2, số card/ItemList, nhật ký kiểm |
+| Xoá lead test 143 | CRM | Chủ quản báo đã làm 15/10; **chờ hồ sơ** | Ảnh/log CRM |
+| Đo AI Search T0/+7/+14/+28 | SEO | **Chưa thực hiện** (kế hoạch sau phát hành) | Prompt, nền tảng, thời gian, URL, 5 tín hiệu |
+| Ảnh "Vì sao chọn" | Media | Tuỳ chọn | Ảnh dựng có alt "ảnh minh họa"; thay ảnh thật nếu có |
+
+## Phiếu chấm hiện hành (báo cáo tái kiểm 15/10/2026, bản dateModified 15/10, hub hash b29ee8e8…)
+
+| Mã | Điểm | Mã | Điểm |
+| --- | ---: | --- | ---: |
+| C1 | 9,7/10 | G1 | 9,7/10 |
+| C2 | 9,7/10 | G2 | 9,6/10 |
+| C3 | 9,5/10 | G3 | 4,6/5 |
+| S1 | 9,7/10 | U1 | 4,7/5 |
+| S2 | 9,7/10 | U2 | 4,8/5 |
+| S3 | 9,6/10 | U3 | 4,3/5 |
+| **Tổng** | **95,6/100** — SEO 29,0/30, GEO 23,9/25: đạt ba ngưỡng | | |
+
+Hai mục reviewer yêu cầu đóng trước ký duyệt: AS15-01 (nhãn "Độc quyền") — ghi ngoại lệ ở mục "Giữ theo quyết định chủ quản"; AS15-02 (đồng bộ 03) — sửa dòng C1/N3, dòng Theo dõi và bảng trạng thái ở trên (16/10/2026).
