@@ -42,3 +42,18 @@
 C 28,0 · S 28,5 · G 23,5 · U 9,75 → **89,75/95 = 94,5/100**. G3 lên 5 (2 video + case + ảnh thật VF6). Còn trừ: G2 (popup chỉ có sản phẩm, chưa có tiêu chí chọn), C3 (FAQ khô), U2 (chưa test lead riêng trang). Áp bộ FAQ mới (câu chọn mẫu theo tiêu chí) → C3 9,5, G2 9,5 → 90,75/95 = 95,5/100. Trạng thái ĐẠT giữ theo duyệt anh Đạo.
 
 Sau khi thay FAQ 6 câu (15/10, câu chọn mẫu theo tiêu chí): C3 9,5, G2 9,5 → C 28,5 · S 28,5 · G 24,0 · U 9,75 = **90,75/95 = 95,5/100 — ĐẠT** (S ≥ 28,5, G ≥ 23,75).
+
+
+## Bản hiện hành 16/10/2026 (sau audit 15/10)
+
+Các mục phía trên (bản 12 FAQ, điểm 94,5) là **lịch sử**. Bản hiện hành: 6 FAQ.
+
+Đã sửa theo audit 15/10:
+
+- Ngày hiển thị = dateModified = 16/10/2026.
+- FAQ chọn mẫu: bỏ "pha mạnh hơn" và "độ bền"; chọn theo vùng sáng thiếu, kiểm đèn chính trước, không chọn chỉ theo W/K.
+- FAQ chói: "hạn chế chói".
+- FAQ bảo hành: theo từng mã đèn, ghi rõ không phải phụ tùng VinFast.
+- Nhãn popup: "Gợi ý đầu tiên / Phương án khác".
+
+Chờ Kỹ thuật/Kinh doanh: bảng đời/phiên bản đã lắp, chi phí theo phương án, "1 bộ" gồm gì, thời gian/tồn kho.
