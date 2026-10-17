@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `6055ee9dee079df60481e6ce776922b28beb61511eea3a394f82c6828fa20704`
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `8e76028ae705380325085306f1874242c32a603c1a2b87938d44df6cc3008b32`
 Ngày xuất: 17/10/2026 (lần xuất đầu 10/10/2026). File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
@@ -9,7 +9,7 @@ Ngày xuất: 17/10/2026 (lần xuất đầu 10/10/2026). File này xuất tự
 
 Độ đèn ô tô là nâng cấp hệ thống chiếu sáng của xe — thay bóng, lắp bi projector vào cụm đèn chính, hoặc bổ sung đèn gầm, đèn trợ sáng — theo nhu cầu sử dụng của từng xe. Hiệu quả sau lắp còn phụ thuộc quang học, phụ kiện và bước căn chỉnh.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo (12/10/2026)·Cập nhật nội dung 15/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo (12/10/2026)·Cập nhật nội dung 17/10/2026
 
 ## Các sản phẩm đèn tại Auto365  `#catalog`
 
@@ -379,7 +379,7 @@ Bảo hành theo từng mã sản phẩm: thời hạn, phạm vi và điểm ti
 
 Kiểm duyệt kỹ thuật đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
 
-Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Duyệt kỹ thuật 12/10/2026 · Cập nhật nội dung 15/10/2026
+Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Duyệt kỹ thuật 12/10/2026 · Cập nhật nội dung 17/10/2026
 
 Danh mục
 
