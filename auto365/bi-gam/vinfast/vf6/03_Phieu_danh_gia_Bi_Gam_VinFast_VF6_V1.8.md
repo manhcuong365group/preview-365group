@@ -75,3 +75,8 @@ C 29,0 · S 29,0 · G 24,0 · U 9,75 → **91,75/95 = 96,6/100 — ĐẠT**. Tă
 | 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 10 | 10 | 5 | 5 | 5 |
 
 C 29,0 · S 29,0 · G 25,0 · U 10 → **93,0/95 = 97,9/100 — ĐẠT**. G2: mỗi mẫu trong popup có lý do theo thông số bảng (màu, Pha W, giá, đã lắp trên VF6); Titan 301 vào nhóm tiết kiệm; popup dùng capture handler để không bị script v2 của VF3 ghi đè. G1: tóm tắt 3 xe VF6 theo 3 bài case đã đăng. U2: form chọn sẵn nhóm Đèn – Bi LED.
+
+
+## Cập nhật 17/10/2026 lần 3
+
+Bỏ khung tóm tắt case theo yêu cầu user (VF3 không có, giữ đồng bộ). G1 10 → 9,5 → **92,5/95 = 97,4/100 — ĐẠT** (bằng VF3).
