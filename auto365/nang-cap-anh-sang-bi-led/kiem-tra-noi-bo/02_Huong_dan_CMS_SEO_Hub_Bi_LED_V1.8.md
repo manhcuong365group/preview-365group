@@ -27,7 +27,7 @@ Ngày hồ sơ: 17/10/2026, Asia/Saigon
 | H1 | Bi LED ô tô (đèn bi cầu LED) chính hãng tại Auto365 (duy nhất) |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-led |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (mục 6) |
-| Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản 13/10/2026. Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 14/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-17 |
+| Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản 13/10/2026. Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 14/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-15 |
 | dateModified | 2026-10-17 |
 | Landmark | Một `<main id="main-content">` + skip link |
 
@@ -73,9 +73,9 @@ Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto36
 
 ## 7. Đo lab trên preview
 
-Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-17T08:24:39.775Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
+Công cụ: Puppeteer (Chromium headless) trên bản preview cục bộ `http://localhost:8765/nang-cap-anh-sang-bi-led/` lúc `2026-10-17T10:03:17.276Z`; LCP/CLS bằng PerformanceObserver, chờ 2,5 s sau load. Số lab, không thay field data/CrUX; đo lại trên pages.dev sau khi deploy.
 
 | Cấu hình | Giới hạn | LCP | CLS | Load | Truyền tải | Request | DOM |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | mobile 390 | CPU x4, 1.6 Mbps, 150 ms RTT | 1.04 s | 0.030 | 5.07 s | 1310 KB | 19 | 4720 |
-| desktop 1440 | không giới hạn | 0.28 s | 0.001 | 0.43 s | 2302 KB | 41 | 4720 |
+| desktop 1440 | không giới hạn | 0.31 s | 0.001 | 0.50 s | 2302 KB | 41 | 4720 |
