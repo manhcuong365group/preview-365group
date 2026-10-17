@@ -1,7 +1,7 @@
 # Yêu cầu CMS/SEO — Bi LED (14/10/2026)
 
 **Người gửi:** Team Content Auto365 · **Liên quan:** hub [Bi LED ô tô](https://auto365.vn/nang-cap-anh-sang-bi-led) (bản preview: https://preview-365group.pages.dev/nang-cap-anh-sang-bi-led/)
-**Người nhận:** CMS / SEO · **Ưu tiên:** trước khi đưa hub Bi LED mới lên production · **Còn mở:** Việc 2
+**Người nhận:** CMS / SEO · **Ưu tiên:** trước khi đưa hub Bi LED mới lên production · **Trạng thái:** đã xong cả 2 việc (17/10/2026)
 
 ---
 
@@ -11,7 +11,7 @@ CMS đã đổi tên trên trang sản phẩm; đối chiếu danh mục auto365
 
 ---
 
-## Việc 2 — Xử lý 3 bài blog bảng giá bi LED cũ (trùng từ khoá với hub)
+## Việc 2 — Xử lý 3 bài blog bảng giá bi LED cũ (trùng từ khoá với hub) ✅ ĐÃ XONG (17/10/2026) — cả 3 URL trả 301 → /nang-cap-anh-sang-bi-led (200), kiểm tra bằng curl 17/10
 
 **Vì sao:** 3 bài dưới cùng nhắm "giá độ đèn bi LED", giá đã cũ theo tháng. Hub Bi LED đã có giá hiện hành của 106 mẫu, phân khúc giá và chi phí lắp. Để song song thì Google/AI phải chọn giữa 4 trang cho cùng một câu hỏi và có thể dẫn khách tới giá sai.
 
