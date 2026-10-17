@@ -208,4 +208,19 @@
 .lp-bgx .xlight-app section.hero#top a.button-ghost{background:#fff!important;color:#111827!important;border:1px solid #d6dde6!important;box-shadow:none!important}
 .lp-bgx .xlight-app section.hero#top a.button-ghost:hover{border-color:#111827!important}
 
+.lp-bgx #cam-nang-lien-quan .nr-mag-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:18px!important;align-items:stretch!important}
+.lp-bgx #cam-nang-lien-quan .nr-mag-list{display:contents!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0!important;list-style:none!important}
+.lp-bgx #cam-nang-lien-quan .nr-mag-list>li{display:flex!important;margin:0!important;padding:0!important;border:0!important}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead,.lp-bgx #cam-nang-lien-quan .nr-mag-item{position:relative;display:flex!important;flex-direction:column!important;gap:0!important;width:100%;height:100%;grid-column:auto!important;grid-row:auto!important;padding:0!important;background:#fff;border:1px solid #e2e6ec!important;border-radius:12px!important;overflow:hidden;text-decoration:none;color:inherit}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead>img,.lp-bgx #cam-nang-lien-quan .nr-mag-item>img{display:block!important;width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:cover!important;border-radius:0!important;flex:none!important;max-width:none!important}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead-body,.lp-bgx #cam-nang-lien-quan .nr-mag-item-text{position:static!important;display:flex!important;flex-direction:column;gap:6px;padding:12px 14px 14px!important;background:none!important;color:inherit!important;flex:1}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead-title,.lp-bgx #cam-nang-lien-quan .nr-mag-item-title{font-size:15px!important;line-height:1.4!important;font-weight:700!important;color:#1f2937!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead-desc,.lp-bgx #cam-nang-lien-quan .nr-mag-item-desc{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px!important;line-height:1.55!important;color:#64748b!important}
+.lp-bgx #cam-nang-lien-quan .nr-mag-meta{margin-top:auto;font-size:12px!important;color:#94a3b8!important}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead:hover .nr-mag-lead-title,.lp-bgx #cam-nang-lien-quan .nr-mag-item:hover .nr-mag-item-title{color:#e31b23!important}
+@media (max-width:980px){.lp-bgx #cam-nang-lien-quan .nr-mag-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media (max-width:640px){.lp-bgx #cam-nang-lien-quan .nr-mag-grid{display:flex!important;overflow-x:auto!important;scroll-snap-type:x mandatory;gap:12px!important;padding-bottom:8px;-webkit-overflow-scrolling:touch}
+.lp-bgx #cam-nang-lien-quan .nr-mag-lead,.lp-bgx #cam-nang-lien-quan .nr-mag-list>li{flex:0 0 78%!important;scroll-snap-align:start}
+.lp-bgx #cam-nang-lien-quan .nr-mag-list>li>.nr-mag-item{flex:1}}
+
 .lp-bgx .xl-compare-overlay img{height:140px!important;width:100%!important;max-width:220px;object-fit:contain!important;margin:0 auto;display:block}@media (max-width:720px){.lp-bgx .xl-compare-overlay img{height:96px!important}}
