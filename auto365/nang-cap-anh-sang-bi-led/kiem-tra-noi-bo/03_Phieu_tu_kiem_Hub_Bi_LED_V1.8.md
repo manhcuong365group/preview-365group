@@ -46,7 +46,7 @@ Ngày: 17/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Tái kiểm 13/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | 90,3/100 — chưa đạt |
 | Tái kiểm 14/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **93,5/100 — chưa đạt** (SEO 28,3/30; GEO 23,2/25) |
 | Tự chấm team 14/10/2026 | Team Content | Bỏ U3 theo chỉ đạo, thang 95 | 94,5/95 — chỉ là điểm theo phạm vi 95, **không dùng thay** kết quả tái kiểm đủ 12 tiêu chí |
-| Bản sửa 15–17/10/2026 (R01–R07, bổ sung lens/công suất PDP, 301 3 bài cũ) | Team Content | Đủ 12 tiêu chí, thang 100 | 96,5/100 (bỏ U3: 92/95 → 96,8) — tự chấm, **chờ tái kiểm độc lập**; production chưa đăng bản hub mới |
+| Bản sửa 15–17/10/2026 (R01–R07, bổ sung lens/công suất PDP, 301 3 bài cũ) | Team Content | Đủ 12 tiêu chí, thang 100 | 98/100 (bỏ U3: 93/95 → 97,9; còn trừ S1, S3 chờ production, C2 25 mẫu Liên hệ thiếu thông số, G3 chưa có số đo độ sáng) — tự chấm, **chờ tái kiểm độc lập**; production chưa đăng bản hub mới |
 
 ## Sửa theo tái kiểm 14/10/2026 (bản 15/10)
 
