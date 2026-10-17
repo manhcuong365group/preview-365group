@@ -5,7 +5,7 @@ Bản nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 ghi trong 01 c
 Hồ sơ bàn giao: `docs/nang-cap-anh-sang/` (nội bộ, không deploy lên Cloudflare)
 URL preview: `https://preview-365group.pages.dev/nang-cap-anh-sang/` (noindex có chủ đích của staging)
 URL production: `https://auto365.vn/nang-cap-anh-sang` — đang là trang danh mục "Độ đèn ô tô"; hub sẽ **thay nội dung tại URL này**, giữ nguyên URL
-Ngày hồ sơ: 10/10/2026 · cập nhật 15/10/2026 (delta 13–15/10), Asia/Saigon
+Ngày hồ sơ: 10/10/2026 · cập nhật 17/10/2026 (delta 13–17/10), Asia/Saigon
 
 ## 1. Vai trò URL
 
@@ -34,7 +34,7 @@ Các trang con nên có link quay về hub (breadcrumb hoặc khối "Xem tổng
 | Canonical | https://auto365.vn/nang-cap-anh-sang |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (xem mục 6) |
 | Rà soát kỹ thuật | Nguyễn Quang Đạo — **đã duyệt bản 12/10/2026** (bản cuối, chủ quản xác nhận; lượt duyệt trước 10/10/2026). Schema: `reviewedBy` + `lastReviewed` 2026-10-12 trên CollectionPage |
-| dateModified | 2026-10-15 — ngày sửa nội dung thực tế (delta 13–15/10: bỏ con số phạt, thương hiệu Titan Black, mốc F15, bố cục, ảnh, bộ lọc). `lastReviewed` giữ 2026-10-12 = ngày anh Đạo rà soát; phần kỹ thuật/pháp lý duyệt 12/10 vẫn áp dụng, delta 13–15/10 do chủ quản chốt |
+| dateModified | Ngày phát hành bản mới nhất (hiện 2026-10-17); quy ước chủ quản 17/10: mỗi lần cập nhật, ngày cập nhật = ngày hôm đó. `lastReviewed` giữ 2026-10-12 = ngày anh Đạo rà soát kỹ thuật/pháp lý; các thay đổi 13–17/10 do chủ quản chốt |
 | Landmark | Một `<main id="main-content">` + skip link |
 
 Thứ tự H2 (bản 15/10): Lọc nhanh theo nhu cầu (hero) → Các sản phẩm đèn tại Auto365 → Xe thực tế đã lắp tại Auto365 → Vì sao nên nâng cấp ánh sáng tại Auto365? (kèm thương hiệu, trụ sở, hệ thống) → 7 bước từ tiếp nhận đến bàn giao → Xem ánh sáng trên xe trước khi chọn → Kiến thức cần nắm khi độ đèn (4 mục accordion: chóa/projector, nguồn sáng, thông số, lỗi thường gặp) → Các nhóm nâng cấp ánh sáng khác nhau ở đâu? → Lắp đúng – chiếu đúng – dùng đúng (chi tiết pháp lý trong accordion) → Tư vấn theo xe → Cẩm nang → FAQ → CTA cuối.
