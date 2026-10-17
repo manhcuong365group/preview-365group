@@ -27,7 +27,7 @@ Ngày hồ sơ: 17/10/2026, Asia/Saigon
 | H1 | Bi LED ô tô (đèn bi cầu LED) chính hãng tại Auto365 (duy nhất) |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-led |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (mục 6) |
-| Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản 13/10/2026. Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 14/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-15 |
+| Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản hiện hành 17/10/2026 (lịch sử: bản 13/10/2026, R05 15/10/2026). Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 14/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-17 |
 | dateModified | 2026-10-17 |
 | Landmark | Một `<main id="main-content">` + skip link |
 

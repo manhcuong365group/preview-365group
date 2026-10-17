@@ -37,7 +37,7 @@ Ngày: 17/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
-| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 15/10/2026; schema lastReviewed/dateModified 2026-10-15, khớp dòng "Kiểm duyệt 15/10/2026 · Cập nhật 17/10/2026" | 02 mục 2 |
+| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 17/10/2026; schema lastReviewed/dateModified 2026-10-17, khớp dòng "Kiểm duyệt và cập nhật 17/10/2026" | 02 mục 2 |
 
 ## Kết quả chấm (ghi đúng phạm vi)
 
