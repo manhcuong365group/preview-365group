@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `c11be0320214617664152b02e698fac06216cc68b7f7c1d2d5436f0aa34edbc7`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `303f9127d2e1e3155b8625d606eb48999c6f6f27d428fcd7efcc9bc3692d785e`
 
 Ngày xuất: 17/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -351,7 +351,7 @@ Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, c�
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: BẢN SỬA 15/10/2026 THEO TÁI KIỂM 14/10 — CHỜ TÁI KIỂM. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) đã được anh Nguyễn Quang Đạo duyệt 15/10/2026. R06 (inventory/301/production) giao SEO/CMS.
+Trạng thái: BẢN SỬA 15–17/10/2026 THEO TÁI KIỂM 14/10 — TỰ CHẤM 99/100 (chấm trên preview; bỏ U3: 94/95 → 98,9), CHỜ TÁI KIỂM ĐỘC LẬP. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) đã được anh Nguyễn Quang Đạo duyệt 15/10/2026. R06: 301 3 bài bảng giá cũ đã xong 17/10/2026; 16–17/10 bổ sung lens/công suất theo PDP, mẫu "Liên hệ" xếp cuối.
 
 Lịch sử: bản 13/10 do Nguyễn Quang Đạo duyệt; tái kiểm độc lập 90,3/100 (13/10), 93,5/100 (14/10). Tự chấm team bỏ U3: 94,5/95 — chỉ là điểm theo phạm vi 95.
 

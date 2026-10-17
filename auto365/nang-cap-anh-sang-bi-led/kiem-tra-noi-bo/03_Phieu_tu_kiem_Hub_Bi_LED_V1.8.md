@@ -58,7 +58,7 @@ Ngày: 17/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | R04 | Dữ liệu sửa 14/10 thiếu lịch sử | 04 thêm cột "Lịch sử cập nhật" (ngày · trường · cũ → mới · nguồn) cho từng dòng; giữ ngày lấy dữ liệu lần đầu | 04 |
 | R05 | Chọn theo nhu cầu còn chung | Thêm bảng 4 tình huống (đi phố, đường tối/đi tỉnh, mưa, xe LED zin/xe điện): nên cân nhắc, cần kiểm, khi chưa cần đổi bi; dẫn case thật Innova/V30 Ultra 2026, BMW 3 F30/Turbo BM, VF3/Quantum X V2 — anh Nguyễn Quang Đạo duyệt 15/10/2026 | HTML #chon-bi-led |
 | R07 | Ô so sánh Turbo BM chỉ "Từ 9 triệu" | Ô giá trong so sánh hiện thêm dòng biến thể (1 nhiệt màu 9 triệu, 3 nhiệt màu 10 triệu) cho mọi mẫu có ghi chú biến thể | HTML compare |
-| R06 | Inventory URL, 301, production | Ngoài repo — giao SEO/CMS | docs/yeu-cau-cms-bi-led-2026-10-14.md |
+| R06 | Inventory URL, 301, production | 301 đã xong 17/10/2026: 3 bài bảng giá cũ trả 301 → /nang-cap-anh-sang-bi-led (kiểm bằng curl). Đăng bản hub mới lên production: giao IT/CMS | docs/yeu-cau-cms-bi-led-2026-10-14.md |
 
 ## Giữ theo quyết định chủ quản
 
