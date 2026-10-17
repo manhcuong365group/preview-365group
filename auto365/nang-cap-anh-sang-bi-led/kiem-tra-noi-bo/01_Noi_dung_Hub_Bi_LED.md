@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `6c0093fe63cc02b6f7464c725c8622f260db6378564dc983d54e1071e583a482`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `8924756251576a67ae535511f365817f35215d0ae9c9dceaed82391ca5c3235c`
 
 Ngày xuất: 17/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -287,7 +287,7 @@ Mercedes C300 lắp bi LED X-Light V20 — mỗi hãng có nhiều dòng và đ�
 | Tầm trung5 – dưới 10 triệu | Đi phố và đi tỉnh thường xuyên | Nhiệt màu, đường cắt Cos, pát/mặt dưỡng | 5.000.000đ – 9.900.000đ48 mẫu · giá niêm yết/bộ |
 | Cao cấpTừ 10 triệu | Đi tỉnh, cao tốc, chạy đêm nhiều | Không gian tản nhiệt, hệ điện, cân chỉnh | 10.000.000đ – 13.500.000đ10 mẫu · giá niêm yết/bộ |
 
-Khoảng giá tính theo giá niêm yết/bộ trên trang sản phẩm Auto365 (đối chiếu 12/10/2026), chưa gồm VAT, pát/mặt dưỡng, dây và công lắp. Không tính 3 mẫu bán lẻ theo chiếc (từ 1.700.000đ/chiếc) và 29 mẫu đời cũ đang để "Liên hệ". Một số mẫu có nhiều phiên bản (1 hoặc 3 nhiệt màu) với giá khác nhau. Xem từng mẫu trong danh mục sản phẩm phía trên.
+Khoảng giá tính theo giá niêm yết/bộ trên trang sản phẩm Auto365 (đối chiếu 17/10/2026), chưa gồm VAT, pát/mặt dưỡng, dây và công lắp. Không tính 3 mẫu bán lẻ theo chiếc (từ 1.700.000đ/chiếc) và 29 mẫu đời cũ đang để "Liên hệ". Một số mẫu có nhiều phiên bản (1 hoặc 3 nhiệt màu) với giá khác nhau. Xem từng mẫu trong danh mục sản phẩm phía trên.
 
 Chi phí lắp gồm: bi LED theo mẫu · pát, mặt dưỡng theo cụm đèn · dây, relay, giải mã theo hệ điện · mở – dán keo cụm đèn và cân chỉnh. Tổng giá chốt sau khi kiểm tra xe.
 
@@ -345,14 +345,14 @@ Chuyên gia đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi
 
 Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 17/10/2026
 
-Thông số theo trang sản phẩm Auto365, đối chiếu 12/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
+Thông số theo trang sản phẩm Auto365, đối chiếu 17/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
 
 Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, cầu chì · công lắp và cân chỉnh · VAT. Tổng giá chốt sau khi kiểm tra xe.
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: BẢN SỬA 15–17/10/2026 THEO TÁI KIỂM 14/10 — TỰ CHẤM 99/100 (chấm trên preview; bỏ U3: 94/95 → 98,9), CHỜ TÁI KIỂM ĐỘC LẬP. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) đã được anh Nguyễn Quang Đạo duyệt 15/10/2026. R06: 301 3 bài bảng giá cũ đã xong 17/10/2026; 16–17/10 bổ sung lens/công suất theo PDP, mẫu "Liên hệ" xếp cuối.
+Trạng thái: BẢN SỬA 17/10/2026 THEO TÁI KIỂM 17/10 — TỰ CHẤM 99/100 (chấm trên preview; bỏ U3: 94/95 → 98,9), CHỜ TÁI KIỂM ĐỘC LẬP. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) đã được anh Nguyễn Quang Đạo duyệt 17/10/2026. R06: 301 3 bài bảng giá cũ đã xong 17/10/2026; 17/10 bổ sung lens/công suất theo PDP, mẫu "Liên hệ" xếp cuối.
 
-Lịch sử: bản 13/10 do Nguyễn Quang Đạo duyệt; tái kiểm độc lập 90,3/100 (13/10), 93,5/100 (14/10). Tự chấm team bỏ U3: 94,5/95 — chỉ là điểm theo phạm vi 95.
+Lịch sử: bản 17/10 do Nguyễn Quang Đạo duyệt; tái kiểm độc lập 90,3/100 (17/10), 93,5/100 (17/10). Tự chấm team bỏ U3: 94,5/95 — chỉ là điểm theo phạm vi 95.
 
 Xem phiếu duyệt chi tiết →
