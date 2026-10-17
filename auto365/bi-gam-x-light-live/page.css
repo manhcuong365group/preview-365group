@@ -197,4 +197,15 @@
 .lp-bgx .xlight-app .xl-compare-table .xl-compare-actions button{margin:0!important;flex:1;min-height:36px;padding:6px 8px;border:1px solid #cbd5e1;border-radius:6px;background:#fff;color:#475569;font:inherit;font-size:12px;font-weight:600;cursor:pointer}
 .lp-bgx .xlight-app .xl-compare-table .xl-compare-swap{color:#237fa5!important;border-color:#bfdbea!important}
 .lp-bgx .xlight-app .xl-compare-notice,.lp-bgx .xlight-app .xl-compare-overlay .xl-compare-notice{margin:0 0 12px;padding:10px 14px;border-radius:8px;background:#fff4e5;border:1px solid #f0b400;color:#7a4b00;font-size:14px;font-weight:600;line-height:1.45}
+.lp-bgx .xlight-app section.hero#top{background:#fff!important;background-image:none!important;color:#1f2937!important;border-bottom:1px solid #eef1f5}
+.lp-bgx .xlight-app section.hero#top::before,.lp-bgx .xlight-app section.hero#top::after{display:none!important}
+.lp-bgx .xlight-app section.hero#top h1{color:#111827!important}
+.lp-bgx .xlight-app section.hero#top .hero-copy p{color:#4b5563!important}
+.lp-bgx .xlight-app section.hero#top nav a,.lp-bgx .xlight-app section.hero#top a.hero-proof{color:#0b7fae!important}
+.lp-bgx .xlight-app section.hero#top nav,.lp-bgx .xlight-app section.hero#top nav span,.lp-bgx .xlight-app section.hero#top nav li{color:#6b7280!important}
+.lp-bgx .xlight-app section.hero#top a.button-primary{background:#e31b23!important;color:#fff!important;box-shadow:none!important;border-color:#e31b23!important}
+.lp-bgx .xlight-app section.hero#top a.button-primary:hover{background:#c81424!important}
+.lp-bgx .xlight-app section.hero#top a.button-ghost{background:#fff!important;color:#111827!important;border:1px solid #d6dde6!important;box-shadow:none!important}
+.lp-bgx .xlight-app section.hero#top a.button-ghost:hover{border-color:#111827!important}
+
 .lp-bgx .xl-compare-overlay img{height:140px!important;width:100%!important;max-width:220px;object-fit:contain!important;margin:0 auto;display:block}@media (max-width:720px){.lp-bgx .xl-compare-overlay img{height:96px!important}}
