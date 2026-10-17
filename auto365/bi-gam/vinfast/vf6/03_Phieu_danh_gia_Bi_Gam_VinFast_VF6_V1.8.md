@@ -66,3 +66,12 @@ Chờ Kỹ thuật/Kinh doanh: bảng đời/phiên bản đã lắp, chi phí t
 | 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 9,5 | 5 | 5 | 4,75 |
 
 C 29,0 · S 29,0 · G 24,0 · U 9,75 → **91,75/95 = 96,6/100 — ĐẠT**. Tăng C1 (bỏ ý độ bền/pha mạnh), S2 (đồng bộ ngày 16/10). Còn trừ: G2 popup chưa có lý do chọn; C2 thiếu bảng đời/phiên bản, chi phí theo phương án; chưa tóm tắt case VF6 (bài case không ghi phiên bản/thao tác).
+
+
+## Chấm lại 17/10/2026 lần 2 (sau khi thêm lý do popup)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 10 | 10 | 5 | 5 | 5 |
+
+C 29,0 · S 29,0 · G 25,0 · U 10 → **93,0/95 = 97,9/100 — ĐẠT**. G2: mỗi mẫu trong popup có lý do theo thông số bảng (màu, Pha W, giá, đã lắp trên VF6); Titan 301 vào nhóm tiết kiệm; popup dùng capture handler để không bị script v2 của VF3 ghi đè. G1: tóm tắt 3 xe VF6 theo 3 bài case đã đăng. U2: form chọn sẵn nhóm Đèn – Bi LED.

@@ -66,3 +66,12 @@ Chờ Kỹ thuật/Kinh doanh: bảng đời/phiên bản đã lắp, chi phí t
 | 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 10 | 9,5 | 5 | 5 | 4,75 |
 
 C 29,0 · S 29,0 · G 24,5 · U 9,75 → **92,25/95 = 97,1/100 — ĐẠT**. Tăng C1, S2 (ngày 16/10), G1 (tóm tắt 2 xe VF7 Plus 2025 ngay dưới case). Còn trừ: G2 popup chưa có lý do chọn; C2 thiếu bảng đời/phiên bản và chi phí theo phương án.
+
+
+## Chấm lại 17/10/2026 lần 2 (sau khi thêm lý do popup)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 10 | 10 | 5 | 5 | 5 |
+
+C 29,0 · S 29,0 · G 25,0 · U 10 → **93,0/95 = 97,9/100 — ĐẠT**. G2: mỗi mẫu trong popup có lý do theo thông số bảng (màu, Pha W, giá, đã lắp trên 2 xe VF7); Titan 301 vào nhóm tiết kiệm; popup dùng capture handler để không bị script v2 của VF3 ghi đè. U2: form chọn sẵn nhóm Đèn – Bi LED.
