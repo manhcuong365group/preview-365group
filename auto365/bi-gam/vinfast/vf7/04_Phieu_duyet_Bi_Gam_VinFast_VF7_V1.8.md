@@ -6,7 +6,7 @@
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf7/ |
 | URL production dự kiến | https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7 |
 | Dựng từ | Khung trang VF3 đã duyệt (10/10/2026), dựng ngày 13/10/2026 |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 13/10/2026** (người phụ trách nội dung xác nhận) |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 13/10/2026, duyệt lại 17/10/2026** (người phụ trách nội dung xác nhận) |
 
 ## Dữ kiện
 
@@ -26,6 +26,6 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF7 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (17/10/2026, bản hiện hành): `4f042730b50f5f651004a3914dcec47c2201781ca1bbd2af5d808e9345ee86e3`
+SHA-256 `index.html` (17/10/2026, bản hiện hành): `4ccf4e56639d1b91d4589a454aa68fcb5e272abdabe6717e6e0bf264f44f1c2e`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.

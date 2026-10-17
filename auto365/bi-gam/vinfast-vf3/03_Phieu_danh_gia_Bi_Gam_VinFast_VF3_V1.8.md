@@ -119,3 +119,12 @@ Sau khi thay FAQ 6 câu (15/10): C3 9,5 → **92,0/95 = 96,8/100 — ĐẠT**.
 | 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 10 | 5 | 5 | 5 |
 
 C 29,0 · S 29,0 · G 24,5 · U 10 → **92,5/95 = 97,4/100 — ĐẠT**. Tăng S2: ngày hiển thị = dateModified 16/10. FAQ chọn mẫu/chói/bảo hành sửa câu chữ, không còn ý vượt dữ liệu. Bỏ ghi chú bằng chứng dưới tiêu đề video (17/10, theo user) không trừ điểm: video và case vẫn dẫn link. Còn trừ: C2/S1/S3/G1 thiếu bảng đời/phiên bản và chi phí theo phương án (chờ Kỹ thuật/Kinh doanh).
+
+
+## Chấm lại 17/10/2026 — bản chốt (U3 không chấm, /95 → /100, chấm trên preview)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 10 | 5 | 5 | 5 |
+
+C 29,0 · S 29,0 · G 24,5 · U 10 → **92,5/95 = 97,4/100 — ĐẠT**. Ngày duyệt, lastReviewed, dateModified và ngày cập nhật hiển thị = 17/10/2026 (Nguyễn Quang Đạo).

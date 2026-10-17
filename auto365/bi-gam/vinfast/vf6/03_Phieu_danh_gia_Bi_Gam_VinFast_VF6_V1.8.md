@@ -80,3 +80,12 @@ C 29,0 · S 29,0 · G 25,0 · U 10 → **93,0/95 = 97,9/100 — ĐẠT**. G2: m�
 ## Cập nhật 17/10/2026 lần 3
 
 Bỏ khung tóm tắt case theo yêu cầu user (VF3 không có, giữ đồng bộ). G1 10 → 9,5 → **92,5/95 = 97,4/100 — ĐẠT** (bằng VF3).
+
+
+## Chấm lại 17/10/2026 — bản chốt (U3 không chấm, /95 → /100, chấm trên preview)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 10 | 5 | 5 | 5 |
+
+C 29,0 · S 29,0 · G 24,5 · U 10 → **92,5/95 = 97,4/100 — ĐẠT**. Ngày duyệt, lastReviewed, dateModified và ngày cập nhật hiển thị = 17/10/2026 (Nguyễn Quang Đạo).

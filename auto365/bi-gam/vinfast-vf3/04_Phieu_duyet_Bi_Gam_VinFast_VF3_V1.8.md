@@ -5,7 +5,7 @@
 | Bản duyệt | `auto365/bi-gam/vinfast-vf3/index.html` — SHA-256 ghi ở cuối phiếu, đối chiếu với bản trên preview |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast-vf3/ |
 | URL production dự kiến | https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3 (SEO/CMS điền domain production khi đăng) |
-| Ngày duyệt | 10/10/2026 (Asia/Saigon) |
+| Ngày duyệt | 17/10/2026 (Asia/Saigon) |
 | Cách ghi nhận | Xác nhận "anh Đạo duyệt" do người phụ trách nội dung chuyển lại ngày 10/10/2026. Phiếu ghi đúng người và phạm vi được xác nhận, không thay chữ ký gốc nếu quy trình nội bộ yêu cầu |
 
 Đi kèm: 01 = `index.html` (bản trang) · [02 Hướng dẫn CMS/SEO](02_Huong_dan_CMS_SEO_Bi_Gam_VinFast_VF3_V1.8.md) · [03 Phiếu đánh giá V1.8](03_Phieu_danh_gia_Bi_Gam_VinFast_VF3_V1.8.md)
@@ -74,6 +74,6 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (bản có khối kiểm tra nội bộ, 10/10/2026): `1a48d5212f540e7f825c831c76318befb3265054af82c357c7a0eaeb1b727fe7`
+SHA-256 `index.html` (17/10/2026, bản hiện hành): `af4a34fc279c4b154f5aea69a4e592c1451a102ea5f8768ed084d6ed3f6636b6`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.

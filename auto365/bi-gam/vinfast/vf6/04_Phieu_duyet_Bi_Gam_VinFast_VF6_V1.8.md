@@ -6,7 +6,7 @@
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf6/ |
 | URL production dự kiến | https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 |
 | Dựng từ | Khung trang VF3 đã duyệt (10/10/2026), dựng ngày 13/10/2026 |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 13/10/2026** (người phụ trách nội dung xác nhận) |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 13/10/2026, duyệt lại 17/10/2026** (người phụ trách nội dung xác nhận) |
 
 ## Dữ kiện
 
@@ -26,6 +26,6 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (17/10/2026, bản hiện hành): `2fa56e38a1e0750d52e4faa3b618b2dae298c1f7cba52874e0e36ee9593d100c`
+SHA-256 `index.html` (17/10/2026, bản hiện hành): `f2e89b6f9cf51c46305cd958b9b8c6d649f3a99966604ff88f068b6bc9b85179`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
