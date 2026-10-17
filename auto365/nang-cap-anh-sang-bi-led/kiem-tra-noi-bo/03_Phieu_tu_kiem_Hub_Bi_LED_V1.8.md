@@ -1,6 +1,6 @@
 # 03 — Phiếu tự kiểm Hub Bi LED ô tô V1.8
 
-Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
+Ngày: 17/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
 
 ## Đã xử lý
 
@@ -37,7 +37,7 @@ Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
-| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 15/10/2026; schema lastReviewed/dateModified 2026-10-15, khớp dòng "Duyệt và cập nhật 15/10/2026" | 02 mục 2 |
+| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 15/10/2026; schema lastReviewed/dateModified 2026-10-17, khớp dòng "Duyệt và cập nhật 17/10/2026" | 02 mục 2 |
 
 ## Kết quả chấm (ghi đúng phạm vi)
 
@@ -46,7 +46,7 @@ Ngày: 15/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Tái kiểm 13/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | 90,3/100 — chưa đạt |
 | Tái kiểm 14/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **93,5/100 — chưa đạt** (SEO 28,3/30; GEO 23,2/25) |
 | Tự chấm team 14/10/2026 | Team Content | Bỏ U3 theo chỉ đạo, thang 95 | 94,5/95 — chỉ là điểm theo phạm vi 95, **không dùng thay** kết quả tái kiểm đủ 12 tiêu chí |
-| Bản sửa 15/10/2026 (R01–R07) | — | — | **Chờ tái kiểm** |
+| Bản sửa 15–17/10/2026 (R01–R07, bổ sung lens/công suất PDP, 301 3 bài cũ) | Team Content | Đủ 12 tiêu chí, thang 100 | 96,5/100 (bỏ U3: 92/95 → 96,8) — tự chấm, **chờ tái kiểm độc lập**; production chưa đăng bản hub mới |
 
 ## Sửa theo tái kiểm 14/10/2026 (bản 15/10)
 

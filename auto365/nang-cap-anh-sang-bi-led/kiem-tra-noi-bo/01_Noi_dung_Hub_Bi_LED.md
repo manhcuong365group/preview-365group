@@ -1,8 +1,8 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `a2c23e5f0444aa16184a1d343a6e57491797e0c7c1a334a6c880e057ae078235`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `8a094918bbf4c4c336907a0487360bccc7b84596942e1f95c5c230928fd0d2e3`
 
-Ngày xuất: 15/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
+Ngày xuất: 17/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
 
@@ -10,7 +10,7 @@ Ngày xuất: 15/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nhật 15/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nhật 17/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -343,7 +343,7 @@ Nếu xe mới đã dùng đèn LED projector zin và đáp ứng nhu cầu, có
 
 Chuyên gia đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
 
-Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 15/10/2026
+Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 17/10/2026
 
 Thông số theo trang sản phẩm Auto365, đối chiếu 12/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
 
