@@ -57,3 +57,12 @@ Các mục phía trên (bản 12 FAQ, điểm 94,5) là **lịch sử**. Bản h
 - Nhãn popup: "Gợi ý đầu tiên / Phương án khác".
 
 Chờ Kỹ thuật/Kinh doanh: bảng đời/phiên bản đã lắp, chi phí theo phương án, "1 bộ" gồm gì, thời gian/tồn kho.
+
+
+## Chấm lại 17/10/2026 (U3 không chấm, /95 → /100)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 9,5 | 5 | 5 | 4,75 |
+
+C 29,0 · S 29,0 · G 24,0 · U 9,75 → **91,75/95 = 96,6/100 — ĐẠT**. Tăng C1 (bỏ ý độ bền/pha mạnh), S2 (đồng bộ ngày 16/10). Còn trừ: G2 popup chưa có lý do chọn; C2 thiếu bảng đời/phiên bản, chi phí theo phương án; chưa tóm tắt case VF6 (bài case không ghi phiên bản/thao tác).
