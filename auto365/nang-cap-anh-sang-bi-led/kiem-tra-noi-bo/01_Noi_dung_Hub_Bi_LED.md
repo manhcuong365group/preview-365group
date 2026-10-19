@@ -1,8 +1,8 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `8924756251576a67ae535511f365817f35215d0ae9c9dceaed82391ca5c3235c`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `25f74b0bd9214b35f7e503e65a868c5f89853d1595f05dac2a1053bcbb8885f4`
 
-Ngày xuất: 17/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
+Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
 
@@ -10,7 +10,7 @@ Ngày xuất: 17/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt và cập nhật 17/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 17/10/2026 · Cập nhật 19/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -145,7 +145,16 @@ Cặp bi LED đặt trong cụm đèn pha BMW 3 F30 đã mở — kích thước
 
 Chọn theo tình huống sử dụng trước, rồi mới tới lens, nhiệt màu và thông số. Mỗi phương án đều cần kiểm cụm đèn thực tế trên xe.
 
+| Tình huống | Nên cân nhắc | Cần kiểm trước | Khi chưa cần đổi bi |
+| --- | --- | --- | --- |
+| Chủ yếu đi phố, đèn zin vẫn đủ nhìn | Bảo dưỡng trước: vệ sinh, phục hồi mặt kính, cân chỉnh lại góc chiếu. Nếu vẫn muốn nâng cấp, bi phân khúc phổ thông thường đủ cho nhu cầu này | Mặt kính ố/mờ, bóng zin còn tốt không, góc chiếu có lệch không | Đèn sáng đều, đường cắt rõ, không mỏi mắt khi chạy đêm trong phố |
+| Hay đi đường tỉnh, đường tối, thiếu Cos/Pha | Mẫu có vùng Cos/Pha và trợ Pha phù hợp nhu cầu — xem qua case cùng dòng xe và thông số theo PDP; kích thước lens chọn theo hốc đèn, không tự quyết định vùng sáng. Ví dụ Innova 2019 lắp V30 Ultra 2026 (https://auto365.vn/toyota-innova-2019-2-0e-lap-bi-led-v30-ultra-2026) | Khoảng trống sau cụm đèn cho tản nhiệt, phương án điện, cân chỉnh sau lắp | Nếu chỉ thiếu vùng sáng thấp hai bên mép đường, bi gầm có thể hợp hơn |
+| Hay gặp mưa, đường phản xạ mạnh | Bản nhiều nhiệt màu để đổi theo thời tiết (3000K – 4300K – 6000K). Ví dụ BMW 3 F30 lắp AES Turbo BM bản 3 nhiệt màu (https://auto365.vn/bmw-3-f30-2019-lap-bi-led-aes-turbo-bm) | Đường cắt Cos rõ và cân chỉnh đúng — nhiệt màu chỉ là một yếu tố, không thay được vùng sáng | Nếu vấn đề chính là hắt sáng trong mưa ở vùng thấp, xem thêm bi gầm |
+| Xe đời mới, đèn LED projector zin, xe điện | Kiểm riêng trước khi chọn bi: có xe nâng cấp được, có xe nên giữ đèn zin. Ví dụ VF3 2025 Plus lắp Quantum X V2 (https://auto365.vn/vinfast-vf3-2025-plus-lap-bi-led-x-light-quantum-x-v2) | Hốc đèn, giắc, hệ thống báo lỗi đèn, ảnh hưởng tới bảo hành hãng xe | Đèn zin đã đáp ứng nhu cầu — giữ nguyên và chỉ bổ sung bi gầm nếu cần |
+
 Case chỉ để tham khảo — cùng dòng xe nhưng khác đời/phiên bản vẫn có thể khác cụm đèn. Không chọn mẫu chỉ theo watt hay giá.
+
+**Lens, nhiệt màu và chế độ chiếu**
 
 **Lens 3.0, 2.5, 2.0 hay 1.8 inch?**
 
@@ -170,6 +179,8 @@ Cos cần vùng sáng gần đều, đường cắt rõ và không hắt lên m�
 **Mắt trợ Pha, tăng sáng, hai nguồn Cos**
 
 Một số mẫu bổ sung mắt trợ Pha, chế độ tăng sáng hoặc hai nguồn Cos để cải thiện tầm chiếu và độ phủ. Đây là tính năng theo từng mẫu; nên hỏi cách vận hành và cách đấu nối trên xe trước khi chọn.Đọc về hai nguồn Cos →
+
+**Đọc thông số trên trang sản phẩm**
 
 **Công suất Cos / Pha (W)**
 
@@ -287,7 +298,7 @@ Mercedes C300 lắp bi LED X-Light V20 — mỗi hãng có nhiều dòng và đ�
 | Tầm trung5 – dưới 10 triệu | Đi phố và đi tỉnh thường xuyên | Nhiệt màu, đường cắt Cos, pát/mặt dưỡng | 5.000.000đ – 9.900.000đ48 mẫu · giá niêm yết/bộ |
 | Cao cấpTừ 10 triệu | Đi tỉnh, cao tốc, chạy đêm nhiều | Không gian tản nhiệt, hệ điện, cân chỉnh | 10.000.000đ – 13.500.000đ10 mẫu · giá niêm yết/bộ |
 
-Khoảng giá tính theo giá niêm yết/bộ trên trang sản phẩm Auto365 (đối chiếu 17/10/2026), chưa gồm VAT, pát/mặt dưỡng, dây và công lắp. Không tính 3 mẫu bán lẻ theo chiếc (từ 1.700.000đ/chiếc) và 29 mẫu đời cũ đang để "Liên hệ". Một số mẫu có nhiều phiên bản (1 hoặc 3 nhiệt màu) với giá khác nhau. Xem từng mẫu trong danh mục sản phẩm phía trên.
+Khoảng giá tính theo giá niêm yết/bộ trên trang sản phẩm Auto365 (đối chiếu gần nhất 17/10/2026), chưa gồm VAT, pát/mặt dưỡng, dây và công lắp. Không tính 3 mẫu bán lẻ theo chiếc (từ 1.700.000đ/chiếc) và 29 mẫu đời cũ đang để "Liên hệ". Một số mẫu có nhiều phiên bản (1 hoặc 3 nhiệt màu) với giá khác nhau. Xem từng mẫu trong danh mục sản phẩm phía trên.
 
 Chi phí lắp gồm: bi LED theo mẫu · pát, mặt dưỡng theo cụm đèn · dây, relay, giải mã theo hệ điện · mở – dán keo cụm đèn và cân chỉnh. Tổng giá chốt sau khi kiểm tra xe.
 
@@ -345,14 +356,14 @@ Chuyên gia đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi
 
 Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Kiểm duyệt 17/10/2026
 
-Thông số theo trang sản phẩm Auto365, đối chiếu 17/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
+Thông số theo trang sản phẩm Auto365, đối chiếu gần nhất 17/10/2026; công suất tính cho một đèn. Giá chưa gồm VAT.
 
 Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, cầu chì · công lắp và cân chỉnh · VAT. Tổng giá chốt sau khi kiểm tra xe.
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
 
-Trạng thái: BẢN SỬA 17/10/2026 THEO TÁI KIỂM 17/10 — TỰ CHẤM 99/100 (chấm trên preview; bỏ U3: 94/95 → 98,9), CHỜ TÁI KIỂM ĐỘC LẬP. Đã sửa R01 (lọc bảo hành 2 năm), R02 (lens từ PDP mới), R03 (ghi đúng phạm vi điểm), R04 (lịch sử dữ liệu), R07 (giá biến thể trong so sánh); R05 (chọn theo tình huống) đã được anh Nguyễn Quang Đạo duyệt 17/10/2026. R06: 301 3 bài bảng giá cũ đã xong 17/10/2026; 17/10 bổ sung lens/công suất theo PDP, mẫu "Liên hệ" xếp cuối.
+Trạng thái: BẢN SỬA 19/10/2026 THEO TÁI KIỂM 17/10 — CHỜ TÁI KIỂM. Tái kiểm 17/10/2026: 94,4/100 (SEO 28,3/30; GEO 23,8/25) — chưa đạt. Đã sửa N01 (lens 3 mẫu + công suất CB750 trong bảng thông số), N02 (bộ đếm lens theo dữ liệu card), N03 (khôi phục mốc lịch sử), N04 (01 xuất đủ bảng tình huống), N06 (câu chọn bi cho đường tối). N05 (đưa bản mới lên production) giao IT/CMS.
 
-Lịch sử: bản 17/10 do Nguyễn Quang Đạo duyệt; tái kiểm độc lập 90,3/100 (17/10), 93,5/100 (17/10). Tự chấm team bỏ U3: 94,5/95 — chỉ là điểm theo phạm vi 95.
+Lịch sử: bản 13/10/2026 do Nguyễn Quang Đạo duyệt; chủ quản duyệt F03/F12/F08 14/10/2026; R05 duyệt 15/10/2026; duyệt bản hiện hành 17/10/2026. Tái kiểm độc lập: 90,3/100 (13/10), 93,5/100 (14/10), 94,4/100 (17/10). 301 3 bài bảng giá cũ xong 17/10/2026.
 
 Xem phiếu duyệt chi tiết →
