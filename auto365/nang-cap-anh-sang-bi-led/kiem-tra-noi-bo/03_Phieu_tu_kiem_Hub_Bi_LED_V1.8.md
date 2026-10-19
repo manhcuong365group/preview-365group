@@ -33,7 +33,7 @@ Ngày: 19/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | F12 | Tóm tắt Điều 20 giản lược | Viết đủ: thời gian/điều kiện bật đèn; 4 trường hợp chuyển Cos gồm người đi bộ và ngoại lệ dải phân cách chống chói (theo Cổng Chính phủ) | HTML #phap-ly |
 | F13 | Finder gọi "theo xe"; lý do "mức giá khác" khi cùng giá | Đổi "Gợi ý bi LED theo tiêu chí"; ghi rõ chưa kiểm khả năng lắp theo xe; lý do "cùng mức giá" khi trùng giá | HTML |
 | F14 | Ranh giới phân khúc | "5 – dưới 10 triệu" | HTML #so-sanh |
-| F07b | 83 mẫu thiếu kích thước lens, 33 mẫu thiếu công suất | Đọc lại toàn bộ PDP: lấy thêm lens của 21 mẫu và công suất của 14 mẫu từ phần mô tả PDP (bảng thông số trống hoặc ghi "AR"); 62 mẫu (lens) và 19 mẫu (công suất) PDP không công bố → giữ "chưa có" | PDP 14/10/2026 |
+| F07b | 83 mẫu thiếu kích thước lens, 33 mẫu thiếu công suất (số tại 14/10) | Đọc lại toàn bộ PDP: lấy thêm lens của 21 mẫu và công suất của 14 mẫu từ phần mô tả PDP (bảng thông số trống hoặc ghi "AR"); 62 mẫu (lens) và 19 mẫu (công suất) PDP không công bố → giữ "chưa có" | PDP 14/10/2026 |
 | C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
@@ -48,14 +48,14 @@ Ngày: 19/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Tự chấm team 14/10/2026 | Team Content | Bỏ U3 theo chỉ đạo, thang 95 | 94,5/95 — chỉ là điểm theo phạm vi 95, **không dùng thay** kết quả tái kiểm đủ 12 tiêu chí |
 | Tự chấm team 17/10/2026 | Team Content | Đủ 12 tiêu chí trên preview | 99/100 — tự chấm, không thay tái kiểm |
 | Tái kiểm 17/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **94,4/100 — chưa đạt** (SEO 28,3/30; GEO 23,8/25) |
-| Bản sửa 19/10/2026 (N01–N06, link bài theo dòng xe, inventory URL trong 02) | Team Content | Đủ 12 tiêu chí, thang 100, chấm trên preview | 95,7/100 (SEO 28,8/30; GEO 24,0/25) — tự chấm, **chờ tái kiểm độc lập** |
+| Bản sửa 19/10/2026 (N01–N06, link bài theo dòng xe, inventory URL trong 02) | Team Content | Đủ 12 tiêu chí, thang 100, chấm trên preview | 95,9/100 (SEO 28,8/30; GEO 24,0/25; U3 4,8/5 sau khi thêm cột ngày đối chiếu PDP và gắn nhãn số liệu lịch sử) — tự chấm, **chờ tái kiểm độc lập** |
 
 ## Sửa theo tái kiểm 14/10/2026 (bản 15/10)
 
 | Mã | Phát hiện | Đã làm | Bằng chứng |
 | --- | --- | --- | --- |
 | R01 | Lọc 24 tháng bỏ sót mẫu ghi "2 năm" | Quy "2 năm"/"24 Tháng" về 24 tháng cho bộ lọc (5 mẫu); câu bảo hành gốc giữ nguyên, kể cả Red Magic 1.0 New Plus "1 năm đổi mới + 1 năm thay thế linh kiện" | 04 cột "Bảo hành dùng để lọc"; log kiểm thử |
-| R02 | Lens V30 Ultra 2022 chưa theo PDP mới | Đọc lại bảng thông số toàn bộ PDP 15/10: thêm kích thước lens cho 36 mẫu (gồm V30 Ultra 2022 = 3.0 inch); còn 26 mẫu PDP chưa ghi. Không nhập các số không rõ đơn vị ("29", "45") | 04 cột lịch sử cập nhật |
+| R02 | Lens V30 Ultra 2022 chưa theo PDP mới | Đọc lại bảng thông số toàn bộ PDP 15/10: thêm kích thước lens cho 36 mẫu (gồm V30 Ultra 2022 = 3.0 inch); còn 26 mẫu PDP chưa ghi. Không nhập các số không rõ đơn vị ("29", "45") (số tại 15/10; hiện 23 mẫu chưa có lens) | 04 cột lịch sử cập nhật |
 | R03 | Điểm tự chấm phạm vi 95 trình bày như đạt đủ V1.8 | Tách bảng kết quả theo lượt/cách chấm; aside và trang phiếu ghi "chờ tái kiểm" | Mục "Kết quả chấm" |
 | R04 | Dữ liệu sửa 14/10 thiếu lịch sử | 04 thêm cột "Lịch sử cập nhật" (ngày · trường · cũ → mới · nguồn) cho từng dòng; giữ ngày lấy dữ liệu lần đầu | 04 |
 | R05 | Chọn theo nhu cầu còn chung | Thêm bảng 4 tình huống (đi phố, đường tối/đi tỉnh, mưa, xe LED zin/xe điện): nên cân nhắc, cần kiểm, khi chưa cần đổi bi; dẫn case thật Innova/V30 Ultra 2026, BMW 3 F30/Turbo BM, VF3/Quantum X V2 — anh Nguyễn Quang Đạo duyệt 15/10/2026 | HTML #chon-bi-led |
