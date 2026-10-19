@@ -133,3 +133,12 @@ C 28,0 · S 29,0 · G 24,25 · U 14,5 → **95,75/100 — ĐẠT**.
 - 19/10/2026: viết lại 6 câu trả lời FAQ theo giọng tư vấn thật (ngắn, xưng "bên em", bỏ văn liệt kê kiểu AI); giữ nguyên dữ kiện, link nguồn và FAQPage khớp 1:1. Điểm không đổi.
 - 19/10/2026 (lần 2): viết lại FAQ theo giọng các bài đã đăng trên auto365.vn (trung tính, "kỹ thuật viên"/"chủ xe", không xưng "bên em"). Dữ kiện, link và FAQPage giữ khớp. Điểm không đổi.
 - 19/10/2026 (lần 3): FAQ trả lời chung cho mọi mẫu, bỏ tên đèn cụ thể và link case trong FAQ (theo yêu cầu user). Dữ kiện case vẫn có ở khu vực case/video trên trang.
+
+
+## Chấm lại 19/10/2026 sau khi viết lại FAQ (12 tiêu chí, có U3, /100)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,5 |
+
+C 28,25 · S 29,0 · G 24,0 · U 14,5 → **95,75/100 — ĐẠT**.
