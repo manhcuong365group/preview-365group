@@ -142,3 +142,14 @@ C 28,0 · S 29,0 · G 24,0 · U 14,5 → **95,5/100 — ĐẠT**. G3 còn trừ 
 | 9,5 | 9,0 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,5 | 5 | 5 | 4,5 |
 
 C 28,25 · S 29,0 · G 23,75 · U 14,5 → **95,5/100 — ĐẠT** (GEO vừa chạm ngưỡng 23,75). G3 −0,25 vì FAQ bỏ link case/video; bài case VF6 chưa ghi phiên bản xe.
+
+
+## Chấm lại 19/10/2026 — sau khi xác nhận phiên bản case VF6
+
+User xác nhận 19/10/2026: cả 3 xe VF6 trong case là bản **Plus**. Đã ghi "VF6 Plus" ở tiêu đề + alt 3 thẻ case và lý do popup.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,5 |
+
+C 28,25 · S 29,0 · G 24,0 · U 14,5 → **95,75/100 — ĐẠT** (bằng VF3/VF7).
