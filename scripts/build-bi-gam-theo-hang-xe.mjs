@@ -51,11 +51,11 @@ if (bodyStart < 0 || mainOpen < 30 || mainClose < 0) throw new Error('VF6 shell 
 
 const canonical = 'https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe';
 const title = 'Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365';
-const desc = 'Chọn bi gầm theo hãng xe Toyota, VinFast, Ford, Honda, Mazda, Hyundai, Kia, Mitsubishi. Xem xe thực tế đã lắp tại Auto365, video ánh sáng và quy trình lắp đặt.';
+const desc = 'Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Bi gầm theo hãng xe', description: desc, inLanguage: 'vi', isPartOf: { '@id': 'https://auto365.vn/#website' }, publisher: { '@id': 'https://auto365.vn/#organization' }, breadcrumb: { '@id': canonical + '#breadcrumb' } },
+    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Bi gầm theo hãng xe', description: desc, inLanguage: 'vi', dateModified: (content.match(/class="bght-upd">Cập nhật <time datetime="([0-9-]+)"/)||[])[1], isPartOf: { '@id': 'https://auto365.vn/#website' }, publisher: { '@id': 'https://auto365.vn/#organization' }, breadcrumb: { '@id': canonical + '#breadcrumb' } },
     { '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: 'https://auto365.vn/' },
       { '@type': 'ListItem', position: 2, name: 'Độ bi gầm', item: 'https://auto365.vn/nang-cap-anh-sang-bi-gam' },
