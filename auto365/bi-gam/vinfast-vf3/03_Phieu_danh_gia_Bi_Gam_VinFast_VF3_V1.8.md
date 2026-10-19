@@ -128,3 +128,16 @@ C 29,0 · S 29,0 · G 24,5 · U 10 → **92,5/95 = 97,4/100 — ĐẠT**. Tăng 
 | 10 | 9,5 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 10 | 5 | 5 | 5 |
 
 C 29,0 · S 29,0 · G 24,5 · U 10 → **92,5/95 = 97,4/100 — ĐẠT**. Ngày duyệt, lastReviewed, dateModified và ngày cập nhật hiển thị = 17/10/2026 (Nguyễn Quang Đạo).
+
+
+## Sửa theo tái kiểm 17/10 (cập nhật 19/10/2026)
+
+- Nhiệt màu: nguồn hãng x-light.vn và PDP ghi "3 phiên bản nhiệt màu", không phải 1 đèn đổi 3 màu. Đã sửa ghi chú dưới bảng (và popup VF6/VF7) thành "có phiên bản 3000/4300/5500K, chọn đúng bản khi đặt lắp".
+- Popup VF6/VF7: bỏ "đủ cho nhu cầu đi phố" (suy từ W) và "nhóm mạnh nhất"; 301 V2 ghi Pha thấp hơn, nên xem vùng sáng thực tế; Titan 301 nhắc xem ánh sáng trước khi chốt.
+- Khối giá: thêm "Thời gian thi công: xác nhận theo cấu hình và lịch chi nhánh sau khi kiểm tra xe" (không tự đặt số giờ).
+- Phiếu 04 VF6/VF7: sửa thông số gắn nhầm (~40W/~55W, 3 màu thuộc X3 Pro, không phải AES SV 3.0 Pro).
+- VF6: bỏ "VF6 nguyên bản không có đèn gầm" ở thẻ video. VF7: FAQ đổi "bên dưới" thành "trên trang".
+- VF3: phiếu 02 đồng bộ bản 19/10 (6 FAQ, 8 mẫu kỹ thuật xác nhận, ngày duyệt lại 17/10).
+- Khối kiểm nội bộ: ghi duyệt lại 17/10. dateModified + hiển thị 19/10; lastReviewed giữ 17/10.
+
+Điểm (U3 không chấm theo chỉ đạo, /95 → /100): giữ **92,5/95 = 97,4/100 — ĐẠT**. Các sửa trên đóng lỗi C1/G2 mà audit nêu; phần còn trừ vẫn là bảng đời/phiên bản và chi phí theo phương án (chờ Kỹ thuật/Kinh doanh).

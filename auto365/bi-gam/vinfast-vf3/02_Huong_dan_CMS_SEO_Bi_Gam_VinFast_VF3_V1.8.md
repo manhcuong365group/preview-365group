@@ -1,10 +1,10 @@
 # Hướng Dẫn CMS/SEO — Bi Gầm VinFast VF3 V1.8
 
 Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8  
-Bản nguồn: `auto365/bi-gam/vinfast-vf3/index.html` (phiên bản 10/10/2026)  
+Bản nguồn: `auto365/bi-gam/vinfast-vf3/index.html` (phiên bản 19/10/2026 — khớp SHA trong phiếu 04)  
 URL canonical đang khai báo: `https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3` — **CX:** `data/vf3.json` ghi `https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to/bi-gam/vinfast/vf3`; SEO chốt domain production trước khi đăng.  
 URL preview: `https://preview-365group.pages.dev/bi-gam/vinfast-vf3/` (noindex có chủ đích của staging, §9.4)  
-Ngày kiểm hồ sơ: 10/10/2026, Asia/Saigon
+Ngày kiểm hồ sơ: 19/10/2026, Asia/Saigon
 
 ## Phạm vi
 
@@ -18,19 +18,19 @@ Loại trang: tư vấn theo xe / lựa chọn (V1.8 §3). Intent trọng tâm: 
 | Meta description | Tư vấn bi gầm VinFast VF3 theo cấu hình, mức giá, điều kiện lắp và case thực tế. Xem sản phẩm có bằng chứng trên VF3 và chọn điểm Auto365 phù hợp. |
 | H1 | Bi gầm VinFast VF3: phương án lắp, giá và case thực tế |
 | Author (hiển thị) | Team Content Auto365 |
-| Rà soát kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 10/10/2026** (xác nhận của chủ quản). Schema: `reviewedBy` → `https://auto365.vn/tac-gia/nguyen-quang-dao#person`, `lastReviewed` 2026-10-10 trên CollectionPage |
+| Rà soát kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 10/10/2026, duyệt lại 17/10/2026** (xác nhận của chủ quản). Schema: `reviewedBy` → `https://auto365.vn/tac-gia/nguyen-quang-dao#person`, `lastReviewed` 2026-10-17 trên CollectionPage |
 | datePublished | 2026-10-02 (giữ nguyên) |
-| dateModified | 2026-10-10T00:00:00+07:00 — ngày gửi bài/duyệt (quy tắc reviewer: lastReviewed, dateModified, dòng "Cập nhật" = ngày gửi bài). |
+| dateModified | 2026-10-19T00:00:00+07:00 — ngày gửi bài/duyệt (quy tắc reviewer: lastReviewed, dateModified, dòng "Cập nhật" = ngày gửi bài). |
 | Ngày kiểm nội dung (hero) | 10/10/2026 |
-| Cập nhật (cuối trang) | 10/10/2026 — khớp dateModified; tên reviewer link về trang tác giả |
+| Cập nhật (cuối trang) | 19/10/2026 — khớp dateModified; tên reviewer link về trang tác giả |
 
-Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → Có gì cần biết → Sản phẩm (2 hàng + Xem tất cả, bảng so sánh) → [CTA] → Xe VinFast khác đã lắp → Giá và phạm vi chi phí / Khi nào cần kiểm tra xe → [CTA] → Lý do chọn → Địa điểm → Cẩm nang → Nâng cấp khác → Dòng xe VinFast khác → [CTA] → FAQ (5 câu + Xem thêm; FAQPage giữ đủ 11) → Form.
+Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → Có gì cần biết → Sản phẩm (2 hàng + Xem tất cả, bảng so sánh) → [CTA] → Xe VinFast khác đã lắp → Giá và phạm vi chi phí / Khi nào cần kiểm tra xe → [CTA] → Lý do chọn → Địa điểm → Cẩm nang → Nâng cấp khác → Dòng xe VinFast khác → [CTA] → FAQ (6 câu, FAQPage 6 câu khớp 1:1) → Form.
 
 ## Sản phẩm, giá, mức xác minh
 
 - 9 SKU theo `vf3.json` (giá thiết bị, chưa VAT, đơn vị **/bộ đèn**, đối chiếu `stg_products` 06/10/2026). **CX Commercial:** hiệu lực giá.
 - Lưới chính hiện 2 hàng (8 desktop / 4 mobile); nút "Xem thêm mẫu bi gầm" là link sang hub `https://v2.auto365.vn/nang-cap-anh-sang-bi-gam`. Mẫu thứ 9 (AES SV 2.0 Max) vẫn nằm trong HTML, bảng so sánh và bộ lọc.
-- Mức xác minh hiển thị trong bảng so sánh (popup lọc đã bỏ 10/10): GTR G1 Turbo V2 = "Đã có case VF3 được xác minh" (căn cứ 2 video); 8 mẫu còn lại = "Cần kiểm tra xe trước khi chốt". Thẻ lưới chính không gắn nhãn (yêu cầu 09/10); đoạn dưới H2 sản phẩm nêu GTR là mẫu có video VF3.
+- Mức xác minh trong bảng so sánh: GTR G1 Turbo V2 = "Có video VF3"; 8 mẫu còn lại = "Kỹ thuật xác nhận" (Nguyễn Quang Đạo). Vẫn kiểm tra pát/điện trên xe trước khi chốt.
 - Bảng **"So sánh nhanh 9 mẫu bi gầm cho VF3"** (`#vf3lp-so-sanh`, trong khối Sản phẩm, dưới nút "Xem tất cả"): lens, công suất Cos/Pha mỗi đèn, nhiệt màu, bảo hành, giá, trạng thái trên VF3. Nguồn: trang sản phẩm auto365.vn đọc 10/10/2026 (quy tắc reviewer: PDP là nguồn được chấp nhận). Ô "—" = PDP không ghi (lens AES SV 3.0 Pro); bảo hành AES SV 3.0 Max "Xác nhận khi báo giá" vì PDP không ghi. Có caption, `th scope`, cuộn ngang riêng trên mobile. Hiển thị dạng accordion `<details>` **thu gọn mặc định** (yêu cầu 10/10); bảng vẫn nằm trong HTML. 4 ghi chú đánh đổi: bằng chứng VF3, lens 3.0 vs 2.0, một vs ba nhiệt màu, công suất công bố khác phép đo.
 - F10 Turbo V2: kỹ thuật đã xác nhận tương thích VF3 (10/10/2026) — bảng so sánh nhãn "Kỹ thuật xác nhận", FAQ + FAQPage cập nhật.
 - Nhãn nhu cầu trong bộ lọc (đi phố / đi mưa / đi tỉnh / tiết kiệm) là gợi ý lọc, có ghi chú "không phải xác nhận tương thích". **CX Kỹ thuật** nếu muốn dùng làm căn cứ chọn.
@@ -63,14 +63,14 @@ Thứ tự H2: Tổng quan → **Video thi công trên VF3 (nền tối)** → C
 | BreadcrumbList | `{PAGE}#breadcrumb` | 5 cấp |
 | Article | `{PAGE}#article` | about: VinFast VF3 (Car), Bi gầm ô tô; mentions: 9 Product (name, url, brand); datePublished/dateModified |
 | CollectionPage | `{PAGE}#collectionpage` | ItemList 9 sản phẩm (name + url) |
-| FAQPage | `{PAGE}#faq` | 11 câu, khớp 1:1 với FAQ hiển thị |
+| FAQPage | `{PAGE}#faq` | 6 câu, khớp 1:1 với FAQ hiển thị |
 
 Không dùng Offer, Review, AggregateRating khi chưa có dữ liệu tương ứng.
 
 ## N1–N5
 
 - **N1:** giá thiết bị có ngày đối chiếu, VAT, đơn vị; công/pát/căn chỉnh báo riêng; bảo hành tách khỏi fitment. Chờ Commercial xác nhận hiệu lực.
-- **N2:** trả lời nhanh, sản phẩm, bảng so sánh 9 mẫu có nguồn + ghi chú đánh đổi, video VF3, khối "khi nào cần kiểm tra xe", 11 FAQ.
+- **N2:** trả lời nhanh, sản phẩm, bảng so sánh 9 mẫu có nguồn + ghi chú đánh đổi, video VF3, khối "khi nào cần kiểm tra xe", 6 FAQ.
 - **N3:** video VF3 thật cho GTR G1 Turbo V2; case xe khác ghi rõ tham khảo; ảnh minh họa có nhãn.
 - **N4:** Auto365 publisher; VF3 (about); GTR/X-Light/AES (brand trên mentions); reviewer Nguyễn Quang Đạo (Person @id dùng chung với các trang ánh sáng khác).
 - **N5:** intent bi gầm VF3; bài đèn chính không nằm trong khối bi gầm.
