@@ -117,3 +117,15 @@ C 28,0 · S 29,0 · G 23,75 · U 14,5 → **95,25/100 — ĐẠT** (GEO vừa ch
 Đã sửa 19/10 theo tái kiểm 17/10: nhiệt màu ghi đúng "3 phiên bản" theo nguồn hãng; popup có lý do, bỏ suy từ W; FAQ 1 thêm dữ kiện xe đã lắp (theo bài case đã đăng); FAQ bảo hành thêm cách xử lý lỗi sau lắp; khối giá thêm "1 bộ = 1 cặp đèn" và thời gian thi công; phiếu 02/03/04 cùng bản (SHA trong 04).
 
 Còn trừ: chưa có bảng đầy đủ theo đời/phiên bản xe (chỉ có dữ kiện từ các xe đã làm); production (L1–L8) chưa nghiệm thu, không trừ điểm nội dung.
+
+
+## Tăng GEO — 19/10/2026 (12 tiêu chí, có U3, /100)
+
+- G2: popup có câu tư vấn riêng cho từng nhu cầu (khi nào chưa cần lắp, kiểm đèn chính trước khi đi tỉnh, nhiệt màu không quyết định nhìn khi mưa, tiết kiệm thì tính cả pát/công), cộng lý do + đánh đổi từng mẫu.
+- G3: FAQ "có lắp được không" gắn link trực tiếp tới bài case làm nguồn cho từng dữ kiện.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 5 | 5 | 5 | 4,5 |
+
+C 28,0 · S 29,0 · G 24,25 · U 14,5 → **95,75/100 — ĐẠT**.
