@@ -74,6 +74,6 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (19/10/2026, bản hiện hành): `2fc3dfecee429f4ef0d499430b1b78d72ef4b9bb9225a50edfa39ea82a00b91c`
+SHA-256 `index.html` (19/10/2026, bản hiện hành): `72e32905e349737cb9be094643d88ab3c6d9ef872489046b74c8c6bae6951cd2`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
