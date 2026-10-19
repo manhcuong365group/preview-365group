@@ -36,7 +36,7 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | AS14-05 (15/10) | 4 nhãn "Độc quyền" chưa có căn cứ trong hồ sơ | Giữ nhãn: chủ quản xác nhận 14/10/2026 đây là sản phẩm độc quyền tại Auto365 (theo PDP). Ghi ở cột "Ghi chú Commercial" của 04 cho 4 dòng | 04 |
 | AS14-06 (15/10) | 22 bóng LED ghi "VAT xác nhận theo báo giá" trong khi PDP ghi chưa VAT | Đổi thành "Chưa gồm VAT" theo ghi chú giá PDP (chủ quản xác nhận giá/VAT theo PDP 10/10) — card, modal, 04 đồng bộ | HTML + 04 |
 | AS14-08/09 (15/10) | Bi cầu/projector; "Cos ~55W Cos/bi"; chữ VAT nhỏ | Câu ngắn dưới bảng nhóm: bi cầu = projector có thấu kính, Bi LED/Mini/Laser thuộc dạng này; spec card "Cos ~55W/bi", "Pha ~90W/bi"; chữ VAT 12,5px | HTML |
-| Theo dõi (15/10) | Việc ngoài phạm vi preview | **Trạng thái: hoàn tất theo xác nhận của chủ quản (15/10 và 17/10/2026).** (1) Reviewer chấm lại: có báo cáo tái kiểm 15/10/2026 — xem mục "Phiếu chấm hiện hành". (2) CMS áp sửa vào v2: hoàn tất, chủ quản xác nhận lại 17/10. (3) Lead test 143 xoá khỏi CRM: hoàn tất, chủ quản xác nhận lại 17/10. (4) Nghiệm thu L1–L8: hoàn tất, chủ quản xác nhận lại 17/10; biên bản do IT/SEO lưu | Báo cáo tái kiểm 15/10 (mục 1); mục 2–4 chờ hồ sơ |
+| Theo dõi (15/10) | Việc ngoài phạm vi preview | **Trạng thái (cập nhật 19/10/2026):** L1–L8 và xoá lead 143 hoàn tất theo xác nhận của chủ quản; CMS v2 chưa áp các sửa. (1) Reviewer chấm lại: có báo cáo tái kiểm 15/10/2026 — xem mục "Phiếu chấm hiện hành". (2) CMS v2: **chưa áp** — reviewer kiểm v2 17/10 và 19/10 vẫn thấy lỗi; gói sửa ở 05/06. (3) Lead test 143 xoá khỏi CRM: hoàn tất, chủ quản xác nhận lại 17/10. (4) Nghiệm thu L1–L8: hoàn tất, chủ quản xác nhận lại 17/10; biên bản do IT/SEO lưu | Báo cáo tái kiểm 15/10 (mục 1); mục 2–4 chờ hồ sơ |
 | A05 | Thiếu `<main>` | Một `<main id="main-content">` + skip link | HTML |
 | U3 | Bộ bàn giao | 01 Nội dung (xuất tự động, có SHA-256) + 02 CMS/SEO + 03 phiếu này + 04 Master Data cùng phiên bản | docs/nang-cap-anh-sang/ (nội bộ) |
 | A01 / RW-05 | Khóa giá/VAT/đơn vị | Chủ quản xác nhận 10/10/2026: giá, VAT, đơn vị như PDP là đúng; 129 dòng Master Data đánh dấu đã xác nhận | 04_Master_Data |
@@ -53,12 +53,12 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | AS-14 / RW-07: link nhảy đầu trang | Không thêm |
 | AS14-05 / AS15-01 (đóng 17/10): bỏ 4 nhãn "Độc quyền" theo quy ước claim | **Ngoại lệ do chủ quản quyết định 14/10/2026, giữ nhãn.** Phạm vi: chỉ 4 SKU Bi Laser Henvvei L91 Pro 2024, Henvvei L92 Pro (new 2024), X-Light X6 Pro, Henvvei L95 Pro 2022; chỉ nhãn "Độc quyền" như trên PDP, không thêm câu claim khác. Chủ thể: Auto365. **Phạm vi (chủ quản xác nhận 17/10/2026):** "độc quyền" nghĩa là 4 mẫu này chỉ bán trong hệ thống Auto365 (91 điểm, 33 tỉnh/thành); cửa hàng không thuộc Auto365 không được bán. Thời hạn: hiện hành, chủ quản không nêu ngày kết thúc |
 
-## Trạng thái việc ngoài preview (cập nhật 17/10/2026)
+## Trạng thái việc ngoài preview (cập nhật 19/10/2026)
 
 | Việc | Người | Trạng thái | Bằng chứng |
 | --- | --- | --- | --- |
 | Nghiệm thu production L1–L8 | IT/SEO | **Hoàn tất** — chủ quản xác nhận 15/10 và 17/10/2026 | Biên bản do IT/SEO lưu; chưa đính kèm bản sao vào bộ này |
-| CMS v2 áp các sửa V2-01…06 | CMS | **Hoàn tất** — chủ quản xác nhận 15/10 và 17/10/2026 | Nhật ký CMS do team CMS lưu; chưa đính kèm bản sao |
+| CMS v2 áp các sửa | CMS | **Chưa áp** — reviewer tái kiểm v2 ngày 17/10 và 19/10/2026: 88,3/100 đã xác nhận (SEO 28,3, GEO 23,3, U3 CX), chưa đạt; lỗi AS19-01…07 vẫn tái hiện | Gói sửa chi tiết: 05_Goi_sua_CMS_v2_AS19.md; đối chiếu từng thẻ v2: 06_Doi_chieu_CMS_v2_voi_Master.csv |
 | Xoá lead test 143 | CRM | **Hoàn tất** — chủ quản xác nhận 15/10 và 17/10/2026 | Log CRM do bộ phận CRM lưu; chưa đính kèm bản sao |
 | Đo AI Search T0/+7/+14/+28 | SEO | **Chưa thực hiện** (kế hoạch sau phát hành) | Prompt, nền tảng, thời gian, URL, 5 tín hiệu |
 | Ảnh "Vì sao chọn" | Media | Tuỳ chọn | Ảnh dựng có alt "ảnh minh họa"; thay ảnh thật nếu có |
