@@ -129,3 +129,5 @@ Còn trừ: chưa có bảng đầy đủ theo đời/phiên bản xe (chỉ có
 | 9,5 | 9,0 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,5 |
 
 C 28,0 · S 29,0 · G 24,0 · U 14,5 → **95,5/100 — ĐẠT**. G3 còn trừ 0,25: bài case VF6 ghi "Eco/Plus cần kiểm tra", chưa nêu phiên bản xe đã lắp.
+
+- 19/10/2026: viết lại 6 câu trả lời FAQ theo giọng tư vấn thật (ngắn, xưng "bên em", bỏ văn liệt kê kiểu AI); giữ nguyên dữ kiện, link nguồn và FAQPage khớp 1:1. Điểm không đổi.

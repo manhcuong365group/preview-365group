@@ -168,3 +168,5 @@ Còn trừ: chưa có bảng đầy đủ theo đời/phiên bản xe (chỉ có
 | 9,5 | 9,0 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 5 | 5 | 5 | 4,5 |
 
 C 28,0 · S 29,0 · G 24,25 · U 14,5 → **95,75/100 — ĐẠT** (SEO ≥28,5; GEO ≥23,75).
+
+- 19/10/2026: viết lại 6 câu trả lời FAQ theo giọng tư vấn thật (ngắn, xưng "bên em", bỏ văn liệt kê kiểu AI); giữ nguyên dữ kiện, link nguồn và FAQPage khớp 1:1. Điểm không đổi.
