@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `0874d9c1be0a673597b5e2852a540b25e3e4b425e09e33d55044ed52cb856c70`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `d98479cccfb53f48e01f1443d978d876857d9a2182c8fa6746253906da7415df`
 
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -72,7 +72,7 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 
 - 07Bàn giao & bảo hành
 
-Thời gian tham khảo trên trang sản phẩm Auto365: V20L Quantum khoảng 4–5 giờ, V30 Ultra khoảng 5–7 giờ — tùy cấu trúc cụm đèn, phương án đi dây và thời gian cân chỉnh. Kỹ thuật viên báo thời gian cụ thể khi hẹn lịch.
+Thời gian lắp tùy sản phẩm, vị trí lắp và từng gara; kỹ thuật viên báo thời gian cụ thể khi hẹn lịch.
 
 ## Xem ánh sáng bi LED trước khi chọn  `#video`
 
@@ -344,7 +344,7 @@ Nguy cơ phụ thuộc chất lượng dán keo khi mở cụm đèn và tình t
 
 Không thể kết luận chung cho mọi cấu hình. Khi đăng kiểm, cơ sở kiểm định đối chiếu hệ thống chiếu sáng thực tế với quy chuẩn và hồ sơ xe; nên giữ đúng vị trí đèn, chế độ Cos/Pha và vùng sáng đã cân chỉnh.
 
-Thời gian tham khảo trên trang sản phẩm Auto365: X-Light V20L Quantum khoảng 4–5 giờ, X-Light V30 Ultra khoảng 5–7 giờ. Thời gian thực tế tùy cấu trúc cụm đèn, phương án đi dây và cân chỉnh; kỹ thuật viên báo cụ thể khi hẹn lịch.
+Thời gian lắp tùy sản phẩm, vị trí lắp và từng gara; kỹ thuật viên báo thời gian cụ thể khi hẹn lịch.
 
 Phần lớn mẫu trên trang công bố tuổi thọ 30.000 giờ, một số 50.000 giờ, theo nhà sản xuất — tuổi thọ công bố không phải thời hạn bảo hành. Thời hạn và điều kiện bảo hành theo từng mã sản phẩm. Theo chính sách bảo hành đèn của Auto365: cần còn hạn, đã kích hoạt bảo hành điện tử 365Group, còn nguyên tem/seri; lỗi nhà máy (không sáng, chập chờn, kẹt màn trập, hư quạt, sáng yếu) được đổi mới; bị từ chối nếu đổ keo lên bi, mài cắt ngoài vị trí cho phép, vào nước do thi công hoặc tự tháo mở. Thời gian xử lý thông thường 15–30 ngày làm việc kể từ khi Auto365 nhận sản phẩm và hồ sơ đáp ứng đủ điều kiện; trường hợp đủ điều kiện nhưng hết sản phẩm thay thế có thể tới 90 ngày làm việc. Khi tiếp nhận, Auto365 xác nhận phạm vi và thời gian dự kiến cho từng hồ sơ.
 
