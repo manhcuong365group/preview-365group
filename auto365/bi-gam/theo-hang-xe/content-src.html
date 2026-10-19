@@ -287,7 +287,7 @@ a:hover .bv-th img{transform:scale(1.04)}
 .bw-card h3{margin:0 0 6px;font-size:15px;font-weight:600;line-height:1.35;color:var(--ink,#333)}
 .bw-card p{margin:0;font-size:13px;line-height:1.6;color:#555e6b}
 .bw-card a{color:var(--r,#e31b2d)}
-@media (max-width:767px){.bw-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bw-card{scroll-snap-align:start}}
+@media (max-width:767px){.bv-side{flex-direction:row!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:10px}.bv-side::-webkit-scrollbar{display:none}.bv-side>*{flex:0 0 72%!important;scroll-snap-align:start}.bw-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bw-card{scroll-snap-align:start}}
 .bght-process{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:28px 24px;box-shadow:0 4px 20px -2px rgba(15,23,42,.05)}
 .bght-process-h{margin:0 0 24px;font-size:17px;font-weight:700;color:#0f172a;display:flex;align-items:center;gap:8px}
 .bght-process-h:before{content:"";display:inline-block;width:4px;height:18px;background:#dc2626;border-radius:2px}
