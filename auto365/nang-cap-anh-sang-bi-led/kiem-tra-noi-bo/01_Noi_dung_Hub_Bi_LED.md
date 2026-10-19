@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `fef1fd1ff409ffa9dd91e749e36d242a6e079480a2fd7332a5f74022017a8acd`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `32022d4b95cb309ea4730eff12d03685cfd863654136903bdd396d549ce9fcb4`
 
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -71,8 +71,6 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 - 06Cân chỉnh và kiểm tra
 
 - 07Bàn giao & bảo hành
-
-Thời gian lắp tùy sản phẩm, vị trí lắp và từng gara; kỹ thuật viên báo thời gian cụ thể khi hẹn lịch.
 
 ## Xem ánh sáng bi LED trước khi chọn  `#video`
 
