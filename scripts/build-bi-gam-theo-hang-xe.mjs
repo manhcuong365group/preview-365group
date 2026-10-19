@@ -32,7 +32,7 @@ html = html.replace(/(<h3 class="bx-ptitle" id="bx-pop-t">)(<\/h3>)/, `$1${doc.g
 const abs = (u) => new URL(u, 'https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe/').href
   .replace('/nang-cap-anh-sang-bi-gam/vinfast-vf3/', '/nang-cap-anh-sang-bi-gam/vinfast/vf3')
   .replace(/(\/nang-cap-anh-sang-bi-gam\/vinfast\/vf\d)\/$/, '$1');
-const models = [...doc.querySelectorAll('#bght-models .bx-m')].map((a) => ({ name: a.querySelector('.bx-m-logo').textContent.trim() + ' ' + a.querySelector('b').textContent.trim(), url: abs(a.getAttribute('href')) }));
+const models = [...doc.querySelectorAll('#bght-models .bx-m[data-c]')].map((a) => ({ name: a.querySelector('.bx-m-logo').textContent.trim() + ' ' + a.querySelector('b').textContent.trim(), url: abs(a.getAttribute('href')) }));
 const cases = [...doc.querySelectorAll('#bght-rail .bght-case')].map((a) => ({ name: a.querySelector('p').textContent.trim(), url: abs(a.getAttribute('href')) }));
 const guides = [...doc.querySelectorAll('.bght-guide')].map((a) => ({ name: a.querySelector('h3').textContent.trim(), url: a.getAttribute('href') }));
 const faqs = [...doc.querySelectorAll('.bf-list details')].map((d) => ({ q: d.querySelector('summary').textContent.trim(), a: d.querySelector('p').textContent.trim() }));
