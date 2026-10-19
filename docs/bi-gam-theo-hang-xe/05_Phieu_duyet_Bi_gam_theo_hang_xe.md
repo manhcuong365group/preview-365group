@@ -1,0 +1,29 @@
+# 05 — Phiếu duyệt: Bi gầm theo hãng xe
+
+| Trường | Giá trị |
+|---|---|
+| Trang | `auto365/bi-gam/theo-hang-xe` → canonical `https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe` |
+| Bản duyệt | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_theo_hang_xe.md) |
+| Người duyệt kỹ thuật | Nguyễn Quang Đạo — Kiểm duyệt kỹ thuật đèn ô tô |
+| Ngày duyệt | 19/10/2026 |
+| Căn cứ ghi nhận | Chủ quản xác nhận trong phiên làm việc 19/10/2026: anh Đạo đã duyệt trang, câu lý do hốc đèn/12V trong "Gợi ý ánh sáng" và phiếu duyệt này |
+
+## Phạm vi đã duyệt (19/10/2026)
+
+| Mục | Kết quả |
+|---|---|
+| Sapo, dòng cập nhật, byline | Duyệt |
+| Giới thiệu 20 hãng + nguồn website chính thức | Duyệt |
+| "Gợi ý ánh sáng" gồm lý do theo kiểu xe (hốc 3.0/2.0 inch, pát/mặt dưỡng) và điện 12V | Duyệt |
+| 6 thẻ "Vì sao chọn", quy trình 7 bước, FAQ 5 câu | Duyệt |
+| Form tư vấn (nr-lead → `/api/leads`) | Lead test 205 ngày 19/10/2026 → `{"success":true}`; CRM xác nhận đã nhận |
+
+## Thêm sau lượt duyệt — chờ duyệt bổ sung
+
+| Mục | Nội dung |
+|---|---|
+| Dòng đầu popup đề xuất đèn theo dòng xe | Câu theo phân khúc của dòng xe (bán tải / SUV, MPV / sedan / xe hạng A–B), ví dụ Ranger: "hốc đèn gầm thường đủ chỗ cho bi 3.0 inch; cản trước to, cần pát chắc để đèn không rung khi đi đường xấu" |
+
+## Việc khác
+
+- Xoá lead test 205 khỏi CRM: CRM đã xác nhận nhận lead, chưa ghi nhận việc xoá.

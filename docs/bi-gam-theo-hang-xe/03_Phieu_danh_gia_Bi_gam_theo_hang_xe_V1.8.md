@@ -4,9 +4,9 @@
 |---|---|
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 — đủ 12 tiêu chí (có U3), thang /100. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
 | Bản chấm | Preview `auto365/bi-gam/theo-hang-xe/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_theo_hang_xe.md) (dateModified 2026-10-19) |
-| Ngày chấm | 19/10/2026 (lượt 1: 88,3 · sau sửa sapo/ngày/meta: 89,9 · sau bộ bàn giao + nguồn hãng: 93,3 · sau form: 93,5 · lượt này sau duyệt kỹ thuật, lý do hốc/12V, lead test) |
+| Ngày chấm | 19/10/2026 (lượt 1: 88,3 · sau sửa sapo/ngày/meta: 89,9 · sau bộ bàn giao + nguồn hãng: 93,3 · sau form: 93,5 · sau duyệt kỹ thuật, lý do hốc/12V, lead test: 94,7 · lượt này sau CRM xác nhận, duyệt câu hốc/12V, phiếu duyệt 05, lý do theo dòng xe trong popup) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 19/10/2026 (user xác nhận); `lastReviewed` 2026-10-19. Câu lý do hốc đèn/12V trong "Gợi ý ánh sáng" thêm sau lượt duyệt, chờ anh Đạo duyệt bổ sung |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 19/10/2026, gồm câu hốc đèn/12V (chủ quản xác nhận); `lastReviewed` 2026-10-19; xem [05](05_Phieu_duyet_Bi_gam_theo_hang_xe.md) |
 
 ## 1. Điểm theo tiêu chí
 
@@ -21,24 +21,24 @@
 | S3 | Liên kết và hồ sơ triển khai | 9,5/10 | 142 link auto365.vn kiểm 19/10 không lỗi; hướng dẫn CMS + quy trình sync | Link vào từ hub/VinFast kiểm ở L2 sau đăng |
 | **S** | | **28,5/30** | | Đạt ngưỡng 28,5 (vừa đủ) |
 | G1 | Câu trả lời rõ, đủ ngữ cảnh | 9,5/10 | Sapo định nghĩa trang, FAQ 5 câu, mỗi hãng có giới thiệu + gợi ý ánh sáng kèm điều kiện lắp | — |
-| G2 | Lập luận phục vụ nhu cầu | 9,4/10 | "Gợi ý ánh sáng": mẫu lắp nhiều theo case + lý do theo kiểu xe (gầm cao/bán tải: hốc đủ bi 3.0 inch; sedan, xe nhỏ: 2.0 inch hoặc pát/mặt dưỡng) + 12V, kiểm hốc/giắc/nguồn trước khi chốt | Lý do suy theo phân khúc, chưa theo từng dòng xe; chờ anh Đạo duyệt câu mới |
+| G2 | Lập luận phục vụ nhu cầu | 9,6/10 | "Gợi ý ánh sáng" theo hãng (đã duyệt) + popup đề xuất đèn nêu lý do theo phân khúc từng dòng xe (bán tải, SUV/MPV, sedan, xe hạng A–B) và 12V | Câu trong popup thêm sau lượt duyệt, chờ duyệt bổ sung; dòng xe chưa có phân khúc chỉ hiện câu chung |
 | G3 | Nguồn và truy nguyên | 4,9/5 | Mỗi case link bài gốc; nguồn hãng + ngày tra cứu; người duyệt đứng tên + ngày; 04 lưu URL từng dòng | — |
-| **G** | | **23,8/25** | | Đạt ngưỡng 23,75 |
+| **G** | | **24,0/25** | | Đạt ngưỡng 23,75 |
 | U1 | Cấu trúc dễ đọc | 4,6/5 | Chọn hãng → dòng xe → case → lý do → quy trình → chi nhánh → video → cẩm nang → FAQ; 375px không tràn ngang | — |
-| U2 | Hành động tiếp theo | 4,8/5 | Popup đề xuất 3 đèn, gọi 0365 365 911, Zalo, form nr-lead; lead test POST https://auto365.vn/api/leads 19/10/2026 → `{"success":true}`, lead_id 205 | CRM chưa xác nhận thấy lead và chưa xoá lead 205 |
-| U3 | Bộ bàn giao nhất quán | 4,7/5 | 01 + 04 xuất tự động cùng SHA, 02 hướng dẫn CMS, 03 phiếu này ghi người duyệt + ngày | Chưa có biên bản duyệt ký tên |
-| **U** | | **14,1/15** | | |
-| **Tổng** | | **94,7/100** | | C 28,3 · S 28,5 · G 23,8 · U 14,1 |
+| U2 | Hành động tiếp theo | 5/5 | Popup đề xuất 3 đèn, gọi 0365 365 911, Zalo, form nr-lead; lead test 205 (19/10/2026) → `{"success":true}`, CRM xác nhận đã nhận | Xoá lead 205 khỏi CRM (vận hành, không tính điểm) |
+| U3 | Bộ bàn giao nhất quán | 4,9/5 | 01 + 04 xuất tự động cùng SHA, 02 hướng dẫn CMS, 03 phiếu này, 05 phiếu duyệt ghi người, ngày, phạm vi duyệt | — |
+| **U** | | **14,5/15** | | |
+| **Tổng** | | **95,3/100** | | C 28,3 · S 28,5 · G 24,0 · U 14,5 |
 
 ## 2. Kết luận
 
-**CHƯA ĐẠT V1.8 — thiếu 0,3 điểm tổng.** Tổng 94,7/100 (<95); SEO 28,5/30 (đạt, vừa đủ); GEO 23,8/25 (đạt).
+**ĐẠT V1.8.** Tổng 95,3/100 (≥95); SEO 28,5/30 (đạt, vừa đủ); GEO 24,0/25 (đạt). Tự chấm trên preview, không phải nghiệm thu live.
 
-Việc còn lại:
+Còn theo dõi (không chặn):
 
-1. CRM xác nhận thấy lead 205 rồi xoá → U2.
-2. Anh Đạo duyệt câu lý do hốc đèn/12V mới trong "Gợi ý ánh sáng" → G2.
-3. Biên bản duyệt có ký tên (04) → U3.
+1. Anh Đạo duyệt bổ sung câu lý do theo dòng xe trong popup đề xuất đèn (thêm sau lượt duyệt 19/10).
+2. CRM xoá lead test 205.
+3. Sau đăng: bỏ `noindex`, nghiệm thu L1–L8 theo 02 mục 6.
 
 ## 3. Đã sửa ngày 19/10/2026
 
@@ -55,3 +55,5 @@ Việc còn lại:
 | Duyệt kỹ thuật | Byline "Rà soát kỹ thuật: Nguyễn Quang Đạo (19/10/2026)" + `reviewedBy`/`lastReviewed`; khôi phục câu kiểm duyệt ở thẻ "Tư vấn đúng theo từng xe" |
 | Gợi ý ánh sáng | Thêm lý do theo kiểu xe (hốc gầm 3.0/2.0 inch, pát/mặt dưỡng) và điện 12V |
 | Lead test | POST /api/leads → success, lead_id 205 (19/10/2026) |
+| Popup đề xuất đèn | Dòng đầu nêu lý do theo phân khúc dòng xe + 12V |
+| Phiếu duyệt | 05 ghi người duyệt, ngày, phạm vi |

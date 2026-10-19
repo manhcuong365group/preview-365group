@@ -838,7 +838,9 @@ aes:['AES SV 3.0 Max','bi-gam-aes-sv-30-max',PI+'products/auto365vn-bi-gam-aes-s
 function pkey(n){n=n.replace(/ \d{4}K$/,'');return {'X-Light F10 Hyper 2.0':'hyper','X-Light F10 2.0 New':'f10new2','X-Light F10 New 2025':'f10new25','X-Light F10 New':'f10new25','X-Light F10 Turbo V2':'turbov2','GTR G1 Turbo V2':'g1v2','GTR G1 Turbo':'g1','AES SV 3.0 Max':'aes'}[n]}
 var dlg=$('bght-dlg');
 function prKey(t){var m=t.match(/(X-Light F10 Hyper 2\.0|X-Light F10 2\.0 New|X-Light F10 New(?: 2025)?|X-Light F10 Turbo V2|GTR G1 Turbo V2|GTR G1 Turbo|AES SV 3\.0 Max)/i);return m?pkey(m[1].replace(/x-light/i,'X-Light')):null}
-function showSuggest(b,m){var cnt={},all={};CA.forEach(function(c){var k=prKey(c[2]);if(!k)return;all[k]=(all[k]||0)+1;if(c[0]===b)cnt[k]=(cnt[k]||0)+1});
+function mountTip(m){var g=SEG[m]||'';if(/Bán tải/i.test(g))return m+' là bán tải: hốc đèn gầm thường đủ chỗ cho bi 3.0 inch; cản trước to, cần pát chắc để đèn không rung khi đi đường xấu.';if(/Mini|hạng A|hạng B/i.test(g))return m+' thuộc nhóm '+g+': hốc gầm thường nhỏ, ưu tiên bi 2.0 inch hoặc làm pát, mặt dưỡng nếu muốn lắp bi 3.0 inch.';if(/SUV|MPV/i.test(g))return m+' thuộc nhóm '+g+': hốc gầm thường đủ chỗ cho bi 3.0 inch; kỹ thuật viên kiểm tra lại kích thước hốc theo đời xe.';if(/Sedan/i.test(g))return m+' thuộc nhóm '+g+': hốc gầm sedan thường thấp, cần căn góc chiếu kỹ để hạn chế chói xe đối diện.';return ''}
+function setSub(m){var p=dlg.querySelector('.bght-dlg-sub');if(!p.dataset.def)p.dataset.def=p.textContent;var t=mountTip(m);p.textContent=(t?t+' ':'')+'Xe du lịch dùng điện 12V; cấu hình cuối cần kiểm tra hốc lắp, pát, giắc và nguồn trên xe của bạn.'}
+function showSuggest(b,m){setSub(m);var cnt={},all={};CA.forEach(function(c){var k=prKey(c[2]);if(!k)return;all[k]=(all[k]||0)+1;if(c[0]===b)cnt[k]=(cnt[k]||0)+1});
  var own=Object.keys(cnt).sort(function(a,z){return cnt[z]-cnt[a]}),rest=Object.keys(all).sort(function(a,z){return all[z]-all[a]}).filter(function(k){return own.indexOf(k)<0});
  var out=own.slice(0,3).map(function(k){return [k,'Hay lắp trên xe '+b,'Auto365 đã lắp mẫu này trên '+cnt[k]+' xe '+b+'.']});
  rest.forEach(function(k){if(out.length<3)out.push([k,'Được lắp nhiều','Một trong các mẫu Auto365 lắp nhiều nhất ('+all[k]+' xe).'])});
@@ -846,7 +848,7 @@ function showSuggest(b,m){var cnt={},all={};CA.forEach(function(c){var k=prKey(c
  $('bght-dlg-list').innerHTML=out.map(function(r,i){var p=P[r[0]];return '<div class="bght-dlg-card'+(i===0?' is-top':'')+'"><div class="bght-dlg-img"><img src="'+p[2]+'" alt="Bi gầm '+esc(p[0])+'" loading="lazy"></div><span class="bght-dlg-tag">'+esc(r[1])+'</span><h3 class="bght-dlg-name">Bi gầm '+esc(p[0])+'</h3><p class="bght-dlg-why">'+r[2]+'</p><div class="bght-dlg-btns"><a class="bght-dlg-view" href="https://auto365.vn/'+p[1]+'">Xem sản phẩm</a><a class="bght-dlg-call" href="tel:0365365911">Liên hệ tư vấn 0365 365 911</a></div></div>'}).join('');
  var all2=dlg.querySelector('.bght-dlg-all');all2.href='tel:0365365911';all2.textContent='Liên hệ kỹ thuật viên kiểm tra '+m+' →';dlg.querySelector('.bght-dlg-guide').hidden=true;
  if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','')}
-function showProducts(mc){var b=mc[0],MAX=3,out=[],seen={};
+function showProducts(mc){setSub(mc[5]);var b=mc[0],MAX=3,out=[],seen={};
  // gom case theo sản phẩm, theo thứ tự ưu tiên: đúng dòng xe → cùng hãng → cùng phân khúc → lắp nhiều nhất
  function add(list,tag,why){var g={},o=[];list.forEach(function(c){var k=pkey(c[2]);if(!k||seen[k])return;if(!g[k]){g[k]=[];o.push(k)}g[k].push(c)});
   o.sort(function(a,z){return g[z].length-g[a].length});o.forEach(function(k){if(out.length<MAX){seen[k]=1;out.push([k,g[k],tag,why])}})}
