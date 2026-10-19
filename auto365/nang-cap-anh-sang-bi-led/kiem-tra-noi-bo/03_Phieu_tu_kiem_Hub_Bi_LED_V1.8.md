@@ -48,7 +48,7 @@ Ngày: 19/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Tự chấm team 14/10/2026 | Team Content | Bỏ U3 theo chỉ đạo, thang 95 | 94,5/95 — chỉ là điểm theo phạm vi 95, **không dùng thay** kết quả tái kiểm đủ 12 tiêu chí |
 | Tự chấm team 17/10/2026 | Team Content | Đủ 12 tiêu chí trên preview | 99/100 — tự chấm, không thay tái kiểm |
 | Tái kiểm 17/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **94,4/100 — chưa đạt** (SEO 28,3/30; GEO 23,8/25) |
-| Bản sửa 19/10/2026 (N01–N06) | — | — | **Chờ tái kiểm** |
+| Bản sửa 19/10/2026 (N01–N06, link bài theo dòng xe, inventory URL trong 02) | Team Content | Đủ 12 tiêu chí, thang 100, chấm trên preview | 95,7/100 (SEO 28,8/30; GEO 24,0/25) — tự chấm, **chờ tái kiểm độc lập** |
 
 ## Sửa theo tái kiểm 14/10/2026 (bản 15/10)
 

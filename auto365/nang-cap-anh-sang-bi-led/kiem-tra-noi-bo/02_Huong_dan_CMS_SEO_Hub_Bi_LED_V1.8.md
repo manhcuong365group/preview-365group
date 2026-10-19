@@ -16,7 +16,19 @@ Ngày hồ sơ: 19/10/2026, Asia/Saigon
 | /chinh-sach-bao-hanh | Chính sách bảo hành đèn | Nguồn của câu FAQ bảo hành |
 | /tin-tuc/xe-thuc-te-tai-auto365 | Toàn bộ case | Nút "Xem tất cả case" |
 
-**Trùng từ khóa cần xử lý trên CMS (quyết định của SEO):** `/bang-gia-do-den-bi-led` (11/2024), `/bang-gia-do-den-bi-led-o-to-thang-6` (6/2025), `/bang-gia-do-den-xe-bi-led-o-to-thang-1-2026` (1/2026) cùng nhắm "giá độ đèn bi LED" — đề xuất 301 về `/nang-cap-anh-sang-bi-led#so-sanh` hoặc giữ 1 bài bảng giá cập nhật và link về trang này.
+**URL theo nhu cầu tìm kiếm (inventory 19/10/2026):**
+
+| Nhóm nhu cầu | URL trả lời chính | Vai trò / quyết định |
+| --- | --- | --- |
+| Bi LED là gì, giá, cách chọn, so sánh mẫu | `/nang-cap-anh-sang-bi-led` | Hub — trả lời tổng quát, dẫn tới PDP/case/bài theo xe |
+| Giá độ đèn bi LED (3 bài bảng giá cũ 11/2024, 6/2025, 1/2026) | `/nang-cap-anh-sang-bi-led` | Đã 301 về hub 17/10/2026 (giá trùng hub, không có nội dung riêng) |
+| Chọn giữa bóng LED, bi LED, bi gầm, Bi Laser | `/nang-cap-anh-sang` | Hub tổng; hub Bi LED link hai chiều |
+| Bi LED theo dòng xe (Santa Fe, Ranger, Accent, VF8, CX-5) | Bài "giá, thông số và lưu ý khi lắp" theo từng xe trên auto365.vn | Giữ; hub link trong mục "Xe nào lắp được bi LED". Chưa tạo trang mới — CR-V, Fortuner, Mazda3, VF3 dùng case thật |
+| Một mẫu cụ thể (V30 Ultra, Turbo BM, CB750…) | PDP đúng đời | Giữ; hub link qua card và bảng thông số |
+| Xe đã lắp thực tế | `/tin-tuc/xe-thuc-te-tai-auto365` và 127 case | Giữ; hub hiển thị case + chip dòng xe |
+| Lỗi sau lắp, bảo dưỡng, chăm sóc mặt kính | Bài cẩm nang (8 bài trên hub) | Giữ |
+| Bảo hành | `/chinh-sach-bao-hanh` | Nguồn chuẩn; FAQ hub tóm tắt |
+| Nơi lắp gần khách | `/he-thong` và trang chi nhánh | Giữ; không tạo trang chỉ đổi tên tỉnh |
 
 ## 2. Metadata & on-page
 

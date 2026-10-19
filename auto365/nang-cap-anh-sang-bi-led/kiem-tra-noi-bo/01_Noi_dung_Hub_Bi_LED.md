@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `f4d8d4a7b02b19b4cb8cf5aeaee38df14d3a2a5a7736b63ada2443940582395d`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `fef1fd1ff409ffa9dd91e749e36d242a6e079480a2fd7332a5f74022017a8acd`
 
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -138,6 +138,8 @@ Bi cầu zin (halogen / xenon) Cùng kích thước lens chưa đủ: cần vừ
 **Dòng xe đã lắp bi LED tại Auto365**
 
 Theo 127 case bi LED đã đăng — bấm để xem xe thực tế. Cùng dòng xe vẫn có thể khác cụm đèn giữa các đời, nên đây là tham khảo; kỹ thuật viên xác nhận trên xe của bạn.Honda CR-V7Hyundai Santa Fe7Ford Ranger6Hyundai Accent5Mazda35Toyota Fortuner5VinFast VF85Hyundai Grand i104Toyota Camry4VinFast VF33Kia Cerato3Mitsubishi Xpander3Toyota Innova2Ford Everest2Honda HR-V2Mazda22
+
+Hướng dẫn theo dòng xe (giá, thông số và lưu ý khi lắp): Hyundai Santa Fe — X-Light V20 Square · Ford Ranger Wildtrak — X-Light V30 Ultra · Hyundai Accent — X-Light V30 Ultra · VinFast VF8 — X-Light V20 Square · VinFast VF8 — X-Light V20L Quantum · Mazda CX-5 — X-Light V30 Ultra.
 
 Cặp bi LED đặt trong cụm đèn pha BMW 3 F30 đã mở — kích thước bi phải vừa không gian bên trong cụm đèn.
 
