@@ -7,8 +7,8 @@
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
 | Meta description | Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày cập nhật (dateModified) | 2026-10-19 |
-| SHA-256 index.html | `2de0db77f926b8ad05725aeda44d06a76b6447c3d8858721d551dd80c667f4b9` |
-| SHA-256 content-src.html | `279b84915989ea618da93f5f3c35f0b7436b551d2c60d51d77f8eb79b18f6e36` |
+| SHA-256 index.html | `10924876246fd0b689203fd96258eb3ea08c07cd11cdda83e8ef92351ffabd1a` |
+| SHA-256 content-src.html | `6c17af9cc0fd798db8b836d0521b94378d633909412b99e29352f95b0f293a59` |
 | Xuất lúc | 2026-10-19 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo
@@ -21,15 +21,14 @@ Cập nhật 19/10/2026 · Rà soát kỹ thuật: Nguyễn Quang Đạo (19/10/
 
 ## Các khối (theo thứ tự hiển thị)
 
-1. Khám phá theo hãng xe
-2. Xe thực tế đã nâng cấp tại Auto365
-3. Vì sao chọn Auto365 để nâng cấp bi gầm?
-4. Quy trình nâng cấp bi gầm tại Auto365
-5. Hệ thống chi nhánh & tư vấn
-6. Video Auto365
-7. Cẩm nang liên quan
-8. Câu hỏi thường gặp về bi gầm theo hãng xe
-9. Kiểm tra xe và nhận tư vấn bi gầm
+1. Xe thực tế đã nâng cấp tại Auto365
+2. Vì sao chọn Auto365 để nâng cấp bi gầm?
+3. Quy trình nâng cấp bi gầm tại Auto365
+4. Hệ thống chi nhánh & tư vấn
+5. Video Auto365
+6. Cẩm nang liên quan
+7. Câu hỏi thường gặp về bi gầm theo hãng xe
+8. Kiểm tra xe và nhận tư vấn bi gầm
 
 ## Vì sao chọn Auto365
 
