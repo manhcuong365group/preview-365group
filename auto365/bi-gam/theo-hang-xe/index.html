@@ -1982,6 +1982,15 @@ Tư vấn độ đèn cho từng dòng xe</a>
 .bf-list details[open] summary:after{content:"–"}
 .bf-list p{margin:0 0 14px;font-size:14.5px;color:#3b444d;line-height:1.6}
 @media (max-width:767px){.bq-box{padding:14px}.bq-h{font-size:18px}.bf-list summary{font-size:14.5px}}
+/* vì sao chọn */
+.bw-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.bw-list li{background:#fff;border:1px solid var(--ln);border-radius:12px;padding:16px}
+.bw-ic{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:#fde8e8;color:var(--r);margin-bottom:10px}
+.bw-ic svg{width:22px;height:22px}
+.bw-list b{display:block;font-size:15.5px;font-weight:700;line-height:1.35;margin-bottom:4px}
+.bw-list p{margin:0;font-size:13.5px;color:var(--mu);line-height:1.55}
+@media (max-width:991px){.bw-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:767px){.bw-list{gap:8px}.bw-list li{padding:12px}.bw-list b{font-size:14px}.bw-list p{font-size:12.5px}}
 /* merged panel */
 .bx-tl{flex:0 0 auto;font-size:13px;color:var(--mu);padding-top:9px}
 .bx-tile{flex:0 0 auto;width:96px;height:38px;display:grid;place-items:center;border:1px solid #e3e6ea;background:#fff;border-radius:8px;cursor:pointer;font:inherit;font-size:12.5px;font-weight:500;color:var(--ink);padding:6px 12px;transition:.15s}
@@ -2183,6 +2192,8 @@ a:hover .bv-th img{transform:scale(1.04)}
 .hs-track{display:grid!important;grid-auto-flow:column;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 8px}
 .hs-track::-webkit-scrollbar{display:none}
 .hs-track>*{scroll-snap-align:start}
+.bght-rail.hs-track.one-row{grid-template-rows:auto!important}
+.hs-nav[hidden]{display:none}
 .bght-rail.hs-track,.bght-guides.hs-track{grid-template-rows:repeat(2,auto);grid-template-columns:none!important;grid-auto-columns:calc((100% - 36px)/4)}
 .bx-models.hs-track{grid-template-rows:auto;grid-template-columns:none!important;grid-auto-columns:calc((100% - 48px)/5)}
 .hs-nav{position:absolute;top:42%;z-index:3;width:36px;height:36px;border-radius:50%;border:1px solid #e1e4e8;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.15);font-size:20px;line-height:1;cursor:pointer;color:var(--ink)}
@@ -2197,7 +2208,7 @@ a:hover .bv-th img{transform:scale(1.04)}
  <div class="bght-in">
   <nav class="bght-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> › <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Độ bi gầm</a> › <span aria-current="page">Bi gầm theo hãng xe</span></nav>
   <h1 class="bght-h1">Bi gầm ô tô <br>theo hãng&nbsp;xe</h1>
-  <p class="bght-lead"><b>Độ bi gầm ô tô theo hãng xe</b> là phương pháp tra cứu cấu hình đèn tương thích dựa trên kho dữ liệu thi công thực tế thay vì thông số lý thuyết. Nhằm giúp chủ xe xác định nhanh giải pháp phù hợp, Auto365 đã phân loại và tổng hợp danh sách các dòng bi gầm (X-Light, GTR, AES) đã được lắp đặt hoàn thiện trên từng mẫu xe cụ thể thuộc Toyota, VinFast, Ford, Hyundai, Kia… Mỗi hồ sơ (case study) đều cung cấp hình ảnh nghiệm thu, thông số kỹ thuật và cấu hình pát zin tương ứng, hỗ trợ người dùng đối chiếu và đưa ra lựa chọn nâng cấp an toàn nhất.</p>
+  <p class="bght-lead"><b>Độ bi gầm ô tô theo hãng xe</b> là giải pháp tra cứu cấu hình đèn tương thích dựa trên dữ liệu thi công thực tế. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...). Mỗi hồ sơ đều đi kèm hình ảnh nghiệm thu và cấu hình pát zin, giúp chủ xe dễ dàng đối chiếu và lựa chọn phương án lắp đặt an toàn nhất.</p>
   <div class="bght-cta2"><a class="bght-btn" href="#hang-xe">Chọn hãng xe ↓</a><a class="bght-btn2" href="tel:0365365911">Gọi 0365 365 911</a></div>
  </div>
 </section>
@@ -2258,6 +2269,16 @@ a:hover .bv-th img{transform:scale(1.04)}
   <a class="bght-guide" href="https://auto365.vn/den-gam-o-to-giam-sang-sau-khi-chay-lau"><span class="im"><img src="https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-giam-sang-khi-chay-lau-img_6a9bd9d60b2455.72713640.webp" alt="Đèn gầm ô tô giảm sáng khi chạy lâu: Có do tản nhiệt?" loading="lazy"><span class="lb">Cẩm nang</span></span><span class="bd"><h3>Đèn gầm ô tô giảm sáng khi chạy lâu: Có do tản nhiệt?</h3><p>Đèn gầm ô tô yếu dần khi chạy lâu có thể do nhiệt, driver, quạt hoặc nguồn cấp. Xem dấu hiệu, cách kiểm tra và thời điểm cần bảo hành.</p><time datetime="2026-09-05">05/09/2026</time></span></a>
  </div><button type="button" class="hs-nav n" aria-label="Sau" data-dir="1">›</button></div>
 </div></section>
+
+<section class="bght-sec bght-why" id="vi-sao-chon"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Vì sao chọn Auto365 để nâng cấp bi gầm?</h2></div></div>
+ <ul class="bw-list">
+  <li><span class="bw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></span><b>Đại lý chính hãng X-Light, GTR, AES</b><p>Thiết bị chính hãng, bảo hành điện tử theo từng mã sản phẩm.</p></li>
+  <li><span class="bw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span><b>Kiểm tra xe, báo giá tách bạch</b><p>Giá đèn, pát/dưỡng và công lắp tách riêng từng hạng mục; chốt cấu hình trước khi thi công.</p></li>
+  <li><span class="bw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="M21 16l-5-5-8 8"/></svg></span><b>Hồ sơ lắp đặt thực tế</b><p>Bài viết, hình ảnh và cấu hình cụ thể trên nhiều hãng, dòng xe để đối chiếu trước khi chọn.</p></li>
+  <li><span class="bw-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg></span><b>90+ chi nhánh, hậu mãi rõ ràng</b><p>Có phiếu bàn giao sau lắp đặt và hỗ trợ bảo hành tại hệ thống chi nhánh toàn quốc.</p></li>
+ </ul>
+</div></div></section>
 
 <section class="bght-sec" style="padding-top:4px"><div class="bght-in">
  <div class="bght-head"><div><h2 class="bght-h2">Quy trình nâng cấp bi gầm tại Auto365</h2><p class="bght-sub">Thực hiện bởi kỹ thuật viên tại chi nhánh, có phiếu bàn giao sau lắp đặt.</p></div></div>
@@ -2559,18 +2580,21 @@ $('bght-filter').innerHTML=['Tất cả'].concat(B).map(function(b,i){return '<b
 function render(b){cur=b;var f=CA.filter(function(c){return !b||c[0]===b});
  $('bght-rail').innerHTML=f.map(function(c){var y=(c[2].match(/\b(19|20)\d{2}\b/)||[''])[0],d=c[5].split('-').reverse().join('/');
   return '<a class="bght-case" href="https://auto365.vn/'+c[3]+'"><span class="im"><img src="'+c[4]+'" alt="'+esc(c[2])+'" loading="lazy"><span class="tag">Bi gầm</span></span><span class="bd"><span class="tt"><h3>'+esc(c[1])+'</h3>'+(y?'<span class="yr">'+y+'</span>':'')+'</span><p>'+esc(c[2])+'</p></span><span class="ft"><span>'+(d?'◷ '+d:'')+'</span><em>Xem chi tiết lắp đặt →</em></span></a>'}).join('');
- var n=perPage();[].forEach.call(document.querySelectorAll('.bght-case'),function(x,i){x.hidden=i>=n});$('bght-morebtn').hidden=f.length<=n;
+ $('bght-rail').classList.toggle('one-row',f.length<=4); var n=perPage();[].forEach.call(document.querySelectorAll('.bght-case'),function(x,i){x.hidden=i>=n});
+ if(window.hsNav)setTimeout(hsNav,0);$('bght-morebtn').hidden=f.length<=n;
  [].forEach.call(document.querySelectorAll('.bght-chip'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===b)});
  [].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===b)});
 }
 render('');
 function goBrand(b){render(b);$('xe-thuc-te').scrollIntoView({behavior:'smooth'})}
 $('bght-filter').addEventListener('click',function(e){var t=e.target.closest('.bght-chip');if(t)render(t.getAttribute('data-b'))});
-function selectBrand(b){selB=b;$('bght-models').scrollLeft=0;[].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===selB)});filterModels();render(B.indexOf(selB)>=0?selB:'');[].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===selB)})}
+function selectBrand(b){selB=b;$('bght-models').scrollLeft=0;[].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===selB)});filterModels();render(B.indexOf(selB)>=0?selB:'');[].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===selB)});setTimeout(hsNav,0)}
 $('bght-brands').addEventListener('click',function(e){var t=e.target.closest('.bght-brand');if(t)selectBrand(t.getAttribute('data-b'))});
 $('bx-clear').addEventListener('click',function(){selectBrand(selB)});
 [].forEach.call(document.querySelectorAll('.bv-nav'),function(n){n.addEventListener('click',function(){var r=$('bv-rail');r.scrollBy({left:+n.getAttribute('data-dir')*r.clientWidth*.8,behavior:'smooth'})})});
 function perPage(){return 1e9}
+function hsNav(){[].forEach.call(document.querySelectorAll('.hs'),function(w){var t=w.querySelector('.hs-track');var on=t&&t.scrollWidth>t.clientWidth+4;[].forEach.call(w.querySelectorAll('.hs-nav'),function(n){n.hidden=!on})})}
+window.hsNav=hsNav;window.addEventListener('resize',hsNav);setTimeout(hsNav,0);
 [].forEach.call(document.querySelectorAll('.hs-nav'),function(n){n.addEventListener('click',function(){var t=n.parentNode.querySelector('.hs-track');t.scrollBy({left:+n.getAttribute('data-dir')*t.clientWidth*.8,behavior:'smooth'})})});
 $('bght-morebtn').parentNode.hidden=true;$('bght-morebtn').addEventListener('click',function(){[].forEach.call(document.querySelectorAll('.bght-case[hidden]'),function(x){x.hidden=false});this.hidden=true});
 // hero selects
