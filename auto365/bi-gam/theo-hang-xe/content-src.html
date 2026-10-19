@@ -142,6 +142,7 @@
 .bx-in-h svg{width:30px;height:24px;fill:var(--lc)}.bx-in-h .bx-lg{height:22px;width:auto}
 .bx-intro p{margin:0 0 6px;font-size:14.5px;line-height:1.6;color:#2b333b}.bx-intro p:last-child{margin:0}
 .bx-intro a{color:var(--r)!important;text-decoration:underline!important}
+.bx-in-l{font-size:14px!important}.bx-in-lt{color:var(--r)}
 .bx-in-g{font-size:13.5px!important}
 .bx-lg{height:16px;width:auto;max-width:44px;object-fit:contain}
 .bx-m-ok{position:absolute;top:8px;left:8px;background:#1f9d55;color:#fff;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px}
@@ -192,6 +193,15 @@
 .bght-filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
 .bght-chip{border:1px solid var(--ln);background:#fff;border-radius:99px;padding:6px 14px;font:inherit;font-size:13px;cursor:pointer}
 .bght-chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.bght-filter{display:grid!important;gap:10px;margin-bottom:16px}
+.cf-row{display:flex;align-items:flex-start;gap:12px;min-width:0}
+.cf-l{flex:0 0 64px;font-size:13px;color:var(--mu);padding-top:9px}
+.cf-items{display:flex;flex-wrap:wrap;gap:8px;min-width:0;flex:1}
+.cf-items .bx-tile svg{width:28px;height:20px;fill:var(--lc)}
+.bx-tabs:not(.open) .bx-x:not(.on){display:none}.bx-tabs.open .bx-more-b{display:none}
+.cf-more{border-style:dashed!important;color:var(--mu)!important;font-weight:600}
+.cf-m{border-radius:8px!important;padding:7px 14px!important}
+@media (max-width:767px){.cf-l{display:none}.cf-items{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.cf-items::-webkit-scrollbar{display:none}.cf-items .bx-tile{width:84px;height:36px;flex:0 0 auto}.cf-m{flex:0 0 auto}}
 .bght-rail-w{position:relative}
 .bght-rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
 .bght-rail::-webkit-scrollbar{display:none}
@@ -653,7 +663,8 @@ var LCOL={Toyota:'#EB0A1E',Ford:'#003478',Honda:'#CC0000',Mazda:'#101010',Hyunda
 LOGO.VinFast='M1.2 4.5h4.1L12 15.6 18.7 4.5h4.1L13.6 19.5h-3.2zM6.9 4.5h2.6L12 9l2.5-4.5h2.6L12 13.2z';
 var BSLUG={'Land Rover':'','Isuzu':'',BMW:'bmw',Lexus:'lexus',Suzuki:'suzuki',Nissan:'nissan',Peugeot:'peugeot',Volkswagen:'volkswagen',Audi:'audi',Porsche:'porsche',Chevrolet:'chevrolet',Daewoo:'daewoo'};
 function logo(b){if(!LOGO[b])return BSLUG[b]?'<img class="bx-lg" src="https://auto365.vn/assets/frontend/images/car-brands/'+BSLUG[b]+'.png" alt="" loading="lazy">':'';return '<svg viewBox="0 0 24 24" aria-label="'+b+'" style="--lc:'+LCOL[b]+'"><path d="'+LOGO[b]+'"/></svg>'}
-$('bght-brands').innerHTML='<button type="button" class="bx-tile bx-tile--all bght-brand on" data-b="">Tất cả</button>'+BR.map(function(r){return '<button type="button" class="bx-tile bght-brand" data-b="'+r[0]+'" title="'+r[0]+'">'+(r[1]?'<img src="https://auto365.vn/assets/frontend/images/car-brands/'+r[1]+'.png" alt="'+r[0]+'" loading="lazy">':r[0])+'</button>'}).join('');
+$('bght-brands').innerHTML='<button type="button" class="bx-tile bx-tile--all bght-brand on" data-b="">Tất cả</button>'+BR.map(function(r,i){return '<button type="button" class="bx-tile bght-brand'+(i>=11?' bx-x':'')+'" data-b="'+r[0]+'" title="'+r[0]+'">'+(r[1]?'<img src="https://auto365.vn/assets/frontend/images/car-brands/'+r[1]+'.png" alt="'+r[0]+'" loading="lazy">':r[0])+'</button>'}).join('')+(BR.length>11?'<button type="button" class="bx-tile cf-more bx-more-b">+'+(BR.length-11)+' hãng</button>':'');
+$('bght-brands').addEventListener('click',function(e){if(e.target.closest('.bx-more-b')){$('bght-brands').classList.add('open');e.stopPropagation()}},true);
 // model chips
 var POP=['VF3','VF7','VF6','Camry','Fortuner','Innova Cross','CX-5','Ranger','CR-V','Creta'];
 var MS=C.slice().sort(function(a,z){var i=POP.indexOf(a[5]),j=POP.indexOf(z[5]);return (i<0?99:i)-(j<0?99:j)});
@@ -693,26 +704,41 @@ var selB='';
 function filterModels(){var q='',n=0;[].forEach.call(document.querySelectorAll('.bx-m'),function(m){var vis=selB?m.getAttribute('data-b')===selB:m.hasAttribute('data-pop');m.hidden=!vis;if(vis)n++});$('bx-empty').hidden=n>0;$('bx-more').parentNode.hidden=true;
  $('bx-pop-t').innerHTML=selB?'Các dòng xe <em>'+selB+'</em>':'<em>Xe phổ biến</em> đã lắp bi gầm tại Auto365';brandIntro()}
 var INTRO={"VinFast":"Thương hiệu ô tô điện Việt Nam với dải sản phẩm trải rộng, từ mini SUV VF 3 linh hoạt trong phố đến SUV 7 chỗ VF 9 rộng rãi cho gia đình. Dòng Green (Limo Green, Nerio Green, Herio Green) được thiết kế riêng cho tài xế dịch vụ. Phân khúc phổ thông đến cận cao cấp, phù hợp người dùng ưu tiên chi phí vận hành tiết kiệm.","Toyota":"Thương hiệu được tin dùng nhờ độ bền bỉ, khả năng giữ giá và chi phí bảo dưỡng hợp lý. Dải xe đáp ứng đủ nhu cầu: Wigo, Vios cho đô thị và kinh doanh dịch vụ; Fortuner, Innova Cross cho gia đình đông người; Land Cruiser, Alphard cho khách hàng cao cấp. Phân khúc phổ thông đến cao cấp.","Honda":"Nổi bật với cảm giác lái thể thao, động cơ vận hành mượt và tiết kiệm nhiên liệu. Các dòng chủ lực gồm sedan City, Civic và SUV HR-V, CR-V, phù hợp gia đình trẻ và người yêu thích trải nghiệm cầm lái. Phân khúc phổ thông đến tầm trung.","Hyundai":"Thiết kế hiện đại cùng trang bị tiện nghi phong phú trong từng tầm giá. Dải xe đa dạng từ Grand i10, Accent cho đô thị, SUV Creta, Tucson, Santa Fe, Palisade đến MPV Custin, Stargazer cho gia đình. Phân khúc phổ thông đến tầm trung.","Kia":"Phong cách trẻ trung, nhiều tiện nghi trong tầm giá. Dải xe phong phú gồm Morning, Soluto, sedan K3, K5, SUV Sonet, Seltos, Sportage, Sorento và MPV Carens, Carnival, đáp ứng từ nhu cầu đi lại hằng ngày đến gia đình đông thành viên. Phân khúc phổ thông đến tầm trung.","Mazda":"Ấn tượng với ngôn ngữ thiết kế KODO thanh lịch, nội thất tinh tế và cảm giác lái gắn kết. Các dòng nổi bật gồm Mazda3, SUV CX-5, CX-8 cùng CX-60, CX-90 thế hệ mới, phù hợp người đề cao thẩm mỹ và chất lượng hoàn thiện. Phân khúc tầm trung đến cận cao cấp.","Ford":"Thế mạnh ở dòng xe gầm cao đa dụng với khung gầm chắc chắn, khả năng vận hành mạnh mẽ trên đường trường và địa hình. Các dòng chủ lực gồm bán tải Ranger, Ranger Raptor và SUV 7 chỗ Everest, Territory. Phân khúc tầm trung đến cao.","Mitsubishi":"Bền bỉ, vận hành ổn định và chi phí sử dụng hợp lý. MPV Xpander, Xpander Cross được nhiều gia đình và tài xế dịch vụ tin chọn; bên cạnh đó là SUV Destinator, Pajero Sport và bán tải Triton cho nhu cầu đi xa, đa địa hình. Phân khúc phổ thông đến tầm trung.","BMW":"Thương hiệu xe sang Đức đề cao cảm giác lái thể thao và công nghệ tiên tiến. Dải xe gồm sedan 3 Series, 5 Series, 7 Series, SUV X1 đến X7, roadster Z4 cùng các mẫu thuần điện i4, i7, iX3. Phân khúc hạng sang.","Lexus":"Thương hiệu xe sang Nhật Bản nổi bật ở sự êm ái, khả năng cách âm và độ tin cậy cao. Các dòng chính gồm sedan ES, LS, SUV NX, RX, GX, LX và MPV hạng sang LM. Phân khúc hạng sang.","Suzuki":"Xe nhỏ gọn, linh hoạt và tiết kiệm nhiên liệu, chi phí sở hữu dễ tiếp cận. Dải xe gồm hatchback Swift, crossover Fronx, MPV 7 chỗ XL7 Hybrid và SUV địa hình cỡ nhỏ Jimny. Phân khúc phổ thông.","Nissan":"Hướng tới sự tiện dụng và công nghệ vận hành hiệu quả. Dải xe gồm sedan Almera, SUV Kicks e-POWER (động cơ xăng chỉ phát điện, bánh xe dẫn động hoàn toàn bằng mô-tơ điện) và bán tải Navara. Phân khúc phổ thông.","Peugeot":"Mang phong cách thiết kế Pháp tinh tế với khoang lái i-Cockpit đặc trưng. Các dòng chủ lực gồm SUV 2008, 3008, 5008, 408 và MPV Traveller. Phân khúc tầm trung đến cận cao cấp.","Volkswagen":"Đậm chất Đức với kết cấu chắc chắn và cảm giác lái đầm chắc. Dải xe gồm sedan Polo, MPV Viloran và SUV Tiguan, Teramont, Teramont X cho gia đình. Phân khúc tầm trung đến cao.","Audi":"Thương hiệu xe sang Đức nổi bật về công nghệ chiếu sáng, nội thất và trải nghiệm số. Dải xe gồm sedan A5 đến A8, SUV Q2 đến Q8 cùng các mẫu thuần điện Q6 e-tron, e-tron GT. Phân khúc hạng sang.","Land Rover":"Biểu tượng SUV hạng sang với khả năng vượt địa hình vượt trội. Các dòng xe gồm Defender, Discovery, Discovery Sport và họ Range Rover (Range Rover, Sport, Velar, Evoque). Phân khúc cao cấp.","Porsche":"Thương hiệu xe thể thao và SUV hạng sang hiệu năng cao. Các dòng xe gồm 718, 911, Taycan, Panamera, Macan và Cayenne. Phân khúc siêu sang.","Chevrolet":"Thương hiệu xe Mỹ từng có mặt rộng rãi tại Việt Nam với Spark, Aveo, Cruze, Captiva, Trailblazer và bán tải Colorado. Các mẫu xe này đến nay vẫn được nhiều chủ xe tin dùng.","Isuzu":"Nổi tiếng với động cơ diesel bền bỉ, tiết kiệm nhiên liệu. Dải xe gồm bán tải D-Max và SUV 7 chỗ mu-X, phù hợp chạy đường dài và phục vụ công việc. Phân khúc tầm trung.","Daewoo":"Thương hiệu xe Hàn Quốc từng rất quen thuộc tại Việt Nam với các mẫu Matiz, Lanos, Nubira, Lacetti, Gentra. Các mẫu xe này đến nay vẫn được nhiều chủ xe tin dùng."};
+function lightTip(b){var cs=CA.filter(function(c){return c[0]===b}),cnt={},ord=[],small=[];
+ cs.forEach(function(c){var p=(c[2].match(/(X-Light [^:]+?|GTR [^:]+?|AES [^:]+?|Titan \d+)(?=[:|]|\s\d{4}K|\s(?:giá|cao cấp|cực|thời|nhiệt|3 nhiệt|sang|kết hợp|cùng|và)\b|$)/i)||[''])[0].replace(/\s*\(.*$/,'').replace(/\s\d{4}K$/,'').trim();
+  if(/F10 2\.0 New/i.test(c[2])){var m=c[1].replace(new RegExp('^'+b+'\\s*','i'),'').split(' ').slice(0,2).join(' ');if(small.indexOf(m)<0)small.push(m)}
+  if(!p)return;if(!cnt[p]){cnt[p]=0;ord.push(p)}cnt[p]++});
+ if(!ord.length)return 'Kỹ thuật viên kiểm tra hốc đèn gầm (2.0 hay 3.0 inch), pát/gá và hệ điện trên xe '+esc(b)+' để chọn mẫu bi gầm phù hợp.';
+ var top=ord.slice().sort(function(x,y){return cnt[y]-cnt[x]}).filter(function(p){return !/2\.0 New/i.test(p)}).slice(0,2);
+ var t=top.length?'Trên xe '+esc(b)+', Auto365 thường lắp '+top.map(function(p){return '<b>'+esc(p)+'</b>'}).join(' và '):'';
+ if(small.length)t+=(t?'; ':'')+'bản 2.0 inch <b>X-Light F10 2.0 New</b> đã lắp trên '+small.slice(0,3).map(esc).join(', ');
+ return t+'.'}
 function brandIntro(){var el=$('bx-intro');if(!selB){el.hidden=true;return}var b=selB,cs=CASES.filter(function(c){return c[0]===b}),n=(LINEUP[b]||[]).length,pr=[];
  cs.forEach(function(c){var k=c[2].replace(/ \d{4}K$/,'');if(pr.indexOf(k)<0)pr.push(k)});
  var gd=[];C.forEach(function(c){if(c[0]===b){if(c[7])gd.push(['https://auto365.vn/'+c[3],c[5]]);else if(GUIDE[c[5]])gd.push(['https://auto365.vn/'+GUIDE[c[5]],c[5]])}});
- var t='<h3 class="bx-in-h">'+logo(b)+esc(b)+'</h3><p>'+(INTRO[b]||'')+'</p>'+(gd.length?'<p class="bx-in-g">Bài tư vấn bi gầm: '+gd.map(function(g){return '<a href="'+g[0]+'">'+esc(b)+' '+esc(g[1])+'</a>'}).join(' · ')+'</p>':'');
+ var t='<h3 class="bx-in-h">'+logo(b)+esc(b)+'</h3><p>'+(INTRO[b]||'')+'</p><p class="bx-in-l"><b class="bx-in-lt">Gợi ý ánh sáng:</b> '+lightTip(b)+'</p>'+(gd.length?'<p class="bx-in-g">Bài tư vấn bi gầm: '+gd.map(function(g){return '<a href="'+g[0]+'">'+esc(b)+' '+esc(g[1])+'</a>'}).join(' · ')+'</p>':'');
  el.innerHTML=t;el.hidden=false}
 $('bx-more').addEventListener('click',function(){showAll=true;filterModels()});
 filterModels();
 // filter + rail
-$('bght-filter').innerHTML=['Tất cả'].concat(B).map(function(b,i){return '<button type="button" class="bght-chip'+(i?'':' on')+'" data-b="'+(i?b:'')+'">'+b+'</button>'}).join('');
-function render(b){cur=b;var f=CA.filter(function(c){return !b||c[0]===b});
+var CMOD={};Object.keys(CM).forEach(function(k){var m=k.split('|')[1];CM[k].forEach(function(c){CMOD[c[3]]=m})});
+function cmod(c){return CMOD[c[3]]||c[1].replace(new RegExp('^'+c[0]+'\\s*'),'')}
+var curM='',cfOpen=false,CF_N=11;
+function cfDraw(){var bs=B.slice(),show=cfOpen?bs:bs.slice(0,CF_N);if(cur&&show.indexOf(cur)<0)show.push(cur);
+ var h='<div class="cf-row"><span class="cf-l">Hãng xe:</span><div class="cf-items"><button type="button" class="bx-tile bx-tile--all cf-b'+(cur?'':' on')+'" data-b="">Tất cả</button>'+show.map(function(b){var lg=logo(b);return '<button type="button" class="bx-tile cf-b'+(cur===b?' on':'')+'" data-b="'+b+'" title="'+b+'">'+(lg||b)+'</button>'}).join('')+(!cfOpen&&bs.length>CF_N?'<button type="button" class="bx-tile cf-more">+'+(bs.length-CF_N)+' hãng</button>':'')+'</div></div>';
+ if(cur){var cnt={};CA.forEach(function(c){if(c[0]===cur){var m=cmod(c);cnt[m]=(cnt[m]||0)+1}});var ms=Object.keys(cnt).sort(function(a,z){return cnt[z]-cnt[a]||a.localeCompare(z)});
+  h+='<div class="cf-row"><span class="cf-l">Dòng xe:</span><div class="cf-items"><button type="button" class="bght-chip cf-m'+(curM?'':' on')+'" data-m="">Tất cả</button>'+ms.map(function(m){return '<button type="button" class="bght-chip cf-m'+(curM===m?' on':'')+'" data-m="'+esc(m)+'">'+esc(m)+'</button>'}).join('')+'</div></div>'}
+ $('bght-filter').innerHTML=h}
+function render(b,m){if(b!==cur)curM='';cur=b;if(m!==undefined)curM=m;var f=CA.filter(function(c){return (!b||c[0]===b)&&(!curM||cmod(c)===curM)});cfDraw();
  $('bght-rail').innerHTML=f.map(function(c){var y=(c[2].match(/\b(19|20)\d{2}\b/)||[''])[0],d=c[5].split('-').reverse().join('/');
   return '<a class="bght-case" href="https://auto365.vn/'+c[3]+'"><span class="im"><img src="'+c[4]+'" alt="'+esc(c[2])+'" loading="lazy"><span class="tag">Bi gầm</span></span><span class="bd"><span class="tt"><h3>'+esc(c[1])+'</h3>'+(y?'<span class="yr">'+y+'</span>':'')+'</span><p>'+esc(c[2])+'</p></span><span class="ft"><span>'+(d?'◷ '+d:'')+'</span><em>Xem chi tiết lắp đặt →</em></span></a>'}).join('');
  $('bght-rail').classList.toggle('one-row',f.length<=4); var n=perPage();[].forEach.call(document.querySelectorAll('.bght-case'),function(x,i){x.hidden=i>=n});
  if(window.hsNav)setTimeout(hsNav,0);$('bght-morebtn').hidden=f.length<=n;
- [].forEach.call(document.querySelectorAll('.bght-chip'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===b)});
  [].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===b)});
 }
 render('');
 function goBrand(b){render(b);$('xe-thuc-te').scrollIntoView({behavior:'smooth'})}
-$('bght-filter').addEventListener('click',function(e){var t=e.target.closest('.bght-chip');if(t)render(t.getAttribute('data-b'))});
+$('bght-filter').addEventListener('click',function(e){var t=e.target.closest('.cf-b,.cf-m,.cf-more');if(!t)return;if(t.classList.contains('cf-more')){cfOpen=true;cfDraw();return}if(t.classList.contains('cf-b'))render(t.getAttribute('data-b'));else render(cur,t.getAttribute('data-m'))});
 function selectBrand(b){selB=b;$('bght-models').scrollLeft=0;[].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===selB)});filterModels();render(B.indexOf(selB)>=0?selB:'');[].forEach.call(document.querySelectorAll('.bght-brand'),function(x){x.classList.toggle('on',x.getAttribute('data-b')===selB)});setTimeout(hsNav,0)}
 $('bght-brands').addEventListener('click',function(e){var t=e.target.closest('.bght-brand');if(t)selectBrand(t.getAttribute('data-b'))});
 $('bx-clear').addEventListener('click',function(){selectBrand(selB)});
