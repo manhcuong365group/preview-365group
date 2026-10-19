@@ -23,7 +23,7 @@ Ngày hồ sơ: 19/10/2026, Asia/Saigon
 | Trường | Giá trị |
 | --- | --- |
 | Title | Bi LED ô tô (đèn bi cầu LED) chính hãng: giá, cách chọn \| Auto365 |
-| Meta description | Bi LED ô tô X-Light, AES, Titan, GTR, Henvvei: so sánh giá, công suất Cos/Pha, nhiệt màu, case xe thực tế và lưu ý lắp, cân chỉnh tại Auto365. |
+| Meta description | Bi LED ô tô X-Light, AES, Titan Moto, GTR, Henvvei: so sánh giá, công suất Cos/Pha, nhiệt màu, case xe thực tế và lưu ý lắp, cân chỉnh tại Auto365. |
 | H1 | Bi LED ô tô (đèn bi cầu LED) chính hãng tại Auto365 (duy nhất) |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-led |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (mục 6) |

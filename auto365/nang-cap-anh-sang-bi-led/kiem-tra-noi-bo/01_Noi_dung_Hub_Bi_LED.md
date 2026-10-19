@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `25f74b0bd9214b35f7e503e65a868c5f89853d1595f05dac2a1053bcbb8885f4`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `0874d9c1be0a673597b5e2852a540b25e3e4b425e09e33d55044ed52cb856c70`
 
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -246,9 +246,9 @@ Cố định bi thẳng trục bằng pát trước khi dán keo — bước quy
 
 Số mẫu và khoảng giá tính theo danh mục trên trang (giá niêm yết, chưa gồm VAT). Mỗi hãng có nhiều đời sản phẩm; nên so sánh theo thông số và xe thực tế thay vì chỉ theo tên hãng.
 
-**Titan**
+**Titan Moto**
 
-30 mẫu · 2.000.000đ – 9.900.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu) · bi lẻ từ 1.700.000đ/chiếcThương hiệu Titan Moto (tên thương hiệu, không phải đèn xe máy) có các dòng Black, Gold, Platinum, CB và nhiều mẫu Mini 1.5–2.0 inch cho chóa nhỏ.Xem mẫu Titan →
+30 mẫu · 2.000.000đ – 9.900.000đ (giá sản phẩm, chưa VAT, đơn vị bộ/cặp theo từng mẫu) · bi lẻ từ 1.700.000đ/chiếcThương hiệu Titan Moto (tên thương hiệu, không phải đèn xe máy) có các dòng Black, Gold, Platinum, CB và nhiều mẫu Mini 1.5–2.0 inch cho chóa nhỏ.Xem mẫu Titan Moto →
 
 **X-Light**
 
@@ -314,7 +314,7 @@ Chỉnh đường cắt Cos, chiều cao vùng sáng và cân bằng hai bên đ
 
 **Dùng đúng Cos/Pha**
 
-Theo Điều 20 Luật Trật tự, an toàn giao thông đường bộ 2024: bật đèn chiếu sáng phía trước từ 18 giờ hôm trước đến 06 giờ hôm sau, hoặc khi có sương mù, khói, bụi, trời mưa, thời tiết xấu làm hạn chế tầm nhìn. Tắt đèn chiếu xa (Pha), bật đèn chiếu gần (Cos) khi gặp người đi bộ qua đường; khi đi qua khu đông dân cư có hệ thống chiếu sáng đang hoạt động; khi gặp xe đi ngược chiều, trừ trường hợp dải phân cách có khả năng chống chói; khi chuyển hướng tại nơi đường giao nhau.
+Dùng Pha khi đường vắng, thiếu sáng; chuyển sang Cos khi gặp người đi bộ hoặc xe ngược chiều, vào khu dân cư có đèn đường và khi qua giao lộ. Chi tiết xem Điều 20 Luật TTATGT đường bộ 2024.
 
 Nguồn: Điều 20 Luật TTATGT đường bộ 2024 (Cổng thông tin Chính phủ). Quy định về lắp thêm đèn (Nghị định 168/2024, 238/2026) xem tại trang Nâng cấp ánh sáng.
 
