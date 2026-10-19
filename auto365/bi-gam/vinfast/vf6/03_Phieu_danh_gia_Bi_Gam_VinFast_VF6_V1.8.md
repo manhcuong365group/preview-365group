@@ -102,3 +102,18 @@ C 29,0 · S 29,0 · G 24,5 · U 10 → **92,5/95 = 97,4/100 — ĐẠT**. Ngày 
 - Khối kiểm nội bộ: ghi duyệt lại 17/10. dateModified + hiển thị 19/10; lastReviewed giữ 17/10.
 
 Điểm (U3 không chấm theo chỉ đạo, /95 → /100): giữ **92,5/95 = 97,4/100 — ĐẠT**. Các sửa trên đóng lỗi C1/G2 mà audit nêu; phần còn trừ vẫn là bảng đời/phiên bản và chi phí theo phương án (chờ Kỹ thuật/Kinh doanh).
+
+
+## Chấm theo cách của sếp — 19/10/2026 (12 tiêu chí, có U3, thang /100, chấm trên preview)
+
+Cách quy đổi /95 → /100 ở các mục trên là **lịch sử**, không dùng nữa.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,5 | 9,5 | 10 | 9,5 | 9,5 | 9,5 | 4,5 | 5 | 5 | 4,5 |
+
+C 28,0 · S 29,0 · G 23,5 · U 14,5 → **95,0/100 — CHƯA ĐẠT** vì GEO 23,5 < 23,75. G3 thấp hơn VF3/VF7: 3 bài case VF6 không ghi phiên bản xe và thao tác lắp cụ thể. Cần Kỹ thuật cho biết phiên bản xe + cách lắp của các xe VF6 đã làm.
+
+Đã sửa 19/10 theo tái kiểm 17/10: nhiệt màu ghi đúng "3 phiên bản" theo nguồn hãng; popup có lý do, bỏ suy từ W; FAQ 1 thêm dữ kiện xe đã lắp (theo bài case đã đăng); FAQ bảo hành thêm cách xử lý lỗi sau lắp; khối giá thêm "1 bộ = 1 cặp đèn" và thời gian thi công; phiếu 02/03/04 cùng bản (SHA trong 04).
+
+Còn trừ: chưa có bảng đầy đủ theo đời/phiên bản xe (chỉ có dữ kiện từ các xe đã làm); production (L1–L8) chưa nghiệm thu, không trừ điểm nội dung.
