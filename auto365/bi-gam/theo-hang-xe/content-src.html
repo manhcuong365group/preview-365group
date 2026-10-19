@@ -357,7 +357,7 @@ a:hover .bv-th img{transform:scale(1.04)}
   <nav class="bght-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> › <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Độ bi gầm</a> › <span aria-current="page">Bi gầm theo hãng xe</span></nav>
   <h1 class="bght-h1">Bi gầm ô tô <br>theo hãng&nbsp;xe</h1>
   <p class="bght-lead"><b>Độ bi gầm ô tô theo hãng xe</b> là giải pháp tra cứu cấu hình đèn tương thích dựa trên dữ liệu thi công thực tế. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...). Mỗi hồ sơ dẫn về bài lắp đặt gốc trên auto365.vn, kèm hình ảnh thực tế và mẫu đèn đã lắp, giúp chủ xe đối chiếu trước khi chọn phương án phù hợp.</p>
-  <p class="bght-upd">Cập nhật <time datetime="2026-10-19">19/10/2026</time> · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn</p>
+  <p class="bght-upd">Cập nhật <time datetime="2026-10-19">19/10/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bght-rv" datetime="2026-10-19">19/10/2026</time>) · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn</p>
   <div class="bght-cta2"><a class="bght-btn" href="#hang-xe">Chọn hãng xe ↓</a><a class="bght-btn2" href="tel:0365365911">Gọi 0365 365 911</a></div>
  </div>
 </section>
@@ -394,7 +394,7 @@ a:hover .bv-th img{transform:scale(1.04)}
  <article class="bw-card has-photo"><figure class="bw-photo"><img src="hinh/auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp" alt="Xưởng Auto365 chuẩn bị bộ bi gầm X-Light X3 Ultra trước khi lắp (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Kỹ thuật viên giàu kinh nghiệm</h3><p>Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin.</p></article>
  <article class="bw-card has-photo"><figure class="bw-photo"><img src="hinh/auto365vn-can-chinh-den-tren-bang-test-xuong.webp" alt="Căn đường cắt Cos trên bảng test tại xưởng Auto365 (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Căn chỉnh Cos/Pha chuyên nghiệp</h3><p>Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe.</p></article>
  <article class="bw-card has-photo"><figure class="bw-photo"><img src="hinh/auto365vn-bao-gia-lap-dat-bi-gam.webp" alt="Bảng báo giá lắp đặt bi gầm tại xưởng Auto365 (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Giá niêm yết, báo giá minh bạch</h3><p>Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công.</p></article>
- <article class="bw-card has-photo"><figure class="bw-photo"><img src="hinh/auto365vn-tu-van-den-gam-theo-tung-xe.webp" alt="Tư vấn đèn gầm theo từng xe tại Auto365 (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Tư vấn đúng theo từng xe</h3><p>Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu.</p></article>
+ <article class="bw-card has-photo"><figure class="bw-photo"><img src="hinh/auto365vn-tu-van-den-gam-theo-tung-xe.webp" alt="Tư vấn đèn gầm theo từng xe tại Auto365 (ảnh minh họa)" width="640" height="360" loading="lazy" decoding="async"></figure><h3>Tư vấn đúng theo từng xe</h3><p>Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt.</p></article>
  </div>
 </div></div></section>
 
@@ -785,7 +785,9 @@ function lightTip(b){var cs=CA.filter(function(c){return c[0]===b}),cnt={},ord=[
  var top=ord.slice().sort(function(x,y){return cnt[y]-cnt[x]}).filter(function(p){return !/2\.0 New/i.test(p)}).slice(0,2);
  var t=top.length?'Trên xe '+esc(b)+', Auto365 thường lắp '+top.map(function(p){return '<b>'+esc(p)+'</b>'}).join(' và '):'';
  if(small.length)t+=(t?'; ':'')+'bản 2.0 inch <b>X-Light F10 2.0 New</b> đã lắp trên '+small.slice(0,3).map(esc).join(', ');
- return t+'.'}
+ var big=0,sm=0;Object.keys(CM).forEach(function(k){if(k.split('|')[0]!==b)return;var s=SEG[k.split('|')[1]]||'';if(/SUV|MPV|Bán tải/i.test(s)&&!/Mini/i.test(s))big++;else if(s)sm++});
+ var why=big>=sm&&big?'Các dòng gầm cao, MPV, bán tải của '+esc(b)+' thường có hốc đèn gầm đủ chỗ cho bi 3.0 inch':sm?'Sedan, xe cỡ nhỏ của '+esc(b)+' thường có hốc gầm hẹp, nên chọn bi 2.0 inch hoặc làm pát, mặt dưỡng khi muốn lắp bi 3.0 inch':'';
+ return t+'.'+(why?' '+why+'.':'')+' Xe du lịch dùng điện 12V; kỹ thuật viên kiểm tra kích thước hốc, giắc và nguồn trên xe trước khi chốt mẫu.'}
 var ISRC={"Toyota":"https://www.toyota.com.vn","VinFast":"https://vinfastauto.com/vn_vi","Ford":"https://www.ford.com.vn","Honda":"https://www.honda.com.vn/o-to","Hyundai":"https://hyundai.thanhcong.vn","Kia":"https://kiavietnam.com.vn","Mazda":"https://mazdamotors.vn","Mitsubishi":"https://www.mitsubishi-motors.com.vn","BMW":"https://www.bmw.vn","Lexus":"https://www.lexus.com.vn","Suzuki":"https://suzuki.com.vn","Nissan":"https://www.nissanvietnam.vn","Peugeot":"https://peugeotvietnam.vn","Volkswagen":"https://volkswagenvietnam.vn","Audi":"https://www.audi.vn","Land Rover":"https://www.landrover.com","Porsche":"https://www.porsche.com/vietnam/","Isuzu":"https://www.isuzu-vietnam.com"};
 function brandIntro(){var el=$('bx-intro');if(!selB){el.hidden=true;return}var b=selB,cs=CASES.filter(function(c){return c[0]===b}),n=(LINEUP[b]||[]).length,pr=[];
  cs.forEach(function(c){var k=c[2].replace(/ \d{4}K$/,'');if(pr.indexOf(k)<0)pr.push(k)});

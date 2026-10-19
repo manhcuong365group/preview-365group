@@ -24,7 +24,7 @@ Ngày: 19/10/2026 · Bản preview khớp SHA-256 ghi trong [01](01_Noi_dung_Bi_
 
 `CollectionPage` (dateModified) · `BreadcrumbList` (3 cấp) · `Organization` (@id `https://auto365.vn/#organization`) · `ItemList` dòng xe có case · `ItemList` xe thực tế (toàn bộ case) · `ItemList` cẩm nang · `FAQPage` (5 câu, khớp chữ hiển thị). Link VinFast preview được đổi sang canonical `/nang-cap-anh-sang-bi-gam/vinfast/vfX` trong schema.
 
-Chưa có `reviewedBy` / `lastReviewed`: trang **chưa có lượt kiểm duyệt kỹ thuật**. Khi anh Nguyễn Quang Đạo duyệt, thêm byline + `lastReviewed` = ngày duyệt.
+`reviewedBy` Nguyễn Quang Đạo, `lastReviewed` = ngày trong `<time class="bght-rv">` của byline (hiện 2026-10-19). Lần duyệt sau đổi ngày này.
 
 ## 4. Nguồn dữ liệu
 

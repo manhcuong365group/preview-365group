@@ -55,7 +55,7 @@ const desc = 'Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã l�
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Bi gầm theo hãng xe', description: desc, inLanguage: 'vi', dateModified: (content.match(/class="bght-upd">Cập nhật <time datetime="([0-9-]+)"/)||[])[1], isPartOf: { '@id': 'https://auto365.vn/#website' }, publisher: { '@id': 'https://auto365.vn/#organization' }, breadcrumb: { '@id': canonical + '#breadcrumb' } },
+    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Bi gầm theo hãng xe', description: desc, inLanguage: 'vi', lastReviewed: (content.match(/class="bght-rv" datetime="([0-9-]+)"/)||[])[1], reviewedBy: { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' }, dateModified: (content.match(/class="bght-upd">Cập nhật <time datetime="([0-9-]+)"/)||[])[1], isPartOf: { '@id': 'https://auto365.vn/#website' }, publisher: { '@id': 'https://auto365.vn/#organization' }, breadcrumb: { '@id': canonical + '#breadcrumb' } },
     { '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: 'https://auto365.vn/' },
       { '@type': 'ListItem', position: 2, name: 'Độ bi gầm', item: 'https://auto365.vn/nang-cap-anh-sang-bi-gam' },

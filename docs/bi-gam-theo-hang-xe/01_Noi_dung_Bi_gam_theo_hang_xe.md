@@ -7,8 +7,8 @@
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
 | Meta description | Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày cập nhật (dateModified) | 2026-10-19 |
-| SHA-256 index.html | `97158613a3f7c91d73b9bdb1a6a09f1c6f78fe5a25473d23069fba877bb53e6e` |
-| SHA-256 content-src.html | `93848e0be109f9760a483b3f390e9b33c4c3fcf628960f60ed7b0c3834158f80` |
+| SHA-256 index.html | `caa009622641f5fde3ed4fcc4e14be2d5a05687ce74c2511561863f949ee5925` |
+| SHA-256 content-src.html | `3d4e317dc0fac550ccc42aa47cf5af3f371784fa3bfe9cc091ba780a5a042aa7` |
 | Xuất lúc | 2026-10-19 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo
@@ -17,7 +17,7 @@
 
 Độ bi gầm ô tô theo hãng xe là giải pháp tra cứu cấu hình đèn tương thích dựa trên dữ liệu thi công thực tế. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...). Mỗi hồ sơ dẫn về bài lắp đặt gốc trên auto365.vn, kèm hình ảnh thực tế và mẫu đèn đã lắp, giúp chủ xe đối chiếu trước khi chọn phương án phù hợp.
 
-Cập nhật 19/10/2026 · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn
+Cập nhật 19/10/2026 · Rà soát kỹ thuật: Nguyễn Quang Đạo (19/10/2026) · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn
 
 ## Các khối (theo thứ tự hiển thị)
 
@@ -38,7 +38,7 @@ Cập nhật 19/10/2026 · Dữ liệu tổng hợp từ các bài lắp đặt 
 - **Kỹ thuật viên giàu kinh nghiệm** — Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin.
 - **Căn chỉnh Cos/Pha chuyên nghiệp** — Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe.
 - **Giá niêm yết, báo giá minh bạch** — Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công.
-- **Tư vấn đúng theo từng xe** — Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu.
+- **Tư vấn đúng theo từng xe** — Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt.
 
 ## Quy trình
 
