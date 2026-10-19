@@ -1,6 +1,6 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `d98479cccfb53f48e01f1443d978d876857d9a2182c8fa6746253906da7415df`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `f4d8d4a7b02b19b4cb8cf5aeaee38df14d3a2a5a7736b63ada2443940582395d`
 
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
@@ -326,9 +326,13 @@ Nguồn: Điều 20 Luật TTATGT đường bộ 2024 (Cổng thông tin Chính 
 
 **Xe báo lỗi bóng đèn sau nâng cấp: Nguyên nhân và cách xử lý**
 
+**Nâng cấp bi LED X-Light V30 Ultra trên Hyundai Accent: giá, thông số và lưu ý khi lắp**
+
 **Thiết kế hai nguồn Cos trên đèn bi LED X-Light V20L Quantum mang lại lợi ích thiết thực nào?**
 
 **Tại sao nên kiểm tra độ chụm và cường độ sáng của đèn trước khi phượt hè**
+
+**Cách bảo dưỡng đèn bi LED, bi Laser định kỳ để kéo dài tuổi thọ**
 
 Các mẫu bi LED ô tô trên trang có giá sản phẩm niêm yết từ 2.000.000đ đến 13.500.000đ mỗi bộ (bi lẻ bán theo chiếc từ 1.700.000đ), chưa gồm VAT. Pát/mặt dưỡng, dây/relay, công lắp và cân chỉnh tùy xe được báo riêng sau khi kiểm tra.
 
