@@ -1,7 +1,7 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `f122aeb5101c6586ee1ed0a541e345fd2be040906bdd1bae70078bcc605339a7`
-Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `5731f428f97a44e3416b28c7601986af5a4fd803498595f393fb47f82cec6968`
+Ngày xuất: 20/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
 
@@ -9,7 +9,9 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (19/10/2026) · Cập nhật 19/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (19/10/2026) · Cập nhật 20/10/2026
+
+Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 ## Sản phẩm PPF nổi bật tại Auto365  `#san-pham`
 
@@ -46,9 +48,9 @@ Hồ sơ thi công PPF đã đăng trên auto365.vn — mỗi bài ghi dòng phi
 
 ## Vì sao nên dán PPF tại Auto365?  `#vi-sao`
 
-**Hơn 90 chi nhánh – PPF chính hãng**
+**Hơn 90 chi nhánh – xác nhận điểm thi công PPF**
 
-Hơn 90 chi nhánh tại 33 tỉnh thành, cung cấp PPF chính hãng 3M và AX Film, nguồn gốc rõ ràng, dịch vụ thi công thuận tiện.
+Hệ thống hơn 90 chi nhánh tại 33 tỉnh thành. Khi đặt lịch, Auto365 xác nhận cơ sở nhận thi công đúng dòng PPF, phạm vi dán và nơi tiếp nhận bảo hành.
 
 **Tư vấn đúng phim, phù hợp từng xe**
 
@@ -103,6 +105,8 @@ Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Rev A
 
 Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn phạm vi thi công phù hợp.
 
+Sơ đồ minh họa vùng thân xe, không phải danh sách panel trong báo giá. Panel cụ thể được thống nhất theo từng xe.
+
 ## Quy trình thi công PPF  `#kien-thuc`
 
 1. 01Kiểm tra xe & tư vấnĐánh giá tình trạng sơn và nhu cầu sử dụng
@@ -115,15 +119,29 @@ Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn ph
 
 Những điểm kỹ thuật quyết định PPF bảo vệ tốt hay không — tổng hợp từ cẩm nang và hồ sơ thi công của Auto365.
 
+**Chọn phạm vi dán theo nhu cầu**
+
+_Hướng xem xét phạm vi dán PPF theo tình huống_
+
+| Tình huống | Hướng xem xét | Cần thống nhất trước báo giá |
+| --- | --- | --- |
+| Xe mới, muốn bảo vệ nhiều panel | So sánh dán toàn xe với các vùng ưu tiên | Panel có/không, bề mặt, ngân sách, thời gian lưu xe |
+| Đi đường trường, lo đá văng | Phương án mặt trước hoặc panel ưu tiên | Danh sách chi tiết; vùng đèn, cảm biến phù hợp vật liệu |
+| Chủ yếu đi phố, ngân sách giới hạn | Từng chi tiết dễ va quệt | Vị trí thật sự cần dán; không mặc định phải toàn xe |
+| Sơn sửa hoặc nền đang có lỗi | Kiểm tra nền trước khi quyết định dán | Độ ổn định sơn, xử lý nền, giới hạn khi bóc phim |
+| Quan tâm bề mặt vân carbon | Xem mẫu thực tế của dòng carbon đang bán | Hiệu ứng, vị trí phù hợp, yêu cầu liên quan màu xe |
+
+Bảng là hướng kiểm tra, không phải kết luận một dòng phim phù hợp mọi xe. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
+
 **PPF TPU, TPH và PVC khác nhau thế nào?**
 
-Phim bảo vệ sơn được làm từ ba nhóm vật liệu chính. Các dòng 3M PPF và AX Film PPF tại Auto365 dùng nền TPU (polyurethane nhiệt dẻo) — vật liệu phổ biến nhất ở phân khúc PPF cao cấp.
+Phim bảo vệ sơn trên thị trường thường được gọi theo ba nhóm vật liệu. Các dòng 3M PPF và AX Film PPF tại Auto365 công bố nền TPU/polyurethane theo tài liệu của hãng hoặc trang sản phẩm. Bảng dưới là xu hướng chung để tham khảo, không thay thông số của từng dòng phim.
 
 _So sánh vật liệu PPF: TPU, TPH và PVC_
 
 | Tiêu chí | TPU | TPH | PVC |
 | --- | --- | --- | --- |
-| Bản chất | Polyurethane nhiệt dẻo | TPU pha trộn vật liệu khác | Nhựa PVC |
+| Bản chất | Polyurethane nhiệt dẻo | Tên gọi thương mại, thành phần tùy nhà sản xuất | Nhựa PVC |
 | Độ dẻo, ôm đường cong | Cao | Trung bình | Thấp |
 | Tự phục hồi vết xước nhẹ | Có trên nhiều dòng (khi gặp nhiệt) | Hạn chế | Không |
 | Lão hoá dưới UV | Chậm hơn, tùy lớp phủ | Trung bình | Dễ lão hoá, ố vàng |
@@ -143,11 +161,11 @@ Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyu
 - X Series Ver 29.0 mil
 - Carbon Fiber8.0 mil
 
-Độ dày1 mil = 0,0254 mm; 3M Series 150 Gloss: 7.5 mil (0,19 mm) gồm keo theo TDS hãng. Dày hơn chịu đá văng tốt hơn, nhưng cứng hơn khi ôm chi tiết cong sâu. Đọc thêm
+Độ dày1 mil = 0,0254 mm; 3M Series 150 Gloss: 7.5 mil (0,19 mm) gồm keo theo TDS hãng. Độ dày là một dữ kiện để đối chiếu cùng cấu tạo, lớp phủ và hướng dẫn của từng dòng, không dùng riêng để xếp hạng khả năng bảo vệ. Đọc thêm
 
 Bề mặtTrong suốt bóng giữ màu sơn zin; vân carbon tạo hiệu ứng carbon trên capo, gương, ốp. Nên xem mẫu thực tế trên xe.
 
-Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim. Phim kém chất lượng có thể ố, bong, nứt chỉ sau 6–12 tháng.
+Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim, vị trí dán và thời hạn; đối chiếu tên dòng phim trên phiếu với báo giá.
 
 **Cần kiểm tra gì trên xe trước khi dán?**
 
@@ -175,7 +193,7 @@ Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim. Phim kém chất
 
 - PPF trong suốt: không làm đổi màu sơn ghi trên chứng nhận đăng ký xe, không phát sinh thủ tục đăng ký.
 - PPF màu, wrap đổi màu chủ đạo của xe: được xem là thay đổi màu sơn. Chủ xe khai báo với cơ quan đăng ký xe trước khi thay đổi và làm thủ tục cấp đổi chứng nhận đăng ký theo Thông tư 79/2024/TT-BCA.
-- Khi đăng kiểm: xe có màu thực tế không đúng màu trên chứng nhận đăng ký có thể bị từ chối kiểm định. Phần trang trí thêm (tem, decal, màu phụ) không vượt quá 50% diện tích, màu đăng ký vẫn là màu chủ đạo.
+- Khi đăng kiểm: xe có màu thực tế không đúng màu trên chứng nhận đăng ký có thể bị từ chối kiểm định. Trước khi dán phim làm đổi màu chủ đạo, nên hỏi cơ quan đăng ký xe về thủ tục áp dụng.
 
 Nguồn tham khảo: SGGP – xe thay đổi màu sơn bị từ chối kiểm định · Thư viện Pháp luật – đổi màu sơn ô tô và giấy đăng ký. Nên hỏi cơ quan đăng ký xe nơi cư trú trước khi dán phim đổi màu.
 
@@ -200,21 +218,21 @@ Giữ phim bền và trong hơn với vài nguyên tắc đơn giản.
 
 **Nên làm**
 
-- Chờ ít nhất 7 ngày sau khi dán mới rửa xe lần đầu để mép phim ổn định.
+- Rửa xe lần đầu theo thời điểm ghi trong hướng dẫn bàn giao của dòng phim đã dán.
 - Ưu tiên rửa tay, dùng khăn mềm (microfiber) và dung dịch pH trung tính.
-- Lau sạch nhựa cây, phân chim ngay; vết bẩn cứng đầu có thể xử lý bằng cồn chuyên dụng.
-- Đánh bóng/bảo dưỡng bề mặt định kỳ khoảng 6 tháng một lần, kiểm tra mép phim tại chi nhánh.
+- Lau sạch nhựa cây, phân chim sớm; với vết bẩn khó xử lý, hỏi kỹ thuật viên về dung dịch và cách dùng trước khi thực hiện.
+- Kiểm tra mép phim tại cơ sở thi công theo lịch hẹn kỹ thuật viên đề xuất.
 
 **Nên tránh**
 
 - Xịt rửa áp lực cao trực tiếp vào cạnh phim.
 - Hệ thống rửa xe tự động chổi quay — có thể gây xước hoặc nhấc mép phim.
-- Hoá chất có tính axit/kiềm cao, vật sắc nhọn khi vệ sinh.
+- Hoá chất có tính axit/kiềm cao, sản phẩm có chất mài mòn, chất đánh bóng hoặc rubbing compound khi chưa được xác nhận phù hợp với dòng phim.
 - Để xe phơi nắng gắt hoặc môi trường khắc nghiệt trong thời gian dài.
 
 Bảo hành theo từng dòng phim: thời hạn, phạm vi và điều kiện ghi trên phiếu bảo hành và Chính sách bảo hành.
 
-Kỹ thuật viên kiểm tra sơn trước khi tư vấn dòng phim và phạm vi dán.
+Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.
 
 _[Form: Họ và tên * · Số điện thoại * · Hãng xe · Dòng xe / đời xe · Phạm vi quan tâm · Khu vực · Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo Chính sách bảo mật.]_
 
@@ -262,7 +280,7 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 19/10/2026
+Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 20/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
