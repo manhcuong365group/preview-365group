@@ -23,10 +23,10 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 | G2 | 10 | 9,5 | Có ma trận tình huống → phạm vi → điều cần thống nhất |
 | G3 | 5 | 4,3 | TDS 3M đã đọc (cấu tạo, 7.5 mil, tự phục hồi, 10 năm); ảnh dẫn bài case. Còn CX: tài liệu AX, năng lực từng cơ sở, pháp lý hiện hành |
 | U1 | 5 | 4,8 | Trạng thái 0 case có thông báo + bỏ lọc; 375px/1280px không tràn |
-| U2 | 5 | 4,6 | Form/hotline rõ; lead 205 CRM nhận + xoá (user xác nhận). Còn: hotline PDP 911 vs hub 365 |
+| U2 | 5 | 4,8 | Form/hotline rõ; lead 205 CRM nhận + xoá (user xác nhận); hotline 9 PDP PPF + danh mục đã thống nhất 0365 365 365 (kiểm 20/10/2026). Còn: chọn cơ sở nhận PPF |
 | U3 | 5 | 5,0 | 01–03 cùng SHA-256 bên dưới, lập lại 20/10/2026 |
 
-**Tổng tự chấm: C 28,5 · S 28,5 · G 23,3 · U 14,4 → 94,7/100. CHƯA ĐẠT** (tổng < 95; GEO 23,3 < 23,75).
+**Tổng tự chấm: C 28,5 · S 28,5 · G 23,3 · U 14,6 → 94,9/100. CHƯA ĐẠT** (tổng < 95; GEO 23,3 < 23,75).
 
 ## Để đạt cần đầu vào ngoài trang
 
@@ -34,7 +34,6 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 2. Danh sách cơ sở nhận thi công PPF và tiếp nhận bảo hành (C1, G3, N3).
 3. Đường "Xem tất cả sản phẩm PPF" và mapping /ppfwrap-film + trang Wrap được duyệt (C2, S3).
 4. Rà điều khoản pháp lý hiện hành về đổi màu xe (G3).
-5. Thống nhất hotline tư vấn PPF trên PDP (U2).
 
 Mọi sửa HTML sau phiên bản này phải chấm lại.
 
@@ -42,7 +41,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `5731f428f97a44e3416b28c7601986af5a4fd803498595f393fb47f82cec6968` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `0523bbb3b0b09dfcc39079b29a89a7e3025acb57b91d22bc41f53cc7a88e9df2` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 20/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 

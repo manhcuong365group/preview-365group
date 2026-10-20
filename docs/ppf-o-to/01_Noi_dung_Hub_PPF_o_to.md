@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `5731f428f97a44e3416b28c7601986af5a4fd803498595f393fb47f82cec6968`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0523bbb3b0b09dfcc39079b29a89a7e3025acb57b91d22bc41f53cc7a88e9df2`
 Ngày xuất: 20/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô

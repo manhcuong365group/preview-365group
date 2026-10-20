@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `5731f428f97a44e3416b28c7601986af5a4fd803498595f393fb47f82cec6968` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0523bbb3b0b09dfcc39079b29a89a7e3025acb57b91d22bc41f53cc7a88e9df2` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -38,7 +38,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 - 9 dòng PPF: 3M 50/100/150/200 Gloss; AX G Series, K Series Ver 2, X Series Ver 2, Clear/Gloss Carbon Fiber. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026; ô "Theo trang sản phẩm" = PDP chưa ghi rõ.
 - Giá trên card = **giá dán toàn xe** theo trang sản phẩm, gồm VAT (user xác nhận 19/10/2026). Card ghi "/ toàn xe · gồm VAT"; Offer có `description` "Giá dán toàn xe, đã gồm VAT"; FAQ chi phí nêu khoảng 20.000.000đ–104.000.000đ toàn xe. Dán từng phần báo giá riêng.
 - 13 case PPF, lọc theo dòng phim (3M/AX) và hãng xe; 12 bài cẩm nang mới nhất lọc theo chủ đề; 4 video YouTube của Auto365.
-- Hotline Phim & PPF: 0365 365 365 (user chốt 19/10/2026); Zalo `zalo.me/0365365365`.
+- Hotline Phim & PPF: 0365 365 365 (user chốt 19/10/2026); Zalo `zalo.me/0365365365`. 9 trang sản phẩm PPF và danh mục /ppfwrap-film đã thống nhất số này (kiểm 20/10/2026).
 
 ## 5. Nguồn
 
@@ -65,7 +65,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 | PPF19-08 | Ghi chú dưới sơ đồ: minh họa, không phải danh sách panel báo giá | — |
 | PPF19-09 | Bỏ quy tắc 50%; hướng khách hỏi cơ quan đăng ký xe | Rà điều khoản hiện hành |
 | PPF19-10 | — | Đường tới toàn bộ catalog; mapping /ppfwrap-film; trang Wrap trước 301 |
-| PPF19-11 | Bộ 01–03 cùng SHA-256 | Hotline tư vấn trên PDP PPF (0365 365 911) vs hub (0365 365 365) |
+| PPF19-11 | Bộ 01–03 cùng SHA-256. Hotline: 9 PDP PPF + /ppfwrap-film đã đổi khung "Tư vấn lắp cho xe" và dòng "Hoặc gọi ngay" sang 0365 365 365, thẻ trụ sở thêm dòng "Phim cách nhiệt · PPF" (kiểm 20/10/2026; 2 mã AX Wrap kiểm thử cũng đúng) | — |
 | PPF19-12 | Ghi ở mục "Trước khi đăng production" | IT bỏ khối nội bộ khỏi HTML xuất bản |
 
 ## 6. Form tư vấn
