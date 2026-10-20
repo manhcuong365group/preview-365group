@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0523bbb3b0b09dfcc39079b29a89a7e3025acb57b91d22bc41f53cc7a88e9df2` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `9de4b23afabf95daea73d3423d23335d4b8a425b49229dc89310e33f2e8b9ad2` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -37,6 +37,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 
 - 9 dòng PPF: 3M 50/100/150/200 Gloss; AX G Series, K Series Ver 2, X Series Ver 2, Clear/Gloss Carbon Fiber. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026; ô "Theo trang sản phẩm" = PDP chưa ghi rõ.
 - Giá trên card = **giá dán toàn xe** theo trang sản phẩm, gồm VAT (user xác nhận 19/10/2026). Card ghi "/ toàn xe · gồm VAT"; Offer có `description` "Giá dán toàn xe, đã gồm VAT"; FAQ chi phí nêu khoảng 20.000.000đ–104.000.000đ toàn xe. Dán từng phần báo giá riêng.
+- Giá theo loại xe (trang sản phẩm, kiểm 20/10/2026): 3M 50 Gloss Sedan 38 · SUV 44 · MPV 51tr; 3M 100 Gloss 69 · 76 · 86tr; AX G Series 20 · 22 · 25tr; AX X Series Ver 2 45 · 49,5 · 54,5tr. Card ghi "từ" + dòng Sedan/SUV/MPV; schema dùng `AggregateOffer` (lowPrice/highPrice). Các dòng còn lại một giá. Bảo hành điền từ PDP: 3M 50 lên đến 5 năm, 3M 100 7 năm, 3M 200 10 năm, AX G 2,5 năm; AX X Series chưa ghi.
 - 13 case PPF, lọc theo dòng phim (3M/AX) và hãng xe; 12 bài cẩm nang mới nhất lọc theo chủ đề; 4 video YouTube của Auto365.
 - Hotline Phim & PPF: 0365 365 365 (user chốt 19/10/2026); Zalo `zalo.me/0365365365`. 9 trang sản phẩm PPF và danh mục /ppfwrap-film đã thống nhất số này (kiểm 20/10/2026).
 
@@ -49,7 +50,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 | Vật liệu PVC/TPU/TPH (xu hướng chung, không thay thông số dòng phim) | Bài kiến thức trên `auto365.vn/ppfwrap-film` (đã đăng) |
 | Chăm sóc: rửa lần đầu theo hướng dẫn bàn giao, tránh chất mài mòn/đánh bóng/rubbing compound | [3M Pro Series FAQ](https://www.3m.com/3M/en_US/p/dc/v100997005/) — chỉ dùng làm hướng chung, thời điểm cụ thể theo dòng phim |
 | Ảnh hero, form, CTA | Hồ sơ thi công [VinFast VF 8 dán PPF 3M 50 Gloss full xe](https://auto365.vn/vinfast-vf-8-dan-ppf-3m-50-gloss) tại Auto365.vn - Trụ Sở Chính |
-| Quy định đổi màu xe | Thông tư 79/2024/TT-BCA (đăng ký xe), chưa rà văn bản hợp nhất; [SGGP](https://www.sggp.org.vn/xe-thay-doi-mau-son-tu-cai-tao-chua-nop-phat-se-bi-tu-choi-kiem-dinh-post775883.html); [Thư viện Pháp luật](https://thuvienphapluat.vn/hoi-dap-phap-luat/doi-mau-son-xe-o-to-co-phai-xin-cap-lai-giay-dang-ky-xe-306493.html). Không ghi mức phạt; đã bỏ quy tắc 50% diện tích (chưa xác minh điều khoản hiện hành) |
+| Quy định đổi màu xe | [Toàn văn Thông tư 79/2024/TT-BCA](https://caselaw.vn/van-ban-phap-luat/411972-thong-tu-so-79-2024-tt-bca-ngay-15-11-2024-cua-bo-truong-bo-cong-an-quy-dinh-ve-cap-thu-hoi-chung-nhan-dang-ky-xe-bien-so-xe-co-gioi-xe-may-chuyen-dung) — khoản 2 Điều 18, khoản 1 Điều 20 (một số thủ tục/biểu mẫu đã được sửa đổi bởi TT 13/2025, 62/2026); [SGGP](https://www.sggp.org.vn/xe-thay-doi-mau-son-tu-cai-tao-chua-nop-phat-se-bi-tu-choi-kiem-dinh-post775883.html); [Thư viện Pháp luật](https://thuvienphapluat.vn/hoi-dap-phap-luat/doi-mau-son-xe-o-to-co-phai-xin-cap-lai-giay-dang-ky-xe-306493.html). Không ghi mức phạt; đã bỏ quy tắc 50% diện tích (chưa xác minh điều khoản hiện hành) |
 
 ## 5b. Sửa theo audit PPF19 (19/10/2026), bản 20/10/2026
 
@@ -57,13 +58,13 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 | --- | --- | --- |
 | PPF19-01 | Hero, ảnh cạnh form, nền CTA đổi sang ảnh thật dán PPF trên VinFast VF 8 (capo, cửa/hông, xe hoàn thiện); ALT/caption theo bài case. Bỏ file ảnh dán phim kính | — |
 | PPF19-02 | Chăm sóc: bỏ "7 ngày", "cồn chuyên dụng", "đánh bóng 6 tháng"; rửa lần đầu theo hướng dẫn bàn giao; hỏi kỹ thuật viên về dung dịch; tránh chất mài mòn/đánh bóng | Tài liệu chăm sóc từng dòng phim |
-| PPF19-03 | TPH = tên gọi thương mại; bảng vật liệu ghi là xu hướng chung; bỏ "dày hơn chịu đá văng tốt hơn", "6–12 tháng", "30.000 cửa hàng/ISO 9001"; nhãn AX = trang sản phẩm Auto365 (nguồn phân phối) | Tài liệu kỹ thuật AX Film |
-| PPF19-04 | "Hơn 90 chi nhánh… Khi đặt lịch, Auto365 xác nhận cơ sở nhận thi công đúng dòng PPF, phạm vi dán và nơi tiếp nhận bảo hành" | Danh sách cơ sở nhận PPF |
-| PPF19-05 | Giá toàn xe (user xác nhận); dán từng phần báo giá riêng | Panel bao gồm theo loại xe |
+| PPF19-03 | Thêm thông số AX theo PDP: K/X Ver 2 147/155 GU, 20/30 MPa; Gloss Carbon Fiber có bảng kiểm nghiệm (ASTM G155 6.000 giờ, SAE J400). TPH = tên gọi thương mại; bảng vật liệu ghi là xu hướng chung; bỏ "dày hơn chịu đá văng tốt hơn", "6–12 tháng", "30.000 cửa hàng/ISO 9001"; nhãn AX = trang sản phẩm Auto365 (nguồn phân phối) | Tài liệu kỹ thuật AX Film |
+| PPF19-04 | Dẫn trang [Hệ thống chi nhánh](https://auto365.vn/chi-nhanh): các chi nhánh đều triển khai nhóm PPF/Wrap; chứng nhận 3M cho phim/PPF chỉ tại 3M Pro Shop & Training Center, Trụ Sở Chính; quy mô/giờ mở cửa khác nhau | — |
+| PPF19-05 | Giá toàn xe theo loại xe Sedan/SUV/MPV lấy từ PDP; câu "giá cần xác nhận theo phạm vi panel và tình trạng bề mặt" (như PDP); dán từng phần báo giá riêng | Danh sách panel trong gói toàn xe |
 | PPF19-06 | Thêm mục "Chọn phạm vi dán theo nhu cầu" (bảng 5 tình huống) | — |
 | PPF19-07 | Lọc case 0 kết quả: thông báo + nút "Bỏ lọc" (role=status) | — |
 | PPF19-08 | Ghi chú dưới sơ đồ: minh họa, không phải danh sách panel báo giá | — |
-| PPF19-09 | Bỏ quy tắc 50%; hướng khách hỏi cơ quan đăng ký xe | Rà điều khoản hiện hành |
+| PPF19-09 | Bỏ quy tắc 50%; dẫn khoản 2 Điều 18 và khoản 1 Điều 20 Thông tư 79/2024/TT-BCA (đối chiếu toàn văn trên caselaw.vn); bỏ câu "khai báo trước khi thay đổi" (văn bản không quy định riêng) | Đối chiếu văn bản hợp nhất khi đăng |
 | PPF19-10 | — | Đường tới toàn bộ catalog; mapping /ppfwrap-film; trang Wrap trước 301 |
 | PPF19-11 | Bộ 01–03 cùng SHA-256. Hotline: 9 PDP PPF + /ppfwrap-film đã đổi khung "Tư vấn lắp cho xe" và dòng "Hoặc gọi ngay" sang 0365 365 365, thẻ trụ sở thêm dòng "Phim cách nhiệt · PPF" (kiểm 20/10/2026; 2 mã AX Wrap kiểm thử cũng đúng) | — |
 | PPF19-12 | Ghi ở mục "Trước khi đăng production" | IT bỏ khối nội bộ khỏi HTML xuất bản |

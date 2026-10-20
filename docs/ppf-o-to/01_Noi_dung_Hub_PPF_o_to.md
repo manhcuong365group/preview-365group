@@ -1,7 +1,7 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0523bbb3b0b09dfcc39079b29a89a7e3025acb57b91d22bc41f53cc7a88e9df2`
-Ngày xuất: 20/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `9de4b23afabf95daea73d3423d23335d4b8a425b49229dc89310e33f2e8b9ad2`
+Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
 
@@ -17,16 +17,16 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 Các dòng PPF chính hãng, đa dạng lựa chọn, phù hợp nhiều nhu cầu và phong cách xe.
 
-- Phim bảo vệ sơn 3M PPF 50 Gloss — 38.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: Theo trang sản phẩm · Bảo hành: Theo trang sản phẩm — https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son
-- Phim bảo vệ sơn 3M 100 Gloss — 69.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: Theo trang sản phẩm — https://auto365.vn/phim-bao-ve-son-3m-100-gloss
+- Phim bảo vệ sơn 3M PPF 50 Gloss — từ 38.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: Theo trang sản phẩm · Bảo hành: Lên đến 5 năm — https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son
+- Phim bảo vệ sơn 3M 100 Gloss — từ 69.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 7 năm — https://auto365.vn/phim-bao-ve-son-3m-100-gloss
 - Phim bảo vệ sơn 3M PPF 150 Gloss — 85.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil (0.19 mm) · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son
-- Phim bảo vệ sơn 3M PPF 200 Gloss — 104.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.9 mil · Bảo hành: Theo trang sản phẩm — https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son
-- AX Film PPF G Series — 20.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: Theo trang sản phẩm — https://auto365.vn/ax-film-ppf-g-series
+- Phim bảo vệ sơn 3M PPF 200 Gloss — 104.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.9 mil · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son
+- AX Film PPF G Series — từ 20.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 2,5 năm — https://auto365.vn/ax-film-ppf-g-series
 - AX PPF K Series Ver 2 — 26.900.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (147 GU) · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-k-series-ver-2
-- AX PPF X Series Ver 2 — 45.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (155 GU) · Độ dày: 9.0 mil · Bảo hành: Theo trang sản phẩm — https://auto365.vn/ax-ppf-x-series-ver-2
+- AX PPF X Series Ver 2 — từ 45.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (155 GU) · Độ dày: 9.0 mil · Bảo hành: Theo trang sản phẩm — https://auto365.vn/ax-ppf-x-series-ver-2
 - AX Film Clear PPF Carbon Fiber — 80.000.000 đ / toàn xe · gồm VAT · Bề mặt: Vân carbon trong · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-clear-carbon-fiber
 - AX Film Gloss PPF Carbon Fiber — 80.000.000 đ / toàn xe · gồm VAT · Bề mặt: Vân carbon bóng · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-carbon-fiber
-Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT. Báo giá thực tế theo dòng xe; dán từng phần (mặt trước, từng chi tiết) báo giá riêng.
+Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
@@ -48,9 +48,9 @@ Hồ sơ thi công PPF đã đăng trên auto365.vn — mỗi bài ghi dòng phi
 
 ## Vì sao nên dán PPF tại Auto365?  `#vi-sao`
 
-**Hơn 90 chi nhánh – xác nhận điểm thi công PPF**
+**90+ chi nhánh triển khai PPF/Wrap**
 
-Hệ thống hơn 90 chi nhánh tại 33 tỉnh thành. Khi đặt lịch, Auto365 xác nhận cơ sở nhận thi công đúng dòng PPF, phạm vi dán và nơi tiếp nhận bảo hành.
+Theo trang Hệ thống chi nhánh, các chi nhánh Auto365 đều triển khai nhóm dịch vụ PPF/Wrap. Chứng nhận chính hãng 3M cho phim/PPF chỉ áp dụng tại 3M Pro Shop & 3M Training Center, Trụ Sở Chính; quy mô xưởng, giờ mở cửa khác nhau giữa các điểm.
 
 **Tư vấn đúng phim, phù hợp từng xe**
 
@@ -192,10 +192,10 @@ Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim, vị trí dán v
 **Dán PPF màu, wrap đổi màu có phải đăng ký lại không?**
 
 - PPF trong suốt: không làm đổi màu sơn ghi trên chứng nhận đăng ký xe, không phát sinh thủ tục đăng ký.
-- PPF màu, wrap đổi màu chủ đạo của xe: được xem là thay đổi màu sơn. Chủ xe khai báo với cơ quan đăng ký xe trước khi thay đổi và làm thủ tục cấp đổi chứng nhận đăng ký theo Thông tư 79/2024/TT-BCA.
+- PPF màu, wrap đổi màu chủ đạo của xe: thuộc trường hợp "xe thay đổi màu sơn" phải đổi chứng nhận đăng ký xe (khoản 2 Điều 18 Thông tư 79/2024/TT-BCA); khi làm thủ tục, chủ xe mang xe đến cơ quan đăng ký để kiểm tra (khoản 1 Điều 20).
 - Khi đăng kiểm: xe có màu thực tế không đúng màu trên chứng nhận đăng ký có thể bị từ chối kiểm định. Trước khi dán phim làm đổi màu chủ đạo, nên hỏi cơ quan đăng ký xe về thủ tục áp dụng.
 
-Nguồn tham khảo: SGGP – xe thay đổi màu sơn bị từ chối kiểm định · Thư viện Pháp luật – đổi màu sơn ô tô và giấy đăng ký. Nên hỏi cơ quan đăng ký xe nơi cư trú trước khi dán phim đổi màu.
+Nguồn tham khảo: Toàn văn Thông tư 79/2024/TT-BCA (đã được sửa đổi một số thủ tục, biểu mẫu) · SGGP – xe thay đổi màu sơn bị từ chối kiểm định · Thư viện Pháp luật – đổi màu sơn ô tô và giấy đăng ký. Nên hỏi cơ quan đăng ký xe nơi cư trú trước khi dán phim đổi màu.
 
 ## PPF, phủ ceramic và dán wrap khác nhau ở đâu?  `#so-sanh`
 

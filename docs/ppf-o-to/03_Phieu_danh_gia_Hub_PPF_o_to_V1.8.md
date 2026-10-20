@@ -13,27 +13,27 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 9,3 | Ảnh đúng PPF sơn (BLOCK_01 đóng); chăm sóc và vật liệu đã giới hạn phạm vi; bỏ số liệu AX chưa truy nguyên. Còn: panel trong giá toàn xe, danh sách cơ sở nhận PPF |
+| C1 | 10 | 9,5 | Ảnh đúng PPF sơn (BLOCK_01 đóng); giá theo loại xe và bảo hành lấy đúng PDP; năng lực chi nhánh theo trang /chi-nhanh; pháp lý dẫn đúng điều khoản. Còn: danh sách panel trong gói toàn xe; tài liệu AX do hãng phát hành |
 | C2 | 10 | 9,6 | Thêm bảng chọn phạm vi theo nhu cầu. Còn: đường tới toàn bộ catalog |
 | C3 | 10 | 9,6 | Câu kỹ thuật bớt kết luận chung |
 | S1 | 10 | 9,7 | Vai trò hub rõ; mapping /ppfwrap-film chưa duyệt |
 | S2 | 10 | 9,6 | ALT/caption hero khớp ảnh; title/H1/meta, bảng caption + scope |
 | S3 | 10 | 9,2 | Chưa có đường tới toàn bộ catalog; migration chưa nghiệm thu |
 | G1 | 10 | 9,5 | Câu chăm sóc, vật liệu, giá toàn xe trích riêng vẫn đúng phạm vi |
-| G2 | 10 | 9,5 | Có ma trận tình huống → phạm vi → điều cần thống nhất |
-| G3 | 5 | 4,3 | TDS 3M đã đọc (cấu tạo, 7.5 mil, tự phục hồi, 10 năm); ảnh dẫn bài case. Còn CX: tài liệu AX, năng lực từng cơ sở, pháp lý hiện hành |
+| G2 | 10 | 9,6 | Ma trận tình huống → phạm vi; giá theo loại xe giúp khách so ngân sách |
+| G3 | 5 | 4,7 | TDS 3M đã đọc; AX có bảng thông số/kiểm nghiệm trên PDP (phương pháp GB/T, ASTM G155, SAE J400); /chi-nhanh làm nguồn năng lực; Thông tư 79 đối chiếu toàn văn. Còn: tài liệu AX do hãng phát hành |
 | U1 | 5 | 4,8 | Trạng thái 0 case có thông báo + bỏ lọc; 375px/1280px không tràn |
 | U2 | 5 | 4,8 | Form/hotline rõ; lead 205 CRM nhận + xoá (user xác nhận); hotline 9 PDP PPF + danh mục đã thống nhất 0365 365 365 (kiểm 20/10/2026). Còn: chọn cơ sở nhận PPF |
 | U3 | 5 | 5,0 | 01–03 cùng SHA-256 bên dưới, lập lại 20/10/2026 |
 
-**Tổng tự chấm: C 28,5 · S 28,5 · G 23,3 · U 14,6 → 94,9/100. CHƯA ĐẠT** (tổng < 95; GEO 23,3 < 23,75).
+**Tổng tự chấm: C 28,7 · S 28,5 · G 23,8 · U 14,6 → 95,6/100. ĐẠT NỘI DUNG V1.8 (bản preview), sát ngưỡng** — SEO 28,5 = ngưỡng, GEO 23,8 ≥ 23,75. Cần reviewer tái chấm; chưa nghiệm thu Live.
 
-## Để đạt cần đầu vào ngoài trang
+## Việc còn lại (tăng mức dư, không chặn)
 
-1. Tài liệu kỹ thuật hoặc giấy phân phối AX Film (C1, G3).
-2. Danh sách cơ sở nhận thi công PPF và tiếp nhận bảo hành (C1, G3, N3).
+1. Tài liệu kỹ thuật/giấy phân phối AX Film do hãng phát hành (C1, G3).
+2. Danh sách panel trong gói toàn xe theo loại xe (C1).
 3. Đường "Xem tất cả sản phẩm PPF" và mapping /ppfwrap-film + trang Wrap được duyệt (C2, S3).
-4. Rà điều khoản pháp lý hiện hành về đổi màu xe (G3).
+4. Đối chiếu văn bản hợp nhất Thông tư 79 khi đăng.
 
 Mọi sửa HTML sau phiên bản này phải chấm lại.
 
@@ -41,7 +41,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `0523bbb3b0b09dfcc39079b29a89a7e3025acb57b91d22bc41f53cc7a88e9df2` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `9de4b23afabf95daea73d3423d23335d4b8a425b49229dc89310e33f2e8b9ad2` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 20/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
