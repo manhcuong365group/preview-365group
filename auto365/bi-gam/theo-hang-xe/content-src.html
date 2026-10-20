@@ -126,7 +126,7 @@
 .bx-tile.on{border-color:var(--r);background:#fff5f5;box-shadow:0 0 0 1px var(--r) inset}
 .bx-tile--all{background:#eef1f4;font-weight:600}.bx-tile--all.on{background:#fff5f5}
 .bx-panel{margin-top:4px;background:#fff;border:1px solid #e6e9ed;border-radius:16px;padding:16px;box-shadow:0 6px 24px rgba(15,23,42,.05)}
-.bx-toolbar{flex-wrap:wrap}.bx-toolbar .bx-tl{display:none}.bx-toolbar .bx-search{order:-1;flex:0 0 100%;max-width:300px;height:36px;padding:0 10px;gap:6px;border-radius:8px;box-shadow:none}.bx-toolbar .bx-search input{font-size:13px}.bx-toolbar .bx-search svg{width:15px;height:15px}.bx-toolbar{row-gap:10px}
+.bx-toolbar{flex-wrap:wrap}.bx-toolbar .bx-br{order:-1;flex-basis:100%;height:0}.bx-toolbar .bx-tl{padding-top:9px;font-size:13px;color:#64748b}.bx-tabs:not(.open){flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.bx-tabs:not(.open)::-webkit-scrollbar{display:none}.bx-tabs .bx-tile{width:80px;padding:6px 8px}.bx-toolbar .bx-tabs{flex:1;min-width:0}.bx-toolbar .bx-search{order:-1;flex:0 0 100%;max-width:300px;height:36px;padding:0 10px;gap:6px;border-radius:8px;box-shadow:none}.bx-toolbar .bx-search input{font-size:13px}.bx-toolbar .bx-search svg{width:15px;height:15px}.bx-toolbar{row-gap:10px}
 .bx-toolbar{display:flex;align-items:flex-start;gap:14px}
 .bx-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:2px}
 .bx-tabs::-webkit-scrollbar{display:none}
@@ -369,8 +369,8 @@ a:hover .bv-th img{transform:scale(1.04)}
 <section class="bx-brand" id="hang-xe"><div class="bght-in">
  <div class="bx-panel" id="bx-panel">
   <div class="bx-toolbar">
-   <span class="bx-tl">Hãng xe:</span><div class="bx-tabs open" id="bght-brands" role="tablist" aria-label="Chọn hãng xe"></div>
-   <label class="bx-search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="bx-q" placeholder="Tìm dòng xe…" aria-label="Tìm dòng xe"></label>
+   <span class="bx-tl">Hãng xe:</span><div class="bx-tabs" id="bght-brands" role="tablist" aria-label="Chọn hãng xe"></div>
+   <label class="bx-search"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" id="bx-q" placeholder="Tìm dòng xe…" aria-label="Tìm dòng xe"></label><span class="bx-br" aria-hidden="true"></span>
   </div>
   <div class="bx-intro" id="bx-intro" hidden></div>
   <h3 class="bx-ptitle" id="bx-pop-t"></h3>
@@ -382,7 +382,7 @@ a:hover .bv-th img{transform:scale(1.04)}
 </div></section>
 
 <section class="bght-sec" id="xe-thuc-te" style="padding-top:8px"><div class="bght-in">
- <div class="bght-head"><div><h2 class="bght-h2">Xe thực tế đã nâng cấp tại Auto365</h2><p class="bght-sub">Mỗi case dẫn tới bài viết gốc trên auto365.vn, ghi rõ mẫu đèn đã lắp.</p></div><a class="bght-more" href="https://auto365.vn/tin-tuc">Xem tất cả bài thực tế</a></div>
+ <div class="bght-head"><div><h2 class="bght-h2">Xe thực tế đã nâng cấp tại Auto365</h2></div><a class="bght-more" href="https://auto365.vn/tin-tuc">Xem tất cả bài thực tế</a></div>
  <div class="bght-filter" id="bght-filter"></div>
  <div class="bght-rail-w">
    <div class="hs"><button type="button" class="hs-nav p" aria-label="Trước" data-dir="-1">‹</button><div class="bght-rail hs-track" id="bght-rail"></div><button type="button" class="hs-nav n" aria-label="Sau" data-dir="1">›</button></div>
@@ -737,7 +737,7 @@ var LCOL={Toyota:'#EB0A1E',Ford:'#003478',Honda:'#CC0000',Mazda:'#101010',Hyunda
 LOGO.VinFast='M1.2 4.5h4.1L12 15.6 18.7 4.5h4.1L13.6 19.5h-3.2zM6.9 4.5h2.6L12 9l2.5-4.5h2.6L12 13.2z';
 var BSLUG={'Land Rover':'','Isuzu':'',BMW:'bmw',Lexus:'lexus',Suzuki:'suzuki',Nissan:'nissan',Peugeot:'peugeot',Volkswagen:'volkswagen',Audi:'audi',Porsche:'porsche',Chevrolet:'chevrolet',Daewoo:'daewoo',Jeep:'jeep'};
 function logo(b){if(!LOGO[b])return BSLUG[b]?'<img class="bx-lg" src="https://auto365.vn/assets/frontend/images/car-brands/'+BSLUG[b]+'.png" alt="" loading="lazy">':'';return '<svg viewBox="0 0 24 24" aria-label="'+b+'" style="--lc:'+LCOL[b]+'"><path d="'+LOGO[b]+'"/></svg>'}
-$('bght-brands').innerHTML='<button type="button" class="bx-tile bx-tile--all bght-brand on" data-b="">Tất cả</button>'+BR.map(function(r,i){return '<button type="button" class="bx-tile bght-brand'+(i>=11?' bx-x':'')+'" data-b="'+r[0]+'" title="'+r[0]+'">'+(r[1]?'<img src="https://auto365.vn/assets/frontend/images/car-brands/'+r[1]+'.png" alt="'+r[0]+'" loading="lazy">':r[0])+'</button>'}).join('')+(BR.length>11?'<button type="button" class="bx-tile cf-more bx-more-b">+'+(BR.length-11)+' hãng</button>':'');
+$('bght-brands').innerHTML='<button type="button" class="bx-tile bx-tile--all bght-brand on" data-b="">Tất cả</button>'+BR.map(function(r,i){return '<button type="button" class="bx-tile bght-brand'+(i>=10?' bx-x':'')+'" data-b="'+r[0]+'" title="'+r[0]+'">'+(r[1]?'<img src="https://auto365.vn/assets/frontend/images/car-brands/'+r[1]+'.png" alt="'+r[0]+'" loading="lazy">':r[0])+'</button>'}).join('')+(BR.length>10?'<button type="button" class="bx-tile cf-more bx-more-b">+'+(BR.length-10)+' hãng</button>':'');
 $('bght-brands').addEventListener('click',function(e){if(e.target.closest('.bx-more-b')){$('bght-brands').classList.add('open');e.stopPropagation()}},true);
 // model chips
 var POP=['VF3','VF7','VF6','Camry','Fortuner','Innova Cross','CX-5','Ranger','CR-V','Creta'];
