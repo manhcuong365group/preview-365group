@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `9de4b23afabf95daea73d3423d23335d4b8a425b49229dc89310e33f2e8b9ad2` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `76875dc9f32a205f5f12d43bedecc4504d9a0e58ea032dd71caca7fe4fc076eb` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -49,6 +49,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 | Thông số các dòng AX Film | Trang sản phẩm Auto365 (chưa tìm được trang chính thức của hãng AX Film) |
 | Vật liệu PVC/TPU/TPH (xu hướng chung, không thay thông số dòng phim) | Bài kiến thức trên `auto365.vn/ppfwrap-film` (đã đăng) |
 | Chăm sóc: rửa lần đầu theo hướng dẫn bàn giao, tránh chất mài mòn/đánh bóng/rubbing compound | [3M Pro Series FAQ](https://www.3m.com/3M/en_US/p/dc/v100997005/) — chỉ dùng làm hướng chung, thời điểm cụ thể theo dòng phim |
+| Block "Hình ảnh thi công PPF" (8 ảnh), ảnh từng bước quy trình, ảnh trước/sau CX-5 ở mục kiểm tra | Ảnh và ALT lấy nguyên từ các bài case BMW 530i, BMW 330i, Volkswagen Viloran, Toyota Camry, Mazda CX-5, Ford Ranger, VinFast VF 8 trên auto365.vn; mỗi ảnh gallery dẫn về bài gốc |
 | Ảnh hero, form, CTA | Hồ sơ thi công [VinFast VF 8 dán PPF 3M 50 Gloss full xe](https://auto365.vn/vinfast-vf-8-dan-ppf-3m-50-gloss) tại Auto365.vn - Trụ Sở Chính |
 | Quy định đổi màu xe | [Toàn văn Thông tư 79/2024/TT-BCA](https://caselaw.vn/van-ban-phap-luat/411972-thong-tu-so-79-2024-tt-bca-ngay-15-11-2024-cua-bo-truong-bo-cong-an-quy-dinh-ve-cap-thu-hoi-chung-nhan-dang-ky-xe-bien-so-xe-co-gioi-xe-may-chuyen-dung) — khoản 2 Điều 18, khoản 1 Điều 20 (một số thủ tục/biểu mẫu đã được sửa đổi bởi TT 13/2025, 62/2026); [SGGP](https://www.sggp.org.vn/xe-thay-doi-mau-son-tu-cai-tao-chua-nop-phat-se-bi-tu-choi-kiem-dinh-post775883.html); [Thư viện Pháp luật](https://thuvienphapluat.vn/hoi-dap-phap-luat/doi-mau-son-xe-o-to-co-phai-xin-cap-lai-giay-dang-ky-xe-306493.html). Không ghi mức phạt; đã bỏ quy tắc 50% diện tích (chưa xác minh điều khoản hiện hành) |
 

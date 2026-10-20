@@ -296,6 +296,18 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 }
 .caseEmpty{border:1px dashed var(--l);border-radius:8px;padding:22px;text-align:center;color:var(--m);background:#fff;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}.caseEmpty[hidden]{display:none}.caseEmpty .btn{min-height:38px}
 .price .from{font-size:12px;color:#888;font-weight:500}.tiers{font-size:12px;color:var(--m);margin:-6px 0 10px}
+/* ảnh thi công */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:170px;gap:10px}
+.gi{position:relative;border-radius:8px;overflow:hidden;background:#222;color:#fff}
+.gi.big{grid-column:span 2;grid-row:span 2}.gi.wide{grid-column:span 2}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .3s}.gi:hover img{transform:scale(1.04)}
+.gi:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 50%,rgba(0,0,0,.78))}
+.gc{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:10px 12px;line-height:1.35}.gc b{display:block;font-size:13px;font-weight:600}.gc small{font-size:11.5px;color:#e2e5e8}
+.gi.big .gc b{font-size:15px}
+.steps li>div{min-width:0}.sth{display:block;width:100%;max-width:220px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:6px;margin:0 0 6px}
+.kFig{margin:0 0 14px}.kFig img{width:100%;max-width:640px;height:auto;border-radius:8px}.kFig figcaption{font-size:12.5px;color:var(--m);margin-top:6px}
+@media(max-width:1080px){.gal{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.gal{grid-auto-flow:column;grid-template-columns:none;grid-template-rows:repeat(2,150px);grid-auto-rows:auto;grid-auto-columns:70%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.gal::-webkit-scrollbar{display:none}.gi.big,.gi.wide{grid-column:auto;grid-row:auto}.gi{scroll-snap-align:start}.sth{max-width:100%}}
 </style>
 </head>
 <body>
@@ -457,8 +469,24 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
+<section id="hinh-anh">
+<div class="c">
+  <div class="head"><div><h2>Hình ảnh thi công PPF tại Auto365</h2><p>Ảnh từ hồ sơ thi công tại Auto365.vn - Trụ Sở Chính — bấm ảnh để xem bài gốc.</p></div></div>
+  <div class="gal">
+    <a class="gi big" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ky-thuat-vien-at-va-can-chinh-tam-ppf-tren-nap-ca-po-bmw-530i-img_6a6c5ca36f0611.72705621.jpg" alt="Đặt và căn chỉnh tấm PPF trên nắp ca-pô BMW 530i — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Đặt và căn chỉnh tấm PPF trên nắp ca-pô BMW 530i</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+    <a class="gi" href="https://auto365.vn/volkswagen-viloran-dan-ppf-3m" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/xu-ly-lop-phim-tai-khu-vuc-logo-va-nep-trang-tri-tren-volksw-1791367077.webp" alt="Xử lý phim quanh logo và nẹp trang trí — Volkswagen Viloran · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Xử lý phim quanh logo và nẹp trang trí</b><small>Volkswagen Viloran · 3M 50 Gloss</small></span></a>
+    <a class="gi" href="https://auto365.vn/dan-ppf-3m-cho-toyota-camry" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/ky-thuat-vien-hoan-thien-ppf-tai-khu-vuc-hoc-tay-nam-cua-toy-1791529768.webp" alt="Hoàn thiện PPF tại hốc tay nắm cửa — Toyota Camry · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Hoàn thiện PPF tại hốc tay nắm cửa</b><small>Toyota Camry · 3M 50 Gloss</small></span></a>
+    <a class="gi" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-thao-tac-can-chinh-mep-phim-tai-khu-vuc-en-truoc-bmw-530i-img_6a6c5cd3c332d6.11015022.jpg" alt="Căn chỉnh mép phim tại khu vực đèn trước — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Căn chỉnh mép phim tại khu vực đèn trước</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+    <a class="gi" href="https://auto365.vn/dan-ax-film-ppf-g-series-cho-ford-ranger" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/dan-ax-film-ppf-g-series-cho-ford-ranger-3.jpg" alt="Thi công AX Film PPF G Series — Ford Ranger · AX G Series" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Thi công AX Film PPF G Series</b><small>Ford Ranger · AX G Series</small></span></a>
+    <a class="gi wide" href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/auto365vn-chuoi-anh-cung-mot-vi-tri-tren-be-mat-mazda-cx-5-img_6a928f20baa265.44230537.webp" alt="Cùng một vị trí: trước xử lý → sau hiệu chỉnh → sau khi dán — Mazda CX-5 · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Cùng một vị trí: trước xử lý → sau hiệu chỉnh → sau khi dán</b><small>Mazda CX-5 · 3M 50 Gloss</small></span></a>
+    <a class="gi" href="https://auto365.vn/bmw-330i-dan-ppf-3m" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/chung-nhan-bao-hanh-ppf-3m-150-gloss-cua-bmw-330i-1791785753.webp" alt="Chứng nhận bảo hành 3M PPF 150 Gloss (10 năm) — BMW 330i · 3M 150 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>Chứng nhận bảo hành 3M PPF 150 Gloss (10 năm)</b><small>BMW 330i · 3M 150 Gloss</small></span></a>
+    <a class="gi" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="BMW 530i sau khi hoàn thiện PPF — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"><span class="gc"><b>BMW 530i sau khi hoàn thiện PPF</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+  </div>
+</div>
+</section>
 
-<section id="vi-sao">
+
+<section class="soft" id="vi-sao">
 <div class="c">
   <div class="head"><div><span class="bar"></span><h2>Vì sao nên dán PPF tại Auto365?</h2></div></div>
   <div class="whyGrid">
@@ -472,7 +500,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="he-thong">
+<section id="he-thong">
 <div class="c">
   <div class="sys">
     <div class="sysCard">
@@ -502,7 +530,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="kien-thuc">
+<section class="soft" id="kien-thuc">
 <div class="c tri">
   <div>
     <h2>PPF là gì?</h2>
@@ -541,17 +569,17 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
   <div>
     <h2>Quy trình thi công PPF</h2>
     <ol class="steps">
-      <li><span class="n">01</span><div><b>Kiểm tra xe &amp; tư vấn</b><span>Đánh giá tình trạng sơn và nhu cầu sử dụng</span></div></li>
-      <li><span class="n">02</span><div><b>Vệ sinh &amp; xử lý bề mặt</b><span>Làm sạch, loại bỏ tạp chất trên sơn</span></div></li>
-      <li><span class="n">03</span><div><b>Cắt phim theo form xe</b><span>Sử dụng máy cắt chuyên dụng theo dữ liệu xe</span></div></li>
-      <li><span class="n">04</span><div><b>Thi công chuyên nghiệp</b><span>Dán phim và xử lý chi tiết mép, góc cạnh</span></div></li>
-      <li><span class="n">05</span><div><b>Kiểm tra &amp; bàn giao</b><span>Đảm bảo chất lượng, hướng dẫn bảo dưỡng</span></div></li>
+      <li><span class="n">01</span><div><img class="sth" src="https://auto365.vn/uploads/images/pages/auto365vn-vinfast-vf-8-trong-ca-truoc-khi-dan-ppf-full-xe-tai-auto365vn-tru-so-chinh-img_6a8c0937f189c3.05255397.webp" alt="VinFast VF 8 trước khi dán PPF full xe" width="800" height="533" loading="lazy" decoding="async"><b>Kiểm tra xe &amp; tư vấn</b><span>Đánh giá tình trạng sơn và nhu cầu sử dụng</span></div></li>
+      <li><span class="n">02</span><div><img class="sth" src="https://auto365.vn/uploads/images/pages/auto365vn-quy-trinh-dan-ppf-3m-200-gloss-cho-bmw-530i-tai-auto365vn-tru-so-chinh-img_6a6c59e809a992.99448686.jpg" alt="Xử lý bề mặt và thi công PPF trên BMW 530i" width="800" height="533" loading="lazy" decoding="async"><b>Vệ sinh &amp; xử lý bề mặt</b><span>Làm sạch, loại bỏ tạp chất trên sơn</span></div></li>
+      <li><span class="n">03</span><div><img class="sth" src="https://auto365.vn/uploads/images/pages/auto365vn-ky-thuat-vien-can-chinh-va-trai-tam-ppf-3m-50-gloss-tren-be-mat-mazda-cx-5-trong-qua-trinh-thi-cong-img_6a928f91e5ac95.95630166.webp" alt="Trải tấm PPF 3M 50 Gloss trên Mazda CX-5" width="800" height="533" loading="lazy" decoding="async"><b>Cắt phim theo form xe</b><span>Sử dụng máy cắt chuyên dụng theo dữ liệu xe</span></div></li>
+      <li><span class="n">04</span><div><img class="sth" src="https://auto365.vn/uploads/images/pages/ky-thuat-vien-xu-ly-khu-vuc-mep-phim-tren-bmw-330i-1791785775.webp" alt="Xử lý mép phim trên BMW 330i" width="800" height="533" loading="lazy" decoding="async"><b>Thi công chuyên nghiệp</b><span>Dán phim và xử lý chi tiết mép, góc cạnh</span></div></li>
+      <li><span class="n">05</span><div><img class="sth" src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-mep-phim-ppf-3m-50-gloss-va-goc-bo-sau-hoan-thien-tren-vinfast-vf-8-img_6a8c09c5e507d8.58527118.webp" alt="Kiểm tra mép phim và góc bo trên VinFast VF 8" width="800" height="533" loading="lazy" decoding="async"><b>Kiểm tra &amp; bàn giao</b><span>Đảm bảo chất lượng, hướng dẫn bảo dưỡng</span></div></li>
     </ol>
   </div>
 </div>
 </section>
 
-<section class="soft" id="kien-thuc-ppf">
+<section id="kien-thuc-ppf">
 <div class="c">
   <div class="head"><div><h2>Kiến thức cần nắm trước khi dán PPF</h2><p>Những điểm kỹ thuật quyết định PPF bảo vệ tốt hay không — tổng hợp từ cẩm nang và hồ sơ thi công của Auto365.</p></div><a class="more" href="#cam-nang">Đọc cẩm nang →</a></div>
   <div class="xk">
@@ -582,7 +610,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
       <p><b>Bề mặt</b>Trong suốt bóng giữ màu sơn zin; vân carbon tạo hiệu ứng carbon trên capo, gương, ốp. Nên xem mẫu thực tế trên xe.</p>
       <p><b>Phim chính hãng</b>Nhận phiếu bảo hành ghi rõ dòng phim, vị trí dán và thời hạn; đối chiếu tên dòng phim trên phiếu với báo giá.</p>
     </div></div></details>
-    <details class="xk-acc" id="k03"><summary><h3>Cần kiểm tra gì trên xe trước khi dán?</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="xk-body kBody"><ul class="kUl">
+    <details class="xk-acc" id="k03"><summary><h3>Cần kiểm tra gì trên xe trước khi dán?</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="xk-body kBody"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-chuoi-anh-cung-mot-vi-tri-tren-be-mat-mazda-cx-5-img_6a928f20baa265.44230537.webp" alt="Cùng một vị trí trên Mazda CX-5: trước xử lý, sau làm sạch/hiệu chỉnh, sau khi dán PPF 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"><figcaption>Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi dán 3M 50 Gloss (<a href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure><ul class="kUl">
       <li><b>Tình trạng sơn:</b> PPF không che được vết xước sâu, sơn bong, rỗ — cần đánh bóng/xử lý trước. Xước dăm nhẹ có thể giảm thấy rõ sau khi dán nhưng không mất hẳn (<a href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener">case Mazda CX-5</a>).</li>
       <li><b>Sơn đã sửa chữa/sơn lại:</b> độ bám của sơn sửa có thể kém hơn sơn zin, ảnh hưởng khi bóc phim sau này — cần báo kỹ thuật viên.</li>
       <li><b>Nhựa sần, nhựa nhám:</b> không phải bề mặt nào cũng phù hợp để dán (<a href="https://auto365.vn/ppf-co-dan-duoc-len-nhua-san-khong" target="_blank" rel="noopener">PPF có dán được lên nhựa sần không?</a>).</li>
@@ -610,7 +638,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="so-sanh">
+<section class="soft" id="so-sanh">
 <div class="c">
   <div class="head"><div><h2>PPF, phủ ceramic và dán wrap khác nhau ở đâu?</h2><p>Ba giải pháp thường được hỏi cùng nhau — mỗi loại phục vụ mục tiêu khác nhau.</p></div></div>
   <div class="tbl"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
@@ -627,7 +655,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="cham-soc">
+<section id="cham-soc">
 <div class="c">
   <div class="head"><div><h2>Chăm sóc sau khi dán PPF</h2><p>Giữ phim bền và trong hơn với vài nguyên tắc đơn giản.</p></div></div>
   <div class="care">
@@ -638,7 +666,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="tu-van">
+<section class="soft" id="tu-van">
 <div class="c">
   <div class="leadWrap">
     <figure class="leadImg"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ppf-duoc-can-chinh-tren-khu-vuc-cua-va-hong-xe-truoc-khi-hoan-thien-be-mat-img_6a8c0992e944c4.64254953.webp" alt="Kỹ thuật viên căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt" width="800" height="533" loading="lazy"><figcaption>Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.</figcaption></figure>
@@ -661,7 +689,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="video">
+<section id="video">
 <div class="c">
   <div class="head"><div><h2>Video thực tế</h2><p>Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả video →</a></div>
   <div class="vids">
@@ -673,7 +701,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="cam-nang">
+<section class="soft" id="cam-nang">
 <div class="c">
   <div class="head"><div><h2>Cẩm nang PPF &amp; Wrap</h2><p>126 bài viết về PPF và wrap trên auto365.vn — dưới đây là các bài mới nhất.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả bài viết →</a></div>
   <div class="chipRow" role="group" aria-label="Lọc bài theo chủ đề"><button class="ctab" type="button" data-tag="" aria-pressed="true">Tất cả <em>12</em></button><button class="ctab" type="button" data-tag="Kiến thức" aria-pressed="false">Kiến thức <em>2</em></button><button class="ctab" type="button" data-tag="Trước khi dán" aria-pressed="false">Trước khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Sau khi dán" aria-pressed="false">Sau khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Theo xe" aria-pressed="false">Theo xe <em>2</em></button></div>
@@ -695,7 +723,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="faq">
+<section id="faq">
 <div class="c">
   <div class="head"><div><h2>Câu hỏi thường gặp về dán PPF ô tô</h2></div></div>
   <div class="faq">
@@ -710,7 +738,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="kiem-duyet">
+<section class="soft" id="kiem-duyet">
 <div class="c">
   <div class="rev">
     <div class="box"><span class="ey">Kiểm duyệt kỹ thuật</span><h3 style="margin-top:8px"><a href="../dang-minh-hoang/">Đặng Minh Hoàng</a></h3><p class="muted" style="margin:0">Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 20/10/2026</p></div>

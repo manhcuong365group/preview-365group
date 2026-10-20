@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `9de4b23afabf95daea73d3423d23335d4b8a425b49229dc89310e33f2e8b9ad2`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `76875dc9f32a205f5f12d43bedecc4504d9a0e58ea032dd71caca7fe4fc076eb`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -45,6 +45,10 @@ Hồ sơ thi công PPF đã đăng trên auto365.vn — mỗi bài ghi dòng phi
 - Dán PPF xe Lexus LX600 – bảng giá PPF 3M — https://auto365.vn/dan-ppf-xe-lexus-lx600
 - Auto365 thi công dán PPF Mazda 3 dòng X Series — https://auto365.vn/auto-365-thi-cong-dan-ppf-mazda-3-dong-x-series
 - Bảng giá thi công dán PPF cho xe VinFast VF3 — https://auto365.vn/bang-gia-thi-cong-dan-ppf-cho-xe-vinfast-vf3
+
+## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
+
+Ảnh từ hồ sơ thi công tại Auto365.vn - Trụ Sở Chính — bấm ảnh để xem bài gốc.
 
 ## Vì sao nên dán PPF tại Auto365?  `#vi-sao`
 
@@ -168,6 +172,8 @@ Bề mặtTrong suốt bóng giữ màu sơn zin; vân carbon tạo hiệu ứng
 Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim, vị trí dán và thời hạn; đối chiếu tên dòng phim trên phiếu với báo giá.
 
 **Cần kiểm tra gì trên xe trước khi dán?**
+
+Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi dán 3M 50 Gloss (hồ sơ).
 
 - Tình trạng sơn: PPF không che được vết xước sâu, sơn bong, rỗ — cần đánh bóng/xử lý trước. Xước dăm nhẹ có thể giảm thấy rõ sau khi dán nhưng không mất hẳn (case Mazda CX-5).
 - Sơn đã sửa chữa/sơn lại: độ bám của sơn sửa có thể kém hơn sơn zin, ảnh hưởng khi bóc phim sau này — cần báo kỹ thuật viên.
