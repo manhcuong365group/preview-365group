@@ -172,3 +172,12 @@ IT đã kiểm tra L1–L8 và xác nhận **PASS** (người phụ trách nội
 
 C 28,25 · S 29,0 · G 24,0 · U 14,75 → **96,0/100 — ĐẠT**. U3 +0,25: phiếu 03/04 cùng bản hiện hành (SHA 20/10), mục bộ/cặp đã chốt, IT xác nhận L1–L8 PASS. Còn trừ: C2 chưa có bảng các đời VF7 ngoài Plus 2025; hỗ trợ tỉnh khác/hoàn nguyên chờ chính sách.
 - 20/10/2026: thêm chính sách hoàn nguyên vào FAQ bảo hành (user xác nhận). Đóng một phần I20; điểm giữ 96,0.
+
+
+## Chấm lại 20/10/2026 — sau khi thêm chính sách hoàn nguyên (12 tiêu chí, có U3, /100)
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,25 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,75 |
+
+C 28,5 · S 29,0 · G 24,0 · U 14,75 → **96,25/100 — ĐẠT**. C2 +0,25: FAQ bảo hành có cách tháo về nguyên trạng (I20). Còn trừ: chưa có dữ liệu các đời VF7 ngoài Plus 2025; hỗ trợ khách tỉnh khác chưa có chính sách.
