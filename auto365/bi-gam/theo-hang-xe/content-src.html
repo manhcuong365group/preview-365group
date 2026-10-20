@@ -361,7 +361,7 @@ a:hover .bv-th img{transform:scale(1.04)}
   <nav class="bght-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> › <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Độ bi gầm</a> › <span aria-current="page">Bi gầm theo hãng xe</span></nav>
   <h1 class="bght-h1">Bi gầm ô tô <br>theo hãng&nbsp;xe</h1>
   <p class="bght-lead"><b>Bi gầm ô tô theo hãng xe</b>: tra cứu mẫu đèn (X-Light, GTR, AES) Auto365 đã lắp trên từng dòng xe, mỗi xe dẫn về bài lắp đặt gốc. Dòng xe chưa có hồ sơ cần kỹ thuật viên kiểm tra xe trước khi chọn mẫu.</p>
-  <p class="bght-upd">Cập nhật <time datetime="2026-10-20">20/10/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bght-rv" datetime="2026-10-19">19/10/2026</time>) · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn</p>
+  <p class="bght-upd">Cập nhật <time datetime="2026-10-20">20/10/2026</time> · Rà soát: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a><time class="bght-rv" datetime="2026-10-19" hidden></time></p>
   <div class="bght-cta2"><a class="bght-btn" href="#hang-xe">Chọn hãng xe ↓</a><a class="bght-btn2" href="tel:0365365911">Gọi 0365 365 911</a></div>
  </div>
 </section>
@@ -842,10 +842,11 @@ var dlg=$('bght-dlg');dlg.addEventListener('click',function(e){var h=e.target.cl
 function prKey(t){var m=t.match(/(X-Light F10 Hyper 2\.0|X-Light F10 2\.0 New|X-Light F10 New(?: 2025)?|X-Light F10 Turbo V2|GTR G1 Turbo V2|GTR G1 Turbo|AES SV 3\.0 Max)/i);return m?pkey(m[1].replace(/x-light/i,'X-Light')):null}
 function setSub(t){dlg.querySelector('.bght-dlg-sub').textContent=t}
 function showSuggest(b,m){setSub('Chưa có hồ sơ '+m+' trong thư viện. Các mẫu dưới đây là mẫu Auto365 đã lắp trên xe '+b+' khác, để tham khảo; kỹ thuật viên kiểm tra đời xe, vị trí lắp, bộ gá, dây/giắc và nguồn cấp của xe bạn trước khi chốt mẫu.');
- var cnt={},all={};CA.forEach(function(c){var k=prKey(c[2]);if(!k)return;all[k]=(all[k]||0)+1;if(c[0]===b)cnt[k]=(cnt[k]||0)+1});
+ var cnt={},all={},cs={},ca={};CA.forEach(function(c){var k=prKey(c[2]);if(!k)return;all[k]=(all[k]||0)+1;(ca[k]=ca[k]||[]).push(c);if(c[0]===b){cnt[k]=(cnt[k]||0)+1;(cs[k]=cs[k]||[]).push(c)}});
+ function lk(list){return list.slice(0,3).map(function(c){return '<a href="https://auto365.vn/'+c[3]+'">'+esc(c[1])+'</a>'}).join(', ')}
  var own=Object.keys(cnt).sort(function(a,z){return cnt[z]-cnt[a]}),rest=Object.keys(all).sort(function(a,z){return all[z]-all[a]});
- var out=own.slice(0,3).map(function(k){return [k,'Đã lắp trên xe '+b+' khác','Có trong '+cnt[k]+' bài lắp xe '+b+' của thư viện.']});
- if(!out.length)rest.slice(0,3).forEach(function(k){out.push([k,'Mẫu lắp nhiều trong thư viện','Có trong '+all[k]+'/'+CA.length+' bài của thư viện (các hãng).'])});
+ var out=own.slice(0,3).map(function(k){return [k,'Đã lắp trên xe '+b+' khác','Xe đã lắp: '+lk(cs[k])+'.']});
+ rest.forEach(function(k){if(out.length<3&&own.indexOf(k)<0)out.push([k,'Mẫu lắp nhiều trong thư viện','Xe đã lắp: '+lk(ca[k])+(all[k]>3?' và '+(all[k]-3)+' bài khác':'')+'.'])});
  $('bght-dlg-t').textContent='Mẫu bi gầm tham khảo cho '+b+' '+m;
  $('bght-dlg-list').innerHTML=out.map(function(r,i){var p=P[r[0]];return '<div class="bght-dlg-card'+(i===0?' is-top':'')+'"><div class="bght-dlg-img"><img src="'+p[2]+'" alt="Bi gầm '+esc(p[0])+'" loading="lazy"></div><span class="bght-dlg-tag">'+esc(r[1])+'</span><h3 class="bght-dlg-name">Bi gầm '+esc(p[0])+'</h3><p class="bght-dlg-why">'+r[2]+'</p><div class="bght-dlg-btns"><a class="bght-dlg-view" href="https://auto365.vn/'+p[1]+'">Xem sản phẩm</a><a class="bght-dlg-call" href="tel:0365365911">Liên hệ tư vấn 0365 365 911</a></div></div>'}).join('');
  var all2=dlg.querySelector('.bght-dlg-all');all2.href='#tu-van';all2.textContent='Gửi yêu cầu kiểm '+m+' →';dlg.querySelector('.bght-dlg-guide').hidden=true;
