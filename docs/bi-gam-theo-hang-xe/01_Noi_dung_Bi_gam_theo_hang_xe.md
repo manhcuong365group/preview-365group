@@ -7,8 +7,8 @@
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
 | Meta description | Tra cứu bi gầm theo 21 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày cập nhật (dateModified) | 2026-10-20 |
-| SHA-256 index.html | `d0e9707b53e73c699f122876cfea84d0731b0a91e27d8ef71c5766b9104555ea` |
-| SHA-256 content-src.html | `53be993c0519bac59d74f48bd2b1b0158e814617069b8f8241caa82293b34cfa` |
+| SHA-256 index.html | `a6569e567f72c92a85ebb919ec8be117f3b48a618d2002719c88dfc56e3bd820` |
+| SHA-256 content-src.html | `dafa104504f8c403a1d7643f1e06bb5d5a11afa9f2920b435a2dc47b48ad92fe` |
 | Xuất lúc | 2026-10-20 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo

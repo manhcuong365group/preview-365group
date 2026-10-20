@@ -204,7 +204,7 @@
 .bght-filter{display:grid!important;gap:10px;margin-bottom:16px}
 .cf-row{display:flex;align-items:flex-start;gap:12px;min-width:0}
 .cf-l{flex:0 0 64px;font-size:13px;color:var(--mu);padding-top:9px}
-.cf-items{display:flex;flex-wrap:wrap;gap:8px;min-width:0;flex:1}
+.cf-items{display:flex;flex-wrap:wrap;gap:8px;min-width:0;flex:1}.cf-row:first-child .cf-items{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.cf-row:first-child .cf-items::-webkit-scrollbar{display:none}.cf-row:first-child .bx-tile{width:82px;padding:6px 8px}
 .cf-items .bx-tile svg{width:28px;height:20px;fill:var(--lc)}
 .bx-tabs:not(.open) .bx-x:not(.on){display:none}.bx-tabs.open .bx-more-b{display:none}
 .cf-more{border-style:dashed!important;color:var(--mu)!important;font-weight:600}
@@ -661,7 +661,7 @@ a:hover .bv-th img{transform:scale(1.04)}
 <script>
 (function(){
 var N='https://auto365.vn/uploads/images/news/';
-var BR=[['VinFast','vinfast'],['Toyota','toyota'],['Honda','honda'],['Hyundai','hyundai'],['Kia','kia'],['Mazda','mazda'],['Ford','ford'],['Mitsubishi','mitsubishi'],['BMW','bmw'],['Lexus','lexus'],['Suzuki','suzuki'],['Nissan','nissan'],['Peugeot','peugeot'],['Volkswagen','volkswagen'],['Audi','audi'],['Land Rover',''],['Porsche','porsche'],['Chevrolet','chevrolet'],['Isuzu',''],['Daewoo','daewoo'],['Jeep','jeep']];
+var BR=[['VinFast','vinfast'],['Toyota','toyota'],['Honda','honda'],['Hyundai','hyundai'],['Kia','kia'],['Mazda','mazda'],['Ford','ford'],['Mitsubishi','mitsubishi'],['BMW','bmw'],['Lexus','lexus'],['Suzuki','suzuki'],['Nissan','nissan'],['Peugeot','peugeot'],['Volkswagen','volkswagen'],['Audi','audi'],['Land Rover',''],['Porsche','porsche'],['Chevrolet','chevrolet'],['Isuzu','isuzu'],['Daewoo','daewoo'],['Jeep','jeep']];
 var C=[
 ['Toyota','Toyota Camry 2024 2.5HV','X-Light F10 Hyper 2.0','toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0',N+'toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp','Camry'],
 ['Toyota','Toyota Fortuner 2.4AT 2022','X-Light F10 Hyper 2.0','toyota-fortuner-24at-2022-lap-bi-gam-x-light-f10-hyper-20',N+'toyota-fortuner-24at-2022-lap-bi-gam-x-light-f10-hyper-20-3-1790912813.webp','Fortuner'],
@@ -802,9 +802,9 @@ filterModels();
 // filter + rail
 var CMOD={};Object.keys(CM).forEach(function(k){var m=k.split('|')[1];CM[k].forEach(function(c){CMOD[c[3]]=m})});
 function cmod(c){return CMOD[c[3]]||c[1].replace(new RegExp('^'+c[0]+'\\s*'),'')}
-var curM='',cfOpen=false,CF_N=11;
+var curM='',cfOpen=false,CF_N=10;
 function cfDraw(){var bs=B.slice(),show=cfOpen?bs:bs.slice(0,CF_N);if(cur&&show.indexOf(cur)<0)show.push(cur);
- var h='<div class="cf-row"><span class="cf-l">Hãng xe:</span><div class="cf-items"><button type="button" class="bx-tile bx-tile--all cf-b'+(cur?'':' on')+'" data-b="">Tất cả</button>'+show.map(function(b){var lg=logo(b);return '<button type="button" class="bx-tile cf-b'+(cur===b?' on':'')+'" data-b="'+b+'" title="'+b+'">'+(lg||b)+'</button>'}).join('')+(!cfOpen&&bs.length>CF_N?'<button type="button" class="bx-tile cf-more">+'+(bs.length-CF_N)+' hãng</button>':'')+'</div></div>';
+ var h='<div class="cf-row"><span class="cf-l">Hãng xe:</span><div class="cf-items"><button type="button" class="bx-tile bx-tile--all cf-b'+(cur?'':' on')+'" data-b="">Tất cả</button>'+show.map(function(b){var r=BR.filter(function(x){return x[0]===b})[0],sl=r&&r[1];return '<button type="button" class="bx-tile cf-b'+(cur===b?' on':'')+'" data-b="'+b+'" title="'+b+'">'+(sl?'<img src="https://auto365.vn/assets/frontend/images/car-brands/'+sl+'.png" alt="'+b+'" loading="lazy">':b)+'</button>'}).join('')+(!cfOpen&&bs.length>CF_N?'<button type="button" class="bx-tile cf-more">+'+(bs.length-CF_N)+' hãng</button>':'')+'</div></div>';
  if(cur){var cnt={};CA.forEach(function(c){if(c[0]===cur){var m=cmod(c);cnt[m]=(cnt[m]||0)+1}});var ms=Object.keys(cnt).sort(function(a,z){return cnt[z]-cnt[a]||a.localeCompare(z)});
   h+='<div class="cf-row"><span class="cf-l">Dòng xe:</span><div class="cf-items"><button type="button" class="bght-chip cf-m'+(curM?'':' on')+'" data-m="">Tất cả</button>'+ms.map(function(m){return '<button type="button" class="bght-chip cf-m'+(curM===m?' on':'')+'" data-m="'+esc(m)+'">'+esc(m)+'</button>'}).join('')+'</div></div>'}
  $('bght-filter').innerHTML=h}
