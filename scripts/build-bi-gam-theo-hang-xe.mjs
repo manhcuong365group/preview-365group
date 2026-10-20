@@ -32,8 +32,8 @@ html = html.replace(/(<h3 class="bx-ptitle" id="bx-pop-t">)(<\/h3>)/, `$1${doc.g
 const abs = (u) => new URL(u, 'https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe/').href
   .replace('/nang-cap-anh-sang-bi-gam/vinfast-vf3/', '/nang-cap-anh-sang-bi-gam/vinfast/vf3')
   .replace(/(\/nang-cap-anh-sang-bi-gam\/vinfast\/vf\d)\/$/, '$1');
-const models = [...doc.querySelectorAll('#bght-models .bx-m[data-c]')].map((a) => ({ name: a.querySelector('.bx-m-logo').textContent.trim() + ' ' + a.querySelector('b').textContent.trim(), url: abs(a.getAttribute('href')) }));
-const cases = [...doc.querySelectorAll('#bght-rail .bght-case')].map((a) => ({ name: a.querySelector('p').textContent.trim(), url: abs(a.getAttribute('href')) }));
+const models = [...doc.querySelectorAll('#bght-models .bx-m[data-c]')].map((a) => ({ name: a.querySelector('.bx-m-logo').textContent.trim() + ' ' + a.querySelector('b').textContent.trim(), url: abs(a.getAttribute('data-url')) }));
+const cases = [...doc.querySelectorAll('#bght-rail .bght-case')].map((a) => ({ name: a.querySelector('p').textContent.trim(), url: abs(a.getAttribute('data-url')) }));
 const guides = [...doc.querySelectorAll('.bght-guide')].map((a) => ({ name: a.querySelector('h3').textContent.trim(), url: a.getAttribute('href') }));
 const faqs = [...doc.querySelectorAll('.bf-list details')].map((d) => ({ q: d.querySelector('summary').textContent.trim(), a: d.querySelector('p').textContent.trim() }));
 if (!models.length || !cases.length || !guides.length || !faqs.length) throw new Error('schema source empty');
@@ -61,7 +61,7 @@ const schema = {
       { '@type': 'ListItem', position: 2, name: 'Độ bi gầm', item: 'https://auto365.vn/nang-cap-anh-sang-bi-gam' },
       { '@type': 'ListItem', position: 3, name: 'Bi gầm theo hãng xe', item: canonical } ] },
     { '@type': 'Organization', '@id': 'https://auto365.vn/#organization', name: 'Auto365', url: 'https://auto365.vn/' },
-    itemList('dong-xe', 'Dòng xe đã lắp bi gầm tại Auto365', models),
+    itemList('dong-xe', 'Dòng xe có bài tư vấn hoặc hồ sơ lắp bi gầm (chọn lọc)', models),
     itemList('xe-thuc-te', 'Xe thực tế đã lắp bi gầm tại Auto365', cases),
     itemList('cam-nang', 'Cẩm nang bi gầm theo dòng xe', guides),
     { '@type': 'FAQPage', '@id': canonical + '#faq', mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) },

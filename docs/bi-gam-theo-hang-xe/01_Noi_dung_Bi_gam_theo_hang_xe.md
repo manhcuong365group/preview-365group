@@ -6,18 +6,18 @@
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe |
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
 | Meta description | Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
-| Ngày cập nhật (dateModified) | 2026-10-19 |
-| SHA-256 index.html | `10924876246fd0b689203fd96258eb3ea08c07cd11cdda83e8ef92351ffabd1a` |
-| SHA-256 content-src.html | `6c17af9cc0fd798db8b836d0521b94378d633909412b99e29352f95b0f293a59` |
-| Xuất lúc | 2026-10-19 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
+| Ngày cập nhật (dateModified) | 2026-10-20 |
+| SHA-256 index.html | `43ee4f2046b51ceb2dca0854223c6aaa17ac754aa77dcc3939f8b55d1c19fc50` |
+| SHA-256 content-src.html | `2008b3410be6719e2f58cc725d0c0f4f257fb5c73be34c964bb074717c250d90` |
+| Xuất lúc | 2026-10-20 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo
 
 **Bi gầm ô tô theo hãng xe**
 
-Độ bi gầm ô tô theo hãng xe là giải pháp tra cứu cấu hình đèn tương thích dựa trên dữ liệu thi công thực tế. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...). Mỗi hồ sơ dẫn về bài lắp đặt gốc trên auto365.vn, kèm hình ảnh thực tế và mẫu đèn đã lắp, giúp chủ xe đối chiếu trước khi chọn phương án phù hợp.
+Độ bi gầm ô tô theo hãng xe là giải pháp tra cứu cấu hình đèn tương thích dựa trên dữ liệu thi công thực tế. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...). Mỗi hồ sơ dẫn về bài lắp đặt gốc trên auto365.vn, kèm hình ảnh thực tế và mẫu đèn đã lắp, giúp chủ xe đối chiếu trước khi chọn phương án phù hợp. Dòng xe có nhãn "Đã lắp thực tế" có bài lắp đặt trong thư viện; dòng xe chưa có hồ sơ chỉ hiện mẫu tham khảo và cần kỹ thuật viên kiểm tra xe trước khi chốt.
 
-Cập nhật 19/10/2026 · Rà soát kỹ thuật: Nguyễn Quang Đạo (19/10/2026) · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn
+Cập nhật 20/10/2026 · Rà soát kỹ thuật: Nguyễn Quang Đạo (19/10/2026) · Dữ liệu tổng hợp từ các bài lắp đặt đã đăng trên auto365.vn
 
 ## Các khối (theo thứ tự hiển thị)
 
@@ -58,6 +58,10 @@ Kỹ thuật viên Auto365 kiểm tra kích thước và độ sâu hốc đèn 
 **Xe có hốc đèn gầm nhỏ nên chọn bi gầm nào?**
 
 Xe hốc đèn gầm nhỏ có thể cân nhắc bi gầm 2.0 inch như X-Light F10 2.0 New, mẫu Auto365 đã lắp trên Toyota Vios 2021 và Mitsubishi Xpander Cross 2023. Cần kiểm tra kích thước hốc, pát/gá, dây điện và khoảng trống cho quạt tản nhiệt trước khi lắp.
+
+**Khi nào chưa cần nâng cấp bi gầm?**
+
+Chưa cần nâng cấp khi đèn hiện tại vẫn đáp ứng nhu cầu, xe ít đi đường thiếu sáng, hoặc chưa xác định được nguyên nhân đèn yếu, hỏng. Trường hợp đó nên kiểm tra hiện trạng đèn, dây và nguồn trước khi chọn hạng mục nâng cấp.
 
 **Chi phí lắp bi gầm gồm những khoản nào?**
 

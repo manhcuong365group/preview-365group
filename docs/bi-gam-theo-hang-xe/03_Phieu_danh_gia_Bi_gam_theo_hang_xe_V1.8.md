@@ -32,13 +32,7 @@
 
 ## 2. Kết luận
 
-**ĐẠT V1.8.** Tổng 95,3/100 (≥95); SEO 28,5/30 (đạt, vừa đủ); GEO 24,0/25 (đạt). Tự chấm trên preview, không phải nghiệm thu live.
-
-Còn theo dõi (không chặn):
-
-1. Anh Đạo duyệt bổ sung câu lý do theo dòng xe trong popup đề xuất đèn (thêm sau lượt duyệt 19/10).
-2. CRM xoá lead test 205.
-3. Sau đăng: bỏ `noindex`, nghiệm thu L1–L8 theo 02 mục 6.
+**Thay bằng mục 4.** Điểm 95,3 ở bảng trên là tự chấm của team; reviewer tái kiểm 19/10/2026 không công nhận (83,7–88,7/100, chưa đạt).
 
 ## 3. Đã sửa ngày 19/10/2026
 
@@ -57,3 +51,19 @@ Còn theo dõi (không chặn):
 | Lead test | POST /api/leads → success, lead_id 205 (19/10/2026) |
 | Popup đề xuất đèn | Dòng đầu nêu lý do theo phân khúc dòng xe + 12V |
 | Phiếu duyệt | 05 ghi người duyệt, ngày, phạm vi |
+
+## 4. Tái kiểm của reviewer 19/10/2026 và bản sửa 20/10/2026
+
+Reviewer chấm bản SHA `10924876…`: C 26,9 · SEO 27,1 · GEO 21,0 · U1–U2 8,7 · U3 CX → 83,7–88,7/100, **CHƯA ĐẠT**. Bảy gói sửa F01–F07.
+
+| Gói | Đã làm 20/10/2026 | Còn mở |
+|---|---|---|
+| F01-R2 | Bộ lọc hãng ở thư viện gọi `selectBrand()`: hãng phía trên, dòng xe, giới thiệu, thư viện cùng một trạng thái. `nq()` bỏ mọi ký tự không phải chữ/số (VF5 = VF 5, CX5 = CX-5, CRV = CR-V). Tìm toàn cục ẩn giới thiệu hãng; chọn hãng xoá ô tìm; hãng chưa có bài hiện trạng thái rỗng. Đã kiểm Toyota → Ford, VF5 / VF 5 / CX5 / CRV / vf-6, Daewoo | — |
+| F02-R2 | Card đổi thành `article`: bài tư vấn, hồ sơ là `a href`; mở gợi ý là `button`; bỏ `href=tel` ở card gợi ý; không lồng link | Chưa kiểm bằng trình đọc màn hình |
+| F03-R2 | Popup xe chưa có hồ sơ: tiêu đề "Mẫu tham khảo … (chưa có hồ sơ)", câu đầu theo mẫu reviewer, nhãn "Tham khảo từ xe [hãng] khác", số đếm ghi là số bài trong thư viện; không bù mẫu hãng khác khi hãng đã có mẫu | — |
+| F04-R2 | Bỏ badge năm suy từ title; ItemList dòng xe đổi tên "Dòng xe có bài tư vấn hoặc hồ sơ lắp bi gầm (chọn lọc)"; URL lấy từ `data-url` | Registry có trường vehicle_year / sku_id / content_type chưa làm; Jeep có trong thư viện nhưng không có trong 20 hãng tra cứu |
+| F05-R2 | Bỏ câu suy hốc theo phân khúc và câu 12V dùng chung (lightTip, popup); "Gợi ý ánh sáng" ghi là thống kê bài thư viện; sapo phân biệt "Đã lắp thực tế" với "chưa có hồ sơ"; thêm FAQ "Khi nào chưa cần nâng cấp bi gầm?" | Các câu mới cần anh Đạo duyệt bổ sung |
+| F06-R2 | — | Canonical production và /vinfast/vf3, /vf7 còn 404: việc của CMS khi đăng |
+| F07-R2 | 01/04 xuất lại cùng SHA; ngày cập nhật 20/10/2026; `lastReviewed` giữ 19/10/2026 | Biên bản duyệt cho phần sửa 20/10 |
+
+Ước tính sau sửa (tự chấm, cần reviewer chấm lại): C 27,8 · SEO 27,9 · GEO 22,7 · U1–U2 9,3 → **87,7/100 + U3**; SEO và GEO vẫn dưới ngưỡng. **CHƯA ĐẠT.**
