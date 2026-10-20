@@ -26,7 +26,8 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF7 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (20/10/2026, bản hiện hành): `8cdbd2abe380fb501a2c953cfd7c2fb939d0170c8f98db8b28542a7f9873b854`
+SHA-256 `index.html` (20/10/2026, bản hiện hành): `996c5de62c86c5c3469eda15b85b3e40d4b01b619bbc3b990cb6f7271420489b`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
 | Nghiệm thu L1–L8 | IT kiểm tra và xác nhận PASS | Chuyển lại 20/10/2026 |
+| Hoàn nguyên (tháo bi gầm) | Chủ xe đến chi nhánh Auto365 để tháo; chi phí (nếu có) tư vấn theo tình trạng xe — đã thêm vào FAQ bảo hành | User xác nhận 20/10/2026 |
