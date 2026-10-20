@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `1acd2417bc3b94bee18c8a7b8135693839acfc77ff59d662e32cd6ac13b9283d`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `171cf267a83edfc4a32cde7f5db7e9002ee3fb47d74f34490b9558ac13653c6d`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -141,6 +141,8 @@ Những điểm kỹ thuật quyết định PPF bảo vệ tốt hay không —
 
 **Chọn phạm vi dán theo nhu cầu**
 
+VinFast VF 8: phạm vi mở rộng sang cửa và hông xe (hồ sơ).
+
 _Hướng xem xét phạm vi dán PPF theo tình huống_
 
 | Tình huống | Hướng xem xét | Cần thống nhất trước báo giá |
@@ -154,6 +156,8 @@ _Hướng xem xét phạm vi dán PPF theo tình huống_
 Bảng là hướng kiểm tra, không phải kết luận một dòng phim phù hợp mọi xe. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
 
 **PPF TPU, TPH và PVC khác nhau thế nào?**
+
+Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (hồ sơ).
 
 Phim bảo vệ sơn trên thị trường thường được gọi theo ba nhóm vật liệu. Các dòng 3M PPF và AX Film PPF tại Auto365 công bố nền TPU/polyurethane theo tài liệu của hãng hoặc trang sản phẩm. Bảng dưới là xu hướng chung để tham khảo, không thay thông số của từng dòng phim.
 
@@ -170,6 +174,8 @@ _So sánh vật liệu PPF: TPU, TPH và PVC_
 Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)). Mức độ cụ thể khác nhau theo từng dòng phim.
 
 **Chọn dòng phim: 3M hay AX Film, độ dày, bề mặt**
+
+Ford Ranger chọn AX Film PPF G Series toàn xe (hồ sơ).
 
 - 50 Gloss—
 - 100 Gloss7.5 mil
@@ -199,12 +205,16 @@ Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi d�
 
 **Nhận xe sau khi dán: nghiệm thu thế nào?**
 
+BMW 530i: kiểm tra gương, tai xe sau khi hoàn thiện (hồ sơ).
+
 - Xem xe dưới ánh sáng xiên (đèn pin, nắng chiếu nghiêng) để phát hiện bọt khí, bụi kẹt, vết kéo keo — đặc biệt trên xe màu đen (PPF trên xe màu đen).
 - Kiểm tra mép phim tại cạnh capo, hốc cửa, viền đèn: mép phải sát, không nhấc.
 - Một vài vệt hơi nước nhỏ dưới phim có thể cần thời gian để keo ổn định — hỏi kỹ thuật viên thời gian theo dõi và lịch hẹn kiểm tra lại.
 - Nhận phiếu bảo hành ghi rõ dòng phim, vị trí dán, thời hạn bảo hành.
 
 **PPF bị hằn, xước, rách: xử lý và khi nào thay?**
+
+Phiếu bảo hành 3M PPF 50 Gloss của Toyota Camry: ghi dòng phim, vị trí, thời hạn (hồ sơ).
 
 - Vết hằn do va quệt khác vết xước trên bề mặt phim: xước xoáy nhẹ có thể tự phục hồi khi gặp nhiệt, vết hằn sâu thì không (Vết hằn và vết xước trên PPF).
 - Rách, thủng cục bộ: thường có thể thay riêng một panel thay vì dán lại toàn xe (Khi nào thay riêng một panel?).
