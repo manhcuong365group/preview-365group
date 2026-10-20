@@ -1,6 +1,6 @@
 # 03 — Phiếu tự kiểm Hub Bi LED ô tô V1.8
 
-Ngày: 19/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
+Ngày: 20/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 12–13/10/2026 theo góp ý chủ quản và đối chiếu đối thủ. Đây là tự kiểm của team triển khai, **không phải điểm chấm lại**.
 
 ## Đã xử lý
 
@@ -37,7 +37,7 @@ Ngày: 19/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | C3/S2 | 86 tên sản phẩm viết HOA toàn bộ | CMS đã đổi tên trên PDP (14/10/2026); hub đồng bộ 96 tên theo danh mục production trên card, alt, nút so sánh, bảng thông số, schema | Danh mục auto365.vn 14/10/2026 |
 | S2 | 8 ô tiêu đề bảng thông số thiếu scope | Thêm scope="col" | HTML .specAll |
 | F15 | Cẩm nang có bài bi gầm và tiêu đề claim | Gỡ bài GTR G1 Turbo V2 (bi gầm) và bài X5 Ultra "tầm chiếu hàng trăm mét" | HTML #cam-nang |
-| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 17/10/2026; schema lastReviewed/dateModified 2026-10-17, khớp dòng "Kiểm duyệt và cập nhật 19/10/2026" | 02 mục 2 |
+| C1 | Reviewer | Nguyễn Quang Đạo duyệt toàn bộ 17/10/2026; schema lastReviewed/dateModified 2026-10-17, khớp dòng "Kiểm duyệt và cập nhật 20/10/2026" | 02 mục 2 |
 
 ## Kết quả chấm (ghi đúng phạm vi)
 
@@ -48,7 +48,8 @@ Ngày: 19/10/2026. Phiếu ghi các việc đã làm trong lượt dựng trang 
 | Tự chấm team 14/10/2026 | Team Content | Bỏ U3 theo chỉ đạo, thang 95 | 94,5/95 — chỉ là điểm theo phạm vi 95, **không dùng thay** kết quả tái kiểm đủ 12 tiêu chí |
 | Tự chấm team 17/10/2026 | Team Content | Đủ 12 tiêu chí trên preview | 99/100 — tự chấm, không thay tái kiểm |
 | Tái kiểm 17/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **94,4/100 — chưa đạt** (SEO 28,3/30; GEO 23,8/25) |
-| Bản sửa 19/10/2026 (N01–N06, link bài theo dòng xe, inventory URL trong 02) | Team Content | Đủ 12 tiêu chí, thang 100, chấm trên preview | 95,9/100 (SEO 28,8/30; GEO 24,0/25; U3 4,8/5 sau khi thêm cột ngày đối chiếu PDP và gắn nhãn số liệu lịch sử) — tự chấm, **chờ tái kiểm độc lập** |
+| Tái kiểm 19/10/2026 | Reviewer độc lập | Đủ 12 tiêu chí, thang 100 | **95,6/100 — ĐẠT NỘI DUNG PREVIEW V1.8** (SEO 28,8/30; GEO 24,0/25) |
+| Bản sửa 19/10/2026 (N01–N06, link bài theo dòng xe, inventory URL trong 02) — tự chấm, giữ làm lịch sử | Team Content | Đủ 12 tiêu chí, thang 100, chấm trên preview | 95,9/100 (SEO 28,8/30; GEO 24,0/25; U3 4,8/5 sau khi thêm cột ngày đối chiếu PDP và gắn nhãn số liệu lịch sử) — tự chấm, không thay kết quả tái kiểm 95,6 |
 
 ## Sửa theo tái kiểm 14/10/2026 (bản 15/10)
 

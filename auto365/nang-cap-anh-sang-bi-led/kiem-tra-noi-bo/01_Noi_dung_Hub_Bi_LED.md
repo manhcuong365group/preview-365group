@@ -1,8 +1,8 @@
 # 01 — Nội dung bản duyệt — Hub Bi LED ô tô
 
-Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `3cf9d9c31a122b95a2abed4c738801128525c81280e8f8a96101504b18297e7a`
+Nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 `464e9f302c36075337f7114fea4f5c3b2d88132dda4c605fc7844ba8aea101fe`
 
-Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
+Ngày xuất: 20/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
 
@@ -10,7 +10,7 @@ Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối
 
 Bi LED ô tô (đèn bi cầu LED) là module projector dùng chip LED, lắp vào cụm đèn pha chính thay bóng halogen/xenon hoặc bi zin. Thấu kính và tấm chắn bên trong tạo đường cắt sáng Cos rõ, chuyển Pha trong cùng một bi.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 17/10/2026 · Cập nhật 19/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo·Kiểm duyệt 17/10/2026 · Cập nhật 20/10/2026
 
 ## Bi LED đang có tại Auto365  `#catalog`
 
@@ -365,9 +365,3 @@ Thông số theo trang sản phẩm Auto365, đối chiếu gần nhất 17/10/2
 Báo giá theo xe gồm: sản phẩm · pát/mặt dưỡng · dây, relay, cầu chì · công lắp và cân chỉnh · VAT. Tổng giá chốt sau khi kiểm tra xe.
 
 Gửi hãng xe, đời xe và nhu cầu; Auto365 gợi ý cấu hình trước, kỹ thuật viên xác nhận trước khi lắp.
-
-Trạng thái: BẢN SỬA 19/10/2026 THEO TÁI KIỂM 17/10 — CHỜ TÁI KIỂM. Tái kiểm 17/10/2026: 94,4/100 (SEO 28,3/30; GEO 23,8/25) — chưa đạt. Đã sửa N01 (lens 3 mẫu + công suất CB750 trong bảng thông số), N02 (bộ đếm lens theo dữ liệu card), N03 (khôi phục mốc lịch sử), N04 (01 xuất đủ bảng tình huống), N06 (câu chọn bi cho đường tối). N05 (đưa bản mới lên production) giao IT/CMS.
-
-Lịch sử: bản 13/10/2026 do Nguyễn Quang Đạo duyệt; chủ quản duyệt F03/F12/F08 14/10/2026; R05 duyệt 15/10/2026; duyệt bản hiện hành 17/10/2026. Tái kiểm độc lập: 90,3/100 (13/10), 93,5/100 (14/10), 94,4/100 (17/10). 301 3 bài bảng giá cũ xong 17/10/2026.
-
-Xem phiếu duyệt chi tiết →

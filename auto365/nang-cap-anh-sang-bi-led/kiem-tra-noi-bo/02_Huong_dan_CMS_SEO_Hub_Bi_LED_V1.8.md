@@ -4,7 +4,7 @@ Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8 (06/10/2026)
 Bản nguồn: `auto365/nang-cap-anh-sang-bi-led/index.html` — SHA-256 ghi trong 01 cùng phiên bản
 URL preview: `https://preview-365group.pages.dev/nang-cap-anh-sang-bi-led/` (noindex có chủ đích của staging)
 URL production: `https://auto365.vn/nang-cap-anh-sang-bi-led` — đang là trang danh mục "Bi LED ô tô"; hub **thay nội dung tại URL này**, giữ nguyên URL
-Ngày hồ sơ: 19/10/2026, Asia/Saigon
+Ngày hồ sơ: 20/10/2026, Asia/Saigon
 
 ## 1. Vai trò URL
 
@@ -40,7 +40,7 @@ Ngày hồ sơ: 19/10/2026, Asia/Saigon
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-led |
 | Robots | Preview: `noindex,nofollow`. **Production: bỏ noindex** (mục 6) |
 | Rà soát kỹ thuật | Nguyễn Quang Đạo — duyệt bản hiện hành 17/10/2026 (lịch sử: bản 13/10/2026, R05 15/10/2026). Bản sửa 14/10/2026 theo tái kiểm đã được chủ quản duyệt 14/10/2026 (F03, F12; giữ nhãn Độc quyền). Schema `reviewedBy` + `lastReviewed` 2026-10-17 |
-| dateModified | 2026-10-19 |
+| dateModified | 2026-10-20 |
 | Landmark | Một `<main id="main-content">` + skip link |
 
 Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto365 → Xe thực tế đã lắp bi LED, thi công tại Auto365 → Vì sao nên lắp bi LED tại Auto365? → 7 bước từ tiếp nhận đến bàn giao → Xem ánh sáng bi LED trước khi chọn → Bi LED ô tô: cần biết gì trước khi lắp? → Bi LED giá bao nhiêu? Chọn theo phân khúc → Lắp bi LED đúng và dùng đúng chế độ Cos/Pha → Tư vấn bi LED theo xe → Cẩm nang bi LED & đèn pha ô tô → Câu hỏi thường gặp về bi LED ô tô → Chưa biết xe của bạn hợp mẫu bi LED nào?.
@@ -68,7 +68,7 @@ Thứ tự H2: Gợi ý bi LED theo tiêu chí → Bi LED đang có tại Auto36
 
 - Kiến thức 5 mục (accordion, nội dung có sẵn trong HTML): Bi LED là gì/khác gì/lợi ích; Xe nào lắp được; Chọn lens, nhiệt màu, thông số; Lỗi thường gặp khi độ bi; Thương hiệu.
 - Pháp lý riêng bi LED: Điều 20 Luật TTATGT đường bộ 2024 (link chinhphu.vn). NĐ 168/2024 và 238/2026 (lắp thêm đèn) dẫn link về hub, không lặp.
-- Thời gian lắp: theo PDP V20L Quantum (4–5 giờ), V30 Ultra (5–7 giờ).
+- Thời gian lắp: trang ghi "Thời gian lắp tùy sản phẩm, vị trí lắp và từng gara; kỹ thuật viên báo thời gian cụ thể khi hẹn lịch." (FAQ + FAQPage). Số giờ trên PDP V20L Quantum (4–5 giờ), V30 Ultra (5–7 giờ) chỉ là nguồn tham khảo, không phải lời hứa của hub.
 - Bảo hành: tóm tắt từ https://auto365.vn/chinh-sach-bao-hanh.
 - Thương hiệu X-Light: 365Group phân phối chính hãng, Auto365 là đại lý ủy quyền (chứng nhận 01/01/2020).
 
