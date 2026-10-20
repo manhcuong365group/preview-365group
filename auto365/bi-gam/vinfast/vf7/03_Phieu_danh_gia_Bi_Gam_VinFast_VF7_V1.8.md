@@ -142,3 +142,18 @@ C 28,0 · S 29,0 · G 24,25 · U 14,5 → **95,75/100 — ĐẠT**.
 | 9,5 | 9,0 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,5 |
 
 C 28,25 · S 29,0 · G 24,0 · U 14,5 → **95,75/100 — ĐẠT**.
+
+
+## Bản hiện hành 20/10/2026 — sửa theo tái kiểm VF7 19/10 (các mục điểm phía trên là lịch sử)
+
+- Nhiệt màu khóa theo từng mẫu, có nguồn hãng: 301 V2, F10 Pro V2 (x-light.vn) và AES SV 3.0 Max (aescar.vn) chuyển được 3 nhiệt màu trên cùng bộ đèn; F10 Turbo V2 là 3 phiên bản màu; GTR G1 Turbo V2 và AES SV 3.0 Pro cố định; mẫu còn lại xác nhận theo mã khi báo giá. Sửa ghi chú dưới bảng + popup.
+- 301 V2: "Pha ~55W/đèn, cùng mức X3 Pro, thấp hơn các mẫu 65–75W trong bảng" (VF3: thấp hơn mẫu 60–75W). Bỏ câu "mẫu giá thấp có công suất thấp hơn".
+- Nhóm tiết kiệm nêu rõ mẫu giá thấp nhất và lý do gợi ý 301 V2 trước (chuyển 3 nhiệt màu).
+- VF7: tiêu đề 2 thẻ case ghi rõ Plus 2025, xe chưa có đèn gầm/pát nguyên bản và combo/mặt dưỡng mới.
+- Phiếu 04: mục bộ/cặp chuyển sang đã chốt. dateModified + hiển thị 20/10; lastReviewed giữ 17/10.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,5 |
+
+C 28,25 · S 29,0 · G 24,0 · U 14,5 → **95,75/100 — ĐẠT** (12 tiêu chí, có U3, /100; chấm trên preview, production L1–L8 chưa nghiệm thu).

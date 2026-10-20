@@ -22,10 +22,10 @@
 
 | Việc | Giai đoạn |
 |---|---|
-| Đơn vị giá: trang dùng "/bộ đèn" như VF3; bài case X-Light ghi "/cặp" | Chủ quản chốt nếu cần đồng bộ |
+| Đơn vị giá: trang dùng "/bộ đèn"; bài case X-Light ghi "/cặp" | **Đã chốt** 14/10/2026: 1 bộ = 1 cặp (trái + phải), đã ghi trên khối giá và FAQ |
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF7 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (19/10/2026, bản hiện hành): `e9a93caa09e9330ba1df6636cd6893321fc068fae7949d8da062f42ed76ac7a0`
+SHA-256 `index.html` (20/10/2026, bản hiện hành): `8cdbd2abe380fb501a2c953cfd7c2fb939d0170c8f98db8b28542a7f9873b854`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.

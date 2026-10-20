@@ -22,11 +22,11 @@
 
 | Việc | Giai đoạn |
 |---|---|
-| Đơn vị giá: trang dùng "/bộ đèn" như VF3; bài case X-Light ghi "/cặp" | Chủ quản chốt nếu cần đồng bộ |
+| Đơn vị giá: trang dùng "/bộ đèn"; bài case X-Light ghi "/cặp" | **Đã chốt** 14/10/2026: 1 bộ = 1 cặp (trái + phải), đã ghi trên khối giá và FAQ |
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (19/10/2026, bản hiện hành): `81596edd18fbbea5095698f532eb0819f12c115654de4099e9335eace655a395`
+SHA-256 `index.html` (20/10/2026, bản hiện hành): `30d80af9b4307ec1cd27f1a9dec97c413c58980e1402c641e6ad684310030636`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
 | Phiên bản xe trong case | 3 case VF6 (F10 Turbo V2 4300K, GTR G1 Turbo V2, F10 Turbo V2) đều là VF6 **Plus** | User xác nhận 19/10/2026 |
