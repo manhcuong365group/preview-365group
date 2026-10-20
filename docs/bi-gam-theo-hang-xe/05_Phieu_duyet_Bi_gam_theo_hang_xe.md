@@ -32,3 +32,4 @@
 
 Các câu "lý do theo kiểu xe/phân khúc" và "xe du lịch dùng điện 12V" (đã duyệt 19/10) bị **bỏ** theo yêu cầu F05-R2 của reviewer. Câu mới cần duyệt: sapo (phân biệt "Đã lắp thực tế" / "chưa có hồ sơ"), "Gợi ý ánh sáng" (thống kê bài thư viện), câu đầu popup cho xe chưa có hồ sơ và xe có hồ sơ, FAQ "Khi nào chưa cần nâng cấp bi gầm?".
 Bổ sung đợt 2 (20/10/2026) cần duyệt: popup xe chưa có hồ sơ (4 mục cần kiểm, không đề xuất mẫu), giới thiệu Jeep, nhãn Cẩm nang theo loại bài.
+Đợt 3 (20/10/2026, theo yêu cầu chủ quản): popup xe chưa có hồ sơ hiện lại tối đa 3 mẫu tham khảo đã lắp trên xe cùng hãng (hãng chưa có bài: 3 mẫu lắp nhiều nhất thư viện), giữ câu "chưa có hồ sơ" + các mục cần kiểm ở đầu popup — cần duyệt.
