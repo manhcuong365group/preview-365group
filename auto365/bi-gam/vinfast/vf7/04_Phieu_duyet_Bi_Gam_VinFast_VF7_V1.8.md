@@ -29,3 +29,4 @@
 SHA-256 `index.html` (20/10/2026, bản hiện hành): `8cdbd2abe380fb501a2c953cfd7c2fb939d0170c8f98db8b28542a7f9873b854`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
+| Nghiệm thu L1–L8 | IT kiểm tra và xác nhận PASS | Chuyển lại 20/10/2026 |

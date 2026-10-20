@@ -157,3 +157,8 @@ C 28,25 · S 29,0 · G 24,0 · U 14,5 → **95,75/100 — ĐẠT**.
 | 9,5 | 9,0 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,5 |
 
 C 28,25 · S 29,0 · G 24,0 · U 14,5 → **95,75/100 — ĐẠT** (12 tiêu chí, có U3, /100; chấm trên preview, production L1–L8 chưa nghiệm thu).
+
+
+## Nghiệm thu L1–L8 — 20/10/2026
+
+IT đã kiểm tra L1–L8 và xác nhận **PASS** (người phụ trách nội dung chuyển lại ngày 20/10/2026). Phiếu ghi đúng nguồn xác nhận là IT, không thay biên bản kiểm gốc nếu quy trình yêu cầu.
