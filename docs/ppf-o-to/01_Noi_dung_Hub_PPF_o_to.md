@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `6daff6d8547f921db97733ebcb271b21856562aeff42ae84204267dbe5f7f63b`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `1acd2417bc3b94bee18c8a7b8135693839acfc77ff59d662e32cd6ac13b9283d`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -68,23 +68,19 @@ Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; 
 
 Phim được cắt theo dữ liệu từng dòng xe bằng máy cắt chuyên dụng, hạn chế cắt dao trực tiếp trên sơn và giúp mép phim đều, sát chi tiết.
 
+3M Pro Shop — Auto365 Center · 06/2026–06/2029
+
 **Nghiệm thu kỹ, hướng dẫn chăm sóc**
 
 Kiểm tra bọt khí, bụi kẹt và mép phim dưới ánh sáng xiên trước khi bàn giao; hướng dẫn thời gian rửa xe và cách chăm sóc để phim bền hơn.
+
+3M Preferred Installer — Trụ Sở Chính · 20/06/2026
 
 **Bảo hành minh bạch, hỗ trợ toàn quốc**
 
 Bảo hành theo từng dòng phim, ghi rõ trên phiếu bảo hành (ví dụ 3M PPF 150 Gloss 10 năm, AX K Series Ver 2 5 năm theo trang sản phẩm); hỗ trợ qua hệ thống chi nhánh.
 
-**Chứng nhận 3M**
-
-3M Pro Shop — Auto365 Center, Hiệp BìnhCấp 06/2026 · hiệu lực đến 06/2029
-
-3M Preferred Installer — Trụ Sở ChínhCấp 20/06/2026
-
-Nhà phân phối 3M — 365 GroupGồm Paint Protection Film · đến 31/12/2026
-
-Trao chứng nhận 3M Pro Shop / Training CenterSự kiện tại Trụ Sở Chính
+Nhà phân phối 3M (gồm PPF) — 365 Group · đến 31/12/2026
 
 Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài liệu: 3M Pro Shop và Preferred Installer áp dụng tại Auto365.vn - Trụ Sở Chính; chứng nhận nhà phân phối cấp cho 365 Group (Auto365 thuộc 365Group). Khi đặt lịch tại chi nhánh khác, Auto365 xác nhận điểm thi công và chính sách áp dụng.
 
@@ -130,6 +126,14 @@ Sơ đồ minh họa vùng thân xe, không phải danh sách panel trong báo g
 3. 03Cắt phim theo form xeSử dụng máy cắt chuyên dụng theo dữ liệu xe
 4. 04Thi công chuyên nghiệpDán phim và xử lý chi tiết mép, góc cạnh
 5. 05Kiểm tra & bàn giaoĐảm bảo chất lượng, hướng dẫn bảo dưỡng
+
+Trải và căn chỉnh tấm PPFMazda CX-5 · 3M 50 Gloss
+
+Xử lý bề mặt và dán từng chi tiếtBMW 530i · 3M 200 Gloss
+
+Xử lý mép phimBMW 330i · 3M 150 Gloss
+
+Kiểm tra mép phim, góc bo trước bàn giaoVinFast VF 8 · 3M 50 Gloss
 
 ## Kiến thức cần nắm trước khi dán PPF  `#kien-thuc-ppf`
 
