@@ -56,12 +56,27 @@ fs.writeFileSync(path.join(out, '01_Noi_dung_Bi_gam_theo_hang_xe.md'), L.join('\
 
 // ---- 04 master data ----
 const q = (x) => '"' + String(x ?? '').replace(/"/g, '""') + '"';
-const R = [['Loại', 'Hãng', 'Dòng xe / Tiêu đề', 'Có ảnh thẻ', 'Số case', 'URL', 'Ngày đăng', 'Nguồn / ghi chú']];
-for (const b in LINEUP) for (const [m, img] of LINEUP[b]) {
-  const n = CA.filter((c) => c[0] === b && nz(c[2] + c[3]).includes(nz(m))).length;
-  R.push(['Dòng xe', b, m, img ? 'Có' : 'Logo hãng', n, GUIDE[m] ? 'https://auto365.vn/' + GUIDE[m] : '', '', ISRC[b] || 'Mẫu từng phân phối tại VN']);
+// Registry theo yêu cầu F04-R2: mỗi dòng một mục, các URL tách riêng theo nhiệm vụ.
+const key = (x) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const PSLUG = Object.fromEntries([...src.match(/var P=\{[^\n]*/)[0].matchAll(/\w+:\['([^']+)','([^']+)'/g)].map((m) => [m[1], m[2]]));
+const PNAMES = Object.keys(PSLUG).sort((a, z) => z.length - a.length);
+const skuOf = (title) => PNAMES.find((n) => title.toLowerCase().includes(n.toLowerCase())) || '';
+const today = new Date().toISOString().slice(0, 10);
+const ALIAS = { 'Ranger Raptor': 'raptor', 'Corolla Cross': 'toyotacross', Wrangler: 'rubicon' };
+const modelOfCase = (c) => (LINEUP[c[0]] || []).map((x) => x[0]).sort((a, z) => z.length - a.length).find((m) => nz(c[2] + ' ' + c[3]).includes(nz(ALIAS[m] || m))) || '';
+const R = [['content_type', 'brand_key', 'model_key', 'Hãng', 'Dòng xe', 'Tiêu đề', 'vehicle_year', 'guide_url', 'case_url', 'sku_id', 'sku_url', 'sku_status', 'source', 'published', 'checked_at', 'review_scope']];
+for (const b in LINEUP) for (const [m] of LINEUP[b]) {
+  const cs = CA.filter((c) => c[0] === b && modelOfCase(c) === m);
+  R.push([cs.length ? 'dong-xe-co-ho-so' : GUIDE[m] ? 'dong-xe-chi-co-tu-van' : 'chua-co-ho-so', key(b), key(m), b, m, '', '', GUIDE[m] ? 'https://auto365.vn/' + GUIDE[m] : '', '', '', '', '', ISRC[b] ? 'Dải xe: ' + ISRC[b] : 'Mẫu từng phân phối tại VN', '', today, 'Nguyễn Quang Đạo 19/10/2026: nội dung trang; không gồm fitment từng dòng xe']);
 }
-CA.forEach((c) => R.push(['Case', c[0], c[2], '', '', 'https://auto365.vn/' + c[3], c[5], 'Bài đã đăng auto365.vn']));
-main.querySelectorAll('.bght-guide').forEach((g) => R.push(['Cẩm nang', '', t(g.querySelector('h3')), '', '', g.href, g.querySelector('time')?.getAttribute('datetime') || '', 'Bài đã đăng auto365.vn']));
+CA.forEach((c) => {
+  const m = modelOfCase(c), sku = skuOf(c[2]);
+  R.push(['ho-so-xe', key(c[0]), key(m), c[0], m, c[2], '', '', 'https://auto365.vn/' + c[3], sku ? key(sku) : '', sku ? 'https://auto365.vn/' + PSLUG[sku] : '', sku ? 'Dò từ tiêu đề bài, chưa xác nhận phiên bản' : 'Chưa xác định', 'Bài đã đăng auto365.vn', c[5], today, 'Chưa đối chiếu hồ sơ thi công gốc']);
+});
+main.querySelectorAll('.bght-guide').forEach((g) => {
+  const lb = t(g.querySelector('.lb'));
+  R.push([lb === 'Tư vấn dòng xe' ? 'tu-van-dong-xe' : lb === 'Mẫu đèn × dòng xe' ? 'sku-x-xe' : 'kien-thuc', '', '', '', '', t(g.querySelector('h3')), '', lb === 'Tư vấn dòng xe' ? g.href : '', '', '', '', '', 'Bài đã đăng auto365.vn', g.querySelector('time')?.getAttribute('datetime') || '', today, '']);
+});
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_theo_hang_xe.csv'), '﻿' + R.map((r) => r.map(q).join(',')).join('\n') + '\n');
+// vehicle_year để trống có chủ đích: tiêu đề bài có thể chứa năm phiên bản đèn, không dùng làm đời xe.
 console.log('01 + 04 ok · sha', sha(html).slice(0, 12), '· rows', R.length - 1);

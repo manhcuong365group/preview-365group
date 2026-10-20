@@ -51,7 +51,7 @@ if (bodyStart < 0 || mainOpen < 30 || mainClose < 0) throw new Error('VF6 shell 
 
 const canonical = 'https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe';
 const title = 'Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365';
-const desc = 'Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365.';
+const desc = 'Tra cứu bi gầm theo 21 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

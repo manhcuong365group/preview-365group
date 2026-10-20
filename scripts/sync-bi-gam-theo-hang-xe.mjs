@@ -94,7 +94,7 @@ for (const slug of newGuides) {
   if (model && !GUIDE[model]) GUIDE[model] = slug;
   else if (!model) review.push(`[bài tư vấn chưa khớp dòng xe trong LINEUP] ${b} · ${m.title} → ${SITE}${slug}`);
   const esc = (x) => x.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
-  guideCards.push(`  <a class="bght-guide" href="${SITE}${slug}"><span class="im"><img src="${m.image}" alt="${esc(m.title)}" loading="lazy"><span class="lb">Theo dòng xe</span></span><span class="bd"><h3>${esc(m.title)}</h3><p>${esc(m.desc)}</p><time datetime="${m.date}">${m.date.split('-').reverse().join('/')}</time></span></a>`);
+  guideCards.push(`  <a class="bght-guide" href="${SITE}${slug}"><span class="im"><img src="${m.image}" alt="${esc(m.title)}" loading="lazy"><span class="lb">${/-cho-/.test(slug) ? 'Mẫu đèn × dòng xe' : 'Tư vấn dòng xe'}</span></span><span class="bd"><h3>${esc(m.title)}</h3><p>${esc(m.desc)}</p><time datetime="${m.date}">${m.date.split('-').reverse().join('/')}</time></span></a>`);
   console.log('  + bài tư vấn', b, model || '(?)', '·', m.title);
 }
 

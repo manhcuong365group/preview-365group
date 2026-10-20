@@ -59,3 +59,23 @@ Chỉ sửa `content-src.html`; `index.html` là bản build. Sau mỗi lần bu
 6. Nút gọi `tel:0365365911` đúng hotline.
 7. Đo LCP/CLS trên production.
 8. Bản CMS khớp SHA trong 01.
+
+## 7. Bảng URL theo môi trường (F06-R2, kiểm 20/10/2026)
+
+| Trang | Preview | Production (canonical / graph) | HTTP production 20/10 | Việc khi đăng |
+|---|---|---|---:|---|
+| Hub bi gầm | — | https://auto365.vn/nang-cap-anh-sang-bi-gam | 200 | Thêm link về trang theo-hang-xe |
+| Theo hãng xe (trang này) | /bi-gam/theo-hang-xe/ | https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe | 404 | Tạo trang trên CMS đúng slug; bỏ `noindex` meta và header `X-Robots-Tag` của preview |
+| VinFast VF3 | /bi-gam/vinfast-vf3/ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3 | 200 | — |
+| VinFast VF6 | /bi-gam/vinfast/vf6/ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 | 200 | — |
+| VinFast VF7 | /bi-gam/vinfast/vf7/ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7 | 404 | Đăng VF7 trước hoặc cùng lúc; nếu chưa đăng thì bỏ VF7 khỏi `ItemList dong-xe` |
+
+Trong HTML trang, link VinFast trỏ đường dẫn preview; build đổi sang URL production trong schema (`abs()`). Khi CMS nhận bản này, thay các href preview bằng URL production ở cột 3. Ảnh dùng đường dẫn tương đối `hinh/…`: CMS cần tải lên và đổi đường dẫn; `og:image` phải là URL tuyệt đối trên auto365.vn.
+
+## 8. Registry dữ liệu (F04-R2)
+
+`04_Master_Data_Bi_gam_theo_hang_xe.csv` xuất từ `content-src.html` theo các trường: `content_type` (dong-xe-co-ho-so / dong-xe-chi-co-tu-van / chua-co-ho-so / ho-so-xe / tu-van-dong-xe / sku-x-xe / kien-thuc), `brand_key`, `model_key`, `vehicle_year`, `guide_url`, `case_url`, `sku_id`, `sku_url`, `sku_status`, `source`, `published`, `checked_at`, `review_scope`.
+
+- `vehicle_year` để trống có chủ đích: tiêu đề bài có thể chứa năm phiên bản đèn, chưa có trường đời xe riêng từ hồ sơ gốc.
+- `sku_id` dò từ tiêu đề bài, `sku_status` ghi "chưa xác nhận phiên bản" cho tới khi Media/Kinh doanh đối chiếu.
+- Trang không hiển thị năm xe và không đề xuất mẫu cho dòng xe `chua-co-ho-so`.

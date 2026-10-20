@@ -67,3 +67,16 @@ Reviewer chấm bản SHA `10924876…`: C 26,9 · SEO 27,1 · GEO 21,0 · U1–
 | F07-R2 | 01/04 xuất lại cùng SHA; ngày cập nhật 20/10/2026; `lastReviewed` giữ 19/10/2026 | Biên bản duyệt cho phần sửa 20/10 |
 
 Ước tính sau sửa (tự chấm, cần reviewer chấm lại): C 27,8 · SEO 27,9 · GEO 22,7 · U1–U2 9,3 → **87,7/100 + U3**; SEO và GEO vẫn dưới ngưỡng. **CHƯA ĐẠT.**
+
+### Đợt sửa 2 ngày 20/10/2026
+
+| Mục | Đã làm |
+|---|---|
+| Xe chưa có hồ sơ (F03) | Popup không còn đề xuất mẫu: tiêu đề "[xe]: chưa có hồ sơ", danh sách 4 mục cần kiểm (đời xe, vị trí lắp/khoảng hở, bộ gá/dây/giắc, nguồn cấp), nút "Gửi yêu cầu kiểm xe" (#tu-van, đóng popup) và gọi; link "Xem bài lắp xe [hãng] khác" lọc đúng hãng ở thư viện |
+| Jeep (F04) | Thêm Jeep vào bộ chọn (21 hãng): Wrangler (có bài Rubicon), Grand Cherokee, Gladiator; giới thiệu + nguồn jeep.com; meta description "21 hãng" |
+| Nhãn Cẩm nang (F02) | "Tư vấn dòng xe" 12, "Mẫu đèn × dòng xe" 5, "Kiến thức" 7; script sync gắn nhãn theo slug |
+| Registry (F04) | 04 xuất theo trường content_type / brand_key / model_key / vehicle_year (trống có lý do) / guide_url / case_url / sku_id / sku_url / sku_status / source / published / checked_at / review_scope (02 mục 8) |
+| URL theo môi trường (F06) | Bảng preview → production + HTTP 20/10 (02 mục 7): trang này và VF7 còn 404, VF3/VF6 200 |
+| Bàn phím | Card: nút mở popup là `button` nhận focus; link tư vấn/hồ sơ là `a href` |
+
+Ước tính sau đợt 2 (tự chấm, cần reviewer chấm lại): C 28,0 · SEO 28,4 · GEO 23,3 · U1–U2 9,4 → **89,1/100 + U3**. **CHƯA ĐẠT**: SEO thiếu 0,1, GEO thiếu 0,45; còn phụ thuộc lượt duyệt câu mới của anh Đạo (C1, G3), đối chiếu U3 và đăng production (F06).

@@ -5,10 +5,10 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/theo-hang-xe/ |
 | Canonical | https://auto365.vn/nang-cap-anh-sang-bi-gam/theo-hang-xe |
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
-| Meta description | Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
+| Meta description | Tra cứu bi gầm theo 21 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày cập nhật (dateModified) | 2026-10-20 |
-| SHA-256 index.html | `43ee4f2046b51ceb2dca0854223c6aaa17ac754aa77dcc3939f8b55d1c19fc50` |
-| SHA-256 content-src.html | `2008b3410be6719e2f58cc725d0c0f4f257fb5c73be34c964bb074717c250d90` |
+| SHA-256 index.html | `2ee33e6adb47722c12d80d8c65310bc05b4ee5ce3450247949a3b00e1151334d` |
+| SHA-256 content-src.html | `e158c349475cfed37300a67dfda477a318599ec71f29e879bbf82af3d37c8121` |
 | Xuất lúc | 2026-10-20 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo
@@ -97,7 +97,8 @@ Bạn gọi hotline 0365 365 911 hoặc mang xe đến chi nhánh gần nhất �
 - **Chevrolet** — Thương hiệu xe Mỹ từng có mặt rộng rãi tại Việt Nam với Spark, Aveo, Cruze, Captiva, Trailblazer và bán tải Colorado. Các mẫu xe này đến nay vẫn được nhiều chủ xe tin dùng. _Nguồn: các mẫu từng phân phối chính hãng tại Việt Nam, Auto365 tổng hợp_
 - **Isuzu** — Nổi tiếng với động cơ diesel bền bỉ, tiết kiệm nhiên liệu. Dải xe gồm bán tải D-Max và SUV 7 chỗ mu-X, phù hợp chạy đường dài và phục vụ công việc. Phân khúc tầm trung. _Nguồn: https://www.isuzu-vietnam.com_
 - **Daewoo** — Thương hiệu xe Hàn Quốc từng rất quen thuộc tại Việt Nam với các mẫu Matiz, Lanos, Nubira, Lacetti, Gentra. Các mẫu xe này đến nay vẫn được nhiều chủ xe tin dùng. _Nguồn: các mẫu từng phân phối chính hãng tại Việt Nam, Auto365 tổng hợp_
+- **Jeep** — Thương hiệu SUV Mỹ thiên về khả năng vượt địa hình. Các dòng tiêu biểu gồm Wrangler (có bản Rubicon), Grand Cherokee và bán tải Gladiator. Phân khúc cao cấp. _Nguồn: https://www.jeep.com_
 
 ## Số liệu
 
-- Hãng: 20 · Dòng xe: 216 · Case: 97 · Bài tư vấn theo dòng xe: 13 · Thẻ cẩm nang: 24
+- Hãng: 21 · Dòng xe: 219 · Case: 97 · Bài tư vấn theo dòng xe: 13 · Thẻ cẩm nang: 24
