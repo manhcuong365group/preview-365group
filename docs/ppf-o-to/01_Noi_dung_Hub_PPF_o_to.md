@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `76875dc9f32a205f5f12d43bedecc4504d9a0e58ea032dd71caca7fe4fc076eb`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `a99b1b37c953094a6c37f99c7790c654064144f72fe99ecbd39063e267a81210`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -75,6 +75,18 @@ Kiểm tra bọt khí, bụi kẹt và mép phim dưới ánh sáng xiên trư�
 **Bảo hành minh bạch, hỗ trợ toàn quốc**
 
 Bảo hành theo từng dòng phim, ghi rõ trên phiếu bảo hành (ví dụ 3M PPF 150 Gloss 10 năm, AX K Series Ver 2 5 năm theo trang sản phẩm); hỗ trợ qua hệ thống chi nhánh.
+
+**Chứng nhận 3M**
+
+3M Pro Shop — Auto365 Center, Hiệp BìnhCấp 06/2026 · hiệu lực đến 06/2029
+
+3M Preferred Installer — Trụ Sở ChínhCấp 20/06/2026
+
+Nhà phân phối 3M — 365 GroupGồm Paint Protection Film · đến 31/12/2026
+
+Trao chứng nhận 3M Pro Shop / Training CenterSự kiện tại Trụ Sở Chính
+
+Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài liệu: 3M Pro Shop và Preferred Installer áp dụng tại Auto365.vn - Trụ Sở Chính; chứng nhận nhà phân phối cấp cho 365 Group (Auto365 thuộc 365Group). Khi đặt lịch tại chi nhánh khác, Auto365 xác nhận điểm thi công và chính sách áp dụng.
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
