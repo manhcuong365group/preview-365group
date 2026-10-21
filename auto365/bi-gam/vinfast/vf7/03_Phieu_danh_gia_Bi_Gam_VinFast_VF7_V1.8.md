@@ -181,3 +181,10 @@ C 28,25 · S 29,0 · G 24,0 · U 14,75 → **96,0/100 — ĐẠT**. U3 +0,25: ph
 | 9,5 | 9,25 | 9,75 | 9,5 | 10 | 9,5 | 9,5 | 9,75 | 4,75 | 5 | 5 | 4,75 |
 
 C 28,5 · S 29,0 · G 24,0 · U 14,75 → **96,25/100 — ĐẠT**. C2 +0,25: FAQ bảo hành có cách tháo về nguyên trạng (I20). Còn trừ: chưa có dữ liệu các đời VF7 ngoài Plus 2025; hỗ trợ khách tỉnh khác chưa có chính sách.
+
+
+## Tái kiểm độc lập 21/10/2026: **ĐẠT 95,3/100** (SEO 28,7/30, GEO 24,0/25, U3 4,5/5)
+
+Sửa P2 ngày 21/10: tiêu đề 2 thẻ case VF7 rút gọn, chi tiết chuyển xuống dòng mô tả ("Xe chưa có đèn gầm · pát nguyên bản", "Bi gầm 4300K · mặt dưỡng mới"); popup GTR ghi "nhiệt màu cố định theo chế độ: Cos 4800K, Pha 4300K". dateModified + hiển thị 21/10; lastReviewed giữ 17/10.
+
+Việc còn lại thuộc triển khai (SEO/IT): bản v2 https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7 đang hiển thị bản 17/10, cần cập nhật đúng snapshot này (bảng nhiệt màu, popup, khối giá, case, FAQ, Schema), chốt domain chính thức, bỏ khối kiểm nội bộ, ghi phạm vi URL của xác nhận IT L1–L8.
