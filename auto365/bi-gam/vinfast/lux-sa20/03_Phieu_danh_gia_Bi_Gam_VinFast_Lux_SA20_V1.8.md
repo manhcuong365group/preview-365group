@@ -42,3 +42,14 @@ Thêm khối video: "VinFast Lux SA2.0 lắp X-Light F10 Turbo V2 5500K" (YouTub
 | 9,5 | 9,0 | 9,7 | 9,6 | 9,7 | 9,4 | 9,7 | 9,7 | 4,7 | 4,9 | 4,8 | 4,5 |
 
 C 28,2 · S 28,7 · G 24,1 · U 14,2 → **95,2/100 — ĐẠT** (SEO ≥28,5, GEO ≥23,75). G1 +0,1, G3 +0,2, U1 +0,1 nhờ video thi công thật trên Lux SA2.0.
+
+
+## Chấm lại 21/10/2026 sau khi thêm video thứ 2 (12 tiêu chí, có U3, /100)
+
+- Thêm video "VinFast Lux SA nâng cấp bi gầm GTR G1 Turbo" (vCnfKrscBU4, user gửi 21/10). Khối video có 2 video thi công trên Lux SA.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,1 | 9,7 | 9,6 | 9,7 | 9,5 | 9,7 | 9,7 | 4,9 | 4,9 | 4,8 | 4,5 |
+
+C 28,3 · S 28,8 · G 24,3 · U 14,2 → **95,6/100 — ĐẠT**.
