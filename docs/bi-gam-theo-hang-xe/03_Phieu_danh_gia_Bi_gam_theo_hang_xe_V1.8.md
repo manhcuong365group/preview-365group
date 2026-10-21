@@ -80,3 +80,15 @@ Reviewer chấm bản SHA `10924876…`: C 26,9 · SEO 27,1 · GEO 21,0 · U1–
 | Bàn phím | Card: nút mở popup là `button` nhận focus; link tư vấn/hồ sơ là `a href` |
 
 Ước tính sau đợt 2 (tự chấm, cần reviewer chấm lại): C 28,0 · SEO 28,4 · GEO 23,3 · U1–U2 9,4 → **89,1/100 + U3**. **CHƯA ĐẠT**: SEO thiếu 0,1, GEO thiếu 0,45; còn phụ thuộc lượt duyệt câu mới của anh Đạo (C1, G3), đối chiếu U3 và đăng production (F06).
+
+## 5. Tái kiểm R3 của reviewer 21/10/2026 và bản vá cùng ngày
+
+Reviewer chấm bản SHA `55f64001…`: C 28,0 · **SEO 28,7 (đạt)** · GEO 22,8 · U1–U2 9,4 · U3 CX → 88,9–93,9/100, **CHƯA ĐẠT**. Đóng F01, F02, F04 (năm, danh mục), F05. Còn F03-R3, F04-R3, F06-R3, F07-R3.
+
+| Gói | Đã vá 21/10/2026 | Kiểm |
+|---|---|---|
+| F03-R3 | `showSuggest()` tính danh sách nguồn trước rồi mới viết câu mở đầu: cùng hãng → "xe [hãng] khác"; trộn → "xe [hãng] khác và những hãng xe khác (ghi rõ ở từng mẫu)"; không cùng hãng → "những hãng xe khác"; không có nguồn → "chưa có mẫu phù hợp để tham khảo". Nhãn mẫu bù đổi thành "Từ hãng xe khác" | Lexus RX: câu "từ những hãng xe khác", 3 nhãn "Từ hãng xe khác". VF5: "xe VinFast khác". Discovery: trộn, 1 nhãn cùng hãng + 2 nhãn hãng khác |
+| F04-R3 | Bỏ quy tắc "F10 New" → 2025. Bảng `F10V` theo link sản phẩm trong từng bài (kiểm 21/10): CR-V 2018, XL7 2023, City → F10 New 2025. BMW X5, Peugeot 3008, Scirocco link F10 đời trước; Jeep Rubicon link F10 2022; Raptor, Limo Green không có link: không cộng vào mẫu nào. Dùng chung cho `showSuggest()`, `showProducts()`, `lightTip()` và 04 | Civic RS (title ghi 2025) vẫn đúng nhóm 2025; BMW: "có 1 bài, chưa đủ dữ kiện phiên bản"; 04 ghi `sku_status` theo nguồn |
+| U2 | Form có ô "Dòng xe"; bấm "Gửi yêu cầu kiểm [xe]" trong popup điền sẵn hãng + dòng xe và gắn vào `data-service` ("Bi gầm theo hãng xe - Lexus RX") | Không gửi form; chưa kiểm payload/CRM |
+
+Ước tính sau vá (tự chấm, cần reviewer chấm lại): C 28,4 · SEO 28,7 · GEO 23,6 · U1–U2 9,6 → **90,3/100 + U3**. GEO còn thiếu 0,15. **CHƯA ĐẠT.**
