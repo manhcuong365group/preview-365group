@@ -38,3 +38,15 @@ Mục "Nâng cấp khác" thay thẻ chung "Bi LED đèn chính" bằng case th�
 | 9,5 | 9,0 | 9,7 | 9,6 | 9,7 | 9,6 | 9,6 | 9,7 | 4,7 | 4,8 | 4,8 | 4,5 |
 
 C 28,2 · S 28,9 · G 24,0 · U 14,1 → **95,2/100 — ĐẠT**. S3 +0,2 (liên kết thêm case Fadil thật), G3 +0,2 (thêm nguồn Fadil). Còn trừ: không có video Fadil.
+
+
+## Chấm lại 21/10/2026 sau khi thêm 2 video Fadil (12 tiêu chí, có U3, /100)
+
+- Khối video: "VinFast Fadil nâng cấp combo bi LED Titan Gold 2.0 và bi gầm X-Light F10 New" (WNE0TXvx4ok), "VinFast Fadil nâng cấp bi gầm Titan 301, 3 nhiệt màu" (3lHmb21nmgE) — user gửi 21/10.
+- Thêm X-Light F10 New (2025), 4.300.000đ (đã lắp trên Fadil theo video) → 18 mẫu; Titan 301 ghi đã lắp trên Fadil. Tab Tiết kiệm hiện 301 V2, AES SV 3.0 Pro, Titan 301 (khớp câu tư vấn).
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,2 | 9,7 | 9,6 | 9,7 | 9,6 | 9,7 | 9,7 | 4,9 | 4,9 | 4,8 | 4,5 |
+
+C 28,4 · S 28,9 · G 24,3 · U 14,2 → **95,8/100 — ĐẠT**.
