@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `405be474e3cf384165a455fd733ea9f83ce59398a2324a0ddb0ee8917e93c3f6`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `061ad20f0b65f25c12b8d4f472c428907aea4cf418da729e0f025acb5b5f3f5e`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -117,8 +117,6 @@ Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Rev A
 
 Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn phạm vi thi công phù hợp.
 
-Sơ đồ minh họa vùng thân xe, không phải danh sách panel trong báo giá. Panel cụ thể được thống nhất theo từng xe.
-
 ## Quy trình thi công PPF  `#kien-thuc`
 
 1. 01Kiểm tra xe & tư vấnĐánh giá tình trạng sơn và nhu cầu sử dụng
@@ -151,7 +149,7 @@ Bảng là hướng kiểm tra, không phải kết luận một dòng phim phù
 
 Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (hồ sơ).
 
-Phim bảo vệ sơn trên thị trường thường được gọi theo ba nhóm vật liệu. Các dòng 3M PPF và AX Film PPF tại Auto365 công bố nền TPU/polyurethane theo tài liệu của hãng hoặc trang sản phẩm. Bảng dưới là xu hướng chung để tham khảo, không thay thông số của từng dòng phim.
+PPF trên thị trường thường được chia theo ba nhóm vật liệu nền: TPU, TPH và PVC. Các dòng PPF phân khúc cao thường dùng nền TPU (polyurethane nhiệt dẻo) vì dẻo, ôm bề mặt tốt và có thể phủ lớp tự phục hồi; TPH và PVC thường gặp ở phân khúc giá thấp hơn. Bảng dưới là xu hướng chung của ngành — đặc tính cụ thể vẫn phụ thuộc từng dòng phim.
 
 _So sánh vật liệu PPF: TPU, TPH và PVC_
 
@@ -222,6 +220,14 @@ PPF trong suốt giữ màu sơn ghi trên đăng ký — Toyota Camry 3M 50 Glo
 - Khi đăng kiểm: xe có màu thực tế không đúng màu trên chứng nhận đăng ký có thể bị từ chối kiểm định. Trước khi dán phim làm đổi màu chủ đạo, nên hỏi cơ quan đăng ký xe về thủ tục áp dụng.
 
 Nguồn tham khảo: Toàn văn Thông tư 79/2024/TT-BCA (đã được sửa đổi một số thủ tục, biểu mẫu) · SGGP – xe thay đổi màu sơn bị từ chối kiểm định · Thư viện Pháp luật – đổi màu sơn ô tô và giấy đăng ký. Nên hỏi cơ quan đăng ký xe nơi cư trú trước khi dán phim đổi màu.
+
+## Góc chuyên gia  `#chuyen-gia`
+
+Những người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.
+
+10 năm kinh nghiệm (từ năm 2016) trong tư vấn, vận hành, kiểm soát quy trình thi công và đào tạo kỹ thuật phim cách nhiệt 3M, PPF tại hệ thống Auto365. Kiểm duyệt nội dung trang này ngày 19/10/2026.
+
+Phát biểu được báo Dân trí dẫn lại ngày 18/12/2019, khi hệ thống Auto365 khai trương chi nhánh thứ 20.
 
 ## PPF, phủ ceramic và dán wrap khác nhau ở đâu?  `#so-sanh`
 

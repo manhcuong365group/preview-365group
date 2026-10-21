@@ -39,7 +39,7 @@
 img{display:block;max-width:100%}a{text-decoration:none;color:inherit}button,input,select{font:inherit;color:inherit}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:99}
 .c{width:min(var(--max),calc(100% - 48px));margin:auto}
-section{padding:24px 0;scroll-margin-top:12px}.soft{background:var(--bg)}h1,h2,h3,p{margin-top:0}
+section{padding:16px 0;scroll-margin-top:12px}.soft{background:var(--bg)}h1,h2,h3,p{margin-top:0}
 h2{font-size:20px;font-weight:600;line-height:1.3;margin-bottom:6px}h3{font-size:16px;line-height:1.3;margin-bottom:6px}
 .head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.head p{color:var(--m);margin:0;font-size:14px}
 .more{color:var(--r);font-weight:700;font-size:14px;white-space:nowrap}
@@ -175,7 +175,7 @@ h2{font-size:20px;font-weight:600;line-height:1.3;margin-bottom:6px}h3{font-size
 .internalCheck{background:#fff8e1;border-top:2px solid #f5b400;padding:18px 0;font-size:13px}.internalCheck p{margin:6px 0 0}
 @media(max-width:1080px){.pgrid{grid-auto-columns:calc((100% - 32px)/3)}.why{grid-template-columns:repeat(3,1fr)}.tri{grid-template-columns:1fr 1fr}.tri>div:last-child{grid-column:1/-1}.branch{grid-template-columns:200px 1fr}.bimg{display:none}.arts{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:repeat(3,auto)}}
 @media(max-width:760px){
-section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
+section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 .head{flex-direction:column;align-items:flex-start;gap:6px}
 .heroGrid{grid-template-columns:1fr;gap:20px;padding:18px 0 24px}.heroImg{order:-1}
 .actions .btn{flex:1 1 140px}
@@ -246,7 +246,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 .bar{display:block;width:26px;height:3px;background:var(--r);border-radius:2px;margin-bottom:10px}
 .whyGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .whyCard{background:#fff;border:1px solid var(--l);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
-.whyCard .wc{padding:18px 18px 14px;flex:1}.whyCard h3{font-size:15.5px;margin-bottom:8px}.whyCard p{font-size:13.5px;color:var(--m);margin:0;line-height:1.6}
+.whyCard .wc{padding:16px 18px 12px}.whyCard h3{font-size:15.5px;margin-bottom:8px}.whyCard p{font-size:13.5px;color:var(--m);margin:0;line-height:1.6}
 .whyCard img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
 .whyCard a{padding:12px 18px;font-size:13px;font-weight:700;color:var(--r)}
 @media(max-width:1080px){.whyGrid{grid-template-columns:repeat(2,1fr)}}
@@ -374,6 +374,33 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 .crit{background:var(--bg);border-radius:8px;padding:12px 14px;display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:baseline}
 .crit em{font-style:normal;font-size:12px;font-weight:700;color:var(--r)}.crit b{font-size:14px}.crit p{grid-column:2;margin:4px 0 0!important;font-size:13px;color:var(--m);line-height:1.5}
 @media(max-width:760px){.critGrid{grid-template-columns:1fr}}
+.gal3{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:12px}
+.gl3{position:relative;display:block;border-radius:12px;overflow:hidden;background:#111}
+.gl3.big{grid-column:span 2;grid-row:span 2}.gl3.wide{grid-column:span 2}
+.gl3i,.gl3i img{display:block;width:100%;height:100%}.gl3i img{object-fit:cover;transition:transform .4s}
+.gl3:hover .gl3i img{transform:scale(1.05)}
+.gl3c{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.72));color:#fff;line-height:1.35;transition:padding .25s}
+.gl3c b{display:block;font-size:13.5px;font-weight:600}.gl3c small{font-size:11.5px;color:#d9dce0}
+.gl3.big .gl3c b{font-size:17px}.gl3.big .gl3c{padding:40px 18px 16px}
+.gl3:hover .gl3c{padding-bottom:16px}
+@media(max-width:1080px){.gal3{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}.gl3.big{grid-row:span 2}}
+@media(max-width:760px){.gal3{grid-auto-flow:column;grid-template-columns:none;grid-template-rows:repeat(2,160px);grid-auto-rows:auto;grid-auto-columns:70%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.gal3::-webkit-scrollbar{display:none}.gl3.big,.gl3.wide{grid-column:auto;grid-row:auto}.gl3{scroll-snap-align:start}.gl3.big .gl3c b{font-size:13.5px}}
+.whyCard a:last-child{margin-top:auto}.wcCert img{object-fit:cover!important;background:none!important}
+.kA2in{align-items:center}.kA2in .kMedia img{aspect-ratio:16/10!important}#k02 .kA2in{align-items:center}
+.xk>.kA2:nth-child(even) .kA2in .kMedia{order:2}
+@media(max-width:900px){.xk>.kA2:nth-child(even) .kA2in .kMedia{order:0}}
+.kA2in{align-items:stretch!important}.kA2in .kMedia{display:flex}.kA2in .kMedia .kFig{display:flex;flex-direction:column;width:100%}.kA2in .kMedia img{flex:1;height:100%!important;min-height:260px;aspect-ratio:auto!important;object-fit:cover}.kA2in .kBody{align-self:center}
+@media(max-width:900px){.kA2in .kMedia img{height:auto!important;aspect-ratio:16/10!important;min-height:0}}
+@media(min-width:901px){.kA2in .kMedia{position:relative;min-height:240px}.kA2in .kMedia .kFig{position:absolute;inset:0;display:flex;flex-direction:column}.kA2in .kMedia img{flex:1;min-height:0!important;height:auto!important}.kA2in .kMedia figcaption{flex:none}}
+.exGrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ex{display:grid;grid-template-columns:200px 1fr;background:#fff;border:1px solid var(--l);border-radius:12px;overflow:hidden}
+.ex img{width:100%;height:100%;min-height:240px;object-fit:cover}
+.exB{padding:18px 20px;display:flex;flex-direction:column;gap:4px}
+.exB b{font-size:17px}.exB small{font-size:13px;color:var(--r);font-weight:600}
+.exB blockquote{margin:10px 0 6px;padding:10px 14px;border-left:3px solid var(--r);background:var(--bg);border-radius:0 8px 8px 0;font-size:15px;font-style:italic;line-height:1.5}
+.exB p{margin:0;font-size:13.5px;color:var(--m);line-height:1.55}.exB a{margin-top:auto;padding-top:8px;font-size:13px;font-weight:700;color:var(--r)}
+@media(max-width:1080px){.exGrid{grid-template-columns:1fr}}
+@media(max-width:760px){.ex{grid-template-columns:1fr}.ex img{height:auto;aspect-ratio:16/10;min-height:0}}
 </style>
 </head>
 <body>
@@ -538,15 +565,15 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 <section id="hinh-anh">
 <div class="c">
   <div class="head"><div><h2>Hình ảnh thi công PPF tại Auto365</h2><p>Ảnh từ hồ sơ thi công tại Auto365.vn - Trụ Sở Chính — bấm ảnh để xem bài gốc.</p></div></div>
-  <div class="gal2">
-    <a class="gl2" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ky-thuat-vien-at-va-can-chinh-tam-ppf-tren-nap-ca-po-bmw-530i-img_6a6c5ca36f0611.72705621.jpg" alt="Đặt và căn chỉnh tấm PPF trên nắp ca-pô — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Đặt và căn chỉnh tấm PPF trên nắp ca-pô</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
-    <a class="gl2" href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ky-thuat-vien-can-chinh-va-trai-tam-ppf-3m-50-gloss-tren-be-mat-mazda-cx-5-trong-qua-trinh-thi-cong-img_6a928f91e5ac95.95630166.webp" alt="Trải tấm PPF trên bề mặt xe — Mazda CX-5 · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Trải tấm PPF trên bề mặt xe</b><small>Mazda CX-5 · 3M 50 Gloss</small></span></a>
-    <a class="gl2" href="https://auto365.vn/dan-ax-film-ppf-g-series-cho-ford-ranger" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/dan-ax-film-ppf-g-series-cho-ford-ranger-3.jpg" alt="Thi công AX Film PPF G Series — Ford Ranger · AX G Series" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Thi công AX Film PPF G Series</b><small>Ford Ranger · AX G Series</small></span></a>
-    <a class="gl2" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-thao-tac-can-chinh-mep-phim-tai-khu-vuc-en-truoc-bmw-530i-img_6a6c5cd3c332d6.11015022.jpg" alt="Căn chỉnh mép phim quanh đèn trước — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Căn chỉnh mép phim quanh đèn trước</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
-    <a class="gl2" href="https://auto365.vn/volkswagen-viloran-dan-ppf-3m" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/xu-ly-lop-phim-tai-khu-vuc-logo-va-nep-trang-tri-tren-volksw-1791367077.webp" alt="Xử lý phim quanh logo và nẹp trang trí — Volkswagen Viloran · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Xử lý phim quanh logo và nẹp trang trí</b><small>Volkswagen Viloran · 3M 50 Gloss</small></span></a>
-    <a class="gl2" href="https://auto365.vn/dan-ppf-3m-cho-toyota-camry" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/ky-thuat-vien-hoan-thien-ppf-tai-khu-vuc-hoc-tay-nam-cua-toy-1791529768.webp" alt="Hoàn thiện PPF tại hốc tay nắm cửa — Toyota Camry · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Hoàn thiện PPF tại hốc tay nắm cửa</b><small>Toyota Camry · 3M 50 Gloss</small></span></a>
-    <a class="gl2" href="https://auto365.vn/bmw-330i-dan-ppf-3m" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/ppf-3m-150-gloss-duoc-thi-cong-tren-tai-xe-bmw-330i-1791785709.webp" alt="Thi công PPF trên tai xe — BMW 330i · 3M 150 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Thi công PPF trên tai xe</b><small>BMW 330i · 3M 150 Gloss</small></span></a>
-    <a class="gl2" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><span class="gl2i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="Xe sau khi hoàn thiện PPF — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl2c"><b>Xe sau khi hoàn thiện PPF</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+  <div class="gal3">
+    <a class="gl3 big" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ky-thuat-vien-at-va-can-chinh-tam-ppf-tren-nap-ca-po-bmw-530i-img_6a6c5ca36f0611.72705621.jpg" alt="Đặt và căn chỉnh tấm PPF trên nắp ca-pô — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Đặt và căn chỉnh tấm PPF trên nắp ca-pô</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+    <a class="gl3" href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ky-thuat-vien-can-chinh-va-trai-tam-ppf-3m-50-gloss-tren-be-mat-mazda-cx-5-trong-qua-trinh-thi-cong-img_6a928f91e5ac95.95630166.webp" alt="Trải tấm PPF trên bề mặt xe — Mazda CX-5 · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Trải tấm PPF trên bề mặt xe</b><small>Mazda CX-5 · 3M 50 Gloss</small></span></a>
+    <a class="gl3" href="https://auto365.vn/dan-ax-film-ppf-g-series-cho-ford-ranger" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/dan-ax-film-ppf-g-series-cho-ford-ranger-3.jpg" alt="Thi công AX Film PPF G Series — Ford Ranger · AX G Series" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Thi công AX Film PPF G Series</b><small>Ford Ranger · AX G Series</small></span></a>
+    <a class="gl3" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-thao-tac-can-chinh-mep-phim-tai-khu-vuc-en-truoc-bmw-530i-img_6a6c5cd3c332d6.11015022.jpg" alt="Căn chỉnh mép phim quanh đèn trước — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Căn chỉnh mép phim quanh đèn trước</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+    <a class="gl3" href="https://auto365.vn/volkswagen-viloran-dan-ppf-3m" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/xu-ly-lop-phim-tai-khu-vuc-logo-va-nep-trang-tri-tren-volksw-1791367077.webp" alt="Xử lý phim quanh logo và nẹp trang trí — Volkswagen Viloran · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Xử lý phim quanh logo và nẹp trang trí</b><small>Volkswagen Viloran · 3M 50 Gloss</small></span></a>
+    <a class="gl3 wide" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="Xe sau khi hoàn thiện PPF — BMW 530i · 3M PPF 200 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Xe sau khi hoàn thiện PPF</b><small>BMW 530i · 3M PPF 200 Gloss</small></span></a>
+    <a class="gl3" href="https://auto365.vn/dan-ppf-3m-cho-toyota-camry" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/ky-thuat-vien-hoan-thien-ppf-tai-khu-vuc-hoc-tay-nam-cua-toy-1791529768.webp" alt="Hoàn thiện PPF tại hốc tay nắm cửa — Toyota Camry · 3M 50 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Hoàn thiện PPF tại hốc tay nắm cửa</b><small>Toyota Camry · 3M 50 Gloss</small></span></a>
+    <a class="gl3" href="https://auto365.vn/bmw-330i-dan-ppf-3m" target="_blank" rel="noopener"><span class="gl3i"><img src="https://auto365.vn/uploads/images/pages/ppf-3m-150-gloss-duoc-thi-cong-tren-tai-xe-bmw-330i-1791785709.webp" alt="Thi công PPF trên tai xe — BMW 330i · 3M 150 Gloss" width="800" height="533" loading="lazy" decoding="async"></span><span class="gl3c"><b>Thi công PPF trên tai xe</b><small>BMW 330i · 3M 150 Gloss</small></span></a>
   </div>
 </div>
 </section>
@@ -629,8 +656,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
       <button class="tab" type="button" data-s="side" aria-pressed="false">Sườn xe</button>
       <button class="tab" type="button" data-s="detail" aria-pressed="false">Chi tiết</button>
     </div>
-    <p class="note" style="margin:6px 0 0">Sơ đồ minh họa vùng thân xe, không phải danh sách panel trong báo giá. Panel cụ thể được thống nhất theo từng xe.</p>
-    <p class="scopeTxt" id="scopeTxt"></p>
+    
   </div>
   <div>
     <h2>Quy trình thi công PPF</h2>
@@ -656,7 +682,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 <tr><th scope="row">Sơn sửa hoặc nền đang có lỗi</th><td>Kiểm tra nền trước khi quyết định dán</td></tr>
 <tr><th scope="row">Quan tâm bề mặt vân carbon</th><td>Xem mẫu thực tế của dòng carbon đang bán</td></tr>
 </tbody></table></div><p class="kNote">Bảng là hướng kiểm tra, không phải kết luận một dòng phim phù hợp mọi xe. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.</p></div></div></details>
-    <details class="xk-acc kA2" id="k01"><summary><h3>PPF TPU, TPH và PVC khác nhau thế nào?</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kMedia"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-lop-ppf-3m-50-gloss-trong-suot-uoc-inh-vi-tren-khu-vuc-au-xe-mazda-cx-5-trong-qua-trinh-thi-cong-img_6a928fa2b4b643.88136476.webp" alt="Cận cảnh lớp PPF 3M 50 Gloss trong suốt được định vị trên khu vực đầu xe Mazda CX-5" width="800" height="533" loading="lazy" decoding="async"><figcaption>Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (<a href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure></div><div class="kBody"><p>Phim bảo vệ sơn trên thị trường thường được gọi theo ba nhóm vật liệu. Các dòng 3M PPF và AX Film PPF tại Auto365 công bố nền TPU/polyurethane theo tài liệu của hãng hoặc trang sản phẩm. Bảng dưới là xu hướng chung để tham khảo, không thay thông số của từng dòng phim.</p>
+    <details class="xk-acc kA2" id="k01"><summary><h3>PPF TPU, TPH và PVC khác nhau thế nào?</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kMedia"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-lop-ppf-3m-50-gloss-trong-suot-uoc-inh-vi-tren-khu-vuc-au-xe-mazda-cx-5-trong-qua-trinh-thi-cong-img_6a928fa2b4b643.88136476.webp" alt="Cận cảnh lớp PPF 3M 50 Gloss trong suốt được định vị trên khu vực đầu xe Mazda CX-5" width="800" height="533" loading="lazy" decoding="async"><figcaption>Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (<a href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure></div><div class="kBody"><p>PPF trên thị trường thường được chia theo ba nhóm vật liệu nền: TPU, TPH và PVC. Các dòng PPF phân khúc cao thường dùng nền TPU (polyurethane nhiệt dẻo) vì dẻo, ôm bề mặt tốt và có thể phủ lớp tự phục hồi; TPH và PVC thường gặp ở phân khúc giá thấp hơn. Bảng dưới là xu hướng chung của ngành — đặc tính cụ thể vẫn phụ thuộc từng dòng phim.</p>
     <div class="tbl"><table><caption>So sánh vật liệu PPF: TPU, TPH và PVC</caption><thead><tr><th scope="col">Tiêu chí</th><th scope="col" class="hl">TPU</th><th scope="col">TPH</th><th scope="col">PVC</th></tr></thead><tbody>
     <tr><th scope="row">Bản chất</th><td class="hl">Polyurethane nhiệt dẻo</td><td>Tên gọi thương mại, thành phần tùy nhà sản xuất</td><td>Nhựa PVC</td></tr>
     <tr><th scope="row">Độ dẻo, ôm đường cong</th><td class="hl">Cao</td><td>Trung bình</td><td>Thấp</td></tr>
@@ -696,7 +722,35 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="so-sanh">
+<section class="soft" id="chuyen-gia">
+<div class="c">
+  <div class="head"><div><h2>Góc chuyên gia</h2><p>Những người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.</p></div></div>
+  <div class="exGrid">
+    <article class="ex">
+      <img src="hinh/dang-minh-hoang.webp" alt="Anh Đặng Minh Hoàng, Giám đốc điều hành 3M Pro Shop & 3M Training Center" width="600" height="600" loading="lazy" decoding="async">
+      <div class="exB">
+        <b>Đặng Minh Hoàng</b>
+        <small>Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center</small>
+        <blockquote>“Lắng nghe để thấu hiểu, hành động để giải quyết.”</blockquote>
+        <p>10 năm kinh nghiệm (từ năm 2016) trong tư vấn, vận hành, kiểm soát quy trình thi công và đào tạo kỹ thuật phim cách nhiệt 3M, PPF tại hệ thống Auto365. Kiểm duyệt nội dung trang này ngày 19/10/2026.</p>
+        <a href="../dang-minh-hoang/">Xem hồ sơ →</a>
+      </div>
+    </article>
+    <article class="ex">
+      <img src="hinh/bui-hung-viet-ceo-365group.webp" alt="Anh Bùi Hùng Việt, CEO &amp; Founder 365 Group, phát biểu tại sự kiện" width="800" height="474" loading="lazy" decoding="async">
+      <div class="exB">
+        <b>Bùi Hùng Việt</b>
+        <small>Nhà sáng lập &amp; CEO 365 Group</small>
+        <blockquote>“Khách hàng … cần là cả một quy trình chuyên nghiệp từ tư vấn – lắp đặt – bảo hành.”</blockquote>
+        <p>Phát biểu được báo Dân trí dẫn lại ngày 18/12/2019, khi hệ thống Auto365 khai trương chi nhánh thứ 20.</p>
+        <a href="https://dantri.com.vn/o-to-xe-may/he-thong-do-xe-auto-365-khai-truong-chi-nhanh-thu-20-tai-viet-nam-20191218143153318.htm" target="_blank" rel="noopener">Đọc bài trên Dân trí →</a>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+
+<section id="so-sanh">
 <div class="c">
   <div class="head"><div><h2>PPF, phủ ceramic và dán wrap khác nhau ở đâu?</h2><p>Ba giải pháp thường được hỏi cùng nhau — mỗi loại phục vụ mục tiêu khác nhau.</p></div></div>
   <div class="tbl"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
@@ -713,7 +767,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="cham-soc">
+<section class="soft" id="cham-soc">
 <div class="c">
   <div class="head"><div><h2>Chăm sóc sau khi dán PPF</h2><p>Giữ phim bền và trong hơn với vài nguyên tắc đơn giản.</p></div></div>
   <div class="care">
@@ -724,7 +778,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="tu-van">
+<section id="tu-van">
 <div class="c">
   <div class="leadWrap">
     <figure class="leadImg"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ppf-duoc-can-chinh-tren-khu-vuc-cua-va-hong-xe-truoc-khi-hoan-thien-be-mat-img_6a8c0992e944c4.64254953.webp" alt="Kỹ thuật viên căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt" width="800" height="533" loading="lazy"><figcaption>Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.</figcaption></figure>
@@ -747,7 +801,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="video">
+<section class="soft" id="video">
 <div class="c">
   <div class="head"><div><h2>Video thực tế</h2><p>Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả video →</a></div>
   <div class="vids">
@@ -759,7 +813,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="cam-nang">
+<section id="cam-nang">
 <div class="c">
   <div class="head"><div><h2>Cẩm nang PPF &amp; Wrap</h2><p>126 bài viết về PPF và wrap trên auto365.vn — dưới đây là các bài mới nhất.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả bài viết →</a></div>
   <div class="chipRow" role="group" aria-label="Lọc bài theo chủ đề"><button class="ctab" type="button" data-tag="" aria-pressed="true">Tất cả <em>12</em></button><button class="ctab" type="button" data-tag="Kiến thức" aria-pressed="false">Kiến thức <em>2</em></button><button class="ctab" type="button" data-tag="Trước khi dán" aria-pressed="false">Trước khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Sau khi dán" aria-pressed="false">Sau khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Theo xe" aria-pressed="false">Theo xe <em>2</em></button></div>
@@ -781,7 +835,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="faq">
+<section class="soft" id="faq">
 <div class="c">
   <div class="head"><div><h2>Câu hỏi thường gặp về dán PPF ô tô</h2></div></div>
   <div class="faq">
@@ -796,7 +850,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="kiem-duyet">
+<section id="kiem-duyet">
 <div class="c">
   <div class="rev">
     <div class="box"><span class="ey">Kiểm duyệt kỹ thuật</span><h3 style="margin-top:8px"><a href="../dang-minh-hoang/">Đặng Minh Hoàng</a></h3><p class="muted" style="margin:0">Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 21/10/2026</p></div>
@@ -881,7 +935,7 @@ section{padding:20px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
   function scope(s){
     $$('.scope .tab').forEach(function(x){ x.setAttribute('aria-pressed', String(x.dataset.s === s)); });
     $$('.carbox .zone').forEach(function(z){ z.classList.toggle('on', s === 'all' || z.dataset.z === s); });
-    $('#scopeTxt').textContent = TXT[s];
+    var st = document.getElementById('scopeTxt'); if (st) st.textContent = TXT[s];
   }
   $$('.scope .tab').forEach(function(b){ b.addEventListener('click', function(){ scope(b.dataset.s); }); });
   scope('all');
