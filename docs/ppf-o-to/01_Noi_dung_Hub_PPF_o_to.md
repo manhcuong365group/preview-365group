@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `07f3cf698cb01107f341694630ec2c3182959c9b0c6e79eb4c09027c3e1bf40c`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0b0686419475ff87700dc7fd059b4052c44f407328f6477c27ebdf9c0da2b871`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -64,9 +64,9 @@ Kiểm tra tình trạng sơn thực tế, tư vấn dòng phim và phạm vi d�
 
 Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; có hồ sơ xe đã dán PPF để khách tham khảo trước khi chọn.
 
-**Dán đúng tiêu chuẩn 3M, ngay tại 3M Pro Shop**
+**Auto365 là 3M Pro Shop — dán đúng tiêu chuẩn 3M**
 
-Xe được dán tại xưởng 3M Việt Nam bổ nhiệm làm 3M Pro Shop (Auto365 Center, Hiệp Bình): đúng dòng phim, đúng quy trình và vật tư của hãng — chủ xe không phải lo phim trôi nổi hay thi công tự phát.
+Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Xe dán PPF tại Auto365 dùng đúng dòng phim, quy trình và vật tư của hãng — chủ xe không phải lo phim trôi nổi hay thi công tự phát.
 
 3M Pro Shop — Auto365 Center · 06/2026–06/2029
 
@@ -76,9 +76,9 @@ PPF đẹp hay không phụ thuộc nhiều vào tay nghề ở mép, góc và c
 
 3M Preferred Installer — Trụ Sở Chính · 20/06/2026
 
-**Phim chính hãng, bảo hành có giấy tờ rõ ràng**
+**Phim chính hãng từ 365Group, bảo hành có giấy tờ**
 
-PPF 3M nhập qua 365 Group — nhà phân phối được 3M Việt Nam chỉ định cho Paint Protection Film. Mỗi xe nhận chứng nhận bảo hành ghi dòng phim, từng vị trí dán và thời hạn (3M PPF 150 Gloss đến 10 năm) để đối chiếu khi cần.
+Auto365 thuộc 365Group — nhà phân phối được 3M Việt Nam chỉ định cho Paint Protection Film, nên PPF 3M tại Auto365 có nguồn gốc rõ ràng. Mỗi xe nhận chứng nhận bảo hành ghi dòng phim, từng vị trí dán và thời hạn (3M PPF 150 Gloss đến 10 năm) để đối chiếu khi cần.
 
 Nhà phân phối 3M (gồm PPF) — 365 Group · đến 31/12/2026
 
