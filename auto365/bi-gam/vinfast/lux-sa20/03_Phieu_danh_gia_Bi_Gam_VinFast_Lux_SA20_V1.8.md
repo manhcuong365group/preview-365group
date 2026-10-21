@@ -31,3 +31,14 @@
 - Bổ sung video bi gầm trên Lux SA2.0 (nếu có) hoặc case thứ hai → G3, C2.
 - Xác nhận năm xe/phiên bản các xe Lux SA2.0 đã làm (bài case hiện ghi "không đủ dữ liệu để công bố" năm xe).
 - Test gửi lead trên preview trang này (U2).
+
+
+## Chấm lại 21/10/2026 sau khi bổ sung (12 tiêu chí, có U3, /100)
+
+Thêm khối video: "VinFast Lux SA2.0 lắp X-Light F10 Turbo V2 5500K" (YouTube w3LC1LS9s68, từ trang video đã đăng trên auto365.vn).
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,7 | 9,6 | 9,7 | 9,4 | 9,7 | 9,7 | 4,7 | 4,9 | 4,8 | 4,5 |
+
+C 28,2 · S 28,7 · G 24,1 · U 14,2 → **95,2/100 — ĐẠT** (SEO ≥28,5, GEO ≥23,75). G1 +0,1, G3 +0,2, U1 +0,1 nhờ video thi công thật trên Lux SA2.0.

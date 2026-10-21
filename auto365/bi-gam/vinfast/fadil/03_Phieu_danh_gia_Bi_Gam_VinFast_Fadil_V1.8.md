@@ -27,3 +27,14 @@
 **Điểm:** C 28,2 · S 28,7 · G 23,8 · U 14,1 → **94,8/100**.
 
 **Kết luận: CHƯA ĐẠT ngưỡng tổng 95** (SEO 28,7 ≥ 28,5 và GEO 23,8 ≥ 23,75 đạt). Thiếu chủ yếu do chưa có video Fadil (C2, G3). Bổ sung 1 video bi gầm trên Fadil hoặc dữ kiện đời/phiên bản Fadil đã lắp sẽ đủ ngưỡng.
+
+
+## Chấm lại 21/10/2026 sau khi bổ sung (12 tiêu chí, có U3, /100)
+
+Mục "Nâng cấp khác" thay thẻ chung "Bi LED đèn chính" bằng case thật "VinFast Fadil 2022 lắp bi LED Titan Black 2026". Không có video Fadil nào trên auto365.vn.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,5 | 9,0 | 9,7 | 9,6 | 9,7 | 9,6 | 9,6 | 9,7 | 4,7 | 4,8 | 4,8 | 4,5 |
+
+C 28,2 · S 28,9 · G 24,0 · U 14,1 → **95,2/100 — ĐẠT**. S3 +0,2 (liên kết thêm case Fadil thật), G3 +0,2 (thêm nguồn Fadil). Còn trừ: không có video Fadil.
