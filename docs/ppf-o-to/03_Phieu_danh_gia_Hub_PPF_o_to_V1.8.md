@@ -9,7 +9,7 @@
 
 C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA ĐẠT. Lỗi chặn: BLOCK_01 (ảnh hero/ảnh form là dán phim kính).
 
-## Tự chấm lại (bản 21/10/2026)
+## Tự chấm lại (bản 21/10/2026, lần 2)
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
@@ -21,12 +21,12 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 | S3 | 10 | 9,4 | Link nội bộ đã đổi sang URL production; graph nối @id, reviewedBy có url hồ sơ. Còn: đường tới toàn bộ catalog, migration chưa nghiệm thu |
 | G1 | 10 | 9,6 | Các câu kiến thức trích riêng vẫn đúng phạm vi (xu hướng ngành, điều kiện) |
 | G2 | 10 | 9,6 | Ma trận tình huống → phạm vi; 6 tiêu chí so sánh dòng phim; giá theo loại xe |
-| G3 | 5 | 4,8 | Chuyên gia có tên, chức danh, hồ sơ; trích dẫn có nguồn (Dân trí 18/12/2019); TDS 3M; 13 case + 8 ảnh dẫn bài gốc. Còn: tài liệu AX do hãng phát hành |
-| U1 | 5 | 4,8 | Bố cục 50:50 xen kẽ, ảnh–chữ cao bằng nhau; gallery tạp chí; 375px/1280px không tràn. Chưa thử thiết bị thật |
+| G3 | 5 | 4,9 | Chuyên gia có tên, chức danh, hồ sơ; ý kiến kỹ thuật về PPF của anh Đặng Minh Hoàng (duyệt 21/10/2026); trích dẫn có nguồn (Dân trí 18/12/2019); TDS 3M; 13 case + 8 ảnh dẫn bài gốc. Còn: tài liệu AX do hãng phát hành |
+| U1 | 5 | 4,9 | Bố cục 50:50 xen kẽ, ảnh–chữ cao bằng nhau; thẻ Vì sao thẳng hàng (subgrid); FAQ dạng danh sách; bỏ khối ghi chú nội bộ và câu dẫn cứng; gallery tạp chí; 375px/1280px không tràn. Chưa thử thiết bị thật |
 | U2 | 5 | 4,8 | Form/hotline thống nhất 0365 365 365; lead 205 đã kiểm; lọc case có trạng thái rỗng |
 | U3 | 5 | 5,0 | 01–03 cùng SHA-256 bên dưới |
 
-**Tổng tự chấm: C 28,8 · S 28,7 · G 24,0 · U 14,6 → 96,1/100. ĐẠT NỘI DUNG V1.8 (bản preview)** — SEO 28,7 ≥ 28,5; GEO 24,0 ≥ 23,75. Cần reviewer tái chấm; chưa nghiệm thu Live.
+**Tổng tự chấm: C 28,8 · S 28,7 · G 24,1 · U 14,7 → 96,3/100. ĐẠT NỘI DUNG V1.8 (bản preview)** — SEO 28,7 ≥ 28,5; GEO 24,1 ≥ 23,75. Cần reviewer tái chấm; chưa nghiệm thu Live.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
