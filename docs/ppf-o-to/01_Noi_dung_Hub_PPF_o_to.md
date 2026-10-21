@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `e0ce31a4172e25ef98b57b74e8965a5176b6d891f97c124fa29e95cb43875ecb`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `70734a0724b16051f7e0c40702aeb32bf0fc050caa8f3875452804b5684ed0bd`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -224,8 +224,6 @@ Nguồn tham khảo: Toàn văn Thông tư 79/2024/TT-BCA (đã được sửa �
 ## Góc chuyên gia  `#chuyen-gia`
 
 Người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.
-
-10 năm kinh nghiệm (từ năm 2016) trong tư vấn, vận hành, kiểm soát quy trình thi công và đào tạo kỹ thuật phim cách nhiệt 3M, PPF tại hệ thống Auto365. Kiểm duyệt nội dung trang này ngày 19/10/2026.
 
 Phát biểu được báo Dân trí dẫn lại ngày 18/12/2019, khi hệ thống Auto365 khai trương chi nhánh thứ 20.
 
