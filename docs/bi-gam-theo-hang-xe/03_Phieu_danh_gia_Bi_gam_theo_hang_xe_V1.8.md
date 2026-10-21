@@ -96,3 +96,13 @@ Reviewer chấm bản SHA `55f64001…`: C 28,0 · **SEO 28,7 (đạt)** · GEO 
 ### Sau lượt duyệt 21/10/2026
 
 Anh Nguyễn Quang Đạo duyệt phần sửa 20–21/10 (chủ quản xác nhận; ghi ở 05); `lastReviewed` và `dateModified` = 2026-10-21. Ước tính (tự chấm, cần reviewer chấm lại): C 28,6 · SEO 28,7 · GEO 23,9 · U1–U2 9,6 → 90,8 + U3. Nếu reviewer công nhận bộ 01–05 cùng SHA (U3 ≈ 4,7) thì khoảng 95,5/100. Kết luận chính thức chờ reviewer; F06 (đăng production HUB và VF7) vẫn là điều kiện trước live.
+
+### Xử lý mục thấp điểm 21/10/2026
+
+| Mục | Đã làm |
+|---|---|
+| C3 | Mô tả case hiển thị trên trang (thẻ thư viện, thẻ dòng xe, alt ảnh) bỏ từ quảng cáo "cực chất / thời thượng / sang trọng / cao cấp", bỏ "xế yêu", viết hoa tên dòng xe sau tên hãng; bài gốc trên auto365.vn giữ nguyên |
+| C1 / G2 | Limo Green 2025: mô tả bài gốc ghi "F10 New bản 2025" → tính vào F10 New 2025. Raptor: khối sản phẩm trong bài là "F10 New (đời trước)" → giữ ngoài thống kê |
+| U3 | Khối "Kiểm tra nội bộ" cuối trang (chỉ hiện trên preview/localhost, xoá khi lên production) dẫn tới 01–05 trên GitHub, ghi trạng thái duyệt và điểm như trang VF7 |
+
+Ước tính sau xử lý (tự chấm, chờ reviewer): C 28,8 · SEO 28,7 · GEO 24,0 · U1–U2 9,6 · U3 4,7 → **khoảng 95,8/100**. Kết luận chính thức chờ reviewer chấm lại.
