@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8e16320aee8cba991df3f6e3e53e213076333b854a5c2b4db741cba6d3d1683f`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b8d7f53bb2eb6c240a560f29316c2744984ee9a8f84465fc8242a91db520613a`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -54,7 +54,7 @@ Hồ sơ thi công PPF đã đăng trên auto365.vn — mỗi bài ghi dòng phi
 
 **90+ chi nhánh triển khai PPF/Wrap**
 
-Theo trang Hệ thống chi nhánh, các chi nhánh Auto365 đều triển khai nhóm dịch vụ PPF/Wrap. Chứng nhận chính hãng 3M cho phim/PPF chỉ áp dụng tại 3M Pro Shop & 3M Training Center, Trụ Sở Chính; quy mô xưởng, giờ mở cửa khác nhau giữa các điểm.
+Chi nhánh tại 33 tỉnh thành đều nhận dán PPF; khi đặt lịch, Auto365 xác nhận điểm thi công và lịch hẹn phù hợp với xe.
 
 **Tư vấn đúng phim, phù hợp từng xe**
 
@@ -126,14 +126,6 @@ Sơ đồ minh họa vùng thân xe, không phải danh sách panel trong báo g
 3. 03Cắt phim theo form xeSử dụng máy cắt chuyên dụng theo dữ liệu xe
 4. 04Thi công chuyên nghiệpDán phim và xử lý chi tiết mép, góc cạnh
 5. 05Kiểm tra & bàn giaoĐảm bảo chất lượng, hướng dẫn bảo dưỡng
-
-Trải và căn chỉnh tấm PPFMazda CX-5 · 3M 50 Gloss
-
-Xử lý bề mặt và dán từng chi tiếtBMW 530i · 3M 200 Gloss
-
-Xử lý mép phimBMW 330i · 3M 150 Gloss
-
-Kiểm tra mép phim, góc bo trước bàn giaoVinFast VF 8 · 3M 50 Gloss
 
 ## Kiến thức cần nắm trước khi dán PPF  `#kien-thuc-ppf`
 

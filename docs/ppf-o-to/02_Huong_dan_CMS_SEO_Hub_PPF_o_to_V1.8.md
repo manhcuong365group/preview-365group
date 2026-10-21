@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8e16320aee8cba991df3f6e3e53e213076333b854a5c2b4db741cba6d3d1683f` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b8d7f53bb2eb6c240a560f29316c2744984ee9a8f84465fc8242a91db520613a` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -49,7 +49,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 | Thông số các dòng AX Film | Trang sản phẩm Auto365 (chưa tìm được trang chính thức của hãng AX Film) |
 | Vật liệu PVC/TPU/TPH (xu hướng chung, không thay thông số dòng phim) | Bài kiến thức trên `auto365.vn/ppfwrap-film` (đã đăng) |
 | Chăm sóc: rửa lần đầu theo hướng dẫn bàn giao, tránh chất mài mòn/đánh bóng/rubbing compound | [3M Pro Series FAQ](https://www.3m.com/3M/en_US/p/dc/v100997005/) — chỉ dùng làm hướng chung, thời điểm cụ thể theo dòng phim |
-| Block "Hình ảnh thi công PPF" (8 ảnh), dải 4 ảnh quy trình dưới khối "PPF là gì / Quy trình", ảnh trong 6 mục kiến thức (VF 8 phạm vi, CX-5 lớp TPU, Ranger AX G, CX-5 trước/sau, BMW 530i nghiệm thu, phiếu bảo hành Camry) | Ảnh và ALT lấy nguyên từ các bài case BMW 530i, BMW 330i, Volkswagen Viloran, Toyota Camry, Mazda CX-5, Ford Ranger, VinFast VF 8 trên auto365.vn; mỗi ảnh gallery dẫn về bài gốc |
+| Block "Hình ảnh thi công PPF" (8 ô đều, chữ dưới ảnh, chỉ ảnh thao tác một khung), ảnh trong 6 mục kiến thức (VF 8 phạm vi, CX-5 lớp TPU, Ranger AX G, CX-5 trước/sau, BMW 530i nghiệm thu, phiếu bảo hành Camry) | Ảnh và ALT lấy nguyên từ các bài case BMW 530i, BMW 330i, Volkswagen Viloran, Toyota Camry, Mazda CX-5, Ford Ranger, VinFast VF 8 trên auto365.vn; mỗi ảnh gallery dẫn về bài gốc |
 | Chứng nhận 3M (ảnh dưới 3 thẻ "Vì sao" cuối; ảnh sự kiện không dùng) | 4 ảnh như trang mã phim 3M: 3M Pro Shop Certificate – Auto365 Center (06/2026–06/2029, "3M Premium Auto Film Products"); 3M Premium Auto Products Preferred Installer – Trụ Sở Chính (20/06/2026); Distributor Certificate 3M Việt Nam – 365 Group, gồm Paint Protection Film (01/03/2023–31/12/2026); ảnh sự kiện trao chứng nhận. Ghi rõ phạm vi theo đơn vị/địa điểm |
 | Ảnh hero, form, CTA | Hồ sơ thi công [VinFast VF 8 dán PPF 3M 50 Gloss full xe](https://auto365.vn/vinfast-vf-8-dan-ppf-3m-50-gloss) tại Auto365.vn - Trụ Sở Chính |
 | Quy định đổi màu xe | [Toàn văn Thông tư 79/2024/TT-BCA](https://caselaw.vn/van-ban-phap-luat/411972-thong-tu-so-79-2024-tt-bca-ngay-15-11-2024-cua-bo-truong-bo-cong-an-quy-dinh-ve-cap-thu-hoi-chung-nhan-dang-ky-xe-bien-so-xe-co-gioi-xe-may-chuyen-dung) — khoản 2 Điều 18, khoản 1 Điều 20 (một số thủ tục/biểu mẫu đã được sửa đổi bởi TT 13/2025, 62/2026); [SGGP](https://www.sggp.org.vn/xe-thay-doi-mau-son-tu-cai-tao-chua-nop-phat-se-bi-tu-choi-kiem-dinh-post775883.html); [Thư viện Pháp luật](https://thuvienphapluat.vn/hoi-dap-phap-luat/doi-mau-son-xe-o-to-co-phai-xin-cap-lai-giay-dang-ky-xe-306493.html). Không ghi mức phạt; đã bỏ quy tắc 50% diện tích (chưa xác minh điều khoản hiện hành) |
