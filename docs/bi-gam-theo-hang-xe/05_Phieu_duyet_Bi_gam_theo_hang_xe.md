@@ -38,3 +38,4 @@ Bổ sung đợt 2 (20/10/2026) cần duyệt: popup xe chưa có hồ sơ (4 m�
 ## Lượt duyệt 21/10/2026
 
 Chủ quản xác nhận 21/10/2026: anh Nguyễn Quang Đạo đã duyệt toàn bộ phần sửa 20–21/10 (sapo 2 câu, "Gợi ý ánh sáng" dạng thống kê thư viện, popup xe có/chưa có hồ sơ với câu mở đầu theo nguồn, bảng phiên bản F10 New theo link sản phẩm, FAQ "Khi nào chưa cần nâng cấp", giới thiệu Jeep, nhãn Cẩm nang, ô Dòng xe trong form). `lastReviewed` = 2026-10-21.
+Đợt 5 (21/10/2026, chủ quản chọn): khôi phục sapo bản 19/10 (đã duyệt lượt 19/10).
