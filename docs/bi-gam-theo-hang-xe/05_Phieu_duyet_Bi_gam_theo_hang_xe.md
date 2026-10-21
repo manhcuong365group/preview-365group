@@ -34,3 +34,7 @@ Các câu "lý do theo kiểu xe/phân khúc" và "xe du lịch dùng điện 12
 Bổ sung đợt 2 (20/10/2026) cần duyệt: popup xe chưa có hồ sơ (4 mục cần kiểm, không đề xuất mẫu), giới thiệu Jeep, nhãn Cẩm nang theo loại bài.
 Đợt 3 (20/10/2026, theo yêu cầu chủ quản): popup xe chưa có hồ sơ hiện lại tối đa 3 mẫu tham khảo đã lắp trên xe cùng hãng (hãng chưa có bài: 3 mẫu lắp nhiều nhất thư viện), giữ câu "chưa có hồ sơ" + các mục cần kiểm ở đầu popup — cần duyệt.
 Đợt 4 (21/10/2026, theo R3): câu mở đầu popup theo nguồn thực tế (cùng hãng / trộn / hãng khác / không có nguồn); F10 New không ghi năm chỉ tính là 2025 khi bài link sản phẩm 2025; ô Dòng xe trong form; lightTip cho hãng có bài nhưng chưa rõ phiên bản — cần duyệt.
+
+## Lượt duyệt 21/10/2026
+
+Chủ quản xác nhận 21/10/2026: anh Nguyễn Quang Đạo đã duyệt toàn bộ phần sửa 20–21/10 (sapo 2 câu, "Gợi ý ánh sáng" dạng thống kê thư viện, popup xe có/chưa có hồ sơ với câu mở đầu theo nguồn, bảng phiên bản F10 New theo link sản phẩm, FAQ "Khi nào chưa cần nâng cấp", giới thiệu Jeep, nhãn Cẩm nang, ô Dòng xe trong form). `lastReviewed` = 2026-10-21.

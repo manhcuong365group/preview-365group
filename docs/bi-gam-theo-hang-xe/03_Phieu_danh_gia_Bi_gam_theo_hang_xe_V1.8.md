@@ -92,3 +92,7 @@ Reviewer chấm bản SHA `55f64001…`: C 28,0 · **SEO 28,7 (đạt)** · GEO 
 | U2 | Form có ô "Dòng xe"; bấm "Gửi yêu cầu kiểm [xe]" trong popup điền sẵn hãng + dòng xe và gắn vào `data-service` ("Bi gầm theo hãng xe - Lexus RX") | Không gửi form; chưa kiểm payload/CRM |
 
 Ước tính sau vá (tự chấm, cần reviewer chấm lại): C 28,4 · SEO 28,7 · GEO 23,6 · U1–U2 9,6 → **90,3/100 + U3**. GEO còn thiếu 0,15. **CHƯA ĐẠT.**
+
+### Sau lượt duyệt 21/10/2026
+
+Anh Nguyễn Quang Đạo duyệt phần sửa 20–21/10 (chủ quản xác nhận; ghi ở 05); `lastReviewed` và `dateModified` = 2026-10-21. Ước tính (tự chấm, cần reviewer chấm lại): C 28,6 · SEO 28,7 · GEO 23,9 · U1–U2 9,6 → 90,8 + U3. Nếu reviewer công nhận bộ 01–05 cùng SHA (U3 ≈ 4,7) thì khoảng 95,5/100. Kết luận chính thức chờ reviewer; F06 (đăng production HUB và VF7) vẫn là điều kiện trước live.
