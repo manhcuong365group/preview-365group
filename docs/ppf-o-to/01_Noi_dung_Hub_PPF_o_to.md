@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b8d7f53bb2eb6c240a560f29316c2744984ee9a8f84465fc8242a91db520613a`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `07f3cf698cb01107f341694630ec2c3182959c9b0c6e79eb4c09027c3e1bf40c`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -64,21 +64,21 @@ Kiểm tra tình trạng sơn thực tế, tư vấn dòng phim và phạm vi d�
 
 Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; có hồ sơ xe đã dán PPF để khách tham khảo trước khi chọn.
 
-**3M Pro Shop chính thức**
+**Dán đúng tiêu chuẩn 3M, ngay tại 3M Pro Shop**
 
-3M Việt Nam bổ nhiệm Auto365 Center (4/4/1/7 Đường số 3, Hiệp Bình) là 3M Pro Shop cho dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029.
+Xe được dán tại xưởng 3M Việt Nam bổ nhiệm làm 3M Pro Shop (Auto365 Center, Hiệp Bình): đúng dòng phim, đúng quy trình và vật tư của hãng — chủ xe không phải lo phim trôi nổi hay thi công tự phát.
 
 3M Pro Shop — Auto365 Center · 06/2026–06/2029
 
-**Được 3M công nhận Preferred Installer**
+**Mép phim gọn, bề mặt trong — tay nghề được 3M công nhận**
 
-Auto365.vn - Trụ Sở Chính được 3M công nhận "Premium Auto Products Preferred Installer" (20/06/2026) — đơn vị thi công sản phẩm phim ô tô cao cấp của 3M.
+PPF đẹp hay không phụ thuộc nhiều vào tay nghề ở mép, góc và chi tiết khó. Trụ Sở Chính được 3M công nhận Preferred Installer (20/06/2026); xe được kiểm tra dưới ánh sáng xiên trước khi bàn giao.
 
 3M Preferred Installer — Trụ Sở Chính · 20/06/2026
 
-**3M PPF chính hãng, bảo hành theo phiếu**
+**Phim chính hãng, bảo hành có giấy tờ rõ ràng**
 
-365 Group (Auto365 thuộc 365Group) là nhà phân phối được 3M Việt Nam chỉ định, gồm Paint Protection Film. Mỗi xe nhận phiếu bảo hành ghi dòng phim, vị trí dán và thời hạn (ví dụ 3M PPF 150 Gloss 10 năm).
+PPF 3M nhập qua 365 Group — nhà phân phối được 3M Việt Nam chỉ định cho Paint Protection Film. Mỗi xe nhận chứng nhận bảo hành ghi dòng phim, từng vị trí dán và thời hạn (3M PPF 150 Gloss đến 10 năm) để đối chiếu khi cần.
 
 Nhà phân phối 3M (gồm PPF) — 365 Group · đến 31/12/2026
 
