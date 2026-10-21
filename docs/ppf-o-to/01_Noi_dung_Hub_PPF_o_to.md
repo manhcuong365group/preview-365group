@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b25afdef531583a03536ac31a42ea319adbb91cbf329f9dcd67ad76e67aa3b9a`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `3cfc1863a6c12f4595a7208cd5b7f9e00120cbef08fedc58b8ba9f0abc360331`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -45,10 +45,6 @@ Mỗi xe đều ghi rõ dòng phim, vị trí dán và hình ảnh thực tế s
 - Dán PPF xe Lexus LX600 – bảng giá PPF 3M — https://auto365.vn/dan-ppf-xe-lexus-lx600
 - Auto365 thi công dán PPF Mazda 3 dòng X Series — https://auto365.vn/auto-365-thi-cong-dan-ppf-mazda-3-dong-x-series
 - Bảng giá thi công dán PPF cho xe VinFast VF3 — https://auto365.vn/bang-gia-thi-cong-dan-ppf-cho-xe-vinfast-vf3
-
-## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
-
-Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.
 
 ## Vì sao nên dán PPF tại Auto365?  `#vi-sao`
 
@@ -101,6 +97,10 @@ Tư vấnQua hotline
 Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 
 _[Form: ]_
+
+## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
+
+Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.
 
 ## PPF là gì?  `#kien-thuc`
 
