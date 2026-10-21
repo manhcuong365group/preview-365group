@@ -40,3 +40,4 @@ Bổ sung đợt 2 (20/10/2026) cần duyệt: popup xe chưa có hồ sơ (4 m�
 Chủ quản xác nhận 21/10/2026: anh Nguyễn Quang Đạo đã duyệt toàn bộ phần sửa 20–21/10 (sapo 2 câu, "Gợi ý ánh sáng" dạng thống kê thư viện, popup xe có/chưa có hồ sơ với câu mở đầu theo nguồn, bảng phiên bản F10 New theo link sản phẩm, FAQ "Khi nào chưa cần nâng cấp", giới thiệu Jeep, nhãn Cẩm nang, ô Dòng xe trong form). `lastReviewed` = 2026-10-21.
 Đợt 5 (21/10/2026, chủ quản chọn): khôi phục sapo bản 19/10 (đã duyệt lượt 19/10).
 Đợt 6 (21/10/2026): mô tả case hiển thị bỏ từ quảng cáo (bài gốc giữ nguyên); Limo Green tính F10 New 2025 theo mô tả bài gốc; khối Kiểm tra nội bộ (chỉ preview).
+Đợt 7 (21/10/2026, chủ quản chọn): sapo đổi "giải pháp tra cứu cấu hình đèn tương thích…" thành "trang tra cứu mẫu đèn đã lắp thực tế trên từng dòng xe" (theo góp ý F05 R2); tạm bỏ link VF7 (production 404) — cần duyệt.

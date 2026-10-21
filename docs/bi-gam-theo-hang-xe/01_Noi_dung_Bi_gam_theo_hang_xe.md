@@ -7,15 +7,15 @@
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
 | Meta description | Tra cứu bi gầm theo 21 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày cập nhật (dateModified) | 2026-10-21 |
-| SHA-256 index.html | `90f3d68473b830ac329b6966a8b0b7b9d22b4f53f55002110821b328aac833c9` |
-| SHA-256 content-src.html | `d2d5348c990a566b828a64d2684824db76951c6ec496dfaf8f27cded7b7e6ee7` |
+| SHA-256 index.html | `e7434db2014e41984a5d3bbc75e11a1accd76d9d7b8e63ed3b8d43e548d8c168` |
+| SHA-256 content-src.html | `7d754f7d9877298a2da341a37aa341f149819789eb022695894e32b9b316eb22` |
 | Xuất lúc | 2026-10-21 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo
 
 **Bi gầm ô tô theo hãng xe**
 
-Nâng cấp bi gầm ô tô theo hãng xe là giải pháp tra cứu cấu hình đèn tương thích dựa trên dữ liệu thi công thực tế. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...).
+Nâng cấp bi gầm ô tô theo hãng xe là trang tra cứu mẫu đèn đã lắp thực tế trên từng dòng xe. Tại đây, Auto365 tổng hợp các hồ sơ (case study) nâng cấp bi gầm (X-Light, GTR, AES) trên từng dòng xe cụ thể (Toyota, VinFast, Ford...).
 
 Cập nhật 21/10/2026 · Rà soát: Nguyễn Quang Đạo
 

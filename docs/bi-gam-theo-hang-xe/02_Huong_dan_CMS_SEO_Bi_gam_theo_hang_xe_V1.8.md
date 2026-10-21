@@ -79,3 +79,5 @@ Trong HTML trang, link VinFast trỏ đường dẫn preview; build đổi sang 
 - `vehicle_year` để trống có chủ đích: tiêu đề bài có thể chứa năm phiên bản đèn, chưa có trường đời xe riêng từ hồ sơ gốc.
 - `sku_id` dò từ tiêu đề bài, `sku_status` ghi "chưa xác nhận phiên bản" cho tới khi Media/Kinh doanh đối chiếu.
 - Trang không hiển thị năm xe và không đề xuất mẫu cho dòng xe `chua-co-ho-so`.
+
+**Cập nhật 21/10/2026:** tạm bỏ link tới trang VinFast VF7 (production còn 404) theo chỉ đạo chủ quản; thẻ VF7 dẫn về bài case "VinFast VF7 Plus 2025 lắp bi gầm X-Light F10 Turbo V2 5500K". Khi VF7 production trả 200: trong `content-src.html` thêm lại `'../vinfast/vf7/'` làm phần tử thứ 7 của mục VF7 trong mảng `C`, rồi build.
