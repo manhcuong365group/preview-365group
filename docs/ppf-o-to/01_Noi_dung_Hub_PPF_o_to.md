@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0b0686419475ff87700dc7fd059b4052c44f407328f6477c27ebdf9c0da2b871`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `cfd9dd8af83ce3da3c6ad75d8fa6313814dffee699a9c7db36779be5dbc85b71`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -64,9 +64,9 @@ Kiểm tra tình trạng sơn thực tế, tư vấn dòng phim và phạm vi d�
 
 Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; có hồ sơ xe đã dán PPF để khách tham khảo trước khi chọn.
 
-**Auto365 là 3M Pro Shop — dán đúng tiêu chuẩn 3M**
+**Dán tại 3M Pro Shop của Auto365 — đúng tiêu chuẩn 3M**
 
-Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Xe dán PPF tại Auto365 dùng đúng dòng phim, quy trình và vật tư của hãng — chủ xe không phải lo phim trôi nổi hay thi công tự phát.
+Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Xe dán PPF tại đây dùng đúng dòng phim, quy trình và vật tư của hãng — chủ xe không phải lo phim trôi nổi hay thi công tự phát.
 
 3M Pro Shop — Auto365 Center · 06/2026–06/2029
 
