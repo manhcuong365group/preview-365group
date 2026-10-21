@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0cfb5efd9ba58fc8ebffa57855914355bec2620062ef4a4a1dc4750bf3793fd7`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b41011d1a84c7bea49eb7eb33de301666a1406d07788f8e38a6436512e3972b2`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -64,25 +64,25 @@ Kiểm tra tình trạng sơn thực tế, tư vấn dòng phim và phạm vi d�
 
 Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; có hồ sơ xe đã dán PPF để khách tham khảo trước khi chọn.
 
-**Cắt phim theo form xe bằng máy chuyên dụng**
+**3M Pro Shop chính thức**
 
-Phim được cắt theo dữ liệu từng dòng xe bằng máy cắt chuyên dụng, hạn chế cắt dao trực tiếp trên sơn và giúp mép phim đều, sát chi tiết.
+3M Việt Nam bổ nhiệm Auto365 Center (4/4/1/7 Đường số 3, Hiệp Bình) là 3M Pro Shop cho dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029.
 
 3M Pro Shop — Auto365 Center · 06/2026–06/2029
 
-**Nghiệm thu kỹ, hướng dẫn chăm sóc**
+**Được 3M công nhận Preferred Installer**
 
-Kiểm tra bọt khí, bụi kẹt và mép phim dưới ánh sáng xiên trước khi bàn giao; hướng dẫn thời gian rửa xe và cách chăm sóc để phim bền hơn.
+Auto365.vn - Trụ Sở Chính được 3M công nhận "Premium Auto Products Preferred Installer" (20/06/2026) — đơn vị thi công sản phẩm phim ô tô cao cấp của 3M.
 
 3M Preferred Installer — Trụ Sở Chính · 20/06/2026
 
-**Bảo hành minh bạch, hỗ trợ toàn quốc**
+**3M PPF chính hãng, bảo hành theo phiếu**
 
-Bảo hành theo từng dòng phim, ghi rõ trên phiếu bảo hành (ví dụ 3M PPF 150 Gloss 10 năm, AX K Series Ver 2 5 năm theo trang sản phẩm); hỗ trợ qua hệ thống chi nhánh.
+365 Group (Auto365 thuộc 365Group) là nhà phân phối được 3M Việt Nam chỉ định, gồm Paint Protection Film. Mỗi xe nhận phiếu bảo hành ghi dòng phim, vị trí dán và thời hạn (ví dụ 3M PPF 150 Gloss 10 năm).
 
 Nhà phân phối 3M (gồm PPF) — 365 Group · đến 31/12/2026
 
-Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài liệu: 3M Pro Shop và Preferred Installer áp dụng tại Auto365.vn - Trụ Sở Chính; chứng nhận nhà phân phối cấp cho 365 Group (Auto365 thuộc 365Group). Khi đặt lịch tại chi nhánh khác, Auto365 xác nhận điểm thi công và chính sách áp dụng.
+Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài liệu. Khi đặt lịch tại chi nhánh khác, Auto365 xác nhận điểm thi công và chính sách áp dụng.
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
