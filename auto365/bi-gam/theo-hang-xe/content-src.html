@@ -13,6 +13,7 @@
 .bght-btn:hover{background:var(--rd)}
 .bght-btn:after{content:"→"}
 /* hero */
+.bx-in-pg{margin:2px 0 8px!important;font-size:14px;font-weight:600}.bx-in-pg a{color:var(--r)}
 .bx-in-src{font-size:12px!important;color:#64748b!important;margin-top:-4px!important}.bx-in-src a{color:inherit;text-decoration:underline}
 .bght-upd{margin:-6px 0 16px;font-size:12.5px;color:#64748b}
 .bght-hero{position:relative;background:#f3f1ee;overflow:hidden}
@@ -797,12 +798,13 @@ function lightTip(b){var cs=CA.filter(function(c){return c[0]===b}),cnt={},ord=[
  var t=top.length?'Trong các bài lắp xe '+esc(b)+' của thư viện, mẫu xuất hiện nhiều là '+top.map(function(p){return '<b>'+esc(p)+'</b>'}).join(' và '):'';
  if(small.length)t+=(t?'; ':'')+'bản 2.0 inch <b>X-Light F10 2.0 New</b> đã lắp trên '+small.slice(0,3).map(esc).join(', ');
  return t+'. Đây là thống kê bài trong thư viện, không thay cho bước kiểm xe.'}
+var BPAGE={"VinFast":"https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast"};
 var ISRC={"Toyota":"https://www.toyota.com.vn","VinFast":"https://vinfastauto.com/vn_vi","Ford":"https://www.ford.com.vn","Honda":"https://www.honda.com.vn/o-to","Hyundai":"https://hyundai.thanhcong.vn","Kia":"https://kiavietnam.com.vn","Mazda":"https://mazdamotors.vn","Mitsubishi":"https://www.mitsubishi-motors.com.vn","BMW":"https://www.bmw.vn","Lexus":"https://www.lexus.com.vn","Suzuki":"https://suzuki.com.vn","Nissan":"https://www.nissanvietnam.vn","Peugeot":"https://peugeotvietnam.vn","Volkswagen":"https://volkswagenvietnam.vn","Audi":"https://www.audi.vn","Land Rover":"https://www.landrover.com","Porsche":"https://www.porsche.com/vietnam/","Isuzu":"https://www.isuzu-vietnam.com","Jeep":"https://www.jeep.com"};
 function brandIntro(){var el=$('bx-intro');if(!selB||(($('bx-q')||{}).value||'').trim()){el.hidden=true;return}var b=selB,cs=CASES.filter(function(c){return c[0]===b}),n=(LINEUP[b]||[]).length,pr=[];
  cs.forEach(function(c){var k=c[2].replace(/ \d{4}K$/,'');if(pr.indexOf(k)<0)pr.push(k)});
  var gd=[];C.forEach(function(c){if(c[0]===b){if(c[7])gd.push(['https://auto365.vn/'+c[3],c[5]]);else if(GUIDE[c[5]])gd.push(['https://auto365.vn/'+GUIDE[c[5]],c[5]])}});
  var src=ISRC[b]?'Nguồn: dải xe theo website chính thức '+esc(b)+' (<a href="'+ISRC[b]+'" target="_blank" rel="noopener nofollow">'+ISRC[b].replace(/^https:\/\/(www\.)?/,'').replace(/\/$/,'')+'</a>), tra cứu 19/10/2026.':'Nguồn: các mẫu xe từng được phân phối chính hãng tại Việt Nam, Auto365 tổng hợp 19/10/2026.';
- var t='<h3 class="bx-in-h">'+logo(b)+esc(b)+'</h3><p>'+(INTRO[b]||'')+'</p><p class="bx-in-src">'+src+'</p><p class="bx-in-l"><b class="bx-in-lt">Gợi ý ánh sáng:</b> '+lightTip(b)+'</p>'+(gd.length?'<p class="bx-in-g">Bài tư vấn bi gầm: '+gd.map(function(g){return '<a href="'+g[0]+'">'+esc(b)+' '+esc(g[1])+'</a>'}).join(' · ')+'</p>':'');
+ var t='<h3 class="bx-in-h">'+logo(b)+esc(b)+'</h3><p>'+(INTRO[b]||'')+'</p><p class="bx-in-src">'+src+'</p>'+(BPAGE[b]?'<p class="bx-in-pg"><a href="'+BPAGE[b]+'">Xem trang bi gầm '+esc(b)+' →</a></p>':'')+'<p class="bx-in-l"><b class="bx-in-lt">Gợi ý ánh sáng:</b> '+lightTip(b)+'</p>'+(gd.length?'<p class="bx-in-g">Bài tư vấn bi gầm: '+gd.map(function(g){return '<a href="'+g[0]+'">'+esc(b)+' '+esc(g[1])+'</a>'}).join(' · ')+'</p>':'');
  el.innerHTML=t;el.hidden=false}
 $('bx-more').addEventListener('click',function(){showAll=true;filterModels()});
 filterModels();
