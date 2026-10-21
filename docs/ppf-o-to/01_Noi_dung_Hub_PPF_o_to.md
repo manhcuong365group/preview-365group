@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `171cf267a83edfc4a32cde7f5db7e9002ee3fb47d74f34490b9558ac13653c6d`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `0cfb5efd9ba58fc8ebffa57855914355bec2620062ef4a4a1dc4750bf3793fd7`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (19/10/2026) · Cập nhật 20/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (19/10/2026) · Cập nhật 21/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -139,9 +139,9 @@ Kiểm tra mép phim, góc bo trước bàn giaoVinFast VF 8 · 3M 50 Gloss
 
 Những điểm kỹ thuật quyết định PPF bảo vệ tốt hay không — tổng hợp từ cẩm nang và hồ sơ thi công của Auto365.
 
-**Chọn phạm vi dán theo nhu cầu**
-
 VinFast VF 8: phạm vi mở rộng sang cửa và hông xe (hồ sơ).
+
+**Chọn phạm vi dán theo nhu cầu**
 
 _Hướng xem xét phạm vi dán PPF theo tình huống_
 
@@ -155,9 +155,9 @@ _Hướng xem xét phạm vi dán PPF theo tình huống_
 
 Bảng là hướng kiểm tra, không phải kết luận một dòng phim phù hợp mọi xe. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
 
-**PPF TPU, TPH và PVC khác nhau thế nào?**
-
 Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (hồ sơ).
+
+**PPF TPU, TPH và PVC khác nhau thế nào?**
 
 Phim bảo vệ sơn trên thị trường thường được gọi theo ba nhóm vật liệu. Các dòng 3M PPF và AX Film PPF tại Auto365 công bố nền TPU/polyurethane theo tài liệu của hãng hoặc trang sản phẩm. Bảng dưới là xu hướng chung để tham khảo, không thay thông số của từng dòng phim.
 
@@ -173,9 +173,9 @@ _So sánh vật liệu PPF: TPU, TPH và PVC_
 
 Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)). Mức độ cụ thể khác nhau theo từng dòng phim.
 
-**Chọn dòng phim: 3M hay AX Film, độ dày, bề mặt**
-
 Ford Ranger chọn AX Film PPF G Series toàn xe (hồ sơ).
+
+**Chọn dòng phim: 3M hay AX Film, độ dày, bề mặt**
 
 - 50 Gloss—
 - 100 Gloss7.5 mil
@@ -193,9 +193,9 @@ Bề mặtTrong suốt bóng giữ màu sơn zin; vân carbon tạo hiệu ứng
 
 Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim, vị trí dán và thời hạn; đối chiếu tên dòng phim trên phiếu với báo giá.
 
-**Cần kiểm tra gì trên xe trước khi dán?**
-
 Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi dán 3M 50 Gloss (hồ sơ).
+
+**Cần kiểm tra gì trên xe trước khi dán?**
 
 - Tình trạng sơn: PPF không che được vết xước sâu, sơn bong, rỗ — cần đánh bóng/xử lý trước. Xước dăm nhẹ có thể giảm thấy rõ sau khi dán nhưng không mất hẳn (case Mazda CX-5).
 - Sơn đã sửa chữa/sơn lại: độ bám của sơn sửa có thể kém hơn sơn zin, ảnh hưởng khi bóc phim sau này — cần báo kỹ thuật viên.
@@ -203,23 +203,25 @@ Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi d�
 - Tem, decal nguyên bản: cân nhắc khi dán phủ lên (Có nên dán PPF lên tem/decal?).
 - Radar, cảm biến, camera: vùng cảm biến ở cản trước/sau cần chừa hoặc xử lý đúng cách (Dán PPF gần radar, cảm biến).
 
-**Nhận xe sau khi dán: nghiệm thu thế nào?**
-
 BMW 530i: kiểm tra gương, tai xe sau khi hoàn thiện (hồ sơ).
+
+**Nhận xe sau khi dán: nghiệm thu thế nào?**
 
 - Xem xe dưới ánh sáng xiên (đèn pin, nắng chiếu nghiêng) để phát hiện bọt khí, bụi kẹt, vết kéo keo — đặc biệt trên xe màu đen (PPF trên xe màu đen).
 - Kiểm tra mép phim tại cạnh capo, hốc cửa, viền đèn: mép phải sát, không nhấc.
 - Một vài vệt hơi nước nhỏ dưới phim có thể cần thời gian để keo ổn định — hỏi kỹ thuật viên thời gian theo dõi và lịch hẹn kiểm tra lại.
 - Nhận phiếu bảo hành ghi rõ dòng phim, vị trí dán, thời hạn bảo hành.
 
-**PPF bị hằn, xước, rách: xử lý và khi nào thay?**
-
 Phiếu bảo hành 3M PPF 50 Gloss của Toyota Camry: ghi dòng phim, vị trí, thời hạn (hồ sơ).
+
+**PPF bị hằn, xước, rách: xử lý và khi nào thay?**
 
 - Vết hằn do va quệt khác vết xước trên bề mặt phim: xước xoáy nhẹ có thể tự phục hồi khi gặp nhiệt, vết hằn sâu thì không (Vết hằn và vết xước trên PPF).
 - Rách, thủng cục bộ: thường có thể thay riêng một panel thay vì dán lại toàn xe (Khi nào thay riêng một panel?).
 - Dấu hiệu nên thay PPF cũ: ố vàng, mờ đục, nứt bề mặt, bong mép kéo dài (8 dấu hiệu nên thay PPF cũ).
 - Bảo hành theo từng dòng phim, ghi trên phiếu bảo hành; hư hỏng do va chạm, tai nạn thường không thuộc phạm vi bảo hành.
+
+PPF trong suốt giữ màu sơn ghi trên đăng ký — Toyota Camry 3M 50 Gloss (hồ sơ).
 
 **Dán PPF màu, wrap đổi màu có phải đăng ký lại không?**
 
@@ -312,7 +314,7 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 20/10/2026
+Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 21/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
