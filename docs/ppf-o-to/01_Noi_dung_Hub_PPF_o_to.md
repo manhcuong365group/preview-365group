@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b41011d1a84c7bea49eb7eb33de301666a1406d07788f8e38a6436512e3972b2`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8e16320aee8cba991df3f6e3e53e213076333b854a5c2b4db741cba6d3d1683f`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -139,25 +139,25 @@ Kiểm tra mép phim, góc bo trước bàn giaoVinFast VF 8 · 3M 50 Gloss
 
 Những điểm kỹ thuật quyết định PPF bảo vệ tốt hay không — tổng hợp từ cẩm nang và hồ sơ thi công của Auto365.
 
-VinFast VF 8: phạm vi mở rộng sang cửa và hông xe (hồ sơ).
-
 **Chọn phạm vi dán theo nhu cầu**
+
+VinFast VF 8: phạm vi mở rộng sang cửa và hông xe (hồ sơ).
 
 _Hướng xem xét phạm vi dán PPF theo tình huống_
 
-| Tình huống | Hướng xem xét | Cần thống nhất trước báo giá |
-| --- | --- | --- |
-| Xe mới, muốn bảo vệ nhiều panel | So sánh dán toàn xe với các vùng ưu tiên | Panel có/không, bề mặt, ngân sách, thời gian lưu xe |
-| Đi đường trường, lo đá văng | Phương án mặt trước hoặc panel ưu tiên | Danh sách chi tiết; vùng đèn, cảm biến phù hợp vật liệu |
-| Chủ yếu đi phố, ngân sách giới hạn | Từng chi tiết dễ va quệt | Vị trí thật sự cần dán; không mặc định phải toàn xe |
-| Sơn sửa hoặc nền đang có lỗi | Kiểm tra nền trước khi quyết định dán | Độ ổn định sơn, xử lý nền, giới hạn khi bóc phim |
-| Quan tâm bề mặt vân carbon | Xem mẫu thực tế của dòng carbon đang bán | Hiệu ứng, vị trí phù hợp, yêu cầu liên quan màu xe |
+| Tình huống | Hướng xem xét |
+| --- | --- |
+| Xe mới, muốn bảo vệ nhiều panel | So sánh dán toàn xe với các vùng ưu tiên |
+| Đi đường trường, lo đá văng | Phương án mặt trước hoặc panel ưu tiên |
+| Chủ yếu đi phố, ngân sách giới hạn | Từng chi tiết dễ va quệt |
+| Sơn sửa hoặc nền đang có lỗi | Kiểm tra nền trước khi quyết định dán |
+| Quan tâm bề mặt vân carbon | Xem mẫu thực tế của dòng carbon đang bán |
 
 Bảng là hướng kiểm tra, không phải kết luận một dòng phim phù hợp mọi xe. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
 
-Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (hồ sơ).
-
 **PPF TPU, TPH và PVC khác nhau thế nào?**
+
+Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (hồ sơ).
 
 Phim bảo vệ sơn trên thị trường thường được gọi theo ba nhóm vật liệu. Các dòng 3M PPF và AX Film PPF tại Auto365 công bố nền TPU/polyurethane theo tài liệu của hãng hoặc trang sản phẩm. Bảng dưới là xu hướng chung để tham khảo, không thay thông số của từng dòng phim.
 
@@ -173,9 +173,9 @@ _So sánh vật liệu PPF: TPU, TPH và PVC_
 
 Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)). Mức độ cụ thể khác nhau theo từng dòng phim.
 
-Ford Ranger chọn AX Film PPF G Series toàn xe (hồ sơ).
-
 **Chọn dòng phim: 3M hay AX Film, độ dày, bề mặt**
+
+Ford Ranger chọn AX Film PPF G Series toàn xe (hồ sơ).
 
 - 50 Gloss—
 - 100 Gloss7.5 mil
@@ -193,9 +193,9 @@ Bề mặtTrong suốt bóng giữ màu sơn zin; vân carbon tạo hiệu ứng
 
 Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim, vị trí dán và thời hạn; đối chiếu tên dòng phim trên phiếu với báo giá.
 
-Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi dán 3M 50 Gloss (hồ sơ).
-
 **Cần kiểm tra gì trên xe trước khi dán?**
+
+Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi dán 3M 50 Gloss (hồ sơ).
 
 - Tình trạng sơn: PPF không che được vết xước sâu, sơn bong, rỗ — cần đánh bóng/xử lý trước. Xước dăm nhẹ có thể giảm thấy rõ sau khi dán nhưng không mất hẳn (case Mazda CX-5).
 - Sơn đã sửa chữa/sơn lại: độ bám của sơn sửa có thể kém hơn sơn zin, ảnh hưởng khi bóc phim sau này — cần báo kỹ thuật viên.
@@ -203,27 +203,27 @@ Mazda CX-5: xước dăm trước xử lý → sau hiệu chỉnh → sau khi d�
 - Tem, decal nguyên bản: cân nhắc khi dán phủ lên (Có nên dán PPF lên tem/decal?).
 - Radar, cảm biến, camera: vùng cảm biến ở cản trước/sau cần chừa hoặc xử lý đúng cách (Dán PPF gần radar, cảm biến).
 
-BMW 530i: kiểm tra gương, tai xe sau khi hoàn thiện (hồ sơ).
-
 **Nhận xe sau khi dán: nghiệm thu thế nào?**
+
+BMW 530i: kiểm tra gương, tai xe sau khi hoàn thiện (hồ sơ).
 
 - Xem xe dưới ánh sáng xiên (đèn pin, nắng chiếu nghiêng) để phát hiện bọt khí, bụi kẹt, vết kéo keo — đặc biệt trên xe màu đen (PPF trên xe màu đen).
 - Kiểm tra mép phim tại cạnh capo, hốc cửa, viền đèn: mép phải sát, không nhấc.
 - Một vài vệt hơi nước nhỏ dưới phim có thể cần thời gian để keo ổn định — hỏi kỹ thuật viên thời gian theo dõi và lịch hẹn kiểm tra lại.
 - Nhận phiếu bảo hành ghi rõ dòng phim, vị trí dán, thời hạn bảo hành.
 
-Phiếu bảo hành 3M PPF 50 Gloss của Toyota Camry: ghi dòng phim, vị trí, thời hạn (hồ sơ).
-
 **PPF bị hằn, xước, rách: xử lý và khi nào thay?**
+
+Phiếu bảo hành 3M PPF 50 Gloss của Toyota Camry: ghi dòng phim, vị trí, thời hạn (hồ sơ).
 
 - Vết hằn do va quệt khác vết xước trên bề mặt phim: xước xoáy nhẹ có thể tự phục hồi khi gặp nhiệt, vết hằn sâu thì không (Vết hằn và vết xước trên PPF).
 - Rách, thủng cục bộ: thường có thể thay riêng một panel thay vì dán lại toàn xe (Khi nào thay riêng một panel?).
 - Dấu hiệu nên thay PPF cũ: ố vàng, mờ đục, nứt bề mặt, bong mép kéo dài (8 dấu hiệu nên thay PPF cũ).
 - Bảo hành theo từng dòng phim, ghi trên phiếu bảo hành; hư hỏng do va chạm, tai nạn thường không thuộc phạm vi bảo hành.
 
-PPF trong suốt giữ màu sơn ghi trên đăng ký — Toyota Camry 3M 50 Gloss (hồ sơ).
-
 **Dán PPF màu, wrap đổi màu có phải đăng ký lại không?**
+
+PPF trong suốt giữ màu sơn ghi trên đăng ký — Toyota Camry 3M 50 Gloss (hồ sơ).
 
 - PPF trong suốt: không làm đổi màu sơn ghi trên chứng nhận đăng ký xe, không phát sinh thủ tục đăng ký.
 - PPF màu, wrap đổi màu chủ đạo của xe: thuộc trường hợp "xe thay đổi màu sơn" phải đổi chứng nhận đăng ký xe (khoản 2 Điều 18 Thông tư 79/2024/TT-BCA); khi làm thủ tục, chủ xe mang xe đến cơ quan đăng ký để kiểm tra (khoản 1 Điều 20).

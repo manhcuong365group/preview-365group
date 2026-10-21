@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b41011d1a84c7bea49eb7eb33de301666a1406d07788f8e38a6436512e3972b2` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8e16320aee8cba991df3f6e3e53e213076333b854a5c2b4db741cba6d3d1683f` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -23,7 +23,7 @@
 | og:image | `https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/bmw-330i-dan-ppf-3m-1791785952.webp` |
 | Robots | Preview `noindex,nofollow` → production đổi `index,follow` |
 
-Thứ tự H2: Sản phẩm PPF → Xe thực tế → Vì sao → (Trụ sở + 90+ chi nhánh) → PPF là gì / Dán toàn xe hay từng phần / Quy trình → Kiến thức (7 thẻ mở sẵn, chia 50:50 ảnh–chữ xen kẽ; thẻ đầu là bảng chọn phạm vi theo nhu cầu) → So sánh PPF–ceramic–wrap → Chăm sóc → Tư vấn → Video → Cẩm nang → FAQ (7) → CTA.
+Thứ tự H2: Sản phẩm PPF → Xe thực tế → Vì sao → (Trụ sở + 90+ chi nhánh) → PPF là gì / Dán toàn xe hay từng phần / Quy trình → Kiến thức (7 mục accordion, mục đầu mở sẵn; bên trong chia 50:50 ảnh–chữ) → So sánh PPF–ceramic–wrap → Chăm sóc → Tư vấn → Video → Cẩm nang → FAQ (7) → CTA.
 
 Khung nội dung tối đa 1296px; H1 30px, H2 20px, chữ thân 15px (theo trang bi gầm X-Light).
 
