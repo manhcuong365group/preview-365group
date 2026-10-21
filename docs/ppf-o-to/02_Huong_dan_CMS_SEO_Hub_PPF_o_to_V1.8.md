@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `061ad20f0b65f25c12b8d4f472c428907aea4cf418da729e0f025acb5b5f3f5e` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `9cefc7f73a5f0e993c7bf0cff8a81c19531bc634e33a7ca3d2fff796036d0b4c` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -71,6 +71,10 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 | PPF19-10 | — | Đường tới toàn bộ catalog; mapping /ppfwrap-film; trang Wrap trước 301 |
 | PPF19-11 | Bộ 01–03 cùng SHA-256. Hotline: 9 PDP PPF + /ppfwrap-film đã đổi khung "Tư vấn lắp cho xe" và dòng "Hoặc gọi ngay" sang 0365 365 365, thẻ trụ sở thêm dòng "Phim cách nhiệt · PPF" (kiểm 20/10/2026; 2 mã AX Wrap kiểm thử cũng đúng) | — |
 | PPF19-12 | Ghi ở mục "Trước khi đăng production" | IT bỏ khối nội bộ khỏi HTML xuất bản |
+
+## 5c. Link nội bộ (21/10/2026)
+
+Đã đổi 8 link chỉ chạy trên preview sang URL production: `/chi-nhanh`, `/tac-gia/dang-minh-hoang`, `/phim-cach-nhiet` (kiểm 200, đúng trang). `reviewedBy` có `jobTitle` và `url` hồ sơ tác giả.
 
 ## 6. Form tư vấn
 
