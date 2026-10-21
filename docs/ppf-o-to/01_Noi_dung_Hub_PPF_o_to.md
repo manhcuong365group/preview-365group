@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `f509281400bd60664bc6998aa6d28c071b321b31713b4ad67661167470523ed3`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `405be474e3cf384165a455fd733ea9f83ce59398a2324a0ddb0ee8917e93c3f6`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -165,25 +165,25 @@ _So sánh vật liệu PPF: TPU, TPH và PVC_
 
 Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)). Mức độ cụ thể khác nhau theo từng dòng phim.
 
-**Chọn dòng phim: 3M hay AX Film, độ dày, bề mặt**
+**Chọn PPF dựa trên những tiêu chí nào?**
 
 Ford Ranger chọn AX Film PPF G Series toàn xe (hồ sơ).
 
-- 50 Gloss—
-- 100 Gloss7.5 mil
-- 150 Gloss7.5 mil
-- 200 Gloss7.9 mil
+Mỗi hãng có nhiều dòng PPF ở các phân khúc khác nhau. Khi so sánh, nên đặt các dòng phim cạnh nhau theo 6 tiêu chí sau thay vì chỉ nhìn giá hoặc tên thương hiệu.
 
-- G Series7.5 mil
-- K Series Ver 28.0 mil
-- X Series Ver 29.0 mil
-- Carbon Fiber8.0 mil
+Chọn phim có thương hiệu, tài liệu kỹ thuật (TDS) và kênh phân phối rõ ràng; đối chiếu tên dòng phim trên hộp, báo giá và phiếu bảo hành.
 
-Độ dày1 mil = 0,0254 mm; 3M Series 150 Gloss: 7.5 mil (0,19 mm) gồm keo theo TDS hãng. Độ dày là một dữ kiện để đối chiếu cùng cấu tạo, lớp phủ và hướng dẫn của từng dòng, không dùng riêng để xếp hạng khả năng bảo vệ. Đọc thêm
+Phổ biến khoảng 6–10 mil (1 mil = 0,0254 mm). Phim dày chịu va đập tốt hơn nhưng cứng hơn khi ôm chi tiết cong; nên xem cùng cấu tạo, không chỉ so số mil.
 
-Bề mặtTrong suốt bóng giữ màu sơn zin; vân carbon tạo hiệu ứng carbon trên capo, gương, ốp. Nên xem mẫu thực tế trên xe.
+Quyết định khả năng tự phục hồi vết xước nhẹ khi gặp nhiệt, kỵ nước, chống bám bẩn và hạn chế ố vàng — khác nhau theo từng dòng.
 
-Phim chính hãngNhận phiếu bảo hành ghi rõ dòng phim, vị trí dán và thời hạn; đối chiếu tên dòng phim trên phiếu với báo giá.
+Bóng giữ màu sơn zin; mờ (matte) đổi sang bề mặt mờ; vân carbon hoặc màu thay đổi ngoại hình. Nên xem mẫu thực tế trên xe trước khi chọn.
+
+Keo tốt giúp phim bám chắc, ít nhấc mép và bóc ra không để lại keo khi cần thay; sơn sửa lại cần kiểm tra kỹ trước khi dán.
+
+Xem thời hạn và phạm vi (ố vàng, nứt, bong tróc, dính keo) ghi trên phiếu; hư hỏng do va chạm thường không thuộc bảo hành.
+
+Thông số từng dòng 3M PPF và AX Film PPF tại Auto365 xem ở mục Sản phẩm. Đọc thêm: Độ dày PPF ảnh hưởng thế nào đến bảo vệ và thi công?
 
 **Cần kiểm tra gì trên xe trước khi dán?**
 
