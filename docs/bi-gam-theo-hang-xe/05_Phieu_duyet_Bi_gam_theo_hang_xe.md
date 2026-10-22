@@ -51,3 +51,4 @@ Chủ quản xác nhận 21/10/2026: anh Nguyễn Quang Đạo đã duyệt toà
 Chủ quản xác nhận 22/10/2026: anh Nguyễn Quang Đạo đã duyệt đợt 7 (sapo "trang tra cứu mẫu đèn đã lắp thực tế trên từng dòng xe", tạm bỏ link VF7). `lastReviewed` = 2026-10-22. Không còn mục nội dung chờ duyệt.
 
 QA 22/10/2026: lead test POST https://auto365.vn/api/leads kèm car_model="Lexus RX", service="Bi gầm theo hãng xe - Lexus RX" → {"success":true, lead_id 223, test:true}. Chờ CRM xác nhận thấy dòng xe trong lead 223 rồi xoá lead 223 (và 205).
+CRM xác nhận 22/10/2026 (chủ quản): đã nhận lead 223. Còn: xác nhận lead có hiện dòng xe "Lexus RX"; xoá lead test 223 và 205.
