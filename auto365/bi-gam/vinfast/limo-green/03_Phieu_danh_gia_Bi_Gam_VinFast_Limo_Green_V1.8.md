@@ -33,3 +33,18 @@
 - Nhiệt màu theo quy tắc từng mẫu: 301 V2, F10 Pro V2, AES SV 3.0 Max chuyển 3 nhiệt màu trên cùng bộ đèn; F10 Turbo V2 có 3 phiên bản màu; GTR G1 Turbo V2 cố định Cos 4800K / Pha 4300K; AES SV 3.0 Pro cố định 4800K; các mẫu còn lại (gồm F10 New, F10 2.0 New) xác nhận theo mã khi báo giá.
 - "Đã lắp thực tế trên Limo Green" chỉ ghi cho X-Light F10 New (2025) và X-Light F10 2.0 New (có bài case).
 - Không có khung tóm tắt case, không có ghi chú phạm vi bằng chứng dưới tiêu đề video/case.
+
+
+## Sửa theo tái kiểm 21/10 (22/10/2026)
+
+- LG04: nhóm Tiết kiệm gợi ý theo giá thiết bị thấp: F10 New 4,3tr (có case Limo Green), Fogway Gen 1 4tr, Titan 301 3,5tr; câu tư vấn ghi rõ tổng chi phí còn pát/công. 301 V2 và AES SV 3.0 Pro bỏ khỏi nhóm này.
+- LG05: thumbnail video đổi sang hqdefault, có ảnh Limo Green dự phòng khi ảnh ngoài không tải.
+- G3: bỏ lý do trừ điểm "chỉ có 1 video" — V1.8 không đặt quota video. Bằng chứng trực tiếp: 2 bài case + 1 video Limo Green.
+- LG01/LG02: tương thích cả 2.0 và 3.0 inch do user xác nhận 21/10/2026 (anh Đạo duyệt); Auto365 là đại lý X-Light, GTR, AES (user xác nhận 12 và 14/10/2026). Giữ claim, nguồn ghi ở phiếu 04.
+- LG06/LG07 (domain cuối, form/CRM, bỏ khối nội bộ khi đăng) thuộc SEO/IT khi đưa lên production.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,4 | 9,2 | 9,5 | 9,8 | 9,6 | 9,1 | 9,4 | 9,7 | 4,7 | 4,8 | 4,7 | 4,5 |
+
+C 28,1 · S 28,5 · G 23,8 · U 14,0 → **94,4/100 — CHƯA ĐẠT** (GEO 23,8 đạt ngưỡng sát; tổng thiếu 0,6). Còn trừ: tóm tắt phương án lắp riêng Limo Green ở khối quyết định, domain production chưa chốt.
