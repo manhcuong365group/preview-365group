@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `f868e5fdb4dc1ad61ac7e3f4f740e7642d3c657ed73edbcbb15a0e9be8e83ceb`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ff371084dcc2a0c73cdeb8b8e901732b711b161689dc5cf391464c69f6636f4a`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -117,14 +117,16 @@ Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Rev A
 
 Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn phạm vi thi công phù hợp.
 
-## Quy trình thi công PPF  `#kien-thuc`
+## Quy trình thi công PPF  `#quy-trinh`
 
-1. 01Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí
-2. 02Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn
-3. 03Đo đạc & chuẩn bị phimCắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp
-4. 04Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
-5. 05Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
-6. 06Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
+6 bước từ lúc nhận xe đến khi bàn giao.
+
+1. 1Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí
+2. 2Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn
+3. 3Đo đạc & chuẩn bị phimCắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp
+4. 4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
+5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
+6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
 
 ## Kiến thức cần nắm trước khi dán PPF  `#kien-thuc-ppf`
 

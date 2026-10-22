@@ -406,6 +406,16 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 .faq{background:none;border:0;border-radius:0;padding:0;border-top:1px solid #e3e4e6}.faq details:last-child{border-bottom:1px solid #e3e4e6}@media(max-width:760px){.faq{padding:0}}
 .axGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.axIt{background:#fff;border:1px solid var(--l);border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:4px}.axIt span{font-size:13.5px;color:var(--m)}.axIt b{font-size:16px;color:var(--r)}@media(max-width:1080px){.axGrid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:760px){.axGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.axIt{padding:10px 12px}.axIt b{font-size:15px}}
 .kFull .kA2in{grid-template-columns:1fr}.kFull .axGrid{margin:4px 0 12px}
+.tri.tri2{grid-template-columns:1fr 1.15fr}
+.qtGrid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.qt{background:#16181c;border-radius:12px;overflow:hidden;color:#fff;display:flex;flex-direction:column}
+.qt img{display:block;width:100%;height:auto;aspect-ratio:720/348;object-fit:cover}
+.qtB{padding:14px 16px 16px;flex:1}
+.qtB b{display:flex;align-items:center;gap:10px;font-size:15.5px;text-transform:uppercase;letter-spacing:.2px}
+.qtB b span{flex:none;width:30px;height:30px;border-radius:50%;background:var(--r);display:grid;place-items:center;font-size:15px}
+.qtB p{margin:10px 0 0;padding:10px 12px;background:#22252a;border-radius:8px;font-size:13.5px;line-height:1.55;color:#d6d8dc}
+@media(max-width:1080px){.qtGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.tri.tri2{grid-template-columns:1fr}.qtGrid{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.qtGrid::-webkit-scrollbar{display:none}.qt{scroll-snap-align:start}}
 </style>
 </head>
 <body>
@@ -629,7 +639,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </section>
 
 <section class="soft" id="kien-thuc">
-<div class="c tri">
+<div class="c tri tri2">
   <div>
     <h2>PPF là gì?</h2>
     <p>PPF (Paint Protection Film) là lớp phim bảo vệ sơn, giúp giảm tác động của trầy xước nhẹ, đá văng, môi trường và tia UV lên sơn, đồng thời giữ vẻ đẹp nguyên bản cho xe. Cấu tạo phổ biến gồm 4 lớp:</p>
@@ -663,21 +673,23 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
     </div>
     
   </div>
-  <div>
-    <h2>Quy trình thi công PPF</h2>
-    <ol class="steps">
-      <li><span class="n">01</span><div><b>Tiếp nhận &amp; kiểm tra xe</b><span>Kiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí</span></div></li>
-      <li><span class="n">02</span><div><b>Vệ sinh &amp; xử lý bề mặt</b><span>Rửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn</span></div></li>
-      <li><span class="n">03</span><div><b>Đo đạc &amp; chuẩn bị phim</b><span>Cắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp</span></div></li>
-      <li><span class="n">04</span><div><b>Thi công dán PPF</b><span>Định vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí</span></div></li>
-      <li><span class="n">05</span><div><b>Hoàn thiện &amp; xử lý chi tiết</b><span>Cố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu</span></div></li>
-      <li><span class="n">06</span><div><b>Kiểm tra, bàn giao &amp; hướng dẫn</b><span>Kiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành</span></div></li>
-    </ol>
-  </div>
 </div>
 </section>
 
-<section id="kien-thuc-ppf">
+<section id="quy-trinh">
+<div class="c">
+  <div class="head"><div><h2>Quy trình thi công PPF</h2><p>6 bước từ lúc nhận xe đến khi bàn giao.</p></div></div>
+  <ol class="qtGrid">
+    <li class="qt"><img src="hinh/quy-trinh-ppf-1.webp" alt="Minh họa bước 1: Tiếp nhận và kiểm tra xe" width="720" height="348" loading="lazy" decoding="async"><div class="qtB"><b><span>1</span>Tiếp nhận &amp; kiểm tra xe</b><p>Kiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí</p></div></li>
+    <li class="qt"><img src="hinh/quy-trinh-ppf-2.webp" alt="Minh họa bước 2: Vệ sinh và xử lý bề mặt" width="720" height="348" loading="lazy" decoding="async"><div class="qtB"><b><span>2</span>Vệ sinh &amp; xử lý bề mặt</b><p>Rửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn</p></div></li>
+    <li class="qt"><img src="hinh/quy-trinh-ppf-3.webp" alt="Minh họa bước 3: Đo đạc và chuẩn bị phim" width="720" height="348" loading="lazy" decoding="async"><div class="qtB"><b><span>3</span>Đo đạc &amp; chuẩn bị phim</b><p>Cắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp</p></div></li>
+    <li class="qt"><img src="hinh/quy-trinh-ppf-4.webp" alt="Minh họa bước 4: Thi công dán PPF" width="720" height="348" loading="lazy" decoding="async"><div class="qtB"><b><span>4</span>Thi công dán PPF</b><p>Định vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí</p></div></li>
+    <li class="qt"><img src="hinh/quy-trinh-ppf-5.webp" alt="Minh họa bước 5: Hoàn thiện và xử lý chi tiết" width="720" height="348" loading="lazy" decoding="async"><div class="qtB"><b><span>5</span>Hoàn thiện &amp; xử lý chi tiết</b><p>Cố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu</p></div></li>
+    <li class="qt"><img src="hinh/quy-trinh-ppf-6.webp" alt="Minh họa bước 6: Kiểm tra, bàn giao và hướng dẫn" width="720" height="348" loading="lazy" decoding="async"><div class="qtB"><b><span>6</span>Kiểm tra, bàn giao &amp; hướng dẫn</b><p>Kiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành</p></div></li>
+  </ol>
+</div>
+</section>
+<section class="soft" id="kien-thuc-ppf">
 <div class="c">
   <div class="head"><div><h2>Kiến thức cần nắm trước khi dán PPF</h2><p>PPF bảo vệ tốt hay không phụ thuộc vào vật liệu, cách chọn phim và tay nghề thi công. Dưới đây là những điều chủ xe nên biết.</p></div><a class="more" href="#cam-nang">Đọc cẩm nang →</a></div>
   <div class="xk">
@@ -730,7 +742,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="chuyen-gia">
+<section id="chuyen-gia">
 <div class="c">
   <div class="head"><div><h2>Góc chuyên gia</h2><p>Người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.</p></div></div>
   <div class="exGrid">
@@ -757,7 +769,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="so-sanh">
+<section class="soft" id="so-sanh">
 <div class="c">
   <div class="head"><div><h2>PPF, phủ ceramic và dán wrap khác nhau ở đâu?</h2><p>Ba dịch vụ hay bị nhầm với nhau, nhưng mỗi loại giải quyết một nhu cầu riêng.</p></div></div>
   <div class="tbl"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
@@ -774,7 +786,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="cham-soc">
+<section id="cham-soc">
 <div class="c">
   <div class="head"><div><h2>Chăm sóc sau khi dán PPF</h2><p>Vài thói quen nhỏ giúp phim bền, trong và đẹp lâu hơn.</p></div></div>
   <div class="care">
@@ -785,7 +797,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="tu-van">
+<section class="soft" id="tu-van">
 <div class="c">
   <div class="leadWrap">
     <figure class="leadImg"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ppf-duoc-can-chinh-tren-khu-vuc-cua-va-hong-xe-truoc-khi-hoan-thien-be-mat-img_6a8c0992e944c4.64254953.webp" alt="Kỹ thuật viên căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt" width="800" height="533" loading="lazy"><figcaption>Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.</figcaption></figure>
@@ -808,7 +820,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="video">
+<section id="video">
 <div class="c">
   <div class="head"><div><h2>Video thực tế</h2><p>Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả video →</a></div>
   <div class="vids">
@@ -820,7 +832,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="cam-nang">
+<section class="soft" id="cam-nang">
 <div class="c">
   <div class="head"><div><h2>Cẩm nang PPF &amp; Wrap</h2></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả bài viết →</a></div>
   <div class="chipRow" role="group" aria-label="Lọc bài theo chủ đề"><button class="ctab" type="button" data-tag="" aria-pressed="true">Tất cả <em>12</em></button><button class="ctab" type="button" data-tag="Kiến thức" aria-pressed="false">Kiến thức <em>2</em></button><button class="ctab" type="button" data-tag="Trước khi dán" aria-pressed="false">Trước khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Sau khi dán" aria-pressed="false">Sau khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Theo xe" aria-pressed="false">Theo xe <em>2</em></button></div>
@@ -842,7 +854,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="faq">
+<section id="faq">
 <div class="c">
   <div class="head"><div><h2>Câu hỏi thường gặp về dán PPF ô tô</h2></div></div>
   <div class="faq">
@@ -859,7 +871,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="kiem-duyet">
+<section class="soft" id="kiem-duyet">
 <div class="c">
   <div class="rev">
     <div class="box"><span class="ey">Kiểm duyệt kỹ thuật</span><h3 style="margin-top:8px"><a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a></h3><p class="muted" style="margin:0">Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 22/10/2026</p></div>
