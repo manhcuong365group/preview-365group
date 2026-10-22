@@ -53,3 +53,4 @@ Chủ quản xác nhận 22/10/2026: anh Nguyễn Quang Đạo đã duyệt đ�
 QA 22/10/2026: lead test POST https://auto365.vn/api/leads kèm car_model="Lexus RX", service="Bi gầm theo hãng xe - Lexus RX" → {"success":true, lead_id 223, test:true}. Chờ CRM xác nhận thấy dòng xe trong lead 223 rồi xoá lead 223 (và 205).
 CRM xác nhận 22/10/2026 (chủ quản): đã nhận lead 223. Còn: xác nhận lead có hiện dòng xe "Lexus RX"; xoá lead test 223 và 205.
 CRM xác nhận 22/10/2026 (chủ quản): lead 223 hiện dòng xe "Lexus RX" — ngữ cảnh xe từ popup → form → CRM đạt. Còn: xoá lead test 223 và 205.
+Đợt 8 (22/10/2026): VF7 production đã đăng (200) → thêm lại link VF7; link VF3/VF6/VF7 đổi sang URL production.

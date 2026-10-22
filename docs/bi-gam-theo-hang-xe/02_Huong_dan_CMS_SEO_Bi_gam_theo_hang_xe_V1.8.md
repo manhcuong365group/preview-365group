@@ -88,3 +88,5 @@ Trong HTML trang, link VinFast trỏ đường dẫn preview; build đổi sang 
 - Schema: `ItemList dong-xe` 24 mục chọn lọc; `ItemList xe-thuc-te` 97 mục, URL lấy từ `href` của thẻ case (build dừng nếu href rỗng/null/undefined); `ItemList cam-nang` 24 mục.
 - `04` xuất từ registry `P` đầy đủ; `sku_status` 3 trạng thái: phiên bản ghi trong tiêu đề / tên chung xác nhận qua bài gốc / chưa đủ dữ kiện. Export dừng nếu có SKU mà không có slug.
 - **Khi lên production:** xoá hẳn khối `<aside id="bght-internal-check">` và `<script id="bght-internal-check-js">` khỏi HTML đầu ra (không chỉ ẩn), bỏ `noindex`, đổi link VinFast theo bảng mục 7, thêm lại link VF7 khi trang VF7 trả 200.
+
+**Cập nhật 22/10/2026:** VF3, VF6, VF7 production đều trả 200. Thẻ 3 dòng xe dẫn thẳng tới URL production (`https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3|vf6|vf7`), khớp schema; đã thêm lại link VF7. Còn trang này (`/nang-cap-anh-sang-bi-gam/theo-hang-xe`) chờ đăng.
