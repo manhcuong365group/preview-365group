@@ -53,7 +53,7 @@
 .bgvf-nav{display:flex;gap:8px;align-items:center}
 .bgvf-arr{width:36px;height:36px;border-radius:50%;border:1px solid var(--ln);background:#fff;font-size:18px;cursor:pointer;line-height:1}
 .bgvf-arr:hover{border-color:var(--r);color:var(--r)}
-.bgvf-rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.bgvf-rail{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
 .bgvf-rail::-webkit-scrollbar{display:none}
 .bgvf-case{scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;transition:.2s}
 .bgvf-case:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
@@ -97,9 +97,9 @@
 .bgvf-guide .mt{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--mu);flex-wrap:wrap}
 .bgvf-guide .lb{background:#fde8e8;color:var(--r);font-weight:600;padding:2px 8px;border-radius:4px}
 .bgvf-guide .rw{display:flex;align-items:center;gap:10px;justify-content:space-between}
-.bgvf-guide h3{font-size:15px;font-weight:600;margin:0;line-height:1.45}
+.bgvf-guide h3{font-size:14px;font-weight:500;margin:0;line-height:1.45}
 .bgvf-guide:hover h3{color:var(--r)}
-.bgvf-guide i{flex:0 0 36px;height:36px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;color:var(--r);font-style:normal}
+.bgvf-guide i{flex:0 0 30px;height:30px;font-size:13px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;color:var(--r);font-style:normal}
 /* case filter + credit */
 .bgvf-cf{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
 .bgvf-cl{flex:none;font-size:13px;color:var(--mu)}
@@ -108,7 +108,6 @@
 .bgvf-case[hidden]{display:none}
 .bgvf-case .im{position:relative}
 .bgvf-case .tag{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;padding:3px 9px;border-radius:5px}
-.bgvf-m .im:has(.ph){padding:0}.bgvf-m .im img.ph{object-fit:cover;mix-blend-mode:normal}
 .bgvf-cr{font-size:11.5px;color:var(--mu);margin:10px 0 0}
 /* cta */
 .bgvf-cta{background:#12161c url(../vinfast-vf3/hinh/xe-vinfast-vf3.webp) right 6% center/auto 120% no-repeat;border-radius:14px;color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
@@ -132,7 +131,7 @@
 .bgvf-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .bgvf-tabs,.bgvf-cf{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-chip{flex:none}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
 .bgvf-search{width:100%}
-.bgvf-rail{grid-auto-columns:84%}
+.bgvf-rail{grid-auto-columns:84%;grid-template-rows:none}
 .bgvf-nav .bgvf-arr{display:none}
 .bgvf-why{padding:16px}.bgvf-why ul{grid-template-columns:1fr;gap:12px}
 .bgvf-guides{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory}
@@ -168,7 +167,7 @@
   <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></label>
  </div>
  <div class="bgvf-grid" id="bgvf-grid"></div>
- <p class="bgvf-cr">Ảnh Lux A2.0: Rutger van der Maar (CC BY 2.0); ảnh President: Newone (CC BY-SA 4.0), qua Wikimedia Commons.</p>
+ <p class="bgvf-cr">Ảnh Lux A2.0 và President: Newone (CC BY-SA 4.0), qua Wikimedia Commons, đã tách nền.</p>
 </div></section>
 
 <section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
@@ -262,7 +261,7 @@ var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]==
 $('bgvf-n').textContent=M.length;
 $('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
 $('bgvf-grid').innerHTML=M.map(function(m){
- var im=m[2]?'<img'+(m[2].indexOf('hinh/')===0?' class="ph"':'')+' src="'+m[2]+'" alt="VinFast '+esc(m[0])+'" loading="lazy" width="640" height="400">':'<em>VinFast '+esc(m[0])+'</em>';
+ var im=m[2]?'<img src="'+m[2]+'" alt="VinFast '+esc(m[0])+'" loading="lazy" width="640" height="400">':'<em>VinFast '+esc(m[0])+'</em>';
  var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?'Xem hồ sơ bi gầm':'Liên hệ tư vấn')+'</small></b><span class="go">→</span></span>';
  return m[3]?'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">Có hồ sơ</span><span class="im">'+im+'</span>'+bd+'</a>'
   :'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="VinFast '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
