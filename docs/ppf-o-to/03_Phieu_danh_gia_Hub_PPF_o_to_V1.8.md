@@ -63,7 +63,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | G3 | 5 | 4,4 | 4,6 | Câu trích kỹ thuật của anh Đặng Minh Hoàng (duyệt 21/10); ảnh quy trình dẫn về 4 hồ sơ thi công gốc |
 | U1 | 5 | 4,9 | 4,9 | Thẻ Vì sao không còn khoảng trống trên mobile; 375/540/1280px không tràn |
 | U2 | 5 | 4,4 | 4,8 | R21-01: finder giữ q + service=ppf (Quảng Ninh → 8 điểm), nút miền dùng mien= |
-| U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; anh Hoàng duyệt lại toàn bài 22/10. Commercial/CRM còn CX |
+| U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; anh Hoàng duyệt lại toàn bài 22/10; lead test 228 (22/10) CRM đã nhận. Commercial còn CX |
 
 **Tổng tự chấm: C 29,1 · S 29,0 · G 24,0 · U 14,2 → 96,3/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,0 ≥ 23,75. Phần bổ sung sau bản duyệt sáng 22/10 (giá dán lẻ, k07, 2 FAQ, quy trình ảnh thật, định nghĩa PPF) đã được anh Đặng Minh Hoàng xem và duyệt ngày 22/10/2026; cần reviewer tái chấm; chưa nghiệm thu Live.
 
