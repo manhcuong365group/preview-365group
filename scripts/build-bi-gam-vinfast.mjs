@@ -23,6 +23,7 @@ const branch = cut('<section class="bght-sec bght-branch"', /\n<\/div><\/section
   .replace('<h2 class="bght-h2">Hệ thống chi nhánh &amp; tư vấn</h2>', '<span class="bgvf-eb">Hệ thống chi nhánh</span><h2 class="bght-h2">Tìm chi nhánh Auto365 gần bạn</h2>');
 const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s*<\/div><\/section>/)
   .replace(/data-service="[^"]*"/g, 'data-service="Bi gầm VinFast"')
+  .replace(/data-source-page="[^"]*"/g, 'data-source-page="Bi gầm VinFast"')
   .replace('placeholder="VD: Toyota Vios 2021"', 'placeholder="VD: VinFast VF 6 2025"');
 content = content.replace('<!-- @branch -->', () => branch).replace('<!-- @lead -->', () => lead);
 

@@ -19,14 +19,15 @@
 | FAQ 4 câu (hệ thống điện xe điện, dòng đã có hồ sơ, thời gian lắp, đăng kiểm) | Duyệt |
 | 11 case + 8 cẩm nang | Lấy từ bài đã đăng trên auto365.vn |
 
-## Chưa xong
+## Lượt duyệt bổ sung 22/10/2026
 
-| Mục | Ghi chú |
+Chủ quản xác nhận 22/10/2026: anh Nguyễn Quang Đạo đã duyệt khối "Xe VinFast của bạn dùng để làm gì?" (3 nhóm: xe điện đi phố · xe dịch vụ chạy đêm, đi mưa · dòng đời trước, đi tỉnh). Không còn mục nội dung chờ duyệt.
+
+## Form tư vấn
+
+| Mục | Kết quả |
 |---|---|
-| Lead test form tư vấn | Chưa gửi trên trang này |
-
-## Thêm sau lượt duyệt — chờ duyệt bổ sung
-
-| Mục | Nội dung |
-|---|---|
-| Khối "Xe VinFast của bạn dùng để làm gì?" (22/10/2026) | 3 nhóm: xe điện đi phố (chưa cần lắp nếu đèn đủ sáng; ưu tiên màu ánh sáng hợp mắt và ngân sách; đấu nguồn theo giắc zin, không can thiệp pin cao áp) · xe dịch vụ chạy đêm, đi mưa (vùng sáng thấp gần đầu xe và lề; hiệu quả phụ thuộc góc chiếu, căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa; cân chỉnh đường cắt cos; Limo Green lắp được lens 2.0 và 3.0 inch) · dòng đời trước, đi tỉnh (kiểm tra đèn chính trước; kiểm tra hốc, giắc, đèn gầm đang có; không chọn theo số W). Câu chữ lấy từ phần tư vấn nhu cầu đã duyệt trên các trang dòng xe |
+| Nguồn form | `data-service="Bi gầm VinFast"` (+ dòng xe khi bấm thẻ dòng xe), `data-source-page="Bi gầm VinFast"` (đã sửa 22/10 — trước đó ghi nhầm "Bi gầm theo hãng xe") |
+| Thẻ dòng xe → form | Bấm thẻ VF 8 → ô Dòng xe = "VinFast VF 8", service = "Bi gầm VinFast - VinFast VF 8" (kiểm trên preview) |
+| Lead test | 22/10/2026 POST https://auto365.vn/api/leads (đúng các trường lead.js gửi; preview không có `/api/leads` nên form trên pages.dev trả 405 như các trang khác) → `{"success":true, "lead_id":"228"}` |
+| Còn | CRM xác nhận đã nhận lead 228 có dòng xe "VinFast VF 8"; sau đó xoá lead test 228 |
