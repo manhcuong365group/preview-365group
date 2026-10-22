@@ -81,6 +81,7 @@ Nếu CMS đã sinh `Organization`/`WebSite`/`BreadcrumbList` sẵn, bỏ các n
 POST `/api/leads` (FormData): `fullname, phone, car_brand, car_model, product_group, area, product_interest, consent, service, source_page=ppf-o-to-hub, source_url, referrer, utm_*`. Chỉ báo thành công khi `{"success": true}`.
 
 Lead test: 19/10/2026 21:04 → `{success:true, lead_id 205, test:true}`; CRM đã nhận đủ trường và đã xoá; user đã thấy form chạy (19/10/2026).
+Lead test lần 2: 22/10/2026 19:32 → POST https://auto365.vn/api/leads (trường form hub, source_page ppf-o-to-hub, tên "TEST hub PPF vui long xoa", SĐT 0900000000, utm_campaign ppf_hub_qa, request_id 5a654520-f932-4033-9bd9-f2b2eb75cec0) → HTTP 200 {success:true, lead_id 228, test:true}. Chờ CRM xác nhận đã nhận rồi xoá. Lưu ý: form trên preview pages.dev trả 405 vì preview không có /api/leads; trên auto365.vn form dùng cùng domain.
 
 ## 7. Checklist khi lên production
 
