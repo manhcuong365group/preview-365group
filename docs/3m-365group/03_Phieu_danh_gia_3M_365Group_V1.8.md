@@ -1,30 +1,38 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần đầu. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 2. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
-## Tự chấm (bản 22/10/2026)
+## Tự chấm lần 2 (bản 22/10/2026 sau khi sửa mục 3, 4, 5, 8)
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
-| C1 | 10 | 8,0 | Thông số 11 mã theo bảng 365Group; TSER NR 35 khớp catalog NR 03/2026; bảo hành 10 năm và "nhà phân phối chính thức" do chủ trang xác nhận. Còn: 224 đại lý lệch với "160+" trên site 365Group; giá 5,9–18,3tr là giá lẻ Auto365 đặt trên trang nhà phân phối; "Không gây nhiễu tín hiệu", "đạt chuẩn 3M toàn cầu" chưa có nguồn |
-| C2 | 10 | 7,0 | Có 3 dòng, 6 cấu hình, bảng so sánh, bảng thông số, chứng nhận, đại lý, FAQ 4 câu. Thiếu: case/xe thực tế, quy trình thi công và bảo hành điện tử (cách tra cứu), thông số NR trong bảng kỹ thuật, cách chọn mã theo vị trí kính |
-| C3 | 10 | 8,0 | Văn phong rõ, giọng nhà phân phối. Còn từ claim quá: "hiệu quả vượt trội", "tối ưu", "vượt trội", "cao cấp nhất"; mô tả Ceramic NR "Công nghệ Nano Ceramic" chưa theo câu đã duyệt (lai Nano Ceramic + Nano Reflective) |
-| S1 | 10 | 7,0 | Ý định "phim cách nhiệt ô tô 3M" rõ, nhưng chưa chốt URL/domain; trùng chủ đề với pillar `auto365.vn/phim-cach-nhiet-3m` nếu cùng đặt trên auto365.vn |
-| S2 | 10 | 8,7 | 1 H1, title 65 / meta 154, 2 bảng có caption, ALT ảnh đủ (ảnh lightbox rỗng khi đóng), robots preview noindex, og đủ. og:image 701px dưới chuẩn |
-| S3 | 10 | 6,0 | Link nội bộ còn là đường dẫn preview tương đối; chưa có canonical, BreadcrumbList, WebSite; WebPage chưa có url/@id tuyệt đối; Product không có Offer; thẻ Hybrid PRO trỏ nội trang |
-| G1 | 10 | 8,5 | Định nghĩa TSER, câu trả lời FAQ trích riêng được; bảng thông số dễ trích. Thiếu đoạn định nghĩa ngắn "phim cách nhiệt 3M là gì / khác nhau giữa 3 dòng" theo tiêu chí đo được |
-| G2 | 10 | 8,5 | Bảng so sánh 6 cấu hình + bảng 11 mã có đơn vị, điều kiện đo. Thiếu so sánh có số cho dòng NR trong bảng thông số |
-| G3 | 5 | 2,5 | Đơn vị xuất bản rõ, liên hệ đầy đủ, 4 chứng nhận phóng to được, trích 3M Việt Nam có nguồn. Thiếu: người kiểm duyệt có tên và chức danh, case thực tế, ảnh thi công thật |
-| U1 | 5 | 4,4 | Bố cục rõ, hero chia đôi, thẻ đều; 375px/1280px không tràn ngang. Chưa thử thiết bị thật |
-| U2 | 5 | 3,8 | CTA "Tìm đại lý" dẫn sang danh bạ; có hotline/email. Không có form để lại thông tin; ô quận/huyện bị khoá; "Đại lý 3M khác" không có danh sách thật |
+| C1 | 10 | 8,6 | Thông số 15 mã có nguồn: CR BLK/IR theo bảng 365Group, NR theo catalog 3M Ceramic NR VN 03/2026 (đo kính xanh 6 mm); bỏ câu "Không gây nhiễu tín hiệu" và "đạt chuẩn 3M toàn cầu". Còn: 224 đại lý lệch "160+" trên site 365Group; giá 5,9–18,3tr là giá lẻ Auto365 |
+| C2 | 10 | 8,2 | Thêm block 5 xe thực tế (Accent, Camry, Everest, VF8, XC90) dẫn bài thi công đã đăng; bảng thông số đủ 3 dòng. Thiếu: case Ceramic IR, quy trình thi công, cách tra cứu bảo hành điện tử |
+| C3 | 10 | 9,0 | Bỏ "vượt trội", "tối ưu", "toàn diện", "cao cấp nhất"; câu NR theo câu đã duyệt (lai Nano Ceramic và Nano Reflective); lợi ích ghi bằng số (TSER, IRR) |
+| S1 | 10 | 7,0 | Không đổi: chưa chốt URL/domain; nguy cơ trùng pillar auto365.vn/phim-cach-nhiet-3m |
+| S2 | 10 | 8,7 | Không đổi (3 bảng/khối có caption hoặc mô tả; og:image 701px) |
+| S3 | 10 | 6,2 | Thêm 5 link ra bài thi công auto365.vn. Còn: link nội bộ preview tương đối, chưa có canonical/Breadcrumb/WebSite, @id tuyệt đối |
+| G1 | 10 | 8,6 | Lợi ích từng dòng có số trích riêng được |
+| G2 | 10 | 9,3 | Bảng 15 mã đủ 3 dòng, cùng 5 chỉ số, có điều kiện đo NR |
+| G3 | 5 | 3,0 | Thêm bằng chứng thi công thật (5 bài đã đăng). Thiếu: người kiểm duyệt có tên |
+| U1 | 5 | 4,4 | 375px/1280px không tràn; bảng 15 mã vừa khung desktop, cuộn ngang trên mobile với cột chỉ số cố định |
+| U2 | 5 | 3,8 | Không đổi: chưa có form |
 | U3 | 5 | 5,0 | 01–03 cùng SHA-256 bên dưới |
+
+**Tổng tự chấm lần 2: C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100. CHƯA ĐẠT V1.8** — SEO 21,9 < 28,5; GEO 20,9 < 23,75. Phần còn thiếu chủ yếu cần quyết định của chủ trang (URL đích, người kiểm duyệt, form).
+
+## Lần 1 (bản 22/10/2026, SHA dc06ee7b…)
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
-## Đã sửa trong lượt chấm này (22/10/2026)
+## Đã sửa (22/10/2026)
+
+Lần 2: thêm block xe thực tế (5 bài đã đăng); bỏ từ claim quá ở hero, 3 dòng phim, nhãn PRO, bảng so sánh, thẻ đại lý; câu NR theo câu đã duyệt; thay ô "Không gây nhiễu tín hiệu" bằng "Bảo hành điện tử 10 năm"; thêm NR 35/25/15/5 vào bảng thông số.
+
+Lần 1:
 
 - Thêm `robots noindex,nofollow` cho preview và bộ thẻ Open Graph.
 - Tagline hero đổi từ H2 sang `<p>` (H2 chỉ dùng cho tiêu đề block).
@@ -38,12 +46,12 @@
 |---|---|---|---|
 | 1 | Chốt URL/domain đích, canonical, đổi link nội bộ sang URL thật, thêm BreadcrumbList/WebSite, @id tuyệt đối | S1, S3 | SEO/chủ trang |
 | 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang |
-| 3 | Thêm block xe thực tế (case đã đăng trên auto365.vn theo từng cấu hình) | C2, G3 | Có thể làm ngay từ bài đã đăng |
-| 4 | Bỏ từ claim quá ("vượt trội", "tối ưu", "cao cấp nhất"), sửa câu mô tả Ceramic NR theo câu đã duyệt | C3 | Có thể làm ngay |
-| 5 | Thêm thông số NR 35/25/15/5 (catalog NR 03/2026) vào bảng kỹ thuật | C2, G2 | Có thể làm ngay |
+| 3 | Thêm block xe thực tế (case đã đăng trên auto365.vn theo từng cấu hình) | C2, G3 | Có thể làm ngay từ bài đã đăng | ✅ Đã làm (lần 2)
+| 4 | Bỏ từ claim quá ("vượt trội", "tối ưu", "cao cấp nhất"), sửa câu mô tả Ceramic NR theo câu đã duyệt | C3 | Có thể làm ngay | ✅ Đã làm (lần 2)
+| 5 | Thêm thông số NR 35/25/15/5 (catalog NR 03/2026) vào bảng kỹ thuật | C2, G2 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 6 | Thống nhất số đại lý (224 hay 160+) giữa trang này và 3m.365group.com.vn | C1 | Kinh doanh |
 | 7 | Form để lại thông tin (POST /api/leads) hoặc nút Zalo/hotline rõ | U2 | Chủ trang |
-| 8 | Nguồn cho "Không gây nhiễu tín hiệu" hoặc bỏ | C1 | Có thể làm ngay |
+| 8 | Nguồn cho "Không gây nhiễu tín hiệu" hoặc bỏ | C1 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 9 | Ảnh hero/og bản gốc ≥ 1600px | S2 | Chủ trang |
 
 Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật SHA ở 02/03.
@@ -52,7 +60,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `dc06ee7b85c600b33ad4d88562513df67d1cf66fb8794ec4cb9597580d4711ca` |
+| `auto365/3m-365group/index.html` | SHA-256 `d0557c40a8fa86c0fb9f4c89003030ce618fefe5a8e030fc06e1e33c6daf17eb` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

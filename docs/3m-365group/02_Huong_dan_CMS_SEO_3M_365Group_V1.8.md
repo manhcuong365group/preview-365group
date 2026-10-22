@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `dc06ee7b85c600b33ad4d88562513df67d1cf66fb8794ec4cb9597580d4711ca` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d0557c40a8fa86c0fb9f4c89003030ce618fefe5a8e030fc06e1e33c6daf17eb` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt nội dung: **chưa có người duyệt có tên**. Khi có, thêm `reviewedBy` + `lastReviewed` vào WebPage và dòng kiểm duyệt dưới hero.
@@ -23,7 +23,7 @@
 | og:image | `hinh/hero-3m-pro-shop-training-center.webp` (701×436 — dưới chuẩn 1200×630, cần ảnh gốc lớn hơn) |
 | Robots | Preview `noindex,nofollow` → production `index,follow` |
 
-Thứ tự H2: 3 dòng phim → 6 cấu hình → So sánh nhanh → Thông số kỹ thuật → Chứng nhận từ 3M → Hệ thống đại lý → Vì sao 365Group chọn phân phối phim 3M → Câu hỏi thường gặp → Về bài viết này. Tagline hero là `<p>`, không dùng H2.
+Thứ tự H2: 3 dòng phim → 6 cấu hình → Xe thực tế đã dán theo cấu hình → So sánh nhanh → Thông số kỹ thuật → Chứng nhận từ 3M → Hệ thống đại lý → Vì sao 365Group chọn phân phối phim 3M → Câu hỏi thường gặp → Về bài viết này. Tagline hero là `<p>`, không dùng H2.
 
 ## 3. Schema (một `@graph`)
 
@@ -36,11 +36,14 @@ Thiếu khi lên production: `url`/`@id` tuyệt đối cho WebPage, `Breadcrumb
 | Nội dung | Nguồn |
 | --- | --- |
 | Thông số 11 mã CR BLK 15–80, IR 15/25/50 (TSER, VLT, UVR, giảm lóa, IRR) | Bảng "Thông số kỹ thuật" 3M \| 365Group do chủ trang gửi 22/10/2026 |
-| TSER NR 35 ≈ 51% | Catalog 3M Ceramic NR VN 03/2026 (đo trên kính xanh 6 mm), bộ số đã khóa dùng cho các trang mã NR |
+| Thông số NR 35/25/15/5 (TSER 51/59/65/69, VLT 43/29/14/7, UV 99, giảm lóa 52/68/84/93, IRR 79/86/86/91) và TSER NR 35 ≈ 51% | Catalog 3M Ceramic NR VN 03/2026 (đo trên kính ô tô xanh 6 mm), bộ số đã khóa dùng cho các trang mã NR |
+| Câu mô tả Ceramic NR "Lai Nano Ceramic và Nano Reflective" | Câu đã duyệt cho dòng NR |
+| 5 xe thực tế (Hyundai Accent 2025 – Ceramic NR; Toyota Camry – Crystalline Hybrid; Ford Everest – Crystalline CR BLK; VinFast VF8 – Hybrid PRO; Volvo XC90 – CR BLK PRO) | Bài thi công đã đăng trên auto365.vn, ảnh lấy từ bộ ảnh case của pillar phim cách nhiệt 3M; mỗi thẻ dẫn về bài gốc. Ceramic IR chưa có bài |
 | Bảo hành 10 năm cho cả 6 cấu hình, điều kiện kích hoạt bảo hành điện tử | Chủ trang xác nhận 22/10/2026; ghi chú trên bảng thông số 365Group |
 | Giá tham khảo trọn xe 5,9–18,3 triệu (gồm công) | Trang 3M đã đăng của Auto365 (pillar phim cách nhiệt 3M) — là giá bán lẻ Auto365, không phải giá nhà phân phối |
 | 224 đại lý / 32 tỉnh / 3 nhóm | Mockup, chủ trang xác nhận giữ 22/10/2026. Lưu ý: `3m.365group.com.vn` đang ghi "160+ đại lý" — cần thống nhất |
 | Hotline 0363 365 365, email, văn phòng Hiệp Bình | Trang `3m.365group.com.vn` |
+| Ô lợi ích "Bảo hành điện tử 10 năm" (thay ô "Không gây nhiễu tín hiệu" chưa có nguồn) | Ghi chú bảng thông số 365Group |
 | Kinh nghiệm hãng (hơn 55 năm, bằng sáng chế 1966), thợ ủy quyền | Trang Cá nhân hóa ô tô của 3M Việt Nam, ghi "theo 3M" |
 | 4 chứng nhận | Distributor Certificate 3M Việt Nam – 365 Group (01/03/2023–31/12/2026); 3M Pro Shop Certificate – Auto365 Center; 3M Preferred Installer; ảnh lễ trao chứng nhận Training Center |
 | Ảnh xe thẻ cấu hình | Ảnh tách nền dùng chung với trang bi gầm theo hãng xe — minh họa phân khúc giá, không phải xe đã dán đúng gói |

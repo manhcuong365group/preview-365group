@@ -137,10 +137,10 @@ img{max-width:100%;display:block}
 .m3-faq details{background:#fff;border:1px solid var(--m3-line);border-radius:8px;padding:14px 18px;margin-bottom:10px}
 .m3-faq summary{font-weight:600;cursor:pointer}.m3-faq p{margin:8px 0 0;color:var(--m3-mute);font-size:14px}
 @media(max-width:768px){.m3-why{grid-template-columns:1fr}}
-.m3-spec{width:100%;min-width:880px;border-collapse:collapse;font-size:14px;text-align:center;background:#fff}
-.m3-spec th{background:#3a3d42;color:#fff;padding:10px 6px;font-size:13px;line-height:1.2}.m3-spec th.cr{background:#5a5e64}
+.m3-spec{width:100%;min-width:1080px;border-collapse:collapse;font-size:14px;text-align:center;background:#fff}
+.m3-spec th{background:#3a3d42;color:#fff;padding:10px 4px;font-size:12px;line-height:1.2}.m3-spec th.cr{background:#5a5e64}.m3-spec th.nr{background:#8a1c22}
 .m3-spec th:first-child,.m3-spec td:first-child{text-align:left;position:sticky;left:0;background:#f5f6f8;color:var(--m3-ink);min-width:150px}
-.m3-spec td{padding:10px 6px;border:1px solid var(--m3-line)}
+.m3-spec td{padding:10px 4px;border:1px solid var(--m3-line)}
 .m3-spec td small{display:block;font-size:11px;color:var(--m3-mute);font-weight:400}
 .m3-spec tr.tser td{background:var(--m3-red);color:#fff;font-weight:700;font-size:15px}.m3-spec tr.tser td small{color:#fde}
 .m3-spec tr.tser td:first-child{background:var(--m3-red-d);color:#fff}
@@ -158,6 +158,12 @@ img{max-width:100%;display:block}
 @media(max-width:768px){.m3-certs{grid-template-columns:1fr 1fr;gap:10px}}
 .m3-cap{caption-side:top;text-align:left;font-size:12px;color:var(--m3-mute);padding:0 0 8px}
 .m3-internal{padding:16px 0;background:#fffbea;border-top:2px dashed #d9a400;font-size:13.5px;color:#333}.m3-internal p{margin:6px 0 0}.m3-internal a{color:#dc2626;font-weight:700}
+.m3-cases{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.m3-case{display:flex;flex-direction:column;background:#fff;border:1px solid var(--m3-line);border-radius:8px;overflow:hidden}
+.m3-case img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.m3-case div{padding:12px}.m3-case h3{margin:2px 0 4px;font-size:15px}.m3-case p{margin:0 0 8px;font-size:13px;color:var(--m3-mute)}.m3-case b{font-size:13px;color:var(--m3-red)}
+@media(max-width:1024px){.m3-cases{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){.m3-cases{grid-template-columns:1fr 1fr;gap:10px}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1200px){.m3-nav{display:none}}
 @media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
@@ -189,7 +195,7 @@ img{max-width:100%;display:block}
   <small>365GROUP · NHÀ PHÂN PHỐI CHÍNH THỨC PHIM CÁCH NHIỆT Ô TÔ 3M™</small>
   <h1>Phim cách nhiệt ô tô 3M™</h1>
   <p class="m3-hero__sub">3 dòng công nghệ · 6 cấu hình dán trọn xe</p>
-  <p class="m3-hero__tag">Kiểm soát nhiệt – Bảo vệ toàn diện – Đồng hành mọi hành trình</p>
+  <p class="m3-hero__tag">Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô</p>
   <p>365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.</p>
   <p class="m3-byline">✔ Bài viết của <strong>365Group</strong> – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Cập nhật: <time datetime="2026-10-22">22/10/2026</time></p>
   <div class="m3-hero__cta"><a class="m3-btn m3-btn--red" href="#dong-phim">Khám phá 3 dòng phim →</a><a class="m3-btn m3-btn--white" href="#tim-dai-ly">📍 Tìm đại lý gần nhất</a></div>
@@ -199,29 +205,40 @@ img{max-width:100%;display:block}
 
 <div class="m3-wrap m3-feat">
   <div><i>☀️</i><p style="margin:0"><b>Cản tia UV</b><span>Bảo vệ sức khỏe và nội thất</span></p></div>
-  <div><i>🌡️</i><p style="margin:0"><b>Kiểm soát nhiệt vượt trội</b><span>Giảm nhiệt, tận hưởng không gian mát mẻ</span></p></div>
+  <div><i>🌡️</i><p style="margin:0"><b>Giảm nhiệt trong xe</b><span>Giảm nhiệt, tận hưởng không gian mát mẻ</span></p></div>
   <div><i>👁️</i><p style="margin:0"><b>Giảm lóa – Tăng tầm nhìn</b><span>Thoải mái và an toàn hơn khi lái xe</span></p></div>
-  <div><i>📶</i><p style="margin:0"><b>Không gây nhiễu tín hiệu</b><span>Tương thích với các thiết bị điện tử</span></p></div>
+  <div><i>🛡️</i><p style="margin:0"><b>Bảo hành điện tử 10 năm</b><span>Kích hoạt sau khi dán, tra cứu được</span></p></div>
 </div>
 
 <section class="m3-sec" id="dong-phim"><div class="m3-wrap">
-  <div class="m3-sec__hd"><div><h2>3 dòng phim cách nhiệt 3M</h2><p>Ba công nghệ, đáp ứng mọi nhu cầu</p></div><a class="m3-link" href="#so-sanh">Xem bảng thông số chi tiết →</a></div>
+  <div class="m3-sec__hd"><div><h2>3 dòng phim cách nhiệt 3M</h2><p>Ba công nghệ cho các mức ngân sách khác nhau</p></div><a class="m3-link" href="#so-sanh">Xem bảng thông số chi tiết →</a></div>
   <div class="m3-lines">
-    <article class="m3-line"><h3>3M™ Ceramic <em class="c-nr">NR</em></h3><p class="lead">Ưu tiên chi phí, hiệu quả vượt trội</p><ul><li>Công nghệ Nano Ceramic</li><li>Hiệu quả cách nhiệt cao</li><li>Lựa chọn tối ưu về ngân sách</li></ul><a class="m3-btn m3-btn--line" href="../danh-gia-3m-ceramic-nr/">Xem chi tiết →</a></article>
-    <article class="m3-line"><h3>3M™ Ceramic <em class="c-ir">IR</em></h3><p class="lead">Cân bằng hiệu suất và thẩm mỹ</p><ul><li>Công nghệ Ceramic hồng ngoại</li><li>Giảm nhiệt hiệu quả</li><li>Cân bằng độ sáng và riêng tư</li></ul><a class="m3-btn m3-btn--line" href="../ceramic-ir/">Xem chi tiết →</a></article>
-    <article class="m3-line"><h3>3M™ Crystalline <em class="c-cr">CR BLK</em></h3><p class="lead">Cao cấp, tầm nhìn vượt trội</p><ul><li>Công nghệ quang học Crystalline</li><li>Kiểm soát nhiệt tối ưu</li><li>Tầm nhìn rõ nét, sang trọng</li></ul><a class="m3-btn m3-btn--line" href="../crystalline-cr-blk/">Xem chi tiết →</a></article>
+    <article class="m3-line"><h3>3M™ Ceramic <em class="c-nr">NR</em></h3><p class="lead">Ưu tiên chi phí</p><ul><li>Lai Nano Ceramic và Nano Reflective</li><li>Kính lái NR 35: TSER 51%, UV 99%</li><li>Mức đầu tư thấp nhất trong 3 dòng</li></ul><a class="m3-btn m3-btn--line" href="../danh-gia-3m-ceramic-nr/">Xem chi tiết →</a></article>
+    <article class="m3-line"><h3>3M™ Ceramic <em class="c-ir">IR</em></h3><p class="lead">Cân bằng hiệu suất và thẩm mỹ</p><ul><li>Công nghệ Ceramic hồng ngoại</li><li>Loại bỏ hồng ngoại 83–90% tùy mã</li><li>Cân bằng độ sáng và riêng tư</li></ul><a class="m3-btn m3-btn--line" href="../ceramic-ir/">Xem chi tiết →</a></article>
+    <article class="m3-line"><h3>3M™ Crystalline <em class="c-cr">CR BLK</em></h3><p class="lead">Dòng cao cấp, ưu tiên độ trong khi nhìn</p><ul><li>Công nghệ quang học Crystalline</li><li>Loại bỏ hồng ngoại 95–98% tùy mã</li><li>Màu đen tiệp kính zin, nhìn rõ</li></ul><a class="m3-btn m3-btn--line" href="../crystalline-cr-blk/">Xem chi tiết →</a></article>
   </div>
 </div></section>
 
-<section class="m3-sec"><div class="m3-wrap">
+<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>6 cấu hình phim cách nhiệt 3M</h2><p>Ceramic NR và Ceramic IR mỗi dòng 1 cấu hình; Crystalline CR BLK có 4 cấu hình</p></div></div>
   <div class="m3-cfg">
     <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-vf3.webp" alt="VinFast VF3 – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-red">Ưu tiên chi phí</span></div><div class="m3-card__bd"><span class="m3-line-tag c-nr">DÒNG CERAMIC NR</span><h3>3M Ceramic NR</h3><ul><li>Kính lái: NR 35</li><li>Kính hông/lưng: NR 25/15/5</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../danh-gia-3m-ceramic-nr/">Xem chi tiết</a></div></article>
     <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-hr-v.webp" alt="Honda HR-V – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-blue">Cân bằng hiệu suất</span></div><div class="m3-card__bd"><span class="m3-line-tag c-ir">DÒNG CERAMIC IR</span><h3>3M Ceramic IR</h3><ul><li>Kính lái: IR 50</li><li>Kính hông/lưng: IR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../ceramic-ir/">Xem chi tiết</a></div></article>
     <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-cr-v.webp" alt="Honda CR-V – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">Kính lái Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline Hybrid</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-crystalline-hybrid/">Xem chi tiết</a></div></article>
     <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-santa-fe.webp" alt="Hyundai Santa Fe – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">Đồng bộ Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline CR BLK</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../crystalline-cr-blk/">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-es.webp" alt="Lexus ES – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Tầm nhìn tối ưu</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Hybrid PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="#tim-dai-ly">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-lx.webp" alt="Lexus LX – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Cao cấp nhất</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>CR BLK PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-cr-blk-pro/">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-es.webp" alt="Lexus ES – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Kính lái đậm hơn</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Hybrid PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="#tim-dai-ly">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-lx.webp" alt="Lexus LX – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Crystalline toàn xe</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>CR BLK PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-cr-blk-pro/">Xem chi tiết</a></div></article>
+  </div>
+</div></section>
+
+<section class="m3-sec" id="xe-thuc-te"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Xe thực tế đã dán theo cấu hình</h2><p>Hồ sơ thi công đã đăng trên auto365.vn – đại lý trong hệ thống 365Group. Cấu hình Ceramic IR chưa có bài thi công.</p></div></div>
+  <div class="m3-cases">
+    <a class="m3-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-ceramic-nr-hyundai-accent-2025-tai-auto365-tru-so-chinh" target="_blank" rel="noopener"><img src="hinh/case-hyundai-accent.webp" alt="Hyundai Accent 2025 dán phim cách nhiệt 3M Ceramic NR tại Auto365" loading="lazy" width="640" height="400"><div><span class="m3-line-tag c-nr">CERAMIC NR</span><h3>Hyundai Accent 2025</h3><p>Sedan cỡ B đi phố hằng ngày</p><b>Xem bài thi công →</b></div></a>
+    <a class="m3-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-hybrid-cho-toyota-camry" target="_blank" rel="noopener"><img src="hinh/case-toyota-camry.webp" alt="Toyota Camry dán phim cách nhiệt 3M Crystalline Hybrid tại Auto365" loading="lazy" width="640" height="400"><div><span class="m3-line-tag c-cr">CRYSTALLINE HYBRID</span><h3>Toyota Camry</h3><p>Sedan hạng D, kính lớn</p><b>Xem bài thi công →</b></div></a>
+    <a class="m3-case" href="https://auto365.vn/dan-phim-cach-nhiet-o-to-3m-crystalline-cr-blk-ford-everest" target="_blank" rel="noopener"><img src="hinh/case-ford-everest.webp" alt="Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365" loading="lazy" width="640" height="400"><div><span class="m3-line-tag c-cr">CRYSTALLINE CR BLK</span><h3>Ford Everest</h3><p>SUV 7 chỗ đi đường trường</p><b>Xem bài thi công →</b></div></a>
+    <a class="m3-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-hybrid-pro-vinfast-vf8" target="_blank" rel="noopener"><img src="hinh/case-vinfast-vf8.webp" alt="VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365" loading="lazy" width="640" height="400"><div><span class="m3-line-tag c-cr">HYBRID PRO</span><h3>VinFast VF8</h3><p>SUV điện có kính panorama</p><b>Xem bài thi công →</b></div></a>
+    <a class="m3-case" href="https://auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-pro-cho-volvo-xc90" target="_blank" rel="noopener"><img src="hinh/case-volvo-xc90.webp" alt="Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365" loading="lazy" width="640" height="400"><div><span class="m3-line-tag c-cr">CR BLK PRO</span><h3>Volvo XC90</h3><p>SUV hạng sang 7 chỗ</p><b>Xem bài thi công →</b></div></a>
   </div>
 </div></section>
 
@@ -236,22 +253,22 @@ img{max-width:100%;display:block}
         <tr><td>Crystalline Hybrid</td><td class="dir">Kính lái Crystalline</td><td>CR BLK 60/50</td><td>NR 25/15</td><td>~ 54–56%</td><td>10 năm</td></tr>
         <tr><td>Crystalline CR BLK</td><td class="dir">Đồng bộ Crystalline</td><td>CR BLK 60/50</td><td>CR BLK 35/15</td><td>~ 54–56%</td><td>10 năm</td></tr>
         <tr><td>Hybrid PRO</td><td class="dir">Kính lái đậm hơn</td><td>CR BLK 40</td><td>NR 25/15</td><td>~ 58%</td><td>10 năm</td></tr>
-        <tr><td>CR BLK PRO</td><td class="dir">Cao cấp nhất</td><td>CR BLK 40</td><td>CR BLK 35/15</td><td>~ 58%</td><td>10 năm</td></tr>
+        <tr><td>CR BLK PRO</td><td class="dir">Crystalline toàn xe, kính lái đậm</td><td>CR BLK 40</td><td>CR BLK 35/15</td><td>~ 58%</td><td>10 năm</td></tr>
       </tbody></table></div>
       <p class="m3-note">TSER là tổng năng lượng mặt trời bị loại bỏ, đo trên kính lái theo bảng thông số 3M do 365Group công bố (xem bảng dưới); kết quả thực tế phụ thuộc loại kính xe.</p></div>
   </div>
 </div></section>
 
 <section class="m3-sec" id="thong-so"><div class="m3-wrap">
-  <div class="m3-sec__hd"><div><h2>Thông số kỹ thuật các mã phim 3M</h2><p>Dòng Crystalline CR BLK và Ceramic IR – theo bảng thông số 365Group phân phối</p></div><a class="m3-link" href="https://3m.365group.com.vn/index.html" target="_blank" rel="noopener">Xem tài liệu tại 3m.365group.com.vn →</a></div>
-  <div class="m3-tbl-wrap"><table class="m3-spec"><caption class="m3-cap">Thông số kỹ thuật 11 mã phim 3M Crystalline CR BLK và Ceramic IR theo bảng 365Group (TSER, VLT, UVR, giảm lóa, IRR)</caption>
-      <thead><tr><th>Chỉ số</th><th class="cr">CR<br>BLK 15</th><th class="cr">CR<br>BLK 30</th><th class="cr">CR<br>BLK 35</th><th class="cr">CR<br>BLK 40</th><th class="cr">CR<br>BLK 50</th><th class="cr">CR<br>BLK 60</th><th class="cr">CR<br>BLK 70</th><th class="cr">CR<br>BLK 80</th><th>IR<br>15</th><th>IR<br>25</th><th>IR<br>50</th></tr></thead>
+  <div class="m3-sec__hd"><div><h2>Thông số kỹ thuật các mã phim 3M</h2><p>CR BLK và Ceramic IR theo bảng thông số 365Group; Ceramic NR theo catalog 3M Ceramic NR Việt Nam 03/2026 (đo trên kính ô tô xanh 6 mm)</p></div><a class="m3-link" href="https://3m.365group.com.vn/index.html" target="_blank" rel="noopener">Xem tài liệu tại 3m.365group.com.vn →</a></div>
+  <div class="m3-tbl-wrap"><table class="m3-spec"><caption class="m3-cap">Thông số kỹ thuật 15 mã phim 3M Crystalline CR BLK, Ceramic IR và Ceramic NR (TSER, VLT, UVR, giảm lóa, IRR)</caption>
+      <thead><tr><th>Chỉ số</th><th class="cr">CR<br>BLK 15</th><th class="cr">CR<br>BLK 30</th><th class="cr">CR<br>BLK 35</th><th class="cr">CR<br>BLK 40</th><th class="cr">CR<br>BLK 50</th><th class="cr">CR<br>BLK 60</th><th class="cr">CR<br>BLK 70</th><th class="cr">CR<br>BLK 80</th><th>IR<br>15</th><th>IR<br>25</th><th>IR<br>50</th><th class="nr">NR<br>35</th><th class="nr">NR<br>25</th><th class="nr">NR<br>15</th><th class="nr">NR<br>5</th></tr></thead>
       <tbody>
-        <tr class="tser"><td><b>TSER</b><small>Tổng năng lượng bị loại bỏ</small></td><td>64%</td><td>61%</td><td>60%</td><td>58%</td><td>56%</td><td>54%</td><td>51%</td><td>45%</td><td>59%</td><td>57%</td><td>47%</td></tr>
-        <tr><td><b>VLT</b><small>Độ xuyên sáng</small></td><td>14%</td><td>29%</td><td>33%</td><td>41%</td><td>48%</td><td>57%</td><td>64%</td><td>72%</td><td>18%</td><td>30%</td><td>58%</td></tr>
-        <tr><td><b>UVR</b><small>Loại bỏ tia cực tím</small></td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99%</td><td>99%</td><td>99%</td></tr>
-        <tr><td><b>Glare R</b><small>Tỷ lệ giảm lóa</small></td><td>81%</td><td>61%</td><td>55%</td><td>44%</td><td>34%</td><td>22%</td><td>13%</td><td>2%</td><td>78%</td><td>65%</td><td>32%</td></tr>
-        <tr><td><b>IRR</b><small>Loại bỏ tia hồng ngoại</small></td><td>98%</td><td>98%</td><td>98%</td><td>98%</td><td>98%</td><td>97%</td><td>97%</td><td>95%</td><td>90%</td><td>90%</td><td>83%</td></tr>
+        <tr class="tser"><td><b>TSER</b><small>Tổng năng lượng bị loại bỏ</small></td><td>64%</td><td>61%</td><td>60%</td><td>58%</td><td>56%</td><td>54%</td><td>51%</td><td>45%</td><td>59%</td><td>57%</td><td>47%</td><td>51%</td><td>59%</td><td>65%</td><td>69%</td></tr>
+        <tr><td><b>VLT</b><small>Độ xuyên sáng</small></td><td>14%</td><td>29%</td><td>33%</td><td>41%</td><td>48%</td><td>57%</td><td>64%</td><td>72%</td><td>18%</td><td>30%</td><td>58%</td><td>43%</td><td>29%</td><td>14%</td><td>7%</td></tr>
+        <tr><td><b>UVR</b><small>Loại bỏ tia cực tím</small></td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99%</td><td>99%</td><td>99%</td><td>99%</td><td>99%</td><td>99%</td><td>99%</td></tr>
+        <tr><td><b>Glare R</b><small>Tỷ lệ giảm lóa</small></td><td>81%</td><td>61%</td><td>55%</td><td>44%</td><td>34%</td><td>22%</td><td>13%</td><td>2%</td><td>78%</td><td>65%</td><td>32%</td><td>52%</td><td>68%</td><td>84%</td><td>93%</td></tr>
+        <tr><td><b>IRR</b><small>Loại bỏ tia hồng ngoại</small></td><td>98%</td><td>98%</td><td>98%</td><td>98%</td><td>98%</td><td>97%</td><td>97%</td><td>95%</td><td>90%</td><td>90%</td><td>83%</td><td>79%</td><td>86%</td><td>86%</td><td>91%</td></tr>
       </tbody></table></div>
   <ul class="m3-spec-note">
     <li>Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.</li>
@@ -278,8 +295,8 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
   <div class="m3-sec__hd"><div><h2>Hệ thống đại lý 3M toàn quốc</h2><p>365Group tự hào là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam</p></div>
     <div class="m3-stats"><div><b style="color:var(--m3-red)">224</b>Đại lý toàn quốc</div><div><b style="color:var(--m3-blue)">32</b>Tỉnh/Thành phố</div><div><b style="color:var(--m3-gold)">3</b>Nhóm đại lý</div></div></div>
   <div class="m3-dl">
-    <a href="../he-thong/"><div><h3>3M PRO SHOP</h3><p>Chuỗi trung tâm chuyên nghiệp, đạt chuẩn 3M toàn cầu.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center" loading="lazy" style="object-position:30% center"></a>
-    <a href="../he-thong/"><div><h3>Đại lý hệ thống Auto365</h3><p>Hệ thống đại lý Auto365 phủ rộng toàn quốc, thi công chuyên nghiệp.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/team-auto365.jpg" alt="Auto365" loading="lazy"></a>
+    <a href="../he-thong/"><div><h3>3M PRO SHOP</h3><p>Trung tâm được 3M cấp chứng nhận 3M Pro Shop.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center" loading="lazy" style="object-position:30% center"></a>
+    <a href="../he-thong/"><div><h3>Đại lý hệ thống Auto365</h3><p>Các chi nhánh trong hệ thống Auto365 thi công phim 3M.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/team-auto365.jpg" alt="Auto365" loading="lazy"></a>
     <a href="#tim-dai-ly"><div><h3>Đại lý 3M khác</h3><p>Các đại lý ủy quyền 3M trên toàn quốc.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/xe-vinfast-vf8.jpg" alt="Đại lý 3M" loading="lazy"></a>
   </div>
   <div class="m3-find" id="tim-dai-ly"><h3>Tìm đại lý 3M gần nhất</h3><p>Chọn tỉnh/thành phố để xem danh sách đại lý, địa chỉ và thông tin liên hệ.</p>
