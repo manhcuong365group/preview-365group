@@ -42,6 +42,8 @@ Bổ sung 22/10/2026 (sau khi anh Hoàng duyệt bản sáng): mục kiến th�
 
 Bổ sung 22/10/2026: mục kiến thức k08 (accordion, sau k00) — 12 vị trí dán lẻ kèm giá thấp nhất "từ" (AX G Series, Sedan/SUV hạng A–B; chủ trang yêu cầu chỉ để giá tượng trưng), nguồn: bảng giá tham khảo AX Film cho khách lẻ, gồm VAT (chủ trang cung cấp 22/10). Giá toàn xe A–B/C–D/MPV khớp card và AggregateOffer hiện có. FAQ chi phí (hiển thị + FAQPage) thêm dán lẻ từ 400.000đ (A–B). Dán lẻ 3M chưa có bảng.
 
+Bổ sung 22/10/2026: quy trình thi công đổi từ 5 sang 6 bước theo tài liệu quy trình chủ trang cung cấp (tiếp nhận; vệ sinh; đo đạc & chuẩn bị phim; dán; hoàn thiện; kiểm tra, bàn giao & hướng dẫn). Không dùng ảnh minh họa đi kèm làm bằng chứng thi công.
+
 Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -57,7 +59,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `491824c651afee59ab2d480f95670939622b361f72a336d705fc35a5777fb2de` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `f868e5fdb4dc1ad61ac7e3f4f740e7642d3c657ed73edbcbb15a0e9be8e83ceb` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 

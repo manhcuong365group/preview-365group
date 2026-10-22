@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `491824c651afee59ab2d480f95670939622b361f72a336d705fc35a5777fb2de`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `f868e5fdb4dc1ad61ac7e3f4f740e7642d3c657ed73edbcbb15a0e9be8e83ceb`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -119,11 +119,12 @@ Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn ph
 
 ## Quy trình thi công PPF  `#kien-thuc`
 
-1. 01Kiểm tra xe & tư vấnĐánh giá tình trạng sơn và nhu cầu sử dụng
-2. 02Vệ sinh & xử lý bề mặtLàm sạch, loại bỏ tạp chất trên sơn
-3. 03Cắt phim theo form xeSử dụng máy cắt chuyên dụng theo dữ liệu xe
-4. 04Thi công chuyên nghiệpDán phim và xử lý chi tiết mép, góc cạnh
-5. 05Kiểm tra & bàn giaoĐảm bảo chất lượng, hướng dẫn bảo dưỡng
+1. 01Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí
+2. 02Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn
+3. 03Đo đạc & chuẩn bị phimCắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp
+4. 04Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
+5. 05Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
+6. 06Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
 
 ## Kiến thức cần nắm trước khi dán PPF  `#kien-thuc-ppf`
 
