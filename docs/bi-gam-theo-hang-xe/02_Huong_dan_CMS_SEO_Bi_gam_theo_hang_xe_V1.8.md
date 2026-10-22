@@ -17,12 +17,12 @@ Ngày: 19/10/2026 · Bản preview khớp SHA-256 ghi trong [01](01_Noi_dung_Bi_
 |---|---|
 | Title (68 ký tự) | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế \| Auto365 |
 | H1 | Bi gầm ô tô theo hãng xe |
-| Meta description | Tra cứu bi gầm theo 20 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
+| Meta description | Tra cứu bi gầm theo 21 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày | `dateModified` = ngày trong dòng "Cập nhật …" dưới sapo (build tự đọc). Mỗi lần sửa nội dung đổi ngày này thành ngày sửa. CMS điền `datePublished` khi đăng |
 
 ## 3. Schema (JSON-LD, build tự sinh)
 
-`CollectionPage` (dateModified) · `BreadcrumbList` (3 cấp) · `Organization` (@id `https://auto365.vn/#organization`) · `ItemList` dòng xe có case · `ItemList` xe thực tế (toàn bộ case) · `ItemList` cẩm nang · `FAQPage` (5 câu, khớp chữ hiển thị). Link VinFast preview được đổi sang canonical `/nang-cap-anh-sang-bi-gam/vinfast/vfX` trong schema.
+`CollectionPage` (dateModified) · `BreadcrumbList` (3 cấp) · `Organization` (@id `https://auto365.vn/#organization`) · `ItemList` dòng xe có case · `ItemList` xe thực tế (toàn bộ case) · `ItemList` cẩm nang · `FAQPage` (6 câu, khớp chữ hiển thị). Link VinFast preview được đổi sang canonical `/nang-cap-anh-sang-bi-gam/vinfast/vfX` trong schema.
 
 `reviewedBy` Nguyễn Quang Đạo, `lastReviewed` = ngày trong `<time class="bght-rv">` của byline (hiện 2026-10-19). Lần duyệt sau đổi ngày này.
 
@@ -78,6 +78,13 @@ Trong HTML trang, link VinFast trỏ đường dẫn preview; build đổi sang 
 
 - `vehicle_year` để trống có chủ đích: tiêu đề bài có thể chứa năm phiên bản đèn, chưa có trường đời xe riêng từ hồ sơ gốc.
 - `sku_id` dò từ tiêu đề bài, `sku_status` ghi "chưa xác nhận phiên bản" cho tới khi Media/Kinh doanh đối chiếu.
-- Trang không hiển thị năm xe và không đề xuất mẫu cho dòng xe `chua-co-ho-so`.
+- Trang không hiển thị năm xe. Dòng xe `chua-co-ho-so` mở popup "Mẫu bi gầm tham khảo": tối đa 3 mẫu kèm tên + link xe đã lắp, câu mở đầu ghi đúng nguồn (cùng hãng / trộn / hãng khác), không phải cấu hình đã xác nhận cho xe đó.
 
 **Cập nhật 21/10/2026:** tạm bỏ link tới trang VinFast VF7 (production còn 404) theo chỉ đạo chủ quản; thẻ VF7 dẫn về bài case "VinFast VF7 Plus 2025 lắp bi gầm X-Light F10 Turbo V2 5500K". Khi VF7 production trả 200: trong `content-src.html` thêm lại `'../vinfast/vf7/'` làm phần tử thứ 7 của mục VF7 trong mảng `C`, rồi build.
+
+## 9. Bản hiện hành (22/10/2026)
+
+- 21 hãng · 219 thẻ dòng xe (161 chưa có hồ sơ) · 97 case · 24 cẩm nang (12 "Tư vấn dòng xe", 5 "Mẫu đèn × dòng xe", 7 "Kiến thức") · 6 FAQ (khớp FAQPage).
+- Schema: `ItemList dong-xe` 24 mục chọn lọc; `ItemList xe-thuc-te` 97 mục, URL lấy từ `href` của thẻ case (build dừng nếu href rỗng/null/undefined); `ItemList cam-nang` 24 mục.
+- `04` xuất từ registry `P` đầy đủ; `sku_status` 3 trạng thái: phiên bản ghi trong tiêu đề / tên chung xác nhận qua bài gốc / chưa đủ dữ kiện. Export dừng nếu có SKU mà không có slug.
+- **Khi lên production:** xoá hẳn khối `<aside id="bght-internal-check">` và `<script id="bght-internal-check-js">` khỏi HTML đầu ra (không chỉ ẩn), bỏ `noindex`, đổi link VinFast theo bảng mục 7, thêm lại link VF7 khi trang VF7 trả 200.

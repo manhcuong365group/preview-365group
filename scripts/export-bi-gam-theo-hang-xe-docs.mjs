@@ -58,7 +58,10 @@ fs.writeFileSync(path.join(out, '01_Noi_dung_Bi_gam_theo_hang_xe.md'), L.join('\
 const q = (x) => '"' + String(x ?? '').replace(/"/g, '""') + '"';
 // Registry theo yêu cầu F04-R2: mỗi dòng một mục, các URL tách riêng theo nhiệm vụ.
 const key = (x) => x.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const PSLUG = Object.fromEntries([...src.match(/var P=\{[^\n]*/)[0].matchAll(/\w+:\['([^']+)','([^']+)'/g)].map((m) => [m[1], m[2]]));
+const productBlock = src.match(/var P=\{([\s\S]*?)\};/);
+if (!productBlock) throw new Error('Không tìm thấy registry P');
+const PSLUG = Object.fromEntries([...productBlock[1].matchAll(/\w+:\['([^']+)','([^']+)'/g)].map((m) => [m[1], m[2]]));
+if (PSLUG['X-Light F10 New 2025'] !== 'den-bi-gam-x-light-f10-new-2025') throw new Error('Thiếu slug New 2025 trong bản export');
 const PNAMES = Object.keys(PSLUG).sort((a, z) => z.length - a.length);
 const F10V = Function('return ' + src.match(/var F10V=(\{[^\n]*?\});/)[1])();
 const skuOf = (title, slug) => {
@@ -71,11 +74,16 @@ const modelOfCase = (c) => (LINEUP[c[0]] || []).map((x) => x[0]).sort((a, z) => 
 const R = [['content_type', 'brand_key', 'model_key', 'Hãng', 'Dòng xe', 'Tiêu đề', 'vehicle_year', 'guide_url', 'case_url', 'sku_id', 'sku_url', 'sku_status', 'source', 'published', 'checked_at', 'review_scope']];
 for (const b in LINEUP) for (const [m] of LINEUP[b]) {
   const cs = CA.filter((c) => c[0] === b && modelOfCase(c) === m);
-  R.push([cs.length ? 'dong-xe-co-ho-so' : GUIDE[m] ? 'dong-xe-chi-co-tu-van' : 'chua-co-ho-so', key(b), key(m), b, m, '', '', GUIDE[m] ? 'https://auto365.vn/' + GUIDE[m] : '', '', '', '', '', ISRC[b] ? 'Dải xe: ' + ISRC[b] : 'Mẫu từng phân phối tại VN', '', today, 'Nguyễn Quang Đạo 19/10/2026: nội dung trang; không gồm fitment từng dòng xe']);
+  R.push([cs.length ? 'dong-xe-co-ho-so' : GUIDE[m] ? 'dong-xe-chi-co-tu-van' : 'chua-co-ho-so', key(b), key(m), b, m, '', '', GUIDE[m] ? 'https://auto365.vn/' + GUIDE[m] : '', '', '', '', '', ISRC[b] ? 'Dải xe: ' + ISRC[b] : 'Mẫu từng phân phối tại VN', '', today, 'Nguyễn Quang Đạo 19/10 + 21/10/2026: nội dung trang; không gồm fitment từng dòng xe']);
 }
 CA.forEach((c) => {
   const m = modelOfCase(c), sku = skuOf(c[2], c[3]);
-  R.push(['ho-so-xe', key(c[0]), key(m), c[0], m, c[2], '', '', 'https://auto365.vn/' + c[3], sku ? key(sku) : '', sku ? 'https://auto365.vn/' + PSLUG[sku] : '', sku ? (F10V[c[3]] ? 'Theo link sản phẩm trong bài (kiểm 21/10/2026)' : 'Dò từ tiêu đề bài, chưa xác nhận phiên bản') : (/X-Light F10 New/i.test(c[2]) ? 'F10 New không ghi năm, bài không link sản phẩm 2025: chưa tính vào SKU' : 'Chưa xác định'), 'Bài đã đăng auto365.vn', c[5], today, 'Chưa đối chiếu hồ sơ thi công gốc']);
+  if (sku && !PSLUG[sku]) throw new Error('SKU không có slug: ' + sku + ' (' + c[3] + ')');
+  // 3 trạng thái: phiên bản ghi rõ trong tiêu đề / tên chung đã xác nhận qua bài gốc / chưa đủ dữ kiện
+  const generic = /X-Light F10 New/i.test(c[2]) && !/F10 New 2025/i.test(c[2]);
+  const st = !sku ? (generic ? 'F10 New không ghi năm, bài không xác nhận bản 2025: chưa tính vào SKU' : 'Chưa xác định')
+    : generic ? 'Tên chung; phiên bản xác nhận qua link/mô tả sản phẩm trong bài (kiểm 21/10/2026)' : 'Phiên bản ghi trong tiêu đề bài';
+  R.push(['ho-so-xe', key(c[0]), key(m), c[0], m, c[2], '', '', 'https://auto365.vn/' + c[3], sku ? key(sku) : '', sku ? 'https://auto365.vn/' + PSLUG[sku] : '', st, 'Bài đã đăng auto365.vn', c[5], today, 'Chưa đối chiếu hồ sơ thi công gốc']);
 });
 main.querySelectorAll('.bght-guide').forEach((g) => {
   const lb = t(g.querySelector('.lb'));

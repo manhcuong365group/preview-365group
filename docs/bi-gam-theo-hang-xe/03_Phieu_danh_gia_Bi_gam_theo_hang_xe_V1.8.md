@@ -106,3 +106,15 @@ Anh Nguyễn Quang Đạo duyệt phần sửa 20–21/10 (chủ quản xác nh�
 | U3 | Khối "Kiểm tra nội bộ" cuối trang (chỉ hiện trên preview/localhost, xoá khi lên production) dẫn tới 01–05 trên GitHub, ghi trạng thái duyệt và điểm như trang VF7 |
 
 Ước tính sau xử lý (tự chấm, chờ reviewer): C 28,8 · SEO 28,7 · GEO 24,0 · U1–U2 9,6 · U3 4,7 → **khoảng 95,8/100**. Kết luận chính thức chờ reviewer chấm lại.
+
+## 6. Trạng thái hiện hành — tái kiểm R4 của reviewer (21/10/2026)
+
+**Kết quả chính thức R4: 94,3/100 — CHƯA ĐẠT.** C 28,8 · SEO 27,9 (chưa đạt) · GEO 23,9 (đạt) · U 13,7 (U3 4,1). Các số 95,5/95,8 ở mục 4–5 là tự chấm, chỉ giữ làm lịch sử.
+
+| Gói R4 | Đã vá 22/10/2026 | Kiểm |
+|---|---|---|
+| F08-R4 (S2) | Build lấy URL case từ `href` của `a.bght-case`; `abs()` dừng build nếu URL rỗng/null/undefined | 97/97 ListItem có URL riêng, khớp thứ tự href thẻ case; graph không còn `/null`, `/undefined` |
+| F04-R4 (U3) | Export đọc toàn khối registry `P`; dừng nếu thiếu slug New 2025 hoặc SKU không có slug; `sku_status` 3 trạng thái | CR-V 2018, Limo Green, XL7, City → `den-bi-gam-x-light-f10-new-2025`; Civic RS, Fortuner 2010 → "Phiên bản ghi trong tiêu đề bài"; BMW X5, Jeep không gán 2025; CSV không còn `/undefined` |
+| F07-R4 | 02: 21 hãng, 6 FAQ, 219 thẻ, mô tả popup tham khảo, bước xoá khối nội bộ khi lên production; 01/04 xuất lại cùng SHA; 05 ghi trạng thái | — |
+
+Còn mở: duyệt đợt 7 (sapo, bỏ link VF7) ở 05; QA mobile/tablet thật và payload CRM ô Dòng xe; production (HUB, VF7, xoá khối nội bộ). Chờ reviewer chấm lại.

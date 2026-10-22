@@ -41,3 +41,7 @@ Chủ quản xác nhận 21/10/2026: anh Nguyễn Quang Đạo đã duyệt toà
 Đợt 5 (21/10/2026, chủ quản chọn): khôi phục sapo bản 19/10 (đã duyệt lượt 19/10).
 Đợt 6 (21/10/2026): mô tả case hiển thị bỏ từ quảng cáo (bài gốc giữ nguyên); Limo Green tính F10 New 2025 theo mô tả bài gốc; khối Kiểm tra nội bộ (chỉ preview).
 Đợt 7 (21/10/2026, chủ quản chọn): sapo đổi "giải pháp tra cứu cấu hình đèn tương thích…" thành "trang tra cứu mẫu đèn đã lắp thực tế trên từng dòng xe" (theo góp ý F05 R2); tạm bỏ link VF7 (production 404) — cần duyệt.
+
+## Trạng thái hiện hành (22/10/2026)
+
+Đã duyệt kỹ thuật tới đợt 6 (lượt 21/10/2026). **Đợt 7 (sapo "trang tra cứu mẫu đèn đã lắp thực tế…", tạm bỏ link VF7) chưa có xác nhận duyệt.** Bản vá 22/10 (F08-R4 Schema, F04-R4 export) chỉ sửa script/dữ liệu xuất, không đổi nội dung hiển thị.
