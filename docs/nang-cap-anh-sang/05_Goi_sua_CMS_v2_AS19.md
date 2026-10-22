@@ -30,7 +30,7 @@ Ghi chú dưới bảng nhóm trên v2 vẫn nói mốc giá là "mẫu có giá
 
 **Sửa:**
 1. Ghi chú bảng đổi thành: *"Giá tham chiếu là giá niêm yết của mẫu được dẫn ở từng nhóm (theo trang sản phẩm), chưa gồm VAT, pát, dây và công lắp…"* — preview đã đổi câu này ngày 22/10/2026.
-2. **Kinh doanh xác nhận** 3 mẫu "lẻ" là 1 đèn hay 1 cặp; sửa đơn vị trên thẻ cho đúng (`/đèn` nếu là 1 đèn). Không tự sửa khi chưa có xác nhận.
+2. **Chủ quản xác nhận 22/10/2026: 3 mẫu "lẻ" là giá 1 đèn (lẻ).** Sửa đơn vị trên thẻ, modal và PDP từ `/bộ` thành **`/đèn`** (giá giữ nguyên 1.700.000đ / 1.700.000đ / 2.000.000đ). Không dùng 3 mẫu này làm mốc giá nhóm Bi LED (mốc nhóm tính theo bộ/cặp).
 3. Nếu là mẫu dành cho xe máy (PDP mô tả xe máy): gắn cờ ứng dụng hoặc đưa ra nhóm riêng, không để chung mốc giá Bi LED ô tô.
 
 ### R3-03 — Canonical staging (triển khai)
