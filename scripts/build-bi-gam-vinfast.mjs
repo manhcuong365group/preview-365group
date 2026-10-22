@@ -30,7 +30,7 @@ content = content.replace('<!-- @branch -->', () => branch).replace('<!-- @lead 
 const dom = new JSDOM(content, { runScripts: 'dangerously', pretendToBeVisual: true });
 const doc = dom.window.document;
 let html = content;
-for (const id of ['bgvf-tabs', 'bgvf-grid', 'bgvf-rail']) {
+for (const id of ['bgvf-tabs', 'bgvf-grid', 'bgvf-cf', 'bgvf-rail', 'bgvf-guides']) {
   const el = doc.getElementById(id);
   if (!el || !el.innerHTML.trim()) throw new Error('prerender empty: ' + id);
   const re = new RegExp(`(<div[^>]*id="${id}"[^>]*>)(</div>)`);
@@ -48,7 +48,7 @@ const absUrl = (u) => new URL(u, canonical + '/').href
   .replace('/nang-cap-anh-sang-bi-gam/vinfast-vf3/', '/nang-cap-anh-sang-bi-gam/vinfast/vf3')
   .replace(/\/$/, '');
 const models = [...doc.querySelectorAll('#bgvf-grid a.bgvf-m:not([data-car])')].map((a) => ({ name: 'VinFast ' + a.querySelector('b').firstChild.textContent.trim(), url: absUrl(a.getAttribute('href')) }));
-const cases = [...doc.querySelectorAll('#bgvf-rail a.bgvf-case')].map((a) => ({ name: 'VinFast ' + a.querySelector('h3').textContent.trim(), url: a.getAttribute('href') }));
+const cases = [...doc.querySelectorAll('#bgvf-rail a.bgvf-case')].map((a) => ({ name: a.querySelector('p').textContent.trim(), url: a.getAttribute('href') }));
 const faqs = [...doc.querySelectorAll('.bf-list details')].map((d) => ({ q: d.querySelector('summary').textContent.trim(), a: d.querySelector('p').textContent.trim() }));
 if (!models.length || !cases.length || !faqs.length) throw new Error('schema source empty');
 const itemList = (id, name, items) => ({ '@type': 'ItemList', '@id': canonical + '#' + id, name, numberOfItems: items.length,
