@@ -9,9 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"#365group","name":"365Group","description":"Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam"},
+{"@type":"Organization","@id":"#365group","name":"365Group","description":"Nhà phân phối phim cách nhiệt ô tô 3M tại Việt Nam"},
 {"@type":"Brand","@id":"#3m","name":"3M"},
-{"@type":"WebPage","name":"Phim cách nhiệt ô tô 3M – 3 dòng công nghệ, 6 cấu hình","inLanguage":"vi","publisher":{"@id":"#365group"},"author":{"@id":"#365group"},"about":{"@id":"#3m"},"dateModified":"2026-10-22"},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"365Group có phải là 3M không?","acceptedAnswer":{"@type":"Answer","text":"Không. 3M là thương hiệu sản xuất phim. 365Group là nhà phân phối phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc."}},
+{"@type":"Question","name":"Phim cách nhiệt 3M giá bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Giá phụ thuộc kích thước và kiểu xe, dòng phim chọn (Ceramic NR, Ceramic IR, Crystalline) và đại lý thi công. Chủ xe nên liên hệ đại lý gần nhất để nhận báo giá theo xe cụ thể."}},
+{"@type":"Question","name":"Nên dán phim 3M ở đâu?","acceptedAnswer":{"@type":"Answer","text":"Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành."}}]},
+{"@type":"WebPage","citation":"https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/","name":"Phim cách nhiệt ô tô 3M – 3 dòng công nghệ, 6 cấu hình","inLanguage":"vi","publisher":{"@id":"#365group"},"author":{"@id":"#365group"},"about":{"@id":"#3m"},"dateModified":"2026-10-22"},
 {"@type":"ItemList","name":"6 cấu hình phim cách nhiệt 3M","itemListElement":[
 {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"3M Ceramic NR","brand":{"@id":"#3m"},"description":"Kính lái NR 35; kính hông/lưng NR 25/15/5; bảo hành 7 năm"}},
 {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"3M Ceramic IR","brand":{"@id":"#3m"},"description":"Kính lái IR 50; kính hông/lưng IR 25/15; bảo hành 7 năm"}},
@@ -121,6 +125,12 @@ img{max-width:100%;display:block}
 .m3-src ul{margin:0;padding:0;list-style:none;font-size:14px;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}
 .m3-line-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;margin-bottom:4px}
 @media(max-width:768px){.m3-src{flex-direction:column}.m3-src ul{grid-template-columns:1fr}}
+.m3-why{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.m3-why div{border:1px solid var(--m3-line);border-top:3px solid var(--m3-red);border-radius:8px;padding:18px}
+.m3-why p{margin:6px 0 0;font-size:14px;color:var(--m3-mute)}
+.m3-faq details{background:#fff;border:1px solid var(--m3-line);border-radius:8px;padding:14px 18px;margin-bottom:10px}
+.m3-faq summary{font-weight:600;cursor:pointer}.m3-faq p{margin:8px 0 0;color:var(--m3-mute);font-size:14px}
+@media(max-width:768px){.m3-why{grid-template-columns:1fr}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
 @media(max-width:768px){
@@ -136,17 +146,17 @@ img{max-width:100%;display:block}
 </head>
 <body>
 <header class="m3-head"><div class="m3-wrap m3-head__in">
-  <a class="m3-logo" href="#"><b>3M</b><span><strong>365 GROUP</strong>Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam</span></a>
+  <a class="m3-logo" href="#"><b class="m3-logo__365">365</b><span><strong>365 GROUP</strong>Nhà phân phối phim cách nhiệt ô tô 3M™ tại Việt Nam</span></a>
   <nav class="m3-nav"><a href="#">Trang chủ</a><a class="on" href="#dong-phim">Phim cách nhiệt 3M</a><a href="#dai-ly">Hệ thống đại lý</a><a href="#so-sanh">Tài liệu &amp; Hỗ trợ</a><a href="#">Về 365Group</a></nav>
   <a class="m3-btn m3-btn--red" href="#tim-dai-ly">Tìm đại lý gần nhất</a>
 </div></header>
 
 <section class="m3-hero"><div class="m3-wrap">
-  <small>PHIM CÁCH NHIỆT Ô TÔ 3M™</small>
+  <small>365GROUP · NHÀ PHÂN PHỐI PHIM CÁCH NHIỆT Ô TÔ 3M™</small>
   <h1>3 dòng công nghệ<br>6 cấu hình tối ưu</h1>
   <h2>Kiểm soát nhiệt – Bảo vệ toàn diện – Đồng hành mọi hành trình</h2>
-  <p>3M mang đến giải pháp phim cách nhiệt ô tô toàn diện với 3 dòng công nghệ và 6 cấu hình, đáp ứng đa dạng nhu cầu từ tiết kiệm chi phí đến cao cấp nhất.</p>
-  <p class="m3-byline">✔ Thông tin chính thức từ <strong>365Group</strong> – Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam · Cập nhật: <time datetime="2026-10-22">22/10/2026</time></p>
+  <p>365Group phân phối phim cách nhiệt ô tô 3M™ tới hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.</p>
+  <p class="m3-byline">✔ Bài viết của <strong>365Group</strong> – nhà phân phối phim cách nhiệt ô tô 3M™ tại Việt Nam · Cập nhật: <time datetime="2026-10-22">22/10/2026</time></p>
   <div class="m3-hero__cta"><a class="m3-btn m3-btn--red" href="#dong-phim">Khám phá 3 dòng phim →</a><a class="m3-btn m3-btn--white" href="#tim-dai-ly">📍 Tìm đại lý gần nhất</a></div>
 </div></section>
 
@@ -201,6 +211,24 @@ img{max-width:100%;display:block}
   </div>
 </div></section>
 
+<section class="m3-sec"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Vì sao 365Group chọn phân phối phim 3M™</h2><p>Những điểm chính theo thông tin từ <a class="m3-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/" target="_blank" rel="noopener">trang Cá nhân hóa ô tô của 3M Việt Nam</a></p></div></div>
+  <div class="m3-why">
+    <div><b>Kinh nghiệm lâu năm của hãng</b><p>Theo 3M, hãng đã có hơn 55 năm phát triển phim phủ màu cửa kính và nhận bằng sáng chế phim chống nắng cho cửa kính đầu tiên vào năm 1966.</p></div>
+    <div><b>Dán bởi thợ được đào tạo</b><p>3M khuyến nghị dán tại thợ/đại lý được hãng ủy quyền và đào tạo. 365Group phân phối phim tới các đại lý trong hệ thống để chủ xe dán đúng quy trình.</p></div>
+    <div><b>Bền theo thời gian</b><p>Phim ô tô 3M được hãng thiết kế để dùng lâu dài; thời hạn bảo hành từng cấu hình ghi trong bảng so sánh phía trên.</p></div>
+  </div>
+</div></section>
+
+<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Câu hỏi thường gặp</h2></div></div>
+  <div class="m3-faq">
+    <details open><summary>365Group có phải là 3M không?</summary><p>Không. 3M là thương hiệu sản xuất phim. 365Group là nhà phân phối phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc.</p></details>
+    <details><summary>Phim cách nhiệt 3M giá bao nhiêu?</summary><p>Giá phụ thuộc kích thước và kiểu xe, dòng phim chọn (Ceramic NR, Ceramic IR, Crystalline) và đại lý thi công. Chủ xe nên liên hệ đại lý gần nhất để nhận báo giá theo xe cụ thể.</p></details>
+    <details><summary>Nên dán phim 3M ở đâu?</summary><p>Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành.</p></details>
+  </div>
+</div></section>
+
 <section class="m3-sec" id="dai-ly"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Hệ thống đại lý 3M toàn quốc</h2><p>365Group tự hào là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam</p></div>
     <div class="m3-stats"><div><b style="color:var(--m3-red)">224</b>Đại lý toàn quốc</div><div><b style="color:var(--m3-blue)">32</b>Tỉnh/Thành phố</div><div><b style="color:var(--m3-gold)">3</b>Nhóm đại lý</div></div></div>
@@ -215,10 +243,10 @@ img{max-width:100%;display:block}
 
 <section class="m3-sec m3-sec--grey"><div class="m3-wrap">
   <div class="m3-src">
-    <div class="m3-src__logo"><b>3M</b><span>365 GROUP</span></div>
+    <div class="m3-src__logo"><b>365</b><span>GROUP</span></div>
     <div>
-      <h2>Về thông tin trên trang này</h2>
-      <p>Nội dung do <strong>365Group</strong> – nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam – biên soạn. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.</p>
+      <h2>Về bài viết này</h2>
+      <p>Bài viết do <strong>365Group</strong> – nhà phân phối phim cách nhiệt ô tô 3M™ tại Việt Nam – biên soạn, tham khảo thông tin sản phẩm từ <a class="m3-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/" target="_blank" rel="noopener">3M Việt Nam</a>. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.</p>
       <ul>
         <li><b>Đơn vị xuất bản:</b> 365Group</li>
         <li><b>Thương hiệu sản phẩm:</b> 3M™ (Ceramic NR, Ceramic IR, Crystalline CR BLK)</li>
@@ -228,6 +256,6 @@ img{max-width:100%;display:block}
   </div>
 </div></section>
 
-<footer class="m3-foot">© 365Group – Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam</footer>
+<footer class="m3-foot">© 365Group – Nhà phân phối phim cách nhiệt ô tô 3M™ tại Việt Nam.<br>3M, Crystalline và các nhãn hiệu liên quan là thương hiệu của 3M Company.</footer>
 </body>
 </html>
