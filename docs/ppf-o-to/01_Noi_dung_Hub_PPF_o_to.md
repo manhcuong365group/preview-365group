@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `252f7920def59701161d005a63bb81359fde2b89e40d3680a284000d815dfb52`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `996a43e2fb70635ba8d85d7b7fbe582172a6529b74164abdb4db368189bebe6a`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -144,6 +144,28 @@ _Hướng xem xét phạm vi dán PPF theo tình huống_
 | Quan tâm bề mặt vân carbon | Xem mẫu thực tế của dòng carbon đang bán |
 
 Bảng chỉ để tham khảo, mỗi xe vẫn cần kiểm tra thực tế trước khi chọn phim. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
+
+**Có nên dán PPF? Lợi ích và giới hạn cần biết**
+
+BMW 530i sau khi hoàn thiện PPF 3M 200 Gloss (hồ sơ).
+
+PPF là khoản chi không nhỏ, nên cân nhắc cả lợi ích lẫn giới hạn trước khi quyết định.
+
+Lợi ích
+
+- Chịu thay sơn các vết xước nhẹ, đá dăm văng và va quẹt nhẹ khi đi đường hoặc rửa xe.
+- Hạn chế phân chim, nhựa cây, vết côn trùng bám lâu làm loang bề mặt sơn.
+- Giữ lớp sơn zin, có lợi khi chủ xe muốn giữ ngoại hình xe lâu dài.
+- Có bản bóng giữ màu sơn gốc, bản mờ hoặc vân carbon nếu muốn đổi bề mặt mà không sơn lại.
+
+Giới hạn
+
+- Không chống được móp méo hay va chạm mạnh làm biến dạng thân vỏ.
+- Kết quả phụ thuộc nhiều vào tay nghề: thi công kém dễ để lại bọt khí, hở mép hoặc lộ đường nối.
+- Xe từng sơn dặm chưa đạt độ bám có thể bị kéo sơn khi bóc phim sau này, nên cần kiểm tra trước khi dán.
+- Chi phí cao hơn phủ ceramic; vết xước đã có trên sơn sẽ nằm lại dưới phim nếu không xử lý trước.
+
+Ngân sách giới hạn có thể chọn dán các vị trí hay va quẹt trước, xem mục Chọn phạm vi dán theo nhu cầu.
 
 **PPF TPU, TPH và PVC khác nhau thế nào?**
 
@@ -300,6 +322,10 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 **Có thể tháo PPF ra không?**
 
 **PPF có tự phục hồi vết xước không?**
+
+**Xe cũ đã có vết xước có dán PPF được không?**
+
+**Nên chọn PPF bóng hay PPF mờ?**
 
 **Dán PPF màu hoặc wrap đổi màu xe có phải đăng ký lại không?**
 

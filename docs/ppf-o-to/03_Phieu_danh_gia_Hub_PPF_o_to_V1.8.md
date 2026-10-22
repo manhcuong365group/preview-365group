@@ -38,6 +38,8 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 | R21-04 | Một phần | Anh Đặng Minh Hoàng duyệt lại toàn bài bản 22/10/2026 (gồm câu trích chuyên gia và các sửa R21-01/R21-02); lastReviewed = 2026-10-22. Commercial/CRM/pháp lý hợp nhất còn CX |
 | R21-05 | Giữ nguyên | Chủ trang yêu cầu bỏ dòng chữ dưới sơ đồ (20/10); bảng 5 tình huống và FAQ đã nêu phạm vi thống nhất khi kiểm tra xe |
 
+Bổ sung 22/10/2026 (sau khi anh Hoàng duyệt bản sáng): mục kiến thức k07 "Có nên dán PPF? Lợi ích và giới hạn" và 2 FAQ (xe cũ đã xước; PPF bóng hay mờ), FAQ hiển thị 9 = FAQPage 9. Phần bổ sung này cần reviewer xem lại.
+
 Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -53,7 +55,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `252f7920def59701161d005a63bb81359fde2b89e40d3680a284000d815dfb52` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `996a43e2fb70635ba8d85d7b7fbe582172a6529b74164abdb4db368189bebe6a` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
