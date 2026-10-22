@@ -46,14 +46,15 @@ img{max-width:100%;display:block}
 .m3-nav{display:flex;gap:18px;white-space:nowrap;font-size:14px;color:var(--m3-mute)}
 .m3-nav a.on{color:var(--m3-red);font-weight:600}
 /* hero */
-.m3-hero{position:relative;color:#fff;background:#111 url(hinh/hero-3m-pro-shop-training-center.webp) 70% center/cover}
-.m3-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,12,.94) 0%,rgba(10,10,12,.86) 45%,rgba(10,10,12,.35) 100%)}
-.m3-hero .m3-wrap{position:relative;padding:72px 16px 80px}
+.m3-hero{position:relative;color:#fff;background:linear-gradient(120deg,#141518 0%,#1d1f24 60%,#2a0d0f 100%)}
+.m3-hero .m3-wrap{position:relative;padding:56px 16px;display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+.m3-hero__img{margin:0;border-radius:10px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.08)}
+.m3-hero__img img{width:100%;aspect-ratio:701/436;object-fit:cover}
 .m3-hero small{font-weight:600;letter-spacing:.06em;font-size:13px}
 .m3-hero h1{font-size:44px;line-height:1.15;margin:12px 0}
 .m3-hero__sub{font-size:22px;font-weight:600;color:#fff!important;margin:0 0 10px!important}
 .m3-hero h2{font-size:20px;margin:0 0 14px;font-weight:600}
-.m3-hero p{max-width:520px;color:#f1f1f1;text-shadow:0 1px 2px rgba(0,0,0,.6);margin:0 0 26px}
+.m3-hero p{max-width:560px;color:#e9e9ea;margin:0 0 26px}
 .m3-hero__cta{display:flex;gap:12px;flex-wrap:wrap}
 /* features */
 .m3-feat{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--m3-line)}
@@ -157,7 +158,7 @@ img{max-width:100%;display:block}
 .m3-feat div{flex-direction:column;gap:6px;padding:14px 12px}.m3-feat i{font-size:22px}.m3-feat b{font-size:13px}
 .m3-hero h1{font-size:27px;margin:8px 0}.m3-hero .m3-wrap{padding:32px 16px}
 .m3-hero small{font-size:11px}.m3-hero__sub{font-size:16px}.m3-hero h2{font-size:15px}.m3-hero p{font-size:14px;margin-bottom:16px}.m3-byline{font-size:12px}
-.m3-hero:before{background:rgba(10,10,12,.84)}
+.m3-hero .m3-wrap{grid-template-columns:1fr;gap:20px}
 .m3-hero__cta .m3-btn{flex:1;justify-content:center;padding:10px 12px;font-size:13px}
 .m3-feat{grid-template-columns:1fr 1fr}.m3-feat div:nth-child(3){border-left:0}.m3-feat div:nth-child(n+3){border-top:1px solid var(--m3-line)}
 .m3-lines,.m3-tree,.m3-cmp,.m3-dl{grid-template-columns:1fr}
@@ -176,6 +177,7 @@ img{max-width:100%;display:block}
 </div></header>
 
 <section class="m3-hero"><div class="m3-wrap">
+  <div class="m3-hero__txt">
   <small>365GROUP · NHÀ PHÂN PHỐI CHÍNH THỨC PHIM CÁCH NHIỆT Ô TÔ 3M™</small>
   <h1>Phim cách nhiệt ô tô 3M™</h1>
   <p class="m3-hero__sub">3 dòng công nghệ · 6 cấu hình dán trọn xe</p>
@@ -183,6 +185,8 @@ img{max-width:100%;display:block}
   <p>365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.</p>
   <p class="m3-byline">✔ Bài viết của <strong>365Group</strong> – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Cập nhật: <time datetime="2026-10-22">22/10/2026</time></p>
   <div class="m3-hero__cta"><a class="m3-btn m3-btn--red" href="#dong-phim">Khám phá 3 dòng phim →</a><a class="m3-btn m3-btn--white" href="#tim-dai-ly">📍 Tìm đại lý gần nhất</a></div>
+  </div>
+  <figure class="m3-hero__img"><img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center" width="701" height="436"></figure>
 </div></section>
 
 <div class="m3-wrap m3-feat">
