@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `32f798df01060cfcdde2bcd10e086a57ca6eeacb6bf06e91e64576fe1e45800f`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `491824c651afee59ab2d480f95670939622b361f72a336d705fc35a5777fb2de`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -27,12 +27,6 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 - AX Film Clear PPF Carbon Fiber — 80.000.000 đ / toàn xe · gồm VAT · Bề mặt: Vân carbon trong · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-clear-carbon-fiber
 - AX Film Gloss PPF Carbon Fiber — 80.000.000 đ / toàn xe · gồm VAT · Bề mặt: Vân carbon bóng · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-carbon-fiber
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
-
-## Bảng giá dán lẻ AX Film PPF theo vị trí  `#gia-dan-le`
-
-Không cần dán toàn xe, có thể dán riêng từng vị trí hay va quẹt.
-
-Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. Dán lẻ 3M PPF báo giá riêng.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
@@ -150,6 +144,12 @@ _Hướng xem xét phạm vi dán PPF theo tình huống_
 | Quan tâm bề mặt vân carbon | Xem mẫu thực tế của dòng carbon đang bán |
 
 Bảng chỉ để tham khảo, mỗi xe vẫn cần kiểm tra thực tế trước khi chọn phim. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
+
+**Bảng giá dán lẻ AX Film PPF theo vị trí**
+
+Không cần dán toàn xe, có thể dán riêng từng vị trí hay va quẹt. Giá dưới đây là mức thấp nhất để tham khảo.
+
+Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. Dán lẻ 3M PPF báo giá riêng.
 
 **Có nên dán PPF? Lợi ích và giới hạn cần biết**
 
