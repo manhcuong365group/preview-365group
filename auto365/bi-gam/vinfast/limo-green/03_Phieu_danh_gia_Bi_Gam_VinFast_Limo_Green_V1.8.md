@@ -82,3 +82,14 @@ S3: domain chốt auto365.vn, canonical/@id/breadcrumb đã đổi (trang chưa 
 | 9,7 | 9,5 | 9,5 | 9,8 | 9,6 | 9,4 | 9,6 | 9,7 | 4,8 | 4,8 | 4,7 | 4,6 |
 
 C 28,7 · S 28,8 · G 24,1 · U 14,1 → **95,7/100 — ĐẠT**. U2 chưa tối đa: trang chưa live nên chưa test lead trên chính trang này.
+
+
+## Chấm lại 22/10/2026 sau khi ghi phạm vi đời/phiên bản (12 tiêu chí, có U3, /100)
+
+- C2/G1/G3: trang ghi rõ phạm vi Limo Green các đời từ 2025, mọi phiên bản (anh Đạo duyệt).
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,7 | 9,7 | 9,5 | 9,8 | 9,6 | 9,4 | 9,7 | 9,7 | 4,9 | 4,8 | 4,7 | 4,6 |
+
+C 28,9 · S 28,8 · G 24,3 · U 14,1 → **96,1/100 — ĐẠT**.

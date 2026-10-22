@@ -32,7 +32,7 @@
 | Trang Limo Green (`../limo-green/`) được link ở "Dòng xe VinFast khác" | Kiểm tra khi trang lên preview |
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `c8abcae494f16e6b736019fbedcba9cd09c596455fec8db97bde4e289a1d2fef`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `e453ccaa12c6a2b63aea82f2d737cc7ed245aae8e336e3d09a31060d8386f33d`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Fadil (22/10/2026)
@@ -69,3 +69,4 @@ Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12
 
 - **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.- Trang chưa đăng trên auto365.vn (404 ngày 22/10) — IT đăng bản preview hiện hành; khi đăng gỡ khối #vf3lp-internal-check, bỏ noindex.
 - **Giá đã duyệt (user 22/10/2026):** X-Light F10 Pro 5.500.000đ/bộ; X-Light F10 New (2025) 4.300.000đ/bộ — chưa VAT.
+- **Phạm vi đời/phiên bản:** Fadil đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp — anh Nguyễn Quang Đạo duyệt (user chuyển lại 22/10/2026). Đã ghi trên trang trong khối "Khi nào cần kiểm tra xe".

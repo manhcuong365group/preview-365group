@@ -30,7 +30,7 @@
 | Trang `../limo-green/`, `../fadil/` được link trong "Dòng xe VinFast khác" | Kiểm tra đã có trước khi đăng |
 | Xoá khối `#vf3lp-internal-check`; chốt domain; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `fc1a201ee4479c48612c63a72cb6c90a268897c276a850dba33489dbc7e9a7fb`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `5daf4706be28c3e62dc32f3cb609836bf4beedece148d63f31073331e68ad6ae`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Lux SA2.0 (22/10/2026)
@@ -64,3 +64,4 @@ Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12
 ## Cập nhật 22/10/2026
 
 - **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.- Trang chưa đăng trên auto365.vn (404 ngày 22/10) — IT đăng bản preview hiện hành; khi đăng gỡ khối #vf3lp-internal-check, bỏ noindex.
+- **Phạm vi đời/phiên bản:** Lux SA2.0 đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp — anh Nguyễn Quang Đạo duyệt (user chuyển lại 22/10/2026). Đã ghi trên trang trong khối "Khi nào cần kiểm tra xe".
