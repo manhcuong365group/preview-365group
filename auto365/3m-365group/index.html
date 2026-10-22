@@ -138,6 +138,17 @@ img{max-width:100%;display:block}
 .m3-spec tr.tser td{background:var(--m3-red);color:#fff;font-weight:700;font-size:15px}.m3-spec tr.tser td small{color:#fde}
 .m3-spec tr.tser td:first-child{background:var(--m3-red-d);color:#fff}
 .m3-spec-note{margin:14px 0 0;padding-left:18px;font-size:13px;color:var(--m3-mute)}
+.m3-certs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.m3-cert{all:unset;cursor:pointer;background:#fff;border:1px solid var(--m3-line);border-radius:8px;padding:10px;display:flex;flex-direction:column;gap:2px;transition:box-shadow .2s}
+.m3-cert:hover,.m3-cert:focus-visible{box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.m3-cert img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-bottom:8px;background:#eee}
+.m3-cert b{font-size:14px}.m3-cert span{font-size:12px;color:var(--m3-mute)}
+.m3-lb{border:0;padding:0;max-width:min(92vw,1000px);background:transparent}
+.m3-lb::backdrop{background:rgba(0,0,0,.8)}
+.m3-lb img{display:block;max-width:100%;max-height:82vh;margin:0 auto;border-radius:6px}
+.m3-lb p{color:#fff;text-align:center;margin:10px 0 0;font-size:14px}
+.m3-lb__x{position:fixed;top:12px;right:16px;font-size:34px;line-height:1;color:#fff;background:none;border:0;cursor:pointer}
+@media(max-width:768px){.m3-certs{grid-template-columns:1fr 1fr;gap:10px}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1200px){.m3-nav{display:none}}
 @media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
@@ -255,11 +266,26 @@ img{max-width:100%;display:block}
   </div>
 </div></section>
 
+<section class="m3-sec m3-sec--grey" id="chung-nhan"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Chứng nhận từ 3M</h2><p>Giấy chứng nhận nhà phân phối và các chứng nhận 3M của hệ thống 365Group – Auto365</p></div></div>
+  <div class="m3-certs">
+    <button type="button" class="m3-cert" data-src="hinh/cert-distributor-365group.webp" data-cap="Chứng nhận nhà phân phối 3M – 365Group"><img src="hinh/cert-distributor-365group.webp" alt="Chứng nhận nhà phân phối 3M – 365Group" loading="lazy"><b>Chứng nhận nhà phân phối 3M</b><span>365Group</span></button>
+    <button type="button" class="m3-cert" data-src="hinh/cert-3m-pro-shop.webp" data-cap="Chứng nhận 3M Pro Shop – Auto365 Center"><img src="hinh/cert-3m-pro-shop.webp" alt="Chứng nhận 3M Pro Shop – Auto365 Center" loading="lazy"><b>Chứng nhận 3M Pro Shop</b><span>Auto365 Center</span></button>
+    <button type="button" class="m3-cert" data-src="hinh/cert-preferred-installer.webp" data-cap="3M Preferred Installer – Đơn vị thi công ưu tiên"><img src="hinh/cert-preferred-installer.webp" alt="3M Preferred Installer – Đơn vị thi công ưu tiên" loading="lazy"><b>3M Preferred Installer</b><span>Đơn vị thi công ưu tiên</span></button>
+    <button type="button" class="m3-cert" data-src="hinh/cert-training-center-event.webp" data-cap="3M Training Center – Lễ trao chứng nhận"><img src="hinh/cert-training-center-event.webp" alt="3M Training Center – Lễ trao chứng nhận" loading="lazy"><b>3M Training Center</b><span>Lễ trao chứng nhận</span></button>
+  </div>
+</div></section>
+<dialog class="m3-lb" id="m3-lb"><form method="dialog"><button class="m3-lb__x" aria-label="Đóng">×</button></form><img alt=""><p></p></dialog>
+<script>
+document.querySelectorAll(".m3-cert").forEach(function(b){b.addEventListener("click",function(){var d=document.getElementById("m3-lb");d.querySelector("img").src=b.dataset.src;d.querySelector("img").alt=b.dataset.cap;d.querySelector("p").textContent=b.dataset.cap;d.showModal()})});
+document.getElementById("m3-lb").addEventListener("click",function(e){if(e.target===this)this.close()});
+</script>
+
 <section class="m3-sec" id="dai-ly"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Hệ thống đại lý 3M toàn quốc</h2><p>365Group tự hào là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam</p></div>
     <div class="m3-stats"><div><b style="color:var(--m3-red)">224</b>Đại lý toàn quốc</div><div><b style="color:var(--m3-blue)">32</b>Tỉnh/Thành phố</div><div><b style="color:var(--m3-gold)">3</b>Nhóm đại lý</div></div></div>
   <div class="m3-dl">
-    <a href="../he-thong/"><div><h3>3M PRO SHOP</h3><p>Chuỗi trung tâm chuyên nghiệp, đạt chuẩn 3M toàn cầu.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/cert-3m-pro-shop.jpg" alt="3M Pro Shop" loading="lazy"></a>
+    <a href="../he-thong/"><div><h3>3M PRO SHOP</h3><p>Chuỗi trung tâm chuyên nghiệp, đạt chuẩn 3M toàn cầu.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center" loading="lazy" style="object-position:30% center"></a>
     <a href="../he-thong/"><div><h3>Đại lý hệ thống Auto365</h3><p>Hệ thống đại lý Auto365 phủ rộng toàn quốc, thi công chuyên nghiệp.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/team-auto365.jpg" alt="Auto365" loading="lazy"></a>
     <a href="#tim-dai-ly"><div><h3>Đại lý 3M khác</h3><p>Các đại lý ủy quyền 3M trên toàn quốc.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/xe-vinfast-vf8.jpg" alt="Đại lý 3M" loading="lazy"></a>
   </div>
