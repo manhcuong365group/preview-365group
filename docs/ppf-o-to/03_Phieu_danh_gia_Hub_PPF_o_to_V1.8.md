@@ -38,7 +38,7 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 | R21-04 | Một phần | Anh Đặng Minh Hoàng duyệt lại toàn bài bản 22/10/2026 (gồm câu trích chuyên gia và các sửa R21-01/R21-02); lastReviewed = 2026-10-22. Commercial/CRM/pháp lý hợp nhất còn CX |
 | R21-05 | Giữ nguyên | Chủ trang yêu cầu bỏ dòng chữ dưới sơ đồ (20/10); bảng 5 tình huống và FAQ đã nêu phạm vi thống nhất khi kiểm tra xe |
 
-Bổ sung 22/10/2026 (sau khi anh Hoàng duyệt bản sáng): mục kiến thức k07 "Có nên dán PPF? Lợi ích và giới hạn" và 2 FAQ (xe cũ đã xước; PPF bóng hay mờ), FAQ hiển thị 9 = FAQPage 9. Phần bổ sung này cần reviewer xem lại.
+Bổ sung 22/10/2026 (sau khi anh Hoàng duyệt bản sáng): mục kiến thức k07 "Có nên dán PPF? Lợi ích và giới hạn" và 2 FAQ (xe cũ đã xước; PPF bóng hay mờ), FAQ hiển thị 9 = FAQPage 9. Đã được anh Hoàng duyệt 22/10/2026.
 
 Bổ sung 22/10/2026: mục kiến thức k08 (accordion, sau k00) — 12 vị trí dán lẻ kèm giá thấp nhất "từ" (AX G Series, Sedan/SUV hạng A–B; chủ trang yêu cầu chỉ để giá tượng trưng), nguồn: bảng giá tham khảo AX Film cho khách lẻ, gồm VAT (chủ trang cung cấp 22/10). Giá toàn xe A–B/C–D/MPV khớp card và AggregateOffer hiện có. FAQ chi phí (hiển thị + FAQPage) thêm dán lẻ từ 400.000đ (A–B). Dán lẻ 3M chưa có bảng.
 
@@ -65,7 +65,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | U2 | 5 | 4,4 | 4,8 | R21-01: finder giữ q + service=ppf (Quảng Ninh → 8 điểm), nút miền dùng mien= |
 | U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; anh Hoàng duyệt lại toàn bài 22/10. Commercial/CRM còn CX |
 
-**Tổng tự chấm: C 29,1 · S 29,0 · G 24,0 · U 14,2 → 96,3/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,0 ≥ 23,75. Phần bổ sung sau bản duyệt sáng 22/10 (giá dán lẻ, k07, 2 FAQ, quy trình ảnh thật, định nghĩa PPF) cần anh Hoàng xem lại; cần reviewer tái chấm; chưa nghiệm thu Live.
+**Tổng tự chấm: C 29,1 · S 29,0 · G 24,0 · U 14,2 → 96,3/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,0 ≥ 23,75. Phần bổ sung sau bản duyệt sáng 22/10 (giá dán lẻ, k07, 2 FAQ, quy trình ảnh thật, định nghĩa PPF) đã được anh Đặng Minh Hoàng xem và duyệt ngày 22/10/2026; cần reviewer tái chấm; chưa nghiệm thu Live.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
