@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ff371084dcc2a0c73cdeb8b8e901732b711b161689dc5cf391464c69f6636f4a`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `18da502927fe9f1b0e77734818084e8f6fe87e1c7bda2d23eb10e43f0ab262f9`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -119,7 +119,7 @@ Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn ph
 
 ## Quy trình thi công PPF  `#quy-trinh`
 
-6 bước từ lúc nhận xe đến khi bàn giao.
+6 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công tại Auto365, bấm ảnh để xem bài.
 
 1. 1Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí
 2. 2Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn
