@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ac829b23638b8c70380fce8d5e2936a0c0ba300ddb69f2099a14c5cb17846f07`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c2947a6cba7e02d9065b7426dd59900b6efd1704d16344b0e6799020044b6840`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (19/10/2026) · Cập nhật 21/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (19/10/2026) · Cập nhật 22/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -149,17 +149,14 @@ Bảng chỉ để tham khảo, mỗi xe vẫn cần kiểm tra thực tế trư
 
 Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (hồ sơ).
 
-PPF trên thị trường thường được chia theo ba nhóm vật liệu nền: TPU, TPH và PVC. Các dòng PPF phân khúc cao thường dùng nền TPU (polyurethane nhiệt dẻo) vì dẻo, ôm bề mặt tốt và có thể phủ lớp tự phục hồi; TPH và PVC thường gặp ở phân khúc giá thấp hơn. Bảng dưới là xu hướng chung của ngành — đặc tính cụ thể vẫn phụ thuộc từng dòng phim.
+PPF trên thị trường thường được chia theo ba nhóm vật liệu nền: TPU, TPH và PVC. Phần lớn các dòng PPF của những hãng lớn công bố nền TPU (polyurethane nhiệt dẻo). TPH là tên gọi thương mại, thành phần tùy nhà sản xuất. Vì vậy không nên đánh giá phim chỉ qua tên vật liệu: độ dẻo, khả năng tự phục hồi, chống ố vàng và độ bền khác nhau theo từng dòng phim.
 
 _So sánh vật liệu PPF: TPU, TPH và PVC_
 
 | Tiêu chí | TPU | TPH | PVC |
 | --- | --- | --- | --- |
 | Bản chất | Polyurethane nhiệt dẻo | Tên gọi thương mại, thành phần tùy nhà sản xuất | Nhựa PVC |
-| Độ dẻo, ôm đường cong | Cao | Trung bình | Thấp |
-| Tự phục hồi vết xước nhẹ | Có trên nhiều dòng (khi gặp nhiệt) | Hạn chế | Không |
-| Lão hoá dưới UV | Chậm hơn, tùy lớp phủ | Trung bình | Dễ lão hoá, ố vàng |
-| Tuổi thọ, giá | Cao nhất · giá cao | Kém TPU · giá trung bình | Thấp · giá rẻ |
+| Độ dẻo, tự phục hồi, chống ố vàng, độ bền | Khác nhau theo từng dòng phim, kể cả trong cùng một nhóm vật liệu. Xem tài liệu kỹ thuật (TDS) và phiếu bảo hành của đúng sản phẩm. |
 
 Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)). Mức độ cụ thể khác nhau theo từng dòng phim.
 
@@ -171,13 +168,13 @@ Mỗi hãng có nhiều dòng PPF ở các phân khúc khác nhau. Khi so sánh,
 
 Chọn phim có thương hiệu, tài liệu kỹ thuật (TDS) và kênh phân phối rõ ràng; đối chiếu tên dòng phim trên hộp, báo giá và phiếu bảo hành.
 
-Phổ biến khoảng 6–10 mil (1 mil = 0,0254 mm). Phim dày chịu va đập tốt hơn nhưng cứng hơn khi ôm chi tiết cong; nên xem cùng cấu tạo, không chỉ so số mil.
+Phổ biến khoảng 6–10 mil (1 mil = 0,0254 mm). Độ dày là một thông số cần đối chiếu cùng cấu tạo, lớp phủ và hướng dẫn của từng dòng phim. So sánh khả năng bảo vệ giữa các sản phẩm cần tài liệu và kết quả thử cùng điều kiện, không chỉ so số mil.
 
 Quyết định khả năng tự phục hồi vết xước nhẹ khi gặp nhiệt, kỵ nước, chống bám bẩn và hạn chế ố vàng — khác nhau theo từng dòng.
 
 Bóng giữ màu sơn zin; mờ (matte) đổi sang bề mặt mờ; vân carbon hoặc màu thay đổi ngoại hình. Nên xem mẫu thực tế trên xe trước khi chọn.
 
-Keo tốt giúp phim bám chắc, ít nhấc mép và bóc ra không để lại keo khi cần thay; sơn sửa lại cần kiểm tra kỹ trước khi dán.
+Keo ảnh hưởng tới độ bám mép và việc bóc phim khi cần thay. Bề mặt sau khi bóc còn tùy vật liệu, nền sơn, tình trạng phim và cách tháo; sơn sửa lại cần kiểm tra kỹ trước khi dán.
 
 Xem thời hạn và phạm vi (ố vàng, nứt, bong tróc, dính keo) ghi trên phiếu; hư hỏng do va chạm thường không thuộc bảo hành.
 
@@ -308,7 +305,7 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 21/10/2026
+Kiểm duyệt nội dung hub PPF ngày 19/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 22/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
