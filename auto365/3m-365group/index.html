@@ -11,6 +11,7 @@
 {"@context":"https://schema.org","@graph":[
 {"@type":"Organization","@id":"#365group","name":"365Group","description":"Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam"},
 {"@type":"Brand","@id":"#3m","name":"3M"},
+{"@type":"WebPage","name":"Phim cách nhiệt ô tô 3M – 3 dòng công nghệ, 6 cấu hình","inLanguage":"vi","publisher":{"@id":"#365group"},"author":{"@id":"#365group"},"about":{"@id":"#3m"},"dateModified":"2026-10-22"},
 {"@type":"ItemList","name":"6 cấu hình phim cách nhiệt 3M","itemListElement":[
 {"@type":"ListItem","position":1,"item":{"@type":"Product","name":"3M Ceramic NR","brand":{"@id":"#3m"},"description":"Kính lái NR 35; kính hông/lưng NR 25/15/5; bảo hành 7 năm"}},
 {"@type":"ListItem","position":2,"item":{"@type":"Product","name":"3M Ceramic IR","brand":{"@id":"#3m"},"description":"Kính lái IR 50; kính hông/lưng IR 25/15; bảo hành 7 năm"}},
@@ -112,6 +113,14 @@ img{max-width:100%;display:block}
 .m3-find h3{margin:0;text-transform:uppercase}.m3-find p{margin:4px 0 14px;color:var(--m3-mute);font-size:14px}
 .m3-find form{display:flex;gap:10px;flex-wrap:wrap}
 .m3-find select{flex:1;min-width:180px;padding:10px;border:1px solid var(--m3-line);border-radius:6px;font:inherit;font-size:14px}
+.m3-byline{font-size:13px;color:#e8e8e8;background:rgba(255,255,255,.1);border-left:3px solid var(--m3-red);padding:8px 12px;max-width:560px!important}
+.m3-src{display:flex;gap:24px;background:#fff;border:1px solid var(--m3-line);border-radius:8px;padding:24px}
+.m3-src__logo{flex:none;width:96px;height:96px;border-radius:8px;background:var(--m3-ink);display:grid;place-items:center;align-content:center;color:#fff;font-size:11px;font-weight:600}
+.m3-src__logo b{font-size:34px;color:var(--m3-red);line-height:1}
+.m3-src h2{margin:0 0 8px;font-size:20px}.m3-src p{margin:0 0 12px;color:var(--m3-mute);font-size:14px}
+.m3-src ul{margin:0;padding:0;list-style:none;font-size:14px;display:grid;grid-template-columns:1fr 1fr;gap:6px 20px}
+.m3-line-tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;margin-bottom:4px}
+@media(max-width:768px){.m3-src{flex-direction:column}.m3-src ul{grid-template-columns:1fr}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
 @media(max-width:768px){
@@ -137,6 +146,7 @@ img{max-width:100%;display:block}
   <h1>3 dòng công nghệ<br>6 cấu hình tối ưu</h1>
   <h2>Kiểm soát nhiệt – Bảo vệ toàn diện – Đồng hành mọi hành trình</h2>
   <p>3M mang đến giải pháp phim cách nhiệt ô tô toàn diện với 3 dòng công nghệ và 6 cấu hình, đáp ứng đa dạng nhu cầu từ tiết kiệm chi phí đến cao cấp nhất.</p>
+  <p class="m3-byline">✔ Thông tin chính thức từ <strong>365Group</strong> – Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam · Cập nhật: <time datetime="2026-10-22">22/10/2026</time></p>
   <div class="m3-hero__cta"><a class="m3-btn m3-btn--red" href="#dong-phim">Khám phá 3 dòng phim →</a><a class="m3-btn m3-btn--white" href="#tim-dai-ly">📍 Tìm đại lý gần nhất</a></div>
 </div></section>
 
@@ -156,26 +166,15 @@ img{max-width:100%;display:block}
   </div>
 </div></section>
 
-<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
-  <div class="m3-sec__hd"><div><h2>Từ 3 dòng phim tạo nên 6 cấu hình</h2><p>Linh hoạt lựa chọn theo nhu cầu, ngân sách và phong cách của bạn</p></div></div>
-  <div class="m3-tree">
-    <div class="m3-node"><b class="c-nr">CERAMIC NR</b><div class="arrow">↓</div><span class="m3-chip">Ceramic NR<small>1 cấu hình</small></span></div>
-    <div class="m3-node"><b class="c-ir">CERAMIC IR</b><div class="arrow">↓</div><span class="m3-chip">Ceramic IR<small>1 cấu hình</small></span></div>
-    <div class="m3-node m3-node--cr"><b class="c-cr">CRYSTALLINE CR BLK</b><div class="grid">
-      <span class="m3-chip">Crystalline Hybrid<small>1 cấu hình</small></span><span class="m3-chip">Hybrid PRO<small>1 cấu hình</small></span>
-      <span class="m3-chip">Crystalline CR BLK<small>1 cấu hình</small></span><span class="m3-chip">CR BLK PRO<small>1 cấu hình</small></span></div></div>
-  </div>
-</div></section>
-
 <section class="m3-sec"><div class="m3-wrap">
-  <div class="m3-sec__hd"><div><h2>6 cấu hình phim cách nhiệt 3M</h2><p>Từ phổ thông đến cao cấp, luôn có giải pháp phù hợp cho bạn</p></div></div>
+  <div class="m3-sec__hd"><div><h2>6 cấu hình phim cách nhiệt 3M</h2><p>Ceramic NR và Ceramic IR mỗi dòng 1 cấu hình; Crystalline CR BLK có 4 cấu hình</p></div></div>
   <div class="m3-cfg">
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-toyota-camry.jpg" alt="Xe dán 3M Ceramic NR" loading="lazy"><span class="m3-tag t-red">Ưu tiên chi phí</span></div><div class="m3-card__bd"><h3>3M Ceramic NR</h3><ul><li>Kính lái: NR 35</li><li>Kính hông/lưng: NR 25/15/5</li><li>Bảo hành: 7 năm</li></ul><a class="m3-btn m3-btn--line" href="../danh-gia-3m-ceramic-nr/">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-mazda-cx5.jpg" alt="Xe dán 3M Ceramic IR" loading="lazy"><span class="m3-tag t-blue">Cân bằng hiệu suất</span></div><div class="m3-card__bd"><h3>3M Ceramic IR</h3><ul><li>Kính lái: IR 50</li><li>Kính hông/lưng: IR 25/15</li><li>Bảo hành: 7 năm</li></ul><a class="m3-btn m3-btn--line" href="../ceramic-ir/">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-honda-civic.jpg" alt="Xe dán 3M Crystalline Hybrid" loading="lazy"><span class="m3-tag t-gold">Kính lái Crystalline</span></div><div class="m3-card__bd"><h3>Crystalline Hybrid</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-crystalline-hybrid/">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-kia-k5.jpg" alt="Xe dán 3M Crystalline CR BLK" loading="lazy"><span class="m3-tag t-gold">Đồng bộ Crystalline</span></div><div class="m3-card__bd"><h3>Crystalline CR BLK</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../crystalline-cr-blk/">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-volvo-xc90.jpg" alt="Xe dán 3M Hybrid PRO" loading="lazy"><span class="m3-tag t-gold">PRO – Tầm nhìn tối ưu</span></div><div class="m3-card__bd"><h3>Hybrid PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="#tim-dai-ly">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-porsche-panamera.jpg" alt="Xe dán 3M CR BLK PRO" loading="lazy"><span class="m3-tag t-gold">PRO – Cao cấp nhất</span></div><div class="m3-card__bd"><h3>CR BLK PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-cr-blk-pro/">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-toyota-camry.jpg" alt="Xe dán 3M Ceramic NR" loading="lazy"><span class="m3-tag t-red">Ưu tiên chi phí</span></div><div class="m3-card__bd"><span class="m3-line-tag c-nr">DÒNG CERAMIC NR</span><h3>3M Ceramic NR</h3><ul><li>Kính lái: NR 35</li><li>Kính hông/lưng: NR 25/15/5</li><li>Bảo hành: 7 năm</li></ul><a class="m3-btn m3-btn--line" href="../danh-gia-3m-ceramic-nr/">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-mazda-cx5.jpg" alt="Xe dán 3M Ceramic IR" loading="lazy"><span class="m3-tag t-blue">Cân bằng hiệu suất</span></div><div class="m3-card__bd"><span class="m3-line-tag c-ir">DÒNG CERAMIC IR</span><h3>3M Ceramic IR</h3><ul><li>Kính lái: IR 50</li><li>Kính hông/lưng: IR 25/15</li><li>Bảo hành: 7 năm</li></ul><a class="m3-btn m3-btn--line" href="../ceramic-ir/">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-honda-civic.jpg" alt="Xe dán 3M Crystalline Hybrid" loading="lazy"><span class="m3-tag t-gold">Kính lái Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline Hybrid</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-crystalline-hybrid/">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-kia-k5.jpg" alt="Xe dán 3M Crystalline CR BLK" loading="lazy"><span class="m3-tag t-gold">Đồng bộ Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline CR BLK</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../crystalline-cr-blk/">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-volvo-xc90.jpg" alt="Xe dán 3M Hybrid PRO" loading="lazy"><span class="m3-tag t-gold">PRO – Tầm nhìn tối ưu</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Hybrid PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: NR 25/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="#tim-dai-ly">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/xe-porsche-panamera.jpg" alt="Xe dán 3M CR BLK PRO" loading="lazy"><span class="m3-tag t-gold">PRO – Cao cấp nhất</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>CR BLK PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li></ul><a class="m3-btn m3-btn--line" href="../3m-cr-blk-pro/">Xem chi tiết</a></div></article>
   </div>
 </div></section>
 
@@ -212,6 +211,21 @@ img{max-width:100%;display:block}
   </div>
   <div class="m3-find" id="tim-dai-ly"><h3>Tìm đại lý 3M gần nhất</h3><p>Chọn tỉnh/thành phố để xem danh sách đại lý, địa chỉ và thông tin liên hệ.</p>
     <form action="../he-thong/" method="get"><select name="q" aria-label="Tỉnh/thành phố"><option value="">Chọn tỉnh/thành phố</option><option>Hà Nội</option><option>TP. Hồ Chí Minh</option><option>Đà Nẵng</option><option>Hải Phòng</option><option>Cần Thơ</option></select><select aria-label="Quận/huyện" disabled><option>Chọn quận/huyện</option></select><button class="m3-btn m3-btn--red" type="submit">Tìm kiếm</button></form></div>
+</div></section>
+
+<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
+  <div class="m3-src">
+    <div class="m3-src__logo"><b>3M</b><span>365 GROUP</span></div>
+    <div>
+      <h2>Về thông tin trên trang này</h2>
+      <p>Nội dung do <strong>365Group</strong> – nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam – biên soạn. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.</p>
+      <ul>
+        <li><b>Đơn vị xuất bản:</b> 365Group</li>
+        <li><b>Thương hiệu sản phẩm:</b> 3M™ (Ceramic NR, Ceramic IR, Crystalline CR BLK)</li>
+        <li><b>Cập nhật lần cuối:</b> <time datetime="2026-10-22">22/10/2026</time></li>
+      </ul>
+    </div>
+  </div>
 </div></section>
 
 <footer class="m3-foot">© 365Group – Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam</footer>
