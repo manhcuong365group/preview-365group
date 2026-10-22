@@ -30,3 +30,32 @@
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
 SHA-256 `index.html` (22/10/2026, bản hiện hành): `9885841c54149aec34f40652e1be817c9be1f63f8fad8e519591fe91bec92d42`
+
+
+## Bảng xác nhận tương thích theo từng mẫu — Limo Green (22/10/2026)
+
+Phạm vi: lắp được trên VinFast Limo Green (lens 2.0 và 3.0 inch). Người xác nhận: anh Nguyễn Quang Đạo (kiểm duyệt kỹ thuật), user chuyển lại 22/10/2026. Cấu hình cuối (pát/bộ gá, mặt dưỡng, điện) vẫn chốt sau khi kiểm tra xe thực tế.
+
+| # | Mẫu | Giá thiết bị (chưa VAT) | Mức bằng chứng | Người xác nhận | Ngày |
+|---|---|---|---|---|---|
+| 1 | X-Light F10 New (2025) | 4.300.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 2 | X-Light F10 2.0 New | 4.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 3 | AES SV 2.0 Max | 5.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 4 | GTR G1 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 5 | X-Light F10 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 6 | X-Light 301 V2 | 4.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 7 | AES SV 3.0 Pro | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 8 | X-Light F10 Pro V2 | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 9 | X-Light X3 Ultra | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 10 | AES SV 3.0 Max | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 11 | X-Light X3 Pro | 5.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 12 | GTR G1 Ultra | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 13 | Henvvei GT-1 | 5.800.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 14 | Red Lighting R8 Spyder | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 15 | Matrix Light M1 Pro | 4.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 16 | Fogway Gen 1 | 4.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 17 | Titan 301 | 3.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+
+## Đại lý chính hãng
+
+Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12/10 và 14/10/2026. Chứng nhận X-Light hiển thị trên trang; hồ sơ GTR/AES lưu nội bộ, không công khai.

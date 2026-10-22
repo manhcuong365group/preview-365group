@@ -59,3 +59,15 @@ C 28,1 · S 28,5 · G 23,8 · U 14,0 → **94,4/100 — CHƯA ĐẠT** (GEO 23,8
 | 9,5 | 9,5 | 9,5 | 9,8 | 9,6 | 9,1 | 9,6 | 9,7 | 4,8 | 4,8 | 4,7 | 4,5 |
 
 C 28,5 · S 28,5 · G 24,1 · U 14,0 → **95,1/100 — ĐẠT** (sát ngưỡng). Còn trừ: domain production chưa chốt (S3), xác nhận tương thích theo từng SKU lưu ở phiếu 04 dạng xác nhận chung.
+
+
+## Chấm lại 22/10/2026 sau khi khóa xác nhận theo từng mẫu (12 tiêu chí, có U3, /100)
+
+- C1/G3: phiếu 04 có bảng 17 mẫu × mức bằng chứng × người xác nhận (anh Nguyễn Quang Đạo, 21/10, xác nhận lại 22/10) và nguồn đại lý 3 hãng (user xác nhận 12 và 14/10).
+- U3: 03/04 cùng bản hiện hành, SHA cập nhật.
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,6 | 9,5 | 9,5 | 9,8 | 9,6 | 9,1 | 9,6 | 9,7 | 4,8 | 4,8 | 4,7 | 4,6 |
+
+C 28,6 · S 28,5 · G 24,1 · U 14,1 → **95,3/100 — ĐẠT**.
