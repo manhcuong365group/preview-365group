@@ -44,7 +44,7 @@ Chủ quản xác nhận 21/10/2026: anh Nguyễn Quang Đạo đã duyệt toà
 
 ## Trạng thái hiện hành (22/10/2026)
 
-Đã duyệt kỹ thuật tới đợt 6 (lượt 21/10/2026). **Đợt 7 (sapo "trang tra cứu mẫu đèn đã lắp thực tế…", tạm bỏ link VF7) chưa có xác nhận duyệt.** Bản vá 22/10 (F08-R4 Schema, F04-R4 export) chỉ sửa script/dữ liệu xuất, không đổi nội dung hiển thị.
+Đã duyệt kỹ thuật hết đợt 1–7 (lượt 19/10, 21/10, 22/10/2026 — xem bên dưới); đợt 8 chỉ đổi link VinFast sang URL production. Bản vá 22/10 (F08-R4 Schema, F04-R4 export) chỉ sửa script/dữ liệu xuất, không đổi nội dung hiển thị.
 
 ## Lượt duyệt 22/10/2026
 
