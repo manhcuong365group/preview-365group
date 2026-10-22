@@ -58,7 +58,7 @@ Ngày: 10/10/2026 · cập nhật 12/10/2026 theo tái kiểm tối 10/10 (TK-01
 | Việc | Người | Trạng thái | Bằng chứng |
 | --- | --- | --- | --- |
 | Nghiệm thu production L1–L8 | IT/SEO | **Hoàn tất** — chủ quản xác nhận 15/10 và 17/10/2026 | Biên bản do IT/SEO lưu; chưa đính kèm bản sao vào bộ này |
-| CMS v2 áp các sửa | CMS | **Một phần** — reviewer R3 ngày 22/10/2026 trên v2 (343 thẻ/ItemList 333): SEO 28,8/30, GEO 23,8/25 qua ngưỡng; AS19-01…06 đã đóng; còn R3-01 lens AES SV Turbo S, R3-02 câu "giá thấp nhất" + 3 mẫu "lẻ" (= giá 1 đèn, chủ quản xác nhận 22/10 → đổi đơn vị /đèn), R3-03 canonical staging, R3-04 hồ sơ cùng bản → C1/U3 còn CX | Gói sửa R3: 05_Goi_sua_CMS_v2_AS19.md (mục Bản R3); export 343 thẻ: 06_Doi_chieu_CMS_v2_voi_Master.csv |
+| CMS v2 áp các sửa | CMS | **Một phần** — reviewer R3 ngày 22/10/2026 trên v2 (343 thẻ/ItemList 333): SEO 28,8/30, GEO 23,8/25 qua ngưỡng; AS19-01…06 đã đóng; còn R3-01 lens AES SV Turbo S, R3-02 câu "giá thấp nhất" + 3 mẫu "lẻ" (= giá 1 đèn, chủ quản xác nhận 22/10 → đổi đơn vị /đèn), R3-03 canonical staging, R3-04 hồ sơ cùng bản (kỹ thuật tập đèn 343 thẻ do anh Nguyễn Quang Đạo duyệt — chủ quản xác nhận 22/10/2026; còn xác nhận thương mại thẻ mới) → C1/U3 còn CX | Gói sửa R3: 05_Goi_sua_CMS_v2_AS19.md (mục Bản R3); export 343 thẻ: 06_Doi_chieu_CMS_v2_voi_Master.csv |
 | Xoá lead test 143 | CRM | **Hoàn tất** — chủ quản xác nhận 15/10 và 17/10/2026 | Log CRM do bộ phận CRM lưu; chưa đính kèm bản sao |
 | Đo AI Search T0/+7/+14/+28 | SEO | **Chưa thực hiện** (kế hoạch sau phát hành) | Prompt, nền tảng, thời gian, URL, 5 tín hiệu |
 | Ảnh "Vì sao chọn" | Media | Tuỳ chọn | Ảnh dựng có alt "ảnh minh họa"; thay ảnh thật nếu có |

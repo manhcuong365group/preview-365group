@@ -41,7 +41,7 @@ v2 noindex nhưng canonical tự trỏ v2. Quy ước: **staging giữ noindex, 
 
 `06_Doi_chieu_CMS_v2_voi_Master.csv` đã xuất lại theo đúng snapshot 343 thẻ: nhóm, thương hiệu, lens, điện áp, nhiệt màu, giá/đơn vị/VAT, cờ ngừng kinh doanh, có trong ItemList hay không, và cột "Cần xử lý". Cột "Thương hiệu/Lens 04" chỉ có giá trị với 125 thẻ trùng tập preview; các thẻ mới của v2 cần Kinh doanh/kỹ thuật xác nhận theo PDP.
 
-Còn thiếu để đóng U3: người xác nhận kỹ thuật/thương mại cho tập 343 và bảng lý do thay đổi so với tập 752 (19/10).
+**Người duyệt kỹ thuật tập đèn (343 thẻ): anh Nguyễn Quang Đạo** — chủ quản xác nhận 22/10/2026. Còn thiếu để đóng hẳn U3: xác nhận thương mại (giá/đơn vị/VAT) cho các thẻ mới ngoài 129 mẫu đã duyệt 10/10, và bảng lý do thay đổi so với tập 752 (19/10).
 
 ### Gợi ý nhỏ (không chặn)
 
