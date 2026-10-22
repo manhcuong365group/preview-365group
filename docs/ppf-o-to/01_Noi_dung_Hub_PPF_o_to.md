@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `31bd9f74a66ce8e9ec11887807ed47f30a72623e4295e9ddaf75ab416efd7af0`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `32f798df01060cfcdde2bcd10e086a57ca6eeacb6bf06e91e64576fe1e45800f`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -32,7 +32,7 @@ Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã g�
 
 Không cần dán toàn xe, có thể dán riêng từng vị trí hay va quẹt.
 
-Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe cỡ nhỏ), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. Dán lẻ 3M PPF báo giá riêng.
+Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. Dán lẻ 3M PPF báo giá riêng.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 

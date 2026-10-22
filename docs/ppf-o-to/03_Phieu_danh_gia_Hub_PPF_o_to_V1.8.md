@@ -40,7 +40,7 @@ C 28,0 · S 28,3 · G 22,5 · U1+U2 9,2 · U3 CX → 88,0–93,0/100, CHƯA Đ�
 
 Bổ sung 22/10/2026 (sau khi anh Hoàng duyệt bản sáng): mục kiến thức k07 "Có nên dán PPF? Lợi ích và giới hạn" và 2 FAQ (xe cũ đã xước; PPF bóng hay mờ), FAQ hiển thị 9 = FAQPage 9. Phần bổ sung này cần reviewer xem lại.
 
-Bổ sung 22/10/2026: khối #gia-dan-le — 12 vị trí dán lẻ kèm giá thấp nhất "từ" (AX G Series, xe A0; chủ trang yêu cầu chỉ để giá tượng trưng), nguồn: bảng giá tham khảo AX Film cho khách lẻ, gồm VAT (chủ trang cung cấp 22/10). Giá toàn xe A–B/C–D/MPV khớp card và AggregateOffer hiện có. FAQ chi phí (hiển thị + FAQPage) thêm mốc A0 14 triệu và dán lẻ từ 280.000đ. Dán lẻ 3M chưa có bảng.
+Bổ sung 22/10/2026: khối #gia-dan-le — 12 vị trí dán lẻ kèm giá thấp nhất "từ" (AX G Series, Sedan/SUV hạng A–B; chủ trang yêu cầu chỉ để giá tượng trưng), nguồn: bảng giá tham khảo AX Film cho khách lẻ, gồm VAT (chủ trang cung cấp 22/10). Giá toàn xe A–B/C–D/MPV khớp card và AggregateOffer hiện có. FAQ chi phí (hiển thị + FAQPage) thêm dán lẻ từ 400.000đ (A–B). Dán lẻ 3M chưa có bảng.
 
 Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 
@@ -57,7 +57,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `31bd9f74a66ce8e9ec11887807ed47f30a72623e4295e9ddaf75ab416efd7af0` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `32f798df01060cfcdde2bcd10e086a57ca6eeacb6bf06e91e64576fe1e45800f` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
