@@ -24,3 +24,9 @@
 | Mục | Ghi chú |
 |---|---|
 | Lead test form tư vấn | Chưa gửi trên trang này |
+
+## Thêm sau lượt duyệt — chờ duyệt bổ sung
+
+| Mục | Nội dung |
+|---|---|
+| Khối "Xe VinFast của bạn dùng để làm gì?" (22/10/2026) | 3 nhóm: xe điện đi phố (chưa cần lắp nếu đèn đủ sáng; ưu tiên màu ánh sáng hợp mắt và ngân sách; đấu nguồn theo giắc zin, không can thiệp pin cao áp) · xe dịch vụ chạy đêm, đi mưa (vùng sáng thấp gần đầu xe và lề; hiệu quả phụ thuộc góc chiếu, căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa; cân chỉnh đường cắt cos; Limo Green lắp được lens 2.0 và 3.0 inch) · dòng đời trước, đi tỉnh (kiểm tra đèn chính trước; kiểm tra hốc, giắc, đèn gầm đang có; không chọn theo số W). Câu chữ lấy từ phần tư vấn nhu cầu đã duyệt trên các trang dòng xe |
