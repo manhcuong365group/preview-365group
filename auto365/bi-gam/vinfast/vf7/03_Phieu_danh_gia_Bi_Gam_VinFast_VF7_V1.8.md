@@ -197,3 +197,14 @@ Việc còn lại thuộc triển khai (SEO/IT): bản v2 https://v2.auto365.vn/
 | 9,6 | 9,3 | 9,7 | 9,6 | 9,7 | 9,4 | 9,6 | 9,7 | 4,8 | 4,8 | 4,8 | 4,5 |
 
 C 28,6 · S 28,7 · G 24,1 · U 14,1 → **95,5/100 — ĐẠT**. G2 +0,1 (GTR ghi nhiệt màu theo chế độ Cos/Pha), U1 +0,1 (tiêu đề case gọn, chi tiết ở dòng mô tả). Còn trừ: đời VF7 ngoài Plus 2025, chính sách khách tỉnh khác (P2); đồng bộ v2 thuộc triển khai, không trừ điểm nội dung.
+
+
+## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn và test lead production (12 tiêu chí, có U3, /100)
+
+Gốc: tái kiểm độc lập 95,3 + P2 (95,5). S3: canonical = auto365.vn, URL live 200. U2: lead #224 vào CRM (test).
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,6 | 9,3 | 9,7 | 9,6 | 9,7 | 9,6 | 9,6 | 9,7 | 4,8 | 4,8 | 5,0 | 4,5 |
+
+C 28,6 · S 28,9 · G 24,1 · U 14,3 → **95,9/100 — ĐẠT**.
