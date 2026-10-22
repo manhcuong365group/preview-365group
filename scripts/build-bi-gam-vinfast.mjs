@@ -54,13 +54,15 @@ if (!models.length || !cases.length || !faqs.length) throw new Error('schema sou
 const itemList = (id, name, items) => ({ '@type': 'ItemList', '@id': canonical + '#' + id, name, numberOfItems: items.length,
   itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, url: x.url })) });
 const dateModified = (content.match(/class="bgvf-dm" datetime="([0-9-]+)"/) || [])[1];
+const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [])[1];
+const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365';
 const desc = 'Chọn dòng xe VinFast để xem cấu hình bi gầm, hình ảnh xe thực tế đã lắp tại Auto365 (X-Light, GTR, AES) và nhận tư vấn tại hệ thống 90+ chi nhánh.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Bi gầm VinFast theo từng dòng xe', description: desc, inLanguage: 'vi', dateModified,
+    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Bi gầm VinFast theo từng dòng xe', description: desc, inLanguage: 'vi', dateModified, ...(lastReviewed ? { lastReviewed, reviewedBy } : {}),
       about: { '@type': 'Brand', name: 'VinFast' }, isPartOf: { '@id': 'https://auto365.vn/#website' }, publisher: { '@id': 'https://auto365.vn/#organization' }, breadcrumb: { '@id': canonical + '#breadcrumb' } },
     { '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: 'https://auto365.vn/' },

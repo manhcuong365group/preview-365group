@@ -33,7 +33,7 @@
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` lấy từ dòng "Cập nhật" trên trang; `about` = Brand VinFast. Khi có kiểm duyệt kỹ thuật: thêm `reviewedBy` + `lastReviewed` và byline hiển thị cùng ngày |
+| CollectionPage | `dateModified` lấy từ dòng "Cập nhật" trên trang; `about` = Brand VinFast. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` lấy từ byline "Rà soát kỹ thuật" trên trang |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › VinFast (khớp breadcrumb hiển thị) |
 | ItemList `#dong-xe` | Thẻ dòng xe có trang riêng (6) |
 | ItemList `#xe-thuc-te` | 11 case, URL bài trên auto365.vn |
