@@ -9,11 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"#365group","name":"365Group","description":"Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam"},
+{"@type":"Organization","@id":"#365group","name":"365Group","description":"Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam","url":"https://3m.365group.com.vn/","telephone":"+84363365365","email":"kinhdoanh@365group.com.vn"},
 {"@type":"Brand","@id":"#3m","name":"3M"},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"365Group có phải là 3M không?","acceptedAnswer":{"@type":"Answer","text":"Không. 3M là thương hiệu sản xuất phim. 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc."}},
 {"@type":"Question","name":"Phim cách nhiệt 3M giá bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Giá phụ thuộc kích thước và kiểu xe, dòng phim chọn (Ceramic NR, Ceramic IR, Crystalline) và đại lý thi công. Chủ xe nên liên hệ đại lý gần nhất để nhận báo giá theo xe cụ thể."}},
+{"@type":"Question","name":"Phim 3M bảo hành bao lâu?","acceptedAnswer":{"@type":"Answer","text":"Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử."}},
 {"@type":"Question","name":"Nên dán phim 3M ở đâu?","acceptedAnswer":{"@type":"Answer","text":"Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành."}}]},
 {"@type":"WebPage","citation":"https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/","name":"Phim cách nhiệt ô tô 3M – 3 dòng công nghệ, 6 cấu hình","inLanguage":"vi","publisher":{"@id":"#365group"},"author":{"@id":"#365group"},"about":{"@id":"#3m"},"dateModified":"2026-10-22"},
 {"@type":"ItemList","name":"6 cấu hình phim cách nhiệt 3M","itemListElement":[
@@ -133,6 +134,14 @@ img{max-width:100%;display:block}
 .m3-faq details{background:#fff;border:1px solid var(--m3-line);border-radius:8px;padding:14px 18px;margin-bottom:10px}
 .m3-faq summary{font-weight:600;cursor:pointer}.m3-faq p{margin:8px 0 0;color:var(--m3-mute);font-size:14px}
 @media(max-width:768px){.m3-why{grid-template-columns:1fr}}
+.m3-spec{width:100%;min-width:880px;border-collapse:collapse;font-size:14px;text-align:center;background:#fff}
+.m3-spec th{background:#3a3d42;color:#fff;padding:10px 6px;font-size:13px;line-height:1.2}.m3-spec th.cr{background:#5a5e64}
+.m3-spec th:first-child,.m3-spec td:first-child{text-align:left;position:sticky;left:0;background:#f5f6f8;color:var(--m3-ink);min-width:150px}
+.m3-spec td{padding:10px 6px;border:1px solid var(--m3-line)}
+.m3-spec td small{display:block;font-size:11px;color:var(--m3-mute);font-weight:400}
+.m3-spec tr.tser td{background:var(--m3-red);color:#fff;font-weight:700;font-size:15px}.m3-spec tr.tser td small{color:#fde}
+.m3-spec tr.tser td:first-child{background:var(--m3-red-d);color:#fff}
+.m3-spec-note{margin:14px 0 0;padding-left:18px;font-size:13px;color:var(--m3-mute)}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1200px){.m3-nav{display:none}}
 @media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
@@ -149,7 +158,7 @@ img{max-width:100%;display:block}
 </head>
 <body>
 <header class="m3-head"><div class="m3-wrap m3-head__in">
-  <a class="m3-logo" href="#"><b class="m3-logo__365">365</b><span><strong>365 GROUP <em class="m3-dist">OFFICIAL DISTRIBUTOR · 3M™</em></strong>Nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam</span></a>
+  <a class="m3-logo" href="#"><b class="m3-logo__365">365</b><span><strong>365 GROUP <em class="m3-dist">3M AUTHORIZED DISTRIBUTOR</em></strong>Nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam</span></a>
   <nav class="m3-nav"><a href="#">Trang chủ</a><a class="on" href="#dong-phim">Phim cách nhiệt 3M</a><a href="#dai-ly">Hệ thống đại lý</a><a href="#so-sanh">Tài liệu &amp; Hỗ trợ</a><a href="#">Về 365Group</a></nav>
   <a class="m3-btn m3-btn--red" href="#tim-dai-ly">Tìm đại lý<span class="m3-hide-sm"> gần nhất</span></a>
 </div></header>
@@ -198,13 +207,13 @@ img{max-width:100%;display:block}
       <thead><tr><th>Cấu hình</th><th>Định hướng</th><th>Kính lái</th><th>Kính hông/lưng</th><th>TSER kính lái (≈)</th><th>Bảo hành</th></tr></thead>
       <tbody>
         <tr><td>Ceramic NR</td><td class="dir">Ưu tiên chi phí</td><td>NR 35</td><td>NR 25/15/5</td><td>~ 51%</td><td>10 năm</td></tr>
-        <tr><td>Ceramic IR</td><td class="dir">Cân bằng</td><td>IR 50</td><td>IR 25/15</td><td>~ 54%</td><td>10 năm</td></tr>
+        <tr><td>Ceramic IR</td><td class="dir">Cân bằng</td><td>IR 50</td><td>IR 25/15</td><td>~ 47%</td><td>10 năm</td></tr>
         <tr><td>Crystalline Hybrid</td><td class="dir">Kính lái Crystalline</td><td>CR BLK 60/50</td><td>NR 25/15</td><td>~ 54–56%</td><td>10 năm</td></tr>
         <tr><td>Crystalline CR BLK</td><td class="dir">Đồng bộ Crystalline</td><td>CR BLK 60/50</td><td>CR BLK 35/15</td><td>~ 54–56%</td><td>10 năm</td></tr>
         <tr><td>Hybrid PRO</td><td class="dir">Kính lái đậm hơn</td><td>CR BLK 40</td><td>NR 25/15</td><td>~ 58%</td><td>10 năm</td></tr>
         <tr><td>CR BLK PRO</td><td class="dir">Cao cấp nhất</td><td>CR BLK 40</td><td>CR BLK 35/15</td><td>~ 58%</td><td>10 năm</td></tr>
       </tbody></table></div>
-      <p class="m3-note">TSER là tổng năng lượng mặt trời bị loại bỏ, đo trên kính lái theo thông số nhà sản xuất; kết quả thực tế phụ thuộc loại kính xe.</p></div>
+      <p class="m3-note">TSER là tổng năng lượng mặt trời bị loại bỏ, đo trên kính lái theo bảng thông số 3M do 365Group công bố (xem bảng dưới); kết quả thực tế phụ thuộc loại kính xe.</p></div>
     <aside class="m3-pick"><h3>Tôi nên chọn cấu hình nào?</h3>
       <div><i style="background:var(--m3-red)">₫</i><p style="margin:0">Muốn tiết kiệm<b>Chọn Ceramic NR</b></p></div>
       <div><i style="background:var(--m3-blue)">⚖</i><p style="margin:0">Muốn cân bằng hiệu suất và thẩm mỹ<b>Chọn Ceramic IR</b></p></div>
@@ -212,6 +221,23 @@ img{max-width:100%;display:block}
       <div><i style="background:var(--m3-gold)">♛</i><p style="margin:0">Muốn hệ Crystalline đồng bộ, cao cấp nhất<b>Chọn CR BLK PRO</b></p></div>
     </aside>
   </div>
+</div></section>
+
+<section class="m3-sec" id="thong-so"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Thông số kỹ thuật các mã phim 3M</h2><p>Dòng Crystalline CR BLK và Ceramic IR – theo bảng thông số 365Group phân phối</p></div><a class="m3-link" href="https://3m.365group.com.vn/index.html" target="_blank" rel="noopener">Xem tài liệu tại 3m.365group.com.vn →</a></div>
+  <div class="m3-tbl-wrap"><table class="m3-spec">
+      <thead><tr><th>Chỉ số</th><th class="cr">CR<br>BLK 15</th><th class="cr">CR<br>BLK 30</th><th class="cr">CR<br>BLK 35</th><th class="cr">CR<br>BLK 40</th><th class="cr">CR<br>BLK 50</th><th class="cr">CR<br>BLK 60</th><th class="cr">CR<br>BLK 70</th><th class="cr">CR<br>BLK 80</th><th>IR<br>15</th><th>IR<br>25</th><th>IR<br>50</th></tr></thead>
+      <tbody>
+        <tr class="tser"><td><b>TSER</b><small>Tổng năng lượng bị loại bỏ</small></td><td>64%</td><td>61%</td><td>60%</td><td>58%</td><td>56%</td><td>54%</td><td>51%</td><td>45%</td><td>59%</td><td>57%</td><td>47%</td></tr>
+        <tr><td><b>VLT</b><small>Độ xuyên sáng</small></td><td>14%</td><td>29%</td><td>33%</td><td>41%</td><td>48%</td><td>57%</td><td>64%</td><td>72%</td><td>18%</td><td>30%</td><td>58%</td></tr>
+        <tr><td><b>UVR</b><small>Loại bỏ tia cực tím</small></td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99.9%</td><td>99%</td><td>99%</td><td>99%</td></tr>
+        <tr><td><b>Glare R</b><small>Tỷ lệ giảm lóa</small></td><td>81%</td><td>61%</td><td>55%</td><td>44%</td><td>34%</td><td>22%</td><td>13%</td><td>2%</td><td>78%</td><td>65%</td><td>32%</td></tr>
+        <tr><td><b>IRR</b><small>Loại bỏ tia hồng ngoại</small></td><td>98%</td><td>98%</td><td>98%</td><td>98%</td><td>98%</td><td>97%</td><td>97%</td><td>95%</td><td>90%</td><td>90%</td><td>83%</td></tr>
+      </tbody></table></div>
+  <ul class="m3-spec-note">
+    <li>Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.</li>
+    <li>Cửa sổ trời nhỏ giá bằng một ô kính sườn, cửa sổ trời panorama giá bằng một kính lái.</li>
+  </ul>
 </div></section>
 
 <section class="m3-sec"><div class="m3-wrap">
@@ -229,6 +255,7 @@ img{max-width:100%;display:block}
     <details open><summary>365Group có phải là 3M không?</summary><p>Không. 3M là thương hiệu sản xuất phim. 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc.</p></details>
     <details><summary>Phim cách nhiệt 3M giá bao nhiêu?</summary><p>Giá phụ thuộc kích thước và kiểu xe, dòng phim chọn (Ceramic NR, Ceramic IR, Crystalline) và đại lý thi công. Chủ xe nên liên hệ đại lý gần nhất để nhận báo giá theo xe cụ thể.</p></details>
     <details><summary>Nên dán phim 3M ở đâu?</summary><p>Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành.</p></details>
+    <details><summary>Phim 3M bảo hành bao lâu?</summary><p>Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.</p></details>
   </div>
 </div></section>
 
@@ -246,13 +273,17 @@ img{max-width:100%;display:block}
 
 <section class="m3-sec m3-sec--grey"><div class="m3-wrap">
   <div class="m3-src">
-    <div class="m3-src__logo"><b>365</b><span>GROUP</span><small>OFFICIAL<br>DISTRIBUTOR 3M™</small></div>
+    <div class="m3-src__logo"><b>365</b><span>GROUP</span><small>3M AUTHORIZED<br>DISTRIBUTOR</small></div>
     <div>
       <h2>Về bài viết này</h2>
       <p>Bài viết do <strong>365Group</strong> – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam – biên soạn, tham khảo thông tin sản phẩm từ <a class="m3-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/" target="_blank" rel="noopener">3M Việt Nam</a>. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.</p>
       <ul>
         <li><b>Đơn vị xuất bản:</b> 365Group</li>
         <li><b>Thương hiệu sản phẩm:</b> 3M™ (Ceramic NR, Ceramic IR, Crystalline CR BLK)</li>
+        <li><b>Hotline 365Group:</b> <a href="tel:+84363365365">0363 365 365</a></li>
+        <li><b>Email:</b> <a href="mailto:kinhdoanh@365group.com.vn">kinhdoanh@365group.com.vn</a></li>
+        <li><b>Văn phòng:</b> Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh</li>
+        <li><b>Website nhà phân phối:</b> <a class="m3-link" href="https://3m.365group.com.vn/index.html" target="_blank" rel="noopener">3m.365group.com.vn</a></li>
         <li><b>Cập nhật lần cuối:</b> <time datetime="2026-10-22">22/10/2026</time></li>
       </ul>
     </div>
