@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f8995f098dfc2ac4503f57512a6a65cd8ca34a73f2c78d0eb23f0412436fb1e8`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `69329d0d4eb244cc43a41cc039738e1667a62938fd126cfa8fad0fc09e4e3470`
 Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt ô tô 3M™
@@ -153,7 +153,7 @@ Giá tham khảo dán trọn xe dao động khoảng 5,9–18,3 triệu đồng 
 Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành.
 
 **Hỏi:** Phim 3M bảo hành bao lâu?
-Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.
+Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử. Cách tra cứu: xem hướng dẫn tra cứu bảo hành 3M.
 
 ## Về bài viết này
 Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam – biên soạn, tham khảo thông tin sản phẩm từ 3M Việt Nam. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.
