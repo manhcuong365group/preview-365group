@@ -26,7 +26,7 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `2e5c44b300dc9ae608efd419f11f921c040a117cf7dc209173179b842358904a`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `8652432f1e449e3b68d74bec86ab4e573b28121d521fdcbb63fd26bbcc8650b2`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
 | Phiên bản xe trong case | 3 case VF6 (F10 Turbo V2 4300K, GTR G1 Turbo V2, F10 Turbo V2) đều là VF6 **Plus** | User xác nhận 19/10/2026 |

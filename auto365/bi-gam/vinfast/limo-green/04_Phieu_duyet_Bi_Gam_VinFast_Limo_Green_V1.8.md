@@ -29,7 +29,7 @@
 | Trang đích `../fadil/`, `../lux-sa20/` trong mục "Dòng xe VinFast khác" | Kiểm lại khi các trang này lên preview/production |
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `e4c3643cc77ac0d81446e4dc5ef5f73fcbd63f99e558f694ea23ea62178b94f9`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `3f8000a53da9457154bc8a7197e2ebe837e5a3c84e42aa717eab5d5aa94aa459`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Limo Green (22/10/2026)
