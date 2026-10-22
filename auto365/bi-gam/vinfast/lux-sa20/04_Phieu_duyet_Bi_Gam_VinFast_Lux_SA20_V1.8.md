@@ -30,7 +30,7 @@
 | Trang `../limo-green/`, `../fadil/` được link trong "Dòng xe VinFast khác" | Kiểm tra đã có trước khi đăng |
 | Xoá khối `#vf3lp-internal-check`; chốt domain; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `09734d5667a9e8856e7094227308099065b6584c45bee376108e515e45ae0187`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `fc1a201ee4479c48612c63a72cb6c90a268897c276a850dba33489dbc7e9a7fb`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Lux SA2.0 (22/10/2026)
@@ -59,3 +59,8 @@ Phạm vi: lắp được trên VinFast Lux SA2.0 (lens 2.0 và 3.0 inch). Ngư�
 ## Đại lý chính hãng
 
 Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12/10 và 14/10/2026. Chứng nhận X-Light hiển thị trên trang; hồ sơ GTR/AES lưu nội bộ, không công khai.
+
+
+## Cập nhật 22/10/2026
+
+- **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.- Trang chưa đăng trên auto365.vn (404 ngày 22/10) — IT đăng bản preview hiện hành; khi đăng gỡ khối #vf3lp-internal-check, bỏ noindex.

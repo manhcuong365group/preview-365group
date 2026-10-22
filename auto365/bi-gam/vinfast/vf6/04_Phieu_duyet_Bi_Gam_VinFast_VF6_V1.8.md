@@ -26,7 +26,13 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF6 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `1ea37f669bf9a17235ff72ceb3dbcc5bd88564717358f6a8ad38db700cba845f`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `2e5c44b300dc9ae608efd419f11f921c040a117cf7dc209173179b842358904a`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
 | Phiên bản xe trong case | 3 case VF6 (F10 Turbo V2 4300K, GTR G1 Turbo V2, F10 Turbo V2) đều là VF6 **Plus** | User xác nhận 19/10/2026 |
+
+
+## Cập nhật 22/10/2026
+
+- **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.
+- **Test lead production 22/10/2026:** form tư vấn trên https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 → `/api/leads` 200 `{"success":true,"lead_id":"225","test":true}`; trang hiện "Đã nhận yêu cầu". Dữ liệu test: 0900000001. Cần xoá lead #225 khỏi CRM.
