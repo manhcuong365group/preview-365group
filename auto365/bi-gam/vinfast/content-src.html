@@ -1,0 +1,257 @@
+<style>
+.bght{--r:#d71920;--rd:#b3121a;--ink:#14181d;--mu:#5f6b76;--ln:#e6e9ed;--bg:#f6f7f9;font-family:Roboto,Arial,sans-serif;color:var(--ink);line-height:1.55}
+.bght *{box-sizing:border-box}
+.bght a{text-decoration:none;color:inherit}
+.bght-in{max-width:1200px;margin:0 auto;padding:0 16px}
+.bght-sec{padding:28px 0}
+.bght-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:16px}
+.bght-h2{font-size:26px;font-weight:800;margin:0 0 4px;line-height:1.25}
+.bght-sub{color:var(--mu);font-size:14px;margin:0}
+.bght-more{color:var(--r)!important;font-size:14px;font-weight:600;white-space:nowrap}
+.bght-more:after{content:" →"}
+.bgvf-eb{display:block;color:var(--r);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+/* hero */
+.bgvf-hero{position:relative;background:linear-gradient(100deg,#f6f7f9 0,#f6f7f9 42%,#e9edf2 100%);overflow:hidden}
+.bgvf-hero .bght-in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:center;padding-top:14px;padding-bottom:28px;min-height:360px}
+.bgvf-bc{font-size:12px;color:var(--mu);grid-column:1/-1;align-self:start}
+.bgvf-bc a:hover{color:var(--r)}
+.bgvf-h1{font-size:clamp(32px,4.2vw,48px);line-height:1.08;font-weight:800;margin:6px 0 4px;letter-spacing:-.5px}
+.bgvf-h1 span{display:block;font-size:.58em;font-weight:500;color:#333;letter-spacing:0;margin-top:6px}
+.bgvf-lead{max-width:520px;color:#3b444d;font-size:15px;margin:12px 0 14px}
+.bgvf-upd{font-size:12.5px;color:#64748b;margin:0 0 14px}
+.bgvf-trust{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,max-content);gap:8px 22px}
+.bgvf-trust li{position:relative;padding-left:24px;font-size:13.5px;color:#2b333b}
+.bgvf-trust li:before{content:"✓";position:absolute;left:0;top:1px;width:17px;height:17px;border-radius:50%;border:1.5px solid var(--r);color:var(--r);font-size:10px;font-weight:700;display:grid;place-items:center}
+.bgvf-art{position:relative;height:300px}
+.bgvf-art img{position:absolute;bottom:0;mix-blend-mode:multiply;filter:drop-shadow(0 14px 12px rgba(0,0,0,.16))}
+.bgvf-art .a{left:0;width:40%;bottom:6px;z-index:1}
+.bgvf-art .b{left:24%;width:50%;z-index:3}
+.bgvf-art .c{right:0;width:42%;bottom:14px;z-index:2}
+/* models */
+.bgvf-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.bgvf-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.bgvf-tab{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:8px 16px;font:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.bgvf-tab:hover{border-color:#f3b4b4}
+.bgvf-tab.on{background:var(--r);border-color:var(--r);color:#fff;font-weight:600}
+.bgvf-search{display:flex;align-items:center;gap:8px;border:1px solid var(--ln);border-radius:8px;background:#fff;padding:0 12px;height:40px;width:260px;max-width:100%}
+.bgvf-search svg{width:16px;height:16px;flex:none;color:var(--mu)}
+.bgvf-search input{border:0;outline:0;font:inherit;font-size:14px;flex:1;min-width:0;background:none}
+.bgvf-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.bgvf-m{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--ln);border-radius:10px;overflow:hidden;transition:.2s}
+.bgvf-m[hidden]{display:none}
+.bgvf-m:hover{border-color:#f3b4b4;box-shadow:0 8px 20px rgba(15,23,42,.08);transform:translateY(-2px)}
+.bgvf-m .im{display:grid;place-items:center;aspect-ratio:16/10;background:linear-gradient(180deg,#fff,#f1f3f5);padding:6px}
+.bgvf-m .im img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.bgvf-m .im em{font-style:normal;font-size:12px;color:var(--mu);font-weight:600}
+.bgvf-m .bd{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:8px 12px 10px}
+.bgvf-m b{font-size:14.5px;font-weight:700}
+.bgvf-m .go{color:var(--r);font-weight:700}
+.bgvf-m small{display:block;font-size:11.5px;color:var(--mu);font-weight:400}
+.bgvf-m .ok{position:absolute;top:8px;left:8px;background:#1f9d55;color:#fff;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:99px}
+.bgvf-empty{grid-column:1/-1;padding:16px;border:1px dashed var(--ln);border-radius:10px;color:var(--mu);font-size:14px}
+/* cases */
+.bgvf-nav{display:flex;gap:8px;align-items:center}
+.bgvf-arr{width:36px;height:36px;border-radius:50%;border:1px solid var(--ln);background:#fff;font-size:18px;cursor:pointer;line-height:1}
+.bgvf-arr:hover{border-color:var(--r);color:var(--r)}
+.bgvf-rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 32px)/3);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.bgvf-rail::-webkit-scrollbar{display:none}
+.bgvf-case{scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;transition:.2s}
+.bgvf-case:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.bgvf-case .im{aspect-ratio:16/9;overflow:hidden;background:#eee}
+.bgvf-case .im img{width:100%;height:100%;object-fit:cover;display:block}
+.bgvf-case .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.bgvf-case h3{font-size:16px;font-weight:700;margin:0;line-height:1.35}
+.bgvf-case p{margin:0;font-size:13.5px;color:var(--mu);flex:1}
+.bgvf-case .ft{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mu);margin-top:6px}
+.bgvf-case .ft em{font-style:normal;color:var(--r);font-weight:600}
+.bgvf-fn{text-align:center;font-size:12.5px;color:var(--mu);margin:12px 0 0}
+/* why */
+.bgvf-why{background:var(--bg);border-radius:14px;padding:24px}
+.bgvf-why h2{margin:0 0 16px}
+.bgvf-why ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.bgvf-why li{display:flex;gap:12px}
+.bgvf-why li+li{border-left:1px solid var(--ln);padding-left:16px}
+.bgvf-ic{flex:0 0 44px;height:44px;border-radius:50%;background:#fde8e8;color:var(--r);display:grid;place-items:center}
+.bgvf-ic svg{width:22px;height:22px}
+.bgvf-why b{display:block;font-size:15px;margin-bottom:2px}
+.bgvf-why p{margin:0;font-size:13px;color:var(--mu)}
+/* quick answer + faq */
+.bq-box{background:#fff8f0;border:1px solid #f6dcc0;border-left:4px solid var(--r);border-radius:10px;padding:18px 20px}
+.bq-h{font-size:20px;font-weight:700;margin:0 0 8px}
+.bq-box p{margin:0 0 8px;font-size:15px;color:#2b333b}.bq-box p:last-child{margin:0}
+.bq-box ul{margin:0 0 8px;padding-left:20px}.bq-box li{margin:4px 0;font-size:14.5px;color:#2b333b}
+.bf-list{display:grid;gap:10px}
+.bf-list details{border:1px solid var(--ln);border-radius:10px;background:#fff;padding:0 16px}
+.bf-list summary{cursor:pointer;list-style:none;padding:14px 28px 14px 0;font-weight:600;font-size:15.5px;position:relative}
+.bf-list summary::-webkit-details-marker{display:none}
+.bf-list summary:after{content:"+";position:absolute;right:0;top:11px;font-size:22px;color:var(--r)}
+.bf-list details[open] summary:after{content:"–"}
+.bf-list p{margin:0 0 14px;font-size:14.5px;color:#3b444d;line-height:1.6}
+/* guides */
+.bgvf-guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.bgvf-guide{border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:.2s}
+.bgvf-guide:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.bgvf-guide .im{position:relative;aspect-ratio:16/8;background:#111;overflow:hidden}
+.bgvf-guide .im img{width:100%;height:100%;object-fit:cover;display:block}
+.bgvf-guide .lb{position:absolute;left:10px;bottom:10px;background:var(--r);color:#fff;font-size:11px;font-weight:700;text-transform:uppercase;padding:3px 9px;border-radius:4px}
+.bgvf-guide .bd{padding:12px 14px 14px}
+.bgvf-guide h3{font-size:15.5px;font-weight:700;margin:0 0 4px;line-height:1.35}
+.bgvf-guide p{margin:0;font-size:13.5px;color:var(--mu)}
+/* cta */
+.bgvf-cta{background:#12161c url(../vinfast-vf3/hinh/xe-vinfast-vf3.webp) right 6% center/auto 120% no-repeat;border-radius:14px;color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
+.bgvf-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#12161c 45%,rgba(18,22,28,.7) 75%,rgba(18,22,28,.55))}
+.bgvf-cta>*{position:relative}
+.bgvf-cta h2{font-size:26px;font-weight:800;margin:4px 0 6px;line-height:1.25;max-width:520px}
+.bgvf-cta p{margin:0;color:#c9d0d8;font-size:14.5px}
+.bgvf-cta .bgvf-eb{color:#ff6b70}
+.bgvf-cbtn{display:flex;gap:10px;flex-wrap:wrap}
+.bgvf-b1,.bgvf-b2{display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:12px 22px;font-weight:700;font-size:15px}
+.bgvf-b1{background:var(--r);color:#fff!important}.bgvf-b1:hover{background:var(--rd)}
+.bgvf-b2{background:#fff;color:var(--ink)!important}
+@media(max-width:1100px){.bgvf-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:991px){.bgvf-why ul{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why li+li{border-left:0;padding-left:0}.bgvf-rail{grid-auto-columns:calc((100% - 16px)/2)}}
+@media(max-width:767px){
+.bght-sec{padding:22px 0}.bght-h2{font-size:22px}
+.bght-head{flex-wrap:wrap}
+.bgvf-hero .bght-in{grid-template-columns:1fr;min-height:0;padding-bottom:20px}
+.bgvf-art{height:170px;order:3}
+.bgvf-trust{grid-template-columns:1fr 1fr;gap:6px 10px}.bgvf-trust li{font-size:12.5px}
+.bgvf-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.bgvf-tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
+.bgvf-search{width:100%}
+.bgvf-rail{grid-auto-columns:84%}
+.bgvf-nav .bgvf-arr{display:none}
+.bgvf-why{padding:16px}.bgvf-why ul{grid-template-columns:1fr;gap:12px}
+.bgvf-guides{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory}
+.bgvf-guide{scroll-snap-align:start}
+.bgvf-cta{padding:22px 18px;background-image:none}.bgvf-cta h2{font-size:21px}.bgvf-cbtn,.bgvf-b1,.bgvf-b2{width:100%;justify-content:center}
+.bq-box{padding:14px}.bq-h{font-size:18px}.bf-list summary{font-size:14.5px}
+}
+</style>
+<div class="bght bgvf">
+<section class="bgvf-hero"><div class="bght-in">
+ <nav class="bgvf-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> / <a href="https://auto365.vn/nang-cap-anh-sang">Nâng cấp ánh sáng</a> / <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Bi gầm</a> / <span>VinFast</span></nav>
+ <div>
+  <span class="bgvf-eb">Nâng cấp ánh sáng</span>
+  <h1 class="bgvf-h1">Bi gầm VinFast<span>Theo từng dòng xe</span></h1>
+  <p class="bgvf-lead">Chọn dòng xe VinFast để xem cấu hình, hình ảnh xe thực tế đã lắp tại Auto365 và được tư vấn phương án nâng cấp bi gầm (X-Light, GTR, AES) phù hợp với từng phiên bản.</p>
+  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-10-22">22/10/2026</time></p>
+  <ul class="bgvf-trust">
+   <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
+   <li>Thi công tại 90+ chi nhánh</li><li>Kiểm tra tương thích trước khi lắp</li>
+  </ul>
+ </div>
+ <div class="bgvf-art" aria-hidden="true">
+  <img class="a" src="../theo-hang-xe/hinh/m-vf3.webp" alt="" width="640" height="400">
+  <img class="b" src="../theo-hang-xe/hinh/m-vf6.webp" alt="" width="640" height="400">
+  <img class="c" src="../theo-hang-xe/hinh/m-vf7.webp" alt="" width="640" height="400">
+ </div>
+</div></section>
+
+<section class="bght-sec" id="dong-xe"><div class="bght-in">
+ <div class="bght-head"><div><span class="bgvf-eb">Chọn dòng xe VinFast</span><h2 class="bght-h2"><span id="bgvf-n">18</span> dòng xe. Một hồ sơ riêng.</h2></div><p class="bght-sub">Chọn dòng xe để xem cấu hình bi gầm, hình ảnh thực tế và tư vấn phù hợp.</p></div>
+ <div class="bgvf-bar">
+  <div class="bgvf-tabs" id="bgvf-tabs" role="tablist"></div>
+  <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></label>
+ </div>
+ <div class="bgvf-grid" id="bgvf-grid"></div>
+</div></section>
+
+<section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><span class="bgvf-eb">Hồ sơ thực tế</span><h2 class="bght-h2">Xe VinFast nâng cấp bi gầm tại Auto365</h2></div><div class="bgvf-nav"><a class="bght-more" href="https://auto365.vn/tin-tuc">Xem tất cả xe thực tế</a><button type="button" class="bgvf-arr" data-dir="-1" aria-label="Trước">‹</button><button type="button" class="bgvf-arr" data-dir="1" aria-label="Sau">›</button></div></div>
+ <div class="bgvf-rail" id="bgvf-rail"></div>
+ <p class="bgvf-fn">* Cấu hình theo xe thực tế; cần kiểm tra trước khi lắp để đảm bảo tương thích và an toàn.</p>
+</div></section>
+
+<section class="bght-sec" style="padding-top:4px"><div class="bght-in">
+ <div class="bq-box">
+  <h2 class="bq-h">Xe VinFast lắp bi gầm cần lưu ý gì?</h2>
+  <p>Mỗi dòng VinFast có hốc đèn gầm, cản trước và hệ thống điện khác nhau, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.</p>
+  <ul>
+   <li><b>Kích thước hốc đèn:</b> đo hốc gầm zin để chọn bi 2.0, 2.5 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản.</li>
+   <li><b>Nguồn điện:</b> với xe điện, kỹ thuật viên kiểm tra và đấu nguồn theo giắc zin, không can thiệp pin cao áp.</li>
+   <li><b>Đường cắt cos:</b> cân chỉnh trên bảng test sau khi lắp để không gây chói xe đối diện.</li>
+  </ul>
+  <p>Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline <a href="tel:0365365911" style="color:var(--r);font-weight:600">0365 365 911</a> để được tư vấn.</p>
+ </div>
+</div></section>
+
+<section class="bght-sec" style="padding-top:4px"><div class="bght-in"><div class="bgvf-why">
+ <h2 class="bght-h2">Vì sao chọn Auto365?</h2>
+ <ul>
+  <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span><div><b>Tư vấn đúng dòng xe</b><p>Đối chiếu phiên bản, cấu hình và nhu cầu sử dụng trước khi chọn mẫu.</p></div></li>
+  <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9l2.1 2.1m10 10 2.1 2.1M4.9 19.1 7 17m10-10 2.1-2.1"/></svg></span><div><b>Sản phẩm chính hãng</b><p>Auto365 là đại lý chính hãng X-Light, GTR, AES; có chính sách bảo hành điện tử.</p></div></li>
+  <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><div><b>Thi công chuyên nghiệp</b><p>Kỹ thuật viên kiểm tra xe, đấu nối theo giắc và cân chỉnh trước bàn giao.</p></div></li>
+  <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Hệ thống 90+ chi nhánh</b><p>Thuận tiện lắp đặt và bảo hành tại chi nhánh gần nhất trên toàn quốc.</p></div></li>
+ </ul>
+</div></div></section>
+
+<!-- @branch -->
+
+<section class="bght-sec" id="cam-nang" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><span class="bgvf-eb">Cẩm nang bi gầm</span><h2 class="bght-h2">Kiến thức và kinh nghiệm nâng cấp bi gầm</h2></div><a class="bght-more" href="https://auto365.vn/tin-tuc">Xem tất cả bài viết</a></div>
+ <div class="bgvf-guides">
+  <a class="bgvf-guide" href="../quy-dinh-lap-bi-gam-o-to.html"><span class="im"><img src="../hinh/bi-gam-2.jpg" alt="Quy định lắp bi gầm ô tô" loading="lazy"><span class="lb">Pháp lý</span></span><span class="bd"><h3>Quy định lắp bi gầm ô tô: lắp thế nào để đúng luật</h3><p>Những điểm cần biết về đăng kiểm, vị trí lắp và đường cắt cos khi nâng cấp đèn gầm.</p></span></a>
+  <a class="bgvf-guide" href="../theo-hang-xe/"><span class="im"><img src="../theo-hang-xe/hinh/auto365vn-can-chinh-den-tren-bang-test-xuong.webp" alt="Cân chỉnh đèn trên bảng test tại xưởng Auto365" loading="lazy"><span class="lb">Hướng dẫn</span></span><span class="bd"><h3>Bi gầm theo hãng xe: chọn mẫu theo dòng xe</h3><p>Tra cứu mẫu đèn đã lắp thực tế trên từng hãng, từng dòng xe tại Auto365.</p></span></a>
+  <a class="bgvf-guide" href="../"><span class="im"><img src="../theo-hang-xe/hinh/auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp" alt="Xưởng lắp bi gầm tại Auto365" loading="lazy"><span class="lb">Kiến thức</span></span><span class="bd"><h3>Độ bi gầm ô tô: so sánh mẫu, giá và bảo hành</h3><p>Tổng hợp các dòng bi gầm X-Light, GTR, AES và tiêu chí chọn theo nhu cầu.</p></span></a>
+ </div>
+</div></section>
+
+<section class="bght-sec bght-faq" id="hoi-dap" style="padding-top:4px"><div class="bght-in">
+ <h2 class="bght-h2" style="margin-bottom:14px">Câu hỏi thường gặp về bi gầm VinFast</h2>
+ <div class="bf-list">
+  <details><summary>Xe điện VinFast lắp bi gầm có ảnh hưởng hệ thống điện không?</summary><p>Bi gầm được đấu vào nguồn đèn gầm theo giắc zin, công suất nhỏ và không can thiệp vào pin cao áp. Kỹ thuật viên kiểm tra nguồn và cân chỉnh trước khi bàn giao xe.</p></details>
+  <details><summary>Dòng VinFast nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?</summary><p>Các hồ sơ đã đăng gồm VF 3, VF 6, VF 7, Limo Green và Fadil. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi khách mang xe đến chi nhánh.</p></details>
+  <details><summary>Lắp bi gầm cho xe VinFast mất bao lâu?</summary><p>Thời gian phụ thuộc dòng xe và cấu hình; chủ xe nên liên hệ chi nhánh trước để được hẹn lịch và báo thời gian dự kiến cho xe của mình.</p></details>
+  <details><summary>Lắp bi gầm có bị lỗi khi đăng kiểm không?</summary><p>Bi gầm cần lắp đúng vị trí đèn gầm, có đường cắt cos rõ và được cân chỉnh không gây chói. Chi tiết xem bài Quy định lắp bi gầm ô tô trong mục cẩm nang.</p></details>
+ </div>
+</div></section>
+
+<section class="bght-sec" id="tu-van-ngay" style="padding-top:4px"><div class="bght-in"><div class="bgvf-cta">
+ <div><span class="bgvf-eb">Tư vấn ngay</span><h2>Kiểm tra cấu hình bi gầm phù hợp cho dòng xe VinFast của bạn</h2><p>Kỹ thuật viên Auto365 tư vấn theo xe và nhu cầu sử dụng.</p></div>
+ <div class="bgvf-cbtn"><a class="bgvf-b1" href="#tu-van">Nhận tư vấn ngay</a><a class="bgvf-b2" href="tel:0365365911">Gọi 0365 365 911</a></div>
+</div></div></section>
+
+<!-- @lead -->
+</div>
+<script>
+(function(){
+var H='../theo-hang-xe/hinh/m-',V='../vinfast-vf3/hinh/xe-vinfast-';
+// [tên, nhóm, ảnh, link trang dòng xe (preview) hoặc '']
+var M=[['VF 2','ev',H+'vf2.webp',''],['VF 3','ev',H+'vf3.webp','../vinfast-vf3/'],['VF 5','ev',H+'vf5.webp',''],['VF 6','ev',H+'vf6.webp','vf6/'],['VF 7','ev',H+'vf7.webp',''],['VF 8','ev',H+'vf8.webp',''],['VF 9','ev',H+'vf9.webp',''],['VF MPV 7','ev',H+'vf-mpv-7.webp',''],
+['Minio Green','green',H+'minio-green.webp',''],['Herio Green','green',H+'herio-green.webp',''],['Nerio Green','green',H+'nerio-green.webp',''],['Limo Green','green',H+'limo-green.webp','limo-green/'],['EC Van','green',H+'ec-van.webp',''],
+['VF e34','old',V+'vfe34.jpg',''],['Fadil','old',V+'fadil.webp','fadil/'],['Lux A2.0','old','',''],['Lux SA2.0','old',V+'lux-sa20.webp','lux-sa20/'],['President','old','','']];
+var T=[['all','Tất cả'],['ev','Xe điện'],['green','Green / dịch vụ'],['old','Dòng đời trước']];
+// [tiêu đề, mô tả, slug bài trên auto365.vn, ảnh, ngày]
+var N='https://auto365.vn/uploads/images/news/';
+var C=[['VF 3 2025 Plus – GTR G1 Turbo V2','Nâng cấp bi gầm cho mini SUV đi phố: tăng sáng vùng gần, đường cắt cos rõ.','vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2',N+'vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2-1791872588.webp','2026-10-13'],
+['VF 7 Plus 2025 – X-Light F10 Turbo V2 5500K','Cấu hình bi gầm F10 Turbo V2 5500K cho VF 7 Plus, kèm chi phí tham khảo.','vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k',N+'vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k-1791164660.webp','2026-10-05'],
+['Fadil Premium 2021 – X-Light 301 V2','Fadil nâng cấp bi gầm X-Light 301 V2: cấu hình và hình ảnh sau lắp.','vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2',N+'auto365vn-vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2-6-img_6ab5fe2fee3135.18253047.webp','2026-09-25'],
+['Limo Green 2025 – X-Light F10 New','Giải pháp tăng sáng cho xe dịch vụ, tối ưu theo nhu cầu chạy đêm thường xuyên.','vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh',N+'auto365vn-vinfast-limo-green-2025-ang-cap-f10-new-5-img_6a79a38ff042c9.26722921.jpg.webp','2026-08-07'],
+['VF 6 – X-Light F10 Turbo V2 4300K','Cấu hình F10 Turbo V2 4300K cho VF 6 và lưu ý trước thi công.','vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k',N+'auto365vn-vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k-img_6a696dffdd3219.33813887.jpg.webp','2026-07-29'],
+['VF 6 – GTR G1 Turbo V2','Thông số, giá tham khảo và quy trình lắp GTR G1 Turbo V2 trên VF 6.','vinfast-vf-6-nang-cap-bi-gam-gtr-g1-turbo-v2',N+'auto365vn-vinfast-vf-6-nang-cap-bi-gam-gtr-g1-turbo-v2-img_6a619cbf49d1d0.17538316.jpg.webp','2026-07-23']];
+var $=function(id){return document.getElementById(id)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};
+$('bgvf-n').textContent=M.length;
+$('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
+$('bgvf-grid').innerHTML=M.map(function(m){
+ var im=m[2]?'<img src="'+m[2]+'" alt="VinFast '+esc(m[0])+'" loading="lazy" width="640" height="400">':'<em>VinFast '+esc(m[0])+'</em>';
+ var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?'Xem hồ sơ bi gầm':'Liên hệ tư vấn')+'</small></b><span class="go">→</span></span>';
+ return m[3]?'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">Có hồ sơ</span><span class="im">'+im+'</span>'+bd+'</a>'
+  :'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="VinFast '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
+}).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.</p>';
+var fmt=function(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]};
+$('bgvf-rail').innerHTML=C.map(function(c){return '<a class="bgvf-case" href="https://auto365.vn/'+c[2]+'"><span class="im"><img src="'+c[3]+'" alt="VinFast '+esc(c[0])+'" loading="lazy"></span><span class="bd"><h3>'+esc(c[0])+'</h3><p>'+esc(c[1])+'</p><span class="ft"><time datetime="'+c[4]+'">'+fmt(c[4])+'</time><em>Xem chi tiết →</em></span></span></a>'}).join('');
+// lọc
+var k='all';
+function apply(){var q=($('bgvf-q').value||'').trim().toLowerCase().replace(/\s+/g,''),n=0;
+ [].forEach.call(document.querySelectorAll('.bgvf-m'),function(a){var ok=(k==='all'||a.getAttribute('data-g')===k)&&(!q||a.getAttribute('data-n').replace(/\s+/g,'').indexOf(q)>=0);a.hidden=!ok;if(ok)n++});
+ document.querySelector('.bgvf-empty').hidden=n>0}
+$('bgvf-tabs').addEventListener('click',function(e){var b=e.target.closest('.bgvf-tab');if(!b)return;k=b.getAttribute('data-k');[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});apply()});
+$('bgvf-q').addEventListener('input',apply);
+[].forEach.call(document.querySelectorAll('.bgvf-arr'),function(b){b.addEventListener('click',function(){var r=$('bgvf-rail');r.scrollBy({left:(+b.getAttribute('data-dir'))*r.clientWidth*0.9,behavior:'smooth'})})});
+// thẻ dòng xe chưa có hồ sơ → điền sẵn dòng xe vào form tư vấn
+document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car'),f=document.querySelector('#tu-van form');if(i)i.value=a.getAttribute('data-car');if(f)f.setAttribute('data-service','Bi gầm VinFast - '+a.getAttribute('data-car'))});
+})();
+</script>
