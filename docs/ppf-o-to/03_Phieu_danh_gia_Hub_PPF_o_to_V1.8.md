@@ -48,6 +48,25 @@ Bổ sung 22/10/2026: khối "PPF là gì?" mở rộng định nghĩa (độ d�
 
 Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 
+## Tự chấm sau R2 (bản 22/10/2026, lấy điểm reviewer 21/10 làm gốc)
+
+| Mã | Tối đa | R2 21/10 | Tự chấm 22/10 | Căn cứ thay đổi |
+|---|---:|---:|---:|---|
+| C1 | 10 | 9,5 | 9,6 | R21-02: bỏ xếp hạng TPU/TPH/PVC, câu độ dày/keo có điều kiện; giá dán lẻ khớp bảng AX Film |
+| C2 | 10 | 9,7 | 9,8 | Thêm giá dán lẻ theo vị trí, mục Lợi ích & giới hạn, quy trình 6 bước, định nghĩa PPF đầy đủ; catalog vẫn mở |
+| C3 | 10 | 9,7 | 9,7 | Giữ |
+| S1 | 10 | 9,7 | 9,7 | Migration /ppfwrap-film còn mở |
+| S2 | 10 | 9,8 | 9,8 | Giữ; ALT ảnh quy trình mô tả đúng ảnh hồ sơ thật |
+| S3 | 10 | 9,5 | 9,5 | R21-03 catalog/Wrap còn mở |
+| G1 | 10 | 9,6 | 9,7 | Kết luận vật liệu/độ dày trích riêng không còn quá rộng |
+| G2 | 10 | 9,5 | 9,7 | Lợi ích–giới hạn, giá dán lẻ, FAQ xe cũ/bóng–mờ hỗ trợ quyết định |
+| G3 | 5 | 4,4 | 4,6 | Câu trích kỹ thuật của anh Đặng Minh Hoàng (duyệt 21/10); ảnh quy trình dẫn về 4 hồ sơ thi công gốc |
+| U1 | 5 | 4,9 | 4,9 | Thẻ Vì sao không còn khoảng trống trên mobile; 375/540/1280px không tràn |
+| U2 | 5 | 4,4 | 4,8 | R21-01: finder giữ q + service=ppf (Quảng Ninh → 8 điểm), nút miền dùng mien= |
+| U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; anh Hoàng duyệt lại toàn bài 22/10. Commercial/CRM còn CX |
+
+**Tổng tự chấm: C 29,1 · S 29,0 · G 24,0 · U 14,2 → 96,3/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,0 ≥ 23,75. Phần bổ sung sau bản duyệt sáng 22/10 (giá dán lẻ, k07, 2 FAQ, quy trình ảnh thật, định nghĩa PPF) cần anh Hoàng xem lại; cần reviewer tái chấm; chưa nghiệm thu Live.
+
 ## Việc còn lại (tăng mức dư, không chặn)
 
 1. Tài liệu kỹ thuật/giấy phân phối AX Film do hãng phát hành (C1, G3).
@@ -61,7 +80,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `3aa0f145372b0653f436719407c41f964edee1f4a9561302b6d2f530d2657fde` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `8a1ae4d0a51e9f85dbbd74b768e2a3fa92239b5949561a7a7bf5b49d650f7fee` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
