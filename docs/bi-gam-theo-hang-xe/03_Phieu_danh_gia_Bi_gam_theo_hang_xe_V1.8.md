@@ -118,3 +118,5 @@ Anh Nguyễn Quang Đạo duyệt phần sửa 20–21/10 (chủ quản xác nh�
 | F07-R4 | 02: 21 hãng, 6 FAQ, 219 thẻ, mô tả popup tham khảo, bước xoá khối nội bộ khi lên production; 01/04 xuất lại cùng SHA; 05 ghi trạng thái | — |
 
 Còn mở: duyệt đợt 7 (sapo, bỏ link VF7) ở 05; QA mobile/tablet thật và payload CRM ô Dòng xe; production (HUB, VF7, xoá khối nội bộ). Chờ reviewer chấm lại.
+
+Cập nhật 22/10/2026: anh Đạo đã duyệt đợt 7; `lastReviewed` 2026-10-22. Còn mở: QA thiết bị thật + CRM ô Dòng xe, production, reviewer chấm lại.
