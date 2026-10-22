@@ -29,4 +29,4 @@
 | Trang đích `../fadil/`, `../lux-sa20/` trong mục "Dòng xe VinFast khác" | Kiểm lại khi các trang này lên preview/production |
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `51c7f45828f6f23e06bb88c3541ed342e64aa55b9fcb47ca9adad501324d140c`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `9885841c54149aec34f40652e1be817c9be1f63f8fad8e519591fe91bec92d42`

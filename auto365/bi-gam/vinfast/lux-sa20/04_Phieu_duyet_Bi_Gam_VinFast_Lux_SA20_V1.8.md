@@ -30,4 +30,4 @@
 | Trang `../limo-green/`, `../fadil/` được link trong "Dòng xe VinFast khác" | Kiểm tra đã có trước khi đăng |
 | Xoá khối `#vf3lp-internal-check`; chốt domain; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `1e7aa256aa07e163ac78197743d59efceb27bb19dfd2fe9eb119231596765632`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `09734d5667a9e8856e7094227308099065b6584c45bee376108e515e45ae0187`
