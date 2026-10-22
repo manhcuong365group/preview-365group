@@ -417,6 +417,8 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 @media(max-width:1080px){.qtGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.tri.tri2{grid-template-columns:1fr}.qtGrid{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:82%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.qtGrid::-webkit-scrollbar{display:none}.qt{scroll-snap-align:start}}
 .qtI{display:block}.qt img{aspect-ratio:16/9}
+.legend li div{display:flex;flex-direction:column;gap:2px}.legend li b{font-size:14px;font-weight:600}.legend li span{font-size:13px;color:var(--m);line-height:1.45}.legend li{align-items:flex-start}.legend li:before{margin-top:5px}.layers{align-items:center}.stack{height:200px}.stack i:nth-child(2){top:44px}.stack i:nth-child(3){top:88px}.stack i:nth-child(4){top:132px}
+@media(max-width:760px){.layers{grid-template-columns:96px 1fr;gap:12px}.stack{height:170px}.stack i{width:78px;left:12px}.stack i:nth-child(2){top:38px}.stack i:nth-child(3){top:76px}.stack i:nth-child(4){top:114px}}
 </style>
 </head>
 <body>
@@ -643,10 +645,11 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 <div class="c tri tri2">
   <div>
     <h2>PPF là gì?</h2>
-    <p>PPF (Paint Protection Film) là lớp phim bảo vệ sơn, giúp giảm tác động của trầy xước nhẹ, đá văng, môi trường và tia UV lên sơn, đồng thời giữ vẻ đẹp nguyên bản cho xe. Cấu tạo phổ biến gồm 4 lớp:</p>
+    <p>PPF (Paint Protection Film) là màng phim trong suốt, phổ biến dày khoảng 6–10 mil (0,15–0,25 mm), dán trực tiếp lên bề mặt sơn ô tô. Lớp phim nhận thay các tác động như trầy xước nhẹ, đá dăm văng, phân chim, nhựa cây và tia UV, giúp lớp sơn bên dưới giữ được màu và độ bóng nguyên bản.</p>
+    <p>PPF khác phủ ceramic ở chỗ có độ dày thật để chịu va chạm nhẹ, và khác dán decal hay wrap ở chỗ trong suốt, giữ nguyên màu sơn. Khi cần, phim có thể bóc ra mà lớp sơn zin vẫn còn bên dưới. Cấu tạo phổ biến gồm 4 lớp:</p>
     <div class="layers">
       <div class="stack" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
-      <ul class="legend"><li>Lớp phủ bảo vệ (top coat)</li><li>Lớp phim TPU trong suốt</li><li>Lớp keo chuyên dụng</li><li>Lớp lót bảo vệ (bóc khi dán)</li></ul>
+      <ul class="legend"><li><div><b>Lớp phủ bảo vệ (top coat)</b><span>Chống bám bẩn, kháng UV; trên nhiều dòng có khả năng tự mờ vết xước nhẹ khi gặp nhiệt</span></div></li><li><div><b>Lớp phim TPU trong suốt</b><span>Lớp dày nhất, đàn hồi, nhận thay va đập nhẹ và đá dăm</span></div></li><li><div><b>Lớp keo chuyên dụng</b><span>Giữ phim bám chắc lên sơn, có thể bóc ra khi cần thay</span></div></li><li><div><b>Lớp lót bảo vệ (liner)</b><span>Bảo vệ lớp keo khi vận chuyển, bóc bỏ ngay trước khi dán</span></div></li></ul>
     </div>
     <p class="note" style="margin-top:10px">Cấu tạo tham khảo theo <a href="https://multimedia.3m.com/mws/media/2395419O/3m-paint-protection-film-series-150-gloss-product-bulletin-rev-a.docx" target="_blank" rel="noopener">Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)</a>.</p>
   </div>

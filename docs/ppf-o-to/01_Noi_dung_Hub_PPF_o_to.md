@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `18da502927fe9f1b0e77734818084e8f6fe87e1c7bda2d23eb10e43f0ab262f9`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `00fd5cd92e1b8229eeb158761c5100b7471a8d8647c63b4fd35e5fc141e0f7e3`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -104,12 +104,14 @@ _[Form: ]_
 
 ## PPF là gì?  `#kien-thuc`
 
-PPF (Paint Protection Film) là lớp phim bảo vệ sơn, giúp giảm tác động của trầy xước nhẹ, đá văng, môi trường và tia UV lên sơn, đồng thời giữ vẻ đẹp nguyên bản cho xe. Cấu tạo phổ biến gồm 4 lớp:
+PPF (Paint Protection Film) là màng phim trong suốt, phổ biến dày khoảng 6–10 mil (0,15–0,25 mm), dán trực tiếp lên bề mặt sơn ô tô. Lớp phim nhận thay các tác động như trầy xước nhẹ, đá dăm văng, phân chim, nhựa cây và tia UV, giúp lớp sơn bên dưới giữ được màu và độ bóng nguyên bản.
 
-- Lớp phủ bảo vệ (top coat)
-- Lớp phim TPU trong suốt
-- Lớp keo chuyên dụng
-- Lớp lót bảo vệ (bóc khi dán)
+PPF khác phủ ceramic ở chỗ có độ dày thật để chịu va chạm nhẹ, và khác dán decal hay wrap ở chỗ trong suốt, giữ nguyên màu sơn. Khi cần, phim có thể bóc ra mà lớp sơn zin vẫn còn bên dưới. Cấu tạo phổ biến gồm 4 lớp:
+
+- Lớp phủ bảo vệ (top coat)Chống bám bẩn, kháng UV; trên nhiều dòng có khả năng tự mờ vết xước nhẹ khi gặp nhiệt
+- Lớp phim TPU trong suốtLớp dày nhất, đàn hồi, nhận thay va đập nhẹ và đá dăm
+- Lớp keo chuyên dụngGiữ phim bám chắc lên sơn, có thể bóc ra khi cần thay
+- Lớp lót bảo vệ (liner)Bảo vệ lớp keo khi vận chuyển, bóc bỏ ngay trước khi dán
 
 Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024).
 

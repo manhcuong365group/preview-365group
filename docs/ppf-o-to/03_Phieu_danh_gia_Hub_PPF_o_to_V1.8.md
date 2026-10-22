@@ -44,6 +44,8 @@ Bổ sung 22/10/2026: mục kiến thức k08 (accordion, sau k00) — 12 vị t
 
 Bổ sung 22/10/2026: quy trình thi công đổi từ 5 sang 6 bước theo tài liệu quy trình chủ trang cung cấp (tiếp nhận; vệ sinh; đo đạc & chuẩn bị phim; dán; hoàn thiện; kiểm tra, bàn giao & hướng dẫn). Khối riêng #quy-trinh dạng 6 thẻ ảnh; ảnh thật từ hồ sơ thi công đã đăng (BMW 530i, Mazda CX-5, Ford Ranger, Toyota Camry), mỗi ảnh dẫn về bài gốc; đã bỏ ảnh minh họa AI.
 
+Bổ sung 22/10/2026: khối "PPF là gì?" mở rộng định nghĩa (độ dày phổ biến 6–10 mil, PPF khác ceramic/wrap, có thể bóc) và mô tả chức năng 4 lớp theo TDS 3M 150 Gloss.
+
 Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -59,7 +61,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `18da502927fe9f1b0e77734818084e8f6fe87e1c7bda2d23eb10e43f0ab262f9` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `00fd5cd92e1b8229eeb158761c5100b7471a8d8647c63b4fd35e5fc141e0f7e3` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
