@@ -17,7 +17,7 @@
 | Giá | 3.500.000–6.000.000đ/bộ đèn (1 bộ = 1 cặp), chưa VAT | Bảng giá đã chốt cho VF7/VF3 |
 | Nhiệt màu | 301 V2, F10 Pro V2, AES SV 3.0 Max chuyển 3 nhiệt màu trên cùng bộ đèn; F10 Turbo V2 có 3 phiên bản màu; GTR G1 Turbo V2 cố định Cos 4800K/Pha 4300K; AES SV 3.0 Pro cố định 4800K; mẫu khác xác nhận theo mã khi báo giá | Quy tắc trang VF7 |
 | Bằng chứng trên Lux SA2.0 | X-Light F10 Turbo V2: 1 bài case Lux SA2.0 bản Tiêu chuẩn, 5500K, hốc đèn gầm, pát/bộ gá rời, relay + cầu chì + công tắc, nghiệm thu 18/08/2026 tại Trụ Sở Chính | https://auto365.vn/vinfast-lux-sa20-lap-x-light-f10-turbo-v2-gia-cau-hinh |
-| Video | Không có video Lux SA2.0 trên auto365.vn tại ngày dựng — bỏ khối video | Đã tìm trên trang case, /xe-thuc-te, /video |
+| Video | 2 video: w3LC1LS9s68 — VinFast Lux SA2.0 lắp X-Light F10 Turbo V2 5500K; vCnfKrscBU4 — VinFast Lux SA nâng cấp bi gầm GTR G1 Turbo (chưa xác nhận bản V2, không gắn nhãn V2) | YouTube Auto365; video 2 user gửi 21/10/2026 |
 | Ảnh | Ảnh thật từ bài case (toàn xe chính diện, góc phải/trái, Cos 5500K, trước/sau), chuyển WebP trong `hinh/` | Bài case trên auto365.vn |
 | Đại lý chính hãng | X-Light, GTR, AES | Chủ quản xác nhận 12/10/2026 |
 | Hoàn nguyên | Chủ xe đến chi nhánh Auto365 để tháo; chi phí (nếu có) tư vấn theo tình trạng xe | User xác nhận 20/10/2026 |
@@ -27,8 +27,7 @@
 | Việc | Giai đoạn |
 |---|---|
 | Năm xe/phiên bản khác của Lux SA2.0 đã lắp | Chờ Kỹ thuật (bài case không công bố năm xe) |
-| Video Lux SA2.0 | Bổ sung khi có |
 | Trang `../limo-green/`, `../fadil/` được link trong "Dòng xe VinFast khác" | Kiểm tra đã có trước khi đăng |
 | Xoá khối `#vf3lp-internal-check`; chốt domain; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (21/10/2026, bản hiện hành): `e8ab6778f1ebada1a5901da09f4f5c3f9aafef22d834606fdc306fb60c8752e4`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `1e7aa256aa07e163ac78197743d59efceb27bb19dfd2fe9eb119231596765632`
