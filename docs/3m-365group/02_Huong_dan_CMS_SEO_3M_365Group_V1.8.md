@@ -1,9 +1,9 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d0557c40a8fa86c0fb9f4c89003030ce618fefe5a8e030fc06e1e33c6daf17eb` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f8995f098dfc2ac4503f57512a6a65cd8ca34a73f2c78d0eb23f0412436fb1e8` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
-- Kiểm duyệt nội dung: **chưa có người duyệt có tên**. Khi có, thêm `reviewedBy` + `lastReviewed` vào WebPage và dòng kiểm duyệt dưới hero.
+- Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo, 22/10/2026 (user xác nhận). Trang hiện dòng kiểm duyệt dưới hero và trong "Về bài viết này"; WebPage có `reviewedBy` (url hồ sơ auto365.vn/tac-gia/nguyen-quang-dao) và `lastReviewed` 2026-10-22.
 
 ## 1. Vai trò URL
 
@@ -51,7 +51,6 @@ Thiếu khi lên production: `url`/`@id` tuyệt đối cho WebPage, `Breadcrumb
 ## 5. Việc cần làm trước khi đăng
 
 1. Chốt URL đích, canonical, đổi toàn bộ link nội bộ sang URL thật.
-2. Có người kiểm duyệt có tên (kỹ thuật phim) → thêm vào trang và schema.
 3. Thống nhất số đại lý với `3m.365group.com.vn`.
 4. Ảnh hero/og bản gốc ≥ 1600px.
 5. Gia hạn ảnh Distributor Certificate sau 31/12/2026.
