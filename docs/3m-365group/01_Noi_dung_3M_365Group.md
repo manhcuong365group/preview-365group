@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `69329d0d4eb244cc43a41cc039738e1667a62938fd126cfa8fad0fc09e4e3470`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `a69947ed3002a90a45952cc584fe813c77d917febf785603c1690ea9eb932e44`
 Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt ô tô 3M™
@@ -134,6 +134,10 @@ Các đại lý ủy quyền 3M trên toàn quốc.
 
 ### Tìm đại lý 3M gần nhất
 Chọn tỉnh/thành phố để xem danh sách đại lý, địa chỉ và thông tin liên hệ.
+
+## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
+Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
+Hoặc gọi hotline 365Group: 0363 365 365
 
 ## Vì sao 365Group chọn phân phối phim 3M™
 Những điểm chính theo thông tin từ trang Cá nhân hóa ô tô của 3M Việt Nam

@@ -1,11 +1,11 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 4. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 5. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
-## Tự chấm lần 4 (bản 22/10/2026, có URL đích)
+## Tự chấm lần 5 (bản 22/10/2026, có form tư vấn)
 
 | Mã | Tối đa | Điểm | Căn cứ / phần thiếu |
 |---|---:|---:|---|
@@ -19,10 +19,14 @@
 | G2 | 10 | 9,3 | Bảng 15 mã đủ 3 dòng, cùng 5 chỉ số, có điều kiện đo NR |
 | G3 | 5 | 4,3 | Kiểm duyệt kỹ thuật Nguyễn Quang Đạo (22/10/2026) có hồ sơ, hiện trên trang và trong reviewedBy; 5 bài thi công thật; 4 chứng nhận 3M; trích 3M Việt Nam có nguồn. Còn: chưa có case Ceramic IR, chưa có ý kiến chuyên gia riêng về phim |
 | U1 | 5 | 4,4 | 375px/1280px không tràn; bảng 15 mã vừa khung desktop, cuộn ngang trên mobile với cột chỉ số cố định |
-| U2 | 5 | 3,8 | Không đổi: chưa có form |
+| U2 | 5 | 4,6 | Form #tu-van gửi /api/leads: kiểm tra số + đồng ý, chỉ báo thành công khi {"success":true}, lỗi giữ dữ liệu + hotline 0363 365 365; CTA Tìm đại lý + hotline/email. Còn: endpoint trên 3m.365group.com.vn chưa được IT xác nhận |
 | U3 | 5 | 5,0 | 01–03 cùng SHA-256 bên dưới |
 
-**Tổng tự chấm lần 4: C 26,0 · S 26,7 · G 22,2 · U 13,2 → 88,1/100. CHƯA ĐẠT V1.8** — SEO 26,7 < 28,5; GEO 22,2 < 23,75. Phần còn thiếu chủ yếu cần quyết định của chủ trang (URL đích, người kiểm duyệt, form).
+**Tổng tự chấm lần 5: C 26,0 · S 26,7 · G 22,2 · U 14,0 → 88,9/100. CHƯA ĐẠT V1.8** — SEO 26,7 < 28,5; GEO 22,2 < 23,75. Phần còn thiếu chủ yếu cần quyết định của chủ trang (URL đích, người kiểm duyệt, form).
+
+## Lần 4
+
+C 26,0 · S 26,7 · G 22,2 · U 13,2 → 88,1/100, CHƯA ĐẠT.
 
 ## Lần 3
 
@@ -58,7 +62,7 @@ Lần 1:
 | 4 | Bỏ từ claim quá ("vượt trội", "tối ưu", "cao cấp nhất"), sửa câu mô tả Ceramic NR theo câu đã duyệt | C3 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 5 | Thêm thông số NR 35/25/15/5 (catalog NR 03/2026) vào bảng kỹ thuật | C2, G2 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 6 | Thống nhất số đại lý (224 hay 160+) giữa trang này và 3m.365group.com.vn | C1 | Kinh doanh |
-| 7 | Form để lại thông tin (POST /api/leads) hoặc nút Zalo/hotline rõ | U2 | Chủ trang |
+| 7 | Form để lại thông tin (POST /api/leads) hoặc nút Zalo/hotline rõ | U2 | Chủ trang | ✅ Đã làm (form #tu-van, chờ IT xác nhận endpoint)
 | 8 | Nguồn cho "Không gây nhiễu tín hiệu" hoặc bỏ | C1 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 9 | Ảnh hero/og bản gốc ≥ 1600px | S2 | Chủ trang |
 
@@ -68,7 +72,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `69329d0d4eb244cc43a41cc039738e1667a62938fd126cfa8fad0fc09e4e3470` |
+| `auto365/3m-365group/index.html` | SHA-256 `a69947ed3002a90a45952cc584fe813c77d917febf785603c1690ea9eb932e44` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

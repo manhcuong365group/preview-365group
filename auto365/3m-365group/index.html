@@ -168,6 +168,17 @@ img{max-width:100%;display:block}
 .m3-case div{padding:12px}.m3-case h3{margin:2px 0 4px;font-size:15px}.m3-case p{margin:0 0 8px;font-size:13px;color:var(--m3-mute)}.m3-case b{font-size:13px;color:var(--m3-red)}
 @media(max-width:1024px){.m3-cases{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:768px){.m3-cases{grid-template-columns:1fr 1fr;gap:10px}}
+.m3-lead{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;background:#fff;border:1px solid var(--m3-line);border-radius:10px;padding:28px}
+.m3-lead h2{margin:0 0 8px;font-size:22px;text-transform:uppercase}.m3-lead__txt p{color:var(--m3-mute);font-size:14px;margin:0 0 10px}
+.m3-lead__alt a{color:var(--m3-red);font-weight:700}
+.m3-lead__form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.m3-lead__form label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600}
+.m3-lead__form label>span>span{color:var(--m3-red)}.m3-lead__form label small{font-weight:400;color:var(--m3-mute)}
+.m3-lead__form input[type=tel],.m3-lead__form input[type=text],.m3-lead__form select{font:inherit;font-size:14px;font-weight:400;padding:10px;border:1px solid #cfd3d9;border-radius:6px;background:#fff}
+.m3-lead__form .m3-lead__consent{grid-column:1/-1;flex-direction:row;align-items:flex-start;gap:8px;font-weight:400;color:var(--m3-mute)}
+.m3-lead__form button{grid-column:1/-1;justify-content:center}
+.m3-lead__msg{grid-column:1/-1;margin:0;font-size:13px;min-height:1em}.m3-lead__msg.is-err{color:#b70e15}.m3-lead__msg.is-ok{color:#1d7a3a}.m3-lead__msg a{color:inherit;font-weight:700}
+@media(max-width:768px){.m3-lead{grid-template-columns:1fr;padding:18px;gap:16px}.m3-lead__form{grid-template-columns:1fr}.m3-lead h2{font-size:19px}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1200px){.m3-nav{display:none}}
 @media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
@@ -307,7 +318,49 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
     <form action="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html" method="get"><select name="q" aria-label="Tỉnh/thành phố"><option value="">Chọn tỉnh/thành phố</option><option>Hà Nội</option><option>TP. Hồ Chí Minh</option><option>Đà Nẵng</option><option>Hải Phòng</option><option>Cần Thơ</option></select><select aria-label="Quận/huyện" disabled><option>Chọn quận/huyện</option></select><button class="m3-btn m3-btn--red" type="submit">Tìm kiếm</button></form></div>
 </div></section>
 
-<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
+<section class="m3-sec m3-sec--grey" id="tu-van"><div class="m3-wrap">
+  <div class="m3-lead">
+    <div class="m3-lead__txt">
+      <h2>Nhận tư vấn chọn cấu hình phim 3M</h2>
+      <p>Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.</p>
+      <p class="m3-lead__alt">Hoặc gọi hotline 365Group: <a href="tel:+84363365365">0363 365 365</a></p>
+    </div>
+    <form class="m3-lead__form" id="m3-lead-form" action="/api/leads" method="post" novalidate>
+      <label><span>Số điện thoại <span aria-hidden="true">*</span></span><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="0xxx xxx xxx" required aria-describedby="m3-lead-msg"></label>
+      <label><span>Họ tên <small>(không bắt buộc)</small></span><input type="text" name="fullname" autocomplete="name" placeholder="VD: Anh Minh"></label>
+      <label><span>Dòng xe <small>(không bắt buộc)</small></span><input type="text" name="vehicle" placeholder="VD: Toyota Camry 2024"></label>
+      <label><span>Cấu hình quan tâm</span><select name="service"><option value="Phim cách nhiệt 3M – chưa chọn cấu hình">Chưa chọn, cần tư vấn</option><option>3M Ceramic NR</option><option>3M Ceramic IR</option><option>Crystalline Hybrid</option><option>Crystalline CR BLK</option><option>Hybrid PRO</option><option>CR BLK PRO</option></select></label>
+      <label><span>Khu vực <small>(không bắt buộc)</small></span><input type="text" name="province" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh"></label>
+      <label class="m3-lead__consent"><input type="checkbox" name="consent" value="1" required> Tôi đồng ý để 365Group và đại lý 3M liên hệ tư vấn qua số điện thoại này.</label>
+      <input type="hidden" name="source_page" value="Phim cách nhiệt ô tô 3M – 365Group">
+      <button class="m3-btn m3-btn--red" type="submit">Gửi yêu cầu tư vấn</button>
+      <p class="m3-lead__msg" id="m3-lead-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</div></section>
+<script>
+(function(){
+  var f=document.getElementById("m3-lead-form");if(!f)return;
+  var msg=document.getElementById("m3-lead-msg"),btn=f.querySelector("button[type=submit]");
+  function say(t,k){msg.textContent="";msg.className="m3-lead__msg"+(k?" is-"+k:"");if(typeof t==="string"){msg.textContent=t}else{msg.appendChild(t)}}
+  function fail(){var s=document.createElement("span");s.append("Chưa gửi được yêu cầu. Thông tin bạn nhập vẫn được giữ, vui lòng bấm gửi lại hoặc gọi ");var a=document.createElement("a");a.href="tel:+84363365365";a.textContent="0363 365 365";s.append(a,".");say(s,"err")}
+  f.addEventListener("submit",function(e){
+    e.preventDefault();
+    var p=f.phone.value.replace(/[\s.\-]/g,"").replace(/^\+84/,"0");
+    if(!/^0\d{9}$/.test(p)){say("Vui lòng nhập số điện thoại 10 số, bắt đầu bằng 0.","err");f.phone.focus();return}
+    if(!f.consent.checked){say("Vui lòng tích đồng ý để đại lý liên hệ tư vấn.","err");return}
+    var d=new FormData(f);d.set("phone",p);d.set("source_url",location.href);d.set("referrer",document.referrer||"");
+    var q=new URLSearchParams(location.search);["utm_source","utm_medium","utm_campaign","utm_term","utm_content"].forEach(function(k){if(q.get(k))d.set(k,q.get(k))});
+    if(f.vehicle.value)d.set("note","Dòng xe: "+f.vehicle.value);
+    btn.disabled=true;say("Đang gửi…");
+    fetch(f.action,{method:"POST",body:d}).then(function(r){return r.json()}).then(function(j){
+      if(j&&j.success===true){f.reset();say("Đã gửi yêu cầu. Đại lý 3M sẽ gọi lại cho bạn trong giờ làm việc.","ok");if(typeof gtag==="function")gtag("event","generate_lead",{form:"3m_365group"})}else{fail()}
+    }).catch(fail).then(function(){btn.disabled=false});
+  });
+})();
+</script>
+
+<section class="m3-sec"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Vì sao 365Group chọn phân phối phim 3M™</h2><p>Những điểm chính theo thông tin từ <a class="m3-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/" target="_blank" rel="noopener">trang Cá nhân hóa ô tô của 3M Việt Nam</a></p></div></div>
   <div class="m3-why">
     <div><b>Kinh nghiệm lâu năm của hãng</b><p>Theo 3M, hãng đã có hơn 55 năm phát triển phim phủ màu cửa kính và nhận bằng sáng chế phim chống nắng cho cửa kính đầu tiên vào năm 1966.</p></div>
@@ -316,7 +369,7 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
   </div>
 </div></section>
 
-<section class="m3-sec"><div class="m3-wrap">
+<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Câu hỏi thường gặp</h2></div></div>
   <div class="m3-faq">
     <details open><summary>365Group là đơn vị nào?</summary><p>365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc.</p></details>
@@ -326,7 +379,7 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
   </div>
 </div></section>
 
-<section class="m3-sec m3-sec--grey"><div class="m3-wrap">
+<section class="m3-sec">><div class="m3-wrap">
   <div class="m3-src">
     <div class="m3-src__logo"><b>365</b><span>GROUP</span><small>3M AUTHORIZED<br>DISTRIBUTOR</small></div>
     <div>

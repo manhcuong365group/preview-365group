@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `69329d0d4eb244cc43a41cc039738e1667a62938fd126cfa8fad0fc09e4e3470` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `a69947ed3002a90a45952cc584fe813c77d917febf785603c1690ea9eb932e44` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo, 22/10/2026 (user xác nhận). Trang hiện dòng kiểm duyệt dưới hero và trong "Về bài viết này"; WebPage có `reviewedBy` (url hồ sơ auto365.vn/tac-gia/nguyen-quang-dao) và `lastReviewed` 2026-10-22.
@@ -48,6 +48,13 @@ Thứ tự H2: 3 dòng phim → 6 cấu hình → Xe thực tế đã dán theo 
 | Kinh nghiệm hãng (hơn 55 năm, bằng sáng chế 1966), thợ ủy quyền | Trang Cá nhân hóa ô tô của 3M Việt Nam, ghi "theo 3M" |
 | 4 chứng nhận | Distributor Certificate 3M Việt Nam – 365 Group (01/03/2023–31/12/2026); 3M Pro Shop Certificate – Auto365 Center; 3M Preferred Installer; ảnh lễ trao chứng nhận Training Center |
 | Ảnh xe thẻ cấu hình | Ảnh tách nền dùng chung với trang bi gầm theo hãng xe — minh họa phân khúc giá, không phải xe đã dán đúng gói |
+
+## 4b. Form tư vấn (#tu-van)
+
+- `POST /api/leads` (đường dẫn tương đối), multipart FormData: phone (chuẩn hoá 10 số, bỏ +84), fullname, vehicle, service (cấu hình), province, consent=1, source_page "Phim cách nhiệt ô tô 3M – 365Group", source_url, referrer, utm_* (nếu có), note "Dòng xe: …".
+- Kiểm tra phía trình duyệt: số 10 chữ số bắt đầu bằng 0; bắt buộc tích đồng ý. Chỉ báo "Đã gửi" khi phản hồi JSON đúng `{"success": true}`; lỗi mạng/khác → giữ dữ liệu, mời gửi lại hoặc gọi 0363 365 365. Không có mailto dự phòng.
+- **Cần IT xác nhận trước khi đăng:** trang đặt trên 3m.365group.com.vn nên `/api/leads` phải tồn tại trên domain này (hoặc đổi action sang endpoint auto365.vn có CORS). Trên preview, `/api/leads` chưa có → form báo lỗi đúng chủ đích (đã thử 22/10/2026). API không kiểm tra số/đồng ý phía server.
+- Đã thử: số sai → báo lỗi; thiếu đồng ý → báo lỗi; 404 → giữ dữ liệu + hotline; giả lập `{"success":true}` → báo đã gửi, xoá form, bắn `generate_lead`.
 
 ## 5. Việc cần làm trước khi đăng
 
