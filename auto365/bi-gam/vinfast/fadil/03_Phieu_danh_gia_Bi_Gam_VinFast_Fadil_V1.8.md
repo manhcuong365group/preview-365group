@@ -1,5 +1,35 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast Fadil V1.8
 
+## Bản hiện hành (22/10/2026)
+
+| Trường | Nội dung |
+| --- | --- |
+| Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
+| Bản chấm | `index.html` SHA-256 `298266471dfa54188267cbc36f21017a0957e671f836839ab5af796042f66cf1` |
+| Ngày chấm | 22/10/2026, chấm trên preview, sau audit reviewer 21/10/2026 |
+| Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 21/10/2026 (lastReviewed giữ 21/10) |
+
+Sửa theo audit 21/10: nút "Xem tất cả 18 mẫu cho Fadil" mở đủ 18 mẫu tại chỗ (desktop mặc định 8, sau bấm 18; mobile dạng cuộn ngang hiện đủ 18), link hub ghi "Xem danh mục bi gầm"; Titan 301 (3,5 triệu) đưa lên vị trí 4, ItemList đánh lại số khớp thứ tự card; bài "ô tô điện" chuyển cuối rail Cẩm nang; case Fadil ghi rõ dữ kiện từ bài (LED Projector gầm nguyên bản, tháo cản, pát rời; combo F10 Pro + bóng LED NaoEvo S8 Pro đèn chính); popup F10 New không còn khẳng định phiên bản 2025; thumbnail video dùng hqdefault + ảnh dự phòng; thêm câu Trụ Sở Chính thuộc 365Group và dòng lưu ý tham khảo kỹ thuật; dateModified 22/10/2026.
+
+| Mã | Tối đa | Điểm | Ghi chú / còn trừ |
+| --- | ---: | ---: | --- |
+| C1 | 10 | 9,5 | F10 Pro (không V2) giá theo PDP, chưa có xác nhận riêng của Kinh doanh. |
+| C2 | 10 | 9,3 | Chưa có bảng theo đời/phiên bản Fadil ngoài Premium 2021. |
+| C3 | 10 | 9,7 | — |
+| S1 | 10 | 9,6 | — |
+| S2 | 10 | 9,7 | FAQPage 6 = 6 hiển thị; ItemList 18 = 18 card, đúng thứ tự. |
+| S3 | 10 | 9,6 | Link trộn v2.auto365.vn và auto365.vn. |
+| G1 | 10 | 9,7 | — |
+| G2 | 10 | 9,8 | Phân biệt "Có case Fadil" / video / "Kỹ thuật xác nhận"; F10 New chưa xác nhận phiên bản. |
+| G3 | 5 | 4,9 | 1 case là bài 2024. |
+| U1 | 5 | 4,9 | Mobile 375: scrollWidth 375, 4 tab popup mở đúng; CTA mở đủ 18 mẫu. |
+| U2 | 5 | 4,8 | Chưa test gửi lead riêng trên trang Fadil. |
+| U3 | 5 | 4,6 | Chưa nghiệm thu production L1–L8. |
+
+**C 28,5 · SEO 28,9/30 · GEO 24,4/25 · U 14,3 → 96,1/100 — ĐẠT** (tổng ≥ 95, SEO ≥ 28,5, GEO ≥ 23,75).
+
+## Lịch sử (hết hiệu lực)
+
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100 (ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25) |
@@ -7,7 +37,7 @@
 | Ngày chấm | 21/10/2026 (chấm trên preview) |
 | Reviewer | Nguyễn Quang Đạo — duyệt 21/10/2026 |
 
-## Bảng điểm
+### Bảng điểm
 
 | Mã | Tối đa | Điểm | Bằng chứng | Còn trừ |
 | --- | ---: | ---: | --- | --- |
@@ -29,7 +59,7 @@
 **Kết luận: CHƯA ĐẠT ngưỡng tổng 95** (SEO 28,7 ≥ 28,5 và GEO 23,8 ≥ 23,75 đạt). Thiếu chủ yếu do chưa có video Fadil (C2, G3). Bổ sung 1 video bi gầm trên Fadil hoặc dữ kiện đời/phiên bản Fadil đã lắp sẽ đủ ngưỡng.
 
 
-## Chấm lại 21/10/2026 sau khi bổ sung (12 tiêu chí, có U3, /100)
+### Chấm lại 21/10/2026 sau khi bổ sung (12 tiêu chí, có U3, /100)
 
 Mục "Nâng cấp khác" thay thẻ chung "Bi LED đèn chính" bằng case thật "VinFast Fadil 2022 lắp bi LED Titan Black 2026". Không có video Fadil nào trên auto365.vn.
 
@@ -40,7 +70,7 @@ Mục "Nâng cấp khác" thay thẻ chung "Bi LED đèn chính" bằng case th�
 C 28,2 · S 28,9 · G 24,0 · U 14,1 → **95,2/100 — ĐẠT**. S3 +0,2 (liên kết thêm case Fadil thật), G3 +0,2 (thêm nguồn Fadil). Còn trừ: không có video Fadil.
 
 
-## Chấm lại 21/10/2026 sau khi thêm 2 video Fadil (12 tiêu chí, có U3, /100)
+### Chấm lại 21/10/2026 sau khi thêm 2 video Fadil (12 tiêu chí, có U3, /100)
 
 - Khối video: "VinFast Fadil nâng cấp combo bi LED Titan Gold 2.0 và bi gầm X-Light F10 New" (WNE0TXvx4ok), "VinFast Fadil nâng cấp bi gầm Titan 301, 3 nhiệt màu" (3lHmb21nmgE) — user gửi 21/10.
 - Thêm X-Light F10 New (2025), 4.300.000đ (đã lắp trên Fadil theo video) → 18 mẫu; Titan 301 ghi đã lắp trên Fadil. Tab Tiết kiệm hiện 301 V2, AES SV 3.0 Pro, Titan 301 (khớp câu tư vấn).
