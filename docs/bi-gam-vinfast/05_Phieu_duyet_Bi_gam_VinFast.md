@@ -30,4 +30,5 @@ Chủ quản xác nhận 22/10/2026: anh Nguyễn Quang Đạo đã duyệt kh�
 | Nguồn form | `data-service="Bi gầm VinFast"` (+ dòng xe khi bấm thẻ dòng xe), `data-source-page="Bi gầm VinFast"` (đã sửa 22/10 — trước đó ghi nhầm "Bi gầm theo hãng xe") |
 | Thẻ dòng xe → form | Bấm thẻ VF 8 → ô Dòng xe = "VinFast VF 8", service = "Bi gầm VinFast - VinFast VF 8" (kiểm trên preview) |
 | Lead test | 22/10/2026 POST https://auto365.vn/api/leads (đúng các trường lead.js gửi; preview không có `/api/leads` nên form trên pages.dev trả 405 như các trang khác) → `{"success":true, "lead_id":"228"}` |
-| Còn | CRM xác nhận đã nhận lead 228 có dòng xe "VinFast VF 8"; sau đó xoá lead test 228 |
+| CRM | Chủ quản xác nhận 22/10/2026: CRM nhận lead 228, có dòng xe "VinFast VF 8" — ngữ cảnh xe từ thẻ dòng xe → form → CRM đạt |
+| Còn | Xoá lead test 228 khỏi CRM |

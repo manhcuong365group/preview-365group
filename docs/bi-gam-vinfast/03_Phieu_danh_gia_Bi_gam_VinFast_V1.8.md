@@ -4,7 +4,7 @@
 |---|---|
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 — đủ 12 tiêu chí (có U3), thang /100. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
 | Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-22) |
-| Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test; phần sẽ bổ sung sau khi đăng không trừ điểm) |
+| Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026; `lastReviewed` 2026-10-22; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
@@ -25,21 +25,21 @@
 | G3 | Nguồn và truy nguyên | 4,8/5 | Mỗi case link bài gốc có ngày; nguồn ảnh ghi trong 02; 04 lưu URL từng dòng; người duyệt đứng tên + ngày trên trang | — |
 | **G** | | **23,8/25** | | Đạt ngưỡng 23,75 |
 | U1 | Cấu trúc dễ đọc | 4,6/5 | Hero → dòng xe → case → lưu ý → lý do → chi nhánh → cẩm nang → FAQ → CTA → form; mobile 375px không tràn ngang, lưới dòng xe 2 hàng vuốt ngang | — |
-| U2 | Hành động tiếp theo | 4,8/5 | Form nr-lead (`data-service="Bi gầm VinFast"`), gọi 0365 365 911, Zalo; thẻ dòng xe chưa có hồ sơ tự điền dòng xe vào form; lead test 228 (22/10/2026) → `{"success":true}`; `source_page` sửa đúng "Bi gầm VinFast" | Chờ CRM xác nhận lead 228 có dòng xe |
+| U2 | Hành động tiếp theo | 5/5 | Form nr-lead (`data-service="Bi gầm VinFast"`), gọi 0365 365 911, Zalo; thẻ dòng xe chưa có hồ sơ tự điền dòng xe vào form; lead test 228 (22/10/2026) → `{"success":true}`; `source_page` sửa đúng "Bi gầm VinFast" ; CRM xác nhận nhận lead 228 có dòng xe "VinFast VF 8" (22/10/2026) | Xoá lead test 228 (vận hành, không tính điểm) |
 | U3 | Bộ bàn giao nhất quán | 5/5 | 01 + 04 xuất tự động từ index.html cùng SHA; 02 hướng dẫn CMS; 03 phiếu này; khối kiểm tra nội bộ cuối trang (chỉ hiện trên preview); 05 phiếu duyệt ghi người, ngày, phạm vi | — |
-| **U** | | **14,4/15** | | |
-| **Tổng** | | **94,9/100** | | C 28,1 · S 28,6 · G 23,8 · U 14,4 |
+| **U** | | **14,6/15** | | |
+| **Tổng** | | **95,1/100** | | C 28,1 · S 28,6 · G 23,8 · U 14,6 |
 
 ## 2. Kết luận
 
-**CHƯA ĐẠT — thiếu 0,1 điểm** (94,9 < 95). SEO 28,6 và GEO 23,8 đã qua ngưỡng. Khi CRM xác nhận lead 228 có dòng xe, U2 lên 5/5 → 95,1. Đây là tự chấm, cần reviewer chấm lại; không tự tuyên bố ĐẠT.
+**Tự chấm 95,1/100 — qua cả 3 ngưỡng** (tổng ≥95, SEO 28,6 ≥28,5, GEO 23,8 ≥23,75). Đây là tự chấm của team, **chờ reviewer chấm lại để chốt kết quả**; không tự tuyên bố ĐẠT.
 
 ## 3. Việc cần làm để đạt
 
 | Ưu tiên | Việc | Ảnh hưởng | Ai |
 |---|---|---|---|
-| 1 | CRM xác nhận đã nhận lead 228 kèm dòng xe "VinFast VF 8"; xoá lead test | U2 | Vận hành |
-| 2 | Reviewer chấm lại V1.8 | Kết luận | Reviewer |
+| 1 | Reviewer chấm lại V1.8 | Kết luận | Reviewer |
+| — | Xoá lead test 228 khỏi CRM | Vận hành, không tính điểm | Vận hành |
 
 Bổ sung sau (không tính điểm lượt này): cẩm nang riêng VinFast khi có bài; đăng 3 trang con Fadil / Limo Green / Lux SA2.0 trên production.
 
@@ -55,3 +55,4 @@ Bổ sung sau (không tính điểm lượt này): cẩm nang riêng VinFast khi
 | Duyệt kỹ thuật | Byline "Rà soát kỹ thuật: Nguyễn Quang Đạo (22/10/2026)" + `reviewedBy`/`lastReviewed`; phiếu duyệt 05; khối kiểm tra nội bộ đổi trạng thái |
 | Chọn theo nhu cầu | Khối 3 nhóm xe sau lưới dòng xe; desktop 3 cột, mobile vuốt ngang |
 | Duyệt bổ sung + lead | Anh Đạo duyệt khối nhu cầu; sửa `data-source-page` thành "Bi gầm VinFast"; lead test 228 → success |
+| CRM | Chủ quản xác nhận lead 228 có dòng xe "VinFast VF 8" (22/10/2026) |
