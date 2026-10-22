@@ -38,8 +38,8 @@ Phạm vi: lắp được trên VinFast Limo Green (lens 2.0 và 3.0 inch). Ngư
 
 | # | Mẫu | Giá thiết bị (chưa VAT) | Mức bằng chứng | Người xác nhận | Ngày |
 |---|---|---|---|---|---|
-| 1 | X-Light F10 New (2025) | 4.300.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
-| 2 | X-Light F10 2.0 New | 4.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 1 | X-Light F10 New (2025) | 4.300.000đ | Có case + video trên Limo Green | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 2 | X-Light F10 2.0 New | 4.500.000đ | Có case trên Limo Green | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 3 | AES SV 2.0 Max | 5.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 4 | GTR G1 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 5 | X-Light F10 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |

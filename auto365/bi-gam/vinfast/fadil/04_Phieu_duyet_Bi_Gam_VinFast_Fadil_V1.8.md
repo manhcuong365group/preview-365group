@@ -41,10 +41,10 @@ Phạm vi: lắp được trên VinFast Fadil (lens 2.0 và 3.0 inch). Người 
 
 | # | Mẫu | Giá thiết bị (chưa VAT) | Mức bằng chứng | Người xác nhận | Ngày |
 |---|---|---|---|---|---|
-| 1 | X-Light 301 V2 | 4.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
-| 2 | X-Light F10 New (2025) | 4.300.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
-| 3 | X-Light F10 Pro | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
-| 4 | Titan 301 | 3.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 1 | X-Light 301 V2 | 4.500.000đ | Có case trên Fadil (Premium 2021) | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 2 | X-Light F10 New (2025) | 4.300.000đ | Có video trên Fadil (phiên bản xác nhận khi báo giá) | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 3 | X-Light F10 Pro | 5.500.000đ | Có case trên Fadil | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 4 | Titan 301 | 3.500.000đ | Có video trên Fadil | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 5 | GTR G1 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 6 | X-Light F10 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 7 | AES SV 3.0 Pro | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |

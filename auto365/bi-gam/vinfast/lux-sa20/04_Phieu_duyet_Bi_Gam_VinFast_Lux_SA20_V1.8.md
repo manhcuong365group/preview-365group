@@ -39,8 +39,8 @@ Phạm vi: lắp được trên VinFast Lux SA2.0 (lens 2.0 và 3.0 inch). Ngư�
 
 | # | Mẫu | Giá thiết bị (chưa VAT) | Mức bằng chứng | Người xác nhận | Ngày |
 |---|---|---|---|---|---|
-| 1 | GTR G1 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
-| 2 | X-Light F10 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 1 | GTR G1 Turbo V2 | 6.000.000đ | Có video GTR G1 Turbo trên Lux SA (chưa xác nhận bản V2) | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
+| 2 | X-Light F10 Turbo V2 | 6.000.000đ | Có case + video trên Lux SA2.0 | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 3 | X-Light 301 V2 | 4.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 4 | AES SV 3.0 Pro | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
 | 5 | X-Light F10 Pro V2 | 5.500.000đ | Kỹ thuật xác nhận | Nguyễn Quang Đạo | 21/10/2026, xác nhận lại 22/10/2026 |
