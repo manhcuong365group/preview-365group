@@ -1,7 +1,7 @@
 # 01 — Nội dung Hub Nâng cấp ánh sáng (bản khách đọc)
 
-Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `5d1c28faff0b46bdcc9781a408b06385e3ba1455761a5cfd56db90534ac04f8a`
-Ngày xuất: 19/10/2026 (lần xuất đầu 10/10/2026). File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
+Nguồn: `auto365/nang-cap-anh-sang/index.html` — SHA-256 `88ba09f663f9a9ecafb664a70ea76293f527da0d549b26e8cc6a2a10c3e11ddd`
+Ngày xuất: 22/10/2026 (lần xuất đầu 10/10/2026). File này xuất tự động từ HTML, dùng để đối chiếu nội dung với 02 (CMS/SEO) và 03 (phiếu tự kiểm) cùng phiên bản.
 
 ## Hero
 
@@ -9,7 +9,7 @@ Ngày xuất: 19/10/2026 (lần xuất đầu 10/10/2026). File này xuất tự
 
 Độ đèn ô tô là nâng cấp hệ thống chiếu sáng của xe — thay bóng, lắp bi projector vào cụm đèn chính, hoặc bổ sung đèn gầm, đèn trợ sáng — theo nhu cầu sử dụng của từng xe. Hiệu quả sau lắp còn phụ thuộc quang học, phụ kiện và bước căn chỉnh.
 
-Kiểm duyệt kỹ thuật Nguyễn Quang Đạo (12/10/2026)·Cập nhật nội dung 19/10/2026
+Kiểm duyệt kỹ thuật Nguyễn Quang Đạo (12/10/2026)·Cập nhật nội dung 22/10/2026
 
 ## Các sản phẩm đèn tại Auto365  `#catalog`
 
@@ -251,7 +251,7 @@ Nguyễn Quang Đạo · Kiểm duyệt kỹ thuật đèn ô tô, Auto365
 
 ## Các nhóm nâng cấp ánh sáng khác nhau ở đâu?  `#so-sanh`
 
-Bi cầu là tên gọi quen thuộc của cụm projector có thấu kính; Bi LED, Bi LED Mini và Bi Laser đều thuộc dạng này, khác nhau ở nguồn sáng và kích thước. Trước khi chọn nhóm nào cũng cần kiểm: cụm đèn hoặc hốc lắp, hệ điện 12V/24V, không gian tản nhiệt và bước cân chỉnh vùng sáng sau lắp. Giá tham chiếu là mẫu có giá niêm yết thấp nhất trong từng nhóm trên trang này, chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
+Bi cầu là tên gọi quen thuộc của cụm projector có thấu kính; Bi LED, Bi LED Mini và Bi Laser đều thuộc dạng này, khác nhau ở nguồn sáng và kích thước. Trước khi chọn nhóm nào cũng cần kiểm: cụm đèn hoặc hốc lắp, hệ điện 12V/24V, không gian tản nhiệt và bước cân chỉnh vùng sáng sau lắp. Giá tham chiếu là giá niêm yết của mẫu được dẫn ở từng nhóm (theo trang sản phẩm), chưa gồm VAT, pát, dây và công lắp. Nhóm Bóng LED tính theo bóng chiếu sáng chính; bóng phụ trợ như T10 (soi biển số, đèn trần) có giá thấp hơn. Giá lắp đặt cụ thể được báo theo xe.
 
 
 | Nhóm | Vị trí | Phù hợp | Điểm mạnh | Giá sản phẩm |
@@ -379,7 +379,7 @@ Bảo hành theo từng mã sản phẩm: thời hạn, phạm vi và điểm ti
 
 Kiểm duyệt kỹ thuật đèn ô tô, Auto365. Biên soạn: Team Content Auto365. Phạm vi kiểm duyệt: độ tương thích theo xe, điện áp, pát/giắc, phương án dây và quy trình cân chỉnh.
 
-Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Duyệt kỹ thuật 12/10/2026 · Cập nhật nội dung 19/10/2026
+Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công · Duyệt kỹ thuật 12/10/2026 · Cập nhật nội dung 22/10/2026
 
 Danh mục
 

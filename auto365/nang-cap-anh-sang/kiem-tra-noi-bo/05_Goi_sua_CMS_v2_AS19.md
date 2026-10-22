@@ -1,4 +1,58 @@
-# 05 — Gói sửa CMS v2 hub Nâng cấp ánh sáng (theo tái kiểm 19/10/2026)
+# 05 — Gói sửa CMS v2 hub Nâng cấp ánh sáng
+
+## Bản R3 — theo tái kiểm 22/10/2026 (hiện hành)
+
+Ngày lập: 22/10/2026. Snapshot v2: 343 thẻ, ItemList 333, dateModified 2026-10-19T14:48:56+07:00, canonical `https://v2.auto365.vn/nang-cap-anh-sang`. Reviewer R3: SEO 28,8/30, GEO 23,8/25 (qua ngưỡng); **C1 và U3 còn CX** → kết luận "chưa đủ bằng chứng". Các lỗi AS19-01…06 (finder, Black, nhiệt màu, anchor, VAT) reviewer đã xác nhận đóng.
+
+| Snapshot | Số |
+| --- | ---: |
+| Thẻ / URL riêng | 343 |
+| Ngừng kinh doanh (loại khỏi ItemList — đúng) | 10 |
+| ItemList | 333 |
+| Thẻ đang bán thiếu trong ItemList | 0 |
+| Thẻ có giá số | 224 |
+| Theo nhóm | bi-led 113 · bi-led-mini 14 · bi-laser 50 · den-tro-sang 22 · bi-gam 31 · bong-led 106 · den-gam-dang-roi 7 |
+
+### R3-01 — Lens AES SV Turbo S 2026 (C1)
+
+v2 đang ghi `data-lens="1.8"` và modal "1.8 inch". PDP Auto365 của SV Turbo S **không có trường kích thước lens** (chỉ ghi "Body khoảng 94 mm"); số 1,8 inch trên PDP thuộc đoạn so sánh với X-Light F+ Pro V2. Preview đang để trống lens cho mẫu này.
+
+**Sửa:** bỏ `data-lens` của SV Turbo S (modal hiện "Chưa có dữ liệu kích thước — xem trang sản phẩm") cho tới khi Kinh doanh/hãng xác nhận số đúng SKU. Rà bộ nạp dữ liệu: chỉ lấy thông số của chính SKU, không lấy số trong đoạn so sánh/sản phẩm liên quan.
+
+Các thẻ có `data-lens` khác với lens nguồn trong 04 (chỉ xét thẻ trùng URL với preview): `/bi-led-aes-sv-turbo-s-2026` (v2 1.8 / nguồn "trống"); `/bi-led-aes-sv-turbo` (v2 3.0 / nguồn "trống"); `/module-bi-led-x-light-f-pro-mini` (v2 1.5 / nguồn "trống"); `/bi-led-xlight-x5-ultra` (v2 3.0 / nguồn "trống"); `/bi-led-titan-moto-cb150-pro-square` (v2 3.0 / nguồn "trống"); `/bi-led-aes-ev2-square` (v2 2.0 / nguồn "trống"); `/module-bi-led-mini-henvvei-h2-pro` (v2 1.7 / nguồn "trống"); `/module-bi-led-mini-henvvei-h1-pro` (v2 1.7 / nguồn "trống"); `/module-bi-led-mini-x-light-f-pro-special-5000k` (v2 1.8 / nguồn "trống"); `/module-bi-led-mini-x-light-f-max` (v2 1.8 / nguồn "trống"); `/module-bi-led-mini-x-light-f-pro-nhiet-mau-5000k` (v2 1.8 / nguồn "AR"); `/module-bi-led-mini-x-light-f-pro` (v2 1.8 / nguồn "trống"); `/bi-laser-henvvei-l91-pro-2024` (v2 3.0 / nguồn "trống"); `/henvvei-l92-pro-2020` (v2 2.5 / nguồn "trống"); `/bi-laser-henvvei-l92-pro-new-2024` (v2 3.0 / nguồn "AR"); `/bi-laser-x-light-v20l-new-2024` (v2 3.0 / nguồn "AR"); `/bi-laser-x-light-f-ultra-mini` (v2 1.8 / nguồn "trống"); `/bi-laser-x-light-x6-pro` (v2 3.0 / nguồn "trống"); `/bi-laser-x-light-v20l-2023` (v2 3.0 / nguồn "AR"); `/bi-laser-red-turbo-9` (v2 3.0 / nguồn "AR"); `/bi-laser-fogway-gen-9` (v2 3.0 / nguồn "AR"); `/bi-laser-henvvei-l95-pro` (v2 2.5 / nguồn "trống"); `/bi-laser-titan-platinum-plus-nhiet-mau-5000k` (v2 3.0 / nguồn "trống"); `/bi-laser-titan-platinum-6-3-2022` (v2 3.0 / nguồn "AR"); `/bi-gam-gtr-g1-turbo` (v2 3.0 / nguồn "trống").
+
+### R3-02 — Câu "giá thấp nhất" và 3 mẫu "lẻ" (C1)
+
+Ghi chú dưới bảng nhóm trên v2 vẫn nói mốc giá là "mẫu có giá niêm yết thấp nhất trong từng nhóm", trong khi v2 có 3 mẫu Bi LED mang chữ "lẻ" rẻ hơn mốc 3,6 triệu:
+- Bi LED Titan Moto Black Mini 2.0 Square (lẻ) — 1.700.000đ/bộ
+- Bi LED Titan Moto Black Mini 2.0 inch (lẻ) — 1.700.000đ/bộ
+- Bi LED Titan Black Mini 1.8 inch (lẻ) — 2.000.000đ/bộ
+
+**Sửa:**
+1. Ghi chú bảng đổi thành: *"Giá tham chiếu là giá niêm yết của mẫu được dẫn ở từng nhóm (theo trang sản phẩm), chưa gồm VAT, pát, dây và công lắp…"* — preview đã đổi câu này ngày 22/10/2026.
+2. **Kinh doanh xác nhận** 3 mẫu "lẻ" là 1 đèn hay 1 cặp; sửa đơn vị trên thẻ cho đúng (`/đèn` nếu là 1 đèn). Không tự sửa khi chưa có xác nhận.
+3. Nếu là mẫu dành cho xe máy (PDP mô tả xe máy): gắn cờ ứng dụng hoặc đưa ra nhóm riêng, không để chung mốc giá Bi LED ô tô.
+
+### R3-03 — Canonical staging (triển khai)
+
+v2 noindex nhưng canonical tự trỏ v2. Quy ước: **staging giữ noindex, canonical về production** `https://auto365.vn/nang-cap-anh-sang` (preview đang làm đúng). Đồng bộ cả @id/url trong graph và breadcrumb.
+
+### R3-04 — Hồ sơ cùng bản 343/333 (U3)
+
+`06_Doi_chieu_CMS_v2_voi_Master.csv` đã xuất lại theo đúng snapshot 343 thẻ: nhóm, thương hiệu, lens, điện áp, nhiệt màu, giá/đơn vị/VAT, cờ ngừng kinh doanh, có trong ItemList hay không, và cột "Cần xử lý". Cột "Thương hiệu/Lens 04" chỉ có giá trị với 125 thẻ trùng tập preview; các thẻ mới của v2 cần Kinh doanh/kỹ thuật xác nhận theo PDP.
+
+Còn thiếu để đóng U3: người xác nhận kỹ thuật/thương mại cho tập 343 và bảng lý do thay đổi so với tập 752 (19/10).
+
+### Gợi ý nhỏ (không chặn)
+
+- Hero: đặt điều kiện kiểm chóa/giắc/điện cạnh gợi ý thay bóng LED; tách bi gầm (mưa/sương) khỏi trợ sáng.
+- Modal: tách "Điện áp hoạt động" (vd 12–16V) khỏi "Hệ điện xe phù hợp" (12V/24V).
+
+---
+
+## Bản AS19 — theo tái kiểm 19/10/2026 (lịch sử, reviewer đã xác nhận đóng ngày 22/10)
+
+
 
 Ngày lập: 19/10/2026. Nguồn: DOM/JSON-LD của https://v2.auto365.vn/nang-cap-anh-sang (dateModified 2026-10-17T20:45:48+07:00, 125 thẻ, ItemList 123) và script trang `/page-asset/5585.js`. Bản preview (bản nguồn đã sửa đủ) để đối chiếu: https://preview-365group.pages.dev/nang-cap-anh-sang/.
 
