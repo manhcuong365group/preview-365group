@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `ffc17e2934b282c63d7baa9b92b28b4adfedc0acbb8edff100c431e2d8d7b6fa`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `2beda07a8b43e908b9ddea0444ee6c19b42b531a0eb6dee4664608c1c7450507`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -95,7 +95,7 @@ Giá trọn xe theo bảng giá 3M AutoFilm của 365Group, áp dụng từ 06/2
 Hoặc gọi hotline 365Group: 0363 365 365
 
 ## Thông số kỹ thuật các mã phim 3M  `#thong-so`
-Theo bảng giá và thông số 3M AutoFilm do 365Group phát hành, áp dụng từ 06/2026. Số liệu là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%), chỉ để tham khảo.
+Theo bảng giá và thông số 3M AutoFilm (mã 260815, PDF) do 365Group phát hành, áp dụng từ 06/2026. Số liệu là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%), chỉ để tham khảo.
 
 _Bảng: Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365Group (áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm, VLT 73%_
 | Chỉ số | CR BLK15 | CR BLK35 | CR BLK40 | CR BLK50 | CR BLK60 | NR5 | NR15 | NR25 | NR35 | IR15 | IR25 | IR50 |
@@ -112,6 +112,7 @@ Số liệu trong bảng là hiệu suất ước tính khi dán lên kính ô t
 
 ## Tài liệu và hỗ trợ  `#tai-lieu`
 Tài liệu do 365Group công bố trên website nhà phân phối
+- Bảng giá & thông số 3M AutoFilm (PDF)Mã 260815 · áp dụng từ 06/2026 · 2 trang · 0,45 MB – giá 6 cấu hình theo Minicar/Sedan/SUV và thông số 12 mã phim
 - Thông số kỹ thuật phim 3MBảng thông số các mã phim cách nhiệt 3M
 - Tài liệu sản phẩm 3MTài liệu theo dòng phim do 365Group cung cấp
 - Tải tài liệuTệp tài liệu 3M trên website 365Group

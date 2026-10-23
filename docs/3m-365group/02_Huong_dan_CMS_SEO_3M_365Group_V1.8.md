@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `ffc17e2934b282c63d7baa9b92b28b4adfedc0acbb8edff100c431e2d8d7b6fa` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `2beda07a8b43e908b9ddea0444ee6c19b42b531a0eb6dee4664608c1c7450507` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -65,6 +65,10 @@ Giá trọn xe Minicar / Sedan / SUV đã hiện trên 6 thẻ cấu hình (dòn
 - Kiểm tra phía trình duyệt: số 10 chữ số bắt đầu bằng 0; bắt buộc tích đồng ý. Chỉ báo "Đã gửi" khi phản hồi JSON đúng `{"success": true}`; lỗi mạng/khác → giữ dữ liệu, mời gửi lại hoặc gọi 0363 365 365. Không có mailto dự phòng.
 - **Cần IT xác nhận trước khi đăng:** trang đặt trên 3m.365group.com.vn nên `/api/leads` phải tồn tại trên domain này (hoặc đổi action sang endpoint auto365.vn có CORS). Trên preview, `/api/leads` chưa có → form báo lỗi đúng chủ đích (đã thử 22/10/2026). API không kiểm tra số/đồng ý phía server.
 - Đã thử: số sai → báo lỗi; thiếu đồng ý → báo lỗi; 404 → giữ dữ liệu + hotline; giả lập `{"success":true}` → báo đã gửi, xoá form, bắn `generate_lead`.
+
+## 4b1. Tài liệu tải về (23/10/2026)
+
+- `tai-lieu/bang-gia-thong-so-3m-autofilm-260815.pdf` (2 trang A4 ngang, 0,45 MB) – bản nén từ PDF in 22 MB trên NAS (260815 Bảng Giá 3M.pdf), nội dung giữ nguyên. Thẻ đầu khối Tài liệu ghi mã 260815, áp dụng từ 06/2026; câu nguồn của bảng thông số link tới file này. Chủ trang cho phép đăng 23/10/2026. Khi đăng production: upload vào `https://3m.365group.com.vn/tai-lieu/` (giữ tên file); khi có bảng giá mới, đổi file + mã + ngày áp dụng.
 
 ## 4b2. Thuật ngữ & link ngoài (23/10/2026)
 

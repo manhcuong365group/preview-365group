@@ -196,7 +196,7 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-bc{font-size:13px;color:var(--m3-mute);background:#fafbfc;border-bottom:1px solid var(--m3-line)}.m3-bc .m3-wrap{padding-top:8px;padding-bottom:8px}.m3-bc a{color:var(--m3-ink)}
 .m3-docs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .m3-docs a{display:flex;flex-direction:column;gap:4px;height:100%;border:1px solid var(--m3-line);border-left:3px solid var(--m3-red);border-radius:8px;padding:14px;background:#fff}
-.m3-docs b{font-size:15px}.m3-docs span{font-size:13px;color:var(--m3-mute)}
+.m3-docs__main{grid-column:1/-1}.m3-docs__main a{background:#fff5f5;border-left-width:5px}.m3-docs b{font-size:15px}.m3-docs span{font-size:13px;color:var(--m3-mute)}
 .m3-spec-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
 .m3-spec-filter button{font:inherit;font-size:13px;padding:7px 12px;border:1px solid var(--m3-line);border-radius:999px;background:#fff;cursor:pointer;color:var(--m3-ink)}
 .m3-spec-filter button[aria-pressed=true]{background:var(--m3-ink);color:#fff;border-color:var(--m3-ink)}
@@ -345,7 +345,7 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 </script>
 
 <section class="m3-sec" id="thong-so"><div class="m3-wrap">
-  <div class="m3-sec__hd"><div><h2>Thông số kỹ thuật các mã phim 3M</h2><p>Theo bảng giá và thông số 3M AutoFilm do 365Group phát hành, áp dụng từ 06/2026. Số liệu là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%), chỉ để tham khảo.</p></div><a class="m3-link" href="https://3m.365group.com.vn/thong-so-ky-thuat-3m.html">Xem trang thông số kỹ thuật 3M →</a></div>
+  <div class="m3-sec__hd"><div><h2>Thông số kỹ thuật các mã phim 3M</h2><p>Theo <a class="m3-link" href="tai-lieu/bang-gia-thong-so-3m-autofilm-260815.pdf" download>bảng giá và thông số 3M AutoFilm (mã 260815, PDF)</a> do 365Group phát hành, áp dụng từ 06/2026. Số liệu là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%), chỉ để tham khảo.</p></div><a class="m3-link" href="https://3m.365group.com.vn/thong-so-ky-thuat-3m.html">Xem trang thông số kỹ thuật 3M →</a></div>
   <div class="m3-spec-filter" role="group" aria-label="Lọc theo dòng phim"><button type="button" data-f="all" aria-pressed="true">Tất cả</button><button type="button" data-f="cr" aria-pressed="false">Crystalline CR BLK</button><button type="button" data-f="ir" aria-pressed="false">Ceramic IR</button><button type="button" data-f="nr" aria-pressed="false">Ceramic NR</button></div>
   <div class="m3-tbl-wrap" id="m3-spec-wrap"><table class="m3-spec"><caption class="m3-cap">Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365Group (áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm, VLT 73%</caption>
       <thead><tr><th>Chỉ số</th><th class="cr">CR BLK<br>15</th><th class="cr">CR BLK<br>35</th><th class="cr">CR BLK<br>40</th><th class="cr">CR BLK<br>50</th><th class="cr">CR BLK<br>60</th><th class="nr">NR<br>5</th><th class="nr">NR<br>15</th><th class="nr">NR<br>25</th><th class="nr">NR<br>35</th><th class="ir">IR<br>15</th><th class="ir">IR<br>25</th><th class="ir">IR<br>50</th></tr></thead>
@@ -376,6 +376,7 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 <section class="m3-sec m3-sec--grey" id="tai-lieu"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Tài liệu và hỗ trợ</h2><p>Tài liệu do 365Group công bố trên website nhà phân phối</p></div></div>
   <ul class="m3-docs">
+    <li class="m3-docs__main"><a href="tai-lieu/bang-gia-thong-so-3m-autofilm-260815.pdf" download type="application/pdf"><b>Bảng giá &amp; thông số 3M AutoFilm (PDF)</b><span>Mã 260815 · áp dụng từ 06/2026 · 2 trang · 0,45 MB – giá 6 cấu hình theo Minicar/Sedan/SUV và thông số 12 mã phim</span></a></li>
     <li><a href="https://3m.365group.com.vn/thong-so-ky-thuat-3m.html"><b>Thông số kỹ thuật phim 3M</b><span>Bảng thông số các mã phim cách nhiệt 3M</span></a></li>
     <li><a href="https://3m.365group.com.vn/bang-gia-3m.html"><b>Tài liệu sản phẩm 3M</b><span>Tài liệu theo dòng phim do 365Group cung cấp</span></a></li>
     <li><a href="https://3m.365group.com.vn/download-3m.html"><b>Tải tài liệu</b><span>Tệp tài liệu 3M trên website 365Group</span></a></li>
