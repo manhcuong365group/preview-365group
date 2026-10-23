@@ -80,7 +80,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | Giá theo loại xe | Đã thêm | Khối #gia-theo-xe (tham khảo bố cục Store Detailing): 3 thẻ Sedan/SUV/MPV, mỗi thẻ "chỉ từ" + 6 dòng phim (AX G, AX X V2, 3M 50/100/150/200) — số khớp card và AggregateOffer; xe mẫu chỉ tham khảo |
 | Khối thương hiệu | Đã thay lưới card (chủ trang duyệt 23/10) | Khối thương hiệu nay là #san-pham (bỏ lưới 9 card + JS carousel; ItemList schema 9 sản phẩm giữ nguyên, 8 mã hiển thị trong 2 khối, carbon gộp 1 thẻ): khối 3M và AX Film (ảnh case thật, nhãn, giới thiệu, phù hợp, 4 mã/khối với độ dày–bảo hành–giá từ). Card 3M 50: bảo hành 5 năm theo bảng giá 3M 23/10, bỏ dòng độ dày chưa có nguồn; card AX X V2: bỏ dòng bảo hành chưa có nguồn |
 | Gộp giá vào #san-pham | Đã làm (23/10) | Theo chủ trang: bỏ khối #gia-theo-xe và accordion k08; mỗi mã trong khối thương hiệu ghi giá Sedan/SUV/MPV; giá dán lẻ thành mục mở/đóng "Giá dán lẻ theo vị trí" trong khối 3M (từ 760.000đ) và AX (từ 400.000đ), giữ nguyên ghi chú nguồn |
-| Khối #bang-gia | Đã thêm (23/10, theo mockup chủ trang; bố cục 2×2 hiện cùng lúc; thẻ phim và sơ đồ vị trí dùng hình minh họa xe cắt từ mockup chủ trang (trang trí, không phải ảnh thi công); gói dùng ảnh case thật) | 4 tab: theo xe (chọn hãng + loại xe, thẻ từng mã), theo vị trí (sơ đồ xe + 13 vị trí, 3M 50/150/200 và AX G/K/X), gói theo nhu cầu (4 gói, giá "từ" tạm tính = cộng giá vị trí AX G Series Sedan/A–B, gói toàn xe = giá gói; ghi rõ cách tính), ước tính nhanh (cộng giá vị trí hoặc giá toàn xe, cảnh báo khi tổng vượt gói toàn xe). Số liệu từ bảng giá 3M theo vị trí 23/10 + bảng AX Film khách lẻ + giá toàn xe đã duyệt; AX: Sedan=A–B, SUV=C–D, MPV=MPV/E-SUV. Không có giá vị trí cho 3M 100 Gloss và hõm tay cửa nên không đưa vào. Bỏ giá dán lẻ/giá theo loại xe trùng trong khối thương hiệu |
+| Khối #bang-gia | Đã thêm (23/10, theo mockup chủ trang; bố cục 2×2 hiện cùng lúc; thẻ phim và sơ đồ vị trí dùng hình minh họa xe dạng vector SVG (trang trí, không phải ảnh thi công); gói dùng ảnh case thật) | 4 tab: theo xe (chọn hãng + loại xe, thẻ từng mã), theo vị trí (sơ đồ xe + 13 vị trí, 3M 50/150/200 và AX G/K/X), gói theo nhu cầu (4 gói, giá "từ" tạm tính = cộng giá vị trí AX G Series Sedan/A–B, gói toàn xe = giá gói; ghi rõ cách tính), ước tính nhanh (cộng giá vị trí hoặc giá toàn xe, cảnh báo khi tổng vượt gói toàn xe). Số liệu từ bảng giá 3M theo vị trí 23/10 + bảng AX Film khách lẻ + giá toàn xe đã duyệt; AX: Sedan=A–B, SUV=C–D, MPV=MPV/E-SUV. Không có giá vị trí cho 3M 100 Gloss và hõm tay cửa nên không đưa vào. Bỏ giá dán lẻ/giá theo loại xe trùng trong khối thương hiệu |
 | A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -96,7 +96,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `ca5235da80683846fec06a712e03f936a075151134fce8efc66c2e71a0ae7d82` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `64ec32c4816e6de6941442449efe3a877d7b243845c303ccf02c228cb36ff4bf` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
