@@ -20,7 +20,7 @@
 {"@type":"Organization","@id":"https://3m.365group.com.vn/#organization","name":"365Group","description":"Nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam","url":"https://3m.365group.com.vn/","telephone":"+84363365365","email":"kinhdoanh@365group.com.vn"},
 {"@type":"Brand","@id":"https://3m.365group.com.vn/phim-cach-nhiet-3m#brand-3m","name":"3M"},
 {"@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"365Group là đơn vị nào?","acceptedAnswer":{"@type":"Answer","text":"365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc."}},
+{"@type":"Question","name":"Mua và dán phim 3M chính hãng qua 365Group như thế nào?","acceptedAnswer":{"@type":"Answer","text":"365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam và cung cấp phim cho các đại lý trong hệ thống. Chủ xe mua và dán phim trực tiếp tại đại lý; có thể tìm đại lý theo khu vực ở mục Hệ thống đại lý hoặc để lại số điện thoại để được giới thiệu đại lý gần nhất."}},
 {"@type":"Question","name":"Phim cách nhiệt 3M giá bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Giá tham khảo dán trọn xe dao động khoảng 5,9–18,3 triệu đồng (đã gồm công thi công), tùy dòng phim (Ceramic NR, Ceramic IR, Crystalline) và nhóm xe (minicar, sedan, SUV). Giá cụ thể theo từng xe do đại lý thi công báo."}},
 {"@type":"Question","name":"Phim 3M bảo hành bao lâu?","acceptedAnswer":{"@type":"Answer","text":"Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử."}},
 {"@type":"Question","name":"Nên dán phim 3M ở đâu?","acceptedAnswer":{"@type":"Answer","text":"Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành."}}]},
@@ -119,9 +119,11 @@ img{max-width:100%;display:block}
 .m3-stats{display:flex;gap:28px;align-items:center}
 .m3-stats div{font-size:12px;color:var(--m3-mute)}.m3-stats b{display:block;font-size:30px;line-height:1}
 .m3-dl{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.m3-dl a{display:grid;grid-template-columns:1.2fr 1fr;border:1px solid var(--m3-line);border-radius:8px;overflow:hidden;background:#fff}
-.m3-dl div{padding:18px}.m3-dl h3{margin:0 0 6px;font-size:16px}.m3-dl p{margin:0 0 8px;font-size:13px;color:var(--m3-mute)}
-.m3-dl img{width:100%;height:100%;object-fit:cover}
+.m3-dl a{display:flex;flex-direction:column;border:1px solid var(--m3-line);border-radius:10px;overflow:hidden;background:#fff;transition:box-shadow .2s,transform .2s}
+.m3-dl a:hover,.m3-dl a:focus-visible{box-shadow:0 10px 28px rgba(0,0,0,.1);transform:translateY(-2px)}
+.m3-dl img{order:-1;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-bottom:3px solid var(--m3-red)}
+.m3-dl div{flex:1;display:flex;flex-direction:column;padding:16px 18px 18px}.m3-dl h3{margin:0 0 6px;font-size:17px}.m3-dl p{margin:0 0 14px;font-size:14px;color:var(--m3-mute)}
+.m3-dl .m3-link{margin-top:auto}
 .m3-find{margin-top:20px;background:#fff;border:1px solid var(--m3-line);border-radius:8px;padding:22px}
 .m3-find h3{margin:0;text-transform:uppercase}.m3-find p{margin:4px 0 14px;color:var(--m3-mute);font-size:14px}
 .m3-find form{display:flex;gap:10px;flex-wrap:wrap}
@@ -340,8 +342,8 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
     <div class="m3-stats"><div><b style="color:var(--m3-red)">224</b>Đại lý toàn quốc</div><div><b style="color:var(--m3-blue)">32</b>Tỉnh/Thành phố</div><div><b style="color:var(--m3-gold)">3</b>Nhóm đại lý</div></div></div>
   <div class="m3-dl">
     <a href="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html"><div><h3>3M PRO SHOP</h3><p>Trung tâm được 3M cấp chứng nhận 3M Pro Shop.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center" loading="lazy" style="object-position:30% center"></a>
-    <a href="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html"><div><h3>Đại lý hệ thống Auto365</h3><p>Các chi nhánh trong hệ thống Auto365 thi công phim 3M.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/team-auto365.jpg" alt="Auto365" loading="lazy"></a>
-    <a href="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html"><div><h3>Đại lý 3M khác</h3><p>Các đại lý ủy quyền 3M trên toàn quốc.</p><span class="m3-link">Xem tất cả đại lý →</span></div><img src="hinh/xe-vinfast-vf8.jpg" alt="Đại lý 3M" loading="lazy"></a>
+    <a href="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html"><div><h3>Đại lý hệ thống Auto365</h3><p>Các chi nhánh trong hệ thống Auto365 thi công phim 3M.</p><span class="m3-link">Xem danh sách →</span></div><img src="hinh/team-auto365.jpg" alt="Đội ngũ kỹ thuật Auto365 nhận chứng nhận 3M" loading="lazy" style="object-position:center 30%"></a>
+    <a href="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html"><div><h3>Đại lý 3M khác</h3><p>Các đại lý ủy quyền 3M trên toàn quốc.</p><span class="m3-link">Xem tất cả đại lý →</span></div><img src="hinh/xe-vinfast-vf8.jpg" alt="Xe dán phim 3M tại đại lý" loading="lazy" style="object-position:center 35%"></a>
   </div>
   <div class="m3-find" id="tim-dai-ly"><h3>Tìm đại lý 3M theo khu vực</h3><p>Chọn khu vực để mở danh sách đại lý, địa chỉ và thông tin liên hệ trên website 365Group.</p>
     <form id="m3-find-form" action="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html" method="get"><select name="area" aria-label="Khu vực" required><option value="">Chọn khu vực</option><option value="https://3m.365group.com.vn/dai-ly-3m-hcm.html">TP. Hồ Chí Minh</option><option value="https://3m.365group.com.vn/dai-ly-3m-ha-noi.html">Hà Nội</option><option value="https://3m.365group.com.vn/dai-ly-phim-cach-nhiet-3m-vn.html">Các tỉnh/thành khác (danh sách toàn quốc)</option></select><button class="m3-btn m3-btn--red" type="submit">Xem đại lý</button></form>
@@ -403,7 +405,7 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
 <section class="m3-sec m3-sec--grey"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Câu hỏi thường gặp</h2></div></div>
   <div class="m3-faq">
-    <details open><summary>365Group là đơn vị nào?</summary><p>365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc.</p></details>
+    <details open><summary>Mua và dán phim 3M chính hãng qua 365Group như thế nào?</summary><p>365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam và cung cấp phim cho các đại lý trong hệ thống. Chủ xe mua và dán phim trực tiếp tại đại lý; có thể tìm đại lý theo khu vực ở mục Hệ thống đại lý hoặc để lại số điện thoại để được giới thiệu đại lý gần nhất.</p></details>
     <details><summary>Phim cách nhiệt 3M giá bao nhiêu?</summary><p>Giá tham khảo dán trọn xe dao động khoảng 5,9–18,3 triệu đồng (đã gồm công thi công), tùy dòng phim (Ceramic NR, Ceramic IR, Crystalline) và nhóm xe (minicar, sedan, SUV). Giá cụ thể theo từng xe do đại lý thi công báo.</p></details>
     <details><summary>Nên dán phim 3M ở đâu?</summary><p>Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành.</p></details>
     <details><summary>Phim 3M bảo hành bao lâu?</summary><p>Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử. Cách tra cứu: xem <a class="m3-link" href="https://3m.365group.com.vn/bao-hanh-3m.html">hướng dẫn tra cứu bảo hành 3M</a>.</p></details>

@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f9d7c58ad17502edf51bb0946eb293efeced8945f3e766dc6d12fff355dc370d`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f94ab90716c977a24c6da0d2b1686951d81d87d71c19dc990e6a5ddfeccaa540`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M: Danh mục và thông số từ 365Group
@@ -155,8 +155,8 @@ Phim ô tô 3M được hãng thiết kế để dùng lâu dài; thời hạn b
 
 ## Câu hỏi thường gặp
 
-**Hỏi:** 365Group là đơn vị nào?
-365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam, cung cấp phim cho hệ thống đại lý thi công trên toàn quốc.
+**Hỏi:** Mua và dán phim 3M chính hãng qua 365Group như thế nào?
+365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam và cung cấp phim cho các đại lý trong hệ thống. Chủ xe mua và dán phim trực tiếp tại đại lý; có thể tìm đại lý theo khu vực ở mục Hệ thống đại lý hoặc để lại số điện thoại để được giới thiệu đại lý gần nhất.
 
 **Hỏi:** Phim cách nhiệt 3M giá bao nhiêu?
 Giá tham khảo dán trọn xe dao động khoảng 5,9–18,3 triệu đồng (đã gồm công thi công), tùy dòng phim (Ceramic NR, Ceramic IR, Crystalline) và nhóm xe (minicar, sedan, SUV). Giá cụ thể theo từng xe do đại lý thi công báo.
@@ -197,5 +197,5 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - hinh/cert-preferred-installer.webp — 3M Preferred Installer – Đơn vị thi công ưu tiên
 - hinh/cert-training-center-event.webp — 3M Training Center – Lễ trao chứng nhận
 - hinh/hero-3m-pro-shop-training-center.webp — Mặt tiền 3M Pro Shop và 3M Training Center
-- hinh/team-auto365.jpg — Auto365
-- hinh/xe-vinfast-vf8.jpg — Đại lý 3M
+- hinh/team-auto365.jpg — Đội ngũ kỹ thuật Auto365 nhận chứng nhận 3M
+- hinh/xe-vinfast-vf8.jpg — Xe dán phim 3M tại đại lý
