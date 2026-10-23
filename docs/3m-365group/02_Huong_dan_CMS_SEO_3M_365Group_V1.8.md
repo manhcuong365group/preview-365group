@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d00690a7fba19866740ea55c19d971f984f667fa2e53c7609628a129bc67cd68` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `ff66b93022aaa9b5c19cab1bb34fcda7827fa8efca7e4b6039b405a4db7a6acf` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo, 22/10/2026 (user xác nhận). Trang hiện dòng kiểm duyệt dưới hero và trong "Về bài viết này"; WebPage có `reviewedBy` (url hồ sơ auto365.vn/tac-gia/nguyen-quang-dao) và `lastReviewed` 2026-10-22.
