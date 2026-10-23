@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `dd274f601a2db61eff56f3d0684e473fc3ce345ea6b2c543bc1641de61718e99`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c3f352c3d1c5578bf2739be956507cf66adfcc17cb797586b40eaa4feba68454`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -15,9 +15,7 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 ## Sản phẩm PPF tại Auto365: 3M và AX Film  `#san-pham`
 
-So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe theo loại xe (gồm VAT) và giá dán lẻ từng vị trí.
-
-Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, Tucson, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9… (loại xe xác nhận khi kiểm tra)
+So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe từ (Sedan, gồm VAT). Bảng giá chi tiết ở mục Bảng giá.
 
 **3M PPF**
 
@@ -25,17 +23,74 @@ Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, Tucson, VF 6/7/8… · 
 
 Phù hợp: Xe mới, xe sang, chủ xe muốn giữ sơn zin lâu dài và cần bảo hành dài.
 
-**Giá dán lẻ theo vị trí từ 760.000đ**
-
 **AX Film PPF**
 
 AX Film PPF có nhiều dòng từ mức chi phí dễ tiếp cận đến bản bóng cao và vân carbon, giúp chủ xe chọn theo ngân sách và kiểu bề mặt mong muốn. Thông số độ bóng, độ dày và bảo hành ghi theo trang sản phẩm từng dòng.
 
 Phù hợp: Chủ xe muốn bảo vệ sơn với chi phí hợp lý, hoặc muốn đổi sang bề mặt vân carbon.
 
-**Giá dán lẻ theo vị trí từ 400.000đ**
-
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
+
+## Bảng giá dán PPF tại Auto365  `#bang-gia`
+
+Giá dán toàn xe đã gồm VAT. Chọn cách xem phù hợp: theo loại xe, theo vị trí, theo gói hoặc tự ước tính.
+
+**50 Gloss**
+
+Giá từ44.000.000đ
+
+- Bề mặt bóng
+- Bảo hành 5 năm
+
+**100 Gloss**
+
+Giá từ76.000.000đ
+
+- Độ dày 7.5 mil
+- Bề mặt bóng
+- Bảo hành 7 năm
+
+**150 Gloss**
+
+Giá từ92.000.000đ
+
+- Độ dày 7.5 mil (kèm keo)
+- Xước nhẹ tự mờ khi gặp nhiệt
+- Bảo hành 10 năm
+
+**200 Gloss**
+
+Giá từ110.000.000đ
+
+- Độ dày 7.9 mil
+- Bề mặt bóng
+- Bảo hành 10 năm
+
+Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, Tucson, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9… Loại xe và phạm vi panel xác nhận khi kiểm tra xe.
+
+Theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính, lập 23/10/2026. VAT xác nhận khi chốt báo giá.
+
+Mục "mỗi bên" tính cho một bên. Giá dán lẻ không cộng lại để thay cho giá gói toàn xe. AX Film: Sedan tương ứng hạng A–B, SUV hạng C–D theo bảng giá AX Film cho khách lẻ (gồm VAT). 3M 100 Gloss chưa có bảng giá theo vị trí, liên hệ để báo giá.
+
+**Gói phần đầu xe**
+
+Capo, cản trước, đèn trước, ốp gương
+
+**Gói đi cao tốc**
+
+Phần đầu xe thêm má trước hai bên
+
+**Gói thân xe**
+
+Cửa trước, cửa sau hai bên và cốp sau
+
+**Gói toàn xe**
+
+Toàn bộ bề mặt sơn ngoại thất theo gói
+
+Gói gợi ý theo nhu cầu thường gặp; giá ước tính cộng từ giá từng vị trí của dòng phim và loại xe bạn chọn ở mục Ước tính nhanh. Phạm vi thực tế thống nhất khi kiểm tra xe.
+
+Giá tham khảo; giá chính xác báo sau khi kiểm tra xe.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
