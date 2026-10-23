@@ -1,7 +1,7 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 5. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 6. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
@@ -39,6 +39,15 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 ## Lần 1 (bản 22/10/2026, SHA dc06ee7b…)
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
+
+## Tự chấm lần 6 (bản 23/10/2026, kiểm duyệt Đặng Minh Hoàng)
+
+| Mã | Lần 5 | Lần 6 | Căn cứ |
+|---|---:|---:|---|
+| G3 | 4,3 | 4,3 | Kiểm duyệt kỹ thuật Đặng Minh Hoàng (Giám đốc điều hành 3M Pro Shop & 3M Training Center, hệ thống 365Group), hồ sơ có link, reviewedBy/lastReviewed 23/10; 5 bài thi công thật; 4 chứng nhận. Còn: chưa có case Ceramic IR; hồ sơ người duyệt nằm trên auto365.vn chứ chưa có trên site 365Group |
+| Các mã khác | — | không đổi | Các sửa theo phiếu tái kiểm 22/10 (menu, tìm đại lý, bảng lọc, tài liệu, link 404…) **không tự cộng điểm**, chờ reviewer |
+
+**Tổng tự chấm lần 6: C 26,0 · S 26,7 · G 22,2 · U 14,0 → 88,9/100. CHƯA ĐẠT V1.8** — SEO 26,7 < 28,5; GEO 22,2 < 23,75. Chờ: anh Hoàng chốt thông số Ceramic IR, IT đăng URL đích, số đại lý thống nhất, reviewer tái chấm.
 
 ## Cập nhật 23/10/2026 — gỡ người kiểm duyệt
 
@@ -91,7 +100,7 @@ Lần 1:
 | # | Việc | Tiêu chí | Ai quyết |
 |---|---|---|---|
 | 1 | Chốt URL/domain đích, canonical, đổi link nội bộ sang URL thật, thêm BreadcrumbList/WebSite, @id tuyệt đối | S1, S3 | SEO/chủ trang | ✅ Đã làm (URL https://3m.365group.com.vn/phim-cach-nhiet-3m)
-| 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang | ⚠️ Đã gỡ anh Đạo (23/10) — cần người duyệt khác
+| 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang | ✅ Đặng Minh Hoàng (23/10/2026) ✅ Đặng Minh Hoàng (23/10/2026)
 | 3 | Thêm block xe thực tế (case đã đăng trên auto365.vn theo từng cấu hình) | C2, G3 | Có thể làm ngay từ bài đã đăng | ✅ Đã làm (lần 2)
 | 4 | Bỏ từ claim quá ("vượt trội", "tối ưu", "cao cấp nhất"), sửa câu mô tả Ceramic NR theo câu đã duyệt | C3 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 5 | Thêm thông số NR 35/25/15/5 (catalog NR 03/2026) vào bảng kỹ thuật | C2, G2 | Có thể làm ngay | ✅ Đã làm (lần 2)
@@ -106,7 +115,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `6e1d10f70ffc26d78ec12ccbf12b928f0ee7c7a0a4a410beec5365d05edc2d77` |
+| `auto365/3m-365group/index.html` | SHA-256 `be3a1641704488d4974b167322c5f99f0b5edcfcfa176947b3442bd92728f9c5` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
