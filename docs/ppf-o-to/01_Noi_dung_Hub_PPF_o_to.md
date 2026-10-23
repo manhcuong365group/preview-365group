@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c3f352c3d1c5578bf2739be956507cf66adfcc17cb797586b40eaa4feba68454`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `a2f20725d6cfb86d45c891a3ad8f510dfa04cc75c5384be621932a3025d966b0`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -35,6 +35,10 @@ Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã g�
 
 Giá dán toàn xe đã gồm VAT. Chọn cách xem phù hợp: theo loại xe, theo vị trí, theo gói hoặc tự ước tính.
 
+**Bảng giá dán PPF toàn xe**
+
+Chọn thương hiệu và loại xe để xem mức giá tham khảo.
+
 **50 Gloss**
 
 Giá từ44.000.000đ
@@ -68,27 +72,47 @@ Giá từ110.000.000đ
 
 Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, Tucson, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9… Loại xe và phạm vi panel xác nhận khi kiểm tra xe.
 
+**Bảng giá dán theo vị trí**
+
+Chọn dòng phim và loại xe để xem giá từng vị trí.
+
 Theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính, lập 23/10/2026. VAT xác nhận khi chốt báo giá.
 
 Mục "mỗi bên" tính cho một bên. Giá dán lẻ không cộng lại để thay cho giá gói toàn xe. AX Film: Sedan tương ứng hạng A–B, SUV hạng C–D theo bảng giá AX Film cho khách lẻ (gồm VAT). 3M 100 Gloss chưa có bảng giá theo vị trí, liên hệ để báo giá.
+
+**Các gói dán PPF theo nhu cầu**
+
+Gợi ý gói phổ biến; giá từ tạm tính theo giá từng vị trí.
 
 **Gói phần đầu xe**
 
 Capo, cản trước, đèn trước, ốp gương
 
+Từ 7.200.000đ
+
 **Gói đi cao tốc**
 
 Phần đầu xe thêm má trước hai bên
+
+Từ 10.400.000đ
 
 **Gói thân xe**
 
 Cửa trước, cửa sau hai bên và cốp sau
 
+Từ 7.800.000đ
+
 **Gói toàn xe**
 
 Toàn bộ bề mặt sơn ngoại thất theo gói
 
-Gói gợi ý theo nhu cầu thường gặp; giá ước tính cộng từ giá từng vị trí của dòng phim và loại xe bạn chọn ở mục Ước tính nhanh. Phạm vi thực tế thống nhất khi kiểm tra xe.
+Từ 20.000.000đ
+
+Giá "từ" tạm tính bằng AX Film PPF G Series, xe Sedan/hạng A–B, cộng theo giá từng vị trí (gói toàn xe theo giá gói). Bấm ước tính để đổi dòng phim, loại xe. Phạm vi thực tế thống nhất khi kiểm tra xe.
+
+**Ước tính chi phí nhanh**
+
+Chọn dòng phim, loại xe và vị trí cần dán.
 
 Giá tham khảo; giá chính xác báo sau khi kiểm tra xe.
 
