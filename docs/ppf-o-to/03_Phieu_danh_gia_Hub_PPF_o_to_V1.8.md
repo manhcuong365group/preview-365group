@@ -78,7 +78,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | R22-05 | Một phần | Lead test 228 (22/10) CRM đã nhận; 01–03 cùng SHA bên dưới. Production chưa nghiệm thu |
 | Giá dán lẻ 3M | Đã thêm | k08 thêm nhóm 3M PPF: 12 vị trí giá "từ" theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, Sedan, lập 23/10/2026; file chủ trang gửi). Bảng ghi VAT cần xác nhận khi chốt báo giá → trang ghi đúng như vậy. Chênh lệch cần Commercial xác nhận, chưa sửa: (1) đã sửa theo xác nhận chủ trang 23/10: 3M 200 Gloss toàn xe 102/110/122tr (Sedan/SUV/MPV), card + AggregateOffer + FAQ; 3M 150 Gloss 85/92/102tr, card + AggregateOffer (chủ trang duyệt 23/10); (2) địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá khác hub (4/4/1/7, 0365 365 365) |
 | Giá theo loại xe | Đã thêm | Khối #gia-theo-xe (tham khảo bố cục Store Detailing): 3 thẻ Sedan/SUV/MPV, mỗi thẻ "chỉ từ" + 6 dòng phim (AX G, AX X V2, 3M 50/100/150/200) — số khớp card và AggregateOffer; xe mẫu chỉ tham khảo |
-| Khối thương hiệu | Đã thêm (bản thử) | #thuong-hieu: khối 3M và AX Film (ảnh case thật, nhãn, giới thiệu, phù hợp, 4 mã/khối với độ dày–bảo hành–giá từ). Card 3M 50: bảo hành 5 năm theo bảng giá 3M 23/10, bỏ dòng độ dày chưa có nguồn; card AX X V2: bỏ dòng bảo hành chưa có nguồn |
+| Khối thương hiệu | Đã thay lưới card (chủ trang duyệt 23/10) | Khối thương hiệu nay là #san-pham (bỏ lưới 9 card + JS carousel; ItemList schema 9 sản phẩm giữ nguyên, 8 mã hiển thị trong 2 khối, carbon gộp 1 thẻ): khối 3M và AX Film (ảnh case thật, nhãn, giới thiệu, phù hợp, 4 mã/khối với độ dày–bảo hành–giá từ). Card 3M 50: bảo hành 5 năm theo bảng giá 3M 23/10, bỏ dòng độ dày chưa có nguồn; card AX X V2: bỏ dòng bảo hành chưa có nguồn |
 | A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -94,7 +94,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `6d1f57fa2fb31cbbfecb5688a751d2a2964bf680c240b775c12a117905f33686` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `66c8fc76bc0b18ae12ccdbeb738613e1928495e3bf822ff1812aa75c3cdbe33a` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
