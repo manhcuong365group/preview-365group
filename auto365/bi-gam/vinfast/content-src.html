@@ -99,7 +99,9 @@
 .bgvf-guide:hover h3{color:var(--r)}
 .bgvf-guide i{flex:0 0 30px;height:30px;font-size:13px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;color:var(--r);font-style:normal}
 /* case filter + credit */
-.bgvf-cf{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
+.bgvf-cf{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.bgvf-cfr{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bgvf-cl{min-width:68px}
 .bgvf-cl{flex:none;font-size:13px;color:var(--mu)}
 .bgvf-chip{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:6px 14px;font:inherit;font-size:13.5px;cursor:pointer;color:var(--ink)}
 .bgvf-chip:hover{border-color:#f3b4b4}.bgvf-chip.on{background:#eef1f4;border-color:#cfd5db;font-weight:600}
@@ -139,7 +141,7 @@
 .bgvf-art{order:3}
 .bgvf-trust{grid-template-columns:1fr 1fr;gap:6px 10px}.bgvf-trust li{font-size:12.5px}
 .bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:40%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px;scroll-padding:0 16px}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}.bgvf-m:hover{transform:none}.bgvf-m .im{padding:10px 12px}.bgvf-m .bd{padding:6px 10px 8px}.bgvf-m b{font-size:13.5px}.bgvf-m small{font-size:11px}.bgvf-empty{grid-row:1/3;grid-column:auto/span 2}
-.bgvf-tabs,.bgvf-cf{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-chip{flex:none}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
+.bgvf-tabs,.bgvf-cfr{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-chip{flex:none}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
 .bgvf-search{width:100%}
 .bgvf-rail{grid-auto-columns:84%;grid-template-rows:none}.bgvf-need{grid-auto-columns:86%;gap:12px}.bgvf-nd{padding:14px}.bgvf-nd h3{font-size:16px}.bgvf-nd ul{font-size:13.5px}
 .bgvf-nav .bgvf-arr{display:none}
@@ -156,8 +158,7 @@
  <div>
   <span class="bgvf-eb">Nâng cấp ánh sáng</span>
   <h1 class="bgvf-h1">Bi gầm VinFast <span>theo từng dòng xe</span></h1>
-  <p class="bgvf-lead">Chọn dòng xe VinFast để xem cấu hình, hình ảnh xe thực tế đã lắp tại Auto365 và được tư vấn phương án nâng cấp bi gầm (X-Light, GTR, AES) phù hợp với từng phiên bản.</p>
-  <p class="bgvf-qa"><b>Trả lời nhanh:</b> Bi gầm VinFast cần chọn theo đời, phiên bản, vị trí lắp và nhu cầu quan sát vùng gần. Auto365 có trang hồ sơ cho VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0; các xe khác cần kiểm tra trước khi chốt cấu hình. Tổng chi phí được xác nhận theo đèn, phụ kiện, công lắp và VAT trong báo giá.</p>
+  <p class="bgvf-lead">Bi gầm VinFast cần chọn theo đời, phiên bản và vị trí lắp. Auto365 có trang hồ sơ cho VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0 (X-Light, GTR, AES); xe khác được kiểm tra trước khi chốt cấu hình. Chi phí xác nhận theo đèn, phụ kiện, công lắp và VAT trong báo giá.</p>
   <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-10-23">23/10/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-10-22">22/10/2026</time>)</p>
   <ul class="bgvf-trust">
    <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
@@ -294,9 +295,11 @@ $('bgvf-grid').innerHTML=M.map(function(m){
   :'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="VinFast '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
 }).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.</p>';
 var fmt=function(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]};
-var cm=[];C.forEach(function(c){if(cm.indexOf(c[0])<0)cm.push(c[0])});
-$('bgvf-cf').innerHTML='<span class="bgvf-cl">Dòng xe:</span><button type="button" class="bgvf-chip on" data-m="">Tất cả</button>'+cm.map(function(m){return '<button type="button" class="bgvf-chip" data-m="'+esc(m)+'">'+esc(m)+'</button>'}).join('');
-$('bgvf-rail').innerHTML=C.map(function(c){return '<a class="bgvf-case" data-m="'+esc(c[0])+'" href="https://auto365.vn/'+c[2]+'"><span class="im"><img src="'+c[3]+'" alt="'+esc(c[1])+'" loading="lazy" width="800" height="450"><span class="tag">✓ Bi gầm</span></span><span class="bd"><h3>VinFast '+esc(c[0])+'</h3><p>'+esc(c[1])+'</p><span class="ft"><time datetime="'+c[4]+'">'+fmt(c[4])+'</time><em>Xem chi tiết lắp đặt →</em></span></span></a>'}).join('');
+var brand=function(c){return /GTR/.test(c[1])?'GTR':/AES/.test(c[1])?'AES':'X-Light'};
+var cm=[],cb=[];C.forEach(function(c){if(cm.indexOf(c[0])<0)cm.push(c[0]);if(cb.indexOf(brand(c))<0)cb.push(brand(c))});
+cb.sort();
+$('bgvf-cf').innerHTML='<div class="bgvf-cfr" data-k="m"><span class="bgvf-cl">Dòng xe:</span><button type="button" class="bgvf-chip on" data-v="">Tất cả</button>'+cm.map(function(m){return '<button type="button" class="bgvf-chip" data-v="'+esc(m)+'">'+esc(m)+'</button>'}).join('')+'</div><div class="bgvf-cfr" data-k="b"><span class="bgvf-cl">Hãng đèn:</span><button type="button" class="bgvf-chip on" data-v="">Tất cả</button>'+cb.map(function(b){return '<button type="button" class="bgvf-chip" data-v="'+b+'">'+b+'</button>'}).join('')+'</div>';
+$('bgvf-rail').innerHTML=C.map(function(c){return '<a class="bgvf-case" data-m="'+esc(c[0])+'" data-b="'+brand(c)+'" href="https://auto365.vn/'+c[2]+'"><span class="im"><img src="'+c[3]+'" alt="'+esc(c[1])+'" loading="lazy" width="800" height="450"><span class="tag">✓ Bi gầm</span></span><span class="bd"><h3>VinFast '+esc(c[0])+'</h3><p>'+esc(c[1])+'</p><span class="ft"><time datetime="'+c[4]+'">'+fmt(c[4])+'</time><em>Xem chi tiết lắp đặt →</em></span></span></a>'}).join('');
 $('bgvf-guides').innerHTML=G.map(function(g){return '<a class="bgvf-guide" href="https://auto365.vn/'+g[1]+'"><span class="im"><img src="'+g[2]+'" alt="'+esc(g[0])+'" loading="lazy" width="800" height="450"></span><span class="bd"><span class="mt"><span class="lb">'+esc(g[5])+'</span><time datetime="'+g[3]+'">'+fmt(g[3])+'</time><span>'+g[4]+' phút</span></span><span class="rw"><h3>'+esc(g[0])+'</h3><i aria-hidden="true">→</i></span></span></a>'}).join('');
 // lọc
 var k='all';
@@ -305,7 +308,7 @@ function apply(){var q=($('bgvf-q').value||'').trim().toLowerCase().replace(/\s+
  document.querySelector('.bgvf-empty').hidden=n>0}
 $('bgvf-tabs').addEventListener('click',function(e){var b=e.target.closest('.bgvf-tab');if(!b)return;k=b.getAttribute('data-k');[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});apply();$('bgvf-grid').scrollLeft=0});
 $('bgvf-q').addEventListener('input',apply);
-$('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;var m=b.getAttribute('data-m');[].forEach.call(this.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b)});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=!!m&&a.getAttribute('data-m')!==m});$('bgvf-rail').scrollLeft=0});
+$('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b)});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});$('bgvf-rail').scrollLeft=0});
 [].forEach.call(document.querySelectorAll('.bgvf-arr'),function(b){b.addEventListener('click',function(){var r=$('bgvf-rail');r.scrollBy({left:(+b.getAttribute('data-dir'))*r.clientWidth*0.9,behavior:'smooth'})})});
 // thẻ dòng xe chưa có hồ sơ → điền sẵn dòng xe vào form tư vấn
 document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car'),f=document.querySelector('#tu-van form');if(i)i.value=a.getAttribute('data-car');if(f)f.setAttribute('data-service','Bi gầm VinFast - '+a.getAttribute('data-car'))});

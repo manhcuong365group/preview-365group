@@ -16,7 +16,7 @@ Reviewer chấm snapshot SHA `1d8380cb…` (22/10/2026 20:54): **92,0/100 — CH
 |---|---|---|---|
 | P0-1 | Href tương đối (vf6/, ../vinfast-vf3/…) sai khi lên canonical | 6 link trang dòng xe ở thẻ, CTA khối nhu cầu, ItemList đổi sang URL tuyệt đối production; không còn href tương đối trong nội dung. 02 mục 3 map ảnh tương đối + lưu ý header/footer v2 | IT upload ảnh, dùng header/footer production |
 | P0-2 | 3 trang con 404 | Giữ link (phương án 1: đăng trước hub); 02 mục 3 ghi điều kiện phát hành + phương án dự phòng đổi 3 thẻ sang tư vấn | CMS đăng Fadil / Limo Green / Lux SA2.0 |
-| B01 | Trả lời nhanh trước lưới | Đoạn "Trả lời nhanh" trong hero, sau sapo (mẫu reviewer) | — |
+| B01 | Trả lời nhanh trước lưới | Sapo viết lại thành câu trả lời nhanh (theo mẫu reviewer, ~60 từ), không tách ô riêng để hero không lặp ý | — |
 | B02 | H2 lưới dễ hiểu 18 hồ sơ | H2 "Chọn dòng xe VinFast"; dòng phụ "18 lựa chọn. Sáu dòng đang có trang hồ sơ…, các dòng còn lại được tư vấn sau khi kiểm tra…" | — |
 | B03 | Bài tư vấn Fadil bị tính là case | Bỏ `/bi-gam-vinfast-fadil` khỏi khối case và ItemList (11 → 10), chuyển sang cẩm nang nhãn "Tư vấn dòng xe"; ItemList đổi tên "Bài hồ sơ…"; 04 thêm content_type, model_id, case_id (trống — chưa có mã nội bộ), sku_version, checked_at, ghi chú chưa xác nhận trùng xe | case_id nội bộ từ Media nếu có |
 | B04 | Câu giắc zin / tải nhỏ / chói quá rộng | Thay bằng đoạn reviewer đề xuất (kiểm điểm cấp nguồn, tải bổ sung, dây/giắc, bảo vệ mạch theo đời và phiên bản; không mặc định có sẵn giắc; không can thiệp pin cao áp) ở box lưu ý, khối nhu cầu, FAQ, thẻ lý do; chói → "lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói"; bỏ "đảm bảo" ở chú thích case | Anh Đạo duyệt lại câu chữ mới (05) |
@@ -74,3 +74,4 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | Chọn theo nhu cầu | Khối 3 nhóm xe sau lưới dòng xe; desktop 3 cột, mobile vuốt ngang |
 | Duyệt bổ sung + lead | Anh Đạo duyệt khối nhu cầu; sửa `data-source-page` thành "Bi gầm VinFast"; lead test 228 → success |
 | CRM | Chủ quản xác nhận lead 228 có dòng xe "VinFast VF 8" (22/10/2026) |
+| Lọc case theo hãng đèn | Hàng lọc thứ 2 "Hãng đèn" (X-Light / GTR, suy từ tên đèn trong tiêu đề bài), kết hợp với lọc dòng xe |

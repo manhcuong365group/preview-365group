@@ -11,16 +11,12 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-23 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `0e1c70fc7761117fba5ad96ee4c20d1109ce52b1fcc1c0d5a2a0a45871744a02` |
-| SHA-256 content-src.html | `884caaf87105dc7340e4f51f6d6fa01d68c27b5e58fa94e7e2722c841721e64c` |
+| SHA-256 index.html | `64e7862c48a06fa599160250d586a286038b3bfbf6110538efba0bececc8fe14` |
+| SHA-256 content-src.html | `51552bb8bb67282d7252f68e70d9d59e81fb77d13ff1c8cc88bede7a19f4bd35` |
 
-## Sapo
+## Sapo (kiêm trả lời nhanh)
 
-Chọn dòng xe VinFast để xem cấu hình, hình ảnh xe thực tế đã lắp tại Auto365 và được tư vấn phương án nâng cấp bi gầm (X-Light, GTR, AES) phù hợp với từng phiên bản.
-
-## Trả lời nhanh
-
-Trả lời nhanh: Bi gầm VinFast cần chọn theo đời, phiên bản, vị trí lắp và nhu cầu quan sát vùng gần. Auto365 có trang hồ sơ cho VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0; các xe khác cần kiểm tra trước khi chốt cấu hình. Tổng chi phí được xác nhận theo đèn, phụ kiện, công lắp và VAT trong báo giá.
+Bi gầm VinFast cần chọn theo đời, phiên bản và vị trí lắp. Auto365 có trang hồ sơ cho VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0 (X-Light, GTR, AES); xe khác được kiểm tra trước khi chốt cấu hình. Chi phí xác nhận theo đèn, phụ kiện, công lắp và VAT trong báo giá.
 
 ## Lưới dòng xe — tiêu đề
 
