@@ -74,7 +74,7 @@ Ngoài dòng F10/GTR ở trên, không đổi nội dung kỹ thuật, giá, b�
 
 ## Đối chiếu bản trang
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `8a43b6bc5d32e90c068087d2100987fa712e455e7a445c3154fded81e57109d4`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `5d39291965f52028c58070039c03d39357aff716b3a5b697ebeade0efa9a23f3`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
 
@@ -83,3 +83,4 @@ SHA-256 `index.html` (22/10/2026, bản hiện hành): `8a43b6bc5d32e90c068087d2
 
 - **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.
 - **Test lead production 22/10/2026:** form tư vấn trên https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3 → `/api/leads` 200 `{"success":true,"lead_id":"226","test":true}`; trang hiện "Đã nhận yêu cầu". Dữ liệu test: 0900000002. Cần xoá lead #226 khỏi CRM.
+- 2026-10-23: thẻ sản phẩm theo mẫu hub (chip lens/nhiệt màu/bảo hành, Xem sản phẩm, So sánh) + lọc theo hãng.

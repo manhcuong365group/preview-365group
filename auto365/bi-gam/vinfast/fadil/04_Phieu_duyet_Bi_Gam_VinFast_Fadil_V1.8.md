@@ -32,7 +32,7 @@
 | Trang Limo Green (`../limo-green/`) được link ở "Dòng xe VinFast khác" | Kiểm tra khi trang lên preview |
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `09d962fb1fc03696eb4e0a738b90b866e9a91a3817727c55fa80dd566f896728`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `a7784eb87407f889e113790b524adf74eb6a2df1a90b282aac368c6390cdb0c5`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Fadil (22/10/2026)
@@ -71,3 +71,4 @@ Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12
 - **Giá đã duyệt (user 22/10/2026):** X-Light F10 Pro 5.500.000đ/bộ; X-Light F10 New (2025) 4.300.000đ/bộ — chưa VAT.
 - **Phạm vi đời/phiên bản:** Fadil đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp — anh Nguyễn Quang Đạo duyệt (user chuyển lại 22/10/2026). Chỉ lưu trong hồ sơ, KHÔNG công bố trên trang (user quyết định bỏ khỏi trang 22/10/2026).
 - 23/10/2026: đổi ~470 href/URL schema từ v2.auto365.vn sang auto365.vn (chỉ các đích đã kiểm trả 200). Còn lại các link v2 trả 301/404 trên auto365.vn và asset js/css — IT map khi đăng. Breadcrumb "Trang chủ" = https://auto365.vn/.
+- 2026-10-23: thẻ sản phẩm theo mẫu hub (chip lens/nhiệt màu/bảo hành, Xem sản phẩm, So sánh) + lọc theo hãng.

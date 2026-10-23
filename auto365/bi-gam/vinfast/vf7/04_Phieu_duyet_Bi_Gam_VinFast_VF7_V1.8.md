@@ -26,7 +26,7 @@
 | Ảnh: dùng ảnh bài case trên auto365.vn và ảnh minh họa của hub ánh sáng | Thay ảnh thật VF7 nếu có |
 | Xoá khối `#vf3lp-internal-check`; chốt canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `88d98bd06d40702bf8e772ef042af2613fbcd28904ec419211e988f6e6f3c370`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `3cda61d70ce48cb0261f0ed6f664d62f73f599c17ff302154cbe80f0907f1425`
 
 - 15/10/2026: thay bộ FAQ bằng 6 câu viết lại (chọn mẫu theo tiêu chí, tra cứu bảo hành theo biển số/serial + 4 số cuối điện thoại — chủ quản xác nhận); FAQPage khớp.
 | Nghiệm thu L1–L8 | IT kiểm tra và xác nhận PASS | Chuyển lại 20/10/2026 |
@@ -37,3 +37,4 @@ SHA-256 `index.html` (22/10/2026, bản hiện hành): `88d98bd06d40702bf8e772ef
 
 - **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.
 - **Test lead production 22/10/2026:** form tư vấn trên https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7 → `/api/leads` 200 `{"success":true,"lead_id":"224","test":true}`; trang hiện "Đã nhận yêu cầu". Dữ liệu test: TEST QA Auto365, 0900000000. Cần xoá lead #224 khỏi CRM.
+- 2026-10-23: thẻ sản phẩm theo mẫu hub (chip lens/nhiệt màu/bảo hành, Xem sản phẩm, So sánh) + lọc theo hãng.
