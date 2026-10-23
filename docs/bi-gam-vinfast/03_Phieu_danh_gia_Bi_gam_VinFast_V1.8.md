@@ -78,3 +78,4 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | Khối nhu cầu | Chuyển xuống sau khối bài hồ sơ; 3 nhóm thành accordion đóng sẵn (nội dung vẫn trong HTML) |
 | Khối nhu cầu (23/10) | Cả khối là 1 accordion đóng sẵn, 3 nhóm bên trong hiện đầy đủ; đổi tiêu đề "Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng"; bỏ dòng phụ dưới H2 lưới dòng xe và dưới H2 khối case; sapo viết lại tự nhiên hơn |
 | Khối nhu cầu (23/10, lượt 2) | Gộp vào box "Xe VinFast lắp bi gầm cần lưu ý gì?" thành accordion "Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng" đóng sẵn ở cuối box |
+| Sapo + Vì sao chọn (23/10) | Sapo theo bản chủ quản viết; khối "Vì sao chọn" thay 4 thẻ icon bằng 6 thẻ ảnh + logo hãng đèn dùng chung với theo-hang-xe (build tự lấy) |

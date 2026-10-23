@@ -26,7 +26,15 @@ const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s
   .replace(/data-service="[^"]*"/g, 'data-service="Bi gầm VinFast"')
   .replace(/data-source-page="[^"]*"/g, 'data-source-page="Bi gầm VinFast"')
   .replace('placeholder="VD: Toyota Vios 2021"', 'placeholder="VD: VinFast VF 6 2025"');
-content = content.replace('<!-- @branch -->', () => branch).replace('<!-- @lead -->', () => lead);
+// khối "Vì sao chọn" 6 thẻ ảnh + logo hãng đèn (đã duyệt ở theo-hang-xe); ảnh trỏ về thư mục theo-hang-xe
+const why = cut('<section class="bght-sec bght-why" id="vi-sao-chon">', /\n?<\/div><\/section>/)
+  .replace(/src="hinh\//g, 'src="../theo-hang-xe/hinh/')
+  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm VinFast?');
+const whyRules = bght.match(/\.bw-(grid|card|photo)( img| h3| p| a)?\{[^}]*\}/g) || [];
+const whyCss = '<style>' + whyRules.slice(0, 7).join('\n')
+  + '\n' + (bght.match(/\.bght-lbrands\{[^\n]*/) || [''])[0]
+  + '\n@media (max-width:767px){.bw-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bw-card{scroll-snap-align:start}}</style>\n';
+content = content.replace('<!-- @branch -->', () => branch).replace('<!-- @lead -->', () => lead).replace('<!-- @why -->', () => whyCss + why);
 
 // ---- render sẵn phần JS (tab, thẻ dòng xe, case) vào HTML tĩnh cho bot SEO/AI ----
 const dom = new JSDOM(content, { runScripts: 'dangerously', pretendToBeVisual: true });

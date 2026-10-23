@@ -11,12 +11,12 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-23 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `5aaef4fe4330c1a53f986ac72b677d75cb0c18eb79bfac19d2312ead2126ccad` |
-| SHA-256 content-src.html | `2ba09edb34b6e2d3aa93d12bfa3ac81bbe114fde86da543ff8e91908ed0f2aa3` |
+| SHA-256 index.html | `910e2068a0a0e3290bcf7cef8b3ac21f9916f7df7312bb9ad631136f1fcdc70a` |
+| SHA-256 content-src.html | `7973bbdfdfc5e8b25d49b195e807916d83c68097c52d46c94d74c7d620500a68` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Chọn dòng xe VinFast để xem mẫu bi gầm X-Light, GTR, AES đã lắp thực tế tại Auto365 và phương án phù hợp với từng đời, phiên bản. Với dòng xe chưa có hồ sơ, kỹ thuật viên kiểm tra xe trước rồi mới báo cấu hình và chi phí.
+Độ bi gầm VinFast là giải pháp nâng cấp ánh sáng đòi hỏi sự tương thích cao với hệ thống điện và thiết kế hốc đèn đặc thù của từng dòng xe. Nhằm giúp chủ xe tra cứu chính xác, Auto365 tổng hợp các hồ sơ thi công thực tế của nhiều mẫu bi gầm (X-Light, GTR, AES) trên từng phiên bản xe VinFast. Mỗi cấu hình đều ưu tiên phương án sử dụng pát zin và cắm giắc an toàn; đối với các dòng xe chưa có dữ liệu, kỹ thuật viên sẽ trực tiếp đo đạc trước khi đề xuất giải pháp.
 
 ## Lưới dòng xe — tiêu đề
 
