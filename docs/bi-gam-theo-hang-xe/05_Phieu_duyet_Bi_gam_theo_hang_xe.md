@@ -54,3 +54,4 @@ QA 22/10/2026: lead test POST https://auto365.vn/api/leads kèm car_model="Lexus
 CRM xác nhận 22/10/2026 (chủ quản): đã nhận lead 223. Còn: xác nhận lead có hiện dòng xe "Lexus RX"; xoá lead test 223 và 205.
 CRM xác nhận 22/10/2026 (chủ quản): lead 223 hiện dòng xe "Lexus RX" — ngữ cảnh xe từ popup → form → CRM đạt. Còn: xoá lead test 223 và 205.
 Đợt 8 (22/10/2026): VF7 production đã đăng (200) → thêm lại link VF7; link VF3/VF6/VF7 đổi sang URL production.
+Đợt 9 (23/10/2026, anh Đạo duyệt — chủ quản xác nhận): hãng có trang bi gầm riêng (VinFast) chỉ giữ 1 câu giới thiệu, nút "Xem trang bi gầm VinFast: giá, mẫu lắp, case →" đặt ngay dưới tên hãng; giữ nguồn + Gợi ý ánh sáng. lastReviewed = 2026-10-23.
