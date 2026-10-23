@@ -75,3 +75,4 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | Duyệt bổ sung + lead | Anh Đạo duyệt khối nhu cầu; sửa `data-source-page` thành "Bi gầm VinFast"; lead test 228 → success |
 | CRM | Chủ quản xác nhận lead 228 có dòng xe "VinFast VF 8" (22/10/2026) |
 | Lọc case theo hãng đèn | Hàng lọc thứ 2 "Hãng đèn" (X-Light / GTR, suy từ tên đèn trong tiêu đề bài), kết hợp với lọc dòng xe |
+| Khối nhu cầu | Chuyển xuống sau khối bài hồ sơ; 3 nhóm thành accordion đóng sẵn (nội dung vẫn trong HTML) |

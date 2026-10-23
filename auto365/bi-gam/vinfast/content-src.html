@@ -112,12 +112,18 @@
 .bgvf-cr{font-size:11.5px;color:var(--mu);margin:10px 0 0}
 .bgvf-ic-chk{padding:18px 0;background:#fffbea;border-top:2px dashed #d9a400;font-size:13.5px;color:#333}.bgvf-ic-chk p{margin:6px 0 0}.bgvf-ic-chk a{color:#dc2626;font-weight:700}
 /* nhu cầu */
-.bgvf-need{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.bgvf-nd{border:1px solid var(--ln);border-radius:12px;background:#fff;padding:18px;display:flex;flex-direction:column;gap:10px}
+.bgvf-need{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:start}
+.bgvf-nd{border:1px solid var(--ln);border-radius:12px;background:#fff;padding:14px 18px}
+.bgvf-nd summary{list-style:none;cursor:pointer;position:relative;padding-right:28px}
+.bgvf-nd summary::-webkit-details-marker{display:none}
+.bgvf-nd summary:after{content:"+";position:absolute;right:0;top:-2px;font-size:22px;color:var(--r)}
+.bgvf-nd[open] summary:after{content:"–"}
+.bgvf-nd .who{display:block;margin-top:4px}
+.bgvf-nd .bd{display:flex;flex-direction:column;gap:10px;margin-top:12px}
 .bgvf-nd h3{font-size:17px;font-weight:700;margin:0;line-height:1.35}
 .bgvf-nd .who{font-size:13px;color:var(--mu);margin:0}
 .bgvf-nd ul{margin:0;padding-left:18px;font-size:14px;color:#2b333b;line-height:1.6}.bgvf-nd li{margin:3px 0}
-.bgvf-nd .done{margin:auto 0 0;padding-top:10px;border-top:1px dashed var(--ln);font-size:13px;color:var(--mu)}
+.bgvf-nd .done{margin:0;padding-top:10px;border-top:1px dashed var(--ln);font-size:13px;color:var(--mu)}
 .bgvf-nd .done a{color:var(--ink);text-decoration:underline}
 .bgvf-nd .go{color:var(--r)!important;font-weight:600;font-size:14px}
 .bgvf-nnote{font-size:13px;color:var(--mu);margin:12px 0 0}
@@ -134,7 +140,7 @@
 .bgvf-b1{background:var(--r);color:#fff!important}.bgvf-b1:hover{background:var(--rd)}
 .bgvf-b2{background:#fff;color:var(--ink)!important}
 @media(max-width:1100px){.bgvf-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
-@media(max-width:991px){.bgvf-need{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(300px,60%);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-need::-webkit-scrollbar{display:none}.bgvf-nd{scroll-snap-align:start}.bgvf-guides{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why ul{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why li+li{border-left:0;padding-left:0}.bgvf-rail{grid-auto-columns:calc((100% - 16px)/2)}}
+@media(max-width:991px){.bgvf-need{grid-template-columns:1fr;gap:10px}.bgvf-guides{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why ul{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why li+li{border-left:0;padding-left:0}.bgvf-rail{grid-auto-columns:calc((100% - 16px)/2)}}
 @media(max-width:767px){
 .bght-sec{padding:22px 0}.bght-h2{font-size:22px}
 .bght-head{flex-wrap:wrap}
@@ -144,7 +150,7 @@
 .bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:40%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px;scroll-padding:0 16px}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}.bgvf-m:hover{transform:none}.bgvf-m .im{padding:10px 12px}.bgvf-m .bd{padding:6px 10px 8px}.bgvf-m b{font-size:13.5px}.bgvf-m small{font-size:11px}.bgvf-empty{grid-row:1/3;grid-column:auto/span 2}
 .bgvf-tabs,.bgvf-cfr{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-chip{flex:none}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
 .bgvf-search{width:100%}
-.bgvf-rail{grid-auto-columns:84%;grid-template-rows:none}.bgvf-need{grid-auto-columns:86%;gap:12px}.bgvf-nd{padding:14px}.bgvf-nd h3{font-size:16px}.bgvf-nd ul{font-size:13.5px}
+.bgvf-rail{grid-auto-columns:84%;grid-template-rows:none}.bgvf-nd{padding:12px 14px}.bgvf-nd h3{font-size:16px}.bgvf-nd ul{font-size:13.5px}
 .bgvf-nav .bgvf-arr{display:none}
 .bgvf-why{padding:16px}.bgvf-why ul{grid-template-columns:1fr;gap:12px}
 .bgvf-guides{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory}
@@ -178,30 +184,30 @@
  <div class="bgvf-grid" id="bgvf-grid"></div>
 </div></section>
 
-<section class="bght-sec" id="theo-nhu-cau" style="padding-top:4px"><div class="bght-in">
- <div class="bght-head"><div><span class="bgvf-eb">Chọn theo nhu cầu</span><h2 class="bght-h2">Xe VinFast của bạn dùng để làm gì?</h2><p class="bght-sub">Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.</p></div></div>
- <div class="bgvf-need">
-  <article class="bgvf-nd"><h3>Xe điện đi phố hằng ngày</h3><p class="who">VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7</p>
-   <ul><li>Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.</li><li>Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.</li><li>Kỹ thuật viên kiểm tra điểm cấp nguồn, dây/giắc theo đời và phiên bản xe; phương án tư vấn không can thiệp hệ thống pin cao áp.</li></ul>
-   <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2">VF 3 – GTR G1 Turbo V2</a>, <a href="https://auto365.vn/vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k">VF 6 – F10 Turbo V2 4300K</a>, <a href="https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k">VF 7 – F10 Turbo V2 5500K</a></p>
-   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6">Xem mẫu lắp được cho VF 6 →</a></article>
-  <article class="bgvf-nd"><h3>Xe dịch vụ chạy đêm, đi mưa</h3><p class="who">Limo Green, Nerio Green, Herio Green, Minio Green, EC Van</p>
-   <ul><li>Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường.</li><li>Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.</li><li>Xe chạy nhiều giờ mỗi ngày nên cân chỉnh đường cắt cos sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.</li></ul>
-   <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh">Limo Green 2025 – X-Light F10 New</a>. Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch.</p>
-   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green">Xem mẫu lắp được cho Limo Green →</a></article>
-  <article class="bgvf-nd"><h3>Dòng đời trước, hay đi tỉnh</h3><p class="who">Fadil, Lux A2.0, Lux SA2.0, President, VF e34</p>
-   <ul><li>Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.</li><li>Xe đã dùng vài năm: kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu.</li><li>Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.</li></ul>
-   <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2">Fadil Premium 2021 – thay cụm LED projector gầm zin bằng X-Light 301 V2</a>, <a href="https://auto365.vn/vinfast-lux-sa20-lap-x-light-f10-turbo-v2-gia-cau-hinh">Lux SA2.0 – X-Light F10 Turbo V2</a></p>
-   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil">Xem mẫu lắp được cho Fadil →</a></article>
- </div>
- <p class="bgvf-nnote">Giá và danh sách mẫu lắp được xem ở trang từng dòng xe; tổng chi phí báo sau khi kỹ thuật viên kiểm tra xe.</p>
-</div></section>
-
 <section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
  <div class="bght-head"><div><span class="bgvf-eb">Hồ sơ thực tế</span><h2 class="bght-h2">Xe VinFast đã lắp bi gầm tại Auto365</h2><p class="bght-sub">Bài hồ sơ lắp đặt thực tế tại Auto365; mỗi bài nêu cấu hình của chiếc xe trong bài.</p></div><div class="bgvf-nav"><a class="bght-more" href="https://auto365.vn/tin-tuc?q=VinFast">Xem tất cả case</a><button type="button" class="bgvf-arr" data-dir="-1" aria-label="Trước">‹</button><button type="button" class="bgvf-arr" data-dir="1" aria-label="Sau">›</button></div></div>
  <div class="bgvf-cf" id="bgvf-cf"></div>
  <div class="bgvf-rail" id="bgvf-rail"></div>
  <p class="bgvf-fn">* Cấu hình theo xe thực tế trong từng bài; xe khác cần kiểm tra tương thích trước khi lắp.</p>
+</div></section>
+
+<section class="bght-sec" id="theo-nhu-cau" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><span class="bgvf-eb">Chọn theo nhu cầu</span><h2 class="bght-h2">Xe VinFast của bạn dùng để làm gì?</h2><p class="bght-sub">Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.</p></div></div>
+ <div class="bgvf-need">
+  <details class="bgvf-nd"><summary><h3>Xe điện đi phố hằng ngày</h3><span class="who">VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7</span></summary><div class="bd">
+   <ul><li>Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.</li><li>Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.</li><li>Kỹ thuật viên kiểm tra điểm cấp nguồn, dây/giắc theo đời và phiên bản xe; phương án tư vấn không can thiệp hệ thống pin cao áp.</li></ul>
+   <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2">VF 3 – GTR G1 Turbo V2</a>, <a href="https://auto365.vn/vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k">VF 6 – F10 Turbo V2 4300K</a>, <a href="https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k">VF 7 – F10 Turbo V2 5500K</a></p>
+   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6">Xem mẫu lắp được cho VF 6 →</a></div></details>
+  <details class="bgvf-nd"><summary><h3>Xe dịch vụ chạy đêm, đi mưa</h3><span class="who">Limo Green, Nerio Green, Herio Green, Minio Green, EC Van</span></summary><div class="bd">
+   <ul><li>Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường.</li><li>Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.</li><li>Xe chạy nhiều giờ mỗi ngày nên cân chỉnh đường cắt cos sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.</li></ul>
+   <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh">Limo Green 2025 – X-Light F10 New</a>. Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch.</p>
+   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green">Xem mẫu lắp được cho Limo Green →</a></div></details>
+  <details class="bgvf-nd"><summary><h3>Dòng đời trước, hay đi tỉnh</h3><span class="who">Fadil, Lux A2.0, Lux SA2.0, President, VF e34</span></summary><div class="bd">
+   <ul><li>Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.</li><li>Xe đã dùng vài năm: kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu.</li><li>Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.</li></ul>
+   <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2">Fadil Premium 2021 – thay cụm LED projector gầm zin bằng X-Light 301 V2</a>, <a href="https://auto365.vn/vinfast-lux-sa20-lap-x-light-f10-turbo-v2-gia-cau-hinh">Lux SA2.0 – X-Light F10 Turbo V2</a></p>
+   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil">Xem mẫu lắp được cho Fadil →</a></div></details>
+ </div>
+ <p class="bgvf-nnote">Giá và danh sách mẫu lắp được xem ở trang từng dòng xe; tổng chi phí báo sau khi kỹ thuật viên kiểm tra xe.</p>
 </div></section>
 
 <section class="bght-sec" style="padding-top:4px"><div class="bght-in">
