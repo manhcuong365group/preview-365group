@@ -40,6 +40,36 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Xử lý phiếu tái kiểm 22/10/2026 (bản 23/10/2026)
+
+Phiếu tái kiểm ghi điểm tự chấm lần 5 (88,9) chưa phải điểm nghiệm thu. **Không tự cộng điểm cho các sửa dưới đây; chờ reviewer chấm lại.**
+
+| Mục phiếu | Trạng thái | Việc đã làm / còn chờ |
+|---|---|---|
+| 4.1 P0 case Everest 404 | Đã sửa | Link đổi sang `auto365.vn/dan-phim-cach-nhiet-3m-crystalline-cr-blk-ford-everest` |
+| 4.1 P0 "Đại lý 3M khác" 404 | Đã sửa | Trỏ `/dai-ly-phim-cach-nhiet-3m-vn.html`, nhãn "Xem tất cả đại lý" |
+| 4.1 P0 URL đích 404 | Chờ IT | Trang chưa triển khai tại `/phim-cach-nhiet-3m`; canonical/OG/schema đã thống nhất URL này |
+| 4.1 P1 Trang chủ, Về 365Group `href="#"` | Đã sửa | `/index.html`, `/365-group.html` (200) |
+| 4.1 P1 Tài liệu & Hỗ trợ | Đã sửa | Thêm khối #tai-lieu 4 liên kết sâu (thông số, tài liệu sản phẩm, tải tài liệu, bảo hành); nguồn bảng thông số dẫn `/thong-so-ky-thuat-3m.html` thay vì trang chủ. Còn: tài liệu chưa ghi revision/ngày hiệu lực (cần 365Group cung cấp) |
+| 4.1 P1 og:image host preview | Đã sửa | Đổi sang đường dẫn 3m.365group.com.vn; IT cần upload ảnh |
+| 4.1 P1 Thẻ Pro Shop/Auto365 cùng danh sách chung | Chờ dữ liệu | Danh bạ chưa có thuộc tính nhóm để lọc |
+| 4.2 Tìm đại lý | Đã sửa (bản tối thiểu) | Đổi tên "Tìm đại lý 3M theo khu vực"; bỏ ô quận/huyện bị khoá; TP.HCM → `/dai-ly-3m-hcm.html`, Hà Nội → `/dai-ly-3m-ha-noi.html`, các tỉnh khác → danh sách toàn quốc (ghi rõ). Bản lọc đầy đủ chờ bảng điểm đại lý có ID/nhóm/ngày xác minh |
+| 4.3 Menu ≤1.200 px | Đã sửa | Nút ☰ bàn phím được, aria-expanded |
+| 4.3 Anchor bị header che | Đã sửa | scroll-margin 76 px |
+| 4.3 Bảng 15 mã trên mobile | Đã sửa | Bộ lọc theo dòng; lọc 1 dòng không cần cuộn ngang |
+| 4.3 Thẻ cấu hình 2 cột, chữ 12 px | Đã sửa | ≤480 px 1 cột, chữ 13 px |
+| 4.3 Hero 820–1.024 px | Đã sửa | ≤1.024 px hero 1 cột |
+| 4.3 Breadcrumb nhìn thấy | Đã sửa | Khớp BreadcrumbList |
+| 5.1 Ceramic IR lệch Auto365 (TSER 59/57/47 vs 63/61/54) | **Chờ anh Hoàng/anh Đạo chốt** | Không tự đổi số. Cần xác định tài liệu, revision, nền kính áp dụng |
+| 5.2 Giải thích 6 cấu hình | Đã sửa | Câu ngay dưới tiêu đề 6 cấu hình: là cách phối mã do 365Group giới thiệu, không phải 6 dòng công nghệ; Hybrid/Hybrid PRO là phối CR BLK kính lái + NR kính hông/lưng |
+| 5.3 Bảo hành | Giữ 10 năm (chủ trang xác nhận 22/10) | Có liên kết `/bao-hanh-3m.html` trong FAQ và khối Tài liệu. Còn: văn bản chính sách có mã phim/phạm vi |
+| 5.3 Số đại lý 224/32 vs 160+ | Chờ vận hành | Cần bảng điểm đại lý duyệt, cùng phạm vi/thời điểm |
+| 6 Title/H1/meta | Đã đổi theo đề xuất | Xem 02 mục 2 |
+| 6 Tên WebSite nhập nhằng | Đã sửa | "365Group – Nhà phân phối phim cách nhiệt 3M"; không dùng sameAs với 3M |
+| 8 Form khi thiếu khu vực | Đã sửa | Tỉnh/thành bắt buộc trước khi gửi. Còn: IT/vận hành thử luồng nhận trên endpoint thật |
+| 8 Hiệu năng | Chưa đo | Chưa có Lighthouse/CrUX |
+| Ngày | dateModified 2026-10-23 | lastReviewed giữ 2026-10-22 |
+
 ## Đã sửa (22/10/2026)
 
 Lần 2: thêm block xe thực tế (5 bài đã đăng); bỏ từ claim quá ở hero, 3 dòng phim, nhãn PRO, bảng so sánh, thẻ đại lý; câu NR theo câu đã duyệt; thay ô "Không gây nhiễu tín hiệu" bằng "Bảo hành điện tử 10 năm"; thêm NR 35/25/15/5 vào bảng thông số.
@@ -72,7 +102,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `a69947ed3002a90a45952cc584fe813c77d917febf785603c1690ea9eb932e44` |
+| `auto365/3m-365group/index.html` | SHA-256 `070de2183d1c56f04330109c71b4a46fb8aa9a76df9b381b5f5388a060c378b4` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

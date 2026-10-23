@@ -1,13 +1,13 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `a69947ed3002a90a45952cc584fe813c77d917febf785603c1690ea9eb932e44`
-Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `070de2183d1c56f04330109c71b4a46fb8aa9a76df9b381b5f5388a060c378b4`
+Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
-**H1:** Phim cách nhiệt ô tô 3M™
+**H1:** Phim cách nhiệt 3M: Danh mục và thông số từ 365Group
 3 dòng công nghệ · 6 cấu hình dán trọn xe
 Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô
 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.
-✔ Bài viết của 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo (22/10/2026) · Cập nhật: 22/10/2026
+✔ Bài viết của 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo (22/10/2026) · Cập nhật: 23/10/2026
 Cản tia UVBảo vệ sức khỏe và nội thất
 Giảm nhiệt trong xeGiảm nhiệt, tận hưởng không gian mát mẻ
 Giảm lóa – Tăng tầm nhìnThoải mái và an toàn hơn khi lái xe
@@ -35,7 +35,7 @@ Dòng cao cấp, ưu tiên độ trong khi nhìn
 - Màu đen tiệp kính zin, nhìn rõ
 
 ## 6 cấu hình phim cách nhiệt 3M
-Ceramic NR và Ceramic IR mỗi dòng 1 cấu hình; Crystalline CR BLK có 4 cấu hình
+Sáu cấu hình dưới đây là cách phối mã phim theo từng vị trí kính do 365Group giới thiệu, không phải sáu dòng công nghệ riêng của 3M. Crystalline Hybrid và Hybrid PRO là cấu hình phối dòng: kính lái Crystalline CR BLK, kính hông/lưng Ceramic NR.
 
 ### 3M Ceramic NR
 - Kính lái: NR 35
@@ -110,6 +110,13 @@ _Bảng: Thông số kỹ thuật 15 mã phim 3M Crystalline CR BLK, Ceramic IR 
 - Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.
 - Cửa sổ trời nhỏ giá bằng một ô kính sườn, cửa sổ trời panorama giá bằng một kính lái.
 
+## Tài liệu và hỗ trợ  `#tai-lieu`
+Tài liệu do 365Group công bố trên website nhà phân phối
+- Thông số kỹ thuật phim 3MBảng thông số các mã phim cách nhiệt 3M
+- Tài liệu sản phẩm 3MTài liệu theo dòng phim do 365Group cung cấp
+- Tải tài liệuTệp tài liệu 3M trên website 365Group
+- Hướng dẫn tra cứu bảo hànhCách tra bảo hành điện tử phim 3M
+
 ## Chứng nhận từ 3M  `#chung-nhan`
 Giấy chứng nhận nhà phân phối và các chứng nhận 3M của hệ thống 365Group – Auto365
 - Chứng nhận: Chứng nhận nhà phân phối 3M365Group
@@ -132,8 +139,8 @@ Các chi nhánh trong hệ thống Auto365 thi công phim 3M.
 ### Đại lý 3M khác
 Các đại lý ủy quyền 3M trên toàn quốc.
 
-### Tìm đại lý 3M gần nhất
-Chọn tỉnh/thành phố để xem danh sách đại lý, địa chỉ và thông tin liên hệ.
+### Tìm đại lý 3M theo khu vực
+Chọn khu vực để mở danh sách đại lý, địa chỉ và thông tin liên hệ trên website 365Group.
 
 ## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
 Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
@@ -168,7 +175,7 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - Email: kinhdoanh@365group.com.vn
 - Văn phòng: Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh
 - Website nhà phân phối: 3m.365group.com.vn
-- Cập nhật lần cuối: 22/10/2026
+- Cập nhật lần cuối: 23/10/2026
 
 ## Ảnh và ALT
 
