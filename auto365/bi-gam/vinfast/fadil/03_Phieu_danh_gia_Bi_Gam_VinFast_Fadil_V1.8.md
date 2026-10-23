@@ -29,7 +29,7 @@ Sửa theo audit 21/10: nút "Xem tất cả 18 mẫu cho Fadil" mở đủ 18 m
 
 | Mã | Tối đa | Điểm | Ghi chú / còn trừ |
 | --- | ---: | ---: | --- |
-| C1 | 10 | 9,5 | F10 Pro (không V2) giá theo PDP, chưa có xác nhận riêng của Kinh doanh. |
+| C1 | 10 | 9,5 | F10 Pro (không V2) giá theo PDP, [lịch sử — giá đã được duyệt 22/10/2026, xem phiếu 04] chưa có xác nhận riêng của Kinh doanh. |
 | C2 | 10 | 9,3 | Chưa có bảng theo đời/phiên bản Fadil ngoài Premium 2021. |
 | C3 | 10 | 9,7 | — |
 | S1 | 10 | 9,6 | — |
