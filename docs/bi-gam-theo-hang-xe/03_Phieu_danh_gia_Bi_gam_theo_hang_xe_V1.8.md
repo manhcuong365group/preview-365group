@@ -120,3 +120,9 @@ Anh Nguyễn Quang Đạo duyệt phần sửa 20–21/10 (chủ quản xác nh�
 Còn mở: duyệt đợt 7 (sapo, bỏ link VF7) ở 05; QA mobile/tablet thật và payload CRM ô Dòng xe; production (HUB, VF7, xoá khối nội bộ). Chờ reviewer chấm lại.
 
 Cập nhật 22/10/2026: anh Đạo đã duyệt đợt 7; `lastReviewed` 2026-10-22. Còn mở: QA thiết bị thật + CRM ô Dòng xe, production, reviewer chấm lại.
+
+## 7. Kết quả hiện hành — tái kiểm R5 của reviewer (22/10/2026)
+
+**ĐẠT V1.8 (bản preview): 96,1/100** — C 28,8 · SEO 28,8 · GEO 24,0 · U 14,5 (U3 4,8). Đóng F08-R4, F04-R4, F07-R4, F06 (VF3/VF6/VF7). Bản chấm SHA `6b3dd2a0…`.
+
+Còn thuộc bước đưa live (không phải lỗi nội dung): HUB `/nang-cap-anh-sang-bi-gam/theo-hang-xe` trả 200; loại hẳn khối kiểm tra nội bộ, bỏ noindex, đổi tài nguyên/og:image theo môi trường; QA bản đã đăng (thiết bị thật, form, index). Dọn lead test 223/205.
