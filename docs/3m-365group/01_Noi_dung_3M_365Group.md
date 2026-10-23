@@ -1,13 +1,13 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `ff66b93022aaa9b5c19cab1bb34fcda7827fa8efca7e4b6039b405a4db7a6acf`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `6e1d10f70ffc26d78ec12ccbf12b928f0ee7c7a0a4a410beec5365d05edc2d77`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
-**H1:** Phim cách nhiệt 3M: Danh mục và thông số từ 365Group
+**H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
 Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô
 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.
-✔ Bài viết của 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo (22/10/2026) · Cập nhật: 23/10/2026
+✔ Bài viết của 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Cập nhật: 23/10/2026
 3M Pro Shop · 3M Training Center – hệ thống 365Group – Auto365
 Cản tia UVBảo vệ sức khỏe và nội thất
 Giảm nhiệt trong xeGiảm nhiệt, tận hưởng không gian mát mẻ
@@ -168,7 +168,6 @@ Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe v�
 ## Về bài viết này
 Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam – biên soạn, tham khảo thông tin sản phẩm từ 3M Việt Nam. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.
 - Đơn vị xuất bản: 365Group
-- Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo, 22/10/2026
 - Thương hiệu sản phẩm: 3M™ (Ceramic NR, Ceramic IR, Crystalline CR BLK)
 - Hotline 365Group: 0363 365 365
 - Email: kinhdoanh@365group.com.vn

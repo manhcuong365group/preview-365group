@@ -40,6 +40,10 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Cập nhật 23/10/2026 — gỡ người kiểm duyệt
+
+Chủ trang xác nhận anh Nguyễn Quang Đạo không duyệt trang nhà phân phối 365Group. Đã gỡ tên khỏi trang và schema. G3 của lần tự chấm 3–5 (4,3) tính dựa trên người duyệt này nên **không còn hiệu lực**; ước tính G3 quay về ~3,0 → tổng tự chấm ~87,6/100, CHƯA ĐẠT, GEO ~20,9 < 23,75. Cần 365Group chỉ định người kiểm duyệt có tên.
+
 ## Xử lý phiếu tái kiểm 22/10/2026 (bản 23/10/2026)
 
 Phiếu tái kiểm ghi điểm tự chấm lần 5 (88,9) chưa phải điểm nghiệm thu. **Không tự cộng điểm cho các sửa dưới đây; chờ reviewer chấm lại.**
@@ -87,7 +91,7 @@ Lần 1:
 | # | Việc | Tiêu chí | Ai quyết |
 |---|---|---|---|
 | 1 | Chốt URL/domain đích, canonical, đổi link nội bộ sang URL thật, thêm BreadcrumbList/WebSite, @id tuyệt đối | S1, S3 | SEO/chủ trang | ✅ Đã làm (URL https://3m.365group.com.vn/phim-cach-nhiet-3m)
-| 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang | ✅ Đã có (anh Đạo, 22/10/2026)
+| 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang | ⚠️ Đã gỡ anh Đạo (23/10) — cần người duyệt khác
 | 3 | Thêm block xe thực tế (case đã đăng trên auto365.vn theo từng cấu hình) | C2, G3 | Có thể làm ngay từ bài đã đăng | ✅ Đã làm (lần 2)
 | 4 | Bỏ từ claim quá ("vượt trội", "tối ưu", "cao cấp nhất"), sửa câu mô tả Ceramic NR theo câu đã duyệt | C3 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 5 | Thêm thông số NR 35/25/15/5 (catalog NR 03/2026) vào bảng kỹ thuật | C2, G2 | Có thể làm ngay | ✅ Đã làm (lần 2)
@@ -102,7 +106,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `ff66b93022aaa9b5c19cab1bb34fcda7827fa8efca7e4b6039b405a4db7a6acf` |
+| `auto365/3m-365group/index.html` | SHA-256 `6e1d10f70ffc26d78ec12ccbf12b928f0ee7c7a0a4a410beec5365d05edc2d77` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

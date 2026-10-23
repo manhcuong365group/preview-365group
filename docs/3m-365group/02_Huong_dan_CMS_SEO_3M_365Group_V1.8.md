@@ -1,9 +1,9 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `ff66b93022aaa9b5c19cab1bb34fcda7827fa8efca7e4b6039b405a4db7a6acf` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `6e1d10f70ffc26d78ec12ccbf12b928f0ee7c7a0a4a410beec5365d05edc2d77` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
-- Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo, 22/10/2026 (user xác nhận). Trang hiện dòng kiểm duyệt dưới hero và trong "Về bài viết này"; WebPage có `reviewedBy` (url hồ sơ auto365.vn/tac-gia/nguyen-quang-dao) và `lastReviewed` 2026-10-22.
+- Kiểm duyệt kỹ thuật: **chưa có**. Anh Nguyễn Quang Đạo không đứng tên trang nhà phân phối này (chủ trang 23/10/2026) — đã gỡ khỏi byline, khung "Về bài viết này" và `reviewedBy`/`lastReviewed`. Cần 365Group chỉ định người duyệt.
 
 ## 1. Vai trò URL
 
@@ -20,7 +20,7 @@
 | --- | --- |
 | Title | Phim cách nhiệt 3M: Dòng phim, thông số & đại lý \| 365Group (theo phiếu tái kiểm 22/10) |
 | Meta description | Tra cứu phim cách nhiệt 3M tại 365Group: Ceramic NR, Ceramic IR, Crystalline CR BLK; thông số theo mã, tài liệu kỹ thuật, bảo hành và hệ thống đại lý. |
-| H1 | Phim cách nhiệt 3M: Danh mục và thông số từ 365Group |
+| H1 | Phim cách nhiệt 3M (chủ trang bỏ vế "Danh mục và thông số từ 365Group" 23/10/2026; vai trò 365Group đã nêu ở dòng nhỏ phía trên H1) |
 | og:image | `https://3m.365group.com.vn/hinh/phim-cach-nhiet-3m/hero-3m-pro-shop-training-center.webp` — IT upload ảnh đúng đường dẫn này khi đăng (701×436 — dưới chuẩn 1200×630, cần ảnh gốc lớn hơn) |
 | Robots | Preview `noindex,nofollow` → production `index,follow` |
 
@@ -28,7 +28,7 @@ Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp Br
 
 ## 3. Schema (một `@graph`)
 
-`Organization` (#365group, url `3m.365group.com.vn`, telephone, email) · `Brand` (#3m) · `FAQPage` (4 câu, khớp nguyên văn phần hiển thị) · `WebPage` (publisher/author #365group, about #3m, `dateModified` 2026-10-23, `lastReviewed` 2026-10-22, `citation` trang 3M Việt Nam) · `ItemList` 6 `Product` (brand 3M, description = mã phim + bảo hành).
+`Organization` (#365group, url `3m.365group.com.vn`, telephone, email) · `Brand` (#3m) · `FAQPage` (4 câu, khớp nguyên văn phần hiển thị) · `WebPage` (publisher/author #365group, about #3m, `dateModified` 2026-10-23, `citation` trang 3M Việt Nam) · `ItemList` 6 `Product` (brand 3M, description = mã phim + bảo hành).
 
 Đã có: `WebSite` (#website, tên "365Group – Nhà phân phối phim cách nhiệt 3M"), `BreadcrumbList` (Trang chủ → Phim cách nhiệt ô tô 3M), `WebPage` @id/url tuyệt đối, Organization @id `https://3m.365group.com.vn/#organization`. Còn thiếu: `Offer` cho Product (chỉ thêm khi có giá theo cấu hình được duyệt).
 
