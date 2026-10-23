@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `be3a1641704488d4974b167322c5f99f0b5edcfcfa176947b3442bd92728f9c5` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `94b1ea6345797c346a57079669630d9091cc5130e2e6755e9606b73733ae2335` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -31,6 +31,14 @@ Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp Br
 `Organization` (#365group, url `3m.365group.com.vn`, telephone, email) · `Brand` (#3m) · `FAQPage` (4 câu, khớp nguyên văn phần hiển thị) · `WebPage` (publisher/author #365group, about #3m, `dateModified` 2026-10-23, `citation` trang 3M Việt Nam) · `ItemList` 6 `Product` (brand 3M, description = mã phim + bảo hành).
 
 Đã có: `WebSite` (#website, tên "365Group – Nhà phân phối phim cách nhiệt 3M"), `BreadcrumbList` (Trang chủ → Phim cách nhiệt ô tô 3M), `WebPage` @id/url tuyệt đối, Organization @id `https://3m.365group.com.vn/#organization`. Còn thiếu: `Offer` cho Product (chỉ thêm khi có giá theo cấu hình được duyệt).
+
+## 4a. Nguồn chính (23/10/2026)
+
+**Bảng giá & thông số 3M AutoFilm – 365Group, mã 260815** (NAS Marketing/3M AUTOFILM/IN AN/BANG GIA/260815 Bảng Giá 3M.pdf), áp dụng từ 06/2026:
+- 6 cấu hình đúng tên trên bảng: Crystalline CR BLK PRO, Crystalline CR BLK, Crystalline Hybrid Pro, Crystalline Hybrid, **Ceramic Hybrid** (dòng NR – trước ghi "Ceramic NR"), Ceramic IR. Hybrid/Hybrid Pro dùng **NR 25/15/5** cho kính sườn/lưng.
+- 12 mã thông số: CR BLK 15/35/40/50/60, NR 5/15/25/35, IR 15/25/50, đo trên kính ô tô xanh 6 mm (Auto75, VLT 73%). Đã bỏ CR BLK 30/70/80 (bảng cũ 11/2025). Ceramic IR đổi theo bảng: TSER 63/61/54, VLT 16/25/50, UVR 99,9/99,9/99,8 — khớp Auto365, xử lý mục 5.1 phiếu tái kiểm.
+- Bảo hành 10 năm khi đã dán và kích hoạt bảo hành điện tử; giá trọn xe 5,9–18,3 triệu (Ceramic Hybrid minicar → CR BLK PRO SUV).
+- Số đại lý 224 / 32 tỉnh: chủ trang xác nhận 23/10/2026.
 
 ## 4. Dữ liệu & nguồn
 

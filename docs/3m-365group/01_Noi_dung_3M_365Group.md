@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `be3a1641704488d4974b167322c5f99f0b5edcfcfa176947b3442bd92728f9c5`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `94b1ea6345797c346a57079669630d9091cc5130e2e6755e9606b73733ae2335`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -32,13 +32,13 @@ Cân bằng hiệu suất và thẩm mỹ
 ### 3M™ Crystalline CR BLK
 Dòng cao cấp, ưu tiên độ trong khi nhìn
 - Công nghệ quang học Crystalline
-- Loại bỏ hồng ngoại 95–98% tùy mã
+- Loại bỏ hồng ngoại 97–98% tùy mã
 - Màu đen tiệp kính zin, nhìn rõ
 
 ## 6 cấu hình phim cách nhiệt 3M
 Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365Group gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.
 
-### 3M Ceramic NR
+### 3M Ceramic Hybrid
 - Kính lái: NR 35
 - Kính hông/lưng: NR 25/15/5
 - Bảo hành: 10 năm
@@ -50,7 +50,7 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 
 ### Crystalline Hybrid
 - Kính lái: CR BLK 60/50
-- Kính hông/lưng: NR 25/15
+- Kính hông/lưng: NR 25/15/5
 - Bảo hành: 10 năm
 
 ### Crystalline CR BLK
@@ -60,7 +60,7 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 
 ### Hybrid PRO
 - Kính lái: CR BLK 40
-- Kính hông/lưng: NR 25/15
+- Kính hông/lưng: NR 25/15/5
 - Bảo hành: 10 năm
 
 ### CR BLK PRO
@@ -72,13 +72,13 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 
 _Bảng: So sánh 6 cấu hình phim cách nhiệt 3M: mã phim kính lái, kính hông/lưng, TSER kính lái và bảo hành_
 | Cấu hình | Định hướng | Kính lái | Kính hông/lưng | TSER kính lái (≈) | Bảo hành |
-| Ceramic NR | Ưu tiên chi phí | NR 35 | NR 25/15/5 | ~ 51% | 10 năm |
-| Ceramic IR | Cân bằng | IR 50 | IR 25/15 | ~ 47% | 10 năm |
-| Crystalline Hybrid | Kính lái Crystalline | CR BLK 60/50 | NR 25/15 | ~ 54–56% | 10 năm |
+| Ceramic Hybrid | Ưu tiên chi phí | NR 35 | NR 25/15/5 | ~ 51% | 10 năm |
+| Ceramic IR | Cân bằng | IR 50 | IR 25/15 | ~ 54% | 10 năm |
+| Crystalline Hybrid | Kính lái Crystalline | CR BLK 60/50 | NR 25/15/5 | ~ 54–56% | 10 năm |
 | Crystalline CR BLK | Đồng bộ Crystalline | CR BLK 60/50 | CR BLK 35/15 | ~ 54–56% | 10 năm |
-| Hybrid PRO | Kính lái đậm hơn | CR BLK 40 | NR 25/15 | ~ 58% | 10 năm |
+| Hybrid PRO | Kính lái đậm hơn | CR BLK 40 | NR 25/15/5 | ~ 58% | 10 năm |
 | CR BLK PRO | Crystalline toàn xe, kính lái đậm | CR BLK 40 | CR BLK 35/15 | ~ 58% | 10 năm |
-TSER là tổng năng lượng mặt trời bị loại bỏ, đo trên kính lái theo bảng thông số 3M do 365Group công bố (xem bảng dưới); kết quả thực tế phụ thuộc loại kính xe.
+TSER là tổng năng lượng mặt trời bị loại bỏ của mã phim kính lái, theo bảng thông số 3M AutoFilm của 365Group (áp dụng từ 06/2026, đo trên kính xanh 6 mm); kết quả thực tế phụ thuộc loại kính xe.
 
 ## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
 Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
@@ -88,15 +88,15 @@ TSER là tổng năng lượng mặt trời bị loại bỏ, đo trên kính l�
 Hoặc gọi hotline 365Group: 0363 365 365
 
 ## Thông số kỹ thuật các mã phim 3M  `#thong-so`
-CR BLK và Ceramic IR theo bảng thông số 365Group; Ceramic NR theo catalog 3M Ceramic NR Việt Nam 03/2026 (đo trên kính ô tô xanh 6 mm)
+Theo bảng giá và thông số 3M AutoFilm do 365Group phát hành, áp dụng từ 06/2026. Số liệu là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%), chỉ để tham khảo.
 
-_Bảng: Thông số kỹ thuật 15 mã phim 3M Crystalline CR BLK, Ceramic IR và Ceramic NR (TSER, VLT, UVR, giảm lóa, IRR)_
-| Chỉ số | CRBLK 15 | CRBLK 30 | CRBLK 35 | CRBLK 40 | CRBLK 50 | CRBLK 60 | CRBLK 70 | CRBLK 80 | IR15 | IR25 | IR50 | NR35 | NR25 | NR15 | NR5 |
-| TSERTổng năng lượng bị loại bỏ | 64% | 61% | 60% | 58% | 56% | 54% | 51% | 45% | 59% | 57% | 47% | 51% | 59% | 65% | 69% |
-| VLTĐộ xuyên sáng | 14% | 29% | 33% | 41% | 48% | 57% | 64% | 72% | 18% | 30% | 58% | 43% | 29% | 14% | 7% |
-| UVRLoại bỏ tia cực tím | 99.9% | 99.9% | 99.9% | 99.9% | 99.9% | 99.9% | 99.9% | 99.9% | 99% | 99% | 99% | 99% | 99% | 99% | 99% |
-| Glare RTỷ lệ giảm lóa | 81% | 61% | 55% | 44% | 34% | 22% | 13% | 2% | 78% | 65% | 32% | 52% | 68% | 84% | 93% |
-| IRRLoại bỏ tia hồng ngoại | 98% | 98% | 98% | 98% | 98% | 97% | 97% | 95% | 90% | 90% | 83% | 79% | 86% | 86% | 91% |
+_Bảng: Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365Group (áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm, VLT 73%_
+| Chỉ số | CR BLK15 | CR BLK35 | CR BLK40 | CR BLK50 | CR BLK60 | NR5 | NR15 | NR25 | NR35 | IR15 | IR25 | IR50 |
+| TSERTổng năng lượng bị loại bỏ | 64% | 60% | 58% | 56% | 54% | 69% | 65% | 59% | 51% | 63% | 61% | 54% |
+| VLTĐộ xuyên sáng | 14% | 33% | 41% | 48% | 57% | 7% | 14% | 29% | 43% | 16% | 25% | 50% |
+| UVRLoại bỏ tia cực tím | 99.9% | 99.9% | 99.9% | 99.9% | 99.9% | 99% | 99% | 99% | 99% | 99.9% | 99.9% | 99.8% |
+| Glare RTỷ lệ giảm lóa | 81% | 55% | 44% | 34% | 22% | 93% | 84% | 68% | 52% | 78% | 65% | 32% |
+| IRRLoại bỏ tia hồng ngoại | 98% | 98% | 98% | 98% | 97% | 91% | 86% | 86% | 79% | 90% | 90% | 83% |
 - Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.
 - Cửa sổ trời nhỏ giá bằng một ô kính sườn, cửa sổ trời panorama giá bằng một kính lái.
 

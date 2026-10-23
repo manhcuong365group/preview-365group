@@ -40,6 +40,10 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Đối chiếu bảng giá 260815 (23/10/2026)
+
+Đã sửa: tên cấu hình Ceramic NR → **Ceramic Hybrid**; Crystalline Hybrid và Hybrid PRO kính sườn/lưng NR 25/15 → **NR 25/15/5**; Ceramic IR theo bảng mới (TSER IR 50 ~54%); bảng thông số còn 12 mã đúng bảng (bỏ CR BLK 30/70/80); điều kiện đo ghi chung cho cả bảng. Giá trọn xe, bảo hành, ghi chú cửa sổ trời khớp. Không tự cộng điểm.
+
 ## Tự chấm lần 6 (bản 23/10/2026, kiểm duyệt Đặng Minh Hoàng)
 
 | Mã | Lần 5 | Lần 6 | Căn cứ |
@@ -73,10 +77,10 @@ Phiếu tái kiểm ghi điểm tự chấm lần 5 (88,9) chưa phải điểm 
 | 4.3 Thẻ cấu hình 2 cột, chữ 12 px | Đã sửa | ≤480 px 1 cột, chữ 13 px |
 | 4.3 Hero 820–1.024 px | Đã sửa | ≤1.024 px hero 1 cột |
 | 4.3 Breadcrumb nhìn thấy | Đã sửa | Khớp BreadcrumbList |
-| 5.1 Ceramic IR lệch Auto365 (TSER 59/57/47 vs 63/61/54) | **Chờ anh Hoàng/anh Đạo chốt** | Không tự đổi số. Cần xác định tài liệu, revision, nền kính áp dụng |
+| 5.1 Ceramic IR lệch Auto365 | Đã sửa 23/10 | Theo bảng 260815 (áp dụng 06/2026): IR 15/25/50 TSER 63/61/54, VLT 16/25/50, UVR 99,9/99,9/99,8; bảng 12 mã cùng điều kiện đo (kính xanh 6 mm, VLT 73%); IR 50 trong bảng so sánh ~54% |
 | 5.2 Giải thích 6 cấu hình | Đã sửa | Câu ngay dưới tiêu đề 6 cấu hình: là cách phối mã do 365Group giới thiệu, không phải 6 dòng công nghệ; Hybrid/Hybrid PRO là phối CR BLK kính lái + NR kính hông/lưng |
 | 5.3 Bảo hành | Giữ 10 năm (chủ trang xác nhận 22/10) | Có liên kết `/bao-hanh-3m.html` trong FAQ và khối Tài liệu. Còn: văn bản chính sách có mã phim/phạm vi |
-| 5.3 Số đại lý 224/32 vs 160+ | Chờ vận hành | Cần bảng điểm đại lý duyệt, cùng phạm vi/thời điểm |
+| 5.3 Số đại lý 224/32 vs 160+ | Chủ trang chốt 224 (23/10) | Trang 3m.365group.com.vn còn ghi 160+, cần 365Group cập nhật |
 | 6 Title/H1/meta | Đã đổi theo đề xuất | Xem 02 mục 2 |
 | 6 Tên WebSite nhập nhằng | Đã sửa | "365Group – Nhà phân phối phim cách nhiệt 3M"; không dùng sameAs với 3M |
 | 8 Form khi thiếu khu vực | Đã sửa | Tỉnh/thành bắt buộc trước khi gửi. Còn: IT/vận hành thử luồng nhận trên endpoint thật |
@@ -115,7 +119,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `be3a1641704488d4974b167322c5f99f0b5edcfcfa176947b3442bd92728f9c5` |
+| `auto365/3m-365group/index.html` | SHA-256 `94b1ea6345797c346a57079669630d9091cc5130e2e6755e9606b73733ae2335` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
