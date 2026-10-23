@@ -18,6 +18,7 @@
 .bgvf-h1{font-size:clamp(32px,4.2vw,48px);line-height:1.08;font-weight:800;margin:6px 0 4px;letter-spacing:-.5px}
 .bgvf-h1 span{display:block;font-size:.58em;font-weight:500;color:#333;letter-spacing:0;margin-top:6px}.bgvf-h1 span::first-letter{text-transform:uppercase}
 .bgvf-lead{max-width:520px;color:#3b444d;font-size:15px;margin:12px 0 14px}
+.bgvf-qa{max-width:620px;background:#fff;border:1px solid var(--ln);border-left:3px solid var(--r);border-radius:8px;padding:10px 14px;font-size:14px;color:#2b333b;margin:0 0 12px}
 .bgvf-upd{font-size:12.5px;color:#64748b;margin:0 0 14px}.bgvf-upd a{color:inherit;text-decoration:underline}
 .bgvf-trust{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,max-content);gap:8px 22px}
 .bgvf-trust li{position:relative;padding-left:24px;font-size:13.5px;color:#2b333b}
@@ -85,7 +86,7 @@
 .bf-list details[open] summary:after{content:"–"}
 .bf-list p{margin:0 0 14px;font-size:14.5px;color:#3b444d;line-height:1.6}
 /* guides */
-.bgvf-guides{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.bgvf-guides{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
 .bgvf-guide{border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:.2s}
 .bgvf-guide:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
 .bgvf-guide .im{aspect-ratio:16/9;background:#111;overflow:hidden}
@@ -117,6 +118,7 @@
 .bgvf-nd .done a{color:var(--ink);text-decoration:underline}
 .bgvf-nd .go{color:var(--r)!important;font-weight:600;font-size:14px}
 .bgvf-nnote{font-size:13px;color:var(--mu);margin:12px 0 0}
+.bgvf-disc{font-size:12.5px;color:var(--mu);margin:14px 0 0;font-style:italic}
 /* cta */
 .bgvf-cta{background:#12161c url(../vinfast-vf3/hinh/xe-vinfast-vf3.webp) right 6% center/auto 120% no-repeat;border-radius:14px;color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
 .bgvf-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#12161c 45%,rgba(18,22,28,.7) 75%,rgba(18,22,28,.55))}
@@ -155,7 +157,8 @@
   <span class="bgvf-eb">Nâng cấp ánh sáng</span>
   <h1 class="bgvf-h1">Bi gầm VinFast <span>theo từng dòng xe</span></h1>
   <p class="bgvf-lead">Chọn dòng xe VinFast để xem cấu hình, hình ảnh xe thực tế đã lắp tại Auto365 và được tư vấn phương án nâng cấp bi gầm (X-Light, GTR, AES) phù hợp với từng phiên bản.</p>
-  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-10-22">22/10/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-10-22">22/10/2026</time>)</p>
+  <p class="bgvf-qa"><b>Trả lời nhanh:</b> Bi gầm VinFast cần chọn theo đời, phiên bản, vị trí lắp và nhu cầu quan sát vùng gần. Auto365 có trang hồ sơ cho VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0; các xe khác cần kiểm tra trước khi chốt cấu hình. Tổng chi phí được xác nhận theo đèn, phụ kiện, công lắp và VAT trong báo giá.</p>
+  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-10-23">23/10/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-10-22">22/10/2026</time>)</p>
   <ul class="bgvf-trust">
    <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
    <li>Thi công tại 90+ chi nhánh</li><li>Kiểm tra tương thích trước khi lắp</li>
@@ -165,7 +168,7 @@
 </div></section>
 
 <section class="bght-sec" id="dong-xe"><div class="bght-in">
- <div class="bght-head"><div><span class="bgvf-eb">Chọn dòng xe VinFast</span><h2 class="bght-h2"><span id="bgvf-n">18</span> dòng xe. Một hồ sơ riêng.</h2></div><p class="bght-sub">Chọn dòng xe để xem cấu hình bi gầm, hình ảnh thực tế và tư vấn phù hợp.</p></div>
+ <div class="bght-head"><div><span class="bgvf-eb">Tra cứu theo dòng xe</span><h2 class="bght-h2">Chọn dòng xe VinFast</h2><p class="bght-sub"><span id="bgvf-n">18</span> lựa chọn. Sáu dòng đang có trang hồ sơ bi gầm (nhãn “Có hồ sơ”); các dòng còn lại được tư vấn sau khi kiểm tra đời xe, vị trí lắp và hệ thống điện.</p></div></div>
  <div class="bgvf-bar">
   <div class="bgvf-tabs" id="bgvf-tabs" role="tablist"></div>
   <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></label>
@@ -177,26 +180,26 @@
  <div class="bght-head"><div><span class="bgvf-eb">Chọn theo nhu cầu</span><h2 class="bght-h2">Xe VinFast của bạn dùng để làm gì?</h2><p class="bght-sub">Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.</p></div></div>
  <div class="bgvf-need">
   <article class="bgvf-nd"><h3>Xe điện đi phố hằng ngày</h3><p class="who">VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7</p>
-   <ul><li>Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.</li><li>Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.</li><li>Bi gầm đấu nguồn theo giắc zin của đèn gầm, không can thiệp pin cao áp.</li></ul>
+   <ul><li>Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.</li><li>Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.</li><li>Kỹ thuật viên kiểm tra điểm cấp nguồn, dây/giắc theo đời và phiên bản xe; phương án tư vấn không can thiệp hệ thống pin cao áp.</li></ul>
    <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2">VF 3 – GTR G1 Turbo V2</a>, <a href="https://auto365.vn/vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k">VF 6 – F10 Turbo V2 4300K</a>, <a href="https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k">VF 7 – F10 Turbo V2 5500K</a></p>
-   <a class="go" href="vf6/">Xem mẫu lắp được cho VF 6 →</a></article>
+   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6">Xem mẫu lắp được cho VF 6 →</a></article>
   <article class="bgvf-nd"><h3>Xe dịch vụ chạy đêm, đi mưa</h3><p class="who">Limo Green, Nerio Green, Herio Green, Minio Green, EC Van</p>
-   <ul><li>Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường.</li><li>Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.</li><li>Xe chạy nhiều giờ mỗi ngày nên cân chỉnh đường cắt cos sau khi lắp để không gây chói xe đối diện.</li></ul>
+   <ul><li>Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường.</li><li>Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.</li><li>Xe chạy nhiều giờ mỗi ngày nên cân chỉnh đường cắt cos sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.</li></ul>
    <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh">Limo Green 2025 – X-Light F10 New</a>. Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch.</p>
-   <a class="go" href="limo-green/">Xem mẫu lắp được cho Limo Green →</a></article>
+   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green">Xem mẫu lắp được cho Limo Green →</a></article>
   <article class="bgvf-nd"><h3>Dòng đời trước, hay đi tỉnh</h3><p class="who">Fadil, Lux A2.0, Lux SA2.0, President, VF e34</p>
    <ul><li>Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.</li><li>Xe đã dùng vài năm: kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu.</li><li>Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.</li></ul>
    <p class="done">Đã lắp: <a href="https://auto365.vn/vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2">Fadil Premium 2021 – thay cụm LED projector gầm zin bằng X-Light 301 V2</a>, <a href="https://auto365.vn/vinfast-lux-sa20-lap-x-light-f10-turbo-v2-gia-cau-hinh">Lux SA2.0 – X-Light F10 Turbo V2</a></p>
-   <a class="go" href="fadil/">Xem mẫu lắp được cho Fadil →</a></article>
+   <a class="go" href="https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil">Xem mẫu lắp được cho Fadil →</a></article>
  </div>
  <p class="bgvf-nnote">Giá và danh sách mẫu lắp được xem ở trang từng dòng xe; tổng chi phí báo sau khi kỹ thuật viên kiểm tra xe.</p>
 </div></section>
 
 <section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
- <div class="bght-head"><div><span class="bgvf-eb">Hồ sơ thực tế</span><h2 class="bght-h2">Xe VinFast đã lắp bi gầm tại Auto365</h2><p class="bght-sub">Hình ảnh và cấu hình lắp đặt thực tế tại hệ thống Auto365.</p></div><div class="bgvf-nav"><a class="bght-more" href="https://auto365.vn/tin-tuc?q=VinFast">Xem tất cả case</a><button type="button" class="bgvf-arr" data-dir="-1" aria-label="Trước">‹</button><button type="button" class="bgvf-arr" data-dir="1" aria-label="Sau">›</button></div></div>
+ <div class="bght-head"><div><span class="bgvf-eb">Hồ sơ thực tế</span><h2 class="bght-h2">Xe VinFast đã lắp bi gầm tại Auto365</h2><p class="bght-sub">Bài hồ sơ lắp đặt thực tế tại Auto365; mỗi bài nêu cấu hình của chiếc xe trong bài.</p></div><div class="bgvf-nav"><a class="bght-more" href="https://auto365.vn/tin-tuc?q=VinFast">Xem tất cả case</a><button type="button" class="bgvf-arr" data-dir="-1" aria-label="Trước">‹</button><button type="button" class="bgvf-arr" data-dir="1" aria-label="Sau">›</button></div></div>
  <div class="bgvf-cf" id="bgvf-cf"></div>
  <div class="bgvf-rail" id="bgvf-rail"></div>
- <p class="bgvf-fn">* Cấu hình theo xe thực tế; cần kiểm tra trước khi lắp để đảm bảo tương thích và an toàn.</p>
+ <p class="bgvf-fn">* Cấu hình theo xe thực tế trong từng bài; xe khác cần kiểm tra tương thích trước khi lắp.</p>
 </div></section>
 
 <section class="bght-sec" style="padding-top:4px"><div class="bght-in">
@@ -205,8 +208,8 @@
   <p>Mỗi dòng VinFast có hốc đèn gầm, cản trước và hệ thống điện khác nhau, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.</p>
   <ul>
    <li><b>Kích thước hốc đèn:</b> đo hốc gầm zin để chọn bi 2.0, 2.5 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản.</li>
-   <li><b>Nguồn điện:</b> với xe điện, kỹ thuật viên kiểm tra và đấu nguồn theo giắc zin, không can thiệp pin cao áp.</li>
-   <li><b>Đường cắt cos:</b> cân chỉnh trên bảng test sau khi lắp để không gây chói xe đối diện.</li>
+   <li><b>Nguồn điện:</b> kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Không mặc định mọi xe đều có sẵn giắc đèn gầm hoặc dùng chung một phương án đấu nối; phương án tư vấn không can thiệp hệ thống pin cao áp.</li>
+   <li><b>Đường cắt cos:</b> cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.</li>
   </ul>
   <p>Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline <a href="tel:0365365911" style="color:var(--r);font-weight:600">0365 365 911</a> để được tư vấn.</p>
  </div>
@@ -217,7 +220,7 @@
  <ul>
   <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span><div><b>Tư vấn đúng dòng xe</b><p>Đối chiếu phiên bản, cấu hình và nhu cầu sử dụng trước khi chọn mẫu.</p></div></li>
   <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9l2.1 2.1m10 10 2.1 2.1M4.9 19.1 7 17m10-10 2.1-2.1"/></svg></span><div><b>Sản phẩm chính hãng</b><p>Auto365 là đại lý chính hãng X-Light, GTR, AES; có chính sách bảo hành điện tử.</p></div></li>
-  <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><div><b>Thi công chuyên nghiệp</b><p>Kỹ thuật viên kiểm tra xe, đấu nối theo giắc và cân chỉnh trước bàn giao.</p></div></li>
+  <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><div><b>Thi công chuyên nghiệp</b><p>Kỹ thuật viên kiểm tra xe, điểm cấp nguồn, đấu nối và cân chỉnh trước bàn giao.</p></div></li>
   <li><span class="bgvf-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Hệ thống 90+ chi nhánh</b><p>Thuận tiện lắp đặt và bảo hành tại chi nhánh gần nhất trên toàn quốc.</p></div></li>
  </ul>
 </div></div></section>
@@ -225,18 +228,21 @@
 <!-- @branch -->
 
 <section class="bght-sec" id="cam-nang" style="padding-top:4px"><div class="bght-in">
- <div class="bght-head"><div><span class="bgvf-eb">Cẩm nang bi gầm</span><h2 class="bght-h2">Cẩm nang nâng cấp bi gầm</h2></div><a class="bght-more" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to">Xem tất cả</a></div>
+ <div class="bght-head"><div><span class="bgvf-eb">Cẩm nang bi gầm</span><h2 class="bght-h2">Cẩm nang bi gầm cho xe VinFast và xe điện</h2></div><a class="bght-more" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to">Xem tất cả</a></div>
  <div class="bgvf-guides" id="bgvf-guides"></div>
 </div></section>
 
 <section class="bght-sec bght-faq" id="hoi-dap" style="padding-top:4px"><div class="bght-in">
  <h2 class="bght-h2" style="margin-bottom:14px">Câu hỏi thường gặp về bi gầm VinFast</h2>
  <div class="bf-list">
-  <details><summary>Xe điện VinFast lắp bi gầm có ảnh hưởng hệ thống điện không?</summary><p>Bi gầm được đấu vào nguồn đèn gầm theo giắc zin, công suất nhỏ và không can thiệp vào pin cao áp. Kỹ thuật viên kiểm tra nguồn và cân chỉnh trước khi bàn giao xe.</p></details>
+  <details><summary>Xe điện VinFast lắp bi gầm có ảnh hưởng hệ thống điện không?</summary><p>Kỹ thuật viên cần kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Không mặc định mọi xe đều có sẵn giắc đèn gầm hoặc dùng chung một phương án đấu nối. Phương án tư vấn tại Auto365 không bao gồm can thiệp hệ thống pin cao áp.</p></details>
   <details><summary>Dòng VinFast nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?</summary><p>Các dòng đã có hồ sơ gồm VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi khách mang xe đến chi nhánh.</p></details>
   <details><summary>Lắp bi gầm cho xe VinFast mất bao lâu?</summary><p>Thời gian phụ thuộc dòng xe và cấu hình; chủ xe nên liên hệ chi nhánh trước để được hẹn lịch và báo thời gian dự kiến cho xe của mình.</p></details>
-  <details><summary>Lắp bi gầm có bị lỗi khi đăng kiểm không?</summary><p>Bi gầm cần lắp đúng vị trí đèn gầm, có đường cắt cos rõ và được cân chỉnh không gây chói. Chi tiết xem bài Quy định lắp bi gầm ô tô trên auto365.vn.</p></details>
+  <details><summary>Lắp bi gầm có bị lỗi khi đăng kiểm không?</summary><p>Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos rõ; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói. Trước khi lắp, chủ xe nên cùng kỹ thuật viên đối chiếu quy định hiện hành và cấu hình xe thực tế.</p></details>
+  <details><summary>Giá lắp bi gầm VinFast gồm những khoản nào?</summary><p>Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá thiết bị tham khảo xem ở trang từng dòng xe.</p></details>
+  <details><summary>Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?</summary><p>Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Chủ xe tra cứu bảo hành điện tử, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp để được hỗ trợ.</p></details>
  </div>
+ <p class="bgvf-disc">Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công.</p>
 </div></section>
 
 <section class="bght-sec" id="tu-van-ngay" style="padding-top:4px"><div class="bght-in"><div class="bgvf-cta">
@@ -246,22 +252,21 @@
 
 <!-- @lead -->
 </div>
-<aside class="bgvf-ic-chk" id="bgvf-internal-check" hidden aria-label="Kiểm tra nội bộ (chỉ preview)"><div class="bght-in"><b>Kiểm tra nội bộ — chỉ hiện trên preview, xoá khi lên production</b><p><b>Trạng thái: ĐÃ DUYỆT KỸ THUẬT · CHỜ REVIEWER CHẤM V1.8.</b> Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo (22/10/2026). Dòng xe, case, cẩm nang lấy từ trang VinFast con và bài đã đăng trên auto365.vn; ảnh xe Lux A2.0/President lấy từ vinfastauto.com.</p><p>Tự chấm theo Auto365 Quy chuẩn SEO/GEO V1.8 (12 tiêu chí, có U3): xem phiếu đánh giá. Không tự tuyên bố ĐẠT khi chưa có reviewer.</p><p><a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/05_Phieu_duyet_Bi_gam_VinFast.md" target="_blank" rel="noopener">Phiếu duyệt →</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/03_Phieu_danh_gia_Bi_gam_VinFast_V1.8.md" target="_blank" rel="noopener">Phiếu đánh giá</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/02_Huong_dan_CMS_SEO_Bi_gam_VinFast_V1.8.md" target="_blank" rel="noopener">Hướng dẫn CMS/SEO</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/01_Noi_dung_Bi_gam_VinFast.md" target="_blank" rel="noopener">Nội dung + SHA</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/04_Master_Data_Bi_gam_VinFast.csv" target="_blank" rel="noopener">Master data</a></p></div></aside>
+<aside class="bgvf-ic-chk" id="bgvf-internal-check" hidden aria-label="Kiểm tra nội bộ (chỉ preview)"><div class="bght-in"><b>Kiểm tra nội bộ — chỉ hiện trên preview, xoá khi lên production</b><p><b>Trạng thái: REVIEWER 22/10 CHẤM 92,0 — CHƯA ĐẠT · BẢN VÁ 23/10 CHỜ DUYỆT LẠI CÂU KỸ THUẬT VÀ TÁI KIỂM.</b> Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo (22/10/2026); câu nguồn điện, chói, 2 FAQ mới sửa 23/10 chưa duyệt. 3 trang dòng xe Fadil, Limo Green, Lux SA2.0 trên production còn 404 — phải đăng trước khi thay hub. Dòng xe, case, cẩm nang lấy từ trang VinFast con và bài đã đăng trên auto365.vn; ảnh xe Lux A2.0/President lấy từ vinfastauto.com.</p><p>Danh sách bản vá theo phiếu reviewer: xem phiếu đánh giá mục 0. Không tự tuyên bố ĐẠT.</p><p><a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/05_Phieu_duyet_Bi_gam_VinFast.md" target="_blank" rel="noopener">Phiếu duyệt →</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/03_Phieu_danh_gia_Bi_gam_VinFast_V1.8.md" target="_blank" rel="noopener">Phiếu đánh giá</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/02_Huong_dan_CMS_SEO_Bi_gam_VinFast_V1.8.md" target="_blank" rel="noopener">Hướng dẫn CMS/SEO</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/01_Noi_dung_Bi_gam_VinFast.md" target="_blank" rel="noopener">Nội dung + SHA</a> · <a href="https://github.com/manhcuong365group/preview-365group/blob/main/docs/bi-gam-vinfast/04_Master_Data_Bi_gam_VinFast.csv" target="_blank" rel="noopener">Master data</a></p></div></aside>
 <script id="bgvf-internal-check-js">(function(){var h=location.hostname;if(/pages.dev$|^localhost$|^127.0.0.1$/.test(h)){var x=document.getElementById("bgvf-internal-check");if(x)x.hidden=false}})();</script>
 
 <script>
 (function(){
-var H='../theo-hang-xe/hinh/m-',V='../vinfast-vf3/hinh/xe-vinfast-';
+var H='../theo-hang-xe/hinh/m-',V='../vinfast-vf3/hinh/xe-vinfast-',P='https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/';
 // [tên, nhóm, ảnh, link trang dòng xe (preview) hoặc '']
-var M=[['VF 2','ev',H+'vf2.webp',''],['VF 3','ev',H+'vf3.webp','../vinfast-vf3/'],['VF 5','ev',H+'vf5.webp',''],['VF 6','ev',H+'vf6.webp','vf6/'],['VF 7','ev',H+'vf7.webp','vf7/'],['VF 8','ev',H+'vf8.webp',''],['VF 9','ev',H+'vf9.webp',''],['VF MPV 7','ev',H+'vf-mpv-7.webp',''],
-['Minio Green','green',H+'minio-green.webp',''],['Herio Green','green',H+'herio-green.webp',''],['Nerio Green','green',H+'nerio-green.webp',''],['Limo Green','green',H+'limo-green.webp','limo-green/'],['EC Van','green',H+'ec-van.webp',''],
-['VF e34','old',V+'vfe34.jpg',''],['Fadil','old',V+'fadil.webp','fadil/'],['Lux A2.0','old','hinh/xe-vinfast-lux-a20.webp',''],['Lux SA2.0','old',V+'lux-sa20.webp','lux-sa20/'],['President','old','hinh/xe-vinfast-president.webp','']];
+var M=[['VF 2','ev',H+'vf2.webp',''],['VF 3','ev',H+'vf3.webp',P+'vf3'],['VF 5','ev',H+'vf5.webp',''],['VF 6','ev',H+'vf6.webp',P+'vf6'],['VF 7','ev',H+'vf7.webp',P+'vf7'],['VF 8','ev',H+'vf8.webp',''],['VF 9','ev',H+'vf9.webp',''],['VF MPV 7','ev',H+'vf-mpv-7.webp',''],
+['Minio Green','green',H+'minio-green.webp',''],['Herio Green','green',H+'herio-green.webp',''],['Nerio Green','green',H+'nerio-green.webp',''],['Limo Green','green',H+'limo-green.webp',P+'limo-green'],['EC Van','green',H+'ec-van.webp',''],
+['VF e34','old',V+'vfe34.jpg',''],['Fadil','old',V+'fadil.webp',P+'fadil'],['Lux A2.0','old','hinh/xe-vinfast-lux-a20.webp',''],['Lux SA2.0','old',V+'lux-sa20.webp',P+'lux-sa20'],['President','old','hinh/xe-vinfast-president.webp','']];
 var T=[['all','Tất cả'],['ev','Xe điện'],['green','Green / dịch vụ'],['old','Dòng đời trước']];
 // [tiêu đề, mô tả, slug bài trên auto365.vn, ảnh, ngày]
 // [dòng xe, tiêu đề bài, slug bài trên auto365.vn, ảnh, ngày] — theo khối case trên auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3
 var N='https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/';
-var C=[['Fadil','Bi gầm VinFast Fadil: Giá và cấu hình thực tế','bi-gam-vinfast-fadil',N+'bi-gam-vinfast-fadil-1792659066.webp','2026-10-22'],
-['VF 3','VinFast VF3 2025 Plus lắp bi gầm GTR G1 Turbo V2','vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2',N+'vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2-1791872588.webp','2026-10-13'],
+var C=[['VF 3','VinFast VF3 2025 Plus lắp bi gầm GTR G1 Turbo V2','vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2',N+'vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2-1791872588.webp','2026-10-13'],
 ['VF 7','VinFast VF 7 2025 Plus lắp combo Quantum X V2 và F10 Turbo V2','vinfast-vf-7-2025-plus-lap-combo-quantum-x-v2-va-f10-turbo-v2',N+'vinfast-vf-7-2025-plus-lap-combo-quantum-x-v2-va-f10-turbo-v-1791620645.webp','2026-10-10'],
 ['VF 7','VinFast VF 7 Plus 2025 lắp bi gầm X-Light F10 Turbo V2 5500K','vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k',N+'vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k-1791164660.webp','2026-10-05'],
 ['Fadil','VinFast Fadil Premium 2021 lắp bi gầm X-Light 301 V2','vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2',N+'auto365vn-vinfast-fadil-premium-2021-lap-bi-gam-x-light-301-v2-6-img_6ab5fe2fee3135.18253047.webp','2026-09-25'],
@@ -271,15 +276,12 @@ var C=[['Fadil','Bi gầm VinFast Fadil: Giá và cấu hình thực tế','bi-g
 ['VF 6','VinFast VF 6 nâng cấp bi gầm GTR G1 Turbo V2: Giá tham khảo, thông số và quy trình lắp','vinfast-vf-6-nang-cap-bi-gam-gtr-g1-turbo-v2',N+'auto365vn-vinfast-vf-6-nang-cap-bi-gam-gtr-g1-turbo-v2-img_6a619cbf49d1d0.17538316.jpg.webp','2026-07-23'],
 ['Limo Green','VinFast Limo Green nâng cấp bi gầm X-Light F10 2.0 New: Giá, thông số và lưu ý khi lắp đặt','nang-cap-bi-gam-xlight-f10-2-new-cho-vinfast-limo-green',N+'auto365vn-nang-cap-bi-gam-xlight-f10-2-new-cho-vinfast-limo-green-img_6a5b4b9395a0b4.47826233.jpg.webp','2026-07-18'],
 ['VF 6','VinFast VF6 độ bi gầm X-Light F10 Turbo V2: giá, bảo hành và lưu ý xe điện','vinfast-vf6-do-bi-gam-x-light-f10-turbo-v2',N+'auto365_20260706_134641_6a4b4f51ef1fc.jpg.webp','2026-07-06']];
-// cẩm nang: [tiêu đề, slug, ảnh, ngày, phút đọc] — theo khối cẩm nang trên auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3
-var G=[['Bi gầm Toyota Corolla Altis: Giá, cấu hình và lưu ý khi chọn','bi-gam-toyota-corolla-altis',N+'bi-gam-toyota-corolla-altis-7-1792663087.webp','2026-10-22',8],
-['Bi gầm Mazda 6: Cấu hình thực tế và cách chọn theo đời xe','bi-gam-mazda-6',N+'bi-gam-mazda-6-8-1792658473.webp','2026-10-22',11],
-['Bi gầm Toyota Veloz Cross: Giá và cấu hình thực tế','bi-gam-toyota-veloz-cross',N+'bi-gam-toyota-veloz-cross-9-1792654874.webp','2026-10-22',8],
-['Bi gầm Mitsubishi Destinator: Giá và cấu hình thực tế','bi-gam-mitsubishi-destinator',N+'bi-gam-mitsubishi-destinator-1792641283.webp','2026-10-22',12],
-['Bi gầm Hyundai Accent: Cấu hình, giá và lưu ý khi lắp','bi-gam-hyundai-accent',N+'bi-gam-hyundai-accent-10-1792577031.webp','2026-10-21',9],
-['Bi gầm Ford Escape: Giá và cấu hình thực tế','bi-gam-ford-escape',N+'bi-gam-ford-escape-1792575468.webp','2026-10-21',11],
-['Bi gầm Hyundai Santa Fe: Giá và cấu hình thực tế','bi-gam-hyundai-santa-fe',N+'bi-gam-hyundai-santa-fe-1792556944.webp','2026-10-21',13],
-['Bi gầm Mitsubishi Outlander: Giá và cấu hình thực tế','bi-gam-mitsubishi-outlander',N+'bi-gam-mitsubishi-outlander-1792479434.webp','2026-10-20',12]];
+// cẩm nang: [tiêu đề, slug, ảnh, ngày, phút đọc, nhãn] — chọn theo VinFast / xe điện / kỹ thuật vùng sáng
+var G=[['Bi gầm VinFast Fadil: Giá và cấu hình thực tế','bi-gam-vinfast-fadil',N+'bi-gam-vinfast-fadil-1792659066.webp','2026-10-22',11,'Tư vấn dòng xe'],
+['Có nên nâng cấp bi gầm cho ô tô điện? Khi nào cần lắp?','co-nen-nang-cap-bi-gam-cho-o-to-dien','https://auto365.vn/uploads/images/news/auto365vn-co-nen-nang-cap-bi-gam-cho-o-to-dien-img_6a7af57c21db79.91921273.jpg.webp','2026-08-11',21,'Xe điện'],
+['Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?','bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa-img_6a6720427ef082.00335126.jpg.webp','2026-07-27',28,'Vùng sáng'],
+['Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?','hoc-den-gam-nho-nen-chon-bi-gam-nao','https://auto365.vn/uploads/images/news/auto365vn-chon-bi-gam-2-0-inch-nao-img_6a7ed4cea92812.75790267.jpg.webp','2026-08-14',13,'Hốc đèn'],
+['Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra','den-gam-o-to-sang-yeu','https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-sang-yeu-img_6a8951b97ac488.13455452.jpg.webp','2026-08-22',22,'Kiểm tra']];
 var $=function(id){return document.getElementById(id)};
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};
@@ -295,7 +297,7 @@ var fmt=function(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]};
 var cm=[];C.forEach(function(c){if(cm.indexOf(c[0])<0)cm.push(c[0])});
 $('bgvf-cf').innerHTML='<span class="bgvf-cl">Dòng xe:</span><button type="button" class="bgvf-chip on" data-m="">Tất cả</button>'+cm.map(function(m){return '<button type="button" class="bgvf-chip" data-m="'+esc(m)+'">'+esc(m)+'</button>'}).join('');
 $('bgvf-rail').innerHTML=C.map(function(c){return '<a class="bgvf-case" data-m="'+esc(c[0])+'" href="https://auto365.vn/'+c[2]+'"><span class="im"><img src="'+c[3]+'" alt="'+esc(c[1])+'" loading="lazy" width="800" height="450"><span class="tag">✓ Bi gầm</span></span><span class="bd"><h3>VinFast '+esc(c[0])+'</h3><p>'+esc(c[1])+'</p><span class="ft"><time datetime="'+c[4]+'">'+fmt(c[4])+'</time><em>Xem chi tiết lắp đặt →</em></span></span></a>'}).join('');
-$('bgvf-guides').innerHTML=G.map(function(g){return '<a class="bgvf-guide" href="https://auto365.vn/'+g[1]+'"><span class="im"><img src="'+g[2]+'" alt="'+esc(g[0])+'" loading="lazy" width="800" height="450"></span><span class="bd"><span class="mt"><span class="lb">Cẩm nang</span><time datetime="'+g[3]+'">'+fmt(g[3])+'</time><span>'+g[4]+' phút</span></span><span class="rw"><h3>'+esc(g[0])+'</h3><i aria-hidden="true">→</i></span></span></a>'}).join('');
+$('bgvf-guides').innerHTML=G.map(function(g){return '<a class="bgvf-guide" href="https://auto365.vn/'+g[1]+'"><span class="im"><img src="'+g[2]+'" alt="'+esc(g[0])+'" loading="lazy" width="800" height="450"></span><span class="bd"><span class="mt"><span class="lb">'+esc(g[5])+'</span><time datetime="'+g[3]+'">'+fmt(g[3])+'</time><span>'+g[4]+' phút</span></span><span class="rw"><h3>'+esc(g[0])+'</h3><i aria-hidden="true">→</i></span></span></a>'}).join('');
 // lọc
 var k='all';
 function apply(){var q=($('bgvf-q').value||'').trim().toLowerCase().replace(/\s+/g,''),n=0;

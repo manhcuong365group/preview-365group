@@ -34,7 +34,7 @@ const cases = [...doc.querySelectorAll('#bgvf-rail a.bgvf-case')].map((a) => ({
   model: 'VinFast ' + a.dataset.m, title: txt(a.querySelector('p')), url: a.href, date: a.querySelector('time').getAttribute('datetime'),
 }));
 const guides = [...doc.querySelectorAll('#bgvf-guides a.bgvf-guide')].map((a) => ({
-  title: txt(a.querySelector('h3')), url: a.href, date: a.querySelector('time').getAttribute('datetime'),
+  title: txt(a.querySelector('h3')), url: a.href, date: a.querySelector('time').getAttribute('datetime'), label: txt(a.querySelector('.lb')),
 }));
 const faqs = [...doc.querySelectorAll('.bf-list details')].map((d) => ({ q: txt(d.querySelector('summary')), a: txt(d.querySelector('p')) }));
 const qa = doc.querySelector('.bq-box');
@@ -55,24 +55,42 @@ L.push('| Schema | ' + ld['@graph'].map((x) => x['@type'] + (x.numberOfItems ? '
 L.push('| SHA-256 index.html | `' + sha(html) + '` |');
 L.push('| SHA-256 content-src.html | `' + sha(src) + '` |', '');
 L.push('## Sapo', '', txt(doc.querySelector('.bgvf-lead')), '');
+L.push('## Trả lời nhanh', '', txt(doc.querySelector('.bgvf-qa')), '');
+L.push('## Lưới dòng xe — tiêu đề', '', '**' + txt(doc.querySelector('#dong-xe h2')) + '** — ' + txt(doc.querySelector('#dong-xe .bght-sub')), '');
 L.push('## Dòng xe (' + models.length + ')', '', '| Dòng xe | Nhóm | Trạng thái | Trang production |', '|---|---|---|---|');
 models.forEach((m) => L.push(`| ${m.name} | ${m.group} | ${m.status} | ${m.url || '—'} |`));
-L.push('', '## Xe thực tế (' + cases.length + ')', '', '| Dòng xe | Bài | Ngày đăng |', '|---|---|---|');
+L.push('', '## Chọn theo nhu cầu', '', '**' + txt(doc.querySelector('#theo-nhu-cau h2')) + '** — ' + txt(doc.querySelector('#theo-nhu-cau .bght-sub')), '');
+doc.querySelectorAll('#theo-nhu-cau .bgvf-nd').forEach((n) => {
+  L.push('### ' + txt(n.querySelector('h3')), '', '_Dòng xe:_ ' + txt(n.querySelector('.who')), '');
+  n.querySelectorAll('li').forEach((li) => L.push('- ' + txt(li)));
+  L.push('', txt(n.querySelector('.done')) + ' (' + [...n.querySelectorAll('.done a')].map((a) => a.href).join(', ') + ')', '', 'CTA: ' + txt(n.querySelector('.go')) + ' → ' + n.querySelector('.go').href, '');
+});
+L.push(txt(doc.querySelector('.bgvf-nnote')), '');
+L.push('## Xe thực tế (' + cases.length + ' bài)', '', '| Dòng xe | Bài | Ngày đăng |', '|---|---|---|');
 cases.forEach((c) => L.push(`| ${c.model} | [${c.title}](${c.url}) | ${c.date} |`));
 L.push('', '## Trả lời nhanh', '', '**' + txt(qa.querySelector('h2')) + '**', '');
 qa.querySelectorAll('p, li').forEach((x) => L.push((x.tagName === 'LI' ? '- ' : '') + txt(x), ''));
-L.push('## Cẩm nang (' + guides.length + ')', '', '| Bài | Ngày đăng |', '|---|---|');
-guides.forEach((x) => L.push(`| [${x.title}](${x.url}) | ${x.date} |`));
+L.push('## Cẩm nang (' + guides.length + ')', '', '| Bài | Nhãn | Ngày đăng |', '|---|---|---|');
+guides.forEach((x) => L.push(`| [${x.title}](${x.url}) | ${x.label} | ${x.date} |`));
 L.push('', '## FAQ (' + faqs.length + ')', '');
 faqs.forEach((f) => L.push('**' + f.q + '**', '', f.a, ''));
+L.push('_' + txt(doc.querySelector('.bgvf-disc')) + '_', '');
+const form = doc.querySelector('#tu-van form');
+L.push('## CTA và form', '', '- CTA cuối: ' + txt(doc.querySelector('#tu-van-ngay h2')) + ' — nút "Nhận tư vấn ngay" (#tu-van), gọi 0365 365 911');
+L.push('- Form: action `' + form.getAttribute('action') + '`, data-service `' + form.dataset.service + '` (+ " - VinFast [dòng xe]" khi bấm thẻ dòng xe chưa có hồ sơ), data-source-page `' + form.dataset.sourcePage + '`');
+L.push('- Trường: ' + [...form.elements].filter((e) => e.name && e.name !== 'form-honey').map((e) => e.name).join(', ') + '; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED"', '');
+L.push('## Khối chi nhánh — câu nhận diện', '', txt(doc.querySelector('.bght-branch .bght-sub')), '');
 fs.writeFileSync(path.join(out, '01_Noi_dung_Bi_gam_VinFast.md'), L.join('\n'));
 
 // ---- 04 ----
 const csv = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
-const rows = [['content_type', 'model', 'group', 'status', 'title', 'url', 'published', 'image', 'source']];
-models.forEach((m) => rows.push(['model', m.name, m.group, m.status, '', m.url, '', m.img, m.status === 'Có hồ sơ' ? 'trang dòng xe preview' : '']));
-cases.forEach((c) => rows.push(['case', c.model, '', 'đã đăng', c.title, c.url, c.date, '', 'auto365.vn (khối case trang VF3 production)']));
-guides.forEach((x) => rows.push(['guide', '', '', 'đã đăng', x.title, x.url, x.date, '', 'auto365.vn (khối cẩm nang trang VF3 production)']));
+const slug = (x) => x.toLowerCase().replace(/vinfast\s*/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const sku = (t) => (t.match(/(Quantum X V2 và F10 Turbo V2|GTR G1 Turbo V2|F10 Turbo V2(?: \d{4}K)?|F10 2\.0 New|F10 New|301 V2)/) || [])[1] || '';
+const checked = '2026-10-23';
+const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
+models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? 'trang dòng xe (URL production)' : '', checked, m.status === 'Có hồ sơ' && /fadil|limo-green|lux-sa20/.test(m.url) ? 'URL production 404 khi kiểm — phải đăng trước hub' : '']));
+cases.forEach((c) => rows.push(['case', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'case_id nội bộ chưa có — chưa xác nhận các bài cùng dòng xe là xe khác nhau']));
+guides.forEach((x) => rows.push(['guide', x.url.includes('vinfast-fadil') ? 'fadil' : '', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, x.url.includes('bi-gam-vinfast-fadil') ? 'bài tư vấn theo dòng xe, không phải case' : '']));
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_VinFast.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 
 console.log('exported', out, { sha: sha(html).slice(0, 12), models: models.length, cases: cases.length, guides: guides.length, faqs: faqs.length });

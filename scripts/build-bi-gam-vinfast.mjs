@@ -20,7 +20,8 @@ const cut = (start, endRe) => {
   return bght.slice(i, i + m.index + m[0].length);
 };
 const branch = cut('<section class="bght-sec bght-branch"', /\n<\/div><\/section>/)
-  .replace('<h2 class="bght-h2">Hệ thống chi nhánh &amp; tư vấn</h2>', '<span class="bgvf-eb">Hệ thống chi nhánh</span><h2 class="bght-h2">Tìm chi nhánh Auto365 gần bạn</h2>');
+  .replace('<h2 class="bght-h2">Hệ thống chi nhánh &amp; tư vấn</h2>', '<span class="bgvf-eb">Hệ thống chi nhánh</span><h2 class="bght-h2">Tìm chi nhánh Auto365 gần bạn</h2>')
+  .replace('kỹ thuật viên kiểm tra xe và tư vấn cấu hình.</p>', 'kỹ thuật viên kiểm tra xe và tư vấn cấu hình. Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group, là điểm tư vấn, lắp đặt và hỗ trợ bảo hành các dòng đèn X-Light, GTR, AES theo nhu cầu sử dụng thực tế của từng xe.</p>');
 const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s*<\/div><\/section>/)
   .replace(/data-service="[^"]*"/g, 'data-service="Bi gầm VinFast"')
   .replace(/data-source-page="[^"]*"/g, 'data-source-page="Bi gầm VinFast"')
@@ -72,7 +73,7 @@ const schema = {
       { '@type': 'ListItem', position: 4, name: 'VinFast', item: canonical } ] },
     { '@type': 'Organization', '@id': 'https://auto365.vn/#organization', name: 'Auto365', url: 'https://auto365.vn/' },
     itemList('dong-xe', 'Dòng xe VinFast có hồ sơ bi gầm', models),
-    itemList('xe-thuc-te', 'Xe VinFast nâng cấp bi gầm tại Auto365', cases),
+    itemList('xe-thuc-te', 'Bài hồ sơ lắp bi gầm trên xe VinFast tại Auto365', cases),
     { '@type': 'FAQPage', '@id': canonical + '#faq', mainEntity: faqs.map((x) => ({ '@type': 'Question', name: x.q, acceptedAnswer: { '@type': 'Answer', text: x.a } })) },
   ],
 };
@@ -110,5 +111,8 @@ ${shell.slice(mainClose)
   .replace(/<script id="vf3lp-internal-check-js">[\s\S]*?<\/script>\s*/, '')
   .replace(/<(style|script)\b[^>]*>(?:(?!<\/\1>)[\s\S])*vf3lp[\s\S]*?<\/\1>\s*/g, '')}`;
 
-fs.writeFileSync(path.join(dir, 'index.html'), out);
+// nhãn nhu cầu trong form (nội dung + nút nổi): hiển thị có bi gầm, giữ nguyên giá trị gửi API
+const outFixed = out.split('<option selected>Đèn – Bi LED</option>').join('<option value="Đèn – Bi LED" selected>Đèn – Bi gầm, Bi LED</option>');
+if (outFixed === out) throw new Error('priority option not found');
+fs.writeFileSync(path.join(dir, 'index.html'), outFixed);
 console.log('built', path.join(dir, 'index.html'), out.length, { models: models.length, cases: cases.length, faqs: faqs.length });

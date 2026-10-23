@@ -3,12 +3,30 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 — đủ 12 tiêu chí (có U3), thang /100. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-22) |
+| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-23) |
 | Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026; `lastReviewed` 2026-10-22; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
-## 1. Điểm theo tiêu chí
+## 0. Reviewer chấm 22/10/2026 và bản vá 23/10/2026
+
+Reviewer chấm snapshot SHA `1d8380cb…` (22/10/2026 20:54): **92,0/100 — CHƯA ĐẠT** (C 27,4 · SEO 28,0 · GEO 22,6 · U 14,0). Reviewer không công nhận mức tự chấm 95,1 ở mục 1. Điểm mục 1 giữ lại làm lịch sử, **không dùng làm kết luận**.
+
+| Mã | Phiếu reviewer | Đã làm 23/10/2026 | Còn mở |
+|---|---|---|---|
+| P0-1 | Href tương đối (vf6/, ../vinfast-vf3/…) sai khi lên canonical | 6 link trang dòng xe ở thẻ, CTA khối nhu cầu, ItemList đổi sang URL tuyệt đối production; không còn href tương đối trong nội dung. 02 mục 3 map ảnh tương đối + lưu ý header/footer v2 | IT upload ảnh, dùng header/footer production |
+| P0-2 | 3 trang con 404 | Giữ link (phương án 1: đăng trước hub); 02 mục 3 ghi điều kiện phát hành + phương án dự phòng đổi 3 thẻ sang tư vấn | CMS đăng Fadil / Limo Green / Lux SA2.0 |
+| B01 | Trả lời nhanh trước lưới | Đoạn "Trả lời nhanh" trong hero, sau sapo (mẫu reviewer) | — |
+| B02 | H2 lưới dễ hiểu 18 hồ sơ | H2 "Chọn dòng xe VinFast"; dòng phụ "18 lựa chọn. Sáu dòng đang có trang hồ sơ…, các dòng còn lại được tư vấn sau khi kiểm tra…" | — |
+| B03 | Bài tư vấn Fadil bị tính là case | Bỏ `/bi-gam-vinfast-fadil` khỏi khối case và ItemList (11 → 10), chuyển sang cẩm nang nhãn "Tư vấn dòng xe"; ItemList đổi tên "Bài hồ sơ…"; 04 thêm content_type, model_id, case_id (trống — chưa có mã nội bộ), sku_version, checked_at, ghi chú chưa xác nhận trùng xe | case_id nội bộ từ Media nếu có |
+| B04 | Câu giắc zin / tải nhỏ / chói quá rộng | Thay bằng đoạn reviewer đề xuất (kiểm điểm cấp nguồn, tải bổ sung, dây/giắc, bảo vệ mạch theo đời và phiên bản; không mặc định có sẵn giắc; không can thiệp pin cao áp) ở box lưu ý, khối nhu cầu, FAQ, thẻ lý do; chói → "lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói"; bỏ "đảm bảo" ở chú thích case | Anh Đạo duyệt lại câu chữ mới (05) |
+| B05 | Cẩm nang lệch chủ đề | 5 bài: tư vấn Fadil, bi gầm cho ô tô điện, dải sáng rộng / chiếu xa khi mưa, hốc đèn nhỏ 2.0 inch, đèn gầm sáng yếu (đã kiểm 200, đọc tiêu đề) | — |
+| B06 | FAQ chi phí, bảo hành; nguồn quy định; nhãn form | +2 FAQ (khoản chi phí; bảo hành theo mẫu/phiên bản + phiếu bàn giao, không nêu thời hạn chung); FAQ đăng kiểm bỏ câu dẫn bài không có URL production; nhãn hiển thị "Đèn – Bi gầm, Bi LED" (giá trị API giữ nguyên) ở form nội dung + nút nổi; câu nhận diện Trụ Sở Chính ở khối chi nhánh; dòng tham khảo cuối FAQ | Anh Đạo duyệt 2 FAQ mới |
+| B07 | 01 thiếu khối nhu cầu; 02 schema/map | 01 xuất thêm trả lời nhanh, tiêu đề lưới, khối nhu cầu (kèm link), CTA/form, câu chi nhánh, dòng tham khảo; 02 viết lại map production, robots + X-Robots-Tag, cách kiểm schema (không lấy FAQ rich result / RRT làm tiêu chí) | — |
+
+Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng bản SHA mới trong 01. Các câu chữ B04/B06 cần anh Đạo duyệt lại trước khi tái kiểm.
+
+## 1. Điểm theo tiêu chí (tự chấm 22/10 — lịch sử, đã thay bằng mục 0)
 
 | Mã | Tiêu chí | Điểm | Căn cứ | Còn mở |
 |---|---|---:|---|---|
@@ -32,16 +50,16 @@
 
 ## 2. Kết luận
 
-**Tự chấm 95,1/100 — qua cả 3 ngưỡng** (tổng ≥95, SEO 28,6 ≥28,5, GEO 23,8 ≥23,75). Đây là tự chấm của team, **chờ reviewer chấm lại để chốt kết quả**; không tự tuyên bố ĐẠT.
+**CHƯA ĐẠT theo reviewer (92,0/100, 22/10/2026).** Bản vá 23/10 ở mục 0 chờ duyệt kỹ thuật câu chữ mới và reviewer tái kiểm; không tự tuyên bố ĐẠT.
 
 ## 3. Việc cần làm để đạt
 
-| Ưu tiên | Việc | Ảnh hưởng | Ai |
-|---|---|---|---|
-| 1 | Reviewer chấm lại V1.8 | Kết luận | Reviewer |
-| — | Xoá lead test 228 khỏi CRM | Vận hành, không tính điểm | Vận hành |
-
-Bổ sung sau (không tính điểm lượt này): cẩm nang riêng VinFast khi có bài; đăng 3 trang con Fadil / Limo Green / Lux SA2.0 trên production.
+| Ưu tiên | Việc | Ai |
+|---|---|---|
+| 1 | Đăng 3 trang dòng xe Fadil / Limo Green / Lux SA2.0 (hoặc đổi trạng thái 3 thẻ) trước khi thay hub | CMS/IT + SEO |
+| 2 | Duyệt lại câu nguồn điện / chói và 2 FAQ mới | Anh Đạo |
+| 3 | Reviewer tái kiểm bản SHA mới | Reviewer |
+| — | Xoá lead test 228 khỏi CRM | Vận hành |
 
 ## 4. Đã sửa trong lượt chấm này (22/10/2026)
 
