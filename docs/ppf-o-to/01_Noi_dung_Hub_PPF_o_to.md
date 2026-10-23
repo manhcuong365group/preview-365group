@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `06927bfd8a6146856437a1df48b14d4deb218416f857e798d1c5a95487ea8b30`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `6d1f57fa2fb31cbbfecb5688a751d2a2964bf680c240b775c12a117905f33686`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -17,16 +17,32 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 3M PPF và AX Film PPF chính hãng, có bản bóng, mờ và vân carbon cho từng nhu cầu.
 
-- Phim bảo vệ sơn 3M PPF 50 Gloss — từ 38.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: Theo trang sản phẩm · Bảo hành: Lên đến 5 năm — https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son
+- Phim bảo vệ sơn 3M PPF 50 Gloss — từ 38.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Bảo hành: 5 năm — https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son
 - Phim bảo vệ sơn 3M 100 Gloss — từ 69.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 7 năm — https://auto365.vn/phim-bao-ve-son-3m-100-gloss
 - Phim bảo vệ sơn 3M PPF 150 Gloss — từ 85.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil (0.19 mm, phim kèm keo) · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son
 - Phim bảo vệ sơn 3M PPF 200 Gloss — từ 102.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.9 mil · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son
 - AX Film PPF G Series — từ 20.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 2,5 năm — https://auto365.vn/ax-film-ppf-g-series
 - AX PPF K Series Ver 2 — 26.900.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (147 GU) · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-k-series-ver-2
-- AX PPF X Series Ver 2 — từ 45.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (155 GU) · Độ dày: 9.0 mil · Bảo hành: Theo trang sản phẩm — https://auto365.vn/ax-ppf-x-series-ver-2
+- AX PPF X Series Ver 2 — từ 45.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (155 GU) · Độ dày: 9.0 mil — https://auto365.vn/ax-ppf-x-series-ver-2
 - AX Film Clear PPF Carbon Fiber — 80.000.000 đ / toàn xe · gồm VAT · Bề mặt: Vân carbon trong · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-clear-carbon-fiber
 - AX Film Gloss PPF Carbon Fiber — 80.000.000 đ / toàn xe · gồm VAT · Bề mặt: Vân carbon bóng · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-carbon-fiber
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
+
+## Chọn dòng PPF theo thương hiệu  `#thuong-hieu`
+
+So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành và giá dán toàn xe (Sedan, gồm VAT).
+
+**3M PPF**
+
+3M PPF tại Auto365 được nhập qua 365 Group, nhà phân phối chính thức của 3M tại Việt Nam, và thi công tại hệ thống có Auto365 Center được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Bốn mã 3M tăng dần về độ dày, lớp phủ và thời hạn bảo hành.
+
+Phù hợp: Xe mới, xe sang, chủ xe muốn giữ sơn zin lâu dài và cần bảo hành dài.
+
+**AX Film PPF**
+
+AX Film PPF có nhiều dòng từ mức chi phí dễ tiếp cận đến bản bóng cao và vân carbon, giúp chủ xe chọn theo ngân sách và kiểu bề mặt mong muốn. Thông số độ bóng, độ dày và bảo hành ghi theo trang sản phẩm từng dòng.
+
+Phù hợp: Chủ xe muốn bảo vệ sơn với chi phí hợp lý, hoặc muốn đổi sang bề mặt vân carbon.
 
 ## Bảng giá dán PPF toàn xe theo loại xe  `#gia-theo-xe`
 
