@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4b233827f4571bb3088b7c62a6ee8ae4947d72fbdf839963e26b69b53f7a79cb`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `d100b4e0b908209f44b731c63011a49df40edf5dce6dcb6c0a8aca344dfe129c`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -150,11 +150,13 @@ _Hướng xem xét phạm vi dán PPF theo tình huống_
 
 Bảng chỉ để tham khảo, mỗi xe vẫn cần kiểm tra thực tế trước khi chọn phim. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
 
-**Bảng giá dán lẻ AX Film PPF theo vị trí**
+**Bảng giá dán lẻ PPF theo vị trí (AX Film và 3M)**
 
 Không cần dán toàn xe, có thể dán riêng từng vị trí hay va quẹt. Giá dưới đây là mức thấp nhất để tham khảo.
 
-Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. Dán lẻ 3M PPF báo giá riêng.
+Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe.
+
+Giá thấp nhất tham khảo theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, xe Sedan, lập 23/10/2026). Dòng 150 Gloss, 200 Gloss và xe SUV/MPV có giá cao hơn. VAT xác nhận khi chốt báo giá.
 
 **Có nên dán PPF? Lợi ích và giới hạn cần biết**
 
