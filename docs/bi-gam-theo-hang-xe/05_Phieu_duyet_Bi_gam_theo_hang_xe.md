@@ -55,3 +55,4 @@ CRM xác nhận 22/10/2026 (chủ quản): đã nhận lead 223. Còn: xác nh�
 CRM xác nhận 22/10/2026 (chủ quản): lead 223 hiện dòng xe "Lexus RX" — ngữ cảnh xe từ popup → form → CRM đạt. Còn: xoá lead test 223 và 205.
 Đợt 8 (22/10/2026): VF7 production đã đăng (200) → thêm lại link VF7; link VF3/VF6/VF7 đổi sang URL production.
 Đợt 9 (23/10/2026, anh Đạo duyệt — chủ quản xác nhận): hãng có trang bi gầm riêng (VinFast) chỉ giữ 1 câu giới thiệu, nút "Xem trang bi gầm VinFast: giá, mẫu lắp, case →" đặt ngay dưới tên hãng; giữ nguồn + Gợi ý ánh sáng. lastReviewed = 2026-10-23.
+Đợt 10 (23/10/2026, chủ quản yêu cầu): thêm dải logo "Thương hiệu đèn tại Auto365" (8 hãng, như trang VF7) dưới khối Vì sao chọn; thêm bộ lọc "Hãng đèn" (X-Light, GTR, Titan, AES — nhận theo tên sản phẩm trong tiêu đề bài) ở Xe thực tế. Không đổi câu chữ nội dung.
