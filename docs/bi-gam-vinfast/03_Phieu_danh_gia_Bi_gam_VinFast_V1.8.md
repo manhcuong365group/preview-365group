@@ -6,7 +6,7 @@
 | Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-23) |
 | Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026; `lastReviewed` 2026-10-22; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10/2026; `lastReviewed` 2026-10-23; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
 ## 0. Reviewer chấm 22/10/2026 và bản vá 23/10/2026
 
@@ -24,7 +24,7 @@ Reviewer chấm snapshot SHA `1d8380cb…` (22/10/2026 20:54): **92,0/100 — CH
 | B06 | FAQ chi phí, bảo hành; nguồn quy định; nhãn form | +2 FAQ (khoản chi phí; bảo hành theo mẫu/phiên bản + phiếu bàn giao, không nêu thời hạn chung); FAQ đăng kiểm bỏ câu dẫn bài không có URL production; nhãn hiển thị "Đèn – Bi gầm, Bi LED" (giá trị API giữ nguyên) ở form nội dung + nút nổi; câu nhận diện Trụ Sở Chính ở khối chi nhánh; dòng tham khảo cuối FAQ | Anh Đạo duyệt 2 FAQ mới |
 | B07 | 01 thiếu khối nhu cầu; 02 schema/map | 01 xuất thêm trả lời nhanh, tiêu đề lưới, khối nhu cầu (kèm link), CTA/form, câu chi nhánh, dòng tham khảo; 02 viết lại map production, robots + X-Robots-Tag, cách kiểm schema (không lấy FAQ rich result / RRT làm tiêu chí) | — |
 
-Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng bản SHA mới trong 01. Các câu chữ B04/B06 cần anh Đạo duyệt lại trước khi tái kiểm.
+Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng bản SHA mới trong 01. Câu chữ B04/B06, sapo và các thay đổi 23/10 đã được anh Đạo duyệt 23/10/2026.
 
 ## 1. Điểm theo tiêu chí (tự chấm 22/10 — lịch sử, đã thay bằng mục 0)
 
@@ -50,15 +50,14 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 
 ## 2. Kết luận
 
-**CHƯA ĐẠT theo reviewer (92,0/100, 22/10/2026).** Bản vá 23/10 ở mục 0 chờ duyệt kỹ thuật câu chữ mới và reviewer tái kiểm; không tự tuyên bố ĐẠT.
+**CHƯA ĐẠT theo reviewer (92,0/100, 22/10/2026).** Bản vá 23/10 ở mục 0 đã duyệt kỹ thuật 23/10, chờ reviewer tái kiểm; không tự tuyên bố ĐẠT.
 
 ## 3. Việc cần làm để đạt
 
 | Ưu tiên | Việc | Ai |
 |---|---|---|
 | 1 | Đăng 3 trang dòng xe Fadil / Limo Green / Lux SA2.0 (hoặc đổi trạng thái 3 thẻ) trước khi thay hub | CMS/IT + SEO |
-| 2 | Duyệt lại câu nguồn điện / chói và 2 FAQ mới | Anh Đạo |
-| 3 | Reviewer tái kiểm bản SHA mới | Reviewer |
+| 2 | Reviewer tái kiểm bản SHA mới | Reviewer |
 | — | Xoá lead test 228 khỏi CRM | Vận hành |
 
 ## 4. Đã sửa trong lượt chấm này (22/10/2026)

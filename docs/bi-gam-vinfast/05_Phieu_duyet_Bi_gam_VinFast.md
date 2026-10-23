@@ -33,11 +33,11 @@ Chủ quản xác nhận 22/10/2026: anh Nguyễn Quang Đạo đã duyệt kh�
 | CRM | Chủ quản xác nhận 22/10/2026: CRM nhận lead 228, có dòng xe "VinFast VF 8" — ngữ cảnh xe từ thẻ dòng xe → form → CRM đạt |
 | Còn | Xoá lead test 228 khỏi CRM |
 
-## Bản vá 23/10/2026 theo phiếu reviewer — chờ duyệt lại
+## Bản vá 23/10/2026 theo phiếu reviewer — ĐÃ DUYỆT 23/10/2026
 
-Reviewer 22/10/2026 chấm 92,0/100 (chưa đạt) và yêu cầu thu hẹp phạm vi câu kỹ thuật công khai. Câu mới dưới đây **chưa được anh Đạo duyệt**; `lastReviewed` giữ 2026-10-22, byline giữ ngày duyệt cũ.
+Reviewer 22/10/2026 chấm 92,0/100 (chưa đạt) và yêu cầu thu hẹp phạm vi câu kỹ thuật công khai. Chủ quản xác nhận 23/10/2026: anh Nguyễn Quang Đạo đã duyệt toàn bộ câu mới trong bảng dưới. `lastReviewed` = 2026-10-23, byline "Rà soát kỹ thuật" = 23/10/2026. Không còn mục nội dung chờ duyệt.
 
-| Vị trí | Câu cũ (đã duyệt 22/10) | Câu mới (chờ duyệt) |
+| Vị trí | Câu cũ (đã duyệt 22/10) | Câu mới (duyệt 23/10) |
 |---|---|---|
 | Box lưu ý — Nguồn điện | Với xe điện, kỹ thuật viên kiểm tra và đấu nguồn theo giắc zin, không can thiệp pin cao áp. | Kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Không mặc định mọi xe đều có sẵn giắc đèn gầm hoặc dùng chung một phương án đấu nối; phương án tư vấn không can thiệp hệ thống pin cao áp. |
 | Box lưu ý — Đường cắt cos | Cân chỉnh trên bảng test sau khi lắp để không gây chói xe đối diện. | Cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện. |
