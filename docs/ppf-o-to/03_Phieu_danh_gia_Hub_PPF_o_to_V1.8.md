@@ -67,6 +67,17 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 
 **Tổng tự chấm: C 29,1 · S 29,0 · G 24,0 · U 14,2 → 96,3/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,0 ≥ 23,75. Phần bổ sung sau bản duyệt sáng 22/10 (giá dán lẻ, k07, 2 FAQ, quy trình ảnh thật, định nghĩa PPF) đã được anh Đặng Minh Hoàng xem và duyệt ngày 22/10/2026; cần reviewer tái chấm; chưa nghiệm thu Live.
 
+## Xử lý phiếu tái kiểm R3 (23/10/2026)
+
+| Mã | Trạng thái | Việc đã làm |
+|---|---|---|
+| R22-01 | Đã sửa trên preview | Đổi cả 3 href TDS 150 Gloss sang PDF 3M Revision B, 08/2026 (2395418O) và 2 nhãn thành "Revision B, 08/2026"; card 150 Gloss ghi "7.5 mil (0.19 mm, phim kèm keo)", bảo hành 10 năm khớp TDS. Reviewer xác nhận áp dụng Việt Nam |
+| R22-02 | Một phần | Bảng giá dán lẻ lấy từ bảng giá AX Film khách lẻ (tham khảo, gồm VAT) chủ trang cung cấp 22/10, Commercial đã xác nhận 22/10. Card 3M 50 Gloss (độ dày) và AX X Series Ver 2 (bảo hành): PDP chưa công bố số, giữ "Theo trang sản phẩm", không tự điền |
+| R22-03 | Giữ nguyên | Hub dùng NAP 4/4/1/7 và 33 tỉnh theo danh bạ + chứng nhận 3M; khác biệt bài Dân Việt (4/4/3/3, 34 tỉnh) chuyển vận hành xác nhận, không sửa theo báo |
+| R22-04 | Chờ URL | SEO/IT đã chốt; chờ chủ trang gửi URL catalog để gắn "Xem toàn bộ sản phẩm PPF/Wrap" |
+| R22-05 | Một phần | Lead test 228 (22/10) CRM đã nhận; 01–03 cùng SHA bên dưới. Production chưa nghiệm thu |
+| A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
+
 ## Việc còn lại (tăng mức dư, không chặn)
 
 1. Tài liệu kỹ thuật/giấy phân phối AX Film do hãng phát hành (C1, G3).
@@ -80,7 +91,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `8a1ae4d0a51e9f85dbbd74b768e2a3fa92239b5949561a7a7bf5b49d650f7fee` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `4b233827f4571bb3088b7c62a6ee8ae4947d72fbdf839963e26b69b53f7a79cb` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 

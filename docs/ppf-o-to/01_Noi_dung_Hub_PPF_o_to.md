@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8a1ae4d0a51e9f85dbbd74b768e2a3fa92239b5949561a7a7bf5b49d650f7fee`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4b233827f4571bb3088b7c62a6ee8ae4947d72fbdf839963e26b69b53f7a79cb`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (22/10/2026) · Cập nhật 22/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (22/10/2026) · Cập nhật 23/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -19,7 +19,7 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 - Phim bảo vệ sơn 3M PPF 50 Gloss — từ 38.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: Theo trang sản phẩm · Bảo hành: Lên đến 5 năm — https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son
 - Phim bảo vệ sơn 3M 100 Gloss — từ 69.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 7 năm — https://auto365.vn/phim-bao-ve-son-3m-100-gloss
-- Phim bảo vệ sơn 3M PPF 150 Gloss — 85.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil (0.19 mm) · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son
+- Phim bảo vệ sơn 3M PPF 150 Gloss — 85.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil (0.19 mm, phim kèm keo) · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son
 - Phim bảo vệ sơn 3M PPF 200 Gloss — 104.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.9 mil · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son
 - AX Film PPF G Series — từ 20.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 2,5 năm — https://auto365.vn/ax-film-ppf-g-series
 - AX PPF K Series Ver 2 — 26.900.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (147 GU) · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-k-series-ver-2
@@ -113,7 +113,7 @@ PPF khác phủ ceramic ở chỗ có độ dày thật để chịu va chạm n
 - Lớp keo chuyên dụngGiữ phim bám chắc lên sơn, có thể bóc ra khi cần thay
 - Lớp lót bảo vệ (liner)Bảo vệ lớp keo khi vận chuyển, bóc bỏ ngay trước khi dán
 
-Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024).
+Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Revision B, 08/2026).
 
 ## Dán toàn xe hay từng phần?  `#kien-thuc`
 
@@ -191,7 +191,7 @@ _So sánh vật liệu PPF: TPU, TPH và PVC_
 | Bản chất | Polyurethane nhiệt dẻo | Tên gọi thương mại, thành phần tùy nhà sản xuất | Nhựa PVC |
 | Độ dẻo, tự phục hồi, chống ố vàng, độ bền | Khác nhau theo từng dòng phim, kể cả trong cùng một nhóm vật liệu. Xem tài liệu kỹ thuật (TDS) và phiếu bảo hành của đúng sản phẩm. |
 
-Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Rev A, 03/2024)). Mức độ cụ thể khác nhau theo từng dòng phim.
+Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (Technical Data Sheet 3M PPF Series 150 Gloss (Revision B, 08/2026)). Mức độ cụ thể khác nhau theo từng dòng phim.
 
 **Chọn PPF dựa trên những tiêu chí nào?**
 
@@ -342,7 +342,7 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 22/10/2026
+Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 23/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
