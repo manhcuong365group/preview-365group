@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `3af0971d0f0aad20d7f0c00084123e5fd68a3fadb9b8212a5a096ff1e05b1c23`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `ffc17e2934b282c63d7baa9b92b28b4adfedc0acbb8edff100c431e2d8d7b6fa`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
