@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `66c8fc76bc0b18ae12ccdbeb738613e1928495e3bf822ff1812aa75c3cdbe33a`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `dd274f601a2db61eff56f3d0684e473fc3ce345ea6b2c543bc1641de61718e99`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -15,7 +15,9 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 ## Sản phẩm PPF tại Auto365: 3M và AX Film  `#san-pham`
 
-So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành và giá dán toàn xe (Sedan, gồm VAT).
+So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe theo loại xe (gồm VAT) và giá dán lẻ từng vị trí.
+
+Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, Tucson, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9… (loại xe xác nhận khi kiểm tra)
 
 **3M PPF**
 
@@ -23,58 +25,17 @@ So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày
 
 Phù hợp: Xe mới, xe sang, chủ xe muốn giữ sơn zin lâu dài và cần bảo hành dài.
 
+**Giá dán lẻ theo vị trí từ 760.000đ**
+
 **AX Film PPF**
 
 AX Film PPF có nhiều dòng từ mức chi phí dễ tiếp cận đến bản bóng cao và vân carbon, giúp chủ xe chọn theo ngân sách và kiểu bề mặt mong muốn. Thông số độ bóng, độ dày và bảo hành ghi theo trang sản phẩm từng dòng.
 
 Phù hợp: Chủ xe muốn bảo vệ sơn với chi phí hợp lý, hoặc muốn đổi sang bề mặt vân carbon.
 
+**Giá dán lẻ theo vị trí từ 400.000đ**
+
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
-
-## Bảng giá dán PPF toàn xe theo loại xe  `#gia-theo-xe`
-
-Giá dán toàn xe đã gồm VAT, theo trang sản phẩm và bảng giá Auto365. Dán từng vị trí xem mục Bảng giá dán lẻ.
-
-**Xe gầm thấp 4–5 chỗ**
-
-Vios, City, Mazda 3, Camry, BMW 3/5 Series…
-
-Chỉ từ 20.000.000đ
-
-- AX Film PPF G Series20.000.000đ
-- AX PPF X Series Ver 245.000.000đ
-- 3M PPF 50 Gloss38.000.000đ
-- 3M 100 Gloss69.000.000đ
-- 3M PPF 150 Gloss85.000.000đ
-- 3M PPF 200 Gloss102.000.000đ
-
-**SUV / CUV 5–7 chỗ**
-
-CX-5, CR-V, Tucson, VF 6, VF 7, VF 8…
-
-Chỉ từ 22.000.000đ
-
-- AX Film PPF G Series22.000.000đ
-- AX PPF X Series Ver 249.500.000đ
-- 3M PPF 50 Gloss44.000.000đ
-- 3M 100 Gloss76.000.000đ
-- 3M PPF 150 Gloss92.000.000đ
-- 3M PPF 200 Gloss110.000.000đ
-
-**MPV, SUV cỡ lớn 7 chỗ**
-
-Carnival, Innova, Xpander, Fortuner, VF 9…
-
-Chỉ từ 25.000.000đ
-
-- AX Film PPF G Series25.000.000đ
-- AX PPF X Series Ver 254.500.000đ
-- 3M PPF 50 Gloss51.000.000đ
-- 3M 100 Gloss86.000.000đ
-- 3M PPF 150 Gloss102.000.000đ
-- 3M PPF 200 Gloss122.000.000đ
-
-Xe mẫu ở mỗi nhóm chỉ để tham khảo; loại xe và phạm vi panel được xác nhận khi kiểm tra xe. AX K Series Ver 2 (26.900.000đ) và PPF vân carbon (80.000.000đ) có một mức giá, xem trên card sản phẩm.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
@@ -197,14 +158,6 @@ _Hướng xem xét phạm vi dán PPF theo tình huống_
 | Quan tâm bề mặt vân carbon | Xem mẫu thực tế của dòng carbon đang bán |
 
 Bảng chỉ để tham khảo, mỗi xe vẫn cần kiểm tra thực tế trước khi chọn phim. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.
-
-**Bảng giá dán lẻ PPF theo vị trí (AX Film và 3M)**
-
-Không cần dán toàn xe, có thể dán riêng từng vị trí hay va quẹt. Giá dưới đây là mức thấp nhất để tham khảo.
-
-Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe.
-
-Giá thấp nhất tham khảo theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, xe Sedan, lập 23/10/2026). Dòng 150 Gloss, 200 Gloss và xe SUV/MPV có giá cao hơn. VAT xác nhận khi chốt báo giá.
 
 **Có nên dán PPF? Lợi ích và giới hạn cần biết**
 

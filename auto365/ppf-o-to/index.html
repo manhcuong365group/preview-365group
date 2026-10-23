@@ -422,18 +422,6 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 @media(min-width:761px){.tri.tri2>div:last-child{display:flex;flex-direction:column}.tri.tri2 .carbox{flex:1;display:flex;align-items:center}.tri.tri2 .scope{margin-top:10px}}
 @media(max-width:760px){.whyCard>img,.whyCard>.wcCert{flex:1 1 auto;min-height:190px}.whyCard>img{height:0;aspect-ratio:auto}.whyCard>.wcCert{display:flex}.whyCard>.wcCert img{height:100%;object-fit:cover}.whyCard a:last-child{margin-top:0}}
 .axH{font-size:15px;margin:14px 0 8px}.kFull .axH:first-of-type{margin-top:6px}
-.szGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.szCard{position:relative;background:#fff;border:1px solid var(--l);border-radius:12px;padding:20px;display:flex;flex-direction:column}
-.szCard:nth-child(2){border-color:var(--r);box-shadow:0 6px 20px rgba(220,30,40,.08)}
-.szTag{align-self:flex-start;font-size:12px;font-weight:700;color:var(--r);background:#fde8ea;border-radius:999px;padding:3px 10px;margin-bottom:10px}
-.szCard h3{font-size:17px;margin:0 0 4px}.szEx{font-size:13px;color:var(--m);margin:0 0 12px;min-height:2.6em}
-.szFrom{margin:0 0 12px;font-size:14px}.szFrom b{font-size:22px;color:var(--r)}
-.szList{list-style:none;margin:0 0 16px;padding:0;border-top:1px solid var(--l)}
-.szList li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--l);font-size:13.5px}
-.szList a{color:inherit}.szList a:hover{color:var(--r)}.szList b{white-space:nowrap;color:var(--r);font-weight:700}
-.szBtn{margin-top:auto;display:block;text-align:center;padding:11px;border-radius:8px;border:1px solid var(--r);color:var(--r);font-weight:700;font-size:14px}
-.szCard:nth-child(2) .szBtn{background:var(--r);color:#fff}
-@media(max-width:760px){.szGrid{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:86%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.szGrid::-webkit-scrollbar{display:none}.szCard{scroll-snap-align:start;padding:16px}}
 .brB{background:#16181c;border-radius:14px;padding:22px;color:#e9ebee;margin-bottom:18px}
 .brTop{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:24px;align-items:start;padding-bottom:18px;border-bottom:1px solid #2a2d33}
 .brImg img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;border-radius:10px}
@@ -445,6 +433,14 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 .brIt:hover{border-color:var(--r)}.brH{display:flex;justify-content:space-between;gap:10px;align-items:baseline}.brH b{font-size:15px;color:#fff;text-decoration:underline;text-underline-offset:3px}.brH em{font-style:normal;font-weight:700;color:#ff6b73;white-space:nowrap;font-size:14px}
 .brIt small{font-size:12.5px;color:#9aa0a8}.brD{font-size:13.5px;color:#c9ccd2;line-height:1.5}
 @media(max-width:760px){.brB{padding:16px}.brTop{grid-template-columns:1fr;gap:14px}.brTxt h3{font-size:19px}.brItems{grid-template-columns:1fr}}
+.brLe{margin-top:14px;border:1px solid #2a2d33;border-radius:10px;background:#1c1f24}
+.brLe summary{list-style:none;cursor:pointer;padding:12px 16px;font-weight:700;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.brLe summary::-webkit-details-marker{display:none}.brLe summary em{font-style:normal;color:#ff6b73;margin-left:auto}.brLe summary:after{content:"+";color:#ff6b73;font-size:20px;font-weight:400;line-height:1}.brLe[open] summary:after{content:"−"}
+.brLe ul{list-style:none;margin:0;padding:0 16px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:24px}
+.brLe li{display:flex;justify-content:space-between;gap:8px;padding:8px 0;border-top:1px solid #2a2d33;font-size:13.5px;color:#c9ccd2}.brLe li b{color:#fff;white-space:nowrap}
+.brLe p{margin:0;padding:10px 16px 14px;font-size:12.5px;color:#9aa0a8;line-height:1.5}
+@media(max-width:1080px){.brLe ul{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.brLe ul{grid-template-columns:1fr}}
+.brT{font-size:12.5px;color:#f0c35a;font-weight:600}.brCar{font-size:13px;color:var(--m);margin-top:6px}
 </style>
 </head>
 <body>
@@ -477,20 +473,13 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 
 <section id="san-pham">
 <div class="c">
-  <div class="head"><div><h2>Sản phẩm PPF tại Auto365: 3M và AX Film</h2><p>So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành và giá dán toàn xe (Sedan, gồm VAT).</p></div></div>
-  <article class="brB"><div class="brTop"><a class="brImg" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="BMW 530i dán 3M PPF 200 Gloss tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"></a><div class="brTxt"><h3>3M PPF</h3><div class="brTags"><span>Thương hiệu Mỹ</span><span>Bảo hành 5–10 năm</span><span>Từ 38.000.000đ</span></div><p>3M PPF tại Auto365 được nhập qua 365 Group, nhà phân phối chính thức của 3M tại Việt Nam, và thi công tại hệ thống có Auto365 Center được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Bốn mã 3M tăng dần về độ dày, lớp phủ và thời hạn bảo hành.</p><p class="brFit"><b>Phù hợp:</b> Xe mới, xe sang, chủ xe muốn giữ sơn zin lâu dài và cần bảo hành dài.</p></div></div><div class="brItems"><a class="brIt" href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener"><span class="brH"><b>3M PPF 50 Gloss</b><em>từ 38.000.000đ</em></span><small>BH 5 năm</small><span class="brD">Mã 3M chi phí dễ tiếp cận, bề mặt bóng giữ màu sơn gốc.</span></a><a class="brIt" href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener"><span class="brH"><b>3M 100 Gloss</b><em>từ 69.000.000đ</em></span><small>7.5 mil · BH 7 năm</small><span class="brD">Bề mặt bóng, bảo hành dài hơn cho xe dùng nhiều năm.</span></a><a class="brIt" href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener"><span class="brH"><b>3M PPF 150 Gloss</b><em>từ 85.000.000đ</em></span><small>7.5 mil · BH 10 năm</small><span class="brD">Lớp phủ giúp vết xước nhẹ tự mờ khi gặp nhiệt, theo tài liệu kỹ thuật 3M.</span></a><a class="brIt" href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener"><span class="brH"><b>3M PPF 200 Gloss</b><em>từ 102.000.000đ</em></span><small>7.9 mil · BH 10 năm</small><span class="brD">Mã dày nhất trong bốn mã 3M tại Auto365, bảo hành 10 năm.</span></a></div></article>
-  <article class="brB"><div class="brTop"><a class="brImg" href="https://auto365.vn/dan-ax-film-ppf-g-series-cho-ford-ranger" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/dan-ax-film-ppf-g-series-cho-ford-ranger-6.jpg" alt="Ford Ranger hoàn thiện dán AX Film PPF G Series tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"></a><div class="brTxt"><h3>AX Film PPF</h3><div class="brTags"><span>Nhiều phân khúc</span><span>Bóng và vân carbon</span><span>Từ 20.000.000đ</span></div><p>AX Film PPF có nhiều dòng từ mức chi phí dễ tiếp cận đến bản bóng cao và vân carbon, giúp chủ xe chọn theo ngân sách và kiểu bề mặt mong muốn. Thông số độ bóng, độ dày và bảo hành ghi theo trang sản phẩm từng dòng.</p><p class="brFit"><b>Phù hợp:</b> Chủ xe muốn bảo vệ sơn với chi phí hợp lý, hoặc muốn đổi sang bề mặt vân carbon.</p></div></div><div class="brItems"><a class="brIt" href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener"><span class="brH"><b>AX Film PPF G Series</b><em>từ 20.000.000đ</em></span><small>7.5 mil · BH 2,5 năm</small><span class="brD">Mức chi phí thấp nhất trong các dòng PPF tại Auto365, bề mặt bóng.</span></a><a class="brIt" href="https://auto365.vn/ppf-k-series-ver-2" target="_blank" rel="noopener"><span class="brH"><b>AX PPF K Series Ver 2</b><em>từ 26.900.000đ</em></span><small>8.0 mil · BH 5 năm</small><span class="brD">Bề mặt bóng 147 GU, bảo hành 5 năm.</span></a><a class="brIt" href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener"><span class="brH"><b>AX PPF X Series Ver 2</b><em>từ 45.000.000đ</em></span><small>9.0 mil</small><span class="brD">Dày nhất trong các dòng AX trên trang, bề mặt bóng 155 GU.</span></a><a class="brIt" href="https://auto365.vn/ppf-clear-carbon-fiber" target="_blank" rel="noopener"><span class="brH"><b>AX Film PPF vân carbon</b><em>từ 80.000.000đ</em></span><small>8.0 mil · BH 5 năm</small><span class="brD">Bản trong hoặc bóng, tạo hiệu ứng vân carbon trên bề mặt sơn.</span></a></div></article>
+  <div class="head"><div><h2>Sản phẩm PPF tại Auto365: 3M và AX Film</h2><p>So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe theo loại xe (gồm VAT) và giá dán lẻ từng vị trí.</p><p class="brCar"><b>Sedan:</b> Vios, City, Mazda 3, Camry… · <b>SUV:</b> CX-5, CR-V, Tucson, VF 6/7/8… · <b>MPV:</b> Carnival, Innova, Xpander, Fortuner, VF 9… (loại xe xác nhận khi kiểm tra)</p></div></div>
+  <article class="brB"><div class="brTop"><a class="brImg" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="BMW 530i dán 3M PPF 200 Gloss tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"></a><div class="brTxt"><h3>3M PPF</h3><div class="brTags"><span>Thương hiệu Mỹ</span><span>Bảo hành 5–10 năm</span><span>Từ 38.000.000đ</span></div><p>3M PPF tại Auto365 được nhập qua 365 Group, nhà phân phối chính thức của 3M tại Việt Nam, và thi công tại hệ thống có Auto365 Center được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Bốn mã 3M tăng dần về độ dày, lớp phủ và thời hạn bảo hành.</p><p class="brFit"><b>Phù hợp:</b> Xe mới, xe sang, chủ xe muốn giữ sơn zin lâu dài và cần bảo hành dài.</p></div></div><div class="brItems"><a class="brIt" href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener"><span class="brH"><b>3M PPF 50 Gloss</b><em>từ 38.000.000đ</em></span><small>BH 5 năm</small><span class="brT">Sedan 38 · SUV 44 · MPV 51 triệu</span><span class="brD">Mã 3M chi phí dễ tiếp cận, bề mặt bóng giữ màu sơn gốc.</span></a><a class="brIt" href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener"><span class="brH"><b>3M 100 Gloss</b><em>từ 69.000.000đ</em></span><small>7.5 mil · BH 7 năm</small><span class="brT">Sedan 69 · SUV 76 · MPV 86 triệu</span><span class="brD">Bề mặt bóng, bảo hành dài hơn cho xe dùng nhiều năm.</span></a><a class="brIt" href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener"><span class="brH"><b>3M PPF 150 Gloss</b><em>từ 85.000.000đ</em></span><small>7.5 mil · BH 10 năm</small><span class="brT">Sedan 85 · SUV 92 · MPV 102 triệu</span><span class="brD">Lớp phủ giúp vết xước nhẹ tự mờ khi gặp nhiệt, theo tài liệu kỹ thuật 3M.</span></a><a class="brIt" href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener"><span class="brH"><b>3M PPF 200 Gloss</b><em>từ 102.000.000đ</em></span><small>7.9 mil · BH 10 năm</small><span class="brT">Sedan 102 · SUV 110 · MPV 122 triệu</span><span class="brD">Mã dày nhất trong bốn mã 3M tại Auto365, bảo hành 10 năm.</span></a></div><details class="brLe"><summary>Giá dán lẻ theo vị trí <em>từ 760.000đ</em></summary><ul><li><span>Capo</span><b>5.320.000đ</b></li><li><span>Cản trước</span><b>5.320.000đ</b></li><li><span>Cản sau</span><b>5.320.000đ</b></li><li><span>Cốp sau</span><b>3.420.000đ</b></li><li><span>Nóc xe</span><b>5.320.000đ</b></li><li><span>Sườn xe</span><b>7.220.000đ</b></li><li><span>Cửa trước (mỗi bên)</span><b>3.040.000đ</b></li><li><span>Cửa sau (mỗi bên)</span><b>2.660.000đ</b></li><li><span>Má trước (mỗi bên)</span><b>3.040.000đ</b></li><li><span>Đuôi cá</span><b>1.520.000đ</b></li><li><span>Đèn trước / sau (mỗi bên)</span><b>760.000đ</b></li><li><span>Ốp gương (mỗi bên)</span><b>760.000đ</b></li></ul><p>Giá thấp nhất tham khảo theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, xe Sedan, lập 23/10/2026). Dòng 150 Gloss, 200 Gloss và xe SUV/MPV có giá cao hơn. VAT xác nhận khi chốt báo giá.</p></details></article>
+  <article class="brB"><div class="brTop"><a class="brImg" href="https://auto365.vn/dan-ax-film-ppf-g-series-cho-ford-ranger" target="_blank" rel="noopener"><img src="https://auto365.vn/uploads/images/pages/dan-ax-film-ppf-g-series-cho-ford-ranger-6.jpg" alt="Ford Ranger hoàn thiện dán AX Film PPF G Series tại Auto365.vn - Trụ Sở Chính" width="800" height="533" loading="lazy" decoding="async"></a><div class="brTxt"><h3>AX Film PPF</h3><div class="brTags"><span>Nhiều phân khúc</span><span>Bóng và vân carbon</span><span>Từ 20.000.000đ</span></div><p>AX Film PPF có nhiều dòng từ mức chi phí dễ tiếp cận đến bản bóng cao và vân carbon, giúp chủ xe chọn theo ngân sách và kiểu bề mặt mong muốn. Thông số độ bóng, độ dày và bảo hành ghi theo trang sản phẩm từng dòng.</p><p class="brFit"><b>Phù hợp:</b> Chủ xe muốn bảo vệ sơn với chi phí hợp lý, hoặc muốn đổi sang bề mặt vân carbon.</p></div></div><div class="brItems"><a class="brIt" href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener"><span class="brH"><b>AX Film PPF G Series</b><em>từ 20.000.000đ</em></span><small>7.5 mil · BH 2,5 năm</small><span class="brT">Sedan 20 · SUV 22 · MPV 25 triệu</span><span class="brD">Mức chi phí thấp nhất trong các dòng PPF tại Auto365, bề mặt bóng.</span></a><a class="brIt" href="https://auto365.vn/ppf-k-series-ver-2" target="_blank" rel="noopener"><span class="brH"><b>AX PPF K Series Ver 2</b><em>từ 26.900.000đ</em></span><small>8.0 mil · BH 5 năm</small><span class="brT">Một mức giá cho mọi loại xe</span><span class="brD">Bề mặt bóng 147 GU, bảo hành 5 năm.</span></a><a class="brIt" href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener"><span class="brH"><b>AX PPF X Series Ver 2</b><em>từ 45.000.000đ</em></span><small>9.0 mil</small><span class="brT">Sedan 45 · SUV 49,5 · MPV 54,5 triệu</span><span class="brD">Dày nhất trong các dòng AX trên trang, bề mặt bóng 155 GU.</span></a><a class="brIt" href="https://auto365.vn/ppf-clear-carbon-fiber" target="_blank" rel="noopener"><span class="brH"><b>AX Film PPF vân carbon</b><em>từ 80.000.000đ</em></span><small>8.0 mil · BH 5 năm</small><span class="brT">Một mức giá cho mọi loại xe</span><span class="brD">Bản trong hoặc bóng, tạo hiệu ứng vân carbon trên bề mặt sơn.</span></a></div><details class="brLe"><summary>Giá dán lẻ theo vị trí <em>từ 400.000đ</em></summary><ul><li><span>Capo</span><b>2.800.000đ</b></li><li><span>Cản trước</span><b>2.800.000đ</b></li><li><span>Cản sau</span><b>2.800.000đ</b></li><li><span>Cốp sau</span><b>1.800.000đ</b></li><li><span>Nóc xe</span><b>2.800.000đ</b></li><li><span>Sườn xe</span><b>3.800.000đ</b></li><li><span>Cửa trước (mỗi bên)</span><b>1.600.000đ</b></li><li><span>Cửa sau (mỗi bên)</span><b>1.400.000đ</b></li><li><span>Má trước (mỗi bên)</span><b>1.600.000đ</b></li><li><span>Đuôi cá</span><b>800.000đ</b></li><li><span>Đèn trước / sau (mỗi bên)</span><b>400.000đ</b></li><li><span>Ốp gương (mỗi bên)</span><b>400.000đ</b></li></ul><p>Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. </p></details></article>
   <p class="note">Giá niêm yết dán <b>toàn xe</b> theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.</p>
 </div>
 </section>
-<section class="soft" id="gia-theo-xe">
-<div class="c">
-  <div class="head"><div><h2>Bảng giá dán PPF toàn xe theo loại xe</h2><p>Giá dán toàn xe đã gồm VAT, theo trang sản phẩm và bảng giá Auto365. Dán từng vị trí xem mục <a href="#k08">Bảng giá dán lẻ</a>.</p></div></div>
-  <div class="szGrid"><article class="szCard"><span class="szTag">Sedan</span><h3>Xe gầm thấp 4–5 chỗ</h3><p class="szEx">Vios, City, Mazda 3, Camry, BMW 3/5 Series…</p><p class="szFrom">Chỉ từ <b>20.000.000đ</b></p><ul class="szList"><li><a href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener">AX Film PPF G Series</a><b>20.000.000đ</b></li><li><a href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener">AX PPF X Series Ver 2</a><b>45.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 50 Gloss</a><b>38.000.000đ</b></li><li><a href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener">3M 100 Gloss</a><b>69.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 150 Gloss</a><b>85.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 200 Gloss</a><b>102.000.000đ</b></li></ul><a class="szBtn" href="#tu-van">Nhận báo giá cho xe của bạn</a></article><article class="szCard"><span class="szTag">SUV</span><h3>SUV / CUV 5–7 chỗ</h3><p class="szEx">CX-5, CR-V, Tucson, VF 6, VF 7, VF 8…</p><p class="szFrom">Chỉ từ <b>22.000.000đ</b></p><ul class="szList"><li><a href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener">AX Film PPF G Series</a><b>22.000.000đ</b></li><li><a href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener">AX PPF X Series Ver 2</a><b>49.500.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 50 Gloss</a><b>44.000.000đ</b></li><li><a href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener">3M 100 Gloss</a><b>76.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 150 Gloss</a><b>92.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 200 Gloss</a><b>110.000.000đ</b></li></ul><a class="szBtn" href="#tu-van">Nhận báo giá cho xe của bạn</a></article><article class="szCard"><span class="szTag">MPV</span><h3>MPV, SUV cỡ lớn 7 chỗ</h3><p class="szEx">Carnival, Innova, Xpander, Fortuner, VF 9…</p><p class="szFrom">Chỉ từ <b>25.000.000đ</b></p><ul class="szList"><li><a href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener">AX Film PPF G Series</a><b>25.000.000đ</b></li><li><a href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener">AX PPF X Series Ver 2</a><b>54.500.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 50 Gloss</a><b>51.000.000đ</b></li><li><a href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener">3M 100 Gloss</a><b>86.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 150 Gloss</a><b>102.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 200 Gloss</a><b>122.000.000đ</b></li></ul><a class="szBtn" href="#tu-van">Nhận báo giá cho xe của bạn</a></article></div>
-  <p class="note">Xe mẫu ở mỗi nhóm chỉ để tham khảo; loại xe và phạm vi panel được xác nhận khi kiểm tra xe. AX K Series Ver 2 (26.900.000đ) và PPF vân carbon (80.000.000đ) có một mức giá, xem trên card sản phẩm.</p>
-</div>
-</section>
-<section id="cases">
+<section class="soft" id="cases">
 <div class="c">
   <div class="head">
     <div><h2>Xe thực tế dán PPF tại Auto365</h2><p>Mỗi xe đều ghi rõ dòng phim, vị trí dán và hình ảnh thực tế sau khi thi công.</p></div>
@@ -522,7 +511,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 
 
 
-<section class="soft" id="vi-sao">
+<section id="vi-sao">
 <div class="c">
   <div class="head"><div><span class="bar"></span><h2>Vì sao nên dán PPF tại Auto365?</h2></div></div>
   <div class="whyGrid">
@@ -537,7 +526,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="he-thong">
+<section class="soft" id="he-thong">
 <div class="c">
   <div class="sys">
     <div class="sysCard">
@@ -565,7 +554,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
   </div>
 </div>
 </section>
-<section class="soft" id="hinh-anh">
+<section id="hinh-anh">
 <div class="c">
   <div class="head"><div><h2>Hình ảnh thi công PPF tại Auto365</h2><p>Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.</p></div></div>
   <div class="gal3">
@@ -581,7 +570,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="kien-thuc">
+<section class="soft" id="kien-thuc">
 <div class="c tri tri2">
   <div>
     <h2>PPF là gì?</h2>
@@ -620,7 +609,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="quy-trinh">
+<section id="quy-trinh">
 <div class="c">
   <div class="head"><div><h2>Quy trình thi công PPF</h2><p>6 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công tại Auto365, bấm ảnh để xem bài.</p></div></div>
   <ol class="qtGrid">
@@ -633,7 +622,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
   </ol>
 </div>
 </section>
-<section id="kien-thuc-ppf">
+<section class="soft" id="kien-thuc-ppf">
 <div class="c">
   <div class="head"><div><h2>Kiến thức cần nắm trước khi dán PPF</h2><p>PPF bảo vệ tốt hay không phụ thuộc vào vật liệu, cách chọn phim và tay nghề thi công. Dưới đây là những điều chủ xe nên biết.</p></div><a class="more" href="#cam-nang">Đọc cẩm nang →</a></div>
   <div class="xk">
@@ -644,8 +633,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 <tr><th scope="row">Sơn sửa hoặc nền đang có lỗi</th><td>Kiểm tra nền trước khi quyết định dán</td></tr>
 <tr><th scope="row">Quan tâm bề mặt vân carbon</th><td>Xem mẫu thực tế của dòng carbon đang bán</td></tr>
 </tbody></table></div><p class="kNote">Bảng chỉ để tham khảo, mỗi xe vẫn cần kiểm tra thực tế trước khi chọn phim. Giá trên card là giá dán toàn xe; dán từng phần báo giá riêng sau khi kiểm tra xe.</p></div></div></details>
-    <details class="xk-acc kA2 kFull" id="k08"><summary><h3>Bảng giá dán lẻ PPF theo vị trí (AX Film và 3M)</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kBody"><p>Không cần dán toàn xe, có thể dán riêng từng vị trí hay va quẹt. Giá dưới đây là mức thấp nhất để tham khảo.</p><h4 class="axH">AX Film PPF</h4><div class="axGrid"><div class="axIt"><span>Capo</span><b>từ 2.800.000đ</b></div><div class="axIt"><span>Cản trước</span><b>từ 2.800.000đ</b></div><div class="axIt"><span>Cản sau</span><b>từ 2.800.000đ</b></div><div class="axIt"><span>Cốp sau</span><b>từ 1.800.000đ</b></div><div class="axIt"><span>Nóc xe</span><b>từ 2.800.000đ</b></div><div class="axIt"><span>Sườn xe</span><b>từ 3.800.000đ</b></div><div class="axIt"><span>Cửa trước (mỗi bên)</span><b>từ 1.600.000đ</b></div><div class="axIt"><span>Cửa sau (mỗi bên)</span><b>từ 1.400.000đ</b></div><div class="axIt"><span>Má trước (mỗi bên)</span><b>từ 1.600.000đ</b></div><div class="axIt"><span>Đuôi cá</span><b>từ 800.000đ</b></div><div class="axIt"><span>Đèn trước / sau (mỗi bên)</span><b>từ 400.000đ</b></div><div class="axIt"><span>Ốp gương (mỗi bên)</span><b>từ 400.000đ</b></div></div><p class="kNote">Giá thấp nhất tham khảo theo bảng giá AX Film cho khách lẻ (AX G Series, xe Sedan/SUV hạng A–B), đã gồm VAT. Giá thay đổi theo dòng phim và cỡ xe; giá chính xác báo sau khi kiểm tra xe. </p><h4 class="axH">3M PPF</h4><div class="axGrid"><div class="axIt"><span>Capo</span><b>từ 5.320.000đ</b></div><div class="axIt"><span>Cản trước</span><b>từ 5.320.000đ</b></div><div class="axIt"><span>Cản sau</span><b>từ 5.320.000đ</b></div><div class="axIt"><span>Cốp sau</span><b>từ 3.420.000đ</b></div><div class="axIt"><span>Nóc xe</span><b>từ 5.320.000đ</b></div><div class="axIt"><span>Sườn xe</span><b>từ 7.220.000đ</b></div><div class="axIt"><span>Cửa trước (mỗi bên)</span><b>từ 3.040.000đ</b></div><div class="axIt"><span>Cửa sau (mỗi bên)</span><b>từ 2.660.000đ</b></div><div class="axIt"><span>Má trước (mỗi bên)</span><b>từ 3.040.000đ</b></div><div class="axIt"><span>Đuôi cá</span><b>từ 1.520.000đ</b></div><div class="axIt"><span>Đèn trước / sau (mỗi bên)</span><b>từ 760.000đ</b></div><div class="axIt"><span>Ốp gương (mỗi bên)</span><b>từ 760.000đ</b></div></div><p class="kNote">Giá thấp nhất tham khảo theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, xe Sedan, lập 23/10/2026). Dòng 150 Gloss, 200 Gloss và xe SUV/MPV có giá cao hơn. VAT xác nhận khi chốt báo giá.</p></div></div></details>
-<details class="xk-acc kA2" id="k07"><summary><h3>Có nên dán PPF? Lợi ích và giới hạn cần biết</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kMedia"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="BMW 530i sau khi hoàn thiện dán PPF 3M 200 Gloss, nhìn từ góc trước" width="800" height="533" loading="lazy" decoding="async"><figcaption>BMW 530i sau khi hoàn thiện PPF 3M 200 Gloss (<a href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure></div><div class="kBody"><p>PPF là khoản chi không nhỏ, nên cân nhắc cả lợi ích lẫn giới hạn trước khi quyết định.</p>
+    <details class="xk-acc kA2" id="k07"><summary><h3>Có nên dán PPF? Lợi ích và giới hạn cần biết</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kMedia"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-bmw-530i-sau-khi-hoan-thien-ppf-3m-200-gloss-quan-sat-tu-goc-truoc-img_6a6c5a16425e19.63022984.jpg" alt="BMW 530i sau khi hoàn thiện dán PPF 3M 200 Gloss, nhìn từ góc trước" width="800" height="533" loading="lazy" decoding="async"><figcaption>BMW 530i sau khi hoàn thiện PPF 3M 200 Gloss (<a href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure></div><div class="kBody"><p>PPF là khoản chi không nhỏ, nên cân nhắc cả lợi ích lẫn giới hạn trước khi quyết định.</p>
 <p><b>Lợi ích</b></p><ul class="kUl"><li>Chịu thay sơn các vết xước nhẹ, đá dăm văng và va quẹt nhẹ khi đi đường hoặc rửa xe.</li><li>Hạn chế phân chim, nhựa cây, vết côn trùng bám lâu làm loang bề mặt sơn.</li><li>Giữ lớp sơn zin, có lợi khi chủ xe muốn giữ ngoại hình xe lâu dài.</li><li>Có bản bóng giữ màu sơn gốc, bản mờ hoặc vân carbon nếu muốn đổi bề mặt mà không sơn lại.</li></ul>
 <p><b>Giới hạn</b></p><ul class="kUl"><li>Không chống được móp méo hay va chạm mạnh làm biến dạng thân vỏ.</li><li>Kết quả phụ thuộc nhiều vào tay nghề: thi công kém dễ để lại bọt khí, hở mép hoặc lộ đường nối.</li><li>Xe từng sơn dặm chưa đạt độ bám có thể bị kéo sơn khi bóc phim sau này, nên cần kiểm tra trước khi dán.</li><li>Chi phí cao hơn phủ ceramic; vết xước đã có trên sơn sẽ nằm lại dưới phim nếu không xử lý trước.</li></ul>
 <p class="kNote">Ngân sách giới hạn có thể chọn dán các vị trí hay va quẹt trước, xem mục <a href="#k00">Chọn phạm vi dán theo nhu cầu</a>.</p></div></div></details>
@@ -686,7 +674,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="chuyen-gia">
+<section id="chuyen-gia">
 <div class="c">
   <div class="head"><div><h2>Góc chuyên gia</h2><p>Người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.</p></div></div>
   <div class="exGrid">
@@ -713,7 +701,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="so-sanh">
+<section class="soft" id="so-sanh">
 <div class="c">
   <div class="head"><div><h2>PPF, phủ ceramic và dán wrap khác nhau ở đâu?</h2><p>Ba dịch vụ hay bị nhầm với nhau, nhưng mỗi loại giải quyết một nhu cầu riêng.</p></div></div>
   <div class="tbl"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
@@ -730,7 +718,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="cham-soc">
+<section id="cham-soc">
 <div class="c">
   <div class="head"><div><h2>Chăm sóc sau khi dán PPF</h2><p>Vài thói quen nhỏ giúp phim bền, trong và đẹp lâu hơn.</p></div></div>
   <div class="care">
@@ -741,7 +729,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="tu-van">
+<section class="soft" id="tu-van">
 <div class="c">
   <div class="leadWrap">
     <figure class="leadImg"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ppf-duoc-can-chinh-tren-khu-vuc-cua-va-hong-xe-truoc-khi-hoan-thien-be-mat-img_6a8c0992e944c4.64254953.webp" alt="Kỹ thuật viên căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt" width="800" height="533" loading="lazy"><figcaption>Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.</figcaption></figure>
@@ -764,7 +752,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="video">
+<section id="video">
 <div class="c">
   <div class="head"><div><h2>Video thực tế</h2><p>Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả video →</a></div>
   <div class="vids">
@@ -776,7 +764,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="cam-nang">
+<section class="soft" id="cam-nang">
 <div class="c">
   <div class="head"><div><h2>Cẩm nang PPF &amp; Wrap</h2></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả bài viết →</a></div>
   <div class="chipRow" role="group" aria-label="Lọc bài theo chủ đề"><button class="ctab" type="button" data-tag="" aria-pressed="true">Tất cả <em>12</em></button><button class="ctab" type="button" data-tag="Kiến thức" aria-pressed="false">Kiến thức <em>2</em></button><button class="ctab" type="button" data-tag="Trước khi dán" aria-pressed="false">Trước khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Sau khi dán" aria-pressed="false">Sau khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Theo xe" aria-pressed="false">Theo xe <em>2</em></button></div>
@@ -798,7 +786,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="faq">
+<section id="faq">
 <div class="c">
   <div class="head"><div><h2>Câu hỏi thường gặp về dán PPF ô tô</h2></div></div>
   <div class="faq">
@@ -815,7 +803,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="kiem-duyet">
+<section class="soft" id="kiem-duyet">
 <div class="c">
   <div class="rev">
     <div class="box"><span class="ey">Kiểm duyệt kỹ thuật</span><h3 style="margin-top:8px"><a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a></h3><p class="muted" style="margin:0">Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 23/10/2026</p></div>
