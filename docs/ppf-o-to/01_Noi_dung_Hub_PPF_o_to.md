@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `48be40b45a5c15e0c61879f76e3a9e2ec5f4f658e518ed19901ad5c9f4dae4a8`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ac82f559874ed76936a8ff3e8aa72b6568c8e3a59b183cd438210a6cae765084`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -19,7 +19,7 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 - Phim bảo vệ sơn 3M PPF 50 Gloss — từ 38.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: Theo trang sản phẩm · Bảo hành: Lên đến 5 năm — https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son
 - Phim bảo vệ sơn 3M 100 Gloss — từ 69.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 7 năm — https://auto365.vn/phim-bao-ve-son-3m-100-gloss
-- Phim bảo vệ sơn 3M PPF 150 Gloss — 85.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil (0.19 mm, phim kèm keo) · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son
+- Phim bảo vệ sơn 3M PPF 150 Gloss — từ 85.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil (0.19 mm, phim kèm keo) · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son
 - Phim bảo vệ sơn 3M PPF 200 Gloss — từ 102.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.9 mil · Bảo hành: 10 năm — https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son
 - AX Film PPF G Series — từ 20.000.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng · Độ dày: 7.5 mil · Bảo hành: 2,5 năm — https://auto365.vn/ax-film-ppf-g-series
 - AX PPF K Series Ver 2 — 26.900.000 đ / toàn xe · gồm VAT · Bề mặt: Bóng (147 GU) · Độ dày: 8.0 mil · Bảo hành: 5 năm — https://auto365.vn/ppf-k-series-ver-2

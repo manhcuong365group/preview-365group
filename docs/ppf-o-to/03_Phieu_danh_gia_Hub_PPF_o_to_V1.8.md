@@ -76,7 +76,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | R22-03 | Giữ nguyên | Hub dùng NAP 4/4/1/7 và 33 tỉnh theo danh bạ + chứng nhận 3M; khác biệt bài Dân Việt (4/4/3/3, 34 tỉnh) chuyển vận hành xác nhận, không sửa theo báo |
 | R22-04 | Chờ URL | SEO/IT đã chốt; chờ chủ trang gửi URL catalog để gắn "Xem toàn bộ sản phẩm PPF/Wrap" |
 | R22-05 | Một phần | Lead test 228 (22/10) CRM đã nhận; 01–03 cùng SHA bên dưới. Production chưa nghiệm thu |
-| Giá dán lẻ 3M | Đã thêm | k08 thêm nhóm 3M PPF: 12 vị trí giá "từ" theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, Sedan, lập 23/10/2026; file chủ trang gửi). Bảng ghi VAT cần xác nhận khi chốt báo giá → trang ghi đúng như vậy. Chênh lệch cần Commercial xác nhận, chưa sửa: (1) đã sửa theo xác nhận chủ trang 23/10: 3M 200 Gloss toàn xe 102/110/122tr (Sedan/SUV/MPV), card + AggregateOffer + FAQ; (2) địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá khác hub (4/4/1/7, 0365 365 365) |
+| Giá dán lẻ 3M | Đã thêm | k08 thêm nhóm 3M PPF: 12 vị trí giá "từ" theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (3M 50 Gloss, Sedan, lập 23/10/2026; file chủ trang gửi). Bảng ghi VAT cần xác nhận khi chốt báo giá → trang ghi đúng như vậy. Chênh lệch cần Commercial xác nhận, chưa sửa: (1) đã sửa theo xác nhận chủ trang 23/10: 3M 200 Gloss toàn xe 102/110/122tr (Sedan/SUV/MPV), card + AggregateOffer + FAQ; 3M 150 Gloss 85/92/102tr, card + AggregateOffer (chủ trang duyệt 23/10); (2) địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá khác hub (4/4/1/7, 0365 365 365) |
 | A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -92,7 +92,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `48be40b45a5c15e0c61879f76e3a9e2ec5f4f658e518ed19901ad5c9f4dae4a8` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `ac82f559874ed76936a8ff3e8aa72b6568c8e3a59b183cd438210a6cae765084` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
