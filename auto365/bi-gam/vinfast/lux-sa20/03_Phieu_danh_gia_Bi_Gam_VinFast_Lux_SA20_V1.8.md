@@ -1,8 +1,24 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast Lux SA2.0 V1.8
 
-## Bản hiện hành — 22/10/2026 (sau audit 21/10/2026)
+## Bản hiện hành — 23/10/2026 (dùng mục này; các mục khác là lịch sử)
 
-- File: `index.html` · SHA-256 `1e7aa256aa07e163ac78197743d59efceb27bb19dfd2fe9eb119231596765632`
+| Trường | Nội dung |
+|---|---|
+| Trang | Bi gầm VinFast Lux SA2.0 — preview https://preview-365group.pages.dev/bi-gam/vinfast/lux-sa20/ |
+| URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 (chưa đăng — 404 ngày 22/10) |
+| SHA-256 index.html | `d7f3c2f68b9d4bf78870ca1625e9c64854d01d9d1d7b5a2d5d54a154f3c03df8` (cùng mã trong 02/04) |
+| Phạm vi đời/phiên bản | Anh Đạo duyệt, lưu ở phiếu 04; **không công bố trên trang** theo quyết định user 22/10 |
+| Test lead | Chưa test trên trang này (chưa đăng). Test production đã chạy trên VF3/VF6/VF7 (lead #224–226) |
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,7 | 9,7 | 9,7 | 9,7 | 9,7 | 9,7 | 9,7 | 9,6 | 4,8 | 4,8 | 4,8 | 4,6 |
+
+C 29,1 · S 29,1 · G 24,1 · U 14,2 → **96,5/100 — ĐẠT** (12 tiêu chí, có U3, /100). Gốc: tái kiểm R2 22/10 (91,8 + U3 CX). U3 4,6 sau khi đồng bộ 02/03/04 với trang thật; G2 +0,1 do lý do GTR trong popup bỏ nhấn công suất Pha.
+
+## Lịch sử — bản trước (hết hiệu lực)
+
+- File: `index.html` · SHA-256 `d7f3c2f68b9d4bf78870ca1625e9c64854d01d9d1d7b5a2d5d54a154f3c03df8`
 - Chuẩn: V1.8, 12 tiêu chí có U3, /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25.
 - Đã sửa: bỏ phân hạng "SUV cỡ D", viết lại đoạn tổng quan theo vùng quan sát; dữ kiện ca lắp thật (bản Tiêu chuẩn, F10 Turbo V2 5500K, bộ gá rời, relay, cầu chì, có tháo cản và gia công bộ gá — đối chiếu bài case trên auto365.vn) đưa vào thẻ case và khối "Cần lưu ý"; meta/og/twitter description mới; kích thước 129×67×80 mm gắn riêng X-Light F10 Turbo V2; data-note popup "mưa" nói rõ vùng sáng thấp, góc chiếu, căn chỉnh, gợi ý chỉ tham khảo; thẻ cẩm nang ô tô điện chuyển xuống cuối rail; khối kiểm nội bộ cập nhật; dateModified/Cập nhật 22/10/2026.
 - Kiểm tra: JSON-LD parse OK; FAQ hiển thị 6 = FAQPage 6; ItemList 16 = 16 thẻ, URL khớp href thẻ; video vCnfKrscBU4 ghi "GTR G1 Turbo" (không V2).
@@ -19,7 +35,7 @@ Còn trừ: lắp vừa 15 mẫu dựa xác nhận kỹ thuật (chưa có case)
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100 (ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25) |
-| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/lux-sa20/ · canonical https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 |
+| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/lux-sa20/ · canonical https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 |
 | Ngày chấm | 21/10/2026 (chấm trên preview) |
 | Reviewer | Nguyễn Quang Đạo — duyệt 21/10/2026 |
 
@@ -71,7 +87,7 @@ C 28,2 · S 28,7 · G 24,1 · U 14,2 → **95,2/100 — ĐẠT** (SEO ≥28,5, G
 C 28,3 · S 28,8 · G 24,3 · U 14,2 → **95,6/100 — ĐẠT**.
 
 
-## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn và test lead production (12 tiêu chí, có U3, /100)
+## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn (test lead chỉ chạy trên VF3/VF6/VF7; trang này chưa đăng nên chưa test) (12 tiêu chí, có U3, /100)
 
 S3: domain chốt auto365.vn, canonical đã đổi (trang chưa đăng).
 
@@ -84,7 +100,7 @@ C 28,5 · S 28,9 · G 24,4 · U 14,3 → **96,1/100 — ĐẠT**.
 
 ## Chấm lại 22/10/2026 sau khi ghi phạm vi đời/phiên bản (12 tiêu chí, có U3, /100)
 
-- C2/G1/G3: trang ghi rõ phạm vi Lux SA2.0 đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp (anh Đạo duyệt).
+- (HẾT HIỆU LỰC — đoạn phạm vi đã bỏ khỏi trang 22/10) C2/G1/G3: trang ghi rõ phạm vi Lux SA2.0 đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp (anh Đạo duyệt).
 
 | C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
 |---|---|---|---|---|---|---|---|---|---|---|---|

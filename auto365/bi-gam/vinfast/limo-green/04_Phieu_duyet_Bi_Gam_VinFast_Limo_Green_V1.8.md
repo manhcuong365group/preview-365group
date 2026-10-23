@@ -4,7 +4,7 @@
 |---|---|
 | Bản duyệt | `auto365/bi-gam/vinfast/limo-green/index.html` — SHA-256 ở cuối phiếu |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/limo-green/ |
-| URL production dự kiến | https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green |
+| URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green |
 | Dựng từ | Khung trang VF7 (bản 21/10/2026), dựng ngày 21/10/2026 |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 21/10/2026** |
 
@@ -29,7 +29,7 @@
 | Trang đích `../fadil/`, `../lux-sa20/` trong mục "Dòng xe VinFast khác" | Kiểm lại khi các trang này lên preview/production |
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `3f8000a53da9457154bc8a7197e2ebe837e5a3c84e42aa717eab5d5aa94aa459`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `a159aa5e02000b6b44e67f2c1c2ef0eb0d00bdc3b5cf1be3287e4990884d0acd`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Limo Green (22/10/2026)
@@ -65,4 +65,5 @@ Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12
 
 - **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.- Trang chưa đăng trên auto365.vn (404 ngày 22/10) — IT đăng bản preview hiện hành; khi đăng gỡ khối #vf3lp-internal-check, bỏ noindex.
 - **Giá đã duyệt (user 22/10/2026):** X-Light F10 New (2025) 4.300.000đ/bộ — chưa VAT.
-- **Phạm vi đời/phiên bản:** Limo Green các đời từ 2025, mọi phiên bản — anh Nguyễn Quang Đạo duyệt (user chuyển lại 22/10/2026). Đã ghi trên trang trong khối "Khi nào cần kiểm tra xe".
+- **Phạm vi đời/phiên bản:** Limo Green các đời từ 2025, mọi phiên bản — anh Nguyễn Quang Đạo duyệt (user chuyển lại 22/10/2026). Chỉ lưu trong hồ sơ, KHÔNG công bố trên trang (user quyết định bỏ khỏi trang 22/10/2026).
+- 23/10/2026: đổi ~470 href/URL schema từ v2.auto365.vn sang auto365.vn (chỉ các đích đã kiểm trả 200). Còn lại các link v2 trả 301/404 trên auto365.vn và asset js/css — IT map khi đăng. Breadcrumb "Trang chủ" = https://auto365.vn/.

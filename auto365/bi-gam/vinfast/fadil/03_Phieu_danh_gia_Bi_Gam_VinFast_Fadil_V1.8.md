@@ -1,11 +1,27 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast Fadil V1.8
 
-## Bản hiện hành (22/10/2026)
+## Bản hiện hành — 23/10/2026 (dùng mục này; các mục khác là lịch sử)
+
+| Trường | Nội dung |
+|---|---|
+| Trang | Bi gầm VinFast Fadil — preview https://preview-365group.pages.dev/bi-gam/vinfast/fadil/ |
+| URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil (chưa đăng — 404 ngày 22/10) |
+| SHA-256 index.html | `09d962fb1fc03696eb4e0a738b90b866e9a91a3817727c55fa80dd566f896728` (cùng mã trong 02/04) |
+| Phạm vi đời/phiên bản | Anh Đạo duyệt, lưu ở phiếu 04; **không công bố trên trang** theo quyết định user 22/10 |
+| Test lead | Chưa test trên trang này (chưa đăng). Test production đã chạy trên VF3/VF6/VF7 (lead #224–226) |
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,7 | 9,3 | 9,7 | 9,6 | 9,7 | 9,7 | 9,7 | 9,8 | 4,9 | 4,9 | 4,8 | 4,6 |
+
+C 28,7 · S 29,0 · G 24,4 · U 14,3 → **96,4/100 — ĐẠT** (12 tiêu chí, có U3, /100). Phạm vi đời xe chỉ lưu hồ sơ, không công bố trên trang → không tính điểm cộng C2/G1/G3 đã ghi ở mục 22/10 (96,8 hết hiệu lực).
+
+## Lịch sử — bản trước (hết hiệu lực)
 
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| Bản chấm | `index.html` SHA-256 `298266471dfa54188267cbc36f21017a0957e671f836839ab5af796042f66cf1` |
+| Bản chấm | `index.html` SHA-256 `09d962fb1fc03696eb4e0a738b90b866e9a91a3817727c55fa80dd566f896728` |
 | Ngày chấm | 22/10/2026, chấm trên preview, sau audit reviewer 21/10/2026 |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 21/10/2026 (lastReviewed giữ 21/10) |
 
@@ -33,7 +49,7 @@ Sửa theo audit 21/10: nút "Xem tất cả 18 mẫu cho Fadil" mở đủ 18 m
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100 (ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25) |
-| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/fadil/ · canonical https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
+| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/fadil/ · canonical https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
 | Ngày chấm | 21/10/2026 (chấm trên preview) |
 | Reviewer | Nguyễn Quang Đạo — duyệt 21/10/2026 |
 
@@ -82,7 +98,7 @@ C 28,2 · S 28,9 · G 24,0 · U 14,1 → **95,2/100 — ĐẠT**. S3 +0,2 (liên
 C 28,4 · S 28,9 · G 24,3 · U 14,2 → **95,8/100 — ĐẠT**.
 
 
-## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn và test lead production (12 tiêu chí, có U3, /100)
+## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn (test lead chỉ chạy trên VF3/VF6/VF7; trang này chưa đăng nên chưa test) (12 tiêu chí, có U3, /100)
 
 S3: domain chốt auto365.vn, canonical đã đổi (trang chưa đăng). C1: giá F10 Pro, F10 New duyệt 22/10.
 
@@ -95,7 +111,7 @@ C 28,7 · S 29,0 · G 24,4 · U 14,3 → **96,4/100 — ĐẠT**.
 
 ## Chấm lại 22/10/2026 sau khi ghi phạm vi đời/phiên bản (12 tiêu chí, có U3, /100)
 
-- C2/G1/G3: trang ghi rõ phạm vi Fadil đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp (anh Đạo duyệt).
+- (HẾT HIỆU LỰC — đoạn phạm vi đã bỏ khỏi trang 22/10) C2/G1/G3: trang ghi rõ phạm vi Fadil đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp (anh Đạo duyệt).
 
 | C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
 |---|---|---|---|---|---|---|---|---|---|---|---|

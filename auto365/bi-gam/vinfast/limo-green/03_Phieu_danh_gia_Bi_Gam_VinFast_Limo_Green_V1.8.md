@@ -1,10 +1,26 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast Limo Green V1.8
 
+## Bản hiện hành — 23/10/2026 (dùng mục này; các mục khác là lịch sử)
+
+| Trường | Nội dung |
+|---|---|
+| Trang | Bi gầm VinFast Limo Green — preview https://preview-365group.pages.dev/bi-gam/vinfast/limo-green/ |
+| URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green (chưa đăng — 404 ngày 22/10) |
+| SHA-256 index.html | `a159aa5e02000b6b44e67f2c1c2ef0eb0d00bdc3b5cf1be3287e4990884d0acd` (cùng mã trong 02/04) |
+| Phạm vi đời/phiên bản | Anh Đạo duyệt, lưu ở phiếu 04; **không công bố trên trang** theo quyết định user 22/10 |
+| Test lead | Chưa test trên trang này (chưa đăng). Test production đã chạy trên VF3/VF6/VF7 (lead #224–226) |
+
+| C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| 9,7 | 9,3 | 9,5 | 9,8 | 9,6 | 9,4 | 9,5 | 9,7 | 4,8 | 4,8 | 4,7 | 4,6 |
+
+C 28,5 · S 28,8 · G 24,0 · U 14,1 → **95,4/100 — ĐẠT** (12 tiêu chí, có U3, /100). Gốc: tái kiểm R2 22/10 (94,8, U3 4,0). U3 lên 4,6 sau khi đồng bộ 02/03/04 với trang thật. Không cộng C2/G1 cho phạm vi đời xe vì không công bố trên trang.
+
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100 |
 | Ngưỡng đạt | Tổng ≥ 95 · SEO (S1–S3) ≥ 28,5/30 · GEO (G1–G3) ≥ 23,75/25 |
-| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/limo-green/ · canonical https://v2.auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green |
+| URL | Preview https://preview-365group.pages.dev/bi-gam/vinfast/limo-green/ · canonical https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green |
 | Ngày chấm | 21/10/2026 (chấm trên preview) |
 | Reviewer | Nguyễn Quang Đạo — đã duyệt 21/10/2026 |
 | Dựng từ | Khung trang VF7 (bản 21/10/2026) |
@@ -52,7 +68,7 @@ C 28,1 · S 28,5 · G 23,8 · U 14,0 → **94,4/100 — CHƯA ĐẠT** (GEO 23,8
 
 ## Chấm lại 22/10/2026 sau khi thêm phương án lắp riêng Limo Green (12 tiêu chí, có U3, /100)
 
-- LG03: khối "Khi nào cần kiểm tra xe" thêm 1 câu theo bài case F10 New: tháo cản kiểm tra vị trí lắp/bộ gá/điện, Cos hai bên căn cân bằng, chưa ghi nhận cảnh báo điện khi nghiệm thu; xe khác cần kiểm tra trước. Không thêm khung tóm tắt.
+- (HẾT HIỆU LỰC — câu đã bỏ khỏi trang 22/10) LG03: khối "Khi nào cần kiểm tra xe" thêm 1 câu theo bài case F10 New: tháo cản kiểm tra vị trí lắp/bộ gá/điện, Cos hai bên căn cân bằng, chưa ghi nhận cảnh báo điện khi nghiệm thu; xe khác cần kiểm tra trước. Không thêm khung tóm tắt.
 
 | C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -73,7 +89,7 @@ C 28,5 · S 28,5 · G 24,1 · U 14,0 → **95,1/100 — ĐẠT** (sát ngưỡng
 C 28,6 · S 28,5 · G 24,1 · U 14,1 → **95,3/100 — ĐẠT**.
 
 
-## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn và test lead production (12 tiêu chí, có U3, /100)
+## Chấm lại 22/10/2026 — sau khi chốt domain auto365.vn (test lead chỉ chạy trên VF3/VF6/VF7; trang này chưa đăng nên chưa test) (12 tiêu chí, có U3, /100)
 
 S3: domain chốt auto365.vn, canonical/@id/breadcrumb đã đổi (trang chưa đăng). Giá F10 New duyệt 22/10.
 
@@ -86,7 +102,7 @@ C 28,7 · S 28,8 · G 24,1 · U 14,1 → **95,7/100 — ĐẠT**. U2 chưa tối
 
 ## Chấm lại 22/10/2026 sau khi ghi phạm vi đời/phiên bản (12 tiêu chí, có U3, /100)
 
-- C2/G1/G3: trang ghi rõ phạm vi Limo Green các đời từ 2025, mọi phiên bản (anh Đạo duyệt).
+- (HẾT HIỆU LỰC — đoạn phạm vi đã bỏ khỏi trang 22/10) C2/G1/G3: trang ghi rõ phạm vi Limo Green các đời từ 2025, mọi phiên bản (anh Đạo duyệt).
 
 | C1 | C2 | C3 | S1 | S2 | S3 | G1 | G2 | G3 | U1 | U2 | U3 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
