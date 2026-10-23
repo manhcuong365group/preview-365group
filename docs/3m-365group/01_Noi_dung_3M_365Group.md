@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `c23b95e9260e8fdfde53c555e4aba4b368de4bdc6c8d4befbf05e4864a99b265`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d00690a7fba19866740ea55c19d971f984f667fa2e53c7609628a129bc67cd68`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M: Danh mục và thông số từ 365Group
@@ -80,6 +80,13 @@ _Bảng: So sánh 6 cấu hình phim cách nhiệt 3M: mã phim kính lái, kín
 | CR BLK PRO | Crystalline toàn xe, kính lái đậm | CR BLK 40 | CR BLK 35/15 | ~ 58% | 10 năm |
 TSER là tổng năng lượng mặt trời bị loại bỏ, đo trên kính lái theo bảng thông số 3M do 365Group công bố (xem bảng dưới); kết quả thực tế phụ thuộc loại kính xe.
 
+## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
+Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
+- Gợi ý mã phim cho kính lái, kính hông, kính lưng theo nhu cầu
+- Giới thiệu đại lý 3M gần khu vực của bạn
+- Báo giá theo dòng xe tại đại lý
+Hoặc gọi hotline 365Group: 0363 365 365
+
 ## Thông số kỹ thuật các mã phim 3M  `#thong-so`
 CR BLK và Ceramic IR theo bảng thông số 365Group; Ceramic NR theo catalog 3M Ceramic NR Việt Nam 03/2026 (đo trên kính ô tô xanh 6 mm)
 
@@ -137,10 +144,6 @@ Bài thi công đã đăng trên auto365.vn – đại lý trong hệ thống 36
 ### VinFast VF8
 
 ### Volvo XC90
-
-## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
-Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
-Hoặc gọi hotline 365Group: 0363 365 365
 
 ## Vì sao 365Group chọn phân phối phim 3M™
 Những điểm chính theo thông tin từ trang Cá nhân hóa ô tô của 3M Việt Nam
