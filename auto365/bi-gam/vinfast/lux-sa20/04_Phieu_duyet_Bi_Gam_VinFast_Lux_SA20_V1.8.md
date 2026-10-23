@@ -30,7 +30,7 @@
 | Trang `../limo-green/`, `../fadil/` được link trong "Dòng xe VinFast khác" | Kiểm tra đã có trước khi đăng |
 | Xoá khối `#vf3lp-internal-check`; chốt domain; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `d7f3c2f68b9d4bf78870ca1625e9c64854d01d9d1d7b5a2d5d54a154f3c03df8`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `8c854a9c195f94d9b8fca90683ff6589e24324bbbd0308718d3e927e68c8e208`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Lux SA2.0 (22/10/2026)
@@ -66,3 +66,4 @@ Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12
 - **Domain chính thức:** auto365.vn — URL `https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20` (user chốt 22/10). Đã đổi canonical, og:url, @id, breadcrumb trên bản preview sang auto365.vn.- Trang chưa đăng trên auto365.vn (404 ngày 22/10) — IT đăng bản preview hiện hành; khi đăng gỡ khối #vf3lp-internal-check, bỏ noindex.
 - **Phạm vi đời/phiên bản:** Lux SA2.0 đời 2019–2022, bản Tiêu chuẩn / Nâng cao / Cao cấp — anh Nguyễn Quang Đạo duyệt (user chuyển lại 22/10/2026). Chỉ lưu trong hồ sơ, KHÔNG công bố trên trang (user quyết định bỏ khỏi trang 22/10/2026).
 - 23/10/2026: đổi ~470 href/URL schema từ v2.auto365.vn sang auto365.vn (chỉ các đích đã kiểm trả 200). Còn lại các link v2 trả 301/404 trên auto365.vn và asset js/css — IT map khi đăng. Breadcrumb "Trang chủ" = https://auto365.vn/.
+- 23/10/2026: trả menu header chung về bản gốc (mục "VF7" dưới nhóm Xe điện/Ô tô điện và gợi ý tìm kiếm đã bị đổi nhầm thành tên xe khi dựng trang). Lux SA2.0 là xe xăng, không còn xuất hiện trong nhóm xe điện.

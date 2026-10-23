@@ -6,7 +6,7 @@
 |---|---|
 | Trang | Bi gầm VinFast Limo Green — preview https://preview-365group.pages.dev/bi-gam/vinfast/limo-green/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green (chưa đăng — 404 ngày 22/10) |
-| SHA-256 index.html | `a159aa5e02000b6b44e67f2c1c2ef0eb0d00bdc3b5cf1be3287e4990884d0acd` (cùng mã trong 02/04) |
+| SHA-256 index.html | `26478479a61199e7f7b768a0226ce739b2b04b1940586cdba5dc96093b4c9fa7` (cùng mã trong 02/04) |
 | Phạm vi đời/phiên bản | Anh Đạo duyệt, lưu ở phiếu 04; **không công bố trên trang** theo quyết định user 22/10 |
 | Test lead | Chưa test trên trang này (chưa đăng). Test production đã chạy trên VF3/VF6/VF7 (lead #224–226) |
 
