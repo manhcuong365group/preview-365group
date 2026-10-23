@@ -1,7 +1,7 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 6. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 7. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
@@ -39,6 +39,27 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 ## Lần 1 (bản 22/10/2026, SHA dc06ee7b…)
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
+
+## Tự chấm lần 7 (bản 23/10/2026, sau phiếu tái kiểm 22/10 + bảng giá 260815)
+
+| Mã | Tối đa | Lần 6 | Lần 7 | Căn cứ / phần thiếu |
+|---|---:|---:|---:|---|
+| C1 | 10 | 8,8 | 9,4 | Giá, 6 cấu hình, 12 mã thông số, bảo hành, điều kiện đo đều theo bảng 3M AutoFilm 365Group 260815 (06/2026); Ceramic IR đã thống nhất với Auto365; 224 đại lý chủ trang chốt. Còn: site 3m.365group.com.vn ghi 160+; tài liệu chưa có link tải bản PDF có revision |
+| C2 | 10 | 8,2 | 9,0 | Thêm giá trọn xe theo cấu hình, khối Tài liệu & hỗ trợ, hướng dẫn tra cứu bảo hành, tìm đại lý theo khu vực, form. Còn: chưa có case Ceramic IR, chưa có quy trình thi công |
+| C3 | 10 | 9,0 | 9,2 | Câu giải thích 6 cấu hình, FAQ theo nhu cầu, không claim quá |
+| S1 | 10 | 9,0 | 9,3 | URL đích chốt, title/H1/meta theo vai trò tra cứu nhà phân phối, tách vai trò với Auto365 |
+| S2 | 10 | 8,7 | 9,0 | Breadcrumb hiển thị, caption bảng, H1 gọn. Còn: og:image 701 px |
+| S3 | 10 | 9,0 | 9,5 | Hết link 404, menu trỏ trang thật, khối tài liệu link sâu, AggregateOffer 6 cấu hình, tên WebSite đúng chủ thể. Còn: thẻ Pro Shop/Auto365 chung một danh sách; 2 cấu hình trỏ sang auto365.vn |
+| G1 | 10 | 8,6 | 9,0 | Định nghĩa TSER, câu trả lời FAQ trích được. Còn: chưa có mục thuật ngữ VLT/IRR/IRER |
+| G2 | 10 | 9,3 | 9,6 | 12 mã cùng điều kiện đo, bảng so sánh có giá + TSER + bảo hành, bộ lọc theo dòng |
+| G3 | 5 | 4,3 | 4,4 | Kiểm duyệt Đặng Minh Hoàng, nguồn bảng giá chính thức, 4 chứng nhận, 5 case. Còn: case Ceramic IR; hồ sơ người duyệt trên auto365.vn |
+| U1 | 5 | 4,4 | 4,7 | Menu ☰ ≤1.200 px, anchor không bị che, bảng lọc vừa mobile, hero cân lại; render 375/820/1.366 px không tràn. Chưa thử thiết bị thật |
+| U2 | 5 | 4,6 | 4,6 | Form kiểm số/tỉnh/đồng ý, chỉ báo thành công khi success:true; tìm đại lý HCM/HN trang riêng. Còn: endpoint chưa được IT xác nhận, các tỉnh khác chỉ có danh sách chung |
+| U3 | 5 | 5,0 | 5,0 | 01–03 cùng SHA bên dưới |
+
+**Tổng tự chấm lần 7: C 27,6 · S 27,8 · G 23,0 · U 14,3 → 92,7/100. CHƯA ĐẠT V1.8** — SEO 27,8 < 28,5; GEO 23,0 < 23,75.
+
+Để đạt (theo mức ảnh hưởng): case Ceramic IR đã đăng (G3, C2); mục thuật ngữ TSER/VLT/IRR (G1); ảnh og ≥1200 px (S2); trang cấu hình Hybrid/Hybrid PRO trên site 365Group hoặc nhãn rõ khi sang Auto365 (S3); link PDF bảng giá/thông số có revision (C1). Đây là tự chấm, chờ reviewer tái chấm.
 
 ## Đối chiếu bảng giá 260815 (23/10/2026)
 
