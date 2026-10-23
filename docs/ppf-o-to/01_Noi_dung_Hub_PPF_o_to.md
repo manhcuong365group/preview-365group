@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `a2f20725d6cfb86d45c891a3ad8f510dfa04cc75c5384be621932a3025d966b0`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b7215b1e25a4dd138796a98b7c9343dcb3e1de07e8f0ebc5cfe89964b2f1ba69`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -86,25 +86,34 @@ Gợi ý gói phổ biến; giá từ tạm tính theo giá từng vị trí.
 
 **Gói phần đầu xe**
 
-Capo, cản trước, đèn trước, ốp gương
+- Capo
+- Cản trước
+- Đèn trước
+- Ốp gương
 
 Từ 7.200.000đ
 
 **Gói đi cao tốc**
 
-Phần đầu xe thêm má trước hai bên
+- Capo
+- Cản trước
+- Đèn trước
+- Ốp gương
+- Má trước hai bên
 
 Từ 10.400.000đ
 
 **Gói thân xe**
 
-Cửa trước, cửa sau hai bên và cốp sau
+- Cửa trước
+- Cửa sau hai bên
+- Cốp sau
 
 Từ 7.800.000đ
 
 **Gói toàn xe**
 
-Toàn bộ bề mặt sơn ngoại thất theo gói
+- Toàn bộ bề mặt sơn ngoại thất theo gói
 
 Từ 20.000.000đ
 
