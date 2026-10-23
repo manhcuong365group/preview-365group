@@ -58,7 +58,7 @@ L.push('## Sapo (kiêm trả lời nhanh)', '', txt(doc.querySelector('.bgvf-lea
 L.push('## Lưới dòng xe — tiêu đề', '', '**' + txt(doc.querySelector('#dong-xe h2')) + '** — ' + txt(doc.querySelector('#dong-xe .bght-sub')), '');
 L.push('## Dòng xe (' + models.length + ')', '', '| Dòng xe | Nhóm | Trạng thái | Trang production |', '|---|---|---|---|');
 models.forEach((m) => L.push(`| ${m.name} | ${m.group} | ${m.status} | ${m.url || '—'} |`));
-L.push('', '## Chọn theo nhu cầu', '', '**' + txt(doc.querySelector('#theo-nhu-cau h2')) + '** — ' + txt(doc.querySelector('#theo-nhu-cau .bght-sub')), '');
+L.push('', '## Chọn theo nhu cầu (accordion trong box lưu ý)', '', '**' + txt(doc.querySelector('#theo-nhu-cau summary h3')) + '** — ' + txt(doc.querySelector('#theo-nhu-cau .bght-sub')), '');
 doc.querySelectorAll('#theo-nhu-cau .bgvf-nd').forEach((n) => {
   L.push('### ' + txt(n.querySelector('h3')), '', '_Dòng xe:_ ' + txt(n.querySelector('.who')), '');
   n.querySelectorAll('li').forEach((li) => L.push('- ' + txt(li)));

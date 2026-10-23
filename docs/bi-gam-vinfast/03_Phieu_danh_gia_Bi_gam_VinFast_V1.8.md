@@ -39,7 +39,7 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | S3 | Liên kết và hồ sơ triển khai | 9,5/10 | 25 link auto365.vn kiểm 22/10 = 200; sửa link 404 `/xe-thuc-te`; liên kết xuống 6 trang dòng xe | 3 trang con production đăng sau (không trừ điểm, CMS xử lý theo 02 mục 6) |
 | **S** | | **28,6/30** | | Đạt ngưỡng 28,5 |
 | G1 | Câu trả lời rõ, đủ ngữ cảnh | 9,4/10 | Box "Xe VinFast lắp bi gầm cần lưu ý gì?" trả lời thẳng; FAQ xe điện, đăng kiểm, thời gian + khối chọn theo nhu cầu trả lời "khi nào chưa cần lắp" cho từng nhóm xe | — |
-| G2 | Lập luận phục vụ nhu cầu | 9,6/10 | Khối "Xe VinFast của bạn dùng để làm gì?": 3 nhóm (xe điện đi phố / xe dịch vụ chạy đêm, đi mưa / dòng đời trước, đi tỉnh), mỗi nhóm có khi nào chưa cần lắp, nên ưu tiên gì, xe đã lắp thật và link trang dòng xe; câu chữ theo phần tư vấn nhu cầu đã duyệt ở các trang dòng xe ; anh Đạo duyệt bổ sung 22/10/2026 | — |
+| G2 | Lập luận phục vụ nhu cầu | 9,6/10 | Khối "Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng" (trước là "Xe VinFast của bạn dùng để làm gì?"): 3 nhóm (xe điện đi phố / xe dịch vụ chạy đêm, đi mưa / dòng đời trước, đi tỉnh), mỗi nhóm có khi nào chưa cần lắp, nên ưu tiên gì, xe đã lắp thật và link trang dòng xe; câu chữ theo phần tư vấn nhu cầu đã duyệt ở các trang dòng xe ; anh Đạo duyệt bổ sung 22/10/2026 | — |
 | G3 | Nguồn và truy nguyên | 4,8/5 | Mỗi case link bài gốc có ngày; nguồn ảnh ghi trong 02; 04 lưu URL từng dòng; người duyệt đứng tên + ngày trên trang | — |
 | **G** | | **23,8/25** | | Đạt ngưỡng 23,75 |
 | U1 | Cấu trúc dễ đọc | 4,6/5 | Hero → dòng xe → case → lưu ý → lý do → chi nhánh → cẩm nang → FAQ → CTA → form; mobile 375px không tràn ngang, lưới dòng xe 2 hàng vuốt ngang | — |
@@ -76,3 +76,5 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | CRM | Chủ quản xác nhận lead 228 có dòng xe "VinFast VF 8" (22/10/2026) |
 | Lọc case theo hãng đèn | Hàng lọc thứ 2 "Hãng đèn" (X-Light / GTR, suy từ tên đèn trong tiêu đề bài), kết hợp với lọc dòng xe |
 | Khối nhu cầu | Chuyển xuống sau khối bài hồ sơ; 3 nhóm thành accordion đóng sẵn (nội dung vẫn trong HTML) |
+| Khối nhu cầu (23/10) | Cả khối là 1 accordion đóng sẵn, 3 nhóm bên trong hiện đầy đủ; đổi tiêu đề "Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng"; bỏ dòng phụ dưới H2 lưới dòng xe và dưới H2 khối case; sapo viết lại tự nhiên hơn |
+| Khối nhu cầu (23/10, lượt 2) | Gộp vào box "Xe VinFast lắp bi gầm cần lưu ý gì?" thành accordion "Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng" đóng sẵn ở cuối box |

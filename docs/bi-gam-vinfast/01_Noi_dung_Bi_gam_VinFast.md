@@ -11,16 +11,16 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-23 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `185273ca9a5d055a93efe1dbdc8ec1a7f2c048a80c18ef2051b651d1bcc2a156` |
-| SHA-256 content-src.html | `de56c32408820fcc2d28bc3e383bb11ff58e949c8043e0a69005886c5084d638` |
+| SHA-256 index.html | `5aaef4fe4330c1a53f986ac72b677d75cb0c18eb79bfac19d2312ead2126ccad` |
+| SHA-256 content-src.html | `2ba09edb34b6e2d3aa93d12bfa3ac81bbe114fde86da543ff8e91908ed0f2aa3` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm VinFast cần chọn theo đời, phiên bản và vị trí lắp. Auto365 có trang hồ sơ cho VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0 (X-Light, GTR, AES); xe khác được kiểm tra trước khi chốt cấu hình. Chi phí xác nhận theo đèn, phụ kiện, công lắp và VAT trong báo giá.
+Chọn dòng xe VinFast để xem mẫu bi gầm X-Light, GTR, AES đã lắp thực tế tại Auto365 và phương án phù hợp với từng đời, phiên bản. Với dòng xe chưa có hồ sơ, kỹ thuật viên kiểm tra xe trước rồi mới báo cấu hình và chi phí.
 
 ## Lưới dòng xe — tiêu đề
 
-**Chọn dòng xe VinFast** — 18 lựa chọn. Sáu dòng đang có trang hồ sơ bi gầm (nhãn “Có hồ sơ”); các dòng còn lại được tư vấn sau khi kiểm tra đời xe, vị trí lắp và hệ thống điện.
+**Chọn dòng xe VinFast** — 
 
 ## Dòng xe (18)
 
@@ -45,9 +45,9 @@ Bi gầm VinFast cần chọn theo đời, phiên bản và vị trí lắp. Aut
 | VinFast Lux SA2.0 | Dòng đời trước | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 |
 | VinFast President | Dòng đời trước | Liên hệ tư vấn | — |
 
-## Chọn theo nhu cầu
+## Chọn theo nhu cầu (accordion trong box lưu ý)
 
-**Xe VinFast của bạn dùng để làm gì?** — Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.
+**Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng** — Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.
 
 ### Xe điện đi phố hằng ngày
 
@@ -115,6 +115,40 @@ Mỗi dòng VinFast có hốc đèn gầm, cản trước và hệ thống đi�
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
+
+Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.
+
+VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7
+
+- Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
+
+- Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.
+
+- Kỹ thuật viên kiểm tra điểm cấp nguồn, dây/giắc theo đời và phiên bản xe; phương án tư vấn không can thiệp hệ thống pin cao áp.
+
+Đã lắp: VF 3 – GTR G1 Turbo V2, VF 6 – F10 Turbo V2 4300K, VF 7 – F10 Turbo V2 5500K
+
+Limo Green, Nerio Green, Herio Green, Minio Green, EC Van
+
+- Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường.
+
+- Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
+
+- Xe chạy nhiều giờ mỗi ngày nên cân chỉnh đường cắt cos sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
+
+Đã lắp: Limo Green 2025 – X-Light F10 New. Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch.
+
+Fadil, Lux A2.0, Lux SA2.0, President, VF e34
+
+- Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.
+
+- Xe đã dùng vài năm: kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu.
+
+- Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.
+
+Đã lắp: Fadil Premium 2021 – thay cụm LED projector gầm zin bằng X-Light 301 V2, Lux SA2.0 – X-Light F10 Turbo V2
+
+Giá và danh sách mẫu lắp được xem ở trang từng dòng xe; tổng chi phí báo sau khi kỹ thuật viên kiểm tra xe.
 
 ## Cẩm nang (5)
 

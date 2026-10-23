@@ -39,9 +39,8 @@ for (const id of ['bgvf-tabs', 'bgvf-grid', 'bgvf-cf', 'bgvf-rail', 'bgvf-guides
   if (!re.test(html)) throw new Error('container not empty or missing: ' + id);
   html = html.replace(re, (_, a, b) => a + el.innerHTML + b);
 }
-html = html.replace(/<span id="bgvf-n">\d+<\/span>/, `<span id="bgvf-n">${doc.getElementById('bgvf-n').textContent}</span>`);
 // script chỉ gắn sự kiện, không render lại
-html = html.replace("$('bgvf-n').textContent=M.length;", 'if(!$(\'bgvf-grid\').children.length){$(\'bgvf-n\').textContent=M.length;')
+html = html.replace("var nM=M.length;", 'if(!$(\'bgvf-grid\').children.length){var nM=M.length;')
   .replace("// lọc\n", "}\n// lọc\n");
 
 // ---- schema từ chính HTML đã render ----
