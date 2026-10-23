@@ -44,7 +44,7 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 | Mã | Lần 5 | Lần 6 | Căn cứ |
 |---|---:|---:|---|
-| G3 | 4,3 | 4,3 | Kiểm duyệt kỹ thuật Đặng Minh Hoàng (Giám đốc điều hành 3M Pro Shop & 3M Training Center, hệ thống 365Group), hồ sơ có link, reviewedBy/lastReviewed 23/10; 5 bài thi công thật; 4 chứng nhận. Còn: chưa có case Ceramic IR; hồ sơ người duyệt nằm trên auto365.vn chứ chưa có trên site 365Group |
+| G3 | 4,3 | 4,3 | Kiểm duyệt kỹ thuật Đặng Minh Hoàng (Giám đốc điều hành 3M Pro Shop & 3M Training Center), hồ sơ có link, reviewedBy/lastReviewed 23/10; 5 bài thi công thật; 4 chứng nhận. Còn: chưa có case Ceramic IR; hồ sơ người duyệt nằm trên auto365.vn chứ chưa có trên site 365Group |
 | Các mã khác | — | không đổi | Các sửa theo phiếu tái kiểm 22/10 (menu, tìm đại lý, bảng lọc, tài liệu, link 404…) **không tự cộng điểm**, chờ reviewer |
 
 **Tổng tự chấm lần 6: C 26,0 · S 26,7 · G 22,2 · U 14,0 → 88,9/100. CHƯA ĐẠT V1.8** — SEO 26,7 < 28,5; GEO 22,2 < 23,75. Chờ: anh Hoàng chốt thông số Ceramic IR, IT đăng URL đích, số đại lý thống nhất, reviewer tái chấm.
@@ -100,7 +100,7 @@ Lần 1:
 | # | Việc | Tiêu chí | Ai quyết |
 |---|---|---|---|
 | 1 | Chốt URL/domain đích, canonical, đổi link nội bộ sang URL thật, thêm BreadcrumbList/WebSite, @id tuyệt đối | S1, S3 | SEO/chủ trang | ✅ Đã làm (URL https://3m.365group.com.vn/phim-cach-nhiet-3m)
-| 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang | ✅ Đặng Minh Hoàng (23/10/2026) ✅ Đặng Minh Hoàng (23/10/2026)
+| 2 | Người kiểm duyệt kỹ thuật có tên (vd anh Nguyễn Quang Đạo hoặc anh Đặng Minh Hoàng) + `reviewedBy`/`lastReviewed` | G3, C1 | Chủ trang | ✅ Đặng Minh Hoàng (23/10/2026)
 | 3 | Thêm block xe thực tế (case đã đăng trên auto365.vn theo từng cấu hình) | C2, G3 | Có thể làm ngay từ bài đã đăng | ✅ Đã làm (lần 2)
 | 4 | Bỏ từ claim quá ("vượt trội", "tối ưu", "cao cấp nhất"), sửa câu mô tả Ceramic NR theo câu đã duyệt | C3 | Có thể làm ngay | ✅ Đã làm (lần 2)
 | 5 | Thêm thông số NR 35/25/15/5 (catalog NR 03/2026) vào bảng kỹ thuật | C2, G2 | Có thể làm ngay | ✅ Đã làm (lần 2)
