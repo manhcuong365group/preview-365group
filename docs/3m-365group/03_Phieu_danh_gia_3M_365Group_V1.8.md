@@ -1,7 +1,7 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 7. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 8. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
@@ -39,6 +39,19 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 ## Lần 1 (bản 22/10/2026, SHA dc06ee7b…)
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
+
+## Tự chấm lần 8 (bản 23/10/2026, thêm thuật ngữ + nhãn link sang Auto365)
+
+| Mã | Lần 7 | Lần 8 | Căn cứ |
+|---|---:|---:|---|
+| C2 | 9,0 | 9,1 | Thêm mục "Cách đọc các chỉ số" ngay dưới bảng thông số |
+| S3 | 9,5 | 9,6 | 2 cấu hình chưa có trang trên site 365Group (Crystalline Hybrid, Hybrid PRO) có nhãn "Xem trên auto365.vn ↗", mở trang mới |
+| G1 | 9,0 | 9,4 | Định nghĩa TSER, VLT, UVR, Glare R, IRR kèm điều kiện đo; nêu rõ IRR không thay TSER khi so cản nhiệt tổng; schema DefinedTermSet khớp nội dung hiển thị |
+| Các mã khác | — | không đổi | |
+
+**Tổng tự chấm lần 8: C 27,7 · S 27,9 · G 23,4 · U 14,3 → 93,3/100. CHƯA ĐẠT V1.8** — SEO 27,9 < 28,5; GEO 23,4 < 23,75.
+
+Còn thiếu để đạt: case Ceramic IR đã đăng (G3, C2); ảnh og ≥1200 px (S2); link PDF bảng giá/thông số có revision trên site 365Group (C1, S3); hồ sơ anh Hoàng trên site 365Group (G3). Đây là tự chấm, chờ reviewer.
 
 ## Tự chấm lần 7 (bản 23/10/2026, sau phiếu tái kiểm 22/10 + bảng giá 260815)
 
@@ -142,7 +155,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `b02db3743c9c0581eebdd57519e618f45fb6370f0d98dab1869f6d0fd1bfe069` |
+| `auto365/3m-365group/index.html` | SHA-256 `3af0971d0f0aad20d7f0c00084123e5fd68a3fadb9b8212a5a096ff1e05b1c23` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

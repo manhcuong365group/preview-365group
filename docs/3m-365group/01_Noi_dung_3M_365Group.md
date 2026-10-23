@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `b02db3743c9c0581eebdd57519e618f45fb6370f0d98dab1869f6d0fd1bfe069`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `3af0971d0f0aad20d7f0c00084123e5fd68a3fadb9b8212a5a096ff1e05b1c23`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -106,6 +106,9 @@ _Bảng: Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR 
 | IRRLoại bỏ tia hồng ngoại | 98% | 98% | 98% | 98% | 97% | 91% | 86% | 86% | 79% | 90% | 90% | 83% |
 - Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử.
 - Cửa sổ trời nhỏ giá bằng một ô kính sườn, cửa sổ trời panorama giá bằng một kính lái.
+
+### Cách đọc các chỉ số
+Số liệu trong bảng là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%) theo bảng 3M AutoFilm của 365Group; chỉ nên so sánh các mã trong cùng điều kiện đo này.
 
 ## Tài liệu và hỗ trợ  `#tai-lieu`
 Tài liệu do 365Group công bố trên website nhà phân phối
