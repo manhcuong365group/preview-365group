@@ -42,6 +42,8 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 ## Đối chiếu bảng giá 260815 (23/10/2026)
 
+Thêm giá trọn xe Minicar/Sedan/SUV của 6 cấu hình lên thẻ, bảng so sánh và AggregateOffer (xử lý điểm trừ S3 "Product không có Offer" và C2 thiếu giá theo cấu hình). Không tự cộng điểm, chờ reviewer.
+
 Đã sửa: tên cấu hình Ceramic NR → **Ceramic Hybrid**; Crystalline Hybrid và Hybrid PRO kính sườn/lưng NR 25/15 → **NR 25/15/5**; Ceramic IR theo bảng mới (TSER IR 50 ~54%); bảng thông số còn 12 mã đúng bảng (bỏ CR BLK 30/70/80); điều kiện đo ghi chung cho cả bảng. Giá trọn xe, bảo hành, ghi chú cửa sổ trời khớp. Không tự cộng điểm.
 
 ## Tự chấm lần 6 (bản 23/10/2026, kiểm duyệt Đặng Minh Hoàng)
@@ -119,7 +121,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `94b1ea6345797c346a57079669630d9091cc5130e2e6755e9606b73733ae2335` |
+| `auto365/3m-365group/index.html` | SHA-256 `b02db3743c9c0581eebdd57519e618f45fb6370f0d98dab1869f6d0fd1bfe069` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

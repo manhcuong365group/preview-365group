@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `94b1ea6345797c346a57079669630d9091cc5130e2e6755e9606b73733ae2335` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `b02db3743c9c0581eebdd57519e618f45fb6370f0d98dab1869f6d0fd1bfe069` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -30,9 +30,11 @@ Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp Br
 
 `Organization` (#365group, url `3m.365group.com.vn`, telephone, email) · `Brand` (#3m) · `FAQPage` (4 câu, khớp nguyên văn phần hiển thị) · `WebPage` (publisher/author #365group, about #3m, `dateModified` 2026-10-23, `citation` trang 3M Việt Nam) · `ItemList` 6 `Product` (brand 3M, description = mã phim + bảo hành).
 
-Đã có: `WebSite` (#website, tên "365Group – Nhà phân phối phim cách nhiệt 3M"), `BreadcrumbList` (Trang chủ → Phim cách nhiệt ô tô 3M), `WebPage` @id/url tuyệt đối, Organization @id `https://3m.365group.com.vn/#organization`. Còn thiếu: `Offer` cho Product (chỉ thêm khi có giá theo cấu hình được duyệt).
+Đã có: `WebSite` (#website, tên "365Group – Nhà phân phối phim cách nhiệt 3M"), `BreadcrumbList` (Trang chủ → Phim cách nhiệt ô tô 3M), `WebPage` @id/url tuyệt đối, Organization @id `https://3m.365group.com.vn/#organization`. Mỗi Product có `AggregateOffer` (VND, lowPrice = Minicar, highPrice = SUV, offerCount 3, mô tả giá Minicar/Sedan/SUV) theo bảng 260815 — khớp giá hiện trên thẻ và bảng so sánh. Không ghi VAT vì bảng không nêu.
 
 ## 4a. Nguồn chính (23/10/2026)
+
+Giá trọn xe Minicar / Sedan / SUV đã hiện trên 6 thẻ cấu hình (dòng "Trọn xe"), cột "Giá trọn xe" của bảng so sánh và Offer schema; ghi chú dưới bảng nêu nguồn, định nghĩa Minicar, giá cửa sổ trời.
 
 **Bảng giá & thông số 3M AutoFilm – 365Group, mã 260815** (NAS Marketing/3M AUTOFILM/IN AN/BANG GIA/260815 Bảng Giá 3M.pdf), áp dụng từ 06/2026:
 - 6 cấu hình đúng tên trên bảng: Crystalline CR BLK PRO, Crystalline CR BLK, Crystalline Hybrid Pro, Crystalline Hybrid, **Ceramic Hybrid** (dòng NR – trước ghi "Ceramic NR"), Ceramic IR. Hybrid/Hybrid Pro dùng **NR 25/15/5** cho kính sườn/lưng.
