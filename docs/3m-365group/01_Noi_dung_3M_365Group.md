@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `070de2183d1c56f04330109c71b4a46fb8aa9a76df9b381b5f5388a060c378b4`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f9d7c58ad17502edf51bb0946eb293efeced8945f3e766dc6d12fff355dc370d`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M: Danh mục và thông số từ 365Group
@@ -8,6 +8,7 @@ Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối
 Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô
 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.
 ✔ Bài viết của 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo (22/10/2026) · Cập nhật: 23/10/2026
+3M Pro Shop · 3M Training Center – hệ thống 365Group – Auto365
 Cản tia UVBảo vệ sức khỏe và nội thất
 Giảm nhiệt trong xeGiảm nhiệt, tận hưởng không gian mát mẻ
 Giảm lóa – Tăng tầm nhìnThoải mái và an toàn hơn khi lái xe
@@ -35,7 +36,7 @@ Dòng cao cấp, ưu tiên độ trong khi nhìn
 - Màu đen tiệp kính zin, nhìn rõ
 
 ## 6 cấu hình phim cách nhiệt 3M
-Sáu cấu hình dưới đây là cách phối mã phim theo từng vị trí kính do 365Group giới thiệu, không phải sáu dòng công nghệ riêng của 3M. Crystalline Hybrid và Hybrid PRO là cấu hình phối dòng: kính lái Crystalline CR BLK, kính hông/lưng Ceramic NR.
+Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365Group gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.
 
 ### 3M Ceramic NR
 - Kính lái: NR 35
