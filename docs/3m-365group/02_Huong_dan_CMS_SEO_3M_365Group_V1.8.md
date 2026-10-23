@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f94ab90716c977a24c6da0d2b1686951d81d87d71c19dc990e6a5ddfeccaa540` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `c23b95e9260e8fdfde53c555e4aba4b368de4bdc6c8d4befbf05e4864a99b265` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: Nguyễn Quang Đạo, 22/10/2026 (user xác nhận). Trang hiện dòng kiểm duyệt dưới hero và trong "Về bài viết này"; WebPage có `reviewedBy` (url hồ sơ auto365.vn/tac-gia/nguyen-quang-dao) và `lastReviewed` 2026-10-22.
@@ -24,7 +24,7 @@
 | og:image | `https://3m.365group.com.vn/hinh/phim-cach-nhiet-3m/hero-3m-pro-shop-training-center.webp` — IT upload ảnh đúng đường dẫn này khi đăng (701×436 — dưới chuẩn 1200×630, cần ảnh gốc lớn hơn) |
 | Robots | Preview `noindex,nofollow` → production `index,follow` |
 
-Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp BreadcrumbList. Thứ tự H2: 3 dòng phim → 6 cấu hình → Xe thực tế đã dán theo cấu hình → So sánh nhanh → Thông số kỹ thuật → Tài liệu và hỗ trợ → Chứng nhận từ 3M → Hệ thống đại lý → Nhận tư vấn → Vì sao 365Group chọn phân phối phim 3M → Câu hỏi thường gặp → Về bài viết này. Tagline hero là `<p>`, không dùng H2.
+Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp BreadcrumbList. Thứ tự H2: 3 dòng phim → 6 cấu hình → So sánh nhanh → Thông số kỹ thuật → Tài liệu và hỗ trợ → Chứng nhận từ 3M → Hệ thống đại lý → Hồ sơ thi công tham khảo (5 bài auto365.vn, mở trang mới) → Nhận tư vấn → Vì sao 365Group chọn phân phối phim 3M → Câu hỏi thường gặp → Về bài viết này. Tagline hero là `<p>`, không dùng H2.
 
 ## 3. Schema (một `@graph`)
 

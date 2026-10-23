@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f94ab90716c977a24c6da0d2b1686951d81d87d71c19dc990e6a5ddfeccaa540`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `c23b95e9260e8fdfde53c555e4aba4b368de4bdc6c8d4befbf05e4864a99b265`
 Ngày xuất: 23/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M: Danh mục và thông số từ 365Group
@@ -68,24 +68,6 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 - Kính hông/lưng: CR BLK 35/15
 - Bảo hành: 10 năm
 
-## Xe thực tế đã dán theo cấu hình  `#xe-thuc-te`
-Hồ sơ thi công đã đăng trên auto365.vn – đại lý trong hệ thống 365Group. Cấu hình Ceramic IR chưa có bài thi công.
-
-### Hyundai Accent 2025
-Sedan cỡ B đi phố hằng ngày
-
-### Toyota Camry
-Sedan hạng D, kính lớn
-
-### Ford Everest
-SUV 7 chỗ đi đường trường
-
-### VinFast VF8
-SUV điện có kính panorama
-
-### Volvo XC90
-SUV hạng sang 7 chỗ
-
 ## So sánh nhanh 6 cấu hình  `#so-sanh`
 
 _Bảng: So sánh 6 cấu hình phim cách nhiệt 3M: mã phim kính lái, kính hông/lưng, TSER kính lái và bảo hành_
@@ -143,6 +125,19 @@ Các đại lý ủy quyền 3M trên toàn quốc.
 ### Tìm đại lý 3M theo khu vực
 Chọn khu vực để mở danh sách đại lý, địa chỉ và thông tin liên hệ trên website 365Group.
 
+## Hồ sơ thi công tham khảo  `#xe-thuc-te`
+Bài thi công đã đăng trên auto365.vn – đại lý trong hệ thống 365Group, mở ở trang mới. Cấu hình Ceramic IR chưa có bài thi công.
+
+### Hyundai Accent 2025
+
+### Toyota Camry
+
+### Ford Everest
+
+### VinFast VF8
+
+### Volvo XC90
+
 ## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
 Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
 Hoặc gọi hotline 365Group: 0363 365 365
@@ -187,11 +182,6 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - hinh/m-santa-fe.webp — Hyundai Santa Fe – xe minh họa phân khúc gói
 - hinh/m-es.webp — Lexus ES – xe minh họa phân khúc gói
 - hinh/m-lx.webp — Lexus LX – xe minh họa phân khúc gói
-- hinh/case-hyundai-accent.webp — Hyundai Accent 2025 dán phim cách nhiệt 3M Ceramic NR tại Auto365
-- hinh/case-toyota-camry.webp — Toyota Camry dán phim cách nhiệt 3M Crystalline Hybrid tại Auto365
-- hinh/case-ford-everest.webp — Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365
-- hinh/case-vinfast-vf8.webp — VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365
-- hinh/case-volvo-xc90.webp — Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365
 - hinh/cert-distributor-365group.webp — Chứng nhận nhà phân phối 3M – 365Group
 - hinh/cert-3m-pro-shop.webp — Chứng nhận 3M Pro Shop – Auto365 Center
 - hinh/cert-preferred-installer.webp — 3M Preferred Installer – Đơn vị thi công ưu tiên
@@ -199,3 +189,8 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - hinh/hero-3m-pro-shop-training-center.webp — Mặt tiền 3M Pro Shop và 3M Training Center
 - hinh/team-auto365.jpg — Đội ngũ kỹ thuật Auto365 nhận chứng nhận 3M
 - hinh/xe-vinfast-vf8.jpg — Xe dán phim 3M tại đại lý
+- hinh/case-hyundai-accent.webp — Hyundai Accent 2025 dán phim cách nhiệt 3M Ceramic NR tại Auto365
+- hinh/case-toyota-camry.webp — Toyota Camry dán phim cách nhiệt 3M Crystalline Hybrid tại Auto365
+- hinh/case-ford-everest.webp — Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365
+- hinh/case-vinfast-vf8.webp — VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365
+- hinh/case-volvo-xc90.webp — Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365
