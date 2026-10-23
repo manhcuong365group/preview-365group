@@ -422,6 +422,18 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 @media(min-width:761px){.tri.tri2>div:last-child{display:flex;flex-direction:column}.tri.tri2 .carbox{flex:1;display:flex;align-items:center}.tri.tri2 .scope{margin-top:10px}}
 @media(max-width:760px){.whyCard>img,.whyCard>.wcCert{flex:1 1 auto;min-height:190px}.whyCard>img{height:0;aspect-ratio:auto}.whyCard>.wcCert{display:flex}.whyCard>.wcCert img{height:100%;object-fit:cover}.whyCard a:last-child{margin-top:0}}
 .axH{font-size:15px;margin:14px 0 8px}.kFull .axH:first-of-type{margin-top:6px}
+.szGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.szCard{position:relative;background:#fff;border:1px solid var(--l);border-radius:12px;padding:20px;display:flex;flex-direction:column}
+.szCard:nth-child(2){border-color:var(--r);box-shadow:0 6px 20px rgba(220,30,40,.08)}
+.szTag{align-self:flex-start;font-size:12px;font-weight:700;color:var(--r);background:#fde8ea;border-radius:999px;padding:3px 10px;margin-bottom:10px}
+.szCard h3{font-size:17px;margin:0 0 4px}.szEx{font-size:13px;color:var(--m);margin:0 0 12px;min-height:2.6em}
+.szFrom{margin:0 0 12px;font-size:14px}.szFrom b{font-size:22px;color:var(--r)}
+.szList{list-style:none;margin:0 0 16px;padding:0;border-top:1px solid var(--l)}
+.szList li{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid var(--l);font-size:13.5px}
+.szList a{color:inherit}.szList a:hover{color:var(--r)}.szList b{white-space:nowrap;color:var(--r);font-weight:700}
+.szBtn{margin-top:auto;display:block;text-align:center;padding:11px;border-radius:8px;border:1px solid var(--r);color:var(--r);font-weight:700;font-size:14px}
+.szCard:nth-child(2) .szBtn{background:var(--r);color:#fff}
+@media(max-width:760px){.szGrid{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:86%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-right:-16px;padding-right:16px}.szGrid::-webkit-scrollbar{display:none}.szCard{scroll-snap-align:start;padding:16px}}
 </style>
 </head>
 <body>
@@ -553,7 +565,14 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="cases">
+<section class="soft" id="gia-theo-xe">
+<div class="c">
+  <div class="head"><div><h2>Bảng giá dán PPF toàn xe theo loại xe</h2><p>Giá dán toàn xe đã gồm VAT, theo trang sản phẩm và bảng giá Auto365. Dán từng vị trí xem mục <a href="#k08">Bảng giá dán lẻ</a>.</p></div></div>
+  <div class="szGrid"><article class="szCard"><span class="szTag">Sedan</span><h3>Xe gầm thấp 4–5 chỗ</h3><p class="szEx">Vios, City, Mazda 3, Camry, BMW 3/5 Series…</p><p class="szFrom">Chỉ từ <b>20.000.000đ</b></p><ul class="szList"><li><a href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener">AX Film PPF G Series</a><b>20.000.000đ</b></li><li><a href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener">AX PPF X Series Ver 2</a><b>45.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 50 Gloss</a><b>38.000.000đ</b></li><li><a href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener">3M 100 Gloss</a><b>69.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 150 Gloss</a><b>85.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 200 Gloss</a><b>102.000.000đ</b></li></ul><a class="szBtn" href="#tu-van">Nhận báo giá cho xe của bạn</a></article><article class="szCard"><span class="szTag">SUV</span><h3>SUV / CUV 5–7 chỗ</h3><p class="szEx">CX-5, CR-V, Tucson, VF 6, VF 7, VF 8…</p><p class="szFrom">Chỉ từ <b>22.000.000đ</b></p><ul class="szList"><li><a href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener">AX Film PPF G Series</a><b>22.000.000đ</b></li><li><a href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener">AX PPF X Series Ver 2</a><b>49.500.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 50 Gloss</a><b>44.000.000đ</b></li><li><a href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener">3M 100 Gloss</a><b>76.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 150 Gloss</a><b>92.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 200 Gloss</a><b>110.000.000đ</b></li></ul><a class="szBtn" href="#tu-van">Nhận báo giá cho xe của bạn</a></article><article class="szCard"><span class="szTag">MPV</span><h3>MPV, SUV cỡ lớn 7 chỗ</h3><p class="szEx">Carnival, Innova, Xpander, Fortuner, VF 9…</p><p class="szFrom">Chỉ từ <b>25.000.000đ</b></p><ul class="szList"><li><a href="https://auto365.vn/ax-film-ppf-g-series" target="_blank" rel="noopener">AX Film PPF G Series</a><b>25.000.000đ</b></li><li><a href="https://auto365.vn/ax-ppf-x-series-ver-2" target="_blank" rel="noopener">AX PPF X Series Ver 2</a><b>54.500.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-50-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 50 Gloss</a><b>51.000.000đ</b></li><li><a href="https://auto365.vn/phim-bao-ve-son-3m-100-gloss" target="_blank" rel="noopener">3M 100 Gloss</a><b>86.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-150-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 150 Gloss</a><b>102.000.000đ</b></li><li><a href="https://auto365.vn/3m-ppf-200-gloss-phim-bao-ve-son" target="_blank" rel="noopener">3M PPF 200 Gloss</a><b>122.000.000đ</b></li></ul><a class="szBtn" href="#tu-van">Nhận báo giá cho xe của bạn</a></article></div>
+  <p class="note">Xe mẫu ở mỗi nhóm chỉ để tham khảo; loại xe và phạm vi panel được xác nhận khi kiểm tra xe. AX K Series Ver 2 (26.900.000đ) và PPF vân carbon (80.000.000đ) có một mức giá, xem trên card sản phẩm.</p>
+</div>
+</section>
+<section id="cases">
 <div class="c">
   <div class="head">
     <div><h2>Xe thực tế dán PPF tại Auto365</h2><p>Mỗi xe đều ghi rõ dòng phim, vị trí dán và hình ảnh thực tế sau khi thi công.</p></div>
@@ -585,7 +604,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 
 
 
-<section id="vi-sao">
+<section class="soft" id="vi-sao">
 <div class="c">
   <div class="head"><div><span class="bar"></span><h2>Vì sao nên dán PPF tại Auto365?</h2></div></div>
   <div class="whyGrid">
@@ -600,7 +619,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="he-thong">
+<section id="he-thong">
 <div class="c">
   <div class="sys">
     <div class="sysCard">
@@ -628,7 +647,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
   </div>
 </div>
 </section>
-<section id="hinh-anh">
+<section class="soft" id="hinh-anh">
 <div class="c">
   <div class="head"><div><h2>Hình ảnh thi công PPF tại Auto365</h2><p>Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.</p></div></div>
   <div class="gal3">
@@ -644,7 +663,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="kien-thuc">
+<section id="kien-thuc">
 <div class="c tri tri2">
   <div>
     <h2>PPF là gì?</h2>
@@ -683,7 +702,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="quy-trinh">
+<section class="soft" id="quy-trinh">
 <div class="c">
   <div class="head"><div><h2>Quy trình thi công PPF</h2><p>6 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công tại Auto365, bấm ảnh để xem bài.</p></div></div>
   <ol class="qtGrid">
@@ -696,7 +715,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
   </ol>
 </div>
 </section>
-<section class="soft" id="kien-thuc-ppf">
+<section id="kien-thuc-ppf">
 <div class="c">
   <div class="head"><div><h2>Kiến thức cần nắm trước khi dán PPF</h2><p>PPF bảo vệ tốt hay không phụ thuộc vào vật liệu, cách chọn phim và tay nghề thi công. Dưới đây là những điều chủ xe nên biết.</p></div><a class="more" href="#cam-nang">Đọc cẩm nang →</a></div>
   <div class="xk">
@@ -749,7 +768,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="chuyen-gia">
+<section class="soft" id="chuyen-gia">
 <div class="c">
   <div class="head"><div><h2>Góc chuyên gia</h2><p>Người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.</p></div></div>
   <div class="exGrid">
@@ -776,7 +795,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="so-sanh">
+<section id="so-sanh">
 <div class="c">
   <div class="head"><div><h2>PPF, phủ ceramic và dán wrap khác nhau ở đâu?</h2><p>Ba dịch vụ hay bị nhầm với nhau, nhưng mỗi loại giải quyết một nhu cầu riêng.</p></div></div>
   <div class="tbl"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
@@ -793,7 +812,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="cham-soc">
+<section class="soft" id="cham-soc">
 <div class="c">
   <div class="head"><div><h2>Chăm sóc sau khi dán PPF</h2><p>Vài thói quen nhỏ giúp phim bền, trong và đẹp lâu hơn.</p></div></div>
   <div class="care">
@@ -804,7 +823,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="tu-van">
+<section id="tu-van">
 <div class="c">
   <div class="leadWrap">
     <figure class="leadImg"><img src="https://auto365.vn/uploads/images/pages/auto365vn-ppf-duoc-can-chinh-tren-khu-vuc-cua-va-hong-xe-truoc-khi-hoan-thien-be-mat-img_6a8c0992e944c4.64254953.webp" alt="Kỹ thuật viên căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt" width="800" height="533" loading="lazy"><figcaption>Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.</figcaption></figure>
@@ -827,7 +846,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="video">
+<section class="soft" id="video">
 <div class="c">
   <div class="head"><div><h2>Video thực tế</h2><p>Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.</p></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả video →</a></div>
   <div class="vids">
@@ -839,7 +858,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="cam-nang">
+<section id="cam-nang">
 <div class="c">
   <div class="head"><div><h2>Cẩm nang PPF &amp; Wrap</h2></div><a class="more" href="https://auto365.vn/tin-tuc/cam-nang-ppf-wrap" target="_blank" rel="noopener">Xem tất cả bài viết →</a></div>
   <div class="chipRow" role="group" aria-label="Lọc bài theo chủ đề"><button class="ctab" type="button" data-tag="" aria-pressed="true">Tất cả <em>12</em></button><button class="ctab" type="button" data-tag="Kiến thức" aria-pressed="false">Kiến thức <em>2</em></button><button class="ctab" type="button" data-tag="Trước khi dán" aria-pressed="false">Trước khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Sau khi dán" aria-pressed="false">Sau khi dán <em>4</em></button><button class="ctab" type="button" data-tag="Theo xe" aria-pressed="false">Theo xe <em>2</em></button></div>
@@ -861,7 +880,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section id="faq">
+<section class="soft" id="faq">
 <div class="c">
   <div class="head"><div><h2>Câu hỏi thường gặp về dán PPF ô tô</h2></div></div>
   <div class="faq">
@@ -878,7 +897,7 @@ section{padding:14px 0}.c{width:calc(100% - 32px)}h2{font-size:20px}
 </div>
 </section>
 
-<section class="soft" id="kiem-duyet">
+<section id="kiem-duyet">
 <div class="c">
   <div class="rev">
     <div class="box"><span class="ey">Kiểm duyệt kỹ thuật</span><h3 style="margin-top:8px"><a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a></h3><p class="muted" style="margin:0">Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 23/10/2026</p></div>
