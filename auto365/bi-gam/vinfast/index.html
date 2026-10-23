@@ -1981,6 +1981,7 @@ Tư vấn độ đèn cho từng dòng xe</a>
 .bgvf-chip{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:6px 14px;font:inherit;font-size:13.5px;cursor:pointer;color:var(--ink)}
 .bgvf-chip:hover{border-color:#f3b4b4}.bgvf-chip.on{background:#eef1f4;border-color:#cfd5db;font-weight:600}
 .bgvf-case[hidden]{display:none}
+.bgvf-rail.one{grid-template-rows:none}
 .bgvf-case .im{position:relative}
 .bgvf-case .tag{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;padding:3px 9px;border-radius:5px}
 .bgvf-cr{font-size:11.5px;color:var(--mu);margin:10px 0 0}
@@ -2376,7 +2377,7 @@ function apply(){var q=($('bgvf-q').value||'').trim().toLowerCase().replace(/\s+
  document.querySelector('.bgvf-empty').hidden=n>0}
 $('bgvf-tabs').addEventListener('click',function(e){var b=e.target.closest('.bgvf-tab');if(!b)return;k=b.getAttribute('data-k');[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});apply();$('bgvf-grid').scrollLeft=0});
 $('bgvf-q').addEventListener('input',apply);
-$('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b)});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});$('bgvf-rail').scrollLeft=0});
+$('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b)});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});$('bgvf-rail').classList.toggle('one',document.querySelectorAll('.bgvf-case:not([hidden])').length<=4);$('bgvf-rail').scrollLeft=0});
 [].forEach.call(document.querySelectorAll('.bgvf-arr'),function(b){b.addEventListener('click',function(){var r=$('bgvf-rail');r.scrollBy({left:(+b.getAttribute('data-dir'))*r.clientWidth*0.9,behavior:'smooth'})})});
 // thẻ dòng xe chưa có hồ sơ → điền sẵn dòng xe vào form tư vấn
 document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car'),f=document.querySelector('#tu-van form');if(i)i.value=a.getAttribute('data-car');if(f)f.setAttribute('data-service','Bi gầm VinFast - '+a.getAttribute('data-car'))});
