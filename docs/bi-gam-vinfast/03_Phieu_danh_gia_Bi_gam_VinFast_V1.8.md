@@ -6,7 +6,7 @@
 | Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-24) |
 | Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10/2026; `lastReviewed` 2026-10-23; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-24; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
 ## R2. Reviewer tái kiểm 23/10/2026 và bản vá 24/10/2026
 
@@ -15,9 +15,9 @@ Reviewer R2 chấm snapshot SHA `ead4cdc9…` (23/10/2026 22:38): **94,8/100 —
 | Mã | Phiếu R2 | Đã làm 24/10/2026 | Còn mở |
 |---|---|---|---|
 | R01 | 3 trang con 404 | — | CMS đăng Fadil / Limo Green / Lux SA2.0 (hoặc đổi 3 thẻ + CTA nhu cầu + ItemList sang tư vấn) |
-| R02 | Sapo gắn AES với hồ sơ thi công (10 bài: 8 X-Light, 2 GTR, 0 AES) | Sapo thu hẹp còn "(X-Light, GTR)" | Anh Đạo xác nhận câu thu hẹp (05) |
+| R02 | Sapo gắn AES với hồ sơ thi công (10 bài: 8 X-Light, 2 GTR, 0 AES) | Sapo thu hẹp còn "(X-Light, GTR)" | Đã duyệt 24/10 |
 | R03 | 01 chưa xuất 6 thẻ "Vì sao chọn" | 01 xuất đủ 6 thẻ (tiêu đề, nội dung, tên ảnh, alt), dải 8 logo kèm phạm vi "không ngụ ý mỗi hãng đã có hồ sơ VinFast" | — |
-| R04 | Thẻ tư vấn nêu 12V/24V chung | Riêng trang VinFast: "hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe" (build thay, khối gốc theo-hang-xe giữ nguyên) | Anh Đạo xác nhận (05) |
+| R04 | Thẻ tư vấn nêu 12V/24V chung | Riêng trang VinFast: "hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe" (build thay, khối gốc theo-hang-xe giữ nguyên) | Đã duyệt 24/10 |
 | R05 | 02 thiếu map 6 ảnh mới | 02 mục 3 thêm 6 ảnh + logo | IT upload khi đăng |
 | R06 | 01 lặp khối nhu cầu, mô tả vị trí cũ | 01 xuất theo đúng thứ tự trang, box lưu ý chỉ lấy nội dung trực tiếp (không lặp 3 nhóm), bỏ dấu gạch thừa; 02 bỏ mô tả ô "trả lời nhanh" riêng; 03 sửa B02/B04/B06 | — |
 | R07 | Kiểm bản tích hợp production | — | IT + SEO khi đăng |
@@ -66,7 +66,7 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 
 ## 2. Kết luận
 
-**CHƯA ĐẠT theo reviewer R2 (94,8/100, 23/10/2026).** Bản vá R2 24/10 ở mục R2 chờ anh Đạo xác nhận 2 câu thu hẹp và reviewer tái kiểm; 3 trang con production vẫn là điều kiện phát hành. Không tự tuyên bố ĐẠT.
+**CHƯA ĐẠT theo reviewer R2 (94,8/100, 23/10/2026).** Bản vá R2 24/10 ở mục R2 đã duyệt kỹ thuật 24/10, chờ reviewer tái kiểm; 3 trang con production vẫn là điều kiện phát hành. Không tự tuyên bố ĐẠT.
 
 ## 3. Việc cần làm để đạt
 

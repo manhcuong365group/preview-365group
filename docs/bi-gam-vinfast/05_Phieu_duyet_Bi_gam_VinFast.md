@@ -52,9 +52,9 @@ Reviewer 22/10/2026 chấm 92,0/100 (chưa đạt) và yêu cầu thu hẹp ph�
 | Khối chi nhánh | — | Câu nhận diện "Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group…" (mẫu reviewer). |
 | Khối "Vì sao chọn Auto365" | 4 thẻ icon | 6 thẻ có ảnh + dải logo hãng đèn, lấy nguyên từ trang theo-hang-xe (đã duyệt ở trang đó); tiêu đề thêm "VinFast" |
 
-## Bản vá R2 24/10/2026 — chờ duyệt bổ sung
+## Bản vá R2 24/10/2026 — ĐÃ DUYỆT 24/10/2026
 
-Reviewer R2 23/10/2026: 94,8/100 (chưa đạt). Hai câu sửa dưới đây chỉ thu hẹp phạm vi, chưa được anh Đạo xác nhận; `lastReviewed` giữ 2026-10-23.
+Reviewer R2 23/10/2026: 94,8/100 (chưa đạt). Chủ quản xác nhận 24/10/2026: anh Nguyễn Quang Đạo đã duyệt cả hai câu dưới đây. `lastReviewed` = 2026-10-24. Không còn mục nội dung chờ duyệt.
 
 | Vị trí | Câu đã duyệt 23/10 | Câu mới |
 |---|---|---|
