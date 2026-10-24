@@ -1,7 +1,7 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 12. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 13. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
@@ -39,6 +39,27 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 ## Lần 1 (bản 22/10/2026, SHA dc06ee7b…)
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
+
+## Tự chấm lần 13 (bản 24/10/2026, preview /3m.365group.com.vn/phim-cach-nhiet-3m/)
+
+| Mã | Tối đa | Lần 12 | Lần 13 | Căn cứ / phần thiếu |
+|---|---:|---:|---:|---|
+| C1 | 10 | 9,7 | 9,7 | Giá, cấu hình, 12 mã, bảo hành theo PDF 260815; 224 đại lý chủ trang chốt. Còn: site 365Group ghi 160+ |
+| C2 | 10 | 9,3 | 9,4 | 6 thẻ giá có đủ mã theo vị trí kính, TSER kính lái, giá Minicar/Sedan/SUV, nút nhận báo giá; khối công nghệ 3M; 8 bài báo. Còn: case Ceramic IR, hướng dẫn chăm sóc phim |
+| C3 | 10 | 9,2 | 9,2 | Không đổi |
+| S1 | 10 | 9,3 | 9,3 | Không đổi |
+| S2 | 10 | 9,4 | 9,4 | Không đổi (og 1200×630, caption bảng thông số, heading) |
+| S3 | 10 | 9,8 | 9,8 | Không đổi; preview đổi đường dẫn có 301 từ /3m-365group/ |
+| G1 | 10 | 9,5 | 9,5 | Thuật ngữ trong accordion vẫn nằm trong HTML + DefinedTermSet; câu công nghệ có nguồn |
+| G2 | 10 | 9,6 | 9,5 | Bỏ bảng So sánh nhanh (trùng thẻ); còn bảng 12 mã + thẻ có TSER/giá |
+| G3 | 5 | 4,7 | 4,7 | 8 bài báo (logo báo), kiểm duyệt Đặng Minh Hoàng ở khung cuối trang, PDF nguồn. Còn: case Ceramic IR; hồ sơ người duyệt trên site 365Group |
+| U1 | 5 | 4,7 | 4,7 | Thẻ giá 3×2 (1 cột mobile), accordion thuật ngữ, khối công nghệ đồng bộ; bảng 12 mã cuộn ngang trên mobile (đã bỏ bộ lọc theo yêu cầu) |
+| U2 | 5 | 4,6 | 4,7 | Nút "Nhận báo giá gói này" mở form chọn sẵn cấu hình. Còn: endpoint /api/leads chưa được IT xác nhận |
+| U3 | 5 | 5,0 | 5,0 | 01–03 cùng SHA bên dưới |
+
+**Tổng tự chấm lần 13: C 28,3 · S 28,5 · G 23,7 · U 14,4 → 94,9/100. CHƯA ĐẠT V1.8** — SEO 28,5 = ngưỡng; **GEO 23,7 < 23,75 (thiếu 0,05)**; tổng 94,9 < 95 (thiếu 0,1).
+
+Để đạt: bài thi công Ceramic IR đã đăng (G3, C2) hoặc trang hồ sơ anh Hoàng trên site 365Group (G3) – một trong hai là đủ qua ngưỡng GEO và tổng. Đây là tự chấm, chờ reviewer.
 
 ## Cập nhật 24/10/2026 — thẻ giá 3×2, bỏ bảng So sánh nhanh
 
