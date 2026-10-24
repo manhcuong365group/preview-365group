@@ -1,6 +1,6 @@
 # 03 — Phiếu đánh giá V1.8: Hub PPF ô tô
 
-- Trang: `https://preview-365group.pages.dev/ppf-o-to/` (bản 21/10/2026, preview, noindex đúng chủ đích)
+- Trang: `https://preview-365group.pages.dev/ppf-o-to/` (bản 24/10/2026, preview, noindex đúng chủ đích)
 - Người chấm: Claude, tự đánh giá sau khi sửa theo audit PPF19 của reviewer (19/10/2026). CHƯA thay cho tái chấm của reviewer.
 - Loại trang: hub dịch vụ/danh mục PPF. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8. Chấm trên preview.
 - Điểm chỉ ghi trong phiếu này, không ghi lên trang (user 19/10/2026).
@@ -87,6 +87,29 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | Callout vị trí (24/10) | Đã làm | Giá theo vị trí dạng callout: ảnh thật BMW 530i đánh số 1–8 + đường nối, 8 thẻ có ảnh cận cảnh thật từ case (nóc xe chưa có ảnh, dùng icon), hàng "Vị trí khác" (cản sau, cốp sau, sườn xe, đuôi cá, đèn sau); bảng 13 vị trí thu vào "Xem bảng giá đầy đủ". Không thêm hõm tay cửa/ốp gầm vì chưa có nguồn giá |
 | Configurator (24/10) | Đã làm | Tham khảo file demo configurator chủ trang gửi (chỉ lấy tương tác, không lấy price matrix suy theo hệ số trong demo): bấm số trên xe / thẻ / vị trí khác để cộng giá; thanh tổng tạm tính (dính đáy trên mobile), nút xóa; bỏ đường nối, số xếp theo cột; gộp khối Ước tính nhanh vào đây; nút gói chọn sẵn vị trí |
 | A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
+
+## Tự chấm sau R3 (bản 24/10/2026, lấy điểm reviewer R3 22/10 làm gốc)
+
+Thay đổi chính 23–24/10: TDS 3M 150 Gloss đổi sang Revision B (08/2026); giá 3M 150/200 Gloss theo bảng giá 3M theo vị trí (chủ trang xác nhận 23/10); khối giá mới trong #san-pham (thanh thương hiệu, giá toàn xe 3 loại xe, ước tính nhanh, giá theo vị trí dạng callout có tích chọn + tổng tạm tính, gói theo nhu cầu); bỏ các dòng thông số không có nguồn trên card; logo bộ lọc case đồng bộ.
+
+| Mã | Tối đa | R3 22/10 | Tự chấm 24/10 | Căn cứ |
+|---|---:|---:|---:|---|
+| C1 | 10 | 9,8 | 9,8 | Giá toàn xe/vị trí khớp bảng giá 3M (23/10) và AX khách lẻ; giá vị trí 3M ghi rõ VAT xác nhận khi chốt báo giá; không dùng số trong mockup |
+| C2 | 10 | 9,8 | 9,9 | Có đủ giá toàn xe theo loại xe, giá 13 vị trí, gói theo nhu cầu, công cụ ước tính |
+| C3 | 10 | 9,7 | 9,7 | Giữ |
+| S1 | 10 | 9,7 | 9,7 | Migration /ppfwrap-film chưa nghiệm thu |
+| S2 | 10 | 9,8 | 9,8 | Giữ; ảnh khối giá là ảnh case thật, ALT mô tả đúng |
+| S3 | 10 | 9,5 | 9,5 | R22-04: chờ URL catalog để gắn link |
+| G1 | 10 | 9,7 | 9,7 | Giữ |
+| G2 | 10 | 9,8 | 9,9 | Khách tự so giá theo loại xe/dòng phim/vị trí và tính tổng trước khi liên hệ |
+| G3 | 5 | 4,4 | 4,6 | R22-01 đã sửa (TDS Revision B, 3 href + 2 nhãn); nguồn bảng giá ghi trên trang |
+| U1 | 5 | 4,9 | 4,8 | Trang dài hơn do khối giá tương tác; desktop + 375px không tràn |
+| U2 | 5 | 4,9 | 4,9 | Thanh tổng + nút "Nhận báo giá chính xác" dẫn form; finder giữ địa phương |
+| U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; lead 228 CRM đã nhận; phần sửa 23–24/10 chưa có lần duyệt lại của reviewer |
+
+**Tổng tự chấm: C 29,4 · S 29,0 · G 24,2 · U 14,2 → 96,8/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,2 ≥ 23,75.
+
+Việc còn lại trước ký duyệt: (1) anh Đặng Minh Hoàng duyệt khối giá mới 23–24/10 (lastReviewed giữ 22/10 cho tới khi duyệt); (2) URL catalog/Wrap (R22-04); (3) vận hành xác nhận địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá 3M khác hub (4/4/1/7, 0365 365 365); (4) reviewer tái chấm; (5) nghiệm thu production.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
