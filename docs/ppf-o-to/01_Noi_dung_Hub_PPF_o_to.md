@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `3b1cfc3518a2ba1adf1df77e15118b97f66a148dfec6cd3d752b4153126e7aac`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fc418b21348b6218c3eccbedc6654ada83289e3a1f13aa49c10af23b03ae4ca8`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -13,37 +13,97 @@ Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (22/10
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
-## Sản phẩm PPF tại Auto365: 3M và AX Film  `#san-pham`
+## Báo giá minh bạch, chọn gói phù hợp  `#san-pham`
 
-So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe từ (Sedan, gồm VAT). Giá xem ở mục Bảng giá.
+Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
 
-**3M PPF**
+**Bảng giá dán PPF toàn xe**
 
-3M PPF tại Auto365 được nhập qua 365 Group, nhà phân phối chính thức của 3M tại Việt Nam, và thi công tại hệ thống có Auto365 Center được 3M Việt Nam bổ nhiệm làm 3M Pro Shop. Bốn mã 3M tăng dần về độ dày, lớp phủ và thời hạn bảo hành.
+Chọn thương hiệu để xem giá theo dòng phim và kích thước xe.
 
-Phù hợp: Xe mới, xe sang, chủ xe muốn giữ sơn zin lâu dài và cần bảo hành dài.
+**Sedan / Xe nhỏ**
 
-**AX Film PPF**
+Ví dụ: VF3, VF5, Vios, Accent, Mazda 3, Civic…
 
-AX Film PPF có nhiều dòng từ mức chi phí dễ tiếp cận đến bản bóng cao và vân carbon, giúp chủ xe chọn theo ngân sách và kiểu bề mặt mong muốn. Thông số độ bóng, độ dày và bảo hành ghi theo trang sản phẩm từng dòng.
+| Dòng phim | Giá tham khảo |
+| --- | --- |
+| 3M PPF 50 Gloss | 38.000.000đ |
+| 3M 100 Gloss | 69.000.000đ |
+| 3M PPF 150 Gloss | 85.000.000đ |
+| 3M PPF 200 Gloss | 102.000.000đ |
 
-Phù hợp: Chủ xe muốn bảo vệ sơn với chi phí hợp lý, hoặc muốn đổi sang bề mặt vân carbon.
+**SUV / CUV 5 chỗ**
+
+Ví dụ: VF6, VF7, CX-5, CR-V, Tucson, Territory…
+
+| Dòng phim | Giá tham khảo |
+| --- | --- |
+| 3M PPF 50 Gloss | 44.000.000đ |
+| 3M 100 Gloss | 76.000.000đ |
+| 3M PPF 150 Gloss | 92.000.000đ |
+| 3M PPF 200 Gloss | 110.000.000đ |
+
+**SUV 7 chỗ / MPV / Xe lớn**
+
+Ví dụ: VF8, Everest, Fortuner, Carnival, Santa Fe…
+
+| Dòng phim | Giá tham khảo |
+| --- | --- |
+| 3M PPF 50 Gloss | 51.000.000đ |
+| 3M 100 Gloss | 86.000.000đ |
+| 3M PPF 150 Gloss | 102.000.000đ |
+| 3M PPF 200 Gloss | 122.000.000đ |
 
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
 
-## Bảng giá dán PPF tại Auto365  `#bang-gia`
+**Bảng giá dán PPF theo vị trí**
 
-Giá tham khảo; giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
+Chọn dòng phim và loại xe để xem giá từng vị trí.
 
-Giá dán toàn xe đã gồm VAT. Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9…
+| Vị trí dán | Giá từ | Khi nào nên dán? |
+| --- | --- | --- |
+| Capo | 5.320.000đ | Dễ trầy do đá văng khi chạy sau xe khác |
+| Cản trước | 5.320.000đ | Vùng hứng đá dăm, va quẹt khi đỗ |
+| Cản sau | 5.320.000đ | Dễ trầy khi lùi, đỗ xe |
+| Cốp sau | 3.420.000đ | Trầy khi xếp đồ ra vào |
+| Nóc xe | 5.320.000đ | Hạn chế trầy, bạc màu do nắng |
+| Sườn xe | 7.220.000đ | Va quẹt khi đi đường hẹp |
+| Cửa trước (mỗi bên) | 3.040.000đ | Trầy do ra vào, va cửa xe bên |
+| Cửa sau (mỗi bên) | 2.660.000đ | Trầy khi ra vào, va quệt |
+| Má trước (mỗi bên) | 3.040.000đ | Đá văng từ bánh trước |
+| Đuôi cá | 1.520.000đ | Chi tiết dễ trầy, bạc màu |
+| Đèn trước (mỗi bên) | 760.000đ | Hạn chế trầy, ố mặt đèn |
+| Đèn sau (mỗi bên) | 760.000đ | Hạn chế trầy mặt đèn |
+| Ốp gương (mỗi bên) | 760.000đ | Dễ va quẹt khi đi đường hẹp |
 
-Dòng phim
+Giá 3M theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (23/10/2026), VAT xác nhận khi chốt báo giá. AX Film theo bảng giá khách lẻ, gồm VAT (Sedan = hạng A–B, SUV = hạng C–D). 3M 100 Gloss chưa có bảng giá theo vị trí.
 
-Loại xe
+**Các gói dán PPF theo nhu cầu**
 
-Phạm vi dán
+Gợi ý gói phổ biến theo mục đích sử dụng.
 
-Ước tính cộng theo giá từng vị trí: 3M theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (23/10/2026), VAT xác nhận khi chốt báo giá; AX Film theo bảng giá khách lẻ, gồm VAT (SUV tương ứng hạng C–D). Dán toàn xe tính theo giá gói.
+- Capo
+- Cản trước
+- Đèn trước (2 bên)
+- Ốp gương (2 bên)
+
+- Capo
+- Cản trước
+- Đèn trước (2 bên)
+- Ốp gương (2 bên)
+- Má trước (2 bên)
+
+- Cửa trước (2 bên)
+- Cửa sau (2 bên)
+- Cốp sau
+
+- Toàn bộ bề mặt sơn ngoại thất
+
+Giá "từ" của gói tạm tính với AX Film PPF G Series, xe Sedan: cộng giá từng vị trí; gói toàn xe theo giá gói. Bấm "Ước tính gói này" để đổi dòng phim, loại xe.
+
+**Ước tính chi phí nhanh**
+
+Chọn dòng phim, loại xe và vị trí cần dán.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
