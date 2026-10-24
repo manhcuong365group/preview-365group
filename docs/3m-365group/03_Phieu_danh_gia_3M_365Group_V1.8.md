@@ -40,6 +40,10 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Cập nhật 24/10/2026 — thẻ giá 3×2, bỏ bảng So sánh nhanh
+
+Thẻ giá đổi theo mẫu chủ trang (6 thẻ 3×2, hộp giá Minicar/Sedan/SUV, nút nhận báo giá), thêm TSER kính lái vào thẻ, bỏ bảng So sánh nhanh (trùng). G2 giảm nhẹ 9,6 → 9,5 (mất một bảng đối chiếu; vẫn còn bảng 12 mã). Ước tính tổng **94,7/100, CHƯA ĐẠT**. Chờ reviewer.
+
 ## Tự chấm lần 12 (bản 24/10/2026 – quay lại giao diện cũ + khối công nghệ 3M, báo chí)
 
 Chủ trang yêu cầu giữ layout và nội dung cũ, chỉ thêm phần cần thiết. Giao diện dựng lại (lần 11) đã bỏ; điểm lần 11 không còn hiệu lực. So với lần 10:
@@ -215,7 +219,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `389f7496b9370ff409ef86fcd1b77311cc105c463ff998330799bac13a88cae5` |
+| `auto365/3m-365group/index.html` | SHA-256 `d98906d2a2842b1bf4abbb0ed4cd7c1dd7031c28dfdc6b6d5b30c6611ff06bc9` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

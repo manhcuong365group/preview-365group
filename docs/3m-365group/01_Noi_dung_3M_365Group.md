@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `389f7496b9370ff409ef86fcd1b77311cc105c463ff998330799bac13a88cae5`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d98906d2a2842b1bf4abbb0ed4cd7c1dd7031c28dfdc6b6d5b30c6611ff06bc9`
 Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -49,17 +49,6 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 ### Hybrid PRO
 
 ### CR BLK PRO
-
-## So sánh nhanh 6 cấu hình  `#so-sanh`
-
-_Bảng: So sánh 6 cấu hình phim cách nhiệt 3M: mã phim kính lái, kính hông/lưng, TSER kính lái, giá trọn xe và bảo hành_
-| Cấu hình | Định hướng | Kính lái | Kính hông/lưng | TSER kính lái (≈) | Giá trọn xeMinicar / Sedan / SUV | Bảo hành |
-| Ceramic Hybrid | Ưu tiên chi phí | NR 35 | NR 25/15/5 | ~ 51% | 5,9 / 7,9 / 9,5 tr | 10 năm |
-| Ceramic IR | Cân bằng | IR 50 | IR 25/15 | ~ 54% | 7,2 / 9 / 10,5 tr | 10 năm |
-| Crystalline Hybrid | Kính lái Crystalline | CR BLK 60/50 | NR 25/15/5 | ~ 54–56% | 9 / 10,8 / 12,5 tr | 10 năm |
-| Crystalline CR BLK | Đồng bộ Crystalline | CR BLK 60/50 | CR BLK 35/15 | ~ 54–56% | 12,2 / 14,8 / 17,6 tr | 10 năm |
-| Hybrid PRO | Kính lái đậm hơn | CR BLK 40 | NR 25/15/5 | ~ 58% | 9,8 / 11,6 / 13,3 tr | 10 năm |
-| CR BLK PRO | Crystalline toàn xe, kính lái đậm | CR BLK 40 | CR BLK 35/15 | ~ 58% | 12,9 / 15,5 / 18,3 tr | 10 năm |
 TSER là tổng năng lượng mặt trời bị loại bỏ của mã phim kính lái, theo bảng thông số 3M AutoFilm của 365Group (áp dụng từ 06/2026, đo trên kính xanh 6 mm); kết quả thực tế phụ thuộc loại kính xe.
 Giá trọn xe theo bảng giá 3M AutoFilm của 365Group, áp dụng từ 06/2026. Giá Minicar áp dụng cho VinFast VF 3, Wuling Hongguang Mini EV, Bestune Xiaoma, VinFast Minio Green và các dòng xe cùng kích thước. Cửa sổ trời nhỏ tính bằng một ô kính sườn, panorama bằng một kính lái. Giá thi công cụ thể theo xe do đại lý báo.
 

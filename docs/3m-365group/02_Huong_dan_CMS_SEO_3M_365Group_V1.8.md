@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `389f7496b9370ff409ef86fcd1b77311cc105c463ff998330799bac13a88cae5` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d98906d2a2842b1bf4abbb0ed4cd7c1dd7031c28dfdc6b6d5b30c6611ff06bc9` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -35,6 +35,10 @@ Giữ nguyên layout và nội dung trang (chủ trang yêu cầu không dựng 
 ## 2c. Thẻ giá gói (24/10/2026)
 
 Theo mẫu chủ trang gửi (giống pillar Auto365 V11.12): 6 thẻ cấu hình trong một lưới 3 + 3 (desktop), 2 cột tablet, 1 cột mobile (chủ trang chọn 24/10). Mỗi thẻ: ảnh xe minh họa + nhãn, bảng thông tin (kính lái, sườn/lưng, dòng/công nghệ, VLT/UVR/giảm lóa), hộp "Giá tham khảo trọn xe" Minicar/Sedan/SUV-MPV (đồng, theo bảng 260815), link dòng phim, nút "Nhận báo giá gói này" mở form #tu-van và chọn sẵn cấu hình. Không đặt nhãn "Khuyên dùng" (chưa có căn cứ duyệt). Khối báo chí có link "Xem tất cả bài báo chí" tới auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop.
+
+## 2d. Bỏ bảng So sánh nhanh (24/10/2026)
+
+Chủ trang yêu cầu bỏ bảng "So sánh nhanh 6 cấu hình" vì trùng với 6 thẻ giá. Mỗi thẻ thêm dòng "TSER kính lái" (51% / 54% / 54–56% / 54–56% / 58% / 58%); 2 ghi chú (TSER, nguồn giá + Minicar + cửa sổ trời) chuyển xuống ngay dưới lưới thẻ (#bang-gia). Link cũ #so-sanh đổi sang #bang-gia.
 
 ## 3. Schema (một `@graph`)
 
