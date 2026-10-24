@@ -54,7 +54,7 @@ Trên preview, bấm 3 thẻ này sẽ ra trang 404 của production — đúng 
 | Ảnh hero 3 xe | `hinh/hero-vinfast-3-xe.webp` |
 | Ảnh Lux A2.0, President | `hinh/xe-vinfast-lux-a20.webp`, `hinh/xe-vinfast-president.webp` |
 | Ảnh 13 dòng xe khác | `../theo-hang-xe/hinh/m-*.webp` |
-| 6 ảnh khối "Vì sao chọn" (ảnh minh họa, dùng chung với theo-hang-xe) | `../theo-hang-xe/hinh/`: `auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp`, `auto365vn-tra-cuu-bao-hanh-dien-tu.webp`, `auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp`, `auto365vn-can-chinh-den-tren-bang-test-xuong.webp`, `auto365vn-bao-gia-lap-dat-bi-gam.webp`, `auto365vn-tu-van-den-gam-theo-tung-xe.webp` — nếu hub theo-hang-xe lên production trước, dùng chung URL ảnh của trang đó |
+| 6 ảnh khối "Vì sao chọn" (ảnh xe VinFast thật tại Auto365, lấy từ trang dòng xe) | `limo-green/hinh/ly-do-limo-green-chi-nhanh.webp`, `vf6/hinh/ly-do-vf6-phieu-ban-giao.webp`, `fadil/hinh/ly-do-fadil-ban-giao.webp`, `vf6/hinh/kiem-tra-duong-cat-cos-bang-test.webp`, `fadil/hinh/ly-do-fadil-tu-van-cau-hinh.webp`, `vf6/hinh/ly-do-vf6-tu-van-cau-hinh.webp` — cùng ảnh với các trang dòng xe, dùng chung URL khi các trang đó lên production |
 | Logo 8 hãng đèn | Đã là URL tuyệt đối `auto365.vn/uploads/images/brand/...` |
 | Ảnh VF e34, Fadil, Lux SA2.0 | `../vinfast-vf3/hinh/xe-vinfast-*.{jpg,webp}` |
 
@@ -79,7 +79,7 @@ Trên preview, bấm 3 thẻ này sẽ ra trang 404 của production — đúng 
 | Khối | Nguồn | Cập nhật |
 |---|---|---|
 | Sapo (kiêm trả lời nhanh) | Chủ quản viết 23/10; R2 thu hẹp còn X-Light, GTR (tập hồ sơ đang dẫn chưa có bài AES trên VinFast) | Sửa trong source |
-| Vì sao chọn Auto365 (6 thẻ ảnh + logo hãng đèn) | Khối của theo-hang-xe, build tự lấy; riêng trang VinFast thay câu "hệ điện 12V/24V" bằng "hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe" | Sửa ở theo-hang-xe rồi build lại |
+| Vì sao chọn Auto365 (6 thẻ ảnh + logo hãng đèn) | Khối của theo-hang-xe, build tự lấy (cân lại 1 thẻ </div> dư ở khối gốc); riêng trang VinFast thay 6 ảnh bằng ảnh xe VinFast và thay câu "hệ điện 12V/24V" bằng "hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe" | Sửa ở theo-hang-xe rồi build lại |
 | 18 dòng xe | Dải sản phẩm VinFast; ảnh mục 3 | Mảng `M` |
 | Chọn theo nhu cầu (3 nhóm) | Phần tư vấn nhu cầu đã duyệt ở các trang dòng xe + case thật | Sửa trong source |
 | Bài hồ sơ (10) | Khối case trên trang VF3 production, **đã bỏ bài tư vấn `/bi-gam-vinfast-fadil`** (chuyển sang cẩm nang) | Mảng `C` |

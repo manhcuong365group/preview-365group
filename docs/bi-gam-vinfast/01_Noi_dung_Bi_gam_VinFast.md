@@ -11,8 +11,8 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `cfc8ee6b14172c8ff70d6a61f88b628938e54b81eb973c674f44e6ef1645a81c` |
-| SHA-256 content-src.html | `56838a729fb8fa832ea72c05d7b66efa834c905c6435c6132ab8d0b52b1b61d4` |
+| SHA-256 index.html | `1bda4e6124da4dfc7530956f890e1c7cdd1adcdf02204928c3cdb6693ac8119a` |
+| SHA-256 content-src.html | `0e05a9339d5ab207d70011aec790b0824fb66785ae0de03824c3e63a117f7e98` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -118,18 +118,18 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Ảnh là ảnh
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp` | Mặt tiền chi nhánh Auto365, hệ thống nâng cấp xe 90+ chi nhánh tại 33 tỉnh thành (ảnh minh họa) |
-| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `auto365vn-tra-cuu-bao-hanh-dien-tu.webp` | Màn hình tra cứu bảo hành điện tử theo từng mẫu tại Auto365 (ảnh minh họa) |
-| Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp` | Xưởng Auto365 chuẩn bị bộ bi gầm X-Light X3 Ultra trước khi lắp (ảnh minh họa) |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `auto365vn-can-chinh-den-tren-bang-test-xuong.webp` | Căn đường cắt Cos trên bảng test tại xưởng Auto365 (ảnh minh họa) |
-| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `auto365vn-bao-gia-lap-dat-bi-gam.webp` | Bảng báo giá lắp đặt bi gầm tại xưởng Auto365 (ảnh minh họa) |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn, hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `auto365vn-tu-van-den-gam-theo-tung-xe.webp` | Tư vấn đèn gầm theo từng xe tại Auto365 (ảnh minh họa) |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-limo-green-chi-nhanh.webp` | VinFast Limo Green tại chi nhánh Auto365 |
+| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-vf6-phieu-ban-giao.webp` | VinFast VF 6 và màn hình tra cứu bảo hành điện tử tại Auto365 |
+| Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-fadil-ban-giao.webp` | VinFast Fadil lắp bi gầm X-Light 301 V2 tại xưởng Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `kiem-tra-duong-cat-cos-bang-test.webp` | Kiểm tra đường cắt Cos bi gầm VinFast trên bảng test tại Auto365 |
+| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-fadil-tu-van-cau-hinh.webp` | VinFast Fadil cùng bộ bi gầm trước khi lắp tại Auto365 |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn, hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-vf6-tu-van-cau-hinh.webp` | Tư vấn cấu hình bi gầm cho VinFast VF 6 tại Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ VinFast trên trang này.
 
 ## Khối chi nhánh — câu nhận diện
 
-Đến trụ sở chính hoặc chi nhánh gần bạn để kỹ thuật viên kiểm tra xe và tư vấn cấu hình. Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group, là điểm tư vấn, lắp đặt và hỗ trợ bảo hành các dòng đèn X-Light, GTR, AES theo nhu cầu sử dụng thực tế của từng xe.
+Đến trụ sở chính hoặc chi nhánh gần bạn để kỹ thuật viên kiểm tra xe và tư vấn cấu hình. Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group, là điểm tư vấn, lắp đặt và hỗ trợ bảo hành các dòng đèn X-Light, GTR, AES, Titan, Henvvei, Red Lighting, Matrix Light và Fogway theo nhu cầu sử dụng thực tế của từng xe.
 
 ## Cẩm nang (5)
 

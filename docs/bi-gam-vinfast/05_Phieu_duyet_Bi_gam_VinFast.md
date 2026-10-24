@@ -60,3 +60,12 @@ Reviewer R2 23/10/2026: 94,8/100 (chưa đạt). Chủ quản xác nhận 24/10/
 |---|---|---|
 | Sapo | …hồ sơ thi công thực tế của nhiều mẫu bi gầm (X-Light, GTR, AES) trên từng phiên bản xe VinFast. | …hồ sơ thi công thực tế của nhiều mẫu bi gầm (X-Light, GTR) trên từng phiên bản xe VinFast. (10 bài hồ sơ đang dẫn: 8 X-Light, 2 GTR, 0 AES) |
 | Thẻ "Tư vấn đúng theo từng xe" (chỉ trang VinFast) | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; | Kiểm tra hốc đèn, hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe trước khi đề xuất mẫu; |
+
+## Thay đổi 24/10/2026 sau lượt duyệt (chủ quản yêu cầu)
+
+| Mục | Nội dung |
+|---|---|
+| Ảnh 6 thẻ "Vì sao chọn" | Thay ảnh xe hãng khác (Hyundai, Toyota) bằng ảnh xe VinFast thật tại Auto365 lấy từ các trang VF 6, Fadil, Limo Green; alt ghi đúng dòng xe |
+| Câu nhận diện khối chi nhánh | Ghi đủ thương hiệu đèn: X-Light, GTR, AES, Titan, Henvvei, Red Lighting, Matrix Light và Fogway (khớp dải logo trên trang) |
+| Khối nhu cầu | 3 thẻ cao bằng nhau, dòng "Đã lắp" và link nằm sát đáy |
+| Lỗi hiển thị | Khối "Vì sao chọn" lấy từ theo-hang-xe dư 1 thẻ đóng </div> làm khung trang đóng sớm → CTA cuối trang mất màu nút và font; build đã tự cân lại |
