@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `6fa3e7b98274525311c6f3334bbd80ddd98a2f713622750835060ccdaa080e39`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `7e2d5307be1ab449c5c27d509895888e88b89e42531e85a778324b1199b3d037`
 Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -72,6 +72,21 @@ _Bảng: Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR 
 - Cửa sổ trời nhỏ giá bằng một ô kính sườn, cửa sổ trời panorama giá bằng một kính lái.
 
 ### Cách đọc các chỉ số
+
+**Hỏi:** TSERTotal Solar Energy Rejected – tổng năng lượng mặt trời bị loại bỏ
+Tỷ lệ năng lượng mặt trời (ánh sáng nhìn thấy, hồng ngoại, tia cực tím) không đi vào xe khi kính đã dán phim. Đây là chỉ số dùng để so sánh mức cản nhiệt tổng giữa các mã phim.
+
+**Hỏi:** VLTVisible Light Transmission – độ xuyên sáng
+Tỷ lệ ánh sáng nhìn thấy đi qua kính đã dán phim. VLT càng cao kính càng sáng; VLT thấp cho kính tối và riêng tư hơn.
+
+**Hỏi:** UVRUV Rejection – loại bỏ tia cực tím
+Tỷ lệ tia UV bị chặn lại, liên quan tới bảo vệ da và hạn chế bạc màu nội thất.
+
+**Hỏi:** Glare RGlare Rejection – tỷ lệ giảm lóa
+Mức giảm chói của ánh sáng nhìn thấy so với kính không dán phim; thường tỷ lệ nghịch với VLT.
+
+**Hỏi:** IRRIR Rejection – loại bỏ tia hồng ngoại
+Tỷ lệ tia hồng ngoại bị chặn trong một dải bước sóng. IRR cao không có nghĩa tổng nhiệt bị loại bỏ cũng cao bằng; để so sánh mức cản nhiệt tổng nên xem TSER.
 Số liệu trong bảng là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%) theo bảng 3M AutoFilm của 365Group; chỉ nên so sánh các mã trong cùng điều kiện đo này.
 
 ## Tài liệu và hỗ trợ  `#tai-lieu`
