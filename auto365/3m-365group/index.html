@@ -197,10 +197,7 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-docs{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .m3-docs a{display:flex;flex-direction:column;gap:4px;height:100%;border:1px solid var(--m3-line);border-left:3px solid var(--m3-red);border-radius:8px;padding:14px;background:#fff}
 .m3-docs__main{grid-column:1/-1}.m3-docs__main a{background:#fff5f5;border-left-width:5px}.m3-docs b{font-size:15px}.m3-docs span{font-size:13px;color:var(--m3-mute)}
-.m3-spec-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
-.m3-spec-filter button{font:inherit;font-size:13px;padding:7px 12px;border:1px solid var(--m3-line);border-radius:999px;background:#fff;cursor:pointer;color:var(--m3-ink)}
-.m3-spec-filter button[aria-pressed=true]{background:var(--m3-ink);color:#fff;border-color:var(--m3-ink)}
-.m3-spec.is-filtered{min-width:0}
+
 @media(max-width:1200px){.m3-menu-btn{display:block}.m3-head__in{position:relative}.m3-nav.is-open{display:flex;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--m3-line);box-shadow:0 8px 20px rgba(0,0,0,.08);padding:6px 16px;z-index:30}.m3-nav.is-open a{padding:12px 0;border-bottom:1px solid var(--m3-line);font-size:15px}.m3-nav.is-open a:last-child{border-bottom:0}}
 @media(max-width:1024px){.m3-hero .m3-wrap{grid-template-columns:1fr}.m3-docs{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.m3-docs{grid-template-columns:1fr}.m3-card ul{font-size:13px}}
@@ -209,10 +206,10 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-tbl th small{font-weight:400;color:var(--m3-mute)}.m3-tbl td.m3-pr{white-space:nowrap;font-weight:600;color:var(--m3-red)}
 .m3-gloss{margin-top:22px;border:1px solid var(--m3-line);border-radius:10px;padding:18px 20px;background:#fff}
 .m3-gloss h3{margin:0 0 10px;font-size:17px}
-.m3-gloss dl{margin:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px 20px}@media(max-width:1024px){.m3-gloss dl{grid-template-columns:1fr 1fr}}@media(max-width:560px){.m3-gloss dl{grid-template-columns:1fr}}
+.m3-gloss dl{margin:0;display:block}
 .m3-gloss dt{font-size:14px}.m3-gloss dt b{color:var(--m3-red)}.m3-gloss dt span{display:block;font-size:12px;color:var(--m3-mute)}
 .m3-gloss dd{margin:4px 0 0;font-size:13.5px;color:var(--m3-ink)}
-.m3-tech{margin-top:24px;background:#fff;border:1px solid var(--m3-line);border-radius:10px;padding:20px 22px}
+.m3-tech{margin-top:28px}
 .m3-tech h3,.m3-press h3{margin:0 0 12px;font-size:19px}
 .m3-tech__grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
 .m3-tech__facts{list-style:none;margin:0;padding:0}
@@ -225,8 +222,8 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-press{margin-top:24px}
 .m3-press>p{margin:-6px 0 12px;color:var(--m3-mute);font-size:14px}
 .m3-press ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.m3-press a{display:flex;flex-direction:column;gap:6px;height:100%;background:#fff;border:1px solid var(--m3-line);border-radius:10px;padding:14px}
-.m3-press a:hover{border-color:#bfc4cb}
+.m3-press ul a{display:flex;flex-direction:column;gap:6px;height:100%;background:#fff;border:1px solid var(--m3-line);border-radius:10px;padding:0 0 14px;overflow:hidden}.m3-press ul a>*:not(img){padding:0 14px}.m3-press ul img{width:100%;aspect-ratio:16/10;object-fit:cover;margin-bottom:4px}
+.m3-press ul a:hover{border-color:#bfc4cb}
 .m3-press small{font-size:11px;font-weight:700;color:var(--m3-red);text-transform:uppercase;letter-spacing:.04em}
 .m3-press b{font-size:14px;line-height:1.4}.m3-press span{font-size:12px;color:var(--m3-mute);margin-top:auto}
 @media(max-width:1024px){.m3-press ul{grid-template-columns:1fr 1fr}}
@@ -242,6 +239,20 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-quote{justify-content:center;width:100%}
 @media(max-width:1024px){.m3-cfg,.m3-cfg--2{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.m3-cfg,.m3-cfg--2{grid-template-columns:1fr}}
+.m3-gloss dl>div{display:grid;grid-template-columns:110px 220px 1fr;gap:6px 18px;align-items:baseline;padding:12px 0;border-top:1px solid var(--m3-line)}
+.m3-gloss dl>div:first-child{border-top:0}
+.m3-gloss dt{display:contents}
+.m3-gloss dt b{display:inline-block;justify-self:start;background:var(--m3-red);color:#fff!important;font-size:13px;padding:3px 10px;border-radius:999px}
+.m3-gloss dt span{display:block;font-size:13px;color:var(--m3-mute)}
+.m3-gloss dd{margin:0;font-size:14px}
+@media(max-width:768px){.m3-gloss dl>div{grid-template-columns:auto 1fr}.m3-gloss dd{grid-column:1/-1}}
+.m3-layers__t{margin:18px 0 10px;font-weight:700}
+.m3-layers{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:ly}
+.m3-layers li{counter-increment:ly;background:#fff;border:1px solid var(--m3-line);border-radius:10px;padding:14px 14px 14px 52px;position:relative}
+.m3-layers li:before{content:counter(ly);position:absolute;left:14px;top:14px;width:26px;height:26px;border-radius:50%;background:var(--m3-ink);color:#fff;font-weight:700;font-size:13px;display:grid;place-items:center}
+.m3-layers li b{display:block;font-size:14px}.m3-layers li span{font-size:13px;color:var(--m3-mute)}
+@media(max-width:1024px){.m3-layers{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.m3-layers{grid-template-columns:1fr}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1200px){.m3-nav{display:none}}
 @media(max-width:1024px){.m3-cfg,.m3-cfg--2{grid-template-columns:1fr 1fr}.m3-nav{display:none}}
@@ -277,7 +288,6 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
   <p class="m3-hero__sub">3 dòng công nghệ · 6 cấu hình dán trọn xe</p>
   <p class="m3-hero__tag">Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô</p>
   <p>365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.</p>
-  <p class="m3-byline">✔ Bài viết của <strong>365Group</strong> – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Kiểm duyệt kỹ thuật: <a href="https://auto365.vn/tac-gia/dang-minh-hoang" target="_blank" rel="noopener">Đặng Minh Hoàng</a> – Giám đốc điều hành 3M Pro Shop &amp; 3M Training Center, 23/10/2026 · Cập nhật: <time datetime="2026-10-24">24/10/2026</time></p>
   <div class="m3-hero__cta"><a class="m3-btn m3-btn--red" href="#dong-phim">Khám phá 3 dòng phim →</a><a class="m3-btn m3-btn--white" href="#tim-dai-ly">📍 Tìm đại lý theo khu vực</a></div>
   </div>
   <figure class="m3-hero__img"><img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center" width="701" height="436"><figcaption>3M Pro Shop · 3M Training Center – hệ thống 365Group – Auto365</figcaption></figure>
@@ -384,8 +394,7 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 
 <section class="m3-sec m3-sec--grey" id="thong-so"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>Thông số kỹ thuật các mã phim 3M</h2><p>Theo <a class="m3-link" href="tai-lieu/bang-gia-thong-so-3m-autofilm-260815.pdf" download>bảng giá và thông số 3M AutoFilm (mã 260815, PDF)</a> do 365Group phát hành, áp dụng từ 06/2026. Số liệu là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%), chỉ để tham khảo.</p></div><a class="m3-link" href="https://3m.365group.com.vn/thong-so-ky-thuat-3m.html">Xem trang thông số kỹ thuật 3M →</a></div>
-  <div class="m3-spec-filter" role="group" aria-label="Lọc theo dòng phim"><button type="button" data-f="all" aria-pressed="true">Tất cả</button><button type="button" data-f="cr" aria-pressed="false">Crystalline CR BLK</button><button type="button" data-f="ir" aria-pressed="false">Ceramic IR</button><button type="button" data-f="nr" aria-pressed="false">Ceramic NR</button></div>
-  <div class="m3-tbl-wrap" id="m3-spec-wrap"><table class="m3-spec"><caption class="m3-cap">Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365Group (áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm, VLT 73%</caption>
+    <div class="m3-tbl-wrap" id="m3-spec-wrap"><table class="m3-spec"><caption class="m3-cap">Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365Group (áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm, VLT 73%</caption>
       <thead><tr><th>Chỉ số</th><th class="cr">CR BLK<br>15</th><th class="cr">CR BLK<br>35</th><th class="cr">CR BLK<br>40</th><th class="cr">CR BLK<br>50</th><th class="cr">CR BLK<br>60</th><th class="nr">NR<br>5</th><th class="nr">NR<br>15</th><th class="nr">NR<br>25</th><th class="nr">NR<br>35</th><th class="ir">IR<br>15</th><th class="ir">IR<br>25</th><th class="ir">IR<br>50</th></tr></thead>
       <tbody>
         <tr class="tser"><td><b>TSER</b><small>Tổng năng lượng bị loại bỏ</small></td><td>64%</td><td>60%</td><td>58%</td><td>56%</td><td>54%</td><td>69%</td><td>65%</td><td>59%</td><td>51%</td><td>63%</td><td>61%</td><td>54%</td></tr>
@@ -473,36 +482,32 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
   </div>
   <div class="m3-tech" id="cong-nghe">
     <h3>Công nghệ phim ô tô 3M</h3>
-    <div class="m3-tech__grid">
-      <ul class="m3-tech__facts">
-        <li><b>Crystalline 200 lớp</b><span>Công nghệ quang học đa lớp, tông đen (Tone Black); giảm lóa đến 81% và loại bỏ hồng ngoại đến 98% với mã đậm nhất.</span></li>
-        <li><b>Chặn tia UV 99–99,9%</b><span>Tất cả mã trong bảng thông số chặn từ 99% tia UV trở lên, giúp bảo vệ da và hạn chế bạc màu nội thất.</span></li>
-        <li><b>Bảo hành điện tử 10 năm</b><span>Bảo hành chính hãng khi đã dán trên xe và được kích hoạt bảo hành điện tử.</span></li>
-      </ul>
-      <div class="m3-layers">
-        <b>Cấu tạo phim Crystalline</b>
-        <ol>
-          <li><b>Lớp phủ</b> – điều chỉnh màu sắc</li>
-          <li><b>Phim nền (MOF)</b> – cải thiện co nhiệt</li>
-          <li><b>Keo (PSA)</b> – kết dính phim với kính</li>
-          <li><b>Lớp lót Polyester</b> – bảo vệ lớp keo trước khi dán</li>
-        </ol>
-      </div>
+    <div class="m3-why">
+      <div><b>Crystalline 200 lớp</b><p>Công nghệ quang học đa lớp, tông đen (Tone Black); giảm lóa đến 81% và loại bỏ hồng ngoại đến 98% với mã đậm nhất.</p></div>
+      <div><b>Chặn tia UV 99–99,9%</b><p>Tất cả mã trong bảng thông số chặn từ 99% tia UV trở lên, giúp bảo vệ da và hạn chế bạc màu nội thất.</p></div>
+      <div><b>Bảo hành điện tử 10 năm</b><p>Bảo hành chính hãng khi đã dán trên xe và được kích hoạt bảo hành điện tử.</p></div>
     </div>
+    <p class="m3-layers__t">Cấu tạo phim Crystalline</p>
+    <ol class="m3-layers">
+      <li><b>Lớp phủ</b><span>Điều chỉnh màu sắc</span></li>
+      <li><b>Phim nền (MOF)</b><span>Cải thiện co nhiệt</span></li>
+      <li><b>Keo (PSA)</b><span>Kết dính phim với kính</span></li>
+      <li><b>Lớp lót Polyester</b><span>Bảo vệ lớp keo trước khi dán</span></li>
+    </ol>
     <p class="m3-note">Nguồn: <a class="m3-link" href="tai-lieu/bang-gia-thong-so-3m-autofilm-260815.pdf" download>bảng 3M AutoFilm của 365Group (mã 260815)</a>; <a class="m3-link" href="https://www.3m.com.vn/3M/vi_VN/car-personalization-vn/" target="_blank" rel="noopener">3M Việt Nam</a>.</p>
   </div>
   <div class="m3-press" id="bao-chi">
     <h3>Báo chí nói về 3M Pro Shop &amp; 3M Training Center</h3>
     <p>Bài viết sau sự kiện khai trương 3M Pro Shop &amp; 3M Training Center tại TP.HCM (06/2026). <a class="m3-link" href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Xem tất cả bài báo chí →</a></p>
     <ul>
-      <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><small>Thanh Niên</small><b>3M Pro Shop &amp; 3M Training Center tiên phong tại Việt Nam vận hành tại TPHCM</b><span>22/06/2026</span></a></li>
-      <li><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><small>Kinh tế &amp; Đời sống</small><b>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</b><span>22/06/2026</span></a></li>
-      <li><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener"><small>Thể thao &amp; Văn hóa</small><b>Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TPHCM</b><span>22/06/2026</span></a></li>
-      <li><a href="https://genk.vn/cong-nghe-nano-gom-tren-3m-ceramic-nr-the-he-moi-va-cach-doc-thong-so-phim-cach-nhiet-165260622201911871.chn" target="_blank" rel="noopener"><small>GenK</small><b>Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt</b><span>22/06/2026</span></a></li>
-      <li><a href="https://danviet.vn/tu-tphcm-den-cac-dia-phuong-nhu-cau-chuan-hoa-dich-vu-phim-cach-nhiet-va-ppf-d1437536.html" target="_blank" rel="noopener"><small>Dân Việt</small><b>Từ TPHCM đến các địa phương: Nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF</b><span>23/06/2026</span></a></li>
-      <li><a href="https://giadinh.suckhoedoisong.vn/xe-gia-dinh-va-nhu-cau-chon-phim-cach-nhiet-dung-thong-so-dung-quy-trinh-172260623092027053.htm" target="_blank" rel="noopener"><small>Sức khỏe &amp; Đời sống</small><b>Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình</b><span>23/06/2026</span></a></li>
-      <li><a href="https://eva.vn/tieu-dung/khoang-xe-thoai-mai-hon-voi-phim-cach-nhiet-3m-ceramic-nr-the-he-moi-c2a674705.html" target="_blank" rel="noopener"><small>Eva</small><b>Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới</b><span>22/06/2026</span></a></li>
-      <li><a href="https://tinhte.vn/thread/qc-kham-pha-he-sinh-thai-san-pham-3m-tai-3m-pro-shop.4154397/" target="_blank" rel="noopener"><small>Tinh Tế · bài quảng cáo</small><b>Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop</b><span>22/06/2026</span></a></li>
+      <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><img src="hinh/bao-thanhnien.webp" alt="Ảnh bài báo thanhnien.vn" width="480" height="300" loading="lazy"><small>Thanh Niên</small><b>3M Pro Shop &amp; 3M Training Center tiên phong tại Việt Nam vận hành tại TPHCM</b><span>22/06/2026</span></a></li>
+      <li><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><img src="hinh/bao-kinhtevadoisong.webp" alt="Ảnh bài báo kinhtevadoisong.vn" width="480" height="300" loading="lazy"><small>Kinh tế &amp; Đời sống</small><b>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</b><span>22/06/2026</span></a></li>
+      <li><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener"><img src="hinh/bao-thethaovanhoa.webp" alt="Ảnh bài báo thethaovanhoa.vn" width="480" height="300" loading="lazy"><small>Thể thao &amp; Văn hóa</small><b>Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TPHCM</b><span>22/06/2026</span></a></li>
+      <li><a href="https://genk.vn/cong-nghe-nano-gom-tren-3m-ceramic-nr-the-he-moi-va-cach-doc-thong-so-phim-cach-nhiet-165260622201911871.chn" target="_blank" rel="noopener"><img src="hinh/bao-genk.webp" alt="Ảnh bài báo genk.vn" width="480" height="300" loading="lazy"><small>GenK</small><b>Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt</b><span>22/06/2026</span></a></li>
+      <li><a href="https://danviet.vn/tu-tphcm-den-cac-dia-phuong-nhu-cau-chuan-hoa-dich-vu-phim-cach-nhiet-va-ppf-d1437536.html" target="_blank" rel="noopener"><img src="hinh/bao-danviet.webp" alt="Ảnh bài báo danviet.vn" width="480" height="300" loading="lazy"><small>Dân Việt</small><b>Từ TPHCM đến các địa phương: Nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF</b><span>23/06/2026</span></a></li>
+      <li><a href="https://giadinh.suckhoedoisong.vn/xe-gia-dinh-va-nhu-cau-chon-phim-cach-nhiet-dung-thong-so-dung-quy-trinh-172260623092027053.htm" target="_blank" rel="noopener"><img src="hinh/bao-suckhoedoisong.webp" alt="Ảnh bài báo giadinh.suckhoedoisong.vn" width="480" height="300" loading="lazy"><small>Sức khỏe &amp; Đời sống</small><b>Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình</b><span>23/06/2026</span></a></li>
+      <li><a href="https://eva.vn/tieu-dung/khoang-xe-thoai-mai-hon-voi-phim-cach-nhiet-3m-ceramic-nr-the-he-moi-c2a674705.html" target="_blank" rel="noopener"><img src="hinh/bao-eva.webp" alt="Ảnh bài báo eva.vn" width="480" height="300" loading="lazy"><small>Eva</small><b>Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới</b><span>22/06/2026</span></a></li>
+      <li><a href="https://tinhte.vn/thread/qc-kham-pha-he-sinh-thai-san-pham-3m-tai-3m-pro-shop.4154397/" target="_blank" rel="noopener"><img src="hinh/bao-tinhte.webp" alt="Ảnh bài báo tinhte.vn" width="480" height="300" loading="lazy"><small>Tinh Tế · bài quảng cáo</small><b>Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop</b><span>22/06/2026</span></a></li>
     </ul>
   </div>
 </div></section>
@@ -548,15 +553,7 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
     n.addEventListener("click",function(e){if(e.target.closest("a"))closeMenu()});
     document.addEventListener("keydown",function(e){if(e.key==="Escape"&&n.classList.contains("is-open")){closeMenu();b.focus()}});
   }
-  var t=document.querySelector("#m3-spec-wrap table");if(!t)return;
-  var heads=[].slice.call(t.querySelectorAll("thead th"));
-  document.querySelectorAll(".m3-spec-filter button").forEach(function(btn){btn.addEventListener("click",function(){
-    var f=btn.dataset.f;
-    document.querySelectorAll(".m3-spec-filter button").forEach(function(x){x.setAttribute("aria-pressed",String(x===btn))});
-    heads.forEach(function(th,i){if(!i)return;var k=th.classList.contains("cr")?"cr":th.classList.contains("nr")?"nr":"ir";var show=f==="all"||f===k;
-      [].slice.call(t.rows).forEach(function(row){if(row.cells[i])row.cells[i].hidden=!show})});
-    t.classList.toggle("is-filtered",f!=="all");
-  })});
+  
 })();
 </script>
 <footer class="m3-foot">© 365Group – Nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam.<br>3M, Crystalline và các nhãn hiệu liên quan là thương hiệu của 3M Company.</footer>

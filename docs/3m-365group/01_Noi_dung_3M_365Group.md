@@ -1,13 +1,12 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d98906d2a2842b1bf4abbb0ed4cd7c1dd7031c28dfdc6b6d5b30c6611ff06bc9`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `6fa3e7b98274525311c6f3334bbd80ddd98a2f713622750835060ccdaa080e39`
 Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
 Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô
 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam, cung cấp phim cho hệ thống đại lý trên toàn quốc. Từ 3 dòng phim của 3M, chúng tôi đóng gói thành 6 cấu hình dán trọn xe, giúp chủ xe chọn nhanh theo ngân sách và nhu cầu.
-✔ Bài viết của 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam · Kiểm duyệt kỹ thuật: Đặng Minh Hoàng – Giám đốc điều hành 3M Pro Shop & 3M Training Center, 23/10/2026 · Cập nhật: 24/10/2026
 3M Pro Shop · 3M Training Center – hệ thống 365Group – Auto365
 Cản tia UVBảo vệ sức khỏe và nội thất
 Giảm nhiệt trong xeGiảm nhiệt, tận hưởng không gian mát mẻ
@@ -128,13 +127,14 @@ Theo 3M, hãng đã có hơn 55 năm phát triển phim phủ màu cửa kính v
 Phim ô tô 3M được hãng thiết kế để dùng lâu dài; thời hạn bảo hành từng cấu hình ghi trong bảng so sánh phía trên.
 
 ### Công nghệ phim ô tô 3M
-- Crystalline 200 lớpCông nghệ quang học đa lớp, tông đen (Tone Black); giảm lóa đến 81% và loại bỏ hồng ngoại đến 98% với mã đậm nhất.
-- Chặn tia UV 99–99,9%Tất cả mã trong bảng thông số chặn từ 99% tia UV trở lên, giúp bảo vệ da và hạn chế bạc màu nội thất.
-- Bảo hành điện tử 10 nămBảo hành chính hãng khi đã dán trên xe và được kích hoạt bảo hành điện tử.
-- Lớp phủ – điều chỉnh màu sắc
-- Phim nền (MOF) – cải thiện co nhiệt
-- Keo (PSA) – kết dính phim với kính
-- Lớp lót Polyester – bảo vệ lớp keo trước khi dán
+Công nghệ quang học đa lớp, tông đen (Tone Black); giảm lóa đến 81% và loại bỏ hồng ngoại đến 98% với mã đậm nhất.
+Tất cả mã trong bảng thông số chặn từ 99% tia UV trở lên, giúp bảo vệ da và hạn chế bạc màu nội thất.
+Bảo hành chính hãng khi đã dán trên xe và được kích hoạt bảo hành điện tử.
+Cấu tạo phim Crystalline
+- Lớp phủĐiều chỉnh màu sắc
+- Phim nền (MOF)Cải thiện co nhiệt
+- Keo (PSA)Kết dính phim với kính
+- Lớp lót PolyesterBảo vệ lớp keo trước khi dán
 Nguồn: bảng 3M AutoFilm của 365Group (mã 260815); 3M Việt Nam.
 
 ### Báo chí nói về 3M Pro Shop & 3M Training Center
@@ -194,3 +194,11 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - hinh/case-ford-everest.webp — Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365
 - hinh/case-vinfast-vf8.webp — VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365
 - hinh/case-volvo-xc90.webp — Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365
+- hinh/bao-thanhnien.webp — Ảnh bài báo thanhnien.vn
+- hinh/bao-kinhtevadoisong.webp — Ảnh bài báo kinhtevadoisong.vn
+- hinh/bao-thethaovanhoa.webp — Ảnh bài báo thethaovanhoa.vn
+- hinh/bao-genk.webp — Ảnh bài báo genk.vn
+- hinh/bao-danviet.webp — Ảnh bài báo danviet.vn
+- hinh/bao-suckhoedoisong.webp — Ảnh bài báo giadinh.suckhoedoisong.vn
+- hinh/bao-eva.webp — Ảnh bài báo eva.vn
+- hinh/bao-tinhte.webp — Ảnh bài báo tinhte.vn
