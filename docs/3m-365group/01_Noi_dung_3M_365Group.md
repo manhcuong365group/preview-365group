@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `caf1c2e03ba1e7fb8eb264add8a564ae80ab63abd680748244dec7057e83b2db`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f1c45bbd207c6cdbc5523f3b9fb7e68da5e3930e981d0956c56cdd4f49b6d324`
 Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -39,40 +39,17 @@ Dòng cao cấp, ưu tiên độ trong khi nhìn
 Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365Group gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.
 
 ### 3M Ceramic Hybrid
-- Kính lái: NR 35
-- Kính hông/lưng: NR 25/15/5
-- Bảo hành: 10 năm
-- Trọn xe: 5,9 / 7,9 / 9,5 triệuMinicar / Sedan / SUV
 
 ### 3M Ceramic IR
-- Kính lái: IR 50
-- Kính hông/lưng: IR 25/15
-- Bảo hành: 10 năm
-- Trọn xe: 7,2 / 9 / 10,5 triệuMinicar / Sedan / SUV
 
 ### Crystalline Hybrid
-- Kính lái: CR BLK 60/50
-- Kính hông/lưng: NR 25/15/5
-- Bảo hành: 10 năm
-- Trọn xe: 9 / 10,8 / 12,5 triệuMinicar / Sedan / SUV
 
 ### Crystalline CR BLK
-- Kính lái: CR BLK 60/50
-- Kính hông/lưng: CR BLK 35/15
-- Bảo hành: 10 năm
-- Trọn xe: 12,2 / 14,8 / 17,6 triệuMinicar / Sedan / SUV
+2 cấu hình PRO · CR BLK 40 ở kính lái thay cho CR BLK 50/60
 
 ### Hybrid PRO
-- Kính lái: CR BLK 40
-- Kính hông/lưng: NR 25/15/5
-- Bảo hành: 10 năm
-- Trọn xe: 9,8 / 11,6 / 13,3 triệuMinicar / Sedan / SUV
 
 ### CR BLK PRO
-- Kính lái: CR BLK 40
-- Kính hông/lưng: CR BLK 35/15
-- Bảo hành: 10 năm
-- Trọn xe: 12,9 / 15,5 / 18,3 triệuMinicar / Sedan / SUV
 
 ## So sánh nhanh 6 cấu hình  `#so-sanh`
 
@@ -173,7 +150,7 @@ Phim ô tô 3M được hãng thiết kế để dùng lâu dài; thời hạn b
 Nguồn: bảng 3M AutoFilm của 365Group (mã 260815); 3M Việt Nam.
 
 ### Báo chí nói về 3M Pro Shop & 3M Training Center
-Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại TP.HCM (06/2026).
+Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại TP.HCM (06/2026). Xem tất cả bài báo chí →
 - Thanh Niên3M Pro Shop & 3M Training Center tiên phong tại Việt Nam vận hành tại TPHCM22/06/2026
 - Kinh tế & Đời sốngTừ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô22/06/2026
 - Thể thao & Văn hóaSau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TPHCM22/06/2026

@@ -102,7 +102,7 @@ img{max-width:100%;display:block}
 .m3-chip small{display:block;font-weight:400;color:var(--m3-mute);font-size:11px}
 .m3-node--cr .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 /* configs */
-.m3-cfg{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.m3-cfg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .m3-card{border:1px solid var(--m3-line);border-radius:8px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
 .m3-card__img{position:relative;aspect-ratio:16/10;background:linear-gradient(180deg,#f7f8fa,#eceff3);border-bottom:1px solid var(--m3-line)}
 .m3-card__img img{width:100%;height:100%;object-fit:contain;padding:30px 14px 8px}
@@ -231,9 +231,20 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-press b{font-size:14px;line-height:1.4}.m3-press span{font-size:12px;color:var(--m3-mute);margin-top:auto}
 @media(max-width:1024px){.m3-press ul{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){.m3-tech__grid,.m3-press ul{grid-template-columns:1fr}}
+.m3-cfg{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.m3-cfg--2{grid-template-columns:repeat(2,1fr)}
+.m3-pro{margin-top:16px;background:#fff;border:1px solid var(--m3-line);border-radius:12px;padding:16px}
+.m3-pro__t{margin:0 0 12px;font-size:15px;color:var(--m3-mute)}.m3-pro__t b{color:var(--m3-ink)}
+.m3-pkg{margin:0 0 12px;font-size:14px}.m3-pkg div{display:flex;justify-content:space-between;gap:10px;padding:4px 0}.m3-pkg dt{color:var(--m3-mute)}.m3-pkg dd{margin:0;font-weight:500;text-align:right}
+.m3-pbox{background:var(--m3-bg);border-radius:8px;padding:12px;margin:0 0 12px;border-top:1px solid var(--m3-line)}
+.m3-pbox__l{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--m3-mute);margin-bottom:6px}
+.m3-pbox div:not(.m3-pbox__l){display:flex;justify-content:space-between;font-size:14px;padding:4px 0}.m3-pbox b{font-weight:700}
+.m3-pkg-link{display:block;text-align:center;font-size:14px;font-weight:600;margin:auto 0 10px}
+.m3-quote{justify-content:center;width:100%}
+@media(max-width:1024px){.m3-cfg,.m3-cfg--2{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.m3-cfg,.m3-cfg--2{grid-template-columns:1fr}}
 .m3-foot{background:var(--m3-ink);color:#aaa;font-size:13px;padding:24px 0;text-align:center}
 @media(max-width:1200px){.m3-nav{display:none}}
-@media(max-width:1024px){.m3-cfg{grid-template-columns:repeat(3,1fr)}.m3-nav{display:none}}
+@media(max-width:1024px){.m3-cfg,.m3-cfg--2{grid-template-columns:1fr 1fr}.m3-nav{display:none}}
 @media(max-width:768px){
 .m3-sec{padding:24px 0}.m3-sec__hd h2{font-size:20px}
 .m3-feat div{flex-direction:column;gap:6px;padding:14px 12px}.m3-feat i{font-size:22px}.m3-feat b{font-size:13px}
@@ -243,7 +254,7 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 .m3-hero__cta .m3-btn{flex:1;justify-content:center;padding:10px 12px;font-size:13px}
 .m3-feat{grid-template-columns:1fr 1fr}.m3-feat div:nth-child(3){border-left:0}.m3-feat div:nth-child(n+3){border-top:1px solid var(--m3-line)}
 .m3-lines,.m3-tree,.m3-cmp,.m3-dl{grid-template-columns:1fr}
-.m3-cfg{grid-template-columns:1fr 1fr}.m3-card h3{white-space:normal}
+.m3-cfg,.m3-cfg--2{grid-template-columns:1fr}.m3-card h3{white-space:normal}
 .m3-head .m3-btn{padding:8px 12px;font-size:12px;white-space:nowrap}.m3-hide-sm{display:none}.m3-head__in{gap:10px}.m3-logo b{font-size:24px}.m3-logo span{font-size:0}.m3-logo span strong{font-size:12px}
 .m3-stats{gap:18px}
 .m3-stats b{font-size:24px}
@@ -291,12 +302,41 @@ html{scroll-padding-top:76px}section[id],div[id]{scroll-margin-top:76px}
 <section class="m3-sec m3-sec--grey"><div class="m3-wrap">
   <div class="m3-sec__hd"><div><h2>6 cấu hình phim cách nhiệt 3M</h2><p>Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365Group gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.</p></div></div>
   <div class="m3-cfg">
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-vf3.webp" alt="VinFast VF3 – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-red">Ưu tiên chi phí</span></div><div class="m3-card__bd"><span class="m3-line-tag c-nr">DÒNG CERAMIC NR</span><h3>3M Ceramic Hybrid</h3><ul><li>Kính lái: NR 35</li><li>Kính hông/lưng: NR 25/15/5</li><li>Bảo hành: 10 năm</li><li class="m3-price">Trọn xe: <b>5,9</b> / <b>7,9</b> / <b>9,5</b> triệu<small>Minicar / Sedan / SUV</small></li></ul><a class="m3-btn m3-btn--line" href="https://3m.365group.com.vn/phim-cach-nhiet-3m-ceramic-nr.html">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-hr-v.webp" alt="Honda HR-V – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-blue">Cân bằng hiệu suất</span></div><div class="m3-card__bd"><span class="m3-line-tag c-ir">DÒNG CERAMIC IR</span><h3>3M Ceramic IR</h3><ul><li>Kính lái: IR 50</li><li>Kính hông/lưng: IR 25/15</li><li>Bảo hành: 10 năm</li><li class="m3-price">Trọn xe: <b>7,2</b> / <b>9</b> / <b>10,5</b> triệu<small>Minicar / Sedan / SUV</small></li></ul><a class="m3-btn m3-btn--line" href="https://3m.365group.com.vn/3m-ceramic-ir.html">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-cr-v.webp" alt="Honda CR-V – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">Kính lái Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline Hybrid</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: NR 25/15/5</li><li>Bảo hành: 10 năm</li><li class="m3-price">Trọn xe: <b>9</b> / <b>10,8</b> / <b>12,5</b> triệu<small>Minicar / Sedan / SUV</small></li></ul><a class="m3-btn m3-btn--line" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid" target="_blank" rel="noopener">Xem trên auto365.vn ↗</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-santa-fe.webp" alt="Hyundai Santa Fe – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">Đồng bộ Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline CR BLK</h3><ul><li>Kính lái: CR BLK 60/50</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li><li class="m3-price">Trọn xe: <b>12,2</b> / <b>14,8</b> / <b>17,6</b> triệu<small>Minicar / Sedan / SUV</small></li></ul><a class="m3-btn m3-btn--line" href="https://3m.365group.com.vn/3m-crystalline-cr-blk.html">Xem chi tiết</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-es.webp" alt="Lexus ES – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Kính lái đậm hơn</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Hybrid PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: NR 25/15/5</li><li>Bảo hành: 10 năm</li><li class="m3-price">Trọn xe: <b>9,8</b> / <b>11,6</b> / <b>13,3</b> triệu<small>Minicar / Sedan / SUV</small></li></ul><a class="m3-btn m3-btn--line" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid-pro" target="_blank" rel="noopener">Xem trên auto365.vn ↗</a></div></article>
-    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-lx.webp" alt="Lexus LX – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Crystalline toàn xe</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>CR BLK PRO</h3><ul><li>Kính lái: CR BLK 40</li><li>Kính hông/lưng: CR BLK 35/15</li><li>Bảo hành: 10 năm</li><li class="m3-price">Trọn xe: <b>12,9</b> / <b>15,5</b> / <b>18,3</b> triệu<small>Minicar / Sedan / SUV</small></li></ul><a class="m3-btn m3-btn--line" href="https://3m.365group.com.vn/3m-crystalline-cr-blk-pro.html">Xem chi tiết</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-vf3.webp" alt="VinFast VF3 – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-red">Ưu tiên chi phí</span></div><div class="m3-card__bd"><span class="m3-line-tag c-nr">DÒNG CERAMIC NR</span><h3>3M Ceramic Hybrid</h3>
+      <dl class="m3-pkg"><div><dt>Kính lái</dt><dd>NR 35</dd></div><div><dt>Sườn / lưng</dt><dd>NR 25 / NR 15 / NR 5</dd></div><div><dt>Dòng phim</dt><dd>Ceramic NR</dd></div><div><dt>Bảo hành</dt><dd>10 năm</dd></div></dl>
+      <div class="m3-pbox"><div class="m3-pbox__l">Giá tham khảo trọn xe</div><div><span>Minicar</span><b>5.900.000đ</b></div><div><span>Sedan</span><b>7.900.000đ</b></div><div><span>SUV / MPV</span><b>9.500.000đ</b></div></div>
+      <a class="m3-pkg-link" href="https://3m.365group.com.vn/phim-cach-nhiet-3m-ceramic-nr.html">Xem dòng Ceramic NR →</a>
+      <a class="m3-btn m3-btn--line m3-quote" href="#tu-van" data-pkg="3M Ceramic Hybrid">Nhận báo giá gói này</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-hr-v.webp" alt="Honda HR-V – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-blue">Cân bằng hiệu suất</span></div><div class="m3-card__bd"><span class="m3-line-tag c-ir">DÒNG CERAMIC IR</span><h3>3M Ceramic IR</h3>
+      <dl class="m3-pkg"><div><dt>Kính lái</dt><dd>IR 50</dd></div><div><dt>Sườn / lưng</dt><dd>IR 25 / IR 15</dd></div><div><dt>Công nghệ</dt><dd>Ceramic hồng ngoại</dd></div><div><dt>Bảo hành</dt><dd>10 năm</dd></div></dl>
+      <div class="m3-pbox"><div class="m3-pbox__l">Giá tham khảo trọn xe</div><div><span>Minicar</span><b>7.200.000đ</b></div><div><span>Sedan</span><b>9.000.000đ</b></div><div><span>SUV / MPV</span><b>10.500.000đ</b></div></div>
+      <a class="m3-pkg-link" href="https://3m.365group.com.vn/3m-ceramic-ir.html">Xem dòng Ceramic IR →</a>
+      <a class="m3-btn m3-btn--line m3-quote" href="#tu-van" data-pkg="3M Ceramic IR">Nhận báo giá gói này</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-cr-v.webp" alt="Honda CR-V – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">Kính lái Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline Hybrid</h3>
+      <dl class="m3-pkg"><div><dt>Kính lái</dt><dd>CR BLK 60 / 50</dd></div><div><dt>Sườn / lưng</dt><dd>NR 25 / NR 15 / NR 5</dd></div><div><dt>Công nghệ</dt><dd>Crystalline + Ceramic</dd></div><div><dt>VLT kính lái</dt><dd>48–57%</dd></div></dl>
+      <div class="m3-pbox"><div class="m3-pbox__l">Giá tham khảo trọn xe</div><div><span>Minicar</span><b>9.000.000đ</b></div><div><span>Sedan</span><b>10.800.000đ</b></div><div><span>SUV / MPV</span><b>12.500.000đ</b></div></div>
+      <a class="m3-pkg-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid" target="_blank" rel="noopener">Xem trên auto365.vn ↗</a>
+      <a class="m3-btn m3-btn--line m3-quote" href="#tu-van" data-pkg="Crystalline Hybrid">Nhận báo giá gói này</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-santa-fe.webp" alt="Hyundai Santa Fe – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">Đồng bộ Crystalline</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Crystalline CR BLK</h3>
+      <dl class="m3-pkg"><div><dt>Kính lái</dt><dd>CR BLK 60 / 50</dd></div><div><dt>Sườn / lưng</dt><dd>CR BLK 35 / 15</dd></div><div><dt>Công nghệ</dt><dd>Quang học đa lớp</dd></div><div><dt>UVR</dt><dd>99,9%</dd></div></dl>
+      <div class="m3-pbox"><div class="m3-pbox__l">Giá tham khảo trọn xe</div><div><span>Minicar</span><b>12.200.000đ</b></div><div><span>Sedan</span><b>14.800.000đ</b></div><div><span>SUV / MPV</span><b>17.600.000đ</b></div></div>
+      <a class="m3-pkg-link" href="https://3m.365group.com.vn/3m-crystalline-cr-blk.html">Xem dòng Crystalline CR BLK →</a>
+      <a class="m3-btn m3-btn--line m3-quote" href="#tu-van" data-pkg="Crystalline CR BLK">Nhận báo giá gói này</a></div></article>
+  </div>
+  <div class="m3-pro">
+    <p class="m3-pro__t"><b>2 cấu hình PRO</b> · CR BLK 40 ở kính lái thay cho CR BLK 50/60</p>
+    <div class="m3-cfg m3-cfg--2">
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-es.webp" alt="Lexus ES – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Kính lái đậm hơn</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>Hybrid PRO</h3>
+      <dl class="m3-pkg"><div><dt>Kính lái</dt><dd>CR BLK 40</dd></div><div><dt>Sườn / lưng</dt><dd>NR 25 / NR 15 / NR 5</dd></div><div><dt>Công nghệ</dt><dd>Crystalline lái đậm + Ceramic</dd></div><div><dt>Giảm lóa kính lái</dt><dd>44%</dd></div></dl>
+      <div class="m3-pbox"><div class="m3-pbox__l">Giá tham khảo trọn xe</div><div><span>Minicar</span><b>9.800.000đ</b></div><div><span>Sedan</span><b>11.600.000đ</b></div><div><span>SUV / MPV</span><b>13.300.000đ</b></div></div>
+      <a class="m3-pkg-link" href="https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid-pro" target="_blank" rel="noopener">Xem trên auto365.vn ↗</a>
+      <a class="m3-btn m3-btn--line m3-quote" href="#tu-van" data-pkg="Hybrid PRO">Nhận báo giá gói này</a></div></article>
+    <article class="m3-card"><div class="m3-card__img"><img src="hinh/m-lx.webp" alt="Lexus LX – xe minh họa phân khúc gói" loading="lazy"><span class="m3-tag t-gold">PRO – Crystalline toàn xe</span></div><div class="m3-card__bd"><span class="m3-line-tag c-cr">DÒNG CRYSTALLINE</span><h3>CR BLK PRO</h3>
+      <dl class="m3-pkg"><div><dt>Kính lái</dt><dd>CR BLK 40</dd></div><div><dt>Sườn / lưng</dt><dd>CR BLK 35 / 15</dd></div><div><dt>Công nghệ</dt><dd>Quang học đa lớp</dd></div><div><dt>Giảm lóa kính lái</dt><dd>44%</dd></div></dl>
+      <div class="m3-pbox"><div class="m3-pbox__l">Giá tham khảo trọn xe</div><div><span>Minicar</span><b>12.900.000đ</b></div><div><span>Sedan</span><b>15.500.000đ</b></div><div><span>SUV / MPV</span><b>18.300.000đ</b></div></div>
+      <a class="m3-pkg-link" href="https://3m.365group.com.vn/3m-crystalline-cr-blk-pro.html">Xem CR BLK PRO →</a>
+      <a class="m3-btn m3-btn--line m3-quote" href="#tu-van" data-pkg="CR BLK PRO">Nhận báo giá gói này</a></div></article>
+    </div>
   </div>
 </div></section>
 
@@ -474,7 +514,7 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
   </div>
   <div class="m3-press" id="bao-chi">
     <h3>Báo chí nói về 3M Pro Shop &amp; 3M Training Center</h3>
-    <p>Bài viết sau sự kiện khai trương 3M Pro Shop &amp; 3M Training Center tại TP.HCM (06/2026).</p>
+    <p>Bài viết sau sự kiện khai trương 3M Pro Shop &amp; 3M Training Center tại TP.HCM (06/2026). <a class="m3-link" href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Xem tất cả bài báo chí →</a></p>
     <ul>
       <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><small>Thanh Niên</small><b>3M Pro Shop &amp; 3M Training Center tiên phong tại Việt Nam vận hành tại TPHCM</b><span>22/06/2026</span></a></li>
       <li><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><small>Kinh tế &amp; Đời sống</small><b>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</b><span>22/06/2026</span></a></li>
@@ -541,5 +581,6 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
 })();
 </script>
 <footer class="m3-foot">© 365Group – Nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam.<br>3M, Crystalline và các nhãn hiệu liên quan là thương hiệu của 3M Company.</footer>
+<script>document.querySelectorAll(".m3-quote").forEach(function(a){a.addEventListener("click",function(){var s=document.querySelector('#m3-lead-form select[name="service"]');if(!s)return;for(var i=0;i<s.options.length;i++){if(s.options[i].text===a.dataset.pkg){s.selectedIndex=i;break}}setTimeout(function(){var p=document.querySelector('#m3-lead-form input[name="phone"]');if(p)p.focus({preventScroll:true})},400)})});</script>
 </body>
 </html>
