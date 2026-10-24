@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `115c42eb47ecbea729a936b7ac534e982c45378d0da178f7e2d814fcd7bcc336` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `f004b17c6b197c9dfd207d534239e1ecb4afef7a67ec947be0548c2b959d53ef` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -58,3 +58,4 @@ Người xác nhận: anh Nguyễn Quang Đạo. Mức bằng chứng: kỹ thu�
 | Bổ sung case/video bi gầm VF5 thật khi có bài đăng (nâng G3/C2) | Khi có case |
 | Xoá khối `#vf3lp-internal-check`, bỏ noindex; nghiệm thu Live L1–L8 | Khi đăng production |
 | Test gửi lead trên trang VF5 | Sau khi đăng |
+- 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".

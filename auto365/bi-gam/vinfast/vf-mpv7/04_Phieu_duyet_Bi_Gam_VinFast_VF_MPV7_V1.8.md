@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `19917f14117484258a48bcfa3002b234888dfd1c1a4aa76bf6ba149521c35899` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `0fc37ad9e08db08099bb5ca62f6a79022b03e06e176bba56baa1bc3b6c05552c` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -58,3 +58,4 @@ Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát/bộ g
 | 15 | Henvvei GT-1 | 3.0 | 5.800.000đ | Kỹ thuật xác nhận |
 | 16 | Red Lighting R8 Spyder | 3.0 | 5.500.000đ | Kỹ thuật xác nhận |
 | 17 | Matrix Light M1 Pro | 3.0 | 4.000.000đ | Kỹ thuật xác nhận |
+- 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".

@@ -7,7 +7,7 @@
 | Trang | Bi gầm VinFast EC Van — preview https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `78c6ab59c682a3536beadd9fc0634beecb77ec2ea0f0ec35db2f55d82f7382f3` (cùng mã trong 02/04) |
+| SHA-256 index.html | `63cc47fa05dda2751d74b1a11ff34b2761ca9147f16fdce7de124125e739240b` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 24/10/2026 |
 | Kiểm tra máy | JSON-LD parse OK; FAQPage 6 = 6 hiển thị (khớp nguyên văn); ItemList 17 = 17 card, đúng thứ tự; header shell giống hệt trang Fadil; "Fadil" chỉ còn trong thẻ case VinFast khác và "Dòng xe VinFast khác" |
 | Kiểm tra trình duyệt | Desktop 1366: lưới sản phẩm 1 hàng cuộn ngang, lọc hãng (AES → 3 mẫu), so sánh 2 mẫu lọc đúng 2 hàng bảng, FAQ mở 5 → 6. Mobile 375: scrollWidth 375, lưới 2 hàng cuộn ngang, popup 4 nhu cầu mở đúng (Tiết kiệm: Titan 301 → Fogway Gen 1 → F10 New), ảnh local tải đủ |
