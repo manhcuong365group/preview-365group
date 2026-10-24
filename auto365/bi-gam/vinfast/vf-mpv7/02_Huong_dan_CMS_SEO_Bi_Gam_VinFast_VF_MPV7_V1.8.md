@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast VF MPV 7: giá, cấu hình và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF MPV 7 |
-| Bản nguồn | `index.html` SHA-256 `cab1802bccdce43969f76496fc060053c3503e53e0d47dd92aa151cdfb15f814` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `1d14a6d5724109e96731d34fd8857805fa9c0dcd7f707f8fbfad78d1c09596a2` (24/10/2026) |
 
 ## Khi đăng production
 
