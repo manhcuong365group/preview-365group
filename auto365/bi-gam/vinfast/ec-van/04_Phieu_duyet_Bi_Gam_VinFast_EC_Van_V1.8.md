@@ -1,0 +1,58 @@
+# Bi gầm VinFast EC Van — Phiếu duyệt V1.8
+
+## Bản hiện hành — 24/10/2026
+
+| Trường | Giá trị |
+|---|---|
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `8444c336cc6dd12b8df459035dcf9277cb63f6593ab2f5fb2cf5d75573528ec4` |
+| Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
+| URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
+| Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — **đã duyệt 24/10/2026** |
+
+## Dữ kiện
+
+| Dữ kiện | Giá trị | Nguồn / trạng thái |
+|---|---|---|
+| Lắp được | EC Van lắp được bi gầm lens 3.0 inch và 2.0 inch | Anh Nguyễn Quang Đạo xác nhận 24/10/2026 |
+| Mẫu đèn | 17 mẫu: 14 mẫu 3.0 inch như trang Fadil (bỏ X-Light F10 Pro bản không V2) + X-Light F10 New (2025) 4.300.000đ + X-Light F10 2.0 New 4.500.000đ + AES SV 2.0 Max 5.000.000đ | User chuyển, 24/10/2026; giá F10 New đã duyệt |
+| Giá | 3.500.000–6.000.000đ/bộ (1 bộ = 1 cặp), chưa VAT | Theo trang Fadil/PDP |
+| Mức bằng chứng | Tất cả "Kỹ thuật xác nhận"; không có case/video/bài ánh sáng EC Van trên auto365.vn | User, 24/10/2026 |
+| Bảng so sánh | 8 mẫu: 301 V2, F10 New (2025), GTR G1 Turbo V2, F10 Turbo V2, AES SV 3.0 Pro, F10 Pro V2, AES SV 3.0 Max, F10 2.0 New | — |
+| Tab Tiết kiệm | Titan 301 (3,5tr) → Fogway Gen 1 (4tr) → X-Light F10 New (2025) (4,3tr), xếp theo giá | — |
+| Case | Mục "Xe VinFast đã lắp bi gầm tại Auto365" dùng case các dòng VinFast khác (Fadil, VF7, VF3, Limo Green, VF6), ghi đúng tên xe | Bài đã đăng trên auto365.vn |
+| Ảnh | Hero: ảnh hãng VinFast EC Van (shop.vinfastauto.com), đặt trên nền trắng, alt "VinFast EC Van (ảnh hãng)". Ảnh khác là ảnh xưởng/minh họa chung, không gắn tên xe | — |
+| Hotline | 0365 365 911; đơn vị /bộ | — |
+| Đại lý chính hãng | X-Light, GTR, AES | Đã xác nhận 12 và 14/10/2026 |
+
+## Bảng xác nhận tương thích — EC Van (24/10/2026)
+
+Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát, mặt dưỡng, điện) chốt sau khi kiểm tra xe.
+
+| # | Mẫu | Giá (chưa VAT) | Mức bằng chứng |
+|---|---|---|---|
+| 1 | X-Light 301 V2 | 4.500.000đ | Kỹ thuật xác nhận |
+| 2 | GTR G1 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận |
+| 3 | Titan 301 | 3.500.000đ | Kỹ thuật xác nhận |
+| 4 | Fogway Gen 1 | 4.000.000đ | Kỹ thuật xác nhận |
+| 5 | X-Light F10 New (2025) | 4.300.000đ | Kỹ thuật xác nhận |
+| 6 | X-Light F10 Turbo V2 | 6.000.000đ | Kỹ thuật xác nhận |
+| 7 | AES SV 3.0 Pro | 5.500.000đ | Kỹ thuật xác nhận |
+| 8 | X-Light F10 Pro V2 | 5.500.000đ | Kỹ thuật xác nhận |
+| 9 | X-Light X3 Ultra | 5.500.000đ | Kỹ thuật xác nhận |
+| 10 | AES SV 3.0 Max | 6.000.000đ | Kỹ thuật xác nhận |
+| 11 | X-Light F10 2.0 New | 4.500.000đ | Kỹ thuật xác nhận |
+| 12 | AES SV 2.0 Max | 5.000.000đ | Kỹ thuật xác nhận |
+| 13 | X-Light X3 Pro | 5.000.000đ | Kỹ thuật xác nhận |
+| 14 | GTR G1 Ultra | 5.500.000đ | Kỹ thuật xác nhận |
+| 15 | Henvvei GT-1 | 5.800.000đ | Kỹ thuật xác nhận |
+| 16 | Red Lighting R8 Spyder | 5.500.000đ | Kỹ thuật xác nhận |
+| 17 | Matrix Light M1 Pro | 4.000.000đ | Kỹ thuật xác nhận |
+
+## Việc còn lại
+
+| Việc | Giai đoạn |
+|---|---|
+| Thay URL og:image/Article.image sau khi upload ảnh lên CMS | Khi đăng production |
+| Bổ sung case/video khi có xe EC Van lắp thực tế (khi đó mới đổi nhãn) | Sau khi có bài |
+| Xoá `#vf3lp-internal-check`, bỏ noindex, nghiệm thu Live L1–L8 | Khi đăng production |
