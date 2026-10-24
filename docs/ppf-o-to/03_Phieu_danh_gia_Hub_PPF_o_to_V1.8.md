@@ -105,11 +105,11 @@ Thay đổi chính 23–24/10: TDS 3M 150 Gloss đổi sang Revision B (08/2026)
 | G3 | 5 | 4,4 | 4,6 | R22-01 đã sửa (TDS Revision B, 3 href + 2 nhãn); nguồn bảng giá ghi trên trang |
 | U1 | 5 | 4,9 | 4,8 | Trang dài hơn do khối giá tương tác; desktop + 375px không tràn |
 | U2 | 5 | 4,9 | 4,9 | Thanh tổng + nút "Nhận báo giá chính xác" dẫn form; finder giữ địa phương |
-| U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; lead 228 CRM đã nhận; phần sửa 23–24/10 chưa có lần duyệt lại của reviewer |
+| U3 | 5 | CX | 4,5 | 01–03 cùng SHA bên dưới; lead 228 CRM đã nhận; anh Đặng Minh Hoàng đã duyệt khối giá mới 24/10/2026 (lastReviewed = 2026-10-24) |
 
 **Tổng tự chấm: C 29,4 · S 29,0 · G 24,2 · U 14,2 → 96,8/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,2 ≥ 23,75.
 
-Việc còn lại trước ký duyệt: (1) anh Đặng Minh Hoàng duyệt khối giá mới 23–24/10 (lastReviewed giữ 22/10 cho tới khi duyệt); (2) URL catalog/Wrap (R22-04); (3) vận hành xác nhận địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá 3M khác hub (4/4/1/7, 0365 365 365); (4) reviewer tái chấm; (5) nghiệm thu production.
+Việc còn lại trước ký duyệt: (1) ĐÃ XONG: anh Đặng Minh Hoàng duyệt khối giá mới 24/10/2026; (2) URL catalog/Wrap (R22-04); (3) vận hành xác nhận địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá 3M khác hub (4/4/1/7, 0365 365 365); (4) reviewer tái chấm; (5) nghiệm thu production.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
@@ -124,7 +124,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `c3b036945b05e671d73aa0050ea03680ad4dd39ba5cfc7ab5fdec224fdc2bdeb` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `cfe2af874a8c389d81dc55f47185e47a25777a6a644a7b65765c73de17019e1f` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
