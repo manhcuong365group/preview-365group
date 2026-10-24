@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fc418b21348b6218c3eccbedc6654ada83289e3a1f13aa49c10af23b03ae4ca8`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8cdbf494e99ca8698162d6c3028411a79982ca2878625f04f9506f06eb85c5c3`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -28,7 +28,7 @@ Ví dụ: VF3, VF5, Vios, Accent, Mazda 3, Civic…
 | Dòng phim | Giá tham khảo |
 | --- | --- |
 | 3M PPF 50 Gloss | 38.000.000đ |
-| 3M 100 Gloss | 69.000.000đ |
+| 3M PPF 100 Gloss | 69.000.000đ |
 | 3M PPF 150 Gloss | 85.000.000đ |
 | 3M PPF 200 Gloss | 102.000.000đ |
 
@@ -39,7 +39,7 @@ Ví dụ: VF6, VF7, CX-5, CR-V, Tucson, Territory…
 | Dòng phim | Giá tham khảo |
 | --- | --- |
 | 3M PPF 50 Gloss | 44.000.000đ |
-| 3M 100 Gloss | 76.000.000đ |
+| 3M PPF 100 Gloss | 76.000.000đ |
 | 3M PPF 150 Gloss | 92.000.000đ |
 | 3M PPF 200 Gloss | 110.000.000đ |
 
@@ -50,7 +50,7 @@ Ví dụ: VF8, Everest, Fortuner, Carnival, Santa Fe…
 | Dòng phim | Giá tham khảo |
 | --- | --- |
 | 3M PPF 50 Gloss | 51.000.000đ |
-| 3M 100 Gloss | 86.000.000đ |
+| 3M PPF 100 Gloss | 86.000.000đ |
 | 3M PPF 150 Gloss | 102.000.000đ |
 | 3M PPF 200 Gloss | 122.000.000đ |
 
