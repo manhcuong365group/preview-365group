@@ -1,7 +1,7 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
 - Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 10. CHƯA thay cho chấm của reviewer.
+- Người chấm: Claude, tự đánh giá lần 11. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
@@ -40,9 +40,28 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Tự chấm lần 11 (bản 24/10/2026, giao diện mới theo brief trải nghiệm)
+
+| Mã | Tối đa | Lần 10 | Lần 11 | Căn cứ / phần thiếu |
+|---|---:|---:|---:|---|
+| C1 | 10 | 9,7 | 9,7 | Giá, cấu hình, 12 mã, bảo hành theo PDF 260815; 224 đại lý chủ trang chốt. Còn: site 3m.365group.com.vn ghi 160+ |
+| C2 | 10 | 9,1 | 9,4 | Thêm khối Công nghệ 3M (lịch sử hãng, Crystalline 200 lớp, cấu tạo 4 lớp, UV, bảo hành), khối báo chí, hỗ trợ sau khi dán; giá theo nhóm xe. Còn: case Ceramic IR, hướng dẫn chăm sóc phim |
+| C3 | 10 | 9,2 | 9,3 | Văn phong theo trải nghiệm khách, ít thuật ngữ ở tầng đầu, số liệu đặt cạnh lợi ích |
+| S1 | 10 | 9,3 | 9,3 | Không đổi |
+| S2 | 10 | 9,4 | 9,5 | Hero ảnh 1600 px + ảnh mobile riêng, preload, alt mô tả đúng; heading theo thứ bậc; nội dung chi tiết trong details vẫn nằm trong HTML |
+| S3 | 10 | 9,8 | 9,8 | Không đổi (link nội bộ, PDF, Offer, breadcrumb) |
+| G1 | 10 | 9,4 | 9,5 | Khối công nghệ có câu trích riêng kèm nguồn; thuật ngữ + DefinedTermSet |
+| G2 | 10 | 9,6 | 9,6 | Không đổi |
+| G3 | 5 | 4,5 | 4,7 | 8 bài báo về 3M Pro Shop & Training Center (Thanh Niên, Kinh tế & Đời sống, Thể thao & Văn hóa, GenK, Dân Việt, Sức khỏe & Đời sống, Eva, Tinh Tế – ghi rõ "bài quảng cáo"); kiểm duyệt Đặng Minh Hoàng; PDF nguồn. Còn: case Ceramic IR; hồ sơ người duyệt trên site 365Group; tiêu đề/ngày bài báo lấy từ trang báo chí trong repo, chưa mở lại từng link |
+| U1 | 5 | 4,7 | 4,8 | Hero sản phẩm, 3 lối vào, icon SVG, chữ 16 px, vùng chạm ≥44 px; render 375/820/1.366 px không tràn. Chưa thử thiết bị thật |
+| U2 | 5 | 4,6 | 4,7 | Chọn nhóm xe đổi giá ngay (nhớ lựa chọn), giá không khóa sau form; form mở theo yêu cầu; tìm đại lý nhớ khu vực. Còn: endpoint /api/leads chưa được IT xác nhận |
+| U3 | 5 | 5,0 | 5,0 | 01–03 cùng SHA bên dưới |
+
+**Tổng tự chấm lần 11: C 28,4 · S 28,6 · G 23,8 · U 14,5 → 95,3/100.** Theo tự chấm, cả ba ngưỡng đã đạt trên preview (tổng ≥ 95; SEO 28,6 ≥ 28,5; GEO 23,8 ≥ 23,75), nhưng biên GEO rất mỏng (+0,05). **Đây là tự chấm, chưa phải nghiệm thu — chờ reviewer tái kiểm.** Trước xuất bản vẫn cần: IT đăng URL đích + upload ảnh/PDF, xác nhận /api/leads, xoá khối nội bộ.
+
 ## Dựng lại giao diện theo brief trải nghiệm (24/10/2026)
 
-Trang dựng lại theo brief 23/10/2026 + góp ý sếp (thêm thông tin hãng, bài báo; giá để trong phần so sánh). Toàn bộ dữ liệu, schema, link, form, PDF, thuật ngữ giữ nguyên; bổ sung khối Công nghệ 3M và 8 bài báo. Đã render 375/820/1.366 px: không tràn ngang, menu ☰, chọn nhóm xe, lọc bảng mã, form (lỗi thiếu tỉnh; giả lập success:true) đều chạy. **Chưa chấm lại điểm sau khi dựng lại giao diện**; mốc gần nhất vẫn là lần 10 (94,3). Chờ reviewer tái kiểm theo brief mới.
+Trang dựng lại theo brief 23/10/2026 + góp ý sếp (thêm thông tin hãng, bài báo; giá để trong phần so sánh). Toàn bộ dữ liệu, schema, link, form, PDF, thuật ngữ giữ nguyên; bổ sung khối Công nghệ 3M và 8 bài báo. Đã render 375/820/1.366 px: không tràn ngang, menu ☰, chọn nhóm xe, lọc bảng mã, form (lỗi thiếu tỉnh; giả lập success:true) đều chạy. Chờ reviewer tái kiểm theo brief mới.
 
 ## Tự chấm lần 10 (bản 23/10/2026, PDF bảng giá 260815 tải về)
 
@@ -183,7 +202,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `bd380728e96746593b5da6d50fa9f28def6fa243634679596d0a7a808d066cb8` |
+| `auto365/3m-365group/index.html` | SHA-256 `7ccd56f986a3d344af7d722dcc3c96a317ebd5c9103ed8993dd52f57f5f8ca7a` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

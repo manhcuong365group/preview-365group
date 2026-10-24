@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `bd380728e96746593b5da6d50fa9f28def6fa243634679596d0a7a808d066cb8`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `7ccd56f986a3d344af7d722dcc3c96a317ebd5c9103ed8993dd52f57f5f8ca7a`
 Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 365Group · Nhà phân phối chính thức phim cách nhiệt ô tô 3M™
@@ -108,7 +108,7 @@ Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại
 - Dân ViệtTừ TPHCM đến các địa phương: Nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF23/06/2026
 - Sức khỏe & Đời sốngXe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình23/06/2026
 - EvaKhoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới22/06/2026
-- Tinh TếKhám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop22/06/2026
+- Tinh Tế · bài quảng cáoKhám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop22/06/2026
 
 ## Xe thực tế đã dán phim 3M  `#thuc-te`
 Hồ sơ thi công tại đại lý trong hệ thống 365Group, đã đăng trên auto365.vn (mở trang mới).
