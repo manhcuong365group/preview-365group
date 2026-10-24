@@ -1,7 +1,7 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284` (cùng phiên bản với 01 và 03)
-- Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284` (cùng phiên bản với 01 và 03)
+- Preview: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
 
@@ -21,7 +21,7 @@
 | Title | Phim cách nhiệt 3M: Dòng phim, thông số & đại lý \| 365Group (theo phiếu tái kiểm 22/10) |
 | Meta description | Tra cứu phim cách nhiệt 3M tại 365Group: Ceramic NR, Ceramic IR, Crystalline CR BLK; thông số theo mã, tài liệu kỹ thuật, bảo hành và hệ thống đại lý. |
 | H1 | Phim cách nhiệt 3M (chủ trang bỏ vế "Danh mục và thông số từ 365Group" 23/10/2026; vai trò 365Group đã nêu ở dòng nhỏ phía trên H1) |
-| og:image | `https://3m.365group.com.vn/hinh/phim-cach-nhiet-3m/og-phim-cach-nhiet-3m.jpg` — ảnh 1200×630 dựng từ ảnh mặt tiền 3M Pro Shop | Training Center + tiêu đề (file `auto365/3m-365group/hinh/og-phim-cach-nhiet-3m.jpg`); có og:image:width/height/alt, twitter:card. IT upload đúng đường dẫn khi đăng |
+| og:image | `https://3m.365group.com.vn/hinh/phim-cach-nhiet-3m/og-phim-cach-nhiet-3m.jpg` — ảnh 1200×630 dựng từ ảnh mặt tiền 3M Pro Shop | Training Center + tiêu đề (file `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/hinh/og-phim-cach-nhiet-3m.jpg`); có og:image:width/height/alt, twitter:card. IT upload đúng đường dẫn khi đăng |
 | Robots | Preview `noindex,nofollow` → production `index,follow` |
 
 Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp BreadcrumbList. Thứ tự H2: 3 dòng phim → 6 cấu hình → So sánh nhanh → Nhận tư vấn (form) → Thông số kỹ thuật → Tài liệu và hỗ trợ → Chứng nhận từ 3M → Hệ thống đại lý → Hồ sơ thi công tham khảo (5 bài auto365.vn, mở trang mới) → Vì sao 365Group chọn phân phối phim 3M → Câu hỏi thường gặp → Về bài viết này. Tagline hero là `<p>`, không dùng H2.

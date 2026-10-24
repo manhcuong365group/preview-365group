@@ -1,6 +1,6 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
-- Trang: `https://preview-365group.pages.dev/3m-365group/` (bản 22/10/2026, preview, noindex đúng chủ đích)
+- Trang: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (bản 22/10/2026, preview, noindex đúng chủ đích)
 - Người chấm: Claude, tự đánh giá lần 12. CHƯA thay cho chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
@@ -219,7 +219,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
