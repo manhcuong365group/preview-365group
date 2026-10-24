@@ -54,21 +54,34 @@ L.push('| dateModified | ' + cp.dateModified + ' |');
 L.push('| Schema | ' + ld['@graph'].map((x) => x['@type'] + (x.numberOfItems ? ' (' + x.numberOfItems + ')' : '')).join(', ') + ' |');
 L.push('| SHA-256 index.html | `' + sha(html) + '` |');
 L.push('| SHA-256 content-src.html | `' + sha(src) + '` |', '');
+// thứ tự theo trang hiển thị
 L.push('## Sapo (kiêm trả lời nhanh)', '', txt(doc.querySelector('.bgvf-lead')), '');
-L.push('## Lưới dòng xe — tiêu đề', '', '**' + txt(doc.querySelector('#dong-xe h2')) + '** — ' + txt(doc.querySelector('#dong-xe .bght-sub')), '');
-L.push('## Dòng xe (' + models.length + ')', '', '| Dòng xe | Nhóm | Trạng thái | Trang production |', '|---|---|---|---|');
+L.push('## ' + txt(doc.querySelector('#dong-xe h2')), '');
+L.push('### Dòng xe (' + models.length + ')', '', '| Dòng xe | Nhóm | Trạng thái | Trang production |', '|---|---|---|---|');
 models.forEach((m) => L.push(`| ${m.name} | ${m.group} | ${m.status} | ${m.url || '—'} |`));
-L.push('', '## Chọn theo nhu cầu (accordion trong box lưu ý)', '', '**' + txt(doc.querySelector('#theo-nhu-cau summary h3')) + '** — ' + txt(doc.querySelector('#theo-nhu-cau .bght-sub')), '');
+L.push('', '## ' + txt(doc.querySelector('#xe-thuc-te h2')) + ' (' + cases.length + ' bài hồ sơ)', '', 'Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).', '', '| Dòng xe | Bài | Ngày đăng |', '|---|---|---|');
+cases.forEach((c) => L.push(`| ${c.model} | [${c.title}](${c.url}) | ${c.date} |`));
+// box lưu ý: chỉ nội dung trực tiếp, khối nhu cầu xuất riêng bên dưới
+L.push('', '## ' + txt(qa.querySelector('h2')), '');
+[...qa.children].filter((x) => x.tagName === 'P' || x.tagName === 'UL').forEach((x) => {
+  if (x.tagName === 'UL') x.querySelectorAll(':scope > li').forEach((li) => L.push('- ' + txt(li)));
+  else L.push(txt(x));
+  L.push('');
+});
+L.push('### ' + txt(doc.querySelector('#theo-nhu-cau summary h3')) + ' (accordion đóng sẵn, cuối box lưu ý)', '', txt(doc.querySelector('#theo-nhu-cau .bght-sub')), '');
 doc.querySelectorAll('#theo-nhu-cau .bgvf-nd').forEach((n) => {
-  L.push('### ' + txt(n.querySelector('h3')), '', '_Dòng xe:_ ' + txt(n.querySelector('.who')), '');
+  L.push('#### ' + txt(n.querySelector('h3')), '', '_Dòng xe:_ ' + txt(n.querySelector('.who')), '');
   n.querySelectorAll('li').forEach((li) => L.push('- ' + txt(li)));
-  L.push('', txt(n.querySelector('.done')) + ' (' + [...n.querySelectorAll('.done a')].map((a) => a.href).join(', ') + ')', '', 'CTA: ' + txt(n.querySelector('.go')) + ' → ' + n.querySelector('.go').href, '');
+  L.push('', txt(n.querySelector('.done')) + ' (' + [...n.querySelectorAll('.done a')].map((a) => a.href).join(', ') + ')', '', 'CTA: ' + txt(n.querySelector('.go')).replace(/\s*→$/, '') + ' → ' + n.querySelector('.go').href, '');
 });
 L.push(txt(doc.querySelector('.bgvf-nnote')), '');
-L.push('## Xe thực tế (' + cases.length + ' bài)', '', '| Dòng xe | Bài | Ngày đăng |', '|---|---|---|');
-cases.forEach((c) => L.push(`| ${c.model} | [${c.title}](${c.url}) | ${c.date} |`));
-L.push('', '## Trả lời nhanh', '', '**' + txt(qa.querySelector('h2')) + '**', '');
-qa.querySelectorAll('p, li').forEach((x) => L.push((x.tagName === 'LI' ? '- ' : '') + txt(x), ''));
+// vì sao chọn: 6 thẻ ảnh + logo hãng đèn (khối dùng chung với theo-hang-xe)
+const why = doc.getElementById('vi-sao-chon');
+L.push('## ' + txt(why.querySelector('h2')), '', '_Khối dùng chung với trang theo-hang-xe (build tự lấy). Ảnh là ảnh minh họa tại Auto365, không phải bằng chứng của một ca VinFast cụ thể._', '');
+L.push('| Thẻ | Nội dung | Ảnh | Alt |', '|---|---|---|---|');
+why.querySelectorAll('.bw-card').forEach((c) => { const im = c.querySelector('img'); L.push(`| ${txt(c.querySelector('h3'))} | ${txt(c.querySelector('p'))} | \`${im.getAttribute('src').split('/').pop()}\` | ${im.getAttribute('alt')} |`); });
+L.push('', '**' + txt(why.querySelector('.bght-lbrands-l')) + ':** ' + [...why.querySelectorAll('.bght-lbrand img')].map((i) => i.getAttribute('alt')).join(', ') + ' — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ VinFast trên trang này.', '');
+L.push('## Khối chi nhánh — câu nhận diện', '', txt(doc.querySelector('.bght-branch .bght-sub')), '');
 L.push('## Cẩm nang (' + guides.length + ')', '', '| Bài | Nhãn | Ngày đăng |', '|---|---|---|');
 guides.forEach((x) => L.push(`| [${x.title}](${x.url}) | ${x.label} | ${x.date} |`));
 L.push('', '## FAQ (' + faqs.length + ')', '');
@@ -78,7 +91,6 @@ const form = doc.querySelector('#tu-van form');
 L.push('## CTA và form', '', '- CTA cuối: ' + txt(doc.querySelector('#tu-van-ngay h2')) + ' — nút "Nhận tư vấn ngay" (#tu-van), gọi 0365 365 911');
 L.push('- Form: action `' + form.getAttribute('action') + '`, data-service `' + form.dataset.service + '` (+ " - VinFast [dòng xe]" khi bấm thẻ dòng xe chưa có hồ sơ), data-source-page `' + form.dataset.sourcePage + '`');
 L.push('- Trường: ' + [...form.elements].filter((e) => e.name && e.name !== 'form-honey').map((e) => e.name).join(', ') + '; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED"', '');
-L.push('## Khối chi nhánh — câu nhận diện', '', txt(doc.querySelector('.bght-branch .bght-sub')), '');
 fs.writeFileSync(path.join(out, '01_Noi_dung_Bi_gam_VinFast.md'), L.join('\n'));
 
 // ---- 04 ----

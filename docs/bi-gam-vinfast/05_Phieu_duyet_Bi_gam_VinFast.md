@@ -51,3 +51,12 @@ Reviewer 22/10/2026 chấm 92,0/100 (chưa đạt) và yêu cầu thu hẹp ph�
 | Sapo (chủ quản viết 23/10) | Chọn dòng xe VinFast để xem cấu hình, hình ảnh xe thực tế… | Độ bi gầm VinFast là giải pháp nâng cấp ánh sáng đòi hỏi sự tương thích cao với hệ thống điện và thiết kế hốc đèn đặc thù của từng dòng xe. Nhằm giúp chủ xe tra cứu chính xác, Auto365 tổng hợp các hồ sơ thi công thực tế của nhiều mẫu bi gầm (X-Light, GTR, AES) trên từng phiên bản xe VinFast. |
 | Khối chi nhánh | — | Câu nhận diện "Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group…" (mẫu reviewer). |
 | Khối "Vì sao chọn Auto365" | 4 thẻ icon | 6 thẻ có ảnh + dải logo hãng đèn, lấy nguyên từ trang theo-hang-xe (đã duyệt ở trang đó); tiêu đề thêm "VinFast" |
+
+## Bản vá R2 24/10/2026 — chờ duyệt bổ sung
+
+Reviewer R2 23/10/2026: 94,8/100 (chưa đạt). Hai câu sửa dưới đây chỉ thu hẹp phạm vi, chưa được anh Đạo xác nhận; `lastReviewed` giữ 2026-10-23.
+
+| Vị trí | Câu đã duyệt 23/10 | Câu mới |
+|---|---|---|
+| Sapo | …hồ sơ thi công thực tế của nhiều mẫu bi gầm (X-Light, GTR, AES) trên từng phiên bản xe VinFast. | …hồ sơ thi công thực tế của nhiều mẫu bi gầm (X-Light, GTR) trên từng phiên bản xe VinFast. (10 bài hồ sơ đang dẫn: 8 X-Light, 2 GTR, 0 AES) |
+| Thẻ "Tư vấn đúng theo từng xe" (chỉ trang VinFast) | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; | Kiểm tra hốc đèn, hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe trước khi đề xuất mẫu; |

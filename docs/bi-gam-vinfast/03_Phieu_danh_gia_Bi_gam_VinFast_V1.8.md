@@ -3,10 +3,26 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 — đủ 12 tiêu chí (có U3), thang /100. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-23) |
+| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-24) |
 | Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10/2026; `lastReviewed` 2026-10-23; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+
+## R2. Reviewer tái kiểm 23/10/2026 và bản vá 24/10/2026
+
+Reviewer R2 chấm snapshot SHA `ead4cdc9…` (23/10/2026 22:38): **94,8/100 — CHƯA ĐẠT** (C 28,4 · SEO 28,4 · GEO 23,7 · U 14,3). Các lỗi lượt 92,0 đã đóng, trừ 3 trang con production 404.
+
+| Mã | Phiếu R2 | Đã làm 24/10/2026 | Còn mở |
+|---|---|---|---|
+| R01 | 3 trang con 404 | — | CMS đăng Fadil / Limo Green / Lux SA2.0 (hoặc đổi 3 thẻ + CTA nhu cầu + ItemList sang tư vấn) |
+| R02 | Sapo gắn AES với hồ sơ thi công (10 bài: 8 X-Light, 2 GTR, 0 AES) | Sapo thu hẹp còn "(X-Light, GTR)" | Anh Đạo xác nhận câu thu hẹp (05) |
+| R03 | 01 chưa xuất 6 thẻ "Vì sao chọn" | 01 xuất đủ 6 thẻ (tiêu đề, nội dung, tên ảnh, alt), dải 8 logo kèm phạm vi "không ngụ ý mỗi hãng đã có hồ sơ VinFast" | — |
+| R04 | Thẻ tư vấn nêu 12V/24V chung | Riêng trang VinFast: "hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe" (build thay, khối gốc theo-hang-xe giữ nguyên) | Anh Đạo xác nhận (05) |
+| R05 | 02 thiếu map 6 ảnh mới | 02 mục 3 thêm 6 ảnh + logo | IT upload khi đăng |
+| R06 | 01 lặp khối nhu cầu, mô tả vị trí cũ | 01 xuất theo đúng thứ tự trang, box lưu ý chỉ lấy nội dung trực tiếp (không lặp 3 nhóm), bỏ dấu gạch thừa; 02 bỏ mô tả ô "trả lời nhanh" riêng; 03 sửa B02/B04/B06 | — |
+| R07 | Kiểm bản tích hợp production | — | IT + SEO khi đăng |
+
+Chưa tự chấm lại — chờ reviewer tái kiểm bản SHA mới trong 01.
 
 ## 0. Reviewer chấm 22/10/2026 và bản vá 23/10/2026
 
@@ -17,11 +33,11 @@ Reviewer chấm snapshot SHA `1d8380cb…` (22/10/2026 20:54): **92,0/100 — CH
 | P0-1 | Href tương đối (vf6/, ../vinfast-vf3/…) sai khi lên canonical | 6 link trang dòng xe ở thẻ, CTA khối nhu cầu, ItemList đổi sang URL tuyệt đối production; không còn href tương đối trong nội dung. 02 mục 3 map ảnh tương đối + lưu ý header/footer v2 | IT upload ảnh, dùng header/footer production |
 | P0-2 | 3 trang con 404 | Giữ link (phương án 1: đăng trước hub); 02 mục 3 ghi điều kiện phát hành + phương án dự phòng đổi 3 thẻ sang tư vấn | CMS đăng Fadil / Limo Green / Lux SA2.0 |
 | B01 | Trả lời nhanh trước lưới | Sapo viết lại thành câu trả lời nhanh (theo mẫu reviewer, ~60 từ), không tách ô riêng để hero không lặp ý | — |
-| B02 | H2 lưới dễ hiểu 18 hồ sơ | H2 "Chọn dòng xe VinFast"; dòng phụ "18 lựa chọn. Sáu dòng đang có trang hồ sơ…, các dòng còn lại được tư vấn sau khi kiểm tra…" | — |
+| B02 | H2 lưới dễ hiểu 18 hồ sơ | H2 "Chọn dòng xe VinFast" (dòng phụ giải thích đã bỏ theo chủ quản 23/10) | — |
 | B03 | Bài tư vấn Fadil bị tính là case | Bỏ `/bi-gam-vinfast-fadil` khỏi khối case và ItemList (11 → 10), chuyển sang cẩm nang nhãn "Tư vấn dòng xe"; ItemList đổi tên "Bài hồ sơ…"; 04 thêm content_type, model_id, case_id (trống — chưa có mã nội bộ), sku_version, checked_at, ghi chú chưa xác nhận trùng xe | case_id nội bộ từ Media nếu có |
-| B04 | Câu giắc zin / tải nhỏ / chói quá rộng | Thay bằng đoạn reviewer đề xuất (kiểm điểm cấp nguồn, tải bổ sung, dây/giắc, bảo vệ mạch theo đời và phiên bản; không mặc định có sẵn giắc; không can thiệp pin cao áp) ở box lưu ý, khối nhu cầu, FAQ, thẻ lý do; chói → "lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói"; bỏ "đảm bảo" ở chú thích case | Anh Đạo duyệt lại câu chữ mới (05) |
+| B04 | Câu giắc zin / tải nhỏ / chói quá rộng | Thay bằng đoạn reviewer đề xuất (kiểm điểm cấp nguồn, tải bổ sung, dây/giắc, bảo vệ mạch theo đời và phiên bản; không mặc định có sẵn giắc; không can thiệp pin cao áp) ở box lưu ý, khối nhu cầu, FAQ, thẻ lý do; chói → "lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói"; bỏ "đảm bảo" ở chú thích case | Đã duyệt 23/10 |
 | B05 | Cẩm nang lệch chủ đề | 5 bài: tư vấn Fadil, bi gầm cho ô tô điện, dải sáng rộng / chiếu xa khi mưa, hốc đèn nhỏ 2.0 inch, đèn gầm sáng yếu (đã kiểm 200, đọc tiêu đề) | — |
-| B06 | FAQ chi phí, bảo hành; nguồn quy định; nhãn form | +2 FAQ (khoản chi phí; bảo hành theo mẫu/phiên bản + phiếu bàn giao, không nêu thời hạn chung); FAQ đăng kiểm bỏ câu dẫn bài không có URL production; nhãn hiển thị "Đèn – Bi gầm, Bi LED" (giá trị API giữ nguyên) ở form nội dung + nút nổi; câu nhận diện Trụ Sở Chính ở khối chi nhánh; dòng tham khảo cuối FAQ | Anh Đạo duyệt 2 FAQ mới |
+| B06 | FAQ chi phí, bảo hành; nguồn quy định; nhãn form | +2 FAQ (khoản chi phí; bảo hành theo mẫu/phiên bản + phiếu bàn giao, không nêu thời hạn chung); FAQ đăng kiểm bỏ câu dẫn bài không có URL production; nhãn hiển thị "Đèn – Bi gầm, Bi LED" (giá trị API giữ nguyên) ở form nội dung + nút nổi; câu nhận diện Trụ Sở Chính ở khối chi nhánh; dòng tham khảo cuối FAQ | Đã duyệt 23/10 |
 | B07 | 01 thiếu khối nhu cầu; 02 schema/map | 01 xuất thêm trả lời nhanh, tiêu đề lưới, khối nhu cầu (kèm link), CTA/form, câu chi nhánh, dòng tham khảo; 02 viết lại map production, robots + X-Robots-Tag, cách kiểm schema (không lấy FAQ rich result / RRT làm tiêu chí) | — |
 
 Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng bản SHA mới trong 01. Câu chữ B04/B06, sapo và các thay đổi 23/10 đã được anh Đạo duyệt 23/10/2026.
@@ -50,7 +66,7 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 
 ## 2. Kết luận
 
-**CHƯA ĐẠT theo reviewer (92,0/100, 22/10/2026).** Bản vá 23/10 ở mục 0 đã duyệt kỹ thuật 23/10, chờ reviewer tái kiểm; không tự tuyên bố ĐẠT.
+**CHƯA ĐẠT theo reviewer R2 (94,8/100, 23/10/2026).** Bản vá R2 24/10 ở mục R2 chờ anh Đạo xác nhận 2 câu thu hẹp và reviewer tái kiểm; 3 trang con production vẫn là điều kiện phát hành. Không tự tuyên bố ĐẠT.
 
 ## 3. Việc cần làm để đạt
 

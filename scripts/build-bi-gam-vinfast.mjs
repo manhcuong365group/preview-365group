@@ -29,7 +29,9 @@ const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s
 // khối "Vì sao chọn" 6 thẻ ảnh + logo hãng đèn (đã duyệt ở theo-hang-xe); ảnh trỏ về thư mục theo-hang-xe
 const why = cut('<section class="bght-sec bght-why" id="vi-sao-chon">', /\n?<\/div><\/section>/)
   .replace(/src="hinh\//g, 'src="../theo-hang-xe/hinh/')
-  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm VinFast?');
+  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm VinFast?')
+  // VinFast: không nêu số điện áp chung; kiểm theo tài liệu từng xe
+  .replace('Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu;', 'Kiểm tra hốc đèn, hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe trước khi đề xuất mẫu;');
 const whyRules = bght.match(/\.bw-(grid|card|photo)( img| h3| p| a)?\{[^}]*\}/g) || [];
 const whyCss = '<style>' + whyRules.slice(0, 7).join('\n')
   + '\n' + (bght.match(/\.bght-lbrands\{[^\n]*/) || [''])[0]
