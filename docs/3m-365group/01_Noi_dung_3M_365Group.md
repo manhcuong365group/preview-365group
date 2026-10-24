@@ -1,7 +1,7 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `7e2d5307be1ab449c5c27d509895888e88b89e42531e85a778324b1199b3d037`
-Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d900ce55740ddd554724098fcdbe622de72281f256f1d3e93b149cb21ccf05ee`
+Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
@@ -156,7 +156,7 @@ Nguồn: bảng 3M AutoFilm của 365Group (mã 260815); 3M Việt Nam.
 Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại TP.HCM (06/2026). Xem tất cả bài báo chí →
 - Thanh Niên3M Pro Shop & 3M Training Center tiên phong tại Việt Nam vận hành tại TPHCM22/06/2026
 - Kinh tế & Đời sốngTừ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô22/06/2026
-- Thể thao & Văn hóaSau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TPHCM22/06/2026
+- TT&VHThể thao & Văn hóaSau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TPHCM22/06/2026
 - GenKCông nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt22/06/2026
 - Dân ViệtTừ TPHCM đến các địa phương: Nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF23/06/2026
 - Sức khỏe & Đời sốngXe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình23/06/2026
@@ -209,11 +209,10 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - hinh/case-ford-everest.webp — Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365
 - hinh/case-vinfast-vf8.webp — VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365
 - hinh/case-volvo-xc90.webp — Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365
-- hinh/bao-thanhnien.webp — Ảnh bài báo thanhnien.vn
-- hinh/bao-kinhtevadoisong.webp — Ảnh bài báo kinhtevadoisong.vn
-- hinh/bao-thethaovanhoa.webp — Ảnh bài báo thethaovanhoa.vn
-- hinh/bao-genk.webp — Ảnh bài báo genk.vn
-- hinh/bao-danviet.webp — Ảnh bài báo danviet.vn
-- hinh/bao-suckhoedoisong.webp — Ảnh bài báo giadinh.suckhoedoisong.vn
-- hinh/bao-eva.webp — Ảnh bài báo eva.vn
-- hinh/bao-tinhte.webp — Ảnh bài báo tinhte.vn
+- hinh/logo-bao-thanhnien.webp — Logo Thanh Niên
+- hinh/logo-bao-kinhtevadoisong.webp — Logo Kinh tế & Đời sống
+- hinh/logo-bao-genk.webp — Logo GenK
+- hinh/logo-bao-danviet.webp — Logo Dân Việt
+- hinh/logo-bao-suckhoedoisong.webp — Logo Sức khỏe & Đời sống
+- hinh/logo-bao-eva.webp — Logo Eva
+- hinh/logo-bao-tinhte.webp — Logo Tinh Tế

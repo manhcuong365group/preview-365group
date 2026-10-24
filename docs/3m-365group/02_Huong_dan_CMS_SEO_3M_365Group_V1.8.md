@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `7e2d5307be1ab449c5c27d509895888e88b89e42531e85a778324b1199b3d037` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `d900ce55740ddd554724098fcdbe622de72281f256f1d3e93b149cb21ccf05ee` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -46,7 +46,7 @@ Chủ trang yêu cầu bỏ bảng "So sánh nhanh 6 cấu hình" vì trùng v�
 - Bỏ bộ lọc dòng phim của bảng 12 mã (bảng cuộn ngang trên mobile, cột chỉ số cố định).
 - "Cách đọc các chỉ số" dạng accordion 5 mục (TSER mở sẵn): nhãn chỉ số + tên đầy đủ, bấm để xem giải thích.
 - "Công nghệ phim ô tô 3M": 3 thẻ cùng kiểu thẻ "Vì sao" + dải 4 bước cấu tạo phim Crystalline.
-- Báo chí: mỗi bài có ảnh đại diện (og:image của bài, lưu tại hinh/bao-*.webp – ảnh sự kiện khai trương 3M Pro Shop); link "Xem tất cả bài báo chí" dạng chữ.
+- Báo chí: mỗi bài có logo báo (favicon 96 px lưu tại hinh/logo-bao-*.webp; Thể thao & Văn hóa chưa có logo đủ nét nên dùng chữ "TT&VH"); 4 cột desktop, 2 cột mobile; link "Xem tất cả bài báo chí" dạng chữ.
 
 ## 3. Schema (một `@graph`)
 
