@@ -58,3 +58,7 @@ CRM xác nhận 22/10/2026 (chủ quản): lead 223 hiện dòng xe "Lexus RX" �
 Đợt 10 (23/10/2026, chủ quản yêu cầu): thêm dải logo "Thương hiệu đèn tại Auto365" (8 hãng, như trang VF7) dưới khối Vì sao chọn; thêm bộ lọc "Hãng đèn" (X-Light, GTR, Titan, AES — nhận theo tên sản phẩm trong tiêu đề bài) ở Xe thực tế. Không đổi câu chữ nội dung.
 Đợt 11 (23/10/2026, đồng bộ auto365.vn): chạy sync — thêm 3 case (Xpander Cross 2025 F10 Hyper 2.0, Sportage 2022 F10 Turbo V2 5500K, Santa Fe 2020 F10 2.0 New) và 15 bài tư vấn dòng xe vào Cẩm nang (Xpander, CX-8, Limo Green, Corolla Altis, Transit, Fadil, Mazda 6, Veloz Cross, Destinator, Accent, Escape, Sedona, Santa Fe, Custin, Outlander); thẻ dòng xe có bài nhận link "Xem tư vấn dòng xe". Duyệt tay: Mazda6 có trong LINEUP; script chưa đổi GUIDE vì đã có bài SKU × xe — sửa ở đợt 12. Xuất lại docs 01/04.
 Đợt 12 (24/10/2026, theo tái kiểm R6): bộ lọc Titan khớp nguyên từ (Everest Titanium về X-Light); đổi hãng/dòng xe tự bỏ hãng đèn không còn bài; tách thông báo "không khớp bộ lọc" và "chưa có bài"; thẻ Mazda6 dẫn bài dòng xe bi-gam-mazda-6. Không đổi câu chữ nội dung tư vấn.
+
+## Lượt duyệt 24/10/2026
+
+Chủ quản xác nhận 24/10/2026: anh Nguyễn Quang Đạo đã duyệt đợt 10–12 (dải logo thương hiệu đèn, bộ lọc Hãng đèn và bản vá Titan/bộ lọc giữ ngầm/thông báo rỗng, đồng bộ 3 case + 15 bài tư vấn, thẻ Mazda6 dẫn bài dòng xe). `lastReviewed` = 2026-10-24. Không còn mục chờ duyệt.
