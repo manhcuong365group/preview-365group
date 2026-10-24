@@ -219,7 +219,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `d900ce55740ddd554724098fcdbe622de72281f256f1d3e93b149cb21ccf05ee` |
+| `auto365/3m-365group/index.html` | SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
