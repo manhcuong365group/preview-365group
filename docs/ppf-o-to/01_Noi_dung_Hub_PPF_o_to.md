@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `eda623befc675c2602da5c0914d0352427f6bf2d6047167daf525dd39bfe2097`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `9db36897097b8eaaae426c82c5fbce948d839b01adcfcded746b746c201bd7c7`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -56,13 +56,9 @@ Ví dụ: VF8, Everest, Fortuner, Carnival, Santa Fe…
 
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
 
-**Ước tính chi phí nhanh**
+**Bảng giá theo vị trí & ước tính nhanh**
 
-Chọn dòng phim, loại xe và vị trí cần dán.
-
-**Bảng giá dán PPF theo vị trí**
-
-Chọn dòng phim và loại xe để xem giá từng vị trí.
+Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem tổng chi phí tạm tính.
 
 **Xem bảng giá đầy đủ 13 vị trí**
 
@@ -105,7 +101,7 @@ Gợi ý gói phổ biến theo mục đích sử dụng.
 
 - Toàn bộ bề mặt sơn ngoại thất
 
-Giá "từ" của gói tạm tính với AX Film PPF G Series, xe Sedan: cộng giá từng vị trí; gói toàn xe theo giá gói. Bấm "Ước tính gói này" để đổi dòng phim, loại xe.
+Giá "từ" của gói tạm tính với AX Film PPF G Series, xe Sedan: cộng giá từng vị trí; gói toàn xe theo giá gói. Bấm "Ước tính gói này" để chọn sẵn các vị trí ở bảng giá theo vị trí, sau đó đổi dòng phim, loại xe.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
