@@ -61,7 +61,7 @@ img{max-width:100%;display:block}a{color:inherit}
 .h3m-strip b{display:block;color:var(--r);font-size:13px;text-transform:uppercase}
 /* packages */
 .h3m-pk{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.h3m-card{background:#fff;border:1px solid var(--l);border-radius:var(--rad);padding:20px;display:flex;flex-direction:column;position:relative}
+.h3m-card{cursor:pointer;transition:border-color .15s,box-shadow .15s;background:#fff;border:1px solid var(--l);border-radius:var(--rad);padding:20px;display:flex;flex-direction:column;position:relative}
 .h3m-card__badge{position:absolute;top:16px;right:16px;background:#fdecee;color:var(--r);font-size:12px;font-weight:600;padding:3px 9px;border-radius:20px}
 .h3m-card h3{margin:0 0 4px;font-size:19px;font-weight:600}.h3m-card h3 b{color:var(--r);font-weight:700}
 .h3m-card__combo{font-size:13px;color:var(--m);margin:0 0 12px}
@@ -208,17 +208,24 @@ img{max-width:100%;display:block}a{color:inherit}
 .h3m-band b{display:block;font-size:22px;font-weight:800}.h3m-band span{opacity:.9}
 .h3m-band__cta{display:flex;gap:10px;flex-wrap:wrap}
 .h3m-band .h3m-btn--red{background:#fff;color:var(--r)}.h3m-band .h3m-btn--red:hover{background:#ffecee}
-.h3m-modal{border:0;padding:0;border-radius:16px;width:min(440px,calc(100vw - 32px));box-shadow:0 30px 80px rgba(0,0,0,.35)}
-.h3m-modal::backdrop{background:rgba(10,11,14,.65)}
-.h3m-modal__f{position:relative;display:grid;gap:10px;padding:26px 22px 20px}
-.h3m-modal__f h2{margin:0;font-size:24px;font-weight:800}
-.h3m-modal__x{position:absolute;top:10px;right:12px;width:36px;height:36px;border:0;background:var(--bg);border-radius:50%;font-size:22px;line-height:1;cursor:pointer}
-.h3m-modal__pk{margin:0;padding:10px 12px;background:#fdecee;border-radius:8px;font-size:14px}.h3m-modal__pk b{color:var(--r)}
-.h3m-modal .ck{font-size:13px;display:flex;gap:8px;align-items:flex-start;color:var(--m)}
-.h3m-modal .h3m-btn{justify-content:center}
-.h3m-modal__alt{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.h3m-modal__alt a{text-align:center;padding:9px;border:1px solid var(--l);border-radius:8px;font-size:14px;font-weight:600;text-decoration:none;color:var(--t)}
+.h3m-modal{border:0;padding:0;border-radius:18px;width:min(720px,calc(100vw - 28px));max-height:calc(100vh - 32px);box-shadow:0 24px 80px rgba(0,0,0,.3)}
+.h3m-modal::backdrop{background:rgba(8,12,18,.66);backdrop-filter:blur(4px)}
+.h3m-modal__f{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;padding:28px}
+.h3m-modal__f .full{grid-column:1/-1}
+.h3m-modal__f h2{margin:0 0 4px;font-size:26px;font-weight:700;text-align:center}
+.h3m-modal__f label{display:block;font-size:13px;font-weight:600;color:var(--t)}
+.h3m-modal__f label small{font-size:11px;font-weight:500;color:var(--m)}
+.h3m-modal__f input:not([type=checkbox]),.h3m-modal__f select,.h3m-modal__f textarea{display:block;width:100%;margin-top:5px;padding:10px 12px;border:1px solid #d2d9e3;border-radius:10px;font:inherit;font-size:14px;color:var(--t);background:#fff;outline:none}
+.h3m-modal__f input:focus,.h3m-modal__f select:focus,.h3m-modal__f textarea:focus{border-color:var(--r);box-shadow:0 0 0 3px rgba(225,29,39,.12)}
+.h3m-modal__x{position:absolute;top:14px;right:14px;width:34px;height:34px;border:0;background:var(--bg);border-radius:50%;font-size:20px;line-height:1;cursor:pointer}
+.h3m-modal__pk{margin:0;padding:9px 12px;background:#fdecee;border-radius:8px;font-size:14px;text-align:center}.h3m-modal__pk b{color:var(--r)}
+.h3m-modal__f .ck{font-weight:500;color:var(--m);line-height:1.5}.h3m-modal__f .ck input{vertical-align:-2px;margin:0 6px 0 0}.h3m-modal__f .ck a{color:var(--t)}
+.h3m-modal__act{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+.h3m-modal__act .h3m-btn{justify-content:center;min-height:48px;box-shadow:0 12px 28px rgba(225,29,39,.2)}
+.h3m-modal__hot{display:flex;align-items:center;justify-content:center;gap:6px;border:1px solid #d2d9e3;border-radius:8px;text-decoration:none;color:var(--m);font-size:15px}.h3m-modal__hot b{color:var(--t)}
+@media (max-width:640px){.h3m-modal__f{grid-template-columns:1fr;padding:22px 16px}.h3m-modal__f h2{font-size:22px}.h3m-modal__act{grid-template-columns:1fr}.h3m-modal__hot{min-height:44px}.h3m-modal__f input:not([type=checkbox]),.h3m-modal__f select,.h3m-modal__f textarea{font-size:16px}}
 @media (max-width:640px){.h3m-band__in{flex-direction:column;align-items:stretch}.h3m-band b{font-size:19px}.h3m-band__cta .h3m-btn{flex:1;justify-content:center}}
+.h3m-card:hover{border-color:var(--r);box-shadow:0 10px 26px rgba(0,0,0,.07)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -469,20 +476,21 @@ img{max-width:100%;display:block}a{color:inherit}
 
 <dialog class="h3m-modal" id="h3m-modal" aria-labelledby="h3m-modal-t">
  <form class="h3m-modal__f" action="/api/leads" method="post" novalidate data-lead="popup">
-  <button type="button" class="h3m-modal__x" data-close aria-label="Đóng">×</button>
-  <span class="h3m-eyebrow">3M Pro Shop · Trụ sở chính</span>
-  <h2 id="h3m-modal-t">Nhận báo giá phim 3M</h2>
-  <p class="h3m-modal__pk" id="h3m-modal-pk" hidden></p>
-  <input class="h3m-in" name="fullname" placeholder="Họ và tên *" autocomplete="name" required>
-  <input class="h3m-in" name="phone" placeholder="Số điện thoại *" inputmode="tel" autocomplete="tel" required>
-  <input class="h3m-in" name="car_model" placeholder="Dòng xe (vd: Camry 2024)">
-  <input type="hidden" name="package_name"><input type="hidden" name="vehicle_group">
+  <button type="button" class="h3m-modal__x" data-close aria-label="Đóng form tư vấn">×</button>
+  <h2 class="full" id="h3m-modal-t">Nhận tư vấn miễn phí</h2>
+  <p class="h3m-modal__pk full" id="h3m-modal-pk" hidden></p>
+  <label>Họ và tên<input name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
+  <label>Số điện thoại<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
+  <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input name="car_model" type="text" placeholder="VD: Camry 2024, VF8, CX-5"></label>
+  <label>Nhóm xe<select name="vehicle_group"><option value="">Chưa rõ</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select></label>
+  <label>Nhu cầu ưu tiên<select name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option selected>Chưa chắc, cần tư vấn</option></select></label>
+  <label>Gói đang quan tâm<select name="package_name"><option value="">Chưa chắc, cần tư vấn</option><option>3M CR BLK PRO</option><option>3M CR BLK</option><option>3M Crystalline Hybrid Pro</option><option>3M Crystalline Hybrid</option><option>3M Ceramic IR</option><option>3M Ceramic Hybrid</option></select></label>
+  <label class="full">Nhu cầu thêm <small>(không bắt buộc)</small><textarea name="note" rows="2" placeholder="Hay đỗ xe ngoài trời, cần riêng tư, có panorama..."></textarea></label>
   <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
   <input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-  <label class="ck"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn qua số điện thoại này.</label>
-  <button class="h3m-btn h3m-btn--red" type="submit">Gửi – nhận báo giá ngay →</button>
-  <div class="h3m-msg" role="status"></div>
-  <div class="h3m-modal__alt"><a href="tel:0365365911">☎ Gọi ngay</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Nhắn Zalo</a></div>
+  <label class="ck full"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
+  <div class="h3m-modal__act full"><button class="h3m-btn h3m-btn--red" type="submit">Gửi thông tin tư vấn</button><a class="h3m-modal__hot" href="tel:0365365911">Gọi 3M Pro Shop <b>0365.365.911</b></a></div>
+  <div class="h3m-msg full" role="status"></div>
  </form>
 </dialog>
 
@@ -544,13 +552,15 @@ img{max-width:100%;display:block}a{color:inherit}
  var dlg=document.getElementById('h3m-modal'),mf=dlg.querySelector('form'),mpk=document.getElementById('h3m-modal-pk');
  bindLead(mf);
  document.addEventListener('click',function(e){
-  var o=e.target.closest('[data-open-lead]');if(!o||!dlg.showModal)return;e.preventDefault();
+  var o=e.target.closest('[data-open-lead]');
+  if(!o&&!e.target.closest('a,button,input,select,textarea')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
   var pk=o.dataset.pk?'3M '+o.dataset.pk:'',gr=o.dataset.group||'';
-  mf.package_name.value=pk;mf.vehicle_group.value=gr;fs.value=pk;
+  mf.package_name.value=pk;mf.vehicle_group.value=gr==='SUV/MPV'?'SUV/MPV':gr;fs.value=pk;
   mpk.hidden=!pk;mpk.innerHTML=pk?'Gói đã chọn: <b>'+pk+'</b>'+(gr?' · '+gr:''):'';
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
   if(dlg.showModal)dlg.showModal();else location.hash='dang-ky';
   if(window.dataLayer)dataLayer.push({event:'open_lead_popup',package:pk});
+  setTimeout(function(){mf.fullname.focus()},50);
  });
  dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.closest('[data-close]'))dlg.close()});
 })();
