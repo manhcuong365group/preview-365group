@@ -126,3 +126,16 @@ Cập nhật 22/10/2026: anh Đạo đã duyệt đợt 7; `lastReviewed` 2026-1
 **ĐẠT V1.8 (bản preview): 96,1/100** — C 28,8 · SEO 28,8 · GEO 24,0 · U 14,5 (U3 4,8). Đóng F08-R4, F04-R4, F07-R4, F06 (VF3/VF6/VF7). Bản chấm SHA `6b3dd2a0…`.
 
 Còn thuộc bước đưa live (không phải lỗi nội dung): HUB `/nang-cap-anh-sang-bi-gam/theo-hang-xe` trả 200; loại hẳn khối kiểm tra nội bộ, bỏ noindex, đổi tài nguyên/og:image theo môi trường; QA bản đã đăng (thiết bị thật, form, index). Dọn lead test 223/205.
+
+## 8. Tái kiểm R6 của reviewer (23/10/2026) và bản vá 24/10/2026
+
+**R6 chính thức: 94,6/100 — CHƯA ĐẠT** (SHA `ac451648…`): C 28,5 · SEO 28,8 · GEO 24,0 · U 13,3 (U1 4,0; U3 4,4). Kết quả R5 96,1 chỉ áp dụng snapshot R5.
+
+| Mã | Đã vá 24/10/2026 | Kiểm |
+|---|---|---|
+| R6-A | `lbr()` dùng `/\bTitan\b/i` | Titan 4 bài (không còn Everest Titanium); X-Light 77, GTR 11, AES 7 |
+| R6-B | Tính tập theo hãng/dòng xe trước; hãng đèn không còn bài thì trả về Tất cả; tách thông báo rỗng | Titan → VinFast: 9 case, hàng Hãng đèn về "Tất cả"; GTR → Fadil: tự về Tất cả |
+| R6-C | 02 thêm mục 10 bản hiện hành 24/10 (100/39); 05 sửa giải thích Mazda6, thêm đợt 12; 01/04 xuất lại | — |
+| Mazda 6 | GUIDE.Mazda6 = `bi-gam-mazda-6` (200) | Tìm "Mazda 6" → link bài dòng xe |
+
+Chờ reviewer chấm lại.

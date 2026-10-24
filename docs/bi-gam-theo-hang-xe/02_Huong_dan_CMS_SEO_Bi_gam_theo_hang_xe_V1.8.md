@@ -82,7 +82,7 @@ Trong HTML trang, link VinFast trỏ đường dẫn preview; build đổi sang 
 
 **Cập nhật 21/10/2026:** tạm bỏ link tới trang VinFast VF7 (production còn 404) theo chỉ đạo chủ quản; thẻ VF7 dẫn về bài case "VinFast VF7 Plus 2025 lắp bi gầm X-Light F10 Turbo V2 5500K". Khi VF7 production trả 200: trong `content-src.html` thêm lại `'../vinfast/vf7/'` làm phần tử thứ 7 của mục VF7 trong mảng `C`, rồi build.
 
-## 9. Bản hiện hành (22/10/2026)
+## 9. Lịch sử — bản 22/10/2026 (đã thay bằng mục 10)
 
 - 21 hãng · 219 thẻ dòng xe (161 chưa có hồ sơ) · 97 case · 24 cẩm nang (12 "Tư vấn dòng xe", 5 "Mẫu đèn × dòng xe", 7 "Kiến thức") · 6 FAQ (khớp FAQPage).
 - Schema: `ItemList dong-xe` 24 mục chọn lọc; `ItemList xe-thuc-te` 97 mục, URL lấy từ `href` của thẻ case (build dừng nếu href rỗng/null/undefined); `ItemList cam-nang` 24 mục.
@@ -90,3 +90,12 @@ Trong HTML trang, link VinFast trỏ đường dẫn preview; build đổi sang 
 - **Khi lên production:** xoá hẳn khối `<aside id="bght-internal-check">` và `<script id="bght-internal-check-js">` khỏi HTML đầu ra (không chỉ ẩn), bỏ `noindex`, đổi link VinFast theo bảng mục 7, thêm lại link VF7 khi trang VF7 trả 200.
 
 **Cập nhật 22/10/2026:** VF3, VF6, VF7 production đều trả 200. Thẻ 3 dòng xe dẫn thẳng tới URL production (`https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3|vf6|vf7`), khớp schema; đã thêm lại link VF7. Còn trang này (`/nang-cap-anh-sang-bi-gam/theo-hang-xe`) chờ đăng.
+
+## 10. Bản hiện hành (24/10/2026)
+
+- 21 hãng · 219 thẻ dòng xe · **100 case** · **39 cẩm nang** (27 "Tư vấn dòng xe", 5 "Mẫu đèn × dòng xe", 7 "Kiến thức") · 30 link "Xem tư vấn dòng xe" · 6 FAQ.
+- Schema: `ItemList dong-xe` 24 (chọn lọc) · `xe-thuc-te` 100 · `cam-nang` 39; URL lấy từ `href`, build dừng nếu rỗng/null/undefined.
+- Dải logo "Thương hiệu đèn tại Auto365" (8 hãng) là dải nhận diện, không khẳng định cả 8 hãng có case trong thư viện.
+- Bộ lọc "Hãng đèn" (X-Light, GTR, Titan, AES) nhận theo tên sản phẩm trong tiêu đề bài; Titan khớp nguyên từ (`\bTitan\b`, không nhận "Titanium"). Đổi hãng/dòng xe mà hãng đèn đang chọn không còn bài thì tự trả về "Tất cả". Thông báo "Không có bài khớp bộ lọc" tách riêng với "Thư viện chưa có bài lắp… trên xe [hãng]".
+- Thẻ Mazda6 dẫn tới bài dòng xe `bi-gam-mazda-6`; bài SKU × xe `bi-gam-x-light-f10-turbo-v2-4300k-cho-mazda-6` giữ ở Cẩm nang nhãn "Mẫu đèn × dòng xe".
+- Production: như mục 9 (xoá khối kiểm tra nội bộ, bỏ noindex, đổi tài nguyên/og:image); HUB canonical còn 404.
