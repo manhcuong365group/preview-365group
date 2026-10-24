@@ -39,9 +39,9 @@ Mọi link tới trang dòng xe trong nội dung **đã là URL tuyệt đối p
 | VF 3 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3 | 200 |
 | VF 6 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 | 200 |
 | VF 7 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7 | 200 |
-| Limo Green | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green | **404** |
-| Fadil | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil | **404** |
-| Lux SA2.0 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 | **404** |
+| Limo Green | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green | 200 (24/10) |
+| Fadil | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil | 200 (24/10) |
+| Lux SA2.0 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 | **404 (24/10)** |
 
 **Điều kiện phát hành:** đăng đủ 3 trang 404 (kiểm HTTP 200, canonical, robots, nội dung) **trước hoặc cùng lúc** với hub. Nếu chưa đăng kịp, đổi 3 thẻ đó sang "Liên hệ tư vấn" (bỏ khỏi mảng có link và ItemList) rồi build lại — không để link 404 lên production. Lux A2.0 và Lux SA2.0 là hai thẻ khác nhau.
 

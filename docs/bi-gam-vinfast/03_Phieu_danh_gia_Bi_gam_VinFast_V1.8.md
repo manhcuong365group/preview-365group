@@ -8,6 +8,35 @@
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-24; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
+## R3 (tự chấm 24/10/2026, sau bản vá R2 + đã duyệt)
+
+Tự chấm của team, lấy phiếu reviewer R2 (94,8) làm mốc và chỉ cộng các mục đã sửa có bằng chứng. **Không phải phiếu nghiệm thu; không tự tuyên bố ĐẠT.** Kiểm 24/10: SHA index.html khớp 01; 29 link auto365.vn trong nội dung, 28 trả 200; trang con Fadil và Limo Green đã đăng production (200, canonical đúng, robots index), **Lux SA2.0 vẫn 404**.
+
+| Mã | R2 | R3 | Căn cứ thay đổi |
+|---|---:|---:|---|
+| C1 | 9,2 | 9,5 | Sapo thu hẹp còn X-Light, GTR (khớp 10 bài: 8 X-Light, 2 GTR); câu điện áp theo từng xe; anh Đạo duyệt 24/10 |
+| C2 | 9,6 | 9,6 | — |
+| C3 | 9,6 | 9,6 | — |
+| S1 | 9,7 | 9,7 | — |
+| S2 | 9,6 | 9,6 | — |
+| S3 | 9,1 | 9,4 | 02 map đủ ảnh (6 ảnh VinFast mới + logo); Fadil, Limo Green đã 200; Lux SA2.0 còn 404 |
+| G1 | 9,4 | 9,4 | Sapo vẫn thiên giới thiệu (chủ quản chọn giữ) |
+| G2 | 9,6 | 9,6 | — |
+| G3 | 4,7 | 4,9 | Claim thương hiệu ở sapo khớp tập hồ sơ |
+| U1 | 4,7 | 4,8 | Kiểm 360 / 375 / 768 / 820 / 1024 / 1366px không tràn ngang; tablet hero 1 cột, lưới dòng xe và cẩm nang vuốt ngang; sửa lỗi dư </div> làm CTA mất màu/font |
+| U2 | 4,9 | 4,9 | — |
+| U3 | 4,7 | 4,9 | 01 xuất đủ 6 thẻ + logo, hết lặp, đúng thứ tự trang; 03/05 đồng bộ trạng thái duyệt |
+
+| Nhóm | R2 | R3 | Ngưỡng |
+|---|---:|---:|---|
+| Nội dung | 28,4 | 28,7 | — |
+| SEO | 28,4 | **28,7** | ≥28,5 |
+| GEO | 23,7 | **23,9** | ≥23,75 |
+| UX + bàn giao | 14,3 | 14,6 | — |
+| **Tổng** | **94,8** | **95,9** | ≥95 |
+
+Điều kiện phát hành còn lại: **đăng trang Lux SA2.0** (hoặc đổi thẻ Lux SA2.0 + ItemList sang tư vấn) rồi reviewer tái kiểm.
+
 ## R2. Reviewer tái kiểm 23/10/2026 và bản vá 24/10/2026
 
 Reviewer R2 chấm snapshot SHA `ead4cdc9…` (23/10/2026 22:38): **94,8/100 — CHƯA ĐẠT** (C 28,4 · SEO 28,4 · GEO 23,7 · U 14,3). Các lỗi lượt 92,0 đã đóng, trừ 3 trang con production 404.
@@ -66,13 +95,13 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 
 ## 2. Kết luận
 
-**CHƯA ĐẠT theo reviewer R2 (94,8/100, 23/10/2026).** Bản vá R2 24/10 ở mục R2 đã duyệt kỹ thuật 24/10, chờ reviewer tái kiểm; 3 trang con production vẫn là điều kiện phát hành. Không tự tuyên bố ĐẠT.
+**Reviewer R2: 94,8 (chưa đạt). Tự chấm R3 24/10: 95,9, qua cả 3 ngưỡng** — chờ reviewer tái kiểm; còn trang con Lux SA2.0 404 là điều kiện phát hành. Không tự tuyên bố ĐẠT.
 
 ## 3. Việc cần làm để đạt
 
 | Ưu tiên | Việc | Ai |
 |---|---|---|
-| 1 | Đăng 3 trang dòng xe Fadil / Limo Green / Lux SA2.0 (hoặc đổi trạng thái 3 thẻ) trước khi thay hub | CMS/IT + SEO |
+| 1 | Đăng trang Lux SA2.0 (Fadil, Limo Green đã đăng 24/10) trước khi thay hub | CMS/IT + SEO |
 | 2 | Reviewer tái kiểm bản SHA mới | Reviewer |
 | — | Xoá lead test 228 khỏi CRM | Vận hành |
 
