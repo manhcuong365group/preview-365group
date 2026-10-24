@@ -109,7 +109,7 @@ Thay đổi chính 23–24/10: TDS 3M 150 Gloss đổi sang Revision B (08/2026)
 
 **Tổng tự chấm: C 29,4 · S 29,0 · G 24,2 · U 14,2 → 96,8/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,2 ≥ 23,75.
 
-Việc còn lại trước ký duyệt: (1) ĐÃ XONG: anh Đặng Minh Hoàng duyệt khối giá mới 24/10/2026; (2) URL catalog/Wrap (R22-04); (3) vận hành xác nhận địa chỉ 4/4/3 và hotline 0587.365.365 trên bảng giá 3M khác hub (4/4/1/7, 0365 365 365); (4) reviewer tái chấm; (5) nghiệm thu production.
+Việc còn lại trước ký duyệt: (1) ĐÃ XONG: anh Đặng Minh Hoàng duyệt khối giá mới 24/10/2026; (2) URL catalog/Wrap (R22-04); (3) ĐÃ XONG: chủ trang chốt 24/10/2026 dùng địa chỉ 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh và hotline 0365 365 365 (hub đã dùng đúng; địa chỉ/hotline in trên file bảng giá 3M không dùng); (4) reviewer tái chấm; (5) nghiệm thu production.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
