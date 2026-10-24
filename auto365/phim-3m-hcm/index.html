@@ -84,11 +84,27 @@ img{max-width:100%;display:block}a{color:inherit}
 .h3m-cases figure{margin:0}.h3m-cases img{aspect-ratio:4/3;object-fit:cover;border-radius:10px;width:100%}
 .h3m-cases figcaption{font-size:14px;font-weight:700;margin-top:8px}
 /* branches */
-.h3m-br{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.h3m-br__i{background:#fff;border:1px solid var(--l);border-radius:10px;padding:16px;font-size:14px;display:flex;flex-direction:column}
-.h3m-br__i h3{margin:0 0 6px;font-size:16px}.h3m-br__i h3 small{display:inline-block;background:var(--r);color:#fff;font-size:11px;padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:middle}
-.h3m-br__i p{margin:0 0 10px;color:var(--m)}
-.h3m-br__i a{margin-top:auto;color:var(--r);font-weight:700;text-decoration:none}
+.h3m-hq{display:grid;grid-template-columns:1.15fr 1fr;background:var(--k);color:#fff;border-radius:16px;overflow:hidden;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.h3m-hq__img{position:relative;min-height:340px}
+.h3m-hq__img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.h3m-hq__stamp{position:absolute;left:18px;bottom:18px;background:var(--r);color:#fff;font-weight:900;font-size:20px;letter-spacing:1px;padding:10px 16px;border-radius:8px;line-height:1.1;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+.h3m-hq__stamp small{display:block;font-size:12px;font-weight:600;letter-spacing:0;opacity:.9}
+.h3m-hq__body{padding:30px 30px 28px}
+.h3m-hq__kicker{display:inline-block;color:#ffb3b7;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.h3m-hq__body h3{font-size:28px;line-height:1.2;margin:6px 0 16px;font-weight:900}
+.h3m-hq__pts{list-style:none;margin:0 0 16px;padding:0}
+.h3m-hq__pts li{position:relative;padding:0 0 10px 28px;font-size:15px;color:#d5d8de}
+.h3m-hq__pts li b{color:#fff}
+.h3m-hq__pts li:before{content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--r);font-size:12px;display:grid;place-items:center;color:#fff}
+.h3m-hq__addr{margin:0 0 18px;padding:12px 14px;background:rgba(255,255,255,.07);border-radius:8px;font-size:15px}
+.h3m-hq__cta{display:flex;flex-wrap:wrap;gap:10px}
+.h3m-hq__cta .h3m-btn--ghost{padding:11px 16px}
+.h3m-br__h{font-size:17px;margin:34px 0 12px}
+.h3m-br{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.h3m-br__i{background:#fff;border:1px solid var(--l);border-radius:10px;padding:14px;font-size:13px;display:flex;flex-direction:column;gap:4px;text-decoration:none;transition:border-color .15s,transform .15s}
+.h3m-br__i:hover{border-color:var(--r);transform:translateY(-2px)}
+.h3m-br__i b{font-size:15px}.h3m-br__i span{color:var(--m)}
+.h3m-br__i em{font-style:normal;color:var(--r);font-weight:700;margin-top:auto;padding-top:6px}
 /* steps */
 .h3m-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
 .h3m-steps li{list-style:none;background:#fff;border:1px solid var(--l);border-radius:10px;padding:18px;font-size:14px;color:var(--m)}
@@ -118,7 +134,7 @@ img{max-width:100%;display:block}a{color:inherit}
 .h3m-float{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1fr 1fr;background:#fff;box-shadow:0 -4px 16px rgba(0,0,0,.12)}
 .h3m-float a{padding:12px 4px;text-align:center;font-weight:700;font-size:14px;text-decoration:none}
 .h3m-float a:nth-child(1){color:var(--r)}.h3m-float a:nth-child(2){background:#0068ff;color:#fff}.h3m-float a:nth-child(3){background:var(--r);color:#fff}
-@media (max-width:1024px){.h3m-nav{display:none}.h3m-pk{grid-template-columns:1fr 1fr}.h3m-cases{grid-template-columns:repeat(3,1fr)}.h3m-br{grid-template-columns:1fr 1fr}.h3m-cert,.h3m-ff,.h3m-quick{grid-template-columns:1fr}}
+@media (max-width:1024px){.h3m-nav{display:none}.h3m-pk{grid-template-columns:1fr 1fr}.h3m-cases{grid-template-columns:repeat(3,1fr)}.h3m-br{grid-template-columns:repeat(3,1fr)}.h3m-hq{grid-template-columns:1fr}.h3m-hq__img{min-height:260px}.h3m-cert,.h3m-ff,.h3m-quick{grid-template-columns:1fr}}
 @media (max-width:640px){
  body{font-size:15px}.h3m-sec{padding:40px 0}.h3m-h2{font-size:22px}
  .h3m-top__cta .h3m-btn--ghost{display:none}
@@ -127,7 +143,9 @@ img{max-width:100%;display:block}a{color:inherit}
  .h3m-hero__ben{grid-template-columns:1fr;gap:10px}.h3m-hero__cta .h3m-btn{flex:1 1 100%;justify-content:center}
  .h3m-trust{grid-template-columns:1fr 1fr}
  .h3m-quick__f{grid-template-columns:1fr}.h3m-strip{grid-template-columns:1fr 1fr}
- .h3m-pk,.h3m-br,.h3m-steps{grid-template-columns:1fr}
+ .h3m-pk,.h3m-steps{grid-template-columns:1fr}.h3m-br{grid-template-columns:1fr 1fr}
+ .h3m-hq__img{min-height:210px}.h3m-hq__stamp{font-size:16px}.h3m-hq__body{padding:22px 18px}.h3m-hq__body h3{font-size:22px}
+ .h3m-hq__cta .h3m-btn{flex:1 1 auto;justify-content:center}.h3m-hq__cta .h3m-btn--red{flex-basis:100%}
  .h3m-cert__imgs{grid-template-columns:1fr 1fr 1fr;gap:8px}.h3m-cert__imgs figcaption{font-size:11px}
  .h3m-cases{grid-template-columns:1fr 1fr}.h3m-form__g{grid-template-columns:1fr}
  .h3m-float{display:grid}
@@ -248,18 +266,39 @@ img{max-width:100%;display:block}a{color:inherit}
 
 <section class="h3m-sec h3m-sec--gray" id="chi-nhanh">
  <div class="h3m-wrap">
-  <h2 class="h3m-h2">7 chi nhánh Auto365 tại <em>TP.HCM</em></h2>
-  <p class="h3m-lead">Gọi trực tiếp chi nhánh gần bạn hoặc để lại số để được sắp lịch.</p>
-  <div class="h3m-br">
-   <div class="h3m-br__i"><h3>Thủ Đức <small>Trụ sở chính</small></h3><p>Số 4/4/1/7 Đường Số 3, P. Hiệp Bình</p><a href="tel:0365365911">☎ 0365.365.911</a></div>
-   <div class="h3m-br__i"><h3>Quận 7</h3><p>123-125 Đường số 9, KDC Trung Sơn, xã Bình Hưng</p><a href="tel:0906900365">☎ 0906.900.365</a></div>
-   <div class="h3m-br__i"><h3>Quận 9</h3><p>Số 330 Hoàng Hữu Nam, KP Giãn Dân, P. Long Bình</p><a href="tel:0365931365">☎ 0365.931.365</a></div>
-   <div class="h3m-br__i"><h3>Tân Phú</h3><p>20/54a Đường (Bờ Bao 1) Tân Thắng, P. Tây Thạnh</p><a href="tel:0564365365">☎ 0564.365.365</a></div>
-   <div class="h3m-br__i"><h3>Củ Chi</h3><p>Số 122 Tỉnh Lộ 8, KP 2, xã Tân An</p><a href="tel:0961894494">☎ 0961.894.494</a></div>
-   <div class="h3m-br__i"><h3>Bình Dương</h3><p>Số 101 Trương Định, P. Hiệp Thành</p><a href="tel:0568365365">☎ 0568.365.365</a></div>
-   <div class="h3m-br__i"><h3>Vũng Tàu</h3><p>Tổ 1 - QL51 - KP Hương Giang, P. Long Hương</p><a href="tel:0342365365">☎ 0342.365.365</a></div>
-   <div class="h3m-br__i"><h3>Ngoài TP.HCM?</h3><p>Hệ thống Auto365 có 90+ chi nhánh toàn quốc.</p><a href="https://auto365.vn/he-thong">Xem toàn bộ hệ thống →</a></div>
+  <h2 class="h3m-h2">Dán phim tại <em>3M Pro Shop</em> – Trụ sở chính Auto365</h2>
+  <p class="h3m-lead">Auto365 Center (Hiệp Bình, TP.HCM) được 3M Việt Nam bổ nhiệm làm 3M Pro Shop, đồng thời là 3M Training Center.</p>
+  <div class="h3m-hq">
+   <div class="h3m-hq__img">
+    <img src="hinh/hero-3m-pro-shop-training-center.webp" alt="Mặt tiền 3M Pro Shop và 3M Training Center – Auto365 Center, Hiệp Bình, TP.HCM" loading="lazy">
+    <span class="h3m-hq__stamp">3M PRO SHOP<small>06/2026 – 06/2029</small></span>
+   </div>
+   <div class="h3m-hq__body">
+    <span class="h3m-hq__kicker">★ Trụ sở chính · Auto365 Center</span>
+    <h3>3M Pro Shop &amp; 3M Training Center</h3>
+    <ul class="h3m-hq__pts">
+     <li><b>Chứng nhận 3M Pro Shop</b> cho các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029</li>
+     <li><b>3M Training Center</b> – nơi đào tạo kỹ thuật viên theo quy trình 3M</li>
+     <li><b>Kích hoạt bảo hành điện tử 3M 10 năm</b> ngay khi bàn giao xe</li>
+    </ul>
+    <p class="h3m-hq__addr">📍 Số 4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM (gần KĐT Vạn Phúc)</p>
+    <div class="h3m-hq__cta">
+     <a class="h3m-btn h3m-btn--red" href="#dang-ky" data-branch="Thủ Đức (Trụ sở chính)">Đặt lịch tại 3M Pro Shop →</a>
+     <a class="h3m-btn h3m-btn--ghost" href="tel:0365365911" data-track="call_hq">☎ 0365.365.911</a>
+     <a class="h3m-btn h3m-btn--ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Auto365+4%2F4%2F1%2F7+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+3+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener">Chỉ đường</a>
+    </div>
+   </div>
   </div>
+  <h3 class="h3m-br__h">Hoặc chọn chi nhánh gần bạn</h3>
+  <div class="h3m-br">
+   <a class="h3m-br__i" href="tel:0906900365"><b>Quận 7</b><span>123-125 Đường số 9, KDC Trung Sơn</span><em>☎ 0906.900.365</em></a>
+   <a class="h3m-br__i" href="tel:0365931365"><b>Quận 9</b><span>330 Hoàng Hữu Nam, P. Long Bình</span><em>☎ 0365.931.365</em></a>
+   <a class="h3m-br__i" href="tel:0564365365"><b>Tân Phú</b><span>20/54a Tân Thắng, P. Tây Thạnh</span><em>☎ 0564.365.365</em></a>
+   <a class="h3m-br__i" href="tel:0961894494"><b>Củ Chi</b><span>122 Tỉnh Lộ 8, xã Tân An</span><em>☎ 0961.894.494</em></a>
+   <a class="h3m-br__i" href="tel:0568365365"><b>Bình Dương</b><span>101 Trương Định, P. Hiệp Thành</span><em>☎ 0568.365.365</em></a>
+   <a class="h3m-br__i" href="tel:0342365365"><b>Vũng Tàu</b><span>QL51, KP Hương Giang, P. Long Hương</span><em>☎ 0342.365.365</em></a>
+  </div>
+  <p class="h3m-note">Ngoài TP.HCM? <a href="https://auto365.vn/he-thong" style="color:var(--r);font-weight:700">Xem 90+ chi nhánh Auto365 toàn quốc →</a></p>
  </div>
 </section>
 
@@ -332,6 +371,7 @@ img{max-width:100%;display:block}a{color:inherit}
  });
  qs.value='crystalline-hybrid';
  grid.addEventListener('click',function(e){var a=e.target.closest('[data-pk]');if(a)fs.value='3M '+a.dataset.pk});
+ document.querySelectorAll('[data-branch]').forEach(function(a){a.addEventListener('click',function(){document.querySelector('#dang-ky [name=branch]').value=a.dataset.branch})});
  document.getElementById('q-go').addEventListener('click',function(){
   var k=PK.filter(function(x){return x.id===qs.value})[0],g=+document.getElementById('q-car').value,o=document.getElementById('q-out');
   o.innerHTML='<b>3M '+k.n+'</b> – '+['Minicar','Sedan','SUV/MPV'][g]+': <b style="color:var(--r)">'+vnd(k.p[g])+'</b> trọn xe. <a href="#dang-ky">Đặt lịch với giá này →</a>';
