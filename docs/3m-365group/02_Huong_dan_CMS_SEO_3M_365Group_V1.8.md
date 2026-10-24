@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `2beda07a8b43e908b9ddea0444ee6c19b42b531a0eb6dee4664608c1c7450507` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m-365group/index.html` — SHA-256 `bd380728e96746593b5da6d50fa9f28def6fa243634679596d0a7a808d066cb8` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m-365group/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -25,6 +25,22 @@
 | Robots | Preview `noindex,nofollow` → production `index,follow` |
 
 Breadcrumb hiển thị (Trang chủ › Phim cách nhiệt ô tô 3M) khớp BreadcrumbList. Thứ tự H2: 3 dòng phim → 6 cấu hình → So sánh nhanh → Nhận tư vấn (form) → Thông số kỹ thuật → Tài liệu và hỗ trợ → Chứng nhận từ 3M → Hệ thống đại lý → Hồ sơ thi công tham khảo (5 bài auto365.vn, mở trang mới) → Vì sao 365Group chọn phân phối phim 3M → Câu hỏi thường gặp → Về bài viết này. Tagline hero là `<p>`, không dùng H2.
+
+## 2b. Giao diện theo brief trải nghiệm (24/10/2026)
+
+Chủ trang chỉ đạo ưu tiên giao diện theo tinh thần website 3M và trải nghiệm khách (brief 23/10/2026). Trang dựng lại:
+
+1. Header sáng, menu: Dòng phim · Công nghệ 3M · Trải nghiệm · Tìm đại lý · Hỗ trợ; một CTA "Tìm đại lý"; menu ☰ ≤1.200 px.
+2. Hero ảnh xe tại 3M Pro Shop (1600 px desktop, ảnh dọc 800×1000 cho mobile), H1 "Phim cách nhiệt 3M", câu dẫn "Thoải mái hơn trên mỗi hành trình.", 2 CTA. Byline/reviewer/ngày chuyển xuống "Về trang này".
+3. "Bạn quan tâm điều gì?" – 3 lối vào: thoải mái cabin, độ sáng & cảm giác nhìn, phong cách & riêng tư + "Khám phá tất cả dòng phim".
+4. Ba dòng phim là tầng khám phá chính (ảnh cùng phong cách, 2 điểm có số liệu, nút "Khám phá dòng phim").
+5. "So sánh lựa chọn và giá tham khảo": chọn nhóm xe Minicar/Sedan/SUV (nhớ lựa chọn), 6 thẻ cấu hình trong khối mở/đóng + bảng giá đầy đủ 18 mức trong khối thứ hai. Giá không khóa sau form.
+6. "Công nghệ phim ô tô 3M" (góp ý sếp: thêm thông tin hãng): 55 năm/bằng sáng chế 1966 (3M VN), Crystalline 200 lớp, UV 99–99,9%, bảo hành điện tử 10 năm, cấu tạo 4 lớp theo bảng 260815; khối "Báo chí nói về 3M Pro Shop & 3M Training Center" 8 bài (Thanh Niên, Kinh tế & Đời sống, Thể thao & Văn hóa, GenK, Dân Việt, Sức khỏe & Đời sống, Eva, Tinh Tế – 22–23/06/2026, lấy từ trang báo chí đã có trong repo).
+7. Xe thực tế (5 case auto365.vn), Tìm đại lý (khu vực + 3 nhóm) với form "Nhờ hỗ trợ lựa chọn" trong khối mở theo yêu cầu.
+8. Chứng nhận (4 ảnh, lightbox) → Hỗ trợ sau khi dán (bảo hành, tài liệu, liên hệ) → "Thông số & tài liệu" (PDF 260815, bảng 12 mã + thuật ngữ trong khối mở) → FAQ → Về trang này.
+9. Emoji thay bằng bộ icon SVG; chữ thân 16 px, vùng chạm ≥44 px; ≤768 px một cột cho nội dung khám phá.
+
+Chưa làm (cần tài sản/dữ liệu): ảnh cabin/góc nhìn qua kính chụp riêng; công cụ "Tìm lựa chọn phù hợp" (cần quy tắc gợi ý được người phụ trách sản phẩm duyệt); mục "Chăm sóc phim" (chưa có nguồn hướng dẫn chăm sóc được duyệt); đồng bộ template 3 trang dòng phim trên 3m.365group.com.vn; bộ lọc đại lý theo nhóm.
 
 ## 3. Schema (một `@graph`)
 

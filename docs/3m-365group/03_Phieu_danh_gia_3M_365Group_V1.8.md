@@ -40,6 +40,10 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Dựng lại giao diện theo brief trải nghiệm (24/10/2026)
+
+Trang dựng lại theo brief 23/10/2026 + góp ý sếp (thêm thông tin hãng, bài báo; giá để trong phần so sánh). Toàn bộ dữ liệu, schema, link, form, PDF, thuật ngữ giữ nguyên; bổ sung khối Công nghệ 3M và 8 bài báo. Đã render 375/820/1.366 px: không tràn ngang, menu ☰, chọn nhóm xe, lọc bảng mã, form (lỗi thiếu tỉnh; giả lập success:true) đều chạy. **Chưa chấm lại điểm sau khi dựng lại giao diện**; mốc gần nhất vẫn là lần 10 (94,3). Chờ reviewer tái kiểm theo brief mới.
+
 ## Tự chấm lần 10 (bản 23/10/2026, PDF bảng giá 260815 tải về)
 
 | Mã | Lần 9 | Lần 10 | Căn cứ |
@@ -179,7 +183,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m-365group/index.html` | SHA-256 `2beda07a8b43e908b9ddea0444ee6c19b42b531a0eb6dee4664608c1c7450507` |
+| `auto365/3m-365group/index.html` | SHA-256 `bd380728e96746593b5da6d50fa9f28def6fa243634679596d0a7a808d066cb8` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
