@@ -83,6 +83,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | Khối #bang-gia | Đã thêm (23/10, theo mockup chủ trang; bố cục 2×2 hiện cùng lúc; thẻ phim và sơ đồ vị trí dùng hình minh họa xe dạng vector SVG (trang trí, không phải ảnh thi công); gói dùng ảnh case thật) | 4 tab: theo xe (chọn hãng + loại xe, thẻ từng mã), theo vị trí (sơ đồ xe + 13 vị trí, 3M 50/150/200 và AX G/K/X), gói theo nhu cầu (4 gói, giá "từ" tạm tính = cộng giá vị trí AX G Series Sedan/A–B, gói toàn xe = giá gói; ghi rõ cách tính), ước tính nhanh (cộng giá vị trí hoặc giá toàn xe, cảnh báo khi tổng vượt gói toàn xe). Số liệu từ bảng giá 3M theo vị trí 23/10 + bảng AX Film khách lẻ + giá toàn xe đã duyệt; AX: Sedan=A–B, SUV=C–D, MPV=MPV/E-SUV. Không có giá vị trí cho 3M 100 Gloss và hõm tay cửa nên không đưa vào. Bỏ giá dán lẻ/giá theo loại xe trùng trong khối thương hiệu |
 | Gọn khối giá (24/10) | Đã làm | Theo góp ý: #bang-gia còn 2 tab (Giá dán toàn xe: chọn hãng + loại xe; Ước tính chi phí nhanh: chọn dòng phim, loại xe, toàn xe/từng vị trí); bỏ sơ đồ vị trí, gói, hình xe minh họa; bỏ giá trùng trong khối thương hiệu; khối thương hiệu dùng logo chữ 3M / AX Film thay ảnh xe; logo hãng ở bộ lọc case cùng kích thước, xám khi chưa chọn |
 | Khối giá theo mockup 2 (24/10) | Đã làm | #san-pham dựng theo layout chủ trang gửi, dữ liệu theo bảng giá đã duyệt (không lấy số trong mockup): thanh thương hiệu 3M/AX; giá toàn xe 3 thẻ Sedan/SUV/MPV kèm bảng dòng phim (ảnh case thật Camry, CX-5, VF 8); giá theo vị trí (bảng + "khi nào nên dán"); 4 gói giá "từ" tạm tính AX G Sedan; ước tính nhanh; dải "giá đã bao gồm". Bỏ nhãn "Phổ biến", hõm tay cửa, gói va quẹt (không có nguồn giá) |
+| Vị trí + ước tính (24/10) | Đã làm | Giá theo vị trí dựng như mockup: ảnh case thật BMW 530i có chấm vị trí, 8 ô giá hai bên, bảng 13 vị trí bên phải (mobile chỉ ảnh + bảng). Khối Ước tính nhanh đưa lên ngay sau bảng giá toàn xe |
 | A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -98,7 +99,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `081c477884cecab6bc0a3c6ff74861ce06bd17396994d9355c380625242fdec4` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `e5e83cfe641ee11ab4ba8dc9fffd2aa5c336eb4de9546f2f773d571ead6b3334` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
