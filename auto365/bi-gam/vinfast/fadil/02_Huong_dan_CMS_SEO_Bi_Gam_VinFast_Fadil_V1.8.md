@@ -7,7 +7,7 @@
 | Title | Bi gầm VinFast Fadil: Giá, cấu hình và case thực tế \| Auto365 |
 | H1 | Bi gầm VinFast Fadil: phương án lắp, giá và case thực tế |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
-| Bản nguồn | `index.html` SHA-256 `9b3cbbc18b30610a273b250b5d97bcda12ae17b82628c52734c3fc977653c74c` (22/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `7c86c5067650ce92b633e2214c0ff47db90b9273168c52d37c63bcf716cf3052` (22/10/2026) |
 
 ## Khi đăng production
 

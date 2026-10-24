@@ -30,7 +30,7 @@
 | Trang `../limo-green/`, `../fadil/` được link trong "Dòng xe VinFast khác" | Kiểm tra đã có trước khi đăng |
 | Xoá khối `#vf3lp-internal-check`; chốt domain; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `53c79cda49630e6092746c6644c64a2a6f74d19883248119064e0133180fc913`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `2af4f9bc2ab6793080b3b5a837523fd962f862b3199d659428e62ad743b369f9`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Lux SA2.0 (22/10/2026)
@@ -68,3 +68,4 @@ Auto365 là đại lý chính hãng X-Light, GTR và AES — user xác nhận 12
 - 23/10/2026: đổi ~470 href/URL schema từ v2.auto365.vn sang auto365.vn (chỉ các đích đã kiểm trả 200). Còn lại các link v2 trả 301/404 trên auto365.vn và asset js/css — IT map khi đăng. Breadcrumb "Trang chủ" = https://auto365.vn/.
 - 23/10/2026: trả menu header chung về bản gốc (mục "VF7" dưới nhóm Xe điện/Ô tô điện và gợi ý tìm kiếm đã bị đổi nhầm thành tên xe khi dựng trang). Lux SA2.0 là xe xăng, không còn xuất hiện trong nhóm xe điện.
 - 2026-10-23: thẻ sản phẩm theo mẫu hub (chip lens/nhiệt màu/bảo hành, Xem sản phẩm, So sánh) + lọc theo hãng.
+- 2026-10-24: khối case theo mẫu hub VinFast (thẻ ảnh + nhãn Bi gầm, tên xe, năm, ngày, Xem chi tiết lắp đặt; lọc hãng; 2 hàng cuộn ngang).

@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `30b44cc0d01682c8e071d9968384bcd8b3aca78cafdc9232b33d18267f06e975` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `d5411089132ebc21ba7f6061d951fb22099dc8da1e2c327f39ebc30af0c69a84` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -59,3 +59,4 @@ Người xác nhận: anh Nguyễn Quang Đạo, 24/10/2026. Cấu hình cuối 
 | Bổ sung case hoặc video bi gầm thực tế trên VF8 khi có (để đạt ngưỡng GEO) | Khi có xe VF8 lắp bi gầm |
 | Xoá khối `#vf3lp-internal-check`, bỏ noindex; nghiệm thu Live L1–L8; test gửi lead | Khi đăng production |
 - 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".
+- 2026-10-24: khối case theo mẫu hub VinFast (thẻ ảnh + nhãn Bi gầm, tên xe, năm, ngày, Xem chi tiết lắp đặt; lọc hãng; 2 hàng cuộn ngang).

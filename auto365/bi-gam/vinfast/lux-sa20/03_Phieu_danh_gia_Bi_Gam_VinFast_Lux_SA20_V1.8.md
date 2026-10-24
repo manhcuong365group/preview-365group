@@ -6,7 +6,7 @@
 |---|---|
 | Trang | Bi gầm VinFast Lux SA2.0 — preview https://preview-365group.pages.dev/bi-gam/vinfast/lux-sa20/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 (chưa đăng — 404 ngày 22/10) |
-| SHA-256 index.html | `53c79cda49630e6092746c6644c64a2a6f74d19883248119064e0133180fc913` (cùng mã trong 02/04) |
+| SHA-256 index.html | `2af4f9bc2ab6793080b3b5a837523fd962f862b3199d659428e62ad743b369f9` (cùng mã trong 02/04) |
 | Phạm vi đời/phiên bản | Anh Đạo duyệt, lưu ở phiếu 04; **không công bố trên trang** theo quyết định user 22/10 |
 | Test lead | Chưa test trên trang này (chưa đăng). Test production đã chạy trên VF3/VF6/VF7 (lead #224–226) |
 
@@ -18,7 +18,7 @@ C 29,1 · S 29,1 · G 24,1 · U 14,2 → **96,5/100 — ĐẠT** (12 tiêu chí,
 
 ## Lịch sử — bản trước (hết hiệu lực)
 
-- File: `index.html` · SHA-256 `53c79cda49630e6092746c6644c64a2a6f74d19883248119064e0133180fc913`
+- File: `index.html` · SHA-256 `2af4f9bc2ab6793080b3b5a837523fd962f862b3199d659428e62ad743b369f9`
 - Chuẩn: V1.8, 12 tiêu chí có U3, /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25.
 - Đã sửa: bỏ phân hạng "SUV cỡ D", viết lại đoạn tổng quan theo vùng quan sát; dữ kiện ca lắp thật (bản Tiêu chuẩn, F10 Turbo V2 5500K, bộ gá rời, relay, cầu chì, có tháo cản và gia công bộ gá — đối chiếu bài case trên auto365.vn) đưa vào thẻ case và khối "Cần lưu ý"; meta/og/twitter description mới; kích thước 129×67×80 mm gắn riêng X-Light F10 Turbo V2; data-note popup "mưa" nói rõ vùng sáng thấp, góc chiếu, căn chỉnh, gợi ý chỉ tham khảo; thẻ cẩm nang ô tô điện chuyển xuống cuối rail; khối kiểm nội bộ cập nhật; dateModified/Cập nhật 22/10/2026.
 - Kiểm tra: JSON-LD parse OK; FAQ hiển thị 6 = FAQPage 6; ItemList 16 = 16 thẻ, URL khớp href thẻ; video vCnfKrscBU4 ghi "GTR G1 Turbo" (không V2).

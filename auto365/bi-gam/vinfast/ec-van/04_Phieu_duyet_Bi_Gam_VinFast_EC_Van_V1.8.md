@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `63cc47fa05dda2751d74b1a11ff34b2761ca9147f16fdce7de124125e739240b` |
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `377dc4e4c88323d736e2abd7322e0c232ce63c07828e520a4b60503cbf178d53` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -57,3 +57,4 @@ Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát, mặt
 | Bổ sung case/video khi có xe EC Van lắp thực tế (khi đó mới đổi nhãn) | Sau khi có bài |
 | Xoá `#vf3lp-internal-check`, bỏ noindex, nghiệm thu Live L1–L8 | Khi đăng production |
 - 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".
+- 2026-10-24: khối case theo mẫu hub VinFast (thẻ ảnh + nhãn Bi gầm, tên xe, năm, ngày, Xem chi tiết lắp đặt; lọc hãng; 2 hàng cuộn ngang).
