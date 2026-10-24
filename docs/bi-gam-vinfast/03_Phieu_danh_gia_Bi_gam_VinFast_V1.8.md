@@ -95,3 +95,4 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | Khối nhu cầu (23/10, lượt 2) | Gộp vào box "Xe VinFast lắp bi gầm cần lưu ý gì?" thành accordion "Gợi ý chọn bi gầm VinFast theo nhu cầu sử dụng" đóng sẵn ở cuối box |
 | Sapo + Vì sao chọn (23/10) | Sapo theo bản chủ quản viết; khối "Vì sao chọn" thay 4 thẻ icon bằng 6 thẻ ảnh + logo hãng đèn dùng chung với theo-hang-xe (build tự lấy) |
 | 24/10 sau duyệt | 6 ảnh "Vì sao chọn" đổi sang ảnh xe VinFast thật; câu chi nhánh ghi đủ 8 thương hiệu đèn; thẻ nhu cầu cao đều; sửa lỗi dư </div> làm CTA mất màu, font |
+| Responsive 24/10 | Tablet (≤991px): hero 1 cột, lưới dòng xe 2 hàng vuốt ngang (1.140 → 586px), cẩm nang vuốt ngang (1.033 → 378px); kiểm 768px và 375px không tràn ngang |

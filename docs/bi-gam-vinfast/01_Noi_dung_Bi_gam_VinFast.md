@@ -11,8 +11,8 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `1bda4e6124da4dfc7530956f890e1c7cdd1adcdf02204928c3cdb6693ac8119a` |
-| SHA-256 content-src.html | `0e05a9339d5ab207d70011aec790b0824fb66785ae0de03824c3e63a117f7e98` |
+| SHA-256 index.html | `73cf4c17d3f91c75e27d16c542c773f08ade83acaad8184df38c826d48102ca1` |
+| SHA-256 content-src.html | `2e49b5f1658b124eeb997cd7fedb909f8ce4b86968fdea7b2f1425925061fd44` |
 
 ## Sapo (kiêm trả lời nhanh)
 
