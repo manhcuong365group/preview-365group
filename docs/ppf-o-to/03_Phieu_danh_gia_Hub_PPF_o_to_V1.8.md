@@ -84,6 +84,7 @@ Không tự cộng điểm cho các mục trên; chờ reviewer tái chấm.
 | Gọn khối giá (24/10) | Đã làm | Theo góp ý: #bang-gia còn 2 tab (Giá dán toàn xe: chọn hãng + loại xe; Ước tính chi phí nhanh: chọn dòng phim, loại xe, toàn xe/từng vị trí); bỏ sơ đồ vị trí, gói, hình xe minh họa; bỏ giá trùng trong khối thương hiệu; khối thương hiệu dùng logo chữ 3M / AX Film thay ảnh xe; logo hãng ở bộ lọc case cùng kích thước, xám khi chưa chọn |
 | Khối giá theo mockup 2 (24/10) | Đã làm | #san-pham dựng theo layout chủ trang gửi, dữ liệu theo bảng giá đã duyệt (không lấy số trong mockup): thanh thương hiệu 3M/AX; giá toàn xe 3 thẻ Sedan/SUV/MPV kèm bảng dòng phim (ảnh case thật Camry, CX-5, VF 8); giá theo vị trí (bảng + "khi nào nên dán"); 4 gói giá "từ" tạm tính AX G Sedan; ước tính nhanh; dải "giá đã bao gồm". Bỏ nhãn "Phổ biến", hõm tay cửa, gói va quẹt (không có nguồn giá) |
 | Vị trí + ước tính (24/10) | Đã làm | Giá theo vị trí dựng như mockup: ảnh case thật BMW 530i có chấm vị trí, 8 ô giá hai bên, bảng 13 vị trí bên phải (mobile chỉ ảnh + bảng). Khối Ước tính nhanh đưa lên ngay sau bảng giá toàn xe |
+| Callout vị trí (24/10) | Đã làm | Giá theo vị trí dạng callout: ảnh thật BMW 530i đánh số 1–8 + đường nối, 8 thẻ có ảnh cận cảnh thật từ case (nóc xe chưa có ảnh, dùng icon), hàng "Vị trí khác" (cản sau, cốp sau, sườn xe, đuôi cá, đèn sau); bảng 13 vị trí thu vào "Xem bảng giá đầy đủ". Không thêm hõm tay cửa/ốp gầm vì chưa có nguồn giá |
 | A7 nhãn sơ đồ | Giữ nguyên | Chủ trang yêu cầu không để chữ dưới sơ đồ (20/10) |
 
 ## Việc còn lại (tăng mức dư, không chặn)
@@ -99,7 +100,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `b300433dab90a750be25a7faddfb87566328a3a7ba3d53a83b069dee9be9c449` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `eda623befc675c2602da5c0914d0352427f6bf2d6047167daf525dd39bfe2097` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 

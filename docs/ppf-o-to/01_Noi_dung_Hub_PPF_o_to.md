@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `b300433dab90a750be25a7faddfb87566328a3a7ba3d53a83b069dee9be9c449`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `eda623befc675c2602da5c0914d0352427f6bf2d6047167daf525dd39bfe2097`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -63,6 +63,8 @@ Chọn dòng phim, loại xe và vị trí cần dán.
 **Bảng giá dán PPF theo vị trí**
 
 Chọn dòng phim và loại xe để xem giá từng vị trí.
+
+**Xem bảng giá đầy đủ 13 vị trí**
 
 | Vị trí dán | Giá từ | Khi nào nên dán? |
 | --- | --- | --- |
