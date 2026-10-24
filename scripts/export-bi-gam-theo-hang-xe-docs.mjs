@@ -66,7 +66,8 @@ const PNAMES = Object.keys(PSLUG).sort((a, z) => z.length - a.length);
 const F10V = Function('return ' + src.match(/var F10V=(\{[^\n]*?\});/)[1])();
 const skuOf = (title, slug) => {
   if (/X-Light F10 New/i.test(title) && !/F10 New 2025/i.test(title)) return F10V[slug] ? 'X-Light F10 New 2025' : '';
-  return PNAMES.find((n) => title.toLowerCase().includes(n.toLowerCase())) || '';
+  const tl = title.toLowerCase();
+  return PNAMES.find((n) => tl.includes(n.toLowerCase())) || PNAMES.find((n) => /^X-Light /.test(n) && tl.includes(n.slice(8).toLowerCase())) || '';
 };
 const today = new Date().toISOString().slice(0, 10);
 const ALIAS = { 'Ranger Raptor': 'raptor', 'Corolla Cross': 'toyotacross', Wrangler: 'rubicon' };
@@ -81,8 +82,9 @@ CA.forEach((c) => {
   if (sku && !PSLUG[sku]) throw new Error('SKU không có slug: ' + sku + ' (' + c[3] + ')');
   // 3 trạng thái: phiên bản ghi rõ trong tiêu đề / tên chung đã xác nhận qua bài gốc / chưa đủ dữ kiện
   const generic = /X-Light F10 New/i.test(c[2]) && !/F10 New 2025/i.test(c[2]);
-  const st = !sku ? (generic ? 'F10 New không ghi năm, bài không xác nhận bản 2025: chưa tính vào SKU' : 'Chưa xác định')
-    : generic ? 'Tên chung; phiên bản xác nhận qua link/mô tả sản phẩm trong bài (kiểm 21/10/2026)' : 'Phiên bản ghi trong tiêu đề bài';
+  const OLDV = { 'ford-raptor-do-den-bi-gam-x-light-f10-new-nhiet-mau-5500k': 'Bài gốc ghi sản phẩm "X-Light F10 New (đời trước)": không tính vào F10 New 2025 (kiểm 24/10/2026)' };
+  const st = OLDV[c[3]] || (!sku ? (generic ? 'F10 New không ghi năm, bài không xác nhận bản 2025: chưa tính vào SKU' : 'Chưa xác định')
+    : generic ? 'Tên chung; phiên bản xác nhận qua link/mô tả sản phẩm trong bài (kiểm 21/10/2026)' : 'Phiên bản ghi trong tiêu đề bài');
   R.push(['ho-so-xe', key(c[0]), key(m), c[0], m, c[2], '', '', 'https://auto365.vn/' + c[3], sku ? key(sku) : '', sku ? 'https://auto365.vn/' + PSLUG[sku] : '', st, 'Bài đã đăng auto365.vn', c[5], today, 'Chưa đối chiếu hồ sơ thi công gốc']);
 });
 main.querySelectorAll('.bght-guide').forEach((g) => {

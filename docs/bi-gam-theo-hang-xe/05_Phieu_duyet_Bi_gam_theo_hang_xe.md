@@ -62,3 +62,4 @@ CRM xác nhận 22/10/2026 (chủ quản): lead 223 hiện dòng xe "Lexus RX" �
 ## Lượt duyệt 24/10/2026
 
 Chủ quản xác nhận 24/10/2026: anh Nguyễn Quang Đạo đã duyệt đợt 10–12 (dải logo thương hiệu đèn, bộ lọc Hãng đèn và bản vá Titan/bộ lọc giữ ngầm/thông báo rỗng, đồng bộ 3 case + 15 bài tư vấn, thẻ Mazda6 dẫn bài dòng xe). `lastReviewed` = 2026-10-24. Không còn mục chờ duyệt.
+Đợt 13 (24/10/2026, theo góp ý nhỏ R6, chưa có xác nhận duyệt): (1) giới thiệu 20 hãng rút gọn còn dải xe + phân khúc, bỏ các nhận định chung (bền bỉ, giữ giá, cảm giác lái…); (2) hãng đèn của 100 case đối chiếu link sản phẩm trong bài gốc: 69/69 bài có link khớp với nhận theo tiêu đề, bài Outlander "độ bi gầm và camera" lấy Titan theo sản phẩm Titan 301 trong bài; (3) phiên bản: Xpander Cross 2025 = F10 Hyper 2.0, Santa Fe 2020 = F10 2.0 New (theo tiêu đề + link sản phẩm), Raptor ghi rõ "F10 New (đời trước)" theo bài gốc. — cần anh Đạo duyệt.

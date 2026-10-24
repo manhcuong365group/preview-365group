@@ -7,8 +7,8 @@
 | Title | Bi gầm theo hãng xe: chọn mẫu theo dòng xe và case thực tế | Auto365 |
 | Meta description | Tra cứu bi gầm theo 21 hãng xe: dòng xe, mẫu đèn đã lắp thực tế (X-Light, GTR, AES), video, quy trình 7 bước và hệ thống 90+ chi nhánh Auto365. |
 | Ngày cập nhật (dateModified) | 2026-10-24 |
-| SHA-256 index.html | `e5b328a74d0e91e9bc0c7578e5d285c304fd2f44a9a6fbb242a1f327d8100c2f` |
-| SHA-256 content-src.html | `dd2d78e4663aa12cd0c465b7e8850a8381313dffd245636974a4443d04cd7eb0` |
+| SHA-256 index.html | `bd0e6ee9bd84e8dee2648fd04aa9b4c15d6f4854bed6d319b749106906dda5c1` |
+| SHA-256 content-src.html | `677262f53f417304f617af06d0f8e659a2606aa90189e964f7b992177b0faba5` |
 | Xuất lúc | 2026-10-24 (tự động, `scripts/export-bi-gam-theo-hang-xe-docs.mjs`) |
 
 ## H1 và sapo
@@ -78,26 +78,26 @@ Bạn gọi hotline 0365 365 911 hoặc mang xe đến chi nhánh gần nhất �
 ## Giới thiệu hãng (hiện khi chọn hãng)
 
 - **VinFast** — Thương hiệu ô tô điện Việt Nam với dải sản phẩm trải rộng, từ mini SUV VF 3 linh hoạt trong phố đến SUV 7 chỗ VF 9 rộng rãi cho gia đình. Dòng Green (Limo Green, Nerio Green, Herio Green) được thiết kế riêng cho tài xế dịch vụ. Phân khúc phổ thông đến cận cao cấp, phù hợp người dùng ưu tiên chi phí vận hành tiết kiệm. _Nguồn: https://vinfastauto.com/vn_vi_
-- **Toyota** — Thương hiệu được tin dùng nhờ độ bền bỉ, khả năng giữ giá và chi phí bảo dưỡng hợp lý. Dải xe đáp ứng đủ nhu cầu: Wigo, Vios cho đô thị và kinh doanh dịch vụ; Fortuner, Innova Cross cho gia đình đông người; Land Cruiser, Alphard cho khách hàng cao cấp. Phân khúc phổ thông đến cao cấp. _Nguồn: https://www.toyota.com.vn_
-- **Honda** — Nổi bật với cảm giác lái thể thao, động cơ vận hành mượt và tiết kiệm nhiên liệu. Các dòng chủ lực gồm sedan City, Civic và SUV HR-V, CR-V, phù hợp gia đình trẻ và người yêu thích trải nghiệm cầm lái. Phân khúc phổ thông đến tầm trung. _Nguồn: https://www.honda.com.vn/o-to_
-- **Hyundai** — Thiết kế hiện đại cùng trang bị tiện nghi phong phú trong từng tầm giá. Dải xe đa dạng từ Grand i10, Accent cho đô thị, SUV Creta, Tucson, Santa Fe, Palisade đến MPV Custin, Stargazer cho gia đình. Phân khúc phổ thông đến tầm trung. _Nguồn: https://hyundai.thanhcong.vn_
-- **Kia** — Phong cách trẻ trung, nhiều tiện nghi trong tầm giá. Dải xe phong phú gồm Morning, Soluto, sedan K3, K5, SUV Sonet, Seltos, Sportage, Sorento và MPV Carens, Carnival, đáp ứng từ nhu cầu đi lại hằng ngày đến gia đình đông thành viên. Phân khúc phổ thông đến tầm trung. _Nguồn: https://kiavietnam.com.vn_
-- **Mazda** — Ấn tượng với ngôn ngữ thiết kế KODO thanh lịch, nội thất tinh tế và cảm giác lái gắn kết. Các dòng nổi bật gồm Mazda3, SUV CX-5, CX-8 cùng CX-60, CX-90 thế hệ mới, phù hợp người đề cao thẩm mỹ và chất lượng hoàn thiện. Phân khúc tầm trung đến cận cao cấp. _Nguồn: https://mazdamotors.vn_
-- **Ford** — Thế mạnh ở dòng xe gầm cao đa dụng với khung gầm chắc chắn, khả năng vận hành mạnh mẽ trên đường trường và địa hình. Các dòng chủ lực gồm bán tải Ranger, Ranger Raptor và SUV 7 chỗ Everest, Territory. Phân khúc tầm trung đến cao. _Nguồn: https://www.ford.com.vn_
-- **Mitsubishi** — Bền bỉ, vận hành ổn định và chi phí sử dụng hợp lý. MPV Xpander, Xpander Cross được nhiều gia đình và tài xế dịch vụ tin chọn; bên cạnh đó là SUV Destinator, Pajero Sport và bán tải Triton cho nhu cầu đi xa, đa địa hình. Phân khúc phổ thông đến tầm trung. _Nguồn: https://www.mitsubishi-motors.com.vn_
-- **BMW** — Thương hiệu xe sang Đức đề cao cảm giác lái thể thao và công nghệ tiên tiến. Dải xe gồm sedan 3 Series, 5 Series, 7 Series, SUV X1 đến X7, roadster Z4 cùng các mẫu thuần điện i4, i7, iX3. Phân khúc hạng sang. _Nguồn: https://www.bmw.vn_
-- **Lexus** — Thương hiệu xe sang Nhật Bản nổi bật ở sự êm ái, khả năng cách âm và độ tin cậy cao. Các dòng chính gồm sedan ES, LS, SUV NX, RX, GX, LX và MPV hạng sang LM. Phân khúc hạng sang. _Nguồn: https://www.lexus.com.vn_
-- **Suzuki** — Xe nhỏ gọn, linh hoạt và tiết kiệm nhiên liệu, chi phí sở hữu dễ tiếp cận. Dải xe gồm hatchback Swift, crossover Fronx, MPV 7 chỗ XL7 Hybrid và SUV địa hình cỡ nhỏ Jimny. Phân khúc phổ thông. _Nguồn: https://suzuki.com.vn_
-- **Nissan** — Hướng tới sự tiện dụng và công nghệ vận hành hiệu quả. Dải xe gồm sedan Almera, SUV Kicks e-POWER (động cơ xăng chỉ phát điện, bánh xe dẫn động hoàn toàn bằng mô-tơ điện) và bán tải Navara. Phân khúc phổ thông. _Nguồn: https://www.nissanvietnam.vn_
-- **Peugeot** — Mang phong cách thiết kế Pháp tinh tế với khoang lái i-Cockpit đặc trưng. Các dòng chủ lực gồm SUV 2008, 3008, 5008, 408 và MPV Traveller. Phân khúc tầm trung đến cận cao cấp. _Nguồn: https://peugeotvietnam.vn_
-- **Volkswagen** — Đậm chất Đức với kết cấu chắc chắn và cảm giác lái đầm chắc. Dải xe gồm sedan Polo, MPV Viloran và SUV Tiguan, Teramont, Teramont X cho gia đình. Phân khúc tầm trung đến cao. _Nguồn: https://volkswagenvietnam.vn_
-- **Audi** — Thương hiệu xe sang Đức nổi bật về công nghệ chiếu sáng, nội thất và trải nghiệm số. Dải xe gồm sedan A5 đến A8, SUV Q2 đến Q8 cùng các mẫu thuần điện Q6 e-tron, e-tron GT. Phân khúc hạng sang. _Nguồn: https://www.audi.vn_
-- **Land Rover** — Biểu tượng SUV hạng sang với khả năng vượt địa hình vượt trội. Các dòng xe gồm Defender, Discovery, Discovery Sport và họ Range Rover (Range Rover, Sport, Velar, Evoque). Phân khúc cao cấp. _Nguồn: https://www.landrover.com_
-- **Porsche** — Thương hiệu xe thể thao và SUV hạng sang hiệu năng cao. Các dòng xe gồm 718, 911, Taycan, Panamera, Macan và Cayenne. Phân khúc siêu sang. _Nguồn: https://www.porsche.com/vietnam/_
-- **Chevrolet** — Thương hiệu xe Mỹ từng có mặt rộng rãi tại Việt Nam với Spark, Aveo, Cruze, Captiva, Trailblazer và bán tải Colorado. Các mẫu xe này đến nay vẫn được nhiều chủ xe tin dùng. _Nguồn: các mẫu từng phân phối chính hãng tại Việt Nam, Auto365 tổng hợp_
-- **Isuzu** — Nổi tiếng với động cơ diesel bền bỉ, tiết kiệm nhiên liệu. Dải xe gồm bán tải D-Max và SUV 7 chỗ mu-X, phù hợp chạy đường dài và phục vụ công việc. Phân khúc tầm trung. _Nguồn: https://www.isuzu-vietnam.com_
-- **Daewoo** — Thương hiệu xe Hàn Quốc từng rất quen thuộc tại Việt Nam với các mẫu Matiz, Lanos, Nubira, Lacetti, Gentra. Các mẫu xe này đến nay vẫn được nhiều chủ xe tin dùng. _Nguồn: các mẫu từng phân phối chính hãng tại Việt Nam, Auto365 tổng hợp_
-- **Jeep** — Thương hiệu SUV Mỹ thiên về khả năng vượt địa hình. Các dòng tiêu biểu gồm Wrangler (có bản Rubicon), Grand Cherokee và bán tải Gladiator. Phân khúc cao cấp. _Nguồn: https://www.jeep.com_
+- **Toyota** — Dải xe trải từ Wigo, Vios (đô thị, dịch vụ) đến Fortuner, Innova Cross (gia đình) và Land Cruiser, Alphard. Phân khúc phổ thông đến cao cấp. _Nguồn: https://www.toyota.com.vn_
+- **Honda** — Dải xe chủ lực gồm sedan City, Civic và SUV HR-V, CR-V. Phân khúc phổ thông đến tầm trung. _Nguồn: https://www.honda.com.vn/o-to_
+- **Hyundai** — Dải xe gồm Grand i10, Accent, SUV Creta, Tucson, Santa Fe, Palisade và MPV Custin, Stargazer. Phân khúc phổ thông đến tầm trung. _Nguồn: https://hyundai.thanhcong.vn_
+- **Kia** — Dải xe gồm Morning, Soluto, sedan K3, K5, SUV Sonet, Seltos, Sportage, Sorento và MPV Carens, Carnival. Phân khúc phổ thông đến tầm trung. _Nguồn: https://kiavietnam.com.vn_
+- **Mazda** — Dải xe gồm Mazda2, Mazda3, SUV CX-5, CX-8 và CX-60, CX-90 thế hệ mới. Phân khúc tầm trung đến cận cao cấp. _Nguồn: https://mazdamotors.vn_
+- **Ford** — Dải xe chủ lực gồm bán tải Ranger, Ranger Raptor và SUV Everest, Territory. Phân khúc tầm trung đến cao. _Nguồn: https://www.ford.com.vn_
+- **Mitsubishi** — Dải xe gồm MPV Xpander, Xpander Cross, SUV Destinator, Pajero Sport và bán tải Triton. Phân khúc phổ thông đến tầm trung. _Nguồn: https://www.mitsubishi-motors.com.vn_
+- **BMW** — Thương hiệu xe sang Đức; dải xe gồm sedan 3, 5, 7 Series, SUV X1 đến X7, Z4 và các mẫu điện i4, i7, iX3. _Nguồn: https://www.bmw.vn_
+- **Lexus** — Thương hiệu xe sang Nhật Bản; dải xe gồm sedan ES, LS, SUV NX, RX, GX, LX và MPV LM. _Nguồn: https://www.lexus.com.vn_
+- **Suzuki** — Dải xe nhỏ gọn gồm Swift, Fronx, MPV 7 chỗ XL7 Hybrid và Jimny. Phân khúc phổ thông. _Nguồn: https://suzuki.com.vn_
+- **Nissan** — Dải xe gồm sedan Almera, SUV Kicks e-POWER và bán tải Navara. Phân khúc phổ thông. _Nguồn: https://www.nissanvietnam.vn_
+- **Peugeot** — Thương hiệu Pháp; dải xe gồm SUV 2008, 3008, 5008, 408 và MPV Traveller. Phân khúc tầm trung đến cận cao cấp. _Nguồn: https://peugeotvietnam.vn_
+- **Volkswagen** — Thương hiệu Đức; dải xe gồm Polo, MPV Viloran và SUV Tiguan, Teramont, Teramont X. Phân khúc tầm trung đến cao. _Nguồn: https://volkswagenvietnam.vn_
+- **Audi** — Thương hiệu xe sang Đức; dải xe gồm sedan A5 đến A8, SUV Q2 đến Q8 và các mẫu điện Q6 e-tron, e-tron GT. _Nguồn: https://www.audi.vn_
+- **Land Rover** — Thương hiệu SUV hạng sang; dải xe gồm Defender, Discovery, Discovery Sport và họ Range Rover. _Nguồn: https://www.landrover.com_
+- **Porsche** — Thương hiệu xe thể thao và SUV hiệu năng cao; dải xe gồm 718, 911, Taycan, Panamera, Macan, Cayenne. _Nguồn: https://www.porsche.com/vietnam/_
+- **Chevrolet** — Thương hiệu xe Mỹ từng phân phối tại Việt Nam với Spark, Aveo, Cruze, Captiva, Trailblazer và bán tải Colorado. _Nguồn: các mẫu từng phân phối chính hãng tại Việt Nam, Auto365 tổng hợp_
+- **Isuzu** — Dải xe gồm bán tải D-Max và SUV 7 chỗ mu-X, dùng động cơ diesel. Phân khúc tầm trung. _Nguồn: https://www.isuzu-vietnam.com_
+- **Daewoo** — Thương hiệu xe Hàn Quốc từng phổ biến tại Việt Nam với Matiz, Lanos, Nubira, Lacetti, Gentra. _Nguồn: các mẫu từng phân phối chính hãng tại Việt Nam, Auto365 tổng hợp_
+- **Jeep** — Thương hiệu SUV Mỹ; dải xe gồm Wrangler (có bản Rubicon), Grand Cherokee và bán tải Gladiator. Phân khúc cao cấp. _Nguồn: https://www.jeep.com_
 
 ## Số liệu
 

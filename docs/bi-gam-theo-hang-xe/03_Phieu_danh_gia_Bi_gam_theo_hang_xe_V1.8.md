@@ -139,3 +139,5 @@ Còn thuộc bước đưa live (không phải lỗi nội dung): HUB `/nang-cap
 | Mazda 6 | GUIDE.Mazda6 = `bi-gam-mazda-6` (200) | Tìm "Mazda 6" → link bài dòng xe |
 
 Chờ reviewer chấm lại.
+
+Bổ sung 24/10/2026 (góp ý nhỏ R6): giới thiệu 20 hãng rút gọn (C3); hãng đèn 100 case đối chiếu link sản phẩm bài gốc — 69/69 khớp, Outlander camera → Titan, Titan 5 bài (G3); SKU Xpander Cross 2025, Santa Fe 2020 đã xác định, Raptor ghi rõ đời trước (C1). Chưa đối chiếu hồ sơ thi công gốc (ngoài phạm vi trang).
