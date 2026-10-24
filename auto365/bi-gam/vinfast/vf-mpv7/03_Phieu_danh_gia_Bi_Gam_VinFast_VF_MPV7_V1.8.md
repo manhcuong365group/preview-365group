@@ -6,7 +6,7 @@
 |---|---|
 | Trang | Bi gầm VinFast VF MPV 7 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 (chưa đăng) |
-| SHA-256 index.html | `4b59f25237332aed616039506ad0459ca52bcb3eb36732067f57a9c32a0f8d1b` (cùng mã trong 02/04) |
+| SHA-256 index.html | `19917f14117484258a48bcfa3002b234888dfd1c1a4aa76bf6ba149521c35899` (cùng mã trong 02/04) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
 | Reviewer | Nguyễn Quang Đạo — duyệt 24/10/2026 (lastReviewed 2026-10-24) |
 | Test lead | Chưa test trên trang này (chưa đăng) |

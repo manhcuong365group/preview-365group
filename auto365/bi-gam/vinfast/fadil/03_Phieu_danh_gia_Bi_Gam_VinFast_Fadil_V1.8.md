@@ -6,7 +6,7 @@
 |---|---|
 | Trang | Bi gầm VinFast Fadil — preview https://preview-365group.pages.dev/bi-gam/vinfast/fadil/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil (chưa đăng — 404 ngày 22/10) |
-| SHA-256 index.html | `a7784eb87407f889e113790b524adf74eb6a2df1a90b282aac368c6390cdb0c5` (cùng mã trong 02/04) |
+| SHA-256 index.html | `9b3cbbc18b30610a273b250b5d97bcda12ae17b82628c52734c3fc977653c74c` (cùng mã trong 02/04) |
 | Phạm vi đời/phiên bản | Anh Đạo duyệt, lưu ở phiếu 04; **không công bố trên trang** theo quyết định user 22/10 |
 | Test lead | Chưa test trên trang này (chưa đăng). Test production đã chạy trên VF3/VF6/VF7 (lead #224–226) |
 
@@ -21,7 +21,7 @@ C 28,7 · S 29,0 · G 24,4 · U 14,3 → **96,4/100 — ĐẠT** (12 tiêu chí,
 | Trường | Nội dung |
 | --- | --- |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| Bản chấm | `index.html` SHA-256 `a7784eb87407f889e113790b524adf74eb6a2df1a90b282aac368c6390cdb0c5` |
+| Bản chấm | `index.html` SHA-256 `9b3cbbc18b30610a273b250b5d97bcda12ae17b82628c52734c3fc977653c74c` |
 | Ngày chấm | 22/10/2026, chấm trên preview, sau audit reviewer 21/10/2026 |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 21/10/2026 (lastReviewed giữ 21/10) |
 

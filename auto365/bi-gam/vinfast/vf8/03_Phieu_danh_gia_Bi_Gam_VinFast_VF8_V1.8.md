@@ -7,7 +7,7 @@
 | Trang | Bi gầm VinFast VF8 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `1060dddecd280b119f4ecec9c02d1ebc2b186eb051de08477037ff61a3924933` (cùng mã trong 02/04) |
+| SHA-256 index.html | `3ce2df3fff87a9eed3aad54fa50e1143537fe4ac3cc1955a2ba6b7567733451a` (cùng mã trong 02/04) |
 | Ngày chấm | 24/10/2026, chấm trên preview |
 | Reviewer | Nguyễn Quang Đạo — duyệt kỹ thuật 24/10/2026 |
 
