@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m-365group/index.html` — SHA-256 `f1c45bbd207c6cdbc5523f3b9fb7e68da5e3930e981d0956c56cdd4f49b6d324`
+Nguồn: `auto365/3m-365group/index.html` — SHA-256 `389f7496b9370ff409ef86fcd1b77311cc105c463ff998330799bac13a88cae5`
 Ngày xuất: 24/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -45,7 +45,6 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 ### Crystalline Hybrid
 
 ### Crystalline CR BLK
-2 cấu hình PRO · CR BLK 40 ở kính lái thay cho CR BLK 50/60
 
 ### Hybrid PRO
 
