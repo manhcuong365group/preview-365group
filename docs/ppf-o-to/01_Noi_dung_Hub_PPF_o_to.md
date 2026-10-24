@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `8dffa392c378f7e93858dea6bb54a6079a376836de5dda79807b69a43a250add`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `3b1cfc3518a2ba1adf1df77e15118b97f66a148dfec6cd3d752b4153126e7aac`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,13 +9,13 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (22/10/2026) · Cập nhật 23/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (22/10/2026) · Cập nhật 24/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 ## Sản phẩm PPF tại Auto365: 3M và AX Film  `#san-pham`
 
-So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe từ (Sedan, gồm VAT). Bảng giá chi tiết ở mục Bảng giá.
+So sánh nhanh các mã 3M và AX Film đang thi công tại Auto365: độ dày, bảo hành, giá dán toàn xe từ (Sedan, gồm VAT). Giá xem ở mục Bảng giá.
 
 **3M PPF**
 
@@ -33,97 +33,17 @@ Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã g�
 
 ## Bảng giá dán PPF tại Auto365  `#bang-gia`
 
-Giá dán toàn xe đã gồm VAT. Chọn cách xem phù hợp: theo loại xe, theo vị trí, theo gói hoặc tự ước tính.
+Giá tham khảo; giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
 
-**Bảng giá dán PPF toàn xe**
+Giá dán toàn xe đã gồm VAT. Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9…
 
-Chọn thương hiệu và loại xe để xem mức giá tham khảo.
+Dòng phim
 
-**50 Gloss**
+Loại xe
 
-Giá từ44.000.000đ
+Phạm vi dán
 
-- Bề mặt bóng
-- Bảo hành 5 năm
-
-**100 Gloss**
-
-Giá từ76.000.000đ
-
-- Độ dày 7.5 mil
-- Bề mặt bóng
-- Bảo hành 7 năm
-
-**150 Gloss**
-
-Giá từ92.000.000đ
-
-- Độ dày 7.5 mil (kèm keo)
-- Xước nhẹ tự mờ khi gặp nhiệt
-- Bảo hành 10 năm
-
-**200 Gloss**
-
-Giá từ110.000.000đ
-
-- Độ dày 7.9 mil
-- Bề mặt bóng
-- Bảo hành 10 năm
-
-Sedan: Vios, City, Mazda 3, Camry… · SUV: CX-5, CR-V, Tucson, VF 6/7/8… · MPV: Carnival, Innova, Xpander, Fortuner, VF 9… Loại xe và phạm vi panel xác nhận khi kiểm tra xe.
-
-**Bảng giá dán theo vị trí**
-
-Chọn dòng phim và loại xe để xem giá từng vị trí.
-
-Theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính, lập 23/10/2026. VAT xác nhận khi chốt báo giá.
-
-Mục "mỗi bên" tính cho một bên. Giá dán lẻ không cộng lại để thay cho giá gói toàn xe. AX Film: Sedan tương ứng hạng A–B, SUV hạng C–D theo bảng giá AX Film cho khách lẻ (gồm VAT). 3M 100 Gloss chưa có bảng giá theo vị trí, liên hệ để báo giá.
-
-**Các gói dán PPF theo nhu cầu**
-
-Gợi ý gói phổ biến; giá từ tạm tính theo giá từng vị trí.
-
-**Gói phần đầu xe**
-
-- Capo
-- Cản trước
-- Đèn trước
-- Ốp gương
-
-Từ 7.200.000đ
-
-**Gói đi cao tốc**
-
-- Capo
-- Cản trước
-- Đèn trước
-- Ốp gương
-- Má trước hai bên
-
-Từ 10.400.000đ
-
-**Gói thân xe**
-
-- Cửa trước
-- Cửa sau hai bên
-- Cốp sau
-
-Từ 7.800.000đ
-
-**Gói toàn xe**
-
-- Toàn bộ bề mặt sơn ngoại thất theo gói
-
-Từ 20.000.000đ
-
-Giá "từ" tạm tính bằng AX Film PPF G Series, xe Sedan/hạng A–B, cộng theo giá từng vị trí (gói toàn xe theo giá gói). Bấm ước tính để đổi dòng phim, loại xe. Phạm vi thực tế thống nhất khi kiểm tra xe.
-
-**Ước tính chi phí nhanh**
-
-Chọn dòng phim, loại xe và vị trí cần dán.
-
-Giá tham khảo; giá chính xác báo sau khi kiểm tra xe.
+Ước tính cộng theo giá từng vị trí: 3M theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (23/10/2026), VAT xác nhận khi chốt báo giá; AX Film theo bảng giá khách lẻ, gồm VAT (SUV tương ứng hạng C–D). Dán toàn xe tính theo giá gói.
 
 ## Xe thực tế dán PPF tại Auto365  `#cases`
 
@@ -433,7 +353,7 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 23/10/2026
+Kiểm duyệt nội dung hub PPF ngày 22/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 24/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
