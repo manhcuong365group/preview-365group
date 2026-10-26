@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `bc0ffbba6093bf0ab8ea536f7ca51edf76b3cdb6e4032c8f419a36f689721292`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `d46ac13da001dc02dd9e3220dce0abedbe1a6dc17346fc18f0e1bfa6d683a678`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -27,21 +27,21 @@ Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem t�
 
 **Xem bảng giá đầy đủ 13 vị trí**
 
-| Vị trí dán | Giá từ | Khi nào nên dán? |
-| --- | --- | --- |
-| Capo | 5.320.000đ | Dễ trầy do đá văng khi chạy sau xe khác |
-| Cản trước | 5.320.000đ | Vùng hứng đá dăm, va quẹt khi đỗ |
-| Cản sau | 5.320.000đ | Dễ trầy khi lùi, đỗ xe |
-| Cốp sau | 3.420.000đ | Trầy khi xếp đồ ra vào |
-| Nóc xe | 5.320.000đ | Hạn chế trầy, bạc màu do nắng |
-| Sườn xe | 7.220.000đ | Va quẹt khi đi đường hẹp |
-| Cửa trước (mỗi bên) | 3.040.000đ | Trầy do ra vào, va cửa xe bên |
-| Cửa sau (mỗi bên) | 2.660.000đ | Trầy khi ra vào, va quệt |
-| Má trước (mỗi bên) | 3.040.000đ | Đá văng từ bánh trước |
-| Đuôi cá | 1.520.000đ | Chi tiết dễ trầy, bạc màu |
-| Đèn trước (mỗi bên) | 760.000đ | Hạn chế trầy, ố mặt đèn |
-| Đèn sau (mỗi bên) | 760.000đ | Hạn chế trầy mặt đèn |
-| Ốp gương (mỗi bên) | 760.000đ | Dễ va quẹt khi đi đường hẹp |
+| Vị trí dán | 3M | AX Film | Khi nào nên dán? |
+| --- | --- | --- | --- |
+| Capo | 5.320.000đ | — | Dễ trầy do đá văng khi chạy sau xe khác |
+| Cản trước | 5.320.000đ | — | Vùng hứng đá dăm, va quẹt khi đỗ |
+| Cản sau | 5.320.000đ | — | Dễ trầy khi lùi, đỗ xe |
+| Cốp sau | 3.420.000đ | — | Trầy khi xếp đồ ra vào |
+| Nóc xe | 5.320.000đ | — | Hạn chế trầy, bạc màu do nắng |
+| Sườn xe | 7.220.000đ | — | Va quẹt khi đi đường hẹp |
+| Cửa trước (mỗi bên) | 3.040.000đ | — | Trầy do ra vào, va cửa xe bên |
+| Cửa sau (mỗi bên) | 2.660.000đ | — | Trầy khi ra vào, va quệt |
+| Má trước (mỗi bên) | 3.040.000đ | — | Đá văng từ bánh trước |
+| Đuôi cá | 1.520.000đ | — | Chi tiết dễ trầy, bạc màu |
+| Đèn trước (mỗi bên) | 760.000đ | — | Hạn chế trầy, ố mặt đèn |
+| Đèn sau (mỗi bên) | 760.000đ | — | Hạn chế trầy mặt đèn |
+| Ốp gương (mỗi bên) | 760.000đ | — | Dễ va quẹt khi đi đường hẹp |
 
 Giá 3M theo bảng giá 3M PPF theo vị trí của 3M Pro Shop - Trụ Sở Chính (23/10/2026), VAT xác nhận khi chốt báo giá. AX Film theo bảng giá khách lẻ, gồm VAT (Sedan = hạng A–B, SUV = hạng C–D). 3M 100 Gloss chưa có bảng giá theo vị trí.
 
