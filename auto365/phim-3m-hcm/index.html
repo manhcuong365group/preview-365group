@@ -251,6 +251,15 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-gr__s{color:#f5b301;letter-spacing:1px}.h3m-gr b{font-weight:600}.h3m-gr span:last-child{color:var(--m)}
 .h3m-gr--dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#fff}.h3m-gr--dark span:last-child{color:#d5d8de}
 .h3m-gr--hq{margin:0 0 14px}.h3m-perks>b{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.h3m-gr--perks{margin:0;font-size:13px;padding:4px 10px}
+.h3m-hero__gift{display:inline-block;margin:-8px 0 22px;padding:8px 14px;border-radius:8px;background:rgba(225,29,39,.18);border:1px solid rgba(225,29,39,.45);font-size:14px;color:#fff}
+.h3m-pick{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 18px}.h3m-pick>span{font-size:14px;color:var(--m);margin-right:4px}
+.h3m-pick button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:9px 16px;border:1px solid #d2d9e3;border-radius:10px;background:#fff;cursor:pointer;font:inherit;text-align:left}
+.h3m-pick button b{font-size:14px;font-weight:600}.h3m-pick button small{font-size:12px;color:var(--m)}
+.h3m-pick button:hover,.h3m-pick button.is-on{border-color:var(--r)}.h3m-pick button.is-on{background:#fff5f5}
+.h3m-card.is-pick{border-color:var(--r);box-shadow:0 0 0 3px rgba(225,29,39,.15)}.h3m-card.is-dim{opacity:.55}
+.h3m-modal__sla{margin:-4px 0 2px;text-align:center;font-size:13px;color:var(--m)}
+@media (max-width:640px){.h3m-gal{display:none}.h3m-hero__gift{font-size:13px}.h3m-pick{display:grid;grid-template-columns:repeat(3,1fr)}.h3m-pick>span{grid-column:1/-1}.h3m-pick button{padding:8px 10px}.h3m-pick button small{font-size:11px}}
+.h3m-perks>.h3m-gr--perks{grid-column:1/-1;justify-self:start;margin-top:-4px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -281,6 +290,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <span class="h3m-hero__tag">📍 3M Pro Shop · Trụ sở chính Auto365</span>
   <h1>Dán phim cách nhiệt <span>3M</span> tại TP.HCM</h1>
   <p class="h3m-hero__sub">Nắng Sài Gòn quanh năm — chọn đúng cấu hình phim 3M chính hãng, thi công tại 3M Pro Shop – trụ sở chính Auto365, bảo hành điện tử 3M 10 năm.</p>
+  <p class="h3m-hero__gift">🎁 Miễn phí tháo &amp; vệ sinh phim cũ · Tặng rửa xe + hút bụi · Tặng vệ sinh kính + tẩy ố kính</p>
   <ul class="h3m-hero__ben">
    <li><b>Cách nhiệt tốt hơn</b>Giảm nóng khi đỗ xe ngoài trời</li>
    <li><b>Cản tia UV</b>Bảo vệ da và nội thất</li>
@@ -322,6 +332,11 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <div class="h3m-wrap">
   <h2 class="h3m-h2">6 cấu hình phim <em>3M</em> tại Auto365</h2>
   <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV.</p>
+  <div class="h3m-pick" role="group" aria-label="Gợi ý chọn gói theo nhu cầu"><span>Chưa biết chọn gói nào?</span>
+   <button type="button" data-pick="ceramic-hybrid"><b>Tiết kiệm</b><small>Ceramic Hybrid · từ 5,9tr</small></button>
+   <button type="button" data-pick="crystalline-hybrid"><b>Cân bằng</b><small>Crystalline Hybrid · từ 9,0tr</small></button>
+   <button type="button" data-pick="cr-blk-pro"><b>Cao cấp</b><small>CR BLK PRO · từ 12,9tr</small></button>
+  </div>
   <div class="h3m-pk" id="h3m-pk"></div>
   <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+-+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M lên đến 10 năm theo dòng phim</li><li>Thi công tại 3M Pro Shop ủy quyền</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
   <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
@@ -566,6 +581,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <form class="h3m-modal__f" action="/api/leads" method="post" novalidate data-lead="popup">
   <button type="button" class="h3m-modal__x" data-close aria-label="Đóng form tư vấn">×</button>
   <h2 class="full" id="h3m-modal-t">Nhận tư vấn miễn phí</h2>
+  <p class="h3m-modal__sla full">Cố vấn 3M Pro Shop gọi lại trong giờ làm việc (8:00–18:30).</p>
   <p class="h3m-modal__pk full" id="h3m-modal-pk" hidden></p>
   <label>Họ và tên<input name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
   <label>Số điện thoại<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
@@ -596,7 +612,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  var grid=document.getElementById('h3m-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk');
  PK.forEach(function(k){
-  grid.insertAdjacentHTML('beforeend','<article class="h3m-card">'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
+  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'">'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
    '<div class="h3m-card__price">Trọn xe từ <span class="h3m-card__from">'+vnd(k.p[0])+'</span><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
    '<button type="button" class="h3m-btn h3m-btn--red h3m-card__cta" data-open-lead data-pk="'+k.n+'">Nhận báo giá gói này →</button>'+
@@ -612,15 +628,21 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  });
 
  // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần
- var cf={loai:'',brand:''},shown=12,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
+ var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
  function applyCases(){var m=cards.filter(function(c){return (!cf.loai||c.dataset.loai.split('|').indexOf(cf.loai)>-1)&&(!cf.brand||c.dataset.brand===cf.brand)});
   cards.forEach(function(c){c.hidden=true});m.forEach(function(c,i){c.hidden=i>=shown});
   cnt.textContent='Hiển thị '+Math.min(shown,m.length)+'/'+m.length+' hồ sơ xe thực tế';moreC.hidden=m.length<=shown}
+ document.querySelectorAll('[data-pick]').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('[data-pick]').forEach(function(x){x.classList.toggle('is-on',x===b)});
+  document.querySelectorAll('.h3m-card').forEach(function(c){c.classList.toggle('is-pick',c.dataset.id===b.dataset.pick);c.classList.toggle('is-dim',c.dataset.id!==b.dataset.pick)});
+  var c=document.querySelector('.h3m-card.is-pick');if(c)c.scrollIntoView({behavior:'smooth',block:'center'});
+  if(window.gtag)gtag('event','pick_package_hint',{package_id:b.dataset.pick})})});
  document.querySelectorAll('.h3m-cfx__chips').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-plus')){g.querySelectorAll('.is-x').forEach(function(x){x.hidden=false});b.hidden=true;return}
-  g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=12;applyCases()})});
- moreC.addEventListener('click',function(){shown+=12;applyCases()});applyCases();
- var moreP=document.querySelector('[data-more=press]');moreP.addEventListener('click',function(){document.querySelectorAll('.h3m-pl .is-more').forEach(function(x){x.hidden=false});moreP.hidden=true});
+  g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
+ moreC.addEventListener('click',function(){shown+=STEP;applyCases()});applyCases();
+ var moreP=document.querySelector('[data-more=press]');
+ if(MOB){[].slice.call(document.querySelectorAll('.h3m-pl li')).forEach(function(li,i){if(i>=3){li.classList.add('is-more');li.hidden=true}});moreP.textContent='Xem thêm '+document.querySelectorAll('.h3m-pl .is-more').length+' bài báo'}moreP.addEventListener('click',function(){document.querySelectorAll('.h3m-pl .is-more').forEach(function(x){x.hidden=false});moreP.hidden=true});
 
  // Lead form: chỉ báo thành công khi API trả {"success": true}
  function bindLead(f){
