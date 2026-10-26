@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365Group) V1.8
 
-- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `e087ed804ef5eec5483828e68ad58120afd0bfede0095c7ce4d09d59aad1eae3` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `c51c42a856f87b90d3e45854e2bf4107f94889c68735668eff47676e2585bb28` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (noindex đúng chủ đích)
 - Đơn vị xuất bản: 365Group — nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam (chủ trang xác nhận 22/10/2026). Giọng bài: nhà phân phối, không viết như trang của 3M.
 - Kiểm duyệt kỹ thuật: **Đặng Minh Hoàng** – Giám đốc điều hành 3M Pro Shop & 3M Training Center, chủ trang chỉ định 23/10/2026. Hiện ở dòng dưới hero và khung "Về bài viết này"; WebPage có `reviewedBy` (url auto365.vn/tac-gia/dang-minh-hoang, worksFor = Organization 365Group) và `lastReviewed` 2026-10-23. Không ghi "chuyên gia 3M"/"3M xác nhận". Anh Đạo không đứng tên trang này. Nên có trang hồ sơ anh Hoàng trên site 365Group để thay link auto365.vn.
@@ -50,7 +50,7 @@ Chủ trang yêu cầu bỏ bảng "So sánh nhanh 6 cấu hình" vì trùng v�
 
 ## 2f. Ba dòng phim dạng tab kiểu 3M + vá R3 (26/10/2026)
 
-- Theo yêu cầu sếp ("trình bày như 3M cho giống hãng"): khối 3 dòng phim đổi thành tab Crystalline Series / Ceramic IR Series / Ceramic NR Series (role=tablist, phím ←/→). Mỗi tab: ảnh xe tại 3M Pro Shop, mô tả, "Đặc điểm chính" (giảm nhiệt TSER đến … + mã kính lái riêng, IRR, UV, VLT, giảm lóa, công nghệ, màu, bảo hành, giá trọn xe từ …), link dòng phim, PDF, bảng 12 mã. Số liệu theo bảng 260815; mức "đến" ghi rõ mã đậm nhất, mã kính lái ghi riêng.
+- Theo yêu cầu sếp ("trình bày như 3M cho giống hãng"): khối 3 dòng phim đổi thành tab 3M™ Crystalline™ CR BLK / 3M™ Ceramic IR / 3M™ Ceramic NR (role=tablist, phím ←/→). Mỗi tab: ảnh xe tại 3M Pro Shop, mô tả, "Đặc điểm chính" (giảm nhiệt TSER đến … + mã kính lái riêng, IRR, UV, VLT, giảm lóa, công nghệ, màu, bảo hành, giá trọn xe từ …), link dòng phim, PDF, bảng 12 mã. Số liệu theo bảng 260815; mức "đến" ghi rõ mã đậm nhất, mã kính lái ghi riêng.
 - Vá R3: link "Xem bảng thông số chi tiết" → #thong-so; logo → trang chủ 365Group; chỉ giữ scroll-padding-top; bỏ câu "bảng so sánh phía trên"; nhãn giá "SUV" theo PDF (bỏ "/ MPV"); chú thích Preferred Installer ghi "Auto365.vn - Trụ Sở Chính"; nút form "Gửi yêu cầu đại lý tư vấn"; script form kiểm tra r.ok trước khi đọc JSON; VLT kính lái thêm vào 6 thẻ + ghi chú cấu hình PRO (CR BLK 40, VLT 41%, nên xem mẫu thực tế); emoji dải lợi ích → icon SVG; báo chí hiện 4 bài, 4 bài còn lại trong "Xem thêm".
 - Chưa làm (cần quyết định/dữ liệu ngoài trang): hero đổi sang ảnh khoang xe/kính (chưa có tư liệu); điều kiện giá "đã gồm công/VAT/phát sinh" và phạm vi MPV (chờ Kinh doanh – FAQ vẫn ghi "đã gồm công thi công" theo pillar Auto365 đã đăng); đồng bộ giao diện trang đại lý và hotline 0363 365 365 / 1900 9365; bộ lọc nhóm đại lý; route production 200 + tài nguyên; nghiệm thu lead.
 

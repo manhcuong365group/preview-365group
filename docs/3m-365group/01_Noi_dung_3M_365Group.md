@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `e087ed804ef5eec5483828e68ad58120afd0bfede0095c7ce4d09d59aad1eae3`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `c51c42a856f87b90d3e45854e2bf4107f94889c68735668eff47676e2585bb28`
 Ngày xuất: 26/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -16,7 +16,7 @@ Bảo hành điện tử 10 nămKích hoạt sau khi dán, tra cứu được
 ## 3 dòng phim cách nhiệt 3M  `#dong-phim`
 Ba công nghệ cho các mức ngân sách khác nhau
 
-### 3M™ Crystalline Series CR BLK
+### 3M™ Crystalline™ Series CR BLK
 Dòng phim cao cấp của 3M dùng công nghệ quang học đa lớp, tông đen tiệp kính nguyên bản; cho khả năng giảm nhiệt, chặn UV và giảm lóa cao trong khi vẫn giữ tầm nhìn rõ.
 Đặc điểm chính:
 - Giảm nhiệt: TSER đến 64% (CR BLK 15); mã kính lái CR BLK 40/50/60: 58% / 56% / 54%. Loại bỏ hồng ngoại (IRR) đến 98%
