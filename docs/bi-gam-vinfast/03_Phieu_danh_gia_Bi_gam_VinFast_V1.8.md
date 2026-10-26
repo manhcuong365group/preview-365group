@@ -164,3 +164,4 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | Responsive 24/10 | Tablet (≤991px): hero 1 cột, lưới dòng xe 2 hàng vuốt ngang (1.140 → 586px), cẩm nang vuốt ngang (1.033 → 378px); kiểm 768px và 375px không tràn ngang |
 | Responsive 24/10 (lượt 2) | Kiểm thêm 360, 414-class, 820, 1024px: không tràn ngang; 993–1100px lưới dòng xe chuyển 2 hàng vuốt ngang 5 cột hiện (1.289 → 559px); desktop ≥1101px giữ lưới 6 cột |
 | Sapo câu 3 (26/10) | Thêm câu "xe chưa có hồ sơ… chi phí gồm thiết bị, phụ kiện, công lắp và VAT" để sapo trả lời thẳng nhu cầu (G1) |
+| Tab nhóm xe + VF Wild (26/10) | Tab "Xe xăng (4)" thay "Mẫu xe cũ"; VF e34 về nhóm Xe điện; thêm VF Wild (Liên hệ tư vấn) → 19 dòng: Xe điện 10 · Green 5 · Xe xăng 4 |

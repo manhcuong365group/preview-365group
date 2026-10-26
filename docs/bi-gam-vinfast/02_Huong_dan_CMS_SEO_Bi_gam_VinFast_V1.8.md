@@ -80,7 +80,7 @@ Trên preview, bấm 3 thẻ này sẽ ra trang 404 của production — đúng 
 |---|---|---|
 | Sapo (kiêm trả lời nhanh) | Chủ quản viết 23/10; R2 thu hẹp còn X-Light, GTR (tập hồ sơ đang dẫn chưa có bài AES trên VinFast) | Sửa trong source |
 | Vì sao chọn Auto365 (6 thẻ ảnh + logo hãng đèn) | Khối của theo-hang-xe, build tự lấy (cân lại 1 thẻ </div> dư ở khối gốc); riêng trang VinFast thay 6 ảnh bằng ảnh xe VinFast và thay câu "hệ điện 12V/24V" bằng "hệ điện phụ trợ và điện áp cấp nguồn theo tài liệu của từng xe" | Sửa ở theo-hang-xe rồi build lại |
-| 18 dòng xe | Dải sản phẩm VinFast; ảnh mục 3 | Mảng `M` |
+| 19 dòng xe (Xe điện 10 · Green / dịch vụ 5 · Xe xăng 4) | Dải sản phẩm VinFast, khớp danh sách VinFast ở trang theo-hang-xe; ảnh mục 3 | Mảng `M` |
 | Chọn theo nhu cầu (3 nhóm) | Phần tư vấn nhu cầu đã duyệt ở các trang dòng xe + case thật | Sửa trong source |
 | Bài hồ sơ (10) | Khối case trên trang VF3 production, **đã bỏ bài tư vấn `/bi-gam-vinfast-fadil`** (chuyển sang cẩm nang) | Mảng `C` |
 | Cẩm nang (5) | Chọn theo VinFast / xe điện / vùng sáng / hốc đèn / kiểm tra (không còn lấy 8 bài mới nhất toàn hệ thống) | Mảng `G` |

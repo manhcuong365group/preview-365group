@@ -11,8 +11,8 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `86414712a37fe03e5124264b082eef25d294cb534258d345b5d21ad2b02ac844` |
-| SHA-256 content-src.html | `829704b08eedb813e4d6852be2dd7aa6e868948ead68038e26bbbf28b6242df3` |
+| SHA-256 index.html | `010404d3e46d98e1204f3e3d692f3ba131b0b848400264846ace838e8009a5f4` |
+| SHA-256 content-src.html | `88be9d2b33ac55292128fd17963834e3ee9255774d236f900bb11b47b4aaa493` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Bi gầm VinFast cần chọn theo hốc đèn và hệ thống điện của t�
 
 ## Chọn dòng xe VinFast
 
-### Dòng xe (18)
+### Dòng xe (19)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -32,6 +32,7 @@ Bi gầm VinFast cần chọn theo hốc đèn và hệ thống điện của t�
 | VinFast VF 8 | Xe điện | Liên hệ tư vấn | — |
 | VinFast VF 9 | Xe điện | Liên hệ tư vấn | — |
 | VinFast VF MPV 7 | Xe điện | Liên hệ tư vấn | — |
+| VinFast VF Wild | Xe điện | Liên hệ tư vấn | — |
 | VinFast Minio Green | Green / dịch vụ | Liên hệ tư vấn | — |
 | VinFast Herio Green | Green / dịch vụ | Liên hệ tư vấn | — |
 | VinFast Nerio Green | Green / dịch vụ | Liên hệ tư vấn | — |
@@ -76,7 +77,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### Xe điện đi phố hằng ngày
 
-_Dòng xe:_ VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7, VF e34
+_Dòng xe:_ VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7, VF Wild, VF e34
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.
