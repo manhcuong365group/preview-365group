@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast EC Van: giá, cấu hình và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › EC Van |
-| Bản nguồn | `index.html` SHA-256 `62829e516cd2b4e9d03ab71c5379d5d909fa7aee676fc9266b40f1d4c1c16011` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `b7c562c3bbbd5fecbe42c1033a080b4fca4e1a2f3b10321404bddf0af4b88a6a` (24/10/2026) |
 
 ## Khi đăng production
 

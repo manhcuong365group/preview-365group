@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `62829e516cd2b4e9d03ab71c5379d5d909fa7aee676fc9266b40f1d4c1c16011` |
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `b7c562c3bbbd5fecbe42c1033a080b4fca4e1a2f3b10321404bddf0af4b88a6a` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -58,3 +58,8 @@ Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát, mặt
 | Xoá `#vf3lp-internal-check`, bỏ noindex, nghiệm thu Live L1–L8 | Khi đăng production |
 - 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".
 - 2026-10-24: khối case theo mẫu hub VinFast (thẻ ảnh + nhãn Bi gầm, tên xe, năm, ngày, Xem chi tiết lắp đặt; lọc hãng; 2 hàng cuộn ngang).
+
+
+## Kiểm lại 26/10/2026
+
+Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast EC Van; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.

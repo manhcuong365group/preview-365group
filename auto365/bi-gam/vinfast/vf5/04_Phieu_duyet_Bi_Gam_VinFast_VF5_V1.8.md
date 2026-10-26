@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `6cf6e585e0aaa6786ca0b9f77b0c3720c382dba436e53b02d12f88681c447e63` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `237f8b496ba7c543dafdfc02ea3f557f17e3113c7dbf838a1c931fec7eec8a9e` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -60,3 +60,8 @@ Người xác nhận: anh Nguyễn Quang Đạo. Mức bằng chứng: kỹ thu�
 | Test gửi lead trên trang VF5 | Sau khi đăng |
 - 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".
 - 2026-10-24: khối case theo mẫu hub VinFast (thẻ ảnh + nhãn Bi gầm, tên xe, năm, ngày, Xem chi tiết lắp đặt; lọc hãng; 2 hàng cuộn ngang).
+
+
+## Kiểm lại 26/10/2026
+
+Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast VF5; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.

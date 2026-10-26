@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `2f8e7cb49ea0a58429be012dabacbf176b8df590e0d3d403622f42bceaee4a56` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `dd5b037aac13a055acd77bf4e148a0630af0369a45a2a04a6a6aa274f962af56` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -60,3 +60,8 @@ Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát/bộ g
 | 17 | Matrix Light M1 Pro | 3.0 | 4.000.000đ | Kỹ thuật xác nhận |
 - 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".
 - 2026-10-24: khối case theo mẫu hub VinFast (thẻ ảnh + nhãn Bi gầm, tên xe, năm, ngày, Xem chi tiết lắp đặt; lọc hãng; 2 hàng cuộn ngang).
+
+
+## Kiểm lại 26/10/2026
+
+Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast VF MPV 7; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.

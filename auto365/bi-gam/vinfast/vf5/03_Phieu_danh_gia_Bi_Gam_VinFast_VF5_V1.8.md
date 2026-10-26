@@ -4,12 +4,12 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `6cf6e585e0aaa6786ca0b9f77b0c3720c382dba436e53b02d12f88681c447e63` (cùng mã trong 02/04) |
+| SHA-256 index.html | `237f8b496ba7c543dafdfc02ea3f557f17e3113c7dbf838a1c931fec7eec8a9e` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 92,0/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF5"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF5; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
 | Ghi chú | Không đặt case/video là điều kiện bắt buộc; không trừ C1 vì thông số công bố chưa đo; "chưa nghiệm thu production" không trừ U3 preview. Câu giới hạn dưới tiêu đề khối case không thêm (quyết định user) |
-| Tự chấm sau sửa | 95,2/100 (C 28,5 · S 28,8 · G 23,5 · U 14,4), chấm lại 26/10 sau vá GEO (trả lời nhanh có điều kiện kiểm xe + chưa cần lắp; tổng quan thêm dữ kiện xe có nguồn VinFast; F10 New ghi rõ 12V/24V theo PDP) — **CHƯA ĐẠT** (G3/C2 còn thiếu bằng chứng VF5 thật). Reviewer kỹ thuật chưa kiểm bản sửa; lastReviewed giữ 24/10 |
+| Tự chấm sau sửa | 95,9/100 (C 28,6 · S 28,8 · G 24,0 · U 14,5) — **ĐẠT** (đủ tổng ≥95, SEO ≥28,5, GEO ≥23,75). G3 tăng nhờ reviewer kỹ thuật kiểm lại và xác nhận cả 17 mẫu trên VF5 ngày 26/10/2026 (user xác nhận anh Đạo đã check hết), câu xác nhận hiển thị ở phần tổng quan; lastReviewed 2026-10-26 |
 
 ## Lịch sử — bản trước (hết hiệu lực)
 
@@ -18,7 +18,7 @@
 | Trang | Bi gầm VinFast VF5 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `6cf6e585e0aaa6786ca0b9f77b0c3720c382dba436e53b02d12f88681c447e63` (cùng mã trong 02/04) |
+| SHA-256 index.html | `237f8b496ba7c543dafdfc02ea3f557f17e3113c7dbf838a1c931fec7eec8a9e` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt 24/10/2026 |
 | Ngày chấm | 24/10/2026, chấm trên preview |
 
