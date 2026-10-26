@@ -242,6 +242,11 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-modal__opt{border:1px solid var(--l);border-radius:10px;padding:0 12px}.h3m-modal__opt summary{cursor:pointer;padding:11px 0;font-size:13px;font-weight:500;color:var(--t)}.h3m-modal__opt summary small{color:var(--m)}
 .h3m-modal__optg{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px;padding-bottom:12px}.h3m-modal__optg .full{grid-column:1/-1}
 @media (max-width:640px){.h3m-modal__optg{grid-template-columns:1fr}}
+.h3m-perks{margin-top:22px;padding:18px 20px;border:1px dashed #f0b8bc;background:#fff7f7;border-radius:12px;display:grid;grid-template-columns:1fr auto;gap:12px 24px;align-items:center}.h3m-perks>b{grid-column:1/-1}
+.h3m-perks>b{font-size:16px;font-weight:600}.h3m-perks ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:8px 18px;font-size:14px}
+.h3m-perks li:before{content:"✓";color:var(--r);margin-right:6px}
+@media (max-width:1024px){.h3m-perks{grid-template-columns:1fr}.h3m-perks ul{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.h3m-perks ul{grid-template-columns:1fr}.h3m-perks .h3m-btn{justify-content:center}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -252,8 +257,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  {"@type":"Question","name":"Dán phim 3M trọn xe ở TP.HCM giá bao nhiêu?","acceptedAnswer":{"@type":"Answer","text":"Theo bảng giá 3M áp dụng từ 06/2026, giá trọn xe từ 5,9 triệu (Ceramic Hybrid, xe Minicar) đến 18,3 triệu (CR BLK PRO, xe SUV). Giá cụ thể phụ thuộc cấu hình phim và nhóm xe."}},
  {"@type":"Question","name":"3M Pro Shop của Auto365 ở đâu?","acceptedAnswer":{"@type":"Answer","text":"3M Pro Shop đặt tại Auto365 Center – trụ sở chính Auto365, số 4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM (gần KĐT Vạn Phúc). Hotline 0365 365 365."}},
  {"@type":"Question","name":"Phim 3M bảo hành bao lâu?","acceptedAnswer":{"@type":"Answer","text":"Cả 6 cấu hình phim 3M tại Auto365 được bảo hành 10 năm, kích hoạt bảo hành điện tử 3M (eWarranty) theo biển số xe."}},
- {"@type":"Question","name":"Dán phim 3M mất bao lâu?","acceptedAnswer":{"@type":"Answer","text":"Thời gian dán trọn xe thường khoảng 2–4 giờ với xe không cần xử lý đặc biệt; xe có phim cũ, nhiều keo, cửa sổ trời panorama hoặc kính lớn có thể cần thêm thời gian. Nên đặt lịch trước để 3M Pro Shop chuẩn bị phim và khoang thi công."}},
- {"@type":"Question","name":"Phim cách nhiệt 3M có ảnh hưởng sóng điện thoại, GPS không?","acceptedAnswer":{"@type":"Answer","text":"Các dòng phim 3M phân phối tại Auto365 thuộc công nghệ ceramic/phi kim loại hoặc lai ceramic, được thiết kế để hạn chế ảnh hưởng tới sóng điện thoại, GPS và ETC."}}
+ {"@type":"Question","name":"Dán phim 3M mất bao lâu?","acceptedAnswer":{"@type":"Answer","text":"Thời gian dán trọn xe thường khoảng 2–4 giờ với xe không cần xử lý đặc biệt; xe có phim cũ, nhiều keo, cửa sổ trời panorama hoặc kính lớn có thể cần thêm thời gian. Nên đặt lịch trước để 3M Pro Shop chuẩn bị phim và khoang thi công."}}
 ]}
 ]}
 </script>
@@ -276,7 +280,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <ul class="h3m-hero__ben">
    <li><b>Cách nhiệt tốt hơn</b>Giảm nóng khi đỗ xe ngoài trời</li>
    <li><b>Cản tia UV</b>Bảo vệ da và nội thất</li>
-   <li><b>Không nhiễu sóng</b>Công nghệ ceramic / phi kim loại</li>
+   <li><b>Giảm chói kính lái</b>Giữ tầm nhìn rõ khi lái</li>
   </ul>
   <div class="h3m-hero__cta">
    <a class="h3m-btn h3m-btn--red" href="#goi-phim">Xem 6 gói &amp; bảng giá →</a>
@@ -314,11 +318,12 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <h2 class="h3m-h2">6 cấu hình phim <em>3M</em> tại Auto365</h2>
   <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV.</p>
   <div class="h3m-pk" id="h3m-pk"></div>
+  <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M lên đến 10 năm theo dòng phim</li><li>Thi công tại 3M Pro Shop ủy quyền</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
   <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
  </div>
 </section>
 
-<section class="h3m-band"><div class="h3m-wrap h3m-band__in"><div><b>Chưa chắc chọn gói nào?</b><span>Để lại số – cố vấn 3M Pro Shop gợi ý cấu hình theo xe và ngân sách.</span></div><div class="h3m-band__cta"><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá theo xe →</button><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365">☎ 0365 365 365</a></div></div></section>
+<section class="h3m-band"><div class="h3m-wrap h3m-band__in"><div><b>Miễn phí tháo phim cũ · Tặng rửa xe &amp; vệ sinh kính</b><span>Để lại số – cố vấn 3M Pro Shop gợi ý cấu hình theo xe và báo giá kèm quyền lợi.</span></div><div class="h3m-band__cta"><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá theo xe →</button><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365">☎ 0365 365 365</a></div></div></section>
 
 <section class="h3m-sec h3m-why2" id="chung-chi">
  <div class="h3m-wrap">
@@ -525,7 +530,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <details><summary>3M Pro Shop của Auto365 ở đâu?</summary><p>3M Pro Shop đặt tại Auto365 Center – trụ sở chính Auto365, số 4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM (gần KĐT Vạn Phúc). Hotline 0365 365 365.</p></details>
    <details><summary>Phim 3M bảo hành bao lâu?</summary><p>Cả 6 cấu hình phim 3M tại Auto365 được bảo hành 10 năm, kích hoạt bảo hành điện tử 3M (eWarranty) theo biển số xe.</p></details>
    <details><summary>Dán phim 3M mất bao lâu?</summary><p>Thời gian dán trọn xe thường khoảng 2–4 giờ với xe không cần xử lý đặc biệt; xe có phim cũ, nhiều keo, cửa sổ trời panorama hoặc kính lớn có thể cần thêm thời gian. Nên đặt lịch trước để 3M Pro Shop chuẩn bị phim và khoang thi công.</p></details>
-   <details><summary>Phim cách nhiệt 3M có ảnh hưởng sóng điện thoại, GPS không?</summary><p>Các dòng phim 3M phân phối tại Auto365 thuộc công nghệ ceramic/phi kim loại hoặc lai ceramic, được thiết kế để hạn chế ảnh hưởng tới sóng điện thoại, GPS và ETC.</p></details>
   </div>
   <form class="h3m-form" id="dang-ky" action="/api/leads" method="post" novalidate>
    <h2>Đăng ký tư vấn ngay</h2>
@@ -578,8 +582,8 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  var PK=[
   {id:'cr-blk-pro',n:'CR BLK PRO',c:'Kính lái CR BLK 40 + sườn/sau 35/15',t:['Cách nhiệt cao nhất','Ceramic','Kính lái tối ưu'],p:[12.9,15.5,18.3],b:'Cao cấp'},
   {id:'cr-blk',n:'CR BLK',c:'Kính lái CR BLK 60/50 + sườn/sau 35/15',t:['Cách nhiệt cao','Ceramic','Tầm nhìn rõ'],p:[12.2,14.8,17.6]},
-  {id:'crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Kính lái Crystalline 40 + NR 25/15/5',t:['Trong suốt','Không nhiễu sóng','Cách nhiệt tốt'],p:[9.8,11.6,13.3]},
-  {id:'crystalline-hybrid',n:'Crystalline Hybrid',c:'Kính lái Crystalline 60/50 + NR 25/15/5',t:['Trong suốt','Không nhiễu sóng','Tầm nhìn rõ'],p:[9.0,10.8,12.5],b:'Phổ biến'},
+  {id:'crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Kính lái Crystalline 40 + NR 25/15/5',t:['Trong suốt','Giảm chói','Cách nhiệt tốt'],p:[9.8,11.6,13.3]},
+  {id:'crystalline-hybrid',n:'Crystalline Hybrid',c:'Kính lái Crystalline 60/50 + NR 25/15/5',t:['Trong suốt','Giảm chói','Tầm nhìn rõ'],p:[9.0,10.8,12.5],b:'Phổ biến'},
   {id:'ceramic-ir',n:'Ceramic IR',c:'Kính lái IR 50 + sườn/sau IR 25/15',t:['Cản hồng ngoại','Ceramic','Cân bằng chi phí'],p:[7.2,9.0,10.5]},
   {id:'ceramic-hybrid',n:'Ceramic Hybrid',c:'Kính lái NR 35 + sườn/sau NR 25/15/5',t:['Lai ceramic + reflective','Chi phí tốt','Ngân sách vừa'],p:[5.9,7.9,9.5]}
  ];
