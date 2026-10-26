@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `56f8ca29453da8fc73f4b1d005b5e9e7d4563e2ea03996dda04b4d5e7c4387fd`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `e0aad891bb722bcb047a69686ef604d296e089d1a00aa49a57da7f2b33d47be6`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -65,6 +65,10 @@ Gợi ý gói phổ biến theo mục đích sử dụng.
 - Cốp sau
 
 - Toàn bộ bề mặt sơn ngoại thất
+- Capo, cản trước, cản sau
+- Nóc xe, cốp sau, đuôi cá
+- 4 cửa, sườn xe, má trước
+- Ốp gương (2 bên)
 
 Giá "từ" của gói tạm tính với AX Film PPF G Series, xe Sedan: cộng giá từng vị trí; gói toàn xe theo giá gói. Bấm "Ước tính gói này" để chọn sẵn các vị trí ở bảng giá theo vị trí, sau đó đổi dòng phim, loại xe.
 
