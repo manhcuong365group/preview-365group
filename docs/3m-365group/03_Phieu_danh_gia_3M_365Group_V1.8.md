@@ -40,6 +40,23 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Xử lý phiếu tái kiểm R3 (reviewer 26/10/2026: 90/100 – SEO 27,5, GEO 22,5, ND 27,5, UX 12,5)
+
+| Mục R3 | Trạng thái | Việc đã làm / còn chờ |
+|---|---|---|
+| P0-01 Nút tra thông số dẫn #bang-gia | Đã sửa | → #thong-so |
+| P0-02 Production 404, tài nguyên | Chờ IT | Route, PDF/ảnh/OG upload, robots production |
+| P0-03 Reviewer/nguồn/giá | Một phần | Khối nội bộ bỏ câu "IR chờ chốt"; bỏ câu "bảng so sánh phía trên"; "SUV / MPV" → "SUV" theo PDF. Chờ Kinh doanh xác nhận giá gồm công/VAT/phát sinh, phạm vi MPV; khối nội bộ phải xoá khỏi HTML production |
+| P1-01 Tìm đại lý/giao diện đích/hotline | Chờ vận hành + IT | Trang đại lý thuộc site 365Group |
+| P1-02 Hero trải nghiệm sản phẩm | Chưa làm | Chủ trang yêu cầu giữ layout (24/10); chờ tư liệu ảnh khoang xe/kính. Đã thay emoji bằng icon |
+| P1-03 Lựa chọn kính lái PRO | Đã sửa | VLT kính lái trên 6 thẻ + ghi chú PRO (đậm hơn, không phải phù hợp hơn cho mọi người; xem mẫu thực tế) |
+| P1-04 Bảo hành/tài liệu dễ tìm | Một phần | Tab dòng phim có link PDF + bảng 12 mã; nhãn "Hướng dẫn tra cứu bảo hành" giữ trong khối Tài liệu |
+| P1-05 Form | Một phần | Nhãn nút rõ bên nhận; kiểm tra r.ok. Chờ IT nghiệm thu backend/phân tuyến |
+| P2 Logo, offset, chứng nhận, báo chí | Đã sửa | Logo → trang chủ; một offset; chú thích Preferred Installer; báo chí 4 + xem thêm |
+| Yêu cầu sếp 26/10 | Đã làm | 3 dòng phim dạng tab kiểu website 3M |
+
+Theo phiếu R3: không tự cộng điểm, chờ reviewer chấm lại đúng build.
+
 ## Tự chấm lần 13 (bản 24/10/2026, preview /3m.365group.com.vn/phim-cach-nhiet-3m/)
 
 | Mã | Tối đa | Lần 12 | Lần 13 | Căn cứ / phần thiếu |
@@ -240,7 +257,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `e087ed804ef5eec5483828e68ad58120afd0bfede0095c7ce4d09d59aad1eae3` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

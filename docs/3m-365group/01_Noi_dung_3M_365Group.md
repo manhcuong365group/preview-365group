@@ -1,7 +1,7 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `82cadd0d5a38283c596ee57fecdec04ee10eeee8c2106f7d1bf7f33b952cf284`
-Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `e087ed804ef5eec5483828e68ad58120afd0bfede0095c7ce4d09d59aad1eae3`
+Ngày xuất: 26/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
@@ -16,23 +16,43 @@ Bảo hành điện tử 10 nămKích hoạt sau khi dán, tra cứu được
 ## 3 dòng phim cách nhiệt 3M  `#dong-phim`
 Ba công nghệ cho các mức ngân sách khác nhau
 
-### 3M™ Ceramic NR
-Ưu tiên chi phí
-- Lai Nano Ceramic và Nano Reflective
-- Kính lái NR 35: TSER 51%, UV 99%
-- Mức đầu tư thấp nhất trong 3 dòng
+### 3M™ Crystalline Series CR BLK
+Dòng phim cao cấp của 3M dùng công nghệ quang học đa lớp, tông đen tiệp kính nguyên bản; cho khả năng giảm nhiệt, chặn UV và giảm lóa cao trong khi vẫn giữ tầm nhìn rõ.
+Đặc điểm chính:
+- Giảm nhiệt: TSER đến 64% (CR BLK 15); mã kính lái CR BLK 40/50/60: 58% / 56% / 54%. Loại bỏ hồng ngoại (IRR) đến 98%
+- Chặn tia UV: 99,9% ở tất cả mã
+- Độ xuyên sáng (VLT): 14% – 57% tùy mã
+- Giảm lóa: đến 81%
+- Công nghệ: Crystalline 200 lớp, phim nền MOF – công nghệ quang học đa lớp
+- Màu sắc: Tông đen (Tone Black), tiệp màu kính nguyên bản
+- Bảo hành: Bảo hành điện tử 3M 10 năm
+- Giá: Trọn xe từ 9.000.000đ (cấu hình Crystalline Hybrid, Minicar); đồng bộ Crystalline từ 12.200.000đ. Giá theo xe do đại lý báo
+Xem dòng Crystalline CR BLK → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
 
-### 3M™ Ceramic IR
-Cân bằng hiệu suất và thẩm mỹ
-- Công nghệ Ceramic hồng ngoại
-- Loại bỏ hồng ngoại 83–90% tùy mã
-- Cân bằng độ sáng và riêng tư
+### 3M™ Ceramic IR Series
+Phim gốm Ceramic hồng ngoại, cân bằng giữa độ sáng, độ riêng tư và khả năng giảm nhiệt cho xe đi phố và đường trường.
+Đặc điểm chính:
+- Giảm nhiệt: TSER đến 63% (IR 15); mã kính lái IR 50: 54%. Loại bỏ hồng ngoại (IRR) đến 90%
+- Chặn tia UV: 99,8% – 99,9%
+- Độ xuyên sáng (VLT): 16% – 50% tùy mã
+- Giảm lóa: đến 78%
+- Công nghệ: Ceramic hồng ngoại
+- Bảo hành: Bảo hành điện tử 3M 10 năm
+- Giá: Trọn xe từ 7.200.000đ (Minicar). Giá theo xe do đại lý báo
+Xem dòng Ceramic IR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
 
-### 3M™ Crystalline CR BLK
-Dòng cao cấp, ưu tiên độ trong khi nhìn
-- Công nghệ quang học Crystalline
-- Loại bỏ hồng ngoại 97–98% tùy mã
-- Màu đen tiệp kính zin, nhìn rõ
+### 3M™ Ceramic NR Series
+Dòng phim lai Nano Ceramic và Nano Reflective, mức đầu tư dễ tiếp cận nhất trong ba dòng, phù hợp chủ xe ưu tiên chi phí.
+Đặc điểm chính:
+- Giảm nhiệt: TSER đến 69% (NR 5); mã kính lái NR 35: 51%. Loại bỏ hồng ngoại (IRR) đến 91%
+- Chặn tia UV: 99% ở tất cả mã
+- Độ xuyên sáng (VLT): 7% – 43% tùy mã
+- Giảm lóa: đến 93%
+- Công nghệ: Lai Nano Ceramic và Nano Reflective
+- Bảo hành: Bảo hành điện tử 3M 10 năm
+- Giá: Trọn xe từ 5.900.000đ (cấu hình Ceramic Hybrid, Minicar). Giá theo xe do đại lý báo
+Xem dòng Ceramic NR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
+Số liệu theo bảng 3M AutoFilm của 365Group (mã 260815, áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm (VLT 73%). Mức "đến" là mã đậm nhất của dòng; mã kính lái ghi riêng.
 
 ## 6 cấu hình phim cách nhiệt 3M
 Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365Group gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.
@@ -48,6 +68,7 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 ### Hybrid PRO
 
 ### CR BLK PRO
+Về 2 cấu hình PRO: kính lái dùng CR BLK 40 (VLT 41%, TSER 58%, giảm lóa 44%) đậm hơn CR BLK 50/60 (VLT 48–57%). PRO là lựa chọn kính lái đậm hơn, không có nghĩa phù hợp hơn cho mọi người lái; nên xem mẫu thực tế tại đại lý trước khi chốt mã kính lái.
 TSER là tổng năng lượng mặt trời bị loại bỏ của mã phim kính lái, theo bảng thông số 3M AutoFilm của 365Group (áp dụng từ 06/2026, đo trên kính xanh 6 mm); kết quả thực tế phụ thuộc loại kính xe.
 Giá trọn xe theo bảng giá 3M AutoFilm của 365Group, áp dụng từ 06/2026. Giá Minicar áp dụng cho VinFast VF 3, Wuling Hongguang Mini EV, Bestune Xiaoma, VinFast Minio Green và các dòng xe cùng kích thước. Cửa sổ trời nhỏ tính bằng một ô kính sườn, panorama bằng một kính lái. Giá thi công cụ thể theo xe do đại lý báo.
 
@@ -101,7 +122,7 @@ Tài liệu do 365Group công bố trên website nhà phân phối
 Giấy chứng nhận nhà phân phối và các chứng nhận 3M của hệ thống 365Group – Auto365
 - Chứng nhận: Chứng nhận nhà phân phối 3M365Group
 - Chứng nhận: Chứng nhận 3M Pro ShopAuto365 Center
-- Chứng nhận: 3M Preferred InstallerĐơn vị thi công ưu tiên
+- Chứng nhận: 3M Preferred InstallerAuto365.vn - Trụ Sở Chính
 - Chứng nhận: 3M Training CenterLễ trao chứng nhận
 
 ## Hệ thống đại lý 3M toàn quốc  `#dai-ly`
@@ -139,7 +160,7 @@ Bài thi công đã đăng trên auto365.vn – đại lý trong hệ thống 36
 Những điểm chính theo thông tin từ trang Cá nhân hóa ô tô của 3M Việt Nam
 Theo 3M, hãng đã có hơn 55 năm phát triển phim phủ màu cửa kính và nhận bằng sáng chế phim chống nắng cho cửa kính đầu tiên vào năm 1966.
 3M khuyến nghị dán tại thợ/đại lý được hãng ủy quyền và đào tạo. 365Group phân phối phim tới các đại lý trong hệ thống để chủ xe dán đúng quy trình.
-Phim ô tô 3M được hãng thiết kế để dùng lâu dài; thời hạn bảo hành từng cấu hình ghi trong bảng so sánh phía trên.
+Phim ô tô 3M được hãng thiết kế để dùng lâu dài; bảo hành điện tử 10 năm cho các cấu hình trên trang.
 
 ### Công nghệ phim ô tô 3M
 Công nghệ quang học đa lớp, tông đen (Tone Black); giảm lóa đến 81% và loại bỏ hồng ngoại đến 98% với mã đậm nhất.
@@ -158,6 +179,8 @@ Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại
 - Kinh tế & Đời sốngTừ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô22/06/2026
 - TT&VHThể thao & Văn hóaSau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TPHCM22/06/2026
 - GenKCông nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt22/06/2026
+
+**Hỏi:** Xem thêm 4 bài báo
 - Dân ViệtTừ TPHCM đến các địa phương: Nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF23/06/2026
 - Sức khỏe & Đời sốngXe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình23/06/2026
 - EvaKhoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới22/06/2026
@@ -186,11 +209,14 @@ Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt �
 - Email: kinhdoanh@365group.com.vn
 - Văn phòng: Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh
 - Website nhà phân phối: 3m.365group.com.vn
-- Cập nhật lần cuối: 24/10/2026
+- Cập nhật lần cuối: 26/10/2026
 
 ## Ảnh và ALT
 
 - hinh/hero-3m-pro-shop-training-center.webp — Mặt tiền 3M Pro Shop và 3M Training Center
+- hinh/dong-crystalline.webp — Xe dán phim 3M Crystalline CR BLK tại 3M Pro Shop
+- hinh/dong-ceramic-ir.webp — Xe dán phim 3M Ceramic IR tại 3M Pro Shop
+- hinh/dong-ceramic-nr.webp — Xe dán phim 3M Ceramic NR tại 3M Pro Shop
 - hinh/m-vf3.webp — VinFast VF3 – xe minh họa phân khúc gói
 - hinh/m-hr-v.webp — Honda HR-V – xe minh họa phân khúc gói
 - hinh/m-cr-v.webp — Honda CR-V – xe minh họa phân khúc gói
