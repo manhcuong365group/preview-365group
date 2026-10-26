@@ -78,3 +78,5 @@ Reviewer R2 23/10/2026: 94,8/100 (chưa đạt). Chủ quản xác nhận 24/10/
 | Mô tả meta / OG / CollectionPage | "Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công." — thu hẹp cùng phạm vi sapo đã duyệt 24/10 |
 
 Hai thay đổi trên là sửa đích liên kết và mô tả cho máy đọc, không thêm claim kỹ thuật mới; `lastReviewed` giữ 2026-10-24.
+
+| Sapo — câu thứ 3 (26/10, chủ quản đồng ý) | "Xe chưa có hồ sơ được kỹ thuật viên kiểm tra trước khi chốt cấu hình; chi phí gồm thiết bị, phụ kiện, công lắp và VAT theo báo giá." — cùng ý FAQ chi phí đã duyệt 23/10, không thêm claim kỹ thuật |

@@ -8,6 +8,29 @@
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-24; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
+## Biên bản kiểm UX/tương tác 26/10/2026 (bằng chứng cho U1)
+
+Kiểm trên preview local (cùng bản build) bằng script thao tác trong trình duyệt, 4 độ rộng: **375 · 768 · 1024 · 1366px**. Mỗi độ rộng chạy 16 phép thử:
+
+| # | Phép thử | Kỳ vọng | 375 | 768 | 1024 | 1366 |
+|---|---|---|:-:|:-:|:-:|:-:|
+| 1–4 | Tab nhóm xe: Xe điện / Green / Mẫu xe cũ / Tất cả | 8 / 5 / 5 / 18 thẻ | ✓ | ✓ | ✓ | ✓ |
+| 5–6 | Tìm "vf6", "lux" | 1, 2 thẻ | ✓ | ✓ | ✓ | ✓ |
+| 7 | Tìm "xyz" | 0 thẻ + thông báo trống | ✓ | ✓ | ✓ | ✓ |
+| 8 | Xoá ô tìm | về 18 thẻ | ✓ | ✓ | ✓ | ✓ |
+| 9 | Bấm thẻ VF 8 (chưa có hồ sơ) | Form điền "VinFast VF 8" | ✓ | ✓ | ✓ | ✓ |
+| 10–12 | Lọc case: GTR → GTR + VF 6 → bỏ lọc | 2 → 1 → 10 bài | ✓ | ✓ | ✓ | ✓ |
+| 13 | Accordion "Gợi ý theo nhu cầu" | Mở, cao thêm, đóng lại | ✓ | ✓ | ✓ | ✓ |
+| 14 | FAQ | Mở/đóng | ✓ | ✓ | ✓ | ✓ |
+| 15 | Nút CTA | Nền đỏ #d71920, font Roboto | ✓ | ✓ | ✓ | ✓ |
+| 16 | Tràn ngang | scrollWidth ≤ viewport | ✓ | ✓ | ✓ | ✓ |
+
+Bàn phím: 44 phần tử tương tác (tab, chip lọc, ô tìm, thẻ xe, accordion, FAQ, CTA, nút cuộn) đều nhận focus; tab nhóm xe có `role=tab` + `aria-selected`; accordion/FAQ dùng `<details>/<summary>` gốc (Enter/Space).
+
+Sửa trong lượt kiểm: link chữ "Xem tất cả…", "Xem mẫu lắp được…" vùng chạm 22px → ≥24px; ô tìm kiếm bị tắt viền focus → thêm viền đỏ khi focus.
+
+Chưa kiểm: thiết bị thật (iOS/Android), trình đọc màn hình, CWV.
+
 ## R3 reviewer 25/10/2026 và bản vá 26/10/2026
 
 Reviewer R3 chấm snapshot SHA `2accd820…` (25/10/2026 21:51): **95,5/100 — qua 3 ngưỡng điểm** (C 28,6 · SEO 28,7 · GEO 23,8 · U 14,4), chưa đóng nghiệm thu phát hành.
@@ -140,3 +163,4 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 | 24/10 sau duyệt | 6 ảnh "Vì sao chọn" đổi sang ảnh xe VinFast thật; câu chi nhánh ghi đủ 8 thương hiệu đèn; thẻ nhu cầu cao đều; sửa lỗi dư </div> làm CTA mất màu, font |
 | Responsive 24/10 | Tablet (≤991px): hero 1 cột, lưới dòng xe 2 hàng vuốt ngang (1.140 → 586px), cẩm nang vuốt ngang (1.033 → 378px); kiểm 768px và 375px không tràn ngang |
 | Responsive 24/10 (lượt 2) | Kiểm thêm 360, 414-class, 820, 1024px: không tràn ngang; 993–1100px lưới dòng xe chuyển 2 hàng vuốt ngang 5 cột hiện (1.289 → 559px); desktop ≥1101px giữ lưới 6 cột |
+| Sapo câu 3 (26/10) | Thêm câu "xe chưa có hồ sơ… chi phí gồm thiết bị, phụ kiện, công lắp và VAT" để sapo trả lời thẳng nhu cầu (G1) |
