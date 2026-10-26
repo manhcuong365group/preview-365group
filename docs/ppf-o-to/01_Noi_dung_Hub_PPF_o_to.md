@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `14b14e738221b1b6d74169e507500743ce9db7f8ff9b2df2f1e9fd8415cd23f2`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `e6486012e06a19b3359f8e4a7ad3666ad60375d851d8050582a3f5a4f8bc0de6`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -17,6 +17,41 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
 
+**50 Gloss**
+
+Trọn gói: 38.000.000đ
+
+- BóngBề mặt hoàn thiện
+- 5 nămBảo hành chính hãng
+- Gồm VATGiá trọn gói toàn xe
+
+**100 Gloss**
+
+Trọn gói: 69.000.000đ
+
+- 7.5 milĐộ dày
+- BóngBề mặt hoàn thiện
+- 7 nămBảo hành chính hãng
+- Gồm VATGiá trọn gói toàn xe
+
+**150 Gloss**
+
+Trọn gói: 85.000.000đ
+
+- 7.5 milPhim kèm keo
+- Tự phục hồiXước nhẹ khi gặp nhiệt
+- 10 nămBảo hành chính hãng
+- Gồm VATGiá trọn gói toàn xe
+
+**200 Gloss**
+
+Trọn gói: 102.000.000đ
+
+- 7.9 milĐộ dày
+- BóngBề mặt hoàn thiện
+- 10 nămBảo hành chính hãng
+- Gồm VATGiá trọn gói toàn xe
+
 Sedan: Vios, City, Mazda 3, Camry… · SUV 5 chỗ: CX-5, CR-V, VF 6/7… · SUV 7 chỗ / MPV: VF 8, Fortuner, Carnival, Innova… Loại xe xác nhận khi kiểm tra.
 
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
@@ -29,19 +64,19 @@ Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem t�
 
 | Vị trí dán | 3M 50 Gloss | 3M 150 Gloss | 3M 200 Gloss | AX G Series | AX K Ver 2 | AX X Ver 2 |
 | --- | --- | --- | --- | --- | --- | --- |
-| Capo | — | — | — | — | — | — |
-| Cản trước | — | — | — | — | — | — |
-| Cản sau | — | — | — | — | — | — |
-| Cốp sau | — | — | — | — | — | — |
-| Nóc xe | — | — | — | — | — | — |
-| Sườn xe | — | — | — | — | — | — |
-| Cửa trước (mỗi bên) | — | — | — | — | — | — |
-| Cửa sau (mỗi bên) | — | — | — | — | — | — |
-| Má trước (mỗi bên) | — | — | — | — | — | — |
-| Đuôi cá | — | — | — | — | — | — |
-| Đèn trước (mỗi bên) | — | — | — | — | — | — |
-| Đèn sau (mỗi bên) | — | — | — | — | — | — |
-| Ốp gương (mỗi bên) | — | — | — | — | — | — |
+| Capo | 5.320.000đ | 11.900.000đ | 14.280.000đ | 2.800.000đ | 3.766.000đ | 6.300.000đ |
+| Cản trước | 5.320.000đ | 11.900.000đ | 14.280.000đ | 2.800.000đ | 3.766.000đ | 6.300.000đ |
+| Cản sau | 5.320.000đ | 11.900.000đ | 14.280.000đ | 2.800.000đ | 3.766.000đ | 6.300.000đ |
+| Cốp sau | 3.420.000đ | 7.650.000đ | 9.180.000đ | 1.800.000đ | 2.421.000đ | 4.050.000đ |
+| Nóc xe | 5.320.000đ | 11.900.000đ | 14.280.000đ | 2.800.000đ | 3.766.000đ | 6.300.000đ |
+| Sườn xe | 7.220.000đ | 16.150.000đ | 19.380.000đ | 3.800.000đ | 5.111.000đ | 8.550.000đ |
+| Cửa trước (mỗi bên) | 3.040.000đ | 6.800.000đ | 8.160.000đ | 1.600.000đ | 2.152.000đ | 3.600.000đ |
+| Cửa sau (mỗi bên) | 2.660.000đ | 5.950.000đ | 7.140.000đ | 1.400.000đ | 1.883.000đ | 3.150.000đ |
+| Má trước (mỗi bên) | 3.040.000đ | 6.800.000đ | 8.160.000đ | 1.600.000đ | 2.152.000đ | 3.600.000đ |
+| Đuôi cá | 1.520.000đ | 3.400.000đ | 4.080.000đ | 800.000đ | 1.076.000đ | 1.800.000đ |
+| Đèn trước (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 400.000đ | 538.000đ | 900.000đ |
+| Đèn sau (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 400.000đ | 538.000đ | 900.000đ |
+| Ốp gương (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 400.000đ | 538.000đ | 900.000đ |
 
 Giá 3M theo bảng giá 3M Pro Shop (23/10/2026), VAT báo khi chốt giá. Giá AX Film đã gồm VAT. Sedan tương ứng xe hạng A–B, SUV tương ứng hạng C–D. 3M PPF 100 Gloss hiện chỉ báo giá trọn gói.
 

@@ -121,6 +121,33 @@ Việc còn lại trước ký duyệt: (1) ĐÃ XONG: anh Đặng Minh Hoàng d
 
 **Tổng tự chấm: C 29,4 · S 29,0 · G 24,3 · U 14,4 → 97,1/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,3 ≥ 23,75. Còn: URL catalog (R22-04), reviewer tái chấm, nghiệm thu production.
 
+## Tự chấm lại (26/10/2026, sau làm lại giao diện khối giá, video, sắp xếp mục)
+
+Thay đổi 26/10 (chỉ giao diện và vị trí, không đổi giá/bảo hành/thông số):
+- Khối giá: tab thương hiệu 3M | AX Film, thanh chọn loại xe, thẻ phim có giá trọn gói theo loại xe.
+- Giá theo vị trí: gộp ô ước tính vào bảng giá theo vị trí, đánh số 1–8 và tô đỏ tấm được chọn trên ảnh xe. Bảng đầy đủ 13 vị trí hiện giá của 6 dòng phim.
+- Gói theo nhu cầu: xếp theo giá; gói toàn xe liệt kê các tấm sơn.
+- Video: 9 clip PPF từ kênh Auto365, bố cục 1 video lớn và các video nhỏ. Hình ảnh và Video chuyển lên ngay sau Xe thực tế.
+- Bảng so sánh PPF / ceramic / wrap gộp vào mục "PPF là gì?".
+- Lần tự chấm đầu ngày 26/10 được 96,3: thẻ phim, bảng 13 vị trí và thẻ vị trí chỉ có giá sau khi chạy JavaScript. Đã sửa: giá mặc định (3M, Sedan) nằm sẵn trong HTML. Thẻ carbon ghi "Carbon Fiber (Clear / Gloss)" cho khớp 2 sản phẩm trong ItemList.
+
+| Mã | 24/10 lần 2 | 26/10 | Căn cứ |
+|---|---:|---:|---|
+| C1 | 9,8 | 9,8 | Giữ; giá thẻ/bảng/schema/FAQ cùng nguồn D |
+| C2 | 9,9 | 9,9 | Đủ 9 sản phẩm hiển thị (gồm Clear / Gloss Carbon), giá 6 dòng × 13 vị trí, 4 gói |
+| C3 | 9,7 | 9,7 | Giữ |
+| S1 | 9,7 | 9,7 | Migration /ppfwrap-film chưa nghiệm thu |
+| S2 | 9,8 | 9,8 | Giá có trong HTML tĩnh; 1 H1, 17 H2; không ảnh thiếu ALT; không anchor hỏng |
+| S3 | 9,5 | 9,5 | R22-04 chờ URL catalog |
+| G1 | 9,7 | 9,7 | Giữ |
+| G2 | 9,9 | 9,9 | AI đọc được giá theo loại xe/vị trí không cần JS; 9 video thực tế có tiêu đề rõ |
+| G3 | 4,7 | 4,7 | Giữ |
+| U1 | 4,8 | 4,9 | Mobile gọn hơn (thẻ vị trí 2 cột, chữ/giá nhỏ lại); desktop + 375px không tràn |
+| U2 | 4,9 | 4,9 | Giữ |
+| U3 | 4,7 | 4,6 | Giao diện khối giá đổi sau lần duyệt 24/10 (dữ liệu giữ nguyên) — nên báo anh Đặng Minh Hoàng xem lại giao diện mới |
+
+**Tổng tự chấm: C 29,4 · S 29,0 · G 24,3 · U 14,4 → 97,1/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,3 ≥ 23,75. Còn: anh Hoàng xem giao diện khối giá mới, URL catalog (R22-04), reviewer tái chấm, nghiệm thu production.
+
 ## Việc còn lại (tăng mức dư, không chặn)
 
 1. Tài liệu kỹ thuật/giấy phân phối AX Film do hãng phát hành (C1, G3).
@@ -134,7 +161,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `14b14e738221b1b6d74169e507500743ce9db7f8ff9b2df2f1e9fd8415cd23f2` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `e6486012e06a19b3359f8e4a7ad3666ad60375d851d8050582a3f5a4f8bc0de6` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
