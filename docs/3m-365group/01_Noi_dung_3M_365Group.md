@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `b6a266da177986cef6c9729f548e651e4c8e95de25371d3dc9634e2b19b7a00c`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `27f190e983d0ec5bda8871b427d164d10da0cf5d7a188a1f52f2fdf3a9e4aa99`
 Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -186,6 +186,13 @@ Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại
 - EvaKhoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới22/06/2026
 - Tinh Tế · bài quảng cáoKhám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop22/06/2026
 
+## Chăm sóc phim sau khi dán
+- 48 giờ đầuKhông hạ kính để phim bám chắc vào kính.
+- Sau 7 ngàyMới vệ sinh mặt phim, bằng dung dịch tẩy rửa thông thường.
+- Tuần đầuKhông dán nhãn, đế hít chân không hay vật có keo lên phim.
+- Khi lauDùng khăn mềm, bọt biển; không dùng bàn chải hay chất tẩy mài mòn. Không cạy mép phim.
+Kính có thể hơi mờ hoặc có bọt nước nhỏ trong 1–2 tuần đầu, sẽ tự hết khi hơi nước bay đi (nên để xe ra nắng). Nếu bọt còn sau 3 tuần, liên hệ đại lý đã thi công. Nguồn: hướng dẫn chăm sóc phim của 3M Việt Nam.
+
 ## Câu hỏi thường gặp
 
 **Hỏi:** Mua và dán phim 3M chính hãng qua 365Group như thế nào?
@@ -199,6 +206,12 @@ Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc
 
 **Hỏi:** Phim 3M bảo hành bao lâu?
 Phim cách nhiệt 3M bảo hành chính hãng 10 năm khi đã dán trên xe và được kích hoạt bảo hành điện tử. Cách tra cứu: xem hướng dẫn tra cứu bảo hành 3M.
+
+**Hỏi:** Kiểm tra bảo hành điện tử phim 3M ở đâu?
+Chủ xe tra cứu bảo hành trên hệ thống bảo hành điện tử của 3M Việt Nam sau khi đại lý kích hoạt. Theo 3M Việt Nam, bảo hành được 3M hỗ trợ khi phim do đại lý ủy quyền thi công; nên giữ thông tin bảo hành đại lý cung cấp khi nhận xe.
+
+**Hỏi:** Sau khi dán phim cách nhiệt 3M cần lưu ý gì?
+Theo hướng dẫn của 3M Việt Nam: không hạ kính trong 48 giờ đầu, chỉ vệ sinh mặt phim sau ít nhất 7 ngày, không dán nhãn hay vật có keo trong tuần đầu, không cạy mép phim và dùng khăn mềm thay vì bàn chải. Kính có thể hơi mờ hoặc có bọt nước nhỏ trong 1–2 tuần đầu; nếu còn sau 3 tuần, liên hệ đại lý đã thi công. Chi tiết ở mục Chăm sóc phim sau khi dán phía trên.
 
 ## Về bài viết này
 Bài viết do 365Group – nhà phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam – biên soạn, tham khảo thông tin sản phẩm từ 3M Việt Nam. Mã phim, cấu hình và thời hạn bảo hành theo danh mục sản phẩm 3M do 365Group phân phối; chỉ số TSER theo thông số nhà sản xuất công bố.
