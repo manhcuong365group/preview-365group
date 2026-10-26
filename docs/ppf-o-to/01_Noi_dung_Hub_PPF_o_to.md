@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ad93d89bf508c45e801578a833d1d4869c2c6cdfd04578eab42a745dc8aaf19c`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `14b14e738221b1b6d74169e507500743ce9db7f8ff9b2df2f1e9fd8415cd23f2`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -90,6 +90,14 @@ Mỗi xe đều ghi rõ dòng phim, vị trí dán và hình ảnh thực tế s
 - Auto365 thi công dán PPF Mazda 3 dòng X Series — https://auto365.vn/auto-365-thi-cong-dan-ppf-mazda-3-dong-x-series
 - Bảng giá thi công dán PPF cho xe VinFast VF3 — https://auto365.vn/bang-gia-thi-cong-dan-ppf-cho-xe-vinfast-vf3
 
+## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
+
+Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.
+
+## Video thực tế  `#video`
+
+Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
+
 ## Vì sao nên dán PPF tại Auto365?  `#vi-sao`
 
 **90+ chi nhánh triển khai PPF/Wrap**
@@ -135,10 +143,6 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
 6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
 
-## Video thực tế  `#video`
-
-Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
-
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
 Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh
@@ -157,10 +161,6 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 
 _[Form: ]_
 
-## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
-
-Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.
-
 ## PPF là gì?  `#kien-thuc`
 
 PPF (Paint Protection Film) là màng phim trong suốt, phổ biến dày khoảng 6–10 mil (0,15–0,25 mm), dán trực tiếp lên bề mặt sơn ô tô. Lớp phim nhận thay các tác động như trầy xước nhẹ, đá dăm văng, phân chim, nhựa cây và tia UV, giúp lớp sơn bên dưới giữ được màu và độ bóng nguyên bản.
@@ -177,6 +177,21 @@ Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Revis
 ## Dán toàn xe hay từng phần?  `#kien-thuc`
 
 Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn phạm vi thi công phù hợp.
+
+**PPF, phủ ceramic và dán wrap khác nhau ở đâu?**
+
+Ba dịch vụ hay bị nhầm với nhau, nhưng mỗi loại giải quyết một nhu cầu riêng.
+
+_So sánh PPF, phủ ceramic và dán wrap đổi màu_
+
+| Tiêu chí | PPF (phim bảo vệ sơn) | Phủ ceramic | Dán wrap đổi màu |
+| --- | --- | --- | --- |
+| Mục tiêu chính | Bảo vệ sơn trước trầy xước nhẹ, đá văng | Tăng bóng, chống bám bẩn | Đổi màu, cá nhân hoá ngoại hình |
+| Bản chất | Màng TPU có độ dày, dán lên sơn | Lớp phủ hoá học rất mỏng trên sơn | Màng PVC/vinyl màu, dán lên sơn |
+| Chống va đập nhẹ | Có — mức độ theo dòng phim | Hạn chế | Có ở mức thấp hơn PPF |
+| Giữ màu sơn zin | Có (PPF trong suốt) | Có | Không — đổi màu |
+| Có thể bóc ra | Có | Không bóc, mòn dần theo thời gian | Có |
+| Kết hợp | Có thể phủ ceramic lên trên PPF để tăng tính kỵ nước — hỏi kỹ thuật viên về tương thích với dòng phim đã chọn. |
 
 ## Kiến thức cần nắm trước khi dán PPF  `#kien-thuc-ppf`
 
@@ -298,21 +313,6 @@ Nguồn tham khảo: Toàn văn Thông tư 79/2024/TT-BCA (đã được sửa �
 Người trực tiếp điều hành và kiểm duyệt dịch vụ PPF tại Auto365.
 
 Phát biểu được báo Dân trí dẫn lại ngày 18/12/2019, khi hệ thống Auto365 khai trương chi nhánh thứ 20.
-
-## PPF, phủ ceramic và dán wrap khác nhau ở đâu?  `#so-sanh`
-
-Ba dịch vụ hay bị nhầm với nhau, nhưng mỗi loại giải quyết một nhu cầu riêng.
-
-_So sánh PPF, phủ ceramic và dán wrap đổi màu_
-
-| Tiêu chí | PPF (phim bảo vệ sơn) | Phủ ceramic | Dán wrap đổi màu |
-| --- | --- | --- | --- |
-| Mục tiêu chính | Bảo vệ sơn trước trầy xước nhẹ, đá văng | Tăng bóng, chống bám bẩn | Đổi màu, cá nhân hoá ngoại hình |
-| Bản chất | Màng TPU có độ dày, dán lên sơn | Lớp phủ hoá học rất mỏng trên sơn | Màng PVC/vinyl màu, dán lên sơn |
-| Chống va đập nhẹ | Có — mức độ theo dòng phim | Hạn chế | Có ở mức thấp hơn PPF |
-| Giữ màu sơn zin | Có (PPF trong suốt) | Có | Không — đổi màu |
-| Có thể bóc ra | Có | Không bóc, mòn dần theo thời gian | Có |
-| Kết hợp | Có thể phủ ceramic lên trên PPF để tăng tính kỵ nước — hỏi kỹ thuật viên về tương thích với dòng phim đã chọn. |
 
 ## Chăm sóc sau khi dán PPF  `#cham-soc`
 
