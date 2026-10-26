@@ -2,7 +2,7 @@
 
 | Mục | Nội dung |
 |---|---|
-| Bản | `index.html` SHA-256 `e6bfc1736cafa1afd6b5157c415a17f27ecba1a3c598563095a404fc264915e4` (22/10/2026) |
+| Bản | `index.html` SHA-256 `4111c10a09de1e338120a42ef7a5404e059b22238fc833d27d1ca21cacbf583c` (22/10/2026) |
 | URL đích dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 — chờ SEO chốt |
 | Title | Bi gầm VinFast Lux SA2.0: Giá, cấu hình và case thực tế \| Auto365 (giữ nguyên) |
 | H1 | Giữ nguyên như preview |
