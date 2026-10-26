@@ -65,3 +65,5 @@ Người xác nhận: anh Nguyễn Quang Đạo. Mức bằng chứng: kỹ thu�
 ## Kiểm lại 26/10/2026
 
 Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast VF5; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.
+
+- **Test lead API 26/10/2026:** POST https://auto365.vn/api/leads (gửi từ trang VF6 live vì trang VF5 chưa đăng), service "Bi gầm VinFast VF5", nhu cầu "Đèn – Bi gầm" → 200 `{"success":true,"lead_id":"257","test":true}`. Cần xoá lead #257 khỏi CRM. Chưa test form trên trang VF5 thật (chờ IT đăng).

@@ -63,3 +63,5 @@ Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát, mặt
 ## Kiểm lại 26/10/2026
 
 Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast EC Van; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.
+
+- **Test lead API 26/10/2026:** POST https://auto365.vn/api/leads (gửi từ trang VF6 live vì trang EC Van chưa đăng), service "Bi gầm VinFast EC Van", nhu cầu "Đèn – Bi gầm" → 200 `{"success":true,"lead_id":"260","test":true}`. Cần xoá lead #260 khỏi CRM. Chưa test form trên trang EC Van thật (chờ IT đăng).
