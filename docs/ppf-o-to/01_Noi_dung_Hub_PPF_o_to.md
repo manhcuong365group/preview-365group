@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4debabf35f9131937bfcc9ae13fb0a5ff80f4ceb1b0d224035ebe5594c47de24`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4275ad1403cc3a5e03b23e3edd103502d2a8d275065260419d26849f983bacbe`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -54,15 +54,15 @@ Gợi ý gói phổ biến theo mục đích sử dụng.
 - Đèn trước (2 bên)
 - Ốp gương (2 bên)
 
+- Cửa trước (2 bên)
+- Cửa sau (2 bên)
+- Cốp sau
+
 - Capo
 - Cản trước
 - Đèn trước (2 bên)
 - Ốp gương (2 bên)
 - Má trước (2 bên)
-
-- Cửa trước (2 bên)
-- Cửa sau (2 bên)
-- Cốp sau
 
 - Toàn bộ bề mặt sơn ngoại thất
 - Capo, cản trước, cản sau
