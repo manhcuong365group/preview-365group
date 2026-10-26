@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `11a773237e1104e173ea441b1b6fd2060522cef5ae4e73835ef75f0c7883c147` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `16e297d41db8572fe626f024c0e46c721f899964ae6079316295c08657a362f3` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |

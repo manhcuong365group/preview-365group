@@ -32,7 +32,7 @@
 | Trang Limo Green (`../limo-green/`) được link ở "Dòng xe VinFast khác" | Kiểm tra khi trang lên preview |
 | Xoá khối `#vf3lp-internal-check`; chốt domain canonical; nghiệm thu Live L1–L8 | Khi đăng production |
 
-SHA-256 `index.html` (22/10/2026, bản hiện hành): `cf655cc6ed2db7606a44f5f2c20e90cb68a1011af96e2aa1424a8b1c0f82a593`
+SHA-256 `index.html` (22/10/2026, bản hiện hành): `f27d6953fa71d7b1c7dcf34c4d8dd5d46588b7286eb2dbc87f9d00d42f8297cb`
 
 
 ## Bảng xác nhận tương thích theo từng mẫu — Fadil (22/10/2026)

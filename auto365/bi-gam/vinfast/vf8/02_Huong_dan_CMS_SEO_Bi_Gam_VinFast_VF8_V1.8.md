@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast VF8: phương án lắp, giá và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF8 |
-| Bản nguồn | `index.html` SHA-256 `e7700eb0136d28c77765ac83df091082d23c8d10ef6cb4bf9bf2b8932eda4003` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `9c1f5de1df8ffd8e0eeef04035ef389c7f19ae95b859f81d4742bfc4e62c366c` (24/10/2026) |
 
 ## Khi đăng production
 

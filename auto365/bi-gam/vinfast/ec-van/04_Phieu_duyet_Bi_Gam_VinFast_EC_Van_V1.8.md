@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `5e925007e195e47a80be1a53e5950cc3beba1dbcd03bd0d3b4c5a78cb51f437a` |
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `be3f1a78164aaa4ae26b8c62f2c87ffb281be37a893ab9e4f6b47321c2be5200` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
