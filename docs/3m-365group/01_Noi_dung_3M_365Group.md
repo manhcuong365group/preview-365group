@@ -1,7 +1,7 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `5e1071b70777beadb6a1c51737e99e4900affd9283baab4c5da9e3bdbc1f215e`
-Ngày xuất: 26/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `67b5036e40169af59f0530fdab5f3179bed3d2cfc738546573d0629aea27f84a`
+Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
