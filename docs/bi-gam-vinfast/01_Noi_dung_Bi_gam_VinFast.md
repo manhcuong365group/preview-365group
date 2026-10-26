@@ -11,8 +11,8 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `06086d8417ab62ec765ffabbbbbc15b078742f701b8ef2962bbbb62ee9474ae8` |
-| SHA-256 content-src.html | `ed78a4fed0a2118451e0daf21d649f715e12b6f153611bef3d4650808b4779f6` |
+| SHA-256 index.html | `2765f6297853c101e713033f5a03f0857f3f9e42deff7a1fd287fba3983cdecb` |
+| SHA-256 content-src.html | `e02acef1a3f045716128b23d6498c448b095369f5212642cd430640ddeff6aa3` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -37,11 +37,11 @@
 | VinFast Nerio Green | Green / dịch vụ | Liên hệ tư vấn | — |
 | VinFast Limo Green | Green / dịch vụ | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green |
 | VinFast EC Van | Green / dịch vụ | Liên hệ tư vấn | — |
-| VinFast VF e34 | Dòng đời trước | Liên hệ tư vấn | — |
-| VinFast Fadil | Dòng đời trước | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
-| VinFast Lux A2.0 | Dòng đời trước | Liên hệ tư vấn | — |
-| VinFast Lux SA2.0 | Dòng đời trước | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa2-0 |
-| VinFast President | Dòng đời trước | Liên hệ tư vấn | — |
+| VinFast VF e34 | Mẫu xe cũ | Liên hệ tư vấn | — |
+| VinFast Fadil | Mẫu xe cũ | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
+| VinFast Lux A2.0 | Mẫu xe cũ | Liên hệ tư vấn | — |
+| VinFast Lux SA2.0 | Mẫu xe cũ | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa2-0 |
+| VinFast President | Mẫu xe cũ | Liên hệ tư vấn | — |
 
 ## Xe VinFast đã lắp bi gầm tại Auto365 (10 bài hồ sơ)
 
@@ -98,7 +98,7 @@ _Dòng xe:_ Limo Green, Nerio Green, Herio Green, Minio Green, EC Van
 
 CTA: Xem mẫu lắp được cho Limo Green → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green
 
-#### Dòng đời trước, hay đi tỉnh
+#### Mẫu xe cũ, hay đi tỉnh
 
 _Dòng xe:_ Fadil, Lux A2.0, Lux SA2.0, President, VF e34
 
