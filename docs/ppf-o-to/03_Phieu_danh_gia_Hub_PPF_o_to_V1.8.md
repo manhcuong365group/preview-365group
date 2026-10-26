@@ -144,9 +144,9 @@ Thay đổi 26/10 (chỉ giao diện và vị trí, không đổi giá/bảo hà
 | G3 | 4,7 | 4,7 | Giữ |
 | U1 | 4,8 | 4,9 | Mobile gọn hơn (thẻ vị trí 2 cột, chữ/giá nhỏ lại); desktop + 375px không tràn |
 | U2 | 4,9 | 4,9 | Giữ |
-| U3 | 4,7 | 4,6 | Giao diện khối giá đổi sau lần duyệt 24/10 (dữ liệu giữ nguyên) — nên báo anh Đặng Minh Hoàng xem lại giao diện mới |
+| U3 | 4,7 | 4,7 | Anh Đặng Minh Hoàng đã xem và duyệt giao diện khối giá mới 26/10/2026 (lastReviewed = 2026-10-26) |
 
-**Tổng tự chấm: C 29,4 · S 29,0 · G 24,3 · U 14,4 → 97,1/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,3 ≥ 23,75. Còn: anh Hoàng xem giao diện khối giá mới, URL catalog (R22-04), reviewer tái chấm, nghiệm thu production.
+**Tổng tự chấm: C 29,4 · S 29,0 · G 24,3 · U 14,5 → 97,2/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,3 ≥ 23,75. Anh Đặng Minh Hoàng duyệt giao diện mới 26/10/2026. Còn: URL catalog (R22-04), reviewer tái chấm, nghiệm thu production.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
@@ -161,7 +161,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `e6486012e06a19b3359f8e4a7ad3666ad60375d851d8050582a3f5a4f8bc0de6` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `71e80537ec34ed562d9fd3a2b72ef677e86eb79c407cdd0d75c5289e425053d4` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
