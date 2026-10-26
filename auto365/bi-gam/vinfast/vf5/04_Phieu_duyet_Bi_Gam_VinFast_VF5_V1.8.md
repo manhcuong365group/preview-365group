@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `23c20be3dd6806c0ee106957a277cb6195b1c83082e1e4cfa02f3094669b91e1` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `2704daa15423ab087836fec88f29e7af786f0e947c198d57b08290c24c38bcdf` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |

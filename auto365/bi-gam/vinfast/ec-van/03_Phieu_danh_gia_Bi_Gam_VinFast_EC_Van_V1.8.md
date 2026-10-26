@@ -4,7 +4,7 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `be3f1a78164aaa4ae26b8c62f2c87ffb281be37a893ab9e4f6b47321c2be5200` (cùng mã trong 02/04) |
+| SHA-256 index.html | `ed1d82f018a1e17d487cb136a9f5c35186d1488f79337a2841ca05090133bcf0` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,4 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast EC Van"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; thêm khối "EC Van chạy dịch vụ: chọn theo hoàn cảnh sử dụng" (5 tình huống, audit 26/10 EC-04); ghi chú nội bộ hero sửa thành ảnh AI; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm EC Van; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -18,7 +18,7 @@
 | Trang | Bi gầm VinFast EC Van — preview https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `be3f1a78164aaa4ae26b8c62f2c87ffb281be37a893ab9e4f6b47321c2be5200` (cùng mã trong 02/04) |
+| SHA-256 index.html | `ed1d82f018a1e17d487cb136a9f5c35186d1488f79337a2841ca05090133bcf0` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 24/10/2026 |
 | Kiểm tra máy | JSON-LD parse OK; FAQPage 6 = 6 hiển thị (khớp nguyên văn); ItemList 17 = 17 card, đúng thứ tự; header shell giống hệt trang Fadil; "Fadil" chỉ còn trong thẻ case VinFast khác và "Dòng xe VinFast khác" |
 | Kiểm tra trình duyệt | Desktop 1366: lưới sản phẩm 1 hàng cuộn ngang, lọc hãng (AES → 3 mẫu), so sánh 2 mẫu lọc đúng 2 hàng bảng, FAQ mở 5 → 6. Mobile 375: scrollWidth 375, lưới 2 hàng cuộn ngang, popup 4 nhu cầu mở đúng (Tiết kiệm: Titan 301 → Fogway Gen 1 → F10 New), ảnh local tải đủ |
