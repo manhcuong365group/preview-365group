@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `3e33b75e4a4342fa38b848f28ea30c90c32acb1430b386aa171aed70bd230cb2`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `b6a266da177986cef6c9729f548e651e4c8e95de25371d3dc9634e2b19b7a00c`
 Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -19,40 +19,40 @@ Ba công nghệ cho các mức ngân sách khác nhau
 ### 3M™ Crystalline™ Series CR BLK
 Dòng phim cao cấp của 3M dùng công nghệ quang học đa lớp, tông đen tiệp kính nguyên bản; cho khả năng giảm nhiệt, chặn UV và giảm lóa cao trong khi vẫn giữ tầm nhìn rõ.
 Đặc điểm chính:
-- Giảm nhiệt: TSER đến 64% (CR BLK 15); mã kính lái CR BLK 40/50/60: 58% / 56% / 54%. Loại bỏ hồng ngoại (IRR) đến 98%
-- Chặn tia UV: 99,9% ở tất cả mã
-- Độ xuyên sáng (VLT): 14% – 57% tùy mã
-- Giảm lóa: đến 81%
+- Mát xe: cản đến 64% tổng nhiệt mặt trời (TSER, mã CR BLK 15); kính lái CR BLK 40/50/60 cản 58% / 56% / 54%. Chặn đến 98% tia hồng ngoại gây nóng (IRR)
+- Bảo vệ da và nội thất: chặn 99,9% tia UV ở tất cả mã
+- Độ sáng kính: để lọt 14% – 57% ánh sáng (VLT) tùy mã; số càng cao kính càng sáng
+- Bớt chói: giảm lóa đến 81%
 - Công nghệ: Crystalline 200 lớp, phim nền MOF – công nghệ quang học đa lớp
 - Màu sắc: Tông đen (Tone Black), tiệp màu kính nguyên bản
 - Bảo hành: Bảo hành điện tử 3M 10 năm
 - Giá: Trọn xe từ 9.000.000đ (cấu hình Crystalline Hybrid, Minicar); đồng bộ Crystalline từ 12.200.000đ. Giá theo xe do đại lý báo
-Xem dòng Crystalline CR BLK → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
+Đối chiếu: 3M Việt Nam công bố Crystalline Series CR BLK cản đến 64% TSER, 98% IRR, chặn 99,9% UV, giảm chói đến 81% (3m.com.vn, brochure CR BLK).Xem dòng Crystalline CR BLK → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
 
 ### 3M™ Ceramic IR Series
 Phim gốm Ceramic hồng ngoại, cân bằng giữa độ sáng, độ riêng tư và khả năng giảm nhiệt cho xe đi phố và đường trường.
 Đặc điểm chính:
-- Giảm nhiệt: TSER đến 63% (IR 15); mã kính lái IR 50: 54%. Loại bỏ hồng ngoại (IRR) đến 90%
-- Chặn tia UV: 99,8% – 99,9%
-- Độ xuyên sáng (VLT): 16% – 50% tùy mã
-- Giảm lóa: đến 78%
+- Mát xe: cản đến 63% tổng nhiệt mặt trời (TSER, mã IR 15); kính lái IR 50 cản 54%. Chặn đến 90% tia hồng ngoại gây nóng (IRR)
+- Bảo vệ da và nội thất: chặn 99,8% – 99,9% tia UV
+- Độ sáng kính: để lọt 16% – 50% ánh sáng (VLT) tùy mã; số càng cao kính càng sáng
+- Bớt chói: giảm lóa đến 78%
 - Công nghệ: Ceramic hồng ngoại
 - Bảo hành: Bảo hành điện tử 3M 10 năm
 - Giá: Trọn xe từ 7.200.000đ (Minicar). Giá theo xe do đại lý báo
-Xem dòng Ceramic IR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
+Đối chiếu: 3M Việt Nam công bố cho toàn dòng Ceramic IR Series mức cản đến 66% TSER, 95% IRR, chặn đến 99,9% UV (3m.com.vn); các mã 365Group phân phối nằm trong khoảng này.Xem dòng Ceramic IR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
 
 ### 3M™ Ceramic NR Series
 Dòng phim lai Nano Ceramic và Nano Reflective, mức đầu tư dễ tiếp cận nhất trong ba dòng, phù hợp chủ xe ưu tiên chi phí.
 Đặc điểm chính:
-- Giảm nhiệt: TSER đến 69% (NR 5); mã kính lái NR 35: 51%. Loại bỏ hồng ngoại (IRR) đến 91%
-- Chặn tia UV: 99% ở tất cả mã
-- Độ xuyên sáng (VLT): 7% – 43% tùy mã
-- Giảm lóa: đến 93%
+- Mát xe: cản đến 69% tổng nhiệt mặt trời (TSER, mã NR 5); kính lái NR 35 cản 51%. Chặn đến 91% tia hồng ngoại gây nóng (IRR)
+- Bảo vệ da và nội thất: chặn 99% tia UV ở tất cả mã
+- Độ sáng kính: để lọt 7% – 43% ánh sáng (VLT) tùy mã; số càng cao kính càng sáng
+- Bớt chói: giảm lóa đến 93%
 - Công nghệ: Lai Nano Ceramic và Nano Reflective
 - Bảo hành: Bảo hành điện tử 3M 10 năm
 - Giá: Trọn xe từ 5.900.000đ (cấu hình Ceramic Hybrid, Minicar). Giá theo xe do đại lý báo
 Xem dòng Ceramic NR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
-Số liệu theo bảng 3M AutoFilm của 365Group (mã 260815, áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm (VLT 73%). Mức "đến" là mã đậm nhất của dòng; mã kính lái ghi riêng.
+Số liệu theo bảng 3M AutoFilm của 365Group (mã 260815, áp dụng từ 06/2026), đo trên kính ô tô xanh 6 mm (VLT 73%). Mức "đến" là mã đậm nhất của dòng; mã kính lái ghi riêng. Điều kiện đo trùng với 3M Việt Nam công bố (3m.com.vn).
 
 ## 6 cấu hình phim cách nhiệt 3M
 Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365Group gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.

@@ -46,18 +46,18 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 |---|---:|---:|---:|---|
 | C1 | 10 | 9,7 | 9,9 | Giá đã gồm công thi công và VAT, 224 đại lý (chủ trang chốt 26/10) – ghi trên thẻ, FAQ, Offer |
 | C2 | 10 | 9,4 | 9,5 | Tab 3M™ Crystalline / Ceramic IR / Ceramic NR Series có "Đặc điểm chính"; ghi chú cấu hình PRO. Còn: case Ceramic IR |
-| C3 | 10 | 9,2 | 9,2 | Không đổi |
+| C3 | 10 | 9,2 | 9,6 | Tab và thẻ viết lợi ích trước (Mát xe / Bảo vệ da / Độ sáng kính / Bớt chói), thuật ngữ để trong ngoặc; nhãn thẻ "Cản nhiệt kính lái (TSER)", "Độ sáng kính lái (VLT)" |
 | S1 | 10 | 9,3 | 9,3 | Không đổi |
 | S2 | 10 | 9,4 | 9,4 | 1 H1, title 59 ký tự, meta 150, ảnh đủ alt |
 | S3 | 10 | 9,8 | 9,8 | Canonical URL đích; JSON-LD parse được (Organization, Brand, FAQPage, DefinedTermSet, WebSite, BreadcrumbList, WebPage, ItemList) |
 | G1 | 10 | 9,5 | 9,5 | Không đổi |
-| G2 | 10 | 9,5 | 9,6 | VLT kính lái trên 6 thẻ, tab có số liệu theo mã |
+| G2 | 10 | 9,5 | 9,8 | VLT kính lái trên 6 thẻ; nguồn thứ hai: số liệu Crystalline CR BLK khớp 3m.com.vn + brochure CR BLK, Ceramic IR đối chiếu dải toàn dòng 3M VN, điều kiện đo trùng 3M VN |
 | G3 | 5 | 4,7 | 4,7 | Không đổi. Còn: case Ceramic IR, hồ sơ anh Hoàng trên site 365Group |
 | U1 | 5 | 4,7 | 4,8 | Mobile: chữ thu gọn, 7 nhóm thẻ vuốt ngang (6 gói 3983 → 656px), ảnh tab 3:2, không tràn ngang |
 | U2 | 5 | 4,7 | 4,8 | Nút "Nhận báo giá gói này" mở popup form chọn sẵn gói; r.ok. Còn: IT nghiệm thu /api/leads |
 | U3 | 5 | 5,0 | 5,0 | 01–03 cùng SHA |
 
-**Tổng tự chấm lần 14: C 28,6 · S 28,5 · G 23,8 · U 14,6 → 95,5/100.** Chạm 3 ngưỡng (SEO 28,5; GEO ≥ 23,75; tổng ≥ 95) nhưng sát ngưỡng; reviewer R3 chấm 90 – không tự tuyên bố ĐẠT, chờ reviewer chấm lại đúng build.
+**Tổng tự chấm lần 14: C 29,0 · S 28,5 · G 24,0 · U 14,6 → 96,1/100.** Chạm 3 ngưỡng (SEO 28,5; GEO ≥ 23,75; tổng ≥ 95) nhưng sát ngưỡng; reviewer R3 chấm 90 – không tự tuyên bố ĐẠT, chờ reviewer chấm lại đúng build.
 
 ## Xử lý phiếu tái kiểm R3 (reviewer 26/10/2026: 90/100 – SEO 27,5, GEO 22,5, ND 27,5, UX 12,5)
 
@@ -82,7 +82,7 @@ Theo phiếu R3: không tự cộng điểm, chờ reviewer chấm lại đúng 
 |---|---:|---:|---:|---|
 | C1 | 10 | 9,7 | 9,7 | Giá, cấu hình, 12 mã, bảo hành theo PDF 260815; 224 đại lý chủ trang chốt. Còn: site 365Group ghi 160+ |
 | C2 | 10 | 9,3 | 9,4 | 6 thẻ giá có đủ mã theo vị trí kính, TSER kính lái, giá Minicar/Sedan/SUV, nút nhận báo giá; khối công nghệ 3M; 8 bài báo. Còn: case Ceramic IR, hướng dẫn chăm sóc phim |
-| C3 | 10 | 9,2 | 9,2 | Không đổi |
+| C3 | 10 | 9,2 | 9,6 | Tab và thẻ viết lợi ích trước (Mát xe / Bảo vệ da / Độ sáng kính / Bớt chói), thuật ngữ để trong ngoặc; nhãn thẻ "Cản nhiệt kính lái (TSER)", "Độ sáng kính lái (VLT)" |
 | S1 | 10 | 9,3 | 9,3 | Không đổi |
 | S2 | 10 | 9,4 | 9,4 | Không đổi (og 1200×630, caption bảng thông số, heading) |
 | S3 | 10 | 9,8 | 9,8 | Không đổi; preview đổi đường dẫn có 301 từ /3m-365group/ |
@@ -276,7 +276,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `3e33b75e4a4342fa38b848f28ea30c90c32acb1430b386aa171aed70bd230cb2` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `b6a266da177986cef6c9729f548e651e4c8e95de25371d3dc9634e2b19b7a00c` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
