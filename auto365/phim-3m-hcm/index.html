@@ -190,21 +190,23 @@ img{max-width:100%;display:block}a{color:inherit}
 .h3m-press__more{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin:20px 0 0}.h3m-press__more a{color:var(--r);font-weight:500;text-decoration:none}
 /* process + warranty */
 .h3m-pw{display:block}
-.h3m-tl{list-style:none;margin:8px 0 0;padding:0;counter-reset:t;display:grid;grid-template-columns:repeat(8,1fr);gap:12px;position:relative}
-.h3m-tl:before{content:"";position:absolute;top:20px;left:6.25%;right:6.25%;height:2px;background:#e3e6ea}
-.h3m-tl li{counter-increment:t;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 4px}
-.h3m-tl li:before{content:counter(t);width:40px;height:40px;border-radius:50%;background:var(--r);color:#fff;font-size:15px;font-weight:600;display:grid;place-items:center;margin-bottom:12px;box-shadow:0 0 0 5px #fff}
-.h3m-tl b{display:block;font-size:14px;font-weight:600;margin-bottom:4px;line-height:1.3}.h3m-tl span{color:var(--m);font-size:12.5px;line-height:1.5}
+.h3m-steps8{background:#fff;border:1px solid var(--l);border-radius:14px;padding:22px 24px 20px;margin-bottom:24px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.h3m-steps8 .h3m-h2{font-size:24px;margin-bottom:6px}.h3m-steps8__note{margin:0 0 18px;font-size:14px;color:var(--m)}
+.h3m-tl{list-style:none;margin:0;padding:0;counter-reset:t;display:grid;grid-template-columns:repeat(8,1fr)}
+.h3m-tl li{counter-increment:t;position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 4px}
+.h3m-tl li:before{content:counter(t);position:relative;z-index:1;width:40px;height:40px;border-radius:50%;background:var(--r);color:#fff;font-size:15px;font-weight:600;display:grid;place-items:center;margin-bottom:12px;box-shadow:0 0 0 4px #fdecee}
+.h3m-tl li:not(:last-child):after{content:"";position:absolute;top:20px;left:calc(50% + 28px);right:calc(-50% + 28px);height:1px;background:#3a3f47}
+.h3m-tl b{font-size:13px;font-weight:500;line-height:1.35}
 .h3m-tl__note{margin:14px 0 24px;font-size:14px;color:var(--m)}
 .h3m-wr{display:grid;grid-template-columns:220px 1fr;max-width:820px;gap:20px;background:var(--bg);border:1px solid var(--l);border-radius:16px;padding:20px;align-items:center}
 .h3m-wr__img img{border-radius:8px;box-shadow:0 10px 24px rgba(0,0,0,.15);background:#fff;transform:rotate(-3deg)}
 .h3m-wr__big{display:block;font-size:56px;font-weight:650;color:var(--r);line-height:1}.h3m-wr__big small{font-size:18px;margin-left:6px;color:var(--t)}
 .h3m-wr h3{margin:6px 0 10px;font-size:19px}
 .h3m-wr ul{margin:0 0 16px;padding-left:18px;color:var(--m);font-size:14px}.h3m-wr li{margin-bottom:4px}
-@media (max-width:1024px){.h3m-why2__grid{grid-template-columns:1fr}.h3m-tl{grid-template-columns:repeat(4,1fr);row-gap:22px}.h3m-tl:before{display:none}.h3m-certs{grid-template-columns:1fr 1fr}.h3m-press__grid{grid-template-columns:1fr}.h3m-cases{grid-template-columns:1fr 1fr}}
+@media (max-width:1024px){.h3m-why2__grid{grid-template-columns:1fr}.h3m-tl{grid-template-columns:repeat(4,1fr);row-gap:22px}.h3m-tl li:nth-child(4):after{display:none}.h3m-certs{grid-template-columns:1fr 1fr}.h3m-press__grid{grid-template-columns:1fr}.h3m-cases{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.h3m-why2__hero{min-height:220px}.h3m-press__grid{grid-template-columns:1fr;gap:20px}.h3m-pf b{font-size:19px}.h3m-pl a{grid-template-columns:92px 1fr;gap:12px}.h3m-pl img{width:92px}.h3m-pl b{font-size:14px}
  .h3m-cases{grid-template-columns:1fr 1fr;gap:10px}.h3m-case__b{padding:10px}.h3m-case__xe{font-size:14px}.h3m-case__w{display:none}.h3m-case__f strong{display:none}.h3m-cfx__row{align-items:flex-start;flex-direction:column;gap:6px}.h3m-cfx__row>span{flex:none}.h3m-cfx__chips{flex-wrap:nowrap;overflow-x:auto;width:100%;max-width:100%;padding-bottom:3px}.h3m-cfx__chips button{flex:0 0 auto}
- .h3m-certs{grid-template-columns:1fr 1fr;gap:10px}.h3m-tl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;gap:8px}.h3m-tl:before{display:block;left:20px;right:auto;width:calc(8 * 46% - 40px)}.h3m-tl li{flex:0 0 46%;scroll-snap-align:start}.h3m-wr{grid-template-columns:1fr;padding:18px;gap:16px}.h3m-wr__img img{max-width:180px;margin:0 auto}.h3m-wr .h3m-btn{width:100%;justify-content:center}.h3m-wr__big{font-size:42px}}
+ .h3m-certs{grid-template-columns:1fr 1fr;gap:10px}.h3m-steps8{padding:18px 14px}.h3m-steps8 .h3m-h2{font-size:20px}.h3m-tl{grid-template-columns:repeat(4,1fr);row-gap:18px}.h3m-tl li:before{width:34px;height:34px;font-size:14px}.h3m-tl li:not(:last-child):after{top:17px;left:calc(50% + 22px);right:calc(-50% + 22px)}.h3m-tl b{font-size:12px}.h3m-wr{grid-template-columns:1fr;padding:18px;gap:16px}.h3m-wr__img img{max-width:180px;margin:0 auto}.h3m-wr .h3m-btn{width:100%;justify-content:center}.h3m-wr__big{font-size:42px}}
 /* package CTA + popup + bands */
 .h3m-card__cta{width:100%;justify-content:center;padding:11px 14px;font-size:15px}
 .h3m-card__sub{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
@@ -478,20 +480,20 @@ img{max-width:100%;display:block}a{color:inherit}
 
 <section class="h3m-sec" id="quy-trinh">
  <div class="h3m-wrap">
-  <span class="h3m-eyebrow">Quy trình &amp; bảo hành</span>
-  <h2 class="h3m-h2">Quy trình 8 bước chuẩn 3M Pro Shop – <em>bảo hành điện tử 10 năm</em></h2>
-  <div class="h3m-pw">
+  <div class="h3m-steps8">
+   <h2 class="h3m-h2">8 bước Auto365 kiểm tra <em>trước khi bàn giao</em></h2>
+   <p class="h3m-steps8__note">Thời gian thi công tham khảo cho cấu hình trọn xe khoảng 2–4 giờ với xe không cần xử lý đặc biệt.</p>
    <ol class="h3m-tl">
-    <li><b>Tiếp nhận xe</b><span>Ghi nhận model, kính nguyên bản, phim cũ, cửa sổ trời.</span></li>
-    <li><b>Tư vấn cấu hình</b><span>Chốt nhu cầu, ngân sách và mã phim từng vị trí kính.</span></li>
-    <li><b>Xem mẫu thực tế</b><span>Đối chiếu vật liệu tại xưởng, xác nhận màu và độ tối trên xe.</span></li>
-    <li><b>Che chắn nội thất</b><span>Phủ bảo vệ ghế, taplo, thiết bị điện tử. Vệ sinh khoang.</span></li>
-    <li><b>Đo cắt phim</b><span>Cắt phim theo khuôn từng ô kính, mép sát khung, không ảnh hưởng roăng.</span></li>
-    <li><b>Thi công từng kính</b><span>Vệ sinh, xịt dung dịch, dán và gạt bọt khí. Ưu tiên kính lớn trước.</span></li>
-    <li><b>Nghiệm thu</b><span>Kiểm tra mép, bọt khí, tầm nhìn và đối chiếu mã phim với phiếu.</span></li>
-    <li><b>Bàn giao &amp; kích hoạt bảo hành</b><span>Xác nhận hồ sơ xe, mã phim từng kính và kích hoạt mã bảo hành điện tử/serial.</span></li>
+    <li><b>Kiểm tra xe</b></li>
+    <li><b>Chốt nhu cầu</b></li>
+    <li><b>Chọn mã phim</b></li>
+    <li><b>Chốt phạm vi</b></li>
+    <li><b>Đối chiếu vật liệu</b></li>
+    <li><b>Thi công</b></li>
+    <li><b>Kiểm tra lại</b></li>
+    <li><b>Bàn giao &amp; eWarranty</b></li>
    </ol>
-   <p class="h3m-tl__note">Thời gian dán trọn xe thường khoảng 2–4 giờ. Xe có phim cũ, nhiều keo, cửa sổ trời panorama hoặc kính lớn có thể cần thêm thời gian sau khi kiểm tra thực tế.</p>
+  </div>
    <div class="h3m-wr">
     <div class="h3m-wr__img"><img src="hinh/ewarranty-3m.webp" alt="Mẫu chứng nhận bảo hành điện tử phim cách nhiệt 3M ghi mã phim từng vị trí kính" loading="lazy"></div>
     <div class="h3m-wr__b">
