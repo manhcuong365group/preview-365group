@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `cfe2af874a8c389d81dc55f47185e47a25777a6a644a7b65765c73de17019e1f`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `927329308f8a305ddc617ca1e67b8aa4ab53395a623d8a5a2ba48c1907f810d5`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (24/10/2026) · Cập nhật 24/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (24/10/2026) · Cập nhật 26/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -415,7 +415,7 @@ Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 24/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 24/10/2026
+Kiểm duyệt nội dung hub PPF ngày 24/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 26/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
