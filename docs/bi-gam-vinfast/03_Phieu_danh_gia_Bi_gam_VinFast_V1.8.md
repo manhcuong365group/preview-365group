@@ -8,7 +8,21 @@
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-24; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
-## R3 (tự chấm 24/10/2026, sau bản vá R2 + đã duyệt)
+## R3 reviewer 25/10/2026 và bản vá 26/10/2026
+
+Reviewer R3 chấm snapshot SHA `2accd820…` (25/10/2026 21:51): **95,5/100 — qua 3 ngưỡng điểm** (C 28,6 · SEO 28,7 · GEO 23,8 · U 14,4), chưa đóng nghiệm thu phát hành.
+
+| Mã | Phiếu R3 | Đã làm 26/10/2026 |
+|---|---|---|
+| R3-01/02 | Thẻ Lux SA2.0 và ItemList trỏ `/lux-sa20` (404); trang thật ở `/lux-sa2-0` (200, self-canonical) | Đổi đích trong source; thẻ xe + ItemList dùng `/lux-sa2-0`; không còn URL cũ trong HTML (link bài case `vinfast-lux-sa20-lap-…` và tên ảnh giữ nguyên) |
+| R3-03 | Meta description / og:description / CollectionPage.description còn AES cạnh "hồ sơ" | Đổi sang mẫu reviewer: "Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công." — sinh từ build cho cả 3 trường |
+| R3-04 | 01/02/04 còn trạng thái 23/10 | 02 bảng URL kiểm 26/10 (6/6 trang 200); 04 dòng model checked_at 26/10 + ghi chú HTTP, case/guide giữ checked_at 23/10 (chưa kiểm lại); 01 xuất lại |
+| R3-05 | 03/05 cập nhật | Mục này + 05 |
+| R3-06/07 | Bản tích hợp production | Việc IT khi đăng (02 mục 7) |
+
+Không tự chấm lại; chờ reviewer xác nhận bản SHA mới trong 01.
+
+## R3 tự chấm (24/10/2026, sau bản vá R2 + đã duyệt)
 
 Tự chấm của team, lấy phiếu reviewer R2 (94,8) làm mốc và chỉ cộng các mục đã sửa có bằng chứng. **Không phải phiếu nghiệm thu; không tự tuyên bố ĐẠT.** Kiểm 24/10: SHA index.html khớp 01; 29 link auto365.vn trong nội dung, 28 trả 200; trang con Fadil và Limo Green đã đăng production (200, canonical đúng, robots index), **Lux SA2.0 vẫn 404**.
 
@@ -95,13 +109,13 @@ Chưa tự chấm lại sau bản vá — **chờ reviewer tái kiểm** đúng 
 
 ## 2. Kết luận
 
-**Reviewer R2: 94,8 (chưa đạt). Tự chấm R3 24/10: 95,9, qua cả 3 ngưỡng** — chờ reviewer tái kiểm; còn trang con Lux SA2.0 404 là điều kiện phát hành. Không tự tuyên bố ĐẠT.
+**Reviewer R3 (25/10/2026): 95,5/100 — qua 3 ngưỡng điểm.** Bản vá 26/10 đóng R3-01..05 (URL Lux, mô tả meta). Nghiệm thu phát hành chờ IT tích hợp production (R3-06/07). Không tự tuyên bố đã nghiệm thu.
 
 ## 3. Việc cần làm để đạt
 
 | Ưu tiên | Việc | Ai |
 |---|---|---|
-| 1 | Đăng trang Lux SA2.0 (Fadil, Limo Green đã đăng 24/10) trước khi thay hub | CMS/IT + SEO |
+| 1 | Tích hợp production: ảnh, header/footer, robots + X-Robots-Tag, bỏ khối nội bộ, test form–CRM (02 mục 7) | IT + SEO + Ops |
 | 2 | Reviewer tái kiểm bản SHA mới | Reviewer |
 | — | Xoá lead test 228 khỏi CRM | Vận hành |
 

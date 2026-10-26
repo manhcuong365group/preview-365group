@@ -8,7 +8,7 @@
 | Build | `node scripts/build-bi-gam-vinfast.mjs && node scripts/export-bi-gam-vinfast-docs.mjs` |
 | Nội dung + SHA | [01_Noi_dung_Bi_gam_VinFast.md](01_Noi_dung_Bi_gam_VinFast.md) |
 | Master data | [04_Master_Data_Bi_gam_VinFast.csv](04_Master_Data_Bi_gam_VinFast.csv) |
-| Ngày cập nhật | 24/10/2026 (bản vá theo phiếu reviewer R2 23/10/2026) |
+| Ngày cập nhật | 26/10/2026 (bản vá theo phiếu reviewer R3 25/10/2026) |
 
 ## 1. Vai trò URL
 
@@ -17,7 +17,7 @@
 | `/nang-cap-anh-sang-bi-gam` | Hub bi gầm chung (mẫu đèn, giá, so sánh) | — |
 | `/nang-cap-anh-sang-bi-gam/theo-hang-xe` | Tra cứu theo 21 hãng | — |
 | **`/nang-cap-anh-sang-bi-gam/vinfast`** | **Trang hãng VinFast: chọn dòng xe, chọn theo nhu cầu, tiếp cận bài hồ sơ và điểm tư vấn** | Không liệt kê bảng giá/SKU (để trang dòng xe, PDP làm); không canonical bài case về trang này |
-| `/vinfast/vf3`, `/vf6`, `/vf7`, `/fadil`, `/limo-green`, `/lux-sa20` | Trang dòng xe: mẫu lắp được, giá, case riêng | — |
+| `/vinfast/vf3`, `/vf6`, `/vf7`, `/fadil`, `/limo-green`, `/lux-sa2-0` | Trang dòng xe: mẫu lắp được, giá, case riêng | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
 ## 2. Metadata
@@ -25,7 +25,7 @@
 | Trường | Giá trị |
 |---|---|
 | Title | Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green \| Auto365 (72 ký tự) |
-| Meta description | Chọn dòng xe VinFast để xem cấu hình bi gầm, hình ảnh xe thực tế đã lắp tại Auto365 (X-Light, GTR, AES) và nhận tư vấn tại hệ thống 90+ chi nhánh. (146 ký tự) |
+| Meta description (= og:description = CollectionPage.description) | Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. (146 ký tự; R3 26/10: bỏ AES cho khớp phạm vi sapo) |
 | H1 | Bi gầm VinFast theo từng dòng xe (một H1, phần sau hiển thị dòng dưới) |
 | Robots | Preview: meta `noindex, nofollow, noarchive` và header `X-Robots-Tag: noindex` (Cloudflare Pages). **Production: meta `index, follow` và kiểm header không còn `X-Robots-Tag: noindex`** — đổi riêng meta không đủ |
 | OG image | Production thay bằng URL ảnh trên CDN auto365.vn |
@@ -34,16 +34,16 @@
 
 Mọi link tới trang dòng xe trong nội dung **đã là URL tuyệt đối production** từ bản 23/10 (thẻ dòng xe, CTA khối nhu cầu, ItemList, 01, 04). Không còn href tương đối kiểu `vf6/`, `../vinfast-vf3/`.
 
-| Dòng xe | URL trong HTML | HTTP 22/10/2026 |
+| Dòng xe | URL trong HTML | HTTP (ngày kiểm) |
 |---|---|---:|
 | VF 3 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf3 | 200 |
 | VF 6 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf6 | 200 |
 | VF 7 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf7 | 200 |
 | Limo Green | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green | 200 (24/10) |
 | Fadil | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil | 200 (24/10) |
-| Lux SA2.0 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 | **404 (24/10)** |
+| Lux SA2.0 | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa2-0 | 200 (26/10) — URL cũ `/lux-sa20` trả 404, không dùng |
 
-**Điều kiện phát hành:** đăng đủ 3 trang 404 (kiểm HTTP 200, canonical, robots, nội dung) **trước hoặc cùng lúc** với hub. Nếu chưa đăng kịp, đổi 3 thẻ đó sang "Liên hệ tư vấn" (bỏ khỏi mảng có link và ItemList) rồi build lại — không để link 404 lên production. Lux A2.0 và Lux SA2.0 là hai thẻ khác nhau.
+**Trạng thái 26/10/2026:** cả 6 trang dòng xe trên production trả 200, canonical đúng; thẻ xe và ItemList dùng đúng URL canonical. Nếu URL cũ `/lux-sa20` từng được dùng ở nơi khác, IT có thể đặt 301 về `/lux-sa2-0`.
 
 Trên preview, bấm 3 thẻ này sẽ ra trang 404 của production — đúng như dự kiến cho tới khi đăng.
 

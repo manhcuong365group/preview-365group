@@ -84,7 +84,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365';
-const desc = 'Chọn dòng xe VinFast để xem cấu hình bi gầm, hình ảnh xe thực tế đã lắp tại Auto365 (X-Light, GTR, AES) và nhận tư vấn tại hệ thống 90+ chi nhánh.';
+const desc = 'Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

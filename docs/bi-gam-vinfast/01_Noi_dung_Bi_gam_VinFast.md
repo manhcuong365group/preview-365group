@@ -7,12 +7,12 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/vinfast/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast |
 | Title (72 ký tự) | Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365 |
-| Meta description (146 ký tự) | Chọn dòng xe VinFast để xem cấu hình bi gầm, hình ảnh xe thực tế đã lắp tại Auto365 (X-Light, GTR, AES) và nhận tư vấn tại hệ thống 90+ chi nhánh. |
+| Meta description (146 ký tự) | Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm VinFast theo từng dòng xe |
-| dateModified | 2026-10-24 |
+| dateModified | 2026-10-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `2accd820dfd509ec419bb1721aa78bd9e7e8f431990d98dba8377032a31ad406` |
-| SHA-256 content-src.html | `44544f101a6a19b7ca37549c7e441a24ffffea95da7eb57fb1ea2b27e25de330` |
+| SHA-256 index.html | `06086d8417ab62ec765ffabbbbbc15b078742f701b8ef2962bbbb62ee9474ae8` |
+| SHA-256 content-src.html | `ed78a4fed0a2118451e0daf21d649f715e12b6f153611bef3d4650808b4779f6` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -40,7 +40,7 @@
 | VinFast VF e34 | Dòng đời trước | Liên hệ tư vấn | — |
 | VinFast Fadil | Dòng đời trước | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
 | VinFast Lux A2.0 | Dòng đời trước | Liên hệ tư vấn | — |
-| VinFast Lux SA2.0 | Dòng đời trước | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa20 |
+| VinFast Lux SA2.0 | Dòng đời trước | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa2-0 |
 | VinFast President | Dòng đời trước | Liên hệ tư vấn | — |
 
 ## Xe VinFast đã lắp bi gầm tại Auto365 (10 bài hồ sơ)

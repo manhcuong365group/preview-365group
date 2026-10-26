@@ -69,3 +69,12 @@ Reviewer R2 23/10/2026: 94,8/100 (chưa đạt). Chủ quản xác nhận 24/10/
 | Câu nhận diện khối chi nhánh | Ghi đủ thương hiệu đèn: X-Light, GTR, AES, Titan, Henvvei, Red Lighting, Matrix Light và Fogway (khớp dải logo trên trang) |
 | Khối nhu cầu | 3 thẻ cao bằng nhau, dòng "Đã lắp" và link nằm sát đáy |
 | Lỗi hiển thị | Khối "Vì sao chọn" lấy từ theo-hang-xe dư 1 thẻ đóng </div> làm khung trang đóng sớm → CTA cuối trang mất màu nút và font; build đã tự cân lại |
+
+## Thay đổi 26/10/2026 theo reviewer R3 (không đổi nội dung kỹ thuật)
+
+| Mục | Nội dung |
+|---|---|
+| Link Lux SA2.0 | `/lux-sa20` (404) → `/lux-sa2-0` (200, canonical của trang) ở thẻ xe và ItemList |
+| Mô tả meta / OG / CollectionPage | "Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công." — thu hẹp cùng phạm vi sapo đã duyệt 24/10 |
+
+Hai thay đổi trên là sửa đích liên kết và mô tả cho máy đọc, không thêm claim kỹ thuật mới; `lastReviewed` giữ 2026-10-24.

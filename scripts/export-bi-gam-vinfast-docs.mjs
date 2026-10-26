@@ -97,9 +97,10 @@ fs.writeFileSync(path.join(out, '01_Noi_dung_Bi_gam_VinFast.md'), L.join('\n'));
 const csv = (v) => '"' + String(v ?? '').replace(/"/g, '""') + '"';
 const slug = (x) => x.toLowerCase().replace(/vinfast\s*/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const sku = (t) => (t.match(/(Quantum X V2 và F10 Turbo V2|GTR G1 Turbo V2|F10 Turbo V2(?: \d{4}K)?|F10 2\.0 New|F10 New|301 V2)/) || [])[1] || '';
-const checked = '2026-10-23';
+const checked = '2026-10-23'; // case, cẩm nang: lần kiểm HTTP gần nhất
+const checkedModel = '2026-10-26'; // trang dòng xe: kiểm lại 26/10 (Lux đổi sang /lux-sa2-0)
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
-models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? 'trang dòng xe (URL production)' : '', checked, m.status === 'Có hồ sơ' && /fadil|limo-green|lux-sa20/.test(m.url) ? 'URL production 404 khi kiểm — phải đăng trước hub' : '']));
+models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? 'trang dòng xe (URL production)' : '', checkedModel, m.status === 'Có hồ sơ' ? 'HTTP 200, canonical đúng (kiểm 26/10)' + (/lux-sa2-0/.test(m.url) ? '; URL cũ /lux-sa20 trả 404, không dùng' : '') : '']));
 cases.forEach((c) => rows.push(['case', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'case_id nội bộ chưa có — chưa xác nhận các bài cùng dòng xe là xe khác nhau']));
 guides.forEach((x) => rows.push(['guide', x.url.includes('vinfast-fadil') ? 'fadil' : '', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, x.url.includes('bi-gam-vinfast-fadil') ? 'bài tư vấn theo dòng xe, không phải case' : '']));
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_VinFast.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
