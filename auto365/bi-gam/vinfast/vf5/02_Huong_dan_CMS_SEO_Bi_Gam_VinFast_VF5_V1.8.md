@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast VF5: phương án lắp, giá và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF5 |
-| Bản nguồn | `index.html` SHA-256 `4c208818a93510374d1d9975b2f8393f91651835e9d365ec1906aaf33dd15322` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `91cdbca1ae307b1086f90edf50c56a759d2858a042fce5fded0b5ab8aff4f233` (24/10/2026) |
 
 ## Khi đăng production
 
@@ -19,7 +19,7 @@
 3. Xoá khối `#vf3lp-internal-check` (và CSS `.vf3lp-internal-check`).
 4. FAQPage: 6 câu schema = 6 câu hiển thị (đã đối chiếu 1:1).
 5. CollectionPage/ItemList: 17 mục, đúng thứ tự 17 card sản phẩm; nút "Xem tất cả 17 mẫu cho VF5" mở đủ 17 mẫu tại chỗ.
-6. Ảnh trong `hinh/` (upload cùng trang): `vf5-plus-2023-den-chinh-v20-base-auto365.webp` (hero), `vf5-xuong-auto365-den-chinh-v20-new.webp`, `vf5-plus-2025-gtr-limited-auto365.webp`, `ly-do-vf5-ky-thuat.webp`, `ly-do-vf5-ban-giao.webp`, `ly-do-vf5-tu-van-cau-hinh.webp`. Tất cả là ảnh VF5 tại Auto365 trong các ca **nâng cấp đèn chính** (lấy từ 3 bài đã đăng); alt ghi rõ là đèn chính, không phải bi gầm.
+6. Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng VF5. **Phải thay bằng ảnh thật trước production** (ảnh xe VF5 thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng.
 7. Trang **không có** khối video và không có case bi gầm VF5 (chưa có trên auto365.vn). Mục "Xe VinFast đã lắp bi gầm tại Auto365" hiển thị case xe VinFast khác (Fadil, VF7, VF3, Limo Green, VF6), không gắn nhãn VF5.
 8. Khi có bài case/video bi gầm VF5 thật: thêm vào mục case, đổi nhãn mẫu tương ứng trong bảng so sánh, cập nhật phiếu 03/04.
 9. dateModified/"Cập nhật" = ngày đăng; lastReviewed giữ 2026-10-24.

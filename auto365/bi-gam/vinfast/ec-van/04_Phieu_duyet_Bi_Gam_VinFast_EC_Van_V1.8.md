@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `cdcdbb3d1d6cb4db92ee2536f74c4ebed6ccde6a8428718c8fb95c3df71d9fe0` |
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `bd3470202e2451ef58deae17df313507161d9f115c97b152785b79daef30c31c` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -21,7 +21,7 @@
 | Bảng so sánh | 8 mẫu: 301 V2, F10 New (2025), GTR G1 Turbo V2, F10 Turbo V2, AES SV 3.0 Pro, F10 Pro V2, AES SV 3.0 Max, F10 2.0 New | — |
 | Tab Tiết kiệm | Titan 301 (3,5tr) → Fogway Gen 1 (4tr) → X-Light F10 New (2025) (4,3tr), xếp theo giá | — |
 | Case | Mục "Xe VinFast đã lắp bi gầm tại Auto365" dùng case các dòng VinFast khác (Fadil, VF7, VF3, Limo Green, VF6), ghi đúng tên xe | Bài đã đăng trên auto365.vn |
-| Ảnh | Hero: ảnh hãng VinFast EC Van (shop.vinfastauto.com), đặt trên nền trắng, alt "VinFast EC Van (ảnh hãng)". Ảnh khác là ảnh xưởng/minh họa chung, không gắn tên xe | — |
+| Ảnh | Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng EC Van. **Phải thay bằng ảnh thật trước production** (ảnh xe EC Van thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng. | — |
 | Hotline | 0365 365 911; đơn vị /bộ | — |
 | Đại lý chính hãng | X-Light, GTR, AES | Đã xác nhận 12 và 14/10/2026 |
 

@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `4c208818a93510374d1d9975b2f8393f91651835e9d365ec1906aaf33dd15322` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `91cdbca1ae307b1086f90edf50c56a759d2858a042fce5fded0b5ab8aff4f233` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -22,7 +22,7 @@
 | Case hiển thị | Xe VinFast khác đã lắp bi gầm (2 Fadil, 2 VF7, 1 VF3, 2 Limo Green, 2 VF6), giữ như trang Fadil | Bài đã đăng |
 | Tab Tiết kiệm | Titan 301 (3,5tr), Fogway Gen 1 (4tr), X-Light F10 New (4,3tr); popup xếp theo giá | — |
 | Bài VF5 liên quan | GTR Limited 3.0 (VF5 Plus 2025), X-Light V20 Base 2025 (VF 5 Plus 2023), X-Light V20 New 2025 (VF 5), "Độ đèn VinFast VF5", ở mục "Nâng cấp khác cho VinFast VF5" | Bài đã đăng trên auto365.vn |
-| Ảnh | Ảnh thật VF5 tại Auto365 từ các bài nâng cấp đèn chính; alt ghi rõ đèn chính | — |
+| Ảnh | Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng VF5. **Phải thay bằng ảnh thật trước production** (ảnh xe VF5 thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng. | — |
 | Hotline | 0365 365 911 | — |
 | Hoàn nguyên | Chủ xe đến chi nhánh Auto365 để tháo; chi phí (nếu có) tư vấn theo tình trạng xe (FAQ bảo hành) | Như trang Fadil |
 | Đại lý chính hãng | X-Light, GTR, AES | Đã xác nhận 12 và 14/10/2026 |

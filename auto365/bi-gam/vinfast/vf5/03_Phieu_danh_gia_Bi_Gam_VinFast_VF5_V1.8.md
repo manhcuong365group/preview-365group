@@ -1,13 +1,24 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast VF5 V1.8
 
-## Bản hiện hành — 24/10/2026
+## Bản hiện hành — 26/10/2026 (dùng mục này; các mục khác là lịch sử)
+
+| Trường | Nội dung |
+|---|---|
+| SHA-256 index.html | `91cdbca1ae307b1086f90edf50c56a759d2858a042fce5fded0b5ab8aff4f233` (cùng mã trong 02/04) |
+| Audit reviewer 26/10 | 92,0/100 — chưa đạt |
+| Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF5"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
+| Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF5; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
+| Ghi chú | Không đặt case/video là điều kiện bắt buộc; không trừ C1 vì thông số công bố chưa đo; "chưa nghiệm thu production" không trừ U3 preview. Câu giới hạn dưới tiêu đề khối case không thêm (quyết định user) |
+| Tự chấm sau sửa | ~93,8/100 — **CHƯA ĐẠT** (G3/C2 còn thiếu bằng chứng VF5 thật). Reviewer kỹ thuật chưa kiểm bản sửa; lastReviewed giữ 24/10 |
+
+## Lịch sử — bản trước (hết hiệu lực)
 
 | Trường | Nội dung |
 |---|---|
 | Trang | Bi gầm VinFast VF5 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `4c208818a93510374d1d9975b2f8393f91651835e9d365ec1906aaf33dd15322` (cùng mã trong 02/04) |
+| SHA-256 index.html | `91cdbca1ae307b1086f90edf50c56a759d2858a042fce5fded0b5ab8aff4f233` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt 24/10/2026 |
 | Ngày chấm | 24/10/2026, chấm trên preview |
 
@@ -21,7 +32,7 @@
 | S3 | 10 | 9,6 | Canonical/og:url/@id auto365.vn; breadcrumb 4 cấp; link hub, PDP, 4 bài VF5, dòng xe VinFast khác (có Fadil). | Còn link/asset v2.auto365.vn trong khung chung. |
 | G1 | 10 | 9,5 | Câu đầu nêu nhu cầu + "lắp bi gầm VinFast VF5", giá từ 3,5 triệu, hãng; tổng quan nêu VF5 là SUV điện cỡ A, lắp được lens 2.0/3.0. | Không có ví dụ thực tế trên VF5 để trích dẫn. |
 | G2 | 10 | 9,5 | Mọi mẫu ghi "Kỹ thuật xác nhận" nhất quán; popup nêu lý do/đánh đổi theo thông số, không mượn case xe khác. | Chỉ một mức bằng chứng (xác nhận kỹ thuật), chưa có quan sát thực tế trên VF5. |
-| G3 | 5 | 3,8 | Reviewer có tên; ảnh thật VF5 tại Auto365 (đèn chính); case bi gầm của xe VinFast khác. | **Không có case/video bi gầm VF5** trên auto365.vn. |
+| G3 | 5 | 3,8 | Reviewer có tên; ảnh hiện là AI mô phỏng (có nhãn), chưa có ảnh thật; case bi gầm của xe VinFast khác. | **Không có case/video bi gầm VF5** trên auto365.vn. |
 | U1 | 5 | 4,9 | Desktop: 1 hàng cuộn ngang 17 card, lọc hãng đúng (AES 3), so sánh 2 mẫu lọc đúng 2 dòng. Mobile 375: scrollWidth 375, 4 popup nhu cầu mở đủ 3 gợi ý, lọc GTR 2, popup báo giá vừa 375. | — |
 | U2 | 5 | 4,8 | CTA, form báo giá theo mẫu, hotline 0365 365 911/Zalo. | Chưa test gửi lead trên trang VF5. |
 | U3 | 5 | 4,6 | Phiếu 02/03/04 cùng bản (SHA), khối kiểm nội bộ trỏ đúng phiếu. | Chưa nghiệm thu production L1–L8. |

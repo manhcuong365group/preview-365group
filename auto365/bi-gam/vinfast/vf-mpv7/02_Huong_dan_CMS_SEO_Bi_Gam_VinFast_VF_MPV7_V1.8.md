@@ -10,15 +10,15 @@
 | H1 | Bi gầm VinFast VF MPV 7: giá, cấu hình và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF MPV 7 |
-| Bản nguồn | `index.html` SHA-256 `1d14a6d5724109e96731d34fd8857805fa9c0dcd7f707f8fbfad78d1c09596a2` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `11a773237e1104e173ea441b1b6fd2060522cef5ae4e73835ef75f0c7883c147` (24/10/2026) |
 
 ## Khi đăng production
 
 1. Canonical, `og:url`, `@id`/`url` trong JSON-LD và breadcrumb đã là URL đích trên auto365.vn.
 2. `noindex` chỉ dùng trên preview; bản production phải `index, follow`.
 3. Xoá khối `#vf3lp-internal-check` (và CSS `.vf3lp-internal-check`).
-4. Upload ảnh hero `hinh/vinfast-vf-mpv7-anh-hang.webp` (ảnh hãng VinFast, 1200×750) và `hinh/vinfast-vf-mpv7-anh-hang-960.webp` lên CMS; đổi `og:image`, `twitter:image`, `Article.image` (hiện trỏ preview-365group.pages.dev) sang URL ảnh trên auto365.vn.
-5. Upload cùng trang các ảnh minh họa dùng chung trong `hinh/` (chi nhánh, bảng test Cos, căn chỉnh đèn, phiếu bàn giao, showroom).
+4. Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng VF MPV 7. **Phải thay bằng ảnh thật trước production** (ảnh xe VF MPV 7 thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng.
+5. Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng VF MPV 7. **Phải thay bằng ảnh thật trước production** (ảnh xe VF MPV 7 thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng.
 6. FAQPage: 6 câu schema = 6 câu hiển thị.
 7. CollectionPage/ItemList: 17 mục, đúng thứ tự 17 card. Titan 301, Fogway Gen 1, X-Light F10 New (2025) đứng đầu để popup "Ngân sách tiết kiệm" hiện theo thứ tự giá.
 8. Không có mục video, không gắn nhãn case cho VF MPV 7 (chưa có bài case/video trên auto365.vn). Khi có case thật thì bổ sung theo quy trình duyệt.

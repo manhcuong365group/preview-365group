@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast EC Van: giá, cấu hình và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › EC Van |
-| Bản nguồn | `index.html` SHA-256 `cdcdbb3d1d6cb4db92ee2536f74c4ebed6ccde6a8428718c8fb95c3df71d9fe0` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `bd3470202e2451ef58deae17df313507161d9f115c97b152785b79daef30c31c` (24/10/2026) |
 
 ## Khi đăng production
 
@@ -21,6 +21,6 @@
 5. FAQPage: 6 câu schema = 6 câu hiển thị (giữ nguyên văn).
 6. CollectionPage/ItemList: 17 mục, đúng thứ tự 17 card sản phẩm. Không có X-Light F10 Pro (bản không V2).
 7. Không có video, không có case EC Van: không thêm nhãn "Có case", không viết câu "đã lắp trên EC Van" cho đến khi có bài case/video thật.
-8. Upload cùng trang toàn bộ ảnh trong `hinh/`; thẻ "Chứng nhận đại lý X-Light" và "Dòng xe VinFast khác" dùng ảnh ở `../../vinfast-vf3/hinh/`.
+8. Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng EC Van. **Phải thay bằng ảnh thật trước production** (ảnh xe EC Van thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng.
 9. Nút "Xem tất cả 17 mẫu cho EC Van" phải mở đủ 17 mẫu tại chỗ; link hub ghi "Xem danh mục bi gầm".
 10. dateModified/"Cập nhật" = ngày đăng; lastReviewed giữ 24/10/2026.

@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `bbdea76434ca737af0e5f96f95caca4aa3b45947731a88410a5c4cd19d1acafa` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `e7700eb0136d28c77765ac83df091082d23c8d10ef6cb4bf9bf2b8932eda4003` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -22,7 +22,7 @@
 | Case / video bi gầm VF8 | **Không có** trên auto365.vn. Trang không ghi "đã lắp trên VF8", không mô tả thao tác lắp trên VF8, đã bỏ khối video | User xác nhận 24/10/2026 |
 | Mục case | "Xe VinFast đã lắp bi gầm tại Auto365" — case Fadil, VF7, VF3, Limo Green, VF6 (không gắn nhãn VF8) | Bài đã đăng trên auto365.vn |
 | Nâng cấp khác cho VF8 | VF8 2025 bi LED X-Light F+ Pro V2; VF8 2023 bi LED AES SV Turbo S 2026; VF 8 Eco 2022 bi LED AES SV Turbo S 2026; đèn gầm dạng rời Titan M30 Ultra V2 cho VF8 (ghi rõ không phải bi gầm); Độ đèn VinFast VF8 | Bài đã đăng trên auto365.vn |
-| Ảnh | Ảnh VF8 thật lấy từ các bài nâng cấp đèn chính (webp trong `hinh/`); alt ghi đèn chính, không ghi bi gầm | — |
+| Ảnh | Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng VF8. **Phải thay bằng ảnh thật trước production** (ảnh xe VF8 thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng. | — |
 | Popup nhu cầu | Bỏ mọi câu "Đã lắp thực tế trên ..."; tab Tiết kiệm xếp theo giá: Titan 301 (3,5tr), Fogway Gen 1 (4tr), X-Light F10 New (4,3tr) | — |
 | Hoàn nguyên | Chủ xe đến chi nhánh Auto365 để tháo; chi phí (nếu có) tư vấn theo tình trạng xe | Như trang Fadil |
 | Hotline đèn | 0365 365 911 | — |

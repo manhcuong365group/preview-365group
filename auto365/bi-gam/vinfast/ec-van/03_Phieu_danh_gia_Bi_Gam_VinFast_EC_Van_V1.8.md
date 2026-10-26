@@ -1,13 +1,24 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast EC Van V1.8
 
-## Bản hiện hành — 24/10/2026
+## Bản hiện hành — 26/10/2026 (dùng mục này; các mục khác là lịch sử)
+
+| Trường | Nội dung |
+|---|---|
+| SHA-256 index.html | `bd3470202e2451ef58deae17df313507161d9f115c97b152785b79daef30c31c` (cùng mã trong 02/04) |
+| Audit reviewer 26/10 | 94,4 (tự chấm team)/100 — chưa đạt |
+| Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast EC Van"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
+| Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm EC Van; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
+| Ghi chú | Không đặt case/video là điều kiện bắt buộc; không trừ C1 vì thông số công bố chưa đo; "chưa nghiệm thu production" không trừ U3 preview. Câu giới hạn dưới tiêu đề khối case không thêm (quyết định user) |
+| Tự chấm sau sửa | ~94,4/100 — **CHƯA ĐẠT** (G3/C2 còn thiếu bằng chứng EC Van thật). Reviewer kỹ thuật chưa kiểm bản sửa; lastReviewed giữ 24/10 |
+
+## Lịch sử — bản trước (hết hiệu lực)
 
 | Trường | Nội dung |
 |---|---|
 | Trang | Bi gầm VinFast EC Van — preview https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `cdcdbb3d1d6cb4db92ee2536f74c4ebed6ccde6a8428718c8fb95c3df71d9fe0` (cùng mã trong 02/04) |
+| SHA-256 index.html | `bd3470202e2451ef58deae17df313507161d9f115c97b152785b79daef30c31c` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 24/10/2026 |
 | Kiểm tra máy | JSON-LD parse OK; FAQPage 6 = 6 hiển thị (khớp nguyên văn); ItemList 17 = 17 card, đúng thứ tự; header shell giống hệt trang Fadil; "Fadil" chỉ còn trong thẻ case VinFast khác và "Dòng xe VinFast khác" |
 | Kiểm tra trình duyệt | Desktop 1366: lưới sản phẩm 1 hàng cuộn ngang, lọc hãng (AES → 3 mẫu), so sánh 2 mẫu lọc đúng 2 hàng bảng, FAQ mở 5 → 6. Mobile 375: scrollWidth 375, lưới 2 hàng cuộn ngang, popup 4 nhu cầu mở đúng (Tiết kiệm: Titan 301 → Fogway Gen 1 → F10 New), ảnh local tải đủ |
@@ -22,7 +33,7 @@
 | S3 | 10 | 9,4 | Canonical/og:url/@id thống nhất, breadcrumb 4 cấp. Trừ: og:image đang trỏ preview; còn link v2.auto365.vn (camera hành trình). |
 | G1 | 10 | 9,6 | Câu đầu nêu nhu cầu xe chạy dịch vụ + "lắp bi gầm VinFast EC Van", giá từ 3,5 triệu, hãng. |
 | G2 | 10 | 9,4 | Mọi mẫu ghi đúng mức "Kỹ thuật xác nhận"; popup nêu thông số/đánh đổi theo mã. Trừ: chỉ có một mức bằng chứng, chưa có kiểm chứng trên xe thật. |
-| G3 | 5 | 4,2 | Reviewer có tên, case VinFast khác có nguồn. Trừ: không có case/video/ảnh thực tế EC Van; hero là ảnh hãng. |
+| G3 | 5 | 4,2 | Reviewer có tên, case VinFast khác có nguồn. Trừ: không có case/video/ảnh thực tế EC Van; ảnh hiện là AI mô phỏng (có nhãn), chưa có ảnh thật;  |
 | U1 | 5 | 4,9 | Desktop + mobile 375 không tràn ngang; popup, lọc hãng, so sánh, FAQ hoạt động. |
 | U2 | 5 | 4,8 | CTA, form báo giá theo mẫu, hotline 0365 365 911/Zalo. Trừ: chưa test gửi lead trên trang này. |
 | U3 | 5 | 4,5 | Phiếu 02/03/04 cùng SHA, khối kiểm nội bộ trỏ đúng phiếu. Trừ: chưa nghiệm thu production L1–L8. |

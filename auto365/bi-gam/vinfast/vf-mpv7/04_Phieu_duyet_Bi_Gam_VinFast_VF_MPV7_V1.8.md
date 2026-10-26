@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `1d14a6d5724109e96731d34fd8857805fa9c0dcd7f707f8fbfad78d1c09596a2` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `11a773237e1104e173ea441b1b6fd2060522cef5ae4e73835ef75f0c7883c147` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -22,7 +22,7 @@
 | Case hiển thị | Mục "Xe VinFast đã lắp bi gầm tại Auto365" dùng case VinFast khác (Fadil, VF 7, VF3, Limo Green, VF 6), không gán nhãn VF MPV 7 | — |
 | Bảng so sánh | 8 mẫu: F10 New (2025), 301 V2, GTR G1 Turbo V2, F10 Turbo V2, AES SV 3.0 Pro, F10 Pro V2, AES SV 3.0 Max, F10 2.0 New — đều "Kỹ thuật xác nhận" | — |
 | Ngân sách tiết kiệm | Titan 301 (3,5tr) → Fogway Gen 1 (4tr) → X-Light F10 New (2025) (4,3tr), có ghi chú xếp theo giá | — |
-| Ảnh | Hero: ảnh hãng VinFast (shop.vinfastauto.com), trim, đặt trên nền sáng; ảnh lý do: ảnh minh họa xưởng/chi nhánh Auto365 dùng chung, không dùng ảnh xe khác gán là VF MPV 7 | — |
+| Ảnh | Ảnh trên preview là **ảnh AI mô phỏng** (`hinh/<slug>-minh-hoa-0N.webp`) để duyệt bố cục; alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)" và có caption hiển thị cạnh hero/ảnh khối. Không dùng làm bằng chứng hốc lắp, vị trí lắp hay vùng sáng VF MPV 7. **Phải thay bằng ảnh thật trước production** (ảnh xe VF MPV 7 thật/ảnh hãng chỉ nhận diện xe; ảnh kỹ thuật chỉ từ hồ sơ khảo sát/thi công thật). OG/Twitter/Article.image giữ ảnh riêng, đổi sang asset CMS khi đăng. | — |
 | Nâng cấp khác | Bi LED đèn chính (/nang-cap-anh-sang-bi-led), Phim cách nhiệt (/phim-cach-nhiet), Camera hành trình (/camera-hanh-trinh) — đều trả 200 ngày 24/10/2026 | curl |
 | Hotline đèn | 0365 365 911 | — |
 | Đại lý chính hãng | X-Light, GTR, AES | User xác nhận 12 + 14/10/2026 |
