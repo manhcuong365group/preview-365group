@@ -40,6 +40,25 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 **Tổng tự chấm: C 23,0 · S 21,7 · G 19,5 · U 13,2 → 77,4/100. CHƯA ĐẠT V1.8** — SEO 21,7 < 28,5; GEO 19,5 < 23,75.
 
+## Tự chấm lần 14 (bản 26/10/2026, sau vá R3 + tab dòng phim + popup form + mobile)
+
+| Mã | Tối đa | Lần 13 | Lần 14 | Căn cứ / phần thiếu |
+|---|---:|---:|---:|---|
+| C1 | 10 | 9,7 | 9,7 | Không đổi; "SUV" theo PDF. Còn: điều kiện giá (công/VAT/phát sinh) chờ Kinh doanh |
+| C2 | 10 | 9,4 | 9,5 | Tab 3M™ Crystalline / Ceramic IR / Ceramic NR Series có "Đặc điểm chính"; ghi chú cấu hình PRO. Còn: case Ceramic IR |
+| C3 | 10 | 9,2 | 9,2 | Không đổi |
+| S1 | 10 | 9,3 | 9,3 | Không đổi |
+| S2 | 10 | 9,4 | 9,4 | 1 H1, title 59 ký tự, meta 150, ảnh đủ alt |
+| S3 | 10 | 9,8 | 9,8 | Canonical URL đích; JSON-LD parse được (Organization, Brand, FAQPage, DefinedTermSet, WebSite, BreadcrumbList, WebPage, ItemList) |
+| G1 | 10 | 9,5 | 9,5 | Không đổi |
+| G2 | 10 | 9,5 | 9,6 | VLT kính lái trên 6 thẻ, tab có số liệu theo mã |
+| G3 | 5 | 4,7 | 4,7 | Không đổi. Còn: case Ceramic IR, hồ sơ anh Hoàng trên site 365Group |
+| U1 | 5 | 4,7 | 4,8 | Mobile: chữ thu gọn, 7 nhóm thẻ vuốt ngang (6 gói 3983 → 656px), ảnh tab 3:2, không tràn ngang |
+| U2 | 5 | 4,7 | 4,8 | Nút "Nhận báo giá gói này" mở popup form chọn sẵn gói; r.ok. Còn: IT nghiệm thu /api/leads |
+| U3 | 5 | 5,0 | 5,0 | 01–03 cùng SHA |
+
+**Tổng tự chấm lần 14: C 28,4 · S 28,5 · G 23,8 · U 14,6 → 95,3/100.** Chạm 3 ngưỡng (SEO 28,5; GEO ≥ 23,75; tổng ≥ 95) nhưng sát ngưỡng; reviewer R3 chấm 90 – không tự tuyên bố ĐẠT, chờ reviewer chấm lại đúng build.
+
 ## Xử lý phiếu tái kiểm R3 (reviewer 26/10/2026: 90/100 – SEO 27,5, GEO 22,5, ND 27,5, UX 12,5)
 
 | Mục R3 | Trạng thái | Việc đã làm / còn chờ |
