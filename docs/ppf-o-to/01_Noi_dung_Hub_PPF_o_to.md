@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `59bcb4c2329ca07a809eea730e4092434e3fcfe2ee0d26b3723b30c7cab8bb3b`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ad9f3a37650643bc3b1f62fa38bf922aa0916dc4ca0e3b596bb2d5eb31fb9dd1`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -124,6 +124,17 @@ Nhà phân phối 3M (gồm PPF) — 365 Group · đến 31/12/2026
 
 Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài liệu. Khi đặt lịch tại chi nhánh khác, Auto365 xác nhận điểm thi công và chính sách áp dụng.
 
+## Quy trình thi công PPF  `#quy-trinh`
+
+6 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công tại Auto365, bấm ảnh để xem bài.
+
+1. 1Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí
+2. 2Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn
+3. 3Đo đạc & chuẩn bị phimCắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp
+4. 4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
+5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
+6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
+
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
 Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh
@@ -162,17 +173,6 @@ Cấu tạo tham khảo theo Technical Data Sheet 3M PPF Series 150 Gloss (Revis
 ## Dán toàn xe hay từng phần?  `#kien-thuc`
 
 Tùy theo nhu cầu sử dụng và ngân sách, bạn có thể lựa chọn phạm vi thi công phù hợp.
-
-## Quy trình thi công PPF  `#quy-trinh`
-
-6 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công tại Auto365, bấm ảnh để xem bài.
-
-1. 1Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn gói PPF theo xe hoặc theo từng vị trí
-2. 2Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn
-3. 3Đo đạc & chuẩn bị phimCắt phim bằng máy theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp
-4. 4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
-5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
-6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
 
 ## Kiến thức cần nắm trước khi dán PPF  `#kien-thuc-ppf`
 
