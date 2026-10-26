@@ -518,6 +518,8 @@ section[id],.mkBox[id]{scroll-margin-top:72px}
 @media(max-width:900px){.cvTop{grid-template-columns:1fr}}
 .cvOther{display:flow-root;background:#f7f8fa!important;border:1px solid #eceef1;border-radius:14px;padding:14px 14px 16px}.cvOther>b{margin-bottom:12px}.cvOther .cvMs{margin:0}
 .mkPk ul{flex:1}.mkPk>b{margin-top:8px}
+.mkInc{display:grid!important;grid-template-columns:200px repeat(6,minmax(0,1fr));gap:12px!important;background:linear-gradient(135deg,#fff5f5,#fff)!important;border:1px solid #f6d2d5!important;border-left:4px solid var(--r)!important;padding:18px 20px!important}.mkInc b{font-size:17px!important;font-weight:700!important;color:#16181c;align-self:center}.mkInc span{flex-direction:column;align-items:flex-start!important;gap:8px!important;font-size:13px!important;font-weight:600;color:#16181c!important;line-height:1.35}.mkInc svg{width:38px;height:38px;padding:8px;border-radius:50%;background:#fde7e9;color:var(--r)!important}
+@media(max-width:1100px){.mkInc{grid-template-columns:repeat(3,minmax(0,1fr))}.mkInc b{grid-column:1/-1}}@media(max-width:560px){.mkInc{grid-template-columns:1fr 1fr}.mkInc span{flex-direction:row;align-items:center!important}}
 </style>
 </head>
 <body>
