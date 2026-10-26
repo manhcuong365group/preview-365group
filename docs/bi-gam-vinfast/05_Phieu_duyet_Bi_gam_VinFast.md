@@ -82,3 +82,7 @@ Hai thay đổi trên là sửa đích liên kết và mô tả cho máy đọc,
 | Sapo — câu thứ 3 (26/10, chủ quản đồng ý) | "Xe chưa có hồ sơ được kỹ thuật viên kiểm tra trước khi chốt cấu hình; chi phí gồm thiết bị, phụ kiện, công lắp và VAT theo báo giá." — cùng ý FAQ chi phí đã duyệt 23/10, không thêm claim kỹ thuật |
 | Sapo rút gọn (26/10, chủ quản yêu cầu) | "Bi gầm VinFast cần chọn theo hốc đèn và hệ thống điện của từng dòng xe. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR) trên từng phiên bản; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí." — giữ đủ 3 ý đã duyệt (chọn theo hốc đèn/điện từng xe; hồ sơ X-Light, GTR; xe chưa có hồ sơ kiểm tra trước khi báo giá), không thêm claim |
 | Thêm VF Wild (26/10, chủ quản yêu cầu) | Thẻ VF Wild nhóm Xe điện, trạng thái "Liên hệ tư vấn" (chưa có hồ sơ lắp); lưới 18 → 19 dòng, khớp danh sách VinFast ở trang theo-hang-xe. Không thêm claim kỹ thuật |
+
+## Duyệt 26/10/2026
+
+Chủ quản xác nhận 26/10/2026: anh Nguyễn Quang Đạo đã xác nhận các thay đổi ngày 26/10 — sapo 2 câu rút gọn, tab "Xe xăng" + VF e34 về nhóm Xe điện, thêm VF Wild, link Lux SA2.0 `/lux-sa2-0`, mô tả meta/OG/CollectionPage. `lastReviewed` = 2026-10-26. Không còn mục chờ duyệt.
