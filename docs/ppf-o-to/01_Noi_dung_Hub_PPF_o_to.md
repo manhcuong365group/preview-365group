@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `3dc2292cb4a55ac637d20de41810c4531c1990129b359c98013a11123665ad8b`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `818035f72893c2579b7e689eac88499595dc1e146e65067510ffddde0643cd1b`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -21,11 +21,7 @@ Sedan: Vios, City, Mazda 3, Camry… · SUV 5 chỗ: CX-5, CR-V, VF 6/7… · SU
 
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
 
-**Ước tính chi phí nhanh**
-
-Chọn dòng phim, loại xe và vị trí cần dán.
-
-**Bảng giá dán PPF theo vị trí**
+**Bảng giá theo vị trí & ước tính chi phí**
 
 Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem tổng chi phí tạm tính.
 
