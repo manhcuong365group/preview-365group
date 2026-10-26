@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4275ad1403cc3a5e03b23e3edd103502d2a8d275065260419d26849f983bacbe`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `6cca9703e85c04a5eb5982343f87e0e3343e3a154ee3c8c91108d4008d77ffb3`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -134,6 +134,15 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 4. 4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
 5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
 6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
+
+## Video thực tế  `#video`
+
+Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
+
+- Có nên dán PPF ô tô? Đánh giá PPF 3M 50 Gloss trên VinFast VF8 — https://www.youtube.com/watch?v=VhKw2KJCR8I
+- BMW 530i dán PPF 3M 200 Gloss bảo hành 10 năm — https://www.youtube.com/watch?v=-H8RM4u4qck
+- VinFast VF7 dán PPF AX Film K Series V2 — https://www.youtube.com/watch?v=8s6gI8x9urc
+- Giá trị thực sự của PPF: Ford Ranger Raptor 3.0 V6 2026 — https://www.youtube.com/watch?v=adTg0iqT3P0
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
@@ -333,15 +342,6 @@ Bảo hành theo từng dòng phim: thời hạn, phạm vi và điều kiện g
 Căn chỉnh PPF trên cửa và hông xe VinFast VF 8 trước khi hoàn thiện bề mặt.
 
 _[Form: Họ và tên * · Số điện thoại * · Hãng xe · Dòng xe / đời xe · Phạm vi quan tâm · Khu vực · Tôi đồng ý Auto365 dùng thông tin để xử lý yêu cầu theo Chính sách bảo mật.]_
-
-## Video thực tế  `#video`
-
-Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
-
-- Có nên dán PPF ô tô? Đánh giá PPF 3M 50 Gloss trên VinFast VF8 — https://www.youtube.com/watch?v=VhKw2KJCR8I
-- BMW 530i dán PPF 3M 200 Gloss bảo hành 10 năm — https://www.youtube.com/watch?v=-H8RM4u4qck
-- VinFast VF7 dán PPF AX Film K Series V2 — https://www.youtube.com/watch?v=8s6gI8x9urc
-- Giá trị thực sự của PPF: Ford Ranger Raptor 3.0 V6 2026 — https://www.youtube.com/watch?v=adTg0iqT3P0
 
 ## Cẩm nang PPF & Wrap  `#cam-nang`
 
