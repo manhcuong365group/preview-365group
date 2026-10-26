@@ -11,8 +11,8 @@
 | H1 | Bi gầm VinFast theo từng dòng xe |
 | dateModified | 2026-10-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `2ae67e8bf19939b7f8606cacdf7dfda1ed221b196ed871ebb87ce3c2f48bd828` |
-| SHA-256 content-src.html | `6b7cfc924c08ab55e6ca550577d4ce0214f4e3f7e8c354ce5f875269b4e91df2` |
+| SHA-256 index.html | `86414712a37fe03e5124264b082eef25d294cb534258d345b5d21ad2b02ac844` |
+| SHA-256 content-src.html | `829704b08eedb813e4d6852be2dd7aa6e868948ead68038e26bbbf28b6242df3` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -37,11 +37,11 @@ Bi gầm VinFast cần chọn theo hốc đèn và hệ thống điện của t�
 | VinFast Nerio Green | Green / dịch vụ | Liên hệ tư vấn | — |
 | VinFast Limo Green | Green / dịch vụ | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green |
 | VinFast EC Van | Green / dịch vụ | Liên hệ tư vấn | — |
-| VinFast VF e34 | Mẫu xe cũ | Liên hệ tư vấn | — |
-| VinFast Fadil | Mẫu xe cũ | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
-| VinFast Lux A2.0 | Mẫu xe cũ | Liên hệ tư vấn | — |
-| VinFast Lux SA2.0 | Mẫu xe cũ | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa2-0 |
-| VinFast President | Mẫu xe cũ | Liên hệ tư vấn | — |
+| VinFast VF e34 | Xe điện | Liên hệ tư vấn | — |
+| VinFast Fadil | Xe xăng | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/fadil |
+| VinFast Lux A2.0 | Xe xăng | Liên hệ tư vấn | — |
+| VinFast Lux SA2.0 | Xe xăng | Có hồ sơ | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-sa2-0 |
+| VinFast President | Xe xăng | Liên hệ tư vấn | — |
 
 ## Xe VinFast đã lắp bi gầm tại Auto365 (10 bài hồ sơ)
 
@@ -76,7 +76,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### Xe điện đi phố hằng ngày
 
-_Dòng xe:_ VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7
+_Dòng xe:_ VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7, VF e34
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.
@@ -98,9 +98,9 @@ _Dòng xe:_ Limo Green, Nerio Green, Herio Green, Minio Green, EC Van
 
 CTA: Xem mẫu lắp được cho Limo Green → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green
 
-#### Mẫu xe cũ, hay đi tỉnh
+#### Xe xăng, hay đi tỉnh
 
-_Dòng xe:_ Fadil, Lux A2.0, Lux SA2.0, President, VF e34
+_Dòng xe:_ Fadil, Lux A2.0, Lux SA2.0, President
 
 - Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.
 - Xe đã dùng vài năm: kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu.

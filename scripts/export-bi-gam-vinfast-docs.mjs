@@ -25,7 +25,7 @@ const toProd = (href) => new URL(href, canonical + '/').href
 
 const models = [...doc.querySelectorAll('#bgvf-grid a.bgvf-m')].map((a) => ({
   name: 'VinFast ' + txt(a.querySelector('b').firstChild),
-  group: { ev: 'Xe điện', green: 'Green / dịch vụ', old: 'Mẫu xe cũ' }[a.dataset.g],
+  group: { ev: 'Xe điện', green: 'Green / dịch vụ', old: 'Xe xăng' }[a.dataset.g],
   status: a.dataset.car ? 'Liên hệ tư vấn' : 'Có hồ sơ',
   url: a.dataset.car ? '' : toProd(a.getAttribute('href')),
   img: (a.querySelector('img') || {}).getAttribute?.('src') || '',
