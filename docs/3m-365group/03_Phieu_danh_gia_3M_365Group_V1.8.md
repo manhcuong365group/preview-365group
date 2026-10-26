@@ -44,7 +44,7 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 
 | Mã | Tối đa | Lần 13 | Lần 14 | Căn cứ / phần thiếu |
 |---|---:|---:|---:|---|
-| C1 | 10 | 9,7 | 9,7 | Không đổi; "SUV" theo PDF. Còn: điều kiện giá (công/VAT/phát sinh) chờ Kinh doanh |
+| C1 | 10 | 9,7 | 9,9 | Giá đã gồm công thi công và VAT, 224 đại lý (chủ trang chốt 26/10) – ghi trên thẻ, FAQ, Offer |
 | C2 | 10 | 9,4 | 9,5 | Tab 3M™ Crystalline / Ceramic IR / Ceramic NR Series có "Đặc điểm chính"; ghi chú cấu hình PRO. Còn: case Ceramic IR |
 | C3 | 10 | 9,2 | 9,2 | Không đổi |
 | S1 | 10 | 9,3 | 9,3 | Không đổi |
@@ -57,7 +57,7 @@ C 25,8 · S 21,9 · G 20,9 · U 13,2 → 81,8/100, CHƯA ĐẠT.
 | U2 | 5 | 4,7 | 4,8 | Nút "Nhận báo giá gói này" mở popup form chọn sẵn gói; r.ok. Còn: IT nghiệm thu /api/leads |
 | U3 | 5 | 5,0 | 5,0 | 01–03 cùng SHA |
 
-**Tổng tự chấm lần 14: C 28,4 · S 28,5 · G 23,8 · U 14,6 → 95,3/100.** Chạm 3 ngưỡng (SEO 28,5; GEO ≥ 23,75; tổng ≥ 95) nhưng sát ngưỡng; reviewer R3 chấm 90 – không tự tuyên bố ĐẠT, chờ reviewer chấm lại đúng build.
+**Tổng tự chấm lần 14: C 28,6 · S 28,5 · G 23,8 · U 14,6 → 95,5/100.** Chạm 3 ngưỡng (SEO 28,5; GEO ≥ 23,75; tổng ≥ 95) nhưng sát ngưỡng; reviewer R3 chấm 90 – không tự tuyên bố ĐẠT, chờ reviewer chấm lại đúng build.
 
 ## Xử lý phiếu tái kiểm R3 (reviewer 26/10/2026: 90/100 – SEO 27,5, GEO 22,5, ND 27,5, UX 12,5)
 
@@ -276,7 +276,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `f7edea8d451a7a348e675399f2c8bf85458404868be1ee20887ff231f9f5925a` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `3e33b75e4a4342fa38b848f28ea30c90c32acb1430b386aa171aed70bd230cb2` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

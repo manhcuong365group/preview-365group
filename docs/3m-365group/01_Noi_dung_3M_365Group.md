@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `f7edea8d451a7a348e675399f2c8bf85458404868be1ee20887ff231f9f5925a`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `3e33b75e4a4342fa38b848f28ea30c90c32acb1430b386aa171aed70bd230cb2`
 Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -69,8 +69,8 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 
 ### CR BLK PRO
 Về 2 cấu hình PRO: kính lái dùng CR BLK 40 (VLT 41%, TSER 58%, giảm lóa 44%) đậm hơn CR BLK 50/60 (VLT 48–57%). PRO là lựa chọn kính lái đậm hơn, không có nghĩa phù hợp hơn cho mọi người lái; nên xem mẫu thực tế tại đại lý trước khi chốt mã kính lái.
-TSER là tổng năng lượng mặt trời bị loại bỏ của mã phim kính lái, theo bảng thông số 3M AutoFilm của 365Group (áp dụng từ 06/2026, đo trên kính xanh 6 mm); kết quả thực tế phụ thuộc loại kính xe.
-Giá trọn xe theo bảng giá 3M AutoFilm của 365Group, áp dụng từ 06/2026. Giá Minicar áp dụng cho VinFast VF 3, Wuling Hongguang Mini EV, Bestune Xiaoma, VinFast Minio Green và các dòng xe cùng kích thước. Cửa sổ trời nhỏ tính bằng một ô kính sườn, panorama bằng một kính lái. Giá thi công cụ thể theo xe do đại lý báo.
+TSER là tổng năng lượng mặt trời bị loại bỏ của mã phim kính lái, theo bảng thông số 3M AutoFilm của 365Group (áp dụng từ 06/2026, đo trên kính xanh 6 mm); kết quả thực tế phụ thuộc loại kính xe. Hiểu nhanh: TSER càng cao, xe càng ít nóng; VLT càng cao, kính càng sáng.
+Giá trọn xe theo bảng giá 3M AutoFilm của 365Group, áp dụng từ 06/2026, đã gồm công thi công và VAT. Giá Minicar áp dụng cho VinFast VF 3, Wuling Hongguang Mini EV, Bestune Xiaoma, VinFast Minio Green và các dòng xe cùng kích thước. Cửa sổ trời nhỏ tính bằng một ô kính sườn, panorama bằng một kính lái. Giá thi công cụ thể theo xe do đại lý báo.
 
 ## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
 Để lại số điện thoại, 365Group chuyển yêu cầu tới đại lý 3M gần bạn để tư vấn mã phim theo từng vị trí kính và báo giá theo xe.
@@ -192,7 +192,7 @@ Bài viết sau sự kiện khai trương 3M Pro Shop & 3M Training Center tại
 365Group là nhà phân phối chính thức phim cách nhiệt ô tô 3M tại Việt Nam và cung cấp phim cho các đại lý trong hệ thống. Chủ xe mua và dán phim trực tiếp tại đại lý; có thể tìm đại lý theo khu vực ở mục Hệ thống đại lý hoặc để lại số điện thoại để được giới thiệu đại lý gần nhất.
 
 **Hỏi:** Phim cách nhiệt 3M giá bao nhiêu?
-Giá tham khảo dán trọn xe dao động khoảng 5,9–18,3 triệu đồng (đã gồm công thi công), tùy dòng phim (Ceramic NR, Ceramic IR, Crystalline) và nhóm xe (minicar, sedan, SUV). Giá cụ thể theo từng xe do đại lý thi công báo.
+Giá tham khảo dán trọn xe dao động khoảng 5,9–18,3 triệu đồng (đã gồm công thi công và VAT), tùy dòng phim (Ceramic NR, Ceramic IR, Crystalline) và nhóm xe (minicar, sedan, SUV). Giá cụ thể theo từng xe do đại lý thi công báo.
 
 **Hỏi:** Nên dán phim 3M ở đâu?
 Nên dán tại đại lý trong hệ thống phân phối của 365Group hoặc đại lý được 3M ủy quyền, để phim được thi công đúng quy trình và được kích hoạt bảo hành.
