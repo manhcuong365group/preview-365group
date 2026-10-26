@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `e7478255067251bb586b0123c696298dddd3015f0691e8fc30987bee36d17564`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `13338d794555b3433204e0a0548c99285c80fd7ab417e5ab98c95238405194a6`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -27,21 +27,21 @@ Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem t�
 
 **Xem bảng giá đầy đủ 13 vị trí**
 
-| Vị trí dán | 3M | AX Film | Khi nào nên dán? |
-| --- | --- | --- | --- |
-| Capo | 5.320.000đ | — | Dễ trầy do đá văng khi chạy sau xe khác |
-| Cản trước | 5.320.000đ | — | Vùng hứng đá dăm, va quẹt khi đỗ |
-| Cản sau | 5.320.000đ | — | Dễ trầy khi lùi, đỗ xe |
-| Cốp sau | 3.420.000đ | — | Trầy khi xếp đồ ra vào |
-| Nóc xe | 5.320.000đ | — | Hạn chế trầy, bạc màu do nắng |
-| Sườn xe | 7.220.000đ | — | Va quẹt khi đi đường hẹp |
-| Cửa trước (mỗi bên) | 3.040.000đ | — | Trầy do ra vào, va cửa xe bên |
-| Cửa sau (mỗi bên) | 2.660.000đ | — | Trầy khi ra vào, va quệt |
-| Má trước (mỗi bên) | 3.040.000đ | — | Đá văng từ bánh trước |
-| Đuôi cá | 1.520.000đ | — | Chi tiết dễ trầy, bạc màu |
-| Đèn trước (mỗi bên) | 760.000đ | — | Hạn chế trầy, ố mặt đèn |
-| Đèn sau (mỗi bên) | 760.000đ | — | Hạn chế trầy mặt đèn |
-| Ốp gương (mỗi bên) | 760.000đ | — | Dễ va quẹt khi đi đường hẹp |
+| Vị trí dán | 3M 50 Gloss | 3M 150 Gloss | 3M 200 Gloss | AX G Series | AX K Ver 2 | AX X Ver 2 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Capo | — | — | — | — | — | — |
+| Cản trước | — | — | — | — | — | — |
+| Cản sau | — | — | — | — | — | — |
+| Cốp sau | — | — | — | — | — | — |
+| Nóc xe | — | — | — | — | — | — |
+| Sườn xe | — | — | — | — | — | — |
+| Cửa trước (mỗi bên) | — | — | — | — | — | — |
+| Cửa sau (mỗi bên) | — | — | — | — | — | — |
+| Má trước (mỗi bên) | — | — | — | — | — | — |
+| Đuôi cá | — | — | — | — | — | — |
+| Đèn trước (mỗi bên) | — | — | — | — | — | — |
+| Đèn sau (mỗi bên) | — | — | — | — | — | — |
+| Ốp gương (mỗi bên) | — | — | — | — | — | — |
 
 Giá 3M theo bảng giá 3M Pro Shop (23/10/2026), VAT báo khi chốt giá. Giá AX Film đã gồm VAT. Sedan tương ứng xe hạng A–B, SUV tương ứng hạng C–D. 3M PPF 100 Gloss hiện chỉ báo giá trọn gói.
 
