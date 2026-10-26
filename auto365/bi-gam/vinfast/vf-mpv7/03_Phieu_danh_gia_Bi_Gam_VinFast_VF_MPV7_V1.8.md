@@ -4,12 +4,12 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `2f6ef86b8de99285b7c542bebf408070ef2940251bc4b5a3e19f7a754a558d79` (cùng mã trong 02/04) |
+| SHA-256 index.html | `2f8e7cb49ea0a58429be012dabacbf176b8df590e0d3d403622f42bceaee4a56` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,8 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF MPV 7"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF MPV 7; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
 | Ghi chú | Không đặt case/video là điều kiện bắt buộc; không trừ C1 vì thông số công bố chưa đo; "chưa nghiệm thu production" không trừ U3 preview. Câu giới hạn dưới tiêu đề khối case không thêm (quyết định user) |
-| Tự chấm sau sửa | 95,4/100 (C 28,6 · S 29,0 · G 23,3 · U 14,5), chấm lại 26/10 sau vá caption — **CHƯA ĐẠT** (G3/C2 còn thiếu bằng chứng VF MPV 7 thật). Reviewer kỹ thuật chưa kiểm bản sửa; lastReviewed giữ 24/10 |
+| Tự chấm sau sửa | 96,0/100 (C 28,8 · S 29,0 · G 23,7 · U 14,5), chấm lại 26/10 sau vá GEO (trả lời nhanh có điều kiện kiểm xe + chưa cần lắp; tổng quan thêm dữ kiện xe có nguồn VinFast; F10 New ghi rõ 12V/24V theo PDP) — **CHƯA ĐẠT** (G3/C2 còn thiếu bằng chứng VF MPV 7 thật). Reviewer kỹ thuật chưa kiểm bản sửa; lastReviewed giữ 24/10 |
 
 ## Lịch sử — bản trước (hết hiệu lực)
 
@@ -17,7 +17,7 @@
 |---|---|
 | Trang | Bi gầm VinFast VF MPV 7 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 (chưa đăng) |
-| SHA-256 index.html | `2f6ef86b8de99285b7c542bebf408070ef2940251bc4b5a3e19f7a754a558d79` (cùng mã trong 02/04) |
+| SHA-256 index.html | `2f8e7cb49ea0a58429be012dabacbf176b8df590e0d3d403622f42bceaee4a56` (cùng mã trong 02/04) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
 | Reviewer | Nguyễn Quang Đạo — duyệt 24/10/2026 (lastReviewed 2026-10-24) |
 | Test lead | Chưa test trên trang này (chưa đăng) |
