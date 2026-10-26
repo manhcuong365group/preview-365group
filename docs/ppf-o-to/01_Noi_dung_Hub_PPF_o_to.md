@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `6cca9703e85c04a5eb5982343f87e0e3343e3a154ee3c8c91108d4008d77ffb3`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ad93d89bf508c45e801578a833d1d4869c2c6cdfd04578eab42a745dc8aaf19c`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -138,11 +138,6 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 ## Video thực tế  `#video`
 
 Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
-
-- Có nên dán PPF ô tô? Đánh giá PPF 3M 50 Gloss trên VinFast VF8 — https://www.youtube.com/watch?v=VhKw2KJCR8I
-- BMW 530i dán PPF 3M 200 Gloss bảo hành 10 năm — https://www.youtube.com/watch?v=-H8RM4u4qck
-- VinFast VF7 dán PPF AX Film K Series V2 — https://www.youtube.com/watch?v=8s6gI8x9urc
-- Giá trị thực sự của PPF: Ford Ranger Raptor 3.0 V6 2026 — https://www.youtube.com/watch?v=adTg0iqT3P0
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
