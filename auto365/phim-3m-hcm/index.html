@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F1LBTQXVVB"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-F1LBTQXVVB');</script>
 <title>Dán phim cách nhiệt 3M tại 3M Pro Shop TP.HCM | Auto365 Trụ sở chính</title>
 <meta name="description" content="Dán phim cách nhiệt 3M chính hãng tại 3M Pro Shop – Auto365 Trụ sở chính (Hiệp Bình, TP.HCM). 6 cấu hình 3M, giá trọn xe từ 5,9 triệu, bảo hành điện tử 3M 10 năm.">
 <meta name="robots" content="noindex, follow">
@@ -623,7 +625,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function(k){d.set(k,q.get(k)||'')});
    var btn=f.querySelector('button[type=submit]');btn.disabled=true;
    fetch(f.action,{method:'POST',body:d}).then(function(r){return r.json()}).then(function(j){
-    if(j&&j.success===true){show('Đã nhận thông tin! Auto365 sẽ gọi lại cho bạn sớm.',true);f.reset();if(window.dataLayer)dataLayer.push({event:'generate_lead',form:'landing_3m_hcm_'+(f.dataset.lead||'main')})}
+    if(j&&j.success===true){show('Đã nhận thông tin! Auto365 sẽ gọi lại cho bạn sớm.',true);f.reset();if(window.gtag)gtag('event','generate_lead',{form_id:'landing_3m_hcm_'+(f.dataset.lead||'main'),package_name:f.package_name?f.package_name.value:''})}
     else throw 0;
    }).catch(function(){show('Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo.')}).then(function(){btn.disabled=false});
   });
@@ -639,11 +641,12 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   mpk.hidden=!pk;mpk.innerHTML=pk?'Gói đã chọn: <b>'+pk+'</b>'+(gr?' · '+gr:''):'';
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
   if(dlg.showModal)dlg.showModal();else location.hash='dang-ky';
-  if(window.dataLayer)dataLayer.push({event:'open_lead_popup',package:pk});
+  if(window.gtag)gtag('event','open_lead_popup',{package_name:pk});
   setTimeout(function(){mf.fullname.focus()},50);
  });
  dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.closest('[data-close]'))dlg.close()});
 })();
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"],a[href*="zalo.me"]');if(a&&window.gtag)gtag('event',a.href.indexOf('tel:')===0?'click_call':'click_zalo',{link_url:a.href})});
 </script>
 </body>
 </html>
