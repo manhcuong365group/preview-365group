@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `7610c59d1f6bbe43c21b47193708d706341e633d440d4c09ac6d1d38adb886f0`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `48b89c0a53ea35f13ae5032d58b9137faace68e1e794dfe73c6496ee7e34f53d`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -17,42 +17,7 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
 
-**Bảng giá dán PPF toàn xe**
-
-Chọn thương hiệu để xem giá theo dòng phim và kích thước xe.
-
-**Sedan / Xe nhỏ**
-
-Ví dụ: VF3, VF5, Vios, Accent, Mazda 3, Civic…
-
-| Dòng phim | Giá tham khảo |
-| --- | --- |
-| 3M PPF 50 Gloss | 38.000.000đ |
-| 3M PPF 100 Gloss | 69.000.000đ |
-| 3M PPF 150 Gloss | 85.000.000đ |
-| 3M PPF 200 Gloss | 102.000.000đ |
-
-**SUV / CUV 5 chỗ**
-
-Ví dụ: VF6, VF7, CX-5, CR-V, Tucson, Territory…
-
-| Dòng phim | Giá tham khảo |
-| --- | --- |
-| 3M PPF 50 Gloss | 44.000.000đ |
-| 3M PPF 100 Gloss | 76.000.000đ |
-| 3M PPF 150 Gloss | 92.000.000đ |
-| 3M PPF 200 Gloss | 110.000.000đ |
-
-**SUV 7 chỗ / MPV / Xe lớn**
-
-Ví dụ: VF8, Everest, Fortuner, Carnival, Santa Fe…
-
-| Dòng phim | Giá tham khảo |
-| --- | --- |
-| 3M PPF 50 Gloss | 51.000.000đ |
-| 3M PPF 100 Gloss | 86.000.000đ |
-| 3M PPF 150 Gloss | 102.000.000đ |
-| 3M PPF 200 Gloss | 122.000.000đ |
+Sedan: Vios, City, Mazda 3, Camry… · SUV 5 chỗ: CX-5, CR-V, VF 6/7… · SUV 7 chỗ / MPV: VF 8, Fortuner, Carnival, Innova… Loại xe xác nhận khi kiểm tra.
 
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
 

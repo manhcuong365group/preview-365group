@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `7610c59d1f6bbe43c21b47193708d706341e633d440d4c09ac6d1d38adb886f0` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `48b89c0a53ea35f13ae5032d58b9137faace68e1e794dfe73c6496ee7e34f53d` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
