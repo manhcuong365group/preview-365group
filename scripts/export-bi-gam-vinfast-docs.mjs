@@ -13,7 +13,7 @@ fs.mkdirSync(out, { recursive: true });
 
 const html = fs.readFileSync(path.join(page, 'index.html'), 'utf8');
 const src = fs.readFileSync(path.join(page, 'content-src.html'), 'utf8');
-const sha = (s) => crypto.createHash('sha256').update(s).digest('hex');
+const sha = (s) => crypto.createHash('sha256').update(String(s).replace(/\r\n/g, '\n')).digest('hex');
 const doc = new JSDOM(html).window.document;
 const txt = (el) => (el ? el.textContent.replace(/\s+/g, ' ').trim() : '');
 const ld = JSON.parse(doc.querySelector('script[type="application/ld+json"]').textContent);
