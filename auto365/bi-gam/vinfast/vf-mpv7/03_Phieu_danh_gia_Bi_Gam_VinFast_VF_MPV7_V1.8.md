@@ -4,7 +4,7 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `dd5b037aac13a055acd77bf4e148a0630af0369a45a2a04a6a6aa274f962af56` (cùng mã trong 02/04) |
+| SHA-256 index.html | `98cab48369ba2960382fd299808ba4b9495df8458b2d8b04685e9070727ecde1` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,8 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF MPV 7"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF MPV 7; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -17,7 +17,7 @@
 |---|---|
 | Trang | Bi gầm VinFast VF MPV 7 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 (chưa đăng) |
-| SHA-256 index.html | `dd5b037aac13a055acd77bf4e148a0630af0369a45a2a04a6a6aa274f962af56` (cùng mã trong 02/04) |
+| SHA-256 index.html | `98cab48369ba2960382fd299808ba4b9495df8458b2d8b04685e9070727ecde1` (cùng mã trong 02/04) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
 | Reviewer | Nguyễn Quang Đạo — duyệt 24/10/2026 (lastReviewed 2026-10-24) |
 | Test lead | Chưa test trên trang này (chưa đăng) |
@@ -40,3 +40,23 @@
 **C 28,3 · S 28,9/30 · G 23,5/25 · U 14,1 → 94,8/100 — CHƯA ĐẠT** (tổng < 95, GEO 23,5 < 23,75; SEO đạt).
 
 Thiếu chủ yếu do chưa có bằng chứng thực tế trên VF MPV 7 (G3, C2). Bổ sung 1 bài case hoặc video bi gầm VF MPV 7 thật (kèm ảnh thật) dự kiến đủ ngưỡng. Không thêm claim "đã lắp" khi chưa có bài.
+
+
+## Bản hiện hành V1.9 — 27/10/2026
+
+Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch sử); kết quả V1.9 chờ sếp tái chấm.
+
+| Mã | Trạng thái sau sửa |
+|---|---|
+| N1 Thực thể | Giữ Auto365.vn - Trụ Sở Chính, 365Group, hãng đèn, reviewer |
+| N2 Cơ sở | Thêm bộ tìm cơ sở kiểu auto365.vn/tin-tuc: Gần tôi, tìm kiếm, 3 miền → tỉnh → cơ sở; link tỉnh/cơ sở dạng a href có sẵn trong HTML (SSR); dữ liệu 88 cơ sở đang hoạt động / 33 tỉnh từ danh bạ he-thong |
+| N3 Dịch vụ | Xác nhận kỹ thuật 17 mẫu (anh Nguyễn Quang Đạo, 26/10/2026); pát/điện chốt theo từng xe |
+| N4 Bằng chứng | 7 nhãn AI hiển thị / 9 vị trí ảnh AI; case xe khác giữ đúng tên xe |
+| N5 Giá | Giá thiết bị/bộ, chưa VAT; pát/công báo riêng; bảo hành theo mã |
+| N6 Nguồn/ngày | lastReviewed 2026-10-26; dateModified 2026-10-27 |
+| N7 Truy cập | Link tỉnh/cơ sở đọc được trước tương tác; FAQPage 9 câu khớp DOM |
+| N8 Hồ sơ | Phiếu này; còn CX: production, CRM từ chính trang, CWV |
+
+Thêm 3 FAQ địa phương (tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi, bảo hành khác tỉnh). Popup đi tỉnh diễn đạt theo từng mã. Bỏ câu giá F10 New 12V/24V và câu xác nhận reviewer khỏi tổng quan (giá bản 12V vẫn ghi trên thẻ; xác nhận reviewer ở dòng Rà soát kỹ thuật).
+
+Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2), test form trên chính URL, xoá lead test.

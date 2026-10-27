@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `b7c562c3bbbd5fecbe42c1033a080b4fca4e1a2f3b10321404bddf0af4b88a6a` |
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `a7e596880e6d7cf2b585ea0eb2bc23ff2833d5870beff6c162703e9dccaf1bbe` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -65,3 +65,23 @@ Người xác nhận: anh Nguyễn Quang Đạo. Cấu hình cuối (pát, mặt
 Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast EC Van; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.
 
 - **Test lead API 26/10/2026:** POST https://auto365.vn/api/leads (gửi từ trang VF6 live vì trang EC Van chưa đăng), service "Bi gầm VinFast EC Van", nhu cầu "Đèn – Bi gầm" → 200 `{"success":true,"lead_id":"260","test":true}`. Cần xoá lead #260 khỏi CRM. Chưa test form trên trang EC Van thật (chờ IT đăng).
+
+
+## Bản hiện hành V1.9 — 27/10/2026
+
+Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch sử); kết quả V1.9 chờ sếp tái chấm.
+
+| Mã | Trạng thái sau sửa |
+|---|---|
+| N1 Thực thể | Giữ Auto365.vn - Trụ Sở Chính, 365Group, hãng đèn, reviewer |
+| N2 Cơ sở | Thêm bộ tìm cơ sở kiểu auto365.vn/tin-tuc: Gần tôi, tìm kiếm, 3 miền → tỉnh → cơ sở; link tỉnh/cơ sở dạng a href có sẵn trong HTML (SSR); dữ liệu 88 cơ sở đang hoạt động / 33 tỉnh từ danh bạ he-thong |
+| N3 Dịch vụ | Xác nhận kỹ thuật 17 mẫu (anh Nguyễn Quang Đạo, 26/10/2026); pát/điện chốt theo từng xe |
+| N4 Bằng chứng | 6 nhãn AI hiển thị / 8 vị trí ảnh AI; case xe khác giữ đúng tên xe |
+| N5 Giá | Giá thiết bị/bộ, chưa VAT; pát/công báo riêng; bảo hành theo mã |
+| N6 Nguồn/ngày | lastReviewed 2026-10-26; dateModified 2026-10-27 |
+| N7 Truy cập | Link tỉnh/cơ sở đọc được trước tương tác; FAQPage 9 câu khớp DOM |
+| N8 Hồ sơ | Phiếu này; còn CX: production, CRM từ chính trang, CWV |
+
+Thêm 3 FAQ địa phương (tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi, bảo hành khác tỉnh). Popup đi tỉnh diễn đạt theo từng mã. Bỏ câu giá F10 New 12V/24V và câu xác nhận reviewer khỏi tổng quan (giá bản 12V vẫn ghi trên thẻ; xác nhận reviewer ở dòng Rà soát kỹ thuật).
+
+Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2), test form trên chính URL, xoá lead test.

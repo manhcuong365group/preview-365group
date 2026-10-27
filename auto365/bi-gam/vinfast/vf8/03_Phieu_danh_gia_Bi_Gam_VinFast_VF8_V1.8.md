@@ -4,7 +4,7 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `67315bc3c129ba0de1ed0176ec7ed7dad96db719129cf1d5161fa69a5db8b71e` (cùng mã trong 02/04) |
+| SHA-256 index.html | `2c42da698e8a1a1fc1295296f81d0b0fc5a317b0d91d317a7ad311250074f2a5` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 92,6/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF8"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF8; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -18,7 +18,7 @@
 | Trang | Bi gầm VinFast VF8 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `67315bc3c129ba0de1ed0176ec7ed7dad96db719129cf1d5161fa69a5db8b71e` (cùng mã trong 02/04) |
+| SHA-256 index.html | `2c42da698e8a1a1fc1295296f81d0b0fc5a317b0d91d317a7ad311250074f2a5` (cùng mã trong 02/04) |
 | Ngày chấm | 24/10/2026, chấm trên preview |
 | Reviewer | Nguyễn Quang Đạo — duyệt kỹ thuật 24/10/2026 |
 
@@ -40,3 +40,23 @@
 **C 28,3 · SEO 28,9/30 · GEO 23,5/25 · U 14,3 → 95,0/100 — CHƯA ĐẠT** (tổng 95,0 và SEO 28,9 đạt; GEO 23,5 < 23,75).
 
 Thiếu do chưa có case/video bi gầm trên VF8 (C2, G2, G3). Đây là giới hạn dữ kiện, không bù được bằng nội dung vì trang không được ghi "đã lắp trên VF8". Khi có bài case hoặc video bi gầm VF8 trên auto365.vn, bổ sung vào trang và chấm lại.
+
+
+## Bản hiện hành V1.9 — 27/10/2026
+
+Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch sử); kết quả V1.9 chờ sếp tái chấm.
+
+| Mã | Trạng thái sau sửa |
+|---|---|
+| N1 Thực thể | Giữ Auto365.vn - Trụ Sở Chính, 365Group, hãng đèn, reviewer |
+| N2 Cơ sở | Thêm bộ tìm cơ sở kiểu auto365.vn/tin-tuc: Gần tôi, tìm kiếm, 3 miền → tỉnh → cơ sở; link tỉnh/cơ sở dạng a href có sẵn trong HTML (SSR); dữ liệu 88 cơ sở đang hoạt động / 33 tỉnh từ danh bạ he-thong |
+| N3 Dịch vụ | Xác nhận kỹ thuật 17 mẫu (anh Nguyễn Quang Đạo, 26/10/2026); pát/điện chốt theo từng xe |
+| N4 Bằng chứng | 6 nhãn AI hiển thị / 8 vị trí ảnh AI; case xe khác giữ đúng tên xe |
+| N5 Giá | Giá thiết bị/bộ, chưa VAT; pát/công báo riêng; bảo hành theo mã |
+| N6 Nguồn/ngày | lastReviewed 2026-10-26; dateModified 2026-10-27 |
+| N7 Truy cập | Link tỉnh/cơ sở đọc được trước tương tác; FAQPage 9 câu khớp DOM |
+| N8 Hồ sơ | Phiếu này; còn CX: production, CRM từ chính trang, CWV |
+
+Thêm 3 FAQ địa phương (tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi, bảo hành khác tỉnh). Popup đi tỉnh diễn đạt theo từng mã. Bỏ câu giá F10 New 12V/24V và câu xác nhận reviewer khỏi tổng quan (giá bản 12V vẫn ghi trên thẻ; xác nhận reviewer ở dòng Rà soát kỹ thuật).
+
+Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2), test form trên chính URL, xoá lead test.

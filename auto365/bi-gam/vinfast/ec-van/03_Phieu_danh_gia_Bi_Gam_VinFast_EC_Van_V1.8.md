@@ -4,7 +4,7 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `b7c562c3bbbd5fecbe42c1033a080b4fca4e1a2f3b10321404bddf0af4b88a6a` (cùng mã trong 02/04) |
+| SHA-256 index.html | `a7e596880e6d7cf2b585ea0eb2bc23ff2833d5870beff6c162703e9dccaf1bbe` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,4 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast EC Van"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; thêm khối "EC Van chạy dịch vụ: chọn theo hoàn cảnh sử dụng" (5 tình huống, audit 26/10 EC-04); ghi chú nội bộ hero sửa thành ảnh AI; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm EC Van; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -18,7 +18,7 @@
 | Trang | Bi gầm VinFast EC Van — preview https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `b7c562c3bbbd5fecbe42c1033a080b4fca4e1a2f3b10321404bddf0af4b88a6a` (cùng mã trong 02/04) |
+| SHA-256 index.html | `a7e596880e6d7cf2b585ea0eb2bc23ff2833d5870beff6c162703e9dccaf1bbe` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 24/10/2026 |
 | Kiểm tra máy | JSON-LD parse OK; FAQPage 6 = 6 hiển thị (khớp nguyên văn); ItemList 17 = 17 card, đúng thứ tự; header shell giống hệt trang Fadil; "Fadil" chỉ còn trong thẻ case VinFast khác và "Dòng xe VinFast khác" |
 | Kiểm tra trình duyệt | Desktop 1366: lưới sản phẩm 1 hàng cuộn ngang, lọc hãng (AES → 3 mẫu), so sánh 2 mẫu lọc đúng 2 hàng bảng, FAQ mở 5 → 6. Mobile 375: scrollWidth 375, lưới 2 hàng cuộn ngang, popup 4 nhu cầu mở đúng (Tiết kiệm: Titan 301 → Fogway Gen 1 → F10 New), ảnh local tải đủ |
@@ -41,3 +41,23 @@
 **C 28,3 · SEO 28,7/30 · GEO 23,2/25 · U 14,2 → 94,4/100 — CHƯA ĐẠT** (tổng < 95; GEO 23,2 < 23,75; SEO đạt).
 
 Lý do chính: trang không có bằng chứng thực tế trên EC Van (case, video, ảnh xe đã lắp). Đây là giới hạn dữ liệu, không phải lỗi dựng trang; không được bù bằng cách ghi "đã lắp trên EC Van". Khi có 1 bài case hoặc video bi gầm EC Van trên auto365.vn, bổ sung mục case/video và đổi nhãn mẫu tương ứng thì C2, G2, G3 đủ để vượt ngưỡng.
+
+
+## Bản hiện hành V1.9 — 27/10/2026
+
+Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch sử); kết quả V1.9 chờ sếp tái chấm.
+
+| Mã | Trạng thái sau sửa |
+|---|---|
+| N1 Thực thể | Giữ Auto365.vn - Trụ Sở Chính, 365Group, hãng đèn, reviewer |
+| N2 Cơ sở | Thêm bộ tìm cơ sở kiểu auto365.vn/tin-tuc: Gần tôi, tìm kiếm, 3 miền → tỉnh → cơ sở; link tỉnh/cơ sở dạng a href có sẵn trong HTML (SSR); dữ liệu 88 cơ sở đang hoạt động / 33 tỉnh từ danh bạ he-thong |
+| N3 Dịch vụ | Xác nhận kỹ thuật 17 mẫu (anh Nguyễn Quang Đạo, 26/10/2026); pát/điện chốt theo từng xe |
+| N4 Bằng chứng | 6 nhãn AI hiển thị / 8 vị trí ảnh AI; case xe khác giữ đúng tên xe |
+| N5 Giá | Giá thiết bị/bộ, chưa VAT; pát/công báo riêng; bảo hành theo mã |
+| N6 Nguồn/ngày | lastReviewed 2026-10-26; dateModified 2026-10-27 |
+| N7 Truy cập | Link tỉnh/cơ sở đọc được trước tương tác; FAQPage 9 câu khớp DOM |
+| N8 Hồ sơ | Phiếu này; còn CX: production, CRM từ chính trang, CWV |
+
+Thêm 3 FAQ địa phương (tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi, bảo hành khác tỉnh). Popup đi tỉnh diễn đạt theo từng mã. Bỏ câu giá F10 New 12V/24V và câu xác nhận reviewer khỏi tổng quan (giá bản 12V vẫn ghi trên thẻ; xác nhận reviewer ở dòng Rà soát kỹ thuật).
+
+Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2), test form trên chính URL, xoá lead test.
