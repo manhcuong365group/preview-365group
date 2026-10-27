@@ -5,6 +5,38 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { JSDOM } from 'jsdom';
 
+// ---- Bộ tìm chi nhánh trên preview ----
+// Script newsroom-branch-finder của website gọi /chi-nhanh?json=1 và dựng link /chi-nhanh… tương đối:
+// chạy đúng trên auto365.vn, nhưng trên preview (pages.dev) bị trỏ về origin preview và auto365.vn không mở CORS.
+// Lúc build: lấy danh sách chi nhánh thật, nhúng vào trang; script nhỏ dưới đây CHỈ chạy khi không ở auto365.vn.
+const BRANCH_API = 'https://auto365.vn/chi-nhanh?json=1';
+let branchData = null;
+try {
+  const res = await fetch(BRANCH_API, { headers: { 'User-Agent': 'Mozilla/5.0 (preview build)' } });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  branchData = (await res.json()).map((b) => ({ ...b, url: b.url && b.url.startsWith('/') ? 'https://auto365.vn' + b.url : b.url }));
+  if (!Array.isArray(branchData) || branchData.length < 50) throw new Error('branch list too short: ' + (branchData && branchData.length));
+} catch (e) {
+  console.warn('branch data not embedded:', e.message);
+  branchData = null;
+}
+const branchPatch = `<script id="bgvf-branch-preview">(function(){if(/(^|\\.)auto365\\.vn$/.test(location.hostname))return;var P="https://auto365.vn";var D=${branchData ? JSON.stringify(branchData).replace(/</g, '\\u003c') : 'null'};var f=window.fetch;window.fetch=function(u,o){var s=typeof u==="string"?u:(u&&u.url)||"";if(/^\\/chi-nhanh\\?json=1/.test(s)){if(D)return Promise.resolve(new Response(JSON.stringify(D),{status:200,headers:{"Content-Type":"application/json"}}));return f.call(this,P+s,o)}return f.apply(this,arguments)};var fix=function(a){var h=a.getAttribute("href");if(h&&/^\\/chi-nhanh/.test(h))a.setAttribute("href",P+h)};document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href^='/chi-nhanh']");if(a)fix(a)},true);new MutationObserver(function(m){m.forEach(function(r){r.addedNodes.forEach(function(n){if(n.nodeType!==1)return;if(n.matches&&n.matches("a[href^='/chi-nhanh']"))fix(n);n.querySelectorAll&&n.querySelectorAll("a[href^='/chi-nhanh']").forEach(fix)})})}).observe(document.documentElement,{childList:true,subtree:true})})();</script>`;
+// ---- Danh sách tỉnh có điểm Auto365: link thật, có sẵn trong HTML (không cần thao tác tìm) ----
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+let provinceBlock = '';
+if (branchData) {
+  const by = {};
+  for (const b of branchData) { const r = b.region || 'Khác'; (by[r] = by[r] || {}); by[r][b.province] = (by[r][b.province] || 0) + 1; }
+  const order = ['Miền Bắc', 'Miền Trung & Tây Nguyên', 'Miền Nam'];
+  const nProv = Object.values(by).reduce((n, o) => n + Object.keys(o).length, 0);
+  const href = (p) => 'https://auto365.vn/chi-nhanh?q=' + encodeURIComponent(p) + '#workspace';
+  provinceBlock = `<div class="bgvf-prov"><a class="bgvf-prov-all" href="https://auto365.vn/chi-nhanh">Xem toàn bộ ${branchData.length} điểm tiếp nhận Auto365 →</a>
+<details class="bgvf-prov-d"><summary>Danh sách ${nProv} tỉnh/thành có điểm Auto365</summary>
+${order.filter((r) => by[r]).map((r) => `<div class="bgvf-prov-g"><b>${esc(r)}</b><ul>${Object.entries(by[r]).sort((a, b) => a[0].localeCompare(b[0], 'vi')).map(([p, n]) => `<li><a href="${href(p)}">${esc(p)}</a> <span>(${n})</span></li>`).join('')}</ul></div>`).join('\n')}
+<p class="bgvf-prov-note">Số điểm theo danh bạ auto365.vn/chi-nhanh tại thời điểm cập nhật trang; nên gọi trước để xác nhận lịch tiếp nhận.</p></details></div>
+<style>.bgvf-prov{margin-top:16px}.bgvf-prov-all{display:inline-block;padding:6px 0;color:var(--r)!important;font-weight:600}.bgvf-prov-d{margin-top:8px;border:1px solid var(--ln);border-radius:10px;padding:10px 16px;background:#fff}.bgvf-prov-d summary{cursor:pointer;font-weight:600;padding:4px 0}.bgvf-prov-g{margin-top:10px}.bgvf-prov-g b{font-size:14px}.bgvf-prov-g ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.bgvf-prov-g li{font-size:14px}.bgvf-prov-g a{color:var(--ink)!important;text-decoration:underline;display:inline-block;padding:3px 0}.bgvf-prov-g span{color:var(--mu);font-size:12.5px}.bgvf-prov-note{font-size:12.5px;color:var(--mu);margin:10px 0 2px}</style>`;
+}
+
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/(\w:)/, '$1')), '..');
 const dir = path.join(root, 'auto365/bi-gam/vinfast');
 const shell = fs.readFileSync(path.join(dir, 'vf6/index.html'), 'utf8');
@@ -51,7 +83,7 @@ const whyRules =bght.match(/\.bw-(grid|card|photo)( img| h3| p| a)?\{[^}]*\}/g) 
 const whyCss = '<style>' + whyRules.slice(0, 7).join('\n')
   + '\n' + (bght.match(/\.bght-lbrands\{[^\n]*/) || [''])[0]
   + '\n@media (max-width:767px){.bw-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bw-card{scroll-snap-align:start}}</style>\n';
-content = content.replace('<!-- @branch -->', () => branch).replace('<!-- @lead -->', () => lead).replace('<!-- @why -->', () => whyCss + why);
+content = content.replace('<!-- @branch -->', () => branch.replace(/\n<\/div><\/section>$/, () => '\n' + provinceBlock + '\n</div></section>')).replace('<!-- @lead -->', () => lead).replace('<!-- @why -->', () => whyCss + why);
 
 // ---- render sẵn phần JS (tab, thẻ dòng xe, case) vào HTML tĩnh cho bot SEO/AI ----
 const dom = new JSDOM(content, { runScripts: 'dangerously', pretendToBeVisual: true });
@@ -127,6 +159,7 @@ const out = `<!DOCTYPE html>
 ${links.join('\n')}
 ${styles.join('\n')}
 <script type="application/ld+json">${JSON.stringify(schema)}</script>
+${branchPatch}
 </head>
 ${shell.slice(bodyStart, mainOpen)}
 ${html}

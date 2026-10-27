@@ -86,3 +86,13 @@ Hai thay đổi trên là sửa đích liên kết và mô tả cho máy đọc,
 ## Duyệt 26/10/2026
 
 Chủ quản xác nhận 26/10/2026: anh Nguyễn Quang Đạo đã xác nhận các thay đổi ngày 26/10 — sapo 2 câu rút gọn, tab "Xe xăng" + VF e34 về nhóm Xe điện, thêm VF Wild, link Lux SA2.0 `/lux-sa2-0`, mô tả meta/OG/CollectionPage. `lastReviewed` = 2026-10-26. Không còn mục chờ duyệt.
+
+## Bản vá R4 27/10/2026 (V1.9) — chờ duyệt
+
+| Mục | Nội dung |
+|---|---|
+| FAQ mới — nơi làm | "Ở tỉnh khác thì lắp bi gầm VinFast tại đâu?" — tìm điểm theo tỉnh trong danh bạ, liên hệ trước xác nhận lịch; cấu hình, phụ kiện, chi phí xác nhận sau kiểm tra xe tại điểm phù hợp (câu mẫu reviewer R4) |
+| FAQ mới — thông tin cần chuẩn bị | "Xe chưa có hồ sơ lắp thì cần chuẩn bị thông tin gì?" — dòng xe, đời/phiên bản, nhu cầu, ảnh hốc đèn gầm nếu có; cấu hình và chi phí chốt sau kiểm tra xe |
+| Danh sách tỉnh | 33 tỉnh/thành, 91 điểm, sinh từ danh bạ auto365.vn/chi-nhanh lúc build; mỗi tỉnh link tới danh bạ lọc theo tỉnh |
+
+`lastReviewed` giữ 2026-10-26 tới khi anh Đạo duyệt 2 FAQ mới.

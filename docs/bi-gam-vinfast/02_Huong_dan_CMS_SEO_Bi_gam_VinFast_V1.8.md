@@ -103,3 +103,15 @@ Trên preview, bấm 3 thẻ này sẽ ra trang 404 của production — đúng 
 3. Đổi meta robots + kiểm header `X-Robots-Tag`, OG image; xoá khối "Kiểm tra nội bộ" (`#bgvf-internal-check` + script đi kèm).
 4. Gửi 1 lead test qua form trên production; kiểm `source_page`, `service`, `car_model`, URL nguồn và CRM nhận đúng.
 5. Kiểm schema theo mục 4; kiểm responsive desktop/tablet/mobile.
+
+## 8. Bộ tìm chi nhánh và khối tỉnh (R4, 27/10/2026 — V1.9)
+
+| Phần | Preview | Production |
+|---|---|---|
+| Bộ tìm chi nhánh | Script website `newsroom-branch-finder.min.js` gọi `/chi-nhanh?json=1` (tương đối). Build lấy danh bạ thật từ `https://auto365.vn/chi-nhanh?json=1` (91 điểm) và nhúng vào trang; script `#bgvf-branch-preview` trả dữ liệu nhúng và đổi link `/chi-nhanh…` sang `https://auto365.vn/chi-nhanh…` | Script `#bgvf-branch-preview` tự tắt khi hostname là auto365.vn — bộ tìm dùng API gốc. Có thể xoá script này khi tích hợp; kiểm lại tìm "Quảng Ninh", một tỉnh khác và trạng thái không có kết quả |
+| Khối tỉnh | "Xem toàn bộ 91 điểm tiếp nhận" + 33 tỉnh/thành theo miền, mỗi tỉnh → `https://auto365.vn/chi-nhanh?q=<tỉnh>#workspace`; số điểm sinh lúc build | Nếu SEO chốt URL trang tỉnh riêng, đổi `href` trong build (hàm `href` ở `scripts/build-bi-gam-vinfast.mjs`) |
+| Build | Cần mạng để lấy danh bạ; nếu lỗi, build vẫn chạy nhưng không nhúng dữ liệu và không có khối tỉnh (log cảnh báo) | — |
+
+Shell header (lấy từ trang VF6): preview thêm `padding:12px` cho `.custom-header-pc .header-stg>.container` để `.row` không tràn ngang. Khi dùng header production thì bỏ dòng CSS này nếu header production đã đúng.
+
+Lỗi console `jquery.toc.min.js` / `content.js` (`$ is not defined`) là script của shell website, không thuộc trang này — IT kiểm thứ tự nạp jQuery trên template.

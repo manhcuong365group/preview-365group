@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365 |
 | Meta description (146 ký tự) | Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm VinFast theo từng dòng xe |
-| dateModified | 2026-10-26 |
+| dateModified | 2026-10-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `baf28e534957da5608850acb6d52cb824ca9039d6af36ebdfef1ff2b1151c08c` |
-| SHA-256 content-src.html | `0f043dbfd4c5e19ecfbdc0920ddec950ecfca824a1fd81307fbf1b4b6d91790f` |
+| SHA-256 index.html | `98ed81f910034687b6a17030a6487813cbba9d21d6e68a7e06cb00169e7210cd` |
+| SHA-256 content-src.html | `6f855a6e7b7168f18101606fdab8748ff09c406fc2f1ec10a5d62219cc8632af` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -142,7 +142,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Ảnh là ảnh
 | [Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?](https://auto365.vn/hoc-den-gam-nho-nen-chon-bi-gam-nao) | Hốc đèn | 2026-08-14 |
 | [Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra](https://auto365.vn/den-gam-o-to-sang-yeu) | Kiểm tra | 2026-08-22 |
 
-## FAQ (6)
+## FAQ (8)
 
 **Xe điện VinFast lắp bi gầm có ảnh hưởng hệ thống điện không?**
 
@@ -151,6 +151,14 @@ Kỹ thuật viên cần kiểm tra điểm cấp nguồn, tải bổ sung, dây
 **Dòng VinFast nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
 Các dòng đã có hồ sơ gồm VF 3, VF 6, VF 7, Limo Green, Fadil và Lux SA2.0. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi khách mang xe đến chi nhánh.
+
+**Ở tỉnh khác thì lắp bi gầm VinFast tại đâu?**
+
+Chủ xe có thể tìm điểm Auto365 theo tỉnh/thành trong danh bạ hệ thống và liên hệ trước để xác nhận lịch tiếp nhận. Khi tư vấn, cần cung cấp dòng xe, đời/phiên bản và nhu cầu sử dụng. Cấu hình đèn, phụ kiện và tổng chi phí được xác nhận sau bước kiểm tra xe tại điểm phù hợp.
+
+**Xe chưa có hồ sơ lắp thì cần chuẩn bị thông tin gì?**
+
+Chủ xe chuẩn bị dòng xe, đời và phiên bản, nhu cầu sử dụng (đi phố, chạy dịch vụ hay đi tỉnh) và ảnh hốc đèn gầm nếu có. Kỹ thuật viên dựa vào các thông tin này để tư vấn sơ bộ; cấu hình và chi phí chỉ chốt sau khi kiểm tra xe.
 
 **Lắp bi gầm cho xe VinFast mất bao lâu?**
 
