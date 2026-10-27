@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `01a8b256ea065aa7039fc334f412c12f0b8627711aaf682dfe8855bb4a269ea1` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `c8ff1cb2d06ba4821f66ced4947efdf1f0d09423bfc3a1a38cc5e16e2e5a9b9c` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -67,3 +67,5 @@ Người xác nhận: anh Nguyễn Quang Đạo. Mức bằng chứng: kỹ thu�
 Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (lens 3.0 và 2.0 inch) lắp được trên VinFast VF5; pát/mặt dưỡng và đấu điện chốt theo từng xe khi kiểm tra. lastReviewed = 2026-10-26. Ảnh AI vẫn phải thay bằng ảnh thật trước production.
 
 - **Test lead API 26/10/2026:** POST https://auto365.vn/api/leads (gửi từ trang VF6 live vì trang VF5 chưa đăng), service "Bi gầm VinFast VF5", nhu cầu "Đèn – Bi gầm" → 200 `{"success":true,"lead_id":"257","test":true}`. Cần xoá lead #257 khỏi CRM. Chưa test form trên trang VF5 thật (chờ IT đăng).
+
+- 27/10/2026: user bỏ khỏi phần tổng quan 2 câu (giá F10 New 12V/24V; câu xác nhận anh Đạo 26/10). Xác nhận kỹ thuật 26/10 vẫn lưu ở phiếu 04 và dòng nguồn cuối trang.

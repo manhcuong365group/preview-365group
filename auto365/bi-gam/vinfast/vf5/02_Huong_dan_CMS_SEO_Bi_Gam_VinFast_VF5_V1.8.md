@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast VF5: phương án lắp, giá và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF5 |
-| Bản nguồn | `index.html` SHA-256 `01a8b256ea065aa7039fc334f412c12f0b8627711aaf682dfe8855bb4a269ea1` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `c8ff1cb2d06ba4821f66ced4947efdf1f0d09423bfc3a1a38cc5e16e2e5a9b9c` (24/10/2026) |
 
 ## Khi đăng production
 
