@@ -252,13 +252,13 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-gr--dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#fff}.h3m-gr--dark span:last-child{color:#d5d8de}
 .h3m-gr--hq{margin:0 0 14px}.h3m-perks>b{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.h3m-gr--perks{margin:0;font-size:13px;padding:4px 10px}
 .h3m-hero__gift{display:inline-block;margin:-8px 0 22px;padding:8px 14px;border-radius:8px;background:rgba(225,29,39,.18);border:1px solid rgba(225,29,39,.45);font-size:14px;color:#fff}
-.h3m-pick{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 18px}.h3m-pick>span{font-size:14px;color:var(--m);margin-right:4px}
-.h3m-pick button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:9px 16px;border:1px solid #d2d9e3;border-radius:10px;background:#fff;cursor:pointer;font:inherit;text-align:left}
-.h3m-pick button b{font-size:14px;font-weight:600}.h3m-pick button small{font-size:12px;color:var(--m)}
-.h3m-pick button:hover,.h3m-pick button.is-on{border-color:var(--r)}.h3m-pick button.is-on{background:#fff5f5}
-.h3m-card.is-pick{border-color:var(--r);box-shadow:0 0 0 3px rgba(225,29,39,.15)}.h3m-card.is-dim{opacity:.55}
+
+
+
+
+
 .h3m-modal__sla{margin:-4px 0 2px;text-align:center;font-size:13px;color:var(--m)}
-@media (max-width:640px){.h3m-gal{display:none}.h3m-hero__gift{font-size:13px}.h3m-pick{display:grid;grid-template-columns:repeat(3,1fr)}.h3m-pick>span{grid-column:1/-1}.h3m-pick button{padding:8px 10px}.h3m-pick button small{font-size:11px}}
+@media (max-width:640px){.h3m-gal{display:none}.h3m-hero__gift{font-size:13px}}
 .h3m-perks>.h3m-gr--perks{grid-column:1/-1;justify-self:start;margin-top:-4px}
 .h3m-perks{background:#f6f7f9;border:1px solid #e6e9ed}
 .h3m-perks ul{gap:12px 24px}.h3m-perks li{position:relative;padding-left:28px;line-height:1.45}
@@ -335,11 +335,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <div class="h3m-wrap">
   <h2 class="h3m-h2">6 cấu hình phim <em>3M</em> tại Auto365</h2>
   <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV.</p>
-  <div class="h3m-pick" role="group" aria-label="Gợi ý chọn gói theo nhu cầu"><span>Chưa biết chọn gói nào?</span>
-   <button type="button" data-pick="ceramic-hybrid"><b>Tiết kiệm</b><small>Ceramic Hybrid · từ 5,9tr</small></button>
-   <button type="button" data-pick="crystalline-hybrid"><b>Cân bằng</b><small>Crystalline Hybrid · từ 9,0tr</small></button>
-   <button type="button" data-pick="cr-blk-pro"><b>Cao cấp</b><small>CR BLK PRO · từ 12,9tr</small></button>
-  </div>
   <div class="h3m-pk" id="h3m-pk"></div>
   <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+-+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M lên đến 10 năm theo dòng phim</li><li>Có thể chọn điểm 3M Pro Shop theo hồ sơ chứng nhận tại từng cơ sở</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
   <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
@@ -635,11 +630,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function applyCases(){var m=cards.filter(function(c){return (!cf.loai||c.dataset.loai.split('|').indexOf(cf.loai)>-1)&&(!cf.brand||c.dataset.brand===cf.brand)});
   cards.forEach(function(c){c.hidden=true});m.forEach(function(c,i){c.hidden=i>=shown});
   cnt.textContent='Hiển thị '+Math.min(shown,m.length)+'/'+m.length+' hồ sơ xe thực tế';moreC.hidden=m.length<=shown}
- document.querySelectorAll('[data-pick]').forEach(function(b){b.addEventListener('click',function(){
-  document.querySelectorAll('[data-pick]').forEach(function(x){x.classList.toggle('is-on',x===b)});
-  document.querySelectorAll('.h3m-card').forEach(function(c){c.classList.toggle('is-pick',c.dataset.id===b.dataset.pick);c.classList.toggle('is-dim',c.dataset.id!==b.dataset.pick)});
-  var c=document.querySelector('.h3m-card.is-pick');if(c)c.scrollIntoView({behavior:'smooth',block:'center'});
-  if(window.gtag)gtag('event','pick_package_hint',{package_id:b.dataset.pick})})});
  document.querySelectorAll('.h3m-cfx__chips').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-plus')){g.querySelectorAll('.is-x').forEach(function(x){x.hidden=false});b.hidden=true;return}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
