@@ -148,6 +148,17 @@ Thay đổi 26/10 (chỉ giao diện và vị trí, không đổi giá/bảo hà
 
 **Tổng tự chấm: C 29,4 · S 29,0 · G 24,3 · U 14,5 → 97,2/100. ĐẠT theo tự chấm (preview)** — SEO 29,0 ≥ 28,5; GEO 24,3 ≥ 23,75. Anh Đặng Minh Hoàng duyệt giao diện mới 26/10/2026. Còn: URL catalog (R22-04), reviewer tái chấm, nghiệm thu production.
 
+## Bổ sung 27/10/2026: dải báo chí
+
+Thêm dải "Báo chí nói về Auto365 & 3M Pro Shop" cuối mục Vì sao chọn: 4 bài có nhắc PPF/3M Pro Shop/365Group (Dân Việt, Xã Hội, Thanh Niên, Doanh nghiệp Kinh tế Xanh), dùng nguyên tiêu đề bài, link mở tab mới + link trang báo chí; Organization.subjectOf thêm 4 NewsArticle. dateModified 2026-10-27; lastReviewed giữ 2026-10-26.
+
+| Mã | 26/10 | 27/10 | Căn cứ |
+|---|---:|---:|---|
+| G3 | 4,7 | 4,8 | Có nguồn báo chí độc lập dẫn tới Auto365/3M Pro Shop |
+| Còn lại | — | giữ | C 29,4 · S 29,0 · G1/G2 9,7/9,9 · U 14,5 |
+
+**Tổng tự chấm: C 29,4 · S 29,0 · G 24,4 · U 14,5 → 97,3/100. ĐẠT theo tự chấm (preview).** Dải báo chí thêm sau lần duyệt 26/10, nên báo anh Đặng Minh Hoàng xem.
+
 ## Việc còn lại (tăng mức dư, không chặn)
 
 1. Tài liệu kỹ thuật/giấy phân phối AX Film do hãng phát hành (C1, G3).
@@ -161,7 +172,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `71e80537ec34ed562d9fd3a2b72ef677e86eb79c407cdd0d75c5289e425053d4` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `9e31c133e825cdf92324a245fd3e64a9103948dcba6f48f09993f5a1507b585d` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
