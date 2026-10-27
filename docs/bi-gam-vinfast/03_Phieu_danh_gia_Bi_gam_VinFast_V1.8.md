@@ -3,10 +3,28 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 — đủ 12 tiêu chí (có U3), thang /100. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-24) |
+| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-27; SHA tính trên nội dung LF = đúng file Cloudflare phục vụ) |
 | Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-27 (duyệt lại 27/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+
+## R5 tự chấm 27/10/2026 (chuẩn V1.9, sau bản vá R4 + duyệt 27/10)
+
+Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu**. Phần đủ bằng chứng: **≈57/60** (R4: 55,9). Phần CX **/40** giữ nguyên chờ bằng chứng production.
+
+| Hạng mục | Bằng chứng 27/10 | Kết quả |
+|---|---|---|
+| Bộ tìm chi nhánh (P0 R4) | Quảng Ninh 8 điểm, Đà Nẵng 2 điểm, từ khoá rỗng → thông báo + link danh bạ | Đạt |
+| Đường địa phương | 91 điểm, 33 tỉnh/thành có link thật trong HTML | Đạt |
+| FAQ | 8 câu, FAQPage schema khớp visible, anh Đạo duyệt 27/10 | Đạt |
+| Lọc case | Trạng thái rỗng + Bỏ lọc; ≤4 bài → 1 hàng | Đạt |
+| Responsive | 375/768/1024/1366: scrollWidth = clientWidth | Đạt |
+| Link nội bộ | 67/67 link auto365.vn trả 200 | Đạt |
+| U3 | SHA-256 trong 01 khớp file deploy (`3a68dc0e…`); script xuất băm nội dung LF | Đạt |
+| Console shell (`$ is not defined`) | Script shell website | Trừ — IT |
+| Sao 0 đánh giá ở danh bạ | Dữ liệu danh bạ | Trừ — IT/Operations |
+
+**CX còn thiếu bằng chứng:** test máy thật (iOS/Android), lead vào CRM từ production, index + Core Web Vitals trên auto365.vn, trang tích hợp production. Cần IT đăng production rồi gửi reviewer tái chấm.
 
 ## R4 reviewer 27/10/2026 (chuẩn V1.9) và bản vá cùng ngày
 
