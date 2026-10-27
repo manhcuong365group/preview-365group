@@ -1,10 +1,21 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast VF5 V1.8
 
+## Bản hiện hành V1.9 — 27/10/2026 (sau tái kiểm R2 V1.9)
+
+| Trường | Nội dung |
+|---|---|
+| SHA-256 index.html | `fb2638b2a4192567a0cc6b012b50329cd41f65b6ca103044942eda12cb179a86` (cùng mã trong 02/04) |
+| Reviewer R2 V1.9 27/10 | C+S+G 78,6/85; SEO 28,4; GEO 22,2; U CX — chưa ký V1.9 (thiếu mô-đun tỉnh/cơ sở) |
+| Đã sửa 27/10 | (1) Khối "Kiểm tra và lắp bi gầm VF5 tại Auto365 ở đâu?" trong mục Địa điểm: chọn tỉnh + 33 tỉnh/88 cơ sở đang hoạt động (status active, nguồn dữ liệu he-thong/main.html), mỗi cơ sở có link hồ sơ auto365.vn/<slug>, địa chỉ, điện thoại — HTML đọc được trước thao tác; cơ sở paused/pending loại khỏi danh sách; link danh bạ /chi-nhanh + hotline 0365 365 911. (2) FAQ thêm 3 câu: tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi trước, bảo hành khác tỉnh; FAQPage 9/9 khớp HTML. (3) FAQ 1 bỏ "tại vị trí hốc đèn gầm", thay câu vị trí gá/pát/điện kiểm trên đúng xe. (4) Popup đi tỉnh: "kiểm tra nhiệt màu và cơ chế theo từng mã". (5) Popup F10 New: 4800K, 4,3tr bản 12V (24V 4,5tr theo PDP). |
+| N1–N8 | N1 đạt · N2 đạt phần danh bạ/link cơ sở (Maps CX) · N3 xác nhận kỹ thuật 17 mẫu 26/10, danh sách cơ sở active; chuẩn dịch vụ bi gầm theo nhóm cơ sở CX (Operations) · N4 đạt preview, ảnh production chờ · N5 đạt · N6 đạt (thêm nguồn dữ liệu cơ sở) · N7 preview đạt, production CX · N8 hồ sơ này |
+| Còn mở | Ảnh thật thay ảnh AI; map URL production (Lux /lux-sa2-0); test form trên trang VF5 thật; mobile/tablet theo reviewer; chuẩn dịch vụ theo nhóm cơ sở (Operations) |
+| Tự chấm V1.9 | C 28,7 · S 28,9 · G 23,9 · U 14,4 → **95,9/100 — ĐẠT ngưỡng** (U1/U2 theo kiểm desktop+mobile 375 của team) |
+
 ## Bản hiện hành — 26/10/2026 (dùng mục này; các mục khác là lịch sử)
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `237f8b496ba7c543dafdfc02ea3f557f17e3113c7dbf838a1c931fec7eec8a9e` (cùng mã trong 02/04) |
+| SHA-256 index.html | `fb2638b2a4192567a0cc6b012b50329cd41f65b6ca103044942eda12cb179a86` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 92,0/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF5"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF5; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -18,7 +29,7 @@
 | Trang | Bi gầm VinFast VF5 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `237f8b496ba7c543dafdfc02ea3f557f17e3113c7dbf838a1c931fec7eec8a9e` (cùng mã trong 02/04) |
+| SHA-256 index.html | `fb2638b2a4192567a0cc6b012b50329cd41f65b6ca103044942eda12cb179a86` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt 24/10/2026 |
 | Ngày chấm | 24/10/2026, chấm trên preview |
 
