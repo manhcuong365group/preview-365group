@@ -6,7 +6,7 @@
 | Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-24) |
 | Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-26 (duyệt lại 26/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-27 (duyệt lại 27/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
 ## R4 reviewer 27/10/2026 (chuẩn V1.9) và bản vá cùng ngày
 
@@ -16,7 +16,7 @@ Reviewer R4 chấm theo **V1.9**: 6 tiêu chí đủ bằng chứng **55,9/60**,
 |---|---|---|---|
 | P0 | Tìm "Quảng Ninh" báo "Không tải được danh sách chi nhánh"; link dự phòng mở catalog preview | Nguyên nhân: script `newsroom-branch-finder` gọi `/chi-nhanh?json=1` và dựng link `/chi-nhanh…` tương đối → trên pages.dev trỏ về origin preview; auto365.vn không mở CORS. Build lấy danh bạ thật (91 điểm) nhúng vào trang + script nhỏ chỉ chạy khi không ở auto365.vn: trả dữ liệu nhúng và đổi mọi link `/chi-nhanh…` sang `https://auto365.vn/chi-nhanh…` (giữ từ khoá). Kiểm: Quảng Ninh 8 điểm, Đà Nẵng 2 điểm, "zzqa" → thông báo + link danh bạ; "Xem tất cả 8 điểm" → `https://auto365.vn/chi-nhanh?q=Quảng%20Ninh#workspace` | Trên production script tự tắt; IT kiểm lại bộ tìm tại auto365.vn |
 | P1 địa phương | Thiếu đường tỉnh/cơ sở đọc được trước thao tác | Khối "Xem toàn bộ 91 điểm tiếp nhận" + danh sách 33 tỉnh/thành theo miền (a href thật, có sẵn trong HTML), mỗi tỉnh → danh bạ lọc theo tỉnh | URL trang tỉnh riêng: SEO chốt; chuẩn dịch vụ theo điểm: Operations |
-| P1 FAQ | Thiếu câu nơi làm, thông tin cần chuẩn bị | +2 FAQ (8 câu, schema khớp) | Anh Đạo duyệt (05) |
+| P1 FAQ | Thiếu câu nơi làm, thông tin cần chuẩn bị | +2 FAQ (8 câu, schema khớp); anh Đạo duyệt 27/10 | — |
 | P2 lọc case | VF 3 + X-Light: 0 thẻ, không thông báo | Thông báo "Chưa có bài hồ sơ phù hợp… không có nghĩa là mẫu đèn không lắp được" + nút Bỏ lọc | — |
 | P2 tràn ngang | Header shell: `.container` padding 0 → `.row` lệch −12px | Trả padding 12px cho container header (không dùng overflow-x:hidden); đo lại 1366/768/375: scrollWidth = clientWidth | — |
 | P2 console | jquery.toc / content.js lỗi `$ is not defined` | — | Script shell của website: IT kiểm thứ tự nạp jQuery |
