@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `817fe67f6c0e0e4775d3d7f12e53655cb7870e59a85d2c0314b05a4a05063dd5`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `94dfea47dc1aa3ea011cca1b7f1751f88f0f63c9195087064f5fa79f44b0c608`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -178,6 +178,12 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
 6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
 
+## 90+ chi nhánh · 33 tỉnh thành  `#he-thong`
+
+Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
+
+_[Form: ]_
+
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
 Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh
@@ -189,12 +195,6 @@ Trụ sởHiệp Bình, TP.HCM
 Bảo hànhTheo từng sản phẩm
 
 Tư vấnQua hotline
-
-## 90+ chi nhánh · 33 tỉnh thành  `#he-thong`
-
-Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
-
-_[Form: ]_
 
 ## PPF là gì?  `#kien-thuc`
 
