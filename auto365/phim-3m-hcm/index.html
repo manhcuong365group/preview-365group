@@ -281,6 +281,11 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-why2__list li:before{color:var(--t)}
 .h3m-tl li:before{background:#5b616b;box-shadow:0 0 0 4px #eef0f3}
 .h3m-hq__pts li:before{background:rgba(255,255,255,.18)}
+.h3m-hero__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end}
+.h3m-hero__r{padding:22px;border-radius:16px;background:rgba(10,11,14,.35);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.h3m-hero__r .h3m-hero__ben{grid-template-columns:repeat(3,minmax(0,1fr))}
+.h3m-hero__l .h3m-hero__gift{margin-bottom:0}
+@media (max-width:1024px){.h3m-hero__in{grid-template-columns:1fr;gap:20px}.h3m-hero__r{padding:0;background:none;border:0;backdrop-filter:none;-webkit-backdrop-filter:none}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -308,10 +313,14 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 
 <section class="h3m-hero">
  <div class="h3m-wrap">
+  <div class="h3m-hero__in">
+  <div class="h3m-hero__l">
   <span class="h3m-hero__tag">📍 3M Pro Shop · Trụ sở chính Auto365</span>
   <h1>Dán phim cách nhiệt <span>3M</span> tại TP.HCM</h1>
   <p class="h3m-hero__sub">Nắng Sài Gòn quanh năm — chọn đúng cấu hình phim 3M chính hãng, thi công tại 3M Pro Shop – trụ sở chính Auto365, bảo hành điện tử 3M 10 năm.</p>
   <p class="h3m-hero__gift">🎁 Miễn phí tháo &amp; vệ sinh phim cũ · Tặng rửa xe + hút bụi · Tặng vệ sinh kính + tẩy ố kính</p>
+  </div>
+  <div class="h3m-hero__r">
   <ul class="h3m-hero__ben">
    <li><b>Cách nhiệt tốt hơn</b>Giảm nóng khi đỗ xe ngoài trời</li>
    <li><b>Cản tia UV</b>Bảo vệ da và nội thất</li>
@@ -322,6 +331,8 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hero">☎ Gọi 0365 365 365</a>
   </div>
   <a class="h3m-gr h3m-gr--dark" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+-+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
+  </div>
+  </div>
   <div class="h3m-trust">
    <div><b>NPP chính thức</b><span>365Group – nhà phân phối 3M</span></div>
    <div><b>10 năm</b><span>Bảo hành điện tử 3M eWarranty</span></div>
@@ -340,12 +351,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <button class="h3m-btn h3m-btn--red" id="q-go" type="button">Xem giá →</button>
    <div class="h3m-quick__out" id="q-out" aria-live="polite"></div>
   </form>
- </div>
- <div class="h3m-strip">
-  <div><b>Đặt lịch online</b>Gửi yêu cầu, Auto365 gọi xác nhận lịch thi công</div>
-  <div><b>Tư vấn theo xe</b>Gợi ý cấu hình hợp nhu cầu &amp; ngân sách</div>
-  <div><b>Kích hoạt eWarranty</b>Tra cứu bảo hành theo biển số</div>
-  <div><b>Phim chính hãng</b>Có tem &amp; nguồn gốc 3M rõ ràng</div>
  </div>
 </div>
 
