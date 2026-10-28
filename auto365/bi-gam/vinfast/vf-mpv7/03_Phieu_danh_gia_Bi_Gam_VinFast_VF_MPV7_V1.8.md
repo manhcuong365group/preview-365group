@@ -1,10 +1,10 @@
 # Phiếu Đánh Giá — Bi Gầm VinFast VF MPV 7 V1.8
 
-## Bản hiện hành — 26/10/2026 (dùng mục này; các mục khác là lịch sử)
+## Lịch sử — 26/10/2026 (V1.8; bản hiện hành là mục "Cập nhật 28/10/2026" cuối file)
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `b0408aabfac78900993f7463e6d2c36ca68de51b1c990ff001f88c704e76be93` (cùng mã trong 02/04) |
+| SHA-256 index.html | `05fdcc69e0a8bface846d5a9343afb4c5089c2e6e6ec2cad614a50e46c26172f` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,8 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF MPV 7"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF MPV 7; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -17,7 +17,7 @@
 |---|---|
 | Trang | Bi gầm VinFast VF MPV 7 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 (chưa đăng) |
-| SHA-256 index.html | `b0408aabfac78900993f7463e6d2c36ca68de51b1c990ff001f88c704e76be93` (cùng mã trong 02/04) |
+| SHA-256 index.html | `05fdcc69e0a8bface846d5a9343afb4c5089c2e6e6ec2cad614a50e46c26172f` (cùng mã trong 02/04) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
 | Reviewer | Nguyễn Quang Đạo — duyệt 24/10/2026 (lastReviewed 2026-10-24) |
 | Test lead | Chưa test trên trang này (chưa đăng) |
@@ -60,3 +60,15 @@ Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch
 Thêm 3 FAQ địa phương (tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi, bảo hành khác tỉnh). Popup đi tỉnh diễn đạt theo từng mã. Bỏ câu giá F10 New 12V/24V và câu xác nhận reviewer khỏi tổng quan (giá bản 12V vẫn ghi trên thẻ; xác nhận reviewer ở dòng Rà soát kỹ thuật).
 
 Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2), test form trên chính URL, xoá lead test.
+
+
+## Cập nhật 28/10/2026 — sau audit V1.9 (R3/R4) — bản hiện hành
+
+- Sửa popup chọn tỉnh tự đóng (stopPropagation trong handler popup): tìm/chọn tỉnh giữ mở danh sách cơ sở.
+- Số liệu bộ tìm lấy từ chính dữ liệu: 88 cơ sở đang hoạt động, 33 tỉnh; Bắc 41 · Trung 26 · Nam 21. Thẻ ghi rõ phạm vi danh sách tra cứu (điểm tạm ngừng/đang chuẩn bị không hiển thị).
+- Danh sách 88 cơ sở trong HTML mở được qua details/summary (không còn display:none).
+- Cơ sở chưa có số riêng hiển thị "Hotline hỗ trợ 0365 365 911" (không gán làm số cơ sở).
+- FAQPage: 9/9 câu trả lời khớp nguyên văn HTML.
+- Thông số xe ghi rõ chuẩn đo (NEDC/WLTP) và phạm vi phiên bản; VF5 bỏ chiều dài cơ sở do nguồn VinFast mâu thuẫn (2.730 vs 2.514 mm).
+- Khối nội bộ không còn ghi "đạt V1.8" như kết quả hiện hành; lastReviewed giữ 2026-10-26, dateModified 2026-10-28.
+- Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.

@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `b0408aabfac78900993f7463e6d2c36ca68de51b1c990ff001f88c704e76be93` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf-mpv7/index.html` — SHA-256 `05fdcc69e0a8bface846d5a9343afb4c5089c2e6e6ec2cad614a50e46c26172f` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -31,7 +31,6 @@
 
 | Việc | Giai đoạn |
 |---|---|
-| Bổ sung case/video bi gầm VF MPV 7 thật khi có | Khi có bài đăng |
 | Upload ảnh hero lên CMS, đổi og:image | Khi đăng production |
 | Xoá `#vf3lp-internal-check`, bỏ noindex, test lead, nghiệm thu Live L1–L8 | Khi đăng production |
 
@@ -87,3 +86,15 @@ Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch
 Thêm 3 FAQ địa phương (tìm nơi kiểm tra ở tỉnh khác, thông tin cần gửi, bảo hành khác tỉnh). Popup đi tỉnh diễn đạt theo từng mã. Bỏ câu giá F10 New 12V/24V và câu xác nhận reviewer khỏi tổng quan (giá bản 12V vẫn ghi trên thẻ; xác nhận reviewer ở dòng Rà soát kỹ thuật).
 
 Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2), test form trên chính URL, xoá lead test.
+
+
+## Cập nhật 28/10/2026 — sau audit V1.9 (R3/R4) — bản hiện hành
+
+- Sửa popup chọn tỉnh tự đóng (stopPropagation trong handler popup): tìm/chọn tỉnh giữ mở danh sách cơ sở.
+- Số liệu bộ tìm lấy từ chính dữ liệu: 88 cơ sở đang hoạt động, 33 tỉnh; Bắc 41 · Trung 26 · Nam 21. Thẻ ghi rõ phạm vi danh sách tra cứu (điểm tạm ngừng/đang chuẩn bị không hiển thị).
+- Danh sách 88 cơ sở trong HTML mở được qua details/summary (không còn display:none).
+- Cơ sở chưa có số riêng hiển thị "Hotline hỗ trợ 0365 365 911" (không gán làm số cơ sở).
+- FAQPage: 9/9 câu trả lời khớp nguyên văn HTML.
+- Thông số xe ghi rõ chuẩn đo (NEDC/WLTP) và phạm vi phiên bản; VF5 bỏ chiều dài cơ sở do nguồn VinFast mâu thuẫn (2.730 vs 2.514 mm).
+- Khối nội bộ không còn ghi "đạt V1.8" như kết quả hiện hành; lastReviewed giữ 2026-10-26, dateModified 2026-10-28.
+- Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.

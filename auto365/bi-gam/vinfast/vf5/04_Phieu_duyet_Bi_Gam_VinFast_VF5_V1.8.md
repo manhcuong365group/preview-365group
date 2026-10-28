@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `d287df88c48cbf76510d7ff9a27b0da822828efeca7064717dbb41afe47bd3a4` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `3bfd7c57327ead227ff5c72f98e05f5b840ee6fb21b2d96c03f89424c92ee5f3` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -55,7 +55,6 @@ Người xác nhận: anh Nguyễn Quang Đạo. Mức bằng chứng: kỹ thu�
 
 | Việc | Giai đoạn |
 |---|---|
-| Bổ sung case/video bi gầm VF5 thật khi có bài đăng (nâng G3/C2) | Khi có case |
 | Xoá khối `#vf3lp-internal-check`, bỏ noindex; nghiệm thu Live L1–L8 | Khi đăng production |
 | Test gửi lead trên trang VF5 | Sau khi đăng |
 - 24/10/2026: thay ảnh trang bằng 7 ảnh **AI mô phỏng** (bộ auto365_28_anh_..._MO_PHONG) để duyệt bố cục. Alt ghi "Ảnh minh họa AI (không phải ảnh thi công thực tế)". **Bắt buộc thay bằng ảnh chụp thật trước khi đăng production**; không dùng làm bằng chứng thi công, không gắn nhãn "Có case".
@@ -69,3 +68,15 @@ Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (l
 - **Test lead API 26/10/2026:** POST https://auto365.vn/api/leads (gửi từ trang VF6 live vì trang VF5 chưa đăng), service "Bi gầm VinFast VF5", nhu cầu "Đèn – Bi gầm" → 200 `{"success":true,"lead_id":"257","test":true}`. Cần xoá lead #257 khỏi CRM. Chưa test form trên trang VF5 thật (chờ IT đăng).
 
 - 27/10/2026: user bỏ khỏi phần tổng quan 2 câu (giá F10 New 12V/24V; câu xác nhận anh Đạo 26/10). Xác nhận kỹ thuật 26/10 vẫn lưu ở phiếu 04 và dòng nguồn cuối trang.
+
+
+## Cập nhật 28/10/2026 — sau audit V1.9 (R3/R4) — bản hiện hành
+
+- Sửa popup chọn tỉnh tự đóng (stopPropagation trong handler popup): tìm/chọn tỉnh giữ mở danh sách cơ sở.
+- Số liệu bộ tìm lấy từ chính dữ liệu: 88 cơ sở đang hoạt động, 33 tỉnh; Bắc 41 · Trung 26 · Nam 21. Thẻ ghi rõ phạm vi danh sách tra cứu (điểm tạm ngừng/đang chuẩn bị không hiển thị).
+- Danh sách 88 cơ sở trong HTML mở được qua details/summary (không còn display:none).
+- Cơ sở chưa có số riêng hiển thị "Hotline hỗ trợ 0365 365 911" (không gán làm số cơ sở).
+- FAQPage: 9/9 câu trả lời khớp nguyên văn HTML.
+- Thông số xe ghi rõ chuẩn đo (NEDC/WLTP) và phạm vi phiên bản; VF5 bỏ chiều dài cơ sở do nguồn VinFast mâu thuẫn (2.730 vs 2.514 mm).
+- Khối nội bộ không còn ghi "đạt V1.8" như kết quả hiện hành; lastReviewed giữ 2026-10-26, dateModified 2026-10-28.
+- Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.
