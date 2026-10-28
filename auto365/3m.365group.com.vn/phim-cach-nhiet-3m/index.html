@@ -265,19 +265,16 @@ html{scroll-padding-top:76px}
 .m3-layers li b{display:block;font-size:14px}.m3-layers li span{font-size:13px;color:var(--m3-mute)}
 @media(max-width:1024px){.m3-layers{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.m3-layers{grid-template-columns:1fr}}
-.m3-acc details{border-top:1px solid var(--m3-line)}.m3-acc details:first-child{border-top:0}
-.m3-acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:14px 32px 14px 0;position:relative;min-height:48px}
-.m3-acc summary::-webkit-details-marker{display:none}
-.m3-acc summary:after{content:"+";position:absolute;right:4px;font-size:22px;color:var(--m3-red);line-height:1}
-.m3-acc details[open] summary:after{content:"–"}
-.m3-acc summary b{flex:none;min-width:74px;text-align:center;background:#3a3d42;color:#fff;font-size:13px;padding:3px 10px;border-radius:999px}
-.m3-acc summary span{font-size:14px;color:var(--m3-ink);font-weight:500}
+.m3-acc__i{border-top:1px solid var(--m3-line)}.m3-acc__i:first-child{border-top:0}
+.m3-acc__h{display:flex;align-items:center;gap:14px;padding:14px 0 8px;position:relative;min-height:48px}
+.m3-acc__h b{flex:none;min-width:74px;text-align:center;background:#3a3d42;color:#fff;font-size:13px;padding:3px 10px;border-radius:999px}
+.m3-acc__h span{font-size:14px;color:var(--m3-ink);font-weight:500}
 .m3-acc p{margin:0 0 14px;padding-left:88px;font-size:14px;color:var(--m3-mute)}
 @media(max-width:560px){.m3-acc p{padding-left:0}}
 .m3-gloss__s{list-style:none;cursor:pointer;font-size:17px;font-weight:700;display:flex;align-items:center;gap:10px;position:relative;padding-right:30px;min-height:28px}
 .m3-gloss__s::-webkit-details-marker{display:none}
 .m3-gloss__s small{font-size:13px;font-weight:400;color:var(--m3-mute)}
-.m3-gloss__s:after{content:"+";position:absolute;right:4px;font-size:24px;color:var(--m3-red);font-weight:400;line-height:1}
+.m3-gloss__s:after{content:"+";position:absolute;right:4px;font-size:24px;color:var(--m3-ink);font-weight:400;line-height:1}
 details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m3-gloss__s:after{content:"–"}
 .m3-ico{width:28px;height:28px;flex:none;fill:none;stroke:var(--m3-red);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .m3-tabs__list{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--m3-line)}
@@ -486,7 +483,7 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
     <li>Cửa sổ trời nhỏ giá bằng một ô kính sườn, cửa sổ trời panorama giá bằng một kính lái.</li>
   </ul>
   <details class="m3-gloss" id="thuat-ngu"><summary class="m3-gloss__s">Cách đọc các chỉ số <small>TSER, VLT, UVR, Glare R, IRR</small></summary>
-    <div class="m3-acc"><details open><summary><b>TSER</b><span>Total Solar Energy Rejected – tổng năng lượng mặt trời bị loại bỏ</span></summary><p>Tỷ lệ năng lượng mặt trời (ánh sáng nhìn thấy, hồng ngoại, tia cực tím) không đi vào xe khi kính đã dán phim. Đây là chỉ số dùng để so sánh mức cản nhiệt tổng giữa các mã phim.</p></details><details><summary><b>VLT</b><span>Visible Light Transmission – độ xuyên sáng</span></summary><p>Tỷ lệ ánh sáng nhìn thấy đi qua kính đã dán phim. VLT càng cao kính càng sáng; VLT thấp cho kính tối và riêng tư hơn.</p></details><details><summary><b>UVR</b><span>UV Rejection – loại bỏ tia cực tím</span></summary><p>Tỷ lệ tia UV bị chặn lại, liên quan tới bảo vệ da và hạn chế bạc màu nội thất.</p></details><details><summary><b>Glare R</b><span>Glare Rejection – tỷ lệ giảm lóa</span></summary><p>Mức giảm chói của ánh sáng nhìn thấy so với kính không dán phim; thường tỷ lệ nghịch với VLT.</p></details><details><summary><b>IRR</b><span>IR Rejection – loại bỏ tia hồng ngoại</span></summary><p>IRR đo khả năng loại bỏ hồng ngoại trong dải 900–1.000 nm; 3M mô tả phép đo trên phim với lớp lót, không có kính. Chỉ số này không đồng nghĩa tỷ lệ tổng năng lượng mặt trời bị loại bỏ (TSER).</p></details></div>
+    <div class="m3-acc"><div class="m3-acc__i"><div class="m3-acc__h"><b>TSER</b><span>Total Solar Energy Rejected – tổng năng lượng mặt trời bị loại bỏ</span></div><p>Tỷ lệ năng lượng mặt trời (ánh sáng nhìn thấy, hồng ngoại, tia cực tím) không đi vào xe khi kính đã dán phim. Đây là chỉ số dùng để so sánh mức cản nhiệt tổng giữa các mã phim.</p></div><div class="m3-acc__i"><div class="m3-acc__h"><b>VLT</b><span>Visible Light Transmission – độ xuyên sáng</span></div><p>Tỷ lệ ánh sáng nhìn thấy đi qua kính đã dán phim. VLT càng cao kính càng sáng; VLT thấp cho kính tối và riêng tư hơn.</p></div><div class="m3-acc__i"><div class="m3-acc__h"><b>UVR</b><span>UV Rejection – loại bỏ tia cực tím</span></div><p>Tỷ lệ tia UV bị chặn lại, liên quan tới bảo vệ da và hạn chế bạc màu nội thất.</p></div><div class="m3-acc__i"><div class="m3-acc__h"><b>Glare R</b><span>Glare Rejection – tỷ lệ giảm lóa</span></div><p>Mức giảm chói của ánh sáng nhìn thấy so với kính không dán phim; thường tỷ lệ nghịch với VLT.</p></div><div class="m3-acc__i"><div class="m3-acc__h"><b>IRR</b><span>IR Rejection – loại bỏ tia hồng ngoại</span></div><p>IRR đo khả năng loại bỏ hồng ngoại trong dải 900–1.000 nm; 3M mô tả phép đo trên phim với lớp lót, không có kính. Chỉ số này không đồng nghĩa tỷ lệ tổng năng lượng mặt trời bị loại bỏ (TSER).</p></div></div>
     <p class="m3-note">TSER, VLT, UVR và Glare R trong bảng là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%) theo bảng 3M AutoFilm của 365Group; IRR đo riêng trên phim (dải 900–1.000 nm, không có kính) theo cách 3M mô tả. Chỉ nên so sánh các mã trong cùng điều kiện đo.</p>
   </details>
 </div></section>
