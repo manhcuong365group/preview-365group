@@ -178,7 +178,7 @@ Kiểm tra: desktop 1366 px và mobile 375 px, không lỗi console, trang khôn
 
 **Tự chấm V1.9 (preview): C 29,3 · SEO 29,0 · GEO 23,9 · U1 4,6 · U2 4,7 · U3 4,5 → 96,0/100.**
 
-Bổ sung 28/10: lead test 14:04 → POST https://auto365.vn/api/leads, product_group "Toàn xe", product_interest đủ cấu hình (3M PPF 50 · Sedan · Toàn xe · 38.000.000đ), tên "TEST hub PPF vui long xoa", request_id 86e5f65a-4d81-4b23-9b3b-a656cd3438b5 → HTTP 200 {success:true, lead_id 273, test:true}; CRM đã nhận đủ cấu hình và đã xoá lead 273 (chủ trang báo 28/10). Anh Đặng Minh Hoàng duyệt bản pk36 (28/10). Còn: PDP 3M 200 trên auto365.vn vẫn hiện 104.000.000đ lúc kiểm 28/10 (có thể do cache), reviewer tái chấm.
+Bổ sung 28/10: lead test 14:04 → POST https://auto365.vn/api/leads, product_group "Toàn xe", product_interest đủ cấu hình (3M PPF 50 · Sedan · Toàn xe · 38.000.000đ), tên "TEST hub PPF vui long xoa", request_id 86e5f65a-4d81-4b23-9b3b-a656cd3438b5 → HTTP 200 {success:true, lead_id 273, test:true}; CRM đã nhận đủ cấu hình và đã xoá lead 273 (chủ trang báo 28/10). Anh Đặng Minh Hoàng duyệt bản pk36 (28/10). PDP 3M 200 trên auto365.vn đã hiện 102.000.000đ (kiểm lại 28/10, khớp hub).
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
@@ -198,3 +198,16 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
+
+### Tự chấm lại 28/10/2026 (V1.9, preview)
+
+| Nhóm | Trước | Nay | Căn cứ |
+|---|---|---|---|
+| Content | 29,3 | 29,4 | Anh Đặng Minh Hoàng duyệt bản có cách tính toàn xe + ô tóm tắt (28/10) |
+| SEO | 29,0 | 29,2 | Giá 3M 200 Gloss 102tr khớp giữa hub và PDP; R22-04 catalog không áp dụng (tài liệu nội bộ) |
+| GEO | 23,9 | 24,3 | Không còn lệch giá giữa các nguồn auto365.vn |
+| U1 | 4,6 | 4,7 | Ngày kiểm duyệt khớp bản đang chạy |
+| U2 | 4,7 | 4,9 | Lead 273 end-to-end: API success, CRM nhận đủ cấu hình, đã xoá |
+| U3 | 4,5 | 4,6 | Form nhận cấu hình từ máy tính giá và thẻ phim |
+
+**Tổng tự chấm: C 29,4 · SEO 29,2 · GEO 24,3 · U1 4,7 · U2 4,9 · U3 4,6 → 97,1/100. ĐẠT theo tự chấm (preview)** — SEO ≥ 28,5; GEO ≥ 23,75. Còn: reviewer tái chấm; catalog PDF chưa kiểm lại giá 3M 200.
