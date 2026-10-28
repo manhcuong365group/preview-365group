@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `94dfea47dc1aa3ea011cca1b7f1751f88f0f63c9195087064f5fa79f44b0c608` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `39cf47dc4953e7b07cf8580d699dc5ec6f62df4b05fb65b32c4524b7676034ad` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -211,3 +211,5 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 | U3 | 4,5 | 4,6 | Form nhận cấu hình từ máy tính giá và thẻ phim |
 
 **Tổng tự chấm: C 29,4 · SEO 29,2 · GEO 24,3 · U1 4,7 · U2 4,9 · U3 4,6 → 97,1/100. ĐẠT theo tự chấm (preview)** — SEO ≥ 28,5; GEO ≥ 23,75. Còn: reviewer tái chấm; catalog PDF chưa kiểm lại giá 3M 200.
+
+Ghi chú 28/10 (giao diện theo góp ý sếp): bỏ dải "Tìm nhanh theo tỉnh" ở khối Hệ thống theo yêu cầu chủ trang; ô tìm theo tỉnh, 3 miền và link Gần tôi vẫn giữ. Đổi tông màu đen/xám, giữ đỏ cho CTA chính, giá thẻ phim và lớp phim trên ảnh xe; logo 3M/AX trên tab hãng; dải báo chí có ảnh bài.
