@@ -272,23 +272,15 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-hero__tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25)}
 .h3m-hero__ben li{border-left-color:rgba(255,255,255,.4)}
 .h3m-card__badge{background:#eef0f3;color:var(--t)}
-.h3m-card__cta{background:#16181d}.h3m-card__cta:hover{background:var(--r)}
+.h3m-card__cta{background:#fff;color:var(--t);border:1px solid #c9cdd3}.h3m-card__cta:hover{color:#fff}.h3m-card__cta:hover{background:var(--r)}
 .h3m-card:hover,.h3m-more:hover,.h3m-card__sub a:hover{border-color:#16181d;color:inherit}
 .h3m-pl a:hover b{color:inherit;text-decoration:underline}
 .h3m-hq__stamp{background:#16181d;border:1px solid rgba(255,255,255,.25)}.h3m-hq__kicker{color:#c9ccd1}
-.h3m-band{background:#16181d}.h3m-band .h3m-btn--red{background:var(--r);color:#fff}
+.h3m-band{background:#f2f3f5;color:var(--t);border-top:1px solid #e4e6ea;border-bottom:1px solid #e4e6ea}.h3m-band .h3m-btn--ghost{border-color:#c9cdd3;color:var(--t)}.h3m-band .h3m-btn--red{background:var(--r);color:#fff}
 .h3m-modal__pk{background:#f2f3f5}
 .h3m-why2__list li:before{color:var(--t)}
-.h3m-tl li:before{background:#16181d;box-shadow:0 0 0 4px #eef0f3}
+.h3m-tl li:before{background:#5b616b;box-shadow:0 0 0 4px #eef0f3}
 .h3m-hq__pts li:before{background:rgba(255,255,255,.18)}
-.h3m-hero__in{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center}
-.h3m-hero__r{padding:22px 24px;border-radius:16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(10px)}
-.h3m-hero__rt{margin:0 0 14px;font-size:13px;letter-spacing:.4px;text-transform:uppercase;opacity:.7}
-.h3m-hero__r .h3m-hero__ben{grid-template-columns:1fr;gap:12px;margin:0}
-.h3m-hero__r .h3m-trust{grid-template-columns:1fr 1fr;gap:16px 20px;margin-top:20px;padding-top:18px}
-.h3m-hero__r .h3m-trust b{font-size:18px}
-@media (max-width:1024px){.h3m-hero__in{grid-template-columns:1fr;gap:24px}.h3m-hero__r{max-width:640px}}
-@media (max-width:640px){.h3m-hero__r{padding:16px}.h3m-hero__rt{display:none}.h3m-hero__r .h3m-trust{margin-top:0;padding-top:0;border-top:0}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -315,32 +307,27 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 </header>
 
 <section class="h3m-hero">
- <div class="h3m-wrap h3m-hero__in">
-  <div class="h3m-hero__l">
+ <div class="h3m-wrap">
   <span class="h3m-hero__tag">📍 3M Pro Shop · Trụ sở chính Auto365</span>
   <h1>Dán phim cách nhiệt <span>3M</span> tại TP.HCM</h1>
   <p class="h3m-hero__sub">Nắng Sài Gòn quanh năm — chọn đúng cấu hình phim 3M chính hãng, thi công tại 3M Pro Shop – trụ sở chính Auto365, bảo hành điện tử 3M 10 năm.</p>
   <p class="h3m-hero__gift">🎁 Miễn phí tháo &amp; vệ sinh phim cũ · Tặng rửa xe + hút bụi · Tặng vệ sinh kính + tẩy ố kính</p>
-  <div class="h3m-hero__cta">
-   <a class="h3m-btn h3m-btn--red" href="#goi-phim">Xem 6 gói &amp; bảng giá →</a>
-   <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hero">☎ Gọi 0365 365 365</a>
-  </div>
-  <a class="h3m-gr h3m-gr--dark" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+-+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
-  </div>
-  <aside class="h3m-hero__r" aria-label="Vì sao chọn 3M Pro Shop">
-  <p class="h3m-hero__rt">Vì sao chọn 3M tại Auto365</p>
   <ul class="h3m-hero__ben">
    <li><b>Cách nhiệt tốt hơn</b>Giảm nóng khi đỗ xe ngoài trời</li>
    <li><b>Cản tia UV</b>Bảo vệ da và nội thất</li>
    <li><b>Giảm chói kính lái</b>Giữ tầm nhìn rõ khi lái</li>
   </ul>
+  <div class="h3m-hero__cta">
+   <a class="h3m-btn h3m-btn--red" href="#goi-phim">Xem 6 gói &amp; bảng giá →</a>
+   <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hero">☎ Gọi 0365 365 365</a>
+  </div>
+  <a class="h3m-gr h3m-gr--dark" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+-+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
   <div class="h3m-trust">
    <div><b>NPP chính thức</b><span>365Group – nhà phân phối 3M</span></div>
    <div><b>10 năm</b><span>Bảo hành điện tử 3M eWarranty</span></div>
    <div><b>3M Pro Shop</b><span>Trụ sở chính Hiệp Bình, TP.HCM</span></div>
    <div><b>Từ 5,9 triệu</b><span>Giá trọn xe theo bảng giá 3M</span></div>
   </div>
-  </aside>
  </div>
 </section>
 
