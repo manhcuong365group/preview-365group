@@ -6,7 +6,7 @@ Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối
 **H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
 Giảm nhiệt – Cản tia UV – Giảm lóa cho kính ô tô
-365Group phân phối chính thức phim cách nhiệt ô tô 3M™ tại Việt Nam cho 224 đại lý trên toàn quốc. Trang này gom 3 dòng phim 3M thành 6 cấu hình dán trọn xe, ghi sẵn giá và thông số để chủ xe so sánh.
+Khám phá Crystalline CR BLK, Ceramic IR và Ceramic NR. So sánh độ sáng, khả năng cản nhiệt và cấu hình theo xe, rồi chọn đại lý để được tư vấn.
 3M Pro Shop · 3M Training Center – hệ thống 365Group – Auto365
 Cản tia UVBảo vệ sức khỏe và nội thất
 Giảm nhiệt trong xeGiảm nhiệt, tận hưởng không gian mát mẻ
