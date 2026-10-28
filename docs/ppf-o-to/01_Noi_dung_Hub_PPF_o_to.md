@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `1e0b3253e3e3f223b11fab81e8c55097198a315d651504d195a4428c983f3634`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `22db9be6a0c6af92a459ccb7b3fc46dc805cc690e8942365db44b3a64932870d`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -19,38 +19,34 @@ Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham k
 
 **50 Gloss**
 
-Trọn gói: 38.000.000đ
+Trọn gói, gồm VAT: 38.000.000đ
 
 - BóngBề mặt hoàn thiện
 - 5 nămBảo hành chính hãng
-- Gồm VATGiá trọn gói toàn xe
 
 **100 Gloss**
 
-Trọn gói: 69.000.000đ
+Trọn gói, gồm VAT: 69.000.000đ
 
 - 7.5 milĐộ dày
 - BóngBề mặt hoàn thiện
 - 7 nămBảo hành chính hãng
-- Gồm VATGiá trọn gói toàn xe
 
 **150 Gloss**
 
-Trọn gói: 85.000.000đ
+Trọn gói, gồm VAT: 85.000.000đ
 
 - 7.5 milPhim kèm keo
 - Tự phục hồiXước nhẹ khi gặp nhiệt
 - 10 nămBảo hành chính hãng
-- Gồm VATGiá trọn gói toàn xe
 
 **200 Gloss**
 
-Trọn gói: 102.000.000đ
+Trọn gói, gồm VAT: 102.000.000đ
 
 - 7.9 milĐộ dày
 - BóngBề mặt hoàn thiện
 - 10 nămBảo hành chính hãng
-- Gồm VATGiá trọn gói toàn xe
 
 Sedan: Vios, City, Mazda 3, Camry… · SUV / CUV cỡ vừa: CX-5, CR-V, VF 6/7… · SUV cỡ lớn / MPV: VF 8, Fortuner, Carnival, Innova… Nhóm giá chia theo kích thước thân xe (diện tích dán), không theo số chỗ; nhóm chính xác xác nhận khi kiểm tra xe.
 
