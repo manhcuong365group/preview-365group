@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `ea28cd4d2f65a94ad11a7da79aca60100c1c23d64cbf22ff82846bbb15c18fa2` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `3096e29e105a9279125963cbdb833e66e2434feb58f6d83cab55f0be3340fac5` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -99,3 +99,5 @@ Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2)
 - Thông số xe ghi rõ chuẩn đo (NEDC/WLTP) và phạm vi phiên bản; VF5 bỏ chiều dài cơ sở do nguồn VinFast mâu thuẫn (2.730 vs 2.514 mm).
 - Khối nội bộ không còn ghi "đạt V1.8" như kết quả hiện hành; lastReviewed giữ 2026-10-26, dateModified 2026-10-28.
 - Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.
+
+- 28/10/2026 (bổ sung): thay 6 ảnh VF8 bằng bộ ảnh mới do Auto365 cung cấp (hero, cản trước, đang lắp, sau lắp, 2 ảnh bàn giao X3 Ultra); theo yêu cầu, gỡ toàn bộ nhãn/chú thích "ảnh AI" trên trang và trong alt. Mục "thay ảnh AI" ở trên coi như đã xử lý cho trang VF8.
