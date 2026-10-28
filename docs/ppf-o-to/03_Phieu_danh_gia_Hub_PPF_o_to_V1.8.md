@@ -170,13 +170,15 @@ Reviewer chấm pk36 ngày 27/10: C 29,2 · SEO 28,8 · GEO 23,9 · U2 3,8 · U1
 | PK34-03 3M 200: 102 hay 104 triệu | Giữ 102 / 110 / 122 triệu theo bảng giá 3M ngày 23/10 (chủ trang xác nhận 23/10). PDP và catalog còn ghi 104 triệu | Cần IT/Commercial cập nhật PDP + catalog theo bảng 23/10 |
 | PK34-04 VF 8 dưới nhãn 7 chỗ | Đổi tên nhóm theo kích thước: Sedan / xe nhỏ · SUV / CUV cỡ vừa · SUV cỡ lớn / MPV; ghi rõ nhóm giá chia theo kích thước thân xe, không theo số chỗ. Không đổi giá | Đã sửa |
 | PK34-05 HQ / tỉnh | "Xem Trụ Sở Chính" trỏ https://auto365.vn/3m-pro-shop-tru-so-chinh; thêm 10 link tỉnh (service=ppf&q=…) + danh bạ PPF đầy đủ | Đã sửa phần link; chuẩn PPF chung/ngoại lệ do Operations |
-| PK34-06 Catalog / carbon | Thẻ carbon có 2 link Clear và Gloss tới đúng PDP | Carbon đã sửa; URL catalog chờ chủ trang chốt (R22-04) |
+| PK34-06 Catalog / carbon | Thẻ carbon có 2 link Clear và Gloss tới đúng PDP | Carbon đã sửa; catalog là tài liệu nội bộ, không đăng công khai (chủ trang 28/10) → R22-04 không áp dụng |
 | PK34-07 Nhãn chấm ảnh | 8 chấm có aria-label riêng (Chọn nóc xe, Chọn ốp gương…) và aria-pressed đồng bộ với thẻ | Đã sửa |
 | Thêm | Mobile: mục "PPF là gì?" bị bảng so sánh làm giãn cột (642px) → đã ép cột 1fr, bảng cuộn ngang | Đã sửa |
 
-Kiểm tra: desktop 1366 px và mobile 375 px, không lỗi console, trang không tràn ngang. dateModified 2026-10-28; lastReviewed giữ 2026-10-27.
+Kiểm tra: desktop 1366 px và mobile 375 px, không lỗi console, trang không tràn ngang. dateModified 2026-10-28; lastReviewed 2026-10-28 (anh Đặng Minh Hoàng duyệt bản pk36 ngày 28/10).
 
-**Tự chấm V1.9 (preview): C 29,3 · SEO 29,0 · GEO 23,9 · U1 4,6 · U2 4,7 · U3 4,5 → 96,0/100.** Còn: PDP/catalog 104 → 102 (IT), URL catalog, xác nhận CRM nhận product_interest, reviewer tái chấm.
+**Tự chấm V1.9 (preview): C 29,3 · SEO 29,0 · GEO 23,9 · U1 4,6 · U2 4,7 · U3 4,5 → 96,0/100.**
+
+Bổ sung 28/10: lead test 14:04 → POST https://auto365.vn/api/leads, product_group "Toàn xe", product_interest đủ cấu hình (3M PPF 50 · Sedan · Toàn xe · 38.000.000đ), tên "TEST hub PPF vui long xoa", request_id 86e5f65a-4d81-4b23-9b3b-a656cd3438b5 → HTTP 200 {success:true, lead_id 273, test:true}; chờ CRM xác nhận hiển thị cấu hình rồi xoá. Anh Đặng Minh Hoàng duyệt bản pk36 (28/10). Còn: PDP/catalog 104 → 102 (IT), CRM xác nhận lead 273, reviewer tái chấm.
 
 ## Việc còn lại (tăng mức dư, không chặn)
 
@@ -191,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `97138847c468577288e1ba2a296c5e43edd7862399be23c335cb244f3dc54d43` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `69a9a6fe0aca8231b5024adfee486209280ce2f4fef8c69119cccaea365b9d54` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
