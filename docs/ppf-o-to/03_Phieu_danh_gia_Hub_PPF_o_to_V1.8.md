@@ -159,6 +159,25 @@ Thêm dải "Báo chí nói về Auto365 & 3M Pro Shop" cuối mục Vì sao ch�
 
 **Tổng tự chấm: C 29,4 · S 29,0 · G 24,4 · U 14,5 → 97,3/100. ĐẠT theo tự chấm (preview).** Anh Đặng Minh Hoàng đã duyệt dải báo chí 27/10/2026 (lastReviewed = 2026-10-27).
 
+## Xử lý phiếu tái kiểm pk36 theo V1.9 (28/10/2026)
+
+Reviewer chấm pk36 ngày 27/10: C 29,2 · SEO 28,8 · GEO 23,9 · U2 3,8 · U1/U3 CX → 85,7 điểm (khoảng mở 85,7–95,7), chưa đạt demo V1.9.
+
+| Mã | Đã làm 28/10 | Trạng thái |
+|---|---|---|
+| PK34-01 Toàn xe 0đ | Thêm chế độ phạm vi (toàn xe / từng vị trí). Toàn xe dùng giá gói: 3M 50 = 38 / 44 / 51 triệu, AX G = 20 triệu; đổi phim/nhóm xe tính lại đúng chế độ; Xóa về trạng thái rỗng; bấm một vị trí thì chuyển sang tính từng vị trí | Đã sửa, đã thử các mẫu nghiệm thu |
+| PK34-02 Cấu hình sang form | Nút "Nhận báo giá chính xác" và nút "Báo giá" trên thẻ phim điền product_group + product_interest (mã phim, nhóm xe, phạm vi/vị trí, số bên, tạm tính, VAT, nguồn giá) và hiện ô "Cấu hình bạn đã chọn" trong form, có link sửa; đổi cấu hình sau đó tự cập nhật; giữ thông tin liên hệ đã nhập. AX G đầu xe: 7.200.000đ → SUV 7.920.000đ | Đã sửa frontend; lưu ở CRM chờ IT xác nhận (product_interest đã nằm trong nội dung gửi /api/leads) |
+| PK34-03 3M 200: 102 hay 104 triệu | Giữ 102 / 110 / 122 triệu theo bảng giá 3M ngày 23/10 (chủ trang xác nhận 23/10). PDP và catalog còn ghi 104 triệu | Cần IT/Commercial cập nhật PDP + catalog theo bảng 23/10 |
+| PK34-04 VF 8 dưới nhãn 7 chỗ | Đổi tên nhóm theo kích thước: Sedan / xe nhỏ · SUV / CUV cỡ vừa · SUV cỡ lớn / MPV; ghi rõ nhóm giá chia theo kích thước thân xe, không theo số chỗ. Không đổi giá | Đã sửa |
+| PK34-05 HQ / tỉnh | "Xem Trụ Sở Chính" trỏ https://auto365.vn/3m-pro-shop-tru-so-chinh; thêm 10 link tỉnh (service=ppf&q=…) + danh bạ PPF đầy đủ | Đã sửa phần link; chuẩn PPF chung/ngoại lệ do Operations |
+| PK34-06 Catalog / carbon | Thẻ carbon có 2 link Clear và Gloss tới đúng PDP | Carbon đã sửa; URL catalog chờ chủ trang chốt (R22-04) |
+| PK34-07 Nhãn chấm ảnh | 8 chấm có aria-label riêng (Chọn nóc xe, Chọn ốp gương…) và aria-pressed đồng bộ với thẻ | Đã sửa |
+| Thêm | Mobile: mục "PPF là gì?" bị bảng so sánh làm giãn cột (642px) → đã ép cột 1fr, bảng cuộn ngang | Đã sửa |
+
+Kiểm tra: desktop 1366 px và mobile 375 px, không lỗi console, trang không tràn ngang. dateModified 2026-10-28; lastReviewed giữ 2026-10-27.
+
+**Tự chấm V1.9 (preview): C 29,3 · SEO 29,0 · GEO 23,9 · U1 4,6 · U2 4,7 · U3 4,5 → 96,0/100.** Còn: PDP/catalog 104 → 102 (IT), URL catalog, xác nhận CRM nhận product_interest, reviewer tái chấm.
+
 ## Việc còn lại (tăng mức dư, không chặn)
 
 1. Tài liệu kỹ thuật/giấy phân phối AX Film do hãng phát hành (C1, G3).
@@ -172,7 +191,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `cbe4d082ee1786d37c3998208382c74265e15889a48221dd4891969b33b0bcf5` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `97138847c468577288e1ba2a296c5e43edd7862399be23c335cb244f3dc54d43` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 

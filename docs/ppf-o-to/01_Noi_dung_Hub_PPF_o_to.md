@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `cbe4d082ee1786d37c3998208382c74265e15889a48221dd4891969b33b0bcf5`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `97138847c468577288e1ba2a296c5e43edd7862399be23c335cb244f3dc54d43`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (27/10/2026) · Cập nhật 27/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (27/10/2026) · Cập nhật 28/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -52,7 +52,7 @@ Trọn gói: 102.000.000đ
 - 10 nămBảo hành chính hãng
 - Gồm VATGiá trọn gói toàn xe
 
-Sedan: Vios, City, Mazda 3, Camry… · SUV 5 chỗ: CX-5, CR-V, VF 6/7… · SUV 7 chỗ / MPV: VF 8, Fortuner, Carnival, Innova… Loại xe xác nhận khi kiểm tra.
+Sedan: Vios, City, Mazda 3, Camry… · SUV / CUV cỡ vừa: CX-5, CR-V, VF 6/7… · SUV cỡ lớn / MPV: VF 8, Fortuner, Carnival, Innova… Nhóm giá chia theo kích thước thân xe (diện tích dán), không theo số chỗ; nhóm chính xác xác nhận khi kiểm tra xe.
 
 Giá niêm yết dán toàn xe theo trang sản phẩm trên auto365.vn, đã gồm VAT; dòng có bảng giá theo loại xe ghi "từ" (giá Sedan) kèm giá SUV/MPV. Giá cần xác nhận lại theo phạm vi panel và tình trạng bề mặt; dán từng phần báo giá riêng.
 
@@ -410,7 +410,7 @@ _[Form: Họ và tên * · Số điện thoại * · Hãng xe · Dòng xe / đ�
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 27/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 27/10/2026
+Kiểm duyệt nội dung hub PPF ngày 27/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 28/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
