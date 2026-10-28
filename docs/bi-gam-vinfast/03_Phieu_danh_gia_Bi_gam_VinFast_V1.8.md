@@ -8,6 +8,25 @@
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-27 (duyệt lại 27/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
+## Tự chấm lại 28/10/2026 sau bản vá (thang 100 của phiếu 28/10)
+
+Tự chấm trên preview theo quy ước: không trừ vì production chưa đăng; không trừ lỗi nằm ở trang đích ngoài hub. **≈93/100** (phiếu sơ bộ 88).
+
+| Tiêu chí | Phiếu | Tự chấm | Căn cứ |
+|---|---|---|---|
+| Search intent, cấu trúc SEO | 14/15 | 14/15 | Title/H1/canonical đúng; H2 "Tìm gần đây/Mọi người hay tìm/Danh mục" thuộc header shell website |
+| Tư vấn kỹ thuật, claim | 14/15 | 15/15 | C1 Limo Green 2.0/3.0 inch có hồ sơ trang con (17 mẫu, anh Đạo duyệt); C2 đã bỏ câu lặp |
+| Nội dung theo dòng xe | 13/15 | 13/15 | 6/19 dòng có hồ sơ riêng — chỉ tăng khi có case lắp thật |
+| GEO, AEO, FAQ | 9/10 | 9/10 | 8 FAQ phủ điện, hồ sơ, địa phương, chuẩn bị, thời gian, đăng kiểm, giá, bảo hành |
+| EEAT | 9/10 | 10/10 | Người duyệt + ngày duyệt; bảng ảnh/nguồn ở 02; case từ bài đã đăng |
+| Internal link | 9/10 | 9/10 | 67/67 link 200 |
+| Trải nghiệm | 8/10 | 9/10 | Hết `$ is not defined` (nạp jQuery, 7a529ee); không tràn ngang 375–1366 |
+| CTA, chuyển đổi | 7/10 | 9/10 | Form POST /api/leads, lead test #228 vào CRM 22/10 |
+| Sẵn sàng xuất bản | 5/5 | 5/5 | Khối nội bộ chỉ hiện pages.dev/localhost |
+| **Tổng** | **88** | **≈93** | |
+
+Không trừ trên hub: T3 sao 0 (danh bạ chi nhánh đích; hub không xuất AggregateRating). IT khi đăng: bỏ noindex (meta + `X-Robots-Tag`), xoá khối nội bộ, test lại form/CRM, đo GSC/CWV.
+
 ## Phiếu V1.9 28/10/2026 (88/100 sơ bộ, CẦN FIX) — xử lý cùng ngày
 
 | ID | Phụ trách | Lỗi | Ưu tiên | Đã làm / bằng chứng | Trạng thái |
