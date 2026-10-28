@@ -290,6 +290,12 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-card h3{font-weight:600}.h3m-card h3 b{color:var(--r);font-weight:700}
 .h3m-card__price .h3m-card__from{color:var(--r);font-size:26px;font-weight:700;letter-spacing:-.3px}
 .h3m-card__tags li{background:#f2f3f5;color:#3a3f47}
+.h3m-trust{border-top:0;padding-top:0;margin-top:32px;gap:14px}
+.h3m-trust>div{position:relative;padding:18px 18px 16px;border-radius:12px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.h3m-trust>div:before{content:'';position:absolute;left:18px;top:0;width:28px;height:3px;border-radius:0 0 3px 3px;background:var(--r)}
+.h3m-trust b{font-size:24px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px}
+.h3m-trust span{opacity:.85;font-size:13px}
+@media (max-width:640px){.h3m-trust{gap:10px;margin-top:22px}.h3m-trust>div{padding:14px 12px 12px}.h3m-trust>div:before{left:12px}.h3m-trust b{font-size:19px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
