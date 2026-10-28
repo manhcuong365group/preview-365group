@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365 |
 | Meta description (146 ký tự) | Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm VinFast theo từng dòng xe |
-| dateModified | 2026-10-27 |
+| dateModified | 2026-10-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `fced019f651632d823857b2c562a95d25d66d3e164506cf46adbd560f24bd7a7` |
-| SHA-256 content-src.html | `4a110c36b223efdc1e1cd8a820983a75e581b82024b11cf999d70e8f25f40fee` |
+| SHA-256 index.html | `aa08402e80ba88c6ad6c204be4cb8e0794aaa25b60062cf7380da99eefa81e8f` |
+| SHA-256 content-src.html | `536a4907f143a50472092bf90fd24f5a7f8965e1b4ad94495b73e8a3e2554762` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -81,7 +81,7 @@ _Dòng xe:_ VF 2, VF 3, VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7, VF Wild, VF e34
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Muốn bổ sung, ưu tiên màu ánh sáng hợp mắt và ngân sách; không cần chọn mẫu công suất cao nhất.
-- Kỹ thuật viên kiểm tra điểm cấp nguồn, dây/giắc theo đời và phiên bản xe; phương án tư vấn không can thiệp hệ thống pin cao áp.
+- Điểm cấp nguồn được kiểm tra theo đời và phiên bản xe (xem lưu ý hệ điện ở trên).
 
 Đã lắp: VF 3 – GTR G1 Turbo V2, VF 6 – F10 Turbo V2 4300K, VF 7 – F10 Turbo V2 5500K (https://auto365.vn/vinfast-vf3-2025-plus-lap-bi-gam-gtr-g1-turbo-v2, https://auto365.vn/vinfast-vf-6-lap-bi-gam-x-light-f10-turbo-v2-4300k, https://auto365.vn/vinfast-vf-7-plus-2025-lap-bi-gam-x-light-f10-turbo-v2-5500k)
 

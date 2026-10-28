@@ -8,6 +8,21 @@
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-27 (duyệt lại 27/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
+## Phiếu V1.9 28/10/2026 (88/100 sơ bộ, CẦN FIX) — xử lý cùng ngày
+
+| ID | Phụ trách | Lỗi | Ưu tiên | Đã làm / bằng chứng | Trạng thái |
+|---|---|---|---|---|---|
+| C1 | Content + anh Đạo | "Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch" | Cao | Giữ câu: trang con `/vinfast/limo-green` (anh Đạo duyệt) liệt kê 17 mẫu lens 2.0 và 3.0 inch lắp Limo Green; link "Xem mẫu lắp được cho Limo Green →" ngay dưới câu | Có bằng chứng — reviewer đối chiếu |
+| C2 | Content | Lặp ý nguồn/dây giắc/pin cao áp | TB | Thẻ "Xe điện đi phố": bỏ câu pin cao áp, thay "Điểm cấp nguồn được kiểm tra theo đời và phiên bản xe (xem lưu ý hệ điện ở trên)". Cảnh báo an toàn giữ ở box lưu ý + FAQ | Đã sửa |
+| C3 | Content | Ảnh → xe → nguồn → alt | TB | Bảng ảnh và nguồn ở [02](02_Huong_dan_CMS_SEO_Bi_gam_VinFast_V1.8.md); ảnh case lấy từ bài đã đăng auto365.vn | Reviewer đối chiếu |
+| T1 | IT | Khối kiểm tra nội bộ | Cao | `hidden` mặc định, script chỉ mở trên pages.dev/localhost; IT xoá aside + script khi tích hợp | IT xác nhận DOM production |
+| T2 | IT | Console `$ is not defined` | Cao | Từ script shell (jquery.toc/content.js) của website | CHỜ IT |
+| T3 | IT | Sao 0 | Cao | Trang hub không xuất AggregateRating (0 lần trong HTML); 0 sao ở danh bạ chi nhánh đích | CHỜ IT/Operations |
+| T4 | IT | Form/CRM | Cao | POST /api/leads, chỉ báo thành công khi `success:true`; test lead 22/10 đã vào CRM (#228) | Test lại trên production |
+| T5 | SEO/IT | Canonical/robots/schema/GSC/CWV | TB | Canonical trỏ auto365.vn; schema khớp visible (FAQ 8 câu) | CHỜ DỮ LIỆU production |
+
+dateModified 2026-10-28; lastReviewed giữ 2026-10-27 (C2 chỉ bỏ câu lặp, không đổi nội dung kỹ thuật).
+
 ## R5 tự chấm 27/10/2026 (chuẩn V1.9, sau bản vá R4 + duyệt 27/10)
 
 Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu**. Phần đủ bằng chứng: **≈57/60** (R4: 55,9). Phần CX **/40** giữ nguyên chờ bằng chứng production.
