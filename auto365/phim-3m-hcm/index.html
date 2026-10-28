@@ -271,8 +271,8 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-linkbtn{color:var(--t);text-decoration:underline}
 .h3m-hero__tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25)}
 .h3m-hero__ben li{border-left-color:rgba(255,255,255,.4)}
-.h3m-card__badge{background:#16181d;color:#fff}
-.h3m-card__cta{background:#23262d;color:#fff;border:0}.h3m-card__cta:hover{background:var(--r)}
+.h3m-card__badge{background:#41464f;color:#fff}
+.h3m-card__cta{background:#41464f;color:#fff;border:0}.h3m-card__cta:hover{background:var(--r)}
 .h3m-card:hover,.h3m-more:hover,.h3m-card__sub a:hover{border-color:#16181d;color:inherit}
 .h3m-pl a:hover b{color:inherit;text-decoration:underline}
 .h3m-hq__stamp{background:#16181d;border:1px solid rgba(255,255,255,.25)}.h3m-hq__kicker{color:#c9ccd1}
@@ -286,7 +286,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-hero__r .h3m-hero__ben{grid-template-columns:repeat(3,minmax(0,1fr))}
 .h3m-hero__l .h3m-hero__gift{margin-bottom:0}
 @media (max-width:1024px){.h3m-hero__in{grid-template-columns:1fr;gap:20px}.h3m-hero__r{padding:0;background:none;border:0;backdrop-filter:none;-webkit-backdrop-filter:none}}
-.h3m-card{border-top:3px solid #23262d}
+.h3m-card{border-top:3px solid #41464f}
 .h3m-card h3{font-weight:600}.h3m-card h3 b{color:var(--r);font-weight:700}
 .h3m-card__price .h3m-card__from{color:var(--r);font-size:26px;font-weight:700;letter-spacing:-.3px}
 .h3m-card__tags li{background:#f2f3f5;color:#3a3f47}
@@ -667,8 +667,9 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần
  var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
  function applyCases(){var m=cards.filter(function(c){return (!cf.loai||c.dataset.loai.split('|').indexOf(cf.loai)>-1)&&(!cf.brand||c.dataset.brand===cf.brand)});
-  cards.forEach(function(c){c.hidden=true});m.forEach(function(c,i){c.hidden=i>=shown});
-  cnt.textContent='Hiển thị '+Math.min(shown,m.length)+'/'+m.length+' hồ sơ xe thực tế';moreC.hidden=m.length<=shown}
+  var gEl=cards[0].parentNode,cols=getComputedStyle(gEl).gridTemplateColumns.split(' ').length||1,lim=Math.ceil(shown/cols)*cols;
+  cards.forEach(function(c){c.hidden=true});m.forEach(function(c,i){c.hidden=i>=lim});
+  cnt.textContent='Hiển thị '+Math.min(lim,m.length)+'/'+m.length+' hồ sơ xe thực tế';moreC.hidden=m.length<=lim}
  document.querySelectorAll('.h3m-cfx__chips').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-plus')){g.querySelectorAll('.is-x').forEach(function(x){x.hidden=false});b.hidden=true;return}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
