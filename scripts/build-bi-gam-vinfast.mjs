@@ -171,5 +171,9 @@ ${shell.slice(mainClose)
 // nhãn nhu cầu trong form (nội dung + nút nổi): hiển thị có bi gầm, giữ nguyên giá trị gửi API
 const outFixed = out.split('<option selected>Đèn – Bi LED</option>').join('<option value="Đèn – Bi LED" selected>Đèn – Bi gầm, Bi LED</option>');
 if (outFixed === out) throw new Error('priority option not found');
-fs.writeFileSync(path.join(dir, 'index.html'), outFixed);
+// Shell gốc nạp main.js/jquery.toc/content.js nhưng thiếu jQuery → nạp jQuery (defer, cùng bản production) ngay trước main.js
+const MAINJS = '<script defer type="text/javascript" src="https://v2.auto365.vn/assets/frontend/js/main.js';
+if (!outFixed.includes(MAINJS)) throw new Error('main.js script not found');
+const outJq = outFixed.includes('jquery-3.6.0.min.js') ? outFixed : outFixed.replace(MAINJS, '<script defer src="https://v2.auto365.vn/assets/frontend/vendor/jquery/jquery-3.6.0.min.js"></script>\n' + MAINJS);
+fs.writeFileSync(path.join(dir, 'index.html'), outJq);
 console.log('built', path.join(dir, 'index.html'), out.length, { models: models.length, cases: cases.length, faqs: faqs.length });
