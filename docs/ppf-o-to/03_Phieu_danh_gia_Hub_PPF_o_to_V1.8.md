@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `04984975cc78de0c027946926bd2461ff2741e50cf5621a2d5a40dd899f4f80d` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `50285418ad95bd20b6db5123054a57b890f9a2187be5039760885d80c33f72de` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
