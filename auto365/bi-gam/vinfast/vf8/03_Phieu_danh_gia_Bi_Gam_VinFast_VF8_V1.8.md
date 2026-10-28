@@ -4,7 +4,7 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `22051ffdd7b944959dd40faa773d5253ff92463622cb3102c3999a9726e1fdfc` (cùng mã trong 02/04) |
+| SHA-256 index.html | `6cd273d449d621f3e53feef95164bce359a41063f815c78cef30cb1a5074ac67` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 92,6/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF8"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF8; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -18,7 +18,7 @@
 | Trang | Bi gầm VinFast VF8 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `22051ffdd7b944959dd40faa773d5253ff92463622cb3102c3999a9726e1fdfc` (cùng mã trong 02/04) |
+| SHA-256 index.html | `6cd273d449d621f3e53feef95164bce359a41063f815c78cef30cb1a5074ac67` (cùng mã trong 02/04) |
 | Ngày chấm | 24/10/2026, chấm trên preview |
 | Reviewer | Nguyễn Quang Đạo — duyệt kỹ thuật 24/10/2026 |
 
