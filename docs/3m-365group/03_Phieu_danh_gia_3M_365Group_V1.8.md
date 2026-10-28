@@ -1,9 +1,46 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
-- Trang: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (bản 22/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: Claude, tự đánh giá lần 13. CHƯA thay cho chấm của reviewer.
-- Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn: Auto365 SEO/GEO/HTML V1.8, đủ 12 tiêu chí có U3, thang /100. Chấm trên preview.
+- Trang: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (bản 28/10/2026, preview, noindex đúng chủ đích)
+- Người chấm: reviewer R5 (27/10/2026, V1.9) + Claude ghi phần vá 28/10/2026. Claude không thay chấm của reviewer.
+- Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
+
+## Xử lý phiếu tái kiểm R5 / V1.9 (reviewer 27/10/2026 — bản vá 28/10/2026)
+
+Kết quả R5 của reviewer: điểm phần đã chấm **62,5/70** (C1 8,5 · C2 9 · C3 9 · S1 9,5 · S2 9 · G1 9 · G2 8,5). S3, G3, U1, U2, U3 còn CX. Trải nghiệm thương hiệu desktop 8,8/10. **Chưa ký ĐẠT V1.9.** Phiếu này chỉ ghi phần đã vá và phần còn mở; không tự quy đổi điểm /100, chờ reviewer tái kiểm.
+
+### Đã vá trên preview
+
+| Mã | Việc reviewer giao | Đã làm (28/10/2026) | Trạng thái |
+|---|---|---|---|
+| F01 | Tách chú thích IRR, không gộp điều kiện đo; sửa diễn giải TSER | Sửa 5 vị trí: ghi chú điều kiện đo của tab, đoạn mở đầu + caption bảng 12 mã, ghi chú mục thuật ngữ, DefinedTermSet. TSER/VLT/UVR/Glare R ghi "ước tính trên kính xanh 6 mm (VLT 73%)"; IRR ghi "đo trên phim, dải 900–1.000 nm, không có kính" theo 3M VN. Bỏ câu "điều kiện đo trùng với 3M VN" và "TSER càng cao, xe càng ít nóng"; thay bằng "trong cùng điều kiện đo…, nhiệt thực tế còn phụ thuộc kính, diện tích dán, thời tiết, cách sử dụng". Không đổi số liệu, không đổi IRR → IRER | Chờ Product/anh Hoàng chốt điều kiện từng chỉ tiêu (nhất là IRR nhóm NR/IR trong PDF 260815) |
+| F02 | Bỏ `.m3-care__list` khỏi quy tắc cuộn ngang ≤560 px | Đã xoá khỏi cả 2 selector `:is(...)`; 4 bước chăm sóc hiển thị dọc. Kiểm 375 px: grid 1 cột, không tràn ngang. Dải cấu hình/case vẫn cuộn ngang | Đóng phần code; còn QA 360/390/430/768 px có ảnh |
+| F03 | Nhãn 3 nhóm đại lý phải khớp đích | Chưa có dữ liệu phân nhóm đáng tin → đổi CTA cả 3 thẻ thành "Mở danh sách đại lý toàn quốc →" để khách biết đang mở danh sách chung; không tạo bộ lọc trống | Còn mở phần lọc theo nhóm (cần Operations phân loại) |
+| F04 | Sapo hướng trải nghiệm, bỏ "Trang này gom…" | Sapo: "Khám phá Crystalline CR BLK, Ceramic IR và Ceramic NR. So sánh độ sáng, khả năng cản nhiệt và cấu hình theo xe, rồi chọn đại lý để được tư vấn." (thứ tự theo 3 tab) | Đóng |
+| P2 tab | Mỗi tab nổi bật dữ kiện dễ quyết định, chỉ tiêu dài mở thêm | 3 tab cùng khung 7 ô (Mát xe, Chặn UV, Độ sáng kính, Bớt chói, Công nghệ, Bảo hành, Giá); số chi tiết mã kính lái/IRR chuyển về bảng 12 mã; ghi chú điều kiện đo là hàng riêng cuối tab; 3 tab cao bằng nhau trên desktop | Đóng |
+| P2 tài liệu | Đường tra cứu/bảo hành dễ thấy | Khối "Tài liệu và hỗ trợ" đặt trước Chăm sóc phim/FAQ; dưới bảng 12 mã có link tải PDF + link tới khối tài liệu | Đóng |
+
+### Thay đổi giao diện khác theo chủ trang (28/10/2026)
+
+- Bảng 12 mã: đầu cột CR BLK xám, NR xanh lá, IR xanh dương; hàng TSER nền xanh nhạt.
+- Bỏ màu đỏ ở chữ, link trong ghi chú, viền thẻ, nhãn, icon; đỏ chỉ còn logo, nút chính, dấu * bắt buộc. Nút "Nhận báo giá gói này" viền đỏ mảnh.
+- Mục "Cách đọc các chỉ số": 1 accordion chung, 5 chỉ số luôn mở.
+- 3 ghi chú dưới 6 cấu hình (PRO, TSER, Giá) rút gọn, 1 hàng 3 cột; vẫn giữ đủ điều kiện giá (gồm công + VAT, Minicar, cửa sổ trời).
+- Bấm vào bất kỳ đâu trong thẻ gói mở popup form, chọn sẵn đúng gói (link "Xem dòng…" vẫn điều hướng).
+- Chữ hiển thị "365Group" → "365 Group - 3M Authorized Distributor in Vietnam" (32 chỗ + 3 câu FAQ schema). Title, meta, tên Organization trong schema giữ "365Group" theo chủ trang (28/10). Menu đầu trang ghi "Về 365 Group" để header không tràn.
+- dateModified 28/10/2026; lastReviewed giữ 23/10/2026 — reviewer xác định phạm vi duyệt lại cho các thay đổi sau ngày này.
+
+### Còn mở (CX / ngoài phạm vi code)
+
+| Mã | Việc | Đầu mối |
+|---|---|---|
+| F01 | Chốt điều kiện đo TSER/VLT/UVR/Glare R/IRR theo nguồn từng nhóm mã | Product / anh Hoàng |
+| F03 | Phân nhóm Pro Shop / Auto365 / đại lý khác để lọc thật; danh mục + ngày đối chiếu cho 224 đại lý / 32 tỉnh | Operations |
+| F05 | Production `https://3m.365group.com.vn/phim-cach-nhiet-3m` vẫn 404; route, PDF, ảnh, OG, robots/canonical | IT / SEO |
+| F06 | Hồ sơ V1.9 cùng bản (01/02/03 hiện đứng tên V1.8), reviewer duyệt bản sửa | Reviewer + SEO/IT |
+| F07 | Thử gửi /api/leads, phân tuyến, `generate_lead` | Dev + vận hành |
+| U1 | QA mobile/tablet có ảnh: 360/390/430/768/1024 px, tab, popup, bàn phím | QA |
+| N4 | Case Ceramic IR thật; ảnh hero kính/khoang xe (đề xuất) | Content / Design |
 
 ## Tự chấm lần 5 (bản 22/10/2026, có form tư vấn)
 
@@ -276,7 +313,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `27f190e983d0ec5bda8871b427d164d10da0cf5d7a188a1f52f2fdf3a9e4aa99` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `de4535533017cf79344b4ec7f7065cb13c65f29b501947337ff46dceb4bcaf74` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
