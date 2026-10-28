@@ -648,5 +648,6 @@ document.getElementById("m3-lb").addEventListener("click",function(e){if(e.targe
 function sel(b){bs.forEach(function(x){var on=x===b;x.setAttribute("aria-selected",String(on));x.tabIndex=on?0:-1;document.getElementById(x.getAttribute("aria-controls")).hidden=!on})}
 bs.forEach(function(b,i){b.addEventListener("click",function(){sel(b)});b.addEventListener("keydown",function(e){var k=e.key==="ArrowRight"?1:e.key==="ArrowLeft"?-1:0;if(k){var n=bs[(i+k+bs.length)%bs.length];sel(n);n.focus()}})})})();</script>
 <script>(function(){var ps=[].slice.call(document.querySelectorAll(".m3-tabs__panel"));function eq(){var h=0;if(innerWidth<769){ps.forEach(function(p){p.style.minHeight=""});return}ps.forEach(function(p){p.style.minHeight="";var hd=p.hidden;p.hidden=false;h=Math.max(h,p.offsetHeight);p.hidden=hd});ps.forEach(function(p){p.style.minHeight=h+"px"})}eq();addEventListener("resize",eq);addEventListener("load",eq)})();</script>
+<script>document.querySelectorAll(".m3-card").forEach(function(c){var q=c.querySelector(".m3-quote");if(!q)return;c.style.cursor="pointer";c.addEventListener("click",function(e){if(e.target.closest("a,button,summary,input,select"))return;q.click()})});</script>
 </body>
 </html>
