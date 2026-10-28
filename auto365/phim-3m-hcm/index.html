@@ -278,7 +278,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-hq__stamp{background:#16181d;border:1px solid rgba(255,255,255,.25)}.h3m-hq__kicker{color:#c9ccd1}
 .h3m-band{background:#f2f3f5;color:var(--t);border-top:1px solid #e4e6ea;border-bottom:1px solid #e4e6ea}.h3m-band .h3m-btn--ghost{border-color:#c9cdd3;color:var(--t)}.h3m-band .h3m-btn--red{background:var(--r);color:#fff}
 .h3m-modal__pk{background:#f2f3f5}
-.h3m-why2__list li:before{color:var(--t)}
+.h3m-why2__list li:before{content:none;display:none}.h3m-why2__list li{padding-left:18px}
 .h3m-tl li:before{background:#5b616b;box-shadow:0 0 0 4px #eef0f3}
 .h3m-hq__pts li:before{background:rgba(255,255,255,.18)}
 .h3m-hero__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end}
@@ -296,6 +296,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-trust b{font-size:24px;font-weight:700;letter-spacing:-.3px;margin-bottom:4px}
 .h3m-trust span{opacity:.85;font-size:13px}
 @media (max-width:640px){.h3m-trust{gap:10px;margin-top:22px}.h3m-trust>div{padding:14px 12px 12px}.h3m-trust>div:before{left:12px}.h3m-trust b{font-size:19px}}
+.h3m-sec .h3m-h2 em,.h3m-h2 em{color:var(--r)}.h3m-why2 .h3m-eyebrow{color:#9aa0a8}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -590,9 +591,10 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
     <input class="h3m-in" name="fullname" aria-label="Họ và tên" placeholder="Họ và tên *" autocomplete="name" required>
     <input class="h3m-in" name="phone" type="tel" aria-label="Số điện thoại" placeholder="Số điện thoại *" inputmode="tel" autocomplete="tel" required>
     <input class="h3m-in" name="car_model" aria-label="Dòng xe / đời xe" placeholder="Dòng xe (vd: Camry 2024)">
+    <select class="h3m-sel h3m-in" name="province" aria-label="Khu vực"><option>TP.HCM</option><option>Bình Dương</option><option>Đồng Nai</option><option>Long An / Tây Ninh</option><option>Bà Rịa – Vũng Tàu</option><option>Tỉnh/thành khác</option></select>
     <select class="h3m-sel h3m-in" name="vehicle_group" aria-label="Nhóm xe"><option value="">Nhóm xe (chưa rõ cũng được)</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select>
     <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
-    <select class="h3m-sel full" name="package_name" id="f-pk" aria-label="Gói quan tâm"><option value="">Gói phim quan tâm (chưa rõ cũng được)</option></select>
+    <select class="h3m-sel" name="package_name" id="f-pk" aria-label="Gói quan tâm"><option value="">Gói phim quan tâm (chưa rõ cũng được)</option></select>
     <input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
     <label class="ck full"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
    </div>
@@ -617,7 +619,8 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <p class="h3m-modal__pk full" id="h3m-modal-pk" hidden></p>
   <label>Họ và tên<input name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
   <label>Số điện thoại<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
-  <label class="full">Dòng xe / đời xe <small>(không bắt buộc)</small><input name="car_model" type="text" placeholder="VD: Camry 2024, VF8, CX-5"></label>
+  <label>Khu vực<select name="province"><option>TP.HCM</option><option>Bình Dương</option><option>Đồng Nai</option><option>Long An / Tây Ninh</option><option>Bà Rịa – Vũng Tàu</option><option>Tỉnh/thành khác</option></select></label>
+  <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input name="car_model" type="text" placeholder="VD: Camry 2024, VF8, CX-5"></label>
   <details class="h3m-modal__opt full"><summary>Thêm thông tin để tư vấn sát hơn <small>(không bắt buộc)</small></summary><div class="h3m-modal__optg"><label>Nhóm xe<select name="vehicle_group"><option value="">Chưa rõ</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select></label>
   <label>Nhu cầu ưu tiên<select name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option selected>Chưa chắc, cần tư vấn</option></select></label>
   <label>Gói đang quan tâm<select name="package_name"><option value="">Chưa chắc, cần tư vấn</option><option>3M CR BLK PRO</option><option>3M CR BLK</option><option>3M Crystalline Hybrid Pro</option><option>3M Crystalline Hybrid</option><option>3M Ceramic IR</option><option>3M Ceramic Hybrid</option></select></label>
@@ -684,7 +687,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    if(!/^0(3|5|7|8|9)\d{8}$/.test(phone))return show('Số điện thoại chưa đúng (vd: 0365 365 365).');
    if(!f.consent.checked)return show('Vui lòng xác nhận đồng ý để Auto365 liên hệ.');
    var d=new FormData(f),q=new URLSearchParams(location.search);
-   d.set('phone',phone);d.set('service','Phim cách nhiệt 3M');d.set('province','TP.HCM');
+   d.set('phone',phone);d.set('service','Phim cách nhiệt 3M');d.set('province',d.get('province')||'TP.HCM');
    d.set('source_page','Landing 3M HCM'+(f.dataset.lead?' – '+f.dataset.lead:''));d.set('source_url',location.href);d.set('referrer',document.referrer||'');
    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function(k){d.set(k,q.get(k)||'')});
    var trackedPackage=String(d.get('package_name')||''),trackedGroup=String(d.get('vehicle_group')||'');
