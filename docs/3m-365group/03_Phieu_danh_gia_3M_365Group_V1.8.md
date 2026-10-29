@@ -1,9 +1,51 @@
 # 03 — Phiếu đánh giá V1.8: Phim cách nhiệt ô tô 3M (365Group)
 
-- Trang: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (bản 28/10/2026, preview, noindex đúng chủ đích)
-- Người chấm: reviewer R5 (27/10/2026, V1.9) + Claude ghi phần vá 28/10/2026. Claude không thay chấm của reviewer.
+- Trang: `https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/` (bản 29/10/2026, preview, noindex đúng chủ đích)
+- Người chấm: reviewer R6 (28/10/2026, V1.9) + Claude ghi phần xử lý 29/10/2026. Claude không thay chấm của reviewer.
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
+
+## Tái kiểm R6 / V1.9 (reviewer 28/10/2026) — xử lý 29/10/2026
+
+Kết quả R6 của reviewer: điểm phần đã chấm **64/70** (C1 9 · C2 9 · C3 9,5 · S1 9,5 · S2 9 · G1 9 · G2 9), tăng từ 62,5/70. Trải nghiệm thương hiệu desktop 8,9/10. S3, G3, U1, U2, U3 còn CX. **Chưa ký ĐẠT V1.9**, chưa xác nhận sẵn sàng production. Reviewer đóng 3 lỗi R5 (gộp IRR, cuộn ngang phần chăm sóc, CTA 3 nhóm đại lý); N6 chuyển từ CHƯA ĐẠT sang CX về hồ sơ.
+
+### Đã làm 29/10/2026
+
+| Mục R6 | Việc | Kết quả |
+|---|---|---|
+| 3.3 Vá chữ nhỏ | Đồng nhất cụm "trong dải 900–1.000 nm, trên phim với lớp lót, không có kính" ở ghi chú 3 tab, caption bảng 12 mã, ghi chú thuật ngữ, glossary, DefinedTermSet (7 chỗ) | Xong |
+| 3.3 Vá chữ nhỏ | Ghi chú TSER dưới 6 cấu hình thêm: "nhiệt độ thực tế trong xe còn phụ thuộc kính, diện tích dán, thời tiết và cách sử dụng" | Xong |
+| F02 QA mobile/tablet | Kiểm trên local (cùng source với preview) ở 360×780, 390×844, 430×932, 768×1024, 1024×768 | Xem bảng QA bên dưới |
+| Trạng thái nội bộ | Khối nội bộ ghi R6 64/70, CX còn lại, chưa ký ĐẠT V1.9 | Xong |
+| Hồ sơ | 01 xuất lại theo source 29/10; SHA đồng bộ 01/02/03; dateModified 29/10, lastReviewed giữ 23/10 | Xong |
+
+### Kết quả QA F02 (29/10/2026, trình duyệt giả lập viewport — chưa phải thiết bị thật)
+
+| Kích thước | Không tràn ngang | Chăm sóc phim | Dải cấu hình | 3 tab | Popup (CR BLK PRO… gói thứ 2) |
+|---|---|---|---|---|---|
+| 360×780 | Đạt | 1 cột, đọc dọc | Cuộn ngang | Bấm được, NR đổi panel | Mở, vừa màn hình, focus ô điện thoại, nút gửi tới được, đóng xong còn 1 form |
+| 390×844 | Đạt | 1 cột | Cuộn ngang | Đạt | Đạt như trên |
+| 430×932 | Đạt | 1 cột | Cuộn ngang | Đạt | Đạt như trên |
+| 768×1024 | Đạt | 2 cột | Lưới, không cuộn | Đạt | Đạt như trên |
+| 1024×768 | Đạt | 2 cột | Lưới | Đạt | Đạt như trên |
+
+Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web Vitals, gửi lead thật.
+
+### Không làm (giữ theo chủ trang)
+
+- Đề xuất R6 rút gọn lặp tên "365 Group - 3M Authorized Distributor in Vietnam" (mục 7, tùy chọn): chủ trang đã yêu cầu dùng tên đầy đủ ở chữ hiển thị (28/10) → giữ nguyên, chờ chủ trang quyết.
+- Ảnh hero kính/khoang xe: chưa có tư liệu phù hợp.
+
+### Còn mở sau R6
+
+| Mã R6 | Đầu ra để đóng | Đầu mối |
+|---|---|---|
+| F01 | Bảng đối chiếu nguồn/điều kiện theo dòng CR BLK / IR / NR và từng chỉ tiêu (gồm nhãn kính "Auto75"), duyệt bản sửa sau 23/10 | Product / anh Hoàng + Content |
+| F02 | QA trên thiết bị thật (bàn phím ảo) nếu cần cho U1 | Cường + QA |
+| F03 | Danh mục 224 đại lý / 32 tỉnh đang hoạt động; nghiệm thu giao diện + dữ liệu các trang danh bạ đích | Operations + Cường |
+| F04 | Route production (đang 404), tài nguyên, robots/CDN, sitemap; loại khối nội bộ khỏi HTML xuất bản (không chỉ ẩn CSS) | Cường + SEO |
+| F05 | Thử /api/leads, phân tuyến, tracking trong phạm vi được phép | IT + đầu mối tư vấn |
+| F06 | Tùy chọn thiết kế: hero theo sản phẩm, giảm lặp tên dài | Design + Content (cần chủ trang duyệt) |
 
 ## Xử lý phiếu tái kiểm R5 / V1.9 (reviewer 27/10/2026 — bản vá 28/10/2026)
 
@@ -313,7 +355,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `de4535533017cf79344b4ec7f7065cb13c65f29b501947337ff46dceb4bcaf74` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `0cc00a9bce44974f06602d25502725bfde68268fe80450a4202b97e9683e9241` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

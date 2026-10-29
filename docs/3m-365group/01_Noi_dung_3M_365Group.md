@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `de4535533017cf79344b4ec7f7065cb13c65f29b501947337ff46dceb4bcaf74`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `0cc00a9bce44974f06602d25502725bfde68268fe80450a4202b97e9683e9241`
 Ngày xuất: 22/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -27,7 +27,7 @@ Dòng phim cao cấp của 3M dùng công nghệ quang học đa lớp, tông đ
 - Công nghệ Quang học 200 lớp, tông đen tiệp kính
 - Bảo hành Điện tử 3M 10 năm
 - Giá Trọn xe từ 9.000.000đ (cấu hình Crystalline Hybrid, Minicar); đồng bộ Crystalline từ 12.200.000đ. Đã gồm công thi công và VAT; giá theo xe do đại lý báo
-Số liệu theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (mã 260815, áp dụng từ 06/2026), Mức "đến" là mã đậm nhất của dòng, chi tiết từng mã xem bảng 12 mã. TSER, VLT, UVR và Glare R là hiệu suất ước tính trên kính ô tô xanh 6 mm (VLT 73%); IRR đo riêng trên phim trong dải 900–1.000 nm, không có kính (theo 3m.com.vn).
+Số liệu theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (mã 260815, áp dụng từ 06/2026), Mức "đến" là mã đậm nhất của dòng, chi tiết từng mã xem bảng 12 mã. TSER, VLT, UVR và Glare R là hiệu suất ước tính trên kính ô tô xanh 6 mm (VLT 73%); IRR đo riêng trong dải 900–1.000 nm, trên phim với lớp lót, không có kính (theo 3m.com.vn).
 Đối chiếu: 3M Việt Nam công bố cho toàn dòng Ceramic IR Series mức cản đến 66% TSER, 95% IRR, chặn đến 99,9% UV (3m.com.vn); các mã 365 Group - 3M Authorized Distributor in Vietnam phân phối nằm trong khoảng này.Xem dòng Ceramic IR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
 
 ### 3M™ Ceramic IR Series
@@ -40,7 +40,7 @@ Phim gốm Ceramic hồng ngoại, cân bằng giữa độ sáng, độ riêng 
 - Công nghệ Ceramic hồng ngoại
 - Bảo hành Điện tử 3M 10 năm
 - Giá Trọn xe từ 7.200.000đ (Minicar). Đã gồm công thi công và VAT; giá theo xe do đại lý báo
-Số liệu theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (mã 260815, áp dụng từ 06/2026), Mức "đến" là mã đậm nhất của dòng, chi tiết từng mã xem bảng 12 mã. TSER, VLT, UVR và Glare R là hiệu suất ước tính trên kính ô tô xanh 6 mm (VLT 73%); IRR đo riêng trên phim trong dải 900–1.000 nm, không có kính (theo 3m.com.vn).
+Số liệu theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (mã 260815, áp dụng từ 06/2026), Mức "đến" là mã đậm nhất của dòng, chi tiết từng mã xem bảng 12 mã. TSER, VLT, UVR và Glare R là hiệu suất ước tính trên kính ô tô xanh 6 mm (VLT 73%); IRR đo riêng trong dải 900–1.000 nm, trên phim với lớp lót, không có kính (theo 3m.com.vn).
 Xem dòng Ceramic NR → · Bảng thông số đầy đủ (PDF, 0,45 MB) · Tra bảng 12 mã
 
 ### 3M™ Ceramic NR Series
@@ -53,7 +53,7 @@ Dòng phim lai Nano Ceramic và Nano Reflective, mức đầu tư dễ tiếp c�
 - Công nghệ Lai Nano Ceramic và Nano Reflective
 - Bảo hành Điện tử 3M 10 năm
 - Giá Trọn xe từ 5.900.000đ (cấu hình Ceramic Hybrid, Minicar). Đã gồm công thi công và VAT; giá theo xe do đại lý báo
-Số liệu theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (mã 260815, áp dụng từ 06/2026), Mức "đến" là mã đậm nhất của dòng, chi tiết từng mã xem bảng 12 mã. TSER, VLT, UVR và Glare R là hiệu suất ước tính trên kính ô tô xanh 6 mm (VLT 73%); IRR đo riêng trên phim trong dải 900–1.000 nm, không có kính (theo 3m.com.vn).
+Số liệu theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (mã 260815, áp dụng từ 06/2026), Mức "đến" là mã đậm nhất của dòng, chi tiết từng mã xem bảng 12 mã. TSER, VLT, UVR và Glare R là hiệu suất ước tính trên kính ô tô xanh 6 mm (VLT 73%); IRR đo riêng trong dải 900–1.000 nm, trên phim với lớp lót, không có kính (theo 3m.com.vn).
 
 ## 6 cấu hình phim cách nhiệt 3M
 Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, được 365 Group - 3M Authorized Distributor in Vietnam gợi ý sẵn để chủ xe chọn nhanh hơn. Riêng Crystalline Hybrid và Hybrid PRO kết hợp hai dòng: kính lái dùng Crystalline CR BLK, kính hông và kính lưng dùng Ceramic NR.
@@ -70,7 +70,7 @@ Mỗi cấu hình là một cách phối mã phim cho từng vị trí kính, đ
 
 ### CR BLK PRO
 PRO: kính lái dùng CR BLK 40 (VLT 41%), đậm hơn CR BLK 50/60. Chọn theo độ đậm mong muốn, nên xem mẫu tại đại lý.
-TSER của mã kính lái càng cao thì càng ít năng lượng mặt trời lọt qua, trong cùng điều kiện đo (cách đọc chỉ số).
+TSER của mã kính lái càng cao thì càng ít năng lượng mặt trời lọt qua, trong cùng điều kiện đo; nhiệt độ thực tế trong xe còn phụ thuộc kính, diện tích dán, thời tiết và cách sử dụng (cách đọc chỉ số).
 Giá trọn xe đã gồm công thi công và VAT (bảng 3M AutoFilm, từ 06/2026). Minicar gồm VinFast VF 3, Wuling Hongguang Mini EV, Bestune Xiaoma, VinFast Minio Green và các xe cùng cỡ. Cửa sổ trời nhỏ tính bằng 1 ô kính sườn, panorama bằng 1 kính lái. Giá cụ thể do đại lý báo.
 
 ## Nhận tư vấn chọn cấu hình phim 3M  `#tu-van`
@@ -83,7 +83,7 @@ Hoặc gọi hotline 365 Group - 3M Authorized Distributor in Vietnam: 0363 365 
 ## Thông số kỹ thuật các mã phim 3M  `#thong-so`
 Theo bảng giá và thông số 3M AutoFilm (mã 260815, PDF) do 365 Group - 3M Authorized Distributor in Vietnam phát hành, áp dụng từ 06/2026. Các chỉ tiêu cần đọc cùng điều kiện đo ghi bên dưới; kết quả trên từng xe có thể khác theo loại kính.
 
-_Bảng: Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (áp dụng từ 06/2026); TSER, VLT, UVR, Glare R ước tính trên kính ô tô xanh 6 mm (VLT 73%), IRR đo trên phim trong dải 900–1.000 nm_
+_Bảng: Thông số kỹ thuật 12 mã phim 3M Crystalline CR BLK, Ceramic NR và Ceramic IR theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam (áp dụng từ 06/2026); TSER, VLT, UVR, Glare R ước tính trên kính ô tô xanh 6 mm (VLT 73%), IRR đo trong dải 900–1.000 nm, trên phim với lớp lót, không có kính_
 | Chỉ số | CR BLK15 | CR BLK35 | CR BLK40 | CR BLK50 | CR BLK60 | NR5 | NR15 | NR25 | NR35 | IR15 | IR25 | IR50 |
 | TSERTổng năng lượng bị loại bỏ | 64% | 60% | 58% | 56% | 54% | 69% | 65% | 59% | 51% | 63% | 61% | 54% |
 | VLTĐộ xuyên sáng | 14% | 33% | 41% | 48% | 57% | 7% | 14% | 29% | 43% | 16% | 25% | 50% |
@@ -100,7 +100,7 @@ Tỷ lệ ánh sáng nhìn thấy đi qua kính đã dán phim. VLT càng cao k�
 Tỷ lệ tia UV bị chặn lại, liên quan tới bảo vệ da và hạn chế bạc màu nội thất.
 Mức giảm chói của ánh sáng nhìn thấy so với kính không dán phim; thường tỷ lệ nghịch với VLT.
 IRR đo khả năng loại bỏ hồng ngoại trong dải 900–1.000 nm; 3M mô tả phép đo trên phim với lớp lót, không có kính. Chỉ số này không đồng nghĩa tỷ lệ tổng năng lượng mặt trời bị loại bỏ (TSER).
-TSER, VLT, UVR và Glare R trong bảng là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%) theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam; IRR đo riêng trên phim (dải 900–1.000 nm, không có kính) theo cách 3M mô tả. Chỉ nên so sánh các mã trong cùng điều kiện đo.
+TSER, VLT, UVR và Glare R trong bảng là hiệu suất ước tính khi dán lên kính ô tô xanh lá dày 6 mm (Auto75, VLT 73%) theo bảng 3M AutoFilm của 365 Group - 3M Authorized Distributor in Vietnam; IRR đo riêng trong dải 900–1.000 nm, trên phim với lớp lót, không có kính, theo cách 3M mô tả. Chỉ nên so sánh các mã trong cùng điều kiện đo.
 
 ## Chứng nhận từ 3M  `#chung-nhan`
 Giấy chứng nhận nhà phân phối và các chứng nhận 3M của hệ thống 365 Group - 3M Authorized Distributor in Vietnam – Auto365
@@ -214,7 +214,7 @@ Bài viết do 365 Group - 3M Authorized Distributor in Vietnam – nhà phân p
 - Email: kinhdoanh@365group.com.vn
 - Văn phòng: Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh
 - Website nhà phân phối: 3m.365group.com.vn
-- Cập nhật lần cuối: 28/10/2026
+- Cập nhật lần cuối: 29/10/2026
 
 ## Ảnh và ALT
 
