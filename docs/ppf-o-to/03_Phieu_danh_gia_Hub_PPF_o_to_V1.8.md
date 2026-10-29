@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `3ac4d2edc78fc30f0dbf320e3b481fffac8d9cd60a2393722662c84aa2b0d0d9` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `37e2acb5e6049fa25f9247b4015f9eeafbd092ecea5b377a7d0f50f5fc8d48d7` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -227,4 +227,4 @@ Ghi chú 28/10 (giao diện theo góp ý sếp): bỏ dải "Tìm nhanh theo t�
 
 Kiểm: desktop và mobile 375 px, không tràn ngang, không lỗi console. dateModified 2026-10-29; lastReviewed giữ 2026-10-28.
 
-Bổ sung 29/10/2026 (chủ trang cung cấp): độ dày 3M PPF 50 Gloss = 7.3 mil, đã thêm vào thẻ phim, dữ liệu thẻ và tóm tắt báo giá (schema Product không khai báo độ dày nên không đổi). Còn thiếu: thời hạn bảo hành AX X Series Ver 2.
+Bổ sung 29/10/2026 (chủ trang cung cấp): độ dày 3M PPF 50 Gloss = 7.3 mil, đã thêm vào thẻ phim, dữ liệu thẻ và tóm tắt báo giá (schema Product không khai báo độ dày nên không đổi). Bảo hành AX PPF X Series Ver 2 = 8 năm (chủ trang cung cấp 29/10/2026), đã thêm vào thẻ phim và tóm tắt báo giá. Hết thông số còn thiếu trên các thẻ phim.
