@@ -42,7 +42,7 @@ Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web V
 |---|---|---|
 | F01 | Bảng đối chiếu nguồn/điều kiện theo dòng CR BLK / IR / NR và từng chỉ tiêu (gồm nhãn kính "Auto75"), duyệt bản sửa sau 23/10 | ✅ Anh Hoàng đã xác nhận 29/10/2026 (nguồn/điều kiện đo theo bản R6) |
 | F02 | QA trên thiết bị thật (bàn phím ảo) nếu cần cho U1 | Cường + QA |
-| F03 | Danh mục 224 đại lý / 32 tỉnh đang hoạt động; nghiệm thu giao diện + dữ liệu các trang danh bạ đích | Operations + Cường |
+| F03 | Danh mục 224 đại lý / 32 tỉnh đang hoạt động; nghiệm thu giao diện + dữ liệu các trang danh bạ đích | ✅ Không cần: con số 224 đại lý / 32 tỉnh chủ trang đã chốt; trang chỉ dẫn link tới danh sách đại lý, không dựng danh bạ chi nhánh (29/10/2026) |
 | F04 | Route production (đang 404), tài nguyên, robots/CDN, sitemap; loại khối nội bộ khỏi HTML xuất bản (không chỉ ẩn CSS) | Cường + SEO |
 | F05 | Thử /api/leads, phân tuyến, tracking trong phạm vi được phép | IT + đầu mối tư vấn |
 | F06 | Tùy chọn thiết kế: hero theo sản phẩm (giữ tên dài theo chủ trang 29/10) | Design + Content |
@@ -77,7 +77,7 @@ Kết quả R5 của reviewer: điểm phần đã chấm **62,5/70** (C1 8,5 ·
 | Mã | Việc | Đầu mối |
 |---|---|---|
 | F01 | Chốt điều kiện đo TSER/VLT/UVR/Glare R/IRR theo nguồn từng nhóm mã | ✅ Anh Hoàng xác nhận 29/10/2026 |
-| F03 | Phân nhóm Pro Shop / Auto365 / đại lý khác để lọc thật; danh mục + ngày đối chiếu cho 224 đại lý / 32 tỉnh | Operations |
+| F03 | Phân nhóm Pro Shop / Auto365 / đại lý khác để lọc thật; danh mục + ngày đối chiếu cho 224 đại lý / 32 tỉnh | ✅ Không áp dụng (chủ trang 29/10/2026): trang không có danh bạ/bộ lọc chi nhánh |
 | F05 | Production `https://3m.365group.com.vn/phim-cach-nhiet-3m` vẫn 404; route, PDF, ảnh, OG, robots/canonical | IT / SEO |
 | F06 | Hồ sơ V1.9 cùng bản (01/02/03 hiện đứng tên V1.8), reviewer duyệt bản sửa | Reviewer + SEO/IT |
 | F07 | Thử gửi /api/leads, phân tuyến, `generate_lead` | Dev + vận hành |
