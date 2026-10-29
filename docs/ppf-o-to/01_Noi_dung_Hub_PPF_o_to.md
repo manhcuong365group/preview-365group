@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `37e2acb5e6049fa25f9247b4015f9eeafbd092ecea5b377a7d0f50f5fc8d48d7`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `13d1c6ada1dab424c15aa22cb9c212ecf6d0be318d1a87d6e99c999bf28235ff`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -180,6 +180,202 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 
 _[Form: ]_
+
+Miền Bắc
+
+Quảng Ninh
+
+- Auto365 Cẩm Phả
+- Auto365 Đông Triều
+- Auto365 Móng Cái
+- Auto365 Móng Cái CN2
+- Auto365 Quảng Ninh
+- Auto365 Quảng Yên
+- Auto365 Uông Bí
+- Auto365 Vân Đồn
+
+Phú Thọ
+
+- Auto365 Hoà Bình
+- Auto365 Phú Thọ
+- Auto365 Phúc Yên
+- Auto365 Phúc Yên CN2
+- Auto365 Vĩnh Phúc
+
+Hà Nội
+
+- Auto365 Đông Anh - Hà Nội
+- Auto365 Hà Nội
+- Auto365 Long Biên
+- Auto365 Mỹ Đình
+
+Hải Phòng
+
+- Auto365 Hải Dương
+- Auto365 Hải Dương CN2
+- Auto365 Hải Phòng
+- Auto365 Hải Phòng CN2
+
+Bắc Ninh
+
+- Auto365 Bắc Giang
+- Auto365 Bắc Ninh
+- Auto365 Bắc Ninh CN2
+
+Hưng Yên
+
+- Auto365 Hưng Yên
+- Auto365 Thái Bình
+- Auto365 Thái Bình CN2
+
+Ninh Bình
+
+- Auto365 Hà Nam
+- Auto365 Nam Định
+- Auto365 Ninh Bình
+
+Lào Cai
+
+- Auto365 Lào Cai
+- Auto365 Yên Bái
+
+Sơn La
+
+- Auto365 Sơn La
+- Auto365 Sơn La CN2
+
+Thái Nguyên
+
+- Auto365 Bắc Kạn
+- Auto365 Thái Nguyên
+
+Tuyên Quang
+
+- Auto365 Hà Giang
+- Auto365 Tuyên Quang
+
+Cao Bằng
+
+- Auto365 Cao Bằng
+
+Lạng Sơn
+
+- Auto365 Lạng Sơn
+
+Điện Biên
+
+- Auto365 Điện Biên Phủ
+
+Miền Trung
+
+Khánh Hòa
+
+- Auto365 Cam Lâm
+- Auto365 Nha Trang
+- Auto365 Nha Trang CN2
+- Auto365 Ninh Hoà
+- Auto365 Ninh Thuận
+
+Gia Lai
+
+- Auto365 Gia Lai
+- Auto365 Gia Lai CN2
+- Auto365 Quy Nhơn
+
+Hà Tĩnh
+
+- Auto365 Hà Tĩnh CN1
+- Auto365 Hà Tĩnh CN2
+- Auto365 Hà Tĩnh CN3
+
+Lâm Đồng
+
+- Auto365 Bình Thuận
+- Auto365 Đăk Nông
+- Auto365 Lâm Đồng
+
+Quảng Trị
+
+- Auto365 Quảng Bình
+- Auto365 Quảng Bình CN2
+- Auto365 Quảng Trị
+
+Thanh Hóa
+
+- Auto365 Bỉm Sơn
+- Auto365 Thanh Hoá
+
+Đà Nẵng
+
+- Auto365 Đà Nẵng
+- Auto365 Quảng Nam
+
+Đắk Lắk
+
+- Auto365 Buôn Ma Thuột
+- Auto365 Phú Yên
+
+Huế
+
+- Auto365 Huế
+
+Nghệ An
+
+- Auto365 Nghệ An
+
+Quảng Ngãi
+
+- Auto365 Quảng Ngãi
+
+Miền Nam
+
+TP.HCM
+
+- 3M Pro Shop & 3M Training Center
+- Auto365 Bình Dương
+- Auto365 Bình Dương - Chi Nhánh 2
+- Auto365 Bình Dương - Chi Nhánh 3
+- Auto365 Củ Chi
+- Auto365 Quận 7
+- Auto365 Quận 9
+- Auto365 Tân Phú
+- Auto365 Vũng Tàu
+- Auto365.vn - Trụ Sở Chính
+
+Vĩnh Long
+
+- Auto365 Bến Tre
+- Auto365 Trà Vinh
+- Auto365 Vĩnh Long
+
+An Giang
+
+- Auto365 An Giang
+- Auto365 Phú Quốc
+
+Cần Thơ
+
+- Auto365 Cần Thơ
+- Auto365 Hậu Giang
+
+Tây Ninh
+
+- Auto365 Long An
+- Auto365 Tây Ninh
+
+Đồng Nai
+
+- Auto365 Biên Hoà
+- Auto365 Bình Phước
+
+Đồng Tháp
+
+- Auto365 Đồng Tháp
+- Auto365 Tiền Giang
+
+Cà Mau
+
+- Auto365 Bạc Liêu
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
