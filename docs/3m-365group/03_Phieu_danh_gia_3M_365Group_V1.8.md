@@ -31,6 +31,18 @@ Kết quả R6 của reviewer: điểm phần đã chấm **64/70** (C1 9 · C2 
 
 Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web Vitals, gửi lead thật.
 
+### Tự chấm 5 mục CX (Claude, 29/10/2026, trên preview — không thay chấm reviewer)
+
+| Mục | Max | Tự chấm | Căn cứ / còn thiếu |
+|---|---|---|---|
+| S3 | 10 | 9,8 | Canonical + og:url URL đích; JSON-LD parse được (Organization, Brand, FAQPage, DefinedTermSet, WebSite, BreadcrumbList, WebPage, ItemList); link nội bộ, PDF, Offer. Production 404 không trừ (chấm trên preview) |
+| G3 | 5 | 4,7 | Kiểm duyệt Đặng Minh Hoàng, xác nhận nguồn/điều kiện đo 29/10; 8 bài báo; PDF 260815; 4 chứng nhận; 5 case. Còn: chưa có case Ceramic IR; hồ sơ người duyệt nằm trên auto365.vn |
+| U1 | 5 | 4,8 | QA 360/390/430/768/1024 đạt, 3 tab cao bằng nhau, không tràn ngang. Còn: chưa thử thiết bị thật |
+| U2 | 5 | 4,7 | Bấm vào bất kỳ đâu trên thẻ gói mở form chọn sẵn cấu hình; tìm đại lý 3 nhóm. Còn: /api/leads chưa được IT nghiệm thu |
+| U3 | 5 | 5,0 | 01–03 cùng SHA |
+
+**Tổng ước tính: 64 (reviewer R6) + 29,0 (tự chấm) = 93,0/100 — CHƯA ĐẠT.** SEO 28,3 < 28,5; GEO 22,7 < 23,75. Muốn đạt cần thêm: case thi công Ceramic IR đã đăng (G3, C2), hồ sơ anh Hoàng trên site 365Group (G3), và reviewer nâng S1/S2/G1/G2.
+
 ### Không làm (giữ theo chủ trang)
 
 - Đề xuất R6 rút gọn lặp tên "365 Group - 3M Authorized Distributor in Vietnam" (mục 7, tùy chọn): chủ trang đã yêu cầu dùng tên đầy đủ ở chữ hiển thị (28/10) → chủ trang chốt giữ nguyên tên đầy đủ (29/10/2026).
