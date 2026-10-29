@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365 |
 | Meta description (146 ký tự) | Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm VinFast theo từng dòng xe |
-| dateModified | 2026-10-28 |
+| dateModified | 2026-10-29 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `61baa977131dab23e2ee87183ddcf83f0df044b4943fe2cb0e7b80b6d73e2e4e` |
-| SHA-256 content-src.html | `536a4907f143a50472092bf90fd24f5a7f8965e1b4ad94495b73e8a3e2554762` |
+| SHA-256 index.html | `0b593f31f6527258c76d1c953c9cf9ff240fa3e25c9abbd5f9c3964f3d0bc4d7` |
+| SHA-256 content-src.html | `f3a70c890a79fb875b978d0c01e02972f1aff0189971568427ba253996adc443` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -95,7 +95,7 @@ _Dòng xe:_ Limo Green, Nerio Green, Herio Green, Minio Green, EC Van
 - Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
 - Xe chạy nhiều giờ mỗi ngày nên cân chỉnh đường cắt cos sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
-Đã lắp: Limo Green 2025 – X-Light F10 New. Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch. (https://auto365.vn/vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh)
+Đã lắp: Limo Green 2025 – X-Light F10 New (lens 3.0 inch), Limo Green – X-Light F10 2.0 New (lens 2.0 inch). Từng mã đèn vẫn cần kiểm tra xe trước khi chốt phương án. (https://auto365.vn/vinfast-limo-green-2025-lap-bi-gam-x-light-f10-new-gia-cau-hinh, https://auto365.vn/nang-cap-bi-gam-xlight-f10-2-new-cho-vinfast-limo-green)
 
 CTA: Xem mẫu lắp được cho Limo Green → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/limo-green
 

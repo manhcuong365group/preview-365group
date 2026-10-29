@@ -96,3 +96,12 @@ Chủ quản xác nhận 26/10/2026: anh Nguyễn Quang Đạo đã xác nhận 
 | Danh sách tỉnh | 33 tỉnh/thành, 91 điểm, sinh từ danh bạ auto365.vn/chi-nhanh lúc build; mỗi tỉnh link tới danh bạ lọc theo tỉnh |
 
 Chủ quản xác nhận 27/10/2026: anh Nguyễn Quang Đạo đã duyệt 2 FAQ mới và danh sách tỉnh. `lastReviewed` = 2026-10-27. Không còn mục chờ duyệt.
+
+## Thay đổi 29/10/2026 theo reviewer R6 (không đổi nội dung kỹ thuật)
+
+| Mục | Thay đổi | Căn cứ |
+|---|---|---|
+| Thẻ "Xe dịch vụ chạy đêm, đi mưa" | "Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch" → ghi 2 mã đã có case: X-Light F10 New (3.0 inch), X-Light F10 2.0 New (2.0 inch) + "Từng mã đèn vẫn cần kiểm tra xe trước khi chốt phương án" | Trang con Limo Green (anh Đạo duyệt) và 2 bài case đã đăng auto365.vn |
+| Thẻ "Xe điện đi phố" (28/10) | Bỏ câu pin cao áp lặp, dẫn về box lưu ý hệ điện | Cảnh báo giữ ở box lưu ý + FAQ |
+
+`lastReviewed` giữ 2026-10-27.

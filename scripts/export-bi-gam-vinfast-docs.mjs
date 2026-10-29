@@ -106,3 +106,8 @@ guides.forEach((x) => rows.push(['guide', x.url.includes('vinfast-fadil') ? 'fad
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_VinFast.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 
 console.log('exported', out, { sha: sha(html).slice(0, 12), models: models.length, cases: cases.length, guides: guides.length, faqs: faqs.length });
+
+// Bản sao hồ sơ 01–05 trên preview (reviewer đọc trực tiếp, không cần GitHub)
+const hoSo = path.join(page, 'ho-so');
+fs.mkdirSync(hoSo, { recursive: true });
+for (const n of fs.readdirSync(out)) fs.copyFileSync(path.join(out, n), path.join(hoSo, n));

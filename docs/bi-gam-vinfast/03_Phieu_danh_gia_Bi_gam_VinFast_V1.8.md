@@ -8,6 +8,21 @@
 | Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
 | Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-27 (duyệt lại 27/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
 
+## R6 reviewer 28/10/2026 (V1.9) và bản vá 29/10/2026
+
+Reviewer R6: **57,3/60** phần đủ bằng chứng + **CX /40**; đã đóng Bỏ lọc và 3 lỗi JS của R5 (nạp jQuery trước shell, commit 7a529ee). Chuyển SEO/IT chốt bản tích hợp: CÓ. Điểm "≈93/100" ở mục dưới là tự chấm theo thang khác, không so với 57,3/60.
+
+| Mục R6 | Đã làm 29/10/2026 | Bằng chứng | Còn |
+|---|---|---|---|
+| §5 câu Limo Green | Đổi "Limo Green lắp được cả mẫu lens 2.0 và 3.0 inch" → "Đã lắp: Limo Green 2025 – X-Light F10 New (lens 3.0 inch), Limo Green – X-Light F10 2.0 New (lens 2.0 inch). Từng mã đèn vẫn cần kiểm tra xe trước khi chốt phương án." — 2 link bài case đã đăng (đều 200) | DOM preview | — |
+| §7.1 / §11 U3: không đọc được GitHub | Bản sao 01–05 xuất cùng build tại `https://preview-365group.pages.dev/bi-gam/vinfast/ho-so/` (script export copy tự động); khối nội bộ link thẳng | 01 ghi SHA của index.html bản này | Reviewer đối chiếu |
+| §7.2 bàn phím | Lỗi thật: Enter "Bỏ lọc" xong focus rơi về `body` (nút bị ẩn). Sửa: focus về chip "Tất cả". Kiểm phím thật: Enter chip VF 3 → 1 bài; Space chip X-Light → 0 bài + thông báo; Tab → "Bỏ lọc"; Enter → 10 bài, focus "Tất cả"; Enter trên summary → accordion mở | Kiểm local cùng build | Thiết bị thật |
+| §7.2 đa thiết bị | scrollWidth ≤ innerWidth ở 375/768/1024/1366px (chênh = thanh cuộn) | Kiểm local cùng build | Thiết bị thật |
+| §7.3 production | — | — | IT: shell/OG/robots+`X-Robots-Tag`/canonical, API/CRM/tracking, GSC/CWV |
+| §7.4 danh bạ | — | — | Rating/Maps tại nguồn danh bạ |
+
+dateModified 2026-10-29; lastReviewed giữ 2026-10-27 (câu Limo Green chỉ ghi rõ 2 mã đã có trên trang con anh Đạo duyệt).
+
 ## Tự chấm lại 28/10/2026 sau bản vá (thang 100 của phiếu 28/10)
 
 Tự chấm trên preview theo quy ước: không trừ vì production chưa đăng; không trừ lỗi nằm ở trang đích ngoài hub. **≈93/100** (phiếu sơ bộ 88).
