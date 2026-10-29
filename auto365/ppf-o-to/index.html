@@ -570,6 +570,25 @@ section[id],.mkBox[id]{scroll-margin-top:72px}
 #arts .art{padding:0;gap:0}
 #arts .art .b{padding:12px 14px 14px;gap:6px}
 #arts .art time{margin-top:auto;padding-top:4px}
+@media(max-width:760px){
+.tbl.stk{overflow:visible;border:0;background:none}
+.tbl.stk table,.kBody .tbl.stk table,.kCard2 .tbl.stk table,.kA2in .tbl.stk table{min-width:0;width:100%;display:block}
+.tbl.stk caption{display:block;padding:0 0 8px}
+.tbl.stk thead{display:none}
+.tbl.stk tbody{display:grid;gap:8px}
+.tbl.stk tr{display:block;border:1px solid var(--l);border-radius:8px;background:#fff;overflow:hidden}
+.tbl.stk tbody th{display:block;width:auto;padding:10px 12px;background:#fafbfc;color:var(--t);font-weight:600;border-bottom:1px solid var(--l)}
+.tbl.stk td{display:grid;grid-template-columns:104px 1fr;gap:10px;padding:9px 12px;border-bottom:1px solid var(--l)}
+.tbl.stk td:last-child{border-bottom:0}
+.tbl.stk td::before{content:attr(data-label);font-weight:600;color:var(--m);font-size:12px}
+.tbl.stk td[colspan]{grid-template-columns:1fr}
+.tbl.stk td[colspan]::before{display:none}
+.tbl.stk .hl{background:#fff7f7}
+}
+.vtAll th:nth-child(3),.vtAll td:nth-child(3){display:table-cell;color:inherit;font-size:inherit!important;padding-left:10px!important}
+@media(max-width:760px){.vtAll th:nth-child(3),.vtAll td:nth-child(3){padding-left:8px!important}
+.vtAll th:first-child,.vtAll td:first-child{position:sticky;left:0;z-index:1;background:#fff;box-shadow:1px 0 0 var(--l)}
+.vtAll tbody tr:nth-child(even) td:first-child{background:#fafbfc}}
 </style>
 </head>
 <body>
@@ -782,15 +801,15 @@ section[id],.mkBox[id]{scroll-margin-top:72px}
   </div>
   <div class="ssIn" id="so-sanh">
   <div class="head"><div><h3 class="ssH">PPF, phủ ceramic và dán wrap khác nhau ở đâu?</h3><p>Ba dịch vụ hay bị nhầm với nhau, nhưng mỗi loại giải quyết một nhu cầu riêng.</p></div></div>
-  <div class="tbl"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
+  <div class="tbl stk"><table><caption>So sánh PPF, phủ ceramic và dán wrap đổi màu</caption>
     <thead><tr><th scope="col">Tiêu chí</th><th scope="col" class="hl">PPF (phim bảo vệ sơn)</th><th scope="col">Phủ ceramic</th><th scope="col">Dán wrap đổi màu</th></tr></thead>
     <tbody>
-      <tr><th scope="row">Mục tiêu chính</th><td class="hl">Bảo vệ sơn trước trầy xước nhẹ, đá văng</td><td>Tăng bóng, chống bám bẩn</td><td>Đổi màu, cá nhân hoá ngoại hình</td></tr>
-      <tr><th scope="row">Bản chất</th><td class="hl">Màng TPU có độ dày, dán lên sơn</td><td>Lớp phủ hoá học rất mỏng trên sơn</td><td>Màng PVC/vinyl màu, dán lên sơn</td></tr>
-      <tr><th scope="row">Chống va đập nhẹ</th><td class="hl">Có — mức độ theo dòng phim</td><td>Hạn chế</td><td>Có ở mức thấp hơn PPF</td></tr>
-      <tr><th scope="row">Giữ màu sơn zin</th><td class="hl">Có (PPF trong suốt)</td><td>Có</td><td>Không — đổi màu</td></tr>
-      <tr><th scope="row">Có thể bóc ra</th><td class="hl">Có</td><td>Không bóc, mòn dần theo thời gian</td><td>Có</td></tr>
-      <tr><th scope="row">Kết hợp</th><td class="hl" colspan="3">Có thể phủ ceramic lên trên PPF để tăng tính kỵ nước — hỏi kỹ thuật viên về tương thích với dòng phim đã chọn.</td></tr>
+      <tr><th scope="row">Mục tiêu chính</th><td class="hl" data-label="PPF (phim bảo vệ sơn)">Bảo vệ sơn trước trầy xước nhẹ, đá văng</td><td data-label="Phủ ceramic">Tăng bóng, chống bám bẩn</td><td data-label="Dán wrap đổi màu">Đổi màu, cá nhân hoá ngoại hình</td></tr>
+      <tr><th scope="row">Bản chất</th><td class="hl" data-label="PPF (phim bảo vệ sơn)">Màng TPU có độ dày, dán lên sơn</td><td data-label="Phủ ceramic">Lớp phủ hoá học rất mỏng trên sơn</td><td data-label="Dán wrap đổi màu">Màng PVC/vinyl màu, dán lên sơn</td></tr>
+      <tr><th scope="row">Chống va đập nhẹ</th><td class="hl" data-label="PPF (phim bảo vệ sơn)">Có — mức độ theo dòng phim</td><td data-label="Phủ ceramic">Hạn chế</td><td data-label="Dán wrap đổi màu">Có ở mức thấp hơn PPF</td></tr>
+      <tr><th scope="row">Giữ màu sơn zin</th><td class="hl" data-label="PPF (phim bảo vệ sơn)">Có (PPF trong suốt)</td><td data-label="Phủ ceramic">Có</td><td data-label="Dán wrap đổi màu">Không — đổi màu</td></tr>
+      <tr><th scope="row">Có thể bóc ra</th><td class="hl" data-label="PPF (phim bảo vệ sơn)">Có</td><td data-label="Phủ ceramic">Không bóc, mòn dần theo thời gian</td><td data-label="Dán wrap đổi màu">Có</td></tr>
+      <tr><th scope="row">Kết hợp</th><td class="hl" colspan="3" data-label="PPF (phim bảo vệ sơn) · Phủ ceramic · Dán wrap đổi màu">Có thể phủ ceramic lên trên PPF để tăng tính kỵ nước — hỏi kỹ thuật viên về tương thích với dòng phim đã chọn.</td></tr>
     </tbody>
   </table></div>
 </div>
@@ -813,9 +832,9 @@ section[id],.mkBox[id]{scroll-margin-top:72px}
 <p><b>Giới hạn</b></p><ul class="kUl"><li>Không chống được móp méo hay va chạm mạnh làm biến dạng thân vỏ.</li><li>Kết quả phụ thuộc nhiều vào tay nghề: thi công kém dễ để lại bọt khí, hở mép hoặc lộ đường nối.</li><li>Xe từng sơn dặm chưa đạt độ bám có thể bị kéo sơn khi bóc phim sau này, nên cần kiểm tra trước khi dán.</li><li>Chi phí cao hơn phủ ceramic; vết xước đã có trên sơn sẽ nằm lại dưới phim nếu không xử lý trước.</li></ul>
 <p class="kNote">Ngân sách giới hạn có thể chọn dán các vị trí hay va quẹt trước, xem mục <a href="#k00">Chọn phạm vi dán theo nhu cầu</a>.</p></div></div></details>
 <details class="xk-acc kA2" id="k01"><summary><h3>PPF TPU, TPH và PVC khác nhau thế nào?</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kMedia"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/auto365vn-can-canh-lop-ppf-3m-50-gloss-trong-suot-uoc-inh-vi-tren-khu-vuc-au-xe-mazda-cx-5-trong-qua-trinh-thi-cong-img_6a928fa2b4b643.88136476.webp" alt="Cận cảnh lớp PPF 3M 50 Gloss trong suốt được định vị trên khu vực đầu xe Mazda CX-5" width="800" height="533" loading="lazy" decoding="async"><figcaption>Lớp PPF TPU trong suốt trên đầu xe Mazda CX-5 (<a href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure></div><div class="kBody"><p>PPF trên thị trường thường được chia theo ba nhóm vật liệu nền: TPU, TPH và PVC. Phần lớn các dòng PPF của những hãng lớn công bố nền TPU (polyurethane nhiệt dẻo). TPH là tên gọi thương mại, thành phần tùy nhà sản xuất. Vì vậy không nên đánh giá phim chỉ qua tên vật liệu: độ dẻo, khả năng tự phục hồi, chống ố vàng và độ bền khác nhau theo từng dòng phim.</p>
-    <div class="tbl"><table><caption>So sánh vật liệu PPF: TPU, TPH và PVC</caption><thead><tr><th scope="col">Tiêu chí</th><th scope="col" class="hl">TPU</th><th scope="col">TPH</th><th scope="col">PVC</th></tr></thead><tbody>
-    <tr><th scope="row">Bản chất</th><td class="hl">Polyurethane nhiệt dẻo</td><td>Tên gọi thương mại, thành phần tùy nhà sản xuất</td><td>Nhựa PVC</td></tr>
-    <tr><th scope="row">Độ dẻo, tự phục hồi, chống ố vàng, độ bền</th><td colspan="3">Khác nhau theo từng dòng phim, kể cả trong cùng một nhóm vật liệu. Xem tài liệu kỹ thuật (TDS) và phiếu bảo hành của đúng sản phẩm.</td></tr>
+    <div class="tbl stk"><table><caption>So sánh vật liệu PPF: TPU, TPH và PVC</caption><thead><tr><th scope="col">Tiêu chí</th><th scope="col" class="hl">TPU</th><th scope="col">TPH</th><th scope="col">PVC</th></tr></thead><tbody>
+    <tr><th scope="row">Bản chất</th><td class="hl" data-label="TPU">Polyurethane nhiệt dẻo</td><td data-label="TPH">Tên gọi thương mại, thành phần tùy nhà sản xuất</td><td data-label="PVC">Nhựa PVC</td></tr>
+    <tr><th scope="row">Độ dẻo, tự phục hồi, chống ố vàng, độ bền</th><td colspan="3" data-label="TPU · TPH · PVC">Khác nhau theo từng dòng phim, kể cả trong cùng một nhóm vật liệu. Xem tài liệu kỹ thuật (TDS) và phiếu bảo hành của đúng sản phẩm.</td></tr>
     </tbody></table></div>
     <p class="kNote">Ví dụ cấu tạo theo hãng: 3M PPF Series 150 Gloss gồm lớp phủ polyurethane, phim polyurethane, keo acrylic và lớp lót polyester; vết xước nhẹ tự mờ khi gặp nhiệt (<a href="https://multimedia.3m.com/mws/media/2395418O/3m-paint-protection-film-series-150-gloss-product-bulletin-rev-a.pdf" target="_blank" rel="noopener">Technical Data Sheet 3M PPF Series 150 Gloss (Revision B, 08/2026)</a>). Mức độ cụ thể khác nhau theo từng dòng phim.</p></div></div></details>
     <details class="xk-acc kA2" id="k02"><summary><h3>Chọn PPF dựa trên những tiêu chí nào?</h3><span class="xk-chev" aria-hidden="true"></span></summary><div class="kA2in"><div class="kMedia"><figure class="kFig"><img src="https://auto365.vn/uploads/images/pages/dan-ax-film-ppf-g-series-cho-ford-ranger-2.jpg" alt="Ford Ranger được lựa chọn cấu hình dán AX Film PPF G Series toàn xe" width="800" height="533" loading="lazy" decoding="async"><figcaption>Ford Ranger chọn AX Film PPF G Series toàn xe (<a href="https://auto365.vn/dan-ax-film-ppf-g-series-cho-ford-ranger" target="_blank" rel="noopener">hồ sơ</a>).</figcaption></figure></div><div class="kBody"><p>Mỗi hãng có nhiều dòng PPF ở các phân khúc khác nhau. Khi so sánh, nên đặt các dòng phim cạnh nhau theo 6 tiêu chí sau thay vì chỉ nhìn giá hoặc tên thương hiệu.</p>

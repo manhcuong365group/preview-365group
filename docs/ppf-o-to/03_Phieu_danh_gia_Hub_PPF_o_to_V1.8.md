@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `688e12d2d606339a566e80d4af44786715cbc38e0aed5c593f9be9f9d4af3f2e` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `101c4668237cc619f04791939f444af803977fb52584813ffdbc9f4aa55c7b3d` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -230,3 +230,5 @@ Kiểm: desktop và mobile 375 px, không tràn ngang, không lỗi console. dat
 Bổ sung 29/10/2026 (chủ trang cung cấp): độ dày 3M PPF 50 Gloss = 7.3 mil, đã thêm vào thẻ phim, dữ liệu thẻ và tóm tắt báo giá (schema Product không khai báo độ dày nên không đổi). Bảo hành AX PPF X Series Ver 2 = 8 năm (chủ trang cung cấp 29/10/2026), đã thêm vào thẻ phim và tóm tắt báo giá. Hết thông số còn thiếu trên các thẻ phim.
 
 Đồng bộ khối Hệ thống theo #branch-discovery production (29/10/2026): thêm nút hotline 0365.365.911 (Đèn · Camera · Phụ kiện), Google Maps dùng link maps.app.goo.gl như production, thêm danh sách 91 chi nhánh theo 33 tỉnh dạng ẩn (giống khối SSR production, link tuyệt đối auto365.vn) để bot đọc được; giao diện không hiện thêm nhóm link tỉnh. Giữ link "Xem hồ sơ Trụ Sở Chính" theo PK48-02.
+
+QA bảng (29/10/2026): rule CSS cũ ẩn cột thứ 3 của bảng giá 13 vị trí làm mất cột 3M 150 Gloss trên mọi màn hình, đã hiện lại; mobile ghim cột "Vị trí dán" khi cuộn ngang. Bảng PPF/ceramic/wrap và TPU/TPH/PVC chuyển dạng thẻ xếp dọc trên mobile (≤760px), desktop giữ dạng bảng.
