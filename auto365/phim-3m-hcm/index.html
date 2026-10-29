@@ -304,6 +304,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 }
 .h3m-trust--light{color:var(--t);margin:14px 0 0}.h3m-trust--light>div{background:#f6f7f9;border-color:#e6e9ed;backdrop-filter:none;-webkit-backdrop-filter:none}.h3m-trust--light b{color:var(--t)}
 .h3m-perks__note{display:block;grid-column:1/-1;margin-top:-4px;font-size:13px;color:var(--m)}
+.h3m-card__ph{font-size:13px;color:var(--m);margin-bottom:4px}.h3m-card__price tr.is-on td{color:var(--r);font-weight:600}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -633,7 +634,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  PK.forEach(function(k){
   grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'">'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
-   '<div class="h3m-card__price">Trọn xe từ <span class="h3m-card__from">'+vnd(k.p[0])+'</span><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
+   '<div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
    '<button type="button" class="h3m-btn h3m-btn--red h3m-card__cta" data-open-lead data-pk="'+k.n+'">Nhận báo giá gói này →</button>'+
    '<div class="h3m-card__sub"><a href="tel:0365365365" data-track="call_pk">☎ Gọi tư vấn</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener" data-track="zalo_pk">Nhắn Zalo</a></div></article>');
   qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));
@@ -647,8 +648,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function syncForms(){fs.value=SEL.pk;fvg.value=SEL.gr}
  function renderCards(){var g=qc.value===''?-1:+qc.value;
   document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
-   c.querySelector('.h3m-card__price').firstChild.nodeValue=g<0?'Trọn xe từ ':'Trọn xe '+GN[g]+' ';
-   c.querySelector('.h3m-card__from').textContent=vnd(k.p[g<0?0:g]);
+   c.querySelectorAll('.h3m-card__price tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
    var b=c.querySelector('.h3m-card__cta');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g]})}
  function renderQuote(){var k=PK.filter(function(x){return x.id===qs.value})[0];
   if(qc.value===''){qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
