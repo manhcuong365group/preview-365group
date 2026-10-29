@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fda23adfbacdc5822f444cd8b2b3b9f56c0b378d59c1c1277dfbbca13eaaa1c7`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `3ac4d2edc78fc30f0dbf320e3b481fffac8d9cd60a2393722662c84aa2b0d0d9`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -21,6 +21,7 @@ Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham k
 
 Trọn gói, gồm VAT: 38.000.000đ
 
+- 7.3 milĐộ dày
 - BóngBề mặt hoàn thiện
 - 5 nămBảo hành chính hãng
 
