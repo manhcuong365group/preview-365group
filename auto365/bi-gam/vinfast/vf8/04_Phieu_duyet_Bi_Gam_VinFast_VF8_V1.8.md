@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `6cd273d449d621f3e53feef95164bce359a41063f815c78cef30cb1a5074ac67` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf8/index.html` — SHA-256 `0febfdf048d395c4ebcf113905c8ff8415bb57afda064ce9250288bb21266b5f` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf8/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf8 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -101,3 +101,11 @@ Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2)
 - Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.
 
 - 28/10/2026 (bổ sung): thay 6 ảnh VF8 bằng bộ ảnh mới do Auto365 cung cấp (hero, cản trước, đang lắp, sau lắp, 2 ảnh bàn giao X3 Ultra); theo yêu cầu, gỡ toàn bộ nhãn/chú thích "ảnh AI" trên trang và trong alt. Mục "thay ảnh AI" ở trên coi như đã xử lý cho trang VF8.
+
+## Bản hiện hành 29/10/2026 (thay mục 28/10 ở các điểm sau)
+
+- Danh sách 88 cơ sở trong HTML: theo quyết định của chủ trang 28/10, khối dự phòng giữ trong DOM nhưng ẩn (div.vf3lp-bf-ssr, display:none); không có details/summary. Mục "mở qua details/summary" ở trên là lịch sử.
+- Thẻ giải thích phạm vi danh sách tra cứu: đã gỡ theo yêu cầu chủ trang. Bộ tìm ghi "88 cơ sở trong danh bạ · 33 tỉnh thành"; khối quyền lợi giữ "90+ chi nhánh" là quy mô hệ thống (chờ Operations xác nhận phạm vi).
+- Nhãn ảnh: chữ "AI" đã gỡ khỏi caption/alt theo yêu cầu chủ trang; alt dùng mô tả trung tính dạng "minh họa …", không mô tả là ảnh thi công hay kết quả đo.
+- Câu "Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8" trong khối nội bộ đã bỏ.
+- Tổng quan xe rút còn 2 câu theo yêu cầu chủ trang.

@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `d08e1b813512b2bf667e8a5b03ce10acc8fc4b293ab0750136aa32e09c3538ea` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `7534409ec659c1ac5ac37c8a0fe1339394c1a09f08deea2b77a48cf02c2eb37b` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -80,3 +80,11 @@ Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (l
 - Thông số xe ghi rõ chuẩn đo (NEDC/WLTP) và phạm vi phiên bản; VF5 bỏ chiều dài cơ sở do nguồn VinFast mâu thuẫn (2.730 vs 2.514 mm).
 - Khối nội bộ không còn ghi "đạt V1.8" như kết quả hiện hành; lastReviewed giữ 2026-10-26, dateModified 2026-10-28.
 - Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.
+
+## Bản hiện hành 29/10/2026 (thay mục 28/10 ở các điểm sau)
+
+- Danh sách 88 cơ sở trong HTML: theo quyết định của chủ trang 28/10, khối dự phòng giữ trong DOM nhưng ẩn (div.vf3lp-bf-ssr, display:none); không có details/summary. Mục "mở qua details/summary" ở trên là lịch sử.
+- Thẻ giải thích phạm vi danh sách tra cứu: đã gỡ theo yêu cầu chủ trang. Bộ tìm ghi "88 cơ sở trong danh bạ · 33 tỉnh thành"; khối quyền lợi giữ "90+ chi nhánh" là quy mô hệ thống (chờ Operations xác nhận phạm vi).
+- Nhãn ảnh: chữ "AI" đã gỡ khỏi caption/alt theo yêu cầu chủ trang; alt dùng mô tả trung tính dạng "minh họa …", không mô tả là ảnh thi công hay kết quả đo.
+- Câu "Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8" trong khối nội bộ đã bỏ.
+- Tổng quan xe rút còn 2 câu theo yêu cầu chủ trang.
