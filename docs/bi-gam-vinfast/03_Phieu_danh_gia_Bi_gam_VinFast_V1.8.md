@@ -21,7 +21,7 @@ Reviewer R6: **57,3/60** phần đủ bằng chứng + **CX /40**; đã đóng B
 | §7.3 production | — | — | IT: shell/OG/robots+`X-Robots-Tag`/canonical, API/CRM/tracking, GSC/CWV |
 | §7.4 danh bạ | — | — | Rating/Maps tại nguồn danh bạ |
 
-dateModified 2026-10-29; lastReviewed 2026-10-29 — anh Đạo xác nhận nguồn từng case và bản vá R6 (xem 05). Tự chấm sau xác nhận: G3 5/5 → ≈94,4/100; SEO 28,8/30 và GEO 24,1/25 qua ngưỡng; tổng còn thiếu ≈0,6 — chờ test máy thật (U1).
+dateModified 2026-10-29; lastReviewed 2026-10-29 — anh Đạo xác nhận nguồn từng case và bản vá R6 (xem 05). Tự chấm sau xác nhận: G3 5/5 → ≈94,4/100; SEO 28,8/30 và GEO 24,1/25 qua ngưỡng; chủ quản test trên điện thoại thật 29/10/2026, xác nhận các tương tác hoạt động (chưa lưu ảnh chụp/tên máy) → U1 5/5. **Tự chấm ≈95,4/100 — qua 3 ngưỡng (tổng ≥95, SEO 28,8 ≥28,5, GEO 24,1 ≥23,75).** Còn chờ: reviewer tái chấm; IT production (API/CRM/tracking, robots/header, GSC/CWV).
 
 ## Tự chấm lại 28/10/2026 sau bản vá (thang 100 của phiếu 28/10)
 
