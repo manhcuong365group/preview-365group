@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `26a4880446a731b8f526290510ccc70f6ce51c1e82a4f2eec47232c379291660` |
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `c375fa9848ab45c97ba52fa68da60ac0f451d35ad5b068441d520255553e3209` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -104,3 +104,7 @@ Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2)
 - Nhãn ảnh: chữ "AI" đã gỡ khỏi caption/alt theo yêu cầu chủ trang; alt dùng mô tả trung tính dạng "minh họa …", không mô tả là ảnh thi công hay kết quả đo.
 - Câu "Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8" trong khối nội bộ đã bỏ.
 - Tổng quan xe rút còn 2 câu theo yêu cầu chủ trang.
+
+## Cập nhật ảnh 29/10/2026
+
+- Thay 7 ảnh minh họa `ec-van-minh-hoa-01…07` bằng ảnh thật Auto365 cung cấp (xe EC Van tại xưởng, thao tác lắp, test Cos/Pha trên vách). Alt mô tả đúng nội dung ảnh thật.
