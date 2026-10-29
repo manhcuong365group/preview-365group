@@ -33,7 +33,7 @@ Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web V
 
 ### Không làm (giữ theo chủ trang)
 
-- Đề xuất R6 rút gọn lặp tên "365 Group - 3M Authorized Distributor in Vietnam" (mục 7, tùy chọn): chủ trang đã yêu cầu dùng tên đầy đủ ở chữ hiển thị (28/10) → giữ nguyên, chờ chủ trang quyết.
+- Đề xuất R6 rút gọn lặp tên "365 Group - 3M Authorized Distributor in Vietnam" (mục 7, tùy chọn): chủ trang đã yêu cầu dùng tên đầy đủ ở chữ hiển thị (28/10) → chủ trang chốt giữ nguyên tên đầy đủ (29/10/2026).
 - Ảnh hero kính/khoang xe: chưa có tư liệu phù hợp.
 
 ### Còn mở sau R6
@@ -45,7 +45,7 @@ Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web V
 | F03 | Danh mục 224 đại lý / 32 tỉnh đang hoạt động; nghiệm thu giao diện + dữ liệu các trang danh bạ đích | Operations + Cường |
 | F04 | Route production (đang 404), tài nguyên, robots/CDN, sitemap; loại khối nội bộ khỏi HTML xuất bản (không chỉ ẩn CSS) | Cường + SEO |
 | F05 | Thử /api/leads, phân tuyến, tracking trong phạm vi được phép | IT + đầu mối tư vấn |
-| F06 | Tùy chọn thiết kế: hero theo sản phẩm, giảm lặp tên dài | Design + Content (cần chủ trang duyệt) |
+| F06 | Tùy chọn thiết kế: hero theo sản phẩm (giữ tên dài theo chủ trang 29/10) | Design + Content |
 
 ## Xử lý phiếu tái kiểm R5 / V1.9 (reviewer 27/10/2026 — bản vá 28/10/2026)
 
