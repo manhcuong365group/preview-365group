@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `22db9be6a0c6af92a459ccb7b3fc46dc805cc690e8942365db44b3a64932870d`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fda23adfbacdc5822f444cd8b2b3b9f56c0b378d59c1c1277dfbbca13eaaa1c7`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (28/10/2026) · Cập nhật 28/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (28/10/2026) · Cập nhật 29/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -74,7 +74,7 @@ Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem t�
 | Đèn sau (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 400.000đ | 538.000đ | 900.000đ |
 | Ốp gương (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 400.000đ | 538.000đ | 900.000đ |
 
-Giá 3M theo bảng giá 3M Pro Shop (23/10/2026), VAT báo khi chốt giá. Giá AX Film đã gồm VAT. Sedan tương ứng xe hạng A–B, SUV tương ứng hạng C–D. 3M PPF 100 Gloss hiện chỉ báo giá trọn gói.
+Giá 3M theo bảng giá 3M Pro Shop (23/10/2026), VAT báo khi chốt giá. Giá AX Film đã gồm VAT. Nhóm xe chia theo kích thước thân xe như ghi chú ở bảng giá phía trên. 3M PPF 100 Gloss hiện chỉ báo giá trọn gói.
 
 **Các gói dán PPF theo nhu cầu**
 
@@ -182,7 +182,7 @@ _[Form: ]_
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
-Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh
+Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh · Xem hồ sơ Trụ Sở Chính →
 
 Giờ làm việc8:30 – 18:30
 
@@ -406,7 +406,7 @@ _[Form: Họ và tên * · Số điện thoại * · Hãng xe · Dòng xe / đ�
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 28/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá, độ dày, bảo hành lấy theo trang sản phẩm auto365.vn ngày 19/10/2026. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 28/10/2026
+Kiểm duyệt nội dung hub PPF ngày 28/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá trọn gói, độ dày, bảo hành theo trang sản phẩm auto365.vn ngày 19/10/2026 (giá 3M 200 Gloss đối chiếu lại 28/10/2026); giá theo vị trí 3M theo bảng 3M Pro Shop ngày 23/10/2026, giá theo vị trí AX theo bảng AX Film khách lẻ. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 29/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 

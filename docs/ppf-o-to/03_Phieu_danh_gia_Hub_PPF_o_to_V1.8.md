@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `22db9be6a0c6af92a459ccb7b3fc46dc805cc690e8942365db44b3a64932870d` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `fda23adfbacdc5822f444cd8b2b3b9f56c0b378d59c1c1277dfbbca13eaaa1c7` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -213,3 +213,16 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 **Tổng tự chấm: C 29,4 · SEO 29,2 · GEO 24,3 · U1 4,7 · U2 4,9 · U3 4,6 → 97,1/100. ĐẠT theo tự chấm (preview)** — SEO ≥ 28,5; GEO ≥ 23,75. Còn: reviewer tái chấm; catalog PDF chưa kiểm lại giá 3M 200.
 
 Ghi chú 28/10 (giao diện theo góp ý sếp): bỏ dải "Tìm nhanh theo tỉnh" ở khối Hệ thống theo yêu cầu chủ trang; ô tìm theo tỉnh, 3 miền và link Gần tôi vẫn giữ. Đổi tông màu đen/xám, giữ đỏ cho CTA chính, giá thẻ phim và lớp phim trên ảnh xe; logo 3M/AX trên tab hãng; dải báo chí có ảnh bài.
+
+## Xử lý phiếu tái kiểm pk48 theo V1.9 (29/10/2026)
+
+| Mã | Đã xử lý | Kiểm trực tiếp |
+|---|---|---|
+| PK48-01A Xóa giữ phạm vi cũ | Phạm vi tự điền được xóa cùng tóm tắt và product_interest khi xóa cấu hình; phạm vi khách tự chọn thì giữ nguyên (quy tắc: chỉ ghi đè trường do hệ thống tự điền) | Toàn xe → CTA → Xóa: phạm vi "Chưa rõ", product_interest rỗng, tóm tắt "Đã xóa lựa chọn"; khách chọn "Mặt trước" thì giữ |
+| PK48-01B Sửa từ card | Link "Sửa lựa chọn" từ card mở lại đúng hãng/nhóm xe/thẻ (viền nhấn); đổi nhóm xe ở card cập nhật tóm tắt; chạm vào calculator sau đó thì tóm tắt chuyển theo calculator, link sửa về calculator | 3M 200/cỡ vừa → đổi cỡ lớn: 122 triệu; chuyển tab AX rồi Sửa: về 3M/cỡ lớn/thẻ 3M 200; tên khách nhập giữ nguyên |
+| PK48-02 HQ / 3M Pro Shop | Khối Trụ Sở Chính 4/4/1/7 có link /thu-duc; link dưới chứng nhận đổi thành "Xem hồ sơ 3M Pro Shop" → /3m-pro-shop-tru-so-chinh | Chưa xử lý chênh địa chỉ 4/4/3/3 (trang 3M Pro Shop) và 4/4/1/7 (chứng nhận, HQ): cần Operations xác nhận |
+| PK48-03 Nguồn/nhãn | Bỏ ghi chú "Sedan = A–B, SUV = C–D" ở bảng vị trí; footer tách nguồn giá trọn gói (PDP 19/10, 3M 200 đối chiếu 28/10), giá vị trí 3M (23/10) và AX khách lẻ; product_interest ghi nguồn theo loại giá (gói hoặc vị trí) | Độ dày 3M 50 và bảo hành AX X: PDP chưa công bố, giữ nguyên chờ Commercial |
+| PK48-04 Catalog | Thêm link "Xem toàn bộ sản phẩm PPF/Wrap" → /ppfwrap-film cạnh thẻ phim | Nhóm link tỉnh đã bỏ theo yêu cầu chủ trang 28/10; finder tỉnh và 3 miền giữ |
+| QA video | Clip F4iyRoH7Mco (VF7 3M 50 Gloss) đã chuyển riêng tư trên YouTube (thumbnail 404) → bỏ khỏi khối video, còn 8 clip | 8/8 ảnh thumbnail tải được |
+
+Kiểm: desktop và mobile 375 px, không tràn ngang, không lỗi console. dateModified 2026-10-29; lastReviewed giữ 2026-10-28.
