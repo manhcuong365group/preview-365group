@@ -109,3 +109,14 @@ Chủ quản xác nhận 27/10/2026: anh Nguyễn Quang Đạo đã duyệt 2 FA
 ## Duyệt 29/10/2026 — xác nhận nguồn từng case
 
 Chủ quản xác nhận 29/10/2026: anh Nguyễn Quang Đạo đã xác nhận nguồn của từng case trên hub (10 bài hồ sơ, gồm 2 case Limo Green: X-Light F10 New 3.0 inch và F10 2.0 New 2.0 inch) và bản vá R6. `lastReviewed` → 2026-10-29.
+
+## Kiểm thử thiết bị thật 29/10/2026
+
+Chủ quản xác nhận 29/10/2026: đã test trang preview trên điện thoại thật, các tương tác (bộ lọc dòng xe/case, Bỏ lọc, FAQ, tìm chi nhánh, form) hoạt động bình thường. Ảnh chụp mobile lưu cùng phiên làm việc (chế độ hiển thị 375px). Tự chấm sau kiểm thử: ≈95,4/100 — xem [03](03_Phieu_danh_gia_Bi_gam_VinFast_V1.8.md).
+
+| Hạng mục | Trạng thái 29/10/2026 |
+|---|---|
+| Nội dung, case, nguồn | Anh Đạo duyệt — `lastReviewed` 2026-10-29 |
+| Bản vá R6 (Limo Green 2 mã, focus Bỏ lọc, hồ sơ trên preview) | Đã duyệt |
+| Thiết bị thật | Chủ quản xác nhận OK |
+| Chờ | Reviewer tái chấm chính thức; IT tích hợp production (robots/header, API/CRM/tracking, GSC/CWV) |
