@@ -105,3 +105,7 @@ Chủ quản xác nhận 27/10/2026: anh Nguyễn Quang Đạo đã duyệt 2 FA
 | Thẻ "Xe điện đi phố" (28/10) | Bỏ câu pin cao áp lặp, dẫn về box lưu ý hệ điện | Cảnh báo giữ ở box lưu ý + FAQ |
 
 `lastReviewed` giữ 2026-10-27.
+
+## Duyệt 29/10/2026 — xác nhận nguồn từng case
+
+Chủ quản xác nhận 29/10/2026: anh Nguyễn Quang Đạo đã xác nhận nguồn của từng case trên hub (10 bài hồ sơ, gồm 2 case Limo Green: X-Light F10 New 3.0 inch và F10 2.0 New 2.0 inch) và bản vá R6. `lastReviewed` → 2026-10-29.

@@ -21,7 +21,7 @@ Reviewer R6: **57,3/60** phần đủ bằng chứng + **CX /40**; đã đóng B
 | §7.3 production | — | — | IT: shell/OG/robots+`X-Robots-Tag`/canonical, API/CRM/tracking, GSC/CWV |
 | §7.4 danh bạ | — | — | Rating/Maps tại nguồn danh bạ |
 
-dateModified 2026-10-29; lastReviewed giữ 2026-10-27 (câu Limo Green chỉ ghi rõ 2 mã đã có trên trang con anh Đạo duyệt).
+dateModified 2026-10-29; lastReviewed 2026-10-29 — anh Đạo xác nhận nguồn từng case và bản vá R6 (xem 05). Tự chấm sau xác nhận: G3 5/5 → ≈94,4/100; SEO 28,8/30 và GEO 24,1/25 qua ngưỡng; tổng còn thiếu ≈0,6 — chờ test máy thật (U1).
 
 ## Tự chấm lại 28/10/2026 sau bản vá (thang 100 của phiếu 28/10)
 
