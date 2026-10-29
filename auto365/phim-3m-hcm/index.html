@@ -302,6 +302,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-card__price table td{padding:3px 0}.h3m-card__cta{margin-top:10px}
 .h3m-band__cta{flex-direction:column}.h3m-band__cta .h3m-btn{width:100%}
 }
+.h3m-trust--light{color:var(--t);margin:14px 0 0}.h3m-trust--light>div{background:#f6f7f9;border-color:#e6e9ed;backdrop-filter:none;-webkit-backdrop-filter:none}.h3m-trust--light b{color:var(--t)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -343,7 +344,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <li><b>Giảm chói kính lái</b>Giữ tầm nhìn rõ khi lái</li>
   </ul>
   <div class="h3m-hero__cta">
-   <a class="h3m-btn h3m-btn--red" href="#goi-phim">Xem 6 gói &amp; bảng giá →</a>
+   <a class="h3m-btn h3m-btn--red" href="#h3m-quick">Xem giá theo xe →</a>
    <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hero">☎ Gọi 0365 365 365</a>
   </div>
   <a class="h3m-gr h3m-gr--dark" href="https://www.google.com/maps/search/?api=1&amp;query=3M+Pro+Shop+-+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh+Hi%E1%BB%87p+B%C3%ACnh" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
@@ -353,7 +354,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <div><b>NPP chính thức</b><span>365Group – nhà phân phối 3M</span></div>
    <div><b>10 năm</b><span>Bảo hành điện tử 3M eWarranty</span></div>
    <div><b>3M Pro Shop</b><span>Trụ sở chính Hiệp Bình, TP.HCM</span></div>
-   <div><b>Từ 5,9 triệu</b><span>Giá trọn xe theo bảng giá 3M</span></div>
+   <div><b>Từ 5,9 triệu</b><span>Ceramic Hybrid · Minicar, trọn xe</span></div>
   </div>
  </div>
 </section>
@@ -363,7 +364,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <div><h2>Xem giá theo xe của bạn</h2><p>Chọn cấu hình phim và nhóm xe — giá trọn xe theo bảng giá 3M (06/2026).</p></div>
   <form class="h3m-quick__f" id="h3m-quick" onsubmit="return false">
    <select class="h3m-sel" id="q-pk" aria-label="Cấu hình phim"></select>
-   <select class="h3m-sel" id="q-car" aria-label="Nhóm xe"><option value="0">Minicar (i10, Morning, VF3…)</option><option value="1" selected>Sedan (Vios, City, Camry…)</option><option value="2">SUV / MPV (CR-V, Fortuner, VF8…)</option></select>
+   <select class="h3m-sel" id="q-car" aria-label="Nhóm xe"><option value="" selected>Chọn nhóm xe</option><option value="0">Minicar (i10, Morning, VF3…)</option><option value="1">Sedan (Vios, City, Camry…)</option><option value="2">SUV / MPV (CR-V, Fortuner, VF8…)</option></select>
    <button class="h3m-btn h3m-btn--red" id="q-go" type="button">Xem giá →</button>
    <div class="h3m-quick__out" id="q-out" aria-live="polite"></div>
   </form>
@@ -637,14 +638,28 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));
  });
  qs.value='crystalline-hybrid';
- var GN=['Minicar','Sedan','SUV/MPV'];
- document.getElementById('q-car').addEventListener('change',function(){var g=+this.value;document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];c.querySelector('.h3m-card__price').firstChild.nodeValue='Trọn xe '+GN[g]+' ';c.querySelector('.h3m-card__from').textContent=vnd(k.p[g]);c.querySelector('.h3m-card__cta').dataset.group=GN[g]})});
+ var GN=['Minicar','Sedan','SUV/MPV'],MOB0=matchMedia('(max-width:640px)').matches;
  
- document.getElementById('q-go').addEventListener('click',function(){
-  var k=PK.filter(function(x){return x.id===qs.value})[0],g=+document.getElementById('q-car').value,o=document.getElementById('q-out');
-  o.innerHTML='<b>3M '+k.n+'</b> – '+['Minicar','Sedan','SUV/MPV'][g]+': <b style="color:var(--r)">'+vnd(k.p[g])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+k.n+'" data-group="'+['Minicar','Sedan','SUV/MPV'][g]+'">Nhận báo giá &amp; đặt lịch →</button>';
-  o.classList.add('is-on');fs.value='3M '+k.n;
- });
+ // Lựa chọn của khách (gói + nhóm xe) dùng chung cho thẻ gói, bộ tra, popup và form cuối
+ var SEL={pk:'',gr:''},qc=document.getElementById('q-car'),qo=document.getElementById('q-out'),fvg=document.getElementById('dang-ky').vehicle_group;
+ function pkName(id){var k=PK.filter(function(x){return x.id===id})[0];return k?'3M '+k.n:''}
+ function syncForms(){fs.value=SEL.pk;fvg.value=SEL.gr}
+ function renderCards(){var g=qc.value===''?-1:+qc.value;
+  document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
+   c.querySelector('.h3m-card__price').firstChild.nodeValue=g<0?'Trọn xe từ ':'Trọn xe '+GN[g]+' ';
+   c.querySelector('.h3m-card__from').textContent=vnd(k.p[g<0?0:g]);
+   var b=c.querySelector('.h3m-card__cta');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g]})}
+ function renderQuote(){var k=PK.filter(function(x){return x.id===qs.value})[0];
+  if(qc.value===''){qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
+  var g=+qc.value;SEL.pk='3M '+k.n;SEL.gr=GN[g];syncForms();
+  qo.innerHTML='<b>3M '+k.n+'</b> – '+GN[g]+': <b style="color:var(--r)">'+vnd(k.p[g])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+k.n+'" data-group="'+GN[g]+'">Nhận báo giá &amp; đặt lịch →</button>';
+  qo.classList.add('is-on')}
+ qc.addEventListener('change',function(){renderCards();if(qo.classList.contains('is-on'))renderQuote()});
+ qs.addEventListener('change',function(){if(qo.classList.contains('is-on'))renderQuote()});
+ document.getElementById('q-go').addEventListener('click',renderQuote);
+ renderCards();
+ if(MOB0){var tr=document.querySelector('.h3m-hero .h3m-trust'),qw=document.querySelector('.h3m-quick');if(tr&&qw){tr.classList.add('h3m-trust--light');qw.insertAdjacentElement('afterend',tr)}}
+
 
  // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần
  var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
@@ -684,11 +699,14 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  bindLead(document.getElementById('dang-ky'));
  var dlg=document.getElementById('h3m-modal'),mf=dlg.querySelector('form'),mpk=document.getElementById('h3m-modal-pk');
  bindLead(mf);
+ fs.addEventListener('change',function(){SEL.pk=fs.value});fvg.addEventListener('change',function(){SEL.gr=fvg.value});
+ mf.package_name.addEventListener('change',function(){SEL.pk=mf.package_name.value});mf.vehicle_group.addEventListener('change',function(){SEL.gr=mf.vehicle_group.value});
  document.addEventListener('click',function(e){
   var o=e.target.closest('[data-open-lead]');
   if(!o&&!e.target.closest('a,button,input,select,textarea')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
-  var pk=o.dataset.pk?'3M '+o.dataset.pk:'',gr=o.dataset.group||'';
-  mf.package_name.value=pk;mf.vehicle_group.value=gr==='SUV/MPV'?'SUV/MPV':gr;fs.value=pk;
+  var pk=o.dataset.pk?'3M '+o.dataset.pk:SEL.pk,gr=o.dataset.group||SEL.gr;
+  if(o.dataset.pk){SEL.pk=pk;if(o.dataset.group)SEL.gr=o.dataset.group}
+  mf.package_name.value=pk;mf.vehicle_group.value=gr;syncForms();
   mpk.hidden=!pk;mpk.innerHTML=pk?'Gói đã chọn: <b>'+pk+'</b>'+(gr?' · '+gr:''):'';
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
   if(dlg.showModal)dlg.showModal();else location.hash='dang-ky';
