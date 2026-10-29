@@ -10,7 +10,7 @@
 | H1 | Bi gầm VinFast VF MPV 7: giá, cấu hình và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF MPV 7 |
-| Bản nguồn | `index.html` SHA-256 `026059b996109ae252f0f8a08c45128dd7515eda4f9252339cb6820c495d011d` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `6be70eb43371c454ddc6bebe136c8e235c63d415ede8b6af52c0a20cbbdbb566` (24/10/2026) |
 
 ## Khi đăng production
 
@@ -64,3 +64,7 @@ Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2)
 - Nhãn ảnh: chữ "AI" đã gỡ khỏi caption/alt theo yêu cầu chủ trang; alt dùng mô tả trung tính dạng "minh họa …", không mô tả là ảnh thi công hay kết quả đo.
 - Câu "Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8" trong khối nội bộ đã bỏ.
 - Tổng quan xe rút còn 2 câu theo yêu cầu chủ trang.
+
+## Cập nhật ảnh 29/10/2026
+
+- Thay ảnh minh họa bằng ảnh thật Auto365 cung cấp (xe tại xưởng, thao tác lắp, test vách). Alt mô tả đúng nội dung ảnh thật.

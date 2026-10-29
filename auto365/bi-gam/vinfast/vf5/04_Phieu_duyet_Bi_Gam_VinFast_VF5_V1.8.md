@@ -4,7 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `7534409ec659c1ac5ac37c8a0fe1339394c1a09f08deea2b77a48cf02c2eb37b` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `6ccfb7362e7660a31de30a715034149b5e1c78bd5fae6d9ca2b02d8bf5e4e9df` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |
@@ -88,3 +88,7 @@ Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (l
 - Nhãn ảnh: chữ "AI" đã gỡ khỏi caption/alt theo yêu cầu chủ trang; alt dùng mô tả trung tính dạng "minh họa …", không mô tả là ảnh thi công hay kết quả đo.
 - Câu "Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8" trong khối nội bộ đã bỏ.
 - Tổng quan xe rút còn 2 câu theo yêu cầu chủ trang.
+
+## Cập nhật ảnh 29/10/2026
+
+- Thay ảnh minh họa bằng ảnh thật Auto365 cung cấp (xe tại xưởng, thao tác lắp, test vách). Alt mô tả đúng nội dung ảnh thật.

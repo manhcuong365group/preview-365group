@@ -4,7 +4,7 @@
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `026059b996109ae252f0f8a08c45128dd7515eda4f9252339cb6820c495d011d` (cùng mã trong 02/04) |
+| SHA-256 index.html | `6be70eb43371c454ddc6bebe136c8e235c63d415ede8b6af52c0a20cbbdbb566` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,8 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast VF MPV 7"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm VF MPV 7; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -17,7 +17,7 @@
 |---|---|
 | Trang | Bi gầm VinFast VF MPV 7 — preview https://preview-365group.pages.dev/bi-gam/vinfast/vf-mpv7/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-mpv7 (chưa đăng) |
-| SHA-256 index.html | `026059b996109ae252f0f8a08c45128dd7515eda4f9252339cb6820c495d011d` (cùng mã trong 02/04) |
+| SHA-256 index.html | `6be70eb43371c454ddc6bebe136c8e235c63d415ede8b6af52c0a20cbbdbb566` (cùng mã trong 02/04) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
 | Reviewer | Nguyễn Quang Đạo — duyệt 24/10/2026 (lastReviewed 2026-10-24) |
 | Test lead | Chưa test trên trang này (chưa đăng) |
@@ -80,3 +80,7 @@ Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2)
 - Nhãn ảnh: chữ "AI" đã gỡ khỏi caption/alt theo yêu cầu chủ trang; alt dùng mô tả trung tính dạng "minh họa …", không mô tả là ảnh thi công hay kết quả đo.
 - Câu "Đã duyệt theo Auto365 Quy chuẩn SEO/GEO V1.8" trong khối nội bộ đã bỏ.
 - Tổng quan xe rút còn 2 câu theo yêu cầu chủ trang.
+
+## Cập nhật ảnh 29/10/2026
+
+- Thay ảnh minh họa bằng ảnh thật Auto365 cung cấp (xe tại xưởng, thao tác lắp, test vách). Alt mô tả đúng nội dung ảnh thật.
