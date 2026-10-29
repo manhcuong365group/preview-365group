@@ -17,7 +17,7 @@ Kết quả R6 của reviewer: điểm phần đã chấm **64/70** (C1 9 · C2 
 | 3.3 Vá chữ nhỏ | Ghi chú TSER dưới 6 cấu hình thêm: "nhiệt độ thực tế trong xe còn phụ thuộc kính, diện tích dán, thời tiết và cách sử dụng" | Xong |
 | F02 QA mobile/tablet | Kiểm trên local (cùng source với preview) ở 360×780, 390×844, 430×932, 768×1024, 1024×768 | Xem bảng QA bên dưới |
 | Trạng thái nội bộ | Khối nội bộ ghi R6 64/70, CX còn lại, chưa ký ĐẠT V1.9 | Xong |
-| Hồ sơ | 01 xuất lại theo source 29/10; SHA đồng bộ 01/02/03; dateModified 29/10, lastReviewed giữ 23/10 | Xong |
+| Hồ sơ | 01 xuất lại theo source 29/10; SHA đồng bộ 01/02/03; dateModified 29/10, lastReviewed 29/10 (anh Hoàng xác nhận nguồn/điều kiện đo F01) | Xong |
 
 ### Kết quả QA F02 (29/10/2026, trình duyệt giả lập viewport — chưa phải thiết bị thật)
 
@@ -40,7 +40,7 @@ Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web V
 
 | Mã R6 | Đầu ra để đóng | Đầu mối |
 |---|---|---|
-| F01 | Bảng đối chiếu nguồn/điều kiện theo dòng CR BLK / IR / NR và từng chỉ tiêu (gồm nhãn kính "Auto75"), duyệt bản sửa sau 23/10 | Product / anh Hoàng + Content |
+| F01 | Bảng đối chiếu nguồn/điều kiện theo dòng CR BLK / IR / NR và từng chỉ tiêu (gồm nhãn kính "Auto75"), duyệt bản sửa sau 23/10 | ✅ Anh Hoàng đã xác nhận 29/10/2026 (nguồn/điều kiện đo theo bản R6) |
 | F02 | QA trên thiết bị thật (bàn phím ảo) nếu cần cho U1 | Cường + QA |
 | F03 | Danh mục 224 đại lý / 32 tỉnh đang hoạt động; nghiệm thu giao diện + dữ liệu các trang danh bạ đích | Operations + Cường |
 | F04 | Route production (đang 404), tài nguyên, robots/CDN, sitemap; loại khối nội bộ khỏi HTML xuất bản (không chỉ ẩn CSS) | Cường + SEO |
@@ -55,7 +55,7 @@ Kết quả R5 của reviewer: điểm phần đã chấm **62,5/70** (C1 8,5 ·
 
 | Mã | Việc reviewer giao | Đã làm (28/10/2026) | Trạng thái |
 |---|---|---|---|
-| F01 | Tách chú thích IRR, không gộp điều kiện đo; sửa diễn giải TSER | Sửa 5 vị trí: ghi chú điều kiện đo của tab, đoạn mở đầu + caption bảng 12 mã, ghi chú mục thuật ngữ, DefinedTermSet. TSER/VLT/UVR/Glare R ghi "ước tính trên kính xanh 6 mm (VLT 73%)"; IRR ghi "đo trên phim, dải 900–1.000 nm, không có kính" theo 3M VN. Bỏ câu "điều kiện đo trùng với 3M VN" và "TSER càng cao, xe càng ít nóng"; thay bằng "trong cùng điều kiện đo…, nhiệt thực tế còn phụ thuộc kính, diện tích dán, thời tiết, cách sử dụng". Không đổi số liệu, không đổi IRR → IRER | Chờ Product/anh Hoàng chốt điều kiện từng chỉ tiêu (nhất là IRR nhóm NR/IR trong PDF 260815) |
+| F01 | Tách chú thích IRR, không gộp điều kiện đo; sửa diễn giải TSER | Sửa 5 vị trí: ghi chú điều kiện đo của tab, đoạn mở đầu + caption bảng 12 mã, ghi chú mục thuật ngữ, DefinedTermSet. TSER/VLT/UVR/Glare R ghi "ước tính trên kính xanh 6 mm (VLT 73%)"; IRR ghi "đo trên phim, dải 900–1.000 nm, không có kính" theo 3M VN. Bỏ câu "điều kiện đo trùng với 3M VN" và "TSER càng cao, xe càng ít nóng"; thay bằng "trong cùng điều kiện đo…, nhiệt thực tế còn phụ thuộc kính, diện tích dán, thời tiết, cách sử dụng". Không đổi số liệu, không đổi IRR → IRER | ✅ Anh Hoàng đã xác nhận 29/10/2026 |
 | F02 | Bỏ `.m3-care__list` khỏi quy tắc cuộn ngang ≤560 px | Đã xoá khỏi cả 2 selector `:is(...)`; 4 bước chăm sóc hiển thị dọc. Kiểm 375 px: grid 1 cột, không tràn ngang. Dải cấu hình/case vẫn cuộn ngang | Đóng phần code; còn QA 360/390/430/768 px có ảnh |
 | F03 | Nhãn 3 nhóm đại lý phải khớp đích | Chưa có dữ liệu phân nhóm đáng tin → đổi CTA cả 3 thẻ thành "Mở danh sách đại lý toàn quốc →" để khách biết đang mở danh sách chung; không tạo bộ lọc trống | Còn mở phần lọc theo nhóm (cần Operations phân loại) |
 | F04 | Sapo hướng trải nghiệm, bỏ "Trang này gom…" | Sapo: "Khám phá Crystalline CR BLK, Ceramic IR và Ceramic NR. So sánh độ sáng, khả năng cản nhiệt và cấu hình theo xe, rồi chọn đại lý để được tư vấn." (thứ tự theo 3 tab) | Đóng |
@@ -76,7 +76,7 @@ Kết quả R5 của reviewer: điểm phần đã chấm **62,5/70** (C1 8,5 ·
 
 | Mã | Việc | Đầu mối |
 |---|---|---|
-| F01 | Chốt điều kiện đo TSER/VLT/UVR/Glare R/IRR theo nguồn từng nhóm mã | Product / anh Hoàng |
+| F01 | Chốt điều kiện đo TSER/VLT/UVR/Glare R/IRR theo nguồn từng nhóm mã | ✅ Anh Hoàng xác nhận 29/10/2026 |
 | F03 | Phân nhóm Pro Shop / Auto365 / đại lý khác để lọc thật; danh mục + ngày đối chiếu cho 224 đại lý / 32 tỉnh | Operations |
 | F05 | Production `https://3m.365group.com.vn/phim-cach-nhiet-3m` vẫn 404; route, PDF, ảnh, OG, robots/canonical | IT / SEO |
 | F06 | Hồ sơ V1.9 cùng bản (01/02/03 hiện đứng tên V1.8), reviewer duyệt bản sửa | Reviewer + SEO/IT |
@@ -355,7 +355,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `0cc00a9bce44974f06602d25502725bfde68268fe80450a4202b97e9683e9241` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `44876c8a9099cc040205616750c201257f792d80fe1d92bb8601a0bf5003cdd6` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
