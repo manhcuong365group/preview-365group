@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `89a87f06dd22c1689578c1eb2b4be30261e06fae5415e5536c5f0be28ca64cee`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ecd353d5ab8eb4f265423003cca64d04a215c37c2b1f21a4565c6b8014126a32`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -174,6 +174,18 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 4. 4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
 5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
 6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
+
+## Auto365.vn - Trụ Sở Chính  `#he-thong`
+
+Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh
+
+Giờ làm việc8:30 – 18:30
+
+Trụ sởHiệp Bình, TP.HCM · Xem hồ sơ →
+
+Bảo hànhTheo từng sản phẩm
+
+Tư vấnQua hotline
 
 ## 90+ chi nhánh · 33 tỉnh thành  `#he-thong`
 
@@ -376,18 +388,6 @@ Tây Ninh
 Cà Mau
 
 - Auto365 Bạc Liêu
-
-## Auto365.vn - Trụ Sở Chính  `#he-thong`
-
-Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh · Xem hồ sơ Trụ Sở Chính →
-
-Giờ làm việc8:30 – 18:30
-
-Trụ sởHiệp Bình, TP.HCM
-
-Bảo hànhTheo từng sản phẩm
-
-Tư vấnQua hotline
 
 ## PPF là gì?  `#kien-thuc`
 
