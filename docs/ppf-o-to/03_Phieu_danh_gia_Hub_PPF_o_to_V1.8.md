@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `44f8bf4b445851d973e4c9eecfe3a88ac1bd1f146e5a2e0d8035a7593e76bd38` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `0fb521fe14415791d207a3114d6f4b685f135460f44e63f8eab7ca37b3e4fdb7` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -262,3 +262,5 @@ Bổ sung 30/10/2026 (sau pk55):
 ## Nghiệm thu U3 pk56 (30/10/2026) — ĐÃ DUYỆT
 
 Phiếu nghiệm thu U3 bản pk56 (Ngọc Trân – SEO, 30/10/2026): PPF54-01…04 PASS – ĐÃ ĐÓNG; U1, U2 PASS; U3 PASS – ĐÃ DUYỆT; Content/SEO/GEO PASS theo nghiệm thu, không gán điểm tổng mới. Trạng thái cuối: ĐÃ DUYỆT – ĐÓNG U3 V1.9. Chi tiết trong [04](04_Phieu_duyet_Hub_PPF_o_to.md).
+
+Cập nhật 30/10/2026 (chủ trang gửi #branch-discovery production): bỏ khối mở/đóng "Danh sách 91 điểm theo 33 tỉnh/thành", trả danh sách 91 điểm / 33 tỉnh về dạng ẩn giống SSR production; link Auto365 Quảng Ninh đổi sang /chi-nhanh/quang-ninh/ha-long như production. Giao diện khối Hệ thống nay trùng production.

@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `44f8bf4b445851d973e4c9eecfe3a88ac1bd1f146e5a2e0d8035a7593e76bd38` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `0fb521fe14415791d207a3114d6f4b685f135460f44e63f8eab7ca37b3e4fdb7` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -57,7 +57,7 @@ Endpoint `https://auto365.vn/api/leads`. Trên pages.dev không có `/api/leads`
 | Luồng báo giá | Card 3M 200 cỡ vừa → cỡ lớn 110 → 122 triệu, giữ tên khách; card 3M 100 → Sửa quay về đúng thẻ; calculator AX G gói đầu Sedan → SUV 7,2 → 7,92 triệu; chuyển card ↔ calculator tóm tắt theo nguồn vừa thao tác; khách tự chọn phạm vi thì xoá cấu hình vẫn giữ phạm vi |
 | Đa thiết bị | 360, 375, 390, 430, 768, 820, 1024, 1280 px: không tràn ngang; bảng so sánh xếp thẻ ≤760 px; bảng 13 vị trí ghim cột "Vị trí dán" |
 | Console | Không lỗi |
-| Hệ thống | 2 thẻ (chi nhánh / Trụ Sở Chính) + khối mở/đóng "Danh sách 91 điểm theo 33 tỉnh/thành" (124 link tới danh bạ lọc PPF theo tỉnh và hồ sơ từng cơ sở) |
+| Hệ thống | Khối #he-thong giống #branch-discovery production 30/10: thẻ Trụ Sở Chính (2 hotline + Google Maps) và thẻ 90+ chi nhánh (ô tìm, Gần tôi, 3 miền 41/26/24 điểm); danh sách 91 điểm / 33 tỉnh nằm dạng ẩn như SSR production (link tuyệt đối auto365.vn) |
 
 ## Ngoài phạm vi trang này
 
@@ -105,3 +105,5 @@ Content, SEO, GEO: PASS theo nghiệm thu (nền pk54: 29,4/30 · 29,1/30 · 24,
 **Trạng thái cuối: ĐÃ DUYỆT – ĐÓNG U3 V1.9 (30/10/2026).** Khi lên auto365.vn: đối chiếu canonical, redirect, tài nguyên và form theo production — bước phát hành thông thường, không phải lỗi còn mở.
 
 Ghi chú 30/10/2026: theo yêu cầu chủ trang, thẻ U3 được đặt trong khối "Kiểm tra nội bộ" cuối trang hub (`#internal-check`, chỉ hiện trên pages.dev/localhost, xoá khi lên production). Khối này làm SHA trang đổi từ `a52390cd…` (bản pk56 nghiệm thu) sang SHA ở đầu phiếu; nội dung khách đọc (01) không đổi.
+
+Cập nhật 30/10/2026 (chủ trang gửi #branch-discovery production): bỏ khối mở/đóng "Danh sách 91 điểm theo 33 tỉnh/thành", trả danh sách 91 điểm / 33 tỉnh về dạng ẩn giống SSR production; link Auto365 Quảng Ninh đổi sang /chi-nhanh/quang-ninh/ha-long như production. Giao diện khối Hệ thống nay trùng production.
