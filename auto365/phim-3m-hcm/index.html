@@ -356,6 +356,18 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-cta2 b{display:block;font-size:19px;font-weight:600;margin-bottom:2px}.h3m-cta2 span{font-size:14px;opacity:.85}
 .h3m-cta2__b{display:flex;align-items:center;gap:16px;flex-shrink:0}.h3m-cta2__b a{color:#fff;font-size:14px;text-decoration:none;white-space:nowrap}.h3m-cta2__b a:hover{text-decoration:underline}
 @media (max-width:760px){.h3m-cta2{flex-direction:column;align-items:stretch;padding:18px 16px}.h3m-cta2__b{flex-wrap:wrap;justify-content:center}.h3m-cta2__b .h3m-btn{flex:1 1 100%;justify-content:center}}
+.h3m-press .h3m-mq .h3m-pl{display:grid!important;width:100%;transform:none!important;transition:none}
+.h3m-press .h3m-mq .h3m-pl li{grid-area:1/1;opacity:0;visibility:hidden;transition:opacity .6s,visibility .6s}
+.h3m-press .h3m-mq .h3m-pl li.is-on{opacity:1;visibility:visible}
+.h3m-press .h3m-mq .h3m-pl a{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center}
+.h3m-press .h3m-mq .h3m-pl img{aspect-ratio:16/9;height:100%;object-fit:cover}
+.h3m-press .h3m-mq .h3m-pl a>span{padding:28px 32px}.h3m-press .h3m-mq .h3m-pl small{font-size:14px;margin-bottom:10px}
+.h3m-press .h3m-mq .h3m-pl b{font-size:24px;line-height:1.4;-webkit-line-clamp:3}
+.h3m-press .h3m-mq .h3m-pl a>span:after{content:'Đọc bài ↗';display:block;margin-top:14px;font-size:14px;color:var(--r);font-weight:500}
+.h3m-pnav{align-items:center}.h3m-pnav__n{min-width:56px;text-align:center;font-size:14px;color:var(--m)}
+.h3m-pdots{display:flex;justify-content:center;gap:6px;margin-top:14px}.h3m-pdots button{width:7px;height:7px;padding:0;border:0;border-radius:50%;background:#d2d6dc;cursor:pointer}.h3m-pdots button.is-on{width:20px;border-radius:4px;background:var(--r)}
+@media (max-width:640px){.h3m-press .h3m-mq .h3m-pl a{grid-template-columns:1fr}.h3m-press .h3m-mq .h3m-pl a>span{padding:14px 16px 16px}.h3m-press .h3m-mq .h3m-pl b{font-size:17px}.h3m-pdots{flex-wrap:wrap}}
+.h3m-press .h3m-mq .h3m-pl{grid-template-columns:minmax(0,1fr)}.h3m-press .h3m-mq .h3m-pl li{width:100%;min-width:0}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -433,7 +445,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <div class="h3m-wrap">
 
   <h2 class="h3m-h2">19 bài báo viết về <em>3M Pro Shop</em> tại TP.HCM</h2>
-  <div class="h3m-pnav"><button type="button" data-pnav="-1" aria-label="Bài báo trước">‹</button><button type="button" data-pnav="1" aria-label="Bài báo tiếp theo">›</button></div>
+  <div class="h3m-pnav"><button type="button" data-pnav="-1" aria-label="Bài báo trước">‹</button><span class="h3m-pnav__n"></span><button type="button" data-pnav="1" aria-label="Bài báo tiếp theo">›</button></div>
   <div class="h3m-press__grid h3m-mq">
    <ul class="h3m-pl">
     <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/1-17821219928711310056705-119-0-841-1379-crop-17821220365881.webp" alt="Ảnh bài báo Thanh Niên: 3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thanh Niên · 22/06/2026</small><b>3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</b></span></a></li>
@@ -748,21 +760,21 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
  moreC.addEventListener('click',function(){shown+=STEP;applyCases()});applyCases();
  var rzT,rzW=innerWidth;addEventListener('resize',function(){clearTimeout(rzT);rzT=setTimeout(function(){if(innerWidth===rzW)return;rzW=innerWidth;var st=matchMedia('(max-width:640px)').matches?6:12;shown=Math.max(st,Math.ceil(shown/STEP)*st);STEP=st;applyCases()},150)});
- // Báo chí: trượt từng thẻ mỗi 3,5 giây (nhân đôi danh sách để quay vòng liền)
- var pl=document.querySelector('.h3m-pl');pl.querySelectorAll('li').forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
- pl.querySelectorAll('li').forEach(function(li){var c=li.cloneNode(true);c.setAttribute('aria-hidden','true');c.querySelector('a').tabIndex=-1;pl.appendChild(c)});
+ // Báo chí: hiện 1 bài mỗi lần, chuyển mờ dần sau 4 giây
+ var pl=document.querySelector('.h3m-pl'),pLi=[].slice.call(pl.querySelectorAll('li')),pN=pLi.length,pI=0,pT,mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ pLi.forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
  document.querySelector('[data-more=press]').hidden=true;
- var pN=pl.children.length/2,pI=0,pT,mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
- function pStep(){var li=pl.children[0];return li.getBoundingClientRect().width+parseFloat(getComputedStyle(pl).columnGap||16)}
- function pGo(i,anim){pI=i;pl.style.transition=anim?'transform .7s ease':'none';pl.style.transform='translateX('+(-pI*pStep())+'px)'}
- pl.addEventListener('transitionend',function(){if(pI>=pN)pGo(pI-pN,false);if(pI<0)pGo(pI+pN,false)});
- function pNext(d){if(pI+d<0)pGo(pI+pN,false),pl.offsetWidth;pGo(pI+d,true)}
- function pPlay(){clearInterval(pT);if(!still)pT=setInterval(function(){pNext(1)},3500)}
+ var pDots=document.createElement('div');pDots.className='h3m-pdots';pDots.innerHTML=pLi.map(function(_,i){return '<button type="button" aria-label="Bài '+(i+1)+'"></button>'}).join('');mq.appendChild(pDots);
+ var pCnt=document.querySelector('.h3m-pnav__n');
+ function pGo(i){pI=(i+pN)%pN;pLi.forEach(function(li,k){li.classList.toggle('is-on',k===pI);li.setAttribute('aria-hidden',k===pI?'false':'true')});
+  [].forEach.call(pDots.children,function(d,k){d.classList.toggle('is-on',k===pI)});if(pCnt)pCnt.textContent=(pI+1)+' / '+pN}
+ function pPlay(){clearInterval(pT);if(!still)pT=setInterval(function(){pGo(pI+1)},4000)}
  mq.addEventListener('mouseenter',function(){clearInterval(pT)});mq.addEventListener('mouseleave',pPlay);
- document.querySelectorAll('[data-pnav]').forEach(function(b){b.addEventListener('click',function(){pNext(+b.dataset.pnav);pPlay()})});
+ document.querySelectorAll('[data-pnav]').forEach(function(b){b.addEventListener('click',function(){pGo(pI+(+b.dataset.pnav));pPlay()})});
+ pDots.addEventListener('click',function(e){var i=[].indexOf.call(pDots.children,e.target);if(i>-1){pGo(i);pPlay()}});
  var pX;mq.addEventListener('touchstart',function(e){pX=e.touches[0].clientX;clearInterval(pT)},{passive:true});
- mq.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-pX;if(Math.abs(dx)>40)pNext(dx<0?1:-1);pPlay()});
- addEventListener('resize',function(){pGo(pI,false)});pPlay();
+ mq.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-pX;if(Math.abs(dx)>40)pGo(pI+(dx<0?1:-1));pPlay()});
+ pGo(0);pPlay();
 
  // Lead form: chỉ báo thành công khi API trả {"success": true}
  function bindLead(f){
