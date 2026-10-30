@@ -145,3 +145,7 @@ Chủ quản xác nhận 29/10/2026: đã test trang preview trên điện tho�
 | Bản vá R7 | Đã làm, không đổi nội dung kỹ thuật |
 | Thiết bị thật | Chủ quản xác nhận OK (29/10) |
 | Mục còn mở trong phạm vi trang | Không còn — chờ reviewer tái chấm |
+
+## Phiếu duyệt U3 V1.9 — PASS · ĐÃ DUYỆT 30/10/2026
+
+Phiếu nghiệm thu U3 (bản HTML 30/10/2026): đóng toàn bộ feedback R7; U1, U2 PASS, U3 ĐÃ DUYỆT; SEO/GEO, dữ liệu xe, FAQ/Schema, địa phương, hồ sơ nguồn PASS. Các mục CX của R7 thay bằng PASS theo xác nhận nghiệm thu. Biên soạn: Team Content Auto365; rà soát kỹ thuật nội dung: Nguyễn Quang Đạo; rà soát SEO và nghiệm thu: Ngọc Trân – SEO. Bản PDF: [Phieu_U3_Hub_Bi_Gam_VinFast_V19_DA_DUYET_20261030.pdf](../../auto365/bi-gam/vinfast/ho-so/Phieu_U3_Hub_Bi_Gam_VinFast_V19_DA_DUYET_20261030.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ.
