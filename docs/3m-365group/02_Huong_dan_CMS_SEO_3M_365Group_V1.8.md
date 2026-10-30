@@ -53,6 +53,18 @@ Không có: bảng "So sánh nhanh", bộ lọc dòng phim trên bảng mã, b�
 - IRR: trong dải 900–1.000 nm, trên phim với lớp lót, không có kính.
 - Nhiệt độ thực tế trong xe còn phụ thuộc kính, diện tích dán, thời tiết và cách sử dụng.
 
+**Bảng nguồn hiện hành (duyệt 29/10/2026):**
+
+| Nhóm claim | Mã / điều kiện | Nguồn / căn cứ | Ngày / người duyệt | Trạng thái |
+|---|---|---|---|---|
+| TSER / VLT / UVR / Glare R | 12 mã; kính xanh 6 mm, VLT 73% | Bảng 3M AutoFilm 365Group mã 260815 (06/2026) | Đặng Minh Hoàng, 29/10/2026 | Đã duyệt |
+| IRR | 900–1.000 nm; trên phim với lớp lót; không có kính | Bảng 260815 + tài liệu 3M Việt Nam | Đặng Minh Hoàng, 29/10/2026 | Đã duyệt |
+| Giá | 6 gói × Minicar/Sedan/SUV; đã gồm công thi công + VAT | Bảng giá 260815; chủ trang xác nhận công/VAT 26/10/2026 | Chủ trang 26/10/2026 | Đã ghi nhận |
+| Bảo hành | 10 năm cả 6 cấu hình; kích hoạt bảo hành điện tử (eWarranty) | 3M + chính sách 365 Group (`/bao-hanh-3m.html`) | Chủ trang 22/10/2026 | Đã ghi nhận |
+| Vai trò thương hiệu | 365 Group - 3M Authorized Distributor in Vietnam; nhà phân phối chính thức; 224 đại lý / 32 tỉnh | Hồ sơ phân phối của chủ trang; chứng nhận "cert-distributor-365group" trên trang | Chủ trang 22/10/2026 | Cần lưu bản chụp giấy chứng nhận phân phối trong hồ sơ |
+
+Không gộp IRR vào điều kiện kính xanh; không đổi IRR thành IRER; không tự đổi số.
+
 **6 cấu hình (giá trọn xe, đã gồm công thi công và VAT; giá theo xe do đại lý báo):**
 
 | Cấu hình | Kính lái | Hông/lưng | Giá (Minicar – SUV) |
@@ -102,7 +114,7 @@ Màu đỏ chỉ dùng cho logo, nút và dấu * bắt buộc. Tài liệu khô
 1. Dựng route URL đích (đang 404), kiểm canonical/og:url, tài nguyên, robots (index,follow), CDN, sitemap.
 2. **Xoá hẳn khối "Kiểm tra nội bộ" (`#m3-internal`) khỏi HTML**, không chỉ ẩn CSS.
 3. Nghiệm thu lead/tracking (A7).
-4. QA thiết bị thật (bàn phím ảo) khi nghiệm thu; QA giả lập 5 khổ đã có trong phiếu 03.
+4. QA: ảnh/log 5 khổ trong `qa/` (README.md); thiết bị thật chủ trang báo OK 30/10. Kiểm lại link production theo `qa/link-audit.csv` sau khi deploy.
 
 ---
 

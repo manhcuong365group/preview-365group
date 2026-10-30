@@ -1,0 +1,82 @@
+{
+ "url": "https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/?qa=1030",
+ "browser": "Chrome/150.0.7871.24",
+ "time": "2026-10-30T10:51:57.020Z",
+ "results": [
+  {
+   "viewport": "360x780",
+   "scrollW": 360,
+   "innerW": 360,
+   "overflow": false,
+   "tabs": 3,
+   "tabSwitch": true,
+   "tableScroll": true,
+   "cards": 6,
+   "careCols": 1,
+   "popupFocus": "phone",
+   "popupService": "3M Ceramic IR",
+   "afterEscOpen": false,
+   "formsAfter": 3
+  },
+  {
+   "viewport": "390x844",
+   "scrollW": 390,
+   "innerW": 390,
+   "overflow": false,
+   "tabs": 3,
+   "tabSwitch": true,
+   "tableScroll": true,
+   "cards": 6,
+   "careCols": 1,
+   "popupFocus": "phone",
+   "popupService": "3M Ceramic IR",
+   "afterEscOpen": false,
+   "formsAfter": 3
+  },
+  {
+   "viewport": "430x932",
+   "scrollW": 430,
+   "innerW": 430,
+   "overflow": false,
+   "tabs": 3,
+   "tabSwitch": true,
+   "tableScroll": true,
+   "cards": 6,
+   "careCols": 1,
+   "popupFocus": "phone",
+   "popupService": "3M Ceramic IR",
+   "afterEscOpen": false,
+   "formsAfter": 3
+  },
+  {
+   "viewport": "768x1024",
+   "scrollW": 768,
+   "innerW": 768,
+   "overflow": false,
+   "tabs": 3,
+   "tabSwitch": true,
+   "tableScroll": true,
+   "cards": 6,
+   "careCols": 2,
+   "popupFocus": "phone",
+   "popupService": "3M Ceramic IR",
+   "afterEscOpen": false,
+   "formsAfter": 3
+  },
+  {
+   "viewport": "1024x768",
+   "scrollW": 1024,
+   "innerW": 1024,
+   "overflow": false,
+   "tabs": 3,
+   "tabSwitch": true,
+   "tableScroll": false,
+   "cards": 6,
+   "careCols": 2,
+   "popupFocus": "phone",
+   "popupService": "3M Ceramic IR",
+   "afterEscOpen": false,
+   "formsAfter": 3
+  }
+ ]
+}

@@ -5,6 +5,19 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
+
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `9d207b96bcd4bd650de836b72d9f768905b2c7d282eb93af24443030bab7090f` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+
+| Mã | Đã làm | Bằng chứng | Còn CX |
+|---|---|---|---|
+| U1 | Chạy QA 5 khổ 360/390/430/768/1024: không tràn ngang, đổi tab, bảng 12 mã cuộn trong khung, 6 thẻ, chăm sóc 1 cột (<768) / 2 cột, popup chọn sẵn gói + focus ô điện thoại, Escape đóng, còn 1 form lead | [qa/README.md](qa/README.md), `qa/qa-*.jpg` (10 ảnh), `qa/qa-log.json` | CWV, lead thật. Thiết bị thật: chủ trang báo OK 30/10, biên bản do QA giữ |
+| S3 | Kiểm 79 URL (a/img/link/script/og:image) + 7 anchor: tất cả 200/OK, PDF 260815 là application/pdf | [qa/link-audit.csv](qa/link-audit.csv) | Canonical + og:image production 404 (chưa deploy) — kiểm lại sau triển khai |
+| G3 | File 02 Phần A4 thêm **Bảng nguồn hiện hành**: nhóm claim × điều kiện × nguồn × người/ngày duyệt × trạng thái; IRR tách riêng | 02 mục A4 | Lưu bản chụp giấy chứng nhận phân phối |
+| U3 | 02 đã có Phần A (đặc tả hiện hành, đặt đầu) / Phần B (lịch sử, không dùng nhập CMS) từ 30/10; 01 ngày xuất 29/10; SHA tính lại | 01/02/03 cùng SHA trên | Reviewer mở Phần A xác nhận |
+
+Điểm 93/100 trước đây là team tự chấm, không phải điểm reviewer.
+
 ## Kết luận 30/10/2026 — ĐẠT V1.9
 
 Chủ trang xác nhận 30/10/2026:
