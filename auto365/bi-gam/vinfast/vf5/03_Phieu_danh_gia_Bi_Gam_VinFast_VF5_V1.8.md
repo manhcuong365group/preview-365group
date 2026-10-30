@@ -5,12 +5,12 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `6bc0a6125ee2da091495c6704fd5318d84db4055fd21ff7a8d9d5b5701485b9b` |
+| SHA-256 index.html | `84bf98465eb6d75c7f281a050eac4e9182bc8d6fbc8e8bd388ca99a2b61daf06` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF5 |
 | Danh bạ | Địa chỉ + điện thoại đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm đủ 91 cơ sở như /chi-nhanh (thêm 3M Pro Shop, Bình Dương CN2, CN3 ngày 30/10): "90+ cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 24); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
-| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
+| Còn CX — người đóng | Phạm vi xe: tất cả áp dụng bản tiêu chuẩn (chủ trang chốt 30/10, đã ghi trên trang); chuẩn dịch vụ theo nhóm cơ sở (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
