@@ -337,6 +337,25 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-real li>span{flex:0 0 32px;height:32px;border-radius:50%;background:var(--r);color:#fff;display:grid;place-items:center;font-size:13px;font-weight:600}
 @media (max-width:640px){.h3m-real{padding:18px 16px}.h3m-real ul{grid-template-columns:1fr;gap:14px}}
 .h3m-real,.h3m-real .h3m-real__t,.h3m-real li b{color:var(--t)}.h3m-real li{color:var(--m)}
+.h3m-mq{-webkit-mask:none;mask:none;margin:0;padding:4px 0 8px}
+.h3m-press .h3m-mq .h3m-pl{animation:none;will-change:transform;width:100%}
+.h3m-press .h3m-mq .h3m-pl li{flex:0 0 calc((100% - 32px)/3)}
+.h3m-press .h3m-wrap{position:relative}.h3m-pnav{position:absolute;right:16px;top:0;display:flex;gap:8px}
+.h3m-pnav button{width:40px;height:40px;border:1px solid #d2d9e3;border-radius:50%;background:#fff;font-size:22px;line-height:1;color:var(--t);cursor:pointer}.h3m-pnav button:hover{border-color:var(--r);color:var(--r)}
+@media (max-width:900px){.h3m-press .h3m-mq .h3m-pl li{flex:0 0 calc((100% - 16px)/2)}}
+@media (max-width:640px){.h3m-press .h3m-mq .h3m-pl li{flex:0 0 85%}.h3m-pnav{display:none}.h3m-mq{overflow:hidden}}
+.h3m-hq+.h3m-psg{margin:24px 0 0}
+.h3m-ff{grid-template-columns:minmax(0,1fr);gap:24px}
+.h3m-form{padding:20px 22px;background:#3f4144}.h3m-form h2{font-size:20px;margin:0 0 4px}.h3m-form>p{font-size:14px;margin:0 0 12px;opacity:.85}
+@media (min-width:900px){.h3m-form{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:12px;align-items:start}.h3m-form h2,.h3m-form>p,.h3m-form .h3m-msg,.h3m-form__alt{grid-column:1/-1}
+.h3m-form .h3m-form__g{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.h3m-form .h3m-form__g .ck{grid-column:1/-1;margin:0}.h3m-form>button[type=submit]{margin:0;white-space:nowrap}}
+.h3m-form [name=vehicle_group],.h3m-form #f-pk{display:none}
+.h3m-form__alt{display:flex;gap:16px;margin-top:10px;font-size:14px}.h3m-form__alt .h3m-btn{min-height:0;padding:0;border:0;background:none;color:#fff;text-decoration:underline}
+.h3m-form[hidden]{display:none!important}
+.h3m-cta2{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;border-radius:14px;background:#3f4144;color:#fff}
+.h3m-cta2 b{display:block;font-size:19px;font-weight:600;margin-bottom:2px}.h3m-cta2 span{font-size:14px;opacity:.85}
+.h3m-cta2__b{display:flex;align-items:center;gap:16px;flex-shrink:0}.h3m-cta2__b a{color:#fff;font-size:14px;text-decoration:none;white-space:nowrap}.h3m-cta2__b a:hover{text-decoration:underline}
+@media (max-width:760px){.h3m-cta2{flex-direction:column;align-items:stretch;padding:18px 16px}.h3m-cta2__b{flex-wrap:wrap;justify-content:center}.h3m-cta2__b .h3m-btn{flex:1 1 100%;justify-content:center}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -362,7 +381,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 <header class="h3m-top">
  <div class="h3m-wrap">
   <a class="h3m-logo" href="https://auto365.vn">AUTO<b>365</b></a>
-  <nav class="h3m-nav"><a href="#bao-chi">Báo chí</a><a href="#chung-chi">Chứng chỉ 3M</a><a href="#goi-phim">6 gói phim</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#chi-nhanh">3M Pro Shop</a><a href="#faq">FAQ</a></nav>
+  <nav class="h3m-nav"><a href="#bao-chi">Báo chí</a><a href="#goi-phim">6 gói phim</a><a href="#chung-chi">Chứng chỉ 3M</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#chi-nhanh">3M Pro Shop</a><a href="#faq">FAQ</a></nav>
   <div class="h3m-top__cta"><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_header">☎ 0365 365 365</a><a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch</a></div>
  </div>
 </header>
@@ -414,6 +433,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <div class="h3m-wrap">
 
   <h2 class="h3m-h2">19 bài báo viết về <em>3M Pro Shop</em> tại TP.HCM</h2>
+  <div class="h3m-pnav"><button type="button" data-pnav="-1" aria-label="Bài báo trước">‹</button><button type="button" data-pnav="1" aria-label="Bài báo tiếp theo">›</button></div>
   <div class="h3m-press__grid h3m-mq">
    <ul class="h3m-pl">
     <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/1-17821219928711310056705-119-0-841-1379-crop-17821220365881.webp" alt="Ảnh bài báo Thanh Niên: 3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thanh Niên · 22/06/2026</small><b>3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</b></span></a></li>
@@ -441,6 +461,16 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  </div>
 </section>
 
+<section class="h3m-sec" id="goi-phim">
+ <div class="h3m-wrap">
+  <h2 class="h3m-h2">Bảng giá dán phim cách nhiệt <em>3M</em> – 6 cấu hình trọn xe</h2>
+  <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV, đã gồm VAT.</p>
+  <div class="h3m-pk" id="h3m-pk"></div>
+  <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><small class="h3m-perks__note">Quà tặng áp dụng theo từng đợt – cố vấn báo cụ thể khi tư vấn.</small><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M 10 năm cho cả 6 cấu hình</li><li>Có thể chọn điểm 3M Pro Shop theo hồ sơ chứng nhận tại từng cơ sở</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
+  <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
+ </div>
+</section>
+
 <section class="h3m-sec h3m-why2" id="chung-chi">
  <div class="h3m-wrap">
 
@@ -459,16 +489,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
     <li><span>03</span><div><b>Thi công tại 3M Pro Shop</b>Phim nhập qua 365Group – nhà phân phối chính thức 3M, dán tại 3M Pro Shop &amp; 3M Training Center.</div></li>
    </ul>
   </div>
- </div>
-</section>
-
-<section class="h3m-sec" id="goi-phim">
- <div class="h3m-wrap">
-  <h2 class="h3m-h2">Bảng giá dán phim cách nhiệt <em>3M</em> – 6 cấu hình trọn xe</h2>
-  <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV, đã gồm VAT.</p>
-  <div class="h3m-pk" id="h3m-pk"></div>
-  <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><small class="h3m-perks__note">Quà tặng áp dụng theo từng đợt – cố vấn báo cụ thể khi tư vấn.</small><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M 10 năm cho cả 6 cấu hình</li><li>Có thể chọn điểm 3M Pro Shop theo hồ sơ chứng nhận tại từng cơ sở</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
-  <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
  </div>
 </section>
 
@@ -551,14 +571,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 <section class="h3m-sec" id="chi-nhanh">
  <div class="h3m-wrap">
   <h2 class="h3m-h2">Địa chỉ dán phim cách nhiệt ô tô tại Hồ Chí Minh – <em>3M Pro Shop</em></h2>
-  <div class="h3m-psg">
-   <img src="hinh/pro-shop-bmw.webp" alt="Xe BMW tại 3M Pro Shop – Auto365 Center" loading="lazy">
-   <img src="hinh/pro-shop-showroom.webp" alt="Khu trưng bày xe tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/le-trao-chung-nhan.webp" alt="Lễ trao chứng nhận 3M Pro Shop cho Auto365" loading="lazy">
-   <img src="hinh/pro-shop-bmw-x5.webp" alt="BMW X5 tại khoang thi công 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-vf8.webp" alt="VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" loading="lazy">
-  </div>
   <div class="h3m-hq">
    <div class="h3m-hq__img">
     <img src="hinh/pro-shop-mat-tien.webp" alt="Toàn cảnh mặt tiền 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM" loading="lazy">
@@ -577,11 +589,19 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
     <a class="h3m-gr h3m-gr--dark h3m-gr--hq" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
     <p class="h3m-hq__addr">🕗 8:30 – 18:30, Thứ 2 – Chủ nhật<br>📍 Số 4/4/1/7 Đường Số 3, P. Hiệp Bình (Thủ Đức cũ), TP.HCM – gần KĐT Vạn Phúc</p>
     <div class="h3m-hq__cta">
-     <a class="h3m-btn h3m-btn--red" href="#dang-ky">Đặt lịch tại 3M Pro Shop →</a>
+     <a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch tại 3M Pro Shop →</a>
      <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hq">☎ 0365 365 365</a>
      <a class="h3m-btn h3m-btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Auto365.vn+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh&amp;destination_place_id=ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener">Chỉ đường</a>
     </div>
    </div>
+  </div>
+  <div class="h3m-psg">
+   <img src="hinh/pro-shop-bmw.webp" alt="Xe BMW tại 3M Pro Shop – Auto365 Center" loading="lazy">
+   <img src="hinh/pro-shop-showroom.webp" alt="Khu trưng bày xe tại 3M Pro Shop Auto365" loading="lazy">
+   <img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy">
+   <img src="hinh/le-trao-chung-nhan.webp" alt="Lễ trao chứng nhận 3M Pro Shop cho Auto365" loading="lazy">
+   <img src="hinh/pro-shop-bmw-x5.webp" alt="BMW X5 tại khoang thi công 3M Pro Shop Auto365" loading="lazy">
+   <img src="hinh/pro-shop-vf8.webp" alt="VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" loading="lazy">
   </div>
  </div>
 </section>
@@ -602,7 +622,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
     <li><b>Bàn giao &amp; eWarranty</b></li>
    </ol>
   </div>
-   <div class="h3m-wr2"><span class="h3m-wr__big">10<small>năm</small></span><div><b>Bảo hành điện tử 3M (eWarranty)</b><span>Ghi mã phim từng vị trí kính, ngày dán và hạn bảo hành – áp dụng cả 6 cấu hình.</span></div><a class="h3m-btn h3m-btn--red" href="#dang-ky">Đặt lịch dán phim →</a></div>
+   <div class="h3m-wr2"><span class="h3m-wr__big">10<small>năm</small></span><div><b>Bảo hành điện tử 3M (eWarranty)</b><span>Ghi mã phim từng vị trí kính, ngày dán và hạn bảo hành – áp dụng cả 6 cấu hình.</span></div><a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch dán phim →</a></div>
   </div>
  </div>
 </section>
@@ -621,7 +641,11 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <details><summary>Có được xem mẫu phim trên xe trước khi dán không?</summary><p>Có. Tại 3M Pro Shop – Auto365 Trụ sở chính có mẫu phim thực tế để chủ xe xem và so sánh các cấu hình trước khi chọn.</p></details>
    <details><summary>3M Pro Shop làm việc giờ nào, có làm cuối tuần không?</summary><p>3M Pro Shop – Auto365 Trụ sở chính làm việc 8:30 – 18:30 từ Thứ 2 đến Chủ nhật. Nên đặt lịch trước qua hotline 0365 365 365 để được chuẩn bị phim và khoang thi công.</p></details>
   </div>
-  <form class="h3m-form" id="dang-ky" action="/api/leads" method="post" novalidate>
+  <div class="h3m-cta2">
+   <div><b>Đặt lịch dán phim 3M tại 3M Pro Shop</b><span>Để lại số điện thoại – cố vấn gọi lại báo giá theo xe của bạn.</span></div>
+   <div class="h3m-cta2__b"><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận tư vấn &amp; báo giá →</button><a href="tel:0365365365" data-track="call_cta">☎ 0365 365 365</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo</a></div>
+  </div>
+  <form class="h3m-form" id="dang-ky" hidden action="/api/leads" method="post" novalidate>
    <h2>Đăng ký tư vấn ngay</h2>
    <p>Để lại thông tin, 3M Pro Shop – Auto365 trụ sở chính sẽ gọi lại tư vấn cấu hình và báo giá theo xe.</p>
    <div class="h3m-form__g">
@@ -724,10 +748,21 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
  moreC.addEventListener('click',function(){shown+=STEP;applyCases()});applyCases();
  var rzT,rzW=innerWidth;addEventListener('resize',function(){clearTimeout(rzT);rzT=setTimeout(function(){if(innerWidth===rzW)return;rzW=innerWidth;var st=matchMedia('(max-width:640px)').matches?6:12;shown=Math.max(st,Math.ceil(shown/STEP)*st);STEP=st;applyCases()},150)});
- // Báo chí: dải thẻ tự lướt ngang (nhân đôi danh sách để chạy vòng liền)
+ // Báo chí: trượt từng thẻ mỗi 3,5 giây (nhân đôi danh sách để quay vòng liền)
  var pl=document.querySelector('.h3m-pl');pl.querySelectorAll('li').forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
  pl.querySelectorAll('li').forEach(function(li){var c=li.cloneNode(true);c.setAttribute('aria-hidden','true');c.querySelector('a').tabIndex=-1;pl.appendChild(c)});
  document.querySelector('[data-more=press]').hidden=true;
+ var pN=pl.children.length/2,pI=0,pT,mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function pStep(){var li=pl.children[0];return li.getBoundingClientRect().width+parseFloat(getComputedStyle(pl).columnGap||16)}
+ function pGo(i,anim){pI=i;pl.style.transition=anim?'transform .7s ease':'none';pl.style.transform='translateX('+(-pI*pStep())+'px)'}
+ pl.addEventListener('transitionend',function(){if(pI>=pN)pGo(pI-pN,false);if(pI<0)pGo(pI+pN,false)});
+ function pNext(d){if(pI+d<0)pGo(pI+pN,false),pl.offsetWidth;pGo(pI+d,true)}
+ function pPlay(){clearInterval(pT);if(!still)pT=setInterval(function(){pNext(1)},3500)}
+ mq.addEventListener('mouseenter',function(){clearInterval(pT)});mq.addEventListener('mouseleave',pPlay);
+ document.querySelectorAll('[data-pnav]').forEach(function(b){b.addEventListener('click',function(){pNext(+b.dataset.pnav);pPlay()})});
+ var pX;mq.addEventListener('touchstart',function(e){pX=e.touches[0].clientX;clearInterval(pT)},{passive:true});
+ mq.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-pX;if(Math.abs(dx)>40)pNext(dx<0?1:-1);pPlay()});
+ addEventListener('resize',function(){pGo(pI,false)});pPlay();
 
  // Lead form: chỉ báo thành công khi API trả {"success": true}
  function bindLead(f){
