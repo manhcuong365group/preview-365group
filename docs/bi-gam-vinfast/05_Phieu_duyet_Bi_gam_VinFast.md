@@ -119,4 +119,29 @@ Chủ quản xác nhận 29/10/2026: đã test trang preview trên điện tho�
 | Nội dung, case, nguồn | Anh Đạo duyệt — `lastReviewed` 2026-10-29 |
 | Bản vá R6 (Limo Green 2 mã, focus Bỏ lọc, hồ sơ trên preview) | Đã duyệt |
 | Thiết bị thật | Chủ quản xác nhận OK |
-| Chờ | Reviewer tái chấm chính thức; IT tích hợp production (robots/header, API/CRM/tracking, GSC/CWV) |
+| Chờ | Reviewer tái chấm chính thức (mục production/danh bạ: ngoài phạm vi, xem 30/10) |
+
+## Thay đổi 30/10/2026 theo reviewer R7 (không đổi nội dung kỹ thuật)
+
+| Mục | Thay đổi | Trạng thái |
+|---|---|---|
+| Hồ sơ 01–05 | Thêm bản HTML đọc trực tiếp trên preview + mục lục `/bi-gam/vinfast/ho-so/` (reviewer không mở được .md/.csv) | Đã làm |
+| SHA | Ghi rõ SHA-256 tính trên HTML Cloudflare trả về ở URL preview, kèm lệnh `curl … \| sha256sum` | Đã làm |
+| Bộ lọc case | Nút lọc có `aria-pressed`; 2 nhóm lọc có `role="group"` + nhãn "Lọc theo dòng xe" / "Lọc theo hãng đèn"; test bàn phím đạt | Đã làm |
+| Phiếu 03 | Header chuyển V1.9, thêm mục R7 + biên bản QA của bản build | Đã làm |
+| Ô kiểm nội bộ trên trang | Cập nhật trạng thái R7; `dateModified` 2026-10-30, `lastReviewed` giữ 2026-10-29 | Đã làm |
+
+### Ngoài phạm vi trang này — không tính vào hồ sơ duyệt hub
+
+| Mục reviewer nêu | Lý do loại khỏi phạm vi |
+|---|---|
+| Link Maps dạng embed (Vân Đồn, Cẩm Phả), rating 0 sao | Dữ liệu thuộc danh bạ /chi-nhanh (trang khác), hub chỉ đọc lại |
+| robots/header, API/CRM/tracking, OG, shell production | Thuộc hạ tầng auto365.vn khi IT tích hợp, không phải nội dung trang |
+| GSC/CWV | Chỉ đo được sau khi trang lên production |
+
+| Hạng mục | Trạng thái 30/10/2026 |
+|---|---|
+| Nội dung, case, nguồn | Anh Đạo duyệt — `lastReviewed` 2026-10-29 |
+| Bản vá R7 | Đã làm, không đổi nội dung kỹ thuật |
+| Thiết bị thật | Chủ quản xác nhận OK (29/10) |
+| Mục còn mở trong phạm vi trang | Không còn — chờ reviewer tái chấm |
