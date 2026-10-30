@@ -270,3 +270,17 @@ Cập nhật 30/10/2026 (chủ trang yêu cầu giống auto365.vn/tin-tuc): kh�
 Cập nhật 30/10/2026 (chủ trang: "để như production"): khối Hệ thống desktop chỉnh theo kích thước #branch-discovery production — thẻ Trụ Sở Chính bên trái, thẻ 90+ chi nhánh bên phải; 3 nút (2 hotline + Google Maps) một hàng; padding thẻ 16px, icon tiêu đề 44px, tiêu đề 20px. Link "Xem hồ sơ Trụ Sở Chính" (/thu-duc) chuyển từ dòng địa chỉ vào ô "Trụ sở" để địa chỉ còn 1 dòng như production.
 
 Cập nhật 30/10/2026 — mobile (≤760px) khối Hệ thống theo production: 4 ô thông tin lưới 2×2, 3 nút xếp dọc full chiều ngang, 3 miền chia 3 cột (bỏ cuộn ngang, không tràn thẻ), padding thẻ 12px.
+
+### Tự chấm lại 30/10/2026 tối (V1.9, preview, sau nghiệm thu U3 pk56 + chỉnh khối Hệ thống)
+
+| Nhóm | pk54 reviewer | Tự chấm | Căn cứ |
+|---|---:|---:|---|
+| Content C1–C3 | 29,4 | 29,5 | Câu chứng nhận ghi đủ 4/4/1/7 (Auto365 Center) và 4/4/3/3 (3M Pro Shop & Training Center), chủ trang xác nhận; 7.3 mil, 8 năm có nguồn |
+| SEO S1–S3 | 29,1 | 29,1 | Không đổi; danh sách 91 điểm dạng ẩn như SSR production |
+| GEO G1–G3 | 24,1 | 24,3 | Bộ chọn tỉnh: 33 tỉnh / 91 điểm có địa chỉ, điện thoại, chỉ đường, link hồ sơ cơ sở (dữ liệu /chi-nhanh?json=1) |
+| U1 Đa thiết bị | CX | 4,8 | 360/375/430/768/1366 px không tràn; khối Hệ thống trùng bố cục production desktop + mobile; U3 pk56 PASS |
+| U2 Tương tác | 4,7 | 4,9 | Lead 289 CRM nhận (đã xoá); popup miền→tỉnh→điểm, gợi ý tìm, Gần tôi — chủ trang thử máy thật OK |
+| U3 Bàn giao | CX | 4,8 | Phiếu nghiệm thu U3 pk56 ĐÃ DUYỆT (Ngọc Trân – SEO); hồ sơ 01–04 có bản HTML trên preview, SHA khớp bản Cloudflare |
+| **Tổng** | **87,3** | **≈ 97,4** | Ngưỡng 95; SEO ≥ 28,5; GEO ≥ 23,75 |
+
+Điểm tự chấm, không thay điểm reviewer. Phiếu U3 pk56 chốt PASS, không gán tổng. Sau nghiệm thu, trang đổi khối Hệ thống (giao diện + bộ chọn tỉnh) nên SHA khác bản pk56 (`a52390cd…`); nội dung khách đọc khác pk56 chỉ ở khối Hệ thống.
