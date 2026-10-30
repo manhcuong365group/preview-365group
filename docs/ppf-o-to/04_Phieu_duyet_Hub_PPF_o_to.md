@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `a52390cd6b6ea4bc258bc5d6e3e7647ad258bf1cbe8549302b47d3f6ef1b05a1` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `44f8bf4b445851d973e4c9eecfe3a88ac1bd1f146e5a2e0d8035a7593e76bd38` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -103,3 +103,5 @@ Nguồn: `Phieu_U3_PPF_O_To_PK56_V19_DA_DUYET_20261030.pdf` (2 trang, chủ tran
 Content, SEO, GEO: PASS theo nghiệm thu (nền pk54: 29,4/30 · 29,1/30 · 24,1/25). Phiếu chốt trạng thái PASS, không gán điểm tổng mới. Phạm vi: chấp thuận demo/hồ sơ pk56 — không thay cho kiểm index, Core Web Vitals hay kiểm production sau khi chuyển môi trường.
 
 **Trạng thái cuối: ĐÃ DUYỆT – ĐÓNG U3 V1.9 (30/10/2026).** Khi lên auto365.vn: đối chiếu canonical, redirect, tài nguyên và form theo production — bước phát hành thông thường, không phải lỗi còn mở.
+
+Ghi chú 30/10/2026: theo yêu cầu chủ trang, thẻ U3 được đặt trong khối "Kiểm tra nội bộ" cuối trang hub (`#internal-check`, chỉ hiện trên pages.dev/localhost, xoá khi lên production). Khối này làm SHA trang đổi từ `a52390cd…` (bản pk56 nghiệm thu) sang SHA ở đầu phiếu; nội dung khách đọc (01) không đổi.
