@@ -5,7 +5,7 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `0f42c8c83aab10c9c4708398d49f36f9da7293fde014c9de3e4e8bc59ae44a46` |
+| SHA-256 index.html | `902c9255193add5ece128a83ea64b53cdda50d1584bd515c25b92f7a625c0f6b` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF MPV 7 |

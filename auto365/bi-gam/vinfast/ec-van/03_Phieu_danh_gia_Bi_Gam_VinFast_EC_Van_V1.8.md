@@ -5,7 +5,7 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `e97946abd6663abbfb836231e704a3bb9195f7baf65019abf1dc5633ae6c9ef0` |
+| SHA-256 index.html | `9cb451f9af65b0cb4ee68943e4c431c2096bb875a6ed4b43d4ca52f69fe87e3c` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng EC Van |
