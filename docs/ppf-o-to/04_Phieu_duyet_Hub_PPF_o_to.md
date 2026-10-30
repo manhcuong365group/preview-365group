@@ -1,0 +1,77 @@
+# 04 — Phiếu duyệt: Hub PPF ô tô
+
+| Trường | Giá trị |
+|---|---|
+| Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
+| Bản duyệt | SHA-256 `a52390cd6b6ea4bc258bc5d6e3e7647ad258bf1cbe8549302b47d3f6ef1b05a1` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Người kiểm duyệt nội dung | Đặng Minh Hoàng |
+| Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
+| `dateModified` | 2026-10-30 |
+| Căn cứ ghi nhận | Chủ trang xác nhận trong phiên làm việc: anh Hoàng đã duyệt (từng lượt ghi ngày bên dưới) |
+| Hotline trang | 0365 365 365 (Phim cách nhiệt · PPF); 0365 365 911 (Đèn · Camera · Phụ kiện) ở khối hệ thống, giống production |
+
+## Lịch sử duyệt
+
+| Ngày | Phạm vi anh Hoàng duyệt | `lastReviewed` |
+|---|---|---|
+| 19/10/2026 | Bản hub đầu tiên: URL /ppf-o-to, nội dung, giá toàn xe gồm VAT, hotline 0365 365 365 | 2026-10-19 |
+| 21/10/2026 | Câu trích "Góc chuyên gia" | — |
+| 22/10/2026 | Toàn bài sau R21-01/02; phần bổ sung chiều 22/10 (giá dán lẻ, k07 "Có nên dán PPF", 2 FAQ, quy trình ảnh thật, định nghĩa PPF) | 2026-10-22 |
+| 24/10/2026 | Khối giá mới (thương hiệu, giá theo xe, giá theo vị trí, gói, ước tính) | 2026-10-24 |
+| 26/10/2026 | Giao diện khối giá mới (tab 3M/AX, thẻ phim, giá vị trí đánh số + tô panel, video) | 2026-10-26 |
+| 27/10/2026 | Dải báo chí (4 bài PPF / 3M Pro Shop) | 2026-10-27 |
+| 28/10/2026 | Bản pk36: cách tính toàn xe + ô tóm tắt cấu hình trong form | 2026-10-28 |
+| 30/10/2026 | Bản pk55/pk56: câu chứng nhận ghi đủ hai địa chỉ, danh sách 33 tỉnh / 91 điểm, thông số 3M 50 và AX X, bảng mobile | 2026-10-30 |
+
+## Dữ kiện chủ trang đã chốt
+
+| Mục | Giá trị chốt | Ngày |
+|---|---|---|
+| Giá trên PDP PPF | Giá dán toàn xe, gồm VAT | 19/10 |
+| 3M PPF 200 Gloss toàn xe | 102 / 110 / 122 triệu (Sedan / SUV / MPV), khớp PDP auto365.vn | 23/10, xác nhận lại 28/10 |
+| 3M PPF 150 Gloss toàn xe | 85 / 92 / 102 triệu | 23/10 |
+| Độ dày 3M PPF 50 Gloss | 7.3 mil (phim kèm keo, theo 3M Việt Nam) | 29–30/10 |
+| Bảo hành AX PPF X Series Ver 2 | 8 năm | 29–30/10 |
+| Trụ Sở Chính / Auto365 Center | 4/4/1/7 Đường Số 3, Hiệp Bình, TP.HCM — địa chỉ trên chứng nhận 3M Pro Shop (hiệu lực 06/2026–06/2029) | 24/10, 30/10 |
+| 3M Pro Shop & 3M Training Center | 4/4/3/3 Đường Số 3, Hiệp Bình — phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính, thuộc 365Group. Hai địa chỉ đều đúng, không thay thế nhau | 30/10 |
+| Catalog PPF | Tài liệu nội bộ, không đăng công khai; trang dẫn "Xem toàn bộ sản phẩm PPF/Wrap" → /ppfwrap-film | 28–29/10 |
+
+## Câu nhận diện chứng nhận (bản duyệt 30/10)
+
+> 3M Việt Nam cấp chứng nhận 3M Pro Shop cho Auto365 Center (Trụ Sở Chính, số 4/4/1/7 Đường Số 3, Hiệp Bình) với các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029. 3M Pro Shop & 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính, thuộc 365Group, tại số 4/4/3/3 Đường Số 3, Hiệp Bình; chủ xe muốn dán PPF 3M tại 3M Pro Shop đặt lịch tại đây.
+
+## Form tư vấn và CRM
+
+| Lần thử | Cấu hình gửi | Kết quả | Xoá |
+|---|---|---|---|
+| 19/10/2026 | Lead 205 | CRM nhận | Đã xoá |
+| 28/10/2026 | 3M PPF 50 · Sedan · Toàn xe · 38.000.000đ | HTTP 200, success:true, lead 273, test:true; CRM nhận đủ cấu hình | Đã xoá 28/10 |
+| 30/10/2026 14:37 | 3M 200 Gloss · SUV cỡ vừa · Toàn xe · 110 triệu, source_page ppf-o-to-hub | HTTP 200, success:true, lead 289, test:true | Đã xoá 30/10 (chủ trang báo) |
+
+Endpoint `https://auto365.vn/api/leads`. Trên pages.dev không có `/api/leads` nên form preview trả 405 — bình thường, giống các trang preview khác.
+
+## Kiểm thử bản duyệt (30/10/2026)
+
+| Hạng mục | Kết quả |
+|---|---|
+| Luồng báo giá | Card 3M 200 cỡ vừa → cỡ lớn 110 → 122 triệu, giữ tên khách; card 3M 100 → Sửa quay về đúng thẻ; calculator AX G gói đầu Sedan → SUV 7,2 → 7,92 triệu; chuyển card ↔ calculator tóm tắt theo nguồn vừa thao tác; khách tự chọn phạm vi thì xoá cấu hình vẫn giữ phạm vi |
+| Đa thiết bị | 360, 375, 390, 430, 768, 820, 1024, 1280 px: không tràn ngang; bảng so sánh xếp thẻ ≤760 px; bảng 13 vị trí ghim cột "Vị trí dán" |
+| Console | Không lỗi |
+| Hệ thống | 2 thẻ (chi nhánh / Trụ Sở Chính) + khối mở/đóng "Danh sách 91 điểm theo 33 tỉnh/thành" (124 link tới danh bạ lọc PPF theo tỉnh và hồ sơ từng cơ sở) |
+
+## Ngoài phạm vi trang này
+
+| Mục | Ghi chú |
+|---|---|
+| 301 /ppfwrap-film → /ppf-o-to, robots/header, tracking, shell production | IT xử lý khi tích hợp auto365.vn |
+| GSC / Core Web Vitals | Chỉ đo được sau khi lên production |
+| Giấy tờ phân phối AX Film | Chờ hãng cung cấp, không ảnh hưởng nội dung đã duyệt |
+
+## Trạng thái
+
+| Hạng mục | Trạng thái 30/10/2026 |
+|---|---|
+| Nội dung, giá, thông số, địa chỉ | Anh Đặng Minh Hoàng duyệt — `lastReviewed` 2026-10-30 |
+| Lỗi phiếu pk54 (PPF54-01…04) | Đã xử lý — chi tiết trong [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) |
+| Lead thử | 289 đã gửi và đã xoá |
+| Mục còn mở trong phạm vi trang | Không còn — chờ reviewer tái chấm, sau đó IT tích hợp production |
