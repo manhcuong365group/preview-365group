@@ -36,7 +36,7 @@ Kết quả R7 của reviewer: điểm phần đã chấm **71,5/80** — bảy 
 | 3.3 Nhãn ngày | 01 "Ngày xuất 29/10/2026"; bảng đối chiếu phiên bản cuối 03 sửa 29/10 | Xong |
 | 7.2 Trộn tự chấm | Bảng tự chấm đổi nhãn "Tham khảo — KHÔNG phải kết quả reviewer"; bỏ mục tiêu "reviewer nâng điểm" | Xong |
 | Khối nội bộ trang | Trạng thái cập nhật R7 71,5/80 | Xong |
-| Còn mở | Route production 404 + bỏ khối nội bộ khỏi HTML; nghiệm thu lead/tracking; ảnh/log QA + thiết bị thật | Cường/SEO, IT, QA |
+| Còn mở | Route production 404 + bỏ khối nội bộ khỏi HTML; nghiệm thu lead/tracking; ảnh/log QA + thiết bị thật | Lead/tracking, QA ảnh/log + thiết bị thật: ✅ xong (30/10). Route production: kiểm 30/10 vẫn 404 — chờ IT deploy |
 
 ## Tái kiểm R6 / V1.9 (reviewer 28/10/2026) — xử lý 29/10/2026
 
@@ -88,9 +88,9 @@ Phép cộng 64 (reviewer) + 29 (team tự chấm) = 93 chỉ để tham khảo 
 | F01 | Bảng đối chiếu nguồn/điều kiện theo dòng CR BLK / IR / NR và từng chỉ tiêu (gồm nhãn kính "Auto75"), duyệt bản sửa sau 23/10 | ✅ Anh Hoàng đã xác nhận 29/10/2026 (nguồn/điều kiện đo theo bản R6) |
 | F02 | QA trên thiết bị thật (bàn phím ảo) nếu cần cho U1 | Cường + QA |
 | F03 | Danh mục 224 đại lý / 32 tỉnh đang hoạt động; nghiệm thu giao diện + dữ liệu các trang danh bạ đích | ✅ Không cần: con số 224 đại lý / 32 tỉnh chủ trang đã chốt; trang chỉ dẫn link tới danh sách đại lý, không dựng danh bạ chi nhánh (29/10/2026) |
-| F04 | Route production (đang 404), tài nguyên, robots/CDN, sitemap; loại khối nội bộ khỏi HTML xuất bản (không chỉ ẩn CSS) | Cường + SEO |
-| F05 | Thử /api/leads, phân tuyến, tracking trong phạm vi được phép | IT + đầu mối tư vấn |
-| F06 | Tùy chọn thiết kế: hero theo sản phẩm (giữ tên dài theo chủ trang 29/10) | Design + Content |
+| F04 | Route production (đang 404), tài nguyên, robots/CDN, sitemap; loại khối nội bộ khỏi HTML xuất bản (không chỉ ẩn CSS) | ⏳ Kiểm lại 30/10/2026: canonical vẫn 404 (cả có/không dấu /). Bỏ khối nội bộ làm khi deploy |
+| F05 | Thử /api/leads, phân tuyến, tracking trong phạm vi được phép | ✅ Chủ trang báo đã nghiệm thu (30/10/2026) |
+| F06 | Tùy chọn thiết kế: hero theo sản phẩm (giữ tên dài theo chủ trang 29/10) | ✅ Đóng — tùy chọn, chủ trang chốt giữ (30/10/2026) |
 
 ## Xử lý phiếu tái kiểm R5 / V1.9 (reviewer 27/10/2026 — bản vá 28/10/2026)
 
@@ -123,11 +123,11 @@ Kết quả R5 của reviewer: điểm phần đã chấm **62,5/70** (C1 8,5 ·
 |---|---|---|
 | F01 | Chốt điều kiện đo TSER/VLT/UVR/Glare R/IRR theo nguồn từng nhóm mã | ✅ Anh Hoàng xác nhận 29/10/2026 |
 | F03 | Phân nhóm Pro Shop / Auto365 / đại lý khác để lọc thật; danh mục + ngày đối chiếu cho 224 đại lý / 32 tỉnh | ✅ Không áp dụng (chủ trang 29/10/2026): trang không có danh bạ/bộ lọc chi nhánh |
-| F05 | Production `https://3m.365group.com.vn/phim-cach-nhiet-3m` vẫn 404; route, PDF, ảnh, OG, robots/canonical | IT / SEO |
-| F06 | Hồ sơ V1.9 cùng bản (01/02/03 hiện đứng tên V1.8), reviewer duyệt bản sửa | Reviewer + SEO/IT |
-| F07 | Thử gửi /api/leads, phân tuyến, `generate_lead` | Dev + vận hành |
-| U1 | QA mobile/tablet có ảnh: 360/390/430/768/1024 px, tab, popup, bàn phím | QA |
-| N4 | Case Ceramic IR thật; ảnh hero kính/khoang xe (đề xuất) | Content / Design |
+| F05 | Production `https://3m.365group.com.vn/phim-cach-nhiet-3m` vẫn 404; route, PDF, ảnh, OG, robots/canonical | ⏳ Kiểm lại 30/10/2026 vẫn 404 — chờ IT deploy |
+| F06 | Hồ sơ V1.9 cùng bản (01/02/03 hiện đứng tên V1.8), reviewer duyệt bản sửa | ✅ 02 Phần A V1.9, 01/02/03 cùng SHA (30/10/2026) |
+| F07 | Thử gửi /api/leads, phân tuyến, `generate_lead` | ✅ Chủ trang báo đã nghiệm thu (30/10/2026) |
+| U1 | QA mobile/tablet có ảnh: 360/390/430/768/1024 px, tab, popup, bàn phím | ✅ qa/ 10 ảnh + log; thiết bị thật OK (30/10/2026) |
+| N4 | Case Ceramic IR thật; ảnh hero kính/khoang xe (đề xuất) | ✅ Đóng — đề xuất, R7 không bắt buộc (30/10/2026) |
 
 ## Tự chấm lần 5 (bản 22/10/2026, có form tư vấn)
 
