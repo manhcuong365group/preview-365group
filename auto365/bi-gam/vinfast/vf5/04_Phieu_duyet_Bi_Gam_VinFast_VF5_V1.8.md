@@ -5,12 +5,12 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `cf223720f5f6e71fa2076e78eedc755c162017640faad83d674cc983bf0a9c12` |
+| SHA-256 index.html | `91f617ed1e8aa86725b4cd93212afb2afd95682d08a81f6058731225e90a7f20` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF5 |
-| Danh bạ | Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
-| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, liên hệ lệch danh bạ (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
+| Danh bạ | Địa chỉ + điện thoại 88 cơ sở đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
+| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, 3 điểm danh bạ chưa có trong bộ tìm (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
@@ -18,7 +18,7 @@ Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các m�
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `cf223720f5f6e71fa2076e78eedc755c162017640faad83d674cc983bf0a9c12` |
+| Bản duyệt | `auto365/bi-gam/vinfast/vf5/index.html` — SHA-256 `91f617ed1e8aa86725b4cd93212afb2afd95682d08a81f6058731225e90a7f20` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf5/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5 |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026: thẻ sản phẩm kiểu hub, lọc hãng, thanh so sánh, popup nhu cầu), dựng 24/10/2026 |

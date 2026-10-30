@@ -5,12 +5,12 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `587996cec1ecaec848b9b963cc27e1892346471e9b0928052ee07ef76767a2eb` |
+| SHA-256 index.html | `3b0f331df2217b10daa9d55b9de03c69c51bcaf3026dc347df598c002464cdce` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng EC Van |
-| Danh bạ | Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
-| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, liên hệ lệch danh bạ (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
+| Danh bạ | Địa chỉ + điện thoại 88 cơ sở đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
+| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, 3 điểm danh bạ chưa có trong bộ tìm (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
@@ -18,7 +18,7 @@ Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các m�
 
 | Trường | Nội dung |
 |---|---|
-| SHA-256 index.html | `587996cec1ecaec848b9b963cc27e1892346471e9b0928052ee07ef76767a2eb` (cùng mã trong 02/04) |
+| SHA-256 index.html | `3b0f331df2217b10daa9d55b9de03c69c51bcaf3026dc347df598c002464cdce` (cùng mã trong 02/04) |
 | Audit reviewer 26/10 | 94,4 (tự chấm team)/100 — chưa đạt |
 | Đã sửa 26/10 | So sánh dựng theo đúng mẫu đã chọn trong 17 mẫu (mẫu ngoài bảng 8 có ô "Cần xác nhận theo mã"; tiêu đề đổi theo số mẫu); form cuối/form nổi mặc định "Đèn – Bi gầm", data-service "Bi gầm VinFast EC Van"; caption hiển thị cạnh ảnh AI; meta rút gọn; F10 Turbo V2/X3 Ultra ghi "chọn phiên bản khi mua"; F10 New ghi "bản 12V"; 4 nhóm nhu cầu thêm lý do/đánh đổi; khối kiểm tra xe thêm dòng hốc lắp/pát/dây/nguồn điện; thêm khối "EC Van chạy dịch vụ: chọn theo hoàn cảnh sử dụng" (5 tình huống, audit 26/10 EC-04); ghi chú nội bộ hero sửa thành ảnh AI; mô tả ảnh trong 02/03/04 đồng bộ với bản hiển thị; trạng thái khối nội bộ sửa đúng |
 | Chưa xử lý (cần dữ liệu thật) | Ảnh thật thay ảnh AI; hồ sơ/case bi gầm EC Van; phạm vi đời/phiên bản kỹ thuật đã kiểm; map URL production (Lux dùng /lux-sa2-0); test lead–CRM |
@@ -32,7 +32,7 @@ Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các m�
 | Trang | Bi gầm VinFast EC Van — preview https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL đích | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van (chưa đăng) |
 | Tiêu chuẩn | Auto365 SEO/GEO/HTML V1.8 — 12 tiêu chí, có U3, thang /100. Ngưỡng: tổng ≥ 95, SEO ≥ 28,5/30, GEO ≥ 23,75/25 |
-| SHA-256 index.html | `587996cec1ecaec848b9b963cc27e1892346471e9b0928052ee07ef76767a2eb` (cùng mã trong 02/04) |
+| SHA-256 index.html | `3b0f331df2217b10daa9d55b9de03c69c51bcaf3026dc347df598c002464cdce` (cùng mã trong 02/04) |
 | Reviewer | Nguyễn Quang Đạo, duyệt kỹ thuật 24/10/2026 |
 | Kiểm tra máy | JSON-LD parse OK; FAQPage 6 = 6 hiển thị (khớp nguyên văn); ItemList 17 = 17 card, đúng thứ tự; header shell giống hệt trang Fadil; "Fadil" chỉ còn trong thẻ case VinFast khác và "Dòng xe VinFast khác" |
 | Kiểm tra trình duyệt | Desktop 1366: lưới sản phẩm 1 hàng cuộn ngang, lọc hãng (AES → 3 mẫu), so sánh 2 mẫu lọc đúng 2 hàng bảng, FAQ mở 5 → 6. Mobile 375: scrollWidth 375, lưới 2 hàng cuộn ngang, popup 4 nhu cầu mở đúng (Tiết kiệm: Titan 301 → Fogway Gen 1 → F10 New), ảnh local tải đủ |

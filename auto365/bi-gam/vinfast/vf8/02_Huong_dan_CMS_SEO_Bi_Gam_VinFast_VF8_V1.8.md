@@ -5,12 +5,12 @@
 | Trường | Giá trị |
 |---|---|
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `7e5ee9732e6b1a63f712b745813d5b782dce8576f0000a8a55699ec01576567a` |
+| SHA-256 index.html | `507f9284e11312960d1f443d24aae3c1e6468d1d0d4fc14785dd76906352af7a` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 28/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF8 |
-| Danh bạ | Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
-| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, liên hệ lệch danh bạ (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
+| Danh bạ | Địa chỉ + điện thoại 88 cơ sở đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
+| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, 3 điểm danh bạ chưa có trong bộ tìm (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
@@ -24,7 +24,7 @@ Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các m�
 | H1 | Bi gầm VinFast VF8: phương án lắp, giá và lựa chọn phù hợp |
 | Meta description | Giữ nguyên thẻ `meta name="description"` trong `index.html` |
 | Breadcrumb | Trang chủ (https://auto365.vn/) › Độ bi gầm › Bi gầm VinFast › VF8 |
-| Bản nguồn | `index.html` SHA-256 `7e5ee9732e6b1a63f712b745813d5b782dce8576f0000a8a55699ec01576567a` (24/10/2026) |
+| Bản nguồn | `index.html` SHA-256 `507f9284e11312960d1f443d24aae3c1e6468d1d0d4fc14785dd76906352af7a` (24/10/2026) |
 
 ## Khi đăng production
 
