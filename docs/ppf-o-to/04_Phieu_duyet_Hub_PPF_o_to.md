@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `0fb521fe14415791d207a3114d6f4b685f135460f44e63f8eab7ca37b3e4fdb7` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `cc785af9bd9d55123070eaa1d7b5f36a94f113b01804930d6f85bb001ec7838b` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -107,3 +107,5 @@ Content, SEO, GEO: PASS theo nghiệm thu (nền pk54: 29,4/30 · 29,1/30 · 24,
 Ghi chú 30/10/2026: theo yêu cầu chủ trang, thẻ U3 được đặt trong khối "Kiểm tra nội bộ" cuối trang hub (`#internal-check`, chỉ hiện trên pages.dev/localhost, xoá khi lên production). Khối này làm SHA trang đổi từ `a52390cd…` (bản pk56 nghiệm thu) sang SHA ở đầu phiếu; nội dung khách đọc (01) không đổi.
 
 Cập nhật 30/10/2026 (chủ trang gửi #branch-discovery production): bỏ khối mở/đóng "Danh sách 91 điểm theo 33 tỉnh/thành", trả danh sách 91 điểm / 33 tỉnh về dạng ẩn giống SSR production; link Auto365 Quảng Ninh đổi sang /chi-nhanh/quang-ninh/ha-long như production. Giao diện khối Hệ thống nay trùng production.
+
+Cập nhật 30/10/2026 (chủ trang yêu cầu giống auto365.vn/tin-tuc): khối Hệ thống thêm bộ chọn tỉnh dạng popup như #branch-discovery production — bấm Miền → danh sách tỉnh (số điểm + khu vực), bấm tỉnh → từng điểm (địa chỉ, nút gọi, chỉ đường, link hồ sơ cơ sở), có nút quay lại miền; gõ ô tìm hiện gợi ý tỉnh/điểm (không dấu vẫn tìm được); Gần tôi dùng vị trí trình duyệt để xếp 6 điểm gần nhất (từ chối vị trí thì báo chọn miền). Dữ liệu 91 điểm chụp từ https://auto365.vn/chi-nhanh?json=1 ngày 30/10/2026, nhúng trong trang; khi IT tích hợp nên đọc trực tiếp endpoint này.

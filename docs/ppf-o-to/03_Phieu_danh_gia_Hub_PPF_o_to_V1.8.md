@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `0fb521fe14415791d207a3114d6f4b685f135460f44e63f8eab7ca37b3e4fdb7` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `9bc01725cfc90f09856a5cb5e8258e7748b08cdeae25f5a43be176642fafc759` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -264,3 +264,5 @@ Bổ sung 30/10/2026 (sau pk55):
 Phiếu nghiệm thu U3 bản pk56 (Ngọc Trân – SEO, 30/10/2026): PPF54-01…04 PASS – ĐÃ ĐÓNG; U1, U2 PASS; U3 PASS – ĐÃ DUYỆT; Content/SEO/GEO PASS theo nghiệm thu, không gán điểm tổng mới. Trạng thái cuối: ĐÃ DUYỆT – ĐÓNG U3 V1.9. Chi tiết trong [04](04_Phieu_duyet_Hub_PPF_o_to.md).
 
 Cập nhật 30/10/2026 (chủ trang gửi #branch-discovery production): bỏ khối mở/đóng "Danh sách 91 điểm theo 33 tỉnh/thành", trả danh sách 91 điểm / 33 tỉnh về dạng ẩn giống SSR production; link Auto365 Quảng Ninh đổi sang /chi-nhanh/quang-ninh/ha-long như production. Giao diện khối Hệ thống nay trùng production.
+
+Cập nhật 30/10/2026 (chủ trang yêu cầu giống auto365.vn/tin-tuc): khối Hệ thống thêm bộ chọn tỉnh dạng popup như #branch-discovery production — bấm Miền → danh sách tỉnh (số điểm + khu vực), bấm tỉnh → từng điểm (địa chỉ, nút gọi, chỉ đường, link hồ sơ cơ sở), có nút quay lại miền; gõ ô tìm hiện gợi ý tỉnh/điểm (không dấu vẫn tìm được); Gần tôi dùng vị trí trình duyệt để xếp 6 điểm gần nhất (từ chối vị trí thì báo chọn miền). Dữ liệu 91 điểm chụp từ https://auto365.vn/chi-nhanh?json=1 ngày 30/10/2026, nhúng trong trang; khi IT tích hợp nên đọc trực tiếp endpoint này.
