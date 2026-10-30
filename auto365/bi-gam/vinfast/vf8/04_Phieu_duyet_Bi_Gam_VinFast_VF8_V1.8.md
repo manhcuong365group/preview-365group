@@ -6,7 +6,7 @@
 |---|---|
 | Phiếu duyệt U3 V1.9 | **PASS — ĐÃ DUYỆT 30/10/2026**: T01, T02, U1, U2, U3 PASS. Kỹ thuật: Nguyễn Quang Đạo; SEO/Nội dung và IT/Nghiệm thu: đã kiểm tra. File: [Phieu_U3_VinFast_VF8_PASS_DA_DUYET_20261030.pdf](Phieu_U3_VinFast_VF8_PASS_DA_DUYET_20261030.pdf). Production (URL chính thức, ảnh chia sẻ, noindex preview) ghi nhận riêng khi đăng |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `ab23e4fd79ac47e6b508919e282ea1aea1115298e3fdf32f0fcf0f4a0a71b3a1` |
+| SHA-256 index.html | `8872735111cce2bf9d99d26f60ee04bd7cc63448d63444d21b13edf542f7381f` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 28/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF8 |
