@@ -5,6 +5,14 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Kết luận 30/10/2026 — ĐẠT V1.9
+
+Chủ trang xác nhận 30/10/2026:
+- Reviewer đã chấm lại S3, U1, U2 đạt và **ký ĐẠT V1.9** (điểm chi tiết theo phiếu reviewer, không ghi lại số ở đây).
+- QA đã kiểm trên điện thoại thật (gồm bàn phím ảo): đạt.
+
+Còn lại thuộc triển khai production, không ảnh hưởng kết luận chất lượng preview: dựng route (đang 404) và xoá khối nội bộ khỏi HTML xuất bản (Cường/SEO); nghiệm thu lead/tracking thật (IT).
+
 ## Tái kiểm R7 / V1.9 (reviewer 29/10/2026) — xử lý 30/10/2026
 
 Kết quả R7 của reviewer: điểm phần đã chấm **71,5/80** — bảy mục giữ từ R6 64/70; thêm G3 4/5, U3 3,5/5. S3, U1, U2 còn CX (nghiệm thu độc lập chưa tái lập). Trải nghiệm thương hiệu desktop 8,9/10. **Chưa ký ĐẠT V1.9**, chưa xác nhận sẵn sàng production. Reviewer giữ hướng giao diện; không giao lại CTA đại lý, selector chăm sóc, log duyệt, rút gọn tên dài; không bắt buộc case IR hay hồ sơ anh Hoàng trên domain 3M.
@@ -379,7 +387,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `38c0f73f04f276d9c202258fcd27905c2ac005e6b89017a95d84481141725758` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `9d207b96bcd4bd650de836b72d9f768905b2c7d282eb93af24443030bab7090f` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
