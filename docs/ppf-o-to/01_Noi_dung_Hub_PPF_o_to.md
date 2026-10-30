@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `101c4668237cc619f04791939f444af803977fb52584813ffdbc9f4aa55c7b3d`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c49659822c96c659f6f756257b473a527c24ecbfe07660ba4c4560145f3c0ac1`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (28/10/2026) · Cập nhật 29/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (28/10/2026) · Cập nhật 30/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -21,7 +21,7 @@ Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham k
 
 Trọn gói, gồm VAT: 38.000.000đ
 
-- 7.3 milĐộ dày
+- 7.3 milPhim kèm keo
 - BóngBề mặt hoàn thiện
 - 5 nămBảo hành chính hãng
 
@@ -146,7 +146,7 @@ Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; 
 
 **Auto365 Center được 3M Việt Nam bổ nhiệm làm 3M Pro Shop**
 
-Trụ Sở Chính Auto365 (Auto365 Center, Hiệp Bình) là 3M Pro Shop cho các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029. Chủ xe muốn dán PPF 3M tại 3M Pro Shop có thể đặt lịch tại điểm này.
+Chứng nhận 3M Pro Shop cho các dòng phim ô tô cao cấp của 3M cấp cho Auto365 Center, số 4/4/1/7 Đường Số 3, Hiệp Bình (Trụ Sở Chính Auto365), hiệu lực 06/2026–06/2029. Chủ xe muốn dán PPF 3M tại 3M Pro Shop đặt lịch tại địa chỉ này.
 
 3M Pro Shop — Auto365 Center · 06/2026–06/2029
 
