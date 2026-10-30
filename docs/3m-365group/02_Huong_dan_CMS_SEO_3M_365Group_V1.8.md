@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365 Group) — chuẩn V1.9
 
-- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `e42b98d348a496d7008a0b1dc595de730c4cdb007d63362c49ea75e0b28252e5` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `9372c69749118b41f2179a2fdabd4b56e07f86511e37a105394d4fbaa640e632` (cùng phiên bản với 01 và 03)
 - Bản hiện hành: **30/10/2026** (sửa chữ khối Hồ sơ thi công) (dateModified 2026-10-30, lastReviewed 2026-10-29). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
 - **Người nhập CMS chỉ dùng Phần A.** Phần B là lịch sử các vòng vá, không dùng làm đầu vào.
 
@@ -35,7 +35,7 @@ H1: Phim cách nhiệt 3M. H2 theo thứ tự:
 4. Thông số kỹ thuật các mã phim 3M (`#thong-so`) — bảng HTML 12 mã
 5. Chứng nhận từ 3M (`#chung-nhan`)
 6. Hệ thống đại lý 3M toàn quốc (`#dai-ly`)
-7. Hồ sơ thi công tham khảo (`#xe-thuc-te`) — 6 case (thêm Nissan Almera Ceramic IR 30/10, 6 cột desktop / 3 cột tablet / 2 cột mobile), link "Xem bài thi công ↗" mở bài trên auto365.vn ở tab mới
+7. Hồ sơ thi công tham khảo (`#xe-thuc-te`) — 6 case (thêm Toyota Vios CR BLK + Ceramic IR 30/10, 6 cột desktop / 3 cột tablet / 2 cột mobile), link "Xem bài thi công ↗" mở bài trên auto365.vn ở tab mới
 8. Vì sao 365 Group - 3M Authorized Distributor in Vietnam chọn phân phối phim 3M™
 9. Tài liệu và hỗ trợ (`#tai-lieu`)
 10. Chăm sóc phim sau khi dán

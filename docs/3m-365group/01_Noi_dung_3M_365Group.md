@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `e42b98d348a496d7008a0b1dc595de730c4cdb007d63362c49ea75e0b28252e5`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `9372c69749118b41f2179a2fdabd4b56e07f86511e37a105394d4fbaa640e632`
 Ngày xuất: 30/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -140,7 +140,7 @@ Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 
 
 ### Volvo XC90
 
-### Nissan Almera
+### Toyota Vios
 
 ## Vì sao 365 Group - 3M Authorized Distributor in Vietnam chọn phân phối phim 3M™
 Những điểm chính theo thông tin từ trang Cá nhân hóa ô tô của 3M Việt Nam
@@ -242,7 +242,7 @@ Bài viết do 365 Group - 3M Authorized Distributor in Vietnam – nhà phân p
 - hinh/case-ford-everest.webp — Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365
 - hinh/case-vinfast-vf8.webp — VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365
 - hinh/case-volvo-xc90.webp — Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365
-- hinh/case-nissan-almera-ir.webp — Nissan Almera dán phim 3M Ceramic IR tại 3M Pro Shop
+- hinh/case-toyota-vios-ir.webp — Toyota Vios dán phim 3M CR BLK 50, CR BLK 35 và Ceramic IR15 tại 3M Pro Shop
 - hinh/logo-bao-thanhnien.webp — Logo Thanh Niên
 - hinh/logo-bao-kinhtevadoisong.webp — Logo Kinh tế & Đời sống
 - hinh/logo-bao-genk.webp — Logo GenK
