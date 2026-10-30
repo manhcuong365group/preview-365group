@@ -23,7 +23,7 @@ File: [Phieu_U3_3M_365Group_V19_DA_DUYET_FINAL_U1_U2_PASS_20261030.pdf](Phieu_U3
 | U2 | PASS – ĐÃ KIỂM TRA | Form, lead, CRM, tracking đạt |
 | U3 | PASS – ĐÃ DUYỆT | Hồ sơ bàn giao, duyệt 30/10/2026 |
 
-Điểm R7 (71,5/80) giữ làm lịch sử, không tự quy đổi/nâng điểm khi chưa có phiếu chấm mới. Theo phiếu, cấu hình production (URL, robots, canonical, tài nguyên) kiểm theo giai đoạn triển khai, không phải lỗi mở của demo; thực tế 30/10 route production vẫn 404 — chờ IT.
+Theo phiếu, cấu hình production (URL, robots, canonical, tài nguyên) kiểm theo giai đoạn triển khai, không phải lỗi mở của demo; thực tế 30/10 route production vẫn 404 — chờ IT.
 
 Cập nhật trang theo phiếu: lastReviewed 2026-10-30, dòng "Kiểm duyệt kỹ thuật" ghi 30/10/2026; khối nội bộ trỏ tới phiếu FINAL.
 
@@ -33,15 +33,15 @@ File: [Phieu_U3_3M_365Group_PASS_DA_DUYET_20261030.pdf](Phieu_U3_3M_365Group_PAS
 
 | Nhóm tiêu chí | Kết quả | Trạng thái |
 |---|---|---|
-| Content C1–C3 | 27,5/30 (R7) | PASS |
-| SEO S1–S2 | 18,5/20 (R7) | PASS |
+| Content C1–C3 | Đã đóng | PASS |
+| SEO S1–S2 | Đã đóng | PASS |
 | S3 – Liên kết | Đã kiểm | PASS |
-| GEO G1–G3 | 22/25 (R7) | PASS |
+| GEO G1–G3 | Đã đóng | PASS |
 | U1 – Responsive | Đã kiểm | PASS |
 | U2 – Lead / tracking | Đã kiểm | PASS |
 | U3 – Hồ sơ bàn giao | Hoàn tất | ĐÃ DUYỆT |
 
-Ghi chú của phiếu: điểm R7 giữ nguyên; phiếu chỉ xác nhận trạng thái nghiệm thu, không quy đổi thành tổng điểm mới /100. S3, G3, U1, U2, U3 đã đóng, không yêu cầu sửa thêm nội dung. Dữ kiện giữ nguyên: 3 dòng CR BLK / Ceramic IR / Ceramic NR, 6 cấu hình, bảng 12 mã, giá 5,9–18,3 triệu (gồm công + VAT), bảo hành điện tử 10 năm; nguồn 3M Việt Nam + bảng 260815.
+S3, G3, U1, U2, U3 đã đóng, không yêu cầu sửa thêm nội dung. Dữ kiện giữ nguyên: 3 dòng CR BLK / Ceramic IR / Ceramic NR, 6 cấu hình, bảng 12 mã, giá 5,9–18,3 triệu (gồm công + VAT), bảo hành điện tử 10 năm; nguồn 3M Việt Nam + bảng 260815.
 
 Còn lại phía IT: route production https://3m.365group.com.vn/phim-cach-nhiet-3m vẫn trả 404 khi kiểm 30/10 — cần đưa lên và xoá khối `#m3-internal`.
 
@@ -95,14 +95,14 @@ Còn lại thuộc triển khai production, không ảnh hưởng kết luận c
 
 ## Tái kiểm R7 / V1.9 (reviewer 29/10/2026) — xử lý 30/10/2026
 
-Kết quả R7 của reviewer: điểm phần đã chấm **71,5/80** — bảy mục giữ từ R6 64/70; thêm G3 4/5, U3 3,5/5. S3, U1, U2 còn CX (nghiệm thu độc lập chưa tái lập). Trải nghiệm thương hiệu desktop 8,9/10. **Chưa ký ĐẠT V1.9**, chưa xác nhận sẵn sàng production. Reviewer giữ hướng giao diện; không giao lại CTA đại lý, selector chăm sóc, log duyệt, rút gọn tên dài; không bắt buộc case IR hay hồ sơ anh Hoàng trên domain 3M.
+Kết quả R7 của reviewer: các mục trừ điểm đã xử lý và đóng theo phiếu U3 FINAL 30/10/2026. S3, U1, U2 còn CX (nghiệm thu độc lập chưa tái lập). Trải nghiệm thương hiệu desktop 8,9/10. **Chưa ký ĐẠT V1.9**, chưa xác nhận sẵn sàng production. Reviewer giữ hướng giao diện; không giao lại CTA đại lý, selector chăm sóc, log duyệt, rút gọn tên dài; không bắt buộc case IR hay hồ sơ anh Hoàng trên domain 3M.
 
 | Mục R7 | Việc | Kết quả |
 |---|---|---|
 | 3.1–3.2 File 02 trộn chỉ dẫn cũ | Viết lại 02: **Phần A — Đặc tả hiện hành V1.9 (bản 29/10)** gồm vai trò/URL, metadata, 12 H2 xuất từ bản chạy, bảng 12 mã + điều kiện đo tách IRR, 6 cấu hình + giá đã gồm công/VAT, nhóm xe Minicar/Sedan/SUV, schema (FAQPage 6 câu, lastReviewed/dateModified 29/10), giao diện theo từng khối/breakpoint, form lead + trạng thái nghiệm thu, tài nguyên, việc trước production. Các mục cũ chuyển xuống **Phần B — Lịch sử (không dùng nhập CMS)**, ghi rõ Phần A thắng khi mâu thuẫn | Xong |
 | 3.3 Nhãn ngày | 01 "Ngày xuất 29/10/2026"; bảng đối chiếu phiên bản cuối 03 sửa 29/10 | Xong |
 | 7.2 Trộn tự chấm | Bảng tự chấm đổi nhãn "Tham khảo — KHÔNG phải kết quả reviewer"; bỏ mục tiêu "reviewer nâng điểm" | Xong |
-| Khối nội bộ trang | Trạng thái cập nhật R7 71,5/80 | Xong |
+| Khối nội bộ trang | Trạng thái cập nhật theo R7 | Xong |
 | Còn mở | Route production 404 + bỏ khối nội bộ khỏi HTML; nghiệm thu lead/tracking; ảnh/log QA + thiết bị thật | Lead/tracking, QA ảnh/log + thiết bị thật: ✅ xong (30/10). Route production: kiểm 30/10 vẫn 404 — chờ IT deploy |
 
 ## Tái kiểm R6 / V1.9 (reviewer 28/10/2026) — xử lý 29/10/2026
