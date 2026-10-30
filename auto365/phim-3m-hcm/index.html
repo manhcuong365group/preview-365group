@@ -253,10 +253,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-gr--hq{margin:0 0 14px}.h3m-perks>b{display:flex;flex-wrap:wrap;align-items:center;gap:10px}.h3m-gr--perks{margin:0;font-size:13px;padding:4px 10px}
 .h3m-hero__gift{display:inline-block;margin:-8px 0 22px;padding:8px 14px;border-radius:8px;background:rgba(225,29,39,.18);border:1px solid rgba(225,29,39,.45);font-size:14px;color:#fff}
 
-
-
-
-
 .h3m-modal__sla{margin:-4px 0 2px;text-align:center;font-size:13px;color:var(--m)}
 @media (max-width:640px){.h3m-gal{display:none}.h3m-hero__gift{font-size:13px}}
 .h3m-perks>.h3m-gr--perks{grid-column:1/-1;justify-self:start;margin-top:-4px}
@@ -271,7 +267,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-linkbtn{color:var(--t);text-decoration:underline}
 .h3m-hero__tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25)}
 .h3m-hero__ben li{border-left-color:rgba(255,255,255,.4)}
-
 
 .h3m-more:hover,.h3m-card__sub a:hover{border-color:#16181d;color:inherit}
 .h3m-pl a:hover b{color:inherit;text-decoration:underline}
@@ -308,6 +303,11 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-press__grid{display:block}.h3m-pl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 24px}.h3m-pl li+li{border-top:0}.h3m-pl li:first-child a{padding-top:12px}.h3m-pl li[hidden]{display:none}
 .h3m-pl a{grid-template-columns:88px 1fr;gap:12px;padding:12px 0;border-top:1px solid var(--l)}.h3m-pl img{width:88px}.h3m-pl b{font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 @media (max-width:900px){.h3m-pl{grid-template-columns:minmax(0,1fr)}.h3m-pl li+li a{border-top:1px solid var(--l)}}
+.h3m-psg{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:200px 200px;gap:10px;margin:0 0 24px}
+.h3m-psg img{width:100%;height:100%;object-fit:cover;border-radius:12px;background:var(--bg)}.h3m-psg img:first-child{grid-row:span 2}
+.h3m-psg img:nth-child(n+6){display:none}
+@media (max-width:640px){.h3m-psg{grid-template-columns:1fr 1fr;grid-template-rows:190px 110px 110px;gap:8px}.h3m-psg img:first-child{grid-row:auto;grid-column:span 2}.h3m-psg img:nth-child(n+6){display:none}}
+@media (max-width:640px){.h3m-hero .h3m-hero__sub{display:block;font-size:15px;margin:0 0 14px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -328,7 +328,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 <header class="h3m-top">
  <div class="h3m-wrap">
   <a class="h3m-logo" href="https://auto365.vn">AUTO<b>365</b></a>
-  <nav class="h3m-nav"><a href="#goi-phim">6 gói phim</a><a href="#chung-chi">Chứng chỉ 3M</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#chi-nhanh">3M Pro Shop</a><a href="#bao-chi">Báo chí</a><a href="#faq">FAQ</a></nav>
+  <nav class="h3m-nav"><a href="#chi-nhanh">3M Pro Shop</a><a href="#chung-chi">Chứng chỉ 3M</a><a href="#bao-chi">Báo chí</a><a href="#goi-phim">6 gói phim</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#faq">FAQ</a></nav>
   <div class="h3m-top__cta"><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_header">☎ 0365 365 365</a><a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch</a></div>
  </div>
 </header>
@@ -337,9 +337,8 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <div class="h3m-wrap">
   <div class="h3m-hero__in">
   <div class="h3m-hero__l">
-  <span class="h3m-hero__tag">📍 3M Pro Shop · Trụ sở chính Auto365</span>
-  <h1>Dán phim cách nhiệt <span>3M</span> tại TP.HCM</h1>
-  <p class="h3m-hero__sub">Nắng Sài Gòn quanh năm — chọn đúng cấu hình phim 3M chính hãng, thi công tại 3M Pro Shop – trụ sở chính Auto365, bảo hành điện tử 3M 10 năm.</p>
+  <h1>Phim cách nhiệt <span>3M</span> tại TP.HCM</h1>
+  <p class="h3m-hero__sub">Dán tại 3M Pro Shop – Auto365 Trụ sở chính · 365Group – Nhà phân phối chính thức 3M</p>
   <p class="h3m-hero__gift">🎁 Miễn phí tháo &amp; vệ sinh phim cũ · Tặng rửa xe + hút bụi · Tặng vệ sinh kính + tẩy ố kính</p>
   </div>
   <div class="h3m-hero__r">
@@ -357,9 +356,9 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   </div>
   <div class="h3m-trust">
    <div><b>NPP chính thức</b><span>365Group – nhà phân phối 3M</span></div>
+   <div><b>3M Pro Shop</b><span>&amp; 3M Training Center tại TP.HCM</span></div>
    <div><b>10 năm</b><span>Bảo hành điện tử 3M eWarranty</span></div>
-   <div><b>3M Pro Shop</b><span>Trụ sở chính Hiệp Bình, TP.HCM</span></div>
-   <div><b>Từ 5,9 triệu</b><span>Ceramic Hybrid · Minicar, trọn xe</span></div>
+   <div><b>19 bài báo</b><span>Đưa tin về 3M Pro Shop</span></div>
   </div>
  </div>
 </section>
@@ -376,13 +375,39 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  </div>
 </div>
 
-<section class="h3m-sec" id="goi-phim">
+<section class="h3m-sec" id="chi-nhanh">
  <div class="h3m-wrap">
-  <h2 class="h3m-h2">6 cấu hình phim <em>3M</em> tại Auto365</h2>
-  <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV, đã gồm VAT.</p>
-  <div class="h3m-pk" id="h3m-pk"></div>
-  <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><small class="h3m-perks__note">Quà tặng áp dụng theo từng đợt – cố vấn báo cụ thể khi tư vấn.</small><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M 10 năm cho cả 6 cấu hình</li><li>Có thể chọn điểm 3M Pro Shop theo hồ sơ chứng nhận tại từng cơ sở</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
-  <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
+  <h2 class="h3m-h2">Bên trong <em>3M Pro Shop</em> – Auto365 Trụ sở chính</h2>
+  <div class="h3m-psg">
+   <img src="hinh/pro-shop-mat-tien.webp" alt="Mặt tiền 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM">
+   <img src="hinh/pro-shop-showroom.webp" alt="Khu trưng bày xe tại 3M Pro Shop Auto365" loading="lazy">
+   <img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy">
+   <img src="hinh/le-trao-chung-nhan.webp" alt="Lễ trao chứng nhận 3M Pro Shop cho Auto365" loading="lazy">
+   <img src="hinh/pro-shop-bmw-x5.webp" alt="BMW X5 tại khoang thi công 3M Pro Shop Auto365" loading="lazy">
+   <img src="hinh/pro-shop-vf8.webp" alt="VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" loading="lazy">
+  </div>
+  <div class="h3m-hq">
+   <div class="h3m-hq__img">
+    <img src="hinh/pro-shop-bmw.webp" alt="Xe BMW tại 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM" loading="lazy">
+    <span class="h3m-hq__stamp">3M PRO SHOP<small>06/2026 – 06/2029</small></span>
+   </div>
+   <div class="h3m-hq__body">
+    <span class="h3m-hq__kicker">★ Auto365.vn - Trụ Sở Chính</span>
+    <h3>3M Pro Shop &amp; 3M Training Center</h3>
+    <ul class="h3m-hq__pts">
+     <li><b>Chứng nhận 3M Pro Shop</b> cho các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029</li>
+     <li><b>3M Training Center</b> – nơi đào tạo kỹ thuật viên theo quy trình 3M</li>
+     <li><b>Kích hoạt bảo hành điện tử 3M 10 năm</b> ngay khi bàn giao xe</li>
+    </ul>
+    <a class="h3m-gr h3m-gr--dark h3m-gr--hq" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
+    <p class="h3m-hq__addr">📍 Số 4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM (gần KĐT Vạn Phúc)</p>
+    <div class="h3m-hq__cta">
+     <a class="h3m-btn h3m-btn--red" href="#dang-ky">Đặt lịch tại 3M Pro Shop →</a>
+     <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hq">☎ 0365 365 365</a>
+     <a class="h3m-btn h3m-btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Auto365.vn+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh&amp;destination_place_id=ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener">Chỉ đường</a>
+    </div>
+   </div>
+  </div>
  </div>
 </section>
 
@@ -396,6 +421,47 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <figure><img src="hinh/cert-preferred-installer.webp" alt="Chứng nhận 3M Preferred Installer" loading="lazy"><figcaption><b>Preferred Installer</b>Đơn vị thi công được 3M chứng nhận</figcaption></figure>
    <figure><img src="hinh/doi-ky-thuat-vien.webp" alt="Đội ngũ kỹ thuật viên Auto365 nhận chứng nhận tại 3M Pro Shop" loading="lazy"><figcaption><b>Đội kỹ thuật viên</b>Được đào tạo &amp; cấp chứng nhận</figcaption></figure>
   </div>
+ </div>
+</section>
+
+<section class="h3m-sec h3m-sec--gray h3m-press" id="bao-chi">
+ <div class="h3m-wrap">
+
+  <h2 class="h3m-h2">19 bài báo viết về <em>3M Pro Shop</em> tại TP.HCM</h2>
+  <div class="h3m-press__grid">
+   <ul class="h3m-pl">
+    <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/1-17821219928711310056705-119-0-841-1379-crop-17821220365881.webp" alt="Ảnh bài báo Thanh Niên: 3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thanh Niên · 22/06/2026</small><b>3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</b></span></a></li>
+    <li><a href="https://autopro.com.vn/sau-khi-khai-truong-3m-pro-shop-thuc-su-van-hanh-nhu-the-nao-177260821102431487.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1787202155122-1787202155306648567024-178728267244421171.webp" alt="Ảnh bài báo AutoPro: Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?" loading="lazy" referrerpolicy="no-referrer"><span><small>AutoPro · 21/08/2026</small><b>Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?</b></span></a></li>
+    <li><a href="https://vietnamnet.vn/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-nghiem-lai-xe-2547266.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-ngh.webp" alt="Ảnh bài báo VietNamNet: Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe" loading="lazy" referrerpolicy="no-referrer"><span><small>VietNamNet · 20/08/2026</small><b>Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe</b></span></a></li>
+    <li><a href="https://baodanang.vn/nen-chon-phim-cach-nhiet-theo-tung-vi-tri-kinh-cua-vinfast-vf3-3349409.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/806-202608201436461.webp" alt="Ảnh bài báo Báo Đà Nẵng: Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đà Nẵng · 20/08/2026</small><b>Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3</b></span></a></li>
+    <li><a href="https://vietnambiz.vn/tu-ma-phim-den-bao-hanh-dien-tu-3m-pro-shop-kiem-soat-quy-trinh-dich-vu-ra-sao-2026819171452177.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260819171108181-avatar-15x10-2026081917145165.webp" alt="Ảnh bài báo VietnamBiz: Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?" loading="lazy" referrerpolicy="no-referrer"><span><small>VietnamBiz · 19/08/2026</small><b>Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?</b></span></a></li>
+    <li><a href="https://baodongnai.com.vn/doanh-nhan-doanh-nghiep/dich-vu/202608/3m-pro-shop-vi-sao-xe-vinfast-khong-nen-dung-mot-cau-hinh-phim-cach-nhiet-co-dinh-c5a13d9" target="_blank" rel="noopener"><img src="hinh/bao-chi/image001-20260819160057.webp" alt="Ảnh bài báo Báo Đồng Nai: 3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đồng Nai · 08/2026</small><b>3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?</b></span></a></li>
+    <li><a href="https://danviet.vn/tu-tphcm-den-cac-dia-phuong-nhu-cau-chuan-hoa-dich-vu-phim-cach-nhiet-va-ppf-d1437536.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/143828-5819.webp" alt="Ảnh bài báo Dân Việt: Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF" loading="lazy" referrerpolicy="no-referrer"><span><small>Dân Việt · 23/06/2026</small><b>Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF</b></span></a></li>
+    <li class="is-more" hidden><a href="https://giadinh.suckhoedoisong.vn/xe-gia-dinh-va-nhu-cau-chon-phim-cach-nhiet-dung-thong-so-dung-quy-trinh-172260623092027053.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/3-17821811006071168598301-0-100-775-1340-crop-17821811722721.webp" alt="Ảnh bài báo Sức khỏe &amp; Đời sống: Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình" loading="lazy" referrerpolicy="no-referrer"><span><small>Sức khỏe &amp; Đời sống · 23/06/2026</small><b>Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình</b></span></a></li>
+    <li class="is-more" hidden><a href="https://genk.vn/cong-nghe-nano-gom-tren-3m-ceramic-nr-the-he-moi-va-cach-doc-thong-so-phim-cach-nhiet-165260622201911871.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1782122923795-1782122925086341237778-178213435355164945.webp" alt="Ảnh bài báo GenK: Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt" loading="lazy" referrerpolicy="no-referrer"><span><small>GenK · 22/06/2026</small><b>Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt</b></span></a></li>
+    <li class="is-more" hidden><a href="https://vietnammoi.vn/nguoi-dung-do-thi-quan-tam-hon-den-trai-nghiem-chong-nong-va-bao-ve-noi-that-xe-2026622192141609.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260622191227651-avatar-fb-20260622192141292.webp" alt="Ảnh bài báo Việt Nam Mới: Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe" loading="lazy" referrerpolicy="no-referrer"><span><small>Việt Nam Mới · 22/06/2026</small><b>Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe</b></span></a></li>
+    <li class="is-more" hidden><a href="https://2sao.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116922.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-1.webp" alt="Ảnh bài báo 2Sao: Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>2Sao · 22/06/2026</small><b>Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM</b></span></a></li>
+    <li class="is-more" hidden><a href="https://tintuconline.com.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116923.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-1-11.webp" alt="Ảnh bài báo Tin tức Online: 5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Tin tức Online · 22/06/2026</small><b>5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM</b></span></a></li>
+    <li class="is-more" hidden><a href="https://vietnambiz.vn/365group-dua-3m-pro-shop-vao-bai-toan-van-hanh-he-thong-auto365-hon-90-diem-2026622174037156.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260622173656619-avatar-15x10-2026062217403661.webp" alt="Ảnh bài báo VietnamBiz: 365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm" loading="lazy" referrerpolicy="no-referrer"><span><small>VietnamBiz · 22/06/2026</small><b>365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm</b></span></a></li>
+    <li class="is-more" hidden><a href="https://xahoi.com.vn/o-to-xe-may/3m-pro-shop-tai-tphcm-mo-them-lua-chon-trai-nghiem-phim-cach-nhiet-ppf-va-wrap-film-d404905.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/3m-pro-shop-60giay-173521.webp" alt="Ảnh bài báo Xã hội: 3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film" loading="lazy" referrerpolicy="no-referrer"><span><small>Xã hội · 22/06/2026</small><b>3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film</b></span></a></li>
+    <li class="is-more" hidden><a href="https://eva.vn/tieu-dung/khoang-xe-thoai-mai-hon-voi-phim-cach-nhiet-3m-ceramic-nr-the-he-moi-c2a674705.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/1782113096-834-thumbnail-width1024height768-auto-crop-waterm.webp" alt="Ảnh bài báo Eva: Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới" loading="lazy" referrerpolicy="no-referrer"><span><small>Eva · 22/06/2026</small><b>Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới</b></span></a></li>
+    <li class="is-more" hidden><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/2-anh-khu-vuc-trai-nghiem-khach-hang-17821181460161982689042.webp" alt="Ảnh bài báo Thể thao &amp; Văn hóa: Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thể thao &amp; Văn hóa · 22/06/2026</small><b>Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM</b></span></a></li>
+    <li class="is-more" hidden><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/picture1-1782115024.webp" alt="Ảnh bài báo Kinh tế &amp; Đời sống: Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô" loading="lazy" referrerpolicy="no-referrer"><span><small>Kinh tế &amp; Đời sống · 22/06/2026</small><b>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</b></span></a></li>
+    <li class="is-more" hidden><a href="https://tinhte.vn/thread/qc-kham-pha-he-sinh-thai-san-pham-3m-tai-3m-pro-shop.4154397/" target="_blank" rel="noopener"><img src="hinh/bao-chi/9047008-cv.webp" alt="Ảnh bài báo Tinh Tế · bài quảng cáo: Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop" loading="lazy" referrerpolicy="no-referrer"><span><small>Tinh Tế · bài quảng cáo · 22/06/2026</small><b>Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop</b></span></a></li>
+    <li class="is-more" hidden><a href="https://tuoitrexahoi.vn/nhung-diem-dang-chu-y-sau-su-kien-khai-truong-3m-pro-shop-tai-tphcm-a220004.html" target="_blank" rel="noopener"><img src="hinh/pro-shop-mat-tien.webp" alt="Ảnh bài báo Tuổi trẻ &amp; Xã hội: Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Tuổi trẻ &amp; Xã hội</small><b>Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM</b></span></a></li>
+   </ul>
+  </div>
+  <div class="h3m-press__more"><button type="button" class="h3m-more" data-more="press">Xem thêm 12 bài báo</button><a href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Trang tổng hợp báo chí →</a></div>
+ </div>
+</section>
+
+<section class="h3m-sec" id="goi-phim">
+ <div class="h3m-wrap">
+  <h2 class="h3m-h2">6 cấu hình phim <em>3M</em> tại Auto365</h2>
+  <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV, đã gồm VAT.</p>
+  <div class="h3m-pk" id="h3m-pk"></div>
+  <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><small class="h3m-perks__note">Quà tặng áp dụng theo từng đợt – cố vấn báo cụ thể khi tư vấn.</small><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M 10 năm cho cả 6 cấu hình</li><li>Có thể chọn điểm 3M Pro Shop theo hồ sơ chứng nhận tại từng cơ sở</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
+  <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
  </div>
 </section>
 
@@ -470,41 +536,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <a class="h3m-case" href="https://auto365.vn/jeep-rubicon-nang-cap-bi-gam-x-light-f10-new-cung-goi-phim-cach-nhiet-3m-crystalline" target="_blank" rel="noopener" data-brand="jeep" data-loai="Crystalline CR BLK"><span class="h3m-case__img"><img src="hinh/xe/jeep-rubicon.webp" alt="Jeep Wrangler dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365" loading="lazy"><em>✓ Crystalline CR BLK</em></span><span class="h3m-case__b"><span class="h3m-case__xe"><img src="hinh/logo/jeep.webp" alt="" loading="lazy">Jeep Wrangler</span><span class="h3m-case__w">JEEP RUBICON NÂNG CẤP BI GẦM X-LIGHT F10 NEW CÙNG GÓI PHIM CÁCH NHIỆT 3M CRYSTALLINE</span><span class="h3m-case__f"><time datetime="2023-11-01">01/11/2023</time><strong>Xem chi tiết lắp đặt →</strong></span></span></a>
   </div>
   <div class="h3m-press__more"><button type="button" class="h3m-more" data-more="cases">Xem thêm xe</button><a href="https://auto365.vn/phim-cach-nhiet-o-to-3m" target="_blank" rel="noopener">Xem tất cả case trên auto365.vn →</a></div>
-  <div class="h3m-gal">
-   <img src="hinh/pro-shop-showroom.webp" alt="Khu trưng bày xe tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-bmw.webp" alt="Xe BMW tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-vf8.webp" alt="VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" loading="lazy">
-  </div>
- </div>
-</section>
-
-<section class="h3m-sec h3m-sec--gray" id="chi-nhanh">
- <div class="h3m-wrap">
-  <h2 class="h3m-h2">Dán phim tại <em>3M Pro Shop</em> – Trụ sở chính Auto365</h2>
-  <p class="h3m-lead">Auto365 Center (Hiệp Bình, TP.HCM) được 3M Việt Nam bổ nhiệm làm 3M Pro Shop, đồng thời là 3M Training Center.</p>
-  <div class="h3m-hq">
-   <div class="h3m-hq__img">
-    <img src="hinh/pro-shop-mat-tien.webp" alt="Mặt tiền 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM" loading="lazy">
-    <span class="h3m-hq__stamp">3M PRO SHOP<small>06/2026 – 06/2029</small></span>
-   </div>
-   <div class="h3m-hq__body">
-    <span class="h3m-hq__kicker">★ Auto365.vn - Trụ Sở Chính</span>
-    <h3>3M Pro Shop &amp; 3M Training Center</h3>
-    <ul class="h3m-hq__pts">
-     <li><b>Chứng nhận 3M Pro Shop</b> cho các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029</li>
-     <li><b>3M Training Center</b> – nơi đào tạo kỹ thuật viên theo quy trình 3M</li>
-     <li><b>Kích hoạt bảo hành điện tử 3M 10 năm</b> ngay khi bàn giao xe</li>
-    </ul>
-    <a class="h3m-gr h3m-gr--dark h3m-gr--hq" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
-    <p class="h3m-hq__addr">📍 Số 4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM (gần KĐT Vạn Phúc)</p>
-    <div class="h3m-hq__cta">
-     <a class="h3m-btn h3m-btn--red" href="#dang-ky">Đặt lịch tại 3M Pro Shop →</a>
-     <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hq">☎ 0365 365 365</a>
-     <a class="h3m-btn h3m-btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Auto365.vn+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh&amp;destination_place_id=ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener">Chỉ đường</a>
-    </div>
-   </div>
-  </div>
  </div>
 </section>
 
@@ -528,38 +559,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   </div>
    <div class="h3m-wr2"><span class="h3m-wr__big">10<small>năm</small></span><div><b>Bảo hành điện tử 3M (eWarranty)</b><span>Ghi mã phim từng vị trí kính, ngày dán và hạn bảo hành – áp dụng cả 6 cấu hình.</span></div><a class="h3m-btn h3m-btn--red" href="#dang-ky">Đặt lịch dán phim →</a></div>
   </div>
- </div>
-</section>
-
-<section class="h3m-sec h3m-press" id="bao-chi">
- <div class="h3m-wrap">
-
-  <h2 class="h3m-h2">19 bài báo viết về <em>3M Pro Shop</em> tại TP.HCM</h2>
-  <p class="h3m-lead">Bài viết về 3M Pro Shop &amp; 3M Training Center từ khi khai trương (06/2026) đến nay.</p>
-  <div class="h3m-press__grid">
-   <ul class="h3m-pl">
-    <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/1-17821219928711310056705-119-0-841-1379-crop-17821220365881.webp" alt="Ảnh bài báo Thanh Niên: 3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thanh Niên · 22/06/2026</small><b>3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</b></span></a></li>
-    <li><a href="https://autopro.com.vn/sau-khi-khai-truong-3m-pro-shop-thuc-su-van-hanh-nhu-the-nao-177260821102431487.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1787202155122-1787202155306648567024-178728267244421171.webp" alt="Ảnh bài báo AutoPro: Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?" loading="lazy" referrerpolicy="no-referrer"><span><small>AutoPro · 21/08/2026</small><b>Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?</b></span></a></li>
-    <li><a href="https://vietnamnet.vn/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-nghiem-lai-xe-2547266.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-ngh.webp" alt="Ảnh bài báo VietNamNet: Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe" loading="lazy" referrerpolicy="no-referrer"><span><small>VietNamNet · 20/08/2026</small><b>Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe</b></span></a></li>
-    <li><a href="https://baodanang.vn/nen-chon-phim-cach-nhiet-theo-tung-vi-tri-kinh-cua-vinfast-vf3-3349409.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/806-202608201436461.webp" alt="Ảnh bài báo Báo Đà Nẵng: Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đà Nẵng · 20/08/2026</small><b>Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3</b></span></a></li>
-    <li><a href="https://vietnambiz.vn/tu-ma-phim-den-bao-hanh-dien-tu-3m-pro-shop-kiem-soat-quy-trinh-dich-vu-ra-sao-2026819171452177.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260819171108181-avatar-15x10-2026081917145165.webp" alt="Ảnh bài báo VietnamBiz: Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?" loading="lazy" referrerpolicy="no-referrer"><span><small>VietnamBiz · 19/08/2026</small><b>Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?</b></span></a></li>
-    <li><a href="https://baodongnai.com.vn/doanh-nhan-doanh-nghiep/dich-vu/202608/3m-pro-shop-vi-sao-xe-vinfast-khong-nen-dung-mot-cau-hinh-phim-cach-nhiet-co-dinh-c5a13d9" target="_blank" rel="noopener"><img src="hinh/bao-chi/image001-20260819160057.webp" alt="Ảnh bài báo Báo Đồng Nai: 3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đồng Nai · 08/2026</small><b>3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?</b></span></a></li>
-    <li><a href="https://danviet.vn/tu-tphcm-den-cac-dia-phuong-nhu-cau-chuan-hoa-dich-vu-phim-cach-nhiet-va-ppf-d1437536.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/143828-5819.webp" alt="Ảnh bài báo Dân Việt: Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF" loading="lazy" referrerpolicy="no-referrer"><span><small>Dân Việt · 23/06/2026</small><b>Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF</b></span></a></li>
-    <li class="is-more" hidden><a href="https://giadinh.suckhoedoisong.vn/xe-gia-dinh-va-nhu-cau-chon-phim-cach-nhiet-dung-thong-so-dung-quy-trinh-172260623092027053.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/3-17821811006071168598301-0-100-775-1340-crop-17821811722721.webp" alt="Ảnh bài báo Sức khỏe &amp; Đời sống: Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình" loading="lazy" referrerpolicy="no-referrer"><span><small>Sức khỏe &amp; Đời sống · 23/06/2026</small><b>Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình</b></span></a></li>
-    <li class="is-more" hidden><a href="https://genk.vn/cong-nghe-nano-gom-tren-3m-ceramic-nr-the-he-moi-va-cach-doc-thong-so-phim-cach-nhiet-165260622201911871.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1782122923795-1782122925086341237778-178213435355164945.webp" alt="Ảnh bài báo GenK: Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt" loading="lazy" referrerpolicy="no-referrer"><span><small>GenK · 22/06/2026</small><b>Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt</b></span></a></li>
-    <li class="is-more" hidden><a href="https://vietnammoi.vn/nguoi-dung-do-thi-quan-tam-hon-den-trai-nghiem-chong-nong-va-bao-ve-noi-that-xe-2026622192141609.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260622191227651-avatar-fb-20260622192141292.webp" alt="Ảnh bài báo Việt Nam Mới: Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe" loading="lazy" referrerpolicy="no-referrer"><span><small>Việt Nam Mới · 22/06/2026</small><b>Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe</b></span></a></li>
-    <li class="is-more" hidden><a href="https://2sao.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116922.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-1.webp" alt="Ảnh bài báo 2Sao: Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>2Sao · 22/06/2026</small><b>Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM</b></span></a></li>
-    <li class="is-more" hidden><a href="https://tintuconline.com.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116923.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-1-11.webp" alt="Ảnh bài báo Tin tức Online: 5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Tin tức Online · 22/06/2026</small><b>5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM</b></span></a></li>
-    <li class="is-more" hidden><a href="https://vietnambiz.vn/365group-dua-3m-pro-shop-vao-bai-toan-van-hanh-he-thong-auto365-hon-90-diem-2026622174037156.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260622173656619-avatar-15x10-2026062217403661.webp" alt="Ảnh bài báo VietnamBiz: 365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm" loading="lazy" referrerpolicy="no-referrer"><span><small>VietnamBiz · 22/06/2026</small><b>365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm</b></span></a></li>
-    <li class="is-more" hidden><a href="https://xahoi.com.vn/o-to-xe-may/3m-pro-shop-tai-tphcm-mo-them-lua-chon-trai-nghiem-phim-cach-nhiet-ppf-va-wrap-film-d404905.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/3m-pro-shop-60giay-173521.webp" alt="Ảnh bài báo Xã hội: 3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film" loading="lazy" referrerpolicy="no-referrer"><span><small>Xã hội · 22/06/2026</small><b>3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film</b></span></a></li>
-    <li class="is-more" hidden><a href="https://eva.vn/tieu-dung/khoang-xe-thoai-mai-hon-voi-phim-cach-nhiet-3m-ceramic-nr-the-he-moi-c2a674705.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/1782113096-834-thumbnail-width1024height768-auto-crop-waterm.webp" alt="Ảnh bài báo Eva: Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới" loading="lazy" referrerpolicy="no-referrer"><span><small>Eva · 22/06/2026</small><b>Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới</b></span></a></li>
-    <li class="is-more" hidden><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/2-anh-khu-vuc-trai-nghiem-khach-hang-17821181460161982689042.webp" alt="Ảnh bài báo Thể thao &amp; Văn hóa: Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thể thao &amp; Văn hóa · 22/06/2026</small><b>Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM</b></span></a></li>
-    <li class="is-more" hidden><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/picture1-1782115024.webp" alt="Ảnh bài báo Kinh tế &amp; Đời sống: Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô" loading="lazy" referrerpolicy="no-referrer"><span><small>Kinh tế &amp; Đời sống · 22/06/2026</small><b>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</b></span></a></li>
-    <li class="is-more" hidden><a href="https://tinhte.vn/thread/qc-kham-pha-he-sinh-thai-san-pham-3m-tai-3m-pro-shop.4154397/" target="_blank" rel="noopener"><img src="hinh/bao-chi/9047008-cv.webp" alt="Ảnh bài báo Tinh Tế · bài quảng cáo: Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop" loading="lazy" referrerpolicy="no-referrer"><span><small>Tinh Tế · bài quảng cáo · 22/06/2026</small><b>Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop</b></span></a></li>
-    <li class="is-more" hidden><a href="https://tuoitrexahoi.vn/nhung-diem-dang-chu-y-sau-su-kien-khai-truong-3m-pro-shop-tai-tphcm-a220004.html" target="_blank" rel="noopener"><img src="hinh/pro-shop-mat-tien.webp" alt="Ảnh bài báo Tuổi trẻ &amp; Xã hội: Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Tuổi trẻ &amp; Xã hội</small><b>Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM</b></span></a></li>
-   </ul>
-  </div>
-  <div class="h3m-press__more"><button type="button" class="h3m-more" data-more="press">Xem thêm 12 bài báo</button><a href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Trang tổng hợp báo chí →</a></div>
  </div>
 </section>
 
@@ -663,7 +662,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  document.getElementById('q-go').addEventListener('click',renderQuote);
  renderCards();
  if(MOB0){var tr=document.querySelector('.h3m-hero .h3m-trust'),qw=document.querySelector('.h3m-quick');if(tr&&qw){tr.classList.add('h3m-trust--light');qw.insertAdjacentElement('afterend',tr)}}
-
 
  // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần
  var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
