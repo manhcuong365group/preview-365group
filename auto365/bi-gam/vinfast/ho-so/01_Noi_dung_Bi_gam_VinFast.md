@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm VinFast theo từng dòng xe: VF 3, VF 6, VF 7, Limo Green | Auto365 |
 | Meta description (146 ký tự) | Tra cứu bi gầm VinFast theo dòng xe, xem hồ sơ X-Light và GTR đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm VinFast theo từng dòng xe |
-| dateModified | 2026-10-29 |
+| dateModified | 2026-10-30 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (10), FAQPage |
-| SHA-256 index.html | `1c408b4e3230b58e1e99b63d21d8075f1cabc03332a6344c5fb88ee49489a4fb` |
-| SHA-256 content-src.html | `529a934766cb750c2daab6277999282f77df8982b29fcb2a5a72556f62555758` |
+| SHA-256 index.html | `421cf37c6b10452dc187baebe7f06dba752d38b5ed1b0f78b02be9f1bf830ba3` |
+| SHA-256 content-src.html | `b9776275eefec73ccc24fed32a6c1ab1e082a741cbc65cdbbf0b8ee56b81bace` |
 
 ## Sapo (kiêm trả lời nhanh)
 

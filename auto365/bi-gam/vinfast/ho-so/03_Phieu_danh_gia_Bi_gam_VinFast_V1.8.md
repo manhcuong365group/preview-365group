@@ -1,12 +1,37 @@
-# 03 — Phiếu đánh giá SEO/GEO V1.8: Hub Bi gầm VinFast
+# 03 — Phiếu đánh giá SEO/GEO V1.9: Hub Bi gầm VinFast
+
+> Tên file giữ hậu tố V1.8 để link cũ không gãy; nội dung chấm theo **V1.9** từ R4 (27/10/2026).
 
 | Trường | Giá trị |
 |---|---|
-| Chuẩn | Auto365 Quy chuẩn SEO/GEO HTML V1.8 — đủ 12 tiêu chí (có U3), thang /100. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Bản chấm | Preview `auto365/bi-gam/vinfast/index.html` — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) (dateModified 2026-10-27; SHA tính trên nội dung LF = đúng file Cloudflare phục vụ) |
-| Ngày chấm | 22/10/2026 (lượt 1: 91,0 · lượt 2 sau khi anh Đạo duyệt: 92,3 · lượt 3 sau khối "Chọn theo nhu cầu": 93,1 · lượt 4 sau duyệt bổ sung + lead test: 94,9 · lượt 5 sau CRM xác nhận lead 228; phần sẽ bổ sung sau khi đăng không trừ điểm) |
-| Loại chấm | Tự chấm của team triển khai trên preview — **không phải phiếu nghiệm thu** |
-| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10/2026, duyệt lại bản vá 23/10 và bản vá R2 24/10/2026; `lastReviewed` 2026-10-27 (duyệt lại 27/10); xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+| Chuẩn | Auto365/365Group V1.9 (tài liệu chuẩn chung phiên bản 3, 26/10/2026) — 12 tiêu chí C1–C3, S1–S3, G1–G3, U1–U3; tiêu chí thiếu bằng chứng ghi CX. Ngưỡng: tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25. Mục 22/10–26/10 bên dưới là lịch sử chấm V1.8 |
+| Bản chấm | Preview `https://preview-365group.pages.dev/bi-gam/vinfast/` — SHA-256 của HTML được phục vụ (nội dung LF) ghi trong [01](01_Noi_dung_Bi_gam_VinFast.md) và đầu mỗi trang hồ sơ HTML; kiểm: `curl -s <URL> \| sha256sum`. dateModified 2026-10-30 |
+| Điểm reviewer gần nhất | R7 29/10/2026: 57,3/60 phần đủ bằng chứng + CX /40 |
+| Loại chấm | Các mục "tự chấm" là của team triển khai trên preview — **không phải phiếu nghiệm thu** |
+| Kiểm duyệt kỹ thuật | Nguyễn Quang Đạo — duyệt 22/10, 23/10, 24/10, 26/10, 27/10 và 29/10/2026 (xác nhận nguồn từng case); `lastReviewed` 2026-10-29; xem [05](05_Phieu_duyet_Bi_gam_VinFast.md) |
+
+## R7 reviewer 29/10/2026 (V1.9) và bản vá 30/10/2026
+
+Reviewer R7: **57,3/60 + CX /40**. QUA phần vá Limo Green và 19 phép thử desktop/bàn phím; CHƯA QUA toàn bộ demo vì **không đọc được hồ sơ 01–05 dạng .md/.csv** (ERR_BLOCKED_BY_CLIENT) và biên bản QA chưa gắn bản dựng.
+
+| Mục R7 | Đã làm 30/10/2026 | Còn |
+|---|---|---|
+| §6 không đọc được 01–05 | Export xuất thêm bản **HTML** cho từng file + trang mục lục `https://preview-365group.pages.dev/bi-gam/vinfast/ho-so/`; mỗi trang ghi SHA-256 của HTML hub cùng build; bản .md/.csv giữ nguyên làm bản gốc | Reviewer đọc/đối chiếu |
+| §6 phạm vi SHA | SHA-256 tính trên **HTML được phục vụ** tại URL preview (nội dung LF, đúng byte Cloudflare trả về); cách kiểm ghi ở mục lục hồ sơ và đầu phiếu này | — |
+| §9 P2 aria-pressed | Chip lọc case có `aria-pressed` đồng bộ khi chọn/Bỏ lọc; 2 nhóm có `role="group"` + `aria-label` ("Lọc theo dòng xe", "Lọc theo hãng đèn") | Trình đọc màn hình: chưa kiểm |
+| §5 Maps Vân Đồn/Cẩm Phả dạng embed | Dữ liệu lấy nguyên từ danh bạ `auto365.vn/chi-nhanh?json=1`; không sửa tay trên hub | IT/danh bạ sửa tại nguồn |
+| Header phiếu 03 | Đổi sang V1.9, ngày/người duyệt hiện hành | — |
+
+### Biên bản QA cùng bản (30/10/2026)
+
+| Trường | Giá trị |
+|---|---|
+| Bản dựng | `auto365/bi-gam/vinfast/index.html` build 30/10/2026 — SHA-256 trong [01](01_Noi_dung_Bi_gam_VinFast.md) |
+| Người kiểm | Team triển khai (Claude Code, điều khiển trình duyệt) |
+| Môi trường | Chromium (Claude desktop browser pane), server local `scripts/serve-preview.mjs` phục vụ đúng thư mục deploy; viewport desktop và giả lập 375×812 |
+| Phép thử | Enter chip VF 3 → 1 bài, `aria-pressed` VF 3 = true · Space chip X-Light → 0 bài + thông báo · Tab → "Bỏ lọc" · Enter → 10 bài, 2 nhóm "Tất cả" `aria-pressed=true`, focus về "Tất cả" · 375px: scrollWidth = innerWidth = 375 · trang hồ sơ 03 HTML ở 375px: 14 mục H2, 15 bảng, không tràn ngang |
+| Kết quả | Đạt |
+| Thiết bị thật | Chủ quản test điện thoại thật 29/10/2026, xác nhận OK (xem 05) |
 
 ## R6 reviewer 28/10/2026 (V1.9) và bản vá 29/10/2026
 
