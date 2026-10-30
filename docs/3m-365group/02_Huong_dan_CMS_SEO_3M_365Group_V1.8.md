@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365 Group) — chuẩn V1.9
 
-- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `9372c69749118b41f2179a2fdabd4b56e07f86511e37a105394d4fbaa640e632` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `152e39c8456755db2b3adc717875c404d6208b7b7675a3a9b1ae2da6865d26ce` (cùng phiên bản với 01 và 03)
 - Bản hiện hành: **30/10/2026** (sửa chữ khối Hồ sơ thi công) (dateModified 2026-10-30, lastReviewed 2026-10-29). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
 - **Người nhập CMS chỉ dùng Phần A.** Phần B là lịch sử các vòng vá, không dùng làm đầu vào.
 

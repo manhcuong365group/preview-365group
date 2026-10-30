@@ -5,6 +5,24 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Phiếu nghiệm thu U3 — PASS · ĐÃ DUYỆT ĐÓNG U3 (30/10/2026)
+
+File: [Phieu_U3_3M_365Group_PASS_DA_DUYET_20261030.pdf](Phieu_U3_3M_365Group_PASS_DA_DUYET_20261030.pdf) — chuẩn V1.9 R1, rà soát chuyên môn Đặng Minh Hoàng, đối chiếu HTML 30/10/2026 + báo cáo R7 29/10/2026.
+
+| Nhóm tiêu chí | Kết quả | Trạng thái |
+|---|---|---|
+| Content C1–C3 | 27,5/30 (R7) | PASS |
+| SEO S1–S2 | 18,5/20 (R7) | PASS |
+| S3 – Liên kết | Đã kiểm | PASS |
+| GEO G1–G3 | 22/25 (R7) | PASS |
+| U1 – Responsive | Đã kiểm | PASS |
+| U2 – Lead / tracking | Đã kiểm | PASS |
+| U3 – Hồ sơ bàn giao | Hoàn tất | ĐÃ DUYỆT |
+
+Ghi chú của phiếu: điểm R7 giữ nguyên; phiếu chỉ xác nhận trạng thái nghiệm thu, không quy đổi thành tổng điểm mới /100. S3, G3, U1, U2, U3 đã đóng, không yêu cầu sửa thêm nội dung. Dữ kiện giữ nguyên: 3 dòng CR BLK / Ceramic IR / Ceramic NR, 6 cấu hình, bảng 12 mã, giá 5,9–18,3 triệu (gồm công + VAT), bảo hành điện tử 10 năm; nguồn 3M Việt Nam + bảng 260815.
+
+Còn lại phía IT: route production https://3m.365group.com.vn/phim-cach-nhiet-3m vẫn trả 404 khi kiểm 30/10 — cần đưa lên và xoá khối `#m3-internal`.
+
 ## Tự chấm lại 30/10/2026 (team, tham khảo — KHÔNG phải điểm reviewer)
 
 | Mục | Max | Reviewer R7 | Tự chấm 30/10 | Căn cứ |
@@ -34,7 +52,7 @@ Chủ trang góp ý chữ "auto365" lặp nhiều trên site 3m.365group. Đổi
 
 ## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
 
-Build đối chiếu: commit `237821c5`, HTML SHA-256 `9372c69749118b41f2179a2fdabd4b56e07f86511e37a105394d4fbaa640e632` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `152e39c8456755db2b3adc717875c404d6208b7b7675a3a9b1ae2da6865d26ce` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
 
 | Mã | Đã làm | Bằng chứng | Còn CX |
 |---|---|---|---|
@@ -427,7 +445,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `9372c69749118b41f2179a2fdabd4b56e07f86511e37a105394d4fbaa640e632` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `152e39c8456755db2b3adc717875c404d6208b7b7675a3a9b1ae2da6865d26ce` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
