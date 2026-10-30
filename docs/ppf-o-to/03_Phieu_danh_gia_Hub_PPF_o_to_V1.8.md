@@ -258,3 +258,7 @@ Bổ sung 30/10/2026 (sau pk55):
 - PPF54-03: danh sách 91 điểm / 33 tỉnh chuyển từ dạng ẩn sang khối mở/đóng hiển thị "Danh sách 91 điểm theo 33 tỉnh/thành" dưới hai thẻ hệ thống (theo gợi ý accordion của phiếu); mỗi tỉnh link /chi-nhanh?service=ppf&q=<tỉnh>, mỗi điểm link hồ sơ cơ sở trên auto365.vn (124 link). Desktop 3 cột theo miền, mobile 1 cột, không tràn ngang.
 - PPF54-02 CRM: chủ trang cho gửi thử 30/10/2026 14:37 — POST https://auto365.vn/api/leads (3M 200 Gloss · SUV cỡ vừa · Toàn xe · 110 triệu, source_page ppf-o-to-hub) → HTTP 200, success:true, lead_id 289, test:true. Cần bộ phận CRM xoá lead 289 sau khi đối chiếu.
 - Anh Đặng Minh Hoàng duyệt bản pk55 ngày 30/10/2026 → lastReviewed 2026-10-30, byline (30/10/2026).
+
+## Nghiệm thu U3 pk56 (30/10/2026) — ĐÃ DUYỆT
+
+Phiếu nghiệm thu U3 bản pk56 (Ngọc Trân – SEO, 30/10/2026): PPF54-01…04 PASS – ĐÃ ĐÓNG; U1, U2 PASS; U3 PASS – ĐÃ DUYỆT; Content/SEO/GEO PASS theo nghiệm thu, không gán điểm tổng mới. Trạng thái cuối: ĐÃ DUYỆT – ĐÓNG U3 V1.9. Chi tiết trong [04](04_Phieu_duyet_Hub_PPF_o_to.md).

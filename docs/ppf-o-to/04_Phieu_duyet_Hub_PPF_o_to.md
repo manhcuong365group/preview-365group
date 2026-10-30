@@ -74,4 +74,32 @@ Endpoint `https://auto365.vn/api/leads`. Trên pages.dev không có `/api/leads`
 | Nội dung, giá, thông số, địa chỉ | Anh Đặng Minh Hoàng duyệt — `lastReviewed` 2026-10-30 |
 | Lỗi phiếu pk54 (PPF54-01…04) | Đã xử lý — chi tiết trong [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) |
 | Lead thử | 289 đã gửi và đã xoá |
-| Mục còn mở trong phạm vi trang | Không còn — chờ reviewer tái chấm, sau đó IT tích hợp production |
+| Nghiệm thu U1–U3 (pk56) | PASS – ĐÃ DUYỆT, đóng U3 V1.9 (Ngọc Trân – SEO, 30/10/2026) — xem mục dưới |
+| Mục còn mở trong phạm vi trang | Không còn — chờ IT tích hợp production |
+
+## Phiếu nghiệm thu U3 — ĐÃ DUYỆT (pk56, 30/10/2026)
+
+Nguồn: `Phieu_U3_PPF_O_To_PK56_V19_DA_DUYET_20261030.pdf` (2 trang, chủ trang gửi 30/10/2026). Bản duyệt: https://preview-365group.pages.dev/ppf-o-to/?v=pk56 · triển khai dự kiến https://auto365.vn/ppf-o-to.
+
+| Vai trò | Người |
+|---|---|
+| Tác giả | Team Content Auto365 |
+| Kiểm duyệt nội dung | Đặng Minh Hoàng |
+| Rà soát SEO / nghiệm thu U1–U3 | Ngọc Trân – SEO |
+
+| Mã feedback pk54 | Nội dung | Trạng thái |
+|---|---|---|
+| PPF54-01 | Phân định vai trò Auto365 Trụ Sở Chính / 3M Pro Shop, hồ sơ và điều hướng địa điểm | PASS – ĐÃ ĐÓNG |
+| PPF54-02 | Đồng bộ card và bộ ước tính sang form; sửa/xoá cấu hình, đổi cỡ xe, giữ thông tin nhập | PASS – ĐÃ ĐÓNG |
+| PPF54-03 | Nhóm liên kết tỉnh, danh bạ PPF, điều hướng tìm điểm tiếp nhận | PASS – ĐÃ ĐÓNG |
+| PPF54-04 | Nguồn giá, thông số, VAT, ghi chú phạm vi áp dụng | PASS – ĐÃ ĐÓNG |
+
+| Nhóm | Phạm vi | Kết quả |
+|---|---|---|
+| U1 – Đa thiết bị | Responsive desktop, tablet, mobile | PASS |
+| U2 – Tương tác | Giá và cấu hình, form/CTA, lead, CRM, tracking | PASS |
+| U3 – Bàn giao | Hồ sơ nội dung, source, tài nguyên, hướng dẫn bàn giao gắn bản pk56 | PASS – ĐÃ DUYỆT |
+
+Content, SEO, GEO: PASS theo nghiệm thu (nền pk54: 29,4/30 · 29,1/30 · 24,1/25). Phiếu chốt trạng thái PASS, không gán điểm tổng mới. Phạm vi: chấp thuận demo/hồ sơ pk56 — không thay cho kiểm index, Core Web Vitals hay kiểm production sau khi chuyển môi trường.
+
+**Trạng thái cuối: ĐÃ DUYỆT – ĐÓNG U3 V1.9 (30/10/2026).** Khi lên auto365.vn: đối chiếu canonical, redirect, tài nguyên và form theo production — bước phát hành thông thường, không phải lỗi còn mở.
