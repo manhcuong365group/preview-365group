@@ -4,13 +4,14 @@
 
 | Trường | Giá trị |
 |---|---|
+| Phiếu duyệt U3 V1.9 | **PASS — ĐÃ DUYỆT 30/10/2026**: U1 giao diện/đa thiết bị, U2 form/CRM/tracking, U3 hồ sơ 02/03/04. Kỹ thuật: Nguyễn Quang Đạo; SEO: Ngọc Trân. File: [Phieu_U3_Bi_Gam_VinFast_VF5_V19_DA_DUYET_FINAL_20261030.pdf](Phieu_U3_Bi_Gam_VinFast_VF5_V19_DA_DUYET_FINAL_20261030.pdf). Production (index/GSC, redirect, mapping CMS) ghi nhận riêng khi đăng |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `d3c2b7f95f8ad8e5955b898bf5e1515377e751429849b60a5151572dbbba9414` |
+| SHA-256 index.html | `ea28c4ad25e474e1873db523344813a23b12ae27041272bd2c459de303b5ef31` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF5 |
 | Danh bạ | Địa chỉ + điện thoại đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm đủ 91 cơ sở như /chi-nhanh (thêm 3M Pro Shop, Bình Dương CN2, CN3 ngày 30/10): "90+ cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 24); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
-| Còn CX — người đóng | Phạm vi xe: tất cả áp dụng bản tiêu chuẩn (chủ trang chốt 30/10, đã ghi trên trang); Chuẩn dịch vụ: tất cả cơ sở cùng nhận lắp, cùng giá, bảo hành, quy trình (chủ trang chốt 30/10, đã ghi dưới tiêu đề bộ tìm); lead–CRM (IT). UI điện thoại + máy tính bảng: IT đã test thật xong 30/10; map URL/OG production (SEO/IT) |
+| Còn CX — người đóng | Phạm vi xe: tất cả áp dụng bản tiêu chuẩn (chủ trang chốt 30/10, đã ghi trên trang); Chuẩn dịch vụ: tất cả cơ sở cùng nhận lắp, cùng giá, bảo hành, quy trình (chủ trang chốt 30/10, đã ghi dưới tiêu đề bộ tìm); Không còn — U1–U3 PASS đã duyệt theo phiếu Phieu_U3_Bi_Gam_VinFast_VF5_V19_DA_DUYET_FINAL_20261030.pdf; map URL/OG production (SEO/IT) |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
