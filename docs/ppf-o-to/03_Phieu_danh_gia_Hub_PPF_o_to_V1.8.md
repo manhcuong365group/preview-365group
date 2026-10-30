@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `dd65173f6003338f8acf5574391d5178b9dbd0e87353e5412012e1cf81769445` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `68fd17c1a35ec03481d2ed42ceb3e0f8d55faa1ae79c618f0d9843c612ce4860` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -268,3 +268,5 @@ Cập nhật 30/10/2026 (chủ trang gửi #branch-discovery production): bỏ k
 Cập nhật 30/10/2026 (chủ trang yêu cầu giống auto365.vn/tin-tuc): khối Hệ thống thêm bộ chọn tỉnh dạng popup như #branch-discovery production — bấm Miền → danh sách tỉnh (số điểm + khu vực), bấm tỉnh → từng điểm (địa chỉ, nút gọi, chỉ đường, link hồ sơ cơ sở), có nút quay lại miền; gõ ô tìm hiện gợi ý tỉnh/điểm (không dấu vẫn tìm được); Gần tôi dùng vị trí trình duyệt để xếp 6 điểm gần nhất (từ chối vị trí thì báo chọn miền). Dữ liệu 91 điểm chụp từ https://auto365.vn/chi-nhanh?json=1 ngày 30/10/2026, nhúng trong trang; khi IT tích hợp nên đọc trực tiếp endpoint này.
 
 Cập nhật 30/10/2026 (chủ trang: "để như production"): khối Hệ thống desktop chỉnh theo kích thước #branch-discovery production — thẻ Trụ Sở Chính bên trái, thẻ 90+ chi nhánh bên phải; 3 nút (2 hotline + Google Maps) một hàng; padding thẻ 16px, icon tiêu đề 44px, tiêu đề 20px. Link "Xem hồ sơ Trụ Sở Chính" (/thu-duc) chuyển từ dòng địa chỉ vào ô "Trụ sở" để địa chỉ còn 1 dòng như production.
+
+Cập nhật 30/10/2026 — mobile (≤760px) khối Hệ thống theo production: 4 ô thông tin lưới 2×2, 3 nút xếp dọc full chiều ngang, 3 miền chia 3 cột (bỏ cuộn ngang, không tràn thẻ), padding thẻ 12px.
