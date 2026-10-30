@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `c49659822c96c659f6f756257b473a527c24ecbfe07660ba4c4560145f3c0ac1` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `a52390cd6b6ea4bc258bc5d6e3e7647ad258bf1cbe8549302b47d3f6ef1b05a1` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -220,7 +220,7 @@ Ghi chú 28/10 (giao diện theo góp ý sếp): bỏ dải "Tìm nhanh theo t�
 |---|---|---|
 | PK48-01A Xóa giữ phạm vi cũ | Phạm vi tự điền được xóa cùng tóm tắt và product_interest khi xóa cấu hình; phạm vi khách tự chọn thì giữ nguyên (quy tắc: chỉ ghi đè trường do hệ thống tự điền) | Toàn xe → CTA → Xóa: phạm vi "Chưa rõ", product_interest rỗng, tóm tắt "Đã xóa lựa chọn"; khách chọn "Mặt trước" thì giữ |
 | PK48-01B Sửa từ card | Link "Sửa lựa chọn" từ card mở lại đúng hãng/nhóm xe/thẻ (viền nhấn); đổi nhóm xe ở card cập nhật tóm tắt; chạm vào calculator sau đó thì tóm tắt chuyển theo calculator, link sửa về calculator | 3M 200/cỡ vừa → đổi cỡ lớn: 122 triệu; chuyển tab AX rồi Sửa: về 3M/cỡ lớn/thẻ 3M 200; tên khách nhập giữ nguyên |
-| PK48-02 HQ / 3M Pro Shop | Khối Trụ Sở Chính 4/4/1/7 có link /thu-duc; link dưới chứng nhận đổi thành "Xem hồ sơ 3M Pro Shop" → /3m-pro-shop-tru-so-chinh | Chủ trang chốt 29/10/2026: theo giấy chứng nhận 3M Pro Shop, địa chỉ 4/4/1/7 Đường Số 3, Phường Hiệp Bình (hub đã dùng đúng ở HTML + schema). Trang /3m-pro-shop-tru-so-chinh trên production còn ghi 4/4/3/3, IT cần sửa theo chứng nhận |
+| PK48-02 HQ / 3M Pro Shop | Khối Trụ Sở Chính 4/4/1/7 có link /thu-duc; link dưới chứng nhận đổi thành "Xem hồ sơ 3M Pro Shop" → /3m-pro-shop-tru-so-chinh | Chủ trang xác nhận 30/10/2026: hai địa chỉ đều đúng — Trụ Sở Chính / Auto365 Center 4/4/1/7 (địa chỉ trên chứng nhận), 3M Pro Shop & 3M Training Center 4/4/3/3, phát triển trong hệ sinh thái Trụ Sở Chính, thuộc 365Group |
 | PK48-03 Nguồn/nhãn | Bỏ ghi chú "Sedan = A–B, SUV = C–D" ở bảng vị trí; footer tách nguồn giá trọn gói (PDP 19/10, 3M 200 đối chiếu 28/10), giá vị trí 3M (23/10) và AX khách lẻ; product_interest ghi nguồn theo loại giá (gói hoặc vị trí) | Độ dày 3M 50 và bảo hành AX X: PDP chưa công bố, giữ nguyên chờ Commercial |
 | PK48-04 Catalog | Thêm link "Xem toàn bộ sản phẩm PPF/Wrap" → /ppfwrap-film cạnh thẻ phim | Nhóm link tỉnh đã bỏ theo yêu cầu chủ trang 28/10; finder tỉnh và 3 miền giữ |
 | QA video | Clip F4iyRoH7Mco (VF7 3M 50 Gloss) đã chuyển riêng tư trên YouTube (thumbnail 404) → bỏ khỏi khối video, còn 8 clip | 8/8 ảnh thumbnail tải được |
@@ -237,7 +237,7 @@ QA bảng (29/10/2026): rule CSS cũ ẩn cột thứ 3 của bảng giá 13 v�
 
 | Mã | Đã làm | Còn lại |
 |---|---|---|
-| PPF54-01 Chứng nhận / nơi tiếp nhận | Chủ trang chốt theo giấy chứng nhận: 3M Pro Shop cấp cho Auto365 Center, 4/4/1/7 Đường Số 3, Hiệp Bình (= Trụ Sở Chính). Câu khối chứng nhận ghi rõ đơn vị + địa chỉ trên chứng nhận và "đặt lịch tại địa chỉ này"; Maps khối Trụ sở dùng link production | Trang /3m-pro-shop-tru-so-chinh trên production còn ghi 4/4/3/3 → IT sửa theo chứng nhận |
+| PPF54-01 Chứng nhận / nơi tiếp nhận | Câu khối chứng nhận ghi: 3M Việt Nam cấp chứng nhận cho Auto365 Center (Trụ Sở Chính, 4/4/1/7); 3M Pro Shop & 3M Training Center phát triển trong hệ sinh thái Trụ Sở Chính, thuộc 365Group, tại 4/4/3/3 — đặt lịch tại đây. Khối HQ (4/4/1/7, /thu-duc, Maps production) và link hồ sơ 3M Pro Shop (/3m-pro-shop-tru-so-chinh) tách riêng | Đóng — chủ trang xác nhận 30/10 |
 | PPF54-02 QA sửa card / thủ công | Thông báo xoá phản ánh phạm vi khách tự chọn ("Phạm vi bạn đã chọn (Mặt trước) vẫn được giữ"). Đã chạy đủ bảng mẫu, xem bảng QA dưới | Endpoint/CRM: team đối chiếu bằng yêu cầu thử theo quy trình |
 | PPF54-03 Link tỉnh | Danh sách 91 điểm / 33 tỉnh dạng ẩn như SSR production; giao diện giữ ô tìm + 3 miền theo yêu cầu chủ trang 28/10 | Nhóm link tỉnh hiển thị: chủ trang đã chọn không hiện |
 | PPF54-04 Nguồn | 3M 50: nhãn "7.3 mil · Phim kèm keo" theo 3M Việt Nam (giống 150). AX X Ver 2: bảo hành 8 năm (chủ trang cung cấp 29/10) | Bảng phê duyệt thương mại cùng bản |
@@ -253,3 +253,8 @@ QA luồng (localhost, 30/10/2026):
 | Khách tự chọn Mặt trước → Xoá calculator | Phạm vi giữ Mặt trước, product_interest trống, thông báo ghi đúng giá trị đang giữ |
 
 U1 đa thiết bị (30/10/2026): đo 360, 390, 430, 768, 820, 1024 px — không phần tử nào tràn ngang ngoài vùng cuộn có chủ đích; bảng so sánh xếp thẻ ≤760px, bảng 13 vị trí ghim cột vị trí; không lỗi console. dateModified 2026-10-30; lastReviewed giữ 2026-10-28.
+
+Bổ sung 30/10/2026 (sau pk55):
+- PPF54-03: danh sách 91 điểm / 33 tỉnh chuyển từ dạng ẩn sang khối mở/đóng hiển thị "Danh sách 91 điểm theo 33 tỉnh/thành" dưới hai thẻ hệ thống (theo gợi ý accordion của phiếu); mỗi tỉnh link /chi-nhanh?service=ppf&q=<tỉnh>, mỗi điểm link hồ sơ cơ sở trên auto365.vn (124 link). Desktop 3 cột theo miền, mobile 1 cột, không tràn ngang.
+- PPF54-02 CRM: chủ trang cho gửi thử 30/10/2026 14:37 — POST https://auto365.vn/api/leads (3M 200 Gloss · SUV cỡ vừa · Toàn xe · 110 triệu, source_page ppf-o-to-hub) → HTTP 200, success:true, lead_id 289, test:true. Cần bộ phận CRM xoá lead 289 sau khi đối chiếu.
+- Anh Đặng Minh Hoàng duyệt bản pk55 ngày 30/10/2026 → lastReviewed 2026-10-30, byline (30/10/2026).

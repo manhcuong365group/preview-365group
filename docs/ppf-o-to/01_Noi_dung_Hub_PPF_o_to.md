@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c49659822c96c659f6f756257b473a527c24ecbfe07660ba4c4560145f3c0ac1`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `a52390cd6b6ea4bc258bc5d6e3e7647ad258bf1cbe8549302b47d3f6ef1b05a1`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (28/10/2026) · Cập nhật 30/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10/2026) · Cập nhật 30/10/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
@@ -146,7 +146,7 @@ Quy trình xử lý bề mặt, cắt phim theo form xe và xử lý mép kỹ; 
 
 **Auto365 Center được 3M Việt Nam bổ nhiệm làm 3M Pro Shop**
 
-Chứng nhận 3M Pro Shop cho các dòng phim ô tô cao cấp của 3M cấp cho Auto365 Center, số 4/4/1/7 Đường Số 3, Hiệp Bình (Trụ Sở Chính Auto365), hiệu lực 06/2026–06/2029. Chủ xe muốn dán PPF 3M tại 3M Pro Shop đặt lịch tại địa chỉ này.
+3M Việt Nam cấp chứng nhận 3M Pro Shop cho Auto365 Center (Trụ Sở Chính, số 4/4/1/7 Đường Số 3, Hiệp Bình) với các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029. 3M Pro Shop & 3M Training Center được phát triển trong hệ sinh thái Auto365.vn - Trụ Sở Chính, thuộc 365Group, tại số 4/4/3/3 Đường Số 3, Hiệp Bình; chủ xe muốn dán PPF 3M tại 3M Pro Shop đặt lịch tại đây.
 
 3M Pro Shop — Auto365 Center · 06/2026–06/2029
 
@@ -181,202 +181,6 @@ Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam
 
 _[Form: ]_
 
-Miền Bắc
-
-Quảng Ninh
-
-- Auto365 Cẩm Phả
-- Auto365 Đông Triều
-- Auto365 Móng Cái
-- Auto365 Móng Cái CN2
-- Auto365 Quảng Ninh
-- Auto365 Quảng Yên
-- Auto365 Uông Bí
-- Auto365 Vân Đồn
-
-Phú Thọ
-
-- Auto365 Hoà Bình
-- Auto365 Phú Thọ
-- Auto365 Phúc Yên
-- Auto365 Phúc Yên CN2
-- Auto365 Vĩnh Phúc
-
-Hà Nội
-
-- Auto365 Đông Anh - Hà Nội
-- Auto365 Hà Nội
-- Auto365 Long Biên
-- Auto365 Mỹ Đình
-
-Hải Phòng
-
-- Auto365 Hải Dương
-- Auto365 Hải Dương CN2
-- Auto365 Hải Phòng
-- Auto365 Hải Phòng CN2
-
-Bắc Ninh
-
-- Auto365 Bắc Giang
-- Auto365 Bắc Ninh
-- Auto365 Bắc Ninh CN2
-
-Hưng Yên
-
-- Auto365 Hưng Yên
-- Auto365 Thái Bình
-- Auto365 Thái Bình CN2
-
-Ninh Bình
-
-- Auto365 Hà Nam
-- Auto365 Nam Định
-- Auto365 Ninh Bình
-
-Lào Cai
-
-- Auto365 Lào Cai
-- Auto365 Yên Bái
-
-Sơn La
-
-- Auto365 Sơn La
-- Auto365 Sơn La CN2
-
-Thái Nguyên
-
-- Auto365 Bắc Kạn
-- Auto365 Thái Nguyên
-
-Tuyên Quang
-
-- Auto365 Hà Giang
-- Auto365 Tuyên Quang
-
-Cao Bằng
-
-- Auto365 Cao Bằng
-
-Lạng Sơn
-
-- Auto365 Lạng Sơn
-
-Điện Biên
-
-- Auto365 Điện Biên Phủ
-
-Miền Trung
-
-Khánh Hòa
-
-- Auto365 Cam Lâm
-- Auto365 Nha Trang
-- Auto365 Nha Trang CN2
-- Auto365 Ninh Hoà
-- Auto365 Ninh Thuận
-
-Gia Lai
-
-- Auto365 Gia Lai
-- Auto365 Gia Lai CN2
-- Auto365 Quy Nhơn
-
-Hà Tĩnh
-
-- Auto365 Hà Tĩnh CN1
-- Auto365 Hà Tĩnh CN2
-- Auto365 Hà Tĩnh CN3
-
-Lâm Đồng
-
-- Auto365 Bình Thuận
-- Auto365 Đăk Nông
-- Auto365 Lâm Đồng
-
-Quảng Trị
-
-- Auto365 Quảng Bình
-- Auto365 Quảng Bình CN2
-- Auto365 Quảng Trị
-
-Thanh Hóa
-
-- Auto365 Bỉm Sơn
-- Auto365 Thanh Hoá
-
-Đà Nẵng
-
-- Auto365 Đà Nẵng
-- Auto365 Quảng Nam
-
-Đắk Lắk
-
-- Auto365 Buôn Ma Thuột
-- Auto365 Phú Yên
-
-Huế
-
-- Auto365 Huế
-
-Nghệ An
-
-- Auto365 Nghệ An
-
-Quảng Ngãi
-
-- Auto365 Quảng Ngãi
-
-Miền Nam
-
-TP.HCM
-
-- 3M Pro Shop & 3M Training Center
-- Auto365 Bình Dương
-- Auto365 Bình Dương - Chi Nhánh 2
-- Auto365 Bình Dương - Chi Nhánh 3
-- Auto365 Củ Chi
-- Auto365 Quận 7
-- Auto365 Quận 9
-- Auto365 Tân Phú
-- Auto365 Vũng Tàu
-- Auto365.vn - Trụ Sở Chính
-
-Vĩnh Long
-
-- Auto365 Bến Tre
-- Auto365 Trà Vinh
-- Auto365 Vĩnh Long
-
-An Giang
-
-- Auto365 An Giang
-- Auto365 Phú Quốc
-
-Cần Thơ
-
-- Auto365 Cần Thơ
-- Auto365 Hậu Giang
-
-Tây Ninh
-
-- Auto365 Long An
-- Auto365 Tây Ninh
-
-Đồng Nai
-
-- Auto365 Biên Hoà
-- Auto365 Bình Phước
-
-Đồng Tháp
-
-- Auto365 Đồng Tháp
-- Auto365 Tiền Giang
-
-Cà Mau
-
-- Auto365 Bạc Liêu
-
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
 Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, Thành Phố Hồ Chí Minh · Xem hồ sơ Trụ Sở Chính →
@@ -388,6 +192,50 @@ Trụ sởHiệp Bình, TP.HCM
 Bảo hànhTheo từng sản phẩm
 
 Tư vấnQua hotline
+
+**Danh sách 91 điểm theo 33 tỉnh/thành**
+
+**Miền Bắc**
+
+- Quảng NinhAuto365 Cẩm PhảAuto365 Đông TriềuAuto365 Móng CáiAuto365 Móng Cái CN2Auto365 Quảng NinhAuto365 Quảng YênAuto365 Uông BíAuto365 Vân Đồn
+- Phú ThọAuto365 Hoà BìnhAuto365 Phú ThọAuto365 Phúc YênAuto365 Phúc Yên CN2Auto365 Vĩnh Phúc
+- Hà NộiAuto365 Đông Anh - Hà NộiAuto365 Hà NộiAuto365 Long BiênAuto365 Mỹ Đình
+- Hải PhòngAuto365 Hải DươngAuto365 Hải Dương CN2Auto365 Hải PhòngAuto365 Hải Phòng CN2
+- Bắc NinhAuto365 Bắc GiangAuto365 Bắc NinhAuto365 Bắc Ninh CN2
+- Hưng YênAuto365 Hưng YênAuto365 Thái BìnhAuto365 Thái Bình CN2
+- Ninh BìnhAuto365 Hà NamAuto365 Nam ĐịnhAuto365 Ninh Bình
+- Lào CaiAuto365 Lào CaiAuto365 Yên Bái
+- Sơn LaAuto365 Sơn LaAuto365 Sơn La CN2
+- Thái NguyênAuto365 Bắc KạnAuto365 Thái Nguyên
+- Tuyên QuangAuto365 Hà GiangAuto365 Tuyên Quang
+- Cao BằngAuto365 Cao Bằng
+- Lạng SơnAuto365 Lạng Sơn
+- Điện BiênAuto365 Điện Biên Phủ
+
+**Miền Trung**
+
+- Khánh HòaAuto365 Cam LâmAuto365 Nha TrangAuto365 Nha Trang CN2Auto365 Ninh HoàAuto365 Ninh Thuận
+- Gia LaiAuto365 Gia LaiAuto365 Gia Lai CN2Auto365 Quy Nhơn
+- Hà TĩnhAuto365 Hà Tĩnh CN1Auto365 Hà Tĩnh CN2Auto365 Hà Tĩnh CN3
+- Lâm ĐồngAuto365 Bình ThuậnAuto365 Đăk NôngAuto365 Lâm Đồng
+- Quảng TrịAuto365 Quảng BìnhAuto365 Quảng Bình CN2Auto365 Quảng Trị
+- Thanh HóaAuto365 Bỉm SơnAuto365 Thanh Hoá
+- Đà NẵngAuto365 Đà NẵngAuto365 Quảng Nam
+- Đắk LắkAuto365 Buôn Ma ThuộtAuto365 Phú Yên
+- HuếAuto365 Huế
+- Nghệ AnAuto365 Nghệ An
+- Quảng NgãiAuto365 Quảng Ngãi
+
+**Miền Nam**
+
+- TP.HCM3M Pro Shop & 3M Training CenterAuto365 Bình DươngAuto365 Bình Dương - Chi Nhánh 2Auto365 Bình Dương - Chi Nhánh 3Auto365 Củ ChiAuto365 Quận 7Auto365 Quận 9Auto365 Tân PhúAuto365 Vũng TàuAuto365.vn - Trụ Sở Chính
+- Vĩnh LongAuto365 Bến TreAuto365 Trà VinhAuto365 Vĩnh Long
+- An GiangAuto365 An GiangAuto365 Phú Quốc
+- Cần ThơAuto365 Cần ThơAuto365 Hậu Giang
+- Tây NinhAuto365 Long AnAuto365 Tây Ninh
+- Đồng NaiAuto365 Biên HoàAuto365 Bình Phước
+- Đồng ThápAuto365 Đồng ThápAuto365 Tiền Giang
+- Cà MauAuto365 Bạc Liêu
 
 ## PPF là gì?  `#kien-thuc`
 
@@ -603,7 +451,7 @@ _[Form: Họ và tên * · Số điện thoại * · Hãng xe · Dòng xe / đ�
 
 **Đặng Minh Hoàng**
 
-Kiểm duyệt nội dung hub PPF ngày 28/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá trọn gói, độ dày, bảo hành theo trang sản phẩm auto365.vn ngày 19/10/2026 (giá 3M 200 Gloss đối chiếu lại 28/10/2026); giá theo vị trí 3M theo bảng 3M Pro Shop ngày 23/10/2026, giá theo vị trí AX theo bảng AX Film khách lẻ. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 29/10/2026
+Kiểm duyệt nội dung hub PPF ngày 30/10/2026; đồng thời kiểm duyệt danh mục PPF/Wrap film trên auto365.vn. Biên soạn: Team Content Auto365. Giá trọn gói, độ dày, bảo hành theo trang sản phẩm auto365.vn ngày 19/10/2026 (giá 3M 200 Gloss đối chiếu lại 28/10/2026); giá theo vị trí 3M theo bảng 3M Pro Shop ngày 23/10/2026, giá theo vị trí AX theo bảng AX Film khách lẻ. Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp và tư vấn từ kỹ thuật viên · Cập nhật nội dung 29/10/2026
 
 Chính sách bảo hànhTDS 3M PPF Series 150 GlossHệ thống chi nhánhPhim cách nhiệtDân Việt: chuẩn hoá dịch vụ phim & PPF
 
