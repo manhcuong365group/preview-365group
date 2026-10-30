@@ -12,7 +12,7 @@
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 28/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF8 |
 | Danh bạ | Địa chỉ + điện thoại đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm đủ 91 cơ sở như /chi-nhanh (thêm 3M Pro Shop, Bình Dương CN2, CN3 ngày 30/10): "90+ cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 24); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
 | Còn CX — người đóng | Phạm vi xe: tất cả áp dụng bản tiêu chuẩn (chủ trang chốt 30/10, đã ghi trên trang); Chuẩn dịch vụ: tất cả cơ sở cùng nhận lắp, cùng giá, bảo hành, quy trình (chủ trang chốt 30/10, đã ghi dưới tiêu đề bộ tìm); Không còn — T01, T02, U1–U3 PASS đã duyệt theo phiếu Phieu_U3_VinFast_VF8_PASS_DA_DUYET_20261030.pdf; map URL/OG production (SEO/IT) |
-| Tự chấm 30/10 (V1.9, sau mọi bản vá) | C 28,9 · S 28,8 · G 23,9 · U 13,8 → **95,4/100 — ĐẠT** (SEO ≥28,5, GEO ≥23,75) — tự chấm, chờ reviewer tái chấm; U2 trừ do lead–CRM chưa có xác nhận IT |
+| Tự chấm 30/10 (V1.9, sau mọi bản vá) | C 28,9 · S 28,8 · G 23,8 · U 14,5 → **96,0/100 — ĐẠT**; U1–U3 theo phiếu duyệt PDF 30/10 |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
