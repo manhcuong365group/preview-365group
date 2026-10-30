@@ -7,7 +7,7 @@
 
 ## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
 
-Build đối chiếu: commit `237821c5`, HTML SHA-256 `9d207b96bcd4bd650de836b72d9f768905b2c7d282eb93af24443030bab7090f` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `f71659fd89df9b0f8033882983bfa6252af4154f6dca7faa74cde62caa9ec3e9` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
 
 | Mã | Đã làm | Bằng chứng | Còn CX |
 |---|---|---|---|
@@ -400,7 +400,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `9d207b96bcd4bd650de836b72d9f768905b2c7d282eb93af24443030bab7090f` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `f71659fd89df9b0f8033882983bfa6252af4154f6dca7faa74cde62caa9ec3e9` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
