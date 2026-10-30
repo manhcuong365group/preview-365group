@@ -1128,7 +1128,7 @@ section[id],.mkBox[id]{scroll-margin-top:72px}
     }
     $$('#he-thong .reg[data-mien]').forEach(function(a){ a.addEventListener('click', function(e){ e.preventDefault(); showMien(a.dataset.mien); }); });
     pop.addEventListener('click', function(e){
-      var t = e.target.closest('button'); if (!t) return;
+      e.stopPropagation(); var t = e.target.closest('button'); if (!t) return;
       if (t.hasAttribute('data-x')) close(); else if (t.dataset.p) showProv(t.dataset.p); else if (t.dataset.m) showMien(t.dataset.m);
     });
     bq.setAttribute('aria-controls', 'bpop'); bq.setAttribute('aria-expanded', 'false'); bq.setAttribute('autocomplete', 'off');
