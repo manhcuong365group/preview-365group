@@ -769,16 +769,16 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
  moreC.addEventListener('click',function(){shown+=STEP;applyCases()});applyCases();
  var rzT,rzW=innerWidth;addEventListener('resize',function(){clearTimeout(rzT);rzT=setTimeout(function(){if(innerWidth===rzW)return;rzW=innerWidth;var st=matchMedia('(max-width:640px)').matches?6:12;shown=Math.max(st,Math.ceil(shown/STEP)*st);STEP=st;applyCases()},150)});
- // Báo chí: lưới 3 bài (mobile 1 bài), tự lật sang trang kế mỗi 4 giây
+ // Báo chí: lưới 3 bài (mobile 1 bài), mỗi 4 giây dịch thêm 1 bài
  var pl=document.querySelector('.h3m-pl'),pLi=[].slice.call(pl.querySelectorAll('li')),pN=pLi.length,pP=0,pT,mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
  pLi.forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
  document.querySelector('[data-more=press]').hidden=true;
  function pSize(){return innerWidth<=640?1:innerWidth<=900?2:3}
- function pPages(){return Math.ceil(pN/pSize())}
+ function pPages(){return pN}
  var pDots=document.createElement('div');pDots.className='h3m-pdots';mq.appendChild(pDots);var pCnt=document.querySelector('.h3m-pnav__n');
- function pDraw(){var k=pSize(),st=pP*k,show={};for(var i=0;i<k;i++)show[(st+i)%pN]=1;
-  pLi.forEach(function(li,j){li.classList.toggle('is-off',!show[j])});
-  var n=pPages();if(pDots.children.length!==n)pDots.innerHTML=Array(n+1).join('<button type="button" aria-label="Trang báo"></button>');
+ function pDraw(){var k=pSize(),show={};for(var i=0;i<k;i++)show[(pP+i)%pN]=i+1;
+  pLi.forEach(function(li,j){li.classList.toggle('is-off',!show[j]);li.style.order=show[j]||99});
+  var n=pPages();if(pDots.children.length!==n)pDots.innerHTML=Array(n+1).join('<button type="button" aria-label="Bài báo"></button>');
   [].forEach.call(pDots.children,function(d,j){d.classList.toggle('is-on',j===pP)});if(pCnt)pCnt.textContent=(pP+1)+' / '+n}
  function pGo(p,anim){p=(p+pPages())%pPages();if(!anim||still){pP=p;pDraw();return}
   pl.classList.add('is-fade');setTimeout(function(){pP=p;pDraw();pl.classList.remove('is-fade')},300)}
