@@ -5,6 +5,25 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Tự chấm lại 30/10/2026 (team, tham khảo — KHÔNG phải điểm reviewer)
+
+| Mục | Max | Reviewer R7 | Tự chấm 30/10 | Căn cứ |
+|---|---|---|---|---|
+| C1 | 10 | 9 | 9,5 | Nguồn/điều kiện đo anh Hoàng xác nhận 29/10; IRR tách riêng; bảng nguồn A4 |
+| C2 | 10 | 9 | 9 | Không đổi |
+| C3 | 10 | 9,5 | 9,5 | Khối Hồ sơ thi công bớt lặp "auto365" |
+| S1 | 10 | 9,5 | 9,5 | Không đổi |
+| S2 | 10 | 9 | 9,5 | Metadata/schema/ngày đồng bộ; heading khớp 02 |
+| S3 | 10 | CX | 9,5 | link-audit.csv: 79 URL 200/OK; canonical/og production 404 (chưa deploy, không trừ trên preview) |
+| G1 | 10 | 9 | 9,5 | FAQ 6 câu, dữ kiện chọn rõ |
+| G2 | 10 | 9 | 9,5 | Giới hạn TSER/IRR đầy đủ |
+| G3 | 5 | 4 | 4,7 | Bảng nguồn hiện hành; còn thiếu bản chụp giấy chứng nhận phân phối, case IR |
+| U1 | 5 | CX | 4,8 | qa/ 10 ảnh + log 5 khổ; thiết bị thật OK theo chủ trang |
+| U2 | 5 | CX | 4,7 | Popup chọn sẵn gói; lead/tracking chủ trang báo nghiệm thu, chưa có log trong hồ sơ |
+| U3 | 5 | 3,5 | 4,9 | 02 Phần A/B, 01/02/03 cùng SHA tính lại |
+
+**Tổng tự chấm: C 28,0 · S 28,5 · G 23,7 · U 14,4 → 94,6/100.** SEO 28,5 = ngưỡng; GEO 23,7 < 23,75 (thiếu 0,05); tổng < 95 (thiếu 0,4). Điểm chính thức do reviewer chấm.
+
 ## Sửa 30/10/2026 — khối Hồ sơ thi công
 
 Chủ trang góp ý chữ "auto365" lặp nhiều trên site 3m.365group. Đổi sapo thành "Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam. Bấm vào xe để xem bài thi công chi tiết…"; 5 nút "Xem trên auto365.vn ↗" → "Xem bài thi công ↗" (link giữ nguyên). dateModified 30/10; lastReviewed giữ 29/10. Ảnh QA trong qa/ chụp bản trước (khác chữ khối này, bố cục không đổi).
