@@ -1,7 +1,7 @@
 # QA phim cách nhiệt 3M — 30/10/2026
 
 - URL: https://preview-365group.pages.dev/3m.365group.com.vn/phim-cach-nhiet-3m/?qa=1030
-- Build: commit `237821c5` (origin/main), HTML SHA-256 `d450f0d9efe3fbb1c97e35f31a7f77eae7cd3e7e74308ef6a86e1b7c4afcc568` (tính lại từ file, trùng 01/02/03)
+- Build: commit `237821c5` (origin/main), HTML SHA-256 `1f8a4d26dab0e12b14f17b4ecd9b779a8b1ab0eaaa555f67c4af6bdb59ac242c` (tính lại từ file, trùng 01/02/03)
 - Trình duyệt: Chrome 150 headless (Puppeteer), **giả lập viewport** (isMobile + touch với khổ < 768). Không phải thiết bị thật.
 - Thời điểm: 2026-10-30 10:51 UTC (17:51 giờ VN). Người kiểm: Claude (script tự động), số liệu trong `qa-log.json`.
 

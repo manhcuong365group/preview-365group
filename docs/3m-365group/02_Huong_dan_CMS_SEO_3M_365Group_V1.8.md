@@ -1,7 +1,7 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365 Group) — chuẩn V1.9
 
-- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `d450f0d9efe3fbb1c97e35f31a7f77eae7cd3e7e74308ef6a86e1b7c4afcc568` (cùng phiên bản với 01 và 03)
-- Bản hiện hành: **30/10/2026** (sửa chữ khối Hồ sơ thi công) (dateModified 2026-10-30, lastReviewed 2026-10-29). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `1f8a4d26dab0e12b14f17b4ecd9b779a8b1ab0eaaa555f67c4af6bdb59ac242c` (cùng phiên bản với 01 và 03)
+- Bản hiện hành: **30/10/2026** (sửa chữ khối Hồ sơ thi công) (dateModified 2026-10-30, lastReviewed 2026-10-30). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
 - **Người nhập CMS chỉ dùng Phần A.** Phần B là lịch sử các vòng vá, không dùng làm đầu vào.
 
 # Phần A — Đặc tả hiện hành V1.9 (bản 30/10/2026)
@@ -80,7 +80,7 @@ Nhóm xe: Minicar / Sedan / SUV (không dùng "SUV-MPV"). Bảo hành 10 năm c�
 
 ## A5. Schema (một `@graph`)
 
-Organization, Brand, FAQPage (**6 câu**, khớp FAQ hiển thị), DefinedTermSet (TSER/VLT/UVR/Glare R/IRR, điều kiện đo như A4), WebSite, BreadcrumbList, WebPage (dateModified 2026-10-30, lastReviewed 2026-10-29, reviewedBy Đặng Minh Hoàng), ItemList 6 Product + AggregateOffer (VND, ghi "đã gồm công thi công và VAT").
+Organization, Brand, FAQPage (**6 câu**, khớp FAQ hiển thị), DefinedTermSet (TSER/VLT/UVR/Glare R/IRR, điều kiện đo như A4), WebSite, BreadcrumbList, WebPage (dateModified 2026-10-30, lastReviewed 2026-10-30, reviewedBy Đặng Minh Hoàng), ItemList 6 Product + AggregateOffer (VND, ghi "đã gồm công thi công và VAT").
 
 ## A6. Giao diện và tương tác
 

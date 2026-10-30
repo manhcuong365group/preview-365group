@@ -5,6 +5,28 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Phiếu U3 V1.9 FINAL — PASS · ĐÃ DUYỆT · đóng toàn bộ R7 + U1/U2/U3 (30/10/2026)
+
+File: [Phieu_U3_3M_365Group_V19_DA_DUYET_FINAL_U1_U2_PASS_20261030.pdf](Phieu_U3_3M_365Group_V19_DA_DUYET_FINAL_U1_U2_PASS_20261030.pdf) — bản FINAL, thay phiếu U3 trước cùng ngày. Kiểm duyệt kỹ thuật Đặng Minh Hoàng (duyệt 30/10/2026); rà soát SEO Ngọc Trân.
+
+| Mã | Trạng thái | Căn cứ đóng |
+|---|---|---|
+| C1 | PASS – ĐÃ ĐÓNG | Sapo mới; 3 tab phim giúp chọn nhanh |
+| C2 | PASS – ĐÃ ĐÓNG | Case Toyota Vios, CR BLK 50/35 + Ceramic IR15 |
+| C3 | PASS – ĐÃ ĐÓNG | Đồng bộ điều kiện đo IRR, TSER, giới hạn nhiệt thực tế |
+| S1 | PASS – ĐÃ ĐÓNG | Intent, title, H1, canonical đúng tuyến phim 3M |
+| S2 | PASS – ĐÃ ĐÓNG | Hồ sơ 01/02/03 đã đối chiếu, nghiệm thu |
+| G1 | PASS – ĐÃ ĐÓNG | Phân biệt IRR với TSER/VLT |
+| G2 | PASS – ĐÃ ĐÓNG | Bảng 12 mã kèm nguồn 3M + bảng 260815 |
+| G3 | PASS – ĐÃ ĐÓNG | Bằng chứng nguồn + case Ceramic IR |
+| U1 | PASS – ĐÃ KIỂM TRA | Giao diện, responsive đạt |
+| U2 | PASS – ĐÃ KIỂM TRA | Form, lead, CRM, tracking đạt |
+| U3 | PASS – ĐÃ DUYỆT | Hồ sơ bàn giao, duyệt 30/10/2026 |
+
+Điểm R7 (71,5/80) giữ làm lịch sử, không tự quy đổi/nâng điểm khi chưa có phiếu chấm mới. Theo phiếu, cấu hình production (URL, robots, canonical, tài nguyên) kiểm theo giai đoạn triển khai, không phải lỗi mở của demo; thực tế 30/10 route production vẫn 404 — chờ IT.
+
+Cập nhật trang theo phiếu: lastReviewed 2026-10-30, dòng "Kiểm duyệt kỹ thuật" ghi 30/10/2026; khối nội bộ trỏ tới phiếu FINAL.
+
 ## Phiếu nghiệm thu U3 — PASS · ĐÃ DUYỆT ĐÓNG U3 (30/10/2026)
 
 File: [Phieu_U3_3M_365Group_PASS_DA_DUYET_20261030.pdf](Phieu_U3_3M_365Group_PASS_DA_DUYET_20261030.pdf) — chuẩn V1.9 R1, rà soát chuyên môn Đặng Minh Hoàng, đối chiếu HTML 30/10/2026 + báo cáo R7 29/10/2026.
@@ -52,7 +74,7 @@ Chủ trang góp ý chữ "auto365" lặp nhiều trên site 3m.365group. Đổi
 
 ## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
 
-Build đối chiếu: commit `237821c5`, HTML SHA-256 `d450f0d9efe3fbb1c97e35f31a7f77eae7cd3e7e74308ef6a86e1b7c4afcc568` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `1f8a4d26dab0e12b14f17b4ecd9b779a8b1ab0eaaa555f67c4af6bdb59ac242c` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
 
 | Mã | Đã làm | Bằng chứng | Còn CX |
 |---|---|---|---|
@@ -445,7 +467,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `d450f0d9efe3fbb1c97e35f31a7f77eae7cd3e7e74308ef6a86e1b7c4afcc568` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `1f8a4d26dab0e12b14f17b4ecd9b779a8b1ab0eaaa555f67c4af6bdb59ac242c` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
