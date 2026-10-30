@@ -1,10 +1,24 @@
 # Bi gầm VinFast EC Van — Phiếu duyệt V1.8
 
-## Bản hiện hành — 24/10/2026
+## Bản hiện hành 30/10/2026 (thay mọi mục "hiện hành" bên dưới)
 
 | Trường | Giá trị |
 |---|---|
-| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `c375fa9848ab45c97ba52fa68da60ac0f451d35ad5b068441d520255553e3209` |
+| Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
+| SHA-256 index.html | `587996cec1ecaec848b9b963cc27e1892346471e9b0928052ee07ef76767a2eb` |
+| Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
+| lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
+| Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng EC Van |
+| Danh bạ | Bộ tìm "88 cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 21); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
+| Còn CX — người đóng | Phạm vi đời/phiên bản xe (Kỹ thuật); chuẩn dịch vụ theo nhóm cơ sở, tập 88 vs 91 danh bạ, liên hệ lệch danh bạ (Operations); UI mobile/tablet + lead–CRM (IT); map URL/OG production (SEO/IT) |
+
+Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
+
+## Lịch sử — đã thay bằng mục "Bản hiện hành 30/10/2026" ở đầu file — 24/10/2026
+
+| Trường | Giá trị |
+|---|---|
+| Bản duyệt | `auto365/bi-gam/vinfast/ec-van/index.html` — SHA-256 `587996cec1ecaec848b9b963cc27e1892346471e9b0928052ee07ef76767a2eb` |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/ec-van/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/ec-van |
 | Dựng từ | Khung trang Fadil (bản 23/10/2026), dựng ngày 24/10/2026 |
@@ -66,7 +80,7 @@ Anh Nguyễn Quang Đạo đã kiểm tra lại và xác nhận cả 17 mẫu (l
 - **Test lead API 26/10/2026:** POST https://auto365.vn/api/leads (gửi từ trang VF6 live vì trang EC Van chưa đăng), service "Bi gầm VinFast EC Van", nhu cầu "Đèn – Bi gầm" → 200 `{"success":true,"lead_id":"260","test":true}`. Cần xoá lead #260 khỏi CRM. Chưa test form trên trang EC Van thật (chờ IT đăng).
 
 
-## Bản hiện hành V1.9 — 27/10/2026
+## Lịch sử — đã thay bằng mục "Bản hiện hành 30/10/2026" ở đầu file V1.9 — 27/10/2026
 
 Sửa theo audit V1.9 R2 (27/10/2026). Điểm 96,x là tự chấm V1.8 (lịch sử); kết quả V1.9 chờ sếp tái chấm.
 
@@ -97,7 +111,7 @@ Trước production vẫn còn: thay ảnh AI, map URL (Lux /lux-sa2-0, link v2)
 - Khối nội bộ không còn ghi "đạt V1.8" như kết quả hiện hành; lastReviewed giữ 2026-10-26, dateModified 2026-10-28.
 - Còn mở: bảng phạm vi đời/phiên bản xe (chờ kỹ thuật), chuẩn dịch vụ theo nhóm cơ sở (Operations), thay ảnh AI, map URL, test lead–CRM trên chính trang.
 
-## Bản hiện hành 29/10/2026 (thay mục 28/10 ở các điểm sau)
+## Lịch sử — đã thay bằng mục "Bản hiện hành 30/10/2026" ở đầu file 29/10/2026 (thay mục 28/10 ở các điểm sau)
 
 - Danh sách 88 cơ sở trong HTML: theo quyết định của chủ trang 28/10, khối dự phòng giữ trong DOM nhưng ẩn (div.vf3lp-bf-ssr, display:none); không có details/summary. Mục "mở qua details/summary" ở trên là lịch sử.
 - Thẻ giải thích phạm vi danh sách tra cứu: đã gỡ theo yêu cầu chủ trang. Bộ tìm ghi "88 cơ sở trong danh bạ · 33 tỉnh thành"; khối quyền lợi giữ "90+ chi nhánh" là quy mô hệ thống (chờ Operations xác nhận phạm vi).
