@@ -5,9 +5,13 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Sửa 30/10/2026 — khối Hồ sơ thi công
+
+Chủ trang góp ý chữ "auto365" lặp nhiều trên site 3m.365group. Đổi sapo thành "Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam. Bấm vào xe để xem bài thi công chi tiết…"; 5 nút "Xem trên auto365.vn ↗" → "Xem bài thi công ↗" (link giữ nguyên). dateModified 30/10; lastReviewed giữ 29/10. Ảnh QA trong qa/ chụp bản trước (khác chữ khối này, bố cục không đổi).
+
 ## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
 
-Build đối chiếu: commit `237821c5`, HTML SHA-256 `f71659fd89df9b0f8033882983bfa6252af4154f6dca7faa74cde62caa9ec3e9` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
 
 | Mã | Đã làm | Bằng chứng | Còn CX |
 |---|---|---|---|
@@ -400,7 +404,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `f71659fd89df9b0f8033882983bfa6252af4154f6dca7faa74cde62caa9ec3e9` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 

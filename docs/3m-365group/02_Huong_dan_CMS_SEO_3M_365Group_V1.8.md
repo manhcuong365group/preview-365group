@@ -1,10 +1,10 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365 Group) — chuẩn V1.9
 
-- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `f71659fd89df9b0f8033882983bfa6252af4154f6dca7faa74cde62caa9ec3e9` (cùng phiên bản với 01 và 03)
-- Bản hiện hành: **29/10/2026** (dateModified 2026-10-29, lastReviewed 2026-10-29). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1` (cùng phiên bản với 01 và 03)
+- Bản hiện hành: **30/10/2026** (sửa chữ khối Hồ sơ thi công) (dateModified 2026-10-30, lastReviewed 2026-10-29). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
 - **Người nhập CMS chỉ dùng Phần A.** Phần B là lịch sử các vòng vá, không dùng làm đầu vào.
 
-# Phần A — Đặc tả hiện hành V1.9 (bản 29/10/2026)
+# Phần A — Đặc tả hiện hành V1.9 (bản 30/10/2026)
 
 ## A1. Trang và vai trò
 
@@ -35,7 +35,7 @@ H1: Phim cách nhiệt 3M. H2 theo thứ tự:
 4. Thông số kỹ thuật các mã phim 3M (`#thong-so`) — bảng HTML 12 mã
 5. Chứng nhận từ 3M (`#chung-nhan`)
 6. Hệ thống đại lý 3M toàn quốc (`#dai-ly`)
-7. Hồ sơ thi công tham khảo (`#xe-thuc-te`) — 5 case
+7. Hồ sơ thi công tham khảo (`#xe-thuc-te`) — 5 case, link "Xem bài thi công ↗" mở bài trên auto365.vn ở tab mới
 8. Vì sao 365 Group - 3M Authorized Distributor in Vietnam chọn phân phối phim 3M™
 9. Tài liệu và hỗ trợ (`#tai-lieu`)
 10. Chăm sóc phim sau khi dán
@@ -80,7 +80,7 @@ Nhóm xe: Minicar / Sedan / SUV (không dùng "SUV-MPV"). Bảo hành 10 năm c�
 
 ## A5. Schema (một `@graph`)
 
-Organization, Brand, FAQPage (**6 câu**, khớp FAQ hiển thị), DefinedTermSet (TSER/VLT/UVR/Glare R/IRR, điều kiện đo như A4), WebSite, BreadcrumbList, WebPage (dateModified 2026-10-29, lastReviewed 2026-10-29, reviewedBy Đặng Minh Hoàng), ItemList 6 Product + AggregateOffer (VND, ghi "đã gồm công thi công và VAT").
+Organization, Brand, FAQPage (**6 câu**, khớp FAQ hiển thị), DefinedTermSet (TSER/VLT/UVR/Glare R/IRR, điều kiện đo như A4), WebSite, BreadcrumbList, WebPage (dateModified 2026-10-30, lastReviewed 2026-10-29, reviewedBy Đặng Minh Hoàng), ItemList 6 Product + AggregateOffer (VND, ghi "đã gồm công thi công và VAT").
 
 ## A6. Giao diện và tương tác
 

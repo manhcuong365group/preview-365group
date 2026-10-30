@@ -1,7 +1,7 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `f71659fd89df9b0f8033882983bfa6252af4154f6dca7faa74cde62caa9ec3e9`
-Ngày xuất: 29/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1`
+Ngày xuất: 30/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
 3 dòng công nghệ · 6 cấu hình dán trọn xe
@@ -128,7 +128,7 @@ Các đại lý ủy quyền 3M trên toàn quốc.
 Chọn khu vực để mở danh sách đại lý, địa chỉ và thông tin liên hệ trên website 365 Group - 3M Authorized Distributor in Vietnam.
 
 ## Hồ sơ thi công tham khảo  `#xe-thuc-te`
-Bài thi công đã đăng trên auto365.vn – đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam, mở ở trang mới. Cấu hình Ceramic IR chưa có bài thi công.
+Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam. Bấm vào xe để xem bài thi công chi tiết. Cấu hình Ceramic IR chưa có bài thi công.
 
 ### Hyundai Accent 2025
 
@@ -214,7 +214,7 @@ Bài viết do 365 Group - 3M Authorized Distributor in Vietnam – nhà phân p
 - Email: kinhdoanh@365group.com.vn
 - Văn phòng: Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh
 - Website nhà phân phối: 3m.365group.com.vn
-- Cập nhật lần cuối: 29/10/2026
+- Cập nhật lần cuối: 30/10/2026
 
 ## Ảnh và ALT
 
