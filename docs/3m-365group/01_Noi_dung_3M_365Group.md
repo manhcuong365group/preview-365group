@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `e42b98d348a496d7008a0b1dc595de730c4cdb007d63362c49ea75e0b28252e5`
 Ngày xuất: 30/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -128,7 +128,7 @@ Các đại lý ủy quyền 3M trên toàn quốc.
 Chọn khu vực để mở danh sách đại lý, địa chỉ và thông tin liên hệ trên website 365 Group - 3M Authorized Distributor in Vietnam.
 
 ## Hồ sơ thi công tham khảo  `#xe-thuc-te`
-Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam. Bấm vào xe để xem bài thi công chi tiết. Cấu hình Ceramic IR chưa có bài thi công.
+Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam. Bấm vào xe để xem bài thi công chi tiết.
 
 ### Hyundai Accent 2025
 
@@ -139,6 +139,8 @@ Một số xe đã dán phim 3M tại đại lý trong hệ thống 365 Group - 
 ### VinFast VF8
 
 ### Volvo XC90
+
+### Nissan Almera
 
 ## Vì sao 365 Group - 3M Authorized Distributor in Vietnam chọn phân phối phim 3M™
 Những điểm chính theo thông tin từ trang Cá nhân hóa ô tô của 3M Việt Nam
@@ -240,6 +242,7 @@ Bài viết do 365 Group - 3M Authorized Distributor in Vietnam – nhà phân p
 - hinh/case-ford-everest.webp — Ford Everest dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365
 - hinh/case-vinfast-vf8.webp — VinFast VF8 dán phim cách nhiệt 3M Hybrid PRO tại Auto365
 - hinh/case-volvo-xc90.webp — Volvo XC90 dán phim cách nhiệt 3M CR BLK PRO tại Auto365
+- hinh/case-nissan-almera-ir.webp — Nissan Almera dán phim 3M Ceramic IR tại 3M Pro Shop
 - hinh/logo-bao-thanhnien.webp — Logo Thanh Niên
 - hinh/logo-bao-kinhtevadoisong.webp — Logo Kinh tế & Đời sống
 - hinh/logo-bao-genk.webp — Logo GenK

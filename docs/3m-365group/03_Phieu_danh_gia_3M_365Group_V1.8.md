@@ -10,19 +10,23 @@
 | Mục | Max | Reviewer R7 | Tự chấm 30/10 | Căn cứ |
 |---|---|---|---|---|
 | C1 | 10 | 9 | 9,5 | Nguồn/điều kiện đo anh Hoàng xác nhận 29/10; IRR tách riêng; bảng nguồn A4 |
-| C2 | 10 | 9 | 9 | Không đổi |
+| C2 | 10 | 9 | 9,5 | Đủ case cho cả 6 cấu hình (thêm Ceramic IR) |
 | C3 | 10 | 9,5 | 9,5 | Khối Hồ sơ thi công bớt lặp "auto365" |
 | S1 | 10 | 9,5 | 9,5 | Không đổi |
 | S2 | 10 | 9 | 9,5 | Metadata/schema/ngày đồng bộ; heading khớp 02 |
 | S3 | 10 | CX | 9,5 | link-audit.csv: 79 URL 200/OK; canonical/og production 404 (chưa deploy, không trừ trên preview) |
 | G1 | 10 | 9 | 9,5 | FAQ 6 câu, dữ kiện chọn rõ |
 | G2 | 10 | 9 | 9,5 | Giới hạn TSER/IRR đầy đủ |
-| G3 | 5 | 4 | 4,7 | Bảng nguồn hiện hành; còn thiếu bản chụp giấy chứng nhận phân phối, case IR |
+| G3 | 5 | 4 | 5 | Bảng nguồn hiện hành; giấy chứng nhận nhà phân phối đã hiển thị ở khối Chứng nhận; case Ceramic IR thật (Nissan Almera, bài auto365.vn) |
 | U1 | 5 | CX | 4,8 | qa/ 10 ảnh + log 5 khổ; thiết bị thật OK theo chủ trang |
 | U2 | 5 | CX | 4,7 | Popup chọn sẵn gói; lead/tracking chủ trang báo nghiệm thu, chưa có log trong hồ sơ |
 | U3 | 5 | 3,5 | 4,9 | 02 Phần A/B, 01/02/03 cùng SHA tính lại |
 
-**Tổng tự chấm: C 28,0 · S 28,5 · G 23,7 · U 14,4 → 94,6/100.** SEO 28,5 = ngưỡng; GEO 23,7 < 23,75 (thiếu 0,05); tổng < 95 (thiếu 0,4). Điểm chính thức do reviewer chấm.
+**Tổng tự chấm (cập nhật sau khi thêm case IR): C 28,5 · S 28,5 · G 24,0 · U 14,4 → 95,4/100** — qua 3 ngưỡng (SEO 28,5; GEO ≥ 23,75; tổng ≥ 95), sát ngưỡng SEO. Điểm chính thức do reviewer chấm.
+
+## Sửa 30/10/2026 — thêm case Ceramic IR
+
+Thêm thẻ thứ 6: Nissan Almera – Ceramic IR, ảnh từ mục "Hình ảnh thi công 3M Ceramic IR" của bài đã đăng https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-ir (chủ trang cung cấp), resize 640×400 → `hinh/case-nissan-almera-ir.webp`. Bỏ câu "Cấu hình Ceramic IR chưa có bài thi công". Lưới 6 cột desktop. Kiểm 1280 px + 375 px không tràn.
 
 ## Sửa 30/10/2026 — khối Hồ sơ thi công
 
@@ -30,7 +34,7 @@ Chủ trang góp ý chữ "auto365" lặp nhiều trên site 3m.365group. Đổi
 
 ## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
 
-Build đối chiếu: commit `237821c5`, HTML SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `e42b98d348a496d7008a0b1dc595de730c4cdb007d63362c49ea75e0b28252e5` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
 
 | Mã | Đã làm | Bằng chứng | Còn CX |
 |---|---|---|---|
@@ -423,7 +427,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `336382cbc11f665968a45e4e74b04a7319c847ff4cb31529cfd4e379081451e1` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `e42b98d348a496d7008a0b1dc595de730c4cdb007d63362c49ea75e0b28252e5` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
