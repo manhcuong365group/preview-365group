@@ -356,7 +356,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-cta2 b{display:block;font-size:19px;font-weight:600;margin-bottom:2px}.h3m-cta2 span{font-size:14px;opacity:.85}
 .h3m-cta2__b{display:flex;align-items:center;gap:16px;flex-shrink:0}.h3m-cta2__b a{color:#fff;font-size:14px;text-decoration:none;white-space:nowrap}.h3m-cta2__b a:hover{text-decoration:underline}
 @media (max-width:760px){.h3m-cta2{flex-direction:column;align-items:stretch;padding:18px 16px}.h3m-cta2__b{flex-wrap:wrap;justify-content:center}.h3m-cta2__b .h3m-btn{flex:1 1 100%;justify-content:center}}
-.h3m-press .h3m-mq .h3m-pl{display:grid!important;width:100%;transform:none!important;transition:none}
+.h3m-press .h3m-mq .h3m-pl{display:grid!important;width:100%}
 .h3m-press .h3m-mq .h3m-pl li{grid-area:1/1;opacity:0;visibility:hidden;transition:opacity .6s,visibility .6s}
 .h3m-press .h3m-mq .h3m-pl li.is-on{opacity:1;visibility:visible}
 .h3m-press .h3m-mq .h3m-pl a{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:center}
@@ -377,6 +377,11 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-press .h3m-mq .h3m-pl b{font-size:16px;-webkit-line-clamp:2}.h3m-press .h3m-mq .h3m-pl a>span:after{content:none}
 @media (max-width:900px){.h3m-press .h3m-mq .h3m-pl{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:640px){.h3m-press .h3m-mq .h3m-pl{grid-template-columns:minmax(0,1fr)}}
+.h3m-press .h3m-mq{overflow:hidden;-webkit-mask:linear-gradient(90deg,#000 calc(100% - 60px),transparent);mask:linear-gradient(90deg,#000 calc(100% - 60px),transparent)}
+.h3m-press .h3m-mq .h3m-pl{display:flex!important;width:max-content;gap:16px;opacity:1!important}
+.h3m-press .h3m-mq .h3m-pl li,.h3m-press .h3m-mq .h3m-pl li.is-off{display:block;flex:0 0 280px;width:280px;order:0!important}
+.h3m-pdots{display:none}
+@media (max-width:640px){.h3m-press .h3m-mq .h3m-pl li,.h3m-press .h3m-mq .h3m-pl li.is-off{flex-basis:260px;width:260px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -769,27 +774,22 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
  moreC.addEventListener('click',function(){shown+=STEP;applyCases()});applyCases();
  var rzT,rzW=innerWidth;addEventListener('resize',function(){clearTimeout(rzT);rzT=setTimeout(function(){if(innerWidth===rzW)return;rzW=innerWidth;var st=matchMedia('(max-width:640px)').matches?6:12;shown=Math.max(st,Math.ceil(shown/STEP)*st);STEP=st;applyCases()},150)});
- // Báo chí: lưới 3 bài (mobile 1 bài), mỗi 4 giây dịch thêm 1 bài
- var pl=document.querySelector('.h3m-pl'),pLi=[].slice.call(pl.querySelectorAll('li')),pN=pLi.length,pP=0,pT,mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
- pLi.forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
+ // Báo chí: dải nhiều thẻ, mỗi 3,5 giây trượt sang 1 bài (nhân đôi danh sách để quay vòng)
+ var pl=document.querySelector('.h3m-pl'),mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ pl.querySelectorAll('li').forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
+ var pN=pl.children.length;[].slice.call(pl.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute('aria-hidden','true');c.querySelector('a').tabIndex=-1;pl.appendChild(c)});
  document.querySelector('[data-more=press]').hidden=true;
- function pSize(){return innerWidth<=640?1:innerWidth<=900?2:3}
- function pPages(){return pN}
- var pDots=document.createElement('div');pDots.className='h3m-pdots';mq.appendChild(pDots);var pCnt=document.querySelector('.h3m-pnav__n');
- function pDraw(){var k=pSize(),show={};for(var i=0;i<k;i++)show[(pP+i)%pN]=i+1;
-  pLi.forEach(function(li,j){li.classList.toggle('is-off',!show[j]);li.style.order=show[j]||99});
-  var n=pPages();if(pDots.children.length!==n)pDots.innerHTML=Array(n+1).join('<button type="button" aria-label="Bài báo"></button>');
-  [].forEach.call(pDots.children,function(d,j){d.classList.toggle('is-on',j===pP)});if(pCnt)pCnt.textContent=(pP+1)+' / '+n}
- function pGo(p,anim){p=(p+pPages())%pPages();if(!anim||still){pP=p;pDraw();return}
-  pl.classList.add('is-fade');setTimeout(function(){pP=p;pDraw();pl.classList.remove('is-fade')},300)}
- function pPlay(){clearInterval(pT);if(!still)pT=setInterval(function(){pGo(pP+1,true)},4000)}
+ var pI=0,pT,pCnt=document.querySelector('.h3m-pnav__n');
+ function pStep(){return pl.children[0].getBoundingClientRect().width+16}
+ function pGo(i,anim){pI=i;pl.style.transition=anim?'transform .6s ease':'none';pl.style.transform='translateX('+(-pI*pStep())+'px)';if(pCnt)pCnt.textContent=((pI%pN+pN)%pN+1)+' / '+pN}
+ pl.addEventListener('transitionend',function(){if(pI>=pN)pGo(pI-pN,false)});
+ function pNext(d){if(pI+d<0){pGo(pI+pN,false);pl.offsetWidth}pGo(pI+d,true)}
+ function pPlay(){clearInterval(pT);if(!still)pT=setInterval(function(){pNext(1)},3500)}
  mq.addEventListener('mouseenter',function(){clearInterval(pT)});mq.addEventListener('mouseleave',pPlay);
- document.querySelectorAll('[data-pnav]').forEach(function(b){b.addEventListener('click',function(){pGo(pP+(+b.dataset.pnav),true);pPlay()})});
- pDots.addEventListener('click',function(e){var i=[].indexOf.call(pDots.children,e.target);if(i>-1){pGo(i,true);pPlay()}});
+ document.querySelectorAll('[data-pnav]').forEach(function(b){b.addEventListener('click',function(){pNext(+b.dataset.pnav);pPlay()})});
  var pX;mq.addEventListener('touchstart',function(e){pX=e.touches[0].clientX;clearInterval(pT)},{passive:true});
- mq.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-pX;if(Math.abs(dx)>40)pGo(pP+(dx<0?1:-1),true);pPlay()});
- var pW=innerWidth;addEventListener('resize',function(){if(innerWidth===pW)return;pW=innerWidth;pP=Math.min(pP,pPages()-1);pDraw()});
- pDraw();pPlay();
+ mq.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-pX;if(Math.abs(dx)>40)pNext(dx<0?1:-1);pPlay()});
+ addEventListener('resize',function(){pGo(pI,false)});pGo(0,false);pPlay();
 
  // Lead form: chỉ báo thành công khi API trả {"success": true}
  function bindLead(f){
