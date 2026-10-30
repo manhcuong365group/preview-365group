@@ -5,6 +5,18 @@
 - Loại trang: trang sản phẩm/danh mục phim cách nhiệt 3M, giọng nhà phân phối. Tiêu chuẩn hiện hành: V1.9 (R5); các lần tự chấm cũ bên dưới theo V1.8, thang /100. Chấm trên preview.
 - Ngưỡng ĐẠT: tổng ≥ 95; SEO ≥ 28,5/30; GEO ≥ 23,75/25.
 
+## Tái kiểm R7 / V1.9 (reviewer 29/10/2026) — xử lý 30/10/2026
+
+Kết quả R7 của reviewer: điểm phần đã chấm **71,5/80** — bảy mục giữ từ R6 64/70; thêm G3 4/5, U3 3,5/5. S3, U1, U2 còn CX (nghiệm thu độc lập chưa tái lập). Trải nghiệm thương hiệu desktop 8,9/10. **Chưa ký ĐẠT V1.9**, chưa xác nhận sẵn sàng production. Reviewer giữ hướng giao diện; không giao lại CTA đại lý, selector chăm sóc, log duyệt, rút gọn tên dài; không bắt buộc case IR hay hồ sơ anh Hoàng trên domain 3M.
+
+| Mục R7 | Việc | Kết quả |
+|---|---|---|
+| 3.1–3.2 File 02 trộn chỉ dẫn cũ | Viết lại 02: **Phần A — Đặc tả hiện hành V1.9 (bản 29/10)** gồm vai trò/URL, metadata, 12 H2 xuất từ bản chạy, bảng 12 mã + điều kiện đo tách IRR, 6 cấu hình + giá đã gồm công/VAT, nhóm xe Minicar/Sedan/SUV, schema (FAQPage 6 câu, lastReviewed/dateModified 29/10), giao diện theo từng khối/breakpoint, form lead + trạng thái nghiệm thu, tài nguyên, việc trước production. Các mục cũ chuyển xuống **Phần B — Lịch sử (không dùng nhập CMS)**, ghi rõ Phần A thắng khi mâu thuẫn | Xong |
+| 3.3 Nhãn ngày | 01 "Ngày xuất 29/10/2026"; bảng đối chiếu phiên bản cuối 03 sửa 29/10 | Xong |
+| 7.2 Trộn tự chấm | Bảng tự chấm đổi nhãn "Tham khảo — KHÔNG phải kết quả reviewer"; bỏ mục tiêu "reviewer nâng điểm" | Xong |
+| Khối nội bộ trang | Trạng thái cập nhật R7 71,5/80 | Xong |
+| Còn mở | Route production 404 + bỏ khối nội bộ khỏi HTML; nghiệm thu lead/tracking; ảnh/log QA + thiết bị thật | Cường/SEO, IT, QA |
+
 ## Tái kiểm R6 / V1.9 (reviewer 28/10/2026) — xử lý 29/10/2026
 
 Kết quả R6 của reviewer: điểm phần đã chấm **64/70** (C1 9 · C2 9 · C3 9,5 · S1 9,5 · S2 9 · G1 9 · G2 9), tăng từ 62,5/70. Trải nghiệm thương hiệu desktop 8,9/10. S3, G3, U1, U2, U3 còn CX. **Chưa ký ĐẠT V1.9**, chưa xác nhận sẵn sàng production. Reviewer đóng 3 lỗi R5 (gộp IRR, cuộn ngang phần chăm sóc, CTA 3 nhóm đại lý); N6 chuyển từ CHƯA ĐẠT sang CX về hồ sơ.
@@ -31,7 +43,7 @@ Kết quả R6 của reviewer: điểm phần đã chấm **64/70** (C1 9 · C2 
 
 Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web Vitals, gửi lead thật.
 
-### Tự chấm 5 mục CX (Claude, 29/10/2026, trên preview — không thay chấm reviewer)
+### Tham khảo — team tự chấm 5 mục CX (29/10/2026, KHÔNG phải kết quả reviewer)
 
 | Mục | Max | Tự chấm | Căn cứ / còn thiếu |
 |---|---|---|---|
@@ -41,7 +53,7 @@ Chưa kiểm: bàn phím ảo trên thiết bị thật, hiệu năng/Core Web V
 | U2 | 5 | 4,7 | Bấm vào bất kỳ đâu trên thẻ gói mở form chọn sẵn cấu hình; tìm đại lý 3 nhóm. Còn: /api/leads chưa được IT nghiệm thu |
 | U3 | 5 | 5,0 | 01–03 cùng SHA |
 
-**Tổng ước tính: 64 (reviewer R6) + 29,0 (tự chấm) = 93,0/100 — CHƯA ĐẠT.** SEO 28,3 < 28,5; GEO 22,7 < 23,75. Muốn đạt cần thêm: case thi công Ceramic IR đã đăng (G3, C2), hồ sơ anh Hoàng trên site 365Group (G3), và reviewer nâng S1/S2/G1/G2.
+Phép cộng 64 (reviewer) + 29 (team tự chấm) = 93 chỉ để tham khảo nội bộ, không dùng làm điểm nghiệm thu. Không thêm bài/case/trang hồ sơ chỉ để đủ điểm.
 
 ### Không làm (giữ theo chủ trang)
 
@@ -367,8 +379,8 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `44876c8a9099cc040205616750c201257f792d80fe1d92bb8601a0bf5003cdd6` |
-| 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 22/10/2026 |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `38c0f73f04f276d9c202258fcd27905c2ac005e6b89017a95d84481141725758` |
+| 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
 Điểm là nhận định biên tập, không phải điểm Google hay xác suất AI đề xuất.
