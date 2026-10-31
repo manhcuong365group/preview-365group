@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `d8f4a911a0d85fa5c8e9a5b582823e10af0aed17e3c96c2ce09e6e001bbfda98` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `a87d48b2355a39f9a5a17875e7cfbe525b790cf417436c9d7f47a4c2977a749e` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
