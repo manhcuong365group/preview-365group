@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `d6907ba5c7c06595106a99c0a47f0061519050fd105be153d330853788d5c86c` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `79b019c758d70555f17323a2b04410ecc75a0a1d95cdd311d5b5601a1f008109` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -121,3 +121,5 @@ Cập nhật 31/10/2026 (chủ trang yêu cầu): bỏ nhãn góc ảnh trên th
 Cập nhật 31/10/2026 (chủ trang gửi ảnh): 4 thẻ 3M PPF 50/100/150/200 Gloss đổi ảnh sang banner Auto365 mới (hinh/3m-ppf-{50,100,150,200}-gloss-auto365.webp, 628×628). Ảnh minh họa sản phẩm, không dùng làm bằng chứng thi công. Khi tích hợp production cần upload 4 ảnh lên auto365.vn và đổi đường dẫn.
 
 Cập nhật 31/10/2026 (chủ trang: chữ trên ảnh nhiều quá): khối Hình ảnh thi công ẩn chú thích trên ảnh, chỉ hiện khi rê chuột (desktop), mobile không hiện; tên xe + dòng phim vẫn nằm trong alt từng ảnh.
+
+Cập nhật 31/10/2026 (chủ trang đồng ý): khối Hình ảnh thi công dời xuống ngay sau Quy trình; nền các khối đổi lại cho xen kẽ trắng/xám (Video trắng, Vì sao xám, Quy trình trắng, Hình ảnh xám).

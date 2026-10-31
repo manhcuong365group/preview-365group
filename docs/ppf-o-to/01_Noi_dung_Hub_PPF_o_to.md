@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `d6907ba5c7c06595106a99c0a47f0061519050fd105be153d330853788d5c86c`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `79b019c758d70555f17323a2b04410ecc75a0a1d95cdd311d5b5601a1f008109`
 Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -122,10 +122,6 @@ Mỗi xe đều ghi rõ dòng phim, vị trí dán và hình ảnh thực tế s
 - Auto365 thi công dán PPF Mazda 3 dòng X Series — https://auto365.vn/auto-365-thi-cong-dan-ppf-mazda-3-dong-x-series
 - Bảng giá thi công dán PPF cho xe VinFast VF3 — https://auto365.vn/bang-gia-thi-cong-dan-ppf-cho-xe-vinfast-vf3
 
-## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
-
-Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.
-
 ## Video thực tế  `#video`
 
 Quy trình xử lý bề mặt, dán PPF và đánh giá sau khi dán.
@@ -174,6 +170,10 @@ Chứng nhận gắn với đơn vị và địa điểm ghi trên từng tài l
 4. 4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để loại bỏ dung dịch, không khí
 5. 5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và chi tiết phức tạp để phim đẹp và bám lâu
 6. 6Kiểm tra, bàn giao & hướng dẫnKiểm tra tổng thể bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, thời gian ổn định phim và chính sách bảo hành
+
+## Hình ảnh thi công PPF tại Auto365  `#hinh-anh`
+
+Ảnh chụp tại Trụ Sở Chính Auto365. Bấm vào ảnh để xem bài đầy đủ.
 
 ## Auto365.vn - Trụ Sở Chính  `#he-thong`
 
