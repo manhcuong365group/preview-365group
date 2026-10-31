@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `585ce420ced56be79ea9b5f1e4889b0f4cddbfc656f0f4b30f35ee85e48780c7` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `f3a088e49f419c2ae84ce183a2640ead24f4b0fc6c5e4994ebf9d29e8b738a6f` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -284,3 +284,5 @@ Cập nhật 30/10/2026 — mobile (≤760px) khối Hệ thống theo productio
 | **Tổng** | **87,3** | **≈ 97,4** | Ngưỡng 95; SEO ≥ 28,5; GEO ≥ 23,75 |
 
 Điểm tự chấm, không thay điểm reviewer. Phiếu U3 pk56 chốt PASS, không gán tổng. Sau nghiệm thu, trang đổi khối Hệ thống (giao diện + bộ chọn tỉnh) nên SHA khác bản pk56 (`a52390cd…`); nội dung khách đọc khác pk56 chỉ ở khối Hệ thống.
+
+Cập nhật 31/10/2026 (chủ trang yêu cầu): bỏ nhãn góc ảnh trên thẻ phim (Chi phí dễ tiếp cận, Bảo hành 5/7/10 năm, Độ dày 9.0 mil, Vân carbon); dải VER 2 giữ. dateModified 2026-10-31, lastReviewed giữ 2026-10-30.
