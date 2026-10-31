@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `f3a088e49f419c2ae84ce183a2640ead24f4b0fc6c5e4994ebf9d29e8b738a6f` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `d8f4a911a0d85fa5c8e9a5b582823e10af0aed17e3c96c2ce09e6e001bbfda98` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -117,3 +117,5 @@ Cập nhật 30/10/2026 — mobile (≤760px) khối Hệ thống theo productio
 Cập nhật 30/10/2026: thẻ U3 trong khối "Kiểm tra nội bộ" rút còn 1 dòng (ĐÃ DUYỆT – ĐÓNG U3 V1.9 · Ngọc Trân – SEO · link phiếu 04), chi tiết giữ trong phiếu 04.
 
 Cập nhật 31/10/2026 (chủ trang yêu cầu): bỏ nhãn góc ảnh trên thẻ phim (Chi phí dễ tiếp cận, Bảo hành 5/7/10 năm, Độ dày 9.0 mil, Vân carbon); dải VER 2 giữ. dateModified 2026-10-31, lastReviewed giữ 2026-10-30.
+
+Cập nhật 31/10/2026 (chủ trang gửi ảnh): 4 thẻ 3M PPF 50/100/150/200 Gloss đổi ảnh sang banner Auto365 mới (hinh/3m-ppf-{50,100,150,200}-gloss-auto365.webp, 628×628). Ảnh minh họa sản phẩm, không dùng làm bằng chứng thi công. Khi tích hợp production cần upload 4 ảnh lên auto365.vn và đổi đường dẫn.

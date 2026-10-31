@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `f3a088e49f419c2ae84ce183a2640ead24f4b0fc6c5e4994ebf9d29e8b738a6f` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `d8f4a911a0d85fa5c8e9a5b582823e10af0aed17e3c96c2ce09e6e001bbfda98` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -288,3 +288,5 @@ Cập nhật 30/10/2026 — mobile (≤760px) khối Hệ thống theo productio
 Cập nhật 31/10/2026 (chủ trang yêu cầu): bỏ nhãn góc ảnh trên thẻ phim (Chi phí dễ tiếp cận, Bảo hành 5/7/10 năm, Độ dày 9.0 mil, Vân carbon); dải VER 2 giữ. dateModified 2026-10-31, lastReviewed giữ 2026-10-30.
 
 Tự chấm 31/10/2026 (sau bỏ nhãn góc ảnh thẻ phim): giữ ≈ 97,4/100 — C 29,5 · SEO 29,1 · GEO 24,3 · U1 4,8 · U2 4,9 · U3 4,8. Nhãn bỏ chỉ lặp thông tin đã có trong dòng thông số từng thẻ (độ dày, bề mặt, bảo hành), không mất dữ kiện; dải VER 2 giữ theo chủ trang.
+
+Cập nhật 31/10/2026 (chủ trang gửi ảnh): 4 thẻ 3M PPF 50/100/150/200 Gloss đổi ảnh sang banner Auto365 mới (hinh/3m-ppf-{50,100,150,200}-gloss-auto365.webp, 628×628). Ảnh minh họa sản phẩm, không dùng làm bằng chứng thi công. Khi tích hợp production cần upload 4 ảnh lên auto365.vn và đổi đường dẫn.
