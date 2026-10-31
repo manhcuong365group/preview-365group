@@ -416,12 +416,16 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .pm-quick__out{display:grid;gap:4px;padding:16px 18px;border-radius:var(--pm-rad);background:var(--pm-bg)}
 .pm-quick__out span{font-size:13px;color:var(--pm-m)}.pm-quick__out b{font-size:28px;font-weight:600;color:var(--pm-k);transition:color .25s}.pm-quick__out b.is-flash{color:var(--pm-r)}
 .pm-quick__out small{font-size:12px;color:var(--pm-m)}.pm-quick__out .pm-btn{margin-top:8px;width:100%}
+/* dải báo chí ngắn */
+.pm-sec.pm-pstrip{padding:16px 0 0}.pm-pstrip+.pm-sec{padding-top:36px!important}.pm-pstrip__in{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:14px 18px;border-radius:var(--pm-rad);background:var(--pm-bg);text-decoration:none;color:var(--pm-t)}
+.pm-pstrip__in b{font-size:14px;color:var(--pm-k)}.pm-pstrip__in span{flex:1;min-width:0;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#8a8f97;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pm-pstrip__in em{font-style:normal;font-size:14px;color:var(--pm-r);font-weight:500}.pm-pstrip__in:hover b{color:var(--pm-r)}
 /* 02 sáu cấu hình */
 .pm-pkbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin:0 0 20px}.pm-pkbar .pm-seg{min-width:min(420px,100%)}
 .pm-pkgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .pm-pk{display:flex;flex-direction:column;border:1px solid var(--pm-l);border-radius:var(--pm-rad);overflow:hidden;background:#fff;transition:box-shadow .2s,transform .2s}
 .pm-pk:hover{box-shadow:0 12px 28px rgba(0,0,0,.08);transform:translateY(-2px)}
-.pm-pk__img{position:relative;aspect-ratio:4/3;background:#e9ebee;overflow:hidden}.pm-pk__img img{width:100%;height:100%;object-fit:cover;object-position:88% center}
+.pm-pk__img{position:relative;aspect-ratio:3/2;background:#e9ebee;overflow:hidden}.pm-pk__img img{width:100%;height:100%;object-fit:cover;object-position:center}
 .pm-pk__badge{position:absolute;left:12px;top:12px;padding:4px 10px;border-radius:999px;background:#fff;color:var(--pm-r);font-size:12px;font-weight:600}
 .pm-pk__b{display:flex;flex-direction:column;gap:8px;padding:18px 20px 20px;flex:1}
 .pm-pk h3{margin:0;font-size:21px;font-weight:600;color:var(--pm-k)}.pm-pk h3 em{font-style:normal;color:var(--pm-r)}
@@ -521,6 +525,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 @media (max-width:1100px){.h3m-quick.pm-quick{grid-template-columns:1fr 1fr}.pm-quick__head{grid-column:1/-1}.pm-certs{grid-template-columns:repeat(2,minmax(0,1fr))}.pm-feat{grid-template-columns:repeat(3,minmax(0,1fr))}.pm-feat a:first-child{grid-row:span 1}.pm-perks{grid-template-columns:1fr}}
 @media (max-width:900px){.pm-pkgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.pm-press,.pm-shop,.pm-proc,.pm-book{grid-template-columns:1fr}.pm-info{position:static}.pm-real{grid-template-columns:1fr}}
 @media (max-width:640px){
+ .pm-pstrip__in span{flex-basis:100%;order:3;white-space:normal}
  .pm-wrap{padding:0 16px}.pm-sec{padding:32px 0}.pm-h2{font-size:23px}.pm-lead{font-size:15px;margin-bottom:16px}
  .h3m-quick.pm-quick{grid-template-columns:1fr;gap:16px;padding:18px 16px}.pm-quick h2{font-size:19px}
  .pm-seg button{font-size:13px;padding:0 2px}.pm-pkbar .pm-seg{min-width:100%}
@@ -608,6 +613,9 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <div class="pm-quick__out" aria-live="polite"><span>Giá trọn xe</span><b id="q-price">Chọn nhóm xe</b><small id="q-desc">Giá hiển thị đã gồm VAT</small><button type="button" class="pm-btn pm-btn--r" id="q-cta" data-open-lead>Nhận tư vấn với lựa chọn này →</button></div>
   </div>
  </div>
+</section>
+<section class="pm-sec pm-pstrip" aria-label="Báo chí đưa tin">
+ <div class="pm-wrap"><a class="pm-pstrip__in" href="#bao-chi"><b>19 bài báo đưa tin về 3M Pro Shop</b><span>Thanh Niên · AutoPro · VietNamNet · Báo Đà Nẵng · VietnamBiz · Báo Đồng Nai · Dân Việt · Sức khỏe & Đời sống</span><em>Xem báo chí ↓</em></a></div>
 </section>
 <section class="pm-sec" id="goi-phim">
  <div class="pm-wrap">
@@ -886,7 +894,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   {id:'ceramic-ir',n:'Ceramic IR',c:'Kính lái IR 50 + sườn/sau IR 25/15',d:'Trọn bộ dòng Ceramic IR cản hồng ngoại, chi phí vừa phải.',p:[7.2,9.0,10.5]},
   {id:'ceramic-hybrid',n:'Ceramic Hybrid',c:'Kính lái NR 35 + sườn/sau NR 25/15/5',d:'Kính lái NR 35, sườn/sau NR 25/15/5 – lai ceramic + reflective, ngân sách vừa.',p:[5.9,7.9,9.5]}
  ];
- var IMG={"cr-blk-pro":["hinh/xe/toyota-land-cruiser-prado-2024-dan-phim-3m-cr-blk-pro-179255.webp","Toyota Land Cruiser dán phim cách nhiệt 3M Crystalline CR BLK Pro tại Auto365"],"cr-blk":["hinh/xe/honda-city-dan-phim-3m-crystalline-cr-blk-1792644817.webp","Honda City dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365"],"crystalline-hybrid-pro":["hinh/xe/auto365vn-dan-phim-cach-nhiet-3m-crystalline-hybrid-pro-cho-.webp","Ford Focus dán phim cách nhiệt 3M Crystalline Hybrid Pro tại Auto365"],"crystalline-hybrid":["hinh/xe/mazda-cx30-dan-phim-cach-nhiet-3m-crystalline-hybrid-1792830.webp","Mazda CX-30 dán phim cách nhiệt 3M Crystalline Hybrid tại Auto365"],"ceramic-ir":["hinh/xe/auto365vn-cac-vi-tri-dan-phim-cach-nhiet-3m-cho-xe-vinfast-v.webp","VinFast VF3 dán phim cách nhiệt 3M Ceramic IR tại Auto365"],"ceramic-hybrid":["hinh/xe/auto365vn-vinfast-vf3-dan-phim-3m-ceramic-hybridjpg-img-6a3b.webp","VinFast VF3 dán phim cách nhiệt 3M Ceramic NR tại Auto365"]};
+ var IMG={"cr-blk-pro":["hinh/goi/cr-blk-pro.webp","Toyota Fortuner dán phim 3M Crystalline CR BLK PRO tại 3M Pro Shop"],"cr-blk":["hinh/goi/cr-blk.webp","Ford Everest dán phim 3M Crystalline CR BLK tại 3M Pro Shop"],"crystalline-hybrid-pro":["hinh/goi/crystalline-hybrid-pro.webp","VinFast VF8 dán phim 3M Crystalline Hybrid PRO tại 3M Pro Shop"],"crystalline-hybrid":["hinh/goi/crystalline-hybrid.webp","Toyota Camry dán phim 3M Crystalline Hybrid tại 3M Pro Shop"],"ceramic-ir":["hinh/goi/ceramic-ir.webp","Showroom 3M Pro Shop – Auto365 Trụ sở chính"],"ceramic-hybrid":["hinh/goi/ceramic-hybrid.webp","Hyundai Accent dán phim 3M Ceramic Hybrid tại 3M Pro Shop"]};
  var GN=['Minicar','Sedan','SUV/MPV'];
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  function byId(id){return PK.filter(function(x){return x.id===id})[0]}
