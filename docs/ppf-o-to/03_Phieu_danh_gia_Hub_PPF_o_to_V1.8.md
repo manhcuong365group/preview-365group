@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `a87d48b2355a39f9a5a17875e7cfbe525b790cf417436c9d7f47a4c2977a749e` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `d6907ba5c7c06595106a99c0a47f0061519050fd105be153d330853788d5c86c` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -290,3 +290,5 @@ Cập nhật 31/10/2026 (chủ trang yêu cầu): bỏ nhãn góc ảnh trên th
 Tự chấm 31/10/2026 (sau bỏ nhãn góc ảnh thẻ phim): giữ ≈ 97,4/100 — C 29,5 · SEO 29,1 · GEO 24,3 · U1 4,8 · U2 4,9 · U3 4,8. Nhãn bỏ chỉ lặp thông tin đã có trong dòng thông số từng thẻ (độ dày, bề mặt, bảo hành), không mất dữ kiện; dải VER 2 giữ theo chủ trang.
 
 Cập nhật 31/10/2026 (chủ trang gửi ảnh): 4 thẻ 3M PPF 50/100/150/200 Gloss đổi ảnh sang banner Auto365 mới (hinh/3m-ppf-{50,100,150,200}-gloss-auto365.webp, 628×628). Ảnh minh họa sản phẩm, không dùng làm bằng chứng thi công. Khi tích hợp production cần upload 4 ảnh lên auto365.vn và đổi đường dẫn.
+
+Cập nhật 31/10/2026 (chủ trang: chữ trên ảnh nhiều quá): khối Hình ảnh thi công ẩn chú thích trên ảnh, chỉ hiện khi rê chuột (desktop), mobile không hiện; tên xe + dòng phim vẫn nằm trong alt từng ảnh.
