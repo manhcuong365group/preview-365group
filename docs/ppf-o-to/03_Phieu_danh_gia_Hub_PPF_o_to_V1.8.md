@@ -286,3 +286,5 @@ Cập nhật 30/10/2026 — mobile (≤760px) khối Hệ thống theo productio
 Điểm tự chấm, không thay điểm reviewer. Phiếu U3 pk56 chốt PASS, không gán tổng. Sau nghiệm thu, trang đổi khối Hệ thống (giao diện + bộ chọn tỉnh) nên SHA khác bản pk56 (`a52390cd…`); nội dung khách đọc khác pk56 chỉ ở khối Hệ thống.
 
 Cập nhật 31/10/2026 (chủ trang yêu cầu): bỏ nhãn góc ảnh trên thẻ phim (Chi phí dễ tiếp cận, Bảo hành 5/7/10 năm, Độ dày 9.0 mil, Vân carbon); dải VER 2 giữ. dateModified 2026-10-31, lastReviewed giữ 2026-10-30.
+
+Tự chấm 31/10/2026 (sau bỏ nhãn góc ảnh thẻ phim): giữ ≈ 97,4/100 — C 29,5 · SEO 29,1 · GEO 24,3 · U1 4,8 · U2 4,9 · U3 4,8. Nhãn bỏ chỉ lặp thông tin đã có trong dòng thông số từng thẻ (độ dày, bề mặt, bảo hành), không mất dữ kiện; dải VER 2 giữ theo chủ trang.
