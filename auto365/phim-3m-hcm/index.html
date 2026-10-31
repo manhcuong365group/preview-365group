@@ -386,6 +386,161 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-sec+.h3m-sec:not(.h3m-sec--gray):not(.h3m-why2){padding-top:12px}
 .h3m-press{padding-top:28px}.h3m-press__more{margin-top:14px}
 @media (max-width:640px){.h3m-sec{padding:26px 0}.h3m-sec+.h3m-sec:not(.h3m-sec--gray):not(.h3m-why2){padding-top:8px}.h3m-h2{margin-bottom:10px}}
+
+/* ===== Premium: các section sau Hero ===== */
+:root{--pm-t:#333;--pm-k:#242424;--pm-r:#D71920;--pm-m:#6b7280;--pm-l:#e6e8eb;--pm-bg:#f6f7f8;--pm-rad:12px}
+.pm-wrap{max-width:1296px;margin:0 auto;padding:0 24px}
+.pm-sec{padding:40px 0;color:var(--pm-t)}.pm-sec+.pm-sec:not(.pm-dark):not(.pm-gray){padding-top:0}
+.pm-gray{background:var(--pm-bg)}.pm-dark{background:var(--pm-k);color:#e9eaec}
+.pm-h2{font-size:30px;line-height:1.25;font-weight:600;letter-spacing:-.3px;margin:0 0 8px;color:var(--pm-k)}.pm-dark .pm-h2{color:#fff}.pm-h2 em{font-style:normal;color:var(--pm-r)}
+.pm-lead{margin:0 0 22px;color:var(--pm-m);font-size:16px;max-width:760px}.pm-dark .pm-lead{color:#b9bcc2}
+.pm-kick{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pm-r);font-weight:600;margin-bottom:8px}
+.pm-btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 20px;border-radius:var(--pm-rad);border:1px solid transparent;font:500 15px/1.2 inherit;text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.pm-btn--r{background:var(--pm-r);color:#fff}.pm-btn--r:hover{background:#b8141a}
+.pm-btn--o{background:transparent;border-color:#cfd3d9;color:var(--pm-k)}.pm-btn--o:hover{border-color:var(--pm-k)}
+.pm-dark .pm-btn--o{border-color:rgba(255,255,255,.35);color:#fff}.pm-dark .pm-btn--o:hover{border-color:#fff}
+.pm-link{color:var(--pm-k);font-weight:500;text-decoration:none;border-bottom:1px solid currentColor}.pm-link:hover{color:var(--pm-r)}
+.pm-note{font-size:13px;color:var(--pm-m);margin:14px 0 0}
+
+/* 01 chọn xe – xem giá */
+.pm-quickwrap{padding-top:24px}
+.h3m-quick.pm-quick{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.5fr) minmax(0,1fr);gap:28px;align-items:center;padding:26px 28px;border-radius:var(--pm-rad);box-shadow:none;border:1px solid var(--pm-l);background:#fff}
+.pm-quick h2{font-size:22px;margin:0 0 6px;color:var(--pm-k);font-weight:600}.pm-quick p{margin:0;color:var(--pm-m);font-size:14px}
+.pm-lbl{display:block;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--pm-m);margin-bottom:8px}
+.pm-ctl{display:grid;gap:14px}
+.pm-seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;border-radius:var(--pm-rad);background:#eef0f2}
+.pm-seg button{min-height:44px;border:0;border-radius:9px;background:transparent;font:500 14px/1.2 inherit;color:#4b5058;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s}
+.pm-seg button small{display:block;font-size:11px;font-weight:400;color:var(--pm-m)}
+.pm-seg button[aria-checked=true]{background:#fff;color:var(--pm-k);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.pm-sel{width:100%;min-height:46px;padding:0 12px;border:1px solid #d4d8de;border-radius:var(--pm-rad);background:#fff;font:15px inherit;color:var(--pm-k)}
+.pm-quick__out{display:grid;gap:4px;padding:16px 18px;border-radius:var(--pm-rad);background:var(--pm-bg)}
+.pm-quick__out span{font-size:13px;color:var(--pm-m)}.pm-quick__out b{font-size:28px;font-weight:600;color:var(--pm-k);transition:color .25s}.pm-quick__out b.is-flash{color:var(--pm-r)}
+.pm-quick__out small{font-size:12px;color:var(--pm-m)}.pm-quick__out .pm-btn{margin-top:8px;width:100%}
+/* dải báo chí ngắn */
+.pm-sec.pm-pstrip{padding:16px 0 0}.pm-pstrip+.pm-sec{padding-top:36px!important}.pm-pstrip__in{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:14px 18px;border-radius:var(--pm-rad);background:var(--pm-bg);text-decoration:none;color:var(--pm-t)}
+.pm-pstrip__in b{font-size:14px;color:var(--pm-k)}.pm-pstrip__in span{flex:1;min-width:0;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#8a8f97;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pm-pstrip__in em{font-style:normal;font-size:14px;color:var(--pm-r);font-weight:500}.pm-pstrip__in:hover b{color:var(--pm-r)}
+/* 02 sáu cấu hình */
+.pm-pkbar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin:0 0 20px}.pm-pkbar .pm-seg{min-width:min(420px,100%)}
+.pm-pkgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.pm-pk{display:flex;flex-direction:column;border:1px solid var(--pm-l);border-radius:var(--pm-rad);overflow:hidden;background:#fff;transition:box-shadow .2s,transform .2s}
+.pm-pk:hover{box-shadow:0 12px 28px rgba(0,0,0,.08);transform:translateY(-2px)}
+.pm-pk__img{position:relative;aspect-ratio:3/2;background:#e9ebee;overflow:hidden}.pm-pk__img img{width:100%;height:100%;object-fit:cover;object-position:center}
+.pm-pk__badge{position:absolute;left:12px;top:12px;padding:4px 10px;border-radius:999px;background:#fff;color:var(--pm-r);font-size:12px;font-weight:600}
+.pm-pk__b{display:flex;flex-direction:column;gap:8px;padding:18px 20px 20px;flex:1}
+.pm-pk h3{margin:0;font-size:21px;font-weight:600;color:var(--pm-k)}.pm-pk h3 em{font-style:normal;color:var(--pm-r)}
+.pm-pk__combo{margin:0;font-size:13px;color:var(--pm-m)}.pm-pk__need{margin:0;font-size:15px;line-height:1.5}
+.pm-pk__price{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:auto;padding-top:12px;border-top:1px solid var(--pm-l)}
+.pm-pk__price span{font-size:13px;color:var(--pm-m)}.pm-pk__price b{font-size:22px;font-weight:600;color:var(--pm-k);transition:color .25s}.pm-pk__price b.is-flash{color:var(--pm-r)}
+.pm-pk__all summary{cursor:pointer;font-size:13px;color:var(--pm-m);list-style:none}.pm-pk__all summary::-webkit-details-marker{display:none}.pm-pk__all summary:after{content:' ▾'}.pm-pk__all[open] summary:after{content:' ▴'}
+.pm-pk table{width:100%;border-collapse:collapse;margin-top:6px;font-size:14px}.pm-pk td{padding:5px 0;border-top:1px dashed var(--pm-l)}.pm-pk td:last-child{text-align:right;font-weight:500}.pm-pk tr.is-on td{color:var(--pm-r);font-weight:600}
+.pm-pk .pm-btn{width:100%;margin-top:6px}
+.pm-cmp{margin-top:22px;border:1px solid var(--pm-l);border-radius:var(--pm-rad);background:#fff}
+.pm-cmp summary{padding:14px 18px;cursor:pointer;font-weight:500;color:var(--pm-k)}
+.pm-cmp__scroll{overflow-x:auto;padding:0 18px 16px}.pm-cmp table{width:100%;min-width:560px;border-collapse:collapse;font-size:14px}
+.pm-cmp th,.pm-cmp td{padding:10px 12px;text-align:right;border-top:1px solid var(--pm-l)}.pm-cmp th:first-child,.pm-cmp td:first-child{text-align:left}.pm-cmp th{font-size:12px;color:var(--pm-m);font-weight:600;text-transform:uppercase;letter-spacing:.04em}
+.pm-cmp td.is-on,.pm-cmp th.is-on{background:#fdf2f2;color:var(--pm-r)}
+/* 03 quyền lợi */
+.pm-perks{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:24px;align-items:center;padding:22px 26px;border-radius:var(--pm-rad);background:#fff;border:1px solid var(--pm-l)}
+.pm-perks__t b{display:block;font-size:17px;color:var(--pm-k);font-weight:600}.pm-perks__t small{font-size:12px;color:var(--pm-m)}
+.pm-perks ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 0}
+.pm-perks li{font-size:14px;padding:0 14px;border-left:1px solid var(--pm-l);line-height:1.4}.pm-perks li:first-child{border-left:0;padding-left:0}
+/* 04 chứng nhận */
+.pm-certs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.pm-cert{margin:0}.pm-cert button{display:block;width:100%;padding:0;border:0;border-radius:var(--pm-rad);overflow:hidden;background:#fff;cursor:zoom-in;aspect-ratio:5/4}
+.pm-cert img{width:100%;height:100%;object-fit:contain;background:#fff;transition:transform .25s}.pm-cert button:hover img{transform:scale(1.03)}
+.pm-cert figcaption{padding:12px 2px 0;font-size:14px;color:#b9bcc2}.pm-cert figcaption b{display:block;color:#fff;font-size:15px;font-weight:600}
+.pm-real{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.pm-real__t{grid-column:1/-1;font-size:17px;font-weight:600;color:#fff}
+.pm-real div{font-size:14px;color:#b9bcc2;line-height:1.55}.pm-real div b{display:block;color:#fff;font-size:15px;margin-bottom:2px}
+/* 05 xe thực tế */
+.pm-feat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:220px;gap:16px;margin-bottom:28px}
+.pm-feat a{position:relative;display:block;border-radius:var(--pm-rad);overflow:hidden;color:#fff;text-decoration:none;background:#ddd}
+.pm-feat a:first-child{grid-column:span 2;grid-row:span 2}
+.pm-feat img{width:100%;height:100%;object-fit:cover;object-position:85% center;transition:transform .25s}.pm-feat a:hover img{transform:scale(1.04)}
+.pm-feat span{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.pm-feat b{display:block;font-size:15px;font-weight:600}.pm-feat a:first-child b{font-size:20px}.pm-feat small{font-size:12px;opacity:.9}
+.pm-allcase{font-size:18px;font-weight:600;color:var(--pm-k);margin:0 0 12px}
+/* 06 báo chí */
+.pm-press{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px}
+.pm-pf,.pm-pi{display:block;text-decoration:none;color:var(--pm-k)}
+.pm-pf__img{display:block;aspect-ratio:16/9;border-radius:var(--pm-rad);overflow:hidden;background:#e9ebee}.pm-pf__img img{width:100%;height:100%;object-fit:cover;transition:transform .25s}.pm-pf:hover img{transform:scale(1.03)}
+.pm-pf small,.pm-pi small{display:block;margin:12px 0 6px;font-size:12px;font-weight:600;color:var(--pm-r)}
+.pm-pf b{display:block;font-size:24px;line-height:1.35;font-weight:600}
+.pm-pside{display:grid;gap:16px;align-content:start}
+.pm-pi{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center;padding-bottom:16px;border-bottom:1px solid var(--pm-l)}
+.pm-pi img{width:150px;aspect-ratio:4/3;object-fit:cover;border-radius:10px;background:#e9ebee}.pm-pi small{margin-top:0}.pm-pi b{font-size:15px;line-height:1.45;font-weight:500}.pm-pi:hover b,.pm-pf:hover b{color:var(--pm-r)}
+.pm-outlets{display:flex;flex-wrap:wrap;gap:8px 18px;margin:24px 0 0;padding:16px 0 0;border-top:1px solid var(--pm-l);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#8a8f97}
+.pm-pall{margin-top:18px}.pm-pall summary{display:inline-flex;cursor:pointer;list-style:none}.pm-pall summary::-webkit-details-marker{display:none}
+.pm-plist{list-style:none;margin:16px 0 0;padding:0;columns:2;column-gap:32px}.pm-plist li{break-inside:avoid;padding:10px 0;border-top:1px solid var(--pm-l)}
+.pm-plist a{color:var(--pm-k);text-decoration:none;font-size:14px;line-height:1.45}.pm-plist a:hover{color:var(--pm-r)}.pm-plist small{display:block;color:var(--pm-m);font-size:12px}
+/* 07 3M Pro Shop */
+.pm-shop{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:24px;align-items:start}
+.pm-gal{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.pm-gal button{position:relative;display:block;padding:0;border:0;border-radius:var(--pm-rad);overflow:hidden;cursor:zoom-in;background:#ddd;aspect-ratio:4/3}
+.pm-gal button:first-child{grid-column:1/-1;aspect-ratio:16/9}
+.pm-gal img{width:100%;height:100%;object-fit:cover;transition:transform .25s}.pm-gal button:hover img{transform:scale(1.03)}
+.pm-gal figcaption,.pm-gal span{position:absolute;left:10px;bottom:10px;padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.6);color:#fff;font-size:12px}
+.pm-info{padding:24px;border-radius:var(--pm-rad);border:1px solid var(--pm-l);background:#fff;position:sticky;top:84px}
+.pm-info h3{margin:0 0 4px;font-size:20px;color:var(--pm-k)}.pm-info__k{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--pm-r);font-weight:600}
+.pm-info dl{margin:16px 0;display:grid;gap:12px}.pm-info dt{font-size:12px;color:var(--pm-m);text-transform:uppercase;letter-spacing:.06em}.pm-info dd{margin:2px 0 0;font-size:15px}
+.pm-info dd a{color:var(--pm-k);font-weight:600;text-decoration:none}
+.pm-info__cta{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pm-info__cta .pm-btn--r{grid-column:1/-1}
+.pm-info .h3m-gr{margin:4px 0 0}
+/* 08 quy trình */
+.pm-proc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.pm-proc__img{border-radius:var(--pm-rad);overflow:hidden;aspect-ratio:5/4;background:#ddd}.pm-proc__img img{width:100%;height:100%;object-fit:cover}
+.pm-stages{list-style:none;margin:0;padding:0;counter-reset:st}
+.pm-stages li{counter-increment:st;display:grid;grid-template-columns:44px minmax(0,1fr);gap:14px;padding:16px 0;border-top:1px solid var(--pm-l)}
+.pm-stages li:before{content:'0' counter(st);font-size:22px;font-weight:600;color:var(--pm-r)}
+.pm-stages b{display:block;font-size:17px;color:var(--pm-k)}.pm-stages span{font-size:14px;color:var(--pm-m)}
+.pm-steps8{margin-top:8px}.pm-steps8 summary{cursor:pointer;font-size:14px;color:var(--pm-k);font-weight:500}
+.pm-steps8 ol{margin:10px 0 0;padding-left:20px;columns:2;font-size:14px;color:var(--pm-m)}.pm-steps8 li{padding:3px 0}
+.pm-wr{display:flex;align-items:center;gap:14px;margin-top:18px;padding:16px 18px;border-radius:var(--pm-rad);background:var(--pm-bg)}
+.pm-wr strong{font-size:34px;line-height:1;color:var(--pm-r);font-weight:700}.pm-wr div{font-size:14px;color:var(--pm-m)}.pm-wr div b{display:block;color:var(--pm-k);font-size:15px}
+/* 09 FAQ + đặt lịch */
+.pm-faq{display:grid;gap:10px}
+.pm-faq details{border:1px solid var(--pm-l);border-radius:var(--pm-rad);background:#fff}
+.pm-faq summary{display:flex;justify-content:space-between;gap:12px;padding:16px 18px;cursor:pointer;font-weight:500;color:var(--pm-k);list-style:none}
+.pm-faq summary::-webkit-details-marker{display:none}.pm-faq summary:after{content:'+';font-size:20px;line-height:1;color:var(--pm-m)}.pm-faq details[open] summary:after{content:'–'}
+.pm-faq p{margin:0;padding:0 18px 16px;color:#555;line-height:1.6}
+.pm-book{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px;align-items:center}
+.pm-book h2{margin:0 0 10px;font-size:30px;color:#fff;font-weight:600}.pm-book>div>p{margin:0 0 18px;color:#b9bcc2}
+.pm-book__alt{display:flex;flex-wrap:wrap;gap:10px}
+.pm-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:24px;border-radius:var(--pm-rad);background:#fff;color:var(--pm-t)}
+.pm-form label{display:grid;gap:6px;font-size:13px;color:var(--pm-m)}.pm-form .full{grid-column:1/-1}
+.pm-form input:not([type=checkbox]),.pm-form select{min-height:46px;padding:0 12px;border:1px solid #d4d8de;border-radius:10px;font:15px inherit;color:var(--pm-k);background:#fff}
+.pm-form input:focus,.pm-form select:focus,.pm-sel:focus{outline:2px solid var(--pm-r);outline-offset:1px}
+.pm-form .ck{display:flex;gap:8px;align-items:flex-start;font-size:13px}.pm-form .ck a{color:var(--pm-r)}
+.pm-form .pm-btn{width:100%}
+.pm-form .h3m-msg{grid-column:1/-1}
+/* lightbox */
+.pm-lb{width:min(1100px,94vw);max-height:92vh;padding:0;border:0;border-radius:var(--pm-rad);background:#111;color:#fff}
+.pm-lb::backdrop{background:rgba(0,0,0,.8)}
+.pm-lb figure{margin:0}.pm-lb img{display:block;width:100%;max-height:80vh;object-fit:contain;background:#111}
+.pm-lb figcaption{padding:12px 56px 14px 16px;font-size:14px;color:#ddd}
+.pm-lb button{position:absolute;border:0;background:rgba(255,255,255,.14);color:#fff;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}
+.pm-lb [data-lb-x]{top:10px;right:10px}.pm-lb [data-lb-p]{left:10px;top:40%}.pm-lb [data-lb-n]{right:10px;top:40%}
+/* responsive */
+@media (max-width:1100px){.h3m-quick.pm-quick{grid-template-columns:1fr 1fr}.pm-quick__head{grid-column:1/-1}.pm-certs{grid-template-columns:repeat(2,minmax(0,1fr))}.pm-feat{grid-template-columns:repeat(3,minmax(0,1fr))}.pm-feat a:first-child{grid-row:span 1}.pm-perks{grid-template-columns:1fr}}
+@media (max-width:900px){.pm-pkgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.pm-press,.pm-shop,.pm-proc,.pm-book{grid-template-columns:1fr}.pm-info{position:static}.pm-real{grid-template-columns:1fr}}
+@media (max-width:640px){
+ .pm-pstrip__in span{flex-basis:100%;order:3;white-space:normal}
+ .pm-wrap{padding:0 16px}.pm-sec{padding:32px 0}.pm-h2{font-size:23px}.pm-lead{font-size:15px;margin-bottom:16px}
+ .h3m-quick.pm-quick{grid-template-columns:1fr;gap:16px;padding:18px 16px}.pm-quick h2{font-size:19px}
+ .pm-seg button{font-size:13px;padding:0 2px}.pm-pkbar .pm-seg{min-width:100%}
+ .pm-pkgrid{grid-template-columns:1fr;gap:12px}.pm-pk{display:grid;grid-template-columns:112px minmax(0,1fr)}.pm-pk:hover{transform:none}.pm-pk__img{aspect-ratio:auto;height:100%;min-height:150px}.pm-pk__badge{left:6px;top:6px;font-size:11px;padding:2px 8px}.pm-pk__b{padding:12px 14px 14px;gap:6px}.pm-pk h3{font-size:17px}.pm-pk__need{display:none}.pm-pk__price{padding-top:8px}.pm-pk__price b{font-size:19px}.pm-pk .pm-btn{min-height:42px;font-size:14px}
+ .pm-proc__img{aspect-ratio:16/9}.pm-gal button:nth-child(n+4){display:none}
+ .pm-perks{padding:18px 16px}.pm-perks ul{display:grid;gap:8px}.pm-perks li{border-left:0;padding:0 0 0 18px;position:relative}.pm-perks li:before{content:'✓';position:absolute;left:0;color:var(--pm-r)}
+ .pm-certs{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pm-cert figcaption{font-size:12px}.pm-cert figcaption b{font-size:13px}
+ .pm-feat{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:10px}.pm-feat a:first-child{grid-column:1/-1;grid-row:span 1;height:210px}.pm-feat a:nth-child(n+6){display:none}
+ .pm-pf b{font-size:19px}.pm-pi{grid-template-columns:110px minmax(0,1fr)}.pm-pi img{width:110px}.pm-plist{columns:1}
+ .pm-gal{grid-template-columns:1fr 1fr;gap:8px}.pm-gal button:nth-child(n+6){display:none}
+ .pm-info{padding:18px 16px}.pm-steps8 ol{columns:1}
+ .pm-book h2{font-size:24px}.pm-form{grid-template-columns:1fr;padding:18px 16px}.pm-form .full{grid-column:auto}
+ .pm-lb [data-lb-p],.pm-lb [data-lb-n]{top:auto;bottom:56px}
+}
+@media (prefers-reduced-motion:reduce){.pm-sec *{transition:none!important}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -411,7 +566,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 <header class="h3m-top">
  <div class="h3m-wrap">
   <a class="h3m-logo" href="https://auto365.vn">AUTO<b>365</b></a>
-  <nav class="h3m-nav"><a href="#bao-chi">Báo chí</a><a href="#goi-phim">6 gói phim</a><a href="#chung-chi">Chứng chỉ 3M</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#chi-nhanh">3M Pro Shop</a><a href="#faq">FAQ</a></nav>
+  <nav class="h3m-nav"><a href="#goi-phim">6 gói phim</a><a href="#chung-chi">Chứng nhận</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#bao-chi">Báo chí</a><a href="#chi-nhanh">3M Pro Shop</a><a href="#faq">FAQ</a></nav>
   <div class="h3m-top__cta"><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_header">☎ 0365 365 365</a><a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch</a></div>
  </div>
 </header>
@@ -447,89 +602,78 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  </div>
 </section>
 
-<div class="h3m-wrap">
- <div class="h3m-quick">
-  <div><h2>Xem giá theo xe của bạn</h2><p>Chọn cấu hình phim và nhóm xe — giá trọn xe theo bảng giá 3M (06/2026), đã gồm VAT.</p></div>
-  <form class="h3m-quick__f" id="h3m-quick" onsubmit="return false">
-   <select class="h3m-sel" id="q-pk" aria-label="Cấu hình phim"></select>
-   <select class="h3m-sel" id="q-car" aria-label="Nhóm xe"><option value="" selected>Chọn nhóm xe</option><option value="0">Minicar (i10, Morning, VF3…)</option><option value="1">Sedan (Vios, City, Camry…)</option><option value="2">SUV / MPV (CR-V, Fortuner, VF8…)</option></select>
-   <button class="h3m-btn h3m-btn--red" id="q-go" type="button">Xem giá →</button>
-   <div class="h3m-quick__out" id="q-out" aria-live="polite"></div>
-  </form>
- </div>
-</div>
-
-<section class="h3m-sec h3m-press" id="bao-chi">
- <div class="h3m-wrap">
-
-  <h2 class="h3m-h2">19 bài báo viết về <em>3M Pro Shop</em> tại TP.HCM</h2>
-  <div class="h3m-pnav"><button type="button" data-pnav="-1" aria-label="Bài báo trước">‹</button><span class="h3m-pnav__n"></span><button type="button" data-pnav="1" aria-label="Bài báo tiếp theo">›</button></div>
-  <div class="h3m-press__grid h3m-mq">
-   <ul class="h3m-pl">
-    <li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/1-17821219928711310056705-119-0-841-1379-crop-17821220365881.webp" alt="Ảnh bài báo Thanh Niên: 3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thanh Niên · 22/06/2026</small><b>3M Pro Shop &amp; Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</b></span></a></li>
-    <li><a href="https://autopro.com.vn/sau-khi-khai-truong-3m-pro-shop-thuc-su-van-hanh-nhu-the-nao-177260821102431487.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1787202155122-1787202155306648567024-178728267244421171.webp" alt="Ảnh bài báo AutoPro: Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?" loading="lazy" referrerpolicy="no-referrer"><span><small>AutoPro · 21/08/2026</small><b>Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?</b></span></a></li>
-    <li><a href="https://vietnamnet.vn/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-nghiem-lai-xe-2547266.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-ngh.webp" alt="Ảnh bài báo VietNamNet: Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe" loading="lazy" referrerpolicy="no-referrer"><span><small>VietNamNet · 20/08/2026</small><b>Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe</b></span></a></li>
-    <li><a href="https://baodanang.vn/nen-chon-phim-cach-nhiet-theo-tung-vi-tri-kinh-cua-vinfast-vf3-3349409.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/806-202608201436461.webp" alt="Ảnh bài báo Báo Đà Nẵng: Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đà Nẵng · 20/08/2026</small><b>Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3</b></span></a></li>
-    <li><a href="https://vietnambiz.vn/tu-ma-phim-den-bao-hanh-dien-tu-3m-pro-shop-kiem-soat-quy-trinh-dich-vu-ra-sao-2026819171452177.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260819171108181-avatar-15x10-2026081917145165.webp" alt="Ảnh bài báo VietnamBiz: Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?" loading="lazy" referrerpolicy="no-referrer"><span><small>VietnamBiz · 19/08/2026</small><b>Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?</b></span></a></li>
-    <li><a href="https://baodongnai.com.vn/doanh-nhan-doanh-nghiep/dich-vu/202608/3m-pro-shop-vi-sao-xe-vinfast-khong-nen-dung-mot-cau-hinh-phim-cach-nhiet-co-dinh-c5a13d9" target="_blank" rel="noopener"><img src="hinh/bao-chi/image001-20260819160057.webp" alt="Ảnh bài báo Báo Đồng Nai: 3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đồng Nai · 08/2026</small><b>3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?</b></span></a></li>
-    <li><a href="https://danviet.vn/tu-tphcm-den-cac-dia-phuong-nhu-cau-chuan-hoa-dich-vu-phim-cach-nhiet-va-ppf-d1437536.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/143828-5819.webp" alt="Ảnh bài báo Dân Việt: Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF" loading="lazy" referrerpolicy="no-referrer"><span><small>Dân Việt · 23/06/2026</small><b>Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF</b></span></a></li>
-    <li><a href="https://giadinh.suckhoedoisong.vn/xe-gia-dinh-va-nhu-cau-chon-phim-cach-nhiet-dung-thong-so-dung-quy-trinh-172260623092027053.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/3-17821811006071168598301-0-100-775-1340-crop-17821811722721.webp" alt="Ảnh bài báo Sức khỏe &amp; Đời sống: Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình" loading="lazy" referrerpolicy="no-referrer"><span><small>Sức khỏe &amp; Đời sống · 23/06/2026</small><b>Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình</b></span></a></li>
-    <li><a href="https://genk.vn/cong-nghe-nano-gom-tren-3m-ceramic-nr-the-he-moi-va-cach-doc-thong-so-phim-cach-nhiet-165260622201911871.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1782122923795-1782122925086341237778-178213435355164945.webp" alt="Ảnh bài báo GenK: Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt" loading="lazy" referrerpolicy="no-referrer"><span><small>GenK · 22/06/2026</small><b>Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt</b></span></a></li>
-    <li><a href="https://vietnammoi.vn/nguoi-dung-do-thi-quan-tam-hon-den-trai-nghiem-chong-nong-va-bao-ve-noi-that-xe-2026622192141609.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260622191227651-avatar-fb-20260622192141292.webp" alt="Ảnh bài báo Việt Nam Mới: Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe" loading="lazy" referrerpolicy="no-referrer"><span><small>Việt Nam Mới · 22/06/2026</small><b>Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe</b></span></a></li>
-    <li><a href="https://2sao.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116922.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-1.webp" alt="Ảnh bài báo 2Sao: Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>2Sao · 22/06/2026</small><b>Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM</b></span></a></li>
-    <li><a href="https://tintuconline.com.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116923.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-1-11.webp" alt="Ảnh bài báo Tin tức Online: 5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Tin tức Online · 22/06/2026</small><b>5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM</b></span></a></li>
-    <li><a href="https://vietnambiz.vn/365group-dua-3m-pro-shop-vao-bai-toan-van-hanh-he-thong-auto365-hon-90-diem-2026622174037156.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo-import-20260622173656619-avatar-15x10-2026062217403661.webp" alt="Ảnh bài báo VietnamBiz: 365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm" loading="lazy" referrerpolicy="no-referrer"><span><small>VietnamBiz · 22/06/2026</small><b>365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm</b></span></a></li>
-    <li><a href="https://xahoi.com.vn/o-to-xe-may/3m-pro-shop-tai-tphcm-mo-them-lua-chon-trai-nghiem-phim-cach-nhiet-ppf-va-wrap-film-d404905.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/3m-pro-shop-60giay-173521.webp" alt="Ảnh bài báo Xã hội: 3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film" loading="lazy" referrerpolicy="no-referrer"><span><small>Xã hội · 22/06/2026</small><b>3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film</b></span></a></li>
-    <li><a href="https://eva.vn/tieu-dung/khoang-xe-thoai-mai-hon-voi-phim-cach-nhiet-3m-ceramic-nr-the-he-moi-c2a674705.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/1782113096-834-thumbnail-width1024height768-auto-crop-waterm.webp" alt="Ảnh bài báo Eva: Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới" loading="lazy" referrerpolicy="no-referrer"><span><small>Eva · 22/06/2026</small><b>Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới</b></span></a></li>
-    <li><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener"><img src="hinh/bao-chi/2-anh-khu-vuc-trai-nghiem-khach-hang-17821181460161982689042.webp" alt="Ảnh bài báo Thể thao &amp; Văn hóa: Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Thể thao &amp; Văn hóa · 22/06/2026</small><b>Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM</b></span></a></li>
-    <li><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/picture1-1782115024.webp" alt="Ảnh bài báo Kinh tế &amp; Đời sống: Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô" loading="lazy" referrerpolicy="no-referrer"><span><small>Kinh tế &amp; Đời sống · 22/06/2026</small><b>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</b></span></a></li>
-    <li><a href="https://tinhte.vn/thread/qc-kham-pha-he-sinh-thai-san-pham-3m-tai-3m-pro-shop.4154397/" target="_blank" rel="noopener"><img src="hinh/bao-chi/9047008-cv.webp" alt="Ảnh bài báo Tinh Tế · bài quảng cáo: Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop" loading="lazy" referrerpolicy="no-referrer"><span><small>Tinh Tế · bài quảng cáo · 22/06/2026</small><b>Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop</b></span></a></li>
-    <li><a href="https://tuoitrexahoi.vn/nhung-diem-dang-chu-y-sau-su-kien-khai-truong-3m-pro-shop-tai-tphcm-a220004.html" target="_blank" rel="noopener"><img src="hinh/pro-shop-mat-tien.webp" alt="Ảnh bài báo Tuổi trẻ &amp; Xã hội: Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM" loading="lazy" referrerpolicy="no-referrer"><span><small>Tuổi trẻ &amp; Xã hội</small><b>Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM</b></span></a></li>
-   </ul>
-  </div>
-  <div class="h3m-press__more"><a class="h3m-btn h3m-btn--red h3m-topk" href="#goi-phim">Xem 6 gói &amp; bảng giá →</a><button type="button" class="h3m-more" data-more="press">Xem thêm 12 bài báo</button><a href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Trang tổng hợp báo chí →</a></div>
- </div>
-</section>
-
-<section class="h3m-sec" id="goi-phim">
- <div class="h3m-wrap">
-  <h2 class="h3m-h2">Bảng giá dán phim cách nhiệt <em>3M</em> – 6 cấu hình trọn xe</h2>
-  <p class="h3m-lead">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Giá trọn xe theo nhóm Minicar / Sedan / SUV, đã gồm VAT.</p>
-  <div class="h3m-pk" id="h3m-pk"></div>
-  <div class="h3m-perks"><b>Quyền lợi khi dán phim 3M tại Auto365</b><small class="h3m-perks__note">Quà tặng áp dụng theo từng đợt – cố vấn báo cụ thể khi tư vấn.</small><a class="h3m-gr h3m-gr--perks" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a><ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>Giảm giá cho lần dán tiếp theo</li><li>eWarranty 3M 10 năm cho cả 6 cấu hình</li><li>Có thể chọn điểm 3M Pro Shop theo hồ sơ chứng nhận tại từng cơ sở</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá kèm quyền lợi →</button></div>
-  <p class="h3m-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
- </div>
-</section>
-
-<section class="h3m-sec h3m-why2" id="chung-chi">
- <div class="h3m-wrap">
-
-  <h2 class="h3m-h2">Phim cách nhiệt <em>3M</em> chính hãng – từ nhà phân phối đến khoang thi công</h2>
-  <div class="h3m-certs">
-   <figure><img src="hinh/cert-distributor-365group.webp" alt="Chứng nhận 365Group nhà phân phối chính thức phim 3M" loading="lazy"><figcaption><b>Nhà phân phối chính thức</b>365Group</figcaption></figure>
-   <figure><img src="hinh/cert-3m-pro-shop.webp" alt="Chứng nhận 3M Pro Shop của Auto365 Center" loading="lazy"><figcaption><b>3M Pro Shop</b>Auto365 Center · 06/2026–06/2029</figcaption></figure>
-   <figure><img src="hinh/cert-preferred-installer.webp" alt="Chứng nhận 3M Preferred Installer" loading="lazy"><figcaption><b>Preferred Installer</b>Đơn vị thi công được 3M chứng nhận</figcaption></figure>
-   <figure><img src="hinh/doi-ky-thuat-vien.webp" alt="Đội ngũ kỹ thuật viên Auto365 nhận chứng nhận tại 3M Pro Shop" loading="lazy"><figcaption><b>Đội kỹ thuật viên</b>Được đào tạo &amp; cấp chứng nhận</figcaption></figure>
-  </div>
-  <div class="h3m-real">
-   <b class="h3m-real__t">Cách nhận biết phim cách nhiệt 3M chính hãng</b>
-   <ul>
-    <li><span>01</span><div><b>Logo "3M" in mờ trên mặt phim</b>Rải rác trên toàn bộ tấm phim, kiểm tra được ngay trên kính sau khi dán.</div></li>
-    <li><span>02</span><div><b>Có mã bảo hành điện tử 3M</b>Tra cứu trên hệ thống 3M Việt Nam theo biển số, ghi mã phim từng vị trí kính.</div></li>
-    <li><span>03</span><div><b>Thi công tại 3M Pro Shop</b>Phim nhập qua 365Group – nhà phân phối chính thức 3M, dán tại 3M Pro Shop &amp; 3M Training Center.</div></li>
-   </ul>
+<section class="pm-sec pm-quickwrap" aria-label="Xem giá theo xe">
+ <div class="pm-wrap">
+  <div class="h3m-quick pm-quick" id="h3m-quick">
+   <div class="pm-quick__head"><h2>Xem giá theo xe của bạn</h2><p>Chọn nhóm xe và cấu hình phim – giá trọn xe theo bảng giá 3M (06/2026), đã gồm VAT.</p></div>
+   <div class="pm-ctl">
+    <div><span class="pm-lbl" id="q-g-l">1 · Nhóm xe</span><div class="pm-seg" role="radiogroup" aria-label="Nhóm xe" data-seg="quick"><button type="button" role="radio" aria-checked="false" data-g="0">Minicar<small>i10, Morning, VF3</small></button><button type="button" role="radio" aria-checked="false" data-g="1">Sedan<small>Vios, City, Camry</small></button><button type="button" role="radio" aria-checked="false" data-g="2">SUV / MPV<small>CR-V, Fortuner, VF8</small></button></div></div>
+    <label><span class="pm-lbl">2 · Cấu hình phim</span><select class="pm-sel" id="q-pk"></select></label>
+   </div>
+   <div class="pm-quick__out" aria-live="polite"><span>Giá trọn xe</span><b id="q-price">Chọn nhóm xe</b><small id="q-desc">Giá hiển thị đã gồm VAT</small><button type="button" class="pm-btn pm-btn--r" id="q-cta" data-open-lead>Nhận tư vấn với lựa chọn này →</button></div>
   </div>
  </div>
 </section>
-
-<section class="h3m-sec h3m-sec--gray" id="xe-thuc-te">
- <div class="h3m-wrap">
-
-  <h2 class="h3m-h2">Xe thực tế dán phim cách nhiệt ô tô <em>3M</em> tại TP.HCM</h2>
-  <p class="h3m-lead">58 hồ sơ dán phim cách nhiệt 3M thi công thực tế theo từng dòng xe. Lọc theo dòng phim hoặc hãng xe.</p>
+<section class="pm-sec pm-pstrip" aria-label="Báo chí đưa tin">
+ <div class="pm-wrap"><a class="pm-pstrip__in" href="#bao-chi"><b>19 bài báo đưa tin về 3M Pro Shop</b><span>Thanh Niên · AutoPro · VietNamNet · Báo Đà Nẵng · VietnamBiz · Báo Đồng Nai · Dân Việt · Sức khỏe & Đời sống</span><em>Xem báo chí ↓</em></a></div>
+</section>
+<section class="pm-sec" id="goi-phim">
+ <div class="pm-wrap">
+  <span class="pm-kick">Bảng giá 06/2026 · đã gồm VAT</span>
+  <h2 class="pm-h2">Bảng giá dán phim cách nhiệt <em>3M</em> – 6 cấu hình trọn xe</h2>
+  <div class="pm-pkbar"><p class="pm-lead" style="margin:0">Mỗi cấu hình = 1 mã kính lái + mã kính sườn/sau. Chọn nhóm xe để xem đúng giá của cả 6 gói.</p><div class="pm-seg" role="radiogroup" aria-label="Nhóm xe" data-seg="pk"><button type="button" role="radio" aria-checked="false" data-g="0">Minicar<small>i10, Morning, VF3</small></button><button type="button" role="radio" aria-checked="false" data-g="1">Sedan<small>Vios, City, Camry</small></button><button type="button" role="radio" aria-checked="false" data-g="2">SUV / MPV<small>CR-V, Fortuner, VF8</small></button></div></div>
+  <div class="pm-pkgrid" id="pm-pk"></div>
+  <details class="pm-cmp"><summary>So sánh giá 6 cấu hình theo nhóm xe</summary><div class="pm-cmp__scroll"><table id="pm-cmp"></table></div></details>
+  <p class="pm-note">Giá niêm yết theo bảng giá 3M áp dụng từ 06/2026, đã gồm phim + công thi công trọn xe. Xe có kính lái lớn, cửa sổ trời hoặc cấu hình đặc biệt sẽ được tư vấn báo giá chính xác theo model.</p>
+ </div>
+</section>
+<section class="pm-sec" aria-label="Quyền lợi">
+ <div class="pm-wrap">
+  <div class="pm-perks">
+   <div class="pm-perks__t"><b>Quyền lợi khi dán phim 3M tại Auto365</b><small>Quà tặng tùy thời điểm – cố vấn xác nhận điều kiện khi tư vấn.</small></div>
+   <ul><li>Miễn phí tháo &amp; vệ sinh phim cũ</li><li>Tặng rửa xe + hút bụi nội thất</li><li>Tặng vệ sinh kính + tẩy ố kính</li><li>eWarranty 3M 10 năm cho cả 6 cấu hình</li><li>Giá niêm yết đã gồm VAT</li></ul>
+   <button type="button" class="pm-btn pm-btn--o" data-open-lead>Hỏi điều kiện ưu đãi</button>
+  </div>
+ </div>
+</section>
+<section class="pm-sec pm-dark" id="chung-chi">
+ <div class="pm-wrap">
+  <span class="pm-kick">Chính hãng · Chứng nhận</span>
+  <h2 class="pm-h2">Phim cách nhiệt <em>3M</em> chính hãng – từ nhà phân phối đến khoang thi công</h2>
+  <p class="pm-lead">Bấm vào từng chứng nhận để xem ảnh lớn.</p>
+  <div class="pm-certs" data-lb-group="certs">
+   <figure class="pm-cert"><button type="button" data-lb="hinh/cert-distributor-365group.webp" data-cap="Nhà phân phối chính thức – 365Group" aria-label="Xem lớn: Nhà phân phối chính thức"><img src="hinh/cert-distributor-365group.webp" alt="Chứng nhận 365Group nhà phân phối chính thức phim 3M" loading="lazy"></button><figcaption><b>Nhà phân phối chính thức</b>365Group</figcaption></figure>
+   <figure class="pm-cert"><button type="button" data-lb="hinh/cert-3m-pro-shop.webp" data-cap="3M Pro Shop – Auto365 Center · 06/2026–06/2029" aria-label="Xem lớn: 3M Pro Shop"><img src="hinh/cert-3m-pro-shop.webp" alt="Chứng nhận 3M Pro Shop của Auto365 Center" loading="lazy"></button><figcaption><b>3M Pro Shop</b>Auto365 Center · 06/2026–06/2029</figcaption></figure>
+   <figure class="pm-cert"><button type="button" data-lb="hinh/cert-preferred-installer.webp" data-cap="Preferred Installer – Đơn vị thi công được 3M chứng nhận" aria-label="Xem lớn: Preferred Installer"><img src="hinh/cert-preferred-installer.webp" alt="Chứng nhận 3M Preferred Installer" loading="lazy"></button><figcaption><b>Preferred Installer</b>Đơn vị thi công được 3M chứng nhận</figcaption></figure>
+   <figure class="pm-cert"><button type="button" data-lb="hinh/doi-ky-thuat-vien.webp" data-cap="Đội kỹ thuật viên – Được đào tạo & cấp chứng nhận" aria-label="Xem lớn: Đội kỹ thuật viên"><img src="hinh/doi-ky-thuat-vien.webp" alt="Đội ngũ kỹ thuật viên Auto365 nhận chứng nhận tại 3M Pro Shop" loading="lazy"></button><figcaption><b>Đội kỹ thuật viên</b>Được đào tạo & cấp chứng nhận</figcaption></figure>
+  </div>
+  <div class="pm-real"><span class="pm-real__t">Cách nhận biết phim cách nhiệt 3M chính hãng</span>
+   <div><b>Logo "3M" in mờ trên mặt phim</b>Rải rác trên toàn bộ tấm phim, kiểm tra được ngay trên kính sau khi dán.</div>
+   <div><b>Có mã bảo hành điện tử 3M</b>Tra cứu trên hệ thống 3M Việt Nam theo biển số, ghi mã phim từng vị trí kính.</div>
+   <div><b>Thi công tại 3M Pro Shop</b>Phim nhập qua 365Group – nhà phân phối chính thức 3M, dán tại 3M Pro Shop & 3M Training Center.</div>
+  </div>
+ </div>
+</section>
+<section class="pm-sec pm-gray" id="xe-thuc-te">
+ <div class="pm-wrap">
+  <span class="pm-kick">58 hồ sơ thi công thực tế</span>
+  <h2 class="pm-h2">Xe thực tế dán phim cách nhiệt <em>3M</em> tại Auto365</h2>
+  <p class="pm-lead">Ảnh thật từ các hồ sơ đã đăng trên auto365.vn – bấm để xem chi tiết cấu hình từng xe (mở tab mới).</p>
+  <div class="pm-feat">
+   <a href="https://auto365.vn/mazda-cx-30-dan-phim-cach-nhiet-3m-crystalline-hybrid" target="_blank" rel="noopener"><img src="hinh/xe/mazda-cx30-dan-phim-cach-nhiet-3m-crystalline-hybrid-1792830.webp" alt="Mazda CX-30 dán phim cách nhiệt 3M Crystalline Hybrid tại Auto365" loading="lazy"><span><b>Mazda CX-30</b><small>Crystalline Hybrid</small></span></a>
+   <a href="https://auto365.vn/honda-city-dan-phim-3m-crystalline-cr-blk" target="_blank" rel="noopener"><img src="hinh/xe/honda-city-dan-phim-3m-crystalline-cr-blk-1792644817.webp" alt="Honda City dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365" loading="lazy"><span><b>Honda City</b><small>Crystalline CR BLK</small></span></a>
+   <a href="https://auto365.vn/toyota-land-cruiser-prado-2024-dan-phim-3m-crystalline-cr-blk-pro" target="_blank" rel="noopener"><img src="hinh/xe/toyota-land-cruiser-prado-2024-dan-phim-3m-cr-blk-pro-179255.webp" alt="Toyota Land Cruiser dán phim cách nhiệt 3M Crystalline CR BLK Pro tại Auto365" loading="lazy"><span><b>Toyota Land Cruiser</b><small>Crystalline CR BLK Pro</small></span></a>
+   <a href="https://auto365.vn/kia-seltos-dan-cr-blk-50-35-va-15" target="_blank" rel="noopener"><img src="hinh/xe/kia-seltos-dan-cr-blk-50-35-va-15-1791191987.webp" alt="Kia Seltos dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365" loading="lazy"><span><b>Kia Seltos</b><small>Crystalline CR BLK</small></span></a>
+   <a href="https://auto365.vn/bmw-330i-dan-phim-cach-nhiet-3m-crystalline-cr-blk" target="_blank" rel="noopener"><img src="hinh/xe/auto365vn-bmw-330i-dan-phim-cach-nhiet-3m-crystalline-cr-blk.webp" alt="BMW 330i dán phim cách nhiệt 3M Crystalline CR BLK Pro tại Auto365" loading="lazy"><span><b>BMW 330i</b><small>Crystalline CR BLK Pro</small></span></a>
+   <a href="https://auto365.vn/bmw-x3-dan-phim-cach-nhiet-3m-crystalline-cr-blk" target="_blank" rel="noopener"><img src="hinh/xe/auto365vn-bmw-x3-dan-phim-cach-nhiet-3m-crystalline-cr-blk-i.webp" alt="BMW X3 dán phim cách nhiệt 3M Crystalline CR BLK Pro tại Auto365" loading="lazy"><span><b>BMW X3</b><small>Crystalline CR BLK Pro</small></span></a>
+   <a href="https://auto365.vn/subaru-forester-dan-phim-3m-cr-blk" target="_blank" rel="noopener"><img src="hinh/xe/auto365vn-subaru-forester-danphim-3m-cr-blk-img-6ab38d25d29a.webp" alt="Subaru Forester dán phim cách nhiệt 3M Crystalline CR BLK Pro tại Auto365" loading="lazy"><span><b>Subaru Forester</b><small>Crystalline CR BLK Pro</small></span></a>
+   <a href="https://auto365.vn/volkswagen-viloran-dan-phim-3m-cr-blk" target="_blank" rel="noopener"><img src="hinh/xe/auto365vn-volkswagen-viloran-dan-phim-3m-cr-blk-img-6aab54e5.webp" alt="Volkswagen Viloran dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365" loading="lazy"><span><b>Volkswagen Viloran</b><small>Crystalline CR BLK</small></span></a>
+   <a href="https://auto365.vn/geely-ex2-dan-phim-cach-nhiet-3m" target="_blank" rel="noopener"><img src="hinh/xe/auto365vn-geely-ex2-dan-phim-cach-nhiet-3m-img-6aa77eea39306.webp" alt="Geely EX2 dán phim cách nhiệt 3M Crystalline CR BLK tại Auto365" loading="lazy"><span><b>Geely EX2</b><small>Crystalline CR BLK</small></span></a>
+  </div>
+  <h3 class="pm-allcase">Tất cả hồ sơ – lọc theo dòng phim hoặc hãng xe</h3>
   <div class="h3m-cfx">
    <div class="h3m-cfx__row"><span>Dòng phim:</span><div class="h3m-cfx__chips" data-f="loai"><button type="button" class="is-on" data-v="">Tất cả</button><button type="button" data-v="Ceramic IR">Ceramic IR</button><button type="button" data-v="Ceramic NR">Ceramic NR</button><button type="button" data-v="Crystalline CR BLK">Crystalline CR BLK</button><button type="button" data-v="Crystalline CR BLK Pro">Crystalline CR BLK Pro</button><button type="button" data-v="Crystalline Hybrid">Crystalline Hybrid</button><button type="button" data-v="Crystalline Hybrid Pro">Crystalline Hybrid Pro</button></div></div>
-   <div class="h3m-cfx__row"><span>Hãng xe:</span><div class="h3m-cfx__chips h3m-cfx__brands" data-f="brand"><button type="button" class="is-on" data-v="">Tất cả</button><button type="button" data-v="vinfast" title="Vinfast"><img src="hinh/logo/vinfast.webp" alt="Vinfast" loading="lazy"></button><button type="button" data-v="toyota" title="Toyota"><img src="hinh/logo/toyota.webp" alt="Toyota" loading="lazy"></button><button type="button" data-v="honda" title="Honda"><img src="hinh/logo/honda.webp" alt="Honda" loading="lazy"></button><button type="button" data-v="mitsubishi" title="Mitsubishi"><img src="hinh/logo/mitsubishi.webp" alt="Mitsubishi" loading="lazy"></button><button type="button" data-v="kia" title="Kia"><img src="hinh/logo/kia.webp" alt="Kia" loading="lazy"></button><button type="button" data-v="ford" title="Ford"><img src="hinh/logo/ford.webp" alt="Ford" loading="lazy"></button><button type="button" data-v="mazda" title="Mazda"><img src="hinh/logo/mazda.webp" alt="Mazda" loading="lazy"></button><button type="button" data-v="bmw" title="BMW"><img src="hinh/logo/bmw.webp" alt="BMW" loading="lazy"></button><button type="button" data-v="hyundai" title="Hyundai" class="is-x" hidden><img src="hinh/logo/hyundai.webp" alt="Hyundai" loading="lazy"></button><button type="button" data-v="volvo" title="Volvo" class="is-x" hidden><img src="hinh/logo/volvo.webp" alt="Volvo" loading="lazy"></button><button type="button" data-v="subaru" title="Subaru" class="is-x" hidden><img src="hinh/logo/subaru.webp" alt="Subaru" loading="lazy"></button><button type="button" data-v="volkswagen" title="Volkswagen" class="is-x" hidden><img src="hinh/logo/volkswagen.webp" alt="Volkswagen" loading="lazy"></button><button type="button" data-v="geely" title="Geely" class="is-x" hidden><img src="hinh/logo/geely.webp" alt="Geely" loading="lazy"></button><button type="button" data-v="peugeot" title="Peugeot" class="is-x" hidden><img src="hinh/logo/peugeot.webp" alt="Peugeot" loading="lazy"></button><button type="button" data-v="nissan" title="Nissan" class="is-x" hidden><img src="hinh/logo/nissan.webp" alt="Nissan" loading="lazy"></button><button type="button" data-v="porsche" title="Porsche" class="is-x" hidden><img src="hinh/logo/porsche.webp" alt="Porsche" loading="lazy"></button><button type="button" data-v="mercedes-benz" title="Mercedes-Benz" class="is-x" hidden><img src="hinh/logo/mercedes-benz.webp" alt="Mercedes-Benz" loading="lazy"></button><button type="button" data-v="lexus" title="Lexus" class="is-x" hidden><img src="hinh/logo/lexus.webp" alt="Lexus" loading="lazy"></button><button type="button" data-v="mercedes-maybach" title="Mercedes-Maybach" class="is-x" hidden><img src="hinh/logo/mercedes-maybach.webp" alt="Mercedes-Maybach" loading="lazy"></button><button type="button" data-v="jeep" title="Jeep" class="is-x" hidden><img src="hinh/logo/jeep.webp" alt="Jeep" loading="lazy"></button><button type="button" class="h3m-cfx__plus" data-plus>+12 hãng</button></div></div>
+   <div class="h3m-cfx__row"><span>Hãng xe:</span><div class="h3m-cfx__chips h3m-cfx__brands" data-f="brand"><button type="button" class="is-on" data-v="">Tất cả</button><button type="button" data-v="vinfast" title="Vinfast"><img src="hinh/logo/vinfast.webp" alt="Vinfast" loading="lazy"></button><button type="button" data-v="toyota" title="Toyota"><img src="hinh/logo/toyota.webp" alt="Toyota" loading="lazy"></button><button type="button" data-v="honda" title="Honda"><img src="hinh/logo/honda.webp" alt="Honda" loading="lazy"></button><button type="button" data-v="mitsubishi" title="Mitsubishi"><img src="hinh/logo/mitsubishi.webp" alt="Mitsubishi" loading="lazy"></button><button type="button" data-v="kia" title="Kia"><img src="hinh/logo/kia.webp" alt="Kia" loading="lazy"></button><button type="button" data-v="ford" title="Ford"><img src="hinh/logo/ford.webp" alt="Ford" loading="lazy"></button><button type="button" data-v="mazda" title="Mazda"><img src="hinh/logo/mazda.webp" alt="Mazda" loading="lazy"></button><button type="button" data-v="bmw" title="BMW"><img src="hinh/logo/bmw.webp" alt="BMW" loading="lazy"></button><button type="button" data-v="hyundai" title="Hyundai" class="is-x" hidden=""><img src="hinh/logo/hyundai.webp" alt="Hyundai" loading="lazy"></button><button type="button" data-v="volvo" title="Volvo" class="is-x" hidden=""><img src="hinh/logo/volvo.webp" alt="Volvo" loading="lazy"></button><button type="button" data-v="subaru" title="Subaru" class="is-x" hidden=""><img src="hinh/logo/subaru.webp" alt="Subaru" loading="lazy"></button><button type="button" data-v="volkswagen" title="Volkswagen" class="is-x" hidden=""><img src="hinh/logo/volkswagen.webp" alt="Volkswagen" loading="lazy"></button><button type="button" data-v="geely" title="Geely" class="is-x" hidden=""><img src="hinh/logo/geely.webp" alt="Geely" loading="lazy"></button><button type="button" data-v="peugeot" title="Peugeot" class="is-x" hidden=""><img src="hinh/logo/peugeot.webp" alt="Peugeot" loading="lazy"></button><button type="button" data-v="nissan" title="Nissan" class="is-x" hidden=""><img src="hinh/logo/nissan.webp" alt="Nissan" loading="lazy"></button><button type="button" data-v="porsche" title="Porsche" class="is-x" hidden=""><img src="hinh/logo/porsche.webp" alt="Porsche" loading="lazy"></button><button type="button" data-v="mercedes-benz" title="Mercedes-Benz" class="is-x" hidden=""><img src="hinh/logo/mercedes-benz.webp" alt="Mercedes-Benz" loading="lazy"></button><button type="button" data-v="lexus" title="Lexus" class="is-x" hidden=""><img src="hinh/logo/lexus.webp" alt="Lexus" loading="lazy"></button><button type="button" data-v="mercedes-maybach" title="Mercedes-Maybach" class="is-x" hidden=""><img src="hinh/logo/mercedes-maybach.webp" alt="Mercedes-Maybach" loading="lazy"></button><button type="button" data-v="jeep" title="Jeep" class="is-x" hidden=""><img src="hinh/logo/jeep.webp" alt="Jeep" loading="lazy"></button><button type="button" class="h3m-cfx__plus" data-plus="">+12 hãng</button></div></div>
   </div>
   <p class="h3m-cfx__count" aria-live="polite"></p>
   <div class="h3m-cases">
@@ -595,106 +739,120 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <div class="h3m-press__more"><button type="button" class="h3m-more" data-more="cases">Xem thêm xe</button><a href="https://auto365.vn/phim-cach-nhiet-o-to-3m" target="_blank" rel="noopener">Xem tất cả case trên auto365.vn →</a></div>
  </div>
 </section>
-
-<section class="h3m-band"><div class="h3m-wrap h3m-band__in"><div><b>Muốn xe bạn được dán như các xe trên?</b><span>Đặt lịch tại 3M Pro Shop – Auto365 trụ sở chính, Hiệp Bình, TP.HCM.</span></div><div class="h3m-band__cta"><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận báo giá theo xe →</button><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365">☎ 0365 365 365</a></div></div></section>
-
-<section class="h3m-sec" id="chi-nhanh">
- <div class="h3m-wrap">
-  <h2 class="h3m-h2">Địa chỉ dán phim cách nhiệt ô tô tại Hồ Chí Minh – <em>3M Pro Shop</em></h2>
-  <div class="h3m-hq">
-   <div class="h3m-hq__img">
-    <img src="hinh/pro-shop-mat-tien.webp" alt="Toàn cảnh mặt tiền 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM" loading="lazy">
-    <span class="h3m-hq__stamp">3M PRO SHOP<small>06/2026 – 06/2029</small></span>
+<section class="pm-sec" id="bao-chi">
+ <div class="pm-wrap">
+  <span class="pm-kick">Báo chí</span>
+  <h2 class="pm-h2">19 bài báo viết về <em>3M Pro Shop</em> tại TP.HCM</h2>
+  <div class="pm-press">
+   <a class="pm-pf" href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><span class="pm-pf__img"><img src="hinh/bao-chi/1-17821219928711310056705-119-0-841-1379-crop-17821220365881.webp" alt="Ảnh bài báo Thanh Niên: 3M Pro Shop & Training Center tiên phong tại Việt Nam vận hành tại TP.HCM" loading="lazy" referrerpolicy="no-referrer"></span><small>Thanh Niên · 22/06/2026</small><b>3M Pro Shop & Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</b></a>
+   <div class="pm-pside">
+    <a class="pm-pi" href="https://autopro.com.vn/sau-khi-khai-truong-3m-pro-shop-thuc-su-van-hanh-nhu-the-nao-177260821102431487.chn" target="_blank" rel="noopener"><img src="hinh/bao-chi/photo1787202155122-1787202155306648567024-178728267244421171.webp" alt="Ảnh bài báo AutoPro: Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?" loading="lazy" referrerpolicy="no-referrer"><span><small>AutoPro · 21/08/2026</small><b>Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?</b></span></a>
+    <a class="pm-pi" href="https://vietnamnet.vn/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-nghiem-lai-xe-2547266.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-ngh.webp" alt="Ảnh bài báo VietNamNet: Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe" loading="lazy" referrerpolicy="no-referrer"><span><small>VietNamNet · 20/08/2026</small><b>Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe</b></span></a>
+    <a class="pm-pi" href="https://baodanang.vn/nen-chon-phim-cach-nhiet-theo-tung-vi-tri-kinh-cua-vinfast-vf3-3349409.html" target="_blank" rel="noopener"><img src="hinh/bao-chi/806-202608201436461.webp" alt="Ảnh bài báo Báo Đà Nẵng: Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3" loading="lazy" referrerpolicy="no-referrer"><span><small>Báo Đà Nẵng · 20/08/2026</small><b>Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3</b></span></a>
    </div>
-   <div class="h3m-hq__body">
-    <span class="h3m-hq__kicker">★ Auto365.vn - Trụ Sở Chính</span>
-    <h3>3M Pro Shop &amp; 3M Training Center</h3>
-    <ul class="h3m-hq__pts">
-     <li><b>Chứng nhận 3M Pro Shop</b> cho các dòng phim ô tô cao cấp của 3M, hiệu lực 06/2026–06/2029</li>
-     <li><b>3M Training Center</b> – nơi đào tạo kỹ thuật viên theo quy trình 3M</li>
-     <li><b>Bảo hành điện tử 3M 10 năm</b> cho cả 6 cấu hình, kích hoạt ngay khi bàn giao xe</li>
-     <li><b>Khuyến mãi:</b> miễn phí tháo &amp; vệ sinh phim cũ, tặng rửa xe + hút bụi, vệ sinh kính + tẩy ố kính (theo từng đợt)</li>
-     <li><b>Giá niêm yết theo bảng giá 3M</b>, đã gồm VAT – thi công trọn xe khoảng 2–4 giờ</li>
-    </ul>
-    <a class="h3m-gr h3m-gr--dark h3m-gr--hq" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
-    <p class="h3m-hq__addr">🕗 8:30 – 18:30, Thứ 2 – Chủ nhật<br>📍 Số 4/4/1/7 Đường Số 3, P. Hiệp Bình (Thủ Đức cũ), TP.HCM – gần KĐT Vạn Phúc</p>
-    <div class="h3m-hq__cta">
-     <a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch tại 3M Pro Shop →</a>
-     <a class="h3m-btn h3m-btn--ghost" href="tel:0365365365" data-track="call_hq">☎ 0365 365 365</a>
-     <a class="h3m-btn h3m-btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Auto365.vn+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh&amp;destination_place_id=ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener">Chỉ đường</a>
+  </div>
+  <div class="pm-outlets" aria-label="Các báo đã đưa tin"><span>Thanh Niên</span><span>AutoPro</span><span>VietNamNet</span><span>Báo Đà Nẵng</span><span>VietnamBiz</span><span>Báo Đồng Nai</span><span>Dân Việt</span><span>Sức khỏe & Đời sống</span><span>GenK</span><span>Việt Nam Mới</span><span>2Sao</span><span>Tin tức Online</span><span>Xã hội</span><span>Eva</span><span>Thể thao & Văn hóa</span><span>Kinh tế & Đời sống</span><span>Tinh Tế</span><span>Tuổi trẻ & Xã hội</span></div>
+  <details class="pm-pall"><summary class="pm-btn pm-btn--o">Xem toàn bộ 19 bài báo</summary>
+   <ol class="pm-plist"><li><a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener"><small>Thanh Niên · 22/06/2026</small>3M Pro Shop & Training Center tiên phong tại Việt Nam vận hành tại TP.HCM</a></li><li><a href="https://autopro.com.vn/sau-khi-khai-truong-3m-pro-shop-thuc-su-van-hanh-nhu-the-nao-177260821102431487.chn" target="_blank" rel="noopener"><small>AutoPro · 21/08/2026</small>Sau khi khai trương, 3M Pro Shop thực sự vận hành như thế nào?</a></li><li><a href="https://vietnamnet.vn/ca-nhan-hoa-cau-hinh-3m-crystalline-cr-blk-nang-tam-trai-nghiem-lai-xe-2547266.html" target="_blank" rel="noopener"><small>VietNamNet · 20/08/2026</small>Cá nhân hóa cấu hình 3M Crystalline CR BLK - nâng tầm trải nghiệm lái xe</a></li><li><a href="https://baodanang.vn/nen-chon-phim-cach-nhiet-theo-tung-vi-tri-kinh-cua-vinfast-vf3-3349409.html" target="_blank" rel="noopener"><small>Báo Đà Nẵng · 20/08/2026</small>Nên chọn phim cách nhiệt theo từng vị trí kính của VinFast VF3</a></li><li><a href="https://vietnambiz.vn/tu-ma-phim-den-bao-hanh-dien-tu-3m-pro-shop-kiem-soat-quy-trinh-dich-vu-ra-sao-2026819171452177.htm" target="_blank" rel="noopener"><small>VietnamBiz · 19/08/2026</small>Từ mã phim đến bảo hành điện tử: 3M Pro Shop kiểm soát quy trình dịch vụ ra sao?</a></li><li><a href="https://baodongnai.com.vn/doanh-nhan-doanh-nghiep/dich-vu/202608/3m-pro-shop-vi-sao-xe-vinfast-khong-nen-dung-mot-cau-hinh-phim-cach-nhiet-co-dinh-c5a13d9" target="_blank" rel="noopener"><small>Báo Đồng Nai · 08/2026</small>3M Pro Shop: Vì sao xe VinFast không nên dùng một cấu hình phim cách nhiệt cố định?</a></li><li><a href="https://danviet.vn/tu-tphcm-den-cac-dia-phuong-nhu-cau-chuan-hoa-dich-vu-phim-cach-nhiet-va-ppf-d1437536.html" target="_blank" rel="noopener"><small>Dân Việt · 23/06/2026</small>Từ TP.HCM đến các địa phương: nhu cầu chuẩn hóa dịch vụ phim cách nhiệt và PPF</a></li><li><a href="https://giadinh.suckhoedoisong.vn/xe-gia-dinh-va-nhu-cau-chon-phim-cach-nhiet-dung-thong-so-dung-quy-trinh-172260623092027053.htm" target="_blank" rel="noopener"><small>Sức khỏe & Đời sống · 23/06/2026</small>Xe gia đình và nhu cầu chọn phim cách nhiệt đúng thông số, đúng quy trình</a></li><li><a href="https://genk.vn/cong-nghe-nano-gom-tren-3m-ceramic-nr-the-he-moi-va-cach-doc-thong-so-phim-cach-nhiet-165260622201911871.chn" target="_blank" rel="noopener"><small>GenK · 22/06/2026</small>Công nghệ nano-gốm trên 3M Ceramic NR thế hệ mới và cách đọc thông số phim cách nhiệt</a></li><li><a href="https://vietnammoi.vn/nguoi-dung-do-thi-quan-tam-hon-den-trai-nghiem-chong-nong-va-bao-ve-noi-that-xe-2026622192141609.htm" target="_blank" rel="noopener"><small>Việt Nam Mới · 22/06/2026</small>Người dùng đô thị quan tâm hơn đến trải nghiệm chống nóng và bảo vệ nội thất xe</a></li><li><a href="https://2sao.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116922.html" target="_blank" rel="noopener"><small>2Sao · 22/06/2026</small>Người mê chăm chút xế cưng nay có thêm điểm đến mới tại TP.HCM</a></li><li><a href="https://tintuconline.com.vn/nguoi-me-cham-chut-xe-cung-nay-co-them-diem-den-moi-tai-tp-hcm-5116923.html" target="_blank" rel="noopener"><small>Tin tức Online · 22/06/2026</small>5 điểm nổi bật sau khai trương 3M Pro Shop tại TP.HCM</a></li><li><a href="https://vietnambiz.vn/365group-dua-3m-pro-shop-vao-bai-toan-van-hanh-he-thong-auto365-hon-90-diem-2026622174037156.htm" target="_blank" rel="noopener"><small>VietnamBiz · 22/06/2026</small>365Group đưa 3M Pro Shop vào bài toán vận hành hệ thống Auto365 hơn 90 điểm</a></li><li><a href="https://xahoi.com.vn/o-to-xe-may/3m-pro-shop-tai-tphcm-mo-them-lua-chon-trai-nghiem-phim-cach-nhiet-ppf-va-wrap-film-d404905.html" target="_blank" rel="noopener"><small>Xã hội · 22/06/2026</small>3M Pro Shop tại TP.HCM mở thêm lựa chọn trải nghiệm phim cách nhiệt, PPF và Wrap Film</a></li><li><a href="https://eva.vn/tieu-dung/khoang-xe-thoai-mai-hon-voi-phim-cach-nhiet-3m-ceramic-nr-the-he-moi-c2a674705.html" target="_blank" rel="noopener"><small>Eva · 22/06/2026</small>Khoang xe thoải mái hơn với phim cách nhiệt 3M Ceramic NR thế hệ mới</a></li><li><a href="https://thethaovanhoa.vn/sau-khai-truong-3m-pro-shop-tao-them-diem-trai-nghiem-dich-vu-o-to-chuan-3m-tai-tphcm-20260622160645881.htm" target="_blank" rel="noopener"><small>Thể thao & Văn hóa · 22/06/2026</small>Sau khai trương, 3M Pro Shop tạo thêm điểm trải nghiệm dịch vụ ô tô chuẩn 3M tại TP.HCM</a></li><li><a href="https://kinhtevadoisong.vn/tu-khai-truong-3m-pro-shop-nhin-ve-xu-huong-chuan-hoa-dich-vu-nang-cap-o-to-a246426.html" target="_blank" rel="noopener"><small>Kinh tế & Đời sống · 22/06/2026</small>Từ khai trương 3M Pro Shop nhìn về xu hướng chuẩn hóa dịch vụ nâng cấp ô tô</a></li><li><a href="https://tinhte.vn/thread/qc-kham-pha-he-sinh-thai-san-pham-3m-tai-3m-pro-shop.4154397/" target="_blank" rel="noopener"><small>Tinh Tế · bài quảng cáo · 22/06/2026</small>Khám phá hệ sinh thái sản phẩm 3M tại 3M Pro Shop</a></li><li><a href="https://tuoitrexahoi.vn/nhung-diem-dang-chu-y-sau-su-kien-khai-truong-3m-pro-shop-tai-tphcm-a220004.html" target="_blank" rel="noopener"><small>Tuổi trẻ & Xã hội</small>Những điểm đáng chú ý sau sự kiện khai trương 3M Pro Shop tại TPHCM</a></li></ol>
+   <p class="pm-note"><a class="pm-link" href="https://auto365.vn/bao-chi-noi-ve-auto365-365group-3m-pro-shop" target="_blank" rel="noopener">Trang tổng hợp báo chí trên auto365.vn →</a></p>
+  </details>
+ </div>
+</section>
+<section class="pm-sec pm-gray" id="chi-nhanh">
+ <div class="pm-wrap">
+  <span class="pm-kick">3M Pro Shop &amp; 3M Training Center</span>
+  <h2 class="pm-h2">Không gian <em>3M Pro Shop</em> TP.HCM – Auto365 Trụ sở chính</h2>
+  <p class="pm-lead">Địa chỉ dán phim cách nhiệt ô tô tại Hồ Chí Minh. Bấm vào ảnh để xem lớn.</p>
+  <div class="pm-shop">
+   <div class="pm-gal" data-lb-group="shop">
+    <button type="button" data-lb="hinh/pro-shop-mat-tien.webp" data-cap="Mặt tiền 3M Pro Shop – Toàn cảnh mặt tiền 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM" aria-label="Xem lớn: Mặt tiền 3M Pro Shop"><img src="hinh/pro-shop-mat-tien.webp" alt="Toàn cảnh mặt tiền 3M Pro Shop – Auto365 Center, Hiệp Bình, TP.HCM"><span>Mặt tiền 3M Pro Shop</span></button>
+    <button type="button" data-lb="hinh/pro-shop-showroom.webp" data-cap="Showroom – Khu trưng bày xe tại 3M Pro Shop Auto365" aria-label="Xem lớn: Showroom"><img src="hinh/pro-shop-showroom.webp" alt="Khu trưng bày xe tại 3M Pro Shop Auto365" loading="lazy"><span>Showroom</span></button>
+    <button type="button" data-lb="hinh/pro-shop-thi-cong.webp" data-cap="Khoang thi công – Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" aria-label="Xem lớn: Khoang thi công"><img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy"><span>Khoang thi công</span></button>
+    <button type="button" data-lb="hinh/le-trao-chung-nhan.webp" data-cap="Lễ trao chứng nhận – Lễ trao chứng nhận 3M Pro Shop cho Auto365" aria-label="Xem lớn: Lễ trao chứng nhận"><img src="hinh/le-trao-chung-nhan.webp" alt="Lễ trao chứng nhận 3M Pro Shop cho Auto365" loading="lazy"><span>Lễ trao chứng nhận</span></button>
+    <button type="button" data-lb="hinh/pro-shop-bmw-x5.webp" data-cap="Xe trong khoang – BMW X5 tại khoang thi công 3M Pro Shop Auto365" aria-label="Xem lớn: Xe trong khoang"><img src="hinh/pro-shop-bmw-x5.webp" alt="BMW X5 tại khoang thi công 3M Pro Shop Auto365" loading="lazy"><span>Xe trong khoang</span></button>
+    <button type="button" data-lb="hinh/pro-shop-vf8.webp" data-cap="Bàn giao xe – VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" aria-label="Xem lớn: Bàn giao xe"><img src="hinh/pro-shop-vf8.webp" alt="VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" loading="lazy"><span>Bàn giao xe</span></button>
+    <button type="button" data-lb="hinh/pro-shop-bmw.webp" data-cap="Khu trải nghiệm – Xe BMW tại 3M Pro Shop – Auto365 Center" aria-label="Xem lớn: Khu trải nghiệm"><img src="hinh/pro-shop-bmw.webp" alt="Xe BMW tại 3M Pro Shop – Auto365 Center" loading="lazy"><span>Khu trải nghiệm</span></button>
+   </div>
+   <aside class="pm-info">
+    <span class="pm-info__k">★ Auto365.vn – Trụ Sở Chính</span>
+    <h3>3M Pro Shop TP.HCM</h3>
+    <a class="h3m-gr" href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-track="google_reviews"><span class="h3m-gr__s">★★★★★</span><b>5,0</b><span>· 10 đánh giá trên Google</span></a>
+    <dl>
+     <div><dt>Địa chỉ</dt><dd>Số 4/4/1/7 Đường Số 3, P. Hiệp Bình (Thủ Đức cũ), TP.HCM – gần KĐT Vạn Phúc</dd></div>
+     <div><dt>Hotline</dt><dd><a href="tel:0365365365" data-track="call_shop">0365 365 365</a></dd></div>
+     <div><dt>Giờ làm việc</dt><dd>8:30 – 18:30, Thứ 2 – Chủ nhật</dd></div>
+     <div><dt>Chứng nhận</dt><dd>3M Pro Shop, hiệu lực 06/2026 – 06/2029</dd></div>
+    </dl>
+    <div class="pm-info__cta">
+     <button type="button" class="pm-btn pm-btn--r" data-open-lead>Đặt lịch tại 3M Pro Shop →</button>
+     <a class="pm-btn pm-btn--o" href="https://www.google.com/maps/dir/?api=1&amp;destination=Auto365.vn+Tr%E1%BB%A5+S%E1%BB%9F+Ch%C3%ADnh&amp;destination_place_id=ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener" data-dir>Chỉ đường</a>
+     <a class="pm-btn pm-btn--o" href="tel:0365365365" data-track="call_shop">Gọi</a>
     </div>
+   </aside>
+  </div>
+ </div>
+</section>
+<section class="pm-sec" id="quy-trinh">
+ <div class="pm-wrap">
+  <div class="pm-proc">
+   <div class="pm-proc__img"><img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy"></div>
+   <div>
+    <span class="pm-kick">Quy trình &amp; bảo hành</span>
+    <h2 class="pm-h2">Quy trình dán phim cách nhiệt ô tô tại <em>3M Pro Shop</em></h2>
+    <ol class="pm-stages">
+     <li><div><b>Tư vấn &amp; kiểm tra xe</b><span>Kiểm tra kính, phim cũ và chốt nhu cầu sử dụng.</span></div></li>
+     <li><div><b>Chọn cấu hình</b><span>Chọn mã phim kính lái, sườn, sau và chốt phạm vi dán.</span></div></li>
+     <li><div><b>Thi công</b><span>Đối chiếu vật liệu rồi thi công trong khoang 3M Pro Shop.</span></div></li>
+     <li><div><b>Kiểm tra, bàn giao &amp; eWarranty</b><span>Kiểm tra lại toàn xe, kích hoạt bảo hành điện tử 3M.</span></div></li>
+    </ol>
+    <details class="pm-steps8"><summary>Xem đủ 8 bước kiểm tra trước khi bàn giao</summary><ol><li>Kiểm tra xe</li><li>Chốt nhu cầu</li><li>Chọn mã phim</li><li>Chốt phạm vi</li><li>Đối chiếu vật liệu</li><li>Thi công</li><li>Kiểm tra lại</li><li>Bàn giao &amp; eWarranty</li></ol></details>
+    <p class="pm-note">Thời gian tham khảo cho cấu hình trọn xe khoảng 2–4 giờ với xe không cần xử lý đặc biệt; xe có phim cũ, nhiều keo, panorama hoặc kính lớn có thể cần thêm thời gian.</p>
+    <div class="pm-wr"><strong>10</strong><div><b>năm bảo hành điện tử 3M (eWarranty)</b>Ghi mã phim từng vị trí kính, ngày dán và hạn bảo hành – áp dụng cả 6 cấu hình.</div></div>
    </div>
   </div>
-  <div class="h3m-psg">
-   <img src="hinh/pro-shop-bmw.webp" alt="Xe BMW tại 3M Pro Shop – Auto365 Center" loading="lazy">
-   <img src="hinh/pro-shop-showroom.webp" alt="Khu trưng bày xe tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công phim cách nhiệt tại 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/le-trao-chung-nhan.webp" alt="Lễ trao chứng nhận 3M Pro Shop cho Auto365" loading="lazy">
-   <img src="hinh/pro-shop-bmw-x5.webp" alt="BMW X5 tại khoang thi công 3M Pro Shop Auto365" loading="lazy">
-   <img src="hinh/pro-shop-vf8.webp" alt="VinFast sau khi dán phim 3M tại 3M Pro Shop Auto365" loading="lazy">
-  </div>
  </div>
 </section>
-
-<section class="h3m-sec" id="quy-trinh">
- <div class="h3m-wrap">
-  <div class="h3m-steps8">
-   <h2 class="h3m-h2">Quy trình dán phim cách nhiệt ô tô: 8 bước <em>kiểm tra trước khi bàn giao</em></h2>
-   <p class="h3m-steps8__note">Thời gian thi công tham khảo cho cấu hình trọn xe khoảng 2–4 giờ với xe không cần xử lý đặc biệt.</p>
-   <ol class="h3m-tl">
-    <li><b>Kiểm tra xe</b></li>
-    <li><b>Chốt nhu cầu</b></li>
-    <li><b>Chọn mã phim</b></li>
-    <li><b>Chốt phạm vi</b></li>
-    <li><b>Đối chiếu vật liệu</b></li>
-    <li><b>Thi công</b></li>
-    <li><b>Kiểm tra lại</b></li>
-    <li><b>Bàn giao &amp; eWarranty</b></li>
-   </ol>
-  </div>
-   <div class="h3m-wr2"><span class="h3m-wr__big">10<small>năm</small></span><div><b>Bảo hành điện tử 3M (eWarranty)</b><span>Ghi mã phim từng vị trí kính, ngày dán và hạn bảo hành – áp dụng cả 6 cấu hình.</span></div><a class="h3m-btn h3m-btn--red" href="#dang-ky" data-open-lead>Đặt lịch dán phim →</a></div>
-  </div>
- </div>
-</section>
-
-<section class="h3m-sec h3m-sec--gray" id="faq">
- <div class="h3m-wrap h3m-ff">
-  <div class="h3m-faq">
-   <h2 class="h3m-h2">Câu hỏi thường gặp về dán phim cách nhiệt 3M</h2>
-   <details open><summary>Giá dán phim cách nhiệt 3M trọn xe ở TP.HCM bao nhiêu?</summary><p>Theo bảng giá 3M áp dụng từ 06/2026, giá trọn xe từ 5,9 triệu (Ceramic Hybrid, xe Minicar) đến 18,3 triệu (CR BLK PRO, xe SUV), đã gồm VAT. Giá cụ thể phụ thuộc cấu hình phim và nhóm xe.</p></details>
+<section class="pm-sec pm-gray" id="faq">
+ <div class="pm-wrap">
+  <h2 class="pm-h2">Câu hỏi thường gặp về dán phim cách nhiệt <em>3M</em></h2>
+  <div class="pm-faq">
+   <details open=""><summary>Giá dán phim cách nhiệt 3M trọn xe ở TP.HCM bao nhiêu?</summary><p>Theo bảng giá 3M áp dụng từ 06/2026, giá trọn xe từ 5,9 triệu (Ceramic Hybrid, xe Minicar) đến 18,3 triệu (CR BLK PRO, xe SUV), đã gồm VAT. Giá cụ thể phụ thuộc cấu hình phim và nhóm xe.</p></details>
    <details><summary>Dán phim cách nhiệt ô tô ở đâu tại Hồ Chí Minh?</summary><p>3M Pro Shop đặt tại Auto365 Center – trụ sở chính Auto365, số 4/4/1/7 Đường Số 3, P. Hiệp Bình (Thủ Đức cũ), TP.HCM – gần KĐT Vạn Phúc. Hotline 0365 365 365.</p></details>
    <details><summary>Phim cách nhiệt 3M bảo hành bao lâu?</summary><p>Cả 6 cấu hình phim 3M tại Auto365 được bảo hành 10 năm, kích hoạt bảo hành điện tử 3M (eWarranty) theo biển số xe.</p></details>
    <details><summary>Dán phim cách nhiệt ô tô mất bao lâu?</summary><p>Thời gian dán trọn xe thường khoảng 2–4 giờ với xe không cần xử lý đặc biệt; xe có phim cũ, nhiều keo, cửa sổ trời panorama hoặc kính lớn có thể cần thêm thời gian. Nên đặt lịch trước để 3M Pro Shop chuẩn bị phim và khoang thi công.</p></details>
    <details><summary>Nên chọn phim cách nhiệt 3M loại nào cho ô tô?</summary><p>Tùy ưu tiên của chủ xe: dòng Crystalline CR BLK cho kính lái trong, giảm chói, tầm nhìn rõ; Crystalline Hybrid kết hợp kính lái CR BLK với phim NR cho kính sườn/sau để cân đối chi phí; Ceramic IR và Ceramic Hybrid phù hợp ngân sách vừa. Kỹ thuật viên tư vấn theo dòng xe và nhu cầu, có mẫu thực tế để xem trước khi chọn.</p></details>
-   <details><summary>Làm sao biết phim cách nhiệt 3M chính hãng?</summary><p>Dựa vào 3 yếu tố: logo &quot;3M&quot; in mờ rải rác trên mặt phim; có mã tra cứu bảo hành điện tử trên hệ thống 3M Việt Nam theo biển số xe; thi công tại 3M Pro Shop với phim nhập qua 365Group – nhà phân phối chính thức 3M.</p></details>
+   <details><summary>Làm sao biết phim cách nhiệt 3M chính hãng?</summary><p>Dựa vào 3 yếu tố: logo "3M" in mờ rải rác trên mặt phim; có mã tra cứu bảo hành điện tử trên hệ thống 3M Việt Nam theo biển số xe; thi công tại 3M Pro Shop với phim nhập qua 365Group – nhà phân phối chính thức 3M.</p></details>
    <details><summary>Dán phim cách nhiệt kính lái có ảnh hưởng đăng kiểm không?</summary><p>Kính lái cần đủ sáng để giữ tầm nhìn khi đi đêm, trời mưa hay vào hầm, nên ưu tiên mã có độ truyền sáng cao và độ trong tốt. Phim phải phẳng, không bong tróc, không làm méo hay cản tầm quan sát, và cấu hình cần tuân thủ quy định hiện hành tại thời điểm kiểm định. Kỹ thuật viên tư vấn mã kính lái phù hợp trước khi thi công.</p></details>
    <details><summary>Có được xem mẫu phim trên xe trước khi dán không?</summary><p>Có. Tại 3M Pro Shop – Auto365 Trụ sở chính có mẫu phim thực tế để chủ xe xem và so sánh các cấu hình trước khi chọn.</p></details>
    <details><summary>3M Pro Shop làm việc giờ nào, có làm cuối tuần không?</summary><p>3M Pro Shop – Auto365 Trụ sở chính làm việc 8:30 – 18:30 từ Thứ 2 đến Chủ nhật. Nên đặt lịch trước qua hotline 0365 365 365 để được chuẩn bị phim và khoang thi công.</p></details>
   </div>
-  <div class="h3m-cta2">
-   <div><b>Đặt lịch dán phim 3M tại 3M Pro Shop</b><span>Để lại số điện thoại – cố vấn gọi lại báo giá theo xe của bạn.</span></div>
-   <div class="h3m-cta2__b"><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Nhận tư vấn &amp; báo giá →</button><a href="tel:0365365365" data-track="call_cta">☎ 0365 365 365</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo</a></div>
+ </div>
+</section>
+
+<section class="pm-sec pm-dark" id="dat-lich">
+ <div class="pm-wrap pm-book">
+  <div>
+   <span class="pm-kick">Đặt lịch 3M Pro Shop</span>
+   <h2>Đặt lịch dán phim 3M tại 3M Pro Shop TP.HCM</h2>
+   <p>Để lại số điện thoại – cố vấn gọi lại trong giờ làm việc (8:30–18:30) để báo giá theo xe và xếp lịch thi công.</p>
+   <div class="pm-book__alt"><a class="pm-btn pm-btn--o" href="tel:0365365365" data-track="call_book">☎ 0365 365 365</a><a class="pm-btn pm-btn--o" href="https://zalo.me/0365365365" target="_blank" rel="noopener">Nhắn Zalo</a></div>
   </div>
-  <form class="h3m-form" id="dang-ky" hidden action="/api/leads" method="post" novalidate>
-   <h2>Đăng ký tư vấn ngay</h2>
-   <p>Để lại thông tin, 3M Pro Shop – Auto365 trụ sở chính sẽ gọi lại tư vấn cấu hình và báo giá theo xe.</p>
-   <div class="h3m-form__g">
-    <input class="h3m-in" name="fullname" aria-label="Họ và tên" placeholder="Họ và tên *" autocomplete="name" required>
-    <input class="h3m-in" name="phone" type="tel" aria-label="Số điện thoại" placeholder="Số điện thoại *" inputmode="tel" autocomplete="tel" required>
-    <input class="h3m-in" name="car_model" aria-label="Dòng xe / đời xe" placeholder="Dòng xe (vd: Camry 2024)">
-    <select class="h3m-sel h3m-in" name="province" aria-label="Khu vực"><option>TP.HCM</option><option>Bình Dương</option><option>Đồng Nai</option><option>Long An / Tây Ninh</option><option>Bà Rịa – Vũng Tàu</option><option>Tỉnh/thành khác</option></select>
-    <select class="h3m-sel h3m-in" name="vehicle_group" aria-label="Nhóm xe"><option value="">Nhóm xe (chưa rõ cũng được)</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select>
-    <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
-    <select class="h3m-sel" name="package_name" id="f-pk" aria-label="Gói quan tâm"><option value="">Gói phim quan tâm (chưa rõ cũng được)</option></select>
-    <input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-    <label class="ck full"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
-   </div>
-   <button class="h3m-btn h3m-btn--red" type="submit">Nhận tư vấn ngay →</button>
-   <div class="h3m-msg" id="f-msg" role="status"></div>
-   <div class="h3m-form__alt"><a class="h3m-btn h3m-btn--ghost" href="tel:0365365365">☎ 0365 365 365</a><a class="h3m-btn h3m-zalo" href="https://zalo.me/0365365365" target="_blank" rel="noopener">Nhắn Zalo</a></div>
+  <form class="pm-form" id="dang-ky" action="/api/leads" method="post" novalidate data-lead="main">
+   <label>Số điện thoại *<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
+   <label>Họ và tên<input name="fullname" type="text" autocomplete="name" placeholder="Không bắt buộc"></label>
+   <label>Dòng xe / đời xe<input name="car_model" type="text" placeholder="VD: Camry 2024, VF8"></label>
+   <label>Gói quan tâm<select name="package_name" id="f-pk"><option value="">Chưa chắc, cần tư vấn</option></select></label>
+   <input type="hidden" name="vehicle_group"><input type="hidden" name="package_id"><input type="hidden" name="price_displayed"><input type="hidden" name="province" value="TP.HCM">
+   <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
+   <input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+   <label class="ck full"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
+   <button class="pm-btn pm-btn--r full" type="submit">Gửi yêu cầu đặt lịch →</button>
+   <div class="h3m-msg full" role="status"></div>
   </form>
  </div>
 </section>
+
+<dialog class="pm-lb" id="pm-lb" aria-label="Xem ảnh lớn"><figure><img alt=""><figcaption></figcaption></figure><button type="button" data-lb-x aria-label="Đóng">×</button><button type="button" data-lb-p aria-label="Ảnh trước">‹</button><button type="button" data-lb-n aria-label="Ảnh sau">›</button></dialog>
 
 <footer class="h3m-foot">
  <div class="h3m-wrap"><b>Auto365 – thuộc 365Group</b> · Trụ sở chính: Số 4/4/1/7 Đường Số 3, P. Hiệp Bình, TP.HCM · Hotline <a href="tel:0365365365">0365 365 365</a> · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Tìm hiểu thêm về phim 3M</a></div>
@@ -706,16 +864,17 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <form class="h3m-modal__f" action="/api/leads" method="post" novalidate data-lead="popup">
   <button type="button" class="h3m-modal__x" data-close aria-label="Đóng form tư vấn">×</button>
   <h2 class="full" id="h3m-modal-t">Nhận tư vấn miễn phí</h2>
-  <p class="h3m-modal__sla full">Cố vấn 3M Pro Shop gọi lại trong giờ làm việc (8:00–18:30).</p>
+  <p class="h3m-modal__sla full">Cố vấn 3M Pro Shop gọi lại trong giờ làm việc (8:30–18:30).</p>
   <p class="h3m-modal__pk full" id="h3m-modal-pk" hidden></p>
-  <label>Họ và tên<input name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
-  <label>Số điện thoại<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
+  <label>Họ và tên <small>(không bắt buộc)</small><input name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên"></label>
+  <label>Số điện thoại *<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
   <label>Khu vực<select name="province"><option>TP.HCM</option><option>Bình Dương</option><option>Đồng Nai</option><option>Long An / Tây Ninh</option><option>Bà Rịa – Vũng Tàu</option><option>Tỉnh/thành khác</option></select></label>
   <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input name="car_model" type="text" placeholder="VD: Camry 2024, VF8, CX-5"></label>
   <details class="h3m-modal__opt full"><summary>Thêm thông tin để tư vấn sát hơn <small>(không bắt buộc)</small></summary><div class="h3m-modal__optg"><label>Nhóm xe<select name="vehicle_group"><option value="">Chưa rõ</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select></label>
   <label>Nhu cầu ưu tiên<select name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option selected>Chưa chắc, cần tư vấn</option></select></label>
   <label>Gói đang quan tâm<select name="package_name"><option value="">Chưa chắc, cần tư vấn</option><option>3M CR BLK PRO</option><option>3M CR BLK</option><option>3M Crystalline Hybrid Pro</option><option>3M Crystalline Hybrid</option><option>3M Ceramic IR</option><option>3M Ceramic Hybrid</option></select></label>
   <label class="full">Nhu cầu thêm <small>(không bắt buộc)</small><textarea name="note" rows="2" placeholder="Hay đỗ xe ngoài trời, cần riêng tư, có panorama..."></textarea></label></div></details>
+  <input type="hidden" name="package_id"><input type="hidden" name="price_displayed">
   <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
   <input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
   <label class="ck full"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
@@ -726,117 +885,117 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 
 <script>
 (function(){
- // Giá trọn xe (triệu đ) theo bảng giá 3M 06/2026: [Minicar, Sedan, SUV]
+ // Giá trọn xe (triệu đ) theo bảng giá 3M 06/2026: [Minicar, Sedan, SUV] – giữ đúng như trang gốc
  var PK=[
-  {id:'cr-blk-pro',n:'CR BLK PRO',c:'Kính lái CR BLK 40 + sườn/sau 35/15',t:['Kính lái CR BLK 40','Ceramic','Giảm chói'],p:[12.9,15.5,18.3],b:'Cao cấp'},
-  {id:'cr-blk',n:'CR BLK',c:'Kính lái CR BLK 60/50 + sườn/sau 35/15',t:['Cách nhiệt cao','Ceramic','Tầm nhìn rõ'],p:[12.2,14.8,17.6]},
-  {id:'crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Kính lái CR BLK 40 + NR 25/15/5',t:['Trong suốt','Giảm chói','Cách nhiệt tốt'],p:[9.8,11.6,13.3]},
-  {id:'crystalline-hybrid',n:'Crystalline Hybrid',c:'Kính lái CR BLK 60/50 + NR 25/15/5',t:['Trong suốt','Giảm chói','Tầm nhìn rõ'],p:[9.0,10.8,12.5],b:'Cân bằng'},
-  {id:'ceramic-ir',n:'Ceramic IR',c:'Kính lái IR 50 + sườn/sau IR 25/15',t:['Cản hồng ngoại','Ceramic','Cân bằng chi phí'],p:[7.2,9.0,10.5]},
-  {id:'ceramic-hybrid',n:'Ceramic Hybrid',c:'Kính lái NR 35 + sườn/sau NR 25/15/5',t:['Lai ceramic + reflective','Chi phí tốt','Ngân sách vừa'],p:[5.9,7.9,9.5]}
+  {id:'cr-blk-pro',n:'CR BLK PRO',c:'Kính lái CR BLK 40 + sườn/sau 35/15',d:'Kính lái CR BLK 40 giảm chói, sườn/sau CR BLK 35/15 – cấu hình cao cấp của dòng Crystalline.',p:[12.9,15.5,18.3],b:'Cao cấp'},
+  {id:'cr-blk',n:'CR BLK',c:'Kính lái CR BLK 60/50 + sườn/sau 35/15',d:'Kính lái CR BLK 60/50 ưu tiên tầm nhìn rõ, sườn/sau CR BLK 35/15 đồng bộ một dòng phim.',p:[12.2,14.8,17.6]},
+  {id:'crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Kính lái CR BLK 40 + NR 25/15/5',d:'Kính lái CR BLK 40 giảm chói, sườn/sau dùng NR 25/15/5 để cân đối chi phí.',p:[9.8,11.6,13.3]},
+  {id:'crystalline-hybrid',n:'Crystalline Hybrid',c:'Kính lái CR BLK 60/50 + NR 25/15/5',d:'Kính lái CR BLK 60/50 trong suốt, sườn/sau NR 25/15/5 – lựa chọn cân bằng.',p:[9.0,10.8,12.5],b:'Cân bằng'},
+  {id:'ceramic-ir',n:'Ceramic IR',c:'Kính lái IR 50 + sườn/sau IR 25/15',d:'Trọn bộ dòng Ceramic IR cản hồng ngoại, chi phí vừa phải.',p:[7.2,9.0,10.5]},
+  {id:'ceramic-hybrid',n:'Ceramic Hybrid',c:'Kính lái NR 35 + sườn/sau NR 25/15/5',d:'Kính lái NR 35, sườn/sau NR 25/15/5 – lai ceramic + reflective, ngân sách vừa.',p:[5.9,7.9,9.5]}
  ];
+ var IMG={"cr-blk-pro":["hinh/goi/cr-blk-pro.webp","Toyota Fortuner dán phim 3M Crystalline CR BLK PRO tại 3M Pro Shop"],"cr-blk":["hinh/goi/cr-blk.webp","Ford Everest dán phim 3M Crystalline CR BLK tại 3M Pro Shop"],"crystalline-hybrid-pro":["hinh/goi/crystalline-hybrid-pro.webp","VinFast VF8 dán phim 3M Crystalline Hybrid PRO tại 3M Pro Shop"],"crystalline-hybrid":["hinh/goi/crystalline-hybrid.webp","Toyota Camry dán phim 3M Crystalline Hybrid tại 3M Pro Shop"],"ceramic-ir":["hinh/goi/ceramic-ir.webp","Showroom 3M Pro Shop – Auto365 Trụ sở chính"],"ceramic-hybrid":["hinh/goi/ceramic-hybrid.webp","Hyundai Accent dán phim 3M Ceramic Hybrid tại 3M Pro Shop"]};
+ var GN=['Minicar','Sedan','SUV/MPV'];
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
- var grid=document.getElementById('h3m-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk');
+ function byId(id){return PK.filter(function(x){return x.id===id})[0]}
+ function ev(n,p){if(window.gtag)gtag('event',n,p||{})}
+ function flash(el){el.classList.remove('is-flash');void el.offsetWidth;el.classList.add('is-flash');setTimeout(function(){el.classList.remove('is-flash')},600)}
+
+ // Lựa chọn dùng chung: nhóm xe (g) + gói (id)
+ var SEL={g:-1,id:'crystalline-hybrid'};
+ var grid=document.getElementById('pm-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk'),cmp=document.getElementById('pm-cmp');
  PK.forEach(function(k){
-  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'">'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
-   '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
-   '<div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
-   '<button type="button" class="h3m-btn h3m-btn--red h3m-card__cta" data-open-lead data-pk="'+k.n+'">Nhận báo giá gói này →</button>'+
-   '<div class="h3m-card__sub"><a href="tel:0365365365" data-track="call_pk">☎ Gọi tư vấn</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener" data-track="zalo_pk">Nhắn Zalo</a></div></article>');
+  grid.insertAdjacentHTML('beforeend','<article class="pm-pk" data-id="'+k.id+'"><div class="pm-pk__img"><img src="'+IMG[k.id][0]+'" alt="'+IMG[k.id][1].replace(/"/g,'&quot;')+'" loading="lazy">'+(k.b?'<span class="pm-pk__badge">'+k.b+'</span>':'')+'</div>'+
+   '<div class="pm-pk__b"><h3><em>3M</em> '+k.n+'</h3><p class="pm-pk__combo">'+k.c+'</p><p class="pm-pk__need">'+k.d+'</p>'+
+   '<div class="pm-pk__price"><span data-pl>Trọn xe từ</span><b data-pv>'+vnd(k.p[0])+'</b></div>'+
+   '<details class="pm-pk__all"><summary>Giá theo 3 nhóm xe</summary><table>'+k.p.map(function(v,i){return '<tr><td>'+GN[i]+'</td><td>'+vnd(v)+'</td></tr>'}).join('')+'</table></details>'+
+   '<button type="button" class="pm-btn pm-btn--r" data-open-lead data-pk="'+k.n+'" data-pkid="'+k.id+'">Nhận báo giá gói này →</button></div></article>');
   qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));
  });
- qs.value='crystalline-hybrid';
- var GN=['Minicar','Sedan','SUV/MPV'],MOB0=matchMedia('(max-width:640px)').matches;
- 
- // Lựa chọn của khách (gói + nhóm xe) dùng chung cho thẻ gói, bộ tra, popup và form cuối
- var SEL={pk:'',gr:''},qc=document.getElementById('q-car'),qo=document.getElementById('q-out'),fvg=document.getElementById('dang-ky').vehicle_group;
- function pkName(id){var k=PK.filter(function(x){return x.id===id})[0];return k?'3M '+k.n:''}
- function syncForms(){fs.value=SEL.pk;fvg.value=SEL.gr}
- function renderCards(){var g=qc.value===''?-1:+qc.value;
-  document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
-   c.querySelectorAll('.h3m-card__price tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
-   var b=c.querySelector('.h3m-card__cta');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g]})}
- function renderQuote(){var k=PK.filter(function(x){return x.id===qs.value})[0];
-  if(qc.value===''){qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
-  var g=+qc.value;SEL.pk='3M '+k.n;SEL.gr=GN[g];syncForms();
-  qo.innerHTML='<b>3M '+k.n+'</b> – '+GN[g]+': <b style="color:var(--r)">'+vnd(k.p[g])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+k.n+'" data-group="'+GN[g]+'">Nhận báo giá &amp; đặt lịch →</button>';
-  qo.classList.add('is-on')}
- qc.addEventListener('change',function(){renderCards();if(qo.classList.contains('is-on'))renderQuote()});
- qs.addEventListener('change',function(){if(qo.classList.contains('is-on'))renderQuote()});
- document.getElementById('q-go').addEventListener('click',renderQuote);
- renderCards();
- if(MOB0){var tr=document.querySelector('.h3m-hero .h3m-trust'),qw=document.querySelector('.h3m-quick');if(tr&&qw){tr.classList.add('h3m-trust--light');qw.insertAdjacentElement('afterend',tr)}}
+ cmp.innerHTML='<thead><tr><th>Cấu hình</th>'+GN.map(function(g,i){return '<th data-c="'+i+'">'+g+'</th>'}).join('')+'</tr></thead><tbody>'+PK.map(function(k){return '<tr><td>3M '+k.n+'</td>'+k.p.map(function(v,i){return '<td data-c="'+i+'">'+vnd(v)+'</td>'}).join('')+'</tr>'}).join('')+'</tbody>';
+ qs.value=SEL.id;
 
- // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần
- var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
+ var qp=document.getElementById('q-price'),qd=document.getElementById('q-desc'),qb=document.getElementById('q-cta'),fm=document.getElementById('dang-ky');
+ function render(fx){
+  var g=SEL.g,k=byId(SEL.id);
+  document.querySelectorAll('[data-seg] button').forEach(function(b){b.setAttribute('aria-checked',+b.dataset.g===g?'true':'false')});
+  document.querySelectorAll('.pm-pk').forEach(function(c){var p=byId(c.dataset.id),v=c.querySelector('[data-pv]'),btn=c.querySelector('[data-open-lead]');
+   c.querySelector('[data-pl]').textContent=g<0?'Trọn xe từ':'Trọn xe '+GN[g];v.textContent=vnd(p.p[g<0?0:g]);if(fx&&g>=0)flash(v);
+   c.querySelectorAll('tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
+   if(g<0){delete btn.dataset.group;delete btn.dataset.price}else{btn.dataset.group=GN[g];btn.dataset.price=vnd(p.p[g])}});
+  cmp.querySelectorAll('[data-c]').forEach(function(td){td.classList.toggle('is-on',+td.dataset.c===g)});
+  qb.dataset.pk=k.n;qb.dataset.pkid=k.id;
+  if(g<0){qp.textContent='Chọn nhóm xe';qd.textContent='3M '+k.n+' · giá hiển thị đã gồm VAT';delete qb.dataset.group;delete qb.dataset.price}
+  else{qp.textContent=vnd(k.p[g]);qd.textContent='3M '+k.n+' · '+GN[g]+' · đã gồm VAT';qb.dataset.group=GN[g];qb.dataset.price=vnd(k.p[g]);if(fx)flash(qp)}
+ }
+ document.querySelectorAll('[data-seg]').forEach(function(s){s.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;SEL.g=+b.dataset.g;render(true);ev('pick_vehicle_group',{vehicle_group:GN[SEL.g]})});
+  s.addEventListener('keydown',function(e){if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;e.preventDefault();SEL.g=((SEL.g<0?0:SEL.g)+(e.key==='ArrowRight'?1:2))%3;render(true);s.querySelectorAll('button')[SEL.g].focus()})});
+ qs.addEventListener('change',function(){SEL.id=qs.value;render(true);ev('select_package',{package_id:SEL.id,source:'quick'})});
+ render(false);
+ // Mobile: 4 ô tin cậy của Hero chuyển xuống sau bộ tra giá (giữ đúng hành vi trang gốc)
+ if(matchMedia('(max-width:640px)').matches){var tr=document.querySelector('.h3m-hero .h3m-trust'),qw=document.querySelector('.h3m-quick');if(tr&&qw){tr.classList.add('h3m-trust--light');qw.insertAdjacentElement('afterend',tr)}}
+
+ // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần (mobile 6)
+ var STEP=matchMedia('(max-width:640px)').matches?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
  function applyCases(){var m=cards.filter(function(c){return (!cf.loai||c.dataset.loai.split('|').indexOf(cf.loai)>-1)&&(!cf.brand||c.dataset.brand===cf.brand)});
-  var gEl=cards[0].parentNode,cols=getComputedStyle(gEl).gridTemplateColumns.split(' ').length||1,lim=Math.ceil(shown/cols)*cols;
+  var cols=getComputedStyle(cards[0].parentNode).gridTemplateColumns.split(' ').length||1,lim=Math.ceil(shown/cols)*cols;
   cards.forEach(function(c){c.hidden=true});m.forEach(function(c,i){c.hidden=i>=lim});
-  cnt.textContent='Hiển thị '+Math.min(lim,m.length)+'/'+m.length+' hồ sơ xe thực tế';moreC.hidden=m.length<=lim}
+  if(cnt)cnt.textContent='Hiển thị '+Math.min(lim,m.length)+'/'+m.length+' hồ sơ xe thực tế';moreC.hidden=m.length<=lim}
  document.querySelectorAll('.h3m-cfx__chips').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
   if(b.hasAttribute('data-plus')){g.querySelectorAll('.is-x').forEach(function(x){x.hidden=false});b.hidden=true;return}
   g.querySelectorAll('button').forEach(function(x){x.classList.toggle('is-on',x===b)});cf[g.dataset.f]=b.dataset.v;shown=STEP;applyCases()})});
  moreC.addEventListener('click',function(){shown+=STEP;applyCases()});applyCases();
- var rzT,rzW=innerWidth;addEventListener('resize',function(){clearTimeout(rzT);rzT=setTimeout(function(){if(innerWidth===rzW)return;rzW=innerWidth;var st=matchMedia('(max-width:640px)').matches?6:12;shown=Math.max(st,Math.ceil(shown/STEP)*st);STEP=st;applyCases()},150)});
- // Báo chí: dải nhiều thẻ, mỗi 3,5 giây trượt sang 1 bài (nhân đôi danh sách để quay vòng)
- var pl=document.querySelector('.h3m-pl'),mq=document.querySelector('.h3m-mq'),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
- pl.querySelectorAll('li').forEach(function(li){li.hidden=false;li.classList.remove('is-more')});
- var pN=pl.children.length;[].slice.call(pl.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute('aria-hidden','true');c.querySelector('a').tabIndex=-1;pl.appendChild(c)});
- document.querySelector('[data-more=press]').hidden=true;
- var pI=0,pT,pCnt=document.querySelector('.h3m-pnav__n');
- function pStep(){return pl.children[0].getBoundingClientRect().width+16}
- function pGo(i,anim){pI=i;pl.style.transition=anim?'transform .6s ease':'none';pl.style.transform='translateX('+(-pI*pStep())+'px)';if(pCnt)pCnt.textContent=((pI%pN+pN)%pN+1)+' / '+pN}
- pl.addEventListener('transitionend',function(){if(pI>=pN)pGo(pI-pN,false)});
- function pNext(d){if(pI+d<0){pGo(pI+pN,false);pl.offsetWidth}pGo(pI+d,true)}
- function pPlay(){clearInterval(pT);if(!still)pT=setInterval(function(){pNext(1)},3500)}
- mq.addEventListener('mouseenter',function(){clearInterval(pT)});mq.addEventListener('mouseleave',pPlay);
- document.querySelectorAll('[data-pnav]').forEach(function(b){b.addEventListener('click',function(){pNext(+b.dataset.pnav);pPlay()})});
- var pX;mq.addEventListener('touchstart',function(e){pX=e.touches[0].clientX;clearInterval(pT)},{passive:true});
- mq.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-pX;if(Math.abs(dx)>40)pNext(dx<0?1:-1);pPlay()});
- addEventListener('resize',function(){pGo(pI,false)});pGo(0,false);pPlay();
+ var rzW=innerWidth,rzT;addEventListener('resize',function(){clearTimeout(rzT);rzT=setTimeout(function(){if(innerWidth===rzW)return;rzW=innerWidth;var st=matchMedia('(max-width:640px)').matches?6:12;shown=Math.max(st,Math.ceil(shown/STEP)*st);STEP=st;applyCases()},150)});
 
- // Lead form: chỉ báo thành công khi API trả {"success": true}
+ // Lightbox ảnh chứng nhận / 3M Pro Shop: ←/→ chuyển ảnh, Esc đóng
+ var lb=document.getElementById('pm-lb'),lbI=lb.querySelector('img'),lbC=lb.querySelector('figcaption'),lbList=[],lbK=0,lbFrom;
+ function lbShow(i){lbK=(i+lbList.length)%lbList.length;var b=lbList[lbK];lbI.src=b.dataset.lb;lbI.alt=b.querySelector('img').alt;lbC.textContent=b.dataset.cap}
+ document.addEventListener('click',function(e){var b=e.target.closest('[data-lb]');if(!b||!lb.showModal)return;lbFrom=b;lbList=[].slice.call(b.closest('[data-lb-group]').querySelectorAll('[data-lb]'));lbShow(lbList.indexOf(b));lb.showModal()});
+ lb.addEventListener('click',function(e){if(e.target===lb||e.target.closest('[data-lb-x]'))lb.close();else if(e.target.closest('[data-lb-p]'))lbShow(lbK-1);else if(e.target.closest('[data-lb-n]'))lbShow(lbK+1)});
+ lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')lbShow(lbK-1);if(e.key==='ArrowRight')lbShow(lbK+1)});
+ lb.addEventListener('close',function(){if(lbFrom)lbFrom.focus()});
+
+ // Lead form: chỉ báo thành công khi API trả {"success": true}; chống gửi trùng khi đang gửi
  function bindLead(f){
-  var msg=f.querySelector('.h3m-msg');
+  var msg=f.querySelector('.h3m-msg'),busy=false;
   function show(t,ok){msg.textContent=t;msg.className='h3m-msg '+(ok?'ok':'err')}
   f.addEventListener('submit',function(e){
-   e.preventDefault();
-   var name=f.fullname.value.trim(),phone=f.phone.value.replace(/[\s.\-]/g,'');
-   if(!name)return show('Vui lòng nhập họ tên.');
-   if(!/^0(3|5|7|8|9)\d{8}$/.test(phone))return show('Số điện thoại chưa đúng (vd: 0365 365 365).');
+   e.preventDefault();if(busy)return;
+   var phone=f.phone.value.replace(/[\s.\-]/g,'');
+   if(!/^0(3|5|7|8|9)\d{8}$/.test(phone)){f.phone.focus();return show('Số điện thoại chưa đúng (vd: 0365 365 365).')}
    if(!f.consent.checked)return show('Vui lòng xác nhận đồng ý để Auto365 liên hệ.');
    var d=new FormData(f),q=new URLSearchParams(location.search);
-   d.set('phone',phone);d.set('service','Phim cách nhiệt 3M');d.set('province',d.get('province')||'TP.HCM');
+   d.set('phone',phone);d.set('fullname',(f.fullname.value||'').trim());d.set('service','Phim cách nhiệt 3M');d.set('province',d.get('province')||'TP.HCM');
    d.set('source_page','Landing 3M HCM'+(f.dataset.lead?' – '+f.dataset.lead:''));d.set('source_url',location.href);d.set('referrer',document.referrer||'');
-   ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function(k){d.set(k,q.get(k)||'')});
-   var trackedPackage=String(d.get('package_name')||''),trackedGroup=String(d.get('vehicle_group')||'');
-   var btn=f.querySelector('button[type=submit]');btn.disabled=true;
+   ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid','fbclid'].forEach(function(k){d.set(k,q.get(k)||'')});
+   var tp=String(d.get('package_name')||''),tg=String(d.get('vehicle_group')||'');
+   var btn=f.querySelector('button[type=submit]');busy=true;btn.disabled=true;show('Đang gửi…',true);
    fetch(f.action,{method:'POST',body:d}).then(function(r){return r.json()}).then(function(j){
-    if(j&&j.success===true){show('Đã nhận thông tin! Auto365 sẽ gọi lại cho bạn sớm.',true);if(window.gtag)gtag('event','generate_lead',{form_id:'landing_3m_hcm_'+(f.dataset.lead||'main'),package_name:trackedPackage,vehicle_group:trackedGroup});f.reset()}
+    if(j&&j.success===true){show('Đã nhận thông tin! Cố vấn 3M Pro Shop sẽ gọi lại cho bạn sớm.',true);ev('generate_lead',{form_id:'landing_3m_hcm_'+(f.dataset.lead||'main'),package_name:tp,vehicle_group:tg});f.reset()}
     else throw 0;
-   }).catch(function(){show('Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo.')}).then(function(){btn.disabled=false});
+   }).catch(function(){show('Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo.')}).then(function(){busy=false;btn.disabled=false});
   });
  }
- bindLead(document.getElementById('dang-ky'));
+ bindLead(fm);
  var dlg=document.getElementById('h3m-modal'),mf=dlg.querySelector('form'),mpk=document.getElementById('h3m-modal-pk');
  bindLead(mf);
- fs.addEventListener('change',function(){SEL.pk=fs.value});fvg.addEventListener('change',function(){SEL.gr=fvg.value});
- mf.package_name.addEventListener('change',function(){SEL.pk=mf.package_name.value});mf.vehicle_group.addEventListener('change',function(){SEL.gr=mf.vehicle_group.value});
+ // Popup chỉ mở khi khách chủ động bấm; truyền gói + nhóm xe + giá đang xem
  document.addEventListener('click',function(e){
-  var o=e.target.closest('[data-open-lead]');
-  if(!o&&!e.target.closest('a,button,input,select,textarea')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
-  var pk=o.dataset.pk?'3M '+o.dataset.pk:SEL.pk,gr=o.dataset.group||SEL.gr;
-  if(o.dataset.pk){SEL.pk=pk;if(o.dataset.group)SEL.gr=o.dataset.group}
-  mf.package_name.value=pk;mf.vehicle_group.value=gr;syncForms();
-  mpk.hidden=!pk;mpk.innerHTML=pk?'Gói đã chọn: <b>'+pk+'</b>'+(gr?' · '+gr:''):'';
+  var o=e.target.closest('[data-open-lead]');if(!o)return;
+  if(!dlg.showModal){location.hash='dat-lich';return}
+  e.preventDefault();
+  var k=o.dataset.pkid?byId(o.dataset.pkid):null,pk=k?'3M '+k.n:'',gr=o.dataset.group||(SEL.g>=0?GN[SEL.g]:''),pr=o.dataset.price||(k&&SEL.g>=0?vnd(k.p[SEL.g]):'');
+  mf.package_name.value=pk;mf.vehicle_group.value=gr;mf.package_id.value=k?k.id:'';mf.price_displayed.value=pr;
+  fm.package_name.value=pk;fm.vehicle_group.value=gr;fm.package_id.value=k?k.id:'';fm.price_displayed.value=pr;
+  mpk.hidden=!pk;mpk.innerHTML=pk?'Gói đã chọn: <b>'+pk+'</b>'+(gr?' · '+gr:'')+(pr?' · '+pr:''):'';
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
-  if(dlg.showModal)dlg.showModal();else location.hash='dang-ky';
-  if(window.gtag)gtag('event','open_lead_popup',{package_name:pk});
-  setTimeout(function(){mf.fullname.focus()},50);
+  dlg.showModal();if(k)ev('select_package',{package_id:k.id,vehicle_group:gr,price_displayed:pr,source:'cta'});ev('open_lead_popup',{package_name:pk});
+  setTimeout(function(){mf.phone.focus()},50);
  });
  dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.closest('[data-close]'))dlg.close()});
+ fs.addEventListener('change',function(){var k=PK.filter(function(x){return '3M '+x.n===fs.value})[0];fm.package_id.value=k?k.id:'';fm.price_displayed.value=k&&SEL.g>=0?vnd(k.p[SEL.g]):'';fm.vehicle_group.value=SEL.g>=0?GN[SEL.g]:''});
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"],a[href*="zalo.me"],a[data-dir]');if(!a)return;ev(a.hasAttribute('data-dir')?'click_directions':a.href.indexOf('tel:')===0?'click_call':'click_zalo',{link_url:a.href})});
 })();
- document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"],a[href*="zalo.me"]');if(a&&window.gtag)gtag('event',a.href.indexOf('tel:')===0?'click_call':'click_zalo',{link_url:a.href})});
 </script>
 </body>
 </html>
