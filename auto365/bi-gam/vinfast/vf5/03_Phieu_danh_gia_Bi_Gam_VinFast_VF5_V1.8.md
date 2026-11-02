@@ -4,9 +4,10 @@
 
 | Trường | Giá trị |
 |---|---|
+| Hotfix 02/11/2026 (audit 01/11) | (1) Link gọi: mỗi số một tel: riêng ở bộ tìm (tìm kiếm, chọn tỉnh, gần tôi) và danh sách dự phòng — 33 bản ghi nhiều số, không còn href ghép; (2) nút MIỀN NAM 21 → 24 (41/26/24 = 91); (3) thẻ Auto365 Quảng Ninh (Hạ Long) trỏ hồ sơ riêng /chi-nhanh/quang-ninh/ha-long; (4) câu chuẩn dịch vụ ghi rõ: cùng giá thiết bị niêm yết, bảo hành theo chính sách từng mã, pát/công/phụ kiện báo sau khi xem xe. Đã kiểm DOM sau sửa (Quảng Ninh 8 thẻ, Móng Cái 2 link). lastReviewed giữ 26/10 |
 | Phiếu duyệt U3 V1.9 | **PASS — ĐÃ DUYỆT 30/10/2026**: U1 giao diện/đa thiết bị, U2 form/CRM/tracking, U3 hồ sơ 02/03/04. Kỹ thuật: Nguyễn Quang Đạo; SEO: Ngọc Trân. File: [Phieu_U3_Bi_Gam_VinFast_VF5_V19_DA_DUYET_FINAL_20261030.pdf](Phieu_U3_Bi_Gam_VinFast_VF5_V19_DA_DUYET_FINAL_20261030.pdf). Production (index/GSC, redirect, mapping CMS) ghi nhận riêng khi đăng |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `15165edd982bb943a1f08ac38e7f973d7eeb2a352b56f4ec0234d762bd18a685` |
+| SHA-256 index.html | `5fbb3278103c4ed685bf650ddb3c2bcc0f13ca64d9f990daf3c3fffc154f49f0` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF5 |

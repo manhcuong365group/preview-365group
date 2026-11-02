@@ -4,8 +4,9 @@
 
 | Trường | Giá trị |
 |---|---|
+| Hotfix 02/11/2026 (audit 01/11) | (1) Link gọi: mỗi số một tel: riêng ở bộ tìm (tìm kiếm, chọn tỉnh, gần tôi) và danh sách dự phòng — 33 bản ghi nhiều số, không còn href ghép; (2) nút MIỀN NAM 21 → 24 (41/26/24 = 91); (3) thẻ Auto365 Quảng Ninh (Hạ Long) trỏ hồ sơ riêng /chi-nhanh/quang-ninh/ha-long; (4) câu chuẩn dịch vụ ghi rõ: cùng giá thiết bị niêm yết, bảo hành theo chính sách từng mã, pát/công/phụ kiện báo sau khi xem xe. Đã kiểm DOM sau sửa (Quảng Ninh 8 thẻ, Móng Cái 2 link). lastReviewed giữ 26/10 |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `902c9255193add5ece128a83ea64b53cdda50d1584bd515c25b92f7a625c0f6b` |
+| SHA-256 index.html | `7ab26bea663adf5f7ebcb83621437bb2c6afd5418d2119e2e673678044534405` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng VF MPV 7 |
