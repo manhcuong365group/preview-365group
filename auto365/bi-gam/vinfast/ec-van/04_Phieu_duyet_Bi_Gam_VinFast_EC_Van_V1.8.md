@@ -5,13 +5,14 @@
 | Trường | Giá trị |
 |---|---|
 | Hotfix 02/11/2026 (audit 01/11) | (1) Link gọi: mỗi số một tel: riêng ở bộ tìm (tìm kiếm, chọn tỉnh, gần tôi) và danh sách dự phòng — 33 bản ghi nhiều số, không còn href ghép; (2) nút MIỀN NAM 21 → 24 (41/26/24 = 91); (3) thẻ Auto365 Quảng Ninh (Hạ Long) trỏ hồ sơ riêng /chi-nhanh/quang-ninh/ha-long; (4) câu chuẩn dịch vụ ghi rõ: cùng giá thiết bị niêm yết, bảo hành theo chính sách từng mã, pát/công/phụ kiện báo sau khi xem xe. Đã kiểm DOM sau sửa (Quảng Ninh 8 thẻ, Móng Cái 2 link). lastReviewed giữ 26/10 |
+| Phiếu duyệt U3 V1.9 | **PASS — ĐÃ DUYỆT 02/11/2026**: U1 giao diện/đa thiết bị, U2 tương tác/tra cứu cơ sở, U3 hồ sơ (feedback R6). Kỹ thuật: Nguyễn Quang Đạo. File: [Phieu_U3_Bi_Gam_VinFast_EC_Van_V19_DA_DUYET_FINAL_THEO_MAU_20261102.pdf](Phieu_U3_Bi_Gam_VinFast_EC_Van_V19_DA_DUYET_FINAL_THEO_MAU_20261102.pdf). Production (map URL/OG, robots, sitemap, lead live) là checklist phát hành riêng |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `d847eafa1b2b60d1eae9e6652f149bf7623a00ea3c3f992747dd1fbf932cd3b0` |
+| SHA-256 index.html | `fd094249f47519a2f76e629c311e001264b4bde68c3916a61ddd0c8d08f56a83` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng EC Van |
 | Danh bạ | Địa chỉ + điện thoại đồng bộ theo auto365.vn/chi-nhanh ngày 30/10/2026; quy mô hệ thống giữ "90+" (chủ trang chốt). Bộ tìm đủ 91 cơ sở như /chi-nhanh (thêm 3M Pro Shop, Bình Dương CN2, CN3 ngày 30/10): "90+ cơ sở trong danh bạ · 33 tỉnh thành" (Bắc 41/Trung 26/Nam 24); danh sách dự phòng giữ DIV ẩn theo quyết định chủ trang; có link /chi-nhanh trước bộ tìm |
-| Còn CX — người đóng | Phạm vi xe: tất cả áp dụng bản tiêu chuẩn (chủ trang chốt 30/10, đã ghi trên trang); Chuẩn dịch vụ: tất cả cơ sở cùng nhận lắp, cùng giá, bảo hành, quy trình (chủ trang chốt 30/10, đã ghi dưới tiêu đề bộ tìm); lead–CRM (IT). UI điện thoại + máy tính bảng: IT đã test thật xong 30/10; map URL/OG production (SEO/IT) |
+| Còn CX — người đóng | Phạm vi xe: tất cả áp dụng bản tiêu chuẩn (chủ trang chốt 30/10, đã ghi trên trang); Chuẩn dịch vụ: tất cả cơ sở cùng nhận lắp, cùng giá, bảo hành, quy trình (chủ trang chốt 30/10, đã ghi dưới tiêu đề bộ tìm); Không còn — U1–U3 PASS đã duyệt theo phiếu Phieu_U3_Bi_Gam_VinFast_EC_Van_V19_DA_DUYET_FINAL_THEO_MAU_20261102.pdf; map URL/OG production (SEO/IT) |
 
 Các mục ngày 24/26/27/28/29 bên dưới là lịch sử; SHA trong các mục đó không còn là bản hiện hành.
 
