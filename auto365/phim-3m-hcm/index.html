@@ -429,6 +429,17 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-hero .h3m-trust{grid-template-columns:repeat(3,auto);justify-content:start;margin-top:22px;padding-top:0;border-top:0}
 .h3m-hero .h3m-trust>div{padding:0 28px}
 @media (max-width:640px){.h3m-trust--light{grid-template-columns:1fr 1fr 1fr!important}.h3m-trust--light>div{padding:12px 10px}.h3m-trust--light b{font-size:15px}.h3m-trust--light span{font-size:12px}}
+
+/* thẻ gói: ảnh xe + giá từ nổi bật */
+.h3m-card{overflow:hidden}
+.h3m-card__img{position:relative;margin:-16px -16px 14px;aspect-ratio:16/9;overflow:hidden;background:#111}
+.h3m-card__img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.h3m-card:hover .h3m-card__img img{transform:scale(1.04)}
+.h3m-card__img:after{content:"";position:absolute;inset:auto 0 0;height:55%;background:linear-gradient(transparent,rgba(0,0,0,.6))}
+.h3m-card__from{position:absolute;left:14px;bottom:10px;z-index:1;color:#fff;font-size:13px}
+.h3m-card__from b{font-size:22px;font-weight:600;margin-left:2px}
+.h3m-card__badge{top:12px;right:12px;left:auto;z-index:2;background:var(--r);color:#fff}
+.h3m-card:hover{box-shadow:0 10px 28px rgba(0,0,0,.08)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -769,7 +780,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  var grid=document.getElementById('h3m-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk');
  PK.forEach(function(k){
-  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'">'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
+  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'"><div class="h3m-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+' tại 3M Pro Shop" width="960" height="640" loading="lazy"><span class="h3m-card__from">Từ <b>'+String(k.p[0]).replace('.',',')+' triệu</b></span></div>'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
    '<div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
    '<button type="button" class="h3m-btn h3m-btn--red h3m-card__cta" data-open-lead data-pk="'+k.n+'">Nhận báo giá gói này →</button>'+
