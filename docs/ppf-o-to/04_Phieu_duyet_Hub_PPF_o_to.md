@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `79b019c758d70555f17323a2b04410ecc75a0a1d95cdd311d5b5601a1f008109` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `fa7dc13729923362fbbfdf7341885f4633f1b72471be04ac166070d83ee76cc0` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -123,3 +123,15 @@ Cập nhật 31/10/2026 (chủ trang gửi ảnh): 4 thẻ 3M PPF 50/100/150/200
 Cập nhật 31/10/2026 (chủ trang: chữ trên ảnh nhiều quá): khối Hình ảnh thi công ẩn chú thích trên ảnh, chỉ hiện khi rê chuột (desktop), mobile không hiện; tên xe + dòng phim vẫn nằm trong alt từng ảnh.
 
 Cập nhật 31/10/2026 (chủ trang đồng ý): khối Hình ảnh thi công dời xuống ngay sau Quy trình; nền các khối đổi lại cho xen kẽ trắng/xám (Video trắng, Vì sao xám, Quy trình trắng, Hình ảnh xám).
+
+## Xử lý phiếu tái kiểm 01/11/2026 (V1.9)
+
+| Mã | Đã làm 02/11/2026 | Còn lại |
+|---|---|---|
+| PPF1101-01 Số HQ trong bộ tìm điểm | Dữ liệu bộ tìm của hub PPF: kết quả Auto365.vn - Trụ Sở Chính dùng 0365.365.365 (số Phim cách nhiệt · PPF như thẻ HQ); áp dụng chung cho tìm chữ, chọn miền/tỉnh và Gần tôi vì cùng một nguồn dữ liệu. Tên/địa chỉ/hồ sơ /thu-duc/Maps giữ của HQ; thẻ HQ giữ cả 2 hotline | Danh bạ chung /chi-nhanh vẫn để 0365.365.911 cho HQ (số tổng) — khi IT đọc trực tiếp /chi-nhanh?json=1 cần giữ override số theo dịch vụ PPF |
+| PPF1101-02 Lối đọc địa phương trước thao tác | Chưa đổi — chờ chủ trang chọn: thêm khối đóng "Xem theo tỉnh/thành" (33 link tỉnh) hoặc ghi ngoại lệ giữ thiết kế giống production | Quyết định chủ trang |
+| Hướng dẫn 02 | Thêm mục 0 "Cấu hình hiện hành V1.9" ở đầu 02 (ngày, FAQ 9, schema, giá, thông số, hotline, hai địa điểm, việc khi lên production); mục cũ là lịch sử | — |
+| Ngày xuất 01 | 01 ghi riêng ngày tạo tài liệu (19/10) và ngày xuất bản hiện tại | — |
+| FAQ chi phí "Sedan/SUV hạng A–B" | Giữ: mức từ 400.000đ theo bảng AX G khách lẻ ghi hạng A–B; chờ Commercial chốt cách gọi theo nhóm kích thước | Commercial |
+
+dateModified 2026-11-02; lastReviewed giữ 2026-10-30.

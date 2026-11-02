@@ -1,7 +1,7 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `79b019c758d70555f17323a2b04410ecc75a0a1d95cdd311d5b5601a1f008109`
-Ngày xuất: 19/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fa7dc13729923362fbbfdf7341885f4633f1b72471be04ac166070d83ee76cc0`
+Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 02/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
 
@@ -9,7 +9,7 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10/2026) · Cập nhật 31/10/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10/2026) · Cập nhật 02/11/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
