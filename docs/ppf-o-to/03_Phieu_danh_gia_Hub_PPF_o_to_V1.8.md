@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `7ff61bf74f7af349b18d35d2fb9336e892591a1adb9118883dca6fecb2920c52` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `092f9835cdc125abde6243b913c7c3613a8cf2bb5fb0e07ea00664053a4cf259` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -308,3 +308,7 @@ Cập nhật 31/10/2026 (chủ trang đồng ý): khối Hình ảnh thi công d
 dateModified 2026-11-02; lastReviewed giữ 2026-10-30.
 
 PPF1101-02 (02/11/2026, chủ trang chọn "thêm khối đóng sẵn"): dưới hai thẻ Hệ thống thêm khối mở/đóng "Xem theo tỉnh/thành — 33 tỉnh/thành · 91 điểm", mặc định đóng, HTML có sẵn khi dựng trang (không phụ thuộc popup/JS). Ba cột theo miền (41/26/24 điểm), mỗi tỉnh là link văn bản tới danh bạ lọc PPF theo tỉnh https://auto365.vn/chi-nhanh?service=ppf&q=<tỉnh> kèm số điểm, cuối khối có link danh bạ đầy đủ. Dữ liệu sinh từ cùng bộ dữ liệu popup (/chi-nhanh?json=1) nên khớp popup và danh bạ. Mobile 1 cột. Popup và danh sách 91 điểm ẩn giữ nguyên.
+
+## Nghiệm thu U3 V1.9 bản 02/11/2026 — ĐÃ DUYỆT
+
+Phiếu U3 V1.9 bản cập nhật 02/11/2026 (kế thừa pk56): PPF1101-01/02 ĐÃ SỬA; PPF54-01…04 giữ ĐÃ ĐÓNG/PASS; U1, U2 PASS; U3 PASS – ĐÃ DUYỆT (phạm vi demo). Kiểm duyệt: Đặng Minh Hoàng, duyệt 02/11/2026; rà soát SEO: Ngọc Trân. Phiếu giữ điểm reviewer 01/11 làm lịch sử, không gán tổng mới. Chi tiết trong [04](04_Phieu_duyet_Hub_PPF_o_to.md).

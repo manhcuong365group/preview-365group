@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `7ff61bf74f7af349b18d35d2fb9336e892591a1adb9118883dca6fecb2920c52` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `092f9835cdc125abde6243b913c7c3613a8cf2bb5fb0e07ea00664053a4cf259` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -22,6 +22,7 @@
 | 27/10/2026 | Dải báo chí (4 bài PPF / 3M Pro Shop) | 2026-10-27 |
 | 28/10/2026 | Bản pk36: cách tính toàn xe + ô tóm tắt cấu hình trong form | 2026-10-28 |
 | 30/10/2026 | Bản pk55/pk56: câu chứng nhận ghi đủ hai địa chỉ, danh sách 33 tỉnh / 91 điểm, thông số 3M 50 và AX X, bảng mobile | 2026-10-30 |
+| 02/11/2026 | Phiếu U3 V1.9 bản cập nhật 02/11 (kế thừa pk56): PPF1101-01/02 đã sửa, U1–U3 PASS — xem mục "Phiếu U3 V1.9 bản 02/11/2026" | giữ 2026-10-30 (phiếu ghi nhận đúng) |
 
 ## Dữ kiện chủ trang đã chốt
 
@@ -75,6 +76,7 @@ Endpoint `https://auto365.vn/api/leads`. Trên pages.dev không có `/api/leads`
 | Lỗi phiếu pk54 (PPF54-01…04) | Đã xử lý — chi tiết trong [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) |
 | Lead thử | 289 đã gửi và đã xoá |
 | Nghiệm thu U1–U3 (pk56) | PASS – ĐÃ DUYỆT, đóng U3 V1.9 (Ngọc Trân – SEO, 30/10/2026) — xem mục dưới |
+| Nghiệm thu U3 V1.9 bản 02/11 | PASS – ĐÃ DUYỆT (phạm vi demo) — Đặng Minh Hoàng duyệt 02/11/2026, Ngọc Trân – SEO rà soát |
 | Mục còn mở trong phạm vi trang | Không còn — chờ IT tích hợp production |
 
 ## Phiếu nghiệm thu U3 — ĐÃ DUYỆT (pk56, 30/10/2026)
@@ -137,3 +139,42 @@ Cập nhật 31/10/2026 (chủ trang đồng ý): khối Hình ảnh thi công d
 dateModified 2026-11-02; lastReviewed giữ 2026-10-30.
 
 PPF1101-02 (02/11/2026, chủ trang chọn "thêm khối đóng sẵn"): dưới hai thẻ Hệ thống thêm khối mở/đóng "Xem theo tỉnh/thành — 33 tỉnh/thành · 91 điểm", mặc định đóng, HTML có sẵn khi dựng trang (không phụ thuộc popup/JS). Ba cột theo miền (41/26/24 điểm), mỗi tỉnh là link văn bản tới danh bạ lọc PPF theo tỉnh https://auto365.vn/chi-nhanh?service=ppf&q=<tỉnh> kèm số điểm, cuối khối có link danh bạ đầy đủ. Dữ liệu sinh từ cùng bộ dữ liệu popup (/chi-nhanh?json=1) nên khớp popup và danh bạ. Mobile 1 cột. Popup và danh sách 91 điểm ẩn giữ nguyên.
+
+## Phiếu U3 V1.9 bản 02/11/2026 — PASS – ĐÃ DUYỆT
+
+Nguồn: `Phieu_U3_Hub_PPF_O_To_V19_ANH_HOANG_DA_DUYET_20261102.pdf` (2 trang, chủ trang gửi 02/11/2026). Kế thừa phiếu pk56 ngày 30/10/2026. Đối chiếu: HTML ngày 02/11/2026 (`dateModified` 2026-11-02), báo cáo tái kiểm V1.9 ngày 01/11/2026, hồ sơ U3 pk56.
+
+| Vai trò | Người |
+|---|---|
+| Tác giả | Team Content Auto365 |
+| Kiểm duyệt nội dung – kỹ thuật | Đặng Minh Hoàng — ĐÃ DUYỆT 02/11/2026 |
+| Rà soát SEO / U1–U3 | Ngọc Trân – SEO (theo kết quả team xác nhận) |
+
+| Mã | Bằng chứng trên HTML 02/11 | Trạng thái |
+|---|---|---|
+| PPF1101-01 | Dữ liệu bộ tìm: Trụ Sở Chính dùng 0365 365 365, khớp thẻ HQ phân tuyến PPF | ĐÃ SỬA |
+| PPF1101-02 | Khối details "Xem theo tỉnh/thành": 33 link tỉnh/thành, tổng 91 điểm; giữ bộ tìm và link danh bạ | ĐÃ SỬA |
+| PPF54-01 | HQ và 3M Pro Shop có hồ sơ/địa chỉ phân biệt theo nội dung đã duyệt | ĐÃ ĐÓNG |
+| PPF54-02 | Sửa card, đổi cỡ xe, giữ thông tin form, xoá calculator — giữ kết quả PASS pk56 | PASS |
+| PPF54-03/04 | Danh bạ, liên kết địa phương; nguồn giá, thông số | ĐÃ ĐÓNG |
+
+| Phạm vi | Kết quả đối chiếu |
+|---|---|
+| Content / SEO / GEO | Một H1, title/meta đúng intent; canonical production; preview noindex; hồ sơ nguồn/reviewer đúng vai trò |
+| Schema & FAQ | 7 node cấp graph; ItemList 9 sản phẩm; FAQPage 9 câu |
+| Ngày | `dateModified` 2026-11-02; `lastReviewed` 2026-10-30 (hai loại ngày tách riêng) |
+| Điểm V1.9 | Giữ điểm reviewer báo cáo 01/11 làm lịch sử; không tạo tổng điểm mới cho 02/11 |
+
+| Nhóm | Ghi nhận | Kết quả |
+|---|---|---|
+| U1 – Giao diện / đa thiết bị | Desktop, tablet, mobile theo hồ sơ pk56 | PASS |
+| U2 – Form / lead / CRM / tracking | PASS theo pk56; sửa card và calculator kiểm lại 01/11 | PASS |
+| U3 – Hồ sơ bàn giao | Hồ sơ 01–04 + phiếu pk56; phiếu này bổ sung bằng chứng đóng PPF1101-01/02 | PASS – ĐÃ DUYỆT |
+
+**Kết luận: PASS – ĐÃ DUYỆT U3 V1.9 (phạm vi demo).** Giữ quyết định nghiệm thu pk56 và ghi nhận bản sửa 02/11. Không đưa lỗi cũ trở lại danh sách chờ.
+
+Khi triển khai production (checklist, không phải lỗi chặn demo): kiểm host ảnh (4 ảnh 3M), robots/index, chuyển hướng và URL catalog, lead/tracking môi trường live; gỡ khối "Kiểm tra nội bộ"; nếu đọc trực tiếp /chi-nhanh?json=1 thì giữ số PPF 0365 365 365 cho Trụ Sở Chính.
+
+Giới hạn phiếu ghi: hai sửa mới được xác minh từ HTML chủ trang gửi; phiếu không thay chữ ký thật và không đại diện nghiệm thu production.
+
+Ghi chú 02/11/2026: dòng U3 trong khối "Kiểm tra nội bộ" đổi sang "Nghiệm thu U3 V1.9 (02/11/2026): PASS – ĐÃ DUYỆT · Đặng Minh Hoàng · Ngọc Trân – SEO". Chỉ khối nội bộ đổi nên SHA trang đổi; nội dung khách đọc (01) giữ nguyên.
