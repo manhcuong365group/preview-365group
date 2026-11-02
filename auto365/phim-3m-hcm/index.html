@@ -408,6 +408,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-hero .h3m-trust b{font-size:20px;font-weight:500;letter-spacing:-.2px;margin-bottom:2px}.h3m-hero .h3m-trust span{font-size:13px;opacity:.7}
 .h3m-trust--light>div:before{display:none}.h3m-trust--light b{font-size:17px;font-weight:500}
 
+@media (max-width:640px){.h3m-pmo a:nth-child(n+4){display:none}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -459,7 +460,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <div><b>NPP chính thức</b><span>365Group – nhà phân phối 3M</span></div>
    <div><b>3M Pro Shop</b><span>&amp; 3M Training Center tại TP.HCM</span></div>
    <div><b>10 năm</b><span>Bảo hành điện tử 3M eWarranty</span></div>
-   <div><b>Từ 5,9 triệu</b><span>Trọn xe, đã gồm VAT – xem giá theo xe ↓</span></div>
+   <div><b>Từ 5,9 triệu</b><span>Ceramic Hybrid · Minicar, đã gồm VAT</span></div>
   </div>
  </div>
 </section>
@@ -704,7 +705,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <form class="h3m-modal__f" action="/api/leads" method="post" novalidate data-lead="popup">
   <button type="button" class="h3m-modal__x" data-close aria-label="Đóng form tư vấn">×</button>
   <h2 class="full" id="h3m-modal-t">Nhận tư vấn miễn phí</h2>
-  <p class="h3m-modal__sla full">Cố vấn 3M Pro Shop gọi lại trong giờ làm việc (8:00–18:30).</p>
+  <p class="h3m-modal__sla full">Cố vấn 3M Pro Shop gọi lại trong giờ làm việc (8:30–18:30).</p>
   <p class="h3m-modal__pk full" id="h3m-modal-pk" hidden></p>
   <label>Họ và tên<input name="fullname" type="text" autocomplete="name" placeholder="Nhập họ tên" required></label>
   <label>Số điện thoại<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Nhập số điện thoại" required></label>
@@ -750,16 +751,19 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  var SEL={pk:'',gr:''},qc=document.getElementById('q-car'),qo=document.getElementById('q-out'),fvg=document.getElementById('dang-ky').vehicle_group;
  function pkName(id){var k=PK.filter(function(x){return x.id===id})[0];return k?'3M '+k.n:''}
  function syncForms(){fs.value=SEL.pk;fvg.value=SEL.gr}
+ function setSel(pk,gr){SEL.pk=pk||'';SEL.gr=gr||'';syncForms();var sk=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0];if(sk)qs.value=sk.id;var sg=GN.indexOf(SEL.gr);qc.value=sg>-1?String(sg):'';renderCards();if(qo.classList.contains('is-on')&&sk)qo.innerHTML=sg>-1?'<b>3M '+sk.n+'</b> – '+GN[sg]+': <b style="color:var(--r)">'+vnd(sk.p[sg])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+sk.n+'" data-group="'+GN[sg]+'">Nhận báo giá &amp; đặt lịch →</button>':'Chọn nhóm xe để xem giá trọn xe.';if(window.mf){mf.package_name.value=SEL.pk;mf.vehicle_group.value=SEL.gr}renderSum()}
+ function renderSum(){if(!window.mpk)return;var k=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0],g=GN.indexOf(SEL.gr);
+  mpk.hidden=!SEL.pk&&!SEL.gr;mpk.innerHTML=(SEL.pk?'Gói đã chọn: <b>'+SEL.pk+'</b>':'Gói: <b>chưa chọn</b>')+' · '+(SEL.gr?SEL.gr:'nhóm xe chưa chọn')+(k&&g>-1?' · <b>'+vnd(k.p[g])+'</b>':'')}
  function renderCards(){var g=qc.value===''?-1:+qc.value;
   document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
    c.querySelectorAll('.h3m-card__price tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
    var b=c.querySelector('.h3m-card__cta');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g]})}
  function renderQuote(){var k=PK.filter(function(x){return x.id===qs.value})[0];
-  if(qc.value===''){qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
-  var g=+qc.value;SEL.pk='3M '+k.n;SEL.gr=GN[g];syncForms();
+  if(qc.value===''){setSel('3M '+k.n,'');qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
+  var g=+qc.value;setSel('3M '+k.n,GN[g]);
   qo.innerHTML='<b>3M '+k.n+'</b> – '+GN[g]+': <b style="color:var(--r)">'+vnd(k.p[g])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+k.n+'" data-group="'+GN[g]+'">Nhận báo giá &amp; đặt lịch →</button>';
   qo.classList.add('is-on')}
- qc.addEventListener('change',function(){renderCards();if(qo.classList.contains('is-on'))renderQuote()});
+ qc.addEventListener('change',function(){renderCards();if(qo.classList.contains('is-on'))renderQuote();else if(qc.value==='')setSel(SEL.pk,'')});
  qs.addEventListener('change',function(){if(qo.classList.contains('is-on'))renderQuote()});
  document.getElementById('q-go').addEventListener('click',renderQuote);
  renderCards();
@@ -795,23 +799,21 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    var trackedPackage=String(d.get('package_name')||''),trackedGroup=String(d.get('vehicle_group')||'');
    var btn=f.querySelector('button[type=submit]');btn.disabled=true;
    fetch(f.action,{method:'POST',body:d}).then(function(r){return r.json()}).then(function(j){
-    if(j&&j.success===true){show('Đã nhận thông tin! Auto365 sẽ gọi lại cho bạn sớm.',true);if(window.gtag)gtag('event','generate_lead',{form_id:'landing_3m_hcm_'+(f.dataset.lead||'main'),package_name:trackedPackage,vehicle_group:trackedGroup});f.reset()}
+    if(j&&j.success===true){show('Đã nhận thông tin'+(trackedPackage||trackedGroup?' ('+[trackedPackage,trackedGroup].filter(Boolean).join(' · ')+')':'')+'. Cố vấn 3M Pro Shop – Auto365 Trụ sở chính sẽ gọi lại trong giờ làm việc 8:30–18:30 để xác nhận báo giá và lịch thi công. Cần gấp: gọi 0365 365 365 hoặc nhắn Zalo.',true);if(window.gtag)gtag('event','generate_lead',{form_id:'landing_3m_hcm_'+(f.dataset.lead||'main'),package_name:trackedPackage,vehicle_group:trackedGroup});f.reset()}
     else throw 0;
    }).catch(function(){show('Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo.')}).then(function(){btn.disabled=false});
   });
  }
  bindLead(document.getElementById('dang-ky'));
- var dlg=document.getElementById('h3m-modal'),mf=dlg.querySelector('form'),mpk=document.getElementById('h3m-modal-pk');
+ var dlg=document.getElementById('h3m-modal');window.mf=dlg.querySelector('form');window.mpk=document.getElementById('h3m-modal-pk');
  bindLead(mf);
- fs.addEventListener('change',function(){SEL.pk=fs.value});fvg.addEventListener('change',function(){SEL.gr=fvg.value});
- mf.package_name.addEventListener('change',function(){SEL.pk=mf.package_name.value});mf.vehicle_group.addEventListener('change',function(){SEL.gr=mf.vehicle_group.value});
+ fs.addEventListener('change',function(){setSel(fs.value,SEL.gr)});fvg.addEventListener('change',function(){setSel(SEL.pk,fvg.value)});
+ mf.package_name.addEventListener('change',function(){setSel(mf.package_name.value,SEL.gr)});mf.vehicle_group.addEventListener('change',function(){setSel(SEL.pk,mf.vehicle_group.value)});
  document.addEventListener('click',function(e){
   var o=e.target.closest('[data-open-lead]');
   if(!o&&!e.target.closest('a,button,input,select,textarea')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
   var pk=o.dataset.pk?'3M '+o.dataset.pk:SEL.pk,gr=o.dataset.group||SEL.gr;
-  if(o.dataset.pk){SEL.pk=pk;if(o.dataset.group)SEL.gr=o.dataset.group}
-  mf.package_name.value=pk;mf.vehicle_group.value=gr;syncForms();
-  mpk.hidden=!pk;mpk.innerHTML=pk?'Gói đã chọn: <b>'+pk+'</b>'+(gr?' · '+gr:''):'';
+  setSel(pk,gr);
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
   if(dlg.showModal)dlg.showModal();else location.hash='dang-ky';
   if(window.gtag)gtag('event','open_lead_popup',{package_name:pk});
