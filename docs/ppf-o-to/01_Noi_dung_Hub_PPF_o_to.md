@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fa7dc13729923362fbbfdf7341885f4633f1b72471be04ac166070d83ee76cc0`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `7ff61bf74f7af349b18d35d2fb9336e892591a1adb9118883dca6fecb2920c52`
 Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 02/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -388,6 +388,50 @@ Tây Ninh
 Cà Mau
 
 - Auto365 Bạc Liêu
+
+**Xem theo tỉnh/thành 33 tỉnh/thành · 91 điểm**
+
+**Miền Bắc · 41 điểm**
+
+- Quảng Ninh 8
+- Phú Thọ 5
+- Hà Nội 4
+- Hải Phòng 4
+- Bắc Ninh 3
+- Hưng Yên 3
+- Ninh Bình 3
+- Lào Cai 2
+- Sơn La 2
+- Thái Nguyên 2
+- Tuyên Quang 2
+- Cao Bằng 1
+- Điện Biên 1
+- Lạng Sơn 1
+
+**Miền Trung · 26 điểm**
+
+- Khánh Hòa 5
+- Gia Lai 3
+- Hà Tĩnh 3
+- Lâm Đồng 3
+- Quảng Trị 3
+- Đà Nẵng 2
+- Đắk Lắk 2
+- Thanh Hóa 2
+- Huế 1
+- Nghệ An 1
+- Quảng Ngãi 1
+
+**Miền Nam · 24 điểm**
+
+- TP.HCM 10
+- Vĩnh Long 3
+- An Giang 2
+- Cần Thơ 2
+- Đồng Nai 2
+- Đồng Tháp 2
+- Tây Ninh 2
+- Cà Mau 1
 
 ## PPF là gì?  `#kien-thuc`
 

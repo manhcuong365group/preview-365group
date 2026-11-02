@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `fa7dc13729923362fbbfdf7341885f4633f1b72471be04ac166070d83ee76cc0` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `7ff61bf74f7af349b18d35d2fb9336e892591a1adb9118883dca6fecb2920c52` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -300,9 +300,11 @@ Cập nhật 31/10/2026 (chủ trang đồng ý): khối Hình ảnh thi công d
 | Mã | Đã làm 02/11/2026 | Còn lại |
 |---|---|---|
 | PPF1101-01 Số HQ trong bộ tìm điểm | Dữ liệu bộ tìm của hub PPF: kết quả Auto365.vn - Trụ Sở Chính dùng 0365.365.365 (số Phim cách nhiệt · PPF như thẻ HQ); áp dụng chung cho tìm chữ, chọn miền/tỉnh và Gần tôi vì cùng một nguồn dữ liệu. Tên/địa chỉ/hồ sơ /thu-duc/Maps giữ của HQ; thẻ HQ giữ cả 2 hotline | Danh bạ chung /chi-nhanh vẫn để 0365.365.911 cho HQ (số tổng) — khi IT đọc trực tiếp /chi-nhanh?json=1 cần giữ override số theo dịch vụ PPF |
-| PPF1101-02 Lối đọc địa phương trước thao tác | Chưa đổi — chờ chủ trang chọn: thêm khối đóng "Xem theo tỉnh/thành" (33 link tỉnh) hoặc ghi ngoại lệ giữ thiết kế giống production | Quyết định chủ trang |
+| PPF1101-02 Lối đọc địa phương trước thao tác | Đã thêm khối đóng "Xem theo tỉnh/thành" (33 link tỉnh → danh bạ lọc PPF), xem ghi chú dưới | — |
 | Hướng dẫn 02 | Thêm mục 0 "Cấu hình hiện hành V1.9" ở đầu 02 (ngày, FAQ 9, schema, giá, thông số, hotline, hai địa điểm, việc khi lên production); mục cũ là lịch sử | — |
 | Ngày xuất 01 | 01 ghi riêng ngày tạo tài liệu (19/10) và ngày xuất bản hiện tại | — |
 | FAQ chi phí "Sedan/SUV hạng A–B" | Giữ: mức từ 400.000đ theo bảng AX G khách lẻ ghi hạng A–B; chờ Commercial chốt cách gọi theo nhóm kích thước | Commercial |
 
 dateModified 2026-11-02; lastReviewed giữ 2026-10-30.
+
+PPF1101-02 (02/11/2026, chủ trang chọn "thêm khối đóng sẵn"): dưới hai thẻ Hệ thống thêm khối mở/đóng "Xem theo tỉnh/thành — 33 tỉnh/thành · 91 điểm", mặc định đóng, HTML có sẵn khi dựng trang (không phụ thuộc popup/JS). Ba cột theo miền (41/26/24 điểm), mỗi tỉnh là link văn bản tới danh bạ lọc PPF theo tỉnh https://auto365.vn/chi-nhanh?service=ppf&q=<tỉnh> kèm số điểm, cuối khối có link danh bạ đầy đủ. Dữ liệu sinh từ cùng bộ dữ liệu popup (/chi-nhanh?json=1) nên khớp popup và danh bạ. Mobile 1 cột. Popup và danh sách 91 điểm ẩn giữ nguyên.

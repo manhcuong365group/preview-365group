@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `fa7dc13729923362fbbfdf7341885f4633f1b72471be04ac166070d83ee76cc0` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `7ff61bf74f7af349b18d35d2fb9336e892591a1adb9118883dca6fecb2920c52` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -19,7 +19,7 @@ Các mục 1–9 bên dưới là hướng dẫn gốc từ 19/10 và lịch s�
 | Nhóm xe | Theo kích thước thân xe: Sedan · SUV/CUV cỡ vừa · SUV cỡ lớn/MPV (không theo số chỗ) |
 | Hotline | Phim cách nhiệt · PPF 0365 365 365; Đèn · Camera · Phụ kiện 0365 365 911. Trong bộ tìm điểm của hub, kết quả Trụ Sở Chính dùng 0365.365.365 (số PPF) |
 | Hai địa điểm | Trụ Sở Chính / Auto365 Center 4/4/1/7 (/thu-duc, địa chỉ trên chứng nhận 3M Pro Shop) · 3M Pro Shop & 3M Training Center 4/4/3/3 (/3m-pro-shop-tru-so-chinh) |
-| Khối Hệ thống | Giống #branch-discovery production; bộ chọn miền → tỉnh → điểm đọc dữ liệu /chi-nhanh?json=1 (preview đang nhúng bản chụp 30/10, production nên đọc trực tiếp) |
+| Khối Hệ thống | Giống #branch-discovery production + khối đóng "Xem theo tỉnh/thành" (33 link tỉnh, HTML sẵn); bộ chọn miền → tỉnh → điểm đọc dữ liệu /chi-nhanh?json=1 (preview đang nhúng bản chụp 30/10, production nên đọc trực tiếp) |
 | Ảnh 4 thẻ 3M | hinh/3m-ppf-{50,100,150,200}-gloss-auto365.webp — upload lên auto365.vn và đổi đường dẫn khi tích hợp |
 | Gỡ khi lên production | Khối #internal-check (chỉ hiện trên pages.dev/localhost) |
 | Redirect | 301 /ppfwrap-film → /ppf-o-to chỉ bật sau khi chuyển đích link "Xem toàn bộ sản phẩm PPF/Wrap" sang catalog/Wrap còn giữ, tránh quay vòng về hub |
