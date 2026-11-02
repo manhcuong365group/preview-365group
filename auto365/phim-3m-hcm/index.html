@@ -440,6 +440,24 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-card__from b{font-size:22px;font-weight:600;margin-left:2px}
 .h3m-card__badge{top:12px;right:12px;left:auto;z-index:2;background:var(--r);color:#fff}
 .h3m-card:hover{box-shadow:0 10px 28px rgba(0,0,0,.08)}
+
+/* thông số kính lái trên thẻ */
+.h3m-card__spec{margin:2px 0 12px;padding:10px 12px;border-radius:10px;background:#f6f7f9}
+.h3m-card__spec small{display:block;font-size:12px;color:#6b6f76;margin-bottom:6px}
+.h3m-card__spec div{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.h3m-card__spec span{font-size:11.5px;color:#55595f;line-height:1.3}
+.h3m-card__spec b{display:block;font-size:16px;font-weight:600;color:var(--t)}
+
+/* đo kiểm & trải nghiệm */
+.h3m-dk__g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.h3m-dk__g figure{margin:0;border-radius:14px;overflow:hidden;background:#fff;border:1px solid #e6e7ea}
+.h3m-dk__g img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
+.h3m-dk__g figcaption{padding:10px 14px;font-size:14px;color:#3a3d42}
+.h3m-dk__f{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:16px}
+.h3m-dk__f ul{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0;padding:0;list-style:none;font-size:14px;color:#3a3d42}
+.h3m-dk__f li:before{content:"✓ ";color:var(--r)}
+.h3m-dk__f .h3m-btn{white-space:nowrap;flex-shrink:0}
+@media (max-width:760px){.h3m-dk__g{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px}.h3m-dk__g figure{flex:0 0 82%;scroll-snap-align:start}.h3m-dk__f{flex-direction:column;align-items:stretch}.h3m-dk__f ul{flex-direction:column}.h3m-dk__f .h3m-btn{justify-content:center}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -551,6 +569,18 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  </div>
 </section>
 
+<section class="h3m-sec h3m-dk" id="do-kiem">
+ <div class="h3m-wrap">
+  <h2 class="h3m-h2">Đo kiểm &amp; trải nghiệm phim <em>3M</em> trước khi dán</h2>
+  <p class="h3m-lead">Tại 3M Pro Shop – Auto365 Trụ sở chính, kỹ thuật viên đo thông số trực tiếp trên kính xe của bạn để bạn so sánh và chọn phim.</p>
+  <div class="h3m-dk__g">
+   <figure><img src="hinh/do-kiem/do-kinh-lai-may-do-3m-pro-shop.webp" alt="Đo kính lái bằng máy đo 3M Pro Shop và đèn hồng ngoại tại Auto365 Trụ sở chính" width="800" height="533" loading="lazy"><figcaption>Đo kính lái bằng máy đo 3M Pro Shop &amp; đèn hồng ngoại</figcaption></figure>
+   <figure><img src="hinh/do-kiem/do-truoc-sau-cr-blk-40.webp" alt="So thông số kính lái trước và sau khi dán 3M CR BLK 40" width="800" height="533" loading="lazy"><figcaption>So thông số trước &amp; sau khi dán CR BLK 40</figcaption></figure>
+   <figure><img src="hinh/do-kiem/do-kinh-suon-cr-blk-15.webp" alt="Đo kính sườn sau khi dán 3M CR BLK 15" width="800" height="533" loading="lazy"><figcaption>Đo lại kính sườn sau thi công CR BLK 15</figcaption></figure>
+  </div>
+  <div class="h3m-dk__f"><ul><li>Nhiều máy đo &amp; thiết bị test để thử trước khi dán</li><li>Đo lại sau thi công, đối chiếu thông số khi bàn giao</li><li>Phòng chờ cho khách trong lúc xe thi công</li></ul><button type="button" class="h3m-btn h3m-btn--red" data-open-lead>Đặt lịch trải nghiệm →</button></div>
+ </div>
+</section>
 <section class="h3m-sec h3m-why2" id="chung-chi">
  <div class="h3m-wrap">
 
@@ -770,19 +800,19 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 (function(){
  // Giá trọn xe (triệu đ) theo bảng giá 3M 06/2026: [Minicar, Sedan, SUV]
  var PK=[
-  {id:'cr-blk-pro',n:'CR BLK PRO',c:'Kính lái CR BLK 40 + sườn/sau 35/15',t:['Kính lái CR BLK 40','Ceramic','Giảm chói'],p:[12.9,15.5,18.3],b:'Cao cấp'},
-  {id:'cr-blk',n:'CR BLK',c:'Kính lái CR BLK 60/50 + sườn/sau 35/15',t:['Cách nhiệt cao','Ceramic','Tầm nhìn rõ'],p:[12.2,14.8,17.6]},
-  {id:'crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Kính lái CR BLK 40 + NR 25/15/5',t:['Trong suốt','Giảm chói','Cách nhiệt tốt'],p:[9.8,11.6,13.3]},
-  {id:'crystalline-hybrid',n:'Crystalline Hybrid',c:'Kính lái CR BLK 60/50 + NR 25/15/5',t:['Trong suốt','Giảm chói','Tầm nhìn rõ'],p:[9.0,10.8,12.5],b:'Cân bằng'},
-  {id:'ceramic-ir',n:'Ceramic IR',c:'Kính lái IR 50 + sườn/sau IR 25/15',t:['Cản hồng ngoại','Ceramic','Cân bằng chi phí'],p:[7.2,9.0,10.5]},
-  {id:'ceramic-hybrid',n:'Ceramic Hybrid',c:'Kính lái NR 35 + sườn/sau NR 25/15/5',t:['Lai ceramic + reflective','Chi phí tốt','Ngân sách vừa'],p:[5.9,7.9,9.5]}
+  {id:'cr-blk-pro',n:'CR BLK PRO',c:'Kính lái CR BLK 40 + sườn/sau 35/15',t:['Kính lái CR BLK 40','Ceramic','Giảm chói'],p:[12.9,15.5,18.3],b:'Cao cấp',s:['CR BLK 40','58%','41%','98%']},
+  {id:'cr-blk',n:'CR BLK',c:'Kính lái CR BLK 60/50 + sườn/sau 35/15',t:['Cách nhiệt cao','Ceramic','Tầm nhìn rõ'],p:[12.2,14.8,17.6],s:['CR BLK 60 / 50','54 / 56%','57 / 48%','97 / 98%']},
+  {id:'crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Kính lái CR BLK 40 + NR 25/15/5',t:['Trong suốt','Giảm chói','Cách nhiệt tốt'],p:[9.8,11.6,13.3],s:['CR BLK 40','58%','41%','98%']},
+  {id:'crystalline-hybrid',n:'Crystalline Hybrid',c:'Kính lái CR BLK 60/50 + NR 25/15/5',t:['Trong suốt','Giảm chói','Tầm nhìn rõ'],p:[9.0,10.8,12.5],b:'Cân bằng',s:['CR BLK 60 / 50','54 / 56%','57 / 48%','97 / 98%']},
+  {id:'ceramic-ir',n:'Ceramic IR',c:'Kính lái IR 50 + sườn/sau IR 25/15',t:['Cản hồng ngoại','Ceramic','Cân bằng chi phí'],p:[7.2,9.0,10.5],s:['IR 50','54%','50%','83%']},
+  {id:'ceramic-hybrid',n:'Ceramic Hybrid',c:'Kính lái NR 35 + sườn/sau NR 25/15/5',t:['Lai ceramic + reflective','Chi phí tốt','Ngân sách vừa'],p:[5.9,7.9,9.5],s:['NR 35','51%','43%','79%']}
  ];
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  var grid=document.getElementById('h3m-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk');
  PK.forEach(function(k){
   grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'"><div class="h3m-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+' tại 3M Pro Shop" width="960" height="640" loading="lazy"><span class="h3m-card__from">Từ <b>'+String(k.p[0]).replace('.',',')+' triệu</b></span></div>'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
-   '<div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
+   '<div class="h3m-card__spec"><small>Thông số kính lái '+k.s[0]+'</small><div><span><b>'+k.s[1]+'</b>Cản nhiệt</span><span><b>'+k.s[2]+'</b>Xuyên sáng</span><span><b>'+k.s[3]+'</b>Cản hồng ngoại</span></div></div><div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
    '<button type="button" class="h3m-btn h3m-btn--red h3m-card__cta" data-open-lead data-pk="'+k.n+'">Nhận báo giá gói này →</button>'+
    '<div class="h3m-card__sub"><a href="tel:0365365365" data-track="call_pk">☎ Gọi tư vấn</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener" data-track="zalo_pk">Nhắn Zalo</a></div></article>');
   qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));if(k===PK[PK.length-1])fs.add(new Option('Dán lẻ từng vị trí','Dán lẻ từng vị trí'));
