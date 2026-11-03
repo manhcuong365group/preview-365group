@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c1b345a9bf67c235962bc6190d27e9384e3a97011ffc30d824216256f6b15651`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `dc270975b6200d030c29d539d5a08ced294ea3bdac0a099faee89381e88d20ff`
 Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 03/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -11,7 +11,7 @@ PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán
 
 Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10/2026) · Cập nhật 03/11/2026
 
-Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
+3M Pro Shop – Auto365, Hiệp Bình, TP.HCM — xem hồ sơ
 
 ## Báo giá minh bạch, chọn gói phù hợp  `#san-pham`
 
