@@ -101,7 +101,7 @@ const checkedModel = checked;
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
 models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? (/\/bi-gam-toyota-/.test(m.url) ? 'bài tư vấn dòng xe đã đăng' : 'bài case đã đăng (chưa có bài tư vấn dòng xe)') : '', checkedModel, m.status === 'Có hồ sơ' ? 'HTTP 200 (kiểm 03/11)' : (m.img ? '' : 'chưa có ảnh dòng xe')]));
 cases.forEach((c) => rows.push(['case', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'case_id nội bộ chưa có — chưa xác nhận các bài cùng dòng xe là xe khác nhau']));
-guides.forEach((x) => rows.push(['guide', (x.url.match(/bi-gam-toyota-([a-z-]+)$/) || [])[1] || 'camry', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, /\/bi-gam-toyota-/.test(x.url) ? 'bài tư vấn theo dòng xe, không phải case' : 'bài mẫu đèn × dòng xe']));
+guides.forEach((x) => rows.push(['guide', (x.url.match(/bi-gam-toyota-([a-z-]+)$/) || [])[1] || '', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, /\/bi-gam-toyota-/.test(x.url) ? 'bài tư vấn theo dòng xe, không phải case' : 'cẩm nang đèn bi gầm (kiến thức chung)']));
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_Toyota.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 
 console.log('exported', out, { sha: sha(html).slice(0, 12), models: models.length, cases: cases.length, guides: guides.length, faqs: faqs.length });

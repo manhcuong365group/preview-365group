@@ -16,7 +16,7 @@
 |---|---|---|
 | `/nang-cap-anh-sang-bi-gam` | Hub bi gầm chung (mẫu đèn, giá, so sánh) | — |
 | `/nang-cap-anh-sang-bi-gam/theo-hang-xe` | Tra cứu theo hãng | — |
-| **`/nang-cap-anh-sang-bi-gam/toyota`** | **Trang hãng Toyota: chọn dòng xe, chọn theo nhu cầu, tiếp cận bài hồ sơ, bài tư vấn dòng xe và điểm tư vấn** | Không liệt kê bảng giá/SKU (để bài tư vấn dòng xe, PDP làm); không canonical bài case về trang này |
+| **`/nang-cap-anh-sang-bi-gam/toyota`** | **Trang hãng Toyota: chọn dòng xe, chọn theo nhu cầu, tiếp cận bài hồ sơ, bài tư vấn dòng xe (qua thẻ dòng xe), cẩm nang đèn và điểm tư vấn** | Không liệt kê bảng giá/SKU (để bài tư vấn dòng xe, PDP làm); không canonical bài case về trang này |
 | `/bi-gam-toyota-vios`, `-camry`, `-fortuner`, `-innova`, `-veloz-cross`, `-corolla-altis` | Bài tư vấn dòng xe: mẫu lắp được, giá tham khảo, case | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
@@ -75,7 +75,7 @@ Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu s�
 | Sapo | Viết theo khung VinFast; liệt kê hãng đèn có trong tập case (X-Light, GTR, AES, Titan) | Sửa trong source |
 | 20 dòng xe (Sedan 5 · SUV 8 · MPV 6 · Bán tải 1) | Dải Toyota ở trang theo-hang-xe (LINEUP) | Mảng `M` |
 | Bài hồ sơ (22) | Toàn bộ case Toyota trong dữ liệu trang theo-hang-xe (bài đã đăng auto365.vn), kiểm 200 ngày 03/11/2026 | Mảng `C` |
-| Cẩm nang (7) | 6 bài tư vấn dòng xe Toyota + 1 bài AES SV 3.0 Max cho Camry | Mảng `G` |
+| Cẩm nang đèn bi gầm (7) | Bài kiến thức chung về đèn (đèn chính hay bi gầm, sáng yếu, giảm sáng do tản nhiệt, hốc 2.0 inch, đi mưa, chọn mẫu); không lặp 6 bài tư vấn dòng xe vì đã gắn ở thẻ dòng xe | Mảng `G` |
 | Box lưu ý | Hốc 2.0/3.0 inch (ví dụ từ case Vios 2021, Fortuner, Camry, Innova Cross); nguồn điện xe đời cũ và bản hybrid | **Chờ rà soát kỹ thuật** |
 | Chọn theo nhu cầu (3 nhóm) | Đô thị/dịch vụ · gia đình/đi tỉnh · SUV/bán tải, mỗi nhóm 3 case thật | **Chờ rà soát kỹ thuật** |
 | Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service`/`data-source-page` = "Bi gầm Toyota" | Tự đồng bộ |

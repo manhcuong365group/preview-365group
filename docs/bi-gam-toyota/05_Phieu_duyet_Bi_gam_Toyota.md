@@ -17,7 +17,7 @@
 | 20 dòng xe chia Sedan / SUV / MPV / Bán tải; 9 dòng có hồ sơ | Chờ |
 | Khối nhu cầu 3 nhóm | Chờ |
 | 8 FAQ (hybrid, dòng đã có hồ sơ, xe đời cũ, nơi lắp, chuẩn bị thông tin, đăng kiểm, chi phí, bảo hành) | Chờ |
-| 22 case + 7 bài tư vấn | Lấy từ bài đã đăng trên auto365.vn |
+| 22 case + 7 bài cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Ngoài phạm vi trang
 

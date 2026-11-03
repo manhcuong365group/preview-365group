@@ -11,8 +11,8 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-03 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `0d78e48298474746c7e74c6d8984a591d2e5066169022ec1034d51a740951efb` |
-| SHA-256 content-src.html | `23fc6eef71e7ac7e3ab579bc4f8ece1afec3c0dcc02f6d1f67c56b88013889c2` |
+| SHA-256 index.html | `a2cfcc076cb2838a8c70e56101a638e5187f62c8ee1cb658e5433745c6a6a69e` |
+| SHA-256 content-src.html | `816ed44c97389dae9664efe4228cc2bb2ae0089dd93a2a0db92b32c0ec1f1f8b` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -149,13 +149,13 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang To
 
 | Bài | Nhãn | Ngày đăng |
 |---|---|---|
-| [Bi gầm Toyota Corolla Altis: Giá, cấu hình và lưu ý khi chọn](https://auto365.vn/bi-gam-toyota-corolla-altis) | Tư vấn dòng xe | 2026-10-22 |
-| [Bi gầm Toyota Veloz Cross: Giá và cấu hình thực tế](https://auto365.vn/bi-gam-toyota-veloz-cross) | Tư vấn dòng xe | 2026-10-22 |
-| [Bi gầm Toyota Camry: Giá và cấu hình thực tế](https://auto365.vn/bi-gam-toyota-camry) | Tư vấn dòng xe | 2026-10-19 |
-| [Bi gầm Toyota Innova: Giá và cấu hình thực tế](https://auto365.vn/bi-gam-toyota-innova) | Tư vấn dòng xe | 2026-10-17 |
-| [Bi gầm Toyota Fortuner: Chọn cấu hình theo đời xe và nhu cầu](https://auto365.vn/bi-gam-toyota-fortuner) | Tư vấn dòng xe | 2026-10-15 |
-| [Bi gầm Toyota Vios: nên chọn loại nào theo đời xe?](https://auto365.vn/bi-gam-toyota-vios) | Tư vấn dòng xe | 2026-10-15 |
-| [Bi gầm AES SV 3.0 Max cho Toyota Camry: giá, thông số và lưu ý khi lắp](https://auto365.vn/bi-gam-aes-sv-30-max-cho-toyota-camry-gia-thong-so-va-luu-y-khi-lap) | Mẫu đèn × dòng xe | 2026-07-17 |
+| [Fortuner đèn yếu: nâng đèn chính hay bi gầm? Giá tham khảo](https://auto365.vn/fortuner-den-yeu-nen-nang-den-chinh-hay-bi-gam) | Đèn chính hay bi gầm | 2026-10-16 |
+| [Đèn gầm ô tô giảm sáng khi chạy lâu: Có do tản nhiệt?](https://auto365.vn/den-gam-o-to-giam-sang-sau-khi-chay-lau) | Tản nhiệt | 2026-09-05 |
+| [Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra](https://auto365.vn/den-gam-o-to-sang-yeu) | Kiểm tra | 2026-08-22 |
+| [AES SV 3.0 Pro 4800K phù hợp với nhóm tài xế nào?](https://auto365.vn/bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao) | Chọn mẫu đèn | 2026-08-18 |
+| [Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?](https://auto365.vn/hoc-den-gam-nho-nen-chon-bi-gam-nao) | Hốc đèn | 2026-08-14 |
+| [Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?](https://auto365.vn/bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa) | Vùng sáng | 2026-07-27 |
+| [Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ](https://auto365.vn/bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao) | Hốc đèn | 2026-07-03 |
 
 ## FAQ (8)
 
