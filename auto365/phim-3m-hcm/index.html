@@ -458,6 +458,21 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 .h3m-dk__f li:before{content:"✓ ";color:var(--r)}
 .h3m-dk__f .h3m-btn{white-space:nowrap;flex-shrink:0}
 @media (max-width:760px){.h3m-dk__g{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -16px;padding:0 16px}.h3m-dk__g figure{flex:0 0 82%;scroll-snap-align:start}.h3m-dk__f{flex-direction:column;align-items:stretch}.h3m-dk__f ul{flex-direction:column}.h3m-dk__f .h3m-btn{justify-content:center}}
+
+/* R4: thẻ gói gọn trên mobile, chưa biết chọn gói */
+.h3m-card__more>summary{display:none}
+.h3m-quick__unsure{grid-column:1/-1;justify-self:start;background:none;border:0;padding:6px 0 0;color:var(--r);font:inherit;font-size:14px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:760px){
+.h3m-card__img{aspect-ratio:2/1}
+.h3m-card__tags,.h3m-card__sub{display:none}
+.h3m-card__more{margin:4px 0 12px}
+.h3m-card__more>summary{display:flex;justify-content:space-between;align-items:center;list-style:none;cursor:pointer;padding:9px 12px;border-radius:10px;background:#f6f7f9;font-size:14px;color:#3a3d42}
+.h3m-card__more>summary::-webkit-details-marker{display:none}
+.h3m-card__more>summary:after{content:"+";font-size:18px;color:var(--r)}
+.h3m-card__more[open]>summary:after{content:"–"}
+.h3m-card__more[open]>summary{margin-bottom:10px}
+.h3m-quick__unsure{justify-self:center}
+}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -521,6 +536,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    <select class="h3m-sel" id="q-car" aria-label="Nhóm xe"><option value="" selected>Chọn nhóm xe</option><option value="0">Minicar (i10, Morning, VF3…)</option><option value="1">Sedan (Vios, City, Camry…)</option><option value="2">SUV / MPV (CR-V, Fortuner, VF8…)</option></select>
    <button class="h3m-btn h3m-btn--red" id="q-go" type="button">Xem giá →</button>
    <div class="h3m-quick__out" id="q-out" aria-live="polite"></div>
+   <button type="button" class="h3m-quick__unsure" data-open-lead data-pkfull="Chưa biết chọn gói – nhờ tư vấn theo xe">Chưa biết chọn gói? Nhờ tư vấn theo xe →</button>
   </form>
  </div>
 </div>
@@ -786,7 +802,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input name="car_model" type="text" placeholder="VD: Camry 2024, VF8, CX-5"></label>
   <details class="h3m-modal__opt full"><summary>Thêm thông tin để tư vấn sát hơn <small>(không bắt buộc)</small></summary><div class="h3m-modal__optg"><label>Nhóm xe<select name="vehicle_group"><option value="">Chưa rõ</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select></label>
   <label>Nhu cầu ưu tiên<select name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option selected>Chưa chắc, cần tư vấn</option></select></label>
-  <label>Gói đang quan tâm<select name="package_name"><option value="">Chưa chắc, cần tư vấn</option><option>3M CR BLK PRO</option><option>3M CR BLK</option><option>3M Crystalline Hybrid Pro</option><option>3M Crystalline Hybrid</option><option>3M Ceramic IR</option><option>3M Ceramic Hybrid</option><option>Dán lẻ từng vị trí</option></select></label>
+  <label>Gói đang quan tâm<select name="package_name"><option value="">Chưa chắc, cần tư vấn</option><option>3M CR BLK PRO</option><option>3M CR BLK</option><option>3M Crystalline Hybrid Pro</option><option>3M Crystalline Hybrid</option><option>3M Ceramic IR</option><option>3M Ceramic Hybrid</option><option>Dán lẻ từng vị trí</option><option>Chưa biết chọn gói – nhờ tư vấn theo xe</option></select></label>
   <label class="full">Nhu cầu thêm <small>(không bắt buộc)</small><textarea name="note" rows="2" placeholder="Hay đỗ xe ngoài trời, cần riêng tư, có panorama..."></textarea></label></div></details>
   <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
   <input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
@@ -809,13 +825,14 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  ];
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  var grid=document.getElementById('h3m-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk');
+ var MQD=!matchMedia('(max-width:760px)').matches;
  PK.forEach(function(k){
-  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'"><div class="h3m-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+' tại 3M Pro Shop" width="960" height="640" loading="lazy"><span class="h3m-card__from">Từ <b>'+String(k.p[0]).replace('.',',')+' triệu</b></span></div>'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
+  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'"><div class="h3m-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+' tại 3M Pro Shop" width="960" height="640" loading="lazy"><span class="h3m-card__from">Minicar từ <b>'+String(k.p[0]).replace('.',',')+' triệu</b></span></div>'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
-   '<div class="h3m-card__spec"><small>Thông số kính lái '+k.s[0]+'</small><div><span><b>'+k.s[1]+'</b>Cản nhiệt</span><span><b>'+k.s[2]+'</b>Xuyên sáng</span><span><b>'+k.s[3]+'</b>Cản hồng ngoại</span></div></div><div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div>'+
+   '<details class="h3m-card__more"'+(MQD?' open':'')+'><summary>Thông số &amp; giá theo nhóm xe</summary><div class="h3m-card__spec"><small>Thông số kính lái '+k.s[0]+'</small><div><span><b>'+k.s[1]+'</b>Cản nhiệt</span><span><b>'+k.s[2]+'</b>Xuyên sáng</span><span><b>'+k.s[3]+'</b>Cản hồng ngoại</span></div></div><div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div></details>'+
    '<button type="button" class="h3m-btn h3m-btn--red h3m-card__cta" data-open-lead data-pk="'+k.n+'">Nhận báo giá gói này →</button>'+
    '<div class="h3m-card__sub"><a href="tel:0365365365" data-track="call_pk">☎ Gọi tư vấn</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener" data-track="zalo_pk">Nhắn Zalo</a></div></article>');
-  qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));if(k===PK[PK.length-1])fs.add(new Option('Dán lẻ từng vị trí','Dán lẻ từng vị trí'));
+  qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));if(k===PK[PK.length-1]){fs.add(new Option('Dán lẻ từng vị trí','Dán lẻ từng vị trí'));fs.add(new Option('Chưa biết chọn gói – nhờ tư vấn theo xe','Chưa biết chọn gói – nhờ tư vấn theo xe'))}
  });
  qs.value='crystalline-hybrid';
  var GN=['Minicar','Sedan','SUV/MPV'],MOB0=matchMedia('(max-width:640px)').matches;
@@ -830,7 +847,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function renderCards(){var g=qc.value===''?-1:+qc.value;
   document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
    c.querySelectorAll('.h3m-card__price tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
-   var b=c.querySelector('.h3m-card__cta');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g]})}
+   var fr=c.querySelector('.h3m-card__from'),gi=g<0?0:g;if(fr)fr.innerHTML=(g<0?'Minicar từ':GN[g])+' <b>'+String(k.p[gi]).replace('.',',')+' triệu</b>';var b=c.querySelector('.h3m-card__cta');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g]})}
  function renderQuote(){var k=PK.filter(function(x){return x.id===qs.value})[0];
   if(qc.value===''){setSel('3M '+k.n,'');qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
   var g=+qc.value;setSel('3M '+k.n,GN[g]);
