@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `092f9835cdc125abde6243b913c7c3613a8cf2bb5fb0e07ea00664053a4cf259` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `17313b597e6046ce20378030b41c93a99f8fd7cb281ea86a584c0c870c2ad132` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -312,3 +312,5 @@ PPF1101-02 (02/11/2026, chủ trang chọn "thêm khối đóng sẵn"): dưới
 ## Nghiệm thu U3 V1.9 bản 02/11/2026 — ĐÃ DUYỆT
 
 Phiếu U3 V1.9 bản cập nhật 02/11/2026 (kế thừa pk56): PPF1101-01/02 ĐÃ SỬA; PPF54-01…04 giữ ĐÃ ĐÓNG/PASS; U1, U2 PASS; U3 PASS – ĐÃ DUYỆT (phạm vi demo). Kiểm duyệt: Đặng Minh Hoàng, duyệt 02/11/2026; rà soát SEO: Ngọc Trân. Phiếu giữ điểm reviewer 01/11 làm lịch sử, không gán tổng mới. Chi tiết trong [04](04_Phieu_duyet_Hub_PPF_o_to.md).
+
+Cập nhật 03/11/2026 (chủ trang: PR thêm cho 3M Pro Shop): hero thêm dải "3M Pro Shop · Auto365 Center được 3M Việt Nam bổ nhiệm, hiệu lực 06/2026–06/2029 · Xem hồ sơ →" (link https://auto365.vn/3m-pro-shop-tru-so-chinh) dưới nút CTA; tab 3M ở bảng giá thêm dòng "Muốn dán phim 3M tại 3M Pro Shop…" kèm link hồ sơ và Đặt lịch tư vấn (ẩn khi chọn tab AX). Chỉ dùng dữ kiện chứng nhận đã duyệt; không đổi giá, FAQ, schema. dateModified 2026-11-03; lastReviewed giữ 2026-10-30 — phần bổ sung chờ anh Đặng Minh Hoàng xem.

@@ -1,7 +1,7 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `092f9835cdc125abde6243b913c7c3613a8cf2bb5fb0e07ea00664053a4cf259`
-Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 02/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `17313b597e6046ce20378030b41c93a99f8fd7cb281ea86a584c0c870c2ad132`
+Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 03/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
 
@@ -9,13 +9,15 @@ Bảo vệ sơn xe, giữ vẻ đẹp nguyên bản
 
 PPF (Paint Protection Film) là lớp phim TPU trong suốt hoặc có màu dán lên bề mặt sơn, giúp giảm trầy xước nhẹ, đá văng, phân chim, nhựa cây và tia UV tác động trực tiếp lên sơn. Phù hợp cho xe mới muốn giữ sơn zin và xe di chuyển nhiều đường trường.
 
-Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10/2026) · Cập nhật 02/11/2026
+Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10/2026) · Cập nhật 03/11/2026
 
 Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 ## Báo giá minh bạch, chọn gói phù hợp  `#san-pham`
 
 Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
+
+Muốn dán phim 3M tại 3M Pro Shop: Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm 3M Pro Shop, hiệu lực 06/2026–06/2029. Xem hồ sơ 3M Pro Shop · Đặt lịch tư vấn
 
 **50 Gloss**
 
