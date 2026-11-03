@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4770587c5f6f3c3d1be9e424d853502c8b4d64af194a6c21324788e75a4596a3`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `c1b345a9bf67c235962bc6190d27e9384e3a97011ffc30d824216256f6b15651`
 Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 03/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -17,7 +17,7 @@ Dán PPF trên nắp capo VinFast VF 8 — hồ sơ thi công
 
 Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
 
-Muốn dán phim 3M tại 3M Pro Shop: Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm 3M Pro Shop, hiệu lực 06/2026–06/2029. Xem hồ sơ 3M Pro Shop · Đặt lịch tư vấn
+Muốn dán phim 3M tại 3M Pro Shop: Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm 3M Pro Shop. Xem hồ sơ 3M Pro Shop · Đặt lịch tư vấn
 
 **50 Gloss**
 

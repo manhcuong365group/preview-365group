@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `4770587c5f6f3c3d1be9e424d853502c8b4d64af194a6c21324788e75a4596a3` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `c1b345a9bf67c235962bc6190d27e9384e3a97011ffc30d824216256f6b15651` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 30/10/2026 — `lastReviewed` 2026-10-30, byline "Kiểm duyệt: Đặng Minh Hoàng (30/10/2026)" |
 | `dateModified` | 2026-10-30 |
@@ -179,4 +179,4 @@ Giới hạn phiếu ghi: hai sửa mới được xác minh từ HTML chủ tra
 
 Ghi chú 02/11/2026: dòng U3 trong khối "Kiểm tra nội bộ" đổi sang "Nghiệm thu U3 V1.9 (02/11/2026): PASS – ĐÃ DUYỆT · Đặng Minh Hoàng · Ngọc Trân – SEO". Chỉ khối nội bộ đổi nên SHA trang đổi; nội dung khách đọc (01) giữ nguyên.
 
-Cập nhật 03/11/2026 (chủ trang: PR thêm cho 3M Pro Shop): hero thêm dải "3M Pro Shop · Auto365 Center được 3M Việt Nam bổ nhiệm, hiệu lực 06/2026–06/2029 · Xem hồ sơ →" (link https://auto365.vn/3m-pro-shop-tru-so-chinh) dưới nút CTA; tab 3M ở bảng giá thêm dòng "Muốn dán phim 3M tại 3M Pro Shop…" kèm link hồ sơ và Đặt lịch tư vấn (ẩn khi chọn tab AX). Chỉ dùng dữ kiện chứng nhận đã duyệt; không đổi giá, FAQ, schema. dateModified 2026-11-03; lastReviewed giữ 2026-10-30 — phần bổ sung chờ anh Đặng Minh Hoàng xem.
+Cập nhật 03/11/2026 (chủ trang: PR thêm cho 3M Pro Shop): hero thêm dải "3M Pro Shop · Auto365 Center được 3M Việt Nam bổ nhiệm · Xem hồ sơ →" (chủ trang bỏ mốc hiệu lực trên 2 dải mới) (link https://auto365.vn/3m-pro-shop-tru-so-chinh) dưới nút CTA; tab 3M ở bảng giá thêm dòng "Muốn dán phim 3M tại 3M Pro Shop…" kèm link hồ sơ và Đặt lịch tư vấn (ẩn khi chọn tab AX). Chỉ dùng dữ kiện chứng nhận đã duyệt; không đổi giá, FAQ, schema. dateModified 2026-11-03; lastReviewed giữ 2026-10-30 — phần bổ sung chờ anh Đặng Minh Hoàng xem.
