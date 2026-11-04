@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `14f1170fefd9ee0200b6e2b004aba0139981579cd33c03317258458eac06e070`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `725c10b64f5e65ab468196a58a81f88ae750eaede39dd753296445749055ee7f`
 Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 04/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -15,7 +15,7 @@ Biên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (30/10
 
 ## Báo giá minh bạch, chọn gói phù hợp  `#san-pham`
 
-Dán PPF toàn xe hoặc từng vị trí với phim 3M và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
+Dán PPF toàn xe hoặc từng vị trí với phim 3M, NKD và AX Film. Giá tham khảo, giá chính xác báo sau khi kỹ thuật viên kiểm tra xe.
 
 Muốn dán phim 3M tại 3M Pro Shop: Auto365 Center (Trụ Sở Chính, Hiệp Bình) được 3M Việt Nam bổ nhiệm 3M Pro Shop. Xem hồ sơ 3M Pro Shop · Đặt lịch tư vấn
 
