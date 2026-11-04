@@ -15,7 +15,7 @@
 |---|---|
 | Sapo, box "Xe Toyota lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, xe đời cũ, hybrid) | Duyệt |
 | 20 dòng xe chia Hatchback / Sedan / SUV / MPV / Bán tải; 9 dòng có hồ sơ | Duyệt |
-| Khối nhu cầu 3 nhóm, 8 FAQ | Duyệt |
+| Khối nhu cầu 3 nhóm, 9 FAQ | Duyệt |
 | "Thi công tại 90+ chi nhánh", thẻ "Tư vấn đúng theo từng xe" (như hub VinFast) | Duyệt |
 | 22 case + 8 bài cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
 

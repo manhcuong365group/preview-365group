@@ -11,8 +11,8 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `17a4c12204c7b430b576d56f654da8fceeb915a0c1ce0bb632c284da2843e0b9` |
-| SHA-256 content-src.html | `e74448f2afcd40a0c3165243f499f363e7993a9af3f083176aff959abfc4f281` |
+| SHA-256 index.html | `bbee77f07c0678ea0a7fb2f487eda588d80bbd970feb52cd3516b73d5096b8f0` |
+| SHA-256 content-src.html | `69843ad10a3bb676fed6e3e237a41dde74e9fe2f2ea7422e8d919e474f009810` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -158,7 +158,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang To
 | [Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?](https://auto365.vn/bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa) | Vùng sáng | 2026-07-27 |
 | [Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ](https://auto365.vn/bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao) | Hốc đèn | 2026-07-03 |
 
-## FAQ (8)
+## FAQ (9)
 
 **Toyota bản hybrid lắp bi gầm có ảnh hưởng hệ thống hybrid không?**
 
@@ -171,6 +171,10 @@ Các dòng đã có hồ sơ gồm Vios, Camry, Corolla Altis, Corolla Cross, Ve
 **Toyota đời cũ có lắp bi gầm được không?**
 
 Tùy hốc đèn và hệ điện thực tế của từng xe. Auto365 đã có hồ sơ trên Vios 2010, Innova 2008, Camry 2008 và Fortuner 2010. Với xe đời cũ, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
+
+**Nâng cấp đèn bi gầm chính hãng cho Toyota ở TP. Hồ Chí Minh ở đâu?**
+
+Chủ xe Toyota tại TP. Hồ Chí Minh có thể đến Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, Phường Hiệp Bình (khu vực Thủ Đức cũ), thuận tiện di chuyển từ trung tâm và các khu vực lân cận (xem bản đồ). Auto365 là đại lý chính hãng X-Light, GTR, AES; kỹ thuật viên chuyên thi công đèn ô tô kiểm tra hốc đèn, hệ điện theo đời xe và cân chỉnh đường cắt cos trên bảng test sau khi lắp. Chủ xe nên gọi 0365 365 911 để đặt lịch trước; cấu hình và chi phí chốt sau khi kiểm tra xe.
 
 **Ở tỉnh khác thì lắp bi gầm Toyota tại đâu?**
 

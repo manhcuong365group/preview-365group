@@ -65,7 +65,7 @@ Toyota chưa có trang dòng xe riêng dạng `/nang-cap-anh-sang-bi-gam/toyota/
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Toyota |
 | ItemList `#dong-xe` | 9 thẻ dòng xe có hồ sơ (URL ở mục 3) |
 | ItemList `#xe-thuc-te` | 22 **bài hồ sơ** lắp đặt (không phải 22 xe khác nhau) |
-| FAQPage | 8 câu, đúng text hiển thị |
+| FAQPage | 9 câu, đúng text hiển thị |
 
 Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu số phần tử với thẻ hiển thị.
 
