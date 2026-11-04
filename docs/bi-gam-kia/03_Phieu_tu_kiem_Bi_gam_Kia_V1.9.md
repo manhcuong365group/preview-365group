@@ -6,7 +6,7 @@
 | Bản kiểm | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Kia.md) |
 | Ngày tự kiểm | 04/11/2026 |
 | Chuẩn | V1.9 — ngưỡng tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); chờ test máy thật + phiếu U3 |
+| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); test máy thật OK 04/11; chờ phiếu U3 |
 
 ## 1. Tự chấm (trên preview)
 
@@ -25,11 +25,12 @@
 | G3 | Nguồn, truy nguyên | 5/5 | Anh Đạo duyệt 04/11, tên + ngày trên trang và schema (`reviewedBy`, `lastReviewed`); case link bài gốc |
 | | **GEO** | **23,8/25** | Qua ngưỡng 23,75 |
 | | **Tổng C/S/G** | **80,2/85** | 28,0 + 28,4 + 23,8 |
-| U1 | Đa thiết bị | CX | Kiểm trình duyệt desktop/mobile; chưa test máy thật |
-| U2 | Tương tác | CX | Lead chỉ kiểm được trên production |
+| U1 | Đa thiết bị | 5/5 | Desktop/mobile trên trình duyệt + chủ quản test điện thoại thật OK 04/11/2026 |
+| U2 | Tương tác | 4,8/5 | Lọc, tìm, tự điền xe, gọi, Zalo chạy; lead chỉ kiểm được trên production |
 | U3 | Bàn giao | 5/5 | 01–05 cùng build, 05 ĐÃ DUYỆT |
+| | **Tổng** | **≈95,0/100** | 80,2 + 14,8 — tổng chạm ngưỡng 95, GEO 23,8 qua; **SEO 28,4 thiếu 0,1** so với ngưỡng 28,5 |
 
 ## 2. Việc cần để đạt
 
 1. SEO đang 28,4 (ngưỡng 28,5): S3 thấp vì Kia mới có 4 bài tư vấn dòng xe; 5 thẻ có hồ sơ dẫn về bài case.
-2. Test máy thật (U1); phiếu U3 (U2).
+2. Phiếu U3 (U2).
