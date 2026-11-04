@@ -17,7 +17,7 @@
 | 13 dòng xe chia Hatchback / Sedan / SUV / MPV; 9 dòng có hồ sơ | Duyệt |
 | Khối nhu cầu 3 nhóm, 9 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
 | "Thi công tại 90+ chi nhánh", thẻ "Tư vấn đúng theo từng xe" (như hub Toyota) | Duyệt |
-| 12 case + 4 bài tư vấn + 8 cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
+| 14 hồ sơ (12 case + 2 video) + 4 bài tư vấn + 8 cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Ngoài phạm vi trang
 

@@ -10,9 +10,9 @@
 | Meta description (145 ký tự) | Tra cứu bi gầm Kia theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Kia theo từng dòng xe |
 | dateModified | 2026-11-04 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (12), FAQPage |
-| SHA-256 index.html | `ff6289adf653b168e56e7df937604213a3d692f544cc330afda7e7e0e8f5f660` |
-| SHA-256 content-src.html | `7b444f12b93e7ac78a9e9beb287d892ba51ba76854d5faa8b7774dfa9d77ef46` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (14), FAQPage |
+| SHA-256 index.html | `04da57e414905f35a553dfb2a32a0d36a5107aef448befd4a53269f5afe25a0d` |
+| SHA-256 content-src.html | `72c80c0e4f82aaf6aab5ee015337be1c02b3fb928d045a3cc02d2d1c91365450` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -38,7 +38,7 @@ Bi gầm Kia cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | Kia Carnival | MPV | Có hồ sơ | https://auto365.vn/kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max |
 | Kia Sedona | MPV | Có hồ sơ | https://auto365.vn/bi-gam-kia-sedona |
 
-## Xe Kia đã lắp bi gầm tại Auto365 (12 bài hồ sơ)
+## Xe Kia đã lắp bi gầm tại Auto365 (14 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -46,8 +46,10 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 |---|---|---|
 | Kia Sportage | [Kia Sportage 2022 lắp bi gầm X-Light F10 Turbo V2 5500K](https://auto365.vn/kia-sportage-20g-premium-2022-lap-bi-gam-x-light-f10-turbo-v2-5500k) | 2026-10-21 |
 | Kia Morning | [Kia Morning Si AT 2016 lắp bi gầm X-Light F10 2.0 New](https://auto365.vn/kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new) | 2026-10-09 |
+| Kia Carnival | [Video: Kia Carnival nâng cấp bi gầm AES SV 3.0 Max, mặt dưỡng in 3D](https://auto365.vn/video-kia-carnival-nang-cap-bi-gam-aes-sv-3-0-max-giai-phap-mat-duong-in-3d) | 2026-10-01 |
 | Kia Carens | [Kia Carens 1.4T Premium 2023 lắp bi gầm AES SV 3.0 Max](https://auto365.vn/kia-carens-14t-premium-2023-lap-bi-gam-aes-sv-30-max) | 2026-09-25 |
 | Kia Carnival | [Kia Carnival 2.2D Luxury 2025 lắp bi gầm AES SV 3.0 Max](https://auto365.vn/kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max) | 2026-09-25 |
+| Kia Sedona | [Video: Kia Sedona lên combo bi gầm GTR G1 Ultra và bi LED Platinum Pro](https://auto365.vn/video-kia-sedona-combo-bi-gam-g1-ultra-va-bi-led-platinum-pro) | 2026-08-24 |
 | Kia Carnival | [Kia Carnival 2004 lắp bi gầm X-Light 301 V2: Giá và cấu hình](https://auto365.vn/kia-carnival-2004-lap-bi-gam-x-light-301-v2-gia-va-cau-hinh) | 2026-08-15 |
 | Kia Forte | [Kia Forte 2013 lắp bi gầm X-Light 301 V2: Giá, thông số và lưu ý kỹ thuật](https://auto365.vn/kia-forte-2013-lap-bi-gam-x-light-301-v2) | 2026-07-29 |
 | Kia Sedona | [Kia Sedona 2017 nâng cấp bi gầm X-Light F10 Pro V2](https://auto365.vn/nang-cap-bi-gam-x-light-f10-pro-v2-cho-kia-sedona-2017) | 2026-07-21 |
@@ -62,7 +64,7 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 Các dòng Kia khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
 
 - Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Ví dụ Morning 2016 đã lắp mẫu lens 2.0 inch, trong khi Carnival, Sportage, Carens đã lắp mẫu lens 3.0 inch.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Carnival 2004, Forte 2013) cần kiểm tra giắc và đèn gầm đang có; bản hybrid chỉ đấu nối vào hệ điện phụ trợ, không can thiệp hệ thống hybrid cao áp.
+- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Carnival 2004, Forte 2013) cần kiểm tra giắc và đèn gầm đang có; Sportage 2022, Carnival 2022 bản Premium có giắc chuyển LED gầm chuyên dụng giúp đấu nối giữ zin; bản hybrid chỉ đấu nối vào hệ điện phụ trợ, không can thiệp hệ thống hybrid cao áp.
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.

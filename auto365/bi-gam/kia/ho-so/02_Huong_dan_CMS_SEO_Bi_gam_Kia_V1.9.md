@@ -48,7 +48,7 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | CollectionPage | `dateModified` từ dòng "Cập nhật"; `about` = Brand Kia. Chưa có `reviewedBy` — thêm byline `bgvf-rv` khi có người rà soát kỹ thuật |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Kia |
 | ItemList `#dong-xe` | 9 thẻ dòng xe có hồ sơ |
-| ItemList `#xe-thuc-te` | 12 bài hồ sơ (không phải 12 xe khác nhau) |
+| ItemList `#xe-thuc-te` | 14 hồ sơ: 12 bài case + 2 video (không phải 14 xe khác nhau) |
 | FAQPage | 9 câu, đúng text hiển thị |
 
 ## 5. Khối trên trang và nguồn
@@ -56,7 +56,8 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | Khối | Nguồn |
 |---|---|
 | 13 dòng xe (Hatchback 1 · Sedan 4 · SUV 4 · MPV 4) | Dải Kia ở trang theo-hang-xe; giữ dòng đã ngừng bán có hồ sơ (Forte, Sedona), bỏ dòng ngừng bán không có dữ liệu |
-| Bài hồ sơ (12) | Case Kia trong dữ liệu trang theo-hang-xe (bài đã đăng auto365.vn) |
+| Hồ sơ (14) | 12 bài case + 2 video Kia (Carnival AES SV 3.0 Max mặt dưỡng in 3D, Sedona combo GTR G1 Ultra) đã đăng auto365.vn |
+| Box lưu ý — nguồn điện | Sportage 2022, Carnival 2022 bản Premium: link giắc chuyển LED gầm chuyên dụng (trang phụ kiện auto365.vn) |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung về đèn, không lặp bài tư vấn dòng xe |
 | FAQ HCM | Đề xuất Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
 | Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Kia". Chưa duyệt: thẻ "Tư vấn đúng theo từng xe" bỏ câu "do kỹ thuật viên … kiểm duyệt" |
