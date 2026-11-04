@@ -35,12 +35,13 @@
 | | **SEO** | **28,5/30** | |
 | G1 | Trả lời rõ | 9,3/10 | Như reviewer |
 | G2 | Lập luận, giới hạn | 9,5/10 | Ví dụ kỹ thuật, hybrid đã rà soát |
-| G3 | Nguồn, truy nguyên | 4,8/5 | Người rà soát đứng tên + ngày trên trang và schema; case link bài gốc |
-| | **GEO** | **23,6/25** | |
-| | **Tổng C/S/G** | **80,3/85** | 28,2 + 28,5 + 23,6 |
-| U1 | Đa thiết bị | CX | Desktop/tablet/mobile kiểm trên trình duyệt; chưa test máy thật |
-| U2 | Hành động, tương tác | CX | Lead chỉ kiểm được trên production |
+| G3 | Nguồn, truy nguyên | 5/5 | Anh Đạo duyệt 04/11, tên + ngày trên trang và schema (`reviewedBy`, `lastReviewed`); case link bài gốc |
+| | **GEO** | **23,8/25** | Qua ngưỡng 23,75 |
+| | **Tổng C/S/G** | **80,5/85** | 28,2 + 28,5 + 23,8 |
+| U1 | Đa thiết bị | 5/5 | Desktop/tablet/mobile trên trình duyệt + chủ quản test điện thoại thật OK 04/11/2026 |
+| U2 | Hành động, tương tác | 4,8/5 | Lọc, tìm, tự điền xe, gọi, Zalo chạy; lead chỉ kiểm được trên production (preview không có backend) |
 | U3 | Bàn giao | 5/5 | 01–05 cùng build, 05 ĐÃ DUYỆT |
+| | **Tổng** | **≈95,3/100** | 80,5 + 14,8 — qua 3 ngưỡng (≥95, SEO 28,5 ≥28,5, GEO 23,8 ≥23,75); chờ reviewer chấm lại |
 
 ## 3. Biên bản QA 04/11/2026 (bản vá)
 
@@ -52,3 +53,4 @@
 | Desktop 1280px, tablet 768px, mobile 375px | Không tràn ngang |
 | Lọc case, Bỏ lọc, FAQ, thẻ chưa có hồ sơ tự điền xe | Chạy đúng |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage; có `reviewedBy` + `lastReviewed` |
+| Điện thoại thật (chủ quản, 04/11/2026) | OK |
