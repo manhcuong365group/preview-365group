@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — PPF NKD Apex (V1.9)
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `54f10c8ddb9fbdf2b092dadca2c481cc1764002106ba39853a33fc8c2de2de2d` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `8287d8e004dfc71cd93eff34bdd774138b79543bc9e577f597e165476264649d` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 

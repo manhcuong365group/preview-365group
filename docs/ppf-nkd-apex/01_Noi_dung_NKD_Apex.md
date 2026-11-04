@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `54f10c8ddb9fbdf2b092dadca2c481cc1764002106ba39853a33fc8c2de2de2d` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `8287d8e004dfc71cd93eff34bdd774138b79543bc9e577f597e165476264649d` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -55,13 +55,13 @@ Nên dán NKD Apex ở những vị trí nào?Không phải xe nào cũng cần 
 Thông sốGiá trị
 Thương hiệuNKD PPFLoại phimPhim bảo vệ sơn ô tôVật liệuPolycaprolactoneĐộ dày7,5 milĐộ bóng≥143 GULớp phủMULTIPURIFYMô-đun tại độ giãn 100%8,2 MPaĐộ bền kéo24,6 MPaĐộ giãn dài khi đứt345%Thử nghiệm lão hóaQUV340 – 3.000 giờBảo hành3 năm*Hộp phim NKD PPF dựng đứng trong khu trưng bày.
 *Bảo hành theo điều kiện áp dụng. Giá theo nhóm xe trình bày tại phần bảng giá bên dưới.
-Quy trình dán PPF NKD Apex tại Auto3656 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công PPF tại Auto365, bấm ảnh để xem bài.1Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn dán toàn xe theo nhóm xe hoặc từng vị trí.2Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn.3Đo đạc & chuẩn bị phimCắt phim theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp.4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để đẩy hết dung dịch, không khí.5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và các chi tiết phức tạp để phim phẳng và bám chắc.6Kiểm tra, bàn giao & hướng dẫnKiểm tra bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, lịch rửa xe những ngày đầu và phiếu bảo hành.Dùng gạt đẩy nước dưới phim để phim bám phẳng lên sơn.
+Quy trình dán PPF NKD Apex tại Auto3651Nhận xe, kiểm tra sơnXem tình trạng sơn, vết trầy cũ và chỗ từng sơn sửa; thống nhất phạm vi dán toàn xe trước khi làm.2Rửa và làm sạch bề mặtRửa xe, tẩy bụi bẩn và dầu mỡ bám trên sơn; xử lý các khuyết điểm nhỏ để phim bám đều.3Cắt và chuẩn bị phim NKDChuẩn bị phim theo từng chi tiết của xe, chừa mép cho các đường cong, góc cản và quanh đèn.4Dán và gạt phẳngĐặt phim lên bề mặt bằng dung dịch thi công, gạt hết nước và bọt khí bên dưới.5Vuốt mép, hoàn thiệnVuốt và cố định mép phim ở góc bo, khe hở, tay nắm để phim phẳng và bám chắc.6Kiểm tra và bàn giaoSoát bọt khí, bụi, mép phim; bàn giao xe kèm hướng dẫn rửa xe những ngày đầu và phiếu bảo hành 3 năm.Dùng gạt đẩy nước dưới phim để phim bám phẳng lên sơn.
 
 Giá dán PPF NKD ApexGiá dán Apex tính theo nhóm xe và áp dụng cho dán toàn xe: Sedan 28 triệu đồng, SUV 30 triệu, MPV 33 triệu. Giá đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.BẢNG GIÁ THEO NHÓM XENKD APEXSedan28.000.000 đSUV30.000.000 đMPV33.000.000 đGiá dán toàn xe, đã gồm phim, công thi công và VAT. Nguồn: bảng giá “NKD Apex – Giá dán theo dòng xe”.Tư vấn giá theo xe · 0365 365 365Hộp phim NKD PPF trong khu trưng bày.Địa chỉ dán PPF NKD Apex tại TP.HCMAuto365.vn - Trụ Sở Chính tại TP.HCM tiếp nhận tư vấn và dán PPF NKD Apex. Giá dán toàn xe áp dụng tại các cơ sở Auto365; nên gọi trước để giữ lịch và chọn điểm thi công gần nhất.
 Vì sao chọn dán PPF NKD Apex tại Auto365?
 
 Tư vấn theo xe thực tếKỹ thuật viên kiểm tra nền sơn, vết trầy cũ và tư vấn phạm vi dán trước khi thi công.
-Tay nghề được 3M công nhậnTrụ Sở Chính được 3M công nhận Preferred Installer (20/06/2026); xe được kiểm tra dưới ánh sáng xiên trước khi bàn giao.
+Kiểm tra kỹ trước khi giao xeMép phim, bọt khí và bề mặt được kiểm tra dưới ánh sáng xiên trước khi bàn giao.
 90+ chi nhánh nhận dán PPFHệ thống chi nhánh tại 33 tỉnh thành; khi đặt lịch, Auto365 xác nhận điểm thi công và lịch hẹn phù hợp.
 Giá rõ, bảo hành có phiếuGiá dán toàn xe đã gồm phim, công thi công và VAT; bảo hành theo điều kiện của NKD, tính từ ngày thi công.
 
