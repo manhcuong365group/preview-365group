@@ -58,16 +58,17 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-logos div{border:1px solid var(--line);border-radius:10px;background:#fff;padding:12px;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.04)}
 .td-logos img{height:40px;width:100%;max-width:120px;object-fit:contain}
 .td-cert{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.td-cert img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
-.td-sps{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.td-extra{text-align:center;margin:18px 0 0;font-size:14px;color:var(--mut)}.td-extra a{color:var(--red);font-weight:700}
+.td-sps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .td-sp{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.05);transition:.2s}
 .td-sp:hover{box-shadow:0 10px 28px rgba(0,0,0,.1);transform:translateY(-2px)}
-.td-sp-img{position:relative;aspect-ratio:16/9;background:#111}.td-sp-img img{width:100%;height:100%;object-fit:cover}
+.td-sp-img{position:relative;aspect-ratio:4/3;background:#111}.td-sp-img img{width:100%;height:100%;object-fit:cover}
 .td-sp-img b{position:absolute;left:16px;top:14px;background:var(--red);color:#fff;font-size:13px;padding:4px 10px;border-radius:6px}
-.td-sp-tx{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
-.td-sp h3{font-size:21px;margin:0 0 4px}.td-sp p{color:var(--red);font-weight:600;font-size:13.5px;margin:0 0 12px}
-.td-sp ul{list-style:none;padding:0;margin:0 0 18px;font-size:14px;color:#333}.td-sp li{padding-left:22px;position:relative;margin:7px 0}
+.td-sp-tx{padding:16px 16px 18px;color:var(--ink);display:flex;flex-direction:column;flex:1}
+.td-sp h3{font-size:18px;margin:0 0 4px}.td-sp p{color:var(--red);font-weight:600;font-size:13.5px;margin:0 0 12px}
+.td-sp ul{list-style:none;padding:0;margin:0 0 14px;font-size:13.5px;color:#333}.td-sp li{padding-left:22px;position:relative;margin:7px 0}
 .td-sp li:before{content:"";position:absolute;left:0;top:4px;width:14px;height:14px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M4 8l3 3 5-6%27 stroke=%27white%27 stroke-width=%272%27 fill=%27none%27/%3E%3C/svg%3E") center/10px no-repeat}
-.td-sp-cta{margin-top:auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}.td-sp-more{font-weight:700;font-size:14px;color:var(--ink)}.td-sp-more:hover{color:var(--red)}
+.td-sp-more{margin-top:auto;color:var(--red)!important;font-weight:700;font-size:14px;color:var(--ink)}.td-sp-more:hover{color:var(--red)}
 .td-cases-hd{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.td-cases-hd .td-h2{margin:0}
 .td-flt{display:flex;gap:6px;flex-wrap:wrap}.td-flt button{border:0;background:var(--bg);padding:6px 14px;border-radius:16px;font-size:12.5px;font-weight:600;cursor:pointer}.td-flt button.on{background:var(--red);color:#fff}
 .td-cases{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
@@ -88,9 +89,9 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-demo{background:#fff6d6;color:#6b5200;font-size:12.5px;text-align:center;padding:6px 16px}
 .td-hd a{white-space:nowrap}
 @media(max-width:1100px){.td-nav{display:none}.td-hd .td-btn-out{margin-left:auto}}
-@media(max-width:980px){.td-logos{grid-template-columns:repeat(5,1fr)}.td-cert{grid-template-columns:repeat(3,1fr)}.td-why figure img{aspect-ratio:16/9;width:100%}.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
+@media(max-width:980px){.td-sps{grid-template-columns:1fr 1fr}.td-logos{grid-template-columns:repeat(5,1fr)}.td-cert{grid-template-columns:repeat(3,1fr)}.td-why figure img{aspect-ratio:16/9;width:100%}.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
 .td-why,.td-part,.td-bot{grid-template-columns:1fr}.td-cases{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.td-sps{grid-template-columns:1fr}.td-hero:before{width:100%;opacity:.35;-webkit-mask-image:none;mask-image:none}.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
+@media(max-width:600px){.td-sps{grid-template-columns:1fr;gap:12px}.td-sp{flex-direction:row}.td-sp-img{width:38%;flex:none;aspect-ratio:auto}.td-sp-tx{padding:12px 12px 14px}.td-sp h3{font-size:16px}.td-sp p{font-size:12.5px;margin-bottom:6px}.td-sp ul{font-size:12.5px;margin-bottom:8px}.td-sp li{margin:4px 0;padding-left:18px}.td-sp li:before{width:12px;height:12px;top:3px}.td-sp-img b{left:8px;top:8px;font-size:11px;padding:2px 7px}.td-sp-more{font-size:13px}.td-hero:before{width:100%;opacity:.35;-webkit-mask-image:none;mask-image:none}.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
 .td-stats{grid-template-columns:1fr 1fr;margin:-56px 16px 0}.td-stats div{border:0}.td-svc{grid-template-columns:1fr 1fr}.td-why ul{grid-template-columns:1fr}
 .td-logos{grid-template-columns:repeat(3,1fr)}.td-cases{grid-template-columns:1fr 1fr}.td-rev{flex-direction:column}.td-book form{grid-template-columns:1fr}.td-h2c{font-size:22px}}
 </style>
@@ -120,19 +121,6 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 </div></div>
 
 <main class="td-wrap">
-<section class="td-sec" id="dich-vu">
-  <div class="td-kick">DỊCH VỤ CHỦ ĐẠO</div>
-  <h2 class="td-h2c">Giải pháp nâng cấp &amp; cá nhân hoá ô tô toàn diện</h2>
-  <div class="td-svc">
-    <a href="https://auto365.vn/nang-cap-anh-sang"><img src="hinh/den.webp" alt="Nâng cấp đèn ô tô" loading="lazy"><span>Nâng cấp đèn các loại</span><i>→</i></a>
-    <a href="https://auto365.vn/phim-cach-nhiet"><img src="hinh/phim.webp" alt="Phim cách nhiệt ô tô" loading="lazy"><span>Phim cách nhiệt</span><i>→</i></a>
-    <a href="https://auto365.vn/ppf-o-to"><img src="hinh/ppf.webp" alt="PPF và wrap đổi màu" loading="lazy"><span>PPF / Wrap đổi màu</span><i>→</i></a>
-    <a href="#"><img src="hinh/xuong.webp" alt="Nội thất da cá nhân hoá" loading="lazy"><span>Nội thất da cá nhân hoá</span><i>→</i></a>
-    <a href="#"><img src="hinh/xedien.webp" alt="Giải pháp cho xe điện" loading="lazy"><span>Giải pháp cho xe điện</span><i>→</i></a>
-    <a href="https://auto365.vn/camera-hanh-trinh"><img src="hinh/camera.webp" alt="Camera hành trình" loading="lazy"><span>Camera hành trình</span><i>→</i></a>
-  </div>
-</section>
-
 <section class="td-sec" id="vi-sao">
   <div class="td-kick" style="text-align:left">VỀ TRỤ SỞ CHÍNH</div>
   <h2 class="td-h2">Cái nôi của hệ thống Auto365</h2>
@@ -163,35 +151,28 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
   </div>
 </section>
 
-<section class="td-sec" id="hang-muc">
-  <div class="td-kick">SẢN PHẨM CHỦ ĐẠO</div>
-  <h2 class="td-h2c">4 nhóm sản phẩm chủ đạo tại Trụ sở chính</h2>
+<section class="td-sec" id="dich-vu">
+  <div class="td-kick">DỊCH VỤ CHỦ ĐẠO</div>
+  <h2 class="td-h2c">Nâng cấp toàn diện, chỉ một điểm đến</h2>
   <div class="td-sps">
-    <article class="td-sp" id="sp-den">
-      <div class="td-sp-img"><img src="hinh/test.webp" alt="Cân chỉnh đèn trên bảng test tại Auto365 Trụ sở chính" loading="lazy"><b>01</b></div>
-      <div class="td-sp-tx"><h3>Nâng cấp đèn ô tô</h3><p>Tăng tầm nhìn, an toàn hơn khi lái đêm</p>
-        <ul><li>Bi LED, Bi Laser, bi gầm X-Light, GTR, AES</li><li>Cân chỉnh vệt sáng trên bảng test, không gây chói</li><li>Tư vấn theo từng dòng xe, bảo hành chính hãng</li></ul>
-        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/nang-cap-anh-sang">Xem chi tiết →</a></div></div>
-    </article>
-    <article class="td-sp" id="sp-phim">
-      <div class="td-sp-img"><img src="hinh/khu-thi-cong-3m-pro-shop.webp" alt="Khu thi công phim cách nhiệt 3M Pro Shop tại Auto365 Trụ sở chính" loading="lazy"><b>02</b></div>
-      <div class="td-sp-tx"><h3>Phim cách nhiệt 3M</h3><p>Giảm nóng, cản UV, riêng tư trong cabin</p>
-        <ul><li>3M Crystalline, Ceramic Hybrid, Ceramic NR/IR</li><li>Chọn mã phim theo từng vị trí kính</li><li>Bảo hành điện tử, tra cứu toàn hệ thống</li></ul>
-        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/phim-cach-nhiet">Xem chi tiết →</a></div></div>
-    </article>
-    <article class="td-sp" id="sp-ppf">
-      <div class="td-sp-img"><img src="hinh/ppf.webp" alt="Xe hoàn thiện dán PPF 3M tại Auto365" loading="lazy"><b>03</b></div>
-      <div class="td-sp-tx"><h3>PPF / Wrap đổi màu</h3><p>Bảo vệ sơn zin, đổi phong cách xe</p>
-        <ul><li>PPF trong suốt chống trầy xước, đá văng</li><li>Wrap đổi màu không ảnh hưởng sơn gốc</li><li>Thi công trong phòng kín, căn mép tỉ mỉ</li></ul>
-        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/ppf-o-to">Xem chi tiết →</a></div></div>
-    </article>
-    <article class="td-sp" id="sp-camera">
-      <div class="td-sp-img"><img src="hinh/camera.webp" alt="Camera hành trình 70mai lắp tại Auto365" loading="lazy"><b>04</b></div>
-      <div class="td-sp-tx"><h3>Camera hành trình</h3><p>Ghi hình rõ nét, lưu bằng chứng mỗi chuyến đi</p>
-        <ul><li>70mai, Vietmap và nhiều thương hiệu chính hãng</li><li>Đi dây ẩn gọn, không ảnh hưởng thẩm mỹ cabin</li><li>Hướng dẫn kết nối app, xem video trên điện thoại</li></ul>
-        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/camera-hanh-trinh-o-to-70mai">Xem chi tiết →</a></div></div>
-    </article>
+    <a class="td-sp" id="sp-den" href="https://auto365.vn/nang-cap-anh-sang">
+      <div class="td-sp-img"><img src="hinh/test.webp" alt="Kỹ thuật viên cân chỉnh đèn trên bảng test tại Auto365 Trụ sở chính" loading="lazy"><b>01</b></div>
+      <div class="td-sp-tx"><h3>Nâng cấp đèn</h3><p>Đêm sáng rõ, đường an tâm</p><ul><li>Bi LED, bi gầm X-Light · GTR · AES</li><li>Cân vệt sáng trên bảng test, không chói xe ngược chiều</li></ul><span class="td-sp-more">Xem chi tiết →</span></div>
+    </a>
+    <a class="td-sp" id="sp-phim" href="https://auto365.vn/phim-cach-nhiet">
+      <div class="td-sp-img"><img src="hinh/khu-thi-cong-3m-pro-shop.webp" alt="Khu thi công phim cách nhiệt tại 3M Pro Shop Auto365 Trụ sở chính" loading="lazy"><b>02</b></div>
+      <div class="td-sp-tx"><h3>Phim cách nhiệt 3M</h3><p>Cabin mát hơn từ ngày đầu</p><ul><li>Crystalline, Ceramic Hybrid, Ceramic NR/IR</li><li>Thi công tại 3M Pro Shop, bảo hành điện tử 3M</li></ul><span class="td-sp-more">Xem chi tiết →</span></div>
+    </a>
+    <a class="td-sp" id="sp-ppf" href="https://auto365.vn/ppf-o-to">
+      <div class="td-sp-img"><img src="hinh/ppf.webp" alt="BMW 530i hoàn thiện dán PPF 3M tại Auto365" loading="lazy"><b>03</b></div>
+      <div class="td-sp-tx"><h3>PPF / Wrap đổi màu</h3><p>Giữ lớp sơn như ngày nhận xe</p><ul><li>PPF 3M, AX Film chống trầy, đá văng</li><li>Wrap đổi màu, bảo vệ lớp sơn gốc bên dưới</li></ul><span class="td-sp-more">Xem chi tiết →</span></div>
+    </a>
+    <a class="td-sp" id="sp-camera" href="https://auto365.vn/camera-hanh-trinh-o-to-70mai">
+      <div class="td-sp-img"><img src="hinh/camera-70mai-a510-ford-everest.webp" alt="Ford Everest lắp camera hành trình 70mai A510 tại Auto365" loading="lazy"><b>04</b></div>
+      <div class="td-sp-tx"><h3>Camera hành trình</h3><p>Mỗi chuyến đi đều có bằng chứng</p><ul><li>70mai, Vietmap chính hãng</li><li>Đi dây ẩn gọn, xem lại video ngay trên điện thoại</li></ul><span class="td-sp-more">Xem chi tiết →</span></div>
+    </a>
   </div>
+  <p class="td-extra">Ngoài ra: <strong>bọc da nội thất cá nhân hoá</strong> · <strong>phụ kiện &amp; giải pháp cho xe điện</strong> · <strong>màn hình Android Teyes, Vietmap</strong> — <a href="#dat-lich">đặt lịch tư vấn</a></p>
 </section>
 
 <section class="td-sec" id="cong-trinh">
