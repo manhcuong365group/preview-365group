@@ -11,8 +11,8 @@
 | H1 | Bi gầm Kia theo từng dòng xe |
 | dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (12), FAQPage |
-| SHA-256 index.html | `62116dc5e313d7f9d9c9966e47417db349c7c06ad14baad4ac4434bd292d0615` |
-| SHA-256 content-src.html | `cf3f311e2bc4e6219b83e769466a612ec4e5961596ce82019d677734cc0e0e96` |
+| SHA-256 index.html | `ff6289adf653b168e56e7df937604213a3d692f544cc330afda7e7e0e8f5f660` |
+| SHA-256 content-src.html | `7b444f12b93e7ac78a9e9beb287d892ba51ba76854d5faa8b7774dfa9d77ef46` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -120,7 +120,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ki
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
 | Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new-8-1791511473.webp` | Kia Morning Si AT 2016 lắp bi gầm X-Light F10 2.0 New tại Auto365 |
 | Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `kia-sportage-2-0g-premium-2022-lap-bi-gam-x-light-f10-turbo-1792548422.webp` | Kia Sportage 2022 lắp bi gầm X-Light F10 Turbo V2 5500K tại Auto365 |
-| Tư vấn đúng theo từng xe | Kỹ thuật viên kiểm tra hốc đèn, cấu hình điện và đời/phiên bản xe trước khi đề xuất mẫu bi gầm, phụ kiện và phương án lắp đặt. | `auto365vn-kia-sedona-nang-cap-bi-gam-x-light-f10-pro-v2-img_6a5ef67002e9e9.68465652.jpg.webp` | Kia Sedona 2017 nâng cấp bi gầm X-Light F10 Pro V2 tại Auto365 |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `auto365vn-kia-sedona-nang-cap-bi-gam-x-light-f10-pro-v2-img_6a5ef67002e9e9.68465652.jpg.webp` | Kia Sedona 2017 nâng cấp bi gầm X-Light F10 Pro V2 tại Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Kia trên trang này.
 

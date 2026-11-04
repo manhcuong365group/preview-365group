@@ -71,8 +71,7 @@ const WHY_IMG = {
 };
 let why = cut('<section class="bght-sec bght-why" id="vi-sao-chon">', /\n?<\/div><\/section>/)
   .replace(/src="hinh\/([^"]+)" alt="[^"]*"/g, (m, f) => { const v = WHY_IMG[f]; if (!v) throw new Error('why img: ' + f); return `src="${v[0]}" alt="${v[1]}"`; })
-  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm Kia?')
-  .replace('Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt.', 'Kỹ thuật viên kiểm tra hốc đèn, cấu hình điện và đời/phiên bản xe trước khi đề xuất mẫu bi gầm, phụ kiện và phương án lắp đặt.');
+  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm Kia?');
 // khối gốc bên theo-hang-xe dư 1 </div> (đóng luôn wrapper của trang đó) → bỏ phần dư, không thì đóng sớm .bgvf
 {
   let extra = (why.match(/<\/div>/g) || []).length - (why.match(/<div\b/g) || []).length;
