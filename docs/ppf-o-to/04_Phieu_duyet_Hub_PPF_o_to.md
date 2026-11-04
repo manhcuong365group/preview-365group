@@ -191,3 +191,58 @@ Cập nhật 04/11/2026 (chủ trang): thẻ "90+ chi nhánh triển khai PPF/Wr
 Cập nhật 04/11/2026 (chủ trang): bảng giá thêm thương hiệu NKD PPF, tab đặt giữa 3M và AX Film (logo NKD, "Phim bảo vệ sơn · 2 dòng phim"). Hai thẻ: NKD PPF Apex (7.5 mil, ≥143 GU, bảo hành 3 năm; toàn xe 28/30/33 triệu) và NKD PPF Apex Ultra (8.5 mil, ≥143 GU, bảo hành 5 năm; toàn xe 38/42/46 triệu), giá gồm phim, công thi công và VAT theo Kinh doanh 04/11/2026; link https://auto365.vn/phim-bao-ve-son-nkd-ppf-apex và https://auto365.vn/phim-bao-ve-son-nkd-ppf-apex-ultra, ảnh lấy từ trang sản phẩm. ItemList 9 → 11 Product. Mô tả mở đầu bảng giá và meta description thêm NKD. NKD chưa có bảng giá theo vị trí nên không thêm vào bộ ước tính vị trí. Phần NKD trên hub chờ anh Đặng Minh Hoàng xem.
 
 Cập nhật 04/11/2026: anh Đặng Minh Hoàng duyệt toàn bộ thay đổi 03–04/11 (3M Pro Shop, ảnh hero, ảnh showroom, dải lợi ích, NKD PPF). Chủ trang xác nhận NKD chưa có giá dán lẻ theo vị trí, bộ ước tính vị trí giữ 3M và AX. lastReviewed 2026-11-04, byline "Kiểm duyệt: Đặng Minh Hoàng (04/11/2026)".
+
+
+## Phiếu U3 V1.9 bổ sung 04/11/2026 — CHỜ DUYỆT
+
+Kế thừa phiếu U3 V1.9 bản 02/11/2026 (PASS – ĐÃ DUYỆT, Đặng Minh Hoàng). Phiếu này chỉ ghi các thay đổi 03–04/11/2026; phần đã nghiệm thu 02/11 giữ nguyên, không mở lại.
+
+| Thông tin | Giá trị |
+|---|---|
+| Trang | https://preview-365group.pages.dev/ppf-o-to/ · canonical https://auto365.vn/ppf-o-to |
+| Bản đã duyệt U3 (02/11) | SHA-256 `092f9835…` |
+| Bản đối chiếu phiếu này | SHA-256 `f3781e2327e87900041a36db6cd9b47fb2be8d281fdc2441522c81f6cd5f1b38` |
+| Ngày | `dateModified` 2026-11-04 · `lastReviewed` 2026-11-04 (anh Đặng Minh Hoàng duyệt nội dung các thay đổi 03–04/11) |
+| Tác giả | Team Content Auto365 |
+| Kiểm duyệt nội dung | Đặng Minh Hoàng |
+| Rà soát SEO / U1–U3 | Ngọc Trân – SEO |
+
+### I. Thay đổi từ sau bản 02/11
+
+| # | Thay đổi | Dữ kiện / nguồn |
+|---|---|---|
+| 1 | Hero: dải "3M Pro Shop · Auto365 Center được 3M Việt Nam bổ nhiệm · Xem hồ sơ →" (link /3m-pro-shop-tru-so-chinh) | Câu chứng nhận đã duyệt 30/10; bỏ mốc hiệu lực trên dải theo chủ trang |
+| 2 | Tab 3M bảng giá: dòng "Muốn dán phim 3M tại 3M Pro Shop…" + link hồ sơ, Đặt lịch tư vấn; ẩn ở tab khác | Như mục 1 |
+| 3 | Ảnh hero: 3M Pro Shop & 3M Training Center (hinh/3m-pro-shop-training-center-auto365.webp, 1600×900) | Ảnh chủ trang cung cấp; ảnh nhận diện cơ sở, không dùng làm hồ sơ thi công |
+| 4 | Thẻ "90+ chi nhánh" khối Vì sao: ảnh showroom 3M Pro Shop (hinh/showroom-3m-pro-shop-auto365.webp, 1200×675) | Ảnh chủ trang cung cấp; trang không còn ảnh dùng trùng |
+| 5 | Dải 6 lợi ích dưới hero: thẻ trắng, icon đỏ, chữ đậm | Chỉ đổi giao diện, chữ giữ nguyên |
+| 6 | Thương hiệu NKD PPF: tab giữa 3M và AX Film; thẻ Apex (7.5 mil, ≥143 GU, BH 3 năm, 28/30/33 triệu) và Apex Ultra (8.5 mil, ≥143 GU, BH 5 năm, 38/42/46 triệu) | Giá toàn xe gồm phim, công, VAT — Kinh doanh chốt 04/11; thông số theo catalog NKD và trang sản phẩm auto365.vn |
+| 7 | Schema ItemList 9 → 11 Product; mô tả bảng giá và meta description thêm NKD | Khớp thẻ hiển thị |
+| 8 | NKD không có trong bộ ước tính giá theo vị trí | NKD chưa có giá dán lẻ (chủ trang xác nhận 04/11) |
+
+### II. Kết quả kiểm trên preview (04/11/2026)
+
+| Mục | Cách kiểm | Kết quả |
+|---|---|---|
+| Hiển thị hero, dải 3M Pro Shop | Desktop 1366px, mobile 375px | Đạt — không tràn ngang; mobile logo trái, chữ + link phải |
+| Ảnh mới | Tải ảnh, kích thước thật | Đạt — 1600×900 và 1200×675 tải đủ |
+| Tab NKD | Bấm tab, đổi Sedan → MPV | Đạt — Apex 28 → 33 triệu, Ultra 38 → 46 triệu; ảnh thẻ tải đủ |
+| Dòng ghi chú 3M Pro Shop | Chuyển tab 3M ↔ NKD ↔ AX | Đạt — chỉ hiện ở tab 3M |
+| 3 tab thương hiệu mobile | 375px | Đạt — chia đều 3 cột, không tràn |
+| Schema | Parse JSON-LD | Đạt — hợp lệ; ItemList 11 Product; FAQPage 9 câu |
+| Hồ sơ | SHA 01–04 so với HTML Cloudflare | Đạt — trùng SHA ở bảng trên |
+| Form/lead | Không đổi mã form trong đợt này | Giữ kết quả PASS pk56; không gửi lead thử mới |
+
+### III. Việc khi lên production (bổ sung)
+
+- Upload 3 ảnh: hinh/3m-pro-shop-training-center-auto365.webp, hinh/showroom-3m-pro-shop-auto365.webp, hinh/logo-nkd-ppf.webp lên auto365.vn và đổi đường dẫn (cùng 4 ảnh 3M đã ghi trước).
+- Giữ link 2 trang NKD /phim-bao-ve-son-nkd-ppf-apex và /phim-bao-ve-son-nkd-ppf-apex-ultra.
+- Các mục cũ giữ nguyên: gỡ khối "Kiểm tra nội bộ", đọc /chi-nhanh?json=1 giữ số PPF 0365 365 365 cho Trụ Sở Chính, redirect sau khi đổi link catalog.
+
+### IV. Đề nghị kết luận
+
+Đề nghị: **PASS – DUYỆT BỔ SUNG U3 V1.9 (phạm vi demo)**, giữ quyết định 02/11 và ghi nhận các thay đổi 03–04/11.
+
+| Người rà soát SEO / nghiệm thu | Người kiểm duyệt nội dung – kỹ thuật |
+|---|---|
+| Ngọc Trân – SEO: ……………… (ngày ……/11/2026) | Đặng Minh Hoàng: ……………… (ngày ……/11/2026) |
