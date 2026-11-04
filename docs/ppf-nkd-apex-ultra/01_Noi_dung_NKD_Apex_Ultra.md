@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex Ultra
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `ad237b8afdc0f1d63ffaf98ec68ba16c47d27b8d708aa5f77eb85f47709039cf` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `8b7b5603b275a2bdc6782b1ad7d2bc6e2bfa044ae0f40a60245fdcb7329f6d7d` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -17,10 +17,7 @@
 9. Câu hỏi thường gặp về PPF NKD Apex Ultra
 10. Nguồn và thông tin biên tập
 
-## FAQ (khớp FAQPage 6/6)
-
-**NKD Apex Ultra dày bao nhiêu?**
-Khoảng 215,9 µm, tức 8,5 mil.
+## FAQ (khớp FAQPage 5/5)
 
 **Giá dán NKD Apex Ultra bao nhiêu?**
 Giá dán PPF NKD Apex Ultra toàn xe từ 38.000.000 – 46.000.000 VNĐ tùy nhóm xe: Sedan 38 triệu, SUV 42 triệu và MPV 46 triệu, đã gồm phim, công thi công và VAT. Để nhận báo giá đúng mẫu xe, chủ xe liên hệ hotline Phim & PPF 0365 365 365.
@@ -75,7 +72,7 @@ Auto365.vn - Trụ Sở ChínhĐịa chỉ: Số 4/4/1/7 Đường Số 3, Phư�
 Chỉ đường Google MapsHồ sơ Trụ Sở ChínhHệ thống chi nhánh
 
 Câu hỏi thường gặp về PPF NKD Apex Ultra
-NKD Apex Ultra dày bao nhiêu?Khoảng 215,9 µm, tức 8,5 mil.
+
 Giá dán NKD Apex Ultra bao nhiêu?Giá dán PPF NKD Apex Ultra toàn xe từ 38.000.000 – 46.000.000 VNĐ tùy nhóm xe: Sedan 38 triệu, SUV 42 triệu và MPV 46 triệu, đã gồm phim, công thi công và VAT. Để nhận báo giá đúng mẫu xe, chủ xe liên hệ hotline Phim & PPF 0365 365 365.
 PPF NKD Apex Ultra bảo hành bao lâu?5 năm theo điều kiện của NKD, tính từ ngày thi công. Quyền lợi và các trường hợp loại trừ ghi trong phiếu bảo hành nhận cùng xe.
 PPF có ngăn được mọi vết xước không?Không. Phim đỡ được xước nhẹ và vết ma sát hằng ngày. Vật sắc hay va chạm mạnh vẫn có thể làm rách phim và hỏng sơn.

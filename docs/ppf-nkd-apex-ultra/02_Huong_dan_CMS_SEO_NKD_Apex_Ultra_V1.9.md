@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — PPF NKD Apex Ultra (V1.9)
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `ad237b8afdc0f1d63ffaf98ec68ba16c47d27b8d708aa5f77eb85f47709039cf` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `8b7b5603b275a2bdc6782b1ad7d2bc6e2bfa044ae0f40a60245fdcb7329f6d7d` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -15,7 +15,7 @@
 | H1 | PPF NKD Apex Ultra: thông số, giá dán và bảo hành |
 | Robots | Preview: `noindex,follow`. **Gỡ khi lên production** |
 | Breadcrumb | Trang chủ › PPF & Wrap film (`/ppfwrap-film`) › PPF NKD Apex Ultra. Khi hub `/ppf-o-to` lên production và bật 301 `/ppfwrap-film` → `/ppf-o-to`, đổi link trong bài + breadcrumb sang `/ppf-o-to` |
-| Schema | @graph: BreadcrumbList, WebPage (reviewedBy Đặng Minh Hoàng, lastReviewed), Organization, Product (additionalProperty + AggregateOffer 3 Offer, valueAddedTaxIncluded), FAQPage 6 câu |
+| Schema | @graph: BreadcrumbList, WebPage (reviewedBy Đặng Minh Hoàng, lastReviewed), Organization, Product (additionalProperty + AggregateOffer 3 Offer, valueAddedTaxIncluded), FAQPage 5 câu |
 | Giá | Sedan 38.000.000 · SUV 42.000.000 · MPV 46.000.000 VNĐ — **giá dán toàn xe, đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365** (Kinh doanh chốt 04/11/2026) |
 | Bảo hành | 5 năm theo điều kiện của NKD, **tính từ ngày thi công** (Kinh doanh 04/11/2026) |
 | Thông số | 8,5 mil (≈215,9 µm) · Polycaprolactone · MULTIPURIFY · ≥143 GU · mô-đun 100% 8,6 MPa · độ bền kéo 25,8 MPa · giãn dài khi đứt 370% · QUV340 3.000 giờ — theo catalog NKD do hãng cung cấp (trang 1) |
