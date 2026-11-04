@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `8287d8e004dfc71cd93eff34bdd774138b79543bc9e577f597e165476264649d` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `979d5e3ded1d2707541c51e12b60a71b4112d00c544ac17a2481ea3dc5a8c461` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -58,12 +58,18 @@ Thương hiệuNKD PPFLoại phimPhim bảo vệ sơn ô tôVật liệuPolycapr
 Quy trình dán PPF NKD Apex tại Auto3651Nhận xe, kiểm tra sơnXem tình trạng sơn, vết trầy cũ và chỗ từng sơn sửa; thống nhất phạm vi dán toàn xe trước khi làm.2Rửa và làm sạch bề mặtRửa xe, tẩy bụi bẩn và dầu mỡ bám trên sơn; xử lý các khuyết điểm nhỏ để phim bám đều.3Cắt và chuẩn bị phim NKDChuẩn bị phim theo từng chi tiết của xe, chừa mép cho các đường cong, góc cản và quanh đèn.4Dán và gạt phẳngĐặt phim lên bề mặt bằng dung dịch thi công, gạt hết nước và bọt khí bên dưới.5Vuốt mép, hoàn thiệnVuốt và cố định mép phim ở góc bo, khe hở, tay nắm để phim phẳng và bám chắc.6Kiểm tra và bàn giaoSoát bọt khí, bụi, mép phim; bàn giao xe kèm hướng dẫn rửa xe những ngày đầu và phiếu bảo hành 3 năm.Dùng gạt đẩy nước dưới phim để phim bám phẳng lên sơn.
 
 Giá dán PPF NKD ApexGiá dán Apex tính theo nhóm xe và áp dụng cho dán toàn xe: Sedan 28 triệu đồng, SUV 30 triệu, MPV 33 triệu. Giá đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.BẢNG GIÁ THEO NHÓM XENKD APEXSedan28.000.000 đSUV30.000.000 đMPV33.000.000 đGiá dán toàn xe, đã gồm phim, công thi công và VAT. Nguồn: bảng giá “NKD Apex – Giá dán theo dòng xe”.Tư vấn giá theo xe · 0365 365 365Hộp phim NKD PPF trong khu trưng bày.Địa chỉ dán PPF NKD Apex tại TP.HCMAuto365.vn - Trụ Sở Chính tại TP.HCM tiếp nhận tư vấn và dán PPF NKD Apex. Giá dán toàn xe áp dụng tại các cơ sở Auto365; nên gọi trước để giữ lịch và chọn điểm thi công gần nhất.
-Vì sao chọn dán PPF NKD Apex tại Auto365?
+Vì sao chọn dán PPF NKD Apex tại Auto365?Auto365.vn thuộc 365Group, là hệ thống dịch vụ ô tô với hơn 90 chi nhánh tại 33 tỉnh thành, Trụ Sở Chính đặt tại Phường Hiệp Bình, TP.HCM. Ngoài PPF, các chi nhánh Auto365 thi công phim cách nhiệt, nâng cấp đèn, camera hành trình và phụ kiện ô tô.
 
 Tư vấn theo xe thực tếKỹ thuật viên kiểm tra nền sơn, vết trầy cũ và tư vấn phạm vi dán trước khi thi công.
 Kiểm tra kỹ trước khi giao xeMép phim, bọt khí và bề mặt được kiểm tra dưới ánh sáng xiên trước khi bàn giao.
 90+ chi nhánh nhận dán PPFHệ thống chi nhánh tại 33 tỉnh thành; khi đặt lịch, Auto365 xác nhận điểm thi công và lịch hẹn phù hợp.
 Giá rõ, bảo hành có phiếuGiá dán toàn xe đã gồm phim, công thi công và VAT; bảo hành theo điều kiện của NKD, tính từ ngày thi công.
+Khi dán PPF NKD Apex tại Auto365, chủ xe được:
+Kiểm tra nền sơn và thống nhất phạm vi dán toàn xe trước khi thi công.
+Báo giá rõ theo nhóm xe, đã gồm phim, công thi công và VAT.
+Thi công trong xưởng, soát mép phim và bọt khí trước khi giao xe.
+Nhận phiếu bảo hành 3 năm theo điều kiện của NKD, tính từ ngày thi công.
+Hướng dẫn chăm sóc sau dán và hỗ trợ qua hotline Phim & PPF 0365 365 365.
 
 Auto365.vn - Trụ Sở ChínhĐịa chỉ: Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí MinhHotline Phim & PPF: 0365 365 365 · Giờ làm việc: 08:30–18:30
 Chỉ đường Google MapsHồ sơ Trụ Sở ChínhHệ thống chi nhánh

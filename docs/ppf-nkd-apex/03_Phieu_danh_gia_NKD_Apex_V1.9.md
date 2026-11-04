@@ -1,6 +1,6 @@
 # 03 — Phiếu tự chấm PPF NKD Apex (V1.9)
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `8287d8e004dfc71cd93eff34bdd774138b79543bc9e577f597e165476264649d` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `979d5e3ded1d2707541c51e12b60a71b4112d00c544ac17a2481ea3dc5a8c461` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
