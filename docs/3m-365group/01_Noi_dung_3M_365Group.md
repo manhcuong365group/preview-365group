@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `10b2269d1b65e797ee8d7d563de6e37ac00266ba8f884de6fc2c3c711005b54a`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `eee6cfc7d14035d1aff9ef83bb3556a4e5793ef9f06e24df846607b95d190ad3`
 Ngày xuất: 30/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -213,7 +213,6 @@ Bài viết do 365 Group - 3M Authorized Distributor in Vietnam – nhà phân p
 - Kiểm duyệt kỹ thuật: Đặng Minh Hoàng – Giám đốc điều hành 3M Pro Shop & 3M Training Center, 30/10/2026
 - Thương hiệu sản phẩm: 3M™ (Ceramic NR, Ceramic IR, Crystalline CR BLK)
 - Hotline 365 Group - 3M Authorized Distributor in Vietnam: 1900 9365
-- Zalo OA: zalo.me/1637241084134305408
 - Email: kinhdoanh@365group.com.vn
 - Văn phòng: Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh
 - Website nhà phân phối: 3m.365group.com.vn

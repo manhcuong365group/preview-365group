@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Phim cách nhiệt ô tô 3M (365 Group) — chuẩn V1.9
 
-- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `10b2269d1b65e797ee8d7d563de6e37ac00266ba8f884de6fc2c3c711005b54a` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `eee6cfc7d14035d1aff9ef83bb3556a4e5793ef9f06e24df846607b95d190ad3` (cùng phiên bản với 01 và 03)
 - Bản hiện hành: **30/10/2026** (sửa chữ khối Hồ sơ thi công) (dateModified 2026-10-30, lastReviewed 2026-10-30). Tên file giữ "V1.8" để không gãy link; nội dung theo V1.9.
 - **Người nhập CMS chỉ dùng Phần A.** Phần B là lịch sử các vòng vá, không dùng làm đầu vào.
 
@@ -201,7 +201,7 @@ Giá trọn xe Minicar / Sedan / SUV đã hiện trên 6 thẻ cấu hình (dòn
 | Bảo hành 10 năm cho cả 6 cấu hình, điều kiện kích hoạt bảo hành điện tử | Chủ trang xác nhận 22/10/2026; ghi chú trên bảng thông số 365Group |
 | Giá tham khảo trọn xe 5,9–18,3 triệu (gồm công) | Trang 3M đã đăng của Auto365 (pillar phim cách nhiệt 3M) — là giá bán lẻ Auto365, không phải giá nhà phân phối |
 | 224 đại lý / 32 tỉnh / 3 nhóm | Mockup, chủ trang xác nhận giữ 22/10/2026. Lưu ý: `3m.365group.com.vn` đang ghi "160+ đại lý" — cần thống nhất |
-| Hotline 1900 9365, Zalo OA, email, văn phòng Hiệp Bình | Trang `3m.365group.com.vn` |
+| Hotline 1900 9365, email, văn phòng Hiệp Bình | Trang `3m.365group.com.vn` |
 | Ô lợi ích "Bảo hành điện tử 10 năm" (thay ô "Không gây nhiễu tín hiệu" chưa có nguồn) | Ghi chú bảng thông số 365Group |
 | Kinh nghiệm hãng (hơn 55 năm, bằng sáng chế 1966), thợ ủy quyền | Trang Cá nhân hóa ô tô của 3M Việt Nam, ghi "theo 3M" |
 | 4 chứng nhận | Distributor Certificate 3M Việt Nam – 365 Group (01/03/2023–31/12/2026); 3M Pro Shop Certificate – Auto365 Center; 3M Preferred Installer; ảnh lễ trao chứng nhận Training Center |

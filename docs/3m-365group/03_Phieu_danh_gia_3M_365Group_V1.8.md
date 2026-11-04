@@ -8,7 +8,7 @@
 ## Sửa 04/11/2026 — hotline + Zalo OA
 
 - Hotline đổi 0363 365 365 → **1900 9365** (tel:19009365) ở khối form, thông báo lỗi gửi form, mục "Về bài viết này" và `telephone` của Organization.
-- Thêm Zalo OA https://zalo.me/1637241084134305408 trong "Về bài viết này" (dưới form chỉ để hotline, bỏ "hoặc nhắn Zalo OA" theo chủ trang).
+- Zalo OA đã thêm rồi bỏ theo chủ trang (04/11/2026): trang không hiển thị Zalo OA.
 - dateModified 2026-11-04; lastReviewed giữ 2026-10-30.
 
 ## Phiếu U3 V1.9 FINAL — PASS · ĐÃ DUYỆT · đóng toàn bộ R7 + U1/U2/U3 (30/10/2026)
@@ -80,7 +80,7 @@ Chủ trang góp ý chữ "auto365" lặp nhiều trên site 3m.365group. Đổi
 
 ## Xử lý phiếu FIX U1 / S3 / G3 / U3 (30/10/2026)
 
-Build đối chiếu: commit `237821c5`, HTML SHA-256 `10b2269d1b65e797ee8d7d563de6e37ac00266ba8f884de6fc2c3c711005b54a` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
+Build đối chiếu: commit `237821c5`, HTML SHA-256 `eee6cfc7d14035d1aff9ef83bb3556a4e5793ef9f06e24df846607b95d190ad3` — tính lại từ file, trùng 01/02/03. Bảng dưới là bằng chứng team nộp; trạng thái PASS do reviewer ghi.
 
 | Mã | Đã làm | Bằng chứng | Còn CX |
 |---|---|---|---|
@@ -473,7 +473,7 @@ Mọi sửa HTML sau phiên bản này phải xuất lại 01 và cập nhật S
 
 | File | Phiên bản |
 |---|---|
-| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `10b2269d1b65e797ee8d7d563de6e37ac00266ba8f884de6fc2c3c711005b54a` |
+| `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` | SHA-256 `eee6cfc7d14035d1aff9ef83bb3556a4e5793ef9f06e24df846607b95d190ad3` |
 | 01_Noi_dung_3M_365Group.md | Xuất tự động từ HTML trên, 29/10/2026 |
 | 02_Huong_dan_CMS_SEO_3M_365Group_V1.8.md | Ghi cùng SHA-256 |
 
