@@ -1,0 +1,24 @@
+# 05 — Phiếu duyệt: Hub Bi gầm Kia
+
+| Trường | Giá trị |
+|---|---|
+| Trang | `auto365/bi-gam/kia` → canonical `https://auto365.vn/nang-cap-anh-sang-bi-gam/kia` |
+| Bản duyệt | Bản dựng 04/11/2026 — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Kia.md) |
+| Kết quả | **CHƯA DUYỆT** |
+| Biên soạn | Team Content Auto365 |
+| Rà soát kỹ thuật nội dung | Chờ — đề xuất anh Nguyễn Quang Đạo |
+
+## Mục cần duyệt
+
+| Mục | Trạng thái |
+|---|---|
+| Sapo, box "Xe Kia lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, xe đời cũ, Sorento hybrid) | Chờ |
+| 13 dòng xe chia Hatchback / Sedan / SUV / MPV; 9 dòng có hồ sơ | Chờ |
+| Khối nhu cầu 3 nhóm | Chờ |
+| 9 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Chờ |
+| 12 case + 4 bài tư vấn + 8 cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
+
+## Ngoài phạm vi trang
+
+- Danh bạ chi nhánh (rating, link Maps): sửa tại trang /chi-nhanh.
+- Lead test, CRM/tracking: kiểm trên production.
