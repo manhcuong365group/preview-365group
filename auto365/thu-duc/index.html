@@ -29,6 +29,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-hero .td-wrap{position:relative;padding:56px 16px 110px}
 .td-tag{display:inline-block;background:var(--red);font-size:12px;font-weight:700;padding:5px 12px;border-radius:4px}
 .td-hero h1{font-size:40px;line-height:1.15;margin:16px 0 12px;max-width:560px}
+.td-story{font-size:17px;color:#fff!important;margin-bottom:8px!important}.td-story b{color:#ff4d55;font-size:20px}
 .td-hero p{max-width:480px;color:#d9dce2;margin:0 0 18px}
 .td-ticks{display:flex;flex-wrap:wrap;gap:8px 22px;font-size:13.5px;font-weight:600;margin-bottom:24px}.td-ticks span:before{content:"✓ ";color:var(--red)}
 .td-cta{display:flex;flex-wrap:wrap;gap:12px}
@@ -46,6 +47,12 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-svc span{position:absolute;left:14px;right:40px;bottom:14px;z-index:1;font-weight:700;line-height:1.25}
 .td-svc i{position:absolute;right:12px;bottom:14px;z-index:1;width:24px;height:24px;border-radius:50%;background:#fff;color:var(--ink);font-style:normal;display:grid;place-items:center;font-size:13px}
 .td-press{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:-6px 0 20px;font-size:13.5px;color:var(--mut)}.td-press a{border:1px solid var(--line);border-radius:16px;padding:5px 12px;font-weight:700;color:var(--ink)}.td-press a:hover{border-color:var(--red);color:var(--red)}
+.td-tl{list-style:none;margin:6px 0 30px;padding:0;display:grid;grid-template-columns:repeat(6,1fr);position:relative}
+.td-tl:before{content:"";position:absolute;left:0;right:0;top:9px;height:2px;background:linear-gradient(90deg,var(--red),#f3b3b6)}
+.td-tl li{position:relative;padding:30px 12px 0 0}
+.td-tl li:before{content:"";position:absolute;left:0;top:2px;width:16px;height:16px;border-radius:50%;background:#fff;border:3px solid var(--red);box-sizing:border-box}
+.td-tl li.now:before{background:var(--red);box-shadow:0 0 0 5px rgba(215,25,32,.18)}
+.td-tl b{display:block;color:var(--red);font-size:20px;line-height:1.1}.td-tl strong{display:block;font-size:14px;margin:4px 0}.td-tl span{display:block;font-size:12.5px;color:var(--mut);line-height:1.45}
 .td-lead{max-width:860px;color:#444;margin:-6px 0 18px}
 .td-why{display:grid;grid-template-columns:2fr 1fr;gap:20px;align-items:stretch}
 .td-why ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -89,9 +96,9 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-demo{background:#fff6d6;color:#6b5200;font-size:12.5px;text-align:center;padding:6px 16px}
 .td-hd a{white-space:nowrap}
 @media(max-width:1100px){.td-nav{display:none}.td-hd .td-btn-out{margin-left:auto}}
-@media(max-width:980px){.td-sps{grid-template-columns:1fr 1fr}.td-logos{grid-template-columns:repeat(5,1fr)}.td-cert{grid-template-columns:repeat(3,1fr)}.td-why figure img{aspect-ratio:16/9;width:100%}.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
+@media(max-width:980px){.td-tl{grid-template-columns:repeat(3,1fr);row-gap:22px}.td-tl:before{display:none}.td-sps{grid-template-columns:1fr 1fr}.td-logos{grid-template-columns:repeat(5,1fr)}.td-cert{grid-template-columns:repeat(3,1fr)}.td-why figure img{aspect-ratio:16/9;width:100%}.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
 .td-why,.td-part,.td-bot{grid-template-columns:1fr}.td-cases{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.td-sps{grid-template-columns:1fr;gap:12px}.td-sp{flex-direction:row}.td-sp-img{width:38%;flex:none;aspect-ratio:auto}.td-sp-tx{padding:12px 12px 14px}.td-sp h3{font-size:16px}.td-sp p{font-size:12.5px;margin-bottom:6px}.td-sp ul{font-size:12.5px;margin-bottom:8px}.td-sp li{margin:4px 0;padding-left:18px}.td-sp li:before{width:12px;height:12px;top:3px}.td-sp-img b{left:8px;top:8px;font-size:11px;padding:2px 7px}.td-sp-more{font-size:13px}.td-hero:before{width:100%;opacity:.35;-webkit-mask-image:none;mask-image:none}.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
+@media(max-width:600px){.td-tl{grid-template-columns:1fr;row-gap:0;border-left:2px solid var(--red);margin-left:8px}.td-tl li{padding:0 0 18px 22px}.td-tl li:before{left:-9px}.td-sps{grid-template-columns:1fr;gap:12px}.td-sp{flex-direction:row}.td-sp-img{width:38%;flex:none;aspect-ratio:auto}.td-sp-tx{padding:12px 12px 14px}.td-sp h3{font-size:16px}.td-sp p{font-size:12.5px;margin-bottom:6px}.td-sp ul{font-size:12.5px;margin-bottom:8px}.td-sp li{margin:4px 0;padding-left:18px}.td-sp li:before{width:12px;height:12px;top:3px}.td-sp-img b{left:8px;top:8px;font-size:11px;padding:2px 7px}.td-sp-more{font-size:13px}.td-hero:before{width:100%;opacity:.35;-webkit-mask-image:none;mask-image:none}.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
 .td-stats{grid-template-columns:1fr 1fr;margin:-56px 16px 0}.td-stats div{border:0}.td-svc{grid-template-columns:1fr 1fr}.td-why ul{grid-template-columns:1fr}
 .td-logos{grid-template-columns:repeat(3,1fr)}.td-cases{grid-template-columns:1fr 1fr}.td-rev{flex-direction:column}.td-book form{grid-template-columns:1fr}.td-h2c{font-size:22px}}
 </style>
@@ -108,7 +115,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <section class="td-hero"><div class="td-wrap">
   <span class="td-tag">TRỤ SỞ CHÍNH – THỦ ĐỨC</span>
   <h1>Auto365.vn – Trụ sở chính, nơi hệ thống Auto365 bắt đầu</h1>
-  <p>Cửa hàng Auto365 đầu tiên tại Việt Nam và là 3M Pro Shop của hệ sinh thái 365Group. Nâng cấp đèn, phim cách nhiệt, PPF/wrap, camera hành trình với sản phẩm chính hãng, kỹ thuật viên tay nghề cao và quy trình tư vấn rõ ràng.</p>
+  <p class="td-story"><b>2016</b> — cửa hàng Auto365 đầu tiên tại Việt Nam mở cửa ở Thủ Đức. Câu chuyện của cả hệ thống bắt đầu từ đây.</p>
+  <p>Hôm nay, nơi này là 3M Pro Shop của hệ sinh thái 365Group: đèn, phim cách nhiệt, PPF/wrap, camera hành trình — hàng chính hãng, tay nghề kỹ thuật viên lâu năm, tư vấn rõ ràng từng hạng mục.</p>
   <div class="td-ticks"><span>Cửa hàng Auto365 đầu tiên</span><span>Chính hãng, nguồn gốc rõ ràng</span><span>Bảo hành &amp; hậu mãi minh bạch</span></div>
   <div class="td-cta"><a class="td-btn td-btn-red" href="#dat-lich">Đặt lịch tư vấn →</a><a class="td-btn td-btn-ghost" href="#">▷ Xem clip giới thiệu</a></div>
 </div></section>
@@ -121,6 +129,19 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 </div></div>
 
 <main class="td-wrap">
+<section class="td-sec" id="dich-vu">
+  <div class="td-kick">DỊCH VỤ CHỦ ĐẠO</div>
+  <h2 class="td-h2c">Giải pháp nâng cấp &amp; cá nhân hoá ô tô toàn diện</h2>
+  <div class="td-svc">
+    <a href="https://auto365.vn/nang-cap-anh-sang"><img src="hinh/den.webp" alt="Nâng cấp đèn ô tô" loading="lazy"><span>Nâng cấp đèn các loại</span><i>→</i></a>
+    <a href="https://auto365.vn/phim-cach-nhiet"><img src="hinh/phim.webp" alt="Phim cách nhiệt ô tô" loading="lazy"><span>Phim cách nhiệt</span><i>→</i></a>
+    <a href="https://auto365.vn/ppf-o-to"><img src="hinh/ppf.webp" alt="PPF và wrap đổi màu" loading="lazy"><span>PPF / Wrap đổi màu</span><i>→</i></a>
+    <a href="#"><img src="hinh/xuong.webp" alt="Nội thất da cá nhân hoá" loading="lazy"><span>Nội thất da cá nhân hoá</span><i>→</i></a>
+    <a href="#"><img src="hinh/xedien.webp" alt="Giải pháp cho xe điện" loading="lazy"><span>Giải pháp cho xe điện</span><i>→</i></a>
+    <a href="https://auto365.vn/camera-hanh-trinh"><img src="hinh/camera.webp" alt="Camera hành trình" loading="lazy"><span>Camera hành trình</span><i>→</i></a>
+  </div>
+</section>
+
 <section class="td-sec" id="vi-sao">
   <div class="td-kick" style="text-align:left">VỀ TRỤ SỞ CHÍNH</div>
   <h2 class="td-h2">Cái nôi của hệ thống Auto365</h2>
@@ -129,6 +150,14 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
     <a href="https://thanhnien.vn/3m-pro-shop-training-center-tien-phong-tai-viet-nam-van-hanh-tai-tphcm-185260622165518038.htm" target="_blank" rel="noopener">Thanh Niên</a>
     <a href="https://autopro.com.vn/sau-khi-khai-truong-3m-pro-shop-thuc-su-van-hanh-nhu-the-nao-177260821102431487.chn" target="_blank" rel="noopener">Autopro</a>
     <a href="https://tuoitrexahoi.vn/nhung-diem-dang-chu-y-sau-su-kien-khai-truong-3m-pro-shop-tai-tphcm-a220004.html" target="_blank" rel="noopener">Tuổi Trẻ Xã Hội</a></p>
+  <ol class="td-tl">
+    <li><b>2016</b><strong>Viên gạch đầu tiên</strong><span>Cửa hàng Auto365 đầu tiên tại Việt Nam mở cửa ở Thủ Đức.</span></li>
+    <li><b>2020</b><strong>Đại lý ủy quyền X-Light</strong><span>Bắt đầu hành trình nâng cấp ánh sáng chính hãng cùng X-Light.</span></li>
+    <li><b>2023</b><strong>Nhà phân phối chính thức 3M</strong><span>365Group được 3M Việt Nam bổ nhiệm phân phối phim cách nhiệt, PPF, wrap.</span></li>
+    <li><b>01/2026</b><strong>Mở rộng hệ sinh thái</strong><span>Đại lý lắp đặt chính thức 70mai, đại lý chính hãng Vietmap.</span></li>
+    <li><b>06/2026</b><strong>3M Pro Shop & Training Center</strong><span>Mô hình tiên phong tại Việt Nam chính thức vận hành tại Trụ sở chính.</span></li>
+    <li class="now"><b>Hôm nay</b><strong>90+ chi nhánh</strong><span>Từ một cửa hàng, Auto365 đã có mặt tại 33 tỉnh thành.</span></li>
+  </ol>
   <div class="td-why">
     <ul>
       <li><em>⌂</em><b>Cái nôi của hệ thống</b><small>Cửa hàng Auto365 đầu tiên tại Việt Nam. Quy trình tư vấn, thi công, bàn giao được xây dựng tại đây trước khi nhân rộng ra các chi nhánh.</small></li>
@@ -151,8 +180,8 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
   </div>
 </section>
 
-<section class="td-sec" id="dich-vu">
-  <div class="td-kick">DỊCH VỤ CHỦ ĐẠO</div>
+<section class="td-sec" id="san-pham">
+  <div class="td-kick">SẢN PHẨM CHỦ ĐẠO</div>
   <h2 class="td-h2c">Nâng cấp toàn diện, chỉ một điểm đến</h2>
   <div class="td-sps">
     <a class="td-sp" id="sp-den" href="https://auto365.vn/nang-cap-anh-sang">
