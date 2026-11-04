@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex Ultra
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `b368fdbc8052903e7f53a05caa652f87ec66e1df3adca576039da2500cf34c06` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `b8f5a56a611cdf9b266b8d1c32f83d9254deb4d046ae780cbec20ee40bed9507` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -9,10 +9,10 @@
 1. Giới thiệu phim bảo vệ sơn PPF NKD Apex Ultra
 2. Đặc điểm của PPF NKD Apex Ultra
 3. Thông số kỹ thuật PPF NKD Apex Ultra
-4. Thi công PPF NKD Apex Ultra cần lưu ý gì?
+4. Quy trình dán PPF NKD Apex Ultra tại Auto365
 5. Giá dán PPF NKD Apex Ultra
 6. Có nên chọn NKD Apex Ultra cho xe của bạn?
-7. Dán PPF NKD Apex Ultra ở đâu tại TP.HCM?
+7. Địa chỉ dán PPF NKD Apex Ultra tại TP.HCM
 8. Nhận báo giá dán PPF NKD Apex Ultra
 9. Câu hỏi thường gặp về PPF NKD Apex Ultra
 10. Nguồn và thông tin biên tập
@@ -50,17 +50,24 @@ Phim PPF NKD trên xe màu cam, màu sơn gốc vẫn giữ nguyên.
 Kỹ thuật viên Auto365 trải phim NKD lên thân xe.Độ bóng ≥143 GUNKD công bố độ bóng ≥143 GU. Mặt sơn sau khi dán trông bóng đến đâu còn do nền sơn bên dưới và cách rửa xe về sau.QUV340 trong 3.000 giờCatalog ghi thử nghiệm lão hóa tăng tốc QUV340 trong 3.000 giờ. Đây là phép thử trong phòng bằng tia UV và hơi ẩm, dùng để so độ bền vật liệu. Nó không cho biết phim dùng được bao nhiêu năm ngoài trời.
 Thông số kỹ thuật PPF NKD Apex Ultra
 Thông sốGiá trị công bốLoại sản phẩmPhim bảo vệ sơn ô tôThương hiệuNKD PPFVật liệuPolycaprolactoneĐộ dày8,5 mil (≈215,9 µm)Độ bóng≥143 GULớp phủMULTIPURIFYMô-đun tại độ giãn 100%8,6 MPaĐộ bền kéo25,8 MPaĐộ giãn dài khi đứt370%Thử nghiệm lão hóaQUV340 – 3.000 giờBảo hành5 năm, theo điều kiện áp dụngHộp phim NKD PPF, bao bì đỏ trắng.
-Thi công PPF NKD Apex Ultra cần lưu ý gì?
-Kiểm tra và làm sạch sơnXe được rửa sạch, kỹ thuật viên xem kỹ nền sơn và xử lý vết trầy cũ trước khi dán.Căn phim và vuốt mépPhim được trải lên từng chi tiết, gạt hết nước và bọt khí, rồi vuốt mép ở các đường cong, góc cản và quanh tay nắm.Chăm sóc sau khi nhận xeNhững ngày đầu nên hạn chế rửa xe và tránh xịt nước áp lực cao vào mép phim. Lịch rửa cụ thể kỹ thuật viên sẽ dặn khi giao xe.
+Quy trình dán PPF NKD Apex Ultra tại Auto3656 bước từ lúc nhận xe đến khi bàn giao. Ảnh từ hồ sơ thi công PPF tại Auto365, bấm ảnh để xem bài.1Tiếp nhận & kiểm tra xeKiểm tra tình trạng sơn, vết trầy xước, đá văng; tư vấn dán toàn xe theo nhóm xe hoặc từng vị trí.2Vệ sinh & xử lý bề mặtRửa xe, loại bỏ bụi bẩn, dầu mỡ và tạp chất bám trên sơn; xử lý khuyết điểm nếu cần để bề mặt sạch, mịn.3Đo đạc & chuẩn bị phimCắt phim theo form xe hoặc chuẩn bị phim thủ công; kiểm tra kích thước, mép phim và phương án cho chi tiết phức tạp.4Thi công dán PPFĐịnh vị phim lên bề mặt, dùng dung dịch thi công chuyên dụng và vuốt phẳng để đẩy hết dung dịch, không khí.5Hoàn thiện & xử lý chi tiếtCố định mép phim, xử lý góc bo, khe hở và các chi tiết phức tạp để phim phẳng và bám chắc.6Kiểm tra, bàn giao & hướng dẫnKiểm tra bọt khí, bụi, lỗi kỹ thuật; bàn giao xe, hướng dẫn chăm sóc, lịch rửa xe những ngày đầu và phiếu bảo hành.
+
 Căn phim trên chi tiết thân xe Porsche.
 Giá dán PPF NKD Apex Ultra
 Giá dán Apex Ultra tính theo nhóm xe và áp dụng cho dán toàn xe: Sedan 38 triệu đồng, SUV 42 triệu, MPV 46 triệu. Giá đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.
 Bảng giá dán NKD Apex UltraSedan38.000.000 đSUV42.000.000 đMPV46.000.000 đNguồn: bảng giá NKD Apex Ultra. Giá dán toàn xe, đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.Tư vấn dán PPF · 0365 365 365Kỹ thuật viên Auto365 căn phim NKD trên nắp ca-pô xe Porsche màu cam.
 Có nên chọn NKD Apex Ultra cho xe của bạn?
 Apex Ultra có độ dày công bố 8,5 mil và bảo hành công bố 5 năm, hợp với chủ xe muốn bảo vệ sơn lâu dài. Nếu chỉ cần che vài vị trí hay trầy, có thể hỏi phương án dán từng phần. Phim không xoá được vết xước có sẵn, nên xử lý sơn trước khi dán.Ưu tiên bề mặt bóng, dán nhiều vị tríXem mẫu phim và danh sách vị trí dán trước khi chốt gói.Chỉ cần bảo vệ vùng dễ trầyHỏi phương án dán từng phần thay vì cả gói theo nhóm xe.Xe từng sơn sửa hoặc có bề mặt xuống cấpKiểm tra nền sơn và độ bám trước, tránh bong sơn khi dán hoặc tháo phim.
-Dán PPF NKD Apex Ultra ở đâu tại TP.HCM?
-Tại TP.HCM, chủ xe có thể mang xe đến Auto365.vn - Trụ Sở Chính để kỹ thuật viên xem sơn và tư vấn vùng cần dán. Nên gọi trước để giữ lịch.
-Địa chỉ: Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh. Hotline Phim & PPF: 0365 365 365. Giờ làm việc được công bố: 08:30–18:30.
+Địa chỉ dán PPF NKD Apex Ultra tại TP.HCMAuto365.vn - Trụ Sở Chính tại TP.HCM tiếp nhận tư vấn và dán PPF NKD Apex Ultra. Giá dán toàn xe áp dụng tại các cơ sở Auto365; nên gọi trước để giữ lịch và chọn điểm thi công gần nhất.
+Vì sao chọn dán PPF NKD Apex Ultra tại Auto365?
+
+Tư vấn theo xe thực tếKỹ thuật viên kiểm tra nền sơn, vết trầy cũ và tư vấn phạm vi dán trước khi thi công.
+Tay nghề được 3M công nhậnTrụ Sở Chính được 3M công nhận Preferred Installer (20/06/2026); xe được kiểm tra dưới ánh sáng xiên trước khi bàn giao.
+90+ chi nhánh nhận dán PPFHệ thống chi nhánh tại 33 tỉnh thành; khi đặt lịch, Auto365 xác nhận điểm thi công và lịch hẹn phù hợp.
+Giá rõ, bảo hành có phiếuGiá dán toàn xe đã gồm phim, công thi công và VAT; bảo hành theo điều kiện của NKD, tính từ ngày thi công.
+
+Auto365.vn - Trụ Sở ChínhĐịa chỉ: Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí MinhHotline Phim & PPF: 0365 365 365 · Giờ làm việc: 08:30–18:30
+Chỉ đường Google MapsHồ sơ Trụ Sở ChínhHệ thống chi nhánh
 
 Câu hỏi thường gặp về PPF NKD Apex Ultra
 NKD Apex Ultra dày bao nhiêu?Khoảng 215,9 µm, tức 8,5 mil.
