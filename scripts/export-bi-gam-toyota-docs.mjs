@@ -76,7 +76,7 @@ doc.querySelectorAll('#theo-nhu-cau .bgvf-nd').forEach((n) => {
 L.push(txt(doc.querySelector('.bgvf-nnote')), '');
 // vì sao chọn: 6 thẻ ảnh + logo hãng đèn (khối dùng chung với theo-hang-xe)
 const why = doc.getElementById('vi-sao-chon');
-L.push('## ' + txt(why.querySelector('h2')), '', '_Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Toyota: thẻ 90+ chi nhánh dùng ảnh chứng nhận đại lý ủy quyền X-Light, thẻ Bảo hành điện tử dùng ảnh tra cứu bảo hành + phiếu bàn giao (chủ quản cung cấp 04/11); 4 thẻ còn lại dùng ảnh case Toyota thật (Hilux 2020, Camry 2024, Innova Cross 2024)._', '');
+L.push('## ' + txt(why.querySelector('h2')), '', '_Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Toyota: 4 ảnh chủ quản cung cấp 04/11 (hệ thống 90+ chi nhánh, tra cứu bảo hành + phiếu bàn giao, căn chỉnh Cos trên bảng test, các dòng Toyota tại showroom); 2 thẻ còn lại dùng ảnh case Toyota thật (Hilux 2020, Camry 2024)._', '');
 L.push('| Thẻ | Nội dung | Ảnh | Alt |', '|---|---|---|---|');
 why.querySelectorAll('.bw-card').forEach((c) => { const im = c.querySelector('img'); L.push(`| ${txt(c.querySelector('h3'))} | ${txt(c.querySelector('p'))} | \`${im.getAttribute('src').split('/').pop()}\` | ${im.getAttribute('alt')} |`); });
 L.push('', '**' + txt(why.querySelector('.bght-lbrands-l')) + ':** ' + [...why.querySelectorAll('.bght-lbrand img')].map((i) => i.getAttribute('alt')).join(', ') + ' — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Toyota trên trang này.', '');

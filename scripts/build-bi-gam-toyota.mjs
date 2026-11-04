@@ -62,12 +62,12 @@ const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s
 // ảnh thẻ "Vì sao chọn": ảnh xe Toyota thật lắp bi gầm tại Auto365 (ảnh case)
 const N0 = 'https://auto365.vn/uploads/images/news/';
 const WHY_IMG = {
-  'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ['hinh/ly-do-chung-nhan-dai-ly-uy-quyen-x-light.webp', 'Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light'],
+  'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ['hinh/ly-do-he-thong-90-chi-nhanh-33-tinh-thanh.webp', 'Hệ thống Auto365 hơn 90 chi nhánh tại 33 tỉnh thành'],
   'auto365vn-tra-cuu-bao-hanh-dien-tu.webp': ['hinh/ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp', 'Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365'],
   'auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp': ['../hinh/case-toyota-hilux-2020-full.webp', 'Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365'],
-  'auto365vn-can-chinh-den-tren-bang-test-xuong.webp': ['../hinh/case-toyota-hilux-2020-closeup.webp', 'Bi gầm AES SV 3.0 Max trên Toyota Hilux 2020 sau khi lắp'],
+  'auto365vn-can-chinh-den-tren-bang-test-xuong.webp': ['hinh/ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp', 'Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365'],
   'auto365vn-bao-gia-lap-dat-bi-gam.webp': [N0 + 'toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp', 'Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365'],
-  'auto365vn-tu-van-den-gam-theo-tung-xe.webp': [N0 + 'toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-hyper-20-1790928576.webp', 'Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365'],
+  'auto365vn-tu-van-den-gam-theo-tung-xe.webp': ['hinh/ly-do-tu-van-theo-tung-dong-toyota.webp', 'Các dòng xe Toyota tại showroom Auto365'],
 };
 let why = cut('<section class="bght-sec bght-why" id="vi-sao-chon">', /\n?<\/div><\/section>/)
   .replace(/src="hinh\/([^"]+)" alt="[^"]*"/g, (m, f) => { const v = WHY_IMG[f]; if (!v) throw new Error('why img: ' + f); return `src="${v[0]}" alt="${v[1]}"`; })

@@ -11,7 +11,7 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `973596460756a9b908b0b42f765a6e87f6e0188bd6d42d265c7bb3ee8a6fd9c0` |
+| SHA-256 index.html | `ed4a12ae1f3a5a5915f70924ae82b5e4da7c21e8893d4c593a8aaccaa0f2b923` |
 | SHA-256 content-src.html | `27ac5baf2ea50d3d8cf52e367f210773c2a8db11e9b8ed990ba8d57be7f4ad15` |
 
 ## Sapo (kiêm trả lời nhanh)
@@ -128,16 +128,16 @@ Giá và danh sách mẫu lắp được xem ở bài tư vấn từng dòng xe;
 
 ## Vì sao chọn Auto365 để nâng cấp bi gầm Toyota?
 
-_Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Toyota: thẻ 90+ chi nhánh dùng ảnh chứng nhận đại lý ủy quyền X-Light, thẻ Bảo hành điện tử dùng ảnh tra cứu bảo hành + phiếu bàn giao (chủ quản cung cấp 04/11); 4 thẻ còn lại dùng ảnh case Toyota thật (Hilux 2020, Camry 2024, Innova Cross 2024)._
+_Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Toyota: 4 ảnh chủ quản cung cấp 04/11 (hệ thống 90+ chi nhánh, tra cứu bảo hành + phiếu bàn giao, căn chỉnh Cos trên bảng test, các dòng Toyota tại showroom); 2 thẻ còn lại dùng ảnh case Toyota thật (Hilux 2020, Camry 2024)._
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-chung-nhan-dai-ly-uy-quyen-x-light.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong-90-chi-nhanh-33-tinh-thanh.webp` | Hệ thống Auto365 hơn 90 chi nhánh tại 33 tỉnh thành |
 | Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp` | Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `case-toyota-hilux-2020-full.webp` | Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365 |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `case-toyota-hilux-2020-closeup.webp` | Bi gầm AES SV 3.0 Max trên Toyota Hilux 2020 sau khi lắp |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp` | Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365 |
 | Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp` | Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-hyper-20-1790928576.webp` | Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van-theo-tung-dong-toyota.webp` | Các dòng xe Toyota tại showroom Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Toyota trên trang này.
 
