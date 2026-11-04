@@ -34,4 +34,5 @@
 
 - Thêm 2 video case Kia đã đăng auto365.vn vào khối hồ sơ (Carnival AES SV 3.0 Max mặt dưỡng in 3D; Sedona combo GTR G1 Ultra).
 - Box lưu ý (nguồn điện): Sportage 2022, Carnival 2022 bản Premium có giắc chuyển LED gầm chuyên dụng, link trang phụ kiện.
+- Anh Đạo duyệt phần bổ sung 04/11 (chủ quản xác nhận).
 - Còn lại: phiếu U3 (U2 → 5/5).

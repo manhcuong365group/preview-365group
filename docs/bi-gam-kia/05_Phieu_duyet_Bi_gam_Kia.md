@@ -17,6 +17,7 @@
 | 13 dòng xe chia Hatchback / Sedan / SUV / MPV; 9 dòng có hồ sơ | Duyệt |
 | Khối nhu cầu 3 nhóm, 9 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
 | "Thi công tại 90+ chi nhánh", thẻ "Tư vấn đúng theo từng xe" (như hub Toyota) | Duyệt |
+| Bổ sung 04/11: 2 video case (Carnival AES SV 3.0 Max, Sedona combo GTR G1 Ultra); câu giắc chuyển LED gầm Sportage/Carnival 2022 bản Premium trong box lưu ý | Duyệt (chủ quản xác nhận anh Đạo OK 04/11) |
 | 14 hồ sơ (12 case + 2 video) + 4 bài tư vấn + 8 cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Ngoài phạm vi trang
