@@ -11,8 +11,8 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `cd2aa567a0bd506f3c1583a4973cf1c2e7d1cccd2c5b40208799230b2590b644` |
-| SHA-256 content-src.html | `707a3bb66b1ca844d750d706246e42d0e802de8681b235ad677babcbbcbc4649` |
+| SHA-256 index.html | `d6ba37faa2cbc318b37106188816f27262d5651f78e1b59e4a234064fef14c35` |
+| SHA-256 content-src.html | `11f4b3198c6e18907eeec673e326fa3003148831e1d40a0eb63c0e242cec6bc3` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -137,7 +137,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang To
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `case-toyota-hilux-2020-full.webp` | Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365 |
 | Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `case-toyota-hilux-2020-closeup.webp` | Bi gầm AES SV 3.0 Max trên Toyota Hilux 2020 sau khi lắp |
 | Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp` | Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
-| Tư vấn đúng theo từng xe | Kỹ thuật viên kiểm tra hốc đèn, cấu hình điện và đời/phiên bản xe trước khi đề xuất mẫu bi gầm, phụ kiện và phương án lắp đặt. | `toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-hyper-20-1790928576.webp` | Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-hyper-20-1790928576.webp` | Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Toyota trên trang này.
 

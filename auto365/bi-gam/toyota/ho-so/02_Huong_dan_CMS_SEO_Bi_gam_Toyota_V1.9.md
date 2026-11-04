@@ -8,7 +8,7 @@
 | Build | `node scripts/build-bi-gam-toyota.mjs && node scripts/export-bi-gam-toyota-docs.mjs` |
 | Nội dung + SHA | [01_Noi_dung_Bi_gam_Toyota.md](01_Noi_dung_Bi_gam_Toyota.md) |
 | Master data | [04_Master_Data_Bi_gam_Toyota.csv](04_Master_Data_Bi_gam_Toyota.csv) |
-| Ngày cập nhật | 04/11/2026 (bản vá theo reviewer 03/11; bản dựng đầu 03/11 theo khung hub Bi gầm VinFast) |
+| Ngày cập nhật | 04/11/2026 — anh Nguyễn Quang Đạo duyệt 04/11 (bản vá theo reviewer 03/11) |
 
 ## 1. Vai trò URL
 
@@ -60,7 +60,7 @@ Toyota chưa có trang dòng xe riêng dạng `/nang-cap-anh-sang-bi-gam/toyota/
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` lấy từ dòng "Cập nhật"; `about` = Brand Toyota. **Chưa có `reviewedBy`/`lastReviewed`** — chỉ thêm khi có người rà soát kỹ thuật (thêm byline `bgvf-rv` trong source, build tự sinh) |
+| CollectionPage | `dateModified` lấy từ dòng "Cập nhật"; `about` = Brand Toyota. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-04 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Toyota |
 | ItemList `#dong-xe` | 9 thẻ dòng xe có hồ sơ (URL ở mục 3) |
 | ItemList `#xe-thuc-te` | 22 **bài hồ sơ** lắp đặt (không phải 22 xe khác nhau) |
@@ -78,7 +78,7 @@ Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu s�
 | Cẩm nang đèn bi gầm (7) | Bài kiến thức chung về đèn (đèn chính hay bi gầm, sáng yếu, giảm sáng do tản nhiệt, hốc 2.0 inch, đi mưa, chọn mẫu); không lặp 6 bài tư vấn dòng xe vì đã gắn ở thẻ dòng xe | Mảng `G` |
 | Box lưu ý | Hốc 2.0/3.0 inch (ví dụ từ case Vios 2021, Fortuner, Camry, Innova Cross); nguồn điện xe đời cũ và bản hybrid | **Chờ rà soát kỹ thuật** |
 | Chọn theo nhu cầu (3 nhóm) | Đô thị/dịch vụ · gia đình/đi tỉnh · SUV/bán tải, mỗi nhóm 3 case thật | **Chờ rà soát kỹ thuật** |
-| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service`/`data-source-page` = "Bi gầm Toyota". Riêng Toyota: thẻ "Tư vấn đúng theo từng xe" bỏ câu "do kỹ thuật viên … kiểm duyệt" (chưa có duyệt); link danh bạ ghi "Xem 91 điểm trong danh bạ Auto365" + câu nhắc liên hệ xác nhận điểm tiếp nhận bi gầm Toyota | Tự đồng bộ |
+| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service`/`data-source-page` = "Bi gầm Toyota". | Tự đồng bộ |
 | Hotline | 0365 365 911 | — |
 
 ## 6. Khi đăng production
