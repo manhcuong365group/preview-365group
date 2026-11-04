@@ -163,6 +163,14 @@ iframe.td-vid{cursor:auto}
 .td-bento-wrap .td-sp,.td-bento-wrap .td-sp:first-child,.td-bento-wrap .td-sp:last-child{grid-row:auto!important;grid-column:auto!important}
 .td-xe-card[hidden]{display:none!important}
 .td-svc::-webkit-scrollbar,.td-xe-grid::-webkit-scrollbar,.td-vids::-webkit-scrollbar,.td-why ul::-webkit-scrollbar,.td-cert::-webkit-scrollbar,.td-sps::-webkit-scrollbar{display:none}}
+/* 4 equal blocks */
+.td-bento-wrap .td-sps{grid-template-columns:repeat(4,1fr);grid-template-rows:400px}
+.td-bento-wrap .td-sp:first-child,.td-bento-wrap .td-sp:last-child{grid-row:auto;grid-column:auto}
+.td-bento-wrap .td-sp:first-child h3{font-size:20px}
+.td-bento-wrap .td-sp ul,.td-bento-wrap .td-sp:not(:first-child) ul{display:flex;flex-direction:column;align-items:flex-start}
+.td-bento-wrap .td-sp li{font-size:12px}
+@media(max-width:980px){.td-bento-wrap .td-sps{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:340px}.td-bento-wrap .td-sp:first-child{grid-column:auto}}
+@media(max-width:600px){.td-bento-wrap .td-sps{grid-auto-rows:340px!important}.td-bento-wrap .td-sp ul{display:none!important}}
 </style>
 </head>
 <body>
