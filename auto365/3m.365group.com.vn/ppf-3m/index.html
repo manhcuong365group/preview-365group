@@ -345,6 +345,23 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
 .pf-pkg__card h3{display:flex;align-items:center;gap:6px;font-size:14.5px;margin:4px 0 8px}.pf-pkg__card h3 svg{width:20px;height:20px;flex:none;fill:none;stroke:var(--m3-red);stroke-width:1.8}
 .pf-pkg__card ul{list-style:none;padding:0;margin:0 30px 0 0;font-size:13px;color:#333}.pf-pkg__card li{position:relative;padding:2px 0 2px 18px}.pf-pkg__card li::before{content:"";position:absolute;left:2px;top:7px;width:8px;height:4px;border-left:2px solid var(--m3-red);border-bottom:2px solid var(--m3-red);transform:rotate(-45deg)}
 .pf-pkg__card span{width:32px;height:32px;border:0;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.12);bottom:16px;right:12px}
+.pf-pkg>div:first-child{display:block}
+.pf-pkg>div:first-child{display:flex;flex-direction:column}.pf-pkg__grid{flex:1;grid-auto-rows:1fr}.pf-pkg__card{display:flex;flex-direction:column}@media(max-width:1024px){.pf-pkg>div:first-child{display:block}}
+.pf-why{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.pf-why li{border:1px solid #e3e5e8;border-radius:12px;background:#fff;padding:18px;font-size:13.5px;line-height:1.55;color:#555}.pf-why b{margin:10px 0 4px;font-size:15px}.pf-why svg{width:34px;height:34px;padding:7px;border-radius:50%;background:#fdecec;fill:none;stroke:var(--m3-red);stroke-width:1.8;box-sizing:border-box}
+.pf-vid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;grid-template-rows:auto;gap:16px}.pf-vid a{display:block;font-size:14px}.pf-vid__main{grid-row:auto}.pf-vid__th{position:relative;display:block;margin-bottom:8px}.pf-vid__th img{border-radius:8px}.pf-vid b{display:block;line-height:1.4}
+.pf-vid a:not(.pf-vid__main) .pf-vid__play{width:38px;height:38px;font-size:14px;top:50%}.pf-vid__play{top:50%}.pf-vid i{left:auto;right:6px;top:auto;bottom:6px}
+.pf-vid{grid-template-columns:1.4fr 1fr 1fr 1fr;align-items:start}
+@media(max-width:1024px){.pf-why{grid-template-columns:repeat(2,minmax(0,1fr))}.pf-vid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.pf-why{grid-template-columns:1fr}.pf-vid{grid-template-columns:1fr}}
+.pf-tbl{overflow-x:auto;border:1px solid #e3e5e8;border-radius:12px;background:#fff}.pf-tbl table{min-width:720px;font-size:14px}
+.pf-tbl th,.pf-tbl td{border:0;border-bottom:1px solid #eef0f2;padding:14px 12px;vertical-align:middle}.pf-tbl tr:last-child th,.pf-tbl tr:last-child td{border-bottom:0}
+.pf-tbl thead th{background:#16181d;color:#fff;font-size:15px;font-weight:700;padding:16px 12px}.pf-tbl thead th:first-child{text-align:left;font-weight:600;color:#cfd2d6}.pf-tbl thead small{display:block;font-size:11.5px;font-weight:500;color:#aeb3b9;margin-bottom:2px}
+.pf-tbl thead th.is-top{background:var(--m3-red)}.pf-tbl thead th.is-top small{color:#ffd5d6}.pf-tbl td.is-top{background:#fff6f6}
+.pf-tbl tbody th{width:20%;color:var(--m3-ink);background:#fafafa}.pf-tbl td small{display:block;color:#888;font-size:12px}
+.pf-ck{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#fdecec;color:var(--m3-red);font-weight:700;font-size:13px}
+.pf-tbl__bh td b{color:var(--m3-red);font-size:16px}.pf-tbl__act td a{display:inline-block;padding:7px 14px;border:1px solid var(--m3-red);border-radius:6px;color:var(--m3-red);font-weight:600;text-decoration:none;font-size:13px}.pf-tbl__act td a:hover{background:var(--m3-red);color:#fff}
+.pf-faq{max-width:900px}
+.pf-faq{max-width:none}.pf-faq .m3-faq{max-width:none}
 
 </style>
 </head>
@@ -421,9 +438,10 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
   <p class="m3-note">Đặc điểm và thời hạn bảo hành theo trang sản phẩm của 3M Việt Nam; bảo hành áp dụng khi phim do đại lý được 3M ủy quyền thi công, theo điều kiện trên thẻ bảo hành. Độ dày theo thông số dòng phim do 365 Group - 3M Authorized Distributor in Vietnam phân phối.</p>
 </div></section>
 
-<section class="m3-sec" id="bao-gia"><div class="m3-wrap pf-pkg">
+<section class="m3-sec" id="bao-gia"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Gói dán PPF theo xe</h2><p>Lựa chọn phạm vi dán phù hợp với nhu cầu sử dụng và tình trạng xe của bạn.</p></div></div>
+  <div class="pf-pkg">
   <div>
-    <div class="m3-sec__hd"><div><h2>Gói dán PPF theo xe</h2><p>Lựa chọn phạm vi dán phù hợp với nhu cầu sử dụng và tình trạng xe của bạn.</p></div></div>
     <div class="pf-pkg__grid">
       <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Vị trí dễ hao mòn"><img src="hinh/goi-1.webp" alt="" width="490" height="290" loading="lazy"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg>Bảo vệ vị trí dễ hao mòn</h3><ul><li>Hõm tay nắm cửa</li><li>Gờ cốp</li><li>Viền cửa</li></ul><span aria-hidden="true">›</span></a>
       <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Một phần"><img src="hinh/goi-2.webp" alt="" width="490" height="290" loading="lazy"><h3><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5zM3 12l9 5 9-5M3 16l9 5 9-5"/></svg>Bảo vệ một phần</h3><ul><li>Nắp capo</li><li>Cản trước</li><li>Gương chiếu hậu</li><li>Viền cửa</li></ul><span aria-hidden="true">›</span></a>
@@ -444,26 +462,29 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
       <p class="m3-lead__msg" id="m3-lead-msg" role="status" aria-live="polite"></p>
     </form></div>
   </div>
-</div></section>
-<section class="m3-sec" id="video"><div class="m3-wrap pf-two">
-  <div>
-    <div class="m3-sec__hd"><div><h2>Vì sao chọn PPF 3M?</h2></div></div>
-    <ul class="pf-why">
-      <li><b>Bảo vệ lớp sơn</b>Hạn chế vết mẻ do đá văng, trầy xước, côn trùng, nhựa đường và vết bẩn đường.</li>
-      <li><b>Tự phục hồi vết xước nhỏ</b>Vết xước nhỏ trên bề mặt phim có thể mờ đi khi được tác động nhiệt.</li>
-      <li><b>Chịu thời tiết ngoài trời</b>Thiết kế để chịu tác động môi trường, kể cả bức xạ tia cực tím (UV) mạnh.</li>
-      <li><b>Thi công theo mẫu cắt 3M</b>Dùng mẫu từ 3M™ Pattern and Solutions Center, lắp đặt bởi đại lý được 3M ủy quyền.</li>
-    </ul>
-    <p class="m3-note">Theo mô tả sản phẩm trên <a class="m3-link" href="https://www.3m.com.vn/3M/vi_VN/p/c/films-sheeting/surface-protection-materials/films/" target="_blank" rel="noopener">3M Việt Nam</a>.</p>
   </div>
-  <div>
-    <div class="m3-sec__hd"><div><h2>Video thực tế</h2></div></div>
-    <div class="pf-vid">
-      <a class="pf-vid__main" href="https://www.youtube.com/watch?v=-H8RM4u4qck" target="_blank" rel="noopener"><img src="hinh/video-H8RM4u4qck.webp" alt="" width="480" height="270" loading="lazy"><span class="pf-vid__play" aria-hidden="true">▶</span><b>BMW 530i dán PPF 3M 200 Gloss: quy trình và bảo hành</b><i>04:27</i></a>
-      <a href="https://www.youtube.com/watch?v=adTg0iqT3P0" target="_blank" rel="noopener"><img src="hinh/video-adTg0iqT3P0.webp" alt="" width="480" height="270" loading="lazy"><b>Ford Ranger Raptor dán PPF 3M 150 Gloss</b><i>09:16</i></a>
-      <a href="https://www.youtube.com/watch?v=7-SRUonBS_o" target="_blank" rel="noopener"><img src="hinh/video-7-SRUonBS_o.webp" alt="" width="480" height="270" loading="lazy"><b>Mercedes GLC 300 dán PPF 3M 200 Gloss</b><i>02:54</i></a>
-      <a href="https://www.youtube.com/watch?v=VhKw2KJCR8I" target="_blank" rel="noopener"><img src="hinh/video-VhKw2KJCR8I.webp" alt="" width="480" height="270" loading="lazy"><b>Đánh giá PPF 3M 50 Gloss trên VinFast VF8</b><i>02:36</i></a>
-    </div>
+</div></section>
+<section class="m3-sec m3-sec--grey" id="vi-sao"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Vì sao chọn PPF 3M?</h2><p>Những điểm chính theo mô tả sản phẩm của 3M Việt Nam</p></div></div>
+  <ul class="pf-why">
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg><b>Bảo vệ lớp sơn</b>Hạn chế vết mẻ do đá văng, trầy xước, côn trùng, nhựa đường, vết bẩn và vết ố từ chất lỏng ô tô.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M6 18l2.5-2.5M15.5 8.5L18 6"/></svg><b>Tự phục hồi vết xước nhỏ</b>Vết xước nhỏ trên bề mặt phim có thể mờ đi khi được tác động nhiệt.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><b>Chịu thời tiết ngoài trời</b>Thiết kế để chịu tác động môi trường, kể cả bức xạ tia cực tím (UV) mạnh.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><b>Gần như vô hình</b>Lớp phim trong, giữ độ bóng và màu sơn nguyên bản của xe.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10v4H7zM12 7v4M5 11h14l-2 10H7z"/></svg><b>Bề mặt dễ vệ sinh</b>Dòng 150 chống bám bẩn; Pro Series 200 bề mặt nhẵn, kháng nước giúp bảo dưỡng dễ hơn.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c4-1 6-4 8-8s4-7 8-8M4 4l4 4M16 16l4 4"/></svg><b>Dễ co giãn khi thi công</b>Độ đàn hồi cao, ôm các đường cong và khe sâu; keo tối ưu để định vị lại, hạn chế để lại keo.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM4 9h16M9 9v11"/></svg><b>Mẫu cắt 3M Pattern</b>Dùng thư viện mẫu cắt của 3M™ Pattern and Solutions Center, giúp thi công nhanh và ít hao phim.</li>
+    <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/></svg><b>Bảo hành 3M qua đại lý ủy quyền</b>Bảo hành 5–10 năm tùy dòng, áp dụng khi phim do đại lý được 3M ủy quyền thi công.</li>
+  </ul>
+</div></section>
+
+<section class="m3-sec" id="video"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>Video thực tế</h2><p>Xe dán PPF 3M tại đại lý trong hệ thống 365 Group - 3M Authorized Distributor in Vietnam</p></div></div>
+  <div class="pf-vid">
+    <a class="pf-vid__main" href="https://www.youtube.com/watch?v=-H8RM4u4qck" target="_blank" rel="noopener"><span class="pf-vid__th"><img src="hinh/video-H8RM4u4qck.webp" alt="" width="480" height="270" loading="lazy"><span class="pf-vid__play" aria-hidden="true">▶</span><i>04:27</i></span><b>BMW 530i dán PPF 3M 200 Gloss: quy trình và bảo hành</b></a>
+    <a href="https://www.youtube.com/watch?v=adTg0iqT3P0" target="_blank" rel="noopener"><span class="pf-vid__th"><img src="hinh/video-adTg0iqT3P0.webp" alt="" width="480" height="270" loading="lazy"><span class="pf-vid__play" aria-hidden="true">▶</span><i>09:16</i></span><b>Ford Ranger Raptor dán PPF 3M 150 Gloss</b></a>
+    <a href="https://www.youtube.com/watch?v=7-SRUonBS_o" target="_blank" rel="noopener"><span class="pf-vid__th"><img src="hinh/video-7-SRUonBS_o.webp" alt="" width="480" height="270" loading="lazy"><span class="pf-vid__play" aria-hidden="true">▶</span><i>02:54</i></span><b>Mercedes GLC 300 dán PPF 3M 200 Gloss</b></a>
+    <a href="https://www.youtube.com/watch?v=VhKw2KJCR8I" target="_blank" rel="noopener"><span class="pf-vid__th"><img src="hinh/video-VhKw2KJCR8I.webp" alt="" width="480" height="270" loading="lazy"><span class="pf-vid__play" aria-hidden="true">▶</span><i>02:36</i></span><b>Đánh giá PPF 3M 50 Gloss trên VinFast VF8</b></a>
   </div>
 </div></section>
 
@@ -477,33 +498,33 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
   </ol>
 </div></section>
 
-<section class="m3-sec" id="so-sanh"><div class="m3-wrap pf-two">
-  <div>
-    <div class="m3-sec__hd"><div><h2>So sánh các dòng PPF 3M</h2></div></div>
-    <div class="pf-tbl"><table>
-      <caption class="m3-sr">So sánh độ dày, bề mặt, tự phục hồi và bảo hành của 4 dòng PPF 3M</caption>
-      <thead><tr><th scope="col">Tiêu chí</th><th scope="col">50 Gloss</th><th scope="col">100 Gloss</th><th scope="col">150 Gloss</th><th scope="col">Pro 200 Gloss</th></tr></thead>
-      <tbody>
-        <tr><th scope="row">Độ dày</th><td>7,3 mil</td><td>7,5 mil</td><td>7,5 mil</td><td>7,9 mil</td></tr>
-        <tr><th scope="row">Bề mặt</th><td>Bóng</td><td>Bóng</td><td>Bóng, dễ vệ sinh</td><td>Bóng cao, ít vỏ cam</td></tr>
-        <tr><th scope="row">Tự phục hồi vết xước nhỏ</th><td>✓</td><td>✓</td><td>✓</td><td>✓</td></tr>
-        <tr><th scope="row">Bảo hành</th><td>5 năm</td><td>7 năm</td><td>10 năm</td><td>10 năm</td></tr>
-      </tbody>
-    </table></div>
-    <p class="m3-note">Bảo hành theo điều kiện trên thẻ bảo hành 3M. Giá theo dòng xe và phạm vi dán do đại lý báo.</p>
-  </div>
-  <div>
-    <div class="m3-sec__hd"><div><h2>Câu hỏi thường gặp</h2></div></div>
-    <div class="m3-faq">
-      <details open><summary>PPF 3M có những dòng nào?</summary><p>365 Group - 3M Authorized Distributor in Vietnam phân phối bốn dòng PPF bóng: 3M PPF 50 Gloss, 100 Gloss, 150 Gloss và Scotchgard PPF Pro Series 200 Gloss. Các dòng khác nhau ở độ dày, bề mặt và thời hạn bảo hành.</p></details>
-      <details><summary>PPF 3M bảo hành bao lâu?</summary><p>Theo 3M Việt Nam: 50 Gloss bảo hành 5 năm, 100 Gloss 7 năm, 150 Gloss và Pro Series 200 Gloss 10 năm. Bảo hành áp dụng khi phim do đại lý được 3M ủy quyền thi công, theo điều kiện trên thẻ bảo hành.</p></details>
-      <details><summary>Dán PPF 3M có làm đổi màu sơn không?</summary><p>Các dòng trên đều là PPF trong suốt bề mặt bóng, giữ màu sơn gốc của xe. Dòng Pro Series 200 có bề mặt ít vỏ cam hơn, phù hợp xe cần độ bóng cao.</p></details>
-      <details><summary>PPF 3M giá bao nhiêu?</summary><p>Giá phụ thuộc kích thước xe, phạm vi dán và dòng phim. Để lại số điện thoại ở mục Nhận báo giá để đại lý 3M gần bạn báo giá theo xe.</p></details>
-      <details><summary>Xe đã dùng lâu có dán PPF 3M được không?</summary><p>Được, nhưng kỹ thuật viên cần kiểm tra và xử lý bề mặt sơn trước. PPF không che hoàn toàn vết xước sâu đã có; vết xước dăm nhẹ thường được đánh bóng trước khi dán.</p></details>
-    </div>
-  </div>
+<section class="m3-sec" id="so-sanh"><div class="m3-wrap">
+  <div class="m3-sec__hd"><div><h2>So sánh các dòng PPF 3M</h2><p>Bốn dòng PPF bóng, khác nhau ở độ dày, bề mặt và thời hạn bảo hành</p></div></div>
+  <div class="pf-tbl"><table>
+    <caption class="m3-sr">So sánh 4 dòng PPF 3M</caption>
+    <thead><tr><th scope="col">Tiêu chí</th><th scope="col"><small>3M™ PPF</small>50 Gloss</th><th scope="col"><small>3M™ PPF</small>100 Gloss</th><th scope="col"><small>3M™ PPF</small>150 Gloss</th><th scope="col" class="is-top"><small>Scotchgard™ Pro</small>200 Gloss</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Độ dày</th><td><b>7,3 mil</b><small>185 micron</small></td><td><b>7,5 mil</b></td><td><b>7,5 mil</b></td><td class="is-top"><b>7,9 mil</b></td></tr>
+      <tr><th scope="row">Bề mặt</th><td>Bóng</td><td>Bóng</td><td>Bóng, chống bám bẩn</td><td class="is-top">Bóng cao, ít vỏ cam</td></tr>
+      <tr><th scope="row">Tự phục hồi vết xước nhỏ</th><td><span class="pf-ck" aria-label="Có">✓</span></td><td><span class="pf-ck" aria-label="Có">✓</span></td><td><span class="pf-ck" aria-label="Có">✓</span></td><td class="is-top"><span class="pf-ck" aria-label="Có">✓</span></td></tr>
+      <tr><th scope="row">Điểm nổi bật</th><td>Bảo vệ cơ bản, gần như vô hình</td><td>Keo tối ưu, dễ định vị khi thi công</td><td>Dễ vệ sinh, co giãn tốt ở khe sâu</td><td class="is-top">Khổ 72 inch, kháng nước</td></tr>
+      <tr class="pf-tbl__bh"><th scope="row">Bảo hành</th><td><b>5 năm</b></td><td><b>7 năm</b></td><td><b>10 năm</b></td><td class="is-top"><b>10 năm</b></td></tr>
+      <tr class="pf-tbl__act"><th scope="row"><span class="m3-sr">Báo giá</span></th><td><a class="m3-quote" href="#bao-gia" data-pkg="3M PPF 50 Gloss">Báo giá →</a></td><td><a class="m3-quote" href="#bao-gia" data-pkg="3M PPF 100 Gloss">Báo giá →</a></td><td><a class="m3-quote" href="#bao-gia" data-pkg="3M PPF 150 Gloss">Báo giá →</a></td><td class="is-top"><a class="m3-quote" href="#bao-gia" data-pkg="Scotchgard PPF Pro Series 200 Gloss">Báo giá →</a></td></tr>
+    </tbody>
+  </table></div>
+  <p class="m3-note">Đặc điểm và bảo hành theo trang sản phẩm 3M Việt Nam; bảo hành theo điều kiện trên thẻ bảo hành 3M. Giá theo dòng xe và phạm vi dán do đại lý báo.</p>
 </div></section>
 
+<section class="m3-sec m3-sec--grey" id="faq"><div class="m3-wrap pf-faq">
+  <div class="m3-sec__hd"><div><h2>Câu hỏi thường gặp</h2></div></div>
+<div class="m3-faq">
+  <details open><summary>PPF 3M có những dòng nào?</summary><p>365 Group - 3M Authorized Distributor in Vietnam phân phối bốn dòng PPF bóng: 3M PPF 50 Gloss, 100 Gloss, 150 Gloss và Scotchgard PPF Pro Series 200 Gloss. Các dòng khác nhau ở độ dày, bề mặt và thời hạn bảo hành.</p></details>
+  <details><summary>PPF 3M bảo hành bao lâu?</summary><p>Theo 3M Việt Nam: 50 Gloss bảo hành 5 năm, 100 Gloss 7 năm, 150 Gloss và Pro Series 200 Gloss 10 năm. Bảo hành áp dụng khi phim do đại lý được 3M ủy quyền thi công, theo điều kiện trên thẻ bảo hành.</p></details>
+  <details><summary>Dán PPF 3M có làm đổi màu sơn không?</summary><p>Các dòng trên đều là PPF trong suốt bề mặt bóng, giữ màu sơn gốc của xe. Dòng Pro Series 200 có bề mặt ít vỏ cam hơn, phù hợp xe cần độ bóng cao.</p></details>
+  <details><summary>PPF 3M giá bao nhiêu?</summary><p>Giá phụ thuộc kích thước xe, phạm vi dán và dòng phim. Để lại số điện thoại ở mục Nhận báo giá để đại lý 3M gần bạn báo giá theo xe.</p></details>
+  <details><summary>Xe đã dùng lâu có dán PPF 3M được không?</summary><p>Được, nhưng kỹ thuật viên cần kiểm tra và xử lý bề mặt sơn trước. PPF không che hoàn toàn vết xước sâu đã có; vết xước dăm nhẹ thường được đánh bóng trước khi dán.</p></details>
+</div>
+</div></section>
 <section class="pf-cta"><div class="m3-wrap pf-cta__in">
   <div><h2>Dán PPF 3M tại đại lý trong hệ thống</h2><p>Sản phẩm chính hãng · Thi công theo mẫu cắt 3M · Bảo hành theo thẻ 3M</p></div>
   <div class="pf-cta__btn"><a class="m3-btn m3-btn--red m3-quote" href="#bao-gia" data-pkg="PPF 3M – chưa chọn">Đặt lịch tư vấn →</a><a class="m3-btn m3-btn--ghost" href="../phim-cach-nhiet-3m/#tim-dai-ly">📍 Tìm đại lý gần bạn</a></div>
