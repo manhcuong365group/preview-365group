@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex Ultra
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `4638d6c4fb7b9cddeb4080ca42e726fec4f14ccd465d1772bf2415aaee07db87` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `3ffd40094ab19de33fd4889ab943d25cc98c292aae69ed14319ba72cda3f7cfb` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -36,7 +36,7 @@ Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, phường Hiệp 
 
 ## Toàn văn hiển thị
 
-PPF NKD Apex Ultra: thông số, giá dán và bảo hànhBiên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (03/11/2026) · Cập nhật 04/11/2026
+Phim bảo vệ sơn NKD PPF Apex Ultra 8,5 mil: giá dán và bảo hànhBiên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (03/11/2026) · Cập nhật 04/11/2026
 Trả lời nhanh: PPF NKD Apex Ultra là phim bảo vệ sơn ô tô dày 8,5 mil, được NKD bảo hành 5 năm theo điều kiện của hãng. Giá dán toàn xe tại Auto365 là 38 triệu đồng cho Sedan, 42 triệu cho SUV và 46 triệu cho MPV, đã gồm phim, công thi công và VAT.Gọi tư vấn phim & PPF · 0365 365 365 Giá dán toàn xe, đã gồm VAT
 8,5 milĐộ dày phim≥143 GUĐộ bóng công bố370%Độ giãn dài khi đứt5 nămBảo hành có điều kiệnĐối chiếu nguồn: Số liệu lấy từ catalog NKD PPF Apex Ultra (trang 1). Đây là thông số hãng công bố, không phải kết quả đo tại Auto365.
 Giới thiệu phim bảo vệ sơn PPF NKD Apex Ultra

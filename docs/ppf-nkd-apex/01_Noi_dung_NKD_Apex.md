@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `a09b0116d926586925bb9262f8f2baa088e1af94debbade239ac85e9273b5a87` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `879d7bd3532445afc533b58e8b22ccb9d5b564416f083c3bf924d86418df5165` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -33,7 +33,7 @@ Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, phường Hiệp 
 
 ## Toàn văn hiển thị
 
-PPF NKD Apex 7,5 mil: đặc điểm và giá dán toàn xeBiên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (03/11/2026) · Cập nhật 04/11/2026
+Phim bảo vệ sơn NKD PPF Apex 7,5 mil: giá dán và bảo hànhBiên soạn: Team Content Auto365 · Kiểm duyệt: Đặng Minh Hoàng (03/11/2026) · Cập nhật 04/11/2026
 Trả lời nhanh: PPF NKD Apex là phim bảo vệ sơn ô tô dày 7,5 mil, giúp hạn chế xước nhẹ mà không làm đổi màu xe, được NKD bảo hành 3 năm theo điều kiện của hãng. Giá dán toàn xe tại Auto365 là 28 triệu đồng cho Sedan, 30 triệu cho SUV và 33 triệu cho MPV, đã gồm phim, công thi công và VAT.Gọi tư vấn PPF theo xe · 0365 365 365Xem Auto365.vn - Trụ Sở Chính
 7,5 milĐộ dày phim≥143 GUĐộ bóng3 nămBảo hành có điều kiện
 Giới thiệu phim bảo vệ sơn PPF NKD Apex

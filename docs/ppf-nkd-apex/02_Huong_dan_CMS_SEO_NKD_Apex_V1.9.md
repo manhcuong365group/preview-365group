@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — PPF NKD Apex (V1.9)
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `a09b0116d926586925bb9262f8f2baa088e1af94debbade239ac85e9273b5a87` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `879d7bd3532445afc533b58e8b22ccb9d5b564416f083c3bf924d86418df5165` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -10,9 +10,9 @@
 |---|---|
 | Loại trang | Trang sản phẩm (SKU) kèm giá dịch vụ dán toàn xe và đầu mối tư vấn |
 | URL production | `https://auto365.vn/ppf-nkd-apex` (canonical tự trỏ; production chưa xuất bản — 404 tại 03/11 là trạng thái chờ đăng) |
-| Title | PPF NKD Apex 7,5 mil – Thông số, giá dán | Auto365 |
+| Title | PPF NKD Apex 7,5 mil – Giá dán toàn xe từ 28 triệu | Auto365 |
 | Meta description | PPF NKD Apex 7,5 mil, lớp phủ MULTIPURIFY, bảo hành 3 năm có điều kiện. Giá dán toàn xe đã gồm VAT: Sedan 28, SUV 30, MPV 33 triệu tại Auto365. |
-| H1 | PPF NKD Apex 7,5 mil: đặc điểm và giá dán toàn xe |
+| H1 | Phim bảo vệ sơn NKD PPF Apex 7,5 mil: giá dán và bảo hành |
 | Robots | Preview: `noindex,follow`. **Gỡ khi lên production** |
 | Breadcrumb | Trang chủ › PPF & Wrap film (`/ppfwrap-film`) › PPF NKD Apex. Khi hub `/ppf-o-to` lên production và bật 301 `/ppfwrap-film` → `/ppf-o-to`, đổi link trong bài + breadcrumb sang `/ppf-o-to` |
 | Schema | @graph: BreadcrumbList, WebPage (reviewedBy Đặng Minh Hoàng, lastReviewed), Organization, Product (additionalProperty + AggregateOffer 3 Offer, valueAddedTaxIncluded), FAQPage 4 câu |
