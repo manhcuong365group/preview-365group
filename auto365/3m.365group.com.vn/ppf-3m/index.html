@@ -316,6 +316,20 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
 .pf-act .m3-btn--white{border:1px solid var(--m3-line)}
 .pf-two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
 @media(max-width:768px){.pf-two{grid-template-columns:minmax(0,1fr)}.m3-tabs__panel .pf-spec{grid-template-columns:repeat(2,minmax(0,1fr))}.m3-tabs__list{flex-wrap:nowrap;overflow-x:auto}.m3-tabs__list button{white-space:nowrap;font-size:14px;padding:10px 12px}}
+.pf-pkg{align-items:stretch}.pf-pkg>div:first-child{display:flex;flex-direction:column}
+.pf-pkg__grid{grid-template-columns:repeat(2,minmax(0,1fr));flex:1;grid-auto-rows:1fr}
+.pf-pkg__card{display:flex;flex-direction:column;justify-content:center;padding:22px 44px 22px 22px}.pf-pkg__card h3{font-size:18px;margin-bottom:8px}.pf-pkg__card p{font-size:14.5px}
+.pf-pkg__card::before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:var(--m3-red);margin-bottom:12px}
+@media(max-width:420px){.pf-pkg__grid{grid-template-columns:1fr}}
+.pf-pkg{grid-template-columns:minmax(0,3fr) minmax(0,1fr);gap:20px;align-items:start}.pf-pkg>div:first-child{display:block}
+.pf-pkg__grid{grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:auto}
+.pf-pkg__card{display:block;padding:10px 12px 14px;justify-content:initial}.pf-pkg__card::before{display:none}.pf-pkg__card img{width:100%;height:auto;display:block;margin-bottom:8px}
+.pf-pkg__card h3{font-size:14.5px;margin:0 28px 6px 0}.pf-pkg__card ul{margin:0;padding-left:16px;font-size:12.5px;color:#555;margin-right:28px}.pf-pkg__card span{top:auto;bottom:14px;transform:none;width:26px;height:26px;border:1px solid var(--m3-line);border-radius:50%;display:grid;place-items:center;font-size:18px;line-height:1}
+.pf-lead{padding:16px;background:#f7f7f8}.pf-lead__t{font-size:18px}.pf-form{display:flex!important;flex-direction:column;gap:10px}.pf-form select,.pf-form input[type=text],.pf-form input[type=tel]{font:inherit;font-size:14px;padding:10px 12px;border:1px solid var(--m3-line);border-radius:8px;background:#fff;width:100%;box-sizing:border-box}.pf-form .m3-lead__consent{font-size:12px}.pf-form .m3-btn{width:100%;justify-content:center}
+@media(max-width:1024px){.pf-pkg{grid-template-columns:1fr}}
+@media(max-width:768px){.pf-pkg__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.pf-pkg__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pf-pkg__card{border-color:#e3e5e8}.pf-pkg__card:hover{border-color:var(--m3-red)}
 
 </style>
 </head>
@@ -392,32 +406,31 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
   <p class="m3-note">Đặc điểm và thời hạn bảo hành theo trang sản phẩm của 3M Việt Nam; bảo hành áp dụng khi phim do đại lý được 3M ủy quyền thi công, theo điều kiện trên thẻ bảo hành. Độ dày theo thông số dòng phim do 365 Group - 3M Authorized Distributor in Vietnam phân phối.</p>
 </div></section>
 
-<section class="m3-sec m3-sec--grey" id="bao-gia"><div class="m3-wrap pf-pkg">
+<section class="m3-sec" id="bao-gia"><div class="m3-wrap pf-pkg">
   <div>
-    <div class="m3-sec__hd"><div><h2>Gói dán PPF 3M theo xe</h2><p>Chọn phạm vi dán theo nhu cầu và tình trạng xe</p></div></div>
+    <div class="m3-sec__hd"><div><h2>Gói dán PPF theo xe</h2><p>Lựa chọn phạm vi dán phù hợp với nhu cầu sử dụng và tình trạng xe của bạn.</p></div></div>
     <div class="pf-pkg__grid">
-      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Vị trí dễ hao mòn"><h3>Vị trí dễ hao mòn</h3><p>Hõm tay nắm cửa · Gờ cốp · Viền cửa</p><span aria-hidden="true">›</span></a>
-      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Một phần"><h3>Bảo vệ một phần</h3><p>Nắp capo · Cản trước · Gương · Viền cửa</p><span aria-hidden="true">›</span></a>
-      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Toàn bộ mặt trước"><h3>Toàn bộ mặt trước</h3><p>Capo · Cản trước · Gương · Viền trước · Đèn pha</p><span aria-hidden="true">›</span></a>
-      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Toàn bộ xe"><h3>Toàn bộ xe</h3><p>Toàn bộ bề mặt sơn của xe</p><span aria-hidden="true">›</span></a>
+      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Vị trí dễ hao mòn"><img src="hinh/goi-1.webp" alt="" width="330" height="176" loading="lazy"><h3>Bảo vệ vị trí dễ hao mòn</h3><ul><li>Hõm tay nắm cửa · Gờ cốp</li><li>Viền cửa</li></ul><span aria-hidden="true">›</span></a>
+      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Một phần"><img src="hinh/goi-2.webp" alt="" width="330" height="176" loading="lazy"><h3>Bảo vệ một phần</h3><ul><li>Nắp capo · Cản trước · Gương</li><li>Viền cửa</li></ul><span aria-hidden="true">›</span></a>
+      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Toàn bộ mặt trước"><img src="hinh/goi-3.webp" alt="" width="330" height="176" loading="lazy"><h3>Bảo vệ toàn bộ mặt trước</h3><ul><li>Capo · Cản trước · Gương</li><li>Viền trước · Đèn pha</li></ul><span aria-hidden="true">›</span></a>
+      <a class="pf-pkg__card m3-quote" href="#bao-gia" data-pkg="Toàn bộ xe"><img src="hinh/goi-4.webp" alt="" width="330" height="176" loading="lazy"><h3>Bảo vệ toàn bộ</h3><ul><li>Toàn bộ bề mặt sơn của xe</li></ul><span aria-hidden="true">›</span></a>
     </div>
   </div>
-  <div class="m3-lead pf-lead">
+  <div class="pf-lead">
     <h2 class="pf-lead__t">Nhận báo giá PPF 3M</h2>
-    <form class="m3-lead__form" id="m3-lead-form" action="/api/leads" method="post" novalidate>
-      <label><span>Số điện thoại <span aria-hidden="true">*</span></span><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="0xxx xxx xxx" required aria-describedby="m3-lead-msg"></label>
-      <label><span>Dòng xe <small>(không bắt buộc)</small></span><input type="text" name="vehicle" placeholder="VD: Toyota Camry 2024"></label>
-      <label><span>Tỉnh/thành <span aria-hidden="true">*</span></span><input type="text" name="province" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh" required></label>
-      <label><span>Dòng PPF / phạm vi quan tâm</span><select name="service"><option value="PPF 3M – chưa chọn">Chưa chọn, cần tư vấn</option><option>3M PPF 50 Gloss</option><option>3M PPF 100 Gloss</option><option>3M PPF 150 Gloss</option><option>Scotchgard PPF Pro Series 200 Gloss</option><option>Vị trí dễ hao mòn</option><option>Một phần</option><option>Toàn bộ mặt trước</option><option>Toàn bộ xe</option></select></label>
-      <label class="m3-lead__consent"><input type="checkbox" name="consent" value="1" required> Tôi đồng ý để 365 Group - 3M Authorized Distributor in Vietnam và đại lý 3M liên hệ tư vấn qua số điện thoại này.</label>
+    <div class="pf-lead__f"><form class="m3-lead__form pf-form" id="m3-lead-form" action="/api/leads" method="post" novalidate>
+      <select name="brand" aria-label="Hãng xe"><option value="">Chọn hãng xe</option><option>Toyota</option><option>Honda</option><option>Mazda</option><option>Hyundai</option><option>Kia</option><option>Ford</option><option>Mitsubishi</option><option>VinFast</option><option>Mercedes-Benz</option><option>BMW</option><option>Lexus</option><option>Porsche</option><option>Khác</option></select>
+      <input type="text" name="vehicle" aria-label="Dòng xe" placeholder="Dòng xe (VD: Camry 2024)">
+      <select name="service" aria-label="Dòng PPF"><option value="PPF 3M – chưa chọn">Chọn dòng PPF</option><option>3M PPF 50 Gloss</option><option>3M PPF 100 Gloss</option><option>3M PPF 150 Gloss</option><option>Scotchgard PPF Pro Series 200 Gloss</option><option>Vị trí dễ hao mòn</option><option>Một phần</option><option>Toàn bộ mặt trước</option><option>Toàn bộ xe</option></select>
+      <input type="tel" name="phone" inputmode="tel" autocomplete="tel" aria-label="Số điện thoại" placeholder="Số điện thoại *" required aria-describedby="m3-lead-msg">
+      <input type="text" name="province" autocomplete="address-level1" aria-label="Tỉnh/thành" placeholder="Tỉnh/thành *" required>
+      <label class="m3-lead__consent"><input type="checkbox" name="consent" value="1" required> Đồng ý để 365 Group - 3M Authorized Distributor in Vietnam và đại lý 3M liên hệ tư vấn.</label>
       <input type="hidden" name="source_page" value="Phim bảo vệ sơn 3M PPF – 365Group">
       <button class="m3-btn m3-btn--red" type="submit">Nhận tư vấn &amp; báo giá →</button>
       <p class="m3-lead__msg" id="m3-lead-msg" role="status" aria-live="polite"></p>
-    </form>
-    <p class="m3-lead__alt">Hoặc gọi hotline: <a href="tel:19009365">1900 9365</a></p>
+    </form></div>
   </div>
 </div></section>
-
 <section class="m3-sec" id="video"><div class="m3-wrap pf-two">
   <div>
     <div class="m3-sec__hd"><div><h2>Vì sao chọn PPF 3M?</h2></div></div>
