@@ -62,8 +62,8 @@ const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s
 // ảnh thẻ "Vì sao chọn": ảnh xe Toyota thật lắp bi gầm tại Auto365 (ảnh case)
 const N0 = 'https://auto365.vn/uploads/images/news/';
 const WHY_IMG = {
-  'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ['../hinh/case-toyota-vios-2021-full.webp', 'Toyota Vios 2021 tại Auto365 sau khi lắp bi gầm X-Light F10 2.0 New'],
-  'auto365vn-tra-cuu-bao-hanh-dien-tu.webp': [N0 + 'toyota-fortuner-24at-2022-lap-bi-gam-x-light-f10-hyper-20-3-1790912813.webp', 'Toyota Fortuner 2.4AT 2022 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365'],
+  'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ['hinh/ly-do-chung-nhan-dai-ly-uy-quyen-x-light.webp', 'Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light'],
+  'auto365vn-tra-cuu-bao-hanh-dien-tu.webp': ['hinh/ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp', 'Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365'],
   'auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp': ['../hinh/case-toyota-hilux-2020-full.webp', 'Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365'],
   'auto365vn-can-chinh-den-tren-bang-test-xuong.webp': ['../hinh/case-toyota-hilux-2020-closeup.webp', 'Bi gầm AES SV 3.0 Max trên Toyota Hilux 2020 sau khi lắp'],
   'auto365vn-bao-gia-lap-dat-bi-gam.webp': [N0 + 'toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp', 'Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365'],
