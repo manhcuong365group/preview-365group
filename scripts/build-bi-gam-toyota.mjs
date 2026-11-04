@@ -64,7 +64,7 @@ const N0 = 'https://auto365.vn/uploads/images/news/';
 const WHY_IMG = {
   'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ['hinh/ly-do-he-thong-90-chi-nhanh-33-tinh-thanh.webp', 'Hệ thống Auto365 hơn 90 chi nhánh tại 33 tỉnh thành'],
   'auto365vn-tra-cuu-bao-hanh-dien-tu.webp': ['hinh/ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp', 'Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365'],
-  'auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp': ['../hinh/case-toyota-hilux-2020-full.webp', 'Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365'],
+  'auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp': ['hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp', 'Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước'],
   'auto365vn-can-chinh-den-tren-bang-test-xuong.webp': ['hinh/ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp', 'Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365'],
   'auto365vn-bao-gia-lap-dat-bi-gam.webp': [N0 + 'toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp', 'Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365'],
   'auto365vn-tu-van-den-gam-theo-tung-xe.webp': ['hinh/ly-do-tu-van-theo-tung-dong-toyota.webp', 'Các dòng xe Toyota tại showroom Auto365'],

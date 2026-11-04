@@ -11,7 +11,7 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `ed4a12ae1f3a5a5915f70924ae82b5e4da7c21e8893d4c593a8aaccaa0f2b923` |
+| SHA-256 index.html | `14f5bd3535347bd605a9b32c56030f802fb685c5f2f3503017fb31b7a26273d8` |
 | SHA-256 content-src.html | `27ac5baf2ea50d3d8cf52e367f210773c2a8db11e9b8ed990ba8d57be7f4ad15` |
 
 ## Sapo (kiêm trả lời nhanh)
@@ -128,13 +128,13 @@ Giá và danh sách mẫu lắp được xem ở bài tư vấn từng dòng xe;
 
 ## Vì sao chọn Auto365 để nâng cấp bi gầm Toyota?
 
-_Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Toyota: 4 ảnh chủ quản cung cấp 04/11 (hệ thống 90+ chi nhánh, tra cứu bảo hành + phiếu bàn giao, căn chỉnh Cos trên bảng test, các dòng Toyota tại showroom); 2 thẻ còn lại dùng ảnh case Toyota thật (Hilux 2020, Camry 2024)._
+_Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Toyota: 5 ảnh chủ quản cung cấp 04/11 (hệ thống 90+ chi nhánh, tra cứu bảo hành + phiếu bàn giao, kỹ thuật viên lắp bi gầm, căn chỉnh Cos trên bảng test, các dòng Toyota tại showroom); thẻ giá dùng ảnh case Camry 2024._
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
 | 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong-90-chi-nhanh-33-tinh-thanh.webp` | Hệ thống Auto365 hơn 90 chi nhánh tại 33 tỉnh thành |
 | Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp` | Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365 |
-| Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `case-toyota-hilux-2020-full.webp` | Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365 |
+| Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
 | Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp` | Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365 |
 | Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp` | Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
 | Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van-theo-tung-dong-toyota.webp` | Các dòng xe Toyota tại showroom Auto365 |
