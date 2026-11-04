@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `f3781e2327e87900041a36db6cd9b47fb2be8d281fdc2441522c81f6cd5f1b38` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `3d8a86f4e715b02382a7c89da70fa679f4d7815ee415dbab7c9a3c3ca46c3047` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 04/11/2026 — `lastReviewed` 2026-11-04, byline "Kiểm duyệt: Đặng Minh Hoàng (04/11/2026)" |
 | `dateModified` | 2026-11-04 |
@@ -78,6 +78,7 @@ Endpoint `https://auto365.vn/api/leads`. Trên pages.dev không có `/api/leads`
 | Lead thử | 289 đã gửi và đã xoá |
 | Nghiệm thu U1–U3 (pk56) | PASS – ĐÃ DUYỆT, đóng U3 V1.9 (Ngọc Trân – SEO, 30/10/2026) — xem mục dưới |
 | Nghiệm thu U3 V1.9 bản 02/11 | PASS – ĐÃ DUYỆT (phạm vi demo) — Đặng Minh Hoàng duyệt 02/11/2026, Ngọc Trân – SEO rà soát |
+| Nghiệm thu U3 V1.9 bổ sung 04/11 | PASS – ĐÃ DUYỆT (phạm vi demo) — Đặng Minh Hoàng duyệt 04/11/2026 |
 | Mục còn mở trong phạm vi trang | Không còn — chờ IT tích hợp production |
 
 ## Phiếu nghiệm thu U3 — ĐÃ DUYỆT (pk56, 30/10/2026)
@@ -193,7 +194,7 @@ Cập nhật 04/11/2026 (chủ trang): bảng giá thêm thương hiệu NKD PPF
 Cập nhật 04/11/2026: anh Đặng Minh Hoàng duyệt toàn bộ thay đổi 03–04/11 (3M Pro Shop, ảnh hero, ảnh showroom, dải lợi ích, NKD PPF). Chủ trang xác nhận NKD chưa có giá dán lẻ theo vị trí, bộ ước tính vị trí giữ 3M và AX. lastReviewed 2026-11-04, byline "Kiểm duyệt: Đặng Minh Hoàng (04/11/2026)".
 
 
-## Phiếu U3 V1.9 bổ sung 04/11/2026 — CHỜ DUYỆT
+## Phiếu U3 V1.9 bổ sung 04/11/2026 — PASS – ĐÃ DUYỆT
 
 Kế thừa phiếu U3 V1.9 bản 02/11/2026 (PASS – ĐÃ DUYỆT, Đặng Minh Hoàng). Phiếu này chỉ ghi các thay đổi 03–04/11/2026; phần đã nghiệm thu 02/11 giữ nguyên, không mở lại.
 
@@ -239,10 +240,12 @@ Kế thừa phiếu U3 V1.9 bản 02/11/2026 (PASS – ĐÃ DUYỆT, Đặng Min
 - Giữ link 2 trang NKD /phim-bao-ve-son-nkd-ppf-apex và /phim-bao-ve-son-nkd-ppf-apex-ultra.
 - Các mục cũ giữ nguyên: gỡ khối "Kiểm tra nội bộ", đọc /chi-nhanh?json=1 giữ số PPF 0365 365 365 cho Trụ Sở Chính, redirect sau khi đổi link catalog.
 
-### IV. Đề nghị kết luận
+### IV. Kết luận
 
-Đề nghị: **PASS – DUYỆT BỔ SUNG U3 V1.9 (phạm vi demo)**, giữ quyết định 02/11 và ghi nhận các thay đổi 03–04/11.
+**Kết luận: PASS – ĐÃ DUYỆT BỔ SUNG U3 V1.9 (phạm vi demo)** — anh Đặng Minh Hoàng duyệt 04/11/2026 (chủ trang xác nhận). Giữ quyết định 02/11 và ghi nhận các thay đổi 03–04/11.
 
 | Người rà soát SEO / nghiệm thu | Người kiểm duyệt nội dung – kỹ thuật |
 |---|---|
-| Ngọc Trân – SEO: ……………… (ngày ……/11/2026) | Đặng Minh Hoàng: ……………… (ngày ……/11/2026) |
+| Ngọc Trân – SEO (theo kết quả team xác nhận) | Đặng Minh Hoàng — ĐÃ DUYỆT 04/11/2026 |
+
+Ghi chú 04/11/2026: anh Đặng Minh Hoàng duyệt phiếu U3 bổ sung 04/11 (chủ trang xác nhận). Dòng U3 trong khối "Kiểm tra nội bộ" đổi sang "Nghiệm thu U3 V1.9 (02/11 + bổ sung 04/11/2026): PASS – ĐÃ DUYỆT". Chỉ khối nội bộ đổi nên SHA trang đổi so với SHA ghi trong phiếu bổ sung (f3781e23…); nội dung khách đọc (01) không đổi.
