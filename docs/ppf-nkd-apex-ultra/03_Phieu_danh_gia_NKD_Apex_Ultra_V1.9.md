@@ -22,17 +22,17 @@
 | Mã | Tối đa | Điểm | Căn cứ / còn thiếu |
 |---|---:|---:|---|
 | C1 | 10 | 9,4 | Giá/VAT/phạm vi do Kinh doanh chốt; thông số theo catalog hãng |
-| C2 | 10 | 9,2 | Thiếu danh sách loại trừ bảo hành |
+| C2 | 10 | 9,4 | Thiếu danh sách loại trừ bảo hành |
 | C3 | 10 | 9,5 | Văn trung tính, không so sánh/upsell |
 | S1 | 10 | 9,5 | Intent SKU rõ; URL production chờ đăng |
 | S2 | 10 | 9,5 | 1 H1, mục lục, title/meta, FAQ = schema |
 | S3 | 10 | 9,1 | Hub tạm `/ppfwrap-film` đến khi `/ppf-o-to` lên production |
 | G1 | 10 | 9,4 | Trả lời nhanh có giá toàn xe gồm VAT, bảo hành từ ngày thi công |
-| G2 | 10 | 9,0 | Giới hạn PPF, QUV ≠ tuổi thọ; thiếu loại trừ bảo hành |
+| G2 | 10 | 9,1 | Giới hạn PPF, QUV ≠ tuổi thọ; thiếu loại trừ bảo hành |
 | G3 | 5 | 4,5 | Catalog hãng, reviewer duyệt, ảnh chụp tại Auto365 |
-| U1 | 5 | 4,6 | 5 kích thước giả lập không tràn; chưa máy thật |
-| U2 | 5 | 4,4 | Hotline + form; lead CRM chờ production |
+| U1 | 5 | 4,7 | 5 kích thước giả lập không tràn; chưa máy thật |
+| U2 | 5 | 4,6 | Hotline + form; lead CRM chờ production |
 | U3 | 5 | 4,5 | 01–03 cùng SHA; chờ nghiệm thu production |
-| **Tổng** | 100 | **92,6** | SEO 28,1/30 (ngưỡng 28,5) · GEO 22,9/25 (ngưỡng 23,75) |
+| **Tổng** | 100 | **93,2** | SEO 28,1/30 (ngưỡng 28,5) · GEO 23,0/25 (ngưỡng 23,75) |
 
 **Trạng thái:** tổng chưa đạt ngưỡng 95; SEO chưa đạt ngưỡng và GEO chưa đạt ngưỡng. Điều kiện còn mở: loại trừ bảo hành (G2/C2), hub `/ppf-o-to` production (S3), lead test CRM (U2).
