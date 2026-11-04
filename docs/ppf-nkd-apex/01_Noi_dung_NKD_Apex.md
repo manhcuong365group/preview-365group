@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex
 
-- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `7b77fe7456aaa31d2dd5a3905728031712c85259a4bc9c2d0a654f136afc2c92` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex/index.html` — SHA-256 `3465b4c252edaa7821c13ee4db4721561a39d459442377309427dc01de369741` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -32,7 +32,7 @@ Khoảng 190,5 µm, tức 7,5 mil.
 Không. Phim đỡ được xước nhẹ và vết ma sát hằng ngày. Vật sắc hay va chạm mạnh vẫn có thể làm rách phim.
 
 **Địa chỉ tư vấn dán NKD Apex tại TP.HCM?**
-4/4/1/7 Đường Số 3, phường Hiệp Bình, TP.HCM (Auto365.vn - Trụ Sở Chính). Gọi 0365 365 365 để giữ lịch trước khi đến.
+Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, phường Hiệp Bình, TP.HCM, là địa chỉ tư vấn và dán PPF NKD Apex cho chủ xe tại TP.HCM và các khu vực lân cận. Kỹ thuật viên kiểm tra nền sơn trước khi dán, giá dán toàn xe đã gồm VAT. Chủ xe nên gọi 0365 365 365 để giữ lịch trước khi đến.
 
 ## Toàn văn hiển thị
 
@@ -81,5 +81,5 @@ PPF NKD Apex dày bao nhiêu?Khoảng 190,5 µm, tức 7,5 mil.
 PPF NKD Apex bảo hành mấy năm?3 năm theo điều kiện của NKD, tính từ ngày thi công. Quyền lợi và các trường hợp loại trừ ghi trong phiếu bảo hành nhận cùng xe.
 Phim PPF NKD Apex có chống xước tuyệt đối không?Không. Phim đỡ được xước nhẹ và vết ma sát hằng ngày. Vật sắc hay va chạm mạnh vẫn có thể làm rách phim.
 
-Địa chỉ tư vấn dán NKD Apex tại TP.HCM?4/4/1/7 Đường Số 3, phường Hiệp Bình, TP.HCM (Auto365.vn - Trụ Sở Chính). Gọi 0365 365 365 để giữ lịch trước khi đến.
+Địa chỉ tư vấn dán NKD Apex tại TP.HCM?Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, phường Hiệp Bình, TP.HCM, là địa chỉ tư vấn và dán PPF NKD Apex cho chủ xe tại TP.HCM và các khu vực lân cận. Kỹ thuật viên kiểm tra nền sơn trước khi dán, giá dán toàn xe đã gồm VAT. Chủ xe nên gọi 0365 365 365 để giữ lịch trước khi đến.
 Thông tin biên tập và nguồn tham khảoKiểm duyệt kỹ thuật: Đặng Minh HoàngGiám đốc điều hành 3M Pro Shop & 3M Training Center, kiểm duyệt nội dung ngày 03/11/2026. Ảnh trong bài chụp tại Auto365.Biên soạn: Team Content Auto365. Cập nhật: 04/11/2026. Thông số lấy theo catalog NKD Apex; chi tiết bảo hành theo phiếu bảo hành.Nguồn kỹ thuật: catalog “NKD PPF Apex – Thông số sản phẩm” (1 trang, do đơn vị cung cấp). Nguồn giá theo nhóm xe: hình “NKD Apex – Giá dán theo dòng xe”.Đối chiếu thêm: hồ sơ Auto365.vn - Trụ Sở Chính · danh bạ cơ sở Auto365 · giải pháp PPF của NKODA · danh mục PPF & Wrap film · cẩm nang PPF Auto365

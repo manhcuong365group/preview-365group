@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex Ultra
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `669a7f55f51047305144c45a4a2c111145f048610947cd22ac9bc57e1fab5c45` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `53544b1bb069bfe5ac494ce6c2b8668aa87121ce51c05e447d3cc532d038d455` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -35,7 +35,7 @@ Không. Phim đỡ được xước nhẹ và vết ma sát hằng ngày. Vật 
 Trang thông số catalog đang đối chiếu không có chỉ tiêu về tự phục hồi, nên trang này chưa nêu tính năng đó. Chủ xe có thể hỏi tài liệu kỹ thuật đúng mã và xem mẫu phim tại cửa hàng trước khi chọn.
 
 **Liên hệ tư vấn dán PPF ở đâu?**
-Gọi hotline Phim & PPF 0365 365 365 để hỏi giá và giữ lịch. Danh sách cơ sở xem tại trang chi nhánh Auto365.
+Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, phường Hiệp Bình, TP.HCM, là địa chỉ tư vấn và dán PPF NKD Apex Ultra cho chủ xe tại TP.HCM và các khu vực lân cận. Chủ xe nên gọi hotline Phim & PPF 0365 365 365 để giữ lịch trước khi đến; danh sách cơ sở khác xem tại trang chi nhánh Auto365.
 
 ## Toàn văn hiển thị
 
@@ -81,5 +81,5 @@ PPF NKD Apex Ultra bảo hành bao lâu?5 năm theo điều kiện của NKD, t�
 PPF có ngăn được mọi vết xước không?Không. Phim đỡ được xước nhẹ và vết ma sát hằng ngày. Vật sắc hay va chạm mạnh vẫn có thể làm rách phim và hỏng sơn.
 Phim có tự phục hồi không?Trang thông số catalog đang đối chiếu không có chỉ tiêu về tự phục hồi, nên trang này chưa nêu tính năng đó. Chủ xe có thể hỏi tài liệu kỹ thuật đúng mã và xem mẫu phim tại cửa hàng trước khi chọn.
 
-Liên hệ tư vấn dán PPF ở đâu?Gọi hotline Phim & PPF 0365 365 365 để hỏi giá và giữ lịch. Danh sách cơ sở xem tại trang chi nhánh Auto365.
+Liên hệ tư vấn dán PPF ở đâu?Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, phường Hiệp Bình, TP.HCM, là địa chỉ tư vấn và dán PPF NKD Apex Ultra cho chủ xe tại TP.HCM và các khu vực lân cận. Chủ xe nên gọi hotline Phim & PPF 0365 365 365 để giữ lịch trước khi đến; danh sách cơ sở khác xem tại trang chi nhánh Auto365.
 Nguồn và thông tin biên tậpKiểm duyệt kỹ thuật: Đặng Minh HoàngGiám đốc điều hành 3M Pro Shop & 3M Training Center, kiểm duyệt nội dung ngày 03/11/2026. Ảnh trong bài chụp tại Auto365.Nguồn thông số: Catalog “NKD PPF Apex Ultra”, trang 1 (tài liệu PDF do đơn vị cung cấp): độ dày 8,5 mil; vật liệu Polycaprolactone; mô-đun tại độ giãn 100% 8,6 MPa; độ bền kéo 25,8 MPa; độ bóng ≥143 GU; độ giãn dài khi đứt 370%; lớp phủ MULTIPURIFY; thử nghiệm QUV340 3.000 giờ và bảo hành 5 năm có điều kiện.Nguồn giá: Ảnh bảng giá “Giá dán theo dòng xe – NKD Apex Ultra” do đơn vị cung cấp: Sedan 38 triệu, SUV 42 triệu, MPV 46 triệu đồng. Catalog PDF trang 1 ghi giá bán lẻ đề xuất 38 triệu đồng.Biên soạn: Team Content Auto365. Cập nhật: 04/11/2026. Thông tin kỹ thuật trên trang là dữ liệu trong catalog, không phải kết quả đo trên xe. Quyền lợi bảo hành, nội dung gói dán và tổng chi phí được đối chiếu với chính sách/báo giá áp dụng khi tư vấn.Nguồn địa chỉ và liên hệ: Hồ sơ Auto365.vn - Trụ Sở Chính và danh bạ cơ sở Auto365 (địa chỉ, hotline, giờ làm việc).
