@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `725c10b64f5e65ab468196a58a81f88ae750eaede39dd753296445749055ee7f` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `f3781e2327e87900041a36db6cd9b47fb2be8d281fdc2441522c81f6cd5f1b38` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -322,3 +322,5 @@ Cập nhật 04/11/2026 (chủ trang): ảnh hero đổi sang ảnh 3M Pro Shop 
 Cập nhật 04/11/2026 (chủ trang): thẻ "90+ chi nhánh triển khai PPF/Wrap" ở khối Vì sao đổi ảnh mặt tiền sang ảnh showroom 3M Pro Shop do chủ trang gửi (hinh/showroom-3m-pro-shop-auto365.webp, 1200×675). Khi lên production cần upload ảnh lên auto365.vn.
 
 Cập nhật 04/11/2026 (chủ trang): bảng giá thêm thương hiệu NKD PPF, tab đặt giữa 3M và AX Film (logo NKD, "Phim bảo vệ sơn · 2 dòng phim"). Hai thẻ: NKD PPF Apex (7.5 mil, ≥143 GU, bảo hành 3 năm; toàn xe 28/30/33 triệu) và NKD PPF Apex Ultra (8.5 mil, ≥143 GU, bảo hành 5 năm; toàn xe 38/42/46 triệu), giá gồm phim, công thi công và VAT theo Kinh doanh 04/11/2026; link https://auto365.vn/phim-bao-ve-son-nkd-ppf-apex và https://auto365.vn/phim-bao-ve-son-nkd-ppf-apex-ultra, ảnh lấy từ trang sản phẩm. ItemList 9 → 11 Product. Mô tả mở đầu bảng giá và meta description thêm NKD. NKD chưa có bảng giá theo vị trí nên không thêm vào bộ ước tính vị trí. Phần NKD trên hub chờ anh Đặng Minh Hoàng xem.
+
+Cập nhật 04/11/2026: anh Đặng Minh Hoàng duyệt toàn bộ thay đổi 03–04/11 (3M Pro Shop, ảnh hero, ảnh showroom, dải lợi ích, NKD PPF). Chủ trang xác nhận NKD chưa có giá dán lẻ theo vị trí, bộ ước tính vị trí giữ 3M và AX. lastReviewed 2026-11-04, byline "Kiểm duyệt: Đặng Minh Hoàng (04/11/2026)".
