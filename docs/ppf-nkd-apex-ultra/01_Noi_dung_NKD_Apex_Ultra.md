@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex Ultra
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `82aa608029026e6d3d287caa814cb4cc28dbda1710ce2269e6be9976fa1a4cc9` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `96888138dc671bfa4807c8c1b3af005cf987cb96aa42b95f29abe3043961e12a` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -50,9 +50,8 @@ Phim PPF NKD trên xe màu cam, màu sơn gốc vẫn giữ nguyên.
 Kỹ thuật viên Auto365 trải phim NKD lên thân xe.Độ bóng ≥143 GUNKD công bố độ bóng ≥143 GU. Mặt sơn sau khi dán trông bóng đến đâu còn do nền sơn bên dưới và cách rửa xe về sau.QUV340 trong 3.000 giờCatalog ghi thử nghiệm lão hóa tăng tốc QUV340 trong 3.000 giờ. Đây là phép thử trong phòng bằng tia UV và hơi ẩm, dùng để so độ bền vật liệu. Nó không cho biết phim dùng được bao nhiêu năm ngoài trời.
 Thông số kỹ thuật PPF NKD Apex Ultra
 Thông sốGiá trị công bốLoại sản phẩmPhim bảo vệ sơn ô tôThương hiệuNKD PPFVật liệuPolycaprolactoneĐộ dày8,5 mil (≈215,9 µm)Độ bóng≥143 GULớp phủMULTIPURIFYMô-đun tại độ giãn 100%8,6 MPaĐộ bền kéo25,8 MPaĐộ giãn dài khi đứt370%Thử nghiệm lão hóaQUV340 – 3.000 giờBảo hành5 năm, theo điều kiện áp dụngHộp phim NKD PPF, bao bì đỏ trắng.
-Quy trình dán PPF NKD Apex Ultra tại Auto3651Nhận xe, kiểm tra sơnXem tình trạng sơn, vết trầy cũ và chỗ từng sơn sửa; thống nhất phạm vi dán toàn xe trước khi làm.2Rửa và làm sạch bề mặtRửa xe, tẩy bụi bẩn và dầu mỡ bám trên sơn; xử lý các khuyết điểm nhỏ để phim bám đều.3Cắt và chuẩn bị phim NKDChuẩn bị phim theo từng chi tiết của xe, chừa mép cho các đường cong, góc cản và quanh đèn.4Dán và gạt phẳngĐặt phim lên bề mặt bằng dung dịch thi công, gạt hết nước và bọt khí bên dưới.5Vuốt mép, hoàn thiệnVuốt và cố định mép phim ở góc bo, khe hở, tay nắm để phim phẳng và bám chắc.6Kiểm tra và bàn giaoSoát bọt khí, bụi, mép phim; bàn giao xe kèm hướng dẫn rửa xe những ngày đầu và phiếu bảo hành 5 năm.
+Quy trình dán PPF NKD Apex Ultra tại Auto365Căn phim trên chi tiết thân xe Porsche.BƯỚC 01Nhận xe, kiểm tra sơnXem tình trạng sơn, vết trầy cũ và chỗ từng sơn sửa; thống nhất phạm vi dán toàn xe.BƯỚC 02Rửa và làm sạch bề mặtTẩy bụi bẩn, dầu mỡ bám trên sơn và xử lý khuyết điểm nhỏ để phim bám đều.BƯỚC 03Cắt và chuẩn bị phim NKDChuẩn bị phim theo từng chi tiết, chừa mép cho đường cong, góc cản và quanh đèn.BƯỚC 04Dán và gạt phẳngĐặt phim bằng dung dịch thi công, gạt hết nước và bọt khí bên dưới.BƯỚC 05Vuốt mép, hoàn thiệnCố định mép ở góc bo, khe hở, tay nắm để phim phẳng và bám chắc.BƯỚC 06Kiểm tra và bàn giaoSoát bọt khí, bụi, mép phim; giao xe kèm hướng dẫn chăm sóc và phiếu bảo hành 5 năm.
 
-Căn phim trên chi tiết thân xe Porsche.
 Giá dán PPF NKD Apex Ultra
 Giá dán Apex Ultra tính theo nhóm xe và áp dụng cho dán toàn xe: Sedan 38 triệu đồng, SUV 42 triệu, MPV 46 triệu. Giá đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.
 Bảng giá dán NKD Apex UltraSedan38.000.000 đSUV42.000.000 đMPV46.000.000 đNguồn: bảng giá NKD Apex Ultra. Giá dán toàn xe, đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.Tư vấn dán PPF · 0365 365 365Kỹ thuật viên Auto365 căn phim NKD trên nắp ca-pô xe Porsche màu cam.
