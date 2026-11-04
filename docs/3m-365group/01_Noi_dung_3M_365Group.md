@@ -1,6 +1,6 @@
 # 01 — Nội dung trang Phim cách nhiệt ô tô 3M – 365Group (bản khách đọc)
 
-Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `1f8a4d26dab0e12b14f17b4ecd9b779a8b1ab0eaaa555f67c4af6bdb59ac242c`
+Nguồn: `auto365/3m.365group.com.vn/phim-cach-nhiet-3m/index.html` — SHA-256 `c3ce52c6d55ac373f539fcb990c18333dba7c3f58a668e4ec16898b33a6c9b2b`
 Ngày xuất: 30/10/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Phim cách nhiệt 3M
@@ -78,7 +78,7 @@ Giá trọn xe đã gồm công thi công và VAT (bảng 3M AutoFilm, từ 06/2
 - Gợi ý mã phim cho kính lái, kính hông, kính lưng theo nhu cầu
 - Giới thiệu đại lý 3M gần khu vực của bạn
 - Báo giá theo dòng xe tại đại lý
-Hoặc gọi hotline 365 Group - 3M Authorized Distributor in Vietnam: 0363 365 365
+Hoặc gọi hotline 365 Group - 3M Authorized Distributor in Vietnam: 1900 9365 hoặc nhắn Zalo OA
 
 ## Thông số kỹ thuật các mã phim 3M  `#thong-so`
 Theo bảng giá và thông số 3M AutoFilm (mã 260815, PDF) do 365 Group - 3M Authorized Distributor in Vietnam phát hành, áp dụng từ 06/2026. Các chỉ tiêu cần đọc cùng điều kiện đo ghi bên dưới; kết quả trên từng xe có thể khác theo loại kính.
@@ -212,11 +212,12 @@ Bài viết do 365 Group - 3M Authorized Distributor in Vietnam – nhà phân p
 - Đơn vị xuất bản: 365 Group - 3M Authorized Distributor in Vietnam
 - Kiểm duyệt kỹ thuật: Đặng Minh Hoàng – Giám đốc điều hành 3M Pro Shop & 3M Training Center, 30/10/2026
 - Thương hiệu sản phẩm: 3M™ (Ceramic NR, Ceramic IR, Crystalline CR BLK)
-- Hotline 365 Group - 3M Authorized Distributor in Vietnam: 0363 365 365
+- Hotline 365 Group - 3M Authorized Distributor in Vietnam: 1900 9365
+- Zalo OA: zalo.me/1637241084134305408
 - Email: kinhdoanh@365group.com.vn
 - Văn phòng: Đường số 3, phường Hiệp Bình, TP. Hồ Chí Minh
 - Website nhà phân phối: 3m.365group.com.vn
-- Cập nhật lần cuối: 30/10/2026
+- Cập nhật lần cuối: 04/11/2026
 
 ## Ảnh và ALT
 
