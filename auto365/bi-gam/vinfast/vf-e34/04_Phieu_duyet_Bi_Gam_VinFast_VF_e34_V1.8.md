@@ -4,10 +4,11 @@
 
 | Trường | Giá trị |
 |---|---|
+| Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 theo bộ trang VinFast) |
 | URL preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-e34/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-e34 |
-| SHA-256 index.html | `3b283bf8601bcd2f97adddbbc28623f0e80be77bfe9037670bc43eb8c0c4fdc8` |
+| SHA-256 index.html | `f5b18e5c83196e2cbe0fce5a14b11a5ec4820f72cbbddfa6c2c92749a8ba1277` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 04/11/2026 |
 | Nguồn dựng | Khung trang VF5 (hotfix 02/11: tel tách từng số, Bắc 41/Trung 26/Nam 24 = 91, link Hạ Long, câu chuẩn dịch vụ) |
 | Danh mục | 17 mẫu (lens 3.0 + 2.0 inch) theo danh sách VF5 — chủ trang chọn 04/11 |

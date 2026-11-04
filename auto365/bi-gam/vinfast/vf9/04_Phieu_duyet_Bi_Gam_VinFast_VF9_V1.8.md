@@ -5,9 +5,10 @@
 | Trường | Giá trị |
 |---|---|
 | Trạng thái | **Chờ duyệt.** Dựng 04/11/2026 từ khung trang VF8 (bản sau hotfix 02/11). Chờ anh Nguyễn Quang Đạo xác nhận kỹ thuật 17 mẫu trên VF9 (danh sách theo VF8, chủ trang chọn 04/11); chưa có phiếu U1–U3 |
+| Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf9/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf9 |
-| SHA-256 index.html | `ccf77282f3afa7b626577d337e0f6f51a43f6c7318f4b91f3c2c4b757a6188c4` |
+| SHA-256 index.html | `5b565529790bab4e18caa901e441161f5f9180edc99ae77d93ca2158c67ba0d1` |
 | Ngày (dòng Cập nhật + datePublished/dateModified) | 04/11/2026 |
 | reviewedBy / lastReviewed | Chưa gắn — bổ sung khi anh Đạo xác nhận |
 | Danh mục | 17 mẫu (lens 3.0 và 2.0 inch), ItemList 17, bảng so sánh 8 mẫu; giá thiết bị 3.500.000–6.000.000đ/bộ chưa VAT — giữ nguyên như VF8 |
