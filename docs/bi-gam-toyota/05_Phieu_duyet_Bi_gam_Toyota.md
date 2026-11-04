@@ -21,6 +21,6 @@
 
 ## Ngoài phạm vi trang
 
-- Danh bạ chi nhánh (địa chỉ "Thành phố Quảng Ninh", rating, link Maps): sửa tại nguồn /chi-nhanh, build lại trang để đồng bộ.
+- Danh bạ chi nhánh (rating, link Maps): sửa tại trang /chi-nhanh.
 - Lead test, CRM/tracking: chỉ kiểm được trên production (preview không có backend).
 - Các bước khi lên production (robots/index, canonical thực tế, cấu hình máy chủ, GSC/CWV): theo quy trình triển khai riêng của IT.

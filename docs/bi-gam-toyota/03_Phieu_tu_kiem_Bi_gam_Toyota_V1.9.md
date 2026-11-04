@@ -15,7 +15,6 @@
 |---|---|---|---|
 | T01 | Wigo, Yaris xếp nhóm Sedan | Tách tab Hatchback (2): Wigo, Yaris; Sedan (3): Vios, Corolla Altis, Camry; SUV 8, MPV 6, Bán tải 1 — tổng 20. 01/04 xuất lại theo nhóm mới | — |
 | T02 | Thẻ "Tư vấn đúng theo từng xe" ghi "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" trong khi 05 chưa duyệt | Anh Đạo đã duyệt 04/11: giữ câu như hub VinFast; thêm byline "Rà soát kỹ thuật: Nguyễn Quang Đạo (04/11/2026)", schema `reviewedBy` + `lastReviewed` 2026-11-04; 05 ghi ĐÃ DUYỆT — hết mâu thuẫn | — |
-| T03 | Địa chỉ Quảng Ninh ghi "Thành phố Quảng Ninh" trong gợi ý cơ sở | — | **Ngoài phạm vi trang:** dữ liệu lấy nguyên từ danh bạ auto365.vn/chi-nhanh; Operations sửa tại nguồn, build lại trang để đồng bộ snapshot |
 | T04 | "Thi công tại 90+ chi nhánh" / "91 điểm tiếp nhận" chưa có nguồn xác nhận phạm vi | Giữ như hub VinFast (đã duyệt); anh Đạo duyệt câu này trên trang Toyota 04/11 | — |
 | T05 | Phiếu 03 ghi ≈91,7 nhưng cộng ra 92,7; cấp điểm U khi chưa kiểm | Bỏ tổng /100 tự chấm; U1–U3 để CX (mục 2) | — |
 | T06 | Chưa kiểm mobile/tablet, chưa gửi lead tới nơi nhận thật | QA lại desktop/mobile/tablet bản 04/11 (mục 3). Lead: preview là pages.dev, `/api/leads` không có backend (405) — **không gửi được trên preview** | Lead test + CRM/tracking khi lên production |
