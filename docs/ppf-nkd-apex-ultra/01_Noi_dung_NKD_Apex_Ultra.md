@@ -1,6 +1,6 @@
 # 01 — Nội dung PPF NKD Apex Ultra
 
-- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `74e64cfc6b1e1e0003cb25a754574491e33be803b225ec31cf7628f35f34d92c` (cùng phiên bản với 01, 02, 03)
+- Nguồn: `auto365/ppf-nkd-apex-ultra/index.html` — SHA-256 `669a7f55f51047305144c45a4a2c111145f048610947cd22ac9bc57e1fab5c45` (cùng phiên bản với 01, 02, 03)
 - Preview: https://preview-365group.pages.dev/ppf-nkd-apex-ultra/ (noindex, follow — đúng chủ đích staging)
 - Kiểm duyệt: Đặng Minh Hoàng (user xác nhận đã duyệt) · lastReviewed 2026-11-03 · dateModified 2026-11-04
 
@@ -57,7 +57,7 @@ Giá dán Apex Ultra tính theo nhóm xe và áp dụng cho dán toàn xe: Sedan
 Bảng giá dán NKD Apex UltraSedan38.000.000 đSUV42.000.000 đMPV46.000.000 đNguồn: bảng giá NKD Apex Ultra. Giá dán toàn xe, đã gồm phim, công thi công và VAT, áp dụng tại các cơ sở Auto365.Tư vấn dán PPF · 0365 365 365Kỹ thuật viên Auto365 căn phim NKD trên nắp ca-pô xe Porsche màu cam.
 Có nên chọn NKD Apex Ultra cho xe của bạn?
 Apex Ultra có độ dày công bố 8,5 mil và bảo hành công bố 5 năm, hợp với chủ xe muốn bảo vệ sơn lâu dài. Nếu chỉ cần che vài vị trí hay trầy, có thể hỏi phương án dán từng phần. Phim không xoá được vết xước có sẵn, nên xử lý sơn trước khi dán.Ưu tiên bề mặt bóng, dán nhiều vị tríXem mẫu phim và danh sách vị trí dán trước khi chốt gói.Chỉ cần bảo vệ vùng dễ trầyHỏi phương án dán từng phần thay vì cả gói theo nhóm xe.Xe từng sơn sửa hoặc có bề mặt xuống cấpKiểm tra nền sơn và độ bám trước, tránh bong sơn khi dán hoặc tháo phim.
-Địa chỉ dán PPF NKD Apex Ultra tại TP.HCMAuto365.vn - Trụ Sở Chính tại TP.HCM tiếp nhận tư vấn và dán PPF NKD Apex Ultra. Giá dán toàn xe áp dụng tại các cơ sở Auto365; nên gọi trước để giữ lịch và chọn điểm thi công gần nhất.
+Địa chỉ dán PPF NKD Apex Ultra tại TP.HCMAuto365.vn - Trụ Sở Chính là địa chỉ tiếp nhận tư vấn và dán PPF NKD Apex Ultra uy tín tại TP. Hồ Chí Minh và các khu vực lân cận.
 Vì sao chọn dán PPF NKD Apex Ultra tại Auto365?Auto365.vn thuộc 365Group, là hệ thống dịch vụ ô tô với hơn 90 chi nhánh tại 33 tỉnh thành, Trụ Sở Chính đặt tại Phường Hiệp Bình, TP.HCM. Ngoài PPF, các chi nhánh Auto365 thi công phim cách nhiệt, nâng cấp đèn, camera hành trình và phụ kiện ô tô.
 
 Tư vấn theo xe thực tếKỹ thuật viên kiểm tra nền sơn, vết trầy cũ và tư vấn phạm vi dán trước khi thi công.
