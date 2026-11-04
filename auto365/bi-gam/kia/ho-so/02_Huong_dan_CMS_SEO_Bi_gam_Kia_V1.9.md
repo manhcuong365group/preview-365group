@@ -36,7 +36,7 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 
 | Tài nguyên | Đường dẫn trên preview |
 |---|---|
-| Ảnh hero (Kia Carnival 2004 lắp X-Light 301 V2 tại Auto365) | `hinh/hero-kia-carnival-bi-gam-x-light-301-v2.webp` |
+| Ảnh hero (Kia Carnival 2.2D Luxury 2025 lắp AES SV 3.0 Max tại Auto365, ảnh trong bài case) | `hinh/hero-kia-carnival-2025-bi-gam-aes-sv-30-max.webp` |
 | Ảnh 11 dòng xe | `../theo-hang-xe/hinh/m-*.webp` |
 | Ảnh Forte, Sedona (đã ngừng bán) | `hinh/m-forte.webp`, `hinh/m-sedona.webp` — Wikimedia Commons đã tách nền: Forte © Mr.choppers (CC BY-SA 3.0), Sedona — Bull-Doser (Public domain). Production: giữ ghi công hoặc thay ảnh có quyền dùng |
 | Ảnh "Vì sao chọn" | `hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp` + 5 ảnh case Kia trên `auto365.vn/uploads/images/news/` (Carnival 2025, Carens 2023, Morning 2016, Sportage 2022, Sedona 2017) |
