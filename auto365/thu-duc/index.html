@@ -148,6 +148,21 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-bento-wrap .td-sp p{color:#ff8a8f;text-shadow:0 1px 4px rgba(0,0,0,.6)}
 .td-bento-wrap .td-sp li{background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.18)}
 @media(max-width:600px){.td-bento-wrap .td-sps{grid-template-rows:none;grid-auto-rows:220px}.td-bento-wrap .td-sp:first-child ul{display:none}}
+.td-vids{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.td-vid{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;border-radius:12px;overflow:hidden;background:#000;cursor:pointer}
+.td-vid img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:.2s}.td-vid:hover img{opacity:1;transform:scale(1.04)}
+.td-vid i{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:var(--red);color:#fff;font-style:normal;display:grid;place-items:center;font-size:20px;box-shadow:0 4px 14px rgba(0,0,0,.4)}
+.td-vid span{position:absolute;left:0;right:0;bottom:0;padding:22px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.85));color:#fff;font:700 13px/1.3 inherit;text-align:left}
+iframe.td-vid{cursor:auto}
+@media(max-width:600px){
+.td-svc,.td-xe-grid,.td-vids,.td-why ul,.td-cert,.td-bento-wrap .td-sps{display:grid!important;grid-auto-flow:column;grid-template-columns:none!important;grid-template-rows:none!important;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px;margin-right:-16px;padding-right:16px}
+.td-svc>*,.td-xe-grid>*,.td-vids>*,.td-why li,.td-cert>*,.td-bento-wrap .td-sp{scroll-snap-align:start}
+.td-svc{grid-template-rows:repeat(2,auto)!important;grid-auto-columns:40%}
+.td-xe-grid{grid-auto-columns:62%}.td-vids{grid-auto-columns:78%}.td-why ul{grid-auto-columns:78%}.td-cert{grid-auto-columns:42%}
+.td-bento-wrap .td-sps{grid-auto-columns:80%;grid-auto-rows:240px!important;margin-right:-14px}
+.td-bento-wrap .td-sp,.td-bento-wrap .td-sp:first-child,.td-bento-wrap .td-sp:last-child{grid-row:auto!important;grid-column:auto!important}
+.td-xe-card[hidden]{display:none!important}
+.td-svc::-webkit-scrollbar,.td-xe-grid::-webkit-scrollbar,.td-vids::-webkit-scrollbar,.td-why ul::-webkit-scrollbar,.td-cert::-webkit-scrollbar,.td-sps::-webkit-scrollbar{display:none}}
 </style>
 </head>
 <body>
@@ -165,7 +180,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
   <p class="td-story"><b>2016</b> — cửa hàng Auto365 đầu tiên tại Việt Nam mở cửa ở Thủ Đức. Câu chuyện của cả hệ thống bắt đầu từ đây.</p>
   <p>Hôm nay, nơi này là 3M Pro Shop của hệ sinh thái 365Group: đèn, phim cách nhiệt, PPF/wrap, camera hành trình — hàng chính hãng, tay nghề kỹ thuật viên lâu năm, tư vấn rõ ràng từng hạng mục.</p>
   <div class="td-ticks"><span>Cửa hàng Auto365 đầu tiên</span><span>Chính hãng, nguồn gốc rõ ràng</span><span>Bảo hành &amp; hậu mãi minh bạch</span></div>
-  <div class="td-cta"><a class="td-btn td-btn-red" href="#dat-lich">Đặt lịch tư vấn →</a><a class="td-btn td-btn-ghost" href="#">▷ Xem clip giới thiệu</a></div>
+  <div class="td-cta"><a class="td-btn td-btn-red" href="#dat-lich">Đặt lịch tư vấn →</a><a class="td-btn td-btn-ghost" href="#clip">▷ Xem clip giới thiệu</a></div>
 </div></section>
 <div class="td-wrap" style="padding:0"><div class="td-stats">
   <div><b>Từ 2016</b><small>Kinh nghiệm thực tế</small></div>
@@ -240,12 +255,26 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
   <p class="td-extra">Ngoài ra: <strong>bọc da nội thất cá nhân hoá</strong> · <strong>phụ kiện &amp; giải pháp cho xe điện</strong> · <strong>màn hình Android Teyes, Vietmap</strong> — <a href="#dat-lich">đặt lịch tư vấn</a></p>
 </section>
 
+<section class="td-sec" id="clip">
+  <h2 class="td-h2">Clip thực tế tại Trụ sở chính</h2>
+  <div class="td-vids">
+    <button class="td-vid" data-yt="7-SRUonBS_o" aria-label="Phát video: Mercedes GLC 300 dán PPF 3M 200 Gloss"><img src="https://i.ytimg.com/vi/7-SRUonBS_o/hqdefault.jpg" alt="Mercedes GLC 300 dán PPF 3M 200 Gloss" loading="lazy"><i>▶</i><span>Mercedes GLC 300 dán PPF 3M 200 Gloss</span></button>
+    <button class="td-vid" data-yt="adTg0iqT3P0" aria-label="Phát video: Ford Ranger Raptor dán PPF 3M 150 Gloss"><img src="https://i.ytimg.com/vi/adTg0iqT3P0/hqdefault.jpg" alt="Ford Ranger Raptor dán PPF 3M 150 Gloss" loading="lazy"><i>▶</i><span>Ford Ranger Raptor dán PPF 3M 150 Gloss</span></button>
+    <button class="td-vid" data-yt="VhKw2KJCR8I" aria-label="Phát video: VinFast VF8 – đánh giá PPF 3M 50 Gloss"><img src="https://i.ytimg.com/vi/VhKw2KJCR8I/hqdefault.jpg" alt="VinFast VF8 – đánh giá PPF 3M 50 Gloss" loading="lazy"><i>▶</i><span>VinFast VF8 – đánh giá PPF 3M 50 Gloss</span></button>
+    <button class="td-vid" data-yt="-H8RM4u4qck" aria-label="Phát video: BMW 530i dán PPF 3M 200 Gloss"><img src="https://i.ytimg.com/vi/-H8RM4u4qck/hqdefault.jpg" alt="BMW 530i dán PPF 3M 200 Gloss" loading="lazy"><i>▶</i><span>BMW 530i dán PPF 3M 200 Gloss</span></button>
+  </div>
+</section>
+
 <section class="td-sec" id="cong-trinh">
   <div class="td-xe">
   <div class="td-xe-hd"><h2>Xe thực tế <span>nổi bật</span></h2><a class="td-xe-all" href="https://auto365.vn/tin-tuc/xe-thuc-te-tai-auto365" target="_blank" rel="noopener">Xem tất cả hồ sơ →</a></div>
-  <div class="td-xe-f"><span>Dịch vụ:</span><div data-g="c"><button class="on" data-v="all">Tất cả</button><button data-v="phim">Phim cách nhiệt</button><button data-v="den">Nâng cấp ánh sáng</button></div></div>
-  <div class="td-xe-f"><span>Hãng xe:</span><div data-g="b"><button class="on" data-v="all">Tất cả</button><button data-v="Mazda">Mazda</button><button data-v="Geely">Geely</button><button data-v="Kia">Kia</button><button data-v="Hyundai">Hyundai</button><button data-v="Suzuki">Suzuki</button><button data-v="Mitsubishi">Mitsubishi</button><button data-v="BMW">BMW</button></div></div>
+  <div class="td-xe-f"><span>Dịch vụ:</span><div data-g="c"><button class="on" data-v="all">Tất cả</button><button data-v="phim">Phim cách nhiệt</button><button data-v="den">Nâng cấp ánh sáng</button><button data-v="cam">Camera hành trình</button><button data-v="ppf">PPF &amp; Wrap</button></div></div>
+  <div class="td-xe-f"><span>Hãng xe:</span><div data-g="b"><button class="on" data-v="all">Tất cả</button><button data-v="Mazda">Mazda</button><button data-v="Geely">Geely</button><button data-v="Kia">Kia</button><button data-v="Hyundai">Hyundai</button><button data-v="Suzuki">Suzuki</button><button data-v="Mitsubishi">Mitsubishi</button><button data-v="BMW">BMW</button><button data-v="Ford">Ford</button><button data-v="Subaru">Subaru</button></div></div>
   <div class="td-xe-grid">
+    <a class="td-xe-card" href="https://auto365.vn/bmw-530i-dan-ppf-3m-200-gloss" target="_blank" rel="noopener" data-c="ppf" data-b="BMW"><div class="im"><img src="hinh/case-bmw-530i-ppf.webp" alt="BMW 530i – PPF 3M 200 Gloss toàn ngoại thất" loading="lazy"><em>✓ PPF &amp; Wrap</em></div><div class="tx"><small>BMW</small><b>BMW 530i</b><span>PPF 3M 200 Gloss toàn ngoại thất</span></div></a>
+    <a class="td-xe-card" href="https://auto365.vn/mazda-cx-5-xuoc-dam-dan-ppf-3m-50-gloss" target="_blank" rel="noopener" data-c="ppf" data-b="Mazda"><div class="im"><img src="hinh/case-mazda-cx5-ppf.webp" alt="Mazda CX-5 – PPF 3M 50 Gloss xử lý xước dăm" loading="lazy"><em>✓ PPF &amp; Wrap</em></div><div class="tx"><small>Mazda</small><b>Mazda CX-5</b><span>PPF 3M 50 Gloss xử lý xước dăm</span></div></a>
+    <a class="td-xe-card" href="https://auto365.vn/ford-everest-2019-lap-camera-hanh-trinh-70mai-a510" target="_blank" rel="noopener" data-c="cam" data-b="Ford"><div class="im"><img src="hinh/camera-70mai-a510-ford-everest.webp" alt="Ford Everest 2019 – Camera hành trình 70mai A510" loading="lazy"><em>✓ Camera hành trình</em></div><div class="tx"><small>Ford</small><b>Ford Everest 2019</b><span>Camera hành trình 70mai A510</span></div></a>
+    <a class="td-xe-card" href="https://auto365.vn/subaru-forester-i-l-2020-lap-camera-hanh-trinh-70mai-a510" target="_blank" rel="noopener" data-c="cam" data-b="Subaru"><div class="im"><img src="hinh/case-subaru-forester-camera.webp" alt="Subaru Forester i-L 2020 – Camera hành trình 70mai A510" loading="lazy"><em>✓ Camera hành trình</em></div><div class="tx"><small>Subaru</small><b>Subaru Forester i-L 2020</b><span>Camera hành trình 70mai A510</span></div></a>
     <a class="td-xe-card" href="https://auto365.vn/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max" target="_blank" rel="noopener" data-c="den" data-b="Mazda"><div class="im"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max-1793758218.webp" alt="Mazda 6 2016 2.5L – Bi LED V30 Ultra + bi gầm SV 3.0 Max" loading="lazy"><em>✓ Nâng cấp ánh sáng</em></div><div class="tx"><small>Mazda</small><b>Mazda 6 2016 2.5L</b><span>Bi LED V30 Ultra + bi gầm SV 3.0 Max</span></div></a>
     <a class="td-xe-card" href="https://auto365.vn/geely-ex5-dan-phim-cach-nhiet-3m-crystalline-cr-blk" target="_blank" rel="noopener" data-c="phim" data-b="Geely"><div class="im"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/geely-ex5-dan-phim-cach-nhiet-3m-crystalline-cr-blk-1793675398.webp" alt="Geely EX5 – Phim 3M Crystalline CR BLK" loading="lazy"><em>✓ Phim cách nhiệt</em></div><div class="tx"><small>Geely</small><b>Geely EX5</b><span>Phim 3M Crystalline CR BLK</span></div></a>
     <a class="td-xe-card" href="https://auto365.vn/kia-carens-15l-luxury-2024-lap-den-gam-dang-roi-m40-ultra-v2" target="_blank" rel="noopener" data-c="den" data-b="Kia"><div class="im"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/kia-carens-15l-luxury-2024-lap-den-gam-dang-roi-m40-ultra-v2-1793689104.webp" alt="Kia Carens 1.5L Luxury 2024 – Đèn gầm rời M40 Ultra V2" loading="lazy"><em>✓ Nâng cấp ánh sáng</em></div><div class="tx"><small>Kia</small><b>Kia Carens 1.5L Luxury 2024</b><span>Đèn gầm rời M40 Ultra V2</span></div></a>
@@ -276,6 +305,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 document.querySelectorAll('.td-flt button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.td-flt button').forEach(x=>x.classList.toggle('on',x===b));
 document.querySelectorAll('.td-cases a').forEach(a=>a.style.display=(b.dataset.f==='all'||a.dataset.c===b.dataset.f)?'':'none')});
 (function(){const st={c:"all",b:"all"};document.querySelectorAll(".td-xe-f [data-g] button").forEach(b=>b.onclick=()=>{const g=b.parentNode.dataset.g;st[g]=b.dataset.v;b.parentNode.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));let n=0;document.querySelectorAll(".td-xe-card").forEach(a=>{const ok=(st.c==="all"||a.dataset.c===st.c)&&(st.b==="all"||a.dataset.b===st.b);a.hidden=!ok;n+=ok});document.querySelector(".td-xe-empty").hidden=n>0})})();
+document.querySelectorAll(".td-vid").forEach(b=>b.onclick=()=>{const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=b.getAttribute("aria-label");b.replaceWith(f);f.className="td-vid"});
 </script>
 </body>
 </html>
