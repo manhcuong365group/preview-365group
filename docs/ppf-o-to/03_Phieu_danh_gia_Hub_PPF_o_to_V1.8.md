@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `767fcf14c0667eb1ec0a6554889be07e3ca8b2d4b1ce539ba22ea83ec350a380` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `14f1170fefd9ee0200b6e2b004aba0139981579cd33c03317258458eac06e070` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -318,3 +318,5 @@ Cập nhật 03/11/2026 (chủ trang: PR thêm cho 3M Pro Shop): hero thêm dả
 Cập nhật 03/11/2026 (chủ trang): ảnh hero đổi từ ảnh thi công VinFast VF 8 sang ảnh mặt tiền 3M Pro Shop – Auto365 (ảnh trang 3M Pro Shop trên auto365.vn), chú thích "3M Pro Shop – Auto365, Hiệp Bình, TP.HCM — xem hồ sơ" (link /3m-pro-shop-tru-so-chinh). Case VF 8 vẫn ở mục Xe thực tế.
 
 Cập nhật 04/11/2026 (chủ trang): ảnh hero đổi sang ảnh 3M Pro Shop & 3M Training Center do chủ trang gửi (hinh/3m-pro-shop-training-center-auto365.webp, 1600×900, khung 16:9; ảnh nhận diện cơ sở, không dùng làm hồ sơ thi công); chú thích "3M Pro Shop & 3M Training Center, Hiệp Bình, TP.HCM — xem hồ sơ". Dải 6 lợi ích dưới hero làm nổi hơn: mỗi ý là thẻ trắng viền, icon đỏ trong nền tròn, chữ đậm; desktop 6 cột đều, mobile giữ vuốt ngang. Khi lên production cần upload ảnh hero lên auto365.vn. dateModified 2026-11-04.
+
+Cập nhật 04/11/2026 (chủ trang): thẻ "90+ chi nhánh triển khai PPF/Wrap" ở khối Vì sao đổi ảnh mặt tiền sang ảnh showroom 3M Pro Shop do chủ trang gửi (hinh/showroom-3m-pro-shop-auto365.webp, 1200×675). Khi lên production cần upload ảnh lên auto365.vn.
