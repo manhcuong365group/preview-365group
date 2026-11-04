@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `dc270975b6200d030c29d539d5a08ced294ea3bdac0a099faee89381e88d20ff` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `767fcf14c0667eb1ec0a6554889be07e3ca8b2d4b1ce539ba22ea83ec350a380` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -316,3 +316,5 @@ Phiếu U3 V1.9 bản cập nhật 02/11/2026 (kế thừa pk56): PPF1101-01/02 
 Cập nhật 03/11/2026 (chủ trang: PR thêm cho 3M Pro Shop): hero thêm dải "3M Pro Shop · Auto365 Center được 3M Việt Nam bổ nhiệm · Xem hồ sơ →" (chủ trang bỏ mốc hiệu lực trên 2 dải mới) (link https://auto365.vn/3m-pro-shop-tru-so-chinh) dưới nút CTA; tab 3M ở bảng giá thêm dòng "Muốn dán phim 3M tại 3M Pro Shop…" kèm link hồ sơ và Đặt lịch tư vấn (ẩn khi chọn tab AX). Chỉ dùng dữ kiện chứng nhận đã duyệt; không đổi giá, FAQ, schema. dateModified 2026-11-03; lastReviewed giữ 2026-10-30 — phần bổ sung chờ anh Đặng Minh Hoàng xem.
 
 Cập nhật 03/11/2026 (chủ trang): ảnh hero đổi từ ảnh thi công VinFast VF 8 sang ảnh mặt tiền 3M Pro Shop – Auto365 (ảnh trang 3M Pro Shop trên auto365.vn), chú thích "3M Pro Shop – Auto365, Hiệp Bình, TP.HCM — xem hồ sơ" (link /3m-pro-shop-tru-so-chinh). Case VF 8 vẫn ở mục Xe thực tế.
+
+Cập nhật 04/11/2026 (chủ trang): ảnh hero đổi sang ảnh 3M Pro Shop & 3M Training Center do chủ trang gửi (hinh/3m-pro-shop-training-center-auto365.webp, 1600×900, khung 16:9; ảnh nhận diện cơ sở, không dùng làm hồ sơ thi công); chú thích "3M Pro Shop & 3M Training Center, Hiệp Bình, TP.HCM — xem hồ sơ". Dải 6 lợi ích dưới hero làm nổi hơn: mỗi ý là thẻ trắng viền, icon đỏ trong nền tròn, chữ đậm; desktop 6 cột đều, mobile giữ vuốt ngang. Khi lên production cần upload ảnh hero lên auto365.vn. dateModified 2026-11-04.
