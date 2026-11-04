@@ -56,7 +56,11 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-logos div{border:1.5px solid #e2c47a;background:linear-gradient(#fffdf6,#f8efd6);border-radius:8px;padding:14px 6px;text-align:center;font-weight:900;font-size:19px}
 .td-logos small{display:block;font-size:9.5px;font-weight:600;color:var(--mut);letter-spacing:.3px}
 .td-cert{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.td-cert img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
-.td-feat{margin-top:48px;background:var(--bg);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1.2fr 1fr}
+.td-tabs{display:flex;gap:8px;overflow-x:auto;margin-bottom:14px;scrollbar-width:none}
+.td-tabs button{flex:none;border:1.5px solid var(--line);background:#fff;padding:9px 16px;border-radius:20px;font:600 14px/1 inherit;cursor:pointer}
+.td-tabs button.on{background:var(--red);border-color:var(--red);color:#fff}
+.td-feat[hidden]{display:none}
+.td-feat{background:var(--bg);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1.2fr 1fr}
 .td-feat>img{height:100%;object-fit:cover}.td-feat .tx{padding:26px}
 .td-feat h3{font-size:26px;color:var(--red);margin:0 0 4px}.td-feat p{color:var(--mut);margin:0 0 12px;font-size:13.5px}
 .td-feat ul{padding:0;list-style:none;margin:0 0 18px;font-size:14px}.td-feat li{margin:6px 0}.td-feat li:before{content:"✓ ";color:var(--red);font-weight:700}
@@ -66,9 +70,10 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-cases-hd{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.td-cases-hd .td-h2{margin:0}
 .td-flt{display:flex;gap:6px;flex-wrap:wrap}.td-flt button{border:0;background:var(--bg);padding:6px 14px;border-radius:16px;font-size:12.5px;font-weight:600;cursor:pointer}.td-flt button.on{background:var(--red);color:#fff}
 .td-cases{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.td-cases a{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:3/2;color:#fff}
-.td-cases img{width:100%;height:100%;object-fit:cover}.td-cases a:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(0,0,0,.85))}
-.td-cases span{position:absolute;left:12px;bottom:10px;z-index:1;font-size:13px;font-weight:700;line-height:1.3}.td-cases span small{display:block;font-weight:400}
+.td-cases a{display:flex;flex-direction:column;border-radius:10px;overflow:hidden;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.td-cases img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.td-cases span{padding:10px 12px;font-size:13px;font-weight:700;line-height:1.35}.td-cases span small{display:block;font-weight:400;color:var(--mut);margin-top:2px}
+.td-more{text-align:center;margin:16px 0 0;font-weight:700;color:var(--red)}
 .td-bot{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:48px 0 56px}
 .td-rev{display:flex;gap:14px}.td-rev>div{border:1px solid var(--line);border-radius:12px;padding:18px;box-shadow:0 2px 8px rgba(0,0,0,.04)}
 .td-g{min-width:150px;text-align:center}.td-g b{font-size:34px}.td-g .st{color:#f5b301;letter-spacing:2px}
@@ -83,7 +88,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-hd a{white-space:nowrap}
 @media(max-width:1100px){.td-nav{display:none}.td-hd .td-btn-out{margin-left:auto}}
 @media(max-width:980px){.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
-.td-why,.td-part,.td-bot{grid-template-columns:1fr}.td-feat{grid-template-columns:1fr}.td-feat>img{aspect-ratio:16/8}.td-cases{grid-template-columns:repeat(3,1fr)}}
+.td-why,.td-part,.td-bot{grid-template-columns:1fr}.td-feat{grid-template-columns:1fr}.td-feat>img{aspect-ratio:16/8}.td-cases{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
 .td-stats{grid-template-columns:1fr 1fr;margin:-56px 16px 0}.td-stats div{border:0}.td-svc{grid-template-columns:1fr 1fr}.td-why ul{grid-template-columns:1fr}
 .td-logos{grid-template-columns:1fr 1fr}.td-cases{grid-template-columns:1fr 1fr}.td-rev{flex-direction:column}.td-book form{grid-template-columns:1fr}.td-h2c{font-size:22px}}
@@ -121,7 +126,7 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
     <a href="https://auto365.vn/nang-cap-anh-sang"><img src="hinh/den.webp" alt="Nâng cấp đèn ô tô" loading="lazy"><span>Nâng cấp đèn các loại</span><i>→</i></a>
     <a href="https://auto365.vn/phim-cach-nhiet"><img src="hinh/phim.webp" alt="Phim cách nhiệt ô tô" loading="lazy"><span>Phim cách nhiệt</span><i>→</i></a>
     <a href="https://auto365.vn/ppf-o-to"><img src="hinh/ppf.webp" alt="PPF và wrap đổi màu" loading="lazy"><span>PPF / Wrap đổi màu</span><i>→</i></a>
-    <a href="#"><img src="hinh/noithat.webp" alt="Nội thất da cá nhân hoá" loading="lazy"><span>Nội thất da cá nhân hoá</span><i>→</i></a>
+    <a href="#"><img src="hinh/xuong.webp" alt="Nội thất da cá nhân hoá" loading="lazy"><span>Nội thất da cá nhân hoá</span><i>→</i></a>
     <a href="#"><img src="hinh/xedien.webp" alt="Giải pháp cho xe điện" loading="lazy"><span>Giải pháp cho xe điện</span><i>→</i></a>
     <a href="https://auto365.vn/camera-hanh-trinh"><img src="hinh/camera.webp" alt="Camera hành trình" loading="lazy"><span>Camera hành trình</span><i>→</i></a>
   </div>
@@ -151,24 +156,77 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
   </div>
 </section>
 
-<section class="td-feat">
-  <img src="hinh/den.webp" alt="Nâng cấp đèn ô tô tại Auto365" loading="lazy">
-  <div class="tx"><h3>Nâng cấp đèn ô tô</h3><p>Tăng tầm nhìn · An toàn hơn · Trải nghiệm lái tốt hơn</p>
-    <ul><li>Đa dạng giải pháp: Bi LED, Bi Laser, LED, bi gầm…</li><li>Cân chỉnh ánh sáng chuẩn trên bảng test, không gây chói</li><li>Phù hợp nhiều dòng xe, bảo hành chính hãng</li></ul>
-    <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn giải pháp đèn →</a></div>
-  <div class="td-ba"><figure class="bf"><img src="hinh/test.webp" alt="Trước nâng cấp" loading="lazy"><figcaption>Trước nâng cấp</figcaption></figure><figure><img src="hinh/test.webp" alt="Sau nâng cấp" loading="lazy"><figcaption>Sau nâng cấp</figcaption></figure></div>
+<section class="td-sec" id="hang-muc">
+  <h2 class="td-h2">6 hạng mục dịch vụ tại Trụ sở chính</h2>
+  <div class="td-tabs" role="tablist">
+    <button class="on" data-t="0">Nâng cấp đèn</button><button data-t="1">Phim cách nhiệt</button><button data-t="2">PPF / Wrap</button><button data-t="3">Nội thất da</button><button data-t="4">Xe điện</button><button data-t="5">Camera</button>
+  </div>
+
+  <div class="td-feat" data-p="0">
+    <img src="hinh/den.webp" alt="Nâng cấp đèn ô tô tại Auto365" loading="lazy">
+    <div class="tx"><h3>Nâng cấp đèn ô tô</h3><p>Tăng tầm nhìn · An toàn hơn · Trải nghiệm lái tốt hơn</p>
+      <ul><li>Đa dạng giải pháp: Bi LED, Bi Laser, LED, bi gầm…</li><li>Cân chỉnh ánh sáng chuẩn trên bảng test, không gây chói</li><li>Phù hợp nhiều dòng xe, bảo hành chính hãng</li></ul>
+      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn giải pháp đèn →</a></div>
+    <div class="td-ba"><figure class="bf"><img src="hinh/test.webp" alt="Trước nâng cấp đèn" loading="lazy"><figcaption>Trước nâng cấp</figcaption></figure><figure><img src="hinh/test.webp" alt="Sau nâng cấp đèn" loading="lazy"><figcaption>Sau nâng cấp</figcaption></figure></div>
+  </div>
+
+  <div class="td-feat" data-p="1" hidden>
+    <img src="hinh/phim.webp" alt="Dán phim cách nhiệt 3M tại Auto365" loading="lazy">
+    <div class="tx"><h3>Phim cách nhiệt ô tô</h3><p>Giảm nóng · Cản tia UV · Riêng tư trong cabin</p>
+      <ul><li>Phim 3M chính hãng: Crystalline, Ceramic Hybrid, Ceramic NR/IR</li><li>Chọn mã phim theo từng vị trí kính và nhu cầu sử dụng</li><li>Bảo hành điện tử, tra cứu trên toàn hệ thống</li></ul>
+      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn chọn phim →</a></div>
+    <div class="td-ba"><figure><img src="hinh/c2.webp" alt="Xe dán phim cách nhiệt" loading="lazy"><figcaption>Xe hoàn thiện</figcaption></figure><figure><img src="hinh/phim2.webp" alt="Thi công phim cách nhiệt" loading="lazy"><figcaption>Thi công thực tế</figcaption></figure></div>
+  </div>
+
+  <div class="td-feat" data-p="2" hidden>
+    <img src="hinh/ppf.webp" alt="Dán PPF bảo vệ sơn tại Auto365" loading="lazy">
+    <div class="tx"><h3>PPF / Wrap đổi màu</h3><p>Bảo vệ sơn zin · Giữ độ bóng · Đổi phong cách xe</p>
+      <ul><li>PPF trong suốt bảo vệ sơn khỏi trầy xước, đá văng</li><li>Wrap đổi màu theo sở thích, không ảnh hưởng sơn gốc</li><li>Căn chỉnh mép phim tỉ mỉ trong phòng thi công kín</li></ul>
+      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn PPF / Wrap →</a></div>
+    <div class="td-ba"><figure><img src="hinh/ppf2.webp" alt="Căn chỉnh mép PPF" loading="lazy"><figcaption>Căn mép phim</figcaption></figure><figure><img src="hinh/c3.webp" alt="Xe sau khi dán PPF" loading="lazy"><figcaption>Xe hoàn thiện</figcaption></figure></div>
+  </div>
+
+  <div class="td-feat" data-p="3" hidden>
+    <img src="hinh/hero.webp" alt="Showroom Auto365 Trụ sở chính" loading="lazy">
+    <div class="tx"><h3>Nội thất da cá nhân hoá</h3><p>Sang trọng hơn · Êm ái hơn · Mang dấu ấn riêng</p>
+      <ul><li>Bọc ghế da, ốp taplo, vô lăng theo màu và chất liệu chọn</li><li>Tư vấn phối màu, đường chỉ theo phong cách chủ xe</li><li>Thi công tại xưởng, giữ nguyên kết cấu và an toàn ghế</li></ul>
+      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn nội thất →</a></div>
+    <div class="td-ba"><figure><img src="hinh/xuong.webp" alt="Xưởng thi công Auto365" loading="lazy"><figcaption>Xưởng thi công</figcaption></figure><figure><img src="hinh/hero.webp" alt="Showroom Auto365" loading="lazy"><figcaption>Showroom</figcaption></figure></div>
+  </div>
+
+  <div class="td-feat" data-p="4" hidden>
+    <img src="hinh/xedien.webp" alt="Giải pháp cho xe điện tại Auto365" loading="lazy">
+    <div class="tx"><h3>Giải pháp cho xe điện</h3><p>Nâng cấp đúng chuẩn · Phù hợp hệ thống điện xe EV</p>
+      <ul><li>Đèn, phim, PPF, camera chọn phù hợp riêng cho xe điện</li><li>Kỹ thuật viên nắm sơ đồ điện từng dòng xe VinFast và EV khác</li><li>Đấu nối gọn, không can thiệp hệ thống pin cao áp</li></ul>
+      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn cho xe điện →</a></div>
+    <div class="td-ba"><figure><img src="hinh/xedien2.webp" alt="Kỹ thuật viên lắp đặt cho xe điện" loading="lazy"><figcaption>Lắp đặt tại xưởng</figcaption></figure><figure><img src="hinh/c4.webp" alt="VinFast hoàn thiện nâng cấp" loading="lazy"><figcaption>Xe hoàn thiện</figcaption></figure></div>
+  </div>
+
+  <div class="td-feat" data-p="5" hidden>
+    <img src="hinh/camera.webp" alt="Camera hành trình tại Auto365" loading="lazy">
+    <div class="tx"><h3>Camera hành trình</h3><p>Ghi hình rõ nét · Lưu bằng chứng · Yên tâm mỗi chuyến đi</p>
+      <ul><li>Camera 70mai và nhiều thương hiệu chính hãng</li><li>Đi dây ẩn gọn, không ảnh hưởng thẩm mỹ cabin</li><li>Hướng dẫn kết nối app, xem lại video trên điện thoại</li></ul>
+      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn chọn camera →</a></div>
+    <div class="td-ba"><figure><img src="hinh/camera2.webp" alt="Camera hành trình 70mai" loading="lazy"><figcaption>Sản phẩm</figcaption></figure><figure><img src="hinh/c5.webp" alt="Xe lắp camera hành trình" loading="lazy"><figcaption>Lắp đặt thực tế</figcaption></figure></div>
+  </div>
 </section>
 
 <section class="td-sec" id="cong-trinh">
   <div class="td-cases-hd"><h2 class="td-h2">Công trình thực tế tại Trụ sở chính</h2>
-    <div class="td-flt"><button class="on" data-f="all">Tất cả</button><button data-f="den">Nâng cấp đèn</button><button data-f="phim">Phim cách nhiệt</button><button data-f="ppf">PPF / Wrap</button><button data-f="da">Nội thất</button><button data-f="cam">Camera</button></div></div>
+    <div class="td-flt"><button class="on" data-f="all">Tất cả</button><button data-f="den">Nâng cấp đèn</button><button data-f="phim">Phim cách nhiệt</button></div></div>
   <div class="td-cases">
-    <a href="#" data-c="den"><img src="hinh/c1.webp" alt="" loading="lazy"><span>Nâng cấp Bi LED X-Light V30<small>Toyota Fortuner</small></span></a>
-    <a href="#" data-c="phim"><img src="hinh/c2.webp" alt="" loading="lazy"><span>Phim cách nhiệt 3M Crystalline<small>Honda CR-V</small></span></a>
-    <a href="#" data-c="ppf"><img src="hinh/c3.webp" alt="" loading="lazy"><span>PPF bảo vệ sơn<small>Kia K5</small></span></a>
-    <a href="#" data-c="da"><img src="hinh/noithat.webp" alt="" loading="lazy"><span>Bọc da nội thất<small>Kia Carnival</small></span></a>
-    <a href="#" data-c="cam"><img src="hinh/c4.webp" alt="" loading="lazy"><span>Camera hành trình 70mai<small>VinFast VF8</small></span></a>
+    <a href="https://auto365.vn/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max-1793758218.webp" alt="Mazda 6 2016 2.5L – Bi LED V30 Ultra + bi gầm SV 3.0 Max" loading="lazy"><span>Bi LED V30 Ultra + bi gầm SV 3.0 Max<small>Mazda 6 2016 2.5L</small></span></a>
+    <a href="https://auto365.vn/geely-ex5-dan-phim-cach-nhiet-3m-crystalline-cr-blk" target="_blank" rel="noopener" data-c="phim"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/geely-ex5-dan-phim-cach-nhiet-3m-crystalline-cr-blk-1793675398.webp" alt="Geely EX5 – Phim 3M Crystalline CR BLK" loading="lazy"><span>Phim 3M Crystalline CR BLK<small>Geely EX5</small></span></a>
+    <a href="https://auto365.vn/kia-carens-15l-luxury-2024-lap-den-gam-dang-roi-m40-ultra-v2" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/kia-carens-15l-luxury-2024-lap-den-gam-dang-roi-m40-ultra-v2-1793689104.webp" alt="Kia Carens 1.5L Luxury 2024 – Đèn gầm rời M40 Ultra V2" loading="lazy"><span>Đèn gầm rời M40 Ultra V2<small>Kia Carens 1.5L Luxury 2024</small></span></a>
+    <a href="https://auto365.vn/hyundai-stargazer-dan-phim-3m-crystalline-cr-blk" target="_blank" rel="noopener" data-c="phim"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/hyundai-stargazer-dan-phim-3m-crystalline-cr-blk-1793678157.webp" alt="Hyundai Stargazer – Phim 3M Crystalline CR BLK" loading="lazy"><span>Phim 3M Crystalline CR BLK<small>Hyundai Stargazer</small></span></a>
+    <a href="https://auto365.vn/hyundai-grand-i10-2025-12-at-lap-bi-led-gtr-limited-30" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/hyundai-grand-i10-2025-12-at-cao-cap-lap-bi-led-gtr-limited-1793688340.webp" alt="Hyundai Grand i10 2025 – Bi LED GTR Limited 3.0" loading="lazy"><span>Bi LED GTR Limited 3.0<small>Hyundai Grand i10 2025</small></span></a>
+    <a href="https://auto365.vn/suzuki-swift-dan-phim-3m-crystalline-cr-blk-va-ceramic-ir" target="_blank" rel="noopener" data-c="phim"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/suzuki-swift-dan-phim-cach-nhiet-3m-cr-blk-ceramic-ir-1793601121.webp" alt="Suzuki Swift – Phim 3M CR BLK + Ceramic IR" loading="lazy"><span>Phim 3M CR BLK + Ceramic IR<small>Suzuki Swift</small></span></a>
+    <a href="https://auto365.vn/kia-carnival-22d-luxury-8s-2025-lap-den-gam-dang-roi-m40-ultra-v2" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/kia-carnival-2025-lap-den-gam-dang-roi-titan-m40-ultra-v2-6-1793671317.webp" alt="Kia Carnival 2.2D 2025 – Đèn gầm rời M40 Ultra V2" loading="lazy"><span>Đèn gầm rời M40 Ultra V2<small>Kia Carnival 2.2D 2025</small></span></a>
+    <a href="https://auto365.vn/mitsubishi-pajero-2021-v6-30l-lap-bi-gam-x-light-f10-new-2025" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/mitsubishi-pajero-2021-v6-30l-lap-bi-gam-x-light-f10-new-202-1793613489.webp" alt="Mitsubishi Pajero 2021 – Bi gầm X-Light F10 New 2025" loading="lazy"><span>Bi gầm X-Light F10 New 2025<small>Mitsubishi Pajero 2021</small></span></a>
+    <a href="https://auto365.vn/hyundai-palisade-2024-lap-den-gam-dang-roi-m30-ultra-v2" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/hyundai-palisade-2024-lap-den-gam-dang-roi-titan-m30-ultra-v-1793589314.webp" alt="Hyundai Palisade 2024 – Đèn gầm rời M30 Ultra V2" loading="lazy"><span>Đèn gầm rời M30 Ultra V2<small>Hyundai Palisade 2024</small></span></a>
+    <a href="https://auto365.vn/bmw-x3-xdrive20i-2017-lap-bi-gam-x-light-x3-ultra-5500k" target="_blank" rel="noopener" data-c="den"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/bmw-x3-nang-cap-bi-gam-x3-ultra-5500k-1793415090.webp" alt="BMW X3 xDrive20i 2017 – Bi gầm X-Light X3 Ultra 5500K" loading="lazy"><span>Bi gầm X-Light X3 Ultra 5500K<small>BMW X3 xDrive20i 2017</small></span></a>
   </div>
+  <p class="td-more"><a href="https://auto365.vn/tin-tuc/xe-thuc-te-tai-auto365" target="_blank" rel="noopener">Xem tất cả xe thực tế tại Auto365 →</a></p>
 </section>
 
 <section class="td-bot" id="dat-lich">
@@ -185,6 +243,9 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 </main>
 <footer class="td-ft">© Auto365 – 365Group · Trụ sở chính: Vạn Phúc City, TP. Thủ Đức, TP.HCM · Hotline 0365 365 365</footer>
 <script>
+document.querySelectorAll('.td-tabs button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.td-tabs button').forEach(x=>x.classList.toggle('on',x===b));
+document.querySelectorAll('.td-feat').forEach(p=>p.hidden=p.dataset.p!==b.dataset.t)});
+document.querySelectorAll('.td-svc a').forEach((a,i)=>a.addEventListener('click',e=>{e.preventDefault();document.querySelector('.td-tabs [data-t="'+i+'"]').click();document.getElementById('hang-muc').scrollIntoView({behavior:'smooth'})}));
 document.querySelectorAll('.td-flt button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.td-flt button').forEach(x=>x.classList.toggle('on',x===b));
 document.querySelectorAll('.td-cases a').forEach(a=>a.style.display=(b.dataset.f==='all'||a.dataset.c===b.dataset.f)?'':'none')});
 </script>
