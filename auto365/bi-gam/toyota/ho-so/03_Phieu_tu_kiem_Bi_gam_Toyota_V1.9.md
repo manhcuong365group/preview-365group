@@ -18,7 +18,7 @@
 | T04 | "Thi công tại 90+ chi nhánh" / "91 điểm tiếp nhận" chưa có nguồn xác nhận phạm vi | Giữ như hub VinFast (đã duyệt); anh Đạo duyệt câu này trên trang Toyota 04/11 | — |
 | T05 | Phiếu 03 ghi ≈91,7 nhưng cộng ra 92,7; cấp điểm U khi chưa kiểm | Bỏ tổng /100 tự chấm; U1–U3 để CX (mục 2) | — |
 | T06 | Chưa kiểm mobile/tablet, chưa gửi lead tới nơi nhận thật | QA lại desktop/mobile/tablet bản 04/11 (mục 3). Lead: preview là pages.dev, `/api/leads` không có backend (405) — **không gửi được trên preview** | Lead test + CRM/tracking khi lên production |
-| T07 | 5 thẻ dùng tên xe thay ảnh | Giữ placeholder (reviewer chấp nhận) | Ảnh đúng dòng khi có |
+| T07 | 5 thẻ dùng tên xe thay ảnh | Thêm ảnh 5 xe (Wikimedia Commons, CC BY-SA, đã tách nền — ghi công ở 02) | — |
 | T08 | Production | — | Checklist production ở 02 |
 
 ## 2. Tự chấm bản 04/11 (trên preview, sau duyệt)

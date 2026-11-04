@@ -50,7 +50,8 @@ Toyota chưa có trang dòng xe riêng dạng `/nang-cap-anh-sang-bi-gam/toyota/
 | Tài nguyên | Đường dẫn trên preview |
 |---|---|
 | Ảnh hero (Toyota Vios 2021 lắp X-Light F10 2.0 New tại Auto365) | `hinh/hero-toyota-vios-bi-gam-x-light-f10-2-new.webp` |
-| Ảnh 15 dòng xe | `../theo-hang-xe/hinh/m-*.webp` (Yaris, Corolla Altis, Rush, Innova, Previa chưa có ảnh — hiển thị tên xe) |
+| Ảnh 15 dòng xe | `../theo-hang-xe/hinh/m-*.webp` |
+| Ảnh 5 dòng đã ngừng bán (Yaris, Corolla Altis, Rush, Innova, Previa) | `hinh/m-{yaris,corolla-altis,rush,innova,previa}.webp` — ảnh Wikimedia Commons đã tách nền, giấy phép CC BY-SA: Yaris © Ethan Llamas (CC BY-SA 4.0), Corolla Altis © WC-QHS (CC BY-SA 4.0), Rush © LuvsMG481 (CC BY-SA 4.0), Innova © Raflypradana01 (CC BY-SA 4.0), Previa © Dinkun Chen (CC BY-SA 4.0). Production: giữ ghi công tác giả theo giấy phép hoặc thay bằng ảnh có quyền dùng |
 | Ảnh "Vì sao chọn" | 3 ảnh `../hinh/case-toyota-*.webp` (Vios 2021, Hilux 2020) + 3 ảnh case trên `auto365.vn/uploads/images/news/` |
 | Logo 8 hãng đèn | Đã là URL tuyệt đối `auto365.vn/uploads/images/brand/...` |
 
