@@ -4,40 +4,54 @@
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/toyota/ |
 | Bản kiểm | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Toyota.md) |
-| Ngày tự kiểm | 03/11/2026 |
+| Ngày tự kiểm | 04/11/2026 (bản vá theo reviewer 03/11) |
 | Chuẩn | V1.9 — 12 tiêu chí C1–C3, S1–S3, G1–G3, U1–U3; ngưỡng tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Trạng thái | **Bản dựng đầu — chưa có rà soát kỹ thuật, chưa có reviewer chấm** |
+| Điểm reviewer gần nhất | 03/11/2026, SHA `a2cfcc07…`: C/S/G **77,0/85** (C 27,0 · SEO 28,5 · GEO 21,5), U1–U3 CX — **CHƯA QUA** |
+| Trạng thái | **Chưa có rà soát kỹ thuật, chưa duyệt** |
 
-## 1. Tự chấm (trên preview)
+## 1. Reviewer 03/11/2026 — xử lý 04/11/2026
 
-| Mã | Tiêu chí | Điểm | Căn cứ | Còn mở |
-|---|---|---:|---|---|
-| C1 | Chính xác và nhất quán | 9,0/10 | 22 case + 7 bài cẩm nang đèn lấy từ bài đã đăng auto365.vn; không ghi giá; title, H1, schema, FAQ khớp nhau | Box lưu ý, khối nhu cầu, FAQ hybrid chưa được rà soát kỹ thuật |
-| C2 | Đầy đủ theo vai trò | 9,4/10 | 20 dòng xe 4 nhóm, 22 case lọc theo dòng xe + hãng đèn, box lưu ý, 3 nhóm nhu cầu, 6 lý do, chi nhánh 33 tỉnh, 7 bài cẩm nang đèn, 8 FAQ, form | 5 dòng chưa có ảnh xe |
-| C3 | Tự nhiên và hữu ích | 9,3/10 | Giọng trung tính ("kỹ thuật viên", "chủ xe"), không dùng từ tuyệt đối | — |
-| S1 | Nhu cầu tìm kiếm và vai trò URL | 9,5/10 | Trang hãng giữa hub bi gầm và bài tư vấn dòng xe (02 mục 1) | — |
-| S2 | Nội dung SEO trên trang | 9,5/10 | Title 72, meta 148 ký tự, 1 H1, canonical, 6 khối schema sinh từ HTML, nội dung render sẵn trong HTML | — |
-| S3 | Liên kết và hồ sơ triển khai | 9,4/10 | 38 link auto365.vn (22 case, 7 cẩm nang đèn, 9 thẻ dòng xe) kiểm 200 ngày 03/11; hồ sơ 01–05 | Chưa có trang dòng xe riêng như VinFast |
-| G1 | Câu trả lời rõ, đủ ngữ cảnh | 9,4/10 | Box "Xe Toyota lắp bi gầm cần lưu ý gì?" trả lời thẳng; FAQ hybrid, xe đời cũ, nơi lắp, chi phí | — |
-| G2 | Lập luận phục vụ nhu cầu | 9,4/10 | 3 nhóm nhu cầu kèm "khi nào chưa cần lắp" và case đã lắp | — |
-| G3 | Nguồn và truy nguyên | 4,0/5 | Mỗi case link bài gốc có ngày; 04 lưu URL từng dòng | Chưa có người rà soát kỹ thuật đứng tên (`reviewedBy`) |
-| U1 | Cấu trúc dễ đọc | 4,5/5 | Thứ tự giống hub VinFast đã duyệt; mobile 375px không tràn ngang (kiểm 03/11) | Chưa test máy thật |
-| U2 | Hành động tiếp theo | 4,8/5 | Form `/api/leads` (`data-service="Bi gầm Toyota"`), gọi 0365 365 911, thẻ chưa có hồ sơ tự điền dòng xe | Chưa gửi lead test |
-| U3 | Bàn giao | 4,5/5 | Hồ sơ 01–05 cùng build, bản HTML + SHA | Chưa có phiếu duyệt |
-| | **Tổng** | **≈91,7/100** | SEO 28,4/30 · GEO 22,8/25 | **Chưa đạt** |
+| Mã | Vấn đề | Đã làm 04/11 | Còn mở |
+|---|---|---|---|
+| T01 | Wigo, Yaris xếp nhóm Sedan | Tách tab Hatchback (2): Wigo, Yaris; Sedan (3): Vios, Corolla Altis, Camry; SUV 8, MPV 6, Bán tải 1 — tổng 20. 01/04 xuất lại theo nhóm mới | — |
+| T02 | Thẻ "Tư vấn đúng theo từng xe" ghi "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" trong khi 05 chưa duyệt | Thay bằng câu reviewer đề xuất: "Kỹ thuật viên kiểm tra hốc đèn, cấu hình điện và đời/phiên bản xe trước khi đề xuất mẫu bi gầm, phụ kiện và phương án lắp đặt." Trang không còn tên người duyệt; schema không có `reviewedBy` | Khi có duyệt thật mới thêm byline + `lastReviewed` |
+| T03 | Địa chỉ Quảng Ninh ghi "Thành phố Quảng Ninh" trong gợi ý cơ sở | — | **Ngoài phạm vi trang:** dữ liệu lấy nguyên từ danh bạ auto365.vn/chi-nhanh; Operations sửa tại nguồn, build lại trang để đồng bộ snapshot |
+| T04 | "Thi công tại 90+ chi nhánh" / "91 điểm tiếp nhận" chưa có nguồn xác nhận phạm vi dịch vụ bi gầm | Badge hero → "90+ điểm trong hệ thống Auto365"; link → "Xem 91 điểm trong danh bạ Auto365"; ghi chú bộ tìm: "Chọn tỉnh/thành và liên hệ để Auto365 xác nhận điểm tiếp nhận bi gầm Toyota, lịch kiểm tra và phụ kiện phù hợp với xe." | Hồ sơ chuẩn dịch vụ bi gầm dùng chung (Operations) nếu muốn mở lại câu thi công |
+| T05 | Phiếu 03 ghi ≈91,7 nhưng cộng ra 92,7; cấp điểm U khi chưa kiểm | Bỏ tổng /100 tự chấm; U1–U3 để CX (mục 2) | — |
+| T06 | Chưa kiểm mobile/tablet, chưa gửi lead tới nơi nhận thật | QA lại desktop/mobile/tablet bản 04/11 (mục 3). Lead: preview là pages.dev, `/api/leads` không có backend (405) — **không gửi được trên preview** | Lead test + CRM/tracking khi lên production |
+| T07 | 5 thẻ dùng tên xe thay ảnh | Giữ placeholder (reviewer chấp nhận) | Ảnh đúng dòng khi có |
+| T08 | Production | — | Checklist production ở 02 |
 
-## 2. Việc cần để đạt
+## 2. Tự chấm bản 04/11 (trên preview)
 
-1. Anh Nguyễn Quang Đạo rà soát kỹ thuật: nhóm dòng xe, box lưu ý (hốc 2.0/3.0 inch, xe đời cũ, hybrid), khối nhu cầu, FAQ → thêm byline rà soát + `lastReviewed` (G3, C1).
-2. Test máy thật và gửi 1 lead test (U1, U2).
-3. Ghi phiếu duyệt 05 (U3).
+| Mã | Tiêu chí | Điểm | Căn cứ |
+|---|---|---:|---|
+| C1 | Chính xác và nhất quán | 9,0/10 | Đã sửa nhóm Hatchback và câu kiểm duyệt; địa chỉ Quảng Ninh chờ nguồn danh bạ; nội dung kỹ thuật chưa rà soát |
+| C2 | Đầy đủ theo vai trò | 9,2/10 | Như reviewer |
+| C3 | Tự nhiên và hữu ích | 9,5/10 | Như reviewer |
+| | **Content** | **27,7/30** | |
+| S1 | Intent và URL | 9,6/10 | Như reviewer |
+| S2 | On-page | 9,5/10 | Như reviewer |
+| S3 | Liên kết, triển khai | 9,4/10 | Như reviewer |
+| | **SEO** | **28,5/30** | |
+| G1 | Trả lời rõ | 9,3/10 | Như reviewer |
+| G2 | Lập luận, giới hạn | 9,3/10 | Claim quy mô đã thu hẹp (T04); ví dụ kỹ thuật, hybrid còn chờ rà soát |
+| G3 | Nguồn, truy nguyên | 3,5/5 | Không còn câu công khai tự nhận đã duyệt; vẫn thiếu xác nhận rà soát hiện hành |
+| | **GEO** | **22,1/25** | Dưới ngưỡng 23,75 |
+| | **Tổng C/S/G** | **78,3/85** | 27,7 + 28,5 + 22,1 |
+| U1 | Đa thiết bị | CX | Biên bản mục 3 do team kiểm; chưa test máy thật |
+| U2 | Hành động, tương tác | CX | Lọc, tìm, tự điền xe chạy; lead chưa kiểm được trên preview |
+| U3 | Bàn giao | CX | 05 chưa duyệt |
 
-## 3. Biên bản QA 03/11/2026
+Không ghi tổng /100 khi U còn CX. Để qua: rà soát kỹ thuật thật (G3, C1, G2) rồi đóng U1–U3.
+
+## 3. Biên bản QA 04/11/2026 (bản vá)
 
 | Phép thử | Kết quả |
 |---|---|
-| Desktop 1280px: hero, lưới 20 dòng xe, 22 case, vì sao chọn, cẩm nang đèn 7 bài, FAQ | Hiển thị đúng |
-| Mobile 375px | Không tràn ngang (scrollWidth = 375) |
-| Lọc case Hilux → 2 bài; thêm hãng Titan → báo trống; "Bỏ lọc" → 22 bài, focus về "Tất cả" | Đạt |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| Console | Chỉ còn lỗi CORS font remixicon của shell (giống hub VinFast) |
+| Tab Hatchback (2) / Sedan (3) / SUV (8) / MPV (6) / Bán tải (1) | Đúng thẻ, tổng 20 |
+| Thẻ "Tư vấn đúng theo từng xe" | Không còn tên người kiểm duyệt |
+| Badge hero, link danh bạ, ghi chú bộ tìm | Đúng câu T04 |
+| Desktop 1280px, tablet 768px, mobile 375px | Không tràn ngang |
+| Lọc case, Bỏ lọc, FAQ, thẻ chưa có hồ sơ tự điền xe | Chạy đúng |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage; không có `reviewedBy` |

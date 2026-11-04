@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm Toyota theo từng dòng xe: Vios, Camry, Fortuner, Innova | Auto365 |
 | Meta description (148 ký tự) | Tra cứu bi gầm Toyota theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Toyota theo từng dòng xe |
-| dateModified | 2026-11-03 |
+| dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `a2cfcc076cb2838a8c70e56101a638e5187f62c8ee1cb658e5433745c6a6a69e` |
-| SHA-256 content-src.html | `816ed44c97389dae9664efe4228cc2bb2ae0089dd93a2a0db92b32c0ec1f1f8b` |
+| SHA-256 index.html | `cd2aa567a0bd506f3c1583a4973cf1c2e7d1cccd2c5b40208799230b2590b644` |
+| SHA-256 content-src.html | `707a3bb66b1ca844d750d706246e42d0e802de8681b235ad677babcbbcbc4649` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -24,9 +24,9 @@ Bi gầm Toyota cần chọn theo hốc đèn gầm, đời xe và hệ thống 
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
-| Toyota Wigo | Sedan | Liên hệ tư vấn | — |
+| Toyota Wigo | Hatchback | Liên hệ tư vấn | — |
 | Toyota Vios | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-toyota-vios |
-| Toyota Yaris | Sedan | Liên hệ tư vấn | — |
+| Toyota Yaris | Hatchback | Liên hệ tư vấn | — |
 | Toyota Corolla Altis | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-toyota-corolla-altis |
 | Toyota Camry | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-toyota-camry |
 | Toyota Raize | SUV | Liên hệ tư vấn | — |
@@ -90,7 +90,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### Xe đô thị, chạy dịch vụ
 
-_Dòng xe:_ Wigo, Vios, Yaris, Raize, Veloz Cross, Avanza Premio
+_Dòng xe:_ Wigo, Yaris, Vios, Raize, Veloz Cross, Avanza Premio
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Xe chạy dịch vụ, đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.
@@ -137,7 +137,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang To
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `case-toyota-hilux-2020-full.webp` | Toyota Hilux 2020 lắp bi gầm AES SV 3.0 Max tại Auto365 |
 | Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `case-toyota-hilux-2020-closeup.webp` | Bi gầm AES SV 3.0 Max trên Toyota Hilux 2020 sau khi lắp |
 | Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp` | Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-hyper-20-1790928576.webp` | Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
+| Tư vấn đúng theo từng xe | Kỹ thuật viên kiểm tra hốc đèn, cấu hình điện và đời/phiên bản xe trước khi đề xuất mẫu bi gầm, phụ kiện và phương án lắp đặt. | `toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-hyper-20-1790928576.webp` | Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Toyota trên trang này.
 

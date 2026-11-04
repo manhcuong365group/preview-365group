@@ -30,10 +30,10 @@ if (branchData) {
   const order = ['Miền Bắc', 'Miền Trung & Tây Nguyên', 'Miền Nam'];
   const nProv = Object.values(by).reduce((n, o) => n + Object.keys(o).length, 0);
   const href = (p) => 'https://auto365.vn/chi-nhanh?q=' + encodeURIComponent(p) + '#workspace';
-  provinceBlock = `<div class="bgvf-prov"><a class="bgvf-prov-all" href="https://auto365.vn/chi-nhanh">Xem toàn bộ ${branchData.length} điểm tiếp nhận Auto365 →</a>
+  provinceBlock = `<div class="bgvf-prov"><a class="bgvf-prov-all" href="https://auto365.vn/chi-nhanh">Xem ${branchData.length} điểm trong danh bạ Auto365 →</a>
 <details class="bgvf-prov-d"><summary>Danh sách ${nProv} tỉnh/thành có điểm Auto365</summary>
 ${order.filter((r) => by[r]).map((r) => `<div class="bgvf-prov-g"><b>${esc(r)}</b><ul>${Object.entries(by[r]).sort((a, b) => a[0].localeCompare(b[0], 'vi')).map(([p, n]) => `<li><a href="${href(p)}">${esc(p)}</a> <span>(${n})</span></li>`).join('')}</ul></div>`).join('\n')}
-<p class="bgvf-prov-note">Số điểm theo danh bạ auto365.vn/chi-nhanh tại thời điểm cập nhật trang; nên gọi trước để xác nhận lịch tiếp nhận.</p></details></div>
+<p class="bgvf-prov-note">Số điểm theo danh bạ auto365.vn/chi-nhanh tại thời điểm cập nhật trang. Chọn tỉnh/thành và liên hệ để Auto365 xác nhận điểm tiếp nhận bi gầm Toyota, lịch kiểm tra và phụ kiện phù hợp với xe.</p></details></div>
 <style>.bgvf-prov{margin-top:16px}.bgvf-prov-all{display:inline-block;padding:6px 0;color:var(--r)!important;font-weight:600}.bgvf-prov-d{margin-top:8px;border:1px solid var(--ln);border-radius:10px;padding:10px 16px;background:#fff}.bgvf-prov-d summary{cursor:pointer;font-weight:600;padding:4px 0}.bgvf-prov-g{margin-top:10px}.bgvf-prov-g b{font-size:14px}.bgvf-prov-g ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}.bgvf-prov-g li{font-size:14px}.bgvf-prov-g a{color:var(--ink)!important;text-decoration:underline;display:inline-block;padding:3px 0}.bgvf-prov-g span{color:var(--mu);font-size:12.5px}.bgvf-prov-note{font-size:12.5px;color:var(--mu);margin:10px 0 2px}</style>`;
 }
 
@@ -71,7 +71,9 @@ const WHY_IMG = {
 };
 let why = cut('<section class="bght-sec bght-why" id="vi-sao-chon">', /\n?<\/div><\/section>/)
   .replace(/src="hinh\/([^"]+)" alt="[^"]*"/g, (m, f) => { const v = WHY_IMG[f]; if (!v) throw new Error('why img: ' + f); return `src="${v[0]}" alt="${v[1]}"`; })
-  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm Toyota?');
+  .replace('Vì sao chọn Auto365 để nâng cấp bi gầm?', 'Vì sao chọn Auto365 để nâng cấp bi gầm Toyota?')
+  // Toyota chưa có rà soát kỹ thuật: không giữ câu "do ... kiểm duyệt" của khối gốc
+  .replace('Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt.', 'Kỹ thuật viên kiểm tra hốc đèn, cấu hình điện và đời/phiên bản xe trước khi đề xuất mẫu bi gầm, phụ kiện và phương án lắp đặt.');
 // khối gốc bên theo-hang-xe dư 1 </div> (đóng luôn wrapper của trang đó) → bỏ phần dư, không thì đóng sớm .bgvf
 {
   let extra = (why.match(/<\/div>/g) || []).length - (why.match(/<div\b/g) || []).length;

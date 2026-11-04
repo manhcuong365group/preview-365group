@@ -24,7 +24,7 @@ const toProd = (href) => new URL(href, canonical + '/').href.replace(/\/$/, '');
 
 const models = [...doc.querySelectorAll('#bgvf-grid a.bgvf-m')].map((a) => ({
   name: 'Toyota ' + txt(a.querySelector('b').firstChild),
-  group: { sedan: 'Sedan', suv: 'SUV', mpv: 'MPV', pickup: 'Bán tải' }[a.dataset.g],
+  group: { hatch: 'Hatchback', sedan: 'Sedan', suv: 'SUV', mpv: 'MPV', pickup: 'Bán tải' }[a.dataset.g],
   status: a.dataset.car ? 'Liên hệ tư vấn' : 'Có hồ sơ',
   url: a.dataset.car ? '' : toProd(a.getAttribute('href')),
   img: (a.querySelector('img') || {}).getAttribute?.('src') || '',
