@@ -56,15 +56,16 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-logos div{border:1px solid var(--line);border-radius:10px;background:#fff;padding:12px;display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.04)}
 .td-logos img{height:40px;width:100%;max-width:120px;object-fit:contain}
 .td-cert{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.td-cert img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
-.td-feat+.td-feat{margin-top:20px}
-.td-feat:nth-child(even){grid-template-columns:1fr 1.2fr 1.1fr}.td-feat:nth-child(even)>img{order:3}
-.td-feat{background:var(--bg);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1.2fr 1fr}
-.td-feat>img{height:100%;object-fit:cover}.td-feat .tx{padding:26px}
-.td-feat h3{font-size:26px;color:var(--red);margin:0 0 4px}.td-feat p{color:var(--mut);margin:0 0 12px;font-size:13.5px}
-.td-feat ul{padding:0;list-style:none;margin:0 0 18px;font-size:14px}.td-feat li{margin:6px 0}.td-feat li:before{content:"✓ ";color:var(--red);font-weight:700}
-.td-ba{display:grid;gap:8px;padding:14px}.td-ba figure{margin:0;position:relative;border-radius:8px;overflow:hidden}
-.td-ba img{aspect-ratio:16/7;object-fit:cover;width:100%}.td-ba figcaption{position:absolute;top:8px;right:8px;background:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:12px}
-.td-ba .bf img{filter:brightness(.35) saturate(.6)}
+.td-sps{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.td-sp{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.05);transition:.2s}
+.td-sp:hover{box-shadow:0 10px 28px rgba(0,0,0,.1);transform:translateY(-2px)}
+.td-sp-img{position:relative;aspect-ratio:16/9;background:#111}.td-sp-img img{width:100%;height:100%;object-fit:cover}
+.td-sp-img b{position:absolute;left:16px;top:14px;background:var(--red);color:#fff;font-size:13px;padding:4px 10px;border-radius:6px}
+.td-sp-tx{padding:20px 22px 22px;display:flex;flex-direction:column;flex:1}
+.td-sp h3{font-size:21px;margin:0 0 4px}.td-sp p{color:var(--red);font-weight:600;font-size:13.5px;margin:0 0 12px}
+.td-sp ul{list-style:none;padding:0;margin:0 0 18px;font-size:14px;color:#333}.td-sp li{padding-left:22px;position:relative;margin:7px 0}
+.td-sp li:before{content:"";position:absolute;left:0;top:4px;width:14px;height:14px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27%3E%3Cpath d=%27M4 8l3 3 5-6%27 stroke=%27white%27 stroke-width=%272%27 fill=%27none%27/%3E%3C/svg%3E") center/10px no-repeat}
+.td-sp-cta{margin-top:auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}.td-sp-more{font-weight:700;font-size:14px;color:var(--ink)}.td-sp-more:hover{color:var(--red)}
 .td-cases-hd{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}.td-cases-hd .td-h2{margin:0}
 .td-flt{display:flex;gap:6px;flex-wrap:wrap}.td-flt button{border:0;background:var(--bg);padding:6px 14px;border-radius:16px;font-size:12.5px;font-weight:600;cursor:pointer}.td-flt button.on{background:var(--red);color:#fff}
 .td-cases{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
@@ -85,10 +86,9 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 .td-demo{background:#fff6d6;color:#6b5200;font-size:12.5px;text-align:center;padding:6px 16px}
 .td-hd a{white-space:nowrap}
 @media(max-width:1100px){.td-nav{display:none}.td-hd .td-btn-out{margin-left:auto}}
-@media(max-width:980px){.td-logos{grid-template-columns:repeat(5,1fr)}.td-cert{grid-template-columns:repeat(3,1fr)}.td-why figure img{aspect-ratio:16/9;width:100%}.td-feat:nth-child(even){grid-template-columns:1fr}.td-feat:nth-child(even)>img{order:0}
-.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
-.td-why,.td-part,.td-bot{grid-template-columns:1fr}.td-feat{grid-template-columns:1fr}.td-feat>img{aspect-ratio:16/8}.td-cases{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.td-hero:before{background:rgba(8,10,16,.72)}.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
+@media(max-width:980px){.td-logos{grid-template-columns:repeat(5,1fr)}.td-cert{grid-template-columns:repeat(3,1fr)}.td-why figure img{aspect-ratio:16/9;width:100%}.td-svc{grid-template-columns:repeat(3,1fr)}.td-stats{grid-template-columns:repeat(3,1fr);row-gap:12px}.td-stats div:nth-child(3){border:0}
+.td-why,.td-part,.td-bot{grid-template-columns:1fr}.td-cases{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.td-sps{grid-template-columns:1fr}.td-hero:before{background:rgba(8,10,16,.72)}.td-hd .td-wrap{gap:10px}.td-hd .td-btn-out{display:none}.td-hero .td-wrap{padding:36px 16px 90px}.td-hero h1{font-size:28px}
 .td-stats{grid-template-columns:1fr 1fr;margin:-56px 16px 0}.td-stats div{border:0}.td-svc{grid-template-columns:1fr 1fr}.td-why ul{grid-template-columns:1fr}
 .td-logos{grid-template-columns:repeat(3,1fr)}.td-cases{grid-template-columns:1fr 1fr}.td-rev{flex-direction:column}.td-book form{grid-template-columns:1fr}.td-h2c{font-size:22px}}
 </style>
@@ -158,37 +158,31 @@ a{color:inherit;text-decoration:none}img{max-width:100%;display:block}
 <section class="td-sec" id="hang-muc">
   <div class="td-kick">SẢN PHẨM CHỦ ĐẠO</div>
   <h2 class="td-h2c">4 nhóm sản phẩm chủ đạo tại Trụ sở chính</h2>
-
-  <div class="td-feat" id="sp-den">
-    <img src="hinh/den.webp" alt="Nâng cấp đèn ô tô tại Auto365" loading="lazy">
-    <div class="tx"><h3>Nâng cấp đèn ô tô</h3><p>Tăng tầm nhìn · An toàn hơn · Trải nghiệm lái tốt hơn</p>
-      <ul><li>Đa dạng giải pháp: Bi LED, Bi Laser, LED, bi gầm…</li><li>Cân chỉnh ánh sáng chuẩn trên bảng test, không gây chói</li><li>Phù hợp nhiều dòng xe, bảo hành chính hãng</li></ul>
-      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn giải pháp đèn →</a></div>
-    <div class="td-ba"><figure class="bf"><img src="hinh/test.webp" alt="Trước nâng cấp đèn" loading="lazy"><figcaption>Trước nâng cấp</figcaption></figure><figure><img src="hinh/test.webp" alt="Sau nâng cấp đèn" loading="lazy"><figcaption>Sau nâng cấp</figcaption></figure></div>
-  </div>
-
-  <div class="td-feat" id="sp-phim">
-    <img src="hinh/khu-thi-cong-3m-pro-shop.webp" alt="Khu thi công phim cách nhiệt tại 3M Pro Shop Auto365 Trụ sở chính" loading="lazy">
-    <div class="tx"><h3>Phim cách nhiệt ô tô</h3><p>Giảm nóng · Cản tia UV · Riêng tư trong cabin</p>
-      <ul><li>Phim 3M chính hãng: Crystalline, Ceramic Hybrid, Ceramic NR/IR</li><li>Chọn mã phim theo từng vị trí kính và nhu cầu sử dụng</li><li>Bảo hành điện tử, tra cứu trên toàn hệ thống</li></ul>
-      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn chọn phim →</a></div>
-    <div class="td-ba"><figure><img src="hinh/c2.webp" alt="Xe dán phim cách nhiệt" loading="lazy"><figcaption>Xe hoàn thiện</figcaption></figure><figure><img src="hinh/phim2.webp" alt="Thi công phim cách nhiệt" loading="lazy"><figcaption>Thi công thực tế</figcaption></figure></div>
-  </div>
-
-  <div class="td-feat" id="sp-ppf">
-    <img src="hinh/ppf.webp" alt="Dán PPF bảo vệ sơn tại Auto365" loading="lazy">
-    <div class="tx"><h3>PPF / Wrap đổi màu</h3><p>Bảo vệ sơn zin · Giữ độ bóng · Đổi phong cách xe</p>
-      <ul><li>PPF trong suốt bảo vệ sơn khỏi trầy xước, đá văng</li><li>Wrap đổi màu theo sở thích, không ảnh hưởng sơn gốc</li><li>Căn chỉnh mép phim tỉ mỉ trong phòng thi công kín</li></ul>
-      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn PPF / Wrap →</a></div>
-    <div class="td-ba"><figure><img src="hinh/ppf2.webp" alt="Căn chỉnh mép PPF" loading="lazy"><figcaption>Căn mép phim</figcaption></figure><figure><img src="hinh/c3.webp" alt="Xe sau khi dán PPF" loading="lazy"><figcaption>Xe hoàn thiện</figcaption></figure></div>
-  </div>
-
-  <div class="td-feat" id="sp-camera">
-    <img src="hinh/camera.webp" alt="Camera hành trình tại Auto365" loading="lazy">
-    <div class="tx"><h3>Camera hành trình</h3><p>Ghi hình rõ nét · Lưu bằng chứng · Yên tâm mỗi chuyến đi</p>
-      <ul><li>Camera 70mai và nhiều thương hiệu chính hãng</li><li>Đi dây ẩn gọn, không ảnh hưởng thẩm mỹ cabin</li><li>Hướng dẫn kết nối app, xem lại video trên điện thoại</li></ul>
-      <a class="td-btn td-btn-red" href="#dat-lich">Tư vấn chọn camera →</a></div>
-    <div class="td-ba"><figure><img src="hinh/camera2.webp" alt="Camera hành trình 70mai" loading="lazy"><figcaption>Sản phẩm</figcaption></figure><figure><img src="hinh/c5.webp" alt="Xe lắp camera hành trình" loading="lazy"><figcaption>Lắp đặt thực tế</figcaption></figure></div>
+  <div class="td-sps">
+    <article class="td-sp" id="sp-den">
+      <div class="td-sp-img"><img src="hinh/test.webp" alt="Cân chỉnh đèn trên bảng test tại Auto365 Trụ sở chính" loading="lazy"><b>01</b></div>
+      <div class="td-sp-tx"><h3>Nâng cấp đèn ô tô</h3><p>Tăng tầm nhìn, an toàn hơn khi lái đêm</p>
+        <ul><li>Bi LED, Bi Laser, bi gầm X-Light, GTR, AES</li><li>Cân chỉnh vệt sáng trên bảng test, không gây chói</li><li>Tư vấn theo từng dòng xe, bảo hành chính hãng</li></ul>
+        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/nang-cap-anh-sang">Xem chi tiết →</a></div></div>
+    </article>
+    <article class="td-sp" id="sp-phim">
+      <div class="td-sp-img"><img src="hinh/khu-thi-cong-3m-pro-shop.webp" alt="Khu thi công phim cách nhiệt 3M Pro Shop tại Auto365 Trụ sở chính" loading="lazy"><b>02</b></div>
+      <div class="td-sp-tx"><h3>Phim cách nhiệt 3M</h3><p>Giảm nóng, cản UV, riêng tư trong cabin</p>
+        <ul><li>3M Crystalline, Ceramic Hybrid, Ceramic NR/IR</li><li>Chọn mã phim theo từng vị trí kính</li><li>Bảo hành điện tử, tra cứu toàn hệ thống</li></ul>
+        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/phim-cach-nhiet">Xem chi tiết →</a></div></div>
+    </article>
+    <article class="td-sp" id="sp-ppf">
+      <div class="td-sp-img"><img src="hinh/ppf.webp" alt="Xe hoàn thiện dán PPF 3M tại Auto365" loading="lazy"><b>03</b></div>
+      <div class="td-sp-tx"><h3>PPF / Wrap đổi màu</h3><p>Bảo vệ sơn zin, đổi phong cách xe</p>
+        <ul><li>PPF trong suốt chống trầy xước, đá văng</li><li>Wrap đổi màu không ảnh hưởng sơn gốc</li><li>Thi công trong phòng kín, căn mép tỉ mỉ</li></ul>
+        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/ppf-o-to">Xem chi tiết →</a></div></div>
+    </article>
+    <article class="td-sp" id="sp-camera">
+      <div class="td-sp-img"><img src="hinh/camera.webp" alt="Camera hành trình 70mai lắp tại Auto365" loading="lazy"><b>04</b></div>
+      <div class="td-sp-tx"><h3>Camera hành trình</h3><p>Ghi hình rõ nét, lưu bằng chứng mỗi chuyến đi</p>
+        <ul><li>70mai, Vietmap và nhiều thương hiệu chính hãng</li><li>Đi dây ẩn gọn, không ảnh hưởng thẩm mỹ cabin</li><li>Hướng dẫn kết nối app, xem video trên điện thoại</li></ul>
+        <div class="td-sp-cta"><a class="td-btn td-btn-red" href="#dat-lich">Tư vấn ngay</a><a class="td-sp-more" href="https://auto365.vn/camera-hanh-trinh-o-to-70mai">Xem chi tiết →</a></div></div>
+    </article>
   </div>
 </section>
 
