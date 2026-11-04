@@ -24,3 +24,7 @@
 - Danh bạ chi nhánh (rating, link Maps): sửa tại trang /chi-nhanh.
 - Lead test, CRM/tracking: chỉ kiểm được trên production (preview không có backend).
 - Các bước khi lên production (robots/index, canonical thực tế, cấu hình máy chủ, GSC/CWV): theo quy trình triển khai riêng của IT.
+
+## Phiếu nghiệm thu U3 V1.9 — PASS · ĐÃ DUYỆT 04/11/2026
+
+Đóng U1/U2/U3 và T01–T04 trong phạm vi bản demo Toyota ngày 04/11/2026. Bản PDF: [PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ.

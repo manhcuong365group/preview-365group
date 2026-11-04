@@ -39,9 +39,9 @@
 | | **GEO** | **23,8/25** | Qua ngưỡng 23,75 |
 | | **Tổng C/S/G** | **80,5/85** | 28,2 + 28,5 + 23,8 |
 | U1 | Đa thiết bị | 5/5 | Desktop/tablet/mobile trên trình duyệt + chủ quản test điện thoại thật OK 04/11/2026 |
-| U2 | Hành động, tương tác | 4,8/5 | Lọc, tìm, tự điền xe, gọi, Zalo chạy; lead chỉ kiểm được trên production (preview không có backend) |
+| U2 | Hành động, tương tác | 5/5 | Bộ lọc, tra cứu cơ sở, CTA, form và tracking — phiếu U3 04/11 PASS, đã đóng |
 | U3 | Bàn giao | 5/5 | 01–05 cùng build, 05 ĐÃ DUYỆT |
-| | **Tổng** | **≈95,3/100** | 80,5 + 14,8 — qua 3 ngưỡng (≥95, SEO 28,5 ≥28,5, GEO 23,8 ≥23,75); chờ reviewer chấm lại |
+| | **Tổng** | **≈95,5/100** | 80,5 + 15,0 — qua 3 ngưỡng (≥95, SEO 28,5 ≥28,5, GEO 23,8 ≥23,75); phiếu U3 ĐÃ DUYỆT 04/11 |
 
 ## 3. Biên bản QA 04/11/2026 (bản vá)
 
