@@ -11,8 +11,8 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-04 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `97e4bd2f92de4bfb49ca5c0901f763cb962eefa81da9b181dbebd5265fa07200` |
-| SHA-256 content-src.html | `e0787800f73937cf3917e1211ee0b1b9442758669726e6356f484b86afa2870d` |
+| SHA-256 index.html | `17a4c12204c7b430b576d56f654da8fceeb915a0c1ce0bb632c284da2843e0b9` |
+| SHA-256 content-src.html | `e74448f2afcd40a0c3165243f499f363e7993a9af3f083176aff959abfc4f281` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -145,12 +145,13 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang To
 
 Đến trụ sở chính hoặc chi nhánh gần bạn để kỹ thuật viên kiểm tra xe và tư vấn cấu hình. Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group, là điểm tư vấn, lắp đặt và hỗ trợ bảo hành các dòng đèn X-Light, GTR, AES, Titan, Henvvei, Red Lighting, Matrix Light và Fogway theo nhu cầu sử dụng thực tế của từng xe.
 
-## Cẩm nang (7)
+## Cẩm nang (8)
 
 | Bài | Nhãn | Ngày đăng |
 |---|---|---|
 | [Fortuner đèn yếu: nâng đèn chính hay bi gầm? Giá tham khảo](https://auto365.vn/fortuner-den-yeu-nen-nang-den-chinh-hay-bi-gam) | Đèn chính hay bi gầm | 2026-10-16 |
 | [Đèn gầm ô tô giảm sáng khi chạy lâu: Có do tản nhiệt?](https://auto365.vn/den-gam-o-to-giam-sang-sau-khi-chay-lau) | Tản nhiệt | 2026-09-05 |
+| [Hai bên đèn ô tô sáng không đều: Nguyên nhân, cách kiểm tra](https://auto365.vn/hai-ben-den-o-to-sang-khong-deu) | Kiểm tra | 2026-08-31 |
 | [Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra](https://auto365.vn/den-gam-o-to-sang-yeu) | Kiểm tra | 2026-08-22 |
 | [AES SV 3.0 Pro 4800K phù hợp với nhóm tài xế nào?](https://auto365.vn/bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao) | Chọn mẫu đèn | 2026-08-18 |
 | [Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?](https://auto365.vn/hoc-den-gam-nho-nen-chon-bi-gam-nao) | Hốc đèn | 2026-08-14 |

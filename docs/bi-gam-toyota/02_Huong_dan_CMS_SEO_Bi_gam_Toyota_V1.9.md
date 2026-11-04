@@ -76,7 +76,7 @@ Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu s�
 | Sapo | Viết theo khung VinFast; liệt kê hãng đèn có trong tập case (X-Light, GTR, AES, Titan) | Sửa trong source |
 | 20 dòng xe (Hatchback 2 · Sedan 3 · SUV 8 · MPV 6 · Bán tải 1 — Wigo, Yaris là hatchback theo toyota.com.vn) | Dải Toyota ở trang theo-hang-xe (LINEUP) | Mảng `M` |
 | Bài hồ sơ (22) | Toàn bộ case Toyota trong dữ liệu trang theo-hang-xe (bài đã đăng auto365.vn), kiểm 200 ngày 03/11/2026 | Mảng `C` |
-| Cẩm nang đèn bi gầm (7) | Bài kiến thức chung về đèn (đèn chính hay bi gầm, sáng yếu, giảm sáng do tản nhiệt, hốc 2.0 inch, đi mưa, chọn mẫu); không lặp 6 bài tư vấn dòng xe vì đã gắn ở thẻ dòng xe | Mảng `G` |
+| Cẩm nang đèn bi gầm (8) | Bài kiến thức chung về đèn (đèn chính hay bi gầm, sáng yếu, hai bên sáng không đều, giảm sáng do tản nhiệt, hốc 2.0 inch, đi mưa, chọn mẫu); không lặp 6 bài tư vấn dòng xe vì đã gắn ở thẻ dòng xe | Mảng `G` |
 | Box lưu ý | Hốc 2.0/3.0 inch (ví dụ từ case Vios 2021, Fortuner, Camry, Innova Cross); nguồn điện xe đời cũ và bản hybrid | **Chờ rà soát kỹ thuật** |
 | Chọn theo nhu cầu (3 nhóm) | Đô thị/dịch vụ · gia đình/đi tỉnh · SUV/bán tải, mỗi nhóm 3 case thật | **Chờ rà soát kỹ thuật** |
 | Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service`/`data-source-page` = "Bi gầm Toyota". | Tự đồng bộ |
