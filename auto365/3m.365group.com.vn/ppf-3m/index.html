@@ -330,6 +330,16 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
 @media(max-width:768px){.pf-pkg__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:420px){.pf-pkg__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .pf-pkg__card{border-color:#e3e5e8}.pf-pkg__card:hover{border-color:var(--m3-red)}
+.pf-pkg{align-items:stretch}.pf-pkg>div:first-child{display:flex;flex-direction:column}.pf-pkg__grid{flex:1}
+.pf-lead{display:flex!important;flex-direction:column;padding:16px;background:#fff;border:1px solid #e3e5e8;border-radius:10px}.pf-lead__t{font-size:17px;margin:0 0 12px}.pf-lead__f{flex:1;display:flex}
+.pf-form{flex:1;gap:8px!important;margin:0}
+.pf-form select,.pf-form input[type=text],.pf-form input[type=tel]{height:40px;padding:0 12px!important;font-size:14px!important;font-weight:400;color:var(--m3-ink);border:1px solid #d9dce1!important;border-radius:6px!important;background-color:#fff;margin:0;line-height:38px}
+.pf-form select{-webkit-appearance:none;appearance:none;padding-right:34px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23555' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.pf-form input::placeholder{color:#8a9099}
+.pf-form__row{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pf-form .m3-lead__consent{display:flex;gap:8px;align-items:flex-start;font-size:12px;line-height:1.45;color:var(--m3-mute);margin:2px 0}.pf-form .m3-lead__consent input{margin:2px 0 0;flex:none}
+.pf-form .m3-btn{height:42px;margin-top:auto}.pf-form .m3-lead__msg:empty{display:none}
+@media(max-width:1024px){.pf-pkg>div:first-child{display:block}}
 
 </style>
 </head>
@@ -422,8 +432,7 @@ details.m3-gloss[open]>.m3-gloss__s{margin-bottom:10px}details.m3-gloss[open]>.m
       <select name="brand" aria-label="Hãng xe"><option value="">Chọn hãng xe</option><option>Toyota</option><option>Honda</option><option>Mazda</option><option>Hyundai</option><option>Kia</option><option>Ford</option><option>Mitsubishi</option><option>VinFast</option><option>Mercedes-Benz</option><option>BMW</option><option>Lexus</option><option>Porsche</option><option>Khác</option></select>
       <input type="text" name="vehicle" aria-label="Dòng xe" placeholder="Dòng xe (VD: Camry 2024)">
       <select name="service" aria-label="Dòng PPF"><option value="PPF 3M – chưa chọn">Chọn dòng PPF</option><option>3M PPF 50 Gloss</option><option>3M PPF 100 Gloss</option><option>3M PPF 150 Gloss</option><option>Scotchgard PPF Pro Series 200 Gloss</option><option>Vị trí dễ hao mòn</option><option>Một phần</option><option>Toàn bộ mặt trước</option><option>Toàn bộ xe</option></select>
-      <input type="tel" name="phone" inputmode="tel" autocomplete="tel" aria-label="Số điện thoại" placeholder="Số điện thoại *" required aria-describedby="m3-lead-msg">
-      <input type="text" name="province" autocomplete="address-level1" aria-label="Tỉnh/thành" placeholder="Tỉnh/thành *" required>
+      <div class="pf-form__row"><input type="tel" name="phone" inputmode="tel" autocomplete="tel" aria-label="Số điện thoại" placeholder="Số điện thoại *" required aria-describedby="m3-lead-msg"><input type="text" name="province" autocomplete="address-level1" aria-label="Tỉnh/thành" placeholder="Tỉnh/thành *" required></div>
       <label class="m3-lead__consent"><input type="checkbox" name="consent" value="1" required> Đồng ý để 365 Group - 3M Authorized Distributor in Vietnam và đại lý 3M liên hệ tư vấn.</label>
       <input type="hidden" name="source_page" value="Phim bảo vệ sơn 3M PPF – 365Group">
       <button class="m3-btn m3-btn--red" type="submit">Nhận tư vấn &amp; báo giá →</button>
