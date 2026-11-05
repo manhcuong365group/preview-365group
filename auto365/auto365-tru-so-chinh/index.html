@@ -241,6 +241,19 @@ button.td-btn-ghost{background:none;font-family:inherit}button.td-btn{font-famil
 .td-lead-msg{margin:0;font-size:12.5px;opacity:.85}.td-lead-msg.err{color:#ffd2d4}.td-pop .td-lead-msg.err{color:var(--red)}
 .td-book .td-lead label span{color:#fff}
 @media(min-width:900px){.td-cta-band{flex-wrap:nowrap}.td-cta-band>div:first-child{flex:1 1 auto;min-width:0}.td-cta-act{flex:0 0 auto}}
+.td-pop-tv{max-width:920px!important;width:calc(100% - 24px)!important;padding:0!important;overflow:hidden}
+.td-tv{display:grid;grid-template-columns:300px minmax(0,1fr)}
+.td-tv-l{background:#f6f7f9;padding:28px 24px;border-right:1px solid var(--line)}.td-tv-l>small{color:var(--red);font-weight:800;letter-spacing:.8px;font-size:12px}.td-tv-l h3{font-size:24px;margin:8px 0 8px}.td-tv-l>p{color:var(--mut);font-size:14px;margin:0 0 14px}
+.td-tv-l ul{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:10px;font-size:13.5px}.td-tv-l li{display:flex;align-items:center;gap:10px}.td-tv-l li svg{width:26px;height:26px;padding:5px;border-radius:50%;background:#fff;color:#1a7f37;flex:none}
+.td-tv-hl{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-top:10px}.td-tv-hl.on{border-color:var(--red)}.td-tv-hl i{width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;flex:none;font-style:normal}.td-tv-hl i svg{width:18px;height:18px}.td-tv-hl i.z{background:#0068ff;border-radius:8px;font-size:11px;font-weight:800}.td-tv-hl small{display:block;color:var(--mut);font-size:12px}.td-tv-hl b{color:var(--red);font-size:18px}
+.td-tv-r{padding:64px 28px 28px;grid-template-columns:1fr 1fr;align-content:start;column-gap:14px;row-gap:14px}
+.td-tv-r em{position:relative;display:block;font-style:normal}.td-tv-r em svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--mut);pointer-events:none}.td-tv-r em input,.td-tv-r em select{padding-left:40px;height:46px}
+.td-tv-r button,.td-tv-r .td-lead-msg{grid-column:1/-1}.td-tv-r button{height:46px;gap:8px}.td-tv-r button svg{width:17px;height:17px}.td-tv-r .td-lead-msg{display:flex;align-items:center;gap:8px;color:var(--mut)}.td-tv-r .td-lead-msg svg{width:18px;height:18px;color:#1a7f37}
+.td-pop-tv .td-pop-x{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:22px;line-height:1;top:14px;right:14px;z-index:2}
+@media(max-width:760px){.td-tv{grid-template-columns:minmax(0,1fr)}.td-tv-l{border-right:0;border-bottom:1px solid var(--line);padding:22px 18px}.td-tv-l ul,.td-tv-l>p{display:none}.td-tv-hl{display:none}.td-tv-r{padding:18px;grid-template-columns:minmax(0,1fr)}}
+.td-tv-card{border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.06);background:#fff;margin-bottom:40px}.td-tv-card .td-tv-r{padding:32px 28px}
+.td-tv-g{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0 0 14px}.td-tv-g>b{font-size:28px;line-height:1}.td-tv-g em{display:block;font-style:normal;color:#f5a623;letter-spacing:1px;font-size:13px}.td-tv-g small{color:var(--mut);font-size:12px}
+@media(max-width:760px){.td-tv-card .td-tv-l ul,.td-tv-card .td-tv-l>p{display:block}.td-tv-card .td-tv-l ul{display:grid}.td-tv-card .td-tv-hl{display:flex}.td-tv-card .td-tv-r{padding:20px 16px}}
 </style>
 </head>
 <body>
@@ -469,20 +482,30 @@ button.td-btn-ghost{background:none;font-family:inherit}button.td-btn{font-famil
   <details><summary>Xe điện VinFast có dán phim, PPF, độ đèn ở Thủ Đức được không?</summary><p>Được. Trụ sở chính nhận dán phim cách nhiệt, PPF, wrap đổi màu, nâng cấp ánh sáng và lắp camera cho VinFast và các dòng xe điện khác. Sản phẩm được chọn theo cấu hình, phiên bản và khả năng tương thích của từng mẫu xe; phương án cấp điện được kiểm tra để hạn chế can thiệp vào hệ thống nguyên bản.</p></details>
 </section>
 
-<section class="td-bot" id="dat-lich">
-  <div><h2 class="td-h2">Đánh giá từ khách hàng</h2>
-    <div class="td-rev"><a class="td-g" href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener"><b>Google</b><div class="st">★★★★★</div><b>5,0</b>/5<br><small>10 đánh giá · 3M Pro Shop – Trụ Sở Chính</small></a></div></div>
-  <div class="td-book"><h3>Gửi yêu cầu tư vấn – Auto365 Trụ Sở Chính</h3><p class="td-book-sub">Chỉ cần số điện thoại, kỹ thuật viên sẽ gọi lại tư vấn theo dòng xe. Cần gấp: gọi <a href="tel:0365365365">0365 365 365</a> (phim, PPF) hoặc <a href="tel:0365365911">0365 365 911</a> (đèn, camera).</p>
-    <form class="td-lead" action="/api/leads" method="post" novalidate data-source-page="Form cuối trang – Trụ sở chính">
-    <label><span>Số điện thoại <b>*</b></span><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="0xxx xxx xxx" required></label>
-    <label><span>Họ tên <i>(không bắt buộc)</i></span><input type="text" name="fullname" autocomplete="name" placeholder="VD: Anh Minh"></label>
-    <label><span>Nhu cầu tư vấn</span><select name="priority"><option value="">Chọn nhu cầu</option><option>Phim cách nhiệt</option><option>PPF / Dán đổi màu</option><option value="Đèn – Bi LED">Đèn – Bi gầm, Bi LED</option><option>Camera hành trình</option><option>Nội thất da</option><option>Giải pháp xe điện</option><option>Phụ kiện</option></select></label>
-    <label><span>Khu vực</span><input type="text" name="province" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh" value="TP. Hồ Chí Minh"></label>
-    <label><span>Dòng xe <i>(không bắt buộc)</i></span><input type="text" name="car_model" placeholder="VD: Mazda CX-5"></label>
-    <div class="td-honey" aria-hidden="true"><input type="text" name="form-honey" tabindex="-1" autocomplete="off"></div>
-    <button class="td-btn td-btn-red" type="submit">Gọi lại cho tôi →</button>
-    <p class="td-lead-msg" role="status" aria-live="polite">Chỉ cần số điện thoại.</p>
-  </form></div>
+<section class="td-sec" id="dat-lich">
+  <div class="td-tv-card">
+  <div class="td-tv">
+    <aside class="td-tv-l">
+      <small>AUTO365 TRỤ SỞ CHÍNH</small>
+      <h3>Gửi yêu cầu tư vấn</h3>
+      <a class="td-tv-g" href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener"><b>5,0</b><span><em>★★★★★</em><small>10 đánh giá Google · 3M Pro Shop – Trụ Sở Chính</small></span></a>
+      <p>Để lại số, kỹ thuật viên gọi lại tư vấn giải pháp và báo giá theo đúng xe của bạn.</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Tư vấn và kiểm tra xe miễn phí</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14M5 12h10M5 17h7"/></svg>Báo giá rõ theo dòng xe</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>4/4/1/7 Đường số 3, P. Hiệp Bình, Thủ Đức</li></ul>
+      <a class="td-tv-hl on" href="tel:0365365365"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 005 5l1.3-2 4 1.6V17a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg></i><span><small>Phim cách nhiệt, PPF &amp; Wrap</small><b>0365 365 365</b></span></a>
+      <a class="td-tv-hl" href="tel:0365365911"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 005 5l1.3-2 4 1.6V17a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg></i><span><small>Đèn, camera &amp; phụ kiện</small><b>0365 365 911</b></span></a>
+      <a class="td-tv-hl" href="https://zalo.me/0365365365" target="_blank" rel="noopener"><i class="z">Zalo</i><span><small>Zalo Trụ sở chính</small><b>0365 365 365</b></span></a>
+    </aside>
+    <form class="td-lead td-tv-r" action="/api/leads" method="post" novalidate data-source-page="Form cuối trang – Trụ sở chính">
+      <label><span>Số điện thoại <b>*</b></span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 005 5l1.3-2 4 1.6V17a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="0xxx xxx xxx" required></em></label>
+      <label><span>Họ tên <i>(không bắt buộc)</i></span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20a7.2 7.2 0 0114.4 0"/></svg><input type="text" name="fullname" autocomplete="name" placeholder="VD: Anh Minh"></em></label>
+      <label><span>Nhu cầu tư vấn</span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg><select name="priority"><option value="">Chọn nhu cầu</option><option>Phim cách nhiệt</option><option>PPF / Dán đổi màu</option><option value="Đèn – Bi LED">Đèn – Bi gầm, Bi LED</option><option>Camera hành trình</option><option>Nội thất da</option><option>Giải pháp xe điện</option><option>Phụ kiện</option></select></em></label>
+      <label><span>Khu vực</span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><input type="text" name="province" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh"></em></label>
+      <div class="td-honey" aria-hidden="true"><input type="text" name="form-honey" tabindex="-1" autocomplete="off"></div>
+      <button class="td-btn td-btn-red" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3L10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5z"/></svg> Gọi lại cho tôi</button>
+      <p class="td-lead-msg" role="status" aria-live="polite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg> Chỉ cần số điện thoại.</p>
+    </form>
+  </div>
+  </div>
 </section>
 </main>
 <footer class="td-ft">© Auto365 – 365Group · Trụ sở chính: 4/4/1/7 Đường số 3, Khu phố 31, P. Hiệp Bình, TP.HCM · Phim/PPF <a href="tel:0365365365">0365 365 365</a> · Đèn/Camera <a href="tel:0365365911">0365 365 911</a></footer>
@@ -499,23 +522,31 @@ st.lim=8;pick("c",document.querySelector("[data-g=c] button.on"));document.query
 ["c","f","b"].forEach(bind)})();
 document.querySelectorAll(".td-vid").forEach(b=>b.onclick=()=>{const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=b.getAttribute("aria-label");b.replaceWith(f);f.className="td-vid"});
 </script>
-<dialog class="td-pop td-pop-tv" id="pop-tu-van" aria-label="Gửi yêu cầu tư vấn">
+<dialog class="td-pop td-pop-tv" id="pop-tu-van" aria-label="Nhận tư vấn miễn phí">
   <button type="button" class="td-pop-x" aria-label="Đóng">×</button>
-  <h3 class="td-pop-h">Nhận tư vấn từ Auto365 Trụ sở chính</h3>
-  <p class="td-pop-sub">Để lại số điện thoại, kỹ thuật viên sẽ gọi lại tư vấn theo dòng xe. Cần gấp: <a href="tel:0365365365">0365 365 365</a> (phim, PPF) · <a href="tel:0365365911">0365 365 911</a> (đèn, camera).</p>
-  <form class="td-lead" action="/api/leads" method="post" novalidate data-source-page="Popup tư vấn – Trụ sở chính">
-    <label><span>Số điện thoại <b>*</b></span><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="0xxx xxx xxx" required></label>
-    <label><span>Họ tên <i>(không bắt buộc)</i></span><input type="text" name="fullname" autocomplete="name" placeholder="VD: Anh Minh"></label>
-    <label><span>Nhu cầu tư vấn</span><select name="priority"><option value="">Chọn nhu cầu</option><option>Phim cách nhiệt</option><option>PPF / Dán đổi màu</option><option value="Đèn – Bi LED">Đèn – Bi gầm, Bi LED</option><option>Camera hành trình</option><option>Nội thất da</option><option>Giải pháp xe điện</option><option>Phụ kiện</option></select></label>
-    <label><span>Khu vực</span><input type="text" name="province" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh" value="TP. Hồ Chí Minh"></label>
-    <label><span>Dòng xe <i>(không bắt buộc)</i></span><input type="text" name="car_model" placeholder="VD: Mazda CX-5"></label>
-    <div class="td-honey" aria-hidden="true"><input type="text" name="form-honey" tabindex="-1" autocomplete="off"></div>
-    <button class="td-btn td-btn-red" type="submit">Gọi lại cho tôi →</button>
-    <p class="td-lead-msg" role="status" aria-live="polite">Chỉ cần số điện thoại.</p>
-  </form>
+  <div class="td-tv">
+    <aside class="td-tv-l">
+      <small>AUTO365 TRỤ SỞ CHÍNH</small>
+      <h3>Nhận tư vấn miễn phí</h3>
+      <p>Để lại số, kỹ thuật viên gọi lại tư vấn giải pháp và báo giá theo đúng xe của bạn.</p>
+      <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Tư vấn và kiểm tra xe miễn phí</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14M5 12h10M5 17h7"/></svg>Báo giá rõ theo dòng xe</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>4/4/1/7 Đường số 3, P. Hiệp Bình, Thủ Đức</li></ul>
+      <a class="td-tv-hl on" href="tel:0365365365"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 005 5l1.3-2 4 1.6V17a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg></i><span><small>Phim cách nhiệt, PPF &amp; Wrap</small><b>0365 365 365</b></span></a>
+      <a class="td-tv-hl" href="tel:0365365911"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 005 5l1.3-2 4 1.6V17a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg></i><span><small>Đèn, camera &amp; phụ kiện</small><b>0365 365 911</b></span></a>
+      <a class="td-tv-hl" href="https://zalo.me/0365365365" target="_blank" rel="noopener"><i class="z">Zalo</i><span><small>Zalo Trụ sở chính</small><b>0365 365 365</b></span></a>
+    </aside>
+    <form class="td-lead td-tv-r" action="/api/leads" method="post" novalidate data-source-page="Popup tư vấn – Trụ sở chính">
+      <label><span>Số điện thoại <b>*</b></span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.2l1.6 4-2 1.3a11 11 0 005 5l1.3-2 4 1.6V17a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg><input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="0xxx xxx xxx" required></em></label>
+      <label><span>Họ tên <i>(không bắt buộc)</i></span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20a7.2 7.2 0 0114.4 0"/></svg><input type="text" name="fullname" autocomplete="name" placeholder="VD: Anh Minh"></em></label>
+      <label><span>Nhu cầu tư vấn</span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 005.4-5.4l-2.5 2.5-2.5-.5-.5-2.5z"/></svg><select name="priority"><option value="">Chọn nhu cầu</option><option>Phim cách nhiệt</option><option>PPF / Dán đổi màu</option><option value="Đèn – Bi LED">Đèn – Bi gầm, Bi LED</option><option>Camera hành trình</option><option>Nội thất da</option><option>Giải pháp xe điện</option><option>Phụ kiện</option></select></em></label>
+      <label><span>Khu vực</span><em><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><input type="text" name="province" autocomplete="address-level1" placeholder="VD: TP. Hồ Chí Minh"></em></label>
+      <div class="td-honey" aria-hidden="true"><input type="text" name="form-honey" tabindex="-1" autocomplete="off"></div>
+      <button class="td-btn td-btn-red" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3L10.5 13.5M21 3l-6.5 18-4-7.5L3 9.5z"/></svg> Gọi lại cho tôi</button>
+      <p class="td-lead-msg" role="status" aria-live="polite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg> Chỉ cần số điện thoại.</p>
+    </form>
+  </div>
 </dialog>
 <nav class="td-sticky" aria-label="Liên hệ nhanh"><a href="tel:0365365365">☎ Gọi</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo</a><a href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></nav>
-<script>document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>{const s=document.querySelector(".td-book select");if(!s)return;[...s.options].forEach(o=>{if(o.text.indexOf(a.dataset.svc.split(" ")[0])>-1)s.value=o.value||o.text})}));</script>
+<script>document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>{const s=document.querySelector("#dat-lich select");if(!s)return;[...s.options].forEach(o=>{if(o.text.indexOf(a.dataset.svc.split(" ")[0])>-1)s.value=o.value||o.text})}));</script>
 <script>(function(){
 const S={phim:{t:"Phim cách nhiệt 3M",d:"Giảm nóng, cản UV, chọn độ sáng kính theo nhu cầu đi phố hay đi đêm.",p:["3M Crystalline CR BLK / CR BLK Pro","3M Crystalline Hybrid","3M Ceramic NR / IR"],u:"https://auto365.vn/phim-cach-nhiet",tel:"0365365365",sel:"Phim cách nhiệt"},
 ppf:{t:"PPF / Wrap đổi màu",d:"Bảo vệ sơn khỏi trầy xước, đá văng; hoặc đổi màu mà vẫn giữ lớp sơn gốc.",p:["PPF 3M (50 / 150 / 200 Gloss)","AX Film","Wrap đổi màu"],u:"https://auto365.vn/ppfwrap-film",tel:"0365365365",sel:"PPF / Wrap đổi màu"},
@@ -533,11 +564,11 @@ const car=b&&b!=="other"?(b+(m&&m!=="other"?" "+m:"")):"xe của bạn";
 const tel=s.tel.slice(0,4)+" "+s.tel.slice(4,7)+" "+s.tel.slice(7);
 O.innerHTML="<div class=td-pick-res><div class=td-pick-sol><small>Giải pháp gợi ý cho "+car+"</small><h3>"+s.t+"</h3><p>"+s.d+"</p><ul>"+s.p.map(x=>"<li>"+x+"</li>").join("")+"</ul><p class=td-pick-price>Giá: tuỳ dòng xe và phạm vi thi công – kỹ thuật viên kiểm tra xe và báo giá trước khi làm.</p><div class=td-pick-cta><a class=\"td-btn td-btn-red\" href=\"tel:"+s.tel+"\">☎ Gọi "+tel+"</a><a class=\"td-btn td-btn-out\" href=\"https://zalo.me/"+s.tel+"\" target=_blank rel=noopener>Zalo</a><a class=td-pick-form href=\"#dat-lich\">Gửi yêu cầu tư vấn →</a><a class=td-pick-more href=\""+s.u+"\">Xem chi tiết dịch vụ</a></div></div><div class=td-pick-cases><small>"+(exact.length?"Xe "+car+" đã làm":"Xe đã làm cùng dịch vụ")+"</small><div></div>"+(exact.length?"":(b&&b!=="other"?"<p class=td-pick-note>Chưa có hồ sơ "+car+" trên trang – gửi yêu cầu để kỹ thuật viên kiểm tra cấu hình phù hợp.</p>":""))+"</div></div>";
 const box=O.querySelector(".td-pick-cases div");list.forEach(c=>{const k=c.cloneNode(true);k.hidden=false;k.querySelectorAll("img").forEach(i=>i.loading="eager");box.appendChild(k)});
-O.querySelector(".td-pick-form").onclick=()=>{const sel=document.querySelector(".td-book select"),inp=document.querySelector(".td-book input[placeholder^=\"Dòng xe\"]");if(sel)[...sel.options].forEach(o=>{if(o.text===s.sel)sel.value=o.value||o.text});if(inp&&car!=="xe của bạn")inp.value=car};
+O.querySelector(".td-pick-form").onclick=()=>{const sel=document.querySelector("#dat-lich select"),inp=document.querySelector(".td-book input[placeholder^=\"Dòng xe\"]");if(sel)[...sel.options].forEach(o=>{if(o.text===s.sel)sel.value=o.value||o.text});if(inp&&car!=="xe của bạn")inp.value=car};
 O.hidden=false}
 })();</script>
 <script>(function(){const d=document.getElementById("pop-khu-vuc");document.querySelector(".td-local-open").onclick=()=>d.showModal();d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
 <script>(function(){const d=document.getElementById("pop-tu-van");document.querySelectorAll(".td-tv-open").forEach(b=>b.onclick=()=>d.showModal());d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
-<script>(function(){document.querySelectorAll(".td-lead").forEach(f=>{const m=f.querySelector(".td-lead-msg"),b=f.querySelector("button[type=submit]");f.addEventListener("submit",async e=>{e.preventDefault();const p=f.phone.value.replace(/D/g,"");m.classList.remove("err");if(!/^0d{9,10}$/.test(p)){m.textContent="Vui lòng nhập số điện thoại hợp lệ.";m.classList.add("err");f.phone.focus();return}if(f["form-honey"].value)return;b.disabled=true;m.textContent="Đang gửi…";const d={phone:p,fullname:f.fullname.value.trim(),priority:f.priority.value,province:f.province.value.trim(),car_model:f.car_model.value.trim(),source_page:f.dataset.sourcePage,branch:"Auto365 Trụ sở chính",page_url:location.href};try{const r=await fetch("/api/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});const j=await r.json().catch(()=>({}));if(j&&j.success===true){m.textContent="Đã nhận yêu cầu – kỹ thuật viên sẽ gọi lại cho bạn.";f.reset();f.province.value="TP. Hồ Chí Minh"}else throw 0}catch(_){m.textContent="Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo.";m.classList.add("err")}b.disabled=false})})})();</script>
+<script>(function(){document.querySelectorAll(".td-lead").forEach(f=>{const m=f.querySelector(".td-lead-msg"),b=f.querySelector("button[type=submit]");f.addEventListener("submit",async e=>{e.preventDefault();const p=f.phone.value.replace(/D/g,"");m.classList.remove("err");if(!/^0d{9,10}$/.test(p)){m.textContent="Vui lòng nhập số điện thoại hợp lệ.";m.classList.add("err");f.phone.focus();return}if(f["form-honey"].value)return;b.disabled=true;m.textContent="Đang gửi…";const d={phone:p,fullname:f.fullname.value.trim(),priority:f.priority.value,province:f.province.value.trim(),car_model:f.car_model?f.car_model.value.trim():"",source_page:f.dataset.sourcePage,branch:"Auto365 Trụ sở chính",page_url:location.href};try{const r=await fetch("/api/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});const j=await r.json().catch(()=>({}));if(j&&j.success===true){m.textContent="Đã nhận yêu cầu – kỹ thuật viên sẽ gọi lại cho bạn.";f.reset()}else throw 0}catch(_){m.textContent="Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo.";m.classList.add("err")}b.disabled=false})})})();</script>
 </body>
 </html>
