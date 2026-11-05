@@ -206,6 +206,11 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
 .td-xe-logos .td-bt{font-weight:800;font-size:14px;color:#333}
 .td-kw{display:block;font-size:12px;color:var(--mut);margin:-2px 0 8px}
 .td-xe-more{display:flex;margin:18px auto 0}.td-xe-more[hidden]{display:none}
+.td-local-more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:14px}.td-local-more div{background:var(--bg);border-radius:10px;padding:16px}.td-local-more h3{font-size:15.5px;margin:0 0 6px}.td-local-more p{margin:0;font-size:13.5px;color:#444}
+.td-local-open{display:flex;margin:0 auto}
+.td-pop{border:0;border-radius:14px;padding:24px;max-width:1000px;width:calc(100% - 32px);max-height:85vh;overflow:auto}.td-pop::backdrop{background:rgba(0,0,0,.55)}.td-pop-x{position:absolute;right:12px;top:8px;border:0;background:none;font-size:28px;cursor:pointer}.td-pop-h{margin:0 0 14px;font-size:20px;padding-right:30px}
+.td-pop .td-local{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));overflow:visible}
+@media(max-width:768px){.td-local-more{grid-template-columns:minmax(0,1fr)}.td-pop{padding:18px}.td-pop .td-local{grid-template-columns:minmax(0,1fr)}.td-pop .td-local div{flex:none}}
 </style>
 </head>
 <body>
@@ -379,12 +384,22 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
 <section class="td-sec" id="khu-vuc">
   <h2 class="td-h2">Nâng cấp ô tô tại Thủ Đức – gần Bình Thạnh, Gò Vấp, Dĩ An, Thuận An</h2>
   <p class="td-lead">Một điểm đến cho chủ xe Thủ Đức, Hiệp Bình, Linh Đông, Tam Bình và khách từ Bình Thạnh, Gò Vấp, Phú Nhuận, Bình Dương, Đồng Nai: dán phim cách nhiệt 3M, dán PPF, wrap đổi màu, độ đèn bi LED và lắp camera hành trình chính hãng.</p>
+  <div class="td-local-more">
+    <div><h3>Vì sao chủ xe Thủ Đức chọn Auto365 Trụ sở chính?</h3><p>Đây là cửa hàng Auto365 đầu tiên, mở từ 2016 tại P. Hiệp Bình, đồng thời là 3M Pro Shop &amp; Training Center – nơi đào tạo kỹ thuật viên cho cả hệ thống. Khách đến được xem mẫu phim, đèn, camera tận mắt và làm việc trực tiếp với kỹ thuật viên nhiều kinh nghiệm.</p></div>
+    <div><h3>Khách Bình Dương, Đồng Nai đến có tiện không?</h3><p>Trụ sở chính nằm sát Quốc lộ 13, thuận đường cho khách từ Thuận An, Dĩ An, Thủ Dầu Một, Biên Hoà. Gọi trước để kỹ thuật viên giữ khung giờ, chuẩn bị đúng vật tư theo dòng xe và báo thời gian thi công dự kiến.</p></div>
+    <div><h3>Đến Trụ sở chính, quy trình diễn ra thế nào?</h3><p>Kỹ thuật viên tiếp nhận xe, hỏi nhu cầu sử dụng và kiểm tra hiện trạng; tư vấn phương án và báo giá rõ trước khi làm. Sau thi công, khách được hướng dẫn sử dụng, kích hoạt bảo hành (phim 3M có bảo hành điện tử chính hãng đến 10 năm) và hỗ trợ hậu mãi trên toàn hệ thống.</p></div>
+  </div>
+  <button type="button" class="td-btn td-btn-out td-local-open">Xem chi tiết dịch vụ tại Thủ Đức →</button>
+  <dialog class="td-pop" id="pop-khu-vuc" aria-label="Dịch vụ nâng cấp ô tô tại Thủ Đức">
+    <button type="button" class="td-pop-x" aria-label="Đóng">×</button>
+    <h3 class="td-pop-h">Dịch vụ nâng cấp ô tô chính hãng tại Thủ Đức</h3>
   <div class="td-local">
     <div><h3>Phim cách nhiệt ô tô chính hãng tại Thủ Đức</h3><p>Dán tại 3M Pro Shop &amp; Training Center: CR BLK, Crystalline Hybrid, Ceramic NR/IR, chọn mã theo xe và nhu cầu, xem mẫu thực tế trước khi dán.</p><small class=td-kw>📍 Dán phim 3M Bình Thạnh · Gò Vấp · Dĩ An · Thuận An</small><a href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Xem dòng phim 3M →</a></div>
     <div><h3>Dán PPF, wrap đổi màu chính hãng tại Thủ Đức</h3><p>PPF bảo vệ sơn khỏi trầy xước, đá văng; wrap đổi màu giữ nguyên lớp sơn gốc. Tư vấn phạm vi dán toàn xe hoặc từng vị trí.</p><small class=td-kw>📍 Dán PPF Bình Thạnh · Gò Vấp · Bình Dương · Biên Hoà</small><a href="https://auto365.vn/ppfwrap-film">Xem PPF / Wrap →</a></div>
     <div><h3>Độ đèn bi LED ô tô chính hãng tại Thủ Đức</h3><p>Bi LED X-Light, GTR, bi gầm AES chọn theo đúng dòng xe; cân vệt sáng trên bảng test để không chói xe ngược chiều.</p><small class=td-kw>📍 Độ đèn ô tô Bình Thạnh · Gò Vấp · Dĩ An · Thuận An</small><a href="https://auto365.vn/nang-cap-anh-sang">Xem nâng cấp ánh sáng →</a></div>
     <div><h3>Camera hành trình ô tô chính hãng tại Thủ Đức</h3><p>Camera 70mai, Vietmap ghi hình trước/sau, đi dây ẩn gọn, hướng dẫn xem lại video trên điện thoại khi bàn giao.</p><small class=td-kw>📍 Camera hành trình Bình Thạnh · Gò Vấp · Bình Dương</small><a href="https://auto365.vn/camera-hanh-trinh-o-to-70mai">Xem camera hành trình →</a></div>
   </div>
+  </dialog>
   <div class="td-map">
     <iframe src="https://www.google.com/maps?q=Auto365+4%2F4%2F1%2F7+%C4%90%C6%B0%E1%BB%9Dng+s%E1%BB%91+3+Hi%E1%BB%87p+B%C3%ACnh+Th%E1%BB%A7+%C4%90%E1%BB%A9c&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Bản đồ Auto365 Trụ sở chính"></iframe>
     <div><h3 style="margin:0">Đường đến Auto365 Trụ sở chính</h3>
@@ -453,5 +468,6 @@ const box=O.querySelector(".td-pick-cases div");list.forEach(c=>{const k=c.clone
 O.querySelector(".td-pick-form").onclick=()=>{const sel=document.querySelector(".td-book select"),inp=document.querySelector(".td-book input[placeholder^=\"Dòng xe\"]");if(sel)[...sel.options].forEach(o=>{if(o.text===s.sel)sel.value=o.value||o.text});if(inp&&car!=="xe của bạn")inp.value=car};
 O.hidden=false}
 })();</script>
+<script>(function(){const d=document.getElementById("pop-khu-vuc");document.querySelector(".td-local-open").onclick=()=>d.showModal();d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
 </body>
 </html>
