@@ -234,6 +234,8 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
 @media(max-width:768px){.td-map iframe{height:240px!important;min-height:0}}
 button.td-btn-ghost{background:none;font-family:inherit}button.td-btn{font-family:inherit}.td-cta .td-local-open{margin:0;display:inline-flex}
 @media(max-width:600px){.td-cta .td-local-open{grid-column:1/-1;justify-content:center}}
+.td-pop-tv{max-width:460px}.td-pop-sub{font-size:13.5px;color:var(--mut);margin:-6px 0 14px}.td-pop-sub a{color:var(--red);font-weight:700}
+.td-tv-form{display:grid;gap:10px}.td-tv-form input,.td-tv-form select{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font:inherit}.td-tv-form button{justify-content:center}
 </style>
 </head>
 <body>
@@ -250,7 +252,7 @@ button.td-btn-ghost{background:none;font-family:inherit}button.td-btn{font-famil
   <h1>Auto365.vn – Trụ Sở Chính tại TP. Hồ Chí Minh</h1>
   <p>Phim cách nhiệt 3M, PPF bảo vệ sơn, nâng cấp ánh sáng và camera hành trình. Xem xe đã làm thực tế, nhận tư vấn theo đúng dòng xe và ghé trực tiếp cửa hàng.</p>
   <div class="td-ticks"><span>Cửa hàng Auto365 đầu tiên từ 2016</span><span>3M Pro Shop &amp; Training Center</span></div>
-  <div class="td-cta"><button type="button" class="td-btn td-btn-red td-local-open">Xem dịch vụ tại Thủ Đức →</button><a class="td-btn td-btn-ghost" href="tel:0365365365">☎ Gọi tư vấn</a><a class="td-btn td-btn-ghost" href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></div>
+  <div class="td-cta"><button type="button" class="td-btn td-btn-red td-local-open">Xem dịch vụ tại Thủ Đức →</button><button type="button" class="td-btn td-btn-ghost td-tv-open">✉ Tư vấn</button><a class="td-btn td-btn-ghost" href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></div>
   <p class="td-open">⏰ Mở cửa 08:30 – 18:30 · 4/4/1/7 Đường số 3, P. Hiệp Bình, TP.HCM</p>
 </div></section>
 <div class="td-wrap" style="padding:0"><div class="td-stats">
@@ -487,6 +489,18 @@ st.lim=8;pick("c",document.querySelector("[data-g=c] button.on"));document.query
 ["c","f","b"].forEach(bind)})();
 document.querySelectorAll(".td-vid").forEach(b=>b.onclick=()=>{const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=b.getAttribute("aria-label");b.replaceWith(f);f.className="td-vid"});
 </script>
+<dialog class="td-pop td-pop-tv" id="pop-tu-van" aria-label="Gửi yêu cầu tư vấn">
+  <button type="button" class="td-pop-x" aria-label="Đóng">×</button>
+  <h3 class="td-pop-h">Nhận tư vấn từ Auto365 Trụ sở chính</h3>
+  <p class="td-pop-sub">Để lại số điện thoại, kỹ thuật viên sẽ gọi lại tư vấn theo dòng xe. Cần gấp: <a href="tel:0365365365">0365 365 365</a> (phim, PPF) · <a href="tel:0365365911">0365 365 911</a> (đèn, camera).</p>
+  <form class="td-tv-form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Bản demo – chưa nối hệ thống nhận yêu cầu'">
+    <input placeholder="Số điện thoại *" type="tel" inputmode="tel" pattern="0[0-9 ]{9,12}" required>
+    <input placeholder="Họ tên (không bắt buộc)">
+    <select><option>Chọn dịch vụ</option><option>Phim cách nhiệt</option><option>Nâng cấp đèn</option><option>PPF / Wrap đổi màu</option><option>Nội thất da</option><option>Giải pháp xe điện</option><option>Camera hành trình</option></select>
+    <input placeholder="Dòng xe (vd: Mazda CX-5)">
+    <button class="td-btn td-btn-red">Gửi yêu cầu tư vấn →</button>
+  </form>
+</dialog>
 <nav class="td-sticky" aria-label="Liên hệ nhanh"><a href="tel:0365365365">☎ Gọi</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo</a><a href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></nav>
 <script>document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>{const s=document.querySelector(".td-book select");if(!s)return;[...s.options].forEach(o=>{if(o.text.indexOf(a.dataset.svc.split(" ")[0])>-1)s.value=o.value||o.text})}));</script>
 <script>(function(){
@@ -510,5 +524,6 @@ O.querySelector(".td-pick-form").onclick=()=>{const sel=document.querySelector("
 O.hidden=false}
 })();</script>
 <script>(function(){const d=document.getElementById("pop-khu-vuc");document.querySelector(".td-local-open").onclick=()=>d.showModal();d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
+<script>(function(){const d=document.getElementById("pop-tu-van");document.querySelectorAll(".td-tv-open").forEach(b=>b.onclick=()=>d.showModal());d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
 </body>
 </html>
