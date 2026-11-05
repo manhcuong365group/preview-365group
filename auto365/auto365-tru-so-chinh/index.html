@@ -205,6 +205,7 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
 @media(max-width:768px){.td-local{display:flex;overflow-x:auto;scroll-snap-type:x mandatory}.td-local div{flex:0 0 78%;scroll-snap-align:start}.td-map{grid-template-columns:minmax(0,1fr)}.td-map iframe{height:240px}}
 .td-xe-logos .td-bt{font-weight:800;font-size:14px;color:#333}
 .td-kw{display:block;font-size:12px;color:var(--mut);margin:-2px 0 8px}
+.td-xe-more{display:flex;margin:18px auto 0}.td-xe-more[hidden]{display:none}
 </style>
 </head>
 <body>
@@ -369,6 +370,7 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
     <a class="td-xe-card" href="https://auto365.vn/hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new" target="_blank" rel="noopener" data-c="den" data-b="Hyundai" data-m="Santa Fe" data-f=""><div class="im"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new-1792487027.webp" alt="Hyundai Santa Fe – Bi gầm X-Light F10 2.0 New" loading="lazy"><em>✓ Nâng cấp ánh sáng</em></div><div class="tx"><small>Hyundai</small><b>Hyundai Santa Fe</b><span>Bi gầm X-Light F10 2.0 New</span></div></a>
     <a class="td-xe-card" href="https://auto365.vn/volvo-xc40-2025-ultimate-lap-bi-led-x-light-quantum-x-v2" target="_blank" rel="noopener" data-c="den" data-b="Volvo" data-m="XC40" data-f=""><div class="im"><img src="https://auto365.vn/uploads/images/thumbnails/800x450xcrop/news/volvo-xc40-2025-ultimate-lap-bi-led-x-light-quantum-x-v2-1791959093.webp" alt="Volvo XC40 – Bi LED X-Light Quantum X V2" loading="lazy"><em>✓ Nâng cấp ánh sáng</em></div><div class="tx"><small>Volvo</small><b>Volvo XC40</b><span>Bi LED X-Light Quantum X V2</span></div></a>
   </div>
+  <button type="button" class="td-btn td-btn-out td-xe-more" hidden></button>
   <p class="td-xe-empty" hidden>Chưa có hồ sơ phù hợp bộ lọc.</p>
   </div>
 </section>
@@ -423,7 +425,8 @@ function bind(g){document.querySelectorAll("[data-g="+g+"] button").forEach(b=>b
 function pick(g,b){st[g]=b.dataset.v;b.parentNode.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));
 if(g==="c"){rf.hidden=st.c!=="phim";if(st.c!=="phim"){st.f="all";rf.querySelectorAll("button").forEach((x,i)=>x.classList.toggle("on",!i))}}
 if(g==="b"){st.m="all";const ms=[...new Set(cards.filter(a=>a.dataset.b===st.b).map(a=>a.dataset.m))];rm.hidden=st.b==="all"||!ms.length;gm.innerHTML="<button class=on data-v=all>Tất cả</button>"+ms.map(m=>"<button data-v=\""+m+"\">"+m+"</button>").join("");bind("m")}
-let n=0;cards.forEach(a=>{const ok=(st.c==="all"||a.dataset.c===st.c)&&(st.f==="all"||a.dataset.f.split(" ").includes(st.f))&&(st.b==="all"||a.dataset.b===st.b)&&(st.m==="all"||a.dataset.m===st.m);a.hidden=!ok;n+=ok});document.querySelector(".td-xe-empty").hidden=n>0}
+st.lim=g!=="x"?8:st.lim;let n=0;cards.forEach(a=>{const ok=(st.c==="all"||a.dataset.c===st.c)&&(st.f==="all"||a.dataset.f.split(" ").includes(st.f))&&(st.b==="all"||a.dataset.b===st.b)&&(st.m==="all"||a.dataset.m===st.m);n+=ok;a.hidden=!ok||n>st.lim});document.querySelector(".td-xe-empty").hidden=n>0;const mb=document.querySelector(".td-xe-more");mb.hidden=n<=st.lim;mb.textContent="Xem thêm "+Math.min(8,n-st.lim)+" xe ↓"}
+st.lim=8;pick("c",document.querySelector("[data-g=c] button.on"));document.querySelector(".td-xe-more").onclick=()=>{st.lim+=8;pick("x",{dataset:{},parentNode:{querySelectorAll:()=>[]}});};
 ["c","f","b"].forEach(bind)})();
 document.querySelectorAll(".td-vid").forEach(b=>b.onclick=()=>{const f=document.createElement("iframe");f.src="https://www.youtube-nocookie.com/embed/"+b.dataset.yt+"?autoplay=1&rel=0";f.allow="autoplay; encrypted-media; picture-in-picture";f.allowFullscreen=true;f.title=b.getAttribute("aria-label");b.replaceWith(f);f.className="td-vid"});
 </script>
