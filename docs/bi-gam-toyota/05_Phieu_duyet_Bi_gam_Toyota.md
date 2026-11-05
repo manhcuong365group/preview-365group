@@ -25,9 +25,6 @@
 - Lead test, CRM/tracking: chỉ kiểm được trên production (preview không có backend).
 - Các bước khi lên production (robots/index, canonical thực tế, cấu hình máy chủ, GSC/CWV): theo quy trình triển khai riêng của IT.
 
-## Phiếu nghiệm thu U3 V1.9 — PASS · ĐÃ DUYỆT 04/11/2026
-
-Đóng U1/U2/U3 trong phạm vi bản demo Toyota ngày 04/11/2026 (bảng mã T01–T04 trong PDF dùng nghĩa riêng — xem đối chiếu bên dưới). Bản PDF: [PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ.
 
 ## Đối chiếu mã lỗi theo báo cáo 03/11 (đính chính hồ sơ 05/11/2026)
 
@@ -42,8 +39,7 @@
 | T07 | 5 thẻ xe chưa có ảnh | Đã bổ sung (ghi công ở 02) |
 | T08 | Production | Checklist triển khai ở 02 |
 
-Đối chiếu mã trong PDF U3 (trang 2): PDF "T01" = Innova/Innova Cross dùng chung URL (quyết định kiến trúc, giữ); PDF "T02" = asset/OG/môi trường → T08; PDF "T03" = khối nội bộ/noindex → checklist môi trường (T08); PDF "T04" = form/tracking → T06. Kết quả U1/U2/U3 trong PDF giữ nguyên. PDF ghi "8 FAQ": bản hiện hành có 9 FAQ, khớp FAQPage — đọc theo số 9.
 
 ## Phiếu nghiệm thu U3 V1.9 (R2) — PASS · ĐÃ DUYỆT 05/11/2026
 
-Người kiểm tra SEO: Ngọc Trân; rà soát kỹ thuật: Nguyễn Quang Đạo (04/11/2026). Đóng T01–T07 theo mã gốc (gồm T03 — 8/8 địa chỉ Quảng Ninh), U1/U2/U3; ghi đúng 9 FAQ, ItemList 9 + 22. Bản PDF: [PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf) — thay bản 04/11 trên trang preview. T08 (production) theo checklist phát hành.
+Người kiểm tra SEO: Ngọc Trân; rà soát kỹ thuật: Nguyễn Quang Đạo (04/11/2026). Đóng T01–T07 theo mã gốc (gồm T03 — 8/8 địa chỉ Quảng Ninh), U1/U2/U3; ghi đúng 9 FAQ, ItemList 9 + 22. Bản PDF: [PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ. T08 (production) theo checklist phát hành.
