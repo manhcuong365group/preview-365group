@@ -22,3 +22,4 @@
 | Kỹ thuật xác nhận 05/11/2026 | Anh Nguyễn Quang Đạo xác nhận danh sách mẫu lắp được (VF9/VF e34: 17 mẫu; Lux A2.0: 16 mẫu). Đã thêm reviewedBy + lastReviewed 2026-11-05, nhãn "Kỹ thuật xác nhận", FAQ/khối sản phẩm/ghi chú nội bộ. Ảnh AI vẫn phải thay trước production. |
 | Ảnh thật 05/11/2026 | Thay toàn bộ ảnh AI bằng ảnh thực tế chủ trang cung cấp; alt ghi "ảnh thực tế". Đã đóng mục thay ảnh AI. |
 | Link production 05/11/2026 | Thẻ "Dòng xe khác" VF5/VF8/Lux SA2.0 trỏ URL production đã đăng (auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5, vf8, lux-sa2-0). |
+| Vá P1-03 (05/11/2026) | Bỏ chip "Chủ đề liên quan" tự trỏ về chính dòng xe (dẫn tới tin-tuc?q=…). Thẻ dòng xe khác đã trỏ URL bi gầm production. P0-03 "tất cả cơ sở": giữ theo quyết định chủ trang/vận hành. |

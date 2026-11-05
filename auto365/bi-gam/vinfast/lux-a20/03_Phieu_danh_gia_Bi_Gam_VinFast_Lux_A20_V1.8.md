@@ -20,3 +20,4 @@ Chưa chấm điểm: chờ xác nhận kỹ thuật 16 mẫu.
 | Ảnh thật 05/11/2026 | Thay toàn bộ ảnh AI bằng ảnh thực tế chủ trang cung cấp; alt ghi "ảnh thực tế". Đã đóng mục thay ảnh AI. |
 | Link production 05/11/2026 | Thẻ "Dòng xe khác" VF5/VF8/Lux SA2.0 trỏ URL production đã đăng (auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5, vf8, lux-sa2-0). |
 | Vá LUX-01..05 (05/11/2026) | LUX-01: ảnh do chủ trang cung cấp đúng Lux A2.0; câu chữ phân biệt "có ảnh thi công thực tế" với "chưa xuất bản bài case riêng". LUX-02: og/twitter/schema image đổi sang ảnh thực tế Lux A2.0, alt "Ảnh thực tế…" (production đổi sang URL auto365.vn khi xuất bản). LUX-03, LUX-05: checklist AIR (IT gỡ khối nội bộ, chuẩn hoá URL v2.auto365.vn). LUX-04: cần hồ sơ U3 có chữ ký anh Đạo ngày 05/11. |
+| Vá P1-03 (05/11/2026) | Bỏ chip "Chủ đề liên quan" tự trỏ về chính dòng xe (dẫn tới tin-tuc?q=…). Thẻ dòng xe khác đã trỏ URL bi gầm production. P0-03 "tất cả cơ sở": giữ theo quyết định chủ trang/vận hành. |

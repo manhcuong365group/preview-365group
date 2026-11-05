@@ -23,3 +23,4 @@
 | Ảnh thật 05/11/2026 | Thay 7 ảnh AI bằng ảnh thực tế VF9 chủ trang cung cấp (toàn xe, hốc zin, đang lắp, sau lắp, đầu xe bàn giao, Cos, Pha); alt ghi "ảnh thực tế". Đã đóng mục thay ảnh AI. |
 | Link production 05/11/2026 | Thẻ "Dòng xe khác" VF5/VF8/Lux SA2.0 trỏ URL production đã đăng (auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5, vf8, lux-sa2-0). |
 | Duyệt nội bộ 05/11/2026 | ĐÃ DUYỆT V1.9 R9 — U1/U2/U3 PASS. Phiếu: `PHIEU_U3_HUB_BI_GAM_VINFAST_VF9_V19_R9_DA_DUYET_DONG_U123_20261105.pdf`. Còn: cấu hình production (index/follow, URL tài nguyên). |
+| Vá P1-03 (05/11/2026) | Bỏ chip "Chủ đề liên quan" tự trỏ về chính dòng xe (dẫn tới tin-tuc?q=…). Thẻ dòng xe khác đã trỏ URL bi gầm production. P0-03 "tất cả cơ sở": giữ theo quyết định chủ trang/vận hành. |
