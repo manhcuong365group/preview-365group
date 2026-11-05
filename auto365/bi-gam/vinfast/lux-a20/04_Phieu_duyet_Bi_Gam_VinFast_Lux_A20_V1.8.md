@@ -3,7 +3,7 @@
 | Trường | Giá trị |
 |---|---|
 | Bản hiện hành | 04/11/2026 — dựng từ khung trang Lux SA2.0 |
-| SHA-256 index.html | `263a95562d0b9a7b9c812f846118d482f0a30ca19743f8f7313968a21d30168c` |
+| SHA-256 index.html | `8b6a460825277419a5e261952fef100202bf60511012d6e9a3a1a474ac3d1b8f` |
 | Vá audit 04/11 (05/11/2026) | Đã sửa: FAQ "có lắp được không" và các câu "17/16 mẫu" chuyển sang dạng có điều kiện (mẫu tham khảo, cần kiểm tra khả năng lắp trên xe), JSON-LD FAQPage đồng bộ; thẻ dòng xe khác trỏ trang VF9/VF e34 thay vì tìm kiếm v2, bỏ thẻ tự trỏ; bỏ popup video rỗng; dateModified 05/11/2026. FAQ thêm câu không suy kết quả Lux SA2.0 cho Lux A2.0; ghi chú thẻ giá bỏ "kỹ thuật đã xác nhận lắp vừa". Còn mở: fitment từng mẫu chờ anh Nguyễn Quang Đạo xác nhận; ảnh thật/case thay ảnh AI; Hub VinFast chưa link trang này; IT/CRM/canonical/production (U1–U3). Giữ theo chủ trang: chuẩn dịch vụ tất cả cơ sở, nhãn 90+, bộ tìm 91 cơ sở |
 | Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
 | URL đích dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/lux-a2-0 — chờ SEO chốt |
