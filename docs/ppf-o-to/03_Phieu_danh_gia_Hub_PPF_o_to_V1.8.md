@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `3d8a86f4e715b02382a7c89da70fa679f4d7815ee415dbab7c9a3c3ca46c3047` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `4ecfe475f891b79f7a2dabaf6cfc48348ae00fc5e604e9366c8b34bf1ffd9042` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -326,3 +326,5 @@ Cập nhật 04/11/2026 (chủ trang): bảng giá thêm thương hiệu NKD PPF
 Cập nhật 04/11/2026: anh Đặng Minh Hoàng duyệt toàn bộ thay đổi 03–04/11 (3M Pro Shop, ảnh hero, ảnh showroom, dải lợi ích, NKD PPF). Chủ trang xác nhận NKD chưa có giá dán lẻ theo vị trí, bộ ước tính vị trí giữ 3M và AX. lastReviewed 2026-11-04, byline "Kiểm duyệt: Đặng Minh Hoàng (04/11/2026)".
 
 Nghiệm thu U3 V1.9 bổ sung 04/11/2026: PASS – ĐÃ DUYỆT (phạm vi demo), anh Đặng Minh Hoàng duyệt 04/11/2026. Chi tiết trong 04.
+
+Cập nhật 05/11/2026 (chủ trang gửi logo): tab NKD đổi sang logo NKD đỏ chính thức (hinh/logo-nkd-ppf.webp, nền trong suốt, 302×88). dateModified 2026-11-05; lastReviewed giữ 2026-11-04.

@@ -3,10 +3,10 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/ppf-o-to` → preview https://preview-365group.pages.dev/ppf-o-to/ · canonical `https://auto365.vn/ppf-o-to` |
-| Bản duyệt | SHA-256 `3d8a86f4e715b02382a7c89da70fa679f4d7815ee415dbab7c9a3c3ca46c3047` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
+| Bản duyệt | SHA-256 `4ecfe475f891b79f7a2dabaf6cfc48348ae00fc5e604e9366c8b34bf1ffd9042` (trùng [01](01_Noi_dung_Hub_PPF_o_to.md), [02](02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md), [03](03_Phieu_danh_gia_Hub_PPF_o_to_V1.8.md) và HTML Cloudflare trả về, kiểm 30/10/2026) |
 | Người kiểm duyệt nội dung | Đặng Minh Hoàng |
 | Ngày duyệt bản này | 04/11/2026 — `lastReviewed` 2026-11-04, byline "Kiểm duyệt: Đặng Minh Hoàng (04/11/2026)" |
-| `dateModified` | 2026-11-04 |
+| `dateModified` | 2026-11-05 |
 | Căn cứ ghi nhận | Chủ trang xác nhận trong phiên làm việc: anh Hoàng đã duyệt (từng lượt ghi ngày bên dưới) |
 | Hotline trang | 0365 365 365 (Phim cách nhiệt · PPF); 0365 365 911 (Đèn · Camera · Phụ kiện) ở khối hệ thống, giống production |
 
@@ -249,3 +249,5 @@ Kế thừa phiếu U3 V1.9 bản 02/11/2026 (PASS – ĐÃ DUYỆT, Đặng Min
 | Ngọc Trân – SEO (theo kết quả team xác nhận) | Đặng Minh Hoàng — ĐÃ DUYỆT 04/11/2026 |
 
 Ghi chú 04/11/2026: anh Đặng Minh Hoàng duyệt phiếu U3 bổ sung 04/11 (chủ trang xác nhận). Dòng U3 trong khối "Kiểm tra nội bộ" đổi sang "Nghiệm thu U3 V1.9 (02/11 + bổ sung 04/11/2026): PASS – ĐÃ DUYỆT". Chỉ khối nội bộ đổi nên SHA trang đổi so với SHA ghi trong phiếu bổ sung (f3781e23…); nội dung khách đọc (01) không đổi.
+
+Cập nhật 05/11/2026 (chủ trang gửi logo): tab NKD đổi sang logo NKD đỏ chính thức (hinh/logo-nkd-ppf.webp, nền trong suốt, 302×88). dateModified 2026-11-05; lastReviewed giữ 2026-11-04.

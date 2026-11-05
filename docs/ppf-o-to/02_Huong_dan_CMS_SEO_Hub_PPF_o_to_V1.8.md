@@ -1,17 +1,17 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `3d8a86f4e715b02382a7c89da70fa679f4d7815ee415dbab7c9a3c3ca46c3047` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4ecfe475f891b79f7a2dabaf6cfc48348ae00fc5e604e9366c8b34bf1ffd9042` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
-## 0. Cấu hình hiện hành — V1.9, bản 04/11/2026 (IT triển khai theo mục này)
+## 0. Cấu hình hiện hành — V1.9, bản 05/11/2026 (IT triển khai theo mục này)
 
 Các mục 1–9 bên dưới là hướng dẫn gốc từ 19/10 và lịch sử chỉnh sửa; nếu khác bảng này thì **lấy bảng này**.
 
 | Trường | Giá trị hiện hành |
 |---|---|
 | Chuẩn | Auto365/365Group V1.9 (26/10/2026); nghiệm thu U3 pk56 ĐÃ DUYỆT 30/10/2026 (xem 04) |
-| Ngày | datePublished 2026-10-19 · lastReviewed 2026-11-04 (Đặng Minh Hoàng) · dateModified 2026-11-04 |
+| Ngày | datePublished 2026-10-19 · lastReviewed 2026-11-04 (Đặng Minh Hoàng) · dateModified 2026-11-05 |
 | FAQ | 9 câu, hiển thị = FAQPage (9/9 khớp) |
 | Schema | @graph 7 node: WebSite, Organization, BreadcrumbList, WebPage, ItemList (11 Product), Service, FAQPage |
 | Giá toàn xe gồm VAT (Sedan / SUV-CUV cỡ vừa / SUV cỡ lớn-MPV) | 3M 50: 38/44/51tr · 3M 100: 69/76/86tr · 3M 150: 85/92/102tr · 3M 200: 102/110/122tr · NKD Apex: 28/30/33tr · NKD Apex Ultra: 38/42/46tr (gồm phim, công, VAT) · AX G: 20/22/25tr · AX K V2: 26,9tr · AX X V2: 45/49,5/54,5tr · Carbon Clear/Gloss: 80tr |
