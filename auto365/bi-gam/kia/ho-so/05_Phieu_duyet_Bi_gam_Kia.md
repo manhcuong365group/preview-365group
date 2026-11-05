@@ -3,10 +3,10 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/bi-gam/kia` → canonical `https://auto365.vn/nang-cap-anh-sang-bi-gam/kia` |
-| Bản duyệt | Bản 04/11/2026 — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Kia.md) |
-| Kết quả | **ĐÃ DUYỆT 04/11/2026** |
+| Bản duyệt | Bản 05/11/2026 — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Kia.md) |
+| Kết quả | **ĐÃ DUYỆT 04/11/2026; phần vá audit ĐÃ DUYỆT 05/11/2026** |
 | Biên soạn | Team Content Auto365 |
-| Rà soát kỹ thuật nội dung | Nguyễn Quang Đạo — Kiểm duyệt kỹ thuật đèn ô tô (`lastReviewed` 2026-11-04) |
+| Rà soát kỹ thuật nội dung | Nguyễn Quang Đạo — Kiểm duyệt kỹ thuật đèn ô tô (`lastReviewed` 2026-11-05) |
 | Căn cứ ghi nhận | Chủ quản xác nhận 04/11/2026: anh Đạo đã duyệt trang |
 
 ## Phạm vi đã duyệt
@@ -25,6 +25,6 @@
 - Danh bạ chi nhánh (rating, link Maps): sửa tại trang /chi-nhanh.
 - Lead test, CRM/tracking: kiểm trên production.
 
-## Vá theo audit 05/11/2026 — chờ anh Đạo xem
+## Vá theo audit 05/11/2026 — Duyệt (chủ quản xác nhận anh Đạo OK 05/11)
 
 Thêm case Seltos 2024; K5 ra khỏi nhóm SUV; link ảnh lắp Sonet (tham khảo); nhãn thẻ "Có tư vấn"/"Có hồ sơ"; placeholder form Kia; câu giắc chuyển nêu điều kiện đời/phiên bản. Chi tiết: [02 mục 7](02_Huong_dan_CMS_SEO_Bi_gam_Kia_V1.9.md). Phiếu U3 chưa có.

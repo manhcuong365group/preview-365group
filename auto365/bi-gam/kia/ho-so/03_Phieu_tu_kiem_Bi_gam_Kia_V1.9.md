@@ -6,7 +6,7 @@
 | Bản kiểm | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Kia.md) |
 | Ngày tự kiểm | 05/11/2026 (vá theo audit 05/11) |
 | Chuẩn | V1.9 — ngưỡng tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); test máy thật OK 04/11; chờ phiếu U3 |
+| Trạng thái | **ĐÃ DUYỆT 04/11/2026; phần vá audit duyệt 05/11/2026** — anh Nguyễn Quang Đạo (chủ quản xác nhận); test máy thật OK 04/11; chờ phiếu U3 |
 
 ## 1. Tự chấm (trên preview)
 
@@ -39,4 +39,4 @@
 
 ## 3. Audit 05/11/2026 — xử lý
 
-Đã vá trên preview: KIA-P0-01 (case Seltos), P0-04 (đồng bộ 02), P1-01 (K5), P1-02 (Sonet), P1-03 (nhãn thẻ), P1-04 (placeholder), P1-05 (content_type), P1-07 (câu giắc chuyển) — chi tiết 02 mục 7. Chờ: anh Đạo xem phần vá; phiếu U3; P0-02/03/05 và P2 phụ thuộc production/IT. P1-06 ảnh Forte (CC BY-SA 3.0): đã ghi công trong 02, nên thay ảnh Auto365 khi có.
+Đã vá trên preview: KIA-P0-01 (case Seltos), P0-04 (đồng bộ 02), P1-01 (K5), P1-02 (Sonet), P1-03 (nhãn thẻ), P1-04 (placeholder), P1-05 (content_type), P1-07 (câu giắc chuyển) — chi tiết 02 mục 7. Anh Đạo duyệt phần vá 05/11 (chủ quản xác nhận). Chờ: phiếu U3; P0-02/03/05 và P2 phụ thuộc production/IT. P1-06 ảnh Forte (CC BY-SA 3.0): đã ghi công trong 02, nên thay ảnh Auto365 khi có.

@@ -8,7 +8,7 @@
 | Build | `node scripts/build-bi-gam-kia.mjs && node scripts/export-bi-gam-kia-docs.mjs` |
 | Nội dung + SHA | [01_Noi_dung_Bi_gam_Kia.md](01_Noi_dung_Bi_gam_Kia.md) |
 | Master data | [04_Master_Data_Bi_gam_Kia.csv](04_Master_Data_Bi_gam_Kia.csv) |
-| Ngày cập nhật | 04/11/2026 (bản dựng đầu, theo khung hub Bi gầm Toyota) |
+| Ngày cập nhật | 05/11/2026 (vá audit 05/11, anh Đạo duyệt) |
 
 ## 1. Vai trò URL
 
@@ -45,7 +45,7 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` từ dòng "Cập nhật"; `about` = Brand Kia; `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-04 lấy từ byline "Rà soát kỹ thuật" |
+| CollectionPage | `dateModified` từ dòng "Cập nhật"; `about` = Brand Kia; `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-05 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Kia |
 | ItemList `#dong-xe` | 9 thẻ dòng xe có hồ sơ |
 | ItemList `#xe-thuc-te` | 15 hồ sơ nội dung: 13 bài case + 2 video (không phải 15 xe khác nhau; một ca lắp có thể có cả bài và video) |
