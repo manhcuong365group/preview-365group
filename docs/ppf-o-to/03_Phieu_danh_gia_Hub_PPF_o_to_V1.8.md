@@ -193,7 +193,7 @@ Mọi sửa HTML sau phiên bản này phải chấm lại.
 
 | File | Phiên bản |
 |---|---|
-| `auto365/ppf-o-to/index.html` | SHA-256 `358d4324d528ce37a93a7ecfdf2892d9e0d8d6f6e750c869cc5dc67494e4bb98` |
+| `auto365/ppf-o-to/index.html` | SHA-256 `7408e09be607add25a4ae1675f8ddae6c891a170ec31ead0e6e314669b04a7aa` |
 | 01_Noi_dung_Hub_PPF_o_to.md | Xuất tự động từ HTML trên, 21/10/2026 |
 | 02_Huong_dan_CMS_SEO_Hub_PPF_o_to_V1.8.md | Ghi cùng SHA-256, có bảng sửa PPF19 |
 
@@ -332,3 +332,5 @@ Cập nhật 05/11/2026 (chủ trang gửi logo): tab NKD đổi sang logo NKD �
 Cập nhật 05/11/2026 (chủ trang gửi bảng giá `Bang_gia_PPF_Apex_va_Apex_Ultra_tung_vi_tri.pdf`, ngày 05/11/2026): thêm giá dán lẻ 13 vị trí cho NKD PPF Apex và Apex Ultra vào bộ ước tính (ô chọn dòng phim) và bảng "Xem bảng giá đầy đủ 13 vị trí" (2 cột mới giữa 3M 200 và AX G). Giá = giá gói toàn xe × tỷ lệ vị trí (tỷ lệ giống bảng 3M), ví dụ Apex Sedan: capo 3.920.000đ, ốp gương 560.000đ/bên; Ultra MPV: capo 6.440.000đ, ốp gương 920.000đ/bên. Không đưa "Nóc SUV/MPV 16%" và "Vị trí nhỏ khác/0,5 mét" vì bộ ước tính dùng 13 vị trí chung. PDF ghi VAT của giá lẻ chưa rõ nên giá lẻ NKD hiện "VAT báo khi chốt giá" như 3M; giá toàn xe giữ "gồm VAT". Mục 8 của phiếu bổ sung 04/11 ("NKD không có trong bộ ước tính") không còn đúng từ bản này. dateModified 2026-11-05; lastReviewed giữ 2026-11-04 — phần giá lẻ NKD chờ anh Hoàng duyệt.
 
 Cập nhật 05/11/2026: ghi chú dưới bảng 13 vị trí thêm câu "Giá NKD theo bảng giá NKD từng vị trí (05/11/2026), VAT báo khi chốt giá."
+
+Cập nhật 05/11/2026: ô "Đuôi cá" ở bộ ước tính đổi ảnh từ ảnh logo BMW 530i (không đúng vị trí) sang ảnh cắt cận nắp cốp và đuôi cá BMW 530i (cắt từ ảnh "Bề mặt thân và đuôi BMW 530i" trong bài /bmw-530i-dan-ppf-3m-200-gloss), file hinh/ppf-duoi-ca-bmw-530i.webp. Production: upload ảnh này lên auto365.vn và đổi đường dẫn.
