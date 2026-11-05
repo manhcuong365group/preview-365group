@@ -8,7 +8,8 @@
 | Chuẩn | V1.9 (tên file giữ V1.8 theo bộ trang VinFast) |
 | URL preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-e34/ |
 | URL production dự kiến | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-e34 |
-| SHA-256 index.html | `f5b18e5c83196e2cbe0fce5a14b11a5ec4820f72cbbddfa6c2c92749a8ba1277` |
+| SHA-256 index.html | `62d25bfd8aeceb315695a0416ca82dbb3ed92e4f3a4a9f9c4e8591e925b097b6` |
+| Vá audit 04/11 (05/11/2026) | Đã sửa: FAQ "có lắp được không" và các câu "17/16 mẫu" chuyển sang dạng có điều kiện (mẫu tham khảo, cần kiểm tra khả năng lắp trên xe), JSON-LD FAQPage đồng bộ; thẻ dòng xe khác trỏ trang VF9/VF e34 thay vì tìm kiếm v2, bỏ thẻ tự trỏ; bỏ popup video rỗng; dateModified 05/11/2026. VF e34: sửa niên đại (bàn giao từ cuối 2021, có xe sản xuất 2023–2024; bỏ "2021–2022, không còn bán mới"). Còn mở: fitment từng mẫu chờ anh Nguyễn Quang Đạo xác nhận; ảnh thật/case thay ảnh AI; Hub VinFast chưa link trang này; IT/CRM/canonical/production (U1–U3). Giữ theo chủ trang: chuẩn dịch vụ tất cả cơ sở, nhãn 90+, bộ tìm 91 cơ sở |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 04/11/2026 |
 | Nguồn dựng | Khung trang VF5 (hotfix 02/11: tel tách từng số, Bắc 41/Trung 26/Nam 24 = 91, link Hạ Long, câu chuẩn dịch vụ) |
 | Danh mục | 17 mẫu (lens 3.0 + 2.0 inch) theo danh sách VF5 — chủ trang chọn 04/11 |
