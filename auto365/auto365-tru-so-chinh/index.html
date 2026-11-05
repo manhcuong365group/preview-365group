@@ -181,6 +181,21 @@ iframe.td-vid{cursor:auto}
 @media(max-width:600px){.td-sticky{display:grid;grid-template-columns:repeat(3,1fr);position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 14px rgba(0,0,0,.08)}
 .td-sticky a{min-height:52px;display:grid;place-items:center;font-weight:700;font-size:14px}.td-sticky a:first-child{background:var(--red);color:#fff}
 body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
+.td-pick{background:linear-gradient(135deg,#fff,#fff5f5);border:1px solid #f3d0d2;border-radius:18px;padding:24px}
+.td-pick-hd h2{margin:0 0 4px;font-size:24px}.td-pick-hd p{margin:0 0 16px;color:var(--mut);font-size:14px}
+.td-pick-f{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,2.2fr);gap:14px;align-items:end}
+.td-pick-f label,.td-pick-need{display:flex;flex-direction:column;gap:6px}.td-pick-f span{font-size:13px;font-weight:700}
+.td-pick-f select{width:100%;min-width:0;height:46px;border:1px solid var(--line);border-radius:10px;padding:0 12px;font:inherit;background:#fff}
+#pk-n{display:flex;flex-wrap:wrap;gap:8px}#pk-n button{min-height:46px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:0 14px;font:600 13.5px/1.2 inherit;cursor:pointer}#pk-n button.on{background:var(--red);border-color:var(--red);color:#fff}
+.td-pick-out{margin-top:20px}.td-pick-res{display:grid;grid-template-columns:1fr 1.4fr;gap:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.td-pick-sol small,.td-pick-cases>small{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--mut)}
+.td-pick-sol h3{margin:4px 0 6px;font-size:22px;color:var(--red)}.td-pick-sol p{margin:0 0 10px;font-size:14px}
+.td-pick-sol ul{margin:0 0 10px;padding-left:18px;font-size:14px}.td-pick-price{font-size:13px!important;color:var(--mut);background:#f6f7f9;border-radius:8px;padding:8px 10px}
+.td-pick-cta{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}.td-pick-form{font-weight:700;color:var(--red)}.td-pick-more{font-size:13px;color:var(--mut);text-decoration:underline}
+.td-pick-cases>div{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:8px}.td-pick-note{font-size:13px;color:var(--mut);margin:10px 0 0}
+@media(max-width:980px){.td-pick-f{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.td-pick-need{grid-column:1/-1}.td-pick-res{grid-template-columns:1fr}}
+@media(max-width:600px){.td-pick{padding:16px 14px}.td-pick-hd h2{font-size:20px}#pk-n{display:grid;grid-template-columns:1fr 1fr}#pk-n button{padding:0 8px;font-size:13px}
+.td-pick-res{padding:14px}.td-pick-cases>div{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:70%;overflow-x:auto;scrollbar-width:none}.td-pick-cta .td-btn{flex:1 1 auto;justify-content:center}}
 </style>
 </head>
 <body>
@@ -197,7 +212,7 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
   <h1>Nâng cấp ô tô tại Auto365 Trụ Sở Chính – Thủ Đức</h1>
   <p>Phim cách nhiệt 3M, PPF bảo vệ sơn, nâng cấp ánh sáng và camera hành trình. Xem xe đã làm thực tế, nhận tư vấn theo đúng dòng xe và ghé trực tiếp cửa hàng.</p>
   <div class="td-ticks"><span>Cửa hàng Auto365 đầu tiên từ 2016</span><span>3M Pro Shop &amp; Training Center</span><span>Bảo hành theo chính sách hãng</span></div>
-  <div class="td-cta"><a class="td-btn td-btn-red" href="#dich-vu">Chọn dịch vụ cho xe →</a><a class="td-btn td-btn-ghost" href="tel:0365365365">☎ Gọi tư vấn</a><a class="td-btn td-btn-ghost" href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></div>
+  <div class="td-cta"><a class="td-btn td-btn-red" href="#chon-xe">Chọn giải pháp theo xe →</a><a class="td-btn td-btn-ghost" href="tel:0365365365">☎ Gọi tư vấn</a><a class="td-btn td-btn-ghost" href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></div>
   <p class="td-open">⏰ Mở cửa 08:30 – 18:30 · 4/4/1/7 Đường số 3, P. Hiệp Bình, TP.HCM</p>
 </div></section>
 <div class="td-wrap" style="padding:0"><div class="td-stats">
@@ -209,6 +224,20 @@ body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
 </div></div>
 
 <main class="td-wrap">
+<section class="td-sec" id="chon-xe">
+  <div class="td-pick">
+    <div class="td-pick-hd"><h2>Chọn giải pháp theo xe của bạn</h2><p>3 bước, chưa đến 10 giây. Không biết dòng xe? Chọn “Xe khác” – kỹ thuật viên sẽ kiểm tra giúp.</p></div>
+    <div class="td-pick-f">
+      <label><span>1. Hãng xe</span><select id="pk-b"><option value="">Chọn hãng</option></select></label>
+      <label><span>2. Dòng xe</span><select id="pk-m" disabled><option value="">Chọn dòng xe</option></select></label>
+      <div class="td-pick-need"><span>3. Bạn cần gì?</span><div id="pk-n">
+        <button data-v="phim">☀ Cabin nóng, chói</button><button data-v="ppf">🛡 Bảo vệ sơn / đổi màu</button><button data-v="den">💡 Đi đêm thiếu sáng</button><button data-v="cam">🎥 Ghi hình hành trình</button>
+      </div></div>
+    </div>
+    <div class="td-pick-out" id="pk-out" hidden></div>
+  </div>
+</section>
+
 <section class="td-sec" id="dich-vu">
   <h2 class="td-h2c">Giải pháp nâng cấp &amp; cá nhân hoá ô tô toàn diện</h2>
   <div class="td-svc">
@@ -334,5 +363,25 @@ document.querySelectorAll(".td-vid").forEach(b=>b.onclick=()=>{const f=document.
 </script>
 <nav class="td-sticky" aria-label="Liên hệ nhanh"><a href="tel:0365365365">☎ Gọi</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo</a><a href="https://maps.app.goo.gl/sPeztDd996rHyLQM8" target="_blank" rel="noopener">⌖ Chỉ đường</a></nav>
 <script>document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>{const s=document.querySelector(".td-book select");if(!s)return;[...s.options].forEach(o=>{if(o.text.indexOf(a.dataset.svc.split(" ")[0])>-1)s.value=o.value||o.text})}));</script>
+<script>(function(){
+const S={phim:{t:"Phim cách nhiệt 3M",d:"Giảm nóng, cản UV, chọn độ sáng kính theo nhu cầu đi phố hay đi đêm.",p:["3M Crystalline CR BLK / CR BLK Pro","3M Crystalline Hybrid","3M Ceramic NR / IR"],u:"https://auto365.vn/phim-cach-nhiet",tel:"0365365365",sel:"Phim cách nhiệt"},
+ppf:{t:"PPF / Wrap đổi màu",d:"Bảo vệ sơn khỏi trầy xước, đá văng; hoặc đổi màu mà vẫn giữ lớp sơn gốc.",p:["PPF 3M (50 / 150 / 200 Gloss)","AX Film","Wrap đổi màu"],u:"https://auto365.vn/ppfwrap-film",tel:"0365365365",sel:"PPF / Wrap đổi màu"},
+den:{t:"Nâng cấp ánh sáng",d:"Bi LED, bi gầm chọn theo đúng dòng xe, cân vệt sáng trên bảng test để không chói xe ngược chiều.",p:["Bi LED X-Light / GTR","Bi gầm X-Light, AES","Đèn gầm dạng rời"],u:"https://auto365.vn/nang-cap-anh-sang",tel:"0365365911",sel:"Nâng cấp đèn"},
+cam:{t:"Camera hành trình",d:"Ghi hình trước/sau, đi dây ẩn gọn, xem lại video trên điện thoại.",p:["70mai (A510, A810, M310…)","Vietmap","Camera 360"],u:"https://auto365.vn/camera-hanh-trinh-o-to-70mai",tel:"0365365911",sel:"Camera hành trình"}};
+const cards=[...document.querySelectorAll(".td-xe-card")],B=document.getElementById("pk-b"),M=document.getElementById("pk-m"),N=document.getElementById("pk-n"),O=document.getElementById("pk-out");let need="";
+const brands=[...new Set(cards.map(c=>c.dataset.b))].sort();
+B.innerHTML="<option value=\"\">Chọn hãng</option>"+brands.map(b=>"<option>"+b+"</option>").join("")+"<option value=\"other\">Xe khác / chưa rõ</option>";
+B.onchange=()=>{const ms=[...new Set(cards.filter(c=>c.dataset.b===B.value).map(c=>c.dataset.m))];M.disabled=!B.value;M.innerHTML="<option value=\"\">"+(B.value&&B.value!=="other"?"Chọn dòng xe":"—")+"</option>"+ms.map(m=>"<option>"+m+"</option>").join("")+(B.value?"<option value=\"other\">Dòng khác / chưa rõ</option>":"");render()};
+M.onchange=render;
+N.querySelectorAll("button").forEach(b=>b.onclick=()=>{need=b.dataset.v;N.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b));render()});
+function render(){if(!need){O.hidden=true;return}const s=S[need],b=B.value,m=M.value;
+let pool=cards.filter(c=>c.dataset.c===need),exact=pool.filter(c=>c.dataset.b===b&&(!m||m==="other"||c.dataset.m===m)),list=(exact.length?exact:pool).slice(0,3);
+const car=b&&b!=="other"?(b+(m&&m!=="other"?" "+m:"")):"xe của bạn";
+const tel=s.tel.slice(0,4)+" "+s.tel.slice(4,7)+" "+s.tel.slice(7);
+O.innerHTML="<div class=td-pick-res><div class=td-pick-sol><small>Giải pháp gợi ý cho "+car+"</small><h3>"+s.t+"</h3><p>"+s.d+"</p><ul>"+s.p.map(x=>"<li>"+x+"</li>").join("")+"</ul><p class=td-pick-price>Giá: tuỳ dòng xe và phạm vi thi công – kỹ thuật viên kiểm tra xe và báo giá trước khi làm.</p><div class=td-pick-cta><a class=\"td-btn td-btn-red\" href=\"tel:"+s.tel+"\">☎ Gọi "+tel+"</a><a class=\"td-btn td-btn-out\" href=\"https://zalo.me/"+s.tel+"\" target=_blank rel=noopener>Zalo</a><a class=td-pick-form href=\"#dat-lich\">Gửi yêu cầu tư vấn →</a><a class=td-pick-more href=\""+s.u+"\">Xem chi tiết dịch vụ</a></div></div><div class=td-pick-cases><small>"+(exact.length?"Xe "+car+" đã làm":"Xe đã làm cùng dịch vụ")+"</small><div></div>"+(exact.length?"":(b&&b!=="other"?"<p class=td-pick-note>Chưa có hồ sơ "+car+" trên trang – gửi yêu cầu để kỹ thuật viên kiểm tra cấu hình phù hợp.</p>":""))+"</div></div>";
+const box=O.querySelector(".td-pick-cases div");list.forEach(c=>{const k=c.cloneNode(true);k.hidden=false;k.querySelectorAll("img").forEach(i=>i.loading="eager");box.appendChild(k)});
+O.querySelector(".td-pick-form").onclick=()=>{const sel=document.querySelector(".td-book select"),inp=document.querySelector(".td-book input[placeholder^=\"Dòng xe\"]");if(sel)[...sel.options].forEach(o=>{if(o.text===s.sel)sel.value=o.value||o.text});if(inp&&car!=="xe của bạn")inp.value=car};
+O.hidden=false}
+})();</script>
 </body>
 </html>
