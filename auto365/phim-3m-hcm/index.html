@@ -921,7 +921,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  mf.package_name.addEventListener('change',function(){setSel(mf.package_name.value,SEL.gr)});mf.vehicle_group.addEventListener('change',function(){setSel(SEL.pk,mf.vehicle_group.value)});
  document.addEventListener('click',function(e){
   var o=e.target.closest('[data-open-lead]');
-  if(!o&&!e.target.closest('a,button,input,select,textarea')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
+  if(!o&&!e.target.closest('a,button,input,select,textarea,summary,details')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
   var pk=o.dataset.pkfull||(o.dataset.pk?'3M '+o.dataset.pk:SEL.pk),gr=o.dataset.group||SEL.gr;
   setSel(pk,gr);
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
