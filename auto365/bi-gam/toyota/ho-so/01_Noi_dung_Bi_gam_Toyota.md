@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm Toyota theo từng dòng xe: Vios, Camry, Fortuner, Innova | Auto365 |
 | Meta description (148 ký tự) | Tra cứu bi gầm Toyota theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Toyota theo từng dòng xe |
-| dateModified | 2026-11-04 |
+| dateModified | 2026-11-05 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `bbee77f07c0678ea0a7fb2f487eda588d80bbd970feb52cd3516b73d5096b8f0` |
-| SHA-256 content-src.html | `69843ad10a3bb676fed6e3e237a41dde74e9fe2f2ea7422e8d919e474f009810` |
+| SHA-256 index.html | `9c517671b8c00c8ac920d2091f27189b43cb9ad34e87ee1f902af6a1c6a76142` |
+| SHA-256 content-src.html | `c9635d21470da8b34aac4821f00842175b56ef95a6799197221200d8ff3bcc29` |
 
 ## Sapo (kiêm trả lời nhanh)
 

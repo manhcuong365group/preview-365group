@@ -173,5 +173,5 @@ if (outFixed === out) throw new Error('priority option not found');
 const MAINJS = '<script defer type="text/javascript" src="https://v2.auto365.vn/assets/frontend/js/main.js';
 if (!outFixed.includes(MAINJS)) throw new Error('main.js script not found');
 const outJq = outFixed.includes('jquery-3.6.0.min.js') ? outFixed : outFixed.replace(MAINJS, '<script defer src="https://v2.auto365.vn/assets/frontend/vendor/jquery/jquery-3.6.0.min.js"></script>\n' + MAINJS);
-fs.writeFileSync(path.join(dir, 'index.html'), outJq);
+fs.writeFileSync(path.join(dir, 'index.html'), outJq.replace(/, Thành phố Quảng Ninh"/g, ', tỉnh Quảng Ninh"'));
 console.log('built', path.join(dir, 'index.html'), out.length, { models: models.length, cases: cases.length, faqs: faqs.length });

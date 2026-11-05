@@ -4,10 +4,10 @@
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/toyota/ |
 | Bản kiểm | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Toyota.md) |
-| Ngày tự kiểm | 04/11/2026 (bản vá theo reviewer 03/11) |
+| Ngày tự kiểm | 05/11/2026 (vá R2) |
 | Chuẩn | V1.9 — 12 tiêu chí C1–C3, S1–S3, G1–G3, U1–U3; ngưỡng tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
 | Điểm reviewer gần nhất | 03/11/2026, SHA `a2cfcc07…`: C/S/G **77,0/85** (C 27,0 · SEO 28,5 · GEO 21,5), U1–U3 CX — **CHƯA QUA** |
-| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); chờ reviewer chấm lại |
+| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); vá R2 05/11, chờ reviewer chấm lại |
 
 ## 1. Reviewer 03/11/2026 — xử lý 04/11/2026
 
@@ -15,6 +15,7 @@
 |---|---|---|---|
 | T01 | Wigo, Yaris xếp nhóm Sedan | Tách tab Hatchback (2): Wigo, Yaris; Sedan (3): Vios, Corolla Altis, Camry; SUV 8, MPV 6, Bán tải 1 — tổng 20. 01/04 xuất lại theo nhóm mới | — |
 | T02 | Thẻ "Tư vấn đúng theo từng xe" ghi "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" trong khi 05 chưa duyệt | Anh Đạo đã duyệt 04/11: giữ câu như hub VinFast; thêm byline "Rà soát kỹ thuật: Nguyễn Quang Đạo (04/11/2026)", schema `reviewedBy` + `lastReviewed` 2026-11-04; 05 ghi ĐÃ DUYỆT — hết mâu thuẫn | — |
+| T03 | Địa chỉ 8 cơ sở Quảng Ninh ghi "Thành phố Quảng Ninh" | Mở ở bản 04/11 (R2 ghi nhận). Sửa 05/11: snapshot cơ sở đổi thành "tỉnh Quảng Ninh", 0 chuỗi sai còn lại | — |
 | T04 | "Thi công tại 90+ chi nhánh" / "91 điểm tiếp nhận" chưa có nguồn xác nhận phạm vi | Giữ như hub VinFast (đã duyệt); anh Đạo duyệt câu này trên trang Toyota 04/11 | — |
 | T05 | Phiếu 03 ghi ≈91,7 nhưng cộng ra 92,7; cấp điểm U khi chưa kiểm | Bỏ tổng /100 tự chấm; U1–U3 để CX (mục 2) | — |
 | T06 | Chưa kiểm mobile/tablet, chưa gửi lead tới nơi nhận thật | QA lại desktop/mobile/tablet bản 04/11 (mục 3). Lead: preview là pages.dev, `/api/leads` không có backend (405) — **không gửi được trên preview** | Lead test + CRM/tracking khi lên production |
@@ -54,3 +55,9 @@
 | Lọc case, Bỏ lọc, FAQ, thẻ chưa có hồ sơ tự điền xe | Chạy đúng |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage; có `reviewedBy` + `lastReviewed` |
 | Điện thoại thật (chủ quản, 04/11/2026) | OK |
+
+## 4. Reviewer R2 04/11 — xử lý 05/11/2026
+
+- R2-01: 8 địa chỉ Quảng Ninh đã sửa thành phần cấp tỉnh (T03 đóng).
+- R2-02: bảng mã thống nhất ở phiếu 05.
+- R2-03: 02 bỏ 2 dòng "Chờ rà soát kỹ thuật"; 03 thêm T03; số FAQ đúng là 9.

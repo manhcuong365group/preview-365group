@@ -27,4 +27,19 @@
 
 ## Phiếu nghiệm thu U3 V1.9 — PASS · ĐÃ DUYỆT 04/11/2026
 
-Đóng U1/U2/U3 và T01–T04 trong phạm vi bản demo Toyota ngày 04/11/2026. Bản PDF: [PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ.
+Đóng U1/U2/U3 trong phạm vi bản demo Toyota ngày 04/11/2026 (bảng mã T01–T04 trong PDF dùng nghĩa riêng — xem đối chiếu bên dưới). Bản PDF: [PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_NGHIEM_THU_U3_BI_GAM_TOYOTA_V1_9_DA_DUYET_FINAL_20261104.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ.
+
+## Đối chiếu mã lỗi theo báo cáo 03/11 (đính chính hồ sơ 05/11/2026)
+
+| Mã (báo cáo 03/11) | Nội dung | Trạng thái 05/11 |
+|---|---|---|
+| T01 | Wigo/Yaris xếp nhóm Sedan | Đã đóng 04/11 (Hatchback 2) |
+| T02 | Mâu thuẫn trạng thái reviewer | Đã đóng 04/11 (byline + schema + 05) |
+| T03 | Địa chỉ 8 cơ sở Quảng Ninh ghi "Thành phố Quảng Ninh" | Đã sửa 05/11: thành phần cấp tỉnh → "tỉnh Quảng Ninh" trong snapshot `#bgty-branch-preview` (0 chuỗi sai, 8 bản ghi đúng). Số nhà/đường/phường giữ nguyên theo danh bạ |
+| T04 | Phạm vi "Thi công tại 90+ chi nhánh" | Đã duyệt 04/11 (05) |
+| T05 | Phép cộng điểm | Đã đóng |
+| T06 | QA thiết bị/tương tác | PASS theo phiếu U3; lead/CRM kiểm trên production |
+| T07 | 5 thẻ xe chưa có ảnh | Đã bổ sung (ghi công ở 02) |
+| T08 | Production | Checklist triển khai ở 02 |
+
+Đối chiếu mã trong PDF U3 (trang 2): PDF "T01" = Innova/Innova Cross dùng chung URL (quyết định kiến trúc, giữ); PDF "T02" = asset/OG/môi trường → T08; PDF "T03" = khối nội bộ/noindex → checklist môi trường (T08); PDF "T04" = form/tracking → T06. Kết quả U1/U2/U3 trong PDF giữ nguyên. PDF ghi "8 FAQ": bản hiện hành có 9 FAQ, khớp FAQPage — đọc theo số 9.
