@@ -1,6 +1,6 @@
 # 01 — Nội dung Hub PPF ô tô (bản khách đọc)
 
-Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ecba50441adb26138f8ad34ee1453b886b4e06a32c94182e922801e202f4dac2`
+Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `358d4324d528ce37a93a7ecfdf2892d9e0d8d6f6e750c869cc5dc67494e4bb98`
 Ngày tạo tài liệu: 19/10/2026 · Ngày xuất bản này: 05/11/2026. File xuất tự động từ HTML, dùng để đối chiếu với 02 (CMS/SEO) và 03 (phiếu chấm) cùng phiên bản. Không gồm khối "Kiểm tra nội bộ" (chỉ hiện trên preview).
 
 **H1:** Dán PPF ô tô
@@ -77,7 +77,7 @@ Chọn dòng phim, loại xe rồi bấm các vị trí cần dán để xem t�
 | Đèn sau (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 560.000đ | 760.000đ | 400.000đ | 538.000đ | 900.000đ |
 | Ốp gương (mỗi bên) | 760.000đ | 1.700.000đ | 2.040.000đ | 560.000đ | 760.000đ | 400.000đ | 538.000đ | 900.000đ |
 
-Giá 3M theo bảng giá 3M Pro Shop (23/10/2026), VAT báo khi chốt giá. Giá AX Film đã gồm VAT. Nhóm xe chia theo kích thước thân xe như ghi chú ở bảng giá phía trên. 3M PPF 100 Gloss hiện chỉ báo giá trọn gói.
+Giá 3M theo bảng giá 3M Pro Shop (23/10/2026), VAT báo khi chốt giá. Giá NKD theo bảng giá NKD từng vị trí (05/11/2026), VAT báo khi chốt giá. Giá AX Film đã gồm VAT. Nhóm xe chia theo kích thước thân xe như ghi chú ở bảng giá phía trên. 3M PPF 100 Gloss hiện chỉ báo giá trọn gói.
 
 **Các gói dán PPF theo nhu cầu**
 
