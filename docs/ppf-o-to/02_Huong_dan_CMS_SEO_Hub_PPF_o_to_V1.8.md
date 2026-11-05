@@ -1,6 +1,6 @@
 # 02 — Hướng dẫn CMS/SEO — Hub PPF ô tô V1.8
 
-- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `4ecfe475f891b79f7a2dabaf6cfc48348ae00fc5e604e9366c8b34bf1ffd9042` (cùng phiên bản với 01 và 03)
+- Nguồn: `auto365/ppf-o-to/index.html` — SHA-256 `ecba50441adb26138f8ad34ee1453b886b4e06a32c94182e922801e202f4dac2` (cùng phiên bản với 01 và 03)
 - Preview: `https://preview-365group.pages.dev/ppf-o-to/` (noindex đúng chủ đích)
 - Kiểm duyệt: Đặng Minh Hoàng, 19/10/2026 (user xác nhận). `dateModified` = ngày phát hành bản; `lastReviewed` giữ ngày duyệt.
 
@@ -15,6 +15,7 @@ Các mục 1–9 bên dưới là hướng dẫn gốc từ 19/10 và lịch s�
 | FAQ | 9 câu, hiển thị = FAQPage (9/9 khớp) |
 | Schema | @graph 7 node: WebSite, Organization, BreadcrumbList, WebPage, ItemList (11 Product), Service, FAQPage |
 | Giá toàn xe gồm VAT (Sedan / SUV-CUV cỡ vừa / SUV cỡ lớn-MPV) | 3M 50: 38/44/51tr · 3M 100: 69/76/86tr · 3M 150: 85/92/102tr · 3M 200: 102/110/122tr · NKD Apex: 28/30/33tr · NKD Apex Ultra: 38/42/46tr (gồm phim, công, VAT) · AX G: 20/22/25tr · AX K V2: 26,9tr · AX X V2: 45/49,5/54,5tr · Carbon Clear/Gloss: 80tr |
+| Giá dán lẻ NKD (13 vị trí, Sedan / SUV / MPV) | Theo bảng chủ trang gửi 05/11/2026: giá gói × tỷ lệ vị trí (capo/cản/nóc 14%, sườn 19%, cốp 9%, cửa trước/má 8%, cửa sau 7%, đuôi cá 4%, đèn/gương 2%). Apex capo 3,92/4,2/4,62tr; Ultra capo 5,32/5,88/6,44tr. VAT giá lẻ báo khi chốt giá |
 | Thông số đã chốt | 3M 50: 7.3 mil (phim kèm keo, 3M Việt Nam), bảo hành 5 năm · AX X V2: bảo hành 8 năm (chủ trang cung cấp 29/10) | · NKD Apex 7.5 mil, ≥143 GU, bảo hành 3 năm · NKD Apex Ultra 8.5 mil, ≥143 GU, bảo hành 5 năm (catalog NKD; Kinh doanh chốt giá 04/11)
 | Nhóm xe | Theo kích thước thân xe: Sedan · SUV/CUV cỡ vừa · SUV cỡ lớn/MPV (không theo số chỗ) |
 | Hotline | Phim cách nhiệt · PPF 0365 365 365; Đèn · Camera · Phụ kiện 0365 365 911. Trong bộ tìm điểm của hub, kết quả Trụ Sở Chính dùng 0365.365.365 (số PPF) |
