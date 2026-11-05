@@ -18,9 +18,13 @@
 | Khối nhu cầu 3 nhóm, 9 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
 | "Thi công tại 90+ chi nhánh", thẻ "Tư vấn đúng theo từng xe" (như hub Toyota) | Duyệt |
 | Bổ sung 04/11: 2 video case (Carnival AES SV 3.0 Max, Sedona combo GTR G1 Ultra); câu giắc chuyển LED gầm Sportage/Carnival 2022 bản Premium trong box lưu ý | Duyệt (chủ quản xác nhận anh Đạo OK 04/11) |
-| 14 hồ sơ (12 case + 2 video) + 4 bài tư vấn + 8 cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
+| 15 hồ sơ (13 case + 2 video) + 4 bài tư vấn + 8 cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Ngoài phạm vi trang
 
 - Danh bạ chi nhánh (rating, link Maps): sửa tại trang /chi-nhanh.
 - Lead test, CRM/tracking: kiểm trên production.
+
+## Vá theo audit 05/11/2026 — chờ anh Đạo xem
+
+Thêm case Seltos 2024; K5 ra khỏi nhóm SUV; link ảnh lắp Sonet (tham khảo); nhãn thẻ "Có tư vấn"/"Có hồ sơ"; placeholder form Kia; câu giắc chuyển nêu điều kiện đời/phiên bản. Chi tiết: [02 mục 7](02_Huong_dan_CMS_SEO_Bi_gam_Kia_V1.9.md). Phiếu U3 chưa có.

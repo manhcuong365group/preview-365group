@@ -45,10 +45,10 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` từ dòng "Cập nhật"; `about` = Brand Kia. Chưa có `reviewedBy` — thêm byline `bgvf-rv` khi có người rà soát kỹ thuật |
+| CollectionPage | `dateModified` từ dòng "Cập nhật"; `about` = Brand Kia; `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-04 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Kia |
 | ItemList `#dong-xe` | 9 thẻ dòng xe có hồ sơ |
-| ItemList `#xe-thuc-te` | 14 hồ sơ: 12 bài case + 2 video (không phải 14 xe khác nhau) |
+| ItemList `#xe-thuc-te` | 15 hồ sơ nội dung: 13 bài case + 2 video (không phải 15 xe khác nhau; một ca lắp có thể có cả bài và video) |
 | FAQPage | 9 câu, đúng text hiển thị |
 
 ## 5. Khối trên trang và nguồn
@@ -56,14 +56,28 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | Khối | Nguồn |
 |---|---|
 | 13 dòng xe (Hatchback 1 · Sedan 4 · SUV 4 · MPV 4) | Dải Kia ở trang theo-hang-xe; giữ dòng đã ngừng bán có hồ sơ (Forte, Sedona), bỏ dòng ngừng bán không có dữ liệu |
-| Hồ sơ (14) | 12 bài case + 2 video Kia (Carnival AES SV 3.0 Max mặt dưỡng in 3D, Sedona combo GTR G1 Ultra) đã đăng auto365.vn |
+| Hồ sơ (15) | 13 bài case (thêm Seltos 2024 X-Light F10 Turbo V2, 05/11) + 2 video Kia (Carnival AES SV 3.0 Max mặt dưỡng in 3D, Sedona combo GTR G1 Ultra) đã đăng auto365.vn |
 | Box lưu ý — nguồn điện | Sportage 2022, Carnival 2022 bản Premium: link giắc chuyển LED gầm chuyên dụng (trang phụ kiện auto365.vn) |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung về đèn, không lặp bài tư vấn dòng xe |
 | FAQ HCM | Đề xuất Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
-| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Kia". Chưa duyệt: thẻ "Tư vấn đúng theo từng xe" bỏ câu "do kỹ thuật viên … kiểm duyệt" |
+| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Kia". Thẻ "Tư vấn đúng theo từng xe" giữ câu "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" (anh Đạo duyệt 04/11). Placeholder form "VD: Kia Sportage 2022" |
 
 ## 6. Khi đăng production
 
 1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.
 2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bgkia-branch-preview` nếu không cần.
 3. Gửi lead test; kiểm schema; kiểm responsive.
+
+## 7. Vá theo audit 05/11/2026
+
+| Mã | Đã làm |
+|---|---|
+| KIA-P0-01 | Thêm case Seltos 2024 1.5L AT – X-Light F10 Turbo V2 (bài 19/08/2026, HTTP 200); ItemList 15; 04 có dòng Seltos |
+| KIA-P0-04 | 02 bỏ ghi chú cũ "chưa có reviewedBy/chưa duyệt"; 01–05 xuất cùng bản build |
+| KIA-P1-01 | K5 không còn nằm trong nhóm SUV: nhóm đổi tên "Xe gia đình, hay đi tỉnh", K5 ghi rõ "sedan đi đường dài" |
+| KIA-P1-02 | Khối nhu cầu: Sonet có link "ảnh lắp tham khảo (bài tổng hợp)"; thẻ Sonet giữ "Tư vấn cấu hình", không gắn nhãn case |
+| KIA-P1-03 | Badge thẻ: "Có tư vấn" (bài tư vấn dòng xe) / "Có hồ sơ" (bài case); dòng phụ "Xem tư vấn + xe đã lắp" / "Xem xe đã lắp" / "Tư vấn cấu hình" |
+| KIA-P1-04 | Placeholder form "VD: Kia Sportage 2022" (build thay đúng chuỗi gốc) |
+| KIA-P1-05 | 04: `content_type` tách `case_article` / `case_video`; giữ ghi chú chưa có case_id |
+| KIA-P1-07 | Câu giắc chuyển: "giúp hạn chế can thiệp dây zin, cần đối chiếu đúng đời và phiên bản xe trước khi dùng" |
+| KIA-P0-02/03/05 | Lead → CRM, robots/canonical/sitemap, gỡ khối nội bộ: chỉ làm được khi IT đưa lên production |

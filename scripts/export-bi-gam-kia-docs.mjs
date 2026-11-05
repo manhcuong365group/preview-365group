@@ -100,7 +100,7 @@ const checked = '2026-11-04'; // case, cẩm nang, link thẻ dòng xe: kiểm H
 const checkedModel = checked;
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
 models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? (/\/bi-gam-kia-/.test(m.url) ? 'bài tư vấn dòng xe đã đăng' : 'bài case đã đăng (chưa có bài tư vấn dòng xe)') : '', checkedModel, [m.status === 'Có hồ sơ' ? 'HTTP 200 (kiểm 04/11)' : '', /^hinh\//.test(m.img) ? 'ảnh Wikimedia Commons, ghi công ở 02' : ''].filter(Boolean).join('; ')]));
-cases.forEach((c) => rows.push(['case', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'case_id nội bộ chưa có — chưa xác nhận các bài cùng dòng xe là xe khác nhau']));
+cases.forEach((c) => rows.push([/^Video:/.test(c.title) ? 'case_video' : 'case_article', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'case_id nội bộ chưa có — chưa xác nhận các bài cùng dòng xe là xe khác nhau']));
 guides.forEach((x) => rows.push(['guide', (x.url.match(/bi-gam-kia-([a-z-]+)$/) || [])[1] || '', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, /\/bi-gam-kia-/.test(x.url) ? 'bài tư vấn theo dòng xe, không phải case' : 'cẩm nang đèn bi gầm (kiến thức chung)']));
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_Kia.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 

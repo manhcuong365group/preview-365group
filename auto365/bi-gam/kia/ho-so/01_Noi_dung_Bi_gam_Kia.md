@@ -9,10 +9,10 @@
 | Title (75 ký tự) | Bi gầm Kia theo từng dòng xe: Carnival, Sportage, Carens, Morning | Auto365 |
 | Meta description (145 ký tự) | Tra cứu bi gầm Kia theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Kia theo từng dòng xe |
-| dateModified | 2026-11-04 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (14), FAQPage |
-| SHA-256 index.html | `2900900d899d5b26c20b05df0401310cfecc3d71ea21a2f98199b66a9269a46f` |
-| SHA-256 content-src.html | `f3ef1b2f799e857933eaa7edfd6d2a24e2455eb3e878416c0043596a0348df53` |
+| dateModified | 2026-11-05 |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (15), FAQPage |
+| SHA-256 index.html | `ac77f2e5ec4f980382fe99001a89e02739e721a34948d5b53530e40c03eab6ea` |
+| SHA-256 content-src.html | `6deeed723643acffb57bc8a3c1edb6f1780259be9701c573e5a342c27224a582` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -38,7 +38,7 @@ Bi gầm Kia cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | Kia Carnival | MPV | Có hồ sơ | https://auto365.vn/kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max |
 | Kia Sedona | MPV | Có hồ sơ | https://auto365.vn/bi-gam-kia-sedona |
 
-## Xe Kia đã lắp bi gầm tại Auto365 (14 bài hồ sơ)
+## Xe Kia đã lắp bi gầm tại Auto365 (15 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -50,6 +50,7 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Kia Carens | [Kia Carens 1.4T Premium 2023 lắp bi gầm AES SV 3.0 Max](https://auto365.vn/kia-carens-14t-premium-2023-lap-bi-gam-aes-sv-30-max) | 2026-09-25 |
 | Kia Carnival | [Kia Carnival 2.2D Luxury 2025 lắp bi gầm AES SV 3.0 Max](https://auto365.vn/kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max) | 2026-09-25 |
 | Kia Sedona | [Video: Kia Sedona lên combo bi gầm GTR G1 Ultra và bi LED Platinum Pro](https://auto365.vn/video-kia-sedona-combo-bi-gam-g1-ultra-va-bi-led-platinum-pro) | 2026-08-24 |
+| Kia Seltos | [Kia Seltos 2024 1.5L AT lắp X-Light F10 Turbo V2: Giá, cấu hình](https://auto365.vn/kia-seltos-2024-15l-at-lap-x-light-f10-turbo-v2-gia-cau-hinh) | 2026-08-19 |
 | Kia Carnival | [Kia Carnival 2004 lắp bi gầm X-Light 301 V2: Giá và cấu hình](https://auto365.vn/kia-carnival-2004-lap-bi-gam-x-light-301-v2-gia-va-cau-hinh) | 2026-08-15 |
 | Kia Forte | [Kia Forte 2013 lắp bi gầm X-Light 301 V2: Giá, thông số và lưu ý kỹ thuật](https://auto365.vn/kia-forte-2013-lap-bi-gam-x-light-301-v2) | 2026-07-29 |
 | Kia Sedona | [Kia Sedona 2017 nâng cấp bi gầm X-Light F10 Pro V2](https://auto365.vn/nang-cap-bi-gam-x-light-f10-pro-v2-cho-kia-sedona-2017) | 2026-07-21 |
@@ -64,7 +65,7 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 Các dòng Kia khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
 
 - Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Ví dụ Morning 2016 đã lắp mẫu lens 2.0 inch, trong khi Carnival, Sportage, Carens đã lắp mẫu lens 3.0 inch.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Carnival 2004, Forte 2013) cần kiểm tra giắc và đèn gầm đang có; Sportage 2022, Carnival 2022 bản Premium có giắc chuyển LED gầm chuyên dụng giúp đấu nối giữ zin; bản hybrid chỉ đấu nối vào hệ điện phụ trợ, không can thiệp hệ thống hybrid cao áp.
+- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Carnival 2004, Forte 2013) cần kiểm tra giắc và đèn gầm đang có; Sportage 2022, Carnival 2022 bản Premium có giắc chuyển LED gầm chuyên dụng giúp hạn chế can thiệp dây zin, cần đối chiếu đúng đời và phiên bản xe trước khi dùng; bản hybrid chỉ đấu nối vào hệ điện phụ trợ, không can thiệp hệ thống hybrid cao áp.
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
@@ -81,19 +82,19 @@ _Dòng xe:_ Morning, Soluto, K3, Forte, Sonet
 - Xe chạy dịch vụ, đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.
 - Hốc đèn gầm nhỏ cần đo trước để chọn lens 2.0 hay 3.0 inch.
 
-Đã lắp: Morning 2016 – X-Light F10 2.0 New (lens 2.0 inch), Forte 2013 – X-Light 301 V2, K3 – Titan 301 (https://auto365.vn/kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new, https://auto365.vn/kia-forte-2013-lap-bi-gam-x-light-301-v2, https://auto365.vn/nang-cap-bi-gam-titan-301-cuc-chat-cho-xe-yeu-kia-k3)
+Đã lắp: Morning 2016 – X-Light F10 2.0 New (lens 2.0 inch), Forte 2013 – X-Light 301 V2, K3 – Titan 301. Sonet: ảnh lắp tham khảo (bài tổng hợp). (https://auto365.vn/kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new, https://auto365.vn/kia-forte-2013-lap-bi-gam-x-light-301-v2, https://auto365.vn/nang-cap-bi-gam-titan-301-cuc-chat-cho-xe-yeu-kia-k3, https://auto365.vn/do-den-kia-sonet-moi-nhat-2024)
 
 CTA: Xem tư vấn bi gầm Morning → https://auto365.vn/bi-gam-kia-morning
 
-#### SUV gia đình, hay đi tỉnh
+#### Xe gia đình, hay đi tỉnh
 
-_Dòng xe:_ Seltos, Sportage, Sorento, K5
+_Dòng xe:_ Seltos, Sportage, Sorento, K5 (sedan đi đường dài)
 
 - Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.
 - Bản hybrid (Sorento HEV/PHEV) được kiểm tra điểm cấp nguồn theo đúng phiên bản.
 - Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.
 
-Đã lắp: Sportage 2022 – X-Light F10 Turbo V2 5500K, Sorento – GTR G1 Turbo (https://auto365.vn/kia-sportage-20g-premium-2022-lap-bi-gam-x-light-f10-turbo-v2-5500k, https://auto365.vn/kia-sorento-do-den-bi-gam-g1-turbo)
+Đã lắp: Seltos 2024 – X-Light F10 Turbo V2, Sportage 2022 – X-Light F10 Turbo V2 5500K, Sorento – GTR G1 Turbo (https://auto365.vn/kia-seltos-2024-15l-at-lap-x-light-f10-turbo-v2-gia-cau-hinh, https://auto365.vn/kia-sportage-20g-premium-2022-lap-bi-gam-x-light-f10-turbo-v2-5500k, https://auto365.vn/kia-sorento-do-den-bi-gam-g1-turbo)
 
 CTA: Xem tư vấn bi gầm Seltos → https://auto365.vn/bi-gam-kia-seltos
 
@@ -151,7 +152,7 @@ Với Sorento HEV/PHEV, kỹ thuật viên kiểm tra điểm cấp nguồn, t�
 
 **Dòng Kia nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ gồm Morning, K3, Forte, Sportage, Sorento, Carens, Carnival và Sedona; Seltos đã có bài tư vấn riêng. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Morning, K3, Forte, Seltos, Sportage, Sorento, Carens, Carnival và Sedona; Morning, Seltos, Carens, Sedona có thêm bài tư vấn riêng. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Kia đời cũ có lắp bi gầm được không?**
 

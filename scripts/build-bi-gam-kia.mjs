@@ -57,7 +57,7 @@ const branch = cut('<section class="bght-sec bght-branch"', /\n<\/div><\/section
 const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s*<\/div><\/section>/)
   .replace(/data-service="[^"]*"/g, 'data-service="Bi gầm Kia"')
   .replace(/data-source-page="[^"]*"/g, 'data-source-page="Bi gầm Kia"')
-  .replace('placeholder="VD: Kia Seltos 2023"', 'placeholder="VD: Kia Seltos 2023"');
+  .replace(/placeholder="VD: Toyota Vios 2021"/g, 'placeholder="VD: Kia Sportage 2022"');
 // khối "Vì sao chọn" 6 thẻ ảnh + logo hãng đèn (đã duyệt ở theo-hang-xe); ảnh trỏ về thư mục theo-hang-xe
 // ảnh thẻ "Vì sao chọn": ảnh xe Kia thật lắp bi gầm tại Auto365 (ảnh case)
 const N0 = 'https://auto365.vn/uploads/images/news/';
