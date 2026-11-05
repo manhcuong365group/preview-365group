@@ -27,4 +27,8 @@
 
 ## Vá theo audit 05/11/2026 — Duyệt (chủ quản xác nhận anh Đạo OK 05/11)
 
-Thêm case Seltos 2024; K5 ra khỏi nhóm SUV; link ảnh lắp Sonet (tham khảo); nhãn thẻ "Có tư vấn"/"Có hồ sơ"; placeholder form Kia; câu giắc chuyển nêu điều kiện đời/phiên bản. Chi tiết: [02 mục 7](02_Huong_dan_CMS_SEO_Bi_gam_Kia_V1.9.md). Phiếu U3 chưa có.
+Thêm case Seltos 2024; K5 ra khỏi nhóm SUV; link ảnh lắp Sonet (tham khảo); nhãn thẻ "Có tư vấn"/"Có hồ sơ"; placeholder form Kia; câu giắc chuyển nêu điều kiện đời/phiên bản. Chi tiết: [02 mục 7](02_Huong_dan_CMS_SEO_Bi_gam_Kia_V1.9.md).
+
+## Phiếu nghiệm thu U3 V1.9 — PASS · ĐÃ DUYỆT 05/11/2026
+
+Hồ sơ chốt R9: đóng U1/U2/U3 và các lỗi KIA-P0-01…04, P1-01/02/03/04/07 trong phạm vi bản preview. Bản PDF: [PHIEU_U3_HUB_BI_GAM_KIA_V19_R9_DA_DUYET_DONG_U123_20261105.pdf](../../auto365/bi-gam/kia/ho-so/PHIEU_U3_HUB_BI_GAM_KIA_V19_R9_DA_DUYET_DONG_U123_20261105.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ. Khi lên production: robots/canonical, tài nguyên production, bỏ công cụ nội bộ là bước phát hành.

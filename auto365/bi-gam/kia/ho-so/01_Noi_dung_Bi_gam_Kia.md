@@ -11,8 +11,8 @@
 | H1 | Bi gầm Kia theo từng dòng xe |
 | dateModified | 2026-11-05 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (15), FAQPage |
-| SHA-256 index.html | `b071ea17d8fe01fdc57e01d3659013a04ae78a64d55ae323641b7b30cc4e02c1` |
-| SHA-256 content-src.html | `53313562ed645d69a2025750ae1f16b6a3296d8ac14529bd05176ace330a8ce9` |
+| SHA-256 index.html | `8c5e93329f0f9156710ed95cfc68e3393ce9a53b185de0c4aeda580bd61bb6bb` |
+| SHA-256 content-src.html | `b689a5519846e4cc7ce0cc7ac5b36c9af2b8e491946e6d719e9508dc4ccdf99b` |
 
 ## Sapo (kiêm trả lời nhanh)
 

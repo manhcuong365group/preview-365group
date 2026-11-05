@@ -4,7 +4,7 @@
 |---|---|
 | Trang | `auto365/bi-gam/toyota` → canonical `https://auto365.vn/nang-cap-anh-sang-bi-gam/toyota` |
 | Bản duyệt | Bản 04/11/2026 — SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Toyota.md) |
-| Kết quả | **ĐÃ DUYỆT 04/11/2026** |
+| Kết quả | **ĐÃ DUYỆT 04/11/2026; phiếu U3 R2 ĐÃ DUYỆT 05/11/2026** |
 | Biên soạn | Team Content Auto365 |
 | Rà soát kỹ thuật nội dung | Nguyễn Quang Đạo — Kiểm duyệt kỹ thuật đèn ô tô (`lastReviewed` 2026-11-04) |
 | Căn cứ ghi nhận | Chủ quản xác nhận 04/11/2026: anh Đạo đã duyệt trang |
@@ -43,3 +43,7 @@
 | T08 | Production | Checklist triển khai ở 02 |
 
 Đối chiếu mã trong PDF U3 (trang 2): PDF "T01" = Innova/Innova Cross dùng chung URL (quyết định kiến trúc, giữ); PDF "T02" = asset/OG/môi trường → T08; PDF "T03" = khối nội bộ/noindex → checklist môi trường (T08); PDF "T04" = form/tracking → T06. Kết quả U1/U2/U3 trong PDF giữ nguyên. PDF ghi "8 FAQ": bản hiện hành có 9 FAQ, khớp FAQPage — đọc theo số 9.
+
+## Phiếu nghiệm thu U3 V1.9 (R2) — PASS · ĐÃ DUYỆT 05/11/2026
+
+Người kiểm tra SEO: Ngọc Trân; rà soát kỹ thuật: Nguyễn Quang Đạo (04/11/2026). Đóng T01–T07 theo mã gốc (gồm T03 — 8/8 địa chỉ Quảng Ninh), U1/U2/U3; ghi đúng 9 FAQ, ItemList 9 + 22. Bản PDF: [PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf) — thay bản 04/11 trên trang preview. T08 (production) theo checklist phát hành.

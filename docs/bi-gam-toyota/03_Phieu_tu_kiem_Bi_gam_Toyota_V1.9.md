@@ -7,7 +7,7 @@
 | Ngày tự kiểm | 05/11/2026 (vá R2) |
 | Chuẩn | V1.9 — 12 tiêu chí C1–C3, S1–S3, G1–G3, U1–U3; ngưỡng tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
 | Điểm reviewer gần nhất | 03/11/2026, SHA `a2cfcc07…`: C/S/G **77,0/85** (C 27,0 · SEO 28,5 · GEO 21,5), U1–U3 CX — **CHƯA QUA** |
-| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); vá R2 05/11, chờ reviewer chấm lại |
+| Trạng thái | **ĐÃ DUYỆT 04/11/2026** — anh Nguyễn Quang Đạo rà soát kỹ thuật (chủ quản xác nhận); vá R2 05/11; **phiếu U3 PASS · ĐÃ DUYỆT 05/11/2026** (đóng T01–T07, U1–U3) |
 
 ## 1. Reviewer 03/11/2026 — xử lý 04/11/2026
 
@@ -42,7 +42,7 @@
 | U1 | Đa thiết bị | 5/5 | Desktop/tablet/mobile trên trình duyệt + chủ quản test điện thoại thật OK 04/11/2026 |
 | U2 | Hành động, tương tác | 5/5 | Bộ lọc, tra cứu cơ sở, CTA, form và tracking — phiếu U3 04/11 PASS, đã đóng |
 | U3 | Bàn giao | 5/5 | 01–05 cùng build, 05 ĐÃ DUYỆT |
-| | **Tổng** | **≈95,5/100** | 80,5 + 15,0 — qua 3 ngưỡng (≥95, SEO 28,5 ≥28,5, GEO 23,8 ≥23,75); phiếu U3 ĐÃ DUYỆT 04/11 |
+| | **Tổng** | **≈95,5/100** | 80,5 + 15,0 — qua 3 ngưỡng (≥95, SEO 28,5 ≥28,5, GEO 23,8 ≥23,75); phiếu U3 ĐÃ DUYỆT 05/11 (8/8 địa chỉ Quảng Ninh, 9 FAQ) |
 
 ## 3. Biên bản QA 04/11/2026 (bản vá)
 
