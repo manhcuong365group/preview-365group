@@ -9,10 +9,10 @@
 | Title (75 ký tự) | Bi gầm Kia theo từng dòng xe: Carnival, Sportage, Carens, Morning | Auto365 |
 | Meta description (145 ký tự) | Tra cứu bi gầm Kia theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Kia theo từng dòng xe |
-| dateModified | 2026-11-05 |
+| dateModified | 2026-11-06 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (15), FAQPage |
-| SHA-256 index.html | `8c5e93329f0f9156710ed95cfc68e3393ce9a53b185de0c4aeda580bd61bb6bb` |
-| SHA-256 content-src.html | `b689a5519846e4cc7ce0cc7ac5b36c9af2b8e491946e6d719e9508dc4ccdf99b` |
+| SHA-256 index.html | `ad47a1f9fadb5f564df5e630646476dc4a08968f2f617b820f7c0a1ed214a69c` |
+| SHA-256 content-src.html | `62fd3ac8a9b1c03fbb941ba44210f471a64c07743e0d35bc74afc29ba512d950` |
 
 ## Sapo (kiêm trả lời nhanh)
 

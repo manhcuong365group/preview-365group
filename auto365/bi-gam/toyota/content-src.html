@@ -177,7 +177,7 @@
   <span class="bgvf-eb">Nâng cấp ánh sáng</span>
   <h1 class="bgvf-h1">Bi gầm Toyota <span>theo từng dòng xe</span></h1>
   <p class="bgvf-lead">Bi gầm Toyota cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES, Titan) trên Vios, Camry, Fortuner, Innova, Hilux và nhiều dòng khác; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.</p>
-  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-11-05">05/11/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-11-04">04/11/2026</time>)</p>
+  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-11-06">06/11/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-11-04">04/11/2026</time>)</p>
   <ul class="bgvf-trust">
    <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
    <li>Thi công tại 90+ chi nhánh</li><li>Kiểm tra tương thích trước khi lắp</li>
@@ -339,6 +339,6 @@ $('bgvf-creset').addEventListener('click',function(){var all=document.querySelec
 $('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});var nVis=document.querySelectorAll('.bgvf-case:not([hidden])').length;$('bgvf-rail').classList.toggle('one',nVis<=4);$('bgvf-rail').hidden=!nVis;$('bgvf-cempty').hidden=!!nVis;$('bgvf-rail').scrollLeft=0});
 [].forEach.call(document.querySelectorAll('.bgvf-arr'),function(b){b.addEventListener('click',function(){var r=$('bgvf-rail');r.scrollBy({left:(+b.getAttribute('data-dir'))*r.clientWidth*0.9,behavior:'smooth'})})});
 // thẻ dòng xe chưa có hồ sơ → điền sẵn dòng xe vào form tư vấn
-document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car'),f=document.querySelector('#tu-van form');if(i)i.value=a.getAttribute('data-car');if(f)f.setAttribute('data-service','Bi gầm Toyota - '+a.getAttribute('data-car'))});
+document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car');if(i)i.value=a.getAttribute('data-car')});
 })();
 </script>

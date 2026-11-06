@@ -81,3 +81,11 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | KIA-P1-05 | 04: `content_type` tách `case_article` / `case_video`; giữ ghi chú chưa có case_id |
 | KIA-P1-07 | Câu giắc chuyển: "giúp hạn chế can thiệp dây zin, cần đối chiếu đúng đời và phiên bản xe trước khi dùng" |
 | KIA-P0-02/03/05 | Lead → CRM, robots/canonical/sitemap, gỡ khối nội bộ: chỉ làm được khi IT đưa lên production |
+
+## 8. Vá 06/11/2026 (audit V2.2 + lỗi form phát hiện ở Toyota R3)
+
+| Mã | Đã làm |
+|---|---|
+| Form ngữ cảnh | Bỏ việc nối tên xe vào `data-service` khi bấm thẻ xe. `service` luôn là "Bi gầm Kia", dòng xe chỉ lấy từ `car_model`, nên đổi xe không còn giữ xe cũ |
+| P0-02 (V2.2) | Khối nội bộ chỉ còn một trạng thái: phiếu U3 V1.9 PASS · ĐÃ DUYỆT 05/11 |
+| P0-01 (V2.2) | 01–05 xuất cùng một build. Mỗi bản HTML ghi SHA trang; 02 ghi 15 hồ sơ, `reviewedBy` có trong schema |

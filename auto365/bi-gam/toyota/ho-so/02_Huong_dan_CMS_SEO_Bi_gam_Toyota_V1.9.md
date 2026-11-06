@@ -88,3 +88,32 @@ Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu s�
 2. Đổi meta robots + kiểm header `X-Robots-Tag`, OG image; xoá khối "Kiểm tra nội bộ" (`#bgvf-internal-check` + script đi kèm) và script `#bgty-branch-preview` nếu không cần.
 3. Gửi 1 lead test qua form trên production; kiểm `source_page`, `service`, `car_model`.
 4. Kiểm schema theo mục 4; kiểm responsive desktop/tablet/mobile.
+
+## 7. Image Pack V2.2 (06/11/2026)
+
+Đo từ tệp thật (sharp), không lấy width/height HTML. 14 thumbnail dùng chung còn lại ở `../theo-hang-xe/hinh/m-*.webp` (theo hồ sơ trang theo-hang-xe). Logo hãng đèn là URL tuyệt đối auto365.vn.
+
+| Asset ID | Tệp | Kích thước | Bytes | Loại tư liệu | Nguồn / quyền | Vai trò và giới hạn claim | Xe / SKU | Vị trí | ALT | Trạng thái |
+|---|---|---|---:|---|---|---|---|---|---|---|
+| TY-IMG-01 | `hinh/hero-toyota-vios-bi-gam-x-light-f10-2-new.webp` | 1100 × 638 webp | 84.548 | Ảnh chụp thực tế (ảnh trong bài case) | Bài case Vios 2021 – X-Light F10 2.0 New trên auto365.vn | Hero nhận diện: xe Toyota thật đã lắp bi gầm tại Auto365 | Vios 2021 · X-Light F10 2.0 New | Hero, OG đề xuất khi lên production | Toyota Vios 2021 lắp bi gầm X-Light F10 2.0 New tại Auto365 | ĐẠT |
+| TY-IMG-02 | `hinh/ly-do-he-thong-90-chi-nhanh-33-tinh-thanh.webp` | 1000 × 563 webp | 108.910 | Ảnh/đồ họa hệ thống | Chủ quản cung cấp 04/11/2026 | Minh họa mạng lưới tiếp nhận; số liệu lấy theo danh bạ, không theo ảnh | — | Vì sao chọn | Hệ thống Auto365 hơn 90 chi nhánh tại 33 tỉnh thành | ĐẠT nguồn nội bộ |
+| TY-IMG-03 | `hinh/ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp` | 1000 × 563 webp | 61.388 | Ảnh chụp thực tế (màn hình + phiếu) | Chủ quản cung cấp 04/11/2026 | Minh họa tra cứu bảo hành điện tử; phạm vi bảo hành theo chính sách từng mẫu | — | Vì sao chọn | Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365 | ĐẠT nguồn nội bộ |
+| TY-IMG-04 | `hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp` | 1000 × 563 webp | 45.358 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 | Thao tác lắp vào hốc đèn cản trước; không đại diện cho một ca Toyota cụ thể | — | Vì sao chọn | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước | ĐẠT nguồn nội bộ |
+| TY-IMG-05 | `hinh/ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp` | 1000 × 563 webp | 62.088 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 | Bước căn chỉnh đường cắt Cos trên bảng test; không phải phép đo độ rọi | Yaris Cross (theo tên tệp) | Vì sao chọn | Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365 | ĐẠT nguồn nội bộ |
+| TY-IMG-06 | `hinh/ly-do-tu-van-theo-tung-dong-toyota.webp` | 1000 × 563 webp | 109.170 | Ảnh chụp thực tế | Chủ quản cung cấp 04/11/2026 | Minh họa tư vấn theo dòng xe Toyota | — | Vì sao chọn | Các dòng xe Toyota tại showroom Auto365 | ĐẠT nguồn nội bộ |
+| TY-IMG-07 | `hinh/m-yaris.webp` | 640 × 400 webp | 15.718 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Ethan Llamas, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Yaris | Thẻ dòng xe | Toyota Yaris | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
+| TY-IMG-08 | `hinh/m-corolla-altis.webp` | 640 × 400 webp | 15.574 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © WC-QHS, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Corolla Altis | Thẻ dòng xe | Toyota Corolla Altis | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
+| TY-IMG-09 | `hinh/m-rush.webp` | 640 × 400 webp | 20.146 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © LuvsMG481, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Rush | Thẻ dòng xe | Toyota Rush | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
+| TY-IMG-10 | `hinh/m-innova.webp` | 640 × 400 webp | 12.530 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Raflypradana01, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Innova | Thẻ dòng xe | Toyota Innova | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
+| TY-IMG-11 | `hinh/m-previa.webp` | 640 × 400 webp | 30.000 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Dinkun Chen, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Previa | Thẻ dòng xe | Toyota Previa | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
+| TY-IMG-12 | `../theo-hang-xe/hinh/m-fortuner.webp` | 640 × 400 webp | 11.204 | Ảnh xe tham khảo (thumbnail dùng chung) | Bộ thumbnail trang theo-hang-xe | Thumbnail; OG preview hiện tại | Fortuner | Thẻ dòng xe, OG preview | Toyota Fortuner | ĐẠT |
+
+Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production làm khi IT đưa lên CDN auto365.vn. Kiểm: Content Auto365, 06/11/2026.
+
+## 8. Vá theo R3 V2.2 (06/11/2026)
+
+| Mã | Đã làm |
+|---|---|
+| V22-TY-01 | Bỏ việc nối tên xe vào `data-service` khi bấm thẻ xe. `service` luôn là "Bi gầm Toyota", dòng xe chỉ lấy từ `car_model` (giá trị ô xe lúc gửi). Đổi/xoá/reset ô xe không còn giữ xe cũ. Kiểm CTX-01–05 trên preview |
+| V22-TY-02 | Image Pack mục 7 (12 tài sản chủ lực, đo từ tệp). Caption ảnh "Vì sao chọn": chờ Media chốt nội dung |
+| V22-TY-03/04 | CTA/microcopy, srcset, OG, sitemap ảnh: P1, làm khi Operations/IT xác nhận |
