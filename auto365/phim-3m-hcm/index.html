@@ -874,7 +874,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   var g=+qc.value;setSel('3M '+k.n,GN[g]);
   qo.innerHTML='<b>3M '+k.n+'</b> – '+GN[g]+': <b style="color:var(--r)">'+vnd(k.p[g])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+k.n+'" data-group="'+GN[g]+'">Nhận báo giá &amp; đặt lịch →</button>';
   qo.classList.add('is-on')}
- qc.addEventListener('change',function(){renderCards();if(qo.classList.contains('is-on'))renderQuote();else if(qc.value==='')setSel(SEL.pk,'')});
+ qc.addEventListener('change',function(){setSel(SEL.pk,qc.value===''?'':GN[+qc.value]);if(qo.classList.contains('is-on'))renderQuote()});
  qs.addEventListener('change',function(){if(qo.classList.contains('is-on'))renderQuote()});
  document.getElementById('q-go').addEventListener('click',renderQuote);
  renderCards();
