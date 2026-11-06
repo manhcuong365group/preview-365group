@@ -43,3 +43,7 @@
 ## Phiếu nghiệm thu U3 V1.9 (R2) — PASS · ĐÃ DUYỆT 05/11/2026
 
 Người kiểm tra SEO: Ngọc Trân; rà soát kỹ thuật: Nguyễn Quang Đạo (04/11/2026). Đóng T01–T07 theo mã gốc (gồm T03 — 8/8 địa chỉ Quảng Ninh), U1/U2/U3; ghi đúng 9 FAQ, ItemList 9 + 22. Bản PDF: [PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf](../../auto365/bi-gam/toyota/ho-so/PHIEU_U3_BI_GAM_TOYOTA_V19_PASS_DA_DUYET_20261105.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ. T08 (production) theo checklist phát hành.
+
+## Phụ lục U3 06/11/2026
+
+Anh Nguyễn Quang Đạo duyệt 06/11/2026 các thay đổi sau phiếu U3 05/11: (1) sửa form — `service` cố định, dòng xe lấy từ ô xe khi gửi; (2) khối Chọn nhanh, CTA dưới lưới xe; (3) câu "Nên gọi trước để xác nhận cơ sở và lịch lắp" ở CTA cuối. `lastReviewed` = 2026-11-06. Phiếu PDF 05/11 giữ nguyên.

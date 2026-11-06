@@ -32,3 +32,7 @@ Thêm case Seltos 2024; K5 ra khỏi nhóm SUV; link ảnh lắp Sonet (tham kh�
 ## Phiếu nghiệm thu U3 V1.9 — PASS · ĐÃ DUYỆT 05/11/2026
 
 Hồ sơ chốt R9: đóng U1/U2/U3 và các lỗi KIA-P0-01…04, P1-01/02/03/04/07 trong phạm vi bản preview. Bản PDF: [PHIEU_U3_HUB_BI_GAM_KIA_V19_R9_DA_DUYET_DONG_U123_20261105.pdf](../../auto365/bi-gam/kia/ho-so/PHIEU_U3_HUB_BI_GAM_KIA_V19_R9_DA_DUYET_DONG_U123_20261105.pdf) — hiển thị trên trang preview ngay dưới ô kiểm nội bộ. Khi lên production: robots/canonical, tài nguyên production, bỏ công cụ nội bộ là bước phát hành.
+
+## Phụ lục U3 06/11/2026
+
+Anh Nguyễn Quang Đạo duyệt 06/11/2026 các thay đổi sau phiếu U3 05/11: (1) sửa form — `service` cố định, dòng xe lấy từ ô xe khi gửi; (2) khối Chọn nhanh, CTA dưới lưới xe; (3) câu "Nên gọi trước để xác nhận cơ sở và lịch lắp" ở CTA cuối. `lastReviewed` = 2026-11-06. Phiếu PDF 05/11 giữ nguyên.
