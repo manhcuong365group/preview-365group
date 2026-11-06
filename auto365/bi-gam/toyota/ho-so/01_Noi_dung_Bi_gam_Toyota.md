@@ -11,8 +11,8 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-06 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `ea7893b4355136f81e891568fd83d57e0950b33d6337c1f44855dddb6d63b314` |
-| SHA-256 content-src.html | `1964be19c3c1dd761498a4af81d15a9cfd2f42186bd55fdd176efc0826cc020d` |
+| SHA-256 index.html | `157f7cfd0417d492c475ec50feaaad37ab4c9475d6de528658d2f44bbbcb273b` |
+| SHA-256 content-src.html | `ae088b416336840742e8e4cab6db70f6b79d6a1979b114c87a1aede98f11e731` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -117,3 +117,10 @@ Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production
 | V22-TY-01 | Bỏ việc nối tên xe vào `data-service` khi bấm thẻ xe. `service` luôn là "Bi gầm Toyota", dòng xe chỉ lấy từ `car_model` (giá trị ô xe lúc gửi). Đổi/xoá/reset ô xe không còn giữ xe cũ. Kiểm CTX-01–05 trên preview |
 | V22-TY-02 | Image Pack mục 7 (12 tài sản chủ lực, đo từ tệp). Caption ảnh "Vì sao chọn": chờ Media chốt nội dung |
 | V22-TY-03/04 | CTA/microcopy, srcset, OG, sitemap ảnh: P1, làm khi Operations/IT xác nhận |
+
+### CRO P1 (06/11/2026)
+
+- Khối "Chọn nhanh" sau hero (#chon-nhanh): dòng xe, xe đã lắp, giá mẫu bi gầm (/nang-cap-anh-sang-bi-gam), gửi đời xe.
+- CTA dưới lưới dòng xe: Nhận tư vấn (#tu-van) + gọi 0365 365 911.
+- CTA cuối trang thêm: nên gọi trước để xác nhận cơ sở và lịch lắp.
+- Không đổi bố cục các khối cũ.

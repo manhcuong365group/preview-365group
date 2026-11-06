@@ -89,3 +89,10 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | Form ngữ cảnh | Bỏ việc nối tên xe vào `data-service` khi bấm thẻ xe. `service` luôn là "Bi gầm Kia", dòng xe chỉ lấy từ `car_model`, nên đổi xe không còn giữ xe cũ |
 | P0-02 (V2.2) | Khối nội bộ chỉ còn một trạng thái: phiếu U3 V1.9 PASS · ĐÃ DUYỆT 05/11 |
 | P0-01 (V2.2) | 01–05 xuất cùng một build. Mỗi bản HTML ghi SHA trang; 02 ghi 15 hồ sơ, `reviewedBy` có trong schema |
+
+### CRO P1 (06/11/2026)
+
+- Khối "Chọn nhanh" sau hero (#chon-nhanh): dòng xe, xe đã lắp, giá mẫu bi gầm (/nang-cap-anh-sang-bi-gam), gửi đời xe.
+- CTA dưới lưới dòng xe: Nhận tư vấn (#tu-van) + gọi 0365 365 911.
+- CTA cuối trang thêm: nên gọi trước để xác nhận cơ sở và lịch lắp.
+- Không đổi bố cục các khối cũ.

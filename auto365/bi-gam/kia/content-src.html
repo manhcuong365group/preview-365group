@@ -139,6 +139,7 @@
 /* shell header (preview): container padding 0 làm .row của Bootstrap lệch -12px, tràn ngang */
 .custom-header-pc .header-stg>.container{padding-left:12px;padding-right:12px}
 /* cta */
+.bgvf-qc{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.bgvf-qc a{display:block;border:1px solid #e3e6ea;border-radius:10px;padding:12px 14px;color:inherit;text-decoration:none;background:#fff}.bgvf-qc a:hover{border-color:var(--r)}.bgvf-qc b{display:block;font-size:15px;margin-bottom:2px}.bgvf-qc span{font-size:13px;color:#5b6470}.bgvf-gcta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding:14px 16px;border:1px dashed #cfd4da;border-radius:10px}.bgvf-gcta p{margin:0;font-size:14px}.bgvf-gcta div{display:flex;gap:8px;flex-wrap:wrap}.bgvf-gcta a{padding:9px 14px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none}.bgvf-gcta .g1{background:var(--r);color:#fff}.bgvf-gcta .g2{border:1px solid var(--r);color:var(--r)}@media(max-width:768px){.bgvf-qc{grid-template-columns:1fr 1fr}.bgvf-gcta div,.bgvf-gcta a{width:100%;text-align:center}}
 .bgvf-cta{background:#12161c url(../theo-hang-xe/hinh/m-fortuner.webp) right 6% center/auto 120% no-repeat;border-radius:14px;color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
 .bgvf-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#12161c 45%,rgba(18,22,28,.7) 75%,rgba(18,22,28,.55))}
 .bgvf-cta>*{position:relative}
@@ -186,6 +187,13 @@
  <div class="bgvf-art"><img src="hinh/hero-kia-carnival-2025-bi-gam-aes-sv-30-max.webp" alt="Kia Carnival 2.2D Luxury 2025 lắp bi gầm AES SV 3.0 Max tại Auto365" width="1100" height="638" fetchpriority="high"></div>
 </div></section>
 
+<section class="bght-sec" id="chon-nhanh" style="padding-bottom:0" aria-label="Chọn nhanh"><div class="bght-in"><nav class="bgvf-qc">
+ <a href="#dong-xe"><b>Đã biết dòng xe</b><span>Chọn xe Kia để xem hồ sơ lắp</span></a>
+ <a href="#xe-thuc-te"><b>Xem xe đã lắp</b><span>Case thi công thực tế</span></a>
+ <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam"><b>Xem giá mẫu bi gầm</b><span>Giá niêm yết từng mẫu</span></a>
+ <a href="#tu-van"><b>Chưa chắc chọn mẫu</b><span>Gửi đời xe để kiểm tra</span></a>
+</nav></div></section>
+
 <section class="bght-sec" id="dong-xe"><div class="bght-in">
  <div class="bght-head"><div><span class="bgvf-eb">Tra cứu theo dòng xe</span><h2 class="bght-h2">Chọn dòng xe Kia</h2></div></div>
  <div class="bgvf-bar">
@@ -193,6 +201,7 @@
   <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe Kia..." aria-label="Tìm dòng xe Kia"></label>
  </div>
  <div class="bgvf-grid" id="bgvf-grid"></div>
+ <div class="bgvf-gcta"><p>Không thấy dòng xe hoặc chưa chắc mẫu? Gửi đời xe để kỹ thuật viên kiểm tra tương thích.</p><div><a class="g1" href="#tu-van">Nhận tư vấn</a><a class="g2" href="tel:0365365911">Gọi 0365 365 911</a></div></div>
 </div></section>
 
 <section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
@@ -259,7 +268,7 @@
 </div></section>
 
 <section class="bght-sec" id="tu-van-ngay" style="padding-top:4px"><div class="bght-in"><div class="bgvf-cta">
- <div><span class="bgvf-eb">Tư vấn ngay</span><h2>Kiểm tra cấu hình bi gầm phù hợp cho dòng xe Kia của bạn</h2><p>Kỹ thuật viên Auto365 tư vấn theo xe và nhu cầu sử dụng.</p></div>
+ <div><span class="bgvf-eb">Tư vấn ngay</span><h2>Kiểm tra cấu hình bi gầm phù hợp cho dòng xe Kia của bạn</h2><p>Kỹ thuật viên Auto365 tư vấn theo xe và nhu cầu sử dụng. Nên gọi trước để xác nhận cơ sở và lịch lắp; cấu hình, chi phí chốt sau khi kiểm tra xe.</p></div>
  <div class="bgvf-cbtn"><a class="bgvf-b1" href="#tu-van">Nhận tư vấn ngay</a><a class="bgvf-b2" href="tel:0365365911">Gọi 0365 365 911</a></div>
 </div></div></section>
 
