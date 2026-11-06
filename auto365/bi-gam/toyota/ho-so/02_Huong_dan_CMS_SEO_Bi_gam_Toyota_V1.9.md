@@ -101,11 +101,11 @@ Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu s�
 | TY-IMG-04 | `hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp` | 1000 × 563 webp | 45.358 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 | Thao tác lắp vào hốc đèn cản trước; không đại diện cho một ca Toyota cụ thể | — | Vì sao chọn | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước | ĐẠT nguồn nội bộ |
 | TY-IMG-05 | `hinh/ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp` | 1000 × 563 webp | 62.088 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 | Bước căn chỉnh đường cắt Cos trên bảng test; không phải phép đo độ rọi | Yaris Cross (theo tên tệp) | Vì sao chọn | Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365 | ĐẠT nguồn nội bộ |
 | TY-IMG-06 | `hinh/ly-do-tu-van-theo-tung-dong-toyota.webp` | 1000 × 563 webp | 109.170 | Ảnh chụp thực tế | Chủ quản cung cấp 04/11/2026 | Minh họa tư vấn theo dòng xe Toyota | — | Vì sao chọn | Các dòng xe Toyota tại showroom Auto365 | ĐẠT nguồn nội bộ |
-| TY-IMG-07 | `hinh/m-yaris.webp` | 640 × 400 webp | 15.718 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Ethan Llamas, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Yaris | Thẻ dòng xe | Toyota Yaris | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
-| TY-IMG-08 | `hinh/m-corolla-altis.webp` | 640 × 400 webp | 15.574 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © WC-QHS, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Corolla Altis | Thẻ dòng xe | Toyota Corolla Altis | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
-| TY-IMG-09 | `hinh/m-rush.webp` | 640 × 400 webp | 20.146 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © LuvsMG481, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Rush | Thẻ dòng xe | Toyota Rush | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
-| TY-IMG-10 | `hinh/m-innova.webp` | 640 × 400 webp | 12.530 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Raflypradana01, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Innova | Thẻ dòng xe | Toyota Innova | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
-| TY-IMG-11 | `hinh/m-previa.webp` | 640 × 400 webp | 30.000 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Dinkun Chen, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Previa | Thẻ dòng xe | Toyota Previa | ĐẠT ghi công; Media bổ sung link trang file gốc (CX) |
+| TY-IMG-07 | `hinh/m-yaris.webp` | 640 × 400 webp | 15.718 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Ethan Llamas, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Yaris | Thẻ dòng xe | Toyota Yaris | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:2018_Toyota_Yaris_1.3_E_in_Freedom_White,_front_left.jpg) |
+| TY-IMG-08 | `hinh/m-corolla-altis.webp` | 640 × 400 webp | 15.574 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © WC-QHS, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Corolla Altis | Thẻ dòng xe | Toyota Corolla Altis | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:Toyota_Corolla_Altis_(E210)_white_in_Taichung_20210214.jpg) |
+| TY-IMG-09 | `hinh/m-rush.webp` | 640 × 400 webp | 20.146 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © LuvsMG481, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Rush | Thẻ dòng xe | Toyota Rush | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:2024_Toyota_Rush_S_1.5_Dual_VVT-i_S_front.jpg) |
+| TY-IMG-10 | `hinh/m-innova.webp` | 640 × 400 webp | 12.530 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Raflypradana01, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Innova | Thẻ dòng xe | Toyota Innova | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:Toyota_Kijang_Innova_2.4_Venturer_GUN142R_(20221231).jpg) |
+| TY-IMG-11 | `hinh/m-previa.webp` | 640 × 400 webp | 30.000 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Dinkun Chen, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Previa | Thẻ dòng xe | Toyota Previa | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:TOYOTA_PREVIA_(XR50)_China_(5).jpg) |
 | TY-IMG-12 | `../theo-hang-xe/hinh/m-fortuner.webp` | 640 × 400 webp | 11.204 | Ảnh xe tham khảo (thumbnail dùng chung) | Bộ thumbnail trang theo-hang-xe | Thumbnail; OG preview hiện tại | Fortuner | Thẻ dòng xe, OG preview | Toyota Fortuner | ĐẠT |
 
 Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production làm khi IT đưa lên CDN auto365.vn. Kiểm: Content Auto365, 06/11/2026.
@@ -124,3 +124,8 @@ Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production
 - CTA dưới lưới dòng xe: Nhận tư vấn (#tu-van) + gọi 0365 365 911.
 - CTA cuối trang thêm: nên gọi trước để xác nhận cơ sở và lịch lắp.
 - Không đổi bố cục các khối cũ.
+
+### Caption "Vì sao chọn" + link Wikimedia (06/11/2026)
+
+- 6 ảnh khối "Vì sao chọn" có `figcaption` (thêm khi build, khối nguồn dùng chung với theo-hang-xe không đổi).
+- 5 ảnh xe Wikimedia: link trang file gốc ghi trong Image Pack, tác giả + giấy phép đã đối chiếu qua Commons API.

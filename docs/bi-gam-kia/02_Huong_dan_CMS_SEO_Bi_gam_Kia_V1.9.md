@@ -96,3 +96,11 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 - CTA dưới lưới dòng xe: Nhận tư vấn (#tu-van) + gọi 0365 365 911.
 - CTA cuối trang thêm: nên gọi trước để xác nhận cơ sở và lịch lắp.
 - Không đổi bố cục các khối cũ.
+
+### Link trang file gốc Wikimedia (06/11/2026)
+
+Đã đối chiếu tác giả + giấy phép qua Commons API.
+
+- `hinh/m-forte.webp`: [2011 Kia Forte EX, front left (Joshua Tree).jpg](https://commons.wikimedia.org/wiki/File:2011_Kia_Forte_EX,_front_left_(Joshua_Tree).jpg)
+- `hinh/m-sedona.webp`: ['17-'18 Kia Sedona -- Front.jpg](https://commons.wikimedia.org/wiki/File:'17-'18_Kia_Sedona_--_Front.jpg)
+- 6 ảnh khối "Vì sao chọn" có `figcaption` mô tả đúng loại ảnh (ảnh case ghi xe + mẫu đèn).
