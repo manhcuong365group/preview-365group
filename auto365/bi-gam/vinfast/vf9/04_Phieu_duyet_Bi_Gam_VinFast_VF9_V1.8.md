@@ -8,7 +8,7 @@
 | Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf9/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf9 |
-| SHA-256 index.html | `fd6b26c0ef66561b1daf3468d346717e918a09438ab6b00f5c8fb33039ddec49` |
+| SHA-256 index.html | `79f7da6a78f6611ed61ca8d347d9bb4647d91e354f1cb99593b6f39cd0d043d9` |
 | Vá audit 04/11 (05/11/2026) | Đã sửa: FAQ "có lắp được không" và các câu "17/16 mẫu" chuyển sang dạng có điều kiện (mẫu tham khảo, cần kiểm tra khả năng lắp trên xe), JSON-LD FAQPage đồng bộ; thẻ dòng xe khác trỏ trang VF9/VF e34 thay vì tìm kiếm v2, bỏ thẻ tự trỏ; bỏ popup video rỗng; dateModified 05/11/2026. VF9: lens đối chiếu theo đời xe, Eco/Plus. Còn mở: fitment từng mẫu chờ anh Nguyễn Quang Đạo xác nhận; ảnh thật/case thay ảnh AI; Hub VinFast chưa link trang này; IT/CRM/canonical/production (U1–U3). Giữ theo chủ trang: chuẩn dịch vụ tất cả cơ sở, nhãn 90+, bộ tìm 91 cơ sở |
 | Ngày (dòng Cập nhật + datePublished/dateModified) | 04/11/2026 |
 | reviewedBy / lastReviewed | Chưa gắn — bổ sung khi anh Đạo xác nhận |
@@ -25,3 +25,5 @@
 | Duyệt nội bộ 05/11/2026 | ĐÃ DUYỆT V1.9 R9 — U1/U2/U3 PASS. Phiếu: `PHIEU_U3_HUB_BI_GAM_VINFAST_VF9_V19_R9_DA_DUYET_DONG_U123_20261105.pdf`. Còn: cấu hình production (index/follow, URL tài nguyên). |
 | Vá P1-03 (05/11/2026) | Bỏ chip "Chủ đề liên quan" tự trỏ về chính dòng xe (dẫn tới tin-tuc?q=…). Thẻ dòng xe khác đã trỏ URL bi gầm production. P0-03 "tất cả cơ sở": giữ theo quyết định chủ trang/vận hành. |
 | Vá audit V2.2 R1 (06/11/2026) | JSON-LD parse PASS bằng JSON.parse trên file deploy (1 script, không có newline thô — mục P0-01 VF9 không tái hiện). og:image/twitter:image/Article.image = ảnh hero thực tế của trang. Bỏ meta keywords "Tin tức". CTA "Đặt lịch kiểm tra xe" → "Gửi yêu cầu kiểm tra xe". ALT ảnh 02 → "vị trí lắp… trước khi lắp đèn"; ảnh Cos/Pha → "tường đo… minh họa cách kiểm tra", không gọi là số đo trên xe. Lux: tách câu ảnh thực tế vs ảnh tường đo; ảnh 03 không còn được tham chiếu (file đã gỡ). e34: bỏ câu FAQ mâu thuẫn "không kết luận mọi mẫu". Còn: Hub production link, Data Matrix 17/16 SKU, Image Pack, "tất cả cơ sở" (chờ Ops), CRM/production (IT). |
+
+| 06/11/2026 | Viết lại câu cơ sở lắp; anh Đạo tái duyệt (phù hợp mọi đời xe), Media xác nhận ảnh; lastReviewed 2026-11-06 |
