@@ -19,7 +19,7 @@
 | Lọc case theo dòng xe / hãng đèn, nút Bỏ lọc | Lọc đúng, Bỏ lọc trả đủ 8 case | OK | Đạt |
 | Bấm thẻ "Tư vấn cấu hình" → điền sẵn xe vào form | OK | OK | Đạt |
 | Nút gọi 0365 365 911 | Có `tel:` | OK | Đạt |
-| Điện thoại thật | — | — | **Chưa test** (chủ quản) |
+| Điện thoại thật | — | — | Đạt — chủ quản test 07/11/2026 |
 
 ## U2 — Lead / CRM
 

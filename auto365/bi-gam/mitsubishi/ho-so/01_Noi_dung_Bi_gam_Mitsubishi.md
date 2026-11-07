@@ -11,8 +11,8 @@
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `e8c909d9522878ab88f04806007838b3420d33f8185ee2f07f28e557931cd97d` |
-| SHA-256 content-src.html | `9ba3ce0be5c3089f884fa23d9771a1dd9639198e27df6829a26b21751dafd439` |
+| SHA-256 index.html | `76d444aad53599484c89b4d4286dd996cd77bb757c8758cebe5c33cf29fefce9` |
+| SHA-256 content-src.html | `eff788b8268a4e19523a8b63503ba44641ca22578f82b5f94f8f5e035bc9ec9f` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -50,7 +50,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 | Hồ sơ (8) | Bài case bi gầm Hyundai đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
-| Bảng tra "Xe Hyundai đã lắp mẫu bi gầm nào?" (`#bang-tra`, bổ sung GEO 07/11, chờ anh Đạo duyệt) | Sinh từ danh sách case: dòng xe, đời/phiên bản theo tiêu đề bài (bài không nêu đời chỉ ghi dòng xe; 3 bài lấy năm ghi rõ trong nội dung), mẫu đèn, lens chỉ khi tên mẫu nêu rõ (F10 2.0 New, AES SV 2.0/3.0 Max), link bài |
+| Bảng tra "Xe Hyundai đã lắp mẫu bi gầm nào?" (`#bang-tra`, bổ sung GEO 07/11, anh Đạo duyệt 07/11) | Sinh từ danh sách case: dòng xe, đời/phiên bản theo tiêu đề bài (bài không nêu đời chỉ ghi dòng xe; 3 bài lấy năm ghi rõ trong nội dung), mẫu đèn, lens chỉ khi tên mẫu nêu rõ (F10 2.0 New, AES SV 2.0/3.0 Max), link bài |
 | FAQ "Xe Hyundai nên chọn bi gầm 2.0 hay 3.0 inch?" | Dẫn đúng các xe đã lắp lens 2.0/3.0 trong bảng tra (bổ sung GEO 07/11) |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |
 | FAQ HCM | Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |

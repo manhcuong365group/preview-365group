@@ -11,8 +11,8 @@
 | H1 | Bi gầm Hyundai theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
-| SHA-256 index.html | `07dd2ddfe406152316c9397a58d2a94867e565ed4de523524779ade5e2454bfe` |
-| SHA-256 content-src.html | `760ad02dbb142e081500bcb1bf4ebea682af9de0eca1ec438b61f9f62e5e37d2` |
+| SHA-256 index.html | `ce198575419d30b48bcecf8c96e326d80eea26b586b384e2e9eccb0181eb8618` |
+| SHA-256 content-src.html | `44b31ff66d3f00143d5d113e7ffed5b6598c5e75cdff48ec19b5ecc57fd9fe49` |
 
 ## Sapo (kiêm trả lời nhanh)
 

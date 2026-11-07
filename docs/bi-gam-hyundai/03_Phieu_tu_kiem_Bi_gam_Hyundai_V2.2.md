@@ -6,7 +6,7 @@
 | Bản kiểm | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Hyundai.md) |
 | Ngày tự kiểm | 07/11/2026 (chấm lại sau duyệt, test lead, QA mobile) |
 | Chuẩn | V2.2 — ngưỡng tổng ≥95, SEO ≥28,5/30, GEO ≥23,75/25 |
-| Trạng thái | **ĐÃ DUYỆT nội dung 07/11/2026** — anh Nguyễn Quang Đạo (chủ quản xác nhận); lead test #32 vào CRM OK; phiếu U3 tự nghiệm thu: [06](06_Phieu_nghiem_thu_U3_Bi_gam_Hyundai.md) |
+| Trạng thái | **ĐÃ DUYỆT nội dung 07/11/2026** — anh Nguyễn Quang Đạo (chủ quản xác nhận), gồm phần bổ sung GEO; test điện thoại thật OK 07/11; lead test #32 vào CRM OK; phiếu U3 tự nghiệm thu: [06](06_Phieu_nghiem_thu_U3_Bi_gam_Hyundai.md) |
 
 ## 1. Tự chấm (trên preview)
 
@@ -23,15 +23,13 @@
 | G1 | Trả lời rõ | 9,4/10 | Box lưu ý; FAQ dòng có hồ sơ/2.0 hay 3.0 inch/đời cũ/HCM/tỉnh khác/chi phí/bảo hành; bảng tra "Xe  đã lắp mẫu bi gầm nào?" ( dòng: xe, đời/phiên bản, mẫu đèn, lens, link bài) |
 | G2 | Lập luận, giới hạn | 9,4/10 | 3 nhóm nhu cầu kèm khi nào chưa cần lắp; FAQ 2.0/3.0 inch dẫn đúng xe đã lắp, nêu giới hạn (khác đời phải đo hốc) |
 | G3 | Nguồn, truy nguyên | 5/5 | Anh Đạo duyệt 07/11: tên + ngày trên trang và schema (`reviewedBy`, `lastReviewed`); case link bài gốc |
-| | **GEO** | **23,8/25** | Qua ngưỡng 23,75 — **phần bổ sung GEO 07/11 (bảng tra, FAQ 2.0/3.0 inch) chờ anh Đạo duyệt** |
-| U1 | Đa thiết bị | 4,5/5 | 375 px (giả lập): không tràn ngang, tab/tìm/lọc case/bỏ lọc/tự điền xe chạy, ảnh tải đủ; 1366 px OK. **Chưa test điện thoại thật** |
+| | **GEO** | **23,8/25** | Qua ngưỡng 23,75 — phần bổ sung GEO 07/11 anh Đạo đã duyệt |
+| U1 | Đa thiết bị | 5/5 | 375 px giả lập + 1366 px đạt; chủ quản test điện thoại thật OK 07/11/2026 |
 | U2 | Tương tác, lead | 5/5 | Lead test #32 (service "Bi gầm Hyundai", xe Hyundai Creta 2022) gửi /api/leads → `success:true`, `test:true` ngày 07/11 |
 | U3 | Bàn giao | 4,5/5 | 01–06 cùng build; phiếu U3 tự nghiệm thu, chờ reviewer ký |
-| | **Tổng** | **≈93,7/100** | **Chưa đạt** (tổng <95) |
+| | **Tổng** | **≈94,2/100** | **Chưa đạt** (tổng <95) |
 
 ## 2. Còn thiếu để đạt
 
-1. Anh Đạo duyệt phần bổ sung GEO 07/11 (bảng tra xe ↔ mẫu đèn, FAQ 2.0/3.0 inch).
-2. U1: chủ quản test điện thoại thật.
-3. U3: reviewer ký phiếu U3.
-4. Hyundai: thêm case/bài tư vấn cho các dòng chưa có hồ sơ (Grand i10, Venue, Stargazer…) để C2 lên.
+1. U3: reviewer ký phiếu U3 (06) — điểm chặn duy nhất còn lại trên preview.
+2. Hyundai: thêm case/bài tư vấn cho các dòng chưa có hồ sơ (Grand i10, Venue, Stargazer…) để C2 lên.

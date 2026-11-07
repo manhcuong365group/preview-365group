@@ -33,4 +33,4 @@
 
 ## Nghiệm thu U1–U3 (07/11/2026)
 
-Lead test #35 vào CRM OK; QA mobile giả lập 375 px đạt; chưa test điện thoại thật. Chi tiết: [06_Phieu_nghiem_thu_U3_Bi_gam_Honda.md](06_Phieu_nghiem_thu_U3_Bi_gam_Honda.md).
+Lead test #35 vào CRM OK; QA mobile giả lập 375 px đạt; chủ quản test điện thoại thật OK 07/11. Chi tiết: [06_Phieu_nghiem_thu_U3_Bi_gam_Honda.md](06_Phieu_nghiem_thu_U3_Bi_gam_Honda.md).
