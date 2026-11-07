@@ -61,3 +61,22 @@
 - R2-01: 8 địa chỉ Quảng Ninh đã sửa thành phần cấp tỉnh (T03 đóng).
 - R2-02: bảng mã thống nhất ở phiếu 05.
 - R2-03: 02 bỏ 2 dòng "Chờ rà soát kỹ thuật"; 03 thêm T03; số FAQ đúng là 9.
+
+## 5. Phụ lục V2.2 — delta theo R4 (07/11/2026)
+
+Điểm V1.9 95,5 ở trên giữ làm lịch sử, không phải điểm V2.2. Bản nguồn: SHA ghi trong 01 cùng build. Phạm vi: demo frontend; backend/CRM/tracking/production = CX.
+
+| Mục | Kết quả |
+|---|---|
+| V22-TY-01 form | Đóng (reviewer R4 kiểm trực tiếp CTX-01–04, 06; CTX-05 đối chiếu source; CTX-07 form nổi chưa thử chuyển ngữ cảnh) |
+| R4-01 link nguồn | Mã hóa `(`/`)` trong 5 link Commons; export lại, kiểm 5/5 HTTP 200 |
+| R4-02 Image Pack | Mục 9 ở 02: mapping 6 caption, TY-IMG-13 Camry, tài sản dùng chung, OG; bỏ dòng "chờ Media" |
+| Ghi công ảnh | Dòng ghi công CC BY-SA 4.0 công khai dưới lưới xe |
+| QA hiển thị phần mới | Chọn nhanh, CTA dưới lưới, caption, dòng ghi công: 375 / 768 / 1366 px, không tràn ngang (07/11, trình duyệt) |
+
+| Nhóm | Tự chấm V2.2 (preview) |
+|---|---|
+| Content | 28,5/30 |
+| SEO | 28,7/30 |
+| GEO | 23,8/25 (G3 4,9 sau khi đóng R4-01/02) |
+| U1–U3 | CX tới khi reviewer chốt phụ lục U3 V2.2 |

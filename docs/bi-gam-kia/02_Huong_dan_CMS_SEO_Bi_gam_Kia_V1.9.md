@@ -101,6 +101,25 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 
 Đã đối chiếu tác giả + giấy phép qua Commons API.
 
-- `hinh/m-forte.webp`: [2011 Kia Forte EX, front left (Joshua Tree).jpg](https://commons.wikimedia.org/wiki/File:2011_Kia_Forte_EX,_front_left_(Joshua_Tree).jpg)
-- `hinh/m-sedona.webp`: ['17-'18 Kia Sedona -- Front.jpg](https://commons.wikimedia.org/wiki/File:'17-'18_Kia_Sedona_--_Front.jpg)
+- `hinh/m-forte.webp`: [2011 Kia Forte EX, front left (Joshua Tree).jpg](https://commons.wikimedia.org/wiki/File:2011_Kia_Forte_EX,_front_left_%28Joshua_Tree%29.jpg)
+- `hinh/m-sedona.webp`: ['17-'18 Kia Sedona -- Front.jpg](https://commons.wikimedia.org/wiki/File:%2717-%2718_Kia_Sedona_--_Front.jpg)
 - 6 ảnh khối "Vì sao chọn" có `figcaption` mô tả đúng loại ảnh (ảnh case ghi xe + mẫu đèn).
+
+## 9. Image Pack V2.2 (07/11/2026)
+
+Đo từ tệp thật (sharp). Thumbnail dòng xe khác dùng chung `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe). Không có ảnh trước–sau/beam test.
+
+| Asset ID | Tệp | Kích thước | Bytes | Loại | Nguồn / quyền | Vai trò, giới hạn | Vị trí, tải | ALT / caption |
+|---|---|---|---:|---|---|---|---|---|
+| KIA-IMG-01 | `hinh/hero-kia-carnival-2025-bi-gam-aes-sv-30-max.webp` | 1100 × 638 webp | 79.998 | Ảnh chụp thực tế (ảnh bài case) | Bài case Carnival 2.2D Luxury 2025 – AES SV 3.0 Max, auto365.vn | Hero: xe Kia đã lắp tại Auto365 | Hero, eager | Kia Carnival 2.2D Luxury 2025 lắp bi gầm AES SV 3.0 Max tại Auto365 |
+| KIA-IMG-02 | `hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp` | 1000 × 563 webp | 45.358 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 | Thao tác lắp; không đại diện một ca Kia cụ thể | Vì sao chọn, lazy | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước / caption: Ảnh thực tế: kỹ thuật viên lắp bi gầm vào hốc đèn cản trước |
+| KIA-IMG-03 | `hinh/m-forte.webp` | 640 × 400 webp | 17.472 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons © Mr.choppers, CC BY-SA 3.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:2011_Kia_Forte_EX,_front_left_%28Joshua_Tree%29.jpg); ghi công công khai dưới lưới xe | Thumbnail nhận diện dòng xe, không phải ảnh case | Thẻ dòng xe, lazy | Kia Forte |
+| KIA-IMG-04 | `hinh/m-sedona.webp` | 640 × 400 webp | 14.754 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Bull-Doser, public domain — [trang file gốc](https://commons.wikimedia.org/wiki/File:%2717-%2718_Kia_Sedona_--_Front.jpg) | Thumbnail nhận diện dòng xe | Thẻ dòng xe, lazy | Kia Sedona |
+| KIA-IMG-05 | `auto365vn-kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max-14-img_6ab62e93291146.39209539.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Carnival 2.2D Luxury 2025 lắp AES SV 3.0 Max tại Auto365 |
+| KIA-IMG-06 | `auto365vn-kia-carens-2023-lap-bi-gam-aes-sv-30-max-1-img_6ab5ef0c418627.23530488.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Carens 2023 lắp AES SV 3.0 Max tại Auto365 |
+| KIA-IMG-07 | `kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new-8-1791511473.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Morning Si AT 2016 lắp X-Light F10 2.0 New tại Auto365 |
+| KIA-IMG-08 | `kia-sportage-2-0g-premium-2022-lap-bi-gam-x-light-f10-turbo-1792548422.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Sportage 2.0G Premium 2022 lắp X-Light F10 Turbo tại Auto365 |
+| KIA-IMG-09 | `auto365vn-kia-sedona-nang-cap-bi-gam-x-light-f10-pro-v2-img_6a5ef67002e9e9.68465652.jpg.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Sedona lắp X-Light F10 Pro V2 tại Auto365 |
+
+Thuật ngữ: **15 nội dung hồ sơ = 13 bài case + 2 video**, không gọi "15 xe thi công". `case_id`/`work_order_ref` chưa khóa — điền khi kỹ thuật xác minh từng ca. Sonet chỉ là bài ảnh tổng hợp tham khảo.
+OG: preview chưa chốt ảnh production; đề xuất KIA-IMG-01 qua CDN auto365.vn — IT (CX).

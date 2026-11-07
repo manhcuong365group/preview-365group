@@ -47,3 +47,7 @@ Người kiểm tra SEO: Ngọc Trân; rà soát kỹ thuật: Nguyễn Quang Đ
 ## Phụ lục U3 06/11/2026
 
 Anh Nguyễn Quang Đạo duyệt 06/11/2026 các thay đổi sau phiếu U3 05/11: (1) sửa form — `service` cố định, dòng xe lấy từ ô xe khi gửi; (2) khối Chọn nhanh, CTA dưới lưới xe; (3) câu "Nên gọi trước để xác nhận cơ sở và lịch lắp" ở CTA cuối. `lastReviewed` = 2026-11-06. Phiếu PDF 05/11 giữ nguyên.
+
+## Ghi nhận R4 V2.2 (07/11/2026)
+
+Reviewer R4 06/11 đóng V22-TY-01. Vá R4-01/02/03 ngày 07/11 (link nguồn, Image Pack, phụ lục 03). PDF V1.9 05/11 giữ làm lịch sử; chờ reviewer chốt phụ lục U3 V2.2.

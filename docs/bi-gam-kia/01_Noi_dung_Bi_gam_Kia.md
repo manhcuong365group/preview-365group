@@ -11,8 +11,8 @@
 | H1 | Bi gầm Kia theo từng dòng xe |
 | dateModified | 2026-11-06 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (15), FAQPage |
-| SHA-256 index.html | `3f9e2f001cb6d048f0cd2ccb8c187081375565cb4d6da452c005382f93f20459` |
-| SHA-256 content-src.html | `66fde67530a89b95ae25a51c25d9e4743ce1341d7c61e8c1319cb73a8146be45` |
+| SHA-256 index.html | `0126b12ba8ffd6acafefedef257f26c620560df13ea33ff7cad5f076e6373604` |
+| SHA-256 content-src.html | `2432cdd3184705452a7de7b04606428c029f5d6a5c4f67f55d0a03e1b21dd552` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -187,5 +187,5 @@ _Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiể
 ## CTA và form
 
 - CTA cuối: Kiểm tra cấu hình bi gầm phù hợp cho dòng xe Kia của bạn — nút "Nhận tư vấn ngay" (#tu-van), gọi 0365 365 911
-- Form: action `/api/leads`, data-service `Bi gầm Kia` (+ " - Kia [dòng xe]" khi bấm thẻ dòng xe chưa có hồ sơ), data-source-page `Bi gầm Kia`
-- Trường: phone, fullname, car_model, priority, province; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED"
+- Form: action `/api/leads`, data-service `Bi gầm Kia` (cố định, không đổi khi chọn/sửa xe), dòng xe gửi ở trường `car_model` = giá trị ô xe lúc gửi (bấm thẻ dòng xe chỉ điền sẵn ô này), data-source-page `Bi gầm Kia`
+- Trường: phone, fullname, car_model, priority, province; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED" (taxonomy CRM hiện hành; IT xác nhận routing khi test production)

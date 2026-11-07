@@ -11,8 +11,8 @@
 | H1 | Bi gầm Toyota theo từng dòng xe |
 | dateModified | 2026-11-06 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `44fa83c0a09430fb7bbe6a7233551db8b9c99786f93acaf1598c233818ee9a17` |
-| SHA-256 content-src.html | `1c6e09240b4d720275ac00e6ff0ee082e19a9eb3bec3316187371033e48d7158` |
+| SHA-256 index.html | `a017b61fa4f949279973b1f867cbcd8551cbe170cada8f69e3de842389ec928c` |
+| SHA-256 content-src.html | `e26884d4736318c70b90897467757e823ccc68c99fa5dd3d0c4f69813f30aee0` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -201,5 +201,5 @@ _Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiể
 ## CTA và form
 
 - CTA cuối: Kiểm tra cấu hình bi gầm phù hợp cho dòng xe Toyota của bạn — nút "Nhận tư vấn ngay" (#tu-van), gọi 0365 365 911
-- Form: action `/api/leads`, data-service `Bi gầm Toyota` (+ " - Toyota [dòng xe]" khi bấm thẻ dòng xe chưa có hồ sơ), data-source-page `Bi gầm Toyota`
-- Trường: phone, fullname, car_model, priority, province; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED"
+- Form: action `/api/leads`, data-service `Bi gầm Toyota` (cố định, không đổi khi chọn/sửa xe), dòng xe gửi ở trường `car_model` = giá trị ô xe lúc gửi (bấm thẻ dòng xe chỉ điền sẵn ô này), data-source-page `Bi gầm Toyota`
+- Trường: phone, fullname, car_model, priority, province; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED" (taxonomy CRM hiện hành; IT xác nhận routing khi test production)

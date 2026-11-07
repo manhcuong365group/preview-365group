@@ -36,3 +36,7 @@ Hồ sơ chốt R9: đóng U1/U2/U3 và các lỗi KIA-P0-01…04, P1-01/02/03/0
 ## Phụ lục U3 06/11/2026
 
 Anh Nguyễn Quang Đạo duyệt 06/11/2026 các thay đổi sau phiếu U3 05/11: (1) sửa form — `service` cố định, dòng xe lấy từ ô xe khi gửi; (2) khối Chọn nhanh, CTA dưới lưới xe; (3) câu "Nên gọi trước để xác nhận cơ sở và lịch lắp" ở CTA cuối. `lastReviewed` = 2026-11-06. Phiếu PDF 05/11 giữ nguyên.
+
+## Ghi nhận tái kiểm V2.2 R2 (07/11/2026)
+
+PDF R9 là V1.9 (PASS preview 05/11) + phụ lục 06/11, giữ làm lịch sử. Vá KIA22-03/04/06/07 ngày 07/11. Chờ reviewer chốt phụ lục U3 V2.2; IT/CRM đóng production.

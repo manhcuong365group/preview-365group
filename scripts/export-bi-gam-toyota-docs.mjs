@@ -88,8 +88,8 @@ faqs.forEach((f) => L.push('**' + f.q + '**', '', f.a, ''));
 L.push('_' + txt(doc.querySelector('.bgvf-disc')) + '_', '');
 const form = doc.querySelector('#tu-van form');
 L.push('## CTA và form', '', '- CTA cuối: ' + txt(doc.querySelector('#tu-van-ngay h2')) + ' — nút "Nhận tư vấn ngay" (#tu-van), gọi 0365 365 911');
-L.push('- Form: action `' + form.getAttribute('action') + '`, data-service `' + form.dataset.service + '` (+ " - Toyota [dòng xe]" khi bấm thẻ dòng xe chưa có hồ sơ), data-source-page `' + form.dataset.sourcePage + '`');
-L.push('- Trường: ' + [...form.elements].filter((e) => e.name && e.name !== 'form-honey').map((e) => e.name).join(', ') + '; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED"', '');
+L.push('- Form: action `' + form.getAttribute('action') + '`, data-service `' + form.dataset.service + '` (cố định, không đổi khi chọn/sửa xe), dòng xe gửi ở trường `car_model` = giá trị ô xe lúc gửi (bấm thẻ dòng xe chỉ điền sẵn ô này), data-source-page `' + form.dataset.sourcePage + '`');
+L.push('- Trường: ' + [...form.elements].filter((e) => e.name && e.name !== 'form-honey').map((e) => e.name).join(', ') + '; nhãn nhu cầu hiển thị "Đèn – Bi gầm, Bi LED", giá trị gửi API giữ "Đèn – Bi LED" (taxonomy CRM hiện hành; IT xác nhận routing khi test production)', '');
 fs.writeFileSync(path.join(out, '01_Noi_dung_Bi_gam_Toyota.md'), L.join('\n'));
 
 // ---- 04 ----

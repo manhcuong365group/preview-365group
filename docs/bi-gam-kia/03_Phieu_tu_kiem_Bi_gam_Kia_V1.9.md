@@ -40,3 +40,23 @@
 ## 3. Audit 05/11/2026 — xử lý
 
 Đã vá trên preview: KIA-P0-01 (case Seltos), P0-04 (đồng bộ 02), P1-01 (K5), P1-02 (Sonet), P1-03 (nhãn thẻ), P1-04 (placeholder), P1-05 (content_type), P1-07 (câu giắc chuyển) — chi tiết 02 mục 7. Anh Đạo duyệt phần vá 05/11 (chủ quản xác nhận). Phiếu U3 R9 05/11 đóng U1/U2/U3 và KIA-P0-02 (lead/CRM theo xác nhận người phụ trách). Còn P0-03/05 và P2 phụ thuộc production/IT. P1-06 ảnh Forte (CC BY-SA 3.0): đã ghi công trong 02, nên thay ảnh Auto365 khi có.
+
+## 5. Phụ lục V2.2 — tái kiểm R2 06/11, xử lý 07/11/2026
+
+Phiếu V1.9 ở trên giữ làm lịch sử, không đổi nhãn thành V2.2. Phạm vi: demo preview.
+
+| Mã | Xử lý 07/11 | Trạng thái |
+|---|---|---|
+| KIA22-03 | Ghi công công khai Forte (Mr.choppers, CC BY-SA 3.0, link file + giấy phép, "đã tách nền") và Sedona (public domain) dưới lưới xe | Đã sửa |
+| KIA22-04 | 01 mô tả form đúng code: `service` cố định "Bi gầm Kia", xe ở `car_model`; priority gửi "Đèn – Bi LED" — IT xác nhận routing CRM | Đã sửa 01; routing CX |
+| KIA22-06 | Image Pack ở 02 mục 9 (hero, quy trình, 2 ảnh Commons, 5 ảnh case + caption) | Đã bổ sung |
+| KIA22-07 | 15 nội dung = 13 case + 2 video; case_id chưa khóa | Ghi rõ ở 02 |
+| QA phần mới | Chọn nhanh, CTA dưới lưới, caption, ghi công: 375 / 768 / 1366 px không tràn ngang (07/11) | Đạt trên trình duyệt |
+| KIA22-01/02/05/08/09 | Production, form→CRM, QA thiết bị V2.2, chính sách giá/miễn phí, baseline | IT/CRM/QA/Kinh doanh — CX |
+
+| Nhóm | Tự chấm V2.2 (preview) |
+|---|---|
+| Content | 28,5/30 |
+| SEO | 28,6/30 |
+| GEO | 24,0/25 |
+| U1–U3 | CX — chờ reviewer chốt phụ lục U3 V2.2 |

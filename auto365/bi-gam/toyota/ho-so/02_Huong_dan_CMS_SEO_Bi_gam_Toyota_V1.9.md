@@ -102,10 +102,10 @@ Kiểm bằng Schema Markup Validator (validator.schema.org), đối chiếu s�
 | TY-IMG-05 | `hinh/ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp` | 1000 × 563 webp | 62.088 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 | Bước căn chỉnh đường cắt Cos trên bảng test; không phải phép đo độ rọi | Yaris Cross (theo tên tệp) | Vì sao chọn | Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365 | ĐẠT nguồn nội bộ |
 | TY-IMG-06 | `hinh/ly-do-tu-van-theo-tung-dong-toyota.webp` | 1000 × 563 webp | 109.170 | Ảnh chụp thực tế | Chủ quản cung cấp 04/11/2026 | Minh họa tư vấn theo dòng xe Toyota | — | Vì sao chọn | Các dòng xe Toyota tại showroom Auto365 | ĐẠT nguồn nội bộ |
 | TY-IMG-07 | `hinh/m-yaris.webp` | 640 × 400 webp | 15.718 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Ethan Llamas, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Yaris | Thẻ dòng xe | Toyota Yaris | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:2018_Toyota_Yaris_1.3_E_in_Freedom_White,_front_left.jpg) |
-| TY-IMG-08 | `hinh/m-corolla-altis.webp` | 640 × 400 webp | 15.574 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © WC-QHS, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Corolla Altis | Thẻ dòng xe | Toyota Corolla Altis | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:Toyota_Corolla_Altis_(E210)_white_in_Taichung_20210214.jpg) |
+| TY-IMG-08 | `hinh/m-corolla-altis.webp` | 640 × 400 webp | 15.574 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © WC-QHS, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Corolla Altis | Thẻ dòng xe | Toyota Corolla Altis | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:Toyota_Corolla_Altis_%28E210%29_white_in_Taichung_20210214.jpg) |
 | TY-IMG-09 | `hinh/m-rush.webp` | 640 × 400 webp | 20.146 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © LuvsMG481, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Rush | Thẻ dòng xe | Toyota Rush | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:2024_Toyota_Rush_S_1.5_Dual_VVT-i_S_front.jpg) |
-| TY-IMG-10 | `hinh/m-innova.webp` | 640 × 400 webp | 12.530 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Raflypradana01, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Innova | Thẻ dòng xe | Toyota Innova | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:Toyota_Kijang_Innova_2.4_Venturer_GUN142R_(20221231).jpg) |
-| TY-IMG-11 | `hinh/m-previa.webp` | 640 × 400 webp | 30.000 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Dinkun Chen, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Previa | Thẻ dòng xe | Toyota Previa | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:TOYOTA_PREVIA_(XR50)_China_(5).jpg) |
+| TY-IMG-10 | `hinh/m-innova.webp` | 640 × 400 webp | 12.530 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Raflypradana01, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Innova | Thẻ dòng xe | Toyota Innova | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:Toyota_Kijang_Innova_2.4_Venturer_GUN142R_%2820221231%29.jpg) |
+| TY-IMG-11 | `hinh/m-previa.webp` | 640 × 400 webp | 30.000 | Ảnh xe tham khảo (đã tách nền) | Wikimedia Commons © Dinkun Chen, CC BY-SA 4.0 | Thumbnail nhận diện dòng xe | Previa | Thẻ dòng xe | Toyota Previa | ĐẠT ghi công; [trang file gốc](https://commons.wikimedia.org/wiki/File:TOYOTA_PREVIA_%28XR50%29_China_%285%29.jpg) |
 | TY-IMG-12 | `../theo-hang-xe/hinh/m-fortuner.webp` | 640 × 400 webp | 11.204 | Ảnh xe tham khảo (thumbnail dùng chung) | Bộ thumbnail trang theo-hang-xe | Thumbnail; OG preview hiện tại | Fortuner | Thẻ dòng xe, OG preview | Toyota Fortuner | ĐẠT |
 
 Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production làm khi IT đưa lên CDN auto365.vn. Kiểm: Content Auto365, 06/11/2026.
@@ -115,7 +115,7 @@ Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production
 | Mã | Đã làm |
 |---|---|
 | V22-TY-01 | Bỏ việc nối tên xe vào `data-service` khi bấm thẻ xe. `service` luôn là "Bi gầm Toyota", dòng xe chỉ lấy từ `car_model` (giá trị ô xe lúc gửi). Đổi/xoá/reset ô xe không còn giữ xe cũ. Kiểm CTX-01–05 trên preview |
-| V22-TY-02 | Image Pack mục 7 (12 tài sản chủ lực, đo từ tệp). Caption ảnh "Vì sao chọn": chờ Media chốt nội dung |
+| V22-TY-02 | Image Pack mục 7 (12 tài sản chủ lực, đo từ tệp). Caption ảnh "Vì sao chọn": đã xuất 6/6 (06/11/2026, Content Auto365 soạn theo nguồn ảnh trong Image Pack; mapping ở mục 9) |
 | V22-TY-03/04 | CTA/microcopy, srcset, OG, sitemap ảnh: P1, làm khi Operations/IT xác nhận |
 
 ### CRO P1 (06/11/2026)
@@ -129,3 +129,22 @@ Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production
 
 - 6 ảnh khối "Vì sao chọn" có `figcaption` (thêm khi build, khối nguồn dùng chung với theo-hang-xe không đổi).
 - 5 ảnh xe Wikimedia: link trang file gốc ghi trong Image Pack, tác giả + giấy phép đã đối chiếu qua Commons API.
+
+## 9. Mapping caption, tài sản dùng chung, OG (07/11/2026 — vá R4)
+
+### 9.1 Caption khối "Vì sao chọn" (cùng build)
+
+| Asset ID | Ảnh | Caption đang xuất | ALT |
+|---|---|---|---|
+| TY-IMG-02 | `ly-do-he-thong-90-chi-nhanh-33-tinh-thanh.webp` | Đồ họa hệ thống Auto365 — số chi nhánh theo danh bạ hiện hành | Hệ thống Auto365 hơn 90 chi nhánh tại 33 tỉnh thành |
+| TY-IMG-03 | `ly-do-tra-cuu-bao-hanh-dien-tu-phieu-ban-giao.webp` | Ảnh thực tế: tra cứu bảo hành điện tử và phiếu bàn giao | Tra cứu bảo hành điện tử trên baohanh.365group.com.vn và phiếu bàn giao sản phẩm tại Auto365 |
+| TY-IMG-04 | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Ảnh thực tế: kỹ thuật viên lắp bi gầm vào hốc đèn cản trước | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
+| TY-IMG-05 | `ly-do-can-chinh-cos-toyota-yaris-cross-bang-test.webp` | Ảnh thực tế: căn chỉnh đường cắt Cos trên bảng test (Toyota Yaris Cross) | Căn chỉnh đường cắt Cos trên bảng test tại xưởng Auto365 |
+| TY-IMG-13 | `toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0-1791873564.webp` | Camry 2.5HV 2024 lắp X-Light F10 Hyper 2.0 tại Auto365 | Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0 |
+| TY-IMG-06 | `ly-do-tu-van-theo-tung-dong-toyota.webp` | Ảnh thực tế: tư vấn chọn mẫu theo dòng xe | Các dòng xe Toyota tại showroom Auto365 |
+
+- **TY-IMG-13** (bổ sung): ảnh case Camry 2.5HV 2024 – X-Light F10 Hyper 2.0, URL tuyệt đối CDN auto365.vn, dùng lại từ bài case đã đăng (hồ sơ nguồn = bài case, có trong ItemList case). Không tạo case mới.
+- **TY-IMG-05**: caption ghi "Toyota Yaris Cross" theo ảnh do chủ quản cung cấp 04/11 kèm tên xe; ảnh minh họa bước căn chỉnh trên bảng test, không phải số đo độ rọi, không trình bày như một case.
+- Thumbnail dòng xe: không có caption (ALT = tên dòng xe). 14 thumbnail dùng chung `../theo-hang-xe/hinh/m-*.webp` truy nguyên theo hồ sơ trang theo-hang-xe (`/bi-gam/theo-hang-xe/ho-so/`), không chép lại.
+- Ghi công công khai 5 ảnh Commons CC BY-SA 4.0: dòng chú thích dưới lưới dòng xe (tác giả + link trang file + link giấy phép + "đã tách nền").
+- OG: preview dùng thumbnail Fortuner 640×400; đề xuất production dùng TY-IMG-01 qua CDN auto365.vn — IT chốt (CX). Chưa có rendition/srcset; không khai URL chưa tồn tại.
