@@ -1,19 +1,54 @@
 # Bi gầm VinFast VF Wild — Hướng dẫn CMS/SEO V1.8
 
-## Bản hiện hành 07/11/2026
+Bản 07/11/2026 · Chuẩn V1.9
 
 | Trường | Giá trị |
 |---|---|
-| Trạng thái | **Đã xác nhận mẫu.** Anh Nguyễn Quang Đạo xác nhận 17 mẫu cho VF Wild 07/11/2026 (bảng XAC_NHAN_TUONG_THICH_VF_WILD_20261107.md). Còn chờ: ảnh thật, phiếu U1–U3, map URL production |
-| Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
-| URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
-| SHA-256 index.html | `2ae94f735ecaee16a503b9903e9c6e8b98e60429a56647dc9dac788fe9fb9530` |
-| Ngày (dòng Cập nhật + datePublished/dateModified) | 07/11/2026 |
-| reviewedBy / lastReviewed | Nguyễn Quang Đạo · 2026-11-07 |
-| Mô tả xe | Chỉ ghi "mẫu bán tải điện của VinFast"; không ghi năm ra mắt, kích thước, phiên bản (chưa có nguồn) |
-| Danh mục | 17 mẫu (lens 3.0 và 2.0 inch), ItemList 17, bảng so sánh 8 mẫu; giá thiết bị 3.500.000–6.000.000đ/bộ chưa VAT — như VF9. Nhãn bảng "Kỹ thuật xác nhận" (anh Đạo 07/11) |
-| Ảnh | Bộ minh họa AI 07/11/2026 (7 ảnh vf-wild_01…07, nén 1600px q80), ALT ghi "Ảnh minh họa AI", không gắn SKU/địa điểm; Cos/Pha: minh họa AI, không phải phép đo. Hero/OG/schema = 01. BẮT BUỘC thay ảnh chụp thực tế trước production |
-| Case | Khối "Một số xe VinFast khác đã lắp bi gầm" giữ như VF9 |
-| Dòng xe khác | Thêm thẻ VF9 (../vf9/), giữ các thẻ còn lại như VF9 |
-| Danh bạ | Như VF9: bộ tìm cơ sở, nhãn "90+" |
-| Còn mở | Ảnh thật; phiếu U1–U3; Hub VinFast link trang này; map URL/OG production; gỡ khối kiểm tra nội bộ khi đăng |
+| SHA-256 index.html | `636373ccad8241b59e8f8cb389288c01e01a1bd6c1019978606da20c65e408f0` |
+| URL preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ |
+| URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
+
+## 1. On-page
+
+| Hạng mục | Giá trị |
+|---|---|
+| Title | Bi gầm VinFast VF Wild: Giá, cấu hình và lựa chọn phù hợp \| Auto365 |
+| Meta description | Tư vấn bi gầm VinFast VF Wild: giá đèn từ 3,5 triệu đồng/bộ chưa VAT, chọn cấu hình theo nhu cầu, kiểm tra vị trí lắp, pát và hệ điện trước khi thi công. |
+| H1 | Bi gầm VinFast VF Wild: phương án lắp, giá và lựa chọn phù hợp |
+| H2 sản phẩm | 17 mẫu bi gầm kỹ thuật Auto365 xác nhận lắp được trên VinFast VF Wild |
+| Mô tả xe | "mẫu bán tải điện của VinFast" — không thêm năm, kích thước, phiên bản khi chưa có nguồn |
+| Canonical | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild (tự trỏ) |
+| Robots | Preview: `noindex, nofollow, noarchive`. Production: `index, follow` (kiểm cả X-Robots-Tag) |
+
+## 2. Schema (1 script JSON-LD, @graph)
+
+WebSite · Organization · Person (Nguyễn Quang Đạo, /tac-gia/nguyen-quang-dao) · BreadcrumbList (Nâng cấp ánh sáng → Bi gầm → VinFast → VF Wild) · Article · CollectionPage (reviewedBy Đạo, lastReviewed 2026-11-07, ItemList 17 mẫu) · FAQPage (9 câu, khớp FAQ hiển thị). datePublished/dateModified 2026-11-07. Mỗi lần sửa: `JSON.parse` lại script, dateModified = ngày sửa.
+
+## 3. Ảnh — bộ minh họa AI 07/11/2026, BẮT BUỘC thay ảnh chụp thực tế trước production
+
+| File | Vị trí | ALT |
+|---|---|---|
+| hinh/vf-wild_01-hero-toan-xe.jpg | Hero, og:image, twitter:image, Article.image | Ảnh minh họa AI: VinFast VF Wild toàn xe |
+| hinh/vf-wild_02-hoc-den-truoc-lap.jpg | Khối tổng quan | Ảnh minh họa AI: vị trí lắp bi gầm trên cản trước VinFast VF Wild, trước khi lắp đèn |
+| hinh/vf-wild_03-ky-thuat-vien-dang-lap.jpg | Khối "Khi nào cần kiểm tra xe" | Ảnh minh họa AI: kỹ thuật viên lắp bi gầm vào cản trước VinFast VF Wild |
+| hinh/vf-wild_04-bi-gam-sau-lap.jpg | Khối giá | Ảnh minh họa AI: bi gầm lắp trên cản trước VinFast VF Wild |
+| hinh/vf-wild_05-vung-sang-cos.jpg | Khối "Lý do chọn" | Ảnh minh họa AI: vùng sáng Cos của bi gầm (minh họa AI, không phải phép đo) |
+| hinh/vf-wild_06-vung-sang-pha.jpg | Khối "Lý do chọn" | Ảnh minh họa AI: vùng sáng Pha của bi gầm (minh họa AI, không phải phép đo) |
+| hinh/vf-wild_07-ban-giao-xe.jpg | 2 thẻ hỗ trợ | Ảnh minh họa AI: VinFast VF Wild sau khi lắp bi gầm |
+
+Khi có ảnh thật: giữ tên file, bỏ chữ "minh họa AI" trong ALT, không gắn SKU/địa điểm nếu chưa có hồ sơ ca.
+
+## 4. Liên kết
+
+- Trong: hub /nang-cap-anh-sang-bi-gam/vinfast, /nang-cap-anh-sang-bi-gam, /nang-cap-anh-sang; khối dòng xe khác (VF9, VF e34, VF5, VF6, VF7, VF8, MPV7, Limo Green, Herio Green, Minio Green, EC Van, Fadil, Lux SA2.0, VF3); cẩm nang ánh sáng; danh bạ /chi-nhanh; tác giả /tac-gia/nguyen-quang-dao.
+- Thẻ đang trỏ preview (`../xxx/`) phải đổi sang URL production khi đăng.
+- Hub VinFast production cần thêm thẻ VF Wild sau khi URL production trả 200.
+
+## 5. Checklist IT khi đăng production
+
+- [ ] Gỡ hẳn `<aside id="vf3lp-internal-check">` và script `vf3lp-internal-check-js` khỏi HTML (không chỉ ẩn).
+- [ ] Đổi og:image / twitter:image / Article.image từ preview-365group.pages.dev sang CDN auto365.vn.
+- [ ] Robots `index, follow`; canonical tự trỏ; thêm vào sitemap.
+- [ ] Form giữ `action="/api/leads"`, chỉ báo thành công khi `{success:true, lead_id}`; test 1 lead test rồi xoá.
+- [ ] Thay 7 ảnh AI bằng ảnh chụp thực tế.
+- [ ] Kiểm 200 cho ảnh/CSS/JS; JSON.parse JSON-LD trên bản production.

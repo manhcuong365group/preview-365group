@@ -1,36 +1,72 @@
-> **Trang mới dựng 07/11/2026 từ khung VF9 — ĐÃ XÁC NHẬN MẪU (anh Đạo 07/11/2026), chờ phiếu U1–U3.** 9 mẫu theo VF 3 cùng nền tảng; ảnh minh họa tạm, chờ ảnh thật. Nội dung lịch sử bên dưới kế thừa từ hồ sơ VF9, chỉ mang tính tham khảo khung.
+# Hướng dẫn CMS/SEO — Bi gầm VinFast Minio Green (V1.9)
 
-# Bi gầm VinFast Minio Green — Hướng dẫn CMS/SEO V1.8
-
-## Bản hiện hành 04/11/2026
-
-| Trường | Giá trị |
+| Mục | Giá trị |
 |---|---|
-| Trạng thái | **Chờ duyệt.** Dựng 04/11/2026 từ khung trang VF8 (bản sau hotfix 02/11). Chờ anh Nguyễn Quang Đạo xác nhận kỹ thuật 17 mẫu trên Minio Green (danh sách theo VF8, chủ trang chọn 04/11); chưa có phiếu U1–U3 |
-| Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
-| Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
-| URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `b60fb73dd04d3332620de1c1ebb57368cec08ec316e6fdb5cc2d7a40b4c6d344` |
-| Vá audit 04/11 (05/11/2026) | Đã sửa: FAQ "có lắp được không" và các câu "17/16 mẫu" chuyển sang dạng có điều kiện (mẫu tham khảo, cần kiểm tra khả năng lắp trên xe), JSON-LD FAQPage đồng bộ; thẻ dòng xe khác trỏ trang Minio Green/VF e34 thay vì tìm kiếm v2, bỏ thẻ tự trỏ; bỏ popup video rỗng; dateModified 05/11/2026. Minio Green: lens đối chiếu theo đời xe, Eco/Plus. Còn mở: fitment từng mẫu chờ anh Nguyễn Quang Đạo xác nhận; ảnh thật/case thay ảnh AI; Hub VinFast chưa link trang này; IT/CRM/canonical/production (U1–U3). Giữ theo chủ trang: chuẩn dịch vụ tất cả cơ sở, nhãn 90+, bộ tìm 91 cơ sở |
-| Ngày (dòng Cập nhật + datePublished/dateModified) | 04/11/2026 |
-| reviewedBy / lastReviewed | Chưa gắn — bổ sung khi anh Đạo xác nhận |
-| Danh mục | 17 mẫu (lens 3.0 và 2.0 inch), ItemList 17, bảng so sánh 8 mẫu; giá thiết bị 3.500.000–6.000.000đ/bộ chưa VAT — giữ nguyên như VF8 |
-| Ảnh | Ảnh đầu trang: ảnh tham khảo dòng xe Minio Green (hinh/vf9-tham-khao.jpg, lấy từ bộ ảnh xe của hub). Ảnh quy trình: tư liệu Auto365 trên VF8 (trỏ ../vf8/hinh/), alt ghi "ảnh tham khảo trên xe VinFast khác". og:image: ảnh bài "VinFast Minio Green độ đèn mới nhất 2024" trên auto365.vn. Cần thay ảnh thật Minio Green trước production |
-| Case | Chưa có hồ sơ bi gầm Minio Green; giữ khối case VinFast chung như VF5/VF8 |
-| Nâng cấp khác | 3 bài/sản phẩm Minio Green có trên sitemap auto365.vn: độ đèn Minio Green 2024, 3M Ceramic NR cửa sổ trời VF8/Minio Green, giáp pin KATA Minio Green |
-| Danh bạ | Như VF8: 91 cơ sở (Bắc 41/Trung 26/Nam 24), mỗi số một tel:, nhãn "90+" |
-| Còn mở | Xác nhận kỹ thuật Minio Green (anh Đạo); phiếu U1–U3; ảnh thật Minio Green; map URL/OG production; gỡ khối kiểm tra nội bộ khi đăng |
+| Trang | Bi gầm VinFast Minio Green (MODEL_GUIDE, tư vấn theo dòng xe) |
+| Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
+| URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
+| SHA-256 index.html | `1584afbe5b9f46d0580efb8fd302fd204fb461bff7391ad8bbc94f515ed0d0a6` |
+| Dựng | 07/11/2026, từ khung trang VF9 |
+| Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 (bảng `XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md`) |
+| datePublished / dateModified / lastReviewed | 2026-11-07 / 2026-11-07 / 2026-11-07 |
 
-| Kỹ thuật xác nhận 05/11/2026 | Anh Nguyễn Quang Đạo xác nhận danh sách mẫu lắp được (Minio Green/VF e34: 17 mẫu; Lux A2.0: 16 mẫu). Đã thêm reviewedBy + lastReviewed 2026-11-05, nhãn "Kỹ thuật xác nhận", FAQ/khối sản phẩm/ghi chú nội bộ. Ảnh AI vẫn phải thay trước production. |
-| Ảnh thật 05/11/2026 | Thay 7 ảnh AI bằng ảnh thực tế Minio Green chủ trang cung cấp (toàn xe, hốc zin, đang lắp, sau lắp, đầu xe bàn giao, Cos, Pha); alt ghi "ảnh thực tế". Đã đóng mục thay ảnh AI. |
-| Link production 05/11/2026 | Thẻ "Dòng xe khác" VF5/VF8/Lux SA2.0 trỏ URL production đã đăng (auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf5, vf8, lux-sa2-0). |
-| Duyệt nội bộ 05/11/2026 | ĐÃ DUYỆT V1.9 R9 — U1/U2/U3 PASS. Phiếu: `PHIEU_U3_HUB_BI_GAM_VINFAST_VF9_V19_R9_DA_DUYET_DONG_U123_20261105.pdf`. Còn: cấu hình production (index/follow, URL tài nguyên). |
-| Vá P1-03 (05/11/2026) | Bỏ chip "Chủ đề liên quan" tự trỏ về chính dòng xe (dẫn tới tin-tuc?q=…). Thẻ dòng xe khác đã trỏ URL bi gầm production. P0-03 "tất cả cơ sở": giữ theo quyết định chủ trang/vận hành. |
-| Vá audit V2.2 R1 (06/11/2026) | JSON-LD parse PASS bằng JSON.parse trên file deploy (1 script, không có newline thô — mục P0-01 Minio Green không tái hiện). og:image/twitter:image/Article.image = ảnh hero thực tế của trang. Bỏ meta keywords "Tin tức". CTA "Đặt lịch kiểm tra xe" → "Gửi yêu cầu kiểm tra xe". ALT ảnh 02 → "vị trí lắp… trước khi lắp đèn"; ảnh Cos/Pha → "tường đo… minh họa cách kiểm tra", không gọi là số đo trên xe. Lux: tách câu ảnh thực tế vs ảnh tường đo; ảnh 03 không còn được tham chiếu (file đã gỡ). e34: bỏ câu FAQ mâu thuẫn "không kết luận mọi mẫu". Còn: Hub production link, Data Matrix 17/16 SKU, Image Pack, "tất cả cơ sở" (chờ Ops), CRM/production (IT). |
+## 1. Metadata
 
-| 06/11/2026 | Viết lại câu cơ sở lắp; anh Đạo tái duyệt (phù hợp mọi đời xe), Media xác nhận ảnh; lastReviewed 2026-11-06 |
-| 07/11/2026 | Vá tái kiểm V2.2 R2: thêm bảng xác nhận tương thích (Đạo 06/11), link QA trỏ PDF hiệu lực, nhãn khối case "xe VinFast khác"; dateModified 2026-11-07 |
+- **Title:** `Bi gầm VinFast Minio Green: Giá, cấu hình và lựa chọn phù hợp | Auto365`
+- **Meta description:** `Tư vấn bi gầm VinFast Minio Green: giá đèn từ 4,5 triệu đồng/bộ chưa VAT, chọn cấu hình theo nhu cầu, kiểm tra vị trí lắp, pát và hệ điện trước khi thi công.`
+- **H1:** `Bi gầm VinFast Minio Green: phương án lắp, giá và lựa chọn phù hợp`
+- **Canonical:** self, URL production ở trên.
+- **Robots:** preview `noindex, nofollow, noarchive` (đúng cho staging). **Production: đổi sang `index, follow`**, kiểm cả meta và header `X-Robots-Tag`.
+- **Breadcrumb:** Trang chủ → Nâng cấp ánh sáng → Bi gầm → VinFast → Minio Green.
 
-| 07/11/2026 | Dựng trang Minio Green từ khung VF9: 9 mẫu theo VF 3, chờ Đạo xác nhận, ảnh minh họa tạm |
-| 07/11/2026 | Anh Nguyễn Quang Đạo xác nhận 9 mẫu lắp được Minio Green; reviewedBy + lastReviewed 2026-11-07; bảng XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md |
-| 07/11/2026 | Thay bộ ảnh minh họa AI 7 ảnh (01–07), khôi phục khung ảnh 03/04, Cos/Pha minh họa AI không phải phép đo; phải thay ảnh thực tế trước production |
+## 2. Nội dung chính
+
+- Tổng quan: Minio Green là xe điện mini dòng Green của VinFast, hướng tới chạy dịch vụ và di chuyển đô thị, dùng chung nền tảng với VF 3.
+- 9 mẫu bi gầm (X-Light 5, GTR 1, AES 3), lens 3.0 inch và 2.0 inch; giá thiết bị 4,5–6 triệu đồng/bộ, chưa VAT; pát, công, phụ kiện báo sau khi xem xe.
+- 9 mẫu: X-Light 301 V2, GTR G1 Turbo V2, X-Light F10 Turbo V2, AES SV 3.0 Pro, X-Light F10 Pro V2, X-Light X3 Ultra, AES SV 3.0 Max, X-Light F10 2.0 New, AES SV 2.0 Max.
+- Bảng so sánh 7 mẫu chính; bộ lọc hãng; gợi ý theo nhu cầu (đi phố, mưa/đường tối, đi tỉnh, tiết kiệm).
+- FAQ: câu đầu dùng xác nhận kỹ thuật "Kỹ thuật Auto365 (anh Nguyễn Quang Đạo, 07/11/2026) đã xác nhận 9 mẫu…". **Không** ghi "mọi đời".
+
+## 3. Schema (một khối JSON-LD `@graph`)
+
+Organization, WebSite, Person (Nguyễn Quang Đạo), BreadcrumbList, Article, CollectionPage (reviewedBy + lastReviewed), ItemList (numberOfItems = 9), Product ×9, FAQPage, Car. Kiểm `JSON.parse` trên HTML đã deploy; nội dung FAQ schema phải khớp FAQ hiển thị.
+
+## 4. Ảnh và ALT
+
+Bộ ảnh hiện tại là **ảnh minh họa AI (07/11/2026)** — **phải thay ảnh chụp thực tế trước production**.
+
+| File | Vị trí | ALT |
+|---|---|---|
+| minio-green_01-hero-toan-xe.jpg | Hero, OG, Twitter, Article.image | Ảnh minh họa AI VinFast Minio Green |
+| minio-green_02-hoc-den-gam-zin.jpg | Tổng quan | Ảnh minh họa AI vị trí lắp bi gầm trên cản trước…, trước khi lắp đèn |
+| minio-green_03-ky-thuat-vien-dang-lap.jpg | Thẻ lưu ý lắp | Ảnh minh họa AI kỹ thuật viên lắp bi gầm… |
+| minio-green_04-bi-gam-sau-lap.jpg | Thẻ báo giá | Ảnh minh họa AI bi gầm sau khi lắp… |
+| minio-green_05-vung-sang-cos.jpg | Lý do chọn | Ảnh minh họa AI đường cắt Cos trên tường đo, không phải phép đo |
+| minio-green_06-vung-sang-pha.jpg | Lý do chọn | Ảnh minh họa AI vùng sáng Pha trên tường đo, không phải phép đo |
+| minio-green_07-ban-giao-xe.jpg | Lý do chọn (2 thẻ) | Ảnh minh họa AI VinFast Minio Green sau khi lắp / hoàn thiện |
+
+Khi có ảnh thật: giữ tên file, sửa ALT bỏ "minh họa AI", cập nhật width/height, khối nội bộ và phiếu 03/04.
+
+## 5. Liên kết
+
+- Lên: hub https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast và https://auto365.vn/nang-cap-anh-sang-bi-gam.
+- Ngang: thẻ các mẫu VinFast khác (VF3, VF9, VF Wild, Herio Green, VF5, VF6, VF7, VF8, VF e34, VF MPV 7, Limo Green, Fadil, Lux SA2.0, EC Van). Khi map production, các link tương đối `../x/` phải đổi sang URL production tương ứng.
+- Hub VinFast production cần thêm thẻ Minio Green trỏ URL production **sau khi** URL trả 200.
+
+## 6. Checklist IT khi đăng production
+
+- [ ] Gỡ hẳn `<aside id="vf3lp-internal-check">` và script `vf3lp-internal-check-js` khỏi HTML (không chỉ ẩn).
+- [ ] Đổi og:image, twitter:image, Article.image từ `preview-365group.pages.dev` sang CDN auto365.vn.
+- [ ] Robots `index, follow`; canonical self; sitemap trang + ảnh.
+- [ ] Form `/api/leads`: chỉ báo thành công khi `{"success": true}` kèm `lead_id`; field `service`/`source_page`/`car_model` = VinFast Minio Green; `product_url` của modal báo giá phải là auto365.vn.
+- [ ] Mọi ảnh/CSS/JS trả 200, không mixed content.
+- [ ] Thay ảnh AI bằng ảnh thực tế trước khi publish.
+
+## Nhật ký
+
+| Ngày | Nội dung |
+|---|---|
+| 07/11/2026 | Dựng trang từ khung VF9, 9 mẫu theo VF 3 cùng nền tảng |
+| 07/11/2026 | Anh Nguyễn Quang Đạo xác nhận 9 mẫu; reviewedBy + lastReviewed 2026-11-07 |
+| 07/11/2026 | Bộ 7 ảnh minh họa AI; khôi phục khung ảnh 03/04 |
+| 07/11/2026 | Viết lại hồ sơ 02/03/04 riêng cho Minio Green; tự kiểm U1–U3 |
