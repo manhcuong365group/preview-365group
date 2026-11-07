@@ -13,7 +13,7 @@
 | Mục | Kết quả |
 |---|---|
 | Sapo, box "Xe Ford lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, nguồn điện, xe đời cũ) | Chờ duyệt |
-| 9 dòng xe (Sedan 1 · SUV 6 · Bán tải 2); 6 dòng có link tư vấn/hồ sơ | Chờ duyệt |
+| 10 dòng xe (Sedan 1 · SUV 6 · Bán tải 2 · Xe khách 1); 7 dòng có link tư vấn/hồ sơ | Chờ duyệt |
 | Khối nhu cầu 3 nhóm, 8 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Chờ duyệt |
 | "Thi công tại 90+ chi nhánh", khối "Vì sao chọn" (như hub Kia) | Chờ duyệt |
 | 21 bài case (hãng đèn: AES, GTR, X-Light) | Lấy từ bài đã đăng trên auto365.vn |
@@ -22,7 +22,7 @@
 
 - Ví dụ kích thước hốc đèn và câu nguồn điện trong box lưu ý.
 - Cách chia nhóm dòng xe và danh sách dòng "Tư vấn cấu hình" (Territory, Explorer, Mustang Mach-E).
-- Ảnh case dùng làm thumbnail cho dòng chưa có ảnh mẫu (Focus, EcoSport, Escape).
+- Ảnh case dùng làm thumbnail cho dòng chưa có ảnh mẫu (Focus, EcoSport, Escape, Transit).
 
 ## Ngoài phạm vi trang
 

@@ -13,10 +13,10 @@
 | Mục | Kết quả |
 |---|---|
 | Sapo, box "Xe Mitsubishi lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, nguồn điện, xe đời cũ) | Chờ duyệt |
-| 9 dòng xe (Sedan 1 · SUV 5 · MPV 3); 7 dòng có link tư vấn/hồ sơ | Chờ duyệt |
+| 10 dòng xe (Sedan 1 · SUV 5 · MPV 3 · Bán tải 1); 8 dòng có link tư vấn/hồ sơ | Chờ duyệt |
 | Khối nhu cầu 3 nhóm, 8 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Chờ duyệt |
 | "Thi công tại 90+ chi nhánh", khối "Vì sao chọn" (như hub Kia) | Chờ duyệt |
-| 14 bài case (hãng đèn: AES, GTR, X-Light) | Lấy từ bài đã đăng trên auto365.vn |
+| 15 bài case (hãng đèn: AES, GTR, Titan, X-Light) | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Cần anh Đạo xác nhận
 

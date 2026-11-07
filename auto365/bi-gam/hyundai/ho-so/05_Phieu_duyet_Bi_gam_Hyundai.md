@@ -13,10 +13,10 @@
 | Mục | Kết quả |
 |---|---|
 | Sapo, box "Xe Hyundai lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, nguồn điện, xe đời cũ) | Chờ duyệt |
-| 11 dòng xe (Hatchback 1 · Sedan 3 · SUV 6 · MPV 1); 5 dòng có link tư vấn/hồ sơ | Chờ duyệt |
+| 12 dòng xe (Hatchback 1 · Sedan 3 · SUV 6 · MPV 2); 6 dòng có link tư vấn/hồ sơ | Chờ duyệt |
 | Khối nhu cầu 3 nhóm, 8 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Chờ duyệt |
 | "Thi công tại 90+ chi nhánh", khối "Vì sao chọn" (như hub Kia) | Chờ duyệt |
-| 7 bài case (hãng đèn: X-Light) | Lấy từ bài đã đăng trên auto365.vn |
+| 8 bài case (hãng đèn: X-Light) | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Cần anh Đạo xác nhận
 

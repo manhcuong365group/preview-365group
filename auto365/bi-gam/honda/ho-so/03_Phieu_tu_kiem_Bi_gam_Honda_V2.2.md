@@ -13,7 +13,7 @@
 | Mã | Tiêu chí | Điểm | Căn cứ |
 |---|---|---:|---|
 | C1 | Chính xác và nhất quán | 9,0/10 | 15 case + bài tư vấn từ bài đã đăng auto365.vn; ví dụ kỹ thuật lấy từ tiêu đề bài; chưa có người rà soát kỹ thuật |
-| C2 | Đầy đủ theo vai trò | 9,2/10 | 7 dòng xe, 15 hồ sơ, lọc dòng xe + hãng đèn, box lưu ý, 3 nhóm nhu cầu, 8 FAQ |
+| C2 | Đầy đủ theo vai trò | 9,2/10 | 8 dòng xe, 15 hồ sơ, lọc dòng xe + hãng đèn, box lưu ý, 3 nhóm nhu cầu, 8 FAQ |
 | C3 | Tự nhiên và hữu ích | 9,4/10 | Giọng trung tính, có điều kiện kiểm xe, không claim tuyệt đối |
 | | **Content** | **27,6/30** | |
 | S1 | Intent và URL | 9,6/10 | Trang hãng giữa hub bi gầm và bài dòng xe |

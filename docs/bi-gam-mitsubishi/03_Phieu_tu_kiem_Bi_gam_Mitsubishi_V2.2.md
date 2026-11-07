@@ -12,13 +12,13 @@
 
 | Mã | Tiêu chí | Điểm | Căn cứ |
 |---|---|---:|---|
-| C1 | Chính xác và nhất quán | 9,0/10 | 14 case + bài tư vấn từ bài đã đăng auto365.vn; ví dụ kỹ thuật lấy từ tiêu đề bài; chưa có người rà soát kỹ thuật |
-| C2 | Đầy đủ theo vai trò | 9,2/10 | 9 dòng xe, 14 hồ sơ, lọc dòng xe + hãng đèn, box lưu ý, 3 nhóm nhu cầu, 8 FAQ |
+| C1 | Chính xác và nhất quán | 9,0/10 | 15 case + bài tư vấn từ bài đã đăng auto365.vn; ví dụ kỹ thuật lấy từ tiêu đề bài; chưa có người rà soát kỹ thuật |
+| C2 | Đầy đủ theo vai trò | 9,2/10 | 10 dòng xe, 15 hồ sơ, lọc dòng xe + hãng đèn, box lưu ý, 3 nhóm nhu cầu, 8 FAQ |
 | C3 | Tự nhiên và hữu ích | 9,4/10 | Giọng trung tính, có điều kiện kiểm xe, không claim tuyệt đối |
 | | **Content** | **27,6/30** | |
 | S1 | Intent và URL | 9,6/10 | Trang hãng giữa hub bi gầm và bài dòng xe |
 | S2 | On-page | 9,5/10 | 1 H1, canonical, 6 khối schema sinh từ HTML, nội dung render sẵn |
-| S3 | Liên kết, triển khai | 9,4/10 | 32 link auto365.vn trong nội dung, kiểm HTTP 07/11: tất cả 200; hồ sơ 01–05 |
+| S3 | Liên kết, triển khai | 9,4/10 | 33 link auto365.vn trong nội dung, kiểm HTTP 07/11: tất cả 200; hồ sơ 01–05 |
 | | **SEO** | **28,5/30** | Vừa ngưỡng |
 | G1 | Trả lời rõ | 9,3/10 | Box lưu ý, FAQ dòng có hồ sơ/đời cũ/HCM/tỉnh khác/chi phí/bảo hành |
 | G2 | Lập luận, giới hạn | 9,3/10 | 3 nhóm nhu cầu kèm khi nào chưa cần lắp |

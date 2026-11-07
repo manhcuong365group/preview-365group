@@ -17,10 +17,10 @@
 | `/nang-cap-anh-sang-bi-gam` | Hub bi gầm chung | — |
 | `/nang-cap-anh-sang-bi-gam/theo-hang-xe` | Tra cứu theo hãng | — |
 | **`/nang-cap-anh-sang-bi-gam/hyundai`** | **Trang hãng Hyundai: chọn dòng xe, chọn theo nhu cầu, tiếp cận bài hồ sơ, bài tư vấn dòng xe (qua thẻ dòng xe), cẩm nang đèn và điểm tư vấn** | Không liệt kê bảng giá/SKU; không canonical bài case về trang này |
-| `bi-gam-hyundai-accent`, `bi-gam-hyundai-elantra`, `bi-gam-hyundai-creta`, `bi-gam-hyundai-tucson`, `bi-gam-hyundai-santa-fe` | Bài tư vấn dòng xe | — |
+| `bi-gam-hyundai-accent`, `bi-gam-hyundai-elantra`, `bi-gam-hyundai-creta`, `bi-gam-hyundai-tucson`, `bi-gam-hyundai-santa-fe`, `bi-gam-hyundai-custin` | Bài tư vấn dòng xe | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
-Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucson, Santa Fe); "Có hồ sơ" → bài case mới nhất (—); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Grand i10, Grand i10 Sedan, Venue, Palisade, Ioniq 5, Stargazer).
+Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucson, Santa Fe, Custin); "Có hồ sơ" → bài case mới nhất (—); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Grand i10, Grand i10 Sedan, Venue, Palisade, Ioniq 5, Stargazer).
 
 ## 2. Metadata
 
@@ -38,16 +38,16 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 |---|---|
 | CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Hyundai. **Chưa có `reviewedBy`/`lastReviewed`** — chỉ thêm byline "Rà soát kỹ thuật" + ngày khi anh Đạo duyệt, build tự sinh |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Hyundai |
-| ItemList `#dong-xe` | 5 thẻ dòng xe có link |
-| ItemList `#xe-thuc-te` | 7 bài case (không phải 7 xe khác nhau đã xác minh; chưa có case_id) |
+| ItemList `#dong-xe` | 6 thẻ dòng xe có link |
+| ItemList `#xe-thuc-te` | 8 bài case (không phải 8 xe khác nhau đã xác minh; chưa có case_id) |
 | FAQPage | 8 câu, đúng text hiển thị |
 
 ## 4. Khối trên trang và nguồn
 
 | Khối | Nguồn |
 |---|---|
-| 11 dòng xe (Hatchback 1 · Sedan 3 · SUV 6 · MPV 1) | Dải Hyundai ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
-| Hồ sơ (7) | Bài case bi gầm Hyundai đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
+| 12 dòng xe (Hatchback 1 · Sedan 3 · SUV 6 · MPV 2) | Dải Hyundai ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| Hồ sơ (8) | Bài case bi gầm Hyundai đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |

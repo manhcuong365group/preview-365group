@@ -17,10 +17,10 @@
 | `/nang-cap-anh-sang-bi-gam` | Hub bi gầm chung | — |
 | `/nang-cap-anh-sang-bi-gam/theo-hang-xe` | Tra cứu theo hãng | — |
 | **`/nang-cap-anh-sang-bi-gam/mitsubishi`** | **Trang hãng Mitsubishi: chọn dòng xe, chọn theo nhu cầu, tiếp cận bài hồ sơ, bài tư vấn dòng xe (qua thẻ dòng xe), cẩm nang đèn và điểm tư vấn** | Không liệt kê bảng giá/SKU; không canonical bài case về trang này |
-| `bi-gam-mitsubishi-destinator`, `bi-gam-mitsubishi-outlander`, `bi-gam-mitsubishi-pajero`, `bi-gam-mitsubishi-xpander` | Bài tư vấn dòng xe | — |
+| `bi-gam-mitsubishi-destinator`, `bi-gam-mitsubishi-outlander`, `bi-gam-mitsubishi-pajero`, `bi-gam-mitsubishi-xpander`, `bi-gam-mitsubishi-triton` | Bài tư vấn dòng xe | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
-Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajero, Xpander); "Có hồ sơ" → bài case mới nhất (Xforce, Xpander Cross, Zinger); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Attrage, Pajero Sport).
+Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajero, Xpander, Triton); "Có hồ sơ" → bài case mới nhất (Xforce, Xpander Cross, Zinger); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Attrage, Pajero Sport).
 
 ## 2. Metadata
 
@@ -38,16 +38,16 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajer
 |---|---|
 | CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Mitsubishi. **Chưa có `reviewedBy`/`lastReviewed`** — chỉ thêm byline "Rà soát kỹ thuật" + ngày khi anh Đạo duyệt, build tự sinh |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Mitsubishi |
-| ItemList `#dong-xe` | 7 thẻ dòng xe có link |
-| ItemList `#xe-thuc-te` | 14 bài case (không phải 14 xe khác nhau đã xác minh; chưa có case_id) |
+| ItemList `#dong-xe` | 8 thẻ dòng xe có link |
+| ItemList `#xe-thuc-te` | 15 bài case (không phải 15 xe khác nhau đã xác minh; chưa có case_id) |
 | FAQPage | 8 câu, đúng text hiển thị |
 
 ## 4. Khối trên trang và nguồn
 
 | Khối | Nguồn |
 |---|---|
-| 9 dòng xe (Sedan 1 · SUV 5 · MPV 3) | Dải Mitsubishi ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
-| Hồ sơ (14) | Bài case bi gầm Mitsubishi đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: AES, GTR, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
+| 10 dòng xe (Sedan 1 · SUV 5 · MPV 3 · Bán tải 1) | Dải Mitsubishi ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| Hồ sơ (15) | Bài case bi gầm Mitsubishi đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: AES, GTR, Titan, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |

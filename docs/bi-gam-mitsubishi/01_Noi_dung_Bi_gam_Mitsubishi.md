@@ -10,13 +10,13 @@
 | Meta description (152 ký tự) | Tra cứu bi gầm Mitsubishi theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
 | dateModified | 2026-11-07 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (14), FAQPage |
-| SHA-256 index.html | `6df8880f454b4b1d9d31221f4b97c31bec1b38d28f2c6bac62e26c99f81afb74` |
-| SHA-256 content-src.html | `5f1ae06f5cebd1b35110e2c0dad7ad72a3568fc27d74e52e121a5e21cd7d225a` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
+| SHA-256 index.html | `20dfee73af6e84b33b29cc72c769a5912a6c77fa6dcbb9a053e6c46a22ff2660` |
+| SHA-256 content-src.html | `a71a388b29190e0a3d1be537ffaf84eb88dc77bb794188fb4cd963df477efabf` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES) trên Xpander, Xpander Cross, Xforce, Outlander, Destinator, Triton, Pajero và Zinger; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES, Titan) trên Xpander, Xpander Cross, Xforce, Outlander, Destinator, Triton, Pajero và Zinger; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
 
 ## Chọn dòng xe Mitsubishi
 
@@ -35,7 +35,7 @@ Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ th�
 | Mitsubishi Zinger | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-zinger-gls-2011-lap-bi-gam-x-light-x3-ultra-4300k |
 | Mitsubishi Triton | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-triton |
 
-## Xe Mitsubishi đã lắp bi gầm tại Auto365 (14 bài hồ sơ)
+## Xe Mitsubishi đã lắp bi gầm tại Auto365 (15 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -55,6 +55,7 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Mitsubishi Triton | [Mitsubishi Triton 2024 lắp Bi gầm X-Light F10 Hyper 2.0: Giá, thông số và lưu ý](https://auto365.vn/mitsubishi-triton-2024-bi-gam-x-light-f10-hyper-2-0) | 2026-07-24 |
 | Mitsubishi Outlander | [Mitsubishi Outlander nâng cấp Bi gầm X-Light 301 V2: Giá, cấu hình và lưu ý khi lắp](https://auto365.vn/mitsubishi-outlander-nang-cap-bi-gam-x-light-301-v2) | 2026-07-23 |
 | Mitsubishi Pajero | [Mitsubishi Pajero nâng cấp bi gầm X-Light F10 Pro 3 nhiệt màu](https://auto365.vn/mitsubishi-pajero-nang-cap-f10-pro-3-nhiet-mau) | 2024-09-23 |
+| Mitsubishi Outlander | [Mitsubishi Outlander độ đèn bi gầm Titan 301 và camera hành trình](https://auto365.vn/mitsubishi-outlander-do-bi-gam-va-camera-hanh-trinh) | 2024-05-23 |
 
 ## Xe Mitsubishi lắp bi gầm cần lưu ý gì?
 

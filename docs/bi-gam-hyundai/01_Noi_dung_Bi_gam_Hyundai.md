@@ -10,13 +10,13 @@
 | Meta description (149 ký tự) | Tra cứu bi gầm Hyundai theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Hyundai theo từng dòng xe |
 | dateModified | 2026-11-07 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (7), FAQPage |
-| SHA-256 index.html | `55b750612be2b684084dfaca6eeeefd91b2f1a970ecf6f16b337f4f68d43bb1f` |
-| SHA-256 content-src.html | `bb97e885c578169001ee0a6d7194abcb6348498ff503ff24b6d276cac4647022` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
+| SHA-256 index.html | `487c5868dc1f9170927f52b8babeceec624db1f7e60959d726a62c451a73b96c` |
+| SHA-256 content-src.html | `23d9eabbe4e282a530527dc7ecf3f68d6c89c76ad6c3a2aafd7e7dc385234a5b` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light) trên Santa Fe, Custin, Creta, Tucson; Accent, Elantra có bài tư vấn riêng, xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light) trên Santa Fe, Custin, Creta, Tucson, Elantra; Accent có bài tư vấn riêng, xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
 
 ## Chọn dòng xe Hyundai
 
@@ -37,7 +37,7 @@ Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống
 | Hyundai Stargazer | MPV | Liên hệ tư vấn | — |
 | Hyundai Custin | MPV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-custin |
 
-## Xe Hyundai đã lắp bi gầm tại Auto365 (7 bài hồ sơ)
+## Xe Hyundai đã lắp bi gầm tại Auto365 (8 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -46,6 +46,7 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Hyundai Santa Fe | [Hyundai Santa Fe 2020 Premium lắp bi gầm X-Light F10 2.0 New](https://auto365.vn/hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new) | 2026-10-20 |
 | Hyundai Santa Fe | [Hyundai Santa Fe 2017 Tiêu chuẩn lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/hyundai-santa-fe-2017-tieu-chuan-lap-bi-gam-f10-turbo-v2) | 2026-10-16 |
 | Hyundai Custin | [Hồ sơ nâng cấp bi gầm X-Light 301 V2 trên Hyundai Custin 2024](https://auto365.vn/ho-so-nang-cap-bi-gam-x-light-301-v2-tren-hyundai-custin-2024) | 2026-09-23 |
+| Hyundai Elantra | [Hyundai Elantra N Line 2023 lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/elantra-n-line-2023-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-09-04 |
 | Hyundai Creta | [Hyundai Creta 2022 lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/hyundai-creta-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-08-11 |
 | Hyundai Custin | [Hyundai Custin lắp Bi gầm X-Light F10 Turbo V2 5500K: Giá và lưu ý kỹ thuật](https://auto365.vn/hyundai-custin-lap-bi-gam-x-light-f10-turbo-v2-5500k) | 2026-07-28 |
 | Hyundai Tucson | [Hyundai Tucson nâng cấp đèn bi gầm X-Light X3 Ultra](https://auto365.vn/hyundai-tucson-nang-cap-den-bi-gam-x-light-x3-ultra) | 2025-10-15 |
@@ -73,7 +74,7 @@ _Dòng xe:_ Grand i10, Accent, Elantra
 - Xe chạy dịch vụ, đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.
 - Hốc đèn gầm nhỏ cần đo trước để chọn lens 2.0 hay 3.0 inch.
 
-Accent, Elantra chưa có hồ sơ lắp riêng; xem bài tư vấn để biết mẫu và giá tham khảo. ()
+Đã lắp: Elantra N Line 2023 – X-Light F10 Turbo V2. Accent chưa có hồ sơ lắp riêng; xem bài tư vấn để biết mẫu và giá tham khảo. (https://auto365.vn/elantra-n-line-2023-lap-bi-gam-x-light-f10-turbo-v2-4300k)
 
 CTA: Xem tư vấn bi gầm Accent → https://auto365.vn/bi-gam-hyundai-accent
 
@@ -139,7 +140,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Hy
 
 **Dòng Hyundai nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Creta và Tucson; Accent, Elantra, Creta, Tucson, Santa Fe, Custin có bài tư vấn riêng. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Creta, Tucson và Elantra; Accent, Elantra, Creta, Tucson, Santa Fe, Custin có bài tư vấn riêng. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Hyundai đời cũ có lắp bi gầm được không?**
 
