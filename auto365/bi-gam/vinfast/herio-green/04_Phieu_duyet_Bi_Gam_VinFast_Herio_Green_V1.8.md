@@ -1,4 +1,4 @@
-> **07/11/2026 — ĐÃ XÁC NHẬN MẪU:** anh Nguyễn Quang Đạo xác nhận 17 mẫu lắp được VinFast Herio Green (07/11/2026), xem XAC_NHAN_TUONG_THICH_HERIO_GREEN_20261107.md. Còn chờ: ảnh thật, phiếu U1–U3, map URL production. Trang dựng từ khung VF5; điểm/kết luận duyệt bên dưới kế thừa từ hồ sơ VF5, không áp dụng cho Herio Green tới khi duyệt lại. SHA-256 index.html hiện tại: `05099a8c7f495be986c60812c9a50bc3e63ea0ee57ec97881d8828b13753c9b8`.
+> **07/11/2026 — ĐÃ XÁC NHẬN MẪU:** anh Nguyễn Quang Đạo xác nhận 17 mẫu lắp được VinFast Herio Green (07/11/2026), xem XAC_NHAN_TUONG_THICH_HERIO_GREEN_20261107.md. Ảnh: bộ minh họa AI 07/11/2026, phải thay ảnh thực tế trước production. Còn chờ: ảnh thật, phiếu U1–U3, map URL production. Trang dựng từ khung VF5; điểm/kết luận duyệt bên dưới kế thừa từ hồ sơ VF5, không áp dụng cho Herio Green tới khi duyệt lại. SHA-256 index.html hiện tại: `6bebbe9ffb4f0292036e5dc299036ae3d576215e48d62e7a723e3a9acfd6969a`.
 
 # Bi gầm VinFast Herio Green — Phiếu duyệt V1.8
 
@@ -9,7 +9,7 @@
 | Hotfix 02/11/2026 (audit 01/11) | (1) Link gọi: mỗi số một tel: riêng ở bộ tìm (tìm kiếm, chọn tỉnh, gần tôi) và danh sách dự phòng — 33 bản ghi nhiều số, không còn href ghép; (2) nút MIỀN NAM 21 → 24 (41/26/24 = 91); (3) thẻ Auto365 Quảng Ninh (Hạ Long) trỏ hồ sơ riêng /chi-nhanh/quang-ninh/ha-long; (4) câu chuẩn dịch vụ ghi rõ: cùng giá thiết bị niêm yết, bảo hành theo chính sách từng mã, pát/công/phụ kiện báo sau khi xem xe. Đã kiểm DOM sau sửa (Quảng Ninh 8 thẻ, Móng Cái 2 link). lastReviewed giữ 26/10 |
 | Phiếu duyệt U3 V1.9 | **PASS — ĐÃ DUYỆT 30/10/2026**: U1 giao diện/đa thiết bị, U2 form/CRM/tracking, U3 hồ sơ 02/03/04. Kỹ thuật: Nguyễn Quang Đạo; SEO: Ngọc Trân. File: [Phieu_U3_Bi_Gam_VinFast_Herio Green_V19_DA_DUYET_FINAL_20261030.pdf](Phieu_U3_Bi_Gam_VinFast_Herio Green_V19_DA_DUYET_FINAL_20261030.pdf). Production (index/GSC, redirect, mapping CMS) ghi nhận riêng khi đăng |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `05099a8c7f495be986c60812c9a50bc3e63ea0ee57ec97881d8828b13753c9b8` |
+| SHA-256 index.html | `6bebbe9ffb4f0292036e5dc299036ae3d576215e48d62e7a723e3a9acfd6969a` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng Herio Green |
