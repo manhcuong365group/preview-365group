@@ -17,7 +17,7 @@
 | 20 dòng xe chia Hatchback / Sedan / SUV / MPV / Bán tải; 9 dòng có hồ sơ | Duyệt |
 | Khối nhu cầu 3 nhóm, 9 FAQ | Duyệt |
 | "Thi công tại 90+ chi nhánh", thẻ "Tư vấn đúng theo từng xe" (như hub VinFast) | Duyệt |
-| 22 case + 8 bài cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
+| 26 case (07/11 thêm Corolla Cross ×2, Vios Titan 301, Fortuner V30+F10) + 8 bài cẩm nang đèn | Lấy từ bài đã đăng trên auto365.vn |
 
 ## Ngoài phạm vi trang
 

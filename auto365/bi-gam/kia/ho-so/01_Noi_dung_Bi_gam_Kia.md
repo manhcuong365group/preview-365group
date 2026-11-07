@@ -9,10 +9,10 @@
 | Title (75 ký tự) | Bi gầm Kia theo từng dòng xe: Carnival, Sportage, Carens, Morning | Auto365 |
 | Meta description (145 ký tự) | Tra cứu bi gầm Kia theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Kia theo từng dòng xe |
-| dateModified | 2026-11-06 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (15), FAQPage |
-| SHA-256 index.html | `0126b12ba8ffd6acafefedef257f26c620560df13ea33ff7cad5f076e6373604` |
-| SHA-256 content-src.html | `2432cdd3184705452a7de7b04606428c029f5d6a5c4f67f55d0a03e1b21dd552` |
+| dateModified | 2026-11-07 |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (17), FAQPage |
+| SHA-256 index.html | `00719adf07b87b5d182732f9a7493e901724b4821711ba409f99c2bf0cb1a1c6` |
+| SHA-256 content-src.html | `c145e6490d9e8b7aad2d3200f740f66e558eb4b3462093935f5385674b1a913e` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -38,12 +38,14 @@ Bi gầm Kia cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | Kia Carnival | MPV | Có hồ sơ | https://auto365.vn/kia-carnival-22d-luxury-2025-lap-bi-gam-aes-sv-30-max |
 | Kia Sedona | MPV | Có hồ sơ | https://auto365.vn/bi-gam-kia-sedona |
 
-## Xe Kia đã lắp bi gầm tại Auto365 (15 bài hồ sơ)
+## Xe Kia đã lắp bi gầm tại Auto365 (17 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
 | Dòng xe | Bài | Ngày đăng |
 |---|---|---|
+| Kia K3 | [Kia K3 2.0 Premium 2022 lắp bi gầm X-Light F10 Turbo 4300K](https://auto365.vn/kia-k3-20-premium-2022-lap-bi-gam-x-light-f10-turbo-4300k) | 2026-11-06 |
+| Kia Carnival | [Kia Carnival 2.2D Premium 2024 lắp bi gầm X-Light X3 Ultra 5500K](https://auto365.vn/kia-carnival-22d-premium-2024-lap-bi-gam-x-light-x3-ultra-5500k) | 2026-11-05 |
 | Kia Sportage | [Kia Sportage 2022 lắp bi gầm X-Light F10 Turbo V2 5500K](https://auto365.vn/kia-sportage-20g-premium-2022-lap-bi-gam-x-light-f10-turbo-v2-5500k) | 2026-10-21 |
 | Kia Morning | [Kia Morning Si AT 2016 lắp bi gầm X-Light F10 2.0 New](https://auto365.vn/kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new) | 2026-10-09 |
 | Kia Carnival | [Video: Kia Carnival nâng cấp bi gầm AES SV 3.0 Max, mặt dưỡng in 3D](https://auto365.vn/video-kia-carnival-nang-cap-bi-gam-aes-sv-3-0-max-giai-phap-mat-duong-in-3d) | 2026-10-01 |

@@ -148,3 +148,7 @@ Chưa có `srcset`; ảnh co giãn bằng CSS. Rendition nhỏ và OG production
 - Thumbnail dòng xe: không có caption (ALT = tên dòng xe). 14 thumbnail dùng chung `../theo-hang-xe/hinh/m-*.webp` truy nguyên theo hồ sơ trang theo-hang-xe (`/bi-gam/theo-hang-xe/ho-so/`), không chép lại.
 - Ghi công công khai 5 ảnh Commons CC BY-SA 4.0: dòng chú thích dưới lưới dòng xe (tác giả + link trang file + link giấy phép + "đã tách nền").
 - OG: preview dùng thumbnail Fortuner 640×400; đề xuất production dùng TY-IMG-01 qua CDN auto365.vn — IT chốt (CX). Chưa có rendition/srcset; không khai URL chưa tồn tại.
+
+### Bổ sung case 07/11/2026
+
+Đối chiếu sitemap blog/video auto365.vn: thêm 4 case (Corolla Cross 2024 1.8HV – F10 Turbo V2; Corolla Cross 2024 – F10 Hyper 2.0; Vios – Titan 301; Fortuner – Bi LED V30 Ultra + bi gầm F10 2.0) → 26 nội dung. Thẻ Land Cruiser 300 gắn case Land Cruiser X-Light F10 Turbo (bài ghi LC300). Đèn gầm dạng rời (LC300 Titan M30, Camry 2025 Titan M40) không tính. Alphard, Avanza, Veloz: chưa có bài bi gầm trên sitemap auto365.vn — giữ "Liên hệ tư vấn".

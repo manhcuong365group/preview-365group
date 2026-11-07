@@ -50,7 +50,7 @@ Phiếu V1.9 ở trên giữ làm lịch sử, không đổi nhãn thành V2.2. 
 | KIA22-03 | Ghi công công khai Forte (Mr.choppers, CC BY-SA 3.0, link file + giấy phép, "đã tách nền") và Sedona (public domain) dưới lưới xe | Đã sửa |
 | KIA22-04 | 01 mô tả form đúng code: `service` cố định "Bi gầm Kia", xe ở `car_model`; priority gửi "Đèn – Bi LED" — IT xác nhận routing CRM | Đã sửa 01; routing CX |
 | KIA22-06 | Image Pack ở 02 mục 9 (hero, quy trình, 2 ảnh Commons, 5 ảnh case + caption) | Đã bổ sung |
-| KIA22-07 | 15 nội dung = 13 case + 2 video; case_id chưa khóa | Ghi rõ ở 02 |
+| KIA22-07 | 17 nội dung = 15 case + 2 video; case_id chưa khóa | Ghi rõ ở 02 |
 | QA phần mới | Chọn nhanh, CTA dưới lưới, caption, ghi công: 375 / 768 / 1366 px không tràn ngang (07/11) | Đạt trên trình duyệt |
 | KIA22-01/02/05/08/09 | Production, form→CRM, QA thiết bị V2.2, chính sách giá/miễn phí, baseline | IT/CRM/QA/Kinh doanh — CX |
 

@@ -48,7 +48,7 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | CollectionPage | `dateModified` từ dòng "Cập nhật"; `about` = Brand Kia; `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-05 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Kia |
 | ItemList `#dong-xe` | 9 thẻ dòng xe có hồ sơ |
-| ItemList `#xe-thuc-te` | 15 hồ sơ nội dung: 13 bài case + 2 video (không phải 15 xe khác nhau; một ca lắp có thể có cả bài và video) |
+| ItemList `#xe-thuc-te` | 17 hồ sơ nội dung: 15 bài case + 2 video (không phải 17 xe khác nhau; một ca lắp có thể có cả bài và video) |
 | FAQPage | 9 câu, đúng text hiển thị |
 
 ## 5. Khối trên trang và nguồn
@@ -56,7 +56,7 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | Khối | Nguồn |
 |---|---|
 | 13 dòng xe (Hatchback 1 · Sedan 4 · SUV 4 · MPV 4) | Dải Kia ở trang theo-hang-xe; giữ dòng đã ngừng bán có hồ sơ (Forte, Sedona), bỏ dòng ngừng bán không có dữ liệu |
-| Hồ sơ (15) | 13 bài case (thêm Seltos 2024 X-Light F10 Turbo V2, 05/11) + 2 video Kia (Carnival AES SV 3.0 Max mặt dưỡng in 3D, Sedona combo GTR G1 Ultra) đã đăng auto365.vn |
+| Hồ sơ (17) | 15 bài case (thêm Seltos 2024 X-Light F10 Turbo V2, 05/11; K3 2022, Carnival 2024, 07/11) + 2 video Kia (Carnival AES SV 3.0 Max mặt dưỡng in 3D, Sedona combo GTR G1 Ultra) đã đăng auto365.vn |
 | Box lưu ý — nguồn điện | Sportage 2022, Carnival 2022 bản Premium: link giắc chuyển LED gầm chuyên dụng (trang phụ kiện auto365.vn) |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung về đèn, không lặp bài tư vấn dòng xe |
 | FAQ HCM | Đề xuất Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
@@ -121,5 +121,9 @@ Thẻ dòng xe "Có hồ sơ": Morning, Seltos, Carens, Sedona → bài tư vấ
 | KIA-IMG-08 | `kia-sportage-2-0g-premium-2022-lap-bi-gam-x-light-f10-turbo-1792548422.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Sportage 2.0G Premium 2022 lắp X-Light F10 Turbo tại Auto365 |
 | KIA-IMG-09 | `auto365vn-kia-sedona-nang-cap-bi-gam-x-light-f10-pro-v2-img_6a5ef67002e9e9.68465652.jpg.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Ảnh case thật | Vì sao chọn, lazy | caption: Sedona lắp X-Light F10 Pro V2 tại Auto365 |
 
-Thuật ngữ: **15 nội dung hồ sơ = 13 bài case + 2 video**, không gọi "15 xe thi công". `case_id`/`work_order_ref` chưa khóa — điền khi kỹ thuật xác minh từng ca. Sonet chỉ là bài ảnh tổng hợp tham khảo.
+Thuật ngữ: **17 nội dung hồ sơ = 15 bài case + 2 video** (07/11 thêm K3 2022, Carnival 2024), không gọi "17 xe thi công". `case_id`/`work_order_ref` chưa khóa — điền khi kỹ thuật xác minh từng ca. Sonet chỉ là bài ảnh tổng hợp tham khảo.
 OG: preview chưa chốt ảnh production; đề xuất KIA-IMG-01 qua CDN auto365.vn — IT (CX).
+
+### Bổ sung case 07/11/2026
+
+Đối chiếu sitemap blog/video auto365.vn: thêm 2 case Kia mới đăng (K3 2.0 Premium 2022 – X-Light F10 Turbo 4300K, 06/11; Carnival 2.2D Premium 2024 – X-Light X3 Ultra 5500K, 05/11) → 17 nội dung (15 case + 2 video). Bài đèn gầm dạng rời (Titan M30/M40) không tính vì khác sản phẩm.

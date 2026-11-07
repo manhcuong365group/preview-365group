@@ -9,10 +9,10 @@
 | Title (72 ký tự) | Bi gầm Toyota theo từng dòng xe: Vios, Camry, Fortuner, Innova | Auto365 |
 | Meta description (148 ký tự) | Tra cứu bi gầm Toyota theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
 | H1 | Bi gầm Toyota theo từng dòng xe |
-| dateModified | 2026-11-06 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (9), ItemList (22), FAQPage |
-| SHA-256 index.html | `a017b61fa4f949279973b1f867cbcd8551cbe170cada8f69e3de842389ec928c` |
-| SHA-256 content-src.html | `e26884d4736318c70b90897467757e823ccc68c99fa5dd3d0c4f69813f30aee0` |
+| dateModified | 2026-11-07 |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (10), ItemList (26), FAQPage |
+| SHA-256 index.html | `305dd0e5846c5d5234ad9e2881fbb1650539bd3ebd5888676c0cd6988e423162` |
+| SHA-256 content-src.html | `deb771a285a69250e80f93db2d1366ef89659ee219f8b649c3e70f792723a570` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -36,7 +36,7 @@ Bi gầm Toyota cần chọn theo hốc đèn gầm, đời xe và hệ thống 
 | Toyota Rush | SUV | Liên hệ tư vấn | — |
 | Toyota Land Cruiser Prado | SUV | Liên hệ tư vấn | — |
 | Toyota Land Cruiser FJ | SUV | Liên hệ tư vấn | — |
-| Toyota Land Cruiser 300 | SUV | Liên hệ tư vấn | — |
+| Toyota Land Cruiser 300 | SUV | Có hồ sơ | https://auto365.vn/toyota-land-cruiser-do-den-bi-gam-xlight-f10-turbo |
 | Toyota Veloz Cross | MPV | Có hồ sơ | https://auto365.vn/bi-gam-toyota-veloz-cross |
 | Toyota Avanza Premio | MPV | Liên hệ tư vấn | — |
 | Toyota Innova Cross | MPV | Có hồ sơ | https://auto365.vn/bi-gam-toyota-innova |
@@ -45,12 +45,14 @@ Bi gầm Toyota cần chọn theo hốc đèn gầm, đời xe và hệ thống 
 | Toyota Previa | MPV | Liên hệ tư vấn | — |
 | Toyota Hilux | Bán tải | Có hồ sơ | https://auto365.vn/toyota-hilux-2020-lap-bi-gam-aes-sv-30-max |
 
-## Xe Toyota đã lắp bi gầm tại Auto365 (22 bài hồ sơ)
+## Xe Toyota đã lắp bi gầm tại Auto365 (26 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
 | Dòng xe | Bài | Ngày đăng |
 |---|---|---|
+| Toyota Corolla Cross | [Toyota Corolla Cross 2024 1.8HV lắp bi gầm F10 Turbo V2](https://auto365.vn/toyota-corolla-cross-2024-18hv-lap-bi-gam-f10-turbo-v2) | 2026-10-27 |
+| Toyota Corolla Cross | [Toyota Corolla Cross 2024 lắp bi gầm F10 Hyper 2.0](https://auto365.vn/toyota-corolla-cross-2024-lap-bi-gam-f10-hyper-20) | 2026-10-26 |
 | Toyota Innova Cross | [Toyota Innova Cross 2.0V 2024 lắp bi gầm X-Light F10 Pro V2](https://auto365.vn/toyota-innova-cross-20v-2024-lap-bi-gam-x-light-f10-pro-v2) | 2026-10-14 |
 | Toyota Camry | [Toyota Camry 2024 2.5HV lắp bi gầm X-Light F10 Hyper 2.0](https://auto365.vn/toyota-camry-2024-25hv-lap-bi-gam-x-light-f10-hyper-2-0) | 2026-10-13 |
 | Toyota Veloz Cross | [Toyota Veloz Cross CVT 2023 lắp bi gầm GTR G1 Turbo](https://auto365.vn/toyota-veloz-cross-cvt-2023-lap-bi-gam-gtr-g1-turbo) | 2026-10-05 |
@@ -73,6 +75,8 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Toyota Corolla Cross | [Toyota Cross độ đèn bi gầm X-Light F10 2.0 2024 cao cấp](https://auto365.vn/toyota-cross-do-den-bi-gam-f10-2-0-2024) | 2024-08-10 |
 | Toyota Fortuner | [Toyota Fortuner nâng cấp bi gầm Titan 301](https://auto365.vn/toyota-fortuner-nang-cap-bi-gam-titan-301) | 2024-08-10 |
 | Toyota Land Cruiser | [Toyota Land Cruiser độ đèn bi gầm X-Light F10 Turbo nhiệt màu 4300k](https://auto365.vn/toyota-land-cruiser-do-den-bi-gam-xlight-f10-turbo) | 2024-07-12 |
+| Toyota Vios | [Toyota Vios độ đèn với bi gầm Titan 301](https://auto365.vn/toyota-vios-do-den-voi-bi-gam-titan-301) | 2023-12-05 |
+| Toyota Fortuner | [Toyota Fortuner độ đèn Bi LED X-Light V30 Ultra 2023 và bi gầm X-Light F10 2.0](https://auto365.vn/toyota-fortuner-do-den-bi-led-x-light-v30-ultra-2023-va-bi-gam-x-light-f10-20) | 2023-10-25 |
 
 ## Xe Toyota lắp bi gầm cần lưu ý gì?
 
