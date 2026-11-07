@@ -11,8 +11,8 @@
 | H1 | Bi gầm Honda theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `093f9c23991ca7aa85f4afae5d94c02405868ff0e1468190652ed84dd2ed59b2` |
-| SHA-256 content-src.html | `730ceeba18b41f07c1bda9de3532d6f55c5550b6548a62c5850554ba2cd5173a` |
+| SHA-256 index.html | `0ab69b7a1df0512183efed655318f8d6c1283d87d3bcf21fe7f6115a9c959d4b` |
+| SHA-256 content-src.html | `784b3b1f4607725a923152c0244050808a6ad7fc6b5359dc4d968e62a7cffe90` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -139,11 +139,15 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ho
 | [Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?](https://auto365.vn/bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa) | Vùng sáng | 2026-07-27 |
 | [Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ](https://auto365.vn/bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao) | Hốc đèn | 2026-07-03 |
 
-## FAQ (8)
+## FAQ (9)
 
 **Dòng Honda nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
 Các dòng đã có hồ sơ lắp thực tế gồm City, Civic, CR-V, HR-V, BR-V và Odyssey; City, CR-V có bài tư vấn riêng. Những dòng còn lại (Civic Type R, Accord) kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+
+**Xe Honda nên chọn bi gầm 2.0 hay 3.0 inch?**
+
+Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Các hồ sơ Honda hiện có dùng nhiều mẫu khác nhau theo đời xe (xem bảng "Xe Honda đã lắp mẫu bi gầm nào?"). Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
 
 **Một dòng Honda có nhiều đời thì chọn bi gầm thế nào?**
 

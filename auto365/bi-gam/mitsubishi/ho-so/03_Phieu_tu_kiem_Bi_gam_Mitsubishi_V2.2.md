@@ -20,17 +20,17 @@
 | S2 | On-page | 9,5/10 | 1 H1, canonical, 6 khối schema sinh từ HTML, nội dung render sẵn |
 | S3 | Liên kết, triển khai | 9,4/10 | Link auto365.vn trong nội dung kiểm HTTP 200 ngày 07/11; hồ sơ 01–06 |
 | | **SEO** | **28,5/30** | Qua ngưỡng 28,5 |
-| G1 | Trả lời rõ | 9,3/10 | Box lưu ý, FAQ dòng có hồ sơ/đời cũ/HCM/tỉnh khác/chi phí/bảo hành |
-| G2 | Lập luận, giới hạn | 9,3/10 | 3 nhóm nhu cầu kèm khi nào chưa cần lắp |
+| G1 | Trả lời rõ | 9,4/10 | Box lưu ý; FAQ dòng có hồ sơ/2.0 hay 3.0 inch/đời cũ/HCM/tỉnh khác/chi phí/bảo hành; bảng tra "Xe  đã lắp mẫu bi gầm nào?" ( dòng: xe, đời/phiên bản, mẫu đèn, lens, link bài) |
+| G2 | Lập luận, giới hạn | 9,4/10 | 3 nhóm nhu cầu kèm khi nào chưa cần lắp; FAQ 2.0/3.0 inch dẫn đúng xe đã lắp, nêu giới hạn (khác đời phải đo hốc) |
 | G3 | Nguồn, truy nguyên | 5/5 | Anh Đạo duyệt 07/11: tên + ngày trên trang và schema (`reviewedBy`, `lastReviewed`); case link bài gốc |
-| | **GEO** | **23,6/25** | **Chưa qua ngưỡng 23,75 (thiếu 0,15)** |
+| | **GEO** | **23,8/25** | Qua ngưỡng 23,75 — **phần bổ sung GEO 07/11 (bảng tra, FAQ 2.0/3.0 inch) chờ anh Đạo duyệt** |
 | U1 | Đa thiết bị | 4,5/5 | 375 px (giả lập): không tràn ngang, tab/tìm/lọc case/bỏ lọc/tự điền xe chạy, ảnh tải đủ; 1366 px OK. **Chưa test điện thoại thật** |
 | U2 | Tương tác, lead | 5/5 | Lead test #33 (service "Bi gầm Mitsubishi", xe Mitsubishi Xpander Cross 2023) gửi /api/leads → `success:true`, `test:true` ngày 07/11 |
 | U3 | Bàn giao | 4,5/5 | 01–06 cùng build; phiếu U3 tự nghiệm thu, chờ reviewer ký |
-| | **Tổng** | **≈93,9/100** | **Chưa đạt** (tổng <95, GEO <23,75) |
+| | **Tổng** | **≈94,1/100** | **Chưa đạt** (tổng <95) |
 
 ## 2. Còn thiếu để đạt
 
-1. GEO +0,15: bổ sung lập luận/ví dụ có nguồn (vd bảng đời xe ↔ mẫu đèn đã lắp theo case, FAQ chọn 2.0 hay 3.0 inch cho từng dòng) — cần anh Đạo duyệt phần thêm.
+1. Anh Đạo duyệt phần bổ sung GEO 07/11 (bảng tra xe ↔ mẫu đèn, FAQ 2.0/3.0 inch).
 2. U1: chủ quản test điện thoại thật.
 3. U3: reviewer ký phiếu U3.

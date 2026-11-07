@@ -15,7 +15,7 @@
 |---|---|
 | Sapo, box "Xe Honda lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, nguồn điện, xe đời cũ) | Duyệt |
 | 8 dòng xe (Sedan 4 · SUV 2 · MPV 2); 6 dòng có link tư vấn/hồ sơ | Duyệt |
-| Khối nhu cầu 3 nhóm, 8 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
+| Khối nhu cầu 3 nhóm, 9 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
 | "Thi công tại 90+ chi nhánh", khối "Vì sao chọn" (như hub Kia) | Duyệt |
 | 15 bài case (hãng đèn: GTR, X-Light) | Lấy từ bài đã đăng trên auto365.vn |
 

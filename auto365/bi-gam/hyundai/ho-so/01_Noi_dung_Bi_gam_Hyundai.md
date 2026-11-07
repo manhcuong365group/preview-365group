@@ -11,8 +11,8 @@
 | H1 | Bi gầm Hyundai theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
-| SHA-256 index.html | `027cdbe802dec9105ec778c3fb3a59ac7eb8c07094cd1b4aea61dab9fe641919` |
-| SHA-256 content-src.html | `7ebc04fd559d98f3b4c9a48509bfdd83e6850247a48c566145d4a4b82ad6a199` |
+| SHA-256 index.html | `07dd2ddfe406152316c9397a58d2a94867e565ed4de523524779ade5e2454bfe` |
+| SHA-256 content-src.html | `760ad02dbb142e081500bcb1bf4ebea682af9de0eca1ec438b61f9f62e5e37d2` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -141,11 +141,15 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Hy
 | [Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?](https://auto365.vn/bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa) | Vùng sáng | 2026-07-27 |
 | [Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ](https://auto365.vn/bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao) | Hốc đèn | 2026-07-03 |
 
-## FAQ (8)
+## FAQ (9)
 
 **Dòng Hyundai nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
 Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Creta, Tucson và Elantra; Accent, Elantra, Creta, Tucson, Santa Fe, Custin có bài tư vấn riêng. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+
+**Xe Hyundai nên chọn bi gầm 2.0 hay 3.0 inch?**
+
+Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Trong hồ sơ Auto365, xe Hyundai đã lắp mẫu lens 2.0 inch gồm Santa Fe 2020 Premium (X-Light F10 2.0 New). Các mẫu còn lại trong bảng tra chọn theo kích thước hốc thực tế từng xe. Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
 
 **Hyundai đời cũ có lắp bi gầm được không?**
 

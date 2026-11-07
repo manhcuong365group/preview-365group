@@ -15,7 +15,7 @@
 |---|---|
 | Sapo, box "Xe Mitsubishi lắp bi gầm cần lưu ý gì?" (hốc 2.0/3.0 inch, nguồn điện, xe đời cũ) | Duyệt |
 | 13 dòng xe (Hatchback 1 · Sedan 1 · SUV 5 · MPV 5 · Bán tải 1); 8 dòng có link tư vấn/hồ sơ | Duyệt |
-| Khối nhu cầu 3 nhóm, 8 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
+| Khối nhu cầu 3 nhóm, 9 FAQ (có câu lắp tại TP.HCM → Trụ Sở Chính) | Duyệt |
 | "Thi công tại 90+ chi nhánh", khối "Vì sao chọn" (như hub Kia) | Duyệt |
 | 15 bài case (hãng đèn: AES, GTR, Titan, X-Light) | Lấy từ bài đã đăng trên auto365.vn |
 

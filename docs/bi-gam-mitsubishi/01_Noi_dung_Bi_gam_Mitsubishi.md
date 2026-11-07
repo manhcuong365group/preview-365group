@@ -11,8 +11,8 @@
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `eddb7b7efb108a4cbe8624241701d8288929a43cdf4ada537118c64498b6016d` |
-| SHA-256 content-src.html | `cd2101f3b24da91da94a11284933f634a17ff1a8e294ef5d75150afc6064590d` |
+| SHA-256 index.html | `e8c909d9522878ab88f04806007838b3420d33f8185ee2f07f28e557931cd97d` |
+| SHA-256 content-src.html | `9ba3ce0be5c3089f884fa23d9771a1dd9639198e27df6829a26b21751dafd439` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -144,11 +144,15 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Mi
 | [Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?](https://auto365.vn/bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa) | Vùng sáng | 2026-07-27 |
 | [Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ](https://auto365.vn/bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao) | Hốc đèn | 2026-07-03 |
 
-## FAQ (8)
+## FAQ (9)
 
 **Dòng Mitsubishi nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
 Các dòng đã có hồ sơ lắp thực tế gồm Xpander, Xpander Cross, Xforce, Destinator, Outlander, Pajero, Triton và Zinger; Xpander, Destinator, Outlander, Pajero, Triton có bài tư vấn riêng. Những dòng còn lại (Attrage, Pajero Sport) kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+
+**Xe Mitsubishi nên chọn bi gầm 2.0 hay 3.0 inch?**
+
+Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Trong hồ sơ Auto365, xe Mitsubishi đã lắp mẫu lens 2.0 inch gồm Triton 2025 (AES SV 2.0 Max), Xpander Cross 2023 (X-Light F10 2.0 New). Các mẫu còn lại trong bảng tra chọn theo kích thước hốc thực tế từng xe. Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
 
 **Mitsubishi đời cũ có lắp bi gầm được không?**
 

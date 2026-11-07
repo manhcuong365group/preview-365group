@@ -11,8 +11,8 @@
 | H1 | Bi gầm Ford theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `9180602725114947cf3c90d9d8bebb2802318abe3d24746452416a397bd9393d` |
-| SHA-256 content-src.html | `731a2c8a8b8a3dd360a025dbce8a17c53b445c28c548d25395b4b87754d8b6aa` |
+| SHA-256 index.html | `d8d122871d0993235a59f650572799a34feb839b92b4fddbdd5f2c66a95c781d` |
+| SHA-256 content-src.html | `ab41e2eb0c6f0d264a4a6a5a5e7a735a77380d343e9070de76d80e6da5259248` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -150,11 +150,15 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Fo
 | [Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?](https://auto365.vn/bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa) | Vùng sáng | 2026-07-27 |
 | [Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ](https://auto365.vn/bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao) | Hốc đèn | 2026-07-03 |
 
-## FAQ (8)
+## FAQ (9)
 
 **Dòng Ford nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
 Các dòng đã có hồ sơ lắp thực tế gồm Ranger, Ranger Raptor, Everest, Escape, EcoSport, Focus và Transit; Ranger, Everest, Escape, EcoSport, Focus, Transit có bài tư vấn riêng. Những dòng còn lại (Territory, Explorer, Mustang Mach-E) kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+
+**Xe Ford nên chọn bi gầm 2.0 hay 3.0 inch?**
+
+Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Mẫu lens 3.0 inch đã lắp trên EcoSport 2017 (AES SV 3.0 Max), Escape 2007 XLT (AES SV 3.0 Max), Escape 2010 XLS 2.3L (AES SV 3.0 Max), Everest Sport 2022 (AES SV 3.0 Max), Ranger XLS 2020 (AES SV 3.0 Max). Các mẫu còn lại trong bảng tra chọn theo kích thước hốc thực tế từng xe. Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
 
 **Ford đời cũ có lắp bi gầm được không?**
 
