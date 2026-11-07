@@ -488,7 +488,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 @media (max-width:640px){.h3m-grp{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.h3m-grp span{grid-column:1/-1;margin:0}.h3m-grp button{padding:8px 4px;font-size:13.5px}.h3m-need{padding:16px}.h3m-need h2{font-size:19px}.h3m-need__b{padding:9px 12px}.h3m-need__b span{font-size:19px}.h3m-need__b b{font-size:14.5px}}
 .h3m-card__tags{margin-bottom:auto!important;padding-bottom:14px!important}.h3m-card__more{margin-top:0!important}
 @media (max-width:640px){.h3m-pk{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:4px 16px 10px;scrollbar-width:none}.h3m-pk::-webkit-scrollbar{display:none}.h3m-pk>.h3m-card{flex:0 0 84%;scroll-snap-align:start}.h3m-pk-hint{display:block;text-align:center;font-size:13px;color:var(--m);margin:2px 0 14px}}.h3m-pk-hint{display:none}
-.h3m-card{cursor:default}.h3m-card__sub{margin-top:12px}.h3m-card__sub a:last-child{background:#3d4047;color:#fff!important;border-color:#3d4047}
+.h3m-card{cursor:pointer}.h3m-card__sub{margin-top:12px}.h3m-card__sub a:last-child{background:#3d4047;color:#fff!important;border-color:#3d4047}
 @media (max-width:640px){.h3m-card__combo{font-size:13px}.h3m-card__more summary{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:13.5px;white-space:nowrap}.h3m-card__more summary:after{position:static!important;flex:none;margin:0!important}.h3m-card h3{font-size:19px}}
 .h3m-card__sub{display:grid!important;grid-template-columns:1fr 1fr;gap:8px}.h3m-card__sub a{display:flex;align-items:center;justify-content:center;padding:10px 6px;border:1px solid var(--l);border-radius:10px;font-size:14px;font-weight:500;text-decoration:none;color:#111;white-space:nowrap}
 </style>
@@ -867,7 +867,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
    '<details class="h3m-card__more"'+(MQD?' open':'')+'><summary>Thông số &amp; giá theo nhóm xe</summary><div class="h3m-card__spec"><small>Thông số kính lái '+k.s[0]+'</small><div><span><b>'+k.s[1]+'</b>Cản nhiệt</span><span><b>'+k.s[2]+'</b>Xuyên sáng</span><span><b>'+k.s[3]+'</b>Cản hồng ngoại</span></div></div><div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div></details>'+
    
-   '<div class="h3m-card__sub"><a href="tel:0365365365" data-track="call_pk">☎ Gọi tư vấn</a><a href="'+k.u+'" target="_blank" rel="noopener" data-track="detail_pk">Xem chi tiết bài →</a></div></article>');
+   '<span class="h3m-card__lead" hidden data-open-lead data-pk="'+k.n+'"></span><div class="h3m-card__sub"><a href="tel:0365365365" data-track="call_pk">☎ Gọi tư vấn</a><a href="'+k.u+'" target="_blank" rel="noopener" data-track="detail_pk">Xem chi tiết bài →</a></div></article>');
   qs.add(new Option('3M '+k.n,k.id));fs.add(new Option('3M '+k.n,'3M '+k.n));if(k===PK[PK.length-1]){fs.add(new Option('Dán lẻ từng vị trí','Dán lẻ từng vị trí'));fs.add(new Option('Chưa biết chọn gói – nhờ tư vấn theo xe','Chưa biết chọn gói – nhờ tư vấn theo xe'))}
  });
  qs.value='crystalline-hybrid';
@@ -883,7 +883,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function renderCards(){var g=qc.value===''?-1:+qc.value;
   document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
    c.querySelectorAll('.h3m-card__price tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
-   var fr=c.querySelector('.h3m-card__from'),gi=g<0?0:g;if(fr)fr.innerHTML=(g<0?'Minicar từ':GN[g])+' <b>'+String(k.p[gi]).replace('.',',')+' triệu</b>';})}
+   var fr=c.querySelector('.h3m-card__from'),gi=g<0?0:g;if(fr)fr.innerHTML=(g<0?'Minicar từ':GN[g])+' <b>'+String(k.p[gi]).replace('.',',')+' triệu</b>';var b=c.querySelector('.h3m-card__lead');if(g<0)delete b.dataset.group;else b.dataset.group=GN[g];})}
  function renderQuote(){var k=PK.filter(function(x){return x.id===qs.value})[0];
   if(qc.value===''){setSel('3M '+k.n,'');qo.innerHTML='Chọn nhóm xe để xem giá trọn xe.';qo.classList.add('is-on');return}
   var g=+qc.value;setSel('3M '+k.n,GN[g]);
