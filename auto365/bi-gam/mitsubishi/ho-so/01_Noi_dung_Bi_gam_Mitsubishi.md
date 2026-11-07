@@ -11,8 +11,8 @@
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `20dfee73af6e84b33b29cc72c769a5912a6c77fa6dcbb9a053e6c46a22ff2660` |
-| SHA-256 content-src.html | `a71a388b29190e0a3d1be537ffaf84eb88dc77bb794188fb4cd963df477efabf` |
+| SHA-256 index.html | `41f222aadd75a1e3c7006ae030d4f97652eec35c1b8d678971f0db7c9527d875` |
+| SHA-256 content-src.html | `c2f69f8a3efb62a80be4b313ca131deb361df5c730df4c4ff7bb1e440be01f3b` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,10 +20,11 @@ Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ th�
 
 ## Chọn dòng xe Mitsubishi
 
-### Dòng xe (10)
+### Dòng xe (13)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
+| Mitsubishi Mirage | Hatchback | Liên hệ tư vấn | — |
 | Mitsubishi Attrage | Sedan | Liên hệ tư vấn | — |
 | Mitsubishi Xforce | SUV | Có hồ sơ | https://auto365.vn/mitsubishi-xforce-premium-2025-lap-bi-gam-x-light-x3-ultra-3000k |
 | Mitsubishi Destinator | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-destinator |
@@ -33,6 +34,8 @@ Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ th�
 | Mitsubishi Xpander | MPV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-xpander |
 | Mitsubishi Xpander Cross | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-xpander-cross-2025-lap-bi-gam-f10-hyper-20 |
 | Mitsubishi Zinger | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-zinger-gls-2011-lap-bi-gam-x-light-x3-ultra-4300k |
+| Mitsubishi Grandis | MPV | Liên hệ tư vấn | — |
+| Mitsubishi Jolie | MPV | Liên hệ tư vấn | — |
 | Mitsubishi Triton | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-triton |
 
 ## Xe Mitsubishi đã lắp bi gầm tại Auto365 (15 bài hồ sơ)

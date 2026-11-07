@@ -20,7 +20,7 @@
 | `bi-gam-hyundai-accent`, `bi-gam-hyundai-elantra`, `bi-gam-hyundai-creta`, `bi-gam-hyundai-tucson`, `bi-gam-hyundai-santa-fe`, `bi-gam-hyundai-custin` | Bài tư vấn dòng xe | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
-Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucson, Santa Fe, Custin); "Có hồ sơ" → bài case mới nhất (—); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Grand i10, Grand i10 Sedan, Venue, Palisade, Ioniq 5, Stargazer).
+Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucson, Santa Fe, Custin); "Có hồ sơ" → bài case mới nhất (—); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Grand i10, Getz, i20, Grand i10 Sedan, Avante, Venue, Palisade, Ioniq 5, Kona, Stargazer, Grand Starex).
 
 ## 2. Metadata
 
@@ -46,7 +46,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 
 | Khối | Nguồn |
 |---|---|
-| 12 dòng xe (Hatchback 1 · Sedan 3 · SUV 6 · MPV 2) | Dải Hyundai ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| 17 dòng xe (Hatchback 3 · Sedan 4 · SUV 7 · MPV 3) | Dải Hyundai ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
 | Hồ sơ (8) | Bài case bi gầm Hyundai đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
@@ -67,6 +67,11 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | HYU-IMG-05 | `hyundai-santa-fe-2017-tieu-chuan-lap-bi-gam-f10-turbo-v2-1792125417.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Hyundai Santa Fe 2017 Tiêu chuẩn lắp bi gầm X-Light F10 Turbo V2 4300K tại Auto365 |
 | HYU-IMG-06 | `auto365vn-1jpg-img_68ef543b7fd388.31126613_.jpg.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Hyundai Tucson nâng cấp đèn bi gầm X-Light X3 Ultra tại Auto365 |
 | HYU-IMG-07 | `auto365vn-hyundai-custin-nang-cap-bi-gam-x-light-f10-turbo-v2-img_6a6855c9d7c390.77278845.jpg.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Hyundai Custin lắp Bi gầm X-Light F10 Turbo V2 5500K: Giá và lưu ý kỹ thuật tại Auto365 |
+| HYU-IMG-08 | `hinh/m-getz.webp` | 640 × 400 webp | 37.688 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — M 93, CC BY-SA 3.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:Hyundai_Getz_Facelift_front-1.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Getz (đã ngừng bán), lazy | Hyundai Getz |
+| HYU-IMG-09 | `hinh/m-i20.webp` | 640 × 400 webp | 48.330 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Vauxford, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:2010_Hyundai_i20_Comfort_1.2_Front.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe i20 (đã ngừng bán), lazy | Hyundai i20 |
+| HYU-IMG-10 | `hinh/m-avante.webp` | 640 × 400 webp | 36.402 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Chu, CC BY-SA 3.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:20100804_hyundai_avante_1.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Avante (đã ngừng bán), lazy | Hyundai Avante |
+| HYU-IMG-11 | `hinh/m-kona.webp` | 640 × 400 webp | 40.538 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Elise240SX, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:2018_Hyundai_Kona_Preferred_in_Tangerine_Comet,_Front_Left,_06-12-2022.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Kona (đã ngừng bán), lazy | Hyundai Kona |
+| HYU-IMG-12 | `hinh/m-grand-starex.webp` | 640 × 400 webp | 37.998 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Ethan Llamas, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:Hyundai_Grand_Starex_2.5_GLS_TCI_2018.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Grand Starex (đã ngừng bán), lazy | Hyundai Grand Starex |
 
 ## 6. Khi đăng production
 

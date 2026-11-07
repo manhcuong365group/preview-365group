@@ -68,6 +68,7 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | HON-IMG-06 | `honda-hrv-nang-cap-bi-gam-x3-ultra-3000k-1793418467.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda HR-V 2021 lắp bi gầm X-Light X3 Ultra 3000K tại Auto365 |
 | HON-IMG-07 | `honda-city-rs-2024-lap-bi-gam-x-light-x3-ultra-5500k-7-1793254327.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda City RS 2024 lắp bi gầm X-Light X3 Ultra 5500K tại Auto365 |
 
+
 ## 6. Khi đăng production
 
 1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.

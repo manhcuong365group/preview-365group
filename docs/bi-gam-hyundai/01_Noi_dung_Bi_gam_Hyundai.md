@@ -11,8 +11,8 @@
 | H1 | Bi gầm Hyundai theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
-| SHA-256 index.html | `487c5868dc1f9170927f52b8babeceec624db1f7e60959d726a62c451a73b96c` |
-| SHA-256 content-src.html | `23d9eabbe4e282a530527dc7ecf3f68d6c89c76ad6c3a2aafd7e7dc385234a5b` |
+| SHA-256 index.html | `2f4a61a902a183e1751ae8f92c0ccc0a807b1454e791e061cbd3d1d7fd47da43` |
+| SHA-256 content-src.html | `e02539a7e9e5c3c037a8559823c662cf7c77c874790cb0ac65c3bde3fd918e59` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,22 +20,27 @@ Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống
 
 ## Chọn dòng xe Hyundai
 
-### Dòng xe (12)
+### Dòng xe (17)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Hyundai Grand i10 | Hatchback | Liên hệ tư vấn | — |
+| Hyundai Getz | Hatchback | Liên hệ tư vấn | — |
+| Hyundai i20 | Hatchback | Liên hệ tư vấn | — |
 | Hyundai Grand i10 Sedan | Sedan | Liên hệ tư vấn | — |
 | Hyundai Accent | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-accent |
 | Hyundai Elantra | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-elantra |
+| Hyundai Avante | Sedan | Liên hệ tư vấn | — |
 | Hyundai Venue | SUV | Liên hệ tư vấn | — |
 | Hyundai Creta | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-creta |
 | Hyundai Tucson | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-tucson |
 | Hyundai Santa Fe | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-santa-fe |
 | Hyundai Palisade | SUV | Liên hệ tư vấn | — |
 | Hyundai Ioniq 5 | SUV | Liên hệ tư vấn | — |
+| Hyundai Kona | SUV | Liên hệ tư vấn | — |
 | Hyundai Stargazer | MPV | Liên hệ tư vấn | — |
 | Hyundai Custin | MPV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-custin |
+| Hyundai Grand Starex | MPV | Liên hệ tư vấn | — |
 
 ## Xe Hyundai đã lắp bi gầm tại Auto365 (8 bài hồ sơ)
 

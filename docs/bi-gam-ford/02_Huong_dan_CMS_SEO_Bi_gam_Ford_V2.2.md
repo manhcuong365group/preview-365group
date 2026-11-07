@@ -20,7 +20,7 @@
 | `bi-gam-ford-focus`, `bi-gam-ford-ecosport`, `bi-gam-ford-escape`, `bi-gam-ford-everest`, `bi-gam-ford-ranger`, `bi-gam-ford-transit` | Bài tư vấn dòng xe | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
-Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Everest, Ranger, Transit); "Có hồ sơ" → bài case mới nhất (Ranger Raptor); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Territory, Explorer, Mustang Mach-E).
+Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Everest, Ranger, Transit); "Có hồ sơ" → bài case mới nhất (Ranger Raptor); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Fiesta, Laser, Mondeo, Territory, Explorer, Mustang Mach-E).
 
 ## 2. Metadata
 
@@ -46,7 +46,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Eve
 
 | Khối | Nguồn |
 |---|---|
-| 10 dòng xe (Sedan 1 · SUV 6 · Bán tải 2 · Xe khách 1) | Dải Ford ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| 13 dòng xe (Sedan 4 · SUV 6 · Bán tải 2 · Xe khách 1) | Dải Ford ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
 | Hồ sơ (21) | Bài case bi gầm Ford đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: AES, GTR, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
@@ -67,6 +67,9 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | FOR-IMG-05 | `auto365vn-ford-everest-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k-img_6a6d71a140fbc4.95876056.jpg.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Ford Everest 2022 lắp bi gầm X-Light F10 Turbo V2 4300K: Giá và cấu hình tại Auto365 |
 | FOR-IMG-06 | `ford-escape-xls-23l-2013-lap-bi-gam-x-light-x3-ultra-4300k-7-1791521645.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Ford Escape XLS 2.3L 2013 lắp X-Light X3 Ultra 4300K tại Auto365 |
 | FOR-IMG-07 | `ford-ranger-raptor-nang-cap-bi-gam-x3-ultra-1793069813.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Ford Ranger Raptor 2024 lắp bi gầm X-Light X3 Ultra 4300K tại Auto365 |
+| FOR-IMG-08 | `hinh/m-fiesta.webp` | 640 × 400 webp | 30.664 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — IFCAR, Public domain — [trang file gốc](https://commons.wikimedia.org/wiki/File:2011_Ford_Fiesta_S_sedan_front_--_07-10-2010.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Fiesta (đã ngừng bán), lazy | Ford Fiesta |
+| FOR-IMG-09 | `hinh/m-laser.webp` | 640 × 400 webp | 34.334 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — OSX, Public domain — [trang file gốc](https://commons.wikimedia.org/wiki/File:2001_Ford_Laser_%28KQ%29_GLXi_sedan_%282015-07-03%29_01.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Laser (đã ngừng bán), lazy | Ford Laser |
+| FOR-IMG-10 | `hinh/m-mondeo.webp` | 640 × 400 webp | 48.056 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Rudolf Stricker, CC BY-SA 3.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:Ford_Mondeo_front_20080303.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Mondeo (đã ngừng bán), lazy | Ford Mondeo |
 
 ## 6. Khi đăng production
 

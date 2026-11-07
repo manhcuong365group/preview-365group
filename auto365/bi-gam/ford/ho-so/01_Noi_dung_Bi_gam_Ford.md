@@ -11,8 +11,8 @@
 | H1 | Bi gầm Ford theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `8314ad60e11f761ba131443cd27bc504a7277060e3f778b2061d5b0dfa8999a9` |
-| SHA-256 content-src.html | `03f352f8996c3d84aa85282967156f247570d6b833d4801379ee1e17081f34bc` |
+| SHA-256 index.html | `938a1a5ea5fac7bf0441fda35a04d9ed543f84829122e2c4fef0b70ad062efc2` |
+| SHA-256 content-src.html | `97e3b959aded8f1ea51720df2d2a900b91b9024e7ac9d0aa8cf1841bc626b1d3` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,11 +20,14 @@ Bi gầm Ford cần chọn theo hốc đèn gầm, đời xe và hệ thống đ
 
 ## Chọn dòng xe Ford
 
-### Dòng xe (10)
+### Dòng xe (13)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Ford Focus | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-ford-focus |
+| Ford Fiesta | Sedan | Liên hệ tư vấn | — |
+| Ford Laser | Sedan | Liên hệ tư vấn | — |
+| Ford Mondeo | Sedan | Liên hệ tư vấn | — |
 | Ford EcoSport | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-ecosport |
 | Ford Territory | SUV | Liên hệ tư vấn | — |
 | Ford Escape | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-escape |

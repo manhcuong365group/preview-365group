@@ -20,7 +20,7 @@
 | `bi-gam-mitsubishi-destinator`, `bi-gam-mitsubishi-outlander`, `bi-gam-mitsubishi-pajero`, `bi-gam-mitsubishi-xpander`, `bi-gam-mitsubishi-triton` | Bài tư vấn dòng xe | — |
 | Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
 
-Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajero, Xpander, Triton); "Có hồ sơ" → bài case mới nhất (Xforce, Xpander Cross, Zinger); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Attrage, Pajero Sport).
+Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajero, Xpander, Triton); "Có hồ sơ" → bài case mới nhất (Xforce, Xpander Cross, Zinger); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Mirage, Attrage, Pajero Sport, Grandis, Jolie).
 
 ## 2. Metadata
 
@@ -46,7 +46,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajer
 
 | Khối | Nguồn |
 |---|---|
-| 10 dòng xe (Sedan 1 · SUV 5 · MPV 3 · Bán tải 1) | Dải Mitsubishi ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| 13 dòng xe (Hatchback 1 · Sedan 1 · SUV 5 · MPV 5 · Bán tải 1) | Dải Mitsubishi ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
 | Hồ sơ (15) | Bài case bi gầm Mitsubishi đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: AES, GTR, Titan, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
@@ -67,6 +67,9 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | MIT-IMG-05 | `auto365vn-mitsubishi-triton-2025-lap-aes-sv-20-max-5500k-img_6a9256174c76d5.97626076.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Mitsubishi Triton 2025 lắp AES SV 2.0 Max tại Auto365 |
 | MIT-IMG-06 | `mitsubishi-xforce-hoan-thien-lap-dat-x3-ultra-1793336291.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Mitsubishi Xforce Premium 2025 lắp bi gầm X-Light X3 Ultra 3000K tại Auto365 |
 | MIT-IMG-07 | `mitsubishi-pajero-2021-v6-30l-lap-bi-gam-x-light-f10-new-202-1793613489.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Mitsubishi Pajero 2021 V6 3.0L lắp bi gầm X-Light F10 New 2025 tại Auto365 |
+| MIT-IMG-08 | `hinh/m-mirage.webp` | 640 × 400 webp | 32.246 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Mr.choppers, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:2016-2020_Mitsubishi_Mirage_M_in_Cool_Silver_Metallic,_front_right.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Mirage (đã ngừng bán), lazy | Mitsubishi Mirage |
+| MIT-IMG-09 | `hinh/m-grandis.webp` | 640 × 400 webp | 44.814 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Vauxford, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:2005_Mitsubishi_Grandis_Equippe_Automatic_2.4_Front.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Grandis (đã ngừng bán), lazy | Mitsubishi Grandis |
+| MIT-IMG-10 | `hinh/m-jolie.webp` | 640 × 400 webp | 38.750 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Rutger van der Maar, CC BY 2.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:Mitsubishi_Freeca_second_facelift.jpg); ghi công công khai dưới lưới xe; ảnh Mitsubishi Freeca, cùng thân xe với Jolie | Thẻ dòng xe Jolie (đã ngừng bán), lazy | Mitsubishi Jolie |
 
 ## 6. Khi đăng production
 

@@ -201,6 +201,7 @@
   <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe Hyundai..." aria-label="Tìm dòng xe Hyundai"></label>
  </div>
  <div class="bgvf-grid" id="bgvf-grid"></div>
+ <p class="bgvf-fn" id="bgvf-credit">Ảnh xe tham khảo các dòng đã ngừng bán (đã tách nền, chỉ để nhận diện dòng xe, Wikimedia Commons): Hyundai Getz – <a href="https://commons.wikimedia.org/wiki/File:Hyundai_Getz_Facelift_front-1.jpg" rel="noopener" target="_blank">M 93</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener license" target="_blank">CC BY-SA 3.0</a>; Hyundai i20 – <a href="https://commons.wikimedia.org/wiki/File:2010_Hyundai_i20_Comfort_1.2_Front.jpg" rel="noopener" target="_blank">Vauxford</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="noopener license" target="_blank">CC BY-SA 4.0</a>; Hyundai Avante – <a href="https://commons.wikimedia.org/wiki/File:20100804_hyundai_avante_1.jpg" rel="noopener" target="_blank">Chu</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0" rel="noopener license" target="_blank">CC BY-SA 3.0</a>; Hyundai Kona – <a href="https://commons.wikimedia.org/wiki/File:2018_Hyundai_Kona_Preferred_in_Tangerine_Comet,_Front_Left,_06-12-2022.jpg" rel="noopener" target="_blank">Elise240SX</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="noopener license" target="_blank">CC BY-SA 4.0</a>; Hyundai Grand Starex – <a href="https://commons.wikimedia.org/wiki/File:Hyundai_Grand_Starex_2.5_GLS_TCI_2018.jpg" rel="noopener" target="_blank">Ethan Llamas</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0" rel="noopener license" target="_blank">CC BY-SA 4.0</a>.</p>
  <div class="bgvf-gcta"><p>Không thấy dòng xe hoặc chưa chắc mẫu? Gửi đời xe để kỹ thuật viên kiểm tra tương thích.</p><div><a class="g1" href="#tu-van">Nhận tư vấn</a><a class="g2" href="tel:0365365911">Gọi 0365 365 911</a></div></div>
 </div></section>
 
@@ -280,17 +281,22 @@
 var H='../theo-hang-xe/hinh/m-',P='https://auto365.vn/';
 // [tên, nhóm, ảnh, link bài tư vấn/hồ sơ trên auto365.vn hoặc '']
 var M=[['Grand i10','hatch',H+'grand-i10.webp',''],
+['Getz','hatch','hinh/m-getz.webp',''],
+['i20','hatch','hinh/m-i20.webp',''],
 ['Grand i10 Sedan','sedan',H+'grand-i10-sedan.webp',''],
 ['Accent','sedan',H+'accent.webp',P+'bi-gam-hyundai-accent'],
 ['Elantra','sedan',H+'elantra.webp',P+'bi-gam-hyundai-elantra'],
+['Avante','sedan','hinh/m-avante.webp',''],
 ['Venue','suv',H+'venue.webp',''],
 ['Creta','suv',H+'creta.webp',P+'bi-gam-hyundai-creta'],
 ['Tucson','suv',H+'tucson.webp',P+'bi-gam-hyundai-tucson'],
 ['Santa Fe','suv',H+'santa-fe.webp',P+'bi-gam-hyundai-santa-fe'],
 ['Palisade','suv',H+'palisade.webp',''],
 ['Ioniq 5','suv',H+'ioniq-5.webp',''],
+['Kona','suv','hinh/m-kona.webp',''],
 ['Stargazer','mpv',H+'stargazer.webp',''],
-['Custin','mpv',H+'custin.webp',P+'bi-gam-hyundai-custin']];
+['Custin','mpv',H+'custin.webp',P+'bi-gam-hyundai-custin'],
+['Grand Starex','mpv','hinh/m-grand-starex.webp','']];
 var T=[['all','Tất cả'],['hatch','Hatchback'],['sedan','Sedan'],['suv','SUV'],['mpv','MPV']];
 // [dòng xe, tiêu đề bài, slug bài trên auto365.vn, ảnh, ngày] — bài đã đăng trên auto365.vn
 var C=[["Santa Fe","Hyundai Santa Fe 2020 Premium lắp bi gầm X-Light F10 2.0 New","hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new","https://auto365.vn/uploads/images/news/hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new-1792487027.webp","2026-10-20"],
