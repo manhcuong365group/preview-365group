@@ -870,7 +870,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  var SEL={pk:'',gr:''},qc=document.getElementById('q-car'),qo=document.getElementById('q-out'),fvg=document.getElementById('dang-ky').vehicle_group;
  function pkName(id){var k=PK.filter(function(x){return x.id===id})[0];return k?'3M '+k.n:''}
  function syncForms(){fs.value=SEL.pk;fvg.value=SEL.gr}
- function setSel(pk,gr){SEL.pk=pk||'';SEL.gr=gr||'';syncForms();var sk=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0];if(sk)qs.value=sk.id;var sg=GN.indexOf(SEL.gr);qc.value=sg>-1?String(sg):'';renderCards();if(qo.classList.contains('is-on')&&sk)qo.innerHTML=sg>-1?'<b>3M '+sk.n+'</b> – '+GN[sg]+': <b style="color:var(--r)">'+vnd(sk.p[sg])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+sk.n+'" data-group="'+GN[sg]+'">Nhận báo giá &amp; đặt lịch →</button>':'Chọn nhóm xe để xem giá trọn xe.';if(window.mf){mf.package_name.value=SEL.pk;mf.vehicle_group.value=SEL.gr}renderSum()}
+ function setSel(pk,gr){SEL.pk=pk||'';SEL.gr=gr||'';syncForms();var sk=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0];if(sk)qs.value=sk.id;var sg=GN.indexOf(SEL.gr);qc.value=sg>-1?String(sg):'';renderCards();if(window.gbReady)syncTabs();if(qo.classList.contains('is-on')&&sk)qo.innerHTML=sg>-1?'<b>3M '+sk.n+'</b> – '+GN[sg]+': <b style="color:var(--r)">'+vnd(sk.p[sg])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+sk.n+'" data-group="'+GN[sg]+'">Nhận báo giá &amp; đặt lịch →</button>':'Chọn nhóm xe để xem giá trọn xe.';if(window.mf){mf.package_name.value=SEL.pk;mf.vehicle_group.value=SEL.gr}renderSum()}
  function renderSum(){if(!window.mpk)return;var k=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0],g=GN.indexOf(SEL.gr);
   mpk.hidden=!SEL.pk&&!SEL.gr;mpk.innerHTML=(SEL.pk?'Gói đã chọn: <b>'+SEL.pk+'</b>':'Gói: <b>chưa chọn</b>')+' · '+(SEL.gr?SEL.gr:'nhóm xe chưa chọn')+(k&&g>-1?' · <b>'+vnd(k.p[g])+'</b>':'')}
  function renderCards(){var g=qc.value===''?-1:+qc.value;
@@ -887,7 +887,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  var gb=[].slice.call(document.querySelectorAll('.h3m-grp button'));
  function syncTabs(){gb.forEach(function(b){var on=b.dataset.g===qc.value;b.classList.toggle('is-on',on);b.setAttribute('aria-pressed',on)})}
  gb.forEach(function(b){b.addEventListener('click',function(){qc.value=qc.value===b.dataset.g?'':b.dataset.g;qc.dispatchEvent(new Event('change'))})});
- qc.addEventListener('change',syncTabs);
+ qc.addEventListener('change',syncTabs);window.gbReady=1;
  document.querySelectorAll('.h3m-need__b').forEach(function(b){b.addEventListener('click',function(){var ids=b.dataset.need.split('|');
   document.querySelectorAll('.h3m-need__b').forEach(function(x){x.classList.toggle('is-on',x===b)});
   document.querySelectorAll('.h3m-card').forEach(function(c){c.classList.toggle('is-hl',ids.indexOf(c.dataset.id)>-1);c.classList.toggle('is-dim',ids.indexOf(c.dataset.id)<0)});
