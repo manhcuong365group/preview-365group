@@ -11,8 +11,8 @@
 | H1 | Bi gầm Ford theo từng dòng xe |
 | dateModified | 2026-11-07 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `bc65e9bb76f4d5273a0b20cd7de6e07f33495914ee1beccae788a15ccee35b67` |
-| SHA-256 content-src.html | `b085dc7966385bfa50c6328bbc23b1baa7b98d997a0b654add7d89c77ef7f147` |
+| SHA-256 index.html | `9180602725114947cf3c90d9d8bebb2802318abe3d24746452416a397bd9393d` |
+| SHA-256 content-src.html | `731a2c8a8b8a3dd360a025dbce8a17c53b445c28c548d25395b4b87754d8b6aa` |
 
 ## Sapo (kiêm trả lời nhanh)
 

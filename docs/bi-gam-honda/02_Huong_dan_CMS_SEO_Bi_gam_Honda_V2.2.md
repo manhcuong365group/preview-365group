@@ -8,7 +8,7 @@
 | Build | `node scripts/build-bi-gam-honda.mjs && node scripts/export-bi-gam-honda-docs.mjs` |
 | Nội dung + SHA | [01_Noi_dung_Bi_gam_Honda.md](01_Noi_dung_Bi_gam_Honda.md) |
 | Master data | [04_Master_Data_Bi_gam_Honda.csv](04_Master_Data_Bi_gam_Honda.csv) |
-| Ngày lập | 07/11/2026 — **bản nháp, chưa duyệt** |
+| Ngày lập | 07/11/2026 — **ĐÃ DUYỆT 07/11/2026** (anh Nguyễn Quang Đạo, chủ quản xác nhận) |
 
 ## 1. Vai trò URL
 
@@ -36,7 +36,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" 
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Honda. **Chưa có `reviewedBy`/`lastReviewed`** — chỉ thêm byline "Rà soát kỹ thuật" + ngày khi anh Đạo duyệt, build tự sinh |
+| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Honda. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-07 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Honda |
 | ItemList `#dong-xe` | 6 thẻ dòng xe có link |
 | ItemList `#xe-thuc-te` | 15 bài case (không phải 15 xe khác nhau đã xác minh; chưa có case_id) |
@@ -52,7 +52,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" 
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |
 | FAQ HCM | Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
-| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Honda"; câu "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" của thẻ tư vấn đã thay bằng câu trung tính (chưa duyệt) |
+| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Honda"; thẻ tư vấn giữ câu trung tính (không nêu tên người duyệt trong khối dùng chung); người rà soát ghi ở byline và schema |
 
 ## 5. Image Pack V2.2 (07/11/2026)
 

@@ -8,7 +8,7 @@
 | Build | `node scripts/build-bi-gam-ford.mjs && node scripts/export-bi-gam-ford-docs.mjs` |
 | Nội dung + SHA | [01_Noi_dung_Bi_gam_Ford.md](01_Noi_dung_Bi_gam_Ford.md) |
 | Master data | [04_Master_Data_Bi_gam_Ford.csv](04_Master_Data_Bi_gam_Ford.csv) |
-| Ngày lập | 07/11/2026 — **bản nháp, chưa duyệt** |
+| Ngày lập | 07/11/2026 — **ĐÃ DUYỆT 07/11/2026** (anh Nguyễn Quang Đạo, chủ quản xác nhận) |
 
 ## 1. Vai trò URL
 
@@ -36,7 +36,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Eve
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Ford. **Chưa có `reviewedBy`/`lastReviewed`** — chỉ thêm byline "Rà soát kỹ thuật" + ngày khi anh Đạo duyệt, build tự sinh |
+| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Ford. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-07 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Ford |
 | ItemList `#dong-xe` | 7 thẻ dòng xe có link |
 | ItemList `#xe-thuc-te` | 21 bài case (không phải 21 xe khác nhau đã xác minh; chưa có case_id) |
@@ -52,7 +52,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Eve
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |
 | FAQ HCM | Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
-| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Ford"; câu "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" của thẻ tư vấn đã thay bằng câu trung tính (chưa duyệt) |
+| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Ford"; thẻ tư vấn giữ câu trung tính (không nêu tên người duyệt trong khối dùng chung); người rà soát ghi ở byline và schema |
 
 ## 5. Image Pack V2.2 (07/11/2026)
 
