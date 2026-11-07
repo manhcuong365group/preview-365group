@@ -9,7 +9,7 @@
 | Hotfix 02/11/2026 (audit 01/11) | (1) Link gọi: mỗi số một tel: riêng ở bộ tìm (tìm kiếm, chọn tỉnh, gần tôi) và danh sách dự phòng — 33 bản ghi nhiều số, không còn href ghép; (2) nút MIỀN NAM 21 → 24 (41/26/24 = 91); (3) thẻ Auto365 Quảng Ninh (Hạ Long) trỏ hồ sơ riêng /chi-nhanh/quang-ninh/ha-long; (4) câu chuẩn dịch vụ ghi rõ: cùng giá thiết bị niêm yết, bảo hành theo chính sách từng mã, pát/công/phụ kiện báo sau khi xem xe. Đã kiểm DOM sau sửa (Quảng Ninh 8 thẻ, Móng Cái 2 link). lastReviewed giữ 26/10 |
 | Phiếu duyệt U3 V1.9 | **PASS — ĐÃ DUYỆT 30/10/2026**: U1 giao diện/đa thiết bị, U2 form/CRM/tracking, U3 hồ sơ 02/03/04. Kỹ thuật: Nguyễn Quang Đạo; SEO: Ngọc Trân. File: [Phieu_U3_Bi_Gam_VinFast_Herio Green_V19_DA_DUYET_FINAL_20261030.pdf](Phieu_U3_Bi_Gam_VinFast_Herio Green_V19_DA_DUYET_FINAL_20261030.pdf). Production (index/GSC, redirect, mapping CMS) ghi nhận riêng khi đăng |
 | Chuẩn | V1.9 (tên file giữ V1.8 để không đứt liên kết) |
-| SHA-256 index.html | `6bebbe9ffb4f0292036e5dc299036ae3d576215e48d62e7a723e3a9acfd6969a` |
+| SHA-256 index.html | `96a6fbb4734ceec16e07dfefe63d9efb3fe653500145e457aea0cb34bf5927be` |
 | Ngày sửa nội dung (dòng Cập nhật + dateModified) | 30/10/2026 |
 | lastReviewed / xác nhận kỹ thuật 17 mẫu | 26/10/2026 — anh Nguyễn Quang Đạo |
 | Ảnh | Ảnh thật Auto365 cung cấp, thay ngày 29/10/2026; alt mô tả đúng ảnh; vách test là quy trình chung, không phải số đo riêng Herio Green |

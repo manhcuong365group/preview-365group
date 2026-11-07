@@ -7,7 +7,7 @@
 | Trạng thái | **Đã xác nhận mẫu.** Anh Nguyễn Quang Đạo xác nhận 17 mẫu cho VF Wild 07/11/2026 (bảng XAC_NHAN_TUONG_THICH_VF_WILD_20261107.md). Còn chờ: ảnh thật, phiếu U1–U3, map URL production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
-| SHA-256 index.html | `90a45da9d81ca4e06a6122d3af3e941650d864920a966cfedcaaddb5dc5cc512` |
+| SHA-256 index.html | `2ae94f735ecaee16a503b9903e9c6e8b98e60429a56647dc9dac788fe9fb9530` |
 | Ngày (dòng Cập nhật + datePublished/dateModified) | 07/11/2026 |
 | reviewedBy / lastReviewed | Nguyễn Quang Đạo · 2026-11-07 |
 | Mô tả xe | Chỉ ghi "mẫu bán tải điện của VinFast"; không ghi năm ra mắt, kích thước, phiên bản (chưa có nguồn) |
