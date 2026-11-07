@@ -8,7 +8,7 @@
 | Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf9/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf9 |
-| SHA-256 index.html | `9e1c20da33f72bdc03eb943913e5ae2c660990c2ae959e94dcc9c27674ec55c7` |
+| SHA-256 index.html | `3dfd9cdbb495786ca6b780eab4c877452c7aecc85beca24aeeddd92536df80f7` |
 | Vá audit 04/11 (05/11/2026) | Đã sửa: FAQ "có lắp được không" và các câu "17/16 mẫu" chuyển sang dạng có điều kiện (mẫu tham khảo, cần kiểm tra khả năng lắp trên xe), JSON-LD FAQPage đồng bộ; thẻ dòng xe khác trỏ trang VF9/VF e34 thay vì tìm kiếm v2, bỏ thẻ tự trỏ; bỏ popup video rỗng; dateModified 05/11/2026. VF9: lens đối chiếu theo đời xe, Eco/Plus. Còn mở: fitment từng mẫu chờ anh Nguyễn Quang Đạo xác nhận; ảnh thật/case thay ảnh AI; Hub VinFast chưa link trang này; IT/CRM/canonical/production (U1–U3). Giữ theo chủ trang: chuẩn dịch vụ tất cả cơ sở, nhãn 90+, bộ tìm 91 cơ sở |
 | Ngày (dòng Cập nhật + datePublished/dateModified) | 04/11/2026 |
 | reviewedBy / lastReviewed | Chưa gắn — bổ sung khi anh Đạo xác nhận |

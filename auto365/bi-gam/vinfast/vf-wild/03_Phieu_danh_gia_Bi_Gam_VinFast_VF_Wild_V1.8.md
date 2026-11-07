@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `1856b64d7280211765b4579f921d22e3d4ced0f14cbf4781e5c772481aae9cf4` |
+| SHA-256 index.html | `f704131e8e0e67554a0238b129d7c52f08c9b3fc3b5dbb40a00fe845d78851d5` |
 | Người chấm | Tự chấm (team nội dung), chưa có chủ quản ký |
 
 ## Điểm 12 tiêu chí
