@@ -1,4 +1,4 @@
-> **Trang mới dựng 07/11/2026 từ khung VF9 — CHỜ DUYỆT.** 9 mẫu theo VF 3 cùng nền tảng, chờ anh Nguyễn Quang Đạo xác nhận; ảnh minh họa tạm, chờ ảnh thật. Nội dung lịch sử bên dưới kế thừa từ hồ sơ VF9, chỉ mang tính tham khảo khung.
+> **Trang mới dựng 07/11/2026 từ khung VF9 — ĐÃ XÁC NHẬN MẪU (anh Đạo 07/11/2026), chờ phiếu U1–U3.** 9 mẫu theo VF 3 cùng nền tảng; ảnh minh họa tạm, chờ ảnh thật. Nội dung lịch sử bên dưới kế thừa từ hồ sơ VF9, chỉ mang tính tham khảo khung.
 
 # Bi gầm VinFast Minio Green — Phiếu đánh giá V1.8
 
@@ -10,7 +10,7 @@
 | Ảnh AI tạm 04/11/2026 | Gắn tạm ảnh minh họa AI (mô phỏng) theo yêu cầu chủ trang, alt ghi rõ "không phải ảnh thi công thật"; BẮT BUỘC thay ảnh thật trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `5ec2ecfe04ae9a975c72f634aeab6d864c33db6c3398a2c42de4b481631b4b87` |
+| SHA-256 index.html | `38a9ce795900e008618c0af6e8c4da226aa2ea1e054b914741995dea0dd0decb` |
 | Vá audit 04/11 (05/11/2026) | Đã sửa: FAQ "có lắp được không" và các câu "17/16 mẫu" chuyển sang dạng có điều kiện (mẫu tham khảo, cần kiểm tra khả năng lắp trên xe), JSON-LD FAQPage đồng bộ; thẻ dòng xe khác trỏ trang Minio Green/VF e34 thay vì tìm kiếm v2, bỏ thẻ tự trỏ; bỏ popup video rỗng; dateModified 05/11/2026. Minio Green: lens đối chiếu theo đời xe, Eco/Plus. Còn mở: fitment từng mẫu chờ anh Nguyễn Quang Đạo xác nhận; ảnh thật/case thay ảnh AI; Hub VinFast chưa link trang này; IT/CRM/canonical/production (U1–U3). Giữ theo chủ trang: chuẩn dịch vụ tất cả cơ sở, nhãn 90+, bộ tìm 91 cơ sở |
 | Ngày (dòng Cập nhật + datePublished/dateModified) | 04/11/2026 |
 | reviewedBy / lastReviewed | Chưa gắn — bổ sung khi anh Đạo xác nhận |
@@ -32,3 +32,4 @@
 | 07/11/2026 | Vá tái kiểm V2.2 R2: thêm bảng xác nhận tương thích (Đạo 06/11), link QA trỏ PDF hiệu lực, nhãn khối case "xe VinFast khác"; dateModified 2026-11-07 |
 
 | 07/11/2026 | Dựng trang Minio Green từ khung VF9: 9 mẫu theo VF 3, chờ Đạo xác nhận, ảnh minh họa tạm |
+| 07/11/2026 | Anh Nguyễn Quang Đạo xác nhận 9 mẫu lắp được Minio Green; reviewedBy + lastReviewed 2026-11-07; bảng XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md |
