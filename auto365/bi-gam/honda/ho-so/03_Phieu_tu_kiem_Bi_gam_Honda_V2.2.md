@@ -14,8 +14,8 @@
 |---|---|---:|---|
 | C1 | Chính xác và nhất quán | 9,0/10 | 15 case + bài tư vấn từ bài đã đăng auto365.vn; ví dụ kỹ thuật lấy từ tiêu đề bài; chưa có người rà soát kỹ thuật |
 | C2 | Đầy đủ theo vai trò | 9,2/10 | 8 dòng xe, 15 hồ sơ, lọc dòng xe + hãng đèn, box lưu ý, 3 nhóm nhu cầu, 8 FAQ |
-| C3 | Tự nhiên và hữu ích | 9,4/10 | Giọng trung tính, có điều kiện kiểm xe, không claim tuyệt đối |
-| | **Content** | **27,6/30** | |
+| C3 | Tự nhiên và hữu ích | 9,5/10 | Giọng trung tính, có điều kiện kiểm xe, không claim tuyệt đối; thẻ dòng xe đồng bộ ảnh tách nền, hero ảnh thi công thật (07/11) |
+| | **Content** | **27,7/30** | |
 | S1 | Intent và URL | 9,6/10 | Trang hãng giữa hub bi gầm và bài dòng xe |
 | S2 | On-page | 9,5/10 | 1 H1, canonical, 6 khối schema sinh từ HTML, nội dung render sẵn |
 | S3 | Liên kết, triển khai | 9,4/10 | 30 link auto365.vn trong nội dung, kiểm HTTP 07/11: tất cả 200; hồ sơ 01–05 |
@@ -27,7 +27,7 @@
 | U1 | Đa thiết bị | 4/5 | 375 / 1366 px không tràn ngang, ảnh tải đủ (07/11); chưa test máy thật |
 | U2 | Tương tác | 4/5 | Lọc, tìm, tự điền xe chạy trên preview; lead/CRM chưa test |
 | U3 | Bàn giao | 4/5 | 01–05 cùng build; chưa có phiếu U3 |
-| | **Tổng** | **≈90,2/100** | **Chưa đạt** |
+| | **Tổng** | **≈90,3/100** | **Chưa đạt** — chấm lại 07/11 sau khi thêm dòng xe ngừng bán, thay ảnh thẻ/hero; điểm chặn là G3 (chưa duyệt) và U1–U3 |
 
 ## 2. Để đạt
 

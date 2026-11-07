@@ -56,18 +56,19 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" 
 
 ## 5. Image Pack V2.2 (07/11/2026)
 
-Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe). Dòng xe chưa có thumbnail (Odyssey) dùng ảnh bìa bài case mới nhất của dòng đó (ảnh Auto365, `object-fit:cover`). Dòng chưa có ảnh lẫn case (Accord) hiển thị tên chữ. Không có ảnh trước–sau/beam test.
+Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe).   Không có ảnh trước–sau/beam test.
 
 | Asset ID | Tệp | Kích thước | Bytes | Loại | Nguồn / quyền | Vị trí, tải | ALT / caption |
 |---|---|---|---:|---|---|---|---|
-| HON-IMG-01 | `hinh/hero-honda-bi-gam.webp` | 1100 × 638 webp | 57.806 | Ảnh bìa bài case (có thể có chữ đồ họa) | Auto365 — bài case đã đăng | Hero, eager | Honda City RS 2022 lắp bi gầm X-Light F10 Turbo V2 tại Auto365 |
+| HON-IMG-01 | `hinh/hero-honda-bi-gam.webp` | 1100 × 638 webp | 93.670 | Ảnh chụp thực tế trong bài case, không chữ đồ họa | Auto365 — bài case đã đăng (nguồn ghi trong comment hero-src) | Hero, eager | Honda CR-V G 2024 lắp bi gầm X-Light F10 Turbo V2 tại Auto365 |
 | HON-IMG-02 | `hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp` | 1000 × 563 webp | 45.358 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 (dùng chung hub Kia) | Vì sao chọn, lazy | caption: Ảnh thực tế: kỹ thuật viên lắp bi gầm vào hốc đèn cản trước |
 | HON-IMG-03 | `auto365vn-honda-cr-v-2024-lap-x-light-f10-turbo-v2-9-img_6a8bc72fd63098.50487058.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda CR-V G 2024 lắp X-Light F10 Turbo V2: Giá, cấu hình tại Auto365 |
 | HON-IMG-04 | `honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025-1791532799.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda Civic 2021 RS lắp bi gầm X-Light F10 New 2025 tại Auto365 |
 | HON-IMG-05 | `honda-br-v-l-2023-lap-bi-gam-x-light-f10-turbo-5500k-6-1792394289.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda BR-V L 2023 lắp bi gầm X-Light F10 Turbo 5500K tại Auto365 |
 | HON-IMG-06 | `honda-hrv-nang-cap-bi-gam-x3-ultra-3000k-1793418467.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda HR-V 2021 lắp bi gầm X-Light X3 Ultra 3000K tại Auto365 |
 | HON-IMG-07 | `honda-city-rs-2024-lap-bi-gam-x-light-x3-ultra-5500k-7-1793254327.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda City RS 2024 lắp bi gầm X-Light X3 Ultra 5500K tại Auto365 |
-
+| HON-IMG-08 | `hinh/m-odyssey.webp` | 640 × 400 webp | 30.692 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Anonymousfox36, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:Honda_Odyssey_V_second_facelift_%28front%29.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Odyssey, lazy | Honda Odyssey |
+| HON-IMG-09 | `hinh/m-accord.webp` | 640 × 400 webp | 23.372 | Ảnh xe tham khảo (tách nền) | Wikimedia Commons — Elise240SX, CC BY-SA 4.0 — [trang file gốc](https://commons.wikimedia.org/wiki/File:2020_Honda_Accord_Touring_in_Platinum_White_Pearl,_Front_Left,_09-03-2022.jpg); ghi công công khai dưới lưới xe | Thẻ dòng xe Accord, lazy | Honda Accord |
 
 ## 6. Khi đăng production
 

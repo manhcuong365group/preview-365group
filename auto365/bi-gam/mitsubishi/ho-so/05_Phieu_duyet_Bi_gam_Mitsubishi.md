@@ -23,7 +23,7 @@
 - Ví dụ kích thước hốc đèn và câu nguồn điện trong box lưu ý.
 - Cách chia nhóm dòng xe và danh sách dòng "Tư vấn cấu hình" (Mirage, Attrage, Pajero Sport, Grandis, Jolie).
 - Thêm 07/11: các dòng đã ngừng bán nhưng còn lưu hành (thẻ "Tư vấn cấu hình", ảnh xe tham khảo Wikimedia đã tách nền) — xác nhận có giữ trên trang.
-- Ảnh case dùng làm thumbnail cho dòng chưa có ảnh mẫu (Xforce, Pajero, Xpander, Zinger).
+- Ảnh case dùng làm thumbnail cho dòng chưa có ảnh mẫu.
 
 ## Ngoài phạm vi trang
 
