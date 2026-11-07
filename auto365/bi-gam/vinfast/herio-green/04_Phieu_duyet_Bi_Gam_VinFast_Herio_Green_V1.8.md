@@ -4,9 +4,9 @@
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/vinfast/herio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/herio-green (chưa phát hành) |
-| SHA-256 index.html | `b68f71cb5e961c0c3e1a54685334a39642dec6d7b399fe6d38348e43184d549c` |
+| SHA-256 index.html | `2d0ea18afe72e2478e89ffd338a3f5594690b67c0579ab828034b74ea79c2939` |
 | Ngày | 07/11/2026 |
-| Trạng thái | **TỰ KIỂM CHƯA ĐẠT — chờ chủ quản ký** (tự chấm 89,0/100; ảnh minh họa AI là lỗi mở trước production) |
+| Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)** (tự chấm 89,0/100; ảnh minh họa AI là lỗi mở trước production) |
 
 ## 1. Xác nhận nội dung
 
@@ -20,7 +20,7 @@
 
 Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfast/herio-green/). Không gửi lead thật.
 
-### U1 — Hiển thị, thiết bị: TỰ KIỂM ĐẠT (có lỗi mở ảnh AI)
+### U1 — Hiển thị, thiết bị: ĐẠT (chủ quản test máy thật 07/11/2026) (có lỗi mở ảnh AI)
 
 | Khổ | Kết quả |
 |---|---|
@@ -34,7 +34,7 @@ Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfa
 - Modal báo giá (`dialog.nr-quote`) mở khi bấm nút báo giá.
 - Lỗi mở: ảnh là minh họa AI (HG-01).
 
-### U2 — CTA, lead: TỰ KIỂM ĐẠT (chưa test gửi thật)
+### U2 — CTA, lead: ĐẠT (chủ quản test máy thật 07/11/2026) (chưa test gửi thật)
 
 - 3 form đều `action="/api/leads"`.
 - Form báo giá: `service = "Báo giá bi gầm VinFast Herio Green"`, `source_page = "Master: VinFast Herio Green"`, `car_model` điền sẵn "VinFast Herio Green", `product`/`product_price`/`product_url` lấy từ nút báo giá từng mẫu (ví dụ "Bi gầm X-Light 301 V2").
@@ -43,7 +43,7 @@ Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfa
 - CTA ghi "Gửi yêu cầu kiểm tra xe", không hứa lịch đã giữ.
 - Chưa làm: gửi lead test và đối soát CRM (HG-06).
 
-### U3 — Hồ sơ, đồng bộ: TỰ KIỂM ĐẠT
+### U3 — Hồ sơ, đồng bộ: ĐẠT (chủ quản test máy thật 07/11/2026)
 
 - 02, 03, 04 và bảng xác nhận tương thích cùng SHA index.html ở trên.
 - `datePublished`/`dateModified` 2026-11-07; `reviewedBy` Nguyễn Quang Đạo, `lastReviewed` 2026-11-07; dòng "Rà soát kỹ thuật" trên trang khớp.
@@ -57,3 +57,4 @@ Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfa
 | Chủ quản (U1–U3) | — | — | Chờ ký |
 | Media (ảnh) | — | — | Chờ ảnh thật |
 | IT (production) | — | — | Chờ |
+| 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |

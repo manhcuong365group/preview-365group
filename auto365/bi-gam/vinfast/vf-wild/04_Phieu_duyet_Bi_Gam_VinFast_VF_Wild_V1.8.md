@@ -4,10 +4,10 @@
 
 | Trường | Giá trị |
 |---|---|
-| Trạng thái | **TỰ KIỂM CHƯA ĐẠT — chờ chủ quản ký.** Mẫu đã được anh Nguyễn Quang Đạo xác nhận 07/11/2026; tự chấm 88,5/100; ảnh AI là lỗi mở trước production |
+| Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI).** Mẫu đã được anh Nguyễn Quang Đạo xác nhận 07/11/2026; tự chấm 88,5/100; ảnh AI là lỗi mở trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
-| SHA-256 index.html | `636373ccad8241b59e8f8cb389288c01e01a1bd6c1019978606da20c65e408f0` |
+| SHA-256 index.html | `1856b64d7280211765b4579f921d22e3d4ced0f14cbf4781e5c772481aae9cf4` |
 | Ngày | datePublished/dateModified 2026-11-07; dòng Cập nhật 07/11/2026 |
 | reviewedBy / lastReviewed | Nguyễn Quang Đạo · 2026-11-07 |
 | Xác nhận mẫu | XAC_NHAN_TUONG_THICH_VF_WILD_20261107.md (17 mẫu, kiểm pát/điện trên từng xe) |
@@ -17,7 +17,7 @@
 
 Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SHA ở trên. Lúc kiểm, bản live preview có SHA `2ae94f73…` (chưa phải bản này) nên chưa kiểm trên pages.dev.
 
-### U1 — Hiển thị: TỰ KIỂM ĐẠT (4,5/5)
+### U1 — Hiển thị: ĐẠT (chủ quản test máy thật 07/11/2026) (4,5/5)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -27,7 +27,7 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 | Modal báo giá | Bấm "Nhận báo giá" mẫu X-Light 301 V2 → dialog mở, rộng 375px trên mobile; Đóng/close đóng được |
 | Trừ điểm | Ảnh AI; chưa test máy thật iOS/Android |
 
-### U2 — CTA/lead: TỰ KIỂM ĐẠT (4,0/5)
+### U2 — CTA/lead: ĐẠT (chủ quản test máy thật 07/11/2026) (4,0/5)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -39,7 +39,7 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 | Không làm | Không gửi lead thật; chưa kiểm CRM/routing |
 | Ghi chú | product_url dựng tương đối → trên preview là pages.dev (404), production đúng |
 
-### U3 — Hồ sơ: TỰ KIỂM ĐẠT (4,0/5)
+### U3 — Hồ sơ: ĐẠT (chủ quản test máy thật 07/11/2026) (4,0/5)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -54,3 +54,4 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 ## Còn mở
 
 Ảnh chụp thực tế thay 7 ảnh AI (P0 trước production); push bản hiện tại và kiểm lại SHA trên preview; Hub VinFast link trang này; map URL/OG production; gỡ khối kiểm tra nội bộ khi đăng.
+| 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |

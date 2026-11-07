@@ -8,7 +8,7 @@
 | Loại trang | MODEL_GUIDE — tư vấn bi gầm theo dòng xe (không phải case thi công) |
 | Dựng | 07/11/2026 từ khung trang VF5 (Herio Green cùng nền tảng VF 5) |
 | Kiểm duyệt kỹ thuật | anh Nguyễn Quang Đạo — xác nhận 17 mẫu lắp được Herio Green (07/11/2026) |
-| SHA-256 index.html | `b68f71cb5e961c0c3e1a54685334a39642dec6d7b399fe6d38348e43184d549c` |
+| SHA-256 index.html | `2d0ea18afe72e2478e89ffd338a3f5594690b67c0579ab828034b74ea79c2939` |
 
 ## 1. Metadata
 

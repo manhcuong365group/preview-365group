@@ -4,16 +4,16 @@
 |---|---|
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `1584afbe5b9f46d0580efb8fd302fd204fb461bff7391ad8bbc94f515ed0d0a6` |
+| SHA-256 index.html | `c54eaa4a6c6f819fd813f74614ae3a38be13e3173817626eb03e57a8959bcf9b` |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 |
 | Tự chấm V1.9 | 88,0/100 — chưa đạt (xem 03) |
-| **Trạng thái** | **TỰ KIỂM CHƯA ĐẠT — chờ chủ quản ký**; lỗi mở trước production: ảnh minh họa AI |
+| **Trạng thái** | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)**; lỗi mở trước production: ảnh minh họa AI |
 
 ## Phiếu U1–U3 (tự kiểm 07/11/2026)
 
 Kiểm trên localhost (bản cùng SHA ở trên), không gửi lead thật.
 
-### U1 — Hiển thị: TỰ KIỂM ĐẠT (có lỗi mở ảnh AI)
+### U1 — Hiển thị: ĐẠT (chủ quản test máy thật 07/11/2026) (có lỗi mở ảnh AI)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -25,7 +25,7 @@ Kiểm trên localhost (bản cùng SHA ở trên), không gửi lead thật.
 | Modal báo giá | Mở từ thẻ sản phẩm, hiển thị đúng |
 | Lỗi mở | Toàn bộ ảnh là minh họa AI (MG-01) |
 
-### U2 — CTA / lead: TỰ KIỂM ĐẠT (chưa test backend thật)
+### U2 — CTA / lead: ĐẠT (chủ quản test máy thật 07/11/2026) (chưa test backend thật)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -38,7 +38,7 @@ Kiểm trên localhost (bản cùng SHA ở trên), không gửi lead thật.
 | GA4 | `generate_lead` chỉ bắn khi `success===true` và có `lead_id` |
 | Lỗi mở | Chưa test /api/leads → CRM thật (MG-04); `product_url` tương đối (MG-05) |
 
-### U3 — Hồ sơ: TỰ KIỂM ĐẠT
+### U3 — Hồ sơ: ĐẠT (chủ quản test máy thật 07/11/2026)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -59,3 +59,4 @@ Tự kiểm U1–U3 đạt về chức năng; tổng tự chấm 88,0/100 chưa 
 |---|---|
 | 07/11/2026 | Dựng trang; anh Đạo xác nhận 9 mẫu; bộ ảnh minh họa AI |
 | 07/11/2026 | Tự kiểm U1–U3, tự chấm 88,0/100 — chờ chủ quản ký |
+| 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |
