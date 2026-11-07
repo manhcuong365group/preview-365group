@@ -100,7 +100,7 @@ const checked = '2026-11-07'; // case, cẩm nang, link thẻ dòng xe: kiểm H
 const checkedModel = checked;
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
 models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? (/\/bi-gam-ford-/.test(m.url) ? 'bài tư vấn dòng xe đã đăng' : 'bài case đã đăng (chưa có bài tư vấn dòng xe)') : '', checkedModel, [m.status === 'Có hồ sơ' ? 'HTTP 200 (kiểm 07/11)' : '', /^https?:/.test(m.img) ? 'ảnh: ảnh case thật Auto365 (dòng xe chưa có ảnh mẫu)' : ''].filter(Boolean).join('; ')]));
-cases.forEach((c) => rows.push([/^Video:/.test(c.title) ? 'case_video' : 'case_article', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'case_id nội bộ chưa có — chưa xác nhận các bài cùng dòng xe là xe khác nhau']));
+cases.forEach((c) => rows.push([/^Video:/.test(c.title) ? 'case_video' : 'case_article', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'mỗi bài là một xe khác nhau (chủ quản xác nhận 07/11); case_id nội bộ chưa có']));
 guides.forEach((x) => rows.push(['guide', (x.url.match(/bi-gam-ford-([a-z-]+)$/) || [])[1] || '', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, /\/bi-gam-ford-/.test(x.url) ? 'bài tư vấn theo dòng xe, không phải case' : 'cẩm nang đèn bi gầm (kiến thức chung)']));
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_Ford.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 
@@ -146,7 +146,7 @@ function csv2html(t) {
 }
 const pageSha = sha(html);
 const shell = (title, body) => `<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>${escH(title)} — Hồ sơ Hub Bi gầm Ford</title><style>body{font:15px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#1d2329;background:#fff;max-width:1100px;margin:0 auto;padding:16px}h1{font-size:24px}h2{font-size:19px;margin-top:28px;border-top:1px solid #e3e6ea;padding-top:16px}h3{font-size:16px}.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13.5px;margin:10px 0}th,td{border:1px solid #d8dde2;padding:6px 8px;text-align:left;vertical-align:top}th{background:#f3f5f7}code{background:#f3f5f7;padding:1px 4px;border-radius:3px;font-size:12.5px;word-break:break-all}pre{background:#f3f5f7;padding:10px;overflow-x:auto}blockquote{border-left:3px solid #d71920;margin:10px 0;padding:4px 12px;color:#444}.meta{font-size:13px;color:#55606b;background:#f7f8fa;border:1px solid #e3e6ea;border-radius:8px;padding:10px 12px}a{color:#b5121b}</style></head><body><p class="meta">Bản HTML xuất tự động từ hồ sơ nguồn, cùng lần build với trang. SHA-256 trang <code>index.html</code> (nội dung LF, đúng byte Cloudflare phục vụ): <code>${pageSha}</code> · <a href="./">Mục lục hồ sơ</a> · <a href="../">Trang hub</a></p>\n${body}\n</body></html>`;
-const docs = fs.readdirSync(out).sort();
+const docs = fs.readdirSync(out).filter((n) => /.(md|csv)$/.test(n)).sort();
 for (const n of docs) {
   const t = fs.readFileSync(path.join(out, n), 'utf8');
   const body = n.endsWith('.csv') ? `<h1>${escH(n)}</h1>` + csv2html(t) : md2html(t);

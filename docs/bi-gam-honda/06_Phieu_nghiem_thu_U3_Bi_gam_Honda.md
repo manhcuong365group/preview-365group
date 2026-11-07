@@ -6,7 +6,7 @@
 | Bản nghiệm thu | SHA-256 ghi trong [01](01_Noi_dung_Bi_gam_Honda.md) |
 | Ngày | 07/11/2026 |
 | Người lập | Team Content Auto365 (tự nghiệm thu) |
-| Reviewer ký | **Chờ ký** |
+| Phiếu đã duyệt | [PHIEU_U3_HUB_BI_GAM_HONDA_PREVIEW_PASS_DA_DUYET_R2_20261107.pdf](PHIEU_U3_HUB_BI_GAM_HONDA_PREVIEW_PASS_DA_DUYET_R2_20261107.pdf) — PASS toàn bộ, đóng U1/U2/U3 07/11/2026 |
 
 ## U1 — Đa thiết bị
 
@@ -37,4 +37,4 @@
 | Hồ sơ 01–06 cùng một build (SHA ở 01) | Đạt |
 | Bản HTML đọc trực tiếp trên preview (`ho-so/`) | Đạt |
 | Nội dung đã duyệt (anh Đạo 07/11) | Đạt |
-| Reviewer ký phiếu | Chờ |
+| Phiếu U3 R2 | PASS · ĐÃ DUYỆT 07/11/2026 |

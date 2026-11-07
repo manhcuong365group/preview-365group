@@ -12,10 +12,10 @@
 
 | Mã | Tiêu chí | Điểm | Căn cứ |
 |---|---|---:|---|
-| C1 | Chính xác và nhất quán | 9,0/10 | 21 case + bài tư vấn từ bài đã đăng auto365.vn; nội dung kỹ thuật anh Đạo duyệt 07/11 |
+| C1 | Chính xác và nhất quán | 9,3/10 | 21 case + bài tư vấn từ bài đã đăng auto365.vn; nội dung kỹ thuật anh Đạo duyệt 07/11; mỗi bài case là một xe khác nhau (chủ quản xác nhận 07/11); còn một số bài không ghi đời xe |
 | C2 | Đầy đủ theo vai trò | 9,4/10 | 13 dòng xe, 21 case, 6 bài tư vấn dòng xe, 3 hãng đèn |
 | C3 | Tự nhiên và hữu ích | 9,5/10 | Giọng trung tính, có điều kiện kiểm xe; thẻ dòng xe đồng bộ ảnh tách nền, hero ảnh thi công thật |
-| | **Content** | **27,9/30** | |
+| | **Content** | **28,2/30** | |
 | S1 | Intent và URL | 9,6/10 | Trang hãng giữa hub bi gầm và bài dòng xe |
 | S2 | On-page | 9,5/10 | 1 H1, canonical, 6 khối schema sinh từ HTML, nội dung render sẵn |
 | S3 | Liên kết, triển khai | 9,5/10 | Link auto365.vn trong nội dung kiểm HTTP 200 ngày 07/11; hồ sơ 01–06 |
@@ -26,9 +26,9 @@
 | | **GEO** | **23,8/25** | Qua ngưỡng 23,75 — phần bổ sung GEO 07/11 anh Đạo đã duyệt |
 | U1 | Đa thiết bị | 5/5 | 375 px giả lập + 1366 px đạt; chủ quản test điện thoại thật OK 07/11/2026 |
 | U2 | Tương tác, lead | 5/5 | Lead test #34 (service "Bi gầm Ford", xe Ford Ranger XLS 2020) gửi /api/leads → `success:true`, `test:true` ngày 07/11 |
-| U3 | Bàn giao | 4,5/5 | 01–06 cùng build; phiếu U3 tự nghiệm thu, chờ reviewer ký |
-| | **Tổng** | **≈94,8/100** | **Chưa đạt** (tổng <95) |
+| U3 | Bàn giao | 5/5 | 01–06 cùng build; phiếu U3 R2 PASS · ĐÃ DUYỆT 07/11/2026 — [PDF](PHIEU_U3_HUB_BI_GAM_FORD_PREVIEW_PASS_DA_DUYET_R2_20261107.pdf) |
+| | **Tổng** | **≈95,6/100** | **ĐẠT** — qua 3 ngưỡng (tổng ≥95, SEO ≥28,5, GEO ≥23,75) |
 
 ## 2. Còn thiếu để đạt
 
-1. U3: reviewer ký phiếu U3 (06) — điểm chặn duy nhất còn lại trên preview.
+Không còn điểm chặn trên preview. Còn phần production (IT): robots/canonical, OG, gỡ khối nội bộ, xoá lead test.

@@ -39,7 +39,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" 
 | CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Honda. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-07 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Honda |
 | ItemList `#dong-xe` | 6 thẻ dòng xe có link |
-| ItemList `#xe-thuc-te` | 15 bài case (không phải 15 xe khác nhau đã xác minh; chưa có case_id) |
+| ItemList `#xe-thuc-te` | 15 bài case (mỗi bài là một xe khác nhau — chủ quản xác nhận 07/11; mã case_id nội bộ chưa có) |
 | FAQPage | 9 câu, đúng text hiển thị |
 
 ## 4. Khối trên trang và nguồn
