@@ -1,0 +1,75 @@
+# 02 — Hướng dẫn CMS/SEO V2.2: Hub Bi gầm Honda
+
+| Trường | Giá trị |
+|---|---|
+| Preview | https://preview-365group.pages.dev/bi-gam/honda/ |
+| Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/honda |
+| Source | `auto365/bi-gam/honda/content-src.html` (sửa ở đây) |
+| Build | `node scripts/build-bi-gam-honda.mjs && node scripts/export-bi-gam-honda-docs.mjs` |
+| Nội dung + SHA | [01_Noi_dung_Bi_gam_Honda.md](01_Noi_dung_Bi_gam_Honda.md) |
+| Master data | [04_Master_Data_Bi_gam_Honda.csv](04_Master_Data_Bi_gam_Honda.csv) |
+| Ngày lập | 07/11/2026 — **bản nháp, chưa duyệt** |
+
+## 1. Vai trò URL
+
+| URL | Vai trò | Không làm |
+|---|---|---|
+| `/nang-cap-anh-sang-bi-gam` | Hub bi gầm chung | — |
+| `/nang-cap-anh-sang-bi-gam/theo-hang-xe` | Tra cứu theo hãng | — |
+| **`/nang-cap-anh-sang-bi-gam/honda`** | **Trang hãng Honda: chọn dòng xe, chọn theo nhu cầu, tiếp cận bài hồ sơ, bài tư vấn dòng xe (qua thẻ dòng xe), cẩm nang đèn và điểm tư vấn** | Không liệt kê bảng giá/SKU; không canonical bài case về trang này |
+| `bi-gam-honda-city`, `bi-gam-honda-cr-v` | Bài tư vấn dòng xe | — |
+| Bài case trên auto365.vn | Chứng minh một xe / một cấu hình cụ thể | — |
+
+Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" → bài case mới nhất (Civic, HR-V, BR-V); "Tư vấn cấu hình" → điền sẵn dòng xe vào form (Civic Type R, Accord).
+
+## 2. Metadata
+
+| Trường | Giá trị |
+|---|---|
+| Title | Bi gầm Honda theo từng dòng xe: City, CR-V, Civic, HR-V \| Auto365 |
+| Meta description | Tra cứu bi gầm Honda theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| H1 | Bi gầm Honda theo từng dòng xe |
+| Robots | Preview: `noindex, nofollow, noarchive` + header `X-Robots-Tag: noindex`. **Production: `index, follow`, kiểm header không còn noindex** |
+| OG image | Preview dùng `m-city.webp`; production thay bằng ảnh trên CDN auto365.vn (đề xuất HON-IMG-01) |
+
+## 3. Schema (JSON-LD, sinh tự động khi build)
+
+| Khối | Nguồn dữ liệu |
+|---|---|
+| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Honda. **Chưa có `reviewedBy`/`lastReviewed`** — chỉ thêm byline "Rà soát kỹ thuật" + ngày khi anh Đạo duyệt, build tự sinh |
+| BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Honda |
+| ItemList `#dong-xe` | 5 thẻ dòng xe có link |
+| ItemList `#xe-thuc-te` | 15 bài case (không phải 15 xe khác nhau đã xác minh; chưa có case_id) |
+| FAQPage | 8 câu, đúng text hiển thị |
+
+## 4. Khối trên trang và nguồn
+
+| Khối | Nguồn |
+|---|---|
+| 7 dòng xe (Sedan 4 · SUV 2 · MPV 1) | Dải Honda ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| Hồ sơ (15) | Bài case bi gầm Honda đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: GTR, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
+| Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
+| Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
+| Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |
+| FAQ HCM | Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
+| Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Honda"; câu "do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt" của thẻ tư vấn đã thay bằng câu trung tính (chưa duyệt) |
+
+## 5. Image Pack V2.2 (07/11/2026)
+
+Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe).  Dòng chưa có ảnh lẫn case (Accord) hiển thị tên chữ. Không có ảnh trước–sau/beam test.
+
+| Asset ID | Tệp | Kích thước | Bytes | Loại | Nguồn / quyền | Vị trí, tải | ALT / caption |
+|---|---|---|---:|---|---|---|---|
+| HON-IMG-01 | `hinh/hero-honda-bi-gam.webp` | 1100 × 638 webp | 57.806 | Ảnh bìa bài case (có thể có chữ đồ họa) | Auto365 — bài case đã đăng | Hero, eager | Honda City RS 2022 lắp bi gầm X-Light F10 Turbo V2 tại Auto365 |
+| HON-IMG-02 | `hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp` | 1000 × 563 webp | 45.358 | Ảnh chụp thực tế quy trình | Chủ quản cung cấp 04/11/2026 (dùng chung hub Kia) | Vì sao chọn, lazy | caption: Ảnh thực tế: kỹ thuật viên lắp bi gầm vào hốc đèn cản trước |
+| HON-IMG-03 | `auto365vn-honda-cr-v-2024-lap-x-light-f10-turbo-v2-9-img_6a8bc72fd63098.50487058.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda CR-V G 2024 lắp X-Light F10 Turbo V2: Giá, cấu hình tại Auto365 |
+| HON-IMG-04 | `honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025-1791532799.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda Civic 2021 RS lắp bi gầm X-Light F10 New 2025 tại Auto365 |
+| HON-IMG-05 | `honda-br-v-l-2023-lap-bi-gam-x-light-f10-turbo-5500k-6-1792394289.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda BR-V L 2023 lắp bi gầm X-Light F10 Turbo 5500K tại Auto365 |
+| HON-IMG-06 | `honda-hrv-nang-cap-bi-gam-x3-ultra-3000k-1793418467.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda HR-V 2021 lắp bi gầm X-Light X3 Ultra 3000K tại Auto365 |
+| HON-IMG-07 | `honda-city-rs-2024-lap-bi-gam-x-light-x3-ultra-5500k-7-1793254327.webp` | CDN auto365.vn | — | Ảnh bài case đã đăng | Auto365 | Vì sao chọn, lazy | Honda City RS 2024 lắp bi gầm X-Light X3 Ultra 5500K tại Auto365 |
+
+## 6. Khi đăng production
+
+1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.
+2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bghonda-branch-preview`.
+3. Gửi lead test (service "Bi gầm Honda", xe ở `car_model`); kiểm schema; kiểm responsive.
