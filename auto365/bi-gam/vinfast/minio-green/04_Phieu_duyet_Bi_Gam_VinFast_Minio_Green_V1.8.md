@@ -6,7 +6,7 @@
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
 | SHA-256 index.html | `034230dfaf8ef29fca88f07f1a6e18963d1f2f28ba47b9ff69c0c301e9f78ef7` |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 |
-| Tự chấm V1.9 | 88,0/100 — chưa đạt (xem 03) |
+| Tự chấm V1.9 | 89,5/100 (chấm lại 09/11) — chưa đạt (xem 03) |
 | **Trạng thái** | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)**; lỗi mở trước production: ảnh minh họa AI |
 
 ## Phiếu U1–U3 (tự kiểm 07/11/2026)
@@ -47,11 +47,11 @@ Kiểm trên localhost (bản cùng SHA ở trên), không gửi lead thật.
 | Reviewer | Person Nguyễn Quang Đạo + reviewedBy trong schema; dòng "Rà soát kỹ thuật" link /tac-gia/nguyen-quang-dao |
 | Bảng xác nhận | `XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md` — 9 mẫu khớp ItemList |
 | JSON-LD | `JSON.parse` OK |
-| Lỗi mở | Chưa có chữ ký chủ quản; chưa có phiếu PDF |
+| Lỗi mở | Chưa có phiếu PDF; ảnh AI chưa thay |
 
 ## Kết luận
 
-Tự kiểm U1–U3 đạt về chức năng; tổng tự chấm 88,0/100 chưa đạt ngưỡng V1.9. **Không ghi PASS** cho đến khi chủ quản ký. Bắt buộc thay ảnh chụp thực tế trước production.
+U1–U3 đạt — chủ quản test máy thật và ký 07/11/2026. Tổng tự chấm 89,5/100 (09/11) chưa đạt ngưỡng V1.9. Bắt buộc thay ảnh chụp thực tế trước production.
 
 ## Nhật ký
 
@@ -61,3 +61,4 @@ Tự kiểm U1–U3 đạt về chức năng; tổng tự chấm 88,0/100 chưa 
 | 07/11/2026 | Tự kiểm U1–U3, tự chấm 88,0/100 — chờ chủ quản ký |
 | 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |
 | 09/11/2026 | Vá audit content 08/11 (7,2/10): sapo trước Trả lời nhanh (74 từ), meta 160 ký tự nhắc lens 2.0/3.0; dòng phạm vi dưới H2; bảng so sánh đủ 9 mẫu + cột kích thước thân theo trang SP (X3 Ultra, AES SV 2.0 Max xác nhận bằng trang SP); JS so sánh bỏ "Cần xác nhận theo mã"; caption "Ảnh minh họa AI" / "Mô phỏng vùng sáng" trên 8 ảnh; bảng chọn theo nhu cầu + "Khi nào chưa cần nâng cấp" + kết luận; quy trình 7 bước dạng bảng; FAQ 6 câu (bảo hành 72 từ), 3 câu chi nhánh chuyển sang mục tiếp nhận; dateModified 2026-11-09 |
+| 09/11/2026 | Chấm lại sau vá 08/11: C2 9,5, G2 9,5, U3 4,5 (chủ quản đã ký 07/11) → 89,5/100, vẫn CHƯA ĐẠT do ảnh AI (S2) và chưa có production (S3); sửa nhãn U3, bỏ lỗi product_url (đã dùng URL tuyệt đối 08/11) |

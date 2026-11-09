@@ -1,31 +1,31 @@
-# Bi gầm VinFast VF Wild — Phiếu đánh giá V1.9 (tự chấm 07/11/2026)
+# Bi gầm VinFast VF Wild — Phiếu đánh giá V1.9 (tự chấm 07/11, chấm lại 09/11/2026)
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `16eae642ad235b3021c81dc1fbd240bc990d7a57b141313fa919afbaad2562a4` |
-| Người chấm | Tự chấm (team nội dung), chưa có chủ quản ký |
+| SHA-256 index.html | `63952953712f9c61340ae1ffa1c2652375e6e65eb0ded7bfd1cba58f58aa47e4` |
+| Người chấm | Tự chấm (team nội dung); chủ quản đã test máy thật và ký U1–U3 07/11/2026 |
 
 ## Điểm 12 tiêu chí
 
 | Mã | Tiêu chí | Điểm | Lý do |
 |---|---|---:|---|
-| C1 | Dữ kiện chính xác | 9,0/10 | 17 mẫu có xác nhận anh Đạo 07/11; giá theo hệ VF9; không bịa năm/kích thước xe. Chưa có dữ liệu riêng về trang bị đèn VF Wild |
+| C1 | Dữ kiện chính xác | 9,5/10 | 17 mẫu có xác nhận anh Đạo 07/11; giá theo hệ VF9; không bịa năm/kích thước xe. Chưa có dữ liệu riêng về trang bị đèn VF Wild |
 | C2 | Đủ để quyết định | 9,5/10 | Nhu cầu, 17 mẫu, bảng 8 mẫu, giá/VAT/công, bước kiểm xe, "chưa cần lắp" |
 | C3 | Tự nhiên, hữu ích | 9,0/10 | Mạch rõ; vài khối lặp ý kiểm pát/điện |
-| **Content** | | **27,5/30** | |
+| **Content** | | **28,0/30** | |
 | S1 | Intent/URL/phân vai | 9,0/10 | Trang dòng xe đúng vai; hub chưa link |
 | S2 | On-page/ảnh | 8,0/10 | Title/meta/H1/FAQ ổn; toàn bộ 7 ảnh là minh họa AI |
 | S3 | Liên kết/triển khai | 8,5/10 | Schema hợp lệ, canonical/robots đúng staging; production chưa đăng |
 | **SEO** | | **25,5/30** | Dưới ngưỡng 28,5 |
 | G1 | Trả lời nhanh | 9,5/10 | Quick answer + FAQ có điều kiện |
-| G2 | Lập luận/giới hạn | 9,0/10 | Phân biệt K/W với hiệu quả; Cos/Pha ghi không phải phép đo |
+| G2 | Lập luận/giới hạn | 9,5/10 | Phân biệt K/W với hiệu quả; Cos/Pha ghi không phải phép đo |
 | G3 | Nguồn/reviewer | 4,5/5 | Reviewer + bảng xác nhận; thiếu ảnh/case thật |
-| **GEO** | | **23,0/25** | Dưới ngưỡng 23,75 |
+| **GEO** | | **23,5/25** | Dưới ngưỡng 23,75 |
 | U1 | Hiển thị/thiết bị | 4,5/5 | 360/375/390/768/1440 không tràn, ảnh đủ, modal mở/đóng (chi tiết ở 04) |
 | U2 | CTA/lead | 4,0/5 | Validate SĐT, car_model, /api/leads, chỉ báo thành công khi success + lead_id; chưa test gửi/CRM |
-| U3 | Hồ sơ/đồng bộ | 4,0/5 | SHA/ngày/reviewer khớp; bản live preview chưa trùng bản local; ảnh AI |
-| **UX** | | **12,5/15** | |
-| **Tổng** | | **88,5/100** | **CHƯA ĐẠT** (ngưỡng 95; SEO ≥ 28,5; GEO ≥ 23,75) |
+| U3 | Hồ sơ/đồng bộ | 4,5/5 | SHA/ngày/reviewer khớp; chủ quản ký 07/11; ảnh AI |
+| **UX** | | **13,0/15** | |
+| **Tổng** | | **90,0/100** | **CHƯA ĐẠT** (ngưỡng 95; SEO ≥ 28,5; GEO ≥ 23,75) |
 
 ## Lỗi còn mở
 
@@ -34,12 +34,11 @@
 | W-01 | P0 trước production | 7 ảnh là minh họa AI | Chụp ảnh thực tế VF Wild (toàn xe, hốc, đang lắp, sau lắp, bàn giao) | Media/Kỹ thuật |
 | W-02 | P1 | Chưa có case VF Wild | Bổ sung khi có xe lắp thật | Content |
 | W-03 | P1 | Hub VinFast chưa link VF Wild | Thêm thẻ sau khi URL production 200 | SEO/IT |
-| W-04 | P1 | Bản live preview khác bản local (SHA) | Push bản hiện tại, kiểm lại SHA | Content |
-| W-05 | P2 | product_url trong form dựng tương đối → trên preview trỏ pages.dev (404); production đúng | Kiểm lại trên production | IT |
 | W-06 | Release | Khối nội bộ, OG preview, robots noindex | Theo checklist 02 mục 5 | IT |
 
 ## Log
 
 | Ngày | Nội dung |
 |---|---|
+| 09/11/2026 | Chấm lại sau vá 08/11: C1 9,5, G2 9,5, U3 4,5 (chủ quản đã ký 07/11) → 90,0/100, vẫn CHƯA ĐẠT do ảnh AI (S2) và chưa có production (S3); sửa lỗi CSS khối vf3lp-ev-style (thiếu `}` làm nhiều rule chỉ chạy trên desktop) |
 | 09/11/2026 | Vá audit content (reviewer 08/11, 8,2/10): dòng phạm vi dưới H2 sản phẩm + bảng xác nhận; caption "Ảnh minh họa AI" trên 8 khung ảnh (Cos/Pha: "Mô phỏng vùng sáng (ảnh minh họa AI)"); kích thước thân theo trang SP (301 V2/F10 New/F10 Turbo V2/GTR G1 Turbo V2 129×67×80, F10 Pro V2 129×83×79, X3 Ultra 128×76×76, F10 2.0 New 107×40×69 mm); bảo hành trên thẻ Titan/Henvvei/Red Lighting 24 tháng, Matrix Light M1 Pro/Fogway Gen 1 12 tháng; F10 New (2025) ghi "bản 12–16V" ở thẻ/gợi ý/bảng/dòng so sánh JS/popup, ghi chú bản 24V 4.500.000đ/bộ; trả lời nhanh 69 từ; mục "Khi nào chưa cần lắp bi gầm?" trước FAQ; FAQ 6 câu (thêm câu hệ điện, bảo hành 69 từ) đồng bộ FAQPage; bước 6 thêm kiểm tra Cos/Pha và nguồn điện; dateModified 2026-11-09, lastReviewed giữ 2026-11-07. Kiểm 320/390/768/1440 không tràn |

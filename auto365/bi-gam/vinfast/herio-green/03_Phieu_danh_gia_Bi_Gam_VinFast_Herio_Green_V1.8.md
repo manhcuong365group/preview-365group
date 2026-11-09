@@ -1,4 +1,4 @@
-# Phiếu đánh giá V1.9 — Bi gầm VinFast Herio Green (tự chấm 07/11/2026)
+# Phiếu đánh giá V1.9 — Bi gầm VinFast Herio Green (tự chấm 07/11, chấm lại 09/11/2026)
 
 | Mục | Giá trị |
 |---|---|
@@ -18,19 +18,19 @@
 | S2 | On-page, ảnh | 8,0/10 | Title/meta/H1/ALT đúng; **toàn bộ ảnh là minh họa AI** |
 | S3 | Liên kết, triển khai | 8,5/10 | Liên kết sibling đủ; JSON-LD parse OK; còn link tương đối, OG trên preview |
 | G1 | Trả lời nhanh | 9,5/10 | Đoạn mở đầu + FAQ trả lời trực tiếp |
-| G2 | Lập luận, giới hạn | 9,0/10 | Phân biệt W/K với hiệu quả thực tế; Cos ghi rõ không phải phép đo |
+| G2 | Lập luận, giới hạn | 9,5/10 | Phân biệt W/K với hiệu quả thực tế; Cos ghi rõ không phải phép đo |
 | G3 | Nguồn, người xác nhận | 4,5/5 | Tên, ngày, link tác giả, bảng xác nhận tương thích |
 | U1 | Hiển thị, thiết bị | 4,5/5 | Không tràn 360–1440; ảnh đủ; trừ do ảnh AI |
 | U2 | CTA, lead | 4,0/5 | Validate SĐT, chỉ báo thành công khi success; chưa test gửi thật/CRM |
-| U3 | Hồ sơ, đồng bộ | 4,5/5 | 02/03/04 + bảng xác nhận cùng SHA/ngày; chưa có chữ ký chủ quản |
+| U3 | Hồ sơ, đồng bộ | 4,5/5 | 02/03/04 + bảng xác nhận cùng SHA/ngày; chủ quản test máy thật và ký 07/11/2026 |
 
 | Nhóm | Điểm | Ngưỡng |
 |---|---:|---:|
 | Content (C) | 27,5/30 | — |
 | SEO (S) | 25,5/30 | 28,5 |
-| GEO (G) | 23,0/25 | 23,75 |
+| GEO (G) | 23,5/25 | 23,75 |
 | UX (U) | 13,0/15 | — |
-| **Tổng** | **89,0/100** | **95** |
+| **Tổng** | **89,5/100** | **95** |
 
 **Kết luận tự chấm: CHƯA ĐẠT** (dưới ngưỡng tổng, SEO và GEO). Nguyên nhân chính là ảnh minh họa AI và hạng mục production chưa làm.
 
@@ -51,3 +51,4 @@
 |---|---|
 | 07/11/2026 | Dựng trang từ khung VF5; anh Đạo xác nhận 17 mẫu; thay bộ ảnh minh họa AI; tự chấm 89,0/100 — chưa đạt |
 | 09/11/2026 | Vá audit V2.2 R1 (reviewer 08/11, 78/95): F10 New ghi thống nhất "bản 12–16V" ở thẻ, gợi ý, so sánh động, popup/form; công suất 45W Cos/55W Pha; ghi chú bản 24V 4.500.000đ; thêm đèn zin Halogen Projector có nguồn VinFast; sửa lời dẫn form gọi lại; nút Báo giá từng dòng bảng so sánh; dateModified 2026-11-09 |
+| 09/11/2026 | Chấm lại sau vá V2.2 R1: G2 9,5 (đèn zin có nguồn VinFast, bản điện áp F10 New rõ) → 89,5/100, vẫn CHƯA ĐẠT do ảnh AI (S2) và chưa có production (S3); U3 ghi chủ quản đã ký 07/11 |

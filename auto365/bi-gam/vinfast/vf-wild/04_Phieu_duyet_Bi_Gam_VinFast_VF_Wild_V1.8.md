@@ -4,10 +4,10 @@
 
 | Trường | Giá trị |
 |---|---|
-| Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI).** Mẫu đã được anh Nguyễn Quang Đạo xác nhận 07/11/2026; tự chấm 88,5/100; ảnh AI là lỗi mở trước production |
+| Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI).** Mẫu đã được anh Nguyễn Quang Đạo xác nhận 07/11/2026; tự chấm 90,0/100; ảnh AI là lỗi mở trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
-| SHA-256 index.html | `16eae642ad235b3021c81dc1fbd240bc990d7a57b141313fa919afbaad2562a4` |
+| SHA-256 index.html | `63952953712f9c61340ae1ffa1c2652375e6e65eb0ded7bfd1cba58f58aa47e4` |
 | Ngày | datePublished 2026-11-07; dateModified 2026-11-09; dòng Cập nhật 09/11/2026 |
 | reviewedBy / lastReviewed | Nguyễn Quang Đạo · 2026-11-07 |
 | Xác nhận mẫu | XAC_NHAN_TUONG_THICH_VF_WILD_20261107.md (17 mẫu, kiểm pát/điện trên từng xe) |
@@ -39,7 +39,7 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 | Không làm | Không gửi lead thật; chưa kiểm CRM/routing |
 | Ghi chú | product_url dựng tương đối → trên preview là pages.dev (404), production đúng |
 
-### U3 — Hồ sơ: ĐẠT (chủ quản test máy thật 07/11/2026) (4,0/5)
+### U3 — Hồ sơ: ĐẠT (chủ quản test máy thật 07/11/2026) (4,5/5)
 
 | Kiểm | Kết quả |
 |---|---|
@@ -49,7 +49,7 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 | Schema | 1 script JSON.parse OK: WebSite, Organization, Person, BreadcrumbList, Article, CollectionPage (ItemList 17), FAQPage (9) |
 | Trừ điểm | Bản live chưa đồng bộ; ảnh AI chưa thay |
 
-**Kết luận:** U1–U3 tự kiểm đạt (12,5/15). Tổng tự chấm 88,5/100 — CHƯA ĐẠT V1.9 (SEO 25,5 < 28,5; GEO 23,0 < 23,75), chủ yếu do ảnh AI. Chờ chủ quản ký; không ghi PASS.
+**Kết luận:** U1–U3 đạt (13,0/15), chủ quản test máy thật và ký 07/11/2026. Tổng tự chấm 90,0/100 (09/11) — CHƯA ĐẠT V1.9 (SEO 25,5 < 28,5; GEO 23,5 < 23,75), chủ yếu do ảnh AI và chưa có production.
 
 ## Còn mở
 
@@ -60,4 +60,5 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 
 | Ngày | Nội dung |
 |---|---|
+| 09/11/2026 | Chấm lại sau vá 08/11: C1 9,5, G2 9,5, U3 4,5 (chủ quản đã ký 07/11) → 90,0/100, vẫn CHƯA ĐẠT do ảnh AI (S2) và chưa có production (S3); sửa lỗi CSS khối vf3lp-ev-style (thiếu `}` làm nhiều rule chỉ chạy trên desktop) |
 | 09/11/2026 | Vá audit content (reviewer 08/11, 8,2/10): dòng phạm vi dưới H2 sản phẩm + bảng xác nhận; caption "Ảnh minh họa AI" trên 8 khung ảnh (Cos/Pha: "Mô phỏng vùng sáng (ảnh minh họa AI)"); kích thước thân theo trang SP (301 V2/F10 New/F10 Turbo V2/GTR G1 Turbo V2 129×67×80, F10 Pro V2 129×83×79, X3 Ultra 128×76×76, F10 2.0 New 107×40×69 mm); bảo hành trên thẻ Titan/Henvvei/Red Lighting 24 tháng, Matrix Light M1 Pro/Fogway Gen 1 12 tháng; F10 New (2025) ghi "bản 12–16V" ở thẻ/gợi ý/bảng/dòng so sánh JS/popup, ghi chú bản 24V 4.500.000đ/bộ; trả lời nhanh 69 từ; mục "Khi nào chưa cần lắp bi gầm?" trước FAQ; FAQ 6 câu (thêm câu hệ điện, bảo hành 69 từ) đồng bộ FAQPage; bước 6 thêm kiểm tra Cos/Pha và nguồn điện; dateModified 2026-11-09, lastReviewed giữ 2026-11-07. Kiểm 320/390/768/1440 không tràn |
