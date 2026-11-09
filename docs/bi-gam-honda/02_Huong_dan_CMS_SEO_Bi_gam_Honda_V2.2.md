@@ -27,7 +27,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" 
 | Trường | Giá trị |
 |---|---|
 | Title | Bi gầm Honda theo từng dòng xe: City, CR-V, Civic, HR-V \| Auto365 |
-| Meta description | Tra cứu bi gầm Honda theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Meta description | Tra cứu bi gầm Honda theo dòng và đời xe, xem 15 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Honda theo từng dòng xe |
 | Robots | Preview: `noindex, nofollow, noarchive` + header `X-Robots-Tag: noindex`. **Production: `index, follow`, kiểm header không còn noindex** |
 | OG image | Preview dùng `m-city.webp`; production thay bằng ảnh trên CDN auto365.vn (đề xuất HON-IMG-01) |
@@ -46,7 +46,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (City, CR-V); "Có hồ sơ" 
 
 | Khối | Nguồn |
 |---|---|
-| 8 dòng xe (Sedan 4 · SUV 2 · MPV 2) | Dải Honda ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| 8 dòng xe (Sedan/Hatchback 4 · SUV 2 · MPV 2) | Dải Honda ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
 | Hồ sơ (15) | Bài case bi gầm Honda đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: GTR, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
@@ -77,3 +77,23 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.
 2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bghonda-branch-preview`.
 3. Gửi lead test (service "Bi gầm Honda", xe ở `car_model`); kiểm schema; kiểm responsive.
+
+## 7. Nguồn lens bảng tra (09/11/2026)
+
+| Xe trong hồ sơ | Mẫu đèn | Lens | Căn cứ |
+|---|---|---|---|
+| [HR-V 2021](https://auto365.vn/honda-hr-v-2021-lap-bi-gam-x-light-x3-ultra-3000k) | X-Light X3 Ultra 3000K | 3.0 | bài case |
+| [City RS 2024](https://auto365.vn/honda-city-rs-2024-lap-bi-gam-x-light-x3-ultra-5500k) | X-Light X3 Ultra 5500K | 3.0 | bài case |
+| [BR-V L 2023](https://auto365.vn/honda-br-v-l-2023-lap-bi-gam-x-light-f10-turbo-5500k) | X-Light F10 Turbo 5500K | 3.0 | bài case |
+| [Civic 2021 RS](https://auto365.vn/honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025) | X-Light F10 New 2025 | 3.0 | bài case |
+| [City RS 2021](https://auto365.vn/honda-city-rs-2021-lap-bi-gam-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
+| [CR-V 1.5L L 2018](https://auto365.vn/honda-cr-v-15l-l-2018-lap-bi-gam-x-light-f10-new) | X-Light F10 New 2025 | 3.0 | thông số mẫu [https://x-light.vn/bi-gam-x-light-f10-new-2025](https://x-light.vn/bi-gam-x-light-f10-new-2025) |
+| [City RS 2022](https://auto365.vn/honda-city-rs-2022-lap-bi-gam-x-light-f10-turbo-v2) | X-Light F10 Turbo V2 | 3.0 | bài case |
+| [CR-V G 2024](https://auto365.vn/honda-cr-v-g-2024-lap-x-light-f10-turbo-v2-gia-cau-hinh) | X-Light F10 Turbo V2 | 3.0 | bài case |
+| [CR-V 2023 bản L](https://auto365.vn/honda-cr-v-lap-bi-gam-x-light-301-v2) | X-Light 301 V2 | 3.0 | thông số mẫu [https://x-light.vn/bi-gam-xlight-301-v2](https://x-light.vn/bi-gam-xlight-301-v2) |
+| [City](https://auto365.vn/honda-city-nang-cap-den-bi-gam-x-light-f10-new) | X-Light F10 New 2025 | 3.0 | thông số mẫu [https://x-light.vn/bi-gam-x-light-f10-new-2025](https://x-light.vn/bi-gam-x-light-f10-new-2025) |
+| [Civic](https://auto365.vn/honda-civic-lap-bi-gam-xlight-301-v2) | X-Light 301 V2 | 3.0 | bài case |
+| [Civic](https://auto365.vn/honda-civic-nang-cap-bi-gam-phim-cach-nhiet) | X-Light F10 Pro | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-xlight-f10-pro](https://auto365.vn/bi-gam-xlight-f10-pro) |
+| [City](https://auto365.vn/honda-city-do-bi-gam-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
+| [CR-V](https://auto365.vn/honda-cr-v-do-den-bi-gam-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
+| [Odyssey](https://auto365.vn/honda-odyssey-do-den-bi-gam-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |

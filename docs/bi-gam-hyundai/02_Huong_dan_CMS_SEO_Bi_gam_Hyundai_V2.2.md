@@ -27,7 +27,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 | Trường | Giá trị |
 |---|---|
 | Title | Bi gầm Hyundai theo từng dòng xe: Santa Fe, Custin, Creta, Tucson \| Auto365 |
-| Meta description | Tra cứu bi gầm Hyundai theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Meta description | Tra cứu 17 dòng Hyundai, xem 8 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
 | H1 | Bi gầm Hyundai theo từng dòng xe |
 | Robots | Preview: `noindex, nofollow, noarchive` + header `X-Robots-Tag: noindex`. **Production: `index, follow`, kiểm header không còn noindex** |
 | OG image | Preview dùng `m-santa-fe.webp`; production thay bằng ảnh trên CDN auto365.vn (đề xuất HYU-IMG-01) |
@@ -80,3 +80,16 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.
 2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bghyundai-branch-preview`.
 3. Gửi lead test (service "Bi gầm Hyundai", xe ở `car_model`); kiểm schema; kiểm responsive.
+
+## 7. Nguồn lens bảng tra (09/11/2026)
+
+| Xe trong hồ sơ | Mẫu đèn | Lens | Căn cứ |
+|---|---|---|---|
+| [Santa Fe 2020 Premium](https://auto365.vn/hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new) | X-Light F10 2.0 New | 2.0 | bài case |
+| [Santa Fe 2017 Tiêu chuẩn](https://auto365.vn/hyundai-santa-fe-2017-tieu-chuan-lap-bi-gam-f10-turbo-v2) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [Custin 2024](https://auto365.vn/ho-so-nang-cap-bi-gam-x-light-301-v2-tren-hyundai-custin-2024) | X-Light 301 V2 | 3.0 | thông số mẫu [https://x-light.vn/bi-gam-xlight-301-v2](https://x-light.vn/bi-gam-xlight-301-v2) |
+| [Elantra N Line 2023](https://auto365.vn/elantra-n-line-2023-lap-bi-gam-x-light-f10-turbo-v2-4300k) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [Creta 2022](https://auto365.vn/hyundai-creta-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [Custin 2023](https://auto365.vn/hyundai-custin-lap-bi-gam-x-light-f10-turbo-v2-5500k) | X-Light F10 Turbo V2 5500K | 3.0 | bài case |
+| [Tucson](https://auto365.vn/hyundai-tucson-nang-cap-den-bi-gam-x-light-x3-ultra) | X-Light X3 Ultra | 3.0 | bài case |
+| [Custin](https://auto365.vn/hyundai-custin-do-den-bi-gam-x-light-f10-pro) | X-Light F10 Pro | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-xlight-f10-pro](https://auto365.vn/bi-gam-xlight-f10-pro) |

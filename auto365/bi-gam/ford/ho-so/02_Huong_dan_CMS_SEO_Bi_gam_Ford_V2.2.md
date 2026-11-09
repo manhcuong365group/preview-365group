@@ -27,7 +27,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Eve
 | Trường | Giá trị |
 |---|---|
 | Title | Bi gầm Ford theo từng dòng xe: Ranger, Everest, Escape, EcoSport \| Auto365 |
-| Meta description | Tra cứu bi gầm Ford theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Meta description | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Ford theo từng dòng xe |
 | Robots | Preview: `noindex, nofollow, noarchive` + header `X-Robots-Tag: noindex`. **Production: `index, follow`, kiểm header không còn noindex** |
 | OG image | Preview dùng `m-everest.webp`; production thay bằng ảnh trên CDN auto365.vn (đề xuất FOR-IMG-01) |
@@ -83,3 +83,29 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.
 2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bgford-branch-preview`.
 3. Gửi lead test (service "Bi gầm Ford", xe ở `car_model`); kiểm schema; kiểm responsive.
+
+## 7. Nguồn lens bảng tra (09/11/2026)
+
+| Xe trong hồ sơ | Mẫu đèn | Lens | Căn cứ |
+|---|---|---|---|
+| [EcoSport 2017](https://auto365.vn/ford-ecosport-2017-lap-bi-gam-sv-30-max) | AES SV 3.0 Max | 3.0 | bài case |
+| [Focus 2012 2.0L](https://auto365.vn/ford-focus-2012-20l-lap-bi-gam-x-light-x3-ultra) | X-Light X3 Ultra | 3.0 | bài case |
+| [Ranger Raptor 2024](https://auto365.vn/ford-ranger-raptor-2024-lap-bi-gam-x-light-x3-ultra-4300k) | X-Light X3 Ultra 4300K | 3.0 | bài case |
+| [Ranger Raptor 2025 2.0L Bi-Turbo](https://auto365.vn/ford-raptor-2025-2-0l-bi-turbo-lap-f-pro-v2-va-f10-hyper-2-0) | X-Light F10 Hyper 2.0 | 2.0 | bài case |
+| [Escape XLS 2.3L 2013](https://auto365.vn/ford-escape-xls-23l-2013-lap-x-light-x3-ultra-4300k) | X-Light X3 Ultra 4300K | 3.0 | bài case |
+| [Everest 2025 Sport](https://auto365.vn/ford-everest-2025-sport-lap-bi-gam-x-light-f10-hyper-20-ban-5000k) | X-Light F10 Hyper 2.0 | 2.0 | bài case |
+| [Escape 2007 XLT](https://auto365.vn/ford-escape-2007-xlt-lap-bi-gam-sv-3-0-max) | AES SV 3.0 Max | 3.0 | bài case |
+| [Ranger XLS 2020](https://auto365.vn/ford-ranger-xls-2020-lap-bi-gam-aes-sv-30-max) | AES SV 3.0 Max | 3.0 | tên mẫu |
+| [Ranger Wildtrak 2026](https://auto365.vn/ford-ranger-wildtrak-2026-lap-x-light-f10-turbo-v2) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [Ranger XLS 2023](https://auto365.vn/ford-ranger-xls-2023-lap-x-light-f10-new-2025) | X-Light F10 New 2025 | 3.0 | bài case |
+| [Escape 2010 XLS 2.3L](https://auto365.vn/ford-escape-2010-xls-23l-lap-aes-sv-30-max-gia-cau-hinh) | AES SV 3.0 Max | 3.0 | bài case |
+| [Everest Sport 2022](https://auto365.vn/ford-everest-sport-2022-lap-bi-gam-aes-sv-30-max) | AES SV 3.0 Max | 3.0 | bài case |
+| [Everest Titanium 2021](https://auto365.vn/ford-everest-2021-nang-cap-bi-gam-x-light-f10-pro-v2) | X-Light F10 Pro V2 | 3.0 | bài case |
+| [Transit 2012 16 chỗ](https://auto365.vn/ford-transit-2012-16-cho-lap-bi-gam-x-light-x3-ultra-gia-cau-hinh) | X-Light X3 Ultra | 3.0 | bài case |
+| [Focus 2016](https://auto365.vn/ford-focus-2016-lap-bi-gam-x-light-f10-turbo-v2-4300k) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [Everest 2022](https://auto365.vn/ford-everest-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [EcoSport](https://auto365.vn/ford-ecosport-do-den-bi-gam-x-light-f10-pro-3-nhiet-mau) | X-Light F10 Pro | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-xlight-f10-pro](https://auto365.vn/bi-gam-xlight-f10-pro) |
+| [Everest](https://auto365.vn/ford-everest-do-den-bi-gam-x-light-f10-pro) | X-Light F10 Pro | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-xlight-f10-pro](https://auto365.vn/bi-gam-xlight-f10-pro) |
+| [Everest](https://auto365.vn/ford-everest-do-den-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
+| [Escape](https://auto365.vn/nang-cap-ford-escape-do-den-naoevo-s9-pro-va-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
+| [Ranger Raptor](https://auto365.vn/ford-raptor-do-den-bi-gam-x-light-f10-new-nhiet-mau-5500k) | X-Light F10 New | Chưa xác nhận | — |

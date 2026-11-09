@@ -27,7 +27,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Destinator, Outlander, Pajer
 | Trường | Giá trị |
 |---|---|
 | Title | Bi gầm Mitsubishi theo từng dòng xe: Xpander, Outlander, Triton, Xforce \| Auto365 |
-| Meta description | Tra cứu bi gầm Mitsubishi theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Meta description | Tra cứu bi gầm Mitsubishi theo dòng và đời xe, xem 15 hồ sơ lắp X-Light, GTR, AES, Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
 | Robots | Preview: `noindex, nofollow, noarchive` + header `X-Robots-Tag: noindex`. **Production: `index, follow`, kiểm header không còn noindex** |
 | OG image | Preview dùng `m-xpander-cross.webp`; production thay bằng ảnh trên CDN auto365.vn (đề xuất MIT-IMG-01) |
@@ -82,3 +82,23 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 1. Upload ảnh tương đối, đổi đường dẫn; dùng header/footer production.
 2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bgmitsubishi-branch-preview`.
 3. Gửi lead test (service "Bi gầm Mitsubishi", xe ở `car_model`); kiểm schema; kiểm responsive.
+
+## 7. Nguồn lens bảng tra (09/11/2026)
+
+| Xe trong hồ sơ | Mẫu đèn | Lens | Căn cứ |
+|---|---|---|---|
+| [Pajero 2021 V6 3.0L](https://auto365.vn/mitsubishi-pajero-2021-v6-30l-lap-bi-gam-x-light-f10-new-2025) | X-Light F10 New 2025 | 3.0 | bài case |
+| [Xforce Premium 2025](https://auto365.vn/mitsubishi-xforce-premium-2025-lap-bi-gam-x-light-x3-ultra-3000k) | X-Light X3 Ultra 3000K | 3.0 | bài case |
+| [Zinger GLS 2011](https://auto365.vn/mitsubishi-zinger-gls-2011-lap-bi-gam-x-light-x3-ultra-4300k) | X-Light X3 Ultra 4300K | 3.0 | bài case |
+| [Xpander Cross 2025](https://auto365.vn/mitsubishi-xpander-cross-2025-lap-bi-gam-f10-hyper-20) | X-Light F10 Hyper 2.0 | 2.0 | bài case |
+| [Destinator 2026 Premium](https://auto365.vn/mitsubishi-destinator-2026-premium-lap-bi-gam-x-light-f10-hyper-2-0) | X-Light F10 Hyper 2.0 | 2.0 | bài case |
+| [Outlander 2020](https://auto365.vn/mitsubishi-outlander-2020-lap-bi-gam-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
+| [Outlander 2022](https://auto365.vn/mitsubishi-outlander-2022-lap-x-light-f10-turbo-v2-4300k) | X-Light F10 Turbo V2 4300K | 3.0 | bài case |
+| [Triton 2025](https://auto365.vn/mitsubishi-triton-2025-lap-aes-sv-20-max) | AES SV 2.0 Max | 2.0 | bài case |
+| [Xforce Ultimate 2024](https://auto365.vn/mitsubishi-xforce-ultimate-2024-lap-x-light-f10-hyper-20-gia-cau-hinh) | X-Light F10 Hyper 2.0 | 2.0 | bài case |
+| [Xpander Cross 2023](https://auto365.vn/mitsubishi-xpander-cross-2023-lap-bi-gam-x-light-f10-20-new-gia-va-cau-hinh) | X-Light F10 2.0 New | 2.0 | bài case |
+| [Xpander 2018](https://auto365.vn/mitsubishi-xpander-2018-lap-bi-gam-x-light-301-v2-cau-hinh-thuc-te-va-chi-phi) | X-Light 301 V2 | 3.0 | thông số mẫu [https://x-light.vn/bi-gam-xlight-301-v2](https://x-light.vn/bi-gam-xlight-301-v2) |
+| [Triton 2024](https://auto365.vn/mitsubishi-triton-2024-bi-gam-x-light-f10-hyper-2-0) | X-Light F10 Hyper 2.0 | 2.0 | bài case |
+| [Outlander 2021](https://auto365.vn/mitsubishi-outlander-nang-cap-bi-gam-x-light-301-v2) | X-Light 301 V2 | 3.0 | bài case |
+| [Pajero 2021](https://auto365.vn/mitsubishi-pajero-nang-cap-f10-pro-3-nhiet-mau) | X-Light F10 Pro | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-xlight-f10-pro](https://auto365.vn/bi-gam-xlight-f10-pro) |
+| [Outlander](https://auto365.vn/mitsubishi-outlander-do-bi-gam-va-camera-hanh-trinh) | Titan 301 | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-titan-301](https://auto365.vn/bi-gam-titan-301) |

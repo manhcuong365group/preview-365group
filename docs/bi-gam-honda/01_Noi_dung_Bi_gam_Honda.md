@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/honda/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/honda |
-| Title (65 ký tự) | Bi gầm Honda theo từng dòng xe: City, CR-V, Civic, HR-V | Auto365 |
-| Meta description (147 ký tự) | Tra cứu bi gầm Honda theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Title (65 ký tự) | Bi gầm Honda theo từng dòng xe: City, CR-V, Civic, HR-V \| Auto365 |
+| Meta description (125 ký tự) | Tra cứu bi gầm Honda theo dòng và đời xe, xem 15 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Honda theo từng dòng xe |
-| dateModified | 2026-11-07 |
+| dateModified | 2026-11-09 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `c6b647a043ca54486cac63838ffcd095add999f4d359bfb4d3b9842cf550cdf2` |
-| SHA-256 content-src.html | `8afa0954433a2678efe046ec146e5a872cd34573da113ecc12dfa0c9080eb1ad` |
+| SHA-256 index.html | `18087caa8e5ad94b8432dfe5a4744367fd8c66e78946c72a1921b92a2a562097` |
+| SHA-256 content-src.html | `4b26c4459ce82747754bb6478be10323c2b26c4adaffa0c1bb720a1c494997c7` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -64,6 +64,8 @@ Các dòng Honda khác nhau về kích thước hốc đèn gầm, thiết kế 
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
+
+Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Honda theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 
@@ -143,11 +145,11 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ho
 
 **Dòng Honda nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm City, Civic, CR-V, HR-V, BR-V và Odyssey; City, CR-V có bài tư vấn riêng. Những dòng còn lại (Civic Type R, Accord) kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm HR-V, City, BR-V, Civic, CR-V và Odyssey; City và CR-V có bài tư vấn riêng. Các dòng Civic Type R và Accord hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Honda nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Các hồ sơ Honda hiện có dùng nhiều mẫu khác nhau theo đời xe (xem bảng "Xe Honda đã lắp mẫu bi gầm nào?"). Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ Honda hiện có chưa có ca lens 2.0 inch; mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Honda BR-V L 2023 lắp X-Light F10 Turbo 5500K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Honda đã lắp mẫu bi gầm nào?".
 
 **Một dòng Honda có nhiều đời thì chọn bi gầm thế nào?**
 
@@ -175,9 +177,9 @@ Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 
-Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Chủ xe tra cứu bảo hành điện tử, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp để được hỗ trợ.
+Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Khi nhận xe, chủ xe đối chiếu số seri đèn trên phiếu bàn giao, kích hoạt và tra cứu bảo hành điện tử theo hướng dẫn của chi nhánh; điều kiện bảo hành áp dụng theo từng mẫu. Cần hỗ trợ, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp.
 
-_Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
+_Nội dung bài viết mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
 
 ## CTA và form
 

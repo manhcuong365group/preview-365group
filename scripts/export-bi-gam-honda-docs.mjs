@@ -45,7 +45,7 @@ L.push('> Xuất tự động bởi `scripts/export-bi-gam-honda-docs.mjs` từ 
 L.push('| Trường | Giá trị |', '|---|---|');
 L.push('| URL preview | https://preview-365group.pages.dev/bi-gam/honda/ |');
 L.push('| Canonical production | ' + canonical + ' |');
-L.push('| Title (' + [...doc.title].length + ' ký tự) | ' + doc.title + ' |');
+L.push('| Title (' + [...doc.title].length + ' ký tự) | ' + doc.title.replace(/\|/g, '\\|') + ' |');
 const desc = doc.querySelector('meta[name=description]').content;
 L.push('| Meta description (' + [...desc].length + ' ký tự) | ' + desc + ' |');
 L.push('| H1 | ' + txt(doc.querySelector('h1')) + ' |');

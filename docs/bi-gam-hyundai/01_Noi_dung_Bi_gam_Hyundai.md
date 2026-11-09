@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/hyundai/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/hyundai |
-| Title (75 ký tự) | Bi gầm Hyundai theo từng dòng xe: Santa Fe, Custin, Creta, Tucson | Auto365 |
-| Meta description (149 ký tự) | Tra cứu bi gầm Hyundai theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Title (75 ký tự) | Bi gầm Hyundai theo từng dòng xe: Santa Fe, Custin, Creta, Tucson \| Auto365 |
+| Meta description (128 ký tự) | Tra cứu 17 dòng Hyundai, xem 8 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
 | H1 | Bi gầm Hyundai theo từng dòng xe |
-| dateModified | 2026-11-07 |
+| dateModified | 2026-11-09 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
-| SHA-256 index.html | `6166f03f4c1ea6a04311eb9d05431f707ea632985850534a06c7ee03678f0dfc` |
-| SHA-256 content-src.html | `19abba709179cf829a9446a84d45e4af918b07daabff30b491484486a37f4fe1` |
+| SHA-256 index.html | `6f6e32c12d72d048c2a8b14714e978c0c39a044ff857b68795de08d2125e095a` |
+| SHA-256 content-src.html | `8c95b6a85918bd15f50ef7eac13d91b0a5349419735872388213199d7f557f4e` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -66,6 +66,8 @@ Các dòng Hyundai khác nhau về kích thước hốc đèn gầm, thiết k�
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
+
+Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Hyundai theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 
@@ -145,11 +147,11 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Hy
 
 **Dòng Hyundai nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Creta, Tucson và Elantra; Accent, Elantra, Creta, Tucson, Santa Fe, Custin có bài tư vấn riêng. Những dòng còn lại kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Elantra, Creta và Tucson; Accent, Elantra, Creta, Tucson, Santa Fe và Custin có bài tư vấn riêng. Các dòng Grand i10, Getz, i20, Grand i10 Sedan, Avante, Venue, Palisade, Ioniq 5, Kona, Stargazer và Grand Starex hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Hyundai nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Trong hồ sơ Auto365, xe Hyundai đã lắp mẫu lens 2.0 inch gồm Santa Fe 2020 Premium (X-Light F10 2.0 New). Các mẫu còn lại trong bảng tra chọn theo kích thước hốc thực tế từng xe. Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Hyundai Santa Fe 2020 Premium lắp X-Light F10 2.0 New với lens 2.0 inch. Hyundai Creta 2022 lắp X-Light F10 Turbo V2 4300K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Hyundai đã lắp mẫu bi gầm nào?".
 
 **Hyundai đời cũ có lắp bi gầm được không?**
 
@@ -177,9 +179,9 @@ Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 
-Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Chủ xe tra cứu bảo hành điện tử, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp để được hỗ trợ.
+Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Khi nhận xe, chủ xe đối chiếu số seri đèn trên phiếu bàn giao, kích hoạt và tra cứu bảo hành điện tử theo hướng dẫn của chi nhánh; điều kiện bảo hành áp dụng theo từng mẫu. Cần hỗ trợ, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp.
 
-_Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
+_Nội dung bài viết mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
 
 ## CTA và form
 

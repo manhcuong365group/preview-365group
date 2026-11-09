@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/mitsubishi/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/mitsubishi |
-| Title (81 ký tự) | Bi gầm Mitsubishi theo từng dòng xe: Xpander, Outlander, Triton, Xforce | Auto365 |
-| Meta description (152 ký tự) | Tra cứu bi gầm Mitsubishi theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Title (81 ký tự) | Bi gầm Mitsubishi theo từng dòng xe: Xpander, Outlander, Triton, Xforce \| Auto365 |
+| Meta description (134 ký tự) | Tra cứu bi gầm Mitsubishi theo dòng và đời xe, xem 15 hồ sơ lắp X-Light, GTR, AES, Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
-| dateModified | 2026-11-07 |
+| dateModified | 2026-11-09 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `eef98d6e347ebd40590b9806f0cd1e13db1fe3c8574c5a38fbdcfd0fb9b2f808` |
-| SHA-256 content-src.html | `c4ba5e0f4fde7d38abc1b96ed429ef5e43ea2108d370d05c731d882bf551810c` |
+| SHA-256 index.html | `6829df1b4a9728ac63292cf57aa8332808a9e6e0024a8b3be3485757d95c0707` |
+| SHA-256 content-src.html | `97dcfdf50aedaa68963ac0d3a1f33b79fa30920a64036c2e322d95c3f9343b15` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -69,6 +69,8 @@ Các dòng Mitsubishi khác nhau về kích thước hốc đèn gầm, thiết 
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
+
+Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Mitsubishi theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 
@@ -148,11 +150,11 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Mi
 
 **Dòng Mitsubishi nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Xpander, Xpander Cross, Xforce, Destinator, Outlander, Pajero, Triton và Zinger; Xpander, Destinator, Outlander, Pajero, Triton có bài tư vấn riêng. Những dòng còn lại (Attrage, Pajero Sport) kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Pajero, Xforce, Zinger, Xpander Cross, Destinator, Outlander, Triton và Xpander; Destinator, Outlander, Pajero, Xpander và Triton có bài tư vấn riêng. Các dòng Mirage, Attrage, Pajero Sport, Grandis và Jolie hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Mitsubishi nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Trong hồ sơ Auto365, xe Mitsubishi đã lắp mẫu lens 2.0 inch gồm Triton 2025 (AES SV 2.0 Max), Xpander Cross 2023 (X-Light F10 2.0 New). Các mẫu còn lại trong bảng tra chọn theo kích thước hốc thực tế từng xe. Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Mitsubishi Destinator 2026 Premium lắp X-Light F10 Hyper 2.0 với lens 2.0 inch. Mitsubishi Outlander 2022 lắp X-Light F10 Turbo V2 4300K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Mitsubishi đã lắp mẫu bi gầm nào?".
 
 **Mitsubishi đời cũ có lắp bi gầm được không?**
 
@@ -180,9 +182,9 @@ Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 
-Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Chủ xe tra cứu bảo hành điện tử, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp để được hỗ trợ.
+Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Khi nhận xe, chủ xe đối chiếu số seri đèn trên phiếu bàn giao, kích hoạt và tra cứu bảo hành điện tử theo hướng dẫn của chi nhánh; điều kiện bảo hành áp dụng theo từng mẫu. Cần hỗ trợ, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp.
 
-_Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
+_Nội dung bài viết mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
 
 ## CTA và form
 

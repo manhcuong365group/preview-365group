@@ -27,9 +27,27 @@
 | U1 | Đa thiết bị | 5/5 | 375 px giả lập + 1366 px đạt; chủ quản test điện thoại thật OK 07/11/2026 |
 | U2 | Tương tác, lead | 5/5 | Lead test #32 (service "Bi gầm Hyundai", xe Hyundai Creta 2022) gửi /api/leads → `success:true`, `test:true` ngày 07/11 |
 | U3 | Bàn giao | 5/5 | 01–06 cùng build; phiếu U3 R2 PASS · ĐÃ DUYỆT 07/11/2026 — [PDF](PHIEU_U3_HUB_BI_GAM_HYUNDAI_PREVIEW_PASS_DA_DUYET_R2_20261107.pdf) |
-| | **Tổng** | **≈95,0/100** | **ĐẠT** — qua 3 ngưỡng (tổng ≥95, SEO ≥28,5, GEO ≥23,75) |
+| | **Tổng** | **≈95,0/100** | Tự chấm 07/11 (qua 3 ngưỡng). **Tái kiểm độc lập 08/11 chưa đạt** — xem mục 3; đã vá 09/11, chờ anh Đạo duyệt phần vá và reviewer tái chấm |
 
-## 2. Còn thiếu để đạt
+## 2. Còn thiếu
 
-Không còn điểm chặn trên preview. Còn phần production (IT): robots/canonical, OG, gỡ khối nội bộ, xoá lead test.
-2. Hyundai: thêm case/bài tư vấn cho các dòng chưa có hồ sơ (Grand i10, Venue, Stargazer…) để C2 lên.
+Phần production (IT): URL trả 200, robots/canonical, OG, liên kết từ trang theo hãng + sitemap, gỡ khối nội bộ, xoá lead test; thống nhất giá trị `priority` với CRM.
+- Hyundai: thêm case/bài tư vấn cho các dòng chưa có hồ sơ (Grand i10, Venue, Stargazer…) để C2 lên.
+
+## 3. Tái kiểm độc lập 08/11/2026 — xử lý 09/11/2026
+
+Reviewer rà soát (không chấm điểm số): mô tả SEO nêu GTR/AES trong khi 8 hồ sơ đều X-Light; 7 ô lens trống; thanh đầu trang che tiêu đề khi nhảy; tìm "Hyundai Santa Fe" rỗng; nhãn thẻ Accent; tên ItemList.
+
+| Mục | Đã vá trên preview 09/11 |
+|---|---|
+| Lens | Điền theo bài case (ưu tiên) hoặc thông số trang sản phẩm của đúng mẫu (F10 Hyper 2.0 = 2.0 inch; X3 Ultra, F10 Pro, F10 New 2025, 301 V2, Titan 301, GTR G1 Turbo = 3.0 inch; AES SV theo tên mẫu). Dòng không có căn cứ ghi "Chưa xác nhận". Nguồn từng dòng ở 02 |
+| FAQ lens | Một ví dụ 2.0 inch và một ví dụ 3.0 inch lấy từ bảng tra (không có ca 2.0 thì ghi rõ chưa có) |
+| FAQ dòng xe | Sinh lại theo dữ liệu: dòng có hồ sơ, dòng có bài tư vấn, đủ danh sách "Tư vấn cấu hình" |
+| Meta/OG/CollectionPage | Mô tả nêu đúng hãng đèn có trong hồ sơ; tên ItemList dòng xe theo đúng nội dung |
+| Tìm dòng xe | Bỏ tiền tố hãng, dấu gạch, khoảng trắng khi so khớp; thông báo rỗng có nút "Xoá tìm kiếm" |
+| Điều hướng | Nút "Xem N hồ sơ lắp bi gầm" mở bảng `#bang-tra`; nút giá → `/nang-cap-anh-sang-bi-gam#san-pham` kèm ghi chú công lắp/phụ kiện báo theo xe; nút "Chọn dòng xe" ngay sau sapo; bù thanh đầu trang cố định (`scroll-margin-top`) |
+| Bảng tra mobile | Mỗi hồ sơ hiển thị thành thẻ (xe, mẫu đèn, lens, link), không cần vuốt ngang |
+| Nội dung | Đoạn "Khi nào chưa cần nâng cấp"; FAQ bảo hành thêm đối chiếu số seri, kích hoạt bảo hành điện tử; câu chốt tham khảo kỹ thuật theo mẫu chuẩn |
+| Hồ sơ 01 | Ký tự `|` trong title được thoát, không tách cột |
+| Thẻ Accent | Thẻ có bài tư vấn nhưng chưa có hồ sơ ghi "Xem cấu hình và giá tham khảo" |
+| Ngoài phạm vi trang | Bộ tìm chi nhánh (truy vấn "Hồ Chí Minh" khớp địa chỉ "Đường mòn Hồ Chí Minh") là script dùng chung của website — DEV danh bạ. Font Remix Icon/JS 404 trên preview do shell — kiểm khi tích hợp |

@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/ford/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/ford |
-| Title (74 ký tự) | Bi gầm Ford theo từng dòng xe: Ranger, Everest, Escape, EcoSport | Auto365 |
-| Meta description (146 ký tự) | Tra cứu bi gầm Ford theo dòng xe, xem hồ sơ X-Light, GTR, AES đã lắp tại Auto365; kiểm tra cấu hình, chi phí và điểm tiếp nhận trước khi thi công. |
+| Title (74 ký tự) | Bi gầm Ford theo từng dòng xe: Ranger, Everest, Escape, EcoSport \| Auto365 |
+| Meta description (121 ký tự) | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Ford theo từng dòng xe |
-| dateModified | 2026-11-07 |
+| dateModified | 2026-11-09 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `59bc5292449f1a5ab2a2f753075c8cdae8eaf74b83e8b8a2ba7872d686c3483e` |
-| SHA-256 content-src.html | `dc36e01d23ee9ae5a3eaae11b0d71430343f59110ccdb1efe7177bad6d845297` |
+| SHA-256 index.html | `5261c5a2020be4d148f883b02d692c8cc403067c019d22287dbfb183b81ad6c7` |
+| SHA-256 content-src.html | `e34cf5b5d7d4b9fb6b464cc21a6f792bf84c55883e52a72b328cc11fdd684a73` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -75,6 +75,8 @@ Các dòng Ford khác nhau về kích thước hốc đèn gầm, thiết kế c
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
 Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
+
+Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Ford theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 
@@ -154,11 +156,11 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Fo
 
 **Dòng Ford nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Ranger, Ranger Raptor, Everest, Escape, EcoSport, Focus và Transit; Ranger, Everest, Escape, EcoSport, Focus, Transit có bài tư vấn riêng. Những dòng còn lại (Territory, Explorer, Mustang Mach-E) kỹ thuật viên sẽ kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm EcoSport, Focus, Ranger Raptor, Escape, Everest, Ranger và Transit; Focus, EcoSport, Escape, Everest, Ranger và Transit có bài tư vấn riêng. Các dòng Fiesta, Laser, Mondeo, Territory, Explorer và Mustang Mach-E hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Ford nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Kích thước lens phụ thuộc hốc đèn gầm zin của từng đời xe, không theo hãng. Mẫu lens 3.0 inch đã lắp trên EcoSport 2017 (AES SV 3.0 Max), Escape 2007 XLT (AES SV 3.0 Max), Escape 2010 XLS 2.3L (AES SV 3.0 Max), Everest Sport 2022 (AES SV 3.0 Max), Ranger XLS 2020 (AES SV 3.0 Max). Các mẫu còn lại trong bảng tra chọn theo kích thước hốc thực tế từng xe. Kỹ thuật viên đo hốc gầm, kiểm tra pát, giắc và khoảng trống tản nhiệt trước khi chốt 2.0 hay 3.0 inch, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Ford Everest 2025 Sport lắp X-Light F10 Hyper 2.0 với lens 2.0 inch. Ford EcoSport 2017 lắp AES SV 3.0 Max với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Ford đã lắp mẫu bi gầm nào?".
 
 **Ford đời cũ có lắp bi gầm được không?**
 
@@ -186,9 +188,9 @@ Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 
-Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Chủ xe tra cứu bảo hành điện tử, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp để được hỗ trợ.
+Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Khi nhận xe, chủ xe đối chiếu số seri đèn trên phiếu bàn giao, kích hoạt và tra cứu bảo hành điện tử theo hướng dẫn của chi nhánh; điều kiện bảo hành áp dụng theo từng mẫu. Cần hỗ trợ, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp.
 
-_Nội dung mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
+_Nội dung bài viết mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công._
 
 ## CTA và form
 
