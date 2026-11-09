@@ -3,7 +3,7 @@
 | Mục | Giá trị |
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/vinfast/herio-green/ |
-| SHA-256 index.html | `364a841f8fbd4a467474d3151d384a1fe9ca625ae77e31161014fa42d3aff9b4` |
+| SHA-256 index.html | `59053113764a084e7252d57e7f7010f1069bc69923f1c326b312f96ce2d372d2` |
 | Người chấm | Team nội dung (tự chấm) — chưa phải điểm reviewer độc lập |
 | Kiểm duyệt kỹ thuật | anh Nguyễn Quang Đạo, xác nhận 17 mẫu 07/11/2026 |
 
@@ -50,3 +50,4 @@
 | Ngày | Nội dung |
 |---|---|
 | 07/11/2026 | Dựng trang từ khung VF5; anh Đạo xác nhận 17 mẫu; thay bộ ảnh minh họa AI; tự chấm 89,0/100 — chưa đạt |
+| 09/11/2026 | Vá audit V2.2 R1 (reviewer 08/11, 78/95): F10 New ghi thống nhất "bản 12–16V" ở thẻ, gợi ý, so sánh động, popup/form; công suất 45W Cos/55W Pha; ghi chú bản 24V 4.500.000đ; thêm đèn zin Halogen Projector có nguồn VinFast; sửa lời dẫn form gọi lại; nút Báo giá từng dòng bảng so sánh; dateModified 2026-11-09 |

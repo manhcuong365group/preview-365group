@@ -4,7 +4,7 @@ Bản 07/11/2026 · Chuẩn V1.9
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `f704131e8e0e67554a0238b129d7c52f08c9b3fc3b5dbb40a00fe845d78851d5` |
+| SHA-256 index.html | `16eae642ad235b3021c81dc1fbd240bc990d7a57b141313fa919afbaad2562a4` |
 | URL preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
 
@@ -22,7 +22,7 @@ Bản 07/11/2026 · Chuẩn V1.9
 
 ## 2. Schema (1 script JSON-LD, @graph)
 
-WebSite · Organization · Person (Nguyễn Quang Đạo, /tac-gia/nguyen-quang-dao) · BreadcrumbList (Nâng cấp ánh sáng → Bi gầm → VinFast → VF Wild) · Article · CollectionPage (reviewedBy Đạo, lastReviewed 2026-11-07, ItemList 17 mẫu) · FAQPage (9 câu, khớp FAQ hiển thị). datePublished/dateModified 2026-11-07. Mỗi lần sửa: `JSON.parse` lại script, dateModified = ngày sửa.
+WebSite · Organization · Person (Nguyễn Quang Đạo, /tac-gia/nguyen-quang-dao) · BreadcrumbList (Nâng cấp ánh sáng → Bi gầm → VinFast → VF Wild) · Article · CollectionPage (reviewedBy Đạo, lastReviewed 2026-11-07, ItemList 17 mẫu) · FAQPage (6 câu, khớp FAQ hiển thị). datePublished 2026-11-07, dateModified 2026-11-09. Mỗi lần sửa: `JSON.parse` lại script, dateModified = ngày sửa.
 
 ## 3. Ảnh — bộ minh họa AI 07/11/2026, BẮT BUỘC thay ảnh chụp thực tế trước production
 
@@ -52,3 +52,9 @@ Khi có ảnh thật: giữ tên file, bỏ chữ "minh họa AI" trong ALT, kh�
 - [ ] Form giữ `action="/api/leads"`, chỉ báo thành công khi `{success:true, lead_id}`; test 1 lead test rồi xoá.
 - [ ] Thay 7 ảnh AI bằng ảnh chụp thực tế.
 - [ ] Kiểm 200 cho ảnh/CSS/JS; JSON.parse JSON-LD trên bản production.
+
+## Log
+
+| Ngày | Nội dung |
+|---|---|
+| 09/11/2026 | Vá audit content (reviewer 08/11, 8,2/10): dòng phạm vi dưới H2 sản phẩm + bảng xác nhận; caption "Ảnh minh họa AI" trên 8 khung ảnh (Cos/Pha: "Mô phỏng vùng sáng (ảnh minh họa AI)"); kích thước thân theo trang SP (301 V2/F10 New/F10 Turbo V2/GTR G1 Turbo V2 129×67×80, F10 Pro V2 129×83×79, X3 Ultra 128×76×76, F10 2.0 New 107×40×69 mm); bảo hành trên thẻ Titan/Henvvei/Red Lighting 24 tháng, Matrix Light M1 Pro/Fogway Gen 1 12 tháng; F10 New (2025) ghi "bản 12–16V" ở thẻ/gợi ý/bảng/dòng so sánh JS/popup, ghi chú bản 24V 4.500.000đ/bộ; trả lời nhanh 69 từ; mục "Khi nào chưa cần lắp bi gầm?" trước FAQ; FAQ 6 câu (thêm câu hệ điện, bảo hành 69 từ) đồng bộ FAQPage; bước 6 thêm kiểm tra Cos/Pha và nguồn điện; dateModified 2026-11-09, lastReviewed giữ 2026-11-07. Kiểm 320/390/768/1440 không tràn |

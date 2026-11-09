@@ -1,12 +1,12 @@
-# Phiếu duyệt — Bi gầm VinFast Herio Green
+# Phiếu duyệt V1.9 — Bi gầm VinFast Herio Green
 
 | Mục | Giá trị |
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/vinfast/herio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/herio-green (chưa phát hành) |
-| SHA-256 index.html | `364a841f8fbd4a467474d3151d384a1fe9ca625ae77e31161014fa42d3aff9b4` |
-| Ngày | 07/11/2026 |
-| Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)** (tự chấm 89,0/100; ảnh minh họa AI là lỗi mở trước production) |
+| SHA-256 index.html | `59053113764a084e7252d57e7f7010f1069bc69923f1c326b312f96ce2d372d2` |
+| Ngày | 07/11/2026 (cập nhật 09/11/2026) |
+| Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)** |
 
 ## 1. Xác nhận nội dung
 
@@ -54,7 +54,13 @@ Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfa
 | Vai trò | Người | Ngày | Kết quả |
 |---|---|---|---|
 | Kỹ thuật (mẫu đèn) | Nguyễn Quang Đạo | 07/11/2026 | Đã xác nhận 17 mẫu |
-| Chủ quản (U1–U3) | — | — | Chờ ký |
+| Chủ quản (U1–U3) | Chủ quản | 07/11/2026 | Chủ quản đã test máy thật và ký 07/11/2026 |
 | Media (ảnh) | — | — | Chờ ảnh thật |
 | IT (production) | — | — | Chờ |
 | 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |
+
+## Nhật ký
+
+| Ngày | Nội dung |
+|---|---|
+| 09/11/2026 | Vá audit V2.2 R1 (reviewer 08/11, 78/95): F10 New ghi thống nhất "bản 12–16V" ở thẻ, gợi ý, so sánh động, popup/form; công suất 45W Cos/55W Pha; ghi chú bản 24V 4.500.000đ; thêm đèn zin Halogen Projector có nguồn VinFast; sửa lời dẫn form gọi lại; nút Báo giá từng dòng bảng so sánh; dateModified 2026-11-09 |

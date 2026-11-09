@@ -9,7 +9,7 @@
 | # | Mẫu đèn | Phạm vi | Trạng thái | Điều kiện | Xác nhận |
 |---|---|---|---|---|---|
 | 1 | Bi gầm X-Light 301 V2 | VinFast Herio Green | Đã xác nhận | Kiểm pát, vị trí, điện trên xe | Nguyễn Quang Đạo · 07/11/2026 |
-| 2 | Bi gầm X-Light F10 New (2025) | VinFast Herio Green | Đã xác nhận | Kiểm pát, vị trí, điện trên xe | Nguyễn Quang Đạo · 07/11/2026 |
+| 2 | Bi gầm X-Light F10 New (2025) — bản 12–16V | VinFast Herio Green | Đã xác nhận | Kiểm pát, vị trí, điện trên xe | Nguyễn Quang Đạo · 07/11/2026 |
 | 3 | Bi gầm Titan 301 | VinFast Herio Green | Đã xác nhận | Kiểm pát, vị trí, điện trên xe | Nguyễn Quang Đạo · 07/11/2026 |
 | 4 | Bi gầm GTR G1 Turbo V2 | VinFast Herio Green | Đã xác nhận | Kiểm pát, vị trí, điện trên xe | Nguyễn Quang Đạo · 07/11/2026 |
 | 5 | Đèn bi gầm X-Light F10 Turbo V2 | VinFast Herio Green | Đã xác nhận | Kiểm pát, vị trí, điện trên xe | Nguyễn Quang Đạo · 07/11/2026 |

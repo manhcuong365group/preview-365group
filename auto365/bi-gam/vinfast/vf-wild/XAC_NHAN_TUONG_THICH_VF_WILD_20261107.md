@@ -3,6 +3,7 @@
 - Người xác nhận: anh Nguyễn Quang Đạo (Kỹ thuật Auto365)
 - Ngày xác nhận: 07/11/2026
 - Nguồn danh sách: 17 mẫu theo khung VF 8/VF 9
+- Phạm vi: vị trí lắp hai bên cản trước; pát/mặt dưỡng theo từng mẫu; kỹ thuật viên kiểm tra hệ điện (điện áp, giắc, cầu chì) trên từng xe trước khi lắp.
 - Điều kiện chung: kỹ thuật viên kiểm tra pát/mặt dưỡng, vị trí lắp và hệ điện trên từng xe trước khi thi công; công, pát, phụ kiện báo sau khi xem xe.
 - Số mẫu: 17
 

@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `f704131e8e0e67554a0238b129d7c52f08c9b3fc3b5dbb40a00fe845d78851d5` |
+| SHA-256 index.html | `16eae642ad235b3021c81dc1fbd240bc990d7a57b141313fa919afbaad2562a4` |
 | Người chấm | Tự chấm (team nội dung), chưa có chủ quản ký |
 
 ## Điểm 12 tiêu chí
@@ -37,3 +37,9 @@
 | W-04 | P1 | Bản live preview khác bản local (SHA) | Push bản hiện tại, kiểm lại SHA | Content |
 | W-05 | P2 | product_url trong form dựng tương đối → trên preview trỏ pages.dev (404); production đúng | Kiểm lại trên production | IT |
 | W-06 | Release | Khối nội bộ, OG preview, robots noindex | Theo checklist 02 mục 5 | IT |
+
+## Log
+
+| Ngày | Nội dung |
+|---|---|
+| 09/11/2026 | Vá audit content (reviewer 08/11, 8,2/10): dòng phạm vi dưới H2 sản phẩm + bảng xác nhận; caption "Ảnh minh họa AI" trên 8 khung ảnh (Cos/Pha: "Mô phỏng vùng sáng (ảnh minh họa AI)"); kích thước thân theo trang SP (301 V2/F10 New/F10 Turbo V2/GTR G1 Turbo V2 129×67×80, F10 Pro V2 129×83×79, X3 Ultra 128×76×76, F10 2.0 New 107×40×69 mm); bảo hành trên thẻ Titan/Henvvei/Red Lighting 24 tháng, Matrix Light M1 Pro/Fogway Gen 1 12 tháng; F10 New (2025) ghi "bản 12–16V" ở thẻ/gợi ý/bảng/dòng so sánh JS/popup, ghi chú bản 24V 4.500.000đ/bộ; trả lời nhanh 69 từ; mục "Khi nào chưa cần lắp bi gầm?" trước FAQ; FAQ 6 câu (thêm câu hệ điện, bảo hành 69 từ) đồng bộ FAQPage; bước 6 thêm kiểm tra Cos/Pha và nguồn điện; dateModified 2026-11-09, lastReviewed giữ 2026-11-07. Kiểm 320/390/768/1440 không tràn |

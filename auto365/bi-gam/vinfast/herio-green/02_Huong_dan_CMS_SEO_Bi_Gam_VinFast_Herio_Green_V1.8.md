@@ -1,4 +1,4 @@
-# Hướng dẫn CMS / SEO — Bi gầm VinFast Herio Green
+# Hướng dẫn CMS / SEO V1.9 — Bi gầm VinFast Herio Green
 
 | Mục | Giá trị |
 |---|---|
@@ -8,7 +8,7 @@
 | Loại trang | MODEL_GUIDE — tư vấn bi gầm theo dòng xe (không phải case thi công) |
 | Dựng | 07/11/2026 từ khung trang VF5 (Herio Green cùng nền tảng VF 5) |
 | Kiểm duyệt kỹ thuật | anh Nguyễn Quang Đạo — xác nhận 17 mẫu lắp được Herio Green (07/11/2026) |
-| SHA-256 index.html | `364a841f8fbd4a467474d3151d384a1fe9ca625ae77e31161014fa42d3aff9b4` |
+| SHA-256 index.html | `59053113764a084e7252d57e7f7010f1069bc69923f1c326b312f96ce2d372d2` |
 
 ## 1. Metadata
 
@@ -59,3 +59,9 @@ Khi có ảnh thật: giữ tên file, đổi ALT sang mô tả thực tế (kh�
 - [ ] `JSON.parse` JSON-LD trên bản deploy; validate Schema.
 - [ ] Form `/api/leads`: test lead có cờ test, chỉ hiện "đã nhận" khi `{success:true, lead_id}`; kiểm CRM nhận `service = Báo giá bi gầm VinFast Herio Green`, `car_model`, `product`.
 - [ ] Thêm vào sitemap; thêm card trên Hub VinFast.
+
+## Nhật ký
+
+| Ngày | Nội dung |
+|---|---|
+| 09/11/2026 | Vá audit V2.2 R1 (reviewer 08/11, 78/95): F10 New ghi thống nhất "bản 12–16V" ở thẻ, gợi ý, so sánh động, popup/form; công suất 45W Cos/55W Pha; ghi chú bản 24V 4.500.000đ; thêm đèn zin Halogen Projector có nguồn VinFast; sửa lời dẫn form gọi lại; nút Báo giá từng dòng bảng so sánh; dateModified 2026-11-09 |

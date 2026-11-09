@@ -5,15 +5,15 @@
 | Trang | Bi gầm VinFast Minio Green (MODEL_GUIDE, tư vấn theo dòng xe) |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `3c2bbd6a08b13000d3e48e1ded0de9ef4e71423633fb3693244372fa81f07daa` |
+| SHA-256 index.html | `034230dfaf8ef29fca88f07f1a6e18963d1f2f28ba47b9ff69c0c301e9f78ef7` |
 | Dựng | 07/11/2026, từ khung trang VF9 |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 (bảng `XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md`) |
-| datePublished / dateModified / lastReviewed | 2026-11-07 / 2026-11-07 / 2026-11-07 |
+| datePublished / dateModified / lastReviewed | 2026-11-07 / 2026-11-09 / 2026-11-07 |
 
 ## 1. Metadata
 
 - **Title:** `Bi gầm VinFast Minio Green: Giá, cấu hình và lựa chọn phù hợp | Auto365`
-- **Meta description:** `Tư vấn bi gầm VinFast Minio Green: giá đèn từ 4,5 triệu đồng/bộ chưa VAT, chọn cấu hình theo nhu cầu, kiểm tra vị trí lắp, pát và hệ điện trước khi thi công.`
+- **Meta description (160 ký tự):** `Bi gầm VinFast Minio Green: 9 mẫu X-Light, GTR, AES lens 3.0 và 2.0 inch được kỹ thuật xác nhận, giá từ 4,5 triệu/bộ chưa VAT, kiểm tra pát, điện trước khi lắp.`
 - **H1:** `Bi gầm VinFast Minio Green: phương án lắp, giá và lựa chọn phù hợp`
 - **Canonical:** self, URL production ở trên.
 - **Robots:** preview `noindex, nofollow, noarchive` (đúng cho staging). **Production: đổi sang `index, follow`**, kiểm cả meta và header `X-Robots-Tag`.
@@ -70,3 +70,4 @@ Khi có ảnh thật: giữ tên file, sửa ALT bỏ "minh họa AI", cập nh�
 | 07/11/2026 | Anh Nguyễn Quang Đạo xác nhận 9 mẫu; reviewedBy + lastReviewed 2026-11-07 |
 | 07/11/2026 | Bộ 7 ảnh minh họa AI; khôi phục khung ảnh 03/04 |
 | 07/11/2026 | Viết lại hồ sơ 02/03/04 riêng cho Minio Green; tự kiểm U1–U3 |
+| 09/11/2026 | Vá audit content 08/11 (7,2/10): sapo trước Trả lời nhanh (74 từ), meta 160 ký tự nhắc lens 2.0/3.0; dòng phạm vi dưới H2; bảng so sánh đủ 9 mẫu + cột kích thước thân theo trang SP (X3 Ultra, AES SV 2.0 Max xác nhận bằng trang SP); JS so sánh bỏ "Cần xác nhận theo mã"; caption "Ảnh minh họa AI" / "Mô phỏng vùng sáng" trên 8 ảnh; bảng chọn theo nhu cầu + "Khi nào chưa cần nâng cấp" + kết luận; quy trình 7 bước dạng bảng; FAQ 6 câu (bảo hành 72 từ), 3 câu chi nhánh chuyển sang mục tiếp nhận; dateModified 2026-11-09 |
