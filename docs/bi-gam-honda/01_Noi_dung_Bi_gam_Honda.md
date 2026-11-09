@@ -11,8 +11,8 @@
 | H1 | Bi gầm Honda theo từng dòng xe |
 | dateModified | 2026-11-09 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `18087caa8e5ad94b8432dfe5a4744367fd8c66e78946c72a1921b92a2a562097` |
-| SHA-256 content-src.html | `4b26c4459ce82747754bb6478be10323c2b26c4adaffa0c1bb720a1c494997c7` |
+| SHA-256 index.html | `edceadd5f7e1f2df92919c7af1f57c992f1e0510c0c38f1cb163e54665d4bc05` |
+| SHA-256 content-src.html | `0f9b73a4b53100d726363a56c88601d51845e0171ced54cc23a7dfa8ca3e8033` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -34,3 +34,7 @@
 ## Nghiệm thu U1–U3 (07/11/2026)
 
 Lead test #33 vào CRM OK; QA mobile giả lập 375 px đạt; chủ quản test điện thoại thật OK 07/11. Chi tiết: [06_Phieu_nghiem_thu_U3_Bi_gam_Mitsubishi.md](06_Phieu_nghiem_thu_U3_Bi_gam_Mitsubishi.md).
+
+## Bổ sung 09/11/2026
+
+Anh Nguyễn Quang Đạo đã duyệt phần vá theo tái kiểm độc lập 08/11 (lens, FAQ 2.0/3.0 inch, FAQ dòng xe, meta, tìm kiếm, nút hồ sơ, bảng thẻ mobile, khi nào chưa cần nâng cấp, bảo hành seri, câu tham khảo kỹ thuật). lastReviewed = 2026-11-09.

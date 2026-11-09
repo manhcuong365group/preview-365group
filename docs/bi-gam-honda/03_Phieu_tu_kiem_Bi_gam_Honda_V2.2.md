@@ -27,7 +27,7 @@
 | U1 | Đa thiết bị | 5/5 | 375 px giả lập + 1366 px đạt; chủ quản test điện thoại thật OK 07/11/2026 |
 | U2 | Tương tác, lead | 5/5 | Lead test #35 (service "Bi gầm Honda", xe Honda City RS 2022) gửi /api/leads → `success:true`, `test:true` ngày 07/11 |
 | U3 | Bàn giao | 5/5 | 01–06 cùng build; phiếu U3 R2 PASS · ĐÃ DUYỆT 07/11/2026 — [PDF](PHIEU_U3_HUB_BI_GAM_HONDA_PREVIEW_PASS_DA_DUYET_R2_20261107.pdf) |
-| | **Tổng** | **≈95,3/100** | Tự chấm 07/11 (qua 3 ngưỡng). **Tái kiểm độc lập 08/11 chưa đạt** — xem mục 3; đã vá 09/11, chờ anh Đạo duyệt phần vá và reviewer tái chấm |
+| | **Tổng** | **≈95,3/100** | Tự chấm 07/11 (qua 3 ngưỡng). **Tái kiểm độc lập 08/11 chưa đạt** — xem mục 3; đã vá 09/11, anh Đạo đã duyệt phần vá 09/11/2026 (lastReviewed 2026-11-09); chờ reviewer tái chấm |
 
 ## 2. Còn thiếu
 
