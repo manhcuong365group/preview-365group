@@ -361,7 +361,7 @@ var G=[
 ['Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?','hoc-den-gam-nho-nen-chon-bi-gam-nao','https://auto365.vn/uploads/images/news/auto365vn-chon-bi-gam-2-0-inch-nao-img_6a7ed4cea92812.75790267.jpg.webp','2026-08-14','Hốc đèn'],
 ['Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?','bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa-img_6a6720427ef082.00335126.jpg.webp','2026-07-27','Vùng sáng'],
 ['Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ','bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-x-light-f10-2-0-new-phu-hop-xe-naojpg-img_6a477c50c0daa2.92602862_.jpg.webp','2026-07-03','Hốc đèn']];
-(function(){var n=function(x){return C.filter(function(c){return c[0]===x[0]}).length},o=M.slice();M.sort(function(a,b){return n(b)-n(a)||o.indexOf(a)-o.indexOf(b)})})();
+(function(){var NEW=['Xforce','Destinator','Xpander','Xpander Cross','Outlander','Triton','Pajero Sport'];var n=function(x){return C.filter(function(c){return c[0]===x[0]}).length},w=function(x){var nw=NEW.indexOf(x[0])>=0;return n(x)>0?(nw?0:1):(nw?2:3)},o=M.slice();M.sort(function(a,b){return w(a)-w(b)||n(b)-n(a)||(NEW.indexOf(a[0])<0?99:NEW.indexOf(a[0]))-(NEW.indexOf(b[0])<0?99:NEW.indexOf(b[0]))||o.indexOf(a)-o.indexOf(b)})})();
 var $=function(id){return document.getElementById(id)};
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};
