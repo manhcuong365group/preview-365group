@@ -51,3 +51,10 @@ Reviewer rà soát (không chấm điểm số): mô tả SEO nêu GTR/AES trong
 | Hồ sơ 01 | Ký tự `|` trong title được thoát, không tách cột |
 | Thẻ Accent | Thẻ có bài tư vấn nhưng chưa có hồ sơ ghi "Xem cấu hình và giá tham khảo" |
 | Đã vá trên trang 10/11 | Bộ tìm chi nhánh: truy vấn "Hồ Chí Minh" không còn khớp "Đường mòn Hồ Chí Minh" (Hà Tĩnh CN3) — trang dùng bản script đã vá /bi-gam/_bf/newsroom-branch-finder.fix.js (ưu tiên khớp tỉnh/thành); DEV đã được báo để sửa script gốc. Font Remix Icon/JS 404 trên preview do shell — kiểm khi tích hợp |
+
+## 4. Bổ sung 10/11/2026 — anh Đạo đã duyệt 10/11/2026
+
+- Thêm dòng xe theo danh sách hãng, sắp thẻ xe có case/xe mới lên trước, lưới 2 hàng + "Xem thêm", từ khóa "lắp bi gầm <xe>", bỏ khối 4 ô dưới hero, thay 5 ảnh khối "Vì sao chọn".
+- H1/title chuẩn SEO: "Lắp đèn bi gầm Hyundai theo từng dòng xe".
+- lastReviewed 2026-11-10.
+- Thêm case Hyundai Creta 1.5L đặc biệt 2024 – X-Light X3 Ultra 5500K (bài đăng 10/11/2026) → 9 hồ sơ.

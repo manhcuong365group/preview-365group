@@ -49,3 +49,10 @@ Reviewer chấm 94,4/100 (Content 28,0 · SEO 28,6 · GEO 23,4 · U 14,4): lens 
 | Nội dung | Đoạn "Khi nào chưa cần nâng cấp"; FAQ bảo hành thêm đối chiếu số seri, kích hoạt bảo hành điện tử; câu chốt tham khảo kỹ thuật theo mẫu chuẩn |
 | Hồ sơ 01 | Ký tự `|` trong title được thoát, không tách cột |
 | Đã vá trên trang 10/11 | Bộ tìm chi nhánh: truy vấn "Hồ Chí Minh" không còn khớp "Đường mòn Hồ Chí Minh" (Hà Tĩnh CN3) — trang dùng bản script đã vá /bi-gam/_bf/newsroom-branch-finder.fix.js (ưu tiên khớp tỉnh/thành); DEV đã được báo để sửa script gốc. Font Remix Icon/JS 404 trên preview do shell — kiểm khi tích hợp |
+
+## 4. Bổ sung 10/11/2026 — anh Đạo đã duyệt 10/11/2026
+
+- Thêm dòng xe theo danh sách hãng, sắp thẻ xe có case/xe mới lên trước, lưới 2 hàng + "Xem thêm", từ khóa "lắp bi gầm <xe>", bỏ khối 4 ô dưới hero, thay 5 ảnh khối "Vì sao chọn".
+- H1/title chuẩn SEO: "Lắp đèn bi gầm Ford theo từng dòng xe".
+- lastReviewed 2026-11-10.
+- Ảnh Ford Tourneo đổi sang Tourneo Custom 2018 (facelift, đúng đời bán tại Việt Nam 2019–2021), Wikimedia Commons – Vauxford, CC BY-SA 4.0.
