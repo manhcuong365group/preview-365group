@@ -3,7 +3,7 @@
 | Mục | Giá trị |
 |---|---|
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
-| SHA-256 index.html | `2c8896fa6483c8d3372872666f41ce09767dfa1e767b4077a3fe8311deac43be` |
+| SHA-256 index.html | `a2edd19618f34c2ed2ff78347462166b6e376a80965357861acc7cd64257daab` |
 | Người chấm | Tự chấm (team nội dung) — chưa phải điểm reviewer |
 | Kiểm tra | Bản local cùng SHA trên localhost; preview live có thể khác cho đến khi push |
 
