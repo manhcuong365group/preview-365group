@@ -170,6 +170,7 @@
 .bq-box{padding:14px}.bq-h{font-size:18px}.bf-list summary{font-size:14.5px}
 }
 </style>
+<style id="bgvf-mlbl">@media(max-width:767px){.bgvf-m .bd>.go{display:none}.bgvf-m .bd b{font-size:12.5px;line-height:1.3}.bgvf-m .bd b small{font-size:11px;margin-top:2px}}</style>
 <style>@media(min-width:1101px){.bgvf-guides{grid-template-columns:repeat(4,minmax(0,1fr))}}</style>
 <style id="bgvf-v22fix">.bgvf-h1{font-size:clamp(28px,3.6vw,42px);line-height:1.15;max-width:760px}.bgvf-h1 .bgvf-hb{display:inline;font-size:1em;font-weight:800;color:#e31b2d;margin:0;letter-spacing:inherit}.bgvf-mtoggle{display:block;margin:14px auto 0;padding:8px 20px;border:1px solid var(--r);border-radius:999px;background:#fff;color:var(--r);font-weight:600;font-size:14px;cursor:pointer}.bgvf-mtoggle[hidden]{display:none}@media(min-width:1101px){.bgvf-m.bgvf-xh{display:none}}@media(max-width:1100px){.bgvf-mtoggle{display:none!important}}
 .bgvf [id]{scroll-margin-top:120px}@media(max-width:767px){.bgvf [id]{scroll-margin-top:84px}}.bgvf-jumpw{margin:10px 0 0}.bgvf-jump{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--r);color:#fff!important;font-weight:600;font-size:14px}.bgvf-wait{background:#f6f7f9;border-radius:10px;padding:10px 14px}.bgvf-empty .bgvf-ereset{margin-left:8px;border:1px solid var(--r);color:var(--r);background:#fff;border-radius:999px;padding:4px 12px;font-weight:600;cursor:pointer}</style>
@@ -336,7 +337,7 @@ var nM=M.length;
 $('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
 $('bgvf-grid').innerHTML=M.map(function(m){
  var im=m[2]?'<img src="'+m[2]+'" alt="Lắp bi gầm '+mz(m[0])+'" loading="lazy" width="640" height="400"'+(/^http/.test(m[2])?' style="object-fit:cover;mix-blend-mode:normal;border-radius:6px"':'')+'>':'<em>'+mz(m[0])+'</em>';
- var adv=/\/bi-gam-mazda-/.test(m[3]);var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?(adv?(C.some(function(c){return c[0]===m[0]})?'Xem tư vấn + xe đã lắp':'Xem cấu hình và giá tham khảo'):'Xem xe đã lắp'):'Tư vấn cấu hình')+'</small></b><span class="go">→</span></span>';
+ var adv=/\/bi-gam-mazda-/.test(m[3]);var bd='<span class="bd"><b>Bi gầm '+mz(m[0])+'<small>'+(m[3]?(adv?(C.some(function(c){return c[0]===m[0]})?'Xem tư vấn + xe đã lắp':'Xem cấu hình và giá tham khảo'):'Xem xe đã lắp'):'Tư vấn cấu hình')+'</small></b><span class="go">→</span></span>';
  return m[3]?'<a class="bgvf-m" title="Lắp bi gầm '+mz(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">'+(adv?'Có tư vấn':'Có hồ sơ')+'</span><span class="im">'+im+'</span>'+bd+'</a>'
   :'<a class="bgvf-m" title="Lắp bi gầm '+mz(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="'+mz(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
 }).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.<button type="button" class="bgvf-ereset">Xoá tìm kiếm</button></p>';

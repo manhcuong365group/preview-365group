@@ -103,7 +103,7 @@ html = html.replace("var nM=M.length;", 'if(!$(\'bgvf-grid\').children.length){v
 const canonical = 'https://auto365.vn/nang-cap-anh-sang-bi-gam/mazda';
 const absUrl = (u) => new URL(u, canonical + '/').href
   .replace(/\/$/, '');
-const models = [...doc.querySelectorAll('#bgvf-grid a.bgvf-m:not([data-car])')].map((a) => ({ name: ('Mazda ' + a.querySelector('b').firstChild.textContent.trim()).replace(/^Mazda Mazda /,'Mazda '), url: absUrl(a.getAttribute('href')) }));
+const models = [...doc.querySelectorAll('#bgvf-grid a.bgvf-m:not([data-car])')].map((a) => ({ name: ('Mazda ' + a.querySelector('b').firstChild.textContent.trim().replace(/^Bi gầm \S+ /, '')).replace(/^Mazda Mazda /,'Mazda '), url: absUrl(a.getAttribute('href')) }));
 const cases = [...doc.querySelectorAll('#bgvf-rail a.bgvf-case')].map((a) => ({ name: a.querySelector('p').textContent.trim(), url: a.getAttribute('href') }));
 const faqs = [...doc.querySelectorAll('.bf-list details')].map((d) => ({ q: d.querySelector('summary').textContent.trim(), a: d.querySelector('p').textContent.trim() }));
 if (!models.length || !cases.length || !faqs.length) throw new Error('schema source empty');
