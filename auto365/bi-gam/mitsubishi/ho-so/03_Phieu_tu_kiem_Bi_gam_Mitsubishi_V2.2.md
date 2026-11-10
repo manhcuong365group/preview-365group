@@ -48,4 +48,4 @@ Reviewer chấm Content 27,9 · SEO 28,3 · GEO 23,3 (79,5/85): lens trống 13/
 | Bảng tra mobile | Mỗi hồ sơ hiển thị thành thẻ (xe, mẫu đèn, lens, link), không cần vuốt ngang |
 | Nội dung | Đoạn "Khi nào chưa cần nâng cấp"; FAQ bảo hành thêm đối chiếu số seri, kích hoạt bảo hành điện tử; câu chốt tham khảo kỹ thuật theo mẫu chuẩn |
 | Hồ sơ 01 | Ký tự `|` trong title được thoát, không tách cột |
-| Ngoài phạm vi trang | Bộ tìm chi nhánh (truy vấn "Hồ Chí Minh" khớp địa chỉ "Đường mòn Hồ Chí Minh") là script dùng chung của website — DEV danh bạ. Font Remix Icon/JS 404 trên preview do shell — kiểm khi tích hợp |
+| Đã vá trên trang 10/11 | Bộ tìm chi nhánh: truy vấn "Hồ Chí Minh" không còn khớp "Đường mòn Hồ Chí Minh" (Hà Tĩnh CN3) — trang dùng bản script đã vá /bi-gam/_bf/newsroom-branch-finder.fix.js (ưu tiên khớp tỉnh/thành); DEV đã được báo để sửa script gốc. Font Remix Icon/JS 404 trên preview do shell — kiểm khi tích hợp |
