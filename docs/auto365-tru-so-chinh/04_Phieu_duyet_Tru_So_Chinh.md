@@ -31,7 +31,7 @@
 | Lọc case không kết quả | R1 | Nút "Xóa bộ lọc" |
 | Case chưa ghi nơi thi công | R1, R2 | Thay 4 + thêm 9 case có ghi Trụ Sở Chính |
 | Chứng nhận không rõ cấp cho ai | R2 | Chú thích 6 giấy |
-| CTA trên case | R2 | "Tôi cũng đi xe này – hỏi phương án" điền sẵn xe + nhu cầu |
+| CTA trên case | R2 | Chủ trang chốt bỏ nút riêng trên thẻ (10/11); thẻ dẫn bài case, CTA chung "Nhận tư vấn" + dải CTA dưới mục case |
 | Form chặn mọi số điện thoại (P0) | R3 | Sửa regex (commit `c2ecb99e`), test 0900000000 / 090 000 0000 / +849… |
 | Popup giữ dữ liệu cũ | R3 | Reset khi mở từ nút chung |
 | "Về Auto365" dẫn nhầm, nhãn đánh giá sai hồ sơ | R2, R3 | Sửa đích link |
@@ -117,6 +117,6 @@ Media ký: ____________ Ngày: ________
 | P0-06 | Preview noindex, canonical `/auto365-tru-so-chinh` | SEO/IT tạo URL 200 trên production |
 | P0-07 | Xong | Media ký bảng |
 | P1-01 | Ẩn có chủ đích | Kinh doanh cấp bảng giá |
-| P1-02 | Nút "Tôi cũng đi xe này" tách thành `<button>` riêng ngoài link thẻ (10/11), focus bàn phím + mở popup điền sẵn xe | — |
+| P1-02 | Chủ trang chốt bỏ nút "Tôi cũng đi xe này" (10/11): bấm thẻ mở bài case thực tế; tư vấn qua nút "Nhận tư vấn" chung | — |
 | P1-03 | Chủ trang chốt: giới thiệu trước, dịch vụ sau; hero có nút "Xem dịch vụ tại Thủ Đức" | Giá/thời gian cần Kinh doanh |
 | P1-04 | Xong + thanh mục lục mobile | Test máy thật |
