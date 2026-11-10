@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/honda/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/honda |
-| Title (65 ký tự) | Bi gầm Honda theo từng dòng xe: City, CR-V, Civic, HR-V \| Auto365 |
+| Title (73 ký tự) | Lắp bi gầm Honda: chọn đèn theo dòng xe City, CR-V, Civic, HR-V \| Auto365 |
 | Meta description (125 ký tự) | Tra cứu bi gầm Honda theo dòng và đời xe, xem 15 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
-| H1 | Bi gầm Honda theo từng dòng xe |
+| H1 | Lắp bi gầm Honda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `0ea87df489fd35591003882195daf3d6b54c56d2f1aa7bc39775162e41d6d7aa` |
-| SHA-256 content-src.html | `2ee55410f654128b39bc7e60ceea507ade2f1b667bebcf5da03e16fc078edf3e` |
+| SHA-256 index.html | `9639b612916ed92576bdd34594b4084979f9dad1316dd355a861f8ef4a6a1bc9` |
+| SHA-256 content-src.html | `13189f1cdbd6859f25dd6498ce80991dd5680df7ecd540a88a4030cd36e58947` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -117,12 +117,12 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ho
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `auto365vn-honda-cr-v-2024-lap-x-light-f10-turbo-v2-9-img_6a8bc72fd63098.50487058.webp` | Honda CR-V G 2024 lắp X-Light F10 Turbo V2: Giá, cấu hình tại Auto365 |
-| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025-1791532799.webp` | Honda Civic 2021 RS lắp bi gầm X-Light F10 New 2025 tại Auto365 |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Honda CR-V tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
+| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-bao-hanh.webp` | Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `honda-br-v-l-2023-lap-bi-gam-x-light-f10-turbo-5500k-6-1792394289.webp` | Honda BR-V L 2023 lắp bi gầm X-Light F10 Turbo 5500K tại Auto365 |
-| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `honda-hrv-nang-cap-bi-gam-x3-ultra-3000k-1793418467.webp` | Honda HR-V 2021 lắp bi gầm X-Light X3 Ultra 3000K tại Auto365 |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `honda-city-rs-2024-lap-bi-gam-x-light-x3-ultra-5500k-7-1793254327.webp` | Honda City RS 2024 lắp bi gầm X-Light X3 Ultra 5500K tại Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Honda CR-V đỏ chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
+| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-chinh-hang.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Chủ xe Honda tra cứu tư vấn nâng cấp đèn tại Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Honda trên trang này.
 

@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Honda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `f86e2ba2e1ec471b598c7ad29a1f6e4326cfcf8060f564b19852f2fdf07eadca` |
-| SHA-256 content-src.html | `ce8395f51c20fd282b91dba1a7ed4cf4d3cc4b22c1ade9f1767be7ce3db1b850` |
+| SHA-256 index.html | `9639b612916ed92576bdd34594b4084979f9dad1316dd355a861f8ef4a6a1bc9` |
+| SHA-256 content-src.html | `13189f1cdbd6859f25dd6498ce80991dd5680df7ecd540a88a4030cd36e58947` |
 
 ## Sapo (kiêm trả lời nhanh)
 

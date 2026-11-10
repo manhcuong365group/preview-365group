@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `0ee0a521978c6f6293b7de9cb8376007c030c6d4b09b24b2fb8d336beb5b4d86` |
-| SHA-256 content-src.html | `0e7f4d5d0ef4b3eb941c48d3e74037740a3e66cbbc6a438e9678f74e7d741809` |
+| SHA-256 index.html | `0c53bdd9702a5c1247a598781b9eb1d8498c19b4b278b4bd046ccf8c32e2b864` |
+| SHA-256 content-src.html | `252974e9d4527bc274132b031bd89fa0fce15181a26ca147a69ce4149508a82f` |
 
 ## Sapo (kiêm trả lời nhanh)
 
