@@ -293,8 +293,8 @@ img{max-width:100%;display:block}a{color:inherit}
   ['Fadil','Fadil',1,'old','xe-vinfast-fadil.webp'],['Lux A2.0','LuxA',1,'old','xe-vinfast-lux-a20.webp'],['Lux SA2.0','LuxSA',2,'old','xe-vinfast-lux-sa20.webp'],['President','President',2,'old','xe-vinfast-president.webp']];
  var mw=document.getElementById('vf-models');
  var NC={};document.querySelectorAll('.vf-case').forEach(function(a){NC[a.dataset.m]=(NC[a.dataset.m]||0)+1});
- document.getElementById('vf-tab-case').textContent='Có ca thi công ('+CARS.filter(function(c){return NC[c[1]]}).length+')';
- mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Có '+n+' ca thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Nhóm giá '+GN[c[2]]+'</small></span></button>'}).join('');
+ document.getElementById('vf-tab-case').textContent='Đã thi công ('+CARS.filter(function(c){return NC[c[1]]}).length+')';
+ mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Đã thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Nhóm giá '+GN[c[2]]+'</small></span></button>'}).join('');
  fcar.innerHTML=CARS.map(function(c){return '<option>VinFast '+c[0]+'</option>'}).join('')+'<option>VinFast khác</option>';
  var tab='all',qi=document.getElementById('vf-q'),tabs=document.querySelectorAll('.vf-tabs button');
  function filt(){var q=qi.value.trim().toLowerCase().replace(/\s/g,'');document.querySelectorAll('.vf-model').forEach(function(b){b.hidden=!((tab==='all'||b.dataset.t===tab||(tab==='case'&&b.dataset.case==='1'))&&b.dataset.name.toLowerCase().replace(/\s/g,'').indexOf(q)>-1)})}
