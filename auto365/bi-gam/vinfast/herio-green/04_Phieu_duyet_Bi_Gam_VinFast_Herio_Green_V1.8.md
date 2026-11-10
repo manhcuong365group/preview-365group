@@ -4,7 +4,7 @@
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/vinfast/herio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/herio-green (chưa phát hành) |
-| SHA-256 index.html | `2e2566bcb5f463d1daa5a653a52ba2962d7e49ea46b84dd458e87a7d66b68436` |
+| SHA-256 index.html | `ec5888777820d1a0f83f80f17c461a7d6306e7dfad8ca494bdd37d9aff6553cb` |
 | Ngày | 07/11/2026 (cập nhật 09/11/2026) |
 | Tự chấm 10/11/2026 | **96,0/100 — ĐẠT** (S 28,8, G 24,2) |
 | Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (10/11: đã thay 5 ảnh thực tế; còn ảnh vùng sáng Cos là minh họa AI)** |
