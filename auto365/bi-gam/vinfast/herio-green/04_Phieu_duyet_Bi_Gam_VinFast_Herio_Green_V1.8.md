@@ -67,3 +67,4 @@ Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfa
 | 10/11/2026 | Chấm lại theo thang VF5 (không trừ production/CRM): 95,6/100 — ĐẠT ngưỡng V1.9 (xem 03) |
 | 10/11/2026 | Thay 5 ảnh thực tế Herio Green; tự chấm 96,0/100 — ĐẠT |
 | 09/11/2026 | Vá audit V2.2 R1 (reviewer 08/11, 78/95): F10 New ghi thống nhất "bản 12–16V" ở thẻ, gợi ý, so sánh động, popup/form; công suất 45W Cos/55W Pha; ghi chú bản 24V 4.500.000đ; thêm đèn zin Halogen Projector có nguồn VinFast; sửa lời dẫn form gọi lại; nút Báo giá từng dòng bảng so sánh; dateModified 2026-11-09 |
+| 10/11/2026 | Chấm lại cuối ngày: 95,8/100 — ĐẠT. 5 ảnh mục Lý do mới; ảnh Cos (05) vẫn là ảnh AI nhưng đã bỏ nhãn theo yêu cầu → G3 4,2 (rủi ro reviewer trừ thêm nếu phát hiện); bố cục: khung Tổng quan cân, nút Xem tất cả cạnh tab hãng, dòng xe 2 hàng cuộn ngang, khung logo, 7 bước chỉ tiêu đề |
