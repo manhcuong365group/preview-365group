@@ -13,7 +13,7 @@
 
 | Mục | Giá trị chốt | Ghi chú |
 |---|---|---|
-| Địa chỉ trên trang | 4/4/1/7 Đường số 3, Khu phố 31, P. Hiệp Bình, TP.HCM | 3M Pro Shop & 3M Training Center thuộc hệ sinh thái Trụ Sở Chính nên trang dùng một địa chỉ (địa chỉ riêng Pro Shop 4/4/3/3 chỉ dùng trên hồ sơ Maps) |
+| Địa chỉ trên trang | 4/4/1/7 Đường số 3, Khu phố 31, P. Hiệp Bình, TP.HCM | 3M Pro Shop & 3M Training Center thuộc hệ sinh thái Trụ Sở Chính ; địa chỉ chính toàn trang 4/4/1/7, mục Đường đến ghi thêm địa chỉ riêng 3M Pro Shop 4/4/3/3 (10/11) |
 | Câu nhận diện | "3M Pro Shop & 3M Training Center được phát triển trong hệ sinh thái Auto365.vn – Trụ Sở Chính, thuộc 365Group." | Không dùng "Trụ Sở Chính cũng là 3M Pro Shop" |
 | Giờ mở cửa | 08:30 – 18:30, Thứ 2 – Chủ nhật | Schema `Mo-Su 08:30-18:30` |
 | Tư vấn | "Tư vấn và kiểm tra xe miễn phí" | Giữ chữ "miễn phí" |
@@ -85,7 +85,7 @@ Còn lại cho IT/CRM (P0-03): gửi lead QA trên production, đối chiếu m�
 | Hotline | 0365 365 365 (Phim · PPF · Wrap · Nội thất da); 0365 365 911 (Đèn · Camera · Phụ kiện · Xe điện) | Maps đang ghi 0587 365 365 — Vận hành xác nhận |
 | Giờ mở cửa | 08:30 – 18:30, Thứ 2 – Chủ nhật (chủ trang chốt) | Vận hành xác nhận |
 | Tư vấn, kiểm tra xe | Miễn phí (chủ trang chốt) | — |
-| Trang hiển thị | Một địa chỉ 4/4/1/7 cho toàn trang (chủ trang chốt) | Nhắc trong câu hệ sinh thái |
+| Trang hiển thị | 4/4/1/7 là địa chỉ chính (chủ trang chốt) | 4/4/3/3 ghi trong mục Đường đến (10/11) |
 | Việc ngoài web | Maps còn ghi 4/23A + đóng Chủ nhật → người quản lý GBP sửa | Kiểm giờ + hotline trên Maps |
 
 Vận hành ký: ____________ Ngày: ________
