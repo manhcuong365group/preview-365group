@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `be695a55123d5c690610e5c091092135022c6684034f5ee0bdac62c95107c34e` |
+| SHA-256 index.html | `487425f0ec897b54561f168482f06f95f422a79074a071f2482f16efaa485bf8` |
 | Người chấm | Tự chấm (team nội dung); chủ quản đã test máy thật và ký U1–U3 07/11/2026 |
 
 ## Chấm lại 10/11/2026 — bảng điểm áp dụng

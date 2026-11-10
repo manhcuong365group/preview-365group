@@ -8,7 +8,7 @@
 | Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI).** Mẫu đã được anh Nguyễn Quang Đạo xác nhận 07/11/2026; tự chấm 90,0/100; ảnh AI là lỗi mở trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
-| SHA-256 index.html | `be695a55123d5c690610e5c091092135022c6684034f5ee0bdac62c95107c34e` |
+| SHA-256 index.html | `487425f0ec897b54561f168482f06f95f422a79074a071f2482f16efaa485bf8` |
 | Ngày | datePublished 2026-11-07; dateModified 2026-11-09; dòng Cập nhật 09/11/2026 |
 | reviewedBy / lastReviewed | Nguyễn Quang Đạo · 2026-11-07 |
 | Xác nhận mẫu | XAC_NHAN_TUONG_THICH_VF_WILD_20261107.md (17 mẫu, kiểm pát/điện trên từng xe) |
