@@ -52,7 +52,7 @@ const cut = (start, endRe) => {
   return bght.slice(i, i + m.index + m[0].length);
 };
 const branch = cut('<section class="bght-sec bght-branch"', /\n<\/div><\/section>/)
-  .replace('<h2 class="bght-h2">Hệ thống chi nhánh &amp; tư vấn</h2>', '<span class="bgvf-eb">Hệ thống chi nhánh</span><h2 class="bght-h2">Tìm chi nhánh Auto365 gần bạn</h2>')
+  .replace('<h2 class="bght-h2">Hệ thống chi nhánh &amp; tư vấn</h2>', '<h2 class="bght-h2">Tìm chi nhánh Auto365 gần bạn</h2>')
   .replace('kỹ thuật viên kiểm tra xe và tư vấn cấu hình.</p>', 'kỹ thuật viên kiểm tra xe và tư vấn cấu hình. Auto365.vn - Trụ Sở Chính thuộc hệ sinh thái 365Group, là điểm tư vấn, lắp đặt và hỗ trợ bảo hành các dòng đèn X-Light, GTR, AES, Titan, Henvvei, Red Lighting, Matrix Light và Fogway theo nhu cầu sử dụng thực tế của từng xe.</p>');
 const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s*<\/div><\/section>/)
   .replace(/data-service="[^"]*"/g, 'data-service="Bi gầm Honda"')
