@@ -9,10 +9,10 @@
 | Title (74 ký tự) | Bi gầm Ford theo từng dòng xe: Ranger, Everest, Escape, EcoSport \| Auto365 |
 | Meta description (121 ký tự) | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Ford theo từng dòng xe |
-| dateModified | 2026-11-09 |
+| dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `0ce2f412d8371ce8ad63c02156ba56aa270aa3573d0e0ab64d1a649229475aea` |
-| SHA-256 content-src.html | `6cc002389615f62c15fe2d951469537ae9830f5a1bd66f1fb6a33bbf4ed6c7d0` |
+| SHA-256 index.html | `4adfbcdc3a1d69d73c012fe9072e38e1a3310f6d9c7d2f92e7ea5ab91fdfb098` |
+| SHA-256 content-src.html | `7146e049c93e98201bdcb9f4b8cf4611fc3e5b6ae950290bdbe7734a94283d4e` |
 
 ## Sapo (kiêm trả lời nhanh)
 

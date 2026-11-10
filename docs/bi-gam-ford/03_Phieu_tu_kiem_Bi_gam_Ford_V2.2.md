@@ -39,7 +39,7 @@ Reviewer chấm 94,4/100 (Content 28,0 · SEO 28,6 · GEO 23,4 · U 14,4): lens 
 
 | Mục | Đã vá trên preview 09/11 |
 |---|---|
-| Lens | Điền theo bài case (ưu tiên) hoặc thông số trang sản phẩm của đúng mẫu (F10 Hyper 2.0 = 2.0 inch; X3 Ultra, F10 Pro, F10 New 2025, 301 V2, Titan 301, GTR G1 Turbo = 3.0 inch; AES SV theo tên mẫu). Dòng không có căn cứ ghi "Chưa xác nhận". Nguồn từng dòng ở 02 |
+| Lens | Điền theo bài case (ưu tiên) hoặc thông số trang sản phẩm của đúng mẫu (F10 Hyper 2.0 = 2.0 inch; X3 Ultra, F10 Pro, F10 New 2025, 301 V2, Titan 301, GTR G1 Turbo = 3.0 inch; AES SV theo tên mẫu). Ford Ranger Raptor (F10 New bản 2023) = 3.0 inch theo chủ quản xác nhận 10/11; hiện không còn dòng "Chưa xác nhận". Nguồn từng dòng ở 02 |
 | FAQ lens | Một ví dụ 2.0 inch và một ví dụ 3.0 inch lấy từ bảng tra (không có ca 2.0 thì ghi rõ chưa có) |
 | FAQ dòng xe | Sinh lại theo dữ liệu: dòng có hồ sơ, dòng có bài tư vấn, đủ danh sách "Tư vấn cấu hình" |
 | Meta/OG/CollectionPage | Mô tả nêu đúng hãng đèn có trong hồ sơ; tên ItemList dòng xe theo đúng nội dung |

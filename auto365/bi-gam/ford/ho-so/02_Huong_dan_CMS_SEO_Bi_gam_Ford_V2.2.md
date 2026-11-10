@@ -108,4 +108,4 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | [Everest](https://auto365.vn/ford-everest-do-den-bi-gam-x-light-f10-pro) | X-Light F10 Pro | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-xlight-f10-pro](https://auto365.vn/bi-gam-xlight-f10-pro) |
 | [Everest](https://auto365.vn/ford-everest-do-den-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
 | [Escape](https://auto365.vn/nang-cap-ford-escape-do-den-naoevo-s9-pro-va-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
-| [Ranger Raptor](https://auto365.vn/ford-raptor-do-den-bi-gam-x-light-f10-new-nhiet-mau-5500k) | X-Light F10 New | Chưa xác nhận | — |
+| [Ranger Raptor](https://auto365.vn/ford-raptor-do-den-bi-gam-x-light-f10-new-nhiet-mau-5500k) | X-Light F10 New | 3.0 inch | Chủ quản xác nhận 10/11/2026 (F10 New bản 2023 = 3.0 inch) |
