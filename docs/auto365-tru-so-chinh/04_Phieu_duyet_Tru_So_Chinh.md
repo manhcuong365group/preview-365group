@@ -133,3 +133,7 @@ Việc làm lúc go-live (đã chốt phương án, không phải lỗi preview)
 | REL-02 | Vận hành/KD chốt giờ 08:30–18:30, lịch tuần, "miễn phí", điểm tiếp nhận |
 | REL-03 | IT/CRM đối soát lead, CRM, tracking |
 | REL-04 | Thay đường dẫn asset preview trong structured data, gỡ banner demo, bỏ noindex |
+
+## Bổ sung chiều 10/11/2026 — anh Nguyễn Quang Đạo đã duyệt 10/11/2026
+
+2 FAQ thời gian thi công (phim 2–4 giờ, PPF theo phạm vi; khách Bình Dương/Biên Hòa/Vũng Tàu về trong ngày) và khối "Khi nào chưa cần làm?" (phim, đèn, PPF/Wrap, camera, bọc da). `lastReviewed` giữ 2026-11-10.
