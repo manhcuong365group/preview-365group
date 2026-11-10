@@ -4,7 +4,7 @@
 |---|---|
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `cbb1ba43c84aa92b86aed0a9198a1065a270634fff19fdc50792cb757386ef6f` |
+| SHA-256 index.html | `2c8896fa6483c8d3372872666f41ce09767dfa1e767b4077a3fe8311deac43be` |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 |
 | Tự chấm V1.9 | 89,5/100 (chấm lại 09/11) — chưa đạt (xem 03) |
 | Tự chấm 10/11/2026 | **95,8/100 — ĐẠT** (S 28,8, G 24,2) |
