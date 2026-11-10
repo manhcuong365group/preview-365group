@@ -10,7 +10,7 @@
 | Schema | CollectionPage, BreadcrumbList, ItemList (dòng xe, hồ sơ), FAQPage |
 | Robots preview | noindex, nofollow — production bỏ |
 | Dòng xe trên lưới | 8 dòng |
-| Hồ sơ case | 3 bài đã đăng trên auto365.vn |
+| Hồ sơ case | 5 bài đã đăng trên auto365.vn |
 
 ## Nguồn dữ liệu
 - Case: bài đã đăng trên auto365.vn (sitemap blog 10/11/2026), mỗi thẻ link bài gốc.

@@ -9,7 +9,7 @@
 | Meta description | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 12 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | Schema | CollectionPage, BreadcrumbList, ItemList (dòng xe, hồ sơ), FAQPage |
 | Robots preview | noindex, nofollow — production bỏ |
-| Dòng xe trên lưới | 9 dòng |
+| Dòng xe trên lưới | 13 dòng |
 | Hồ sơ case | 12 bài đã đăng trên auto365.vn |
 
 ## Nguồn dữ liệu

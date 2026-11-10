@@ -7,16 +7,16 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/suzuki/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/suzuki |
 | Title (77 ký tự) | Lắp bi gầm Suzuki: chọn đèn theo dòng xe XL7, Ertiga, Swift, Vitara \| Auto365 |
-| Meta description (125 ký tự) | Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 3 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description (130 ký tự) | Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (3), FAQPage |
-| SHA-256 index.html | `06d107d3a471d53eb1185b1085c5d33243790b94f43e40c922d87cd1eb53df1c` |
-| SHA-256 content-src.html | `82c6f83b8b81c707b6d1cea444a12a8140b2379f347af4cc88d6e8adceb5b508` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
+| SHA-256 index.html | `502cc58758963be3c624665a90680637dbaebcf8d2b5a6d826ca0179d8d640bb` |
+| SHA-256 content-src.html | `ad77cab62f13be3501f8d3c65f60b3b1dda63081627f1ac54f2290594e169769` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Suzuki cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR) trên Suzuki XL7 và Vitara, cùng bài tư vấn bi gầm cho Swift; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Bi gầm Suzuki cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES) trên Suzuki XL7, Swift và Vitara; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
 
 ## Chọn dòng xe Suzuki
 
@@ -25,15 +25,15 @@ Bi gầm Suzuki cần chọn theo hốc đèn gầm, đời xe và hệ thống 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Suzuki XL7 | MPV | Có hồ sơ | https://auto365.vn/suzuki-xl7-nang-cap-bi-gam-x-light-f10-2-0-new |
-| Suzuki Vitara | SUV | Có hồ sơ | https://auto365.vn/bi-gam-gtr-su-lua-chon-hoan-hao-cho-suzuki-vitara |
 | Suzuki Swift | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-aes-sv-30-pro-cho-suzuki-swift-gia-thong-so-va-luu-y-khi-lap |
+| Suzuki Vitara | SUV | Có hồ sơ | https://auto365.vn/bi-gam-gtr-su-lua-chon-hoan-hao-cho-suzuki-vitara |
 | Suzuki Fronx | SUV | Liên hệ tư vấn | — |
 | Suzuki Ertiga | MPV | Liên hệ tư vấn | — |
 | Suzuki Jimny | SUV | Liên hệ tư vấn | — |
 | Suzuki Ciaz | Sedan | Liên hệ tư vấn | — |
 | Suzuki Celerio | Sedan | Liên hệ tư vấn | — |
 
-## Xe Suzuki đã lắp bi gầm tại Auto365 (3 bài hồ sơ)
+## Xe Suzuki đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -42,6 +42,8 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Suzuki XL7 | [Suzuki XL7 nâng cấp bi gầm X-Light F10 2.0 New](https://auto365.vn/suzuki-xl7-nang-cap-bi-gam-x-light-f10-2-0-new) | 2026-07-24 |
 | Suzuki XL7 | [Suzuki XL7 2023 nâng cấp bi gầm X-Light F10 New bản 2025](https://auto365.vn/den-bi-gam-x-light-f10-new-cho-suzuki-xl7-2023) | 2026-07-17 |
 | Suzuki Vitara | [Suzuki Vitara lắp bi gầm GTR](https://auto365.vn/bi-gam-gtr-su-lua-chon-hoan-hao-cho-suzuki-vitara) | 2018-10-21 |
+| Suzuki Swift | [Suzuki Swift lắp bi gầm AES SV 3.0 Pro](https://auto365.vn/bi-gam-aes-sv-30-pro-cho-suzuki-swift-gia-thong-so-va-luu-y-khi-lap) | 2026-07-04 |
+| Suzuki XL7 | [Suzuki XL7 độ đèn bi gầm X-Light F10 New](https://auto365.vn/do-den-suzuki-xl7) | 2024-01-22 |
 
 ## Xe Suzuki lắp bi gầm cần lưu ý gì?
 
@@ -67,9 +69,9 @@ _Dòng xe:_ Swift, Celerio, Ciaz
 - Xe đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.
 - Hốc đèn gầm nhỏ cần đo trước để chọn lens 2.0 hay 3.0 inch.
 
- ()
+Đã lắp: Swift – AES SV 3.0 Pro (https://auto365.vn/bi-gam-aes-sv-30-pro-cho-suzuki-swift-gia-thong-so-va-luu-y-khi-lap)
 
-CTA: Xem tư vấn bi gầm Swift → https://auto365.vn/bi-gam-aes-sv-30-pro-cho-suzuki-swift-gia-thong-so-va-luu-y-khi-lap
+CTA: — (chưa có bài tư vấn dòng xe)
 
 #### MPV gia đình, chạy dịch vụ
 
@@ -133,15 +135,15 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Su
 
 **Dòng Suzuki nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm XL7 và Vitara; Swift có bài tư vấn bi gầm AES SV 3.0 Pro. Các dòng Celerio, Ciaz, Fronx, Jimny và Ertiga hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm XL7, Swift và Vitara. Các dòng Celerio, Ciaz, Fronx, Jimny và Ertiga hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Suzuki nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Suzuki XL7 đã có hồ sơ lắp mẫu lens 2.0 inch (X-Light F10 2.0 New) và hồ sơ XL7 2023 lắp X-Light F10 New bản 2025 lens 3.0 inch; Vitara lắp bi gầm GTR lens 3.0 inch. Cùng dòng xe vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Suzuki XL7 đã có hồ sơ lắp mẫu lens 2.0 inch (X-Light F10 2.0 New) và hồ sơ XL7 2023 lắp X-Light F10 New bản 2025 lens 3.0 inch; Swift lắp AES SV 3.0 Pro và Vitara lắp bi gầm GTR, đều lens 3.0 inch. Cùng dòng xe vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
 
 **Một dòng Suzuki có nhiều đời thì chọn bi gầm thế nào?**
 
-Mỗi đời xe có thể khác hốc đèn và điểm cấp nguồn. Auto365 đã có hai hồ sơ XL7 với hai mẫu lens khác nhau; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
+Mỗi đời xe có thể khác hốc đèn và điểm cấp nguồn. Auto365 đã có ba hồ sơ XL7 (2024, 2023 và bản F10 2.0 New) với hai mẫu lens khác nhau; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
 
 **Nâng cấp đèn bi gầm chính hãng cho Suzuki ở TP. Hồ Chí Minh ở đâu?**
 

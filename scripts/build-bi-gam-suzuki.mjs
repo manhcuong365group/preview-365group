@@ -114,7 +114,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Lắp bi gầm Suzuki: chọn đèn theo dòng xe XL7, Ertiga, Swift, Vitara | Auto365';
-const desc = 'Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 3 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
+const desc = 'Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

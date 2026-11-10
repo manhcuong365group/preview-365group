@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (12), FAQPage |
-| SHA-256 index.html | `600bd42e227f6a63f703408e11d9b379f1f331e4bc4efb8e2e49955aa78f089f` |
-| SHA-256 content-src.html | `933b81d3d9ce1891ae5b24c83788c862039ac7ac11ea72c8fa8dd1e9cbe55dae` |
+| SHA-256 index.html | `d22aaec11f013513570de1697ea94d0693c40d7d995d55c8f4cffdf6bee75b2f` |
+| SHA-256 content-src.html | `99fdfd6fe14338e4c4da38df0b3289798d38abcfa71500f826d7ae23bbb9a861` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống �
 
 ## Chọn dòng xe Mazda
 
-### Dòng xe (9)
+### Dòng xe (13)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -30,8 +30,12 @@ Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống �
 | Mazda 6 | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-mazda-6 |
 | Mazda 626 | Sedan | Có hồ sơ | https://auto365.vn/mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k |
 | Mazda 3 | Sedan | Liên hệ tư vấn | — |
+| Mazda 3 Sport | Sedan | Liên hệ tư vấn | — |
 | Mazda CX-3 | SUV | Liên hệ tư vấn | — |
 | Mazda CX-30 | SUV | Liên hệ tư vấn | — |
+| Mazda CX-60 | SUV | Liên hệ tư vấn | — |
+| Mazda CX-90 | SUV | Liên hệ tư vấn | — |
+| Mazda MX-5 | Sedan | Liên hệ tư vấn | — |
 | Mazda BT-50 | Bán tải | Liên hệ tư vấn | — |
 
 ## Xe Mazda đã lắp bi gầm tại Auto365 (12 bài hồ sơ)
@@ -143,7 +147,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ma
 
 **Dòng Mazda nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Mazda 2, Mazda 6, Mazda 626, CX-5 và CX-8; Mazda 6, CX-5 và CX-8 có bài tư vấn riêng. Các dòng Mazda 3, CX-3, CX-30 và BT-50 hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Mazda 2, Mazda 6, Mazda 626, CX-5 và CX-8; Mazda 6, CX-5 và CX-8 có bài tư vấn riêng. Các dòng Mazda 3, Mazda 3 Sport, MX-5, CX-3, CX-30, CX-60, CX-90 và BT-50 hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Mazda nên chọn bi gầm 2.0 hay 3.0 inch?**
 

@@ -7,12 +7,12 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/bmw/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/bmw |
 | Title (68 ký tự) | Lắp bi gầm BMW: chọn đèn theo dòng xe X3, X5, X6, 3 Series \| Auto365 |
-| Meta description (127 ký tự) | Tra cứu bi gầm BMW theo dòng và đời xe, xem 4 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description (127 ký tự) | Tra cứu bi gầm BMW theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (4), FAQPage |
-| SHA-256 index.html | `c8981524cac9bd206eb1a60f9e4169fd01e9f3e4af47666ddaa01524d6cb5495` |
-| SHA-256 content-src.html | `e1f0938cd5cbe04d31699786b7661c3264a48717922e8db80f7ec6327b9b38a3` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
+| SHA-256 index.html | `c2c9478dfb3776870a5471a2d3fec02d850e3c8f69c7ea45b814f978391eb7fd` |
+| SHA-256 content-src.html | `662a27cf5d623209b66203bb5f1b12d6cc78048f39e615244c1bdb4d100f16ec` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Bi gầm BMW cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 
 ## Chọn dòng xe BMW
 
-### Dòng xe (9)
+### Dòng xe (13)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -33,8 +33,12 @@ Bi gầm BMW cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | BMW X1 | SUV | Liên hệ tư vấn | — |
 | BMW X4 | SUV | Liên hệ tư vấn | — |
 | BMW X7 | SUV | Liên hệ tư vấn | — |
+| BMW 2 Series Gran Coupé | Sedan | Liên hệ tư vấn | — |
+| BMW 4 Series | Sedan | Liên hệ tư vấn | — |
+| BMW 8 Series | Sedan | Liên hệ tư vấn | — |
+| BMW Z4 | Sedan | Liên hệ tư vấn | — |
 
-## Xe BMW đã lắp bi gầm tại Auto365 (4 bài hồ sơ)
+## Xe BMW đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -44,12 +48,13 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | BMW X3 | [BMW X3 xDrive20i 2017 lắp bi gầm X-Light X3 Ultra 5500K](https://auto365.vn/bmw-x3-xdrive20i-2017-lap-bi-gam-x-light-x3-ultra-5500k) | 2026-10-31 |
 | BMW X5 | [BMW X5 2013 LCI lắp bi LED V30 Ultra kết hợp bi gầm SV 3.0 Max](https://auto365.vn/bmw-x5-2013-lci-lap-bi-led-v30-ultra-bi-gam-sv-30-max) | 2026-10-28 |
 | BMW X5 | [BMW X5 độ đèn bi gầm X-Light F10 New](https://auto365.vn/bmw-x5-do-den-bi-gam-x-light-f10-new) | 2024-08-30 |
+| BMW X5 | [BMW X5 E70 2010 lắp bi gầm X-Light F10 Turbo V2](https://auto365.vn/bmw-x5-e70-2010-lap-x-light-f10-turbo-v2-gia-cau-hinh) | 2026-08-22 |
 
 ## Xe BMW lắp bi gầm cần lưu ý gì?
 
 Các dòng BMW khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
 
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Nhiều đời BMW có hốc gầm nhỏ hoặc đèn gầm liền cản, nên mẫu lắp trong từng hồ sơ (X3 2017, X5 2013, X6 2019) chỉ áp dụng cho đúng đời và gói ngoại thất của xe đó.
+- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Nhiều đời BMW có hốc gầm nhỏ hoặc đèn gầm liền cản, nên mẫu lắp trong từng hồ sơ (X5 2010, X3 2017, X5 2013, X6 2019) chỉ áp dụng cho đúng đời và gói ngoại thất của xe đó.
 - Nguồn điện: xe BMW có hệ thống kiểm tra lỗi bóng đèn, nên kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và khả năng báo lỗi trên taplo theo đúng đời xe trước khi chọn dây, giắc và phụ kiện.
 - Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
 
@@ -123,15 +128,15 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang BM
 
 **Dòng BMW nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm X3, X5 và X6; X5 có bài tư vấn riêng. Các dòng 3 Series, 5 Series, 7 Series, X1, X4 và X7 hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm X3, X5 và X6; X5 có bài tư vấn riêng. Các dòng 2 Series Gran Coupé, 3 Series, 4 Series, 5 Series, 7 Series, 8 Series, Z4, X1, X4 và X7 hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe BMW nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ BMW hiện có (X3 2017, X5 2013, X6 2019) đều lắp mẫu lens 3.0 inch (X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2); mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ BMW hiện có (X5 2010, X3 2017, X5 2013, X6 2019) đều lắp mẫu lens 3.0 inch (X-Light F10 Turbo V2, X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2); mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
 
 **Một dòng BMW có nhiều đời thì chọn bi gầm thế nào?**
 
-Mỗi đời xe có thể khác hốc đèn, gói ngoại thất và điểm cấp nguồn. Auto365 đã có hồ sơ X5 2013 LCI, X3 2017 và X6 2019; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
+Mỗi đời xe có thể khác hốc đèn, gói ngoại thất và điểm cấp nguồn. Auto365 đã có hồ sơ X5 E70 2010, X5 2013 LCI, X3 2017 và X6 2019; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
 
 **Nâng cấp đèn bi gầm chính hãng cho BMW ở TP. Hồ Chí Minh ở đâu?**
 
