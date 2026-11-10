@@ -113,12 +113,12 @@ const dateModified = (content.match(/class="bgvf-dm" datetime="([0-9-]+)"/) || [
 const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [])[1];
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
-const title = 'Lắp đèn bi gầm Mitsubishi theo dòng xe: Xpander, Outlander, Triton, Xforce | Auto365';
+const title = 'Lắp bi gầm Mitsubishi: chọn đèn theo dòng xe Xpander, Outlander, Triton, Xforce | Auto365';
 const desc = 'Tra cứu bi gầm Mitsubishi theo dòng và đời xe, xem 15 hồ sơ lắp X-Light, GTR, AES, Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
-    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Lắp đèn bi gầm Mitsubishi theo từng dòng xe', description: desc, inLanguage: 'vi', dateModified, ...(lastReviewed ? { lastReviewed, reviewedBy } : {}),
+    { '@type': 'CollectionPage', '@id': canonical + '#collectionpage', url: canonical, name: 'Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe', description: desc, inLanguage: 'vi', dateModified, ...(lastReviewed ? { lastReviewed, reviewedBy } : {}),
       about: { '@type': 'Brand', name: 'Mitsubishi' }, isPartOf: { '@id': 'https://auto365.vn/#website' }, publisher: { '@id': 'https://auto365.vn/#organization' }, breadcrumb: { '@id': canonical + '#breadcrumb' } },
     { '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Trang chủ', item: 'https://auto365.vn/' },
