@@ -7,12 +7,12 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/hyundai/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/hyundai |
 | Title (75 ký tự) | Bi gầm Hyundai theo từng dòng xe: Santa Fe, Custin, Creta, Tucson \| Auto365 |
-| Meta description (128 ký tự) | Tra cứu 17 dòng Hyundai, xem 8 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
+| Meta description (128 ký tự) | Tra cứu 22 dòng Hyundai, xem 8 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
 | H1 | Bi gầm Hyundai theo từng dòng xe |
-| dateModified | 2026-11-09 |
+| dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
-| SHA-256 index.html | `07f2ccd6a14028279635dca53abe77900c192ad5c29781c34835fc5190276a33` |
-| SHA-256 content-src.html | `13ae9f32f5741866169db86d5e7a60026e10845cf4fd81ea7030a20e4a8fb24e` |
+| SHA-256 index.html | `6046b9bba6bbafc9da40f3fd26c68712071480db2e151fc6abe1dc43488ab79b` |
+| SHA-256 content-src.html | `e5630dfd9909fa9b5f1ef58d5477246f41ae3b8fb7e28761f592ff92cf4d31fd` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,27 +20,32 @@ Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống
 
 ## Chọn dòng xe Hyundai
 
-### Dòng xe (17)
+### Dòng xe (22)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
+| Hyundai Custin | MPV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-custin |
+| Hyundai Santa Fe | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-santa-fe |
+| Hyundai Elantra | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-elantra |
+| Hyundai Creta | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-creta |
+| Hyundai Tucson | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-tucson |
 | Hyundai Grand i10 | Hatchback | Liên hệ tư vấn | — |
 | Hyundai Getz | Hatchback | Liên hệ tư vấn | — |
 | Hyundai i20 | Hatchback | Liên hệ tư vấn | — |
 | Hyundai Grand i10 Sedan | Sedan | Liên hệ tư vấn | — |
 | Hyundai Accent | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-accent |
-| Hyundai Elantra | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-elantra |
 | Hyundai Avante | Sedan | Liên hệ tư vấn | — |
 | Hyundai Venue | SUV | Liên hệ tư vấn | — |
-| Hyundai Creta | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-creta |
-| Hyundai Tucson | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-tucson |
-| Hyundai Santa Fe | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-santa-fe |
 | Hyundai Palisade | SUV | Liên hệ tư vấn | — |
 | Hyundai Ioniq 5 | SUV | Liên hệ tư vấn | — |
 | Hyundai Kona | SUV | Liên hệ tư vấn | — |
 | Hyundai Stargazer | MPV | Liên hệ tư vấn | — |
-| Hyundai Custin | MPV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-custin |
 | Hyundai Grand Starex | MPV | Liên hệ tư vấn | — |
+| Hyundai Staria | MPV | Liên hệ tư vấn | — |
+| Hyundai Solati | MPV | Liên hệ tư vấn | — |
+| Hyundai i30 | Hatchback | Liên hệ tư vấn | — |
+| Hyundai Sonata | Sedan | Liên hệ tư vấn | — |
+| Hyundai Genesis | Sedan | Liên hệ tư vấn | — |
 
 ## Xe Hyundai đã lắp bi gầm tại Auto365 (8 bài hồ sơ)
 
@@ -147,7 +152,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Hy
 
 **Dòng Hyundai nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Elantra, Creta và Tucson; Accent, Elantra, Creta, Tucson, Santa Fe và Custin có bài tư vấn riêng. Các dòng Grand i10, Getz, i20, Grand i10 Sedan, Avante, Venue, Palisade, Ioniq 5, Kona, Stargazer và Grand Starex hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Santa Fe, Custin, Elantra, Creta và Tucson; Accent, Elantra, Creta, Tucson, Santa Fe và Custin có bài tư vấn riêng. Các dòng Grand i10, Getz, i20, Grand i10 Sedan, Avante, Venue, Palisade, Ioniq 5, Kona, Stargazer, Grand Starex, Staria, Solati, i30, Sonata và Genesis hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Hyundai nên chọn bi gầm 2.0 hay 3.0 inch?**
 

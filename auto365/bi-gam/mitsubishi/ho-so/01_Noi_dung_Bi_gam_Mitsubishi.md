@@ -9,10 +9,10 @@
 | Title (81 ký tự) | Bi gầm Mitsubishi theo từng dòng xe: Xpander, Outlander, Triton, Xforce \| Auto365 |
 | Meta description (134 ký tự) | Tra cứu bi gầm Mitsubishi theo dòng và đời xe, xem 15 hồ sơ lắp X-Light, GTR, AES, Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Mitsubishi theo từng dòng xe |
-| dateModified | 2026-11-09 |
+| dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `f5677022087fc41ac374e30c84053b5192c8d984ceb1f97adcf1a3c41a2bd73b` |
-| SHA-256 content-src.html | `6b0011abf78dd1428e8b483f96d0a66aa275a5d0b82624da90a85a0f5bdbd482` |
+| SHA-256 index.html | `59ac7d5b553155d669047a2c69e1a6aa99587882c0008a914ac4d93d00daa310` |
+| SHA-256 content-src.html | `df2d993b6f602d23c07dac985b22c09dcc4ba1b5410c55f8b43bddb5c3d7ade6` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,23 +20,24 @@ Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ th�
 
 ## Chọn dòng xe Mitsubishi
 
-### Dòng xe (13)
+### Dòng xe (14)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
+| Mitsubishi Outlander | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-outlander |
+| Mitsubishi Xforce | SUV | Có hồ sơ | https://auto365.vn/mitsubishi-xforce-premium-2025-lap-bi-gam-x-light-x3-ultra-3000k |
+| Mitsubishi Pajero | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-pajero |
+| Mitsubishi Xpander Cross | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-xpander-cross-2025-lap-bi-gam-f10-hyper-20 |
+| Mitsubishi Triton | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-triton |
+| Mitsubishi Destinator | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-destinator |
+| Mitsubishi Xpander | MPV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-xpander |
+| Mitsubishi Zinger | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-zinger-gls-2011-lap-bi-gam-x-light-x3-ultra-4300k |
 | Mitsubishi Mirage | Hatchback | Liên hệ tư vấn | — |
 | Mitsubishi Attrage | Sedan | Liên hệ tư vấn | — |
-| Mitsubishi Xforce | SUV | Có hồ sơ | https://auto365.vn/mitsubishi-xforce-premium-2025-lap-bi-gam-x-light-x3-ultra-3000k |
-| Mitsubishi Destinator | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-destinator |
-| Mitsubishi Outlander | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-outlander |
 | Mitsubishi Pajero Sport | SUV | Liên hệ tư vấn | — |
-| Mitsubishi Pajero | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-pajero |
-| Mitsubishi Xpander | MPV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-xpander |
-| Mitsubishi Xpander Cross | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-xpander-cross-2025-lap-bi-gam-f10-hyper-20 |
-| Mitsubishi Zinger | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-zinger-gls-2011-lap-bi-gam-x-light-x3-ultra-4300k |
 | Mitsubishi Grandis | MPV | Liên hệ tư vấn | — |
 | Mitsubishi Jolie | MPV | Liên hệ tư vấn | — |
-| Mitsubishi Triton | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-triton |
+| Mitsubishi Lancer | Sedan | Liên hệ tư vấn | — |
 
 ## Xe Mitsubishi đã lắp bi gầm tại Auto365 (15 bài hồ sơ)
 
@@ -150,7 +151,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Mi
 
 **Dòng Mitsubishi nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm Pajero, Xforce, Zinger, Xpander Cross, Destinator, Outlander, Triton và Xpander; Destinator, Outlander, Pajero, Xpander và Triton có bài tư vấn riêng. Các dòng Mirage, Attrage, Pajero Sport, Grandis và Jolie hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm Pajero, Xforce, Zinger, Xpander Cross, Destinator, Outlander, Triton và Xpander; Destinator, Outlander, Pajero, Xpander và Triton có bài tư vấn riêng. Các dòng Mirage, Attrage, Pajero Sport, Grandis, Jolie và Lancer hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Mitsubishi nên chọn bi gầm 2.0 hay 3.0 inch?**
 

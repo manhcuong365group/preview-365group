@@ -9,10 +9,10 @@
 | Title (65 ký tự) | Bi gầm Honda theo từng dòng xe: City, CR-V, Civic, HR-V \| Auto365 |
 | Meta description (125 ký tự) | Tra cứu bi gầm Honda theo dòng và đời xe, xem 15 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Bi gầm Honda theo từng dòng xe |
-| dateModified | 2026-11-09 |
+| dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `edceadd5f7e1f2df92919c7af1f57c992f1e0510c0c38f1cb163e54665d4bc05` |
-| SHA-256 content-src.html | `0f9b73a4b53100d726363a56c88601d51845e0171ced54cc23a7dfa8ca3e8033` |
+| SHA-256 index.html | `0ea87df489fd35591003882195daf3d6b54c56d2f1aa7bc39775162e41d6d7aa` |
+| SHA-256 content-src.html | `2ee55410f654128b39bc7e60ceea507ade2f1b667bebcf5da03e16fc078edf3e` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,18 +20,20 @@ Bi gầm Honda cần chọn theo hốc đèn gầm, đời xe và hệ thống �
 
 ## Chọn dòng xe Honda
 
-### Dòng xe (8)
+### Dòng xe (10)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Honda City | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-honda-city |
-| Honda Civic | Sedan | Có hồ sơ | https://auto365.vn/honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025 |
-| Honda Civic Type R | Sedan | Liên hệ tư vấn | — |
-| Honda Accord | Sedan | Liên hệ tư vấn | — |
-| Honda HR-V | SUV | Có hồ sơ | https://auto365.vn/honda-hr-v-2021-lap-bi-gam-x-light-x3-ultra-3000k |
 | Honda CR-V | SUV | Có hồ sơ | https://auto365.vn/bi-gam-honda-cr-v |
+| Honda Civic | Sedan | Có hồ sơ | https://auto365.vn/honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025 |
+| Honda HR-V | SUV | Có hồ sơ | https://auto365.vn/honda-hr-v-2021-lap-bi-gam-x-light-x3-ultra-3000k |
 | Honda BR-V | MPV | Có hồ sơ | https://auto365.vn/honda-br-v-l-2023-lap-bi-gam-x-light-f10-turbo-5500k |
 | Honda Odyssey | MPV | Có hồ sơ | https://auto365.vn/honda-odyssey-do-den-bi-gam-g1-turbo |
+| Honda Civic Type R | Sedan | Liên hệ tư vấn | — |
+| Honda Accord | Sedan | Liên hệ tư vấn | — |
+| Honda Brio | Sedan | Liên hệ tư vấn | — |
+| Honda Jazz | Sedan | Liên hệ tư vấn | — |
 
 ## Xe Honda đã lắp bi gầm tại Auto365 (15 bài hồ sơ)
 
@@ -145,7 +147,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ho
 
 **Dòng Honda nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm HR-V, City, BR-V, Civic, CR-V và Odyssey; City và CR-V có bài tư vấn riêng. Các dòng Civic Type R và Accord hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm HR-V, City, BR-V, Civic, CR-V và Odyssey; City và CR-V có bài tư vấn riêng. Các dòng Civic Type R, Accord, Brio và Jazz hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Honda nên chọn bi gầm 2.0 hay 3.0 inch?**
 

@@ -11,8 +11,8 @@
 | H1 | Bi gầm Ford theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `4adfbcdc3a1d69d73c012fe9072e38e1a3310f6d9c7d2f92e7ea5ab91fdfb098` |
-| SHA-256 content-src.html | `7146e049c93e98201bdcb9f4b8cf4611fc3e5b6ae950290bdbe7734a94283d4e` |
+| SHA-256 index.html | `485ab1e480d11f4af912f42cfb28ca5d059d5505f250bcc76d342adf9474df7a` |
+| SHA-256 content-src.html | `76f863e24adefa8c103d66bd26a4208dae02107bd08c188ee303f716575db5a4` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,23 +20,24 @@ Bi gầm Ford cần chọn theo hốc đèn gầm, đời xe và hệ thống đ
 
 ## Chọn dòng xe Ford
 
-### Dòng xe (13)
+### Dòng xe (14)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
+| Ford Everest | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-everest |
+| Ford Escape | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-escape |
+| Ford Ranger | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-ford-ranger |
+| Ford Ranger Raptor | Bán tải | Có hồ sơ | https://auto365.vn/ford-ranger-raptor-2024-lap-bi-gam-x-light-x3-ultra-4300k |
 | Ford Focus | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-ford-focus |
+| Ford EcoSport | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-ecosport |
+| Ford Transit | undefined | Có hồ sơ | https://auto365.vn/bi-gam-ford-transit |
 | Ford Fiesta | Sedan | Liên hệ tư vấn | — |
 | Ford Laser | Sedan | Liên hệ tư vấn | — |
 | Ford Mondeo | Sedan | Liên hệ tư vấn | — |
-| Ford EcoSport | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-ecosport |
 | Ford Territory | SUV | Liên hệ tư vấn | — |
-| Ford Escape | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-escape |
-| Ford Everest | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-everest |
 | Ford Explorer | SUV | Liên hệ tư vấn | — |
 | Ford Mustang Mach-E | SUV | Liên hệ tư vấn | — |
-| Ford Ranger | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-ford-ranger |
-| Ford Ranger Raptor | Bán tải | Có hồ sơ | https://auto365.vn/ford-ranger-raptor-2024-lap-bi-gam-x-light-x3-ultra-4300k |
-| Ford Transit | undefined | Có hồ sơ | https://auto365.vn/bi-gam-ford-transit |
+| Ford Tourneo | undefined | Liên hệ tư vấn | — |
 
 ## Xe Ford đã lắp bi gầm tại Auto365 (21 bài hồ sơ)
 
@@ -156,7 +157,7 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Fo
 
 **Dòng Ford nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?**
 
-Các dòng đã có hồ sơ lắp thực tế gồm EcoSport, Focus, Ranger Raptor, Escape, Everest, Ranger và Transit; Focus, EcoSport, Escape, Everest, Ranger và Transit có bài tư vấn riêng. Các dòng Fiesta, Laser, Mondeo, Territory, Explorer và Mustang Mach-E hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
+Các dòng đã có hồ sơ lắp thực tế gồm EcoSport, Focus, Ranger Raptor, Escape, Everest, Ranger và Transit; Focus, EcoSport, Escape, Everest, Ranger và Transit có bài tư vấn riêng. Các dòng Fiesta, Laser, Mondeo, Territory, Explorer, Mustang Mach-E và Tourneo hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.
 
 **Xe Ford nên chọn bi gầm 2.0 hay 3.0 inch?**
 
