@@ -1,0 +1,364 @@
+<style>
+.bght{--r:#d71920;--rd:#b3121a;--ink:#14181d;--mu:#5f6b76;--ln:#e6e9ed;--bg:#f6f7f9;font-family:Roboto,Arial,sans-serif;color:var(--ink);line-height:1.55}
+.bght *{box-sizing:border-box}
+.bght a{text-decoration:none;color:inherit}
+.bght-in{max-width:1200px;margin:0 auto;padding:0 16px}
+.bght-sec{padding:28px 0}
+.bght-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:16px}
+.bght-h2{font-size:26px;font-weight:800;margin:0 0 4px;line-height:1.25}
+.bght-sub{color:var(--mu);font-size:14px;margin:0}
+.bght-more{color:var(--r)!important;font-size:14px;font-weight:600;white-space:nowrap}
+.bght-more:after{content:" →"}
+.bgvf-eb{display:block;color:var(--r);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+/* hero */
+.bgvf-hero{position:relative;background:linear-gradient(100deg,#f6f7f9 0,#f6f7f9 42%,#e9edf2 100%);overflow:hidden}
+.bgvf-hero .bght-in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:center;padding-top:14px;padding-bottom:28px;min-height:360px}
+.bgvf-bc{font-size:12px;color:var(--mu);grid-column:1/-1;align-self:start}
+.bgvf-bc a:hover{color:var(--r)}
+.bgvf-h1{font-size:clamp(32px,4.2vw,48px);line-height:1.08;font-weight:800;margin:6px 0 4px;letter-spacing:-.5px}
+.bgvf-h1 span{display:block;font-size:.58em;font-weight:500;color:#333;letter-spacing:0;margin-top:6px}.bgvf-h1 span::first-letter{text-transform:uppercase}
+.bgvf-lead{max-width:520px;color:#3b444d;font-size:15px;margin:12px 0 14px}
+.bgvf-qa{max-width:620px;background:#fff;border:1px solid var(--ln);border-left:3px solid var(--r);border-radius:8px;padding:10px 14px;font-size:14px;color:#2b333b;margin:0 0 12px}
+.bgvf-upd{font-size:12.5px;color:#64748b;margin:0 0 14px}.bgvf-upd a{color:inherit;text-decoration:underline}
+.bgvf-trust{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,max-content);gap:8px 22px}
+.bgvf-trust li{position:relative;padding-left:24px;font-size:13.5px;color:#2b333b}
+.bgvf-trust li:before{content:"✓";position:absolute;left:0;top:1px;width:17px;height:17px;border-radius:50%;border:1.5px solid var(--r);color:var(--r);font-size:10px;font-weight:700;display:grid;place-items:center}
+.bgvf-art{display:flex;align-items:flex-end}
+.bgvf-art img{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 14px 30px rgba(15,23,42,.16)}
+/* models */
+.bgvf-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.bgvf-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.bgvf-tab{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:8px 16px;font:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.bgvf-tab:hover{border-color:#f3b4b4}
+.bgvf-tab.on{background:var(--r);border-color:var(--r);color:#fff;font-weight:600}
+.bgvf-search{display:flex;align-items:center;gap:8px;border:1px solid var(--ln);border-radius:8px;background:#fff;padding:0 12px;height:40px;width:260px;max-width:100%}
+.bgvf-search svg{width:16px;height:16px;flex:none;color:var(--mu)}
+.bgvf-search input{border:0;outline:0;font:inherit;font-size:14px;flex:1;min-width:0;background:none}
+.bgvf-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.bgvf-m{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--ln);border-radius:10px;overflow:hidden;transition:.2s}
+.bgvf-m[hidden]{display:none}
+.bgvf-m:hover{border-color:#f3b4b4;box-shadow:0 8px 20px rgba(15,23,42,.08);transform:translateY(-2px)}
+.bgvf-m .im{display:grid;place-items:center;aspect-ratio:16/10;background:linear-gradient(180deg,#fff,#f1f3f5);padding:6px}
+.bgvf-m .im img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.bgvf-m .im em{font-style:normal;font-size:12px;color:var(--mu);font-weight:600}
+.bgvf-m .bd{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:8px 12px 10px}
+.bgvf-m b{font-size:14.5px;font-weight:700}
+.bgvf-m .go{color:var(--r);font-weight:700}
+.bgvf-m small{display:block;font-size:11.5px;color:var(--mu);font-weight:400}
+.bgvf-m .ok{position:absolute;top:8px;left:8px;background:#1f9d55;color:#fff;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:99px}
+.bgvf-empty{grid-column:1/-1;padding:16px;border:1px dashed var(--ln);border-radius:10px;color:var(--mu);font-size:14px}
+/* cases */
+.bgvf-nav{display:flex;gap:8px;align-items:center}
+.bgvf-arr{width:36px;height:36px;border-radius:50%;border:1px solid var(--ln);background:#fff;font-size:18px;cursor:pointer;line-height:1}
+.bgvf-arr:hover{border-color:var(--r);color:var(--r)}
+.bgvf-rail{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.bgvf-rail::-webkit-scrollbar{display:none}
+.bgvf-case{scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;transition:.2s}
+.bgvf-case:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.bgvf-case .im{aspect-ratio:16/9;overflow:hidden;background:#eee}
+.bgvf-case .im img{width:100%;height:100%;object-fit:cover;display:block}
+.bgvf-case .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.bgvf-case h3{font-size:16px;font-weight:700;margin:0;line-height:1.35}
+.bgvf-case p{margin:0;font-size:13.5px;color:var(--mu);flex:1}
+.bgvf-case .ft{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mu);margin-top:6px}
+.bgvf-case .ft em{font-style:normal;color:var(--r);font-weight:600}
+.bgvf-fn{text-align:center;font-size:12.5px;color:var(--mu);margin:12px 0 0}
+/* why */
+.bgvf-why{background:var(--bg);border-radius:14px;padding:24px}
+.bgvf-why h2{margin:0 0 16px}
+.bgvf-why ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.bgvf-why li{display:flex;gap:12px}
+.bgvf-why li+li{border-left:1px solid var(--ln);padding-left:16px}
+.bgvf-ic{flex:0 0 44px;height:44px;border-radius:50%;background:#fde8e8;color:var(--r);display:grid;place-items:center}
+.bgvf-ic svg{width:22px;height:22px}
+.bgvf-why b{display:block;font-size:15px;margin-bottom:2px}
+.bgvf-why p{margin:0;font-size:13px;color:var(--mu)}
+/* quick answer + faq */
+.bq-box{background:#fff8f0;border:1px solid #f6dcc0;border-left:4px solid var(--r);border-radius:10px;padding:18px 20px}
+.bq-h{font-size:20px;font-weight:700;margin:0 0 8px}
+.bq-box p{margin:0 0 8px;font-size:15px;color:#2b333b}.bq-box p:last-child{margin:0}
+.bq-box ul{margin:0 0 8px;padding-left:20px}.bq-box li{margin:4px 0;font-size:14.5px;color:#2b333b}
+.bf-list{display:grid;gap:10px}
+.bf-list details{border:1px solid var(--ln);border-radius:10px;background:#fff;padding:0 16px}
+.bf-list summary{cursor:pointer;list-style:none;padding:14px 28px 14px 0;font-weight:600;font-size:15.5px;position:relative}
+.bf-list summary::-webkit-details-marker{display:none}
+.bf-list summary:after{content:"+";position:absolute;right:0;top:11px;font-size:22px;color:var(--r)}
+.bf-list details[open] summary:after{content:"–"}
+.bf-list p{margin:0 0 14px;font-size:14.5px;color:#3b444d;line-height:1.6}
+/* guides */
+.bgvf-guides{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.bgvf-guide{border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:.2s}
+.bgvf-guide:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.bgvf-guide .im{aspect-ratio:16/9;background:#111;overflow:hidden}
+.bgvf-guide .im img{width:100%;height:100%;object-fit:cover;display:block}
+.bgvf-guide .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bgvf-guide .mt{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--mu);flex-wrap:wrap}
+.bgvf-guide .lb{background:#fde8e8;color:var(--r);font-weight:600;padding:2px 8px;border-radius:4px}
+.bgvf-guide .rw{display:flex;align-items:center;gap:10px;justify-content:space-between}
+.bgvf-guide h3{font-size:14px;font-weight:500;margin:0;line-height:1.45}
+.bgvf-guide:hover h3{color:var(--r)}
+.bgvf-guide i{flex:0 0 30px;height:30px;font-size:13px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;color:var(--r);font-style:normal}
+/* case filter + credit */
+.bgvf-cf{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.bgvf-cfr{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bgvf-cl{min-width:68px}
+.bgvf-cl{flex:none;font-size:13px;color:var(--mu)}
+.bgvf-chip{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:6px 14px;font:inherit;font-size:13.5px;cursor:pointer;color:var(--ink)}
+.bgvf-chip:hover{border-color:#f3b4b4}.bgvf-chip.on{background:#eef1f4;border-color:#cfd5db;font-weight:600}
+.bgvf-case[hidden]{display:none}
+.bgvf-rail.one{grid-template-rows:none}
+.bgvf-case .im{position:relative}
+.bgvf-case .tag{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;padding:3px 9px;border-radius:5px}
+.bgvf-cr{font-size:11.5px;color:var(--mu);margin:10px 0 0}
+.bgvf-ic-chk{padding:18px 0;background:#fffbea;border-top:2px dashed #d9a400;font-size:13.5px;color:#333}.bgvf-ic-chk p{margin:6px 0 0}.bgvf-ic-chk a{color:#dc2626;font-weight:700}
+/* nhu cầu */
+.bgvf-need{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.bgvf-nd{border:1px solid var(--ln);border-radius:12px;background:#fff;padding:16px 18px;display:flex;flex-direction:column}
+.bgvf-nd .who{min-height:2.9em;margin:4px 0 0}
+.bgvf-nd .bd{display:flex;flex-direction:column;gap:10px;margin-top:10px;flex:1}
+.bgvf-needacc{border:1px solid #f0d9c2;border-radius:10px;background:#fff;padding:12px 16px;margin-top:14px}
+.bgvf-needh{font-size:16px;font-weight:700;margin:0 0 2px}
+.bgvf-needacc>summary{list-style:none;cursor:pointer;position:relative;padding-right:40px}
+.bgvf-needacc>summary::-webkit-details-marker{display:none}
+.bgvf-needacc>summary:after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;font-size:20px;color:var(--r)}
+.bgvf-needacc[open]>summary:after{content:"–"}
+.bgvf-needacc[open]>summary{margin-bottom:14px}
+.bgvf-needacc .bght-sub{margin:0}
+.bgvf-nd h3{font-size:17px;font-weight:700;margin:0;line-height:1.35}
+.bgvf-nd .who{font-size:13px;color:var(--mu);margin:0}
+.bgvf-nd ul{margin:0;padding-left:18px;font-size:14px;color:#2b333b;line-height:1.6}.bgvf-nd li{margin:3px 0}
+.bgvf-nd .done{margin:auto 0 0;padding-top:10px;border-top:1px dashed var(--ln);font-size:13px;color:var(--mu)}
+.bgvf-nd .done a{color:var(--ink);text-decoration:underline}
+.bgvf-nd .go{color:var(--r)!important;font-weight:600;font-size:14px}
+.bgvf-nnote{font-size:13px;color:var(--mu);margin:12px 0 0}
+.bgvf-disc{font-size:12.5px;color:var(--mu);margin:14px 0 0;font-style:italic}
+.bght-more,.bgvf-nd .go{display:inline-block;padding:6px 0}
+.bgvf-search:focus-within{border-color:var(--r);box-shadow:0 0 0 3px rgba(215,25,32,.18)}
+.bgvf-cempty{border:1px dashed var(--ln);border-radius:10px;padding:16px;color:var(--mu);font-size:14px;margin:0}
+.bgvf-creset{margin-left:8px;border:1px solid var(--r);background:#fff;color:var(--r);border-radius:6px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+/* shell header (preview): container padding 0 làm .row của Bootstrap lệch -12px, tràn ngang */
+.custom-header-pc .header-stg>.container{padding-left:12px;padding-right:12px}
+/* cta */
+.bgvf-qc{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.bgvf-qc a{display:block;border:1px solid #e3e6ea;border-radius:10px;padding:12px 14px;color:inherit;text-decoration:none;background:#fff}.bgvf-qc a:hover{border-color:var(--r)}.bgvf-qc b{display:block;font-size:15px;margin-bottom:2px}.bgvf-qc span{font-size:13px;color:#5b6470}.bgvf-gcta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding:14px 16px;border:1px dashed #cfd4da;border-radius:10px}.bgvf-gcta p{margin:0;font-size:14px}.bgvf-gcta div{display:flex;gap:8px;flex-wrap:wrap}.bgvf-gcta a{padding:9px 14px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none}.bgvf-gcta .g1{background:var(--r);color:#fff}.bgvf-gcta .g2{border:1px solid var(--r);color:var(--r)}@media(max-width:768px){.bgvf-qc{grid-template-columns:1fr 1fr}.bgvf-gcta div,.bgvf-gcta a{width:100%;text-align:center}}
+.bgvf-cta{background:#12161c url(../theo-hang-xe/hinh/m-fortuner.webp) right 6% center/auto 120% no-repeat;border-radius:14px;color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
+.bgvf-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#12161c 45%,rgba(18,22,28,.7) 75%,rgba(18,22,28,.55))}
+.bgvf-cta>*{position:relative}
+.bgvf-cta h2{font-size:26px;font-weight:800;margin:4px 0 6px;line-height:1.25;max-width:520px}
+.bgvf-cta p{margin:0;color:#c9d0d8;font-size:14.5px}
+.bgvf-cta .bgvf-eb{color:#ff6b70}
+.bgvf-cbtn{display:flex;gap:10px;flex-wrap:wrap}
+.bgvf-b1,.bgvf-b2{display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:12px 22px;font-weight:700;font-size:15px}
+.bgvf-b1{background:var(--r);color:#fff!important}.bgvf-b1:hover{background:var(--rd)}
+.bgvf-b2{background:#fff;color:var(--ink)!important}
+@media(max-width:1100px){.bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 48px)/5);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}}
+@media(max-width:991px){.bgvf-hero .bght-in{grid-template-columns:1fr;min-height:0;padding-bottom:20px}.bgvf-art{max-width:600px;width:100%;margin:0 auto}.bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:23%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}.bgvf-empty{grid-row:1/3;grid-column:auto/span 3}.bgvf-need{grid-template-columns:1fr;gap:10px}.bgvf-nd .who{min-height:0}.bgvf-guides{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:42%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-guides::-webkit-scrollbar{display:none}.bgvf-guide{scroll-snap-align:start}.bgvf-why ul{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why li+li{border-left:0;padding-left:0}.bgvf-rail{grid-auto-columns:calc((100% - 16px)/2)}}
+@media(max-width:767px){
+.bght-sec{padding:22px 0}.bght-h2{font-size:22px}
+.bght-head{flex-wrap:wrap}
+.bgvf-hero .bght-in{grid-template-columns:1fr;min-height:0;padding-bottom:20px}
+.bgvf-art{order:3}
+.bgvf-trust{grid-template-columns:1fr 1fr;gap:6px 10px}.bgvf-trust li{font-size:12.5px}
+.bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:40%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px;scroll-padding:0 16px}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}.bgvf-m:hover{transform:none}.bgvf-m .im{padding:10px 12px}.bgvf-m .bd{padding:6px 10px 8px}.bgvf-m b{font-size:13.5px}.bgvf-m small{font-size:11px}.bgvf-empty{grid-row:1/3;grid-column:auto/span 2}
+.bgvf-tabs,.bgvf-cfr{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-chip{flex:none}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
+.bgvf-search{width:100%}
+.bgvf-rail{grid-auto-columns:84%;grid-template-rows:none}.bgvf-nd{padding:12px 14px}.bgvf-nd h3{font-size:16px}.bgvf-nd ul{font-size:13.5px}
+.bgvf-nav .bgvf-arr{display:none}
+.bgvf-why{padding:16px}.bgvf-why ul{grid-template-columns:1fr;gap:12px}
+.bgvf-guides{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory}
+.bgvf-guide{scroll-snap-align:start}
+.bgvf-cta{padding:22px 18px;background-image:none}.bgvf-cta h2{font-size:21px}.bgvf-cbtn,.bgvf-b1,.bgvf-b2{width:100%;justify-content:center}
+.bq-box{padding:14px}.bq-h{font-size:18px}.bf-list summary{font-size:14.5px}
+}
+</style>
+<style>@media(min-width:1101px){.bgvf-guides{grid-template-columns:repeat(4,minmax(0,1fr))}}</style>
+<style id="bgvf-v22fix">.bgvf-h1{font-size:clamp(28px,3.6vw,42px);line-height:1.15;max-width:760px}.bgvf-h1 .bgvf-hb{display:inline;font-size:1em;font-weight:800;color:#e31b2d;margin:0;letter-spacing:inherit}.bgvf-mtoggle{display:block;margin:14px auto 0;padding:8px 20px;border:1px solid var(--r);border-radius:999px;background:#fff;color:var(--r);font-weight:600;font-size:14px;cursor:pointer}.bgvf-mtoggle[hidden]{display:none}@media(min-width:1101px){.bgvf-m.bgvf-xh{display:none}}@media(max-width:1100px){.bgvf-mtoggle{display:none!important}}
+.bgvf [id]{scroll-margin-top:120px}@media(max-width:767px){.bgvf [id]{scroll-margin-top:84px}}.bgvf-jumpw{margin:10px 0 0}.bgvf-jump{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--r);color:#fff!important;font-weight:600;font-size:14px}.bgvf-wait{background:#f6f7f9;border-radius:10px;padding:10px 14px}.bgvf-empty .bgvf-ereset{margin-left:8px;border:1px solid var(--r);color:var(--r);background:#fff;border-radius:999px;padding:4px 12px;font-weight:600;cursor:pointer}</style>
+<div class="bght bgvf">
+<section class="bgvf-hero"><div class="bght-in">
+ <nav class="bgvf-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> / <a href="https://auto365.vn/nang-cap-anh-sang">Nâng cấp ánh sáng</a> / <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Bi gầm</a> / <span>Mazda</span></nav>
+ <div>
+  <span class="bgvf-eb">Nâng cấp ánh sáng</span>
+  <h1 class="bgvf-h1">Lắp bi gầm <span class="bgvf-hb">Mazda</span>: chọn đèn theo từng dòng xe</h1>
+  <p class="bgvf-lead">Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES, Titan) trên Mazda 2, Mazda 6, Mazda 626, CX-5 và CX-8; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.</p>
+  <p class="bgvf-jumpw"><a class="bgvf-jump" href="#dong-xe">Chọn dòng xe Mazda ↓</a></p>
+  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-11-10">10/11/2026</time></p>
+  <ul class="bgvf-trust">
+   <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
+   <li>Thi công tại 90+ chi nhánh</li><li>Kiểm tra tương thích trước khi lắp</li>
+  </ul>
+ </div>
+ <!-- hero-src: https://auto365.vn/uploads/images/news/mazda-cx-5-nang-cap-f10-new-2-0-1792981621.webp -->
+ <div class="bgvf-art"><img src="hinh/hero-mazda-bi-gam.webp" alt="Mazda CX-5 2.0L 2022 lắp bi gầm X-Light F10 2.0 New tại Auto365" width="1100" height="638" fetchpriority="high"></div>
+</div></section>
+
+<section class="bght-sec" id="dong-xe"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Chọn dòng xe Mazda</h2></div></div>
+ <div class="bgvf-bar">
+  <div class="bgvf-tabs" id="bgvf-tabs" role="tablist"></div>
+  <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe Mazda..." aria-label="Tìm dòng xe Mazda"></label>
+ </div>
+ <div class="bgvf-grid" id="bgvf-grid"></div>
+ <p class="bgvf-fn" id="bgvf-credit">Ảnh xe tham khảo (đã tách nền, chỉ để nhận diện dòng xe, Wikimedia Commons): Mazda 2 – <a href="https://commons.wikimedia.org/wiki/File:2020_Mazda_2_Sedan_100th_Anniversary_Edition.jpg" rel="noopener" target="_blank">Chanokchon</a>, CC BY-SA 4.0; Mazda 626 – <a href="https://commons.wikimedia.org/wiki/File:Mazda_626_GF_Front.jpg" rel="noopener" target="_blank">Dctchan at English Wikipedia
+
+(Original text: dctchan in Wikipedia)</a>, CC BY-SA 3.0; Mazda CX-3 – <a href="https://commons.wikimedia.org/wiki/File:2019_Mazda_CX-3_Touring_4WD_in_white,_front_left.jpg" rel="noopener" target="_blank">Mr.choppers</a>, CC BY-SA 3.0; Mazda CX-30 – <a href="https://commons.wikimedia.org/wiki/File:2021_Mazda_CX-30_SKYACTIV-G_front.jpg" rel="noopener" target="_blank">LuvsMG481</a>, CC BY-SA 4.0; Mazda BT-50 – <a href="https://commons.wikimedia.org/wiki/File:2022_Mazda_BT-50_3.0d_Turbo_4x4_(Chile)_front_view.jpg" rel="noopener" target="_blank">RL GNZLZ</a>, CC BY-SA 2.0.</p>
+ <div class="bgvf-gcta"><p>Không thấy dòng xe hoặc chưa chắc mẫu? Gửi đời xe để kỹ thuật viên kiểm tra tương thích.</p><div><a class="g1" href="#tu-van">Nhận tư vấn</a><a class="g2" href="tel:0365365911">Gọi 0365 365 911</a></div></div>
+</div></section>
+
+<section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Xe Mazda đã lắp bi gầm tại Auto365</h2></div><div class="bgvf-nav"><button type="button" class="bgvf-arr" data-dir="-1" aria-label="Trước">‹</button><button type="button" class="bgvf-arr" data-dir="1" aria-label="Sau">›</button></div></div>
+ <div class="bgvf-cf" id="bgvf-cf"></div>
+ <div class="bgvf-rail" id="bgvf-rail"></div>
+ <p class="bgvf-cempty" id="bgvf-cempty" hidden>Chưa có bài hồ sơ phù hợp với bộ lọc này — không có nghĩa là mẫu đèn không lắp được. <button type="button" class="bgvf-creset" id="bgvf-creset">Bỏ lọc</button></p>
+ <p class="bgvf-fn">* Cấu hình theo xe thực tế trong từng bài; xe khác cần kiểm tra tương thích trước khi lắp.</p>
+</div></section>
+
+<section class="bght-sec" style="padding-top:4px"><div class="bght-in">
+ <div class="bq-box">
+  <h2 class="bq-h">Xe Mazda lắp bi gầm cần lưu ý gì?</h2>
+  <p>Các dòng Mazda khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.</p>
+  <ul>
+   <li><b>Kích thước hốc đèn:</b> đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Cùng một dòng xe, hốc gầm có thể khác theo đời: CX-5 2021, 2022 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New), còn CX-5 2016 lắp X-Light F10 Turbo V2 lens 3.0 inch, nên mẫu lắp trong từng hồ sơ chỉ áp dụng cho đúng đời xe đó.</li>
+   <li><b>Nguồn điện:</b> kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ như Mazda 626 2002 hoặc Mazda 6 2016–2017 cần kiểm tra giắc và đèn gầm đang có; xe đời mới được đối chiếu đúng phiên bản trước khi chọn dây, giắc và phụ kiện.</li>
+   <li><b>Đường cắt cos:</b> cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.</li>
+  </ul>
+  <p>Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline <a href="tel:0365365911" style="color:var(--r);font-weight:600">0365 365 911</a> để được tư vấn.</p>
+  <p class="bgvf-wait"><b>Khi nào chưa cần nâng cấp:</b> nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.</p>
+  <details class="bgvf-needacc" id="theo-nhu-cau"><summary><h3 class="bgvf-needh">Gợi ý chọn bi gầm Mazda theo nhu cầu sử dụng</h3><p class="bght-sub">Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.</p></summary>
+ <div class="bgvf-need">
+  <article class="bgvf-nd"><h3>Sedan, hatchback đi phố</h3><p class="who">Mazda 2, Mazda 3, Mazda 6</p><div class="bd">
+   <ul><li>Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.</li><li>Xe đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.</li><li>Mỗi đời Mazda 2, Mazda 6 có hốc gầm khác nhau; xem đúng hồ sơ cùng đời xe.</li></ul>
+   <p class="done">Đã lắp: <a href="https://auto365.vn/mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k">Mazda 2 2019 – X-Light X3 Ultra</a> · <a href="https://auto365.vn/mazda-6-25l-2017-lap-bi-gam-gtr-g1-turbo-v2">Mazda 6 2017 – GTR G1 Turbo V2</a></p>
+   <a class="go" href="https://auto365.vn/bi-gam-mazda-6">Xem tư vấn bi gầm Mazda 6 →</a></div></article>
+  <article class="bgvf-nd"><h3>SUV gia đình, hay đi tỉnh</h3><p class="who">CX-3, CX-30, CX-5, CX-8</p><div class="bd">
+   <ul><li>Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.</li><li>Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.</li><li>CX-5 đời mới hốc gầm nhỏ, thường dùng mẫu lens 2.0 inch; cần đo đúng đời xe.</li></ul>
+   <p class="done">Đã lắp: <a href="https://auto365.vn/mazda-cx-5-20l-2022-nang-cap-bi-gam-x-light-f10-20-new">CX-5 2022 – X-Light F10 2.0 New</a> · <a href="https://auto365.vn/mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-20-gia-va-cau-hinh-thuc-te">CX-8 2021 – X-Light F10 Hyper 2.0</a></p>
+   <a class="go" href="https://auto365.vn/bi-gam-mazda-cx5">Xem tư vấn bi gầm CX-5 →</a></div></article>
+  <article class="bgvf-nd"><h3>Xe đời cũ, bán tải</h3><p class="who">Mazda 626, BT-50</p><div class="bd">
+   <ul><li>Xe đời cũ cần kiểm tra cụm đèn, giắc và đèn gầm đang có trước khi chọn mẫu.</li><li>Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.</li><li>Bán tải hay đi đường xấu nên kiểm tra độ kín giắc và cố định dây sau khi lắp.</li></ul>
+   <p class="done">Đã lắp: <a href="https://auto365.vn/mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k">Mazda 626 2002 – X-Light F10 Turbo V2</a></p>
+</div></article>
+ </div>
+ <p class="bgvf-nnote">Giá và danh sách mẫu lắp được xem ở bài tư vấn từng dòng xe; tổng chi phí báo sau khi kỹ thuật viên kiểm tra xe.</p>
+ </details>
+ </div>
+</div></section>
+
+
+
+
+
+
+
+
+<style>.bgvf-tw{overflow-x:auto;margin-top:12px;border:1px solid var(--ln);border-radius:10px;background:#fff}.bgvf-tb{width:100%;border-collapse:collapse;font-size:14px}.bgvf-tb th,.bgvf-tb td{padding:9px 12px;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}.bgvf-tb th{background:#f6f7f9;font-weight:600;white-space:nowrap}.bgvf-tb tr:last-child td{border-bottom:0}.bgvf-tb a{color:var(--r);white-space:nowrap}.bgvf-tbacc{margin-top:10px;border:1px solid var(--ln);border-radius:10px;background:#fff}.bgvf-tbacc>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;font-weight:600;color:var(--r)}.bgvf-tbacc>summary::-webkit-details-marker{display:none}.bgvf-tbacc>summary::after{content:"+";font-size:20px;line-height:1}.bgvf-tbacc[open]>summary::after{content:"−"}.bgvf-tbacc .bght-sub{padding:0 16px}.bgvf-tbacc .bgvf-tw{margin:10px 16px 16px}
+@media(max-width:767px){.bgvf-tbacc .bgvf-tw{border:0;background:none;margin:8px 12px 12px}.bgvf-tb thead{display:none}.bgvf-tb,.bgvf-tb tbody,.bgvf-tb tr,.bgvf-tb td{display:block;width:100%}.bgvf-tb tr{border:1px solid var(--ln);border-radius:10px;padding:8px 12px;margin-bottom:8px;background:#fff}.bgvf-tb td{border:0;padding:3px 0;display:flex;gap:10px}.bgvf-tb td::before{content:attr(data-l);flex:0 0 74px;color:var(--mu);font-size:13px}.bgvf-tb td:first-child{display:none}}</style>
+
+<!-- @why -->
+
+<!-- @branch -->
+
+<section class="bght-sec" id="cam-nang" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Cẩm nang đèn bi gầm</h2></div><a class="bght-more" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to">Xem tất cả</a></div>
+ <div class="bgvf-guides" id="bgvf-guides"></div>
+</div></section>
+
+<section class="bght-sec bght-faq" id="hoi-dap" style="padding-top:4px"><div class="bght-in">
+ <h2 class="bght-h2" style="margin-bottom:14px">Câu hỏi thường gặp về bi gầm Mazda</h2>
+ <div class="bf-list">
+  <details><summary>Dòng Mazda nào đã có hồ sơ lắp bi gầm thực tế tại Auto365?</summary><p>Các dòng đã có hồ sơ lắp thực tế gồm Mazda 2, Mazda 6, Mazda 626, CX-5 và CX-8; Mazda 6, CX-5 và CX-8 có bài tư vấn riêng. Các dòng Mazda 3, CX-3, CX-30 và BT-50 hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.</p></details>
+  <details><summary>Xe Mazda nên chọn bi gầm 2.0 hay 3.0 inch?</summary><p>Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Mazda CX-5 2021, 2022 và CX-8 2021 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New); Mazda 2 2019, Mazda 6 2017 và CX-5 2016 lắp mẫu lens 3.0 inch (X-Light X3 Ultra, GTR G1 Turbo V2, X-Light F10 Turbo V2). Cùng dòng xe nhưng khác đời vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.</p></details>
+  <details><summary>Một dòng Mazda có nhiều đời thì chọn bi gầm thế nào?</summary><p>Mỗi đời xe có thể khác hốc đèn và điểm cấp nguồn. Auto365 đã có hồ sơ CX-5 2016, 2021, 2022 và Mazda 6 2016, 2017; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.</p></details>
+  <details><summary>Nâng cấp đèn bi gầm chính hãng cho Mazda ở TP. Hồ Chí Minh ở đâu?</summary><p>Chủ xe Mazda tại TP. Hồ Chí Minh có thể đến Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, Phường Hiệp Bình (khu vực Thủ Đức cũ), thuận tiện di chuyển từ trung tâm và các khu vực lân cận (<a href="https://maps.app.goo.gl/jretwrtDBxQQJmRH6" rel="noopener" target="_blank">xem bản đồ</a>). Auto365 là đại lý chính hãng X-Light, GTR, AES; kỹ thuật viên chuyên thi công đèn ô tô kiểm tra hốc đèn, hệ điện theo đời xe và cân chỉnh đường cắt cos trên bảng test sau khi lắp. Chủ xe nên gọi 0365 365 911 để đặt lịch trước; cấu hình và chi phí chốt sau khi kiểm tra xe.</p></details>
+  <details><summary>Ở tỉnh khác thì lắp bi gầm Mazda tại đâu?</summary><p>Chủ xe có thể tìm điểm Auto365 theo tỉnh/thành trong danh bạ hệ thống và liên hệ trước để xác nhận lịch tiếp nhận. Khi tư vấn, cần cung cấp dòng xe, đời/phiên bản và nhu cầu sử dụng. Cấu hình đèn, phụ kiện và tổng chi phí được xác nhận sau bước kiểm tra xe tại điểm phù hợp.</p></details>
+  <details><summary>Xe chưa có hồ sơ lắp thì cần chuẩn bị thông tin gì?</summary><p>Chủ xe chuẩn bị dòng xe, đời và phiên bản, nhu cầu sử dụng (đi phố, chạy dịch vụ hay đi tỉnh) và ảnh hốc đèn gầm nếu có. Kỹ thuật viên dựa vào các thông tin này để tư vấn sơ bộ; cấu hình và chi phí chỉ chốt sau khi kiểm tra xe.</p></details>
+  <details><summary>Lắp bi gầm có bị lỗi khi đăng kiểm không?</summary><p>Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos rõ; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói. Trước khi lắp, chủ xe nên cùng kỹ thuật viên đối chiếu quy định hiện hành và cấu hình xe thực tế.</p></details>
+  <details><summary>Giá lắp bi gầm Mazda gồm những khoản nào?</summary><p>Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.</p></details>
+  <details><summary>Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?</summary><p>Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Khi nhận xe, chủ xe đối chiếu số seri đèn trên phiếu bàn giao, kích hoạt và tra cứu bảo hành điện tử theo hướng dẫn của chi nhánh; điều kiện bảo hành áp dụng theo từng mẫu. Cần hỗ trợ, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp.</p></details>
+ </div>
+ <p class="bgvf-disc">Nội dung bài viết mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công.</p>
+</div></section>
+
+<section class="bght-sec" id="tu-van-ngay" style="padding-top:4px"><div class="bght-in"><div class="bgvf-cta">
+ <div><h2>Kiểm tra cấu hình bi gầm phù hợp cho dòng xe Mazda của bạn</h2><p>Kỹ thuật viên Auto365 tư vấn theo xe và nhu cầu sử dụng. Nên gọi trước để xác nhận cơ sở và lịch lắp; cấu hình, chi phí chốt sau khi kiểm tra xe.</p></div>
+ <div class="bgvf-cbtn"><a class="bgvf-b1" href="#tu-van">Nhận tư vấn ngay</a><a class="bgvf-b2" href="tel:0365365911">Gọi 0365 365 911</a></div>
+</div></div></section>
+
+<!-- @lead -->
+</div>
+<aside class="bgvf-ic-chk" id="bgvf-internal-check" hidden aria-label="Kiểm tra nội bộ (chỉ preview)"><div class="bght-in"><b>Kiểm tra nội bộ — chỉ hiện trên preview, xoá khi lên production</b><p><b>Trạng thái: BẢN DỰNG 10/11/2026 — chờ anh Nguyễn Quang Đạo duyệt nội dung kỹ thuật.</b> Dựng theo khung hub Mazda; 12 case lấy từ bài đã đăng trên auto365.vn (sitemap 10/11), hãng đèn: X-Light, GTR, AES, Titan. Thẻ dòng xe dùng ảnh xe tách nền (bộ ảnh theo-hang-xe hoặc Wikimedia, ghi công dưới lưới xe). Chưa làm được trên preview: lead → CRM, robots/canonical production, GSC/CWV.</p><p>Hồ sơ (bản HTML cùng build, <a href="/bi-gam/mazda/ho-so/" target="_blank" rel="noopener">mục lục</a>).</p></div></aside>
+<script id="bgvf-internal-check-js">(function(){var h=location.hostname;if(/pages.dev$|^localhost$|^127.0.0.1$/.test(h)){["bgvf-internal-check","bgvf-u3-check"].forEach(function(i){var x=document.getElementById(i);if(x)x.hidden=false})}})();</script>
+<script>
+(function(){
+var H='../theo-hang-xe/hinh/m-',P='https://auto365.vn/';
+// [tên, nhóm, ảnh, link bài tư vấn/hồ sơ trên auto365.vn hoặc '']
+var M=[['Mazda 2','sedan','hinh/m-mazda-2.webp',P+'mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k'],
+['Mazda 3','sedan',H+'mazda3.webp',''],
+['Mazda 6','sedan',H+'mazda6.webp',P+'bi-gam-mazda-6'],
+['Mazda 626','sedan','hinh/m-mazda-626.webp',P+'mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k'],
+['CX-3','suv','hinh/m-cx-3.webp',''],
+['CX-30','suv','hinh/m-cx-30.webp',''],
+['CX-5','suv',H+'cx-5.webp',P+'bi-gam-mazda-cx5'],
+['CX-8','suv',H+'cx-8.webp',P+'bi-gam-mazda-cx-8'],
+['BT-50','pickup','hinh/m-bt-50.webp','']];
+var T=[['all','Tất cả'],['sedan','Sedan/Hatchback'],['suv','SUV'],['pickup','Bán tải']];
+// [dòng xe, tiêu đề bài, slug bài trên auto365.vn, ảnh, ngày] — bài đã đăng trên auto365.vn
+var C=[["Mazda 2","Mazda 2 1.5L AT 2019 lắp bi gầm X-Light X3 Ultra 4300K","mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k","https://auto365.vn/uploads/images/news/mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k-1793936578.webp","2026-11-06"],
+["Mazda 626","Mazda 626 2002 2.0L lắp bi gầm F10 Turbo V2 4300K","mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k","https://auto365.vn/uploads/images/news/mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k.webp","2026-11-06"],
+["Mazda 6","Mazda 6 2016 2.5L lắp bi LED V30 Ultra kết hợp bi gầm SV 3.0 Max","mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max","https://auto365.vn/uploads/images/news/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max-1793758218.webp","2026-11-04"],
+["CX-5","Mazda CX-5 2.0L 2022 nâng cấp bi gầm X-Light F10 2.0 New","mazda-cx-5-20l-2022-nang-cap-bi-gam-x-light-f10-20-new","https://auto365.vn/uploads/images/news/mazda-cx-5-nang-cap-f10-new-2-0-1792981621.webp","2026-10-26"],
+["CX-5","Mazda CX-5 2021 lắp bi gầm X-Light F10 Hyper 2.0","mazda-cx-5-2021-lap-bi-gam-x-light-f10-hyper-2-0","https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-5-2021-lap-bi-gam-x-light-f10-hyper-2-0-img_6aa25c321a93d5.37614977.webp","2026-09-10"],
+["Mazda 6","Mazda 6 2.5L 2017 lắp bi gầm GTR G1 Turbo V2 Cos 4800K/Pha 4300K","mazda-6-25l-2017-lap-bi-gam-gtr-g1-turbo-v2","https://auto365.vn/uploads/images/news/auto365vn-mazda-6-25l-2017-lap-bi-gam-gtr-g1-turbo-v2-9-img_6a92616ba975f9.23446474.webp","2026-08-29"],
+["CX-5","Mazda CX-5 2016 2.0L 2WD lắp bi gầm X-Light F10 Turbo V2 4300K","mazda-cx-5-2016-lap-bi-gam-x-light-f10-turbo-v2-4300k","https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-5-2016-lap-bi-gam-x-light-f10-turbo-v2-img_6a82c5d96d41d5.47633457.jpg.webp","2026-08-17"],
+["CX-8","Mazda CX-8 2021 Luxury lắp bi gầm X-Light F10 Hyper 2.0","mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-20-gia-va-cau-hinh-thuc-te","https://auto365.vn/uploads/images/news/auto365vn-mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-2-0-12-img_6a76cff17c50b9.57221397.jpg.webp","2026-08-08"],
+["Mazda 6","Mazda 6 lắp bi gầm X-Light F10 Turbo V2 4300K","mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k","https://auto365.vn/uploads/images/news/auto365_20260706_132416_6a4b4a106e53d.jpg.webp","2026-07-06"],
+["Mazda 2","Mazda 2 nâng cấp bi gầm Titan 301","mazda-2-nang-cap-bi-gam-titan-301","https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T9/mazda-2-do-den-301/mazda-2-do-den-titan-301.jpg.webp","2024-09-16"],
+["CX-5","Mazda CX-5 lắp bi laser X-Light X6 Pro kết hợp bi gầm F10 2.0","mazda-cx-5-do-den-bi-led-xlight-x6-pro-va-bi-gam-f10-2-0-2024","https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/mazda-cx-5-do-den-bi-led-xlight-x6-pro-va-bi-gam-f10-2-0-2024/mazda-cx-5-do-den-bi-led-xlight-x6-pro-va-bi-gam-f10-2-0-2024.jpg.webp","2024-08-17"],
+["CX-5","Mazda CX-5 độ đèn bi gầm X-Light F10 2.0","mazda-do-den-bi-gam-xlight-f10-20-2024","https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T8/mazda-do-den-bi-gam-xlight-f10-20-2024/mazda-do-den-bi-gam-xlight-f10-20-2024-11.jpg.webp","2024-08-02"]];
+// cẩm nang đèn bi gầm (kiến thức chung, không lặp bài tư vấn dòng xe đã gắn ở thẻ dòng xe): [tiêu đề, slug, ảnh, ngày, nhãn]
+var G=[
+['Cách chăm sóc mặt kính đèn pha ô tô hạn chế xước, ố vàng và rạn nứt','cach-cham-soc-mat-kinh-den-pha-o-to','https://auto365.vn/uploads/images/news/auto365vn-cham-soc-mat-kinh-den-pha-o-to-img_6a8d3766dcece8.04026461.webp','2026-08-25','Bảo dưỡng'],
+['Đèn gầm ô tô giảm sáng khi chạy lâu: Có do tản nhiệt?','den-gam-o-to-giam-sang-sau-khi-chay-lau','https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-giam-sang-khi-chay-lau-img_6a9bd9d60b2455.72713640.webp','2026-09-05','Tản nhiệt'],
+['Hai bên đèn ô tô sáng không đều: Nguyên nhân, cách kiểm tra','hai-ben-den-o-to-sang-khong-deu','https://auto365.vn/uploads/images/news/auto365vn-hai-ben-den-o-to-sang-khong-deu-img_6a94e3dc7a3105.44763580.webp','2026-08-31','Kiểm tra'],
+['Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra','den-gam-o-to-sang-yeu','https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-sang-yeu-img_6a8951b97ac488.13455452.jpg.webp','2026-08-22','Kiểm tra'],
+['AES SV 3.0 Pro 4800K phù hợp với nhóm tài xế nào?','bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao-img_6a83e40489d5b2.17476163.jpg.webp','2026-08-18','Chọn mẫu đèn'],
+['Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?','hoc-den-gam-nho-nen-chon-bi-gam-nao','https://auto365.vn/uploads/images/news/auto365vn-chon-bi-gam-2-0-inch-nao-img_6a7ed4cea92812.75790267.jpg.webp','2026-08-14','Hốc đèn'],
+['Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?','bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa-img_6a6720427ef082.00335126.jpg.webp','2026-07-27','Vùng sáng'],
+['Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ','bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-x-light-f10-2-0-new-phu-hop-xe-naojpg-img_6a477c50c0daa2.92602862_.jpg.webp','2026-07-03','Hốc đèn']];
+(function(){var NEW=['CX-5','Mazda 2','CX-8','Mazda 3','CX-3','CX-30','BT-50'];var n=function(x){return C.filter(function(c){return c[0]===x[0]}).length},w=function(x){var nw=NEW.indexOf(x[0])>=0;return n(x)>0?(nw?0:1):(nw?2:3)},o=M.slice();M.sort(function(a,b){return w(a)-w(b)||n(b)-n(a)||(NEW.indexOf(a[0])<0?99:NEW.indexOf(a[0]))-(NEW.indexOf(b[0])<0?99:NEW.indexOf(b[0]))||o.indexOf(a)-o.indexOf(b)})})();
+var mz=function(x){return esc(/^Mazda /.test(x)?x:'Mazda '+x)};var $=function(id){return document.getElementById(id)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};
+var nM=M.length;
+$('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
+$('bgvf-grid').innerHTML=M.map(function(m){
+ var im=m[2]?'<img src="'+m[2]+'" alt="Lắp bi gầm '+mz(m[0])+'" loading="lazy" width="640" height="400"'+(/^http/.test(m[2])?' style="object-fit:cover;mix-blend-mode:normal;border-radius:6px"':'')+'>':'<em>'+mz(m[0])+'</em>';
+ var adv=/\/bi-gam-mazda-/.test(m[3]);var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?(adv?(C.some(function(c){return c[0]===m[0]})?'Xem tư vấn + xe đã lắp':'Xem cấu hình và giá tham khảo'):'Xem xe đã lắp'):'Tư vấn cấu hình')+'</small></b><span class="go">→</span></span>';
+ return m[3]?'<a class="bgvf-m" title="Lắp bi gầm '+mz(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">'+(adv?'Có tư vấn':'Có hồ sơ')+'</span><span class="im">'+im+'</span>'+bd+'</a>'
+  :'<a class="bgvf-m" title="Lắp bi gầm '+mz(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="'+mz(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
+}).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.<button type="button" class="bgvf-ereset">Xoá tìm kiếm</button></p>';
+var fmt=function(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]};
+var brand=function(c){return /GTR/.test(c[1])?'GTR':/AES/.test(c[1])?'AES':/Titan(?!ium)/.test(c[1])?'Titan':'X-Light'};
+var cm=[],cb=[];C.forEach(function(c){if(cm.indexOf(c[0])<0)cm.push(c[0]);if(cb.indexOf(brand(c))<0)cb.push(brand(c))});
+cm.sort();cb.sort();
+$('bgvf-cf').innerHTML='<div class="bgvf-cfr" data-k="m" role="group" aria-label="Lọc theo dòng xe"><span class="bgvf-cl">Dòng xe:</span><button type="button" class="bgvf-chip on" aria-pressed="true" data-v="">Tất cả</button>'+cm.map(function(m){return '<button type="button" class="bgvf-chip" aria-pressed="false" data-v="'+esc(m)+'">'+esc(m)+'</button>'}).join('')+'</div><div class="bgvf-cfr" data-k="b" role="group" aria-label="Lọc theo hãng đèn"><span class="bgvf-cl">Hãng đèn:</span><button type="button" class="bgvf-chip on" aria-pressed="true" data-v="">Tất cả</button>'+cb.map(function(b){return '<button type="button" class="bgvf-chip" aria-pressed="false" data-v="'+b+'">'+b+'</button>'}).join('')+'</div>';
+$('bgvf-rail').innerHTML=C.map(function(c){return '<a class="bgvf-case" data-m="'+esc(c[0])+'" data-b="'+brand(c)+'" href="https://auto365.vn/'+c[2]+'"><span class="im"><img src="'+c[3]+'" alt="'+esc(c[1])+'" loading="lazy" width="800" height="450"><span class="tag">✓ Bi gầm</span></span><span class="bd"><h3>'+mz(c[0])+'</h3><p>'+esc(c[1])+'</p><span class="ft"><time datetime="'+c[4]+'">'+fmt(c[4])+'</time><em>Xem chi tiết lắp đặt →</em></span></span></a>'}).join('');
+$('bgvf-guides').innerHTML=G.map(function(g){return '<a class="bgvf-guide" href="https://auto365.vn/'+g[1]+'"><span class="im"><img src="'+g[2]+'" alt="'+esc(g[0])+'" loading="lazy" width="800" height="450"></span><span class="bd"><span class="mt"><span class="lb">'+esc(g[4])+'</span><time datetime="'+g[3]+'">'+fmt(g[3])+'</time></span><span class="rw"><h3>'+esc(g[0])+'</h3><i aria-hidden="true">→</i></span></span></a>'}).join('');
+// lọc
+var k='all';
+function apply(){var nz=function(x){return String(x||'').toLowerCase().replace(/mazda/g,'').replace(/[^a-z0-9]/g,'')};var q=nz($('bgvf-q').value),n=0;
+ [].forEach.call(document.querySelectorAll('.bgvf-m'),function(a){var ok=(k==='all'||a.getAttribute('data-g')===k)&&(!q||nz(a.getAttribute('data-n')).indexOf(q)>=0);a.hidden=!ok;if(ok)n++});
+ document.querySelector('.bgvf-empty').hidden=n>0}
+$('bgvf-tabs').addEventListener('click',function(e){var b=e.target.closest('.bgvf-tab');if(!b)return;k=b.getAttribute('data-k');[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});apply();$('bgvf-grid').scrollLeft=0});
+$('bgvf-q').addEventListener('input',apply);
+(function(){var ex=false,L=12,g=$('bgvf-grid'),mb=document.createElement('button');mb.type='button';mb.className='bgvf-mtoggle';mb.setAttribute('aria-controls','bgvf-grid');g.parentNode.insertBefore(mb,g.nextSibling);
+function lim(){var q=$('bgvf-q').value.trim(),v=[].filter.call(document.querySelectorAll('.bgvf-m'),function(a){return !a.hidden});v.forEach(function(a,i){a.classList.toggle('bgvf-xh',!ex&&!q&&i>=L)});var x=q?0:v.length-L;mb.hidden=x<=0;mb.textContent=ex?'Thu gọn':'Xem thêm '+x+' dòng xe';mb.setAttribute('aria-expanded',ex?'true':'false')}
+mb.addEventListener('click',function(e){e.stopPropagation();ex=!ex;lim();if(!ex)g.scrollIntoView({block:'nearest'})});$('bgvf-q').addEventListener('input',lim);$('bgvf-tabs').addEventListener('click',function(){setTimeout(lim)});document.addEventListener('click',function(e){if(e.target.closest('.bgvf-ereset'))setTimeout(lim)});lim()})();
+
+document.addEventListener('click',function(e){if(e.target.closest('.bgvf-ereset')){$('bgvf-q').value='';var t0=document.querySelector('.bgvf-tab');if(t0)t0.click();apply();$('bgvf-q').focus()}var o=e.target.closest('[data-open-tb]');if(o){var d=document.querySelector('#bang-tra details');if(d)d.open=true}});
+$('bgvf-creset').addEventListener('click',function(){var all=document.querySelectorAll('.bgvf-cfr .bgvf-chip[data-v=""]');[].forEach.call(all,function(b){b.click()});if(all[0])all[0].focus()});
+$('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});var nVis=document.querySelectorAll('.bgvf-case:not([hidden])').length;$('bgvf-rail').classList.toggle('one',nVis<=4);$('bgvf-rail').hidden=!nVis;$('bgvf-cempty').hidden=!!nVis;$('bgvf-rail').scrollLeft=0});
+[].forEach.call(document.querySelectorAll('.bgvf-arr'),function(b){b.addEventListener('click',function(){var r=$('bgvf-rail');r.scrollBy({left:(+b.getAttribute('data-dir'))*r.clientWidth*0.9,behavior:'smooth'})})});
+// thẻ dòng xe chưa có hồ sơ → điền sẵn dòng xe vào form tư vấn
+document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car');if(i)i.value=a.getAttribute('data-car')});
+})();
+</script>
