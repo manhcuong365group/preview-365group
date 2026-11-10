@@ -19,13 +19,13 @@
 | S2 | On-page | 9,5/10 | 1 H1 tên chuẩn, meta, AutoRepair + FAQPage + WebPage schema |
 | S3 | Liên kết, triển khai | 9,6/10 | Link dịch vụ trỏ auto365.vn (camera → danh mục chung, Bi gầm → /nang-cap-anh-sang-bi-gam, Phụ kiện xe điện kiểm 200); H2 case "Xe thi công thực tế tại Auto365.vn – Trụ Sở Chính"; route production làm lúc go-live (REL-01, không trừ trên preview) |
 | | **SEO** | **28,7/30** | Qua ngưỡng 28,5 |
-| G1 | Trả lời rõ | 9,4/10 | FAQ địa phương, mục Đường đến (địa chỉ, giờ, hotline, vị trí) |
-| G2 | Lập luận, giới hạn | 9,4/10 | Nêu rõ kiểm tra xe và báo giá trước khi thi công |
+| G1 | Trả lời rõ | 9,6/10 | 8 FAQ (thêm thời gian dán phim 2–4 giờ / PPF theo phạm vi, khách tỉnh về trong ngày — nguồn trang phim-3m-hcm và ppf-o-to đã duyệt), mục Đường đến |
+| G2 | Lập luận, giới hạn | 9,6/10 | Khối "Khi nào chưa cần làm?" cho 5 nhóm dịch vụ cuối bài; báo giá trước khi thi công |
 | G3 | Nguồn | 5/5 | Byline + schema kiểm duyệt anh Đạo; case link bài gốc; báo chí dẫn nguồn |
-| | **GEO** | **23,8/25** | Qua ngưỡng 23,75 |
+| | **GEO** | **24,2/25** | Qua ngưỡng 23,75 |
 | U1 | Đa thiết bị | 5/5 | 375 px không tràn ngang; menu mục lục cuộn ngang mobile; danh mục dịch vụ mở sẵn; nhãn case 11px; 3 nút Đường đến khác màu (Maps viền đỏ, Zalo xanh, tư vấn xám) |
 | U2 | Form / lead | 5/5 | Thêm nút "Nhận tư vấn" ở Đường đến; validate SĐT, chống gửi 2 lần, timeout 15 giây; chủ trang xác nhận gửi thành công (R4) |
 | U3 | Bàn giao | 5/5 | Phiếu U3 V2.2 R4 PASS 10/11/2026 |
-| | **Tổng** | **≈95,8/100** | Qua 3 ngưỡng |
+| | **Tổng** | **≈96,2/100** | Qua 3 ngưỡng |
 
 Còn lại lúc go-live: REL-01..04 (xem [04](04_Phieu_duyet_Tru_So_Chinh.md)).
