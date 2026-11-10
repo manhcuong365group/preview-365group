@@ -71,6 +71,21 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-model[aria-pressed=true]:after{content:"✓";position:absolute;top:6px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;line-height:20px}
 .vf-grp{margin-top:14px;font-size:14px;color:var(--mut)}.vf-grp b{color:var(--ink)}
 /* packages */
+.vf-ptabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:12px;scrollbar-width:none}
+.vf-ptabs button{flex:1 0 auto;border:1px solid var(--line);background:#fff;border-radius:8px;padding:10px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+.vf-ptabs button span{color:var(--red)}
+.vf-ptabs button[aria-selected=true]{background:var(--red);border-color:var(--red);color:#fff}.vf-ptabs button[aria-selected=true] span{color:#fff}
+.vf-pp{display:grid;grid-template-columns:260px 1fr 1fr auto;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
+.vf-pp img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px}
+.vf-pp h3{margin:0 0 6px;font-size:22px}.vf-pp h3 span{color:var(--red)}
+.vf-pp p{margin:0 0 10px;color:var(--mut);font-size:14px}
+.vf-pp ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
+.vf-pp li:before{content:"✓";color:var(--red);font-weight:800;margin-right:8px}
+.vf-pp__p{font-size:13px;color:var(--mut)}.vf-pp__p b{display:block;color:var(--red);font-size:24px}
+.vf-pp__a{display:flex;flex-direction:column;gap:8px;min-width:170px}
+.vf-pp__a a.vf-btn{border-color:var(--red);color:var(--red)}
+@media(max-width:960px){.vf-pp{grid-template-columns:200px 1fr}.vf-pp__a{grid-column:1/-1;flex-direction:row}.vf-pp__a .vf-btn{flex:1}}
+@media(max-width:600px){.vf-pp{grid-template-columns:1fr;padding:14px;gap:12px}.vf-ptabs button{flex:0 0 auto;padding:8px 12px;font-size:13px}}
 .vf-pk{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .vf-pk .vf-card__img{aspect-ratio:auto;height:96px}
 .vf-pk .vf-card__b{padding:10px 12px 12px;gap:5px}
@@ -114,6 +129,17 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-case__t{font-size:14px;color:var(--mut)}.vf-case time{font-size:12px;color:var(--mut);margin-top:auto}
 .vf-case[hidden]{display:none}
 .vf-more{margin-top:14px;text-align:right}.vf-more a{color:var(--red);font-weight:700;text-decoration:none}
+.vf-gal{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.vf-gal figure{margin:0;position:relative;border-radius:10px;overflow:hidden}
+.vf-gal img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.vf-gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;background:linear-gradient(transparent,rgba(0,0,0,.7));color:#fff;font-size:13px;font-weight:600}
+.vf-vids{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.vf-vid{position:relative;border:0;padding:0;border-radius:10px;overflow:hidden;cursor:pointer;background:#000;aspect-ratio:16/9;font:inherit;text-align:left}
+.vf-vid img{width:100%;height:100%;object-fit:cover;opacity:.8}
+.vf-vid span{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:42px;border-radius:12px;background:var(--red);color:#fff;font-size:20px;display:grid;place-items:center}
+.vf-vid b{position:absolute;left:0;right:0;bottom:0;padding:24px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:#fff;font-size:14px}
+.vf-vid iframe{width:100%;height:100%;border:0}
+@media(max-width:600px){.vf-gal{grid-template-columns:1fr 1fr}.vf-vids{grid-template-columns:1fr}}
 /* why */
 .vf-why{background:var(--dark);color:#fff;border-radius:14px;padding:24px;display:grid;grid-template-columns:200px repeat(4,1fr);gap:20px;align-items:center}
 .vf-why h2{margin:0;font-size:24px;line-height:1.2}
@@ -174,7 +200,7 @@ img{max-width:100%;display:block}a{color:inherit}
   <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Kính lái xuyên sáng<br>41–57%</span></li>
   <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><span>Bảo hành điện tử<br>10 năm</span></li>
  </ul>
- <div class="vf-hero__cta"><a class="vf-btn vf-btn--red" href="#bao-gia">Nhận báo giá theo xe →</a><a class="vf-btn vf-btn--ghost" href="#xe-thuc-te">▶ Xem xe đã thi công</a></div>
+ <div class="vf-hero__cta"><a class="vf-btn vf-btn--red" href="#bao-gia">Nhận báo giá theo xe →</a><a class="vf-btn vf-btn--ghost" href="#hinh-anh">▶ Xem video thi công</a></div>
 </div></section>
 
 <section class="vf-sec" id="chon-xe"><div class="vf-wrap">
@@ -189,7 +215,7 @@ img{max-width:100%;display:block}a{color:inherit}
 <section class="vf-sec vf-sec--g" id="goi-phim"><div class="vf-wrap">
  <h2 class="vf-h2">6 gói phim cách nhiệt <em>3M</em> chính hãng cho VinFast</h2>
  <p class="vf-sub">Giá trọn xe theo bảng giá 3M áp dụng từ 06/2026, đã gồm VAT, phim và công thi công.</p>
- <div class="vf-pk" id="vf-pk"></div>
+ <div id="vf-pk"></div>
  <p class="vf-note">Thông số ghi trên thẻ là của mã phim kính lái trong gói. Xe có cửa sổ trời panorama (VF7, VF8…) hoặc cấu hình đặc biệt sẽ được báo giá chính xác theo xe.</p>
 </div></section>
 
@@ -234,6 +260,23 @@ img{max-width:100%;display:block}a{color:inherit}
   <a class="vf-case" data-m="VF3" href="https://auto365.vn/dan-phim-cach-nhiet-3m-ceramic-nr-vinfast-vf3" target="_blank" rel="noopener"><img src="hinh/xe/auto365vn-dan-phim-cach-nhiet-3m-ceramic-nr-cho-vinfast-vf3-.webp" alt="VinFast VF3 dán phim cách nhiệt 3M Ceramic NR" loading="lazy"><span class="vf-case__b"><span class="vf-case__xe">VinFast VF3</span><span class="vf-case__k">Ceramic NR</span><span class="vf-case__t">Dán phim cách nhiệt 3M Ceramic NR cho VinFast VF3</span><time datetime="2026-07-02">02/07/2026</time></span></a>
  </div>
  <p class="vf-more"><a href="https://auto365.vn/tin-tuc" target="_blank" rel="noopener">Xem thêm dự án thực tế →</a></p>
+</div></section>
+
+<section class="vf-sec" id="hinh-anh"><div class="vf-wrap">
+ <h2 class="vf-h2">Hình ảnh &amp; video <em>thi công</em></h2>
+ <p class="vf-sub">Xe VinFast tại 3M Pro Shop và video giới thiệu, đo kiểm phim 3M.</p>
+ <div class="vf-gal">
+  <figure><img src="hinh/pro-shop-vf8.webp" alt="VinFast VF8 dán phim cách nhiệt 3M tại 3M Pro Shop" loading="lazy"><figcaption>VinFast VF8 tại 3M Pro Shop</figcaption></figure>
+  <figure><img src="hinh/xe/vf6-cr-blk-ir.webp" alt="VinFast VF6 dán phim 3M CR BLK và Ceramic IR" loading="lazy"><figcaption>VinFast VF6</figcaption></figure>
+  <figure><img src="hinh/case-vf7.webp" alt="VinFast VF7 dán phim cách nhiệt 3M tại Auto365" loading="lazy"><figcaption>VinFast VF7</figcaption></figure>
+  <figure><img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công dán phim 3M trong khoang kín" loading="lazy"><figcaption>Thi công trong khoang kín</figcaption></figure>
+  <figure><img src="hinh/doi-ky-thuat-vien.webp" alt="Đội kỹ thuật viên dán phim 3M của Auto365" loading="lazy"><figcaption>Đội kỹ thuật viên</figcaption></figure>
+  <figure><img src="hinh/ewarranty-3m.webp" alt="Bảo hành điện tử 3M tra theo biển số" loading="lazy"><figcaption>Bảo hành điện tử 3M</figcaption></figure>
+ </div>
+ <div class="vf-vids">
+  <button type="button" class="vf-vid" data-yt="N-hSgRJJkVg"><img src="https://i.ytimg.com/vi/N-hSgRJJkVg/hqdefault.jpg" alt="" loading="lazy"><span>▶</span><b>So sánh 3 loại phim chống nóng 3M – tại sao giá khác nhau?</b></button>
+  <button type="button" class="vf-vid" data-yt="vAU-r8cXXZA"><img src="https://i.ytimg.com/vi/vAU-r8cXXZA/hqdefault.jpg" alt="" loading="lazy"><span>▶</span><b>Phim cách nhiệt 3M Ceramic NR – phản xạ nhiệt thế hệ mới</b></button>
+ </div>
 </div></section>
 
 <section class="vf-sec"><div class="vf-wrap">
@@ -287,7 +330,16 @@ img{max-width:100%;display:block}a{color:inherit}
  var GN=['Minicar','Sedan','SUV/MPV'],grid=document.getElementById('vf-pk'),fpk=document.getElementById('f-pk'),fcar=document.getElementById('f-car');
  PK.forEach(function(k){fpk.insertAdjacentHTML('beforeend','<option>3M '+k.n+'</option>')});
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
+ var cur=0;
  function render(g,m){
+  var k=PK[cur];
+  grid.innerHTML='<div class="vf-ptabs" role="tablist">'+PK.map(function(x,i){return '<button type="button" role="tab" data-i="'+i+'" aria-selected="'+(i===cur)+'"><span>3M</span> '+x.n+'</button>'}).join('')+'</div>'+
+  '<div class="vf-pp" role="tabpanel"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+'" width="960" height="640"><div><h3><span>3M</span> '+k.n+'</h3><p>'+k.c+'</p><div class="vf-pp__p">'+m+' trọn xe từ<b>'+vnd(k.p[g])+'</b></div></div><ul><li>Cản nhiệt kính lái '+k.s[0]+'</li><li>Xuyên sáng kính lái '+k.s[1]+'</li><li>Cản hồng ngoại '+k.s[2]+'</li><li>Bảo hành điện tử 10 năm</li></ul><div class="vf-pp__a"><button type="button" class="vf-btn vf-btn--red" data-pk="3M '+k.n+'">Nhận báo giá →</button><a class="vf-btn" href="'+k.u+'" target="_blank" rel="noopener">Xem chi tiết</a></div></div>';
+  last=[g,m];
+ }
+ var last;
+ grid.addEventListener('click',function(e){var t=e.target.closest('[data-i]');if(t){cur=+t.dataset.i;render(last[0],last[1]);grid.querySelector('[data-i="'+cur+'"]').focus()}});
+ function renderOld(g,m){
   grid.innerHTML=PK.map(function(k){return '<article class="vf-card"><div class="vf-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+'" loading="lazy" width="960" height="640">'+(k.b?'<span class="vf-card__badge">'+k.b+'</span>':'')+'</div><div class="vf-card__b"><h3><span>3M</span> '+k.n+'</h3><p class="vf-card__c">'+k.c+'</p><div class="vf-card__spec"><span><b>'+k.s[0]+'</b>Cản nhiệt</span><span><b>'+k.s[1]+'</b>Xuyên sáng</span><span><b>'+k.s[2]+'</b>Cản hồng ngoại</span></div><p class="vf-card__p">'+m+' trọn xe từ<br><b>'+vnd(k.p[g])+'</b></p><div class="vf-card__a"><button type="button" class="vf-btn vf-btn--red" data-pk="3M '+k.n+'">Báo giá →</button><a class="vf-btn" href="'+k.u+'" target="_blank" rel="noopener">Xem chi tiết →</a></div></div></article>'}).join('');
  }
  // [tên, mã case, nhóm giá 0/1/2, loại, ảnh] — nhóm giá tham khảo, KTV xác nhận theo xe
@@ -326,6 +378,7 @@ img{max-width:100%;display:block}a{color:inherit}
  models.forEach(function(b){b.addEventListener('click',function(){pick(b)})});
  pick(document.querySelector('.vf-model[aria-pressed=true]'));filt();
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;document.getElementById('bao-gia').scrollIntoView({behavior:'smooth'});setTimeout(function(){document.querySelector('#bao-gia [name=fullname]').focus({preventScroll:true})},500)});
+ document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
  // Lead form — chỉ báo thành công khi API trả {"success": true}
  var f=document.getElementById('bao-gia'),msg=f.querySelector('.vf-msg');
  function show(t,ok){msg.className='vf-msg '+(ok?'ok':'err');msg.textContent=t}
