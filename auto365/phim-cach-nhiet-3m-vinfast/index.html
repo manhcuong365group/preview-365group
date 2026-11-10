@@ -58,15 +58,28 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-search{border:1px solid var(--line);border-radius:8px;padding:9px 12px;font:inherit;font-size:14px;min-width:240px}
 .vf-model{border:1px solid var(--line);border-radius:10px;background:#fff;padding:0;text-align:left;cursor:pointer;font:inherit;position:relative;transition:.15s;overflow:hidden;display:flex;flex-direction:column}
 .vf-model:hover{box-shadow:0 6px 18px rgba(0,0,0,.08)}
-.vf-model img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:linear-gradient(#fff,#e9ecf0)}
-.vf-model span{padding:10px 12px;display:flex;flex-direction:column}
-.vf-model b{font-size:16px}.vf-model small{color:var(--mut);font-size:12px}
+#vf-models{grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px}
+.vf-model img{width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;background:linear-gradient(#fff,#e9ecf0)}
+.vf-model span{padding:6px 10px 8px;display:flex;flex-direction:column}
+.vf-model b{font-size:14px}.vf-model small{color:var(--mut);font-size:11px}
+.vf-model i{font-size:10px!important;padding:1px 6px!important;top:5px!important;left:5px!important}
 .vf-model[hidden]{display:none}
+.vf-model i{position:absolute;top:8px;left:8px;background:#18794e;color:#fff;font-style:normal;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px}
 .vf-model[aria-pressed=true]{border-color:var(--red);box-shadow:0 0 0 2px var(--red) inset}
 .vf-model[aria-pressed=true]:after{content:"✓";position:absolute;top:6px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;line-height:20px}
 .vf-grp{margin-top:14px;font-size:14px;color:var(--mut)}.vf-grp b{color:var(--ink)}
 /* packages */
-.vf-pk{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vf-pk{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.vf-pk .vf-card__img{aspect-ratio:auto;height:96px}
+.vf-pk .vf-card__b{padding:10px 12px 12px;gap:5px}
+.vf-pk .vf-card h3{font-size:15px;line-height:1.25}
+.vf-pk .vf-card__c{font-size:12px;line-height:1.4}
+.vf-pk .vf-card__spec{grid-template-columns:1fr;gap:2px;padding:6px 8px;text-align:left;font-size:11px}
+.vf-pk .vf-card__spec span{display:flex;justify-content:space-between;gap:4px}
+.vf-pk .vf-card__spec b{font-size:12px;order:2}
+.vf-pk .vf-card__p{font-size:11px;line-height:1.3}.vf-pk .vf-card__p b{font-size:17px}
+.vf-pk .vf-card__a{flex-direction:column;gap:6px}.vf-pk .vf-card__a .vf-btn{padding:7px 8px;font-size:13px}
+.vf-pk .vf-card__a a.vf-btn{border:0;padding:0;color:var(--red);font-size:12px}
 .vf-card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
 .vf-card__img{aspect-ratio:3/2;background:#eee;position:relative}.vf-card__img img{width:100%;height:100%;object-fit:cover}
 .vf-card__badge{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;font-size:12px;font-weight:700;padding:2px 8px;border-radius:4px}
@@ -125,7 +138,7 @@ img{max-width:100%;display:block}a{color:inherit}
 @media(max-width:960px){
  .vf-nav{display:none}.vf-top .vf-btn{margin-left:auto}
  .vf-models{grid-template-columns:repeat(4,1fr)}
- .vf-pk,.vf-cases{grid-template-columns:1fr 1fr}
+ .vf-cases{grid-template-columns:1fr 1fr}.vf-pk{grid-template-columns:repeat(3,1fr)}
  .vf-pos,.vf-two{grid-template-columns:1fr}
  .vf-why{grid-template-columns:1fr 1fr}.vf-why h2{grid-column:1/-1}
 }
@@ -134,9 +147,9 @@ img{max-width:100%;display:block}a{color:inherit}
  .vf-hero__in{padding-top:140px}
  .vf-ico{gap:14px}.vf-ico li{width:calc(50% - 7px)}
  .vf-hero__cta .vf-btn{flex:1}
- .vf-pk,.vf-cases{grid-template-columns:1fr}
+ .vf-cases{grid-template-columns:1fr}.vf-pk{grid-template-columns:1fr 1fr;gap:8px}
  .vf-steps{grid-template-columns:1fr 1fr}
- .vf-models{grid-template-columns:1fr 1fr;gap:8px}.vf-search{min-width:0;width:100%}.vf-model img{aspect-ratio:2/1}.vf-model span{padding:6px 10px}.vf-tabs button{padding:7px 10px;font-size:13px}
+ #vf-models{grid-template-columns:repeat(3,1fr);gap:6px}.vf-model span{padding:4px 6px 6px}.vf-model b{font-size:13px}.vf-model small{font-size:10px}.vf-search{min-width:0;width:100%}.vf-model img{aspect-ratio:2/1}.vf-model span{padding:6px 10px}.vf-tabs button{padding:7px 10px;font-size:13px}
  .vf-pos ul{grid-template-columns:1fr}
  .vf-float{left:12px}.vf-float a{flex:1;text-align:center}
 }
@@ -165,7 +178,7 @@ img{max-width:100%;display:block}a{color:inherit}
 <section class="vf-sec" id="chon-xe"><div class="vf-wrap">
  <h2 class="vf-h2">Chọn dòng xe <em>VinFast</em> của bạn</h2>
  <p class="vf-sub">Giá gói phim và các xe thực tế bên dưới sẽ lọc theo dòng xe bạn chọn.</p>
- <div class="vf-fbar"><div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe"><button type="button" data-t="all" aria-pressed="true">Tất cả (19)</button><button type="button" data-t="ev" aria-pressed="false">Xe điện (10)</button><button type="button" data-t="green" aria-pressed="false">Green / dịch vụ (5)</button><button type="button" data-t="old" aria-pressed="false">Xe xăng (4)</button></div><input class="vf-search" type="search" id="vf-q" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></div>
+ <div class="vf-fbar"><div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe"><button type="button" data-t="all" aria-pressed="true">Tất cả (19)</button><button type="button" data-t="ev" aria-pressed="false">Xe điện (10)</button><button type="button" data-t="green" aria-pressed="false">Green / dịch vụ (5)</button><button type="button" data-t="old" aria-pressed="false">Xe xăng (4)</button><button type="button" data-t="case" aria-pressed="false" id="vf-tab-case">Có ca thi công</button></div><input class="vf-search" type="search" id="vf-q" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></div>
  <div class="vf-models" id="vf-models" role="group" aria-label="Dòng xe VinFast"></div>
  <p class="vf-grp" id="vf-grp"></p>
 </div></section>
@@ -270,17 +283,19 @@ img{max-width:100%;display:block}a{color:inherit}
  PK.forEach(function(k){fpk.insertAdjacentHTML('beforeend','<option>3M '+k.n+'</option>')});
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  function render(g,m){
-  grid.innerHTML=PK.map(function(k){return '<article class="vf-card"><div class="vf-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+'" loading="lazy" width="960" height="640">'+(k.b?'<span class="vf-card__badge">'+k.b+'</span>':'')+'</div><div class="vf-card__b"><h3><span>3M</span> '+k.n+'</h3><p class="vf-card__c">'+k.c+'</p><div class="vf-card__spec"><span><b>'+k.s[0]+'</b>Cản nhiệt</span><span><b>'+k.s[1]+'</b>Xuyên sáng</span><span><b>'+k.s[2]+'</b>Cản hồng ngoại</span></div><p class="vf-card__p">'+m+' ('+GN[g]+') trọn xe từ<br><b>'+vnd(k.p[g])+'</b></p><div class="vf-card__a"><a class="vf-btn" href="'+k.u+'" target="_blank" rel="noopener">Xem chi tiết</a><button type="button" class="vf-btn vf-btn--red" data-pk="3M '+k.n+'">Báo giá →</button></div></div></article>'}).join('');
+  grid.innerHTML=PK.map(function(k){return '<article class="vf-card"><div class="vf-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+'" loading="lazy" width="960" height="640">'+(k.b?'<span class="vf-card__badge">'+k.b+'</span>':'')+'</div><div class="vf-card__b"><h3><span>3M</span> '+k.n+'</h3><p class="vf-card__c">'+k.c+'</p><div class="vf-card__spec"><span><b>'+k.s[0]+'</b>Cản nhiệt</span><span><b>'+k.s[1]+'</b>Xuyên sáng</span><span><b>'+k.s[2]+'</b>Cản hồng ngoại</span></div><p class="vf-card__p">'+m+' trọn xe từ<br><b>'+vnd(k.p[g])+'</b></p><div class="vf-card__a"><button type="button" class="vf-btn vf-btn--red" data-pk="3M '+k.n+'">Báo giá →</button><a class="vf-btn" href="'+k.u+'" target="_blank" rel="noopener">Xem chi tiết →</a></div></div></article>'}).join('');
  }
  // [tên, mã case, nhóm giá 0/1/2, loại, ảnh] — nhóm giá tham khảo, KTV xác nhận theo xe
  var CARS=[['VF 2','VF2',0,'ev','m-vf2.webp'],['VF 3','VF3',0,'ev','m-vf3.webp'],['VF 5','VF5',1,'ev','m-vf5.webp'],['VF 6','VF6',2,'ev','m-vf6.webp'],['VF 7','VF7',2,'ev','m-vf7.webp'],['VF 8','VF8',2,'ev','m-vf8.webp'],['VF 9','VF9',2,'ev','m-vf9.webp'],['VF MPV 7','MPV7',2,'ev','m-vf-mpv-7.webp'],['VF Wild','Wild',2,'ev','m-vf-wild.webp'],['VF e34','e34',2,'ev','xe-vinfast-vfe34.jpg'],
   ['Minio Green','Minio',0,'green','m-minio-green.webp'],['Herio Green','Herio',1,'green','m-herio-green.webp'],['Nerio Green','Nerio',2,'green','m-nerio-green.webp'],['Limo Green','Limo',2,'green','m-limo-green.webp'],['EC Van','ECVan',2,'green','m-ec-van.webp'],
   ['Fadil','Fadil',1,'old','xe-vinfast-fadil.webp'],['Lux A2.0','LuxA',1,'old','xe-vinfast-lux-a20.webp'],['Lux SA2.0','LuxSA',2,'old','xe-vinfast-lux-sa20.webp'],['President','President',2,'old','xe-vinfast-president.webp']];
  var mw=document.getElementById('vf-models');
- mw.innerHTML=CARS.map(function(c){return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" aria-pressed="'+(c[1]==='VF8')+'"><img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Nhóm giá '+GN[c[2]]+'</small></span></button>'}).join('');
+ var NC={};document.querySelectorAll('.vf-case').forEach(function(a){NC[a.dataset.m]=(NC[a.dataset.m]||0)+1});
+ document.getElementById('vf-tab-case').textContent='Có ca thi công ('+CARS.filter(function(c){return NC[c[1]]}).length+')';
+ mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Có '+n+' ca thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Nhóm giá '+GN[c[2]]+'</small></span></button>'}).join('');
  fcar.innerHTML=CARS.map(function(c){return '<option>VinFast '+c[0]+'</option>'}).join('')+'<option>VinFast khác</option>';
  var tab='all',qi=document.getElementById('vf-q'),tabs=document.querySelectorAll('.vf-tabs button');
- function filt(){var q=qi.value.trim().toLowerCase().replace(/\s/g,'');document.querySelectorAll('.vf-model').forEach(function(b){b.hidden=!((tab==='all'||b.dataset.t===tab)&&b.dataset.name.toLowerCase().replace(/\s/g,'').indexOf(q)>-1)})}
+ function filt(){var q=qi.value.trim().toLowerCase().replace(/\s/g,'');document.querySelectorAll('.vf-model').forEach(function(b){b.hidden=!((tab==='all'||b.dataset.t===tab||(tab==='case'&&b.dataset.case==='1'))&&b.dataset.name.toLowerCase().replace(/\s/g,'').indexOf(q)>-1)})}
  tabs.forEach(function(t){t.addEventListener('click',function(){tab=t.dataset.t;tabs.forEach(function(x){x.setAttribute('aria-pressed',x===t)});filt()})});
  qi.addEventListener('input',filt);
  var models=document.querySelectorAll('.vf-model'),cases=document.querySelectorAll('.vf-case'),grp=document.getElementById('vf-grp'),sub=document.getElementById('vf-case-sub');
