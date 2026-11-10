@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (12), FAQPage |
-| SHA-256 index.html | `ca799b0cea37fa613cf30ce794e61b300283615d5ee7f109fe8b1ea436ebbd5f` |
-| SHA-256 content-src.html | `2bc9adb5c56697768b0f002929a22dd6c068206a00e2084adec918d627515a25` |
+| SHA-256 index.html | `600bd42e227f6a63f703408e11d9b379f1f331e4bc4efb8e2e49955aa78f089f` |
+| SHA-256 content-src.html | `933b81d3d9ce1891ae5b24c83788c862039ac7ac11ea72c8fa8dd1e9cbe55dae` |
 
 ## Sapo (kiêm trả lời nhanh)
 
