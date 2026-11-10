@@ -3,7 +3,7 @@
 | Mục | Giá trị |
 |---|---|
 | Trang | https://preview-365group.pages.dev/bi-gam/vinfast/herio-green/ |
-| SHA-256 index.html | `7b690a9fcf3c1530dfab117fb95b75c2da9268dc0c1e6220ce928c7555d46e54` |
+| SHA-256 index.html | `ab6ab9134bd5d096369a2fde6f94cbd8bf869e9867e5f2f8249e967717ec9a39` |
 | Người chấm | Team nội dung (tự chấm) — chưa phải điểm reviewer độc lập |
 | Kiểm duyệt kỹ thuật | anh Nguyễn Quang Đạo, xác nhận 17 mẫu 07/11/2026 |
 
