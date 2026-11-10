@@ -4,7 +4,7 @@ Bản 07/11/2026 · Chuẩn V1.9
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `9aacd8c8778bc51b8af6a496a9965f47f4b82ed3786be8aacb406ebbd82dabb2` |
+| SHA-256 index.html | `77526547c8cc4d279a7a8ed92ad1d5a414873db5df5419ffcf661739fafa8b4e` |
 | URL preview | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
 

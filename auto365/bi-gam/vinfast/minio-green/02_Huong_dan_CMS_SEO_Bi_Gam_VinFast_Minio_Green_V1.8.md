@@ -5,7 +5,7 @@
 | Trang | Bi gầm VinFast Minio Green (MODEL_GUIDE, tư vấn theo dòng xe) |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `87d22177f2b75d63947f3bb388d0b61dfed0d60386a3a5b65ab7bcff853e11b5` |
+| SHA-256 index.html | `d379570b8b878bfcc89f0df96a507edbc056cfdd12356f91e451ad730aa441b1` |
 | Dựng | 07/11/2026, từ khung trang VF9 |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 (bảng `XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md`) |
 | datePublished / dateModified / lastReviewed | 2026-11-07 / 2026-11-09 / 2026-11-07 |
