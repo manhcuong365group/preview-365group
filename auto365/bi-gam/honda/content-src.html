@@ -171,7 +171,8 @@
 }
 </style>
 <style>@media(min-width:1101px){.bgvf-guides{grid-template-columns:repeat(4,minmax(0,1fr))}}</style>
-<style id="bgvf-v22fix">.bgvf [id]{scroll-margin-top:120px}@media(max-width:767px){.bgvf [id]{scroll-margin-top:84px}}.bgvf-jumpw{margin:10px 0 0}.bgvf-jump{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--r);color:#fff!important;font-weight:600;font-size:14px}.bgvf-wait{background:#f6f7f9;border-radius:10px;padding:10px 14px}.bgvf-empty .bgvf-ereset{margin-left:8px;border:1px solid var(--r);color:var(--r);background:#fff;border-radius:999px;padding:4px 12px;font-weight:600;cursor:pointer}</style>
+<style id="bgvf-v22fix">.bgvf-mtoggle{display:block;margin:14px auto 0;padding:8px 20px;border:1px solid var(--r);border-radius:999px;background:#fff;color:var(--r);font-weight:600;font-size:14px;cursor:pointer}.bgvf-mtoggle[hidden]{display:none}@media(min-width:1101px){.bgvf-m.bgvf-xh{display:none}}@media(max-width:1100px){.bgvf-mtoggle{display:none!important}}
+.bgvf [id]{scroll-margin-top:120px}@media(max-width:767px){.bgvf [id]{scroll-margin-top:84px}}.bgvf-jumpw{margin:10px 0 0}.bgvf-jump{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--r);color:#fff!important;font-weight:600;font-size:14px}.bgvf-wait{background:#f6f7f9;border-radius:10px;padding:10px 14px}.bgvf-empty .bgvf-ereset{margin-left:8px;border:1px solid var(--r);color:var(--r);background:#fff;border-radius:999px;padding:4px 12px;font-weight:600;cursor:pointer}</style>
 <div class="bght bgvf">
 <section class="bgvf-hero"><div class="bght-in">
  <nav class="bgvf-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> / <a href="https://auto365.vn/nang-cap-anh-sang">Nâng cấp ánh sáng</a> / <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Bi gầm</a> / <span>Honda</span></nav>
@@ -180,7 +181,7 @@
   <h1 class="bgvf-h1">Bi gầm Honda <span>theo từng dòng xe</span></h1>
   <p class="bgvf-lead">Bi gầm Honda cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR) trên City, CR-V, Civic, HR-V, BR-V và Odyssey; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.</p>
   <p class="bgvf-jumpw"><a class="bgvf-jump" href="#dong-xe">Chọn dòng xe Honda ↓</a></p>
-  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-11-09">09/11/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-11-09">09/11/2026</time>)</p>
+  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-11-10">10/11/2026</time> · Rà soát kỹ thuật: <a href="https://auto365.vn/tac-gia/nguyen-quang-dao">Nguyễn Quang Đạo</a> (<time class="bgvf-rv" datetime="2026-11-09">09/11/2026</time>)</p>
   <ul class="bgvf-trust">
    <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
    <li>Thi công tại 90+ chi nhánh</li><li>Kiểm tra tương thích trước khi lắp</li>
@@ -353,16 +354,17 @@ var G=[
 ['Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?','hoc-den-gam-nho-nen-chon-bi-gam-nao','https://auto365.vn/uploads/images/news/auto365vn-chon-bi-gam-2-0-inch-nao-img_6a7ed4cea92812.75790267.jpg.webp','2026-08-14','Hốc đèn'],
 ['Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?','bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa-img_6a6720427ef082.00335126.jpg.webp','2026-07-27','Vùng sáng'],
 ['Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ','bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-x-light-f10-2-0-new-phu-hop-xe-naojpg-img_6a477c50c0daa2.92602862_.jpg.webp','2026-07-03','Hốc đèn']];
+(function(){var n=function(x){return C.filter(function(c){return c[0]===x[0]}).length},o=M.slice();M.sort(function(a,b){return n(b)-n(a)||o.indexOf(a)-o.indexOf(b)})})();
 var $=function(id){return document.getElementById(id)};
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};
 var nM=M.length;
 $('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
 $('bgvf-grid').innerHTML=M.map(function(m){
- var im=m[2]?'<img src="'+m[2]+'" alt="Honda '+esc(m[0])+'" loading="lazy" width="640" height="400"'+(/^http/.test(m[2])?' style="object-fit:cover;mix-blend-mode:normal;border-radius:6px"':'')+'>':'<em>Honda '+esc(m[0])+'</em>';
+ var im=m[2]?'<img src="'+m[2]+'" alt="Lắp bi gầm Honda '+esc(m[0])+'" loading="lazy" width="640" height="400"'+(/^http/.test(m[2])?' style="object-fit:cover;mix-blend-mode:normal;border-radius:6px"':'')+'>':'<em>Honda '+esc(m[0])+'</em>';
  var adv=/\/bi-gam-honda-/.test(m[3]);var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?(adv?(C.some(function(c){return c[0]===m[0]})?'Xem tư vấn + xe đã lắp':'Xem cấu hình và giá tham khảo'):'Xem xe đã lắp'):'Tư vấn cấu hình')+'</small></b><span class="go">→</span></span>';
- return m[3]?'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">'+(adv?'Có tư vấn':'Có hồ sơ')+'</span><span class="im">'+im+'</span>'+bd+'</a>'
-  :'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="Honda '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
+ return m[3]?'<a class="bgvf-m" title="Lắp bi gầm Honda '+esc(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">'+(adv?'Có tư vấn':'Có hồ sơ')+'</span><span class="im">'+im+'</span>'+bd+'</a>'
+  :'<a class="bgvf-m" title="Lắp bi gầm Honda '+esc(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="Honda '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
 }).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.<button type="button" class="bgvf-ereset">Xoá tìm kiếm</button></p>';
 var fmt=function(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]};
 var brand=function(c){return /GTR/.test(c[1])?'GTR':/AES/.test(c[1])?'AES':/Titan(?!ium)/.test(c[1])?'Titan':'X-Light'};
@@ -378,6 +380,10 @@ function apply(){var nz=function(x){return String(x||'').toLowerCase().replace(/
  document.querySelector('.bgvf-empty').hidden=n>0}
 $('bgvf-tabs').addEventListener('click',function(e){var b=e.target.closest('.bgvf-tab');if(!b)return;k=b.getAttribute('data-k');[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});apply();$('bgvf-grid').scrollLeft=0});
 $('bgvf-q').addEventListener('input',apply);
+(function(){var ex=false,L=12,g=$('bgvf-grid'),mb=document.createElement('button');mb.type='button';mb.className='bgvf-mtoggle';mb.setAttribute('aria-controls','bgvf-grid');g.parentNode.insertBefore(mb,g.nextSibling);
+function lim(){var q=$('bgvf-q').value.trim(),v=[].filter.call(document.querySelectorAll('.bgvf-m'),function(a){return !a.hidden});v.forEach(function(a,i){a.classList.toggle('bgvf-xh',!ex&&!q&&i>=L)});var x=q?0:v.length-L;mb.hidden=x<=0;mb.textContent=ex?'Thu gọn':'Xem thêm '+x+' dòng xe';mb.setAttribute('aria-expanded',ex?'true':'false')}
+mb.addEventListener('click',function(e){e.stopPropagation();ex=!ex;lim();if(!ex)g.scrollIntoView({block:'nearest'})});$('bgvf-q').addEventListener('input',lim);$('bgvf-tabs').addEventListener('click',function(){setTimeout(lim)});document.addEventListener('click',function(e){if(e.target.closest('.bgvf-ereset'))setTimeout(lim)});lim()})();
+
 document.addEventListener('click',function(e){if(e.target.closest('.bgvf-ereset')){$('bgvf-q').value='';var t0=document.querySelector('.bgvf-tab');if(t0)t0.click();apply();$('bgvf-q').focus()}var o=e.target.closest('[data-open-tb]');if(o){var d=document.querySelector('#bang-tra details');if(d)d.open=true}});
 $('bgvf-creset').addEventListener('click',function(){var all=document.querySelectorAll('.bgvf-cfr .bgvf-chip[data-v=""]');[].forEach.call(all,function(b){b.click()});if(all[0])all[0].focus()});
 $('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});var nVis=document.querySelectorAll('.bgvf-case:not([hidden])').length;$('bgvf-rail').classList.toggle('one',nVis<=4);$('bgvf-rail').hidden=!nVis;$('bgvf-cempty').hidden=!!nVis;$('bgvf-rail').scrollLeft=0});
