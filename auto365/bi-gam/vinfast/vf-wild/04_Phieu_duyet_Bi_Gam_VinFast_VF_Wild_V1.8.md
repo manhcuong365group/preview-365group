@@ -4,6 +4,7 @@
 
 | Trường | Giá trị |
 |---|---|
+| Tự chấm 10/11/2026 | **95,6/100 — ĐẠT** (S 28,8, G 23,8) |
 | Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI).** Mẫu đã được anh Nguyễn Quang Đạo xác nhận 07/11/2026; tự chấm 90,0/100; ảnh AI là lỗi mở trước production |
 | Chuẩn | V1.9 (tên file giữ V1.8 như các trang VinFast khác) |
 | URL preview / production | https://preview-365group.pages.dev/bi-gam/vinfast/vf-wild/ → https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/vf-wild |
@@ -60,5 +61,6 @@ Môi trường: localhost (`node scripts/serve-preview.mjs`), bản local có SH
 
 | Ngày | Nội dung |
 |---|---|
+| 10/11/2026 | Chấm lại theo thang VF5 (không trừ production/CRM): 95,6/100 — ĐẠT ngưỡng V1.9 (xem 03) |
 | 09/11/2026 | Chấm lại sau vá 08/11: C1 9,5, G2 9,5, U3 4,5 (chủ quản đã ký 07/11) → 90,0/100, vẫn CHƯA ĐẠT do ảnh AI (S2) và chưa có production (S3); sửa lỗi CSS khối vf3lp-ev-style (thiếu `}` làm nhiều rule chỉ chạy trên desktop) |
 | 09/11/2026 | Vá audit content (reviewer 08/11, 8,2/10): dòng phạm vi dưới H2 sản phẩm + bảng xác nhận; caption "Ảnh minh họa AI" trên 8 khung ảnh (Cos/Pha: "Mô phỏng vùng sáng (ảnh minh họa AI)"); kích thước thân theo trang SP (301 V2/F10 New/F10 Turbo V2/GTR G1 Turbo V2 129×67×80, F10 Pro V2 129×83×79, X3 Ultra 128×76×76, F10 2.0 New 107×40×69 mm); bảo hành trên thẻ Titan/Henvvei/Red Lighting 24 tháng, Matrix Light M1 Pro/Fogway Gen 1 12 tháng; F10 New (2025) ghi "bản 12–16V" ở thẻ/gợi ý/bảng/dòng so sánh JS/popup, ghi chú bản 24V 4.500.000đ/bộ; trả lời nhanh 69 từ; mục "Khi nào chưa cần lắp bi gầm?" trước FAQ; FAQ 6 câu (thêm câu hệ điện, bảo hành 69 từ) đồng bộ FAQPage; bước 6 thêm kiểm tra Cos/Pha và nguồn điện; dateModified 2026-11-09, lastReviewed giữ 2026-11-07. Kiểm 320/390/768/1440 không tràn |

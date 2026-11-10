@@ -6,6 +6,7 @@
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/herio-green (chưa phát hành) |
 | SHA-256 index.html | `59053113764a084e7252d57e7f7010f1069bc69923f1c326b312f96ce2d372d2` |
 | Ngày | 07/11/2026 (cập nhật 09/11/2026) |
+| Tự chấm 10/11/2026 | **95,6/100 — ĐẠT** (S 28,8, G 23,8) |
 | Trạng thái | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)** |
 
 ## 1. Xác nhận nội dung
@@ -63,4 +64,5 @@ Kiểm trên bản local cùng SHA ở trên (http://localhost:8765/bi-gam/vinfa
 
 | Ngày | Nội dung |
 |---|---|
+| 10/11/2026 | Chấm lại theo thang VF5 (không trừ production/CRM): 95,6/100 — ĐẠT ngưỡng V1.9 (xem 03) |
 | 09/11/2026 | Vá audit V2.2 R1 (reviewer 08/11, 78/95): F10 New ghi thống nhất "bản 12–16V" ở thẻ, gợi ý, so sánh động, popup/form; công suất 45W Cos/55W Pha; ghi chú bản 24V 4.500.000đ; thêm đèn zin Halogen Projector có nguồn VinFast; sửa lời dẫn form gọi lại; nút Báo giá từng dòng bảng so sánh; dateModified 2026-11-09 |

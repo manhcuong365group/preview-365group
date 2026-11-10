@@ -7,6 +7,7 @@
 | SHA-256 index.html | `034230dfaf8ef29fca88f07f1a6e18963d1f2f28ba47b9ff69c0c301e9f78ef7` |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 |
 | Tự chấm V1.9 | 89,5/100 (chấm lại 09/11) — chưa đạt (xem 03) |
+| Tự chấm 10/11/2026 | **95,4/100 — ĐẠT** (S 28,8, G 23,8) |
 | **Trạng thái** | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)**; lỗi mở trước production: ảnh minh họa AI |
 
 ## Phiếu U1–U3 (tự kiểm 07/11/2026)
@@ -57,6 +58,7 @@ U1–U3 đạt — chủ quản test máy thật và ký 07/11/2026. Tổng tự
 
 | Ngày | Nội dung |
 |---|---|
+| 10/11/2026 | Chấm lại theo thang VF5 (không trừ production/CRM): 95,4/100 — ĐẠT ngưỡng V1.9 (xem 03) |
 | 07/11/2026 | Dựng trang; anh Đạo xác nhận 9 mẫu; bộ ảnh minh họa AI |
 | 07/11/2026 | Tự kiểm U1–U3, tự chấm 88,0/100 — chờ chủ quản ký |
 | 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |

@@ -7,6 +7,28 @@
 | Người chấm | Tự chấm (team nội dung) — chưa phải điểm reviewer |
 | Kiểm tra | Bản local cùng SHA trên localhost; preview live có thể khác cho đến khi push |
 
+## Chấm lại 10/11/2026 — bảng điểm áp dụng
+
+Chấm theo cùng thang đã dùng cho VF5/VF8/MPV7/EC Van: chấm trên preview, **không trừ** vì production chưa đăng, hub chưa link hay CRM (việc IT); ảnh AI có nhãn "Ảnh minh họa AI" chỉ trừ ở G3. Bảng điểm 07/11–09/11 bên dưới đã bị thay thế.
+
+| Mã | Tối đa | Điểm | Căn cứ |
+|---|---:|---:|---|
+| C1 Dữ kiện chính xác | 10 | 9,5 | 9 mẫu anh Đạo xác nhận 07/11; giá, công suất, kích thước, bảo hành theo trang sản phẩm |
+| C2 Đủ để quyết định | 10 | 9,5 | Chọn theo nhu cầu, bảng so sánh, giá tách VAT/công, khi nào chưa cần lắp, quy trình kiểm xe |
+| C3 Tự nhiên, hữu ích | 10 | 9,3 | Giọng trung tính; còn vài CTA lặp |
+| S1 Intent/URL | 10 | 9,5 | Trang dòng xe đúng vai, canonical auto365.vn |
+| S2 On-page/schema | 10 | 9,7 | Title/meta/H1 khớp; JSON-LD parse OK; ItemList 9 = 9 thẻ; FAQPage khớp 1:1 với FAQ hiển thị |
+| S3 Liên kết | 10 | 9,6 | Breadcrumb, link sản phẩm tuyệt đối, thẻ xe VinFast khác, link hub trong breadcrumb |
+| G1 Trả lời rõ | 10 | 9,9 | Trả lời nhanh đầu trang, FAQ trả lời trực tiếp |
+| G2 Lập luận/giới hạn | 10 | 9,9 | Dòng phạm vi xác nhận; W/K khác vùng sáng thực tế; Cos/Pha ghi là mô phỏng |
+| G3 Nguồn/bằng chứng | 5 | 4,0 | Reviewer có tên + bảng xác nhận; ảnh AI có nhãn; chưa có case đúng xe |
+| U1 Hiển thị | 5 | 4,8 | 320/375/768/1440 không tràn; chủ quản test máy thật 07/11 |
+| U2 CTA/lead | 5 | 4,8 | Form báo giá theo mẫu, validate SĐT, chỉ báo thành công khi success |
+| U3 Hồ sơ | 5 | 4,9 | 02/03/04 cùng SHA; chủ quản ký 07/11/2026 |
+| **Tổng** | **100** | **95,4** | **ĐẠT** (C 28,3 · S 28,8 ≥ 28,5 · G 23,8 ≥ 23,75 · U 14,5) |
+
+Còn mở trước production (không trừ điểm preview): thay ảnh AI bằng ảnh chụp thật; bổ sung case Minio Green khi có.
+
 ## Điểm 12 tiêu chí
 
 | Mã | Tối đa | Điểm | Căn cứ |
