@@ -3,9 +3,9 @@
 | Trường | Giá trị |
 |---|---|
 | Trang | `auto365/auto365-tru-so-chinh` → preview https://preview-365group.pages.dev/auto365-tru-so-chinh/ · canonical `https://auto365.vn/auto365-tru-so-chinh` (`/thu-duc/` chỉ chuyển hướng) |
-| Bản duyệt | commit `595c9c08` (10/11/2026) |
+| Bản duyệt | bản 10/11/2026 (sau commit `595c9c08`, thêm byline + WebPage schema) |
 | Người kiểm duyệt nội dung | Nguyễn Quang Đạo |
-| Ngày duyệt | _chờ chủ trang ghi_ |
+| Ngày duyệt | 10/11/2026 — `lastReviewed` 2026-11-10, byline "Kiểm duyệt: Nguyễn Quang Đạo (10/11/2026)" |
 | Khung chấm | UX/CRO V2.2 — R1 05/11 (80), R2 06/11 (82), R3 08/11 (56, thang mới) |
 | Hotline trang | 0365 365 365 (Phim · PPF · Wrap · Nội thất da); 0365 365 911 (Đèn · Camera · Phụ kiện · Xe điện) |
 
@@ -52,5 +52,5 @@
 
 | Hạng mục | Trạng thái |
 |---|---|
-| Nội dung trang | Anh Nguyễn Quang Đạo duyệt — ngày: _chờ ghi_ |
+| Nội dung trang | Anh Nguyễn Quang Đạo duyệt 10/11/2026 |
 | UX/CRO R3 | Đã xử lý toàn bộ mục thuộc trang, chờ sếp chấm lại |
