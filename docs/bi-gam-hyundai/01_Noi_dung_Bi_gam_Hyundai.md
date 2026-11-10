@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/hyundai/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/hyundai |
-| Title (75 ký tự) | Bi gầm Hyundai theo từng dòng xe: Santa Fe, Custin, Creta, Tucson \| Auto365 |
-| Meta description (128 ký tự) | Tra cứu 22 dòng Hyundai, xem 8 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
-| H1 | Bi gầm Hyundai theo từng dòng xe |
+| Title (83 ký tự) | Lắp bi gầm Hyundai: chọn đèn theo dòng xe Santa Fe, Custin, Creta, Tucson \| Auto365 |
+| Meta description (128 ký tự) | Tra cứu 22 dòng Hyundai, xem 9 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
+| H1 | Lắp bi gầm Hyundai: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (8), FAQPage |
-| SHA-256 index.html | `6046b9bba6bbafc9da40f3fd26c68712071480db2e151fc6abe1dc43488ab79b` |
-| SHA-256 content-src.html | `e5630dfd9909fa9b5f1ef58d5477246f41ae3b8fb7e28761f592ff92cf4d31fd` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (9), FAQPage |
+| SHA-256 index.html | `ae19b9c6b197e26cd2e421a97f3583ced874166b1e46914c3d0bd153bae08f1e` |
+| SHA-256 content-src.html | `559eefe94b3a5e069b76d0b019a3effd4c0a01a8bd19781042639453357c4f12` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -25,34 +25,35 @@ Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Hyundai Custin | MPV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-custin |
+| Hyundai Creta | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-creta |
 | Hyundai Santa Fe | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-santa-fe |
 | Hyundai Elantra | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-elantra |
-| Hyundai Creta | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-creta |
 | Hyundai Tucson | SUV | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-tucson |
-| Hyundai Grand i10 | Hatchback | Liên hệ tư vấn | — |
-| Hyundai Getz | Hatchback | Liên hệ tư vấn | — |
-| Hyundai i20 | Hatchback | Liên hệ tư vấn | — |
-| Hyundai Grand i10 Sedan | Sedan | Liên hệ tư vấn | — |
 | Hyundai Accent | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-hyundai-accent |
-| Hyundai Avante | Sedan | Liên hệ tư vấn | — |
+| Hyundai Grand i10 | Hatchback | Liên hệ tư vấn | — |
+| Hyundai Grand i10 Sedan | Sedan | Liên hệ tư vấn | — |
 | Hyundai Venue | SUV | Liên hệ tư vấn | — |
 | Hyundai Palisade | SUV | Liên hệ tư vấn | — |
-| Hyundai Ioniq 5 | SUV | Liên hệ tư vấn | — |
-| Hyundai Kona | SUV | Liên hệ tư vấn | — |
 | Hyundai Stargazer | MPV | Liên hệ tư vấn | — |
-| Hyundai Grand Starex | MPV | Liên hệ tư vấn | — |
+| Hyundai Ioniq 5 | SUV | Liên hệ tư vấn | — |
 | Hyundai Staria | MPV | Liên hệ tư vấn | — |
 | Hyundai Solati | MPV | Liên hệ tư vấn | — |
+| Hyundai Getz | Hatchback | Liên hệ tư vấn | — |
+| Hyundai i20 | Hatchback | Liên hệ tư vấn | — |
+| Hyundai Avante | Sedan | Liên hệ tư vấn | — |
+| Hyundai Kona | SUV | Liên hệ tư vấn | — |
+| Hyundai Grand Starex | MPV | Liên hệ tư vấn | — |
 | Hyundai i30 | Hatchback | Liên hệ tư vấn | — |
 | Hyundai Sonata | Sedan | Liên hệ tư vấn | — |
 | Hyundai Genesis | Sedan | Liên hệ tư vấn | — |
 
-## Xe Hyundai đã lắp bi gầm tại Auto365 (8 bài hồ sơ)
+## Xe Hyundai đã lắp bi gầm tại Auto365 (9 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
 | Dòng xe | Bài | Ngày đăng |
 |---|---|---|
+| Hyundai Creta | [Hyundai Creta 1.5L đặc biệt 2024 nâng cấp bi gầm X-Light X3 Ultra 5500K](https://auto365.vn/hyundai-creta-1-5l-dac-biet-2024-nang-cap-bi-gam-x-light-x3-ultra-5500k) | 2026-11-10 |
 | Hyundai Santa Fe | [Hyundai Santa Fe 2020 Premium lắp bi gầm X-Light F10 2.0 New](https://auto365.vn/hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new) | 2026-10-20 |
 | Hyundai Santa Fe | [Hyundai Santa Fe 2017 Tiêu chuẩn lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/hyundai-santa-fe-2017-tieu-chuan-lap-bi-gam-f10-turbo-v2) | 2026-10-16 |
 | Hyundai Custin | [Hồ sơ nâng cấp bi gầm X-Light 301 V2 trên Hyundai Custin 2024](https://auto365.vn/ho-so-nang-cap-bi-gam-x-light-301-v2-tren-hyundai-custin-2024) | 2026-09-23 |
@@ -122,12 +123,12 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Hy
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `hyundai-santa-fe-2020-premium-lap-bi-gam-f10-2-new-1792487027.webp` | Hyundai Santa Fe 2020 Premium lắp bi gầm X-Light F10 2.0 New tại Auto365 |
-| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `auto365vn-hyundai-custin-2024-lap-bi-gam-x-light-301-v2-15-img_6ab3a6d0b9aff5.32629948.webp` | Hồ sơ nâng cấp bi gầm X-Light 301 V2 trên Hyundai Custin 2024 tại Auto365 |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Hyundai Tucson tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
+| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-bao-hanh.webp` | Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `hyundai-santa-fe-2017-tieu-chuan-lap-bi-gam-f10-turbo-v2-1792125417.webp` | Hyundai Santa Fe 2017 Tiêu chuẩn lắp bi gầm X-Light F10 Turbo V2 4300K tại Auto365 |
-| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `auto365vn-1jpg-img_68ef543b7fd388.31126613_.jpg.webp` | Hyundai Tucson nâng cấp đèn bi gầm X-Light X3 Ultra tại Auto365 |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `auto365vn-hyundai-custin-nang-cap-bi-gam-x-light-f10-turbo-v2-img_6a6855c9d7c390.77278845.jpg.webp` | Hyundai Custin lắp Bi gầm X-Light F10 Turbo V2 5500K: Giá và lưu ý kỹ thuật tại Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Hyundai Tucson đen chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
+| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-chinh-hang.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Kỹ thuật viên Auto365 tư vấn nâng cấp đèn cho chủ xe Hyundai Tucson |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Hyundai trên trang này.
 

@@ -38,3 +38,9 @@ Lead test #33 vào CRM OK; QA mobile giả lập 375 px đạt; chủ quản tes
 ## Bổ sung 09/11/2026
 
 Anh Nguyễn Quang Đạo đã duyệt phần vá theo tái kiểm độc lập 08/11 (lens, FAQ 2.0/3.0 inch, FAQ dòng xe, meta, tìm kiếm, nút hồ sơ, bảng thẻ mobile, khi nào chưa cần nâng cấp, bảo hành seri, câu tham khảo kỹ thuật). lastReviewed = 2026-11-09.
+
+## Bổ sung sau duyệt 10/11/2026 — anh Nguyễn Quang Đạo đã duyệt 10/11/2026
+
+- H1/title đổi thành "Lắp bi gầm <hãng>: chọn đèn theo từng dòng xe".
+- Bỏ bảng tra hồ sơ (khối "Xe … đã lắp mẫu bi gầm nào?") và nhãn đỏ trên các H2.
+- Đổi 5 ảnh khối "Vì sao chọn" (hệ thống chi nhánh, bảo hành điện tử, căn chỉnh Cos/Pha, chứng nhận đại lý ủy quyền X-Light, tư vấn).

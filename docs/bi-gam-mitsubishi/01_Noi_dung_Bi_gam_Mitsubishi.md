@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/mitsubishi/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/mitsubishi |
-| Title (81 ký tự) | Bi gầm Mitsubishi theo từng dòng xe: Xpander, Outlander, Triton, Xforce \| Auto365 |
+| Title (89 ký tự) | Lắp bi gầm Mitsubishi: chọn đèn theo dòng xe Xpander, Outlander, Triton, Xforce \| Auto365 |
 | Meta description (134 ký tự) | Tra cứu bi gầm Mitsubishi theo dòng và đời xe, xem 15 hồ sơ lắp X-Light, GTR, AES, Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
-| H1 | Bi gầm Mitsubishi theo từng dòng xe |
+| H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `59ac7d5b553155d669047a2c69e1a6aa99587882c0008a914ac4d93d00daa310` |
-| SHA-256 content-src.html | `df2d993b6f602d23c07dac985b22c09dcc4ba1b5410c55f8b43bddb5c3d7ade6` |
+| SHA-256 index.html | `0ee0a521978c6f6293b7de9cb8376007c030c6d4b09b24b2fb8d336beb5b4d86` |
+| SHA-256 content-src.html | `0e7f4d5d0ef4b3eb941c48d3e74037740a3e66cbbc6a438e9678f74e7d741809` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -26,15 +26,15 @@ Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ th�
 |---|---|---|---|
 | Mitsubishi Outlander | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-outlander |
 | Mitsubishi Xforce | SUV | Có hồ sơ | https://auto365.vn/mitsubishi-xforce-premium-2025-lap-bi-gam-x-light-x3-ultra-3000k |
-| Mitsubishi Pajero | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-pajero |
 | Mitsubishi Xpander Cross | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-xpander-cross-2025-lap-bi-gam-f10-hyper-20 |
 | Mitsubishi Triton | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-triton |
 | Mitsubishi Destinator | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-destinator |
 | Mitsubishi Xpander | MPV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-xpander |
+| Mitsubishi Pajero | SUV | Có hồ sơ | https://auto365.vn/bi-gam-mitsubishi-pajero |
 | Mitsubishi Zinger | MPV | Có hồ sơ | https://auto365.vn/mitsubishi-zinger-gls-2011-lap-bi-gam-x-light-x3-ultra-4300k |
+| Mitsubishi Pajero Sport | SUV | Liên hệ tư vấn | — |
 | Mitsubishi Mirage | Hatchback | Liên hệ tư vấn | — |
 | Mitsubishi Attrage | Sedan | Liên hệ tư vấn | — |
-| Mitsubishi Pajero Sport | SUV | Liên hệ tư vấn | — |
 | Mitsubishi Grandis | MPV | Liên hệ tư vấn | — |
 | Mitsubishi Jolie | MPV | Liên hệ tư vấn | — |
 | Mitsubishi Lancer | Sedan | Liên hệ tư vấn | — |
@@ -121,12 +121,12 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Mi
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `mitsubishi-destinator-2026-premium-lap-bi-gam-x-light-f10-hy-1791947589.webp` | Mitsubishi Destinator 2026 Premium lắp bi gầm X-Light F10 Hyper 2.0 tại Auto365 |
-| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `auto365vn-outlander-2022-lap-x-light-f10-turbo-v2-4300k-img_6a9fcc3d63cac4.63837666.webp` | Mitsubishi Outlander 2022 lắp bi gầm X-Light F10 Turbo V2 4300K tại Auto365 |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Mitsubishi Xpander tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
+| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-bao-hanh.webp` | Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `auto365vn-mitsubishi-triton-2025-lap-aes-sv-20-max-5500k-img_6a9256174c76d5.97626076.webp` | Mitsubishi Triton 2025 lắp AES SV 2.0 Max tại Auto365 |
-| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `mitsubishi-xforce-hoan-thien-lap-dat-x3-ultra-1793336291.webp` | Mitsubishi Xforce Premium 2025 lắp bi gầm X-Light X3 Ultra 3000K tại Auto365 |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `mitsubishi-pajero-2021-v6-30l-lap-bi-gam-x-light-f10-new-202-1793613489.webp` | Mitsubishi Pajero 2021 V6 3.0L lắp bi gầm X-Light F10 New 2025 tại Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Mitsubishi Xpander Cross chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
+| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-chinh-hang.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Kỹ thuật viên Auto365 tư vấn nâng cấp đèn cho chủ xe Mitsubishi Outlander |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Mitsubishi trên trang này.
 

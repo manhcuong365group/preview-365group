@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/ford/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/ford |
-| Title (74 ký tự) | Bi gầm Ford theo từng dòng xe: Ranger, Everest, Escape, EcoSport \| Auto365 |
+| Title (82 ký tự) | Lắp bi gầm Ford: chọn đèn theo dòng xe Ranger, Everest, Escape, EcoSport \| Auto365 |
 | Meta description (121 ký tự) | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
-| H1 | Bi gầm Ford theo từng dòng xe |
+| H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `485ab1e480d11f4af912f42cfb28ca5d059d5505f250bcc76d342adf9474df7a` |
-| SHA-256 content-src.html | `76f863e24adefa8c103d66bd26a4208dae02107bd08c188ee303f716575db5a4` |
+| SHA-256 index.html | `976f79cb670237cdf9a9ab8a6d87229131d284a93c485ea93d75817244f821d3` |
+| SHA-256 content-src.html | `5a8cc6f1364b425da9d7442c05c7ac262691a06b38554dfe1904556011f35842` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -25,18 +25,18 @@ Bi gầm Ford cần chọn theo hốc đèn gầm, đời xe và hệ thống đ
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Ford Everest | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-everest |
-| Ford Escape | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-escape |
 | Ford Ranger | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-ford-ranger |
 | Ford Ranger Raptor | Bán tải | Có hồ sơ | https://auto365.vn/ford-ranger-raptor-2024-lap-bi-gam-x-light-x3-ultra-4300k |
+| Ford Transit | undefined | Có hồ sơ | https://auto365.vn/bi-gam-ford-transit |
+| Ford Escape | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-escape |
 | Ford Focus | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-ford-focus |
 | Ford EcoSport | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-ecosport |
-| Ford Transit | undefined | Có hồ sơ | https://auto365.vn/bi-gam-ford-transit |
-| Ford Fiesta | Sedan | Liên hệ tư vấn | — |
-| Ford Laser | Sedan | Liên hệ tư vấn | — |
-| Ford Mondeo | Sedan | Liên hệ tư vấn | — |
 | Ford Territory | SUV | Liên hệ tư vấn | — |
 | Ford Explorer | SUV | Liên hệ tư vấn | — |
 | Ford Mustang Mach-E | SUV | Liên hệ tư vấn | — |
+| Ford Fiesta | Sedan | Liên hệ tư vấn | — |
+| Ford Laser | Sedan | Liên hệ tư vấn | — |
+| Ford Mondeo | Sedan | Liên hệ tư vấn | — |
 | Ford Tourneo | undefined | Liên hệ tư vấn | — |
 
 ## Xe Ford đã lắp bi gầm tại Auto365 (21 bài hồ sơ)
@@ -127,12 +127,12 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Fo
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `auto365vn-ford-ranger-wildtrak-2026-nang-cap-bi-gam-x-light-f10-turbo-v2-img_6a8e669a862655.19242543.webp` | Ford Ranger Wildtrak 2026 lắp bi gầm X-Light F10 Turbo V2 4300K tại Auto365 |
-| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ford-everest-2025-sport-lap-bi-gam-x-light-f10-hyper-2-0-1791450683.webp` | Ford Everest 2025 Sport lắp bi gầm X-Light F10 Hyper 2.0 bản 5000K tại Auto365 |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Ford Everest tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
+| Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-bao-hanh.webp` | Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `auto365vn-ford-everest-2022-lap-bi-gam-x-light-f10-turbo-v2-4300k-img_6a6d71a140fbc4.95876056.jpg.webp` | Ford Everest 2022 lắp bi gầm X-Light F10 Turbo V2 4300K: Giá và cấu hình tại Auto365 |
-| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ford-escape-xls-23l-2013-lap-bi-gam-x-light-x3-ultra-4300k-7-1791521645.webp` | Ford Escape XLS 2.3L 2013 lắp X-Light X3 Ultra 4300K tại Auto365 |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ford-ranger-raptor-nang-cap-bi-gam-x3-ultra-1793069813.webp` | Ford Ranger Raptor 2024 lắp bi gầm X-Light X3 Ultra 4300K tại Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Ford Everest trắng chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
+| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-chinh-hang.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Các dòng xe Ford tại showroom Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Ford trên trang này.
 
