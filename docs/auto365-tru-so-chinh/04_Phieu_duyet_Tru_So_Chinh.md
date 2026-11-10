@@ -120,3 +120,16 @@ Media ký: ____________ Ngày: ________
 | P1-02 | Chủ trang chốt bỏ nút "Tôi cũng đi xe này" (10/11): bấm thẻ mở bài case thực tế; tư vấn qua nút "Nhận tư vấn" chung | — |
 | P1-03 | Chủ trang chốt: giới thiệu trước, dịch vụ sau; hero có nút "Xem dịch vụ tại Thủ Đức" | Giá/thời gian cần Kinh doanh |
 | P1-04 | Xong + thanh mục lục mobile | Test máy thật |
+
+## Kết quả U3 V2.2 R4 (10/11/2026) — PASS
+
+Phiếu `AUTO365-U3-HQ-PREVIEW-20261110-R4`: **PASS U3 V2.2 trong phạm vi preview**, đóng P0-01, P0-02, P0-04, P1-02, P1-04; U1/U2/U3 PASS. Bộ chọn xe giữ ẩn (chưa có giá theo xe), không mở ticket mới.
+
+Việc làm lúc go-live (đã chốt phương án, không phải lỗi preview):
+
+| Mã | Việc |
+|---|---|
+| REL-01 | Route production `/auto365-tru-so-chinh` trả 200; đồng bộ canonical, schema.url, internal link, sitemap |
+| REL-02 | Vận hành/KD chốt giờ 08:30–18:30, lịch tuần, "miễn phí", điểm tiếp nhận |
+| REL-03 | IT/CRM đối soát lead, CRM, tracking |
+| REL-04 | Thay đường dẫn asset preview trong structured data, gỡ banner demo, bỏ noindex |
