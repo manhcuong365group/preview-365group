@@ -109,7 +109,7 @@ Media ký: ____________ Ngày: ________
 
 | Mã | Phần web | Còn chờ |
 |---|---|---|
-| P0-01 | Xong (theo chốt chủ trang) | Vận hành ký bảng địa điểm |
+| P0-01 | Mục Đường đến ghi riêng 3M Pro Shop 4/4/3/3, đã lên pages.dev | Vận hành ký bảng địa điểm |
 | P0-02 | Xong + biên bản QA ở trên | — |
 | P0-03 | Form gửi đúng trường | IT/CRM test lead production |
 | P0-04 | Link đúng hồ sơ 3M Pro Shop, hiển thị 5,0 (chủ trang chốt) | Local SEO xác nhận |
@@ -117,6 +117,6 @@ Media ký: ____________ Ngày: ________
 | P0-06 | Preview noindex, canonical `/auto365-tru-so-chinh` | SEO/IT tạo URL 200 trên production |
 | P0-07 | Xong | Media ký bảng |
 | P1-01 | Ẩn có chủ đích | Kinh doanh cấp bảng giá |
-| P1-02 | Xong | — |
+| P1-02 | Nút "Tôi cũng đi xe này" tách thành `<button>` riêng ngoài link thẻ (10/11), focus bàn phím + mở popup điền sẵn xe | — |
 | P1-03 | Chủ trang chốt: giới thiệu trước, dịch vụ sau; hero có nút "Xem dịch vụ tại Thủ Đức" | Giá/thời gian cần Kinh doanh |
 | P1-04 | Xong + thanh mục lục mobile | Test máy thật |
