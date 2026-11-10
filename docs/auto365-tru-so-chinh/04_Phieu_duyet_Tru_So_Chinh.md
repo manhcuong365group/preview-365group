@@ -54,3 +54,69 @@
 |---|---|
 | Nội dung trang | Anh Nguyễn Quang Đạo duyệt 10/11/2026 |
 | UX/CRO R3 | Đã xử lý toàn bộ mục thuộc trang, chờ sếp chấm lại |
+
+## Đối ứng phiếu V2.2 R2 (10/11/2026)
+
+### P0-02 — Biên bản QA form (Frontend, 10/11/2026)
+
+Test trên preview local, mobile 375px, mô phỏng phản hồi `/api/leads` + 1 lần gọi thật trên preview (pages.dev trả 405 — bình thường, không có API). Cùng một hàm xử lý cho form cuối trang và popup tư vấn.
+
+| Ca test | Số request | Thông báo hiển thị | Dữ liệu khách |
+|---|---|---|---|
+| SĐT sai (`123`) | 0 | "Vui lòng nhập số điện thoại hợp lệ." | Giữ |
+| Hợp lệ, bấm gửi 2 lần liên tiếp | 1 | "Đã nhận yêu cầu tư vấn…" (chỉ khi `success:true`) | Xoá sau thành công |
+| HTTP 500 | 1 | "Chưa gửi được. Vui lòng gọi 0365 365 365 hoặc nhắn Zalo." | Giữ |
+| HTTP 200 nhưng `success:false` | 1 | như trên | Giữ |
+| Mất mạng | 1 | như trên | Giữ |
+| Treo > 15 giây (thêm `AbortSignal.timeout(15000)` ngày 10/11) | 1 | như trên, nút gửi mở lại | Giữ |
+| API thật trên pages.dev (405) | 1 | như trên | Giữ |
+| Popup, SĐT có khoảng trắng `090 000 0000` | 1 | Thành công | — |
+| Popup: focus nằm trong dialog, phím Esc đóng (dialog gốc) | — | Đạt | — |
+
+Còn lại cho IT/CRM (P0-03): gửi lead QA trên production, đối chiếu mã lead → CRM → đầu mối.
+
+### P0-01 / P0-05 — Bảng địa điểm để Vận hành ký
+
+| Trường | Auto365.vn – Trụ Sở Chính | 3M Pro Shop & 3M Training Center |
+|---|---|---|
+| Địa chỉ | 4/4/1/7 Đường số 3, Khu phố 31, P. Hiệp Bình, TP.HCM | 4/4/3/3 Đường số 3, P. Hiệp Bình, TP.HCM (theo trang auto365.vn/3m-pro-shop-tru-so-chinh) |
+| Quan hệ | Cơ sở chính | Phát triển trong hệ sinh thái Auto365.vn – Trụ Sở Chính, thuộc 365Group |
+| Google Maps | https://maps.app.goo.gl/sPeztDd996rHyLQM8 | hồ sơ "3M Pro Shop - Trụ Sở Chính" (CID 0xf92a0b6f200ee23b) |
+| Hotline | 0365 365 365 (Phim · PPF · Wrap · Nội thất da); 0365 365 911 (Đèn · Camera · Phụ kiện · Xe điện) | Maps đang ghi 0587 365 365 — Vận hành xác nhận |
+| Giờ mở cửa | 08:30 – 18:30, Thứ 2 – Chủ nhật (chủ trang chốt) | Vận hành xác nhận |
+| Tư vấn, kiểm tra xe | Miễn phí (chủ trang chốt) | — |
+| Trang hiển thị | Một địa chỉ 4/4/1/7 cho toàn trang (chủ trang chốt) | Nhắc trong câu hệ sinh thái |
+| Việc ngoài web | Maps còn ghi 4/23A + đóng Chủ nhật → người quản lý GBP sửa | Kiểm giờ + hotline trên Maps |
+
+Vận hành ký: ____________ Ngày: ________
+
+### P0-07 — Bảng nguồn clip/ảnh để Media ký
+
+Chủ trang báo Media đã xác nhận (09/11/2026). Bảng để ký văn bản:
+
+| Clip (YouTube ID) | Xe – sản phẩm | Nơi quay / thi công | Quyền dùng |
+|---|---|---|---|
+| `7-SRUonBS_o` | Mercedes GLC 300 – PPF 3M 200 Gloss | Trụ Sở Chính | Kênh Auto365 |
+| `adTg0iqT3P0` | Ford Ranger Raptor – PPF 3M 150 Gloss | Trụ Sở Chính | Kênh Auto365 |
+| `VhKw2KJCR8I` | VinFast VF8 – PPF 3M 50 Gloss | Trụ Sở Chính | Kênh Auto365 |
+| `-H8RM4u4qck` | BMW 530i – PPF 3M 200 Gloss | Trụ Sở Chính | Kênh Auto365 |
+| 48 case | theo bài đã đăng auto365.vn, mỗi bài ghi Trụ Sở Chính | Trụ Sở Chính | auto365.vn |
+| Ảnh xưởng, sảnh, chứng nhận | ảnh thật tại cơ sở | Trụ Sở Chính / 3M Pro Shop | Auto365 |
+
+Media ký: ____________ Ngày: ________
+
+### Tổng trạng thái R2
+
+| Mã | Phần web | Còn chờ |
+|---|---|---|
+| P0-01 | Xong (theo chốt chủ trang) | Vận hành ký bảng địa điểm |
+| P0-02 | Xong + biên bản QA ở trên | — |
+| P0-03 | Form gửi đúng trường | IT/CRM test lead production |
+| P0-04 | Link đúng hồ sơ 3M Pro Shop, hiển thị 5,0 (chủ trang chốt) | Local SEO xác nhận |
+| P0-05 | Xong (theo chốt chủ trang) | Vận hành ký |
+| P0-06 | Preview noindex, canonical `/auto365-tru-so-chinh` | SEO/IT tạo URL 200 trên production |
+| P0-07 | Xong | Media ký bảng |
+| P1-01 | Ẩn có chủ đích | Kinh doanh cấp bảng giá |
+| P1-02 | Xong | — |
+| P1-03 | Chủ trang chốt: giới thiệu trước, dịch vụ sau; hero có nút "Xem dịch vụ tại Thủ Đức" | Giá/thời gian cần Kinh doanh |
+| P1-04 | Xong + thanh mục lục mobile | Test máy thật |
