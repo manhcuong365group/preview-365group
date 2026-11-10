@@ -64,6 +64,8 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-model b{font-size:14px}.vf-model small{color:var(--mut);font-size:11px}
 .vf-model i{font-size:10px!important;padding:1px 6px!important;top:5px!important;left:5px!important}
 .vf-model[hidden]{display:none}
+.vf-mwrap{text-align:center;margin:12px 0 0}.vf-mwrap[hidden]{display:none}
+.vf-mbtn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 18px;font:inherit;font-size:14px;font-weight:700;color:var(--red);cursor:pointer}
 .vf-model i{position:absolute;top:8px;left:8px;background:#18794e;color:#fff;font-style:normal;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px}
 .vf-model[aria-pressed=true]{border-color:var(--red);box-shadow:0 0 0 2px var(--red) inset}
 .vf-model[aria-pressed=true]:after{content:"✓";position:absolute;top:6px;right:8px;width:20px;height:20px;border-radius:50%;background:var(--red);color:#fff;font-size:12px;line-height:20px}
@@ -180,6 +182,7 @@ img{max-width:100%;display:block}a{color:inherit}
  <p class="vf-sub">Giá gói phim và các xe thực tế bên dưới sẽ lọc theo dòng xe bạn chọn.</p>
  <div class="vf-fbar"><div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe"><button type="button" data-t="all" aria-pressed="true">Tất cả (19)</button><button type="button" data-t="ev" aria-pressed="false">Xe điện (10)</button><button type="button" data-t="green" aria-pressed="false">Green / dịch vụ (5)</button><button type="button" data-t="old" aria-pressed="false">Xe xăng (4)</button><button type="button" data-t="case" aria-pressed="false" id="vf-tab-case">Có ca thi công</button></div><input class="vf-search" type="search" id="vf-q" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></div>
  <div class="vf-models" id="vf-models" role="group" aria-label="Dòng xe VinFast"></div>
+ <p class="vf-mwrap" hidden><button type="button" class="vf-mbtn" id="vf-more" aria-expanded="false"></button></p>
  <p class="vf-grp" id="vf-grp"></p>
 </div></section>
 
@@ -297,7 +300,16 @@ img{max-width:100%;display:block}a{color:inherit}
  mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Đã thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Nhóm giá '+GN[c[2]]+'</small></span></button>'}).join('');
  fcar.innerHTML=CARS.map(function(c){return '<option>VinFast '+c[0]+'</option>'}).join('')+'<option>VinFast khác</option>';
  var tab='all',qi=document.getElementById('vf-q'),tabs=document.querySelectorAll('.vf-tabs button');
- function filt(){var q=qi.value.trim().toLowerCase().replace(/\s/g,'');document.querySelectorAll('.vf-model').forEach(function(b){b.hidden=!((tab==='all'||b.dataset.t===tab||(tab==='case'&&b.dataset.case==='1'))&&b.dataset.name.toLowerCase().replace(/\s/g,'').indexOf(q)>-1)})}
+ var open=false,mb=document.getElementById('vf-more'),mwr=mb.parentNode;
+ function filt(){
+  var q=qi.value.trim().toLowerCase().replace(/\s/g,''),vis=[];
+  document.querySelectorAll('.vf-model').forEach(function(b){var ok=(tab==='all'||b.dataset.t===tab||(tab==='case'&&b.dataset.case==='1'))&&b.dataset.name.toLowerCase().replace(/\s/g,'').indexOf(q)>-1;b.hidden=!ok;if(ok)vis.push(b)});
+  var cols=getComputedStyle(mw).gridTemplateColumns.split(' ').length,lim=cols*2,extra=vis.length-lim;
+  if(extra>0&&!open)vis.slice(lim).forEach(function(b){if(b.getAttribute('aria-pressed')!=='true')b.hidden=true});
+  mwr.hidden=extra<=0;mb.setAttribute('aria-expanded',open);mb.textContent=open?'Thu gọn ▲':'Xem thêm '+extra+' dòng xe ▼';
+ }
+ mb.addEventListener('click',function(){open=!open;filt();if(!open)document.getElementById('chon-xe').scrollIntoView()});
+ addEventListener('resize',filt);
  tabs.forEach(function(t){t.addEventListener('click',function(){tab=t.dataset.t;tabs.forEach(function(x){x.setAttribute('aria-pressed',x===t)});filt()})});
  qi.addEventListener('input',filt);
  var models=document.querySelectorAll('.vf-model'),cases=document.querySelectorAll('.vf-case'),grp=document.getElementById('vf-grp'),sub=document.getElementById('vf-case-sub');
@@ -312,7 +324,7 @@ img{max-width:100%;display:block}a{color:inherit}
   sub.textContent=n?'Có '+n+' bài thi công VinFast '+nm+' đã đăng trên auto365.vn, xếp lên đầu.':'Chưa có bài thi công riêng cho VinFast '+nm+'; tham khảo các xe VinFast khác bên dưới.';
  }
  models.forEach(function(b){b.addEventListener('click',function(){pick(b)})});
- pick(document.querySelector('.vf-model[aria-pressed=true]'));
+ pick(document.querySelector('.vf-model[aria-pressed=true]'));filt();
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;document.getElementById('bao-gia').scrollIntoView({behavior:'smooth'});setTimeout(function(){document.querySelector('#bao-gia [name=fullname]').focus({preventScroll:true})},500)});
  // Lead form — chỉ báo thành công khi API trả {"success": true}
  var f=document.getElementById('bao-gia'),msg=f.querySelector('.vf-msg');
