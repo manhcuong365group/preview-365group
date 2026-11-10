@@ -35,7 +35,7 @@
 | Form chặn mọi số điện thoại (P0) | R3 | Sửa regex (commit `c2ecb99e`), test 0900000000 / 090 000 0000 / +849… |
 | Popup giữ dữ liệu cũ | R3 | Reset khi mở từ nút chung |
 | "Về Auto365" dẫn nhầm, nhãn đánh giá sai hồ sơ | R2, R3 | Sửa đích link |
-| Dịch vụ nằm quá sâu | R1, R3 | Đưa lên ngay dưới hero (mobile ~1.050px, trước ~2.300px) — commit `9ecdab4c` |
+| Dịch vụ nằm quá sâu | R1, R3 | Chủ trang chốt giữ thứ tự: giới thiệu (Vì sao chọn, Chứng nhận) trước, dịch vụ sau; hero có nút "Xem dịch vụ tại Thủ Đức" (10/11) |
 | Popup "Xem dịch vụ tại Thủ Đức" thiếu 2 nhóm | R3 | Đủ 6 nhóm (thêm Nội thất da, Xe điện) |
 | Link camera chỉ dẫn 70mai | R3 | Trỏ `/camera-hanh-trinh-o-to` |
 | Ghi chú form dài | — | Còn "Chỉ cần số điện thoại." — commit `595c9c08` |
