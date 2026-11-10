@@ -4,11 +4,11 @@
 |---|---|
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `034230dfaf8ef29fca88f07f1a6e18963d1f2f28ba47b9ff69c0c301e9f78ef7` |
+| SHA-256 index.html | `1f9e6ed861f9001af1ad67f1a86f2173221cf13c970cbc2cb35734824ad8a540` |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 |
 | Tự chấm V1.9 | 89,5/100 (chấm lại 09/11) — chưa đạt (xem 03) |
-| Tự chấm 10/11/2026 | **95,4/100 — ĐẠT** (S 28,8, G 23,8) |
-| **Trạng thái** | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (lỗi mở trước production: ảnh minh họa AI)**; lỗi mở trước production: ảnh minh họa AI |
+| Tự chấm 10/11/2026 | **95,8/100 — ĐẠT** (S 28,8, G 24,2) |
+| **Trạng thái** | **ĐÃ DUYỆT U1–U3 — chủ quản test máy thật và ký 07/11/2026 (ảnh thực tế đã thay 10/11; còn 2 ảnh Cos/Pha mô phỏng AI có nhãn)**; lỗi mở trước production: ảnh minh họa AI |
 
 ## Phiếu U1–U3 (tự kiểm 07/11/2026)
 
@@ -24,7 +24,7 @@ Kiểm trên localhost (bản cùng SHA ở trên), không gửi lead thật.
 | Bảng so sánh | 7 dòng, cuộn ngang trên mobile |
 | Slider case / thẻ xe khác | Cuộn ngang đúng thiết kế |
 | Modal báo giá | Mở từ thẻ sản phẩm, hiển thị đúng |
-| Lỗi mở | Toàn bộ ảnh là minh họa AI (MG-01) |
+| Lỗi mở | Còn 2 ảnh Cos/Pha mô phỏng AI có nhãn (MG-01) |
 
 ### U2 — CTA / lead: ĐẠT (chủ quản test máy thật 07/11/2026) (chưa test backend thật)
 
@@ -48,7 +48,7 @@ Kiểm trên localhost (bản cùng SHA ở trên), không gửi lead thật.
 | Reviewer | Person Nguyễn Quang Đạo + reviewedBy trong schema; dòng "Rà soát kỹ thuật" link /tac-gia/nguyen-quang-dao |
 | Bảng xác nhận | `XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md` — 9 mẫu khớp ItemList |
 | JSON-LD | `JSON.parse` OK |
-| Lỗi mở | Chưa có phiếu PDF; ảnh AI chưa thay |
+| Lỗi mở | Chưa có phiếu PDF |
 
 ## Kết luận
 
@@ -59,6 +59,7 @@ U1–U3 đạt — chủ quản test máy thật và ký 07/11/2026. Tổng tự
 | Ngày | Nội dung |
 |---|---|
 | 10/11/2026 | Chấm lại theo thang VF5 (không trừ production/CRM): 95,4/100 — ĐẠT ngưỡng V1.9 (xem 03) |
+| 10/11/2026 | Thay 5 ảnh thực tế Minio Green tại Auto365 (01 hero 1600×902, 02 mặt trước 1600×1067, 03 đang lắp, 04 cận bi gầm, 07 hoàn thiện); bỏ nhãn AI, sửa ALT/OG/caption; 05/06 Cos/Pha vẫn mô phỏng AI có nhãn; dateModified 2026-11-10; G3 4,0 → 4,4, tổng 95,8 |
 | 07/11/2026 | Dựng trang; anh Đạo xác nhận 9 mẫu; bộ ảnh minh họa AI |
 | 07/11/2026 | Tự kiểm U1–U3, tự chấm 88,0/100 — chờ chủ quản ký |
 | 07/11/2026 | Chủ quản test máy thật U1–U3 và ký — ĐÃ DUYỆT U1–U3; còn ảnh AI phải thay trước production |

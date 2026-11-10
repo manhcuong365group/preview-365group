@@ -2,7 +2,7 @@
 
 | Trường | Giá trị |
 |---|---|
-| SHA-256 index.html | `63952953712f9c61340ae1ffa1c2652375e6e65eb0ded7bfd1cba58f58aa47e4` |
+| SHA-256 index.html | `6e9377b226c746d9a47810755c003a2ab9e7e890ea5c801c82f9ef59b51b340f` |
 | Người chấm | Tự chấm (team nội dung); chủ quản đã test máy thật và ký U1–U3 07/11/2026 |
 
 ## Chấm lại 10/11/2026 — bảng điểm áp dụng
@@ -19,13 +19,13 @@ Chấm theo cùng thang đã dùng cho VF5/VF8/MPV7/EC Van: chấm trên preview
 | S3 Liên kết | 10 | 9,6 | Breadcrumb, link sản phẩm tuyệt đối, thẻ xe VinFast khác, link hub trong breadcrumb |
 | G1 Trả lời rõ | 10 | 9,9 | Trả lời nhanh đầu trang, FAQ trả lời trực tiếp |
 | G2 Lập luận/giới hạn | 10 | 9,9 | Dòng phạm vi xác nhận; W/K khác vùng sáng thực tế; Cos/Pha ghi là mô phỏng |
-| G3 Nguồn/bằng chứng | 5 | 4,0 | Reviewer có tên + bảng xác nhận; ảnh AI có nhãn; chưa có case đúng xe |
+| G3 Nguồn/bằng chứng | 5 | 4,3 | Reviewer có tên + bảng xác nhận; 4/7 ảnh là ảnh thực tế VF Wild tại Auto365, 3 ảnh AI có nhãn; chưa có case đúng xe |
 | U1 Hiển thị | 5 | 4,8 | 320/375/768/1440 không tràn; chủ quản test máy thật 07/11 |
 | U2 CTA/lead | 5 | 4,8 | Form báo giá theo mẫu, validate SĐT, chỉ báo thành công khi success |
 | U3 Hồ sơ | 5 | 4,9 | 02/03/04 cùng SHA; chủ quản ký 07/11/2026 |
-| **Tổng** | **100** | **95,6** | **ĐẠT** (C 28,5 · S 28,8 ≥ 28,5 · G 23,8 ≥ 23,75 · U 14,5) |
+| **Tổng** | **100** | **95,9** | **ĐẠT** (C 28,5 · S 28,8 ≥ 28,5 · G 24,1 ≥ 23,75 · U 14,5) |
 
-Còn mở trước production (không trừ điểm preview): thay ảnh AI bằng ảnh chụp thật; bổ sung case VF Wild khi có.
+Còn mở trước production (không trừ điểm preview): thay 3 ảnh AI còn lại (kỹ thuật viên lắp, Cos/Pha) bằng ảnh thật; bổ sung case VF Wild khi có.
 
 ## Điểm 12 tiêu chí
 
@@ -62,5 +62,6 @@ Còn mở trước production (không trừ điểm preview): thay ảnh AI bằ
 
 | Ngày | Nội dung |
 |---|---|
+| 10/11/2026 | Thay 4 ảnh bằng ảnh thực tế VF Wild tại Auto365 (hero, mặt trước, cận cảnh bi gầm, bàn giao); còn 3 ảnh minh họa AI có nhãn (kỹ thuật viên lắp, vùng sáng Cos/Pha); G3 4,0 → 4,3, tổng 95,9/100; dateModified 2026-11-10 |
 | 09/11/2026 | Chấm lại sau vá 08/11: C1 9,5, G2 9,5, U3 4,5 (chủ quản đã ký 07/11) → 90,0/100, vẫn CHƯA ĐẠT do ảnh AI (S2) và chưa có production (S3); sửa lỗi CSS khối vf3lp-ev-style (thiếu `}` làm nhiều rule chỉ chạy trên desktop) |
 | 09/11/2026 | Vá audit content (reviewer 08/11, 8,2/10): dòng phạm vi dưới H2 sản phẩm + bảng xác nhận; caption "Ảnh minh họa AI" trên 8 khung ảnh (Cos/Pha: "Mô phỏng vùng sáng (ảnh minh họa AI)"); kích thước thân theo trang SP (301 V2/F10 New/F10 Turbo V2/GTR G1 Turbo V2 129×67×80, F10 Pro V2 129×83×79, X3 Ultra 128×76×76, F10 2.0 New 107×40×69 mm); bảo hành trên thẻ Titan/Henvvei/Red Lighting 24 tháng, Matrix Light M1 Pro/Fogway Gen 1 12 tháng; F10 New (2025) ghi "bản 12–16V" ở thẻ/gợi ý/bảng/dòng so sánh JS/popup, ghi chú bản 24V 4.500.000đ/bộ; trả lời nhanh 69 từ; mục "Khi nào chưa cần lắp bi gầm?" trước FAQ; FAQ 6 câu (thêm câu hệ điện, bảo hành 69 từ) đồng bộ FAQPage; bước 6 thêm kiểm tra Cos/Pha và nguồn điện; dateModified 2026-11-09, lastReviewed giữ 2026-11-07. Kiểm 320/390/768/1440 không tràn |

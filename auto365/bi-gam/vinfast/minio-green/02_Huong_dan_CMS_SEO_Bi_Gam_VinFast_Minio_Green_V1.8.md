@@ -5,7 +5,7 @@
 | Trang | Bi gầm VinFast Minio Green (MODEL_GUIDE, tư vấn theo dòng xe) |
 | Preview | https://preview-365group.pages.dev/bi-gam/vinfast/minio-green/ |
 | URL production | https://auto365.vn/nang-cap-anh-sang-bi-gam/vinfast/minio-green |
-| SHA-256 index.html | `034230dfaf8ef29fca88f07f1a6e18963d1f2f28ba47b9ff69c0c301e9f78ef7` |
+| SHA-256 index.html | `1f9e6ed861f9001af1ad67f1a86f2173221cf13c970cbc2cb35734824ad8a540` |
 | Dựng | 07/11/2026, từ khung trang VF9 |
 | Kỹ thuật xác nhận | Anh Nguyễn Quang Đạo — 9 mẫu, 07/11/2026 (bảng `XAC_NHAN_TUONG_THICH_MINIO_GREEN_20261107.md`) |
 | datePublished / dateModified / lastReviewed | 2026-11-07 / 2026-11-09 / 2026-11-07 |
@@ -33,17 +33,17 @@ Organization, WebSite, Person (Nguyễn Quang Đạo), BreadcrumbList, Article, 
 
 ## 4. Ảnh và ALT
 
-Bộ ảnh hiện tại là **ảnh minh họa AI (07/11/2026)** — **phải thay ảnh chụp thực tế trước production**.
+Ảnh 01/02/03/04/07 là **ảnh thực tế Minio Green tại Auto365 (10/11/2026)**; ảnh 05/06 Cos/Pha vẫn là **mô phỏng AI có nhãn** — thay khi có ảnh tường đo thật.
 
 | File | Vị trí | ALT |
 |---|---|---|
-| minio-green_01-hero-toan-xe.jpg | Hero, OG, Twitter, Article.image | Ảnh minh họa AI VinFast Minio Green |
-| minio-green_02-hoc-den-gam-zin.jpg | Tổng quan | Ảnh minh họa AI vị trí lắp bi gầm trên cản trước…, trước khi lắp đèn |
-| minio-green_03-ky-thuat-vien-dang-lap.jpg | Thẻ lưu ý lắp | Ảnh minh họa AI kỹ thuật viên lắp bi gầm… |
-| minio-green_04-bi-gam-sau-lap.jpg | Thẻ báo giá | Ảnh minh họa AI bi gầm sau khi lắp… |
+| minio-green_01-hero-toan-xe.jpg | Hero, OG, Twitter, Article.image | VinFast Minio Green sau khi lắp bi gầm tại Auto365, ảnh thực tế |
+| minio-green_02-hoc-den-gam-zin.jpg | Tổng quan | Mặt trước VinFast Minio Green tại Auto365, ảnh thực tế |
+| minio-green_03-ky-thuat-vien-dang-lap.jpg | Thẻ lưu ý lắp | Kỹ thuật viên Auto365 lắp bi gầm vào hốc cản…, ảnh thực tế |
+| minio-green_04-bi-gam-sau-lap.jpg | Thẻ báo giá | Cận cảnh bi gầm sau khi lắp…, ảnh thực tế tại Auto365 |
 | minio-green_05-vung-sang-cos.jpg | Lý do chọn | Ảnh minh họa AI đường cắt Cos trên tường đo, không phải phép đo |
 | minio-green_06-vung-sang-pha.jpg | Lý do chọn | Ảnh minh họa AI vùng sáng Pha trên tường đo, không phải phép đo |
-| minio-green_07-ban-giao-xe.jpg | Lý do chọn (2 thẻ) | Ảnh minh họa AI VinFast Minio Green sau khi lắp / hoàn thiện |
+| minio-green_07-ban-giao-xe.jpg | Lý do chọn (2 thẻ) | VinFast Minio Green sau khi lắp / hoàn thiện, ảnh thực tế tại Auto365 |
 
 Khi có ảnh thật: giữ tên file, sửa ALT bỏ "minh họa AI", cập nhật width/height, khối nội bộ và phiếu 03/04.
 
@@ -60,7 +60,7 @@ Khi có ảnh thật: giữ tên file, sửa ALT bỏ "minh họa AI", cập nh�
 - [ ] Robots `index, follow`; canonical self; sitemap trang + ảnh.
 - [ ] Form `/api/leads`: chỉ báo thành công khi `{"success": true}` kèm `lead_id`; field `service`/`source_page`/`car_model` = VinFast Minio Green; `product_url` của modal báo giá phải là auto365.vn.
 - [ ] Mọi ảnh/CSS/JS trả 200, không mixed content.
-- [ ] Thay ảnh AI bằng ảnh thực tế trước khi publish.
+- [x] Thay ảnh AI bằng ảnh thực tế (5/7 ảnh, 10/11). Còn 2 ảnh Cos/Pha mô phỏng có nhãn.
 
 ## Nhật ký
 
@@ -71,3 +71,4 @@ Khi có ảnh thật: giữ tên file, sửa ALT bỏ "minh họa AI", cập nh�
 | 07/11/2026 | Bộ 7 ảnh minh họa AI; khôi phục khung ảnh 03/04 |
 | 07/11/2026 | Viết lại hồ sơ 02/03/04 riêng cho Minio Green; tự kiểm U1–U3 |
 | 09/11/2026 | Vá audit content 08/11 (7,2/10): sapo trước Trả lời nhanh (74 từ), meta 160 ký tự nhắc lens 2.0/3.0; dòng phạm vi dưới H2; bảng so sánh đủ 9 mẫu + cột kích thước thân theo trang SP (X3 Ultra, AES SV 2.0 Max xác nhận bằng trang SP); JS so sánh bỏ "Cần xác nhận theo mã"; caption "Ảnh minh họa AI" / "Mô phỏng vùng sáng" trên 8 ảnh; bảng chọn theo nhu cầu + "Khi nào chưa cần nâng cấp" + kết luận; quy trình 7 bước dạng bảng; FAQ 6 câu (bảo hành 72 từ), 3 câu chi nhánh chuyển sang mục tiếp nhận; dateModified 2026-11-09 |
+| 10/11/2026 | Thay 5 ảnh thực tế Minio Green tại Auto365 (01 hero 1600×902, 02 mặt trước 1600×1067, 03 đang lắp, 04 cận bi gầm, 07 hoàn thiện); bỏ nhãn AI, sửa ALT/OG/caption; 05/06 Cos/Pha vẫn mô phỏng AI có nhãn; dateModified 2026-11-10; G3 4,0 → 4,4, tổng 95,8 |

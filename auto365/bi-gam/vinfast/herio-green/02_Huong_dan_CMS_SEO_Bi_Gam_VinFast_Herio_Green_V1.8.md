@@ -8,7 +8,7 @@
 | Loại trang | MODEL_GUIDE — tư vấn bi gầm theo dòng xe (không phải case thi công) |
 | Dựng | 07/11/2026 từ khung trang VF5 (Herio Green cùng nền tảng VF 5) |
 | Kiểm duyệt kỹ thuật | anh Nguyễn Quang Đạo — xác nhận 17 mẫu lắp được Herio Green (07/11/2026) |
-| SHA-256 index.html | `59053113764a084e7252d57e7f7010f1069bc69923f1c326b312f96ce2d372d2` |
+| SHA-256 index.html | `2abccf470e41096e30e0ac3db459d9881e37d48bd3ce9ecc47306223e6d29233` |
 
 ## 1. Metadata
 
@@ -29,16 +29,16 @@ WebSite, Organization, BreadcrumbList (Trang chủ → Nâng cấp ánh sáng bi
 
 ## 3. Ảnh và ALT
 
-Bộ ảnh hiện tại là **ảnh minh họa AI (07/11/2026)** — không phải case thi công; ảnh Cos không phải phép đo. **Phải thay bằng ảnh chụp thực tế Herio Green trước khi lên production.**
+Từ 10/11/2026: 5 ảnh (hero, cản trước, lắp, bi gầm, hoàn thiện) là **ảnh thực tế Herio Green tại Auto365**; riêng ảnh vùng sáng Cos (05) vẫn là **minh họa AI**, không phải phép đo — thay khi có ảnh chụp tường thật.
 
 | File | ALT hiện tại |
 |---|---|
-| hinh/herio-green_01-hero-toan-xe.jpg (hero, OG, Twitter, schema image) | Ảnh minh họa AI VinFast Herio Green |
-| hinh/herio-green_02-hoc-den-truoc-lap.jpg | Ảnh minh họa AI hốc cản trước VinFast Herio Green trước khi lắp bi gầm |
-| hinh/herio-green_03-ky-thuat-vien-lap.jpg | Ảnh minh họa AI kỹ thuật viên lắp bi gầm trên VinFast Herio Green |
-| hinh/herio-green_04-bi-gam-sau-lap.jpg | Ảnh minh họa AI bi gầm bật sáng trên VinFast Herio Green |
+| hinh/herio-green_01-hero-toan-xe.jpg (hero, OG, Twitter, schema image) | Ảnh thực tế VinFast Herio Green lắp bi gầm tại Auto365 |
+| hinh/herio-green_02-hoc-den-truoc-lap.jpg | Ảnh thực tế cản trước VinFast Herio Green sau lắp bi gầm tại Auto365 |
+| hinh/herio-green_03-ky-thuat-vien-lap.jpg | Ảnh thực tế kỹ thuật viên Auto365 lắp bi gầm trên VinFast Herio Green |
+| hinh/herio-green_04-bi-gam-sau-lap.jpg | Ảnh thực tế bi gầm trên cản trước VinFast Herio Green tại Auto365 |
 | hinh/herio-green_05-vung-sang-cos.jpg | Vùng sáng Cos trên tường (minh họa AI, không phải phép đo) |
-| hinh/herio-green_07-ban-giao-xe.jpg | Ảnh minh họa AI VinFast Herio Green hoàn thiện sau lắp bi gầm |
+| hinh/herio-green_07-ban-giao-xe.jpg | Ảnh thực tế VinFast Herio Green hoàn thiện sau lắp bi gầm tại Auto365 |
 | hinh/tra-cuu-bao-hanh-phieu-ban-giao.webp | Ảnh minh họa: tra cứu bảo hành điện tử và phiếu bàn giao sản phẩm Auto365 |
 
 Khi có ảnh thật: giữ tên file, đổi ALT sang mô tả thực tế (không ghi "minh họa AI"), cập nhật og:image:alt.
