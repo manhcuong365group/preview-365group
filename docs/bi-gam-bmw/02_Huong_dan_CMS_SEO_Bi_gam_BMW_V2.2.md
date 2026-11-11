@@ -4,9 +4,9 @@
 |---|---|
 | URL production đề xuất | https://auto365.vn/nang-cap-anh-sang-bi-gam/bmw |
 | Preview | https://preview-365group.pages.dev/bi-gam/bmw/ |
-| Title | Lắp bi gầm BMW: chọn đèn theo dòng xe X3, X5, X6, 3 Series | Auto365 |
+| Title | Lắp bi gầm BMW: chọn đèn theo dòng xe X3, X5, X6, 3 Series \| Auto365 |
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
-| Meta description | Tra cứu bi gầm BMW theo dòng và đời xe, xem 4 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description | Tra cứu bi gầm BMW theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | Schema | CollectionPage, BreadcrumbList, ItemList (dòng xe, hồ sơ), FAQPage |
 | Robots preview | noindex, nofollow — production bỏ |
 | Dòng xe trên lưới | 13 dòng |
@@ -22,3 +22,17 @@
 node scripts/build-bi-gam-bmw.mjs
 node scripts/export-bi-gam-bmw-docs.mjs
 ```
+
+
+## Bản vá 11/11/2026 (tái kiểm 10/11)
+
+| Mục | Giá trị |
+|---|---|
+| Dòng xe | 13 |
+| Hồ sơ case | 5 |
+
+- Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
+- Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
+- FAQ chi phí có link **danh sách mẫu bi gầm và giá tham khảo** (`https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham`), tách giá đèn theo mẫu khỏi báo giá hoàn thiện theo xe.
+- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu (Coupé = Coupe) và bỏ chữ "Hybrid".
+- Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.

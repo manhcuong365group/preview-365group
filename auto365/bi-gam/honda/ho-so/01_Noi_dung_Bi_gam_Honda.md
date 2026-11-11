@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Honda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `9375cb99eafa839e7b0352a4bf003feecc2c5ae49334808f8c48f76b95a282a5` |
-| SHA-256 content-src.html | `b240876c433199ef29cf133a5266a3b7f42750fa487360fe21ff6d97c5f5fd29` |
+| SHA-256 index.html | `3536e296196ce76cd661b46a6df25da9646f0994ece09191eb4a54d7a559e428` |
+| SHA-256 content-src.html | `ba6808d5291ed01f44fe9854e2863b702432bb9f8fd125bb6d0d2ea02d008d25` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -151,7 +151,7 @@ Các dòng đã có hồ sơ lắp thực tế gồm HR-V, City, BR-V, Civic, CR
 
 **Xe Honda nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ Honda hiện có chưa có ca lens 2.0 inch; mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Honda BR-V L 2023 lắp X-Light F10 Turbo 5500K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Honda đã lắp mẫu bi gầm nào?".
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ Honda hiện có chưa có ca lens 2.0 inch; mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Honda BR-V L 2023 lắp X-Light F10 Turbo 5500K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Honda đã lắp bi gầm tại Auto365.
 
 **Một dòng Honda có nhiều đời thì chọn bi gầm thế nào?**
 
@@ -175,7 +175,7 @@ Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos r�
 
 **Giá lắp bi gầm Honda gồm những khoản nào?**
 
-Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.
+Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe. Giá đèn theo mẫu xem ở danh sách mẫu bi gầm và giá tham khảo; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 

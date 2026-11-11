@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `74da639fab22e33bbfe64c48608d0f6a6a14553155715a69a132a83b63c33120` |
-| SHA-256 content-src.html | `c0f45ae0921a55ae3f63f8735dbfae02ba038639217e50349ead42153b2e7f04` |
+| SHA-256 index.html | `afa8975158a95d6dec7586f223b0c3bc18764eac2ffaf90934f380cd8125b400` |
+| SHA-256 content-src.html | `2bb584604dad2dd7458733923e041a1fc27a6469cbc8d9a8f4df156fbbe9f1fa` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -139,11 +139,11 @@ Các dòng đã có hồ sơ lắp thực tế gồm XL7, Swift và Vitara. Các
 
 **Xe Suzuki nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Suzuki XL7 đã có hồ sơ lắp mẫu lens 2.0 inch (X-Light F10 2.0 New) và hồ sơ XL7 2023 lắp X-Light F10 New bản 2025 lens 3.0 inch; Swift lắp AES SV 3.0 Pro và Vitara lắp bi gầm GTR, đều lens 3.0 inch. Cùng dòng xe vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Hai hồ sơ Suzuki XL7 2023 cho thấy rõ điều này: X-Light F10 2.0 New dùng lens 2.0 inch, còn X-Light F10 New bản 2025 dùng lens 3.0 inch. Trước khi chọn, kỹ thuật viên kiểm tra hốc đèn, pát, giắc và khoảng hở trên chính xe của chủ xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Suzuki đã lắp bi gầm tại Auto365.
 
 **Một dòng Suzuki có nhiều đời thì chọn bi gầm thế nào?**
 
-Mỗi đời xe có thể khác hốc đèn và điểm cấp nguồn. Auto365 đã có ba hồ sơ XL7 (2024, 2023 và bản F10 2.0 New) với hai mẫu lens khác nhau; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
+Mỗi đời xe có thể khác hốc đèn và điểm cấp nguồn. Auto365 đã có hai hồ sơ XL7 2023 với hai mẫu lens khác nhau, cùng một bài tổng hợp ảnh thi công XL7; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.
 
 **Nâng cấp đèn bi gầm chính hãng cho Suzuki ở TP. Hồ Chí Minh ở đâu?**
 
@@ -163,7 +163,7 @@ Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos r�
 
 **Giá lắp bi gầm Suzuki gồm những khoản nào?**
 
-Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.
+Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe. Giá đèn theo mẫu xem ở danh sách mẫu bi gầm và giá tham khảo; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 

@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `5225900bce76ca65826df57a24b295df02e4e60cb3274ac111508b496cd6cf84` |
-| SHA-256 content-src.html | `8fefc83265c501b5787977142ce2f11019a1bbb5670b054310654d85ff0e79a3` |
+| SHA-256 index.html | `00760e75874f44c6feb92d89f3bad3d2c11ef7fcd3eab3124daf4beff708e4b9` |
+| SHA-256 content-src.html | `a5d143dbf3734f1cf18990599556412ceabf0b6efd232aa8a9ad2ce7046817c9` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -36,7 +36,7 @@ Bi gầm BMW cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | BMW 2 Series Gran Coupé | Sedan | Liên hệ tư vấn | — |
 | BMW 4 Series | Sedan | Liên hệ tư vấn | — |
 | BMW 8 Series | Sedan | Liên hệ tư vấn | — |
-| BMW Z4 | Sedan | Liên hệ tư vấn | — |
+| BMW Z4 | undefined | Liên hệ tư vấn | — |
 
 ## Xe BMW đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
 
@@ -132,7 +132,7 @@ Các dòng đã có hồ sơ lắp thực tế gồm X3, X5 và X6; X5 có bài 
 
 **Xe BMW nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ BMW hiện có (X5 2010, X3 2017, X5 2013, X6 2019) đều lắp mẫu lens 3.0 inch (X-Light F10 Turbo V2, X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2); mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Các hồ sơ BMW hiện có (X5 2010, X3 2017, X5 2013, X6 2019) đều lắp mẫu lens 3.0 inch (X-Light F10 Turbo V2, X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2); mẫu 2.0 inch chỉ chọn khi hốc gầm nhỏ và đã đo thực tế. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe BMW đã lắp bi gầm tại Auto365.
 
 **Một dòng BMW có nhiều đời thì chọn bi gầm thế nào?**
 
@@ -156,7 +156,7 @@ Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos r�
 
 **Giá lắp bi gầm BMW gồm những khoản nào?**
 
-Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.
+Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe. Giá thiết bị và cấu hình tham khảo cho X5 xem ở bài tư vấn bi gầm BMW X5. Giá đèn theo mẫu xem ở danh sách mẫu bi gầm và giá tham khảo; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 

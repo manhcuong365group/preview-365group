@@ -26,9 +26,9 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Eve
 
 | Trường | Giá trị |
 |---|---|
-| Title | Bi gầm Ford theo từng dòng xe: Ranger, Everest, Escape, EcoSport \| Auto365 |
+| Title | Lắp bi gầm Ford: chọn đèn theo dòng xe Ranger, Everest, Escape, EcoSport \| Auto365 |
 | Meta description | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
-| H1 | Bi gầm Ford theo từng dòng xe |
+| H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
 | Robots | Preview: `noindex, nofollow, noarchive` + header `X-Robots-Tag: noindex`. **Production: `index, follow`, kiểm header không còn noindex** |
 | OG image | Preview dùng `m-everest.webp`; production thay bằng ảnh trên CDN auto365.vn (đề xuất FOR-IMG-01) |
 
@@ -50,8 +50,8 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Focus, EcoSport, Escape, Eve
 | Hồ sơ (21) | Bài case bi gầm Ford đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: AES, GTR, X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
-| Bảng tra "Xe Ford đã lắp mẫu bi gầm nào?" (`#bang-tra`, bổ sung GEO 07/11, anh Đạo duyệt 07/11) | Sinh từ danh sách case: dòng xe, đời/phiên bản theo tiêu đề bài (bài không nêu đời chỉ ghi dòng xe; 3 bài lấy năm ghi rõ trong nội dung), mẫu đèn, lens chỉ khi tên mẫu nêu rõ (F10 2.0 New, AES SV 2.0/3.0 Max), link bài |
-| FAQ "Xe Ford nên chọn bi gầm 2.0 hay 3.0 inch?" | Dẫn đúng các xe đã lắp lens 2.0/3.0 trong bảng tra (bổ sung GEO 07/11) |
+| Mẫu đèn · lens trên thẻ hồ sơ (thay bảng tra `#bang-tra` đã gỡ 10/11) | Dữ liệu từng ca: hãng, mẫu bi gầm, lens; bộ lọc hãng dùng cùng dữ liệu |
+| FAQ "Xe Ford nên chọn bi gầm 2.0 hay 3.0 inch?" | Ví dụ hai cỡ lens có nguồn; dẫn về khối hồ sơ `#xe-thuc-te` |
 | Cẩm nang đèn bi gầm (8) | Bài kiến thức chung, dùng chung với hub Kia |
 | FAQ HCM | Auto365.vn - Trụ Sở Chính (4/4/1/7 Đường Số 3, Phường Hiệp Bình), link bản đồ, hotline 0365 365 911 |
 | Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Ford"; thẻ tư vấn giữ câu trung tính (không nêu tên người duyệt trong khối dùng chung); người rà soát ghi ở byline và schema |
@@ -84,7 +84,7 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 2. Đổi robots, OG image; xoá khối "Kiểm tra nội bộ" và script `#bgford-branch-preview`.
 3. Gửi lead test (service "Bi gầm Ford", xe ở `car_model`); kiểm schema; kiểm responsive.
 
-## 7. Nguồn lens bảng tra (09/11/2026)
+## 7. Nguồn lens theo ca (09/11/2026 — nay hiển thị trên thẻ hồ sơ)
 
 | Xe trong hồ sơ | Mẫu đèn | Lens | Căn cứ |
 |---|---|---|---|
@@ -109,3 +109,17 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | [Everest](https://auto365.vn/ford-everest-do-den-gtr-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
 | [Escape](https://auto365.vn/nang-cap-ford-escape-do-den-naoevo-s9-pro-va-g1-turbo) | GTR G1 Turbo | 3.0 | thông số mẫu [https://auto365.vn/bi-gam-gtr-g1-turbo](https://auto365.vn/bi-gam-gtr-g1-turbo) |
 | [Ranger Raptor](https://auto365.vn/ford-raptor-do-den-bi-gam-x-light-f10-new-nhiet-mau-5500k) | X-Light F10 New | 3.0 inch | Chủ quản xác nhận 10/11/2026 (F10 New bản 2023 = 3.0 inch) |
+
+
+## Bản vá 11/11/2026 (tái kiểm 10/11)
+
+| Mục | Giá trị |
+|---|---|
+| Dòng xe | 14 |
+| Hồ sơ case | 21 |
+
+- Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
+- Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
+- FAQ chi phí có link **danh sách mẫu bi gầm và giá tham khảo** (`https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham`), tách giá đèn theo mẫu khỏi báo giá hoàn thiện theo xe.
+- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu (Coupé = Coupe) và bỏ chữ "Hybrid".
+- Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.

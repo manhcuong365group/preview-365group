@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `e270a2c80765e56b01b00758cab2e9586237c5e5f3c552c319142737463f73a9` |
-| SHA-256 content-src.html | `f02da8b430248105bfd585a1648cbee95771573b5de859311e4b70d1bb315f28` |
+| SHA-256 index.html | `37c3a53c879eb4d180211841ebc875c6039e4a2b2402ca56630290d4d926bf89` |
+| SHA-256 content-src.html | `97291af476cb4fad076b157d78e83d90f60d29161023ede5ea4f7ba06204203f` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -161,7 +161,7 @@ Các dòng đã có hồ sơ lắp thực tế gồm EcoSport, Focus, Ranger Rap
 
 **Xe Ford nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Ford Everest 2025 Sport lắp X-Light F10 Hyper 2.0 với lens 2.0 inch. Ford EcoSport 2017 lắp AES SV 3.0 Max với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Ford đã lắp mẫu bi gầm nào?".
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Ford Everest 2025 Sport lắp X-Light F10 Hyper 2.0 với lens 2.0 inch. Ford EcoSport 2017 lắp AES SV 3.0 Max với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Ford đã lắp bi gầm tại Auto365.
 
 **Ford đời cũ có lắp bi gầm được không?**
 
@@ -185,7 +185,7 @@ Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos r�
 
 **Giá lắp bi gầm Ford gồm những khoản nào?**
 
-Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.
+Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe. Giá đèn theo mẫu xem ở danh sách mẫu bi gầm và giá tham khảo; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 

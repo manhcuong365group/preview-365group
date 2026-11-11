@@ -45,3 +45,12 @@ Anh Nguyễn Quang Đạo đã duyệt phần vá theo tái kiểm độc lập 
 - Bỏ bảng tra hồ sơ (khối "Xe … đã lắp mẫu bi gầm nào?") và nhãn đỏ trên các H2.
 - Đổi 5 ảnh khối "Vì sao chọn" (hệ thống chi nhánh, bảo hành điện tử, căn chỉnh Cos/Pha, chứng nhận đại lý ủy quyền X-Light, tư vấn).
 - Ảnh Ford Tourneo đổi sang Tourneo Custom 2018 (đúng đời bán tại Việt Nam 2019–2021).
+
+## Bản vá 11/11/2026 — chờ anh Nguyễn Quang Đạo xác nhận
+
+- Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
+- Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
+- FAQ chi phí có link **danh sách mẫu bi gầm và giá tham khảo** (`https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham`), tách giá đèn theo mẫu khỏi báo giá hoàn thiện theo xe.
+- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu (Coupé = Coupe) và bỏ chữ "Hybrid".
+- Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.
+- Phạm vi duyệt: 14 dòng xe, 21 hồ sơ. SHA bản phát hành ghi trong 01 và đầu mỗi tài liệu HTML (cùng một lần xuất).

@@ -114,7 +114,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Lắp bi gầm Mazda: chọn đèn theo dòng xe Mazda 2, Mazda 6, CX-5, CX-8 | Auto365';
-const desc = 'Tra cứu bi gầm Mazda theo dòng và đời xe, xem 12 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
+const desc = 'Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -175,5 +175,5 @@ if (!outFixed.includes(MAINJS)) throw new Error('main.js script not found');
 const outJq = outFixed.includes('jquery-3.6.0.min.js') ? outFixed : outFixed.replace(MAINJS, '<script defer src="https://v2.auto365.vn/assets/frontend/vendor/jquery/jquery-3.6.0.min.js"></script>\n' + MAINJS);
 const CAPS=[["hinh/ly-do-bao-hanh.webp","Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365"],["hinh/ly-do-chinh-hang.webp","Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light"],["ly-do-ky-thuat-vien-lap-bi-gam.webp","Ảnh thực tế: kỹ thuật viên lắp bi gầm vào hốc đèn cản trước"]];
 const addCaps = s => s.replace(/(<figure class="bw-photo"><img src="([^"]+)"[^>]*>)<\/figure>/g, (m, a, src) => { const c = CAPS.find(([k]) => src.includes(k)); return c ? a + '<figcaption class="bw-cap">' + c[1] + '</figcaption></figure>' : m; }).replace('</head>', '<style>.bw-cap{font-size:12px;color:#6b7280;padding:6px 2px 0;line-height:1.4}</style></head>');
-fs.writeFileSync(path.join(dir, 'index.html'), addCaps(outJq).split('https://auto365.vn/build/js/assets/frontend/js/newsroom-branch-finder.min.js').join('/bi-gam/_bf/newsroom-branch-finder.fix.js').replace(/newsroom-branch-finder\.fix\.js\?v=[^"]*/g,'newsroom-branch-finder.fix.js?v=20261109').replace(/, Thành phố Quảng Ninh"/g, ', tỉnh Quảng Ninh"'));
+fs.writeFileSync(path.join(dir, 'index.html'), addCaps(outJq).split('https://auto365.vn/build/js/assets/frontend/js/newsroom-branch-finder.min.js').join('/bi-gam/_bf/newsroom-branch-finder.fix.js').replace(/newsroom-branch-finder\.fix\.js\?v=[^"]*/g,'newsroom-branch-finder.fix.js?v=20261111').replace(/, Thành phố Quảng Ninh"/g, ', tỉnh Quảng Ninh"'));
 console.log('built', path.join(dir, 'index.html'), out.length, { models: models.length, cases: cases.length, faqs: faqs.length });

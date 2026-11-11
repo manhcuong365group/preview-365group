@@ -7,12 +7,12 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/mazda/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/mazda |
 | Title (78 ký tự) | Lắp bi gầm Mazda: chọn đèn theo dòng xe Mazda 2, Mazda 6, CX-5, CX-8 \| Auto365 |
-| Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 12 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (12), FAQPage |
-| SHA-256 index.html | `0f4c5e047fbaac866b50c05a5e2276ff54f266c4f17b33a9808ceb938674862f` |
-| SHA-256 content-src.html | `5d693761e17fe283611c9db9dea3dfd2830b77e81377753b89d03525c5651aea` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (13), FAQPage |
+| SHA-256 index.html | `6665a31a98a56399a075d19ab3ed6b59b94c76567abbcb5f6396c0f49f81a94c` |
+| SHA-256 content-src.html | `c4f2a27bf5eaf5b40a39a099bb47ca4c3fa39a3ce099abaf4098610f8ee5f864` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -35,10 +35,10 @@ Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống �
 | Mazda CX-30 | SUV | Liên hệ tư vấn | — |
 | Mazda CX-60 | SUV | Liên hệ tư vấn | — |
 | Mazda CX-90 | SUV | Liên hệ tư vấn | — |
-| Mazda MX-5 | Sedan | Liên hệ tư vấn | — |
+| Mazda MX-5 | undefined | Liên hệ tư vấn | — |
 | Mazda BT-50 | Bán tải | Liên hệ tư vấn | — |
 
-## Xe Mazda đã lắp bi gầm tại Auto365 (12 bài hồ sơ)
+## Xe Mazda đã lắp bi gầm tại Auto365 (13 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -56,6 +56,7 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Mazda Mazda 2 | [Mazda 2 nâng cấp bi gầm Titan 301](https://auto365.vn/mazda-2-nang-cap-bi-gam-titan-301) | 2024-09-16 |
 | Mazda CX-5 | [Mazda CX-5 lắp bi laser X-Light X6 Pro kết hợp bi gầm F10 2.0](https://auto365.vn/mazda-cx-5-do-den-bi-led-xlight-x6-pro-va-bi-gam-f10-2-0-2024) | 2024-08-17 |
 | Mazda CX-5 | [Mazda CX-5 độ đèn bi gầm X-Light F10 2.0](https://auto365.vn/mazda-do-den-bi-gam-xlight-f10-20-2024) | 2024-08-02 |
+| Mazda CX-5 | [Mazda CX-5 lắp bi gầm AES SV 2.0 Max](https://auto365.vn/bi-gam-aes-sv-20-max-cho-mazda-cx-5-gia-thong-so-va-luu-y-khi-lap) | 2026-07-09 |
 
 ## Xe Mazda lắp bi gầm cần lưu ý gì?
 
@@ -151,7 +152,7 @@ Các dòng đã có hồ sơ lắp thực tế gồm Mazda 2, Mazda 6, Mazda 626
 
 **Xe Mazda nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Mazda CX-5 2021, 2022 và CX-8 2021 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New); Mazda 2 2019, Mazda 6 2017 và CX-5 2016 lắp mẫu lens 3.0 inch (X-Light X3 Ultra, GTR G1 Turbo V2, X-Light F10 Turbo V2). Cùng dòng xe nhưng khác đời vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Mazda CX-5 2021, 2022 và CX-8 2021 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New; CX-5 còn có hồ sơ AES SV 2.0 Max); Mazda 2 2019, Mazda 6 2016, Mazda 6 2017 và CX-5 2016 lắp mẫu lens 3.0 inch (X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2, X-Light F10 Turbo V2). Cùng dòng xe nhưng khác đời vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Mazda đã lắp bi gầm tại Auto365.
 
 **Một dòng Mazda có nhiều đời thì chọn bi gầm thế nào?**
 
@@ -175,7 +176,7 @@ Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos r�
 
 **Giá lắp bi gầm Mazda gồm những khoản nào?**
 
-Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.
+Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe. Bài tư vấn theo dòng xe: CX-5, CX-8, Mazda 6. Giá đèn theo mẫu xem ở danh sách mẫu bi gầm và giá tham khảo; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 

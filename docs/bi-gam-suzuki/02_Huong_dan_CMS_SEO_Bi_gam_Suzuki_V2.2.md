@@ -4,9 +4,9 @@
 |---|---|
 | URL production đề xuất | https://auto365.vn/nang-cap-anh-sang-bi-gam/suzuki |
 | Preview | https://preview-365group.pages.dev/bi-gam/suzuki/ |
-| Title | Lắp bi gầm Suzuki: chọn đèn theo dòng xe XL7, Ertiga, Swift, Vitara | Auto365 |
+| Title | Lắp bi gầm Suzuki: chọn đèn theo dòng xe XL7, Ertiga, Swift, Vitara \| Auto365 |
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
-| Meta description | Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 3 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description | Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | Schema | CollectionPage, BreadcrumbList, ItemList (dòng xe, hồ sơ), FAQPage |
 | Robots preview | noindex, nofollow — production bỏ |
 | Dòng xe trên lưới | 8 dòng |
@@ -22,3 +22,17 @@
 node scripts/build-bi-gam-suzuki.mjs
 node scripts/export-bi-gam-suzuki-docs.mjs
 ```
+
+
+## Bản vá 11/11/2026 (tái kiểm 10/11)
+
+| Mục | Giá trị |
+|---|---|
+| Dòng xe | 8 |
+| Hồ sơ case | 5 |
+
+- Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
+- Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
+- FAQ chi phí có link **danh sách mẫu bi gầm và giá tham khảo** (`https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham`), tách giá đèn theo mẫu khỏi báo giá hoàn thiện theo xe.
+- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu (Coupé = Coupe) và bỏ chữ "Hybrid".
+- Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.

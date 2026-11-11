@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `e9fc7dc4f22dd7afe2ff89dcaa5e058dc64d80f41901dbea9f976ef0d6d05c96` |
-| SHA-256 content-src.html | `776801612d4f03ff35f816dd28efe8548d8852dd92d85d06f90f7b4cadb4deb1` |
+| SHA-256 index.html | `88582cc6bb6fa98d66c020db5a2c64d227fc3e0afe3d0375a0eabd426a0b6c9e` |
+| SHA-256 content-src.html | `fb691db4f8d6d4f3d872ca51521c642458a62efa14a75529549a2f03a040f896` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -155,7 +155,7 @@ Các dòng đã có hồ sơ lắp thực tế gồm Pajero, Xforce, Zinger, Xpa
 
 **Xe Mitsubishi nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Mitsubishi Destinator 2026 Premium lắp X-Light F10 Hyper 2.0 với lens 2.0 inch. Mitsubishi Outlander 2022 lắp X-Light F10 Turbo V2 4300K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Kích thước lens của từng ca xem ở bảng "Xe Mitsubishi đã lắp mẫu bi gầm nào?".
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Trong hồ sơ Auto365, Mitsubishi Destinator 2026 Premium lắp X-Light F10 Hyper 2.0 với lens 2.0 inch. Mitsubishi Outlander 2022 lắp X-Light F10 Turbo V2 4300K với lens 3.0 inch. Cùng dòng xe nhưng khác đời hoặc phiên bản vẫn cần đo hốc riêng. Trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Mitsubishi đã lắp bi gầm tại Auto365.
 
 **Mitsubishi đời cũ có lắp bi gầm được không?**
 
@@ -179,7 +179,7 @@ Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos r�
 
 **Giá lắp bi gầm Mitsubishi gồm những khoản nào?**
 
-Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe.
+Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe; giá tham khảo xem ở bài tư vấn từng dòng xe. Giá đèn theo mẫu xem ở danh sách mẫu bi gầm và giá tham khảo; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.
 
 **Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?**
 
