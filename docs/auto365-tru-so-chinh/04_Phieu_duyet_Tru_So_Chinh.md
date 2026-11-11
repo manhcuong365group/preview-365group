@@ -147,7 +147,7 @@ Việc làm lúc go-live (đã chốt phương án, không phải lỗi preview)
 | P0-02 kênh thay thế | Đèn/Camera/Phụ kiện/Xe điện → 0365 365 911; còn lại 0365 365 365 |
 | P1-04 popup mobile ẩn câu giải thích | Hiện "Để lại số, nhân viên gọi lại tư vấn và hẹn lịch phù hợp – đây chưa phải lịch đã xác nhận." |
 | P0-01 chỉ đường | Link "Chỉ đường Trụ Sở Chính" và "Chỉ đường 3M Pro Shop" riêng cạnh từng địa chỉ |
-| P1-02 CTA trên thẻ case | **Chủ trang chốt bỏ** (10/11): bấm thẻ mở bài case; tư vấn qua CTA chung + dải CTA dưới thư viện. Không mở lại |
+| P1-02 CTA trên thẻ case | Thẻ giữ gọn (chủ trang chốt bỏ nút trên từng thẻ 10/11). Ngữ cảnh chuyển qua nút trong dải CTA ngay dưới thư viện: chữ đổi theo bộ lọc (vd "Hỏi phương án PPF cho BMW 530i →"), mở popup điền sẵn xe/hãng + nhu cầu; dùng được chạm/chuột/bàn phím (11/11) |
 | P1-01 bộ chọn xe | Giữ ẩn theo phiếu U3 R4 (chưa có giá theo xe) |
 | P0-07 nhãn HQ cho case | Chủ trang xác nhận 48 case làm tại Trụ Sở Chính (theo bài đã đăng) |
 | P0-03/05/06, P0-04 số lượt | Ngoài web — REL-01..04 lúc go-live |
