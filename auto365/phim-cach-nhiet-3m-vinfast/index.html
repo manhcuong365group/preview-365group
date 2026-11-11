@@ -74,9 +74,16 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-ptabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:12px;scrollbar-width:none}
 .vf-ptabs button{flex:1 0 auto;border:1px solid var(--line);background:#fff;border-radius:8px;padding:10px 14px;font:inherit;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
 .vf-ptabs button span{color:var(--red)}
+.vf-ptabs button em{display:block;font-style:normal;font-weight:600;font-size:12px;color:var(--mut);margin-top:2px}
+.vf-ptabs button[aria-selected=true] em{color:#fff}
+.vf-car{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #f3c6c8;border-left:4px solid var(--red);border-radius:10px;padding:8px 14px;margin-bottom:12px;font-size:15px}
+.vf-car img{width:84px;height:auto;aspect-ratio:2/1;object-fit:contain}
+.vf-car small{display:block;color:var(--mut);font-size:12px}
+.vf-car a{margin-left:auto;color:var(--red);font-weight:700;text-decoration:none;white-space:nowrap;font-size:14px}
 .vf-ptabs button[aria-selected=true]{background:var(--red);border-color:var(--red);color:#fff}.vf-ptabs button[aria-selected=true] span{color:#fff}
 .vf-pp{display:grid;grid-template-columns:260px 1fr 1fr auto;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px}
-.vf-pp img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:8px}
+.vf-pp img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;border-radius:8px;background:linear-gradient(#fff,#e9ecf0)}
+@media(max-width:600px){.vf-pp img{aspect-ratio:2/1}}
 .vf-pp h3{margin:0 0 6px;font-size:22px}.vf-pp h3 span{color:var(--red)}
 .vf-pp p{margin:0 0 10px;color:var(--mut);font-size:14px}
 .vf-pp ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
@@ -334,8 +341,10 @@ img{max-width:100%;display:block}a{color:inherit}
  var cur=0;
  function render(g,m){
   var k=PK[cur];
-  grid.innerHTML='<div class="vf-ptabs" role="tablist">'+PK.map(function(x,i){return '<button type="button" role="tab" data-i="'+i+'" aria-selected="'+(i===cur)+'"><span>3M</span> '+x.n+'</button>'}).join('')+'</div>'+
-  '<div class="vf-pp" role="tabpanel"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+'" width="960" height="640"><div><h3><span>3M</span> '+k.n+'</h3><p>'+k.c+'</p><div class="vf-pp__p">'+m+' trọn xe từ<b>'+vnd(k.p[g])+'</b></div></div><ul><li>Cản nhiệt kính lái '+k.s[0]+'</li><li>Xuyên sáng kính lái '+k.s[1]+'</li><li>Cản hồng ngoại '+k.s[2]+'</li><li>Bảo hành điện tử 10 năm</li></ul><div class="vf-pp__a"><button type="button" class="vf-btn vf-btn--red" data-pk="3M '+k.n+'">Nhận báo giá →</button><a class="vf-btn" href="'+k.u+'" target="_blank" rel="noopener">Xem chi tiết</a></div></div>';
+  var sel=document.querySelector('.vf-model[aria-pressed=true] img');
+  grid.innerHTML='<div class="vf-car"><img src="'+(sel?sel.getAttribute('src'):'')+'" alt=""><div>Giá 6 gói đang tính cho <b>VinFast '+m+'</b><small>Nhóm giá '+GN[g]+' · tham khảo, kỹ thuật viên xác nhận lại theo xe</small></div><a href="#chon-xe">Đổi xe ↑</a></div>'+
+  '<div class="vf-ptabs" role="tablist">'+PK.map(function(x,i){return '<button type="button" role="tab" data-i="'+i+'" aria-selected="'+(i===cur)+'"><span>3M</span> '+x.n+'<em>'+vnd(x.p[g])+'</em></button>'}).join('')+'</div>'+
+  '<div class="vf-pp" role="tabpanel"><img src="'+(sel?sel.getAttribute('src'):'hinh/goi/'+k.id+'.webp')+'" alt="VinFast '+m+' dán phim cách nhiệt 3M '+k.n+'" width="300" height="200"><div><h3><span>3M</span> '+k.n+'</h3><p>'+k.c+'</p><div class="vf-pp__p">VinFast '+m+' trọn xe từ<b>'+vnd(k.p[g])+'</b></div></div><ul><li>Cản nhiệt kính lái '+k.s[0]+'</li><li>Xuyên sáng kính lái '+k.s[1]+'</li><li>Cản hồng ngoại '+k.s[2]+'</li><li>Bảo hành điện tử 10 năm</li></ul><div class="vf-pp__a"><button type="button" class="vf-btn vf-btn--red" data-pk="3M '+k.n+'">Nhận báo giá →</button><a class="vf-btn" href="'+k.u+'" target="_blank" rel="noopener">Xem chi tiết</a></div></div>';
   last=[g,m];
  }
  var last;
@@ -369,7 +378,7 @@ img{max-width:100%;display:block}a{color:inherit}
  function pick(b){
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;
-  grp.innerHTML='Đang xem giá cho <b>VinFast '+nm+'</b> – nhóm giá <b>'+GN[g]+'</b> (tham khảo, kỹ thuật viên xác nhận lại theo xe).';
+  grp.innerHTML='Đã chọn <b>VinFast '+nm+'</b> – <a href="#goi-phim">xem giá 6 gói phim cho xe này ↓</a>';
   render(g,nm);
   for(var i=0;i<fcar.options.length;i++)if(fcar.options[i].text==='VinFast '+nm)fcar.selectedIndex=i;
   var n=0;cases.forEach(function(c){c.hidden=false;if(c.dataset.m===m)n++});
