@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `163593b145e8da1ad8b985d20ddcfbb063c6546d664394dcecb666208dcb6330` |
-| SHA-256 content-src.html | `964e1acd26e7144ee883c6d0f769da3464024149e0055559fb5cd1632b5d795b` |
+| SHA-256 index.html | `640e0a2a3435133e8cf8aae27ce552d0d55b68488d90b0487f21b6618c7f81a4` |
+| SHA-256 content-src.html | `118a38c2f1045efac81aa2e8a039dcd6fd7dc8f0b344fc5518466691e2c5ab9a` |
 
 ## Sapo (kiêm trả lời nhanh)
 

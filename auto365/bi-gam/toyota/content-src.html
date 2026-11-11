@@ -325,7 +325,7 @@ var nM=M.length;
 $('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
 $('bgvf-grid').innerHTML=M.map(function(m){
  var im=m[2]?'<img src="'+m[2]+'" alt="Toyota '+esc(m[0])+'" loading="lazy" width="640" height="400">':'<em>Toyota '+esc(m[0])+'</em>';
- var bd='<span class="bd"><b>Bi gầm Toyota '+esc(m[0])+'<small>'+(m[3]?'Xem hồ sơ bi gầm':'Liên hệ tư vấn')+'</small></b><span class="go">→</span></span>';
+ var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?'Xem hồ sơ bi gầm':'Liên hệ tư vấn')+'</small></b><span class="go">→</span></span>';
  return m[3]?'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">Có hồ sơ</span><span class="im">'+im+'</span>'+bd+'</a>'
   :'<a class="bgvf-m" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="Toyota '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
 }).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.</p>';
