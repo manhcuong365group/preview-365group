@@ -190,7 +190,7 @@ img{max-width:100%;display:block}a{color:inherit}
 /* cases */
 .vf-cases{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .vf-case{border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;background:#fff;display:flex;flex-direction:column}
-.vf-case img{aspect-ratio:16/10;object-fit:cover;width:100%}
+.vf-case img{aspect-ratio:16/9;object-fit:cover;width:100%;height:auto;background:#111}
 .vf-case__b{padding:12px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
 .vf-case__xe{font-weight:800}.vf-case__k{font-size:13px;color:var(--red);font-weight:600}
 .vf-case__t{font-size:14px;color:var(--mut)}.vf-case time{font-size:12px;color:var(--mut);margin-top:auto}
@@ -230,6 +230,7 @@ img{max-width:100%;display:block}a{color:inherit}
 /* steps + faq */
 .vf-two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
 .vf-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;counter-reset:s}
+.vf-steps li b{margin-bottom:2px}
 .vf-steps li{counter-increment:s;border:1px solid var(--line);border-radius:10px;padding:14px 10px;font-size:13px;background:#fff}
 .vf-steps li:before{content:"0" counter(s);display:inline-block;background:var(--red);color:#fff;font-weight:800;border-radius:6px;padding:0 8px;margin-bottom:6px}
 .vf-steps b{display:block;font-size:14px}
@@ -407,8 +408,7 @@ img{max-width:100%;display:block}a{color:inherit}
  </div>
 </div></section>
 
-<section class="vf-sec vf-sec--g" id="faq"><div class="vf-wrap vf-two">
- <div>
+<section class="vf-sec" id="quy-trinh"><div class="vf-wrap">
   <h2 class="vf-h2">Quy trình thi công chuẩn tại <em>Auto365</em></h2>
   <p class="vf-sub">Dán trọn xe khoảng 2–4 giờ, nhận xe trong ngày.</p>
   <ol class="vf-steps">
@@ -417,7 +417,9 @@ img{max-width:100%;display:block}a{color:inherit}
    <li><b>Thi công dán phim</b>Cắt theo khuôn kính từng model.</li>
    <li><b>Kiểm tra &amp; bàn giao</b>Đo lại thông số, kích hoạt eWarranty.</li>
   </ol>
- </div>
+</div></section>
+
+<section class="vf-sec vf-sec--g" id="faq"><div class="vf-wrap">
  <div class="vf-faq">
   <h2 class="vf-h2">Câu hỏi thường gặp</h2>
   <details><summary>Xe VinFast nên dán gói phim 3M nào?</summary><p>Tùy nhu cầu và ngân sách. Muốn kính lái trong, ít chói: nhóm Crystalline CR BLK (CR BLK hoặc CR BLK PRO). Muốn kính lái CR BLK nhưng tiết kiệm phần kính sườn/sau: Crystalline Hybrid hoặc Crystalline Hybrid Pro. Ưu tiên chi phí: Ceramic IR hoặc Ceramic Hybrid. Kỹ thuật viên cho chủ xe xem mẫu phim thực tế trên kính trước khi chốt.</p></details>
