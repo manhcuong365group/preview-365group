@@ -137,3 +137,19 @@ Việc làm lúc go-live (đã chốt phương án, không phải lỗi preview)
 ## Bổ sung chiều 10/11/2026 — anh Nguyễn Quang Đạo đã duyệt 10/11/2026
 
 2 FAQ thời gian thi công (phim 2–4 giờ, PPF theo phạm vi; khách Bình Dương/Biên Hòa/Vũng Tàu về trong ngày) và khối "Khi nào chưa cần làm?" (phim, đèn, PPF/Wrap, camera, bọc da). `lastReviewed` giữ 2026-11-10.
+
+## Đối ứng tái kiểm UX/CRO V2.2 ngày 10/11 (69/100) — xử lý 11/11/2026
+
+| Mục | Xử lý trên preview |
+|---|---|
+| P0-02 HTTP 500 + `success:true` báo nhận | Chỉ báo nhận khi `response.ok` **và** `success:true`; còn lại giữ dữ liệu, bật lại nút |
+| P0-02 số trộn chữ (`090A0000000`) | Báo lỗi tại ô số, 0 request |
+| P0-02 kênh thay thế | Đèn/Camera/Phụ kiện/Xe điện → 0365 365 911; còn lại 0365 365 365 |
+| P1-04 popup mobile ẩn câu giải thích | Hiện "Để lại số, nhân viên gọi lại tư vấn và hẹn lịch phù hợp – đây chưa phải lịch đã xác nhận." |
+| P0-01 chỉ đường | Link "Chỉ đường Trụ Sở Chính" và "Chỉ đường 3M Pro Shop" riêng cạnh từng địa chỉ |
+| P1-02 CTA trên thẻ case | **Chủ trang chốt bỏ** (10/11): bấm thẻ mở bài case; tư vấn qua CTA chung + dải CTA dưới thư viện. Không mở lại |
+| P1-01 bộ chọn xe | Giữ ẩn theo phiếu U3 R4 (chưa có giá theo xe) |
+| P0-07 nhãn HQ cho case | Chủ trang xác nhận 48 case làm tại Trụ Sở Chính (theo bài đã đăng) |
+| P0-03/05/06, P0-04 số lượt | Ngoài web — REL-01..04 lúc go-live |
+
+Test 11/11 mobile 375px (fetch giả lập): `090A…` 0 request; 500+`success:true` báo lỗi, giữ số; mất mạng + Camera → gọi 0365 365 911; `090 000 0000` + 200 thành công, reset.
