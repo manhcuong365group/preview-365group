@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `afa8975158a95d6dec7586f223b0c3bc18764eac2ffaf90934f380cd8125b400` |
-| SHA-256 content-src.html | `2bb584604dad2dd7458733923e041a1fc27a6469cbc8d9a8f4df156fbbe9f1fa` |
+| SHA-256 index.html | `57d46514dca0a6a214ac94591134dc617ed4fa39cadc9f5bb23e2972a6a18cb2` |
+| SHA-256 content-src.html | `f68e5b4fb20d8b120b548e36afc10c81c1dc92259696527e41f81795e75611d7` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -48,14 +48,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe Suzuki lắp bi gầm cần lưu ý gì?
 
 Các dòng Suzuki khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Ngay trên XL7, Auto365 đã lắp cả mẫu lens 2.0 inch (X-Light F10 2.0 New) và mẫu 3.0 inch (X-Light F10 New bản 2025) theo hốc thực tế, nên mẫu lắp trong từng hồ sơ chỉ áp dụng cho đúng đời xe đó.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe chạy dịch vụ (Ertiga, XL7) dùng đèn nhiều giờ mỗi ngày nên cần đi dây gọn, có bảo vệ mạch và kiểm tra lại sau một thời gian sử dụng.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Suzuki theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 

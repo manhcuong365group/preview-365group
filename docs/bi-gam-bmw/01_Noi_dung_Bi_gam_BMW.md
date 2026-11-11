@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `00760e75874f44c6feb92d89f3bad3d2c11ef7fcd3eab3124daf4beff708e4b9` |
-| SHA-256 content-src.html | `a5d143dbf3734f1cf18990599556412ceabf0b6efd232aa8a9ad2ce7046817c9` |
+| SHA-256 index.html | `a002f45aca9173ae7720f2b15fe670f524b075cad2fe774a5b1d7bfbfcb83558` |
+| SHA-256 content-src.html | `3b3f2ae1433dc3911816348f53f0f01f22e8282e2dbed8a0c01655f59e4568a2` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -53,14 +53,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe BMW lắp bi gầm cần lưu ý gì?
 
 Các dòng BMW khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Nhiều đời BMW có hốc gầm nhỏ hoặc đèn gầm liền cản, nên mẫu lắp trong từng hồ sơ (X5 2010, X3 2017, X5 2013, X6 2019) chỉ áp dụng cho đúng đời và gói ngoại thất của xe đó.
-- Nguồn điện: xe BMW có hệ thống kiểm tra lỗi bóng đèn, nên kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và khả năng báo lỗi trên taplo theo đúng đời xe trước khi chọn dây, giắc và phụ kiện.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm BMW theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 

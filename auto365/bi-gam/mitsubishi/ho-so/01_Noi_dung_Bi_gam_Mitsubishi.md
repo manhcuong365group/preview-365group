@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `a9f0a3e62561826acc5123f69bd3de9d1887050d02563e47363d23dc96ed9031` |
-| SHA-256 content-src.html | `703bf20043c9072a626e56c39e40242b56f0267a533e0a2dc761ebbb65a382f6` |
+| SHA-256 index.html | `33c1ddccff6142de45da0c787bd8eef4d290811c151e44fd8feac82600676f95` |
+| SHA-256 content-src.html | `daf90e984a58b3cb45f0f2c3742486384260d61c898616b6170d52fdbd88bcfd` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -64,14 +64,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe Mitsubishi lắp bi gầm cần lưu ý gì?
 
 Các dòng Mitsubishi khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Ví dụ Xpander Cross 2023 đã lắp mẫu lens 2.0 inch (X-Light F10 2.0 New), Triton 2025 lắp AES SV 2.0 Max; các dòng khác dùng mẫu theo kích thước hốc thực tế trong từng hồ sơ.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Zinger 2011, Xpander 2018) cần kiểm tra giắc và đèn gầm đang có; bán tải Triton hay đi đường xấu nên kiểm tra thêm độ kín dây, giắc sau khi lắp.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Mitsubishi theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 

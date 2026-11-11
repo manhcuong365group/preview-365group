@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `3b16551fa8568b7648b21160c4e323375263628915847933e677632c9ba8cd43` |
-| SHA-256 content-src.html | `91566bffa43990aff48f0ad3308c0f8c3b3380cb88dd519ba8cb9e7b53fe2e79` |
+| SHA-256 index.html | `163593b145e8da1ad8b985d20ddcfbb063c6546d664394dcecb666208dcb6330` |
+| SHA-256 content-src.html | `964e1acd26e7144ee883c6d0f769da3464024149e0055559fb5cd1632b5d795b` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -70,14 +70,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe Ford lắp bi gầm cần lưu ý gì?
 
 Các dòng Ford khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Ví dụ Ranger XLS 2020, Everest Sport 2022, Escape 2007/2010 và EcoSport 2017 đã lắp mẫu lens 3.0 inch (AES SV 3.0 Max); các đời khác dùng mẫu theo kích thước hốc thực tế trong từng hồ sơ.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Escape 2007–2013, Focus 2012, Transit 2012) cần kiểm tra giắc và đèn gầm đang có — Focus 2016 là ví dụ thay bi gầm cũ bị hỏng; bán tải Ranger hay đi đường xấu nên kiểm tra thêm độ kín dây, giắc sau khi lắp.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Ford theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 

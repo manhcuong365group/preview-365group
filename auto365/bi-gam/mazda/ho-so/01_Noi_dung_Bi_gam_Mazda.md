@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (13), FAQPage |
-| SHA-256 index.html | `6665a31a98a56399a075d19ab3ed6b59b94c76567abbcb5f6396c0f49f81a94c` |
-| SHA-256 content-src.html | `c4f2a27bf5eaf5b40a39a099bb47ca4c3fa39a3ce099abaf4098610f8ee5f864` |
+| SHA-256 index.html | `1dfecab2aea1bf7aeea8610eddf9b3dd67fc223dbc858512b6957b0bf42776b7` |
+| SHA-256 content-src.html | `a3405792f79993ff5183b261c05a1acd13dbf4e34ab7baf9aa117f4077511bef` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -61,14 +61,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe Mazda lắp bi gầm cần lưu ý gì?
 
 Các dòng Mazda khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Cùng một dòng xe, hốc gầm có thể khác theo đời: CX-5 2021, 2022 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New), còn CX-5 2016 lắp X-Light F10 Turbo V2 lens 3.0 inch, nên mẫu lắp trong từng hồ sơ chỉ áp dụng cho đúng đời xe đó.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ như Mazda 626 2002 hoặc Mazda 6 2016–2017 cần kiểm tra giắc và đèn gầm đang có; xe đời mới được đối chiếu đúng phiên bản trước khi chọn dây, giắc và phụ kiện.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Mazda theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 

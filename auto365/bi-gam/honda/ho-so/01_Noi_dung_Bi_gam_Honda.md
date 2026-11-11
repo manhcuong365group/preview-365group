@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Honda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `ac7ab70ce81f5ae1cd62e0dd1c9d8136bb535cbf12f383223d709d66af850796` |
-| SHA-256 content-src.html | `cd6365ed2ce4702a2fdd350555345d66bc84e01a6af84128a616c652ef76655e` |
+| SHA-256 index.html | `d9457fa35448cfc7c7ccdc874330a21e415ec8c03816018a512053d6cbaa1920` |
+| SHA-256 content-src.html | `5b1138e316415b384db71590d5052378550d5a31e549ee79887d03b7ee191d83` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -60,14 +60,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe Honda lắp bi gầm cần lưu ý gì?
 
 Các dòng Honda khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Cùng một dòng xe, hốc gầm có thể khác theo đời và phiên bản (City RS 2021, 2022, 2024; CR-V 2018, 2023, 2024), nên mẫu lắp trong từng hồ sơ chỉ áp dụng cho đúng đời xe đó.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. CR-V 1.5L 2018 là ví dụ đã đối chiếu bản 12V của X-Light F10 New 2025; xe đời mới được đối chiếu đúng phiên bản trước khi chọn dây, giắc và phụ kiện.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Honda theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 

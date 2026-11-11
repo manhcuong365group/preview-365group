@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Hyundai: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (9), FAQPage |
-| SHA-256 index.html | `b9942a380611b6a5b62ac6b39d718f0c2fde41c508d0cc3effde633d8b6513fc` |
-| SHA-256 content-src.html | `71c604bf989ebcfafcc02a7f1ebe25dbe77a27b53e4b425853b1cb7e80229238` |
+| SHA-256 index.html | `822a5d1e403420914f5efc94eeab90f5637455c8c21ddc08604268c36c4faa25` |
+| SHA-256 content-src.html | `81116c31f1f2dbfef013f8903d5827411534f9b2c5484ed1c0c2960ab9daf5e8` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -66,14 +66,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 ## Xe Hyundai lắp bi gầm cần lưu ý gì?
 
 Các dòng Hyundai khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.
-
-- Kích thước hốc đèn: đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Ví dụ Santa Fe 2020 Premium đã lắp mẫu lens 2.0 inch (X-Light F10 2.0 New); các đời Santa Fe, Custin, Creta khác dùng mẫu theo kích thước hốc thực tế trong từng hồ sơ.
-- Nguồn điện: kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe đời cũ (Santa Fe 2017) cần kiểm tra giắc và đèn gầm đang có; xe đời mới (Custin, Creta, Tucson) được đối chiếu đúng phiên bản trước khi chọn phụ kiện.
-- Đường cắt cos: cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.
-
-Mẫu cụ thể cho từng xe xem trong hồ sơ dòng xe phía trên hoặc liên hệ hotline 0365 365 911 để được tư vấn.
-
-Khi nào chưa cần nâng cấp: nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.
 
 ### Gợi ý chọn bi gầm Hyundai theo nhu cầu sử dụng (accordion đóng sẵn, cuối box lưu ý)
 
