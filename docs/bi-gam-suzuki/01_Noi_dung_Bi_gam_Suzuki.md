@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `83ef4ee278d3bae29db9b3f059678c25ad6bb87d190e2f34f3b8ef1a14f0595c` |
-| SHA-256 content-src.html | `bdfbb6b4f883a0d3aa8e53a51cca25268071beb39ef85f3ca4cf7e51decca431` |
+| SHA-256 index.html | `1585e6253055ec32b144cd2d029e714dbf3d125b804098a787829eaec37a15b7` |
+| SHA-256 content-src.html | `4398451c40ca14158d835f2f90caa7632f0f74e724853b428c5e6eadf538e46a` |
 
 ## Sapo (kiêm trả lời nhanh)
 

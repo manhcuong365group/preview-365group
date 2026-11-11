@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `31a4277b1b044980a172f1a4f73c8fa062972bd41723c63d51071e28bcc12c45` |
-| SHA-256 content-src.html | `8bb6eb8e8094697d8d517beb34c210de38fd3d8a1507ca19a25c8c47725845ce` |
+| SHA-256 index.html | `77c193a8671b0ab0a2cb5b6ececec06be9cceb82e55718e64dfcc1e3dd971059` |
+| SHA-256 content-src.html | `ee6086ac11b6f3d39628e4f323d73470025155d52e006550cda78717af30c9cd` |
 
 ## Sapo (kiêm trả lời nhanh)
 
