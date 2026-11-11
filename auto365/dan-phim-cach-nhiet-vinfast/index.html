@@ -123,6 +123,13 @@ img{max-width:100%;display:block}a{color:inherit}
 /* position + quote */
 .vf-pos{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:start}
 .vf-pos__img{border-radius:12px;overflow:hidden}
+.vf-pick{display:grid;grid-template-columns:1fr 400px;gap:16px;align-items:start}
+.vf-diaw{position:sticky;top:60px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+.vf-diah{margin:0 0 6px;font-size:13px;color:var(--mut)}.vf-diah b{color:var(--ink)}
+.vf-diaw .vf-dia{overflow:visible;margin-top:30px}.vf-diaw .vf-pin{font-size:9px;padding:2px 5px}.vf-diaw .vf-pin b{font-size:11px}
+.vf-diam{display:block;text-align:right;font-size:13px;font-weight:700;color:var(--red);text-decoration:none;margin-top:6px}
+@media(max-width:960px){.vf-pick{grid-template-columns:1fr}.vf-diaw{position:static}}
+.vf-dtabs{display:flex;gap:6px;margin-bottom:8px;flex-wrap:wrap}.vf-dtabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}.vf-dtabs button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:#fff}
 .vf-dia{position:relative;border-radius:12px;background:linear-gradient(#fff,#eceef2);overflow:hidden}
 .vf-dia img{width:100%;height:auto;display:block}
 .vf-dia svg{position:absolute;inset:0;width:100%;height:100%}
@@ -242,8 +249,10 @@ img{max-width:100%;display:block}a{color:inherit}
  <h2 class="vf-h2">Chọn dòng xe <em>VinFast</em> của bạn</h2>
  <p class="vf-sub">Giá gói phim và các xe thực tế bên dưới sẽ lọc theo dòng xe bạn chọn.</p>
  <div class="vf-fbar"><div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe"><button type="button" data-t="all" aria-pressed="true">Tất cả (19)</button><button type="button" data-t="ev" aria-pressed="false">Xe điện (10)</button><button type="button" data-t="green" aria-pressed="false">Green / dịch vụ (5)</button><button type="button" data-t="old" aria-pressed="false">Xe xăng (4)</button><button type="button" data-t="case" aria-pressed="false" id="vf-tab-case">Có ca thi công</button></div><input class="vf-search" type="search" id="vf-q" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></div>
+ <div class="vf-pick"><div>
  <div class="vf-models" id="vf-models" role="group" aria-label="Dòng xe VinFast"></div>
  <p class="vf-mwrap" hidden><button type="button" class="vf-mbtn" id="vf-more" aria-expanded="false"></button></p>
+ </div><aside class="vf-diaw"><p class="vf-diah" id="vf-diah"></p><div class="vf-dia" id="vf-dia" role="img" aria-label="Sơ đồ các vị trí dán phim cách nhiệt: kính lái, kính sườn, kính nóc, kính lưng"></div><a class="vf-diam" href="#vi-tri">Mã phim cho từng vị trí ↓</a></aside></div>
  <p class="vf-grp" id="vf-grp"></p>
 </div></section>
 
@@ -258,15 +267,7 @@ img{max-width:100%;display:block}a{color:inherit}
  <div>
   <h2 class="vf-h2">Vị trí dán phim trên xe <em>VinFast</em></h2>
   <p class="vf-sub">Dán trọn các vị trí kính, mỗi vị trí chọn mã phim theo vai trò.</p>
-  <div class="vf-dia" role="img" aria-label="Sơ đồ các vị trí dán phim cách nhiệt trên xe VinFast VF 8: kính lái, kính sườn, kính nóc, kính lưng">
-   <img src="hinh/m/m-vf8.webp" alt="" width="600" height="400">
-   <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M37 48 L14 24 M56 49 L38 14 M62 39.5 L63 14 M84 48 L88 24"/></svg>
-   <i class="vf-dot" style="left:37%;top:48%"></i><i class="vf-dot" style="left:56%;top:49%"></i><i class="vf-dot" style="left:62%;top:39.5%"></i><i class="vf-dot" style="left:84%;top:48%"></i>
-   <span class="vf-pin" style="left:14%;top:24%"><b>Kính lái</b>ưu tiên cách nhiệt</span>
-   <span class="vf-pin" style="left:38%;top:14%"><b>Kính sườn</b>riêng tư, chống chói</span>
-   <span class="vf-pin" style="left:63%;top:14%"><b>Kính nóc</b>giảm nhiệt khoang lái</span>
-   <span class="vf-pin" style="left:88%;top:24%"><b>Kính lưng</b>cân bằng nhiệt</span>
-  </div>
+
   <ul>
    <li><b>Kính lái</b>Ưu tiên tầm nhìn và cách nhiệt: CR BLK 40/50/60, IR 50 hoặc NR 35. Chừa vùng camera, cảm biến.</li>
    <li><b>Kính sườn</b>Cản nắng hai bên và tăng riêng tư: CR BLK 35/15, IR 25/15, NR 25/15/5.</li>
@@ -453,7 +454,7 @@ img{max-width:100%;display:block}a{color:inherit}
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;
   grp.innerHTML='Đã chọn <b>VinFast '+nm+'</b> – <a href="#goi-phim">xem giá 6 gói phim cho xe này ↓</a>';
-  render(g,nm);
+  render(g,nm);if(DIA)drawDia(g,nm);
   for(var i=0;i<fcar.options.length;i++)if(fcar.options[i].text==='VinFast '+nm)fcar.selectedIndex=i;
   var n=0;cases.forEach(function(c){c.hidden=false;if(c.dataset.m===m)n++});
   if(n){cases.forEach(function(c){c.style.order=c.dataset.m===m?0:1})}
@@ -463,6 +464,14 @@ img{max-width:100%;display:block}a{color:inherit}
  pick(document.querySelector('.vf-model[aria-pressed=true]'));filt();
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;document.getElementById('bao-gia').scrollIntoView({behavior:'smooth'});setTimeout(function(){document.querySelector('#bao-gia [name=fullname]').focus({preventScroll:true})},500)});
  document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
+ // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
+ var DIA=[['m-vf3.webp',[[37,37],[52,36],[59,25],[83,35]]],['m-vf5.webp',[[38,41],[48,42],[61,35],[77,40]]],['m-vf8.webp',[[38,40],[47,41],[62,32],[80,39]]]];
+ var LAB=[[14,16,'Kính lái','ưu tiên cách nhiệt'],[37,4,'Kính sườn','riêng tư, chống chói'],[64,4,'Kính nóc','giảm nhiệt khoang lái'],[87,16,'Kính lưng','cân bằng nhiệt']];
+ var dia=document.getElementById('vf-dia'),diah=document.getElementById('vf-diah'),DN=['Minicar (VF 3)','Sedan (VF 5)','SUV/MPV (VF 8)'];
+ function drawDia(i,nm){var d=DIA[i];diah.innerHTML='Vị trí kính trên <b>VinFast '+(nm||'')+'</b> – sơ đồ minh hoạ kiểu '+DN[i];
+  dia.innerHTML='<img src="hinh/m/'+d[0]+'" alt="" width="640" height="400"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return 'M'+l[0]+' '+l[1]+' L'+d[1][k][0]+' '+d[1][k][1]}).join(' ')+'"/></svg>'+d[1].map(function(p){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%"></i>'}).join('')+LAB.map(function(l){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%"><b>'+l[2]+'</b>'+l[3]+'</span>'}).join('')}
+ var s0=document.querySelector('.vf-model[aria-pressed=true]');if(s0)drawDia(+s0.dataset.g,s0.dataset.name);
+
  // Lead form — chỉ báo thành công khi API trả {"success": true}
  var f=document.getElementById('bao-gia'),msg=f.querySelector('.vf-msg');
  function show(t,ok){msg.className='vf-msg '+(ok?'ok':'err');msg.textContent=t}
