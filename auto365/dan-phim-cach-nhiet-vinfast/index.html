@@ -139,6 +139,7 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-pz-sum{background:var(--dark);color:#fff;border-radius:12px;padding:12px 16px;display:flex;gap:12px;align-items:center}
 .vf-pz-sum>div{flex:1;min-width:0}.vf-pz-sum small{display:block;font-size:12px;opacity:.8}.vf-pz-sum span{display:block;font-size:12px;opacity:.8}.vf-pz-sum>div>b{font-size:22px}
 .vf-pz-clear{border-color:rgba(255,255,255,.3);color:#fff;background:transparent}
+.vf-pz-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
 .vf-pz{display:grid;grid-template-columns:270px 1fr 270px;gap:14px;align-items:center}
 .vf-pz-col{display:flex;flex-direction:column;gap:10px}
 .vf-pz-c{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:#fff;cursor:pointer;position:relative}
@@ -152,8 +153,8 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-pz-dot.on{background:var(--red)}
 .vf-pz-cap{margin:4px 0 0;font-size:12px;color:var(--mut);text-align:center}
 .vf-book{max-width:640px}
-@media(max-width:960px){.vf-pz-top{grid-template-columns:1fr}.vf-pz{grid-template-columns:1fr}.vf-pz-car{order:-1}}
-@media(max-width:600px){.vf-pz-sum{flex-wrap:wrap}.vf-pz-sum .vf-btn{flex:1}.vf-pz-opts{flex-wrap:wrap}.vf-pz-opts label{flex:1}}
+@media(max-width:960px){.vf-pz-grid{grid-template-columns:1fr 1fr}.vf-pz-top{grid-template-columns:1fr}.vf-pz{grid-template-columns:1fr}.vf-pz-car{order:-1}}
+@media(max-width:600px){.vf-pz-grid{grid-template-columns:1fr}.vf-pz-sum{flex-wrap:wrap}.vf-pz-sum .vf-btn{flex:1}.vf-pz-opts{flex-wrap:wrap}.vf-pz-opts label{flex:1}}
 .vf-pick{display:grid;grid-template-columns:1fr 400px;gap:16px;align-items:start}
 .vf-diaw{position:sticky;top:60px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
 .vf-diah{margin:0 0 6px;font-size:13px;color:var(--mut)}.vf-diah b{color:var(--ink)}
@@ -293,25 +294,19 @@ img{max-width:100%;display:block}a{color:inherit}
  <p class="vf-note">Thông số ghi trên thẻ là của mã phim kính lái trong gói. Xe có cửa sổ trời panorama (VF7, VF8…) hoặc cấu hình đặc biệt sẽ được báo giá chính xác theo xe.</p>
 </div></section>
 
-<section class="vf-sec" id="vi-tri"><div class="vf-wrap">
- <h2 class="vf-h2">Dán phim theo <em>vị trí kính</em></h2>
- <p class="vf-sub">Tích chọn từng vị trí hoặc bấm số trên xe để cộng tổng chi phí tạm tính. Giá dán lẻ theo bảng giá 3M áp dụng từ 06/2026.</p>
- <div class="vf-pz-top">
-  <div class="vf-pz-opts">
-   <label>Kiểu xe<select id="pz-type"><option value="0">Minicar (VF 3)</option><option value="1">Sedan (VF 5)</option><option value="2" selected>SUV / MPV (VF 8)</option></select></label>
-   <label>Dòng phim<select id="pz-line"><option value="0">Crystalline CR BLK 40</option><option value="1" selected>Crystalline CR BLK 60 / 50</option><option value="2">Ceramic IR</option><option value="3">Ceramic NR</option></select></label>
-  </div>
-  <div class="vf-pz-sum"><div><small>Đã chọn <b id="pz-n">0</b> vị trí</small><span id="pz-list">Tích chọn từng ô hoặc bấm số trên xe để cộng giá</span><b id="pz-total">0đ</b></div><button type="button" class="vf-btn vf-pz-clear" id="pz-clear">Xoá lựa chọn</button><a class="vf-btn vf-btn--red" href="#bao-gia" id="pz-go">Nhận báo giá chính xác →</a></div>
+<section class="vf-sec" id="vi-tri"><div class="vf-wrap vf-pos">
+ <div>
+  <h2 class="vf-h2">Vị trí dán phim trên xe <em>VinFast</em></h2>
+  <p class="vf-sub">Dán trọn các vị trí kính, mỗi vị trí chọn mã phim theo vai trò.</p>
+  <div class="vf-dtabs" role="group" aria-label="Kiểu xe"><button type="button" data-d="0">Minicar · VF 3</button><button type="button" data-d="1">Sedan · VF 5</button><button type="button" data-d="2">SUV · VF 8</button></div>
+  <div class="vf-dia" id="vf-dia" role="img" aria-label="Sơ đồ các vị trí dán phim cách nhiệt: kính lái, kính sườn, kính nóc, kính lưng"></div>
+  <ul>
+   <li><b>Kính lái</b>Ưu tiên tầm nhìn và cách nhiệt: CR BLK 40/50/60, IR 50 hoặc NR 35. Chừa vùng camera, cảm biến.</li>
+   <li><b>Kính sườn</b>Cản nắng hai bên và tăng riêng tư: CR BLK 35/15, IR 25/15, NR 25/15/5.</li>
+   <li><b>Kính lưng</b>Cân bằng nhiệt và tầm nhìn khi lùi: cùng nhóm mã với kính sườn.</li>
+   <li><b>Kính nóc / cửa sổ trời</b>Giảm nhiệt khoang lái; panorama tính bằng giá một kính lái.</li>
+  </ul>
  </div>
- <div class="vf-pz">
-  <div class="vf-pz-col" id="pz-left"></div>
-  <div class="vf-pz-car"><div class="vf-pz-img" id="pz-img"></div><p class="vf-pz-cap" id="vf-diah"></p></div>
-  <div class="vf-pz-col" id="pz-right"></div>
- </div>
- <p class="vf-note">Kính lái chỉ dán CR BLK 40/50/60, IR 50 hoặc NR 35. Cửa sổ trời nhỏ tính bằng giá một ô kính sườn, kỹ thuật viên báo giá theo xe. Tổng trên là giá tạm tính, chưa phải báo giá cuối.</p>
-</div></section>
-
-<section class="vf-sec vf-sec--g" id="dat-lich"><div class="vf-wrap vf-book">
  <form class="vf-quote" id="bao-gia" action="/api/leads" method="post" novalidate>
   <h2>Nhận báo giá dán phim 3M cho VinFast</h2>
   <p>Chọn xe, gói phim và để lại số điện thoại, cố vấn gọi lại báo giá chi tiết.</p>
@@ -325,6 +320,20 @@ img{max-width:100%;display:block}a{color:inherit}
   <button class="vf-btn vf-btn--red" type="submit">Nhận báo giá ngay →</button>
   <div class="vf-msg" role="status"></div>
  </form>
+</div></section>
+
+<section class="vf-sec vf-sec--g" id="tinh-gia"><div class="vf-wrap">
+ <h2 class="vf-h2">Tính giá dán <em>kính lẻ</em></h2>
+ <p class="vf-sub">Chỉ cần dán vài vị trí? Tích chọn vị trí để xem tổng tạm tính theo bảng giá dán lẻ 3M áp dụng từ 06/2026.</p>
+ <div class="vf-pz-top">
+  <div class="vf-pz-opts">
+   <label>Dòng phim<select id="pz-line"><option value="0">Crystalline CR BLK 40</option><option value="1" selected>Crystalline CR BLK 60 / 50</option><option value="2">Ceramic IR</option><option value="3">Ceramic NR</option></select></label>
+  </div>
+  <div class="vf-pz-sum"><div><small>Đã chọn <b id="pz-n">0</b> vị trí</small><span id="pz-list">Tích chọn từng ô hoặc bấm số trên xe để cộng giá</span><b id="pz-total">0đ</b></div><button type="button" class="vf-btn vf-pz-clear" id="pz-clear">Xoá lựa chọn</button><a class="vf-btn vf-btn--red" href="#bao-gia" id="pz-go">Nhận báo giá chính xác →</a></div>
+ </div>
+ <div class="vf-pz-grid" id="pz-cards"></div>
+
+ <p class="vf-note">Kính lái chỉ dán CR BLK 40/50/60, IR 50 hoặc NR 35. Cửa sổ trời nhỏ tính bằng giá một ô kính sườn, kỹ thuật viên báo giá theo xe. Tổng trên là giá tạm tính, chưa phải báo giá cuối.</p>
 </div></section>
 
 <section class="vf-sec vf-sec--g" id="xe-thuc-te"><div class="vf-wrap">
@@ -501,29 +510,32 @@ img{max-width:100%;display:block}a{color:inherit}
  pick(document.querySelector('.vf-model[aria-pressed=true]'));filt();
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;document.getElementById('bao-gia').scrollIntoView({behavior:'smooth'});setTimeout(function(){document.querySelector('#bao-gia [name=fullname]').focus({preventScroll:true})},500)});
  document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
- // Chọn vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái). Giá dán lẻ theo bảng giá 3M 06/2026 (triệu đ)
- var DIMG=['m-vf3.webp','m-vf5.webp','m-vf8.webp'],DN=['Minicar (VF 3)','Sedan (VF 5)','SUV/MPV (VF 8)'];
- var PT=[[[37,37],[52,36],[72,36],[83,35],[59,25]],[[38,41],[47,42],[62,42],[77,40],[61,35]],[[38,40],[46,41],[59,41],[80,39],[62,32]]];
+ // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
+ var DIMG=['m-vf3.webp','m-vf5.webp','m-vf8.webp'];
+ var DIA=[[[37,37],[52,36],[59,25],[83,35]],[[38,41],[48,42],[61,35],[77,40]],[[38,40],[47,41],[62,32],[80,39]]];
+ var LAB=[[14,16,'Kính lái','ưu tiên cách nhiệt'],[37,4,'Kính sườn','riêng tư, chống chói'],[64,4,'Kính nóc','giảm nhiệt khoang lái'],[87,16,'Kính lưng','cân bằng nhiệt']];
+ var dbt=document.querySelectorAll('.vf-dtabs button'),dia=document.getElementById('vf-dia');
+ function drawDia(i){var d=DIA[i];dbt.forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.d===i)});
+  dia.innerHTML='<img src="hinh/m/'+DIMG[i]+'" alt="" width="640" height="400"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return 'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%"></i>'}).join('')+LAB.map(function(l){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%"><b>'+l[2]+'</b>'+l[3]+'</span>'}).join('')}
+ dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d)})});
+ // Tính giá kính lẻ — bảng giá dán lẻ 3M 06/2026 (triệu đ)
  var LN=[['CR BLK 40','CR BLK 35/15'],['CR BLK 60/50','CR BLK 35/15'],['IR 50','IR 25/15'],['NR 35','NR 25/15/5']];
  var PR=[[6.5,2.6,2.6,4.1,6.5],[5.7,2.6,2.6,4.1,5.7],[3.3,1.8,1.8,2.3,3.3],[2.6,1.7,1.7,1.9,2.6]];
- var POS=[['Kính lái','Ưu tiên cách nhiệt, chừa vùng camera, cảm biến',0,'',0],['Kính sườn trước','Hai cửa trước, nơi người lái chịu nắng nhiều nhất',1,'1 cặp',1],['Kính sườn sau','Hai cửa sau / kính hông phía sau, riêng tư cho hàng ghế sau',1,'1 cặp',1],['Kính lưng','Cân bằng nhiệt và tầm nhìn khi lùi',1,'',0],['Cửa sổ trời panorama','Giảm nắng trên đầu, tính bằng giá một kính lái',0,'',0]];
- var SEL={},ptype=document.getElementById('pz-type'),pline=document.getElementById('pz-line'),pimg=document.getElementById('pz-img'),diah=document.getElementById('vf-diah'),pl=document.getElementById('pz-left'),pr=document.getElementById('pz-right');
- function card(i){var p=POS[i],l=+pline.value;return '<label class="vf-pz-c'+(SEL[i]?' on':'')+'"><input type="checkbox" data-p="'+i+'"'+(SEL[i]?' checked':'')+'><span class="vf-pz-n">'+(i+1)+'</span><span class="vf-pz-b"><b>'+p[0]+'</b><em>'+vnd(PR[l][i])+(p[3]?' <small>('+p[3]+')</small>':'')+'</em><small>3M '+LN[l][p[2]]+' · '+p[1]+'</small></span></label>'}
- function drawPz(nm){var t=+ptype.value;pl.innerHTML=[0,1,2].map(card).join('');pr.innerHTML=[3,4].map(card).join('');
-  pimg.innerHTML='<img src="hinh/m/'+DIMG[t]+'" alt="Vị trí dán phim cách nhiệt trên xe VinFast kiểu '+DN[t]+'" width="640" height="400">'+PT[t].map(function(q,i){return '<button type="button" class="vf-pz-dot'+(SEL[i]?' on':'')+'" data-p="'+i+'" style="left:'+q[0]+'%;top:'+q[1]+'%" aria-label="'+POS[i][0]+'">'+(i+1)+'</button>'}).join('');
-  if(nm)diah.innerHTML='Đang xem <b>VinFast '+nm+'</b> · sơ đồ minh hoạ kiểu '+DN[t];else diah.textContent='Sơ đồ minh hoạ kiểu '+DN[t];
-  var keys=Object.keys(SEL).filter(function(k){return SEL[k]}),l=+pline.value,sum=keys.reduce(function(s,k){return s+PR[l][k]},0);
+ var POS=[['Kính lái','Chừa vùng camera, cảm biến',0,''],['Kính sườn trước','Hai cửa trước',1,'1 cặp'],['Kính sườn sau','Hai cửa sau / kính hông sau',1,'1 cặp'],['Kính lưng','Kính sau xe',1,''],['Cửa sổ trời panorama','Tính bằng giá một kính lái',0,'']];
+ var SEL={},pline=document.getElementById('pz-line'),pcards=document.getElementById('pz-cards');
+ function drawPz(){var l=+pline.value;
+  pcards.innerHTML=POS.map(function(p,i){return '<label class="vf-pz-c'+(SEL[i]?' on':'')+'"><input type="checkbox" data-p="'+i+'"'+(SEL[i]?' checked':'')+'><span class="vf-pz-b"><b>'+p[0]+'</b><em>'+vnd(PR[l][i])+(p[3]?' <small>('+p[3]+')</small>':'')+'</em><small>3M '+LN[l][p[2]]+' · '+p[1]+'</small></span></label>'}).join('');
+  var keys=Object.keys(SEL).filter(function(k){return SEL[k]}),sum=keys.reduce(function(s,k){return s+PR[l][k]},0),txt=keys.map(function(k){return POS[k][0]}).join(', ')+' · 3M '+pline.options[pline.selectedIndex].text;
   document.getElementById('pz-n').textContent=keys.length;document.getElementById('pz-total').textContent=vnd(sum);
-  document.getElementById('pz-list').textContent=keys.length?keys.map(function(k){return POS[k][0]}).join(', ')+' · 3M '+pline.options[pline.selectedIndex].text:'Tích chọn từng ô hoặc bấm số trên xe để cộng giá';
-  var hp=document.querySelector('#bao-gia [name=positions]');if(hp)hp.value=keys.length?document.getElementById('pz-list').textContent+' · tạm tính '+vnd(sum):'';
+  document.getElementById('pz-list').textContent=keys.length?txt:'Tích chọn vị trí để cộng giá';
+  var hp=document.querySelector('#bao-gia [name=positions]');if(hp)hp.value=keys.length?txt+' · tạm tính '+vnd(sum):'';
  }
- var curName='';
- function drawDia(i,nm){ptype.value=i;curName=nm||curName;drawPz(curName)}
- document.getElementById('vi-tri').addEventListener('click',function(e){var d=e.target.closest('.vf-pz-dot');if(d){var i=+d.dataset.p;SEL[i]=!SEL[i];drawPz(curName)}});
- document.getElementById('vi-tri').addEventListener('change',function(e){var c=e.target.closest('input[data-p]');if(c){SEL[+c.dataset.p]=c.checked;drawPz(curName)}else if(e.target===ptype||e.target===pline)drawPz(curName)});
- document.getElementById('pz-clear').addEventListener('click',function(){SEL={};drawPz(curName)});
- document.getElementById('pz-go').addEventListener('click',function(){var sc=document.querySelector('#bao-gia [name=scope]');if(sc&&Object.keys(SEL).some(function(k){return SEL[k]})){sc.value='Theo vị trí đã chọn'}});
- var s0=document.querySelector('.vf-model[aria-pressed=true]');if(s0)drawDia(+s0.dataset.g,s0.dataset.name);
+ var tg=document.getElementById('tinh-gia');
+ tg.addEventListener('change',function(e){var c=e.target.closest('input[data-p]');if(c)SEL[+c.dataset.p]=c.checked;drawPz()});
+ document.getElementById('pz-clear').addEventListener('click',function(){SEL={};drawPz()});
+ document.getElementById('pz-go').addEventListener('click',function(){var sc=document.querySelector('#bao-gia [name=scope]');if(sc&&Object.keys(SEL).some(function(k){return SEL[k]}))sc.value='Theo vị trí đã chọn'});
+ drawPz();
+ var s0=document.querySelector('.vf-model[aria-pressed=true]');if(s0)drawDia(+s0.dataset.g);
 
  // Lead form — chỉ báo thành công khi API trả {"success": true}
  var f=document.getElementById('bao-gia'),msg=f.querySelector('.vf-msg');
