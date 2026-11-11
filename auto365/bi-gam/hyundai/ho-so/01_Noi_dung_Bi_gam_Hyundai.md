@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Hyundai: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-10 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (9), FAQPage |
-| SHA-256 index.html | `6ca3e8033847b8c628644211a45cf7111e63c392808042c7c938c1daa4552e7a` |
-| SHA-256 content-src.html | `c669adaed9b8009c10bfc8ba80fbd77eddb28ab5172af73fa8322c66d7cdb2ed` |
+| SHA-256 index.html | `ee5987846d1f10de31b063801b11e8b23a3984ba9251ebe367dc0bbc9ef44930` |
+| SHA-256 content-src.html | `d8a5225a14a297f82735076a54bd5c6ab47d24526e643e9f45fb373424f969d1` |
 
 ## Sapo (kiêm trả lời nhanh)
 
