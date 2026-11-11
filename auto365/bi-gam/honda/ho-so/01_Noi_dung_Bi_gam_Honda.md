@@ -9,10 +9,10 @@
 | Title (73 ký tự) | Lắp bi gầm Honda: chọn đèn theo dòng xe City, CR-V, Civic, HR-V \| Auto365 |
 | Meta description (125 ký tự) | Tra cứu bi gầm Honda theo dòng và đời xe, xem 15 hồ sơ lắp đèn X-Light hoặc GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Honda: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-10 |
+| dateModified | 2026-11-11 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `743adbb9eeb948bf394727b7311584bc3da6e84ddac70af75e5d19c4bdcfcdef` |
-| SHA-256 content-src.html | `547ff5b0d4d2cf711b6da8e118a8bbcccf1280e783367783cdb97ffc9cd1abbd` |
+| SHA-256 index.html | `83e3c726e3827374b6d8b1a6f0e22afe70bf506e19787a504f10902c0bcea082` |
+| SHA-256 content-src.html | `735f3019d288c3d71299514938092b07ec57d7b0237f8d250a973baf58afd50d` |
 
 ## Sapo (kiêm trả lời nhanh)
 

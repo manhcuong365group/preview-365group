@@ -70,4 +70,4 @@ Reviewer độc lập 10/11 chưa chốt PASS (lý do chung: thiếu dữ liệu
 - Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.
 - Hồ sơ 01–06 xuất lại cùng một build (11/11/2026).
 
-Điểm sau vá: chờ reviewer tái chấm; U3 (form → CRM, tracking) nghiệm thu trên URL chính thức.
+Anh Đạo duyệt bản vá 11/11/2026 (lastReviewed 2026-11-11). Điểm sau vá: chờ reviewer tái chấm; U3 (form → CRM, tracking) nghiệm thu trên URL chính thức.

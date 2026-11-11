@@ -9,10 +9,10 @@
 | Title (83 ký tự) | Lắp bi gầm Hyundai: chọn đèn theo dòng xe Santa Fe, Custin, Creta, Tucson \| Auto365 |
 | Meta description (128 ký tự) | Tra cứu 22 dòng Hyundai, xem 9 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
 | H1 | Lắp bi gầm Hyundai: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-10 |
+| dateModified | 2026-11-11 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (9), FAQPage |
-| SHA-256 index.html | `ee5987846d1f10de31b063801b11e8b23a3984ba9251ebe367dc0bbc9ef44930` |
-| SHA-256 content-src.html | `d8a5225a14a297f82735076a54bd5c6ab47d24526e643e9f45fb373424f969d1` |
+| SHA-256 index.html | `10f9b5b1ee5ae07fdbfa36b161abf137b34b238013c0b64bbe7c1b6bb08ee3fc` |
+| SHA-256 content-src.html | `5d2ba47cebd11d6d563e6427eaf59609ea99ee1ae8203696106d4bfa00c6c97e` |
 
 ## Sapo (kiêm trả lời nhanh)
 

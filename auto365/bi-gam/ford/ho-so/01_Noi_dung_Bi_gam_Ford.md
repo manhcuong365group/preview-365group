@@ -9,10 +9,10 @@
 | Title (82 ký tự) | Lắp bi gầm Ford: chọn đèn theo dòng xe Ranger, Everest, Escape, EcoSport \| Auto365 |
 | Meta description (121 ký tự) | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-10 |
+| dateModified | 2026-11-11 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `4dd4ea775bd1c8c4be88292752ca90c069ed849d1b2461b8319226c5cf0049f8` |
-| SHA-256 content-src.html | `e4dee035b79ed52fcd03bf9e732d92b63ec15d136515a61e813cb7fb06b4697b` |
+| SHA-256 index.html | `9291f3158d16f986d8f38912ae2bbbed6f4b88a00fd8d70503ee02a0430d1c65` |
+| SHA-256 content-src.html | `3bd3761c475bd3aa3fa935db27d2af99ec143a30cb82c1e2eac542e3580af38f` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -9,10 +9,10 @@
 | Title (78 ký tự) | Lắp bi gầm Mazda: chọn đèn theo dòng xe Mazda 2, Mazda 6, CX-5, CX-8 \| Auto365 |
 | Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-10 |
+| dateModified | 2026-11-11 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (13), FAQPage |
-| SHA-256 index.html | `60fd2c3cd3a33c55a6de6b22cdf239c294a1214401654f01dd9cc5c66d7ada3e` |
-| SHA-256 content-src.html | `4a2f0fb0891224a5d9282279e741e3d5acb14a72312562cfb35ea851747a5070` |
+| SHA-256 index.html | `c3b58c6f6d2d1fe0c588c9d049e06e597ec79df5162ba288b31f4cac1ea69ef5` |
+| SHA-256 content-src.html | `9ba66aa1d55678d3c55da824ec4705de0bac70087b2bfe46c9435c0186332994` |
 
 ## Sapo (kiêm trả lời nhanh)
 

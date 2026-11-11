@@ -8,7 +8,7 @@
 | Sau khi duyệt | thêm "Rà soát kỹ thuật: Nguyễn Quang Đạo (ngày)" vào byline → build tự thêm lastReviewed/reviewedBy |
 
 
-## Bản vá 11/11/2026 — chờ anh Nguyễn Quang Đạo xác nhận
+## Bản vá 11/11/2026 — anh Nguyễn Quang Đạo đã duyệt 11/11/2026 (lastReviewed 2026-11-11)
 
 - Bổ sung sau duyệt 10/11: case BMW X5 E70 2010 – X-Light F10 Turbo V2; thêm 2 Series Gran Coupé, 4 Series, 8 Series, Z4 (Z4 ở nhóm Mui trần).
 - Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.

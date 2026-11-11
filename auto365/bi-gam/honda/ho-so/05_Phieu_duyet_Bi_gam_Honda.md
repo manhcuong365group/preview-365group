@@ -45,7 +45,7 @@ Anh Nguyễn Quang Đạo đã duyệt phần vá theo tái kiểm độc lập 
 - Bỏ bảng tra hồ sơ (khối "Xe … đã lắp mẫu bi gầm nào?") và nhãn đỏ trên các H2.
 - Đổi 5 ảnh khối "Vì sao chọn" (hệ thống chi nhánh, bảo hành điện tử, căn chỉnh Cos/Pha, chứng nhận đại lý ủy quyền X-Light, tư vấn).
 
-## Bản vá 11/11/2026 — chờ anh Nguyễn Quang Đạo xác nhận
+## Bản vá 11/11/2026 — anh Nguyễn Quang Đạo đã duyệt 11/11/2026 (lastReviewed 2026-11-11)
 
 - Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
 - Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
