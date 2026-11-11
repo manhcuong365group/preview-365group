@@ -915,7 +915,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  qc.addEventListener('change',syncTabs);window.gbReady=1;
  document.querySelectorAll('.h3m-need__b').forEach(function(b){b.addEventListener('click',function(){var ids=b.dataset.need.split('|');
   document.querySelectorAll('.h3m-need__b').forEach(function(x){x.classList.toggle('is-on',x===b)});
-  document.querySelectorAll('.h3m-card').forEach(function(c){c.classList.toggle('is-hl',ids.indexOf(c.dataset.id)>-1);c.classList.toggle('is-dim',ids.indexOf(c.dataset.id)<0)});
   })});
  renderCards();
  if(MOB0){var tr=document.querySelector('.h3m-hero .h3m-trust'),qw=document.querySelector('.h3m-quick');if(tr&&qw){tr.classList.add('h3m-trust--light');qw.insertAdjacentElement('afterend',tr)}}
