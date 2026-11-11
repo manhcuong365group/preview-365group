@@ -145,7 +145,11 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-cc-h{display:flex;align-items:center;gap:8px;cursor:pointer}.vf-cc-h input{width:17px;height:17px;accent-color:var(--red);margin:0}
 .vf-cc-h b{color:var(--red);font-size:14px}.vf-cc-h em{margin-left:auto;font-style:normal;font-weight:800;color:var(--ink)}
 .vf-cc p{margin:4px 0 8px;font-size:13px;color:var(--ink)}
-.vf-cc-r{display:flex;gap:6px}.vf-cc-r select{flex:1;min-width:0;padding:7px 8px;border:1px solid var(--line);border-radius:7px;font:inherit;font-size:13px;background:#fff}.vf-cc-r select[data-k=q]{flex:0 0 78px}
+.vf-cc-codes{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:6px}
+.vf-cc-codes button{border:1px solid var(--line);background:#fff;border-radius:7px;padding:4px 8px;font:inherit;font-size:12px;font-weight:700;cursor:pointer;line-height:1.2;text-align:center}
+.vf-cc-codes button small{display:block;font-weight:500;color:var(--mut);font-size:11px}
+.vf-cc-codes button[aria-checked=true]{border-color:var(--red);background:var(--red);color:#fff}.vf-cc-codes button[aria-checked=true] small{color:#fff}
+.vf-cc-r{display:flex;gap:6px}.vf-cc-r select{flex:1;min-width:0;padding:7px 8px;border:1px solid var(--line);border-radius:7px;font:inherit;font-size:13px;background:#fff}.vf-cc-r select[data-k=q]{flex:1 1 auto}
 #vi-tri .vf-pz-sum{margin-top:10px}
 @media(max-width:600px){.vf-calc{grid-template-columns:1fr}}
 .vf-pz-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
@@ -514,13 +518,15 @@ img{max-width:100%;display:block}a{color:inherit}
   dia.innerHTML='<img src="hinh/m/'+DIMG[i]+'" alt="" width="640" height="400"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return 'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%"></i>'}).join('')+LAB.map(function(l){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%"><b>'+l[2]+'</b>'+l[3]+'</span>'}).join('')}
  dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d)})});
  // Tính giá kính lẻ — bảng giá dán lẻ 3M 06/2026 (triệu đ)
+ var KL=[['CR BLK 40',6.5],['CR BLK 50',5.7],['CR BLK 60',5.7],['IR 50',3.3],['NR 35',2.6]],SB=[['CR BLK 35',2.6],['CR BLK 15',2.6],['IR 25',1.8],['IR 15',1.8],['NR 25',1.7],['NR 15',1.7],['NR 5',1.7]],LW=[['CR BLK 35',4.1],['CR BLK 15',4.1],['IR 25',2.3],['IR 15',2.3],['NR 25',1.9],['NR 15',1.9],['NR 5',1.9]];
  var CP=[
-  ['Kính lái','Ưu tiên tầm nhìn và cách nhiệt. Chừa vùng camera, cảm biến.',[['CR BLK 40',6.5],['CR BLK 60 / 50',5.7],['IR 50',3.3],['NR 35',2.6]],0],
-  ['Kính sườn','Cản nắng hai bên, tăng riêng tư. Giá theo cặp.',[['CR BLK 35 / 15',2.6],['IR 25 / 15',1.8],['NR 25 / 15 / 5',1.7]],1],
-  ['Kính lưng','Cân bằng nhiệt và tầm nhìn khi lùi.',[['CR BLK 35 / 15',4.1],['IR 25 / 15',2.3],['NR 25 / 15 / 5',1.9]],0],
-  ['Cửa sổ trời panorama','Giảm nhiệt khoang lái; tính bằng giá một kính lái.',[['CR BLK 40',6.5],['CR BLK 60 / 50',5.7],['IR 50',3.3],['NR 35',2.6]],0]];
+  ['Kính lái','Ưu tiên tầm nhìn và cách nhiệt. Chừa vùng camera, cảm biến.',KL,0],
+  ['Kính sườn','Cản nắng hai bên, tăng riêng tư. Giá theo cặp.',SB,1],
+  ['Kính lưng','Cân bằng nhiệt và tầm nhìn khi lùi.',LW,0],
+  ['Cửa sổ trời panorama','Giảm nhiệt khoang lái; tính bằng giá một kính lái.',KL,0]];
  var CS=CP.map(function(){return {on:false,c:0,q:1}}),calc=document.getElementById('vf-calc');
- calc.innerHTML=CP.map(function(p,i){return '<div class="vf-cc" data-i="'+i+'"><label class="vf-cc-h"><input type="checkbox" data-k="on"><b>'+p[0]+'</b><em data-k="pr"></em></label><p>'+p[1]+'</p><div class="vf-cc-r"><select data-k="c" aria-label="Mã phim '+p[0]+'">'+p[2].map(function(o,j){return '<option value="'+j+'">3M '+o[0]+' – '+vnd(o[1])+'</option>'}).join('')+'</select>'+(p[3]?'<select data-k="q" aria-label="Số cặp kính sườn"><option value="1">1 cặp</option><option value="2">2 cặp</option></select>':'')+'</div></div>'}).join('');
+ calc.innerHTML=CP.map(function(p,i){return '<div class="vf-cc" data-i="'+i+'"><label class="vf-cc-h"><input type="checkbox" data-k="on"><b>'+p[0]+'</b><em data-k="pr"></em></label><p>'+p[1]+'</p><div class="vf-cc-codes" role="radiogroup" aria-label="Mã phim '+p[0]+'">'+p[2].map(function(o,j){return '<button type="button" role="radio" data-c="'+j+'" aria-checked="'+(j===0)+'">'+o[0]+'<small>'+String(o[1]).replace('.',',')+'tr'+'</small></button>'}).join('')+'</div>'+(p[3]?'<div class="vf-cc-r"><select data-k="q" aria-label="Số cặp kính sườn"><option value="1">1 cặp (trước hoặc sau)</option><option value="2">2 cặp (trước + sau)</option></select></div>':'')+'</div>'}).join('');
+ calc.addEventListener('click',function(e){var bt=e.target.closest('[data-c]');if(!bt)return;var el=bt.closest('.vf-cc'),s=CS[+el.dataset.i];s.c=+bt.dataset.c;s.on=true;el.querySelector('[data-k=on]').checked=true;el.querySelectorAll('[data-c]').forEach(function(x){x.setAttribute('aria-checked',x===bt)});drawPz()});
  function drawPz(){var sum=0,n=0,parts=[];
   calc.querySelectorAll('.vf-cc').forEach(function(el){var i=+el.dataset.i,s=CS[i],p=CP[i],o=p[2][s.c],v=o[1]*(p[3]?s.q:1);
    el.classList.toggle('on',s.on);el.querySelector('[data-k=pr]').textContent=vnd(v);
