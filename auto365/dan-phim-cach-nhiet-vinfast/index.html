@@ -121,7 +121,7 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-card__a a.vf-btn{border-color:var(--line);color:var(--ink)}
 .vf-note{font-size:13px;color:var(--mut);margin-top:14px}
 /* position + quote */
-.vf-pos{display:grid;grid-template-columns:1.3fr 1fr;gap:20px;align-items:start}
+.vf-pos{display:grid;grid-template-columns:1fr 1.05fr;gap:20px;align-items:start}
 .vf-pos__img{border-radius:12px;overflow:hidden}
 .vf-h3{font-size:16px;margin:16px 0 8px}
 .vf-diah{margin:0 0 6px;font-size:13px;color:var(--mut)}
@@ -139,6 +139,13 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-pz-sum{background:var(--dark);color:#fff;border-radius:12px;padding:12px 16px;display:flex;gap:12px;align-items:center}
 .vf-pz-sum>div{flex:1;min-width:0}.vf-pz-sum small{display:block;font-size:12px;opacity:.8}.vf-pz-sum span{display:block;font-size:12px;opacity:.8}.vf-pz-sum>div>b{font-size:22px}
 .vf-pz-clear{border-color:rgba(255,255,255,.3);color:#fff;background:transparent}
+.vf-calcw{position:sticky;top:60px}.vf-calcw .vf-lc{margin-top:0}
+.vf-modal{border:0;border-radius:14px;padding:0;width:min(480px,calc(100vw - 24px));max-height:calc(100vh - 24px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.vf-modal::backdrop{background:rgba(10,12,16,.6)}
+.vf-modal .vf-quote{border:0;box-shadow:none;margin:0}
+.vf-modal-x{position:absolute;top:8px;right:10px;border:0;background:none;font-size:26px;line-height:1;cursor:pointer;color:var(--mut)}
+.vf-pick-sum{background:#fff5f5;border:1px solid #f3c6c8;border-radius:8px;padding:8px 10px;font-size:13px;margin:0 0 10px}
+@media(max-width:960px){.vf-calcw{position:static}}
 .vf-lc{margin-top:14px;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
 .vf-lc-hd{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid var(--line)}
 .vf-lc-hd>b{font-size:15px}
@@ -337,6 +344,9 @@ img{max-width:100%;display:block}a{color:inherit}
   <p class="vf-sub">Dán trọn các vị trí kính, mỗi vị trí chọn mã phim theo vai trò.</p>
   <div class="vf-dtabs" role="group" aria-label="Kiểu xe"><button type="button" data-d="0">Minicar · VF 3</button><button type="button" data-d="1">Sedan · VF 5</button><button type="button" data-d="2">SUV · VF 8</button></div>
   <div class="vf-dia" id="vf-dia" role="img" aria-label="Sơ đồ các vị trí dán phim cách nhiệt: kính lái, kính sườn, kính nóc, kính lưng"></div>
+
+ </div>
+ <aside class="vf-calcw">
   <div class="vf-lc" id="vf-lc">
    <div class="vf-lc-hd"><b>Tính giá dán lẻ</b><div class="vf-lc-lines" role="tablist" aria-label="Dòng phim"><button type="button" role="tab" data-l="0" aria-selected="true">Crystalline CR BLK</button><button type="button" role="tab" data-l="1" aria-selected="false">Ceramic IR</button><button type="button" role="tab" data-l="2" aria-selected="false">Ceramic NR</button></div></div>
    <div class="vf-lc-pre"><span>Chọn nhanh:</span><button type="button" data-pre="0">Chỉ kính lái</button><button type="button" data-pre="0,1">Kính lái + sườn trước</button><button type="button" data-pre="0,1,2,3">Toàn bộ kính</button></div>
@@ -344,20 +354,7 @@ img{max-width:100%;display:block}a{color:inherit}
    <div class="vf-lc-ft"><div><small id="pz-list">Chưa chọn vị trí nào</small><b id="pz-total">0đ</b></div><a class="vf-btn vf-btn--red" href="#bao-gia" id="pz-go">Nhận báo giá →</a></div>
   </div>
   <p class="vf-note">Giá dán lẻ theo bảng giá 3M áp dụng từ 06/2026, đã gồm VAT. Số trong mã ≈ độ xuyên sáng (%): số càng nhỏ phim càng tối. Kính lái chỉ dán mã đủ sáng (CR BLK 40/50/60, IR 50, NR 35). Cửa sổ trời nhỏ báo giá theo xe.</p>
- </div>
- <form class="vf-quote" id="bao-gia" action="/api/leads" method="post" novalidate>
-  <h2>Nhận báo giá dán phim 3M cho VinFast</h2>
-  <p>Chọn xe, gói phim và để lại số điện thoại, cố vấn gọi lại báo giá chi tiết.</p>
-  <select class="vf-in" name="car_model" id="f-car" aria-label="Dòng xe VinFast"></select>
-  <select class="vf-in" name="package_name" id="f-pk" aria-label="Gói phim 3M"><option value="">Gói phim (chưa rõ cũng được)</option></select>
-  <select class="vf-in" name="scope" aria-label="Phạm vi dán"><option>Toàn bộ kính xe</option><option>Theo vị trí đã chọn</option><option>Chỉ kính lái</option><option>Kính sườn + kính lưng</option><option>Cửa sổ trời</option></select>
-  <input class="vf-in" name="fullname" placeholder="Họ và tên *" autocomplete="name" required aria-label="Họ và tên">
-  <input class="vf-in" name="phone" type="tel" inputmode="tel" placeholder="Số điện thoại *" autocomplete="tel" required aria-label="Số điện thoại">
-  <input type="hidden" name="positions"><input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-  <label class="vf-ck"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
-  <button class="vf-btn vf-btn--red" type="submit">Nhận báo giá ngay →</button>
-  <div class="vf-msg" role="status"></div>
- </form>
+ </aside>
 </div></section>
 
 
@@ -468,6 +465,21 @@ img{max-width:100%;display:block}a{color:inherit}
  <div class="vf-band"><div><b>Đặt lịch dán phim cách nhiệt 3M cho xe VinFast</b><span>Tư vấn theo xe · Báo giá chi tiết · Thử phim trước khi dán</span></div><a class="vf-btn vf-btn--red" href="#bao-gia">Đặt lịch ngay →</a></div>
 </div></section>
 
+<dialog class="vf-modal" id="vf-modal" aria-label="Nhận báo giá dán phim 3M cho VinFast"><button type="button" class="vf-modal-x" data-close aria-label="Đóng">×</button>
+ <form class="vf-quote vf-quote--m" id="bao-gia" action="/api/leads" method="post" novalidate>
+  <h2>Nhận báo giá dán phim 3M cho VinFast</h2>
+  <p>Chọn xe, gói phim và để lại số điện thoại, cố vấn gọi lại báo giá chi tiết.</p>
+  <select class="vf-in" name="car_model" id="f-car" aria-label="Dòng xe VinFast"></select>
+  <select class="vf-in" name="package_name" id="f-pk" aria-label="Gói phim 3M"><option value="">Gói phim (chưa rõ cũng được)</option></select>
+  <select class="vf-in" name="scope" aria-label="Phạm vi dán"><option>Toàn bộ kính xe</option><option>Theo vị trí đã chọn</option><option>Chỉ kính lái</option><option>Kính sườn + kính lưng</option><option>Cửa sổ trời</option></select>
+  <input class="vf-in" name="fullname" placeholder="Họ và tên *" autocomplete="name" required aria-label="Họ và tên">
+  <input class="vf-in" name="phone" type="tel" inputmode="tel" placeholder="Số điện thoại *" autocomplete="tel" required aria-label="Số điện thoại">
+  <input type="hidden" name="positions"><input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+  <label class="vf-ck"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
+  <button class="vf-btn vf-btn--red" type="submit">Nhận báo giá ngay →</button>
+  <div class="vf-msg" role="status"></div>
+ </form>
+</dialog>
 <footer class="vf-foot"><div class="vf-wrap"><b>Auto365 – thuộc 365Group</b> · Hotline <a href="tel:0365365365">0365 365 365</a> · <a href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Tìm hiểu thêm về phim 3M</a></div></footer>
 <nav class="vf-float" aria-label="Liên hệ nhanh"><a href="tel:0365365365">☎ Gọi ngay</a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo</a></nav>
 
@@ -534,7 +546,7 @@ img{max-width:100%;display:block}a{color:inherit}
  }
  models.forEach(function(b){b.addEventListener('click',function(){pick(b)})});
  pick(document.querySelector('.vf-model[aria-pressed=true]'));filt();
- grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;document.getElementById('bao-gia').scrollIntoView({behavior:'smooth'});setTimeout(function(){document.querySelector('#bao-gia [name=fullname]').focus({preventScroll:true})},500)});
+ grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;openQ()});
  document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
  // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
  var DIMG=['m-vf3.webp','m-vf5.webp','m-vf8.webp'];
@@ -571,6 +583,13 @@ img{max-width:100%;display:block}a{color:inherit}
  drawPz();
  var s0=document.querySelector('.vf-model[aria-pressed=true]');if(s0)drawDia(+s0.dataset.g);
 
+ // Popup báo giá
+ var qm=document.getElementById('vf-modal');
+ function openQ(){var q=document.querySelector('#bao-gia [name=positions]'),old=qm.querySelector('.vf-pick-sum');if(old)old.remove();
+  if(q&&q.value){var p=document.createElement('p');p.className='vf-pick-sum';p.textContent='Vị trí đã chọn: '+q.value;qm.querySelector('form p').after(p)}
+  if(qm.showModal){if(!qm.open)qm.showModal()}else location.hash='bao-gia';setTimeout(function(){var n=qm.querySelector('[name=fullname]');if(n)n.focus()},60)}
+ document.addEventListener('click',function(e){var a=e.target.closest('a[href="#bao-gia"]');if(a){e.preventDefault();openQ()}});
+ qm.addEventListener('click',function(e){if(e.target===qm||e.target.closest('[data-close]'))qm.close()});
  // Lead form — chỉ báo thành công khi API trả {"success": true}
  var f=document.getElementById('bao-gia'),msg=f.querySelector('.vf-msg');
  function show(t,ok){msg.className='vf-msg '+(ok?'ok':'err');msg.textContent=t}
