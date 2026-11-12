@@ -6,5 +6,7 @@
 /bi-gam/vinfast-vf7/*  /bi-gam/vinfast/vf7/:splat  301
 /3m-365group  /3m.365group.com.vn/phim-cach-nhiet-3m/  301
 /3m-365group/*  /3m.365group.com.vn/phim-cach-nhiet-3m/:splat  301
-/phim-cach-nhiet-3m-vinfast  /dan-phim-cach-nhiet-vinfast/  301
-/phim-cach-nhiet-3m-vinfast/*  /dan-phim-cach-nhiet-vinfast/:splat  301
+/phim-cach-nhiet-3m-vinfast  /phim-cach-nhiet/vinfast/  301
+/phim-cach-nhiet-3m-vinfast/*  /phim-cach-nhiet/vinfast/:splat  301
+/dan-phim-cach-nhiet-vinfast  /phim-cach-nhiet/vinfast/  301
+/dan-phim-cach-nhiet-vinfast/*  /phim-cach-nhiet/vinfast/:splat  301
