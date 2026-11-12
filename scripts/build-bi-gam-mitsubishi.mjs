@@ -62,12 +62,12 @@ const lead = cut('<section class="bght-sec bght-leadsec"', /<\/section><\/div>\s
 // ảnh thẻ "Vì sao chọn": ảnh xe Mitsubishi thật lắp bi gầm tại Auto365 (ảnh case)
 const N0 = 'https://auto365.vn/uploads/images/news/';
 const WHY_IMG = {
-  'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ["hinh/ly-do-he-thong.webp","Mitsubishi Xpander tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành"],
+  'auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp': ["hinh/ly-do-he-thong.webp","Mitsubishi Xforce tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành"],
   'auto365vn-tra-cuu-bao-hanh-dien-tu.webp': ["hinh/ly-do-bao-hanh.webp","Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365"],
   'auto365vn-xuong-lap-bi-gam-x-light-x3-ultra.webp': ["hinh/ly-do-ky-thuat-vien-lap-bi-gam.webp","Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước"],
-  'auto365vn-can-chinh-den-tren-bang-test-xuong.webp': ["hinh/ly-do-can-chinh.webp","Mitsubishi Xpander Cross chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365"],
+  'auto365vn-can-chinh-den-tren-bang-test-xuong.webp': ["hinh/ly-do-can-chinh.webp","Mitsubishi Outlander chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365"],
   'auto365vn-bao-gia-lap-dat-bi-gam.webp': ["hinh/ly-do-chinh-hang.webp","Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light"],
-  'auto365vn-tu-van-den-gam-theo-tung-xe.webp': ["hinh/ly-do-tu-van.webp","Kỹ thuật viên Auto365 tư vấn nâng cấp đèn cho chủ xe Mitsubishi Outlander"],
+  'auto365vn-tu-van-den-gam-theo-tung-xe.webp': ["hinh/ly-do-tu-van.webp","Kỹ thuật viên Auto365 tư vấn nâng cấp đèn cho chủ xe Mitsubishi Destinator"],
 };
 let why = cut('<section class="bght-sec bght-why" id="vi-sao-chon">', /\n?<\/div><\/section>/)
   .replace(/src="hinh\/([^"]+)" alt="[^"]*"/g, (m, f) => { const v = WHY_IMG[f]; if (!v) throw new Error('why img: ' + f); return `src="${v[0]}" alt="${v[1]}"`; })

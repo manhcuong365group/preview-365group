@@ -11,7 +11,7 @@
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (14), FAQPage |
-| SHA-256 index.html | `63314750159925a0d26e0a5fe78fedcd610c731e66ae8a44e1fbe9269dbf49c3` |
+| SHA-256 index.html | `b6334b6deb18252431229a271d8cc1f87620d680c21fc02aa6afb531fce7ff07` |
 | SHA-256 content-src.html | `2fcf0719bd7b29292357edfcdcfabb971ebe2756898b1f744bed5881ecfc5512` |
 
 ## Sapo (kiêm trả lời nhanh)
@@ -111,12 +111,12 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Ma
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `auto365vn-mat-tien-he-thong-nang-cap-xe-toan-quoc.webp` | Mặt tiền chi nhánh Auto365, hệ thống hơn 90 chi nhánh tại 33 tỉnh thành |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Mazda CX-5 tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
 | Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-bao-hanh.webp` | Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `auto365vn-can-chinh-den-tren-bang-test-xuong.webp` | Căn đường cắt Cos trên bảng test tại xưởng Auto365 |
-| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-chinh-hang.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `auto365vn-tu-van-den-gam-theo-tung-xe.webp` | Tư vấn đèn gầm theo từng xe tại Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Mazda CX-5 chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
+| Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-bao-gia.webp` | Bảng giá đèn niêm yết tại quầy tư vấn Auto365 |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Tư vấn đèn gầm theo từng xe cho Mazda CX-5 tại Auto365 |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Mazda trên trang này.
 

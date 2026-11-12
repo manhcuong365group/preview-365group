@@ -11,7 +11,7 @@
 | H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `73fd3ae57b2ec1f490e2d5c8845a24d60dd738f957c6b0c162508bb58b2482e4` |
+| SHA-256 index.html | `9aa81a72b4ee908fbd3b60170c48da5af0382d47a353c49af43dfef2b14d263d` |
 | SHA-256 content-src.html | `84f25235f0b188b81baa71425daf80620bc6470ff0947766f3524b96e20f0319` |
 
 ## Sapo (kiêm trả lời nhanh)
@@ -113,12 +113,12 @@ _Khối dùng chung với trang theo-hang-xe (build tự lấy). Riêng trang Mi
 
 | Thẻ | Nội dung | Ảnh | Alt |
 |---|---|---|---|
-| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Mitsubishi Xpander tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
+| 90+ chi nhánh tại 33 tỉnh thành | Kiểm tra hốc đèn và hệ điện tại chi nhánh gần bạn sau khi Auto365 xác nhận điểm tiếp nhận phù hợp; tiện quay lại căn chỉnh khi cần. | `ly-do-he-thong.webp` | Mitsubishi Xforce tại hệ thống Auto365 hơn 90 chi nhánh trên 33 tỉnh thành |
 | Bảo hành điện tử theo từng mẫu | Bảo hành theo chính sách và thời hạn từng mẫu. Gửi yêu cầu tại chi nhánh nơi mua, lắp; hỗ trợ tại điểm khác do Auto365 xác nhận. | `ly-do-bao-hanh.webp` | Tra cứu bảo hành điện tử 365Group và phiếu bàn giao sản phẩm có mã bảo hành tại Auto365 |
 | Kỹ thuật viên giàu kinh nghiệm | Chuyên thi công đèn ô tô trên nhiều dòng xe, thành thạo tháo cản, xử lý hốc đèn và đấu nối điện; lắp chắc chắn, hạn chế can thiệp kết cấu zin. | `ly-do-ky-thuat-vien-lap-bi-gam.webp` | Kỹ thuật viên Auto365 lắp bi gầm vào hốc đèn trên cản trước |
-| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Mitsubishi Xpander Cross chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
+| Căn chỉnh Cos/Pha chuyên nghiệp | Sau khi lắp, kỹ thuật viên căn lại đường cắt Cos/Pha cho hai đèn cân đối, hạn chế chói xe đối diện; khách kiểm tra vùng sáng trước khi nhận xe. | `ly-do-can-chinh.webp` | Mitsubishi Outlander chiếu đèn lên bảng căn chỉnh Cos/Pha tại xưởng Auto365 |
 | Giá niêm yết, báo giá minh bạch | Giá từng mẫu niêm yết công khai; pát, dây, relay, công lắp và VAT được báo riêng và thống nhất trước khi thi công. | `ly-do-chinh-hang.webp` | Chứng nhận Auto365 Thủ Đức là đại lý ủy quyền lắp đặt chính hãng đèn X-Light |
-| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Kỹ thuật viên Auto365 tư vấn nâng cấp đèn cho chủ xe Mitsubishi Outlander |
+| Tư vấn đúng theo từng xe | Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu; nội dung tư vấn do kỹ thuật viên Nguyễn Quang Đạo kiểm duyệt. | `ly-do-tu-van.webp` | Kỹ thuật viên Auto365 tư vấn nâng cấp đèn cho chủ xe Mitsubishi Destinator |
 
 **Thương hiệu đèn tại Auto365:** X-Light, GTR, Titan, AES, Henvvei, Red Lighting, Matrix Light, Fogway — phạm vi: thương hiệu đèn Auto365 phân phối, không ngụ ý mỗi hãng đã có hồ sơ Mitsubishi trên trang này.
 
