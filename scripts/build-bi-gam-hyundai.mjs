@@ -114,7 +114,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Lắp bi gầm Hyundai: chọn đèn theo dòng xe Santa Fe, Custin, Creta, Tucson | Auto365';
-const desc = 'Tra cứu 22 dòng Hyundai, xem 9 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe.';
+const desc = 'Tra cứu 22 dòng Hyundai, xem 11 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

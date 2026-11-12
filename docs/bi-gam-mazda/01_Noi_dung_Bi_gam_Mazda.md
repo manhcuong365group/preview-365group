@@ -7,11 +7,11 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/mazda/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/mazda |
 | Title (78 ký tự) | Lắp bi gầm Mazda: chọn đèn theo dòng xe Mazda 2, Mazda 6, CX-5, CX-8 \| Auto365 |
-| Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 14 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (14), FAQPage |
-| SHA-256 index.html | `2b01348e586eee1d73f3d3ac45430191642bd9ce360910d8ce3df2992aa23d4a` |
+| SHA-256 index.html | `63314750159925a0d26e0a5fe78fedcd610c731e66ae8a44e1fbe9269dbf49c3` |
 | SHA-256 content-src.html | `2fcf0719bd7b29292357edfcdcfabb971ebe2756898b1f744bed5881ecfc5512` |
 
 ## Sapo (kiêm trả lời nhanh)

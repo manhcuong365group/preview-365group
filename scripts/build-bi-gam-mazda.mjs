@@ -114,7 +114,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Lắp bi gầm Mazda: chọn đèn theo dòng xe Mazda 2, Mazda 6, CX-5, CX-8 | Auto365';
-const desc = 'Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
+const desc = 'Tra cứu bi gầm Mazda theo dòng và đời xe, xem 14 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

@@ -7,11 +7,11 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/hyundai/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/hyundai |
 | Title (83 ký tự) | Lắp bi gầm Hyundai: chọn đèn theo dòng xe Santa Fe, Custin, Creta, Tucson \| Auto365 |
-| Meta description (128 ký tự) | Tra cứu 22 dòng Hyundai, xem 9 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
+| Meta description (129 ký tự) | Tra cứu 22 dòng Hyundai, xem 11 hồ sơ lắp bi gầm X-Light và tìm chi nhánh Auto365 để kiểm tra cấu hình, nhận báo giá theo đời xe. |
 | H1 | Lắp bi gầm Hyundai: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (11), FAQPage |
-| SHA-256 index.html | `85e49e88c5e4a0a867835ab72b1446f9769f07bde02f47b1db32ccc66b597538` |
+| SHA-256 index.html | `a8083c5d3aa5e84c9e024c9f722521879f842c3054d75c1fbdbf6e978f1b44c5` |
 | SHA-256 content-src.html | `6ee5ddac17a88421454255d4e1d955b8b0c0616c3652e74457db144b918a79ca` |
 
 ## Sapo (kiêm trả lời nhanh)
