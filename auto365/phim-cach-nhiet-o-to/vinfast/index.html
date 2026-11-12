@@ -379,7 +379,7 @@ img{max-width:100%;display:block}a{color:inherit}
  <div>
   <h2 class="vf-h2">Vị trí dán phim trên xe <em id="vf-s3car">VinFast</em></h2>
   <p class="vf-sub">Dán trọn các vị trí kính, mỗi vị trí chọn mã phim theo vai trò.</p>
-  <div class="vf-dtabs" role="group" aria-label="Kiểu xe"><button type="button" data-d="0">Minicar</button><button type="button" data-d="1">Sedan</button><button type="button" data-d="2">SUV</button></div>
+  <div class="vf-dtabs" role="group" aria-label="Kiểu xe"><button type="button" data-d="0">Minicar</button><button type="button" data-d="1">Sedan</button><button type="button" data-d="2">SUV/MPV</button></div>
   <div class="vf-dia" id="vf-dia" role="img" aria-label="Sơ đồ các vị trí dán phim cách nhiệt: kính lái, kính sườn, kính nóc, kính lưng"></div>
 
  </div>
@@ -566,7 +566,7 @@ img{max-width:100%;display:block}a{color:inherit}
  tabs.forEach(function(t){t.addEventListener('click',function(){tab=t.dataset.t;tabs.forEach(function(x){x.setAttribute('aria-pressed',x===t)});filt()})});
  qi.addEventListener('input',filt);
  var models=document.querySelectorAll('.vf-model'),cases=document.querySelectorAll('.vf-case'),grp=document.getElementById('vf-grp'),sub=document.getElementById('vf-case-sub');
- var DP={"m-ec-van.webp":[[32,38],[43,38],[70,38],[60,24],[89,38]],"m-herio-green.webp":[[32,42],[50,42],[63,40],[65,32],[82,40]],"m-limo-green.webp":[[31,40],[55,40],[70,40],[65,32],[88,40]],"m-minio-green.webp":[[34,42],[48,40],[68,40],[60,26],[83,40]],"m-nerio-green.webp":[[34,40],[52,40],[66,40],[60,30],[87,42]],"m-vf-mpv-7.webp":[[33,42],[55,42],[72,42],[65,34],[90,42]],"m-vf-wild.webp":[[37,40],[46,40],[55,40],[50,33],[61,38]],"m-vf2.webp":[[37,42],[50,42],[70,42],[60,32],[82,40]],"m-vf3.webp":[[34,38],[48,38],[73,38],[60,30],[92,40]],"m-vf5.webp":[[35,40],[50,40],[63,40],[60,32],[79,40]],"m-vf6.webp":[[55,35],[68,38],[78,38],[70,25],[86,38]],"m-vf7.webp":[[55,33],[70,35],[80,35],[70,25],[90,35]],"m-vf8.webp":[[36,42],[50,42],[65,42],[60,34],[85,40]],"m-vf9.webp":[[38,42],[52,42],[68,42],[65,33],[87,40]],"xe-vinfast-fadil.webp":[[37,42],[52,42],[70,42],[60,32],[82,42]],"xe-vinfast-lux-a20.webp":[[30,38],[22,40],[14,42],[35,28],[8,46]],"xe-vinfast-lux-sa20.webp":[[40,38],[22,38],[13,38],[35,28],[6,40]],"xe-vinfast-president.webp":[[38,42],[52,42],[72,42],[65,32],[93,42]],"xe-vinfast-vfe34.jpg":[[45,35],[62,37],[73,37],[60,26],[82,40]]},CURF='',CURG=-1,CURN='',DTXT=['Minicar','Sedan','SUV'],DGN=['Minicar','Sedan','SUV'];
+ var DP={"m-ec-van.webp":[[32,38],[43,38],[70,38],[60,24],[89,38]],"m-herio-green.webp":[[32,42],[50,42],[63,40],[65,32],[82,40]],"m-limo-green.webp":[[38,40],[46,42],[62,41],[60,33],[89,41]],"m-minio-green.webp":[[34,42],[48,40],[68,40],[60,26],[83,40]],"m-nerio-green.webp":[[34,40],[52,40],[66,40],[60,30],[87,42]],"m-vf-mpv-7.webp":[[33,42],[55,42],[72,42],[65,34],[90,42]],"m-vf-wild.webp":[[37,40],[46,40],[55,40],[50,33],[61,38]],"m-vf2.webp":[[37,42],[50,42],[70,42],[60,32],[82,40]],"m-vf3.webp":[[34,38],[48,38],[73,38],[60,30],[92,40]],"m-vf5.webp":[[35,40],[50,40],[63,40],[60,32],[79,40]],"m-vf6.webp":[[55,35],[68,38],[78,38],[70,25],[86,38]],"m-vf7.webp":[[55,33],[70,35],[80,35],[70,25],[90,35]],"m-vf8.webp":[[36,42],[50,42],[65,42],[60,34],[85,40]],"m-vf9.webp":[[38,42],[52,42],[68,42],[65,33],[87,40]],"xe-vinfast-fadil.webp":[[37,42],[52,42],[70,42],[60,32],[82,42]],"xe-vinfast-lux-a20.webp":[[30,38],[22,40],[14,42],[35,28],[8,46]],"xe-vinfast-lux-sa20.webp":[[40,38],[22,38],[13,38],[35,28],[6,40]],"xe-vinfast-president.webp":[[38,42],[52,42],[72,42],[65,32],[93,42]],"xe-vinfast-vfe34.jpg":[[45,35],[62,37],[73,37],[60,26],[82,40]]},CURF='',CURG=-1,CURN='',DTXT=['Minicar','Sedan','SUV/MPV'],DGN=['Minicar','Sedan','SUV'];
  function pick(b){
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;CURF=b.querySelector('img').getAttribute('src').split('/').pop();
@@ -580,8 +580,8 @@ img{max-width:100%;display:block}a{color:inherit}
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;fpk.value=b.dataset.pk;openQ()});
  document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
  // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
- var DIMG=['m-vf3.webp','m-vf5.webp','m-vf8.webp'];
- var DIA=[DP["m-vf3.webp"],DP["m-vf5.webp"],DP["m-vf8.webp"]];
+ var DIMG=['m-vf3.webp','m-vf5.webp','m-limo-green.webp'];
+ var DIA=[DP["m-vf3.webp"],DP["m-vf5.webp"],DP["m-limo-green.webp"]];
  var LAB=[[8,18,'Kính lái'],[28,4,'Sườn trước'],[50,16,'Sườn sau'],[68,4,'Kính nóc'],[91,18,'Kính lưng']];
  var dbt=document.querySelectorAll('.vf-dtabs button'),dia=document.getElementById('vf-dia');
  function drawDia(i){var own=false,d=own||DIA[i],src=own?CURF:DIMG[i];dbt.forEach(function(b){var k=+b.dataset.d;b.setAttribute('aria-pressed',k===i);b.textContent=DTXT[k]});
