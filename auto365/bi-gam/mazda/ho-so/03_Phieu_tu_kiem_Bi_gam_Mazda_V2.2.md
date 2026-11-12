@@ -1,5 +1,7 @@
 # 03 — Phiếu tự kiểm hub Bi gầm Mazda (thang V2.2)
 
+> Mốc lịch sử: bảng điểm ngay dưới là lần tự kiểm trước. Kết quả hiện hành: bản vá 11/11/2026 (13 dòng xe, 13 hồ sơ), anh Đạo duyệt 11/11, reviewer tái kiểm 11/11 — xem các mục cuối phiếu.
+
 | Mục | Giá trị |
 |---|---|
 | Ngày tự kiểm | 10/11/2026 (sau duyệt kỹ thuật anh Đạo 10/11) |
@@ -23,7 +25,7 @@ Reviewer độc lập 10/11 chưa chốt PASS (lý do chung: thiếu dữ liệu
 - Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
 - Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
 - FAQ chi phí có link **danh sách mẫu bi gầm và giá tham khảo** (`https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham`), tách giá đèn theo mẫu khỏi báo giá hoàn thiện theo xe.
-- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu (Coupé = Coupe) và bỏ chữ "Hybrid".
+- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu và bỏ chữ "Hybrid" (ví dụ "XL7 Hybrid" vẫn ra XL7).
 - Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.
 - Hồ sơ 01–06 xuất lại cùng một build (11/11/2026).
 

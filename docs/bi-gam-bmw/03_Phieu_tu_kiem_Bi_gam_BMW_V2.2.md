@@ -1,5 +1,7 @@
 # 03 — Phiếu tự kiểm hub Bi gầm BMW (thang V2.2)
 
+> Mốc lịch sử: bảng điểm ngay dưới là lần tự kiểm trước. Kết quả hiện hành: bản vá 11/11/2026 (13 dòng xe, 5 hồ sơ), anh Đạo duyệt 11/11, reviewer tái kiểm 11/11 — xem các mục cuối phiếu.
+
 | Mục | Giá trị |
 |---|---|
 | Ngày tự kiểm | 10/11/2026 (sau duyệt kỹ thuật anh Đạo 10/11) |

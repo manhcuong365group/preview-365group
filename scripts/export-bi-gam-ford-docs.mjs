@@ -24,13 +24,13 @@ const toProd = (href) => new URL(href, canonical + '/').href.replace(/\/$/, '');
 
 const models = [...doc.querySelectorAll('#bgvf-grid a.bgvf-m')].map((a) => ({
   name: 'Ford ' + txt(a.querySelector('b').firstChild).replace(/^Bi gầm \S+ /, ''),
-  group: { hatch: 'Hatchback', sedan: 'Sedan', suv: 'SUV', mpv: 'MPV', pickup: 'Bán tải' }[a.dataset.g],
+  group: { hatch: 'Hatchback', sedan: 'Sedan', suv: 'SUV', mpv: 'MPV', pickup: 'Bán tải', van: 'Xe khách', roadster: 'Mui trần (Roadster)' }[a.dataset.g] || a.dataset.g,
   status: a.dataset.car ? 'Liên hệ tư vấn' : 'Có hồ sơ',
   url: a.dataset.car ? '' : toProd(a.getAttribute('href')),
   img: (a.querySelector('img') || {}).getAttribute?.('src') || '',
 }));
 const cases = [...doc.querySelectorAll('#bgvf-rail a.bgvf-case')].map((a) => ({
-  model: 'Ford ' + a.dataset.m, title: txt(a.querySelector('p')), url: a.href, date: a.querySelector('time').getAttribute('datetime'),
+  model: ('Ford ' + a.dataset.m).replace(/^Ford Ford /, 'Ford '), lm: txt(a.querySelector('.lm') || a.ownerDocument.createElement('i')), title: txt(a.querySelector('p')), url: a.href, date: a.querySelector('time').getAttribute('datetime'),
 }));
 const guides = [...doc.querySelectorAll('#bgvf-guides a.bgvf-guide')].map((a) => ({
   title: txt(a.querySelector('h3')), url: a.href, date: a.querySelector('time').getAttribute('datetime'), label: txt(a.querySelector('.lb')),
@@ -100,7 +100,7 @@ const checked = '2026-11-07'; // case, cẩm nang, link thẻ dòng xe: kiểm H
 const checkedModel = checked;
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
 models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? (/\/bi-gam-ford-/.test(m.url) ? 'bài tư vấn dòng xe đã đăng' : 'bài case đã đăng (chưa có bài tư vấn dòng xe)') : '', checkedModel, [m.status === 'Có hồ sơ' ? 'HTTP 200 (kiểm 07/11)' : '', /^https?:/.test(m.img) ? 'ảnh: ảnh case thật Auto365 (dòng xe chưa có ảnh mẫu)' : ''].filter(Boolean).join('; ')]));
-cases.forEach((c) => rows.push([/^Video:/.test(c.title) ? 'case_video' : 'case_article', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', sku(c.title), '', '', 'bài đã đăng auto365.vn', checked, 'mỗi bài là một xe khác nhau (chủ quản xác nhận 07/11); case_id nội bộ chưa có']));
+cases.forEach((c) => rows.push([/^Ảnh thi công tham khảo/.test(c.lm || '') ? 'case_gallery' : /^Video:/.test(c.title) ? 'case_video' : 'case_article', slug(c.model), c.model, '', 'đã đăng', c.title, c.url, c.date, '', (c.lm ? c.lm.split(' · ')[0] : sku(c.title)), (c.lm || ''), '', 'bài đã đăng auto365.vn', checked, 'mỗi bài là một xe khác nhau (chủ quản xác nhận 07/11); case_id nội bộ chưa có']));
 guides.forEach((x) => rows.push(['guide', (x.url.match(/bi-gam-ford-([a-z-]+)$/) || [])[1] || '', '', '', 'đã đăng', x.title, x.url, x.date, '', '', x.label, '', 'bài đã đăng auto365.vn', checked, /\/bi-gam-ford-/.test(x.url) ? 'bài tư vấn theo dòng xe, không phải case' : 'cẩm nang đèn bi gầm (kiến thức chung)']));
 fs.writeFileSync(path.join(out, '04_Master_Data_Bi_gam_Ford.csv'), '﻿' + rows.map((r) => r.map(csv).join(',')).join('\n') + '\n');
 

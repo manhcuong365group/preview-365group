@@ -9,10 +9,10 @@
 | Title (89 ký tự) | Lắp bi gầm Mitsubishi: chọn đèn theo dòng xe Xpander, Outlander, Triton, Xforce \| Auto365 |
 | Meta description (134 ký tự) | Tra cứu bi gầm Mitsubishi theo dòng và đời xe, xem 15 hồ sơ lắp X-Light, GTR, AES, Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-11 |
+| dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `ecf2b0a571ed4c20183c2a00a59d8b4667b303ea9286f30a4ea19ddfbbdc74e8` |
-| SHA-256 content-src.html | `1c7316dd817285e922f16184008f21e31496097e1f272ab0fdbd5d7507b77652` |
+| SHA-256 index.html | `b95e1afd5f38a32a65947e8ac99f69b69f656416d799ca0f6f2679819a7f13e4` |
+| SHA-256 content-src.html | `2b2af598c8cdbab03c2220d60bf498959b1063b4ab1c202d9ffc2837297e7f11` |
 
 ## Sapo (kiêm trả lời nhanh)
 

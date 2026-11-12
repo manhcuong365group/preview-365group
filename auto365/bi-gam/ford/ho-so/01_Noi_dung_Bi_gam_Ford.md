@@ -9,10 +9,10 @@
 | Title (82 ký tự) | Lắp bi gầm Ford: chọn đèn theo dòng xe Ranger, Everest, Escape, EcoSport \| Auto365 |
 | Meta description (121 ký tự) | Tra cứu bi gầm Ford theo dòng và đời xe, xem 21 hồ sơ lắp X-Light, GTR, AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-11 |
+| dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `9291f3158d16f986d8f38912ae2bbbed6f4b88a00fd8d70503ee02a0430d1c65` |
-| SHA-256 content-src.html | `3bd3761c475bd3aa3fa935db27d2af99ec143a30cb82c1e2eac542e3580af38f` |
+| SHA-256 index.html | `d68f09be81f5b70a0f31a7856c8dd234ef7237a0343855278ac0f31987c719d1` |
+| SHA-256 content-src.html | `d0a1bcd6f40a493b8931e88dcca0efc2e2bc574e77102b66cc8b2d8779aff777` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -27,7 +27,7 @@ Bi gầm Ford cần chọn theo hốc đèn gầm, đời xe và hệ thống đ
 | Ford Everest | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-everest |
 | Ford Ranger | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-ford-ranger |
 | Ford Ranger Raptor | Bán tải | Có hồ sơ | https://auto365.vn/ford-ranger-raptor-2024-lap-bi-gam-x-light-x3-ultra-4300k |
-| Ford Transit | undefined | Có hồ sơ | https://auto365.vn/bi-gam-ford-transit |
+| Ford Transit | Xe khách | Có hồ sơ | https://auto365.vn/bi-gam-ford-transit |
 | Ford Escape | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-escape |
 | Ford Focus | Sedan | Có hồ sơ | https://auto365.vn/bi-gam-ford-focus |
 | Ford EcoSport | SUV | Có hồ sơ | https://auto365.vn/bi-gam-ford-ecosport |
@@ -37,7 +37,7 @@ Bi gầm Ford cần chọn theo hốc đèn gầm, đời xe và hệ thống đ
 | Ford Fiesta | Sedan | Liên hệ tư vấn | — |
 | Ford Laser | Sedan | Liên hệ tư vấn | — |
 | Ford Mondeo | Sedan | Liên hệ tư vấn | — |
-| Ford Tourneo | undefined | Liên hệ tư vấn | — |
+| Ford Tourneo | Xe khách | Liên hệ tư vấn | — |
 
 ## Xe Ford đã lắp bi gầm tại Auto365 (21 bài hồ sơ)
 

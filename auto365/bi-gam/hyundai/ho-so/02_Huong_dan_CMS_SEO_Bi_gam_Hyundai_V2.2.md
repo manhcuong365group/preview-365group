@@ -36,7 +36,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 
 | Khối | Nguồn dữ liệu |
 |---|---|
-| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-07); `about` = Brand Hyundai. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-07 lấy từ byline "Rà soát kỹ thuật" |
+| CollectionPage | `dateModified` từ dòng "Cập nhật" (2026-11-11); `about` = Brand Hyundai. `reviewedBy` (Nguyễn Quang Đạo) + `lastReviewed` 2026-11-11 lấy từ byline "Rà soát kỹ thuật" |
 | BreadcrumbList | Trang chủ › Nâng cấp ánh sáng › Bi gầm › Hyundai |
 | ItemList `#dong-xe` | 6 thẻ dòng xe có link |
 | ItemList `#xe-thuc-te` | 8 bài case (mỗi bài là một xe khác nhau — chủ quản xác nhận 07/11; mã case_id nội bộ chưa có) |
@@ -46,7 +46,7 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 
 | Khối | Nguồn |
 |---|---|
-| 17 dòng xe (Hatchback 3 · Sedan 4 · SUV 7 · MPV 3) | Dải Hyundai ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
+| 22 dòng xe (xem tab trên trang) | Dải Hyundai ở trang theo-hang-xe + dòng đã ngừng bán/ít phổ biến nhưng có case; dòng không có dữ liệu thì bỏ |
 | Hồ sơ (8) | Bài case bi gầm Hyundai đã đăng auto365.vn, đối chiếu sitemap 07/11/2026; hãng đèn: X-Light. Không tính: đèn gầm dạng rời, bi LED, camera, video trùng nội dung bài viết, bài "mẫu đèn × dòng xe" không nêu xe cụ thể |
 | Box lưu ý | Ví dụ kích thước hốc/đời xe lấy từ tiêu đề bài case (2.0 inch = F10 2.0 New / AES SV 2.0 Max; 3.0 inch = AES SV 3.0 Max) |
 | Gợi ý theo nhu cầu (3 nhóm) | Link "Đã lắp" là bài case trong danh sách hồ sơ |
@@ -57,6 +57,8 @@ Thẻ dòng xe: "Có tư vấn" → bài tư vấn (Accent, Elantra, Creta, Tucs
 | Vì sao chọn, chi nhánh, form | Khối chuẩn lấy từ theo-hang-xe khi build; `data-service` = "Bi gầm Hyundai"; thẻ tư vấn giữ câu trung tính (không nêu tên người duyệt trong khối dùng chung); người rà soát ghi ở byline và schema |
 
 ## 5. Image Pack V2.2 (07/11/2026)
+
+> Cập nhật 11/11/2026: thẻ dòng xe nay dùng ảnh do designer Auto365 cung cấp (NAS Marketing/WEB/261110, đã tách nền); dòng nào còn ảnh Wikimedia thì ghi công ngay dưới lưới xe trên trang. Các dòng "Wikimedia Commons" trong bảng dưới chỉ còn hiệu lực cho đúng những ảnh chưa được thay.
 
 Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe).   Không có ảnh trước–sau/beam test.
 
@@ -103,7 +105,7 @@ Thumbnail dòng xe: `../theo-hang-xe/hinh/m-*.webp` (hồ sơ trang theo-hang-xe
 | Hồ sơ case | 9 |
 
 - Mỗi thẻ hồ sơ hiển thị **mẫu bi gầm · lens** lấy từ dữ liệu từng ca (đối chiếu 100% với bảng lens đã duyệt 09/11 cho Hyundai/Mitsubishi/Ford/Honda). Không khôi phục bảng `#bang-tra` theo quyết định của chủ quản 10/11; FAQ 2.0/3.0 inch dẫn về khối hồ sơ `#xe-thuc-te`.
-- Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề): ca "SV 3.0 Max" thuộc AES.
+- Bộ lọc hãng đèn dựng từ dữ liệu từng ca (không suy từ tiêu đề).
 - FAQ chi phí có link **danh sách mẫu bi gầm và giá tham khảo** (`https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham`), tách giá đèn theo mẫu khỏi báo giá hoàn thiện theo xe.
-- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu (Coupé = Coupe) và bỏ chữ "Hybrid".
+- Mobile: khoảng cuộn tới mục 124px (tiêu đề không bị thanh đầu trang che). Tìm xe bỏ dấu và bỏ chữ "Hybrid" (ví dụ "XL7 Hybrid" vẫn ra XL7).
 - Bộ tìm chi nhánh: link "Xem tất cả" chuẩn hoá Hồ Chí Minh/HCM/Sài Gòn → `TP.HCM` khi sang danh bạ.

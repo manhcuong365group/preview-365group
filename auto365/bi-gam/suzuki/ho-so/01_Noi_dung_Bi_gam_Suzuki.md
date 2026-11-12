@@ -9,10 +9,10 @@
 | Title (77 ký tự) | Lắp bi gầm Suzuki: chọn đèn theo dòng xe XL7, Ertiga, Swift, Vitara \| Auto365 |
 | Meta description (130 ký tự) | Tra cứu bi gầm Suzuki theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-11 |
+| dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `992b5e75d6c1b28d2269d9f499af963f0f7f99ebac0095e897962ddd139b29e4` |
-| SHA-256 content-src.html | `635c0d78e87b8b59a0e0fd60713107c3585853bb0b9dd6932796514430f850f5` |
+| SHA-256 index.html | `0b850f5ce90fcc8b55e7430179ca8807e4d3d20355b7915cff1e93723ada0703` |
+| SHA-256 content-src.html | `10f0673b729501b392f0e83840fa503f1f7e7ff7179f8101177170fd0c577487` |
 
 ## Sapo (kiêm trả lời nhanh)
 

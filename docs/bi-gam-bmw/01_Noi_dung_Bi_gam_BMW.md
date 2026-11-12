@@ -9,10 +9,10 @@
 | Title (68 ký tự) | Lắp bi gầm BMW: chọn đèn theo dòng xe X3, X5, X6, 3 Series \| Auto365 |
 | Meta description (127 ký tự) | Tra cứu bi gầm BMW theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-11 |
+| dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `68612d6a6bc55a9079a303f6c9b5c0f2d2776ec41672650352d4ae24e803c81d` |
-| SHA-256 content-src.html | `d8c4ad6e19aea172570dc851e04b1acaa6d329e85793f66b6f82391105ec6842` |
+| SHA-256 index.html | `44b8b34cb301849ea2c23006a4eebe50f4c9dec512ff59d415dab451d97fa400` |
+| SHA-256 content-src.html | `a2b4d133ed80579c82e38d47d8b2b8493e2e34b6640ebf5b5f06a91a518fdbb9` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -36,7 +36,7 @@ Bi gầm BMW cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | BMW 2 Series Gran Coupé | Sedan | Liên hệ tư vấn | — |
 | BMW 4 Series | Sedan | Liên hệ tư vấn | — |
 | BMW 8 Series | Sedan | Liên hệ tư vấn | — |
-| BMW Z4 | undefined | Liên hệ tư vấn | — |
+| BMW Z4 | Mui trần (Roadster) | Liên hệ tư vấn | — |
 
 ## Xe BMW đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
 

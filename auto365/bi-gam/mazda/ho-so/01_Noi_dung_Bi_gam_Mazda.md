@@ -9,10 +9,10 @@
 | Title (78 ký tự) | Lắp bi gầm Mazda: chọn đèn theo dòng xe Mazda 2, Mazda 6, CX-5, CX-8 \| Auto365 |
 | Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-11 |
+| dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (13), FAQPage |
-| SHA-256 index.html | `c3b58c6f6d2d1fe0c588c9d049e06e597ec79df5162ba288b31f4cac1ea69ef5` |
-| SHA-256 content-src.html | `9ba66aa1d55678d3c55da824ec4705de0bac70087b2bfe46c9435c0186332994` |
+| SHA-256 index.html | `afd6cb9813eeced4f2c73cb07447aef14f2429405eaa23e483a58d1f0d9bb9fb` |
+| SHA-256 content-src.html | `1fe52e93ba6df0921cfe3c8a0f1ac96ce911e00b338539d979c0c93f3a26c08c` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -35,7 +35,7 @@ Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống �
 | Mazda CX-30 | SUV | Liên hệ tư vấn | — |
 | Mazda CX-60 | SUV | Liên hệ tư vấn | — |
 | Mazda CX-90 | SUV | Liên hệ tư vấn | — |
-| Mazda MX-5 | undefined | Liên hệ tư vấn | — |
+| Mazda MX-5 | Mui trần (Roadster) | Liên hệ tư vấn | — |
 | Mazda BT-50 | Bán tải | Liên hệ tư vấn | — |
 
 ## Xe Mazda đã lắp bi gầm tại Auto365 (13 bài hồ sơ)
@@ -44,16 +44,16 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
 | Dòng xe | Bài | Ngày đăng |
 |---|---|---|
-| Mazda Mazda 2 | [Mazda 2 1.5L AT 2019 lắp bi gầm X-Light X3 Ultra 4300K](https://auto365.vn/mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k) | 2026-11-06 |
-| Mazda Mazda 626 | [Mazda 626 2002 2.0L lắp bi gầm F10 Turbo V2 4300K](https://auto365.vn/mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k) | 2026-11-06 |
-| Mazda Mazda 6 | [Mazda 6 2016 2.5L lắp bi LED V30 Ultra kết hợp bi gầm SV 3.0 Max](https://auto365.vn/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max) | 2026-11-04 |
+| Mazda 2 | [Mazda 2 1.5L AT 2019 lắp bi gầm X-Light X3 Ultra 4300K](https://auto365.vn/mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k) | 2026-11-06 |
+| Mazda 626 | [Mazda 626 2002 2.0L lắp bi gầm F10 Turbo V2 4300K](https://auto365.vn/mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k) | 2026-11-06 |
+| Mazda 6 | [Mazda 6 2016 2.5L lắp bi LED V30 Ultra kết hợp bi gầm SV 3.0 Max](https://auto365.vn/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max) | 2026-11-04 |
 | Mazda CX-5 | [Mazda CX-5 2.0L 2022 nâng cấp bi gầm X-Light F10 2.0 New](https://auto365.vn/mazda-cx-5-20l-2022-nang-cap-bi-gam-x-light-f10-20-new) | 2026-10-26 |
 | Mazda CX-5 | [Mazda CX-5 2021 lắp bi gầm X-Light F10 Hyper 2.0](https://auto365.vn/mazda-cx-5-2021-lap-bi-gam-x-light-f10-hyper-2-0) | 2026-09-10 |
-| Mazda Mazda 6 | [Mazda 6 2.5L 2017 lắp bi gầm GTR G1 Turbo V2 Cos 4800K/Pha 4300K](https://auto365.vn/mazda-6-25l-2017-lap-bi-gam-gtr-g1-turbo-v2) | 2026-08-29 |
+| Mazda 6 | [Mazda 6 2.5L 2017 lắp bi gầm GTR G1 Turbo V2 Cos 4800K/Pha 4300K](https://auto365.vn/mazda-6-25l-2017-lap-bi-gam-gtr-g1-turbo-v2) | 2026-08-29 |
 | Mazda CX-5 | [Mazda CX-5 2016 2.0L 2WD lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/mazda-cx-5-2016-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-08-17 |
 | Mazda CX-8 | [Mazda CX-8 2021 Luxury lắp bi gầm X-Light F10 Hyper 2.0](https://auto365.vn/mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-20-gia-va-cau-hinh-thuc-te) | 2026-08-08 |
-| Mazda Mazda 6 | [Mazda 6 lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-07-06 |
-| Mazda Mazda 2 | [Mazda 2 nâng cấp bi gầm Titan 301](https://auto365.vn/mazda-2-nang-cap-bi-gam-titan-301) | 2024-09-16 |
+| Mazda 6 | [Mazda 6 lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-07-06 |
+| Mazda 2 | [Mazda 2 nâng cấp bi gầm Titan 301](https://auto365.vn/mazda-2-nang-cap-bi-gam-titan-301) | 2024-09-16 |
 | Mazda CX-5 | [Mazda CX-5 lắp bi laser X-Light X6 Pro kết hợp bi gầm F10 2.0](https://auto365.vn/mazda-cx-5-do-den-bi-led-xlight-x6-pro-va-bi-gam-f10-2-0-2024) | 2024-08-17 |
 | Mazda CX-5 | [Mazda CX-5 độ đèn bi gầm X-Light F10 2.0](https://auto365.vn/mazda-do-den-bi-gam-xlight-f10-20-2024) | 2024-08-02 |
 | Mazda CX-5 | [Mazda CX-5 lắp bi gầm AES SV 2.0 Max](https://auto365.vn/bi-gam-aes-sv-20-max-cho-mazda-cx-5-gia-thong-so-va-luu-y-khi-lap) | 2026-07-09 |
