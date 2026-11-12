@@ -126,7 +126,7 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-card__a a.vf-btn{border-color:var(--line);color:var(--ink)}
 .vf-note{font-size:13px;color:var(--mut);margin-top:14px}
 /* position + quote */
-.vf-pos{display:grid;grid-template-columns:1fr 1.05fr;gap:20px;align-items:start}
+.vf-pos{display:grid;grid-template-columns:1fr 1.45fr;gap:20px;align-items:start}
 .vf-pos__img{border-radius:12px;overflow:hidden}
 .vf-h3{font-size:16px;margin:16px 0 8px}
 .vf-diah{margin:0 0 6px;font-size:13px;color:var(--mut)}
@@ -582,7 +582,7 @@ img{max-width:100%;display:block}a{color:inherit}
  // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
  var DIMG=['m-vf3.webp','m-vf5.webp','m-limo-green.webp'];
  var DIA=[DP["m-vf3.webp"],DP["m-vf5.webp"],DP["m-limo-green.webp"]];
- var LAB=[[8,18,'Kính lái'],[28,4,'Sườn trước'],[50,16,'Sườn sau'],[68,4,'Kính nóc'],[91,18,'Kính lưng']];
+ var LAB=[[8,18,'Kính lái'],[27,4,'Sườn trước'],[76,10,'Sườn sau'],[52,4,'Kính nóc'],[93,22,'Kính lưng']];
  var dbt=document.querySelectorAll('.vf-dtabs button'),dia=document.getElementById('vf-dia');
  function drawDia(i){var own=false,d=own||DIA[i],src=own?CURF:DIMG[i];dbt.forEach(function(b){var k=+b.dataset.d;b.setAttribute('aria-pressed',k===i);b.textContent=DTXT[k]});
   dia.innerHTML='<img src="hinh/m/'+src+'" alt="" width="640" height="400" style="aspect-ratio:16/10;object-fit:fill"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return 'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%"></i>'}).join('')+LAB.map(function(l){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%"><b>'+l[2]+'</b></span>'}).join('');if(typeof ST!=='undefined'&&ST)hiDia()}
