@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `e98fccacd04749e3fd41c7d7f5a57b938e1f6579d3504cdf0b6ef3040d6d256d` |
-| SHA-256 content-src.html | `915b67fc57af49f0cb25419380f1a6ca4ce982932d66043badf80dc4064ed33b` |
+| SHA-256 index.html | `a9ab20bdaddd4ad1e38815bff3dcbe46d300e02bd4a37812e9bd0726fa1d4e6e` |
+| SHA-256 content-src.html | `47329a61f322202beb9148e1d35c1d9ff972324ce526c1f938f07438422ec728` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm BMW cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES) trên BMW X3, X5 và X6; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm BMW cần kiểm tra cả hệ thống điện và cảnh báo lỗi đèn của từng đời xe, không chỉ kích thước hốc đèn gầm. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR, AES lens 3.0 inch trên BMW X3, X5 và X6; kỹ thuật viên kiểm tra giắc nguồn, đèn báo lỗi và căn chỉnh đường cắt cos sau khi lắp.
 
 ## Chọn dòng xe BMW
 

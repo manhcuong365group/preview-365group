@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Suzuki: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `fb58561ba324027421c477e9ca5b3df1ec45ff07ff6e7146a9caa8fff609cd6f` |
-| SHA-256 content-src.html | `6c1264c033fe94844f05ecbd8d799f533ec16544613751cd866c95e106a31a25` |
+| SHA-256 index.html | `12a4c4fa36088a72f689346954796571c8b087e3019bde045483533bafb0fd9d` |
+| SHA-256 content-src.html | `a1c4a9f1413bbd4a5577fcd16426c431236d0a7c6d7929ad0087d219a7d6b8ab` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Suzuki cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES) trên Suzuki XL7, Swift và Vitara; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm Suzuki giúp XL7, Swift và Vitara có thêm vùng sáng gần, rộng hai bên khi đi đêm hoặc trời mưa, bổ trợ cho đèn pha zin. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR, AES trên Suzuki XL7, Swift và Vitara; kỹ thuật viên kiểm tra hốc đèn, pát và giắc nguồn trước khi lắp, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Suzuki
 

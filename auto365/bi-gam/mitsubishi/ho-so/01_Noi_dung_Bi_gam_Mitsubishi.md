@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Mitsubishi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (8), ItemList (15), FAQPage |
-| SHA-256 index.html | `9aa81a72b4ee908fbd3b60170c48da5af0382d47a353c49af43dfef2b14d263d` |
-| SHA-256 content-src.html | `84f25235f0b188b81baa71425daf80620bc6470ff0947766f3524b96e20f0319` |
+| SHA-256 index.html | `bb4819d1a3874e72da7d466a2d7eb4d85fdea986f9d4f6f1f73de0d315f1317a` |
+| SHA-256 content-src.html | `7dec175b7c8e3fc1dc080f8f9e2029f9ecaa3aca6c1786bef9a6dcded2f3ef2f` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Mitsubishi cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES, Titan) trên Xpander, Xpander Cross, Xforce, Outlander, Destinator, Triton, Pajero và Zinger; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm Mitsubishi giúp tăng vùng sáng gần và hai bên đường khi trời mưa, sương hoặc đi đường tối, hợp với Xpander, Outlander, Triton hay chạy đường dài. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR, AES, Titan trên Xpander, Xpander Cross, Xforce, Outlander, Destinator, Triton, Pajero và Zinger; kỹ thuật viên kiểm tra hốc đèn, pát và giắc nguồn trước khi lắp, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Mitsubishi
 

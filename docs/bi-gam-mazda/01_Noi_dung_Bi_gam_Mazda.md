@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (14), FAQPage |
-| SHA-256 index.html | `b6334b6deb18252431229a271d8cc1f87620d680c21fc02aa6afb531fce7ff07` |
-| SHA-256 content-src.html | `2fcf0719bd7b29292357edfcdcfabb971ebe2756898b1f744bed5881ecfc5512` |
+| SHA-256 index.html | `759f030f514e16740b537779c570f2fbc5adff5764b239e5f579b5e192b4655b` |
+| SHA-256 content-src.html | `b738b78d74428c6bcc23c5b9e2b72146b72cd551d14329cf1e2ad173010ce207` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES, Titan) trên Mazda 2, Mazda 6, Mazda 626, CX-5 và CX-8; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm Mazda cần chọn lens 2.0 hoặc 3.0 inch theo hốc đèn gầm của từng đời: CX-5 2021, 2022 và CX-8 dùng lens 2.0 inch, còn Mazda 2, Mazda 6 và CX-5 2016 dùng lens 3.0 inch. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR, AES, Titan trên Mazda 2, Mazda 6, Mazda 626, CX-5 và CX-8; kỹ thuật viên kiểm tra khoảng hở, pát và giắc trước khi lắp.
 
 ## Chọn dòng xe Mazda
 

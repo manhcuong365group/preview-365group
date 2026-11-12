@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Honda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (15), FAQPage |
-| SHA-256 index.html | `8912a704e91f68c6820fdecb87f205f833ce308e0f34c98f660c08e6e3cfa14d` |
-| SHA-256 content-src.html | `834612afa03e1da47fba65ff4b4aea421bfd0aabb6205d77a286f1af429473ec` |
+| SHA-256 index.html | `6d7733bf030abb5ea5ed243e825e0a90e2c62d24af764b1a77c75ab6141ab899` |
+| SHA-256 content-src.html | `5226d05bde759018db5d44354a8562c5e4b392e121beb302956b36699f7f87f8` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Honda cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR) trên City, CR-V, Civic, HR-V, BR-V và Odyssey; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm Honda giúp cải thiện ánh sáng gần và hai bên khi đi đêm mà vẫn giữ kiểu dáng cản trước, vì đèn lắp vào hốc đèn gầm sẵn có. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR trên City, CR-V, Civic, HR-V, BR-V và Odyssey, ghi rõ mẫu đèn và kích thước lens của từng xe.
 
 ## Chọn dòng xe Honda
 

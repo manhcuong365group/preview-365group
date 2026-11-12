@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Hyundai: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (6), ItemList (11), FAQPage |
-| SHA-256 index.html | `a8083c5d3aa5e84c9e024c9f722521879f842c3054d75c1fbdbf6e978f1b44c5` |
-| SHA-256 content-src.html | `6ee5ddac17a88421454255d4e1d955b8b0c0616c3652e74457db144b918a79ca` |
+| SHA-256 index.html | `7b700a19619b62c89eec71a0c8e21373e921d8daf3ae416ea5d17b9a42168c06` |
+| SHA-256 content-src.html | `4d9f993d8f44bae340ce0aab807f753cddf0ac0293feb2ee88a3367be5ca62ab` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Hyundai cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light) trên Santa Fe, Custin, Creta, Tucson, Elantra; Accent có bài tư vấn riêng, xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm Hyundai giúp tăng vùng sáng gần và hai bên đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light trên Santa Fe, Tucson, Accent, Creta, Custin và Elantra; kỹ thuật viên kiểm tra hốc đèn, pát và giắc nguồn trước khi lắp, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Hyundai
 

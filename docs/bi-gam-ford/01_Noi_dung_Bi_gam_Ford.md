@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Ford: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), ItemList (21), FAQPage |
-| SHA-256 index.html | `43fb5a2998f8d3eedb49d8dc731e96a8b6b5272713ebe02cb83afe44f5966a9f` |
-| SHA-256 content-src.html | `d0a1bcd6f40a493b8931e88dcca0efc2e2bc574e77102b66cc8b2d8779aff777` |
+| SHA-256 index.html | `b97dc7f37d80c6f8206cd96f2c46828490924b310395aee034c99f25f8c3b7b8` |
+| SHA-256 content-src.html | `af3df918a77d67f9feaca3e43dd2da9abedcfd912de32010b4c48f1ed8308fe9` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Bi gầm Ford cần chọn theo hốc đèn gầm, đời xe và hệ thống điện của từng dòng. Auto365 tổng hợp hồ sơ thi công thực tế (X-Light, GTR, AES) trên Ranger, Ranger Raptor, Everest, Escape, EcoSport, Focus và Transit; xe chưa có hồ sơ được kiểm tra trước khi báo cấu hình và chi phí.
+Lắp bi gầm Ford cần pát gắn khớp với hốc đèn gầm của từng đời Ranger, Everest hay Escape để đèn chắc chắn và đường cắt cos đúng. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR, AES trên Ranger, Ranger Raptor, Everest, Escape, EcoSport, Focus và Transit; sau khi lắp, kỹ thuật viên căn chỉnh đường cắt cos trên bảng test.
 
 ## Chọn dòng xe Ford
 
