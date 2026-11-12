@@ -303,8 +303,8 @@ html{scroll-padding-top:80px}@media(max-width:1100px){html{scroll-padding-top:12
 </div></div>
 
 <main class="td-wrap">
-<!-- Module chọn xe: tạm ẩn 05/11/2026, bật lại khi có bảng giá theo loại xe (bỏ thuộc tính hidden) -->
-<section class="td-sec" id="chon-xe" hidden>
+<!-- Module chọn xe: bật 12/11/2026, gợi ý theo case thực tế, chưa hiển thị giá theo xe -->
+<section class="td-sec" id="chon-xe">
   <div class="td-pick">
     <div class="td-pick-hd"><h2>Chọn giải pháp theo xe của bạn</h2><p>3 bước, chưa đến 10 giây. Không biết dòng xe? Chọn “Xe khác” – kỹ thuật viên sẽ kiểm tra giúp.</p></div>
     <div class="td-pick-f">
@@ -592,8 +592,8 @@ document.querySelectorAll(".td-vid").forEach(b=>b.onclick=()=>{const f=document.
 <script>document.querySelectorAll("[data-svc]").forEach(a=>a.addEventListener("click",()=>{const d=a.closest("dialog");if(d)d.close();const s=document.querySelector("#dat-lich select");if(!s)return;[...s.options].forEach(o=>{if(o.text.indexOf(a.dataset.svc.split(" ")[0])>-1)s.value=o.value||o.text})}));</script>
 <script>(function(){
 const S={phim:{t:"Phim cách nhiệt 3M",d:"Giảm nóng, cản UV, chọn độ sáng kính theo nhu cầu đi phố hay đi đêm.",p:["3M Crystalline CR BLK / CR BLK Pro","3M Crystalline Hybrid","3M Ceramic NR / IR"],u:"https://auto365.vn/phim-cach-nhiet",tel:"0365365365",sel:"Phim cách nhiệt"},
-ppf:{t:"PPF / Wrap đổi màu",d:"Bảo vệ sơn khỏi trầy xước, đá văng; hoặc đổi màu mà vẫn giữ lớp sơn gốc.",p:["PPF 3M (50 / 150 / 200 Gloss)","AX Film","Wrap đổi màu"],u:"https://auto365.vn/ppfwrap-film",tel:"0365365365",sel:"PPF / Wrap đổi màu"},
-den:{t:"Nâng cấp ánh sáng",d:"Bi LED, bi gầm chọn theo đúng dòng xe, cân vệt sáng trên bảng test để không chói xe ngược chiều.",p:["Bi LED X-Light / GTR","Bi gầm X-Light, AES","Đèn gầm dạng rời"],u:"https://auto365.vn/nang-cap-anh-sang",tel:"0365365911",sel:"Nâng cấp đèn"},
+ppf:{t:"PPF / Wrap đổi màu",d:"Bảo vệ sơn khỏi trầy xước, đá văng; hoặc đổi màu mà vẫn giữ lớp sơn gốc.",p:["PPF 3M (50 / 150 / 200 Gloss)","AX Film","Wrap đổi màu"],u:"https://auto365.vn/ppfwrap-film",tel:"0365365365",sel:"PPF / Dán đổi màu"},
+den:{t:"Nâng cấp ánh sáng",d:"Bi LED, bi gầm chọn theo đúng dòng xe, cân vệt sáng trên bảng test để không chói xe ngược chiều.",p:["Bi LED X-Light / GTR","Bi gầm X-Light, AES","Đèn gầm dạng rời"],u:"https://auto365.vn/nang-cap-anh-sang",tel:"0365365911",sel:"Đèn – Bi LED"},
 cam:{t:"Camera hành trình",d:"Ghi hình trước/sau, đi dây ẩn gọn, xem lại video trên điện thoại.",p:["70mai (A510, A810, M310…)","Vietmap","Camera 360"],u:"https://auto365.vn/camera-hanh-trinh-o-to",tel:"0365365911",sel:"Camera hành trình"}};
 const cards=[...document.querySelectorAll(".td-xe-card")],B=document.getElementById("pk-b"),M=document.getElementById("pk-m"),N=document.getElementById("pk-n"),O=document.getElementById("pk-out");let need="";
 const brands=[...new Set(cards.map(c=>c.dataset.b))].sort();
@@ -607,7 +607,7 @@ const car=b&&b!=="other"?(b+(m&&m!=="other"?" "+m:"")):"xe của bạn";
 const tel=s.tel.slice(0,4)+" "+s.tel.slice(4,7)+" "+s.tel.slice(7);
 O.innerHTML="<div class=td-pick-res><div class=td-pick-sol><small>Giải pháp gợi ý cho "+car+"</small><h3>"+s.t+"</h3><p>"+s.d+"</p><ul>"+s.p.map(x=>"<li>"+x+"</li>").join("")+"</ul><p class=td-pick-price>Giá: tuỳ dòng xe và phạm vi thi công – kỹ thuật viên kiểm tra xe và báo giá trước khi làm.</p><div class=td-pick-cta><a class=\"td-btn td-btn-red\" href=\"tel:"+s.tel+"\">☎ Gọi "+tel+"</a><a class=\"td-btn td-btn-out\" href=\"https://zalo.me/"+s.tel+"\" target=_blank rel=noopener>Zalo</a><a class=td-pick-form href=\"#dat-lich\">Gửi yêu cầu tư vấn →</a><a class=td-pick-more href=\""+s.u+"\">Xem chi tiết dịch vụ</a></div></div><div class=td-pick-cases><small>"+(exact.length?"Xe "+car+" đã làm":"Xe đã làm cùng dịch vụ")+"</small><div></div>"+(exact.length?"":(b&&b!=="other"?"<p class=td-pick-note>Chưa có hồ sơ "+car+" trên trang – gửi yêu cầu để kỹ thuật viên kiểm tra cấu hình phù hợp.</p>":""))+"</div></div>";
 const box=O.querySelector(".td-pick-cases div");list.forEach(c=>{const k=c.cloneNode(true);k.hidden=false;k.querySelectorAll("img").forEach(i=>i.loading="eager");box.appendChild(k)});
-O.querySelector(".td-pick-form").onclick=()=>{const sel=document.querySelector("#dat-lich select"),inp=document.querySelector(".td-book input[placeholder^=\"Dòng xe\"]");if(sel)[...sel.options].forEach(o=>{if(o.text===s.sel)sel.value=o.value||o.text});if(inp&&car!=="xe của bạn")inp.value=car};
+O.querySelector(".td-pick-form").onclick=e=>{const d=document.getElementById("pop-tu-van"),f=d&&d.querySelector("form");if(!f)return;e.preventDefault();f.reset();const g=f.querySelector(".td-lead-msg");if(g){g.classList.remove("err");if(g.dataset.o)g.innerHTML=g.dataset.o}if(f.car_model&&car!=="xe của bạn")f.car_model.value=car;if(f.priority)f.priority.value=s.sel;d.showModal()};
 O.hidden=false}
 })();</script>
 <script>(function(){const d=document.getElementById("pop-khu-vuc");document.querySelector(".td-local-open").onclick=()=>d.showModal();d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
