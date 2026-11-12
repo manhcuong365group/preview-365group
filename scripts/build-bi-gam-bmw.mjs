@@ -114,7 +114,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Lắp bi gầm BMW: chọn đèn theo dòng xe X3, X5, X6, 3 Series | Auto365';
-const desc = 'Tra cứu bi gầm BMW theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
+const desc = 'Tra cứu bi gầm BMW theo dòng và đời xe, xem 8 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

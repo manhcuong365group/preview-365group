@@ -7,12 +7,12 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/bmw/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/bmw |
 | Title (68 ký tự) | Lắp bi gầm BMW: chọn đèn theo dòng xe X3, X5, X6, 3 Series \| Auto365 |
-| Meta description (127 ký tự) | Tra cứu bi gầm BMW theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Meta description (127 ký tự) | Tra cứu bi gầm BMW theo dòng và đời xe, xem 8 hồ sơ lắp đèn X-Light, GTR hoặc AES và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm BMW: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (5), FAQPage |
-| SHA-256 index.html | `031d985e1be56e76892b3a088a4ce74c1f3a8789029443ca51c2073ddc870eec` |
-| SHA-256 content-src.html | `a2b4d133ed80579c82e38d47d8b2b8493e2e34b6640ebf5b5f06a91a518fdbb9` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (8), FAQPage |
+| SHA-256 index.html | `77475fbb75e2d343a276426314cf9fd08f781018ea6682f7308a2d860d49afa1` |
+| SHA-256 content-src.html | `2010bcee2c7309075bea9685b8b8a5d00ed97f8abff28afe2ae72dd25e3f7644` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -38,7 +38,7 @@ Bi gầm BMW cần chọn theo hốc đèn gầm, đời xe và hệ thống đi
 | BMW 8 Series | Sedan | Liên hệ tư vấn | — |
 | BMW Z4 | Mui trần (Roadster) | Liên hệ tư vấn | — |
 
-## Xe BMW đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
+## Xe BMW đã lắp bi gầm tại Auto365 (8 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -47,8 +47,11 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | BMW X6 | [BMW X6 2019 xDrive30d lắp bi gầm GTR G1 Turbo V2](https://auto365.vn/bmw-x6-2019-xdrive30d-lap-bi-gam-gtr-g1-turbo-v2) | 2026-11-07 |
 | BMW X3 | [BMW X3 xDrive20i 2017 lắp bi gầm X-Light X3 Ultra 5500K](https://auto365.vn/bmw-x3-xdrive20i-2017-lap-bi-gam-x-light-x3-ultra-5500k) | 2026-10-31 |
 | BMW X5 | [BMW X5 2013 LCI lắp bi LED V30 Ultra kết hợp bi gầm SV 3.0 Max](https://auto365.vn/bmw-x5-2013-lci-lap-bi-led-v30-ultra-bi-gam-sv-30-max) | 2026-10-28 |
-| BMW X5 | [BMW X5 độ đèn bi gầm X-Light F10 New](https://auto365.vn/bmw-x5-do-den-bi-gam-x-light-f10-new) | 2024-08-30 |
 | BMW X5 | [BMW X5 E70 2010 lắp bi gầm X-Light F10 Turbo V2](https://auto365.vn/bmw-x5-e70-2010-lap-x-light-f10-turbo-v2-gia-cau-hinh) | 2026-08-22 |
+| BMW X5 | [BMW X5 độ đèn bi gầm X-Light F10 New](https://auto365.vn/bmw-x5-do-den-bi-gam-x-light-f10-new) | 2024-08-30 |
+| BMW X3 | [BMW X3 độ đèn bi gầm X-Light F10 New tại garage đối tác Mạnh Quân Auto](https://auto365.vn/do-den-bmw-x3#manh-quan-auto) | 2024-02-21 |
+| BMW X5 | [BMW X5 đen độ đèn bi gầm X-Light F10 New tại garage đối tác Phương Đông Auto](https://auto365.vn/do-den-bmw-x5#phuong-dong-auto) | 2024-02-02 |
+| BMW X5 | [BMW X5 2008 độ đèn bi gầm X-Light F10 New tại garage đối tác Trần Hưởng Auto](https://auto365.vn/do-den-bmw-x5#tran-huong-auto) | 2024-02-02 |
 
 ## Xe BMW lắp bi gầm cần lưu ý gì?
 
