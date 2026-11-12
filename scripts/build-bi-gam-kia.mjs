@@ -177,3 +177,16 @@ const CAPS=[['ly-do-he-thong-90','Đồ họa hệ thống Auto365 — số chi 
 const addCaps = s => s.replace(/(<figure class="bw-photo"><img src="([^"]+)"[^>]*>)<\/figure>/g, (m, a, src) => { const c = CAPS.find(([k]) => src.includes(k)); return c ? a + '<figcaption class="bw-cap">' + c[1] + '</figcaption></figure>' : m; }).replace('</head>', '<style>.bw-cap{font-size:12px;color:#6b7280;padding:6px 2px 0;line-height:1.4}</style></head>');
 fs.writeFileSync(path.join(dir, 'index.html'), addCaps(outJq).replace(/, Thành phố Quảng Ninh"/g, ', tỉnh Quảng Ninh"'));
 console.log('built', path.join(dir, 'index.html'), out.length, { models: models.length, cases: cases.length, faqs: faqs.length });
+
+// ---- Vá phần header/footer lấy từ production cho preview (12/11/2026) ----
+// 4 file JS v2.auto365.vn trả 404; font remixicon-subset bị chặn CORS khi mở từ pages.dev; logo rộng hơn khung → chồng ô tìm kiếm.
+{
+  const p = path.join(dir, 'index.html');
+  let h = fs.readFileSync(p, 'utf8');
+  h = h.replace(/<script[^>]*src="https:\/\/v2\.auto365\.vn\/assets\/frontend\/(js\/breadcrumb-mobile|module\/marketing|js\/dist\/js_content|js\/social\/social)\.js[^"]*"[^>]*><\/script>\s*/g, '')
+    .replace(/<link rel="preload" as="font"[^>]*remixicon-subset\.woff2"[^>]*>\s*/g, '')
+    .replace(/<link rel="stylesheet" href="https:\/\/v2\.auto365\.vn\/assets\/frontend\/css\/remixicon-subset\.css[^"]*">/g, '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">');
+  if (!h.includes('id="shellfix-font"')) h = h.replace('</body>', '<style id="shellfix-font">@font-face{font-family:"remixicon";src:url("https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.woff2") format("woff2");font-display:swap}</style>\n</body>');
+  if (!h.includes('id="shellfix-logo"')) h = h.replace('</head>', '<style id="shellfix-logo">.header-top-row .logo a{max-width:100%}.header-top-row .logo img{max-width:100%!important;height:auto!important}</style>\n</head>');
+  fs.writeFileSync(p, h);
+}
