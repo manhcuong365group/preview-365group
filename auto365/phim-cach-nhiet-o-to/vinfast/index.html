@@ -173,6 +173,8 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-lr-p{text-align:right;font-weight:800;font-size:14px}.vf-lr-p s{color:#b9bcc3;font-weight:500;text-decoration:none}
 .vf-lc-ft{display:flex;align-items:center;gap:12px;background:var(--dark);color:#fff;padding:12px 14px}
 .vf-lc-ft>div{flex:1;display:flex;flex-direction:column}.vf-lc-ft small{opacity:.75;font-size:12px}.vf-lc-ft b{font-size:22px}
+.vf-lc-clr{border:1px solid rgba(255,255,255,.35);background:none;color:#fff;border-radius:8px;padding:9px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}.vf-lc-clr[hidden]{display:none}
+.vf-lc-sug{background:#fff8e6;border-top:1px solid #f1d9a0;padding:10px 14px;font-size:13px;line-height:1.5}.vf-lc-sug[hidden]{display:none}.vf-lc-sug b{color:var(--red)}.vf-lc-sug button{border:0;background:none;color:var(--red);font:inherit;font-weight:700;cursor:pointer;padding:0}
 .vf-pin,.vf-dot{transition:.15s}.vf-pin{cursor:pointer}.vf-pin.on{background:var(--red);color:#fff}.vf-pin.on b{color:#fff}.vf-dot.on{transform:scale(1.35)}
 @media(max-width:600px){.vf-lc-cols{display:none}.vf-lr{grid-template-columns:1fr auto;row-gap:6px}.vf-lr-c{grid-column:1/-1;justify-self:start;margin-left:28px}.vf-lr-p{grid-row:1;grid-column:2}.vf-lc-lines button{padding:6px 7px;font-size:12px}}
 .vf-calc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
@@ -389,7 +391,8 @@ img{max-width:100%;display:block}a{color:inherit}
    
    <div class="vf-lc-cols" aria-hidden="true"><span>Vị trí</span><span id="vf-lc-colc">Mã CR BLK</span><span>Giá</span></div>
    <div class="vf-lc-rows" id="vf-lc-rows"></div>
-   <div class="vf-lc-ft"><div><small id="pz-list">Chưa chọn vị trí nào</small><b id="pz-total">0đ</b></div><a class="vf-btn vf-btn--red" href="#bao-gia" id="pz-go">Nhận báo giá →</a></div>
+   <div class="vf-lc-ft"><div><small id="pz-list">Chưa chọn vị trí nào</small><b id="pz-total">0đ</b></div><button type="button" class="vf-lc-clr" id="pz-clr" hidden>Xóa chọn</button><a class="vf-btn vf-btn--red" href="#bao-gia" id="pz-go">Nhận báo giá →</a></div>
+   <div class="vf-lc-sug" id="pz-sug" hidden></div>
   </div>
   <p class="vf-note">Giá dán lẻ theo bảng giá 3M áp dụng từ 06/2026, đã gồm VAT. Cửa sổ trời nhỏ báo giá theo xe.</p>
  </aside>
@@ -432,16 +435,8 @@ img{max-width:100%;display:block}a{color:inherit}
 
 
 <section class="vf-sec" id="hinh-anh"><div class="vf-wrap">
- <h2 class="vf-h2">Hình ảnh &amp; video <em>thi công</em></h2>
- <p class="vf-sub">Xe VinFast dán phim 3M tại Auto365 và video thi công VinFast VF 7.</p>
- <div class="vf-gal">
-  <figure><img src="hinh/pro-shop-vf8.webp" alt="VinFast VF8 dán phim cách nhiệt 3M tại 3M Pro Shop" loading="lazy"><figcaption>VinFast VF8 tại 3M Pro Shop</figcaption></figure>
-  <figure><img src="hinh/xe/vf6-cr-blk-ir.webp" alt="VinFast VF6 dán phim 3M CR BLK và Ceramic IR" loading="lazy"><figcaption>VinFast VF6</figcaption></figure>
-  <figure><img src="hinh/case-vf7.webp" alt="VinFast VF7 dán phim cách nhiệt 3M tại Auto365" loading="lazy"><figcaption>VinFast VF7</figcaption></figure>
-  <figure><img src="hinh/pro-shop-thi-cong.webp" alt="Kỹ thuật viên thi công dán phim 3M trong khoang kín" loading="lazy"><figcaption>Thi công trong khoang kín</figcaption></figure>
-  <figure><img src="hinh/doi-ky-thuat-vien.webp" alt="Đội kỹ thuật viên dán phim 3M của Auto365" loading="lazy"><figcaption>Đội kỹ thuật viên</figcaption></figure>
-  <figure><img src="hinh/ewarranty-3m.webp" alt="Bảo hành điện tử 3M tra theo biển số" loading="lazy"><figcaption>Bảo hành điện tử 3M</figcaption></figure>
- </div>
+ <h2 class="vf-h2">Video <em>thi công</em></h2>
+ <p class="vf-sub">Video thi công VinFast VF 7 và giới thiệu các dòng phim 3M.</p>
  <div class="vf-vids">
   <button type="button" class="vf-vid" data-yt="EuBpaChSbVc"><img src="https://i.ytimg.com/vi/EuBpaChSbVc/hqdefault.jpg" alt="" loading="lazy"><span>▶</span><b>Dán phim cách nhiệt 3M Crystalline CR BLK cho VinFast VF 7</b></button>
   <button type="button" class="vf-vid" data-yt="N-hSgRJJkVg"><img src="https://i.ytimg.com/vi/N-hSgRJJkVg/hqdefault.jpg" alt="" loading="lazy"><span>▶</span><b>So sánh 3 loại phim chống nóng 3M – tại sao giá khác nhau?</b></button>
@@ -451,6 +446,16 @@ img{max-width:100%;display:block}a{color:inherit}
 
 
 
+
+<section class="vf-sec"><div class="vf-wrap">
+ <div class="vf-why">
+  <h2>Vì sao chọn Auto365?</h2>
+  <div><b>Phim nhập qua 365Group</b><span>Nhà phân phối chính thức 3M, nguồn gốc rõ ràng.</span></div>
+  <div><b>Kỹ thuật viên đào tạo theo quy trình 3M</b><span>Chừa đúng vùng camera, cảm biến trên xe VinFast.</span></div>
+  <div><b>Bảo hành điện tử 10 năm</b><span>eWarranty 3M, tra theo biển số.</span></div>
+  <div><b>Hệ thống toàn quốc</b><span>Đặt lịch và hỗ trợ sau thi công tại chi nhánh gần bạn.</span></div>
+ </div>
+</div></section>
 
 <section class="vf-sec vf-sec--hub"><div class="vf-wrap"><p class="vf-hub">Tìm hiểu chung về các dòng phim 3M, quy trình thi công, bảo hành và cẩm nang chọn phim tại <a href="https://auto365.vn/phim-cach-nhiet-o-to">trang Phim cách nhiệt ô tô Auto365 →</a></p></div></section>
 
@@ -598,14 +603,19 @@ img{max-width:100%;display:block}a{color:inherit}
  function drawPz(){var sum=0,parts=[];
   rows.innerHTML=RW.map(function(r,i){var cs=CODES[LINE][r[2]],s=ST[i];if(s.c>=cs.length)s.c=0;var o=cs[s.c];if(s.on){sum+=o[1];parts.push(r[0]+' '+o[0])}
    return '<div class="vf-lr'+(s.on?' on':'')+'" data-i="'+i+'"><label class="vf-lr-n"><input type="checkbox" data-k="on"'+(s.on?' checked':'')+'><span><b>'+r[0]+'</b><small>'+r[1]+'</small></span></label><div class="vf-lr-c" role="group" aria-label="Mã phim '+r[0]+'">'+cs.map(function(c,j){return '<button type="button" data-c="'+j+'" aria-pressed="'+(j===s.c)+'" title="3M '+c[0]+'">'+c[0].replace(/^(CR BLK|IR|NR) /,'')+'</button>'}).join('')+'</div><div class="vf-lr-p">'+(s.on?vnd(o[1]):'<s>'+vnd(o[1])+'</s>')+'</div></div>'}).join('');
+  var base=0;RW.forEach(function(r,i){if(ST[i].on&&i!==4){var cs=CODES[LINE][r[2]];base+=cs[Math.min(ST[i].c,cs.length-1)][1]}});
   var n=parts.length,ln=['Crystalline CR BLK','Ceramic IR','Ceramic NR'][LINE];document.getElementById('vf-lc-colc').textContent='Mã '+['CR BLK','IR','NR'][LINE];
-  document.getElementById('pz-total').textContent=vnd(sum);
+  document.getElementById('pz-total').textContent=vnd(sum);document.getElementById('pz-clr').hidden=!n;
+  var gi=(typeof last!=='undefined'&&last)?last[0]:2,pi=[0,5,4][LINE],pk=PK[pi],sg=document.getElementById('pz-sug');
+  if(base>pk.p[gi]){sg.hidden=false;sg.innerHTML='Tạm tính đã cao hơn giá <b>dán trọn xe gói 3M '+pk.n+'</b> ('+vnd(pk.p[gi])+'). Dán theo gói sẽ rẻ hơn <b>'+vnd(Math.round((base-pk.p[gi])*10)/10)+'</b>'+(ST[4].on?' (chưa tính cửa sổ trời)':'')+'. <button type="button" data-sug="'+pi+'">Xem gói →</button>'}else sg.hidden=true;
   document.getElementById('pz-list').textContent=n?n+' vị trí · 3M '+ln:'Chưa chọn vị trí nào – tích ô hoặc bấm nhãn trên xe';
   var hp=document.querySelector('#bao-gia [name=positions]');if(hp)hp.value=n?parts.join(', ')+' · tạm tính '+vnd(sum):'';
   hiDia();
  }
  function hiDia(){var on=[0,0,0,0,0];RW.forEach(function(r,i){if(ST[i].on)on[r[3]]=1});dia.querySelectorAll('.vf-pin').forEach(function(p,k){p.classList.toggle('on',!!on[k])});dia.querySelectorAll('.vf-dot').forEach(function(p,k){p.classList.toggle('on',!!on[k])})}
  lc.addEventListener('click',function(e){var t=e.target,r=t.closest('.vf-lr');
+  if(t.closest('#pz-clr')){ST.forEach(function(s){s.on=false});drawPz();return}
+  if(t.closest('[data-sug]')){cur=+t.closest('[data-sug]').dataset.sug;render(last[0],last[1]);document.getElementById('goi-phim').scrollIntoView({behavior:'smooth'});return}
   if(t.closest('[data-l]')){LINE=+t.closest('[data-l]').dataset.l;lc.querySelectorAll('[data-l]').forEach(function(x){x.setAttribute('aria-selected',+x.dataset.l===LINE)});drawPz();return}
   if(t.closest('[data-pre]')){var ids=t.closest('[data-pre]').dataset.pre.split(',').map(Number);ST.forEach(function(s,i){s.on=ids.indexOf(i)>-1});drawPz();return}
   if(t.closest('[data-c]')&&r){var s=ST[+r.dataset.i];s.c=+t.closest('[data-c]').dataset.c;s.on=true;drawPz()}});
