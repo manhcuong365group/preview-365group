@@ -377,7 +377,7 @@ img{max-width:100%;display:block}a{color:inherit}
 
 <section class="vf-sec" id="vi-tri"><div class="vf-wrap vf-pos">
  <div>
-  <h2 class="vf-h2">Vị trí dán phim trên xe <em>VinFast</em></h2>
+  <h2 class="vf-h2">Vị trí dán phim trên xe <em id="vf-s3car">VinFast</em></h2>
   <p class="vf-sub">Dán trọn các vị trí kính, mỗi vị trí chọn mã phim theo vai trò.</p>
   <div class="vf-dtabs" role="group" aria-label="Kiểu xe"><button type="button" data-d="0">Minicar · VF 3</button><button type="button" data-d="1">Sedan · VF 5</button><button type="button" data-d="2">SUV · VF 8</button></div>
   <div class="vf-dia" id="vf-dia" role="img" aria-label="Sơ đồ các vị trí dán phim cách nhiệt: kính lái, kính sườn, kính nóc, kính lưng"></div>
@@ -566,11 +566,12 @@ img{max-width:100%;display:block}a{color:inherit}
  tabs.forEach(function(t){t.addEventListener('click',function(){tab=t.dataset.t;tabs.forEach(function(x){x.setAttribute('aria-pressed',x===t)});filt()})});
  qi.addEventListener('input',filt);
  var models=document.querySelectorAll('.vf-model'),cases=document.querySelectorAll('.vf-case'),grp=document.getElementById('vf-grp'),sub=document.getElementById('vf-case-sub');
+ var CURG=-1,CURN='',DTXT=['Minicar · VF 3','Sedan · VF 5','SUV · VF 8'],DGN=['Minicar','Sedan','SUV'];
  function pick(b){
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;
   var s2=document.getElementById('vf-s2car');if(s2)s2.textContent='VinFast '+nm;
-  render(g,nm);if(DIMG)drawDia(g,nm);
+  render(g,nm);CURG=g;CURN=nm;var s3=document.getElementById('vf-s3car');if(s3)s3.textContent='VinFast '+nm;if(typeof DIMG!=='undefined'&&DIMG)drawDia(g);
   for(var i=0;i<fcar.options.length;i++)if(fcar.options[i].text==='VinFast '+nm)fcar.selectedIndex=i;
   if(window.vfCx)vfCx.byModel(m);
  }
@@ -583,7 +584,7 @@ img{max-width:100%;display:block}a{color:inherit}
  var DIA=[[[37,37],[52,36],[59,25],[83,35]],[[38,41],[48,42],[61,35],[77,40]],[[38,40],[47,41],[62,32],[80,39]]];
  var LAB=[[14,16,'Kính lái','ưu tiên cách nhiệt'],[37,4,'Kính sườn','riêng tư, chống chói'],[64,4,'Kính nóc','giảm nhiệt khoang lái'],[87,16,'Kính lưng','cân bằng nhiệt']];
  var dbt=document.querySelectorAll('.vf-dtabs button'),dia=document.getElementById('vf-dia');
- function drawDia(i){var d=DIA[i];dbt.forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.d===i)});
+ function drawDia(i){var d=DIA[i];dbt.forEach(function(b){var k=+b.dataset.d;b.setAttribute('aria-pressed',k===i);b.textContent=k===CURG?DGN[k]+' · '+CURN:DTXT[k]});
   dia.innerHTML='<img src="hinh/m/'+DIMG[i]+'" alt="" width="640" height="400"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return 'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%"></i>'}).join('')+LAB.map(function(l){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%"><b>'+l[2]+'</b>'+l[3]+'</span>'}).join('');if(typeof ST!=='undefined'&&ST)hiDia()}
  dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d)})});
  // Tính giá kính lẻ — bảng giá dán lẻ 3M 06/2026 (triệu đ). Mỗi dòng phim có mã riêng theo vị trí.
