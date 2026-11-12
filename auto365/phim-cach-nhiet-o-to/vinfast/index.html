@@ -584,8 +584,9 @@ img{max-width:100%;display:block}a{color:inherit}
  var DIA=[DP["m-vf3.webp"],DP["m-vf5.webp"],DP["m-limo-green.webp"]];
  var LAB=[[8,18,'Kính lái'],[27,4,'Sườn trước'],[76,10,'Sườn sau'],[52,4,'Kính nóc'],[93,22,'Kính lưng']];
  var dbt=document.querySelectorAll('.vf-dtabs button'),dia=document.getElementById('vf-dia');
- function drawDia(i){var own=false,d=own||DIA[i],src=own?CURF:DIMG[i];dbt.forEach(function(b){var k=+b.dataset.d;b.setAttribute('aria-pressed',k===i);b.textContent=DTXT[k]});
-  dia.innerHTML='<img src="hinh/m/'+src+'" alt="" width="640" height="400" style="aspect-ratio:16/10;object-fit:fill"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return 'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%"></i>'}).join('')+LAB.map(function(l){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%"><b>'+l[2]+'</b></span>'}).join('');if(typeof ST!=='undefined'&&ST)hiDia()}
+ var DG=2;
+ function drawDia(i){DG=i;var nr=i<2,own=false,d=own||DIA[i],src=own?CURF:DIMG[i];dbt.forEach(function(b){var k=+b.dataset.d;b.setAttribute('aria-pressed',k===i);b.textContent=DTXT[k]});
+  dia.innerHTML='<img src="hinh/m/'+src+'" alt="" width="640" height="400" style="aspect-ratio:16/10;object-fit:fill"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return nr&&k===3?'':'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p,k){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%'+(nr&&k===3?';display:none':'')+'"></i>'}).join('')+LAB.map(function(l,k){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%'+(nr&&k===3?';display:none':'')+'"><b>'+l[2]+'</b></span>'}).join('');if(typeof ST!=='undefined'&&ST)drawPz()}
  dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d)})});
  // Tính giá kính lẻ — bảng giá dán lẻ 3M 06/2026 (triệu đ). Mỗi dòng phim có mã riêng theo vị trí.
  var RW=[['Kính lái','Tầm nhìn chính, chừa vùng camera',0,0],['Kính sườn trước','1 cặp, phía người lái',1,1],['Kính sườn sau','1 cặp, hàng ghế sau',1,2],['Kính lưng','Kính sau xe',2,4],['Cửa sổ trời panorama','Dán được mọi mã, tính giá kính lái',3,3]];
@@ -595,7 +596,7 @@ img{max-width:100%;display:block}a{color:inherit}
   [[['NR 35',2.6]],[['NR 25',1.7],['NR 15',1.7],['NR 5',1.7]],[['NR 25',1.9],['NR 15',1.9],['NR 5',1.9]],[['NR 35',2.6],['NR 25',2.6],['NR 15',2.6],['NR 5',2.6]]]];
  var LINE=0,ST=RW.map(function(){return {on:false,c:0}}),rows=document.getElementById('vf-lc-rows'),lc=document.getElementById('vf-lc');
  function drawPz(){var sum=0,parts=[];
-  rows.innerHTML=RW.map(function(r,i){var cs=CODES[LINE][r[2]],s=ST[i];if(s.c>=cs.length)s.c=0;var o=cs[s.c];if(s.on){sum+=o[1];parts.push(r[0]+' '+o[0])}
+  rows.innerHTML=RW.map(function(r,i){var cs=CODES[LINE][r[2]],s=ST[i];if(i===4&&DG<2){s.on=false;return ''}if(s.c>=cs.length)s.c=0;var o=cs[s.c];if(s.on){sum+=o[1];parts.push(r[0]+' '+o[0])}
    return '<div class="vf-lr'+(s.on?' on':'')+'" data-i="'+i+'"><label class="vf-lr-n"><input type="checkbox" data-k="on"'+(s.on?' checked':'')+'><span><b>'+r[0]+'</b><small>'+r[1]+'</small></span></label><div class="vf-lr-c" role="group" aria-label="Mã phim '+r[0]+'">'+cs.map(function(c,j){return '<button type="button" data-c="'+j+'" aria-pressed="'+(j===s.c)+'" title="3M '+c[0]+'">'+c[0].replace(/^(CR BLK|IR|NR) /,'')+'</button>'}).join('')+'</div><div class="vf-lr-p">'+(s.on?vnd(o[1]):'<s>'+vnd(o[1])+'</s>')+'</div></div>'}).join('');
   var n=parts.length,ln=['Crystalline CR BLK','Ceramic IR','Ceramic NR'][LINE];document.getElementById('vf-lc-colc').textContent='Mã '+['CR BLK','IR','NR'][LINE];
   document.getElementById('pz-total').textContent=vnd(sum);
