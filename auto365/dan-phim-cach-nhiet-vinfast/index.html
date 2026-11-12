@@ -33,6 +33,8 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-btn--ghost{border-color:rgba(255,255,255,.6);color:#fff;background:transparent}
 .vf-h2{font-size:clamp(20px,2.4vw,24px);line-height:1.25;margin:0 0 6px;position:relative;padding-top:12px}
 .vf-h2:before{content:"";position:absolute;top:0;left:0;width:36px;height:3px;background:var(--red)}
+.vf-step1{padding-bottom:10px}.vf-step2{padding-top:10px}.vf-step2 .vf-wrap{border-top:1px dashed var(--line);padding-top:22px}
+.vf-stp{display:inline-block;vertical-align:middle;background:var(--ink);color:#fff;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;margin-right:8px;position:relative;top:-2px}
 .vf-h2 em{font-style:normal;color:var(--red)}
 .vf-sub{color:var(--mut);margin:0 0 14px;font-size:13px}
 .vf-sec{padding:30px 0}.vf-sec--g{background:var(--bg)}
@@ -321,18 +323,17 @@ img{max-width:100%;display:block}a{color:inherit}
  <div class="vf-hero__cta"><a class="vf-btn vf-btn--red" href="#bao-gia">Nhận báo giá theo xe →</a><a class="vf-btn vf-btn--ghost" href="#hinh-anh">▶ Xem video thi công</a></div>
 </div></section>
 
-<section class="vf-sec" id="chon-xe"><div class="vf-wrap">
- <h2 class="vf-h2">Chọn dòng xe <em>VinFast</em> của bạn</h2>
+<section class="vf-sec vf-step1" id="chon-xe"><div class="vf-wrap">
+ <h2 class="vf-h2"><span class="vf-stp">Bước 1</span>Chọn dòng xe <em>VinFast</em> của bạn</h2>
  <p class="vf-sub">Giá gói phim và các xe thực tế bên dưới sẽ lọc theo dòng xe bạn chọn.</p>
  <div class="vf-fbar"><div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe"><button type="button" data-t="all" aria-pressed="true">Tất cả (19)</button><button type="button" data-t="ev" aria-pressed="false">Xe điện (10)</button><button type="button" data-t="green" aria-pressed="false">Green / dịch vụ (5)</button><button type="button" data-t="old" aria-pressed="false">Xe xăng (4)</button><button type="button" data-t="case" aria-pressed="false" id="vf-tab-case">Có ca thi công</button></div><input class="vf-search" type="search" id="vf-q" placeholder="Tìm dòng xe VinFast..." aria-label="Tìm dòng xe VinFast"></div>
  <div class="vf-models" id="vf-models" role="group" aria-label="Dòng xe VinFast"></div>
  <p class="vf-mwrap" hidden><button type="button" class="vf-mbtn" id="vf-more" aria-expanded="false"></button></p>
 
- <p class="vf-grp" id="vf-grp"></p>
 </div></section>
 
-<section class="vf-sec vf-sec--g" id="goi-phim"><div class="vf-wrap">
- <h2 class="vf-h2">6 gói phim cách nhiệt <em>3M</em> chính hãng cho VinFast</h2>
+<section class="vf-sec vf-step2" id="goi-phim"><div class="vf-wrap">
+ <h2 class="vf-h2"><span class="vf-stp">Bước 2</span>Chọn gói phim <em>3M</em> cho <span id="vf-s2car">VinFast</span></h2>
  <p class="vf-sub">Giá trọn xe theo bảng giá 3M áp dụng từ 06/2026, đã gồm VAT, phim và công thi công.</p>
  <div id="vf-pk"></div>
  <p class="vf-note">Thông số ghi trên thẻ là của mã phim kính lái trong gói. Xe có cửa sổ trời panorama (VF7, VF8…) hoặc cấu hình đặc biệt sẽ được báo giá chính xác theo xe.</p>
@@ -538,7 +539,7 @@ img{max-width:100%;display:block}a{color:inherit}
  function pick(b){
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;
-  grp.innerHTML='Đã chọn <b>VinFast '+nm+'</b> – <a href="#goi-phim">xem giá 6 gói phim cho xe này ↓</a>';
+  var s2=document.getElementById('vf-s2car');if(s2)s2.textContent='VinFast '+nm;
   render(g,nm);if(DIMG)drawDia(g,nm);
   for(var i=0;i<fcar.options.length;i++)if(fcar.options[i].text==='VinFast '+nm)fcar.selectedIndex=i;
   var n=0;cases.forEach(function(c){c.hidden=false;if(c.dataset.m===m)n++});
