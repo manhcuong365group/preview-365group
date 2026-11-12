@@ -10,9 +10,9 @@
 | Meta description (137 ký tự) | Tra cứu bi gầm Mazda theo dòng và đời xe, xem 13 hồ sơ lắp đèn X-Light, GTR, AES hoặc Titan và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
 | H1 | Lắp bi gầm Mazda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-12 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (13), FAQPage |
-| SHA-256 index.html | `2d5d96fdd44dbb75f2ec20b9519aebae5fedfb3c6c668d4a7fe8b1de753e2a33` |
-| SHA-256 content-src.html | `1fe52e93ba6df0921cfe3c8a0f1ac96ce911e00b338539d979c0c93f3a26c08c` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), ItemList (14), FAQPage |
+| SHA-256 index.html | `2b01348e586eee1d73f3d3ac45430191642bd9ce360910d8ce3df2992aa23d4a` |
+| SHA-256 content-src.html | `2fcf0719bd7b29292357edfcdcfabb971ebe2756898b1f744bed5881ecfc5512` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -38,12 +38,13 @@ Bi gầm Mazda cần chọn theo hốc đèn gầm, đời xe và hệ thống �
 | Mazda MX-5 | Mui trần (Roadster) | Liên hệ tư vấn | — |
 | Mazda BT-50 | Bán tải | Liên hệ tư vấn | — |
 
-## Xe Mazda đã lắp bi gầm tại Auto365 (13 bài hồ sơ)
+## Xe Mazda đã lắp bi gầm tại Auto365 (14 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
 | Dòng xe | Bài | Ngày đăng |
 |---|---|---|
+| Mazda CX-8 | [Mazda CX-8 2020 lắp bi LED V30 Ultra và bi gầm X-Light F10 Hyper 2.0](https://auto365.vn/mazda-cx-8-2020-lap-bi-led-v30-ultra-2026-ket-hop-bi-gam-f10-hyper-2-0) | 2026-11-12 |
 | Mazda 2 | [Mazda 2 1.5L AT 2019 lắp bi gầm X-Light X3 Ultra 4300K](https://auto365.vn/mazda-2-15l-at-2019-lap-bi-gam-x-light-x3-ultra-4300k) | 2026-11-06 |
 | Mazda 626 | [Mazda 626 2002 2.0L lắp bi gầm F10 Turbo V2 4300K](https://auto365.vn/mazda-626-2002-20l-lap-bi-gam-f10-turbo-v2-4300k) | 2026-11-06 |
 | Mazda 6 | [Mazda 6 2016 2.5L lắp bi LED V30 Ultra kết hợp bi gầm SV 3.0 Max](https://auto365.vn/mazda-6-2016-25l-lap-bi-led-v30-ultra-bi-gam-sv-30-max) | 2026-11-04 |
@@ -52,11 +53,11 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Mazda 6 | [Mazda 6 2.5L 2017 lắp bi gầm GTR G1 Turbo V2 Cos 4800K/Pha 4300K](https://auto365.vn/mazda-6-25l-2017-lap-bi-gam-gtr-g1-turbo-v2) | 2026-08-29 |
 | Mazda CX-5 | [Mazda CX-5 2016 2.0L 2WD lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/mazda-cx-5-2016-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-08-17 |
 | Mazda CX-8 | [Mazda CX-8 2021 Luxury lắp bi gầm X-Light F10 Hyper 2.0](https://auto365.vn/mazda-cx-8-2021-luxury-lap-bi-gam-x-light-f10-hyper-20-gia-va-cau-hinh-thuc-te) | 2026-08-08 |
+| Mazda CX-5 | [Mazda CX-5 lắp bi gầm AES SV 2.0 Max](https://auto365.vn/bi-gam-aes-sv-20-max-cho-mazda-cx-5-gia-thong-so-va-luu-y-khi-lap) | 2026-07-09 |
 | Mazda 6 | [Mazda 6 lắp bi gầm X-Light F10 Turbo V2 4300K](https://auto365.vn/mazda-6-lap-bi-gam-x-light-f10-turbo-v2-4300k) | 2026-07-06 |
 | Mazda 2 | [Mazda 2 nâng cấp bi gầm Titan 301](https://auto365.vn/mazda-2-nang-cap-bi-gam-titan-301) | 2024-09-16 |
 | Mazda CX-5 | [Mazda CX-5 lắp bi laser X-Light X6 Pro kết hợp bi gầm F10 2.0](https://auto365.vn/mazda-cx-5-do-den-bi-led-xlight-x6-pro-va-bi-gam-f10-2-0-2024) | 2024-08-17 |
 | Mazda CX-5 | [Mazda CX-5 độ đèn bi gầm X-Light F10 2.0](https://auto365.vn/mazda-do-den-bi-gam-xlight-f10-20-2024) | 2024-08-02 |
-| Mazda CX-5 | [Mazda CX-5 lắp bi gầm AES SV 2.0 Max](https://auto365.vn/bi-gam-aes-sv-20-max-cho-mazda-cx-5-gia-thong-so-va-luu-y-khi-lap) | 2026-07-09 |
 
 ## Xe Mazda lắp bi gầm cần lưu ý gì?
 
@@ -144,7 +145,7 @@ Các dòng đã có hồ sơ lắp thực tế gồm Mazda 2, Mazda 6, Mazda 626
 
 **Xe Mazda nên chọn bi gầm 2.0 hay 3.0 inch?**
 
-Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Mazda CX-5 2021, 2022 và CX-8 2021 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New; CX-5 còn có hồ sơ AES SV 2.0 Max); Mazda 2 2019, Mazda 6 2016, Mazda 6 2017 và CX-5 2016 lắp mẫu lens 3.0 inch (X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2, X-Light F10 Turbo V2). Cùng dòng xe nhưng khác đời vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Mazda đã lắp bi gầm tại Auto365.
+Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Mazda CX-5 2021, 2022 và CX-8 2020, 2021 đã lắp mẫu lens 2.0 inch (X-Light F10 Hyper 2.0, F10 2.0 New; CX-5 còn có hồ sơ AES SV 2.0 Max); Mazda 2 2019, Mazda 6 2016, Mazda 6 2017 và CX-5 2016 lắp mẫu lens 3.0 inch (X-Light X3 Ultra, AES SV 3.0 Max, GTR G1 Turbo V2, X-Light F10 Turbo V2). Cùng dòng xe nhưng khác đời vẫn cần đo hốc riêng; trước khi chốt, kỹ thuật viên kiểm tra khoảng hở, pát, giắc và chỗ tản nhiệt trên xe, hạn chế cắt khoét cản. Mẫu đèn và kích thước lens của từng ca ghi ngay trên thẻ hồ sơ ở mục Xe Mazda đã lắp bi gầm tại Auto365.
 
 **Một dòng Mazda có nhiều đời thì chọn bi gầm thế nào?**
 
