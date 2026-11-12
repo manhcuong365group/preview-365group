@@ -470,10 +470,11 @@ img{max-width:100%;display:block}a{color:inherit}
   <h2>Nhận báo giá dán phim 3M cho VinFast</h2>
   <p>Chọn xe, gói phim và để lại số điện thoại, cố vấn gọi lại báo giá chi tiết.</p>
   <select class="vf-in" name="car_model" id="f-car" aria-label="Dòng xe VinFast"></select>
-  <select class="vf-in" name="package_name" id="f-pk" aria-label="Gói phim 3M"><option value="">Gói phim (chưa rõ cũng được)</option></select>
+  <select class="vf-in" name="package_name" id="f-pk" aria-label="Gói phim 3M"><option value="">Chưa chọn gói – cần tư vấn</option></select>
   <select class="vf-in" name="scope" aria-label="Phạm vi dán"><option>Toàn bộ kính xe</option><option>Theo vị trí đã chọn</option><option>Chỉ kính lái</option><option>Kính sườn + kính lưng</option><option>Cửa sổ trời</option></select>
   <input class="vf-in" name="fullname" placeholder="Họ và tên *" autocomplete="name" required aria-label="Họ và tên">
   <input class="vf-in" name="phone" type="tel" inputmode="tel" placeholder="Số điện thoại *" autocomplete="tel" required aria-label="Số điện thoại">
+  <select class="vf-in" name="province" aria-label="Tỉnh/thành" autocomplete="address-level1" required><option value="">Tỉnh/thành của bạn *</option><option>TP. Hồ Chí Minh</option><option>Hà Nội</option><option>Đà Nẵng</option><option>Hải Phòng</option><option>Cần Thơ</option><option>Huế</option><option>An Giang</option><option>Bắc Ninh</option><option>Cà Mau</option><option>Cao Bằng</option><option>Đắk Lắk</option><option>Điện Biên</option><option>Đồng Nai</option><option>Đồng Tháp</option><option>Gia Lai</option><option>Hà Tĩnh</option><option>Hưng Yên</option><option>Khánh Hòa</option><option>Lai Châu</option><option>Lâm Đồng</option><option>Lạng Sơn</option><option>Lào Cai</option><option>Nghệ An</option><option>Ninh Bình</option><option>Phú Thọ</option><option>Quảng Ngãi</option><option>Quảng Ninh</option><option>Quảng Trị</option><option>Sơn La</option><option>Tây Ninh</option><option>Thái Nguyên</option><option>Thanh Hóa</option><option>Tuyên Quang</option><option>Vĩnh Long</option></select>
   <input type="hidden" name="positions"><input type="text" name="form-honey" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
   <label class="vf-ck"><input type="checkbox" name="consent" required> Tôi đồng ý để Auto365 liên hệ tư vấn theo <a href="https://auto365.vn/chinh-sach-bao-mat-tai-auto365" target="_blank" rel="noopener">Chính sách bảo mật</a>.</label>
   <button class="vf-btn vf-btn--red" type="submit">Nhận báo giá ngay →</button>
@@ -598,7 +599,7 @@ img{max-width:100%;display:block}a{color:inherit}
   var name=f.fullname.value.trim(),phone=f.phone.value.replace(/[\s.\-]/g,'');
   if(!name)return show('Vui lòng nhập họ tên.');
   if(!/^0(3|5|7|8|9)\d{8}$/.test(phone))return show('Số điện thoại chưa đúng (vd: 0365 365 365).');
-  if(!f.consent.checked)return show('Vui lòng xác nhận đồng ý để Auto365 liên hệ.');
+  if(!f.province.value)return show('Vui lòng chọn tỉnh/thành để Auto365 chuyển về chi nhánh gần nhất.');if(!f.consent.checked)return show('Vui lòng xác nhận đồng ý để Auto365 liên hệ.');
   var d=new FormData(f),q=new URLSearchParams(location.search);
   d.set('phone',phone);d.set('service','Phim cách nhiệt 3M');d.set('source_page','Landing phim 3M VinFast');d.set('source_url',location.href);d.set('referrer',document.referrer||'');
   ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','fbclid'].forEach(function(k){d.set(k,q.get(k)||'')});
