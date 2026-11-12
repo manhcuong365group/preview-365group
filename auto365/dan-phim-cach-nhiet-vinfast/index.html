@@ -67,7 +67,7 @@ img{max-width:100%;display:block}a{color:inherit}
 #vf-models{grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:10px}
 .vf-model img{width:100%;height:auto;aspect-ratio:2/1;object-fit:contain;background:linear-gradient(#fff,#e9ecf0)}
 .vf-model span{padding:6px 10px 8px;display:flex;flex-direction:column}
-.vf-model b{font-size:14px}.vf-model small{color:var(--mut);font-size:11px}
+.vf-model b{font-size:14px}.vf-model small{color:var(--mut);font-size:11px}.vf-model small b{color:var(--red);font-weight:800}
 .vf-model i{font-size:10px!important;padding:1px 6px!important;top:5px!important;left:5px!important}
 .vf-model[hidden]{display:none}
 .vf-mwrap{text-align:center;margin:12px 0 0}.vf-mwrap[hidden]{display:none}
@@ -520,7 +520,7 @@ img{max-width:100%;display:block}a{color:inherit}
  var mw=document.getElementById('vf-models');
  var NC={};document.querySelectorAll('.vf-case').forEach(function(a){NC[a.dataset.m]=(NC[a.dataset.m]||0)+1});
  document.getElementById('vf-tab-case').textContent='Đã thi công ('+CARS.filter(function(c){return NC[c[1]]}).length+')';
- mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Đã thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Nhóm giá '+GN[c[2]]+'</small></span></button>'}).join('');
+ mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Đã thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Trọn xe từ <b>'+vnd(Math.min.apply(null,PK.map(function(k){return k.p[c[2]]})))+'</b></small></span></button>'}).join('');
  fcar.innerHTML=CARS.map(function(c){return '<option>VinFast '+c[0]+'</option>'}).join('')+'<option>VinFast khác</option>';
  var tab='all',qi=document.getElementById('vf-q'),tabs=document.querySelectorAll('.vf-tabs button');
  var open=false,mb=document.getElementById('vf-more'),mwr=mb.parentNode;
