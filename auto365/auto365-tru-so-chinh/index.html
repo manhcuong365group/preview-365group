@@ -188,9 +188,9 @@ iframe.td-vid{cursor:auto}
 body{padding-bottom:52px}.td-cta .td-btn{flex:1 1 auto;justify-content:center}}
 .td-sec-pk{padding-top:24px!important;padding-bottom:8px!important}.td-pick{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:0 4px 16px rgba(0,0,0,.05)}
 .td-pick-hd{margin:0 0 10px;font-size:14px;color:var(--mut);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}.td-pick-hd b{font-size:17px;color:var(--ink,#111)}
-.td-pick-f{display:grid;grid-template-columns:1fr 1fr 1.2fr auto;gap:10px}.td-pick-f .td-btn{height:46px;justify-content:center;white-space:nowrap}.td-pick-f select.err{border-color:var(--red);box-shadow:0 0 0 2px #fbd5d7}
+.td-pick-f{display:grid;grid-template-columns:1fr 1.5fr auto;gap:10px}.td-pick-f .td-btn{height:46px;justify-content:center;white-space:nowrap}.td-pick-f select.err{border-color:var(--red);box-shadow:0 0 0 2px #fbd5d7}
 .td-pop-pk{max-width:820px}.td-pop-pk .td-pick-res{border:0;padding:8px 0 0}
-@media(max-width:600px){.td-pick-f{grid-template-columns:1fr 1fr}.td-pick-f .td-btn,#pk-n{grid-column:1/-1}.td-pop-pk{width:100%;max-width:none;max-height:100dvh;height:100dvh;margin:0;border-radius:0}}
+@media(max-width:600px){.td-pick-f{grid-template-columns:minmax(0,1fr)}.td-pick-f .td-btn{grid-column:1/-1}.td-pop-pk{width:100%;max-width:none;max-height:100dvh;height:100dvh;margin:0;border-radius:0}}
 .td-pick-f select{width:100%;min-width:0;height:46px;border:1px solid var(--line);border-radius:10px;padding:0 12px;font:inherit;background:#fff}
 .td-pick-out{margin-top:20px}.td-pick-res{display:grid;grid-template-columns:1fr 1.4fr;gap:20px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px}
 .td-pick-sol small,.td-pick-cases>small{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;color:var(--mut)}
@@ -306,11 +306,10 @@ html{scroll-padding-top:80px}@media(max-width:1100px){html{scroll-padding-top:12
 <!-- Module chọn xe: bật 12/11/2026, gợi ý theo case thực tế, chưa hiển thị giá theo xe -->
 <section class="td-sec td-sec-pk" id="chon-xe">
   <div class="td-pick">
-    <p class="td-pick-hd"><b>Chọn giải pháp theo xe của bạn</b><span>Chọn xe và nhu cầu – xem phương án cùng xe đã làm tại Trụ Sở Chính.</span></p>
+    <p class="td-pick-hd"><b>Chọn giải pháp theo xe của bạn</b><span>Chọn hãng xe và dịch vụ – xem phương án cùng xe đã làm tại Trụ Sở Chính.</span></p>
     <div class="td-pick-f">
       <select id="pk-b" aria-label="Hãng xe"><option value="">Hãng xe</option></select>
-      <select id="pk-m" aria-label="Dòng xe" disabled><option value="">Dòng xe</option></select>
-      <select id="pk-n" aria-label="Bạn cần gì"><option value="">Bạn cần gì?</option><option value="phim">Cabin nóng, chói</option><option value="ppf">Bảo vệ sơn / đổi màu</option><option value="den">Đi đêm thiếu sáng</option><option value="cam">Ghi hình hành trình</option></select>
+      <select id="pk-n" aria-label="Dịch vụ"><option value="">Chọn dịch vụ</option><option value="phim">Phim cách nhiệt – chống nóng, chói</option><option value="ppf">PPF / Dán đổi màu – bảo vệ sơn</option><option value="den">Nâng cấp đèn – sáng hơn khi đi đêm</option><option value="cam">Camera hành trình – ghi hình đường đi</option></select>
       <button type="button" id="pk-go" class="td-btn td-btn-red">Xem gợi ý →</button>
     </div>
   </div>
@@ -594,7 +593,7 @@ const S={phim:{t:"Phim cách nhiệt 3M",d:"Giảm nóng, cản UV, chọn độ
 ppf:{t:"PPF / Wrap đổi màu",d:"Bảo vệ sơn khỏi trầy xước, đá văng; hoặc đổi màu mà vẫn giữ lớp sơn gốc.",p:["PPF 3M (50 / 150 / 200 Gloss)","AX Film","Wrap đổi màu"],u:"https://auto365.vn/ppfwrap-film",tel:"0365365365",sel:"PPF / Dán đổi màu"},
 den:{t:"Nâng cấp ánh sáng",d:"Bi LED, bi gầm chọn theo đúng dòng xe, cân vệt sáng trên bảng test để không chói xe ngược chiều.",p:["Bi LED X-Light / GTR","Bi gầm X-Light, AES","Đèn gầm dạng rời"],u:"https://auto365.vn/nang-cap-anh-sang",tel:"0365365911",sel:"Đèn – Bi LED"},
 cam:{t:"Camera hành trình",d:"Ghi hình trước/sau, đi dây ẩn gọn, xem lại video trên điện thoại.",p:["70mai (A510, A810, M310…)","Vietmap","Camera 360"],u:"https://auto365.vn/camera-hanh-trinh-o-to",tel:"0365365911",sel:"Camera hành trình"}};
-const cards=[...document.querySelectorAll(".td-xe-card")],B=document.getElementById("pk-b"),M=document.getElementById("pk-m"),N=document.getElementById("pk-n"),O=document.getElementById("pk-out");let need="";
+const cards=[...document.querySelectorAll(".td-xe-card")],B=document.getElementById("pk-b"),M={value:""},N=document.getElementById("pk-n"),O=document.getElementById("pk-out");let need="";
 const brands=[...new Set(cards.map(c=>c.dataset.b))].sort();
 B.innerHTML="<option value=\"\">Hãng xe</option>"+brands.map(b=>"<option>"+b+"</option>").join("")+"<option value=\"other\">Xe khác / chưa rõ</option>";
 B.onchange=()=>{const ms=[...new Set(cards.filter(c=>c.dataset.b===B.value).map(c=>c.dataset.m))];M.disabled=!B.value||B.value==="other";M.innerHTML="<option value=\"\">"+(B.value&&B.value!=="other"?"Dòng xe":"Dòng xe")+"</option>"+ms.map(m=>"<option>"+m+"</option>").join("")+(B.value?"<option value=\"other\">Dòng khác / chưa rõ</option>":"")};
