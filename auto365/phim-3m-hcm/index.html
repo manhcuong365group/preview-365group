@@ -874,7 +874,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  var MQD=!matchMedia('(max-width:760px)').matches;
  PK.sort(function(a,b){return a.p[0]-b.p[0]||a.p[1]-b.p[1]});
  PK.forEach(function(k){
-  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'"><div class="h3m-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+' tại 3M Pro Shop" width="960" height="640" loading="lazy"><span class="h3m-card__from">Minicar từ <b>'+String(k.p[0]).replace('.',',')+' triệu</b></span></div>'+(k.b?'<span class="h3m-card__badge">'+k.b+'</span>':'')+
+  grid.insertAdjacentHTML('beforeend','<article class="h3m-card" data-id="'+k.id+'"><div class="h3m-card__img"><img src="hinh/goi/'+k.id+'.webp" alt="Xe dán phim cách nhiệt 3M '+k.n+' tại 3M Pro Shop" width="960" height="640" loading="lazy"><span class="h3m-card__from">Minicar từ <b>'+String(k.p[0]).replace('.',',')+' triệu</b></span></div>'+
    '<h3><b>3M</b> '+k.n+'</h3><p class="h3m-card__combo">'+k.c+'</p><ul class="h3m-card__tags">'+k.t.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'+
    '<details class="h3m-card__more"'+(MQD?' open':'')+'><summary>Thông số &amp; giá theo nhóm xe</summary><div class="h3m-card__spec"><small>Thông số kính lái '+k.s[0]+'</small><div><span><b>'+k.s[1]+'</b>Cản nhiệt</span><span><b>'+k.s[2]+'</b>Xuyên sáng</span><span><b>'+k.s[3]+'</b>Cản hồng ngoại</span></div></div><div class="h3m-card__price"><div class="h3m-card__ph">Giá trọn xe (đã gồm VAT)</div><table><tr><td>Minicar</td><td>'+vnd(k.p[0])+'</td></tr><tr><td>Sedan</td><td>'+vnd(k.p[1])+'</td></tr><tr><td>SUV / MPV</td><td>'+vnd(k.p[2])+'</td></tr></table></div></details>'+
    
