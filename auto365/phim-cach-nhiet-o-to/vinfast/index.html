@@ -90,18 +90,18 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-car small{display:block;color:var(--mut);font-size:12px}
 .vf-car a{margin-left:auto;color:var(--red);font-weight:700;text-decoration:none;white-space:nowrap;font-size:14px}
 .vf-ptabs button[aria-selected=true]{background:var(--red);border-color:var(--red);color:#fff}.vf-ptabs button[aria-selected=true] span{color:#fff}
-.vf-pp{display:grid;grid-template-columns:220px 1fr 1fr auto;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
+.vf-pp{display:grid;grid-template-columns:220px 1fr max-content 170px;gap:28px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px}
 .vf-pp img{width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;border-radius:8px;background:linear-gradient(#fff,#e9ecf0)}
 @media(max-width:600px){.vf-pp img{aspect-ratio:2/1}}
 .vf-pp h3{margin:0 0 6px;font-size:19px}.vf-pp h3 span{color:var(--red)}
 .vf-pp p{margin:0 0 10px;color:var(--mut);font-size:14px}
-.vf-pp ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:14px}
+.vf-pp ul{list-style:none;margin:0;padding:0 0 0 24px;border-left:1px solid var(--line);display:grid;gap:8px;font-size:14px}
 .vf-pp li:before{content:"✓";color:var(--red);font-weight:800;margin-right:8px}
 .vf-pp__p{font-size:13px;color:var(--mut)}.vf-pp__p b{display:block;color:var(--red);font-size:24px}
 .vf-pp__a{display:flex;flex-direction:column;gap:8px;min-width:170px}
 .vf-pp__a a.vf-btn{border-color:var(--red);color:var(--red)}
 @media(max-width:960px){.vf-pp{grid-template-columns:200px 1fr}.vf-pp__a{grid-column:1/-1;flex-direction:row}.vf-pp__a .vf-btn{flex:1}}
-@media(max-width:600px){.vf-pp{grid-template-columns:1fr;padding:14px;gap:12px}.vf-ptabs button{flex:0 0 auto;padding:8px 12px;font-size:13px}}
+@media(max-width:600px){.vf-pp{grid-template-columns:1fr;padding:14px;gap:12px}.vf-pp ul{border-left:0;padding-left:0}.vf-ptabs button{flex:0 0 auto;padding:8px 12px;font-size:13px}}
 .vf-pk{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
 .vf-pk .vf-card__img{aspect-ratio:auto;height:96px}
 .vf-pk .vf-card__b{padding:10px 12px 12px;gap:5px}
