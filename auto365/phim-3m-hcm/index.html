@@ -547,9 +547,9 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  <div class="h3m-quick h3m-need" id="h3m-quick">
   <div><h2>Bạn cần phim thế nào?</h2></div>
   <div class="h3m-need__g">
-   <button type="button" class="h3m-need__b" data-need="ceramic-ir|ceramic-hybrid" data-open-lead data-pkfull="Ưu tiên chi phí – Ceramic IR / Ceramic Hybrid"><span aria-hidden="true">💰</span><b>Ưu tiên chi phí</b><small>Ceramic IR / Ceramic Hybrid</small></button>
-   <button type="button" class="h3m-need__b" data-need="crystalline-hybrid-pro|crystalline-hybrid" data-open-lead data-pkfull="Cân bằng giá và hiệu quả – Crystalline Hybrid"><span aria-hidden="true">⚖️</span><b>Cân bằng giá và hiệu quả</b><small>Crystalline Hybrid</small></button>
-   <button type="button" class="h3m-need__b" data-need="cr-blk-pro|cr-blk" data-open-lead data-pkfull="Kính lái trong, ít chói – Crystalline CR BLK"><span aria-hidden="true">🔆</span><b>Kính lái trong, ít chói</b><small>Nhóm Crystalline CR BLK</small></button>
+   <button type="button" class="h3m-need__b" data-need="ceramic-ir|ceramic-hybrid" data-open-lead data-priority="Ưu tiên chi phí"><span aria-hidden="true">💰</span><b>Ưu tiên chi phí</b><small>Ceramic IR / Ceramic Hybrid</small></button>
+   <button type="button" class="h3m-need__b" data-need="crystalline-hybrid-pro|crystalline-hybrid" data-open-lead data-priority="Cân bằng giá và hiệu quả"><span aria-hidden="true">⚖️</span><b>Cân bằng giá và hiệu quả</b><small>Crystalline Hybrid</small></button>
+   <button type="button" class="h3m-need__b" data-need="cr-blk-pro|cr-blk" data-open-lead data-priority="Kính lái trong, ít chói"><span aria-hidden="true">🔆</span><b>Kính lái trong, ít chói</b><small>Nhóm Crystalline CR BLK</small></button>
   </div>
   <form class="h3m-quick__f" onsubmit="return false" hidden>
    <select class="h3m-sel" id="q-pk" aria-label="Cấu hình phim"></select>
@@ -854,7 +854,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
   <label>Khu vực<select name="province"><option>TP.HCM</option><option>Bình Dương</option><option>Đồng Nai</option><option>Long An / Tây Ninh</option><option>Bà Rịa – Vũng Tàu</option><option>Tỉnh/thành khác</option></select></label>
   <label>Dòng xe / đời xe <small>(không bắt buộc)</small><input name="car_model" type="text" placeholder="VD: Camry 2024, VF8, CX-5"></label>
   <details class="h3m-modal__opt full"><summary>Thêm thông tin để tư vấn sát hơn <small>(không bắt buộc)</small></summary><div class="h3m-modal__optg"><label>Nhóm xe<select name="vehicle_group"><option value="">Chưa rõ</option><option>Minicar</option><option>Sedan</option><option>SUV/MPV</option></select></label>
-  <label>Nhu cầu ưu tiên<select name="priority"><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option selected>Chưa chắc, cần tư vấn</option></select></label>
+  <label>Nhu cầu ưu tiên<select name="priority"><option>Ưu tiên chi phí</option><option>Cân bằng giá và hiệu quả</option><option>Kính lái trong, ít chói</option><option>Ưu tiên tầm nhìn an toàn</option><option>Giảm nóng và giảm chói</option><option>Tăng riêng tư khoang sau</option><option>Cân bằng ngân sách và hiệu quả</option><option selected>Chưa chắc, cần tư vấn</option></select></label>
   <label>Gói đang quan tâm<select name="package_name"><option value="">Chưa chắc, cần tư vấn</option><option>3M CR BLK PRO</option><option>3M CR BLK</option><option>3M Crystalline Hybrid Pro</option><option>3M Crystalline Hybrid</option><option>3M Ceramic IR</option><option>3M Ceramic Hybrid</option><option>Dán lẻ từng vị trí</option><option>Chưa biết chọn gói – nhờ tư vấn theo xe</option></select></label>
   <label class="full">Nhu cầu thêm <small>(không bắt buộc)</small><textarea name="note" rows="2" placeholder="Hay đỗ xe ngoài trời, cần riêng tư, có panorama..."></textarea></label></div></details>
   <input type="hidden" name="branch" value="3M Pro Shop – Trụ sở chính (Hiệp Bình)">
@@ -897,7 +897,7 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  function syncForms(){fs.value=SEL.pk;fvg.value=SEL.gr}
  function setSel(pk,gr){SEL.pk=pk||'';SEL.gr=gr||'';syncForms();var sk=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0];if(sk)qs.value=sk.id;var sg=GN.indexOf(SEL.gr);qc.value=sg>-1?String(sg):'';renderCards();if(window.gbReady)syncTabs();if(qo.classList.contains('is-on')&&sk)qo.innerHTML=sg>-1?'<b>3M '+sk.n+'</b> – '+GN[sg]+': <b style="color:var(--r)">'+vnd(sk.p[sg])+'</b> trọn xe. <button type="button" class="h3m-linkbtn" data-open-lead data-pk="'+sk.n+'" data-group="'+GN[sg]+'">Nhận báo giá &amp; đặt lịch →</button>':'Chọn nhóm xe để xem giá trọn xe.';if(window.mf){mf.package_name.value=SEL.pk;mf.vehicle_group.value=SEL.gr}renderSum()}
  function renderSum(){if(!window.mpk)return;var k=PK.filter(function(x){return '3M '+x.n===SEL.pk})[0],g=GN.indexOf(SEL.gr);
-  mpk.hidden=!SEL.pk&&!SEL.gr;mpk.innerHTML=(SEL.pk?'Gói đã chọn: <b>'+SEL.pk+'</b>':'Gói: <b>chưa chọn</b>')+' · '+(SEL.gr?SEL.gr:'nhóm xe chưa chọn')+(k&&g>-1?' · <b>'+vnd(k.p[g])+'</b>':'')}
+  var pr=window.mf&&mf.priority?mf.priority.value:'',it=pr&&pr!=='Chưa chắc, cần tư vấn'?pr:'';mpk.hidden=!SEL.pk&&!SEL.gr&&!it;mpk.innerHTML=(SEL.pk?'Gói đã chọn: <b>'+SEL.pk+'</b>':(it?'Nhu cầu: <b>'+it+'</b>':'Gói: <b>chưa chọn</b>'))+' · '+(SEL.gr?SEL.gr:'nhóm xe chưa chọn')+(k&&g>-1?' · <b>'+vnd(k.p[g])+'</b>':'')}
  function renderCards(){var g=qc.value===''?-1:+qc.value;
   document.querySelectorAll('.h3m-card').forEach(function(c){var k=PK.filter(function(x){return x.id===c.dataset.id})[0];
    c.querySelectorAll('.h3m-card__price tr').forEach(function(r,i){r.classList.toggle('is-on',i===g)});
@@ -962,13 +962,14 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
  document.addEventListener('click',function(e){
   var o=e.target.closest('[data-open-lead]');
   if(!o&&!e.target.closest('a,button,input,select,textarea,summary,details')){var c=e.target.closest('.h3m-card');if(c)o=c.querySelector('[data-open-lead]')}if(!o||!dlg.showModal)return;e.preventDefault();
-  var pk=o.dataset.pkfull||(o.dataset.pk?'3M '+o.dataset.pk:SEL.pk),gr=o.dataset.group||SEL.gr;
-  setSel(pk,gr);
+  var intent=o.dataset.priority||'';var pk=intent?'':(o.dataset.pkfull||(o.dataset.pk?'3M '+o.dataset.pk:SEL.pk)),gr=o.dataset.group||SEL.gr;
+  setSel(pk,gr);if(intent&&mf.priority){mf.priority.value=intent;renderSum()}
   var m=mf.querySelector('.h3m-msg');m.className='h3m-msg';m.textContent='';
   if(dlg.showModal)dlg.showModal();else location.hash='dang-ky';
   if(window.gtag)gtag('event','open_lead_popup',{package_name:pk});
   setTimeout(function(){mf.fullname.focus()},50);
  });
+ if(mf.priority)mf.priority.addEventListener('change',renderSum);
  dlg.addEventListener('click',function(e){if(e.target===dlg||e.target.closest('[data-close]'))dlg.close()});
 })();
  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"],a[href*="zalo.me"]');if(a&&window.gtag)gtag('event',a.href.indexOf('tel:')===0?'click_call':'click_zalo',{link_url:a.href})});
