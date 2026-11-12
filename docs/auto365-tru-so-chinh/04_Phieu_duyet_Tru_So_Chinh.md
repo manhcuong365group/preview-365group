@@ -153,3 +153,12 @@ Việc làm lúc go-live (đã chốt phương án, không phải lỗi preview)
 | P0-03/05/06, P0-04 số lượt | Ngoài web — REL-01..04 lúc go-live |
 
 Test 11/11 mobile 375px (fetch giả lập): `090A…` 0 request; 500+`success:true` báo lỗi, giữ số; mất mạng + Camera → gọi 0365 365 911; `090 000 0000` + 200 thành công, reset.
+
+## Đối ứng tái kiểm UX/CRO V2.2 ngày 11/11 (72/100) — xử lý 12/11/2026
+
+| Mục | Xử lý trên preview |
+|---|---|
+| P0-08 popup mobile bị cắt | Popup cuộn dọc (`overflow-y:auto`, `max-height: 100dvh − 24px`). Test 390×740: cuộn tới nút gửi (đáy nút 676 px < đáy popup 728 px); số trống → dòng lỗi nằm trong vùng nhìn thấy |
+| P1-02 tổ hợp 0 hồ sơ | CTA case lấy ngữ cảnh từ lựa chọn bộ lọc trước, rồi mới từ hồ sơ đang hiện. BMW → 530i → camera (0 hồ sơ): nút "Hỏi phương án camera cho BMW 530i →", popup điền BMW 530i + Camera hành trình |
+| P1-02 kiểm/sửa xe | Popup có ô "Dòng xe (không bắt buộc)" hiển thị, khách xem và sửa được trước khi gửi (thay input ẩn) |
+| P1-01, P1-03, P0-01/03/04/05/06/07 | Như mục 11/11 — giữ theo chốt chủ trang / làm lúc go-live |
