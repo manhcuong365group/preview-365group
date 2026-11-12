@@ -225,6 +225,25 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-quote .vf-btn{width:100%}
 .vf-msg{font-size:13px;margin-top:10px}.vf-msg.ok{color:#18794e}.vf-msg.err{color:var(--red)}
 /* cases */
+.vf-br{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.vf-br-hq,.vf-br-sys{border:1px solid var(--line);border-radius:12px;background:#fff;padding:16px}
+.vf-br-top{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}.vf-br-top>div{flex:1;display:flex;flex-direction:column}
+.vf-br-top b{font-size:17px}.vf-br-top b em{font-style:normal;color:var(--red)}.vf-br-top span{font-size:13px;color:var(--mut)}
+.vf-br i{display:grid;place-items:center;width:38px;height:38px;border-radius:8px;background:#fdecec;color:var(--red);flex:none}
+.vf-br-g{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:12px}
+.vf-br-g>div{display:grid;grid-template-columns:38px 1fr;column-gap:10px;padding:10px 0;align-items:center}.vf-br-g>div+div{border-left:1px solid var(--line);padding-left:12px}
+.vf-br-g i{grid-row:span 2;width:32px;height:32px}.vf-br-g b{font-size:14px}.vf-br-g span{font-size:12px;color:var(--mut)}
+.vf-br-a{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.vf-br-a a{border:1px solid var(--line);border-radius:8px;padding:8px;text-align:center;text-decoration:none;font-weight:700;font-size:13px;display:flex;flex-direction:column;justify-content:center}
+.vf-br-a a small{font-weight:500;color:var(--mut);font-size:11px}.vf-br-a a:first-child b{color:var(--red)}
+.vf-br-near{border:1px solid #f3c6c8;background:#fff5f5;color:var(--red);border-radius:8px;padding:7px 12px;font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.vf-br-s{display:flex;gap:8px;margin-bottom:12px}.vf-br-s input{flex:1;min-width:0;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:inherit}
+.vf-br-r{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.vf-br-r a{background:var(--bg);border-radius:10px;padding:12px;text-decoration:none;display:flex;flex-direction:column}
+.vf-br-r small{font-size:12px;opacity:.5;font-weight:700}.vf-br-r span{font-size:12px;text-transform:uppercase;color:var(--mut);margin-top:6px}.vf-br-r b{font-size:18px}
+.vf-br-r a:nth-child(1) b{color:var(--red)}.vf-br-r a:nth-child(2) b{color:#2b5a9e}.vf-br-r a:nth-child(3) b{color:#18794e}
+@media(max-width:960px){.vf-br{grid-template-columns:1fr}}
+@media(max-width:600px){.vf-br-g{grid-template-columns:1fr}.vf-br-g>div+div{border-left:0;padding-left:0;border-top:1px solid var(--line)}.vf-br-a{grid-template-columns:1fr 1fr}.vf-br-a a:first-child{grid-column:1/-1}}
 .vf-cx-hd{display:flex;gap:16px;align-items:flex-start;justify-content:space-between}
 .vf-cx-all{border:1px solid var(--line);background:#fff;color:var(--ink);white-space:nowrap;font-size:13px}
 .vf-cx-f{display:flex;gap:10px;align-items:center;margin-bottom:8px}.vf-cx-f>span{font-size:13px;color:var(--mut);min-width:72px}
@@ -319,7 +338,7 @@ img{max-width:100%;display:block}a{color:inherit}
 <body>
 <header class="vf-top"><div class="vf-wrap vf-top__in">
  <a class="vf-logo" href="https://auto365.vn">AUTO<b>365</b></a>
- <nav class="vf-nav"><a href="#chon-xe">Chọn xe</a><a href="#goi-phim">6 gói phim</a><a href="#vi-tri">Vị trí dán</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#nhu-cau">Gợi ý</a><a href="#cam-nang">Cẩm nang</a><a href="#faq">Hỏi đáp</a></nav>
+ <nav class="vf-nav"><a href="#chon-xe">Chọn xe</a><a href="#goi-phim">6 gói phim</a><a href="#vi-tri">Vị trí dán</a><a href="#xe-thuc-te">Xe thực tế</a><a href="#nhu-cau">Gợi ý</a><a href="#cam-nang">Cẩm nang</a><a href="#chi-nhanh">Chi nhánh</a><a href="#faq">Hỏi đáp</a></nav>
  <a class="vf-btn vf-btn--red" href="tel:0365365365">☎ 0365 365 365</a>
 </div></header>
 
@@ -467,6 +486,30 @@ img{max-width:100%;display:block}a{color:inherit}
    <li><b>Thi công dán phim</b>Cắt theo khuôn kính từng model.</li>
    <li><b>Kiểm tra &amp; bàn giao</b>Đo lại thông số, kích hoạt eWarranty.</li>
   </ol>
+</div></section>
+
+<section class="vf-sec" id="chi-nhanh"><div class="vf-wrap">
+ <h2 class="vf-h2">Tìm chi nhánh <em>Auto365</em> gần bạn</h2>
+ <p class="vf-sub">Đến trụ sở chính hoặc chi nhánh gần bạn để xem mẫu phim 3M thực tế, đo thử trên kính xe VinFast trước khi chọn.</p>
+ <div class="vf-br">
+  <div class="vf-br-hq">
+   <div class="vf-br-top"><i><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10l9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></i><div><b>Auto365.vn – <em>Trụ Sở Chính</em></b><span>Số 4/4/1/7 Đường Số 3, Phường Hiệp Bình, TP. Hồ Chí Minh</span></div></div>
+   <div class="vf-br-g">
+    <div><i><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></i><b>Giờ làm việc</b><span>8:30 – 18:30, tất cả các ngày</span></div>
+    <div><i><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></i><b>Bảo hành</b><span>Điện tử 3M, tra theo biển số</span></div>
+   </div>
+   <div class="vf-br-a"><a href="tel:0365365365"><small>Phim cách nhiệt 3M</small><b>0365 365 365</b></a><a href="https://zalo.me/0365365365" target="_blank" rel="noopener">Zalo tư vấn</a><a href="https://www.google.com/maps/place/?q=place_id:ChIJidnSDowpdTERwwtQPvQanoo" target="_blank" rel="noopener">Google Maps</a></div>
+  </div>
+  <div class="vf-br-sys">
+   <div class="vf-br-top"><i><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="M12 7l-6 10M12 7l6 10M7 19h10"/></svg></i><div><b><em>90+ chi nhánh</em> · 33 tỉnh thành</b><span>Phủ sóng toàn quốc, cả 3 miền Bắc – Trung – Nam</span></div><a class="vf-br-near" href="https://auto365.vn/chi-nhanh#workspace" target="_blank" rel="noopener">Gần tôi</a></div>
+   <form class="vf-br-s" action="https://auto365.vn/chi-nhanh" target="_blank"><input name="q" placeholder="Nhập tỉnh/thành, ví dụ: Đà Nẵng" aria-label="Tìm chi nhánh theo tỉnh/thành"><button class="vf-btn vf-btn--red" type="submit">Tìm</button></form>
+   <div class="vf-br-r">
+    <a href="https://auto365.vn/chi-nhanh?q=Mi%E1%BB%81n%20B%E1%BA%AFc#workspace" target="_blank" rel="noopener"><small>01</small><span>Miền Bắc</span><b>41 điểm</b></a>
+    <a href="https://auto365.vn/chi-nhanh?q=Mi%E1%BB%81n%20Trung#workspace" target="_blank" rel="noopener"><small>02</small><span>Miền Trung</span><b>26 điểm</b></a>
+    <a href="https://auto365.vn/chi-nhanh?q=Mi%E1%BB%81n%20Nam#workspace" target="_blank" rel="noopener"><small>03</small><span>Miền Nam</span><b>24 điểm</b></a>
+   </div>
+  </div>
+ </div>
 </div></section>
 
 <section class="vf-sec vf-sec--g" id="faq"><div class="vf-wrap">
