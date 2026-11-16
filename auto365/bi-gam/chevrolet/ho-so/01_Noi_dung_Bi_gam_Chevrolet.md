@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Chevrolet: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-16 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), ItemList (5), FAQPage |
-| SHA-256 index.html | `c37f7bd14391417b04a9230b4c4df42ab4a28fb50812b17fa0e538880d1ca93c` |
-| SHA-256 content-src.html | `427d6220ec35069dad53771a94eff3ab3a1eea46b4cbd1a9a0e781bd7adb4adc` |
+| SHA-256 index.html | `b849298d02e950c7dbbac7cb63fc60849034c712879fe30a59cb4ae8d57b25cc` |
+| SHA-256 content-src.html | `5ed9a45261ac8b7969d150c684da0a56094383007dd30ade640b9fbb26ec760c` |
 
 ## Sapo (kiêm trả lời nhanh)
 
