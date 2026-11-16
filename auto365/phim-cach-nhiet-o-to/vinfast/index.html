@@ -408,7 +408,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
    <div class="vf-lc-ft"><div><small id="pz-list">Chưa chọn vị trí nào</small><b id="pz-total">0đ</b></div><button type="button" class="vf-lc-clr" id="pz-clr" hidden>Xóa chọn</button><a class="vf-btn vf-btn--red" href="#bao-gia" id="pz-go">Nhận báo giá →</a></div>
    <div class="vf-lc-sug" id="pz-sug" hidden></div>
   </div>
-  <p class="vf-note">Giá dán lẻ theo bảng giá 3M áp dụng từ 06/2026, đã gồm VAT. Cửa sổ trời nhỏ báo giá theo xe.</p>
+  <p class="vf-note">Giá dán lẻ theo bảng giá 3M áp dụng từ 06/2026, đã gồm VAT. Cửa sổ trời panorama tính bằng giá 1 kính lái, cửa sổ trời nhỏ bằng giá 1 kính sườn.</p>
  </aside>
 </div></section>
 
@@ -605,20 +605,20 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
   dia.innerHTML='<img src="hinh/m/'+src+'" alt="" width="640" height="400" style="aspect-ratio:16/10;object-fit:fill"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return nr&&k===3?'':'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p,k){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%'+(nr&&k===3?';display:none':'')+'"></i>'}).join('')+LAB.map(function(l,k){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%'+(nr&&k===3?';display:none':'')+'"><b>'+l[2]+'</b></span>'}).join('');if(typeof ST!=='undefined'&&ST)drawPz()}
  dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d);var s=document.getElementById('vf-s3car');})});
  // Tính giá kính lẻ — bảng giá dán lẻ 3M 06/2026 (triệu đ). Mỗi dòng phim có mã riêng theo vị trí.
- var RW=[['Kính lái','Tầm nhìn chính, chừa vùng camera',0,0],['Kính sườn trước','1 cặp, phía người lái',1,1],['Kính sườn sau','1 cặp, hàng ghế sau',1,2],['Kính lưng','Kính sau xe',2,4],['Cửa sổ trời panorama','Dán được mọi mã, tính giá kính lái',3,3]];
+ var RW=[['Kính lái','Tầm nhìn chính, chừa vùng camera',0,0],['Kính sườn trước','1 cặp, phía người lái',1,1],['Kính sườn sau','1 cặp, hàng ghế sau',1,2],['Kính lưng','Kính sau xe',2,4],['Cửa sổ trời panorama','Giá bằng 1 kính lái',3,3],['Cửa sổ trời nhỏ','Giá bằng 1 kính sườn',4,3]];
  var CODES=[
-  [[['CR BLK 60',5.7,'sáng nhất'],['CR BLK 50',5.7],['CR BLK 40',6.5,'cản nhiệt cao nhất']],[['CR BLK 35',2.6],['CR BLK 15',2.6,'tối, riêng tư']],[['CR BLK 35',4.1],['CR BLK 15',4.1]],[['CR BLK 60',5.7],['CR BLK 50',5.7],['CR BLK 40',6.5],['CR BLK 35',5.7],['CR BLK 15',5.7]]],
-  [[['IR 50',3.3]],[['IR 25',1.8],['IR 15',1.8]],[['IR 25',2.3],['IR 15',2.3]],[['IR 50',3.3],['IR 25',3.3],['IR 15',3.3]]],
-  [[['NR 35',2.6]],[['NR 25',1.7],['NR 15',1.7],['NR 5',1.7]],[['NR 25',1.9],['NR 15',1.9],['NR 5',1.9]],[['NR 35',2.6],['NR 25',2.6],['NR 15',2.6],['NR 5',2.6]]]];
+  [[['CR BLK 60',5.7,'sáng nhất'],['CR BLK 50',5.7],['CR BLK 40',6.5,'cản nhiệt cao nhất']],[['CR BLK 35',2.6],['CR BLK 15',2.6,'tối, riêng tư']],[['CR BLK 35',4.1],['CR BLK 15',4.1]],[['CR BLK 60',5.7],['CR BLK 50',5.7],['CR BLK 40',6.5],['CR BLK 35',5.7],['CR BLK 15',5.7]],[['CR BLK 35',1.3],['CR BLK 15',1.3]]],
+  [[['IR 50',3.3]],[['IR 25',1.8],['IR 15',1.8]],[['IR 25',2.3],['IR 15',2.3]],[['IR 50',3.3],['IR 25',3.3],['IR 15',3.3]],[['IR 25',0.9],['IR 15',0.9]]],
+  [[['NR 35',2.6]],[['NR 25',1.7],['NR 15',1.7],['NR 5',1.7]],[['NR 25',1.9],['NR 15',1.9],['NR 5',1.9]],[['NR 35',2.6],['NR 25',2.6],['NR 15',2.6],['NR 5',2.6]],[['NR 25',0.85],['NR 15',0.85],['NR 5',0.85]]]];
  var PZV='',LINE=0,ST=RW.map(function(){return {on:false,c:0}}),rows=document.getElementById('vf-lc-rows'),lc=document.getElementById('vf-lc');
  function drawPz(){var sum=0,parts=[];
   rows.innerHTML=RW.map(function(r,i){var cs=CODES[LINE][r[2]],s=ST[i];if(s.c>=cs.length)s.c=0;var o=cs[s.c];if(s.on){sum+=o[1];parts.push(r[0]+' '+o[0])}
    return '<div class="vf-lr'+(s.on?' on':'')+'" data-i="'+i+'"><label class="vf-lr-n"><input type="checkbox" data-k="on"'+(s.on?' checked':'')+'><span><b>'+r[0]+'</b><small>'+r[1]+'</small></span></label><div class="vf-lr-c" role="group" aria-label="Mã phim '+r[0]+'">'+cs.map(function(c,j){return '<button type="button" data-c="'+j+'" aria-pressed="'+(j===s.c)+'" title="3M '+c[0]+'">'+c[0].replace(/^(CR BLK|IR|NR) /,'')+'</button>'}).join('')+'</div><div class="vf-lr-p">'+(s.on?vnd(o[1]):'<s>'+vnd(o[1])+'</s>')+'</div></div>'}).join('');
-  var base=0;RW.forEach(function(r,i){if(ST[i].on&&i!==4){var cs=CODES[LINE][r[2]];base+=cs[Math.min(ST[i].c,cs.length-1)][1]}});
+  var base=0;RW.forEach(function(r,i){if(ST[i].on&&i<4){var cs=CODES[LINE][r[2]];base+=cs[Math.min(ST[i].c,cs.length-1)][1]}});
   var n=parts.length,ln=['Crystalline CR BLK','Ceramic IR','Ceramic NR'][LINE];document.getElementById('vf-lc-colc').textContent='Mã '+['CR BLK','IR','NR'][LINE];
   document.getElementById('pz-total').textContent=vnd(sum);document.getElementById('pz-clr').hidden=!n;
   var gi=(typeof last!=='undefined'&&last)?last[0]:2,pi=[4,1,0][LINE],pk=PK[pi],sg=document.getElementById('pz-sug');
-  if(base>pk.p[gi]){sg.hidden=false;sg.innerHTML='Tạm tính đã cao hơn giá <b>dán trọn xe gói 3M '+pk.n+'</b> ('+vnd(pk.p[gi])+'). Dán theo gói sẽ rẻ hơn <b>'+vnd(Math.round((base-pk.p[gi])*10)/10)+'</b>'+(ST[4].on?' (chưa tính cửa sổ trời)':'')+'. <button type="button" data-sug="'+pi+'">Xem gói →</button>'}else sg.hidden=true;
+  if(base>pk.p[gi]){sg.hidden=false;sg.innerHTML='Tạm tính đã cao hơn giá <b>dán trọn xe gói 3M '+pk.n+'</b> ('+vnd(pk.p[gi])+'). Dán theo gói sẽ rẻ hơn <b>'+vnd(Math.round((base-pk.p[gi])*10)/10)+'</b>'+(ST[4].on||ST[5].on?' (chưa tính cửa sổ trời)':'')+'. <button type="button" data-sug="'+pi+'">Xem gói →</button>'}else sg.hidden=true;
   document.getElementById('pz-list').textContent=n?n+' vị trí · 3M '+ln:'Chưa chọn vị trí nào – tích ô hoặc bấm nhãn trên xe';
   PZV=n?parts.join(', ')+' · tạm tính '+vnd(sum):'';
   hiDia();
