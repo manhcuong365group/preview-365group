@@ -558,7 +558,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  var mw=document.getElementById('vf-models');
  var NC={};document.querySelectorAll('.vf-case').forEach(function(a){NC[a.dataset.m]=(NC[a.dataset.m]||0)+1});
  document.getElementById('vf-tab-case').textContent='Đã thi công ('+CARS.filter(function(c){return NC[c[1]]}).length+')';
- mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Đã thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b><small>Từ <b>'+vnd(Math.min.apply(null,PK.map(function(k){return k.p[c[2]]})))+'</b></small></span></button>'}).join('');
+ mw.innerHTML=CARS.map(function(c){var n=NC[c[1]]||0;return '<button type="button" class="vf-model" data-name="'+c[0]+'" data-m="'+c[1]+'" data-g="'+c[2]+'" data-t="'+c[3]+'" data-case="'+(n?1:0)+'" aria-pressed="'+(c[1]==='VF8')+'">'+(n?'<i>Đã thi công</i>':'')+'<img src="hinh/m/'+c[4]+'" alt="VinFast '+c[0]+'" loading="lazy" width="300" height="200"><span><b>'+c[0]+'</b></span></button>'}).join('');
  fcar.innerHTML=CARS.map(function(c){return '<option>VinFast '+c[0]+'</option>'}).join('')+'<option>VinFast khác</option>';
  var tab='all',qi=document.getElementById('vf-q'),tabs=document.querySelectorAll('.vf-tabs button');
  var open=false,mb=document.getElementById('vf-more'),mwr=mb.parentNode;
