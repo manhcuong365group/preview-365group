@@ -586,7 +586,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
   if(window.vfCx)vfCx.byModel(m);
  }
  models.forEach(function(b){b.addEventListener('click',function(){pick(b)})});
- pick(document.querySelector('.vf-model[aria-pressed=true]'));filt();
+ pick(document.querySelector('.vf-model[aria-pressed=true]'));document.getElementById('vf-s3car').textContent='VinFast';filt();
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;openQ('pkg',b.dataset.pk)});
  document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
  // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
