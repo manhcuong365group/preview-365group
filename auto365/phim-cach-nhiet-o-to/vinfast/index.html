@@ -343,7 +343,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  .vf-pos ul{grid-template-columns:1fr}
  .vf-float{left:12px}.vf-float a{flex:1;text-align:center}
 }
-@media(max-width:600px){.vf-vids{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none;margin-right:-16px;padding-right:16px}.vf-vid{flex:0 0 82%;scroll-snap-align:start}.vf-pp img{aspect-ratio:auto!important;height:130px}#vf-dia{overflow-x:clip}.vf-tips{display:grid!important;grid-template-columns:none!important;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none;margin-right:-16px;padding-right:16px}.vf-tips>*{scroll-snap-align:start}}
+@media(max-width:600px){.vf-vids{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none;margin-right:-16px;padding-right:16px}.vf-vid{flex:0 0 82%;scroll-snap-align:start}.vf-pp img{aspect-ratio:auto!important;height:130px}#vf-dia{overflow-x:clip}.vf-tips{display:grid!important;grid-template-columns:none!important;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:78%;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none;margin-right:-16px;padding-right:16px}.vf-tips>*{scroll-snap-align:start}.vf-cases{display:grid!important;grid-template-columns:none!important;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;scrollbar-width:none;margin-right:-16px;padding-right:16px}.vf-cases>*{scroll-snap-align:start}}
 </style>
 </head>
 <body>
@@ -407,7 +407,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
 
 
 <section class="vf-sec vf-sec--g" id="xe-thuc-te"><div class="vf-wrap">
- <div class="vf-cx-hd"><div><h2 class="vf-h2">Xe <em>VinFast</em> đã dán phim cách nhiệt tại Auto365</h2><p class="vf-sub" id="vf-case-sub">Hồ sơ dán phim thi công thực tế theo từng dòng VinFast, đã đăng trên auto365.vn.</p></div><a class="vf-btn vf-cx-all" href="https://auto365.vn/phim-cach-nhiet-o-to-3m" target="_blank" rel="noopener">Xem thêm trên trang phim cách nhiệt 3M →</a></div>
+ <div class="vf-cx-hd"><div><h2 class="vf-h2">Xe <em>VinFast</em> đã dán phim cách nhiệt tại Auto365</h2><p class="vf-sub" id="vf-case-sub" hidden></p></div><a class="vf-btn vf-cx-all" href="https://auto365.vn/phim-cach-nhiet-o-to-3m" target="_blank" rel="noopener">Xem thêm trên trang phim cách nhiệt 3M →</a></div>
  <div class="vf-cx-f"><span>Dòng xe:</span><div class="vf-cx-chips" data-f="m"><button type="button" data-v="" aria-pressed="true">Tất cả</button><button type="button" data-v="VF2" aria-pressed="false">VF2</button><button type="button" data-v="VF3" aria-pressed="false">VF3</button><button type="button" data-v="VF6" aria-pressed="false">VF6</button><button type="button" data-v="VF7" aria-pressed="false">VF7</button><button type="button" data-v="VF8" aria-pressed="false">VF8</button></div></div>
  <div class="vf-cx-f"><span>Dòng phim:</span><div class="vf-cx-chips" data-f="loai"><button type="button" data-v="" aria-pressed="true">Tất cả</button><button type="button" data-v="Ceramic IR" aria-pressed="false">Ceramic IR</button><button type="button" data-v="Ceramic NR" aria-pressed="false">Ceramic NR</button><button type="button" data-v="Crystalline CR BLK" aria-pressed="false">Crystalline CR BLK</button><button type="button" data-v="Crystalline CR BLK Pro" aria-pressed="false">Crystalline CR BLK Pro</button><button type="button" data-v="Crystalline Hybrid" aria-pressed="false">Crystalline Hybrid</button><button type="button" data-v="Crystalline Hybrid Pro" aria-pressed="false">Crystalline Hybrid Pro</button></div></div>
  <div class="vf-cases" id="vf-cases">
@@ -630,15 +630,15 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  // Lọc xe thực tế
  window.vfCx=(function(){var F={loai:'',m:''},open=false,wrap=document.getElementById('vf-cases'),all=[].slice.call(wrap.querySelectorAll('.vf-case')),more=document.getElementById('vf-cx-more'),emp=document.getElementById('vf-cx-empty');
   function draw(){var vis=all.filter(function(c){return (!F.loai||c.dataset.loai.split('|').indexOf(F.loai)>-1)&&(!F.m||c.dataset.m===F.m)});
-   all.forEach(function(c){c.hidden=true});vis.forEach(function(c,i){c.hidden=!open&&i>=8});
-   emp.hidden=vis.length>0;more.parentNode.hidden=vis.length<=8;more.textContent=open?'Thu gọn ▲':'Xem thêm '+(vis.length-8)+' hồ sơ ▼';
+   all.forEach(function(c){c.hidden=true});var mob=matchMedia("(max-width:600px)").matches;vis.forEach(function(c,i){c.hidden=!open&&!mob&&i>=8});
+   emp.hidden=vis.length>0;more.parentNode.hidden=mob||vis.length<=8;more.textContent=open?'Thu gọn ▲':'Xem thêm '+(vis.length-8)+' hồ sơ ▼';
    document.querySelectorAll('.vf-cx-chips').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===F[g.dataset.f])})})}
   document.querySelectorAll('.vf-cx-chips').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;F[g.dataset.f]=b.dataset.v;open=false;draw()})});
   more.addEventListener('click',function(){open=!open;draw()});
   document.getElementById('vf-cx-reset').addEventListener('click',function(){F.loai='';F.m='';draw()});
   draw();
   var sub0=document.getElementById('vf-case-sub'),subT=sub0.textContent;
-  return {byModel:function(m){var has=all.some(function(c){return c.dataset.m===m});F.m=has?m:'';F.loai='';open=false;sub0.textContent=has?subT:'Chưa có hồ sơ VinFast '+(CURN||m)+' trên trang này. Dưới đây là hồ sơ các dòng VinFast khác để tham khảo.';draw()}};
+  return {byModel:function(m){var has=all.some(function(c){return c.dataset.m===m});F.m=has?m:'';F.loai='';open=false;sub0.hidden=has;sub0.textContent=has?subT:'Chưa có hồ sơ VinFast '+(CURN||m)+' trên trang này. Dưới đây là hồ sơ các dòng VinFast khác để tham khảo.';draw()}};
  })();
  // Popup báo giá
  var qm=document.getElementById('vf-modal');
