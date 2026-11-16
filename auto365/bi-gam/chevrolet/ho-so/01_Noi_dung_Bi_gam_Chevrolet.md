@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Chevrolet: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-16 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), ItemList (5), FAQPage |
-| SHA-256 index.html | `9ff5ee3de327f65f112603f391a64d1aa2cf02a5ecc9b0d0ad819fee3d2cd975` |
-| SHA-256 content-src.html | `7094a2cf5fd6d6330641489aa4d1982585ee6f9ae8b69cbcf0e1bc1e2793bc95` |
+| SHA-256 index.html | `6d3376209b5c04fa8958f1533b878b86f0475ebc08086cdc870e81cc19a5b4b6` |
+| SHA-256 content-src.html | `db472c369cf46abaf60d90079f173a6678369d7910d703d36279cd7f3a758445` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Chevrolet giúp tăng vùng sáng gần và hai bên đường kh
 
 ## Chọn dòng xe Chevrolet
 
-### Dòng xe (7)
+### Dòng xe (11)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -31,6 +31,10 @@ Lắp bi gầm Chevrolet giúp tăng vùng sáng gần và hai bên đường kh
 | Chevrolet Trax | SUV | Liên hệ tư vấn | — |
 | Chevrolet Cruze | Sedan | Liên hệ tư vấn | — |
 | Chevrolet Spark | Sedan | Liên hệ tư vấn | — |
+| Chevrolet Aveo | Sedan | Liên hệ tư vấn | — |
+| Chevrolet Lacetti | Sedan | Liên hệ tư vấn | — |
+| Chevrolet Vivant | MPV | Liên hệ tư vấn | — |
+| Chevrolet Matiz | Sedan | Liên hệ tư vấn | — |
 
 ## Xe Chevrolet đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
 
@@ -54,7 +58,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### Sedan, hatchback đi phố
 
-_Dòng xe:_ Cruze, Spark
+_Dòng xe:_ Cruze, Aveo, Lacetti, Spark, Matiz
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Xe đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.
@@ -66,7 +70,7 @@ CTA: — (chưa có bài tư vấn dòng xe)
 
 #### SUV, MPV gia đình
 
-_Dòng xe:_ Captiva, Trailblazer, Orlando, Trax
+_Dòng xe:_ Captiva, Trailblazer, Orlando, Trax, Vivant
 
 - Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường, hữu ích khi đi đường dài ban đêm.
 - Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
