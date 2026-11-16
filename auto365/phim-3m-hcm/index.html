@@ -958,6 +958,6 @@ b,strong{font-weight:500}h1,h2,h3{font-weight:600}
 })();
  document.addEventListener('click',function(e){var a=e.target.closest('a[href^="tel:"],a[href*="zalo.me"]');if(a&&window.gtag)gtag('event',a.href.indexOf('tel:')===0?'click_call':'click_zalo',{link_url:a.href})});
 </script>
-<script>(function(){var el=document.querySelector(".h3m-shots"),hero=document.querySelector(".h3m-hero"),gp=document.getElementById("goi-phim");if(!el||!hero||!gp)return;function fit(){el.style.marginBottom="0px";gp.style.removeProperty("padding-top");var h=el.offsetHeight,eb=el.getBoundingClientRect().bottom,hb=hero.getBoundingClientRect().bottom,gap=hb-eb,ov=Math.round(h/2);el.style.marginBottom=(-(ov+gap))+"px";gp.style.setProperty("padding-top",(ov+(innerWidth>640?36:24))+"px","important")}fit();addEventListener("resize",fit);addEventListener("load",fit)})();</script>
+<script>(function(){var el=document.querySelector(".h3m-shots"),hero=document.querySelector(".h3m-hero"),gp=document.getElementById("goi-phim");if(!el||!hero||!gp)return;function fit(){el.style.marginBottom="0px";gp.style.removeProperty("padding-top");var h=el.offsetHeight,eb=el.getBoundingClientRect().bottom,hb=hero.getBoundingClientRect().bottom,gap=hb-eb,ov=Math.round(h*0.7);el.style.marginBottom=(-(ov+gap))+"px";gp.style.setProperty("padding-top",(ov+(innerWidth>640?36:24))+"px","important")}fit();addEventListener("resize",fit);addEventListener("load",fit)})();</script>
 </body>
 </html>
