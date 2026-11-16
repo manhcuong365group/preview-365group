@@ -631,7 +631,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  window.vfCx=(function(){var F={loai:'',m:''},open=false,wrap=document.getElementById('vf-cases'),all=[].slice.call(wrap.querySelectorAll('.vf-case')),more=document.getElementById('vf-cx-more'),emp=document.getElementById('vf-cx-empty');
   function draw(){var vis=all.filter(function(c){return (!F.loai||c.dataset.loai.split('|').indexOf(F.loai)>-1)&&(!F.m||c.dataset.m===F.m)});
    all.forEach(function(c){c.hidden=true});var mob=matchMedia("(max-width:600px)").matches;vis.forEach(function(c,i){c.hidden=!open&&!mob&&i>=8});
-   emp.hidden=vis.length>0;more.parentNode.hidden=mob||vis.length<=8;more.textContent=open?'Thu gọn ▲':'Xem thêm '+(vis.length-8)+' hồ sơ ▼';
+   emp.hidden=vis.length>0;more.parentNode.hidden=mob||vis.length<=8;more.textContent=open?'Thu gọn ▲':'Xem thêm '+(vis.length-8)+' hồ sơ VinFast'+(F.m?' '+F.m.replace('VF','VF '):'')+' ▼';
    document.querySelectorAll('.vf-cx-chips').forEach(function(g){g.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.v===F[g.dataset.f])})})}
   document.querySelectorAll('.vf-cx-chips').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;F[g.dataset.f]=b.dataset.v;open=false;draw()})});
   more.addEventListener('click',function(){open=!open;draw()});
