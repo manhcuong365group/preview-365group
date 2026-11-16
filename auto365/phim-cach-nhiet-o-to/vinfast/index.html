@@ -46,7 +46,7 @@ img{max-width:100%;display:block}a{color:inherit}
 .vf-nav{display:flex;gap:18px;margin-left:auto;font-size:14px}.vf-nav a{text-decoration:none;opacity:.85}.vf-nav a:hover{opacity:1}
 .vf-top .vf-btn{padding:8px 14px;font-size:14px}
 /* hero */
-.vf-hero{background:linear-gradient(100deg,#111318 0%,#111318 42%,rgba(17,19,24,.55) 70%,rgba(17,19,24,.1)),url(hinh/hero-vf8.webp) right 30%/auto 160% no-repeat;background-color:#111318;color:#fff}
+.vf-hero{background:#111318;color:#fff}.vf-hero__in{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}.vf-hero__img img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
 .vf-hero__in{padding:36px 16px 32px;max-width:1200px;margin:0 auto}
 .vf-tag{display:inline-block;background:var(--red);padding:4px 12px;border-radius:4px;font-weight:700;font-size:14px}
 .vf-hero h1{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:14px 0 12px;font-style:italic;font-weight:900}
@@ -333,8 +333,8 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  .vf-why{grid-template-columns:1fr 1fr}.vf-why h2{grid-column:1/-1}
 }
 @media(max-width:600px){
- .vf-hero{background:linear-gradient(180deg,rgba(17,19,24,.55),#111318 60%),url(hinh/hero-vf8.webp) center 30%/cover no-repeat}
- .vf-hero__in{padding-top:140px}
+ .vf-hero{background:#111318}.vf-hero__in{grid-template-columns:1fr;gap:16px}
+ .vf-hero__in{padding-top:20px}
  .vf-ico{gap:14px}.vf-ico li{width:calc(50% - 7px)}
  .vf-hero__cta .vf-btn{flex:1}
  .vf-cases{grid-template-columns:1fr}.vf-pk{grid-template-columns:1fr 1fr;gap:8px}
@@ -353,7 +353,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  <a class="vf-btn vf-btn--red" href="tel:0365365365">☎ 0365 365 365</a>
 </div></header>
 
-<section class="vf-hero"><div class="vf-hero__in">
+<section class="vf-hero"><div class="vf-hero__in"><div class="vf-hero__tx">
  <nav class="vf-bc" aria-label="Breadcrumb"><a href="https://auto365.vn">Trang chủ</a> › <a href="https://auto365.vn/phim-cach-nhiet-o-to">Phim cách nhiệt ô tô</a> › <span>VinFast</span></nav>
  <span class="vf-tag">Phim cách nhiệt 3M chính hãng</span>
  <h1>Dán phim cách nhiệt ô tô<br>cho xe <em>VinFast</em></h1>
@@ -365,7 +365,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
   <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><span>Bảo hành điện tử<br>10 năm</span></li>
  </ul>
  <div class="vf-hero__cta"><a class="vf-btn vf-btn--red" href="#bao-gia">Nhận báo giá theo xe →</a><a class="vf-btn vf-btn--ghost" href="#hinh-anh">▶ Xem video thi công</a></div>
-</div></section>
+</div><figure class="vf-hero__img" style="margin:0"><img src="hinh/hero-vf8.webp" alt="VinFast VF 8 dán phim cách nhiệt 3M tại 3M Pro Shop Auto365" width="1010" height="568" fetchpriority="high"></figure></div></section>
 
 <section class="vf-sec vf-step1" id="chon-xe"><div class="vf-wrap">
  <h2 class="vf-h2">Chọn dòng xe <em>VinFast</em> của bạn</h2>
