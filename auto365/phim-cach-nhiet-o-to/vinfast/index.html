@@ -586,8 +586,8 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  function pick(b){
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;CURF=b.querySelector('img').getAttribute('src').split('/').pop();
-  var s2=document.getElementById('vf-s2car');if(s2)s2.textContent='VinFast '+nm;
-  render(g,nm);CURG=g;CURN=nm;var s3=document.getElementById('vf-s3car');if(s3)s3.textContent='VinFast '+nm;if(typeof DIMG!=='undefined'&&DIMG)drawDia(g);
+  var s2=document.getElementById('vf-s2car');
+  render(g,nm);CURG=g;CURN=nm;var s3=document.getElementById('vf-s3car');if(typeof DIMG!=='undefined'&&DIMG)drawDia(g);
   for(var i=0;i<fcar.options.length;i++)if(fcar.options[i].text==='VinFast '+nm)fcar.selectedIndex=i;
   if(window.vfCx)vfCx.byModel(m);
  }
@@ -603,7 +603,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  var DG=2;
  function drawDia(i){DG=i;var nr=i<2,own=false,d=own||DIA[i],src=own?CURF:DIMG[i];dbt.forEach(function(b){var k=+b.dataset.d;b.setAttribute('aria-pressed',k===i);b.textContent=DTXT[k]});
   dia.innerHTML='<img src="hinh/m/'+src+'" alt="" width="640" height="400" style="aspect-ratio:16/10;object-fit:fill"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="'+LAB.map(function(l,k){return nr&&k===3?'':'M'+l[0]+' '+l[1]+' L'+d[k][0]+' '+d[k][1]}).join(' ')+'"/></svg>'+d.map(function(p,k){return '<i class="vf-dot" style="left:'+p[0]+'%;top:'+p[1]+'%'+(nr&&k===3?';display:none':'')+'"></i>'}).join('')+LAB.map(function(l,k){return '<span class="vf-pin" style="left:'+l[0]+'%;top:'+l[1]+'%'+(nr&&k===3?';display:none':'')+'"><b>'+l[2]+'</b></span>'}).join('');if(typeof ST!=='undefined'&&ST)drawPz()}
- dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d);var s=document.getElementById('vf-s3car');if(s)s.textContent=window.VFUP&&+b.dataset.d===CURG?'VinFast '+CURN:'VinFast';})});
+ dbt.forEach(function(b){b.addEventListener('click',function(){drawDia(+b.dataset.d);var s=document.getElementById('vf-s3car');})});
  // Tính giá kính lẻ — bảng giá dán lẻ 3M 06/2026 (triệu đ). Mỗi dòng phim có mã riêng theo vị trí.
  var RW=[['Kính lái','Tầm nhìn chính, chừa vùng camera',0,0],['Kính sườn trước','1 cặp, phía người lái',1,1],['Kính sườn sau','1 cặp, hàng ghế sau',1,2],['Kính lưng','Kính sau xe',2,4],['Cửa sổ trời panorama','Dán được mọi mã, tính giá kính lái',3,3]];
  var CODES=[
