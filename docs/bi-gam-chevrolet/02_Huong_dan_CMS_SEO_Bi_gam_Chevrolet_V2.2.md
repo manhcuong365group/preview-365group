@@ -15,7 +15,7 @@
 ## Nguồn dữ liệu
 - Case: bài đã đăng trên auto365.vn (sitemap 16/11/2026), mỗi thẻ link bài gốc. Bỏ bài Chevrolet Cruze 2016 vì video ghi bi gầm "Taiwan", không thuộc hãng Auto365 phân phối.
 - Mẫu đèn · lens trên thẻ: theo tiêu đề bài; lens 3.0 inch của Colorado (X-Light F10) và 2 ca GTR/GTR V2 năm 2019 theo xác nhận anh Đạo 16/11/2026.
-- Ảnh thẻ dòng xe: Wikimedia Commons đã tách nền, ghi công dưới lưới xe; thay bằng ảnh designer khi có.
+- Ảnh thẻ dòng xe: ảnh designer Auto365 (17/11/2026), file gốc PNG ở _src-media/bi-gam-chevrolet;
 - Ảnh đầu trang: ảnh case Captiva LTZ 2015 trên CDN auto365.vn.
 - Khối "Vì sao chọn", chi nhánh, form: dùng chung với các hub hãng xe (build tự lấy).
 

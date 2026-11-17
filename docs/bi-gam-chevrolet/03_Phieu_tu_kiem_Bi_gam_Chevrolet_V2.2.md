@@ -15,7 +15,7 @@
 
 ## Rủi ro bị trừ
 - 7/11 dòng xe chưa có hồ sơ lắp thực tế (ở nhóm "Tư vấn cấu hình").
-- Ảnh thẻ dòng xe là ảnh Wikimedia (một số là bản thị trường khác), chờ ảnh designer.
+- Ảnh thẻ dòng xe đã thay bằng ảnh designer Auto365 (17/11/2026).
 
 ## Việc còn lại
 - Chủ quản test điện thoại thật.
@@ -29,6 +29,6 @@
 | 5.1 Chỉ dẫn tới bài tư vấn chưa có | Khối gợi ý + FAQ chi phí dẫn tới trang bi gầm `#san-pham`; FAQ schema sinh lại từ DOM | Đã sửa, chờ tái kiểm |
 | 5.2 Ba bài nguồn (Orlando F10 Pro/Turbo, tỷ lệ 150%/180%, chú thích "Colorado") | Bài trên auto365.vn, ngoài phạm vi preview; hub không lặp tỷ lệ | Chuyển Content + Kỹ thuật |
 | 5.3 Mã ca, ngày thi công, cơ sở | Chưa có mã ca nội bộ; ngày Colorado là ngày đăng | CX — Kỹ thuật + Vận hành |
-| 5.4 Nguồn ảnh model | Alt đổi thành "ảnh nhận diện dòng xe"; ghi rõ không phải ảnh thi công, link Wikimedia Commons/CC | Đã sửa; bảng nguồn từng tệp CX — Media |
+| 5.4 Nguồn ảnh model | Alt đổi thành "ảnh nhận diện dòng xe"; ghi rõ không phải ảnh thi công, link Wikimedia Commons/CC ; 17/11 thay 11 ảnh bằng ảnh designer Auto365, bỏ ghi công Wikimedia | Đã sửa |
 | 7 Title/mô tả, gợi ý cơ khí, FAQ Orlando | Title/meta theo đề xuất; FAQ thêm "đường kính lens chưa đủ xác định lắp vừa", Orlando = phương án đã làm | Đã sửa |
 | 6 Production (GET, CRM, generate_lead, mobile thật) | — | CX sau khi IT đăng |
