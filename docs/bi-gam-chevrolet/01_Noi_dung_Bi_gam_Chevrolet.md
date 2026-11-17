@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/chevrolet/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/chevrolet |
-| Title (93 ký tự) | Lắp bi gầm Chevrolet: chọn đèn theo dòng xe Captiva, Orlando, Trailblazer, Colorado \| Auto365 |
-| Meta description (124 ký tự) | Tra cứu bi gầm Chevrolet theo dòng và đời xe, xem 5 hồ sơ lắp đèn X-Light, GTR và tìm điểm Auto365 tư vấn cấu hình, chi phí. |
+| Title (59 ký tự) | Bi gầm Chevrolet: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
+| Meta description (135 ký tự) | Xem hồ sơ bi gầm Chevrolet Captiva, Orlando, Colorado và Trailblazer; gửi đời xe để Auto365 kiểm tra cấu hình, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Chevrolet: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-16 |
+| dateModified | 2026-11-17 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), ItemList (5), FAQPage |
-| SHA-256 index.html | `b849298d02e950c7dbbac7cb63fc60849034c712879fe30a59cb4ae8d57b25cc` |
-| SHA-256 content-src.html | `5ed9a45261ac8b7969d150c684da0a56094383007dd30ade640b9fbb26ec760c` |
+| SHA-256 index.html | `a8d184dde4d290f0fea78b7915c9e1bf4f1d369a118ce60874f8946a400e7c50` |
+| SHA-256 content-src.html | `ff8320fd78a2ba138013c5f80989c33c96a289a78c43c932d1d56ee2c48a7a88` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -92,7 +92,7 @@ _Dòng xe:_ Colorado
 
 CTA: — (chưa có bài tư vấn dòng xe)
 
-Giá và danh sách mẫu lắp được xem ở bài tư vấn từng dòng xe; tổng chi phí báo sau khi kỹ thuật viên kiểm tra xe.
+Xem mẫu đèn và giá thiết bị tại trang bi gầm Auto365. Phụ kiện, số lượng đèn, công lắp và VAT được xác nhận trong báo giá sau khi kiểm tra xe; các hồ sơ bên trên giúp tham khảo cấu hình đã từng thi công.
 
 ## Vì sao chọn Auto365 để nâng cấp bi gầm Chevrolet?
 
