@@ -288,6 +288,8 @@ html{scroll-padding-top:80px}@media(max-width:1100px){html{scroll-padding-top:12
 .td-svc-list b{display:block;margin-bottom:4px}.td-svc-list small{color:var(--mut);font-size:13px;line-height:1.5}
 .td-tp-gal{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}.td-tp-gal figure{margin:0}.td-tp-gal img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:12px}.td-tp-gal figcaption{font-size:13px;color:var(--mut);margin-top:6px;text-align:center}
 .td-xe-lk{display:block}
+.td-steps{list-style:none;counter-reset:st;margin:16px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.td-steps li{counter-increment:st;border:1px solid var(--line);border-radius:10px;padding:14px;position:relative}.td-steps li:before{content:counter(st);display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--red);color:#fff;font-weight:700;font-size:14px;margin-bottom:8px}.td-steps b{display:block;margin-bottom:4px}.td-steps small{color:var(--mut);font-size:13px;line-height:1.5}
+@media(max-width:900px){.td-steps{grid-template-columns:1fr 1fr}}@media(max-width:600px){.td-steps{grid-template-columns:1fr}}
 .td-why-h b{white-space:normal!important;overflow:visible!important}
 @media(max-width:980px){.td-svc-list{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.td-svc-list{grid-template-columns:1fr}.td-tp-gal{grid-template-columns:1fr}}
@@ -297,7 +299,7 @@ html{scroll-padding-top:80px}@media(max-width:1100px){html{scroll-padding-top:12
 <div class="td-demo">Bản demo – thông tin chi nhánh lấy từ trang auto365.vn/quan-tan-phu, cần Kinh doanh/Vận hành xác nhận trước khi đăng.</div>
 <header class="td-hd"><div class="td-wrap">
   <a class="td-logo" href="https://auto365.vn">AUTO<b>365</b><small>HỆ THỐNG NÂNG CẤP Ô TÔ TOÀN QUỐC</small></a>
-  <nav class="td-nav" aria-label="Mục trên trang"><a href="#vi-sao">Vì sao chọn</a><a href="#chung-nhan">Chứng nhận</a><a href="#dich-vu">Dịch vụ</a><a href="#cong-trinh">Xe thực tế</a><a href="#co-so">Cơ sở</a><a href="#khu-vuc">Đường đến</a><a href="#hoi-dap">Hỏi đáp</a></nav>
+  <nav class="td-nav" aria-label="Mục trên trang"><a href="#vi-sao">Vì sao chọn</a><a href="#chung-nhan">Chứng nhận</a><a href="#dich-vu">Dịch vụ</a><a href="#quy-trinh">Quy trình</a><a href="#cong-trinh">Xe thực tế</a><a href="#co-so">Cơ sở</a><a href="#khu-vuc">Đường đến</a><a href="#hoi-dap">Hỏi đáp</a></nav>
   <a class="td-btn td-btn-out" href="tel:0564365365">☎ 0564 365 365</a>
   <button type="button" class="td-btn td-btn-red td-tv-open">Nhận tư vấn</button>
 </div></header>
@@ -345,18 +347,48 @@ html{scroll-padding-top:80px}@media(max-width:1100px){html{scroll-padding-top:12
 </section>
 
 <section class="td-sec" id="dich-vu">
-  <h2 class="td-h2">Dịch vụ tại Auto365 Tân Phú</h2>
-  <div class="td-svc-list">
-    <div><b>Nâng cấp, độ đèn ô tô</b><small>Bi LED, bi laser, bi gầm GTR, X-Light, Hennvei, Titan chọn theo dòng xe.</small></div>
-    <div><b>Dán phim cách nhiệt 3M</b><small>Dán tại 3M Pro Shop Tân Phú, các dòng phim cách nhiệt 3M cao cấp tư vấn theo từng vị trí kính.</small></div>
-    <div><b>Camera hành trình, màn hình</b><small>Camera hành trình Vietmap; màn hình GTR, Gotech và các dòng khác theo xe.</small></div>
-    <div><b>Wrap đổi màu, decal</b><small>Dán đổi màu, decal, tem xe theo yêu cầu.</small></div>
-    <div><b>Phủ gầm, phủ ceramic, cách âm</b><small>Bảo vệ gầm, bề mặt sơn và giảm tiếng ồn trong khoang xe.</small></div>
-    <div><b>Độ âm thanh</b><small>Nâng cấp hệ thống âm thanh cao cấp cho xe.</small></div>
-    <div><b>Bán tải, offroad</b><small>Độ xe bán tải và phụ kiện offroad.</small></div>
-    <div><b>Lên đời, bodykit</b><small>Nâng cấp xe, lên đời, độ bodykit theo yêu cầu.</small></div>
-    <div><b>Chăm sóc, vệ sinh xe</b><small>Chăm sóc, vệ sinh và bảo dưỡng xe chuyên nghiệp.</small></div>
+  <h2 class="td-h2c">Giải pháp nâng cấp ô tô tại Auto365 Tân Phú</h2>
+  <p class="td-dv-lead">Danh mục dịch vụ tại 3M Pro Shop Auto365 Tân Phú – P. Sơn Kỳ, phục vụ chủ xe Tân Phú, Tân Bình, Bình Tân và khu vực lân cận.</p>
+  <div class="td-dvs">
+    <article class="td-dv">
+      <div class="td-dv-im"><img src="https://auto365.vn/uploads/images/about/chi-nhanh/auto365-tan-phu/auto-365-tan-phu-16.jpg" alt="Ford Everest 2024 lắp bi gầm X-Light X3 Pro tại Auto365 Tân Phú" loading="lazy"></div>
+      <div class="td-dv-tx"><h3>Nâng cấp, độ đèn ô tô tại Tân Phú</h3><em>Bi LED – Bi Laser – Bi gầm – LED nội thất · chọn theo dòng xe</em><p>Nâng cấp ánh sáng với các thương hiệu GTR, X-Light, Hennvei, Titan. Cấu hình được chọn theo kết cấu cụm đèn và nhu cầu đi đường của từng xe.</p>
+        <p class="td-dv-cm"><b>Tại Auto365 Tân Phú:</b> khu vực chính của chi nhánh dành cho các dịch vụ nâng cấp, trong đó có nâng cấp đèn; xe thực tế đã làm gồm Ford Everest, Ford Territory, Lexus RX350, VinFast Lux SA.</p>
+        <details open><summary>Danh mục dịch vụ (4)</summary><ul><li>Bi LED, bi laser</li><li>Bi gầm</li><li>LED viền nội thất</li><li>Nâng cấp ánh sáng trọn gói</li></ul></details>
+        <a class="td-dv-cta" href="https://auto365.vn/nang-cap-anh-sang">Xem nâng cấp ánh sáng →</a></div>
+    </article>
+    <article class="td-dv">
+      <div class="td-dv-im"><img src="https://auto365.vn/uploads/images/about/chi-nhanh/auto365-tan-phu/auto-365-tan-phu%20-7.jpg" alt="Toyota Camry dán gói Full 3M Crystalline Pro tại Auto365 Tân Phú" loading="lazy"></div>
+      <div class="td-dv-tx"><h3>Dán phim cách nhiệt 3M tại 3M Pro Shop Tân Phú</h3><em>Phim cách nhiệt 3M chính hãng · tư vấn theo từng vị trí kính</em><p>Các dòng phim cách nhiệt 3M cao cấp cho sedan, SUV, bán tải và xe điện. Kỹ thuật viên tư vấn dòng phim phù hợp cho kính lái, kính sườn, kính hậu.</p>
+        <p class="td-dv-cm"><b>Tại Auto365 Tân Phú:</b> dán tại 3M Pro Shop Auto365 Tân Phú; xe thực tế đã làm gồm Toyota Camry (Full 3M Crystalline Pro), Mazda 6 (3M Crystalline).</p>
+        <details open><summary>Danh mục dịch vụ (3)</summary><ul><li>Dán phim cách nhiệt 3M trọn xe</li><li>Dán phim kính lái, kính sườn, kính hậu</li><li>Tư vấn và thay phim cách nhiệt cũ</li></ul></details>
+        <a class="td-dv-cta" href="https://auto365.vn/phim-cach-nhiet-o-to-3m">Xem dòng phim 3M →</a></div>
+    </article>
+    <article class="td-dv">
+      <div class="td-dv-im"><img src="hinh/fb-fortuner-winca.jpg" alt="Toyota Fortuner lắp màn hình Winca S-Sound OLED 2K DTS tại Auto365 Tân Phú" loading="lazy"></div>
+      <div class="td-dv-tx"><h3>Màn hình, camera hành trình cho ô tô</h3><em>Màn hình Android – camera 360 – camera hành trình</em><p>Lắp màn hình GTR, Gotech và các dòng màn hình khác theo xe; camera hành trình Vietmap và camera 360.</p>
+        <p class="td-dv-cm"><b>Tại Auto365 Tân Phú:</b> xe thực tế đã làm gồm Toyota Fortuner (Winca S-Sound OLED 2K DTS), Honda CR-V 2024 (Elliview S5 2K + camera 360), Toyota Innova (Vietmap SpeedMap M1).</p>
+        <details open><summary>Danh mục dịch vụ (3)</summary><ul><li>Lắp màn hình Android theo xe</li><li>Camera 360</li><li>Camera hành trình Vietmap</li></ul></details>
+        <a class="td-dv-cta" href="https://auto365.vn/camera-hanh-trinh-o-to">Xem camera hành trình →</a></div>
+    </article>
+    <article class="td-dv">
+      <div class="td-dv-im"><img src="hinh/fb-vf3-cop-truoc.jpg" alt="VinFast VF3 lắp gắp nắp capo và hộp cốp trước tại Auto365 Tân Phú" loading="lazy"></div>
+      <div class="td-dv-tx"><h3>Wrap, phủ gầm, cách âm và phụ kiện</h3><em>Bảo vệ – cá nhân hoá – tiện ích cho xe</em><p>Wrap đổi màu, decal; phủ gầm, phủ ceramic, cách âm; độ âm thanh; phụ kiện bán tải – offroad, bodykit, lên đời và chăm sóc, vệ sinh xe.</p>
+        <p class="td-dv-cm"><b>Tại Auto365 Tân Phú:</b> có khu vực riêng cho từng dịch vụ; xe thực tế gồm VinFast VF3 (gắp nắp capo tự nâng, hộp cốp trước Huvii).</p>
+        <details open><summary>Danh mục dịch vụ (5)</summary><ul><li>Wrap đổi màu, decal</li><li>Phủ gầm, phủ ceramic, cách âm</li><li>Độ âm thanh</li><li>Bán tải, offroad, bodykit</li><li>Chăm sóc, vệ sinh xe</li></ul></details>
+        <a class="td-dv-cta" href="#dat-lich">Tư vấn theo xe →</a></div>
+    </article>
   </div>
+</section>
+<section class="td-sec" id="quy-trinh">
+  <h2 class="td-h2">Quy trình tại Auto365 Tân Phú</h2>
+  <ol class="td-steps">
+    <li><b>Hẹn lịch</b><small>Gọi 0564 365 365 báo dòng xe và hạng mục cần làm.</small></li>
+    <li><b>Tiếp nhận &amp; kiểm tra</b><small>Kỹ thuật viên kiểm tra hiện trạng xe, hỏi nhu cầu sử dụng.</small></li>
+    <li><b>Tư vấn &amp; báo giá</b><small>Đề xuất phương án, báo giá rõ từng hạng mục; khách đồng ý mới làm.</small></li>
+    <li><b>Thi công</b><small>Làm tại khu vực riêng của từng dịch vụ; khách chờ ở phòng khách.</small></li>
+    <li><b>Bàn giao &amp; bảo hành</b><small>Hướng dẫn sử dụng, áp dụng bảo hành trên toàn quốc của hệ thống.</small></li>
+  </ol>
 </section>
 
 <aside class="td-cta-band"><div><b>Chưa biết chọn đèn, phim hay camera nào cho xe mình?</b><span>Gọi 0564 365 365 để hẹn lịch – kỹ thuật viên Auto365 Tân Phú tư vấn theo đúng dòng xe.</span></div><div class="td-cta-act"><a class="td-btn td-btn-red" href="tel:0564365365">☎ 0564 365 365</a><a class="td-btn td-btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Auto365+T%C3%A2n+Ph%C3%BA+10.807546%2C106.621759" target="_blank" rel="noopener">Chỉ đường</a><button type="button" class="td-btn td-btn-ghost td-tv-open">Gửi yêu cầu tư vấn</button></div></aside>
@@ -459,5 +491,6 @@ html{scroll-padding-top:80px}@media(max-width:1100px){html{scroll-padding-top:12
 <script>(function(){const d=document.getElementById("pop-tu-van");document.querySelectorAll(".td-tv-open").forEach(b=>b.onclick=()=>d.showModal());d.querySelector(".td-pop-x").onclick=()=>d.close();d.onclick=e=>{if(e.target===d)d.close()}})();</script>
 <script>(function(){document.querySelectorAll(".td-lf").forEach(f=>{const m=f.querySelector(".td-lead-msg"),b=f.querySelector("button[type=submit]");f.addEventListener("submit",async e=>{e.preventDefault();const raw=f.phone.value.trim(),p=raw.replace(/\D/g,"").replace(/^84/,"0");m.classList.remove("err");if(/[^\d\s.+()-]/.test(raw)||!/^0\d{9,10}$/.test(p)){m.textContent="Vui lòng nhập số điện thoại hợp lệ.";m.classList.add("err");f.phone.focus();return}if(f.consent&&!f.consent.checked){m.textContent="Vui lòng tích đồng ý để Auto365 liên hệ tư vấn.";m.classList.add("err");f.consent.focus();return}if(f["form-honey"].value)return;b.disabled=true;m.textContent="Đang gửi…";const d={phone:p,fullname:f.fullname.value.trim(),priority:f.priority.value,province:f.province.value.trim(),car_model:f.car_model?f.car_model.value.trim():"",source_page:f.dataset.sourcePage,consent:true,branch:"Auto365 Trụ sở chính",page_url:location.href};try{const r=await fetch("/api/leads",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d),signal:window.AbortSignal&&AbortSignal.timeout?AbortSignal.timeout(15000):undefined});const j=await r.json().catch(()=>({}));if(r.ok&&j&&j.success===true){m.textContent="Đã nhận yêu cầu tư vấn. Nhân viên sẽ liên hệ để xác nhận phương án và thời gian phù hợp.";f.reset()}else throw 0}catch(_){const hl=/Đèn|Camera|Phụ kiện|xe điện/.test(f.priority.value)?"0365 365 911":"0365 365 365";m.textContent="Chưa gửi được. Vui lòng gọi "+hl+" hoặc nhắn Zalo.";m.classList.add("err")}b.disabled=false})})})();</script>
 <script>(()=>{const L=[...document.querySelectorAll(".td-nav a[href^='#']")],S=L.map(a=>document.querySelector(a.getAttribute("href"))).filter(Boolean);let cur;const f=()=>{const y=innerHeight*.3;let k=-1;S.forEach((e,i)=>{if(e.getBoundingClientRect().top<y)k=i});const a=L[k];if(a===cur)return;L.forEach(x=>x.classList.remove("on"));cur=a;if(a){a.classList.add("on");const n=a.parentNode;n.scrollTo({left:a.offsetLeft-n.clientWidth/2+a.offsetWidth/2,behavior:"smooth"})}};L.forEach(a=>a.addEventListener("click",e=>{const t=document.querySelector(a.getAttribute("href"));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:"smooth"});history.replaceState(null,"",a.getAttribute("href"))}));addEventListener("scroll",f,{passive:true});f()})();</script>
+<script>if(matchMedia("(max-width:600px)").matches)document.querySelectorAll(".td-dv details[open]").forEach(function(d){d.removeAttribute("open")})</script>
 </body>
 </html>
