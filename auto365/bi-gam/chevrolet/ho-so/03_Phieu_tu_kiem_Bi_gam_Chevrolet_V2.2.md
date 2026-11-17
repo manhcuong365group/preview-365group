@@ -5,7 +5,7 @@
 | Ngày tự kiểm | 17/11/2026 (lần 2, sau vá theo reviewer V2.3 R1 ngày 17/11) |
 | Chuẩn | Auto365 V2.3 (14/11/2026); ngưỡng giữ như V2.2: Tổng ≥95 · SEO ≥28,50/30 · GEO ≥23,75/25 |
 | Lần trước | 16/11/2026, tự chấm thang V2.2: 95,3 — không đổi nhãn thành điểm V2.3 |
-| Lưu ý | Đây là điểm tự chấm của team, chờ reviewer tái kiểm V2.3 xác nhận |
+| Lưu ý | Anh Đạo duyệt bản vá 17/11. Đây là điểm tự chấm của team, chờ reviewer tái kiểm V2.3 xác nhận |
 
 | Nhóm | 16/11 (V2.2) | 17/11 (V2.3) | Căn cứ thay đổi |
 |---|---:|---:|---|

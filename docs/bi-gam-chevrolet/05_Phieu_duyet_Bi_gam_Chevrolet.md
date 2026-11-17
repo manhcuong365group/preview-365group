@@ -4,8 +4,8 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/chevrolet/ |
 | Ngày dựng | 16/11/2026 (khung hub Suzuki) |
-| Kiểm duyệt kỹ thuật | **Đã duyệt** — anh Nguyễn Quang Đạo, 16/11/2026 (lastReviewed 2026-11-16) |
-| Bản vá 17/11 | Theo reviewer V2.3 R1 — chỉ sửa câu chữ/điều hướng/ảnh, không đổi dữ kiện kỹ thuật đã duyệt; **chờ anh Đạo xác nhận** (lastReviewed giữ 2026-11-16 đến khi xác nhận) |
+| Kiểm duyệt kỹ thuật | **Đã duyệt** — anh Nguyễn Quang Đạo, 16/11/2026; bản vá 17/11/2026 (lastReviewed 2026-11-17) |
+| Bản vá 17/11 | Theo reviewer V2.3 R1 — chỉ sửa câu chữ/điều hướng/ảnh, không đổi dữ kiện kỹ thuật đã duyệt; **anh Đạo đã duyệt 17/11/2026** |
 | Cập nhật trang | dateModified 2026-11-17 |
 | Case | 5 bài đã đăng auto365.vn, đều lens 3.0 inch: Captiva 2015 (X-Light X3 Ultra), Colorado (video, X-Light F10), Orlando (X-Light F10 Pro), Trailblazer 2019 (GTR, hồ sơ lưu trữ), Orlando 2019 (GTR V2, hồ sơ lưu trữ) |
 | Loại trừ | Chevrolet Cruze 2016 — bi gầm "Taiwan", không thuộc hãng Auto365 phân phối |
@@ -15,7 +15,7 @@
 
 Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xác nhận lens 3.0 inch cho Colorado (X-Light F10) và 2 ca GTR/GTR V2 năm 2019. Bổ sung 4 dòng Aveo, Lacetti, Matiz, Vivant (nhóm Tư vấn cấu hình).
 
-## Nội dung bản vá 17/11/2026 cần anh Đạo xác nhận
+## Nội dung bản vá 17/11/2026 (anh Đạo đã duyệt)
 1. Khối gợi ý + FAQ chi phí: bỏ "xem ở bài tư vấn từng dòng xe", dẫn tới trang bi gầm `#san-pham`; phụ kiện, số đèn, công lắp, VAT xác nhận sau khi kiểm tra xe.
 2. FAQ nhiều đời: hai hồ sơ Orlando "minh họa hai phương án đèn đã làm"; thêm "đường kính lens chưa đủ để xác định lắp vừa".
 3. Nhãn "Hồ sơ lưu trữ" cho Trailblazer GTR và Orlando GTR V2 (2019).
