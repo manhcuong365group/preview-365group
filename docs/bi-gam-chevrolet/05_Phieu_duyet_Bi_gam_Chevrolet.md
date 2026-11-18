@@ -4,7 +4,7 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/chevrolet/ |
 | Ngày dựng | 16/11/2026 (khung hub Suzuki) |
-| Kiểm duyệt kỹ thuật | **Đã duyệt** — anh Nguyễn Quang Đạo, 16/11/2026; bản vá 17/11/2026 (lastReviewed 2026-11-17) |
+| Kiểm duyệt kỹ thuật | **Đã duyệt** — anh Nguyễn Quang Đạo, 16/11/2026; bản vá 17/11/2026; bỏ 2 case GTR 18/11/2026 (lastReviewed 2026-11-18) |
 | Bản vá 17/11 | Theo reviewer V2.3 R1 — chỉ sửa câu chữ/điều hướng/ảnh, không đổi dữ kiện kỹ thuật đã duyệt; **anh Đạo đã duyệt 17/11/2026** |
 | Cập nhật trang | dateModified 2026-11-17 |
 | Case | 3 bài đã đăng auto365.vn, đều lens 3.0 inch: Captiva 2015 (X-Light X3 Ultra), Colorado (video, X-Light F10), Orlando (X-Light F10 Pro). 18/11/2026 bỏ Trailblazer GTR và Orlando GTR V2 (2019) vì bài nguồn đã gỡ khỏi auto365.vn (404, không còn trong sitemap) |
@@ -23,10 +23,10 @@ Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xá
 5. 4 lưu ý lắp gộp vào 1 accordion; cẩm nang xếp lại; ảnh designer.
 
 ## Chuyển bộ phận khác (ngoài preview)
-- Content + Kỹ thuật: bài Orlando X-Light — kiểm lại 18/11: tiêu đề/heading/chú thích đã thống nhất F10 Pro, còn alt ảnh "Hình 1" ghi "F10 Turbo". Hai bài GTR đã gỡ (404) → case đã bỏ khỏi hub.
+- Bài Orlando X-Light: kiểm lại 18/11/2026 — tiêu đề, heading, chú thích và alt đã thống nhất F10 Pro (đã đóng). Hai bài GTR đã gỡ (404) → case đã bỏ khỏi hub (đã đóng).
 - Kỹ thuật + Vận hành: mã ca, ngày thi công, cơ sở từng hồ sơ.
 
-## Thay đổi 18/11/2026 — chờ anh Đạo xác nhận
+## Thay đổi 18/11/2026 (anh Đạo đã duyệt 18/11/2026)
 - Bỏ 2 case GTR 2019 (Trailblazer GTR, Orlando GTR V2): bài nguồn đã gỡ khỏi auto365.vn (404), user chốt gỡ hẳn 18/11.
 - Hub còn 3 hồ sơ, hãng đèn X-Light; Trailblazer chuyển sang nhóm "Tư vấn cấu hình" (3 dòng có hồ sơ, 8 dòng tư vấn).
 - Sapo, mô tả, FAQ (dòng đã có hồ sơ; 2.0 hay 3.0 inch; nhiều đời) và khối gợi ý bỏ nhắc GTR/Trailblazer; dateModified 2026-11-18.

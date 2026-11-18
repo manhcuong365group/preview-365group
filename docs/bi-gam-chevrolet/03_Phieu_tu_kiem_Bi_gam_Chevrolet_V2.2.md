@@ -39,3 +39,7 @@
 
 ## Reviewer V2.3 R2 (17/11/2026)
 Đạt các mục sửa trực tiếp trên preview (5.1, 5.4, title/meta, FAQ, nhãn lưu trữ, cẩm nang); chưa đóng PASS V2.3 toàn bộ vì 3 bài nguồn và hồ sơ ca còn mở. 96,2 vẫn là điểm tự chấm. Bằng chứng UI/mobile trên build 17/11 đã bổ sung ở phiếu 06 (18/11/2026).
+
+## Cập nhật 18/11/2026
+- 5.2 Ba bài nguồn: **đã đóng**. Bài Orlando X-Light đã thống nhất F10 Pro (kể cả alt "Hình 1"); hai bài GTR (150%/180%) đã gỡ khỏi auto365.vn → bỏ 2 case khỏi hub, còn 3 hồ sơ X-Light. Anh Đạo duyệt 18/11 (lastReviewed 2026-11-18).
+- Còn mở: 5.3 mã ca/ngày thi công/cơ sở (Kỹ thuật + Vận hành); production (IT).
