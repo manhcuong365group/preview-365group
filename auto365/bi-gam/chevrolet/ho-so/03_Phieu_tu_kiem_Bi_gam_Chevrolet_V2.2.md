@@ -30,9 +30,12 @@
 
 ## Rủi ro bị trừ
 - 3 bài nguồn (5.2) còn sai SKU/tên xe/tỷ lệ — người đọc bấm thẻ vẫn thấy.
-- 7/11 dòng xe chưa có hồ sơ (đã nhận diện rõ "Tư vấn cấu hình", không tạo URL rỗng).
+- 7/11 dòng xe chưa có hồ sơ: không phải lý do tự động trừ điểm vì đã nhận diện rõ "Tư vấn cấu hình" và dẫn tới bước tư vấn; ghi để theo dõi khi có case mới.
 
 ## Việc còn lại
 - Content + Kỹ thuật sửa 3 bài nguồn (5.2).
 - Kỹ thuật + Vận hành bổ sung mã ca/ngày thi công/cơ sở (5.3).
 - Chủ quản test điện thoại thật; IT nghiệm thu form → CRM, `generate_lead` trên URL chính thức.
+
+## Reviewer V2.3 R2 (17/11/2026)
+Đạt các mục sửa trực tiếp trên preview (5.1, 5.4, title/meta, FAQ, nhãn lưu trữ, cẩm nang); chưa đóng PASS V2.3 toàn bộ vì 3 bài nguồn và hồ sơ ca còn mở. 96,2 vẫn là điểm tự chấm. Bằng chứng UI/mobile trên build 17/11 đã bổ sung ở phiếu 06 (18/11/2026).

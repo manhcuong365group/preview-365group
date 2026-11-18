@@ -21,3 +21,23 @@ Kiểm trên preview (bản local cùng build), 16/11/2026. Không gửi lead th
 ## Còn mở (chỉ nghiệm thu được trên URL chính thức)
 - Preview không có `/api/leads` (trả 405), giống các hub hãng xe khác — gửi lead thật vào CRM (`priority`) và sự kiện `generate_lead` một lần/lượt gửi chỉ kiểm được khi IT đăng trang lên auto365.vn.
 - Chủ quản test trên điện thoại thật.
+
+## Tái kiểm trên build 17/11/2026 (theo reviewer V2.3 R2) — 18/11/2026
+
+Build kiểm: commit `91f1227f`, `index.html` SHA-256 `dce83f55fa8fd329d50a2f9df0e97824cffdac6d2a3f2ce0780031643933e9af` (cùng SHA mục lục bàn giao; bản local chỉ khác ký tự xuống dòng CRLF). Môi trường: trình duyệt Chromium trong app, mô phỏng viewport; không gửi lead thật (lệnh gửi bị chặn để đọc nội dung, server giả lập trả 500).
+
+| Mục | Kết quả trên build 17/11 | Đạt |
+|---|---|---|
+| U1 · Không tràn ngang | 375 / 390 / 768 / 1024 / 1366px: chiều rộng trang bằng vùng hiển thị | ✓ |
+| U1 · Ảnh mới | 11/11 ảnh dòng xe designer, 5/5 ảnh hồ sơ, 6 ảnh "Vì sao chọn" (3 ảnh Chevrolet mới) tải đủ khi cuộn tới (ảnh từ auto365.vn tải chậm hơn nhưng không lỗi) | ✓ |
+| U1 · Console | Không lỗi | ✓ |
+| U1 · Accordion mới | 4 lưu ý gộp 1 accordion "Xem 4 lưu ý khi lắp bi gầm Chevrolet", mở/đóng được ở 375px | ✓ |
+| U1 · Nhãn lưu trữ | 2 thẻ GTR 2019 có "Hồ sơ lưu trữ", hiện đủ ở 375px | ✓ |
+| U1 · Bộ lọc (375px) | "LACÉTTI" → Lacetti; tìm "xyz" hiện thông báo trống; GTR → 2 hồ sơ; "Tất cả" → 5 hồ sơ | ✓ |
+| U2 · Thẻ Trax (375px) | Cuộn tới form, ô Dòng xe = "Chevrolet Trax" | ✓ |
+| U2 · Chặn số sai | "12345" → không gửi, báo "Số điện thoại chưa đúng, ví dụ 0365 365 365." | ✓ |
+| U2 · Nội dung gửi | POST `/api/leads`: phone, fullname, car_model = "Chevrolet Trax", priority, province, form-honey, service/source_page = "Bi gầm Chevrolet", source_url, referrer | ✓ |
+| U2 · Lỗi server | Trả 500 → "Chưa gửi được. Vui lòng gọi 0365 365 911 hoặc thử lại.", không báo thành công giả | ✓ |
+| U3 · Schema/SEO | 1 H1; JSON-LD parse được; FAQ 9/9 khớp DOM; lastReviewed 2026-11-17, dateModified 2026-11-17; robots noindex/nofollow/noarchive | ✓ |
+
+Còn mở như trên: lead → CRM, `generate_lead`, GET/header production, điện thoại thật (chủ quản).
