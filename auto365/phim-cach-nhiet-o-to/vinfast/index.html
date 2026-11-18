@@ -587,7 +587,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  function filt(){
   var q=qi.value.trim().toLowerCase().replace(/\s/g,''),vis=[];
   document.querySelectorAll('.vf-model').forEach(function(b){var ok=(tab==='all'||b.dataset.t===tab||(tab==='case'&&b.dataset.case==='1'))&&b.dataset.name.toLowerCase().replace(/\s/g,'').indexOf(q)>-1;b.hidden=!ok;if(ok)vis.push(b)});
-  var cols=getComputedStyle(mw).gridTemplateColumns.split(' ').length,lim=999,extra=vis.length-lim;
+  var cols=getComputedStyle(mw).gridTemplateColumns.split(' ').length,lim=matchMedia("(min-width:900px)").matches?cols*3:999,extra=vis.length-lim;
   if(extra>0&&!open)vis.slice(lim).forEach(function(b){if(b.getAttribute('aria-pressed')!=='true')b.hidden=true});
   mwr.hidden=extra<=0;mb.setAttribute('aria-expanded',open);mb.textContent=open?'Thu gọn ▲':'Xem thêm '+extra+' dòng xe ▼';
  }
