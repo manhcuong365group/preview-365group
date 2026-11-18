@@ -28,3 +28,8 @@
 - Ngày thi công cho từng case.
 - Bài auto365.vn "sau sáp nhập" (20/03/2026) ghi P. Tây Thạnh + hotline 0909 374 145 — lệch Maps, cần Content sửa.
 - Chủ quản test điện thoại thật (U3); IT nghiệm thu form → CRM khi lên production.
+
+## Cập nhật 18/11/2026 (lần 2)
+- Thêm khối "Câu chuyện Auto365 Tân Phú" (mốc 07/06/2022, thương hiệu đèn, đánh giá Google Maps 4,7★/60), FAQ viết lại 9 câu theo nhu cầu khách (tra bảo hành baohanh.365group.com.vn, 1900 9365), lead Dịch vụ đầy đủ hơn; bỏ khối Tóm tắt nhanh và Tin tức; fix mobile (lead, Quy trình), tiêu đề thẻ Vì sao không còn bị cắt.
+- Anh Nguyễn Quang Đạo duyệt phần bổ sung 18/11/2026.
+- Tự chấm: Nội dung 28,6 · SEO 28,9 · GEO 23,8 · UX 14,2 → **≈95,5/100**, qua 3 ngưỡng. Còn: U3 máy thật, ảnh mặt tiền mới, clip tại chi nhánh.
