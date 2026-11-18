@@ -16,7 +16,7 @@ Kiểm trên preview (bản local cùng build), 16/11/2026. Không gửi lead th
 | U3 · Link | 20 link sang auto365.vn (5 bài case, 8 bài cẩm nang, chi nhánh, bảo hành, tác giả, hub bi gầm) đều trả 200; anchor nội trang đủ đích | ✓ |
 | U3 · Schema | CollectionPage, BreadcrumbList, Organization, ItemList ×2, FAQPage — đọc được, không lỗi | ✓ |
 | U3 · SEO preview | robots noindex/nofollow (preview), canonical `https://auto365.vn/nang-cap-anh-sang-bi-gam/chevrolet` | ✓ |
-| U3 · Bàn giao | Hồ sơ 01–06 cùng một lần xuất; 11 dòng xe, 5 hồ sơ | ✓ |
+| U3 · Bàn giao | Hồ sơ 01–06 cùng một lần xuất; 11 dòng xe, 5 hồ sơ (16/11; từ 18/11 còn 3 hồ sơ) | ✓ |
 
 ## Còn mở (chỉ nghiệm thu được trên URL chính thức)
 - Preview không có `/api/leads` (trả 405), giống các hub hãng xe khác — gửi lead thật vào CRM (`priority`) và sự kiện `generate_lead` một lần/lượt gửi chỉ kiểm được khi IT đăng trang lên auto365.vn.
@@ -41,3 +41,6 @@ Build kiểm: commit `91f1227f`, `index.html` SHA-256 `dce83f55fa8fd329d50a2f9df
 | U3 · Schema/SEO | 1 H1; JSON-LD parse được; FAQ 9/9 khớp DOM; lastReviewed 2026-11-17, dateModified 2026-11-17; robots noindex/nofollow/noarchive | ✓ |
 
 Còn mở như trên: lead → CRM, `generate_lead`, GET/header production, điện thoại thật (chủ quản).
+
+## Cập nhật 18/11/2026 — bỏ 2 case GTR
+Bài nguồn Trailblazer GTR và Orlando GTR V2 trả 404 → bỏ 2 thẻ. Các dòng "GTR", "Hồ sơ lưu trữ" ở bảng trên là kết quả của build trước. Kiểm lại trên build 18/11 ở bảng dưới.

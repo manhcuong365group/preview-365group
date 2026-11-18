@@ -7,16 +7,16 @@
 | URL preview | https://preview-365group.pages.dev/bi-gam/chevrolet/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/chevrolet |
 | Title (59 ký tự) | Bi gầm Chevrolet: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
-| Meta description (135 ký tự) | Xem hồ sơ bi gầm Chevrolet Captiva, Orlando, Colorado và Trailblazer; gửi đời xe để Auto365 kiểm tra cấu hình, phụ kiện và báo chi phí. |
+| Meta description (122 ký tự) | Xem hồ sơ bi gầm Chevrolet Captiva, Orlando và Colorado; gửi đời xe để Auto365 kiểm tra cấu hình, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Chevrolet: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-17 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), ItemList (5), FAQPage |
-| SHA-256 index.html | `dce83f55fa8fd329d50a2f9df0e97824cffdac6d2a3f2ce0780031643933e9af` |
-| SHA-256 content-src.html | `fe36a638ca8c3261508bab7e004761bf0486cbfc0adf3721d402d816fecaf525` |
+| dateModified | 2026-11-18 |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (3), FAQPage |
+| SHA-256 index.html | `0b8e041616aeb348d83cf7323116be4237ac3d25f0ef44a6b8ccdec87be61a78` |
+| SHA-256 content-src.html | `6b03e6cbbb698d8f13ce8727394e874f636b90ccf55aa0e66e3abdb55cc6ecc7` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Chevrolet giúp tăng vùng sáng gần và hai bên đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light, GTR trên Captiva, Orlando, Trailblazer và Colorado; kỹ thuật viên kiểm tra hốc đèn, pát và giắc nguồn trước khi lắp, hạn chế cắt khoét cản.
+Lắp bi gầm Chevrolet giúp tăng vùng sáng gần và hai bên đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp thực tế bi gầm X-Light trên Captiva, Orlando và Colorado; kỹ thuật viên kiểm tra hốc đèn, pát và giắc nguồn trước khi lắp, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Chevrolet
 
@@ -24,10 +24,10 @@ Lắp bi gầm Chevrolet giúp tăng vùng sáng gần và hai bên đường kh
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
-| Chevrolet Orlando | MPV | Có hồ sơ | https://auto365.vn/chevrolet-orlando-nang-cap-bi-gam-xlight-f10-pro |
 | Chevrolet Captiva | SUV | Có hồ sơ | https://auto365.vn/chevrolet-captiva-ltz-24-at-2015-nang-cap-bi-gam-x-light-x3-ultra-5500k |
-| Chevrolet Trailblazer | SUV | Có hồ sơ | https://auto365.vn/chevrolet-trailblazer-nang-cap-bi-gam-gtr-tang-sang-150 |
 | Chevrolet Colorado | Bán tải | Có hồ sơ | https://auto365.vn/video-chevrolet-colorado-nang-cap-x-light-v30-ultra-va-bi-gam-f10 |
+| Chevrolet Orlando | MPV | Có hồ sơ | https://auto365.vn/chevrolet-orlando-nang-cap-bi-gam-xlight-f10-pro |
+| Chevrolet Trailblazer | SUV | Liên hệ tư vấn | — |
 | Chevrolet Trax | SUV | Liên hệ tư vấn | — |
 | Chevrolet Cruze | Sedan | Liên hệ tư vấn | — |
 | Chevrolet Spark | Sedan | Liên hệ tư vấn | — |
@@ -36,7 +36,7 @@ Lắp bi gầm Chevrolet giúp tăng vùng sáng gần và hai bên đường kh
 | Chevrolet Vivant | MPV | Liên hệ tư vấn | — |
 | Chevrolet Matiz | Sedan | Liên hệ tư vấn | — |
 
-## Xe Chevrolet đã lắp bi gầm tại Auto365 (5 bài hồ sơ)
+## Xe Chevrolet đã lắp bi gầm tại Auto365 (3 bài hồ sơ)
 
 Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 
@@ -45,8 +45,6 @@ Bộ lọc: dòng xe, hãng đèn (suy từ tên đèn trong tiêu đề bài).
 | Chevrolet Captiva | [Chevrolet Captiva LTZ 2.4 AT 2015 nâng cấp bi gầm X-Light X3 Ultra 5500K](https://auto365.vn/chevrolet-captiva-ltz-24-at-2015-nang-cap-bi-gam-x-light-x3-ultra-5500k) | 2026-11-04 |
 | Chevrolet Colorado | [Video: Chevrolet Colorado nâng cấp bi LED X-Light V30 Ultra và bi gầm X-Light F10](https://auto365.vn/video-chevrolet-colorado-nang-cap-x-light-v30-ultra-va-bi-gam-f10) | 2026-08-24 |
 | Chevrolet Orlando | [Chevrolet Orlando nâng cấp bi gầm X-Light F10 Pro](https://auto365.vn/chevrolet-orlando-nang-cap-bi-gam-xlight-f10-pro) | 2024-08-22 |
-| Chevrolet Trailblazer | [Chevrolet Trailblazer nâng cấp bi gầm GTR](https://auto365.vn/chevrolet-trailblazer-nang-cap-bi-gam-gtr-tang-sang-150) | 2019-01-21 |
-| Chevrolet Orlando | [Chevrolet Orlando nâng cấp bi gầm GTR V2](https://auto365.vn/chevrolet-orlando-nang-cap-bi-gam-gtr-v2-tang-sang-180) | 2019-01-20 |
 
 ## Xe Chevrolet lắp bi gầm cần lưu ý gì?
 
@@ -76,7 +74,7 @@ _Dòng xe:_ Captiva, Trailblazer, Orlando, Trax, Vivant
 - Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
 - Xe chở khách nhiều nên ưu tiên mẫu ổn định, căn chỉnh kỹ để hạn chế chói xe đối diện.
 
-Đã lắp: Captiva 2015 – X-Light X3 Ultra · Orlando – X-Light F10 Pro · Trailblazer – GTR (https://auto365.vn/chevrolet-captiva-ltz-24-at-2015-nang-cap-bi-gam-x-light-x3-ultra-5500k, https://auto365.vn/chevrolet-orlando-nang-cap-bi-gam-xlight-f10-pro, https://auto365.vn/chevrolet-trailblazer-nang-cap-bi-gam-gtr-tang-sang-150)
+Đã lắp: Captiva 2015 – X-Light X3 Ultra · Orlando – X-Light F10 Pro (https://auto365.vn/chevrolet-captiva-ltz-24-at-2015-nang-cap-bi-gam-x-light-x3-ultra-5500k, https://auto365.vn/chevrolet-orlando-nang-cap-bi-gam-xlight-f10-pro)
 
 CTA: — (chưa có bài tư vấn dòng xe)
 

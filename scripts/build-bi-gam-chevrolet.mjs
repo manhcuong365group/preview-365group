@@ -114,7 +114,7 @@ const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
 const title = 'Bi gầm Chevrolet: chọn theo xe, hồ sơ lắp thực tế | Auto365';
-const desc = 'Xem hồ sơ bi gầm Chevrolet Captiva, Orlando, Colorado và Trailblazer; gửi đời xe để Auto365 kiểm tra cấu hình, phụ kiện và báo chi phí.';
+const desc = 'Xem hồ sơ bi gầm Chevrolet Captiva, Orlando và Colorado; gửi đời xe để Auto365 kiểm tra cấu hình, phụ kiện và báo chi phí.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [
