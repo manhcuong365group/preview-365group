@@ -11,9 +11,9 @@
 
 | Nhóm | 18/11 trước duyệt | 18/11 sau duyệt | 18/11 sau vá | Căn cứ |
 |---|---:|---:|---:|---|
-| Nội dung /30 | 26,5 | 28,0 | 28,3 | Duyệt anh Đạo; khối Tóm tắt nhanh; FAQ đường đi. Trừ: ảnh mặt tiền còn biển "Sơn Kỳ", clip của hệ thống, case chưa có ngày thi công |
+| Nội dung /30 | 26,5 | 28,0 | 28,3 | Duyệt anh Đạo; FAQ đường đi (khối Tóm tắt nhanh đã bỏ 18/11 vì trùng thanh thông tin). Trừ: ảnh mặt tiền còn biển "Sơn Kỳ", clip của hệ thống, case chưa có ngày thi công |
 | SEO /30 | 27,5 | 28,3 | 28,9 | BreadcrumbList; ItemList 12 xe; H2 dịch vụ có "Tân Phú"; FAQ schema 9/9 khớp DOM; title 49 ký tự, meta 150, OG đủ; ảnh WebP local |
-| GEO /25 | 21,5 | 22,7 | 23,8 | Tóm tắt nhanh (NAP + giờ + dịch vụ + bảo hành); FAQ đường đi; ItemList gắn locationCreated. Trừ: hotline lệch trang /quan-tan-phu cũ |
+| GEO /25 | 21,5 | 22,7 | 23,8 | FAQ đường đi; ItemList gắn locationCreated. Trừ: hotline lệch trang /quan-tan-phu cũ |
 | UX /15 | 13,5 | 13,5 | 14,2 | Desktop + mobile 375 không tràn, 0 ảnh lỗi; nút Gọi/Zalo/Chỉ đường; Zalo 0564365365 thống nhất. Còn U3 máy thật |
 | **Tổng** | ≈89,5 | ≈92,5 | **≈95,2** | Qua 3 ngưỡng (SEO 28,9; GEO 23,8) — sát ngưỡng |
 
