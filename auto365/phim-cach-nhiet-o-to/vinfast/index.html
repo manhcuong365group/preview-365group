@@ -610,7 +610,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  grid.addEventListener('click',function(e){var b=e.target.closest('[data-pk]');if(!b)return;openQ('pkg',b.dataset.pk)});
  document.querySelectorAll('.vf-vid').forEach(function(v){v.addEventListener('click',function(){if(v.querySelector('iframe'))return;v.innerHTML='<iframe src="https://www.youtube.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="Video phim cách nhiệt 3M" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>'})});
  // Sơ đồ vị trí kính: toạ độ % trên ảnh 640x400 (đầu xe bên trái)
- var DIMG=['m-vf3.webp','m-vf5.webp','m-limo-green.webp'];
+ var DIMG=['m-vf3.webp','dia-sedan.webp','m-limo-green.webp'];
  var DIA=[DP["m-vf3.webp"],DP["m-vf5.webp"],DP["m-limo-green.webp"]];
  var LAB=[[8,18,'Kính lái'],[27,4,'Sườn trước'],[76,10,'Sườn sau'],[52,4,'Kính nóc'],[93,22,'Kính lưng']];
  var dbt=document.querySelectorAll('.vf-dtabs button'),dia=document.getElementById('vf-dia');
