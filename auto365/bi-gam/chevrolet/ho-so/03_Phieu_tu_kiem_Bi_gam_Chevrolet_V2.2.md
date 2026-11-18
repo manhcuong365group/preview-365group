@@ -2,7 +2,7 @@
 
 | Mục | Giá trị |
 |---|---|
-| Ngày tự kiểm | 17/11/2026 (lần 2, sau vá theo reviewer V2.3 R1 ngày 17/11) |
+| Ngày tự kiểm | 18/11/2026 (lần 3; xem mục "Chấm lại 18/11" cuối phiếu) |
 | Chuẩn | Auto365 V2.3 (14/11/2026); ngưỡng giữ như V2.2: Tổng ≥95 · SEO ≥28,50/30 · GEO ≥23,75/25 |
 | Lần trước | 16/11/2026, tự chấm thang V2.2: 95,3 — không đổi nhãn thành điểm V2.3 |
 | Lưu ý | Anh Đạo duyệt bản vá 17/11. Đây là điểm tự chấm của team, chờ reviewer tái kiểm V2.3 xác nhận |
@@ -40,6 +40,15 @@
 ## Reviewer V2.3 R2 (17/11/2026)
 Đạt các mục sửa trực tiếp trên preview (5.1, 5.4, title/meta, FAQ, nhãn lưu trữ, cẩm nang); chưa đóng PASS V2.3 toàn bộ vì 3 bài nguồn và hồ sơ ca còn mở. 96,2 vẫn là điểm tự chấm. Bằng chứng UI/mobile trên build 17/11 đã bổ sung ở phiếu 06 (18/11/2026).
 
-## Cập nhật 18/11/2026
-- 5.2 Ba bài nguồn: **đã đóng**. Bài Orlando X-Light đã thống nhất F10 Pro (kể cả alt "Hình 1"); hai bài GTR (150%/180%) đã gỡ khỏi auto365.vn → bỏ 2 case khỏi hub, còn 3 hồ sơ X-Light. Anh Đạo duyệt 18/11 (lastReviewed 2026-11-18).
-- Còn mở: 5.3 mã ca/ngày thi công/cơ sở (Kỹ thuật + Vận hành); production (IT).
+## Chấm lại 18/11/2026 (sau khi đóng 5.2, bỏ 2 case GTR; anh Đạo duyệt 18/11)
+
+| Nhóm | 17/11 | 18/11 | Căn cứ |
+|---|---:|---:|---|
+| Nội dung /30 | 28,6 | 28,9 | 5.2 đóng: bài Orlando thống nhất F10 Pro (cả alt "Hình 1"); 2 bài GTR có tỷ lệ 150%/180% đã gỡ và bỏ khỏi hub → không còn thẻ dẫn tới nội dung sai/404. Trừ: 5.3 mã ca/ngày thi công/cơ sở CX; còn 3 hồ sơ |
+| SEO /30 | 29,0 | 29,0 | Không link chết (3 bài case 200); schema ItemList 3 dòng có hồ sơ + 3 bài, FAQ 9/9 khớp; meta theo 3 dòng |
+| GEO /25 | 24,1 | 24,1 | FAQ/sapo chỉ nêu cấu hình có bài nguồn hiện hữu; lastReviewed 2026-11-18 |
+| UX U1–U3 /15 | 14,5 | 14,5 | Build 18/11: không tràn 375px, bộ lọc hãng đèn còn X-Light; còn CRM/`generate_lead`/điện thoại thật |
+| **Tổng** | **96,2** | **≈96,5/100** | Qua 3 ngưỡng (SEO 29,0 ≥28,50; GEO 24,1 ≥23,75) |
+
+- 5.2 Ba bài nguồn: **đã đóng** (18/11).
+- Còn mở: 5.3 mã ca/ngày thi công/cơ sở (Kỹ thuật + Vận hành); production (IT). Điểm là tự chấm, chờ reviewer R3.
