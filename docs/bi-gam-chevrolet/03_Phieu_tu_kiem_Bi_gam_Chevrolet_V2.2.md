@@ -52,3 +52,7 @@
 
 - 5.2 Ba bài nguồn: **đã đóng** (18/11).
 - Còn mở: 5.3 mã ca/ngày thi công/cơ sở (Kỹ thuật + Vận hành); production (IT). Điểm là tự chấm, chờ reviewer R3.
+
+## Reviewer V2.3 ngày 19/11/2026 — đã xử lý
+- S2/S3 HTML: sửa nesting thẻ case/cẩm nang và summary; dời 14 style lên head; ô tìm chi nhánh đúng mô hình combobox (aria-controls). Bảng tái kiểm bản 3 ca ở phiếu 06.
+- Còn mở: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); production. Điểm 96,5 vẫn là tự chấm.

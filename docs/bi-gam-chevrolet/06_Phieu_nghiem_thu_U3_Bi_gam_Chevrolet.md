@@ -22,7 +22,7 @@ Kiểm trên preview (bản local cùng build), 16/11/2026. Không gửi lead th
 - Preview không có `/api/leads` (trả 405), giống các hub hãng xe khác — gửi lead thật vào CRM (`priority`) và sự kiện `generate_lead` một lần/lượt gửi chỉ kiểm được khi IT đăng trang lên auto365.vn.
 - Chủ quản test trên điện thoại thật.
 
-## Tái kiểm trên build 17/11/2026 (theo reviewer V2.3 R2) — 18/11/2026
+## [Lịch sử] Tái kiểm trên build 17/11/2026 (5 ca) — 18/11/2026
 
 Build kiểm: commit `91f1227f`, `index.html` SHA-256 `dce83f55fa8fd329d50a2f9df0e97824cffdac6d2a3f2ce0780031643933e9af` (cùng SHA mục lục bàn giao; bản local chỉ khác ký tự xuống dòng CRLF). Môi trường: trình duyệt Chromium trong app, mô phỏng viewport; không gửi lead thật (lệnh gửi bị chặn để đọc nội dung, server giả lập trả 500).
 
@@ -43,4 +43,23 @@ Build kiểm: commit `91f1227f`, `index.html` SHA-256 `dce83f55fa8fd329d50a2f9df
 Còn mở như trên: lead → CRM, `generate_lead`, GET/header production, điện thoại thật (chủ quản).
 
 ## Cập nhật 18/11/2026 — bỏ 2 case GTR
-Bài nguồn Trailblazer GTR và Orlando GTR V2 trả 404 → bỏ 2 thẻ. Các dòng "GTR", "Hồ sơ lưu trữ" ở bảng trên là kết quả của build trước. Kiểm lại trên build 18/11 ở bảng dưới.
+Bài nguồn Trailblazer GTR và Orlando GTR V2 trả 404 → bỏ 2 thẻ. Các dòng "GTR", "Hồ sơ lưu trữ" ở bảng trên là kết quả của build trước. Bảng tái kiểm bản 3 ca ở mục cuối (build 19/11).
+
+## Tái kiểm bản hiện hành — 3 ca, build 19/11/2026 (theo reviewer V2.3 ngày 19/11)
+
+Build: `index.html` SHA-256 `38ebd3e6b9164559842fcea0f683f0cb5c7d44a83fb95369b2475e8041df4b70` (trùng mục lục hồ sơ). Người kiểm: team SEO, 19/11/2026. Môi trường: Chromium trong app, mô phỏng viewport; không gửi lead thật (chặn lệnh gửi để giả lập phản hồi).
+
+| Mục | Kết quả | Đạt |
+|---|---|---|
+| HTML · Nesting | Thẻ case + cẩm nang: `.bd`/`.rw` đổi span → div; summary "Gợi ý theo nhu cầu" bỏ `<p>` (đổi span hiển thị block). DOM: 0 span chứa khối, 0 summary chứa p/div | ✓ |
+| HTML · CSS | 14 thẻ style trong body dời lên head lúc build; body còn 0 | ✓ |
+| HTML · ARIA | Ô tìm chi nhánh: input text + role=combobox + aria-controls tới listbox gợi ý; gõ "Đồng Nai" → 2 option, aria-expanded=true | ✓ |
+| ID trùng / console | 0 / không lỗi | ✓ |
+| U1 · Không tràn | 375px và 1024px: chiều rộng trang = vùng hiển thị | ✓ |
+| U1 · Thẻ | 3 thẻ case, 8 thẻ cẩm nang, 11 thẻ dòng xe hiển thị như trước (ảnh auto365.vn tải chậm, không lỗi) | ✓ |
+| U1 · Bộ lọc (375px) | "LACÉTTI" → Lacetti; lọc Orlando → 1 hồ sơ; "Tất cả" → 3 | ✓ |
+| U1 · Accordion | "Gợi ý theo nhu cầu" mở/đóng, đoạn mô tả hiển thị đúng | ✓ |
+| U2 · Form | Thẻ Trax → "Chevrolet Trax"; "12345" không gửi + báo lỗi; giả lập 500 → "Chưa gửi được…"; giả lập success + lead_id → "Đã nhận yêu cầu…" | ✓ |
+| U3 · Hồ sơ | 01–06 xuất cùng build; 3 ca | ✓ |
+
+Còn CX: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); lead → CRM, `generate_lead`, điện thoại thật, GET production.

@@ -190,3 +190,22 @@ console.log('built', path.join(dir, 'index.html'), out.length, { models: models.
   if (!h.includes('id="shellfix-logo"')) h = h.replace('</head>', '<style id="shellfix-logo">.header-top-row .logo a{max-width:100%}.header-top-row .logo img{max-width:100%!important;height:auto!important}</style>\n</head>');
   fs.writeFileSync(p, h);
 }
+
+// ---- Hợp lệ HTML (reviewer V2.3 19/11/2026): dời <style> trong body lên head; ô tìm chi nhánh role=combobox dùng input text ----
+{
+  const p = path.join(dir, 'index.html');
+  let h = fs.readFileSync(p, 'utf8');
+  const hi = h.indexOf('</head>');
+  let head = h.slice(0, hi), body = h.slice(hi);
+  const moved = [];
+  body = body.replace(/<script\b[\s\S]*?<\/script>|<style\b[^>]*>[\s\S]*?<\/style>\s*/g, (m) => (m.startsWith('<style') ? (moved.push(m.trim()), '') : m));
+  h = head + moved.join('\n') + '\n' + body;
+  const before = h;
+  h = h.replace(/(<input class="nr-lead-input" )type="search"( name="q"[^>]*role="combobox")/g, '$1type="text"$2');
+  if (h === before) throw new Error('branch combobox input not found');
+  if (!/data-js="branch-finder-results" role="listbox"/.test(h)) throw new Error('branch listbox not found');
+  h = h.replace('data-js="branch-finder-results" role="listbox"', 'id="bgchev-bf-pop" data-js="branch-finder-results" role="listbox"')
+    .replace(/(<input class="nr-lead-input" type="text" name="q"[^>]*role="combobox")/, '$1 aria-controls="bgchev-bf-pop"');
+  fs.writeFileSync(p, h);
+  console.log('hoisted styles', moved.length);
+}
