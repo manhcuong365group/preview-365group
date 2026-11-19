@@ -20,7 +20,7 @@
 ## Dữ kiện đã chốt (theo Google Maps, user chốt 18/11/2026)
 - Địa chỉ 20/54A Đường Bờ Bao 1 (Tân Thắng), P. Tân Sơn Nhì, TP.HCM (khớp Google Maps, x-light.vn, biển trong ảnh FB).
 - Hotline 0564 365 365 / 0569 365 365; Zalo 0564365365.
-- Giờ: 08:30–18:30, Thứ 2 – Chủ nhật (user chốt 18/11; Maps ghi khác, không theo). Toạ độ ghim Maps 10.80715, 106.6196207.
+- Giờ: T2–T7 08:00–18:00, CN 08:00–17:00 (user chốt 19/11, khớp trang đại lý 3M). Toạ độ ghim Maps 10.80715, 106.6196207.
 - 3M Pro Shop. Case: 7 từ auto365.vn/quan-tan-phu + 5 từ Facebook auto365tanphu, anh Đạo duyệt 18/11.
 
 ## Việc còn lại (ngoài preview)
@@ -37,7 +37,7 @@
 ## Reviewer V2.3 R1 (19/11/2026) — CHƯA QUA đầy đủ
 | Mục | Xử lý 19/11 | Trạng thái |
 |---|---|---|
-| P1 Giờ mở cửa lệch trang đại lý 3M (08:00–18:00 / CN 17:00) | Preview giữ 08:30–18:30 T2–CN theo user chốt 18/11 | CX — Vận hành xác nhận + đồng bộ trang 3M/X-Light |
+| P1 Giờ mở cửa lệch trang đại lý 3M (08:00–18:00 / CN 17:00) | Đã đổi 19/11: T2–T7 08:00–18:00, CN 08:00–17:00 | Đã xử lý |
 | N2 Phường/hotline bài "sau sáp nhập" (Tây Thạnh, 0909) | Preview giữ Tân Sơn Nhì + 0564/0569 (khớp trang chi nhánh hiện hành, Maps) | CX — Vận hành + Content sửa bài cũ |
 | P1 `branch` payload "Auto365 Auto365 Tân Phú" | Sửa thành "Auto365 Tân Phú" (dùng chung 2 form) | Đã sửa preview; CRM CX (IT) |
 | P2 Style cuối body | Chuyển về head, giữ thứ tự cascade | Đã sửa |
