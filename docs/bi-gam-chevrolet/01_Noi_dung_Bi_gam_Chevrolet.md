@@ -9,10 +9,10 @@
 | Title (59 ký tự) | Bi gầm Chevrolet: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
 | Meta description (122 ký tự) | Xem hồ sơ bi gầm Chevrolet Captiva, Orlando và Colorado; gửi đời xe để Auto365 kiểm tra cấu hình, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Chevrolet: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-19 |
+| dateModified | 2026-11-20 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (3), ItemList (3), FAQPage |
-| SHA-256 index.html | `38ebd3e6b9164559842fcea0f683f0cb5c7d44a83fb95369b2475e8041df4b70` |
-| SHA-256 content-src.html | `f09554dc9f7a48277c6137842b12aebb4589f71b98a2d8b7c850bc80705350d4` |
+| SHA-256 index.html | `b38fd6c70dd9886b0d49cb6e524d22a5a26c52799391b41bbe26d1be05038886` |
+| SHA-256 content-src.html | `f6292baab29dd9cdcf5176034711024ba89c860ba3640ed2673b010593f97d12` |
 
 ## Sapo (kiêm trả lời nhanh)
 

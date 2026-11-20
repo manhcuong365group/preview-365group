@@ -6,7 +6,7 @@
 | Ngày dựng | 16/11/2026 (khung hub Suzuki) |
 | Kiểm duyệt kỹ thuật | **Đã duyệt** — anh Nguyễn Quang Đạo, 16/11/2026; bản vá 17/11/2026; bỏ 2 case GTR 18/11/2026 (lastReviewed 2026-11-18) |
 | Bản vá 17/11 | Theo reviewer V2.3 R1 — chỉ sửa câu chữ/điều hướng/ảnh, không đổi dữ kiện kỹ thuật đã duyệt; **anh Đạo đã duyệt 17/11/2026** |
-| Cập nhật trang | dateModified 2026-11-18 |
+| Cập nhật trang | dateModified 2026-11-20 (mốc build). Mốc duyệt nội dung giữ lastReviewed 2026-11-18 |
 | Case | 3 bài đã đăng auto365.vn, đều lens 3.0 inch: Captiva 2015 (X-Light X3 Ultra), Colorado (video, X-Light F10), Orlando (X-Light F10 Pro). 18/11/2026 bỏ Trailblazer GTR và Orlando GTR V2 (2019) vì bài nguồn đã gỡ khỏi auto365.vn (404, không còn trong sitemap) |
 | Loại trừ | Chevrolet Cruze 2016 — bi gầm "Taiwan", không thuộc hãng Auto365 phân phối |
 | Ảnh | Hero: ảnh case Captiva trên auto365.vn; 11 thẻ dòng xe + 3 ảnh "Vì sao chọn" (hệ thống, căn chỉnh, tư vấn): ảnh designer Auto365 (17/11/2026) |
@@ -30,3 +30,9 @@ Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xá
 - Bỏ 2 case GTR 2019 (Trailblazer GTR, Orlando GTR V2): bài nguồn đã gỡ khỏi auto365.vn (404), chủ quản chốt gỡ hẳn 18/11.
 - Hub còn 3 hồ sơ, hãng đèn X-Light; Trailblazer chuyển sang nhóm "Tư vấn cấu hình" (3 dòng có hồ sơ, 8 dòng tư vấn).
 - Sapo, mô tả, FAQ (dòng đã có hồ sơ; 2.0 hay 3.0 inch; nhiều đời) và khối gợi ý bỏ nhắc GTR/Trailblazer; dateModified 2026-11-18.
+
+## Bản sửa kỹ thuật 19–20/11/2026 (không đổi nội dung đã duyệt)
+- 19/11: sửa cấu trúc HTML theo góp ý reviewer (thẻ card span→div, bỏ p trong summary, 14 style dời lên head), ô tìm chi nhánh đổi type text + aria-controls. Reviewer R2 19/11 xác nhận đã đóng.
+- 20/11: bổ sung trạng thái active cho combobox tìm chi nhánh (ID ổn định cho option, aria-selected, aria-activedescendant đồng bộ khi dùng phím mũi tên) — chỉ trên trang Chevrolet.
+- Đây là mốc build, không phải mốc duyệt nội dung; lastReviewed giữ 2026-11-18. Điểm ≈96,5 vẫn là điểm team tự chấm, chưa phải điểm nghiệm thu.
+- Còn mở: mã ca, thời điểm thi công, cơ sở và nguồn tư liệu của 3 ca (Kỹ thuật + Vận hành, Media); không tự điền bằng ngày đăng.

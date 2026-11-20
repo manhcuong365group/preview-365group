@@ -209,3 +209,11 @@ console.log('built', path.join(dir, 'index.html'), out.length, { models: models.
   fs.writeFileSync(p, h);
   console.log('hoisted styles', moved.length);
 }
+
+// ---- Combobox active-descendant (reviewer V2.3 R2 19/11/2026) — chỉ trang Chevrolet, không sửa _bf dùng chung ----
+{ const p=path.join(dir,'index.html'); let h=fs.readFileSync(p,'utf8');
+  const tag='<script src="/bi-gam/_bf/newsroom-branch-finder.fix.js';
+  if(!h.includes(tag)) throw new Error('branch finder script tag not found');
+  if(h.includes('data-bgchev-ad')) throw new Error('active-descendant already injected');
+  const js=`<script data-bgchev-ad>(function(){var pop=document.getElementById('bgchev-bf-pop');if(!pop)return;var inp=document.querySelector('input[aria-controls="bgchev-bf-pop"]');if(!inp)return;var busy=false;function sync(){if(busy)return;busy=true;var opts=pop.hidden?[]:pop.querySelectorAll('[role="option"]'),act=null;for(var i=0;i<opts.length;i++){var o=opts[i];if(!o.id)o.id='bgchev-bf-opt-'+i;var on=o.classList.contains('is-active');o.setAttribute('aria-selected',on?'true':'false');if(on)act=o;}if(act)inp.setAttribute('aria-activedescendant',act.id);else inp.removeAttribute('aria-activedescendant');busy=false;}new MutationObserver(sync).observe(pop,{childList:true,subtree:true,attributes:true,attributeFilter:['class','hidden']});inp.addEventListener('blur',function(){setTimeout(sync,0);});})();</script>\n      `;
+  h=h.replace(tag, js+tag); fs.writeFileSync(p,h); console.log('injected active-descendant'); }
