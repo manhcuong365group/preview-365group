@@ -40,20 +40,31 @@ Bảo hành chỉ hiển thị khi hub có ghi (4 mẫu bi gầm X-Light không 
 
 ## 5. Tự chấm (mục tiêu chạy Ads)
 
-**≈ 89/100**
+**≈ 93/100** (cập nhật 20/11: thêm khối ánh sáng thực tế trước/sau + link Ads mở đúng tab)
 
 | Hạng mục | Điểm | Ghi chú |
 |---|---|---|
 | Khớp quảng cáo, rõ màn hình đầu | 9/10 | H1 + Trụ Sở Chính + 3 số liệu có nguồn; hero chữ trái – ảnh phải |
 | Đường tới sản phẩm & giá | 9/10 | 4 tab, 5 mẫu/tab, bấm mẫu mở form kèm tên + giá |
 | Định hướng chọn đèn | 9/10 | Bảng 7 nhóm đèn (vị trí, phù hợp, giá từ) |
+| Bằng chứng ánh sáng thực tế | 9,5/10 | 6 ảnh chụp tại Auto365: trước/sau Ranger, CX-5; so nhiệt màu 3000/4300/6000K; vùng Cos 3000K; bảng test; Cayenne |
 | Uy tín Trụ Sở Chính | 9/10 | Chứng nhận đại lý X-Light, 6 lý do, 12 xe thực tế, 3 đánh giá Google |
 | CTA & giữ khách trên trang | 9,5/10 | Bỏ link ra auto365.vn; 2 khối CTA; thẻ xe thực tế mở form; thanh Gọi/Zalo/Đặt lịch trên mobile |
 | Pháp lý | 9,5/10 | Dùng nguyên văn block đã duyệt |
 | Mobile / tablet | 9/10 | Vuốt ngang ở mẫu, "Vì sao", xe thực tế; không tràn ngang (375/900/1280px) |
-| Chỗ còn yếu | – | Chưa có ảnh trước/sau vùng sáng; link Ads chưa mở đúng tab theo nhóm quảng cáo; 2 ảnh minh họa |
+| Link theo nhóm Ads | 9,5/10 | Thêm ?loai=bi-gam / bi-led / bi-laser / bong-led để mở đúng tab |
+| Chỗ còn yếu | – | 2 ảnh minh họa (phiếu bàn giao, hệ thống chi nhánh); chưa lead test trên URL Ads |
 
 ## 6. Trước khi chạy Ads
 
 - Gửi 1 lead test (đánh dấu test) trên đúng URL Ads, xác nhận lead về đúng người nhận đèn tại Trụ Sở Chính.
 - Form gửi về `/api/leads` (service = "Nâng cấp đèn ô tô", source_page = "Landing Đèn HCM – popup"), chỉ báo thành công khi API trả `{"success": true}`.
+
+## 7. Link cho từng nhóm quảng cáo
+
+- Bi gầm:  (mặc định)
+- Bi LED pha: 
+- Bi Laser: 
+- Bóng LED: 
+
+Có thể ghép thêm UTM, ví dụ ; form tự gửi UTM về /api/leads.
