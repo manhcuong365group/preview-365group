@@ -56,3 +56,12 @@
 ## Reviewer V2.3 ngày 19/11/2026 — đã xử lý
 - S2/S3 HTML: sửa nesting thẻ case/cẩm nang và summary; dời 14 style lên head; ô tìm chi nhánh đúng mô hình combobox (aria-controls). Bảng tái kiểm bản 3 ca ở phiếu 06.
 - Còn mở: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); production. Điểm 96,5 vẫn là tự chấm.
+
+## Cập nhật 20/11/2026 — mục 5.3 (hồ sơ ca)
+| Ca | case_id | Cơ sở (theo bài) | Thời điểm thi công | Nguồn |
+|---|---|---|---|---|
+| Captiva LTZ 2.4 AT 2015 | CHEV-CAP-2015-X3U | Auto365.vn - Trụ Sở Chính | Bài không ghi (đăng 04/11/2026) | Bài đã đăng, Bảng 1 |
+| Colorado (video) | CHEV-COL-VID-F10 | Không ghi | Không muộn hơn 28/10/2023 (ngày đăng video YouTube) | Video 7RVTozJHofw |
+| Orlando | CHEV-ORL-F10P | Auto365 Thủ Đức (nay Trụ Sở Chính) | Không muộn hơn 22/08/2024 (ngày đăng bài) | Bài đã đăng |
+
+Theo chủ quản, các bài đã đăng trên auto365.vn là nguồn hồ sơ ca. Phần bài không ghi được để trống có ghi chú, không suy đoán. 5.3: chuyển từ CX sang **đóng theo nguồn bài**; chỗ trống (cơ sở Colorado, ngày làm chính xác) ghi rõ giới hạn.

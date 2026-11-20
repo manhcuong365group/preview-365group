@@ -63,3 +63,6 @@ Build: `index.html` SHA-256 `38ebd3e6b9164559842fcea0f683f0cb5c7d44a83fb95369b24
 | U3 · Hồ sơ | 01–06 xuất cùng build; 3 ca | ✓ |
 
 Còn CX: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); lead → CRM, `generate_lead`, điện thoại thật, GET production.
+
+## Truy xuất ca — 20/11/2026
+Ba thẻ case nối với bài nguồn và mã ca trong Master Data 04: CHEV-CAP-2015-X3U (Captiva), CHEV-COL-VID-F10 (Colorado), CHEV-ORL-F10P (Orlando). Cơ sở và thời điểm lấy theo nội dung bài. Chỗ nào bài không ghi thì để trống có ghi chú, không lấy ngày đăng làm ngày thi công.

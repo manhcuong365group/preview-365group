@@ -35,4 +35,4 @@ Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xá
 - 19/11: sửa cấu trúc HTML theo góp ý reviewer (thẻ card span→div, bỏ p trong summary, 14 style dời lên head), ô tìm chi nhánh đổi type text + aria-controls. Reviewer R2 19/11 xác nhận đã đóng.
 - 20/11: bổ sung trạng thái active cho combobox tìm chi nhánh (ID ổn định cho option, aria-selected, aria-activedescendant đồng bộ khi dùng phím mũi tên) — chỉ trên trang Chevrolet.
 - Đây là mốc build, không phải mốc duyệt nội dung; lastReviewed giữ 2026-11-18. Điểm ≈96,5 vẫn là điểm team tự chấm, chưa phải điểm nghiệm thu.
-- Còn mở: mã ca, thời điểm thi công, cơ sở và nguồn tư liệu của 3 ca (Kỹ thuật + Vận hành, Media); không tự điền bằng ngày đăng.
+- 20/11: hồ sơ 3 ca lấy từ chính bài đã đăng (chủ quản xác nhận bài là nguồn): mã ca CHEV-CAP-2015-X3U, CHEV-COL-VID-F10, CHEV-ORL-F10P; cơ sở Captiva = Trụ Sở Chính, Orlando = Auto365 Thủ Đức (nay Trụ Sở Chính), Colorado bài/video không ghi; thời điểm thi công các bài không ghi — chỉ ghi mốc "không muộn hơn ngày đăng", không coi ngày đăng là ngày làm. Chi tiết ở Master Data 04.
