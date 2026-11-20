@@ -40,20 +40,20 @@ Bảo hành chỉ hiển thị khi hub có ghi (4 mẫu bi gầm X-Light không 
 
 ## 5. Tự chấm (mục tiêu chạy Ads)
 
-**≈ 93/100** (cập nhật 20/11: thêm khối ánh sáng thực tế trước/sau + link Ads mở đúng tab)
+**≈ 95/100** (cập nhật 20/11: ảnh trước/sau, link Ads theo tab, thay 2 ảnh minh họa bằng ảnh thật, dòng thông số trên thẻ, bỏ bảng so sánh)
 
 | Hạng mục | Điểm | Ghi chú |
 |---|---|---|
 | Khớp quảng cáo, rõ màn hình đầu | 9/10 | H1 + Trụ Sở Chính + 3 số liệu có nguồn; hero chữ trái – ảnh phải |
 | Đường tới sản phẩm & giá | 9/10 | 4 tab, 5 mẫu/tab, bấm mẫu mở form kèm tên + giá |
-| Định hướng chọn đèn | 9/10 | Bảng 7 nhóm đèn (vị trí, phù hợp, giá từ) |
+| Định hướng chọn đèn | 9/10 | Mỗi tab có câu định hướng (vị trí lắp, hợp khi nào) + dòng thông số trên thẻ; đã bỏ bảng 7 nhóm (lặp ý, có nhóm không có mẫu) |
 | Bằng chứng ánh sáng thực tế | 9,5/10 | 6 ảnh chụp tại Auto365: trước/sau Ranger, CX-5; so nhiệt màu 3000/4300/6000K; vùng Cos 3000K; bảng test; Cayenne |
 | Uy tín Trụ Sở Chính | 9/10 | Chứng nhận đại lý X-Light, 6 lý do, 12 xe thực tế, 3 đánh giá Google |
 | CTA & giữ khách trên trang | 9,5/10 | Bỏ link ra auto365.vn; 2 khối CTA; thẻ xe thực tế mở form; thanh Gọi/Zalo/Đặt lịch trên mobile |
 | Pháp lý | 9,5/10 | Dùng nguyên văn block đã duyệt |
 | Mobile / tablet | 9/10 | Vuốt ngang ở mẫu, "Vì sao", xe thực tế; không tràn ngang (375/900/1280px) |
 | Link theo nhóm Ads | 9,5/10 | Thêm ?loai=bi-gam / bi-led / bi-laser / bong-led để mở đúng tab |
-| Chỗ còn yếu | – | 2 ảnh minh họa (phiếu bàn giao, hệ thống chi nhánh); chưa lead test trên URL Ads |
+| Chỗ còn yếu | – | Chưa lead test trên URL Ads; hotline 911 và "370 xe" chờ xác nhận |
 
 ## 6. Trước khi chạy Ads
 
