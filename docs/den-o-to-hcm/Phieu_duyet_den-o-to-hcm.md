@@ -62,9 +62,9 @@ Bảo hành chỉ hiển thị khi hub có ghi (4 mẫu bi gầm X-Light không 
 
 ## 7. Link cho từng nhóm quảng cáo
 
-- Bi gầm:  (mặc định)
-- Bi LED pha: 
-- Bi Laser: 
-- Bóng LED: 
+- Bi gầm: `…/den-o-to-hcm/?loai=bi-gam` (mặc định)
+- Bi LED pha: `…/den-o-to-hcm/?loai=bi-led`
+- Bi Laser: `…/den-o-to-hcm/?loai=bi-laser`
+- Bóng LED: `…/den-o-to-hcm/?loai=bong-led`
 
-Có thể ghép thêm UTM, ví dụ ; form tự gửi UTM về /api/leads.
+Có thể ghép thêm UTM, ví dụ `?loai=bi-led&utm_source=google&utm_campaign=bi-led-hcm`; form tự gửi UTM về /api/leads.
