@@ -43,3 +43,9 @@
 | P2 Style cuối body | Chuyển về head, giữ thứ tự cascade | Đã sửa |
 | P2 CTA header 1440 xuống 3 dòng | `.td-hd .td-btn{white-space:nowrap;flex:none}` → 1 dòng | Đã sửa |
 | U3 hồ sơ ca/ảnh/đánh giá cùng bản | — | CX |
+
+## Cập nhật 20/11/2026 — đóng tồn đọng R2
+- P1-01 ICAR: caption/ALT ghi "chứng nhận ký 25/06/2024, hiệu lực 1 năm theo tài liệu (lưu tham khảo lịch sử)". Đã sửa trên preview.
+- P1-02 Giá: bỏ bi LED 2tr/bộ; bi gầm 3,5tr/cặp 02 đèn (Titan 301) chưa VAT, công/pát/phụ kiện riêng; camera 1,25tr giá máy gồm VAT, công/phụ kiện riêng; phim 3M = giá dán lẻ theo vị trí (bảng giá 3M 06/2026), không áp trọn xe.
+- CX-03/04/05: user báo IT/các bộ phận đã kiểm tra và xác nhận OK (20/11/2026).
+- Thêm sau R2: chứng nhận 3M Pro Shop (11/2026–11/2029), 6 nhóm dịch vụ, tối ưu mobile.
