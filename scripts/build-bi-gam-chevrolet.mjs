@@ -217,3 +217,10 @@ console.log('built', path.join(dir, 'index.html'), out.length, { models: models.
   if(h.includes('data-bgchev-ad')) throw new Error('active-descendant already injected');
   const js=`<script data-bgchev-ad>(function(){var pop=document.getElementById('bgchev-bf-pop');if(!pop)return;var inp=document.querySelector('input[aria-controls="bgchev-bf-pop"]');if(!inp)return;var busy=false;function sync(){if(busy)return;busy=true;var opts=pop.hidden?[]:pop.querySelectorAll('[role="option"]'),act=null;for(var i=0;i<opts.length;i++){var o=opts[i];if(!o.id)o.id='bgchev-bf-opt-'+i;var on=o.classList.contains('is-active');o.setAttribute('aria-selected',on?'true':'false');if(on)act=o;}if(act)inp.setAttribute('aria-activedescendant',act.id);else inp.removeAttribute('aria-activedescendant');busy=false;}new MutationObserver(sync).observe(pop,{childList:true,subtree:true,attributes:true,attributeFilter:['class','hidden']});inp.addEventListener('blur',function(){setTimeout(sync,0);});})();</script>\n      `;
   h=h.replace(tag, js+tag); fs.writeFileSync(p,h); console.log('injected active-descendant'); }
+
+// ---- Câu "Tư vấn đúng theo từng xe" (reviewer 20/11/2026) — không áp 12V/24V chung cho Chevrolet ----
+{ const p=path.join(dir,'index.html'); let h=fs.readFileSync(p,'utf8');
+  const a='Kiểm tra hốc đèn và hệ điện 12V/24V trước khi đề xuất mẫu';
+  if(!h.includes(a)) throw new Error('12V/24V sentence not found');
+  h=h.split(a).join('Kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc theo đúng đời, phiên bản xe trước khi đề xuất cấu hình bi gầm');
+  fs.writeFileSync(p,h); console.log('replaced 12V/24V sentence'); }
