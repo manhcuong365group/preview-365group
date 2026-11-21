@@ -52,3 +52,5 @@
 
 ## 21/11/2026 — Chốt phường
 User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường Bờ Bao 1 (Tân Thắng), **P. Tây Thạnh**, TP.HCM. Đã đổi toàn trang + LocalBusiness schema từ Tân Sơn Nhì → Tây Thạnh (đóng N1/N2 phía web).
+
+**Sửa 21/11 (chiều):** chi nhánh Auto365 Tân Phú nhắn xác nhận "Phường Tân Sơn Nhì" → trả về Tân Sơn Nhì. Địa chỉ Tây Thạnh trên chứng nhận AX Film là địa danh cũ.
