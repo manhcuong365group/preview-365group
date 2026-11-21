@@ -87,3 +87,5 @@ Có thể ghép thêm UTM, ví dụ `?loai=bi-led&utm_source=google&utm_campaign
 - FAQ đèn trợ sáng: sửa câu NĐ 238 thành "Điều 13 này đã được sửa đổi tại điểm b khoản 8 Điều 3 Nghị định 238/2026/NĐ-CP, nên cần đối chiếu văn bản hiện hành" (đồng bộ JSON-LD), theo ghi chú reviewer.
 
 **Còn CX:** đánh giá Google/ảnh case cần hồ sơ nguồn; lead test thật.
+
+**Lead test 21/11/2026:** POST https://auto365.vn/api/leads (service "Nâng cấp đèn ô tô", source_page "Landing Đèn HCM – popup", tên "TEST - Landing Den HCM", SĐT 0900000000) → `success:true`, `lead_id 426`, `test:true`. Cần xoá lead #426 trong CRM; kiểm lead về đúng người nhận đèn tại Trụ Sở Chính.
