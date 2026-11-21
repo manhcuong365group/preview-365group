@@ -40,3 +40,5 @@ Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xá
 - 20/11: khối "Tư vấn đúng theo từng xe" thay câu "hệ điện 12V/24V" bằng "kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc theo đúng đời, phiên bản xe" (góp ý reviewer, chỉ trang Chevrolet).
 
 - 21/11: chủ quản xác nhận ngày thi công 3 ca — Captiva 04/11/2026, Colorado 28/10/2023, Orlando 22/08/2024 (ghi ở Master Data 04).
+
+- 21/11: Colorado làm tại Trụ Sở Chính (chủ quản xác nhận). Đời xe Colorado/Orlando là ca cũ không lưu hồ sơ; hub không công bố đời xe cho 2 ca này.

@@ -68,3 +68,5 @@ Còn CX: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); lead
 Ba thẻ case nối với bài nguồn và mã ca trong Master Data 04: CHEV-CAP-2015-X3U (Captiva), CHEV-COL-VID-F10 (Colorado), CHEV-ORL-F10P (Orlando). Cơ sở và thời điểm lấy theo nội dung bài. Chỗ nào bài không ghi thì để trống có ghi chú, không lấy ngày đăng làm ngày thi công.
 
 Ngày thi công 3 ca do chủ quản xác nhận 21/11/2026: Captiva 04/11/2026, Colorado 28/10/2023, Orlando 22/08/2024.
+
+Cơ sở Colorado: Trụ Sở Chính (chủ quản xác nhận 21/11/2026). Đời xe Colorado/Orlando không lưu hồ sơ; thẻ ca trên hub không ghi đời xe — đã kiểm 21/11.

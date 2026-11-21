@@ -68,3 +68,8 @@ Theo chủ quản, các bài đã đăng trên auto365.vn là nguồn hồ sơ c
 
 ## Cập nhật 21/11/2026 — thời điểm thi công
 Chủ quản xác nhận ngày thi công của 3 ca: Captiva (CHEV-CAP-2015-X3U) 04/11/2026; Colorado (CHEV-COL-VID-F10) 28/10/2023; Orlando (CHEV-ORL-F10P) 22/08/2024. Đây là ngày thi công do chủ quản xác nhận, trùng với ngày đăng bài/video, không phải suy từ ngày đăng. Còn mở: cơ sở và đời xe Colorado, đời xe Orlando, chứng từ/quyền tư liệu.
+
+## Cập nhật 21/11/2026 — cơ sở Colorado, đời xe ca cũ
+- Colorado (CHEV-COL-VID-F10): cơ sở Auto365.vn - Trụ Sở Chính, chủ quản xác nhận 21/11/2026.
+- Đời/phiên bản Colorado và Orlando: ca cũ, không lưu hồ sơ (chủ quản xác nhận). Cách xử lý: hub **không công bố đời xe** cho 2 ca này (chỉ Captiva ghi 2015 vì bài có Bảng 1); thẻ ca chỉ nêu dòng xe + SKU + lens; FAQ và khối tư vấn yêu cầu kiểm hốc đèn, nguồn cấp, điều khiển, dây/giắc theo đúng đời xe thực tế nên ca cũ không được suy cho xe khác. Lời công bố giới hạn đúng phần đã biết, theo hướng dẫn reviewer 20/11.
+- Tư liệu: ảnh/video là tư liệu của Auto365 đăng trên auto365.vn và kênh Auto365 Review.
