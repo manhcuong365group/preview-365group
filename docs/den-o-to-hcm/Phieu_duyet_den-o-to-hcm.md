@@ -16,7 +16,7 @@ Toàn bộ tên mẫu, giá, đơn vị, bảo hành, FAQ, khối pháp lý và 
 |---|---|---|---|
 | 1 | Hotline **0365 365 911** cho toàn trang (gọi, Zalo, form) | Hub ánh sáng – khối Trụ Sở Chính | Đúng số nhận cuộc gọi đèn tại Trụ Sở Chính? |
 | 2 | "Đại lý ủy quyền chính hãng X-Light – chứng nhận từ 01/01/2020" + ảnh chứng nhận | Hub ánh sáng | Giữ nguyên |
-| 3 | "370 xe đã lắp" | Hub: "Xem tất cả 370 case trên Auto365" | Con số còn đúng? |
+| 3 | ~~"370 xe đã lắp"~~ – đã bỏ khỏi trang (21/11) | – | – |
 | 4 | "90+ chi nhánh tại 33 tỉnh thành" | Hub ánh sáng | Giữ nguyên |
 | 5 | "Đại lý chính hãng X-Light, GTR, AES" (hero) | Chủ quản xác nhận 12 + 14/10/2026 | Giữ nguyên |
 | 6 | Giá **chưa gồm VAT, pát, dây, công lắp** – ghi dưới lưới mẫu và trong FAQ | Hub ánh sáng | Câu chữ đã đủ rõ? |
@@ -81,8 +81,9 @@ Có thể ghép thêm UTM, ví dụ `?loai=bi-led&utm_source=google&utm_campaign
 | P3 – Công suất chưa rõ trên mỗi đèn | Bỏ dòng công suất của 7 mẫu mà nguồn không ghi rõ đơn vị (V30 Ultra, SV Turbo S, V20l, F+ Ultra, X6 Pro, L91 Pro, Mini V12 Hyper → chỉ giữ "Chân H4"). Giữ các dòng có ghi "mỗi đèn" hoặc thông số không phải công suất. |
 | Nguồn pháp lý | Gắn link Luật TTATGT 2024, NĐ 168/2024, NĐ 238/2026 (Cổng Chính phủ) ở dòng "Căn cứ". Nội dung block pháp lý giữ nguyên văn đã duyệt 10/10/2026. |
 
-**Còn CX, ngoài phạm vi sửa trang:**
-- Canonical về `/nang-cap-anh-sang`: SEO và chủ quản URL quyết định đây là trang thay danh mục hay landing địa phương riêng.
-- Con số 370 xe, đánh giá Google, ủy quyền, ảnh case: cần hồ sơ nguồn và người xác nhận.
-- Ghi chú của reviewer về điểm/khoản NĐ 238 sửa Điều 13: câu trong FAQ là nguyên văn hub đã duyệt, cần anh Đạo đối chiếu lại.
-- Đầu nhận form/CRM: cần lead test thật.
+**Cập nhật 21/11/2026 (chủ quản chốt):**
+- Vai trò URL: landing riêng chạy Ads TP.HCM → canonical tự trỏ về chính trang (không về /nang-cap-anh-sang).
+- Bỏ con số "370 xe" (hero + mục xe thực tế) vì chưa có hồ sơ nguồn.
+- FAQ đèn trợ sáng: sửa câu NĐ 238 thành "Điều 13 này đã được sửa đổi tại điểm b khoản 8 Điều 3 Nghị định 238/2026/NĐ-CP, nên cần đối chiếu văn bản hiện hành" (đồng bộ JSON-LD), theo ghi chú reviewer.
+
+**Còn CX:** đánh giá Google/ảnh case cần hồ sơ nguồn; lead test thật.
