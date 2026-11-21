@@ -65,3 +65,6 @@
 | Orlando | CHEV-ORL-F10P | Auto365 Thủ Đức (nay Trụ Sở Chính) | Không muộn hơn 22/08/2024 (ngày đăng bài) | Bài đã đăng |
 
 Theo chủ quản, các bài đã đăng trên auto365.vn là nguồn hồ sơ ca. Phần bài không ghi được để trống có ghi chú, không suy đoán. 5.3: chuyển từ CX sang **đóng theo nguồn bài**; chỗ trống (cơ sở Colorado, ngày làm chính xác) ghi rõ giới hạn.
+
+## Cập nhật 21/11/2026 — thời điểm thi công
+Chủ quản xác nhận ngày thi công của 3 ca: Captiva (CHEV-CAP-2015-X3U) 04/11/2026; Colorado (CHEV-COL-VID-F10) 28/10/2023; Orlando (CHEV-ORL-F10P) 22/08/2024. Đây là ngày thi công do chủ quản xác nhận, trùng với ngày đăng bài/video, không phải suy từ ngày đăng. Còn mở: cơ sở và đời xe Colorado, đời xe Orlando, chứng từ/quyền tư liệu.

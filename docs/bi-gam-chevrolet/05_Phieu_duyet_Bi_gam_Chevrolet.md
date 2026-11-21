@@ -38,3 +38,5 @@ Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xá
 - 20/11: hồ sơ 3 ca lấy từ chính bài đã đăng (chủ quản xác nhận bài là nguồn): mã ca CHEV-CAP-2015-X3U, CHEV-COL-VID-F10, CHEV-ORL-F10P; cơ sở Captiva = Trụ Sở Chính, Orlando = Auto365 Thủ Đức (nay Trụ Sở Chính), Colorado bài/video không ghi; thời điểm thi công các bài không ghi — chỉ ghi mốc "không muộn hơn ngày đăng", không coi ngày đăng là ngày làm. Chi tiết ở Master Data 04.
 
 - 20/11: khối "Tư vấn đúng theo từng xe" thay câu "hệ điện 12V/24V" bằng "kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc theo đúng đời, phiên bản xe" (góp ý reviewer, chỉ trang Chevrolet).
+
+- 21/11: chủ quản xác nhận ngày thi công 3 ca — Captiva 04/11/2026, Colorado 28/10/2023, Orlando 22/08/2024 (ghi ở Master Data 04).
