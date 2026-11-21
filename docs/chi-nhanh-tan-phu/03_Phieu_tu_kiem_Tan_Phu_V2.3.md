@@ -49,3 +49,6 @@
 - P1-02 Giá: bỏ bi LED 2tr/bộ; bi gầm 3,5tr/cặp 02 đèn (Titan 301) chưa VAT, công/pát/phụ kiện riêng; camera 1,25tr giá máy gồm VAT, công/phụ kiện riêng; phim 3M = giá dán lẻ theo vị trí (bảng giá 3M 06/2026), không áp trọn xe.
 - CX-03/04/05: user báo IT/các bộ phận đã kiểm tra và xác nhận OK (20/11/2026).
 - Thêm sau R2: chứng nhận 3M Pro Shop (11/2026–11/2029), 6 nhóm dịch vụ, tối ưu mobile.
+
+## 21/11/2026 — Chốt phường
+User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường Bờ Bao 1 (Tân Thắng), **P. Tây Thạnh**, TP.HCM. Đã đổi toàn trang + LocalBusiness schema từ Tân Sơn Nhì → Tây Thạnh (đóng N1/N2 phía web).
