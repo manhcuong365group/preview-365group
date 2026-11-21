@@ -68,3 +68,21 @@ Bảo hành chỉ hiển thị khi hub có ghi (4 mẫu bi gầm X-Light không 
 - Bóng LED: `…/den-o-to-hcm/?loai=bong-led`
 
 Có thể ghép thêm UTM, ví dụ `?loai=bi-led&utm_source=google&utm_campaign=bi-led-hcm`; form tự gửi UTM về /api/leads.
+
+## 8. Xử lý phiếu đánh giá V2.3 (20/11/2026, bản v=9)
+
+| Mục phiếu | Đã xử lý (21/11/2026) |
+|---|---|
+| P1 – Nội dung quyết định chỉ sinh bằng JS (L2/S2) | 4 tab, 20 thẻ mẫu (tên, thông số, giá, đơn vị) và 12 case nay nằm sẵn trong HTML. JS chỉ ẩn/hiện tab, mở form. Tắt JS: hiện đủ 4 nhóm kèm tiêu đề nhóm, mỗi thẻ là link tới trang sản phẩm, mỗi case là link tới bài thi công trên auto365.vn. Bật JS: bấm thẻ/case vẫn mở form, không rời trang. |
+| P2 – 13 href `#dat-lich` không có đích | Thêm `id="dat-lich"` cho cụm liên hệ ở khối Trụ Sở Chính (Đặt lịch / Gọi 0365 365 911 / Chỉ đường), dùng được khi không có JS. Thẻ mẫu và case không còn trỏ `#dat-lich`. Kiểm HTML: 0 fragment mất đích. |
+| P2 – Thẻ không có đường xem chi tiết | Thẻ mẫu `href` = trang sản phẩm, case `href` = bài thi công (dùng khi không có JS). |
+| P3 – `og:image` tương đối | Đổi sang URL tuyệt đối của ảnh hero trên preview. Khi lên production cần đổi theo SEO Pack. |
+| P3 – Đơn vị bộ/cặp, VAT | Ghi chú chung dưới lưới mẫu: "chưa gồm VAT; '/bộ', '/cặp' là giá cho 2 đèn; pát, dây, công lắp báo theo xe". FAQ giữ nguyên văn đã duyệt. |
+| P3 – Công suất chưa rõ trên mỗi đèn | Bỏ dòng công suất của 7 mẫu mà nguồn không ghi rõ đơn vị (V30 Ultra, SV Turbo S, V20l, F+ Ultra, X6 Pro, L91 Pro, Mini V12 Hyper → chỉ giữ "Chân H4"). Giữ các dòng có ghi "mỗi đèn" hoặc thông số không phải công suất. |
+| Nguồn pháp lý | Gắn link Luật TTATGT 2024, NĐ 168/2024, NĐ 238/2026 (Cổng Chính phủ) ở dòng "Căn cứ". Nội dung block pháp lý giữ nguyên văn đã duyệt 10/10/2026. |
+
+**Còn CX, ngoài phạm vi sửa trang:**
+- Canonical về `/nang-cap-anh-sang`: SEO và chủ quản URL quyết định đây là trang thay danh mục hay landing địa phương riêng.
+- Con số 370 xe, đánh giá Google, ủy quyền, ảnh case: cần hồ sơ nguồn và người xác nhận.
+- Ghi chú của reviewer về điểm/khoản NĐ 238 sửa Điều 13: câu trong FAQ là nguyên văn hub đã duyệt, cần anh Đạo đối chiếu lại.
+- Đầu nhận form/CRM: cần lead test thật.
