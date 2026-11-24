@@ -89,3 +89,5 @@ Có thể ghép thêm UTM, ví dụ `?loai=bi-led&utm_source=google&utm_campaign
 **Còn CX:** đánh giá Google/ảnh case cần hồ sơ nguồn; lead test thật.
 
 **Lead test 21/11/2026:** POST https://auto365.vn/api/leads (service "Nâng cấp đèn ô tô", source_page "Landing Đèn HCM – popup", tên "TEST - Landing Den HCM", SĐT 0900000000) → `success:true`, `lead_id 426`, `test:true`. Cần xoá lead #426 trong CRM; kiểm lead về đúng người nhận đèn tại Trụ Sở Chính.
+
+**Vá tái kiểm v12 (24/11/2026):** sửa dẫn chiếu FAQ thành "Điều 3 NĐ 238/2026 sửa đổi điểm b khoản 8 Điều 13 NĐ 168/2024, về biển số; không phải điểm a khoản 3 Điều 13 về đèn" (FAQ + JSON-LD), theo câu reviewer đề xuất.
