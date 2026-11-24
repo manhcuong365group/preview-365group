@@ -112,3 +112,9 @@ Anh Đạo xác nhận đúng: 12 case, 6 ảnh ánh sáng thực tế (chụp t
 | 12 | Mitsubishi Outlander 2020 | Bi gầm GTR G1 Turbo | https://auto365.vn/mitsubishi-outlander-2020-lap-bi-gam-gtr-g1-turbo |
 
 **Còn lại (IT/vận hành):** đăng lên auto365.vn, chốt URL; xoá lead test #426 sau khi kiểm CRM; Ads dùng URL auto365.vn.
+
+**Cập nhật 24/11/2026 (chủ quản):**
+- Vai trò URL: landing Ads địa phương TP.HCM (chỉ Trụ Sở Chính), không thay /do-den-xe-hoi hay /nang-cap-anh-sang; hai trang đó là trang dịch vụ/danh mục cho tìm kiếm tự nhiên.
+- Lead test #426: CRM đã nhận đúng và đã xoá.
+- Chấm trên preview; production/SEO Pack làm khi đăng live.
+- Link "10 đánh giá trên Google" nới thành nút cao 44px cho dễ bấm trên mobile.
