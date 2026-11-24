@@ -72,3 +72,14 @@ User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường 
   - Phim 3M: giá dán lẻ theo từng vị trí kính, lấy từ bảng giá 3M 06/2026.
 - **Quyền dùng tư liệu:** bộ phận Media đã xác nhận được phép sử dụng ảnh chứng nhận và ảnh cơ sở trên trang (theo xác nhận của chủ quản ngày 24/11/2026). Giấy ICAR 2024 vẫn ghi là tài liệu lịch sử.
 - **Đề nghị:** đóng N4/N5 và phần G3 liên quan. Phần còn mở là ảnh chụp điểm Google (4,7★ / 60 đánh giá) kèm ngày chụp.
+
+## Hồ sơ điểm Google (bổ sung 24/11/2026)
+
+- **Ảnh chụp:** Google Maps "Auto365.vn Quận Tân Phú", chụp ngày 24/11/2026. Xem [google-maps-tan-phu-20261124.png](google-maps-tan-phu-20261124.png).
+- **Nội dung trên Maps:**
+  - 4,7★ với 60 đánh giá, khớp số đang ghi trên trang.
+  - Địa chỉ 20/54A đường Bờ Bao 1, Tân Thắng, **Tân Sơn Nhì**, khớp NAP.
+  - Điện thoại +84 564 365 365.
+  - Đóng cửa 18:00.
+- **Trên trang:** đã ghi thêm "(11/2026)" cạnh số đánh giá. dateModified đổi thành 2026-11-24.
+- **Đề nghị:** đóng mục điểm Google. Toàn bộ CX hồ sơ (N1/N2, N4/N5, G3, U3) đã có hồ sơ.
