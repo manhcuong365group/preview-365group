@@ -36,3 +36,6 @@
 | **Tổng** | **≈93,7/100** — qua ngưỡng SEO và GEO (24,1 ≥ 23,75), tổng còn dưới 95 |
 
 Còn mở: ảnh thẻ dòng xe (designer, ≈ +1); cơ sở + ngày thi công từng ca (chủ quản, ≈ +0,5); test điện thoại thật.
+
+## Chấm lại 24/11/2026 — có hồ sơ ca theo bài
+Cơ sở và thời điểm thi công ghi theo bài đã đăng (chủ quản xác nhận 24/11/2026), xem Master Data 04 và phiếu 05. C ≈ 28,1, G ≈ 24,2 → **Tổng ≈ 94,0/100**. Còn mở: ảnh thẻ dòng xe (designer); cơ sở 3008 còn trống.

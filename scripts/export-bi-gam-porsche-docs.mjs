@@ -91,7 +91,7 @@ const checked = '2026-11-24'; // case, cẩm nang, link thẻ dòng xe: kiểm H
 const checkedModel = checked;
 // Hồ sơ ca lấy từ chính bài đã đăng (nguồn chuẩn, đọc lại 20/11/2026). Thời điểm thi công: bài không ghi → không điền bằng ngày đăng.
 const CASEINFO = {
-  'https://auto365.vn/porsche-cayenne-s-2014-lap-bi-gam-x-light-f10-turbo-v2': ['POR-CAYENNE-2014', 'Xe: Porsche Cayenne S 2014 lắp bi gầm X-Light F10 Turbo V2 4300K (theo bài). Cơ sở và thời điểm thi công: chờ chủ quản xác nhận (bài không ghi; ngày đăng 2026-08-11 không phải ngày làm). Tư liệu: ảnh trong bài (ảnh Auto365).'],
+  "https://auto365.vn/porsche-cayenne-s-2014-lap-bi-gam-x-light-f10-turbo-v2": ["POR-CAYENNE-2014","Xe: Porsche Cayenne S 2014. SKU: X-Light F10 Turbo V2 4300K, hốc đèn gầm, tháo cản, pát/bộ gá rời, có relay. Cơ sở: Auto365.vn - Trụ Sở Chính (bài ghi). Ngày thi công: 2026-08-06 (bài ghi \"Ngày thi công 06/08/2026\"). Tư liệu: ảnh trong bài (ảnh Auto365)."],
 };
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
 models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? (/\/bi-gam-porsche-/.test(m.url) ? 'bài tư vấn dòng xe đã đăng' : 'bài case đã đăng (chưa có bài tư vấn dòng xe)') : '', checkedModel, [m.status === 'Có hồ sơ' ? 'HTTP 200 (kiểm 07/11)' : '', /^https?:/.test(m.img) ? 'ảnh: ảnh case thật Auto365 (dòng xe chưa có ảnh mẫu)' : ''].filter(Boolean).join('; ')]));

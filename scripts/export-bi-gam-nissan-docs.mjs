@@ -91,7 +91,7 @@ const checked = '2026-11-24'; // case, cẩm nang, link thẻ dòng xe: kiểm H
 const checkedModel = checked;
 // Hồ sơ ca lấy từ chính bài đã đăng (nguồn chuẩn, đọc lại 20/11/2026). Thời điểm thi công: bài không ghi → không điền bằng ngày đăng.
 const CASEINFO = {
-  'https://auto365.vn/nissan-sunny-do-den-bi-gam-xlight-f10-turbo': ['NIS-SUNNY-NA', 'Xe: Nissan Sunny nâng cấp bi gầm X-Light F10 Turbo (theo bài). Cơ sở và thời điểm thi công: chờ chủ quản xác nhận (bài không ghi; ngày đăng 2024-08-09 không phải ngày làm). Tư liệu: ảnh trong bài (ảnh Auto365).'],
+  "https://auto365.vn/nissan-sunny-do-den-bi-gam-xlight-f10-turbo": ["NIS-SUNNY-NA","Xe: Nissan Sunny (bài không ghi đời). SKU: X-Light F10 Turbo, lens 3.0 inch. Cơ sở: Auto365 Thủ Đức theo bài (nay Auto365.vn - Trụ Sở Chính). Thời điểm thi công: 2024-08-09 theo bài (chủ quản xác nhận 24/11/2026). Tư liệu: ảnh trong bài (ảnh Auto365)."],
 };
 const rows = [['content_type', 'model_id', 'model', 'group', 'status', 'title', 'url', 'published', 'case_id', 'sku_version', 'label', 'image', 'source', 'checked_at', 'note']];
 models.forEach((m) => rows.push(['model', slug(m.name), m.name, m.group, m.status, '', m.url, '', '', '', '', m.img, m.status === 'Có hồ sơ' ? (/\/bi-gam-nissan-/.test(m.url) ? 'bài tư vấn dòng xe đã đăng' : 'bài case đã đăng (chưa có bài tư vấn dòng xe)') : '', checkedModel, [m.status === 'Có hồ sơ' ? 'HTTP 200 (kiểm 07/11)' : '', /^https?:/.test(m.img) ? 'ảnh: ảnh case thật Auto365 (dòng xe chưa có ảnh mẫu)' : ''].filter(Boolean).join('; ')]));

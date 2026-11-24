@@ -12,4 +12,6 @@
 
 ## Còn chờ (chủ quản / designer)
 1. Ảnh thẻ dòng xe (designer).
-3. Cơ sở và ngày thi công của ca (bài không ghi; không lấy ngày đăng làm ngày làm).
+
+## Hồ sơ ca — 24/11/2026
+- **NIS-SUNNY-NA** — Xe: Nissan Sunny (bài không ghi đời). SKU: X-Light F10 Turbo, lens 3.0 inch. Cơ sở: Auto365 Thủ Đức theo bài (nay Auto365.vn - Trụ Sở Chính). Thời điểm thi công: 2024-08-09 theo bài (chủ quản xác nhận 24/11/2026). Tư liệu: ảnh trong bài (ảnh Auto365).

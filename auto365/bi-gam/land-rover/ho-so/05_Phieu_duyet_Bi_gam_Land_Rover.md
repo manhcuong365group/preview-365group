@@ -12,4 +12,6 @@
 
 ## Còn chờ (chủ quản / designer)
 1. Ảnh thẻ dòng xe (designer).
-3. Cơ sở và ngày thi công của ca (bài không ghi; không lấy ngày đăng làm ngày làm).
+
+## Hồ sơ ca — 24/11/2026
+- **LR-LR2S-2010** — Xe: Land Rover LR2 S 2010. SKU: X-Light F10 Turbo V2 4300K, 1 cặp, pát rời, vị trí đèn gầm. Cơ sở: Auto365.vn – Trụ Sở Chính (bài ghi "Điểm thi công"). Thời điểm thi công: 2026-09-25 theo bài (chủ quản xác nhận 24/11/2026). Tư liệu: ảnh trong bài (ảnh Auto365).

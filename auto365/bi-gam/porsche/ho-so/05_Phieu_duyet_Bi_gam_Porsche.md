@@ -12,4 +12,6 @@
 
 ## Còn chờ (chủ quản / designer)
 1. Ảnh thẻ dòng xe (designer).
-3. Cơ sở và ngày thi công của ca (bài không ghi; không lấy ngày đăng làm ngày làm).
+
+## Hồ sơ ca — 24/11/2026
+- **POR-CAYENNE-2014** — Xe: Porsche Cayenne S 2014. SKU: X-Light F10 Turbo V2 4300K, hốc đèn gầm, tháo cản, pát/bộ gá rời, có relay. Cơ sở: Auto365.vn - Trụ Sở Chính (bài ghi). Ngày thi công: 2026-08-06 (bài ghi "Ngày thi công 06/08/2026"). Tư liệu: ảnh trong bài (ảnh Auto365).
