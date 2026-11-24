@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Peugeot: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (2), FAQPage |
-| SHA-256 index.html | `9ee8e6e4bbccd93763f4ca676f45424549e15894cf297a5c3915bfe415814062` |
-| SHA-256 content-src.html | `37039ef002cd665d19e664b521eca8408c03dd8f5c31b6135d93ac88d6aba3c5` |
+| SHA-256 index.html | `6a03071ecaa51db30f7fc32860cc05fb880ddccc22ab0f797c68667c54e3146d` |
+| SHA-256 content-src.html | `55443af8c999c241c83295aa974d450f2abfef7023dad17f594234ab58a32f3f` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Peugeot giúp bổ sung vùng sáng gần và hai bên lề đư�
 
 ## Chọn dòng xe Peugeot
 
-### Dòng xe (8)
+### Dòng xe (13)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -29,9 +29,14 @@ Lắp bi gầm Peugeot giúp bổ sung vùng sáng gần và hai bên lề đư�
 | Peugeot 2008 | SUV | Liên hệ tư vấn | — |
 | Peugeot 408 | SUV | Liên hệ tư vấn | — |
 | Peugeot 508 | Sedan | Liên hệ tư vấn | — |
+| Peugeot 407 | Sedan | Liên hệ tư vấn | — |
 | Peugeot 308 | Sedan | Liên hệ tư vấn | — |
+| Peugeot 307 | Sedan | Liên hệ tư vấn | — |
 | Peugeot 208 | Sedan | Liên hệ tư vấn | — |
+| Peugeot 207 | Sedan | Liên hệ tư vấn | — |
+| Peugeot 107 | Sedan | Liên hệ tư vấn | — |
 | Peugeot Traveller | MPV | Liên hệ tư vấn | — |
+| Peugeot Partner | MPV | Liên hệ tư vấn | — |
 
 ## Xe Peugeot đã lắp bi gầm tại Auto365 (2 bài hồ sơ)
 
@@ -52,7 +57,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### Sedan, hatchback đi phố
 
-_Dòng xe:_ 208, 308, 508
+_Dòng xe:_ 107, 207, 208, 307, 308, 407, 508
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Xe đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.
@@ -76,7 +81,7 @@ CTA: — (chưa có bài tư vấn dòng xe)
 
 #### MPV chở khách, đi đường dài
 
-_Dòng xe:_ Traveller
+_Dòng xe:_ Traveller, Partner
 
 - Nếu khó nhìn xa, nên kiểm tra đèn chính trước; bi gầm hỗ trợ vùng gần và lề đường.
 - Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.

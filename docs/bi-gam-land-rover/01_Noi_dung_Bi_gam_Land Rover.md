@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Land Rover: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `baa616d1b915c6c57767c6928bd00c4a33705ce88cda9fc9f1240110b137a62f` |
-| SHA-256 content-src.html | `d51019683999777621cfe34ad8f99adfbde971113dcdc66482350fc18d0dee4c` |
+| SHA-256 index.html | `59100763043532d53abc792ad8d49c2d377dfebe1b04cd354fe891bc4d3fe237` |
+| SHA-256 content-src.html | `67d75e731b70333d85dc4982640e987c044e66a81a072594e160f030e950b96a` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,13 +20,16 @@ Lắp bi gầm Land Rover giúp bổ sung vùng sáng gần và hai bên lề đ
 
 ## Chọn dòng xe Land Rover
 
-### Dòng xe (8)
+### Dòng xe (11)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Land Rover LR2 S | land | Có hồ sơ | https://auto365.vn/bi-gam-land-rover-lr2-s |
+| Land Rover Freelander | land | Liên hệ tư vấn | — |
 | Land Rover Discovery Sport | land | Liên hệ tư vấn | — |
 | Land Rover Discovery | land | Liên hệ tư vấn | — |
+| Land Rover Discovery 4 (LR4) | land | Liên hệ tư vấn | — |
+| Land Rover Discovery 3 (LR3) | land | Liên hệ tư vấn | — |
 | Land Rover Defender | land | Liên hệ tư vấn | — |
 | Land Rover Range Rover Evoque | range | Liên hệ tư vấn | — |
 | Land Rover Range Rover Velar | range | Liên hệ tư vấn | — |
@@ -51,7 +54,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### SUV gia đình, đi phố
 
-_Dòng xe:_ LR2 S, Discovery Sport, Range Rover Evoque
+_Dòng xe:_ LR2 S, Freelander, Discovery Sport, Range Rover Evoque
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Xe đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.

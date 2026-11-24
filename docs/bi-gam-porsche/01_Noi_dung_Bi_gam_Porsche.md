@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Porsche: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `fca9b8fa78db2bb69c8de0dfc8ab6f3102e7e19597fa48cfb417a4202ec6204d` |
-| SHA-256 content-src.html | `464378a5f3c1ae391e46f907d214af69023af729436d1eccf447f0d954895a3d` |
+| SHA-256 index.html | `3a9659c315cffc4796628ec09bf1f5185a8fe10c90a1dcaf230f0331e2d4db61` |
+| SHA-256 content-src.html | `b48b614a00ce586f2a0e4ed6410bac7c998d53a8d1548dfe93e68c40e03a1621` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,13 +20,17 @@ Lắp bi gầm Porsche giúp bổ sung vùng sáng gần và hai bên lề đư�
 
 ## Chọn dòng xe Porsche
 
-### Dòng xe (3)
+### Dòng xe (7)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Porsche Cayenne | SUV | Có hồ sơ | https://auto365.vn/bi-gam-porsche-cayenne |
 | Porsche Macan | SUV | Liên hệ tư vấn | — |
 | Porsche Panamera | Sedan | Liên hệ tư vấn | — |
+| Porsche Taycan | Sedan | Liên hệ tư vấn | — |
+| Porsche 911 | sport | Liên hệ tư vấn | — |
+| Porsche 718 Boxster | sport | Liên hệ tư vấn | — |
+| Porsche 718 Cayman | sport | Liên hệ tư vấn | — |
 
 ## Xe Porsche đã lắp bi gầm tại Auto365 (1 bài hồ sơ)
 
@@ -70,13 +74,13 @@ CTA: — (chưa có bài tư vấn dòng xe)
 
 #### Xe nhiều hệ thống điện tử
 
-_Dòng xe:_ Cayenne, Macan, Panamera
+_Dòng xe:_ Cayenne, Macan, Panamera, Taycan, 911, 718
 
 - Kỹ thuật viên kiểm tra nguồn cấp, hệ thống điều khiển và dây/giắc theo đúng đời xe trước khi đề xuất cấu hình.
 - Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.
 - Hạn chế cắt khoét cản; ưu tiên pát và giắc phù hợp với xe.
 
-Chưa có hồ sơ Macan, Panamera: gửi đời xe để kỹ thuật viên kiểm tra hốc đèn. ()
+Chưa có hồ sơ các dòng khác: gửi đời xe để kỹ thuật viên kiểm tra hốc đèn. ()
 
 CTA: — (chưa có bài tư vấn dòng xe)
 

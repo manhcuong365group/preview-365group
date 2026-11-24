@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Nissan: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (1), FAQPage |
-| SHA-256 index.html | `8a2dc6a6251cd9f37a7eb40caa5d7f69e974f5512a68a2436b83461fafae85f6` |
-| SHA-256 content-src.html | `f4cc04e1e3d8c2e76856dabf209cb48f3514b6fbb6dbaa24586c1efd455ee65d` |
+| SHA-256 index.html | `5cc3a11be57b02edb86f6a7c25c86af5b8dce6f32ce95a4d8eefdc195a02e511` |
+| SHA-256 content-src.html | `aa0757c94c066a40c713caf8fc20da2b2df114100abe7d9b9e101b95a72bc8c6` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,18 +20,28 @@ Lắp bi gầm Nissan giúp bổ sung vùng sáng gần và hai bên lề đư�
 
 ## Chọn dòng xe Nissan
 
-### Dòng xe (8)
+### Dòng xe (18)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
 | Nissan Sunny | Sedan | Có hồ sơ | https://auto365.vn/nissan-sunny-do-den-bi-gam-xlight-f10-turbo |
 | Nissan Navara | Bán tải | Có hồ sơ | https://auto365.vn/bi-gam-nissan-navara |
+| Nissan Almera | Sedan | Liên hệ tư vấn | — |
+| Nissan Teana | Sedan | Liên hệ tư vấn | — |
+| Nissan Sylphy | Sedan | Liên hệ tư vấn | — |
+| Nissan Bluebird | Sedan | Liên hệ tư vấn | — |
+| Nissan Tiida | Sedan | Liên hệ tư vấn | — |
 | Nissan X-Trail | SUV | Liên hệ tư vấn | — |
 | Nissan Terra | SUV | Liên hệ tư vấn | — |
 | Nissan Kicks | SUV | Liên hệ tư vấn | — |
-| Nissan Almera | Sedan | Liên hệ tư vấn | — |
-| Nissan Teana | Sedan | Liên hệ tư vấn | — |
+| Nissan Juke | SUV | Liên hệ tư vấn | — |
+| Nissan Qashqai | SUV | Liên hệ tư vấn | — |
+| Nissan Murano | SUV | Liên hệ tư vấn | — |
+| Nissan Pathfinder | SUV | Liên hệ tư vấn | — |
+| Nissan Patrol | SUV | Liên hệ tư vấn | — |
 | Nissan Grand Livina | MPV | Liên hệ tư vấn | — |
+| Nissan Livina | MPV | Liên hệ tư vấn | — |
+| Nissan Urvan | MPV | Liên hệ tư vấn | — |
 
 ## Xe Nissan đã lắp bi gầm tại Auto365 (1 bài hồ sơ)
 
@@ -51,7 +61,7 @@ Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý 
 
 #### Sedan đi phố, chạy dịch vụ
 
-_Dòng xe:_ Sunny, Almera, Teana
+_Dòng xe:_ Sunny, Almera, Teana, Sylphy, Tiida
 
 - Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.
 - Xe chạy dịch vụ dùng đèn nhiều giờ nên ưu tiên đi dây gọn, có bảo vệ mạch.
@@ -63,7 +73,7 @@ CTA: — (chưa có bài tư vấn dòng xe)
 
 #### SUV, MPV gia đình
 
-_Dòng xe:_ X-Trail, Terra, Kicks, Grand Livina
+_Dòng xe:_ X-Trail, Terra, Kicks, Qashqai, Patrol, Grand Livina, Livina
 
 - Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường, hữu ích khi đi đường dài ban đêm.
 - Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
