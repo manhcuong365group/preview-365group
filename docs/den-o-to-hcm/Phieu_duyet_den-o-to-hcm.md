@@ -91,3 +91,24 @@ Có thể ghép thêm UTM, ví dụ `?loai=bi-led&utm_source=google&utm_campaign
 **Lead test 21/11/2026:** POST https://auto365.vn/api/leads (service "Nâng cấp đèn ô tô", source_page "Landing Đèn HCM – popup", tên "TEST - Landing Den HCM", SĐT 0900000000) → `success:true`, `lead_id 426`, `test:true`. Cần xoá lead #426 trong CRM; kiểm lead về đúng người nhận đèn tại Trụ Sở Chính.
 
 **Vá tái kiểm v12 (24/11/2026):** sửa dẫn chiếu FAQ thành "Điều 3 NĐ 238/2026 sửa đổi điểm b khoản 8 Điều 13 NĐ 168/2024, về biển số; không phải điểm a khoản 3 Điều 13 về đèn" (FAQ + JSON-LD), theo câu reviewer đề xuất.
+
+## 9. Hồ sơ nguồn – anh Nguyễn Quang Đạo xác nhận 24/11/2026
+
+Anh Đạo xác nhận đúng: 12 case, 6 ảnh ánh sáng thực tế (chụp tại Auto365), đánh giá Google của Auto365.vn – Trụ Sở Chính, câu dẫn NĐ 238 trong FAQ.
+
+| # | Xe | Mẫu đèn | Bài thi công |
+|---|---|---|---|
+| 1 | Honda Civic 2021 RS | Bi gầm X-Light F10 New 2025 | https://auto365.vn/honda-civic-2021-rs-lap-bi-gam-x-light-f10-new-2025 |
+| 2 | Ford Everest 2025 | Bi gầm X-Light F10 Hyper 2.0 | https://auto365.vn/ford-everest-2025-sport-lap-bi-gam-x-light-f10-hyper-20-ban-5000k |
+| 3 | Kia Morning 2016 | Bi gầm X-Light F10 2.0 New | https://auto365.vn/kia-morning-si-at-2016-lap-bi-gam-x-light-f10-20-new |
+| 4 | Toyota Fortuner 2011 | Combo X5 Ultra + X3 Ultra | https://auto365.vn/toyota-fortuner-2011-2-7v-lap-combo-x5-ultra-va-x3-ultra |
+| 5 | VinFast VF7 2025 | Quantum X V2 + F10 Turbo V2 | https://auto365.vn/vinfast-vf-7-2025-plus-lap-combo-quantum-x-v2-va-f10-turbo-v2 |
+| 6 | VinFast VF3 2025 | Bi LED X-Light Quantum X V2 | https://auto365.vn/vinfast-vf3-2025-plus-lap-bi-led-x-light-quantum-x-v2 |
+| 7 | Toyota Innova 2019 | Bi LED X-Light V30 Ultra 2026 | https://auto365.vn/toyota-innova-2019-2-0e-lap-bi-led-v30-ultra-2026 |
+| 8 | BMW 3 F30 2019 | Bi LED AES Turbo BM | https://auto365.vn/bmw-3-f30-2019-lap-bi-led-aes-turbo-bm |
+| 9 | Ford Explorer 2019 | Bi Laser Titan Platinum Plus | https://auto365.vn/ford-explorer-2019-4wd-lap-bi-laser-titan-platinum-plus |
+| 10 | Mercedes C300 AMG 2014 | Bi LED X-Light V20 New 2025 | https://auto365.vn/mercedes-c300-amg-2014-lap-bi-led-v20-new-2025 |
+| 11 | Toyota Corolla Cross 2023 | Bóng LED X-Light V12 Hyper 360 | https://auto365.vn/toyota-corolla-cross-2023-18g-lap-bong-led-v12-hyper-360 |
+| 12 | Mitsubishi Outlander 2020 | Bi gầm GTR G1 Turbo | https://auto365.vn/mitsubishi-outlander-2020-lap-bi-gam-gtr-g1-turbo |
+
+**Còn lại (IT/vận hành):** đăng lên auto365.vn, chốt URL; xoá lead test #426 sau khi kiểm CRM; Ads dùng URL auto365.vn.
