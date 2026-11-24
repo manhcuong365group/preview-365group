@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Land Rover: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `4675685dd0c88450301af249edf16d8b9cd8c36e75d061162d11ede6bdd88382` |
-| SHA-256 content-src.html | `bf815b47ad405aabe481eb012dd5886969be7077e57a7f5d86aeb8c15399cbe5` |
+| SHA-256 index.html | `6e0a5a41d67f6eec1315a306c8cc90a6e5f754e27c81365751f0d0086ae872b8` |
+| SHA-256 content-src.html | `0c1bdcaf0e85cc513938f0d811ad30c03af1ea8a4addf08a600c07ee3c16a675` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Peugeot: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (2), FAQPage |
-| SHA-256 index.html | `56265eb418a46b48c84e0a6c5fea61f75cb7c15a29381d4bf34e52b24eb05c6e` |
-| SHA-256 content-src.html | `342350937f339e28c438cc4541ea5e7a0695725d110662286eb2f33ce1aab0e7` |
+| SHA-256 index.html | `a50b4c956ff6246d1afa2ef0e7228d6dba269da3d740b063db4307266d46da77` |
+| SHA-256 content-src.html | `4a0472c50724bdc116dd772aeab938e091725bef672484684a3d1c99043a2348` |
 
 ## Sapo (kiêm trả lời nhanh)
 
