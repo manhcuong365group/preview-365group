@@ -1,5 +1,20 @@
 # 05 — Phiếu duyệt Hub Bi gầm Chevrolet
 
+## Trạng thái hiện hành — 24/11/2026
+
+| Mục | Trạng thái | Ngày | Người phụ trách / căn cứ |
+|---|---|---|---|
+| Nội dung SEO/GEO, HTML, giao diện preview | **Đạt** (reviewer tái kiểm 21/11/2026, HTML `e3bc7fbc…`) | 21/11/2026 | Reviewer V2.3 |
+| Mã ca 3 hồ sơ | **Đóng**: CHEV-CAP-2015-X3U, CHEV-COL-VID-F10, CHEV-ORL-F10P | 20/11/2026 | Master Data 04 |
+| Ngày thi công | **Đóng**: Captiva 04/11/2026, Colorado 28/10/2023, Orlando 22/08/2024 | 21/11/2026 | Chủ quản xác nhận |
+| Cơ sở | **Đóng**: cả 3 ca tại Auto365.vn - Trụ Sở Chính (Orlando ghi "Auto365 Thủ Đức" theo thời điểm ca) | 21/11/2026 | Bài nguồn + chủ quản xác nhận |
+| Đời xe Colorado/Orlando | **Giới hạn công bố**: ca cũ không lưu đời/trim; hub không ghi đời xe cho 2 ca này (reviewer chấp nhận 21/11) | 21/11/2026 | Chủ quản; reviewer |
+| Kiểm duyệt kỹ thuật | Đã duyệt — anh Nguyễn Quang Đạo (lastReviewed 2026-11-18) | 18/11/2026 | Anh Đạo |
+| Production (URL chính thức, CRM, `generate_lead`, điện thoại thật) | Chưa kiểm — giai đoạn tích hợp, không phải PASS production | — | IT/QA |
+| Điểm | ≈97,6 là điểm team tự chấm, chưa phải điểm nghiệm thu độc lập | 21/11/2026 | Team SEO |
+
+Các dòng "còn mở/CX" về mã ca, ngày thi công, cơ sở ở các phần bên dưới là **[Lịch sử]**, đã đóng theo bảng trên.
+
 | Mục | Trạng thái |
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/chevrolet/ |
@@ -24,7 +39,7 @@ Anh Đạo đã duyệt nội dung, case và danh sách dòng xe 16/11/2026, xá
 
 ## Chuyển bộ phận khác (ngoài preview)
 - Bài Orlando X-Light: kiểm lại 18/11/2026 — tiêu đề, heading, chú thích và alt đã thống nhất F10 Pro (đã đóng). Hai bài GTR đã gỡ (404) → case đã bỏ khỏi hub (đã đóng).
-- Kỹ thuật + Vận hành: mã ca, ngày thi công, cơ sở 3 hồ sơ (còn mở).
+- [Lịch sử] Kỹ thuật + Vận hành: mã ca, ngày thi công, cơ sở 3 hồ sơ — đã đóng 21/11.
 
 ## Thay đổi 18/11/2026 (anh Đạo đã duyệt 18/11/2026)
 - Bỏ 2 case GTR 2019 (Trailblazer GTR, Orlando GTR V2): bài nguồn đã gỡ khỏi auto365.vn (404), chủ quản chốt gỡ hẳn 18/11.

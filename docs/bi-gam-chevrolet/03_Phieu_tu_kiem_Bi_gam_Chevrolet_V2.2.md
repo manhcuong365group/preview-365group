@@ -1,5 +1,20 @@
 # 03 — Phiếu tự kiểm hub Bi gầm Chevrolet (đối chiếu V2.3)
 
+## Trạng thái hiện hành — 24/11/2026
+
+| Mục | Trạng thái | Ngày | Người phụ trách / căn cứ |
+|---|---|---|---|
+| Nội dung SEO/GEO, HTML, giao diện preview | **Đạt** (reviewer tái kiểm 21/11/2026, HTML `e3bc7fbc…`) | 21/11/2026 | Reviewer V2.3 |
+| Mã ca 3 hồ sơ | **Đóng**: CHEV-CAP-2015-X3U, CHEV-COL-VID-F10, CHEV-ORL-F10P | 20/11/2026 | Master Data 04 |
+| Ngày thi công | **Đóng**: Captiva 04/11/2026, Colorado 28/10/2023, Orlando 22/08/2024 | 21/11/2026 | Chủ quản xác nhận |
+| Cơ sở | **Đóng**: cả 3 ca tại Auto365.vn - Trụ Sở Chính (Orlando ghi "Auto365 Thủ Đức" theo thời điểm ca) | 21/11/2026 | Bài nguồn + chủ quản xác nhận |
+| Đời xe Colorado/Orlando | **Giới hạn công bố**: ca cũ không lưu đời/trim; hub không ghi đời xe cho 2 ca này (reviewer chấp nhận 21/11) | 21/11/2026 | Chủ quản; reviewer |
+| Kiểm duyệt kỹ thuật | Đã duyệt — anh Nguyễn Quang Đạo (lastReviewed 2026-11-18) | 18/11/2026 | Anh Đạo |
+| Production (URL chính thức, CRM, `generate_lead`, điện thoại thật) | Chưa kiểm — giai đoạn tích hợp, không phải PASS production | — | IT/QA |
+| Điểm | ≈97,6 là điểm team tự chấm, chưa phải điểm nghiệm thu độc lập | 21/11/2026 | Team SEO |
+
+Các dòng "còn mở/CX" về mã ca, ngày thi công, cơ sở ở các phần bên dưới là **[Lịch sử]**, đã đóng theo bảng trên.
+
 | Mục | Giá trị |
 |---|---|
 | Ngày tự kiểm | 18/11/2026 (lần 3; xem mục "Chấm lại 18/11" cuối phiếu) |
@@ -21,7 +36,7 @@
 |---|---|---|
 | 5.1 Chỉ dẫn tới bài tư vấn chưa có | Khối gợi ý + FAQ chi phí dẫn tới trang bi gầm `#san-pham` | Đã sửa |
 | 5.2 Ba bài nguồn (Orlando F10 Pro/Turbo; tỷ lệ 150%/180%; chú thích "Colorado") | Bài trên auto365.vn, ngoài preview; hub không lặp tỷ lệ | Chuyển Content + Kỹ thuật |
-| 5.3 Mã ca, ngày thi công, cơ sở | Chưa có mã ca nội bộ; ngày Colorado là ngày đăng | CX — Kỹ thuật + Vận hành |
+| 5.3 Mã ca, ngày thi công, cơ sở | Chưa có mã ca nội bộ; ngày Colorado là ngày đăng | [Lịch sử] CX → đã đóng 21/11 (xem Trạng thái hiện hành) |
 | 5.4 Nguồn ảnh dòng xe | 11 ảnh thay bằng ảnh designer Auto365 (gốc ở `_src-media/bi-gam-chevrolet`), bỏ ảnh Wikimedia; alt "ảnh nhận diện dòng xe" | Đã sửa |
 | 5.5 Hồ sơ V2.3 | Phiếu này + phiếu 05 cập nhật | Đã sửa |
 | 7 Title/mô tả, gợi ý cơ khí, FAQ nhiều đời | Theo đề xuất reviewer | Đã sửa |
@@ -51,11 +66,11 @@
 | **Tổng** | **96,2** | **≈96,5/100** | Qua 3 ngưỡng (SEO 29,0 ≥28,50; GEO 24,1 ≥23,75) |
 
 - 5.2 Ba bài nguồn: **đã đóng** (18/11).
-- Còn mở: 5.3 mã ca/ngày thi công/cơ sở (Kỹ thuật + Vận hành); production (IT). Điểm là tự chấm, chờ reviewer R3.
+- [Lịch sử, đã đóng 21/11] Còn mở: 5.3 mã ca/ngày thi công/cơ sở (Kỹ thuật + Vận hành); production (IT). Điểm là tự chấm, chờ reviewer R3.
 
 ## Reviewer V2.3 ngày 19/11/2026 — đã xử lý
 - S2/S3 HTML: sửa nesting thẻ case/cẩm nang và summary; dời 14 style lên head; ô tìm chi nhánh đúng mô hình combobox (aria-controls). Bảng tái kiểm bản 3 ca ở phiếu 06.
-- Còn mở: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); production. Điểm 96,5 vẫn là tự chấm.
+- [Lịch sử, đã đóng 21/11] Còn mở: mã ca/ngày thi công/cơ sở 3 ca (Kỹ thuật + Vận hành); production. Điểm 96,5 vẫn là tự chấm.
 
 ## Cập nhật 20/11/2026 — mục 5.3 (hồ sơ ca)
 | Ca | case_id | Cơ sở (theo bài) | Thời điểm thi công | Nguồn |
