@@ -58,7 +58,7 @@ User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường 
 ## Hồ sơ N1/N2 — xác nhận NAP (bổ sung 24/11/2026)
 
 - **Nội dung xác nhận:** địa chỉ hành chính sau sáp nhập của Auto365 Tân Phú là **20/54A Đường Bờ Bao 1 (Tân Thắng), Phường Tân Sơn Nhì, TP.HCM**.
-- **Nguồn:** tin nhắn của tài khoản chi nhánh Auto365 Tân Phú, lúc 15:07 thứ Bảy 21/11/2026, trả lời câu hỏi "phường Tân Sơn Nhì hay phường Tây Thạnh": "Phường tân sơn nhì á e".
+- **Nguồn:** tin nhắn của quản lý cửa hàng Auto365 Tân Phú (tài khoản chi nhánh), lúc 15:07 thứ Bảy 21/11/2026, trả lời câu hỏi "phường Tân Sơn Nhì hay phường Tây Thạnh": "Phường tân sơn nhì á e".
 - **Bằng chứng:** [xac-nhan-nap-tan-son-nhi-20261121.png](xac-nhan-nap-tan-son-nhi-20261121.png).
 - **Đồng bộ:** phần chữ trên trang, LocalBusiness, FAQ, trang camera-hanh-trinh-v2 và danh bạ 3M của 365Group đều ghi Tân Sơn Nhì.
 - **Tài liệu lịch sử:** "Tây Thạnh" trên giấy AX Film và trong PDF CR BLK của 3M, "Sơn Kỳ" trên ảnh 3M Pro Shop là địa danh cũ hoặc tài liệu bên ngoài. Không dùng làm NAP hiện hành.
