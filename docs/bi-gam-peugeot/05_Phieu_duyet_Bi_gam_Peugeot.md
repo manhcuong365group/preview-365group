@@ -15,4 +15,4 @@
 
 ## Hồ sơ ca — 24/11/2026
 - **PEU-5008-2019-F10H2** — Xe: Peugeot 5008 2019. SKU: X-Light F10 Hyper 2.0, lens 2.0 inch, 5000K, 1 cặp, vị trí đèn gầm. Cơ sở: Auto365.vn - Trụ Sở Chính (bài ghi "ca thi công thực tế tại Auto365.vn - Trụ Sở Chính"). Thời điểm thi công: 2026-07-27 theo bài (chủ quản xác nhận 24/11/2026). Cố vấn kỹ thuật trong bài: Bùi Hùng Việt. Tư liệu: ảnh trong bài (ảnh Auto365).
-- **PEU-3008-F10N** — Xe: Peugeot 3008 (bài không ghi đời). SKU: X-Light F10 New, lens 3.0 inch, vị trí đèn gầm. Cơ sở: thân bài không ghi tên cơ sở — chờ chủ quản. Thời điểm thi công: 2024-09-13 theo bài (chủ quản xác nhận 24/11/2026). Tư liệu: ảnh trong bài (ảnh Auto365).
+- **PEU-3008-F10N** — Xe: Peugeot 3008 (bài không ghi đời). SKU: X-Light F10 New, lens 3.0 inch, vị trí đèn gầm. Cơ sở: Auto365.vn - Trụ Sở Chính (chủ quản xác nhận 24/11/2026). Thời điểm thi công: 2024-09-13 theo bài (chủ quản xác nhận 24/11/2026). Tư liệu: ảnh trong bài (ảnh Auto365).
