@@ -118,3 +118,13 @@ Anh Đạo xác nhận đúng: 12 case, 6 ảnh ánh sáng thực tế (chụp t
 - Lead test #426: CRM đã nhận đúng và đã xoá.
 - Chấm trên preview; production/SEO Pack làm khi đăng live.
 - Link "10 đánh giá trên Google" nới thành nút cao 44px cho dễ bấm trên mobile.
+
+## 10. Kiểm tra cắn intent (24/11/2026)
+
+| Trang trên auto365.vn | Title/H1 | Index | Trùng intent? |
+|---|---|---|---|
+| /do-den-xe-hoi | Độ đèn xe hơi chính hãng tại TP. Hồ Chí Minh | index | **Trùng** (đèn ô tô + TP.HCM) |
+| /nang-cap-anh-sang | Độ đèn ô tô: bi LED, bi laser, bi gầm, bóng LED và đèn trợ sáng | index | Trùng một phần (danh mục toàn quốc) |
+| Landing den-o-to-hcm | Nâng cấp đèn ô tô chính hãng tại TP.HCM | noindex (preview) | – |
+
+**Quy định khi đăng live (IT/SEO):** landing chỉ phục vụ Ads → giữ `noindex, follow`, không đưa vào sitemap, không gắn vào menu/liên kết nội bộ SEO; canonical tự trỏ. Như vậy không tranh từ khoá với /do-den-xe-hoi và /nang-cap-anh-sang; hai trang đó tiếp tục là trang SEO cho tìm kiếm tự nhiên. Nếu sau này muốn index landing thì phải gộp/phân vai lại với /do-den-xe-hoi trước.
