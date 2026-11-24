@@ -127,4 +127,11 @@ Anh Đạo xác nhận đúng: 12 case, 6 ảnh ánh sáng thực tế (chụp t
 | /nang-cap-anh-sang | Độ đèn ô tô: bi LED, bi laser, bi gầm, bóng LED và đèn trợ sáng | index | Trùng một phần (danh mục toàn quốc) |
 | Landing den-o-to-hcm | Nâng cấp đèn ô tô chính hãng tại TP.HCM | noindex (preview) | – |
 
-**Quy định khi đăng live (IT/SEO):** landing chỉ phục vụ Ads → giữ `noindex, follow`, không đưa vào sitemap, không gắn vào menu/liên kết nội bộ SEO; canonical tự trỏ. Như vậy không tranh từ khoá với /do-den-xe-hoi và /nang-cap-anh-sang; hai trang đó tiếp tục là trang SEO cho tìm kiếm tự nhiên. Nếu sau này muốn index landing thì phải gộp/phân vai lại với /do-den-xe-hoi trước.
+**Cập nhật chủ quản 24/11:** /do-den-xe-hoi sẽ bỏ; landing lên web sẽ **mở index**.
+
+**Phân vai đề xuất:**
+- /do-den-xe-hoi → 301 về landing này (thừa hưởng intent "độ đèn xe hơi TP.HCM").
+- /nang-cap-anh-sang = danh mục toàn quốc: "độ đèn ô tô", so sánh loại đèn, toàn bộ mẫu, kiến thức, 90+ chi nhánh. Không nhắm TP.HCM ở title/H1/sapo.
+- Landing = trang dịch vụ địa phương: "độ/lắp đèn ô tô TP.HCM", Thủ Đức, Hiệp Bình; 20 mẫu nổi bật, case tại Trụ Sở Chính, giá, đặt lịch.
+- Liên kết 2 chiều: hub → landing (anchor "Lắp đèn ô tô tại TP.HCM" ở khối Trụ Sở Chính); landing → hub (1 link "Xem toàn bộ mẫu đèn").
+- Khi live: robots index, canonical = URL live, đưa vào sitemap.
