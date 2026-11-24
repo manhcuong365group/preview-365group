@@ -1,7 +1,7 @@
 # Đối chiếu checklist SEO Local + Ads – /dan-phim-cach-nhiet-3m-tphcm (24/11/2026)
 
 - Nguồn: HTML live https://auto365.vn/dan-phim-cach-nhiet-3m-tphcm (tải 24/11/2026)
-- Preview: https://manhcuong365group.github.io/preview-365group/dan-phim-cach-nhiet-3m-tphcm/
+- Preview: https://manhcuong365group.github.io/preview-365group/phim-3m-hcm/ (link preview cũ, đã thay bằng bản live)
 - Preview để `noindex`; khi đưa lên production trả robots về `index, follow`. Canonical giữ self-canonical URL live.
 - `page-asset.js` là bản sao `/page-asset/16176.js` chỉ để preview hiển thị ảnh gói (đổi đường dẫn ảnh sang tuyệt đối). Production giữ file gốc, không cần áp.
 
