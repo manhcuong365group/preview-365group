@@ -63,3 +63,12 @@ User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường 
 - **Đồng bộ:** phần chữ trên trang, LocalBusiness, FAQ, trang camera-hanh-trinh-v2 và danh bạ 3M của 365Group đều ghi Tân Sơn Nhì.
 - **Tài liệu lịch sử:** "Tây Thạnh" trên giấy AX Film và trong PDF CR BLK của 3M, "Sơn Kỳ" trên ảnh 3M Pro Shop là địa danh cũ hoặc tài liệu bên ngoài. Không dùng làm NAP hiện hành.
 - **Đề nghị:** đóng N1/N2.
+
+## Hồ sơ N4/N5/G3 — giá và tư liệu (bổ sung 24/11/2026)
+
+- **Nguồn giá:** anh Nguyễn Quang Đạo đã duyệt các mức giá đang công bố trên trang (theo xác nhận của chủ quản ngày 24/11/2026):
+  - Titan 301: từ 3.500.000đ/cặp 02 đèn, chưa VAT.
+  - 70mai M310 Plus 2K: 1.250.000đ giá máy, đã gồm VAT; công lắp và phụ kiện tính riêng.
+  - Phim 3M: giá dán lẻ theo từng vị trí kính, lấy từ bảng giá 3M 06/2026.
+- **Quyền dùng tư liệu:** bộ phận Media đã xác nhận được phép sử dụng ảnh chứng nhận và ảnh cơ sở trên trang (theo xác nhận của chủ quản ngày 24/11/2026). Giấy ICAR 2024 vẫn ghi là tài liệu lịch sử.
+- **Đề nghị:** đóng N4/N5 và phần G3 liên quan. Phần còn mở là ảnh chụp điểm Google (4,7★ / 60 đánh giá) kèm ngày chụp.
