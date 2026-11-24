@@ -20,3 +20,5 @@ Ghi chú: server trả {"success":false} (không kèm lỗi) thì form dùng chu
 
 ## Còn mở (chỉ nghiệm thu được trên URL chính thức)
 Lead → CRM, sự kiện generate_lead, GET/header production, điện thoại thật (chủ quản).
+
+Build 24/11/2026 sau duyệt (chỉ thêm dòng rà soát kỹ thuật + lastReviewed, không đổi chức năng): SHA-256 `7ba8e83b042d8a4dfbc04f99565476241485fce048302c7548f30c0f7adcf462`.

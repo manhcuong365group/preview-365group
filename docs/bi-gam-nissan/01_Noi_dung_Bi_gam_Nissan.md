@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Nissan: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (1), FAQPage |
-| SHA-256 index.html | `5cc3a11be57b02edb86f6a7c25c86af5b8dce6f32ce95a4d8eefdc195a02e511` |
-| SHA-256 content-src.html | `aa0757c94c066a40c713caf8fc20da2b2df114100abe7d9b9e101b95a72bc8c6` |
+| SHA-256 index.html | `7ba8e83b042d8a4dfbc04f99565476241485fce048302c7548f30c0f7adcf462` |
+| SHA-256 content-src.html | `4d5493b114907ddbe22c1f15e1b07fde3f0f0efdcc001a78165cc187aaab226b` |
 
 ## Sapo (kiêm trả lời nhanh)
 

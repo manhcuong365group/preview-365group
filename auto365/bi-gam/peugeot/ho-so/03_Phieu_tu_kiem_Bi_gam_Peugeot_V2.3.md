@@ -25,3 +25,14 @@
 | Test điện thoại thật; production (CRM, generate_lead) | Chủ quản / IT | U2 |
 
 Ước tính sau khi đóng 3 việc đầu: ≈95,5–96,5.
+
+## Chấm lại 24/11/2026 — sau khi anh Đạo duyệt
+| Nhóm | Điểm |
+|---|---|
+| C /30 | 28,0 |
+| S /30 | 28,6 |
+| G /25 | 24,1 (+1,3: có kiểm duyệt kỹ thuật, lastReviewed 2026-11-24) |
+| U /15 | 13,0 |
+| **Tổng** | **≈93,7/100** — qua ngưỡng SEO và GEO (24,1 ≥ 23,75), tổng còn dưới 95 |
+
+Còn mở: ảnh thẻ dòng xe (designer, ≈ +1); cơ sở + ngày thi công từng ca (chủ quản, ≈ +0,5); test điện thoại thật.

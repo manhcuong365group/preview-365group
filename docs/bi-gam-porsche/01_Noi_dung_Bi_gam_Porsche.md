@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Porsche: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-24 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `3a9659c315cffc4796628ec09bf1f5185a8fe10c90a1dcaf230f0331e2d4db61` |
-| SHA-256 content-src.html | `b48b614a00ce586f2a0e4ed6410bac7c998d53a8d1548dfe93e68c40e03a1621` |
+| SHA-256 index.html | `ea0a081a21f6066f432a8af912a4f9a62600d5508b1f54bcb954750f176bf219` |
+| SHA-256 content-src.html | `3292ea33f1d889ac2b42dfd93cdc0dc92930922b90d2cd07007ff8b7da9f926b` |
 
 ## Sapo (kiêm trả lời nhanh)
 
