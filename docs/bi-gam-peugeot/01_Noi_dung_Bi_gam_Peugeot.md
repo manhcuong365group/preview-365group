@@ -9,10 +9,10 @@
 | Title (57 ký tự) | Bi gầm Peugeot: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
 | Meta description (115 ký tự) | Xem hồ sơ bi gầm Peugeot 5008 và 3008; gửi đời xe để Auto365 kiểm tra hốc đèn, nguồn điện, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Peugeot: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-24 |
+| dateModified | 2026-11-25 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (2), FAQPage |
-| SHA-256 index.html | `a50b4c956ff6246d1afa2ef0e7228d6dba269da3d740b063db4307266d46da77` |
-| SHA-256 content-src.html | `4a0472c50724bdc116dd772aeab938e091725bef672484684a3d1c99043a2348` |
+| SHA-256 index.html | `3cf520cec3c59bab636269803d7543270ac2d59ba8d7a97f8acb4efdfd00dcba` |
+| SHA-256 content-src.html | `ee04a9862a0e5baef86e4273deb6aa5ff4867bbfcbbcdd80df0e3d6815be4093` |
 
 ## Sapo (kiêm trả lời nhanh)
 
