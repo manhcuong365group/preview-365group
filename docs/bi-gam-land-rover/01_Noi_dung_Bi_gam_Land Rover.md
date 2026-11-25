@@ -9,10 +9,10 @@
 | Title (60 ký tự) | Bi gầm Land Rover: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
 | Meta description (116 ký tự) | Xem hồ sơ bi gầm Land Rover đã lắp tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Land Rover: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-24 |
+| dateModified | 2026-11-25 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `6e0a5a41d67f6eec1315a306c8cc90a6e5f754e27c81365751f0d0086ae872b8` |
-| SHA-256 content-src.html | `0c1bdcaf0e85cc513938f0d811ad30c03af1ea8a4addf08a600c07ee3c16a675` |
+| SHA-256 index.html | `1f09321b15ced7571abf1ff3a8b1c2a2943175c6396adc5e5e46899627d781ca` |
+| SHA-256 content-src.html | `5c0dadcb38dea1b02a3c37b7568ec18a1c0dda1f5a89ef0c2870aff574c85a69` |
 
 ## Sapo (kiêm trả lời nhanh)
 
