@@ -83,3 +83,17 @@ User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường 
   - Đóng cửa 18:00.
 - **Trên trang:** đã ghi thêm "(11/2026)" cạnh số đánh giá. dateModified đổi thành 2026-11-24.
 - **Đề nghị:** đóng mục điểm Google. Toàn bộ CX hồ sơ (N1/N2, N4/N5, G3, U3) đã có hồ sơ.
+
+## Ghi chú nguồn bên thứ ba — địa danh cũ (bổ sung 25/11/2026)
+
+- **Tài liệu:** "Crystalline Series CR BLK – Demo Installer List VN" do 3M Việt Nam đăng tại https://multimedia.3m.com/mws/media/2636267O/crystalline-series-cr-blk-demo-installer-list-vn.pdf
+- **Nội dung:** dòng Auto365 Tân Phú ghi đúng số nhà, đường và điện thoại, nhưng phường ghi **Tây Thạnh**. Đây là địa danh trước khi sắp xếp đơn vị hành chính.
+- **Đánh giá:** tài liệu do 3M quản lý, Auto365 không có quyền chỉnh sửa. Đây không phải lỗi của trang hay hồ sơ Auto365.
+- **NAP hiện hành:** 20/54A Đường Bờ Bao 1 (Tân Thắng), P. Tân Sơn Nhì, TP.HCM. Quản lý chi nhánh đã xác nhận ngày 21/11/2026, và địa chỉ này đã đóng trong phiếu U3 V2.3 R3 FINAL (AUTO365-U3-TANPHU-V23-20261125-R3).
+- **Các nguồn do Auto365 quản lý đã đồng bộ:**
+  - Trang chi nhánh và schema.
+  - Google Maps.
+  - Bài https://auto365.vn/auto365-tan-phu-dai-ly-thuoc-he-thong-auto365-sau-sap-nhap: đã ghi "Địa chỉ cũ: P. Sơn Kỳ", hotline 0564.365.365 và giờ mở cửa T2–T7 08:00–18:00, CN 08:00–17:00. Đã kiểm ngày 25/11/2026.
+  - Trang camera-hanh-trinh-v2.
+- **Trên trang:** khối địa chỉ ghi rõ "P. Sơn Kỳ hoặc P. Tây Thạnh là địa danh trước sắp xếp, cùng một cơ sở".
+- **Quyết định:** không mở lại mục N1/N2 vì tài liệu bên thứ ba còn ghi địa danh cũ. Nếu 3M phát hành bản mới thì đối chiếu lại, không bắt buộc.
