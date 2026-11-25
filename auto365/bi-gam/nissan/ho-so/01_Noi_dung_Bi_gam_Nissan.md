@@ -9,10 +9,10 @@
 | Title (56 ký tự) | Bi gầm Nissan: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
 | Meta description (112 ký tự) | Xem hồ sơ bi gầm Nissan đã lắp tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Nissan: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-24 |
+| dateModified | 2026-11-25 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (1), FAQPage |
-| SHA-256 index.html | `92968c8c53bfc12e74d902596789ee26b3abc9613019d032a6edc135f5355429` |
-| SHA-256 content-src.html | `30ac305940c910bfa9141e15987ca1da44277cff5e9a695032213bf678d3d52a` |
+| SHA-256 index.html | `2ee72374f45ac9899070c4dbf7443d88f4eeb6a88483c97d46d51f0b4d139530` |
+| SHA-256 content-src.html | `c0e0669b2392b43494289bae2b5ad27bc68fcd0ebdcba0c7d7ee4b9853c4faf2` |
 
 ## Sapo (kiêm trả lời nhanh)
 
