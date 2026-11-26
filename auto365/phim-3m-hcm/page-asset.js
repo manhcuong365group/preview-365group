@@ -49,7 +49,7 @@
  if(MOB0){var tr=document.querySelector('.h3m-hero .h3m-trust'),qw=document.querySelector('.h3m-quick');if(tr&&qw){tr.classList.add('h3m-trust--light');qw.insertAdjacentElement('afterend',tr)}}
 
  // Xe thực tế: lọc dòng phim + hãng, hiện 12 xe/lần
- var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?6:12,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
+ var MOB=matchMedia('(max-width:640px)').matches,STEP=MOB?4:8,cf={loai:'',brand:''},shown=STEP,cards=[].slice.call(document.querySelectorAll('.h3m-case')),cnt=document.querySelector('.h3m-cfx__count'),moreC=document.querySelector('[data-more=cases]');
  function applyCases(){var m=cards.filter(function(c){return (!cf.loai||c.dataset.loai.split('|').indexOf(cf.loai)>-1)&&(!cf.brand||c.dataset.brand===cf.brand)});
   var gEl=cards[0].parentNode,cols=getComputedStyle(gEl).gridTemplateColumns.split(' ').length||1,lim=Math.ceil(shown/cols)*cols;
   cards.forEach(function(c){c.hidden=true});m.forEach(function(c,i){c.hidden=i>=lim});
