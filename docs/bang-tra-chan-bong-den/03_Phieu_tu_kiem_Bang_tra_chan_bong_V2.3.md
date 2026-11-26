@@ -4,7 +4,7 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bang-tra-chan-bong-den/ |
 | Canonical | https://auto365.vn/bang-tra-chan-bong-den |
-| Bản kiểm (SHA-256) | `877a5a91ca4e6b8ead3204e45187be2db96b2d4f002b98b38d2e180cd948a0cd` (bản 26/11/2026: thêm mã hàng cb-001…cb-331, nội dung bảng không đổi so với bản reviewer chấm 24–25/11 `a9605f…`) |
+| Bản kiểm (SHA-256) | `1d70dee5dbb4f7eab29fef9dfc3b0b8d8f9998437f4a95e6c1a0c023ac5c1626` (bản 26/11/2026: thêm mã hàng cb-001…cb-331, sửa câu "Phạm vi xác nhận", nội dung bảng không đổi so với bản reviewer chấm 24–25/11 `a9605f…`) |
 | Kiểm duyệt kỹ thuật | Anh Nguyễn Quang Đạo — duyệt 20/11/2026; duyệt 12 dòng Audi/Lexus 21/11/2026; xác nhận toàn bảng 331 dòng cho xe lưu hành tại Việt Nam 24/11/2026 (lastReviewed 2026-11-24) |
 | Chuẩn | Auto365 V2.3; ngưỡng: Tổng ≥95 · SEO ≥28,50/30 · GEO ≥23,75/25 |
 | Lưu ý | Điểm tự chấm của team, chờ reviewer xác nhận |
@@ -49,3 +49,13 @@ Phạm vi áp dụng: toàn bộ 331 dòng áp dụng cho xe đang lưu hành t�
 | 4. Liên kết người rà soát với đúng revision | Cột SHA-256 trong hồ sơ = bản trang hiện tại |
 
 Hồ sơ CSV và phiếu này gửi kèm reviewer (không công khai trên trang).
+
+## Bổ sung 26/11/2026 (lần 2) — mục 3 phiếu reviewer
+
+| Yêu cầu | Xử lý |
+|---|---|
+| 3. Tránh lời xác nhận toàn bảng | Câu trên trang đổi thành "Bảng được kỹ thuật Auto365 (anh Nguyễn Quang Đạo) rà soát cho xe lưu hành tại Việt Nam… Mã chân có thể khác theo phiên bản và cấu hình cụm đèn; kỹ thuật viên kiểm tra trên xe trước khi thay bóng." |
+| 3. Hàng chưa đủ căn cứ ghi CX trong hồ sơ | 209 dòng (197 nhóm C + 12 nhóm D) ghi cột "Cần Kỹ thuật bổ sung" = CX – chờ tài liệu/trang/mục hoặc mã ca thay thực tế. 122 dòng nhóm A/B có nguồn theo dòng |
+| 4. Revision | SHA trong hồ sơ = bản trang hiện tại (dòng "Bản kiểm" ở đầu phiếu) |
+
+Tự đánh giá: C1/G3/U3 còn CX cho 209 dòng cho tới khi Kỹ thuật bổ sung tài liệu.
