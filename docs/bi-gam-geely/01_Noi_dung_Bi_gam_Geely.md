@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Geely: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), FAQPage |
-| SHA-256 index.html | `857e40c24185186b8b7cd8bd7a0aabcec438d15c716a174f51f2f97e77b965f8` |
-| SHA-256 content-src.html | `6694de343edd6bb988880df27292dd958061be2a7e7e54ea9e47463b71e82443` |
+| SHA-256 index.html | `72fe8fc02e98a5ce56a0297a4b930798390de62e06eac26821705cfd93f1caeb` |
+| SHA-256 content-src.html | `e87cad2cb144584f9aea8bf61f9c3e2486f06e8dcad9ca4167700cf7ac2ba45b` |
 
 ## Sapo (kiêm trả lời nhanh)
 
