@@ -59,3 +59,16 @@ Hồ sơ CSV và phiếu này gửi kèm reviewer (không công khai trên trang
 | 4. Revision | SHA trong hồ sơ = bản trang hiện tại (dòng "Bản kiểm" ở đầu phiếu) |
 
 Tự đánh giá: C1/G3/U3 còn CX cho 209 dòng cho tới khi Kỹ thuật bổ sung tài liệu.
+
+## Việc còn mở — Kỹ thuật (anh Nguyễn Quang Đạo) bổ sung
+
+Mục tiêu: đóng CX C1/G3/U3 cho 209 dòng. Một tài liệu có thể dùng cho nhiều dòng; không cần 331 nguồn riêng. Không điền mã/nguồn theo suy đoán.
+
+| Nhóm | Số dòng | Cần gửi | Trạng thái |
+|---|---:|---|---|
+| C — Xe phổ thông (Toyota, Hyundai, Kia, BMW, Ford, Mitsubishi, Mazda, Chevrolet, Honda, VinFast, Isuzu, Suzuki) | 197 | File bảng tra kỹ thuật nội bộ (tên file + ngày bản); kèm mã phiếu/ca thay thực tế theo dòng xe nếu có (VD: "Vios 2018 – Trụ sở chính – ngày…") | Chờ Kỹ thuật |
+| D — Audi A4/A5/Q5, Lexus RX350/IS250/LX570/LX470 (Xenon) | 12 | Sách HDSD, ảnh tem/bóng tháo ra, hoặc ca đã làm tại cơ sở | Chờ Kỹ thuật |
+
+Khi nhận được: Content/SEO điền cột "Nguồn/trang/mục" + "Link" trong hồ sơ CSV theo mã hàng cb-xxx, đổi cột "Cần Kỹ thuật bổ sung" từ CX sang "Đã bổ sung", cập nhật SHA nếu trang đổi, rồi gửi reviewer chấm lại.
+
+Nếu không có tài liệu: trang giữ trạng thái "qua phần đã kiểm", chưa nghiệm thu đầy đủ; phương án ẩn bớt dòng chưa có căn cứ cần sếp duyệt trước.
