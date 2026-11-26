@@ -4,7 +4,7 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bang-tra-chan-bong-den/ |
 | Canonical | https://auto365.vn/bang-tra-chan-bong-den |
-| Bản kiểm (SHA-256) | `a9605f2e448075e48b1f051aab54deab0c889fce3dc3d0f073cd64f135451a87` (bản reviewer chấm 24/11/2026) |
+| Bản kiểm (SHA-256) | `877a5a91ca4e6b8ead3204e45187be2db96b2d4f002b98b38d2e180cd948a0cd` (bản 26/11/2026: thêm mã hàng cb-001…cb-331, nội dung bảng không đổi so với bản reviewer chấm 24–25/11 `a9605f…`) |
 | Kiểm duyệt kỹ thuật | Anh Nguyễn Quang Đạo — duyệt 20/11/2026; duyệt 12 dòng Audi/Lexus 21/11/2026; xác nhận toàn bảng 331 dòng cho xe lưu hành tại Việt Nam 24/11/2026 (lastReviewed 2026-11-24) |
 | Chuẩn | Auto365 V2.3; ngưỡng: Tổng ≥95 · SEO ≥28,50/30 · GEO ≥23,75/25 |
 | Lưu ý | Điểm tự chấm của team, chờ reviewer xác nhận |
@@ -37,3 +37,15 @@ Hồ sơ chi tiết từng dòng: [ho-so-doi-chieu-331-dong.csv](ho-so-doi-chieu
 | **Tổng** | **331** | | |
 
 Phạm vi áp dụng: toàn bộ 331 dòng áp dụng cho xe đang lưu hành tại Việt Nam (chính hãng và xe nhập). Trang hiển thị câu "Phạm vi xác nhận" ở mục "Nguồn và phạm vi dữ liệu".
+
+## Bổ sung 26/11/2026 — trả lời phiếu reviewer 25/11
+
+| Yêu cầu reviewer | Xử lý |
+|---|---|
+| 1. Ma trận nguồn có mã hàng/khóa dữ liệu | Mỗi dòng trên trang có id `cb-001`…`cb-331` (mở được bằng `#cb-001`); cột đầu của hồ sơ CSV dùng đúng mã này |
+| 1. Model/năm/phiên bản, cấu hình cụm đèn, mã Cos/Pha/Gầm | Có trong hồ sơ CSV, khớp từng dòng trên trang |
+| 1. Tài liệu/trang/mục, ngày/người đối chiếu | Cột "Nguồn/trang/mục", "Cấp bằng chứng", "Người kiểm", "Ngày kiểm" |
+| 2. Ưu tiên hàng từng lấy nguồn thị trường khác, hàng Bi-Xenon/D3S | 42 dòng catalog nước ngoài: anh Đạo xác nhận áp dụng xe lưu hành tại VN 24/11; 12 dòng Audi/Lexus Xenon: anh Đạo duyệt 21/11 |
+| 4. Liên kết người rà soát với đúng revision | Cột SHA-256 trong hồ sơ = bản trang hiện tại |
+
+Hồ sơ CSV và phiếu này gửi kèm reviewer (không công khai trên trang).
