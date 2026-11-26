@@ -6,8 +6,6 @@ import path from 'path';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const BASE = path.join(ROOT, 'auto365/phim-cach-nhiet-o-to');
 const TPL = fs.readFileSync(path.join(BASE, 'vinfast/index.html'), 'utf8').split('\r\n').join('\n');
-// ảnh case: không dùng thumbnail bài (có chữ) — dùng ảnh thật trong bài nếu có, không thì ảnh mẫu xe
-const REALIMG = { 'https://auto365.vn/mazda-cx5-dan-phim-cach-nhiet-3m-crystalline-pro-cho-full-xe': 'https://auto365.vn/uploads/images/tin%20t%E1%BB%A9c/2024/T9/mazda-cx5-dan-phim-cach-nhiet-3m-crystalline-pro-cho-full-xe/mazda-cx-5-dan-phim-cach-nhiet-3m-crystalline-pro-1.jpg' };
 const IMGSRC = [path.join(ROOT, 'auto365/bi-gam/theo-hang-xe/hinh')];
 const TODAY = '2026-11-26', TODAY_VN = '26/11/2026';
 const casesArg = process.argv.indexOf('--cases');
@@ -34,7 +32,7 @@ const BR = {
     ['Destinator', 'Destinator', 2, 'u', 'm-destinator.webp'],
     ['Xpander', 'Xpander', 2, 'm', 'm-xpander.webp', 'bi-gam/mitsubishi/hinh', ['Xpander(?! Cross)']], ['Xpander Cross', 'XpanderCross', 2, 'm', 'm-xpander-cross.webp'],
     ['Triton', 'Triton', 2, 'p', 'm-triton.webp']] },
-  ford: { name: 'Ford', def: 'Ranger', video: [['0c1xtO_Z5sA', 'Ford Everest dán phim 3M CR BLK: quy trình thay phim cách nhiệt']], dia: ['m-focus.webp', 'm-everest.webp'], diaP: [[[46,25],[70,27],[82,25],[59,18],[88,26]],[[49,33],[34,33],[26,33],[44,26],[21,35]]], cars: [
+  ford: { name: 'Ford', def: 'Ranger', video: [['0c1xtO_Z5sA', 'Ford Everest dán phim 3M CR BLK: quy trình thay phim cách nhiệt']], dia: ['m-focus.webp', 'm-territory.webp'], diaP: [[[46,25],[70,27],[82,25],[59,18],[88,26]],[[56,35],[34,32],[24,33],[46,25],[19,35]]], cars: [
     ['Focus', 'Focus', 1, 's', 'm-focus.webp', 'bi-gam/ford/hinh'],
     ['Territory', 'Territory', 2, 'u', 'm-territory.webp'], ['Everest', 'Everest', 2, 'u', 'm-everest.webp'], ['Mustang Mach-E', 'MachE', 2, 'u', 'm-mustang-mach-e.webp', null, ['Mach']],
     ['Ranger', 'Ranger', 2, 'p', 'm-ranger.webp', null, ['Ranger(?! Raptor)']], ['Ranger Raptor', 'Raptor', 2, 'p', 'm-ranger-raptor.webp', null, ['Raptor']]] },
@@ -72,7 +70,7 @@ for (const [slug, B] of Object.entries(BR)) {
   if (only.length && !only.includes(slug)) continue;
   const N = B.name, out = path.join(BASE, slug), hm = path.join(out, 'hinh/m');
   fs.mkdirSync(hm, { recursive: true }); fs.mkdirSync(path.join(out, 'hinh/goi'), { recursive: true });
-  for (const f of fs.readdirSync(path.join(BASE, 'vinfast/hinh'))) if (/^(cert-|ewarranty)/.test(f)) fs.copyFileSync(path.join(BASE, 'vinfast/hinh', f), path.join(out, 'hinh', f));
+  for (const f of fs.readdirSync(path.join(BASE, 'vinfast/hinh'))) if (/^(cert-|ewarranty|pro-shop-thi-cong)/.test(f)) fs.copyFileSync(path.join(BASE, 'vinfast/hinh', f), path.join(out, 'hinh', f));
   for (const f of fs.readdirSync(path.join(BASE, 'vinfast/hinh/goi'))) fs.copyFileSync(path.join(BASE, 'vinfast/hinh/goi', f), path.join(out, 'hinh/goi', f));
   fs.copyFileSync(path.join(ROOT, 'auto365/phim-3m-hcm/hinh/logo', slug + '.webp'), path.join(out, 'hinh/logo.webp'));
   for (const c of B.cars) fs.copyFileSync(path.join(ROOT, c[5] ? 'auto365/' + c[5] : 'auto365/bi-gam/theo-hang-xe/hinh', c[4]), path.join(hm, c[4]));
@@ -87,7 +85,7 @@ for (const [slug, B] of Object.entries(BR)) {
   const KL = { tt: ['Xe thực tế', ''], tv: ['Tư vấn theo xe', ' vf-case__k--g'], cn: ['Cẩm nang', ' vf-case__k--g'] };
   const cardsHtml = list.map(o => {
     const loai = o.f || (o.k === 'tv' ? 'Phim 3M' : 'Phim 3M'), em = o.k === 'tv' && !o.f ? '6 gói phim 3M' : loai, dd = o.d.split('-').reverse().join('/');
-    return `  <a class="vf-case" data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${REALIMG[o.u] || 'hinh/m/' + o.car[4]}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__k${KL[o.k][1]}">${KL[o.k][0]}</span><span class="vf-case__xe"><img src="hinh/logo.webp" alt="" width="40" height="20">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
+    return `  <a class="vf-case" data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__k${KL[o.k][1]}">${KL[o.k][0]}</span><span class="vf-case__xe"><img src="hinh/logo.webp" alt="" width="40" height="20">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
   }).join('');
   const caseCars = B.cars.filter(c => list.some(o => o.car === c));
   const loais = [...new Set(list.map(o => o.f || 'Phim 3M'))].sort();
@@ -102,7 +100,7 @@ for (const [slug, B] of Object.entries(BR)) {
   let h = TPL;
   // head + schema
   h = rep(h, 'Dán phim cách nhiệt 3M cho VinFast VF3–VF9 tại Auto365: giá trọn xe từ 5.900.000đ', `Dán phim cách nhiệt 3M cho ${N} ${B.cars.slice(0, 3).map(c => c[0]).join(', ')}… tại Auto365: giá trọn xe từ ${vnd(lowP)}`);
-  h = rep(h, 'hinh/hero-vinfast.webp', hero.img, true);
+  h = rep(h, 'hinh/hero-vinfast.webp', 'hinh/pro-shop-thi-cong.webp', true); // hero: ảnh thật thi công tại 3M Pro Shop (không dùng thumbnail bài có chữ)
   h = rep(h, 'https://preview-365group.pages.dev/phim-cach-nhiet-o-to/vinfast/' + hero.img, hero.img);
   h = rep(h, '"lowPrice":"5900000"', `"lowPrice":"${lowP * 1e6}"`);
   h = h.replace(/"dateModified":"[^"]*"/, `"dateModified":"${TODAY}"`).replace(/"lastReviewed":"[^"]*"/, `"lastReviewed":"${TODAY}"`).replace(/Cập nhật \d\d\/\d\d\/\d{4}/, 'Cập nhật ' + TODAY_VN);
@@ -110,7 +108,7 @@ for (const [slug, B] of Object.entries(BR)) {
   h = rep(h, 'theo từng model VinFast', `theo từng dòng ${N}`, true);
   // hero
   h = rep(h, 'Chọn cấu hình phim 3M theo từng dòng VinFast từ VF3 đến VF9: giá trọn xe từ 5.900.000đ', `Chọn cấu hình phim 3M theo từng dòng ${N} từ ${B.cars[0][0]} đến ${B.cars[B.cars.length - 1][0]}: giá trọn xe từ ${vnd(lowP)}`);
-  h = h.replace(/alt="VinFast VF 5 dán phim 3M Crystalline CR BLK 50 tại Auto365"/, `alt="${esc(hero.t)}"`);
+  h = h.replace(/alt="VinFast VF 5 dán phim 3M Crystalline CR BLK 50 tại Auto365"/, 'alt="Kỹ thuật viên Auto365 dán phim cách nhiệt 3M tại 3M Pro Shop"');
   // bộ lọc dòng xe
   const tabs = Object.keys(T).filter(k => B.cars.some(c => c[3] === k));
   h = h.replace(/<div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe">[\s\S]*?<\/div>/, `<div class="vf-tabs" role="tablist" aria-label="Lọc dòng xe"><button type="button" data-t="all" aria-pressed="true">Tất cả (${B.cars.length})</button>${tabs.map(k => `<button type="button" data-t="${k}" aria-pressed="false">${T[k]} (${B.cars.filter(c => c[3] === k).length})</button>`).join('')}</div>`);
