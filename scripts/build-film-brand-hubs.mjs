@@ -85,7 +85,7 @@ for (const [slug, B] of Object.entries(BR)) {
   const KL = { tt: ['Xe thực tế', ''], tv: ['Tư vấn theo xe', ' vf-case__k--g'], cn: ['Cẩm nang', ' vf-case__k--g'] };
   const cardsHtml = list.map(o => {
     const loai = o.f || (o.k === 'tv' ? 'Phim 3M' : 'Phim 3M'), em = o.k === 'tv' && !o.f ? '6 gói phim 3M' : loai, dd = o.d.split('-').reverse().join('/');
-    return `  <a class="vf-case" data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__k${KL[o.k][1]}">${KL[o.k][0]}</span><span class="vf-case__xe">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
+    return `  <a class="vf-case" data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__xe">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
   }).join('');
   const caseCars = B.cars.filter(c => list.some(o => o.car === c));
   const loais = [...new Set(list.map(o => o.f || 'Phim 3M'))].sort();
