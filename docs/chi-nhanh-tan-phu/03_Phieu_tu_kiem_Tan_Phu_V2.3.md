@@ -97,3 +97,10 @@ User gửi địa chỉ chuẩn (theo chứng nhận AX Film): 20/54A Đường 
   - Trang camera-hanh-trinh-v2.
 - **Trên trang:** khối địa chỉ ghi rõ "P. Sơn Kỳ hoặc P. Tây Thạnh là địa danh trước sắp xếp, cùng một cơ sở".
 - **Quyết định:** không mở lại mục N1/N2 vì tài liệu bên thứ ba còn ghi địa danh cũ. Nếu 3M phát hành bản mới thì đối chiếu lại, không bắt buộc.
+
+## Vá TP1 theo báo cáo 25/11/2026 (26/11/2026)
+
+- **Canonical:** đổi canonical, og:url và tất cả `@id`/`url` trong JSON-LD từ `https://auto365.vn/chi-nhanh/tan-phu` (đang 404) sang URL cơ sở hiện hữu `https://auto365.vn/quan-tan-phu` (kiểm ngày 26/11: HTTP 200).
+- **Mapping production:** preview `/chi-nhanh/tan-phu/` sẽ cập nhật nội dung vào `https://auto365.vn/quan-tan-phu`. Ảnh tự host `/chi-nhanh/tan-phu/hinh/*` để IT chuyển cùng khi tích hợp.
+- **Link PPF:** đổi `ppfwrap-film` thành đích cuối `https://auto365.vn/ppf-o-to` (HTTP 200).
+- **Kiểm tra:** 5 khối JSON-LD parse được. 375px và 1440px không tràn ngang. dateModified là 2026-11-26.
