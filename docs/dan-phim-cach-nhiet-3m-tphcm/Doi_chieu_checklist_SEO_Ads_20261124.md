@@ -34,3 +34,12 @@
 | L07 / 5.2 | Quan hệ địa chỉ Trụ Sở Chính 4/4/1/7 và 3M Pro Shop & Training Center 4/4/3/3: khách giao xe ở đâu. | Vận hành |
 | L11 (form) | Trang có 2 form (inline + popup) cùng mục đích; IT kiểm đếm `generate_lead` không trùng. | IT |
 | L08 / L21 | Lead test có gbraid/wbraid đi tới CRM; phân loại lead về Trụ Sở Chính; baseline GSC 28 ngày. | IT / SEO |
+
+## Ticket v250 (26/11/2026)
+
+| Ticket | Trạng thái | Ghi chú |
+|---|---|---|
+| FIX-01 | Đạt (preview) | Ceramic Hybrid → Ceramic NR (HTML, FAQ, JSON-LD, form, page-asset.js); ghi tên cũ 1 lần ở ghi chú giá. Nguồn: bảng giá 3M 06/2026 (Ceramic Hybrid = NR 35 + NR 25/15/5), Hub ghi "tên cũ Ceramic Hybrid". Production: đổi `n:'Ceramic Hybrid'` trong /page-asset/16176.js. |
+| FIX-02 | Đạt | User xác nhận 26/11: cả 58 case làm tại Trụ Sở Chính. Rà bài gốc: 48 bài ghi Trụ Sở Chính/3M Pro Shop/Hiệp Bình trong nội dung, 10 bài không ghi cơ sở, không bài nào ghi chi nhánh khác. H2 → "Xe đã dán phim cách nhiệt 3M tại Auto365 Trụ Sở Chính". |
+| FIX-03 | Đạt | Gộp 2 FAQ thử/so sánh phim thành 1; JSON-LD 6 câu khớp hiển thị. |
+| FIX-04 | Không áp dụng | Không có đoạn công nghệ dài lặp Hub. |
