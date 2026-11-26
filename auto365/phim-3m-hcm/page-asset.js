@@ -6,7 +6,7 @@
   {id:'crystalline-hybrid-pro',u:'https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid-pro',n:'Crystalline Hybrid Pro',c:'Lái CR BLK 40 · Sườn/sau NR 25/15/5',t:['Trong suốt','Giảm chói','Cách nhiệt tốt'],p:[9.8,11.6,13.3],s:['CR BLK 40','58%','41%','98%']},
   {id:'crystalline-hybrid',u:'https://auto365.vn/phim-cach-nhiet-o-to-3m-crystalline-hybrid',n:'Crystalline Hybrid',c:'Lái CR BLK 60/50 · Sườn/sau NR 25/15/5',t:['Trong suốt','Giảm chói','Tầm nhìn rõ'],p:[9.0,10.8,12.5],b:'Cân bằng',s:['CR BLK 60 / 50','54 / 56%','57 / 48%','97 / 98%']},
   {id:'ceramic-ir',u:'https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-ir',n:'Ceramic IR',c:'Lái IR 50 · Sườn/sau IR 25/15',t:['Cản hồng ngoại','Ceramic','Cân bằng chi phí'],p:[7.2,9.0,10.5],s:['IR 50','54%','50%','83%']},
-  {id:'ceramic-hybrid',u:'https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid',n:'Ceramic Hybrid',c:'Lái NR 35 · Sườn/sau NR 25/15/5',t:['Lai ceramic + reflective','Chi phí tốt','Ngân sách vừa'],p:[5.9,7.9,9.5],s:['NR 35','51%','43%','79%']}
+  {id:'ceramic-hybrid',u:'https://auto365.vn/phim-cach-nhiet-o-to-3m-ceramic-hybrid',n:'Ceramic NR',c:'Lái NR 35 · Sườn/sau NR 25/15/5',t:['Lai ceramic + reflective','Chi phí tốt','Ngân sách vừa'],p:[5.9,7.9,9.5],s:['NR 35','51%','43%','79%']}
  ];
  function vnd(m){return Math.round(m*1e6).toLocaleString('vi-VN')+'đ'}
  var grid=document.getElementById('h3m-pk'),qs=document.getElementById('q-pk'),fs=document.getElementById('f-pk');
