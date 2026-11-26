@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/isuzu/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/isuzu |
-| Title (64 ký tự) | Bi gầm Isuzu: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (129 ký tự) | Chọn bi gầm cho xe Isuzu theo đời xe; xem xe Isuzu đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (65 ký tự) | Bi gầm Isuzu: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (152 ký tự) | Độ bi gầm Isuzu theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Isuzu đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Isuzu: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `b43d8c4c06e93d94956ad86bd7c3610f0ba46410ecceb71fd1dc2a27a23d5990` |
-| SHA-256 content-src.html | `dccc8d950a6534a1049b40c3c32a26a0d91bdff9ef08ad2790ad0ccaf485d082` |
+| SHA-256 index.html | `e374468bd00349f001ade48526adf1b5d2f20d75571722d87f4bfa0106ebed4a` |
+| SHA-256 content-src.html | `8ce8b0f597910e4be2c5381e06b2a3de66a6a3330eb58c080a42f65ee78adb73` |
 
 ## Sapo (kiêm trả lời nhanh)
 

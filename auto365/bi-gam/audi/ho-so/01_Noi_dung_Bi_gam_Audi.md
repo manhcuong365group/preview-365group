@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/audi/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/audi |
-| Title (63 ký tự) | Bi gầm Audi: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (118 ký tự) | Xem hồ sơ bi gầm Audi đã lắp và xe Audi đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (64 ký tự) | Bi gầm Audi: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (150 ký tự) | Độ bi gầm Audi theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Audi đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Audi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (3), FAQPage |
-| SHA-256 index.html | `6cb7472c8b0b583463ac07b23e3362f99bcc12b921df45b86a876454161fdaef` |
-| SHA-256 content-src.html | `c22eb5d4fe5851a2524806168bbcc5ffedbb2fd28c736af4107c3a89bb3f2626` |
+| SHA-256 index.html | `735ed603be1d9d907455d3a162b8d99c12b35f80373cdec8315ba59bd9d4e754` |
+| SHA-256 content-src.html | `5ccca79a41ffba71744ac61bdec6656a76c511b7cd47eb9313ecd20947978c09` |
 
 ## Sapo (kiêm trả lời nhanh)
 

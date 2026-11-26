@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/volvo/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/volvo |
-| Title (64 ký tự) | Bi gầm Volvo: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (129 ký tự) | Chọn bi gầm cho xe Volvo theo đời xe; xem xe Volvo đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (65 ký tự) | Bi gầm Volvo: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (152 ký tự) | Độ bi gầm Volvo theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Volvo đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Volvo: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `3d2d9c7a56b5636dfe73a5352f275fa1c5c6d671d5e61eee40addd31a34e2b76` |
-| SHA-256 content-src.html | `c7d4608724edaee598b3eae34e26eb436988e197db39ec284748664a9a46b28d` |
+| SHA-256 index.html | `c6a4c0f32e5117fc773797a82339e3650d697ab2aa8770868a76f02654fd36de` |
+| SHA-256 content-src.html | `ea1594a10d9319d47588fc22ec14cdc4743ff57bd898204026be8d830cc7769b` |
 
 ## Sapo (kiêm trả lời nhanh)
 

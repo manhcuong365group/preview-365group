@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/volkswagen/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/volkswagen |
-| Title (69 ký tự) | Bi gầm Volkswagen: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (130 ký tự) | Xem hồ sơ bi gầm Volkswagen đã lắp và xe Volkswagen đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (70 ký tự) | Bi gầm Volkswagen: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (162 ký tự) | Độ bi gầm Volkswagen theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Volkswagen đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Volkswagen: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (4), FAQPage |
-| SHA-256 index.html | `3a34990a59b8952003a19927e84c78a91ba4cb4634a09133678a8daa1171ed9c` |
-| SHA-256 content-src.html | `91b5557a8624f249147a79d4925afe3c733b3e8a0ff7b394330f03d0f0b47754` |
+| SHA-256 index.html | `cf5e7a3132f03c1855b2f901ce1b2e73bb1a09550005fcb00701715245e8888e` |
+| SHA-256 content-src.html | `a57d3a46be2019862f3e1e7aa529ef11abd691a5922084ff6a0cb3afe3330be5` |
 
 ## Sapo (kiêm trả lời nhanh)
 

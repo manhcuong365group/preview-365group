@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/byd/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/byd |
-| Title (62 ký tự) | Bi gầm BYD: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (125 ký tự) | Chọn bi gầm cho xe BYD theo đời xe; xem xe BYD đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (63 ký tự) | Bi gầm BYD: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (148 ký tự) | Độ bi gầm BYD theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe BYD đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm BYD: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), FAQPage |
-| SHA-256 index.html | `16fdc40ede961b3641f438c8f61d8c61c1b506694097933b4219530584a8bfb1` |
-| SHA-256 content-src.html | `69cdc3c4c7d9e51069977894a370297c1694f14d9ee1c69367c4d1d3626c8e7a` |
+| SHA-256 index.html | `3cd5686ae8e2ff4d10743ccc8e86fdd0a1d85e35d494bdae176b32dc32374b50` |
+| SHA-256 content-src.html | `a2dc6ec8ab2ad17df2975e232237349826a1a7bce75f127ec17f3fe13b12f2c0` |
 
 ## Sapo (kiêm trả lời nhanh)
 

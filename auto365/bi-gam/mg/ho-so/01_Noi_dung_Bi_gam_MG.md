@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/mg/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/mg |
-| Title (61 ký tự) | Bi gầm MG: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (123 ký tự) | Chọn bi gầm cho xe MG theo đời xe; xem xe MG đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (62 ký tự) | Bi gầm MG: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (146 ký tự) | Độ bi gầm MG theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe MG đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm MG: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `86a8faedbe93e3e9b6db2d751e75942424cc55df89f5f07156ec047098ed7e1c` |
-| SHA-256 content-src.html | `55e3ba9381346fa292237264cb7de1a3594c20cb5c7a02c7af1d3d5c2e48581b` |
+| SHA-256 index.html | `12ea9622a09c159e5b1c237f3cbbdea2980e74bc2a06496ea218a24bb83359ba` |
+| SHA-256 content-src.html | `d7824ddc69114478c062efda091e525495cf04597ca63685afae90abb8534551` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -113,8 +113,8 @@ const dateModified = (content.match(/class="bgvf-dm" datetime="([0-9-]+)"/) || [
 const lastReviewed = (content.match(/class="bgvf-rv" datetime="([0-9-]+)"/) || [])[1];
 const reviewedBy = lastReviewed && { '@type': 'Person', name: 'Nguyễn Quang Đạo', jobTitle: 'Kiểm duyệt kỹ thuật đèn ô tô', url: 'https://auto365.vn/tac-gia/nguyen-quang-dao' };
 
-const title = 'Bi gầm Mercedes: chọn theo dòng xe, xe đã làm tại Auto365 | Auto365';
-const desc = 'Chọn bi gầm cho xe Mercedes theo đời xe; xem xe Mercedes đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí.';
+const title = 'Bi gầm Mercedes: độ đèn gầm theo dòng xe, giá và xe đã làm | Auto365';
+const desc = 'Độ bi gầm Mercedes theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Mercedes đã làm tại Auto365 và nhận báo giá.';
 const schema = {
   '@context': 'https://schema.org',
   '@graph': [

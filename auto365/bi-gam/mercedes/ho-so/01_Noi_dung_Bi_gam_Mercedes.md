@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/mercedes/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/mercedes |
-| Title (67 ký tự) | Bi gầm Mercedes: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (135 ký tự) | Chọn bi gầm cho xe Mercedes theo đời xe; xem xe Mercedes đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (68 ký tự) | Bi gầm Mercedes: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (158 ký tự) | Độ bi gầm Mercedes theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Mercedes đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Mercedes: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), FAQPage |
-| SHA-256 index.html | `856882751c64cabd31d72107bc063b92adee05e29a5d5755eed993cc1ed215d1` |
-| SHA-256 content-src.html | `188054f07bae06bbbc65c3845276b81e06c09f9b214983518d57156a1bbd0726` |
+| SHA-256 index.html | `eb6391bc7dc2fad82a116d844d4723f0d5f7b56501f143fb8cbf64fb73967be4` |
+| SHA-256 content-src.html | `7f8280f9613a76b41cddd0cdad6f0b11624c7486bad6d9a4de157d77109f6758` |
 
 ## Sapo (kiêm trả lời nhanh)
 

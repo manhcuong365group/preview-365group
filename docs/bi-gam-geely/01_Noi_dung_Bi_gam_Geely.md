@@ -6,13 +6,13 @@
 |---|---|
 | URL preview | https://preview-365group.pages.dev/bi-gam/geely/ |
 | Canonical production | https://auto365.vn/nang-cap-anh-sang-bi-gam/geely |
-| Title (64 ký tự) | Bi gầm Geely: chọn theo dòng xe, xe đã làm tại Auto365 \| Auto365 |
-| Meta description (129 ký tự) | Chọn bi gầm cho xe Geely theo đời xe; xem xe Geely đã làm tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện và báo chi phí. |
+| Title (65 ký tự) | Bi gầm Geely: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
+| Meta description (152 ký tự) | Độ bi gầm Geely theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Geely đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Geely: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), FAQPage |
-| SHA-256 index.html | `62bd9a7c3c3e15a39bd37d65ce86e50b9f122f71b7c6ccfcdf6a22b48fb93e8d` |
-| SHA-256 content-src.html | `96409c4037e3c416a9e8abdd8e1df5fc42400ad55fcb24a13861efff70e4e632` |
+| SHA-256 index.html | `857e40c24185186b8b7cd8bd7a0aabcec438d15c716a174f51f2f97e77b965f8` |
+| SHA-256 content-src.html | `6694de343edd6bb988880df27292dd958061be2a7e7e54ea9e47463b71e82443` |
 
 ## Sapo (kiêm trả lời nhanh)
 
