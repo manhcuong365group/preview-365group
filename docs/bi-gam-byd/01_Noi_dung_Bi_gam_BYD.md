@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm BYD: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), FAQPage |
-| SHA-256 index.html | `42409f00fb823769318060d7a34eb7fa5ce5a6195b6c9de91435e4416432e63c` |
-| SHA-256 content-src.html | `85bfbe61b16f06d6a1c044892ef8eefd9138bf4ef65c15930b759c839672c754` |
+| SHA-256 index.html | `16fdc40ede961b3641f438c8f61d8c61c1b506694097933b4219530584a8bfb1` |
+| SHA-256 content-src.html | `69cdc3c4c7d9e51069977894a370297c1694f14d9ee1c69367c4d1d3626c8e7a` |
 
 ## Sapo (kiêm trả lời nhanh)
 

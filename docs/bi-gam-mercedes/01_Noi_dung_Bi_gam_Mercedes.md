@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mercedes: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), FAQPage |
-| SHA-256 index.html | `4df7580b5a4c051b2426501bb7f61fced2ea22b66f648334088151bda437a1fe` |
-| SHA-256 content-src.html | `a4ceb766157169be758c039343dcc0f4f4bbed4c7b6b729c83d2c0a234b1348d` |
+| SHA-256 index.html | `856882751c64cabd31d72107bc063b92adee05e29a5d5755eed993cc1ed215d1` |
+| SHA-256 content-src.html | `188054f07bae06bbbc65c3845276b81e06c09f9b214983518d57156a1bbd0726` |
 
 ## Sapo (kiêm trả lời nhanh)
 
