@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Isuzu: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `e374468bd00349f001ade48526adf1b5d2f20d75571722d87f4bfa0106ebed4a` |
-| SHA-256 content-src.html | `8ce8b0f597910e4be2c5381e06b2a3de66a6a3330eb58c080a42f65ee78adb73` |
+| SHA-256 index.html | `90c2a1665ff886b2f25069552721534caf0f9571a9836a1067301b137289981d` |
+| SHA-256 content-src.html | `467adee22583a90e8f5baf8c856cd7d01e9da27c9c432bf16578c6a44612043f` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Isuzu giúp bổ sung vùng sáng gần và hai bên lề đườ
 
 ## Chọn dòng xe Isuzu
 
-### Dòng xe (4)
+### Dòng xe (8)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -28,6 +28,10 @@ Lắp bi gầm Isuzu giúp bổ sung vùng sáng gần và hai bên lề đườ
 | Isuzu mu-X | SUV | Liên hệ tư vấn | — |
 | Isuzu Hi-Lander | MPV | Liên hệ tư vấn | — |
 | Isuzu Trooper | SUV | Liên hệ tư vấn | — |
+| Isuzu mu-7 | SUV | Liên hệ tư vấn | — |
+| Isuzu Q-Series (QKR) | truck | Liên hệ tư vấn | — |
+| Isuzu N-Series (NMR/NPR/NQR) | truck | Liên hệ tư vấn | — |
+| Isuzu F-Series (FRR/FVR) | truck | Liên hệ tư vấn | — |
 
 ## Xe Isuzu đã làm tại Auto365 (1 bài hồ sơ)
 
@@ -69,11 +73,11 @@ Chưa có hồ sơ bi gầm: gửi đời xe để kỹ thuật viên kiểm tra
 
 CTA: — (chưa có bài tư vấn dòng xe)
 
-#### Xe đời cũ
+#### Xe đời cũ, xe tải
 
-_Dòng xe:_ Hi-Lander, Trooper
+_Dòng xe:_ Hi-Lander, Trooper, mu-7, Q-Series, N-Series, F-Series
 
-- Xe đời cũ nên kiểm tra tình trạng cụm đèn gầm, giắc và dây điện trước khi chọn mẫu.
+- Xe đời cũ nên kiểm tra tình trạng cụm đèn gầm, giắc và dây điện trước khi chọn mẫu. Xe tải Isuzu thường dùng điện 24V nên phải chọn bi gầm đúng điện áp 24V.
 - Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
 - Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.
 

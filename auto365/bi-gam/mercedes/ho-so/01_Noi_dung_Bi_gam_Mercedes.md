@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Mercedes: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), FAQPage |
-| SHA-256 index.html | `eb6391bc7dc2fad82a116d844d4723f0d5f7b56501f143fb8cbf64fb73967be4` |
-| SHA-256 content-src.html | `7f8280f9613a76b41cddd0cdad6f0b11624c7486bad6d9a4de157d77109f6758` |
+| SHA-256 index.html | `24fa041649faab1ccbc46f9eea0063f8c30a8f8ebb6f26116f8812705f4d54d5` |
+| SHA-256 content-src.html | `72c7c566b66ddece489fc2d91379897bd1d7b547ab98bc735996cfec4d50bf98` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Mercedes giúp bổ sung vùng sáng gần và hai bên lề đư
 
 ## Chọn dòng xe Mercedes
 
-### Dòng xe (18)
+### Dòng xe (31)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -42,6 +42,19 @@ Lắp bi gầm Mercedes giúp bổ sung vùng sáng gần và hai bên lề đư
 | Mercedes G-Class | SUV | Liên hệ tư vấn | — |
 | Mercedes V-Class | MPV | Liên hệ tư vấn | — |
 | Mercedes Sprinter | MPV | Liên hệ tư vấn | — |
+| Mercedes GLK | SUV | Liên hệ tư vấn | — |
+| Mercedes ML | SUV | Liên hệ tư vấn | — |
+| Mercedes GL | SUV | Liên hệ tư vấn | — |
+| Mercedes EQB | SUV | Liên hệ tư vấn | — |
+| Mercedes EQE SUV | SUV | Liên hệ tư vấn | — |
+| Mercedes EQS SUV | SUV | Liên hệ tư vấn | — |
+| Mercedes Maybach GLS | SUV | Liên hệ tư vấn | — |
+| Mercedes B-Class | Sedan | Liên hệ tư vấn | — |
+| Mercedes CLS | Sedan | Liên hệ tư vấn | — |
+| Mercedes AMG GT | Sedan | Liên hệ tư vấn | — |
+| Mercedes SL | Sedan | Liên hệ tư vấn | — |
+| Mercedes SLK | Sedan | Liên hệ tư vấn | — |
+| Mercedes Vito | MPV | Liên hệ tư vấn | — |
 
 ## Xe Mercedes đã làm tại Auto365 (7 bài hồ sơ)
 

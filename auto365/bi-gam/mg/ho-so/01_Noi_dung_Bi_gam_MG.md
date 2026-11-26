@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm MG: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `12ea9622a09c159e5b1c237f3cbbdea2980e74bc2a06496ea218a24bb83359ba` |
-| SHA-256 content-src.html | `d7824ddc69114478c062efda091e525495cf04597ca63685afae90abb8534551` |
+| SHA-256 index.html | `cf5ddb06b5d5ca4a793bc622a21dc11cbb6cb9f8366ca73d5ed7748dca375ca2` |
+| SHA-256 content-src.html | `1152b2a52f8046d77feb33d2ffd4244fe9a06927443005d2a639dadd44256057` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm MG giúp bổ sung vùng sáng gần và hai bên lề đường 
 
 ## Chọn dòng xe MG
 
-### Dòng xe (8)
+### Dòng xe (11)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -32,6 +32,9 @@ Lắp bi gầm MG giúp bổ sung vùng sáng gần và hai bên lề đường 
 | MG HS | SUV | Liên hệ tư vấn | — |
 | MG RX5 | SUV | Liên hệ tư vấn | — |
 | MG G50 | MPV | Liên hệ tư vấn | — |
+| MG MG3 | Sedan | Liên hệ tư vấn | — |
+| MG MG6 | Sedan | Liên hệ tư vấn | — |
+| MG Cyberster | Sedan | Liên hệ tư vấn | — |
 
 ## Xe MG đã làm tại Auto365 (4 bài hồ sơ)
 

@@ -289,7 +289,7 @@
 
 <!-- @lead -->
 </div>
-<aside class="bgvf-ic-chk" id="bgvf-internal-check" hidden aria-label="Kiểm tra nội bộ (chỉ preview)"><div class="bght-in"><b>Kiểm tra nội bộ — chỉ hiện trên preview, xoá khi lên production</b><p><b>Trạng thái: ĐÃ DUYỆT — anh Nguyễn Quang Đạo duyệt 26/11/2026.</b> Dựng 26/11/2026 theo khung hub MG. Mục xe thực tế gồm 0 ca bi gầm và 4 ca hạng mục khác (theo yêu cầu 26/11: hãng chưa đủ ca bi gầm thì đưa xe đã làm dịch vụ khác tại Auto365, có nhãn hạng mục). Ảnh thẻ dòng xe chưa có, chờ designer. Cần xác nhận: danh sách 8 dòng xe, cơ sở và ngày thi công từng ca.</p></div></aside>
+<aside class="bgvf-ic-chk" id="bgvf-internal-check" hidden aria-label="Kiểm tra nội bộ (chỉ preview)"><div class="bght-in"><b>Kiểm tra nội bộ — chỉ hiện trên preview, xoá khi lên production</b><p><b>Trạng thái: ĐÃ DUYỆT — anh Nguyễn Quang Đạo duyệt 26/11/2026.</b> Dựng 26/11/2026 theo khung hub MG. Mục xe thực tế gồm 0 ca bi gầm và 4 ca hạng mục khác (theo yêu cầu 26/11: hãng chưa đủ ca bi gầm thì đưa xe đã làm dịch vụ khác tại Auto365, có nhãn hạng mục). Ảnh thẻ dòng xe chưa có, chờ designer. Cần xác nhận: danh sách 11 dòng xe, cơ sở và ngày thi công từng ca.</p></div></aside>
 
 <script id="bgvf-internal-check-js">(function(){var h=location.hostname;if(/pages.dev$|^localhost$|^127.0.0.1$/.test(h)){["bgvf-internal-check","bgvf-u3-check"].forEach(function(i){var x=document.getElementById(i);if(x)x.hidden=false})}})();</script>
 <script>
@@ -303,7 +303,10 @@ var M=[['MG5','sedan','',''],
 ['ZS','suv','',''],
 ['HS','suv','',''],
 ['RX5','suv','',''],
-['G50','mpv','','']];
+['G50','mpv','',''],
+['MG3','sedan','',''],
+['MG6','sedan','',''],
+['Cyberster','sedan','','']];
 var T=[['all','Tất cả'],['sedan','Sedan/Hatchback'],['suv','SUV'],['mpv','MPV']];
 // [dòng xe, tiêu đề bài, slug bài trên auto365.vn, ảnh, ngày đăng, hạng mục] — bài đã đăng trên auto365.vn; ca hạng mục khác ghi rõ nhãn
 var C=[["RX5","MG RX5 2024 lắp bi LED X-Light V20 Square","mg-rx5-2024-lap-bi-led-x-light-v20-square","https://auto365.vn/uploads/images/news/auto365vn-mg-rx5-2024-lap-bi-led-x-light-v20-square-img_6aa3764965e589.21190357.webp","2026-09-11","Bi LED"],
@@ -320,7 +323,7 @@ var G=[
 ['Hai bên đèn ô tô sáng không đều: Nguyên nhân, cách kiểm tra','hai-ben-den-o-to-sang-khong-deu','https://auto365.vn/uploads/images/news/auto365vn-hai-ben-den-o-to-sang-khong-deu-img_6a94e3dc7a3105.44763580.webp','2026-08-31','Kiểm tra'],
 ['AES SV 3.0 Pro 4800K phù hợp với nhóm tài xế nào?','bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao-img_6a83e40489d5b2.17476163.jpg.webp','2026-08-18','Chọn mẫu đèn'],
 ['Cách chăm sóc mặt kính đèn pha ô tô hạn chế xước, ố vàng và rạn nứt','cach-cham-soc-mat-kinh-den-pha-o-to','https://auto365.vn/uploads/images/news/auto365vn-cham-soc-mat-kinh-den-pha-o-to-img_6a8d3766dcece8.04026461.webp','2026-08-25','Bảo dưỡng']];
-(function(){var NEW=['MG5','MG7','MG4 EV','GT','ZS','HS','RX5','G50'];var n=function(x){return C.filter(function(c){return c[0]===x[0]&&c[5]==='Bi gầm'}).length},w=function(x){var nw=NEW.indexOf(x[0])>=0;return n(x)>0?(nw?0:1):(nw?2:3)},o=M.slice();M.sort(function(a,b){return w(a)-w(b)||n(b)-n(a)||(NEW.indexOf(a[0])<0?99:NEW.indexOf(a[0]))-(NEW.indexOf(b[0])<0?99:NEW.indexOf(b[0]))||o.indexOf(a)-o.indexOf(b)})})();
+(function(){var NEW=['MG5','MG7','MG4 EV','GT','ZS','HS','RX5','G50','MG3','MG6','Cyberster'];var n=function(x){return C.filter(function(c){return c[0]===x[0]&&c[5]==='Bi gầm'}).length},w=function(x){var nw=NEW.indexOf(x[0])>=0;return n(x)>0?(nw?0:1):(nw?2:3)},o=M.slice();M.sort(function(a,b){return w(a)-w(b)||n(b)-n(a)||(NEW.indexOf(a[0])<0?99:NEW.indexOf(a[0]))-(NEW.indexOf(b[0])<0?99:NEW.indexOf(b[0]))||o.indexOf(a)-o.indexOf(b)})})();
 var $=function(id){return document.getElementById(id)};
 var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
 var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};

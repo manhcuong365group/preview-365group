@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Audi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (3), FAQPage |
-| SHA-256 index.html | `735ed603be1d9d907455d3a162b8d99c12b35f80373cdec8315ba59bd9d4e754` |
-| SHA-256 content-src.html | `5ccca79a41ffba71744ac61bdec6656a76c511b7cd47eb9313ecd20947978c09` |
+| SHA-256 index.html | `9bfe62523a0e82e8e627e52c649b8cc9c307a57bc073bf237636174b0231d549` |
+| SHA-256 content-src.html | `8c680c13f3a09bc7f7d35fab8adcd7b76cdab747e2126921ea0ecfc0a07e1821` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Audi giúp bổ sung vùng sáng gần và hai bên lề đườn
 
 ## Chọn dòng xe Audi
 
-### Dòng xe (12)
+### Dòng xe (17)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -36,6 +36,11 @@ Lắp bi gầm Audi giúp bổ sung vùng sáng gần và hai bên lề đườn
 | Audi A7 Sportback | Sedan | Liên hệ tư vấn | — |
 | Audi A8 | Sedan | Liên hệ tư vấn | — |
 | Audi TT | sport | Liên hệ tư vấn | — |
+| Audi A1 | Sedan | Liên hệ tư vấn | — |
+| Audi A3 | Sedan | Liên hệ tư vấn | — |
+| Audi Q8 e-tron | SUV | Liên hệ tư vấn | — |
+| Audi e-tron GT | sport | Liên hệ tư vấn | — |
+| Audi R8 | sport | Liên hệ tư vấn | — |
 
 ## Xe Audi đã làm tại Auto365 (3 bài hồ sơ)
 

@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Volvo: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `c6a4c0f32e5117fc773797a82339e3650d697ab2aa8770868a76f02654fd36de` |
-| SHA-256 content-src.html | `ea1594a10d9319d47588fc22ec14cdc4743ff57bd898204026be8d830cc7769b` |
+| SHA-256 index.html | `72efd32f3ea4f001abc65fb56434455fce62f8926c7b5db17d763f387439d65a` |
+| SHA-256 content-src.html | `9801afadd3b623d4e8f16809ca49eff50873dfffb445fcb0cce3a208987bad6a` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Volvo giúp bổ sung vùng sáng gần và hai bên lề đườ
 
 ## Chọn dòng xe Volvo
 
-### Dòng xe (9)
+### Dòng xe (10)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -33,6 +33,7 @@ Lắp bi gầm Volvo giúp bổ sung vùng sáng gần và hai bên lề đườ
 | Volvo S60 | Sedan | Liên hệ tư vấn | — |
 | Volvo S90 | Sedan | Liên hệ tư vấn | — |
 | Volvo V60 Cross Country | Sedan | Liên hệ tư vấn | — |
+| Volvo V90 Cross Country | Sedan | Liên hệ tư vấn | — |
 
 ## Xe Volvo đã làm tại Auto365 (4 bài hồ sơ)
 

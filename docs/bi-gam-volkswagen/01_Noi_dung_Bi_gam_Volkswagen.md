@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Volkswagen: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (4), FAQPage |
-| SHA-256 index.html | `cf5e7a3132f03c1855b2f901ce1b2e73bb1a09550005fcb00701715245e8888e` |
-| SHA-256 content-src.html | `a57d3a46be2019862f3e1e7aa529ef11abd691a5922084ff6a0cb3afe3330be5` |
+| SHA-256 index.html | `a86713e7736fbe5ffe45e66e3807c95d57f45879f6d97a2c9d5d211eeb8e95e4` |
+| SHA-256 content-src.html | `e44558e2c19fc3036807daa63ce00d899c82d0b634c26ec130565c42f93cd0d6` |
 
 ## Sapo (kiêm trả lời nhanh)
 
@@ -20,7 +20,7 @@ Lắp bi gầm Volkswagen giúp bổ sung vùng sáng gần và hai bên lề đ
 
 ## Chọn dòng xe Volkswagen
 
-### Dòng xe (12)
+### Dòng xe (15)
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
@@ -36,6 +36,9 @@ Lắp bi gầm Volkswagen giúp bổ sung vùng sáng gần và hai bên lề đ
 | Volkswagen Teramont X | SUV | Liên hệ tư vấn | — |
 | Volkswagen Touareg | SUV | Liên hệ tư vấn | — |
 | Volkswagen Viloran | MPV | Liên hệ tư vấn | — |
+| Volkswagen Jetta | Sedan | Liên hệ tư vấn | — |
+| Volkswagen Arteon | Sedan | Liên hệ tư vấn | — |
+| Volkswagen Sharan | MPV | Liên hệ tư vấn | — |
 
 ## Xe Volkswagen đã làm tại Auto365 (4 bài hồ sơ)
 
