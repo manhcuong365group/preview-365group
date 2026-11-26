@@ -95,7 +95,7 @@ for (const [slug, B] of Object.entries(BR)) {
   const sedan = B.cars.filter(c => c[2] === 1).map(c => c[0]), suv = B.cars.filter(c => c[2] === 2).map(c => c[0]);
   const lowP = sedan.length ? 7.9 : 9.5;
   const priceTxt = `Giá dán trọn xe theo bảng giá 3M: ${sedan.length ? `nhóm Sedan (${sedan.join(', ')}) từ 7.900.000đ, ` : ''}nhóm SUV/MPV (${suv.join(', ')}) từ 9.500.000đ, đã gồm VAT.`;
-  const grpTxt = `${sedan.length ? 'Sedan: ' + sedan.join(', ') + ' · ' : ''}SUV/MPV: ${suv.join(', ')}. Nhóm Minicar không áp dụng cho xe ${N}.`;
+  const grpTxt = `${sedan.length ? 'Sedan: ' + sedan.join(', ') + ' · ' : ''}SUV/MPV: ${suv.join(', ')}.`;
 
   let h = TPL;
   // head + schema
@@ -146,6 +146,9 @@ for (const [slug, B] of Object.entries(BR)) {
   h = h.replace(/landing_3m_vinfast/g, 'landing_3m_' + slug).replace(/VinFast/g, N);
   const left = h.match(/.{40}(vinfast|VF ?\d|Minio|Fadil|Lux A).{40}/gi);
   if (left) console.warn(slug, 'CÒN SÓT:', left.slice(0, 8));
+  // bảng giá: bỏ cột Minicar (không có xe hãng này thuộc nhóm Minicar)
+  { const a = h.indexOf('<th scope="col">Nhóm Minicar</th>'), e = h.indexOf('</table>', a);
+    if (a > -1) h = h.slice(0, a) + h.slice(a, e).replace('<th scope="col">Nhóm Minicar</th>', '').replace(/(<tr><th scope="row">.*?<\/th><td>[^<]*<\/td>)<td>[^<]*<\/td>/g, '$1') + h.slice(e); }
   fs.writeFileSync(path.join(out, 'index.html'), h);
   console.log(slug, 'xe', B.cars.length, 'case', list.length, '(tt', list.filter(o => o.k === 'tt').length + ')', 'TV', Object.keys(TV).length);
 }
