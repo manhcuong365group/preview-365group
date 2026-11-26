@@ -9,10 +9,10 @@
 | Title (57 ký tự) | Bi gầm Porsche: chọn theo xe, hồ sơ lắp thực tế \| Auto365 |
 | Meta description (113 ký tự) | Xem hồ sơ bi gầm Porsche đã lắp tại Auto365; gửi đời xe để kiểm tra hốc đèn, nguồn điện, phụ kiện và báo chi phí. |
 | H1 | Lắp bi gầm Porsche: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-24 |
+| dateModified | 2026-11-26 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `a2e27dcff7935a047787567bac54ca3aee0cac4e55d4f6f7bce67e84f04953c0` |
-| SHA-256 content-src.html | `d540dc0cce9547b2362dfca84b5168896bc1e6d935181155033a1114bf9e80e2` |
+| SHA-256 index.html | `7ba1f295c9fac53152405458db9e913332bcfebf946030ed3ec99e196885eb0f` |
+| SHA-256 content-src.html | `8a510197e55edc95fd1719cd0da90d198ee73b6377b5af29efe5cdc878fd1d30` |
 
 ## Sapo (kiêm trả lời nhanh)
 
