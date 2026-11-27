@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Volkswagen: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (4), FAQPage |
-| SHA-256 index.html | `83dcdc161373973f0fe7e00bada36b70f1aab340f6f489dae2c98da7701a2dea` |
-| SHA-256 content-src.html | `9979c25e1d5a7081774e37b7f636778e773025b3db40a965e9ea3654ad24c3ff` |
+| SHA-256 index.html | `c9f0d1b3e3b95875ec2cba964c73a2f8e2408c8c8d6af04fa2ffa89b6712e100` |
+| SHA-256 content-src.html | `5dbbafbe05e63cf627bfae8fee5c15cbed931b1b212b71202ae5ac7dc15fad2d` |
 
 ## Sapo (kiêm trả lời nhanh)
 

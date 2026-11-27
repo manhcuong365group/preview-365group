@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Volvo: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `18efad29db5dbb651e481fd98798c67fbb2811283b7e8b1edee6f4995cc8b410` |
-| SHA-256 content-src.html | `5ec9353371d1c4581122d2e9fced8ac314310d81861d98686d1e327fba555f4c` |
+| SHA-256 index.html | `ba36ac270d3bed89972991842232bc03219b8656cfedca3dedf60a4f40c58585` |
+| SHA-256 content-src.html | `e910cf41a2cabf457d67c6757f44d553c72aabaf60dde906cf94a3f652435d7b` |
 
 ## Sapo (kiêm trả lời nhanh)
 

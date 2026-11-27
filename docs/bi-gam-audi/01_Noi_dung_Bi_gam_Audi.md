@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Audi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (3), FAQPage |
-| SHA-256 index.html | `c91c62db1abb186e05f48ad0db4bab9634a4c20e84b7471b1fe00dc395755850` |
-| SHA-256 content-src.html | `2d662c81fa2f8acdda82b46c48de28acab4b6932cda4b4a3237f415b4b546fd9` |
+| SHA-256 index.html | `8a47e3e0923b59981480bed98aa913ca39ad9d8add199706eab6f676e5a914c3` |
+| SHA-256 content-src.html | `ea1d16cd2f576e8b97a1828a32400a9ac510cb33a133a8d4acd1f4606510d2c6` |
 
 ## Sapo (kiêm trả lời nhanh)
 
