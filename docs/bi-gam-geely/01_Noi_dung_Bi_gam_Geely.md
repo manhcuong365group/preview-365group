@@ -9,10 +9,10 @@
 | Title (65 ký tự) | Bi gầm Geely: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (152 ký tự) | Độ bi gầm Geely theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Geely đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Geely: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), FAQPage |
-| SHA-256 index.html | `72fe8fc02e98a5ce56a0297a4b930798390de62e06eac26821705cfd93f1caeb` |
-| SHA-256 content-src.html | `e87cad2cb144584f9aea8bf61f9c3e2486f06e8dcad9ca4167700cf7ac2ba45b` |
+| SHA-256 index.html | `2475d00d70dceba1cb6e2ff12c10162dd98da7ebc72ea3fdb50e6237b38f168c` |
+| SHA-256 content-src.html | `95fc36ee575446039c8eb904987b32f096b075ba087aca64a2a457b9a7d5702e` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -9,10 +9,10 @@
 | Title (65 ký tự) | Bi gầm Volvo: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (152 ký tự) | Độ bi gầm Volvo theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Volvo đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Volvo: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `4e0551424837cc90b5127412368ba1508d9e7b8e896c0c5fdf6fdce911c8b829` |
-| SHA-256 content-src.html | `ae6382a8ca6647c8fa08fc88edf44c6502550e7490e1957f2a72f86db52d5544` |
+| SHA-256 index.html | `1be78b4f38103d28d6de59c8dc4005300e53a8aa64a5046e86496ad23a1dfbf5` |
+| SHA-256 content-src.html | `eb6968e22e2636f68de9efd6a43a425b0a56f632bc58b5ba506f1de582827f99` |
 
 ## Sapo (kiêm trả lời nhanh)
 

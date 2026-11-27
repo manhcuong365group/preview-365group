@@ -9,10 +9,10 @@
 | Title (62 ký tự) | Bi gầm MG: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (146 ký tự) | Độ bi gầm MG theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe MG đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm MG: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `9c0368b029b344f547df9cc3b567b139bd882aedd822661f371d49794601490f` |
-| SHA-256 content-src.html | `73dab58ad13870b1caa18357a1d79d7bcf91d78dcd252226e1668b64e3b0fe5c` |
+| SHA-256 index.html | `1cb040262cbdcc386afac5da4cff067adc5541620ff7e15ed6ecb86af644cda5` |
+| SHA-256 content-src.html | `2deb53757999d23548fe9851d7e2bc8bf94f1bf4fc25df6a531bef1b08eac706` |
 
 ## Sapo (kiêm trả lời nhanh)
 

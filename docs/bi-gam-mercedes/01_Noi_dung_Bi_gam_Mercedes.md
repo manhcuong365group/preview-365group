@@ -9,10 +9,10 @@
 | Title (68 ký tự) | Bi gầm Mercedes: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (158 ký tự) | Độ bi gầm Mercedes theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Mercedes đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Mercedes: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), FAQPage |
-| SHA-256 index.html | `e38add79cdb3c46914b2269873c8b500f1eae18762bfe4877a74d749fd761044` |
-| SHA-256 content-src.html | `0c3f4b23ed0f2cef731e13283c5341b7f39360cd3c0baf42d7e8e456d59a51ab` |
+| SHA-256 index.html | `8bd29b63674946feee22fa2f635e77cc212aabd33df5adce751f03593b79967a` |
+| SHA-256 content-src.html | `5d50b2a6a02afb7351c10c748b7c7be4ff9939dc83296e3bcf8a0587df9b4a5c` |
 
 ## Sapo (kiêm trả lời nhanh)
 

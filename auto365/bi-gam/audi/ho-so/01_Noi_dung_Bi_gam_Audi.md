@@ -9,10 +9,10 @@
 | Title (64 ký tự) | Bi gầm Audi: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (150 ký tự) | Độ bi gầm Audi theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Audi đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Audi: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (3), FAQPage |
-| SHA-256 index.html | `77c31a28e40bdf03490ef9b4de94f288473e5808e15e35698f24f771761e7480` |
-| SHA-256 content-src.html | `02533575fd452fa1ac90de83ebad8bbb26d1cd90f3f3f37de3005afc40b66cc7` |
+| SHA-256 index.html | `ae228de955ef1e27efe68598d2af8646e0ee8357f247e93e37a37308385d0ec6` |
+| SHA-256 content-src.html | `e9e6b740b4c81c53eacc28b353ab69326a28b0d4653efd927edc2ca681861bb7` |
 
 ## Sapo (kiêm trả lời nhanh)
 

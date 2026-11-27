@@ -9,10 +9,10 @@
 | Title (70 ký tự) | Bi gầm Volkswagen: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (162 ký tự) | Độ bi gầm Volkswagen theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Volkswagen đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Volkswagen: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (4), FAQPage |
-| SHA-256 index.html | `f4c71255e5b156d70ec2c31f652f011f97e832078a0843ae527d0d2f13f81224` |
-| SHA-256 content-src.html | `fc81fe430c1f510ac3c9255ed58996ca30294774a326b273168da2ce42251f64` |
+| SHA-256 index.html | `0afaefabb5ba786ab7c6aa5e08517afd5634d1b2a2ed333238046234de4b914c` |
+| SHA-256 content-src.html | `b4e9a9fb20a9fc3eb4b6554c4994378e841b20d62601047671a9e34b0e6aa636` |
 
 ## Sapo (kiêm trả lời nhanh)
 

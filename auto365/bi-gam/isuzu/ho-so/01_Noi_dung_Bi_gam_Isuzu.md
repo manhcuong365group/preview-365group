@@ -9,10 +9,10 @@
 | Title (65 ký tự) | Bi gầm Isuzu: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (152 ký tự) | Độ bi gầm Isuzu theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Isuzu đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Isuzu: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `60d0ece99be8e7ee22dd2d5f56efb1dd4086c58e3e039c9678e07580fbda67e2` |
-| SHA-256 content-src.html | `30e92567684b9567992803b1abb7e50221ac1ff908a8b5f9a9c584e8d1169018` |
+| SHA-256 index.html | `0d967b3516214e8f47479f935020c4164fa6b1709a602107e46cb3f3383027af` |
+| SHA-256 content-src.html | `d112b3122a244090e64f08281029302b1ec2802a2525145f0eaa239ad6d60688` |
 
 ## Sapo (kiêm trả lời nhanh)
 

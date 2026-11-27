@@ -9,10 +9,10 @@
 | Title (63 ký tự) | Bi gầm BYD: độ đèn gầm theo dòng xe, giá và xe đã làm \| Auto365 |
 | Meta description (148 ký tự) | Độ bi gầm BYD theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe BYD đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm BYD: chọn đèn theo từng dòng xe |
-| dateModified | 2026-11-26 |
+| dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), FAQPage |
-| SHA-256 index.html | `75bca94d1098c6c65fd6918cf57e5308e1bd0d64d60e005a7bb41835536a4124` |
-| SHA-256 content-src.html | `f67dd512fd1bffd4b4f5cd6ef431c06104f6f11c5e8c544c944da9b4596473ad` |
+| SHA-256 index.html | `56eacfc43bc8666486e1463ecdeba4dac4300bcd9b6faa80881910df9ca35e12` |
+| SHA-256 content-src.html | `9eb6e34b885e47b4342ce0720477c7ccb4694fd845463b3be8a755f1b6e86123` |
 
 ## Sapo (kiêm trả lời nhanh)
 
