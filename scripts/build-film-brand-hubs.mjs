@@ -149,6 +149,8 @@ for (const [slug, B] of Object.entries(BR)) {
   // bảng giá: bỏ cột Minicar (không có xe hãng này thuộc nhóm Minicar)
   { const a = h.indexOf('<th scope="col">Nhóm Minicar</th>'), e = h.indexOf('</table>', a);
     if (a > -1) h = h.slice(0, a) + h.slice(a, e).replace('<th scope="col">Nhóm Minicar</th>', '').replace(/(<tr><th scope="row">.*?<\/th><td>[^<]*<\/td>)<td>[^<]*<\/td>/g, '$1') + h.slice(e); }
+  // F1 26/11: bấm thẻ đổi xe phải xoá vị trí đã chọn ở xe cũ (giống đổi xe trong form)
+  h = rep(h, "models.forEach(function(b){b.addEventListener('click',function(){window.VFUP=1;pick(b)})});", "models.forEach(function(b){b.addEventListener('click',function(){window.VFUP=1;var ch=b.getAttribute('aria-pressed')!=='true';if(ch&&typeof ST!=='undefined'){ST.forEach(function(s){s.on=false});PZV=''}pick(b);if(ch&&typeof drawPz==='function')drawPz()})});");
   fs.writeFileSync(path.join(out, 'index.html'), h);
   console.log(slug, 'xe', B.cars.length, 'case', list.length, '(tt', list.filter(o => o.k === 'tt').length + ')', 'TV', Object.keys(TV).length);
 }
