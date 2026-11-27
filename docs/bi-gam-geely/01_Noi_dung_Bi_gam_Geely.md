@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Geely: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), FAQPage |
-| SHA-256 index.html | `2475d00d70dceba1cb6e2ff12c10162dd98da7ebc72ea3fdb50e6237b38f168c` |
-| SHA-256 content-src.html | `95fc36ee575446039c8eb904987b32f096b075ba087aca64a2a457b9a7d5702e` |
+| SHA-256 index.html | `3db27face4ea1a35398c3171f54f4e763f99403b29862be60d3b61fe3974b5f3` |
+| SHA-256 content-src.html | `c86cbb3f909765ef1b07a6598490098cdf047cd927ab89bdcb414acd32f90ed1` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Geely giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Geely; trang tổng hợp các xe Geely EX2, EX5 đã dán phim cách nhiệt 3M và lắp camera hành trình tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm Geely giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Geely; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Geely
 

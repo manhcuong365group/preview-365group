@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Volkswagen: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (4), FAQPage |
-| SHA-256 index.html | `0afaefabb5ba786ab7c6aa5e08517afd5634d1b2a2ed333238046234de4b914c` |
-| SHA-256 content-src.html | `b4e9a9fb20a9fc3eb4b6554c4994378e841b20d62601047671a9e34b0e6aa636` |
+| SHA-256 index.html | `83dcdc161373973f0fe7e00bada36b70f1aab340f6f489dae2c98da7701a2dea` |
+| SHA-256 content-src.html | `9979c25e1d5a7081774e37b7f636778e773025b3db40a965e9ea3654ad24c3ff` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Volkswagen giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp bi gầm X-Light F10 New trên Volkswagen Scirocco, ca lắp đèn gầm dạng rời Titan M40 Ultra V2 trên Viloran 2024 và các xe Volkswagen đã làm phim, PPF tại Auto365; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm Volkswagen giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp bi gầm X-Light F10 New trên Volkswagen Scirocco, ca lắp đèn gầm dạng rời Titan M40 Ultra V2 trên Viloran 2024; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Volkswagen
 

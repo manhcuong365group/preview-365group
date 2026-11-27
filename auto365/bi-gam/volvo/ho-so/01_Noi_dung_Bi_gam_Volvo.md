@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Volvo: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `1be78b4f38103d28d6de59c8dc4005300e53a8aa64a5046e86496ad23a1dfbf5` |
-| SHA-256 content-src.html | `eb6968e22e2636f68de9efd6a43a425b0a56f632bc58b5ba506f1de582827f99` |
+| SHA-256 index.html | `18efad29db5dbb651e481fd98798c67fbb2811283b7e8b1edee6f4995cc8b410` |
+| SHA-256 content-src.html | `5ec9353371d1c4581122d2e9fced8ac314310d81861d98686d1e327fba555f4c` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Volvo giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Volvo; trang tổng hợp các xe Volvo đã nâng cấp bi LED, dán phim cách nhiệt, PPF và lắp Android box tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm Volvo giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Volvo; trang tổng hợp các xe Volvo đã nâng cấp bi LED tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Volvo
 

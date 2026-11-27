@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm MG: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `1cb040262cbdcc386afac5da4cff067adc5541620ff7e15ed6ecb86af644cda5` |
-| SHA-256 content-src.html | `2deb53757999d23548fe9851d7e2bc8bf94f1bf4fc25df6a531bef1b08eac706` |
+| SHA-256 index.html | `ab09a691a915137efad8dee0ef0790a031987296e46aad7b22bc9677702a2202` |
+| SHA-256 content-src.html | `cba2a976a18887a7750d880b303bdff5058414cb0c484c3b8f9ea0d0d8f173d1` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm MG giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe MG; trang tổng hợp các xe MG đã nâng cấp bi LED, dán phim cách nhiệt và lắp camera hành trình tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm MG giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe MG; trang tổng hợp các xe MG đã nâng cấp bi LED tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe MG
 

@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Mercedes: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (7), FAQPage |
-| SHA-256 index.html | `8bd29b63674946feee22fa2f635e77cc212aabd33df5adce751f03593b79967a` |
-| SHA-256 content-src.html | `5d50b2a6a02afb7351c10c748b7c7be4ff9939dc83296e3bcf8a0587df9b4a5c` |
+| SHA-256 index.html | `b13faf8a391fc6419df1a169ab93b8b36b8e95c5fbf84e3cfaab99d240fac38e` |
+| SHA-256 content-src.html | `7c176eaa31ff0a44c12b897fabe8cab0f8a660488c017989e9c0edbb250f8ad3` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Mercedes giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Mercedes; trang tổng hợp các xe Mercedes đã nâng cấp bi LED, bi laser và dán phim cách nhiệt tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm Mercedes giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Mercedes; trang tổng hợp các xe Mercedes đã nâng cấp bi LED, bi laser tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Mercedes
 
