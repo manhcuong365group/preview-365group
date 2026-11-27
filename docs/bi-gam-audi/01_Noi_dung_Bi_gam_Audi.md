@@ -11,12 +11,12 @@
 | H1 | Lắp bi gầm Audi: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (3), FAQPage |
-| SHA-256 index.html | `6ceb8940378d9ab4bf111a42b9b7a4a0ba54beff3cc1cd6227f92e1e11afec34` |
-| SHA-256 content-src.html | `9fa8fd725e4b92b5d586bcac2399222a58eddaf8d222d4b509f16928ef98ff3c` |
+| SHA-256 index.html | `c91c62db1abb186e05f48ad0db4bab9634a4c20e84b7471b1fe00dc395755850` |
+| SHA-256 content-src.html | `2d662c81fa2f8acdda82b46c48de28acab4b6932cda4b4a3237f415b4b546fd9` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Audi giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp ca lắp combo bi laser V30L Ultra và bi gầm X-Light F10 New trên Audi Q7, cùng các xe Audi đã làm PPF và camera hành trình tại Auto365; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm Audi giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp ca lắp combo bi laser V30L Ultra và bi gầm X-Light F10 New trên Audi Q7; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Audi
 
