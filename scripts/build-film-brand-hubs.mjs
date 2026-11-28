@@ -46,27 +46,27 @@ const BR = {
     ['CX-3', 'CX3', 2, 'u', 'm-cx-3.webp', 'bi-gam/mazda/hinh', ['CX-?3\\b']], ['CX-30', 'CX30', 2, 'u', 'm-cx-30.webp', 'bi-gam/mazda/hinh', ['CX-?30']], ['CX-5', 'CX5', 2, 'u', 'm-cx-5.webp', null, ['CX-?5\\b']],
     ['CX-8', 'CX8', 2, 'u', 'm-cx-8.webp', null, ['CX-?8\\b']], ['CX-60', 'CX60', 2, 'u', 'm-cx-60.webp', 'bi-gam/mazda/hinh', ['CX-?60']], ['CX-90', 'CX90', 2, 'u', 'm-cx-90.webp', 'bi-gam/mazda/hinh', ['CX-?90']],['BT-50', 'BT50', 2, 'p', 'm-bt-50.webp', 'bi-gam/mazda/hinh', ['BT-?50']]] },
   // 28/11: 5 hãng mới (ảnh designer trong bi-gam/<hãng>/hinh); nhóm giá theo bài đã đăng (Geely EX2 = Minicar, Peugeot 408 = SUV/MPV)
-  honda: { name: 'Honda', def: 'City', video: [], dia: ['m-city.webp', 'm-cr-v.webp'], diaP: [[[45,36],[60,38],[73,37],[60,30],[80,40]],[[47,32],[68,33],[77,32],[62,23],[84,32]]], cars: [
+  honda: { name: 'Honda', rev: '2026-11-28', def: 'City', video: [], dia: ['m-city.webp', 'm-cr-v.webp'], diaP: [[[45,36],[60,38],[73,37],[60,30],[80,40]],[[47,32],[68,33],[77,32],[62,23],[84,32]]], cars: [
     ['City', 'City', 1, 's', 'm-city.webp'], ['Civic', 'Civic', 1, 's', 'm-civic.webp', null, ['Civic(?! Type)']], ['Accord', 'Accord', 1, 's', 'm-accord.webp', 'bi-gam/honda/hinh'],
     ['Brio', 'Brio', 1, 's', 'm-brio.webp', 'bi-gam/honda/hinh'], ['Jazz', 'Jazz', 1, 's', 'm-jazz.webp', 'bi-gam/honda/hinh'], ['Civic Type R', 'TypeR', 1, 's', 'm-civic-type-r.webp', 'bi-gam/honda/hinh', ['Type R']],
     ['HR-V', 'HRV', 2, 'u', 'm-hr-v.webp', null, ['HR-?V']], ['CR-V', 'CRV', 2, 'u', 'm-cr-v.webp', null, ['CR-?V']],
     ['BR-V', 'BRV', 2, 'm', 'm-br-v.webp', null, ['BR-?V']], ['Odyssey', 'Odyssey', 2, 'm', 'm-odyssey.webp', 'bi-gam/honda/hinh']] },
-  bmw: { name: 'BMW', def: 'S3', video: [], dia: ['m-3-series.webp', 'm-x3.webp'], diaP: [[[47,24],[79,25],[86,27],[52,11],[92,30]],[[52,20],[75,21],[83,20],[62,9],[92,23]]], cars: [
+  bmw: { name: 'BMW', rev: '2026-11-28', def: 'S3', video: [], dia: ['m-3-series.webp', 'm-x3.webp'], diaP: [[[47,24],[79,25],[86,27],[52,11],[92,30]],[[52,20],[75,21],[83,20],[62,9],[92,23]]], cars: [
     ['3 Series', 'S3', 1, 's', 'm-3-series.webp', 'bi-gam/bmw/hinh', ['3 Series', '3\\d\\di\\b']], ['5 Series', 'S5', 1, 's', 'm-5-series.webp', 'bi-gam/bmw/hinh', ['5 Series', '5\\d\\di\\b']],
     ['2 Series Gran Coupe', 'S2', 1, 's', 'm-2-series-gran-coupe.webp', 'bi-gam/bmw/hinh', ['2 Series']], ['4 Series', 'S4', 1, 's', 'm-4-series.webp', 'bi-gam/bmw/hinh', ['4 Series', '4\\d\\di\\b']],
     ['7 Series', 'S7', 1, 's', 'm-7-series.webp', 'bi-gam/bmw/hinh', ['7 Series', '7\\d\\dLi?\\b']], ['8 Series', 'S8', 1, 's', 'm-8-series.webp', 'bi-gam/bmw/hinh', ['8 Series']], ['Z4', 'Z4', 1, 's', 'm-z4.webp', 'bi-gam/bmw/hinh'],
     ['X1', 'X1', 2, 'u', 'm-x1.webp', 'bi-gam/bmw/hinh', ['X1\\b']], ['X3', 'X3', 2, 'u', 'm-x3.webp', 'bi-gam/bmw/hinh', ['X3\\b']], ['X4', 'X4', 2, 'u', 'm-x4.webp', 'bi-gam/bmw/hinh', ['X4\\b']],
     ['X5', 'X5', 2, 'u', 'm-x5.webp', 'bi-gam/bmw/hinh', ['X5\\b']], ['X6', 'X6', 2, 'u', 'm-x6.webp', 'bi-gam/bmw/hinh', ['X6\\b']], ['X7', 'X7', 2, 'u', 'm-x7.webp', 'bi-gam/bmw/hinh', ['X7\\b']]] },
-  geely: { name: 'Geely', def: 'EX2', video: [], dia: ['m-ex2.webp', 'm-emgrand.webp', 'm-ex5.webp'], diaP: [[[44,28],[63,30],[77,30],[60,20],[84,31]],[[43,30],[60,33],[73,32],[58,23],[82,35]],[[47,30],[69,32],[78,32],[62,21],[85,32]]], cars: [
+  geely: { name: 'Geely', rev: '2026-11-28', def: 'EX2', video: [], dia: ['m-ex2.webp', 'm-emgrand.webp', 'm-ex5.webp'], diaP: [[[44,28],[63,30],[77,30],[60,20],[84,31]],[[43,30],[60,33],[73,32],[58,23],[82,35]],[[47,30],[69,32],[78,32],[62,21],[85,32]]], cars: [
     ['EX2', 'EX2', 0, 'u', 'm-ex2.webp', 'bi-gam/geely/hinh', ['EX2']], ['Emgrand', 'Emgrand', 1, 's', 'm-emgrand.webp', 'bi-gam/geely/hinh'],
     ['EX5', 'EX5', 2, 'u', 'm-ex5.webp', 'bi-gam/geely/hinh', ['EX5']], ['Coolray', 'Coolray', 2, 'u', 'm-coolray.webp', 'bi-gam/geely/hinh'], ['Monjaro', 'Monjaro', 2, 'u', 'm-monjaro.webp', 'bi-gam/geely/hinh'],
     ['Okavango', 'Okavango', 2, 'm', 'm-okavango.webp', 'bi-gam/geely/hinh']] },
-  peugeot: { name: 'Peugeot', def: 'P3008', video: [], dia: ['m-508.webp', 'm-5008.webp'], diaP: [[[39,36],[52,35],[69,35],[55,27],[84,38]],[[36,33],[47,33],[70,32],[60,23],[87,32]]], cars: [
+  peugeot: { name: 'Peugeot', rev: '2026-11-28', def: 'P3008', video: [], dia: ['m-508.webp', 'm-5008.webp'], diaP: [[[39,36],[52,35],[69,35],[55,27],[84,38]],[[36,33],[47,33],[70,32],[60,23],[87,32]]], cars: [
     ['208', 'P208', 1, 's', 'm-208.webp', 'bi-gam/peugeot/hinh', ['\\b208\\b']], ['508', 'P508', 1, 's', 'm-508.webp', 'bi-gam/peugeot/hinh', ['\\b508\\b']], ['308', 'P308', 1, 's', 'm-308.webp', 'bi-gam/peugeot/hinh', ['\\b308\\b']],
     ['107', 'P107', 1, 's', 'm-107.webp', 'bi-gam/peugeot/hinh', ['\\b107\\b']], ['207', 'P207', 1, 's', 'm-207.webp', 'bi-gam/peugeot/hinh', ['\\b207\\b']], ['307', 'P307', 1, 's', 'm-307.webp', 'bi-gam/peugeot/hinh', ['\\b307\\b']], ['407', 'P407', 1, 's', 'm-407.webp', 'bi-gam/peugeot/hinh', ['\\b407\\b']],
     ['408', 'P408', 2, 'u', 'm-408.webp', 'bi-gam/peugeot/hinh', ['\\b408\\b']], ['2008', 'P2008', 2, 'u', 'm-2008.webp', 'bi-gam/peugeot/hinh', ['\\b2008\\b']], ['3008', 'P3008', 2, 'u', 'm-3008.webp', 'bi-gam/peugeot/hinh', ['\\b3008\\b']], ['5008', 'P5008', 2, 'u', 'm-5008.webp', 'bi-gam/peugeot/hinh', ['\\b5008\\b']],
     ['Traveller', 'Traveller', 2, 'm', 'm-traveller.webp', 'bi-gam/peugeot/hinh'], ['Partner', 'Partner', 2, 'm', 'm-partner.webp', 'bi-gam/peugeot/hinh']] },
-  suzuki: { name: 'Suzuki', def: 'XL7', video: [], dia: ['m-ciaz.webp', 'm-xl7.webp'], diaP: [[[40,28],[60,32],[72,31],[58,19],[82,34]],[[41,27],[63,30],[77,29],[62,19],[87,29]]], cars: [
+  suzuki: { name: 'Suzuki', rev: '2026-11-28', def: 'XL7', video: [], dia: ['m-ciaz.webp', 'm-xl7.webp'], diaP: [[[40,28],[60,32],[72,31],[58,19],[82,34]],[[41,27],[63,30],[77,29],[62,19],[87,29]]], cars: [
     ['Swift', 'Swift', 1, 's', 'm-swift.webp'], ['Ciaz', 'Ciaz', 1, 's', 'm-ciaz.webp', 'bi-gam/suzuki/hinh'], ['Celerio', 'Celerio', 1, 's', 'm-celerio.webp', 'bi-gam/suzuki/hinh'],
     ['Fronx', 'Fronx', 2, 'u', 'm-fronx.webp'], ['Vitara', 'Vitara', 2, 'u', 'm-vitara.webp', 'bi-gam/suzuki/hinh'], ['Jimny', 'Jimny', 2, 'u', 'm-jimny.webp', 'bi-gam/suzuki/hinh'],
     ['XL7', 'XL7', 2, 'm', 'm-xl7.webp', 'bi-gam/suzuki/hinh'], ['Ertiga', 'Ertiga', 2, 'm', 'm-ertiga.webp', 'bi-gam/suzuki/hinh']] },
@@ -128,7 +128,7 @@ for (const [slug, B] of Object.entries(BR)) {
   h = rep(h, 'hinh/hero-vinfast.webp', 'hinh/pro-shop-thi-cong.webp', true); // hero: ảnh thật thi công tại 3M Pro Shop (không dùng thumbnail bài có chữ)
   h = rep(h, 'https://preview-365group.pages.dev/phim-cach-nhiet-o-to/vinfast/' + hero.img, hero.img);
   h = rep(h, '"lowPrice":"5900000"', `"lowPrice":"${lowP * 1e6}"`);
-  h = h.replace(/"dateModified":"[^"]*"/, `"dateModified":"${TODAY}"`).replace(/"lastReviewed":"[^"]*"/, `"lastReviewed":"${REVIEWED}"`).replace(/Cập nhật \d\d\/\d\d\/\d{4}/, 'Cập nhật ' + TODAY_VN);
+  h = h.replace(/"dateModified":"[^"]*"/, `"dateModified":"${TODAY}"`).replace(/"lastReviewed":"[^"]*"/, `"lastReviewed":"${B.rev || REVIEWED}"`).replace(/Cập nhật \d\d\/\d\d\/\d{4}/, 'Cập nhật ' + TODAY_VN);
   h = rep(h, 'Giá dán trọn xe theo bảng giá 3M: Minicar (VF 2, VF 3, Minio Green) từ 5.900.000đ, Sedan (Herio Green, Fadil, Lux A2.0) từ 7.900.000đ, SUV/MPV (VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7, VF Wild, VF e34, Nerio Green, Limo Green, EC Van, Lux SA2.0, President) từ 9.500.000đ, đã gồm VAT.', priceTxt, true);
   h = rep(h, 'theo từng model VinFast', `theo từng dòng ${N}`, true);
   // hero
