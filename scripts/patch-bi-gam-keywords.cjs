@@ -1,5 +1,6 @@
 // Bổ sung cụm từ khoá bi gầm (độ bi gầm, đèn gầm/đèn sương mù, bi gầm 3 màu, giá) cho 8 hub mới — 26/11/2026
 const fs=require('fs');const H={mercedes:'Mercedes',audi:'Audi',isuzu:'Isuzu',mg:'MG',byd:'BYD',geely:'Geely',volvo:'Volvo',volkswagen:'Volkswagen'};
+const ARG=process.argv.slice(2);if(ARG.length){for(const k of Object.keys(H))delete H[k];for(const a of ARG){const [k,v]=a.split('=');H[k]=v}}
 for(const [s,B] of Object.entries(H)){const f=`auto365/bi-gam/${s}/content-src.html`;let c=fs.readFileSync(f,'utf8');
 if(c.includes('kw-26-11')){console.log('skip',s);continue}
 const add=`  <details data-kw="kw-26-11"><summary>Độ bi gầm ${B} khác gì đèn gầm (đèn sương mù) zin?</summary><p>Đèn gầm zin, còn gọi là đèn sương mù, trên nhiều xe ${B} chiếu tán rộng và không có đường cắt rõ. Bi gầm là đèn gầm có thấu kính (lens), gom sáng xuống mặt đường và hai bên lề với đường cắt cos rõ hơn. Độ bi gầm ${B} là lắp bi gầm vào hốc đèn gầm của xe; xe không có hốc đèn gầm phù hợp thì kỹ thuật viên đánh giá phương án đèn gầm dạng rời.</p></details>

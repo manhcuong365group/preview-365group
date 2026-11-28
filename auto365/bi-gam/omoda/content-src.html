@@ -1,0 +1,355 @@
+<style>
+.bght{--r:#d71920;--rd:#b3121a;--ink:#14181d;--mu:#5f6b76;--ln:#e6e9ed;--bg:#f6f7f9;font-family:Roboto,Arial,sans-serif;color:var(--ink);line-height:1.55}
+.bght *{box-sizing:border-box}
+.bght a{text-decoration:none;color:inherit}
+.bght-in{max-width:1200px;margin:0 auto;padding:0 16px}
+.bght-sec{padding:28px 0}
+.bght-head{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:16px}
+.bght-h2{font-size:26px;font-weight:800;margin:0 0 4px;line-height:1.25}
+.bght-sub{color:var(--mu);font-size:14px;margin:0}
+.bght-more{color:var(--r)!important;font-size:14px;font-weight:600;white-space:nowrap}
+.bght-more:after{content:" →"}
+.bgvf-eb{display:block;color:var(--r);font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:4px}
+/* hero */
+.bgvf-hero{position:relative;background:linear-gradient(100deg,#f6f7f9 0,#f6f7f9 42%,#e9edf2 100%);overflow:hidden}
+.bgvf-hero .bght-in{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:16px;align-items:center;padding-top:14px;padding-bottom:28px;min-height:360px}
+.bgvf-bc{font-size:12px;color:var(--mu);grid-column:1/-1;align-self:start}
+.bgvf-bc a:hover{color:var(--r)}
+.bgvf-h1{font-size:clamp(32px,4.2vw,48px);line-height:1.08;font-weight:800;margin:6px 0 4px;letter-spacing:-.5px}
+.bgvf-h1 span{display:block;font-size:.58em;font-weight:500;color:#333;letter-spacing:0;margin-top:6px}.bgvf-h1 span::first-letter{text-transform:uppercase}
+.bgvf-lead{max-width:520px;color:#3b444d;font-size:15px;margin:12px 0 14px}
+.bgvf-qa{max-width:620px;background:#fff;border:1px solid var(--ln);border-left:3px solid var(--r);border-radius:8px;padding:10px 14px;font-size:14px;color:#2b333b;margin:0 0 12px}
+.bgvf-upd{font-size:12.5px;color:#64748b;margin:0 0 14px}.bgvf-upd a{color:inherit;text-decoration:underline}
+.bgvf-trust{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,max-content);gap:8px 22px}
+.bgvf-trust li{position:relative;padding-left:24px;font-size:13.5px;color:#2b333b}
+.bgvf-trust li:before{content:"✓";position:absolute;left:0;top:1px;width:17px;height:17px;border-radius:50%;border:1.5px solid var(--r);color:var(--r);font-size:10px;font-weight:700;display:grid;place-items:center}
+.bgvf-art{display:flex;align-items:flex-end}
+.bgvf-art img{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 14px 30px rgba(15,23,42,.16)}
+/* models */
+.bgvf-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.bgvf-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.bgvf-tab{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:8px 16px;font:inherit;font-size:14px;font-weight:500;color:var(--ink);cursor:pointer}
+.bgvf-tab:hover{border-color:#f3b4b4}
+.bgvf-tab.on{background:var(--r);border-color:var(--r);color:#fff;font-weight:600}
+.bgvf-search{display:flex;align-items:center;gap:8px;border:1px solid var(--ln);border-radius:8px;background:#fff;padding:0 12px;height:40px;width:260px;max-width:100%}
+.bgvf-search svg{width:16px;height:16px;flex:none;color:var(--mu)}
+.bgvf-search input{border:0;outline:0;font:inherit;font-size:14px;flex:1;min-width:0;background:none}
+.bgvf-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.bgvf-m{position:relative;display:flex;flex-direction:column;background:#fff;border:1px solid var(--ln);border-radius:10px;overflow:hidden;transition:.2s}
+.bgvf-m[hidden]{display:none}
+.bgvf-m:hover{border-color:#f3b4b4;box-shadow:0 8px 20px rgba(15,23,42,.08);transform:translateY(-2px)}
+.bgvf-m .im{display:grid;place-items:center;aspect-ratio:16/10;background:linear-gradient(180deg,#fff,#f1f3f5);padding:6px}
+.bgvf-m .im img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.bgvf-m .im em{font-style:normal;font-size:12px;color:var(--mu);font-weight:600}
+.bgvf-m .bd{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:8px 12px 10px}
+.bgvf-m b{font-size:14.5px;font-weight:700}
+.bgvf-m .go{color:var(--r);font-weight:700}
+.bgvf-m small{display:block;font-size:11.5px;color:var(--mu);font-weight:400}
+.bgvf-m .ok{position:absolute;top:8px;left:8px;background:#1f9d55;color:#fff;font-size:10.5px;font-weight:600;padding:2px 8px;border-radius:99px}
+.bgvf-empty{grid-column:1/-1;padding:16px;border:1px dashed var(--ln);border-radius:10px;color:var(--mu);font-size:14px}
+/* cases */
+.bgvf-nav{display:flex;gap:8px;align-items:center}
+.bgvf-arr{width:36px;height:36px;border-radius:50%;border:1px solid var(--ln);background:#fff;font-size:18px;cursor:pointer;line-height:1}
+.bgvf-arr:hover{border-color:var(--r);color:var(--r)}
+.bgvf-rail{display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 48px)/4);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.bgvf-rail::-webkit-scrollbar{display:none}
+.bgvf-case{scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;transition:.2s}
+.bgvf-case:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.bgvf-case .im{aspect-ratio:16/9;overflow:hidden;background:#eee}
+.bgvf-case .im img{width:100%;height:100%;object-fit:cover;display:block}
+.bgvf-case .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:4px;flex:1}
+.bgvf-case h3{font-size:16px;font-weight:700;margin:0;line-height:1.35}
+.bgvf-case p{margin:0;font-size:13.5px;color:var(--mu);flex:1}
+.bgvf-case .ft{display:flex;justify-content:space-between;font-size:12.5px;color:var(--mu);margin-top:6px}
+.bgvf-case .ft em{font-style:normal;color:var(--r);font-weight:600}
+.bgvf-fn{text-align:center;font-size:12.5px;color:var(--mu);margin:12px 0 0}
+/* why */
+.bgvf-why{background:var(--bg);border-radius:14px;padding:24px}
+.bgvf-why h2{margin:0 0 16px}
+.bgvf-why ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.bgvf-why li{display:flex;gap:12px}
+.bgvf-why li+li{border-left:1px solid var(--ln);padding-left:16px}
+.bgvf-ic{flex:0 0 44px;height:44px;border-radius:50%;background:#fde8e8;color:var(--r);display:grid;place-items:center}
+.bgvf-ic svg{width:22px;height:22px}
+.bgvf-why b{display:block;font-size:15px;margin-bottom:2px}
+.bgvf-why p{margin:0;font-size:13px;color:var(--mu)}
+/* quick answer + faq */
+.bq-box{background:#fff8f0;border:1px solid #f6dcc0;border-left:4px solid var(--r);border-radius:10px;padding:18px 20px}
+.bq-h{font-size:20px;font-weight:700;margin:0 0 8px}
+.bq-box p{margin:0 0 8px;font-size:15px;color:#2b333b}.bq-box p:last-child{margin:0}
+.bq-box ul{margin:0 0 8px;padding-left:20px}.bq-box li{margin:4px 0;font-size:14.5px;color:#2b333b}
+.bf-list{display:grid;gap:10px}
+.bf-list details{border:1px solid var(--ln);border-radius:10px;background:#fff;padding:0 16px}
+.bf-list summary{cursor:pointer;list-style:none;padding:14px 28px 14px 0;font-weight:600;font-size:15.5px;position:relative}
+.bf-list summary::-webkit-details-marker{display:none}
+.bf-list summary:after{content:"+";position:absolute;right:0;top:11px;font-size:22px;color:var(--r)}
+.bf-list details[open] summary:after{content:"–"}
+.bf-list p{margin:0 0 14px;font-size:14.5px;color:#3b444d;line-height:1.6}
+/* guides */
+.bgvf-guides{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.bgvf-guide{border:1px solid var(--ln);border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:.2s}
+.bgvf-guide:hover{box-shadow:0 8px 22px rgba(0,0,0,.08)}
+.bgvf-guide .im{aspect-ratio:16/9;background:#111;overflow:hidden}
+.bgvf-guide .im img{width:100%;height:100%;object-fit:cover;display:block}
+.bgvf-guide .bd{padding:12px 14px 14px;display:flex;flex-direction:column;gap:10px;flex:1}
+.bgvf-guide .mt{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--mu);flex-wrap:wrap}
+.bgvf-guide .lb{background:#fde8e8;color:var(--r);font-weight:600;padding:2px 8px;border-radius:4px}
+.bgvf-guide .rw{display:flex;align-items:center;gap:10px;justify-content:space-between}
+.bgvf-guide h3{font-size:14px;font-weight:500;margin:0;line-height:1.45}
+.bgvf-guide:hover h3{color:var(--r)}
+.bgvf-guide i{flex:0 0 30px;height:30px;font-size:13px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;color:var(--r);font-style:normal}
+/* case filter + credit */
+.bgvf-cf{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.bgvf-cfr{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.bgvf-cl{min-width:68px}
+.bgvf-cl{flex:none;font-size:13px;color:var(--mu)}
+.bgvf-chip{border:1px solid var(--ln);background:#fff;border-radius:6px;padding:6px 14px;font:inherit;font-size:13.5px;cursor:pointer;color:var(--ink)}
+.bgvf-chip:hover{border-color:#f3b4b4}.bgvf-chip.on{background:#eef1f4;border-color:#cfd5db;font-weight:600}
+.bgvf-case[hidden]{display:none}
+.bgvf-rail.one{grid-template-rows:none}
+.bgvf-case .im{position:relative}
+.bgvf-case .tag{position:absolute;left:10px;bottom:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:600;padding:3px 9px;border-radius:5px}
+.bgvf-cr{font-size:11.5px;color:var(--mu);margin:10px 0 0}
+.bgvf-ic-chk{padding:18px 0;background:#fffbea;border-top:2px dashed #d9a400;font-size:13.5px;color:#333}.bgvf-ic-chk p{margin:6px 0 0}.bgvf-ic-chk a{color:#dc2626;font-weight:700}
+/* nhu cầu */
+.bgvf-need{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.bgvf-nd{border:1px solid var(--ln);border-radius:12px;background:#fff;padding:16px 18px;display:flex;flex-direction:column}
+.bgvf-nd .who{min-height:2.9em;margin:4px 0 0}
+.bgvf-nd .bd{display:flex;flex-direction:column;gap:10px;margin-top:10px;flex:1}
+.bgvf-needacc{border:1px solid #f0d9c2;border-radius:10px;background:#fff;padding:12px 16px;margin-top:14px}
+.bgvf-needh{font-size:16px;font-weight:700;margin:0 0 2px}
+.bgvf-needacc>summary{list-style:none;cursor:pointer;position:relative;padding-right:40px}
+.bgvf-needacc>summary::-webkit-details-marker{display:none}
+.bgvf-needacc>summary:after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;font-size:20px;color:var(--r)}
+.bgvf-needacc[open]>summary:after{content:"–"}
+.bgvf-needacc[open]>summary{margin-bottom:14px}
+.bgvf-needacc .bght-sub{margin:0}
+.bgvf-nd h3{font-size:17px;font-weight:700;margin:0;line-height:1.35}
+.bgvf-nd .who{font-size:13px;color:var(--mu);margin:0}
+.bgvf-nd ul{margin:0;padding-left:18px;font-size:14px;color:#2b333b;line-height:1.6}.bgvf-nd li{margin:3px 0}
+.bgvf-nd .done{margin:auto 0 0;padding-top:10px;border-top:1px dashed var(--ln);font-size:13px;color:var(--mu)}
+.bgvf-nd .done a{color:var(--ink);text-decoration:underline}
+.bgvf-nd .go{color:var(--r)!important;font-weight:600;font-size:14px}
+.bgvf-nnote{font-size:13px;color:var(--mu);margin:12px 0 0}
+.bgvf-disc{font-size:12.5px;color:var(--mu);margin:14px 0 0;font-style:italic}
+.bght-more,.bgvf-nd .go{display:inline-block;padding:6px 0}
+.bgvf-search:focus-within{border-color:var(--r);box-shadow:0 0 0 3px rgba(215,25,32,.18)}
+.bgvf-cempty{border:1px dashed var(--ln);border-radius:10px;padding:16px;color:var(--mu);font-size:14px;margin:0}
+.bgvf-creset{margin-left:8px;border:1px solid var(--r);background:#fff;color:var(--r);border-radius:6px;padding:6px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+/* shell header (preview): container padding 0 làm .row của Bootstrap lệch -12px, tràn ngang */
+.custom-header-pc .header-stg>.container{padding-left:12px;padding-right:12px}
+/* cta */
+.bgvf-qc{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.bgvf-qc a{display:block;border:1px solid #e3e6ea;border-radius:10px;padding:12px 14px;color:inherit;text-decoration:none;background:#fff}.bgvf-qc a:hover{border-color:var(--r)}.bgvf-qc b{display:block;font-size:15px;margin-bottom:2px}.bgvf-qc span{font-size:13px;color:#5b6470}.bgvf-gcta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:16px;padding:14px 16px;border:1px dashed #cfd4da;border-radius:10px}.bgvf-gcta p{margin:0;font-size:14px}.bgvf-gcta div{display:flex;gap:8px;flex-wrap:wrap}.bgvf-gcta a{padding:9px 14px;border-radius:8px;font-weight:600;font-size:14px;text-decoration:none}.bgvf-gcta .g1{background:var(--r);color:#fff}.bgvf-gcta .g2{border:1px solid var(--r);color:var(--r)}@media(max-width:768px){.bgvf-qc{grid-template-columns:1fr 1fr}.bgvf-gcta div,.bgvf-gcta a{width:100%;text-align:center}}
+.bgvf-cta{background:#12161c url(../theo-hang-xe/hinh/m-fortuner.webp) right 6% center/auto 120% no-repeat;border-radius:14px;color:#fff;padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;position:relative;overflow:hidden}
+.bgvf-cta:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#12161c 45%,rgba(18,22,28,.7) 75%,rgba(18,22,28,.55))}
+.bgvf-cta>*{position:relative}
+.bgvf-cta h2{font-size:26px;font-weight:800;margin:4px 0 6px;line-height:1.25;max-width:520px}
+.bgvf-cta p{margin:0;color:#c9d0d8;font-size:14.5px}
+.bgvf-cta .bgvf-eb{color:#ff6b70}
+.bgvf-cbtn{display:flex;gap:10px;flex-wrap:wrap}
+.bgvf-b1,.bgvf-b2{display:inline-flex;align-items:center;gap:8px;border-radius:8px;padding:12px 22px;font-weight:700;font-size:15px}
+.bgvf-b1{background:var(--r);color:#fff!important}.bgvf-b1:hover{background:var(--rd)}
+.bgvf-b2{background:#fff;color:var(--ink)!important}
+@media(max-width:1100px){.bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:calc((100% - 48px)/5);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}}
+@media(max-width:991px){.bgvf-hero .bght-in{grid-template-columns:1fr;min-height:0;padding-bottom:20px}.bgvf-art{max-width:600px;width:100%;margin:0 auto}.bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:23%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}.bgvf-empty{grid-row:1/3;grid-column:auto/span 3}.bgvf-need{grid-template-columns:1fr;gap:10px}.bgvf-nd .who{min-height:0}.bgvf-guides{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:42%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.bgvf-guides::-webkit-scrollbar{display:none}.bgvf-guide{scroll-snap-align:start}.bgvf-why ul{grid-template-columns:repeat(2,minmax(0,1fr))}.bgvf-why li+li{border-left:0;padding-left:0}.bgvf-rail{grid-auto-columns:calc((100% - 16px)/2)}}
+@media(max-width:767px){
+.bght-sec{padding:22px 0}.bght-h2{font-size:22px}
+.bght-head{flex-wrap:wrap}
+.bgvf-hero .bght-in{grid-template-columns:1fr;min-height:0;padding-bottom:20px}
+.bgvf-art{order:3}
+.bgvf-trust{grid-template-columns:1fr 1fr;gap:6px 10px}.bgvf-trust li{font-size:12.5px}
+.bgvf-grid{grid-template-columns:none;grid-auto-flow:column;grid-template-rows:repeat(2,auto);grid-auto-columns:40%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -16px;padding:0 16px 4px;scroll-padding:0 16px}.bgvf-grid::-webkit-scrollbar{display:none}.bgvf-m{scroll-snap-align:start}.bgvf-m:hover{transform:none}.bgvf-m .im{padding:10px 12px}.bgvf-m .bd{padding:6px 10px 8px}.bgvf-m b{font-size:13.5px}.bgvf-m small{font-size:11px}.bgvf-empty{grid-row:1/3;grid-column:auto/span 2}
+.bgvf-tabs,.bgvf-cfr{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;width:100%}.bgvf-chip{flex:none}.bgvf-tab{flex:none;padding:7px 12px;font-size:13px}
+.bgvf-search{width:100%}
+.bgvf-rail{grid-auto-columns:84%;grid-template-rows:none}.bgvf-nd{padding:12px 14px}.bgvf-nd h3{font-size:16px}.bgvf-nd ul{font-size:13.5px}
+.bgvf-nav .bgvf-arr{display:none}
+.bgvf-why{padding:16px}.bgvf-why ul{grid-template-columns:1fr;gap:12px}
+.bgvf-guides{display:grid;grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:84%;overflow-x:auto;scroll-snap-type:x mandatory}
+.bgvf-guide{scroll-snap-align:start}
+.bgvf-cta{padding:22px 18px;background-image:none}.bgvf-cta h2{font-size:21px}.bgvf-cbtn,.bgvf-b1,.bgvf-b2{width:100%;justify-content:center}
+.bq-box{padding:14px}.bq-h{font-size:18px}.bf-list summary{font-size:14.5px}
+}
+.bgvf-old{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:4px;background:#f1f5f9;color:#64748b;font-size:11px;font-weight:600;vertical-align:middle}.bgvf-needsub{display:block}.bgvf-m .im em.bgvf-ph{display:flex;flex-direction:column;align-items:center;gap:4px;color:#b8c0c8;font-weight:500;font-size:11px}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<style id="bgvf-tipacc">.bgvf-tips{display:grid;gap:8px;margin-top:12px}.bgvf-tip{border:1px solid #f0d9c2;border-radius:10px;background:#fff;padding:0 16px}.bgvf-tip>summary{list-style:none;cursor:pointer;position:relative;padding:12px 40px 12px 0;font-weight:600;font-size:15px;color:#0f172a}.bgvf-tip>summary::-webkit-details-marker{display:none}.bgvf-tip>summary:after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;border:1px solid var(--ln);display:grid;place-items:center;font-size:18px;font-weight:400;color:var(--r)}.bgvf-tip[open]>summary:after{content:"–"}.bgvf-tip>p{margin:0 0 12px;font-size:14px;line-height:1.6;color:#454f5b}.bgvf-tips .bgvf-needacc{margin-top:0}@media(max-width:767px){.bgvf-tip>summary{font-size:14px}}.bgvf-tips{display:block;background:#fff;border:1px solid #f0d9c2;border-radius:10px;padding:0 16px}.bgvf-tips .bgvf-tip{border:0;border-bottom:1px solid #f3e6d8;border-radius:0;background:none;padding:0}.bgvf-tips .bgvf-tip:last-child{border-bottom:0}.bgvf-tip>summary{padding:12px 36px 12px 0}.bgvf-tipl{margin:0 0 12px;padding-left:18px;font-size:14px;line-height:1.6;color:#454f5b}.bgvf-tipl li{margin-bottom:8px}.bgvf-tipl li:last-child{margin-bottom:0}.bgvf-tipl b{color:#0f172a}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<style id="bgvf-fix1111">.bgvf-case .ft{background:none!important;border-top:0!important;padding:0!important;margin-top:8px!important;justify-content:flex-start!important}.bgvf-case .ft time{display:none!important}.bght-why .bw-card{border:1px solid #e6e9ed!important;border-radius:12px!important;overflow:hidden;padding:0 0 18px!important;background:#fff!important;box-shadow:none!important}.bght-why .bw-photo{border-radius:0!important;aspect-ratio:16/9;margin:0 0 14px!important}.bght-why .bw-card h3,.bght-why .bw-card p{padding:0 18px}.bght-why .bw-grid{gap:24px 20px}@media(max-width:767px){.bght-why .bw-grid{grid-auto-columns:86%}}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<style id="bgvf-lm">.bgvf-case .lm{display:block;font-size:12.5px;font-weight:600;color:#0f172a;line-height:1.35}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<style id="bgvf-mlbl">@media(max-width:767px){.bgvf-m .bd>.go{display:none}.bgvf-m .bd b{font-size:12.5px;line-height:1.3}.bgvf-m .bd b small{font-size:11px;margin-top:2px}}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<style>@media(min-width:1101px){.bgvf-guides{grid-template-columns:repeat(4,minmax(0,1fr))}}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<style id="bgvf-v22fix">.bgvf-h1{font-size:clamp(28px,3.6vw,42px);line-height:1.15;max-width:760px}.bgvf-h1 .bgvf-hb{display:inline;font-size:1em;font-weight:800;color:#e31b2d;margin:0;letter-spacing:inherit}.bgvf-mtoggle{display:block;margin:14px auto 0;padding:8px 20px;border:1px solid var(--r);border-radius:999px;background:#fff;color:var(--r);font-weight:600;font-size:14px;cursor:pointer}.bgvf-mtoggle[hidden]{display:none}@media(min-width:1101px){.bgvf-m.bgvf-xh{display:none}}@media(max-width:1100px){.bgvf-mtoggle{display:none!important}}
+.bgvf [id]{scroll-margin-top:120px}@media(max-width:767px){.bgvf [id]{scroll-margin-top:124px}}.bgvf-jumpw{margin:10px 0 0}.bgvf-jump{display:inline-block;padding:9px 16px;border-radius:999px;background:var(--r);color:#fff!important;font-weight:600;font-size:14px}.bgvf-wait{background:#f6f7f9;border-radius:10px;padding:10px 14px}.bgvf-empty .bgvf-ereset{margin-left:8px;border:1px solid var(--r);color:var(--r);background:#fff;border-radius:999px;padding:4px 12px;font-weight:600;cursor:pointer}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+<div class="bght bgvf">
+<section class="bgvf-hero"><div class="bght-in">
+ <nav class="bgvf-bc" aria-label="Breadcrumb"><a href="https://auto365.vn/">Trang chủ</a> / <a href="https://auto365.vn/nang-cap-anh-sang">Nâng cấp ánh sáng</a> / <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam">Bi gầm</a> / <span>Omoda</span></nav>
+ <div>
+  <span class="bgvf-eb">Nâng cấp ánh sáng</span>
+  <h1 class="bgvf-h1">Lắp bi gầm <span class="bgvf-hb">Omoda</span>: chọn đèn theo từng dòng xe</h1>
+  <p class="bgvf-lead">Lắp bi gầm Omoda giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 chưa có hồ sơ lắp bi gầm trên xe Omoda; trang tổng hợp ca Omoda C5 đã nâng cấp bi LED X-Light X5 Ultra tại Auto365 để chủ xe tham khảo; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.</p>
+  <p class="bgvf-jumpw"><a class="bgvf-jump" href="#dong-xe">Chọn dòng xe Omoda ↓</a></p>
+  <p class="bgvf-upd">Cập nhật <time class="bgvf-dm" datetime="2026-11-28">28/11/2026</time></p>
+  <ul class="bgvf-trust">
+   <li>Tư vấn theo đúng dòng xe</li><li>Sản phẩm chính hãng</li>
+   <li>Thi công tại 90+ chi nhánh</li><li>Kiểm tra tương thích trước khi lắp</li>
+  </ul>
+ </div>
+ <!-- hero-src: https://auto365.vn/uploads/images/tintuc/2025/T9/omoda-c5-nang-cap-combo-den-tang-sang/1.jpg.webp -->
+ <div class="bgvf-art"><img src="hinh/hero-omoda-bi-gam.webp" alt="Omoda C5 nâng cấp combo đèn tăng sáng (bi LED X-Light X5 Ultra) tại Auto365" width="1100" height="495" fetchpriority="high"></div>
+</div></section>
+
+<section class="bght-sec" id="dong-xe"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Chọn dòng xe Omoda</h2></div></div>
+ <div class="bgvf-bar">
+  <div class="bgvf-tabs" id="bgvf-tabs" role="tablist"></div>
+  <label class="bgvf-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="bgvf-q" type="search" placeholder="Tìm dòng xe Omoda..." aria-label="Tìm dòng xe Omoda"></label>
+ </div>
+ <div class="bgvf-grid" id="bgvf-grid"></div>
+  <div class="bgvf-gcta"><p>Không thấy dòng xe hoặc chưa chắc mẫu? Gửi đời xe để kỹ thuật viên kiểm tra tương thích.</p><div><a class="g1" href="#tu-van">Nhận tư vấn</a><a class="g2" href="tel:0365365911">Gọi 0365 365 911</a></div></div>
+</div></section>
+
+<section class="bght-sec" id="xe-thuc-te" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Xe Omoda đã làm tại Auto365</h2><p class="bgvf-csub">Chưa có ca bi gầm; dưới đây là các xe đã làm hạng mục khác (bi LED, phim cách nhiệt, PPF, camera…) tại Auto365, nhãn trên ảnh ghi hạng mục. Chỉ ca bi gầm/đèn gầm dùng để tham khảo cấu hình đèn gầm.</p></div><div class="bgvf-nav"><button type="button" class="bgvf-arr" data-dir="-1" aria-label="Trước">‹</button><button type="button" class="bgvf-arr" data-dir="1" aria-label="Sau">›</button></div></div>
+ <div class="bgvf-cf" id="bgvf-cf"></div>
+ <div class="bgvf-rail" id="bgvf-rail"></div>
+ <p class="bgvf-cempty" id="bgvf-cempty" hidden>Chưa có bài hồ sơ phù hợp với bộ lọc này — không có nghĩa là mẫu đèn không lắp được. <button type="button" class="bgvf-creset" id="bgvf-creset">Bỏ lọc</button></p>
+ <p class="bgvf-fn">* Cấu hình theo xe thực tế trong từng bài; xe khác cần kiểm tra tương thích trước khi lắp.</p>
+</div></section>
+
+<section class="bght-sec" style="padding-top:4px"><div class="bght-in">
+ <div class="bq-box">
+  <h2 class="bq-h">Xe Omoda lắp bi gầm cần lưu ý gì?</h2>
+  <p>Các dòng Omoda khác nhau về kích thước hốc đèn gầm, thiết kế cản trước và hệ thống điện theo từng đời xe, nên Auto365 chọn mẫu bi gầm theo đúng dòng xe và phiên bản, không áp một cấu hình cho mọi xe.</p>
+  <div class="bgvf-tips">
+   <details class="bgvf-tip"><summary>Xem 4 lưu ý khi lắp bi gầm Omoda</summary><ul class="bgvf-tipl"><li><b>Kích thước hốc đèn:</b> Đo hốc gầm zin để chọn bi 2.0 hoặc 3.0 inch phù hợp, hạn chế cắt khoét cản. Auto365 chưa có hồ sơ lắp bi gầm trên xe Omoda; kỹ thuật viên đo hốc đèn gầm trên chính xe để chọn lens 2.0 hay 3.0 inch, không suy theo hãng.</li><li><b>Nguồn điện, dây, giắc:</b> Kỹ thuật viên kiểm tra điểm cấp nguồn, tải bổ sung, dây/giắc và bảo vệ mạch theo đúng đời và phiên bản xe. Xe gia đình, chạy dịch vụ (C5, C7) dùng đèn nhiều giờ mỗi ngày nên cần đi dây gọn, có bảo vệ mạch và kiểm tra lại sau một thời gian sử dụng.</li><li><b>Đường cắt cos:</b> Cân chỉnh trên bảng test sau khi lắp; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói xe đối diện.</li><li><b>Khi chưa cần nâng cấp:</b> Nếu xe chủ yếu đi phố đủ sáng, ít đi đêm và đèn gầm nguyên bản vẫn đáp ứng nhu cầu, có thể giữ cấu hình hiện tại. Nếu đèn yếu hoặc chiếu lệch, nên kiểm tra tình trạng cụm đèn và góc chiếu trước khi chọn thiết bị mới.</li></ul></details>
+  </div>
+  <details class="bgvf-needacc" id="theo-nhu-cau"><summary><h3 class="bgvf-needh">Gợi ý chọn bi gầm Omoda theo nhu cầu sử dụng</h3><span class="bght-sub bgvf-needsub">Cùng một mẫu bi gầm, mỗi nhóm xe cần ưu tiên khác nhau. Gợi ý dưới đây theo cách dùng xe và các xe đã lắp tại Auto365.</span></summary>
+ <div class="bgvf-need">
+  <article class="bgvf-nd"><h3>Xe đi phố, đi tỉnh</h3><p class="who">C5, C7</p><div class="bd">
+   <ul><li>Nếu đèn hiện tại vẫn đủ sáng thì có thể chưa cần lắp.</li><li>Xe đi đêm nhiều nên ưu tiên đường cắt cos rõ và cân chỉnh sau khi lắp.</li><li>Mỗi phiên bản khác thiết kế cản; kỹ thuật viên kiểm tra hốc đèn gầm trước khi chọn mẫu.</li></ul>
+   <p class="done">Xe đã làm tại Auto365: <a href="https://auto365.vn/omoda-c5-nang-cap-combo-den-tang-sang">C5 – bi LED X5 Ultra</a></p></div></article>
+  <article class="bgvf-nd"><h3>Xe điện</h3><p class="who">E5</p><div class="bd">
+   <ul><li>Xe điện có hệ thống điện 12V phụ và nhiều cảm biến; kỹ thuật viên kiểm tra điểm cấp nguồn để không ảnh hưởng hệ thống của xe.</li><li>Không chọn chỉ theo số W; kỹ thuật viên cho xem vùng sáng thực tế trước khi chốt.</li><li>Một số mẫu không có hốc đèn gầm zin; khi đó cần đánh giá phương án đèn gầm dạng rời.</li></ul>
+   <p class="done">Chưa có hồ sơ bi gầm: gửi đời xe để kỹ thuật viên kiểm tra hốc đèn.</p></div></article>
+  <article class="bgvf-nd"><h3>Đi đường dài, đi mưa</h3><p class="who">C5, C7, S5</p><div class="bd">
+   <ul><li>Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường, hữu ích khi đi đường dài ban đêm.</li><li>Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.</li><li>Căn chỉnh kỹ để hạn chế chói xe đối diện.</li></ul>
+   <p class="done">Chưa có hồ sơ bi gầm: gửi đời xe để kỹ thuật viên kiểm tra hốc đèn.</p></div></article>
+ </div>
+ <p class="bgvf-nnote">Xem mẫu đèn và giá thiết bị tại <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham">trang bi gầm Auto365</a>. Phụ kiện, số lượng đèn, công lắp và VAT được xác nhận trong báo giá sau khi kiểm tra xe; các hồ sơ bên trên giúp tham khảo cấu hình đã từng thi công.</p>
+ </details>
+ </div>
+</div></section>
+
+
+
+
+
+
+
+
+<style>.bgvf-tw{overflow-x:auto;margin-top:12px;border:1px solid var(--ln);border-radius:10px;background:#fff}.bgvf-tb{width:100%;border-collapse:collapse;font-size:14px}.bgvf-tb th,.bgvf-tb td{padding:9px 12px;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}.bgvf-tb th{background:#f6f7f9;font-weight:600;white-space:nowrap}.bgvf-tb tr:last-child td{border-bottom:0}.bgvf-tb a{color:var(--r);white-space:nowrap}.bgvf-tbacc{margin-top:10px;border:1px solid var(--ln);border-radius:10px;background:#fff}.bgvf-tbacc>summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;font-weight:600;color:var(--r)}.bgvf-tbacc>summary::-webkit-details-marker{display:none}.bgvf-tbacc>summary::after{content:"+";font-size:20px;line-height:1}.bgvf-tbacc[open]>summary::after{content:"−"}.bgvf-tbacc .bght-sub{padding:0 16px}.bgvf-tbacc .bgvf-tw{margin:10px 16px 16px}
+@media(max-width:767px){.bgvf-tbacc .bgvf-tw{border:0;background:none;margin:8px 12px 12px}.bgvf-tb thead{display:none}.bgvf-tb,.bgvf-tb tbody,.bgvf-tb tr,.bgvf-tb td{display:block;width:100%}.bgvf-tb tr{border:1px solid var(--ln);border-radius:10px;padding:8px 12px;margin-bottom:8px;background:#fff}.bgvf-tb td{border:0;padding:3px 0;display:flex;gap:10px}.bgvf-tb td::before{content:attr(data-l);flex:0 0 74px;color:var(--mu);font-size:13px}.bgvf-tb td:first-child{display:none}}.bgvf-csub{margin:6px 0 0;color:#5b6570;font-size:14px;max-width:720px}
+</style>
+
+<!-- @why -->
+
+<!-- @branch -->
+
+<section class="bght-sec" id="cam-nang" style="padding-top:4px"><div class="bght-in">
+ <div class="bght-head"><div><h2 class="bght-h2">Cẩm nang đèn bi gầm</h2></div><a class="bght-more" href="https://auto365.vn/tin-tuc/cam-nang-anh-sang-o-to">Xem tất cả</a></div>
+ <div class="bgvf-guides" id="bgvf-guides"></div>
+</div></section>
+
+<section class="bght-sec bght-faq" id="hoi-dap" style="padding-top:4px"><div class="bght-in">
+ <h2 class="bght-h2" style="margin-bottom:14px">Câu hỏi thường gặp về bi gầm Omoda</h2>
+ <div class="bf-list">
+  <details><summary>Dòng Omoda nào đã có hồ sơ lắp bi gầm, xe nào đã làm tại Auto365?</summary><p>Auto365 chưa có hồ sơ lắp bi gầm trên xe Omoda. Omoda C5 đã nâng cấp bi LED X-Light X5 Ultra và gạt mưa Cleanbro tại Auto365. Mọi dòng Omoda hiện ở nhóm "Tư vấn cấu hình": bấm thẻ dòng xe để gửi đời xe, kỹ thuật viên kiểm tra hốc đèn và tư vấn mẫu phù hợp khi chủ xe mang xe đến chi nhánh.</p></details>
+  <details><summary>Xe Omoda nên chọn bi gầm 2.0 hay 3.0 inch?</summary><p>Chọn lens theo hốc đèn gầm của đúng đời và phiên bản xe, không theo hãng. Auto365 chưa có hồ sơ lắp bi gầm trên xe Omoda, nên chưa có kích thước lens tham khảo theo ca thực tế. Trước khi chọn, kỹ thuật viên kiểm tra hốc đèn, pát, giắc và khoảng hở trên chính xe của chủ xe, hạn chế cắt khoét cản.</p></details>
+  <details data-kw="kw-26-11"><summary>Độ bi gầm Omoda khác gì đèn gầm (đèn sương mù) zin?</summary><p>Đèn gầm zin, còn gọi là đèn sương mù, trên nhiều xe Omoda chiếu tán rộng và không có đường cắt rõ. Bi gầm là đèn gầm có thấu kính (lens), gom sáng xuống mặt đường và hai bên lề với đường cắt cos rõ hơn. Độ bi gầm Omoda là lắp bi gầm vào hốc đèn gầm của xe; xe không có hốc đèn gầm phù hợp thì kỹ thuật viên đánh giá phương án đèn gầm dạng rời.</p></details>
+  <details><summary>Bi gầm Omoda nên chọn loại 1 màu hay bi gầm 3 màu?</summary><p>Bi gầm 1 màu có một nhiệt màu cố định; bi gầm 3 màu (3 nhiệt màu) chuyển được giữa ánh sáng trắng, vàng và trung tính để chủ xe đổi theo điều kiện đi mưa, đi đêm. Nhiệt màu không tự quyết định khả năng nhìn; hiệu quả còn phụ thuộc mẫu bi gầm LED, góc chiếu và căn chỉnh sau khi lắp.</p></details>
+  <details><summary>Một dòng Omoda có nhiều đời thì chọn bi gầm thế nào?</summary><p>Mỗi đời xe có thể khác hốc đèn và điểm cấp nguồn. Đường kính lens chưa đủ để xác định lắp vừa; chủ xe nên xem hồ sơ cùng đời, kỹ thuật viên kiểm tra hốc đèn, giắc và đèn gầm đang có trước khi chọn mẫu và phụ kiện.</p></details>
+  <details><summary>Nâng cấp đèn bi gầm chính hãng cho Omoda ở TP. Hồ Chí Minh ở đâu?</summary><p>Chủ xe Omoda tại TP. Hồ Chí Minh có thể đến Auto365.vn - Trụ Sở Chính, số 4/4/1/7 Đường Số 3, Phường Hiệp Bình (khu vực Thủ Đức cũ), thuận tiện di chuyển từ trung tâm và các khu vực lân cận (<a href="https://maps.app.goo.gl/jretwrtDBxQQJmRH6" rel="noopener" target="_blank">xem bản đồ</a>). Auto365 là đại lý chính hãng X-Light, GTR, AES; kỹ thuật viên chuyên thi công đèn ô tô kiểm tra hốc đèn, hệ điện theo đời xe và cân chỉnh đường cắt cos trên bảng test sau khi lắp. Chủ xe nên gọi 0365 365 911 để đặt lịch trước; cấu hình và chi phí chốt sau khi kiểm tra xe.</p></details>
+  <details><summary>Ở tỉnh khác thì lắp bi gầm Omoda tại đâu?</summary><p>Chủ xe có thể tìm điểm Auto365 theo tỉnh/thành trong danh bạ hệ thống và liên hệ trước để xác nhận lịch tiếp nhận. Khi tư vấn, cần cung cấp dòng xe, đời/phiên bản và nhu cầu sử dụng. Cấu hình đèn, phụ kiện và tổng chi phí được xác nhận sau bước kiểm tra xe tại điểm phù hợp.</p></details>
+  <details><summary>Xe chưa có hồ sơ lắp thì cần chuẩn bị thông tin gì?</summary><p>Chủ xe chuẩn bị dòng xe, đời và phiên bản, nhu cầu sử dụng (đi phố, chạy dịch vụ hay đi tỉnh) và ảnh hốc đèn gầm nếu có. Kỹ thuật viên dựa vào các thông tin này để tư vấn sơ bộ; cấu hình và chi phí chỉ chốt sau khi kiểm tra xe.</p></details>
+  <details><summary>Lắp bi gầm có bị lỗi khi đăng kiểm không?</summary><p>Bi gầm cần lắp đúng vị trí đèn gầm và có đường cắt cos rõ; lắp đặt và căn chỉnh phù hợp hỗ trợ hạn chế nguy cơ gây chói. Trước khi lắp, chủ xe nên cùng kỹ thuật viên đối chiếu quy định hiện hành và cấu hình xe thực tế.</p></details>
+  <details><summary>Giá độ bi gầm Omoda bao nhiêu, gồm những khoản nào?</summary><p>Tổng chi phí gồm giá đèn theo mẫu và phiên bản, phụ kiện (pát, dây, giắc nếu cần), công lắp và VAT. Mỗi đời xe có hốc đèn và điểm cấp nguồn khác nhau, nên giá hoàn thiện chỉ chốt được sau khi kỹ thuật viên kiểm tra xe. Giá đèn theo mẫu xem ở <a href="https://auto365.vn/nang-cap-anh-sang-bi-gam#san-pham">danh sách mẫu bi gầm và giá tham khảo</a>; báo giá hoàn thiện theo xe (phụ kiện, công lắp, VAT) chốt sau khi kiểm tra.</p></details>
+  <details><summary>Bảo hành bi gầm áp dụng thế nào, liên hệ ở đâu?</summary><p>Thời hạn bảo hành đèn theo chính sách của từng mẫu và phiên bản, ghi trên trang sản phẩm và phiếu bàn giao; phụ kiện và công lắp theo phiếu bàn giao của Auto365. Khi nhận xe, chủ xe đối chiếu số seri đèn trên phiếu bàn giao, kích hoạt và tra cứu bảo hành điện tử theo hướng dẫn của chi nhánh; điều kiện bảo hành áp dụng theo từng mẫu. Cần hỗ trợ, liên hệ hotline 0365 365 911 hoặc chi nhánh đã lắp.</p></details>
+ </div>
+ <p class="bgvf-disc">Nội dung bài viết mang tính tham khảo kỹ thuật, không thay thế bước kiểm tra xe trực tiếp, đối chiếu quy định hiện hành và tư vấn từ kỹ thuật viên trước khi thi công.</p>
+</div></section>
+
+<section class="bght-sec" id="tu-van-ngay" style="padding-top:4px"><div class="bght-in"><div class="bgvf-cta">
+ <div><h2>Kiểm tra cấu hình bi gầm phù hợp cho dòng xe Omoda của bạn</h2><p>Kỹ thuật viên Auto365 tư vấn theo xe và nhu cầu sử dụng. Nên gọi trước để xác nhận cơ sở và lịch lắp; cấu hình, chi phí chốt sau khi kiểm tra xe.</p></div>
+ <div class="bgvf-cbtn"><a class="bgvf-b1" href="#tu-van">Nhận tư vấn ngay</a><a class="bgvf-b2" href="tel:0365365911">Gọi 0365 365 911</a></div>
+</div></div></section>
+
+<!-- @lead -->
+</div>
+<aside class="bgvf-ic-chk" id="bgvf-internal-check" hidden aria-label="Kiểm tra nội bộ (chỉ preview)"><div class="bght-in"><b>Kiểm tra nội bộ — chỉ hiện trên preview, xoá khi lên production</b><p><b>Trạng thái: CHỜ DUYỆT.</b> Dựng 28/11/2026 theo khung hub Omoda. Mục xe thực tế gồm 0 ca bi gầm và 2 ca hạng mục khác (theo yêu cầu 26/11: hãng chưa đủ ca bi gầm thì đưa xe đã làm dịch vụ khác tại Auto365, có nhãn hạng mục). Ảnh thẻ dòng xe chưa có, chờ designer. Cần xác nhận: danh sách 4 dòng xe, cơ sở và ngày thi công từng ca, kiểm duyệt kỹ thuật.</p></div></aside>
+
+<script id="bgvf-internal-check-js">(function(){var h=location.hostname;if(/pages.dev$|^localhost$|^127.0.0.1$/.test(h)){["bgvf-internal-check","bgvf-u3-check"].forEach(function(i){var x=document.getElementById(i);if(x)x.hidden=false})}})();</script>
+<script>
+(function(){
+var P='https://auto365.vn/',P0='https://auto365.vn/uploads/images/news/';
+// [tên, nhóm, ảnh, link bài tư vấn/hồ sơ trên auto365.vn hoặc '']
+var M=[['C5','suv','',''],
+['E5','suv','',''],
+['C7','suv','',''],
+['S5','sedan','','']];
+var T=[['all','Tất cả'],['suv','SUV/Crossover'],['sedan','Sedan']];
+// [dòng xe, tiêu đề bài, slug bài trên auto365.vn, ảnh, ngày đăng, hạng mục] — bài đã đăng trên auto365.vn; ca hạng mục khác ghi rõ nhãn
+var C=[["C5","Omoda C5 nâng cấp combo đèn tăng sáng (bi LED X-Light X5 Ultra)","omoda-c5-nang-cap-combo-den-tang-sang","https://auto365.vn/uploads/images/tintuc/2025/T9/omoda-c5-nang-cap-combo-den-tang-sang/1.jpg.webp","2025-09-06","Bi LED"],
+["C5","Omoda C5 nâng cấp gạt mưa Cleanbro chính hãng","omoda-c5-nang-cap-gat-mua-cleanbro","https://auto365.vn/uploads/images/tintuc/2025/T9/omoda-c5-nang-cap-gat-mua-cleanbro/omoda-c5-nang-cap-gat-mua-cleanbro-chinh-hang.png.webp","2025-09-10","Gạt mưa"]];
+// cẩm nang đèn bi gầm (kiến thức chung, không lặp bài tư vấn dòng xe đã gắn ở thẻ dòng xe): [tiêu đề, slug, ảnh, ngày, nhãn]
+var G=[
+['Hốc đèn gầm nhỏ nên chọn bi gầm 2.0 inch nào?','hoc-den-gam-nho-nen-chon-bi-gam-nao','https://auto365.vn/uploads/images/news/auto365vn-chon-bi-gam-2-0-inch-nao-img_6a7ed4cea92812.75790267.jpg.webp','2026-08-14','Hốc đèn'],
+['Xe nào lắp được bi gầm 2.0 inch? Gợi ý cho hốc đèn gầm nhỏ','bi-gam-x-light-f10-2-0-new-phu-hop-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-x-light-f10-2-0-new-phu-hop-xe-naojpg-img_6a477c50c0daa2.92602862_.jpg.webp','2026-07-03','Hốc đèn'],
+['Bi gầm đi mưa sương mù nên chọn dải sáng rộng hay chiếu xa?','bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-di-mua-suong-mu-dai-sang-rong-hay-chieu-xa-img_6a6720427ef082.00335126.jpg.webp','2026-07-27','Vùng sáng'],
+['Đèn gầm ô tô sáng yếu: 10 nguyên nhân và cách kiểm tra','den-gam-o-to-sang-yeu','https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-sang-yeu-img_6a8951b97ac488.13455452.jpg.webp','2026-08-22','Kiểm tra'],
+['Đèn gầm ô tô giảm sáng khi chạy lâu: Có do tản nhiệt?','den-gam-o-to-giam-sang-sau-khi-chay-lau','https://auto365.vn/uploads/images/news/auto365vn-den-gam-o-to-giam-sang-khi-chay-lau-img_6a9bd9d60b2455.72713640.webp','2026-09-05','Tản nhiệt'],
+['Hai bên đèn ô tô sáng không đều: Nguyên nhân, cách kiểm tra','hai-ben-den-o-to-sang-khong-deu','https://auto365.vn/uploads/images/news/auto365vn-hai-ben-den-o-to-sang-khong-deu-img_6a94e3dc7a3105.44763580.webp','2026-08-31','Kiểm tra'],
+['AES SV 3.0 Pro 4800K phù hợp với nhóm tài xế nào?','bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao','https://auto365.vn/uploads/images/news/auto365vn-bi-gam-aes-sv-3-0-pro-4800k-phu-hop-tai-xe-nao-img_6a83e40489d5b2.17476163.jpg.webp','2026-08-18','Chọn mẫu đèn'],
+['Cách chăm sóc mặt kính đèn pha ô tô hạn chế xước, ố vàng và rạn nứt','cach-cham-soc-mat-kinh-den-pha-o-to','https://auto365.vn/uploads/images/news/auto365vn-cham-soc-mat-kinh-den-pha-o-to-img_6a8d3766dcece8.04026461.webp','2026-08-25','Bảo dưỡng']];
+(function(){var NEW=['C5','E5','C7','S5'];var n=function(x){return C.filter(function(c){return c[0]===x[0]&&c[5]==='Bi gầm'}).length},w=function(x){var nw=NEW.indexOf(x[0])>=0;return n(x)>0?(nw?0:1):(nw?2:3)},o=M.slice();M.sort(function(a,b){return w(a)-w(b)||n(b)-n(a)||(NEW.indexOf(a[0])<0?99:NEW.indexOf(a[0]))-(NEW.indexOf(b[0])<0?99:NEW.indexOf(b[0]))||o.indexOf(a)-o.indexOf(b)})})();
+var $=function(id){return document.getElementById(id)};
+var esc=function(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})};
+var cnt=function(k){return k==='all'?M.length:M.filter(function(m){return m[1]===k}).length};
+var nM=M.length;
+$('bgvf-tabs').innerHTML=T.map(function(t,i){return '<button type="button" role="tab" class="bgvf-tab'+(i?'':' on')+'" data-k="'+t[0]+'" aria-selected="'+(i?'false':'true')+'">'+t[1]+' ('+cnt(t[0])+')</button>'}).join('');
+$('bgvf-grid').innerHTML=M.map(function(m){
+ var im=m[2]?'<img src="'+m[2]+'" alt="Omoda '+esc(m[0])+' — ảnh nhận diện dòng xe" loading="lazy" width="640" height="400"'+(/^http/.test(m[2])?' style="object-fit:cover;mix-blend-mode:normal;border-radius:6px"':'')+'>':'<em class="bgvf-ph" aria-hidden="true"><svg viewBox="0 0 64 32" width="72" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 22v-5l6-2 8-7h22l10 7 8 2v5h-4"/><path d="M24 22h16"/><circle cx="16" cy="23" r="5"/><circle cx="46" cy="23" r="5"/></svg><span>Ảnh đang cập nhật</span></em>';
+ var adv=/\/bi-gam-omoda-/.test(m[3]);var bd='<span class="bd"><b>'+esc(m[0])+'<small>'+(m[3]?(adv?(C.some(function(c){return c[0]===m[0]&&c[5]==='Bi gầm'})?'Xem tư vấn + xe đã lắp':'Xem cấu hình và giá tham khảo'):'Xem xe đã lắp'):'Tư vấn cấu hình')+'</small></b><span class="go">→</span></span>';
+ return m[3]?'<a class="bgvf-m" title="Lắp bi gầm Omoda '+esc(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="'+m[3]+'"><span class="ok">'+(adv?'Có tư vấn':'Có hồ sơ')+'</span><span class="im">'+im+'</span>'+bd+'</a>'
+  :'<a class="bgvf-m" title="Lắp bi gầm Omoda '+esc(m[0])+'" data-g="'+m[1]+'" data-n="'+esc(m[0].toLowerCase())+'" href="#tu-van" data-car="Omoda '+esc(m[0])+'"><span class="im">'+im+'</span>'+bd+'</a>';
+}).join('')+'<p class="bgvf-empty" hidden>Chưa có dòng xe phù hợp. Liên hệ hotline 0365 365 911 để được tư vấn.<button type="button" class="bgvf-ereset">Xoá tìm kiếm</button></p>';
+var fmt=function(d){var p=d.split('-');return p[2]+'/'+p[1]+'/'+p[0]};
+var OV={};var LM=function(c){if(OV[c[2]])return OV[c[2]];var t=c[1]+' '+c[2],R=[[/SV[ -]?2[.-]?0[ -]?Max|sv-20-max/i,'AES','AES SV 2.0 Max','2.0'],[/SV[ -]?3[.-]?0[ -]?Max|sv-30-max/i,'AES','AES SV 3.0 Max','3.0'],[/SV[ -]?3[.-]?0[ -]?Pro|sv-30-pro/i,'AES','AES SV 3.0 Pro','3.0'],[/G1 Turbo V2|g1-turbo-v2/i,'GTR','GTR G1 Turbo V2','3.0'],[/G1 Turbo|g1-turbo/i,'GTR','GTR G1 Turbo','3.0'],[/Titan 301|titan-301/i,'Titan','Titan 301','3.0'],[/Hyper 2[.-]?0|hyper-2-?0/i,'X-Light','X-Light F10 Hyper 2.0','2.0'],[/F10 2[.-]?0|f10-2-?0/i,'X-Light','X-Light F10 2.0 New','2.0'],[/F10 Turbo V2|f10-turbo-v2/i,'X-Light','X-Light F10 Turbo V2','3.0'],[/F10 Turbo|f10-turbo/i,'X-Light','X-Light F10 Turbo','3.0'],[/F10 Pro V2|f10-pro-v2/i,'X-Light','X-Light F10 Pro V2','3.0'],[/F10 Pro|f10-pro/i,'X-Light','X-Light F10 Pro','3.0'],[/F10 New 2025|f10-new-2025/i,'X-Light','X-Light F10 New 2025','3.0'],[/F10 New|f10-new/i,'X-Light','X-Light F10 New','3.0'],[/X3 Ultra|x3-ultra/i,'X-Light','X-Light X3 Ultra','3.0'],[/301 V2|301-v2/i,'X-Light','X-Light 301 V2','3.0'],[/AES/i,'AES','AES','']];for(var i=0;i<R.length;i++)if(R[i][0].test(t))return [R[i][1],R[i][2],R[i][3]];return [/GTR/.test(t)?'GTR':'X-Light','','']};var brand=function(c){return c[5]||'Bi gầm'};
+var cm=[],cb=[];C.forEach(function(c){if(cm.indexOf(c[0])<0)cm.push(c[0]);if(cb.indexOf(brand(c))<0)cb.push(brand(c))});
+cm.sort();cb.sort();
+$('bgvf-cf').innerHTML='<div class="bgvf-cfr" data-k="m" role="group" aria-label="Lọc theo dòng xe"><span class="bgvf-cl">Dòng xe:</span><button type="button" class="bgvf-chip on" aria-pressed="true" data-v="">Tất cả</button>'+cm.map(function(m){return '<button type="button" class="bgvf-chip" aria-pressed="false" data-v="'+esc(m)+'">'+esc(m)+'</button>'}).join('')+'</div><div class="bgvf-cfr" data-k="b" role="group" aria-label="Lọc theo hạng mục"><span class="bgvf-cl">Hạng mục:</span><button type="button" class="bgvf-chip on" aria-pressed="true" data-v="">Tất cả</button>'+cb.map(function(b){return '<button type="button" class="bgvf-chip" aria-pressed="false" data-v="'+b+'">'+b+'</button>'}).join('')+'</div>';
+$('bgvf-rail').innerHTML=C.map(function(c){return '<a class="bgvf-case" data-m="'+esc(c[0])+'" data-b="'+brand(c)+'" href="https://auto365.vn/'+c[2]+'"><span class="im"><img src="'+c[3]+'" alt="'+esc(c[1])+'" loading="lazy" width="800" height="450"><span class="tag">✓ '+esc(c[5]||'Bi gầm')+'</span></span><div class="bd"><h3>Omoda '+esc(c[0])+'</h3>'+(function(x){return x[1]?'<span class="lm">'+esc(x[1])+(x[2]?' · Lens '+x[2]+' inch':'')+'</span>':''})(c[5]==='Bi gầm'?LM(c):['',''])+'<p>'+esc(c[1])+'</p><span class="ft"><time datetime="'+c[4]+'">'+fmt(c[4])+'</time>'+(c[4]<'2021'?'<span class="bgvf-old" title="Ca thi công cũ; cấu hình và chính sách theo thời điểm lắp">Hồ sơ lưu trữ</span>':'')+'<em>Xem chi tiết lắp đặt →</em></span></div></a>'}).join('');
+$('bgvf-guides').innerHTML=G.map(function(g){return '<a class="bgvf-guide" href="https://auto365.vn/'+g[1]+'"><span class="im"><img src="'+g[2]+'" alt="'+esc(g[0])+'" loading="lazy" width="800" height="450"></span><div class="bd"><span class="mt"><span class="lb">'+esc(g[4])+'</span><time datetime="'+g[3]+'">'+fmt(g[3])+'</time></span><div class="rw"><h3>'+esc(g[0])+'</h3><i aria-hidden="true">→</i></div></div></a>'}).join('');
+// lọc
+var k='all';
+function apply(){var nz=function(x){return String(x||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/hybrid/g,'').replace(/omoda/g,'').replace(/[^a-z0-9]/g,'')};var q=nz($('bgvf-q').value),n=0;
+ [].forEach.call(document.querySelectorAll('.bgvf-m'),function(a){var ok=(k==='all'||a.getAttribute('data-g')===k)&&(!q||nz(a.getAttribute('data-n')).indexOf(q)>=0);a.hidden=!ok;if(ok)n++});
+ document.querySelector('.bgvf-empty').hidden=n>0}
+$('bgvf-tabs').addEventListener('click',function(e){var b=e.target.closest('.bgvf-tab');if(!b)return;k=b.getAttribute('data-k');[].forEach.call(this.children,function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-selected',x===b)});apply();$('bgvf-grid').scrollLeft=0});
+$('bgvf-q').addEventListener('input',apply);
+(function(){var ex=false,L=12,g=$('bgvf-grid'),mb=document.createElement('button');mb.type='button';mb.className='bgvf-mtoggle';mb.setAttribute('aria-controls','bgvf-grid');g.parentNode.insertBefore(mb,g.nextSibling);
+function lim(){var q=$('bgvf-q').value.trim(),v=[].filter.call(document.querySelectorAll('.bgvf-m'),function(a){return !a.hidden});v.forEach(function(a,i){a.classList.toggle('bgvf-xh',!ex&&!q&&i>=L)});var x=q?0:v.length-L;mb.hidden=x<=0;mb.textContent=ex?'Thu gọn':'Xem thêm';mb.setAttribute('aria-expanded',ex?'true':'false')}
+mb.addEventListener('click',function(e){e.stopPropagation();ex=!ex;lim();if(!ex)g.scrollIntoView({block:'nearest'})});$('bgvf-q').addEventListener('input',lim);$('bgvf-tabs').addEventListener('click',function(){setTimeout(lim)});document.addEventListener('click',function(e){if(e.target.closest('.bgvf-ereset'))setTimeout(lim)});lim()})();
+
+document.addEventListener('click',function(e){if(e.target.closest('.bgvf-ereset')){$('bgvf-q').value='';var t0=document.querySelector('.bgvf-tab');if(t0)t0.click();apply();$('bgvf-q').focus()}var o=e.target.closest('[data-open-tb]');if(o){var d=document.querySelector('#bang-tra details');if(d)d.open=true}});
+$('bgvf-creset').addEventListener('click',function(){var all=document.querySelectorAll('.bgvf-cfr .bgvf-chip[data-v=""]');[].forEach.call(all,function(b){b.click()});if(all[0])all[0].focus()});
+$('bgvf-cf').addEventListener('click',function(e){var b=e.target.closest('.bgvf-chip');if(!b)return;[].forEach.call(b.parentNode.querySelectorAll('.bgvf-chip'),function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b?'true':'false')});var sel={};[].forEach.call(this.querySelectorAll('.bgvf-cfr'),function(r){sel[r.getAttribute('data-k')]=r.querySelector('.bgvf-chip.on').getAttribute('data-v')});[].forEach.call(document.querySelectorAll('.bgvf-case'),function(a){a.hidden=(!!sel.m&&a.getAttribute('data-m')!==sel.m)||(!!sel.b&&a.getAttribute('data-b')!==sel.b)});var nVis=document.querySelectorAll('.bgvf-case:not([hidden])').length;$('bgvf-rail').classList.toggle('one',nVis<=6);$('bgvf-rail').hidden=!nVis;$('bgvf-cempty').hidden=!!nVis;$('bgvf-rail').scrollLeft=0});
+$('bgvf-rail').classList.toggle('one',C.length<=6);
+[].forEach.call(document.querySelectorAll('.bgvf-arr'),function(b){b.addEventListener('click',function(){var r=$('bgvf-rail');r.scrollBy({left:(+b.getAttribute('data-dir'))*r.clientWidth*0.9,behavior:'smooth'})})});
+// thẻ dòng xe chưa có hồ sơ → điền sẵn dòng xe vào form tư vấn
+document.addEventListener('click',function(e){var a=e.target.closest('[data-car]');if(!a)return;var i=document.getElementById('nr-lead-bght-car');if(i)i.value=a.getAttribute('data-car')});
+})();
+</script>
