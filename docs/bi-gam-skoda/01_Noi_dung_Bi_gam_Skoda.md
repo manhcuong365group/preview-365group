@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Skoda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), FAQPage |
-| SHA-256 index.html | `ca55255704e0414d9cb9e16ff78f3cbdc1ca81e4b9c24619fb9c4bc14265f0d5` |
-| SHA-256 content-src.html | `a778e68528a069ed141c5c5bab7822ab58f22a63996bb8d3498ae9812120925f` |
+| SHA-256 index.html | `2b401c800b5a87ff3273c1c22070657259658390f638ef8b32fe757ce616fcde` |
+| SHA-256 content-src.html | `2bd04ea27493bb72e6947b5ee2efdf7cab9414647afa74f9c755a413316db11f` |
 
 ## Sapo (kiêm trả lời nhanh)
 

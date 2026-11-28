@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Jeep: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (2), FAQPage |
-| SHA-256 index.html | `aa8f4b24f192ee7cc0eb15fdd8a1456e500bb7cd4101975ba3a7a62df367e627` |
-| SHA-256 content-src.html | `b2a7895129dc0b4a8e113fa70cdb6cdaaee6c7849771b56f99fb02b05fd4adc9` |
+| SHA-256 index.html | `6a63a724dab0485165912e49193a876f33fd4b2ab20a1c2f198b481bf5326e59` |
+| SHA-256 content-src.html | `02ad0379b63beced9d1856806ba32dfcf052414b48e131675bf4703c7561e7dd` |
 
 ## Sapo (kiêm trả lời nhanh)
 

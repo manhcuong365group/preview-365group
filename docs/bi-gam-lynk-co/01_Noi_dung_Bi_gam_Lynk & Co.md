@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Lynk & Co: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), FAQPage |
-| SHA-256 index.html | `089eb4459dcc2abc3dab2913092be0c790080448bc128e28f14862cecca36562` |
-| SHA-256 content-src.html | `ece84a2e73081f2730643e49914acc92e1eab951f390d306292b4259d00c2c05` |
+| SHA-256 index.html | `482f0963c0a52ccdd3722343fe107cb6f5d39e394d8637bcbd8d76bfbe757973` |
+| SHA-256 content-src.html | `5d2a219d125edd39147abc952536444696482aebcf3f4f536694e69f679b9fc6` |
 
 ## Sapo (kiêm trả lời nhanh)
 

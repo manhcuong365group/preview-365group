@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Jaecoo: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), FAQPage |
-| SHA-256 index.html | `5edaaf50f1ff3083a9a963eab88061607300cb08bc68362ef6a870a338e2d83c` |
-| SHA-256 content-src.html | `8f8425ff3e06466252a25eed888e39208d415e09b921f2cf410c0e4fcfd6289c` |
+| SHA-256 index.html | `863481410fa7cc8dc0d8bbce7f6d6c00d7d4bbbc422cd3dea9926a7e076fd2dd` |
+| SHA-256 content-src.html | `bebc4b9f8947e9d16cc9c2b20fca3bc59ec64fce41bbd9f2f1838bdfd816122c` |
 
 ## Sapo (kiêm trả lời nhanh)
 

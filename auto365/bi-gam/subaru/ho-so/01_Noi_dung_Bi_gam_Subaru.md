@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Subaru: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (5), FAQPage |
-| SHA-256 index.html | `c0720f960b721283bbf3950fbfb2c25cc21866768efc11666e904c179f9411cc` |
-| SHA-256 content-src.html | `1bc239471530efba064d0360926d0c9d8a9269adc223bc2d1022823ee4465dba` |
+| SHA-256 index.html | `7e95e0b39109caa569869ca3f50d223b8a49d67aa2e734fad13a3f82398abc4c` |
+| SHA-256 content-src.html | `6258946b9c8555c2c6bd415311c20a5af21ab3e850e5f31f187862dd9f5ad4f6` |
 
 ## Sapo (kiêm trả lời nhanh)
 

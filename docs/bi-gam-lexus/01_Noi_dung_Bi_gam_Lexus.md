@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Lexus: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (10), FAQPage |
-| SHA-256 index.html | `f42aec7e3ca3f7252564347605c05caaa1ba568bcbe5ae651a4cbe998f8b2319` |
-| SHA-256 content-src.html | `b398379e34e687564cb0275a06feebc1a0bac4df22547ccc60320293a7c009f9` |
+| SHA-256 index.html | `b12c28f16f42f420aaf44ce410415b17dc4d01eca2f8221355086eb9d53a0165` |
+| SHA-256 content-src.html | `1411188d7e946b71d73a5f2d1e915c7d0e0b5861552f8492ace0e5d672dd81ec` |
 
 ## Sapo (kiêm trả lời nhanh)
 

@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Omoda: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), FAQPage |
-| SHA-256 index.html | `6b107810a30d26e9883c1e473247f9705233b7f99eca697201feb48e2e90fe01` |
-| SHA-256 content-src.html | `f1937521b64ae1415f4b318f93a465dfcbfb9b5fe1345ec317bdf6a2830c26f2` |
+| SHA-256 index.html | `5f7b36efe147458f0443b959383b84ade6c299e9de63f1d82cf727906ca8d30e` |
+| SHA-256 content-src.html | `25b162f6b3bc132fb9ea8c56c30074a6b93626fff7994a16751f43c53f0a2ec6` |
 
 ## Sapo (kiêm trả lời nhanh)
 
