@@ -45,12 +45,37 @@ const BR = {
     ['Mazda6', 'Mazda6', 1, 's', 'm-mazda6.webp', null, ['Mazda ?6\\b']], ['Mazda 626', 'Mazda626', 1, 's', 'm-mazda-626.webp', 'bi-gam/mazda/hinh', ['Mazda ?626']], ['MX-5', 'MX5', 1, 's', 'm-mx-5.webp', 'bi-gam/mazda/hinh', ['MX-?5\\b']],
     ['CX-3', 'CX3', 2, 'u', 'm-cx-3.webp', 'bi-gam/mazda/hinh', ['CX-?3\\b']], ['CX-30', 'CX30', 2, 'u', 'm-cx-30.webp', 'bi-gam/mazda/hinh', ['CX-?30']], ['CX-5', 'CX5', 2, 'u', 'm-cx-5.webp', null, ['CX-?5\\b']],
     ['CX-8', 'CX8', 2, 'u', 'm-cx-8.webp', null, ['CX-?8\\b']], ['CX-60', 'CX60', 2, 'u', 'm-cx-60.webp', 'bi-gam/mazda/hinh', ['CX-?60']], ['CX-90', 'CX90', 2, 'u', 'm-cx-90.webp', 'bi-gam/mazda/hinh', ['CX-?90']],['BT-50', 'BT50', 2, 'p', 'm-bt-50.webp', 'bi-gam/mazda/hinh', ['BT-?50']]] },
+  // 28/11: 5 hãng mới (ảnh designer trong bi-gam/<hãng>/hinh); nhóm giá theo bài đã đăng (Geely EX2 = Minicar, Peugeot 408 = SUV/MPV)
+  honda: { name: 'Honda', def: 'City', video: [], dia: ['m-city.webp', 'm-cr-v.webp'], diaP: [[[45,36],[60,38],[73,37],[60,30],[80,40]],[[47,32],[68,33],[77,32],[62,23],[84,32]]], cars: [
+    ['City', 'City', 1, 's', 'm-city.webp'], ['Civic', 'Civic', 1, 's', 'm-civic.webp', null, ['Civic(?! Type)']], ['Accord', 'Accord', 1, 's', 'm-accord.webp', 'bi-gam/honda/hinh'],
+    ['Brio', 'Brio', 1, 's', 'm-brio.webp', 'bi-gam/honda/hinh'], ['Jazz', 'Jazz', 1, 's', 'm-jazz.webp', 'bi-gam/honda/hinh'], ['Civic Type R', 'TypeR', 1, 's', 'm-civic-type-r.webp', 'bi-gam/honda/hinh', ['Type R']],
+    ['HR-V', 'HRV', 2, 'u', 'm-hr-v.webp', null, ['HR-?V']], ['CR-V', 'CRV', 2, 'u', 'm-cr-v.webp', null, ['CR-?V']],
+    ['BR-V', 'BRV', 2, 'm', 'm-br-v.webp', null, ['BR-?V']], ['Odyssey', 'Odyssey', 2, 'm', 'm-odyssey.webp', 'bi-gam/honda/hinh']] },
+  bmw: { name: 'BMW', def: 'S3', video: [], dia: ['m-3-series.webp', 'm-x3.webp'], diaP: [[[47,24],[79,25],[86,27],[52,11],[92,30]],[[52,20],[75,21],[83,20],[62,9],[92,23]]], cars: [
+    ['3 Series', 'S3', 1, 's', 'm-3-series.webp', 'bi-gam/bmw/hinh', ['3 Series', '3\\d\\di\\b']], ['5 Series', 'S5', 1, 's', 'm-5-series.webp', 'bi-gam/bmw/hinh', ['5 Series', '5\\d\\di\\b']],
+    ['2 Series Gran Coupe', 'S2', 1, 's', 'm-2-series-gran-coupe.webp', 'bi-gam/bmw/hinh', ['2 Series']], ['4 Series', 'S4', 1, 's', 'm-4-series.webp', 'bi-gam/bmw/hinh', ['4 Series', '4\\d\\di\\b']],
+    ['7 Series', 'S7', 1, 's', 'm-7-series.webp', 'bi-gam/bmw/hinh', ['7 Series', '7\\d\\dLi?\\b']], ['8 Series', 'S8', 1, 's', 'm-8-series.webp', 'bi-gam/bmw/hinh', ['8 Series']], ['Z4', 'Z4', 1, 's', 'm-z4.webp', 'bi-gam/bmw/hinh'],
+    ['X1', 'X1', 2, 'u', 'm-x1.webp', 'bi-gam/bmw/hinh', ['X1\\b']], ['X3', 'X3', 2, 'u', 'm-x3.webp', 'bi-gam/bmw/hinh', ['X3\\b']], ['X4', 'X4', 2, 'u', 'm-x4.webp', 'bi-gam/bmw/hinh', ['X4\\b']],
+    ['X5', 'X5', 2, 'u', 'm-x5.webp', 'bi-gam/bmw/hinh', ['X5\\b']], ['X6', 'X6', 2, 'u', 'm-x6.webp', 'bi-gam/bmw/hinh', ['X6\\b']], ['X7', 'X7', 2, 'u', 'm-x7.webp', 'bi-gam/bmw/hinh', ['X7\\b']]] },
+  geely: { name: 'Geely', def: 'EX2', video: [], dia: ['m-ex2.webp', 'm-emgrand.webp', 'm-ex5.webp'], diaP: [[[44,28],[63,30],[77,30],[60,20],[84,31]],[[43,30],[60,33],[73,32],[58,23],[82,35]],[[47,30],[69,32],[78,32],[62,21],[85,32]]], cars: [
+    ['EX2', 'EX2', 0, 'u', 'm-ex2.webp', 'bi-gam/geely/hinh', ['EX2']], ['Emgrand', 'Emgrand', 1, 's', 'm-emgrand.webp', 'bi-gam/geely/hinh'],
+    ['EX5', 'EX5', 2, 'u', 'm-ex5.webp', 'bi-gam/geely/hinh', ['EX5']], ['Coolray', 'Coolray', 2, 'u', 'm-coolray.webp', 'bi-gam/geely/hinh'], ['Monjaro', 'Monjaro', 2, 'u', 'm-monjaro.webp', 'bi-gam/geely/hinh'],
+    ['Okavango', 'Okavango', 2, 'm', 'm-okavango.webp', 'bi-gam/geely/hinh']] },
+  peugeot: { name: 'Peugeot', def: 'P3008', video: [], dia: ['m-508.webp', 'm-5008.webp'], diaP: [[[39,36],[52,35],[69,35],[55,27],[84,38]],[[36,33],[47,33],[70,32],[60,23],[87,32]]], cars: [
+    ['208', 'P208', 1, 's', 'm-208.webp', 'bi-gam/peugeot/hinh', ['\\b208\\b']], ['508', 'P508', 1, 's', 'm-508.webp', 'bi-gam/peugeot/hinh', ['\\b508\\b']], ['308', 'P308', 1, 's', 'm-308.webp', 'bi-gam/peugeot/hinh', ['\\b308\\b']],
+    ['107', 'P107', 1, 's', 'm-107.webp', 'bi-gam/peugeot/hinh', ['\\b107\\b']], ['207', 'P207', 1, 's', 'm-207.webp', 'bi-gam/peugeot/hinh', ['\\b207\\b']], ['307', 'P307', 1, 's', 'm-307.webp', 'bi-gam/peugeot/hinh', ['\\b307\\b']], ['407', 'P407', 1, 's', 'm-407.webp', 'bi-gam/peugeot/hinh', ['\\b407\\b']],
+    ['408', 'P408', 2, 'u', 'm-408.webp', 'bi-gam/peugeot/hinh', ['\\b408\\b']], ['2008', 'P2008', 2, 'u', 'm-2008.webp', 'bi-gam/peugeot/hinh', ['\\b2008\\b']], ['3008', 'P3008', 2, 'u', 'm-3008.webp', 'bi-gam/peugeot/hinh', ['\\b3008\\b']], ['5008', 'P5008', 2, 'u', 'm-5008.webp', 'bi-gam/peugeot/hinh', ['\\b5008\\b']],
+    ['Traveller', 'Traveller', 2, 'm', 'm-traveller.webp', 'bi-gam/peugeot/hinh'], ['Partner', 'Partner', 2, 'm', 'm-partner.webp', 'bi-gam/peugeot/hinh']] },
+  suzuki: { name: 'Suzuki', def: 'XL7', video: [], dia: ['m-ciaz.webp', 'm-xl7.webp'], diaP: [[[40,28],[60,32],[72,31],[58,19],[82,34]],[[41,27],[63,30],[77,29],[62,19],[87,29]]], cars: [
+    ['Swift', 'Swift', 1, 's', 'm-swift.webp'], ['Ciaz', 'Ciaz', 1, 's', 'm-ciaz.webp', 'bi-gam/suzuki/hinh'], ['Celerio', 'Celerio', 1, 's', 'm-celerio.webp', 'bi-gam/suzuki/hinh'],
+    ['Fronx', 'Fronx', 2, 'u', 'm-fronx.webp'], ['Vitara', 'Vitara', 2, 'u', 'm-vitara.webp', 'bi-gam/suzuki/hinh'], ['Jimny', 'Jimny', 2, 'u', 'm-jimny.webp', 'bi-gam/suzuki/hinh'],
+    ['XL7', 'XL7', 2, 'm', 'm-xl7.webp', 'bi-gam/suzuki/hinh'], ['Ertiga', 'Ertiga', 2, 'm', 'm-ertiga.webp', 'bi-gam/suzuki/hinh']] },
 };
 
 const esc = s => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 const dec = s => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#039;/g, "'");
 const vnd = n => (n * 1e6).toLocaleString('de-DE') + 'đ';
-function rep(h, a, b, all) { if (!h.includes(a)) throw new Error('Không thấy: ' + a.slice(0, 80)); return all ? h.split(a).join(b) : h.replace(a, () => b); }
+function rep(h, a, b, all) { if (!h.includes(a)) { console.warn('  ! không thấy: ' + a.slice(0, 90)); return h; } return all ? h.split(a).join(b) : h.replace(a, () => b); }
 function between(h, a, b, mid) { const i = h.indexOf(a), j = h.indexOf(b, i + a.length); if (i < 0 || j < 0) throw new Error('Không thấy khối: ' + a.slice(0, 60)); return h.slice(0, i + a.length) + mid + h.slice(j); }
 function filmOf(t) {
   t = t.replace(/Palisade Hybrid/i, 'Palisade');
@@ -72,7 +97,7 @@ for (const [slug, B] of Object.entries(BR)) {
   fs.mkdirSync(hm, { recursive: true }); fs.mkdirSync(path.join(out, 'hinh/goi'), { recursive: true });
   for (const f of fs.readdirSync(path.join(BASE, 'vinfast/hinh'))) if (/^(cert-|ewarranty|pro-shop-thi-cong)/.test(f)) fs.copyFileSync(path.join(BASE, 'vinfast/hinh', f), path.join(out, 'hinh', f));
   for (const f of fs.readdirSync(path.join(BASE, 'vinfast/hinh/goi'))) fs.copyFileSync(path.join(BASE, 'vinfast/hinh/goi', f), path.join(out, 'hinh/goi', f));
-  fs.copyFileSync(path.join(ROOT, 'auto365/phim-3m-hcm/hinh/logo', slug + '.webp'), path.join(out, 'hinh/logo.webp'));
+  { const lg = path.join(ROOT, 'auto365/phim-3m-hcm/hinh/logo', slug + '.webp'); if (fs.existsSync(lg)) fs.copyFileSync(lg, path.join(out, 'hinh/logo.webp')); }
   for (const c of B.cars) fs.copyFileSync(path.join(ROOT, c[5] ? 'auto365/' + c[5] : 'auto365/bi-gam/theo-hang-xe/hinh', c[4]), path.join(hm, c[4]));
   for (const d of B.dia) if (!fs.existsSync(path.join(hm, d))) throw new Error('Thiếu ảnh sơ đồ ' + d);
 
@@ -85,17 +110,17 @@ for (const [slug, B] of Object.entries(BR)) {
   const KL = { tt: ['Xe thực tế', ''], tv: ['Tư vấn theo xe', ' vf-case__k--g'], cn: ['Cẩm nang', ' vf-case__k--g'] };
   const cardsHtml = list.map(o => {
     const loai = o.f || (o.k === 'tv' ? 'Phim 3M' : 'Phim 3M'), em = o.k === 'tv' && !o.f ? '6 gói phim 3M' : loai, dd = o.d.split('-').reverse().join('/');
-    return `  <a class="vf-case"${o.k !== 'tt' ? ' data-tv="1"' : ''} data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__xe">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
+    return `  <a class="vf-case"${o.k !== 'tt' ? ' data-tv="1"' : ''} data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"></span><span class="vf-case__b"><span class="vf-case__xe">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
   }).join('');
   const caseCars = B.cars.filter(c => list.some(o => o.car === c));
   const loais = [...new Set(list.map(o => o.f || 'Phim 3M'))].sort();
   const TV = {}; for (const o of list.slice().reverse()) if (o.k === 'tv') TV[o.car[0]] = o.u;
   const hero = list.find(o => o.k === 'tt') || list[0];
 
-  const sedan = B.cars.filter(c => c[2] === 1).map(c => c[0]), suv = B.cars.filter(c => c[2] === 2).map(c => c[0]);
-  const lowP = sedan.length ? 7.9 : 9.5;
-  const priceTxt = `Giá dán trọn xe theo bảng giá 3M: ${sedan.length ? `nhóm Sedan (${sedan.join(', ')}) từ 7.900.000đ, ` : ''}nhóm SUV/MPV (${suv.join(', ')}) từ 9.500.000đ, đã gồm VAT.`;
-  const grpTxt = `${sedan.length ? 'Sedan: ' + sedan.join(', ') + ' · ' : ''}SUV/MPV: ${suv.join(', ')}.`;
+  const mini = B.cars.filter(c => c[2] === 0).map(c => c[0]), sedan = B.cars.filter(c => c[2] === 1).map(c => c[0]), suv = B.cars.filter(c => c[2] === 2).map(c => c[0]);
+  const lowP = mini.length ? 5.9 : sedan.length ? 7.9 : 9.5;
+  const priceTxt = `Giá dán trọn xe theo bảng giá 3M: ${mini.length ? `nhóm Minicar (${mini.join(', ')}) từ 5.900.000đ, ` : ''}${sedan.length ? `nhóm Sedan (${sedan.join(', ')}) từ 7.900.000đ, ` : ''}nhóm SUV/MPV (${suv.join(', ')}) từ 9.500.000đ, đã gồm VAT.`;
+  const grpTxt = `${mini.length ? 'Minicar: ' + mini.join(', ') + ' · ' : ''}${sedan.length ? 'Sedan: ' + sedan.join(', ') + ' · ' : ''}SUV/MPV: ${suv.join(', ')}.`;
 
   let h = TPL;
   // head + schema
@@ -125,12 +150,13 @@ for (const [slug, B] of Object.entries(BR)) {
   h = rep(h, "(c[1]==='VF8')", `(c[1]==='${B.def}')`);
   h = rep(h, "(F.m?' '+F.m.replace('VF','VF '):'')", "(F.m?' '+((CARS.filter(function(c){return c[1]===F.m})[0]||[F.m])[0]):'')");
   h = h.replace(/var SR=\{[^}]*\};/, 'var SR={};').replace(/ *\/\/ Kính nóc theo tài liệu VinFast[^\n]*\n/, '');
-  h = h.replace(/var DIMG=\[[^\]]*\];/, `var DIMG=['${B.dia[0]}','${B.dia[0]}','${B.dia[1]}'];`);
-  h = h.replace(/var DIA=\[[^;]*\];/, `var DIA=[DIAP[0],DIAP[0],DIAP[1]];`);
+  const D3 = B.dia.length === 3; // có ảnh sơ đồ riêng cho Minicar
+  h = h.replace(/var DIMG=\[[^\]]*\];/, D3 ? `var DIMG=['${B.dia[0]}','${B.dia[1]}','${B.dia[2]}'];` : `var DIMG=['${B.dia[0]}','${B.dia[0]}','${B.dia[1]}'];`);
+  h = h.replace(/var DIA=\[[^;]*\];/, D3 ? `var DIA=[DIAP[0],DIAP[1],DIAP[2]];` : `var DIA=[DIAP[0],DIAP[0],DIAP[1]];`);
   h = h.replace(/var DP=\{[\s\S]*?\]\]\},/, `var DP={},DIAP=${JSON.stringify(B.diaP || [[[35, 44], [48, 44], [66, 44], [62, 36], [80, 46]], [[33, 42], [55, 42], [72, 42], [65, 34], [90, 42]]])},`);
   h = h.replace(/NC\.VF5=NC\.VF5\|\|1;?/, '');
   // sơ đồ: ẩn tab Minicar
-  h = rep(h, '<button type="button" data-d="0">Minicar</button>', '<button type="button" data-d="0" hidden>Minicar</button>');
+  if (!mini.length) h = rep(h, '<button type="button" data-d="0">Minicar</button>', '<button type="button" data-d="0" hidden>Minicar</button>');
   // bảng giá
   h = rep(h, 'Bảng giá trọn xe 6 gói phim 3M theo nhóm xe VinFast', 'Bảng giá trọn xe 6 gói phim 3M theo nhóm xe ' + N);
   h = rep(h, 'Minicar: VF 2, VF 3, Minio Green · Sedan: Herio Green, Fadil, Lux A2.0 · SUV/MPV: các dòng còn lại.', grpTxt);
@@ -152,7 +178,7 @@ for (const [slug, B] of Object.entries(BR)) {
   const left = h.match(/.{40}(vinfast|VF ?\d|Minio|Fadil|Lux A).{40}/gi);
   if (left) console.warn(slug, 'CÒN SÓT:', left.slice(0, 8));
   // bảng giá: bỏ cột Minicar (không có xe hãng này thuộc nhóm Minicar)
-  { const a = h.indexOf('<th scope="col">Nhóm Minicar</th>'), e = h.indexOf('</table>', a);
+  if (!mini.length) { const a = h.indexOf('<th scope="col">Nhóm Minicar</th>'), e = h.indexOf('</table>', a);
     if (a > -1) h = h.slice(0, a) + h.slice(a, e).replace('<th scope="col">Nhóm Minicar</th>', '').replace(/(<tr><th scope="row">.*?<\/th><td>[^<]*<\/td>)<td>[^<]*<\/td>/g, '$1') + h.slice(e); }
   // F1 26/11: bấm thẻ đổi xe phải xoá vị trí đã chọn ở xe cũ (giống đổi xe trong form)
   h = h.replace("models.forEach(function(b){b.addEventListener('click',function(){window.VFUP=1;pick(b)})});", "models.forEach(function(b){b.addEventListener('click',function(){window.VFUP=1;var ch=b.getAttribute('aria-pressed')!=='true';if(ch&&typeof ST!=='undefined'){ST.forEach(function(s){s.on=false});PZV=''}pick(b);if(ch&&typeof drawPz==='function')drawPz()})});"); // template VinFast đã vá thì bỏ qua
