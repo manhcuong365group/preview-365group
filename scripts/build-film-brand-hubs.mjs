@@ -85,7 +85,7 @@ for (const [slug, B] of Object.entries(BR)) {
   const KL = { tt: ['Xe thực tế', ''], tv: ['Tư vấn theo xe', ' vf-case__k--g'], cn: ['Cẩm nang', ' vf-case__k--g'] };
   const cardsHtml = list.map(o => {
     const loai = o.f || (o.k === 'tv' ? 'Phim 3M' : 'Phim 3M'), em = o.k === 'tv' && !o.f ? '6 gói phim 3M' : loai, dd = o.d.split('-').reverse().join('/');
-    return `  <a class="vf-case" data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__xe">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
+    return `  <a class="vf-case"${o.k !== 'tt' ? ' data-tv="1"' : ''} data-m="${o.car[1]}" data-loai="${loai}" href="${o.u}" target="_blank" rel="noopener"><span class="vf-case__img"><img src="${o.img}" alt="${esc(o.t)}" loading="lazy" width="800" height="450"><em>✓ ${em}</em></span><span class="vf-case__b"><span class="vf-case__xe">${N} ${o.car[0]}</span><span class="vf-case__t">${esc(o.t)}</span><span class="vf-case__f"><time datetime="${o.d}">${dd}</time><strong>Xem chi tiết →</strong></span></span></a>\n`;
   }).join('');
   const caseCars = B.cars.filter(c => list.some(o => o.car === c));
   const loais = [...new Set(list.map(o => o.f || 'Phim 3M'))].sort();
@@ -116,7 +116,12 @@ for (const [slug, B] of Object.entries(BR)) {
   h = h.replace(/<p class="vf-mlinks">[\s\S]*?<\/p>/, tvList.length ? `<p class="vf-mlinks">Tư vấn phim 3M theo dòng xe: ${tvList.map(c => `<a href="${TV[c[0]]}" target="_blank" rel="noopener">${c[0]}</a>`).join(' · ')}</p>` : '');
   // JS data
   h = h.replace(/var cur=0,TV=\{[^}]*\};/, `var cur=0,TV=${JSON.stringify(TV).replace(/"/g, "'")};`);
-  h = h.replace(/var CARS=\[[\s\S]*?\]\];/, 'var CARS=' + JSON.stringify(B.cars.map(c => c.slice(0, 5))).replace(/"/g, "'") + ';');
+  // thứ tự xe: có ca thực tế trước (nhiều ca hơn trước), rồi nhiều bài hơn, rồi thứ tự gốc
+  const nTT = c => list.filter(o => o.k === 'tt' && o.car === c).length, nAll = c => list.filter(o => o.car === c).length;
+  const carsSorted = B.cars.map((c, i) => [c, i]).sort((x, y) => (nTT(y[0]) > 0) - (nTT(x[0]) > 0) || nTT(y[0]) - nTT(x[0]) || nAll(y[0]) - nAll(x[0]) || x[1] - y[1]).map(x => x[0]);
+  h = h.replace(/var CARS=\[[\s\S]*?\]\];/, 'var CARS=' + JSON.stringify(carsSorted.map(c => c.slice(0, 5))).replace(/"/g, "'") + ';');
+  // badge "Đã thi công" chỉ đếm ca thực tế (thẻ case không còn nhãn loại)
+  h = h.replace("if(!a.querySelector('.vf-case__k--g'))NC[a.dataset.m]", "if(a.dataset.tv!=='1')NC[a.dataset.m]");
   h = rep(h, "(c[1]==='VF8')", `(c[1]==='${B.def}')`);
   h = rep(h, "(F.m?' '+F.m.replace('VF','VF '):'')", "(F.m?' '+((CARS.filter(function(c){return c[1]===F.m})[0]||[F.m])[0]):'')");
   h = h.replace(/var SR=\{[^}]*\};/, 'var SR={};').replace(/ *\/\/ Kính nóc theo tài liệu VinFast[^\n]*\n/, '');
