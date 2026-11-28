@@ -7,7 +7,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const BASE = path.join(ROOT, 'auto365/phim-cach-nhiet-o-to');
 const TPL = fs.readFileSync(path.join(BASE, 'vinfast/index.html'), 'utf8').split('\r\n').join('\n');
 const IMGSRC = [path.join(ROOT, 'auto365/bi-gam/theo-hang-xe/hinh')];
-const TODAY = '2026-11-26', TODAY_VN = '26/11/2026';
+const TODAY = '2026-11-28', TODAY_VN = '28/11/2026', REVIEWED = '2026-11-26';
 const casesArg = process.argv.indexOf('--cases');
 const CASES = JSON.parse(fs.readFileSync(casesArg > 0 ? process.argv[casesArg + 1] : path.join(ROOT, 'docs/phim-cach-nhiet-hang-xe/cases.json'), 'utf8'));
 const only = process.argv.slice(2).filter(a => !a.startsWith('--') && !a.endsWith('.json'));
@@ -42,9 +42,9 @@ const BR = {
     ['Carens', 'Carens', 2, 'm', 'm-carens.webp'], ['Carnival', 'Carnival', 2, 'm', 'm-carnival.webp']] },
   mazda: { name: 'Mazda', def: 'CX5', video: [['vg4tiT4t8eE', 'Mazda CX-8 dán phim cách nhiệt 3M Crystalline CR BLK']], dia: ['m-mazda3.webp', 'm-cx-5.webp'], diaP: [[[41,43],[49,43],[61,43],[55,37],[72,44]],[[36,40],[45,40],[61,40],[54,33],[77,40]]], cars: [
     ['Mazda2', 'Mazda2', 1, 's', 'm-mazda-2.webp', 'bi-gam/mazda/hinh', ['Mazda ?2\\b']], ['Mazda3', 'Mazda3', 1, 's', 'm-mazda3.webp', null, ['Mazda ?3\\b(?! Sport)']], ['Mazda3 Sport', 'Mazda3S', 1, 's', 'm-mazda3-sport.webp', null, ['Mazda ?3 Sport']],
-    ['Mazda6', 'Mazda6', 1, 's', 'm-mazda6.webp', null, ['Mazda ?6\\b']],
+    ['Mazda6', 'Mazda6', 1, 's', 'm-mazda6.webp', null, ['Mazda ?6\\b']], ['Mazda 626', 'Mazda626', 1, 's', 'm-mazda-626.webp', 'bi-gam/mazda/hinh', ['Mazda ?626']], ['MX-5', 'MX5', 1, 's', 'm-mx-5.webp', 'bi-gam/mazda/hinh', ['MX-?5\\b']],
     ['CX-3', 'CX3', 2, 'u', 'm-cx-3.webp', 'bi-gam/mazda/hinh', ['CX-?3\\b']], ['CX-30', 'CX30', 2, 'u', 'm-cx-30.webp', 'bi-gam/mazda/hinh', ['CX-?30']], ['CX-5', 'CX5', 2, 'u', 'm-cx-5.webp', null, ['CX-?5\\b']],
-    ['CX-8', 'CX8', 2, 'u', 'm-cx-8.webp', null, ['CX-?8\\b']], ['BT-50', 'BT50', 2, 'p', 'm-bt-50.webp', 'bi-gam/mazda/hinh', ['BT-?50']]] },
+    ['CX-8', 'CX8', 2, 'u', 'm-cx-8.webp', null, ['CX-?8\\b']], ['CX-60', 'CX60', 2, 'u', 'm-cx-60.webp', 'bi-gam/mazda/hinh', ['CX-?60']], ['CX-90', 'CX90', 2, 'u', 'm-cx-90.webp', 'bi-gam/mazda/hinh', ['CX-?90']],['BT-50', 'BT50', 2, 'p', 'm-bt-50.webp', 'bi-gam/mazda/hinh', ['BT-?50']]] },
 };
 
 const esc = s => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
@@ -103,7 +103,7 @@ for (const [slug, B] of Object.entries(BR)) {
   h = rep(h, 'hinh/hero-vinfast.webp', 'hinh/pro-shop-thi-cong.webp', true); // hero: ảnh thật thi công tại 3M Pro Shop (không dùng thumbnail bài có chữ)
   h = rep(h, 'https://preview-365group.pages.dev/phim-cach-nhiet-o-to/vinfast/' + hero.img, hero.img);
   h = rep(h, '"lowPrice":"5900000"', `"lowPrice":"${lowP * 1e6}"`);
-  h = h.replace(/"dateModified":"[^"]*"/, `"dateModified":"${TODAY}"`).replace(/"lastReviewed":"[^"]*"/, `"lastReviewed":"${TODAY}"`).replace(/Cập nhật \d\d\/\d\d\/\d{4}/, 'Cập nhật ' + TODAY_VN);
+  h = h.replace(/"dateModified":"[^"]*"/, `"dateModified":"${TODAY}"`).replace(/"lastReviewed":"[^"]*"/, `"lastReviewed":"${REVIEWED}"`).replace(/Cập nhật \d\d\/\d\d\/\d{4}/, 'Cập nhật ' + TODAY_VN);
   h = rep(h, 'Giá dán trọn xe theo bảng giá 3M: Minicar (VF 2, VF 3, Minio Green) từ 5.900.000đ, Sedan (Herio Green, Fadil, Lux A2.0) từ 7.900.000đ, SUV/MPV (VF 5, VF 6, VF 7, VF 8, VF 9, VF MPV 7, VF Wild, VF e34, Nerio Green, Limo Green, EC Van, Lux SA2.0, President) từ 9.500.000đ, đã gồm VAT.', priceTxt, true);
   h = rep(h, 'theo từng model VinFast', `theo từng dòng ${N}`, true);
   // hero
