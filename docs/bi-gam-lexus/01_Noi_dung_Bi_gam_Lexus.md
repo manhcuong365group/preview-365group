@@ -10,13 +10,13 @@
 | Meta description (152 ký tự) | Độ bi gầm Lexus theo đời xe: chọn bi gầm 2.0/3.0 inch, 1 màu hay 3 màu thay đèn gầm (đèn sương mù) zin; xem xe Lexus đã làm tại Auto365 và nhận báo giá. |
 | H1 | Lắp bi gầm Lexus: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-28 |
-| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (10), FAQPage |
-| SHA-256 index.html | `b12c28f16f42f420aaf44ce410415b17dc4d01eca2f8221355086eb9d53a0165` |
-| SHA-256 content-src.html | `1411188d7e946b71d73a5f2d1e915c7d0e0b5861552f8492ace0e5d672dd81ec` |
+| Schema | CollectionPage, BreadcrumbList, Organization, ItemList (2), ItemList (11), FAQPage |
+| SHA-256 index.html | `516a846d3eedb3ec6dd96c4b7e430bdb839b577bc3ab9d0413e41f9296f0e730` |
+| SHA-256 content-src.html | `0758e06f383996673b95c7ce7142731b1530e08068c3408ac106d94cfee63f2f` |
 
 ## Sapo (kiêm trả lời nhanh)
 
-Lắp bi gầm Lexus giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp bi gầm X-Light F10 Turbo trên Lexus ES350 và bi gầm X-Light F10 New trên LX570 Super Sport, cùng các xe Lexus đã nâng cấp bi LED, bi laser tại Auto365; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
+Lắp bi gầm Lexus giúp bổ sung vùng sáng gần và hai bên lề đường khi đi đêm, đi mưa; mẫu đèn cần chọn theo hốc đèn gầm của từng đời xe. Auto365 tổng hợp hồ sơ lắp bi gầm X-Light F10 Turbo trên Lexus ES350 và bi gầm X-Light F10 New trên LX570 (Super Sport và LX 570 2011), cùng các xe Lexus đã nâng cấp bi LED, bi laser tại Auto365; kỹ thuật viên kiểm tra hốc đèn, nguồn cấp, hệ thống điều khiển và dây/giắc trước khi đề xuất cấu hình, hạn chế cắt khoét cản.
 
 ## Chọn dòng xe Lexus
 
@@ -24,8 +24,8 @@ Lắp bi gầm Lexus giúp bổ sung vùng sáng gần và hai bên lề đườ
 
 | Dòng xe | Nhóm | Trạng thái | Trang production |
 |---|---|---|---|
-| Lexus ES | Sedan | Có hồ sơ | https://auto365.vn/lexus-do-den-f10-turbo |
 | Lexus LX | SUV | Có hồ sơ | https://auto365.vn/lexus-lx570-super-sport-voi-combo-anh-sang-nha-x-light |
+| Lexus ES | Sedan | Có hồ sơ | https://auto365.vn/lexus-do-den-f10-turbo |
 | Lexus LS | Sedan | Liên hệ tư vấn | — |
 | Lexus IS | Sedan | Liên hệ tư vấn | — |
 | Lexus RX | SUV | Liên hệ tư vấn | — |
@@ -34,13 +34,14 @@ Lắp bi gầm Lexus giúp bổ sung vùng sáng gần và hai bên lề đườ
 | Lexus GX | SUV | Liên hệ tư vấn | — |
 | Lexus LM | MPV | Liên hệ tư vấn | — |
 
-## Xe Lexus đã làm tại Auto365 (10 bài hồ sơ)
+## Xe Lexus đã làm tại Auto365 (11 bài hồ sơ)
 
 Bộ lọc: dòng xe, hạng mục (bi gầm / đèn gầm rời / bi LED / phim / PPF / camera).
 
 | Dòng xe | Bài | Ngày đăng |
 |---|---|---|
 | Lexus ES | [Lexus ES350 nâng cấp bi gầm X-Light F10 Turbo](https://auto365.vn/lexus-do-den-f10-turbo) | 2024-08-15 |
+| Lexus LX | [Lexus LX 570 2011 lắp bi gầm X-Light F10 New (2025)](https://auto365.vn/lexus-lx-570-2011-lap-bi-gam-x-light-f10-new-2025) | 2026-11-28 |
 | Lexus LX | [Lexus LX570 Super Sport lắp bi gầm X-Light F10 New (combo bi laser F+ Ultra Mini)](https://auto365.vn/lexus-lx570-super-sport-voi-combo-anh-sang-nha-x-light) | 2022-06-02 |
 | Lexus LX | [Lexus LX570 lắp bi LED X-Light F+ Pro V2](https://auto365.vn/lexus-lx570-nang-cap-bi-led-x-light-f-pro-v2) | 2026-07-20 |
 | Lexus LX | [Lexus LX570 5.7L V8 (2012–2015) lắp bi laser Titan Platinum Plus](https://auto365.vn/lexus-lx570-2012-2015-lap-bi-laser-titan-platinum-plus) | 2026-11-14 |
@@ -77,9 +78,9 @@ _Dòng xe:_ RX, GX, LX
 
 - Bi gầm bổ sung vùng sáng thấp gần đầu xe và hai bên lề đường, hữu ích khi đi đường dài ban đêm.
 - Hiệu quả phụ thuộc góc chiếu và căn chỉnh; nhiệt màu không tự quyết định khả năng nhìn khi mưa.
-- LX570 Super Sport đã có ca lắp F10 New tại Auto365; căn chỉnh kỹ để hạn chế chói xe đối diện.
+- LX570 Super Sport và LX 570 2011 đã có ca lắp F10 New tại Auto365; căn chỉnh kỹ để hạn chế chói xe đối diện.
 
-Đã lắp: LX570 Super Sport – X-Light F10 New (https://auto365.vn/lexus-lx570-super-sport-voi-combo-anh-sang-nha-x-light)
+Đã lắp: LX570 Super Sport – X-Light F10 New, LX 570 2011 – X-Light F10 New (https://auto365.vn/lexus-lx570-super-sport-voi-combo-anh-sang-nha-x-light, https://auto365.vn/lexus-lx-570-2011-lap-bi-gam-x-light-f10-new-2025)
 
 CTA: — (chưa có bài tư vấn dòng xe)
 
