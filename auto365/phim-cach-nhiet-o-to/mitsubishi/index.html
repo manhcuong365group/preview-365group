@@ -589,7 +589,7 @@ section[id]{scroll-margin-top:64px}.vf-ptbl{margin-top:10px;border:1px solid var
  tabs.forEach(function(t){t.addEventListener('click',function(){tab=t.dataset.t;tabs.forEach(function(x){x.setAttribute('aria-pressed',x===t)});filt()})});
  if(qi)qi.addEventListener('input',filt);
  var models=document.querySelectorAll('.vf-model'),cases=document.querySelectorAll('.vf-case'),grp=document.getElementById('vf-grp'),sub=document.getElementById('vf-case-sub');
- var DP={},DIAP=[[[36,40],[45,40],[61,40],[52,34],[71,40]],[[35,40],[46,40],[61,40],[57,30],[80,40]]],CURF='',CURG=-1,CURN='',DTXT=['Minicar','Sedan','SUV/MPV'],DGN=['Minicar','Sedan','SUV'];
+ var DP={},DIAP=[[[36,40],[45,40],[61,40],[52,34],[71,40]],[[35,40],[46,40],[61,40],[52,19],[80,40]]],CURF='',CURG=-1,CURN='',DTXT=['Minicar','Sedan','SUV/MPV'],DGN=['Minicar','Sedan','SUV'];
  function pick(b){
   models.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});var mL=b.offsetLeft-mw.offsetLeft;if(mL<mw.scrollLeft)mw.scrollLeft=Math.max(0,mL-8);else if(mL+b.offsetWidth>mw.scrollLeft+mw.clientWidth)mw.scrollLeft=mL+b.offsetWidth-mw.clientWidth+8;
   var m=b.dataset.m,g=+b.dataset.g,nm=b.dataset.name;CURF=b.querySelector('img').getAttribute('src').split('/').pop();
