@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm MG: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (4), FAQPage |
-| SHA-256 index.html | `5cade30f30a3bae1d49150822f2673e698c1541877ca7bd38b3d512681456429` |
-| SHA-256 content-src.html | `c1a2fb87fb3831ebb6f8df5a31011b197d100fee3b4e785c2a9ba9a47a9894ec` |
+| SHA-256 index.html | `a6578e9ec8a9c631d499bfadd6114a57b734b6e52dc23a8ba49b8e5f4c803ddd` |
+| SHA-256 content-src.html | `08c47dd1607ff3d9922dba46d5fed61282e10c1169e1675dc4d6bfac274a8cd9` |
 
 ## Sapo (kiêm trả lời nhanh)
 

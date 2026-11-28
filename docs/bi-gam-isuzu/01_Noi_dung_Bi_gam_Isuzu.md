@@ -11,8 +11,8 @@
 | H1 | Lắp bi gầm Isuzu: chọn đèn theo từng dòng xe |
 | dateModified | 2026-11-27 |
 | Schema | CollectionPage, BreadcrumbList, Organization, ItemList (1), ItemList (1), FAQPage |
-| SHA-256 index.html | `847a1b790450aba72d5eaf2208d49983102c7dfbda399e05f0915b2b21e4c70d` |
-| SHA-256 content-src.html | `3468eabe0e8623500da9f343935733f6efabe8ebec84724e0e6e23ee116c317a` |
+| SHA-256 index.html | `6adeda78b9bdd2c31b7d5e6373d4bfb1dd75db83b26e47174fd0beee1ebbe1c0` |
+| SHA-256 content-src.html | `81c6434793d99cf40336e0d15490c358466caabe0c864dc314a87b2fcf8c4c02` |
 
 ## Sapo (kiêm trả lời nhanh)
 
